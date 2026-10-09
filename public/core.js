@@ -188,7 +188,7 @@
       PF.atual = mod;
       marcarAbas();
       const cont = $('#modulo');
-      cont.replaceChildren();
+      cont.replaceChildren(el('p', { class: 'vazio', role: 'status' }, 'Carregando…'));
       const ok = await mod.montar({ container: cont, api: (arq) => PF.api(mod.id, arq), irPara: (r) => irPara(mod, r) });
       if (PF.atual !== mod) return; // o usuário trocou de aba durante o carregamento
       if (ok === false) { PF.atual = null; return; }
