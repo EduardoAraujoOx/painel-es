@@ -337,6 +337,7 @@
 
   // ---------- render ----------
   function render() {
+    if (!raiz || !$('#conteudo')) return; // a aba foi trocada (ex.: busca com atraso)
     PF.limparObservadores();
     esconderDica();
     $('#rotulo-prov').hidden = !estado.org;

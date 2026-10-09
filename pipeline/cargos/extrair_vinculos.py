@@ -3,7 +3,8 @@
 
   * o nome por extenso de cada órgão (campo OrgaoExt);
   * para cada ocupante ATIVO de cargo comissionado ou função gratificada, o tipo de vínculo
-    oficial (EFETIVO, COMISSIONADO...) e a data de exercício do vínculo.
+    oficial (EFETIVO, COMISSIONADO...), a data de exercício do vínculo e o setor de lotação
+    (código e nome), de onde o módulo "organograma" tira a hierarquia de unidades.
 
 O CPF vem mascarado na fonte e, de todo modo, não é lido nem guardado.
 Resultado em .cache/cargos/vinculos.json. Uso: python3 pipeline/cargos/extrair_vinculos.py
@@ -28,7 +29,8 @@ def main():
         if r["Situacao"] != "ATIVO" or r["TipoFuncao"] not in regras.TIPOS_ALVO:
             continue
         chave = f'{r["Orgao"]}|{r["NumFunc"]}|{r["NumVinc"]}'
-        vinc[chave] = [r["TipoVinculo"], r["Exercicio"][:10]]
+        # [tipo de vínculo, exercício, código do setor, nome do setor, setor que a pessoa chefia]
+        vinc[chave] = [r["TipoVinculo"], r["Exercicio"][:10], r["SiglaSetor"], r["NomeSetor"], r["ChefiaSetor"]]
     destino = os.path.join(extrair.CACHE, "vinculos.json")
     json.dump({"orgaos": orgaos, "vinculos": vinc}, open(destino, "w"),
               ensure_ascii=False, separators=(",", ":"))

@@ -5,6 +5,7 @@ Painel de acesso restrito para diagnósticos fiscais e de pessoal do Poder Execu
 | Módulo | Conteúdo | Situação |
 |---|---|---|
 | `cargos` | Cargos em comissão e funções gratificadas: quadro, custo mensal, tempo na função, entradas e saídas | em operação |
+| `organograma` | Árvore de unidades de um órgão com as pessoas de cada uma, a condição (sem vínculo efetivo, servidor de carreira, função gratificada) e a remuneração somando carreira e cargo | em operação (estrutura oficial transcrita só para a SEFAZ) |
 
 ## Módulo `cargos`
 
@@ -39,6 +40,29 @@ GERADO_EM=$(date +%F) python3 pipeline/cargos/montar.py                # gera da
 ```
 
 O cache (`.cache/cargos/`) guarda as rubricas de cada ocupante, então mudar uma regra em `regras.py` exige apenas rodar `montar.py` de novo, sem novo download. Cada mês pesa de 80 a 250 MB na origem e é lido em fluxo, sem ser gravado em disco.
+
+## Módulo `organograma`
+
+Escolha um órgão e abra a árvore por toque: Secretaria, subsecretarias, gerências, subgerências e as pessoas de cada unidade. Cada pessoa traz a condição por **cor e rótulo escrito** (azul: comissionado sem vínculo efetivo; laranja: servidor de carreira em cargo em comissão; verde: servidor de carreira com função gratificada), o valor do cargo e a **remuneração bruta**, que soma carreira e cargo. Cada unidade mostra uma barra com a proporção das condições. É possível filtrar por condição, buscar por nome ou função e exportar o resultado em CSV.
+
+### De onde vem a hierarquia
+
+A base de vínculos informa o setor de cada pessoa (código e nome), mas **não diz quem é subordinado a quem**, e o código do setor **não é confiável como nível hierárquico** (na SEFAZ, a SUEFI tem código de nível 2, mas o organograma a coloca na GEARE, no nível 4). Por isso a subordinação vem de tabelas por órgão em `pipeline/organograma/estrutura/<ORGAO>.csv`, transcritas de decretos e organogramas oficiais, com a fonte de cada linha. Hoje só a SEFAZ tem tabela: Anexo III do Decreto 6005-R (abril de 2025), com as alterações do Decreto 6160-R (agosto de 2025).
+
+Onde não há tabela, ou a unidade não consta dela, a unidade aparece num agrupamento marcado como **"subordinação não confirmada"**, ordenado pelo nível do código. Nenhuma subordinação é inferida por nome ou sigla. Ligações marcadas "a conferir" foram lidas de uma imagem. Na SEFAZ, 41 das 282 pessoas estão em unidades criadas depois desses decretos (SUDEP, SUOPT, SUAFI, SUCOM, SUCOP, GELOG, UFAR e as assessorias da reforma tributária) e dependem de novos decretos para serem encaixadas.
+
+### Como atualizar
+
+```bash
+python3 pipeline/cargos/extrair_vinculos.py          # setor de cada ocupante (requer o cache do módulo cargos)
+python3 pipeline/organograma/montar.py               # gera data/organograma/index.json e data/organograma/org/*.json
+```
+
+Para encaixar uma unidade ou corrigir uma subordinação, edite a linha em `estrutura/<ORGAO>.csv` (colunas `sigla;nome;pai;situacao;fonte`) e rode `montar.py` de novo. A sigla deve ser a que aparece ao final do nome do setor na base. Para dar estrutura oficial a outro órgão, crie `estrutura/<SIGLA>.csv` no mesmo formato.
+
+### Remuneração bruta
+
+Soma das rubricas de pagamento do mês, sem auxílios e indenizações, 13º, férias e resíduos de acerto financeiro (regra em `pipeline/cargos/regras.py`, função `remuneracao`). O abate do teto constitucional aparece à parte, no detalhe da pessoa.
 
 ## Acesso e implantação (Vercel)
 

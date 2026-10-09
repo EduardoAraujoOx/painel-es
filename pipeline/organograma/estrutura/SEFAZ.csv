@@ -1,0 +1,92 @@
+sigla;nome;pai;situacao;fonte
+SUBSER;Subsecretaria de Estado da Receita;SEFAZ;confirmada;Anexo III do Decreto 6005-R/2025
+SUBSAD;Subsecretaria de Estado para Assuntos Administrativos;SEFAZ;confirmada;Anexo III do Decreto 6005-R/2025
+SUBSET;Subsecretaria do Tesouro Estadual;SEFAZ;confirmada;Anexo III do Decreto 6005-R/2025
+GABSEC;Gabinete do Secretário;SEFAZ;confirmada;Anexo III do Decreto 6005-R/2025
+ASTEC;Assessoria Técnica Fazendária;SEFAZ;confirmada;Anexo III do Decreto 6005-R/2025
+NUPETRO;Núcleo de Petróleo, Gás Natural, Biocombustíveis e Derivados;SEFAZ;confirmada;Anexo III do Decreto 6005-R/2025
+CERF;Conselho Estadual de Recursos Fiscais;SEFAZ;confirmada;Anexo III do Decreto 6005-R/2025 (órgão colegiado)
+CONSUTES;Conselho Superior do Tesouro Estadual;SEFAZ;confirmada;Anexo III do Decreto 6005-R/2025 (órgão colegiado)
+GETRI;Gerência Tributária;SUBSER;confirmada;Anexo III do Decreto 6005-R/2025
+GEFIS;Gerência Fiscal;SUBSER;confirmada;Anexo III do Decreto 6005-R/2025
+GEINF;Gerência de Inteligência Fiscal;SUBSER;confirmada;Anexo III do Decreto 6005-R/2025
+GEARC;Gerência de Arrecadação e Cadastro;SUBSER;confirmada;Anexo III do Decreto 6005-R/2025
+GEARE;Gerência de Atendimento e Relacionamento;SUBSER;confirmada;Anexo III do Decreto 6005-R/2025
+GEATE;Gerência de Assuntos Técnicos;SUBSAD;confirmada;Anexo III do Decreto 6005-R/2025
+GETEC;Gerência de Tecnologia da Informação;SUBSAD;confirmada;Anexo III do Decreto 6005-R/2025
+GERAG;Gerência de Apoio ao Gabinete;SUBSAD;confirmada;Anexo III do Decreto 6005-R/2025
+GEPRO;Gerência Estratégica de Projetos;SUBSAD;confirmada;Decreto 6005-R/2025, art. 2º, III
+GEDEF;Gerência Estratégica de Desenvolvimento Fazendário;SUBSAD;confirmada;Anexo III do Decreto 6005-R/2025
+GECON;Gerência de Licitações e Contratos;SUBSAD;confirmada;Anexo III do Decreto 6005-R/2025
+GEAFI;Gerência Administrativa e Financeira;SUBSAD;confirmada;Anexo III do Decreto 6005-R/2025
+GEFAP;Gerência de Fundos e Análise Econômico-Financeira de Projetos;SUBSET;confirmada;Anexo III do Decreto 6005-R/2025
+GEREF;Gerência de Encargos Gerais e Regularidade Fiscal do Estado;SUBSET;confirmada;Anexo III do Decreto 6005-R/2025
+GEFIN;Gerência de Administração e Fiscalização Financeira do Estado;SUBSET;confirmada;Anexo III do Decreto 6005-R/2025
+GECOG;Gerência de Contabilidade Geral do Estado;SUBSET;confirmada;Anexo III do Decreto 6005-R/2025
+GEPOF;Gerência de Política Fiscal e da Dívida Pública do Estado;SUBSET;confirmada;Anexo III do Decreto 6005-R/2025
+NRF;Núcleo de Relações Federativas;GETRI;confirmada;Anexo III do Decreto 6005-R/2025
+SUREP;Subgerência de Regimes Especiais;GETRI;confirmada;Anexo III do Decreto 6005-R/2025
+SULEG;Subgerência de Legislação Tributária;GETRI;confirmada;Anexo III do Decreto 6005-R/2025
+SUJUP;Subgerência de Julgamento de Processos e Consulta Tributária;GETRI;confirmada;Decreto 6160-R/2025, art. 4º (renomeada)
+SUFIS-GCON;Subgerência Fiscal - Grandes Contribuintes e Gestão de Auditorias;GEFIS;confirmada;Anexo III do Decreto 6005-R/2025
+SUFIS-SEC;Subgerência Fiscal - Setores Econômicos;GEFIS;confirmada;Anexo III do Decreto 6005-R/2025
+SUFIS-RET;Subgerência Fiscal - Regimes Especiais de Tributação;GEFIS;confirmada;Anexo III do Decreto 6005-R/2025
+SUFIS-M;Subgerência Fiscal - Região Metropolitana;GEFIS;confirmada;Anexo III do Decreto 6005-R/2025
+SUFIS-NO;Subgerência Fiscal - Região Noroeste;GEFIS;confirmada;Anexo III do Decreto 6005-R/2025
+SUFIS-NE;Subgerência Fiscal - Região Nordeste;GEFIS;confirmada;Anexo III do Decreto 6005-R/2025
+SUFIS-S;Subgerência Fiscal - Região Sul;GEFIS;confirmada;Anexo III do Decreto 6005-R/2025
+SUFIS-PLAN;Subgerência Fiscal de Planejamento;GEFIS;confirmada;Decreto 6160-R/2025, art. 1º, I
+SUINF;Subgerência de Inteligência Fiscal e Investigação;GEINF;confirmada;Anexo III do Decreto 6005-R/2025
+SUMOP;Subgerência de Monitoramento e Operações Especiais;GEINF;confirmada;Anexo III do Decreto 6005-R/2025
+SUREC;Subgerência de Recuperação de Crédito;GEARC;confirmada;Anexo III do Decreto 6005-R/2025
+SUAGI;Subgerência de Arrecadação e Gestão do IPVA;GEARC;confirmada;Decreto 6160-R/2025, art. 3º (transforma a SUAEF)
+SUCAD;Subgerência de Cadastro de Contribuintes;GEARC;confirmada;Anexo III do Decreto 6005-R/2025
+SUARC;Subgerência de Arrecadação e Controle do ITCMD;GEARC;confirmada;Anexo III do Decreto 6005-R/2025
+SUEFA;Subgerência de Estudos Fiscais e Acompanhamento da Arrecadação;GEARC;confirmada;Decreto 6160-R/2025, art. 1º, II
+SUEFI;Subgerência de Educação Fiscal;GEARE;confirmada;Decreto 6160-R/2025, art. 2º (antes subordinada à GEARC)
+SURAP;Subgerência de Relacionamento e Atendimento Presencial;GEARE;confirmada;Anexo III do Decreto 6005-R/2025
+SUREV;Subgerência de Relacionamento Virtual;GEARE;confirmada;Anexo III do Decreto 6005-R/2025
+SUGET;Subgerência de Gestão de Tecnologia da Informação;GETEC;confirmada;Decreto 6005-R/2025, art. 2º
+SUDAS;Subgerência de Governança de Dados e Segurança da Informação;GETEC;confirmada;Anexo III do Decreto 6005-R/2025
+SUBAD;Subgerência de Sistemas de Apoio à Decisão;GETEC;confirmada;Anexo III do Decreto 6005-R/2025
+SUINT;Subgerência de Infraestrutura Tecnológica;GETEC;confirmada;Anexo III do Decreto 6005-R/2025
+SUDES;Subgerência de Desenvolvimento de Sistemas;GETEC;confirmada;Anexo III do Decreto 6005-R/2025
+SUSIC;Subgerência de Gestão dos Sistemas Corporativos;GETEC;confirmada;Anexo III do Decreto 6005-R/2025
+SUPRO-TI;Subgerência de Projetos de Tecnologia da Informação;GETEC;confirmada;Anexo III do Decreto 6005-R/2025
+SUPRO;Subgerência de Projetos;GEPRO;confirmada;Anexo III do Decreto 6005-R/2025
+SUDOR;Subgerência de Avaliação e Desenvolvimento Organizacional;GEDEF;confirmada;Anexo III do Decreto 6005-R/2025
+SUARH;Subgerência de Administração de Recursos Humanos;GEDEF;confirmada;Anexo III do Decreto 6005-R/2025
+SUTED;Subgerência de Treinamento e Desenvolvimento;GEDEF;confirmada;Anexo III do Decreto 6005-R/2025
+SUGEC;Subgerência de Contratos;GECON;confirmada;Anexo III do Decreto 6005-R/2025
+SUADI;Subgerência Administrativa;GEAFI;confirmada;Anexo III do Decreto 6005-R/2025
+SUDAP;Subgerência de Gestão Documental e Patrimonial;GEAFI;confirmada;Anexo III do Decreto 6005-R/2025
+SUAUC;Subgerência de Auditoria e Compliance;GEFAP;confirmada;Decreto 6005-R/2025, art. 2º, II
+SUAVI;Subgerência de Avaliação de Investimentos e Análise Econômica;GEFAP;confirmada;Decreto 6005-R/2025, art. 2º, I
+SUREF;Subgerência de Regularidade Fiscal do Estado;GEREF;confirmada;Anexo III do Decreto 6005-R/2025
+SUENG;Subgerência de Encargos Gerais do Estado;GEREF;confirmada;Anexo III do Decreto 6005-R/2025
+SUSIF;Subgerência de Gestão do Sistema de Finanças Públicas do Estado;GEFIN;confirmada;Anexo III do Decreto 6005-R/2025
+SUPEF;Subgerência de Programação e Gestão Financeira;GEFIN;confirmada;Anexo III do Decreto 6005-R/2025
+SUCOG;Subgerência de Controle Fiscal e do Gasto Público;GEFIN;confirmada;Anexo III do Decreto 6005-R/2025
+SUFIC;Subgerência de Informações Fiscais do Estado;GECOG;confirmada;Anexo III do Decreto 6005-R/2025
+SUMOC;Subgerência de Análise e Monitoramento Contábil;GECOG;confirmada;Anexo III do Decreto 6005-R/2025
+SUGOV;Subgerência de Contas do Governo;GECOG;confirmada;Anexo III do Decreto 6005-R/2025
+SUNOP;Subgerência de Normas, Procedimentos e Orientação Contábil;GECOG;confirmada;Anexo III do Decreto 6005-R/2025
+SUINC;Subgerência de Qualidade da Informação Contábil;GECOG;confirmada;Anexo III do Decreto 6005-R/2025
+SUPFI;Subgerência de Política Fiscal;GEPOF;confirmada;Anexo III do Decreto 6005-R/2025
+SUDIP;Subgerência da Dívida Pública;GEPOF;confirmada;Anexo III do Decreto 6005-R/2025
+GA;Grupo de Administração;GEAFI;a conferir;Anexo III do Decreto 6005-R/2025 (grupo setorial; ligação lida na imagem)
+GFS;Grupo Financeiro Setorial;GEAFI;a conferir;Anexo III do Decreto 6005-R/2025 (grupo setorial; ligação lida na imagem)
+GPO;Grupo de Planejamento e Orçamento;GEAFI;a conferir;Anexo III do Decreto 6005-R/2025 (grupo setorial; ligação lida na imagem)
+GRH;Grupo de Recursos Humanos;GEDEF;a conferir;Anexo III do Decreto 6005-R/2025 (grupo setorial; ligação lida na imagem)
+ARE ALEGRE;Agência da Receita Estadual de Alegre;SURAP;confirmada;Anexo III do Decreto 6005-R/2025 (agências ligadas à SURAP)
+ARE ARACRUZ;Agência da Receita Estadual de Aracruz;SURAP;confirmada;Anexo III do Decreto 6005-R/2025 (agências ligadas à SURAP)
+ARE B S FRANCISCO;Agência da Receita Estadual de Barra de São Francisco;SURAP;confirmada;Anexo III do Decreto 6005-R/2025 (agências ligadas à SURAP)
+ARE CACH ITAPEMIRIM;Agência da Receita Estadual de Cachoeiro de Itapemirim;SURAP;confirmada;Anexo III do Decreto 6005-R/2025 (agências ligadas à SURAP)
+ARE CARIACICA;Agência da Receita Estadual de Cariacica;SURAP;confirmada;Anexo III do Decreto 6005-R/2025 (agências ligadas à SURAP)
+ARE COLATINA;Agência da Receita Estadual de Colatina;SURAP;confirmada;Anexo III do Decreto 6005-R/2025 (agências ligadas à SURAP)
+ARE LINHARES;Agência da Receita Estadual de Linhares;SURAP;confirmada;Anexo III do Decreto 6005-R/2025 (agências ligadas à SURAP)
+ARE REMOTA;Agência da Receita Estadual Remota;SURAP;confirmada;Anexo III do Decreto 6005-R/2025 (agências ligadas à SURAP)
+ARE SAO MATEUS;Agência da Receita Estadual de São Mateus;SURAP;confirmada;Anexo III do Decreto 6005-R/2025 (agências ligadas à SURAP)
+ARE SERRA;Agência da Receita Estadual da Serra;SURAP;confirmada;Anexo III do Decreto 6005-R/2025 (agências ligadas à SURAP)
+ARE VN IMIGRANTE;Agência da Receita Estadual de Venda Nova do Imigrante;SURAP;confirmada;Anexo III do Decreto 6005-R/2025 (agências ligadas à SURAP)
+ARE VITORIA;Agência da Receita Estadual de Vitória;SURAP;confirmada;Anexo III do Decreto 6005-R/2025 (agências ligadas à SURAP)

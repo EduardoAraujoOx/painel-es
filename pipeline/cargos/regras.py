@@ -97,3 +97,31 @@ def valor_e_provimento(tipo, rubricas, cargo_efetivo="", subsidio_padrao=None):
             return round(subs + complementos, 2), PROV_SUBSIDIO, True, 0.0
         return round(complementos, 2), PROV_CARREIRA, True, round(subs, 2)
     return round(complementos, 2), PROV_SEM_PAG, complementos != 0, 0.0
+
+
+# --- Remuneração total (módulo organograma) ---------------------------------------------
+# Soma das rubricas de pagamento do mês, para mostrar o que a pessoa de fato recebe somando
+# carreira e cargo. Ficam de fora o que não é remuneração corrente: auxílios e indenizações,
+# 13º, férias e resíduos de acerto financeiro. O abate do teto constitucional fica à parte.
+EXCLUIDAS_DA_REMUNERACAO = ("AUX", "13", "DECIMO", "FERIAS", "INSUFICIENCIA", "DEVOLUCAO",
+                            "DEBITO", "RESCISAO", "INDEN", "AJUDA")
+R_ABATE_TETO = "ABATE TETO EC 41"
+
+
+def remuneracao(rubricas):
+    """Devolve (bruto_mensal, abate_do_teto)."""
+    bruto = sum(v for r, v in rubricas.items()
+                if v > 0 and not any(p in r for p in EXCLUIDAS_DA_REMUNERACAO))
+    abate = -min(rubricas.get(R_ABATE_TETO, 0.0), 0.0)
+    return round(bruto, 2), round(abate, 2)
+
+
+def condicao(provimento, cargo_efetivo, tipo):
+    """Condição da pessoa, em três grupos: 'puro', 'carreira' ou 'fg'."""
+    if tipo == "FG":
+        return "fg"
+    if provimento == PROV_PURO:
+        return "puro"
+    if provimento == PROV_SUBSIDIO:
+        return "carreira" if cargo_efetivo.strip() else "puro"
+    return "carreira"
