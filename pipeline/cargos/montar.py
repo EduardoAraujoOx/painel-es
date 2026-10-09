@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Monta os arquivos de dados do painel a partir das extrações mensais (.cache/AAAA-MM.json).
+"""Monta os arquivos de dados do painel a partir das extrações mensais (.cache/cargos/AAAA-MM.json).
 
-Saídas (em data/, servidas apenas depois do login):
-    data/index.json        visão geral: um registro por órgão, com séries mensais
-    data/org/<SIGLA>.json  ocupantes do último mês de cada órgão, com tempo na função
+Saídas (em data/cargos/, servidas apenas depois do login):
+    data/cargos/index.json        visão geral: um registro por órgão, com séries mensais
+    data/cargos/org/<SIGLA>.json  ocupantes do último mês de cada órgão, com tempo na função
 
 Definições de fluxo (por órgão, entre meses consecutivos):
     chave de pessoa  = (órgão, matrícula, vínculo); os fluxos são contados por (pessoa, tipo)
@@ -28,9 +28,9 @@ import regras  # noqa: E402
 
 TIPO_COMPLETO = {"CC": regras.TIPO_CC, "FG": regras.TIPO_FG}
 
-RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CACHE = os.path.join(RAIZ, ".cache")
-SAIDA = os.path.join(RAIZ, "data")
+RAIZ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+CACHE = os.path.join(RAIZ, ".cache", "cargos")
+SAIDA = os.path.join(RAIZ, "data", "cargos")
 
 
 def carregar_meses(filtro=None):
@@ -40,7 +40,7 @@ def carregar_meses(filtro=None):
         if filtro is None or d["mes"] in filtro:
             meses[d["mes"]] = d
     if not meses:
-        sys.exit("nenhuma extração mensal em .cache/")
+        sys.exit("nenhuma extração mensal em .cache/cargos/")
     return meses
 
 
@@ -67,7 +67,7 @@ def main():
     global SAIDA
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--meses", help="subconjunto consecutivo AAAA-MM:AAAA-MM (padrão: todos os extraídos)")
-    ap.add_argument("--saida", help="pasta de saída (padrão: data/)")
+    ap.add_argument("--saida", help="pasta de saída (padrão: data/cargos/)")
     a = ap.parse_args()
     if a.saida:
         SAIDA = os.path.abspath(a.saida)

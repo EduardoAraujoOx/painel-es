@@ -199,3 +199,14 @@ tbody tr.clicavel:hover { background: var(--grade); }
 .rodape summary { cursor: pointer; font-weight: 600; }
 .rodape #metodo { max-width: 78ch; }
 .rodape p { margin: 8px 0; }
+
+/* abas de módulos */
+.abas-mod { display: flex; gap: 4px; border-bottom: 1px solid var(--borda); margin-bottom: 16px; overflow-x: auto; }
+.abas-mod a {
+  padding: 10px 14px; color: var(--tinta-2); text-decoration: none; font-weight: 600; font-size: 14px;
+  border-bottom: 2px solid transparent; margin-bottom: -1px; white-space: nowrap;
+}
+.abas-mod a:hover { color: var(--tinta); }
+.abas-mod a[aria-current="page"] { color: var(--tinta); border-bottom-color: var(--serie-1); }
+.modulo-topo { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+.modulo-titulo { font-size: 18px; }

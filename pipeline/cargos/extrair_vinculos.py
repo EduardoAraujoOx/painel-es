@@ -6,7 +6,7 @@
     oficial (EFETIVO, COMISSIONADO...) e a data de exercício do vínculo.
 
 O CPF vem mascarado na fonte e, de todo modo, não é lido nem guardado.
-Resultado em .cache/vinculos.json. Uso: python3 pipeline/extrair_vinculos.py
+Resultado em .cache/cargos/vinculos.json. Uso: python3 pipeline/cargos/extrair_vinculos.py
 """
 import json
 import os

@@ -1,77 +1,23 @@
 (() => {
   'use strict';
+  // Módulo "Cargos em comissão e funções gratificadas".
+  const { el, nInt, nBRL, brlCompacto, rotuloMes, mesesEntre, titulo, norm, soma, mediana,
+    mostrarDica, esconderDica, dicaLinha, dicaNoElemento, observar,
+    graficoLinhas, graficoBarras, mapaDeBlocos } = PF;
 
   // Órgãos destacados no mapa; os demais ficam em cinza (ênfase, não categorias).
   const FOCO = ['SEFAZ', 'SEP'];
-  const MESES = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
   const PROV_PURO = 'Comissionado sem vínculo efetivo';
   const PROV_SUBSIDIO = 'Subsídio';
 
-  const $ = (s) => document.querySelector(s);
-
-  // ---------- utilidades ----------
-  function el(tag, attrs, ...filhos) {
-    const e = document.createElement(tag);
-    for (const [k, v] of Object.entries(attrs || {})) {
-      if (v === false || v == null) continue;
-      if (k === 'class') e.className = v;
-      else if (k.startsWith('on')) e.addEventListener(k.slice(2), v);
-      else e.setAttribute(k, v === true ? '' : v);
-    }
-    for (const f of filhos.flat(Infinity)) {
-      if (f == null || f === false) continue;
-      e.append(f.nodeType ? f : document.createTextNode(String(f)));
-    }
-    return e;
-  }
-  function svg(tag, attrs, ...filhos) {
-    const e = document.createElementNS('http://www.w3.org/2000/svg', tag);
-    for (const [k, v] of Object.entries(attrs || {})) if (v != null) e.setAttribute(k, v);
-    for (const f of filhos.flat()) if (f) e.append(f);
-    return e;
-  }
-  const nInt = new Intl.NumberFormat('pt-BR');
-  const nBRL = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' });
-  function brlCompacto(v) {
-    const a = Math.abs(v);
-    const f = (x, d) => x.toLocaleString('pt-BR', { maximumFractionDigits: d });
-    if (a >= 1e9) return 'R$ ' + f(v / 1e9, 2) + ' bi';
-    if (a >= 1e6) return 'R$ ' + f(v / 1e6, 1) + ' mi';
-    if (a >= 1e3) return 'R$ ' + f(v / 1e3, 0) + ' mil';
-    return nBRL.format(v);
-  }
-  function rotuloMes(m, longo) {
-    const [a, mm] = m.split('-');
-    return `${MESES[+mm - 1]}/${longo ? a : a.slice(2)}`;
-  }
-  function mesesEntre(a, b) {
-    return (+b.slice(0, 4) - +a.slice(0, 4)) * 12 + (+b.slice(5) - +a.slice(5));
-  }
-  const PEQUENAS = new Set(['de', 'da', 'do', 'das', 'dos', 'e', 'em', 'para', 'a', 'o', 'no', 'na']);
-  function titulo(s) {
-    return String(s || '').toLowerCase().split(/(\s+)/).map((p, i) => {
-      if (/^\s*$/.test(p)) return p;
-      if (i > 0 && PEQUENAS.has(p)) return p;
-      if (/\d/.test(p) || /^[ivx]+$/.test(p) || p.length <= 2) return p.toUpperCase();
-      return p.charAt(0).toUpperCase() + p.slice(1);
-    }).join('');
-  }
-  const norm = (s) => String(s || '').normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase();
-  const soma = (arr, f) => arr.reduce((t, x) => t + f(x), 0);
-  function mediana(v) {
-    if (!v.length) return null;
-    const o = [...v].sort((a, b) => a - b);
-    const m = o.length >> 1;
-    return o.length % 2 ? o[m] : (o[m - 1] + o[m]) / 2;
-  }
-  function guardar(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* sem armazenamento */ } }
-  function ler(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  let ctx = null;
+  let raiz = null;
+  const $ = (s) => raiz.querySelector(s);
 
   // ---------- estado ----------
   let dados = null;
   const cacheOrg = new Map();
   let tokenRender = 0;
-  let observadores = [];
   const estado = {
     tipo: 'todos', medida: 'custo', prov: 'todos', busca: '',
     org: null, funcao: null, vistaOrgs: 'mapa', verTodasFuncoes: false,
@@ -83,268 +29,6 @@
   const custo = (r) => (incluiCC() ? r.custoCC : 0) + (incluiFG() ? r.custoFG : 0);
   const entradas = (r) => (incluiCC() ? r.entCC : 0) + (incluiFG() ? r.entFG : 0);
   const saidas = (r) => (incluiCC() ? r.saiCC : 0) + (incluiFG() ? r.saiFG : 0);
-
-  // ---------- acesso ----------
-  async function api(qs) {
-    const r = await fetch('/api/dados?' + qs, { credentials: 'same-origin', cache: 'no-store' });
-    if (r.status === 401) throw { sessao: true };
-    if (!r.ok) throw new Error('Falha ao carregar dados (' + r.status + ')');
-    return r.json();
-  }
-  function mostrarLogin() {
-    $('#app').hidden = true;
-    $('#login').hidden = false;
-    $('#senha').focus();
-  }
-  $('#form-login').addEventListener('submit', async (ev) => {
-    ev.preventDefault();
-    const erro = $('#login-erro');
-    erro.hidden = true;
-    const r = await fetch('/api/login', {
-      method: 'POST', credentials: 'same-origin',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ senha: $('#senha').value }),
-    });
-    if (r.ok) {
-      $('#senha').value = '';
-      $('#login').hidden = true;
-      iniciar();
-    } else {
-      erro.textContent = r.status === 401 ? 'Senha incorreta.' : 'Acesso indisponível no momento.';
-      erro.hidden = false;
-    }
-  });
-  $('#sair').addEventListener('click', async () => {
-    await fetch('/api/sair', { method: 'POST', credentials: 'same-origin' });
-    dados = null;
-    cacheOrg.clear();
-    mostrarLogin();
-  });
-
-  // ---------- tema ----------
-  function aplicarTema(t) {
-    if (t) document.documentElement.setAttribute('data-theme', t);
-    else document.documentElement.removeAttribute('data-theme');
-  }
-  aplicarTema(ler('tema'));
-  $('#tema').addEventListener('click', () => {
-    const atual = document.documentElement.getAttribute('data-theme')
-      || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    const novo = atual === 'dark' ? 'light' : 'dark';
-    aplicarTema(novo);
-    guardar('tema', novo);
-  });
-
-  // ---------- tooltip ----------
-  const dica = $('#dica');
-  function mostrarDica(nos, x, y) {
-    dica.replaceChildren(...nos);
-    dica.hidden = false;
-    const w = dica.offsetWidth, h = dica.offsetHeight;
-    let left = x + 14, top = y + 14;
-    if (left + w > innerWidth - 8) left = x - w - 14;
-    if (top + h > innerHeight - 8) top = y - h - 14;
-    dica.style.left = Math.max(8, left) + 'px';
-    dica.style.top = Math.max(8, top) + 'px';
-  }
-  const esconderDica = () => { dica.hidden = true; };
-  const dicaLinha = (cor, valor, nome) => el('div', { class: 'lin' },
-    cor ? el('i', { class: 'chave-linha', style: `background:${cor}` }) : null,
-    el('strong', {}, valor), nome ? el('span', {}, nome) : null);
-  function dicaNoElemento(e, nos) {
-    const r = e.getBoundingClientRect();
-    mostrarDica(nos(), r.left + r.width / 2, r.top + r.height / 2);
-  }
-
-  // ---------- observação de tamanho (gráficos responsivos) ----------
-  function observar(alvo, desenhar) {
-    let ultima = -1;
-    const ro = new ResizeObserver(() => {
-      const w = Math.round(alvo.clientWidth);
-      if (w !== ultima && w > 0) { ultima = w; desenhar(w); }
-    });
-    ro.observe(alvo);
-    observadores.push(ro);
-  }
-
-  // ---------- gráficos ----------
-  function passoNice(max, alvo) {
-    if (max <= 0) return 1;
-    const bruto = max / alvo;
-    const exp = Math.pow(10, Math.floor(Math.log10(bruto)));
-    const f = bruto / exp;
-    return (f <= 1 ? 1 : f <= 2 ? 2 : f <= 5 ? 5 : 10) * exp;
-  }
-  function moldura(W, H, meses, maxVal, fmtTick) {
-    const ml = 46, mr = 16, mt = 14, mb = 26;
-    const iw = W - ml - mr, ih = H - mt - mb;
-    const passo = passoNice(maxVal, 4);
-    const topo = Math.max(passo, Math.ceil(maxVal / passo) * passo);
-    const y = (v) => mt + ih - (v / topo) * ih;
-    const n = meses.length;
-    const raiz = svg('svg', { viewBox: `0 0 ${W} ${H}`, width: W, height: H });
-    for (let v = 0; v <= topo + 1e-9; v += passo) {
-      raiz.append(svg('line', { class: v === 0 ? 'eixo' : 'grade', x1: ml, x2: W - mr, y1: y(v), y2: y(v) }));
-      const t = svg('text', { x: ml - 8, y: y(v) + 4, 'text-anchor': 'end' });
-      t.textContent = fmtTick(v);
-      raiz.append(t);
-    }
-    const cada = Math.max(1, Math.ceil(n / Math.max(2, Math.floor(iw / 58))));
-    meses.forEach((m, i) => {
-      if ((n - 1 - i) % cada !== 0) return;
-      const t = svg('text', { x: ml + (n === 1 ? iw / 2 : (i * iw) / (n - 1)), y: H - 6, 'text-anchor': 'middle' });
-      t.textContent = rotuloMes(m);
-      raiz.append(t);
-    });
-    return { raiz, ml, mr, mt, mb, iw, ih, y, topo, n };
-  }
-  function legenda(series) {
-    if (series.length < 2) return null;
-    return el('div', { class: 'legenda' }, series.map((s) => el('span', {},
-      el('i', { class: s.barra ? 'chave-caixa' : 'chave-linha', style: `background:${s.cor}` }), s.nome)));
-  }
-
-  function graficoLinhas(container, { meses, series, fmt }) {
-    const caixa = el('div', { class: 'grafico', tabindex: '0', role: 'img',
-      'aria-label': 'Gráfico de linhas: ' + series.map((s) => s.nome).join(', ') });
-    container.append(...[legenda(series), caixa].filter(Boolean));
-    let idxAtivo = meses.length - 1;
-    function desenhar(W) {
-      const H = 220;
-      const maxVal = Math.max(1, ...series.flatMap((s) => s.vals));
-      const m = moldura(W, H, meses, maxVal, (v) => nInt.format(v));
-      const px = (i) => m.ml + (m.n === 1 ? m.iw / 2 : (i * m.iw) / (m.n - 1));
-      const rotulados = [];
-      for (const s of series) {
-        const d = s.vals.map((v, i) => `${i ? 'L' : 'M'}${px(i).toFixed(1)},${m.y(v).toFixed(1)}`).join('');
-        m.raiz.append(svg('path', { d, fill: 'none', 'stroke-width': 2, 'stroke-linejoin': 'round',
-          'stroke-linecap': 'round', style: `stroke:${s.cor}` }));
-        const ux = px(m.n - 1), uy = m.y(s.vals[m.n - 1]);
-        m.raiz.append(svg('circle', { cx: ux, cy: uy, r: 4, style: `fill:${s.cor};stroke:var(--superficie);stroke-width:2` }));
-        if (rotulados.every((y) => Math.abs(y - uy) > 15)) {
-          rotulados.push(uy);
-          const t = svg('text', { class: 'rotulo-final', x: ux - 6, y: uy - 9, 'text-anchor': 'end' });
-          t.textContent = fmt(s.vals[m.n - 1]);
-          m.raiz.append(t);
-        }
-      }
-      const cursor = svg('line', { class: 'cursor', y1: m.mt, y2: m.mt + m.ih, visibility: 'hidden' });
-      const pontos = series.map((s) => svg('circle', { r: 4, visibility: 'hidden',
-        style: `fill:${s.cor};stroke:var(--superficie);stroke-width:2` }));
-      m.raiz.append(cursor, ...pontos);
-      const sobre = svg('rect', { x: m.ml, y: m.mt, width: m.iw, height: m.ih, fill: 'transparent' });
-      m.raiz.append(sobre);
-
-      function mostrar(i, cx, cy) {
-        idxAtivo = i;
-        cursor.setAttribute('x1', px(i)); cursor.setAttribute('x2', px(i)); cursor.setAttribute('visibility', 'visible');
-        pontos.forEach((p, k) => {
-          p.setAttribute('cx', px(i)); p.setAttribute('cy', m.y(series[k].vals[i])); p.setAttribute('visibility', 'visible');
-        });
-        mostrarDica([el('div', { class: 'tit' }, rotuloMes(meses[i], true)),
-          ...series.map((s) => dicaLinha(s.cor, fmt(s.vals[i]), s.nome))], cx, cy);
-      }
-      function esconder() {
-        cursor.setAttribute('visibility', 'hidden');
-        pontos.forEach((p) => p.setAttribute('visibility', 'hidden'));
-        esconderDica();
-      }
-      const indiceDe = (ev) => {
-        const r = sobre.getBoundingClientRect();
-        const f = (ev.clientX - r.left) / r.width;
-        return Math.min(m.n - 1, Math.max(0, Math.round(f * (m.n - 1))));
-      };
-      sobre.addEventListener('pointermove', (ev) => mostrar(indiceDe(ev), ev.clientX, ev.clientY));
-      sobre.addEventListener('pointerleave', esconder);
-      caixa.onkeydown = (ev) => {
-        if (ev.key !== 'ArrowLeft' && ev.key !== 'ArrowRight') return;
-        ev.preventDefault();
-        const i = Math.min(m.n - 1, Math.max(0, idxAtivo + (ev.key === 'ArrowRight' ? 1 : -1)));
-        const r = caixa.getBoundingClientRect();
-        mostrar(i, r.left + px(i), r.top + 40);
-      };
-      caixa.onblur = esconder;
-      caixa.replaceChildren(m.raiz);
-    }
-    observar(caixa, desenhar);
-  }
-
-  function graficoBarras(container, { meses, series, fmt }) {
-    const caixa = el('div', { class: 'grafico', role: 'img',
-      'aria-label': 'Gráfico de barras: ' + series.map((s) => s.nome).join(', ') });
-    container.append(...[legenda(series), caixa].filter(Boolean));
-    function desenhar(W) {
-      const H = 200;
-      const maxVal = Math.max(1, ...series.flatMap((s) => s.vals));
-      const m = moldura(W, H, meses, maxVal, (v) => nInt.format(v));
-      const banda = m.iw / m.n;
-      const larg = Math.max(2, Math.min(24, (banda - 6) / series.length - 2));
-      const grupoW = series.length * larg + (series.length - 1) * 2;
-      const y0 = m.y(0);
-      const grupos = meses.map((mes, i) => {
-        const x0 = m.ml + i * banda + (banda - grupoW) / 2;
-        const g = svg('g', {});
-        series.forEach((s, k) => {
-          const v = s.vals[i];
-          if (v <= 0) return;
-          const x = x0 + k * (larg + 2), yt = m.y(v), r = Math.min(4, larg / 2, y0 - yt);
-          g.append(svg('path', {
-            d: `M${x},${y0}L${x},${yt + r}Q${x},${yt} ${x + r},${yt}L${x + larg - r},${yt}Q${x + larg},${yt} ${x + larg},${yt + r}L${x + larg},${y0}Z`,
-            style: `fill:${s.cor}`,
-          }));
-        });
-        m.raiz.append(g);
-        return g;
-      });
-      meses.forEach((mes, i) => {
-        const hit = svg('rect', { x: m.ml + i * banda, y: m.mt, width: banda, height: m.ih, fill: 'transparent', tabindex: '0',
-          'aria-label': `${rotuloMes(mes, true)}: ` + series.map((s) => `${s.nome} ${fmt(s.vals[i])}`).join(', ') });
-        const nos = () => [el('div', { class: 'tit' }, rotuloMes(mes, true)),
-          ...series.map((s) => dicaLinha(s.cor, fmt(s.vals[i]), s.nome))];
-        const realce = (on) => grupos[i].setAttribute('style', on ? 'filter:brightness(1.18)' : '');
-        hit.addEventListener('pointermove', (ev) => { realce(true); mostrarDica(nos(), ev.clientX, ev.clientY); });
-        hit.addEventListener('pointerleave', () => { realce(false); esconderDica(); });
-        hit.addEventListener('focus', () => { realce(true); dicaNoElemento(hit, nos); });
-        hit.addEventListener('blur', () => { realce(false); esconderDica(); });
-        m.raiz.append(hit);
-      });
-      caixa.replaceChildren(m.raiz);
-    }
-    observar(caixa, desenhar);
-  }
-
-  // mapa de blocos (algoritmo "squarified")
-  function mapaDeBlocos(itens, W, H) {
-    const total = soma(itens, (i) => i.v);
-    const nos = itens.filter((i) => i.v > 0).sort((a, b) => b.v - a.v)
-      .map((i) => ({ ...i, a: (i.v / total) * W * H }));
-    const saida = [];
-    let x = 0, y = 0, w = W, h = H, linha = [];
-    const pior = (l, lado) => {
-      const s = soma(l, (n) => n.a);
-      const mx = Math.max(...l.map((n) => n.a)), mn = Math.min(...l.map((n) => n.a));
-      return Math.max((lado * lado * mx) / (s * s), (s * s) / (lado * lado * mn));
-    };
-    const fechar = (l) => {
-      const s = soma(l, (n) => n.a);
-      if (w >= h) {
-        const lw = s / h; let yy = y;
-        for (const n of l) { const hh = n.a / lw; saida.push({ ...n, x, y: yy, w: lw, h: hh }); yy += hh; }
-        x += lw; w -= lw;
-      } else {
-        const lh = s / w; let xx = x;
-        for (const n of l) { const ww = n.a / lh; saida.push({ ...n, x: xx, y, w: ww, h: lh }); xx += ww; }
-        y += lh; h -= lh;
-      }
-    };
-    let i = 0;
-    while (i < nos.length) {
-      const lado = Math.min(w, h), tentativa = linha.concat([nos[i]]);
-      if (!linha.length || pior(tentativa, lado) <= pior(linha, lado)) { linha = tentativa; i++; } else { fechar(linha); linha = []; }
-    }
-    if (linha.length) fechar(linha);
-    return saida;
-  }
 
   // ---------- filtros e navegação ----------
   function orgsVisiveis() {
@@ -372,15 +56,15 @@
   }
   function selecionarOrg(sigla) {
     estado.funcao = null; estado.limite = 100; estado.verTodasFuncoes = false;
-    if (location.hash.slice(1) === (sigla || '')) { estado.org = sigla || null; render(); } else location.hash = sigla || '';
+    ctx.irPara(sigla || '');
   }
-  function sincronizarHash() {
-    const sigla = decodeURIComponent(location.hash.slice(1));
+  function aoNavegar(resto) {
+    if (!dados) return;
+    const sigla = decodeURIComponent(resto || '');
     estado.org = dados.orgs.some((o) => o.sigla === sigla) ? sigla : null;
     estado.funcao = null; estado.limite = 100;
     render();
   }
-  window.addEventListener('hashchange', () => { if (dados) sincronizarHash(); });
 
   function renderTrilha() {
     const t = $('#trilha');
@@ -509,7 +193,7 @@
 
   // ---------- visão: órgão ----------
   async function carregarOrg(org) {
-    if (!cacheOrg.has(org.sigla)) cacheOrg.set(org.sigla, await api('arq=org&sigla=' + encodeURIComponent(org.arquivo)));
+    if (!cacheOrg.has(org.sigla)) cacheOrg.set(org.sigla, await ctx.api('org/' + org.arquivo));
     return cacheOrg.get(org.sigla);
   }
   async function renderOrg(c) {
@@ -518,7 +202,7 @@
     c.classList.add('carregando');
     let det;
     try { det = await carregarOrg(org); } catch (e) {
-      if (e.sessao) return mostrarLogin();
+      if (e.sessao) return PF.mostrarLogin();
       c.classList.remove('carregando');
       return c.replaceChildren(el('p', { class: 'vazio' }, 'Não foi possível carregar este órgão.'));
     }
@@ -653,8 +337,7 @@
 
   // ---------- render ----------
   function render() {
-    observadores.forEach((o) => o.disconnect());
-    observadores = [];
+    PF.limparObservadores();
     esconderDica();
     $('#rotulo-prov').hidden = !estado.org;
     renderTrilha();
@@ -664,32 +347,88 @@
     if (!estado.org) renderGoverno(c); else renderOrg(c);
   }
 
-  for (const [id, chave] of [['#f-tipo', 'tipo'], ['#f-medida', 'medida'], ['#f-prov', 'prov']]) {
-    $(id).addEventListener('change', (ev) => { estado[chave] = ev.target.value; estado.limite = 100; if (dados) render(); });
-  }
-  let temporizador;
-  $('#f-busca').addEventListener('input', (ev) => {
-    clearTimeout(temporizador);
-    temporizador = setTimeout(() => { estado.busca = ev.target.value.trim(); estado.limite = 100; if (dados) render(); }, 180);
-  });
+  const ESQUELETO = `
+    <section>
+      <div class="modulo-topo">
+        <div>
+          <h2 class="modulo-titulo">Cargos em comissão e funções gratificadas</h2>
+          <p class="sub">Quadro de ocupantes, custo mensal e rotatividade, a partir da folha oficial do Poder Executivo.</p>
+        </div>
+        <span id="mesref" class="mesref"></span>
+      </div>
+      <div class="filtros" role="group" aria-label="Filtros">
+        <label>Tipo
+          <select id="f-tipo">
+            <option value="todos">Cargos em comissão e funções gratificadas</option>
+            <option value="CC">Somente cargos em comissão</option>
+            <option value="FG">Somente funções gratificadas</option>
+          </select>
+        </label>
+        <label>Medida
+          <select id="f-medida">
+            <option value="custo">Custo mensal dos cargos</option>
+            <option value="qtd">Número de ocupantes</option>
+          </select>
+        </label>
+        <label id="rotulo-prov" hidden>Provimento
+          <select id="f-prov">
+            <option value="todos">Todos</option>
+            <option value="puro">Comissionado sem vínculo efetivo</option>
+            <option value="efetivo">Servidor com vínculo de origem</option>
+            <option value="subsidio">Subsídio</option>
+          </select>
+        </label>
+        <label class="busca">Buscar
+          <input id="f-busca" type="search" placeholder="Nome, função ou órgão" autocomplete="off">
+        </label>
+      </div>
+      <nav id="trilha" class="trilha" aria-label="Navegação"></nav>
+      <div id="conteudo"></div>
+      <footer class="rodape">
+        <details>
+          <summary>Fonte e método de cálculo</summary>
+          <div id="metodo"></div>
+        </details>
+      </footer>
+    </section>`;
 
-  async function iniciar() {
+  function vincularFiltros() {
+    for (const [id, chave] of [['#f-tipo', 'tipo'], ['#f-medida', 'medida'], ['#f-prov', 'prov']]) {
+      $(id).value = estado[chave];
+      $(id).addEventListener('change', (ev) => { estado[chave] = ev.target.value; estado.limite = 100; if (dados) render(); });
+    }
+    $('#f-busca').value = estado.busca;
+    let temporizador;
+    $('#f-busca').addEventListener('input', (ev) => {
+      clearTimeout(temporizador);
+      temporizador = setTimeout(() => { estado.busca = ev.target.value.trim(); estado.limite = 100; if (dados) render(); }, 180);
+    });
+  }
+
+  async function montar(contexto) {
+    ctx = contexto;
+    raiz = ctx.container;
+    raiz.innerHTML = ESQUELETO; // modelo estático, sem dados externos
+    vincularFiltros();
     try {
-      dados = await api('arq=index');
+      dados = await ctx.api('index');
     } catch (e) {
-      if (e.sessao) return mostrarLogin();
-      $('#login').hidden = true;
-      $('#app').hidden = false;
-      return $('#conteudo').replaceChildren(el('p', { class: 'vazio' }, 'Não foi possível carregar os dados.'));
+      if (e.sessao) { PF.mostrarLogin(); return false; }
+      $('#conteudo').replaceChildren(el('p', { class: 'vazio' }, 'Não foi possível carregar os dados.'));
+      return false;
     }
     for (const o of dados.orgs) {
       const cols = dados.colunasSerie;
       o.s = o.serie.map((r) => Object.fromEntries(cols.map((k, i) => [k, r[i]])));
     }
-    $('#login').hidden = true;
-    $('#app').hidden = false;
     preencherMetodo();
-    sincronizarHash();
+    return true;
   }
-  iniciar();
+
+  function desmontar() {
+    dados = null;
+    cacheOrg.clear();
+  }
+
+  PF.registrar({ id: 'cargos', titulo: 'Cargos em comissão', montar, aoNavegar, desmontar });
 })();

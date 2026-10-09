@@ -2,11 +2,11 @@
 """Extrai cargos comissionados e funções gratificadas da folha mensal (dados abertos do ES).
 
 Cada mês da folha pesa de 80 a 250 MB. O arquivo é lido em fluxo (nunca gravado em disco)
-e só as linhas de interesse são mantidas. O resultado de cada mês fica em .cache/AAAA-MM.json.
+e só as linhas de interesse são mantidas. O resultado de cada mês fica em .cache/cargos/AAAA-MM.json.
 
 Uso:
-    python3 pipeline/extrair.py --meses 2024-10:2026-09 --jobs 6
-    python3 pipeline/extrair.py --meses 2026-09 --arquivo /caminho/Remuneracoes-09_2026.csv
+    python3 pipeline/cargos/extrair.py --meses 2024-10:2026-09 --jobs 6
+    python3 pipeline/cargos/extrair.py --meses 2026-09 --arquivo /caminho/Remuneracoes-09_2026.csv
 """
 import argparse
 import collections
@@ -21,8 +21,8 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import regras  # noqa: E402
 
-RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CACHE = os.path.join(RAIZ, ".cache")
+RAIZ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+CACHE = os.path.join(RAIZ, ".cache", "cargos")
 CKAN = "https://dados.es.gov.br/api/3/action/package_show?id=portal-da-transparencia-pessoal"
 
 

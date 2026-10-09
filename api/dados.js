@@ -1,12 +1,17 @@
-// Entrega os arquivos de data/ somente a quem tem sessão válida.
-//   GET /api/dados?arq=index
-//   GET /api/dados?arq=org&sigla=SEFAZ
+// Entrega os arquivos de data/<módulo>/ somente a quem tem sessão válida.
+//   GET /api/dados?mod=cargos&arq=index
+//   GET /api/dados?mod=cargos&arq=org/SEFAZ
+// Cada módulo do painel guarda seus dados em data/<módulo>/.
 const fs = require('fs');
 const path = require('path');
 const { sessaoValida, lerCookie, responder } = require('./_auth');
 
 const RAIZ = process.cwd();
 const PASTA = process.env.DADOS_DIR || 'data'; // variável usada só nos testes locais
+
+// Listas fechadas de caracteres: nada de pontos ou barras fora do formato <pasta>/<nome>.
+const RE_MODULO = /^[a-z0-9_-]{1,30}$/;
+const RE_ARQUIVO = /^[A-Za-z0-9_-]{1,60}(\/[A-Za-z0-9_-]{1,60})?$/;
 
 module.exports = (req, res) => {
   if (req.method !== 'GET') return responder(res, 405, { erro: 'método não permitido' });
@@ -19,17 +24,13 @@ module.exports = (req, res) => {
   if (!autorizado) return responder(res, 401, { erro: 'sessão ausente ou expirada' });
 
   const url = new URL(req.url, 'http://x');
-  const arq = url.searchParams.get('arq');
-  let caminho;
-  if (arq === 'index') {
-    caminho = path.join(RAIZ, PASTA, 'index.json');
-  } else if (arq === 'org') {
-    const sigla = url.searchParams.get('sigla') || '';
-    if (!/^[A-Za-z0-9_-]{1,40}$/.test(sigla)) return responder(res, 400, { erro: 'órgão inválido' });
-    caminho = path.join(RAIZ, PASTA, 'org', sigla + '.json');
-  } else {
-    return responder(res, 400, { erro: 'arquivo inválido' });
-  }
+  const modulo = url.searchParams.get('mod') || '';
+  const arq = url.searchParams.get('arq') || '';
+  if (!RE_MODULO.test(modulo) || !RE_ARQUIVO.test(arq)) return responder(res, 400, { erro: 'pedido inválido' });
+
+  const base = path.join(RAIZ, PASTA, modulo);
+  const caminho = path.join(base, arq + '.json');
+  if (!caminho.startsWith(base + path.sep)) return responder(res, 400, { erro: 'pedido inválido' });
 
   let conteudo;
   try {
