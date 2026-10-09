@@ -73,7 +73,13 @@ def carregar_estrutura(sigla_orgao):
     if not os.path.exists(caminho):
         return None
     with open(caminho, encoding="utf-8", newline="") as f:
-        return list(csv.DictReader(f, delimiter=";"))
+        linhas = list(csv.DictReader(f, delimiter=";"))
+    # o separador é ';': um ';' dentro de um texto desloca colunas e corrompe a estrutura
+    for n, l in enumerate(linhas, start=2):
+        codigo = (l.get("codigo") or "").strip()
+        if None in l or (codigo and not codigo.isdigit()) or l["situacao"] not in ("confirmada", "a conferir"):
+            sys.exit(f"{caminho}, linha {n}: formato inválido (há ';' dentro de um texto?): {l['sigla']}")
+    return linhas
 
 
 def sigla_do_setor(nome_setor, siglas_conhecidas):
@@ -148,10 +154,15 @@ def main():
         # raiz = o próprio órgão
         nova(org, nome=nome_org, sigla=org, pai=None, situacao="raiz", fonte="")
         siglas = {}
+        por_codigo = {}
         if estrutura:
             for linha in estrutura:
-                siglas[linha["sigla"]] = linha
-                nova("u:" + linha["sigla"], nome=linha["nome"], sigla=linha["sigla"],
+                cod_fixo = (linha.get("codigo") or "").strip()
+                if cod_fixo:
+                    por_codigo[cod_fixo] = "u:" + linha["sigla"]   # casamento direto pelo código do setor
+                else:
+                    siglas[linha["sigla"]] = linha
+                nova("u:" + linha["sigla"], nome=linha["nome"], sigla="" if cod_fixo else linha["sigla"],
                      pai=linha["pai"] if linha["pai"] == org else "u:" + linha["pai"],
                      situacao=linha["situacao"], fonte=linha["fonte"])
 
@@ -169,9 +180,11 @@ def main():
             nivel = nivel_do_codigo(cod)
             uid = None
             if estrutura:
-                s = sigla_do_setor(setor, siglas)
-                if s:
-                    uid = "u:" + s
+                uid = por_codigo.get(cod)
+                if uid is None:
+                    s = sigla_do_setor(setor, siglas)
+                    if s:
+                        uid = "u:" + s
             # raiz: o setor de nível 1 do código que leva o nome do próprio órgão (ex.: o gabinete
             # do titular da pasta); as demais unidades de nível 1 ficam como unidades à parte
             if uid is None and nivel == 1 and norm(setor).endswith(" " + norm(org)):

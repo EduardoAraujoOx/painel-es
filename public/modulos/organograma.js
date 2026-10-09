@@ -19,6 +19,7 @@
   let token = 0;
   const estado = {
     org: null, busca: '', conds: new Set(ORDEM), abertos: new Set(), pessoasAbertas: new Set(), dados: null,
+    vista: 'lista', grafAbertos: new Set(), selecionado: null, incluirSub: false, centralizar: true,
   };
   const $ = (s) => raiz.querySelector(s);
 
@@ -27,13 +28,17 @@
     const nos = new Map();
     for (const u of dados.unidades) nos.set(u.id, { ...u, filhos: [], pessoas: [] });
     for (const n of nos.values()) if (n.pai && nos.has(n.pai)) nos.get(n.pai).filhos.push(n);
-    for (const p of dados.pessoas) (nos.get(p.unidade) || nos.get(dados.sigla)).pessoas.push(p);
+    for (const p of dados.pessoas) {
+      const u = nos.get(p.unidade) || nos.get(dados.sigla);
+      p._unidade = norm(`${u.nome} ${u.sigla}`);   // a busca também acha a pessoa pelo nome da unidade
+      u.pessoas.push(p);
+    }
     return { nos, raiz: nos.get(dados.sigla) };
   }
   function passa(p) {
     if (!estado.conds.has(p.cond)) return false;
     const q = norm(estado.busca);
-    return !q || norm(p.nome).includes(q) || norm(p.funcao).includes(q);
+    return !q || norm(p.nome).includes(q) || norm(p.funcao).includes(q) || (p._unidade || '').includes(q);
   }
   // agrega a subárvore já considerando os filtros; guarda em n.ag
   function agregar(n) {
@@ -64,7 +69,9 @@
   }
   const chipCond = (c) => el('span', { class: 'chip-cond' }, el('i', { style: `background:${COND[c].cor}` }), COND[c].curto);
 
-  function cartaoPessoa(p) {
+  const nomeUnidade = (n) => ((n.sigla || n.id.startsWith('n:')) ? n.nome : titulo(n.nome));
+
+  function cartaoPessoa(p, unidade) {
     const aberto = estado.pessoasAbertas.has(p.id + p.funcao);
     const detalhes = [];
     if (p.cargoEfetivo) detalhes.push(['Cargo efetivo', titulo(p.cargoEfetivo)]);
@@ -82,6 +89,7 @@
         }, 'data-foco': p.id + p.funcao },
         el('span', { class: 'pessoa-nome' }, titulo(p.nome)),
         el('span', { class: 'pessoa-funcao' }, titulo(p.funcao)),
+        unidade ? el('span', { class: 'pessoa-unidade' }, unidade) : null,
         el('span', { class: 'pessoa-linha' }, chipCond(p.cond),
           el('span', { class: 'valores' },
             el('span', {}, 'Cargo ', el('b', {}, nBRL.format(p.valor))),
@@ -98,7 +106,7 @@
     const vazio = n.ag.n === 0;
     const rotuloSituacao = n.situacao === 'nao-confirmada' ? 'subordinação não confirmada'
       : n.situacao === 'a conferir' ? 'ligação a conferir' : '';
-    const nome = (n.sigla || n.id.startsWith('n:')) ? n.nome : titulo(n.nome);
+    const nome = nomeUnidade(n);
     const topo = el('button', { type: 'button', class: 'unidade-topo', 'aria-expanded': String(aberto),
       'data-foco': n.id, disabled: !temFilhos,
       onclick: () => {
@@ -124,8 +132,123 @@
     return li;
   }
 
+
+  // ---------- organograma gráfico (caixas e linhas) ----------
+  const pendente = (n) => n.situacao === 'nao-confirmada' || n.situacao === 'a conferir';
+  const rotuloPendencia = (n) => (n.situacao === 'nao-confirmada' ? 'subordinação não confirmada'
+    : n.situacao === 'a conferir' ? 'ligação a conferir' : '');
+
+  function noGrafico(n) {
+    const filtro = filtrando();
+    if (filtro && n.ag.n === 0) return null;
+    const filhos = n.filhos.filter((f) => !filtro || f.ag.n > 0);
+    const aberto = filhos.length > 0 && (estado.grafAbertos.has(n.id) || filtro);
+    const vazio = n.ag.n === 0;
+    const sel = estado.selecionado === n.id;
+    const pend = rotuloPendencia(n);
+    const nome = nomeUnidade(n);
+    const caixa = el('div', { class: 'oc-no' + (sel ? ' sel' : '') + (vazio ? ' vazio' : '') + (pendente(n) ? ' pend' : ''), 'data-id': n.id },
+      el('button', { type: 'button', class: 'oc-corpo', 'aria-pressed': String(sel), 'data-foco': n.id,
+        onclick: () => { estado.selecionado = n.id; desenhar(n.id, n.id); } },
+      el('span', { class: 'oc-nome' }, nome, n.sigla ? el('span', { class: 'sigla' }, n.sigla) : null),
+      el('span', { class: 'oc-resumo' }, barraCond(n.ag.cond, n.ag.n),
+        el('span', { class: 'qtd' }, vazio ? 'sem ocupantes' : `${nInt.format(n.ag.n)} ${n.ag.n === 1 ? 'pessoa' : 'pessoas'}`)),
+      pend ? el('span', { class: 'aviso' }, pend) : null),
+      filhos.length ? el('button', { type: 'button', class: 'oc-exp', 'aria-expanded': String(aberto),
+        'aria-label': `${aberto ? 'Recolher' : 'Abrir'} ${nome}: ${filhos.length} ${filhos.length === 1 ? 'subunidade' : 'subunidades'}`,
+        title: `${aberto ? 'Recolher' : 'Abrir'} (${filhos.length})`,
+        onclick: () => {
+          if (estado.grafAbertos.has(n.id)) estado.grafAbertos.delete(n.id); else estado.grafAbertos.add(n.id);
+          desenhar(undefined, n.id);
+        } }, aberto ? '−' : String(filhos.length)) : null);
+    const li = el('li', {}, caixa);
+    if (aberto) {
+      const vis = filhos.map(noGrafico).filter(Boolean);
+      // unidades-folha ficam penduradas em coluna sob o pai: o desenho fica bem mais estreito
+      const soFolhas = vis.length > 1 && filhos.every((f) => f.filhos.filter((x) => !filtrando() || x.ag.n > 0).length === 0);
+      li.append(el('ul', { class: soFolhas ? 'pendurado' : '' }, vis));
+    }
+    return li;
+  }
+
+  function coletar(n, saida = []) {
+    for (const p of n.visiveis) saida.push({ p, u: nomeUnidade(n) });
+    for (const f of n.filhos) coletar(f, saida);
+    return saida;
+  }
+
+  function painel(n) {
+    const nos = estado.modelo.nos;
+    const itens = estado.incluirSub ? coletar(n).sort((a, b) => b.p.valor - a.p.valor)
+      : n.visiveis.map((p) => ({ p, u: null }));
+    const LIMITE = 120;
+    const pend = rotuloPendencia(n);
+    return [
+      el('p', { class: 'caminho' }, caminho(n, nos)),
+      el('h3', {}, nomeUnidade(n), n.sigla ? el('span', { class: 'sigla' }, n.sigla) : null),
+      pend ? el('p', { class: 'aviso solto' }, pend) : null,
+      n.fonte && n.situacao !== 'raiz' ? el('p', { class: 'fonte' }, 'Fonte: ' + n.fonte) : null,
+      el('div', { class: 'painel-numeros' },
+        el('div', {}, el('b', {}, nInt.format(n.ag.n)), ' pessoas na unidade e abaixo dela'),
+        barraCond(n.ag.cond, n.ag.n),
+        el('div', {}, 'Cargos ', el('b', {}, brlCompacto(n.ag.valor)), ' · Bruto ', el('b', {}, brlCompacto(n.ag.bruto)), ' por mês')),
+      n.filhos.length ? el('label', { class: 'opcao' },
+        el('input', { type: 'checkbox', checked: estado.incluirSub, onchange: (ev) => { estado.incluirSub = ev.target.checked; desenhar(); } }),
+        'Listar também as pessoas das subunidades') : null,
+      itens.length ? el('ul', { class: 'pessoas' }, itens.slice(0, LIMITE).map(({ p, u }) => cartaoPessoa(p, u)))
+        : el('p', { class: 'vazio' }, 'Nenhuma pessoa lotada diretamente nesta unidade.'),
+      itens.length > LIMITE ? el('p', { class: 'fonte' }, `Mostrando ${LIMITE} de ${nInt.format(itens.length)}; use a exportação para a lista completa.`) : null,
+    ].filter(Boolean);
+  }
+
+  function desenharGrafico(ancora, aviso) {
+    const cont = $('#arvore');
+    let lay = cont.querySelector('.org-layout');
+    if (!lay) {
+      lay = el('div', { class: 'org-layout' },
+        el('div', { class: 'oc-rolagem', tabindex: '0', role: 'region', 'aria-label': 'Organograma; role para ver os ramos' }),
+        el('aside', { class: 'oc-painel', 'aria-label': 'Detalhes da unidade selecionada' }));
+      cont.replaceChildren(...[aviso, lay].filter(Boolean));
+      estado.centralizar = true;
+    }
+    const rol = lay.querySelector('.oc-rolagem');
+    const lateral = lay.querySelector('.oc-painel');
+    const { raiz: r, nos } = estado.modelo;
+    let sel = nos.get(estado.selecionado);
+    if (!sel || (filtrando() && sel.ag.n === 0)) { sel = r; estado.selecionado = r.id; }
+
+    const seletor = (id) => `[data-id="${CSS.escape(id)}"]`;
+    const antes = ancora ? rol.querySelector(seletor(ancora)) : null;
+    const posAntes = antes ? antes.getBoundingClientRect() : null;
+    const topo = noGrafico(r);
+    rol.replaceChildren(topo ? el('ul', { class: 'oc' }, topo) : el('p', { class: 'vazio' }, 'Nenhuma pessoa corresponde aos filtros.'));
+    if (posAntes) {   // mantém a caixa clicada onde estava, em vez de deixar o ramo "pular"
+      const depois = rol.querySelector(seletor(ancora));
+      if (depois) {
+        const pos = depois.getBoundingClientRect();
+        rol.scrollLeft += pos.left - posAntes.left;
+        rol.scrollTop += pos.top - posAntes.top;
+      }
+    } else if (estado.centralizar) {
+      rol.scrollLeft = Math.max(0, (rol.scrollWidth - rol.clientWidth) / 2);
+      rol.scrollTop = 0;
+    }
+    estado.centralizar = false;
+    lateral.replaceChildren(...painel(sel));
+  }
+
+  function desenharLista(aviso, focoId) {
+    const arvore = noUnidade(estado.modelo.raiz, 0);
+    $('#arvore').replaceChildren(...[aviso, arvore ? el('ul', { class: 'arvore raiz-lista' }, arvore)
+      : el('p', { class: 'vazio' }, 'Nenhuma pessoa corresponde aos filtros.')].filter(Boolean));
+    if (focoId) {
+      const alvo = $('#arvore').querySelector(`[data-foco="${CSS.escape(focoId)}"]`);
+      if (alvo) alvo.focus({ preventScroll: true });
+    }
+  }
+
   // ---------- desenho ----------
-  function desenhar(focoId) {
+  function desenhar(focoId, ancora) {
     if (!$('#resumo')) return; // a aba foi trocada (ex.: busca com atraso)
     PF.limparObservadores();
     PF.esconderDica();
@@ -148,22 +271,28 @@
         onclick: () => { if (estado.conds.has(c)) estado.conds.delete(c); else estado.conds.add(c); if (!estado.conds.size) estado.conds = new Set(ORDEM); desenhar(); } },
       el('i', {}), COND[c].rotulo, el('span', { class: 'n' }, nInt.format(info ? info[c] : 0)))));
 
-    const arvore = noUnidade(r, 0);
     const aviso = !info.estruturaOficial
       ? el('p', { class: 'nota-estrutura' }, 'Este órgão ainda não tem a estrutura oficial transcrita: as unidades aparecem agrupadas pelo nível do código do setor, sem subordinação confirmada.') : null;
 
+    const graf = estado.vista === 'grafico';
     const ferramentas = el('div', { class: 'ferramentas' },
-      el('button', { type: 'button', class: 'botao', onclick: () => { estado.abertos = new Set(estado.modelo.todos.filter((n) => n.filhos.length || n.pessoas.length).map((n) => n.id)); desenhar(); } }, 'Abrir tudo'),
-      el('button', { type: 'button', class: 'botao', onclick: () => { estado.abertos = new Set([d.sigla]); desenhar(); } }, 'Recolher'),
+      el('div', { class: 'abas', role: 'group', 'aria-label': 'Forma de exibição' },
+        [['grafico', 'Organograma'], ['lista', 'Lista']].map(([v, rot]) => el('button', { type: 'button',
+          'aria-pressed': String(estado.vista === v),
+          onclick: () => { estado.vista = v; PF.guardar('org-vista', v); desenhar(); } }, rot))),
+      el('button', { type: 'button', class: 'botao', onclick: () => {
+        const todos = new Set(estado.modelo.todos.filter((n) => n.filhos.length || (!graf && n.pessoas.length)).map((n) => n.id));
+        if (graf) estado.grafAbertos = todos; else estado.abertos = todos;
+        desenhar();
+      } }, 'Abrir tudo'),
+      el('button', { type: 'button', class: 'botao', onclick: () => {
+        if (graf) estado.grafAbertos = new Set([d.sigla]); else estado.abertos = new Set([d.sigla]);
+        estado.centralizar = true; desenhar();
+      } }, 'Recolher'),
       el('button', { type: 'button', class: 'botao', onclick: exportar }, 'Exportar CSV'));
 
     $('#resumo').replaceChildren(kpis, legenda, ferramentas);
-    $('#arvore').replaceChildren(...[aviso, arvore ? el('ul', { class: 'arvore raiz-lista' }, arvore)
-      : el('p', { class: 'vazio' }, 'Nenhuma pessoa corresponde aos filtros.')].filter(Boolean));
-    if (focoId) {
-      const alvo = $('#arvore').querySelector(`[data-foco="${CSS.escape(focoId)}"]`);
-      if (alvo) alvo.focus({ preventScroll: true });
-    }
+    if (graf) desenharGrafico(ancora, aviso); else desenharLista(aviso, focoId);
   }
 
   function caminho(n, nos) {
@@ -207,7 +336,11 @@
     modelo.todos = [...modelo.nos.values()];
     estado.modelo = modelo;
     estado.abertos = new Set([dados.sigla]);
+    estado.grafAbertos = new Set([dados.sigla]);
+    estado.selecionado = dados.sigla;
+    estado.centralizar = true;
     estado.pessoasAbertas = new Set();
+    $('#arvore').replaceChildren();   // recria o layout para este órgão
     $('#arvore').classList.remove('carregando');
     $('#f-org').value = sigla;
     desenhar();
@@ -224,7 +357,7 @@
       </div>
       <div class="filtros" role="group" aria-label="Filtros">
         <label>Órgão <select id="f-org"></select></label>
-        <label class="busca">Buscar <input id="f-busca" type="search" placeholder="Nome ou função" autocomplete="off"></label>
+        <label class="busca">Buscar <input id="f-busca" type="search" placeholder="Nome, função ou unidade" autocomplete="off"></label>
       </div>
       <div id="resumo"></div>
       <div id="arvore"></div>
@@ -238,9 +371,10 @@
 
   function metodo() {
     $('#metodo').replaceChildren(
+      el('p', {}, 'Organograma e lista. No computador, o organograma mostra as caixas ligadas por linhas: o número na base da caixa abre ou fecha o ramo, e tocar na caixa mostra, no painel ao lado, as pessoas daquela unidade. A lista traz a mesma árvore em formato expansível, melhor no celular.'),
       el('p', {}, 'Condição. Em azul, quem ocupa cargo em comissão sem vínculo efetivo (livre nomeação). Em laranja, o servidor de carreira que ocupa cargo em comissão: o cargo se soma ao salário de origem. Em verde, o servidor de carreira que recebe função gratificada. A cor nunca vem sozinha: cada pessoa traz o rótulo escrito.'),
       el('p', {}, 'Valores. "Cargo" é o que se paga por causa do cargo (regra do módulo Cargos em comissão). "Bruto" é a soma das rubricas de pagamento do mês, somando carreira e cargo; não inclui auxílios, indenizações, 13º, férias nem resíduos de acerto. O abate do teto constitucional aparece à parte, no detalhe da pessoa.'),
-      el('p', {}, 'Estrutura. A subordinação entre unidades vem de tabelas transcritas de decretos e organogramas oficiais, com a fonte de cada linha: hoje, a SEFAZ (Anexo III do Decreto 6005-R, de 2025, e o Decreto 6160-R, de 2025). A base de dados abertos informa o setor de cada pessoa, mas não diz quem é subordinado a quem, e o código do setor não é confiável como nível hierárquico. Onde não há estrutura oficial transcrita, ou a unidade não consta dela, a unidade fica num agrupamento "subordinação não confirmada", e nada é inferido por nome ou sigla. Ligações marcadas "a conferir" foram lidas de uma imagem e merecem verificação.'),
+      el('p', {}, 'Estrutura. A subordinação entre unidades vem de tabelas transcritas de decretos e organogramas oficiais, com a fonte de cada linha: hoje, a SEFAZ (Anexo III do Decreto 6005-R, de 2025, e o Decreto 6160-R, de 2025). A base de dados abertos informa o setor de cada pessoa, mas não diz quem é subordinado a quem, e o código do setor não é confiável como nível hierárquico. Unidades criadas depois desses decretos foram encaixadas por informação do titular do painel, o que consta na fonte de cada uma, e não por decreto. Onde não há estrutura oficial transcrita, ou a unidade não consta dela, a unidade fica num agrupamento "subordinação não confirmada", e nada é inferido por nome ou sigla. Ligações marcadas "a conferir" são hipóteses ainda não confirmadas.'),
       el('p', {}, 'Lotação. O setor de cada pessoa é o da base de vínculos, que mostra a situação de hoje, e não o histórico. A estrutura muda por decreto, então a tabela precisa ser revista a cada alteração.'));
     $('#mesref').textContent = 'Referência: ' + rotuloMes(indice.mes, true);
   }
@@ -249,6 +383,7 @@
     ctx = contexto;
     raiz = ctx.container;
     ++token; // invalida cargas iniciadas antes de uma troca de aba
+    estado.vista = PF.ler('org-vista') || (matchMedia('(min-width: 900px)').matches ? 'grafico' : 'lista');
     raiz.innerHTML = ESQUELETO; // modelo estático, sem dados externos
     try {
       indice = await ctx.api('index');

@@ -49,7 +49,11 @@ Escolha um órgão e abra a árvore por toque: Secretaria, subsecretarias, gerê
 
 A base de vínculos informa o setor de cada pessoa (código e nome), mas **não diz quem é subordinado a quem**, e o código do setor **não é confiável como nível hierárquico** (na SEFAZ, a SUEFI tem código de nível 2, mas o organograma a coloca na GEARE, no nível 4). Por isso a subordinação vem de tabelas por órgão em `pipeline/organograma/estrutura/<ORGAO>.csv`, transcritas de decretos e organogramas oficiais, com a fonte de cada linha. Hoje só a SEFAZ tem tabela: Anexo III do Decreto 6005-R (abril de 2025), com as alterações do Decreto 6160-R (agosto de 2025).
 
-Onde não há tabela, ou a unidade não consta dela, a unidade aparece num agrupamento marcado como **"subordinação não confirmada"**, ordenado pelo nível do código. Nenhuma subordinação é inferida por nome ou sigla. Ligações marcadas "a conferir" foram lidas de uma imagem. Na SEFAZ, 41 das 282 pessoas estão em unidades criadas depois desses decretos (SUDEP, SUOPT, SUAFI, SUCOM, SUCOP, GELOG, UFAR e as assessorias da reforma tributária) e dependem de novos decretos para serem encaixadas.
+Onde não há tabela, ou a unidade não consta dela, a unidade aparece num agrupamento marcado como **"subordinação não confirmada"**, ordenado pelo nível do código. Nenhuma subordinação é inferida por nome ou sigla. Na SEFAZ, 281 das 282 pessoas estão encaixadas; as unidades criadas depois dos decretos (SUDEP, SUOPT, SUAFI, SUCOM, SUCOP, GELOG, UFAR e as assessorias da reforma tributária) foram encaixadas **por informação do titular do painel (out/2026)**, sem decreto localizado, e isso consta na fonte de cada linha. Resta uma ligação marcada "a conferir" (o setor 69035500025, homônimo da Secretaria) e uma pessoa sem setor na base de vínculos.
+
+### Duas formas de ver
+
+No computador, o **organograma** mostra caixas ligadas por linhas: o número na base de cada caixa abre ou fecha o ramo, unidades-folha ficam penduradas em coluna sob o pai, e tocar numa caixa mostra no painel lateral o caminho, a fonte, os totais e as pessoas da unidade (com a opção de listar também as das subunidades). A **lista** traz a mesma árvore em formato expansível e é a visão padrão no celular. A escolha é lembrada no navegador.
 
 ### Como atualizar
 
@@ -58,7 +62,7 @@ python3 pipeline/cargos/extrair_vinculos.py          # setor de cada ocupante (r
 python3 pipeline/organograma/montar.py               # gera data/organograma/index.json e data/organograma/org/*.json
 ```
 
-Para encaixar uma unidade ou corrigir uma subordinação, edite a linha em `estrutura/<ORGAO>.csv` (colunas `sigla;nome;pai;situacao;fonte`) e rode `montar.py` de novo. A sigla deve ser a que aparece ao final do nome do setor na base. Para dar estrutura oficial a outro órgão, crie `estrutura/<SIGLA>.csv` no mesmo formato.
+Para encaixar uma unidade ou corrigir uma subordinação, edite a linha em `estrutura/<ORGAO>.csv` (colunas `sigla;nome;pai;situacao;fonte;codigo`) e rode `montar.py` de novo. A sigla deve ser a que aparece ao final do nome do setor na base; quando o nome do setor não traz sigla, preencha a coluna opcional `codigo` com o código do setor. **Não use ponto e vírgula dentro dos textos** (é o separador do arquivo): o montador valida o formato e para com mensagem de erro. Para dar estrutura oficial a outro órgão, crie `estrutura/<SIGLA>.csv` no mesmo formato.
 
 ### Remuneração bruta
 
