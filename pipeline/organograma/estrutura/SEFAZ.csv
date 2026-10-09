@@ -74,10 +74,10 @@ SUNOP;Subgerência de Normas, Procedimentos e Orientação Contábil;GECOG;confi
 SUINC;Subgerência de Qualidade da Informação Contábil;GECOG;confirmada;Anexo III do Decreto 6005-R/2025
 SUPFI;Subgerência de Política Fiscal;GEPOF;confirmada;Anexo III do Decreto 6005-R/2025
 SUDIP;Subgerência da Dívida Pública;GEPOF;confirmada;Anexo III do Decreto 6005-R/2025
-GA;Grupo de Administração;GEAFI;a conferir;Anexo III do Decreto 6005-R/2025 (grupo setorial; ligação lida na imagem)
-GFS;Grupo Financeiro Setorial;GEAFI;a conferir;Anexo III do Decreto 6005-R/2025 (grupo setorial; ligação lida na imagem)
-GPO;Grupo de Planejamento e Orçamento;GEAFI;a conferir;Anexo III do Decreto 6005-R/2025 (grupo setorial; ligação lida na imagem)
-GRH;Grupo de Recursos Humanos;GEDEF;a conferir;Anexo III do Decreto 6005-R/2025 (grupo setorial; ligação lida na imagem)
+GA;Grupo de Administração;SUBSAD;confirmada;Anexo III do Decreto 6005-R/2025 (grupo setorial); ligação à SUBSAD informada pelo titular do painel; ligação lida na imagem)
+GFS;Grupo Financeiro Setorial;SUBSAD;confirmada;Anexo III do Decreto 6005-R/2025 (grupo setorial); ligação à SUBSAD informada pelo titular do painel; ligação lida na imagem)
+GPO;Grupo de Planejamento e Orçamento;SUBSAD;confirmada;Anexo III do Decreto 6005-R/2025 (grupo setorial); ligação à SUBSAD informada pelo titular do painel; ligação lida na imagem)
+GRH;Grupo de Recursos Humanos;SUBSAD;confirmada;Anexo III do Decreto 6005-R/2025 (grupo setorial); ligação à SUBSAD informada pelo titular do painel; ligação lida na imagem)
 ARE ALEGRE;Agência da Receita Estadual de Alegre;SURAP;confirmada;Anexo III do Decreto 6005-R/2025 (agências ligadas à SURAP)
 ARE ARACRUZ;Agência da Receita Estadual de Aracruz;SURAP;confirmada;Anexo III do Decreto 6005-R/2025 (agências ligadas à SURAP)
 ARE B S FRANCISCO;Agência da Receita Estadual de Barra de São Francisco;SURAP;confirmada;Anexo III do Decreto 6005-R/2025 (agências ligadas à SURAP)
