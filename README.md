@@ -69,6 +69,18 @@ python3 pipeline/organograma/montar.py               # gera data/organograma/ind
 
 A estrutura muda por decreto e a plataforma é atualizada pelos órgãos: rode `baixar_estrutura.py` de tempos em tempos e confira o resultado de `montar.py`.
 
+### Quem não ocupa cargo ou função
+
+Além de quem ocupa cargo em comissão ou função gratificada, o organograma pode mostrar os **demais servidores ativos** de cada unidade, numa quarta condição em cinza ("sem cargo ou função"), com cargo efetivo e remuneração bruta. Vem **desligada** por padrão, e o arquivo do órgão (`data/organograma/todos/<SIGLA>.json`, em formato compacto) só é carregado quando o filtro é ligado. Na folha de setembro/2026 são cerca de 51 mil vínculos. Ficam de fora estagiários e médicos residentes (bolsa não é salário) e vínculos sem nenhuma rubrica de pagamento no mês; funções não remuneradas entram, por serem servidores comuns.
+
+```bash
+python3 pipeline/cargos/extrair_vinculos.py          # agora guarda também o setor de TODOS os vínculos ativos (vinculos_todos.json)
+python3 pipeline/organograma/extrair_todos.py        # remuneração bruta e cargo efetivo de quem não ocupa cargo (.cache/organograma/todos.json)
+python3 pipeline/organograma/montar.py
+```
+
+Os dados nominais de todos os órgãos, inclusive os de segurança pública e do sistema prisional e socioeducativo, são exibidos por decisão do titular do painel. O acesso é restrito por senha, mas o conteúdo é sensível; se isso mudar, basta deixar de gerar `todos/<SIGLA>.json` para os órgãos escolhidos.
+
 ### Remuneração bruta
 
 Soma das rubricas de pagamento do mês, sem auxílios e indenizações, 13º, férias e resíduos de acerto financeiro (regra em `pipeline/cargos/regras.py`, função `remuneracao`). O abate do teto constitucional aparece à parte, no detalhe da pessoa.

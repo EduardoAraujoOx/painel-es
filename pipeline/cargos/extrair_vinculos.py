@@ -22,10 +22,13 @@ def main():
     url = extrair.listar_recursos()["vinculos"]
     orgaos = {}
     vinc = {}
+    todos = {}   # todos os vínculos ATIVOS (inclusive sem função): [tipo de vínculo, código do setor, nome do setor]
     lidas = 0
     for r in extrair.linhas_csv(url):
         lidas += 1
         orgaos.setdefault(r["Orgao"], r["OrgaoExt"])
+        if r["Situacao"] == "ATIVO":
+            todos[f'{r["Orgao"]}|{r["NumFunc"]}|{r["NumVinc"]}'] = [r["TipoVinculo"], r["SiglaSetor"], r["NomeSetor"]]
         if r["Situacao"] != "ATIVO" or r["TipoFuncao"] not in regras.TIPOS_ALVO:
             continue
         chave = f'{r["Orgao"]}|{r["NumFunc"]}|{r["NumVinc"]}'
@@ -34,6 +37,9 @@ def main():
     destino = os.path.join(extrair.CACHE, "vinculos.json")
     json.dump({"orgaos": orgaos, "vinculos": vinc}, open(destino, "w"),
               ensure_ascii=False, separators=(",", ":"))
+    json.dump(todos, open(os.path.join(extrair.CACHE, "vinculos_todos.json"), "w"),
+              ensure_ascii=False, separators=(",", ":"))
+    print(f"{len(todos)} vínculos ativos no total;", end=" ")
     print(f"{lidas} linhas lidas; {len(orgaos)} órgãos; {len(vinc)} vínculos ativos com função")
 
 

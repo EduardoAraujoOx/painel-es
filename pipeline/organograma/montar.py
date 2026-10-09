@@ -37,6 +37,7 @@ import regras  # noqa: E402
 
 RAIZ = os.path.dirname(os.path.dirname(AQUI))
 CACHE = os.path.join(RAIZ, ".cache", "cargos")
+CACHE_ORG = os.path.join(RAIZ, ".cache", "organograma")
 SAIDA = os.path.join(RAIZ, "data", "organograma")
 ESTRUTURA = os.path.join(AQUI, "estrutura")
 TIPO_COMPLETO = {"CC": regras.TIPO_CC, "FG": regras.TIPO_FG}
@@ -141,6 +142,14 @@ def main():
     if not extra["vinculos"] or len(next(iter(extra["vinculos"].values()))) < 5:
         sys.exit("vinculos.json sem campos de setor: rode pipeline/cargos/extrair_vinculos.py")
 
+    todos_vinc = json.load(open(os.path.join(CACHE, "vinculos_todos.json")))
+    todos = json.load(open(os.path.join(CACHE_ORG, "todos.json")))
+    if todos["mes"] != os.path.basename(meses[-1])[:7]:
+        sys.exit("todos.json é de outro mês: rode extrair_todos.py")
+    sem_por_org = collections.defaultdict(list)
+    for org_, nf, nv, nome, cargo, bruto, abate in todos["pessoas"]:
+        sem_por_org[org_].append((nf, nv, nome, cargo, bruto, abate))
+
     # --- pessoas do último mês, com condição e remuneração -----------------------------
     pessoas_por_org = collections.defaultdict(list)
     # padrão do subsídio da função (mesma regra do módulo cargos)
@@ -165,9 +174,10 @@ def main():
             "_cod": v[2] if v else "", "_setor": limpar(v[3]) if v else "",
         })
 
-    os.makedirs(os.path.join(SAIDA, "org"), exist_ok=True)
-    for antigo in glob.glob(os.path.join(SAIDA, "org", "*.json")):
-        os.remove(antigo)
+    for pasta in ("org", "todos"):
+        os.makedirs(os.path.join(SAIDA, pasta), exist_ok=True)
+        for antigo in glob.glob(os.path.join(SAIDA, pasta, "*.json")):
+            os.remove(antigo)
 
     resumo = []
     for org in sorted(pessoas_por_org):
@@ -231,48 +241,58 @@ def main():
                      fonte="Subordinação não confirmada: agrupado pelo nível do código do setor")
             return chave
 
-        for p in pessoas:
-            cod, setor = p.pop("_cod"), p.pop("_setor")
-            nivel = nivel_do_codigo(cod)
-            uid = None
-            if oficial:
-                # 0) o código do setor é a própria sigla da unidade (ocorre, por exemplo, no CBMES)
-                if cod and len(por_sigla_of.get(norm(cod), ())) == 1:
-                    uid = next(iter(por_sigla_of[norm(cod)]))
-                # 1) nome idêntico ou equivalente (sem o sufixo do órgão), se aponta para uma só unidade
-                for v in ([] if uid else variantes(setor, org)):
-                    if len(por_nome.get(v, ())) == 1:
-                        uid = next(iter(por_nome[v]))
-                        break
-                # 2) sigla da unidade ao final do nome do setor (a mais longa), se for única
-                if uid is None and setor:
-                    n = norm(setor)
-                    achados = [(len(sg), next(iter(ids))) for sg, ids in por_sigla_of.items()
-                               if len(sg) >= 2 and len(ids) == 1 and (n == sg or n.endswith(" " + sg))]
-                    if achados:
-                        uid = max(achados)[1]
-            if uid is None and estrutura:
-                uid = por_codigo.get(cod)
-                if uid is None:
-                    s = sigla_do_setor(setor, siglas)
-                    if s:
-                        uid = "u:" + s
-            # raiz: o setor de nível 1 do código que leva o nome do próprio órgão (ex.: o gabinete
-            # do titular da pasta); as demais unidades de nível 1 ficam como unidades à parte
-            if uid is None and nivel == 1 and norm(setor).endswith(" " + norm(org)):
-                uid = org
+        def atribuir(cod, setor):
+            """Unidade (id) em que uma pessoa se encaixa, criando agrupamentos de reserva quando preciso."""
+        nivel = nivel_do_codigo(cod)
+        uid = None
+        if oficial:
+            # 0) o código do setor é a própria sigla da unidade (ocorre, por exemplo, no CBMES)
+            if cod and len(por_sigla_of.get(norm(cod), ())) == 1:
+                uid = next(iter(por_sigla_of[norm(cod)]))
+            # 1) nome idêntico ou equivalente (sem o sufixo do órgão), se aponta para uma só unidade
+            for v in ([] if uid else variantes(setor, org)):
+                if len(por_nome.get(v, ())) == 1:
+                    uid = next(iter(por_nome[v]))
+                    break
+            # 2) sigla da unidade ao final do nome do setor (a mais longa), se for única
+            if uid is None and setor:
+                n = norm(setor)
+                achados = [(len(sg), next(iter(ids))) for sg, ids in por_sigla_of.items()
+                           if len(sg) >= 2 and len(ids) == 1 and (n == sg or n.endswith(" " + sg))]
+                if achados:
+                    uid = max(achados)[1]
+        if uid is None and estrutura:
+            uid = por_codigo.get(cod)
             if uid is None:
-                uid = "s:" + (cod or "sem-setor")
-                if uid not in unidades:
-                    # setor homônimo do órgão (comum na base) não pode se passar pela raiz
-                    rotulo = setor or "Setor não informado"
-                    if cod and norm(setor) == norm(nome_org):
-                        rotulo = f"Setor {cod} (a base só informa o nome do órgão)"
-                    nova(uid, nome=rotulo, sigla="",
-                         pai=agrupamento(nivel), situacao="nao-confirmada",
-                         fonte=("Setor da base de vínculos que não foi encontrado no Organograma ES; subordinação não confirmada"
-                                if oficial else "Unidade fora da estrutura transcrita; subordinação não confirmada"))
-            p["unidade"] = uid
+                s = sigla_do_setor(setor, siglas)
+                if s:
+                    uid = "u:" + s
+        # raiz: o setor de nível 1 do código que leva o nome do próprio órgão (ex.: o gabinete
+        # do titular da pasta); as demais unidades de nível 1 ficam como unidades à parte
+        if uid is None and nivel == 1 and norm(setor).endswith(" " + norm(org)):
+            uid = org
+        if uid is None:
+            uid = "s:" + (cod or "sem-setor")
+            if uid not in unidades:
+                # setor homônimo do órgão (comum na base) não pode se passar pela raiz
+                rotulo = setor or "Setor não informado"
+                if cod and norm(setor) == norm(nome_org):
+                    rotulo = f"Setor {cod} (a base só informa o nome do órgão)"
+                nova(uid, nome=rotulo, sigla="",
+                     pai=agrupamento(nivel), situacao="nao-confirmada",
+                     fonte=("Setor da base de vínculos que não foi encontrado no Organograma ES; subordinação não confirmada"
+                            if oficial else "Unidade fora da estrutura transcrita; subordinação não confirmada"))
+            return uid
+
+        for p in pessoas:
+            p["unidade"] = atribuir(p.pop("_cod"), p.pop("_setor"))
+
+        # pessoas SEM cargo em comissão nem função gratificada (extrair_todos.py)
+        sem = []
+        for nf, nv, nome, cargo, bruto, abate in sem_por_org.get(org, []):
+            v = todos_vinc.get(f"{org}|{nf}|{nv}")
+            sem.append([f"{nf}-{nv}", nome, cargo, v[0] if v else None, bruto, abate or None,
+                        atribuir(v[1] if v else "", limpar(v[2]) if v else "")])
 
         # agrupamentos por nível do código em ordem numérica, depois das unidades da estrutura
         posicao = {i: k for k, i in enumerate(ordem)}
@@ -292,8 +312,18 @@ def main():
                        "bruto": round(sum(p["bruto"] for p in pessoas), 2),
                        "estruturaOficial": bool(oficial or estrutura),
                        "estruturaFonte": "oficial" if oficial else ("manual" if estrutura else None),
-                       "semUnidade": sum(1 for p in pessoas if unidades[p["unidade"]]["situacao"] == "nao-confirmada")})
+                       "semUnidade": sum(1 for p in pessoas if unidades[p["unidade"]]["situacao"] == "nao-confirmada"),
+                       "sem": len(sem), "semBruto": round(sum(x[4] for x in sem), 2),
+                       "semSemUnidade": sum(1 for x in sem if unidades[x[6]]["situacao"] == "nao-confirmada")})
         pessoas.sort(key=lambda p: (-p["valor"], p["nome"]))
+        # quem não ocupa cargo: formato compacto (lista de listas), unidade pelo índice no arranjo "unidades"
+        indice_un = {i: k for k, i in enumerate(ordem)}
+        sem.sort(key=lambda x: (-x[4], x[1]))
+        json.dump({"sigla": org, "mes": meses[-1][-12:-5],
+                   "colunas": ["id", "nome", "cargoEfetivo", "vinculo", "bruto", "abate", "unidade"],
+                   "pessoas": [x[:6] + [indice_un[x[6]]] for x in sem]},
+                  open(os.path.join(SAIDA, "todos", seguro(org) + ".json"), "w"),
+                  ensure_ascii=False, separators=(",", ":"))
         json.dump({"sigla": org, "nome": nome_org, "mes": meses[-1][-12:-5],
                    "unidades": [unidades[i] for i in ordem], "pessoas": pessoas},
                   open(os.path.join(SAIDA, "org", seguro(org) + ".json"), "w"),
@@ -304,7 +334,8 @@ def main():
                          "estrutura": "Organograma ES (organograma.es.gov.br), plataforma oficial do Governo do ES; "
                                       "tabelas manuais só para órgãos sem retrato oficial"}},
               open(os.path.join(SAIDA, "index.json"), "w"), ensure_ascii=False, separators=(",", ":"))
-    print(f"{len(resumo)} órgãos; {sum(r['pessoas'] for r in resumo)} pessoas")
+    print(f"{len(resumo)} órgãos; {sum(r['pessoas'] for r in resumo)} pessoas com cargo/função; "
+          f"{sum(r['sem'] for r in resumo)} sem cargo/função ({sum(r['semSemUnidade'] for r in resumo)} sem unidade)")
     print(f"{'órgão':16}{'pessoas':>8}{'sem unidade':>13}{'cobertura':>11}")
     for r in sorted(resumo, key=lambda r: -r["pessoas"]):
         cob = 100 * (r["pessoas"] - r["semUnidade"]) / r["pessoas"]

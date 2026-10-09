@@ -8,8 +8,10 @@
     puro: { rotulo: 'Comissionado sem vínculo efetivo', curto: 'Sem vínculo efetivo', cor: 'var(--serie-1)' },
     carreira: { rotulo: 'Servidor de carreira em cargo em comissão', curto: 'Servidor de carreira', cor: 'var(--serie-2)' },
     fg: { rotulo: 'Servidor de carreira com função gratificada', curto: 'Função gratificada', cor: 'var(--serie-3)' },
+    sem: { rotulo: 'Sem cargo em comissão nem função', curto: 'Sem cargo ou função', cor: 'var(--mudo)' },
   };
-  const ORDEM = ['puro', 'carreira', 'fg'];
+  const ORDEM = ['puro', 'carreira', 'fg', 'sem'];
+  const CONDS_PADRAO = ['puro', 'carreira', 'fg'];   // "sem cargo ou função" começa desligada
   const PADRAO = 'SEFAZ';
 
   let ctx = null;
@@ -18,7 +20,7 @@
   const cache = new Map();
   let token = 0;
   const estado = {
-    org: null, busca: '', conds: new Set(ORDEM), abertos: new Set(), pessoasAbertas: new Set(), dados: null,
+    org: null, busca: '', conds: new Set(CONDS_PADRAO), semCarregado: null, abertos: new Set(), pessoasAbertas: new Set(), dados: null,
     vista: 'lista', grafAbertos: new Set(), selecionado: null, incluirSub: false, centralizar: true,
   };
   const $ = (s) => raiz.querySelector(s);
@@ -38,14 +40,15 @@
   function passa(p) {
     if (!estado.conds.has(p.cond)) return false;
     const q = norm(estado.busca);
-    return !q || norm(p.nome).includes(q) || norm(p.funcao).includes(q) || (p._unidade || '').includes(q);
+    return !q || norm(p.nome).includes(q) || norm(p.funcao).includes(q) || norm(p.cargoEfetivo).includes(q)
+      || (p._unidade || '').includes(q);
   }
   // agrega a subárvore já considerando os filtros; guarda em n.ag
   function agregar(n) {
-    const ag = { n: 0, cond: { puro: 0, carreira: 0, fg: 0 }, valor: 0, bruto: 0 };
+    const ag = { n: 0, cond: { puro: 0, carreira: 0, fg: 0, sem: 0 }, valor: 0, bruto: 0 };
     n.visiveis = n.pessoas.filter(passa);
     for (const p of n.visiveis) {
-      ag.n++; ag.cond[p.cond]++; ag.valor += p.valor; ag.bruto += p.bruto;
+      ag.n++; ag.cond[p.cond]++; ag.valor += p.valor || 0; ag.bruto += p.bruto;
     }
     for (const f of n.filhos) {
       const a = agregar(f);
@@ -55,7 +58,8 @@
     n.ag = ag;
     return ag;
   }
-  const filtrando = () => estado.busca.trim() !== '' || estado.conds.size < ORDEM.length;
+  const filtrando = () => estado.busca.trim() !== ''
+    || estado.conds.size !== CONDS_PADRAO.length || CONDS_PADRAO.some((c) => !estado.conds.has(c));
 
   // ---------- componentes ----------
   function barraCond(cond, total) {
@@ -96,7 +100,7 @@
     if (p.cargoEfetivo) detalhes.push(['Cargo efetivo', titulo(p.cargoEfetivo)]);
     if (p.vinculo) detalhes.push(['Vínculo oficial', titulo(p.vinculo)]);
     detalhes.push(['Condição', COND[p.cond].rotulo]);
-    detalhes.push(['Provimento', p.prov]);
+    if (p.prov) detalhes.push(['Provimento', p.prov]);
     if (p.subsidioCarreira) detalhes.push(['Subsídio da carreira (não é custo do cargo)', nBRL.format(p.subsidioCarreira)]);
     if (p.abate) detalhes.push(['Abate do teto constitucional', '− ' + nBRL.format(p.abate)]);
     const c = el('li', { class: 'pessoa' + (aberto ? ' aberta' : ''), style: `--cor:${COND[p.cond].cor}` },
@@ -107,11 +111,11 @@
           desenhar(k);
         }, 'data-foco': p.id + p.funcao },
         el('span', { class: 'pessoa-nome' }, titulo(p.nome)),
-        el('span', { class: 'pessoa-funcao' }, titulo(p.funcao)),
+        el('span', { class: 'pessoa-funcao' }, p.cond === 'sem' ? 'Cargo efetivo: ' + (titulo(p.cargoEfetivo) || 'não informado') : titulo(p.funcao)),
         unidade ? el('span', { class: 'pessoa-unidade' }, unidade) : null,
         el('span', { class: 'pessoa-linha' }, chipCond(p.cond),
           el('span', { class: 'valores' },
-            el('span', {}, 'Cargo ', el('b', {}, nBRL.format(p.valor))),
+            p.cond === 'sem' ? null : el('span', {}, 'Cargo ', el('b', {}, nBRL.format(p.valor))),
             el('span', {}, 'Bruto ', el('b', {}, nBRL.format(p.bruto)))))),
       aberto ? el('dl', { class: 'detalhes' }, detalhes.map(([k, v]) => [el('dt', {}, k), el('dd', {}, v)])) : null);
     return c;
@@ -143,7 +147,10 @@
     if (aberto) {
       const corpo = el('div', { class: 'unidade-corpo' });
       if (n.fonte && n.situacao !== 'raiz') corpo.append(el('p', { class: 'fonte' }, 'Fonte: ' + n.fonte));
-      if (n.visiveis.length) corpo.append(el('ul', { class: 'pessoas' }, n.visiveis.map(cartaoPessoa)));
+      if (n.visiveis.length) {
+        corpo.append(el('ul', { class: 'pessoas' }, n.visiveis.slice(0, 100).map((p) => cartaoPessoa(p))));
+        if (n.visiveis.length > 100) corpo.append(el('p', { class: 'fonte' }, `Mostrando 100 de ${nInt.format(n.visiveis.length)}; use a busca ou a exportação para ver todas.`));
+      }
       const filhos = n.filhos.map((f) => noUnidade(f, profundidade + 1)).filter(Boolean);
       if (filhos.length) corpo.append(el('ul', { class: 'arvore' }, filhos));
       li.append(corpo);
@@ -278,7 +285,7 @@
     const kpis = el('div', { class: 'kpis' },
       el('div', { class: 'kpi' }, el('div', { class: 'rotulo' }, 'Pessoas'),
         el('div', { class: 'valor' }, nInt.format(ag.n)),
-        el('div', { class: 'nota' }, ORDEM.map((c) => `${nInt.format(ag.cond[c])} ${COND[c].curto.toLowerCase()}`).join(' · '))),
+        el('div', { class: 'nota' }, ORDEM.filter((c) => estado.conds.has(c)).map((c) => `${nInt.format(ag.cond[c])} ${COND[c].curto.toLowerCase()}`).join(' · '))),
       el('div', { class: 'kpi' }, el('div', { class: 'rotulo' }, 'Valor dos cargos por mês'),
         el('div', { class: 'valor' }, brlCompacto(ag.valor)), el('div', { class: 'nota' }, 'só o que se paga por causa do cargo')),
       el('div', { class: 'kpi' }, el('div', { class: 'rotulo' }, 'Remuneração bruta por mês'),
@@ -287,8 +294,13 @@
     const legenda = el('div', { class: 'filtro-cond', role: 'group', 'aria-label': 'Filtrar por condição' },
       ORDEM.map((c) => el('button', { type: 'button', class: 'chip-filtro', 'aria-pressed': String(estado.conds.has(c)),
         style: `--cor:${COND[c].cor}`,
-        onclick: () => { if (estado.conds.has(c)) estado.conds.delete(c); else estado.conds.add(c); if (!estado.conds.size) estado.conds = new Set(ORDEM); desenhar(); } },
-      el('i', {}), COND[c].rotulo, el('span', { class: 'n' }, nInt.format(info ? info[c] : 0)))));
+        onclick: async () => {
+          if (estado.conds.has(c)) estado.conds.delete(c); else estado.conds.add(c);
+          if (!estado.conds.size) estado.conds = new Set(CONDS_PADRAO);
+          if (estado.conds.has('sem')) await garantirSem();
+          desenhar();
+        } },
+      el('i', {}), COND[c].rotulo, el('span', { class: 'n' }, nInt.format(info ? (c === 'sem' ? info.sem : info[c]) : 0)))));
 
     const aviso = !info.estruturaOficial
       ? el('p', { class: 'nota-estrutura' }, 'Este órgão ainda não tem a estrutura oficial transcrita: as unidades aparecem agrupadas pelo nível do código do setor, sem subordinação confirmada.') : null;
@@ -325,12 +337,39 @@
     const cab = ['Órgão', 'Unidade (caminho)', 'Nome', 'Função', 'Condição', 'Valor do cargo (R$/mês)',
       'Remuneração bruta (R$/mês)', 'Abate do teto (R$/mês)', 'Subsídio da carreira (R$/mês)', 'Vínculo oficial'];
     const f2 = (v) => (v ? v.toFixed(2).replace('.', ',') : '');
-    const linhas = estado.dados.pessoas.filter(passa).map((p) => [estado.org, caminho(nos.get(p.unidade) || estado.modelo.raiz, nos),
+    const linhas = [...nos.values()].flatMap((n) => n.pessoas).filter(passa).map((p) => [estado.org, caminho(nos.get(p.unidade) || estado.modelo.raiz, nos),
       p.nome, p.funcao, COND[p.cond].rotulo, f2(p.valor), f2(p.bruto), f2(p.abate), f2(p.subsidioCarreira), p.vinculo || '']);
     const txt = '﻿' + [cab, ...linhas].map((r) => r.map(esc).join(';')).join('\r\n');
     const a = el('a', { href: URL.createObjectURL(new Blob([txt], { type: 'text/csv;charset=utf-8' })),
       download: `organograma-${estado.org}-${indice.mes}.csv` });
     document.body.append(a); a.click(); a.remove();
+  }
+
+  // ---------- quem não ocupa cargo ou função (arquivo à parte, carregado só quando pedido) ----------
+  async function garantirSem() {
+    if (estado.semCarregado === estado.org || !$('#arvore')) return;
+    const meu = token;
+    $('#arvore').classList.add('carregando');
+    const info = indice.orgs.find((o) => o.sigla === estado.org);
+    let d;
+    try {
+      d = await ctx.api('todos/' + info.arquivo);
+    } catch (e) {
+      if (e.sessao) { PF.mostrarLogin(); return; }
+      estado.conds.delete('sem');
+      if (!estado.conds.size) estado.conds = new Set(CONDS_PADRAO);
+      return;
+    } finally {
+      if ($('#arvore')) $('#arvore').classList.remove('carregando');
+    }
+    if (meu !== token || !$('#arvore') || !estado.modelo) return;   // troca de órgão ou de aba durante a carga
+    const { nos, raiz: r } = estado.modelo;
+    for (const [id, nome, cargo, vinculo, bruto, abate, iu] of d.pessoas) {
+      const u = nos.get(estado.dados.unidades[iu].id) || r;
+      u.pessoas.push({ id, nome, funcao: '', tipo: 'SC', cond: 'sem', prov: '', valor: 0, bruto, abate,
+        subsidioCarreira: null, cargoEfetivo: cargo, vinculo, _unidade: norm(`${u.nome} ${u.sigla}`) });
+    }
+    estado.semCarregado = estado.org;
   }
 
   // ---------- carga ----------
@@ -359,9 +398,12 @@
     estado.selecionado = dados.sigla;
     estado.centralizar = true;
     estado.pessoasAbertas = new Set();
+    estado.semCarregado = null;
     $('#arvore').replaceChildren();   // recria o layout para este órgão
     $('#arvore').classList.remove('carregando');
     $('#f-org').value = sigla;
+    if (estado.conds.has('sem')) await garantirSem();
+    if (meu !== token || !$('#arvore')) return;
     desenhar();
   }
 
@@ -392,6 +434,7 @@
     $('#metodo').replaceChildren(
       el('p', {}, 'Organograma e lista. No computador, o organograma mostra as caixas ligadas por linhas: o número na base da caixa abre ou fecha o ramo, e tocar na caixa mostra, no painel ao lado, as pessoas daquela unidade. A lista traz a mesma árvore em formato expansível, melhor no celular.'),
       el('p', {}, 'Condição. Em azul, quem ocupa cargo em comissão sem vínculo efetivo (livre nomeação). Em laranja, o servidor de carreira que ocupa cargo em comissão: o cargo se soma ao salário de origem. Em verde, o servidor de carreira que recebe função gratificada. A cor nunca vem sozinha: cada pessoa traz o rótulo escrito.'),
+      el('p', {}, 'Quem não ocupa cargo. A condição cinza, "sem cargo ou função", reúne os servidores ativos que não ocupam cargo em comissão nem função gratificada; fica desligada até você ativá-la no filtro, e só então o arquivo daquele órgão é carregado. Para eles aparecem o cargo efetivo e a remuneração bruta, sem "valor do cargo". Ficam de fora estagiários, médicos residentes (bolsa não é salário) e vínculos sem nenhuma rubrica de pagamento no mês; funções não remuneradas entram, por serem servidores comuns.'),
       el('p', {}, 'Valores. "Cargo" é o que se paga por causa do cargo (regra do módulo Cargos em comissão). "Bruto" é a soma das rubricas de pagamento do mês, somando carreira e cargo; não inclui auxílios, indenizações, 13º, férias nem resíduos de acerto. O abate do teto constitucional aparece à parte, no detalhe da pessoa.'),
       el('p', {}, 'Estrutura. A subordinação entre unidades vem do Organograma ES (organograma.es.gov.br), a plataforma oficial de organogramas do Governo do ES, de que este painel guarda um retrato datado de cada órgão (a data consta na fonte de cada unidade). A base de dados abertos informa o setor de cada pessoa, mas não diz quem é subordinado a quem; por isso as pessoas são ligadas às unidades pelo nome do setor, pela sigla ou pelo código. Quando o setor da pessoa não é encontrado no organograma, ou a base só informa o nome do órgão (caso do IASES e da SESP), a pessoa aparece num agrupamento "subordinação não confirmada", ordenado pelo nível do código do setor, e nada é inferido por palpite. Os nomes das unidades vêm da plataforma, em maiúsculas e sem acento; a interface restitui os acentos mais comuns.'),
       el('p', {}, 'Lotação. O setor de cada pessoa é o da base de vínculos, que mostra a situação de hoje, e não o histórico. A estrutura muda por decreto, então a tabela precisa ser revista a cada alteração.'));
