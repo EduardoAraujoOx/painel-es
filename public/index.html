@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>Diagnóstico Fiscal ES</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="login" class="login" hidden>
+    <form id="form-login" class="login-caixa" autocomplete="off">
+      <h1>Diagnóstico fiscal · ES</h1>
+      <p class="sub">Acesso restrito. Informe a senha recebida.</p>
+      <label for="senha">Senha</label>
+      <input id="senha" name="senha" type="password" autocomplete="current-password" required>
+      <button type="submit" class="botao-primario">Entrar</button>
+      <p id="login-erro" class="erro" role="alert" hidden></p>
+    </form>
+  </section>
+
+  <div id="app" hidden>
+    <header class="topo">
+      <div>
+        <h1>Diagnóstico fiscal · Espírito Santo</h1>
+        <p class="sub">Cargos em comissão e funções gratificadas no Poder Executivo estadual</p>
+      </div>
+      <div class="acoes">
+        <span id="mesref" class="mesref"></span>
+        <button id="tema" class="botao" type="button" aria-label="Alternar tema claro e escuro">Tema</button>
+        <button id="sair" class="botao" type="button">Sair</button>
+      </div>
+    </header>
+
+    <div class="filtros" role="group" aria-label="Filtros">
+      <label>Tipo
+        <select id="f-tipo">
+          <option value="todos">Cargos em comissão e funções gratificadas</option>
+          <option value="CC">Somente cargos em comissão</option>
+          <option value="FG">Somente funções gratificadas</option>
+        </select>
+      </label>
+      <label>Medida
+        <select id="f-medida">
+          <option value="custo">Custo mensal dos cargos</option>
+          <option value="qtd">Número de ocupantes</option>
+        </select>
+      </label>
+      <label id="rotulo-prov" hidden>Provimento
+        <select id="f-prov">
+          <option value="todos">Todos</option>
+          <option value="puro">Comissionado sem vínculo efetivo</option>
+          <option value="efetivo">Servidor com vínculo de origem</option>
+          <option value="subsidio">Subsídio</option>
+        </select>
+      </label>
+      <label class="busca">Buscar
+        <input id="f-busca" type="search" placeholder="Nome, função ou órgão" autocomplete="off">
+      </label>
+    </div>
+
+    <nav id="trilha" class="trilha" aria-label="Navegação"></nav>
+    <main id="conteudo"></main>
+
+    <footer class="rodape">
+      <details>
+        <summary>Fonte e método de cálculo</summary>
+        <div id="metodo"></div>
+      </details>
+    </footer>
+  </div>
+
+  <div id="dica" class="dica" role="tooltip" hidden></div>
+  <script src="app.js"></script>
+</body>
+</html>

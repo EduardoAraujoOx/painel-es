@@ -1,0 +1,7 @@
+.cache/
+node_modules/
+.vercel/
+.env*
+*.log
+__pycache__/
+data_teste/
