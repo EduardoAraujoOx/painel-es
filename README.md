@@ -5,7 +5,7 @@ Painel de acesso restrito para diagnósticos fiscais e de pessoal do Poder Execu
 | Módulo | Conteúdo | Situação |
 |---|---|---|
 | `cargos` | Cargos em comissão e funções gratificadas: quadro, custo mensal, tempo na função, entradas e saídas | em operação |
-| `organograma` | Árvore de unidades de um órgão com as pessoas de cada uma, a condição (sem vínculo efetivo, servidor de carreira, função gratificada) e a remuneração somando carreira e cargo | em operação (estrutura oficial transcrita só para a SEFAZ) |
+| `organograma` | Árvore de unidades de um órgão com as pessoas de cada uma, a condição (sem vínculo efetivo, servidor de carreira, função gratificada) e a remuneração somando carreira e cargo | em operação, com a estrutura oficial de 55 órgãos |
 
 ## Módulo `cargos`
 
@@ -47,9 +47,13 @@ Escolha um órgão e abra a árvore por toque: Secretaria, subsecretarias, gerê
 
 ### De onde vem a hierarquia
 
-A base de vínculos informa o setor de cada pessoa (código e nome), mas **não diz quem é subordinado a quem**, e o código do setor **não é confiável como nível hierárquico** (na SEFAZ, a SUEFI tem código de nível 2, mas o organograma a coloca na GEARE, no nível 4). Por isso a subordinação vem de tabelas por órgão em `pipeline/organograma/estrutura/<ORGAO>.csv`, transcritas de decretos e organogramas oficiais, com a fonte de cada linha. Hoje só a SEFAZ tem tabela: Anexo III do Decreto 6005-R (abril de 2025), com as alterações do Decreto 6160-R (agosto de 2025).
+A subordinação vem do **Organograma ES** ([organograma.es.gov.br](https://organograma.es.gov.br)), a plataforma oficial de organogramas do Governo do ES; é a mesma que os sites das secretarias incorporam na página de organograma (por exemplo, `planejamento.es.gov.br/organograma`). O coletor `baixar_estrutura.py` usa as duas rotas públicas que a página chama no navegador (`/home/organizacoes/<Estado>` e `/organograma/detalhes/<órgão>`) e guarda um **retrato datado** de cada órgão em `pipeline/organograma/estrutura/oficial/<SIGLA>.json`, com pausa entre os pedidos. Cobre 55 dos 56 órgãos do painel (só a ES-Previdência não consta).
 
-Onde não há tabela, ou a unidade não consta dela, a unidade aparece num agrupamento marcado como **"subordinação não confirmada"**, ordenado pelo nível do código. Nenhuma subordinação é inferida por nome ou sigla. Na SEFAZ, 281 das 282 pessoas estão encaixadas; as unidades criadas depois dos decretos (SUDEP, SUOPT, SUAFI, SUCOM, SUCOP, GELOG, UFAR e as assessorias da reforma tributária) foram encaixadas **por informação do titular do painel (out/2026)**, sem decreto localizado, e isso consta na fonte de cada linha. Resta uma ligação marcada "a conferir" (o setor 69035500025, homônimo da Secretaria) e uma pessoa sem setor na base de vínculos.
+A base de vínculos informa o setor de cada pessoa (código e nome), mas **não diz quem é subordinado a quem**, e o código do setor **não é confiável como nível hierárquico**. As pessoas são ligadas às unidades do organograma por camadas: código igual à sigla da unidade, nome idêntico ou equivalente, e sigla ao final do nome do setor, sempre exigindo que o casamento seja único. Quem não casa fica num agrupamento **"subordinação não confirmada"**, ordenado pelo nível do código; nada é inferido por palpite. A cobertura passa de 95% em quase todos os órgãos; as exceções, por limite da base, são **IASES** (4%) e **SESP** (0%), em que o nome do setor repete o nome do órgão e o código é numérico, e o **CBMES** (89%).
+
+Validação: comparada com a transcrição manual do Anexo III do Decreto 6005-R e do Decreto 6160-R (arquivada em `estrutura/historico/`), a plataforma coincide em 82 de 98 unidades da SEFAZ e é mais atual nas demais: GETEC, GEATE e GERAG ficam diretamente sob a Secretaria, a UFAR é unidade direta com as assessorias da reforma tributária abaixo dela, e unidades como SUBAD, SUDES, SUINF, SUMOP, SUAUC e GECON já não existem. Isso também confirma as ligações informadas pelo titular do painel em out/2026 (SUDEP e SUOPT na GETEC, SUAFI e SUCOM na GEINF, SUCOP na GEFAP, GELOG na SUBSAD).
+
+Para órgãos sem retrato oficial vale ainda a tabela manual `estrutura/<ORGAO>.csv` (colunas `sigla;nome;pai;situacao;fonte;codigo`, sem ponto e vírgula dentro dos textos; o montador valida o formato).
 
 ### Duas formas de ver
 
@@ -59,10 +63,11 @@ No computador, o **organograma** mostra caixas ligadas por linhas: o número na 
 
 ```bash
 python3 pipeline/cargos/extrair_vinculos.py          # setor de cada ocupante (requer o cache do módulo cargos)
-python3 pipeline/organograma/montar.py               # gera data/organograma/index.json e data/organograma/org/*.json
+python3 pipeline/organograma/baixar_estrutura.py     # retrato da estrutura oficial (rode quando a estrutura mudar)
+python3 pipeline/organograma/montar.py               # gera data/organograma/index.json e data/organograma/org/*.json (e mostra a cobertura por órgão)
 ```
 
-Para encaixar uma unidade ou corrigir uma subordinação, edite a linha em `estrutura/<ORGAO>.csv` (colunas `sigla;nome;pai;situacao;fonte;codigo`) e rode `montar.py` de novo. A sigla deve ser a que aparece ao final do nome do setor na base; quando o nome do setor não traz sigla, preencha a coluna opcional `codigo` com o código do setor. **Não use ponto e vírgula dentro dos textos** (é o separador do arquivo): o montador valida o formato e para com mensagem de erro. Para dar estrutura oficial a outro órgão, crie `estrutura/<SIGLA>.csv` no mesmo formato.
+A estrutura muda por decreto e a plataforma é atualizada pelos órgãos: rode `baixar_estrutura.py` de tempos em tempos e confira o resultado de `montar.py`.
 
 ### Remuneração bruta
 

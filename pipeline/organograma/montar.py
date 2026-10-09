@@ -4,8 +4,9 @@
 Entradas (geradas pelo pipeline do módulo cargos):
     .cache/cargos/AAAA-MM.json   rubricas de cada ocupante (usa só o último mês)
     .cache/cargos/vinculos.json  setor de lotação, vínculo oficial e nome dos órgãos
-Entrada própria:
-    pipeline/organograma/estrutura/<ORGAO>.csv   subordinação oficial entre as unidades
+Estrutura (de onde vem a subordinação), em ordem de prioridade:
+    estrutura/oficial/<ORGAO>.json   retrato do Organograma ES, baixado por baixar_estrutura.py
+    estrutura/<ORGAO>.csv            tabela manual, só para órgãos sem retrato oficial
 
 Saídas, em data/organograma/ (servidas apenas depois do login):
     index.json            um registro por órgão, com totais por condição
@@ -82,6 +83,35 @@ def carregar_estrutura(sigla_orgao):
     return linhas
 
 
+def carregar_oficial(sigla_orgao):
+    """Retrato da árvore oficial (Organograma ES) baixado por baixar_estrutura.py, ou None."""
+    caminho = os.path.join(ESTRUTURA, "oficial", seguro(sigla_orgao) + ".json")
+    return json.load(open(caminho, encoding="utf-8")) if os.path.exists(caminho) else None
+
+
+def variantes(nome, sigla_org):
+    """Formas normalizadas de um nome de unidade, da mais específica à mais genérica: o nome
+    inteiro, sem o sufixo do órgão (' - SEP') e sem o último segmento depois do hífen (a sigla)."""
+    n = norm(nome)
+    saida = [n]
+    s = norm(sigla_org)
+    if s and n.endswith(" " + s):
+        saida.append(n[: -len(s)].strip())
+    base = re.sub(r"\s*-\s*[A-Z0-9][A-Z0-9 ./-]*$", "", (nome or "").upper()).strip()
+    if base and norm(base) not in saida:
+        saida.append(norm(base))
+    return [v for v in saida if v]
+
+
+def sem_sufixo(nome, sigla, sigla_org):
+    """Tira do fim do nome oficial a sigla da unidade e a do órgão (a interface mostra a sigla à parte)."""
+    n = limpar(nome)
+    for sg in (sigla, sigla_org):
+        if sg:
+            n = re.sub(r"\s*-\s*" + re.escape(sg) + r"\s*$", "", n, flags=re.I)
+    return n.strip(" -")
+
+
 def sigla_do_setor(nome_setor, siglas_conhecidas):
     """Sigla da estrutura com que o nome do setor TERMINA (ex.: '... - SUGOV'); a mais longa vence."""
     n = norm(nome_setor)
@@ -143,7 +173,8 @@ def main():
     for org in sorted(pessoas_por_org):
         pessoas = pessoas_por_org[org]
         nome_org = limpar(extra["orgaos"].get(org, org))
-        estrutura = carregar_estrutura(org)
+        oficial = carregar_oficial(org)
+        estrutura = None if oficial else carregar_estrutura(org)
         unidades = {}   # id -> dict
         ordem = []
 
@@ -155,6 +186,31 @@ def main():
         nova(org, nome=nome_org, sigla=org, pai=None, situacao="raiz", fonte="")
         siglas = {}
         por_codigo = {}
+        por_nome = collections.defaultdict(set)      # variante do nome -> ids (estrutura oficial)
+        por_sigla_of = collections.defaultdict(set)  # sigla normalizada -> ids (estrutura oficial)
+        fonte_oficial = ""
+        if oficial:
+            fonte_oficial = f"Organograma ES (organograma.es.gov.br), retrato de {oficial['capturadoEm']}"
+
+            def adicionar(u, pai_id):
+                uid = "o:" + u["id"]
+                nova(uid, nome=sem_sufixo(u["nome"], u["sigla"], org), sigla=u["sigla"], pai=pai_id,
+                     situacao="oficial", fonte=fonte_oficial)
+                for v in variantes(u["nome"], org):
+                    por_nome[v].add(uid)
+                if u["sigla"]:
+                    por_sigla_of[norm(u["sigla"])].add(uid)
+                for f in u["filhas"]:
+                    adicionar(f, uid)
+            topos = oficial["unidades"]
+            if len(topos) == 1:       # a unidade de topo é o próprio órgão
+                for v in variantes(topos[0]["nome"], org):
+                    por_nome[v].add(org)
+                for f in topos[0]["filhas"]:
+                    adicionar(f, org)
+            else:
+                for t in topos:
+                    adicionar(t, org)
         if estrutura:
             for linha in estrutura:
                 cod_fixo = (linha.get("codigo") or "").strip()
@@ -179,7 +235,23 @@ def main():
             cod, setor = p.pop("_cod"), p.pop("_setor")
             nivel = nivel_do_codigo(cod)
             uid = None
-            if estrutura:
+            if oficial:
+                # 0) o código do setor é a própria sigla da unidade (ocorre, por exemplo, no CBMES)
+                if cod and len(por_sigla_of.get(norm(cod), ())) == 1:
+                    uid = next(iter(por_sigla_of[norm(cod)]))
+                # 1) nome idêntico ou equivalente (sem o sufixo do órgão), se aponta para uma só unidade
+                for v in ([] if uid else variantes(setor, org)):
+                    if len(por_nome.get(v, ())) == 1:
+                        uid = next(iter(por_nome[v]))
+                        break
+                # 2) sigla da unidade ao final do nome do setor (a mais longa), se for única
+                if uid is None and setor:
+                    n = norm(setor)
+                    achados = [(len(sg), next(iter(ids))) for sg, ids in por_sigla_of.items()
+                               if len(sg) >= 2 and len(ids) == 1 and (n == sg or n.endswith(" " + sg))]
+                    if achados:
+                        uid = max(achados)[1]
+            if uid is None and estrutura:
                 uid = por_codigo.get(cod)
                 if uid is None:
                     s = sigla_do_setor(setor, siglas)
@@ -195,10 +267,11 @@ def main():
                     # setor homônimo do órgão (comum na base) não pode se passar pela raiz
                     rotulo = setor or "Setor não informado"
                     if cod and norm(setor) == norm(nome_org):
-                        rotulo = f"{setor} (setor {cod})"
+                        rotulo = f"Setor {cod} (a base só informa o nome do órgão)"
                     nova(uid, nome=rotulo, sigla="",
                          pai=agrupamento(nivel), situacao="nao-confirmada",
-                         fonte="Unidade fora da estrutura oficial transcrita; subordinação não confirmada")
+                         fonte=("Setor da base de vínculos que não foi encontrado no Organograma ES; subordinação não confirmada"
+                                if oficial else "Unidade fora da estrutura transcrita; subordinação não confirmada"))
             p["unidade"] = uid
 
         # agrupamentos por nível do código em ordem numérica, depois das unidades da estrutura
@@ -217,7 +290,9 @@ def main():
                        "pessoas": len(pessoas), "puro": cont["puro"], "carreira": cont["carreira"],
                        "fg": cont["fg"], "valor": round(sum(p["valor"] for p in pessoas), 2),
                        "bruto": round(sum(p["bruto"] for p in pessoas), 2),
-                       "estruturaOficial": bool(estrutura)})
+                       "estruturaOficial": bool(oficial or estrutura),
+                       "estruturaFonte": "oficial" if oficial else ("manual" if estrutura else None),
+                       "semUnidade": sum(1 for p in pessoas if unidades[p["unidade"]]["situacao"] == "nao-confirmada")})
         pessoas.sort(key=lambda p: (-p["valor"], p["nome"]))
         json.dump({"sigla": org, "nome": nome_org, "mes": meses[-1][-12:-5],
                    "unidades": [unidades[i] for i in ordem], "pessoas": pessoas},
@@ -226,10 +301,14 @@ def main():
 
     json.dump({"mes": os.path.basename(meses[-1])[:7], "orgs": resumo,
                "fonte": {"folha": "Portal da Transparência — Pessoal (SEGER/ES)",
-                         "estrutura": "Decretos e organogramas oficiais, por órgão (ver estrutura/*.csv)"}},
+                         "estrutura": "Organograma ES (organograma.es.gov.br), plataforma oficial do Governo do ES; "
+                                      "tabelas manuais só para órgãos sem retrato oficial"}},
               open(os.path.join(SAIDA, "index.json"), "w"), ensure_ascii=False, separators=(",", ":"))
-    print(f"{len(resumo)} órgãos; {sum(r['pessoas'] for r in resumo)} pessoas; "
-          f"estrutura oficial em: {[r['sigla'] for r in resumo if r['estruturaOficial']]}")
+    print(f"{len(resumo)} órgãos; {sum(r['pessoas'] for r in resumo)} pessoas")
+    print(f"{'órgão':16}{'pessoas':>8}{'sem unidade':>13}{'cobertura':>11}")
+    for r in sorted(resumo, key=lambda r: -r["pessoas"]):
+        cob = 100 * (r["pessoas"] - r["semUnidade"]) / r["pessoas"]
+        print(f"{r['sigla']:16}{r['pessoas']:>8}{r['semUnidade']:>13}{cob:>10.0f}%  {r['estruturaFonte'] or 'sem estrutura'}")
 
 
 if __name__ == "__main__":

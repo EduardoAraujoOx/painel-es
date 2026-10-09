@@ -69,7 +69,26 @@
   }
   const chipCond = (c) => el('span', { class: 'chip-cond' }, el('i', { style: `background:${COND[c].cor}` }), COND[c].curto);
 
-  const nomeUnidade = (n) => ((n.sigla || n.id.startsWith('n:')) ? n.nome : titulo(n.nome));
+  // nomes da plataforma oficial vêm em maiúsculas e sem acento; restitui os acentos das palavras mais comuns
+  const ACENTOS = Object.fromEntries(('gerência subgerência administração comunicação informação informações técnica técnico técnicos '
+    + 'orçamento orçamentária orçamentário execução programação gestão estratégica estratégico jurídica jurídico política políticas '
+    + 'pública públicas público captação educação fiscalização regulação coordenação superintendência inteligência tributária tributário '
+    + 'relações patrimônio saúde segurança polícia logística operações ações avaliação formação capacitação atenção assistência '
+    + 'inovação agência núcleo seção divisão comissão econômico econômica fazendário rodoviário trânsito pedagógica pedagógico infância '
+    + 'família justiça penitenciária sócio habitação ciência tecnológica tecnológico extensão ambulatório auditória memória '
+    + 'diária contábil gráfica elétrica eletroeletrônica mecânica médica médico psicossocial jurídico serviço serviços secretário ').split(/\s+/)
+    .filter(Boolean).map((w) => [w.normalize('NFD').replace(/\p{Diacritic}/gu, ''), w.charAt(0).toUpperCase() + w.slice(1)]));
+  // abreviações inequívocas dos nomes oficiais (ficam fora as ambíguas, como CONTR, REG, ESP, DIR, ADM)
+  Object.assign(ACENTOS, { subg: 'Subgerência', subger: 'Subgerência', subgerenc: 'Subgerência', gerenc: 'Gerência',
+    asses: 'Assessoria', subsec: 'Subsecretaria', subsecret: 'Subsecretaria', secret: 'Secretaria', planej: 'Planejamento',
+    depart: 'Departamento', superint: 'Superintendência', unid: 'Unidade', inst: 'Instituto', gest: 'Gestão', orc: 'Orçamento',
+    coord: 'Coordenação' });
+  const nomeOficial = (nome) => titulo(nome).split(/(\s+)/).map((t) => ACENTOS[t.toLowerCase()] || t).join('');
+  const nomeUnidade = (n) => {
+    if (n.id.startsWith('n:')) return n.nome;                                  // rótulos de agrupamento
+    if ((n.situacao === 'confirmada' || n.situacao === 'a conferir') && n.sigla) return n.nome;   // tabela manual, já em caixa correta
+    return nomeOficial(n.nome);
+  };
 
   function cartaoPessoa(p, unidade) {
     const aberto = estado.pessoasAbertas.has(p.id + p.funcao);
@@ -297,7 +316,7 @@
 
   function caminho(n, nos) {
     const partes = [];
-    for (let x = n; x; x = x.pai ? nos.get(x.pai) : null) partes.unshift(x.sigla || x.nome);
+    for (let x = n; x; x = x.pai ? nos.get(x.pai) : null) partes.unshift(x.sigla || nomeUnidade(x));
     return partes.join(' > ');
   }
   function exportar() {
@@ -374,7 +393,7 @@
       el('p', {}, 'Organograma e lista. No computador, o organograma mostra as caixas ligadas por linhas: o número na base da caixa abre ou fecha o ramo, e tocar na caixa mostra, no painel ao lado, as pessoas daquela unidade. A lista traz a mesma árvore em formato expansível, melhor no celular.'),
       el('p', {}, 'Condição. Em azul, quem ocupa cargo em comissão sem vínculo efetivo (livre nomeação). Em laranja, o servidor de carreira que ocupa cargo em comissão: o cargo se soma ao salário de origem. Em verde, o servidor de carreira que recebe função gratificada. A cor nunca vem sozinha: cada pessoa traz o rótulo escrito.'),
       el('p', {}, 'Valores. "Cargo" é o que se paga por causa do cargo (regra do módulo Cargos em comissão). "Bruto" é a soma das rubricas de pagamento do mês, somando carreira e cargo; não inclui auxílios, indenizações, 13º, férias nem resíduos de acerto. O abate do teto constitucional aparece à parte, no detalhe da pessoa.'),
-      el('p', {}, 'Estrutura. A subordinação entre unidades vem de tabelas transcritas de decretos e organogramas oficiais, com a fonte de cada linha: hoje, a SEFAZ (Anexo III do Decreto 6005-R, de 2025, e o Decreto 6160-R, de 2025). A base de dados abertos informa o setor de cada pessoa, mas não diz quem é subordinado a quem, e o código do setor não é confiável como nível hierárquico. Unidades criadas depois desses decretos foram encaixadas por informação do titular do painel, o que consta na fonte de cada uma, e não por decreto. Onde não há estrutura oficial transcrita, ou a unidade não consta dela, a unidade fica num agrupamento "subordinação não confirmada", e nada é inferido por nome ou sigla. Ligações marcadas "a conferir" são hipóteses ainda não confirmadas.'),
+      el('p', {}, 'Estrutura. A subordinação entre unidades vem do Organograma ES (organograma.es.gov.br), a plataforma oficial de organogramas do Governo do ES, de que este painel guarda um retrato datado de cada órgão (a data consta na fonte de cada unidade). A base de dados abertos informa o setor de cada pessoa, mas não diz quem é subordinado a quem; por isso as pessoas são ligadas às unidades pelo nome do setor, pela sigla ou pelo código. Quando o setor da pessoa não é encontrado no organograma, ou a base só informa o nome do órgão (caso do IASES e da SESP), a pessoa aparece num agrupamento "subordinação não confirmada", ordenado pelo nível do código do setor, e nada é inferido por palpite. Os nomes das unidades vêm da plataforma, em maiúsculas e sem acento; a interface restitui os acentos mais comuns.'),
       el('p', {}, 'Lotação. O setor de cada pessoa é o da base de vínculos, que mostra a situação de hoje, e não o histórico. A estrutura muda por decreto, então a tabela precisa ser revista a cada alteração.'));
     $('#mesref').textContent = 'Referência: ' + rotuloMes(indice.mes, true);
   }
