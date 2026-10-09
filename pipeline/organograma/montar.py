@@ -243,45 +243,45 @@ def main():
 
         def atribuir(cod, setor):
             """Unidade (id) em que uma pessoa se encaixa, criando agrupamentos de reserva quando preciso."""
-        nivel = nivel_do_codigo(cod)
-        uid = None
-        if oficial:
-            # 0) o código do setor é a própria sigla da unidade (ocorre, por exemplo, no CBMES)
-            if cod and len(por_sigla_of.get(norm(cod), ())) == 1:
-                uid = next(iter(por_sigla_of[norm(cod)]))
-            # 1) nome idêntico ou equivalente (sem o sufixo do órgão), se aponta para uma só unidade
-            for v in ([] if uid else variantes(setor, org)):
-                if len(por_nome.get(v, ())) == 1:
-                    uid = next(iter(por_nome[v]))
-                    break
-            # 2) sigla da unidade ao final do nome do setor (a mais longa), se for única
-            if uid is None and setor:
-                n = norm(setor)
-                achados = [(len(sg), next(iter(ids))) for sg, ids in por_sigla_of.items()
-                           if len(sg) >= 2 and len(ids) == 1 and (n == sg or n.endswith(" " + sg))]
-                if achados:
-                    uid = max(achados)[1]
-        if uid is None and estrutura:
-            uid = por_codigo.get(cod)
+            nivel = nivel_do_codigo(cod)
+            uid = None
+            if oficial:
+                # 0) o código do setor é a própria sigla da unidade (ocorre, por exemplo, no CBMES)
+                if cod and len(por_sigla_of.get(norm(cod), ())) == 1:
+                    uid = next(iter(por_sigla_of[norm(cod)]))
+                # 1) nome idêntico ou equivalente (sem o sufixo do órgão), se aponta para uma só unidade
+                for v in ([] if uid else variantes(setor, org)):
+                    if len(por_nome.get(v, ())) == 1:
+                        uid = next(iter(por_nome[v]))
+                        break
+                # 2) sigla da unidade ao final do nome do setor (a mais longa), se for única
+                if uid is None and setor:
+                    n = norm(setor)
+                    achados = [(len(sg), next(iter(ids))) for sg, ids in por_sigla_of.items()
+                               if len(sg) >= 2 and len(ids) == 1 and (n == sg or n.endswith(" " + sg))]
+                    if achados:
+                        uid = max(achados)[1]
+            if uid is None and estrutura:
+                uid = por_codigo.get(cod)
+                if uid is None:
+                    s = sigla_do_setor(setor, siglas)
+                    if s:
+                        uid = "u:" + s
+            # raiz: o setor de nível 1 do código que leva o nome do próprio órgão (ex.: o gabinete
+            # do titular da pasta); as demais unidades de nível 1 ficam como unidades à parte
+            if uid is None and nivel == 1 and norm(setor).endswith(" " + norm(org)):
+                uid = org
             if uid is None:
-                s = sigla_do_setor(setor, siglas)
-                if s:
-                    uid = "u:" + s
-        # raiz: o setor de nível 1 do código que leva o nome do próprio órgão (ex.: o gabinete
-        # do titular da pasta); as demais unidades de nível 1 ficam como unidades à parte
-        if uid is None and nivel == 1 and norm(setor).endswith(" " + norm(org)):
-            uid = org
-        if uid is None:
-            uid = "s:" + (cod or "sem-setor")
-            if uid not in unidades:
-                # setor homônimo do órgão (comum na base) não pode se passar pela raiz
-                rotulo = setor or "Setor não informado"
-                if cod and norm(setor) == norm(nome_org):
-                    rotulo = f"Setor {cod} (a base só informa o nome do órgão)"
-                nova(uid, nome=rotulo, sigla="",
-                     pai=agrupamento(nivel), situacao="nao-confirmada",
-                     fonte=("Setor da base de vínculos que não foi encontrado no Organograma ES; subordinação não confirmada"
-                            if oficial else "Unidade fora da estrutura transcrita; subordinação não confirmada"))
+                uid = "s:" + (cod or "sem-setor")
+                if uid not in unidades:
+                    # setor homônimo do órgão (comum na base) não pode se passar pela raiz
+                    rotulo = setor or "Setor não informado"
+                    if cod and norm(setor) == norm(nome_org):
+                        rotulo = f"Setor {cod} (a base só informa o nome do órgão)"
+                    nova(uid, nome=rotulo, sigla="",
+                         pai=agrupamento(nivel), situacao="nao-confirmada",
+                         fonte=("Setor da base de vínculos que não foi encontrado no Organograma ES; subordinação não confirmada"
+                                if oficial else "Unidade fora da estrutura transcrita; subordinação não confirmada"))
             return uid
 
         for p in pessoas:
