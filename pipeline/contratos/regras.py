@@ -187,3 +187,12 @@ def essencialidade(cat, objeto):
     if ESSENCIAL_POR_TEXTO.search(sem_acento(objeto).lower()):
         return "essencial"
     return ESSENCIALIDADE.get(cat, "indefinido")
+
+ALERTAS["pago_acima"] = (MEDIA, "Pago acima do contratado",
+                         "O total pago nos empenhos exclusivos do contrato supera em mais de 10% o valor final registrado (pode indicar valor final subestimado no cadastro ou empenho usado em outro contrato).")
+ALERTAS["ritmo_acelerado"] = (MEDIA, "Execução em ritmo acelerado",
+                              "Já foram pagos 80% ou mais do valor do contrato com menos de metade do prazo decorrido.")
+ALERTAS["pago_sem_contrato"] = (MEDIA, "Pagamentos sem contrato vigente",
+                                "O fornecedor recebeu R$ 1 milhão ou mais nos últimos dois exercícios deste órgão sem ter contrato vigente nele (pode ser compra direta, ata ou contrato vencido).")
+ALERTAS["sem_pagamento"] = (INFO, "Contrato sem pagamento identificado",
+                            "Contrato vigente há mais de um ano, de valor relevante, sem nenhum pagamento do órgão ao fornecedor desde 2021.")

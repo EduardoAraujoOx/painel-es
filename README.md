@@ -97,6 +97,12 @@ Contratos, alterações contratuais e empenhos do Portal da Transparência do ES
 
 Contrato vigente é o instrumento do tipo contrato, carta-contrato ou termo de adesão cuja data final (com aditivos de prazo) não passou e cuja situação não é de encerramento. Valor final é o valor total do instrumento (em registro de preços, costuma ser o máximo estimado). Compromisso anual é o valor final dividido pela duração em meses (mínimo 12) vezes 12. Saldo a executar é o valor final menos o empenhado. **Os empenhos do SIGA não cobrem toda a execução** (obras do DER, por exemplo, quase não aparecem): a tela avisa quando a cobertura é baixa.
 
+### Execução: o que foi pago (SIGEFES)
+
+Os empenhos do SIGA cobrem só parte da execução. Para medir o dinheiro que de fato saiu, o módulo lê a execução da despesa do Portal da Transparência (SIGEFES, arquivos anuais de 0,5 a 1,5 GB) e guarda só as linhas cujo favorecido é um CNPJ presente nos contratos (CPF não é lido). O arquivo não é baixado por inteiro: `execucao.py` lê fatias de bytes em paralelo e termina um ano em poucos minutos. O vínculo com o contrato é o número do empenho (`NumeroEmpenho` no SIGA e `DocumentoEmpenho` no SIGEFES, par com o CNPJ; 97% dos empenhos do SIGA casam). A unidade gestora que paga é ligada ao órgão do SIGA pela maioria dos empenhos vinculados e, na falta, pelo nome. Pago é o valor de `ValorPago` somado; cobre os exercícios de 2021 em diante.
+
+No **contrato**, o pago soma só os empenhos que o SIGA vincula a ele. No **órgão** e na **ficha do fornecedor**, é tudo o que o órgão (ou o Estado) pagou ao CNPJ, com ou sem contrato, o que inclui compras diretas e repasses; por isso a curva de Pareto por pago esconde por padrão bancos, empresas públicas, autarquias e prefeituras (há um botão para incluí-los). Novos alertas: pago acima do contratado, execução em ritmo acelerado, pagamentos sem contrato vigente e contrato sem pagamento identificado.
+
 ### Visão por empresa e regra de Pareto
 
 Para cada fornecedor a tela responde: quanto recebe por ano (compromisso anual dos contratos vigentes, e o empenhado recente), desde quando (data do primeiro instrumento no SIGA; a base começa em 2016), por mais quanto tempo (data final dos contratos vigentes) e quanto ainda tem a receber (estimativa linear: valor anual vezes o tempo restante, limitado ao valor final). A **essencialidade** do objeto é uma classificação sugerida pelo tipo de objeto (`ESSENCIALIDADE` em `regras.py`): essencial (saúde, alimentação, utilidades, vigilância, transporte escolar), suporte, investimento (obras e equipamentos, que podem ser adiados) e discricionário (publicidade, eventos, consultoria e capacitação). Serve para orientar a conversa com o gestor e deve ser validada por ele.
@@ -112,10 +118,11 @@ São regras objetivas de triagem, listadas na própria tela (rodapé "Fonte e m�
 ```bash
 python3 -I pipeline/contratos/baixar.py                 # contratos, alterações e empenhos (.cache/contratos)
 python3 -I pipeline/contratos/receita.py 2026-09-14     # cadastro da Receita para os CNPJs dos contratos (data da publicação mensal)
+python3 -I pipeline/contratos/execucao.py 2021 2022 2023 2024 2025 2026   # pagamentos (SIGEFES) aos CNPJs dos contratos
 python3 -I pipeline/contratos/montar.py                 # gera data/contratacoes/ (index, org/, forn/, busca)
 ```
 
-Limites conhecidos: a classificação do objeto é por palavras-chave; não há comparação de preços entre contratações; pagamentos efetivos (liquidação) ainda não estão cruzados; empresas públicas e fundos fora do SIGA não aparecem.
+Limites conhecidos: a classificação do objeto é por palavras-chave; não há comparação de preços entre contratações; o pago do contrato depende de o SIGA vincular os empenhos a ele; empresas públicas e fundos fora do SIGA não aparecem.
 
 ## Acesso e implantação (Vercel)
 
