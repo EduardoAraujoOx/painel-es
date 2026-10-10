@@ -613,6 +613,14 @@ def main():
     os.makedirs(os.path.join(DESTINO, "org"))
     os.makedirs(os.path.join(DESTINO, "forn"))
     nivel_peso = {"a": 3, "m": 1, "i": 0}
+    vig_ord = sorted((c for c in recs if c["vigente"] and c["anual"] > 0), key=lambda c: -c["anual"])
+    total_anual_vig = sum(c["anual"] for c in vig_ord) or 1.0
+    classe_a, acum_a = set(), 0.0
+    for c in vig_ord:
+        classe_a.add((c["org"], c["proc"], c["doc"]))
+        acum_a += c["anual"]
+        if acum_a >= 0.8 * total_anual_vig:
+            break
     indice_orgs = []
     prioridades = []
     def unicos(alertas):
@@ -624,7 +632,7 @@ def main():
         return melhor
 
     pontos_forn = {k: sum(nivel_peso[n] for n in unicos(v).values()) for k, v in alertas_forn.items()}
-    CAMPOS = ["doc", "proc", "forn", "cnpj", "objeto", "cat", "modal", "vini", "vfin", "cel", "ini", "fim", "fimef", "sit", "anual", "saldo", "empAnt", "empAtu", "npror", "rp", "ess", "restante", "pago", "pagoAnt", "pagoAtu", "alertas"]
+    CAMPOS = ["doc", "proc", "forn", "cnpj", "objeto", "cat", "modal", "vini", "vfin", "cel", "ini", "fim", "fimef", "sit", "anual", "saldo", "empAnt", "empAtu", "npror", "rp", "ess", "restante", "pago", "pagoAnt", "pagoAtu", "classeA", "alertas"]
     for org in sorted(org_nome):
         meus = [c for c in recs if c["org"] == org]
         alvo = [c for c in meus if c["vigente"] or any(a[0] == "vigencia_vencida" for a in c["alertas"])]
@@ -634,7 +642,7 @@ def main():
                       round(c["anual"], 2), None if c["saldo"] is None else round(c["saldo"], 2),
                       round(c["emp"].get(ANOS_GASTO[0], 0.0), 2), round(c["emp"].get(ANOS_GASTO[1], 0.0), 2), c["n_pror"], int(c["reg_preco"]), c["ess"], round(c["restante"], 2),
                       round(c["pago"], 2), round(c["pago_ano"].get(int(ANOS_GASTO[0]), 0.0), 2), round(c["pago_ano"].get(int(ANOS_GASTO[1]), 0.0), 2),
-                      [f"{a}:{n}" for a, n in c["alertas"]]] for c in alvo]
+                      int((c["org"], c["proc"], c["doc"]) in classe_a), [f"{a}:{n}" for a, n in c["alertas"]]] for c in alvo]
         for c in alvo:
             pc = sum(nivel_peso[n] for _, n in c["alertas"])
             pf = pontos_forn.get(c["cnpj"], 0)
@@ -679,6 +687,7 @@ def main():
         pago_org_atu = sum(v.get(int(ANOS_GASTO[1]), 0.0) for (o_, _c), v in pago_of.items() if o_ == org)
         resumo = {"id": org, "nome": titulo(org_nome[org]), "nomeSiga": org_nome[org],
                   "pagoAnt": round(pago_org_ant, 2), "pagoAtu": round(pago_org_atu, 2),
+                  "classeA": sum(1 for c in vigentes if (c["org"], c["proc"], c["doc"]) in classe_a), "classeAValor": round(sum(c["anual"] for c in vigentes if (c["org"], c["proc"], c["doc"]) in classe_a), 2),
                   "vigentes": len(vigentes), "valorVigente": round(sum(c["vfin"] for c in vigentes), 2),
                   "anualVigente": round(sum(c["anual"] for c in vigentes), 2),
                   "saldoVigente": round(sum(max(c["saldo"] or 0.0, 0.0) for c in vigentes), 2),
@@ -747,8 +756,35 @@ def main():
     for k, d in fatias.items():
         json.dump(d, open(os.path.join(DESTINO, "forn", f"{k}.json"), "w"), ensure_ascii=False, separators=(",", ":"))
 
+    # diagnóstico: todos os contratos vigentes do Estado (alertas do contrato + do fornecedor), para a análise por Pareto
+    PUBLICO = re.compile(r"(economia mista|empresa p[uú]blica|[óo]rg[aã]o p[uú]blico|autarquia|funda[cç][aã]o p[uú]blica|munic[ií]pio|estado ou distrito)", re.I)
+    linhas_diag = []
+    for c in recs:
+        if not c["vigente"]:
+            continue
+        forn_al = [f"{a}:{n}" for a, n in unicos(alertas_forn.get(c["cnpj"], [])).items()]
+        al = [f"{a}:{n}" for a, n in c["alertas"]] + [x for x in forn_al if x.split(":")[0] not in {a for a, _ in c["alertas"]}]
+        nat = fichas.get(c["cnpj"], {}).get("natureza", "")
+        linhas_diag.append([c["org"], titulo(c["org_nome"]), c["doc"], c["proc"], titulo(c["forn"]) if c["forn"].isupper() else c["forn"], c["cnpj"], c["objeto"][:300], c["cat"], c["modal"],
+                            round(c["vini"], 2), round(c["vfin"], 2), iso(c["cel"]), iso(c["ini"]), iso(c["fim"]), iso(c["fim_ef"]), c["sit"], round(c["anual"], 2),
+                            None if c["saldo"] is None else round(c["saldo"], 2), round(c["restante"], 2), round(c["pago"], 2),
+                            round(c["pago_ano"].get(int(ANOS_GASTO[0]), 0.0), 2), round(c["pago_ano"].get(int(ANOS_GASTO[1]), 0.0), 2), c["n_pror"], int(c["reg_preco"]), c["ess"],
+                            int(bool(PUBLICO.search(nat or "")) or bool(re.search(r"(^|\s)(banco|caixa econ[oô]mica|prefeitura|munic[ií]pio)", c["forn"], re.I))), al])
+    linhas_diag.sort(key=lambda r: -r[16])
+    json.dump({"campos": ["org", "orgNome", "doc", "proc", "forn", "cnpj", "objeto", "cat", "modal", "vini", "vfin", "cel", "ini", "fim", "fimef", "sit", "anual", "saldo", "restante", "pago", "pagoAnt", "pagoAtu",
+                          "npror", "rp", "ess", "pub", "alertas"], "contratos": linhas_diag},
+              open(os.path.join(DESTINO, "diagnostico.json"), "w"), ensure_ascii=False, separators=(",", ":"))
+
     indice_orgs.sort(key=lambda o: -(o["anualVigente"] + o["empAnt"] + o["empAtu"]))
-    prioridades.sort(key=lambda x: -x["prioridade"])
+    # "para olhar primeiro": contratos da classe A (80% do compromisso anual) com algum alerta de nível médio ou alto, do maior para o menor valor
+    prioridades = []
+    for c in vig_ord:
+        if (c["org"], c["proc"], c["doc"]) not in classe_a:
+            break
+        cods = [f"{a}:{n}" for a, n in c["alertas"] if n != "i"] + [f"{a}:{n}" for a, n in unicos(alertas_forn.get(c["cnpj"], [])).items() if n != "i" and a not in {x for x, _ in c["alertas"]}]
+        if cods:
+            prioridades.append({"org": c["org"], "orgNome": titulo(org_nome[c["org"]]), "doc": c["doc"], "forn": titulo(c["forn"]) if c["forn"].isupper() else c["forn"], "cnpj": c["cnpj"], "cat": c["cat"],
+                                "objeto": c["objeto"][:160], "anual": round(c["anual"], 2), "saldo": round(max(c["saldo"] or 0.0, 0.0), 2), "pontos": sum(nivel_peso[x.split(":")[1]] for x in cods), "alertas": cods})
     # fornecedores de maior exposição no governo todo
     expo = collections.defaultdict(lambda: {"anual": 0.0, "emp": 0.0, "orgs": set()})
     for (o, cnpj), a in fo.items():
@@ -780,11 +816,11 @@ def main():
              for cnpj, f in ((k, fichas.get(k, {})) for k in sorted(ativos))]
     json.dump(busca, open(os.path.join(DESTINO, "busca.json"), "w"), ensure_ascii=False, separators=(",", ":"))
     json.dump({"ref": iso(REF), "anosGasto": list(ANOS_GASTO), "receita": receita["publicacao"],
-               "alertas": {k: {"nivel": v[0], "titulo": v[1], "descricao": v[2]} for k, v in R.ALERTAS.items()},
+               "alertas": {k: {"nivel": v[0], "titulo": v[1], "descricao": v[2], "esclarecer": R.ESCLARECER.get(k, "")} for k, v in R.ALERTAS.items()},
                "limiteDispensa": R.LIMITE_DISPENSA, "fontesExternas": fontes_ext, "execucaoAnos": EXEC["anos"], "essencialidade": R.ROTULO_ESSENCIALIDADE,
                "fonte": {"contratos": "Portal da Transparência do ES — Contratos, Alterações Contratuais e Empenhos (SIGA)",
                          "cadastro": f"Receita Federal — dados abertos do CNPJ, publicação de {receita['publicacao']}"},
-               "prioridades": prioridades[:80], "topFornecedores": top_forn,
+               "prioridades": prioridades[:80], "classeA": {"contratos": len(classe_a), "vigentes": len(vig_ord), "valor": round(sum(c["anual"] for c in vig_ord if (c["org"], c["proc"], c["doc"]) in classe_a), 2), "total": round(total_anual_vig, 2)}, "topFornecedores": top_forn,
                "orgs": indice_orgs}, open(os.path.join(DESTINO, "index.json"), "w"), ensure_ascii=False, separators=(",", ":"))
     tam = sum(os.path.getsize(p) for p in glob.glob(os.path.join(DESTINO, "**", "*.json"), recursive=True))
     print(f"{len(indice_orgs)} órgãos; {len(ativos)} fornecedores com ficha; {tam / 1e6:.1f} MB em {DESTINO}")

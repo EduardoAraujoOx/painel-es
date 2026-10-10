@@ -17,7 +17,7 @@
   const estado = {
     medida: 'anual', vista: 'mapa', ordemOrgs: { col: 'anualVigente', dir: -1 },
     org: null, forn: null, origem: null, verTodosForn: false, verMaisPrioridades: false,
-    f: { situ: 'vigentes', cat: '', modal: '', alerta: '', ess: '', q: '' }, rev: { status: '', motivo: '', org: '', decididos: false, sensivel: false }, msg: '', tela: '', par: { base: 'anual', ess: new Set(), corte: 80, mais: 10, pub: false }, ordem: { col: 'anual', dir: -1 }, limite: 50,
+    f: { situ: 'vigentes', cat: '', modal: '', alerta: '', ess: '', ca: '', q: '' }, dg: { base: 'anual', corte: 80, pub: true, mais: 25, casos: 40, sensivel: false, aberto: new Set(), f: { org: '', cat: '', modal: '', ess: '', alerta: '', soAlerta: false, q: '' } }, rev: { status: '', motivo: '', org: '', decididos: false, sensivel: false }, msg: '', tela: '', par: { base: 'anual', ess: new Set(), corte: 80, mais: 10, pub: false }, ordem: { col: 'anual', dir: -1 }, limite: 50,
     aberto: new Set(),
   };
   const PESO = { a: 3, m: 1, i: 0 };
@@ -60,12 +60,12 @@
   const contrato = (linha) => Object.fromEntries(CAMPOS.map((k, i) => [k, linha[i]]));
 
   // ---------- navegação ----------
-  function irOrg(id) { estado.f = { situ: 'vigentes', cat: '', modal: '', alerta: '', ess: '', q: '' }; estado.limite = 50; estado.aberto.clear(); estado.verTodosForn = false; ctx.irPara(String(id)); }
+  function irOrg(id) { estado.f = { situ: 'vigentes', cat: '', modal: '', alerta: '', ess: '', ca: '', q: '' }; estado.limite = 50; estado.aberto.clear(); estado.verTodosForn = false; ctx.irPara(String(id)); }
   function irForn(cnpj, origem) { estado.origem = origem == null ? estado.org : origem; ctx.irPara('f:' + cnpj); }
   function aoNavegar(resto) {
     if (!dados) return;
     const r = decodeURIComponent(resto || '');
-    estado.tela = r === 'revisao' || r === 'relatorio' ? r : '';
+    estado.tela = r === 'revisao' || r === 'relatorio' ? r : r === 'diagnostico' ? 'diagnostico' : r === 'diagnostico/relatorio' ? 'diag-relatorio' : '';
     estado.forn = r.startsWith('f:') ? r.slice(2) : null;
     const id = !estado.forn && !estado.tela && r ? Number(r) : null;
     estado.org = id && dados.orgs.some((o) => o.id === id) ? id : null;
@@ -78,6 +78,8 @@
     const sep = () => el('span', { class: 'sep' }, '›');
     const orgId = estado.forn ? estado.origem : estado.org;
     const org = orgId && dados.orgs.find((o) => o.id === orgId);
+    if (estado.tela === 'diagnostico') { t.replaceChildren(itens[0], sep(), el('span', { class: 'atual' }, 'Diagnóstico dos contratos')); return; }
+    if (estado.tela === 'diag-relatorio') { t.replaceChildren(itens[0], sep(), el('button', { type: 'button', onclick: () => ctx.irPara('diagnostico') }, 'Diagnóstico dos contratos'), sep(), el('span', { class: 'atual' }, 'Relatório')); return; }
     if (estado.tela === 'revisao') { t.replaceChildren(itens[0], sep(), el('span', { class: 'atual' }, 'Lista de revisão')); return; }
     if (estado.tela === 'relatorio') { t.replaceChildren(itens[0], sep(), el('button', { type: 'button', onclick: () => ctx.irPara('revisao') }, 'Lista de revisão'), sep(), el('span', { class: 'atual' }, 'Relatório')); return; }
     if (!estado.forn && !estado.org) { t.replaceChildren(el('span', { class: 'atual' }, 'Governo do ES')); return; }
@@ -170,7 +172,7 @@
     const prior = estado.verMaisPrioridades ? dados.prioridades : dados.prioridades.slice(0, 15);
     const cPrior = el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {},
       el('h2', {}, 'Contratos para olhar primeiro'),
-      el('p', {}, 'Contratos vigentes de pelo menos R$ 1 milhão por ano, ordenados por pontos de alerta (alto = 3, médio = 1) ponderados pelo valor. É triagem, não conclusão.'))),
+      el('p', {}, `Entre os ${nInt.format(dados.classeA.contratos)} contratos que somam 80% do compromisso anual do Estado (${brlCompacto(dados.classeA.valor)} de ${brlCompacto(dados.classeA.total)}), os que têm alerta de nível médio ou alto, do maior para o menor valor. É triagem, não conclusão; o diagnóstico completo está no botão acima.`))),
     el('div', { class: 'rolagem' }, el('table', {},
       el('thead', {}, el('tr', {}, ['Órgão e fornecedor', 'Objeto', 'Por ano', 'Alertas', ''].map((t, i) => el('th', { class: i === 2 ? 'num' : '' }, t)))),
       el('tbody', {}, prior.map((p) => el('tr', { class: 'clicavel', tabindex: '0', onclick: () => { irOrg(p.org); },
@@ -232,6 +234,7 @@
     if (f.situ === 'vigentes' && !vigenteOuNao) return false;
     if (f.situ === 'vencidos' && !venc) return false;
     if (f.cat && k.cat !== f.cat) return false;
+    if (f.ca === 'sim' && !k.classeA) return false;
     if (f.ess && k.ess !== f.ess) return false;
     if (f.modal && k.modal !== f.modal) return false;
     if (f.alerta === 'alto' && !k.alertas.some((a) => a.endsWith(':a'))) return false;
@@ -266,6 +269,7 @@
       kpi('Compromisso anual', brlCompacto(org.anualVigente), `saldo a executar: ${brlCompacto(org.saldoVigente)}`),
       kpi('Pago aos fornecedores', brlCompacto(org.pagoAnt + org.pagoAtu), `${aAnt}: ${brlCompacto(org.pagoAnt)} · ${aAtu}: ${brlCompacto(org.pagoAtu)} · caixa (SIGEFES)`),
       kpi('Empenhado nos contratos', brlCompacto(org.empAnt + org.empAtu), `${aAnt}: ${brlCompacto(org.empAnt)} · ${aAtu}: ${brlCompacto(org.empAtu)} · só o que o SIGA registra`),
+      kpi('Classe A do Estado', `${nInt.format(org.classeA)} contrato(s)`, `${brlCompacto(org.classeAValor)} por ano · entre os que somam 80% do valor do Estado`),
       kpi('Contratação direta', pct(org.diretaPct), `dispensa e inexigibilidade, do valor contratado em ${aAnt}–${aAtu}`),
       kpi('Maior fornecedor', pct(org.maiorFornAnual), 'participação no compromisso anual vigente'),
       kpi('Alertas', `${nInt.format(org.contratosAlta)} altos`, `${nInt.format(org.contratosMedia)} contratos com sinal médio · ${nInt.format(org.fornecedoresSinalizados)} fornecedores sinalizados`));
@@ -330,6 +334,7 @@
     const filtros = el('div', { class: 'filtros' },
       sel(f.situ, [['vigentes', 'Vigentes'], ['vencidos', 'Vencidos com empenho posterior'], ['todos', 'Todos']], (v) => { f.situ = v; }, 'Situação'),
       sel(f.cat, [['', 'Todos'], ...cats.map((x) => [x, x])], (v) => { f.cat = v; }, 'Objeto'),
+      sel(f.ca, [['', 'Todos'], ['sim', 'Só classe A (80% do valor do Estado)']], (v) => { f.ca = v; }, 'Valor'),
       sel(f.ess, [['', 'Todas'], ...Object.entries(ESS()).filter(([k]) => todos.some((c) => c.ess === k)).map(([k, r]) => [k, r])], (v) => { f.ess = v; }, 'Essencialidade'),
       sel(f.modal, [['', 'Todas'], ...mods.map((x) => [x, x])], (v) => { f.modal = v; }, 'Modalidade'),
       sel(f.alerta, [['', 'Todos'], ['algum', 'Com algum alerta'], ['alto', 'Com alerta alto'], ...codigos.map((x) => ['cod:' + x, dados.alertas[x].titulo])], (v) => { f.alerta = v; }, 'Alerta'),
@@ -342,7 +347,7 @@
       const tr = el('tr', { class: 'clicavel' + (aberto ? ' aberta' : ''), tabindex: '0', 'aria-expanded': String(aberto),
         onclick: () => { const id = k.doc + k.proc; if (estado.aberto.has(id)) estado.aberto.delete(id); else estado.aberto.add(id); render(true); },
         onkeydown: (ev) => { if (ev.key === 'Enter') ev.currentTarget.click(); } },
-      el('td', { class: 'objeto' }, el('strong', {}, nomeProprio(k.forn)), naLista(org.id, k) ? el('span', { class: 'selo n-m' }, el('b', {}, '⚑'), ' na lista de revisão') : null, el('small', {}, k.objeto.length > 150 ? k.objeto.slice(0, 150) + '…' : k.objeto)),
+      el('td', { class: 'objeto' }, el('strong', {}, nomeProprio(k.forn)), k.classeA ? el('span', { class: 'selo n-i', title: 'Entre os contratos que somam 80% do compromisso anual do Estado' }, el('b', {}, 'A'), ' classe A') : null, naLista(org.id, k) ? el('span', { class: 'selo n-m' }, el('b', {}, '⚑'), ' na lista de revisão') : null, el('small', {}, k.objeto.length > 150 ? k.objeto.slice(0, 150) + '…' : k.objeto)),
       el('td', {}, k.cat, el('small', {}, k.modal + (k.rp ? ' · registro de preços' : '')), tagEss(k.ess)),
       el('td', { class: 'num' }, brlCompacto(k.anual), el('small', {}, 'total ' + brlCompacto(k.vfin)), k.pago > 0 ? el('small', {}, `pago ${brlCompacto(k.pago)} (${pct(k.vfin ? k.pago / k.vfin : 0)})`) : null),
       el('td', { class: 'num' }, k.saldo == null ? '—' : brlCompacto(k.saldo)),
@@ -830,6 +835,277 @@
     c.replaceChildren(controles, relatorio);
   }
 
+  // ---------- diagnóstico dos contratos (Pareto por contrato) ----------
+  // Parte sempre do conjunto de contratos que, ordenados do maior para o menor, somam o corte (80%) do valor.
+  let diag = null;
+  async function carregarDiag() {
+    if (!diag) {
+      const d = await ctx.api('diagnostico');
+      diag = d.contratos.map((r) => Object.fromEntries(d.campos.map((k, i) => [k, r[i]])));
+    }
+    return diag;
+  }
+  const INTERNOS = /^(socio_servidor|socio_em_comum|doacao_|socio_candidato|fornecedor_campanha|rede_grande|endereco_comum)/;
+  const BASES_DG = { anual: ['Compromisso anual', (k) => k.anual], restante: ['Ainda a receber (estimativa)', (k) => k.restante], vfin: ['Valor total do contrato', (k) => k.vfin] };
+  const relevantes = (k, restrito) => k.alertas.filter((a) => !a.endsWith(':i') && (restrito || !INTERNOS.test(a)));
+  const nivelMax = (lista) => (lista.some((a) => a.endsWith(':a')) ? 'a' : lista.some((a) => a.endsWith(':m')) ? 'm' : 'i');
+
+  function calcularDiag(todos) {
+    const D = estado.dg;
+    const [rotBase, valorDe] = BASES_DG[D.base];
+    const universo = todos.filter((k) => (D.pub || !k.pub) && valorDe(k) > 0).sort((a, b) => valorDe(b) - valorDe(a));
+    const total = soma(universo, valorDe);
+    let acum = 0;
+    const serie = universo.map((k, i) => { acum += valorDe(k); return { k, v: valorDe(k), cum: total ? acum / total : 0, rank: i + 1 }; });
+    const corte = D.corte / 100;
+    const kA = serie.findIndex((r) => r.cum >= corte - 1e-9) + 1 || serie.length;
+    return { rotBase, valorDe, universo, total, serie, kA, classeA: serie.slice(0, kA) };
+  }
+  function passaFiltroDg(k, f, restrito) {
+    const rel = relevantes(k, restrito);
+    if (f.org && String(k.org) !== f.org) return false;
+    if (f.cat && k.cat !== f.cat) return false;
+    if (f.modal && k.modal !== f.modal) return false;
+    if (f.ess && k.ess !== f.ess) return false;
+    if (f.soAlerta && !rel.length) return false;
+    if (f.alerta === 'alto' && !rel.some((a) => a.endsWith(':a'))) return false;
+    if (f.alerta.startsWith('cod:') && !rel.some((a) => a.startsWith(f.alerta.slice(4) + ':'))) return false;
+    if (f.q) {
+      const t = norm(`${k.forn} ${k.objeto} ${k.doc} ${k.orgNome} ${k.cnpj}`);
+      const q = norm(f.q);
+      if (!t.includes(q) && !t.includes(q.replace(/[.\-/]/g, ''))) return false;
+    }
+    return true;
+  }
+  function resumoAlertas(classeA, restrito) {
+    const m = new Map();
+    for (const { k, v } of classeA) {
+      for (const a of relevantes(k, restrito)) {
+        const [cod, n] = a.split(':');
+        const x = m.get(cod) || { cod, n: 'm', contratos: 0, valor: 0, orgs: new Set() };
+        x.contratos++; x.valor += v; x.orgs.add(k.org);
+        if (n === 'a') x.n = 'a';
+        m.set(cod, x);
+      }
+    }
+    return [...m.values()].sort((a, b) => (b.n === 'a') - (a.n === 'a') || b.valor - a.valor);
+  }
+  function resumoOrgs(classeA, restrito) {
+    const m = new Map();
+    for (const { k, v } of classeA) {
+      const x = m.get(k.org) || { org: k.org, nome: k.orgNome, contratos: 0, valor: 0, comAlerta: 0, valorAlerta: 0 };
+      x.contratos++; x.valor += v;
+      if (relevantes(k, restrito).length) { x.comAlerta++; x.valorAlerta += v; }
+      m.set(k.org, x);
+    }
+    return [...m.values()].sort((a, b) => b.valor - a.valor);
+  }
+  function curvaDiag(caixa, serie, kA, corte) {
+    observar(caixa, (W) => {
+      const H = 220, ml = 44, mr = 14, mt = 12, mb = 34, iw = W - ml - mr, ih = H - mt - mb;
+      const X = (i) => ml + (i / serie.length) * iw, Y = (c) => mt + ih - c * ih;
+      const sv = PF.svg('svg', { viewBox: `0 0 ${W} ${H}`, width: W, height: H });
+      for (const t of [0, 0.25, 0.5, 0.75, 1]) {
+        sv.append(PF.svg('line', { class: t === 0 ? 'eixo' : 'grade', x1: ml, x2: W - mr, y1: Y(t), y2: Y(t) }));
+        const ty = PF.svg('text', { x: ml - 6, y: Y(t) + 4, 'text-anchor': 'end' }); ty.textContent = Math.round(t * 100) + '%'; sv.append(ty);
+        const tx = PF.svg('text', { x: ml + t * iw, y: H - 16, 'text-anchor': t === 1 ? 'end' : t === 0 ? 'start' : 'middle' }); tx.textContent = Math.round(t * 100) + '%'; sv.append(tx);
+      }
+      const rx = PF.svg('text', { x: ml + iw / 2, y: H - 2, 'text-anchor': 'middle' }); rx.textContent = '% dos contratos (do maior para o menor)'; sv.append(rx);
+      const passo = Math.max(1, Math.floor(serie.length / 300));
+      let d = `M${X(0)},${Y(0)}`;
+      for (let i = 0; i < serie.length; i += passo) d += `L${X(i + 1).toFixed(1)},${Y(serie[i].cum).toFixed(1)}`;
+      sv.append(PF.svg('path', { d: d + `L${X(serie.length)},${Y(1)}`, fill: 'none', 'stroke-width': 2.5, 'stroke-linejoin': 'round', style: 'stroke:var(--serie-1)' }));
+      sv.append(PF.svg('line', { x1: ml, x2: X(kA), y1: Y(corte), y2: Y(corte), 'stroke-dasharray': '4 3', style: 'stroke:var(--serie-2)', 'stroke-width': 1.5 }));
+      sv.append(PF.svg('line', { x1: X(kA), x2: X(kA), y1: Y(corte), y2: Y(0), 'stroke-dasharray': '4 3', style: 'stroke:var(--serie-2)', 'stroke-width': 1.5 }));
+      sv.append(PF.svg('circle', { cx: X(kA), cy: Y(corte), r: 5, style: 'fill:var(--serie-2);stroke:var(--superficie);stroke-width:2' }));
+      const rot = PF.svg('text', { class: 'rotulo-final', x: X(kA) + 8, y: Y(corte) + 18 }); rot.textContent = `${nInt.format(kA)} contratos → ${Math.round(corte * 100)}%`; sv.append(rot);
+      const sobre = PF.svg('rect', { x: ml, y: mt, width: iw, height: ih, fill: 'transparent' });
+      sobre.addEventListener('pointermove', (ev) => {
+        const r = sobre.getBoundingClientRect();
+        const i = Math.min(serie.length - 1, Math.max(0, Math.floor(((ev.clientX - r.left) / r.width) * serie.length)));
+        mostrarDica([el('div', { class: 'tit' }, `${i + 1}º: ${nomeProprio(serie[i].k.forn)}`), dicaLinha(null, serie[i].k.orgNome, 'órgão'), dicaLinha(null, brlCompacto(serie[i].v), 'valor'), dicaLinha(null, pct(serie[i].cum), 'acumulado')], ev.clientX, ev.clientY);
+      });
+      sobre.addEventListener('pointerleave', esconderDica);
+      sv.append(sobre);
+      caixa.replaceChildren(sv);
+    });
+  }
+  const textoEsclarecer = (cod) => (dados.alertas[cod] && dados.alertas[cod].esclarecer) || '';
+
+  async function renderDiagnostico(c) {
+    const meu = ++tokenRender;
+    c.classList.add('carregando');
+    let todos;
+    try { todos = await carregarDiag(); } catch (e) {
+      if (e.sessao) return PF.mostrarLogin();
+      c.classList.remove('carregando');
+      return c.replaceChildren(el('p', { class: 'vazio' }, 'Não foi possível carregar o diagnóstico.'));
+    }
+    if (meu !== tokenRender) return;
+    c.classList.remove('carregando');
+    const D = estado.dg, f = D.f;
+    const R_ = calcularDiag(todos);
+    const { classeA, kA, total, valorDe } = R_;
+    const comAlerta = classeA.filter((r) => relevantes(r.k, true).length);
+    const comAlto = classeA.filter((r) => relevantes(r.k, true).some((a) => a.endsWith(':a')));
+    const kp = el('div', { class: 'kpis' },
+      kpi('Contratos que somam o corte', `${nInt.format(kA)} de ${nInt.format(R_.universo.length)}`, `${pct(kA / (R_.universo.length || 1))} dos contratos vigentes concentram ${D.corte}% de ${brlCompacto(total)}`),
+      kpi('Valor da classe A', brlCompacto(soma(classeA, (r) => r.v)), R_.rotBase.toLowerCase()),
+      kpi('Com algum alerta', `${nInt.format(comAlerta.length)} (${pct(comAlerta.length / (kA || 1))})`, `${brlCompacto(soma(comAlerta, (r) => r.v))} · ${pct(soma(comAlerta, (r) => r.v) / (soma(classeA, (r) => r.v) || 1))} do valor da classe A`),
+      kpi('Com alerta alto', `${nInt.format(comAlto.length)}`, `${brlCompacto(soma(comAlto, (r) => r.v))} · ${nInt.format(new Set(comAlto.map((r) => r.k.org)).size)} órgãos`),
+      kpi('Órgãos na classe A', nInt.format(new Set(classeA.map((r) => r.k.org)).size), 'órgãos com ao menos um contrato entre os de maior valor'));
+
+    const caixa = el('div', { class: 'grafico' });
+    const controles = el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Diagnóstico dos contratos de maior valor'),
+      el('p', {}, 'Todos os contratos vigentes do Estado, do maior para o menor valor. A análise cuidadosa parte da classe A: o grupo pequeno de contratos que soma o corte escolhido. Os alertas são sinais de triagem e a coluna "o que esclarecer" orienta a conferência.'))),
+    el('div', { class: 'filtros' },
+      el('label', {}, 'Medida', el('select', { onchange: (ev) => { D.base = ev.target.value; D.mais = 25; render(true); } }, Object.entries(BASES_DG).map(([k, [r]]) => el('option', { value: k, selected: k === D.base }, r)))),
+      el('label', {}, `Corte: ${D.corte}% do valor`, el('input', { type: 'range', min: 50, max: 95, step: 5, value: D.corte,
+        oninput: (ev) => { ev.target.previousSibling.textContent = `Corte: ${ev.target.value}% do valor`; }, onchange: (ev) => { D.corte = Number(ev.target.value); D.mais = 25; render(true); } }))),
+    el('div', { class: 'filtro-cond' }, el('button', { type: 'button', class: 'chip-filtro', 'aria-pressed': String(D.pub), title: 'Bancos, empresas públicas, autarquias e prefeituras',
+      onclick: () => { D.pub = !D.pub; D.mais = 25; render(true); } }, 'Incluir bancos, entes públicos e prefeituras')),
+    caixa);
+    curvaDiag(caixa, R_.serie, kA, D.corte / 100);
+
+    // alertas dentro da classe A
+    const porAlerta = resumoAlertas(classeA, true);
+    const cAlertas = el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Que alertas aparecem na classe A'),
+      el('p', {}, 'Por tipo de alerta, quantos contratos da classe A são atingidos e quanto valem. Clique para filtrar a lista.'))),
+    porAlerta.length ? el('div', { class: 'rolagem' }, el('table', {}, el('thead', {}, el('tr', {}, ['Alerta', 'Contratos', 'Valor', 'Órgãos', 'O que esclarecer'].map((t, n) => el('th', { class: n >= 1 && n <= 3 ? 'num' : '' }, t)))),
+      el('tbody', {}, porAlerta.map((x) => el('tr', { class: 'clicavel' + (f.alerta === 'cod:' + x.cod ? ' aberta' : ''), tabindex: '0', onclick: () => { f.alerta = f.alerta === 'cod:' + x.cod ? '' : 'cod:' + x.cod; D.mais = 25; render(true); },
+        onkeydown: (ev) => { if (ev.key === 'Enter') ev.currentTarget.click(); } },
+      el('td', {}, selo(`${x.cod}:${x.n}`), INTERNOS.test(x.cod) ? el('small', {}, 'triagem interna') : null), el('td', { class: 'num' }, nInt.format(x.contratos)), el('td', { class: 'num' }, brlCompacto(x.valor)),
+      el('td', { class: 'num' }, nInt.format(x.orgs.size)), el('td', { class: 'objeto' }, textoEsclarecer(x.cod))))))) : el('p', { class: 'vazio' }, 'Nenhum alerta na classe A.'));
+
+    // classe A por órgão
+    const porOrg = resumoOrgs(classeA, true);
+    const maxO = Math.max(1, ...porOrg.map((x) => x.valor));
+    const cOrgs = el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Classe A por órgão'),
+      el('p', {}, 'Quantos contratos de cada órgão estão entre os de maior valor e que parte desse valor tem alerta. Clique para filtrar a lista.'))),
+    el('div', { class: 'linhas' }, porOrg.slice(0, 15).map((x) => el('button', { type: 'button', class: 'linha-barra' + (f.org === String(x.org) ? ' ativa' : ''),
+      onclick: () => { f.org = f.org === String(x.org) ? '' : String(x.org); D.mais = 25; render(true); } },
+    el('span', { class: 'nome' }, x.nome, el('small', {}, `${nInt.format(x.contratos)} contrato(s) · ${pct(x.valorAlerta / (x.valor || 1))} do valor com alerta`)),
+    el('span', { class: 'trilho' }, el('i', { class: 'barra', style: `width:${Math.max(0.5, (x.valor / maxO) * 62)}%` }), el('span', { class: 'num' }, brlCompacto(x.valor)))))));
+
+    // lista da classe A
+    const lista = classeA.filter((r) => passaFiltroDg(r.k, f, true));
+    const cats = [...new Set(classeA.map((r) => r.k.cat))].sort();
+    const mods = [...new Set(classeA.map((r) => r.k.modal))].sort();
+    const orgsA = [...new Map(classeA.map((r) => [String(r.k.org), r.k.orgNome])).entries()].sort((a, b) => a[1].localeCompare(b[1], 'pt-BR'));
+    const codsA = porAlerta.map((x) => x.cod);
+    const sel = (valor, opcoes, aoMudar, rotulo) => el('label', {}, rotulo, el('select', { onchange: (ev) => { aoMudar(ev.target.value); D.mais = 25; render(true); } }, opcoes.map(([v, r]) => el('option', { value: v, selected: v === valor }, r))));
+    const filtros = el('div', { class: 'filtros' },
+      sel(f.org, [['', 'Todos'], ...orgsA], (v) => { f.org = v; }, 'Órgão'),
+      sel(f.cat, [['', 'Todos'], ...cats.map((x) => [x, x])], (v) => { f.cat = v; }, 'Objeto'),
+      sel(f.modal, [['', 'Todas'], ...mods.map((x) => [x, x])], (v) => { f.modal = v; }, 'Modalidade'),
+      sel(f.ess, [['', 'Todas'], ...Object.entries(ESS())], (v) => { f.ess = v; }, 'Essencialidade'),
+      sel(f.alerta, [['', 'Todos'], ['alto', 'Com alerta alto'], ...codsA.map((x) => ['cod:' + x, dados.alertas[x].titulo])], (v) => { f.alerta = v; }, 'Alerta'),
+      el('label', { class: 'opcao' }, el('input', { type: 'checkbox', checked: f.soAlerta, onchange: (ev) => { f.soAlerta = ev.target.checked; D.mais = 25; render(true); } }), ' Só com alerta'),
+      el('label', { class: 'busca' }, 'Buscar', el('input', { type: 'search', value: f.q, placeholder: 'Fornecedor, objeto, órgão ou nº do contrato', autocomplete: 'off',
+        oninput: (ev) => { clearTimeout(renderDiagnostico.t); renderDiagnostico.t = setTimeout(() => { f.q = ev.target.value.trim(); D.mais = 25; render(true); }, 250); } })));
+    const vis = lista.slice(0, D.mais);
+    const linhas = vis.flatMap((r) => {
+      const k = r.k;
+      const id = k.org + '|' + k.doc;
+      const aberto = D.aberto.has(id);
+      const rel = relevantes(k, true);
+      const org = { id: k.org, nome: k.orgNome };
+      const marcado = naLista(k.org, k);
+      const tr = el('tr', { class: 'clicavel' + (aberto ? ' aberta' : ''), tabindex: '0', 'aria-expanded': String(aberto),
+        onclick: () => { if (D.aberto.has(id)) D.aberto.delete(id); else D.aberto.add(id); render(true); }, onkeydown: (ev) => { if (ev.key === 'Enter') ev.currentTarget.click(); } },
+      el('td', {}, String(r.rank)),
+      el('td', { class: 'objeto' }, el('strong', {}, nomeProprio(k.forn)), marcado ? el('span', { class: 'selo n-m' }, el('b', {}, '⚑'), ' na lista de revisão') : null, el('small', {}, k.orgNome), el('small', {}, k.objeto.length > 140 ? k.objeto.slice(0, 140) + '…' : k.objeto)),
+      el('td', {}, k.cat, el('small', {}, k.modal + (k.rp ? ' · registro de preços' : '')), tagEss(k.ess)),
+      el('td', { class: 'num' }, brlCompacto(r.v), el('small', {}, 'acum. ' + pct(r.cum)), k.pago > 0 ? el('small', {}, 'pago ' + brlCompacto(k.pago)) : null),
+      el('td', {}, dataBR(k.fimef), el('small', {}, k.fimef ? 'faltam ' + duracao(mesesAte(k.fimef)) : 'sem prazo'), el('small', {}, 'desde ' + dataBR(k.ini))),
+      el('td', {}, rel.length ? selos(rel, 3) : el('small', {}, 'sem alerta')));
+      if (!aberto) return [tr];
+      const dl = el('dl', { class: 'detalhes' }, ...[['Objeto', k.objeto], ['Instrumento', `${k.doc} · processo ${k.proc}`], ['Fornecedor', `${nomeProprio(k.forn)} · ${cnpjFmt(k.cnpj)}`],
+        ['Vigência', `${dataBR(k.ini)} a ${dataBR(k.fim)}` + (k.fimef !== k.fim ? ` (com aditivos: até ${dataBR(k.fimef)})` : '')], ['Valor inicial → final', `${brlCompacto(k.vini)} → ${brlCompacto(k.vfin)}`],
+        ['Ainda a receber (estimativa)', brlCompacto(k.restante)], ['Pago nos empenhos do contrato', k.pago > 0 ? `${brlCompacto(k.pago)} desde 2021` : 'nenhum pagamento vinculado'], ['Situação no SIGA', k.sit]].flatMap(([t, v]) => [el('dt', {}, t), el('dd', {}, v)]));
+      const esc = rel.length ? el('ul', { class: 'lista-alertas' }, rel.map((a) => { const cod = a.split(':')[0]; return el('li', {}, selo(a), ' ', dados.alertas[cod].descricao, el('div', { class: 'esclarecer' }, el('b', {}, 'O que esclarecer: '), textoEsclarecer(cod))); })) : null;
+      return [tr, el('tr', { class: 'detalhe-linha' }, el('td', { colspan: 6 }, dl, esc, formRevisao(org, k), el('button', { type: 'button', class: 'botao', onclick: (ev) => { ev.stopPropagation(); irForn(k.cnpj, k.org); } }, 'Ficha do fornecedor e sócios')))];
+    });
+    const tabela = el('div', { class: 'rolagem' }, el('table', {},
+      el('thead', {}, el('tr', {}, ['#', 'Fornecedor, órgão e objeto', 'Tipo', R_.rotBase, 'Até quando', 'Alertas'].map((t, n) => el('th', { class: n === 3 ? 'num' : '' }, t)))),
+      el('tbody', {}, linhas.length ? linhas : [el('tr', {}, el('td', { colspan: 6 }, el('p', { class: 'vazio' }, 'Nenhum contrato da classe A corresponde aos filtros.')))])));
+    const motivoPadrao = el('select', { 'aria-label': 'Motivo' }, Object.entries(MOTIVOS).map(([v, r]) => el('option', { value: v, selected: v === 'apurar' }, r)));
+    const msg = el('p', { class: 'aviso solto', role: 'status', hidden: !estado.msg }, estado.msg || '');
+    const cLista = el('div', { class: 'cartao', id: 'lista-diag' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, `Contratos da classe A (${nInt.format(lista.length)})`),
+      el('p', {}, `Somam ${brlCompacto(soma(lista, (r) => r.v))}. A numeração e o percentual acumulado seguem a classificação geral por valor. Clique numa linha para ver os detalhes, o que esclarecer e marcar para revisão.`)),
+    el('div', { class: 'ferramentas' },
+      el('button', { type: 'button', class: 'botao-primario', onclick: () => ctx.irPara('diagnostico/relatorio') }, 'Gerar relatório de diagnóstico'),
+      el('button', { type: 'button', class: 'botao', onclick: () => baixarArquivo(`diagnostico-contratos-${dados.ref}.csv`, csvDiag(lista), 'text/csv;charset=utf-8') }, 'Exportar CSV'))),
+    filtros, msg,
+    el('div', { class: 'ferramentas' }, el('label', {}, 'Motivo padrão ', motivoPadrao),
+      el('button', { type: 'button', class: 'botao', disabled: !lista.length, onclick: async (ev) => {
+        if (!confirm(`Colocar os ${lista.length} contratos filtrados na lista de revisão?`)) return;
+        ev.target.disabled = true; let n = 0;
+        for (const r of lista) { if (!naLista(r.k.org, r.k)) { await marcar({ id: r.k.org, nome: r.k.orgNome }, r.k, motivoPadrao.value, 'revisar', ''); n++; } }
+        estado.msg = `${n} contrato(s) colocados na lista de revisão.`; render(true);
+      } }, 'Colocar os filtrados na lista de revisão')),
+    tabela,
+    lista.length > vis.length ? el('div', { class: 'rodape-tabela' }, el('button', { type: 'button', class: 'botao', onclick: () => { D.mais += 50; render(true); } }, `Mostrar mais (${nInt.format(lista.length - vis.length)} restantes)`)) : null);
+    c.replaceChildren(kp, controles, el('div', { class: 'duas-colunas' }, cAlertas, cOrgs), cLista);
+  }
+  function csvDiag(lista) {
+    const aspas = (v) => '"' + String(v ?? '').replace(/"/g, '""') + '"';
+    const cab = ['Posição', 'Órgão', 'Fornecedor', 'CNPJ', 'Objeto', 'Tipo de objeto', 'Modalidade', 'Instrumento', 'Valor medido', '% acumulado', 'Valor final', 'Por ano', 'Ainda a receber', 'Pago desde 2021', 'Vigência até', 'Alertas', 'O que esclarecer'];
+    const l = lista.map((r) => [r.rank, r.k.orgNome, r.k.forn, r.k.cnpj, r.k.objeto, r.k.cat, r.k.modal, r.k.doc, r.v, (r.cum * 100).toFixed(1), r.k.vfin, r.k.anual, r.k.restante, r.k.pago, r.k.fimef,
+      relevantes(r.k, true).map((a) => dados.alertas[a.split(':')[0]].titulo).join(' | '), relevantes(r.k, false).map((a) => textoEsclarecer(a.split(':')[0])).join(' | ')]);
+    return '﻿' + [cab, ...l].map((x) => x.map(aspas).join(';')).join('\r\n');
+  }
+
+  async function renderDiagRelatorio(c) {
+    const meu = ++tokenRender;
+    c.classList.add('carregando');
+    let todos;
+    try { todos = await carregarDiag(); } catch (e) { if (e.sessao) return PF.mostrarLogin(); c.classList.remove('carregando'); return c.replaceChildren(el('p', { class: 'vazio' }, 'Não foi possível carregar o diagnóstico.')); }
+    if (meu !== tokenRender) return;
+    c.classList.remove('carregando');
+    const D = estado.dg;
+    const R_ = calcularDiag(todos);
+    const restrito = !!D.sensivel;
+    const hoje = new Date().toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' });
+    const comAlerta = R_.classeA.filter((r) => relevantes(r.k, restrito).length);
+    const porAlerta = resumoAlertas(R_.classeA, restrito);
+    const porOrg = resumoOrgs(R_.classeA, restrito);
+    const casos = comAlerta.filter((r) => relevantes(r.k, restrito).some((a) => !INTERNOS.test(a) || restrito)).slice(0, D.casos);
+    const controles = el('div', { class: 'no-print cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Relatório de diagnóstico (uso interno)'),
+      el('p', {}, 'Usa a medida e o corte escolhidos no diagnóstico. Confira a prévia e use "Imprimir ou salvar em PDF".'))),
+    el('div', { class: 'ferramentas' },
+      el('button', { type: 'button', class: 'botao-primario', onclick: () => window.print() }, 'Imprimir ou salvar em PDF'),
+      el('button', { type: 'button', class: 'botao', onclick: () => ctx.irPara('diagnostico') }, 'Voltar ao diagnóstico'),
+      el('label', {}, 'Contratos detalhados ', el('select', { onchange: (ev) => { D.casos = Number(ev.target.value); render(true); } }, [20, 40, 80, 150].map((n) => el('option', { value: n, selected: n === D.casos }, String(n))))),
+      el('label', { class: 'opcao', title: 'Inclui alertas de sócios em comum, doações, candidaturas e sócio servidor. Deixe desligado para circulação ampla.' }, el('input', { type: 'checkbox', checked: restrito, onchange: (ev) => { D.sensivel = ev.target.checked; render(true); } }), ' Incluir alertas sobre sócios e vínculos políticos (versão restrita)')));
+    const cab = (cols) => el('thead', {}, el('tr', {}, cols.map((t, n) => el('th', { class: n ? 'num' : '' }, t))));
+    const tAlertas = el('table', { class: 'tabela-resumo' }, cab(['Alerta', 'Contratos', 'Valor', 'Órgãos']),
+      el('tbody', {}, porAlerta.map((x) => el('tr', {}, el('td', {}, `${dados.alertas[x.cod].titulo} (${NIVEL[x.n].toLowerCase()})`, el('small', {}, textoEsclarecer(x.cod))), el('td', { class: 'num' }, nInt.format(x.contratos)), el('td', { class: 'num' }, brlCompacto(x.valor)), el('td', { class: 'num' }, nInt.format(x.orgs.size))))));
+    const tOrgs = el('table', { class: 'tabela-resumo' }, cab(['Órgão', 'Contratos na classe A', 'Valor', 'Com alerta']),
+      el('tbody', {}, porOrg.map((x) => el('tr', {}, el('td', {}, x.nome), el('td', { class: 'num' }, nInt.format(x.contratos)), el('td', { class: 'num' }, brlCompacto(x.valor)), el('td', { class: 'num' }, `${nInt.format(x.comAlerta)} (${pct(x.valorAlerta / (x.valor || 1))})`)))));
+    const tCasos = el('table', {}, el('thead', {}, el('tr', {}, ['#', 'Contrato', 'Valor', 'Vigência', 'Alertas (o que esclarecer: ver tabela de alertas)'].map((t, n) => el('th', { class: n === 2 ? 'num' : '' }, t)))),
+      el('tbody', {}, casos.map((r) => {
+        const k = r.k, rel = relevantes(k, restrito);
+        return el('tr', {}, el('td', {}, String(r.rank)),
+          el('td', { class: 'objeto' }, el('strong', {}, nomeProprio(k.forn)), el('small', {}, `${cnpjFmt(k.cnpj)} · ${k.orgNome} · ${k.doc}`), k.objeto, el('small', {}, `${k.cat} · ${k.modal} · ${ESS()[k.ess] || ''}`)),
+          el('td', { class: 'num' }, brlCompacto(r.v), el('small', {}, 'acum. ' + pct(r.cum)), el('small', {}, 'a receber ' + brlCompacto(k.restante)), k.pago > 0 ? el('small', {}, 'pago ' + brlCompacto(k.pago)) : null),
+          el('td', {}, `${dataBR(k.ini)} a ${dataBR(k.fimef)}`, el('small', {}, k.fimef ? 'faltam ' + duracao(mesesAte(k.fimef)) : 'sem prazo')),
+          el('td', { class: 'objeto' }, ...rel.map((a) => el('div', { class: 'alerta-rel' }, `${dados.alertas[a.split(':')[0]].titulo} (${NIVEL[a.split(':')[1]].toLowerCase()})`))));
+      })));
+    const relatorio = el('article', { class: 'relatorio' },
+      el('header', {}, el('p', { class: 'rel-sup' }, 'Painel Fiscal · Espírito Santo · Contratações'), el('h1', {}, 'Diagnóstico dos contratos de maior valor'),
+        el('p', { class: 'rel-data' }, `Uso interno. Emitido em ${hoje}. Posição dos dados: ${dataBR(dados.ref)}. Medida: ${R_.rotBase.toLowerCase()}; corte de ${D.corte}%${D.pub ? '' : '; sem bancos, entes públicos e prefeituras'}.`)),
+      el('section', {}, el('h3', {}, 'Síntese'),
+        el('p', {}, `${nInt.format(R_.kA)} dos ${nInt.format(R_.universo.length)} contratos vigentes (${pct(R_.kA / (R_.universo.length || 1))}) concentram ${D.corte}% de ${brlCompacto(R_.total)}. Dos ${nInt.format(R_.kA)}, ${nInt.format(comAlerta.length)} (${pct(comAlerta.length / (R_.kA || 1))}) têm ao menos um alerta, somando ${brlCompacto(soma(comAlerta, (r) => r.v))}; ${nInt.format(comAlerta.filter((r) => relevantes(r.k, restrito).some((a) => a.endsWith(':a'))).length)} têm alerta de nível alto.`),
+        el('h3', {}, 'Alertas na classe A'), tAlertas, el('h3', {}, 'Classe A por órgão'), tOrgs),
+      el('section', {}, el('h3', {}, `Contratos para esclarecer (${nInt.format(casos.length)} de maior valor com alerta)`), tCasos),
+      el('section', { class: 'rel-notas' }, el('h3', {}, 'Notas'),
+        el('p', {}, `Fontes: ${dados.fonte.contratos}; ${dados.fonte.cadastro}; execução da despesa (SIGEFES), dívida ativa (PGFN) e sanções (CEIS e CNEP).`),
+        el('p', {}, 'Os alertas são regras objetivas de triagem e indicam onde olhar primeiro; não provam irregularidade. "O que esclarecer" é orientação interna de conferência. O valor dos contratos de obras e dos registros de preços é o teto contratual, não o executado.'),
+        el('p', {}, restrito ? 'Versão restrita: inclui alertas sobre sócios, doações e candidaturas; não deve circular além de quem precisa conferir.' : 'Versão de circulação ampla: sem alertas sobre sócios em comum, doações, candidaturas e sócio servidor.')));
+    c.replaceChildren(controles, relatorio);
+  }
+
   // ---------- montagem ----------
   function render(manterFoco) {
     if (!raiz || !$('#conteudo')) return;
@@ -841,7 +1117,7 @@
     const c = $('#conteudo');
     ++tokenRender;
     c.classList.remove('carregando');
-    const pronto = estado.tela === 'revisao' ? renderRevisao(c) : estado.tela === 'relatorio' ? renderRelatorio(c) : estado.forn ? renderForn(c) : estado.org ? renderOrg(c) : renderGoverno(c);
+    const pronto = estado.tela === 'diagnostico' ? renderDiagnostico(c) : estado.tela === 'diag-relatorio' ? renderDiagRelatorio(c) : estado.tela === 'revisao' ? renderRevisao(c) : estado.tela === 'relatorio' ? renderRelatorio(c) : estado.forn ? renderForn(c) : estado.org ? renderOrg(c) : renderGoverno(c);
     if (rolagem != null) Promise.resolve(pronto).then(() => {
       window.scrollTo(0, rolagem);
       if (ativo) { const campo = $('#lista-contratos .busca input'); if (campo) { campo.focus(); campo.setSelectionRange(campo.value.length, campo.value.length); } }
@@ -855,7 +1131,7 @@
           <h2 class="modulo-titulo">Contratações</h2>
           <p class="sub">Contratos do Poder Executivo por órgão, fornecedores, quadro societário e alertas de triagem para revisão.</p>
         </div>
-        <span class="topo-acoes"><button type="button" id="ir-revisao" class="botao">⚑ Lista de revisão (0)</button><span id="mesref" class="mesref"></span></span>
+        <span class="topo-acoes"><button type="button" id="ir-diag" class="botao-primario">Diagnóstico dos contratos</button><button type="button" id="ir-revisao" class="botao">⚑ Lista de revisão (0)</button><span id="mesref" class="mesref"></span></span>
       </div>
       <nav id="trilha" class="trilha" aria-label="Navegação"></nav>
       <div id="conteudo"></div>
@@ -885,9 +1161,10 @@
     }
     preencherMetodo();
     $('#ir-revisao').addEventListener('click', () => ctx.irPara('revisao'));
+    $('#ir-diag').addEventListener('click', () => ctx.irPara('diagnostico'));
     atualizarContador();
     return true;
   }
-  function desmontar() { revisao = lerRevisao(); dados = null; cacheOrg.clear(); cacheForn.clear(); listaBusca = null; todosForn = null; }
+  function desmontar() { revisao = lerRevisao(); diag = null; dados = null; cacheOrg.clear(); cacheForn.clear(); listaBusca = null; todosForn = null; }
   PF.registrar({ id: 'contratacoes', titulo: 'Contratações', montar, aoNavegar, desmontar });
 })();

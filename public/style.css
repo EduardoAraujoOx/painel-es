@@ -402,3 +402,6 @@ td input[type="text"] { min-width: 160px; }
 
 .somente-impressao { display: none; }
 .rel-cabecalho h1 { font-size: 20px; margin: 4px 0; }
+.esclarecer { margin-top: 3px; padding: 6px 10px; border-left: 3px solid var(--serie-1); background: var(--pagina); font-size: 12px; }
+.alerta-rel { margin: 0 0 4px; font-size: 11px; }
+@media print { .esclarecer { background: none; border-left-color: #000; } }
