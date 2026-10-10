@@ -310,3 +310,39 @@ tbody tr.clicavel:hover { background: var(--grade); }
 .oc ul.pendurado > li::before, .oc ul.pendurado > li::after { display: none; }
 .oc ul.pendurado > li + li::before { display: block; content: ''; position: absolute; top: -12px; left: 50%; right: auto; width: 0; height: 12px; border-top: 0; border-left: 1px solid var(--eixo); border-radius: 0; }
 .oc ul.pendurado > li:first-child { padding-top: 0; }
+
+/* ---------- módulo Contratações ---------- */
+.selos { display: flex; flex-wrap: wrap; gap: 4px; }
+.selo { display: inline-flex; gap: 4px; align-items: baseline; font-size: 11px; line-height: 1.3; padding: 1px 7px; border-radius: 999px; border: 1px solid var(--eixo); color: var(--tinta); background: var(--superficie); }
+.selo b { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: .03em; }
+.selo.n-a { border-color: var(--erro); }
+.selo.n-a b { color: var(--erro); }
+.selo.n-m { border-color: var(--serie-2); }
+.selo.n-m b { color: var(--serie-2); }
+.selo.n-i { color: var(--tinta-2); border-style: dashed; }
+.selo.n-i b { color: var(--mudo); }
+.selo.mais { color: var(--tinta-2); border-style: dotted; }
+.grupo-abas { display: flex; flex-wrap: wrap; gap: 8px; }
+.busca-forn { position: relative; flex: 1 1 320px; max-width: 520px; }
+.busca-forn input { width: 100%; }
+.resultados { position: absolute; z-index: 5; left: 0; right: 0; top: calc(100% + 4px); background: var(--superficie); border: 1px solid var(--eixo); border-radius: 8px; box-shadow: 0 6px 20px var(--borda); max-height: 340px; overflow: auto; }
+.resultados button { display: block; width: 100%; text-align: left; background: none; border: 0; padding: 8px 12px; cursor: pointer; }
+.resultados button:hover, .resultados button:focus-visible { background: var(--grade); }
+.resultados small { display: block; color: var(--mudo); font-size: 12px; }
+.linha-com-selos { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2px; padding-bottom: 4px; }
+.linha-com-selos .selos { padding-left: 6px; }
+.linha-barra .nome small { display: block; color: var(--mudo); font-size: 11px; }
+td.objeto { max-width: 520px; }
+td.objeto small { overflow-wrap: anywhere; }
+tr.aberta { background: var(--grade); }
+tr.detalhe-linha td { background: var(--pagina); padding: 12px 16px 16px; }
+.detalhes.grade2 { display: grid; grid-template-columns: max-content 1fr; gap: 4px 16px; }
+.lista-alertas { list-style: none; padding: 0; margin: 10px 0; display: grid; gap: 8px; }
+.lista-alertas li { font-size: 13px; line-height: 1.45; }
+.lista-metodo { padding-left: 18px; font-size: 13px; line-height: 1.5; }
+.aviso-inline { color: var(--tinta-2); }
+.busca-forn + .vazio { margin: 0; }
+@media (max-width: 640px) {
+  .detalhes.grade2 { grid-template-columns: 1fr; }
+  td.objeto { max-width: 260px; }
+}

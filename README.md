@@ -85,6 +85,32 @@ Os dados nominais de todos os órgãos, inclusive os de segurança pública e do
 
 Soma das rubricas de pagamento do mês, sem auxílios e indenizações, 13º, férias e resíduos de acerto financeiro (regra em `pipeline/cargos/regras.py`, função `remuneracao`). O abate do teto constitucional aparece à parte, no detalhe da pessoa.
 
+## Módulo `contratacoes`
+
+Raio-x dos contratos do Poder Executivo, por órgão: quanto cada um tem comprometido, com quem, em que objeto, por qual modalidade, e com que sinais de alerta. Serve para quem assume um governo e precisa saber o que herda e o que revisar primeiro. A tela vai do governo ao órgão e deste à ficha do fornecedor, com o quadro societário.
+
+### Fontes
+
+Contratos, alterações contratuais e empenhos do Portal da Transparência do ES (dados abertos, sistema SIGA, arquivos anuais desde 2016), e o cadastro de CNPJ da Receita Federal (dados abertos: empresas, estabelecimentos e sócios), lido de um espelho público da publicação mensal. O CPF dos sócios já vem mascarado pela Receita. O nome dos sócios é cruzado com a folha do módulo `cargos` e `organograma` (nomes de servidores ativos); como não há CPF aberto na folha, o resultado é só um indício de homonímia a conferir.
+
+### Definições
+
+Contrato vigente é o instrumento do tipo contrato, carta-contrato ou termo de adesão cuja data final (com aditivos de prazo) não passou e cuja situação não é de encerramento. Valor final é o valor total do instrumento (em registro de preços, costuma ser o máximo estimado). Compromisso anual é o valor final dividido pela duração em meses (mínimo 12) vezes 12. Saldo a executar é o valor final menos o empenhado. **Os empenhos do SIGA não cobrem toda a execução** (obras do DER, por exemplo, quase não aparecem): a tela avisa quando a cobertura é baixa.
+
+### Alertas (`pipeline/contratos/regras.py`)
+
+São regras objetivas de triagem, listadas na própria tela (rodapé "Fonte e método"): empenho após o fim da vigência, valor acima do inicial (25% e 50%), prorrogações sucessivas, duração acima de 5 anos, contratação direta de valor elevado, empenhado acima do contratado, empresa recém-aberta, situação cadastral irregular, capital social baixo, porte (ME/EPP) incompatível com o valor, sócio em comum com outro fornecedor, sócio com nome de servidor, endereço compartilhado, possível fracionamento de compras diretas, entre outros. **Indicam onde olhar primeiro; não provam irregularidade.** Os limites ficam em constantes no topo de `regras.py` (o limite de dispensa por valor deve ser conferido contra o decreto vigente).
+
+### Como atualizar
+
+```bash
+python3 -I pipeline/contratos/baixar.py                 # contratos, alterações e empenhos (.cache/contratos)
+python3 -I pipeline/contratos/receita.py 2026-09-14     # cadastro da Receita para os CNPJs dos contratos (data da publicação mensal)
+python3 -I pipeline/contratos/montar.py                 # gera data/contratacoes/ (index, org/, forn/, busca)
+```
+
+Limites conhecidos: a classificação do objeto é por palavras-chave; não há comparação de preços entre contratações; pagamentos efetivos (liquidação) ainda não estão cruzados; empresas públicas e fundos fora do SIGA não aparecem.
+
 ## Acesso e implantação (Vercel)
 
 Nada em `data/` é público: o arquivo só é entregue por `api/dados.js` a quem tem sessão válida. A página pública contém apenas o formulário de senha.

@@ -11,7 +11,7 @@
     const f = bruto / exp;
     return (f <= 1 ? 1 : f <= 2 ? 2 : f <= 5 ? 5 : 10) * exp;
   }
-  function moldura(W, H, meses, maxVal, fmtTick) {
+  function moldura(W, H, meses, maxVal, fmtTick, rotulo = rotuloMes) {
     const ml = 46, mr = 16, mt = 14, mb = 26;
     const iw = W - ml - mr, ih = H - mt - mb;
     const passo = passoNice(maxVal, 4);
@@ -29,7 +29,7 @@
     meses.forEach((m, i) => {
       if ((n - 1 - i) % cada !== 0) return;
       const t = svg('text', { x: ml + (n === 1 ? iw / 2 : (i * iw) / (n - 1)), y: H - 6, 'text-anchor': 'middle' });
-      t.textContent = rotuloMes(m);
+      t.textContent = rotulo(m);
       raiz.append(t);
     });
     return { raiz, ml, mr, mt, mb, iw, ih, y, topo, n };
@@ -105,14 +105,14 @@
     observar(caixa, desenhar);
   }
 
-  function graficoBarras(container, { meses, series, fmt }) {
+  function graficoBarras(container, { meses, series, fmt, rotulo = rotuloMes, rotuloLongo = (m) => rotuloMes(m, true), eixo = (v) => nInt.format(v) }) {
     const caixa = el('div', { class: 'grafico', role: 'img',
       'aria-label': 'Gráfico de barras: ' + series.map((s) => s.nome).join(', ') });
     container.append(...[legenda(series), caixa].filter(Boolean));
     function desenhar(W) {
       const H = 200;
       const maxVal = Math.max(1, ...series.flatMap((s) => s.vals));
-      const m = moldura(W, H, meses, maxVal, (v) => nInt.format(v));
+      const m = moldura(W, H, meses, maxVal, eixo, rotulo);
       const banda = m.iw / m.n;
       const larg = Math.max(2, Math.min(24, (banda - 6) / series.length - 2));
       const grupoW = series.length * larg + (series.length - 1) * 2;
@@ -134,8 +134,8 @@
       });
       meses.forEach((mes, i) => {
         const hit = svg('rect', { x: m.ml + i * banda, y: m.mt, width: banda, height: m.ih, fill: 'transparent', tabindex: '0',
-          'aria-label': `${rotuloMes(mes, true)}: ` + series.map((s) => `${s.nome} ${fmt(s.vals[i])}`).join(', ') });
-        const nos = () => [el('div', { class: 'tit' }, rotuloMes(mes, true)),
+          'aria-label': `${rotuloLongo(mes)}: ` + series.map((s) => `${s.nome} ${fmt(s.vals[i])}`).join(', ') });
+        const nos = () => [el('div', { class: 'tit' }, rotuloLongo(mes)),
           ...series.map((s) => dicaLinha(s.cor, fmt(s.vals[i]), s.nome))];
         const realce = (on) => grupos[i].setAttribute('style', on ? 'filter:brightness(1.18)' : '');
         hit.addEventListener('pointermove', (ev) => { realce(true); mostrarDica(nos(), ev.clientX, ev.clientY); });
