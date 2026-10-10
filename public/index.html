@@ -21,19 +21,18 @@
   </section>
 
   <div id="app" hidden>
-    <header class="topo">
-      <div>
-        <h1>Painel Fiscal · Espírito Santo</h1>
-        <p class="sub">Diagnóstico fiscal e de pessoal do Poder Executivo estadual</p>
-      </div>
-      <div class="acoes">
-        <button id="tema" class="botao" type="button" aria-label="Alternar tema claro e escuro">Tema</button>
-        <button id="sair" class="botao" type="button">Sair</button>
-      </div>
-    </header>
-    <p id="aviso-aberto" class="aviso-aberto" hidden role="note">Ambiente de teste, aberto a quem tiver o endereço: os dados são de fontes públicas, mas incluem nomes e valores de pessoas. Não divulgue o link.</p>
-    <nav id="abas" class="abas-mod" aria-label="Módulos"></nav>
-    <div id="modulo"></div>
+    <p id="aviso-aberto" class="faixa-aberto" hidden role="note">Ambiente de teste, aberto a quem tiver o endereço. Os dados vêm de fontes públicas, mas incluem nomes e valores de pessoas: não divulgue o link.</p>
+    <div class="layout">
+      <aside class="lateral">
+        <div class="marca"><h1>Painel Fiscal</h1><p>Espírito Santo · Poder Executivo</p></div>
+        <nav id="abas" class="menu" aria-label="Seções do painel"></nav>
+        <div class="lateral-rodape">
+          <button id="tema" class="botao" type="button" aria-label="Alternar tema claro e escuro">Tema</button>
+          <button id="sair" class="botao" type="button">Sair</button>
+        </div>
+      </aside>
+      <main id="modulo"></main>
+    </div>
   </div>
 
   <div id="dica" class="dica" role="tooltip" hidden></div>

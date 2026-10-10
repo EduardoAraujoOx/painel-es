@@ -74,6 +74,7 @@
   }
   function renderTrilha() {
     const t = $('#trilha');
+    t.hidden = !(estado.forn || estado.org || estado.tela);
     const itens = [el('button', { type: 'button', onclick: () => ctx.irPara('') }, 'Governo do ES')];
     const sep = () => el('span', { class: 'sep' }, '›');
     const orgId = estado.forn ? estado.origem : estado.org;
@@ -82,7 +83,7 @@
     if (estado.tela === 'diag-relatorio') { t.replaceChildren(itens[0], sep(), el('button', { type: 'button', onclick: () => ctx.irPara('diagnostico') }, 'Diagnóstico dos contratos'), sep(), el('span', { class: 'atual' }, 'Relatório')); return; }
     if (estado.tela === 'revisao') { t.replaceChildren(itens[0], sep(), el('span', { class: 'atual' }, 'Lista de revisão')); return; }
     if (estado.tela === 'relatorio') { t.replaceChildren(itens[0], sep(), el('button', { type: 'button', onclick: () => ctx.irPara('revisao') }, 'Lista de revisão'), sep(), el('span', { class: 'atual' }, 'Relatório')); return; }
-    if (!estado.forn && !estado.org) { t.replaceChildren(el('span', { class: 'atual' }, 'Governo do ES')); return; }
+    if (!estado.forn && !estado.org) { t.replaceChildren(); return; }
     if (org) {
       itens.push(sep());
       itens.push(estado.forn ? el('button', { type: 'button', onclick: () => irOrg(org.id) }, org.nome) : el('span', { class: 'atual' }, org.nome));
@@ -130,11 +131,10 @@
     const tot = (k) => soma(o, (x) => x[k]);
     const kp = el('div', { class: 'kpis' },
       kpi('Contratos vigentes', nInt.format(tot('vigentes')), `em ${o.filter((x) => x.vigentes).length} órgãos · posição de ${dataBR(dados.ref)}`),
-      kpi('Compromisso anual', brlCompacto(tot('anualVigente')), 'valor dos contratos vigentes distribuído por ano de vigência'),
-      kpi('Saldo a executar', brlCompacto(tot('saldoVigente')), 'valor contratado ainda não empenhado no SIGA (que registra só parte da execução)'),
-      kpi('Pago aos fornecedores', brlCompacto(tot('pagoAnt') + tot('pagoAtu')), `${aAnt}: ${brlCompacto(tot('pagoAnt'))} · ${aAtu} (até a data): ${brlCompacto(tot('pagoAtu'))} · dinheiro que saiu do caixa (SIGEFES)`),
-      kpi('Empenhado nos contratos', brlCompacto(tot('empAnt') + tot('empAtu')), `${aAnt}: ${brlCompacto(tot('empAnt'))} · ${aAtu} (até a data): ${brlCompacto(tot('empAtu'))} · só o que o SIGA registra`),
-      kpi('Alertas de nível alto', nInt.format(tot('contratosAlta')), 'contratos com ao menos um sinal alto'));
+      kpi('Compromisso anual', brlCompacto(tot('anualVigente')), 'valor dos contratos vigentes por ano de vigência'),
+      kpi('Pago aos fornecedores', brlCompacto(tot('pagoAnt') + tot('pagoAtu')), `${aAnt} e ${aAtu} (até a data), conforme o SIGEFES`),
+      el('button', { type: 'button', class: 'kpi kpi-link', onclick: () => ctx.irPara('diagnostico') }, el('div', { class: 'rotulo' }, 'Classe A: 80% do valor'),
+        el('div', { class: 'valor' }, `${nInt.format(dados.classeA.contratos)} contratos`), el('div', { class: 'nota' }, `${tot('contratosAlta')} contratos com alerta alto no Estado · abrir o diagnóstico →`)));
 
     const medidas = { anual: ['Compromisso anual dos contratos vigentes', (x) => x.anualVigente], pago: [`Pago em ${aAnt} e ${aAtu}`, (x) => x.pagoAnt + x.pagoAtu], emp: [`Empenhado em ${aAnt} e ${aAtu}`, (x) => x.empAnt + x.empAtu],
       alertas: ['Contratos com alerta alto', (x) => x.contratosAlta] };
@@ -267,12 +267,10 @@
     const kp = el('div', { class: 'kpis' },
       kpi('Contratos vigentes', nInt.format(org.vigentes), `${brlCompacto(org.valorVigente)} em valor total`),
       kpi('Compromisso anual', brlCompacto(org.anualVigente), `saldo a executar: ${brlCompacto(org.saldoVigente)}`),
-      kpi('Pago aos fornecedores', brlCompacto(org.pagoAnt + org.pagoAtu), `${aAnt}: ${brlCompacto(org.pagoAnt)} · ${aAtu}: ${brlCompacto(org.pagoAtu)} · caixa (SIGEFES)`),
-      kpi('Empenhado nos contratos', brlCompacto(org.empAnt + org.empAtu), `${aAnt}: ${brlCompacto(org.empAnt)} · ${aAtu}: ${brlCompacto(org.empAtu)} · só o que o SIGA registra`),
-      kpi('Classe A do Estado', `${nInt.format(org.classeA)} contrato(s)`, `${brlCompacto(org.classeAValor)} por ano · entre os que somam 80% do valor do Estado`),
-      kpi('Contratação direta', pct(org.diretaPct), `dispensa e inexigibilidade, do valor contratado em ${aAnt}–${aAtu}`),
-      kpi('Maior fornecedor', pct(org.maiorFornAnual), 'participação no compromisso anual vigente'),
-      kpi('Alertas', `${nInt.format(org.contratosAlta)} altos`, `${nInt.format(org.contratosMedia)} contratos com sinal médio · ${nInt.format(org.fornecedoresSinalizados)} fornecedores sinalizados`));
+      kpi('Pago aos fornecedores', brlCompacto(org.pagoAnt + org.pagoAtu), `${aAnt}: ${brlCompacto(org.pagoAnt)} · ${aAtu}: ${brlCompacto(org.pagoAtu)}`),
+      kpi('Classe A do Estado', `${nInt.format(org.classeA)} contrato(s)`, `${brlCompacto(org.classeAValor)} por ano`),
+      kpi('Alertas', `${nInt.format(org.contratosAlta)} altos`, `${nInt.format(org.contratosMedia)} com sinal médio · ${nInt.format(org.fornecedoresSinalizados)} fornecedores sinalizados`));
+    const perfil = el('p', { class: 'perfil-linha' }, `Contratação direta: ${pct(org.diretaPct)} do valor contratado em ${aAnt}–${aAtu} · Maior fornecedor: ${pct(org.maiorFornAnual)} do compromisso anual · Empenhado no SIGA: ${brlCompacto(org.empAnt + org.empAtu)}`);
     const aviso = cob != null && cob < 0.35 ? el('p', { class: 'aviso solto' },
       `Atenção: os empenhos registrados no SIGA cobrem só ${pct(cob)} do compromisso anual deste órgão. Use a coluna "pago" (SIGEFES), que traz o dinheiro que saiu do caixa para os fornecedores, e não o empenho, para medir a execução.`) : null;
 
@@ -317,7 +315,7 @@
     graficoBarras(cSerie, { meses: det.serie.anos.map(String), rotulo: (m) => m, rotuloLongo: (m) => m, eixo: brlCompacto, fmt: brlCompacto,
       series: [{ nome: 'Contratado', cor: 'var(--serie-1)', barra: true, vals: det.serie.contratado }, { nome: 'Empenhado', cor: 'var(--serie-2)', barra: true, vals: det.serie.empenhado }] });
 
-    c.replaceChildren(...[kp, aviso, el('div', { class: 'duas-colunas' }, cCat, cMod), cEss, cForn, cartaoPareto(paretoItensOrg(det.fornecedores), 'Regra de Pareto: poucos fornecedores, quase todo o valor', org.id), cSerie, cartaoContratos(todos, org)].filter(Boolean));
+    c.replaceChildren(...[kp, perfil, aviso, el('div', { class: 'duas-colunas' }, cCat, cMod), cEss, cForn, cartaoPareto(paretoItensOrg(det.fornecedores), 'Regra de Pareto: poucos fornecedores, quase todo o valor', org.id), cSerie, cartaoContratos(todos, org)].filter(Boolean));
   }
 
   function cartaoContratos(todos, org) {
@@ -638,10 +636,7 @@
   }
   let revisao = lerRevisao();
   const nItens = () => Object.keys(revisao.itens).length;
-  function atualizarContador() {
-    const b = raiz && raiz.querySelector('#ir-revisao');
-    if (b) b.textContent = `⚑ Lista de revisão (${nItens()})`;
-  }
+  function atualizarContador() { PF.selo('revisao', nItens() || ''); }
   function salvarRevisao() { PF.guardar(CHAVE_REV, JSON.stringify(revisao)); atualizarContador(); }
   const chaveRev = (orgId, k) => `${orgId}|${k.proc}|${k.doc}`;
   const naLista = (orgId, k) => revisao.itens[chaveRev(orgId, k)];
@@ -1131,7 +1126,7 @@
           <h2 class="modulo-titulo">Contratações</h2>
           <p class="sub">Contratos do Poder Executivo por órgão, fornecedores, quadro societário e alertas de triagem para revisão.</p>
         </div>
-        <span class="topo-acoes"><button type="button" id="ir-diag" class="botao-primario">Diagnóstico dos contratos</button><button type="button" id="ir-revisao" class="botao">⚑ Lista de revisão (0)</button><span id="mesref" class="mesref"></span></span>
+        <span id="mesref" class="mesref"></span>
       </div>
       <nav id="trilha" class="trilha" aria-label="Navegação"></nav>
       <div id="conteudo"></div>
@@ -1160,8 +1155,6 @@
       return false;
     }
     preencherMetodo();
-    $('#ir-revisao').addEventListener('click', () => ctx.irPara('revisao'));
-    $('#ir-diag').addEventListener('click', () => ctx.irPara('diagnostico'));
     atualizarContador();
     return true;
   }

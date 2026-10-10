@@ -180,6 +180,10 @@ Para trocar a senha, altere `PAINEL_SENHA` no painel do Vercel e faça um novo d
 
 Teste local: `PAINEL_SENHA=x PAINEL_SEGREDO=<32+ caracteres> node dev-server.js 3000`.
 
+## Navegação
+
+O menu lateral agrupa as seções por tema (Pessoal, Contratos, Transição) e se ajusta ao celular, onde vira uma faixa de atalhos. Os itens ficam na lista `NAV` de `public/core.js`: cada item aponta para um módulo e, se quiser, para uma tela dele (`sub`), com `casa(resto)` para marcar quando está ativo e `selo` para um contador. Um módulo registrado e não listado em `NAV` aparece no grupo "Outros".
+
 ## Como acrescentar um módulo
 
 1. **Dados:** crie `pipeline/<id>/` com os scripts que gerem arquivos JSON em `data/<id>/` (precisa existir ao menos `index.json`; arquivos adicionais em subpasta de um nível, por exemplo `data/<id>/item/X.json`).

@@ -173,10 +173,35 @@
     const vazio = !resto && (location.hash === '' || location.hash === '#' || location.hash === `#/${mod.id}`);
     if (location.hash === alvo || vazio) mod.aoNavegar(resto); else location.hash = alvo;
   }
-  function marcarAbas() {
-    for (const a of $('#abas').children) {
-      if (a.dataset.mod === (PF.atual && PF.atual.id)) a.setAttribute('aria-current', 'page');
-      else a.removeAttribute('aria-current');
+  // Menu lateral: seções agrupadas por tema. Cada item aponta para um módulo e, se houver, para uma tela dele
+  // (`sub`); `casa(resto)` diz quando o item está ativo. Para acrescentar um tópico, inclua um item aqui.
+  const NAV = [
+    { grupo: 'Pessoal', itens: [
+      { mod: 'cargos', rotulo: 'Cargos em comissão' },
+      { mod: 'organograma', rotulo: 'Organograma' }] },
+    { grupo: 'Contratos', itens: [
+      { mod: 'contratacoes', rotulo: 'Visão do governo', casa: (r) => !/^(diagnostico|revisao|relatorio)/.test(r) },
+      { mod: 'contratacoes', sub: 'diagnostico', rotulo: 'Diagnóstico (classe A)', casa: (r) => /^diagnostico/.test(r) },
+      { mod: 'contratacoes', sub: 'revisao', rotulo: 'Lista de revisão', selo: 'revisao', casa: (r) => /^(revisao|relatorio)/.test(r) }] },
+    { grupo: 'Transição', itens: [
+      { mod: 'lacunas', rotulo: 'Informações a solicitar' }] },
+  ];
+  PF.NAV = NAV;
+  PF.selo = (chave, texto) => document.querySelectorAll(`[data-selo="${chave}"]`).forEach((e) => { e.textContent = texto ? String(texto) : ''; });
+  function montarMenu() {
+    const usados = new Set(NAV.flatMap((g) => g.itens.map((i) => i.mod)));
+    const grupos = [...NAV, ...(PF.modulos.some((m) => !usados.has(m.id)) ? [{ grupo: 'Outros', itens: PF.modulos.filter((m) => !usados.has(m.id)).map((m) => ({ mod: m.id, rotulo: m.titulo })) }] : [])];
+    $('#abas').replaceChildren(...grupos.map((g) => el('div', { class: 'menu-grupo' }, el('p', { class: 'menu-rotulo' }, g.grupo),
+      g.itens.filter((i) => PF.modulos.some((m) => m.id === i.mod)).map((i) => el('a', { href: `#/${i.mod}${i.sub ? '/' + i.sub : ''}`, 'data-mod': i.mod, 'data-sub': i.sub || '' },
+        el('span', {}, i.rotulo), i.selo ? el('span', { class: 'selo-menu', 'data-selo': i.selo }) : null)))));
+  }
+  function marcarAbas(resto) {
+    const r = decodeURIComponent(resto || '');
+    const itens = NAV.flatMap((g) => g.itens);
+    for (const a of $('#abas').querySelectorAll('a')) {
+      const i = itens.find((x) => x.mod === a.dataset.mod && (x.sub || '') === a.dataset.sub);
+      const ativo = a.dataset.mod === (PF.atual && PF.atual.id) && (i && i.casa ? i.casa(r) : true);
+      if (ativo) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
     }
   }
   async function rotear() {
@@ -186,7 +211,6 @@
       PF.limparObservadores();
       esconderDica();
       PF.atual = mod;
-      marcarAbas();
       const cont = $('#modulo');
       cont.replaceChildren(el('p', { class: 'vazio', role: 'status' }, 'Carregando…'));
       const ok = await mod.montar({ container: cont, api: (arq) => PF.api(mod.id, arq), irPara: (r) => irPara(mod, r) });
@@ -194,6 +218,7 @@
       if (ok === false) { PF.atual = null; return; }
     }
     mod.aoNavegar(resto);
+    marcarAbas(resto);
   }
   window.addEventListener('hashchange', rotear);
 
@@ -207,7 +232,7 @@
     $('#app').hidden = false;
     $('#sair').hidden = aberto;                       // sem senha não há o que encerrar
     $('#aviso-aberto').hidden = !aberto;
-    $('#abas').replaceChildren(...PF.modulos.map((m) => el('a', { href: `#/${m.id}`, 'data-mod': m.id }, m.titulo)));
+    montarMenu();
     rotear();
   }
   document.addEventListener('DOMContentLoaded', iniciar);
