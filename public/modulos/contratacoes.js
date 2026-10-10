@@ -17,7 +17,7 @@
   const estado = {
     medida: 'anual', vista: 'mapa', ordemOrgs: { col: 'anualVigente', dir: -1 },
     org: null, forn: null, origem: null, verTodosForn: false, verMaisPrioridades: false,
-    f: { situ: 'vigentes', cat: '', modal: '', alerta: '', ess: '', q: '' }, rev: { status: '', motivo: '', org: '', decididos: false }, msg: '', tela: '', par: { base: 'anual', ess: new Set(), corte: 80, mais: 10, pub: false }, ordem: { col: 'anual', dir: -1 }, limite: 50,
+    f: { situ: 'vigentes', cat: '', modal: '', alerta: '', ess: '', q: '' }, rev: { status: '', motivo: '', org: '', decididos: false, sensivel: false }, msg: '', tela: '', par: { base: 'anual', ess: new Set(), corte: 80, mais: 10, pub: false }, ordem: { col: 'anual', dir: -1 }, limite: 50,
     aberto: new Set(),
   };
   const PESO = { a: 3, m: 1, i: 0 };
@@ -509,19 +509,21 @@
     return el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Situação fiscal e sanções'),
       el('p', {}, `Dívida ativa da União (PGFN) por CNPJ-raiz e cadastros de sanções (CEIS e CNEP, da CGU). Conferir o alcance de cada sanção e se a dívida está garantida ou parcelada.`))), ...blocos);
   }
+  const tagConf = (c, base) => el('span', { class: 'tag-conf c-' + (c || '').normalize('NFD').replace(/\p{Diacritic}/gu, '').replace(/\s/g, ''), title: base || '' }, c === 'confirmado' ? 'Confirmado' : c === 'provável' ? 'Provável' : 'A conferir');
+  const resultadoTxt = (r) => (!r || r === '#NULO' ? '' : /^eleito/i.test(r) ? 'eleito' : /suplente/i.test(r) ? 'suplente' : /n[aã]o eleito/i.test(r) ? 'não eleito' : r.toLowerCase());
   function cartaoPolitico(ex, f) {
     if (!ex || !((ex.doacoes && ex.doacoes.length) || (ex.candidatos && ex.candidatos.length) || (ex.campanhas && ex.campanhas.length) || (ex.doacoesPj && ex.doacoesPj.length))) return null;
     const blocos = [];
     if (ex.doacoes && ex.doacoes.length) {
       const tot = soma(ex.doacoes, (x) => x.valor);
       blocos.push(el('h3', {}, `Doações de sócios: ${PF.nBRL.format(tot)} em ${nInt.format(soma(ex.doacoes, (x) => x.n))} doações`),
-        el('div', { class: 'rolagem' }, el('table', {}, el('thead', {}, el('tr', {}, ['Sócio', 'Ano', 'Destino', 'Cargo', 'Valor'].map((t, n) => el('th', { class: n === 4 ? 'num' : '' }, t)))),
+        el('div', { class: 'rolagem' }, el('table', {}, el('thead', {}, el('tr', {}, ['Sócio', 'Ano', 'Destino', 'Cargo', 'Resultado', 'Vínculo', 'Valor'].map((t, n) => el('th', { class: n === 6 ? 'num' : '' }, t)))),
           el('tbody', {}, ex.doacoes.map((x) => el('tr', {}, el('td', {}, nomeProprio(x.socio)), el('td', {}, String(x.ano)),
             el('td', {}, x.tipo === 'partidos' ? `Órgão partidário · ${x.partido}` : `${nomeProprio(x.candidato)} · ${x.partido}`),
-            el('td', {}, `${x.cargo}${x.uf ? ' · ' + x.uf : ''}`), el('td', { class: 'num' }, PF.nBRL.format(x.valor))))))));
+            el('td', {}, `${x.cargo}${x.uf ? ' · ' + x.uf : ''}`), el('td', {}, resultadoTxt(x.resultado)), el('td', {}, tagConf(x.confianca, x.base)), el('td', { class: 'num' }, PF.nBRL.format(x.valor))))))));
     }
     if (ex.candidatos && ex.candidatos.length) {
-      blocos.push(el('h3', {}, 'Sócios que foram candidatos'), el('ul', { class: 'lista-simples' }, ex.candidatos.map((x) => el('li', {}, `${nomeProprio(x.socio)}: ${x.cargo}, ${x.uf}, ${x.ano}, ${x.partido}`))));
+      blocos.push(el('h3', {}, 'Sócios que foram candidatos'), el('ul', { class: 'lista-simples' }, ex.candidatos.map((x) => el('li', {}, `${nomeProprio(x.socio)}: ${x.cargo}, ${x.municipio && x.municipio !== x.uf ? x.municipio + ', ' : ''}${x.uf}, ${x.ano}, ${x.partido}${resultadoTxt(x.resultado) ? ', ' + resultadoTxt(x.resultado) : ''}${x.ocupacao && x.ocupacao !== '#NULO' ? ' · ocupação declarada: ' + x.ocupacao.toLowerCase() : ''} `, tagConf(x.confianca, x.base)))));
     }
     if (ex.campanhas && ex.campanhas.length) {
       blocos.push(el('h3', {}, 'Campanhas que contrataram a empresa'), el('div', { class: 'rolagem' }, el('table', {}, el('thead', {}, el('tr', {}, ['Ano', 'Candidato', 'Cargo', 'Valor contratado'].map((t, n) => el('th', { class: n === 3 ? 'num' : '' }, t)))),
@@ -531,7 +533,7 @@
       blocos.push(el('h3', {}, 'A própria empresa como doadora'), el('ul', { class: 'lista-simples' }, ex.doacoesPj.map((x) => el('li', {}, `${x.ano}: ${PF.nBRL.format(x.valor)} para ${x.tipo === 'partidos' ? 'órgão partidário ' + x.partido : nomeProprio(x.candidato) + ' (' + x.cargo + ', ' + x.uf + ')'}`))));
     }
     return el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Vínculos políticos e eleitorais'),
-      el('p', {}, 'Prestação de contas de campanhas e partidos (TSE, 2018 a 2024) cruzada com os sócios. O sócio só é dado como a mesma pessoa quando o nome é igual e os seis dígitos do meio do CPF conferem. Doação é ato legal e público; o dado mostra proximidade a conferir, não irregularidade. A ausência de registro não prova ausência de vínculo: parentes, doações por terceiros e eleições anteriores a 2018 não estão aqui.'))), ...blocos);
+      el('p', {}, 'Prestação de contas de campanhas e partidos e cadastro de candidaturas (TSE, 2018 a 2024) cruzados com os sócios. Provável: nome igual e seis dígitos do meio do CPF iguais. Confirmado: além disso, algum dado oficial coerente, como município do doador igual ao da sede da empresa ou faixa etária da Receita compatível com a data de nascimento do candidato. A conferir: só o nome coincide (o TSE oculta o CPF dos candidatos de 2024) ou há divergência de idade. Doação é ato legal e público; o dado mostra proximidade a conferir, não irregularidade. A ausência de registro não prova ausência de vínculo: parentes, doações por terceiros e eleições anteriores a 2018 não estão aqui.'))), ...blocos);
   }
 
   // ---------- visão: fornecedor ----------
@@ -603,7 +605,20 @@
       graficoBarras(cPagos, { meses: anos, rotulo: (m) => m, rotuloLongo: (m) => m, eixo: brlCompacto, fmt: brlCompacto,
         series: [{ nome: 'Pago', cor: 'var(--serie-1)', barra: true, vals: anos.map((a) => r.pagoAno[a]) }] });
     }
-    c.replaceChildren(...[faixa, ficha, cPagos, alertas, cartaoPolitico(f.externo, f), cartaoFiscal(f.externo), socios, orgs].filter(Boolean));
+    const hojeTxt = new Date().toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' });
+    const cab = el('div', { class: 'somente-impressao rel-cabecalho' }, el('p', { class: 'rel-sup' }, 'Painel Fiscal · Espírito Santo · Contratações'), el('h1', {}, 'Ficha do fornecedor'),
+      el('p', { class: 'rel-data' }, `${nomeProprio(f.nome)} · CNPJ ${cnpjFmt(f.cnpj)} · emitida em ${hojeTxt} · posição dos dados: ${dataBR(dados.ref)}`));
+    const barra = el('div', { class: 'no-print ferramentas' }, el('button', { type: 'button', class: 'botao-primario', onclick: () => window.print() }, 'Imprimir ou salvar ficha em PDF'));
+    const dig = f.cnpj;
+    const fontes = el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Como conferir nas fontes oficiais'),
+      el('p', {}, 'Consulte o CNPJ ' + cnpjFmt(f.cnpj) + ' em cada fonte; o painel mostra o que cada uma publicou na data indicada.'))),
+    el('ul', { class: 'lista-simples' },
+      el('li', {}, 'Situação cadastral e quadro societário: ', el('a', { href: `https://solucoes.receita.fazenda.gov.br/servicos/cnpjreva/cnpjreva_solicitacao.asp?cnpj=${dig}`, target: '_blank', rel: 'noopener' }, 'Receita Federal (consulta de CNPJ)')),
+      el('li', {}, 'Sanções (CEIS e CNEP): ', el('a', { href: 'https://portaldatransparencia.gov.br/sancoes/consulta', target: '_blank', rel: 'noopener' }, 'Portal da Transparência da União'), ' (buscar pelo CNPJ)'),
+      el('li', {}, 'Dívida ativa da União: ', el('a', { href: 'https://www.regularize.pgfn.gov.br/', target: '_blank', rel: 'noopener' }, 'PGFN, Regularize'), ' e dados abertos em dadosabertos.pgfn.gov.br'),
+      el('li', {}, 'Doações e candidaturas: ', el('a', { href: 'https://divulgacandcontas.tse.jus.br/', target: '_blank', rel: 'noopener' }, 'DivulgaCandContas (TSE)'), ' e dados abertos em dadosabertos.tse.jus.br'),
+      el('li', {}, 'Contratos e pagamentos do Estado: ', el('a', { href: 'https://transparencia.es.gov.br/', target: '_blank', rel: 'noopener' }, 'Portal da Transparência do ES'), ' (buscar pelo CNPJ ou pelo número do contrato)')));
+    c.replaceChildren(...[cab, barra, faixa, ficha, cPagos, alertas, cartaoPolitico(f.externo, f), cartaoFiscal(f.externo), socios, orgs, fontes].filter(Boolean));
   }
 
   // ---------- lista de revisão ----------
@@ -765,7 +780,8 @@
       .sort((a, b) => b.anual - a.anual);
     const hoje = new Date().toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' });
     const titulo_ = revisao.titulo || 'Contratos a rever';
-    const textoAlertas = (i) => (i.alertas || []).filter((a) => !a.endsWith(':i')).map((a) => (dados.alertas[a.split(':')[0]] ? dados.alertas[a.split(':')[0]].titulo : a));
+    const SENSIVEIS = /^(socio_|doacao_|fornecedor_campanha|rede_grande|endereco_comum)/;
+    const textoAlertas = (i) => (i.alertas || []).filter((a) => !a.endsWith(':i') && (f.sensivel || !SENSIVEIS.test(a))).map((a) => (dados.alertas[a.split(':')[0]] ? dados.alertas[a.split(':')[0]].titulo : a));
     const porMotivo = Object.entries(MOTIVOS).map(([m, r]) => { const l = todos.filter((i) => i.motivo === m); return [r, l.length, somaRev(l, 'anual'), somaRev(l, 'restante')]; }).filter((x) => x[1]);
     const controles = el('div', { class: 'no-print cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Relatório para impressão'),
       el('p', {}, 'Ajuste o título e a introdução, confira a prévia abaixo e use "Imprimir ou salvar em PDF" (no diálogo do navegador, escolha "Salvar como PDF").'))),
@@ -775,7 +791,8 @@
     el('div', { class: 'ferramentas' },
       el('button', { type: 'button', class: 'botao-primario', onclick: () => window.print() }, 'Imprimir ou salvar em PDF'),
       el('button', { type: 'button', class: 'botao', onclick: () => ctx.irPara('revisao') }, 'Voltar à lista'),
-      el('label', { class: 'opcao' }, el('input', { type: 'checkbox', checked: !!f.decididos, onchange: (ev) => { f.decididos = ev.target.checked; render(); } }), ' Incluir os já decididos')));
+      el('label', { class: 'opcao' }, el('input', { type: 'checkbox', checked: !!f.decididos, onchange: (ev) => { f.decididos = ev.target.checked; render(); } }), ' Incluir os já decididos'),
+      el('label', { class: 'opcao', title: 'Nomes de sócios e alertas sobre doações, candidaturas e sócios em comum. Deixe desligado para circulação ampla.' }, el('input', { type: 'checkbox', checked: !!f.sensivel, onchange: (ev) => { f.sensivel = ev.target.checked; render(); } }), ' Incluir sócios e vínculos políticos (versão restrita)')));
     if (!todos.length) return c.replaceChildren(controles, el('p', { class: 'vazio' }, 'Não há contratos para o relatório.'));
     const cab = (cols) => el('thead', {}, el('tr', {}, cols.map((t, n) => el('th', { class: n ? 'num' : '' }, t))));
     const resumo = el('table', { class: 'tabela-resumo' }, cab(['Órgão', 'Contratos', 'Por ano', 'Ainda a receber']),
@@ -791,7 +808,7 @@
           return el('tr', {},
             el('td', {}, String(n + 1)),
             el('td', { class: 'objeto' }, el('strong', {}, nomeProprio(i.forn)), el('small', {}, cnpjFmt(i.cnpj || '') + ' · ' + i.doc), i.objeto, el('small', {}, `${i.cat} · ${i.modal} · ${ESS()[i.ess] || ''}`),
-              linhaForn ? el('small', {}, linhaForn) : null, fi && fi.socios.length ? el('small', {}, 'Sócios: ' + fi.socios.map(nomeProprio).join(', ')) : null,
+              linhaForn ? el('small', {}, linhaForn) : null, f.sensivel && fi && fi.socios.length ? el('small', {}, 'Sócios: ' + fi.socios.map(nomeProprio).join(', ')) : null,
               textoAlertas(i).length ? el('small', { class: 'alertas-rel' }, 'Alertas: ' + textoAlertas(i).join('; ')) : null),
             el('td', { class: 'num' }, brlCompacto(i.anual) + ' por ano', el('small', {}, 'total ' + brlCompacto(i.vfin)), el('small', {}, 'a receber ' + brlCompacto(i.restante)), i.pago > 0 ? el('small', {}, 'pago ' + brlCompacto(i.pago)) : null),
             el('td', {}, `${dataBR(i.ini)} a ${dataBR(i.fimef)}`, el('small', {}, i.fimef ? 'faltam ' + duracao(mesesAte(i.fimef)) : 'sem prazo definido')),
@@ -808,7 +825,8 @@
       el('section', { class: 'rel-notas' }, el('h3', {}, 'Notas'),
         el('p', {}, `Fontes: ${dados.fonte.contratos}; ${dados.fonte.cadastro}; execução da despesa (SIGEFES) do Portal da Transparência.`),
         el('p', {}, 'Valor por ano é o valor final do contrato distribuído pela duração (no mínimo 12 meses). "A receber" é estimativa linear sobre o tempo restante. "Pago" soma os pagamentos dos empenhos que o SIGA vincula ao contrato, de 2021 em diante.'),
-        el('p', {}, 'Os alertas são regras objetivas de triagem e indicam onde olhar primeiro; não provam irregularidade. A classificação do objeto e a essencialidade são sugestões automáticas a validar. Este é um documento de trabalho.')));
+        el('p', {}, 'Os alertas são regras objetivas de triagem e indicam onde olhar primeiro; não provam irregularidade. A classificação do objeto e a essencialidade são sugestões automáticas a validar. Este é um documento de trabalho.'),
+        el('p', {}, f.sensivel ? 'Versão restrita: contém nomes de sócios e alertas sobre vínculos políticos; não deve circular além de quem precisa conferir.' : 'Versão de circulação ampla: sem nomes de sócios nem alertas sobre doações, candidaturas e sócios em comum.')));
     c.replaceChildren(controles, relatorio);
   }
 

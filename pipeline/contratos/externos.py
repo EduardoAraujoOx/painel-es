@@ -33,6 +33,7 @@ EXT = os.path.join(CACHE, "ext")
 TMP = os.path.join(EXT, "tmp")
 PGFN = "https://dadosabertos.pgfn.gov.br"
 TSE = "https://cdn.tse.jus.br/estatistica/sead/odsele/prestacao_contas"
+TSE_CAND = "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand"
 CGU = "https://portaldatransparencia.gov.br/download-de-dados"
 ANOS_TSE = (2018, 2020, 2022, 2024)
 csv.field_size_limit(1 << 24)
@@ -221,9 +222,14 @@ def tse(receita, chaves, anos=ANOS_TSE):
                                 break
                         if chave:
                             k = (chave, ano, cand, cargo, uf, partido, tipo)
-                            a = doacoes.setdefault(k, [0.0, 0])
+                            a = doacoes.setdefault(k, [0.0, 0, set(), set(), False])
                             a[0] += valor
                             a[1] += 1
+                            if "SG_UF_DOADOR" in ix and c[ix["SG_UF_DOADOR"]] not in ("", "#NULO", "-1"):
+                                a[2].add(c[ix["SG_UF_DOADOR"]])
+                            if "NM_MUNICIPIO_DOADOR" in ix and c[ix["NM_MUNICIPIO_DOADOR"]] not in ("", "#NULO", "-1"):
+                                a[3].add(R.norm_nome(c[ix["NM_MUNICIPIO_DOADOR"]]))
+                            a[4] = a[4] or (campo == "NM_DOADOR_RFB")
                 if tipo == "candidatos":
                     # candidatos que são sócios de fornecedores (CPF do candidato nas próprias receitas)
                     for arq in escolher("receitas_candidatos"):
@@ -254,11 +260,68 @@ def tse(receita, chaves, anos=ANOS_TSE):
             os.remove(destino)
         print(f"TSE {ano}: {len(doacoes)} grupos de doação de sócios, {len(candidatos)} candidatos-sócios, {len(despesas)} pagamentos de campanha a fornecedores", flush=True)
         json.dump({"base": f"TSE — prestação de contas eleitorais (candidatos e órgãos partidários), eleição de {ano}", "ano": ano,
-                   "doacoes": [[list(k[0]), *k[1:], round(v[0], 2), v[1]] for k, v in doacoes.items()],
+                   "doacoes": [[list(k[0]), *k[1:], round(v[0], 2), v[1], sorted(v[2]), sorted(v[3]), v[4]] for k, v in doacoes.items()],
                    "doacoes_pj": [[*k, round(v, 2)] for k, v in doacoes_pj.items()],
                    "candidatos": [[list(k[0]), *k[1:]] for k in candidatos],
                    "despesas": [[*k, round(v, 2)] for k, v in despesas.items()]},
                   open(os.path.join(EXT, f"tse_{ano}.json"), "w"), ensure_ascii=False, separators=(",", ":"))
+
+
+def faixa_de_idade(nasc):
+    """Faixa etária no padrão da Receita (1: até 12 … 9: mais de 80), a partir de DD/MM/AAAA, na data de hoje."""
+    try:
+        d = datetime.datetime.strptime(nasc[:10], "%d/%m/%Y").date()
+    except ValueError:
+        return None
+    idade = (datetime.date.today() - d).days / 365.25
+    for faixa, teto in ((1, 13), (2, 21), (3, 31), (4, 41), (5, 51), (6, 61), (7, 71), (8, 81)):
+        if idade < teto:
+            return faixa
+    return 9
+
+
+def candidatos(receita, chaves, anos=ANOS_TSE):
+    """Cadastro de candidaturas do TSE (consulta_cand): data de nascimento, ocupação e resultado, para
+    (a) confirmar a idade dos sócios que foram candidatos e (b) saber se o candidato que recebeu doação foi eleito."""
+    por_nome = {}
+    for raiz, socios in receita["socios"].items():
+        for ident, nome, cpf, qual, entrada, faixa, rep in socios:
+            if ident == "2":
+                por_nome.setdefault(R.norm_nome(nome), set()).add(raiz)
+    for ano in anos:
+        destinos = set()
+        try:
+            for d in json.load(open(os.path.join(EXT, f"tse_{ano}.json")))["doacoes"]:
+                destinos.add((R.norm_nome(d[2]), R.norm_nome(d[3]), d[4]))
+        except OSError:
+            pass
+        destino = os.path.join(TMP, f"consulta_cand_{ano}.zip")
+        print(f"candidaturas {ano}: baixando…", flush=True)
+        baixar(f"{TSE_CAND}/consulta_cand_{ano}.zip", destino)
+        socios, situacao = [], {}
+        with zipfile.ZipFile(destino) as z:
+            alvo = [n for n in z.namelist() if re.match(rf"^consulta_cand_{ano}_BRASIL\.csv$", n)] or [n for n in z.namelist() if re.match(rf"^consulta_cand_{ano}_[A-Z]{{2}}\.csv$", n)]
+            for arq in alvo:
+                rd = leitor(z, arq)
+                cab = next(rd)
+                ix = {c: n for n, c in enumerate(cab)}
+                for c in rd:
+                    if len(c) < len(cab):
+                        continue
+                    nome, cargo, uf = c[ix["NM_CANDIDATO"]], c[ix["DS_CARGO"]], c[ix["SG_UF"]]
+                    resultado = c[ix["DS_SIT_TOT_TURNO"]]
+                    if (R.norm_nome(nome), R.norm_nome(cargo), uf) in destinos:
+                        situacao["|".join((R.norm_nome(nome), R.norm_nome(cargo), uf))] = resultado
+                    k = chave_cpf(nome, c[ix["NR_CPF_CANDIDATO"]])
+                    reg = {"nome": nome, "ano": ano, "cargo": cargo, "uf": uf, "partido": c[ix["SG_PARTIDO"]], "municipio": c[ix["NM_UE"]], "nasc": c[ix["DT_NASCIMENTO"]],
+                           "faixa": faixa_de_idade(c[ix["DT_NASCIMENTO"]]), "ocupacao": c[ix["DS_OCUPACAO"]], "resultado": resultado}
+                    if k and k in chaves:
+                        socios.append(dict(reg, via="cpf", chave=list(k)))
+                    elif not k and uf == "ES" and R.norm_nome(nome) in por_nome:    # CPF ocultado pelo TSE (2024): só pelo nome, a conferir
+                        socios.append(dict(reg, via="nome", chave=[R.norm_nome(nome), None]))
+        os.remove(destino)
+        json.dump({"ano": ano, "socios": socios, "situacao": situacao}, open(os.path.join(EXT, f"cand_{ano}.json"), "w"), ensure_ascii=False, separators=(",", ":"))
+        print(f"candidaturas {ano}: {len(socios)} candidatos que coincidem com sócios; {len(situacao)} resultados de candidatos que receberam doação de sócios", flush=True)
 
 
 def main():
@@ -270,6 +333,8 @@ def main():
     if "sancoes" in partes:
         sancoes(receita, chaves)
     for p in partes:
+        if p.startswith("cand"):
+            candidatos(receita, chaves, [int(p[4:])] if p[4:] else ANOS_TSE)
         if p.startswith("tse"):
             tse(receita, chaves, [int(p[3:])] if p[3:] else ANOS_TSE)
     if "pgfn" in partes:

@@ -281,12 +281,48 @@ def carregar_externos(receita):
                 por_raiz[raiz]["socios_sancionados"].append({"socio": nome, "itens": itens})
     if tse:
         fontes["tse"] = tse["base"]
-        for (nome, d6), ano, cand, cargo, uf, partido, tipo, valor, n in tse["doacoes"]:
+        tab_mun = receita["tabelas"]["municipios"]
+        sede = {}     # raiz -> (UF, município da matriz, sem acento)
+        for cnpj, v in receita["estab"].items():
+            if v[0] == "1":
+                sede[cnpj[:8]] = (v[13], R.norm_nome(tab_mun.get(v[14], "")))
+        faixa_socio = collections.defaultdict(dict)    # raiz -> nome -> faixa etária (Receita)
+        por_nome = collections.defaultdict(set)
+        for raiz, socios in receita["socios"].items():
+            for ident, nome, cpf, qual, entrada, faixa, rep in socios:
+                if ident == "2":
+                    faixa_socio[raiz][R.norm_nome(nome)] = faixa
+                    por_nome[R.norm_nome(nome)].add(raiz)
+        situacao = {}
+        cands = []
+        for f in sorted(glob.glob(os.path.join(ext, "cand_20??.json"))):
+            d = json.load(open(f))
+            situacao.update({f"{d['ano']}|{k}": v for k, v in d["situacao"].items()})
+            cands += d["socios"]
+        for row in tse["doacoes"]:
+            (nome, d6), ano, cand, cargo, uf, partido, tipo, valor, n = row[:9]
+            ufs, muns, rfb = row[9:12] if len(row) >= 12 else ([], [], False)
             for raiz in chaves.get((nome, d6), ()):
-                por_raiz[raiz]["doacoes"].append({"socio": nome, "ano": ano, "candidato": cand, "cargo": cargo, "uf": uf, "partido": partido, "tipo": tipo, "valor": valor, "n": n})
-        for (nome, d6), ano, cargo, uf, partido, cand in tse["candidatos"]:
-            for raiz in chaves.get((nome, d6), ()):
-                por_raiz[raiz]["candidatos"].append({"socio": nome, "ano": ano, "cargo": cargo, "uf": uf, "partido": partido})
+                mun = sede.get(raiz, ("", ""))[1]
+                resultado = situacao.get(f"{ano}|{R.norm_nome(cand)}|{R.norm_nome(cargo)}|{uf}")
+                por_raiz[raiz]["doacoes"].append({"socio": nome, "ano": ano, "candidato": cand, "cargo": cargo, "uf": uf, "partido": partido, "tipo": tipo, "valor": valor, "n": n,
+                                                  "confianca": "confirmado" if mun and mun in muns else "provável", "resultado": resultado,
+                                                  "base": ("nome e CPF parcial" + (", município do doador igual ao da sede" if mun and mun in muns else "") + (", nome conferido na Receita pelo TSE" if rfb else ""))})
+        for reg in cands:
+            nome, d6 = reg["chave"]
+            raizes = chaves.get((nome, d6), ()) if reg["via"] == "cpf" else por_nome.get(nome, ())
+            for raiz in raizes:
+                fs = faixa_socio[raiz].get(nome, "")
+                if reg["via"] == "nome":
+                    conf, base = "a conferir", "só pelo nome (o TSE oculta o CPF dos candidatos de 2024)" + (", faixa etária coerente" if fs.isdigit() and reg["faixa"] == int(fs) else ", faixa etária diverge")
+                elif reg["faixa"] is None or not fs.isdigit() or fs == "0":
+                    conf, base = "provável", "nome e CPF parcial"
+                else:
+                    diff = abs(int(fs) - reg["faixa"])
+                    conf = "confirmado" if diff == 0 else "provável" if diff == 1 else "a conferir"
+                    base = "nome e CPF parcial" + (", faixa etária coerente com a data de nascimento" if diff == 0 else ", faixa etária vizinha" if diff == 1 else ", faixa etária DIVERGE da data de nascimento")
+                por_raiz[raiz]["candidatos"].append({"socio": nome, "ano": reg["ano"], "cargo": reg["cargo"], "uf": reg["uf"], "partido": reg["partido"], "municipio": reg["municipio"],
+                                                     "ocupacao": reg["ocupacao"], "resultado": reg["resultado"], "confianca": conf, "base": base})
         for cnpj, ano, cand, cargo, uf, partido, valor in tse["despesas"]:
             por_raiz[cnpj[:8]]["campanhas"].append({"cnpj": cnpj, "ano": ano, "candidato": cand, "cargo": cargo, "uf": uf, "partido": partido, "valor": valor})
         for cnpj, ano, cand, cargo, uf, partido, tipo, valor in tse["doacoes_pj"]:
@@ -345,7 +381,8 @@ def alertas_externos(cnpj, ext, valor_anual):
             quem = ", ".join(sorted({f"{x['candidato']} ({x['ano']})" for x in gov})[:4])
             al.append(("doacao_governador", "m" if tot >= 10_000 else "i", f"Sócios doaram R$ {tot:,.0f} a candidatos ao governo do ES: {quem}.".replace(",", ".")))
         tot = sum(x["valor"] for x in e["doacoes"])
-        al.append(("doacao_eleitoral", "i", f"Sócios doaram R$ {tot:,.0f} em {sum(x['n'] for x in e['doacoes'])} doações a campanhas e partidos (2018–2024).".replace(",", ".")))
+        eleitos = sum(x["valor"] for x in e["doacoes"] if (x.get("resultado") or "").upper().startswith("ELEITO"))
+        al.append(("doacao_eleitoral", "i", f"Sócios doaram R$ {tot:,.0f} em {sum(x['n'] for x in e['doacoes'])} doações a campanhas e partidos (2018–2024), R$ {eleitos:,.0f} a candidatos eleitos.".replace(",", ".")))
     if e["doacoes_pj"]:
         tot = sum(x["valor"] for x in e["doacoes_pj"])
         al.append(("doacao_pj", "m", f"O próprio CNPJ consta como doador de R$ {tot:,.0f} em {len(e['doacoes_pj'])} registros.".replace(",", ".")))
@@ -700,7 +737,7 @@ def main():
         externo = None
         if ex_ and (ex_["divida"] or ex_["sancoes"] or ex_["socios_sancionados"] or ex_["doacoes"] or ex_["candidatos"] or ex_["campanhas"] or ex_["doacoes_pj"]):
             externo = {"divida": ex_["divida"], "sancoes": ex_["sancoes"][:10], "sociosSancionados": [{"socio": x["socio"], "itens": x["itens"][:3]} for x in ex_["socios_sancionados"]][:5],
-                       "doacoes": sorted(ex_["doacoes"], key=lambda x: -x["valor"])[:40], "candidatos": ex_["candidatos"][:10],
+                       "doacoes": sorted(ex_["doacoes"], key=lambda x: -x["valor"])[:40], "candidatos": sorted(ex_["candidatos"], key=lambda x: (x["confianca"] == "a conferir", -x["ano"]))[:10],
                        "campanhas": sorted([x for x in ex_["campanhas"] if x["cnpj"] == cnpj], key=lambda x: -x["valor"])[:15], "doacoesPj": sorted(ex_["doacoes_pj"], key=lambda x: -x["valor"])[:15]}
         f = dict(f, nome=nome, resumo=resumo_f, externo=externo, orgaos=sorted(orgs_forn[cnpj], key=lambda x: -x[5]),
                  alertas=[[a, n, t] for a, n, t in alertas_forn.get(cnpj, [])])
