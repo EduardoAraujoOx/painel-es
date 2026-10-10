@@ -152,7 +152,9 @@ Limites conhecidos: a classificação do objeto é por palavras-chave; não há 
 
 ## Acesso e implantação (Vercel)
 
-Nada em `data/` é público: o arquivo só é entregue por `api/dados.js` a quem tem sessão válida. A página pública contém apenas o formulário de senha.
+Nada em `data/` é servido como arquivo estático: os dados só saem por `api/dados.js`, que exige sessão válida (senha) ou, no modo de teste, o acesso aberto descrito abaixo.
+
+**Modo de teste sem senha.** O arquivo `acesso.json` na raiz liga e desliga a senha: `{"modo": "aberto"}` dispensa a senha (qualquer pessoa com o endereço entra e a página mostra um aviso); `{"modo": "senha"}` volta a exigi-la. A variável de ambiente `PAINEL_ACESSO` (`aberto` ou qualquer outro valor) prevalece sobre o arquivo. Na dúvida, vale a senha. Enquanto o modo aberto estiver ligado, os dados, que incluem nomes e valores de pessoas, ficam acessíveis a quem tiver o link: só use com o endereço em circulação restrita e volte para `senha` antes de qualquer divulgação.
 
 Variáveis de ambiente do projeto (configurar no Vercel, nunca no repositório):
 
@@ -160,6 +162,7 @@ Variáveis de ambiente do projeto (configurar no Vercel, nunca no repositório):
 |---|---|
 | `PAINEL_SENHA` | senha compartilhada de acesso |
 | `PAINEL_SEGREDO` | chave de assinatura da sessão (32+ caracteres aleatórios) |
+| `PAINEL_ACESSO` | opcional: `aberto` desliga a senha; prevalece sobre `acesso.json` |
 
 Para trocar a senha, altere `PAINEL_SENHA` no painel do Vercel e faça um novo deploy; para derrubar todas as sessões abertas, altere também `PAINEL_SEGREDO`. A sessão dura 12 horas. O site envia `noindex`, `robots.txt` restritivo e cabeçalhos de segurança (`vercel.json`).
 

@@ -2,10 +2,27 @@
 // Variáveis de ambiente (configuradas no Vercel, nunca no repositório):
 //   PAINEL_SENHA    senha de acesso
 //   PAINEL_SEGREDO  chave de assinatura da sessão (>= 32 caracteres)
+//   PAINEL_ACESSO   opcional; "aberto" desliga a senha (modo de teste). Prevalece sobre o arquivo acesso.json.
 const crypto = require('crypto');
+const fs = require('fs');
+const path = require('path');
 
 const COOKIE = 'dfes_sessao';
 const DURACAO_S = 12 * 60 * 60;
+
+// Modo de teste: sem senha. Duas formas de ligar, nesta ordem de prioridade:
+//   1) variável de ambiente PAINEL_ACESSO ("aberto" liga; qualquer outro valor mantém a senha);
+//   2) arquivo acesso.json na raiz do projeto: {"modo": "aberto"} liga; {"modo": "senha"} mantém a senha.
+// Na dúvida (arquivo ausente ou ilegível), vale a senha.
+function acessoAberto() {
+  const env = process.env.PAINEL_ACESSO;
+  if (env !== undefined && env !== '') return env === 'aberto';
+  try {
+    return JSON.parse(fs.readFileSync(path.join(process.cwd(), 'acesso.json'), 'utf8')).modo === 'aberto';
+  } catch (e) {
+    return false;
+  }
+}
 
 function segredo() {
   const s = process.env.PAINEL_SEGREDO;
@@ -73,5 +90,5 @@ function responder(res, status, objeto, extras = {}) {
 }
 
 module.exports = {
-  COOKIE, DURACAO_S, iguais, emitirSessao, sessaoValida, lerCookie, cookieSessao, lerCorpo, responder,
+  COOKIE, DURACAO_S, acessoAberto, iguais, emitirSessao, sessaoValida, lerCookie, cookieSessao, lerCorpo, responder,
 };

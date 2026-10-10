@@ -4,7 +4,7 @@
 // Cada módulo do painel guarda seus dados em data/<módulo>/.
 const fs = require('fs');
 const path = require('path');
-const { sessaoValida, lerCookie, responder } = require('./_auth');
+const { sessaoValida, lerCookie, responder, acessoAberto } = require('./_auth');
 
 const RAIZ = process.cwd();
 const PASTA = process.env.DADOS_DIR || 'data'; // variável usada só nos testes locais
@@ -17,7 +17,7 @@ module.exports = (req, res) => {
   if (req.method !== 'GET') return responder(res, 405, { erro: 'método não permitido' });
   let autorizado = false;
   try {
-    autorizado = sessaoValida(lerCookie(req));
+    autorizado = acessoAberto() || sessaoValida(lerCookie(req));
   } catch (e) {
     return responder(res, 503, { erro: 'acesso não configurado' });
   }

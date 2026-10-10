@@ -201,8 +201,12 @@
     let r;
     try { r = await fetch('/api/sessao', { credentials: 'same-origin', cache: 'no-store' }); } catch (e) { r = null; }
     if (!r || !r.ok) return PF.mostrarLogin();
+    let aberto = false;
+    try { aberto = !!(await r.json()).aberto; } catch (e) { /* resposta sem corpo */ }
     $('#login').hidden = true;
     $('#app').hidden = false;
+    $('#sair').hidden = aberto;                       // sem senha não há o que encerrar
+    $('#aviso-aberto').hidden = !aberto;
     $('#abas').replaceChildren(...PF.modulos.map((m) => el('a', { href: `#/${m.id}`, 'data-mod': m.id }, m.titulo)));
     rotear();
   }

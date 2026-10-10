@@ -1,7 +1,8 @@
-const { sessaoValida, lerCookie, responder } = require('./_auth');
+const { sessaoValida, lerCookie, responder, acessoAberto } = require('./_auth');
 
 // Indica à página se há sessão válida (200) ou se deve mostrar o login (401).
 module.exports = (req, res) => {
+  if (acessoAberto()) return responder(res, 200, { ok: true, aberto: true });
   try {
     if (sessaoValida(lerCookie(req))) return responder(res, 200, { ok: true });
   } catch (e) {

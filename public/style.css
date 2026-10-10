@@ -405,3 +405,6 @@ td input[type="text"] { min-width: 160px; }
 .esclarecer { margin-top: 3px; padding: 6px 10px; border-left: 3px solid var(--serie-1); background: var(--pagina); font-size: 12px; }
 .alerta-rel { margin: 0 0 4px; font-size: 11px; }
 @media print { .esclarecer { background: none; border-left-color: #000; } }
+
+.aviso-aberto { margin: 0 0 10px; padding: 8px 12px; border: 1px dashed var(--serie-2); border-radius: 8px; font-size: 12px; color: var(--tinta-2); }
+@media print { .aviso-aberto { display: none !important; } }
