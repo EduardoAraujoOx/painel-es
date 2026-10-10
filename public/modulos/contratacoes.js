@@ -17,7 +17,7 @@
   const estado = {
     medida: 'anual', vista: 'mapa', ordemOrgs: { col: 'anualVigente', dir: -1 },
     org: null, forn: null, origem: null, verTodosForn: false, verMaisPrioridades: false,
-    f: { situ: 'vigentes', cat: '', modal: '', alerta: '', ess: '', q: '' }, par: { base: 'anual', ess: new Set(), corte: 80, mais: 10, pub: false }, ordem: { col: 'anual', dir: -1 }, limite: 50,
+    f: { situ: 'vigentes', cat: '', modal: '', alerta: '', ess: '', q: '' }, rev: { status: '', motivo: '', org: '', decididos: false }, msg: '', tela: '', par: { base: 'anual', ess: new Set(), corte: 80, mais: 10, pub: false }, ordem: { col: 'anual', dir: -1 }, limite: 50,
     aberto: new Set(),
   };
   const PESO = { a: 3, m: 1, i: 0 };
@@ -65,8 +65,9 @@
   function aoNavegar(resto) {
     if (!dados) return;
     const r = decodeURIComponent(resto || '');
+    estado.tela = r === 'revisao' || r === 'relatorio' ? r : '';
     estado.forn = r.startsWith('f:') ? r.slice(2) : null;
-    const id = !estado.forn && r ? Number(r) : null;
+    const id = !estado.forn && !estado.tela && r ? Number(r) : null;
     estado.org = id && dados.orgs.some((o) => o.id === id) ? id : null;
     if (!estado.forn && !estado.org) estado.origem = null;
     render();
@@ -77,6 +78,8 @@
     const sep = () => el('span', { class: 'sep' }, '›');
     const orgId = estado.forn ? estado.origem : estado.org;
     const org = orgId && dados.orgs.find((o) => o.id === orgId);
+    if (estado.tela === 'revisao') { t.replaceChildren(itens[0], sep(), el('span', { class: 'atual' }, 'Lista de revisão')); return; }
+    if (estado.tela === 'relatorio') { t.replaceChildren(itens[0], sep(), el('button', { type: 'button', onclick: () => ctx.irPara('revisao') }, 'Lista de revisão'), sep(), el('span', { class: 'atual' }, 'Relatório')); return; }
     if (!estado.forn && !estado.org) { t.replaceChildren(el('span', { class: 'atual' }, 'Governo do ES')); return; }
     if (org) {
       itens.push(sep());
@@ -169,13 +172,14 @@
       el('h2', {}, 'Contratos para olhar primeiro'),
       el('p', {}, 'Contratos vigentes de pelo menos R$ 1 milhão por ano, ordenados por pontos de alerta (alto = 3, médio = 1) ponderados pelo valor. É triagem, não conclusão.'))),
     el('div', { class: 'rolagem' }, el('table', {},
-      el('thead', {}, el('tr', {}, ['Órgão e fornecedor', 'Objeto', 'Por ano', 'Alertas'].map((t, i) => el('th', { class: i === 2 ? 'num' : '' }, t)))),
+      el('thead', {}, el('tr', {}, ['Órgão e fornecedor', 'Objeto', 'Por ano', 'Alertas', ''].map((t, i) => el('th', { class: i === 2 ? 'num' : '' }, t)))),
       el('tbody', {}, prior.map((p) => el('tr', { class: 'clicavel', tabindex: '0', onclick: () => { irOrg(p.org); },
         onkeydown: (ev) => { if (ev.key === 'Enter') irOrg(p.org); } },
       el('td', {}, el('strong', {}, nomeProprio(p.forn)), el('small', {}, p.orgNome)),
       el('td', { class: 'objeto' }, p.objeto, el('small', {}, p.cat)),
       el('td', { class: 'num' }, brlCompacto(p.anual), el('small', {}, 'saldo ' + brlCompacto(p.saldo))),
-      el('td', {}, selos(p.alertas, 3))))))),
+      el('td', {}, selos(p.alertas, 3)),
+      el('td', {}, el('button', { type: 'button', class: 'botao', title: 'Colocar na lista de revisão', onclick: (ev) => { ev.stopPropagation(); marcarRapido(p.org, p.doc, ev.currentTarget); } }, Object.keys(revisao.itens).some((k) => k.startsWith(p.org + '|') && k.endsWith('|' + p.doc)) ? '⚑ Na lista' : '⚑ Marcar'))))))),
     dados.prioridades.length > 15 ? el('div', { class: 'rodape-tabela' }, el('button', { type: 'button', class: 'botao',
       onclick: () => { estado.verMaisPrioridades = !estado.verMaisPrioridades; render(); } },
     estado.verMaisPrioridades ? 'Mostrar menos' : `Mostrar os ${dados.prioridades.length}`)) : null);
@@ -337,7 +341,7 @@
       const tr = el('tr', { class: 'clicavel' + (aberto ? ' aberta' : ''), tabindex: '0', 'aria-expanded': String(aberto),
         onclick: () => { const id = k.doc + k.proc; if (estado.aberto.has(id)) estado.aberto.delete(id); else estado.aberto.add(id); render(true); },
         onkeydown: (ev) => { if (ev.key === 'Enter') ev.currentTarget.click(); } },
-      el('td', { class: 'objeto' }, el('strong', {}, nomeProprio(k.forn)), el('small', {}, k.objeto.length > 150 ? k.objeto.slice(0, 150) + '…' : k.objeto)),
+      el('td', { class: 'objeto' }, el('strong', {}, nomeProprio(k.forn)), naLista(org.id, k) ? el('span', { class: 'selo n-m' }, el('b', {}, '⚑'), ' na lista de revisão') : null, el('small', {}, k.objeto.length > 150 ? k.objeto.slice(0, 150) + '…' : k.objeto)),
       el('td', {}, k.cat, el('small', {}, k.modal + (k.rp ? ' · registro de preços' : '')), tagEss(k.ess)),
       el('td', { class: 'num' }, brlCompacto(k.anual), el('small', {}, 'total ' + brlCompacto(k.vfin)), k.pago > 0 ? el('small', {}, `pago ${brlCompacto(k.pago)} (${pct(k.vfin ? k.pago / k.vfin : 0)})`) : null),
       el('td', { class: 'num' }, k.saldo == null ? '—' : brlCompacto(k.saldo)),
@@ -353,7 +357,7 @@
           ['Situação no SIGA', k.sit]].flatMap(([t, v]) => [el('dt', {}, t), el('dd', {}, v)]));
       const alertas = k.alertas.length ? el('ul', { class: 'lista-alertas' }, k.alertas.map((a) => el('li', {}, selo(a), ' ', dados.alertas[a.split(':')[0]].descricao))) : null;
       const acao = el('button', { type: 'button', class: 'botao', onclick: (ev) => { ev.stopPropagation(); irForn(k.cnpj, org.id); } }, 'Ficha do fornecedor e sócios');
-      return [tr, el('tr', { class: 'detalhe-linha' }, el('td', { colspan: 6 }, dl, alertas, acao))];
+      return [tr, el('tr', { class: 'detalhe-linha' }, el('td', { colspan: 6 }, dl, alertas, formRevisao(org, k), acao))];
     });
     const rolagem = el('div', { class: 'rolagem' }, el('table', {},
       cabecalhoOrdenavel(cols, estado.ordem, (k) => { estado.ordem = { col: k, dir: estado.ordem.col === k ? -estado.ordem.dir : -1 }; render(true); }),
@@ -545,6 +549,212 @@
     c.replaceChildren(...[faixa, ficha, cPagos, alertas, socios, orgs].filter(Boolean));
   }
 
+  // ---------- lista de revisão ----------
+  // As marcações ficam só neste navegador (localStorage); a lista pode ser exportada e importada em arquivo.
+  const CHAVE_REV = 'pf.contratacoes.revisao.v1';
+  const MOTIVOS = { renegociar: 'Renegociar preço ou escopo', dispensavel: 'Objeto dispensável ou adiável', rescindir: 'Rescindir ou não renovar',
+    licitar: 'Substituir por licitação', apurar: 'Apurar indício de irregularidade', fornecedor: 'Rever fornecedor (cadastro ou sócios)', outro: 'Outro motivo' };
+  const STATUS = { revisar: 'A revisar', analise: 'Em análise', decidido: 'Decidido' };
+  function lerRevisao() {
+    try { const j = JSON.parse(PF.ler(CHAVE_REV) || 'null'); if (j && j.itens && typeof j.itens === 'object') return { titulo: '', intro: '', ...j }; } catch (e) { /* lista corrompida: começa vazia */ }
+    return { itens: {}, titulo: '', intro: '' };
+  }
+  let revisao = lerRevisao();
+  const nItens = () => Object.keys(revisao.itens).length;
+  function atualizarContador() {
+    const b = raiz && raiz.querySelector('#ir-revisao');
+    if (b) b.textContent = `⚑ Lista de revisão (${nItens()})`;
+  }
+  function salvarRevisao() { PF.guardar(CHAVE_REV, JSON.stringify(revisao)); atualizarContador(); }
+  const chaveRev = (orgId, k) => `${orgId}|${k.proc}|${k.doc}`;
+  const naLista = (orgId, k) => revisao.itens[chaveRev(orgId, k)];
+
+  async function marcar(org, k, motivo, status, nota) {
+    const chave = chaveRev(org.id, k);
+    const item = revisao.itens[chave] ? { ...revisao.itens[chave] } : { em: new Date().toISOString().slice(0, 10) };
+    Object.assign(item, { org: org.id, orgNome: org.nome, doc: k.doc, proc: k.proc, forn: k.forn, cnpj: k.cnpj, objeto: k.objeto, cat: k.cat, modal: k.modal,
+      ess: k.ess, vini: k.vini, vfin: k.vfin, anual: k.anual, restante: k.restante, pago: k.pago, cel: k.cel, ini: k.ini, fim: k.fim, fimef: k.fimef, sit: k.sit,
+      alertas: k.alertas, ref: dados.ref, motivo, status, nota });
+    if (!item.fornInfo && k.cnpj) {
+      try {
+        const f = await carregarForn(k.cnpj);
+        if (f) item.fornInfo = { situacao: f.situacao || '', abertura: f.abertura || '', capital: f.capital == null ? null : f.capital, porte: f.porte || '',
+          socios: (f.socios || []).filter((s) => s.tipo === 'PF').slice(0, 6).map((s) => s.nome) };
+      } catch (e) { /* a ficha é opcional no relatório */ }
+    }
+    revisao.itens[chave] = item;
+    salvarRevisao();
+  }
+  async function marcarRapido(orgId, doc, botao) {
+    botao.disabled = true;
+    try {
+      const det = await carregarOrg(orgId);
+      const k = det.contratos.map(contrato).find((x) => x.doc === doc);
+      const org = dados.orgs.find((o) => o.id === orgId);
+      if (k && org) {
+        const a = naLista(orgId, k);
+        await marcar(org, k, a ? a.motivo : 'renegociar', a ? a.status : 'revisar', a ? a.nota : '');
+        botao.textContent = '⚑ Na lista';
+      }
+    } catch (e) { if (e.sessao) PF.mostrarLogin(); }
+    botao.disabled = false;
+  }
+
+  function formRevisao(org, k) {
+    const atual = naLista(org.id, k);
+    const opcoes = (m, v) => Object.entries(m).map(([c, r]) => el('option', { value: c, selected: c === v }, r));
+    const motivo = el('select', { 'aria-label': 'Motivo' }, opcoes(MOTIVOS, atual ? atual.motivo : 'renegociar'));
+    const status = el('select', { 'aria-label': 'Situação da revisão' }, opcoes(STATUS, atual ? atual.status : 'revisar'));
+    const nota = el('textarea', { rows: 2, placeholder: 'Anotação: por que revisar, o que fazer, quem consultar', 'aria-label': 'Anotação' }, atual ? atual.nota : '');
+    return el('div', { class: 'form-revisao' },
+      el('strong', {}, atual ? '⚑ Este contrato está na lista de revisão' : 'Marcar para revisão'),
+      el('div', { class: 'linha-form' }, el('label', {}, 'Motivo', motivo), el('label', {}, 'Situação', status)),
+      el('label', {}, 'Anotação', nota),
+      el('div', { class: 'linha-form' },
+        el('button', { type: 'button', class: 'botao-primario', onclick: async (ev) => { ev.target.disabled = true; await marcar(org, k, motivo.value, status.value, nota.value.trim()); render(true); } }, atual ? 'Atualizar' : 'Colocar na lista'),
+        atual ? el('button', { type: 'button', class: 'botao', onclick: () => { delete revisao.itens[chaveRev(org.id, k)]; salvarRevisao(); render(true); } }, 'Tirar da lista') : null));
+  }
+
+  const itensRevisao = () => Object.entries(revisao.itens).map(([chave, i]) => ({ chave, ...i }));
+  const somaRev = (lista, campo) => soma(lista, (i) => i[campo] || 0);
+  function baixarArquivo(nome, conteudo, tipo) {
+    const a = el('a', { href: URL.createObjectURL(new Blob([conteudo], { type: tipo })), download: nome });
+    document.body.append(a); a.click(); a.remove();
+  }
+  function csvRevisao() {
+    const aspas = (v) => '"' + String(v ?? '').replace(/"/g, '""') + '"';
+    const cab = ['Órgão', 'Fornecedor', 'CNPJ', 'Objeto', 'Instrumento', 'Motivo', 'Situação da revisão', 'Anotação', 'Valor final', 'Por ano', 'Ainda a receber', 'Pago desde 2021',
+      'Vigência até', 'Alertas', 'Marcado em'];
+    const linhas = itensRevisao().sort((a, b) => b.anual - a.anual).map((i) => [i.orgNome, i.forn, i.cnpj, i.objeto, i.doc, MOTIVOS[i.motivo], STATUS[i.status], i.nota, i.vfin, i.anual,
+      i.restante, i.pago, i.fimef, (i.alertas || []).map((a) => (dados.alertas[a.split(':')[0]] ? dados.alertas[a.split(':')[0]].titulo : a)).join(' | '), i.em]);
+    return '﻿' + [cab, ...linhas].map((l) => l.map(aspas).join(';')).join('\r\n');
+  }
+  async function atualizarValores() {
+    let n = 0;
+    for (const orgId of [...new Set(itensRevisao().map((i) => i.org))]) {
+      let det;
+      try { det = await carregarOrg(orgId); } catch (e) { continue; }
+      const mapa = new Map(det.contratos.map(contrato).map((k) => [`${k.proc}|${k.doc}`, k]));
+      for (const [chave, i] of Object.entries(revisao.itens)) {
+        const k = i.org === orgId && mapa.get(`${i.proc}|${i.doc}`);
+        if (k) { Object.assign(revisao.itens[chave], { vfin: k.vfin, anual: k.anual, restante: k.restante, pago: k.pago, fimef: k.fimef, alertas: k.alertas, sit: k.sit, ref: dados.ref }); n++; }
+      }
+    }
+    salvarRevisao();
+    return n;
+  }
+
+  function renderRevisao(c) {
+    const f = estado.rev;
+    const todos = itensRevisao();
+    const lista = todos.filter((i) => (!f.status || i.status === f.status) && (!f.motivo || i.motivo === f.motivo) && (!f.org || String(i.org) === f.org))
+      .sort((a, b) => (b.anual || 0) - (a.anual || 0));
+    const kp = el('div', { class: 'kpis' },
+      kpi('Contratos na lista', nInt.format(todos.length), `${nInt.format(new Set(todos.map((i) => i.cnpj)).size)} fornecedores · ${nInt.format(new Set(todos.map((i) => i.org)).size)} órgãos`),
+      kpi('Compromisso anual', brlCompacto(somaRev(todos, 'anual')), 'soma do valor anual dos contratos marcados'),
+      kpi('Ainda a receber', brlCompacto(somaRev(todos, 'restante')), 'estimativa do que ainda será desembolsado até o fim das vigências'),
+      kpi('Já pago', brlCompacto(somaRev(todos, 'pago')), 'pagamentos vinculados aos empenhos dos contratos, desde 2021'));
+    const msg = el('p', { class: 'aviso solto', role: 'status', hidden: !estado.msg }, estado.msg || '');
+    const arquivo = el('input', { type: 'file', accept: 'application/json,.json', hidden: true, onchange: async (ev) => {
+      const a = ev.target.files[0];
+      if (!a) return;
+      try {
+        const j = JSON.parse(await a.text());
+        if (!j || typeof j.itens !== 'object') throw new Error('formato');
+        let n = 0;
+        for (const [k, v] of Object.entries(j.itens)) if (v && v.doc && v.org != null) { revisao.itens[k] = v; n++; }
+        if (j.titulo && !revisao.titulo) revisao.titulo = String(j.titulo).slice(0, 200);
+        salvarRevisao(); estado.msg = `${n} contrato(s) importado(s).`;
+      } catch (e) { estado.msg = 'Arquivo inválido: use um arquivo salvo por esta tela.'; }
+      render();
+    } });
+    const barra = el('div', { class: 'ferramentas' },
+      el('button', { type: 'button', class: 'botao-primario', disabled: !todos.length, onclick: () => ctx.irPara('relatorio') }, 'Gerar relatório para imprimir'),
+      el('button', { type: 'button', class: 'botao', disabled: !todos.length, onclick: () => baixarArquivo(`lista-de-revisao-${dados.ref}.csv`, csvRevisao(), 'text/csv;charset=utf-8') }, 'Exportar CSV'),
+      el('button', { type: 'button', class: 'botao', disabled: !todos.length, onclick: () => baixarArquivo(`lista-de-revisao-${dados.ref}.json`, JSON.stringify(revisao), 'application/json') }, 'Salvar lista (arquivo)'),
+      el('button', { type: 'button', class: 'botao', onclick: () => arquivo.click() }, 'Abrir lista salva'), arquivo,
+      el('button', { type: 'button', class: 'botao', disabled: !todos.length, onclick: async (ev) => { ev.target.disabled = true; const n = await atualizarValores(); estado.msg = `${n} contrato(s) com valores atualizados para a posição de ${dataBR(dados.ref)}.`; render(); } }, 'Atualizar valores'),
+      el('button', { type: 'button', class: 'botao', disabled: !todos.length, onclick: () => { if (confirm('Remover todos os contratos da lista de revisão neste navegador?')) { revisao.itens = {}; salvarRevisao(); estado.msg = ''; render(); } } }, 'Esvaziar'));
+    const sel = (campo, mapa, rotulo) => el('label', {}, rotulo, el('select', { onchange: (ev) => { f[campo] = ev.target.value; render(); } },
+      el('option', { value: '' }, 'Todos'), Object.entries(mapa).map(([v, r]) => el('option', { value: v, selected: f[campo] === v }, r))));
+    const orgsRev = Object.fromEntries([...new Map(todos.map((i) => [String(i.org), i.orgNome])).entries()].sort((a, b) => a[1].localeCompare(b[1], 'pt-BR')));
+    const filtros = el('div', { class: 'filtros' }, sel('status', STATUS, 'Situação'), sel('motivo', MOTIVOS, 'Motivo'), sel('org', orgsRev, 'Órgão'));
+    const edita = (i, campo, valor) => { revisao.itens[i.chave][campo] = valor; salvarRevisao(); };
+    const select = (mapa, i, campo) => el('select', { 'aria-label': campo, onchange: (ev) => { edita(i, campo, ev.target.value); if (campo === 'status' && f.status) render(); } },
+      Object.entries(mapa).map(([v, r]) => el('option', { value: v, selected: i[campo] === v }, r)));
+    const tabela = lista.length ? el('div', { class: 'rolagem' }, el('table', {},
+      el('thead', {}, el('tr', {}, ['Fornecedor e órgão', 'Objeto', 'Valores', 'Até quando', 'Motivo', 'Situação', 'Anotação', ''].map((t, n) => el('th', { class: n === 2 ? 'num' : '' }, t)))),
+      el('tbody', {}, lista.map((i) => el('tr', {},
+        el('td', {}, el('strong', {}, nomeProprio(i.forn)), el('small', {}, i.orgNome), el('small', {}, cnpjFmt(i.cnpj || ''))),
+        el('td', { class: 'objeto' }, i.objeto.length > 160 ? i.objeto.slice(0, 160) + '…' : i.objeto, el('small', {}, `${i.cat} · ${i.modal}`)),
+        el('td', { class: 'num' }, brlCompacto(i.anual) + ' por ano', el('small', {}, 'total ' + brlCompacto(i.vfin)), el('small', {}, 'a receber ' + brlCompacto(i.restante))),
+        el('td', {}, dataBR(i.fimef), el('small', {}, i.fimef ? 'faltam ' + duracao(mesesAte(i.fimef)) : '')),
+        el('td', {}, select(MOTIVOS, i, 'motivo')), el('td', {}, select(STATUS, i, 'status')),
+        el('td', {}, el('input', { type: 'text', value: i.nota || '', maxlength: 400, 'aria-label': 'Anotação', onchange: (ev) => edita(i, 'nota', ev.target.value.trim()) })),
+        el('td', {}, el('button', { type: 'button', class: 'botao', title: 'Tirar da lista', onclick: () => { delete revisao.itens[i.chave]; salvarRevisao(); render(); } }, '✕')))))))
+      : el('p', { class: 'vazio' }, todos.length ? 'Nenhum contrato corresponde aos filtros.' : 'A lista está vazia. Abra um órgão, clique numa linha de contrato e use "Colocar na lista"; ou use "Marcar" na tabela "Contratos para olhar primeiro", no painel do governo.');
+    c.replaceChildren(kp, msg, el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Lista de revisão'),
+      el('p', {}, 'Contratos a renegociar, rever ou apurar. A lista fica salva neste navegador; use "Salvar lista (arquivo)" para guardá-la ou levá-la a outro computador.'))),
+    barra, filtros, tabela));
+  }
+
+  // ---------- relatório para impressão ----------
+  function renderRelatorio(c) {
+    const f = estado.rev;
+    const todos = itensRevisao().filter((i) => f.decididos || i.status !== 'decidido');
+    const porOrg = new Map();
+    for (const i of todos) { if (!porOrg.has(i.org)) porOrg.set(i.org, []); porOrg.get(i.org).push(i); }
+    const orgs = [...porOrg.entries()].map(([id, lista]) => ({ id, nome: lista[0].orgNome, lista: lista.sort((a, b) => b.anual - a.anual), anual: somaRev(lista, 'anual'), restante: somaRev(lista, 'restante'), vfin: somaRev(lista, 'vfin') }))
+      .sort((a, b) => b.anual - a.anual);
+    const hoje = new Date().toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' });
+    const titulo_ = revisao.titulo || 'Contratos a rever';
+    const textoAlertas = (i) => (i.alertas || []).filter((a) => !a.endsWith(':i')).map((a) => (dados.alertas[a.split(':')[0]] ? dados.alertas[a.split(':')[0]].titulo : a));
+    const porMotivo = Object.entries(MOTIVOS).map(([m, r]) => { const l = todos.filter((i) => i.motivo === m); return [r, l.length, somaRev(l, 'anual'), somaRev(l, 'restante')]; }).filter((x) => x[1]);
+    const controles = el('div', { class: 'no-print cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Relatório para impressão'),
+      el('p', {}, 'Ajuste o título e a introdução, confira a prévia abaixo e use "Imprimir ou salvar em PDF" (no diálogo do navegador, escolha "Salvar como PDF").'))),
+    el('div', { class: 'filtros' },
+      el('label', { class: 'busca' }, 'Título do relatório', el('input', { type: 'text', value: revisao.titulo, placeholder: 'Contratos a rever', maxlength: 160, onchange: (ev) => { revisao.titulo = ev.target.value.trim(); salvarRevisao(); render(); } })),
+      el('label', { class: 'busca' }, 'Introdução (opcional)', el('textarea', { rows: 3, placeholder: 'Contexto, critério de escolha dos contratos, destinatário…', onchange: (ev) => { revisao.intro = ev.target.value.trim(); salvarRevisao(); render(); } }, revisao.intro))),
+    el('div', { class: 'ferramentas' },
+      el('button', { type: 'button', class: 'botao-primario', onclick: () => window.print() }, 'Imprimir ou salvar em PDF'),
+      el('button', { type: 'button', class: 'botao', onclick: () => ctx.irPara('revisao') }, 'Voltar à lista'),
+      el('label', { class: 'opcao' }, el('input', { type: 'checkbox', checked: !!f.decididos, onchange: (ev) => { f.decididos = ev.target.checked; render(); } }), ' Incluir os já decididos')));
+    if (!todos.length) return c.replaceChildren(controles, el('p', { class: 'vazio' }, 'Não há contratos para o relatório.'));
+    const cab = (cols) => el('thead', {}, el('tr', {}, cols.map((t, n) => el('th', { class: n ? 'num' : '' }, t))));
+    const resumo = el('table', { class: 'tabela-resumo' }, cab(['Órgão', 'Contratos', 'Por ano', 'Ainda a receber']),
+      el('tbody', {}, orgs.map((o) => el('tr', {}, el('td', {}, o.nome), el('td', { class: 'num' }, nInt.format(o.lista.length)), el('td', { class: 'num' }, brlCompacto(o.anual)), el('td', { class: 'num' }, brlCompacto(o.restante)))),
+        el('tr', { class: 'total' }, el('td', {}, 'Total'), el('td', { class: 'num' }, nInt.format(todos.length)), el('td', { class: 'num' }, brlCompacto(somaRev(todos, 'anual'))), el('td', { class: 'num' }, brlCompacto(somaRev(todos, 'restante'))))));
+    const motivos = el('table', { class: 'tabela-resumo' }, cab(['Motivo da revisão', 'Contratos', 'Por ano', 'Ainda a receber']),
+      el('tbody', {}, porMotivo.map(([r, n, a, rest]) => el('tr', {}, el('td', {}, r), el('td', { class: 'num' }, nInt.format(n)), el('td', { class: 'num' }, brlCompacto(a)), el('td', { class: 'num' }, brlCompacto(rest))))));
+    const secoes = orgs.map((o) => el('section', { class: 'rel-orgao' }, el('h3', {}, `${o.nome} · ${nInt.format(o.lista.length)} contrato(s) · ${brlCompacto(o.anual)} por ano`),
+      el('table', {}, el('thead', {}, el('tr', {}, ['#', 'Fornecedor e objeto', 'Valores', 'Vigência', 'Revisão'].map((t, n) => el('th', { class: n === 2 ? 'num' : '' }, t)))),
+        el('tbody', {}, o.lista.map((i, n) => {
+          const fi = i.fornInfo;
+          const linhaForn = fi ? [fi.situacao && `Receita: ${fi.situacao.toLowerCase()}`, fi.abertura && `aberta em ${dataBR(fi.abertura)}`, fi.porte, fi.capital != null && `capital ${brlCompacto(fi.capital)}`].filter(Boolean).join(' · ') : '';
+          return el('tr', {},
+            el('td', {}, String(n + 1)),
+            el('td', { class: 'objeto' }, el('strong', {}, nomeProprio(i.forn)), el('small', {}, cnpjFmt(i.cnpj || '') + ' · ' + i.doc), i.objeto, el('small', {}, `${i.cat} · ${i.modal} · ${ESS()[i.ess] || ''}`),
+              linhaForn ? el('small', {}, linhaForn) : null, fi && fi.socios.length ? el('small', {}, 'Sócios: ' + fi.socios.map(nomeProprio).join(', ')) : null,
+              textoAlertas(i).length ? el('small', { class: 'alertas-rel' }, 'Alertas: ' + textoAlertas(i).join('; ')) : null),
+            el('td', { class: 'num' }, brlCompacto(i.anual) + ' por ano', el('small', {}, 'total ' + brlCompacto(i.vfin)), el('small', {}, 'a receber ' + brlCompacto(i.restante)), i.pago > 0 ? el('small', {}, 'pago ' + brlCompacto(i.pago)) : null),
+            el('td', {}, `${dataBR(i.ini)} a ${dataBR(i.fimef)}`, el('small', {}, i.fimef ? 'faltam ' + duracao(mesesAte(i.fimef)) : 'sem prazo definido')),
+            el('td', {}, el('strong', {}, MOTIVOS[i.motivo]), el('small', {}, STATUS[i.status]), i.nota ? el('small', { class: 'nota-rel' }, i.nota) : null));
+        })))));
+    const relatorio = el('article', { class: 'relatorio' },
+      el('header', {}, el('p', { class: 'rel-sup' }, 'Painel Fiscal · Espírito Santo · Contratações'), el('h1', {}, titulo_),
+        el('p', { class: 'rel-data' }, `Emitido em ${hoje}. Posição dos dados: ${dataBR(dados.ref)}.`),
+        revisao.intro ? el('p', { class: 'rel-intro' }, revisao.intro) : null),
+      el('section', {}, el('h3', {}, 'Resumo'),
+        el('p', {}, `${nInt.format(todos.length)} contratos de ${nInt.format(new Set(todos.map((i) => i.cnpj)).size)} fornecedores em ${nInt.format(orgs.length)} órgãos, somando ${brlCompacto(somaRev(todos, 'anual'))} por ano e ${brlCompacto(somaRev(todos, 'restante'))} ainda a receber até o fim das vigências (estimativa).`),
+        resumo, el('div', { class: 'espaco' }), motivos),
+      ...secoes,
+      el('section', { class: 'rel-notas' }, el('h3', {}, 'Notas'),
+        el('p', {}, `Fontes: ${dados.fonte.contratos}; ${dados.fonte.cadastro}; execução da despesa (SIGEFES) do Portal da Transparência.`),
+        el('p', {}, 'Valor por ano é o valor final do contrato distribuído pela duração (no mínimo 12 meses). "A receber" é estimativa linear sobre o tempo restante. "Pago" soma os pagamentos dos empenhos que o SIGA vincula ao contrato, de 2021 em diante.'),
+        el('p', {}, 'Os alertas são regras objetivas de triagem e indicam onde olhar primeiro; não provam irregularidade. A classificação do objeto e a essencialidade são sugestões automáticas a validar. Este é um documento de trabalho.')));
+    c.replaceChildren(controles, relatorio);
+  }
+
   // ---------- montagem ----------
   function render(manterFoco) {
     if (!raiz || !$('#conteudo')) return;
@@ -556,7 +766,7 @@
     const c = $('#conteudo');
     ++tokenRender;
     c.classList.remove('carregando');
-    const pronto = estado.forn ? renderForn(c) : estado.org ? renderOrg(c) : renderGoverno(c);
+    const pronto = estado.tela === 'revisao' ? renderRevisao(c) : estado.tela === 'relatorio' ? renderRelatorio(c) : estado.forn ? renderForn(c) : estado.org ? renderOrg(c) : renderGoverno(c);
     if (rolagem != null) Promise.resolve(pronto).then(() => {
       window.scrollTo(0, rolagem);
       if (ativo) { const campo = $('#lista-contratos .busca input'); if (campo) { campo.focus(); campo.setSelectionRange(campo.value.length, campo.value.length); } }
@@ -570,7 +780,7 @@
           <h2 class="modulo-titulo">Contratações</h2>
           <p class="sub">Contratos do Poder Executivo por órgão, fornecedores, quadro societário e alertas de triagem para revisão.</p>
         </div>
-        <span id="mesref" class="mesref"></span>
+        <span class="topo-acoes"><button type="button" id="ir-revisao" class="botao">⚑ Lista de revisão (0)</button><span id="mesref" class="mesref"></span></span>
       </div>
       <nav id="trilha" class="trilha" aria-label="Navegação"></nav>
       <div id="conteudo"></div>
@@ -599,8 +809,10 @@
       return false;
     }
     preencherMetodo();
+    $('#ir-revisao').addEventListener('click', () => ctx.irPara('revisao'));
+    atualizarContador();
     return true;
   }
-  function desmontar() { dados = null; cacheOrg.clear(); cacheForn.clear(); listaBusca = null; todosForn = null; }
+  function desmontar() { revisao = lerRevisao(); dados = null; cacheOrg.clear(); cacheForn.clear(); listaBusca = null; todosForn = null; }
   PF.registrar({ id: 'contratacoes', titulo: 'Contratações', montar, aoNavegar, desmontar });
 })();

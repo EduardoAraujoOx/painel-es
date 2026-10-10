@@ -109,6 +109,12 @@ Para cada fornecedor a tela responde: quanto recebe por ano (compromisso anual d
 
 A **curva de Pareto** (governo e cada órgão) ordena os fornecedores pela medida escolhida (compromisso anual, empenhado ou o que ainda têm a receber), mostra quantos concentram o corte (80% por padrão, ajustável de 50% a 95%) e lista a classe A, com filtro por essencialidade. Os dados globais ficam em `data/contratacoes/fornecedores.json`.
 
+### Lista de revisão e relatório
+
+Qualquer contrato pode ser marcado para revisão (botão "Marcar" na tabela "Contratos para olhar primeiro", ou "Colocar na lista" no detalhe de um contrato do órgão), com motivo (renegociar, objeto dispensável ou adiável, rescindir ou não renovar, substituir por licitação, apurar indício, rever fornecedor), situação (a revisar, em análise, decidido) e anotação. A tela "Lista de revisão" (botão no topo do módulo) permite editar tudo, filtrar, exportar em CSV, salvar e reabrir a lista em arquivo JSON e atualizar os valores para a posição de dados mais recente. "Gerar relatório para imprimir" monta um documento com título e introdução editáveis, resumo por órgão e por motivo, o detalhe de cada contrato (valores, vigência, situação da empresa na Receita, sócios, alertas e anotação) e notas metodológicas; o botão "Imprimir ou salvar em PDF" usa a impressão do navegador, com estilo próprio (A4, preto e branco).
+
+**Onde a lista fica guardada:** no navegador de quem marcou (`localStorage`), não no servidor. Ela não é compartilhada entre pessoas nem entre computadores; para isso, use "Salvar lista (arquivo)" e "Abrir lista salva". Se for preciso uma lista única e compartilhada, será necessário um banco de dados (por exemplo, Supabase ou Vercel KV), com a mesma sessão de acesso do painel.
+
 ### Alertas (`pipeline/contratos/regras.py`)
 
 São regras objetivas de triagem, listadas na própria tela (rodapé "Fonte e método"): empenho após o fim da vigência, valor acima do inicial (25% e 50%), prorrogações sucessivas, duração acima de 5 anos, contratação direta de valor elevado, empenhado acima do contratado, empresa recém-aberta, situação cadastral irregular, capital social baixo, porte (ME/EPP) incompatível com o valor, sócio em comum com outro fornecedor, sócio com nome de servidor, endereço compartilhado, possível fracionamento de compras diretas, entre outros. **Indicam onde olhar primeiro; não provam irregularidade.** Os limites ficam em constantes no topo de `regras.py` (o limite de dispensa por valor deve ser conferido contra o decreto vigente).
