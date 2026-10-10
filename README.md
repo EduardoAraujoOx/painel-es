@@ -109,6 +109,20 @@ Para cada fornecedor a tela responde: quanto recebe por ano (compromisso anual d
 
 A **curva de Pareto** (governo e cada órgão) ordena os fornecedores pela medida escolhida (compromisso anual, empenhado ou o que ainda têm a receber), mostra quantos concentram o corte (80% por padrão, ajustável de 50% a 95%) e lista a classe A, com filtro por essencialidade. Os dados globais ficam em `data/contratacoes/fornecedores.json`.
 
+### Dívidas, sanções e vínculos políticos (`externos.py`)
+
+A ficha de cada fornecedor mostra o quadro societário (Receita Federal) e o cruza com três bases públicas:
+
+- **Dívida ativa da União** (PGFN, dados abertos: previdenciária, FGTS e não previdenciária), somada por CNPJ-raiz (todas as filiais), com a parte em cobrança, a ajuizada e a data da primeira inscrição.
+- **Sanções** do CEIS e do CNEP (CGU), para a empresa e para os sócios. O alerta é de nível alto para inidoneidade ou sanção aplicada por órgão do Espírito Santo, e médio quando aplicada em outro estado ou esfera (o alcance deve ser conferido).
+- **Vínculos eleitorais** (TSE, prestação de contas de candidatos e de órgãos partidários, eleições de 2018, 2020, 2022 e 2024): doações de sócios a candidatos e partidos (com destaque para candidatos a governador e vice no ES), sócios que foram candidatos, empresas contratadas por campanhas no ES e a própria empresa como doadora.
+
+**Como o sócio é reconhecido.** A Receita mascara o CPF dos sócios (`***123456**`, dígitos 4 a 9), enquanto o TSE e a CGU trazem o CPF inteiro. Dá-se o sócio como a mesma pessoa só quando o nome é igual e os seis dígitos conferem. O critério é forte, mas a conferência final é humana. Em sociedades anônimas, "sócio" inclui administradores. Doação eleitoral é ato legal e público: o painel aponta proximidade a conferir, não irregularidade. Não aparecem vínculos por parentesco, doações por terceiros e eleições anteriores a 2018 (nas de 2014 e antes, empresas podiam doar; os arquivos têm outro formato e não foram incluídos).
+
+```bash
+python3 -I pipeline/contratos/externos.py sancoes pgfn tse2018 tse2020 tse2022 tse2024   # rode os anos do TSE em processos separados para ir mais rápido
+```
+
 ### Lista de revisão e relatório
 
 Qualquer contrato pode ser marcado para revisão (botão "Marcar" na tabela "Contratos para olhar primeiro", ou "Colocar na lista" no detalhe de um contrato do órgão), com motivo (renegociar, objeto dispensável ou adiável, rescindir ou não renovar, substituir por licitação, apurar indício, rever fornecedor), situação (a revisar, em análise, decidido) e anotação. A tela "Lista de revisão" (botão no topo do módulo) permite editar tudo, filtrar, exportar em CSV, salvar e reabrir a lista em arquivo JSON e atualizar os valores para a posição de dados mais recente. "Gerar relatório para imprimir" monta um documento com título e introdução editáveis, resumo por órgão e por motivo, o detalhe de cada contrato (valores, vigência, situação da empresa na Receita, sócios, alertas e anotação) e notas metodológicas; o botão "Imprimir ou salvar em PDF" usa a impressão do navegador, com estilo próprio (A4, preto e branco).

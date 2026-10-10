@@ -196,3 +196,23 @@ ALERTAS["pago_sem_contrato"] = (MEDIA, "Pagamentos sem contrato vigente",
                                 "O fornecedor recebeu R$ 1 milhão ou mais nos últimos dois exercícios deste órgão sem ter contrato vigente nele (pode ser compra direta, ata ou contrato vencido).")
 ALERTAS["sem_pagamento"] = (INFO, "Contrato sem pagamento identificado",
                             "Contrato vigente há mais de um ano, de valor relevante, sem nenhum pagamento do órgão ao fornecedor desde 2021.")
+
+# --- cruzamentos externos (PGFN, CEIS/CNEP, TSE) --------------------------------------------------
+ALERTAS["divida_ativa"] = (MEDIA, "Dívida ativa com a União",
+                           "O CNPJ (qualquer filial) tem inscrições em dívida ativa da União (PGFN) em cobrança. Nível médio: R$ 500 mil ou mais, ou 10% do valor anual contratado; alto: R$ 5 milhões ou mais e acima do valor anual contratado.")
+ALERTAS["sancao_vigente"] = (ALTA, "Sanção vigente (CEIS/CNEP)",
+                             "Consta no cadastro de empresas sancionadas (CEIS ou CNEP) com sanção em vigor. Nível alto: inidoneidade ou sanção aplicada por órgão do Espírito Santo; médio: aplicada em outro estado ou esfera, cujo alcance sobre o Estado deve ser conferido.")
+ALERTAS["sancao_encerrada"] = (INFO, "Sanção anterior (CEIS/CNEP)",
+                               "Consta no CEIS ou CNEP com sanção já encerrada.")
+ALERTAS["socio_sancionado"] = (MEDIA, "Sócio sancionado",
+                               "Um sócio (nome e seis dígitos do CPF) consta no CEIS ou CNEP. Conferir a vigência e o alcance da sanção.")
+ALERTAS["doacao_governador"] = (MEDIA, "Sócio doou a candidato ao governo do ES",
+                                "Sócio ou administrador (nome e seis dígitos do CPF) doou a campanha de candidato a governador ou vice no Espírito Santo. Nível médio a partir de R$ 10 mil no total. Doação é ato legal e público; o dado indica proximidade a conferir.")
+ALERTAS["doacao_eleitoral"] = (INFO, "Sócio doador de campanhas",
+                               "Sócio (nome e seis dígitos do CPF) aparece como doador na prestação de contas de candidatos ou partidos (2018–2024).")
+ALERTAS["doacao_pj"] = (MEDIA, "Empresa consta como doadora",
+                        "O próprio CNPJ aparece como doador na prestação de contas de candidatos ou partidos (2018–2024).")
+ALERTAS["socio_candidato"] = (INFO, "Sócio foi candidato",
+                              "Sócio (nome e seis dígitos do CPF) concorreu a cargo eletivo em 2018–2024.")
+ALERTAS["fornecedor_campanha"] = (INFO, "Fornecedor de campanhas eleitorais",
+                                  "A empresa foi contratada por campanhas de candidatos no Espírito Santo (2018–2024), conforme a prestação de contas.")

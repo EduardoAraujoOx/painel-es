@@ -389,3 +389,5 @@ td input[type="text"] { min-width: 160px; }
   .relatorio td, .relatorio th { padding: 4px 6px; }
   .relatorio td small { color: #333; }
 }
+.lista-simples { margin: 4px 0 10px; padding-left: 18px; font-size: 13px; line-height: 1.5; }
+.cartao h3 { font-size: 14px; margin: 14px 0 6px; }

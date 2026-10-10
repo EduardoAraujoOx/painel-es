@@ -20,6 +20,7 @@ import shutil
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import externos as X  # noqa: E402
 import regras as R  # noqa: E402
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -243,6 +244,121 @@ def nomes_de_servidores():
     return nomes
 
 
+# ------------------------------------------------------------------------------- bases externas
+def carregar_externos(receita):
+    """PGFN, CEIS/CNEP e TSE (externos.py), reunidos por CNPJ-raiz e por CNPJ; vazio se ainda não foram gerados."""
+    ext = os.path.join(CACHE, "ext")
+    def ler_json(n):
+        try:
+            return json.load(open(os.path.join(ext, n)))
+        except OSError:
+            return None
+    pgfn, sanc = ler_json("pgfn.json"), ler_json("sancoes.json")
+    tse = None
+    for f in sorted(glob.glob(os.path.join(ext, "tse_20??.json"))):
+        d = json.load(open(f))
+        if tse is None:
+            tse = {"base": "TSE — prestação de contas eleitorais (candidatos e órgãos partidários), eleições de " + d["ano"].__str__(), "doacoes": [], "doacoes_pj": [], "candidatos": [], "despesas": [], "anos": []}
+        tse["anos"].append(d["ano"])
+        for k in ("doacoes", "doacoes_pj", "candidatos", "despesas"):
+            tse[k] += d[k]
+    if tse:
+        tse["base"] = "TSE — prestação de contas eleitorais (candidatos e órgãos partidários), eleições de " + ", ".join(str(a) for a in tse["anos"])
+    chaves = X.chaves_socios(receita)
+    por_raiz = collections.defaultdict(lambda: {"divida": None, "sancoes": [], "socios_sancionados": [], "doacoes": [], "candidatos": [], "campanhas": [], "doacoes_pj": []})
+    fontes = {}
+    if pgfn:
+        fontes["pgfn"] = pgfn["base"]
+        for raiz, d in pgfn["raizes"].items():
+            por_raiz[raiz]["divida"] = d
+    if sanc:
+        fontes["sancoes"] = sanc["base"]
+        for cnpj, itens in sanc["cnpj"].items():
+            por_raiz[cnpj[:8]]["sancoes"] += [dict(i, cnpj=cnpj) for i in itens]
+        for k, itens in sanc["socio"].items():
+            nome, d6 = k.split("|")
+            for raiz in chaves.get((nome, d6), ()):
+                por_raiz[raiz]["socios_sancionados"].append({"socio": nome, "itens": itens})
+    if tse:
+        fontes["tse"] = tse["base"]
+        for (nome, d6), ano, cand, cargo, uf, partido, tipo, valor, n in tse["doacoes"]:
+            for raiz in chaves.get((nome, d6), ()):
+                por_raiz[raiz]["doacoes"].append({"socio": nome, "ano": ano, "candidato": cand, "cargo": cargo, "uf": uf, "partido": partido, "tipo": tipo, "valor": valor, "n": n})
+        for (nome, d6), ano, cargo, uf, partido, cand in tse["candidatos"]:
+            for raiz in chaves.get((nome, d6), ()):
+                por_raiz[raiz]["candidatos"].append({"socio": nome, "ano": ano, "cargo": cargo, "uf": uf, "partido": partido})
+        for cnpj, ano, cand, cargo, uf, partido, valor in tse["despesas"]:
+            por_raiz[cnpj[:8]]["campanhas"].append({"cnpj": cnpj, "ano": ano, "candidato": cand, "cargo": cargo, "uf": uf, "partido": partido, "valor": valor})
+        for cnpj, ano, cand, cargo, uf, partido, tipo, valor in tse["doacoes_pj"]:
+            por_raiz[cnpj[:8]]["doacoes_pj"].append({"cnpj": cnpj, "ano": ano, "candidato": cand, "cargo": cargo, "uf": uf, "partido": partido, "tipo": tipo, "valor": valor})
+    return por_raiz, fontes
+
+
+def resumo_politico(e):
+    """Números-resumo para a lista global: doado a candidatos ao governo do ES, doado no total, dívida em cobrança, sanção em vigor."""
+    if not e:
+        return [0.0, 0.0, 0.0, 0]
+    gov = sum(x["valor"] for x in e["doacoes"] if x["uf"] == "ES" and re.match(r"(?i)(vice-)?governador", x["cargo"]))
+    tot = sum(x["valor"] for x in e["doacoes"])
+    cobr = sum(v for k, v in (e["divida"] or {"situ": {}})["situ"].items() if "cobran" in R.sem_acento(k).lower())
+    return [round(gov, 2), round(tot, 2), round(cobr, 2), int(any(sancao_vigente(i) for i in e["sancoes"]))]
+
+
+def sancao_vigente(item):
+    fim = item.get("fim") or ""
+    try:
+        return datetime.datetime.strptime(fim[:10], "%d/%m/%Y").date() >= REF
+    except ValueError:
+        return True     # sem data final: vale como em vigor
+
+
+def alertas_externos(cnpj, ext, valor_anual):
+    """Alertas e texto de apoio a partir das bases externas para um CNPJ."""
+    e = ext.get(cnpj[:8])
+    if not e:
+        return []
+    al = []
+    d = e["divida"]
+    if d:
+        cobranca = sum(v for k, v in d["situ"].items() if "cobran" in R.sem_acento(k).lower())
+        base = max(valor_anual, 1.0)
+        nivel = "a" if cobranca >= max(5_000_000, valor_anual) else "m" if cobranca >= max(500_000, 0.10 * valor_anual) else "i" if cobranca >= 50_000 else None
+        if nivel:
+            partes = ", ".join(f"{ {'fgts': 'FGTS', 'prev': 'previdenciária', 'naoprev': 'não previdenciária'}[k] } R$ {v:,.0f}".replace(",", ".") for k, v in d["tipos"].items() if v)
+            al.append(("divida_ativa", nivel, f"R$ {cobranca:,.0f} em cobrança (total inscrito R$ {d['total']:,.0f}; {partes}); R$ {d['ajuizado']:,.0f} já ajuizados. Em {d['n']} inscrições, a primeira em {d['primeira'] or 'data não informada'}.".replace(",", ".")))
+    vig = [i for i in e["sancoes"] if sancao_vigente(i)]
+    for i in vig[:3]:
+        # inidoneidade vale em todas as esferas; impedimento e suspensão valem, em regra, para o ente que os aplicou
+        nivel = "a" if ("inidone" in R.sem_acento(i["tipo"]).lower() or i["uf"] == "ES") else "m"
+        alcance = "" if nivel == "a" else " Aplicada fora do Espírito Santo: conferir se alcança contratações do Estado."
+        al.append(("sancao_vigente", nivel, f"{i['cad']}: {i['tipo']} ({i['ini']} a {i['fim'] or 'sem data final'}), {i['orgao']} ({i['esfera'].lower()}, {i['uf']})." + alcance))
+    if e["sancoes"] and not vig:
+        i = e["sancoes"][0]
+        al.append(("sancao_encerrada", "i", f"{i['cad']}: {i['tipo']} encerrada em {i['fim']} ({i['orgao']})."))
+    for s_ in e["socios_sancionados"]:
+        i = s_["itens"][0]
+        al.append(("socio_sancionado", "m" if any(sancao_vigente(x) for x in s_["itens"]) else "i", f"{s_['socio']}: {i['cad']}, {i['tipo']} ({i['ini']} a {i['fim'] or 'sem data final'}), {i['orgao']}."))
+    if e["doacoes"]:
+        gov = [x for x in e["doacoes"] if x["uf"] == "ES" and re.match(r"(?i)(vice-)?governador", x["cargo"])]
+        if gov:
+            tot = sum(x["valor"] for x in gov)
+            quem = ", ".join(sorted({f"{x['candidato']} ({x['ano']})" for x in gov})[:4])
+            al.append(("doacao_governador", "m" if tot >= 10_000 else "i", f"Sócios doaram R$ {tot:,.0f} a candidatos ao governo do ES: {quem}.".replace(",", ".")))
+        tot = sum(x["valor"] for x in e["doacoes"])
+        al.append(("doacao_eleitoral", "i", f"Sócios doaram R$ {tot:,.0f} em {sum(x['n'] for x in e['doacoes'])} doações a campanhas e partidos (2018–2024).".replace(",", ".")))
+    if e["doacoes_pj"]:
+        tot = sum(x["valor"] for x in e["doacoes_pj"])
+        al.append(("doacao_pj", "m", f"O próprio CNPJ consta como doador de R$ {tot:,.0f} em {len(e['doacoes_pj'])} registros.".replace(",", ".")))
+    if e["candidatos"]:
+        al.append(("socio_candidato", "i", "Sócio candidato: " + "; ".join(sorted({f"{x['socio']} ({x['cargo']}, {x['uf']}, {x['ano']}, {x['partido']})" for x in e["candidatos"]})[:3]) + "."))
+    camp = [x for x in e["campanhas"] if x["uf"] == "ES" and x["cnpj"] == cnpj]
+    if camp:
+        tot = sum(x["valor"] for x in camp)
+        if tot >= 20_000:
+            al.append(("fornecedor_campanha", "i", f"Contratada por campanhas no ES somando R$ {tot:,.0f} ({', '.join(sorted({x['candidato'] for x in camp})[:3])})".replace(",", ".") + "."))
+    return al
+
+
 # ----------------------------------------------------------------------------------- fornecedores
 SIT_CADASTRAL = {"01": "Nula", "2": "Ativa", "02": "Ativa", "3": "Suspensa", "03": "Suspensa", "4": "Inapta", "04": "Inapta",
                  "8": "Baixada", "08": "Baixada"}
@@ -336,6 +452,8 @@ def main():
             c["alertas"].append(("sem_pagamento", "i"))
     print(f"{len(recs)} documentos; {sum(c['vigente'] for c in recs)} contratos vigentes em {REF}", flush=True)
     fichas = fichas_fornecedores(recs, receita)
+    externos, fontes_ext = carregar_externos(receita)
+    print(f"externos: {sorted(fontes_ext)}; {sum(1 for e in externos.values() if e['doacoes'])} raízes com doação de sócios, {sum(1 for e in externos.values() if e['divida'])} com dívida ativa, {sum(1 for e in externos.values() if e['sancoes'])} com sanção", flush=True)
 
     # --- por fornecedor x órgão: contratado, empenhado, fracionamento
     fo = collections.defaultdict(lambda: {"cont": collections.Counter(), "emp": collections.Counter(), "n_av": 0, "dir": 0.0,
@@ -448,6 +566,8 @@ def main():
                     al.append(("socio_servidor", "m", f"{s['nome']}: nome igual ao de servidor ativo ({', '.join(s['servidor'][:4])})."))
                 if s["rede"] >= R.REDE_GRANDE:
                     al.append(("rede_grande", "i", f"{s['nome']} consta como sócio em {s['rede']} empresas."))
+        if len(c) == 14:
+            al += alertas_externos(c, externos, valor_ref)
         alertas_forn[c] = al
 
     # --- arquivos
@@ -576,7 +696,13 @@ def main():
                     "pagoAno": {str(y): round(v, 2) for y, v in sorted(pago_f.get(cnpj, {}).items())},
                     "desde": iso(g["desde"]), "ate": iso(g["ate"]),
                     "cat": g["cat_w"].most_common(1)[0][0] if g["cat_w"] else "", "ess": g["ess_w"].most_common(1)[0][0] if g["ess_w"] else "indefinido"} if g else None
-        f = dict(f, nome=nome, resumo=resumo_f, orgaos=sorted(orgs_forn[cnpj], key=lambda x: -x[5]),
+        ex_ = externos.get(cnpj[:8]) if len(cnpj) == 14 else None
+        externo = None
+        if ex_ and (ex_["divida"] or ex_["sancoes"] or ex_["socios_sancionados"] or ex_["doacoes"] or ex_["candidatos"] or ex_["campanhas"] or ex_["doacoes_pj"]):
+            externo = {"divida": ex_["divida"], "sancoes": ex_["sancoes"][:10], "sociosSancionados": [{"socio": x["socio"], "itens": x["itens"][:3]} for x in ex_["socios_sancionados"]][:5],
+                       "doacoes": sorted(ex_["doacoes"], key=lambda x: -x["valor"])[:40], "candidatos": ex_["candidatos"][:10],
+                       "campanhas": sorted([x for x in ex_["campanhas"] if x["cnpj"] == cnpj], key=lambda x: -x["valor"])[:15], "doacoesPj": sorted(ex_["doacoes_pj"], key=lambda x: -x["valor"])[:15]}
+        f = dict(f, nome=nome, resumo=resumo_f, externo=externo, orgaos=sorted(orgs_forn[cnpj], key=lambda x: -x[5]),
                  alertas=[[a, n, t] for a, n, t in alertas_forn.get(cnpj, [])])
         for s in f.get("socios", []):
             s["outros"] = [{"cnpj": o, "nome": next((fichas[o].get("razao") for _ in [0] if o in fichas), o)} for o in s.get("outros", [])]
@@ -609,16 +735,16 @@ def main():
                            iso(g["desde"]), iso(g["ate"]), len(set(g["orgs"])), g["vig"], g["cat_w"].most_common(1)[0][0] if g["cat_w"] else "",
                            g["ess_w"].most_common(1)[0][0] if g["ess_w"] else "indefinido",
                            [f"{a}:{n}" for a, n in unicos(alertas_forn.get(cnpj, [])).items()], sorted(set(g["orgs"]))[0] if g["orgs"] else 0, round(pago_rec, 2),
-                           fichas.get(cnpj, {}).get("natureza", "")])
+                           fichas.get(cnpj, {}).get("natureza", "")] + resumo_politico(externos.get(cnpj[:8]) if len(cnpj) == 14 else None))
     todos_forn.sort(key=lambda x: -(x[2] + x[4] + x[13]))
-    json.dump({"campos": ["cnpj", "nome", "anual", "restante", "emp", "desde", "ate", "nOrgs", "nVig", "cat", "ess", "alertas", "org", "pago", "natureza"], "fornecedores": todos_forn},
+    json.dump({"campos": ["cnpj", "nome", "anual", "restante", "emp", "desde", "ate", "nOrgs", "nVig", "cat", "ess", "alertas", "org", "pago", "natureza", "doadoGov", "doadoTot", "dividaCobranca", "sancaoVigente"], "fornecedores": todos_forn},
               open(os.path.join(DESTINO, "fornecedores.json"), "w"), ensure_ascii=False, separators=(",", ":"))
     busca = [[cnpj, f.get("razao") or nomes_forn.get(cnpj, ""), "; ".join(s["nome"] for s in f.get("socios", []) if s["tipo"] == "PF")]
              for cnpj, f in ((k, fichas.get(k, {})) for k in sorted(ativos))]
     json.dump(busca, open(os.path.join(DESTINO, "busca.json"), "w"), ensure_ascii=False, separators=(",", ":"))
     json.dump({"ref": iso(REF), "anosGasto": list(ANOS_GASTO), "receita": receita["publicacao"],
                "alertas": {k: {"nivel": v[0], "titulo": v[1], "descricao": v[2]} for k, v in R.ALERTAS.items()},
-               "limiteDispensa": R.LIMITE_DISPENSA, "execucaoAnos": EXEC["anos"], "essencialidade": R.ROTULO_ESSENCIALIDADE,
+               "limiteDispensa": R.LIMITE_DISPENSA, "fontesExternas": fontes_ext, "execucaoAnos": EXEC["anos"], "essencialidade": R.ROTULO_ESSENCIALIDADE,
                "fonte": {"contratos": "Portal da Transparência do ES — Contratos, Alterações Contratuais e Empenhos (SIGA)",
                          "cadastro": f"Receita Federal — dados abertos do CNPJ, publicação de {receita['publicacao']}"},
                "prioridades": prioridades[:80], "topFornecedores": top_forn,

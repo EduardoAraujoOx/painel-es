@@ -197,9 +197,10 @@
     })));
 
     const slot = el('div', {}, el('p', { class: 'vazio' }, 'Carregando a curva de Pareto…'));
-    c.replaceChildren(kp, el('div', { class: 'ferramentas' }, caixaBusca()), cartao, slot, cPrior, cForn);
+    const slotPol = el('div', {});
+    c.replaceChildren(kp, el('div', { class: 'ferramentas' }, caixaBusca()), cartao, slot, slotPol, cPrior, cForn);
     const meu = tokenRender;
-    return carregarTodosForn().then((lista) => { if (meu === tokenRender && slot.isConnected) slot.replaceChildren(cartaoPareto(paretoItensGoverno(lista), 'Regra de Pareto: poucos fornecedores, quase todo o valor')); },
+    return carregarTodosForn().then((lista) => { if (meu === tokenRender && slot.isConnected) { slot.replaceChildren(cartaoPareto(paretoItensGoverno(lista), 'Regra de Pareto: poucos fornecedores, quase todo o valor')); const cp = cartaoDoadores(paretoItensGoverno(lista)); if (cp) slotPol.replaceChildren(cp); } },
       (e) => { if (e.sessao) PF.mostrarLogin(); });
   }
 
@@ -384,6 +385,17 @@
   }
 
 
+  function cartaoDoadores(itens) {
+    const lista = itens.filter((x) => x.doadoGov > 0).sort((a, b) => (b.anual + b.pago) - (a.anual + a.pago));
+    if (!lista.length) return null;
+    return el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Fornecedores com sócios doadores de campanha ao governo do ES'),
+      el('p', {}, `${nInt.format(lista.length)} fornecedores têm sócio que doou a candidato a governador ou vice (2018 e 2022), conforme o TSE. Somam ${brlCompacto(soma(lista, (x) => x.anual))} por ano em contratos vigentes e ${brlCompacto(soma(lista, (x) => x.pago))} pagos em ${dados.anosGasto.join('–')}. Doação é legal e pública; o quadro mostra proximidade a conferir, não irregularidade. Clique para ver os detalhes.`))),
+    el('div', { class: 'rolagem' }, el('table', {}, el('thead', {}, el('tr', {}, ['Fornecedor', 'Doado ao governo', 'Contratado por ano', 'Pago recente', 'Até quando', 'Essencialidade'].map((t, n) => el('th', { class: n >= 1 && n <= 3 ? 'num' : '' }, t)))),
+      el('tbody', {}, lista.slice(0, 25).map((x) => el('tr', { class: 'clicavel', tabindex: '0', onclick: () => irForn(x.cnpj, null), onkeydown: (ev) => { if (ev.key === 'Enter') irForn(x.cnpj, null); } },
+        el('td', {}, el('strong', {}, nomeProprio(x.nome)), el('small', {}, x.cat || '')), el('td', { class: 'num' }, PF.nBRL.format(x.doadoGov)), el('td', { class: 'num' }, brlCompacto(x.anual)), el('td', { class: 'num' }, brlCompacto(x.pago)),
+        el('td', {}, x.ate ? dataBR(x.ate) : '—', el('small', {}, x.ate ? 'faltam ' + duracao(mesesAte(x.ate)) : '')), el('td', {}, tagEss(x.ess))))))));
+  }
+
   // ---------- regra de Pareto (curva ABC) ----------
   const BASES = { anual: ['Compromisso anual dos contratos vigentes', (x) => x.anual], pago: ['Pago em {ANOS}', (x) => x.pago], emp: ['Empenhado em {ANOS}', (x) => x.emp],
     restante: ['O que ainda têm a receber (estimativa)', (x) => x.restante] };
@@ -392,7 +404,7 @@
       ess: f.ess, cat: f.cat, alertas: f.alertas, nOrgs: 1, natureza: f.natureza }));
   }
   function paretoItensGoverno(lista) {
-    return lista.map((r) => ({ cnpj: r[0], nome: r[1], anual: r[2], pago: r[13], restante: r[3], emp: r[4], desde: r[5], ate: r[6], nOrgs: r[7], cat: r[9], ess: r[10], alertas: r[11], natureza: r[14] }));
+    return lista.map((r) => ({ cnpj: r[0], nome: r[1], anual: r[2], pago: r[13], restante: r[3], emp: r[4], desde: r[5], ate: r[6], nOrgs: r[7], cat: r[9], ess: r[10], alertas: r[11], natureza: r[14], doadoGov: r[15] || 0, doadoTot: r[16] || 0, dividaCobranca: r[17] || 0, sancao: r[18] || 0 }));
   }
   function cartaoPareto(itens, titulo_, origem) {
     const P = estado.par;
@@ -477,6 +489,51 @@
     return cartao;
   }
 
+  // ---------- situação fiscal, sanções e vínculos políticos (ficha do fornecedor) ----------
+  function cartaoFiscal(ex) {
+    if (!ex || !(ex.divida || (ex.sancoes && ex.sancoes.length) || (ex.sociosSancionados && ex.sociosSancionados.length))) return null;
+    const d = ex.divida;
+    const rotTipo = { fgts: 'FGTS', prev: 'Previdenciária', naoprev: 'Não previdenciária' };
+    const blocos = [];
+    if (d) {
+      const cobr = Object.entries(d.situ).filter(([k]) => /cobran/i.test(k.normalize('NFD').replace(/\p{Diacritic}/gu, ''))).reduce((t, [, v]) => t + v, 0);
+      blocos.push(el('dl', { class: 'detalhes grade2' },
+        el('dt', {}, 'Dívida ativa da União'), el('dd', {}, `${PF.nBRL.format(d.total)} inscritos em ${nInt.format(d.n)} inscrições (todas as filiais), ${PF.nBRL.format(cobr)} em cobrança`),
+        el('dt', {}, 'Por natureza'), el('dd', {}, Object.entries(d.tipos).map(([k, v]) => `${rotTipo[k] || k}: ${PF.nBRL.format(v)}`).join(' · ')),
+        el('dt', {}, 'Por situação'), el('dd', {}, Object.entries(d.situ).map(([k, v]) => `${k}: ${PF.nBRL.format(v)}`).join(' · ')),
+        el('dt', {}, 'Já ajuizado'), el('dd', {}, PF.nBRL.format(d.ajuizado) + (d.primeira ? ` · primeira inscrição em ${dataBR(d.primeira)}` : ''))));
+    }
+    const linhaSancao = (i, quem) => el('tr', {}, el('td', {}, quem || i.cad), el('td', {}, i.tipo), el('td', {}, `${i.ini || '—'} a ${i.fim || 'sem data final'}`), el('td', {}, `${i.orgao} (${(i.esfera || '').toLowerCase()}${i.uf ? ', ' + i.uf : ''})`));
+    const sancoes = [...(ex.sancoes || []).map((i) => linhaSancao(i, 'Empresa · ' + i.cad)), ...(ex.sociosSancionados || []).flatMap((x) => x.itens.map((i) => linhaSancao(i, `Sócio ${nomeProprio(x.socio)} · ${i.cad}`)))];
+    if (sancoes.length) blocos.push(el('div', { class: 'rolagem' }, el('table', {}, el('thead', {}, el('tr', {}, ['Quem · cadastro', 'Sanção', 'Período', 'Órgão sancionador'].map((t) => el('th', {}, t)))), el('tbody', {}, sancoes))));
+    return el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Situação fiscal e sanções'),
+      el('p', {}, `Dívida ativa da União (PGFN) por CNPJ-raiz e cadastros de sanções (CEIS e CNEP, da CGU). Conferir o alcance de cada sanção e se a dívida está garantida ou parcelada.`))), ...blocos);
+  }
+  function cartaoPolitico(ex, f) {
+    if (!ex || !((ex.doacoes && ex.doacoes.length) || (ex.candidatos && ex.candidatos.length) || (ex.campanhas && ex.campanhas.length) || (ex.doacoesPj && ex.doacoesPj.length))) return null;
+    const blocos = [];
+    if (ex.doacoes && ex.doacoes.length) {
+      const tot = soma(ex.doacoes, (x) => x.valor);
+      blocos.push(el('h3', {}, `Doações de sócios: ${PF.nBRL.format(tot)} em ${nInt.format(soma(ex.doacoes, (x) => x.n))} doações`),
+        el('div', { class: 'rolagem' }, el('table', {}, el('thead', {}, el('tr', {}, ['Sócio', 'Ano', 'Destino', 'Cargo', 'Valor'].map((t, n) => el('th', { class: n === 4 ? 'num' : '' }, t)))),
+          el('tbody', {}, ex.doacoes.map((x) => el('tr', {}, el('td', {}, nomeProprio(x.socio)), el('td', {}, String(x.ano)),
+            el('td', {}, x.tipo === 'partidos' ? `Órgão partidário · ${x.partido}` : `${nomeProprio(x.candidato)} · ${x.partido}`),
+            el('td', {}, `${x.cargo}${x.uf ? ' · ' + x.uf : ''}`), el('td', { class: 'num' }, PF.nBRL.format(x.valor))))))));
+    }
+    if (ex.candidatos && ex.candidatos.length) {
+      blocos.push(el('h3', {}, 'Sócios que foram candidatos'), el('ul', { class: 'lista-simples' }, ex.candidatos.map((x) => el('li', {}, `${nomeProprio(x.socio)}: ${x.cargo}, ${x.uf}, ${x.ano}, ${x.partido}`))));
+    }
+    if (ex.campanhas && ex.campanhas.length) {
+      blocos.push(el('h3', {}, 'Campanhas que contrataram a empresa'), el('div', { class: 'rolagem' }, el('table', {}, el('thead', {}, el('tr', {}, ['Ano', 'Candidato', 'Cargo', 'Valor contratado'].map((t, n) => el('th', { class: n === 3 ? 'num' : '' }, t)))),
+        el('tbody', {}, ex.campanhas.map((x) => el('tr', {}, el('td', {}, String(x.ano)), el('td', {}, `${nomeProprio(x.candidato)} · ${x.partido}`), el('td', {}, `${x.cargo} · ${x.uf}`), el('td', { class: 'num' }, PF.nBRL.format(x.valor))))))));
+    }
+    if (ex.doacoesPj && ex.doacoesPj.length) {
+      blocos.push(el('h3', {}, 'A própria empresa como doadora'), el('ul', { class: 'lista-simples' }, ex.doacoesPj.map((x) => el('li', {}, `${x.ano}: ${PF.nBRL.format(x.valor)} para ${x.tipo === 'partidos' ? 'órgão partidário ' + x.partido : nomeProprio(x.candidato) + ' (' + x.cargo + ', ' + x.uf + ')'}`))));
+    }
+    return el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Vínculos políticos e eleitorais'),
+      el('p', {}, 'Prestação de contas de campanhas e partidos (TSE, 2018 a 2024) cruzada com os sócios. O sócio só é dado como a mesma pessoa quando o nome é igual e os seis dígitos do meio do CPF conferem. Doação é ato legal e público; o dado mostra proximidade a conferir, não irregularidade. A ausência de registro não prova ausência de vínculo: parentes, doações por terceiros e eleições anteriores a 2018 não estão aqui.'))), ...blocos);
+  }
+
   // ---------- visão: fornecedor ----------
   async function carregarForn(cnpj) {
     const fatia = cnpj.length === 14 ? cnpj.slice(0, 2) : 'pf';
@@ -546,7 +603,7 @@
       graficoBarras(cPagos, { meses: anos, rotulo: (m) => m, rotuloLongo: (m) => m, eixo: brlCompacto, fmt: brlCompacto,
         series: [{ nome: 'Pago', cor: 'var(--serie-1)', barra: true, vals: anos.map((a) => r.pagoAno[a]) }] });
     }
-    c.replaceChildren(...[faixa, ficha, cPagos, alertas, socios, orgs].filter(Boolean));
+    c.replaceChildren(...[faixa, ficha, cPagos, alertas, cartaoPolitico(f.externo, f), cartaoFiscal(f.externo), socios, orgs].filter(Boolean));
   }
 
   // ---------- lista de revisão ----------
