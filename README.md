@@ -97,6 +97,12 @@ Contratos, alterações contratuais e empenhos do Portal da Transparência do ES
 
 Contrato vigente é o instrumento do tipo contrato, carta-contrato ou termo de adesão cuja data final (com aditivos de prazo) não passou e cuja situação não é de encerramento. Valor final é o valor total do instrumento (em registro de preços, costuma ser o máximo estimado). Compromisso anual é o valor final dividido pela duração em meses (mínimo 12) vezes 12. Saldo a executar é o valor final menos o empenhado. **Os empenhos do SIGA não cobrem toda a execução** (obras do DER, por exemplo, quase não aparecem): a tela avisa quando a cobertura é baixa.
 
+### Visão por empresa e regra de Pareto
+
+Para cada fornecedor a tela responde: quanto recebe por ano (compromisso anual dos contratos vigentes, e o empenhado recente), desde quando (data do primeiro instrumento no SIGA; a base começa em 2016), por mais quanto tempo (data final dos contratos vigentes) e quanto ainda tem a receber (estimativa linear: valor anual vezes o tempo restante, limitado ao valor final). A **essencialidade** do objeto é uma classificação sugerida pelo tipo de objeto (`ESSENCIALIDADE` em `regras.py`): essencial (saúde, alimentação, utilidades, vigilância, transporte escolar), suporte, investimento (obras e equipamentos, que podem ser adiados) e discricionário (publicidade, eventos, consultoria e capacitação). Serve para orientar a conversa com o gestor e deve ser validada por ele.
+
+A **curva de Pareto** (governo e cada órgão) ordena os fornecedores pela medida escolhida (compromisso anual, empenhado ou o que ainda têm a receber), mostra quantos concentram o corte (80% por padrão, ajustável de 50% a 95%) e lista a classe A, com filtro por essencialidade. Os dados globais ficam em `data/contratacoes/fornecedores.json`.
+
 ### Alertas (`pipeline/contratos/regras.py`)
 
 São regras objetivas de triagem, listadas na própria tela (rodapé "Fonte e método"): empenho após o fim da vigência, valor acima do inicial (25% e 50%), prorrogações sucessivas, duração acima de 5 anos, contratação direta de valor elevado, empenhado acima do contratado, empresa recém-aberta, situação cadastral irregular, capital social baixo, porte (ME/EPP) incompatível com o valor, sócio em comum com outro fornecedor, sócio com nome de servidor, endereço compartilhado, possível fracionamento de compras diretas, entre outros. **Indicam onde olhar primeiro; não provam irregularidade.** Os limites ficam em constantes no topo de `regras.py` (o limite de dispensa por valor deve ser conferido contra o decreto vigente).

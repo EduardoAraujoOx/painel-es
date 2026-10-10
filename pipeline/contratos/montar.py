@@ -140,6 +140,9 @@ def avaliar_contrato(c):
     c["meses"] = meses
     c["anual"] = c["vfin"] / max(meses, 12.0) * 12.0 if c["vfin"] else 0.0
     c["saldo"] = c["vfin"] - c["emp_tot"] if c["inst"] == "contrato" else None
+    c["ess"] = R.essencialidade(c["cat"], c["objeto"])
+    meses_rest = max(0.0, (c["fim_ef"] - REF).days / 30.4375) if c["fim_ef"] else 0.0
+    c["restante"] = min(c["vfin"], c["anual"] * meses_rest / 12.0) if c["vigente"] else 0.0   # quanto ainda deve receber até o fim da vigência (estimativa linear)
     al = []
     if c["inst"] == "contrato":
         if c["fim_ef"] and any(a > c["fim_ef"].year and a >= REF.year - 1 for a in c["emp"]):
@@ -249,7 +252,8 @@ def main():
     # --- por fornecedor x órgão: contratado, empenhado, fracionamento
     fo = collections.defaultdict(lambda: {"cont": collections.Counter(), "emp": collections.Counter(), "n_av": 0, "dir": 0.0,
                                          "vig": 0, "anual": 0.0, "saldo": 0.0, "n_ct": 0, "dir_docs": collections.defaultdict(list),
-                                         "nome": ""})
+                                         "nome": "", "desde": None, "ate": None, "restante": 0.0,
+                                         "ess_w": collections.Counter(), "cat_w": collections.Counter()})
     org_nome, org_ano_cont, org_ano_emp = {}, collections.defaultdict(collections.Counter), collections.defaultdict(collections.Counter)
     org_cat, org_modal = collections.defaultdict(collections.Counter), collections.defaultdict(collections.Counter)
     for c in recs:
@@ -257,6 +261,14 @@ def main():
         a = fo[(c["org"], c["cnpj"])]
         a["nome"] = a["nome"] or c["forn"]
         ano = c["cel"].year if c["cel"] else None
+        if c["cel"] and (a["desde"] is None or c["cel"] < a["desde"]):
+            a["desde"] = c["cel"]
+        peso = (c["anual"] if c["vigente"] else 0.0) + sum(v for y, v in c["emp"].items() if y in ANOS_GASTO)
+        a["ess_w"][c["ess"]] += peso
+        a["cat_w"][c["cat"]] += peso
+        if c["vigente"] and c["fim_ef"] and (a["ate"] is None or c["fim_ef"] > a["ate"]):
+            a["ate"] = c["fim_ef"]
+        a["restante"] += c["restante"]
         if ano:
             a["cont"][ano] += c["vfin"]
             org_ano_cont[c["org"]][ano] += c["vfin"]
@@ -367,7 +379,7 @@ def main():
         return melhor
 
     pontos_forn = {k: sum(nivel_peso[n] for n in unicos(v).values()) for k, v in alertas_forn.items()}
-    CAMPOS = ["doc", "proc", "forn", "cnpj", "objeto", "cat", "modal", "vini", "vfin", "cel", "ini", "fim", "fimef", "sit", "anual", "saldo", "empAnt", "empAtu", "npror", "rp", "alertas"]
+    CAMPOS = ["doc", "proc", "forn", "cnpj", "objeto", "cat", "modal", "vini", "vfin", "cel", "ini", "fim", "fimef", "sit", "anual", "saldo", "empAnt", "empAtu", "npror", "rp", "ess", "restante", "alertas"]
     for org in sorted(org_nome):
         meus = [c for c in recs if c["org"] == org]
         alvo = [c for c in meus if c["vigente"] or any(a[0] == "vigencia_vencida" for a in c["alertas"])]
@@ -375,7 +387,7 @@ def main():
         contratos = [[c["doc"], c["proc"], titulo(c["forn"]) if c["forn"].isupper() else c["forn"], c["cnpj"], c["objeto"][:300], c["cat"], c["modal"],
                       round(c["vini"], 2), round(c["vfin"], 2), iso(c["cel"]), iso(c["ini"]), iso(c["fim"]), iso(c["fim_ef"]), c["sit"],
                       round(c["anual"], 2), None if c["saldo"] is None else round(c["saldo"], 2),
-                      round(c["emp"].get(ANOS_GASTO[0], 0.0), 2), round(c["emp"].get(ANOS_GASTO[1], 0.0), 2), c["n_pror"], int(c["reg_preco"]),
+                      round(c["emp"].get(ANOS_GASTO[0], 0.0), 2), round(c["emp"].get(ANOS_GASTO[1], 0.0), 2), c["n_pror"], int(c["reg_preco"]), c["ess"], round(c["restante"], 2),
                       [f"{a}:{n}" for a, n in c["alertas"]]] for c in alvo]
         for c in alvo:
             pc = sum(nivel_peso[n] for _, n in c["alertas"])
@@ -400,6 +412,8 @@ def main():
             forns.append({"cnpj": cnpj, "nome": titulo(a["nome"]) if a["nome"].isupper() else a["nome"], "vig": a["vig"], "anual": round(a["anual"], 2),
                           "saldo": round(a["saldo"], 2), "empAnt": round(a["emp"].get(ANOS_GASTO[0], 0.0), 2), "empAtu": round(a["emp"].get(ANOS_GASTO[1], 0.0), 2),
                           "cont": round(cont_recente, 2), "direta": round(a["dir"], 2), "nAvulsos": a["n_av"],
+                          "desde": iso(a["desde"]), "ate": iso(a["ate"]), "restante": round(a["restante"], 2),
+                          "cat": a["cat_w"].most_common(1)[0][0] if a["cat_w"] else "", "ess": a["ess_w"].most_common(1)[0][0] if a["ess_w"] else "indefinido",
                           "alertas": [f"{a}:{n}" for a, n in unicos(al).items()], "risco": sum(nivel_peso[n] for n in unicos(al).values())})
         forns.sort(key=lambda x: -(x["empAnt"] + x["empAtu"] + x["anual"]))
         total_emp = sum(x["empAnt"] + x["empAtu"] for x in forns) or 1.0
@@ -439,11 +453,29 @@ def main():
         if cnpj in ativos:
             orgs_forn[cnpj].append([o, titulo(org_nome[o]), a["n_ct"], a["vig"], round(a["anual"], 2), round(sum(a["emp"].values()), 2),
                                     round(sum(a["emp"].get(y, 0.0) for y in ANOS_GASTO), 2)])
+    glob_f = {}
+    for (o, cnpj), a in fo.items():
+        g = glob_f.setdefault(cnpj, {"anual": 0.0, "restante": 0.0, "emp": 0.0, "desde": None, "ate": None, "vig": 0, "orgs": [],
+                                     "ess_w": collections.Counter(), "cat_w": collections.Counter()})
+        g["anual"] += a["anual"]
+        g["restante"] += a["restante"]
+        g["emp"] += sum(a["emp"].get(y, 0.0) for y in ANOS_GASTO)
+        g["vig"] += a["vig"]
+        g["desde"] = a["desde"] if g["desde"] is None or (a["desde"] and a["desde"] < g["desde"]) else g["desde"]
+        g["ate"] = a["ate"] if g["ate"] is None or (a["ate"] and a["ate"] > g["ate"]) else g["ate"]
+        g["ess_w"].update(a["ess_w"])
+        g["cat_w"].update(a["cat_w"])
+        if a["vig"] or sum(a["emp"].get(y, 0.0) for y in ANOS_GASTO) > 0:
+            g["orgs"].append(o)
     fatias = collections.defaultdict(dict)
     for cnpj in ativos:
         f = fichas.get(cnpj, {"cnpj": cnpj, "cadastro": False, "socios": []})
         nome = f.get("razao") or next((c["forn"] for c in recs if c["cnpj"] == cnpj), "")
-        f = dict(f, nome=nome, orgaos=sorted(orgs_forn[cnpj], key=lambda x: -x[5]),
+        g = glob_f.get(cnpj)
+        resumo_f = {"anual": round(g["anual"], 2), "restante": round(g["restante"], 2), "emp": round(g["emp"], 2), "vig": g["vig"],
+                    "desde": iso(g["desde"]), "ate": iso(g["ate"]),
+                    "cat": g["cat_w"].most_common(1)[0][0] if g["cat_w"] else "", "ess": g["ess_w"].most_common(1)[0][0] if g["ess_w"] else "indefinido"} if g else None
+        f = dict(f, nome=nome, resumo=resumo_f, orgaos=sorted(orgs_forn[cnpj], key=lambda x: -x[5]),
                  alertas=[[a, n, t] for a, n, t in alertas_forn.get(cnpj, [])])
         for s in f.get("socios", []):
             s["outros"] = [{"cnpj": o, "nome": next((fichas[o].get("razao") for _ in [0] if o in fichas), o)} for o in s.get("outros", [])]
@@ -467,12 +499,23 @@ def main():
         nomes_forn.setdefault(c["cnpj"], c["forn"])
     top_forn = [{"cnpj": k, "nome": fichas.get(k, {}).get("razao") or nomes_forn.get(k, k), "anual": round(v["anual"], 2), "emp": round(v["emp"], 2),
                  "orgaos": len(v["orgs"]), "alertas": [f"{a}:{n}" for a, n in unicos(alertas_forn.get(k, [])).items() if n != "i"]} for k, v in top_forn]
+    todos_forn = []
+    for cnpj, g in glob_f.items():
+        if g["anual"] <= 0 and g["emp"] <= 0:
+            continue
+        todos_forn.append([cnpj, titulo(fichas.get(cnpj, {}).get("razao") or nomes_forn.get(cnpj, cnpj)), round(g["anual"], 2), round(g["restante"], 2), round(g["emp"], 2),
+                           iso(g["desde"]), iso(g["ate"]), len(set(g["orgs"])), g["vig"], g["cat_w"].most_common(1)[0][0] if g["cat_w"] else "",
+                           g["ess_w"].most_common(1)[0][0] if g["ess_w"] else "indefinido",
+                           [f"{a}:{n}" for a, n in unicos(alertas_forn.get(cnpj, [])).items()], sorted(set(g["orgs"]))[0] if g["orgs"] else 0])
+    todos_forn.sort(key=lambda x: -(x[2] + x[4]))
+    json.dump({"campos": ["cnpj", "nome", "anual", "restante", "emp", "desde", "ate", "nOrgs", "nVig", "cat", "ess", "alertas", "org"], "fornecedores": todos_forn},
+              open(os.path.join(DESTINO, "fornecedores.json"), "w"), ensure_ascii=False, separators=(",", ":"))
     busca = [[cnpj, f.get("razao") or nomes_forn.get(cnpj, ""), "; ".join(s["nome"] for s in f.get("socios", []) if s["tipo"] == "PF")]
              for cnpj, f in ((k, fichas.get(k, {})) for k in sorted(ativos))]
     json.dump(busca, open(os.path.join(DESTINO, "busca.json"), "w"), ensure_ascii=False, separators=(",", ":"))
     json.dump({"ref": iso(REF), "anosGasto": list(ANOS_GASTO), "receita": receita["publicacao"],
                "alertas": {k: {"nivel": v[0], "titulo": v[1], "descricao": v[2]} for k, v in R.ALERTAS.items()},
-               "limiteDispensa": R.LIMITE_DISPENSA,
+               "limiteDispensa": R.LIMITE_DISPENSA, "essencialidade": R.ROTULO_ESSENCIALIDADE,
                "fonte": {"contratos": "Portal da Transparência do ES — Contratos, Alterações Contratuais e Empenhos (SIGA)",
                          "cadastro": f"Receita Federal — dados abertos do CNPJ, publicação de {receita['publicacao']}"},
                "prioridades": prioridades[:80], "topFornecedores": top_forn,

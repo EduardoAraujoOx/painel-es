@@ -17,13 +17,18 @@
   const estado = {
     medida: 'anual', vista: 'mapa', ordemOrgs: { col: 'anualVigente', dir: -1 },
     org: null, forn: null, origem: null, verTodosForn: false, verMaisPrioridades: false,
-    f: { situ: 'vigentes', cat: '', modal: '', alerta: '', q: '' }, ordem: { col: 'anual', dir: -1 }, limite: 50,
+    f: { situ: 'vigentes', cat: '', modal: '', alerta: '', ess: '', q: '' }, par: { base: 'anual', ess: new Set(), corte: 80, mais: 10 }, ordem: { col: 'anual', dir: -1 }, limite: 50,
     aberto: new Set(),
   };
   const PESO = { a: 3, m: 1, i: 0 };
   const NIVEL = { a: 'Alta', m: 'Média', i: 'Info' };
 
   // ---------- utilidades ----------
+  const ESS = () => dados.essencialidade;
+  const mesesAte = (iso) => (iso ? Math.max(0, Math.round((new Date(iso) - new Date(dados.ref)) / 2629800000)) : null);
+  const duracao = (m) => (m == null ? '—' : m < 1 ? 'menos de 1 mês' : m < 24 ? `${m} ${m === 1 ? 'mês' : 'meses'}` : `${(m / 12).toLocaleString('pt-BR', { maximumFractionDigits: 1 })} anos`);
+  const anosDesde = (iso) => (iso ? Math.max(0, (new Date(dados.ref) - new Date(iso)) / 31557600000) : null);
+  const tagEss = (e) => el('span', { class: 'tag-ess e-' + e, title: 'Classificação sugerida pelo tipo de objeto; valide com o gestor' }, ESS()[e] || e);
   const dataBR = (iso) => (iso ? iso.split('-').reverse().join('/') : '—');
   const pct = (x) => (x == null ? '—' : x > 0 && x < 0.01 ? '<1%' : (x * 100).toLocaleString('pt-BR', { maximumFractionDigits: 0 }) + '%');
   const cnpjFmt = (c) => (c.length === 14 ? c.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})$/, '$1.$2.$3/$4-$5')
@@ -55,7 +60,7 @@
   const contrato = (linha) => Object.fromEntries(CAMPOS.map((k, i) => [k, linha[i]]));
 
   // ---------- navegação ----------
-  function irOrg(id) { estado.f = { situ: 'vigentes', cat: '', modal: '', alerta: '', q: '' }; estado.limite = 50; estado.aberto.clear(); estado.verTodosForn = false; ctx.irPara(String(id)); }
+  function irOrg(id) { estado.f = { situ: 'vigentes', cat: '', modal: '', alerta: '', ess: '', q: '' }; estado.limite = 50; estado.aberto.clear(); estado.verTodosForn = false; ctx.irPara(String(id)); }
   function irForn(cnpj, origem) { estado.origem = origem == null ? estado.org : origem; ctx.irPara('f:' + cnpj); }
   function aoNavegar(resto) {
     if (!dados) return;
@@ -79,6 +84,12 @@
     }
     if (estado.forn) { itens.push(sep()); itens.push(el('span', { class: 'atual' }, 'Fornecedor ' + cnpjFmt(estado.forn))); }
     t.replaceChildren(...itens);
+  }
+
+  let todosForn = null;
+  async function carregarTodosForn() {
+    if (!todosForn) todosForn = (await ctx.api('fornecedores')).fornecedores;
+    return todosForn;
   }
 
   // ---------- busca de fornecedor ----------
@@ -180,7 +191,11 @@
       return el('div', { class: 'linha-com-selos' }, b, f.alertas.length ? selos(f.alertas, 2) : null);
     })));
 
-    c.replaceChildren(kp, el('div', { class: 'ferramentas' }, caixaBusca()), cartao, cPrior, cForn);
+    const slot = el('div', {}, el('p', { class: 'vazio' }, 'Carregando a curva de Pareto…'));
+    c.replaceChildren(kp, el('div', { class: 'ferramentas' }, caixaBusca()), cartao, slot, cPrior, cForn);
+    const meu = tokenRender;
+    return carregarTodosForn().then((lista) => { if (meu === tokenRender && slot.isConnected) slot.replaceChildren(cartaoPareto(paretoItensGoverno(lista), 'Regra de Pareto: poucos fornecedores, quase todo o valor')); },
+      (e) => { if (e.sessao) PF.mostrarLogin(); });
   }
 
   function tabelaOrgs() {
@@ -211,6 +226,7 @@
     if (f.situ === 'vigentes' && !vigenteOuNao) return false;
     if (f.situ === 'vencidos' && !venc) return false;
     if (f.cat && k.cat !== f.cat) return false;
+    if (f.ess && k.ess !== f.ess) return false;
     if (f.modal && k.modal !== f.modal) return false;
     if (f.alerta === 'alto' && !k.alertas.some((a) => a.endsWith(':a'))) return false;
     if (f.alerta === 'algum' && !k.alertas.length) return false;
@@ -255,16 +271,17 @@
       for (const k of vig) m.set(k[campo], (m.get(k[campo]) || 0) + k.anual);
       return [...m].sort((a, b) => b[1] - a[1]);
     };
-    const barras = (lista, campo, titulo_, sub) => {
+    const barras = (lista, campo, titulo_, sub, rot = (x) => x) => {
       const max = Math.max(1, ...lista.map((x) => x[1]));
       return el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, titulo_), el('p', {}, sub))),
         lista.length ? el('div', { class: 'linhas' }, lista.slice(0, 10).map(([n, v]) => el('button', { type: 'button', class: 'linha-barra' + (estado.f[campo] === n ? ' ativa' : ''),
           onclick: () => { estado.f[campo] = estado.f[campo] === n ? '' : n; estado.limite = 50; render(); } },
-        el('span', { class: 'nome' }, n), el('span', { class: 'trilho' }, el('i', { class: 'barra', style: `width:${Math.max(0.5, (v / max) * 64)}%` }),
+        el('span', { class: 'nome' }, rot(n)), el('span', { class: 'trilho' }, el('i', { class: 'barra', style: `width:${Math.max(0.5, (v / max) * 64)}%` }),
           el('span', { class: 'num' }, brlCompacto(v)))))) : el('p', { class: 'vazio' }, 'Sem contratos vigentes.'));
     };
     const cCat = barras(por('cat'), 'cat', 'O que se contrata', 'Compromisso anual dos contratos vigentes por tipo de objeto (classificação automática por palavras-chave). Clique para filtrar a lista.');
     const cMod = barras(por('modal'), 'modal', 'Como se contrata', 'Compromisso anual por modalidade do processo. Dispensa e inexigibilidade dispensam a competição.');
+    const cEss = barras(por('ess'), 'ess', 'Quão essencial é', 'Compromisso anual por essencialidade sugerida do objeto: essencial (saúde, alimentação, utilidades), suporte, investimento (adiável) e discricionário (cortável).', (x) => ESS()[x] || x);
 
     // fornecedores
     const forns = det.fornecedores;
@@ -289,7 +306,7 @@
     graficoBarras(cSerie, { meses: det.serie.anos.map(String), rotulo: (m) => m, rotuloLongo: (m) => m, eixo: brlCompacto, fmt: brlCompacto,
       series: [{ nome: 'Contratado', cor: 'var(--serie-1)', barra: true, vals: det.serie.contratado }, { nome: 'Empenhado', cor: 'var(--serie-2)', barra: true, vals: det.serie.empenhado }] });
 
-    c.replaceChildren(...[kp, aviso, el('div', { class: 'duas-colunas' }, cCat, cMod), cForn, cSerie, cartaoContratos(todos, org)].filter(Boolean));
+    c.replaceChildren(...[kp, aviso, el('div', { class: 'duas-colunas' }, cCat, cMod), cEss, cForn, cartaoPareto(paretoItensOrg(det.fornecedores), 'Regra de Pareto: poucos fornecedores, quase todo o valor', org.id), cSerie, cartaoContratos(todos, org)].filter(Boolean));
   }
 
   function cartaoContratos(todos, org) {
@@ -306,11 +323,12 @@
     const filtros = el('div', { class: 'filtros' },
       sel(f.situ, [['vigentes', 'Vigentes'], ['vencidos', 'Vencidos com empenho posterior'], ['todos', 'Todos']], (v) => { f.situ = v; }, 'Situação'),
       sel(f.cat, [['', 'Todos'], ...cats.map((x) => [x, x])], (v) => { f.cat = v; }, 'Objeto'),
+      sel(f.ess, [['', 'Todas'], ...Object.entries(ESS()).filter(([k]) => todos.some((c) => c.ess === k)).map(([k, r]) => [k, r])], (v) => { f.ess = v; }, 'Essencialidade'),
       sel(f.modal, [['', 'Todas'], ...mods.map((x) => [x, x])], (v) => { f.modal = v; }, 'Modalidade'),
       sel(f.alerta, [['', 'Todos'], ['algum', 'Com algum alerta'], ['alto', 'Com alerta alto'], ...codigos.map((x) => ['cod:' + x, dados.alertas[x].titulo])], (v) => { f.alerta = v; }, 'Alerta'),
       el('label', { class: 'busca' }, 'Buscar', el('input', { type: 'search', value: f.q, placeholder: 'Fornecedor, objeto, nº do contrato ou CNPJ', autocomplete: 'off',
         oninput: (ev) => { clearTimeout(cartaoContratos.t); cartaoContratos.t = setTimeout(() => { f.q = ev.target.value.trim(); estado.limite = 50; render(true); }, 220); } })));
-    const cols = [['forn', 'Fornecedor e objeto'], ['-', 'Tipo'], ['anual', 'Por ano', 1], ['saldo', 'Saldo a executar', 1], ['fimef', 'Vigência até'], ['pts', 'Alertas']];
+    const cols = [['forn', 'Fornecedor e objeto'], ['-', 'Tipo'], ['anual', 'Por ano', 1], ['saldo', 'Saldo a executar', 1], ['fimef', 'Até quando'], ['pts', 'Alertas']];
     const visiveis = lista.slice(0, estado.limite);
     const linhas = visiveis.flatMap((k) => {
       const aberto = estado.aberto.has(k.doc + k.proc);
@@ -318,16 +336,17 @@
         onclick: () => { const id = k.doc + k.proc; if (estado.aberto.has(id)) estado.aberto.delete(id); else estado.aberto.add(id); render(true); },
         onkeydown: (ev) => { if (ev.key === 'Enter') ev.currentTarget.click(); } },
       el('td', { class: 'objeto' }, el('strong', {}, nomeProprio(k.forn)), el('small', {}, k.objeto.length > 150 ? k.objeto.slice(0, 150) + '…' : k.objeto)),
-      el('td', {}, k.cat, el('small', {}, k.modal + (k.rp ? ' · registro de preços' : ''))),
+      el('td', {}, k.cat, el('small', {}, k.modal + (k.rp ? ' · registro de preços' : '')), tagEss(k.ess)),
       el('td', { class: 'num' }, brlCompacto(k.anual), el('small', {}, 'total ' + brlCompacto(k.vfin))),
       el('td', { class: 'num' }, k.saldo == null ? '—' : brlCompacto(k.saldo)),
-      el('td', {}, dataBR(k.fimef), k.npror ? el('small', {}, `${k.npror} prorrog.`) : null),
+      el('td', {}, dataBR(k.fimef), el('small', {}, k.fimef ? `faltam ${duracao(mesesAte(k.fimef))}` : 'sem prazo definido'),
+        el('small', {}, `desde ${dataBR(k.ini)}` + (k.npror ? ` · ${k.npror} prorrog.` : ''))),
       el('td', {}, selos(k.alertas, 2)));
       if (!aberto) return [tr];
       const dl = el('dl', { class: 'detalhes' },
         ...[['Objeto', k.objeto], ['Instrumento', k.doc], ['Processo', k.proc], ['Fornecedor', `${nomeProprio(k.forn)} · ${cnpjFmt(k.cnpj)}`],
           ['Celebração', dataBR(k.cel)], ['Vigência', `${dataBR(k.ini)} a ${dataBR(k.fim)}` + (k.fimef !== k.fim ? ` (com aditivos: até ${dataBR(k.fimef)})` : '')],
-          ['Valor inicial → final', `${brlCompacto(k.vini)} → ${brlCompacto(k.vfin)}`],
+          ['Valor inicial → final', `${brlCompacto(k.vini)} → ${brlCompacto(k.vfin)}`], ['Ainda a receber (estimativa)', brlCompacto(k.restante)], ['Essencialidade sugerida', ESS()[k.ess]],
           ['Empenhado', `${dados.anosGasto[0]}: ${brlCompacto(k.empAnt)} · ${dados.anosGasto[1]}: ${brlCompacto(k.empAtu)}`],
           ['Situação no SIGA', k.sit]].flatMap(([t, v]) => [el('dt', {}, t), el('dd', {}, v)]));
       const alertas = k.alertas.length ? el('ul', { class: 'lista-alertas' }, k.alertas.map((a) => el('li', {}, selo(a), ' ', dados.alertas[a.split(':')[0]].descricao))) : null;
@@ -350,12 +369,101 @@
   function exportar(lista, org) {
     const aspas = (v) => '"' + String(v ?? '').replace(/"/g, '""') + '"';
     const cab = ['Órgão', 'Instrumento', 'Processo', 'Fornecedor', 'CNPJ', 'Objeto', 'Tipo de objeto', 'Modalidade', 'Valor inicial', 'Valor final', 'Por ano', 'Saldo a executar',
-      'Celebração', 'Vigência até', 'Situação', 'Alertas'];
-    const linhas = lista.map((k) => [org.nome, k.doc, k.proc, k.forn, k.cnpj, k.objeto, k.cat, k.modal, k.vini, k.vfin, k.anual, k.saldo, k.cel, k.fimef, k.sit,
+      'Celebração', 'Vigência até', 'Situação', 'Essencialidade', 'Ainda a receber', 'Alertas'];
+    const linhas = lista.map((k) => [org.nome, k.doc, k.proc, k.forn, k.cnpj, k.objeto, k.cat, k.modal, k.vini, k.vfin, k.anual, k.saldo, k.cel, k.fimef, k.sit, ESS()[k.ess], k.restante,
       k.alertas.map((a) => `${NIVEL[a.split(':')[1]]}: ${dados.alertas[a.split(':')[0]].titulo}`).join(' | ')]);
     const csv = '﻿' + [cab, ...linhas].map((l) => l.map(aspas).join(';')).join('\r\n');
     const a = el('a', { href: URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' })), download: `contratos-${org.nome.replace(/\W+/g, '-')}-${dados.ref}.csv` });
     document.body.append(a); a.click(); a.remove();
+  }
+
+
+  // ---------- regra de Pareto (curva ABC) ----------
+  const BASES = { anual: ['Compromisso anual dos contratos vigentes', (x) => x.anual], emp: [`Empenhado em ${'{ANOS}'}`, (x) => x.emp],
+    restante: ['O que ainda têm a receber (estimativa)', (x) => x.restante] };
+  function paretoItensOrg(forns) {
+    return forns.map((f) => ({ cnpj: f.cnpj, nome: f.nome, anual: f.anual, emp: f.empAnt + f.empAtu, restante: f.restante, desde: f.desde, ate: f.ate,
+      ess: f.ess, cat: f.cat, alertas: f.alertas, nOrgs: 1 }));
+  }
+  function paretoItensGoverno(lista) {
+    return lista.map((r) => ({ cnpj: r[0], nome: r[1], anual: r[2], restante: r[3], emp: r[4], desde: r[5], ate: r[6], nOrgs: r[7], cat: r[9], ess: r[10], alertas: r[11] }));
+  }
+  function cartaoPareto(itens, titulo_, origem) {
+    const P = estado.par;
+    const [rotuloBase, valorDe] = BASES[P.base];
+    const rotulos = Object.entries(ESS());
+    const base = itens.filter((x) => (!P.ess.size || P.ess.has(x.ess)) && valorDe(x) > 0).sort((a, b) => valorDe(b) - valorDe(a));
+    const total = soma(base, valorDe);
+    let acum = 0;
+    const serie = base.map((x) => { acum += valorDe(x); return { x, v: valorDe(x), cum: total ? acum / total : 0 }; });
+    const corte = P.corte / 100;
+    const kA = serie.findIndex((r) => r.cum >= corte - 1e-9) + 1 || serie.length;
+    const caixa = el('div', { class: 'grafico' });
+    const cartao = el('div', { class: 'cartao pareto' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, titulo_),
+      el('p', {}, 'Fornecedores ordenados do maior para o menor; a curva mostra quanto do valor total as primeiras empresas acumulam. A classe A é o grupo que atinge o corte escolhido: é onde a renegociação rende mais.'))),
+    el('div', { class: 'filtros' },
+      el('label', {}, 'Medida', el('select', { onchange: (ev) => { P.base = ev.target.value; P.mais = 10; render(true); } },
+        Object.entries(BASES).map(([k, [r]]) => el('option', { value: k, selected: k === P.base }, r.replace('{ANOS}', dados.anosGasto.join('–')))))),
+      el('label', {}, `Corte: ${P.corte}% do valor`, el('input', { type: 'range', min: 50, max: 95, step: 5, value: P.corte,
+        oninput: (ev) => { ev.target.previousSibling.textContent = `Corte: ${ev.target.value}% do valor`; },
+        onchange: (ev) => { P.corte = Number(ev.target.value); P.mais = 10; render(true); } }))),
+    el('div', { class: 'filtro-cond', role: 'group', 'aria-label': 'Essencialidade' }, rotulos.filter(([k]) => itens.some((x) => x.ess === k)).map(([k, r]) =>
+      el('button', { type: 'button', class: 'chip-filtro', 'aria-pressed': String(!P.ess.size || P.ess.has(k)),
+        onclick: () => { if (P.ess.has(k)) P.ess.delete(k); else P.ess.add(k); P.mais = 10; render(true); } }, r))));
+    if (!serie.length) { cartao.append(el('p', { class: 'vazio' }, 'Nenhum fornecedor com valor nesta medida e filtro.')); return cartao; }
+    const pctA = kA / serie.length;
+    cartao.append(el('p', { class: 'conclusao' }, el('strong', {}, `${nInt.format(kA)} de ${nInt.format(serie.length)} fornecedores (${pct(pctA)})`),
+      ` concentram ${P.corte}% de ${brlCompacto(total)} (${rotuloBase.toLowerCase()}). Os outros ${nInt.format(serie.length - kA)} dividem o restante.`), caixa);
+    observar(caixa, (W) => {
+      const H = 230, ml = 44, mr = 14, mt = 12, mb = 34, iw = W - ml - mr, ih = H - mt - mb;
+      const X = (i) => ml + (i / serie.length) * iw, Y = (c) => mt + ih - c * ih;
+      const svgEl = PF.svg('svg', { viewBox: `0 0 ${W} ${H}`, width: W, height: H });
+      for (const t of [0, 0.25, 0.5, 0.75, 1]) {
+        svgEl.append(PF.svg('line', { class: t === 0 ? 'eixo' : 'grade', x1: ml, x2: W - mr, y1: Y(t), y2: Y(t) }));
+        const tx = PF.svg('text', { x: ml - 6, y: Y(t) + 4, 'text-anchor': 'end' }); tx.textContent = Math.round(t * 100) + '%'; svgEl.append(tx);
+        const ty = PF.svg('text', { x: ml + t * iw, y: H - 16, 'text-anchor': t === 1 ? 'end' : t === 0 ? 'start' : 'middle' }); ty.textContent = Math.round(t * 100) + '%'; svgEl.append(ty);
+      }
+      const rotX = PF.svg('text', { x: ml + iw / 2, y: H - 2, 'text-anchor': 'middle' }); rotX.textContent = '% dos fornecedores (do maior para o menor)'; svgEl.append(rotX);
+      const passo = Math.max(1, Math.floor(serie.length / 300));
+      let d = `M${X(0)},${Y(0)}`;
+      for (let i = 0; i < serie.length; i += passo) d += `L${X(i + 1).toFixed(1)},${Y(serie[i].cum).toFixed(1)}`;
+      d += `L${X(serie.length)},${Y(1)}`;
+      svgEl.append(PF.svg('path', { d, fill: 'none', 'stroke-width': 2.5, 'stroke-linejoin': 'round', style: 'stroke:var(--serie-1)' }));
+      svgEl.append(PF.svg('line', { x1: ml, x2: X(kA), y1: Y(corte), y2: Y(corte), 'stroke-dasharray': '4 3', style: 'stroke:var(--serie-2)', 'stroke-width': 1.5 }));
+      svgEl.append(PF.svg('line', { x1: X(kA), x2: X(kA), y1: Y(corte), y2: Y(0), 'stroke-dasharray': '4 3', style: 'stroke:var(--serie-2)', 'stroke-width': 1.5 }));
+      svgEl.append(PF.svg('circle', { cx: X(kA), cy: Y(corte), r: 5, style: 'fill:var(--serie-2);stroke:var(--superficie);stroke-width:2' }));
+      const rot = PF.svg('text', { class: 'rotulo-final', x: Math.min(W - mr, X(kA) + 8), y: Y(corte) + 18, 'text-anchor': X(kA) > W * 0.7 ? 'end' : 'start' });
+      rot.textContent = `${nInt.format(kA)} fornecedores → ${P.corte}%`;
+      if (X(kA) > W * 0.7) rot.setAttribute('x', X(kA) - 8);
+      svgEl.append(rot);
+      const sobre = PF.svg('rect', { x: ml, y: mt, width: iw, height: ih, fill: 'transparent' });
+      sobre.addEventListener('pointermove', (ev) => {
+        const r = sobre.getBoundingClientRect();
+        const i = Math.min(serie.length - 1, Math.max(0, Math.floor(((ev.clientX - r.left) / r.width) * serie.length)));
+        mostrarDica([el('div', { class: 'tit' }, `${i + 1}º: ${nomeProprio(serie[i].x.nome)}`), dicaLinha(null, brlCompacto(serie[i].v), 'valor na medida'),
+          dicaLinha(null, pct(serie[i].cum), 'acumulado até aqui')], ev.clientX, ev.clientY);
+      });
+      sobre.addEventListener('pointerleave', esconderDica);
+      svgEl.append(sobre);
+      caixa.replaceChildren(svgEl);
+    });
+    const classeA = serie.slice(0, kA);
+    const vis = classeA.slice(0, P.mais);
+    cartao.append(el('div', { class: 'rolagem' }, el('table', {},
+      el('thead', {}, el('tr', {}, [['#'], ['Classe A: fornecedor'], ['Valor', 1], ['% do total', 1], ['% acumulado', 1], ['Desde'], ['Até quando'], ['Ainda a receber', 1], ['Essencialidade'], ['Alertas']]
+        .map(([t, n]) => el('th', { class: n ? 'num' : '' }, t)))),
+      el('tbody', {}, vis.map((r, i) => el('tr', { class: 'clicavel', tabindex: '0', onclick: () => irForn(r.x.cnpj, origem == null ? null : origem),
+        onkeydown: (ev) => { if (ev.key === 'Enter') irForn(r.x.cnpj, origem == null ? null : origem); } },
+      el('td', {}, String(i + 1)),
+      el('td', {}, el('strong', {}, nomeProprio(r.x.nome)), el('small', {}, (r.x.cat || '') + (r.x.nOrgs > 1 ? ` · ${r.x.nOrgs} órgãos` : ''))),
+      el('td', { class: 'num' }, brlCompacto(r.v)), el('td', { class: 'num' }, pct(total ? r.v / total : 0)), el('td', { class: 'num' }, pct(r.cum)),
+      el('td', {}, r.x.desde ? r.x.desde.slice(0, 4) : '—', el('small', {}, r.x.desde ? `${(anosDesde(r.x.desde) || 0).toLocaleString('pt-BR', { maximumFractionDigits: 1 })} anos` : '')),
+      el('td', {}, r.x.ate ? dataBR(r.x.ate) : '—', el('small', {}, r.x.ate ? 'faltam ' + duracao(mesesAte(r.x.ate)) : '')),
+      el('td', { class: 'num' }, brlCompacto(r.x.restante)), el('td', {}, tagEss(r.x.ess)),
+      el('td', {}, r.x.alertas.length ? selos(r.x.alertas.filter((a) => !a.endsWith(':i')), 2) : null)))))),
+    classeA.length > P.mais ? el('div', { class: 'rodape-tabela' }, el('button', { type: 'button', class: 'botao',
+      onclick: () => { P.mais += 20; render(true); } }, `Mostrar mais (${nInt.format(classeA.length - P.mais)} restantes na classe A)`)) : null);
+    return cartao;
   }
 
   // ---------- visão: fornecedor ----------
@@ -411,7 +519,14 @@
       el('tbody', {}, f.orgaos.map(([id, nome, nct, vig, anual, empT, empR]) => el('tr', { class: 'clicavel', tabindex: '0', onclick: () => irOrg(id), onkeydown: (ev) => { if (ev.key === 'Enter') irOrg(id); } },
         el('td', {}, el('strong', {}, nome)), el('td', { class: 'num' }, nInt.format(nct)), el('td', { class: 'num' }, nInt.format(vig)),
         el('td', { class: 'num' }, brlCompacto(anual)), el('td', { class: 'num' }, brlCompacto(empT)), el('td', { class: 'num' }, brlCompacto(empR))))))));
-    c.replaceChildren(ficha, alertas, socios, orgs);
+    const r = f.resumo;
+    const faixa = r ? el('div', { class: 'kpis' },
+      kpi('Recebe por ano', brlCompacto(r.anual), r.vig ? `${nInt.format(r.vig)} contrato(s) vigente(s) · empenhado em ${dados.anosGasto.join('–')}: ${brlCompacto(r.emp)}` : `sem contrato vigente · empenhado em ${dados.anosGasto.join('–')}: ${brlCompacto(r.emp)}`),
+      kpi('Desde quando', r.desde ? String(r.desde.slice(0, 4)) : '—', r.desde ? `primeiro instrumento registrado em ${dataBR(r.desde)}${r.desde.startsWith('2016') ? ' (a base começa em 2016)' : ''} · ${(anosDesde(r.desde) || 0).toLocaleString('pt-BR', { maximumFractionDigits: 1 })} anos` : ''),
+      kpi('Por mais quanto tempo', r.ate ? duracao(mesesAte(r.ate)) : '—', r.ate ? `contratos vigentes até ${dataBR(r.ate)}` : 'sem contrato vigente'),
+      kpi('Ainda a receber', brlCompacto(r.restante), 'estimativa: valor anual × tempo restante de cada contrato'),
+      kpi('Essencialidade', ESS()[r.ess] || '—', r.cat ? `objeto principal: ${r.cat}` : '')) : null;
+    c.replaceChildren(...[faixa, ficha, alertas, socios, orgs].filter(Boolean));
   }
 
   // ---------- montagem ----------
@@ -450,6 +565,7 @@
     const lista = Object.values(dados.alertas).map((v) => el('li', {}, el('b', {}, `${v.titulo} (nível padrão: ${v.nivel}): `), v.descricao));
     $('#metodo').replaceChildren(
       el('p', {}, `Fontes: ${dados.fonte.contratos}; ${dados.fonte.cadastro}; e a folha de pagamento do Poder Executivo (módulo Cargos), para o cruzamento de nomes de sócios com servidores. Posição em ${dataBR(dados.ref)}.`),
+      el('p', {}, 'Desde quando é a data do primeiro instrumento registrado do fornecedor no SIGA (a base começa em 2016). Ainda a receber é uma estimativa linear: valor anual do contrato vezes o tempo que falta, limitado ao valor final. A essencialidade é uma classificação sugerida pelo tipo de objeto (essencial, suporte, investimento, discricionário), para orientar a conversa com o gestor, não para decidir por ele.'),
       el('p', {}, 'Contrato vigente é o instrumento do tipo contrato, carta-contrato ou termo de adesão cuja data final, já considerados os aditivos de prazo, não passou, e cuja situação não é de encerramento, rescisão ou anulação. Compras avulsas (autorizações de compra, ordens de fornecimento e de serviço, notas de empenho) não entram na lista de vigentes, mas entram nos totais empenhados e na contratação direta.'),
       el('p', {}, 'Valor final é o valor total do instrumento. Em registros de preços, costuma ser o máximo estimado, não o que será executado. Compromisso anual é o valor final dividido pela duração em meses (no mínimo 12) e multiplicado por 12. Saldo a executar é o valor final menos o total empenhado no instrumento. Empenhado é o valor empenhado no ano, conforme o SIGA, que não cobre toda a execução: obras e outras despesas pagas por fora do sistema não aparecem.'),
       el('p', {}, 'O tipo de objeto é uma classificação automática por palavras-chave e serve apenas para triagem. Os alertas são regras objetivas, listadas abaixo; indicam onde vale olhar primeiro e não provam irregularidade. A comparação de preços entre contratações ainda não foi feita.'),
@@ -469,6 +585,6 @@
     preencherMetodo();
     return true;
   }
-  function desmontar() { dados = null; cacheOrg.clear(); cacheForn.clear(); listaBusca = null; }
+  function desmontar() { dados = null; cacheOrg.clear(); cacheForn.clear(); listaBusca = null; todosForn = null; }
   PF.registrar({ id: 'contratacoes', titulo: 'Contratações', montar, aoNavegar, desmontar });
 })();

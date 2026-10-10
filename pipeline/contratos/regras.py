@@ -161,3 +161,29 @@ ALERTAS = {
 ALERTAS["fracionamento"] = (MEDIA, "Possível fracionamento de compras diretas",
                             "Três ou mais compras diretas abaixo do limite de dispensa, do mesmo fornecedor no mesmo órgão e ano, "
                             "cuja soma o ultrapassa.")
+
+
+# --- essencialidade (classificação SUGERIDA do objeto; o gestor deve validar) ---------------------
+# essencial: sem ele o serviço público para ou deixa de atender (saúde, alimentação, utilidades);
+# suporte: necessário à operação, mas há margem de renegociação (apoio, TI, frota, manutenção);
+# investimento: obras e equipamentos, que podem ser adiados ou reprogramados;
+# discricionário: publicidade, eventos, consultorias e capacitação, onde o corte é possível;
+# indefinido: o objeto não foi reconhecido.
+ESSENCIALIDADE = {
+    "Saúde": "essencial", "Alimentação": "essencial", "Energia, água e utilidades": "essencial",
+    "Mão de obra e serviços de apoio": "suporte", "Tecnologia da informação": "suporte", "Transporte e logística": "suporte",
+    "Veículos e combustível": "suporte", "Equipamentos e manutenção": "suporte", "Locação de imóveis": "suporte",
+    "Material de expediente, mobiliário e limpeza": "suporte",
+    "Obras e engenharia": "investimento", "Máquinas e equipamentos pesados": "investimento",
+    "Publicidade, eventos e comunicação": "discricionario", "Capacitação, ensino, estudos e consultoria": "discricionario",
+}
+ESSENCIAL_POR_TEXTO = re.compile(r"(transporte escolar|ambulancia|pacientes|vigilancia|merenda|alimentacao escolar|"
+                                 r"medicament|oncolog|dialise|oxigenio|energia eletrica|agua e esgoto)")
+ROTULO_ESSENCIALIDADE = {"essencial": "Essencial", "suporte": "Suporte", "investimento": "Investimento", "discricionario": "Discricionário",
+                         "indefinido": "Não classificado"}
+
+
+def essencialidade(cat, objeto):
+    if ESSENCIAL_POR_TEXTO.search(sem_acento(objeto).lower()):
+        return "essencial"
+    return ESSENCIALIDADE.get(cat, "indefinido")
