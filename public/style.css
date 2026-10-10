@@ -408,3 +408,19 @@ td input[type="text"] { min-width: 160px; }
 
 .aviso-aberto { margin: 0 0 10px; padding: 8px 12px; border: 1px dashed var(--serie-2); border-radius: 8px; font-size: 12px; color: var(--tinta-2); }
 @media print { .aviso-aberto { display: none !important; } }
+
+/* ---------- módulo Informações a solicitar ---------- */
+.lacuna .cartao-topo h2 { margin: 0 0 6px; font-size: 17px; }
+.lac-valor { text-align: right; min-width: 120px; }
+.lac-valor small { display: block; color: var(--mudo); font-size: 11px; }
+.lac-valor strong { font-size: 16px; }
+.lac-bloco h4 { margin: 10px 0 2px; font-size: 12px; text-transform: uppercase; letter-spacing: .03em; color: var(--tinta-2); }
+.lac-bloco p { margin: 0; font-size: 14px; line-height: 1.5; }
+.lac-bloco p.forte { padding: 8px 12px; border-left: 3px solid var(--serie-1); background: var(--pagina); }
+.lac-controle { margin-top: 12px; }
+.fonte-lac { margin: 8px 0 0; color: var(--mudo); font-size: 11px; }
+.pedido-item { margin: 0 0 12px; break-inside: avoid; }
+.pedido-item p { margin: 2px 0; font-size: 13px; line-height: 1.5; }
+.pedido-titulo { font-weight: 600; }
+.pedido-contexto { color: var(--tinta-2); }
+@media print { .lac-bloco p.forte { background: none; border-left-color: #000; } }

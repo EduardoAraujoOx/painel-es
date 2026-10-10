@@ -150,6 +150,18 @@ python3 -I pipeline/contratos/montar.py                 # gera data/contratacoes
 
 Limites conhecidos: a classificação do objeto é por palavras-chave; não há comparação de preços entre contratações; o pago do contrato depende de o SIGA vincular os empenhos a ele; empresas públicas e fundos fora do SIGA não aparecem.
 
+## Módulo `lacunas` (Informações a solicitar)
+
+Catálogo das lacunas de dados e de transparência que a análise encontrou, para compor o pedido de informações da equipe de transição. Cada item traz o que falta, a evidência calculada a partir dos próprios dados do painel (por exemplo, quantos contratos da classe A não têm pagamento ligado, quantas contratações foram conduzidas fora do SIGA, o fim da cobertura do conjunto de obras), a decisão que a informação habilitaria, o que solicitar, a quem e a prioridade. O catálogo está em `pipeline/lacunas/montar.py`; para incluir ou ajustar um item, edite a lista `itens` desse arquivo e rode o script depois de `pipeline/contratos/montar.py` e `pipeline/organograma/montar.py`.
+
+**Critério de prioridade.** Alta: afeta contratos da classe A em R$ 500 milhões por ano ou mais, ou é questão de integridade ou de urgência da transição. Média: de R$ 50 milhões a R$ 500 milhões por ano, ou informação transversal. Baixa: menos que isso. Os itens cuja existência a equipe ainda precisa confirmar com o Estado aparecem marcados "a validar".
+
+Na tela, cada item pode ter situação (a decidir, no pedido, enviado, recebido, recebido em parte, descartado) e anotação, salvas no navegador. "Gerar lista para o pedido" monta um documento imprimível com as informações marcadas "No pedido", agrupadas por destinatário, com finalidade e, opcionalmente, o contexto observado nos dados. O texto é neutro e factual: não faz juízo sobre a regularidade de contratos.
+
+```bash
+python3 -I pipeline/lacunas/montar.py
+```
+
 ## Acesso e implantação (Vercel)
 
 Nada em `data/` é servido como arquivo estático: os dados só saem por `api/dados.js`, que exige sessão válida (senha) ou, no modo de teste, o acesso aberto descrito abaixo.
