@@ -91,6 +91,13 @@ def main():
     iases, sesp = orgs_sem.get("IASES"), orgs_sem.get("SESP")
     DER = "Departamento de Edificações e de Rodovias (DER-ES)"
 
+    fm = None
+    arq_fm = os.path.join(RAIZ, "data", "fimmandato", "index.json")
+    if os.path.exists(arq_fm):   # gerado por pipeline/contratos/fimmandato.py
+        f = json.load(open(arq_fm))
+        ci = {k: i for i, k in enumerate(f["camposNovos"])}
+        fm = {"novos": len(f["novos"]), "anual": sum(r[ci["anual"]] for r in f["novos"]), "alem": sum(r[ci["alem"]] for r in f["novos"]),
+              "marco": "/".join(reversed(f["marco"].split("-")))}
     itens = [
         dict(id="execucao-contrato", area="Execução financeira", verificado=True,
              titulo="Execução financeira ligada a cada contrato (empenho, liquidação e pagamento)",
@@ -153,7 +160,7 @@ def main():
              lacuna="Os dados abertos não identificam o gestor nem o fiscal de cada contrato nem os relatórios de fiscalização.",
              evidencia=f"Os {len(A)} contratos principais ({bi(soma(A))} por ano) não têm responsável identificado nos dados públicos.",
              decisao="Saber quem responde pela execução e qual a qualidade da fiscalização dos contratos mais relevantes.",
-             solicitar="Nome, cargo e ato de designação do gestor e do fiscal de cada contrato dos contratos principais e os relatórios de fiscalização do último ano.",
+             solicitar="Nome, cargo e ato de designação do gestor e do fiscal de cada um dos contratos principais e os relatórios de fiscalização do último ano.",
              destinatarios=["Órgãos contratantes"], valorAfetado=0.0, prioridadeFixa="média", fonteEvidencia="Dicionário de dados do SIGA"),
         dict(id="garantias", area="Contratos", verificado=True,
              titulo="Garantias contratuais",
@@ -190,6 +197,13 @@ def main():
              decisao="Ter a visão completa do gasto do setor público estadual, inclusive das estatais, e dos riscos fiscais que elas representam.",
              solicitar="Relação de contratos vigentes, quadro de pessoal e remuneração (inclusive cargos de direção e conselhos) e endividamento das empresas públicas e sociedades de economia mista.",
              destinatarios=["SEFAZ", "Estatais"], valorAfetado=sum(x["pago"] for x in estatais) / 2, prioridadeFixa="média", fonteEvidencia="SIGEFES e Receita Federal (natureza jurídica)"),
+        dict(id="caixa-fim-mandato", area="Execução financeira", verificado=True,
+             titulo="Disponibilidade de caixa e obrigações que passam para 2027",
+             lacuna="O saldo de caixa por fonte de recursos em 31/12 e a relação de obrigações a pagar não são públicos em base aberta, e é isso que decide se o art. 42 da LRF foi cumprido.",
+             evidencia=(f"{fm['novos']} contratos celebrados desde {fm['marco']} têm vigência depois de 31/12/2026, somando {mi(fm['anual'])} por ano e cerca de {mi(fm['alem'])} em parcelas depois de 2026 (estimativa)." if fm else "Contratos celebrados desde 1º de maio de 2026 com vigência depois de 31/12/2026 (ver tela Fim de mandato)."),
+             decisao="Saber se há caixa para as obrigações herdadas e quais compromissos assumidos no fim do mandato precisam ser renegociados ou pagos primeiro.",
+             solicitar="Demonstrativo da disponibilidade de caixa por fonte de recursos em 31/12/2026, relação de restos a pagar (processados e não processados) e cronograma de desembolso dos contratos celebrados desde 1º de maio de 2026.",
+             destinatarios=["SEFAZ", "Tesouro Estadual"], valorAfetado=0.0, prioridadeFixa="alta", fonteEvidencia="Tela Fim de mandato (SIGA) e art. 42 da LRF"),
         dict(id="lotacao", area="Pessoal", verificado=True,
              titulo="Lotação e estrutura organizacional do IASES e da SESP",
              lacuna="O código de lotação da base de vínculos não permite identificar a unidade em alguns órgãos, e o organograma oficial não os cobre por esse código.",
