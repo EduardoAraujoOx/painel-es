@@ -15,9 +15,10 @@ const RE_ARQUIVO = /^[A-Za-z0-9_-]{1,60}(\/[A-Za-z0-9_-]{1,60})?$/;
 
 module.exports = (req, res) => {
   if (req.method !== 'GET') return responder(res, 405, { erro: 'método não permitido' });
-  let autorizado = false;
+  let autorizado = false, aberto = false;
   try {
-    autorizado = acessoAberto() || sessaoValida(lerCookie(req));
+    aberto = acessoAberto();
+    autorizado = aberto || sessaoValida(lerCookie(req));
   } catch (e) {
     return responder(res, 503, { erro: 'acesso não configurado' });
   }
@@ -40,8 +41,10 @@ module.exports = (req, res) => {
   }
   res.statusCode = 200;
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
-  // o navegador guarda por 5 min (e reaproveita por 1 h enquanto atualiza ao fundo): evita baixar de novo a cada toque
-  res.setHeader('Cache-Control', 'private, max-age=300, stale-while-revalidate=3600');
+  // Navegador: guarda por 5 min, para não baixar de novo a cada toque. Com o painel aberto (sem senha) não há o que proteger,
+  // então a rede de distribuição da Vercel também guarda a resposta (por implantação: uma nova implantação zera esse cache,
+  // inclusive ao religar a senha) e a resposta sai de perto de quem pede, sem esperar a função acordar. Com senha, só o navegador guarda.
+  res.setHeader('Cache-Control', aberto ? 'public, max-age=300, s-maxage=3600, stale-while-revalidate=86400' : 'private, max-age=300');
   res.setHeader('X-Robots-Tag', 'noindex, nofollow');
   res.end(conteudo);
 };

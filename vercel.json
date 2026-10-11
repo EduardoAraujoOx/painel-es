@@ -1,5 +1,8 @@
 {
   "outputDirectory": "public",
+  "regions": [
+    "gru1"
+  ],
   "functions": {
     "api/dados.js": {
       "includeFiles": "{data/**,acesso.json}"
