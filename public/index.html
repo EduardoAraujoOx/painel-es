@@ -21,16 +21,22 @@
   </section>
 
   <div id="app" hidden>
-    <p id="aviso-aberto" class="faixa-aberto" hidden role="note">Ambiente de teste, aberto a quem tiver o endereço. Os dados vêm de fontes públicas, mas incluem nomes e valores de pessoas: não divulgue o link.</p>
-    <div class="layout">
-      <aside class="lateral">
-        <div class="marca"><h1>Painel Fiscal</h1><p>Espírito Santo · Poder Executivo</p></div>
-        <nav id="abas" class="menu" aria-label="Seções do painel"></nav>
-        <div class="lateral-rodape">
+    <header class="cabeca">
+      <div class="cabeca-in">
+        <a class="marca" href="#/cargos" aria-label="Painel Fiscal ES, início">
+          <svg class="logo" viewBox="0 0 32 32" width="34" height="34" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="7" fill="currentColor"/><rect x="6.5" y="17" width="5" height="8.5" rx="1" fill="var(--pagina)"/><rect x="13.5" y="11.5" width="5" height="14" rx="1" fill="var(--pagina)"/><rect x="20.5" y="6" width="5" height="19.5" rx="1" fill="var(--pagina)"/></svg>
+          <span class="marca-texto"><b>Painel Fiscal</b><small>Espírito Santo · análise para a transição</small></span>
+        </a>
+        <nav id="paineis" class="chave" aria-label="Painéis"></nav>
+        <div class="cabeca-acoes">
           <button id="tema" class="botao" type="button" aria-label="Alternar tema claro e escuro">Tema</button>
           <button id="sair" class="botao" type="button">Sair</button>
         </div>
-      </aside>
+      </div>
+    </header>
+    <p id="aviso-aberto" class="faixa-aberto" hidden role="note">Ambiente de teste, aberto a quem tiver o endereço. Os dados vêm de fontes públicas, mas incluem nomes e valores de pessoas: não divulgue o link.</p>
+    <div class="corpo">
+      <nav id="abas" class="subnav" aria-label="Telas do painel" hidden></nav>
       <main id="modulo"></main>
     </div>
   </div>

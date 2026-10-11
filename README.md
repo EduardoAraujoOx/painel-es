@@ -182,7 +182,7 @@ Teste local: `PAINEL_SENHA=x PAINEL_SEGREDO=<32+ caracteres> node dev-server.js 
 
 ## Navegação
 
-O menu lateral agrupa as seções por tema (Pessoal, Contratos, Transição) e se ajusta ao celular, onde vira uma faixa de atalhos. Os itens ficam na lista `NAV` de `public/core.js`: cada item aponta para um módulo e, se quiser, para uma tela dele (`sub`), com `casa(resto)` para marcar quando está ativo e `selo` para um contador. Um módulo registrado e não listado em `NAV` aparece no grupo "Outros".
+O site tem uma chave de painéis no topo (Pessoal, Contratos, Transição). Cada painel tem sua cor e, quando reúne mais de uma tela, um menu de telas logo abaixo do cabeçalho; ao trocar de painel o site volta à última tela vista nele, e ao reabrir o endereço sem destino retoma de onde se parou. Os painéis ficam na lista `PAINEIS` de `public/core.js`: cada item aponta para um módulo e, se quiser, para uma tela dele (`sub`), com `casa(resto)` para marcar quando está ativo e `selo` para um contador. A cor de cada painel (`--ac-pessoal`, `--ac-contratos`, `--ac-transicao`) está em `public/style.css`. Um módulo registrado e não listado em `PAINEIS` aparece num painel "Outros". A marca é só tipográfica, sem brasão, para não sugerir publicação oficial; o título usa a fonte Barlow Condensed (licença SIL OFL), hospedada em `public/fontes/` para o site não depender de servidores externos.
 
 ## Como acrescentar um módulo
 

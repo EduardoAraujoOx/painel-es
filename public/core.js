@@ -173,36 +173,63 @@
     const vazio = !resto && (location.hash === '' || location.hash === '#' || location.hash === `#/${mod.id}`);
     if (location.hash === alvo || vazio) mod.aoNavegar(resto); else location.hash = alvo;
   }
-  // Menu lateral: seções agrupadas por tema. Cada item aponta para um módulo e, se houver, para uma tela dele
-  // (`sub`); `casa(resto)` diz quando o item está ativo. Para acrescentar um tópico, inclua um item aqui.
-  const NAV = [
-    { grupo: 'Pessoal', itens: [
+  // Painéis: a chave no topo do site. Cada painel agrupa telas (itens) de um ou mais módulos e tem sua cor.
+  // Um item aponta para um módulo e, se houver, para uma tela dele (`sub`); `casa(resto)` diz quando está ativo.
+  // Para acrescentar um painel ou uma tela, inclua um objeto aqui (e a cor do painel em style.css).
+  const PAINEIS = [
+    { id: 'pessoal', rotulo: 'Pessoal', itens: [
       { mod: 'cargos', rotulo: 'Cargos em comissão' },
       { mod: 'organograma', rotulo: 'Organograma' }] },
-    { grupo: 'Contratos', itens: [
+    { id: 'contratos', rotulo: 'Contratos', itens: [
       { mod: 'contratacoes', rotulo: 'Visão do governo', casa: (r) => !/^(diagnostico|revisao|relatorio)/.test(r) },
       { mod: 'contratacoes', sub: 'diagnostico', rotulo: 'Diagnóstico (classe A)', casa: (r) => /^diagnostico/.test(r) },
       { mod: 'contratacoes', sub: 'revisao', rotulo: 'Lista de revisão', selo: 'revisao', casa: (r) => /^(revisao|relatorio)/.test(r) }] },
-    { grupo: 'Transição', itens: [
+    { id: 'transicao', rotulo: 'Transição', itens: [
       { mod: 'lacunas', rotulo: 'Informações a solicitar' }] },
   ];
-  PF.NAV = NAV;
-  PF.selo = (chave, texto) => document.querySelectorAll(`[data-selo="${chave}"]`).forEach((e) => { e.textContent = texto ? String(texto) : ''; });
+  PF.PAINEIS = PAINEIS;
+  const selos = {};
+  PF.selo = (chave, texto) => {
+    selos[chave] = texto ? String(texto) : '';
+    document.querySelectorAll(`[data-selo="${chave}"]`).forEach((e) => { e.textContent = selos[chave]; });
+  };
+  const hrefItem = (i) => `#/${i.mod}${i.sub ? '/' + i.sub : ''}`;
+  let paineis = [], ultimoPainel = null;
   function montarMenu() {
-    const usados = new Set(NAV.flatMap((g) => g.itens.map((i) => i.mod)));
-    const grupos = [...NAV, ...(PF.modulos.some((m) => !usados.has(m.id)) ? [{ grupo: 'Outros', itens: PF.modulos.filter((m) => !usados.has(m.id)).map((m) => ({ mod: m.id, rotulo: m.titulo })) }] : [])];
-    $('#abas').replaceChildren(...grupos.map((g) => el('div', { class: 'menu-grupo' }, el('p', { class: 'menu-rotulo' }, g.grupo),
-      g.itens.filter((i) => PF.modulos.some((m) => m.id === i.mod)).map((i) => el('a', { href: `#/${i.mod}${i.sub ? '/' + i.sub : ''}`, 'data-mod': i.mod, 'data-sub': i.sub || '' },
-        el('span', {}, i.rotulo), i.selo ? el('span', { class: 'selo-menu', 'data-selo': i.selo }) : null)))));
+    const existentes = (itens) => itens.filter((i) => PF.modulos.some((m) => m.id === i.mod));
+    const usados = new Set(PAINEIS.flatMap((p) => p.itens.map((i) => i.mod)));
+    const soltos = PF.modulos.filter((m) => !usados.has(m.id)).map((m) => ({ mod: m.id, rotulo: m.titulo }));
+    paineis = [...PAINEIS, ...(soltos.length ? [{ id: 'outros', rotulo: 'Outros', itens: soltos }] : [])]
+      .map((p) => ({ ...p, itens: existentes(p.itens) })).filter((p) => p.itens.length);
+    $('#paineis').replaceChildren(...paineis.map((p) => el('a', { href: hrefItem(p.itens[0]), 'data-painel': p.id, onclick: (ev) => {
+      const volta = ler('pf.painel.' + p.id); // volta à última tela vista no painel
+      if (volta && p.itens.some((i) => hrefItem(i) === volta)) { ev.preventDefault(); location.hash = volta; }
+    } }, p.rotulo)));
   }
   function marcarAbas(resto) {
     const r = decodeURIComponent(resto || '');
-    const itens = NAV.flatMap((g) => g.itens);
-    for (const a of $('#abas').querySelectorAll('a')) {
-      const i = itens.find((x) => x.mod === a.dataset.mod && (x.sub || '') === a.dataset.sub);
-      const ativo = a.dataset.mod === (PF.atual && PF.atual.id) && (i && i.casa ? i.casa(r) : true);
-      if (ativo) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
+    let painel = null, item = null;
+    for (const p of paineis) {
+      const i = p.itens.find((x) => x.mod === (PF.atual && PF.atual.id) && (x.casa ? x.casa(r) : true));
+      if (i) { painel = p; item = i; break; }
     }
+    if (!painel) return;
+    document.body.dataset.painel = painel.id;
+    document.title = `${painel.rotulo} · Painel Fiscal ES`;
+    for (const a of $('#paineis').querySelectorAll('a')) {
+      if (a.dataset.painel === painel.id) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
+    }
+    const sub = $('#abas');
+    if (ultimoPainel !== painel.id) {
+      ultimoPainel = painel.id;
+      sub.hidden = painel.itens.length < 2;
+      sub.replaceChildren(...painel.itens.map((i) => el('a', { href: hrefItem(i), 'data-mod': i.mod, 'data-sub': i.sub || '' },
+        el('span', {}, i.rotulo), i.selo ? el('span', { class: 'selo-menu', 'data-selo': i.selo }, selos[i.selo] || '') : null)));
+    }
+    for (const a of sub.querySelectorAll('a')) {
+      if (a.dataset.mod === item.mod && a.dataset.sub === (item.sub || '')) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
+    }
+    if (location.hash.length > 2) { guardar('pf.ultima', location.hash); guardar('pf.painel.' + painel.id, hrefItem(item)); }
   }
   async function rotear() {
     if ($('#app').hidden || !PF.modulos.length) return;
@@ -233,6 +260,8 @@
     $('#sair').hidden = aberto;                       // sem senha não há o que encerrar
     $('#aviso-aberto').hidden = !aberto;
     montarMenu();
+    const ultima = ler('pf.ultima');
+    if (!location.hash && ultima && /^#\/[a-z]/.test(ultima)) history.replaceState(null, '', ultima); // reabre onde parou
     rotear();
   }
   document.addEventListener('DOMContentLoaded', iniciar);

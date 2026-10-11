@@ -34,7 +34,7 @@
   const cnpjFmt = (c) => (c.length === 14 ? c.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})$/, '$1.$2.$3/$4-$5')
     : c.replace(/^(\d{3})(\d{3})(\d{3})(\d{2})$/, '$1.$2.$3-$4'));
   const nomeProprio = (s) => (s && s === s.toUpperCase() ? titulo(s) : s || '');
-  const kpi = (rotulo, valor, nota) => el('div', { class: 'kpi' },
+  const kpi = (rotulo, valor, nota, tom) => el('div', { class: 'kpi' + (tom ? ' ' + tom : '') },
     el('div', { class: 'rotulo' }, rotulo), el('div', { class: 'valor' }, valor), nota ? el('div', { class: 'nota' }, nota) : null);
   function abas(opcoes, atual, aoMudar) {
     return el('div', { class: 'abas', role: 'group' }, opcoes.map(([v, r]) =>
@@ -269,7 +269,7 @@
       kpi('Compromisso anual', brlCompacto(org.anualVigente), `saldo a executar: ${brlCompacto(org.saldoVigente)}`),
       kpi('Pago aos fornecedores', brlCompacto(org.pagoAnt + org.pagoAtu), `${aAnt}: ${brlCompacto(org.pagoAnt)} · ${aAtu}: ${brlCompacto(org.pagoAtu)}`),
       kpi('Classe A do Estado', `${nInt.format(org.classeA)} contrato(s)`, `${brlCompacto(org.classeAValor)} por ano`),
-      kpi('Alertas', `${nInt.format(org.contratosAlta)} altos`, `${nInt.format(org.contratosMedia)} com sinal médio · ${nInt.format(org.fornecedoresSinalizados)} fornecedores sinalizados`));
+      kpi('Alertas', `${nInt.format(org.contratosAlta)} altos`, `${nInt.format(org.contratosMedia)} com sinal médio · ${nInt.format(org.fornecedoresSinalizados)} fornecedores sinalizados`, 'alerta'));
     const perfil = el('p', { class: 'perfil-linha' }, `Contratação direta: ${pct(org.diretaPct)} do valor contratado em ${aAnt}–${aAtu} · Maior fornecedor: ${pct(org.maiorFornAnual)} do compromisso anual · Empenhado no SIGA: ${brlCompacto(org.empAnt + org.empAtu)}`);
     const aviso = cob != null && cob < 0.35 ? el('p', { class: 'aviso solto' },
       `Atenção: os empenhos registrados no SIGA cobrem só ${pct(cob)} do compromisso anual deste órgão. Use a coluna "pago" (SIGEFES), que traz o dinheiro que saiu do caixa para os fornecedores, e não o empenho, para medir a execução.`) : null;
@@ -450,6 +450,8 @@
         const ty = PF.svg('text', { x: ml + t * iw, y: H - 16, 'text-anchor': t === 1 ? 'end' : t === 0 ? 'start' : 'middle' }); ty.textContent = Math.round(t * 100) + '%'; svgEl.append(ty);
       }
       const rotX = PF.svg('text', { x: ml + iw / 2, y: H - 2, 'text-anchor': 'middle' }); rotX.textContent = '% dos fornecedores (do maior para o menor)'; svgEl.append(rotX);
+      const faixa = (xs) => { svgEl.append(PF.svg('rect', { class: 'faixa-a', x: ml, y: mt, width: Math.max(1, xs - ml), height: ih })); const f = PF.svg('text', { class: 'rotulo-faixa', x: ml + 6, y: mt + 12 }); f.textContent = 'Classe A'; svgEl.append(f); };
+      faixa(X(kA));
       const passo = Math.max(1, Math.floor(serie.length / 300));
       let d = `M${X(0)},${Y(0)}`;
       for (let i = 0; i < serie.length; i += passo) d += `L${X(i + 1).toFixed(1)},${Y(serie[i].cum).toFixed(1)}`;
@@ -906,6 +908,8 @@
         const tx = PF.svg('text', { x: ml + t * iw, y: H - 16, 'text-anchor': t === 1 ? 'end' : t === 0 ? 'start' : 'middle' }); tx.textContent = Math.round(t * 100) + '%'; sv.append(tx);
       }
       const rx = PF.svg('text', { x: ml + iw / 2, y: H - 2, 'text-anchor': 'middle' }); rx.textContent = '% dos contratos (do maior para o menor)'; sv.append(rx);
+      const faixa = (xs) => { sv.append(PF.svg('rect', { class: 'faixa-a', x: ml, y: mt, width: Math.max(1, xs - ml), height: ih })); const f = PF.svg('text', { class: 'rotulo-faixa', x: ml + 6, y: mt + 12 }); f.textContent = 'Classe A'; sv.append(f); };
+      faixa(X(kA));
       const passo = Math.max(1, Math.floor(serie.length / 300));
       let d = `M${X(0)},${Y(0)}`;
       for (let i = 0; i < serie.length; i += passo) d += `L${X(i + 1).toFixed(1)},${Y(serie[i].cum).toFixed(1)}`;
@@ -946,8 +950,8 @@
     const kp = el('div', { class: 'kpis' },
       kpi('Contratos que somam o corte', `${nInt.format(kA)} de ${nInt.format(R_.universo.length)}`, `${pct(kA / (R_.universo.length || 1))} dos contratos vigentes concentram ${D.corte}% de ${brlCompacto(total)}`),
       kpi('Valor da classe A', brlCompacto(soma(classeA, (r) => r.v)), R_.rotBase.toLowerCase()),
-      kpi('Com algum alerta', `${nInt.format(comAlerta.length)} (${pct(comAlerta.length / (kA || 1))})`, `${brlCompacto(soma(comAlerta, (r) => r.v))} · ${pct(soma(comAlerta, (r) => r.v) / (soma(classeA, (r) => r.v) || 1))} do valor da classe A`),
-      kpi('Com alerta alto', `${nInt.format(comAlto.length)}`, `${brlCompacto(soma(comAlto, (r) => r.v))} · ${nInt.format(new Set(comAlto.map((r) => r.k.org)).size)} órgãos`),
+      kpi('Com algum alerta', `${nInt.format(comAlerta.length)} (${pct(comAlerta.length / (kA || 1))})`, `${brlCompacto(soma(comAlerta, (r) => r.v))} · ${pct(soma(comAlerta, (r) => r.v) / (soma(classeA, (r) => r.v) || 1))} do valor da classe A`, 'alerta'),
+      kpi('Com alerta alto', `${nInt.format(comAlto.length)}`, `${brlCompacto(soma(comAlto, (r) => r.v))} · ${nInt.format(new Set(comAlto.map((r) => r.k.org)).size)} órgãos`, 'alerta'),
       kpi('Órgãos na classe A', nInt.format(new Set(classeA.map((r) => r.k.org)).size), 'órgãos com ao menos um contrato entre os de maior valor'));
 
     const caixa = el('div', { class: 'grafico' });
