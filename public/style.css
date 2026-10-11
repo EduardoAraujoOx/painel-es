@@ -529,3 +529,23 @@ button.kpi:hover { border-color: var(--acento); border-top-color: var(--acento);
   .kpi .valor, .kpi.alerta .valor { color: #000; }
   .modulo-titulo { font-size: 24px; }
 }
+
+/* ---------- módulo Fim de mandato ---------- */
+.fm-intro { margin: 0 0 16px; max-width: 78ch; color: var(--tinta-2); line-height: 1.5; }
+.alerta-cartao { display: grid; gap: 10px; text-align: left; width: 100%; cursor: pointer; font: inherit; color: inherit; align-content: start; border-top: 4px solid var(--acento); background: color-mix(in srgb, var(--acento) 5%, var(--superficie)); }
+.alerta-cartao:hover { border-color: var(--acento); }
+.alerta-cartao h2 { font-size: 22px; line-height: 1.15; }
+.alerta-resumo { margin: 0; color: var(--tinta-2); }
+.alerta-numeros { display: flex; flex-wrap: wrap; gap: 8px 26px; margin: 4px 0; }
+.alerta-numeros div { display: grid; }
+.alerta-numeros b { font-family: var(--fonte-titulo); font-size: 34px; line-height: 1; color: var(--acento); font-weight: 700; }
+.alerta-numeros span { font-size: 12px; color: var(--mudo); }
+.alerta-abrir { color: var(--acento); font-weight: 600; font-size: 14px; }
+.fm-fora h3 { margin: 0 0 4px; font-size: 14px; }
+.fm-fora p { margin: 0; font-size: 13px; line-height: 1.5; color: var(--tinta-2); max-width: 90ch; }
+.lac-bloco { max-width: 90ch; }
+.fm-detalhes { margin-top: 12px; }
+.fm-detalhes summary { cursor: pointer; font-weight: 600; font-size: 13px; color: var(--acento); }
+.objeto strong a { color: inherit; text-decoration: none; }
+.objeto strong a:hover { color: var(--acento); text-decoration: underline; }
+td small.fm-futura { color: var(--erro); }
