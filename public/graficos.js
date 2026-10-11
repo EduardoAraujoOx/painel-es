@@ -182,6 +182,18 @@
     return saida;
   }
 
+  // Lista ordenada com barras: alternativa ao mapa de blocos nas telas estreitas, onde o nome não cabe nos blocos.
+  // itens: [{ nome, sub, v, texto, foco, aoClicar }]; as barras são proporcionais ao maior valor.
+  function listaOrdenada(itens) {
+    const ord = itens.filter((i) => i.v > 0).sort((a, b) => b.v - a.v);
+    const max = Math.max(1, ...ord.map((i) => i.v));
+    return el('div', { class: 'linhas lista-orgaos' }, ord.map((i) => el('button', { type: 'button', class: 'linha-barra' + (i.foco ? ' foco' : ''), onclick: i.aoClicar },
+      el('span', { class: 'nome' }, i.nome, i.sub ? el('small', {}, i.sub) : null),
+      el('span', { class: 'trilho' }, el('i', { class: 'barra', style: `width:${Math.max(0.5, (i.v / max) * 62)}%` }), el('span', { class: 'num' }, i.texto)))));
+  }
+  PF.listaOrdenada = listaOrdenada;
+  PF.telaEstreita = () => matchMedia('(max-width: 700px)').matches;
+
   PF.graficoLinhas = graficoLinhas;
   PF.graficoBarras = graficoBarras;
   PF.mapaDeBlocos = mapaDeBlocos;

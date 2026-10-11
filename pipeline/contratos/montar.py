@@ -776,7 +776,7 @@ def main():
               open(os.path.join(DESTINO, "diagnostico.json"), "w"), ensure_ascii=False, separators=(",", ":"))
 
     indice_orgs.sort(key=lambda o: -(o["anualVigente"] + o["empAnt"] + o["empAtu"]))
-    # "para olhar primeiro": contratos da classe A (80% do compromisso anual) com algum alerta de nível médio ou alto, do maior para o menor valor
+    # "para olhar primeiro": contratos principais (80% do compromisso anual) com algum alerta de nível médio ou alto, do maior para o menor valor
     prioridades = []
     for c in vig_ord:
         if (c["org"], c["proc"], c["doc"]) not in classe_a:

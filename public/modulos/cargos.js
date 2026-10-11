@@ -20,7 +20,7 @@
   let tokenRender = 0;
   const estado = {
     tipo: 'todos', medida: 'custo', prov: 'todos', busca: '',
-    org: null, funcao: null, vistaOrgs: 'mapa', verTodasFuncoes: false,
+    org: null, funcao: null, vistaOrgs: PF.telaEstreita() ? 'lista' : 'mapa', verTodasFuncoes: false,
     ordemOrgs: { col: 'custo', dir: -1 }, ordemOcup: { col: 'valor', dir: -1 }, limite: 100,
   };
   const incluiCC = () => estado.tipo !== 'FG';
@@ -138,9 +138,12 @@
       el('div', { class: 'cartao-topo' },
         el('div', {}, el('h2', {}, 'Onde estão os cargos'),
           el('p', {}, `Área proporcional ao ${rotuloMedida()} (${rotuloMes(dados.mes, true)}). Clique num órgão para detalhar.`)),
-        abas([['mapa', 'Mapa'], ['tabela', 'Tabela']], estado.vistaOrgs, (v) => { estado.vistaOrgs = v; render(); })));
+        abas([['lista', 'Lista'], ['mapa', 'Mapa'], ['tabela', 'Tabela']], estado.vistaOrgs, (v) => { estado.vistaOrgs = v; render(); })));
     if (!itens.length) {
       cartao.append(el('p', { class: 'vazio' }, 'Nenhum órgão corresponde aos filtros.'));
+    } else if (estado.vistaOrgs === 'lista') {
+      cartao.append(PF.listaOrdenada(itens.map((i) => ({ nome: i.o.nome !== i.o.sigla ? i.o.nome : i.o.sigla, sub: i.o.nome !== i.o.sigla ? i.o.sigla : '', v: i.v,
+        texto: estado.medida === 'custo' ? brlCompacto(i.c) : nInt.format(i.n), aoClicar: () => selecionarOrg(i.o.sigla) }))));
     } else if (estado.vistaOrgs === 'mapa') {
       cartao.append(el('div', { class: 'legenda' },
         el('span', {}, el('i', { class: 'chave-caixa', style: 'background:var(--serie-1)' }), 'Órgãos em foco (' + FOCO.join(', ') + ')'),
@@ -304,6 +307,14 @@
       cartao.append(el('div', { class: 'rodape-tabela' }, el('span', {}, `Mostrando ${nInt.format(estado.limite)} de ${nInt.format(linhas.length)}`),
         el('button', { type: 'button', class: 'botao', onclick: () => { estado.limite += 200; render(); } }, 'Mostrar mais')));
     }
+    cartao.append(PF.barraCompartilhar(() => ({
+      titulo: `Ocupantes de cargos em comissão e funções gratificadas - ${org.nome}`, arquivo: `ocupantes-${org.sigla}-${dados.mes}`,
+      filtros: [`Órgão: ${org.nome} (${org.sigla}); competência ${rotuloMes(dados.mes, true)}; ${nInt.format(linhas.length)} registros`,
+        estado.funcao ? 'Função: ' + titulo(estado.funcao.split('|')[1]) : ''].filter(Boolean),
+      colunas: [{ t: 'Nome', w: 3 }, { t: 'Função e unidade', w: 4 }, { t: 'Provimento', w: 1.6 }, { t: 'Valor mensal', w: 1.3, n: 1 }, { t: 'Na função desde', w: 1.5 }],
+      linhas: linhas.map((o) => [titulo(o.nome), titulo(o.funcao) + (o.unidade ? ' - ' + titulo(o.unidade) : ''), o.prov, nBRL.format(o.valor), textoDesde(o).linha]),
+      texto: linhas.slice(0, 12).map((o, i) => `${i + 1}. ${titulo(o.nome)} - ${titulo(o.funcao)} - ${nBRL.format(o.valor)}/mês`).concat(linhas.length > 12 ? [`... e mais ${linhas.length - 12}. O PDF traz a lista completa.`] : []),
+    })));
     return cartao;
   }
   function baixarCSV(org, linhas) {

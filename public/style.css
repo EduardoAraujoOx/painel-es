@@ -446,6 +446,11 @@ td input[type="text"] { min-width: 160px; }
 
 /* ---------- cabeçalho, chave de painéis e telas ---------- */
 .cabeca { background: var(--superficie); border-bottom: 3px solid var(--acento); position: sticky; top: 0; z-index: 8; }
+.progresso { position: absolute; left: 0; right: 0; bottom: -3px; height: 3px; overflow: hidden; background: color-mix(in srgb, var(--acento) 25%, transparent); }
+.progresso::before { content: ''; position: absolute; top: 0; bottom: 0; width: 35%; background: var(--acento); animation: correr 1s ease-in-out infinite; }
+@keyframes correr { from { left: -35%; } to { left: 100%; } }
+@media (prefers-reduced-motion: reduce) { .progresso::before { animation: none; width: 100%; opacity: .6; } }
+@media print { .progresso { display: none !important; } }
 .cabeca-in { display: flex; align-items: center; gap: 12px 28px; flex-wrap: wrap; max-width: 1380px; margin: 0 auto; padding: 12px 24px; }
 .marca { display: flex; align-items: center; gap: 12px; color: var(--tinta); text-decoration: none; }
 .logo { color: var(--acento); flex: none; }
@@ -491,12 +496,18 @@ button.kpi:hover { border-color: var(--acento); border-top-color: var(--acento);
 .abas button[aria-pressed="true"] { background: var(--acento); color: var(--sobre-serie); }
 .chip-filtro[aria-pressed="true"]:not([style]) { border-color: var(--acento); }
 
+/* compartilhar listas */
+.compartilhar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin-top: 14px; padding: 12px 14px; border-radius: 10px; background: color-mix(in srgb, var(--acento) 7%, var(--superficie)); border: 1px solid var(--borda); }
+.compartilhar-rotulo { font-weight: 600; margin-right: 4px; }
+.compartilhar-msg { color: var(--tinta-2); font-size: 13px; }
+.linha-barra.foco .nome { font-weight: 700; }
+
 /* faixa sombreada da classe A nas curvas de Pareto */
 .grafico .faixa-a { fill: var(--acento); fill-opacity: .10; }
 .grafico .rotulo-faixa { fill: var(--acento); font-weight: 700; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; }
 
 @media (max-width: 900px) {
-  .cabeca { position: static; }
+  .cabeca { position: relative; }
   .cabeca-in { padding: 10px 14px; gap: 10px; }
   .marca-texto b { font-size: 26px; }
   .marca-texto small { display: none; }
