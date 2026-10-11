@@ -15,7 +15,7 @@
   let listaBusca = null;
   let tokenRender = 0;
   const estado = {
-    medida: 'anual', vista: 'mapa', ordemOrgs: { col: 'anualVigente', dir: -1 },
+    medida: 'anual', vista: PF.telaEstreita() ? 'lista' : 'mapa', ordemOrgs: { col: 'anualVigente', dir: -1 },
     org: null, forn: null, origem: null, verTodosForn: false, verMaisPrioridades: false,
     f: { situ: 'vigentes', cat: '', modal: '', alerta: '', ess: '', ca: '', q: '' }, dg: { base: 'anual', corte: 80, pub: true, mais: 25, casos: 40, sensivel: false, aberto: new Set(), f: { org: '', cat: '', modal: '', ess: '', alerta: '', soAlerta: false, q: '' } }, rev: { status: '', motivo: '', org: '', decididos: false, sensivel: false }, msg: '', tela: '', par: { base: 'anual', ess: new Set(), corte: 80, mais: 10, pub: false }, ordem: { col: 'anual', dir: -1 }, limite: 50,
     aberto: new Set(),
@@ -133,7 +133,7 @@
       kpi('Contratos vigentes', nInt.format(tot('vigentes')), `em ${o.filter((x) => x.vigentes).length} órgãos · posição de ${dataBR(dados.ref)}`),
       kpi('Compromisso anual', brlCompacto(tot('anualVigente')), 'valor dos contratos vigentes por ano de vigência'),
       kpi('Pago aos fornecedores', brlCompacto(tot('pagoAnt') + tot('pagoAtu')), `${aAnt} e ${aAtu} (até a data), conforme o SIGEFES`),
-      el('button', { type: 'button', class: 'kpi kpi-link', onclick: () => ctx.irPara('diagnostico') }, el('div', { class: 'rotulo' }, 'Classe A: 80% do valor'),
+      el('button', { type: 'button', class: 'kpi kpi-link', onclick: () => ctx.irPara('diagnostico') }, el('div', { class: 'rotulo' }, 'Contratos principais: 80% do valor'),
         el('div', { class: 'valor' }, `${nInt.format(dados.classeA.contratos)} contratos`), el('div', { class: 'nota' }, `${tot('contratosAlta')} contratos com alerta alto no Estado · abrir o diagnóstico →`)));
 
     const medidas = { anual: ['Compromisso anual dos contratos vigentes', (x) => x.anualVigente], pago: [`Pago em ${aAnt} e ${aAtu}`, (x) => x.pagoAnt + x.pagoAtu], emp: [`Empenhado em ${aAnt} e ${aAtu}`, (x) => x.empAnt + x.empAtu],
@@ -144,8 +144,11 @@
         el('p', {}, `Área proporcional a: ${rotuloMedida.toLowerCase()}. Clique num órgão para detalhar.`)),
       el('div', { class: 'grupo-abas' },
         abas([['anual', 'Compromisso anual'], ['pago', 'Pago'], ['emp', 'Empenhado'], ['alertas', 'Alertas']], estado.medida, (v) => { estado.medida = v; render(); }),
-        abas([['mapa', 'Mapa'], ['tabela', 'Tabela']], estado.vista, (v) => { estado.vista = v; render(); }))));
-    if (estado.vista === 'mapa') {
+        abas([['lista', 'Lista'], ['mapa', 'Mapa'], ['tabela', 'Tabela']], estado.vista, (v) => { estado.vista = v; render(); }))));
+    if (estado.vista === 'lista') {
+      cartao.append(PF.listaOrdenada(o.map((x) => ({ nome: nomeProprio(x.nome), v: valorDe(x), texto: medidas[estado.medida][0].startsWith('Contratos') ? nInt.format(valorDe(x)) : brlCompacto(valorDe(x)),
+        sub: `${nInt.format(x.vigentes)} contratos vigentes`, aoClicar: () => irOrg(x.id) }))));
+    } else if (estado.vista === 'mapa') {
       const itens = o.map((x) => ({ o: x, v: valorDe(x) })).filter((i) => i.v > 0);
       const mapa = el('div', { class: 'mapa' });
       cartao.append(mapa);
@@ -268,7 +271,7 @@
       kpi('Contratos vigentes', nInt.format(org.vigentes), `${brlCompacto(org.valorVigente)} em valor total`),
       kpi('Compromisso anual', brlCompacto(org.anualVigente), `saldo a executar: ${brlCompacto(org.saldoVigente)}`),
       kpi('Pago aos fornecedores', brlCompacto(org.pagoAnt + org.pagoAtu), `${aAnt}: ${brlCompacto(org.pagoAnt)} · ${aAtu}: ${brlCompacto(org.pagoAtu)}`),
-      kpi('Classe A do Estado', `${nInt.format(org.classeA)} contrato(s)`, `${brlCompacto(org.classeAValor)} por ano`),
+      kpi('Contratos principais do Estado', `${nInt.format(org.classeA)} contrato(s)`, `${brlCompacto(org.classeAValor)} por ano`),
       kpi('Alertas', `${nInt.format(org.contratosAlta)} altos`, `${nInt.format(org.contratosMedia)} com sinal médio · ${nInt.format(org.fornecedoresSinalizados)} fornecedores sinalizados`, 'alerta'));
     const perfil = el('p', { class: 'perfil-linha' }, `Contratação direta: ${pct(org.diretaPct)} do valor contratado em ${aAnt}–${aAtu} · Maior fornecedor: ${pct(org.maiorFornAnual)} do compromisso anual · Empenhado no SIGA: ${brlCompacto(org.empAnt + org.empAtu)}`);
     const aviso = cob != null && cob < 0.35 ? el('p', { class: 'aviso solto' },
@@ -332,7 +335,7 @@
     const filtros = el('div', { class: 'filtros' },
       sel(f.situ, [['vigentes', 'Vigentes'], ['vencidos', 'Vencidos com empenho posterior'], ['todos', 'Todos']], (v) => { f.situ = v; }, 'Situação'),
       sel(f.cat, [['', 'Todos'], ...cats.map((x) => [x, x])], (v) => { f.cat = v; }, 'Objeto'),
-      sel(f.ca, [['', 'Todos'], ['sim', 'Só classe A (80% do valor do Estado)']], (v) => { f.ca = v; }, 'Valor'),
+      sel(f.ca, [['', 'Todos'], ['sim', 'Só contratos principais (80% do valor do Estado)']], (v) => { f.ca = v; }, 'Valor'),
       sel(f.ess, [['', 'Todas'], ...Object.entries(ESS()).filter(([k]) => todos.some((c) => c.ess === k)).map(([k, r]) => [k, r])], (v) => { f.ess = v; }, 'Essencialidade'),
       sel(f.modal, [['', 'Todas'], ...mods.map((x) => [x, x])], (v) => { f.modal = v; }, 'Modalidade'),
       sel(f.alerta, [['', 'Todos'], ['algum', 'Com algum alerta'], ['alto', 'Com alerta alto'], ...codigos.map((x) => ['cod:' + x, dados.alertas[x].titulo])], (v) => { f.alerta = v; }, 'Alerta'),
@@ -345,7 +348,7 @@
       const tr = el('tr', { class: 'clicavel' + (aberto ? ' aberta' : ''), tabindex: '0', 'aria-expanded': String(aberto),
         onclick: () => { const id = k.doc + k.proc; if (estado.aberto.has(id)) estado.aberto.delete(id); else estado.aberto.add(id); render(true); },
         onkeydown: (ev) => { if (ev.key === 'Enter') ev.currentTarget.click(); } },
-      el('td', { class: 'objeto' }, el('strong', {}, nomeProprio(k.forn)), k.classeA ? el('span', { class: 'selo n-i', title: 'Entre os contratos que somam 80% do compromisso anual do Estado' }, el('b', {}, 'A'), ' classe A') : null, naLista(org.id, k) ? el('span', { class: 'selo n-m' }, el('b', {}, '⚑'), ' na lista de revisão') : null, el('small', {}, k.objeto.length > 150 ? k.objeto.slice(0, 150) + '…' : k.objeto)),
+      el('td', { class: 'objeto' }, el('strong', {}, nomeProprio(k.forn)), k.classeA ? el('span', { class: 'selo n-i', title: 'Entre os contratos que somam 80% do compromisso anual do Estado' }, el('b', {}, 'Principal')) : null, naLista(org.id, k) ? el('span', { class: 'selo n-m' }, el('b', {}, '⚑'), ' na lista de revisão') : null, el('small', {}, k.objeto.length > 150 ? k.objeto.slice(0, 150) + '…' : k.objeto)),
       el('td', {}, k.cat, el('small', {}, k.modal + (k.rp ? ' · registro de preços' : '')), tagEss(k.ess)),
       el('td', { class: 'num' }, brlCompacto(k.anual), el('small', {}, 'total ' + brlCompacto(k.vfin)), k.pago > 0 ? el('small', {}, `pago ${brlCompacto(k.pago)} (${pct(k.vfin ? k.pago / k.vfin : 0)})`) : null),
       el('td', { class: 'num' }, k.saldo == null ? '—' : brlCompacto(k.saldo)),
@@ -373,7 +376,21 @@
     el('button', { type: 'button', class: 'botao', onclick: () => exportar(lista, org) }, 'Exportar CSV')),
     filtros, rolagem,
     lista.length > visiveis.length ? el('div', { class: 'rodape-tabela' }, el('button', { type: 'button', class: 'botao',
-      onclick: () => { estado.limite += 100; render(true); } }, `Mostrar mais (${nInt.format(lista.length - visiveis.length)} restantes)`)) : null);
+      onclick: () => { estado.limite += 100; render(true); } }, `Mostrar mais (${nInt.format(lista.length - visiveis.length)} restantes)`)) : null,
+    lista.length ? PF.barraCompartilhar(() => compartilharContratos(lista, org, titulos[f.situ])) : null);
+  }
+  const cortar = (t, n) => (t.length > n ? t.slice(0, n - 1).trimEnd() + '...' : t);
+  const rotuloFiltroAlerta = (v) => (v === 'algum' ? 'Com algum alerta' : v === 'alto' ? 'Com alerta alto' : (dados.alertas[v.replace('cod:', '')] || {}).titulo || v);
+  const nomesAlertas = (k, n) => k.alertas.slice(0, n).map((a) => dados.alertas[a.split(':')[0]].titulo).join('; ') + (k.alertas.length > n ? ` (+${k.alertas.length - n})` : '');
+  function compartilharContratos(lista, org, tit) {
+    const f = estado.f;
+    const filtros = [`Órgão: ${org.nome}`, `Posição em ${dataBR(dados.ref)}; ${nInt.format(lista.length)} contratos, somando ${brlCompacto(soma(lista, (k) => k.anual))} por ano`,
+      [f.situ !== 'vigentes' ? 'Situação: ' + f.situ : '', f.cat && 'Objeto: ' + f.cat, f.ca && 'Só contratos principais', f.ess && 'Essencialidade: ' + ESS()[f.ess], f.modal && 'Modalidade: ' + f.modal,
+        f.alerta && 'Alerta: ' + rotuloFiltroAlerta(f.alerta), f.q && 'Busca: ' + f.q].filter(Boolean).join(' | ')].filter(Boolean);
+    return { titulo: `${tit} - ${org.nome}`, filtros, arquivo: `contratos-${org.nome.replace(/\W+/g, '-')}-${dados.ref}`,
+      colunas: [{ t: 'Fornecedor e objeto', w: 6 }, { t: 'Tipo', w: 2 }, { t: 'Por ano', w: 1.4, n: 1 }, { t: 'Saldo', w: 1.4, n: 1 }, { t: 'Até quando', w: 1.2 }, { t: 'Alertas', w: 3 }],
+      linhas: lista.map((k) => [`${nomeProprio(k.forn)}: ${cortar(k.objeto, 200)}`, k.cat, brlCompacto(k.anual), k.saldo == null ? '-' : brlCompacto(k.saldo), dataBR(k.fimef), nomesAlertas(k, 3)]),
+      texto: lista.slice(0, 12).map((k, i) => `${i + 1}. ${nomeProprio(k.forn)} - ${brlCompacto(k.anual)}/ano - ${cortar(k.objeto, 80)}`).concat(lista.length > 12 ? [`... e mais ${lista.length - 12}. O PDF traz a lista completa.`] : []) };
   }
 
   function exportar(lista, org) {
@@ -424,7 +441,7 @@
     const kA = serie.findIndex((r) => r.cum >= corte - 1e-9) + 1 || serie.length;
     const caixa = el('div', { class: 'grafico' });
     const cartao = el('div', { class: 'cartao pareto' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, titulo_),
-      el('p', {}, 'Fornecedores ordenados do maior para o menor; a curva mostra quanto do valor total as primeiras empresas acumulam. A classe A é o grupo que atinge o corte escolhido: é onde a renegociação rende mais.'))),
+      el('p', {}, 'Fornecedores ordenados do maior para o menor; a curva mostra quanto do valor total as primeiras empresas acumulam. Os fornecedores principais são o grupo que atinge o corte escolhido: é onde a renegociação rende mais.'))),
     el('div', { class: 'filtros' },
       el('label', {}, 'Medida', el('select', { onchange: (ev) => { P.base = ev.target.value; P.mais = 10; render(true); } },
         Object.entries(BASES).map(([k, [r]]) => el('option', { value: k, selected: k === P.base }, r.replace('{ANOS}', dados.anosGasto.join('–')))))),
@@ -450,7 +467,7 @@
         const ty = PF.svg('text', { x: ml + t * iw, y: H - 16, 'text-anchor': t === 1 ? 'end' : t === 0 ? 'start' : 'middle' }); ty.textContent = Math.round(t * 100) + '%'; svgEl.append(ty);
       }
       const rotX = PF.svg('text', { x: ml + iw / 2, y: H - 2, 'text-anchor': 'middle' }); rotX.textContent = '% dos fornecedores (do maior para o menor)'; svgEl.append(rotX);
-      const faixa = (xs) => { svgEl.append(PF.svg('rect', { class: 'faixa-a', x: ml, y: mt, width: Math.max(1, xs - ml), height: ih })); const f = PF.svg('text', { class: 'rotulo-faixa', x: ml + 6, y: mt + 12 }); f.textContent = 'Classe A'; svgEl.append(f); };
+      const faixa = (xs) => { svgEl.append(PF.svg('rect', { class: 'faixa-a', x: ml, y: mt, width: Math.max(1, xs - ml), height: ih })); const f = PF.svg('text', { class: 'rotulo-faixa', x: ml + 6, y: mt + 12 }); f.textContent = 'Principais'; svgEl.append(f); };
       faixa(X(kA));
       const passo = Math.max(1, Math.floor(serie.length / 300));
       let d = `M${X(0)},${Y(0)}`;
@@ -478,7 +495,7 @@
     const classeA = serie.slice(0, kA);
     const vis = classeA.slice(0, P.mais);
     cartao.append(el('div', { class: 'rolagem' }, el('table', {},
-      el('thead', {}, el('tr', {}, [['#'], ['Classe A: fornecedor'], ['Valor', 1], ['% do total', 1], ['% acumulado', 1], ['Desde'], ['Até quando'], ['Ainda a receber', 1], ['Essencialidade'], ['Alertas']]
+      el('thead', {}, el('tr', {}, [['#'], ['Fornecedor principal'], ['Valor', 1], ['% do total', 1], ['% acumulado', 1], ['Desde'], ['Até quando'], ['Ainda a receber', 1], ['Essencialidade'], ['Alertas']]
         .map(([t, n]) => el('th', { class: n ? 'num' : '' }, t)))),
       el('tbody', {}, vis.map((r, i) => el('tr', { class: 'clicavel', tabindex: '0', onclick: () => irForn(r.x.cnpj, origem == null ? null : origem),
         onkeydown: (ev) => { if (ev.key === 'Enter') irForn(r.x.cnpj, origem == null ? null : origem); } },
@@ -490,7 +507,7 @@
       el('td', { class: 'num' }, brlCompacto(r.x.restante)), el('td', {}, tagEss(r.x.ess)),
       el('td', {}, r.x.alertas.length ? selos(r.x.alertas.filter((a) => !a.endsWith(':i')), 2) : null)))))),
     classeA.length > P.mais ? el('div', { class: 'rodape-tabela' }, el('button', { type: 'button', class: 'botao',
-      onclick: () => { P.mais += 20; render(true); } }, `Mostrar mais (${nInt.format(classeA.length - P.mais)} restantes na classe A)`)) : null);
+      onclick: () => { P.mais += 20; render(true); } }, `Mostrar mais (${nInt.format(classeA.length - P.mais)} restantes entre os contratos principais)`)) : null);
     return cartao;
   }
 
@@ -908,7 +925,7 @@
         const tx = PF.svg('text', { x: ml + t * iw, y: H - 16, 'text-anchor': t === 1 ? 'end' : t === 0 ? 'start' : 'middle' }); tx.textContent = Math.round(t * 100) + '%'; sv.append(tx);
       }
       const rx = PF.svg('text', { x: ml + iw / 2, y: H - 2, 'text-anchor': 'middle' }); rx.textContent = '% dos contratos (do maior para o menor)'; sv.append(rx);
-      const faixa = (xs) => { sv.append(PF.svg('rect', { class: 'faixa-a', x: ml, y: mt, width: Math.max(1, xs - ml), height: ih })); const f = PF.svg('text', { class: 'rotulo-faixa', x: ml + 6, y: mt + 12 }); f.textContent = 'Classe A'; sv.append(f); };
+      const faixa = (xs) => { sv.append(PF.svg('rect', { class: 'faixa-a', x: ml, y: mt, width: Math.max(1, xs - ml), height: ih })); const f = PF.svg('text', { class: 'rotulo-faixa', x: ml + 6, y: mt + 12 }); f.textContent = 'Principais'; sv.append(f); };
       faixa(X(kA));
       const passo = Math.max(1, Math.floor(serie.length / 300));
       let d = `M${X(0)},${Y(0)}`;
@@ -949,14 +966,14 @@
     const comAlto = classeA.filter((r) => relevantes(r.k, true).some((a) => a.endsWith(':a')));
     const kp = el('div', { class: 'kpis' },
       kpi('Contratos que somam o corte', `${nInt.format(kA)} de ${nInt.format(R_.universo.length)}`, `${pct(kA / (R_.universo.length || 1))} dos contratos vigentes concentram ${D.corte}% de ${brlCompacto(total)}`),
-      kpi('Valor da classe A', brlCompacto(soma(classeA, (r) => r.v)), R_.rotBase.toLowerCase()),
-      kpi('Com algum alerta', `${nInt.format(comAlerta.length)} (${pct(comAlerta.length / (kA || 1))})`, `${brlCompacto(soma(comAlerta, (r) => r.v))} · ${pct(soma(comAlerta, (r) => r.v) / (soma(classeA, (r) => r.v) || 1))} do valor da classe A`, 'alerta'),
+      kpi('Valor dos contratos principais', brlCompacto(soma(classeA, (r) => r.v)), R_.rotBase.toLowerCase()),
+      kpi('Com algum alerta', `${nInt.format(comAlerta.length)} (${pct(comAlerta.length / (kA || 1))})`, `${brlCompacto(soma(comAlerta, (r) => r.v))} · ${pct(soma(comAlerta, (r) => r.v) / (soma(classeA, (r) => r.v) || 1))} do valor dos contratos principais`, 'alerta'),
       kpi('Com alerta alto', `${nInt.format(comAlto.length)}`, `${brlCompacto(soma(comAlto, (r) => r.v))} · ${nInt.format(new Set(comAlto.map((r) => r.k.org)).size)} órgãos`, 'alerta'),
-      kpi('Órgãos na classe A', nInt.format(new Set(classeA.map((r) => r.k.org)).size), 'órgãos com ao menos um contrato entre os de maior valor'));
+      kpi('Órgãos com contratos principais', nInt.format(new Set(classeA.map((r) => r.k.org)).size), 'órgãos com ao menos um contrato entre os de maior valor'));
 
     const caixa = el('div', { class: 'grafico' });
     const controles = el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Diagnóstico dos contratos de maior valor'),
-      el('p', {}, 'Todos os contratos vigentes do Estado, do maior para o menor valor. A análise cuidadosa parte da classe A: o grupo pequeno de contratos que soma o corte escolhido. Os alertas são sinais de triagem e a coluna "o que esclarecer" orienta a conferência.'))),
+      el('p', {}, 'Todos os contratos vigentes do Estado, do maior para o menor valor. A análise cuidadosa parte dos contratos principais: os poucos contratos que, somados, respondem pelo corte escolhido (80% do valor, por padrão; é a regra de Pareto). Os alertas são sinais de triagem e a coluna "o que esclarecer" orienta a conferência.'))),
     el('div', { class: 'filtros' },
       el('label', {}, 'Medida', el('select', { onchange: (ev) => { D.base = ev.target.value; D.mais = 25; render(true); } }, Object.entries(BASES_DG).map(([k, [r]]) => el('option', { value: k, selected: k === D.base }, r)))),
       el('label', {}, `Corte: ${D.corte}% do valor`, el('input', { type: 'range', min: 50, max: 95, step: 5, value: D.corte,
@@ -966,27 +983,27 @@
     caixa);
     curvaDiag(caixa, R_.serie, kA, D.corte / 100);
 
-    // alertas dentro da classe A
+    // alertas dentro dos contratos principais
     const porAlerta = resumoAlertas(classeA, true);
-    const cAlertas = el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Que alertas aparecem na classe A'),
-      el('p', {}, 'Por tipo de alerta, quantos contratos da classe A são atingidos e quanto valem. Clique para filtrar a lista.'))),
+    const cAlertas = el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Que alertas aparecem nos contratos principais'),
+      el('p', {}, 'Por tipo de alerta, quantos contratos principais são atingidos e quanto valem. Clique para filtrar a lista.'))),
     porAlerta.length ? el('div', { class: 'rolagem' }, el('table', {}, el('thead', {}, el('tr', {}, ['Alerta', 'Contratos', 'Valor', 'Órgãos', 'O que esclarecer'].map((t, n) => el('th', { class: n >= 1 && n <= 3 ? 'num' : '' }, t)))),
       el('tbody', {}, porAlerta.map((x) => el('tr', { class: 'clicavel' + (f.alerta === 'cod:' + x.cod ? ' aberta' : ''), tabindex: '0', onclick: () => { f.alerta = f.alerta === 'cod:' + x.cod ? '' : 'cod:' + x.cod; D.mais = 25; render(true); },
         onkeydown: (ev) => { if (ev.key === 'Enter') ev.currentTarget.click(); } },
       el('td', {}, selo(`${x.cod}:${x.n}`), INTERNOS.test(x.cod) ? el('small', {}, 'triagem interna') : null), el('td', { class: 'num' }, nInt.format(x.contratos)), el('td', { class: 'num' }, brlCompacto(x.valor)),
-      el('td', { class: 'num' }, nInt.format(x.orgs.size)), el('td', { class: 'objeto' }, textoEsclarecer(x.cod))))))) : el('p', { class: 'vazio' }, 'Nenhum alerta na classe A.'));
+      el('td', { class: 'num' }, nInt.format(x.orgs.size)), el('td', { class: 'objeto' }, textoEsclarecer(x.cod))))))) : el('p', { class: 'vazio' }, 'Nenhum alerta entre os contratos principais.'));
 
     // classe A por órgão
     const porOrg = resumoOrgs(classeA, true);
     const maxO = Math.max(1, ...porOrg.map((x) => x.valor));
-    const cOrgs = el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Classe A por órgão'),
+    const cOrgs = el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Contratos principais por órgão'),
       el('p', {}, 'Quantos contratos de cada órgão estão entre os de maior valor e que parte desse valor tem alerta. Clique para filtrar a lista.'))),
     el('div', { class: 'linhas' }, porOrg.slice(0, 15).map((x) => el('button', { type: 'button', class: 'linha-barra' + (f.org === String(x.org) ? ' ativa' : ''),
       onclick: () => { f.org = f.org === String(x.org) ? '' : String(x.org); D.mais = 25; render(true); } },
     el('span', { class: 'nome' }, x.nome, el('small', {}, `${nInt.format(x.contratos)} contrato(s) · ${pct(x.valorAlerta / (x.valor || 1))} do valor com alerta`)),
     el('span', { class: 'trilho' }, el('i', { class: 'barra', style: `width:${Math.max(0.5, (x.valor / maxO) * 62)}%` }), el('span', { class: 'num' }, brlCompacto(x.valor)))))));
 
-    // lista da classe A
+    // lista dos contratos principais
     const lista = classeA.filter((r) => passaFiltroDg(r.k, f, true));
     const cats = [...new Set(classeA.map((r) => r.k.cat))].sort();
     const mods = [...new Set(classeA.map((r) => r.k.modal))].sort();
@@ -1027,10 +1044,10 @@
     });
     const tabela = el('div', { class: 'rolagem' }, el('table', {},
       el('thead', {}, el('tr', {}, ['#', 'Fornecedor, órgão e objeto', 'Tipo', R_.rotBase, 'Até quando', 'Alertas'].map((t, n) => el('th', { class: n === 3 ? 'num' : '' }, t)))),
-      el('tbody', {}, linhas.length ? linhas : [el('tr', {}, el('td', { colspan: 6 }, el('p', { class: 'vazio' }, 'Nenhum contrato da classe A corresponde aos filtros.')))])));
+      el('tbody', {}, linhas.length ? linhas : [el('tr', {}, el('td', { colspan: 6 }, el('p', { class: 'vazio' }, 'Nenhum contrato principal corresponde aos filtros.')))])));
     const motivoPadrao = el('select', { 'aria-label': 'Motivo' }, Object.entries(MOTIVOS).map(([v, r]) => el('option', { value: v, selected: v === 'apurar' }, r)));
     const msg = el('p', { class: 'aviso solto', role: 'status', hidden: !estado.msg }, estado.msg || '');
-    const cLista = el('div', { class: 'cartao', id: 'lista-diag' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, `Contratos da classe A (${nInt.format(lista.length)})`),
+    const cLista = el('div', { class: 'cartao', id: 'lista-diag' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, `Contratos principais (${nInt.format(lista.length)})`),
       el('p', {}, `Somam ${brlCompacto(soma(lista, (r) => r.v))}. A numeração e o percentual acumulado seguem a classificação geral por valor. Clique numa linha para ver os detalhes, o que esclarecer e marcar para revisão.`)),
     el('div', { class: 'ferramentas' },
       el('button', { type: 'button', class: 'botao-primario', onclick: () => ctx.irPara('diagnostico/relatorio') }, 'Gerar relatório de diagnóstico'),
@@ -1044,8 +1061,21 @@
         estado.msg = `${n} contrato(s) colocados na lista de revisão.`; render(true);
       } }, 'Colocar os filtrados na lista de revisão')),
     tabela,
-    lista.length > vis.length ? el('div', { class: 'rodape-tabela' }, el('button', { type: 'button', class: 'botao', onclick: () => { D.mais += 50; render(true); } }, `Mostrar mais (${nInt.format(lista.length - vis.length)} restantes)`)) : null);
+    lista.length > vis.length ? el('div', { class: 'rodape-tabela' }, el('button', { type: 'button', class: 'botao', onclick: () => { D.mais += 50; render(true); } }, `Mostrar mais (${nInt.format(lista.length - vis.length)} restantes)`)) : null,
+    lista.length ? PF.barraCompartilhar(() => compartilharDiag(lista, R_, D)) : null);
     c.replaceChildren(kp, controles, el('div', { class: 'duas-colunas' }, cAlertas, cOrgs), cLista);
+  }
+  function compartilharDiag(lista, R_, D) {
+    const f = D.f;
+    const orgNome = f.org ? (lista.find((r) => String(r.k.org) === f.org) || {}).k : null;
+    const filtros = [`Contratos principais do Estado: os que somam ${D.corte}% de ${brlCompacto(R_.total)} (${R_.rotBase.toLowerCase()}); posição em ${dataBR(dados.ref)}`,
+      `${nInt.format(lista.length)} contratos na lista, somando ${brlCompacto(soma(lista, (r) => r.v))}`,
+      [orgNome && 'Órgão: ' + orgNome.orgNome, f.cat && 'Objeto: ' + f.cat, f.modal && 'Modalidade: ' + f.modal, f.ess && 'Essencialidade: ' + ESS()[f.ess], f.alerta && 'Alerta: ' + rotuloFiltroAlerta(f.alerta),
+        f.soAlerta && 'Só com alerta', f.q && 'Busca: ' + f.q].filter(Boolean).join(' | ')].filter(Boolean);
+    return { titulo: 'Diagnóstico dos contratos principais do Estado', filtros, arquivo: `diagnostico-contratos-${dados.ref}`,
+      colunas: [{ t: '#', w: 0.5 }, { t: 'Órgão', w: 2.2 }, { t: 'Fornecedor e objeto', w: 5.5 }, { t: 'Valor', w: 1.3, n: 1 }, { t: '% acum.', w: 0.9, n: 1 }, { t: 'Até quando', w: 1.2 }, { t: 'Alertas', w: 3 }],
+      linhas: lista.map((r) => [r.rank, r.k.orgNome, `${nomeProprio(r.k.forn)}: ${cortar(r.k.objeto, 180)}`, brlCompacto(r.v), pct(r.cum), dataBR(r.k.fimef), nomesAlertas(r.k, 3)]),
+      texto: lista.slice(0, 12).map((r) => `${r.rank}. ${nomeProprio(r.k.forn)} (${r.k.orgNome}) - ${brlCompacto(r.v)} - ${cortar(r.k.objeto, 70)}`).concat(lista.length > 12 ? [`... e mais ${lista.length - 12}. O PDF traz a lista completa.`] : []) };
   }
   function csvDiag(lista) {
     const aspas = (v) => '"' + String(v ?? '').replace(/"/g, '""') + '"';
@@ -1080,7 +1110,7 @@
     const cab = (cols) => el('thead', {}, el('tr', {}, cols.map((t, n) => el('th', { class: n ? 'num' : '' }, t))));
     const tAlertas = el('table', { class: 'tabela-resumo' }, cab(['Alerta', 'Contratos', 'Valor', 'Órgãos']),
       el('tbody', {}, porAlerta.map((x) => el('tr', {}, el('td', {}, `${dados.alertas[x.cod].titulo} (${NIVEL[x.n].toLowerCase()})`, el('small', {}, textoEsclarecer(x.cod))), el('td', { class: 'num' }, nInt.format(x.contratos)), el('td', { class: 'num' }, brlCompacto(x.valor)), el('td', { class: 'num' }, nInt.format(x.orgs.size))))));
-    const tOrgs = el('table', { class: 'tabela-resumo' }, cab(['Órgão', 'Contratos na classe A', 'Valor', 'Com alerta']),
+    const tOrgs = el('table', { class: 'tabela-resumo' }, cab(['Órgão', 'Contratos principais', 'Valor', 'Com alerta']),
       el('tbody', {}, porOrg.map((x) => el('tr', {}, el('td', {}, x.nome), el('td', { class: 'num' }, nInt.format(x.contratos)), el('td', { class: 'num' }, brlCompacto(x.valor)), el('td', { class: 'num' }, `${nInt.format(x.comAlerta)} (${pct(x.valorAlerta / (x.valor || 1))})`)))));
     const tCasos = el('table', {}, el('thead', {}, el('tr', {}, ['#', 'Contrato', 'Valor', 'Vigência', 'Alertas (o que esclarecer: ver tabela de alertas)'].map((t, n) => el('th', { class: n === 2 ? 'num' : '' }, t)))),
       el('tbody', {}, casos.map((r) => {
@@ -1096,7 +1126,7 @@
         el('p', { class: 'rel-data' }, `Uso interno. Emitido em ${hoje}. Posição dos dados: ${dataBR(dados.ref)}. Medida: ${R_.rotBase.toLowerCase()}; corte de ${D.corte}%${D.pub ? '' : '; sem bancos, entes públicos e prefeituras'}.`)),
       el('section', {}, el('h3', {}, 'Síntese'),
         el('p', {}, `${nInt.format(R_.kA)} dos ${nInt.format(R_.universo.length)} contratos vigentes (${pct(R_.kA / (R_.universo.length || 1))}) concentram ${D.corte}% de ${brlCompacto(R_.total)}. Dos ${nInt.format(R_.kA)}, ${nInt.format(comAlerta.length)} (${pct(comAlerta.length / (R_.kA || 1))}) têm ao menos um alerta, somando ${brlCompacto(soma(comAlerta, (r) => r.v))}; ${nInt.format(comAlerta.filter((r) => relevantes(r.k, restrito).some((a) => a.endsWith(':a'))).length)} têm alerta de nível alto.`),
-        el('h3', {}, 'Alertas na classe A'), tAlertas, el('h3', {}, 'Classe A por órgão'), tOrgs),
+        el('h3', {}, 'Alertas nos contratos principais'), tAlertas, el('h3', {}, 'Contratos principais por órgão'), tOrgs),
       el('section', {}, el('h3', {}, `Contratos para esclarecer (${nInt.format(casos.length)} de maior valor com alerta)`), tCasos),
       el('section', { class: 'rel-notas' }, el('h3', {}, 'Notas'),
         el('p', {}, `Fontes: ${dados.fonte.contratos}; ${dados.fonte.cadastro}; execução da despesa (SIGEFES), dívida ativa (PGFN) e sanções (CEIS e CNEP).`),
@@ -1160,6 +1190,10 @@
     }
     preencherMetodo();
     atualizarContador();
+    // com a tela já na mão, aquece o cache do navegador com os arquivos grandes que as outras telas vão pedir
+    if (!(navigator.connection && navigator.connection.saveData)) {
+      (window.requestIdleCallback || ((f) => setTimeout(f, 1500)))(() => ['diagnostico', 'fornecedores', 'busca'].forEach((a) => ctx.api(a, { silencioso: true }).catch(() => {})));
+    }
     return true;
   }
   function desmontar() { revisao = lerRevisao(); diag = null; dados = null; cacheOrg.clear(); cacheForn.clear(); listaBusca = null; todosForn = null; }

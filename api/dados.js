@@ -40,7 +40,8 @@ module.exports = (req, res) => {
   }
   res.statusCode = 200;
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
-  res.setHeader('Cache-Control', 'private, no-store');
+  // o navegador guarda por 5 min (e reaproveita por 1 h enquanto atualiza ao fundo): evita baixar de novo a cada toque
+  res.setHeader('Cache-Control', 'private, max-age=300, stale-while-revalidate=3600');
   res.setHeader('X-Robots-Tag', 'noindex, nofollow');
   res.end(conteudo);
 };

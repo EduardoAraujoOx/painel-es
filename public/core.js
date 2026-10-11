@@ -120,12 +120,17 @@
   };
 
   // ---------- acesso ----------
-  PF.api = async (modulo, arq) => {
-    const r = await fetch(`/api/dados?mod=${encodeURIComponent(modulo)}&arq=${encodeURIComponent(arq)}`,
-      { credentials: 'same-origin', cache: 'no-store' });
-    if (r.status === 401) throw { sessao: true };
-    if (!r.ok) throw new Error('Falha ao carregar dados (' + r.status + ')');
-    return r.json();
+  let pedidos = 0;
+  const ocupado = (d) => { pedidos = Math.max(0, pedidos + d); const b = $('#progresso'); if (b) b.hidden = pedidos === 0; };
+  PF.api = async (modulo, arq, opcoes) => {
+    const mudo = !!(opcoes && opcoes.silencioso); // pré-carregamento: sem barra de progresso
+    if (!mudo) ocupado(1);                      // a barra fina no cabeçalho dá retorno imediato ao toque
+    try {
+      const r = await fetch(`/api/dados?mod=${encodeURIComponent(modulo)}&arq=${encodeURIComponent(arq)}`, { credentials: 'same-origin' });
+      if (r.status === 401) throw { sessao: true };
+      if (!r.ok) throw new Error('Falha ao carregar dados (' + r.status + ')');
+      return await r.json();
+    } finally { if (!mudo) ocupado(-1); }
   };
   PF.mostrarLogin = () => {
     PF.limparObservadores();
@@ -182,7 +187,7 @@
       { mod: 'organograma', rotulo: 'Organograma' }] },
     { id: 'contratos', rotulo: 'Contratos', itens: [
       { mod: 'contratacoes', rotulo: 'Visão do governo', casa: (r) => !/^(diagnostico|revisao|relatorio)/.test(r) },
-      { mod: 'contratacoes', sub: 'diagnostico', rotulo: 'Diagnóstico (classe A)', casa: (r) => /^diagnostico/.test(r) },
+      { mod: 'contratacoes', sub: 'diagnostico', rotulo: 'Contratos principais', casa: (r) => /^diagnostico/.test(r) },
       { mod: 'contratacoes', sub: 'revisao', rotulo: 'Lista de revisão', selo: 'revisao', casa: (r) => /^(revisao|relatorio)/.test(r) }] },
     { id: 'transicao', rotulo: 'Transição', itens: [
       { mod: 'lacunas', rotulo: 'Informações a solicitar' }] },
@@ -240,7 +245,7 @@
       PF.atual = mod;
       const cont = $('#modulo');
       cont.replaceChildren(el('p', { class: 'vazio', role: 'status' }, 'Carregando…'));
-      const ok = await mod.montar({ container: cont, api: (arq) => PF.api(mod.id, arq), irPara: (r) => irPara(mod, r) });
+      const ok = await mod.montar({ container: cont, api: (arq, op) => PF.api(mod.id, arq, op), irPara: (r) => irPara(mod, r) });
       if (PF.atual !== mod) return; // o usuário trocou de aba durante o carregamento
       if (ok === false) { PF.atual = null; return; }
     }
