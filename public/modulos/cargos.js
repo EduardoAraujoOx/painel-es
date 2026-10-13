@@ -16,6 +16,7 @@
 
   // ---------- estado ----------
   let dados = null;
+  let complementos = null;      // pagamentos de pessoal feitos fora da folha (opcional; ver pipeline/cargos/complementos.py)
   const cacheOrg = new Map();
   let tokenRender = 0;
   const estado = {
@@ -116,6 +117,57 @@
     return el('div', { class: 'duas-colunas' }, a, b);
   }
 
+
+  // ---------- pessoal pago fora da folha (fundos) ----------
+  const pagoMes = (it, m) => (it.serie[m] ? it.serie[m].pago + it.serie[m].rap : 0);
+  function mesesDe(it) {
+    const ks = Object.keys(it.serie).sort().filter((m) => m <= dados.mes);   // até a competência da folha; o mês corrente da execução ainda está incompleto
+    if (!ks.length) return [];
+    const out = [];
+    let [a, m] = ks[0].split('-').map(Number);
+    const [fa, fm] = ks[ks.length - 1].split('-').map(Number);
+    while (a < fa || (a === fa && m <= fm)) { out.push(`${a}-${String(m).padStart(2, '0')}`); m += 1; if (m > 12) { m = 1; a += 1; } }
+    return out;
+  }
+  const ultimos12 = (it) => mesesDe(it).slice(-12);
+  const total12 = (it) => soma(ultimos12(it), (m) => pagoMes(it, m));
+
+  function cartaoComplementoOrg(it) {
+    const meses = mesesDe(it), u12 = ultimos12(it);
+    const t12 = total12(it);
+    const ultimo = meses[meses.length - 1];
+    const fav = it.beneficiarios && it.serie[ultimo] ? it.serie[ultimo].favorecidos : 0;
+    const kp = el('div', { class: 'kpis' },
+      kpi('Últimos 12 meses', brlCompacto(t12), `${rotuloMes(u12[0], true)} a ${rotuloMes(ultimo, true)}, pago pelo ${it.fundo}`),
+      kpi('Média por mês', brlCompacto(t12 / Math.max(1, u12.length)), 'pago e restos a pagar pagos'),
+      it.beneficiarios ? kpi('Favorecidos no último mês', nInt.format(fav), fav ? `média de ${brlCompacto(pagoMes(it, ultimo) / fav)} por favorecido` : '') : null);
+    const cartao = el('div', { class: 'cartao' },
+      el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Pessoal pago fora da folha'), el('p', {}, `${it.titulo}. Pago pelo ${it.fundo} (${PF.titulo(it.ugNome)}), fora da despesa de pessoal do órgão.`))),
+      kp);
+    graficoBarras(cartao, { meses, series: [{ nome: 'Pago no mês', cor: 'var(--serie-1)', barra: true, vals: meses.map((m) => pagoMes(it, m)) }], fmt: (v) => brlCompacto(v) });
+    if (it.componentes.length) {
+      const comp = it.componentes.map((c) => ({ ...c, v: soma(u12, (m) => c.serie[m] || 0) })).sort((a, b) => b.v - a.v);
+      const resto = t12 - soma(comp, (c) => c.v);
+      if (resto > 1e4) comp.push({ cod: '', rotulo: 'Demais elementos de despesa', elemento: '', v: resto });
+      const max = Math.max(1, ...comp.map((c) => c.v));
+      cartao.append(el('h3', {}, 'Componentes (últimos 12 meses)'), el('div', { class: 'linhas' }, comp.map((c) => el('div', { class: 'linha-barra sem-clique' },
+        el('span', { class: 'nome' }, c.rotulo, el('small', {}, c.cod ? `elemento ${c.cod}${c.elemento ? ' · ' + PF.titulo(c.elemento) : ''}` : 'pagos pelo fundo, fora dos quatro componentes acima')),
+        el('span', { class: 'trilho' }, el('i', { class: 'barra', style: `width:${Math.max(0.5, (c.v / max) * 62)}%` }), el('span', { class: 'num' }, brlCompacto(c.v)))))));
+    }
+    cartao.append(el('p', { class: 'fonte' }, `${it.descricao} Fonte: ${complementos.fonte}; mostra até ${rotuloMes(dados.mes, true)}, a competência da folha. Pago inclui restos a pagar pagos no mês.`));
+    return cartao;
+  }
+  const complementosDe = (sigla) => (complementos ? complementos.itens.filter((i) => i.sigla === sigla) : []);
+
+  function cartaoComplementosGoverno() {
+    if (!complementos || !complementos.itens.length) return null;
+    const linhas = complementos.itens.map((it) => el('tr', { class: 'clicavel', tabindex: '0', onclick: () => selecionarOrg(it.sigla), onkeydown: (ev) => { if (ev.key === 'Enter') selecionarOrg(it.sigla); } },
+      el('td', {}, el('strong', {}, it.sigla), el('small', {}, it.titulo)), el('td', {}, it.fundo), el('td', { class: 'num' }, brlCompacto(total12(it))), el('td', { class: 'num' }, brlCompacto(total12(it) / 12))));
+    return el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Pessoal pago fora da folha'),
+      el('p', {}, 'Pagamentos a pessoal feitos por fundos, que não entram na despesa de pessoal do órgão nem nos custos acima. Clique para ver o detalhe do órgão.'))),
+    el('div', { class: 'rolagem' }, el('table', {}, el('thead', {}, el('tr', {}, ['Órgão e pagamento', 'Pago por', 'Últimos 12 meses', 'Média por mês'].map((t, n) => el('th', { class: n >= 2 ? 'num' : '' }, t)))), el('tbody', {}, linhas))));
+  }
+
   // ---------- visão: governo ----------
   function renderGoverno(c) {
     const orgs = orgsVisiveis();
@@ -170,7 +222,7 @@
     } else {
       cartao.append(tabelaOrgs(orgs));
     }
-    c.replaceChildren(kp, cartao, cartaoEvolucao(serie, 'Evolução mensal no governo'));
+    c.replaceChildren(kp, cartao, ...[cartaoComplementosGoverno()].filter(Boolean), cartaoEvolucao(serie, 'Evolução mensal no governo'));
   }
 
   function tabelaOrgs(orgs) {
@@ -257,7 +309,7 @@
         onclick: () => { estado.verTodasFuncoes = !estado.verTodasFuncoes; render(); } },
         estado.verTodasFuncoes ? 'Mostrar menos' : `Mostrar todas (${lista.length})`)) : null);
 
-    c.replaceChildren(kp, cartaoFuncoes, cartaoEvolucao(serie, 'Evolução mensal em ' + org.sigla),
+    c.replaceChildren(kp, ...complementosDe(org.sigla).map(cartaoComplementoOrg), cartaoFuncoes, cartaoEvolucao(serie, 'Evolução mensal em ' + org.sigla),
       cartaoOcupantes(org, base));
   }
 
@@ -433,12 +485,14 @@
       const cols = dados.colunasSerie;
       o.s = o.serie.map((r) => Object.fromEntries(cols.map((k, i) => [k, r[i]])));
     }
+    try { complementos = await ctx.api('complementos'); } catch (e) { complementos = null; /* o painel funciona sem esse arquivo */ }
     preencherMetodo();
     return true;
   }
 
   function desmontar() {
     dados = null;
+    complementos = null;
     cacheOrg.clear();
   }
 
