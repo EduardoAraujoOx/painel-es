@@ -12,9 +12,9 @@ doações de pessoa jurídica ficam de fora. Executivo = governador (ES) e presi
 deputado federal e senador (ES).
 
 Saídas:
-  data/politico/index.json   agregados, sem nomes de pessoas (servido mesmo com o painel aberto);
-  data/politico/pessoas.json lista nominal (servida só com o painel protegido por senha, ver api/dados.js).
-                             NÃO vai para o Git (está no .gitignore) enquanto o repositório for público.
+  data/politico/index.json   agregados, sem nomes de pessoas;
+  data/politico/pessoas.json lista nominal (dado pessoal sensível). Por decisão do dono, é versionada e servida com o painel
+                             aberto; para restringir à senha, ver SO_COM_SENHA em api/dados.js.
 
 Uso: python3 -I pipeline/cargos/politico.py [--atualizar-mascaras]
 Antes: pipeline/cargos/extrair.py (folha) e downloads em .cache/politico (ver baixar() abaixo).

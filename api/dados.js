@@ -10,7 +10,9 @@ const RAIZ = process.cwd();
 const PASTA = process.env.DADOS_DIR || 'data'; // variável usada só nos testes locais
 
 // Listas fechadas de caracteres: nada de pontos ou barras fora do formato <pasta>/<nome>.
-const SO_COM_SENHA = new Set(['politico/pessoas']);
+// Arquivos que só saem com o painel protegido por senha (dado pessoal sensível). Vazio por decisão do dono do painel
+// enquanto o endereço não for divulgado; para voltar a proteger a lista nominal: new Set(['politico/pessoas']).
+const SO_COM_SENHA = new Set([]);
 const RE_MODULO = /^[a-z0-9_-]{1,30}$/;
 const RE_ARQUIVO = /^[A-Za-z0-9_-]{1,60}(\/[A-Za-z0-9_-]{1,60})?$/;
 

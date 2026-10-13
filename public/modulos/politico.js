@@ -33,7 +33,7 @@
       e: 'Doações de pessoa física a candidatos a deputado estadual, deputado federal e senador pelo Espírito Santo, registradas na prestação de contas de campanha ao TSE, feitas por quem hoje ocupa cargo em comissão ou função gratificada no Poder Executivo estadual. Ajuda a ver a ligação de ocupantes de cargos de confiança com mandatos do Legislativo.',
     },
   };
-  const cuidados = () => `Doar é ato legal e não indica filiação partidária nem opinião sobre o governo; o painel também não sabe se a doação foi feita antes ou depois de a pessoa assumir o cargo. É dado pessoal sensível (opinião política): a lista nominal é restrita à equipe de transição e não deve orientar decisão individual sobre as pessoas. Os dados de 2026 são parciais, até ${dados.tse['2026']}, e a eleição ainda não terminou. Ficam de fora doações a partidos, de pessoa jurídica e do próprio candidato a si.`;
+  const cuidados = () => `Doar é ato legal e não indica filiação partidária nem opinião sobre o governo; o painel também não sabe se a doação foi feita antes ou depois de a pessoa assumir o cargo. É dado pessoal sensível (opinião política): o uso deve ficar restrito à equipe de transição, e a lista não deve orientar decisão individual sobre as pessoas. Os dados de 2026 são parciais, até ${dados.tse['2026']}, e a eleição ainda não terminou. Ficam de fora doações a partidos, de pessoa jurídica e do próprio candidato a si.`;
   const como = () => `Mesma pessoa quando o nome e os seis dígitos do meio do CPF coincidem entre a base de vínculos dos servidores (CPF mascarado) e a prestação de contas do TSE (CPF completo). Folha de ${dados.folha.slice(5)}/${dados.folha.slice(0, 4)}: ${nInt.format(dados.universo.ocupantes)} ocupantes, dos quais ${nInt.format(dados.universo.comMascara)} puderam ser testados (os demais não têm CPF mascarado na base). Nenhuma chave se repetiu, o que afasta homônimos. TSE: 2018, 2022 e 2026 (parcial).`;
 
   const grupoCands = (g) => dados.candidatos.filter((c) => c.grupo === g);
@@ -49,7 +49,7 @@
   }
   function renderInicio(c) {
     c.replaceChildren(
-      el('p', { class: 'fm-intro' }, `Cruza os ${nInt.format(dados.universo.ocupantes)} ocupantes de cargo em comissão e função gratificada (folha de ${dados.folha.slice(5)}/${dados.folha.slice(0, 4)}) com as doações de campanha a candidatos registradas no TSE em 2018, 2022 e 2026 (parcial). ${nInt.format(dados.pessoasDistintas)} ocupantes aparecem como doadores. É dado pessoal sensível: os totais valem sempre; a lista nominal só aparece com o painel protegido por senha.`),
+      el('p', { class: 'fm-intro' }, `Cruza os ${nInt.format(dados.universo.ocupantes)} ocupantes de cargo em comissão e função gratificada (folha de ${dados.folha.slice(5)}/${dados.folha.slice(0, 4)}) com as doações de campanha a candidatos registradas no TSE em 2018, 2022 e 2026 (parcial). ${nInt.format(dados.pessoasDistintas)} ocupantes aparecem como doadores. É dado pessoal sensível (opinião política): use só para a análise da transição e não divulgue o endereço do painel.`),
       el('div', { class: 'duas-colunas' }, cartaoGrupo('executivo'), cartaoGrupo('legislativo')));
   }
 
@@ -92,8 +92,8 @@
 
   function cartaoLista(g) {
     const e = est[g];
-    if (PF.aberto) {
-      return el('div', { class: 'cartao fm-fora' }, el('h3', {}, 'Lista nominal'), el('p', {}, 'A lista com os nomes é dado pessoal sensível (opinião política) e só é exibida quando o painel está protegido por senha. Os totais acima já valem sem senha.'));
+    if (pessoasEstado === 'restrita') {
+      return el('div', { class: 'cartao fm-fora' }, el('h3', {}, 'Lista nominal'), el('p', {}, 'A lista com os nomes é dado pessoal sensível (opinião política) e só é exibida com o painel protegido por senha. Os totais acima valem normalmente.'));
     }
     if (!pessoas && pessoasEstado === 'indisponivel') return el('div', { class: 'cartao fm-fora' }, el('h3', {}, 'Lista nominal'), el('p', {}, 'A lista nominal não está publicada neste ambiente. Os totais acima valem normalmente.'));
     if (!pessoas) return el('div', { class: 'cartao' }, el('p', { class: 'vazio' }, 'Carregando a lista…'));
@@ -108,7 +108,7 @@
     const linhas = lista.slice(0, e.mais).map((p, i) => el('tr', {}, el('td', { class: 'num' }, String(i + 1)),
       el('td', {}, el('strong', {}, nome(p.nome)), el('small', {}, p.sigla + ' · ' + (p.tipo === 'CC' ? 'cargo em comissão' : 'função gratificada') + ' · ' + nome(p.cargo))),
       el('td', {}, ...textoDoacoes(p).map((t) => el('small', {}, t))), el('td', { class: 'num' }, brl(p.total))));
-    return el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, `Ocupantes doadores (${nInt.format(lista.length)})`), el('p', {}, 'Do maior para o menor valor doado. Dado pessoal sensível: uso restrito à equipe de transição.'))),
+    return el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, `Ocupantes doadores (${nInt.format(lista.length)})`), el('p', {}, 'Do maior para o menor valor doado. Dado pessoal sensível: uso restrito à equipe de transição, sem divulgar o endereço.'))),
       filtros,
       lista.length ? el('div', { class: 'rolagem' }, el('table', {}, el('thead', {}, el('tr', {}, ['#', 'Ocupante', 'Doações', 'Total'].map((t, n) => el('th', { class: n === 0 || n === 3 ? 'num' : '' }, t)))), el('tbody', {}, linhas))) : el('p', { class: 'vazio' }, 'Nenhum ocupante neste filtro.'),
       lista.length > e.mais ? el('div', { class: 'rodape-tabela' }, el('span', {}, `Mostrando ${nInt.format(Math.min(e.mais, lista.length))} de ${nInt.format(lista.length)}`), el('button', { type: 'button', class: 'botao', onclick: () => { e.mais += 50; render(); } }, 'Mostrar mais')) : null,
@@ -143,9 +143,9 @@
 
   // ---------- roteamento ----------
   async function carregarPessoas() {
-    if (pessoas || PF.aberto) return;
+    if (pessoas) return;
     pessoasEstado = 'carregando';
-    try { pessoas = await ctx.api('pessoas'); pessoasEstado = ''; } catch (e) { pessoas = null; if (e.sessao) throw e; pessoasEstado = 'indisponivel'; }
+    try { pessoas = await ctx.api('pessoas'); pessoasEstado = ''; } catch (e) { pessoas = null; if (e.sessao) throw e; pessoasEstado = e.status === 403 ? 'restrita' : 'indisponivel'; }
   }
   function render() {
     if (!raiz || !$('#conteudo')) return;
@@ -158,7 +158,7 @@
     const r = decodeURIComponent(resto || '');
     tela = r === 'executivo' || r === 'legislativo' ? r : '';
     render();
-    if (tela) { window.scrollTo({ top: 0 }); if (!pessoas && !PF.aberto) carregarPessoas().then(render).catch(() => {}); }
+    if (tela) { window.scrollTo({ top: 0 }); if (!pessoas) carregarPessoas().then(render).catch(() => {}); }
   }
 
   const ESQUELETO = `
