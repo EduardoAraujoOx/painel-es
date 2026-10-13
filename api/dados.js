@@ -10,6 +10,7 @@ const RAIZ = process.cwd();
 const PASTA = process.env.DADOS_DIR || 'data'; // variável usada só nos testes locais
 
 // Listas fechadas de caracteres: nada de pontos ou barras fora do formato <pasta>/<nome>.
+const SO_COM_SENHA = new Set(['politico/pessoas']);
 const RE_MODULO = /^[a-z0-9_-]{1,30}$/;
 const RE_ARQUIVO = /^[A-Za-z0-9_-]{1,60}(\/[A-Za-z0-9_-]{1,60})?$/;
 
@@ -28,6 +29,9 @@ module.exports = (req, res) => {
   const modulo = url.searchParams.get('mod') || '';
   const arq = url.searchParams.get('arq') || '';
   if (!RE_MODULO.test(modulo) || !RE_ARQUIVO.test(arq)) return responder(res, 400, { erro: 'pedido inválido' });
+
+  // Arquivos com dado pessoal sensível (opinião política de pessoas identificadas) só saem com o painel protegido por senha.
+  if (aberto && SO_COM_SENHA.has(modulo + '/' + arq)) return responder(res, 403, { erro: 'disponível só com o painel protegido por senha' });
 
   const base = path.join(RAIZ, PASTA, modulo);
   const caminho = path.join(base, arq + '.json');

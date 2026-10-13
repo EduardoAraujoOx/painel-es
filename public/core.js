@@ -128,7 +128,7 @@
     try {
       const r = await fetch(`/api/dados?mod=${encodeURIComponent(modulo)}&arq=${encodeURIComponent(arq)}`, { credentials: 'same-origin' });
       if (r.status === 401) throw { sessao: true };
-      if (!r.ok) throw new Error('Falha ao carregar dados (' + r.status + ')');
+      if (!r.ok) { const e = new Error('Falha ao carregar dados (' + r.status + ')'); e.status = r.status; throw e; }
       return await r.json();
     } finally { if (!mudo) ocupado(-1); }
   };
@@ -184,7 +184,8 @@
   const PAINEIS = [
     { id: 'pessoal', rotulo: 'Pessoal', itens: [
       { mod: 'cargos', rotulo: 'Cargos em comissão' },
-      { mod: 'organograma', rotulo: 'Organograma' }] },
+      { mod: 'organograma', rotulo: 'Organograma' },
+      { mod: 'politico', rotulo: 'Vínculos políticos' }] },
     { id: 'contratos', rotulo: 'Contratos', itens: [
       { mod: 'contratacoes', rotulo: 'Visão do governo', casa: (r) => !/^(diagnostico|revisao|relatorio)/.test(r) },
       { mod: 'contratacoes', sub: 'diagnostico', rotulo: 'Contratos principais', casa: (r) => /^diagnostico/.test(r) },
@@ -263,6 +264,7 @@
     try { aberto = !!(await r.json()).aberto; } catch (e) { /* resposta sem corpo */ }
     $('#login').hidden = true;
     $('#app').hidden = false;
+    PF.aberto = aberto;
     $('#sair').hidden = aberto;                       // sem senha não há o que encerrar
     $('#aviso-aberto').hidden = !aberto;
     montarMenu();
