@@ -549,3 +549,6 @@ button.kpi:hover { border-color: var(--acento); border-top-color: var(--acento);
 .objeto strong a { color: inherit; text-decoration: none; }
 .objeto strong a:hover { color: var(--acento); text-decoration: underline; }
 td small.fm-futura { color: var(--erro); }
+.linha-barra.sem-clique { cursor: default; }
+.linha-barra.sem-clique:hover { background: none; }
+td small { display: block; }

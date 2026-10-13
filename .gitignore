@@ -5,3 +5,6 @@ node_modules/
 *.log
 __pycache__/
 data_teste/
+
+# lista nominal de ocupantes doadores de campanha (dado pessoal sensível): nunca em repositório público
+data/politico/pessoas.json
