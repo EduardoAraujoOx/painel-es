@@ -57,9 +57,12 @@ def valor(b):
         return 0.0
 
 
-def fatia(args):
+def ler_fatia(args):
+    """Lê uma fatia de bytes. Devolve None se o download falhar no meio (o chamador repete a fatia inteira): a conexão cai de vez
+    em quando e, sem essa conferência, os pagamentos da fatia se perdiam sem aviso."""
     url, ini, fim, tam, indices, cnpjs = args
     ne, mes, lidas, aceitas, ruins = {}, {}, 0, 0, 0
+    vistas = set()                            # linha idêntica na mesma fatia conta uma vez (repetição por nova tentativa do curl)
     i_ne, i_ug, i_ugn, i_org, i_lic, i_elem = indices
     cmd = ["curl", "-sS", "-L", "--fail", "--retry", "4", "--retry-delay", "3", "-r",
            f"{max(0, ini - 1)}-{min(tam - 1, fim + SOBRA)}", url]
@@ -74,11 +77,15 @@ def fatia(args):
             if ini > 0 or inicio == 0:
                 continue                      # sobra da linha anterior (ou o cabeçalho)
         if inicio >= fim:
-            break
+            continue                      # além da fatia: lê até o fim do pedido, para conferir que o download terminou bem
         lidas += 1
         campos = linha.split(b";", 7)
         if len(campos) < 8 or campos[6] not in cnpjs:
             continue
+        h = hash(linha)
+        if h in vistas:
+            continue
+        vistas.add(h)
         try:
             c = next(csv.reader([linha.decode("utf-8", "replace")], delimiter=";"))
         except csv.Error:
@@ -99,9 +106,17 @@ def fatia(args):
         m[0] += emp; m[1] += liq; m[2] += pago
         mes.setdefault(("_ug", c[i_ug], c[i_ugn]), None)
     p.stdout.close()
-    p.kill()
-    p.wait()
+    if p.wait() != 0:
+        return None
     return ne, mes, lidas, aceitas, ruins
+
+
+def fatia(args):
+    for _ in range(4):
+        r = ler_fatia(args)
+        if r is not None:
+            return r
+    raise RuntimeError(f"fatia {args[1]}-{args[2]} falhou 4 vezes")
 
 
 def cabecalho(url):
