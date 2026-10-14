@@ -45,7 +45,7 @@
   function mesesEntre(a, b) {
     return (+b.slice(0, 4) - +a.slice(0, 4)) * 12 + (+b.slice(5) - +a.slice(5));
   }
-  const PEQUENAS = new Set(['de', 'da', 'do', 'das', 'dos', 'e', 'em', 'para', 'a', 'o', 'no', 'na']);
+  const PEQUENAS = new Set(['de', 'da', 'do', 'das', 'dos', 'e', 'em', 'para', 'a', 'o', 'no', 'na', 'ao', 'aos', 'à', 'às']);
   function titulo(s) {
     return String(s || '').toLowerCase().split(/(\s+)/).map((p, i) => {
       if (/^\s*$/.test(p)) return p;
@@ -191,6 +191,8 @@
       { mod: 'contratacoes', sub: 'diagnostico', rotulo: 'Contratos principais', casa: (r) => /^diagnostico/.test(r) },
       { mod: 'fimmandato', rotulo: 'Fim de mandato' },
       { mod: 'contratacoes', sub: 'revisao', rotulo: 'Lista de revisão', selo: 'revisao', casa: (r) => /^(revisao|relatorio)/.test(r) }] },
+    { id: 'fundos', rotulo: 'Fundos', itens: [
+      { mod: 'fundos', rotulo: 'Raio-x dos fundos' }] },
     { id: 'transicao', rotulo: 'Transição', itens: [
       { mod: 'lacunas', rotulo: 'Informações a solicitar' }] },
   ];

@@ -1,0 +1,1191 @@
+[
+ {
+  "ug": "320901",
+  "nomeOficial": "Fundo Estadual de Ciência e Tecnologia",
+  "sigla": "FUNCITEC",
+  "leiCriacao": "LC 964/2021",
+  "leiCriacaoCompleta": "Lei nº 4.778, de 07/06/1993 (art. 8º), integralmente revogada e substituída pela Lei Complementar nº 964, de 10/03/2021 (DO 11/03/2021), que reestrutura o FUNCITEC",
+  "alteracoes": [
+   "LC nº 947/2020 (data não confirmada): na versão consolidada da Lei 4.778 acrescentou parágrafo único ao art. 8º (recursos do fundo podem custear despesas de custeio, inclusive do órgão a que se vincula), revogou o inciso IX do art. 9º (saldos de exercícios anteriores) e criou o §3º do art. 9º (superávit financeiro podia ser transferido ao exercício seguinte a crédito do Tesouro, de forma desvinculada, salvo recursos vinculados por CF, lei federal, convênios ou operações de crédito). Texto da LC 947 em si não aberto; dado extraído do PDF consolidado da Lei 4.778 no site da FAPES.",
+   "LC nº 964, de 10/03/2021: reestrutura o fundo como fundo especial de natureza financeira e contábil, prazo indeterminado, vinculado à FAPES; mantém a dotação de 0,5% do ICMS disponível; passa a determinar que o saldo positivo do balanço seja transferido ao exercício seguinte a crédito do próprio Fundo (art. 2º, §3º); mantém a possibilidade de custeio, inclusive da FAPES; revoga expressamente a Lei 4.778/1993 (art. 13)."
+  ],
+  "finalidade": "Prestar apoio financeiro a programas e projetos de interesse para o desenvolvimento científico e tecnológico do Espírito Santo (infraestrutura física e técnica de C&T, produção e difusão de conhecimento, desenvolvimento e transferência de tecnologia, capacitação de recursos humanos), por meio de cooperação financeira reembolsável ou não, risco compartilhado, subscrição de ações/debêntures e comodato. Pode custear despesas de custeio, inclusive do órgão a que se vincula (FAPES).",
+  "receitas": "LC 964/2021, art. 2º: dotação consignada no Orçamento Anual (equivalente a 0,5% do ICMS disponível a cada mês, isto é, ICMS arrecadado menos transferências aos municípios e aos demais fundos fiscais, repassada até o dia 15 do mês seguinte); recursos governamentais de origem federal, estadual ou municipal, auxílios, subvenções, contribuições e doações de entidades públicas ou privadas, nacionais, internacionais e estrangeiras; renda da alienação de bens públicos da Administração Direta; bens móveis e imóveis; recursos de incentivos fiscais; variação monetária e rendimentos de aplicações; cotas de condomínio sobre marcas e patentes e receitas de cessão de direitos de propriedade industrial/intelectual; títulos e valores mobiliários de subscrição; recursos de outras fontes; saldos de exercícios anteriores.",
+  "gestao": "Gestão financeira e operacional a cargo da FAPES (Fundação de Amparo à Pesquisa e Inovação do ES), à qual o fundo é vinculado (LC 964/2021, arts. 1º e 3º). Contabilidade própria e conta especial em instituição financeira pública (art. 5º). A LC 964 não prevê conselho gestor do fundo; o CONCITEC, que na Lei 4.778 aprovava normas e critérios de aplicação, deixou de existir com a revogação dessa lei. A aplicação segue o Plano Estadual de Desenvolvimento Científico e Tecnológico (PDCT) (art. 6º).",
+  "vinculacao": "A LC 964 não vincula o saldo a fonte constitucional ou federal específica nem cita expressamente transferências da União carimbadas; apenas lista entre as receitas 'recursos governamentais de origem federal'. Saldo: transferido ao exercício seguinte a crédito do próprio Fundo (art. 2º, §3º), ou seja, a regra atual NÃO é a reversão ao Tesouro (a regra da LC 947/2020, que permitia transferir o superávit a crédito do Tesouro de forma desvinculada, foi substituída). Extinção: todo o patrimônio, exceto compromissos assumidos, deve ser destinado por ato do Governador a programas, projetos e ações de órgão ou entidade pública de interesse para o desenvolvimento científico e tecnológico do ES (art. 11). Aplicação conforme o PDCT (art. 6º). Instrumento de alteração: lei complementar (a lei de criação/reestruturação é LC); o Executivo pode apenas regulamentar o funcionamento (art. 12) e a FAPES pode regulamentar competências por instrumento próprio (art. 5º, parágrafo único). A dotação de 0,5% do ICMS é fixada no texto legal, logo só muda por lei.",
+  "reversao": "nao",
+  "links": [
+   {
+    "rotulo": "LC nº 964/2021 (texto autógrafo no site da FAPES, DO 11/03/2021)",
+    "url": "https://fapes.es.gov.br/media/Lista%20de%20Arquivos/Lei%20Complementar%20964.2021%20-%20FUNCITEC.doc"
+   },
+   {
+    "rotulo": "Lei nº 4.778/1993 (PDF consolidado com LC 947/2020, site da FAPES)",
+    "url": "https://fapes.es.gov.br/Media/fapes/Importacao/lei-4778-1993-ales.pdf"
+   },
+   {
+    "rotulo": "FAPES - Leis (índice)",
+    "url": "https://fapes.es.gov.br/leis"
+   }
+  ],
+  "confianca": "alta",
+  "lacunas": "Texto da LC 947/2020 não aberto (data não confirmada; só consta como nota de rodapé do PDF consolidado da Lei 4.778). Não foi verificada eventual alteração posterior da LC 964/2021. O arquivo da LC 964 no site da FAPES é um .doc de autógrafo (metadados de 'autógrafo de lei nº 169/2007'), com texto coerente com a publicação de 11/03/2021, mas o DO não foi aberto. A data de 07/06/1993 da Lei 4.778 vem do art. 13 da LC 964 e do índice da FAPES; o relatório da FAPES 2020 cita 09/06/1993. A referência da lei antiga ao art. 197 da Constituição Estadual (percentual para C&T) não foi conferida na Constituição."
+ },
+ {
+  "ug": "420901",
+  "nomeOficial": "Fundo Estadual de Apoio à Ampliação e Melhoria das Condições de Oferta da Educação Infantil e do Ensino Fundamental no Espírito Santo",
+  "sigla": "FUNPAES",
+  "leiCriacao": "Lei 11.790/2023",
+  "leiCriacaoCompleta": "Lei nº 10.787, de 18/12/2017 (DO 19/12/2017), revogada e substituída pela Lei nº 11.790, de 28/03/2023 (DO 29/03/2023), que reestrutura o FUNPAES",
+  "alteracoes": [
+   "Lei nº 11.257, de 30/04/2021 (DO 03/05/2021): ampliou o fundo para abranger também o Ensino Fundamental (nova ementa) e alterou a Lei 10.787; a Lei 10.787 original previa a extinção do fundo ao final do exercício de 2025 e a versão da Lei 11.257 trouxe a data de 2026 (conferido apenas por busca no texto; a Lei 11.257 foi aberta em PDF do DO).",
+   "Lei nº 11.790, de 28/03/2023: reestrutura o FUNPAES, revoga a Lei 10.787/2017 e suas alterações (art. 19), mantém os editais anteriores a 2023 sob a Lei 10.787 (art. 17) e rege os editais a partir de 2023; não repete cláusula de extinção em data certa."
+  ],
+  "finalidade": "Ampliar o acesso à educação, promover a equidade e melhorar o nível de aprendizagem do ensino público capixaba, por meio de transferência financeira (fundo a fundo) a municípios signatários do Pacto pela Aprendizagem no ES (PAES, Lei 10.631/2017), para investimentos em construção, reforma e ampliação de unidades escolares e espaços esportivos, bens permanentes e outros investimentos de educação infantil e ensino fundamental.",
+  "receitas": "Lei 11.790/2023, art. 2º: dotações orçamentárias e créditos adicionais; doações, auxílios, subvenções e contribuições de pessoas físicas ou jurídicas, entidades públicas ou privadas, nacionais ou estrangeiras; recursos de financiamentos e repasses de instituições financeiras nacionais e internacionais (inclusive BID); rendimentos de aplicações financeiras; saldos de exercícios anteriores e restituição de recursos não aplicados pelos municípios; outras receitas legalmente destinadas. Não há percentual de receita vinculada (ex.: ICMS) fixado nessa lei.",
+  "gestao": "Fundo vinculado à SEDU, com Unidade Orçamentária específica (art. 5º). Comitê Deliberativo do FUNPAES (art. 6º), presidido pelo Secretário da SEDU e integrado pelos Subsecretários de Suporte à Educação e de Articulação Educacional e pelo Gerente do Regime de Colaboração com os Municípios; define normas e critérios, delibera sobre inscrições e planos de aplicação. Operacionalização pela Gerência do Regime de Colaboração. Nos municípios, exige-se Conselho Municipal de Acompanhamento e Fiscalização de Execução (COMAFE) (art. 8º). Recursos mantidos na Conta Única no BANESTES.",
+  "vinculacao": "Uso dos recursos pelos municípios: exclusivamente despesas de capital (grupo 4 - Investimentos) previstas no plano de aplicação aprovado pela SEDU (art. 7º, §2º); municípios devem devolver recursos aplicados em finalidade diversa (art. 13, §2º). Saldo: os recursos não utilizados no fim do exercício são transferidos ao exercício seguinte, 'podendo ser revertidos para o Tesouro Estadual' (art. 2º, §1º); a reversão é, portanto, autorizada por lei, não automática. Recursos de operações de crédito ou outras fontes vinculadas podem ficar em contas específicas (art. 2º, §3º). Não há vinculação a transferência federal carimbada nem a fonte constitucional. Instrumentos: a finalidade e as fontes só mudam por lei estadual; critérios, prazos e formas de repasse são definidos por edital, normas do Comitê Deliberativo e decreto regulamentador (art. 16: decreto expede instruções de execução).",
+  "reversao": "permite",
+  "links": [
+   {
+    "rotulo": "Lei nº 10.787/2017 (DIO de 19/12/2017, site PAES/SEDU)",
+    "url": "https://paes.sedu.es.gov.br/Media/PAES/PDF/Lei%2010.787%20-%20LEI%20FUNPAES%20-%202017-12-19%20.pdf"
+   },
+   {
+    "rotulo": "Lei nº 11.257/2021 (DIO de 03/05/2021)",
+    "url": "https://paes.sedu.es.gov.br/Media/PAES/PDF/9%20_%20Lei%20n%C2%BA%2011.257%20-%20D.O._2021-05-03_pag_10.pdf"
+   },
+   {
+    "rotulo": "Lei nº 11.790/2023 (DIO de 29/03/2023)",
+    "url": "https://paes.sedu.es.gov.br/Media/PAES/PDF/LEI%20N%C2%BA%2011.790-2023%20FUNPAES.pdf"
+   },
+   {
+    "rotulo": "PAES/SEDU - Legislação (índice)",
+    "url": "https://paes.sedu.es.gov.br/legislacao"
+   }
+  ],
+  "confianca": "alta",
+  "lacunas": "O nome da UG está truncado no sistema; o nome legal atual inclui 'e do Ensino Fundamental'. Os decretos regulamentadores (4.217-R/2018, 4.907-R/2021, 5.365-R/2023 segundo o índice do PAES) não foram abertos, portanto os detalhes de COMAFE, edital e prestação de contas ficaram sem conferência. Data exata de sanção da Lei 11.257 (30/04/2021) vem do índice do PAES; o DO aberto é de 03/05/2021. Possíveis alterações posteriores à Lei 11.790/2023 não foram pesquisadas."
+ },
+ {
+  "ug": "470901",
+  "nomeOficial": "Fundo Estadual de Assistência Social",
+  "sigla": "FEAS",
+  "leiCriacao": "Lei 5.162/1995",
+  "leiCriacaoCompleta": "Lei nº 5.162, de 19/12/1995 (cria o CONEAS e o FEAS)",
+  "alteracoes": [
+   "Lei nº 9.451, de 18/05/2010 (DO 19/05/2010): altera §1º do art. 13 e arts. 15 a 19 da Lei 5.162; vincula o FEAS à SETADES; reescreve a destinação (art. 17) incluindo cofinanciamento aos municípios para custeio e manutenção das ações de assistência social; institui a transferência fundo a fundo regular e automática do FEAS aos Fundos Municipais para ações continuadas, conforme Portaria do Secretário da SETADES (art. 19).",
+   "Lei nº 9.966, de 19/12/2012 (Lei do SUAS/ES, dispõe sobre o Sistema Único de Assistência Social no ES): citada em documentos oficiais da SETADES como base atual de CEAS/ES, fundo e plano; texto NÃO aberto (portal da Assembleia inacessível a partir do ambiente), então seus efeitos sobre o FEAS não foram conferidos.",
+   "Lei nº 7.822 (alterações do conselho estadual de assistência social) e Decreto nº 3.954-R/2016 (atribuições da Coordenação do FEAS, citado no Plano Estadual de Assistência Social): listados no site da SETADES, não abertos."
+  ],
+  "finalidade": "Instrumento de captação e aplicação de recursos para financiar ações de assistência social no Estado: cofinanciamento aos municípios (fundo a fundo), apoio a serviços, programas e projetos de enfrentamento da pobreza, ações emergenciais, apoio a associações e consórcios municipais, rede regional de serviços e capacitação de recursos humanos.",
+  "receitas": "Lei 5.162/1995, art. 13: transferências do Fundo Nacional de Assistência Social (FNAS); dotação específica do orçamento estadual para a assistência social; doações, auxílios, contribuições, subvenções e transferências de entidades nacionais e internacionais; receitas de aplicações financeiras; recursos de concursos de prognósticos, sorteios e loterias no âmbito estadual; alienação de bens móveis da assistência social; doações em espécie; parcelas de outras receitas próprias e transferências por lei e convênios do setor; transferências de outros fundos; outras receitas legalmente instituídas.",
+  "gestao": "Gerido pela Secretaria de Estado responsável pela política de assistência social (hoje SETADES, conforme Lei 9.451/2010, art. 15), sob orientação e controle do Conselho Estadual de Assistência Social (CONEAS, hoje CEAS/ES), conselho paritário e deliberativo. O gestor firma convênios, estabelece política de aplicação com o conselho, submete ao conselho o plano de aplicação e, trimestralmente, as prestações de contas, e ordena as despesas (art. 20). Orçamento do FEAS vinculado à SETADES.",
+  "vinculacao": "Há transferência federal expressamente prevista: o art. 13, I, lista as transferências do FNAS como receita do fundo; também recebe emendas parlamentares federais destinadas pela CEAS/ES (ex.: Resolução CEAS nº 698/2025 aprovou 'ad referendum' R$ 1,3 milhão de emenda federal ao FEAS em 2025). Essas verbas seguem as regras federais do SUAS/LOAS (Lei 8.742/1993, citada no art. 1º da Lei 5.162), cujo texto não foi conferido aqui. Destinação (art. 17, redação da Lei 9.451/2010): cofinanciamento aos municípios, apoio à pobreza, emergências, consórcios, rede regional, capacitação e auxílios natalidade/funeral. Critérios de repasse são aprovados pelo CONEAS/CEAS; repasse fundo a fundo por portaria do Secretário. Saldo: os saldos financeiros do balanço anual 'serão transferidos para o exercício seguinte' (art. 13, §3º), sem dizer expressamente que se desvinculam ou revertem ao Tesouro. Instrumentos de alteração: lei estadual para mudar finalidade/receitas/destinação; decreto do Executivo para regulamentar funcionamento e gestão, ouvido o conselho (arts. 14 e 27); resolução do CEAS para critérios e planos de aplicação.",
+  "reversao": "informa",
+  "links": [
+   {
+    "rotulo": "Lei nº 5.162/1995 (site SETADES)",
+    "url": "http://setades.es.gov.br/media/Legisla%C3%A7%C3%A3o/LEI%20N%C2%BA%205162-1995%20-%20cria%20CEAS%20e%20FEAS.pdf"
+   },
+   {
+    "rotulo": "Lei nº 9.451/2010 (site SETADES)",
+    "url": "http://setades.es.gov.br/media/Legisla%C3%A7%C3%A3o/LEI%20N%C2%BA%209451%20-%20altera%20FEAS.pdf"
+   },
+   {
+    "rotulo": "SETADES - Legislação (índice)",
+    "url": "https://setades.es.gov.br/legislacao"
+   },
+   {
+    "rotulo": "Resolução CEAS nº 698/2025 (emenda parlamentar federal ao FEAS)",
+    "url": "https://vlex.com.br/vid/resolucao-ceas-698-2025-1087473530"
+   }
+  ],
+  "confianca": "media",
+  "lacunas": "Texto da Lei 9.966/2012 (Lei do SUAS/ES), que pode ter alterado ou reordenado regras do FEAS e do conselho, não foi aberto: o portal da Assembleia (www3.al.es.gov.br) estava inacessível a partir do ambiente. Leis 7.822 e Decreto 3.954-R/2016 não abertos. Não confirmado se o nome do órgão gestor mudou após 2010 (a lei cita SETADES). A Lei 5.162 foi aberta em PDF do site da SETADES sem marca de consolidação; não há indicação de data de publicação no DO além da data de sanção."
+ },
+ {
+  "ug": "100906",
+  "nomeOficial": "Fundo Estadual de Apoio ao Desenvolvimento Municipal",
+  "sigla": "FEADM",
+  "leiCriacao": "LC 712/2013",
+  "leiCriacaoCompleta": "Lei Complementar nº 712, de 16/09/2013 (data do cabeçalho; assinatura datada de 13/09/2013; DO 16/09/2013)",
+  "alteracoes": [
+   "LC nº 721/2013 (data não confirmada): inseriu o §4º do art. 2º (recursos de operações de crédito ou de fontes vinculadas podem ficar em contas específicas do FEADM).",
+   "LC nº 759/2014 (data não confirmada): deu nova redação a diversos dispositivos; passa a chamar o fundo de 'Fundo Cidades', amplia a finalidade para 'apoiar investimentos municipais' em infraestrutura urbana e rural, educação, esporte, turismo, cultura, saúde, segurança, proteção social, agricultura, saneamento, habitação de interesse social, meio ambiente, sustentabilidade e mobilidade; reescreve fontes (art. 2º), saldo (art. 2º, §1º), arts. 5º a 8º, 10 e 11 e insere os arts. 11-A a 11-C. O comitê gestor estadual (CODEM) do texto original deixou de constar da versão consolidada.",
+   "LC nº 950/2020 (data não confirmada): revogou o art. 9º.",
+   "LC nº 987, de 07/12/2021: novas redações do art. 4º (vedação a despesas fora do GND Investimentos, exceto elaboração de projetos técnicos), art. 7º (decreto anual com diretrizes, prioridades e critérios, vigente até o fim do exercício), §3º, arts. 13 e 14; revogou o §2º do art. 5º.",
+   "LC nº 1.024/2022 (data não confirmada): art. 3º passa a vincular o FEADM à Secretaria de Estado do Governo (SEG), em lugar da SEP."
+  ],
+  "finalidade": "Apoiar investimentos municipais (obras e projetos técnicos) em infraestrutura urbana e rural, educação, esporte, turismo, cultura, saúde, segurança, proteção social, agricultura, saneamento básico, habitação de interesse social, meio ambiente, sustentabilidade e mobilidade, por transferências fundo a fundo do Estado aos Fundos Municipais de Investimento.",
+  "receitas": "LC 712, art. 2º (versão consolidada): dotações orçamentárias e créditos adicionais; doações, auxílios, subvenções e contribuições de pessoas físicas ou jurídicas, nacionais ou estrangeiras, públicas ou privadas; recursos de financiamentos e repasses de instituições financeiras nacionais e internacionais; rendimentos de aplicações financeiras; saldos de exercícios anteriores; outras receitas legalmente destinadas. Mantidos na Conta Única (BANESTES), com contas específicas para operações de crédito e fontes vinculadas (§4º). Em calamidade com dois ou mais municípios, o Executivo pode alocar recursos para repasse por critérios excepcionais (art. 7º, §2º).",
+  "gestao": "Vinculado à Secretaria de Estado do Governo (SEG) desde a LC 1.024/2022 (antes, SEP), com Unidade Orçamentária específica. A versão atual da lei não traz conselho gestor estadual; exige-se dos municípios um Conselho de Fiscalização e Acompanhamento de no mínimo 3 membros, como condição para receber (art. 8º). Diretrizes, prioridades e critérios de distribuição saem de decreto anual do Poder Executivo (art. 7º).",
+  "vinculacao": "Vedada a utilização em despesas que não sejam do grupo Investimentos, exceto projetos técnicos (art. 4º). Município deve criar Fundo Municipal de Investimento, assinar termo de responsabilidade, publicar lista de projetos e enviar relatório anual (arts. 6º, 10, 11-B, 11-C). Saldo: ao fim de cada exercício, os recursos não utilizados são transferidos ao exercício seguinte, 'podendo ser revertidos para a Conta Única do Estado' (art. 2º, §1º); na extinção do fundo, o saldo remanescente reverte à Conta Única (art. 2º, §2º). Não há vinculação a transferência federal carimbada nem a fonte constitucional; os recursos de financiamentos (art. 2º, III) e de operações de crédito podem ter condições contratuais próprias (§4º). Instrumentos: finalidade, fontes, saldo e vedações só por lei complementar; diretrizes anuais e critérios de distribuição por decreto do Executivo; regulamentação adicional por decreto (art. 15).",
+  "reversao": "permite",
+  "links": [
+   {
+    "rotulo": "LC nº 712/2013 (texto original/alterado, site da SEP)",
+    "url": "https://planejamento.es.gov.br/media/Cidades/Legisla%C3%A7%C3%A3o/LEI%20COMPLEMENTAR%20N%C2%BA%20712-1.pdf"
+   },
+   {
+    "rotulo": "LC nº 712/2013 - versão consolidada com marcações de LC 721, 759, 950, 987 e 1.024 (site da SEG)",
+    "url": "https://seg.es.gov.br/media/FundoCidades/Legislacoes/Lei%20Complementar%20712%20-2013%20-%20alterada-1.pdf"
+   },
+   {
+    "rotulo": "SEG - Fundo Cidades - Legislação (índice)",
+    "url": "https://seg.es.gov.br/fundo-cidades/legislacao/"
+   },
+   {
+    "rotulo": "SEP - Fundo Cidades - Legislação (índice)",
+    "url": "https://planejamento.es.gov.br/fundo-cidades/legislacao/"
+   }
+  ],
+  "confianca": "alta",
+  "lacunas": "Datas de LC 721/2013, 759/2014, 950/2020 e 1.024/2022 não confirmadas (só os números aparecem como notas na consolidação; LC 987/2021 tem data no texto). Textos dessas leis alteradoras não foram abertos individualmente. Não verificadas alterações posteriores a 2022. O dia da lei de criação varia entre cabeçalho (16/09/2013) e assinatura (13/09/2013); usar 'LC 712/2013'. A designação da UG 100906 como SEG é inferida do art. 3º atual."
+ },
+ {
+  "ug": "220902",
+  "nomeOficial": "Fundo Soberano do Estado do Espírito Santo",
+  "sigla": "FUNSES",
+  "leiCriacao": "LC 914/2019",
+  "leiCriacaoCompleta": "Lei Complementar nº 914, de 17/06/2019 (DO 18/06/2019)",
+  "alteracoes": [
+   "Nenhuma lei complementar alteradora foi localizada: a página oficial de legislação do FUNSES (fundosoberano.es.gov.br/legislacao) lista apenas a LC 914/2019 e o Decreto nº 4.765-R, de 26/11/2020 (regulamento), e o texto aberto não traz notas de alteração.",
+   "Decreto nº 4.765-R, de 26/11/2020: regulamenta o fundo e o COGEF; a presidência do COGEF foi alterada pelo Decreto nº 4.845-R, de 24/03/2021 (passou ao Secretário de Estado da Ciência, Tecnologia, Inovação, Educação Profissional e Desenvolvimento Econômico)."
+  ],
+  "finalidade": "Fundo especial, de natureza financeira e contábil, vinculado à SEFAZ, para (i) promover o desenvolvimento econômico sustentável por meio de investimentos estratégicos que minimizem o impacto do declínio das receitas de petróleo e gás no longo prazo e (ii) formar poupança intergeracional que mitigue riscos fiscais e auxilie a política fiscal anticíclica.",
+  "receitas": "LC 914, art. 7º: percentual sobre royalties e participação especial de petróleo e gás natural (mínimo de 40% dos royalties do art. 49 da Lei federal 9.478/1997 e mínimo de 15% da participação especial do art. 50, a serem especificados por resolução do COGEF, repassados até o 5º dia útil após o recebimento); contribuições e doações de entidades públicas e privadas; saldo de exercícios anteriores; outras fontes. O §1º autoriza transferir ao fundo parte dos recursos do acordo da Lei estadual 10.979/2019. Os recursos desvinculados do FUNSES a título do art. 76 do ADCT da Constituição Federal retornam integralmente ao fundo (§6º).",
+  "gestao": "Administrado pela SEFAZ, por Unidade Gestora específica na Subsecretaria do Tesouro Estadual (art. 3º). Conselho Gestor (COGEF), com competência para aprovar as diretrizes gerais de utilização dos recursos (art. 2º; composição por regulamento; conforme o Decreto 4.765-R com a alteração de 2021: Secretário da Ciência/Tecnologia/Desenvolvimento Econômico como presidente, Secretário do Governo, Secretários de Economia e Planejamento e da Fazenda, Procurador-Geral, diretores-presidentes do BANESTES e do BANDES, conforme Decreto 4.765-R com alteração do Decreto 4.845-R). Agentes operadores: BANDES (agente de desenvolvimento) e BANESTES (agente financeiro) (art. 4º).",
+  "vinculacao": "Muito vinculado por lei: aplicação exclusiva nas finalidades do art. 1º (art. 8º), vedada a concessão de garantias (art. 8º, §2º); fomento só a empresas com sede fiscal ou investimentos no ES (art. 5º, §3º). Percentuais mínimos dos ingressos para a poupança do inciso II: 40% (2019-2022), 30% (2023-2026), 20% a partir de 2027 (art. 1º, §2º). Os percentuais mínimos de royalties/participação especial podem ser reduzidos em até 50% por decisão fundamentada do COGEF quando a receita de caixa do Tesouro tiver queda real (art. 7º, §3º). Saldo positivo: transferido ao exercício seguinte a crédito do FUNSES ou, por deliberação do COGEF, revertido total ou parcialmente à finalidade do art. 8º, II (art. 7º, §4º). Resgate pelo Governo (art. 9º): só dos rendimentos do exercício anterior e somente depois que o saldo da poupança atingir R$ 1 bilhão corrigido pelo IPCA, aplicados conforme a LOA. Reversão ao Tesouro (art. 10): somente após 15 anos da constituição do fundo e se o saldo ultrapassar R$ 2 bilhões (IPCA), mantendo mínimo de R$ 1 bilhão. O art. 7º, §5º afasta a LC 833/2016 dos recursos do FUNSES. Instrumentos: mudança de percentuais legais, regras de resgate e finalidade exige lei complementar; percentuais de royalties, política de aplicação e resgates dentro dos limites legais são decididos por resolução do COGEF; regulamento por decreto. Não há transferência federal carimbada, mas as receitas de royalties/participação especial são recursos federais da Lei 9.478/1997 (art. 49-50) já recebidos pelo Estado.",
+  "reversao": "condicionada",
+  "links": [
+   {
+    "rotulo": "LC nº 914/2019 (site oficial do FUNSES)",
+    "url": "https://fundosoberano.es.gov.br/Media/FUNSES/Legisla%C3%A7%C3%A3o/LEI%20COMPLEMENTAR%20N%C2%BA%20914%20de%2017%20de%20junho%20de%202019.pdf"
+   },
+   {
+    "rotulo": "Decreto nº 4.765-R/2020 (site oficial do FUNSES; nome do arquivo cita 24/03/2020, texto traz 26/11/2020)",
+    "url": "https://fundosoberano.es.gov.br/Media/FUNSES/Legisla%C3%A7%C3%A3o/DECRETO%20N%C2%BA%204765.%20de%2024%20de%20mar%C3%A7o%20de%202020%20-%20Regularmenta%C3%A7%C3%A3o%20do%20FUNSES-1%20(1).pdf"
+   },
+   {
+    "rotulo": "FUNSES - Legislação (índice)",
+    "url": "https://fundosoberano.es.gov.br/legislacao"
+   }
+  ],
+  "confianca": "alta",
+  "lacunas": "Não foi possível provar a inexistência de leis alteradoras posteriores (o portal da Assembleia estava inacessível); a página oficial do fundo só lista a LC 914 e o decreto. O texto da LC 833/2016, referido no art. 7º, §5º, não foi aberto. Resoluções do COGEF (percentuais anuais de royalties, 60/40 BANDES/BANESTES) citadas em relatórios do fundo não foram abertas. A LC 914 é de 17/06/2019 conforme o texto, com 'Este texto não substitui o publicado no D.O. de 18/06/2019'."
+ },
+ {
+  "ug": "450906",
+  "nomeOficial": "Fundo Estadual de Segurança Pública e Defesa Social",
+  "sigla": "FESP",
+  "leiCriacao": "LC 922/2019",
+  "leiCriacaoCompleta": "Lei Complementar nº 922, de 11/10/2019 (DO 14/10/2019)",
+  "alteracoes": [
+   "LC nº 1.062, de 18/12/2023 (DO 19/12/2023; institui a Polícia Científica - PCIES): art. 103 incluiu a PCIES no Conselho Gestor do FESP (art. 2º, II, 'g') e acrescentou o FUNREPOC (fundo de reequipamento da Polícia Científica) à lista de fundos cujos recursos jamais podem ser destinados ao FESP (art. 3º, parágrafo único). Texto da LC 1.062 aberto no PDF do DO."
+  ],
+  "finalidade": "Apoiar políticas, programas, projetos, atividades e ações na área de segurança pública e defesa social e na prevenção e repressão à criminalidade, em consonância com o Sistema Nacional de Segurança Pública: aquisição de materiais, equipamentos e veículos, tecnologia e sistemas de inteligência, modernização da polícia técnica e científica, obras e reformas de unidades policiais, periciais, de bombeiros e do DETRAN, policiamento comunitário, prevenção, disque-denúncia, premiação por informações e capacitação.",
+  "receitas": "LC 922, art. 3º: dotações da LOA e créditos adicionais; doações, auxílios e subvenções de entidades públicas ou privadas; empréstimos e operações de crédito; rendimentos de aplicações; resultado de alienação de material inservível adquirido com recursos do FESP; juros bancários; transferências do Fundo Nacional de Segurança Pública (FNSP); recursos de convênios, contratos de repasse, termos de parceria e similares com União, Estados ou municípios; demais receitas destinadas ao FESP. Vedado destinar ao FESP recursos do FUNREPOM, FUNREPOCI, FUNREBOM e FUNREPOC.",
+  "gestao": "Instituído no âmbito da SESP, como fundo público sem personalidade jurídica, mas com CNPJ e escrituração contábil própria (art. 1º). Conselho Gestor do FESP, colegiado gerencial e deliberativo, presidido pelo Secretário da SESP, com 2 Subsecretários da SESP e representantes da SEP, SEFAZ, Polícia Civil, Polícia Militar, Corpo de Bombeiros, DETRAN e Polícia Científica; reúne-se mensalmente (art. 2º). O plano de aplicação é aprovado pelo Secretário da SESP (art. 11). Execução direta pelo Estado ou transferência a órgãos estaduais de segurança vinculados à SESP e a municípios que tenham fundo municipal de segurança, por convênio ou contrato de repasse (art. 5º).",
+  "vinculacao": "Vedado o contingenciamento (art. 4º, §1º). Vedado usar recursos do FESP em despesas e encargos sociais de pessoal civil ou militar (ativo, inativo, pensionista) e em unidades exclusivamente administrativas (art. 4º, §2º). Saldo positivo apurado em balanço transferido ao exercício seguinte a crédito do mesmo Fundo, devendo o saldo ser reaberto por crédito suplementar, em sua totalidade, até o 30º dia do exercício (art. 9º); ou seja, não há previsão de reversão ao Tesouro. Há transferência federal expressa: o art. 3º, VII, prevê transferências do FNSP e o inciso VIII, recursos de convênios e contratos de repasse da União, que seguem as regras federais de cada repasse (não conferidas aqui). Aplicações sujeitas à prestação de contas ao TCE-ES e ao Conselho Estadual de Segurança Pública (arts. 6º e 10). Instrumentos: mudança de finalidade, receitas, vedações e saldo só por lei complementar; prioridades e plano de aplicação por ato do Secretário da SESP e deliberação do Conselho Gestor; regimento interno por ato do Secretário.",
+  "reversao": "nao",
+  "links": [
+   {
+    "rotulo": "LC nº 922/2019 atualizada até 02/05/2024 (site da SESP)",
+    "url": "https://sesp.es.gov.br/Media/Sesp/UECI/Lei%20Complementar%20922.2019%20%20-%20atualizada%20at%C3%A9%2002.05.2024.pdf"
+   },
+   {
+    "rotulo": "LC nº 922/2019 (versão original, site da SESP)",
+    "url": "https://sesp.es.gov.br/Media/Sesp/Legisla%C3%A7%C3%A3o/Lei%20Complementar%20n%C2%BA%20922%20-%20Fundo%20Estadual%20de%20Seguran%C3%A7a%20P%C3%BAblica%20-%2014.10.2019-1.pdf"
+   },
+   {
+    "rotulo": "LC nº 1.062/2023 (DO 19/12/2023, site da PCES)",
+    "url": "https://pc.es.gov.br/Media/PCES/Legisla%C3%A7%C3%A3o/LEI%20COMPLEMENTAR%20N%201062.pdf"
+   }
+  ],
+  "confianca": "alta",
+  "lacunas": "Alterações posteriores a 02/05/2024 não verificadas. Não foram abertas as regras federais do FNSP (Lei 13.756/2018) que condicionam o uso dos repasses. O regimento interno do Conselho Gestor e eventual decreto regulamentador não foram localizados."
+ },
+ {
+  "ug": "160901",
+  "nomeOficial": "Fundo de Modernização e Incentivo à Cobrança da Dívida Ativa e de Reestruturação Administrativa da PGE",
+  "sigla": "FUNCAD",
+  "leiCriacao": "LC 386/2007",
+  "leiCriacaoCompleta": "Lei Complementar nº 386, de 04/04/2007 (instituída por esta lei, conforme LC 794/2014 e site da PGE; texto original NÃO aberto)",
+  "alteracoes": [
+   "LC nº 794, de 29/12/2014 (DO 30/12/2014): deu nova redação ao art. 1º da LC 595/2011 (taxa de fiscalização de 25% sobre os emolumentos dos serviços notariais e de registro), destinando 5% ao FUNCAD (além de 10% ao FUNEPJ, 5% ao FADESPES e 5% ao FUNEMP). Texto aberto.",
+   "LC nº 897, de 06/04/2018 (DO 06/04/2018): art. 14 reescreveu o art. 3º da LC 386 com a lista de aplicações do FUNCAD (informatização da cobrança da dívida ativa, custeio do Programa de Residência Jurídica, estagiários de ensino superior, aquisição/reforma/locação de imóveis para uso da PGE, etc.); LC 897 também fixou que a Residência Jurídica corre por conta dos recursos do FUNCAD (art. 13). A LC 897 foi objeto da ADI 6693 no STF (andamento não verificado).",
+   "LC nº 974, de 01/09/2021: art. 4º acrescentou ao art. 3º da LC 386 o inciso XIII (custeio do Programa de Pós-Graduação Lato Sensu da Escola Superior da PGE) e ao art. 4º o inciso VII (verbas decorrentes de atividades do CEI e da ESPGE).",
+   "LC nº 1.115, de 07/07/2025 (DO 08/07/2025): art. 1º alterou o art. 3º da LC 386 incluindo os incisos XIV (políticas e ações afirmativas de equidade, diversidade e inclusão no âmbito da PGE), XV (verba do art. 191 da LC 46/1994, limitada a 10% do subsídio da categoria especial de Procurador) e XVI (verba indenizatória do art. 52-B da LC 88/1996, limitada a 3 dias por mês sobre o subsídio da 1ª categoria)."
+  ],
+  "finalidade": "Assegurar recursos para modernizar e incentivar a cobrança da dívida ativa (sistemas informatizados e TI), qualificar servidores e reestruturar administrativamente a Procuradoria-Geral do Estado: treinamentos, livros e materiais, Revista da PGE e projetos do CEI, imóveis de uso da PGE, Residência Jurídica, estagiários, pós-graduação da ESPGE e, desde 2025, verbas de natureza remuneratória/indenizatória de procuradores e ações afirmativas, dentro de limites legais.",
+  "receitas": "Não foi possível conferir o art. 4º da LC 386 (rol de recursos). Confirmados por outras fontes abertas: 5% da taxa de fiscalização sobre emolumentos de cartórios (LC 595/2011, art. 1º, redação da LC 794/2014); doações e transferências recebidas por DUA (códigos 260-7 doação, 261-5 transferência de instituições privadas, 262-3 de pessoas físicas, 264-0 transferências), conforme página da PGE; e 'verbas decorrentes de atividades exclusivamente relacionadas às atribuições do CEI e da ESPGE' (art. 4º, VII, incluído pela LC 974/2021). A LC 88/1996 e a LC 897 também mencionam 'recursos orçamentários do FUNCAD'.",
+  "gestao": "Fundo da Procuradoria-Geral do Estado (Grupo Financeiro Setorial da PGE, contato informado na página do FUNCAD). A LC 88/1996 (art. 8º, XIV e XV, redação da LC 1.115/2025) atribui ao Conselho da PGE a regulamentação e a definição de critérios de custeio das verbas do art. 3º da LC 386 (incisos XIV a XVI); o Conselho da PGE edita resoluções (ex.: CPGE 359 e 360/2025, citadas mas não abertas). Existência de conselho gestor próprio do fundo na LC 386 não pôde ser conferida.",
+  "vinculacao": "Aplicação restrita às finalidades listadas no art. 3º da LC 386 (com limites: 10% do subsídio para a verba do art. 191 da LC 46/1994; 3 dias/mês para a indenização do art. 52-B da LC 88/1996; bolsa de estágio limitada a 350 VRTEs, art. 70 da LC 88/1996). Não há vinculação a transferência federal ou a fonte constitucional identificada. Regras de saldo/extinção não conferidas (texto original da LC 386 não aberto). Instrumentos: o rol de finalidades e as receitas só mudam por lei complementar (já alteradas por LC 794, 897, 974 e 1.115); os critérios de custeio de cada verba saem de resolução do Conselho da PGE.",
+  "reversao": "informa",
+  "links": [
+   {
+    "rotulo": "LC nº 794/2014 (LegisWeb)",
+    "url": "https://www.legisweb.com.br/legislacao/?id=279498"
+   },
+   {
+    "rotulo": "LC nº 897/2018 (DO 06/04/2018, site da PGE)",
+    "url": "https://pge.es.gov.br/media/docs/Outros/RESJUR%C3%8DDICA_DEDEXCLUSIVA_DIO.pdf"
+   },
+   {
+    "rotulo": "LC nº 974/2021 (site da PGE)",
+    "url": "https://pge.es.gov.br/media/docs/Leis_PGE/LEI%20COMPLEMENTAR%20N%C2%BA%20974-21.pdf"
+   },
+   {
+    "rotulo": "LC nº 1.115/2025 (DO 08/07/2025, site da PGE)",
+    "url": "https://pge.es.gov.br/media/docs/Leis_PGE/LC%201115-2025.pdf"
+   },
+   {
+    "rotulo": "PGE - FUNCAD",
+    "url": "https://pge.es.gov.br/funcad"
+   },
+   {
+    "rotulo": "PGE - Leis da PGE/ES (índice)",
+    "url": "https://pge.es.gov.br/leis-da-pge-es"
+   }
+  ],
+  "confianca": "media",
+  "lacunas": "Texto da LC 386/2007 (lei de criação) não foi aberto: o portal da Assembleia (www3.al.es.gov.br) estava inacessível e não foi encontrada cópia em outro site. Por isso não foram conferidos: art. 4 integral (receitas), regras de saldo/extinção, composição de eventual conselho e redação original do art. 3º. A LC 897/2018 e a LC 974/2021 e LC 1.115/2025 foram abertas em PDF do DO/site da PGE. A data da LC 974 (01/09/2021) vem do texto. Status da ADI 6693 não verificado. A afirmação de que o ordenador de despesas é o chefe do CEI (apareceu em resumo de busca) não foi confirmada no texto aberto e foi omitida."
+ },
+ {
+  "ug": "400901",
+  "nomeOficial": "Fundo de Cultura do Estado do Espírito Santo",
+  "sigla": "FUNCULTURA",
+  "leiCriacao": "LC 458/2008",
+  "leiCriacaoCompleta": "Lei Complementar nº 458, de 20/10/2008 (DO 21/10/2008; vigência a partir de 01/01/2009)",
+  "alteracoes": [
+   "LC nº 981, de 14/10/2021 (DO 15/10/2021): altera os arts. 8º (§3º: regulamento pode prever outros mecanismos de fomento, inclusive indicar pessoa jurídica de direito público municipal como beneficiária) e 10 (aplicação também por transferências fundo a fundo aos municípios, observado o art. 25 da LRF); acrescenta os arts. 10-A (relatório detalhado de execução pelos beneficiários privados) e 10-B (relatório do município ao Legislativo municipal e estadual); revoga o inciso V do art. 11 e os arts. 14 e 15 (extingue o Grupo Coordenador, órgão consultivo do fundo)."
+  ],
+  "finalidade": "Captar e aplicar recursos financeiros para fomentar e incentivar a criação, produção e distribuição de produtos e serviços culturais (que usem conhecimento, criatividade e capital intelectual), por meio de editais anuais da SECULT, financiamentos via BANDES e, desde 2021, transferências fundo a fundo a municípios; prioriza descentralização, democratização do acesso, patrimônio, formação e economia criativa.",
+  "receitas": "LC 458, art. 3º: dotação consignada no orçamento anual do Estado; doações, auxílios e transferências de entidades nacionais, internacionais, governamentais e não governamentais; empréstimos e contribuições financeiras de entidades nacionais e internacionais; recursos de transferências negociadas e não onerosas junto a organismos de apoio e fomento; recursos de amortização, correção, juros e multas de financiamentos do próprio fundo; recursos patrimoniais; outros recursos, créditos e rendas adicionais ou extraordinárias. Não há percentual vinculado de tributo.",
+  "gestao": "Administrado pela SECULT, que elabora o regulamento, publica os editais de incentivo e é o órgão gestor (arts. 11 e 12); Secretaria Executiva exercida pela SECULT (art. 13). O Grupo Coordenador (órgão consultivo com SECULT, SEP, SEFAZ, BANDES e Conselho Estadual de Cultura) foi extinto pela LC 981/2021; a lei vigente não prevê conselho gestor deliberativo do fundo. Regulamento: Decreto nº 2.155-R/2008 e alterações (4.137-R/2017, 4.960-R/2021 para fundo a fundo, 5.165/2022), citados por fontes oficiais mas não abertos.",
+  "vinculacao": "Recursos aplicados em apoio a programas, projetos e ações listados no art. 7º, observando preservação da integridade patrimonial do fundo e maximização de resultados (art. 9º), mediante acordos, contratos, convênios, empréstimos, financiamentos ou transferências fundo a fundo (art. 10); beneficiários dos editais são pessoas físicas e jurídicas de direito privado de caráter estritamente artístico ou cultural, e a partir de 2021 municípios (fundo a fundo) (art. 8º). Saldo: recursos não utilizados até o fim do exercício, apurados em balanço, são transferidos a crédito do mesmo Fundo no exercício seguinte (art. 17); depósito em instituição financeira oficial em agência de Vitória (art. 18). Extinção/liquidação: a destinação do patrimônio é disciplinada pelo regulamento (art. 11, VI), isto é, por decreto, e não pela própria lei. Não há vinculação a transferência federal específica nem a fonte constitucional. Instrumentos: finalidade e receitas só por lei complementar (já alterada pela LC 981/2021); regras operacionais por decreto, instruções normativas e editais da SECULT.",
+  "reversao": "nao",
+  "links": [
+   {
+    "rotulo": "LC nº 458/2008 (DIO de 21/10/2008, site da SECULT)",
+    "url": "https://secult.es.gov.br/media/Funcultura/LEI%20COMPLEMENTAR%20N%C2%BA%20458%20-%20CRIA%C3%87%C3%83O%20DO%20FUNCULTURA.pdf"
+   },
+   {
+    "rotulo": "LC nº 981/2021 (DIO de 15/10/2021, site da SECULT)",
+    "url": "https://secult.es.gov.br/media/FF_2022/07%20-%20DIO%20-%20LEI%20COMPLEMENTAR%20N%C2%BA%20981%20DE%2014-10-21%20-%20ALTERA%20LEI%20FUNCULTURA.pdf"
+   },
+   {
+    "rotulo": "SECULT - Legislação (índice)",
+    "url": "https://secult.es.gov.br/legislacao"
+   },
+   {
+    "rotulo": "Instrução Normativa SECULT nº 002/2025 (fundo a fundo, cita LC 458 arts. 8º e 10)",
+    "url": "https://secult.es.gov.br/media/2025_Docs_FundoaFundo/2025-10-16%20-%20INSTRUCAO_NORMATIVA_SECULT_002_15-10-2025_Programa_Fundo_a_Fundo_Editais.pdf"
+   }
+  ],
+  "confianca": "alta",
+  "lacunas": "Decretos regulamentadores (2.155-R/2008, 4.137-R/2017, 4.960-R/2021, 5.165/2022) não foram abertos. O texto original foi lido no DIO de 21/10/2008 (extração de duas colunas, o que embaralha parte da numeração dos incisos do art. 12, sem prejuízo do conteúdo). Possíveis alterações posteriores a 2021 não verificadas; o portal da Assembleia estava inacessível."
+ },
+ {
+  "ug": "220904",
+  "nomeOficial": "Fundo de Fortalecimento da Economia Capixaba",
+  "sigla": "FORTEC",
+  "leiCriacao": "Lei 11.247/2021",
+  "leiCriacaoCompleta": "Lei nº 11.247, de 07/04/2021 (DO 08/04/2021), que criou o Fundo de Proteção ao Emprego; renomeado FORTEC pela Lei nº 11.874, de 26/07/2023",
+  "alteracoes": [
+   "Lei nº 11.874, de 26/07/2023 (DO 27/07/2023): renomeia o fundo para FORTEC e amplia a finalidade (acesso facilitado a crédito, prioritariamente para projetos de investimento privado que gerem emprego e renda e projetos em regiões estratégicas; inclui produtores rurais e empresas em municípios atingidos por desastres); inclui nas receitas outras receitas das operações e 'recursos, bens e direitos transferidos de outros fundos estaduais'; vincula expressamente à SEFAZ (art. 2º, §2º); cria os arts. 9-A e 9-B (execução orçamentária com BANDES como favorecido, mensuração de perdas); extingue o Fundo Reconstrução ES (Lei 11.104/2020) e o Fundo de Apoio Rural - FAR (Lei 11.300/2021), transferindo ativos e passivos do primeiro ao FORTEC.",
+   "Lei nº 12.379, de 27/03/2025 (DO 28/03/2025): nova ementa ('Dispõe sobre o FORTEC'); acrescenta ao art. 1º financiamentos a produtores rurais voltados à redução de impactos ambientais; altera o §2º do art. 9-A (rendimentos e amortizações na conta do agente operador reconhecidos só patrimonialmente); cria a Gerência de Fundos e Análise Econômico-Financeira de Projetos (GEFAP) na SEFAZ.",
+   "Lei nº 12.069/2024: citada em fontes de busca como dispensa de regularidade fiscal estadual para financiamentos do FORTEC em municípios em emergência; texto não aberto.",
+   "Decreto nº 4.873-R/2021 (regulamento original) e Decreto nº 5.551-R, de 21/11/2023 (regulamento do FORTEC; alterado pelo Decreto 6.012-R/2025): citados, não abertos."
+  ],
+  "finalidade": "Prover recursos para acesso facilitado a crédito, por financiamentos, prioritariamente a projetos de investimentos privados que gerem emprego e renda, a empreendimentos que reduzam disparidades regionais e a produtores rurais e empresas em municípios atingidos por desastres, com operação pelo BANDES.",
+  "receitas": "Lei 11.247, art. 2º (com redação de 2023): dotações consignadas anualmente no orçamento estadual; transferências da União e dos Municípios e de suas autarquias, fundações e empresas; doações, auxílios, contribuições, subvenções, convênios, financiamentos e legados de entidades nacionais ou estrangeiras; doações de pessoas físicas e jurídicas; retorno financeiro dos financiamentos concedidos; remuneração paga pelo agente financeiro sobre disponibilidades; outras receitas das operações do fundo, bem como recursos, bens e direitos transferidos de outros fundos estaduais.",
+  "gestao": "Vinculado à SEFAZ (art. 2º, §2º); agente financeiro e operador: BANDES, que presta serviços técnicos, libera recursos, cobra os créditos e representa o fundo, remunerado por taxa de administração definida em decreto (arts. 6º e 8º). A lei não prevê conselho gestor ou comitê do fundo. Contabilidade própria e prestação de contas ao TCE-ES (art. 10).",
+  "vinculacao": "Recursos usados na modalidade de financiamentos a beneficiários que cumpram o art. 1º (art. 3º). Saldo: recursos não utilizados no fim do exercício permanecem depositados na conta vinculada ao Fundo e são transferidos ao exercício seguinte a crédito do respectivo Fundo (art. 4º); não há reversão ao Tesouro prevista. Condições gerais dos financiamentos são definidas em regulamento e decreto, com parâmetros de garantia de empregos (art. 5º). Despesas administrativas e taxa de administração executadas na UG do fundo (art. 9º, parágrafo único, redação de 2023). Transferências da União são receita possível (art. 2º, II) mas não há vinculação a fundo federal específico. Instrumentos: mudar finalidade, receitas, extinção/incorporação de fundos ou vinculação exige lei estadual (todas as mudanças de 2023 e 2025 foram por lei); condições dos financiamentos e taxa do agente por decreto.",
+  "reversao": "nao",
+  "links": [
+   {
+    "rotulo": "Lei nº 11.247/2021 (DIO de 08/04/2021, site Plano ES)",
+    "url": "https://planoes.es.gov.br/Media/PlanoES/Documenta%C3%A7%C3%A3o/Fundo%20de%20Prote%C3%A7%C3%A3o%20ao%20Emprego.pdf"
+   },
+   {
+    "rotulo": "Lei nº 11.874/2023 (NormasBrasil)",
+    "url": "https://www.normasbrasil.com.br/norma/lei-11874-2023-es_447947.html"
+   },
+   {
+    "rotulo": "Lei nº 12.379/2025 (NormasBrasil)",
+    "url": "https://www.normasbrasil.com.br/norma/lei-12379-2025-es_475640.html"
+   },
+   {
+    "rotulo": "Plano ES - Legislação (índice)",
+    "url": "https://planoes.es.gov.br/legislacao"
+   }
+  ],
+  "confianca": "alta",
+  "lacunas": "Decretos 4.873-R/2021, 5.551-R/2023 e 6.012-R/2025 e Lei 12.069/2024 não foram abertos. Não há texto consolidado oficial único: a versão atual foi reconstruída a partir do texto original (DIO) e das duas leis alteradoras (portal NormasBrasil, fonte de apoio). Datas: o índice do Plano ES indica 08/04/2021 para a Lei 11.247; o DIO e o texto trazem sanção em 07/04/2021."
+ },
+ {
+  "ug": "360901",
+  "nomeOficial": "Fundo Estadual de Habitação de Interesse Social",
+  "sigla": "FEHAB",
+  "leiCriacao": "Lei 8.784/2007",
+  "leiCriacaoCompleta": "Lei nº 8.784, de 21/12/2007 (DO 26/12/2007; vigência 01/01/2008; revoga a Lei nº 5.041/1995)",
+  "alteracoes": [
+   "Lei nº 9.071, de 28/11/2008 (DO 01/12/2008): vincula o fundo à SEDURB e atribui à COHAB-ES a função de Agente Operador (gestão orçamentária e financeira, ordenador de despesas), no art. 1º §§1º e 2º da Lei 8.784.",
+   "Lei nº 10.435, de 06/11/2015: nova redação do art. 4º (Conselho Gestor passa a ter caráter deliberativo, com 1/4 das vagas para movimentos populares; composição atualizada: Secretário de Saneamento, Habitação e Desenvolvimento Urbano, Diretor-Presidente do IDURB-ES, Secretário de Assistência Social e Políticas para Mulheres, Secretário da Agricultura, Diretor-Presidente do IJSN, 1 representante da AMUNES e 2 de movimentos populares)."
+  ],
+  "finalidade": "Centralizar e gerenciar recursos orçamentários para programas que implantem políticas habitacionais de interesse social direcionadas à população de menor renda (aquisição, construção, melhoria e locação social de moradias, lotes urbanizados, urbanização e regularização fundiária, saneamento e infraestrutura, materiais de construção, recuperação de imóveis deteriorados), em consonância com a Política Nacional de Habitação e o SNHIS.",
+  "receitas": "Lei 8.784, art. 2º: dotações do Orçamento Geral do Estado; outros fundos e programas que vierem a ser incorporados; empréstimos externos e internos para programas de habitação; contribuições e doações de pessoas físicas ou jurídicas e organismos de cooperação nacionais ou internacionais; receitas operacionais e patrimoniais de operações com recursos do FEHAB; recursos do FGTS; recursos do Orçamento Geral da União; outros recursos destinados.",
+  "gestao": "Vinculado à SEDURB (art. 1º). Conselho Gestor do FEHAB (CGFEHAB), deliberativo e com representação da sociedade civil (arts. 4º e 5º, redação da Lei 10.435/2015): estabelece diretrizes e critérios de priorização e alocação, aprova orçamentos, planos de aplicação e metas anuais e plurianuais, e seu regimento (aprovado pela Resolução nº 055/2023). Agente Operador: designado pela Lei 9.071/2008 como COHAB-ES; resolução do CGFEHAB de maio de 2025 refere-se ao 'Agente Operador do FEHAB - SEDURB-ES', indicando que a função hoje é exercida pela própria SEDURB (base legal da mudança não localizada).",
+  "vinculacao": "Aplicações vinculadas aos programas de habitação de interesse social do art. 3º, incluindo 'outros programas e intervenções na forma aprovada pelo Conselho Gestor' (inciso VII); a lei será implementada em consonância com a Política Nacional de Habitação e o SNHIS (art. 9º). Recebe recursos do FGTS e do Orçamento Geral da União (art. 2º, VI e VII), que seguem regras federais próprias (não conferidas); o programa Nossa Casa usa o FEHAB em parceria com o MCMV/CAIXA (Resolução CGFEHAB 064/2025). Saldo: a lei NÃO trata de saldo, reversão ao Tesouro ou extinção do fundo. Instrumentos: finalidade, receitas e vinculação só por lei estadual (três leis já alteraram o texto); diretrizes, critérios e alocação de recursos por resolução do CGFEHAB; regulamento por decreto (Decretos 115/2008, 2.020-R/2008 e 3.905-R/2015, listados no site da SEDURB, não abertos).",
+  "reversao": "informa",
+  "links": [
+   {
+    "rotulo": "Lei nº 8.784/2007 (site da SEDURB)",
+    "url": "https://sedurb.es.gov.br/media/Importacao/FEHAB/LEI_8.784_2007.pdf"
+   },
+   {
+    "rotulo": "Lei nº 9.071/2008 (site da SEDURB)",
+    "url": "https://sedurb.es.gov.br/media/Importacao/FEHAB/lei_9071_2008.pdf"
+   },
+   {
+    "rotulo": "Lei nº 10.435/2015 (site da SEDURB)",
+    "url": "https://sedurb.es.gov.br/media/Importacao/FEHAB/Lei_10.435_2015-1-1.pdf"
+   },
+   {
+    "rotulo": "SEDURB - Legislação (índice FEHAB)",
+    "url": "https://sedurb.es.gov.br/legislacao-2"
+   },
+   {
+    "rotulo": "Resolução CGFEHAB nº 064/2025",
+    "url": "https://sedurb.es.gov.br/Media/Sedurb/Importacao/Resolu%C3%A7%C3%A3o%20CGFEHAB%20n%C2%BA%20064.pdf"
+   }
+  ],
+  "confianca": "alta",
+  "lacunas": "A lei usa a sigla FEHAB; 'FEHIS' é apenas o nome do sistema. Não localizada a lei que tenha transferido a função de Agente Operador da COHAB-ES (extinta) para IDURB/SEDURB; não verificadas alterações posteriores a 2015 nem eventual reestruturação da SEDURB (LC 1.129/2025 aparece no índice da SEDURB, não aberta). Decretos regulamentadores não abertos."
+ },
+ {
+  "ug": "220901",
+  "nomeOficial": "Fundo de Modernização e Desenvolvimento Fazendário",
+  "sigla": "FUNSEFAZ",
+  "leiCriacao": "Lei 8.360/2006",
+  "leiCriacaoCompleta": "Lei nº 8.360, de 29/06/2006 (DOE 30/06/2006)",
+  "alteracoes": [
+   "Lei nº 8.501, de 10/05/2007 (DOE 14/05/2007): acrescentou o inciso VI ao art. 2º (15% da arrecadação de multas e juros de mora por infração à legislação de receitas não tributárias, inclusive de débitos inscritos em dívida ativa) e renumerou o antigo inciso VI como VII, com efeitos 90 dias após a publicação.",
+   "Não foram localizadas outras leis alteradoras na versão consultada (NormasBrasil)."
+  ],
+  "finalidade": "Custear exclusivamente despesas de programas de modernização, desenvolvimento e aperfeiçoamento da Administração Fazendária (SEFAZ): capacitação, consultoria, equipamentos e sistemas de informática, equipamentos de apoio à fiscalização, obras e instalações e outras ações afins.",
+  "receitas": "Lei 8.360, art. 2º: convênios, acordos ou ajustes com organismos nacionais e internacionais; dotações orçamentárias e créditos adicionais; 25% da arrecadação de multas e juros de mora por infração à legislação tributária, inclusive de débitos inscritos em dívida ativa, excluídas as deduções constitucionais (não se aplica a multas e juros de IPVA e ITCD); venda de materiais e publicações da Administração Fazendária; juros bancários; 15% de multas e juros de mora por infração à legislação de receitas não tributárias (Lei 8.501/2007); outras rendas eventuais.",
+  "gestao": "Administrado por um Comitê Gestor (art. 3º) presidido pelo Secretário de Estado da Fazenda, com o Subsecretário da Receita (vice-presidente executivo), o Subsecretário do Tesouro (vice-presidente financeiro), o Subsecretário para Assuntos Administrativos e os gerentes de Desenvolvimento Fazendário, Tributário, Fiscal, Arrecadação e Informática, Finanças, Contabilidade e Técnico Administrativo; Secretaria Executiva designada pelo Secretário. Recursos movimentados pelo Ordenador de Despesas após deliberação do Comitê Gestor por resolução (art. 4º).",
+  "vinculacao": "Vedado usar recursos para pagar vencimentos ou remuneração de servidores e para custear despesas correntes fixas da Administração Direta ou Indireta (art. 1º, §1º). As receitas dos incisos I a VI são depositadas na Conta Única (BANESTES) e repassadas à Unidade Gestora pelo DUA com códigos específicos (art. 4º). Saldo: o superávit financeiro apurado no balanço é transferido ao exercício seguinte 'a crédito do Tesouro Estadual' (art. 5º) (redação literal na fonte consultada, que sugere que o saldo fica à disposição do Tesouro). Recursos de convênios com organismos nacionais e internacionais (art. 2º, I) seguem as regras de cada convênio; a lei não cita transferências federais carimbadas específicas. Instrumentos: a lei é ordinária; finalidade, percentuais de multas/juros e vedações só mudam por lei estadual; aplicação dos recursos por resolução do Comitê Gestor; regulamento por decreto (art. 8º).",
+  "reversao": "permite",
+  "links": [
+   {
+    "rotulo": "Lei nº 8.360/2006 (NormasBrasil)",
+    "url": "https://www.normasbrasil.com.br/norma/lei-8360-2006-es_125712.html"
+   }
+  ],
+  "confianca": "media",
+  "lacunas": "Única fonte aberta com o texto completo é o NormasBrasil (site de apoio, sem selo oficial); o portal da Assembleia e o LegisWeb estavam inacessíveis. Não foi possível confirmar que não houve alterações posteriores a 2007 (p. ex., sobre percentuais de multas e juros ou sobre o destino do superávit); o enunciado do pedido menciona 'alterações', que não foram localizadas. Decreto regulamentador (art. 8º) e resoluções do Comitê Gestor não abertos. O art. 5 ('a crédito do Tesouro Estadual') merece conferência no texto oficial."
+ },
+ {
+  "ug": "410902",
+  "nomeOficial": "Fundo Estadual de Recursos Hídricos e Florestais",
+  "sigla": "FUNDÁGUA",
+  "leiCriacao": "Lei 9.866/2012",
+  "leiCriacaoCompleta": "Lei nº 8.960, de 18/07/2008 (criou o Fundo Estadual de Recursos Hídricos - FUNDÁGUA; revogada e substituída pela Lei nº 9.866, de 26/06/2012, que o reformulou e é a lei-base vigente)",
+  "alteracoes": [
+   "Lei nº 9.866, de 26/06/2012 (DOE 27/06/2012): reformula o fundo, passa a ser Fundo Estadual de Recursos Hídricos e Florestais, cria duas subcontas (Recursos Hídricos e Cobertura Florestal), conselhos consultivo/gestor próprios; revogou a Lei 8.960/2008 (art. 25).",
+   "Lei nº 10.557, de 07/07/2016 (DO 08/07/2016): amplia finalidades (segurança hídrica, cobertura florestal, aperfeiçoamento de profissionais ambientais), cria a subconta Residentes Ambientais (bolsas de Residência Ambiental, LC 820/2015), inclui receitas (cobrança pelo uso de recursos hídricos, compensação ecológica da Mata Atlântica, rendimentos), reformula os Conselhos Gestores (presididos pelo Secretário da SEAMA, nomeados pelo Governador) e revoga os arts. 11 e 12 (conselho consultivo) e §§1º-3º do art. 6º da Lei 9.866 (inclusive o piso de 60%/aplicações do art. 6º).",
+   "Lei Complementar nº 947, de 27/03/2020 (art. 13 e 27, III): inclui §2º no art. 4º (reversão de superávit financeiro ao Tesouro, desvinculado), art. 7º-A (uso em despesas correntes, exceto pessoal e vedações constitucionais/federais/convênios/operações de crédito) e §2º no art. 9º (contratos administrativos); REVOGA as alíneas 'a' dos incisos I e II do art. 2º (as parcelas de 0,5% e 2,5% dos royalties do petróleo e gás natural deixaram de ser receita vinculada por lei).",
+   "Lei Complementar nº 513/2009, art. 4º-A (incluído pela LC 1.053, de 25/07/2023): determina que, quando entrar no FUNDEMA a cota-parte da compensação financeira pela exploração de recursos minerais, o mínimo de 60% seja transferido ao FUNDÁGUA (subconta Residentes Ambientais) em até 30 dias.",
+   "Decreto nº 3.179-R, de 20/12/2012: regulamenta a Lei 9.866 (apenas a ementa/início foi conferida; ver lacunas)."
+  ],
+  "finalidade": "Instrumento financeiro da Política Estadual de Recursos Hídricos e da recuperação/ampliação da cobertura florestal: dá suporte a ações de segurança hídrica, conservação de água e solo, pagamento por serviços ambientais a proprietários rurais, comitês/agências de bacia e, pela subconta Residentes Ambientais, custeia bolsas de Residência Ambiental.",
+  "receitas": "Por subconta (Lei 9.866 com redação da Lei 10.557/2016). Recursos Hídricos: multas por infração à legislação de recursos hídricos; cota-parte integral da compensação financeira de recursos hídricos recebida pelo Estado (federal, CFURH); recursos orçamentários municipais/estaduais/federais vinculados; auxílios, doações, empréstimos, transferências e repasses nacionais ou internacionais (inclusive multilaterais/bilaterais); retorno de financiamentos do próprio fundo; rendimentos e operações de crédito; produto da cobrança pelo uso dos recursos hídricos. Cobertura Florestal: dotações orçamentárias vinculadas; doações/empréstimos/transferências; retorno de financiamentos; medidas de compensação ecológica (Mata Atlântica); rendimentos e outras receitas florestais. Residentes Ambientais: doações/condicionantes ambientais/transferências e parcela da compensação mineral transferida do FUNDEMA (LC 513, art. 4º-A). Os percentuais de 0,5% e 2,5% dos royalties de petróleo/gás (art. 2º, I-a e II-a) foram revogados pela LC 947/2020 (a lei original 8.960 previa 1% em 2008, 2% em 2009 e 3% a partir de 2010).",
+  "gestao": "Administrado pela SEAMA (Secretaria de Estado de Meio Ambiente e Recursos Hídricos), à qual o fundo é vinculado (art. 1º/10 da Lei 9.866 e Lei 10.557). Estrutura: um Conselho Gestor por subconta (Recursos Hídricos, Cobertura Florestal, Residentes Ambientais), de caráter consultivo e deliberativo, presidido pelo Secretário da SEAMA com voto de qualidade, titulares e suplentes nomeados pelo Governador; e uma Secretaria Executiva exercida pela SEAMA (secretário executivo servidor da SEAMA/IEMA). Composição do conselho de Recursos Hídricos: Presidente, Secretário Executivo, AGERH, SEAG, SEDURB, usuários e sociedade civil. Agente financeiro: instituição financeira pública com sede no ES (BANDES, conforme regulamento), designada pela SEAMA após aprovação do Conselho Gestor (art. 17).",
+  "vinculacao": "Regra geral de saldo (LC 947/2020): o superávit financeiro apurado no balanço ao fim de cada exercício PODE (faculdade, não obrigação) ser transferido ao exercício seguinte 'a crédito do Tesouro Estadual e de forma desvinculada', exceto recursos vinculados pela Constituição Federal, pela legislação federal ou decorrentes de convênios, acordos e ajustes e operações de crédito. A lei não indica o ato que executa essa reversão. Destinação: cada subconta só pode ser aplicada nas finalidades dos arts. 6º-7º e 8º-A da Lei 9.866 (Recursos Hídricos: segurança hídrica, comitês, estudos/obras, monitoramento, financiamentos e sustentabilidade de agências de bacia; Cobertura Florestal: PSA, financiamentos, CAR/PRA, imagens para monitoramento; Residentes Ambientais: exclusivamente bolsas de Residência Ambiental e tutores, nos termos da LC 820/2015). As aplicações dependem do Plano Anual de Aplicação aprovado no âmbito de cada subconta e do plano bienal aprovado pelos Conselhos Gestores (art. 13, VI e art. 9º-A). O art. 8º ainda fala em mínimo de 80% da subconta Cobertura Florestal para PSA ligado à receita do art. 2º, II-a (royalties), mas essa alínea foi revogada pela LC 947/2020 - ponto de incoerência textual a conferir na versão consolidada da ALES. Recursos de bacia (cobrança) exigem subcontas por região hidrográfica para posterior transferência à Agência de Bacia (art. 3º, p.único, redação da Lei 10.557). Quem altera: lei estadual (assim foram feitas todas as mudanças relevantes: Leis 9.866/2012, 10.557/2016, LC 947/2020); decreto apenas regulamenta (Decreto 3.179-R/2012); os conselhos gestores aprovam planos e normas operacionais dentro da lei, não alteram a destinação legal. Federal carimbado: a lei prevê a cota-parte da compensação financeira por recursos hídricos (receita de origem federal) e admite recursos orçamentários federais/convênios, que seguem a vinculação de sua origem (a ressalva da LC 947 protege convênios e legislação federal). Histórico relevante: a LC 833/2016 (revogada pela LC 947/2020, art. 27, VI) tratava de reversão de recursos de fundos ao Tesouro.",
+  "reversao": "permite",
+  "links": [
+   {
+    "rotulo": "Lei nº 8.960/2008 (texto, cópia FAOLEX de página da ALES)",
+    "url": "https://faolex.fao.org/docs/pdf/bra184997.pdf"
+   },
+   {
+    "rotulo": "Lei nº 9.866/2012 (texto, cópia FAOLEX de página da ALES)",
+    "url": "https://faolex.fao.org/docs/pdf/bra187901.pdf"
+   },
+   {
+    "rotulo": "Lei nº 10.557/2016 (texto, cópia FAOLEX)",
+    "url": "https://faolex.fao.org/docs/pdf/bra187905.pdf"
+   },
+   {
+    "rotulo": "Decreto nº 3.179-R/2012 (cópia FAOLEX; só o início foi lido)",
+    "url": "https://faolex.fao.org/docs/pdf/bra187902.pdf"
+   },
+   {
+    "rotulo": "Lei Complementar nº 513/2009 consolidada (art. 4º-A, transferência da compensação mineral ao FUNDÁGUA)",
+    "url": "https://idaf.es.gov.br/media/Documentos/Legisla%C3%A7%C3%A3o/GELCOF/www3.al.es.gov.br_Arquivo_Documents_legislacao_html_lec5132009.html%20%281%29.pdf"
+   },
+   {
+    "rotulo": "Lei Complementar nº 947/2020 (27/03/2020; DIO 30/03/2020) - superávit financeiro de fundos",
+    "url": "https://coronavirus.es.gov.br/Media/Coronavirus/Legislacao/LEI%20COMPLEMENTAR%20N%C2%BA%20947.pdf"
+   }
+  ],
+  "confianca": "alta",
+  "lacunas": "Não foi possível abrir o site da ALES (www3.al.es.gov.br recusou conexão), então a versão consolidada atual não foi conferida; os textos de 8.960/9.866/10.557 vêm de cópias FAOLEX (a de 9.866 impressa em 18/07/2019) e as alterações posteriores só foram confirmadas pela LC 947/2020 e pela LC 513 (consolidada até 02/2024). Não verifiquei leis posteriores a 2024 que possam ter alterado a Lei 9.866. O Decreto 3.179-R só teve o cabeçalho lido (sem conferir regras de saldo/agente financeiro)."
+ },
+ {
+  "ug": "450904",
+  "nomeOficial": "Fundo Especial de Reequipamento do Corpo de Bombeiros Militar",
+  "sigla": "FUNREBOM",
+  "leiCriacao": "LC 102/1997",
+  "leiCriacaoCompleta": "Lei Complementar nº 102, de 22/09/1997 (data e número citados no Decreto nº 4.195-N/1997 e na LC 947/2020; texto da LC 102 não foi aberto)",
+  "alteracoes": [
+   "Lei Complementar nº 947, de 27/03/2020 (art. 6º): nova redação do §3º do art. 1º (recursos do FUNREBOM podem cobrir custeio, inclusive do órgão a que se vincula) e do art. 5º (superávit financeiro pode ser revertido ao Tesouro de forma desvinculada).",
+   "Lei Complementar nº 922, de 11/10/2019 (FESP), art. 3º, parágrafo único (redação da LC 1.062/2023): proíbe, 'sob nenhuma hipótese', destinar ao FESP recursos do FUNREPOM, FUNREPOCI, FUNREBOM e FUNREPOC.",
+   "Decreto nº 4.195-N, de 12/12/1997: regulamenta a LC 102 (fontes, conta no BANESTES, conselho deliberativo, saldo)."
+  ],
+  "finalidade": "Prover, em caráter complementar, recursos financeiros para dotar o Corpo de Bombeiros Militar do ES de equipamentos e das condições indispensáveis ao exercício de suas atividades constitucionais; desde a LC 947/2020 pode também cobrir custeio.",
+  "receitas": "Conforme o Decreto 4.195-N, art. 2º, que reproduz o art. 2º da LC 102: taxas pelo exercício do poder de polícia e pela prestação de serviços de Bombeiro Militar; multas por infração à legislação de prevenção contra incêndio e pânico; auxílios, subvenções ou doações municipais, federais ou privadas (inclusive de convênios/ajustes com o Estado) para serviços do CBMES; alienação de material/equipamento inservível; recursos transferidos por entidades públicas ou particulares, dotações orçamentárias e créditos adicionais; juros bancários e aplicações financeiras; outras rendas eventuais.",
+  "gestao": "Administrado por um Conselho Deliberativo (presidido, segundo o desenho das leis dos fundos congêneres, pelo Secretário de Segurança; a composição exata está no art. 3º da LC 102, não aberta). O Decreto 4.195-N diz que os membros são nomeados pelo Governador, com representantes da SEFA, da sociedade civil/empresários do comércio e indústria e dos servidores do CBMES (indicado pelo Comandante-Geral). Estrutura: Conselho Deliberativo + Secretaria Executiva (Serviço Administrativo e Serviço de Controle). Orçamentariamente vinculado ao Gabinete do Secretário de Segurança Pública (art. 7º do decreto). O Conselho elabora o plano anual de aplicação (até 15/01) e o submete à aprovação do Governador (art. 12, I); pode destinar até 5% da receita aos encargos do fundo (art. 12, V). Bens adquiridos incorporam-se ao patrimônio do CBMES (art. 6º).",
+  "vinculacao": "Originalmente (Decreto 4.195-N, art. 4º) o saldo positivo apurado em balanço era transferido ao exercício seguinte a crédito do próprio fundo. Regra geral de saldo (LC 947/2020): o superávit financeiro apurado no balanço ao fim de cada exercício PODE (faculdade, não obrigação) ser transferido ao exercício seguinte 'a crédito do Tesouro Estadual e de forma desvinculada', exceto recursos vinculados pela Constituição Federal, pela legislação federal ou decorrentes de convênios, acordos e ajustes e operações de crédito. A lei não indica o ato que executa essa reversão. Destinação: o fundo existe para reequipar o CBMES; o plano anual de aplicação precisa da aprovação do Governador. A LC 922/2019 veda destinar recursos do FUNREBOM ao Fundo Estadual de Segurança Pública (FESP), o que bloqueia remanejamento entre esses fundos. Quem altera: lei complementar (o fundo foi criado e alterado por LC, e a LC 947 é o exemplo); decreto apenas regulamenta; as deliberações do Conselho são resoluções dentro do plano aprovado. Federal: a lei admite auxílios/convênios federais para serviços do CBMES, que ficam fora da reversão de superávit; não há receita federal obrigatória prevista.",
+  "reversao": "permite",
+  "links": [
+   {
+    "rotulo": "Decreto nº 4.195-N/1997 (regulamenta a LC 102/1997) - texto",
+    "url": "https://www.normasbrasil.com.br/norma/decreto-4195-1997-es_304942.html"
+   },
+   {
+    "rotulo": "Lei Complementar nº 947/2020 (27/03/2020; DIO 30/03/2020) - superávit financeiro de fundos",
+    "url": "https://coronavirus.es.gov.br/Media/Coronavirus/Legislacao/LEI%20COMPLEMENTAR%20N%C2%BA%20947.pdf"
+   },
+   {
+    "rotulo": "Lei Complementar nº 922/2019 (FESP) consolidada até 02/05/2024",
+    "url": "https://sesp.es.gov.br/Media/UECI/Lei%20Complementar%20922.2019%20%20-%20atualizada%20at%C3%A9%2002.05.2024.pdf"
+   }
+  ],
+  "confianca": "media",
+  "lacunas": "O texto da LC 102/1997 não foi encontrado em nenhuma fonte acessível (ALES bloqueada; DIO de 1997 não digitalizado no portal); número e data vêm do decreto regulamentador e da LC 947. Não confirmei a composição do Conselho Deliberativo (art. 3º da LC 102), o teor original do §3º do art. 1º (se havia teto percentual para custeio, como no FUNREPOM, 40%) nem eventuais outras alterações (como as LC 120/1998 e 163/1999, que mudaram o FUNREPOM)."
+ },
+ {
+  "ug": "310902",
+  "nomeOficial": "Fundo Social de Apoio à Agricultura Familiar",
+  "sigla": "FUNSAF",
+  "leiCriacao": "Lei 10.297/2014",
+  "leiCriacaoCompleta": "Lei nº 10.297, de 20/11/2014 (publicada no DOE de 21/11/2014; alguns sites a datam de 21/11)",
+  "alteracoes": [
+   "Lei nº 10.390, de 13/07/2015: nova redação do art. 6º (usos: investimentos fixos, serviços técnicos, capacitação, despesas pré-operacionais; saiu 'capital de giro associado a insumos'), do art. 13 (BANDES passa a formalizar contratos; taxa de 1% sobre recursos liberados), do art. 14, e revogou o inciso III do art. 12 (formalização de contratos pela SEAG).",
+   "Lei Complementar nº 947, de 27/03/2020 (art. 18 e 27, V): inclui parágrafo único no art. 3º (superávit financeiro pode ser revertido ao Tesouro, desvinculado) e revoga o inciso VIII do art. 3º (os 'saldos de exercícios anteriores' deixaram de constar como receita)."
+  ],
+  "finalidade": "Apoiar financeiramente projetos da agricultura familiar (organização da produção, agroindustrialização, beneficiamento, comercialização, gestão dos empreendimentos, assistência técnica e extensão rural e pesquisa agropecuária voltada à agricultura familiar), por apoio reembolsável e não reembolsável, mediante editais.",
+  "receitas": "Art. 3º: dotações orçamentárias e créditos adicionais; recursos governamentais de origem federal, estadual ou municipal e auxílios, subvenções, contribuições e doações de entidades públicas ou privadas, nacionais, internacionais e estrangeiras; operações de crédito; repasses de instituições financeiras nacionais e internacionais; retorno das aplicações do fundo; encargos financeiros e juros moratórios das operações com risco do FUNSAF; variação monetária e rendimentos; recursos de outras fontes. (O inciso VIII, saldos de exercícios anteriores, foi revogado em 2020.)",
+  "gestao": "Fundo de natureza jurídica de direito público vinculado à SEAG (Secretaria de Agricultura, Abastecimento, Aquicultura e Pesca), com unidade orçamentária própria (art. 2º). Gestão deliberativa por Comitê Gestor (SEAG, INCAPER, IDAF, BANDES, MST, FETAES e MPA, nomeados pelo Governador), auxiliado por Câmara Técnica (SEAG, INCAPER, IDAF). SEAG é gestora operacional (editais, análise e seleção); o BANDES é gestor financeiro (taxa de administração de 1% sobre recursos liberados). Regulamentação por decreto do Governador (art. 7º, §2º).",
+  "vinculacao": "Regra geral de saldo (LC 947/2020): o superávit financeiro apurado no balanço ao fim de cada exercício PODE (faculdade, não obrigação) ser transferido ao exercício seguinte 'a crédito do Tesouro Estadual e de forma desvinculada', exceto recursos vinculados pela Constituição Federal, pela legislação federal ou decorrentes de convênios, acordos e ajustes e operações de crédito. A lei não indica o ato que executa essa reversão. Destinação: o fundo só pode apoiar projetos de agricultura familiar de beneficiários diretos definidos no art. 4º (associações, cooperativas, instituições de pesquisa e de ATER); art. 6º, parágrafo único, veda uso em aquisição de terrenos e de veículos de passeio; a aplicação segue editais publicados no DIO e aprovados pelo Comitê Gestor. O Comitê Gestor pode apenas PROPOR mudanças na legislação do fundo ao Governo (art. 9º, VIII) e propor alterações ao regulamento (art. 9º, II); alteração da finalidade ou das fontes exige lei estadual (a Lei 10.390/2015 e a LC 947/2020 foram as vias usadas); detalhes operacionais ficam no decreto regulamentador (a busca indica Decreto nº 3.839-R/2015, texto não aberto). Federal: a lei admite recursos de origem federal e repasses de instituições financeiras; buscas indicam parceria com o BNDES nos editais (Edital FUNSAF nº 03/SEAG/BNDES, 2020), mas isso não está no texto da lei e não foi verificado. Recursos federais/convênios e operações de crédito ficam protegidos da reversão pela ressalva da LC 947.",
+  "reversao": "permite",
+  "links": [
+   {
+    "rotulo": "Lei nº 10.297/2014 (texto com notas das alterações da Lei 10.390/2015) - Normas Brasil",
+    "url": "https://www.normasbrasil.com.br/norma/lei-10297-2014-es_286896.html"
+   },
+   {
+    "rotulo": "Lei Complementar nº 947/2020 (27/03/2020; DIO 30/03/2020) - superávit financeiro de fundos",
+    "url": "https://coronavirus.es.gov.br/Media/Coronavirus/Legislacao/LEI%20COMPLEMENTAR%20N%C2%BA%20947.pdf"
+   }
+  ],
+  "confianca": "alta",
+  "lacunas": "O texto foi lido em portal de apoio (Normas Brasil, que reproduz a lei com as notas de redação anterior); o PDF oficial da SEAG e a ALES não abriram. O texto integral da Lei 10.390/2015 e o decreto regulamentador (3.839-R/2015) não foram abertos; data de 13/07/2015 da Lei 10.390 vem das notas do portal. Não verifiquei alterações posteriores a 2020 nem o convênio/parceria com o BNDES."
+ },
+ {
+  "ug": "460901",
+  "nomeOficial": "Fundo Rotativo do Sistema Penitenciário",
+  "sigla": "FRSP",
+  "leiCriacao": "LC 920/2019",
+  "leiCriacaoCompleta": "Lei Complementar nº 920, de 20/09/2019 (DIO de 23/09/2019): transforma o Fundo de Trabalho Penitenciário - FTP (Lei Estadual nº 2.526, de 03/08/1970, revogada) em Fundo Rotativo do Sistema Penitenciário",
+  "alteracoes": [
+   "Lei Complementar nº 947, de 27/03/2020 (art. 23 e 27, VII): inclui o §6º no art. 2º (superávit financeiro pode ser revertido ao Tesouro, desvinculado) e revoga o inciso VIII do art. 2º ('saldos apurados no exercício anterior' como receita).",
+   "Decreto nº 4.596-R, de 13/03/2020: regulamenta a LC 920 (informação obtida em documento da SEJUS citado em busca; decreto não aberto)."
+  ],
+  "finalidade": "Proporcionar recursos e meios para financiar e apoiar atividades e programas de modernização e aprimoramento dos programas, projetos e ações de assistência aos presos, internados e egressos do sistema penitenciário estadual, incluindo obras e manutenção de estabelecimentos penais, remuneração de mão de obra de presos e projetos de reinserção social.",
+  "receitas": "Art. 2º da LC 920: dotações orçamentárias do Estado; doações e contribuições; recursos de convênios, contratos ou acordos com entidades públicas ou privadas; juros e rendimentos de aplicações; multas decorrentes de sentenças penais condenatórias transitadas em julgado; fianças quebradas ou perdidas; rendimentos do patrimônio do fundo; parcela da remuneração do trabalho do preso destinada ao Estado (art. 4º, IV: 25% para ressarcimento ao Estado); receita da comercialização da produção dos presos; multas administrativas aplicadas pela SEJUS por inexecução contratual; alienação de equipamentos/viaturas/materiais inservíveis; outros recursos por norma legal e receitas eventuais. (Saldos do exercício anterior foram retirados em 2020.) Os recursos são depositados em instituições financeiras oficiais e na Conta Única do Tesouro (§1º).",
+  "gestao": "Vinculado à SEJUS, diretamente ao Gabinete do Secretário de Estado da Justiça, que é o ordenador de despesa (movimentação do Secretário ou delegado). Estrutura: Conselho Gestor (colegiado deliberativo e consultivo: Secretário da Justiça, que preside, e os Subsecretários de Assuntos do Sistema Penal, de Planejamento e Controle, de Assuntos Administrativos e de Ressocialização), Gerência do Fundo (gerente obrigatoriamente bacharel em Ciências Contábeis) e Secretaria Executiva do Conselho. Prestação de contas ao TCE-ES. Bens recebidos ou adquiridos incorporam-se ao patrimônio da SEJUS.",
+  "vinculacao": "Regra geral de saldo (LC 947/2020): o superávit financeiro apurado no balanço ao fim de cada exercício PODE (faculdade, não obrigação) ser transferido ao exercício seguinte 'a crédito do Tesouro Estadual e de forma desvinculada', exceto recursos vinculados pela Constituição Federal, pela legislação federal ou decorrentes de convênios, acordos e ajustes e operações de crédito. A lei não indica o ato que executa essa reversão. Destinação: aplicação 'exclusivamente em prol do Sistema Penitenciário Estadual' nos usos do art. 3º (obras, manutenção, formação de profissionais, material permanente e veículos, medidas pedagógicas, remuneração de mão de obra de presos, alternativas penais, custos de gestão exceto pessoal já pago pelos cofres públicos, demais despesas aprovadas pelo Conselho Gestor). A destinação é deliberada pelo Conselho Gestor, sendo vedado condicionar a aplicação a programas que não coincidam com a política penitenciária estadual (art. 2º, §5º); a aplicação depende de programa de trabalho aprovado pelo Conselho (art. 3º, §1º). Para a remuneração do trabalho do preso vale a divisão de 25% (família), 25% (despesas pessoais), 25% (pecúlio, liberado só por alvará ou fim da pena) e 25% (ressarcimento ao Estado), conforme art. 29 da Lei federal 7.210/1984. O saldo do antigo FTP foi integrado ao FRSP (art. 11). Quem altera: lei complementar (LC 920 e LC 947); a regulamentação é por decreto e os programas por deliberação do Conselho Gestor. Federal: a LC não prevê transferências federais carimbadas (o Fundo Penitenciário Nacional abastece o FUNPEN estadual, fundo distinto, LC 68/1995); convênios com entes públicos são admitidos e, se federais, ficam fora da reversão. Alerta não verificado: um resultado de busca indica que o STF (ADI 2935) afastou, na lei do FUNPEN estadual, a destinação de multas de sentenças penais; a LC 920 mantém multas penais como receita (art. 2º, V) - vale checar a validade desse inciso.",
+  "reversao": "permite",
+  "links": [
+   {
+    "rotulo": "Lei Complementar nº 920/2019 (DIO 23/09/2019, cópia no site da SEJUS)",
+    "url": "https://sejus.es.gov.br/media/Legisla%C3%A7%C3%A3o/Lei%20Complementar%20n%20920.pdf"
+   },
+   {
+    "rotulo": "SEJUS - Legislação (lista a LC 920/2019 de 23/09/2019)",
+    "url": "https://sejus.es.gov.br/portarias-2"
+   },
+   {
+    "rotulo": "Lei Complementar nº 947/2020 (27/03/2020; DIO 30/03/2020) - superávit financeiro de fundos",
+    "url": "https://coronavirus.es.gov.br/Media/Coronavirus/Legislacao/LEI%20COMPLEMENTAR%20N%C2%BA%20947.pdf"
+   }
+  ],
+  "confianca": "alta",
+  "lacunas": "O PDF da LC 920 é a página do Diário Oficial em colunas (lido e conferido; a data de assinatura 20/09/2019 está no texto, 23/09 é a da publicação/listagem da SEJUS). O Decreto 4.596-R/2020 e eventuais alterações posteriores a 2020 não foram abertos. O alerta sobre a ADI 2935 vem de resumo de buscador e não foi conferido no acórdão."
+ },
+ {
+  "ug": "450902",
+  "nomeOficial": "Fundo Especial de Reequipamento da Polícia Militar",
+  "sigla": "FUNREPOM",
+  "leiCriacao": "LC 72/1995",
+  "leiCriacaoCompleta": "Lei Complementar nº 72, de 26/12/1995 (DOE 27/12/1995). A LC 947/2020 a cita como '26 de novembro de 1995', mas o texto da própria lei, no site da PMES, diz 26/12/1995 - provável erro material da LC 947",
+  "alteracoes": [
+   "Lei Complementar nº 120, de 29/06/1998: nova redação do art. 1º e inclusão do §3º (teto de 40% para custeio) (conforme notas de rodapé do texto da PMES).",
+   "Lei Complementar nº 163, de 24/09/1999: nova redação do art. 4º (conta especial no BANESTES movimentada pelo Conselho) (idem).",
+   "Lei Complementar nº 936, de 27/12/2019 (DIO 30/12/2019, art. 41): inclui o inciso VII no art. 2º (multas aplicadas exclusivamente pela PM, por unidades de policiamento ambiental, referentes às Políticas Estaduais de Meio Ambiente e Florestal) e parágrafo único no art. 4º (subconta específica, com destinação exclusiva a atividades de proteção do meio ambiente e florestal).",
+   "Lei Complementar nº 947, de 27/03/2020 (art. 3º): nova redação do §3º do art. 1º (custeio permitido, inclusive do órgão a que se vincula - desaparece o teto de 40%) e do art. 5º (superávit pode ser revertido ao Tesouro, desvinculado).",
+   "Lei Complementar nº 922/2019, art. 3º, parágrafo único: veda destinar recursos do FUNREPOM ao FESP."
+  ],
+  "finalidade": "Cobrir custos e prover, em caráter complementar, recursos financeiros para dotar a Polícia Militar de equipamentos (veículos, telecomunicações, informática, máquinas e utensílios) e condições indispensáveis às suas atividades constitucionais; admite investimento em instalações físicas e, desde 2020, custeio.",
+  "receitas": "Art. 2º da LC 72: taxas pelo poder de polícia e por serviços específicos/diferenciados de policiamento ostensivo; multas por infração à legislação administrativo-policial; auxílios, subvenções ou doações municipais, federais ou privadas (inclusive de convênios/ajustes com o Estado) para serviços da PM; alienação de material inservível; recursos transferidos por entidades públicas/particulares, dotações e créditos adicionais; juros bancários e aplicações; outras rendas eventuais. Acrescenta-se (LC 936/2019) a receita de multas ambientais aplicadas pela PM, em subconta própria.",
+  "gestao": "Administrado por um Conselho Deliberativo: Secretário de Segurança Pública (preside), Comandante-Geral da PM, Diretor de Apoio Logístico, um representante da Seplan, um da SEFA e um da sociedade civil (no Conselho Estadual de Segurança Pública) - composição do texto original de 1995, que pode ter mudado por decreto/reorganizações. Secretaria Executiva designada pelo Secretário. Escrituração contábil própria; contas ao TCE-ES. O plano de aplicação é aprovado pelo Governador (art. 9º) e até 5% da receita pode cobrir encargos do fundo. Regulamentado pelo Decreto 3.993/1996 (citado na nota de rodapé).",
+  "vinculacao": "Originalmente (art. 5º) o saldo positivo do balanço era transferido ao exercício seguinte a crédito do próprio fundo. Regra geral de saldo (LC 947/2020): o superávit financeiro apurado no balanço ao fim de cada exercício PODE (faculdade, não obrigação) ser transferido ao exercício seguinte 'a crédito do Tesouro Estadual e de forma desvinculada', exceto recursos vinculados pela Constituição Federal, pela legislação federal ou decorrentes de convênios, acordos e ajustes e operações de crédito. A lei não indica o ato que executa essa reversão. Destinação: reequipar a PM (art. 1º); plano de aplicação aprovado pelo Governador; a subconta ambiental só pode financiar proteção ambiental/florestal; a LC 922/2019 proíbe enviar recursos do FUNREPOM ao FESP. Quem altera: lei complementar (como fizeram as LC 120/1998, 163/1999, 936/2019 e 947/2020); decreto regulamenta; o Conselho Deliberativo age por resoluções (art. 4º). Federal: a lei admite auxílios/convênios federais para serviços da PM, que seguem sua vinculação e escapam da reversão; não há transferência federal obrigatória.",
+  "reversao": "permite",
+  "links": [
+   {
+    "rotulo": "Lei Complementar nº 72/1995 (texto no site da Polícia Militar do ES)",
+    "url": "https://pm.es.gov.br/Media/Leis%203/19-Lei%20de%20Cria%C3%A7%C3%A3o%20do%20FUNREPOM%20-%20Lei_Complementar_72.pdf"
+   },
+   {
+    "rotulo": "Diário Oficial de 30/12/2019 (LC 936/2019, art. 41)",
+    "url": "https://ioes.dio.es.gov.br/portal/edicoes/download/4659"
+   },
+   {
+    "rotulo": "Lei Complementar nº 947/2020 (27/03/2020; DIO 30/03/2020) - superávit financeiro de fundos",
+    "url": "https://coronavirus.es.gov.br/Media/Coronavirus/Legislacao/LEI%20COMPLEMENTAR%20N%C2%BA%20947.pdf"
+   },
+   {
+    "rotulo": "Lei Complementar nº 922/2019 (FESP) consolidada até 02/05/2024",
+    "url": "https://sesp.es.gov.br/Media/UECI/Lei%20Complementar%20922.2019%20%20-%20atualizada%20at%C3%A9%2002.05.2024.pdf"
+   }
+  ],
+  "confianca": "alta",
+  "lacunas": "O texto de 1995 da PMES é a versão original com notas de rodapé; as LC 120/1998 e 163/1999 não foram abertas (só as notas), então o que cada uma mudou foi inferido das notas. Composição atual do Conselho Deliberativo e o Decreto 3.993/1996 não foram verificados. A divergência de data (26/11 x 26/12/1995) vem da comparação entre a LC 72 e a LC 947."
+ },
+ {
+  "ug": "470904",
+  "nomeOficial": "Fundo Estadual de Combate e Erradicação da Pobreza",
+  "sigla": "FECOP",
+  "leiCriacao": "LC 615/2011",
+  "leiCriacaoCompleta": "Instituído pela Constituição Estadual, ADCT arts. 61 a 63 (Emenda Constitucional nº 32/2001, DOE 03/12/2001), 'a ser regulado por lei complementar'. Regulamentado por Lei Complementar nº 615, de 16/12/2011, que revogou as LC 336/2005, 518/2009 e 575/2010. A sigla oficial na lei vigente é FUNCOP.",
+  "alteracoes": [
+   "Lei Complementar nº 336, de 30/11/2005 (DOE 01/12/2005): primeira lei do fundo, com vigência até 2010, ICMS adicional de 2 p.p. sobre bebidas alcoólicas, fumo, armas e munições, Grupo Gestor e critérios de seleção de municípios; REVOGADA.",
+   "Lei Complementar nº 518, de 21/12/2009: reformulou seleção, distribuição e aplicação (repasses via FEAS aos fundos municipais de assistência social); REVOGADA pela LC 615.",
+   "Lei Complementar nº 575, de 27/12/2010: citada como revogada pela LC 615 (art. 9º); conteúdo não aberto.",
+   "Lei Complementar nº 615, de 16/12/2011 (DIO 16 e 20/12/2011): lei vigente.",
+   "Lei Complementar nº 620, de 02/03/2012 (DIO 05/03/2012): inclui o inciso VI no art. 3º (1 representante da AMUNES na Comissão de Acompanhamento) e o art. 7º-A (autorização de créditos/PPA).",
+   "Decreto nº 3.017-R, de 25/05/2012 (DOE 28/05/2012), alterado pelo Decreto nº 5.954-R, de 10/02/2025 (novo art. 6º: requisitos para entidades sem fins lucrativos, Lei 13.019/2014)."
+  ],
+  "finalidade": "Viabilizar a toda a população capixaba acesso a níveis dignos de subsistência, por meio de ações suplementares de nutrição, habitação, educação, saúde, reforço da renda familiar e outros programas de relevante interesse social, com foco em inclusão social e produtiva e combate à pobreza (art. 82 do ADCT da CF e art. 61 do ADCT da Constituição Estadual).",
+  "receitas": "Art. 2º da LC 615: as receitas descritas no art. 62, incisos I, II, IV, V, VI e VII do ADCT da Constituição Estadual: dotações orçamentárias; doações de pessoas físicas ou jurídicas do País ou do exterior; adicional de até 2 pontos percentuais na alíquota do ICMS sobre produtos supérfluos (não sujeito à repartição de 25% com municípios do art. 158, IV da CF); incentivos fiscais/financeiros dos mecanismos do inciso V; recursos de outros fundos estaduais de incentivo; outras receitas definidas na regulamentação. O inciso III do art. 62 (desestatização) ficou fora. O adicional de ICMS decorre da Lei 7.000/2001 (art. 20-A; busca cita também o art. 71-A do RICMS), não aberta.",
+  "gestao": "Fundo de natureza orçamentária no Poder Executivo, operado pela SEADH (hoje SETADES) como Secretaria Executiva da Comissão de Acompanhamento (CA). A CA, órgão colegiado criado pelo art. 3º, é presidida pelo Secretário de Assistência Social e Direitos Humanos e composta pelos Secretários de Economia e Planejamento, Saúde e Ciência e Tecnologia, 2 representantes da sociedade civil e (LC 620/2012) 1 da AMUNES; define normas e critérios, delibera sobre projetos, aprova o Plano Anual de Aplicação e acompanha a execução. O IJSN dá apoio técnico (Decreto 3.017-R). A ADCT estadual exige conselho consultivo/de acompanhamento com sociedade civil (art. 61, p.único).",
+  "vinculacao": "Aplicação em custeio e investimento para ações de inclusão social e produtiva, mediante projeto/plano de trabalho, sendo VEDADO empregar em pagamento de dívida pública (LC 615, art. 5º). Despesas de custeio incluem material de consumo, serviços de terceiros e bolsa de reforço da renda familiar. Pelo Decreto 3.017-R (art. 1º) os recursos, deduzidos os valores relativos aos percentuais constitucionais de educação e saúde, são repassados ao fundo vinculado à SEADH/SETADES; os saldos financeiros anteriores a 2012 foram repassados pelo Tesouro ao fundo e aplicados conforme a CA (art. 1º, p.único); a partilha entre municípios e entidades é definida pela CA com valores publicados no DIO. Vinculação constitucional: o fundo é previsto na CF (ADCT arts. 79 a 83, EC 31/2000) e na CE (ADCT arts. 61-63); a receita do adicional de ICMS é vinculada ao fundo por força da ADCT, e nova vinculação ou desvio exigiria alteração constitucional estadual e/ou lei complementar (a CE determina que o fundo seja 'regulado por lei complementar'). Quem altera: finalidade e fontes pela ADCT estadual (emenda constitucional) e LC; critérios de partilha, planos e projetos pela CA (resoluções) e decreto. A LC 615 NÃO tem cláusula de superávit/desvinculação e o fundo não consta da LC 947/2020; não há previsão legal expressa de reversão do saldo ao Tesouro, e o Decreto manda aplicar o saldo conforme a CA. Federal: não há transferência federal carimbada; a base federal é constitucional (ADCT art. 82 CF: adicional de ICMS de até 2 p.p.; a prorrogação por prazo indeterminado pela EC 67/2010 é conhecimento geral, não conferido em texto aberto).",
+  "reversao": "nao",
+  "links": [
+   {
+    "rotulo": "Lei Complementar nº 615/2011 (Normas Brasil, publicada 16/12/2011)",
+    "url": "https://www.normasbrasil.com.br/norma/lei-complementar-615-2011-es_473242.html"
+   },
+   {
+    "rotulo": "Lei Complementar nº 615/2011 (DIO 20/12/2011, cópia no site da SETADES)",
+    "url": "https://setades.es.gov.br/media/FUNCOP/Lei%20complementar%20615.pdf"
+   },
+   {
+    "rotulo": "Lei Complementar nº 620/2012 (DIO 05/03/2012, SETADES)",
+    "url": "https://setades.es.gov.br/media/FUNCOP/Lei%20complementar%20620.pdf"
+   },
+   {
+    "rotulo": "Lei Complementar nº 336/2005 (Normas Brasil; revogada)",
+    "url": "https://www.normasbrasil.com.br/norma/lei-complementar-336-2005-es_125631.html"
+   },
+   {
+    "rotulo": "IJSN Nota Técnica 09/2010 (traz o texto da LC 518/2009 no Anexo 1)",
+    "url": "https://ijsn.es.gov.br/Media/IJSN/PublicacoesAnexos/notatecnica/ijsn_nt09.pdf"
+   },
+   {
+    "rotulo": "Decreto nº 3.017-R/2012 (com redação do Decreto 5.954-R/2025) - Normas Brasil",
+    "url": "https://www.normasbrasil.com.br/norma/decreto-3017-2012-es_473240.html"
+   },
+   {
+    "rotulo": "Constituição do Estado do ES (ADCT arts. 61-63; EC 32/2001)",
+    "url": "https://pc.es.gov.br/media/Legisla%C3%A7%C3%A3o/CONSTITUI%C3%87%C3%83O%20ESTADUAL-1.pdf"
+   },
+   {
+    "rotulo": "SETADES - página do FUNCOP (histórico legal)",
+    "url": "https://setades.es.gov.br/funcop-4"
+   }
+  ],
+  "confianca": "alta",
+  "lacunas": "A Constituição Estadual aberta está atualizada só até a EC 63/2009 (não conferi emendas posteriores ao ADCT). A LC 575/2010 não foi aberta; o texto da Lei 7.000/2001 (art. 20-A) e do RICMS (art. 71-A) sobre o adicional de ICMS não foi aberto. Não verifiquei alterações da LC 615 posteriores a 2012 além da LC 620 (a lista da SETADES para 2018 não mostra outras). A EC 67/2010 (prazo indeterminado do FECOP federal) é citada de memória. O nome do UG (FECOP) difere da sigla da lei (FUNCOP)."
+ },
+ {
+  "ug": "460904",
+  "nomeOficial": "Fundo Estadual de Defesa do Consumidor",
+  "sigla": "FEDC",
+  "leiCriacao": "LC 82/1996",
+  "leiCriacaoCompleta": "Lei Complementar nº 82, de 10/06/1996 (DO 11/06/1996)",
+  "alteracoes": [
+   "Lei Complementar nº 779, de maio de 2014 (DIO 13/05/2014; a data de assinatura aparece em branco no DIO, por volta de 12/05/2014): reescreve arts. 1º, 2º, 3º, 5º, 6º e 7º (atualiza SEJUS/PROCON-ES, inclui multas de TAC como receita - inciso X do art. 3º - e conta especial vinculada); revoga os §§2º e 3º do art. 3º (repasse de 70% das multas a fundos municipais) e os arts. 4º e 12.",
+   "Lei Complementar nº 935, de 19/12/2019 (DIO 20/12/2019): inclui o inciso X no art. 2º (financiar despesas correntes do PROCON-ES).",
+   "Lei Complementar nº 947, de 27/03/2020 (art. 5º e 27, II): inclui o §1º-A no art. 3º (superávit financeiro pode ser revertido ao Tesouro, desvinculado) e revoga o inciso VIII do art. 3º ('saldos de exercícios anteriores' como receita).",
+   "Decreto nº 4.033-N, de 10/10/1996: regulamentou o FEDC e criou o Conselho Diretor (conforme página de história do PROCON-ES; decreto não aberto)."
+  ],
+  "finalidade": "Criar condições financeiras e de gerenciamento para as ações e serviços de proteção e defesa dos consumidores (art. 57 do Código de Defesa do Consumidor): fomentar PROCONs municipais e entidades civis, financiar programas e projetos de proteção do consumidor da SEJUS, educação e pesquisa, capacitação, estruturar o PROCON-ES e, desde 2019, pagar despesas correntes do PROCON-ES.",
+  "receitas": "Art. 3º: parcelas das multas do art. 56 do CDC e legislação pertinente; dotação anual do Estado e créditos adicionais; indenizações e multas de condenações/descumprimento em ações coletivas de consumo; taxas criadas pelo Estado; recursos de convênios com entes públicos ou privados, nacionais ou estrangeiros; transferências do Fundo Nacional de Defesa do Consumidor e de Fundos Municipais de Defesa do Consumidor; doações e legados; multas de descumprimento de TAC (art. 5º, §6º da Lei 7.347/1985); outras fontes. (Saldos de exercícios anteriores, inciso VIII, foi revogado em 2020.) Lei 11.093/2019 destinou ao FEDC as multas por descumprimento da lei dos produtos para celíacos/diabéticos.",
+  "gestao": "Fundo com autonomia administrativa, financeira e contábil, administrado por um Conselho Diretor composto por membros do CONDECON (Conselho Estadual de Defesa do Consumidor), presidido por um membro do PROCON-ES (gestor do fundo, que abre e movimenta contas e executa as decisões); reúne-se ordinariamente a cada três meses. O Decreto 4.033-N/1996 compôs o conselho com PROCON-ES, SEJUC/SEJUS, SEDS, SESA, SEFA, Delegacia do Consumidor, Ministério Público e comunidade. Receitas depositadas pela SEFAZ em conta especial vinculada ao FEDC. Despesas observam licitação (art. 10).",
+  "vinculacao": "Regra geral de saldo (LC 947/2020): o superávit financeiro apurado no balanço ao fim de cada exercício PODE (faculdade, não obrigação) ser transferido ao exercício seguinte 'a crédito do Tesouro Estadual e de forma desvinculada', exceto recursos vinculados pela Constituição Federal, pela legislação federal ou decorrentes de convênios, acordos e ajustes e operações de crédito. A lei não indica o ato que executa essa reversão. Antes de 2020 o saldo de exercícios anteriores era receita do próprio fundo (art. 3º, VIII). Destinação: art. 2º da LC 82 enumera as ações financiáveis; o Conselho Diretor zela pela aplicação prioritária desses recursos e aprova projetos (art. 8º). Quem altera: lei complementar (a criação e as mudanças de 2014, 2019 e 2020 foram por LC); decreto regulamenta; o Conselho Diretor aprova projetos e convênios. Federal: o fundo cumpre o art. 57 do CDC (lei federal) e a lei admite receitas de transferências do Fundo Nacional de Defesa do Consumidor e de convênios, que são vinculadas à sua finalidade e ficam fora da reversão do superávit (ressalva da LC 947 para legislação federal e convênios). As multas de ação civil pública/TAC seguem a Lei 7.347/1985.",
+  "reversao": "permite",
+  "links": [
+   {
+    "rotulo": "Lei Complementar nº 82/1996 consolidada (texto original e redações de 2014/2019, site do PROCON-ES)",
+    "url": "https://procon.es.gov.br/Media/Leis%20que%20criaram%20o%20Procon%20e%20os%20Conselhos/Lei%20n%C2%BA%2082%20-%20FEDC%20alterada.pdf"
+   },
+   {
+    "rotulo": "Diário Oficial de 13/05/2014 (LC 779/2014)",
+    "url": "https://ioes.dio.es.gov.br/portal/edicoes/download/2738"
+   },
+   {
+    "rotulo": "Diário Oficial de 20/12/2019 (LC 935/2019)",
+    "url": "https://ioes.dio.es.gov.br/portal/edicoes/download/4652"
+   },
+   {
+    "rotulo": "Lei Complementar nº 947/2020 (27/03/2020; DIO 30/03/2020) - superávit financeiro de fundos",
+    "url": "https://coronavirus.es.gov.br/Media/Coronavirus/Legislacao/LEI%20COMPLEMENTAR%20N%C2%BA%20947.pdf"
+   },
+   {
+    "rotulo": "PROCON-ES - História (Decreto 4.033-N/1996 e Conselho Diretor)",
+    "url": "https://procon.es.gov.br/historia"
+   }
+  ],
+  "confianca": "alta",
+  "lacunas": "O PDF consolidado do PROCON-ES não incorpora a LC 947/2020 (as mudanças desta foram lidas no texto da própria LC 947). O Decreto 4.033-N/1996 e eventuais regulamentos mais novos não foram abertos; a composição do Conselho Diretor por decreto pode ter mudado. A data exata de assinatura da LC 779/2014 não consta do DIO consultado (apenas 'de maio de 2014')."
+ },
+ {
+  "ug": "410901",
+  "nomeOficial": "Fundo Estadual do Meio Ambiente",
+  "sigla": "FUNDEMA",
+  "leiCriacao": "LC 513/2009",
+  "leiCriacaoCompleta": "Lei Complementar nº 152, de 16/06/1999 (criou o Fundo de Defesa e Desenvolvimento do Meio Ambiente - FUNDEMA; texto original não aberto). Reformulado e renomeado Fundo Estadual do Meio Ambiente (mesma sigla) pela Lei Complementar nº 513, de 11/12/2009 (DIO 14/12/2009), que é a lei-base vigente",
+  "alteracoes": [
+   "Lei Complementar nº 513, de 11/12/2009: reformula o fundo e transfere todos os recursos do fundo antigo ao novo (art. 1º); revogou os arts. 1º a 4º e o inciso VIII do art. 10 da LC 152/1999.",
+   "Lei Complementar nº 820, de 22/12/2015: inclui o inciso V no art. 2º (aperfeiçoamento de profissionais da área ambiental - Residência Ambiental).",
+   "Lei Complementar nº 869, de 19/10/2017: redação do art. 4º, II (sanções administrativas após julgamento de recurso pelo CONSEMA/Conselhos Regionais).",
+   "Lei Complementar nº 936, de 27/12/2019 (DIO 30/12/2019, art. 42): novo art. 4º, II (produto das sanções administrativas por infrações às Políticas Estaduais de Meio Ambiente) e §§1º-2º (40% desse produto vai aos órgãos que aplicaram a sanção, em plano anual de investimento).",
+   "Lei Complementar nº 947, de 27/03/2020 (art. 11): parágrafo único no art. 2º (uso em despesas correntes, exceto pessoal e vedações constitucionais/federais/convênios), parágrafo único no art. 5º (contratos administrativos) e novo art. 26 (superávit pode ser revertido ao Tesouro, desvinculado; antes o saldo passava ao exercício seguinte a crédito do fundo).",
+   "Lei nº 11.255, de 16/04/2021: PROESAM (art. 2º, VI e art. 6º, VIII), presidência do Conselho Gestor passa ao Secretário da SEAMA, Secretaria Executiva exercida pela SEAMA com apoio do IEMA.",
+   "Leis Complementares nº 1.052 e 1.053, ambas de 25/07/2023: LC 1.052 inclui o Programa Estadual de Controle Populacional e Bem-Estar de Animais Domésticos (art. 2º, VII) e o repasse fundo a fundo a municípios (art. 5º-A); LC 1.053 inclui a cota-parte da compensação financeira mineral entre as receitas (art. 4º, §3º), obriga a aplicação de no mínimo 60% dela na Residência Ambiental (art. 4º-A, com transferência ao FUNDÁGUA, subconta Residentes Ambientais, em até 30 dias) e amplia o art. 2º, V."
+  ],
+  "finalidade": "Dar sustentação à Política Estadual de Meio Ambiente, apoiando planos, programas e projetos de educação ambiental, recuperação ambiental, preservação de áreas de interesse ecológico, aperfeiçoamento de profissionais ambientais, PROESAM (apoio aos municípios), controle populacional de animais domésticos e outros definidos pelo Conselho Consultivo; desde 2020 também despesas correntes (exceto pessoal).",
+  "receitas": "Art. 4º da LC 513 (redação atual): dotações do Estado, da União e dos Municípios; produto das sanções administrativas por infração às políticas estaduais de meio ambiente (40% volta aos órgãos autuadores); acordos, convênios, contratos e consórcios com entes públicos ou privados, nacionais ou internacionais; auxílios, doações, legados, subvenções e repasses; operações de crédito e rendimentos; recursos pela utilização de recursos ambientais com fins econômicos (excluídos os da política de recursos hídricos), entre eles a cota-parte integral da compensação financeira pela exploração de recursos minerais recebida pelo Estado (de origem federal, art. 4º, §3º); outros recursos por lei; receitas eventuais.",
+  "gestao": "Administrado pela SEAMA (art. 9º). Conselho Gestor tripartite de 6 membros (2 Poder Executivo, 2 sociedade civil e 2 setor empreendedor, mesma representação do CONSEMA), presidido pelo Secretário da SEAMA com voto de qualidade (Lei 11.255/2021), mandato coincidente com o do CONSEMA; o CONSEMA é o conselho consultivo (propõe diretrizes e indica os membros do Conselho Gestor); Secretaria Executiva exercida pela SEAMA com apoio do IEMA. Conta no BANESTES (art. 7º); possibilidade de subcontas para sanções ambientais; escrituração própria e auditoria do TCE-ES.",
+  "vinculacao": "Art. 26 (redação da LC 947/2020): o superávit financeiro apurado ao fim do exercício PODE ser transferido ao exercício seguinte a crédito do Tesouro Estadual, de forma desvinculada, exceto recursos vinculados pela Constituição Federal, legislação federal, convênios, acordos, ajustes e operações de crédito. Antes, o saldo não utilizado era transferido a crédito do próprio fundo. Vinculações específicas: mínimo de 60% da cota-parte mineral para a Residência Ambiental (art. 4º-A; se o programa for extinto, o valor permanece no FUNDEMA e passa ao Plano Anual para as finalidades do art. 2º, especialmente o inciso V); 40% das multas voltam ao órgão autuador via plano anual de investimento (art. 4º, §1º); a Presidência não pode decidir alocação ad referendum (art. 25); aplicações seguem o Plano Anual de Alocação aprovado pelo Conselho Gestor (art. 23) e as prioridades do art. 6º (unidades de conservação, recuperação de áreas degradadas, educação ambiental, espécies ameaçadas, pesquisa, recursos naturais renováveis). Quem altera: lei complementar (todas as mudanças acima foram por LC ou lei ordinária); o Conselho Gestor/Consultivo define prioridades e planos, sem alterar a lei; regulamento por decreto (art. 3º, 31). Federal: a compensação mineral (CFEM) é receita federal repartida com o Estado e foi vinculada em lei estadual; convênios e transferências federais ficam fora da desvinculação.",
+  "reversao": "permite",
+  "links": [
+   {
+    "rotulo": "Lei Complementar nº 513/2009 consolidada (cópia do texto da ALES, impressa em 23/02/2024, hospedada pelo IDAF)",
+    "url": "https://idaf.es.gov.br/media/Documentos/Legisla%C3%A7%C3%A3o/GELCOF/www3.al.es.gov.br_Arquivo_Documents_legislacao_html_lec5132009.html%20%281%29.pdf"
+   },
+   {
+    "rotulo": "Diário Oficial de 30/12/2019 (LC 936/2019, art. 42)",
+    "url": "https://ioes.dio.es.gov.br/portal/edicoes/download/4659"
+   },
+   {
+    "rotulo": "Lei Complementar nº 947/2020 (27/03/2020; DIO 30/03/2020) - superávit financeiro de fundos",
+    "url": "https://coronavirus.es.gov.br/Media/Coronavirus/Legislacao/LEI%20COMPLEMENTAR%20N%C2%BA%20947.pdf"
+   }
+  ],
+  "confianca": "alta",
+  "lacunas": "A LC 152/1999 (criação original) não foi aberta (só citada pela LC 513). A versão consolidada é de 23/02/2024; alterações posteriores não foram verificadas. Divergência de data da LC 513 em documentos (11/12 no cabeçalho; DIO de 14/12/2009). Não abri as LC 820/2015 e 869/2017; as referências vêm das notas de redação do texto consolidado."
+ },
+ {
+  "ug": "450905",
+  "nomeOficial": "Fundo de Proteção e Defesa Civil do Estado",
+  "sigla": "FUNPDEC",
+  "leiCriacao": "LC 1.075/2024",
+  "leiCriacaoCompleta": "Lei Complementar nº 694, de 08/05/2013 (instituiu o FUNPDEC/ES no CBMES; REVOGADA pela LC 1.075/2024, art. 39). Lei vigente: Lei Complementar nº 1.075, de 27/03/2024 (DIO 28/03/2024), que reorganiza o SIEPDEC/ES e institui no CBMES o Fundo de Proteção e Defesa Civil do Estado - FUNPDEC/ES (art. 15)",
+  "alteracoes": [
+   "Lei Complementar nº 767, de 18/03/2014: alterou a LC 694 (informação de documento da CEPDEC obtido em busca; não aberta).",
+   "Lei Complementar nº 947, de 27/03/2020 (art. 16): deu nova redação ao art. 28 da LC 694 (superávit financeiro do FUNPDEC/ES pode ser revertido ao Tesouro, desvinculado).",
+   "Lei Complementar nº 1.075, de 27/03/2024: revoga a LC 694 e reinstitui o fundo, mantendo (art. 23) a mesma regra de superávit; Decreto nº 5.667-R, de 01/04/2024, regulamenta o FUNPDEC (citado no Regimento Interno do Conselho)."
+  ],
+  "finalidade": "Prover, em caráter emergencial e complementar, recursos financeiros e materiais para atender os Municípios impactados por desastres e para prevenção, mitigação e preparação para desastres pelo Estado e pelos Municípios, por interveniência da CEPDEC e dos órgãos municipais de defesa civil; recursos destinam-se às ações de prevenção, mitigação e preparação em áreas de risco e de resposta e recuperação em áreas atingidas por desastres (arts. 15 e 19).",
+  "receitas": "Art. 17 da LC 1.075/2024: dotações orçamentárias e créditos adicionais; recursos transferidos da União ou do Estado; doações, legados e contribuições; auxílios, subvenções e transferências de convênios ou acordos com entidades públicas ou privadas, nacionais e internacionais; saldos apurados no exercício anterior; alienação de materiais inservíveis; saldos de créditos extraordinários abertos para calamidade/emergência; emendas parlamentares; 3% do produto da compensação financeira dos royalties de petróleo e gás natural (contratos celebrados antes de 03/12/2012) contabilizados pelo Estado em cada exercício; outros recursos legais.",
+  "gestao": "Instituído no CBMES (Corpo de Bombeiros Militar), gerido pela CEPDEC (Coordenadoria Estadual de Proteção e Defesa Civil), com supervisão do Conselho Deliberativo; autorização de despesas pelo Comandante-Geral do CBMES (art. 27). Conselho Deliberativo presidido pelo Secretário de Segurança Pública e Defesa Social (SESP), com o Comandante-Geral do CBMES, o Coordenador Estadual de Defesa Civil, representantes da SEG, SEP e SETADES e um dos órgãos municipais de defesa civil (art. 16; o Regimento Interno lista Secretários de Estado). Recursos mantidos na Conta Única do Tesouro, em conta especial (art. 22). Repasses de resposta podem ser autorizados por colegiado (Comandante-Geral, Coordenador e Adjunto) com ratificação posterior do Conselho (art. 26).",
+  "vinculacao": "Art. 23: o superávit financeiro apurado no balanço ao fim do exercício PODE ser transferido a crédito do Tesouro Estadual, de forma desvinculada, exceto recursos vinculados pela Constituição Federal, legislação federal, convênios, acordos, ajustes e operações de crédito (o art. 17, V ainda lista os saldos do exercício anterior como receita). Destinação: ações de prevenção, mitigação, preparação, resposta e recuperação (art. 19); recursos podem ser aplicados em equipamentos e manutenção do CBMES e dos órgãos municipais de defesa civil, com aprovação do Conselho (art. 18); execução própria ou transferência fundo a fundo automática aos municípios, condicionada a FUNMPDEC e órgão municipal de defesa civil criados, sem contrapartida e sem convênio (art. 21); vedado pagar despesas realizadas antes da transferência (art. 21, §4º). O Conselho Deliberativo define normativos de alocação, regulamento e plano anual (Regimento, art. 2º). A parcela de 3% dos royalties é vinculação legal de receita de origem federal-compensatória e só muda por nova lei. Quem altera: lei complementar (a de 2024 revogou a de 2013); regulamento por decreto (5.667-R/2024); procedimentos por portaria da CEPDEC e resoluções do Conselho. Federal: a lei admite recursos transferidos da União, que seguem a vinculação de origem.",
+  "reversao": "permite",
+  "links": [
+   {
+    "rotulo": "Lei Complementar nº 1.075/2024 (texto, site da Defesa Civil/CEPDEC)",
+    "url": "https://defesacivil.es.gov.br/media/Boletim%20Estadual/Lei%201.075.pdf"
+   },
+   {
+    "rotulo": "Regimento Interno do Conselho Deliberativo do FUNPDEC (Portaria 712-R, anexo)",
+    "url": "https://cb.es.gov.br/Media/PDF's/712-R%20ANEXO.pdf"
+   },
+   {
+    "rotulo": "CEPDEC - lista de leis e decretos estaduais",
+    "url": "https://defesacivil.es.gov.br/GrupodeArquivos/decretos-estaduais-2"
+   },
+   {
+    "rotulo": "Lei Complementar nº 947/2020 (27/03/2020; DIO 30/03/2020) - superávit financeiro de fundos",
+    "url": "https://coronavirus.es.gov.br/Media/Coronavirus/Legislacao/LEI%20COMPLEMENTAR%20N%C2%BA%20947.pdf"
+   }
+  ],
+  "confianca": "alta",
+  "lacunas": "O texto da LC 694/2013 (criação) e da LC 767/2014 não foi aberto (só as referências na LC 1.075, na LC 947 e em páginas da CEPDEC); o Decreto 5.667-R/2024 não foi aberto. A página da CEPDEC grafa a LC 1.075 como '28 de março de 2024' em um título e 27/03/2024 no texto da lei (vale a data do texto, publicação em 28/03). Não verifiquei alterações posteriores a abril de 2024."
+ },
+ {
+  "ug": "310903",
+  "nomeOficial": "Fundo Especial de Apoio ao Programa Estadual de Desenvolvimento Rural Sustentável",
+  "sigla": null,
+  "leiCriacao": "Lei 10.510/2016",
+  "leiCriacaoCompleta": "Lei nº 10.510, de 05/04/2016 (DIO 06/04/2016): institui o Programa RURAL SUSTENTÁVEL e cria o Fundo Especial de Apoio ao Programa Estadual de Desenvolvimento Rural Sustentável",
+  "alteracoes": [
+   "Lei Complementar nº 947, de 27/03/2020 (art. 21): nova redação do art. 7º, com §2º (superávit financeiro pode ser revertido ao Tesouro, desvinculado), no lugar da regra original de transferência do saldo ao exercício seguinte a crédito do fundo.",
+   "Outras alterações posteriores: não identificadas (ver lacunas)."
+  ],
+  "finalidade": "Prover, em caráter complementar, recursos financeiros para apoiar as ações do Programa RURAL SUSTENTÁVEL (assessoria, capacitação e projetos produtivos e de infraestrutura rural, ampliação da oferta hídrica, adequação ambiental e conservação de água e solo), inclusive obras e serviços de engenharia; beneficiários: Municípios, associações e cooperativas de produtores rurais.",
+  "receitas": "Art. 5º: dotações orçamentárias e créditos adicionais; recursos de repasses e financiamentos obtidos junto a instituições financeiras nacionais e internacionais; auxílios, subvenções ou doações municipais, federais ou privadas (inclusive de convênios ou ajustes com o Estado); rendimentos de aplicações financeiras; outras receitas legalmente destinadas.",
+  "gestao": "Fundo de natureza financeira e contábil, vinculado à SEAG e administrado por um Conselho Gestor deliberativo presidido pelo Secretário da SEAG, com os Secretários de Meio Ambiente, o Diretor-Presidente do IDAF, do INCAPER e da AGERH, um representante da FETAES e o Diretor-Presidente da FAES; Secretaria Executiva designada pelo Secretário da SEAG. Conta específica no BANESTES movimentada pela SEAG conforme resoluções do Conselho. Escrituração própria e contas ao TCE-ES.",
+  "vinculacao": "Original (art. 7º): recursos de operação de crédito não utilizados no exercício permanecem na conta vinculada (§1º) e os demais recursos transferem-se ao exercício seguinte a crédito do fundo (§2º, reescrito em 2020). Regra geral de saldo (LC 947/2020): o superávit financeiro apurado no balanço ao fim de cada exercício PODE (faculdade, não obrigação) ser transferido ao exercício seguinte 'a crédito do Tesouro Estadual e de forma desvinculada', exceto recursos vinculados pela Constituição Federal, pela legislação federal ou decorrentes de convênios, acordos e ajustes e operações de crédito. A lei não indica o ato que executa essa reversão. Art. 9º: recursos de operação de crédito com o BNDES só podem pagar despesas do grupo de natureza Investimentos (vinculação por contrato de crédito). Projetos devem buscar alinhamento com PEDEAG, Plano Estadual de Irrigação, Plano Estadual de Segurança Hídrica e planos de bacias (art. 2º). Quem altera: lei estadual; regulamentação por decreto (art. 12) e deliberações do Conselho por resolução. Federal: a lei admite doações/convênios federais e financiamentos (BNDES), não repasses federais obrigatórios; esses recursos de crédito e convênios ficam fora da reversão do superávit.",
+  "reversao": "permite",
+  "links": [
+   {
+    "rotulo": "Diário Oficial de 06/04/2016 (Lei nº 10.510/2016)",
+    "url": "https://ioes.dio.es.gov.br/portal/edicoes/download/3417"
+   },
+   {
+    "rotulo": "Lei Complementar nº 947/2020 (27/03/2020; DIO 30/03/2020) - superávit financeiro de fundos",
+    "url": "https://coronavirus.es.gov.br/Media/Coronavirus/Legislacao/LEI%20COMPLEMENTAR%20N%C2%BA%20947.pdf"
+   }
+  ],
+  "confianca": "alta",
+  "lacunas": "A lei foi lida no Diário Oficial (PDF em colunas); o site da ALES não abriu, então não conferi a versão consolidada nem alterações posteriores a 2020 (ex.: mudanças de composição do conselho por reorganizações das secretarias). O decreto regulamentador não foi localizado. O nome do UG ('...Desenvolvimento Rural') é uma forma abreviada; o nome legal inclui 'Sustentável'."
+ },
+ {
+  "ug": "350901",
+  "nomeOficial": "Fundo Especial para Construção, Reforma e Ampliação de Equipamentos Públicos Estaduais",
+  "sigla": "FEP",
+  "leiCriacao": "LC 786/2014",
+  "leiCriacaoCompleta": "Lei Complementar nº 786, de 02/07/2014 (DIO 03/07/2014): 'Institui o Fundo Especial para Construção, Reforma e Ampliação de Equipamentos Públicos Estaduais - FEP'",
+  "alteracoes": [
+   "Lei Complementar nº 947, de 27/03/2020 (art. 17): nova redação do art. 4º da LC 786, com §2º (superávit financeiro do FEP pode ser revertido ao Tesouro, desvinculado), no lugar da regra original de que os recursos não utilizados passariam ao exercício seguinte a crédito do fundo.",
+   "Decreto nº 3.684-R/2014, alterado pelo Decreto nº 3.714-R/2014: regulamentam a LC 786 (informação de resultado de busca; decretos não abertos).",
+   "Outras alterações (inclusive a mudança de vinculação do IOPES/SETOP para a SEMOBI): não confirmadas."
+  ],
+  "finalidade": "Prover, em caráter complementar, recursos financeiros para dotar o Governo do Estado de infraestrutura e equipamentos públicos adequados à execução de suas atividades constitucionais nas áreas de educação, saúde, segurança pública e justiça, prevenção de riscos de desastres naturais, esporte e lazer, infraestruturas urbana e rural e mobilidade urbana; abrange edificações, instalações, pavimentação, drenagem, saneamento, equipamentos, planos, estudos e projetos necessários à construção, reforma e ampliação.",
+  "receitas": "Art. 2º: dotações orçamentárias e créditos adicionais; recursos de repasses e financiamentos obtidos junto a instituições financeiras nacionais e internacionais; auxílios, subvenções ou doações municipais, federais ou privadas, específicas ou de convênios/ajustes com o Estado; rendimentos de aplicações financeiras; outras receitas legalmente destinadas.",
+  "gestao": "Na lei original, vinculado ao Instituto de Obras Públicas do ES (IOPES) e administrado por um Conselho Gestor deliberativo: Secretário de Transportes e Obras Públicas (preside), Secretários de Governo, de Economia e Planejamento e da Fazenda, Secretário Extraordinário de Projetos Especiais e Articulação Metropolitana e Diretor-Presidente do IOPES; Secretaria Executiva designada pelo Diretor-Presidente do IOPES. Conta especial no BANESTES movimentada pelo IOPES por resoluções do Conselho; escrituração própria e contas ao TCE-ES. Hoje a unidade gestora 350901 (FEP) aparece sob o órgão 35 - SEMOBI no boletim SIC-ES de 2023 (a lei não foi reaberta para checar a vinculação atual).",
+  "vinculacao": "Vedação expressa: é proibido usar recursos do FEP para despesas que não sejam do Grupo de Natureza de Despesa Investimentos (art. 6º), o que impede custeio; usos limitados às áreas e à infraestrutura do art. 1º. Original (art. 4º): recursos de operação de crédito não utilizados ao fim do exercício permanecem na conta vinculada ao FEP (§1º) e os demais passam ao exercício seguinte a crédito do fundo (§2º, reescrito em 2020). Regra geral de saldo (LC 947/2020): o superávit financeiro apurado no balanço ao fim de cada exercício PODE (faculdade, não obrigação) ser transferido ao exercício seguinte 'a crédito do Tesouro Estadual e de forma desvinculada', exceto recursos vinculados pela Constituição Federal, pela legislação federal ou decorrentes de convênios, acordos e ajustes e operações de crédito. A lei não indica o ato que executa essa reversão. Quem altera: lei complementar (instituído e alterado por LC); decreto regulamenta; o Conselho Gestor delibera por resoluções dentro do plano. Federal: a lei admite financiamentos nacionais/internacionais e doações ou convênios federais; as operações de crédito (ex.: linhas financiadas por Resolução CMN, como a usada no crédito especial publicado no mesmo DIO para esportes) e os convênios ficam fora da reversão do superávit.",
+  "reversao": "permite",
+  "links": [
+   {
+    "rotulo": "Diário Oficial de 03/07/2014 (LC 786/2014)",
+    "url": "https://ioes.dio.es.gov.br/portal/edicoes/download/2800"
+   },
+   {
+    "rotulo": "SEFAZ - Boletim SIC-ES nº 3/2023 (UG 350901 = FEP, órgão 35 SEMOBI)",
+    "url": "https://sefaz.es.gov.br/Media/Tesouro%20Estadual/SIC-ES/647f609a555646.43833147SIC%20ES%20BOLETIM%20N%C2%BA%203%2005_06_2023%20V4-1.pdf"
+   },
+   {
+    "rotulo": "Lei Complementar nº 947/2020 (27/03/2020; DIO 30/03/2020) - superávit financeiro de fundos",
+    "url": "https://coronavirus.es.gov.br/Media/Coronavirus/Legislacao/LEI%20COMPLEMENTAR%20N%C2%BA%20947.pdf"
+   }
+  ],
+  "confianca": "alta",
+  "lacunas": "O nome no sistema vinha truncado ('...Equipamentos Públicos'); o nome legal completo é '...Equipamentos Públicos Estaduais - FEP'. A identificação do UG 350901 com o FEP vem do boletim SIC-ES de 2023 (sigla FEP) combinada com a LC 947, que cita a LC 786 e o FEP. A LC 786 foi lida no Diário Oficial em colunas embaralhadas (texto reconstituído; a ordem dos §§ do art. 4º foi confirmada pela LC 947). Não foram abertos os Decretos 3.684-R e 3.714-R de 2014, nem a versão consolidada na ALES (bloqueada), nem alterações de vinculação (IOPES/SETOP/SEMOBI) e de composição do conselho posteriores a 2014."
+ },
+ {
+  "ug": "450901",
+  "nomeOficial": "Fundo Especial de Reequipamento da Polícia Civil",
+  "sigla": "FUNREPOCI",
+  "leiCriacao": "LC 71/1995",
+  "leiCriacaoCompleta": "Lei Complementar nº 71, de 26/11/1995 (D.O. 27/11/1995)",
+  "alteracoes": [
+   "LC nº 116/1998, LC nº 165/1999, LC nº 228/2002 e LC nº 277/2003: apenas listadas como alteradoras no cabeçalho da cópia da APPES; os textos delas não foram abertos, então não sei o que mudaram.",
+   "LC nº 892/2018: segundo resultado de busca, mexe no art. 3º (Conselho Deliberativo) para incluir o Delegado Geral Adjunto; texto NÃO aberto (site da Assembleia inacessível).",
+   "LC nº 922, de 11/10/2019 (cria o FESP): parágrafo único do art. 3º veda, 'sob nenhuma hipótese', destinar ao FESP recursos do FUNREPOCI; a redação dada pela LC nº 1.062/2023 mantém a vedação (texto consolidado até 02/05/2024 aberto).",
+   "LC nº 947, de 27/03/2020 (art. 2º): inclui § 4º no art. 1º (recursos do fundo podem cobrir custeio, inclusive do órgão a que se vincula) e parágrafo único no art. 2º (superávit financeiro do balanço pode ser transferido, a crédito do Tesouro Estadual e de forma desvinculada, exceto recursos vinculados pela CF, por lei federal ou decorrentes de convênios/acordos/ajustes e operações de crédito)."
+  ],
+  "finalidade": "Prover, em caráter complementar, recursos financeiros para dotar a Polícia Civil de equipamentos (veículos, telecomunicações, polícia técnico-científica, informática, máquinas e utensílios) e das condições indispensáveis às suas atividades constitucionais. A lei admite ainda investimentos em instalações físicas, constituição e funcionamento de órgãos da PC e capacitação especializada, com autorização do Governador; desde a LC 947/2020 também pode cobrir custeio.",
+  "receitas": "Art. 2º da LC 71/1995 (texto original): (I) taxa pelo exercício do poder de polícia e pela prestação de serviços de polícia administrativa, judiciária e técnico-científica; (II) produto de multas por infração à legislação administrativo-policial; (III) auxílios, subvenções ou doações municipais, federais ou privadas, específicas ou oriundas de convênios/ajustes com o Estado, para serviços afetos à PC; (IV) alienação de material/equipamento inservível; (V) recursos transferidos por entidades públicas ou particulares e dotações orçamentárias/créditos adicionais; (VI) juros bancários de depósitos e aplicações; (VII) quaisquer outras rendas eventuais. Os recursos são depositados pela SEFAZ, mensalmente, em conta especial no BANESTES (art. 4º). Na prática a maior parte vem das taxas de serviços da PC (informação de notícia oficial, não conferida em lei).",
+  "gestao": "Administrado por Conselho Deliberativo (art. 3º, redação original): Secretário de Estado da Segurança Pública (preside), Delegado-Chefe da Polícia Civil, Superintendente de Polícia Técnico-Científica, um representante da SEP (então Ações Estratégicas e Planejamento), um da SEFAZ, um das entidades da sociedade civil com assento no Conselho Estadual de Segurança Pública e um representante dos servidores da PC; Secretaria Executiva designada pelo Secretário. A conta é movimentada pelo Conselho por Resolução (art. 4º); o plano de aplicação é aprovado pelo Governador (art. 9º); até 5% da receita pode custear encargos do fundo; contas ao TCE-ES. A composição atual do Conselho pode diferir (LC 892/2018, não aberta).",
+  "vinculacao": "A LC 71/1995 (texto original) manda transferir o saldo positivo do balanço para o exercício seguinte, a crédito do próprio fundo (art. 5º) e fixa a finalidade (equipamento/estrutura da PC). Depois, a LC 947/2020 passou a permitir reverter o superávit financeiro ao Tesouro Estadual de forma desvinculada, EXCETO recursos vinculados pela Constituição, por lei federal ou decorrentes de convênios, acordos, ajustes e operações de crédito (portanto, transferências federais/convênios carimbados ficam protegidos). A LC 922/2019 (redação da LC 1.062/2023) proíbe destinar recursos do FUNREPOCI ao FESP. Como finalidade, fontes e regras de saldo estão em lei complementar e já foram alteradas por LC (LC 947/2020), a mudança de destinação exige lei complementar (inferência minha a partir do precedente); o plano de aplicação é ato do Governador e a movimentação do dinheiro é por Resolução do Conselho. Sem indício, nas leis abertas, de extinção ou de transferência do saldo a outro fundo.",
+  "reversao": "permite",
+  "links": [
+   {
+    "rotulo": "LC nº 71/1995 (cópia na APPES, texto original; página de apoio)",
+    "url": "http://appes.com.br/v2/lei-complementar-no-071-95-cria-o-funrepoci/"
+   },
+   {
+    "rotulo": "LC nº 947/2020 (arts. 2º: custeio e superávit)",
+    "url": "https://coronavirus.es.gov.br/Media/Coronavirus/Legislacao/LEI%20COMPLEMENTAR%20N%C2%BA%20947.pdf"
+   },
+   {
+    "rotulo": "LC nº 922/2019 consolidada até 02/05/2024 (art. 3º, parágrafo único: veda destinar recursos do FUNREPOCI ao FESP)",
+    "url": "https://sesp.es.gov.br/Media/Sesp/UECI/Lei%20Complementar%20922.2019%20%20-%20atualizada%20até%2002.05.2024.pdf"
+   }
+  ],
+  "confianca": "media",
+  "lacunas": "Não consegui abrir o texto consolidado da LC 71/1995 (ALES inacessível pela rede da sessão); o texto lido é a cópia da APPES, que reflete a lei só até as alterações de 2003. Não abri LC 116/98, 165/99, 228/2002, 277/2003 nem 892/2018, portanto a composição atual do Conselho e eventuais mudanças nas receitas/destinação não estão confirmadas. Não está claro como o art. 5º original (saldo permanece no fundo) convive com o novo parágrafo único do art. 2º (LC 947) na numeração atual. Não verifiquei execução recente nem o decreto regulamentador."
+ },
+ {
+  "ug": "370901",
+  "nomeOficial": "Fundo de Fomento do Turismo",
+  "sigla": "FUNTUR",
+  "leiCriacao": "LC 192/2000",
+  "leiCriacaoCompleta": "Lei Complementar nº 192, de 22/11/2000 (arts. 10 e 11; a mesma LC cria a SETUR). D.O. 23/11/2000",
+  "alteracoes": [
+   "LC nº 919, de 20/09/2019: nova redação do parágrafo único do art. 10 (usos dos recursos) e dos incisos do art. 11 (fontes).",
+   "LC nº 947, de 27/03/2020 (art. 8º): parágrafo único no art. 11 (superávit financeiro do balanço pode ser transferido, a crédito do Tesouro Estadual e de forma desvinculada, exceto recursos vinculados pela CF, por lei federal, convênios, acordos, ajustes e operações de crédito).",
+   "Decreto nº 4.318-R, de 15/10/2018 (regulamento atualizado; revogou o Decreto 1.484-R/2005) e Decreto nº 5.717-R, de 29/05/2024 (acrescenta §§ 4º e 5º ao art. 8º: uso do Parque Estadual Agropecuário Floriano Varejão).",
+   "A vinculação do FUNTUR à SETUR consta do art. 22 da LC nº 384/2007, citado no Decreto 4.318-R (LC 384 não aberta)."
+  ],
+  "finalidade": "Prover, em caráter complementar, recursos financeiros para fomentar o desenvolvimento do turismo no Estado. Pelo art. 10 (redação da LC 919/2019), os recursos podem ser usados em investimento em infraestrutura turística, investimento nas instalações físicas da SETUR, investimento e custeio da gestão de espaços de turismo sob responsabilidade da SETUR e capacitação técnica de pessoal da área.",
+  "receitas": "Art. 11 da LC 192/2000, redação da LC 919/2019: (I) dotações orçamentárias do Estado, da União e dos Municípios; (II) recursos de convênios, contratos, consórcios e operações de crédito com entidades públicas ou privadas, nacionais ou internacionais; (III) auxílios, doações, legados, subvenções, contribuições e outros repasses de pessoas físicas ou jurídicas; (IV) alienações patrimoniais e rendimentos de capital; (V) juros bancários de depósitos e aplicações; (VI) receitas de concessão, locação, exploração comercial, publicitária e gestão dos espaços do turismo (contratos da SETUR); (VII) outras receitas eventuais especificamente destinadas. O Decreto 4.318-R (art. 4º, VI) inclui a exploração do Parque Estadual Agropecuário Floriano Varejão para eventos.",
+  "gestao": "Vinculado à SETUR; o Secretário de Estado do Turismo é o gestor (Decreto 4.318-R, art. 2º): elabora o Plano Anual de Aplicação, ordena despesas, homologa licitações. Não há conselho gestor deliberativo: o Conselho Estadual do Turismo (CONTURES) é só consultivo (propõe diretrizes de aplicação e acompanha o desempenho; art. 3º do decreto). Recursos depositados na Conta Única (BANESTES) via DUA, salvo exigência de fonte repassadora; escrituração contábil própria; contas ao TCE-ES.",
+  "vinculacao": "Lei: os usos permitidos são os do art. 10 (parágrafo único, LC 919/2019). O decreto prevê que recursos não utilizados no exercício passam ao exercício seguinte a crédito do Fundo (art. 4º, § 4º); a LC 947/2020 acrescentou a possibilidade de reverter o superávit ao Tesouro de forma desvinculada, exceto recursos vinculados por CF, lei federal, convênios, acordos, ajustes e operações de crédito. Isto é, recursos federais vindos de convênio ou operação de crédito ficam carimbados; a lei prevê dotações da União e convênios como fonte, mas não vi transferência obrigatória da União. Mudar fontes ou usos exige lei complementar (a norma de criação é LC e todas as mudanças de mérito foram por LC); o plano anual é ato do Secretário e o regulamento é decreto. Não encontrei previsão de extinção.",
+  "reversao": "permite",
+  "links": [
+   {
+    "rotulo": "LC nº 192/2000 (texto consolidado, cópia da ALES publicada no site da SETUR)",
+    "url": "https://setur.es.gov.br/media/PDFs/1%20-%20Lei%20Complementar%20N%C2%BA%20192%20de%2022%20de%20novembro%20de%202000.pdf"
+   },
+   {
+    "rotulo": "LC nº 919/2019 (DIO 23/09/2019, pág. 2)",
+    "url": "https://setur.es.gov.br/media/PDFs/3%20-%20Lei%20Complementar%20N%C2%BA%20919%20de%2020%20de%20setembro%20de%202019.pdf"
+   },
+   {
+    "rotulo": "LC nº 947/2020",
+    "url": "https://coronavirus.es.gov.br/Media/Coronavirus/Legislacao/LEI%20COMPLEMENTAR%20N%C2%BA%20947.pdf"
+   },
+   {
+    "rotulo": "Decreto nº 4.318-R/2018 (regulamento do FUNTUR)",
+    "url": "https://setur.es.gov.br/media/PDFs/2%20-%20Decreto%20N%C2%BA%204.318-R%20de%2015%20de%20outubro%20de%202018%20-%20Funtur.pdf"
+   },
+   {
+    "rotulo": "Decreto nº 5.717-R/2024",
+    "url": "https://setur.es.gov.br/media/PDFs/5%20-%20Decreto%20N%C2%BA%205717-R%20de%2029%20de%20maio%20de%202024%20altera%20Decreto%204318-R%20-%20Funtur.pdf"
+   },
+   {
+    "rotulo": "SETUR - página 'Legislação - Funtur'",
+    "url": "https://setur.es.gov.br/legislacao"
+   }
+  ],
+  "confianca": "alta",
+  "lacunas": "Não abri a LC nº 384/2007 (vinculação à SETUR) nem o fluxo real de execução/saldo do fundo. O texto da LC 192 lido é a versão consolidada do site da ALES arquivada pela SETUR em 23/10/2024; eventual alteração posterior a essa data não foi checada."
+ },
+ {
+  "ug": "100905",
+  "nomeOficial": "Fundo Estadual sobre Drogas",
+  "sigla": "FESAD",
+  "leiCriacao": "Lei 7.743/2004",
+  "leiCriacaoCompleta": "Lei nº 7.743, de 13/04/2004 (D.O. 14/04/2004), que criou o Fundo Estadual Antidrogas; renomeado Fundo Estadual sobre Drogas - FESAD pela Lei nº 11.251, de 08/04/2021",
+  "alteracoes": [
+   "Lei nº 11.251, de 08/04/2021 (D.O. 09/04/2021): muda a ementa e os arts. 1º a 10 para a nova denominação; o FESAD passa a ficar subordinado à SEDH, com a Subsecretaria de Políticas sobre Drogas (SESD) gerenciando e ordenando despesas; cria o art. 6º-A (editais de fomento e boas práticas para acolhimento, prevenção, tratamento, reinserção social, estudos e pesquisas, com beneficiários pessoas físicas e jurídicas de direito público e privado sem fins lucrativos).",
+   "Lei nº 9.845, de 31/05/2012 (SISESD): integra o FESAD ao sistema (art. 6º, III), dá ao COESAD o acompanhamento da gestão dos recursos (art. 7º, III), prevê despesas de conselheiros (art. 17), repasse a ONGs (art. 24), reversão direta ao FESAD de bens/valores declarados perdidos em favor do Estado em processos da Lei Federal 11.343/2006 (art. 26, redação da Lei 10.737/2017) e repasses a municípios condicionados à adesão (art. 28). Alterada pelas Leis nº 10.348/2015 (COESAD e CESD vinculados à Vice-Governadoria) e nº 10.737/2017.",
+   "Decreto nº 1.414-R, de 27/12/2004: regulamento do fundo (apenas citado em páginas oficiais; texto não aberto)."
+  ],
+  "finalidade": "Facilitar a captação, o repasse e a aplicação de recursos destinados exclusivamente à execução da Política Estadual sobre Drogas: prevenção, tratamento, repressão ao tráfico, recuperação e reinserção social de dependentes, estudos e pesquisas, capacitação e eventos sobre o tema (art. 2º). Usos listados no art. 6º: programas de prevenção, capacitação, estudos, eventos, projetos de organizações governamentais e não governamentais, grupos de apoio, publicações, acervo, e aparelhamento do fundo e da secretaria executiva do COESAD.",
+  "receitas": "Art. 5º da Lei 7.743/2004: (I) dotação anual no orçamento estadual e verbas adicionais; (II) doações de pessoas físicas e jurídicas (Lei Federal 9.532/1997); (III) doações de organismos e entidades nacionais, internacionais ou estrangeiras, governamentais ou não, e de pessoas físicas/jurídicas; (IV) transferências de convênios com o Governo Federal; (V) aplicações financeiras; (VI) publicações e eventos do COESAD; (VII) convênios e acordos com instituições públicas e privadas para repasse a executoras de programas do Plano de Aplicação; (VIII) recursos de bens apreendidos e adquiridos com o produto do tráfico de drogas; (IX) outros recursos. A Lei 9.845/2012 (art. 26) acrescenta o perdimento de bens/valores de crimes da Lei 11.343/2006.",
+  "gestao": "Conforme a Lei 11.251/2021: subordinado à SEDH, com gerenciamento e ordenação de despesas pela Subsecretaria de Políticas sobre Drogas (SESD). Documentos oficiais de 2023-2025 (edital SEG/SESD 01/2023 e minuta do PLANESD 2026-2030) dizem que a SESD hoje está vinculada à Secretaria de Governo (SEG). O COESAD (Conselho Estadual sobre Drogas, deliberativo e normativo; presidido pelo Vice-Governador pela Lei 9.845/2012) elabora o Plano de Aplicação; recursos em conta especial de banco oficial movimentada somente com autorização do Subsecretário (art. 5º, parágrafo único, redação de 2021); inventário anual; contas ao TCE-ES.",
+  "vinculacao": "Lei 7.743/2004, art. 2º, caput: recursos destinados exclusivamente à política sobre drogas; na redação original, o § 2º exigia deliberação expressa do COESAD para aplicar os recursos e vedava utilizá-los em outros tipos de programas (a Lei 11.251/2021 reescreveu o art. 2º só com o parágrafo único sobre o Plano de Aplicação do COESAD; não confirmei se o § 2º foi expressamente revogado). Pagamento de despesas do próprio COESAD com recursos do fundo exige aprovação dos membros do COESAD (art. 10, parágrafo único). Não achei regra de superávit/saldo nem percentuais mínimos; a LC 947/2020 não menciona o FESAD. Há receitas carimbadas: convênios com a União (art. 5º, IV) e bens apreendidos do tráfico (art. 5º, VIII; Lei 9.845, art. 26), ligados a lei federal. Alterar finalidade/fontes exige lei estadual (a Lei 7.743 foi alterada por lei ordinária, a 11.251/2021); plano de aplicação é do COESAD; detalhes por decreto e editais por regulamento (art. 6º-A).",
+  "reversao": "informa",
+  "links": [
+   {
+    "rotulo": "Lei nº 7.743/2004 (texto original, cópia no site da SEJUS)",
+    "url": "https://sejus.es.gov.br/Media/Sejus/Legislação/Leis/Atualização%20Legislação%20SEJUS%202019/Lei%20Ordinária%20nº%207.743%20de%202004.pdf"
+   },
+   {
+    "rotulo": "Lei nº 11.251/2021 (texto integral, republicado na plataforma CRIA)",
+    "url": "https://criaprevencao.com.br/legislacao/lei-no-11-251-de-08-04-2021/"
+   },
+   {
+    "rotulo": "Lei nº 9.845/2012 (SISESD) com notas das leis alteradoras",
+    "url": "https://www.normasbrasil.com.br/norma/lei-9845-2012-es_241264.html"
+   },
+   {
+    "rotulo": "SEJUS - lista de leis (registra Lei 7.743 e Decreto 1.414-R/04)",
+    "url": "https://sejus.es.gov.br/GrupodeArquivos/leis"
+   },
+   {
+    "rotulo": "PLANESD 2026-2030 (minuta) - descrição do FESAD e da SESD na SEG",
+    "url": "https://ocid.es.gov.br/Media/ObservatorioCapixaba/documentos/PLASNED%20-%20MINUTA%20(CONSULTA).pdf"
+   }
+  ],
+  "confianca": "alta",
+  "lacunas": "Não abri o Decreto 1.414-R/2004, nem uma versão consolidada oficial da Lei 7.743 pós-2021 (o art. 3º e partes dos arts. 4º-5º aparecem com '(...)' na lei alteradora). O texto da Lei 11.251 foi lido em página da plataforma CRIA, não no site da ALES. Conflito entre lei (SEDH) e prática (SESD na SEG) não resolvido por ato que eu tenha visto. Não verifiquei execução do fundo."
+ },
+ {
+  "ug": "490901",
+  "nomeOficial": "Fundo de Aval do Microcrédito do Estado do Espírito Santo",
+  "sigla": "GARANTIR-ES",
+  "leiCriacao": "Lei 11.830/2023",
+  "leiCriacaoCompleta": "Lei nº 11.830, de 25/05/2023 (DOE 26/05/2023)",
+  "alteracoes": [
+   "Lei nº 12.068, de 03/04/2024 (DOE 04/04/2024): acrescenta objetivo (inciso VI do art. 1º: reconstrução e retomada de pequenos negócios em municípios com desastre natural, SE ou ECP), ajusta o art. 12 e inclui arts. 4º-A a 4º-C (autoriza o Executivo a equalizar juros de operações do Banestes no microcrédito, com vedações e devolução em caso de aplicação irregular).",
+   "Decreto nº 5.550-R, de 21/11/2023 (regulamento) e Decreto nº 5.844-R, de 30/09/2024 (altera o regulamento; citado em resultado de busca, não aberto)."
+  ],
+  "finalidade": "Fundo de aval/garantia para operações de microcrédito: serve de instrumento de inclusão produtiva e desenvolvimento sustentável de empreendedores individuais, microempresas, empresas de pequeno porte e organizações coletivas, cobrindo inadimplência (principal e juros de mora) das operações de microcrédito feitas por agente financeiro (Banestes), após esgotada a cobrança administrativa (arts. 1º e 6º).",
+  "receitas": "Art. 5º da Lei 11.830/2023: (I) dotações orçamentárias anuais; (II) transferências de agências e fundos de desenvolvimento estaduais, nacionais e internacionais (contribuição, subvenção, doação, outras não reembolsáveis); (III) rendimentos de aplicações; (IV) doações de pessoas físicas e jurídicas; (V) juros e rendimentos eventuais; (VI) valor devido à ADERES pelo convênio com o Banestes; (VII) doações, auxílios, convênios, financiamentos e legados de entidades nacionais ou estrangeiras de cooperação; (VIII) alienação de bens decorrentes de operação de crédito; (IX) outras receitas das operações. Conta específica no Banestes, movimentada exclusivamente pela ADERES (§ 1º).",
+  "gestao": "Gestão pelo Estado por meio da ADERES (Agência de Desenvolvimento das Micro e Pequenas Empresas e do Empreendedorismo), que define política de crédito, analisa balancetes trimestrais e representa o fundo (art. 7º); operação por agente financeiro (Banestes) mediante convênio (art. 8º). É unidade gestora do orçamento (art. 10), com escrituração própria e contas ao TCE-ES. A lei NÃO cria conselho gestor.",
+  "vinculacao": "Lei: recursos servem exclusivamente para honrar garantias de microcrédito (art. 6º); em caso de dissolução, o fundo só se extingue após quitar todas as obrigações, inclusive com o agente financeiro, e o saldo final tem destinação decidida pelo Governo Estadual, que fixará critérios para devolução às fontes, incluindo doadores, proporcionalmente aos aportes (art. 14 e parágrafo único). O Decreto 5.550-R (art. 7º, § 6º) veda vincular receita de impostos (CF, art. 167, IV) às dotações do fundo. Não identifiquei transferência federal carimbada obrigatória (o inciso II do art. 5º permite repasses de agências/fundos nacionais, de forma genérica). Alterar finalidade/fontes: lei estadual (a Lei 12.068/2024 é o precedente); regulamento por decreto (art. 9º); diretrizes anuais de aplicação são aprovadas pela ADERES (Decreto, art. 6º, II).",
+  "reversao": "condicionada",
+  "links": [
+   {
+    "rotulo": "Lei nº 11.830/2023 (texto integral)",
+    "url": "https://www.normasbrasil.com.br/norma/lei-11830-2023-es_445887.html"
+   },
+   {
+    "rotulo": "Lei nº 12.068/2024 (texto integral)",
+    "url": "https://www.normasbrasil.com.br/norma/lei-12068-2024-es_457401.html"
+   },
+   {
+    "rotulo": "Decreto nº 5.550-R/2023 (regulamento)",
+    "url": "https://www.normasbrasil.com.br/norma/decreto-5550-2023-es_452129.html"
+   }
+  ],
+  "confianca": "alta",
+  "lacunas": "Textos lidos em portal de normas (normasbrasil), não no DIO/ALES; não abri o Decreto 5.844-R/2024. O nome 'FAMES' não aparece nas fontes: o fundo é GARANTIR-ES. Não verifiquei o saldo/execução do fundo."
+ },
+ {
+  "ug": "470906",
+  "nomeOficial": "Fundo Estadual do Trabalho",
+  "sigla": "FET",
+  "leiCriacao": "Lei 11.041/2019",
+  "leiCriacaoCompleta": "Lei nº 11.041, de 20/09/2019 (DIO 23/09/2019, edição 25073, págs. 9-10)",
+  "alteracoes": [
+   "Lei Complementar nº 947, de 27/03/2020 (art. 24): dá nova redação ao § 3º do art. 2º (superávit financeiro do balanço pode ser transferido, a crédito do Tesouro Estadual e de forma desvinculada, exceto recursos vinculados pela CF, por lei federal ou decorrentes de convênios, acordos, ajustes e operações de crédito).",
+   "Não encontrei outra lei alterando a Lei 11.041; também não busquei regulamento (a lei mandou regulamentar em 90 dias)."
+  ],
+  "finalidade": "Instrumento contábil criado para cumprir o art. 12 da Lei Federal 13.667/2018: destinar recursos à execução de ações e serviços e ao apoio técnico e financeiro da Política Estadual de Trabalho, Emprego e Renda, em financiamento compartilhado no âmbito do Sistema Nacional de Emprego (SINE); também instrumento de gestão orçamentária e financeira da política (art. 1º).",
+  "receitas": "Art. 2º: (I) dotação específica no orçamento estadual; (II) recursos do FAT (art. 11 da Lei Federal 13.667/2018); (III) créditos suplementares, especiais e extraordinários; (IV) rendimentos de aplicações; (V) saldo financeiro do exercício; (VI) convênios com órgãos federais e entidades financiadoras nacionais e estrangeiras; (VII) repasses de convênios com entes públicos ou privados e transferências automáticas fundo a fundo do FAT; (VIII) alienação de bens móveis e imóveis do órgão responsável; (IX) doações, auxílios, contribuições e legados; (X) multas de sentenças judiciais, juros de mora e amortizações conforme destinação própria; (XI) recursos retidos em instituições financeiras sem destinação; (XII) outros. Conta especial de titularidade do Fundo em banco oficial.",
+  "gestao": "Vinculado ao órgão estadual responsável pela Política Estadual de Trabalho, Emprego e Renda (a lei não nomeia a secretaria), cujo Secretário ordena despesas (art. 5º). Há conselho: o CETER (Conselho Estadual do Trabalho, Emprego e Renda, tripartite, antigo CET da Lei 9.837/2012) orienta, controla e fiscaliza o fundo, aprova o plano de ações e serviços do SINE e a proposta orçamentária (arts. 1º, § 2º, 7º e 8º). O órgão presta contas trimestral e anualmente ao CETER (art. 6º).",
+  "vinculacao": "Parágrafo único do art. 3º: a aplicação dos recursos do FET/ES depende de prévia aprovação do CETER e deve respeitar a finalidade do art. 3º (SINE, programas, qualificação, seguro-desemprego, intermediação etc.). O art. 4º permite repasses a fundos municipais do trabalho (fundo a fundo) e convênios, conforme critérios do CETER, e exige conselho, fundo e plano municipais. Saldo: pelo § 3º original do art. 2º, o saldo era transferido ao exercício seguinte a crédito do fundo; a LC 947/2020 trocou por regra que permite reverter superávit ao Tesouro de forma desvinculada, exceto o vinculado por CF/lei federal/convênios. O fundo recebe transferências federais carimbadas (FAT, fundo a fundo, Lei Federal 13.667/2018), sujeitas às normas do CODEFAT/Ministério do Trabalho. Alterar finalidade/fontes: lei estadual; plano de ações: CETER; regulamento: decreto.",
+  "reversao": "permite",
+  "links": [
+   {
+    "rotulo": "Lei nº 11.041/2019 (DIO 23/09/2019, Edição 25073, págs. 9-10)",
+    "url": "https://ioes.dio.es.gov.br/portal/edicoes/download/4575"
+   },
+   {
+    "rotulo": "LC nº 947/2020 (art. 24)",
+    "url": "https://coronavirus.es.gov.br/Media/Coronavirus/Legislacao/LEI%20COMPLEMENTAR%20N%C2%BA%20947.pdf"
+   },
+   {
+    "rotulo": "Lei nº 9.837/2012 (Conselho Estadual do Trabalho, antecessor do CETER)",
+    "url": "https://www.normasbrasil.com.br/norma/lei-9837-2012-es_241090.html"
+   }
+  ],
+  "confianca": "alta",
+  "lacunas": "Não identifiquei qual secretaria (SETADES, SECTI ou outra) administra hoje o fundo, nem abri o decreto regulamentador ou leis de 2020 em diante que possam ter mexido no CETER/fundo. O texto do DIO é extração automática de PDF em colunas, conferida na sequência dos artigos. Não verifiquei execução."
+ },
+ {
+  "ug": "100904",
+  "nomeOficial": "Fundo Estadual de Combate à Corrupção",
+  "sigla": "FECC",
+  "leiCriacao": "Lei 10.498/2016",
+  "leiCriacaoCompleta": "Lei nº 10.498, de 26/02/2016 (DIO 29/02/2016)",
+  "alteracoes": [
+   "Lei Complementar nº 947, de 27/03/2020 (art. 20): nova redação do § 3º do art. 3º (superávit financeiro do balanço pode ser transferido, a crédito do Tesouro Estadual e de forma desvinculada, exceto recursos vinculados pela CF, por lei federal ou decorrentes de convênios, acordos, ajustes e operações de crédito). Na versão original, o § 3º dizia que o saldo credor do balanço seria transferido ao exercício seguinte, a seu crédito.",
+   "Decreto nº 4.224-R, de 13/03/2018 (regulamento; institui o Comitê Gestor)."
+  ],
+  "finalidade": "Financiar ações e programas dos órgãos de controle interno do Estado, para prevenir, fiscalizar e reprimir ilícitos que causem prejuízo ao erário ou gerem enriquecimento ilícito de servidores ou de pessoas jurídicas (Lei Federal 12.846/2013), além de campanhas educacionais e de conscientização sobre os efeitos deletérios da corrupção (art. 1º). O decreto permite uso inclusive em despesas correntes da Administração, desde que relacionadas às atividades previstas.",
+  "receitas": "Art. 2º: (I) multas civis da Lei Federal 8.429/1992; (II) multas aplicadas pelo TCE-ES a agentes públicos estaduais; (III) multas administrativas do Estado com base na Lei 8.666/1993; (IV) multas administrativas com base na Lei 12.846/2013; (V) doações de pessoas físicas ou jurídicas, nacionais ou estrangeiras (vedadas a quem tenha contrato por concorrência pública com o Estado ou decisões em processos de improbidade/corrupção, §§ 2º e 3º); (VI) transferências orçamentárias de outras pessoas jurídicas nacionais ou internacionais; (VII) dotações do orçamento do Estado. Recursos em conta específica de instituição financeira oficial, em nome do Fundo e à disposição da SECONT (art. 3º).",
+  "gestao": "Vinculado à SECONT (Secretaria de Controle e Transparência), responsável pela gestão e administração (arts. 1º e 3º); publica relatório semestral no Portal da Transparência (art. 4º); qualquer cidadão ou associação pode apresentar projetos à SECONT (art. 5º). A lei não cria conselho externo; o Decreto 4.224-R instituiu um Comitê Gestor formado por ocupantes de cargos da própria SECONT (Secretário, subsecretários, Corregedor-Geral e gerente técnico-administrativo), que define normas operacionais e aprova a proposta orçamentária.",
+  "vinculacao": "Os recursos só podem ser usados nas finalidades do art. 1º (controle interno, transparência, correição, ouvidoria, prevenção e combate à corrupção; Decreto 4.224-R, art. 2º). Saldo: a versão original mandava manter o saldo no fundo; a LC 947/2020 passou a permitir reverter o superávit ao Tesouro, desvinculado, exceto recursos vinculados por CF, lei federal ou convênio. Não há transferência federal carimbada como fonte; a receita vem de multas e doações (multas da Lei 12.846 e da Lei 8.666/93, que o Estado aplica). Alterar finalidade ou fontes exige lei estadual (foi alterada por lei complementar em 2020); normas operacionais e uso das despesas correntes são do Comitê Gestor/decreto. Sem previsão de extinção.",
+  "reversao": "permite",
+  "links": [
+   {
+    "rotulo": "Lei nº 10.498/2016 (DIO 29/02/2016, pág. 1, PDF em imagem; lido visualmente)",
+    "url": "https://secont.es.gov.br/media/Legisla%C3%A7%C3%B5es/Legisla%C3%A7%C3%A3o%20Anticorrup%C3%A7%C3%A3o/lei%20estadual%2010498%20de%2026%20de%20fevereiro%20de%202016.pdf"
+   },
+   {
+    "rotulo": "Decreto nº 4.224-R/2018 (DIO 14/03/2018; Comitê Gestor)",
+    "url": "https://secont.es.gov.br/media/17_ARQUIVOS_ANTERIORES_A_REESTRUTURACAO/DIO_ES/DECRETO%20N%C2%BA%204224-R%2C%20DE%2013%20DE%20MAR%C3%87O%20DE%202018.pdf"
+   },
+   {
+    "rotulo": "LC nº 947/2020 (art. 20)",
+    "url": "https://coronavirus.es.gov.br/Media/Coronavirus/Legislacao/LEI%20COMPLEMENTAR%20N%C2%BA%20947.pdf"
+   },
+   {
+    "rotulo": "SECONT - página do FECC",
+    "url": "https://secont.es.gov.br/Fundo-estadual-de-combate-a-corrupcao"
+   }
+  ],
+  "confianca": "alta",
+  "lacunas": "Li só a primeira página do decreto 4.224-R (arts. 1º a 4º); não li as competências completas do Comitê Gestor. Não verifiquei alterações posteriores a 2020 (p.ex., por adoção da Lei 14.133/2021 no lugar da 8.666/93) nem a execução/saldo do fundo. A SECONT mostra datas diferentes (26 e 29/02/2016); o DIO confirma sanção em 26/02 e publicação em 29/02/2016."
+ },
+ {
+  "ug": "480902",
+  "nomeOficial": "Fundo Estadual de Defesa dos Direitos da Pessoa Idosa",
+  "sigla": null,
+  "leiCriacao": "Lei 5.780/1998",
+  "leiCriacaoCompleta": "Lei nº 5.780, de 21/12/1998 (art. 19; republicada no DIO de 07/05/1999 por incorreção na publicação de 22/12/1998)",
+  "alteracoes": [
+   "Lei nº 10.873, de 10/07/2018: reescreve os arts. 8º a 17 (Conselho Estadual de Defesa dos Direitos da Pessoa Idosa - CEDDIPI), incluindo a competência de elaborar, controlar e fiscalizar o Plano de Aplicação dos recursos do fundo.",
+   "Lei nº 10.953, de 12/12/2018 (DIO 13/12/2018): reescreve o art. 19 (vincula à SEDH; amplia fontes; define destinação, beneficiários, transferências a entidades privadas, gestão pela SEDH com o CEDDIPI e contas ao TCE-ES).",
+   "Lei Complementar nº 947, de 27/03/2020 (art. 7º): nova redação do § 2º do art. 19 (superávit financeiro do balanço pode ser transferido, a crédito do Tesouro Estadual e de forma desvinculada, exceto recursos vinculados por CF, lei federal, convênios, acordos, ajustes e operações de crédito); substituiu a regra da Lei 10.953 que mantinha o saldo no fundo e afastava a LC 833/2016."
+  ],
+  "finalidade": "Fundo de natureza contábil e financeira vinculado à SEDH, destinado a captar recursos e financiar políticas públicas, programas, projetos e ações voltados à pessoa idosa. Os recursos são aplicados prioritariamente em ações ligadas à política de atendimento ao idoso e à garantia dos direitos do Estatuto do Idoso (Lei Federal 10.741/2003) (art. 19, caput e § 4º).",
+  "receitas": "Art. 19, redação da Lei 10.953/2018: (I) dotações orçamentárias; (II) contribuições, subvenções e auxílios de entidades públicas e privadas; (III) recursos de acordos, convênios, contratos ou transferências com entes públicos ou privados, nacionais ou internacionais; (IV) legados e doações de pessoas físicas ou jurídicas (com dedução de IR, Lei Federal 12.213/2010, quando houver amparo); (V) multas administrativas estaduais por descumprimento do atendimento prioritário e das regras do Estatuto do Idoso por entidades de atendimento; (VI) multas aplicadas por autoridade judiciária estadual com base no Estatuto do Idoso; (VII) multas penais por crimes do Estatuto condenados pela justiça estadual; (VIII) outros recursos lícitos.",
+  "gestao": "A SEDH administra e gere o fundo e analisa/fiscaliza tecnicamente os projetos (art. 19, § 8º). O CEDDIPI (Conselho Estadual de Defesa dos Direitos da Pessoa Idosa, paritário, deliberativo e fiscalizador) atua em conjunto, definindo prioridades (§ 9º) e aprovando as propostas de repasse a entidades privadas (§ 6º, II); entre suas competências está elaborar, controlar e fiscalizar o Plano de Aplicação. Escrituração contábil própria e contas ao TCE-ES (§ 10).",
+  "vinculacao": "Recursos aplicados prioritariamente nas linhas de ação da política do idoso (§ 4º). Beneficiários: órgãos e entidades estaduais e municípios (§ 5º); repasse a entidades privadas sem fins lucrativos só por transferência voluntária, com ações exclusivas para pessoa idosa em áreas de assistência social, saúde, educação, trabalho, cultura, esporte, lazer, comunicação ou qualificação, e proposta aprovada pelo CEDDIPI (§ 6º). Saldo: superávit pode ir ao Tesouro de forma desvinculada, exceto recursos vinculados por CF, lei federal ou convênios (§ 2º, LC 947/2020). Extinção: o patrimônio reverte ao Tesouro Estadual (§ 3º). Doações dedutíveis do IR seguem a lei federal. Alterar finalidade/fontes: lei estadual (foi feito por Lei 10.953/2018 e LC 947/2020); plano de aplicação e aprovação de projetos: CEDDIPI; regulamento: decreto (art. 20; Decreto 4.496-N/1999 é citado no site da SEDH, não aberto).",
+  "reversao": "permite",
+  "links": [
+   {
+    "rotulo": "Lei nº 5.780/1998 consolidada (cópia no site da SEDH)",
+    "url": "https://sedh.es.gov.br/media/Doc1998/Lei%205780.1998.pdf"
+   },
+   {
+    "rotulo": "Lei nº 10.953/2018 e Lei nº 10.954/2018 (DIO 13/12/2018, pág. 1)",
+    "url": "https://ioes.dio.es.gov.br/portal/edicoes/download/4282"
+   },
+   {
+    "rotulo": "LC nº 947/2020 (art. 7º)",
+    "url": "https://coronavirus.es.gov.br/Media/Coronavirus/Legislacao/LEI%20COMPLEMENTAR%20N%C2%BA%20947.pdf"
+   },
+   {
+    "rotulo": "SEDH - página do CEDDIPI (links da lei e do decreto)",
+    "url": "https://sedh.es.gov.br/ceddipi-es"
+   }
+  ],
+  "confianca": "alta",
+  "lacunas": "Não abri o Decreto 4.496-N/1999 nem leis posteriores a 2020 que possam ter alterado o art. 19. A cópia consolidada traz as redações antiga e nova intercaladas; as conclusões seguem as marcadas como redação vigente (10.953/2018 e LC 947/2020). Não verifiquei execução; a UG 480902 está sob a SEDH (código 48)."
+ },
+ {
+  "ug": "390901",
+  "nomeOficial": "Fundo de Incentivo ao Esporte e Lazer do Estado do Espírito Santo",
+  "sigla": "PRÓ-ESPORTE",
+  "leiCriacao": "Lei 9.365/2009",
+  "leiCriacaoCompleta": "Lei nº 9.365, de 18/12/2009 (data e número confirmados pela LC 947/2020, art. 12, que a altera; criação do fundo na Lei 9.365 foi apurada só por trecho de busca)",
+  "alteracoes": [
+   "Lei Complementar nº 947, de 27/03/2020 (art. 12): nova redação do art. 13 da Lei 9.365/2009: o superávit financeiro do balanço do PRÓ-ESPORTE pode ser transferido, a crédito do Tesouro Estadual e de forma desvinculada, exceto recursos vinculados por CF, lei federal ou convênios, acordos, ajustes e operações de crédito (substitui a regra original de que o saldo não utilizado passava ao exercício seguinte a crédito do próprio fundo).",
+   "Um projeto de lei de 2012 (PL 205/2012) propunha mudar o art. 5º, I; não confirmei aprovação.",
+   "A Lei nº 11.246/2021 (Lei de Incentivo ao Esporte, por ICMS, alterando a Lei 7.000/2001) é outro mecanismo e, pelo que encontrei, não altera a Lei 9.365."
+  ],
+  "finalidade": "Pela Lei 9.365/2009 (segundo trecho de busca da página da ALES): cria o Programa Estadual de Fomento e Incentivo ao Esporte e Lazer, executado pela SESPORT por convênios com entidades públicas e privadas, e o fundo PRÓ-ESPORTE para financiá-lo (construção/ampliação de instalações esportivas, apoio a atletas de alto rendimento, premiações, Bolsa-Atleta etc.). NÃO li o texto integral.",
+  "receitas": "Segundo trecho de busca, o art. 4º lista dotação orçamentária estadual, doações e transferências de entidades nacionais, internacionais e não governamentais, operações de crédito, retornos e juros de financiamentos concedidos pelo próprio fundo e outras receitas. Não conferido no texto.",
+  "gestao": "Administrado pela SESPORT (art. 8º, conforme trecho de busca), que elabora o Plano de Aplicações e o regulamento; um Grupo Coordenador (SESPORT, que preside, planejamento, fazenda e o Conselho Estadual de Esportes e Lazer) define prioridades e acompanha o uso (arts. 10-11); escrituração própria e contas ao TCE-ES (art. 12). Não há conselho deliberativo exclusivo; informação não conferida no texto.",
+  "vinculacao": "Confirmado em texto oficial (LC 947/2020, art. 12): o art. 13 da Lei 9.365/2009 hoje permite reverter o superávit ao Tesouro de forma desvinculada, exceto recursos vinculados por CF, lei federal ou convênios/operações de crédito. Os demais pontos (aplicação em consonância com o art. 2º; depósito em banco oficial) vêm de trecho de busca e não foram conferidos. Alterar finalidade/fontes: lei estadual (a Lei 9.365 foi mudada por LC); regulamento por decreto (art. 9º, SESPORT regulamenta em 90 dias). Não identifiquei transferência federal carimbada específica.",
+  "reversao": "permite",
+  "links": [
+   {
+    "rotulo": "LC nº 947/2020 (art. 12: Lei 9.365/2009, art. 13)",
+    "url": "https://coronavirus.es.gov.br/Media/Coronavirus/Legislacao/LEI%20COMPLEMENTAR%20N%C2%BA%20947.pdf"
+   }
+  ],
+  "confianca": "baixa",
+  "lacunas": "O site da Assembleia (www3.al.es.gov.br) ficou inacessível (reset de conexão/503) e não encontrei outra cópia da Lei 9.365/2009. Finalidade, receitas, gestão e arts. 5º a 14 vêm de resumos de busca da página da ALES, não do texto aberto. Não confirmei se a lei foi alterada após 2020, nem o decreto regulamentador, nem se o fundo tem execução relevante (a Lei de Incentivo ao Esporte por ICMS, Lei 11.246/2021, parece ser o instrumento mais usado hoje)."
+ },
+ {
+  "ug": "460903",
+  "nomeOficial": "Fundo Penitenciário Estadual",
+  "sigla": "FUNPEN",
+  "leiCriacao": "LC 68/1995",
+  "leiCriacaoCompleta": "Lei Complementar nº 68, de 19/12/1995",
+  "alteracoes": [
+   "Lei Complementar nº 947, de 27/03/2020 (art. 4º): nova redação do art. 5º da LC 68/1995 (superávit financeiro do balanço do FUNPEN pode ser transferido, a crédito do Tesouro Estadual e de forma desvinculada, exceto recursos vinculados por CF, lei federal ou convênios, acordos, ajustes e operações de crédito).",
+   "STF, ADI 2.935/ES (Informativo 1.117, nov/2023): declarou inconstitucional o inciso I do art. 2º da LC 68/1995 (multas penitenciárias fixadas em sentenças judiciais como fonte do fundo), por invadir competência da União em direito penal, com efeitos ex nunc, preservando valores que já entraram diretamente no fundo.",
+   "Decreto nº 3.986-N, de 22/05/1996: regulamento (citado no plano da SEJUS; texto não aberto).",
+   "Não confundir com o Fundo Rotativo do Sistema Penitenciário (FRSP), criado/transformado pela LC nº 920/2019, que é outro fundo."
+  ],
+  "finalidade": "Fundo penitenciário estadual instituído pela LC 68/1995 (título: 'Institui o Fundo Penitenciário Estadual - FUNPEN'). Segundo o plano da SEJUS, é usado sobretudo para operacionalizar desembolsos vinculados a recursos transferidos pelo Fundo Penitenciário Nacional (fundo a fundo, LC federal 79/1994). A finalidade precisa na lei não foi lida.",
+  "receitas": "Só confirmei o art. 2º, caput e inciso I: 'O FUNPEN será constituído das seguintes fontes de recurso: I - multas penitenciárias fixadas nas sentenças judiciais, nos termos do Código Penal Brasileiro e demais leis penais' (inciso I invalidado pelo STF). Os demais incisos não foram lidos; o plano da SEJUS diz que a lei prevê outras fontes e que, na prática, os recursos vêm principalmente de convênios com o Governo Federal.",
+  "gestao": "Não confirmado na lei. Documento da SEJUS (plano 2024-2027) indica que o fundo é recurso da SEJUS (Secretaria da Justiça). Não sei se a LC 68 prevê conselho gestor.",
+  "vinculacao": "Confirmado: LC 947/2020 permite reverter superávit ao Tesouro de forma desvinculada, exceto recursos vinculados por CF, lei federal ou convênios. Como os recursos do FUNPEN vêm em boa parte de transferências do Fundo Penitenciário Nacional e de convênios federais, esses valores são carimbados e protegidos. A multa penal deixou de poder ser destinada ao fundo estadual por lei estadual (ADI 2.935). Alterar fontes/destinação do FUNPEN: lei complementar (LC 68/1995 foi alterada por LC 947) e, no que for matéria penal, só a União; a regra federal é a LC 79/1994. Não encontrei previsão de extinção nas fontes abertas.",
+  "reversao": "permite",
+  "links": [
+   {
+    "rotulo": "LC nº 947/2020 (art. 4º: LC 68/1995, art. 5º)",
+    "url": "https://coronavirus.es.gov.br/Media/Coronavirus/Legislacao/LEI%20COMPLEMENTAR%20N%C2%BA%20947.pdf"
+   },
+   {
+    "rotulo": "Plano Estadual de Atenção às Mulheres Privadas de Liberdade 2024-2027 (SEJUS): descreve o FUNPEN, LC 68/1995 e Decreto 3.986-N/1996",
+    "url": "https://planejamento.es.gov.br/Media/estadopresente/Plano%20Estadual%20de%20Aten%C3%A7%C3%A3o%20%C3%A0s%20Mulheres%20Privadas%20de%20Liberdade%20e%20Egressas%20do%20Sistema%20Prisional%202024-2027%20(SEJUS).pdf"
+   },
+   {
+    "rotulo": "ADI 2.935/ES - resumo do Informativo STF 1.117 com o art. 2º da LC 68/1995 (CogniJUS; página de apoio)",
+    "url": "https://www.cognijus.com/blog/destinacao-dos-recursos-provenientes-das-penas-de-multa-ao-fundo-penitenciario-estadual-adi-2935es-supremo-tribunal-federal-stf"
+   }
+  ],
+  "confianca": "baixa",
+  "lacunas": "Não consegui abrir o texto da LC 68/1995 (ALES inacessível; sem cópia em outro site): finalidade, demais fontes de receita, administração, eventual conselho e regras de saldo originais não estão confirmados; só vi o art. 2º, caput e inciso I via citação do STF e a nova redação do art. 5º via LC 947. Não abri o Decreto 3.986-N/1996 nem o acórdão da ADI 2.935. Não confirmei se o fundo continua ativo com as fontes atuais além do que diz o plano da SEJUS (2024)."
+ },
+ {
+  "ug": "480901",
+  "nomeOficial": "Fundo para a Infância e a Adolescência",
+  "sigla": "FIA",
+  "leiCriacao": "Lei 4.653/1992",
+  "leiCriacaoCompleta": "Lei nº 4.653, de 03/07/1992 (D.O. 06/07/1992)",
+  "alteracoes": [
+   "Lei nº 10.954, de 12/12/2018 (DIO 13/12/2018): inclui §§ 1º a 5º no art. 3º (saldo não utilizado passa ao exercício seguinte a crédito do fundo, sem aplicar a LC 833/2016; patrimônio reverte ao Tesouro em caso de extinção; beneficiários; repasse a entidades privadas com aprovação do CRIAD; transferência a entidades credenciadas na SEDH).",
+   "Lei Complementar nº 830, de 05/07/2016 (art. 14): transfere o FIA da SEJUC para a SEDH (citada nas notas do texto e no plano de aplicação 2023; não aberta). A LC 582/2011 também é citada pela SEDH como alteradora (não aberta).",
+   "A LC 947/2020 (art. 27, VI) revogou a LC nº 833/2016 e não alterou a Lei 4.653; não há regra de superávit para o FIA nela."
+  ],
+  "finalidade": "Implementar a política de promoção, defesa e atendimento à infância e à adolescência (art. 2º), em cumprimento ao art. 88, IV, do ECA (Lei Federal 8.069/1990) e à Lei Estadual 4.521/1991 (que criou o conselho estadual).",
+  "receitas": "Art. 3º: (I) dotação orçamentária do Estado; (II) transferência da União; (III) doações de contribuições do Imposto de Renda ou de outros incentivos fiscais e financeiros; (IV) contribuições e doações de pessoas jurídicas de direito público e privado; (V) doações de organismos internacionais; (VI) multas decorrentes de penas pecuniárias por violações de direitos da criança e do adolescente; (VII) rendimentos de aplicações financeiras; (VIII) recursos da loteria estadual (Lei 4.440/1990) em favor dos menores carentes; (X) outras receitas (o inciso IX não aparece no texto publicado).",
+  "gestao": "Gerido pela SEDH (antes SEJUC) mediante diretrizes e Plano de Aplicação aprovados pelo CRIAD (Conselho Estadual dos Direitos da Criança e do Adolescente) (art. 6º); presta contas ao conselho semestralmente (art. 7º). O CRIAD é deliberativo: segundo o plano de aplicação da SEDH (2023), nenhum recurso do FIA pode ser aplicado sem deliberação do CRIAD (ECA, art. 260, § 2º).",
+  "vinculacao": "Recursos devem ir a programas e ações da política da infância e adolescência (art. 2º; § 3º do art. 3º: beneficiários são órgãos/entidades estaduais e municípios; § 4º: transferência a entidades privadas sem fins lucrativos só em ações exclusivas para crianças e adolescentes aprovadas pelo CRIAD). Saldo: o § 1º do art. 3º mantém o saldo não utilizado no próprio fundo (a menção à LC 833/2016 ficou sem efeito com sua revogação pela LC 947/2020, que não incluiu o FIA entre os fundos com reversão de superávit ao Tesouro). Extinção: patrimônio reverte ao Tesouro Estadual (§ 2º). Há carimbos federais: o ECA (art. 260) fixa que o conselho aplique necessariamente percentual para acolhimento familiar e primeira infância, e as doações dedutíveis do IR e transferências da União têm destinação vinculada à política. Alterar finalidade/fontes: lei estadual (foi mudada por Lei 10.954/2018); plano de aplicação: resolução do CRIAD; regulamento por decreto (a SEDH cita o Decreto 3.447-N/1992; também há Decreto 3.117-N/1992 na página).",
+  "reversao": "nao",
+  "links": [
+   {
+    "rotulo": "Lei nº 4.653/1992 consolidada (cópia no site da SEDH, com alterações da Lei 10.954/2018)",
+    "url": "https://sedh.es.gov.br/media/DOCUMENTOS%202019/Lei%204.653%20-1992%20-%20Lei%20de%20cria%C3%A7%C3%A3o%20do%20FIA%20(Alterada%20pela%20Lei%20n%C2%BA%2010.954-2018).pdf"
+   },
+   {
+    "rotulo": "Lei nº 10.954/2018 (DIO 13/12/2018, pág. 1)",
+    "url": "https://ioes.dio.es.gov.br/portal/edicoes/download/4282"
+   },
+   {
+    "rotulo": "SEDH - Plano de Ação e Aplicação do FIA 2023",
+    "url": "https://sedh.es.gov.br/media/Documentos2023/Plano%20de%20a%C3%A7%C3%A3o%20e%20aplica%C3%A7%C3%A3o%20do%20FIA%202023.pdf"
+   },
+   {
+    "rotulo": "SEDH - Fundos Estaduais",
+    "url": "https://sedh.es.gov.br/fundos"
+   }
+  ],
+  "confianca": "alta",
+  "lacunas": "Não abri a LC 830/2016 (art. 14), a LC 582/2011 nem os decretos regulamentadores (a SEDH cita Decreto 3.447-N e Decreto 3.117-N, ambos de 1992; o PDF do 3.117-N é imagem). O plano da SEDH 2023 dá a data da lei como 24/06/1992; o texto da lei e o DIO indicam 03/07/1992 (adotei esta). Não verifiquei execução recente."
+ },
+ {
+  "ug": "350903",
+  "nomeOficial": "Fundo Estadual para o Financiamento de Obras e Infraestrutura Estratégica para o Desenvolvimento do Estado do Espírito Santo",
+  "sigla": null,
+  "leiCriacao": "Lei 11.002/2019",
+  "leiCriacaoCompleta": "Lei nº 11.002, de 17/06/2019 (D.O. 18/06/2019)",
+  "alteracoes": [
+   "Lei Complementar nº 947, de 27/03/2020 (art. 22): inclui § 2º no art. 5º (superávit financeiro do balanço pode ser transferido, a crédito do Tesouro Estadual e de forma desvinculada, exceto recursos vinculados por CF, lei federal ou convênios, acordos, ajustes e operações de crédito).",
+   "Lei nº 11.125, de 06/04/2020 (art. 5º): não altera a Lei 11.002, mas autoriza usar recursos depositados no fundo, até R$ 100.000.000,00, para o aporte do Estado em fundo garantidor privado a ser criado pelo BANDES e para equalização de juros previstos nessa lei.",
+   "Não encontrei outra lei que altere a Lei 11.002."
+  ],
+  "finalidade": "Captar e aplicar recursos para dar suporte financeiro e auxiliar melhorias na infraestrutura estratégica do desenvolvimento, em obras do Estado, com natureza financeira e contábil e caráter complementar (arts. 1º e 2º). Vinculado à SETOP.",
+  "receitas": "Art. 3º: (I) recursos das parcelas retroativas do acordo ANP-Petrobras sobre o Parque das Baleias, de que trata a Lei Estadual 10.979/2019; (II) rendimentos de aplicações financeiras; (III) outras receitas que lhe sejam destinadas. Depósito no Banestes, em conta específica movimentada pela SETOP conforme deliberações do Conselho, por Resolução (art. 5º).",
+  "gestao": "Vinculado à SETOP e administrado por Conselho Gestor deliberativo (art. 4º): SEG (preside), SEP, SETOP (Secretaria-Executiva), SEDURB, SEFAZ, PGE, SECONT e Diretor-Geral do DER (ou órgão equivalente). Escrituração própria e prestação de contas ao TCE-ES (art. 6º). Nota: leis posteriores (LC 926/2019) reorganizaram a estrutura de transportes/obras (SEMOBI); não verifiquei se a vinculação à SETOP foi atualizada.",
+  "vinculacao": "Lei: recursos servem ao financiamento de obras e infraestrutura estratégica; recursos de operação de crédito não utilizados no ano permanecem na conta do Banestes vinculada ao fundo (§ 1º do art. 5º); recursos não utilizados passam ao exercício seguinte a crédito do fundo (§ 2º original, depois substituído pela regra de superávit da LC 947/2020, que permite reverter ao Tesouro desvinculado, exceto recursos vinculados por CF, lei federal, convênios e operações de crédito). Não há percentual mínimo na lei. A fonte principal é de natureza estadual (acordo ANP-Petrobras/royalties), sem transferência federal vinculada identificada. Uso fora da finalidade original já foi autorizado por lei ordinária (Lei 11.125/2020, até R$ 100 mi para aporte em garantia de crédito e equalização), o que mostra que a destinação se altera por lei estadual; o Conselho delibera por Resolução sobre a movimentação da conta. Sem previsão de extinção na lei.",
+  "reversao": "permite",
+  "links": [
+   {
+    "rotulo": "Lei nº 11.002/2019 (texto, cópia da ALES hospedada no FAOLEX)",
+    "url": "https://faolex.fao.org/docs/pdf/bra187714.pdf"
+   },
+   {
+    "rotulo": "LC nº 947/2020 (art. 22)",
+    "url": "https://coronavirus.es.gov.br/Media/Coronavirus/Legislacao/LEI%20COMPLEMENTAR%20N%C2%BA%20947.pdf"
+   },
+   {
+    "rotulo": "Lei nº 11.125/2020 (DIO 07/04/2020, pág. 1; arquivo rotulado 'LC 948' no site da SEJUS)",
+    "url": "https://sejus.es.gov.br/Media/Sejus/Legisla%C3%A7%C3%A3o/Leis/LEI%20COMPLEMENTAR%20N%C2%BA%20948.pdf"
+   }
+  ],
+  "confianca": "alta",
+  "lacunas": "Não consegui confirmar leis posteriores a 2020 que alterem ou usem o fundo, nem saldo/execução (pesquisa por 2021-2024 não retornou nada). Não confirmei a vinculação atual (SETOP x SEMOBI). Não verifiquei o regulamento (a lei mandava regulamentar em 90 dias)."
+ }
+]

@@ -1,0 +1,38 @@
+{
+ "data": "2025-12-31",
+ "fonte": "Relatório de Gestão Fiscal, 3º quadrimestre de 2025, Anexo 5 (SIGEFES/SEFAZ)",
+ "url": "https://sefaz.es.gov.br/media/Tesouro%20Estadual/RGF/rgf-3q-2025.pdf",
+ "linhas": [
+  {
+   "rotulo": "Recursos não vinculados (livres)",
+   "bruta": 2710109395.54,
+   "liquida": 1263569310.15
+  },
+  {
+   "rotulo": "Recursos vinculados, exceto previdência dos servidores",
+   "bruta": 6684327019.29,
+   "liquida": 5485707406.54
+  },
+  {
+   "rotulo": "   dos quais, vinculados a fundos (exceto educação, saúde, assistência e previdência)",
+   "bruta": 377508653.31,
+   "liquida": 338008038.69,
+   "destaque": true
+  },
+  {
+   "rotulo": "   dos quais, outras vinculações",
+   "bruta": 2209069066.53,
+   "liquida": 2104126246.9
+  },
+  {
+   "rotulo": "Recursos vinculados à previdência dos servidores (RPPS)",
+   "bruta": 326939267.77,
+   "liquida": 316567042.99
+  },
+  {
+   "rotulo": "Total",
+   "bruta": 9721375682.6,
+   "liquida": 7065843759.68
+  }
+ ]
+}

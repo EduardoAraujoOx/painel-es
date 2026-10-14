@@ -98,6 +98,18 @@ def main():
         ci = {k: i for i, k in enumerate(f["camposNovos"])}
         fm = {"novos": len(f["novos"]), "anual": sum(r[ci["anual"]] for r in f["novos"]), "alem": sum(r[ci["alem"]] for r in f["novos"]),
               "marco": "/".join(reversed(f["marco"].split("-")))}
+    fu = None
+    arq_fu = os.path.join(RAIZ, "data", "fundos", "index.json")
+    if os.path.exists(arq_fu):   # gerado por pipeline/fundos/montar.py
+        d = json.load(open(arq_fu))
+        ant = str(int(d["anoCorrente"]) - 1)
+        tot = lambda f, k=None: (f["anos"].get(ant) or {}).get("total", 0)   # noqa: E731
+        fu = {"n": len(d["fundos"]), "ant": ant, "pago": sum(tot(f) for f in d["fundos"]),
+              "livre": sum(((f["anos"].get(ant) or {}).get("fonte") or {}).get("livre", 0) for f in d["fundos"]),
+              "abast": [f for f in d["fundos"] if "abastecido" in f["sinais"]], "totAbast": sum(tot(f) for f in d["fundos"] if "abastecido" in f["sinais"]),
+              "caixa": (d.get("caixaRGF") or {}).get("linhas", [{}] * 3)[2].get("bruta", 0),
+              "est": sum(f["implicito"]["valor"] for f in d["fundos"] if f.get("implicito") and f["ug"] not in {x["ug"] for x in d.get("saldos", [])}),
+              "nest": sum(1 for f in d["fundos"] if f.get("implicito") and f["ug"] not in {x["ug"] for x in d.get("saldos", [])})}
     itens = [
         dict(id="execucao-contrato", area="Execução financeira", verificado=True,
              titulo="Execução financeira ligada a cada contrato (empenho, liquidação e pagamento)",
@@ -204,6 +216,27 @@ def main():
              decisao="Saber se há caixa para as obrigações herdadas e quais compromissos assumidos no fim do mandato precisam ser renegociados ou pagos primeiro.",
              solicitar="Demonstrativo da disponibilidade de caixa por fonte de recursos em 31/12/2026, relação de restos a pagar (processados e não processados) e cronograma de desembolso dos contratos celebrados desde 1º de maio de 2026.",
              destinatarios=["SEFAZ", "Tesouro Estadual"], valorAfetado=0.0, prioridadeFixa="alta", fonteEvidencia="Tela Fim de mandato (SIGA) e art. 42 da LRF"),
+        dict(id="saldo-fundos", area="Fundos", verificado=True,
+             titulo="Saldo e disponibilidade de caixa de cada fundo",
+             lacuna="Só o Fundo Soberano publica o próprio balanço. Dos demais fundos, os dados abertos mostram o que arrecadam e pagam, mas não o saldo, que é o que decide se há dinheiro parado a realocar.",
+             evidencia=(f"Os {fu['n']} fundos em análise pagaram {mi(fu['pago'])} em {fu['ant']}, dos quais {mi(fu['livre'])} com recurso do Tesouro sem vinculação. O RGF de dezembro de 2025 mostra {mi(fu['caixa'])} de caixa bruta vinculada a fundos (exceto educação, saúde, assistência e previdência), sem separar por fundo. Pelo rendimento das aplicações, o painel estima em ordem de {mi(fu['est'])} o saldo aplicado de {fu['nest']} fundos (estimativa que tende a subestimar), com destaque para o fundo de obras e infraestrutura estratégica." if fu else "Ver a tela Raio-x dos fundos."),
+             decisao="Identificar saldos parados em fundos cuja lei permita outro uso e decidir o que realocar, por lei ou decreto, para outras políticas.",
+             solicitar="Posição de caixa e superávit financeiro (ativo financeiro menos passivo financeiro) de cada fundo em 30/09/2026 e 31/12/2026, por fonte de recursos, com o valor já comprometido em empenhos, restos a pagar e contratos em vigor.",
+             destinatarios=["SEFAZ", "Tesouro Estadual", "Contadoria Geral"], valorAfetado=0.0, prioridadeFixa="alta", fonteEvidencia="Tela Raio-x dos fundos (SIGEFES) e RGF"),
+        dict(id="transferencias-fundos", area="Fundos", verificado=True,
+             titulo="Transferências financeiras do Tesouro aos fundos",
+             lacuna="A transferência financeira do Tesouro a um fundo não é receita orçamentária do fundo, e a base aberta de receitas não a mostra. Não se vê quanto cada fundo recebe do Tesouro nem por qual ato.",
+             evidencia=(f"{len(fu['abast'])} fundos arrecadam menos da metade do que pagam e dependem do caixa do Tesouro para o restante; juntos pagaram {mi(fu['totAbast'])} em {fu['ant']}." if fu and fu['abast'] else "Fundos que gastam mais do que arrecadam são abastecidos por transferência do Tesouro."),
+             decisao="Avaliar se o fundo é necessário como intermediário ou se a despesa pode correr direto pelo orçamento do órgão, o que devolve flexibilidade de remanejamento.",
+             solicitar="Relação das transferências financeiras do Tesouro a cada fundo em 2024, 2025 e 2026, com o ato ou a lei que as determinou.",
+             destinatarios=["SEFAZ", "Tesouro Estadual"], valorAfetado=0.0, prioridadeFixa="média", fonteEvidencia="Tela Raio-x dos fundos (receitas e despesas do SIGEFES)"),
+        dict(id="vinculacao-fundos", area="Fundos", verificado=False,
+             titulo="Parecer sobre a vinculação e a realocação de cada fundo",
+             lacuna="A lei de cada fundo define a finalidade, as fontes e quem pode alterá-las, mas não há levantamento consolidado de quais fundos admitem realocação do saldo e por qual instrumento.",
+             evidencia="A tela Raio-x dos fundos traz um resumo da lei de cada fundo, levantado em fontes oficiais e a confirmar, com o link para o texto.",
+             decisao="Saber quais fundos podem ter saldo ou receita realocados por decreto, quais exigem lei e quais não admitem mudança, antes de propor qualquer alteração.",
+             solicitar="Parecer, fundo a fundo, sobre a finalidade legal, a possibilidade de uso do superávit financeiro em outra política, o instrumento necessário (lei, decreto ou resolução do conselho) e as vedações constitucionais e federais aplicáveis.",
+             destinatarios=["PGE", "SEFAZ"], valorAfetado=0.0, prioridadeFixa="média", fonteEvidencia="Leis de criação dos fundos"),
         dict(id="lotacao", area="Pessoal", verificado=True,
              titulo="Lotação e estrutura organizacional do IASES e da SESP",
              lacuna="O código de lotação da base de vínculos não permite identificar a unidade em alguns órgãos, e o organograma oficial não os cobre por esse código.",
