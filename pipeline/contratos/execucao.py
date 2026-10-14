@@ -99,9 +99,11 @@ def ler_fatia(args):
         ano, aaaamm = c[0], f"{c[1][6:10]}-{c[1][3:5]}"
         emp, liq, pago = valor(c[2].encode()), valor(c[3].encode()), valor(c[4].encode())
         k = (c[i_ne], cnpj)
-        d = ne.setdefault(k, {"ug": c[i_ug], "org": c[i_org], "lic": c[i_lic], "el": c[i_elem], "a": {}})
+        d = ne.setdefault(k, {"lic": c[i_lic], "el": c[i_elem], "a": {}, "ugp": {}})
         t = d["a"].setdefault(ano, [0.0, 0.0, 0.0])
         t[0] += emp; t[1] += liq; t[2] += pago
+        u = d["ugp"].setdefault(c[i_ug], [0.0, c[i_org]])        # um empenho pode ter linhas de mais de uma unidade gestora
+        u[0] += emp + liq + pago
         m = mes.setdefault((cnpj, c[i_ug], aaaamm), [0.0, 0.0, 0.0])
         m[0] += emp; m[1] += liq; m[2] += pago
         mes.setdefault(("_ug", c[i_ug], c[i_ugn]), None)
@@ -117,6 +119,13 @@ def fatia(args):
         if r is not None:
             return r
     raise RuntimeError(f"fatia {args[1]}-{args[2]} falhou 4 vezes")
+
+
+def melhor_ug(v):
+    """Unidade gestora (e órgão) do empenho: a que mais movimentou valor nele; em empate, a de menor código. Escolha fixa, que
+    não depende da ordem em que as fatias do arquivo chegam (antes valia a primeira linha lida, e isso variava entre execuções)."""
+    ug, (_, org) = sorted(v["ugp"].items(), key=lambda kv: (-kv[1][0], kv[0]))[0]
+    return ug, org
 
 
 def cabecalho(url):
@@ -154,7 +163,10 @@ def main():
             for parte_ne, parte_mes, l, a, r in pool.imap_unordered(fatia, trabalhos):
                 lidas += l; aceitas += a; ruins += r
                 for k, v in parte_ne.items():
-                    d = ne.setdefault(k, {"ug": v["ug"], "org": v["org"], "lic": v["lic"], "el": v["el"], "a": {}})
+                    d = ne.setdefault(k, {"lic": v["lic"], "el": v["el"], "a": {}, "ugp": {}})
+                    for ug_, u in v["ugp"].items():
+                        x = d["ugp"].setdefault(ug_, [0.0, u[1]])
+                        x[0] += u[0]
                     for a_, t in v["a"].items():
                         x = d["a"].setdefault(a_, [0.0, 0.0, 0.0])
                         for j in range(3):
@@ -167,8 +179,8 @@ def main():
                     for j in range(3):
                         x[j] += v[j]
             destino = os.path.join(CACHE, f"exec_{ano}.json")
-            json.dump({"ano": ano, "ne": [[k[0], k[1], v["ug"], v["org"], v["lic"], v["el"], v["a"]] for k, v in ne.items()],
-                       "mes": [[k[0], k[1], k[2], v] for k, v in mes.items()], "ugs": ugs}, open(destino, "w"), ensure_ascii=False, separators=(",", ":"))
+            json.dump({"ano": ano, "ne": [[k[0], k[1], melhor_ug(v)[0], melhor_ug(v)[1], v["lic"], v["el"], v["a"]] for k, v in sorted(ne.items())],
+                       "mes": [[k[0], k[1], k[2], v] for k, v in sorted(mes.items())], "ugs": dict(sorted(ugs.items()))}, open(destino, "w"), ensure_ascii=False, separators=(",", ":"))
             print(f"{ano}: {lidas} linhas lidas, {aceitas} de fornecedores dos contratos, {ruins} descartadas; {len(ne)} empenhos → {destino}", flush=True)
 
 
