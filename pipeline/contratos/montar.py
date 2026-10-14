@@ -463,17 +463,31 @@ def main():
     # unidade gestora do SIGEFES -> órgão do SIGA: pela maioria dos empenhos vinculados a contratos; na falta, pelo nome
     votos = collections.defaultdict(collections.Counter)
     for c in recs:
-        for k in c["nes"]:
+        for k in sorted(c["nes"]):                      # ordem fixa: o resultado não pode depender da ordem de iteração de um conjunto
             if k in EXEC["ne_ug"]:
                 votos[EXEC["ne_ug"][k]][c["org"]] += 1
-    ug2siga = {ug: v.most_common(1)[0][0] for ug, v in votos.items()}
+    nome_do_org = {c["org"]: c["org_nome"] for c in recs}
     nome2siga = {R.norm_nome(c["org_nome"]): c["org"] for c in recs}
+    ug2siga, empates = {}, 0
+    for ug in sorted(votos):
+        mais = votos[ug].most_common()
+        topo = sorted(o for o, v in mais if v == mais[0][1])
+        if len(topo) == 1:
+            ug2siga[ug] = topo[0]
+            continue
+        # empate de votos: vale o órgão cujo nome é o da própria unidade gestora; sem isso, a UG fica sem órgão (não se escolhe ao acaso)
+        alvo = R.norm_nome(EXEC["ugs"].get(ug, ""))
+        iguais = [o for o in topo if R.norm_nome(nome_do_org[o]) == alvo]
+        if len(iguais) == 1:
+            ug2siga[ug] = iguais[0]
+        else:
+            empates += 1
     por_nome = 0
     for ug, nome in EXEC["ugs"].items():
         if ug not in ug2siga and R.norm_nome(nome) in nome2siga:
             ug2siga[ug] = nome2siga[R.norm_nome(nome)]
             por_nome += 1
-    print(f"UGs mapeadas ao órgão do SIGA: {len(ug2siga)} (por votos de empenho: {len(votos)}; por nome: {por_nome}) de {len(EXEC['ugs'])}", flush=True)
+    print(f"UGs mapeadas ao órgão do SIGA: {len(ug2siga)} (por votos de empenho: {len(votos) - empates}; empates sem desempate pelo nome, deixadas sem órgão: {empates}; por nome: {por_nome}) de {len(EXEC['ugs'])}", flush=True)
     pago_of = collections.defaultdict(lambda: collections.defaultdict(float))      # (órgão SIGA, CNPJ) -> ano -> pago
     pago_f = collections.defaultdict(lambda: collections.defaultdict(float))       # CNPJ -> ano -> pago (todo o Estado)
     for cnpj, ug, aaaamm, (emp_, liq_, pago_) in EXEC["mes"]:
