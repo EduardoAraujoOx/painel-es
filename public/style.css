@@ -561,9 +561,10 @@ td small { display: block; }
 .tabela-fundos .fundo-linha { cursor: pointer; }
 .tabela-fundos .fundo-linha:hover, .tabela-fundos .fundo-linha:focus-visible { background: var(--grade); outline: none; }
 .tabela-fundos td.objeto { min-width: 260px; }
-.tabela-fundos td small, .tabela-pagamentos td small { display: block; color: var(--mudo); font-size: 12px; }
+.tabela-fundos td small, .tabela-pagamentos td small, .fundo-nums small { display: block; color: var(--mudo); font-size: 12px; }
 .mudo { color: var(--mudo); }
-.estimado { font-style: italic; color: var(--tinta-2); }
+.negativo { color: var(--erro); }
+td.negativo, .tabela-fundos td .negativo { font-weight: 600; }
 .fm-nota { margin: 10px 0 0; font-size: 12px; color: var(--mudo); line-height: 1.5; max-width: 90ch; }
 .lista-simples { margin: 4px 0 0; padding-left: 18px; font-size: 14px; line-height: 1.5; max-width: 90ch; }
 .links-lei { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }

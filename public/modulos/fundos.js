@@ -19,8 +19,7 @@
   const kpi = (rotulo, valor, nota, tom) => el('div', { class: 'kpi' + (tom ? ' ' + tom : '') }, el('div', { class: 'rotulo' }, rotulo), el('div', { class: 'valor' }, valor), nota ? el('div', { class: 'nota' }, nota) : null);
   const nomeDe = (f) => (f.nomeOficial ? f.nomeOficial + (f.sigla ? ` (${f.sigla})` : '') : titulo(f.nome));
   const mesRef = () => rotuloMes(dados.ate, true);
-  const saldoDe = (ug) => (dados.saldos || []).find((s) => s.ug === ug);
-  const implicitoDe = (f) => (!saldoDe(f.ug) && f.implicito ? f.implicito : null);
+  const mesSaldo = () => (dados.saldoAte ? rotuloMes(dados.saldoAte, true) : '');
 
   // ---------- margem ----------
   const ROTULO_LEITURA = { mais: 'Maior margem aparente', verificar: 'A verificar na lei', menos: 'Menor margem aparente' };
@@ -74,10 +73,9 @@
     return dados.fundos.filter((x) => !f || (f === 'reverte' ? x.reversao === 'permite' : leitura(x) === f));
   }
   const textoSaldo = (f) => {
-    const s = saldoDe(f.ug), i = implicitoDe(f);
-    if (s) return brlCompacto(s.valor);
-    if (i) return el('span', { class: 'estimado', title: `Estimativa em ordem de grandeza: rendimento de aplicações de ${i.ano} (${brlCompacto(i.rend)}) dividido pela Selic média do ano (${i.taxa.toLocaleString('pt-BR')}% a.a.). Tende a subestimar.` }, '≈ ' + brlCompacto(i.valor));
-    return el('span', { class: 'mudo' }, 'não público');
+    const sd = f.saldo;
+    if (!sd) return el('span', { class: 'mudo' }, '—');
+    return el('span', { class: sd.disponivel < 0 ? 'negativo' : '' }, brlCompacto(sd.disponivel), el('small', {}, 'caixa ' + brlCompacto(sd.caixa)));
   };
 
   function cartaoCaixa() {
@@ -95,13 +93,13 @@
     const ult = dados.anoCorrente, ant = String(+ult - 1);
     const pagoRef = soma(dados.fundos, (f) => (f.anos[ant] ? f.anos[ant].total : 0));
     const livre = soma(dados.fundos, (f) => (f.anos[ant] ? f.anos[ant].fonte.livre || 0 : 0));
-    const saldos = dados.saldos || [];
-    const estimados = dados.fundos.filter((f) => implicitoDe(f));
+    const comSaldo = dados.fundos.filter((f) => f.saldo);
+    const soberano = dados.fundos.find((f) => f.ug === '220902');
     const kp = el('div', { class: 'kpis' },
       kpi('Fundos em análise', nInt.format(dados.fundos.length), `${nInt.format(dados.fora.length)} ficaram fora, com o motivo`),
       kpi(`Pago em ${ant}`, brlCompacto(pagoRef), 'pago mais restos a pagar pagos'),
       kpi('Vindo do Tesouro, sem vinculação', brlCompacto(livre), `${pct(livre / pagoRef)} do pago em ${ant}`, 'alerta'),
-      kpi('Saldo conhecido', saldos.length ? brlCompacto(soma(saldos, (s) => s.valor)) : '—', `${saldos.map((s) => s.sigla).join(', ')}; nos outros ${nInt.format(estimados.length)} com rendimento, estimado em ≈ ${brlCompacto(soma(estimados, (f) => f.implicito.valor))}`));
+      kpi(`Saldo disponível em ${mesSaldo()}`, brlCompacto(soma(comSaldo, (f) => f.saldo.disponivel)), `caixa de ${brlCompacto(soma(comSaldo, (f) => f.saldo.caixa))}${soberano && soberano.saldo ? `; ${brlCompacto(soberano.saldo.disponivel)} estão no Fundo Soberano` : ''}`));
     const linhas = lista.map((f) => {
       const a = f.anos[f.ref] || {}, b = f.anos[ult] || {};
       return el('tr', { class: 'fundo-linha', tabindex: '0', role: 'link', onclick: () => ctx.irPara(f.ug), onkeydown: (ev) => { if (ev.key === 'Enter') ctx.irPara(f.ug); } },
@@ -119,7 +117,7 @@
         el('span', { class: 'fundo-nums' }, el('span', {}, 'Saldo ', el('b', {}, textoSaldo(f))), seloLeitura(f)));
     });
     const tabela = !lista.length ? el('p', { class: 'vazio' }, 'Nenhum fundo neste filtro.') : PF.telaEstreita() ? el('div', { class: 'fundos-lista' }, cartoes)
-      : el('div', { class: 'rolagem' }, el('table', { class: 'tabela-fundos' }, el('thead', {}, el('tr', {}, [`Fundo`, `Pago em ${ant}`, `Pago em ${ult} até ${mesRef()}`, 'Saldo (≈ estimado)', 'Margem aparente'].map((t, n) => el('th', { class: n === 1 || n === 2 || n === 3 ? 'num' : '' }, t)))), el('tbody', {}, linhas)));
+      : el('div', { class: 'rolagem' }, el('table', { class: 'tabela-fundos' }, el('thead', {}, el('tr', {}, [`Fundo`, `Pago em ${ant}`, `Pago em ${ult} até ${mesRef()}`, `Saldo disponível em ${mesSaldo()}`, 'Margem aparente'].map((t, n) => el('th', { class: n === 1 || n === 2 || n === 3 ? 'num' : '' }, t)))), el('tbody', {}, linhas)));
     const fora = el('details', { class: 'fm-detalhes' }, el('summary', {}, `O que ficou fora da análise (${nInt.format(dados.fora.length)} fundos) e por quê`),
       Object.keys(dados.rotuloFora).map((g) => {
         const fs = dados.fora.filter((x) => x.grupo === g);
@@ -139,11 +137,11 @@
     const ult = dados.anoCorrente, ant = String(+ult - 1);
     const filtros = [`Fundos públicos do Estado do ES: pago (mais restos a pagar pagos) em ${ant} e em ${ult} até ${mesRef()}, saldo e margem aparente`,
       est.filtro ? 'Filtro: ' + FILTROS.find((x) => x[0] === est.filtro)[1] : '',
-      'Margem aparente é leitura automática (origem do dinheiro e regra do saldo na lei); não substitui a leitura da lei. Saldo com ≈ é estimado pelos rendimentos. Ficaram fora fundos previdenciários, o da Saúde e os de outros Poderes.'].filter(Boolean);
+      'Margem aparente é leitura automática (origem do dinheiro e regra do saldo na lei); não substitui a leitura da lei. Saldo: dado declaratório do Estado ao TCE-ES. Ficaram fora fundos previdenciários, o da Saúde e os de outros Poderes.'].filter(Boolean);
     return { titulo: 'Fundos públicos: pagamentos, saldo e margem', filtros, arquivo: `fundos-${dados.ate}`,
-      colunas: [{ t: 'Fundo', w: 5 }, { t: 'Lei', w: 1.8 }, { t: `Pago ${ant}`, w: 1.3, n: 1 }, { t: `Pago ${ult}`, w: 1.3, n: 1 }, { t: 'Saldo', w: 1.5, n: 1 }, { t: 'Margem aparente', w: 2.2 }],
-      linhas: lista.map((f) => { const a = f.anos[f.ref] || {}, b = f.anos[ult] || {}, s = saldoDe(f.ug), i = implicitoDe(f);
-        return [nomeDe(f), f.leiCriacao || '-', a.total ? brlCompacto(a.total) : '-', b.total ? brlCompacto(b.total) : '-', s ? brlCompacto(s.valor) : i ? 'aprox. ' + brlCompacto(i.valor) + ' (est.)' : 'nao publico', ROTULO_LEITURA[leitura(f)]]; }),
+      colunas: [{ t: 'Fundo', w: 5 }, { t: 'Lei', w: 1.8 }, { t: `Pago ${ant}`, w: 1.3, n: 1 }, { t: `Pago ${ult}`, w: 1.3, n: 1 }, { t: `Saldo disponivel ${mesSaldo()}`, w: 2.6, n: 1 }, { t: 'Margem aparente', w: 2.2 }],
+      linhas: lista.map((f) => { const a = f.anos[f.ref] || {}, b = f.anos[ult] || {};
+        return [nomeDe(f), f.leiCriacao || '-', a.total ? brlCompacto(a.total) : '-', b.total ? brlCompacto(b.total) : '-', f.saldo ? `${brlCompacto(f.saldo.disponivel)} (caixa ${brlCompacto(f.saldo.caixa)})` : '-', ROTULO_LEITURA[leitura(f)]]; }),
       texto: lista.slice(0, 10).map((f, k) => `${k + 1}. ${nomeDe(f)} - ${brlCompacto((f.anos[f.ref] || {}).total || 0)} em ${f.ref}`).concat(lista.length > 10 ? [`... e mais ${lista.length - 10}. O PDF traz a lista completa.`] : []) };
   }
 
@@ -185,24 +183,21 @@
   }
 
   function cartaoSaldo(f, d) {
-    const s = saldoDe(f.ug), i = implicitoDe(f);
-    const ant = String(+dados.anoCorrente - 1), ra = (d.anos[ant] || {}).rec;
-    const fluxo = ra ? `Em ${ant}, o fundo arrecadou ${brlCompacto(ra.arrec)} em receita própria e pagou ${brlCompacto(d.anos[ant].total)}. ` : '';
-    if (s) {
-      return el('div', { class: 'cartao' }, el('h2', {}, 'Saldo'), el('p', { class: 'sub' }, `${s.rotulo}, posição em ${dataBR(s.data)}. ${s.fonte}`),
-        el('div', { class: 'kpis' }, kpi('Superávit financeiro', brlCompacto(s.valor), 'ativo financeiro menos passivo financeiro'), ...s.detalhes.map((x) => kpi(x[0], brlCompacto(x[1]), x[2] || ''))),
-        el('p', { class: 'fm-nota' }, fluxo, el('a', { href: s.url, target: '_blank', rel: 'noopener' }, 'Abrir as demonstrações contábeis'), s.nota ? ' · ' + s.nota : ''));
-    }
-    if (i) {
-      const v = (dados.validacaoImplicito || [])[0];
-      return el('div', { class: 'cartao' }, el('h2', {}, 'Saldo'), el('p', { class: 'sub' }, 'O saldo deste fundo não é publicado nos dados abertos. Os rendimentos de aplicações financeiras que ele arrecada dão uma pista do tamanho do dinheiro aplicado.'),
-        el('div', { class: 'kpis' }, kpi(`Rendimentos de aplicações em ${i.ano}`, brlCompacto(i.rend), 'receita patrimonial, valores mobiliários'),
-          kpi('Saldo aplicado estimado', '≈ ' + brlCompacto(i.valor), `rendimento dividido pela Selic média de ${i.ano} (${i.taxa.toLocaleString('pt-BR')}% a.a.)`, 'alerta')),
-        el('p', { class: 'fm-nota' }, fluxo, 'É ordem de grandeza, não o saldo: supõe que todo o dinheiro rendeu a Selic o ano inteiro. ',
-          v ? `No Fundo Soberano, o único com saldo conhecido, a mesma conta deu ${pct(v.razao)} do saldo real (${brlCompacto(v.estimado)} contra ${brlCompacto(v.real)} em ${dataBR(v.data)}), então tende a subestimar. ` : '', 'O saldo e a disponibilidade de caixa por fundo estão em Informações a solicitar.'));
-    }
-    return el('div', { class: 'cartao fm-fora' }, el('h3', {}, 'Saldo'),
-      el('p', {}, fluxo + 'O saldo deste fundo não é publicado nos dados abertos, e o rendimento das aplicações que ele arrecada é pequeno demais para estimá-lo. É o dado que decide se há dinheiro parado para realocar, e está em Informações a solicitar.'));
+    const sd = f.saldo;
+    if (!sd) return el('div', { class: 'cartao fm-fora' }, el('h3', {}, 'Saldo'), el('p', {}, 'Não há saldo deste fundo nos dados do TCE-ES. O pedido do saldo por fundo está em Informações a solicitar.'));
+    const ser = sd.serie, primeiro = ser[0], ultimo = ser[ser.length - 1];
+    const comprometido = sd.empenhos + sd.obrigacoes;
+    const bal = (dados.balancos || []).find((x) => x.ug === f.ug);
+    const linhas = ser.map((p) => el('tr', {}, el('td', {}, rotuloMes(p.ym, true)), el('td', { class: 'num' }, brlCompacto(p.caixa)), el('td', { class: 'num' }, brlCompacto(p.empenhos + p.obrigacoes)), el('td', { class: 'num' + (p.disponivel < 0 ? ' negativo' : '') }, brlCompacto(p.disponivel))));
+    const var_ = ultimo.disponivel - primeiro.disponivel;
+    const ano = String(+dados.anoCorrente - 1), pago = d.anos[ano] ? d.anos[ano].total : 0;
+    return el('div', { class: 'cartao' }, el('h2', {}, 'Saldo'),
+      el('p', { class: 'sub' }, `Posição em ${mesSaldo()}, pelo balancete que o Estado remete ao TCE-ES (dado declaratório). O saldo disponível é o caixa depois de descontados os compromissos já assumidos (empenhos a liquidar e obrigações a pagar); pode ser negativo, quando os compromissos passam do caixa.`),
+      el('div', { class: 'kpis' }, kpi('Saldo disponível', brlCompacto(sd.disponivel), 'caixa menos compromissos', sd.disponivel < 0 ? 'alerta' : ''), kpi('Caixa', brlCompacto(sd.caixa), 'caixa e equivalentes de caixa'), kpi('Já comprometido', brlCompacto(comprometido), 'empenhos a liquidar e obrigações a pagar')),
+      ser.length > 1 ? el('div', { class: 'rolagem' }, el('table', {}, el('thead', {}, el('tr', {}, ['Posição', 'Caixa', 'Comprometido', 'Saldo disponível'].map((t, n) => el('th', { class: n ? 'num' : '' }, t)))), el('tbody', {}, linhas))) : null,
+      el('p', { class: 'fm-nota' }, ser.length > 1 ? `De ${rotuloMes(primeiro.ym, true)} a ${rotuloMes(ultimo.ym, true)}, o saldo disponível ${var_ < 0 ? 'caiu' : 'subiu'} ${brlCompacto(Math.abs(var_))}; em ${ano}, o fundo pagou ${brlCompacto(pago)} segundo a execução. A diferença vem da arrecadação e de transferências financeiras com o Tesouro, que a execução aberta não detalha. ` : '',
+        bal ? (bal.confere ? `Conferência: o dado do TCE-ES para ${dataBR(bal.data)} coincide ao centavo com o superávit financeiro do balanço publicado pelo próprio fundo. ` : '') + 'Para o Fundo Soberano, o saldo disponível inclui aplicações de longo prazo, por isso supera o caixa. ' : '',
+        'O saldo por fonte de recursos (parte livre e parte vinculada) não é público e está em Informações a solicitar.'));
   }
 
   function cartaoLei(f, d) {
@@ -226,25 +221,25 @@
 
   function renderFundo(c, f, d) {
     const ult = dados.anoCorrente, ant = String(+ult - 1);
-    const refA = d.anos[ant], curA = d.anos[ult], s = saldoDe(f.ug), i = implicitoDe(f);
+    const refA = d.anos[ant], curA = d.anos[ult], sd = f.saldo;
     const cab = el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, nomeDe(f)), el('p', {}, [f.leiCriacao, 'unidade gestora ' + f.ug].filter(Boolean).join(' · '))), seloLeitura(f)),
       el('div', { class: 'kpis kpis-fundo' }, kpi(`Pago em ${ant}`, refA ? brlCompacto(refA.total) : '—', 'pago mais restos a pagar pagos'), kpi(`Pago em ${ult} até ${mesRef()}`, curA ? brlCompacto(curA.total) : '—', ''),
-        kpi('Saldo', s ? brlCompacto(s.valor) : i ? '≈ ' + brlCompacto(i.valor) : 'não público', s ? 'superávit financeiro em ' + dataBR(s.data) : i ? 'estimado pelos rendimentos' : 'pedido em Informações a solicitar', s ? '' : 'alerta')));
+        kpi(`Saldo disponível em ${mesSaldo()}`, sd ? brlCompacto(sd.disponivel) : '—', sd ? `caixa de ${brlCompacto(sd.caixa)}` : '', sd && sd.disponivel < 0 ? 'alerta' : '')));
     c.replaceChildren(trilha(nomeDe(f)), cab, cartaoPagamentos(f, d), cartaoSaldo(f, d), cartaoLei(f, d),
       PF.barraCompartilhar(() => compartilharFundo(f, d)), el('p', { class: 'fm-nota' }, `Fonte: ${dados.fonteDados}. Valores até ${mesRef()}.`));
   }
 
   function compartilharFundo(f, d) {
-    const ult = dados.anoCorrente, ant = String(+ult - 1), a = d.anos[est.ano] || {}, cad = d.cadastro || {}, s = saldoDe(f.ug), i = implicitoDe(f);
+    const ult = dados.anoCorrente, ant = String(+ult - 1), a = d.anos[est.ano] || {}, cad = d.cadastro || {}, sd = f.saldo;
     const { itens, extras } = linhasPagamento(a, est.visao);
     const linhas = [];
     const sec = (nome, lista) => lista.forEach(([it, v], k) => linhas.push([k ? '' : nome, it, v]));
     sec('Visao geral', [[`Pago em ${ant}`, d.anos[ant] ? brlCompacto(d.anos[ant].total) : '-'], [`Pago em ${ult} ate ${mesRef()}`, d.anos[ult] ? brlCompacto(d.anos[ult].total) : '-'],
-      ['Saldo', s ? `${brlCompacto(s.valor)} em ${dataBR(s.data)}` : i ? `aprox. ${brlCompacto(i.valor)} (estimado pelos rendimentos; o saldo nao e publico)` : 'nao publicado (pedir ao Estado)'], ['Margem aparente', ROTULO_LEITURA[leitura(f)]]]);
+      ['Saldo disponivel (' + mesSaldo() + ')', sd ? `${brlCompacto(sd.disponivel)}; caixa ${brlCompacto(sd.caixa)}; comprometido ${brlCompacto(sd.empenhos + sd.obrigacoes)} (balancete ao TCE-ES, declaratorio)` : 'sem dado'], ['Margem aparente', ROTULO_LEITURA[leitura(f)]]]);
     sec(`${est.visao === 'fav' ? 'Quem recebeu' : 'O que financiou'} em ${est.ano}`, [...itens.slice(0, 40).map((x) => [x.nome, `${brlCompacto(x.v)} (${pct(x.v / (a.total || 1), 1)})`]), ...extras.map((x) => [x.nome, brlCompacto(x.v)])]);
     if (cad.leiCriacao) sec('A lei', [['Criacao', cad.leiCriacaoCompleta || cad.leiCriacao], ['Finalidade', resumir(cad.finalidade, 400)[0]], ['Financiamento', resumir(cad.receitas, 400)[0]], ['Margem do gasto', frasesMargem(f).join(' ')]]);
     return { titulo: `Fundo: ${nomeDe(f)}`, paisagem: false, arquivo: `fundo-${f.ug}-${dados.ate}`,
-      filtros: [`${nomeDe(f)} (unidade gestora ${f.ug}); valores em pago mais restos a pagar pagos, ate ${mesRef()}`, 'Margem aparente e saldo estimado sao leituras automaticas; nao substituem a leitura da lei nem o saldo real.'],
+      filtros: [`${nomeDe(f)} (unidade gestora ${f.ug}); valores em pago mais restos a pagar pagos, ate ${mesRef()}`, 'A margem aparente e uma leitura automatica; nao substitui a leitura da lei. O saldo e declaratorio (balancete remetido ao TCE-ES).'],
       colunas: [{ t: 'Secao', w: 2 }, { t: 'Item', w: 5 }, { t: 'Valor', w: 5 }], linhas,
       texto: [`${nomeDe(f)}: pago ${brlCompacto((d.anos[ant] || {}).total || 0)} em ${ant}. ${ROTULO_LEITURA[leitura(f)]}.`, 'O PDF traz para onde foram os pagamentos, o saldo e o resumo da lei.'] };
   }

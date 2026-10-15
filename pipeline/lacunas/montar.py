@@ -103,13 +103,12 @@ def main():
     if os.path.exists(arq_fu):   # gerado por pipeline/fundos/montar.py
         d = json.load(open(arq_fu))
         ant = str(int(d["anoCorrente"]) - 1)
-        tot = lambda f, k=None: (f["anos"].get(ant) or {}).get("total", 0)   # noqa: E731
+        tot = lambda f: (f["anos"].get(ant) or {}).get("total", 0)   # noqa: E731
+        cs = [f["saldo"] for f in d["fundos"] if f.get("saldo")]
         fu = {"n": len(d["fundos"]), "ant": ant, "pago": sum(tot(f) for f in d["fundos"]),
               "livre": sum(((f["anos"].get(ant) or {}).get("fonte") or {}).get("livre", 0) for f in d["fundos"]),
               "abast": [f for f in d["fundos"] if "abastecido" in f["sinais"]], "totAbast": sum(tot(f) for f in d["fundos"] if "abastecido" in f["sinais"]),
-              "caixa": (d.get("caixaRGF") or {}).get("linhas", [{}] * 3)[2].get("bruta", 0),
-              "est": sum(f["implicito"]["valor"] for f in d["fundos"] if f.get("implicito") and f["ug"] not in {x["ug"] for x in d.get("saldos", [])}),
-              "nest": sum(1 for f in d["fundos"] if f.get("implicito") and f["ug"] not in {x["ug"] for x in d.get("saldos", [])})}
+              "disp": sum(x["disponivel"] for x in cs), "caixa": sum(x["caixa"] for x in cs), "ate": "/".join(reversed((d.get("saldoAte") or "").split("-")))}
     itens = [
         dict(id="execucao-contrato", area="Execução financeira", verificado=True,
              titulo="Execução financeira ligada a cada contrato (empenho, liquidação e pagamento)",
@@ -217,12 +216,12 @@ def main():
              solicitar="Demonstrativo da disponibilidade de caixa por fonte de recursos em 31/12/2026, relação de restos a pagar (processados e não processados) e cronograma de desembolso dos contratos celebrados desde 1º de maio de 2026.",
              destinatarios=["SEFAZ", "Tesouro Estadual"], valorAfetado=0.0, prioridadeFixa="alta", fonteEvidencia="Tela Fim de mandato (SIGA) e art. 42 da LRF"),
         dict(id="saldo-fundos", area="Fundos", verificado=True,
-             titulo="Saldo e disponibilidade de caixa de cada fundo",
-             lacuna="Só o Fundo Soberano publica o próprio balanço. Dos demais fundos, os dados abertos mostram o que arrecadam e pagam, mas não o saldo, que é o que decide se há dinheiro parado a realocar.",
-             evidencia=(f"Os {fu['n']} fundos em análise pagaram {mi(fu['pago'])} em {fu['ant']}, dos quais {mi(fu['livre'])} com recurso do Tesouro sem vinculação. O RGF de dezembro de 2025 mostra {mi(fu['caixa'])} de caixa bruta vinculada a fundos (exceto educação, saúde, assistência e previdência), sem separar por fundo. Pelo rendimento das aplicações, o painel estima em ordem de {mi(fu['est'])} o saldo aplicado de {fu['nest']} fundos (estimativa que tende a subestimar), com destaque para o fundo de obras e infraestrutura estratégica." if fu else "Ver a tela Raio-x dos fundos."),
-             decisao="Identificar saldos parados em fundos cuja lei permita outro uso e decidir o que realocar, por lei ou decreto, para outras políticas.",
-             solicitar="Posição de caixa e superávit financeiro (ativo financeiro menos passivo financeiro) de cada fundo em 30/09/2026 e 31/12/2026, por fonte de recursos, com o valor já comprometido em empenhos, restos a pagar e contratos em vigor.",
-             destinatarios=["SEFAZ", "Tesouro Estadual", "Contadoria Geral"], valorAfetado=0.0, prioridadeFixa="alta", fonteEvidencia="Tela Raio-x dos fundos (SIGEFES) e RGF"),
+             titulo="Saldo de cada fundo por fonte de recursos",
+             lacuna="O saldo total de cada fundo está nos dados que o Estado remete ao TCE-ES (dado declaratório). O que decide se o dinheiro pode ser realocado é a parte livre e a parte vinculada do saldo, por fonte de recursos, que não é pública.",
+             evidencia=(f"Em {fu['ate']}, os {fu['n']} fundos em análise somavam {mi(fu['disp'])} de saldo disponível (caixa de {mi(fu['caixa'])}), pelo balancete ao TCE-ES. Esse total não separa recursos vinculados por Constituição, lei federal, convênio ou operação de crédito dos demais." if fu else "Ver a tela Fundos."),
+             decisao="Saber quanto do saldo de cada fundo é livre para outro uso e quanto é vinculado, e decidir o que realocar, por lei ou decreto, para outras políticas.",
+             solicitar="Saldo de cada fundo por fonte de recursos (código SIGEFES) em 30/09/2026 e em 31/12/2026, com a disponibilidade por destinação, os empenhos a liquidar e os restos a pagar, e a posição dos recursos vinculados por convênio e operação de crédito.",
+             destinatarios=["SEFAZ", "Tesouro Estadual", "Contadoria Geral"], valorAfetado=0.0, prioridadeFixa="alta", fonteEvidencia="Tela Fundos (balancete ao TCE-ES) e RGF"),
         dict(id="transferencias-fundos", area="Fundos", verificado=True,
              titulo="Transferências financeiras do Tesouro aos fundos",
              lacuna="A transferência financeira do Tesouro a um fundo não é receita orçamentária do fundo, e a base aberta de receitas não a mostra. Não se vê quanto cada fundo recebe do Tesouro nem por qual ato.",
