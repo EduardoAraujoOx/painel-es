@@ -604,5 +604,6 @@ dialog.ficha::backdrop { background: rgba(0, 0, 0, .55); }
 .ficha-tabela tr.ficha-item td:first-child { padding-left: 18px; color: var(--tinta-2); }
 .ficha-tabela tr.cargo td { color: var(--tinta); font-weight: 600; background: color-mix(in srgb, var(--acento) 12%, transparent); }
 .ficha-tabela tr.ficha-total td { font-weight: 700; border-top: 2px solid var(--eixo); }
+.ficha-tabela tr.ficha-efeito td { color: var(--mudo); font-style: italic; font-size: 12px; }
 tr.clicavel { cursor: pointer; }
 tr.clicavel.marcada td { background: color-mix(in srgb, var(--acento) 14%, transparent); font-weight: 600; }

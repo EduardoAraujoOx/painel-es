@@ -41,7 +41,8 @@
   function analisar(o) {
     const rub = (o.rub || []).map(([r, v, c]) => ({ r, v, c: !!c }));
     const vant = rub.filter((x) => x.v > 0), desc = rub.filter((x) => x.v < 0);
-    const grupos = GRUPOS.map((g) => ({ g, itens: vant.filter((x) => grupoDe(x.r, x.c) === g) })).filter((x) => x.itens.length);
+    const ordem = [...GRUPOS.filter((g) => g !== GRUPOS[2]), GRUPOS[2]];                    // desempenho e produtividade nas últimas linhas das vantagens
+    const grupos = ordem.map((g) => ({ g, itens: vant.filter((x) => grupoDe(x.r, x.c) === g) })).filter((x) => x.itens.length);
     const bruto = soma(vant, (x) => x.v), descontos = soma(desc, (x) => -x.v);
     const corrente = soma(vant.filter((x) => !NAO_CORRENTE.test(x.r)), (x) => x.v);        // sem 13º, férias, rescisão e resíduos
     const cargo = soma(rub.filter((x) => x.c), (x) => x.v);
@@ -76,7 +77,7 @@
   }
 
   // ---------- interface ----------
-  function tabelaGrupos(a) {
+  function tabelaGrupos(a, pags) {
     const linhas = [];
     for (const { g, itens } of a.grupos) {
       linhas.push(el('tr', { class: 'ficha-grupo' + (g === GRUPOS[0] ? ' cargo' : '') }, el('td', {}, g), el('td', { class: 'num' }, brl(soma(itens, (x) => x.v)))));
@@ -88,27 +89,13 @@
       for (const x of a.desc) linhas.push(el('tr', { class: 'ficha-item' }, el('td', {}, rotuloRubrica(x.r)), el('td', { class: 'num' }, brl(x.v))));
     }
     linhas.push(el('tr', { class: 'ficha-total' }, el('td', {}, 'Líquido do mês'), el('td', { class: 'num' }, brl(a.liquido))));
+    if (pags.length) {
+      linhas.push(el('tr', { class: 'ficha-grupo' }, el('td', {}, 'Pagos por fundo, fora da folha'), el('td', { class: 'num' }, brl(soma(pags, (p) => p.media)))));
+      for (const p of pags) linhas.push(el('tr', { class: 'ficha-item' }, el('td', {}, `${p.fundo.titulo} (${p.fundo.fundo}), média mensal dos últimos 12 meses`), el('td', { class: 'num' }, brl(p.media))));
+      linhas.push(el('tr', { class: 'ficha-total' }, el('td', {}, 'Líquido do mês mais pagamentos de fundo'), el('td', { class: 'num' }, brl(a.liquido + soma(pags, (p) => p.media)))));
+    }
+    if (a.cargo) linhas.push(el('tr', { class: 'ficha-item ficha-efeito' }, el('td', {}, 'Redução estimada da remuneração ao retirar o cargo' + (a.abate > 0 ? ' (já considerando o abate do teto)' : '')), el('td', { class: 'num' }, brl(a.abate > 0 ? a.efeito : a.cargo))));
     return el('div', { class: 'rolagem' }, el('table', { class: 'ficha-tabela' }, el('tbody', {}, linhas)));
-  }
-
-  function blocoCargo(o, a) {
-    if (!a.cargo) return el('p', { class: 'fm-nota' }, 'Neste mês não há rubrica de cargo ou função na folha desta pessoa.');
-    const partes = [`O cargo ou função paga ${brl(a.cargo)} por mês, ${pct(a.cargo / Math.max(1, a.corrente))} da remuneração corrente do mês (${brl(a.corrente)}, sem 13º, férias e rescisão). Sem ele, a pessoa continuaria recebendo ${brl(a.corrente - a.cargo)} por mês antes dos descontos${o.cargoEfetivo ? ', como ' + titulo(o.cargoEfetivo) : ''}.`];
-    if (a.abate > 0) {
-      partes.push(`Mas a folha desconta ${brl(a.abate)} de abate do teto constitucional. Retirado o cargo, esse abate cairia para ${brl(Math.max(0, a.abate - a.cargo))}, e a redução real na remuneração seria de cerca de ${brl(a.efeito)}, e não dos ${brl(a.cargo)} do cargo. É uma estimativa: o teto incide sobre a remuneração corrente de cada mês.`);
-    }
-    return el('p', { class: 'ficha-texto' }, partes.join(' '));
-  }
-
-  function blocoFundos(pags, a) {
-    if (!pags.length) return null;
-    const cartao = el('div', { class: 'ficha-fundos' }, el('h4', {}, 'Recebe também de fundo, fora da folha'));
-    for (const p of pags) {
-      const total = a.corrente + p.media;
-      cartao.append(el('p', { class: 'ficha-texto' },
-        `${p.fundo.titulo}, pago pelo ${p.fundo.fundo}: média de ${brl(p.media)} por mês nos últimos 12 meses (${p.meses} meses com pagamento; ${brl(p.total)} no total). Com isso, a remuneração mensal sobe de ${brl(a.corrente)} para cerca de ${brl(total)} (+${pct(p.media / Math.max(1, a.corrente))}), antes dos descontos. Esse pagamento não depende do cargo e não aparece na folha.`));
-    }
-    return cartao;
   }
 
   async function abrir({ sigla, id, ocupante, alternativa, mes: mesDado, nomeOrg }) {
@@ -140,7 +127,7 @@
           el('div', { class: 'kpi' }, el('div', { class: 'rotulo' }, 'Vantagens do mês'), el('div', { class: 'valor' }, brl(a.bruto)), el('div', { class: 'nota' }, `corrente: ${brl(a.corrente)}`)),
           el('div', { class: 'kpi' }, el('div', { class: 'rotulo' }, 'Valor do cargo'), el('div', { class: 'valor' }, brl(o.valor)), el('div', { class: 'nota' }, a.cargo ? `${pct(a.cargo / Math.max(1, a.corrente))} da remuneração corrente` : 'sem rubrica de cargo no mês')),
           el('div', { class: 'kpi' }, el('div', { class: 'rotulo' }, 'Líquido do mês'), el('div', { class: 'valor' }, brl(a.liquido)), el('div', { class: 'nota' }, `descontos de ${brl(a.descontos)}`))),
-        blocoCargo(o, a), blocoFundos(pags, a), tabelaGrupos(a));
+        tabelaGrupos(a, pags));
     });
     corpo.replaceChildren(
       el('div', { class: 'ficha-topo' }, el('h2', {}, titulo(o0.nome)),
@@ -162,7 +149,8 @@
       linhas.push(['', 'Liquido do mes', brl(a.liquido)]);
       if (a.cargo) linhas.push(['', 'Efeito estimado de retirar o cargo', brl(a.abate > 0 ? a.efeito : a.cargo)]);
     }
-    for (const p of pags) linhas.push(['Fundo', `${p.fundo.titulo} (media 12 meses)`, brl(p.media)]);
+    for (const p of pags) linhas.push(['Fundo', `${p.fundo.titulo} (media mensal, 12 meses)`, brl(p.media)]);
+    if (pags.length) linhas.push(['', 'Liquido do mes mais pagamentos de fundo', brl(soma(lista.slice(0, 1), (ocup) => analisar(ocup).liquido) + soma(pags, (p) => p.media))]);
     return { titulo: `Folha de ${titulo(o.nome)}`, paisagem: false, arquivo: `ficha-${sigla}-${o.id}`,
       filtros: [`${titulo(o.nome)}, ${titulo(o.funcao)}, ${sigla}; folha de ${mes ? rotuloMes(mes, true) : ''}, competencia corrente`, 'Dado pessoal de agente publico, de fonte publica (Portal da Transparencia): uso restrito a equipe de transicao.'],
       colunas: [{ t: 'Funcao', w: 2.2 }, { t: 'Item', w: 5 }, { t: 'Valor', w: 1.6, n: 1 }], linhas, texto: [`${titulo(o.nome)} (${sigla}): ${titulo(o.funcao)}`] };
