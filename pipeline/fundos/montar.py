@@ -118,10 +118,6 @@ def r2(x):
     return round(x, 2)
 
 
-def topo(d, n):
-    return sorted(d.items(), key=lambda kv: -kv[1])[:n]
-
-
 def main():
     exe, rec = carregar("exec"), carregar("rec")
     if not exe:
@@ -183,9 +179,6 @@ def main():
             soma_dict(r["orig"], origem, arrec)
             soma_dict(r["rub"], rubrica, arrec)
 
-    def nome_rec(prefixo, c):
-        return next((d["nomes"][prefixo + c] for d in rec.values() if d["nomes"].get(prefixo + c)), c)
-
     resumo, fora = [], []
     os.makedirs(os.path.join(SAIDA, "f"), exist_ok=True)
     for ug in sorted(por):
@@ -200,24 +193,29 @@ def main():
         if sum(tot.values()) < 1 and not recebeu:
             fora.append({"ug": ug, "nome": nome, "grupo": "sem-movimento", "motivo": "Sem pagamentos nem arrecadação de 2024 a 2026.", "total": tot})
             continue
-        anos_out = {}
+        anos_out, det_anos = {}, {}
         for ano, v in sorted(f["anos"].items()):
             t = v["pago"] + v["rap"]
             anos_out[str(ano)] = {
                 "emp": r2(v["emp"]), "liq": r2(v["liq"]), "pago": r2(v["pago"]), "rap": r2(v["rap"]), "total": r2(t),
                 "nat": {k: r2(x) for k, x in sorted(v["nat"].items())},
                 "fonte": {k: r2(x) for k, x in sorted(v["fonte"].items())},
-                "fonteDet": [[c, N.get("fo:" + c, c), r2(x)] for c, x in topo(v["fonteDet"], 6)],
-                "elem": [[g, e, N.get("el:" + e, e), r2(x)] for (g, e), x in topo(v["elem"], 10)],
-                "prog": [[N.get("pg:" + p, p), N.get(f"ac:{ug}:{a}", a), r2(x)] for (p, a), x in topo(f.get("prog", {}).get(ano, {}), 8)],
-                "fav": [[("Órgão ou entidade" if tf == "3" else "Empresa"), nm, r2(x)] for (tf, nm), x in topo(f.get("fav", {}).get(ano, {}), 10)],
-                "mes": {m: r2(x) for m, x in sorted(v["mes"].items())},
             }
             if ano in f.get("rec", {}):
                 r = f["rec"][ano]
-                anos_out[str(ano)]["rec"] = {"arrec": r2(r["arrec"]), "prev": r2(r["prev"]), "rend": r2(r["rub"].get(RUBRICA_RENDIMENTO, 0.0)),
-                                             "orig": [[nome_rec("or:", c), r2(x)] for c, x in topo(r["orig"], 5) if abs(x) > 1],
-                                             "rub": [[nome_rec("ru:", c), r2(x)] for c, x in topo(r["rub"], 6) if abs(x) > 1]}
+                anos_out[str(ano)]["rec"] = {"arrec": r2(r["arrec"]), "prev": r2(r["prev"]), "rend": r2(r["rub"].get(RUBRICA_RENDIMENTO, 0.0))}
+            # detalhe para onde foi o dinheiro: favorecidos (empresas e órgãos), ações e o resto
+            fav = sorted(((k, x) for k, x in f.get("fav", {}).get(ano, {}).items() if x > 0.5), key=lambda kv: -kv[1])
+            acoes = sorted(((k, x) for k, x in f.get("prog", {}).get(ano, {}).items() if x > 0.5), key=lambda kv: -kv[1])
+            det_anos[str(ano)] = {
+                "total": r2(t), "pago": r2(v["pago"]), "rap": r2(v["rap"]),
+                "fav": [[("Órgão ou entidade" if tf == "3" else "Empresa"), nm, r2(x)] for (tf, nm), x in fav[:30]],
+                "favResto": {"n": max(0, len(fav) - 30), "valor": r2(sum(x for _, x in fav[30:]))},
+                "pf": r2(max(0.0, t - sum(x for _, x in fav))),
+                "acao": [[N.get("pg:" + p_, p_), N.get(f"ac:{ug}:{a_}", a_), r2(x)] for (p_, a_), x in acoes[:15]],
+                "acaoResto": r2(sum(x for _, x in acoes[15:])),
+                "rec": anos_out[str(ano)].get("rec"),
+            }
         # sinais, lidos nos dois últimos períodos: o último ano completo (ult-1) e o ano corrente até o mês
         base = anos_out.get(str(ult - 1)) or anos_out.get(str(ult))
         atual = anos_out.get(str(ult))
@@ -271,7 +269,7 @@ def main():
         if ug in LEITURA_MANUAL:
             item["leitura"], item["leituraNota"] = LEITURA_MANUAL[ug]
         resumo.append(item)
-        det = {"ug": ug, "nome": nome, "anos": anos_out, "cadastro": cad or None}
+        det = {"ug": ug, "nome": nome, "anos": det_anos, "cadastro": cad or None}
         with open(os.path.join(SAIDA, "f", f"{ug}.json"), "w", encoding="utf-8") as fh:
             json.dump(det, fh, ensure_ascii=False, separators=(",", ":"))
     resumo.sort(key=lambda x: -(x["anos"].get(x["ref"], {}).get("total", 0)))

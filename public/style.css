@@ -558,35 +558,26 @@ td small.fm-futura { color: var(--erro); }
 td small { display: block; }
 
 /* Fundos */
-.mix { display: flex; width: 120px; height: 12px; border-radius: 3px; overflow: hidden; background: var(--neutro); gap: 1px; }
-.mix i { display: block; min-width: 2px; }
-.mix.vazio { opacity: .5; }
 .tabela-fundos .fundo-linha { cursor: pointer; }
 .tabela-fundos .fundo-linha:hover, .tabela-fundos .fundo-linha:focus-visible { background: var(--grade); outline: none; }
-.tabela-fundos td.objeto { min-width: 220px; }
-.tabela-fundos td small { display: block; color: var(--mudo); font-size: 12px; }
-.tabela-fundos .selos { max-width: 260px; }
+.tabela-fundos td.objeto { min-width: 260px; }
+.tabela-fundos td small, .tabela-pagamentos td small { display: block; color: var(--mudo); font-size: 12px; }
 .mudo { color: var(--mudo); }
-.leitura-trio { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-top: 10px; }
-.leitura-item { display: grid; gap: 2px; padding: 10px 12px; border: 1px solid var(--borda); border-left: 4px solid var(--eixo); border-radius: 8px; }
-.leitura-item.n-a { border-left-color: var(--serie-3); }
-.leitura-item.n-m { border-left-color: var(--serie-2); }
-.leitura-item.n-i { border-left-color: var(--eixo); }
-.leitura-item b { font-size: 14px; }
-.leitura-item .leitura-n { font-size: 13px; color: var(--tinta-2); }
-.leitura-item small { color: var(--mudo); font-size: 12px; line-height: 1.4; }
+.estimado { font-style: italic; color: var(--tinta-2); }
 .fm-nota { margin: 10px 0 0; font-size: 12px; color: var(--mudo); line-height: 1.5; max-width: 90ch; }
-h4.sec { margin: 16px 0 6px; font-size: 12px; text-transform: uppercase; letter-spacing: .03em; color: var(--tinta-2); }
 .lista-simples { margin: 4px 0 0; padding-left: 18px; font-size: 14px; line-height: 1.5; max-width: 90ch; }
-.links-lei { display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.links-lei { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
 .links-lei a { color: var(--acento); font-weight: 600; }
+.links-lei a.botao-primario { color: var(--sobre-serie); padding: 6px 12px; border-radius: 8px; background: var(--acento); text-decoration: none; }
 tr.destaque td { font-weight: 600; }
 td.recuo { padding-left: 22px; color: var(--tinta-2); }
+.kpis-fundo { margin: 12px 0 0; }
+.tabela-pagamentos td.objeto { min-width: 220px; }
+.tabela-pagamentos tr.extra td { color: var(--tinta-2); font-style: italic; }
+.tabela-pagamentos tfoot td { font-weight: 600; border-top: 2px solid var(--eixo); }
 .fundos-lista { display: grid; gap: 8px; margin-top: 8px; }
 .fundo-cartao { display: grid; gap: 6px; text-align: left; width: 100%; padding: 12px; background: var(--superficie); border: 1px solid var(--borda); border-radius: 10px; cursor: pointer; font: inherit; color: inherit; }
 .fundo-cartao:hover { background: var(--grade); }
 .fundo-cartao small { color: var(--mudo); font-size: 12px; }
-.fundo-cartao .mix { width: 100%; }
-.fundo-nums { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; font-size: 13px; color: var(--tinta-2); }
+.fundo-nums { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 4px 12px; font-size: 13px; color: var(--tinta-2); }
 .fundo-nums b { color: var(--tinta); font-variant-numeric: tabular-nums; }
-.estimado { font-style: italic; color: var(--tinta-2); }
