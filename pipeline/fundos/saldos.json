@@ -1,0 +1,39 @@
+[
+ {
+  "ug": "220902",
+  "sigla": "FUNSES",
+  "data": "2026-06-30",
+  "valor": 1812525506.59,
+  "rotulo": "Superávit financeiro (ativo financeiro menos passivo financeiro)",
+  "fonte": "Demonstrações contábeis do 1º semestre de 2026 do Fundo Soberano (Balanço Patrimonial, Anexo XIV da Lei 4.320/64), publicadas pela SEFAZ.",
+  "url": "https://fundosoberano.es.gov.br/Media/FUNSES/Relat%C3%B3rios/RDC%20-%201%C2%BA%20Semestre%202026.pdf",
+  "detalhes": [
+   [
+    "Ativo financeiro",
+    1846900754.33,
+    "inclui caixa e aplicações"
+   ],
+   [
+    "Passivo financeiro",
+    34375247.74,
+    ""
+   ],
+   [
+    "Caixa e equivalentes",
+    1113789088.64,
+    "parte do ativo financeiro"
+   ],
+   [
+    "Patrimônio líquido",
+    2654229652.66,
+    "inclui investimentos permanentes"
+   ]
+  ],
+  "nota": "O Fundo Soberano é o único fundo que publica o próprio balanço.",
+  "anterior": {
+   "data": "2025-06-30",
+   "valor": 1583825177.5,
+   "fonte": "mesmas demonstrações (coluna do exercício anterior)"
+  }
+ }
+]

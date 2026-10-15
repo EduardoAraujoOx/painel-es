@@ -23,6 +23,7 @@
   --ac-pessoal: #0c7a57;
   --ac-contratos: #1f6bc4;
   --ac-transicao: #b4531a;
+  --ac-fundos: #7b4fb8;
   --fonte-titulo: "Barlow Condensed", "Arial Narrow", system-ui, sans-serif;
 }
 @media (prefers-color-scheme: dark) {
@@ -47,6 +48,7 @@
     --ac-pessoal: #3fc79a;
     --ac-contratos: #6aa5ef;
     --ac-transicao: #eb8f5a;
+    --ac-fundos: #b497e6;
   }
 }
 :root[data-theme="dark"] {
@@ -70,6 +72,7 @@
   --ac-pessoal: #3fc79a;
   --ac-contratos: #6aa5ef;
   --ac-transicao: #eb8f5a;
+  --ac-fundos: #b497e6;
 }
 
 * { box-sizing: border-box; }
@@ -78,6 +81,7 @@ html { -webkit-text-size-adjust: 100%; }
 [data-painel="pessoal"] { --acento: var(--ac-pessoal); }
 [data-painel="contratos"] { --acento: var(--ac-contratos); }
 [data-painel="transicao"] { --acento: var(--ac-transicao); }
+[data-painel="fundos"] { --acento: var(--ac-fundos); }
 body {
   margin: 0;
   background: var(--pagina);
@@ -552,3 +556,28 @@ td small.fm-futura { color: var(--erro); }
 .linha-barra.sem-clique { cursor: default; }
 .linha-barra.sem-clique:hover { background: none; }
 td small { display: block; }
+
+/* Fundos */
+.tabela-fundos .fundo-linha { cursor: pointer; }
+.tabela-fundos .fundo-linha:hover, .tabela-fundos .fundo-linha:focus-visible { background: var(--grade); outline: none; }
+.tabela-fundos td.objeto { min-width: 260px; }
+.tabela-fundos td small, .tabela-pagamentos td small { display: block; color: var(--mudo); font-size: 12px; }
+.mudo { color: var(--mudo); }
+.estimado { font-style: italic; color: var(--tinta-2); }
+.fm-nota { margin: 10px 0 0; font-size: 12px; color: var(--mudo); line-height: 1.5; max-width: 90ch; }
+.lista-simples { margin: 4px 0 0; padding-left: 18px; font-size: 14px; line-height: 1.5; max-width: 90ch; }
+.links-lei { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
+.links-lei a { color: var(--acento); font-weight: 600; }
+.links-lei a.botao-primario { color: var(--sobre-serie); padding: 6px 12px; border-radius: 8px; background: var(--acento); text-decoration: none; }
+tr.destaque td { font-weight: 600; }
+td.recuo { padding-left: 22px; color: var(--tinta-2); }
+.kpis-fundo { margin: 12px 0 0; }
+.tabela-pagamentos td.objeto { min-width: 220px; }
+.tabela-pagamentos tr.extra td { color: var(--tinta-2); font-style: italic; }
+.tabela-pagamentos tfoot td { font-weight: 600; border-top: 2px solid var(--eixo); }
+.fundos-lista { display: grid; gap: 8px; margin-top: 8px; }
+.fundo-cartao { display: grid; gap: 6px; text-align: left; width: 100%; padding: 12px; background: var(--superficie); border: 1px solid var(--borda); border-radius: 10px; cursor: pointer; font: inherit; color: inherit; }
+.fundo-cartao:hover { background: var(--grade); }
+.fundo-cartao small { color: var(--mudo); font-size: 12px; }
+.fundo-nums { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 4px 12px; font-size: 13px; color: var(--tinta-2); }
+.fundo-nums b { color: var(--tinta); font-variant-numeric: tabular-nums; }
