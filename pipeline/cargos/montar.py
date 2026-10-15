@@ -100,7 +100,7 @@ def main():
                 # infla o quadro todo janeiro e cria rotatividade fictícia.
                 sem_pagamento[mes] += 1
                 continue
-            idx[(org, nf, nv)][(funcao, tipo)] = (nome, unidade, cargo_ef, prov, valor, subs_carreira)
+            idx[(org, nf, nv)][(funcao, tipo)] = (nome, unidade, cargo_ef, prov, valor, subs_carreira, rub)
             idx_tipo[((org, nf, nv), tipo)].add(funcao)
         por_mes[mes] = idx
         por_mes_tipo[mes] = idx_tipo
@@ -112,7 +112,7 @@ def main():
 
     for i, mes in enumerate(lista):
         for (org, nf, nv), funcoes in por_mes[mes].items():
-            for (funcao, tipo), (_, _, _, _, valor, _) in funcoes.items():
+            for (funcao, tipo), (_, _, _, _, valor, _, _) in funcoes.items():
                 s = serie[org][mes]
                 s[tipo.lower()] += 1
                 s["custo_" + tipo.lower()] += valor
@@ -149,14 +149,18 @@ def main():
     for pessoa, funcoes in por_mes[ultimo].items():
         org, nf, nv = pessoa
         vinculo = extra["vinculos"].get(f"{org}|{nf}|{nv}")
-        for (funcao, tipo), (nome, unidade, cargo_ef, prov, valor, subs_carreira) in funcoes.items():
+        for (funcao, tipo), (nome, unidade, cargo_ef, prov, valor, subs_carreira, rub_p) in funcoes.items():
             ini, na_borda = desde(pessoa, (funcao, tipo))
+            do_cargo = regras.rubricas_do_cargo(TIPO_COMPLETO[tipo], rub_p, prov)
+            # composição da folha do mês: [rubrica, valor com sinal (desconto negativo), 1 se entra no valor do cargo]
+            composicao = sorted(([r, v, 1 if r in do_cargo else 0] for r, v in rub_p.items() if v), key=lambda x: (-x[1], x[0]))
             ocupantes_por_org[org].append({
                 "id": f"{nf}-{nv}", "nome": nome, "funcao": funcao, "tipo": tipo,
                 "unidade": unidade, "cargoEfetivo": cargo_ef.strip(), "prov": prov,
                 "valor": valor, "subsidioCarreira": subs_carreira or None, "desde": ini, "limite": na_borda,
                 "vinculo": vinculo[0] if vinculo else None,
                 "exercicio": vinculo[1] if vinculo else None,
+                "rub": composicao,
             })
 
     resumo_orgs = []
@@ -177,6 +181,16 @@ def main():
                        s[m]["troc_cc"], s[m]["troc_fg"]] for m in lista],
         })
 
+    servidores = None
+    ps = os.path.join(CACHE, "servidores.json")       # gerado por servidores.py: quadro geral de servidores de cada órgão
+    if os.path.exists(ps):
+        sv = json.load(open(ps, encoding="utf-8"))
+        com_cargo = {o["sigla"]: serie[o["sigla"]][ultimo] for o in resumo_orgs}
+        servidores = {"mes": sv["mes"], "orgs": [
+            {"sigla": org, "nome": extra["orgaos"].get(org, org), "n": v["n"], "bruto": v["bruto"], "tipos": v["tipos"],
+             "cc": com_cargo[org]["cc"] if org in com_cargo else 0, "fg": com_cargo[org]["fg"] if org in com_cargo else 0,
+             "arquivo": seguro(org) if org in com_cargo else None}
+            for org, v in sv["orgs"].items()]}
     diag = collections.Counter()
     for m in lista:
         diag.update(meses[m]["diagnostico"]["rubricas"])
@@ -185,6 +199,7 @@ def main():
         "colunasSerie": ["mes", "cc", "fg", "custoCC", "custoFG", "entCC", "entFG",
                          "saiCC", "saiFG", "trocCC", "trocFG"],
         "orgs": resumo_orgs,
+        "servidores": servidores,
         "orgaosExcluidos": regras.ORGAOS_EXCLUIDOS,
         "semPagamento": {m: sem_pagamento[m] for m in lista},
         "fonte": {

@@ -49,6 +49,7 @@ def ler_fatia(args):
     url, ini, fim, tam, idx = args
     agg = collections.defaultdict(lambda: [0.0, 0.0, 0.0, 0.0])        # (regra, componente, mes) -> empenho, liquidado, pago, rap
     pessoas = collections.defaultdict(set)                               # (regra, mes) -> favorecidos pessoa física
+    por_pessoa = collections.defaultdict(float)                          # (regra, nome, cpf mascarado, mes) -> pago + restos a pagar pagos
     ugnome, elemdesc, fora = {}, {}, collections.defaultdict(float)
     vistas = set()                                                       # linhas idênticas dentro da fatia contam uma vez só
     cmd = ["curl", "-sS", "-L", "--fail", "--retry", "4", "--retry-delay", "3", "-r", f"{max(0, ini - 1)}-{min(tam - 1, fim + E.SOBRA)}", url]
@@ -91,12 +92,13 @@ def ler_fatia(args):
                 elemdesc[el] = c[idx["DescricaoElementoDespesa"]]
                 if r["beneficiarios"] and tf == "1":
                     pessoas[(r["id"], mes)].add(c[idx["IdFavorecido"]])
+                    por_pessoa[(r["id"], c[idx["Favorecido"]].strip(), c[idx["CpfCnpjNis"]].strip(), mes)] += pago
             else:
                 fora[(r["id"], el, tf)] += pago
     p.stdout.close()
     if p.wait() != 0:
         return None
-    return dict(agg), {k: v for k, v in pessoas.items()}, ugnome, elemdesc, dict(fora)
+    return dict(agg), {k: v for k, v in pessoas.items()}, ugnome, elemdesc, dict(fora), dict(por_pessoa)
 
 
 def fatia(args):
@@ -113,14 +115,15 @@ def main():
     agg = collections.defaultdict(lambda: [0.0, 0.0, 0.0, 0.0])
     pessoas = collections.defaultdict(set)
     ugnome, elemdesc, fora = {}, {}, collections.defaultdict(float)
+    por_pessoa = collections.defaultdict(float)
     with Pool(14) as pool:
         for ano in anos:
             url = urls[ano]
             cab = E.cabecalho(url)
-            idx = {n: cab.index(n) for n in ("CodigoUnidadeGestora", "UnidadeGestora", "CodigoElementoDespesa", "DescricaoElementoDespesa", "TipoFavorecido", "HistoricoDocumento", "IdFavorecido")}
+            idx = {n: cab.index(n) for n in ("CodigoUnidadeGestora", "UnidadeGestora", "CodigoElementoDespesa", "DescricaoElementoDespesa", "TipoFavorecido", "HistoricoDocumento", "IdFavorecido", "Favorecido", "CpfCnpjNis")}
             tam = E.tamanho(url)
             trabalhos = [(url, i, min(tam, i + E.FATIA), tam, idx) for i in range(0, tam, E.FATIA)]
-            for a, p, un, ed, fo in pool.imap_unordered(fatia, trabalhos):
+            for a, p, un, ed, fo, pp in pool.imap_unordered(fatia, trabalhos):
                 for k, v in a.items():
                     t = agg[k]
                     for j in range(4):
@@ -128,6 +131,8 @@ def main():
                 for k, v in p.items():
                     pessoas[k] |= v
                 ugnome.update(un); elemdesc.update(ed)
+                for k, v in pp.items():
+                    por_pessoa[k] += v
                 for k, v in fo.items():
                     fora[k] += v
             print(f"{ano}: lido", flush=True)
@@ -155,6 +160,9 @@ def main():
     saida = {"fonte": "SIGEFES, despesas (Portal da Transparência do ES)", "anos": [int(a) for a in anos], "ate": meses_todos[-1] if meses_todos else "", "itens": itens}
     json.dump(saida, open(DESTINO, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     print("→", DESTINO)
+    # pagamentos por favorecido pessoa física e mês (nomes e CPF mascarado), lidos por pipeline/pessoalfundos/montar.py; não vai para data/
+    os.makedirs(os.path.join(RAIZ, ".cache", "fundos"), exist_ok=True)
+    json.dump(sorted([list(k) + [round(v, 2)] for k, v in por_pessoa.items()]), open(os.path.join(RAIZ, ".cache", "fundos", "complementos_pessoas.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
 
 
 if __name__ == "__main__":

@@ -34,7 +34,6 @@ FORA = {
 }
 ROTULO_GRUPO_FORA = {"previdenciario": "Previdenciários", "vinculado": "Vinculado à saúde", "outro-poder": "Outros Poderes e órgãos autônomos", "sem-movimento": "Sem pagamentos nem arrecadação no período"}
 # leitura da margem que o painel não deduz só da fonte dos recursos: ug -> (leitura, nota)
-RUBRICA_RENDIMENTO = "1321"     # receita patrimonial: valores mobiliários (rendimento de aplicações e de depósitos)
 LEITURA_MANUAL = {
     "220902": ("verificar", "A política de poupança é do próprio Estado e muda por lei complementar (LC 914/2019). Pela lei atual, o Governo só resgata rendimentos depois que a poupança atinge R$ 1 bilhão corrigido, e só reverte saldo ao Tesouro após 15 anos da criação e acima de R$ 2 bilhões."),
 }
@@ -68,7 +67,6 @@ ROTULO_NATUREZA = {
     "invest": "Investimentos",
     "inversoes": "Inversões financeiras",
 }
-PISO_REND = 1_000_000   # rendimento anual mínimo para estimar o saldo aplicado
 PISO = 100_000          # abaixo disso (por ano) os sinais de origem e natureza não são calculados
 LIMIAR = {"livre": 0.5, "federal": 0.5, "pessoal": 0.5, "flexivel": 0.5, "rap": 0.25, "acumula": 1.2, "abastecido": 0.5}
 
@@ -122,7 +120,10 @@ def main():
     exe, rec = carregar("exec"), carregar("rec")
     if not exe:
         raise SystemExit("falta .cache/fundos/exec_<ano>.json (rode execucao_fundos.py)")
-    selic = json.load(open(os.path.join(RAIZ, "pipeline", "fundos", "selic.json"), encoding="utf-8"))
+    saldos_tcee = {}
+    ps = os.path.join(CACHE, "saldos.json")
+    if os.path.exists(ps):
+        saldos_tcee = json.load(open(ps, encoding="utf-8"))
     cadastro = {}
     pc = os.path.join(RAIZ, "pipeline", "fundos", "cadastro.json")
     if os.path.exists(pc):
@@ -203,7 +204,7 @@ def main():
             }
             if ano in f.get("rec", {}):
                 r = f["rec"][ano]
-                anos_out[str(ano)]["rec"] = {"arrec": r2(r["arrec"]), "prev": r2(r["prev"]), "rend": r2(r["rub"].get(RUBRICA_RENDIMENTO, 0.0))}
+                anos_out[str(ano)]["rec"] = {"arrec": r2(r["arrec"]), "prev": r2(r["prev"])}
             # detalhe para onde foi o dinheiro: favorecidos (empresas e órgãos), ações e o resto
             fav = sorted(((k, x) for k, x in f.get("fav", {}).get(ano, {}).items() if x > 0.5), key=lambda kv: -kv[1])
             acoes = sorted(((k, x) for k, x in f.get("prog", {}).get(ano, {}).items() if x > 0.5), key=lambda kv: -kv[1])
@@ -261,32 +262,29 @@ def main():
                 item[k] = cad[k]
         item["leitura"] = leitura(sinais, cad.get("reversao"))
         item["cadastro"] = bool(cad)
-        refa = anos_out.get(item["ref"]) or {}
-        rend = (refa.get("rec") or {}).get("rend", 0)
-        taxa = selic["media"].get(item["ref"])
-        if rend >= PISO_REND and taxa:
-            item["implicito"] = {"ano": item["ref"], "rend": r2(rend), "taxa": taxa, "valor": r2(rend / (taxa / 100))}
-        if ug in LEITURA_MANUAL:
-            item["leitura"], item["leituraNota"] = LEITURA_MANUAL[ug]
+        sd = (saldos_tcee.get("fundos") or {}).get(ug)
+        if sd and sd["meses"].get(saldos_tcee["ultimo"]):
+            item["saldo"] = {"ym": saldos_tcee["ultimo"], **sd["meses"][saldos_tcee["ultimo"]],
+                             "serie": [{"ym": ym, **v} for ym, v in sorted(sd["meses"].items()) if ym in ("2024-12", "2025-12", saldos_tcee["ultimo"])]}
         resumo.append(item)
         det = {"ug": ug, "nome": nome, "anos": det_anos, "cadastro": cad or None}
         with open(os.path.join(SAIDA, "f", f"{ug}.json"), "w", encoding="utf-8") as fh:
             json.dump(det, fh, ensure_ascii=False, separators=(",", ":"))
     resumo.sort(key=lambda x: -(x["anos"].get(x["ref"], {}).get("total", 0)))
 
-    validacao = []
-    for sl in json.load(open(os.path.join(RAIZ, "pipeline", "fundos", "saldos.json"), encoding="utf-8")):
-        it = next((x for x in resumo if x["ug"] == sl["ug"]), None)
-        if it and it.get("implicito") and sl.get("anterior"):
-            validacao.append({"ug": sl["ug"], "sigla": sl.get("sigla", ""), "ano": it["implicito"]["ano"], "estimado": it["implicito"]["valor"], "real": sl["anterior"]["valor"],
-                              "data": sl["anterior"]["data"], "razao": round(it["implicito"]["valor"] / sl["anterior"]["valor"], 2)})
+    balancos = json.load(open(os.path.join(RAIZ, "pipeline", "fundos", "saldos.json"), encoding="utf-8"))
+    for bl in balancos:       # balanço publicado pelo próprio fundo, para conferir com o dado do TCE-ES
+        it = next((x for x in resumo if x["ug"] == bl["ug"]), None)
+        tc = ((saldos_tcee.get("fundos") or {}).get(bl["ug"], {}).get("meses", {}) or {}).get(bl["data"][:7])
+        bl["confere"] = bool(tc) and abs(tc["disponivel"] - bl["valor"]) < 1.0
+        bl["tceDisponivel"] = tc["disponivel"] if tc else None
     saida = {
-        "validacaoImplicito": validacao, "selic": selic["media"],
+        "saldoAte": saldos_tcee.get("ultimo"), "saldoFonte": saldos_tcee.get("fonte"),
         "ate": ate, "anos": [str(a) for a in sorted(exe)], "anoCorrente": str(ult),
         "fontes": ROTULO_FONTE, "naturezas": ROTULO_NATUREZA, "limiares": LIMIAR,
         "fundos": resumo, "fora": fora, "rotuloFora": ROTULO_GRUPO_FORA,
         "caixaRGF": json.load(open(os.path.join(RAIZ, "pipeline", "fundos", "rgf.json"), encoding="utf-8")),
-        "saldos": json.load(open(os.path.join(RAIZ, "pipeline", "fundos", "saldos.json"), encoding="utf-8")),
+        "balancos": balancos,
         "fonteDados": "SIGEFES: despesas e receitas do Portal da Transparência do ES; valor = pago + restos a pagar pagos",
     }
     with open(os.path.join(SAIDA, "index.json"), "w", encoding="utf-8") as fh:

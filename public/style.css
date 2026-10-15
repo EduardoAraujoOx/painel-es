@@ -561,9 +561,10 @@ td small { display: block; }
 .tabela-fundos .fundo-linha { cursor: pointer; }
 .tabela-fundos .fundo-linha:hover, .tabela-fundos .fundo-linha:focus-visible { background: var(--grade); outline: none; }
 .tabela-fundos td.objeto { min-width: 260px; }
-.tabela-fundos td small, .tabela-pagamentos td small { display: block; color: var(--mudo); font-size: 12px; }
+.tabela-fundos td small, .tabela-pagamentos td small, .fundo-nums small { display: block; color: var(--mudo); font-size: 12px; }
 .mudo { color: var(--mudo); }
-.estimado { font-style: italic; color: var(--tinta-2); }
+.negativo { color: var(--erro); }
+td.negativo, .tabela-fundos td .negativo { font-weight: 600; }
 .fm-nota { margin: 10px 0 0; font-size: 12px; color: var(--mudo); line-height: 1.5; max-width: 90ch; }
 .lista-simples { margin: 4px 0 0; padding-left: 18px; font-size: 14px; line-height: 1.5; max-width: 90ch; }
 .links-lei { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
@@ -581,3 +582,27 @@ td.recuo { padding-left: 22px; color: var(--tinta-2); }
 .fundo-cartao small { color: var(--mudo); font-size: 12px; }
 .fundo-nums { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 4px 12px; font-size: 13px; color: var(--tinta-2); }
 .fundo-nums b { color: var(--tinta); font-variant-numeric: tabular-nums; }
+
+/* Ficha da pessoa */
+dialog.ficha { width: min(760px, calc(100vw - 24px)); max-height: calc(100vh - 32px); padding: 0; border: 1px solid var(--borda); border-radius: 14px; background: var(--superficie); color: var(--tinta); }
+dialog.ficha::backdrop { background: rgba(0, 0, 0, .55); }
+.ficha-fechar { position: absolute; right: 10px; top: 8px; width: 36px; height: 36px; border: 0; background: none; font-size: 26px; line-height: 1; cursor: pointer; color: var(--tinta-2); border-radius: 8px; }
+.ficha-fechar:hover { background: var(--grade); }
+.ficha-corpo { padding: 18px 20px 20px; overflow-y: auto; max-height: calc(100vh - 34px); }
+.ficha-topo h2 { margin: 0 40px 2px 0; font-size: 22px; }
+.ficha-topo p { margin: 2px 0; font-size: 14px; color: var(--tinta-2); }
+.ficha-topo .ficha-sub { font-size: 12px; color: var(--mudo); }
+.kpis-ficha { margin: 14px 0 10px; }
+.kpis-ficha .kpi .valor { font-size: 22px; }
+.ficha-texto { margin: 8px 0; font-size: 14px; line-height: 1.55; max-width: 70ch; }
+.ficha-fundos { margin: 10px 0; padding: 10px 12px; border-left: 3px solid var(--acento); background: var(--pagina); border-radius: 0 8px 8px 0; }
+.ficha-fundos h4 { margin: 0 0 2px; font-size: 12px; text-transform: uppercase; letter-spacing: .03em; color: var(--tinta-2); }
+.ficha-vinculo + .ficha-vinculo { margin-top: 22px; padding-top: 14px; border-top: 1px solid var(--borda); }
+.ficha-tabela { width: 100%; border-collapse: collapse; font-size: 13px; }
+.ficha-tabela td { padding: 4px 6px; border-bottom: 1px solid var(--grade); }
+.ficha-tabela tr.ficha-grupo td { font-weight: 600; background: var(--pagina); padding-top: 8px; }
+.ficha-tabela tr.ficha-item td:first-child { padding-left: 18px; color: var(--tinta-2); }
+.ficha-tabela tr.cargo td { color: var(--tinta); font-weight: 600; background: color-mix(in srgb, var(--acento) 12%, transparent); }
+.ficha-tabela tr.ficha-total td { font-weight: 700; border-top: 2px solid var(--eixo); }
+tr.clicavel { cursor: pointer; }
+tr.clicavel.marcada td { background: color-mix(in srgb, var(--acento) 14%, transparent); font-weight: 600; }
