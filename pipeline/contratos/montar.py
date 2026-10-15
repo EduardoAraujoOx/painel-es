@@ -29,6 +29,8 @@ DESTINO = os.path.join(RAIZ, "data", "contratacoes")
 REF = datetime.date.fromisoformat(sys.argv[1]) if len(sys.argv) > 1 else datetime.date.today()
 ANOS_SERIE = list(range(2019, REF.year + 1))
 ANOS_GASTO = (REF.year - 1, REF.year)          # janela de "gasto recente": ano anterior e ano corrente
+MANDATO_DESDE = 2023                            # início da gestão atual: "pago desde 2023"
+MENSAL_DESDE = "2025-01"                        # pagamentos mês a mês no detalhe do órgão
 ATIVIDADE_DESDE = 2023                          # fornecedores com algum documento a partir deste ano ganham ficha
 
 
@@ -168,6 +170,11 @@ def montar_contratos():
             "n_alt": len(al), "n_pror": n_pror, "emp": emp, "emp_tot": sum(emp.values()), "nes": nes.get((proc, doc), set()),
         })
     return recs
+
+
+def pago_mandato(c):
+    """Pago nos empenhos ligados ao contrato desde o início da gestão atual (MANDATO_DESDE)."""
+    return sum(v for y, v in c["pago_ano"].items() if y >= MANDATO_DESDE)
 
 
 def avaliar_contrato(c):
@@ -490,12 +497,15 @@ def main():
     print(f"UGs mapeadas ao órgão do SIGA: {len(ug2siga)} (por votos de empenho: {len(votos) - empates}; empates sem desempate pelo nome, deixadas sem órgão: {empates}; por nome: {por_nome}) de {len(EXEC['ugs'])}", flush=True)
     pago_of = collections.defaultdict(lambda: collections.defaultdict(float))      # (órgão SIGA, CNPJ) -> ano -> pago
     pago_f = collections.defaultdict(lambda: collections.defaultdict(float))       # CNPJ -> ano -> pago (todo o Estado)
+    pago_om = collections.defaultdict(lambda: collections.defaultdict(float))      # (órgão SIGA, CNPJ) -> aaaa-mm -> pago, a partir de MENSAL_DESDE
     for cnpj, ug, aaaamm, (emp_, liq_, pago_) in EXEC["mes"]:
         ano_ = int(aaaamm[:4])
         pago_f[cnpj][ano_] += pago_
         org_siga = ug2siga.get(ug)
         if org_siga is not None:
             pago_of[(org_siga, cnpj)][ano_] += pago_
+            if aaaamm >= MENSAL_DESDE:
+                pago_om[(org_siga, cnpj)][aaaamm] += pago_
     for c in recs:
         po = pago_of.get((c["org"], c["cnpj"]), {})
         if (c["inst"] == "contrato" and c["vigente"] and c["vfin"] >= R.VALOR_RELEVANTE * 10 and c["ini"] and (REF - c["ini"]).days > 365
@@ -646,7 +656,7 @@ def main():
         return melhor
 
     pontos_forn = {k: sum(nivel_peso[n] for n in unicos(v).values()) for k, v in alertas_forn.items()}
-    CAMPOS = ["doc", "proc", "forn", "cnpj", "objeto", "cat", "modal", "vini", "vfin", "cel", "ini", "fim", "fimef", "sit", "anual", "saldo", "empAnt", "empAtu", "npror", "rp", "ess", "restante", "pago", "pagoAnt", "pagoAtu", "classeA", "alertas"]
+    CAMPOS = ["doc", "proc", "forn", "cnpj", "objeto", "cat", "modal", "vini", "vfin", "cel", "ini", "fim", "fimef", "sit", "anual", "saldo", "empAnt", "empAtu", "npror", "rp", "ess", "restante", "pago", "pagoAnt", "pagoAtu", "pago23", "classeA", "alertas"]
     for org in sorted(org_nome):
         meus = [c for c in recs if c["org"] == org]
         alvo = [c for c in meus if c["vigente"] or any(a[0] == "vigencia_vencida" for a in c["alertas"])]
@@ -655,7 +665,7 @@ def main():
                       round(c["vini"], 2), round(c["vfin"], 2), iso(c["cel"]), iso(c["ini"]), iso(c["fim"]), iso(c["fim_ef"]), c["sit"],
                       round(c["anual"], 2), None if c["saldo"] is None else round(c["saldo"], 2),
                       round(c["emp"].get(ANOS_GASTO[0], 0.0), 2), round(c["emp"].get(ANOS_GASTO[1], 0.0), 2), c["n_pror"], int(c["reg_preco"]), c["ess"], round(c["restante"], 2),
-                      round(c["pago"], 2), round(c["pago_ano"].get(int(ANOS_GASTO[0]), 0.0), 2), round(c["pago_ano"].get(int(ANOS_GASTO[1]), 0.0), 2),
+                      round(c["pago"], 2), round(c["pago_ano"].get(int(ANOS_GASTO[0]), 0.0), 2), round(c["pago_ano"].get(int(ANOS_GASTO[1]), 0.0), 2), round(pago_mandato(c), 2),
                       int((c["org"], c["proc"], c["doc"]) in classe_a), [f"{a}:{n}" for a, n in c["alertas"]]] for c in alvo]
         for c in alvo:
             pc = sum(nivel_peso[n] for _, n in c["alertas"])
@@ -727,11 +737,21 @@ def main():
     # fichas de fornecedores em 100 fatias
     ativos = {c["cnpj"] for c in recs if (c["cel"] and c["cel"].year >= ATIVIDADE_DESDE) or any(y >= ATIVIDADE_DESDE for y in c["emp"])}
     orgs_forn = collections.defaultdict(list)
+    por_forn_org = collections.defaultdict(list)
+    for c in recs:
+        por_forn_org[(c["org"], c["cnpj"])].append(c)
     for (o, cnpj), a in fo.items():
         if cnpj in ativos:
-            orgs_forn[cnpj].append([o, titulo(org_nome[o]), a["n_ct"], a["vig"], round(a["anual"], 2), round(sum(a["emp"].values()), 2),
-                                    round(sum(a["emp"].get(y, 0.0) for y in ANOS_GASTO), 2),
-                                    round(sum(pago_of.get((o, cnpj), {}).get(int(y), 0.0) for y in ANOS_GASTO), 2), round(sum(pago_of.get((o, cnpj), {}).values()), 2)])
+            po = pago_of.get((o, cnpj), {})
+            cts = [c for c in por_forn_org[(o, cnpj)] if c["inst"] == "contrato" and (c["vigente"] or pago_mandato(c) > 0 or any(y >= ANOS_GASTO[0] for y in c["emp"]))]
+            cts.sort(key=lambda c: (-int(c["vigente"]), -c["anual"]))
+            orgs_forn[cnpj].append({
+                "id": o, "nome": titulo(org_nome[o]), "ct": a["n_ct"], "vig": a["vig"], "anual": round(a["anual"], 2), "empTot": round(sum(a["emp"].values()), 2),
+                "empAtu": round(a["emp"].get(ANOS_GASTO[1], 0.0), 2), "pagoAtu": round(po.get(ANOS_GASTO[1], 0.0), 2),
+                "pagoMandato": round(sum(v for y, v in po.items() if y >= MANDATO_DESDE), 2),
+                "mensal": [[m, round(v, 2)] for m, v in sorted(pago_om.get((o, cnpj), {}).items())],
+                "contratos": [[c["doc"], c["proc"], c["objeto"][:260], c["sit"], iso(c["ini"]), iso(c["fim_ef"]), round(c["anual"], 2), round(c["vfin"], 2), int(c["vigente"]),
+                               round(pago_mandato(c), 2), round(c["pago_ano"].get(ANOS_GASTO[0], 0.0), 2), round(c["pago_ano"].get(ANOS_GASTO[1], 0.0), 2)] for c in cts[:30]]})
     glob_f = {}
     for (o, cnpj), a in fo.items():
         g = glob_f.setdefault(cnpj, {"anual": 0.0, "restante": 0.0, "emp": 0.0, "desde": None, "ate": None, "vig": 0, "orgs": [],
@@ -762,7 +782,7 @@ def main():
             externo = {"divida": ex_["divida"], "sancoes": ex_["sancoes"][:10], "sociosSancionados": [{"socio": x["socio"], "itens": x["itens"][:3]} for x in ex_["socios_sancionados"]][:5],
                        "doacoes": sorted(ex_["doacoes"], key=lambda x: -x["valor"])[:40], "candidatos": sorted(ex_["candidatos"], key=lambda x: (x["confianca"] == "a conferir", -x["ano"]))[:10],
                        "campanhas": sorted([x for x in ex_["campanhas"] if x["cnpj"] == cnpj], key=lambda x: -x["valor"])[:15], "doacoesPj": sorted(ex_["doacoes_pj"], key=lambda x: -x["valor"])[:15]}
-        f = dict(f, nome=nome, resumo=resumo_f, externo=externo, orgaos=sorted(orgs_forn[cnpj], key=lambda x: -x[5]),
+        f = dict(f, nome=nome, resumo=resumo_f, externo=externo, orgaos=sorted(orgs_forn[cnpj], key=lambda x: -x["pagoMandato"]),
                  alertas=[[a, n, t] for a, n, t in alertas_forn.get(cnpj, [])])
         for s in f.get("socios", []):
             s["outros"] = [{"cnpj": o, "nome": next((fichas[o].get("razao") for _ in [0] if o in fichas), o)} for o in s.get("outros", [])]
@@ -782,10 +802,11 @@ def main():
         linhas_diag.append([c["org"], titulo(c["org_nome"]), c["doc"], c["proc"], titulo(c["forn"]) if c["forn"].isupper() else c["forn"], c["cnpj"], c["objeto"][:300], c["cat"], c["modal"],
                             round(c["vini"], 2), round(c["vfin"], 2), iso(c["cel"]), iso(c["ini"]), iso(c["fim"]), iso(c["fim_ef"]), c["sit"], round(c["anual"], 2),
                             None if c["saldo"] is None else round(c["saldo"], 2), round(c["restante"], 2), round(c["pago"], 2),
-                            round(c["pago_ano"].get(int(ANOS_GASTO[0]), 0.0), 2), round(c["pago_ano"].get(int(ANOS_GASTO[1]), 0.0), 2), c["n_pror"], int(c["reg_preco"]), c["ess"],
+                            round(c["pago_ano"].get(int(ANOS_GASTO[0]), 0.0), 2), round(c["pago_ano"].get(int(ANOS_GASTO[1]), 0.0), 2), round(pago_mandato(c), 2),
+                            round(sum(v for y, v in pago_of.get((c["org"], c["cnpj"]), {}).items() if y >= MANDATO_DESDE), 2), c["n_pror"], int(c["reg_preco"]), c["ess"],
                             int(bool(PUBLICO.search(nat or "")) or bool(re.search(r"(^|\s)(banco|caixa econ[oô]mica|prefeitura|munic[ií]pio)", c["forn"], re.I))), al])
     linhas_diag.sort(key=lambda r: -r[16])
-    json.dump({"campos": ["org", "orgNome", "doc", "proc", "forn", "cnpj", "objeto", "cat", "modal", "vini", "vfin", "cel", "ini", "fim", "fimef", "sit", "anual", "saldo", "restante", "pago", "pagoAnt", "pagoAtu",
+    json.dump({"campos": ["org", "orgNome", "doc", "proc", "forn", "cnpj", "objeto", "cat", "modal", "vini", "vfin", "cel", "ini", "fim", "fimef", "sit", "anual", "saldo", "restante", "pago", "pagoAnt", "pagoAtu", "pago23", "pagoForn23",
                           "npror", "rp", "ess", "pub", "alertas"], "contratos": linhas_diag},
               open(os.path.join(DESTINO, "diagnostico.json"), "w"), ensure_ascii=False, separators=(",", ":"))
 

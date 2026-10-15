@@ -2,7 +2,7 @@
   'use strict';
   // Módulo "Contratações": contratos vigentes por órgão, fornecedores, quadro societário e alertas de triagem.
   const { el, nInt, brlCompacto, titulo, norm, soma, mostrarDica, esconderDica, dicaLinha, dicaNoElemento, observar,
-    graficoBarras, mapaDeBlocos } = PF;
+    graficoBarras, mapaDeBlocos, rotuloMes } = PF;
 
   let ctx = null;
   let raiz = null;
@@ -17,7 +17,7 @@
   const estado = {
     medida: 'anual', vista: PF.telaEstreita() ? 'lista' : 'mapa', ordemOrgs: { col: 'anualVigente', dir: -1 },
     org: null, forn: null, origem: null, verTodosForn: false, verMaisPrioridades: false,
-    f: { situ: 'vigentes', cat: '', modal: '', alerta: '', ess: '', ca: '', q: '' }, dg: { base: 'anual', corte: 80, pub: true, mais: 25, casos: 40, sensivel: false, aberto: new Set(), f: { org: '', cat: '', modal: '', ess: '', alerta: '', soAlerta: false, q: '' } }, rev: { status: '', motivo: '', org: '', decididos: false, sensivel: false }, msg: '', tela: '', par: { base: 'anual', ess: new Set(), corte: 80, mais: 10, pub: false }, ordem: { col: 'anual', dir: -1 }, limite: 50,
+    f: { situ: 'vigentes', cat: '', modal: '', alerta: '', ess: '', ca: '', q: '' }, dg: { base: 'anual', corte: 80, pub: true, mais: 25, casos: 40, sensivel: false, aberto: new Set(), f: { org: '', cat: '', modal: '', ess: '', alerta: '', soAlerta: false, q: '' } }, rev: { status: '', motivo: '', org: '', decididos: false, sensivel: false }, msg: '', tela: '', par: { base: 'anual', ess: new Set(), corte: 80, mais: 10, pub: true }, ordem: { col: 'anual', dir: -1 }, limite: 50,
     aberto: new Set(),
   };
   const PESO = { a: 3, m: 1, i: 0 };
@@ -92,6 +92,7 @@
     t.replaceChildren(...itens);
   }
 
+  const MANDATO = 2023;                          // início da gestão atual: "pago desde 2023"
   let todosForn = null;
   async function carregarTodosForn() {
     if (!todosForn) todosForn = (await ctx.api('fornecedores')).fornecedores;
@@ -359,7 +360,7 @@
       const dl = el('dl', { class: 'detalhes' },
         ...[['Objeto', k.objeto], ['Instrumento', k.doc], ['Processo', k.proc], ['Fornecedor', `${nomeProprio(k.forn)} · ${cnpjFmt(k.cnpj)}`],
           ['Celebração', dataBR(k.cel)], ['Vigência', `${dataBR(k.ini)} a ${dataBR(k.fim)}` + (k.fimef !== k.fim ? ` (com aditivos: até ${dataBR(k.fimef)})` : '')],
-          ['Valor inicial → final', `${brlCompacto(k.vini)} → ${brlCompacto(k.vfin)}`], ['Ainda a receber (estimativa)', brlCompacto(k.restante)], ['Pago nos empenhos do contrato', k.pago > 0 ? `${brlCompacto(k.pago)} desde 2021 (${dados.anosGasto[0]}: ${brlCompacto(k.pagoAnt)} · ${dados.anosGasto[1]}: ${brlCompacto(k.pagoAtu)})` : 'nenhum pagamento vinculado aos empenhos registrados'], ['Essencialidade sugerida', ESS()[k.ess]],
+          ['Valor inicial → final', `${brlCompacto(k.vini)} → ${brlCompacto(k.vfin)}`], ['Ainda a receber (estimativa)', brlCompacto(k.restante)], ['Pago nos empenhos do contrato', k.pago > 0 ? `${brlCompacto(k.pago23)} desde ${MANDATO} (${dados.anosGasto[0]}: ${brlCompacto(k.pagoAnt)} · ${dados.anosGasto[1]}: ${brlCompacto(k.pagoAtu)}); ${brlCompacto(k.pago)} desde 2021` : 'nenhum pagamento vinculado aos empenhos registrados'], ['Essencialidade sugerida', ESS()[k.ess]],
           ['Empenhado', `${dados.anosGasto[0]}: ${brlCompacto(k.empAnt)} · ${dados.anosGasto[1]}: ${brlCompacto(k.empAtu)}`],
           ['Situação no SIGA', k.sit]].flatMap(([t, v]) => [el('dt', {}, t), el('dd', {}, v)]));
       const alertas = k.alertas.length ? el('ul', { class: 'lista-alertas' }, k.alertas.map((a) => el('li', {}, selo(a), ' ', dados.alertas[a.split(':')[0]].descricao))) : null;
@@ -452,11 +453,15 @@
       el('button', { type: 'button', class: 'chip-filtro', 'aria-pressed': String(!P.ess.size || P.ess.has(k)),
         onclick: () => { if (P.ess.has(k)) P.ess.delete(k); else P.ess.add(k); P.mais = 10; render(true); } }, r)),
     el('button', { type: 'button', class: 'chip-filtro', 'aria-pressed': String(P.pub), title: 'Bancos, empresas públicas, autarquias e prefeituras costumam receber repasses e financiamentos, não pagamentos de fornecimento',
-      onclick: () => { P.pub = !P.pub; P.mais = 10; render(true); } }, 'Incluir bancos, entes públicos e prefeituras')));
+      onclick: () => { P.pub = !P.pub; estado.dg.pub = P.pub; P.mais = 10; render(true); } }, 'Incluir bancos, entes públicos e prefeituras')));
     if (!serie.length) { cartao.append(el('p', { class: 'vazio' }, 'Nenhum fornecedor com valor nesta medida e filtro.')); return cartao; }
     const pctA = kA / serie.length;
+    const nota = origem == null && P.base === 'anual' && !P.ess.size
+      ? `A unidade aqui é o fornecedor (um CNPJ pode ter vários contratos), e não o contrato: os ${nInt.format(soma(dados.orgs, (x) => x.vigentes))} contratos vigentes da visão geral pertencem a ${nInt.format(itens.filter((x) => x.anual > 0).length)} fornecedores com valor anual registrado`
+        + (P.pub ? '.' : `; ${nInt.format(itens.filter((x) => x.anual > 0 && publico(x)).length)} deles são bancos, entes públicos ou prefeituras, hoje ocultos pelo botão abaixo.`)
+      : `Contagem em fornecedores (CNPJ), não em contratos.`;
     cartao.append(el('p', { class: 'conclusao' }, el('strong', {}, `${nInt.format(kA)} de ${nInt.format(serie.length)} fornecedores (${pct(pctA)})`),
-      ` concentram ${P.corte}% de ${brlCompacto(total)} (${rotuloBase.toLowerCase()}). Os outros ${nInt.format(serie.length - kA)} dividem o restante.`), caixa);
+      ` concentram ${P.corte}% de ${brlCompacto(total)} (${rotuloBase.toLowerCase()}). Os outros ${nInt.format(serie.length - kA)} dividem o restante.`), el('p', { class: 'fm-nota' }, nota), caixa);
     observar(caixa, (W) => {
       const H = 230, ml = 44, mr = 14, mt = 12, mb = 34, iw = W - ml - mr, ih = H - mt - mb;
       const X = (i) => ml + (i / serie.length) * iw, Y = (c) => mt + ih - c * ih;
@@ -538,7 +543,7 @@
     const blocos = [];
     if (ex.doacoes && ex.doacoes.length) {
       const tot = soma(ex.doacoes, (x) => x.valor);
-      blocos.push(el('h3', {}, `Doações de sócios: ${PF.nBRL.format(tot)} em ${nInt.format(soma(ex.doacoes, (x) => x.n))} doações`),
+      blocos.push(el('h3', {}, `Sócios que doaram a campanhas ou partidos: ${PF.nBRL.format(tot)} em ${nInt.format(soma(ex.doacoes, (x) => x.n))} doações`),
         el('div', { class: 'rolagem' }, el('table', {}, el('thead', {}, el('tr', {}, ['Sócio', 'Ano', 'Destino', 'Cargo', 'Resultado', 'Vínculo', 'Valor'].map((t, n) => el('th', { class: n === 6 ? 'num' : '' }, t)))),
           el('tbody', {}, ex.doacoes.map((x) => el('tr', {}, el('td', {}, nomeProprio(x.socio)), el('td', {}, String(x.ano)),
             el('td', {}, x.tipo === 'partidos' ? `Órgão partidário · ${x.partido}` : `${nomeProprio(x.candidato)} · ${x.partido}`),
@@ -548,14 +553,24 @@
       blocos.push(el('h3', {}, 'Sócios que foram candidatos'), el('ul', { class: 'lista-simples' }, ex.candidatos.map((x) => el('li', {}, `${nomeProprio(x.socio)}: ${x.cargo}, ${x.municipio && x.municipio !== x.uf ? x.municipio + ', ' : ''}${x.uf}, ${x.ano}, ${x.partido}${resultadoTxt(x.resultado) ? ', ' + resultadoTxt(x.resultado) : ''}${x.ocupacao && x.ocupacao !== '#NULO' ? ' · ocupação declarada: ' + x.ocupacao.toLowerCase() : ''} `, tagConf(x.confianca, x.base)))));
     }
     if (ex.campanhas && ex.campanhas.length) {
-      blocos.push(el('h3', {}, 'Campanhas que contrataram a empresa'), el('div', { class: 'rolagem' }, el('table', {}, el('thead', {}, el('tr', {}, ['Ano', 'Candidato', 'Cargo', 'Valor contratado'].map((t, n) => el('th', { class: n === 3 ? 'num' : '' }, t)))),
+      blocos.push(el('h3', {}, 'Campanhas e partidos que pagaram a empresa por serviços'), el('div', { class: 'rolagem' }, el('table', {}, el('thead', {}, el('tr', {}, ['Ano', 'Candidato', 'Cargo', 'Valor contratado'].map((t, n) => el('th', { class: n === 3 ? 'num' : '' }, t)))),
         el('tbody', {}, ex.campanhas.map((x) => el('tr', {}, el('td', {}, String(x.ano)), el('td', {}, `${nomeProprio(x.candidato)} · ${x.partido}`), el('td', {}, `${x.cargo} · ${x.uf}`), el('td', { class: 'num' }, PF.nBRL.format(x.valor))))))));
     }
     if (ex.doacoesPj && ex.doacoesPj.length) {
-      blocos.push(el('h3', {}, 'A própria empresa como doadora'), el('ul', { class: 'lista-simples' }, ex.doacoesPj.map((x) => el('li', {}, `${x.ano}: ${PF.nBRL.format(x.valor)} para ${x.tipo === 'partidos' ? 'órgão partidário ' + x.partido : nomeProprio(x.candidato) + ' (' + x.cargo + ', ' + x.uf + ')'}`))));
+      blocos.push(el('h3', {}, 'A própria empresa como doadora (pessoa jurídica)'), el('ul', { class: 'lista-simples' }, ex.doacoesPj.map((x) => el('li', {}, `${x.ano}: ${PF.nBRL.format(x.valor)} para ${x.tipo === 'partidos' ? 'órgão partidário ' + x.partido : nomeProprio(x.candidato) + ' (' + x.cargo + ', ' + x.uf + ')'}`))));
     }
     return el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Vínculos políticos e eleitorais'),
-      el('p', {}, 'Prestação de contas de campanhas e partidos e cadastro de candidaturas (TSE, 2018 a 2024) cruzados com os sócios. Provável: nome igual e seis dígitos do meio do CPF iguais. Confirmado: além disso, algum dado oficial coerente, como município do doador igual ao da sede da empresa ou faixa etária da Receita compatível com a data de nascimento do candidato. A conferir: só o nome coincide (o TSE oculta o CPF dos candidatos de 2024) ou há divergência de idade. Doação é ato legal e público; o dado mostra proximidade a conferir, não irregularidade. A ausência de registro não prova ausência de vínculo: parentes, doações por terceiros e eleições anteriores a 2018 não estão aqui.'))), ...blocos);
+      el('p', {}, 'O que a Justiça Eleitoral (TSE) registra sobre a empresa e seus sócios em 2018 a 2024, em quatro situações: sócios que doaram dinheiro a candidatos ou partidos; sócios que foram candidatos; campanhas e partidos que pagaram a própria empresa por algum serviço (aparecem como despesa na prestação de contas deles); e a empresa como doadora. Só aparece o que existir; o bloco inteiro some quando não há registro.'),
+      el('details', { class: 'fm-nota' }, el('summary', {}, 'Como ler os selos de confiança do vínculo'), el('p', {}, 'O cruzamento é feito pelo nome do sócio. Provável: nome igual e seis dígitos do meio do CPF iguais. Confirmado: além disso, algum dado oficial coerente, como município do doador igual ao da sede da empresa ou faixa etária da Receita compatível com a data de nascimento do candidato. A conferir: só o nome coincide (o TSE oculta o CPF dos candidatos de 2024) ou há divergência de idade. Doação é ato legal e público; o dado mostra proximidade a conferir, não irregularidade. A ausência de registro não prova ausência de vínculo: parentes, doações por terceiros e eleições anteriores a 2018 não estão aqui.')))), ...blocos);
+  }
+
+  // Atalhos de busca: o painel não liga a pessoa a nenhum perfil (não há chave pública e há homonímia); abre a pesquisa pelo nome e pela empresa.
+  function atalhosBusca(nome, empresa) {
+    const n = nomeProprio(nome), e = empresa ? nomeProprio(empresa).split(/\s+(ltda|s\/?a|eireli|me|epp)\b/i)[0] : '';
+    const q = (t) => encodeURIComponent(t);
+    const a = (rot, href) => el('a', { href, target: '_blank', rel: 'noopener noreferrer' }, rot);
+    return el('small', { class: 'atalhos-busca' }, 'Pesquisar: ', a('na web', `https://www.google.com/search?q=${q(`"${n}" ${e}`)}`), ' · ',
+      a('LinkedIn', `https://www.linkedin.com/search/results/people/?keywords=${q(`${n} ${e}`)}`), ' · ', a('Instagram', `https://www.google.com/search?q=${q(`site:instagram.com "${n}"`)}`));
   }
 
   // ---------- visão: fornecedor ----------
@@ -592,11 +607,11 @@
     f.alertas.length ? el('ul', { class: 'lista-alertas' }, f.alertas.map(([cod, n, txt]) => el('li', {}, selo(`${cod}:${n}`), ' ', txt))) : el('p', { class: 'vazio' }, 'Nenhum alerta para este fornecedor.'));
 
     const socios = el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Quadro societário'),
-      el('p', {}, `Receita Federal, publicação de ${dataBR(dados.receita)}. O CPF é mascarado pela própria Receita.`))),
+      el('p', {}, `Receita Federal, publicação de ${dataBR(dados.receita)}. O CPF é mascarado pela própria Receita. Os atalhos de pesquisa abrem uma busca pelo nome e pela empresa; o painel não associa o sócio a nenhum perfil, e homônimos são comuns: confira cidade, ocupação e empresa antes de concluir que é a mesma pessoa.`))),
     f.socios.length ? el('div', { class: 'rolagem' }, el('table', {},
       el('thead', {}, el('tr', {}, ['Sócio', 'Qualificação', 'Entrada', 'Outras empresas', 'Cruzamentos'].map((t) => el('th', {}, t)))),
       el('tbody', {}, f.socios.map((s) => el('tr', {},
-        el('td', {}, el('strong', {}, nomeProprio(s.nome)), el('small', {}, `${s.tipo === 'PF' ? 'Pessoa física' : s.tipo === 'PJ' ? 'Pessoa jurídica' : 'Exterior'} · ${s.doc}${s.faixa && s.faixa !== '0' ? ' · faixa etária ' + s.faixa : ''}`)),
+        el('td', {}, el('strong', {}, nomeProprio(s.nome)), el('small', {}, `${s.tipo === 'PF' ? 'Pessoa física' : s.tipo === 'PJ' ? 'Pessoa jurídica' : 'Exterior'} · ${s.doc}${s.faixa && s.faixa !== '0' ? ' · faixa etária ' + s.faixa : ''}`), s.tipo === 'PF' ? atalhosBusca(s.nome, f.fantasia || f.nome) : null),
         el('td', {}, s.qual), el('td', {}, dataBR(s.entrada)),
         el('td', {}, s.rede ? `${nInt.format(s.rede)} empresa${s.rede > 1 ? 's' : ''} no país` : '—'),
         el('td', {}, s.outros && s.outros.length ? el('div', {}, 'Também sócio de fornecedor(es) do Estado: ', s.outros.map((o, i) => [i ? ', ' : '',
@@ -604,17 +619,53 @@
         s.servidor && s.servidor.length ? el('small', { class: 'aviso-inline' }, `Nome igual ao de servidor ativo (${s.servidor.slice(0, 4).join(', ')}); pode ser homonímia.`) : null))))))
       : el('p', { class: 'vazio' }, 'Quadro societário não disponível.'));
 
+    const [aAnt, aAtu] = dados.anosGasto;
+    const ate = (dados.ref || '').slice(0, 7);
+    // detalhe de um órgão: pagamentos mês a mês desde jan/2025 e os contratos do fornecedor no órgão, com objeto e nº do processo
+    function detalheOrgao(o) {
+      const cx = el('div', { class: 'detalhe-orgao' });
+      const totMensal = soma(o.mensal, (m) => m[1]);
+      cx.append(el('h3', {}, `Pagamentos de ${rotuloMes(o.mensal.length ? o.mensal[0][0] : '2025-01', true)} a ${rotuloMes(o.mensal.length ? o.mensal[o.mensal.length - 1][0] : ate, true)}: ${brlCompacto(totMensal)}`),
+        el('p', { class: 'fm-nota' }, 'Valor pago pelo órgão a este CNPJ, mês a mês (SIGEFES, despesa paga), com ou sem contrato. O mês corrente está incompleto.'));
+      if (o.mensal.length) {
+        const g = el('div', { class: 'grafico' }); cx.append(g);
+        graficoBarras(g, { meses: o.mensal.map((m) => m[0]), rotulo: (m) => rotuloMes(m), rotuloLongo: (m) => rotuloMes(m, true), eixo: brlCompacto, fmt: brlCompacto, series: [{ nome: 'Pago', cor: 'var(--serie-1)', barra: true, vals: o.mensal.map((m) => m[1]) }] });
+      }
+      const nCt = o.contratos.length;
+      const somaCt = soma(o.contratos, (c) => c[9]);
+      cx.append(el('h3', {}, `Contratos deste fornecedor no órgão (${nInt.format(nCt)}${o.ct > nCt ? ' de ' + nInt.format(o.ct) : ''})`),
+        el('p', { class: 'fm-nota' }, `Instrumentos do SIGA, vigentes ou com pagamento desde ${MANDATO}. O pago de cada contrato soma só os empenhos que o SIGA liga a ele (${brlCompacto(somaCt)} no conjunto); o órgão pagou ${brlCompacto(o.pagoMandato)} ao CNPJ desde ${MANDATO}. Quando a diferença é grande, há pagamento sem vínculo com contrato no SIGA (instrumento anterior, compra avulsa ou empenho não registrado).`));
+      cx.append(nCt ? el('div', { class: 'rolagem' }, el('table', {},
+        el('thead', {}, el('tr', {}, [['Contrato e objeto'], ['Vigência'], ['Por ano', 1], [`Pago desde ${MANDATO}`, 1], [`Pago em ${aAtu}`, 1], ['Processo']].map(([t, n]) => el('th', { class: n ? 'num' : '' }, t)))),
+        el('tbody', {}, o.contratos.map(([doc, proc, objeto, sit, ini, fim, anual, vfin, vig, pMand, pAnt, pAtu]) => el('tr', {},
+          el('td', { class: 'objeto' }, el('strong', {}, doc), el('br'), objeto, el('small', {}, sit + (vig ? '' : ' · não vigente'))),
+          el('td', {}, `${dataBR(ini)} a ${dataBR(fim)}`, el('small', {}, vig && fim ? 'faltam ' + duracao(mesesAte(fim)) : '')),
+          el('td', { class: 'num' }, brlCompacto(anual), el('small', {}, 'total ' + brlCompacto(vfin))),
+          el('td', { class: 'num' }, pMand > 0 ? brlCompacto(pMand) : '—'), el('td', { class: 'num' }, pAtu > 0 ? brlCompacto(pAtu) : '—'),
+          el('td', {}, proc, el('small', {}, el('button', { type: 'button', class: 'botao-link', onclick: (ev) => { ev.stopPropagation(); (navigator.clipboard ? navigator.clipboard.writeText(proc) : Promise.reject()).then(() => { ev.target.textContent = 'copiado'; }, () => {}); } }, 'copiar nº'),
+            ' · ', el('a', { href: 'https://edocs.es.gov.br', target: '_blank', rel: 'noopener noreferrer' }, 'e-Docs'))))))))
+        : el('p', { class: 'vazio' }, 'Nenhum contrato vigente nem com pagamento ligado a empenho neste órgão.'));
+      cx.append(el('p', { class: 'fm-nota' }, 'Não constam nos dados abertos do SIGA: o fiscal do contrato (nome e portaria de designação), a nota de empenho por contrato com a liquidação e os documentos do processo. O número do processo é o registrado no SIGA; não confirmei que ele seja o protocolo do e-Docs, cuja consulta pública costuma pedir o número do protocolo. O pedido do fiscal e do gestor já consta em Informações a solicitar (painel Transição).'));
+      cx.append(el('div', { class: 'ferramentas' }, el('button', { type: 'button', class: 'botao', onclick: () => irOrg(o.id) }, 'Abrir o órgão: ' + o.nome)));
+      return cx;
+    }
     const orgs = el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Quem contrata este fornecedor'),
-      el('p', {}, 'Instrumentos registrados no SIGA desde 2016; empenhado é o total acumulado e o recente refere-se a ' + dados.anosGasto.join('–') + '.'))),
+      el('p', {}, `Contratos do SIGA (desde 2016) e pagamentos do SIGEFES, por órgão. Pago desde ${MANDATO} cobre a gestão atual; empenhado e pago em ${aAtu} vão até ${dataBR(dados.ref)}. Clique no órgão para ver os pagamentos mês a mês, os contratos, o objeto e o número do processo.`))),
     el('div', { class: 'rolagem' }, el('table', {},
-      el('thead', {}, el('tr', {}, [['Órgão'], ['Contratos', 1], ['Vigentes', 1], ['Por ano (vigentes)', 1], ['Pago recente', 1], ['Pago desde 2021', 1], ['Empenhado total', 1], ['Empenhado recente', 1]].map(([t, n]) => el('th', { class: n ? 'num' : '' }, t)))),
-      el('tbody', {}, f.orgaos.map(([id, nome, nct, vig, anual, empT, empR, pagoR, pagoT]) => el('tr', { class: 'clicavel', tabindex: '0', onclick: () => irOrg(id), onkeydown: (ev) => { if (ev.key === 'Enter') irOrg(id); } },
-        el('td', {}, el('strong', {}, nome)), el('td', { class: 'num' }, nInt.format(nct)), el('td', { class: 'num' }, nInt.format(vig)),
-        el('td', { class: 'num' }, brlCompacto(anual)), el('td', { class: 'num' }, brlCompacto(pagoR)), el('td', { class: 'num' }, brlCompacto(pagoT)), el('td', { class: 'num' }, brlCompacto(empT)), el('td', { class: 'num' }, brlCompacto(empR))))))));
+      el('thead', {}, el('tr', {}, [['Órgão'], ['Contratos', 1], ['Vigentes', 1], ['Por ano (vigentes)', 1], [`Empenhado em ${aAtu}`, 1], [`Pago em ${aAtu}`, 1], [`Pago desde ${MANDATO}`, 1]].map(([t, n]) => el('th', { class: n ? 'num' : '' }, t)))),
+      el('tbody', {}, f.orgaos.flatMap((o) => {
+        const detalhe = el('tr', { class: 'detalhe-linha', hidden: true }, el('td', { colspan: 7 }));
+        const abrir = (ev) => { const aberta = detalhe.hidden; detalhe.hidden = !aberta; ev.currentTarget.classList.toggle('aberta', aberta); ev.currentTarget.setAttribute('aria-expanded', String(aberta)); if (aberta && !detalhe.firstChild.firstChild) detalhe.firstChild.append(detalheOrgao(o)); };
+        const tr = el('tr', { class: 'clicavel', tabindex: '0', 'aria-expanded': 'false', onclick: abrir, onkeydown: (ev) => { if (ev.key === 'Enter') abrir(ev); } },
+          el('td', {}, el('strong', {}, o.nome)), el('td', { class: 'num' }, nInt.format(o.ct)), el('td', { class: 'num' }, nInt.format(o.vig)),
+          el('td', { class: 'num' }, brlCompacto(o.anual)), el('td', { class: 'num' }, brlCompacto(o.empAtu)), el('td', { class: 'num' }, brlCompacto(o.pagoAtu)), el('td', { class: 'num' }, brlCompacto(o.pagoMandato)));
+        if (estado.abrirOrg === o.id) { estado.abrirOrg = null; setTimeout(() => tr.click(), 0); }
+        return [tr, detalhe];
+      })))));
     const r = f.resumo;
     const faixa = r ? el('div', { class: 'kpis' },
-      kpi('Contratado por ano', brlCompacto(r.anual), r.vig ? `${nInt.format(r.vig)} contrato(s) vigente(s) · empenhado em ${dados.anosGasto.join('–')}: ${brlCompacto(r.emp)}` : `sem contrato vigente · empenhado em ${dados.anosGasto.join('–')}: ${brlCompacto(r.emp)}`),
-      kpi('Recebeu de fato', brlCompacto(r.pago), `pago em ${dados.anosGasto.join('–')}, por todos os órgãos (SIGEFES)`),
+      kpi('Contratado por ano', brlCompacto(r.anual), (r.vig ? `${nInt.format(r.vig)} contrato(s) vigente(s)` : 'sem contrato vigente') + ` · fonte: contratos do SIGA · empenhado em ${dados.anosGasto.join('–')}: ${brlCompacto(r.emp)}`),
+      kpi('Recebeu de fato', brlCompacto(r.pago), `pago em ${dados.anosGasto.join('–')}, por todos os órgãos · fonte: despesa paga no SIGEFES`),
       kpi('Desde quando', r.desde ? String(r.desde.slice(0, 4)) : '—', r.desde ? `primeiro instrumento registrado em ${dataBR(r.desde)}${r.desde.startsWith('2016') ? ' (a base começa em 2016)' : ''} · ${(anosDesde(r.desde) || 0).toLocaleString('pt-BR', { maximumFractionDigits: 1 })} anos` : ''),
       kpi('Por mais quanto tempo', r.ate ? duracao(mesesAte(r.ate)) : '—', r.ate ? `contratos vigentes até ${dataBR(r.ate)}` : 'sem contrato vigente'),
       kpi('Ainda a receber', brlCompacto(r.restante), 'estimativa: valor anual × tempo restante de cada contrato'),
@@ -623,7 +674,7 @@
     if (r && r.pagoAno && Object.keys(r.pagoAno).length) {
       const anos = Object.keys(r.pagoAno);
       cPagos = el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Quanto recebeu, ano a ano'),
-        el('p', {}, `Valor pago pelo Estado ao CNPJ em cada ano (${anos[0]}–${anos[anos.length - 1]}), todos os órgãos. O ano corrente está incompleto.`))));
+        el('p', {}, `Valor pago pelo Estado ao CNPJ em cada ano (${anos[0]}–${anos[anos.length - 1]}), todos os órgãos, conforme o SIGEFES (despesa paga). O ano corrente está incompleto.`))));
       graficoBarras(cPagos, { meses: anos, rotulo: (m) => m, rotuloLongo: (m) => m, eixo: brlCompacto, fmt: brlCompacto,
         series: [{ nome: 'Pago', cor: 'var(--serie-1)', barra: true, vals: anos.map((a) => r.pagoAno[a]) }] });
     }
@@ -860,7 +911,7 @@
     return diag;
   }
   const INTERNOS = /^(socio_servidor|socio_em_comum|doacao_|socio_candidato|fornecedor_campanha|rede_grande|endereco_comum)/;
-  const BASES_DG = { anual: ['Compromisso anual', (k) => k.anual], restante: ['Ainda a receber (estimativa)', (k) => k.restante], vfin: ['Valor total do contrato', (k) => k.vfin] };
+  const BASES_DG = { anual: ['Compromisso anual', (k) => k.anual], pago: ['Pago desde 2023 (empenhos do contrato)', (k) => k.pago23], restante: ['Ainda a receber (estimativa)', (k) => k.restante], vfin: ['Valor total do contrato', (k) => k.vfin] };
   const relevantes = (k, restrito) => k.alertas.filter((a) => !a.endsWith(':i') && (restrito || !INTERNOS.test(a)));
   const nivelMax = (lista) => (lista.some((a) => a.endsWith(':a')) ? 'a' : lista.some((a) => a.endsWith(':m')) ? 'm' : 'i');
 
@@ -964,8 +1015,10 @@
     const { classeA, kA, total, valorDe } = R_;
     const comAlerta = classeA.filter((r) => relevantes(r.k, true).length);
     const comAlto = classeA.filter((r) => relevantes(r.k, true).some((a) => a.endsWith(':a')));
+    const pagoPrincipais = { empenhos: soma(classeA, (r) => r.k.pago23), fornecedor: soma([...new Map(classeA.map((r) => [r.k.org + '|' + r.k.cnpj, r.k])).values()], (k) => k.pagoForn23) };
     const kp = el('div', { class: 'kpis' },
       kpi('Contratos que somam o corte', `${nInt.format(kA)} de ${nInt.format(R_.universo.length)}`, `${pct(kA / (R_.universo.length || 1))} dos contratos vigentes concentram ${D.corte}% de ${brlCompacto(total)}`),
+      kpi('Pago desde 2023', brlCompacto(pagoPrincipais.empenhos), `nos empenhos ligados a estes ${nInt.format(kA)} contratos; o órgão pagou ${brlCompacto(pagoPrincipais.fornecedor)} aos mesmos fornecedores, com ou sem contrato (SIGEFES)`),
       kpi('Valor dos contratos principais', brlCompacto(soma(classeA, (r) => r.v)), R_.rotBase.toLowerCase()),
       kpi('Com algum alerta', `${nInt.format(comAlerta.length)} (${pct(comAlerta.length / (kA || 1))})`, `${brlCompacto(soma(comAlerta, (r) => r.v))} · ${pct(soma(comAlerta, (r) => r.v) / (soma(classeA, (r) => r.v) || 1))} do valor dos contratos principais`, 'alerta'),
       kpi('Com alerta alto', `${nInt.format(comAlto.length)}`, `${brlCompacto(soma(comAlto, (r) => r.v))} · ${nInt.format(new Set(comAlto.map((r) => r.k.org)).size)} órgãos`, 'alerta'),
@@ -973,13 +1026,13 @@
 
     const caixa = el('div', { class: 'grafico' });
     const controles = el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Diagnóstico dos contratos de maior valor'),
-      el('p', {}, 'Todos os contratos vigentes do Estado, do maior para o menor valor. A análise cuidadosa parte dos contratos principais: os poucos contratos que, somados, respondem pelo corte escolhido (80% do valor, por padrão; é a regra de Pareto). Os alertas são sinais de triagem e a coluna "o que esclarecer" orienta a conferência.'))),
+      el('p', {}, `Contratos vigentes do Estado com valor anual registrado, do maior para o menor: ${nInt.format(todos.length)} vigentes na visão geral${todos.length !== R_.universo.length ? `, dos quais ${nInt.format(R_.universo.length)} entram aqui (${[todos.filter((k) => !(valorDe(k) > 0)).length ? nInt.format(todos.filter((k) => !(valorDe(k) > 0)).length) + ' sem valor nesta medida' : '', !D.pub ? nInt.format(todos.filter((k) => k.pub && valorDe(k) > 0).length) + ' de bancos e entes públicos ocultos' : ''].filter(Boolean).join('; ')})` : ''}. A análise cuidadosa parte dos contratos principais: os poucos contratos que, somados, respondem pelo corte escolhido (80% do valor, por padrão; é a regra de Pareto). Os alertas são sinais de triagem e a coluna "o que esclarecer" orienta a conferência.`))),
     el('div', { class: 'filtros' },
       el('label', {}, 'Medida', el('select', { onchange: (ev) => { D.base = ev.target.value; D.mais = 25; render(true); } }, Object.entries(BASES_DG).map(([k, [r]]) => el('option', { value: k, selected: k === D.base }, r)))),
       el('label', {}, `Corte: ${D.corte}% do valor`, el('input', { type: 'range', min: 50, max: 95, step: 5, value: D.corte,
         oninput: (ev) => { ev.target.previousSibling.textContent = `Corte: ${ev.target.value}% do valor`; }, onchange: (ev) => { D.corte = Number(ev.target.value); D.mais = 25; render(true); } }))),
     el('div', { class: 'filtro-cond' }, el('button', { type: 'button', class: 'chip-filtro', 'aria-pressed': String(D.pub), title: 'Bancos, empresas públicas, autarquias e prefeituras',
-      onclick: () => { D.pub = !D.pub; D.mais = 25; render(true); } }, 'Incluir bancos, entes públicos e prefeituras')),
+      onclick: () => { D.pub = !D.pub; estado.par.pub = D.pub; D.mais = 25; render(true); } }, 'Incluir bancos, entes públicos e prefeituras')),
     caixa);
     curvaDiag(caixa, R_.serie, kA, D.corte / 100);
 
@@ -1032,15 +1085,15 @@
       el('td', {}, String(r.rank)),
       el('td', { class: 'objeto' }, el('strong', {}, nomeProprio(k.forn)), marcado ? el('span', { class: 'selo n-m' }, el('b', {}, '⚑'), ' na lista de revisão') : null, el('small', {}, k.orgNome), el('small', {}, k.objeto.length > 140 ? k.objeto.slice(0, 140) + '…' : k.objeto)),
       el('td', {}, k.cat, el('small', {}, k.modal + (k.rp ? ' · registro de preços' : '')), tagEss(k.ess)),
-      el('td', { class: 'num' }, brlCompacto(r.v), el('small', {}, 'acum. ' + pct(r.cum)), k.pago > 0 ? el('small', {}, 'pago ' + brlCompacto(k.pago)) : null),
+      el('td', { class: 'num' }, brlCompacto(r.v), el('small', {}, 'acum. ' + pct(r.cum)), k.pago23 > 0 ? el('small', {}, `pago desde ${MANDATO} ${brlCompacto(k.pago23)}`) : el('small', {}, `nada pago desde ${MANDATO} nos empenhos do contrato`)),
       el('td', {}, dataBR(k.fimef), el('small', {}, k.fimef ? 'faltam ' + duracao(mesesAte(k.fimef)) : 'sem prazo'), el('small', {}, 'desde ' + dataBR(k.ini))),
       el('td', {}, rel.length ? selos(rel, 3) : el('small', {}, 'sem alerta')));
       if (!aberto) return [tr];
       const dl = el('dl', { class: 'detalhes' }, ...[['Objeto', k.objeto], ['Instrumento', `${k.doc} · processo ${k.proc}`], ['Fornecedor', `${nomeProprio(k.forn)} · ${cnpjFmt(k.cnpj)}`],
         ['Vigência', `${dataBR(k.ini)} a ${dataBR(k.fim)}` + (k.fimef !== k.fim ? ` (com aditivos: até ${dataBR(k.fimef)})` : '')], ['Valor inicial → final', `${brlCompacto(k.vini)} → ${brlCompacto(k.vfin)}`],
-        ['Ainda a receber (estimativa)', brlCompacto(k.restante)], ['Pago nos empenhos do contrato', k.pago > 0 ? `${brlCompacto(k.pago)} desde 2021` : 'nenhum pagamento vinculado'], ['Situação no SIGA', k.sit]].flatMap(([t, v]) => [el('dt', {}, t), el('dd', {}, v)]));
+        ['Ainda a receber (estimativa)', brlCompacto(k.restante)], ['Pago nos empenhos do contrato', k.pago > 0 ? `${brlCompacto(k.pago23)} desde ${MANDATO} (${dados.anosGasto[0]}: ${brlCompacto(k.pagoAnt)} · ${dados.anosGasto[1]}: ${brlCompacto(k.pagoAtu)}); ${brlCompacto(k.pago)} desde 2021` : 'nenhum pagamento vinculado aos empenhos do contrato'], [`Pago pelo órgão ao fornecedor desde ${MANDATO}`, `${brlCompacto(k.pagoForn23)}, com ou sem contrato (SIGEFES)` + (k.pagoForn23 > 0 && k.pago23 < 0.5 * k.pagoForn23 ? ': parte relevante não está ligada a este contrato (instrumento anterior, compra avulsa ou empenho sem vínculo no SIGA)' : '')], ['Situação no SIGA', k.sit]].flatMap(([t, v]) => [el('dt', {}, t), el('dd', {}, v)]));
       const esc = rel.length ? el('ul', { class: 'lista-alertas' }, rel.map((a) => { const cod = a.split(':')[0]; return el('li', {}, selo(a), ' ', dados.alertas[cod].descricao, el('div', { class: 'esclarecer' }, el('b', {}, 'O que esclarecer: '), textoEsclarecer(cod))); })) : null;
-      return [tr, el('tr', { class: 'detalhe-linha' }, el('td', { colspan: 6 }, dl, esc, formRevisao(org, k), el('button', { type: 'button', class: 'botao', onclick: (ev) => { ev.stopPropagation(); irForn(k.cnpj, k.org); } }, 'Ficha do fornecedor e sócios')))];
+      return [tr, el('tr', { class: 'detalhe-linha' }, el('td', { colspan: 6 }, dl, esc, formRevisao(org, k), el('button', { type: 'button', class: 'botao', onclick: (ev) => { ev.stopPropagation(); estado.abrirOrg = k.org; irForn(k.cnpj, k.org); } }, 'Seguir o dinheiro: pagamentos mês a mês, contratos e sócios')))];
     });
     const tabela = el('div', { class: 'rolagem' }, el('table', {},
       el('thead', {}, el('tr', {}, ['#', 'Fornecedor, órgão e objeto', 'Tipo', R_.rotBase, 'Até quando', 'Alertas'].map((t, n) => el('th', { class: n === 3 ? 'num' : '' }, t)))),
@@ -1079,8 +1132,8 @@
   }
   function csvDiag(lista) {
     const aspas = (v) => '"' + String(v ?? '').replace(/"/g, '""') + '"';
-    const cab = ['Posição', 'Órgão', 'Fornecedor', 'CNPJ', 'Objeto', 'Tipo de objeto', 'Modalidade', 'Instrumento', 'Valor medido', '% acumulado', 'Valor final', 'Por ano', 'Ainda a receber', 'Pago desde 2021', 'Vigência até', 'Alertas', 'O que esclarecer'];
-    const l = lista.map((r) => [r.rank, r.k.orgNome, r.k.forn, r.k.cnpj, r.k.objeto, r.k.cat, r.k.modal, r.k.doc, r.v, (r.cum * 100).toFixed(1), r.k.vfin, r.k.anual, r.k.restante, r.k.pago, r.k.fimef,
+    const cab = ['Posição', 'Órgão', 'Fornecedor', 'CNPJ', 'Objeto', 'Tipo de objeto', 'Modalidade', 'Instrumento', 'Valor medido', '% acumulado', 'Valor final', 'Por ano', 'Ainda a receber', 'Pago desde 2021 (empenhos do contrato)', 'Pago desde 2023 (empenhos do contrato)', 'Pago desde 2023 pelo órgão ao fornecedor', 'Vigência até', 'Alertas', 'O que esclarecer'];
+    const l = lista.map((r) => [r.rank, r.k.orgNome, r.k.forn, r.k.cnpj, r.k.objeto, r.k.cat, r.k.modal, r.k.doc, r.v, (r.cum * 100).toFixed(1), r.k.vfin, r.k.anual, r.k.restante, r.k.pago, r.k.pago23, r.k.pagoForn23, r.k.fimef,
       relevantes(r.k, true).map((a) => dados.alertas[a.split(':')[0]].titulo).join(' | '), relevantes(r.k, false).map((a) => textoEsclarecer(a.split(':')[0])).join(' | ')]);
     return '﻿' + [cab, ...l].map((x) => x.map(aspas).join(';')).join('\r\n');
   }
@@ -1173,7 +1226,7 @@
       el('p', {}, `Fontes: ${dados.fonte.contratos}; ${dados.fonte.cadastro}; e a folha de pagamento do Poder Executivo (módulo Cargos), para o cruzamento de nomes de sócios com servidores. Posição em ${dataBR(dados.ref)}.`),
       el('p', {}, 'Desde quando é a data do primeiro instrumento registrado do fornecedor no SIGA (a base começa em 2016). Ainda a receber é uma estimativa linear: valor anual do contrato vezes o tempo que falta, limitado ao valor final. A essencialidade é uma classificação sugerida pelo tipo de objeto (essencial, suporte, investimento, discricionário), para orientar a conversa com o gestor, não para decidir por ele.'),
       el('p', {}, 'Contrato vigente é o instrumento do tipo contrato, carta-contrato ou termo de adesão cuja data final, já considerados os aditivos de prazo, não passou, e cuja situação não é de encerramento, rescisão ou anulação. Compras avulsas (autorizações de compra, ordens de fornecimento e de serviço, notas de empenho) não entram na lista de vigentes, mas entram nos totais empenhados e na contratação direta.'),
-      el('p', {}, 'Valor final é o valor total do instrumento. Em registros de preços, costuma ser o máximo estimado, não o que será executado. Compromisso anual é o valor final dividido pela duração em meses (no mínimo 12) e multiplicado por 12. Saldo a executar é o valor final menos o total empenhado no instrumento. Empenhado é o valor empenhado no ano, conforme o SIGA, que não cobre toda a execução. Pago vem da execução da despesa do SIGEFES (Portal da Transparência, despesas): somam-se os pagamentos aos CNPJs que aparecem nos contratos, por unidade gestora, ligada ao órgão do SIGA pelo número do empenho. No contrato, o pago soma só os empenhos que o SIGA vincula a ele e cobre de 2021 em diante; no órgão e na ficha do fornecedor, é tudo o que o órgão pagou ao CNPJ, com ou sem contrato.'),
+      el('p', {}, 'Valor final é o valor total do instrumento. Em registros de preços, costuma ser o máximo estimado, não o que será executado. Compromisso anual é o valor final dividido pela duração em meses (no mínimo 12) e multiplicado por 12. Saldo a executar é o valor final menos o total empenhado no instrumento. Empenhado é o valor empenhado no ano, conforme o SIGA, que não cobre toda a execução. Pago vem da execução da despesa do SIGEFES (Portal da Transparência, despesas): somam-se os pagamentos aos CNPJs que aparecem nos contratos, por unidade gestora, ligada ao órgão do SIGA pelo número do empenho. No contrato, o pago soma só os empenhos que o SIGA vincula a ele (o painel mostra desde 2023, início da gestão atual, e desde 2021); no órgão e na ficha do fornecedor, é tudo o que o órgão pagou ao CNPJ, com ou sem contrato. Contagens: a visão geral conta contratos vigentes; a regra de Pareto de fornecedores conta CNPJs; os contratos principais contam contratos com valor anual registrado.'),
       el('p', {}, 'O tipo de objeto é uma classificação automática por palavras-chave e serve apenas para triagem. Os alertas são regras objetivas, listadas abaixo; indicam onde vale olhar primeiro e não provam irregularidade. A comparação de preços entre contratações ainda não foi feita.'),
       el('ul', { class: 'lista-metodo' }, lista));
     $('#mesref').textContent = 'Referência: ' + dataBR(dados.ref);
