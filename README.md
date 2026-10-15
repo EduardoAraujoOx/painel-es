@@ -4,12 +4,12 @@ Painel de acesso restrito para diagnósticos fiscais e de pessoal do Poder Execu
 
 | Módulo | Conteúdo | Situação |
 |---|---|---|
-| `cargos` | Cargos em comissão e funções gratificadas: quadro, custo mensal, tempo na função, entradas e saídas | em operação |
+| `cargos` | Servidores e cargos de confiança: quadro de servidores do Executivo, cargos em comissão e funções gratificadas, custo mensal, tempo na função e a ficha da folha de cada pessoa | em operação |
 | `organograma` | Árvore de unidades de um órgão com as pessoas de cada uma, a condição (sem vínculo efetivo, servidor de carreira, função gratificada) e a remuneração somando carreira e cargo | em operação, com a estrutura oficial de 55 órgãos |
 
 ## Módulo `cargos`
 
-Navegação do governo para o órgão, do órgão para a função e da função para o ocupante: mapa de blocos por órgão (área proporcional ao custo mensal ou ao número de ocupantes), barras por cargo e função, série mensal de ocupantes, entradas e saídas por mês, e tabela de ocupantes com tempo na função, provimento e valor do cargo, exportável em CSV. SEFAZ e SEP aparecem em destaque.
+Navegação do governo para o órgão, do órgão para a função e da função para o ocupante: mapa de blocos por órgão (área proporcional ao custo mensal ou ao número de ocupantes), barras por cargo e função, série mensal de ocupantes, e tabela de ocupantes com tempo na função, provimento e valor do cargo, exportável em CSV. SEFAZ e SEP aparecem em destaque.
 
 ### Fonte dos dados
 
@@ -27,7 +27,7 @@ Para cargo em comissão: vencimento do cargo comissionado (puro ou de servidor c
 
 O **tempo na função** é inferido pela primeira competência, dentro da janela extraída, em que a pessoa aparece de forma contínua na mesma função; "≤" indica que já ocupava a função na primeira competência da janela.
 
-**Entradas e saídas** comparam cada mês com o anterior, por pessoa e tipo, dentro do órgão (mudança de órgão conta como saída num e entrada noutro).
+As entradas e saídas por mês continuam calculadas em `montar.py` (campos da série), mas não são mais exibidas: não ajudavam a decidir nada.
 
 ### Como atualizar os dados
 
@@ -221,11 +221,15 @@ Tela do painel Pessoal (módulo `politico`, dados em `data/politico/`, gerados p
 
 Privacidade. É dado pessoal sensível (opinião política de pessoas identificadas), construído sobre fontes públicas (folha, base de vínculos e prestação de contas do TSE). Por decisão do dono do painel, enquanto o endereço não é divulgado, tanto o agregado (`data/politico/index.json`) quanto a lista nominal (`data/politico/pessoas.json`) estão versionados em repositório público e são entregues com o painel aberto. Isso significa que qualquer pessoa que encontre o repositório pode lê-los, com ou sem senha, e que o que já foi publicado não pode ser recolhido por completo (histórico, cópias e índices). Antes de divulgar o link, o caminho prudente é tornar o repositório privado, religar a senha (`acesso.json`) e voltar a restringir a lista nominal (`SO_COM_SENHA` em `api/dados.js`).
 
-### Pessoal pago fora da folha (fundos)
+### Servidores, ficha da pessoa e pagamentos por fundos
 
-Alguns pagamentos a pessoal saem de fundos, com unidade gestora própria, e por isso não entram na despesa de pessoal do órgão. Dois casos identificados: a indenização de transporte dos Auditores Fiscais da Receita Estadual, paga pelo Funsefaz (UG 220901, elemento 3.3.90.93, favorecido pessoa física, histórico com art. 58 da LC 737/2013), e a folha complementar paga pelo fundo da PGE (UG 160901, histórico "folha": auxílio-saúde e licenças compensatórias dos procuradores, bolsa de residência jurídica e estagiários, despesas de exercícios anteriores da folha). `pipeline/cargos/complementos.py` lê a execução da despesa (SIGEFES) de 2024 em diante, aplica as regras declaradas em `REGRAS` (unidade gestora, elemento, tipo de favorecido e texto do histórico) e gera `data/cargos/complementos.json` com a série mensal de pago (mais restos a pagar pagos) e, quando o favorecido é pessoa física, o número de favorecidos distintos por mês, sem nomes nem CPFs. O módulo Cargos mostra um cartão "Pessoal pago fora da folha" na página do órgão correspondente e uma tabela-resumo na visão do governo, sem alterar o resto do painel. Para incluir outro caso, basta acrescentar uma regra em `REGRAS` e rodar o script.
+Visão geral. A tela inicial do painel Pessoal abre com o quadro de servidores do Poder Executivo, e não só com os cargos de confiança: `pipeline/cargos/servidores.py` lê a folha do último mês (uma linha por rubrica) e conta as pessoas ativas de cada órgão (matrícula e vínculo, sem inativos e pensionistas), soma as vantagens correntes do mês (sem 13º, férias, rescisão e resíduos de acerto) e classifica o tipo de vínculo pela base de vínculos (efetivo, contrato temporário, comissionado...). O seletor "Servidores" alterna entre todos os servidores e só os cargos em comissão e funções gratificadas; no órgão, o quadro aparece no topo. A lista nominal continua só para quem tem cargo ou função. Parte dos servidores (cerca de 10%) não tem o tipo de vínculo identificado na base, e a tela diz isso.
 
-Cuidados: o valor é o pago, de modo que o último mês da série é cortado na competência da folha (o mês corrente da execução está incompleto); na PGE a folha é paga em bloco, então não há como contar pessoas; o que conta como "pessoal" na PGE (por exemplo, bolsas de residência) é uma decisão de classificação que o painel deixa visível por componente. A leitura da execução confere o término de cada download e repete a fatia que falhar (nas primeiras execuções, quedas de conexão fizeram perder pagamentos sem aviso; a mesma proteção ainda precisa ser aplicada ao pipeline de contratos).
+Ficha da pessoa. Ao clicar num ocupante (em Servidores e cargos, em Vínculos políticos ou em Pagamentos por fundos), abre a ficha (`public/ficha.js`) com a composição da folha do mês, rubrica por rubrica, em vantagens e descontos, agrupadas (cargo ou função, carreira, desempenho, gratificações, auxílios, 13º e férias). As rubricas que entram no valor do cargo (`regras.rubricas_do_cargo`) vêm em destaque e saem de `montar.py` junto de cada ocupante (`rub`). A ficha mostra quanto o cargo representa na remuneração corrente e uma estimativa do efeito de retirá-lo: como o abate do teto constitucional (rubrica "Abate teto EC 41") encolhe primeiro quando a remuneração sujeita ao teto cai, a redução real pode ser menor do que o valor do cargo. A folha não traz CPF, então um segundo vínculo da mesma pessoa em outro órgão não é somado.
+
+Pagamentos por fundos. Alguns pagamentos a pessoal saem de fundos, com unidade gestora própria, e por isso não entram na despesa de pessoal do órgão. Dois casos: a indenização de transporte dos Auditores Fiscais da Receita Estadual, paga pelo Funsefaz (UG 220901, elemento 3.3.90.93, favorecido pessoa física), e a folha complementar paga pelo fundo da PGE (UG 160901). `pipeline/cargos/complementos.py` lê a execução da despesa (SIGEFES) de 2024 em diante, aplica as regras de `REGRAS` e gera `data/cargos/complementos.json` (séries mensais e componentes) e, em `.cache/fundos/`, o pago a cada favorecido pessoa física por mês. `pipeline/pessoalfundos/montar.py` liga cada favorecido do Funsefaz à folha da SEFAZ pelo nome normalizado, dentro do órgão, e gera `data/pessoalfundos/` com a média mensal dos últimos 12 meses, o último mês, a remuneração corrente da folha e a soma dos dois, por pessoa. A tela "Pagamentos por fundos" lista quem recebe, a lotação e quanto o pagamento acrescenta, com a ficha da pessoa ao clicar. O programa de remuneração por desempenho da SEFAZ não vem do fundo: é a rubrica "Bonificação por desempenho", paga pela folha, e aparece na ficha de cada pessoa. Na PGE a folha é paga em bloco (o favorecido é a própria folha), então só há séries e componentes; o pagamento nominal está em Informações a solicitar. A leitura da execução confere o término de cada download e repete a fatia que falhar.
+
+Privacidade. A ficha e a lista de pagamentos por fundos expõem nomes e a composição da folha de agentes públicos, a partir de fontes públicas (Portal da Transparência e SIGEFES). Valem os mesmos cuidados já descritos em Vínculos políticos: repositório público, endereço ainda não divulgado.
 
 ### Atribuição do pago a órgãos: regra determinística
 

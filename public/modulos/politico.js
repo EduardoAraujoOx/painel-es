@@ -63,11 +63,19 @@
   }
 
   function cartaoCandidatos(g) {
-    const lista = grupoCands(g);
+    const lista = grupoCands(g).sort((a, b) => b.ano - a.ano || b.valor - a.valor);
+    const e = est[g];
     const governadores = g === 'executivo' ? textoGovernadores() : null;
-    const linhas = lista.map((c) => el('tr', {}, el('td', {}, String(c.ano) + (c.ano === 2026 ? ' (parcial)' : '')), el('td', {}, el('strong', {}, nome(c.nome)), el('small', {}, c.partido + ' · ' + c.cargo)),
-      el('td', {}, rotuloResultado(c) || '—'), el('td', { class: 'num' }, nInt.format(c.pessoas)), el('td', { class: 'num' }, brl(c.valor))));
+    const escolher = (c) => { const k = c.ano + '|' + c.sq; e.cand = e.cand === k ? '' : k; e.mais = 25; render(); if (e.cand) setTimeout(() => { const alvo = raiz.querySelector('#lista-doadores'); if (alvo) alvo.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 30); };
+    const linhas = lista.map((c) => {
+      const marcado = e.cand === c.ano + '|' + c.sq;
+      return el('tr', { class: 'clicavel' + (marcado ? ' marcada' : ''), tabindex: '0', 'aria-pressed': String(marcado), title: marcado ? 'Clique para remover o filtro' : 'Clique para ver os ocupantes que doaram a este candidato',
+        onclick: () => escolher(c), onkeydown: (ev) => { if (ev.key === 'Enter') escolher(c); } },
+      el('td', {}, String(c.ano) + (c.ano === 2026 ? ' (parcial)' : '')), el('td', {}, el('strong', {}, nome(c.nome)), el('small', {}, c.partido + ' · ' + c.cargo)),
+      el('td', {}, rotuloResultado(c) || '—'), el('td', { class: 'num' }, nInt.format(c.pessoas)), el('td', { class: 'num' }, brl(c.valor)));
+    });
     return el('div', { class: 'cartao' }, el('h2', {}, 'Por candidato'), governadores ? el('p', { class: 'fm-intro' }, governadores) : null,
+      el('p', { class: 'sub' }, 'Clique num candidato para listar, logo abaixo, os ocupantes que doaram a ele.'),
       el('div', { class: 'rolagem' }, el('table', {}, el('thead', {}, el('tr', {}, ['Eleição', 'Candidato', 'Resultado', 'Ocupantes doadores', 'Valor doado'].map((t, n) => el('th', { class: n >= 3 ? 'num' : '' }, t)))), el('tbody', {}, linhas))));
   }
 
@@ -101,15 +109,18 @@
     const candidatos = grupoCands(g).sort((a, b) => b.ano - a.ano || b.valor - a.valor);
     const orgaos = [...new Map(pessoas.pessoas.map((p) => [p.sigla, p.sigla])).keys()].sort();
     const sel = (valor, opcoes, aoMudar, rotulo) => el('label', {}, rotulo, el('select', { onchange: (ev) => { aoMudar(ev.target.value); e.mais = 25; render(); } }, opcoes.map(([v, r]) => el('option', { value: v, selected: v === valor }, r))));
+    const escolhido = e.cand ? candidatos.find((c) => c.ano + '|' + c.sq === e.cand) : null;
+    const chip = escolhido ? el('span', { class: 'chip' }, `Candidato: ${nome(escolhido.nome)} (${escolhido.partido}, ${escolhido.ano})`,
+      el('button', { type: 'button', 'aria-label': 'Remover filtro de candidato', onclick: () => { e.cand = ''; e.mais = 25; render(); } }, '×')) : null;
     const filtros = el('div', { class: 'filtros' },
-      sel(e.cand, [['', 'Todos'], ...candidatos.map((c) => [c.ano + '|' + c.sq, `${c.ano} · ${nome(c.nome)} (${c.partido})`])], (v) => { e.cand = v; }, 'Candidato'),
       sel(e.orgao, [['', 'Todos'], ...orgaos.map((o) => [o, o])], (v) => { e.orgao = v; }, 'Órgão'),
       sel(e.tipo, [['', 'Todos'], ['CC', 'Cargo em comissão'], ['FG', 'Função gratificada']], (v) => { e.tipo = v; }, 'Tipo'));
-    const linhas = lista.slice(0, e.mais).map((p, i) => el('tr', {}, el('td', { class: 'num' }, String(i + 1)),
+    const abrirFicha = (p) => PF.fichaPessoa({ sigla: p.sigla, id: p.id });
+    const linhas = lista.slice(0, e.mais).map((p, i) => el('tr', { class: 'clicavel', tabindex: '0', title: 'Ver a composição da folha', onclick: () => abrirFicha(p), onkeydown: (ev) => { if (ev.key === 'Enter') abrirFicha(p); } }, el('td', { class: 'num' }, String(i + 1)),
       el('td', {}, el('strong', {}, nome(p.nome)), el('small', {}, p.sigla + ' · ' + (p.tipo === 'CC' ? 'cargo em comissão' : 'função gratificada') + ' · ' + nome(p.cargo))),
       el('td', {}, ...textoDoacoes(p).map((t) => el('small', {}, t))), el('td', { class: 'num' }, brl(p.total))));
-    return el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, `Ocupantes doadores (${nInt.format(lista.length)})`), el('p', {}, 'Do maior para o menor valor doado. Dado pessoal sensível: uso restrito à equipe de transição, sem divulgar o endereço.'))),
-      filtros,
+    return el('div', { class: 'cartao', id: 'lista-doadores' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, `Ocupantes doadores (${nInt.format(lista.length)})`), el('p', {}, 'Clique numa pessoa para ver a composição da folha. Do maior para o menor valor doado. Dado pessoal sensível: uso restrito à equipe de transição, sem divulgar o endereço.'))),
+      chip, filtros,
       lista.length ? el('div', { class: 'rolagem' }, el('table', {}, el('thead', {}, el('tr', {}, ['#', 'Ocupante', 'Doações', 'Total'].map((t, n) => el('th', { class: n === 0 || n === 3 ? 'num' : '' }, t)))), el('tbody', {}, linhas))) : el('p', { class: 'vazio' }, 'Nenhum ocupante neste filtro.'),
       lista.length > e.mais ? el('div', { class: 'rodape-tabela' }, el('span', {}, `Mostrando ${nInt.format(Math.min(e.mais, lista.length))} de ${nInt.format(lista.length)}`), el('button', { type: 'button', class: 'botao', onclick: () => { e.mais += 50; render(); } }, 'Mostrar mais')) : null,
       lista.length ? PF.barraCompartilhar(() => compartilhar(g, lista, e)) : null);
@@ -135,10 +146,9 @@
         kpi('Ocupantes doadores', nInt.format(a.pessoas), `${pct(a.pessoas / dados.universo.comMascara)} dos ${nInt.format(dados.universo.comMascara)} ocupantes testados`),
         kpi('Valor doado', brl(a.valor), 'soma de 2018, 2022 e 2026 (parcial)'),
         kpi('Órgãos com doadores', nInt.format(orgs), 'órgãos em que ao menos um ocupante doou')),
-      el('div', { class: 'cartao' }, el('h2', {}, t.titulo),
-        [['O que é', t.e], ['Cuidados na leitura', cuidados()]].map(([h, p]) => el('div', { class: 'lac-bloco' }, el('h4', {}, h), el('p', {}, p))),
-        el('details', { class: 'fm-detalhes' }, el('summary', {}, 'Como o painel identificou'), el('div', { class: 'lac-bloco' }, el('p', {}, como())))),
-      cartaoCandidatos(g), cartaoOrgaos(g), cartaoLista(g));
+      cartaoCandidatos(g), cartaoLista(g), cartaoOrgaos(g),
+      el('details', { class: 'cartao fm-detalhes' }, el('summary', {}, 'O que é, cuidados na leitura e como o painel identificou'),
+        [['O que é', t.e], ['Cuidados na leitura', cuidados()], ['Como o painel identificou', como()]].map(([h, p]) => el('div', { class: 'lac-bloco' }, el('h4', {}, h), el('p', {}, p)))));
   }
 
   // ---------- roteamento ----------

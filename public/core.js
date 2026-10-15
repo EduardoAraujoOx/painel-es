@@ -183,9 +183,10 @@
   // Para acrescentar um painel ou uma tela, inclua um objeto aqui (e a cor do painel em style.css).
   const PAINEIS = [
     { id: 'pessoal', rotulo: 'Pessoal', itens: [
-      { mod: 'cargos', rotulo: 'Cargos em comissão' },
+      { mod: 'cargos', rotulo: 'Servidores e cargos' },
       { mod: 'organograma', rotulo: 'Organograma' },
-      { mod: 'politico', rotulo: 'Vínculos políticos' }] },
+      { mod: 'politico', rotulo: 'Vínculos políticos' },
+      { mod: 'pessoalfundos', rotulo: 'Pagamentos por fundos' }] },
     { id: 'contratos', rotulo: 'Contratos', itens: [
       { mod: 'contratacoes', rotulo: 'Visão do governo', casa: (r) => !/^(diagnostico|revisao|relatorio)/.test(r) },
       { mod: 'contratacoes', sub: 'diagnostico', rotulo: 'Contratos principais', casa: (r) => /^diagnostico/.test(r) },

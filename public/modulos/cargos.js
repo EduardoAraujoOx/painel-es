@@ -16,11 +16,10 @@
 
   // ---------- estado ----------
   let dados = null;
-  let complementos = null;      // pagamentos de pessoal feitos fora da folha (opcional; ver pipeline/cargos/complementos.py)
   const cacheOrg = new Map();
   let tokenRender = 0;
   const estado = {
-    tipo: 'todos', medida: 'custo', prov: 'todos', busca: '',
+    base: 'todos', tipo: 'todos', medida: 'custo', prov: 'todos', busca: '',
     org: null, funcao: null, vistaOrgs: PF.telaEstreita() ? 'lista' : 'mapa', verTodasFuncoes: false,
     ordemOrgs: { col: 'custo', dir: -1 }, ordemOcup: { col: 'valor', dir: -1 }, limite: 100,
   };
@@ -28,8 +27,6 @@
   const incluiFG = () => estado.tipo !== 'CC';
   const qtd = (r) => (incluiCC() ? r.cc : 0) + (incluiFG() ? r.fg : 0);
   const custo = (r) => (incluiCC() ? r.custoCC : 0) + (incluiFG() ? r.custoFG : 0);
-  const entradas = (r) => (incluiCC() ? r.entCC : 0) + (incluiFG() ? r.entFG : 0);
-  const saidas = (r) => (incluiCC() ? r.saiCC : 0) + (incluiFG() ? r.saiFG : 0);
 
   // ---------- filtros e navegação ----------
   function orgsVisiveis() {
@@ -62,7 +59,7 @@
   function aoNavegar(resto) {
     if (!dados) return;
     const sigla = decodeURIComponent(resto || '');
-    estado.org = dados.orgs.some((o) => o.sigla === sigla) ? sigla : null;
+    estado.org = dados.orgs.some((o) => o.sigla === sigla) || (dados.servidores && dados.servidores.orgs.some((o) => o.sigla === sigla)) ? sigla : null;
     estado.funcao = null; estado.limite = 100;
     render();
   }
@@ -94,7 +91,7 @@
     return el('div', { class: 'abas', role: 'group' }, opcoes.map(([v, r]) =>
       el('button', { type: 'button', 'aria-pressed': String(v === atual), onclick: () => aoMudar(v) }, r)));
   }
-  const rotuloMedida = () => (estado.medida === 'custo' ? 'custo mensal dos cargos' : 'número de ocupantes');
+  const rotuloMedida = () => (estado.base === 'todos' && !estado.org ? (estado.medida === 'custo' ? 'folha mensal corrente' : 'número de servidores') : estado.medida === 'custo' ? 'custo mensal dos cargos' : 'número de ocupantes');
   const rotuloTipo = () => (estado.tipo === 'CC' ? 'cargos em comissão' : estado.tipo === 'FG' ? 'funções gratificadas' : 'cargos em comissão e funções gratificadas');
 
   function cartaoEvolucao(serie, titulo_) {
@@ -102,84 +99,99 @@
     const series = [];
     if (incluiCC()) series.push({ nome: 'Cargos em comissão', cor: 'var(--serie-1)', vals: serie.map((r) => r.cc) });
     if (incluiFG()) series.push({ nome: 'Funções gratificadas', cor: 'var(--serie-2)', vals: serie.map((r) => r.fg) });
-    const fluxo = [
-      { nome: 'Entradas', cor: 'var(--serie-1)', barra: true, vals: serie.map(entradas) },
-      { nome: 'Saídas', cor: 'var(--serie-2)', barra: true, vals: serie.map(saidas) },
-    ];
     const a = el('div', { class: 'cartao' },
       el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, titulo_),
         el('p', {}, 'Ocupantes por mês, ' + rotuloTipo() + '.'))));
     graficoLinhas(a, { meses, series, fmt: (v) => nInt.format(v) });
-    const b = el('div', { class: 'cartao' },
-      el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Entradas e saídas por mês'),
-        el('p', {}, 'Pessoas que passaram a ocupar ou deixaram de ocupar a função, em relação ao mês anterior.'))));
-    graficoBarras(b, { meses: meses.slice(1), series: fluxo.map((s) => ({ ...s, vals: s.vals.slice(1) })), fmt: (v) => nInt.format(v) });
-    return el('div', { class: 'duas-colunas' }, a, b);
+    return a;
   }
 
-
-  // ---------- pessoal pago fora da folha (fundos) ----------
-  const pagoMes = (it, m) => (it.serie[m] ? it.serie[m].pago + it.serie[m].rap : 0);
-  function mesesDe(it) {
-    const ks = Object.keys(it.serie).sort().filter((m) => m <= dados.mes);   // até a competência da folha; o mês corrente da execução ainda está incompleto
-    if (!ks.length) return [];
-    const out = [];
-    let [a, m] = ks[0].split('-').map(Number);
-    const [fa, fm] = ks[ks.length - 1].split('-').map(Number);
-    while (a < fa || (a === fa && m <= fm)) { out.push(`${a}-${String(m).padStart(2, '0')}`); m += 1; if (m > 12) { m = 1; a += 1; } }
-    return out;
-  }
-  const ultimos12 = (it) => mesesDe(it).slice(-12);
-  const total12 = (it) => soma(ultimos12(it), (m) => pagoMes(it, m));
-
-  function cartaoComplementoOrg(it) {
-    const meses = mesesDe(it), u12 = ultimos12(it);
-    const t12 = total12(it);
-    const ultimo = meses[meses.length - 1];
-    const fav = it.beneficiarios && it.serie[ultimo] ? it.serie[ultimo].favorecidos : 0;
-    const kp = el('div', { class: 'kpis' },
-      kpi('Últimos 12 meses', brlCompacto(t12), `${rotuloMes(u12[0], true)} a ${rotuloMes(ultimo, true)}, pago pelo ${it.fundo}`),
-      kpi('Média por mês', brlCompacto(t12 / Math.max(1, u12.length)), 'pago e restos a pagar pagos'),
-      it.beneficiarios ? kpi('Favorecidos no último mês', nInt.format(fav), fav ? `média de ${brlCompacto(pagoMes(it, ultimo) / fav)} por favorecido` : '') : null);
-    const cartao = el('div', { class: 'cartao' },
-      el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Pessoal pago fora da folha'), el('p', {}, `${it.titulo}. Pago pelo ${it.fundo} (${PF.titulo(it.ugNome)}), fora da despesa de pessoal do órgão.`))),
-      kp);
-    graficoBarras(cartao, { meses, series: [{ nome: 'Pago no mês', cor: 'var(--serie-1)', barra: true, vals: meses.map((m) => pagoMes(it, m)) }], fmt: (v) => brlCompacto(v) });
-    if (it.componentes.length) {
-      const comp = it.componentes.map((c) => ({ ...c, v: soma(u12, (m) => c.serie[m] || 0) })).sort((a, b) => b.v - a.v);
-      const resto = t12 - soma(comp, (c) => c.v);
-      if (resto > 1e4) comp.push({ cod: '', rotulo: 'Demais elementos de despesa', elemento: '', v: resto });
-      const max = Math.max(1, ...comp.map((c) => c.v));
-      cartao.append(el('h3', {}, 'Componentes (últimos 12 meses)'), el('div', { class: 'linhas' }, comp.map((c) => el('div', { class: 'linha-barra sem-clique' },
-        el('span', { class: 'nome' }, c.rotulo, el('small', {}, c.cod ? `elemento ${c.cod}${c.elemento ? ' · ' + PF.titulo(c.elemento) : ''}` : 'pagos pelo fundo, fora dos quatro componentes acima')),
-        el('span', { class: 'trilho' }, el('i', { class: 'barra', style: `width:${Math.max(0.5, (c.v / max) * 62)}%` }), el('span', { class: 'num' }, brlCompacto(c.v)))))));
-    }
-    cartao.append(el('p', { class: 'fonte' }, `${it.descricao} Fonte: ${complementos.fonte}; mostra até ${rotuloMes(dados.mes, true)}, a competência da folha. Pago inclui restos a pagar pagos no mês.`));
-    return cartao;
-  }
-  const complementosDe = (sigla) => (complementos ? complementos.itens.filter((i) => i.sigla === sigla) : []);
-
-  function cartaoComplementosGoverno() {
-    if (!complementos || !complementos.itens.length) return null;
-    const linhas = complementos.itens.map((it) => el('tr', { class: 'clicavel', tabindex: '0', onclick: () => selecionarOrg(it.sigla), onkeydown: (ev) => { if (ev.key === 'Enter') selecionarOrg(it.sigla); } },
-      el('td', {}, el('strong', {}, it.sigla), el('small', {}, it.titulo)), el('td', {}, it.fundo), el('td', { class: 'num' }, brlCompacto(total12(it))), el('td', { class: 'num' }, brlCompacto(total12(it) / 12))));
-    return el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Pessoal pago fora da folha'),
-      el('p', {}, 'Pagamentos a pessoal feitos por fundos, que não entram na despesa de pessoal do órgão nem nos custos acima. Clique para ver o detalhe do órgão.'))),
-    el('div', { class: 'rolagem' }, el('table', {}, el('thead', {}, el('tr', {}, ['Órgão e pagamento', 'Pago por', 'Últimos 12 meses', 'Média por mês'].map((t, n) => el('th', { class: n >= 2 ? 'num' : '' }, t)))), el('tbody', {}, linhas))));
-  }
 
   // ---------- visão: governo ----------
+  const TIPOS_VINCULO = { 'CONTRATO TEMPORARIO': 'Contrato temporário (designação)', ESTAGIARIO: 'Estagiário', 'VOLUNTARIO MILITAR': 'Voluntário militar', 'SUBMETIDO RJU': 'Submetido ao RJU',
+    'ATIVO VERBA PGE': 'Ativo (verba da PGE)', 'RESIDENTE JURIDICO': 'Residente jurídico', 'BOLSA FORMACAO': 'Bolsa formação', 'SEM VÍNCULO NA BASE': 'Tipo não identificado na base de vínculos', EXAMINADOR: 'Examinador' };
+  const rotuloVinculo = (t) => TIPOS_VINCULO[t] || titulo(t);
+  const pctS = (x) => (x * 100).toLocaleString('pt-BR', { maximumFractionDigits: x < 0.1 ? 1 : 0 }) + '%';
+
+  function barrasTipos(orgsS) {
+    const t = {};
+    for (const o of orgsS) for (const [k, n] of Object.entries(o.tipos)) t[k] = (t[k] || 0) + n;
+    const lista = Object.entries(t).sort((a, b) => b[1] - a[1]), tot = soma(lista, (x) => x[1]), max = Math.max(1, ...lista.map((x) => x[1]));
+    const visiveis = lista.slice(0, 8), resto = soma(lista.slice(8), (x) => x[1]);
+    return el('div', { class: 'linhas' }, [...visiveis, ...(resto ? [['Demais tipos', resto]] : [])].map(([k, n]) => el('div', { class: 'linha-barra sem-clique' },
+      el('span', { class: 'nome' }, k === 'Demais tipos' ? k : rotuloVinculo(k)),
+      el('span', { class: 'trilho' }, el('i', { class: 'barra', style: `width:${Math.max(0.5, (n / max) * 62)}%` }), el('span', { class: 'num' }, `${nInt.format(n)} · ${pctS(n / tot)}`)))));
+  }
+
+  function cartaoQuadro(o) {
+    const pessoas = o.n, cargos = o.cc + o.fg;
+    return el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Quadro de servidores'),
+      el('p', {}, `Pessoas ativas na folha de ${rotuloMes(dados.servidores.mes, true)}, sem inativos e pensionistas.`))),
+      el('div', { class: 'kpis' }, kpi('Servidores ativos', nInt.format(pessoas), 'matrículas e vínculos ativos na folha'),
+        kpi('Com cargo ou função de confiança', nInt.format(cargos), pessoas ? `${pctS(cargos / pessoas)} do quadro` : ''),
+        kpi('Folha mensal corrente', brlCompacto(o.bruto), 'vantagens do mês, sem 13º, férias e encargos')),
+      el('h3', {}, 'Tipos de vínculo'), barrasTipos([o]));
+  }
+
+  function renderGovernoTodos(c) {
+    const S = dados.servidores, q = norm(estado.busca);
+    const orgsS = S.orgs.filter((o) => !q || norm(o.sigla).includes(q) || norm(o.nome).includes(q));
+    const itens = orgsS.map((o) => ({ o, v: estado.medida === 'custo' ? o.bruto : o.n, n: o.n, c: o.bruto, cargos: o.cc + o.fg })).filter((i) => i.v > 0);
+    const pessoas = soma(orgsS, (o) => o.n), cargos = soma(orgsS, (o) => o.cc + o.fg), folha = soma(orgsS, (o) => o.bruto);
+    const u = somarSerie(dados.orgs.filter((o) => orgsS.some((x) => x.sigla === o.sigla)))[dados.meses.length - 1];
+    const kp = el('div', { class: 'kpis' },
+      kpi('Servidores ativos', nInt.format(pessoas), `em ${orgsS.length} órgãos · ${rotuloMes(S.mes, true)}; sem inativos e pensionistas`),
+      kpi('Com cargo ou função de confiança', nInt.format(cargos), pessoas ? `${pctS(cargos / pessoas)} dos servidores` : ''),
+      kpi('Folha mensal corrente', brlCompacto(folha), 'vantagens do mês, sem 13º, férias e encargos'),
+      kpi('Custo dos cargos', brlCompacto(custo(u)), folha ? `${pctS(custo(u) / folha)} da folha: o que se paga por causa do cargo` : ''));
+    const cartao = el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' },
+      el('div', {}, el('h2', {}, 'Onde estão os servidores'), el('p', {}, `Tamanho proporcional a: ${rotuloMedida()} (${rotuloMes(S.mes, true)}). Clique num órgão para detalhar.`)),
+      abas([['lista', 'Lista'], ['mapa', 'Mapa'], ['tabela', 'Tabela']], estado.vistaOrgs, (v) => { estado.vistaOrgs = v; render(); })));
+    const texto = (i) => (estado.medida === 'custo' ? brlCompacto(i.c) : nInt.format(i.n));
+    if (!itens.length) cartao.append(el('p', { class: 'vazio' }, 'Nenhum órgão corresponde aos filtros.'));
+    else if (estado.vistaOrgs === 'lista') {
+      cartao.append(PF.listaOrdenada(itens.map((i) => ({ nome: i.o.nome !== i.o.sigla ? titulo(i.o.nome) : i.o.sigla, sub: i.o.sigla, v: i.v, texto: texto(i), aoClicar: () => selecionarOrg(i.o.sigla) }))));
+    } else if (estado.vistaOrgs === 'mapa') {
+      cartao.append(el('div', { class: 'legenda' }, el('span', {}, el('i', { class: 'chave-caixa', style: 'background:var(--serie-1)' }), 'Órgãos em foco (' + FOCO.join(', ') + ')'),
+        el('span', {}, el('i', { class: 'chave-caixa', style: 'background:var(--neutro)' }), 'Demais órgãos')));
+      const mapa = el('div', { class: 'mapa' });
+      cartao.append(mapa);
+      observar(mapa, (W) => {
+        const H = W < 560 ? 360 : 440;
+        mapa.style.height = H + 'px';
+        mapa.replaceChildren(...mapaDeBlocos(itens, W, H).map((b) => {
+          const nos = () => [el('div', { class: 'tit' }, b.o.nome !== b.o.sigla ? `${b.o.sigla} · ${titulo(b.o.nome)}` : b.o.sigla), dicaLinha(null, nInt.format(b.n), 'servidores'), dicaLinha(null, brlCompacto(b.c), 'folha mensal corrente'), dicaLinha(null, nInt.format(b.cargos), 'com cargo ou função')];
+          const rotulo = b.w >= 84 && b.h >= 44;
+          const btn = el('button', { type: 'button', 'aria-label': `${b.o.sigla}: ${nInt.format(b.n)} servidores, ${brlCompacto(b.c)} por mês`, onclick: () => { esconderDica(); selecionarOrg(b.o.sigla); },
+            onpointermove: (ev) => mostrarDica(nos(), ev.clientX, ev.clientY), onpointerleave: esconderDica, onfocus: () => dicaNoElemento(btn, nos), onblur: esconderDica },
+            rotulo ? el('b', {}, b.o.sigla) : null, rotulo && b.h >= 62 ? el('small', {}, texto(b)) : null);
+          return el('div', { class: 'bloco' + (rotulo ? ' rot' : '') + (FOCO.includes(b.o.sigla) ? ' foco' : ''), style: `left:${b.x}px;top:${b.y}px;width:${b.w}px;height:${b.h}px` }, btn);
+        }));
+      });
+    } else {
+      const linhas = [...itens].sort((a, b) => (estado.ordemOrgs.col === 'sigla' ? a.o.sigla.localeCompare(b.o.sigla, 'pt-BR') : (({ n: a.n - b.n, cargos: a.cargos - b.cargos, pc: a.cargos / a.n - b.cargos / b.n, c: a.c - b.c })[estado.ordemOrgs.col] || 0)) * estado.ordemOrgs.dir);
+      const cols = [['sigla', 'Órgão'], ['n', 'Servidores', 1], ['cargos', 'Com cargo', 1], ['pc', '% com cargo', 1], ['c', 'Folha mensal', 1]];
+      const { col, dir } = estado.ordemOrgs;
+      cartao.append(el('div', { class: 'rolagem' }, el('table', {}, el('thead', {}, el('tr', {}, cols.map(([k, r, n]) => el('th', { class: n ? 'num' : '', 'aria-sort': col === k ? (dir > 0 ? 'ascending' : 'descending') : 'none' },
+        el('button', { type: 'button', onclick: () => { estado.ordemOrgs = { col: k, dir: col === k ? -dir : -1 }; render(); } }, r + (col === k ? (dir > 0 ? ' ▲' : ' ▼') : '')))))),
+      el('tbody', {}, linhas.map((l) => el('tr', { class: 'clicavel', tabindex: '0', onclick: () => selecionarOrg(l.o.sigla), onkeydown: (ev) => { if (ev.key === 'Enter') selecionarOrg(l.o.sigla); } },
+        el('td', {}, el('strong', {}, l.o.sigla), l.o.nome !== l.o.sigla ? el('small', {}, titulo(l.o.nome)) : null), el('td', { class: 'num' }, nInt.format(l.n)), el('td', { class: 'num' }, nInt.format(l.cargos)),
+        el('td', { class: 'num' }, pctS(l.cargos / l.n)), el('td', { class: 'num' }, brlCompacto(l.c))))))));
+    }
+    const tipos = el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Tipos de vínculo'), el('p', {}, 'Como os servidores ativos estão vinculados ao Estado.'))), barrasTipos(orgsS));
+    const serie = somarSerie(dados.orgs);
+    c.replaceChildren(kp, cartao, tipos, cartaoEvolucao(serie, 'Evolução mensal dos cargos e funções'));
+  }
+
   function renderGoverno(c) {
+    if (estado.base === 'todos' && dados.servidores) return renderGovernoTodos(c);
     const orgs = orgsVisiveis();
     const serie = somarSerie(orgs);
     const u = serie[serie.length - 1];
-    const ult12 = serie.slice(-12);
-    const sai12 = soma(ult12, saidas);
     const kp = el('div', { class: 'kpis' },
       kpi('Ocupantes', nInt.format(qtd(u)), `em ${orgs.filter((o) => qtd(o.s[o.s.length - 1]) > 0).length} órgãos · ${rotuloMes(dados.mes, true)}`),
       kpi('Custo mensal dos cargos', brlCompacto(custo(u)), 'soma do valor do cargo no mês'),
-      kpi('Custo anualizado', brlCompacto(custo(u) * 12), 'mês × 12, sem 13º, férias e encargos'),
-      kpi('Saídas em 12 meses', nInt.format(sai12), qtd(u) ? `${((sai12 / qtd(u)) * 100).toFixed(0).replace('.', ',')}% do quadro atual` : ''));
+      kpi('Custo anualizado', brlCompacto(custo(u) * 12), 'mês × 12, sem 13º, férias e encargos'));
 
     const itens = orgs.map((o) => {
       const r = o.s[o.s.length - 1];
@@ -189,7 +201,7 @@
     const cartao = el('div', { class: 'cartao' },
       el('div', { class: 'cartao-topo' },
         el('div', {}, el('h2', {}, 'Onde estão os cargos'),
-          el('p', {}, `Área proporcional ao ${rotuloMedida()} (${rotuloMes(dados.mes, true)}). Clique num órgão para detalhar.`)),
+          el('p', {}, `Tamanho proporcional a: ${rotuloMedida()} (${rotuloMes(dados.mes, true)}). Clique num órgão para detalhar.`)),
         abas([['lista', 'Lista'], ['mapa', 'Mapa'], ['tabela', 'Tabela']], estado.vistaOrgs, (v) => { estado.vistaOrgs = v; render(); })));
     if (!itens.length) {
       cartao.append(el('p', { class: 'vazio' }, 'Nenhum órgão corresponde aos filtros.'));
@@ -222,19 +234,18 @@
     } else {
       cartao.append(tabelaOrgs(orgs));
     }
-    c.replaceChildren(kp, cartao, ...[cartaoComplementosGoverno()].filter(Boolean), cartaoEvolucao(serie, 'Evolução mensal no governo'));
+    c.replaceChildren(kp, cartao, cartaoEvolucao(serie, 'Evolução mensal no governo'));
   }
 
   function tabelaOrgs(orgs) {
     const linhas = orgs.map((o) => {
       const s = o.s, r = s[s.length - 1];
-      return { o, cc: r.cc, fg: r.fg, custoCC: r.custoCC, custoFG: r.custoFG,
-        custo: custo(r), ent: soma(s.slice(-12), entradas), sai: soma(s.slice(-12), saidas) };
+      return { o, cc: r.cc, fg: r.fg, custoCC: r.custoCC, custoFG: r.custoFG, custo: custo(r) };
     }).filter((l) => l.cc + l.fg > 0);
     const { col, dir } = estado.ordemOrgs;
     linhas.sort((a, b) => (col === 'sigla' ? a.o.sigla.localeCompare(b.o.sigla, 'pt-BR') : a[col] - b[col]) * dir);
     const cols = [['sigla', 'Órgão'], ['cc', 'Cargos em comissão', 1], ['fg', 'Funções gratificadas', 1],
-      ['custoCC', 'Custo mensal CC', 1], ['custoFG', 'Custo mensal FG', 1], ['ent', 'Entradas (12m)', 1], ['sai', 'Saídas (12m)', 1]];
+      ['custoCC', 'Custo mensal CC', 1], ['custoFG', 'Custo mensal FG', 1]];
     return el('div', { class: 'rolagem' }, el('table', {},
       el('thead', {}, el('tr', {}, cols.map(([k, r, n]) => el('th', { class: n ? 'num' : '', 'aria-sort': col === k ? (dir > 0 ? 'ascending' : 'descending') : 'none' },
         el('button', { type: 'button', onclick: () => { estado.ordemOrgs = { col: k, dir: col === k ? -dir : -1 }; render(); } }, r + (col === k ? (dir > 0 ? ' ▲' : ' ▼') : '')))))),
@@ -242,8 +253,7 @@
         onkeydown: (ev) => { if (ev.key === 'Enter') selecionarOrg(l.o.sigla); } },
         el('td', {}, el('strong', {}, l.o.sigla), l.o.nome !== l.o.sigla ? el('small', {}, titulo(l.o.nome)) : null),
         el('td', { class: 'num' }, nInt.format(l.cc)), el('td', { class: 'num' }, nInt.format(l.fg)),
-        el('td', { class: 'num' }, brlCompacto(l.custoCC)), el('td', { class: 'num' }, brlCompacto(l.custoFG)),
-        el('td', { class: 'num' }, nInt.format(l.ent)), el('td', { class: 'num' }, nInt.format(l.sai)))))));
+        el('td', { class: 'num' }, brlCompacto(l.custoCC)), el('td', { class: 'num' }, brlCompacto(l.custoFG)))))));
   }
 
   // ---------- visão: órgão ----------
@@ -253,6 +263,11 @@
   }
   async function renderOrg(c) {
     const org = dados.orgs.find((o) => o.sigla === estado.org);
+    const quadro = dados.servidores ? dados.servidores.orgs.find((o) => o.sigla === estado.org) : null;
+    if (!org) {
+      c.replaceChildren(...[quadro ? cartaoQuadro(quadro) : null, el('p', { class: 'vazio' }, 'Este órgão não tem cargo em comissão nem função gratificada na folha do mês.')].filter(Boolean));
+      return;
+    }
     const meu = ++tokenRender;
     c.classList.add('carregando');
     let det;
@@ -266,7 +281,6 @@
 
     const base = ocupantesBase(det.ocupantes);
     const serie = org.s;
-    const sai12 = soma(serie.slice(-12), saidas);
     const duracoes = base.map((o) => ({ m: mesesEntre(o.desde, dados.mes) + 1, lim: o.limite }));
     const med = mediana(duracoes.map((d) => d.m));
     const limitado = duracoes.some((d) => d.lim && d.m === med) || (duracoes.length && duracoes.filter((d) => d.lim).length > duracoes.length / 2);
@@ -275,8 +289,7 @@
       kpi('Ocupantes', nInt.format(base.length), nomeOrg ? `${nomeOrg} · ${rotuloMes(dados.mes, true)}` : rotuloMes(dados.mes, true)),
       kpi('Custo mensal dos cargos', brlCompacto(soma(base, (o) => o.valor)), `≈ ${brlCompacto(soma(base, (o) => o.valor) * 12)} por ano, sem 13º e encargos`),
       kpi('Tempo mediano na função', med == null ? '—' : `${limitado ? '≥ ' : ''}${nInt.format(Math.round(med))} meses`,
-        limitado ? `janela de ${dados.meses.length} meses: parte dos ocupantes já estava na função no início` : 'contado a partir da primeira competência observada'),
-      kpi('Saídas em 12 meses', nInt.format(sai12), base.length ? `${((sai12 / base.length) * 100).toFixed(0)}% do quadro atual` : ''));
+        limitado ? `janela de ${dados.meses.length} meses: parte dos ocupantes já estava na função no início` : 'contado a partir da primeira competência observada'));
 
     // funções
     const grupos = new Map();
@@ -309,8 +322,8 @@
         onclick: () => { estado.verTodasFuncoes = !estado.verTodasFuncoes; render(); } },
         estado.verTodasFuncoes ? 'Mostrar menos' : `Mostrar todas (${lista.length})`)) : null);
 
-    c.replaceChildren(kp, ...complementosDe(org.sigla).map(cartaoComplementoOrg), cartaoFuncoes, cartaoEvolucao(serie, 'Evolução mensal em ' + org.sigla),
-      cartaoOcupantes(org, base));
+    c.replaceChildren(...[quadro ? cartaoQuadro(quadro) : null, kp, cartaoFuncoes, cartaoEvolucao(serie, 'Evolução mensal em ' + org.sigla),
+      cartaoOcupantes(org, base)].filter(Boolean));
   }
 
   // ---------- tabela de ocupantes ----------
@@ -332,7 +345,7 @@
     });
     const topo = el('div', { class: 'cartao-topo' },
       el('div', {}, el('h2', {}, 'Ocupantes'),
-        el('p', {}, `${nInt.format(linhas.length)} ${linhas.length === 1 ? 'registro' : 'registros'} em ${rotuloMes(dados.mes, true)}.`),
+        el('p', {}, `${nInt.format(linhas.length)} ${linhas.length === 1 ? 'registro' : 'registros'} em ${rotuloMes(dados.mes, true)}. Clique numa pessoa para ver a composição da folha.`),
         estado.funcao ? el('span', { class: 'chip' }, 'Função: ' + titulo(estado.funcao.split('|')[1]),
           el('button', { type: 'button', 'aria-label': 'Remover filtro de função', onclick: () => { estado.funcao = null; render(); } }, '×')) : null),
       el('button', { type: 'button', class: 'botao', onclick: () => baixarCSV(org, linhas) }, 'Exportar CSV'));
@@ -340,7 +353,8 @@
     if (!linhas.length) { cartao.append(el('p', { class: 'vazio' }, 'Nenhum ocupante corresponde aos filtros.')); return cartao; }
     const corpo = linhas.slice(0, estado.limite).map((o) => {
       const d = textoDesde(o);
-      return el('tr', {},
+      return el('tr', { class: 'clicavel', tabindex: '0', title: 'Ver a composição da folha', onclick: () => PF.fichaPessoa({ sigla: org.sigla, ocupante: o, mes: dados.mes, nomeOrg: org.nome }),
+        onkeydown: (ev) => { if (ev.key === 'Enter') PF.fichaPessoa({ sigla: org.sigla, ocupante: o, mes: dados.mes, nomeOrg: org.nome }); } },
         el('td', {}, el('strong', {}, titulo(o.nome)), o.cargoEfetivo ? el('small', {}, 'Cargo efetivo: ' + titulo(o.cargoEfetivo)) : null),
         el('td', {}, titulo(o.funcao), o.unidade ? el('small', {}, titulo(o.unidade)) : null),
         el('td', {}, o.prov),
@@ -394,7 +408,7 @@
           ? ' Foram excluídos por não pertencerem ao Poder Executivo: ' + Object.entries(dados.orgaosExcluidos).map(([k, v]) => `${k} (${v})`).join('; ') + '.' : '')),
       el('p', {}, 'Custo anualizado é o valor mensal multiplicado por 12; não inclui 13º salário, terço de férias nem encargos patronais.'),
       el('p', {}, 'Tempo na função é inferido pela primeira competência, dentro da janela, em que a pessoa aparece na mesma função de forma contínua. O sinal "≤" indica que ela já ocupava a função na primeira competência da janela e que o início pode ser anterior.'),
-      el('p', {}, 'Entradas e saídas comparam cada mês com o anterior, por pessoa e tipo (cargo em comissão ou função gratificada) dentro do órgão. Uma pessoa que muda de órgão aparece como saída num e entrada noutro.'));
+      el('p', {}, 'Ficha da pessoa. Ao clicar num ocupante, a ficha mostra a composição da folha do mês, rubrica por rubrica (vantagens e descontos), com as rubricas que entram no valor do cargo em destaque, o que o cargo representa na remuneração corrente (sem 13º, férias e rescisão) e uma estimativa do efeito de retirá-lo, considerando o abate do teto constitucional. Quando a pessoa também recebe de fundo, fora da folha, isso aparece à parte.'));
     $('#mesref').textContent = 'Referência: ' + rotuloMes(dados.mes, true);
   }
 
@@ -404,6 +418,7 @@
     PF.limparObservadores();
     esconderDica();
     $('#rotulo-prov').hidden = !estado.org;
+    $('#rotulo-tipo').hidden = estado.base === 'todos' && !estado.org && !!dados.servidores;
     renderTrilha();
     const c = $('#conteudo');
     ++tokenRender;
@@ -415,13 +430,19 @@
     <section>
       <div class="modulo-topo">
         <div>
-          <h2 class="modulo-titulo">Cargos em comissão e funções gratificadas</h2>
-          <p class="sub">Quadro de ocupantes, custo mensal e rotatividade, a partir da folha oficial do Poder Executivo.</p>
+          <h2 class="modulo-titulo">Servidores e cargos de confiança</h2>
+          <p class="sub">Quadro de servidores do Poder Executivo e, dentro dele, os cargos em comissão e funções gratificadas, com a folha de cada pessoa.</p>
         </div>
         <span id="mesref" class="mesref"></span>
       </div>
       <div class="filtros" role="group" aria-label="Filtros">
-        <label>Tipo
+        <label id="rotulo-base">Servidores
+          <select id="f-base">
+            <option value="todos">Todos os servidores</option>
+            <option value="cargos">Só cargos em comissão e funções gratificadas</option>
+          </select>
+        </label>
+        <label id="rotulo-tipo">Tipo
           <select id="f-tipo">
             <option value="todos">Cargos em comissão e funções gratificadas</option>
             <option value="CC">Somente cargos em comissão</option>
@@ -430,8 +451,8 @@
         </label>
         <label>Medida
           <select id="f-medida">
-            <option value="custo">Custo mensal dos cargos</option>
-            <option value="qtd">Número de ocupantes</option>
+            <option value="custo">Custo mensal (folha ou cargos)</option>
+            <option value="qtd">Número de pessoas</option>
           </select>
         </label>
         <label id="rotulo-prov" hidden>Provimento
@@ -457,7 +478,7 @@
     </section>`;
 
   function vincularFiltros() {
-    for (const [id, chave] of [['#f-tipo', 'tipo'], ['#f-medida', 'medida'], ['#f-prov', 'prov']]) {
+    for (const [id, chave] of [['#f-base', 'base'], ['#f-tipo', 'tipo'], ['#f-medida', 'medida'], ['#f-prov', 'prov']]) {
       $(id).value = estado[chave];
       $(id).addEventListener('change', (ev) => { estado[chave] = ev.target.value; estado.limite = 100; if (dados) render(); });
     }
@@ -485,16 +506,14 @@
       const cols = dados.colunasSerie;
       o.s = o.serie.map((r) => Object.fromEntries(cols.map((k, i) => [k, r[i]])));
     }
-    try { complementos = await ctx.api('complementos'); } catch (e) { complementos = null; /* o painel funciona sem esse arquivo */ }
     preencherMetodo();
     return true;
   }
 
   function desmontar() {
     dados = null;
-    complementos = null;
     cacheOrg.clear();
   }
 
-  PF.registrar({ id: 'cargos', titulo: 'Cargos em comissão', montar, aoNavegar, desmontar });
+  PF.registrar({ id: 'cargos', titulo: 'Servidores e cargos', montar, aoNavegar, desmontar });
 })();

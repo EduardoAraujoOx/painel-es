@@ -99,6 +99,17 @@ def valor_e_provimento(tipo, rubricas, cargo_efetivo="", subsidio_padrao=None):
     return round(complementos, 2), PROV_SEM_PAG, complementos != 0, 0.0
 
 
+def rubricas_do_cargo(tipo, rubricas, provimento):
+    """Nomes das rubricas que entram no valor do cargo (as mesmas de `valor_e_provimento`), para destacá-las na ficha da pessoa."""
+    if tipo == TIPO_FG:
+        return {r for r, v in rubricas.items() if r.startswith("FUNCAO GRAT") and v}
+    nomes = {r for r in COMPLEMENTOS_CC if rubricas.get(r)}
+    principal = {PROV_OPCAO: R_OPCAO, PROV_PURO: R_VENC_PURO, PROV_EFET: R_VENC_EFET, PROV_SUBSIDIO: R_SUBSIDIO}.get(provimento)
+    if principal and rubricas.get(principal):
+        nomes.add(principal)
+    return nomes
+
+
 # --- Remuneração total (módulo organograma) ---------------------------------------------
 # Soma das rubricas de pagamento do mês, para mostrar o que a pessoa de fato recebe somando
 # carreira e cargo. Ficam de fora o que não é remuneração corrente: auxílios e indenizações,

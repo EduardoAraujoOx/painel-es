@@ -192,7 +192,7 @@ def main():
     pessoas = []
     for pessoa, lista in por_pessoa.items():
         o = ocup[pessoa]
-        pessoas.append({"nome": o["nome"], "sigla": o["sigla"], "orgao": o["orgao"], "cargo": o["cargo"], "tipo": o["tipo"],
+        pessoas.append({"id": f"{pessoa[0]}-{pessoa[1]}", "nome": o["nome"], "sigla": o["sigla"], "orgao": o["orgao"], "cargo": o["cargo"], "tipo": o["tipo"],
                         "doacoes": sorted([[ano, sq, round(v, 2), n] for ano, sq, v, n in lista])})
     pessoas.sort(key=lambda p: -sum(d[2] for d in p["doacoes"]))
 

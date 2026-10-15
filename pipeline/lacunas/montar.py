@@ -109,6 +109,11 @@ def main():
               "livre": sum(((f["anos"].get(ant) or {}).get("fonte") or {}).get("livre", 0) for f in d["fundos"]),
               "abast": [f for f in d["fundos"] if "abastecido" in f["sinais"]], "totAbast": sum(tot(f) for f in d["fundos"] if "abastecido" in f["sinais"]),
               "disp": sum(x["disponivel"] for x in cs), "caixa": sum(x["caixa"] for x in cs), "ate": "/".join(reversed((d.get("saldoAte") or "").split("-")))}
+    pf = None
+    arq_pf = os.path.join(RAIZ, "data", "pessoalfundos", "index.json")
+    if os.path.exists(arq_pf):   # gerado por pipeline/pessoalfundos/montar.py
+        pf = json.load(open(arq_pf))
+    pge = next((f for f in (pf or {}).get("fundos", []) if not f["beneficiarios"]), None)
     itens = [
         dict(id="execucao-contrato", area="Execução financeira", verificado=True,
              titulo="Execução financeira ligada a cada contrato (empenho, liquidação e pagamento)",
@@ -236,6 +241,13 @@ def main():
              decisao="Saber quais fundos podem ter saldo ou receita realocados por decreto, quais exigem lei e quais não admitem mudança, antes de propor qualquer alteração.",
              solicitar="Parecer, fundo a fundo, sobre a finalidade legal, a possibilidade de uso do superávit financeiro em outra política, o instrumento necessário (lei, decreto ou resolução do conselho) e as vedações constitucionais e federais aplicáveis.",
              destinatarios=["PGE", "SEFAZ"], valorAfetado=0.0, prioridadeFixa="média", fonteEvidencia="Leis de criação dos fundos"),
+        dict(id="folha-pge-nominal", area="Pessoal", verificado=True,
+             titulo="Pagamentos nominais da folha complementar do fundo da PGE",
+             lacuna="O fundo da Procuradoria paga parte da folha (auxílio-saúde, licenças compensatórias, bolsas) em bloco: o favorecido do pagamento na execução é a própria folha, sem o nome de quem recebe. Não se vê quanto isso soma à remuneração de cada procurador.",
+             evidencia=(f"O fundo pagou {mi(pge['total12'])} nos 12 meses até {pge['janela'][1]}, fora da despesa de pessoal da PGE, e a execução não identifica os beneficiários." if pge else "Ver a tela Pagamentos por fundos."),
+             decisao="Saber o quanto o fundo acrescenta à remuneração dos procuradores e se o pagamento respeita o teto e a destinação legal do fundo.",
+             solicitar="Relação nominal e mensal dos pagamentos feitos pelo fundo da PGE a pessoal (auxílio-saúde, licenças compensatórias, bolsas), com o cargo do beneficiário, a rubrica e a base legal de cada pagamento.",
+             destinatarios=["PGE", "SEFAZ"], valorAfetado=0.0, prioridadeFixa="média", fonteEvidencia="Tela Pagamentos por fundos (SIGEFES)"),
         dict(id="lotacao", area="Pessoal", verificado=True,
              titulo="Lotação e estrutura organizacional do IASES e da SESP",
              lacuna="O código de lotação da base de vínculos não permite identificar a unidade em alguns órgãos, e o organograma oficial não os cobre por esse código.",
