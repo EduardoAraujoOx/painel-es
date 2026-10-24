@@ -1,0 +1,299 @@
+{
+ "gerado_de": "Siconfi (RREO, RGF e DCA do Espírito Santo), via pipeline/capag/coletar.py",
+ "regra": "Portaria Normativa MF 1.583/2023, arts. 2º a 4º (faixas e tabela final); A+ depende do ranking ICF, não calculado aqui",
+ "metodologia": "Calcula os três indicadores da CAPAG do Espírito Santo (Portaria Normativa MF 1.583/2023, art. 2º a 4º) a partir do\nque pipeline/capag/coletar.py guardou em .cache/capag, e grava data/capag/indicadores.json.\n\nRegras codificadas (texto da portaria republicada no DOU de 15/12/2023):\n  Endividamento  DC = Dívida Consolidada Bruta / Receita Corrente Líquida          A < 60%; B de 60% a 100%; C >= 100%\n  Poupança corrente  PC = soma de (Despesa Corrente_t / Receita Corrente Ajustada_t) x P_t  nos três últimos exercícios\n                 encerrados, com pesos 0,50 (t-1), 0,30 (t-2) e 0,20 (t-3)          A < 85%; B de 85% a 95%; C >= 95%\n  Liquidez relativa  LR = (Disponibilidade de Caixa Bruta - Obrigações Financeiras) / RCL, só fontes não vinculadas,\n                 menos as insuficiências de caixa das fontes vinculadas             A >= 5%; B entre 0 e 5%; C <= 0\n  Nota final     tabela do art. 4º (combinação das três notas parciais); A ou B com \"Aicf\" no ranking de qualidade da\n                 informação contábil e fiscal do Siconfi sobe para A+ ou B+ (o ranking não é calculado aqui).\n\nAproximações, todas declaradas no arquivo de saída (campo \"metodologia\"):\n  - DC lê a Dívida Consolidada (I) e a RCL do RGF do Poder Executivo, 3º quadrimestre.\n  - Despesa corrente = despesas correntes empenhadas do RREO (anexo 01, 6º bimestre, com intraorçamentárias), menos as\n    transferências a municípios (elementos 3.3.40, 3.3.41 e 3.3.42) lidas na DCA (anexo I-D).\n  - Receita corrente ajustada = receitas correntes do RREO (anexo 01, 6º bimestre, com intraorçamentárias), que já vêm\n    líquidas dos repasses constitucionais a municípios e da formação do Fundeb e incluem o Fundeb recebido.\n  - Obrigações financeiras = restos a pagar liquidados e não pagos (do exercício e anteriores) e restos a pagar não\n    liquidados de exercícios anteriores. A variante com \"demais obrigações financeiras\" sai à parte (campo lr_com_demais).\nEstas definições devem ser conferidas contra os valores que o Tesouro Nacional divulga (conjunto \"CAPAG Estados\" do\nTesouro Transparente) antes de qualquer conclusão; a portaria 1.764/2024 alterou a 1.583/2023 e seu texto não foi lido.\n\nUso: python3 -I pipeline/capag/montar.py\n",
+ "avisos": [
+  "2018: estrutura do anexo 05 do RGF não reconhecida",
+  "2019: estrutura do anexo 05 do RGF não reconhecida",
+  "2020: estrutura do anexo 05 do RGF não reconhecida",
+  "2021: estrutura do anexo 05 do RGF não reconhecida",
+  "2022: estrutura do anexo 05 do RGF não reconhecida"
+ ],
+ "exercicios": [
+  {
+   "exercicio_base": 2018,
+   "nota_divulgada_em": 2019,
+   "endividamento": {
+    "dc_bruta": 6797682725.25,
+    "rcl": 13567368617.47,
+    "dc_rcl": 0.5010317709284449
+   },
+   "poupanca_corrente": {
+    "pc": null,
+    "razoes": {
+     "2018": 0.8582913491698365,
+     "2017": null,
+     "2016": null
+    },
+    "componentes": {
+     "receita_corrente_ajustada": 16473578147.800001,
+     "despesa_corrente": 14307620813.06,
+     "transferencias_municipios": 168491198.93,
+     "despesa_corrente_ajustada": 14139129614.13,
+     "razao": 0.8582913491698365
+    }
+   },
+   "liquidez": {
+    "lr": null
+   },
+   "notas_parciais": {
+    "endividamento": "A",
+    "poupanca_corrente": null,
+    "liquidez_relativa": null
+   },
+   "nota_final": null
+  },
+  {
+   "exercicio_base": 2019,
+   "nota_divulgada_em": 2020,
+   "endividamento": {
+    "dc_bruta": 7048953859.43,
+    "rcl": 15832886168.2,
+    "dc_rcl": 0.44520965947368885
+   },
+   "poupanca_corrente": {
+    "pc": null,
+    "razoes": {
+     "2019": 0.7780690576943529,
+     "2018": 0.8582913491698365,
+     "2017": null
+    },
+    "componentes": {
+     "receita_corrente_ajustada": 19021718507.579998,
+     "despesa_corrente": 14982894643.23,
+     "transferencias_municipios": 182684048.31,
+     "despesa_corrente_ajustada": 14800210594.92,
+     "razao": 0.7780690576943529
+    }
+   },
+   "liquidez": {
+    "lr": null
+   },
+   "notas_parciais": {
+    "endividamento": "A",
+    "poupanca_corrente": null,
+    "liquidez_relativa": null
+   },
+   "nota_final": null
+  },
+  {
+   "exercicio_base": 2020,
+   "nota_divulgada_em": 2021,
+   "endividamento": {
+    "dc_bruta": 7407327832.82,
+    "rcl": 15640877344.22,
+    "dc_rcl": 0.4735877450990521
+   },
+   "poupanca_corrente": {
+    "pc": 0.8162268183291991,
+    "razoes": {
+     "2020": 0.8222956623738518,
+     "2019": 0.7780690576943529,
+     "2018": 0.8582913491698365
+    },
+    "componentes": {
+     "receita_corrente_ajustada": 18392512618.55,
+     "despesa_corrente": 15313238934.579998,
+     "transferencias_municipios": 189155588.19,
+     "despesa_corrente_ajustada": 15124083346.389997,
+     "razao": 0.8222956623738518
+    }
+   },
+   "liquidez": {
+    "lr": null
+   },
+   "notas_parciais": {
+    "endividamento": "A",
+    "poupanca_corrente": "A",
+    "liquidez_relativa": null
+   },
+   "nota_final": null
+  },
+  {
+   "exercicio_base": 2021,
+   "nota_divulgada_em": 2022,
+   "endividamento": {
+    "dc_bruta": 7383900046.12,
+    "rcl": 18821227339.89,
+    "dc_rcl": 0.39231766944711666
+   },
+   "poupanca_corrente": {
+    "pc": 0.7812382390788863,
+    "razoes": {
+     "2021": 0.7578714576557205,
+     "2020": 0.8222956623738518,
+     "2019": 0.7780690576943529
+    },
+    "componentes": {
+     "receita_corrente_ajustada": 19683700158.75,
+     "despesa_corrente": 15239663058.029999,
+     "transferencias_municipios": 321948526.66,
+     "despesa_corrente_ajustada": 14917714531.369999,
+     "razao": 0.7578714576557205
+    }
+   },
+   "liquidez": {
+    "lr": null
+   },
+   "notas_parciais": {
+    "endividamento": "A",
+    "poupanca_corrente": "A",
+    "liquidez_relativa": null
+   },
+   "nota_final": null
+  },
+  {
+   "exercicio_base": 2022,
+   "nota_divulgada_em": 2023,
+   "endividamento": {
+    "dc_bruta": 7269095439.77,
+    "rcl": 21250420141.8,
+    "dc_rcl": 0.34206831635632207
+   },
+   "poupanca_corrente": {
+    "pc": 0.7524314086175912,
+    "razoes": {
+     "2022": 0.7212216776922094,
+     "2021": 0.7578714576557205,
+     "2020": 0.8222956623738518
+    },
+    "componentes": {
+     "receita_corrente_ajustada": 23309217589.219997,
+     "despesa_corrente": 17261991599.95,
+     "transferencias_municipios": 450878584.56,
+     "despesa_corrente_ajustada": 16811113015.390001,
+     "razao": 0.7212216776922094
+    }
+   },
+   "liquidez": {
+    "lr": null
+   },
+   "notas_parciais": {
+    "endividamento": "A",
+    "poupanca_corrente": "A",
+    "liquidez_relativa": null
+   },
+   "nota_final": null
+  },
+  {
+   "exercicio_base": 2023,
+   "nota_divulgada_em": 2024,
+   "endividamento": {
+    "dc_bruta": 7530557324.76,
+    "rcl": 22373375355.79,
+    "dc_rcl": 0.3365856606348478
+   },
+   "poupanca_corrente": {
+    "pc": 0.7580368064841897,
+    "razoes": {
+     "2023": 0.7801920232907656,
+     "2022": 0.7212216776922094,
+     "2021": 0.7578714576557205
+    },
+    "componentes": {
+     "receita_corrente_ajustada": 24093158389.039997,
+     "despesa_corrente": 19361331270.41,
+     "transferencias_municipios": 564041279.4,
+     "despesa_corrente_ajustada": 18797289991.01,
+     "razao": 0.7801920232907656
+    }
+   },
+   "liquidez": {
+    "caixa_bruta_nao_vinculada": 3087977683.57,
+    "obrigacoes_financeiras_nao_vinculadas": 459089774.6999999,
+    "demais_obrigacoes_nao_vinculadas": 38459810.27,
+    "insuficiencias_fontes_vinculadas": 0.0,
+    "fontes_com_insuficiencia": [],
+    "rcl": 22373375355.79,
+    "lr": 0.11750072874854223,
+    "lr_com_demais": 0.11578172973036113
+   },
+   "notas_parciais": {
+    "endividamento": "A",
+    "poupanca_corrente": "A",
+    "liquidez_relativa": "A"
+   },
+   "nota_final": "A"
+  },
+  {
+   "exercicio_base": 2024,
+   "nota_divulgada_em": 2025,
+   "endividamento": {
+    "dc_bruta": 8403200085.9,
+    "rcl": 26359045239.21,
+    "dc_rcl": 0.31879758958036714
+   },
+   "poupanca_corrente": {
+    "pc": 0.7559578060287147,
+    "razoes": {
+     "2024": 0.7553117270060863,
+     "2023": 0.7801920232907656,
+     "2022": 0.7212216776922094
+    },
+    "componentes": {
+     "receita_corrente_ajustada": 28283130228.24,
+     "despesa_corrente": 21960606695.879997,
+     "transferencias_municipios": 598026758.05,
+     "despesa_corrente_ajustada": 21362579937.829998,
+     "razao": 0.7553117270060863
+    }
+   },
+   "liquidez": {
+    "caixa_bruta_nao_vinculada": 2345269443.94,
+    "obrigacoes_financeiras_nao_vinculadas": 260825716.83,
+    "demais_obrigacoes_nao_vinculadas": 74236756.8,
+    "insuficiencias_fontes_vinculadas": 0.0,
+    "fontes_com_insuficiencia": [],
+    "rcl": 26359045239.21,
+    "lr": 0.0790788781685202,
+    "lr_com_demais": 0.07626251072704815
+   },
+   "notas_parciais": {
+    "endividamento": "A",
+    "poupanca_corrente": "A",
+    "liquidez_relativa": "A"
+   },
+   "nota_final": "A"
+  },
+  {
+   "exercicio_base": 2025,
+   "nota_divulgada_em": 2026,
+   "endividamento": {
+    "dc_bruta": 8291329777.21,
+    "rcl": 28084840124.16,
+    "dc_rcl": 0.2952243894056345
+   },
+   "poupanca_corrente": {
+    "pc": 0.7714603177949859,
+    "razoes": {
+     "2025": 0.7776567900700138,
+     "2024": 0.7553117270060863,
+     "2023": 0.7801920232907656
+    },
+    "componentes": {
+     "receita_corrente_ajustada": 30024863723.08,
+     "despesa_corrente": 24084944947.579998,
+     "transferencias_municipios": 735905802.4,
+     "despesa_corrente_ajustada": 23349039145.179996,
+     "razao": 0.7776567900700138
+    }
+   },
+   "liquidez": {
+    "caixa_bruta_nao_vinculada": 2710109395.54,
+    "obrigacoes_financeiras_nao_vinculadas": 424747749.21,
+    "demais_obrigacoes_nao_vinculadas": 66146593.02,
+    "insuficiencias_fontes_vinculadas": 0.0,
+    "fontes_com_insuficiencia": [],
+    "rcl": 28084840124.16,
+    "lr": 0.08137349674153979,
+    "lr_com_demais": 0.07901825481288459
+   },
+   "notas_parciais": {
+    "endividamento": "A",
+    "poupanca_corrente": "A",
+    "liquidez_relativa": "A"
+   },
+   "nota_final": "A"
+  }
+ ]
+}
