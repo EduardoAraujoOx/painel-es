@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<title>Espaço fiscal da nota A</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+<header>
+  <p class="selo">Versão de trabalho, sem conferência com a nota oficial</p>
+  <h1>Quanto espaço o Espírito Santo tem para manter a nota A</h1>
+  <p class="lede">A Capacidade de Pagamento (CAPAG) é a nota que o Tesouro Nacional atribui aos estados. Ela depende de três ponteiros: quanto o Estado deve, quanto da receita já está comprometido com despesas de custeio e quanto dinheiro livre sobra no caixa. Esta página mostra onde cada ponteiro está hoje, qual é a folga de cada um em reais e o que acontece com a nota se as despesas crescerem e a receita encolher.</p>
+</header>
+
+<section>
+  <h2>1. A folga de cada ponteiro hoje</h2>
+  <p>Para a nota final continuar em A, quatro condições precisam valer ao mesmo tempo: a dívida abaixo de 60% da receita corrente líquida, a poupança corrente abaixo de 95%, a liquidez acima de zero, e nunca a poupança acima de 85% junto com a liquidez abaixo de 5%. A tabela traduz cada ponteiro para reais, com os números do último exercício fechado.</p>
+  <div id="tabela-espaco" class="rolagem"></div>
+  <p id="leitura-espaco"></p>
+</section>
+
+<section>
+  <h2>2. Mexa nas válvulas</h2>
+  <p>Cada controle abaixo representa uma decisão ou uma incerteza. Ao movê-lo, as barras de limite, os ponteiros, o mapa e a tabela de anos se atualizam. Os valores iniciais são referências de trabalho, a confirmar no texto da lei de diretrizes orçamentárias.</p>
+  <div id="controles" class="controles"></div>
+  <div id="conclusao" class="conclusao" aria-live="polite"></div>
+  <button id="restaurar" type="button">Voltar aos valores iniciais</button>
+</section>
+
+<section>
+  <h2>3. Quanto cada válvula aguenta</h2>
+  <p>Cada barra isola uma válvula e mantém as outras como estão nos controles. A parte verde é o espaço que a válvula tem, e a parte vermelha é o território em que a nota A se perde até 2032. O triângulo mostra onde o cenário atual está.</p>
+  <div id="valvulas" class="termometros"></div>
+</section>
+
+<section>
+  <h2>4. Os três ponteiros no ano escolhido</h2>
+  <div class="ano-escolha">
+    <label for="ano">Ano em análise: <output id="ano-valor"></output></label>
+    <input id="ano" type="range" min="2026" max="2032" step="1" value="2029">
+  </div>
+  <div id="termometros" class="termometros"></div>
+  <p class="nota">Círculo vazio: situação hoje. Triângulo cheio: situação no ano escolhido. As letras mostram em que faixa cada ponteiro cai.</p>
+</section>
+
+<section>
+  <h2>5. O mapa da nota final</h2>
+  <p>O mapa cruza a poupança corrente, na horizontal, com a liquidez, na vertical, supondo a dívida abaixo de 60%. Verde é a nota A, amarelo é B e vermelho é C. A linha mostra o caminho do Estado de ano em ano. Quando ela sai da região verde, a nota cai.</p>
+  <div id="mapa" class="mapa"></div>
+  <p id="aviso-mapa" class="nota"></p>
+</section>
+
+<section>
+  <h2>6. Ano a ano</h2>
+  <div id="tabela-anos" class="rolagem"></div>
+</section>
+
+<section>
+  <h2>Como ler esta página</h2>
+  <p><strong>Endividamento</strong> compara a dívida consolidada com a receita corrente líquida de um ano. É nota A abaixo de 60%, B entre 60% e 100% e C acima disso.</p>
+  <p><strong>Poupança corrente</strong> mostra quanto de cada R$ 100 de receita corrente já sai em despesas correntes. Usa a média de três anos, com peso de 50% para o último, 30% para o penúltimo e 20% para o antepenúltimo. É nota A abaixo de 85%, B entre 85% e 95% e C acima disso. Como a média é de três anos, um aumento de despesa só pesa por inteiro depois de três exercícios.</p>
+  <p><strong>Liquidez relativa</strong> compara o dinheiro livre em caixa, depois de pagar o que já venceu e de cobrir as fontes vinculadas que estão no vermelho, com a receita corrente líquida. É nota A com 5% ou mais, B entre zero e 5% e C com zero ou menos.</p>
+  <p><strong>A nota A+</strong> exige a nota final A e, além disso, a nota máxima no ranking de qualidade da informação contábil e fiscal do Tesouro Nacional. Essa condição não é calculada aqui.</p>
+  <details>
+    <summary>Premissas e limites desta versão</summary>
+    <p>Os dados vêm dos demonstrativos fiscais que o Estado publica no Siconfi. Os indicadores foram recalculados com as faixas e a tabela da Portaria Normativa MF 1.583/2023, e ainda não foram conferidos contra a nota oficial divulgada pelo Tesouro Nacional. A Portaria 1.764/2024 alterou a anterior e seu texto ainda não foi lido.</p>
+    <p>A projeção é ilustrativa. A receita e a despesa já existentes crescem à mesma taxa, de modo que só o gasto novo e a perda de receita alteram a proporção. A dívida fica constante em valor, supondo que as amortizações sejam repostas por crédito para investimento. Todo o gasto novo e toda a perda de receita saem do caixa livre, sem outra fonte de recursos. Essa última premissa é a mais forte e é ela que faz a liquidez ceder antes da poupança corrente.</p>
+    <p>A perda de receita da reforma tributária é escalonada em quatro etapas iguais, de 2029 a 2032, e representa a perda líquida depois de qualquer compensação. O gasto novo é tratado como despesa corrente permanente, o que é a leitura mais exigente para as emendas, que podem incluir investimentos.</p>
+  </details>
+</section>
+
+<footer>
+  <p>Fonte dos dados: demonstrativos fiscais do Estado no Siconfi (Tesouro Nacional). Regras da nota: Portaria Normativa MF 1.583/2023 e Manual de Análise Fiscal de Estados e Municípios 2025.</p>
+</footer>
+
+</main>
+<noscript><p class="nota">Esta página precisa de JavaScript para desenhar os gráficos e as tabelas.</p></noscript>
+<script src="dados.js"></script>
+<script src="modelo.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
