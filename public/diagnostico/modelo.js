@@ -1,9 +1,17 @@
 // Regras da Capacidade de Pagamento (CAPAG) e simulador de cenários. Sem dependência de tela, para poder ser testado no Node.
 // Regras: Portaria Normativa MF 1.583/2023, arts. 2º a 4º. Valores monetários em R$ bilhões; razões em fração (0,77 = 77%).
+//
+// Premissas do simulador (cada uma com a evidência que a sustenta na página):
+//  1. Receita e despesa que já existem crescem à mesma taxa (a poupança corrente ficou entre 75% e 77% de 2022 a 2025).
+//  2. Sem gasto novo, o caixa livre fica constante em valor, mais uma deriva anual opcional (ficou entre R$ 2,1 e 2,6 bi de 2021 a 2025).
+//  3. O gasto novo (emendas e Poderes) é regido por percentual da receita corrente líquida e por isso cresce com a receita.
+//  4. Todo gasto novo líquido de compensação, e toda perda de receita, sai do caixa livre, sem outra fonte.
+//  5. A dívida fica constante em valor (R$ 7,3 a 8,4 bi desde 2020; operações de crédito e amortizações quase se anulam).
 (function (raiz) {
   var PESOS = [0.5, 0.3, 0.2]; // poupança corrente: último, penúltimo e antepenúltimo exercício
   var TABELA = { AAA: 'A', ABA: 'A', AAB: 'A', BAA: 'B', CAA: 'B', BBA: 'B', CBA: 'B', BAB: 'B', CAB: 'B', ABB: 'B', BBB: 'B', CBB: 'B', CCC: 'D' };
-  var ULTIMO_ANO = 2032;
+  var ULTIMO_ANO = 2035;
+  var ANO_INICIO_GASTO = 2027;
 
   function notaDC(x) { return x < 0.60 ? 'A' : x < 1.00 ? 'B' : 'C'; }
   function notaPC(x) { return x < 0.85 ? 'A' : x < 0.95 ? 'B' : 'C'; }
@@ -19,33 +27,37 @@
     return 'poupança corrente e liquidez juntas';
   }
 
-  // Parâmetros p: crescimento (% ao ano da receita e da despesa-base), emenda e poderes (R$ mi por ano, a partir de 2027),
-  // ajuste (R$ mi por ano de compensação) e perda (% da receita corrente ao fim da transição, escalonada de 2029 a 2032).
+  // Parâmetros p: crescimento (% ao ano da receita e da despesa-base), emenda e poderes (R$ mi por ano em 2027, indexados à receita),
+  // ajuste (R$ mi por ano de compensação, também indexado), perda (% da receita corrente ao fim da transição, escalonada de 2029 a 2032)
+  // e deriva (R$ mi por ano de variação do caixa livre sem o gasto novo; zero é o caso de caixa constante em valor).
   function simular(D, p) {
-    var linhas = [{ ano: D.ano_base, dc_rcl: D.dc_rcl, pc: D.pc, lr: D.lr, extra: 0, perda: 0,
+    var deriva = (p.deriva || 0) / 1000;
+    var caixa0 = D.lr * D.rcl;
+    var linhas = [{ ano: D.ano_base, dc_rcl: D.dc_rcl, pc: D.pc, lr: D.lr, extra: 0, perda: 0, caixa: caixa0, rcl: D.rcl,
       nDC: notaDC(D.dc_rcl), nPC: notaPC(D.pc), nLR: notaLR(D.lr) }];
     linhas[0].final = notaFinal(linhas[0].nDC, linhas[0].nPC, linhas[0].nLR);
     linhas[0].causa = causa(linhas[0].nDC, linhas[0].nPC, linhas[0].nLR);
     var razao = {};
     Object.keys(D.razoes).forEach(function (k) { razao[k] = D.razoes[k]; });
-    var acumulado = 0;
+    var caixa = caixa0;
     for (var n = 1; D.ano_base + n <= ULTIMO_ANO; n++) {
       var ano = D.ano_base + n;
       var f = Math.pow(1 + p.crescimento / 100, n);
       var rcaBase = D.rca * f, despBase = D.despesa * f, rclBase = D.rcl * f;
       var rampa = ano < 2029 ? 0 : Math.min(1, (ano - 2028) / 4);
       var perda = (p.perda / 100) * rampa * rcaBase;
-      var extra = ano >= 2027 ? Math.max(0, p.emenda + p.poderes - p.ajuste) / 1000 : 0;
+      var indice = ano >= ANO_INICIO_GASTO ? Math.pow(1 + p.crescimento / 100, ano - ANO_INICIO_GASTO) : 0;
+      var extra = ano >= ANO_INICIO_GASTO ? Math.max(0, p.emenda + p.poderes - p.ajuste) * indice / 1000 : 0;
       var rca = rcaBase - perda;
       var r = (despBase + extra) / rca;
       razao[ano] = r;
       var pc = PESOS[0] * r + PESOS[1] * razao[ano - 1] + PESOS[2] * razao[ano - 2];
-      acumulado += extra + perda; // o que falta sai do caixa livre
+      caixa = caixa + deriva - extra - perda; // o que falta sai do caixa livre
       var rcl = rclBase - perda * (D.rcl / D.rca);
-      var lr = (D.lr * rclBase - acumulado) / rcl;
-      var dcrcl = D.divida / rcl; // dívida constante: amortizações compensadas por crédito para investimento
+      var lr = caixa / rcl;
+      var dcrcl = D.divida / rcl; // dívida constante em valor
       var a = notaDC(dcrcl), b = notaPC(pc), c = notaLR(lr);
-      linhas.push({ ano: ano, dc_rcl: dcrcl, pc: pc, lr: lr, extra: extra, perda: perda, nDC: a, nPC: b, nLR: c,
+      linhas.push({ ano: ano, dc_rcl: dcrcl, pc: pc, lr: lr, extra: extra, perda: perda, caixa: caixa, rcl: rcl, nDC: a, nPC: b, nLR: c,
         final: notaFinal(a, b, c), causa: causa(a, b, c) });
     }
     return linhas;
@@ -56,21 +68,19 @@
     return null;
   }
 
-  // Maior despesa permanente nova (R$ mi por ano, a partir de 2027) que mantém a nota A até 2032, com as demais premissas dadas.
+  // Maior gasto novo líquido permanente (R$ mi por ano em 2027, indexado à receita) que mantém a nota A até o último ano,
+  // com as demais premissas dadas.
   function espacoMaximo(D, p) {
-    function mantem(e) {
-      var q = { crescimento: p.crescimento, perda: p.perda, emenda: e, poderes: 0, ajuste: 0 };
-      return primeiroAnoSemA(simular(D, q)) === null;
-    }
-    if (!mantem(0)) return { valor: 0, limite: primeiroAnoSemA(simular(D, { crescimento: p.crescimento, perda: p.perda, emenda: 0, poderes: 0, ajuste: 0 })) };
+    function com(e) { return { crescimento: p.crescimento, perda: p.perda, deriva: p.deriva, emenda: e, poderes: 0, ajuste: 0 }; }
+    function mantem(e) { return primeiroAnoSemA(simular(D, com(e))) === null; }
+    if (!mantem(0)) return { valor: 0, limite: primeiroAnoSemA(simular(D, com(0))) };
     var lo = 0, hi = 20000;
     if (mantem(hi)) return { valor: hi, limite: null };
     for (var i = 0; i < 40; i++) {
       var mid = (lo + hi) / 2;
       if (mantem(mid)) lo = mid; else hi = mid;
     }
-    var depois = primeiroAnoSemA(simular(D, { crescimento: p.crescimento, perda: p.perda, emenda: hi, poderes: 0, ajuste: 0 }));
-    return { valor: lo, limite: depois };
+    return { valor: lo, limite: primeiroAnoSemA(simular(D, com(hi))) };
   }
 
   // Espaço de cada indicador hoje, isoladamente, em R$ bilhões (receitas e caixa do ano-base).
@@ -85,5 +95,5 @@
   }
 
   raiz.Modelo = { notaDC: notaDC, notaPC: notaPC, notaLR: notaLR, notaFinal: notaFinal, causa: causa, simular: simular,
-    primeiroAnoSemA: primeiroAnoSemA, espacoMaximo: espacoMaximo, espacosAtuais: espacosAtuais, ULTIMO_ANO: ULTIMO_ANO };
+    primeiroAnoSemA: primeiroAnoSemA, espacoMaximo: espacoMaximo, espacosAtuais: espacosAtuais, ULTIMO_ANO: ULTIMO_ANO, ANO_INICIO_GASTO: ANO_INICIO_GASTO };
 })(typeof window !== 'undefined' ? window : module.exports);

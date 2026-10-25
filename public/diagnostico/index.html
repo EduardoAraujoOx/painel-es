@@ -25,21 +25,39 @@
 </section>
 
 <section>
-  <h2>2. Mexa nas válvulas</h2>
-  <p>Cada controle abaixo representa uma decisão ou uma incerteza. Ao movê-lo, as barras de limite, os ponteiros, o mapa e a tabela de anos se atualizam. Os valores iniciais são referências de trabalho, a confirmar no texto da lei de diretrizes orçamentárias.</p>
+  <h2>2. O que os dados mostram</h2>
+  <p>As premissas do simulador não nasceram de suposições soltas. Esta seção reúne o que os demonstrativos do Siconfi, as leis de diretrizes e a reforma tributária informam sobre cada uma, e indica a origem e a situação de cada número.</p>
+  <div class="grafico">
+    <h3>Caixa livre do Executivo</h3>
+    <p class="legenda" id="leg-caixa"></p>
+    <div id="graf-caixa"></div>
+    <p class="nota" id="nota-caixa"></p>
+  </div>
+  <div class="grafico">
+    <h3>Resultado primário: meta da lei de diretrizes e resultado realizado</h3>
+    <p class="legenda" id="leg-primario"></p>
+    <div id="graf-primario"></div>
+    <p class="nota" id="nota-primario"></p>
+  </div>
+  <div id="tabela-evidencias" class="rolagem"></div>
+</section>
+
+<section>
+  <h2>3. Mexa nas válvulas</h2>
+  <p>Cada controle abaixo representa uma decisão ou uma incerteza. Ao movê-lo, as barras de limite, os ponteiros, o mapa e a tabela de anos se atualizam. Os valores iniciais vêm das evidências da seção anterior. Onde a evidência é só a informação passada por Eduardo, a página marca o valor como a confirmar.</p>
   <div id="controles" class="controles"></div>
   <div id="conclusao" class="conclusao" aria-live="polite"></div>
   <button id="restaurar" type="button">Voltar aos valores iniciais</button>
 </section>
 
 <section>
-  <h2>3. Quanto cada válvula aguenta</h2>
-  <p>Cada barra isola uma válvula e mantém as outras como estão nos controles. A parte verde é o espaço que a válvula tem, e a parte vermelha é o território em que a nota A se perde até 2032. O triângulo mostra onde o cenário atual está.</p>
+  <h2>4. Quanto cada válvula aguenta</h2>
+  <p>Cada barra isola uma válvula e mantém as outras como estão nos controles. A parte verde é o espaço que a válvula tem, e a parte vermelha é o território em que a nota A se perde até o último ano da projeção. O triângulo mostra onde o cenário atual está.</p>
   <div id="valvulas" class="termometros"></div>
 </section>
 
 <section>
-  <h2>4. Os três ponteiros no ano escolhido</h2>
+  <h2>5. Os três ponteiros no ano escolhido</h2>
   <div class="ano-escolha">
     <label for="ano">Ano em análise: <output id="ano-valor"></output></label>
     <input id="ano" type="range" min="2026" max="2032" step="1" value="2029">
@@ -49,14 +67,19 @@
 </section>
 
 <section>
-  <h2>5. O mapa da nota final</h2>
+  <h2>6. O mapa da nota final</h2>
   <p>O mapa cruza a poupança corrente, na horizontal, com a liquidez, na vertical, supondo a dívida abaixo de 60%. Verde é a nota A, amarelo é B e vermelho é C. A linha mostra o caminho do Estado de ano em ano. Quando ela sai da região verde, a nota cai.</p>
   <div id="mapa" class="mapa"></div>
   <p id="aviso-mapa" class="nota"></p>
 </section>
 
 <section>
-  <h2>6. Ano a ano</h2>
+  <h2>7. Ano a ano</h2>
+  <div class="grafico">
+    <h3>O colchão de caixa livre</h3>
+    <p class="legenda">Caixa livre projetado em R$ bilhões. A cor mostra a faixa da liquidez: verde com 5% ou mais da receita, amarelo entre zero e 5% e vermelho com zero ou menos.</p>
+    <div id="graf-balde"></div>
+  </div>
   <div id="tabela-anos" class="rolagem"></div>
 </section>
 
@@ -68,9 +91,9 @@
   <p><strong>A nota A+</strong> exige a nota final A e, além disso, a nota máxima no ranking de qualidade da informação contábil e fiscal do Tesouro Nacional. Essa condição não é calculada aqui.</p>
   <details>
     <summary>Premissas e limites desta versão</summary>
-    <p>Os dados vêm dos demonstrativos fiscais que o Estado publica no Siconfi. Os indicadores foram recalculados com as faixas e a tabela da Portaria Normativa MF 1.583/2023, e ainda não foram conferidos contra a nota oficial divulgada pelo Tesouro Nacional. A Portaria 1.764/2024 alterou a anterior e seu texto ainda não foi lido.</p>
-    <p>A projeção é ilustrativa. A receita e a despesa já existentes crescem à mesma taxa, de modo que só o gasto novo e a perda de receita alteram a proporção. A dívida fica constante em valor, supondo que as amortizações sejam repostas por crédito para investimento. Todo o gasto novo e toda a perda de receita saem do caixa livre, sem outra fonte de recursos. Essa última premissa é a mais forte e é ela que faz a liquidez ceder antes da poupança corrente.</p>
-    <p>A perda de receita da reforma tributária é escalonada em quatro etapas iguais, de 2029 a 2032, e representa a perda líquida depois de qualquer compensação. O gasto novo é tratado como despesa corrente permanente, o que é a leitura mais exigente para as emendas, que podem incluir investimentos.</p>
+    <p>Os dados vêm dos demonstrativos fiscais que o Estado publica no Siconfi. Os indicadores foram recalculados com as faixas e a tabela da Portaria Normativa MF 1.583/2023, e ainda não foram conferidos contra a nota oficial divulgada pelo Tesouro Nacional. A Portaria 1.764/2024 alterou a anterior e seu texto ainda não foi lido. A série do caixa livre anterior a 2023 usa a mesma definição, mas a classificação das fontes de recursos era outra, de modo que serve para ler a trajetória.</p>
+    <p>A projeção é ilustrativa. A receita e a despesa já existentes crescem à mesma taxa, de modo que só o gasto novo e a perda de receita alteram a proporção. O caixa livre fica constante em valor quando não há gasto novo, mais uma variação anual que o usuário pode ajustar. A dívida fica constante em valor. O gasto novo cresce com a receita, porque as emendas e as despesas dos Poderes seguem percentuais da receita corrente líquida.</p>
+    <p>Todo o gasto novo, líquido de compensação, e toda a perda de receita saem do caixa livre, sem outra fonte de recursos. Essa premissa é a mais forte e é ela que faz a liquidez ceder antes da poupança corrente. A compensação inclui o deslocamento de despesas que o Executivo executaria de qualquer forma, pois a emenda impositiva deve indicar a despesa anulada. A perda de receita da reforma tributária é escalonada em quatro etapas iguais, de 2029 a 2032, e depois permanece constante.</p>
   </details>
 </section>
 
