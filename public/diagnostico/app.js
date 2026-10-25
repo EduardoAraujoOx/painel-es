@@ -2,7 +2,7 @@
 // Sem estilos nem scripts embutidos: a política de segurança do painel (vercel.json) só admite arquivos do próprio domínio.
 (function () {
   'use strict';
-  var D = window.DADOS, M = window.Modelo;
+  var D = window.DADOS, M = window.Modelo, TB = window.Tabelas;
   var SVGNS = 'http://www.w3.org/2000/svg';
   var LARGO = 640, ESTREITO = 360, W = LARGO; // largura (em unidades do desenho) usada nos gráficos; muda conforme a tela
   function medirLargura() { return window.innerWidth < 560 ? ESTREITO : LARGO; }
@@ -32,8 +32,8 @@
   function texto(tag, attrs, conteudo) { var e = s(tag, attrs); e.textContent = conteudo; return e; }
   function num(x, casas) { return x.toLocaleString('pt-BR', { minimumFractionDigits: casas, maximumFractionDigits: casas }); }
   function pct(x, casas) { return num(x * 100, casas === undefined ? 1 : casas) + '%'; }
-  function bi(x) { return 'R$ ' + num(x, 2) + ' bi'; }
-  function mi(x) { return 'R$ ' + num(Math.round(x), 0) + ' mi'; }
+  function bi(x) { return (x < 0 && Math.abs(x) >= 0.005 ? '-' : '') + 'R$ ' + num(Math.abs(x), 2) + ' bi'; }
+  function mi(x) { return (Math.round(x) < 0 ? '-' : '') + 'R$ ' + num(Math.abs(Math.round(x)), 0) + ' mi'; }
   function pp(x) { return num(x, 1) + ' pontos percentuais'; }
   function arredondar(x, passo) { return Math.ceil(x / passo) * passo; }
   function selo(nota) { return h('span', { 'class': 'letra n' + nota, text: nota }); }
@@ -61,13 +61,13 @@
         consome: 'Qualquer gasto novo sem receita nova e a perda de receita. A folga é um estoque e se gasta uma única vez.' }
     ];
     var cab = h('thead', {}, [h('tr', {}, [
-      h('th', { text: 'Ponteiro' }), h('th', { text: 'Hoje (' + D.ano_base + ')' }), h('th', { text: 'Limites da nota A' }),
+      h('th', { text: 'Ponteiro' }), h('th', { text: 'Fechamento de ' + D.ano_base + ' (estimado)' }), h('th', { text: 'Limites da nota A' }),
       h('th', { text: 'Folga em reais' }), h('th', { text: 'O que consome a folga' })])]);
     var corpo = h('tbody', {}, linhas.map(function (l) {
       function bloco(itens) { return itens.map(function (t) { return h('div', { text: t }); }); }
       return h('tr', {}, [
         h('td', { 'class': 'nome', 'data-rotulo': 'Ponteiro', text: l.nome }),
-        h('td', { 'data-rotulo': 'Hoje (' + D.ano_base + ')' }, [h('span', { 'class': 'destaque-num', text: l.hoje }), selo(l.nota)]),
+        h('td', { 'data-rotulo': 'Fechamento de ' + D.ano_base + ' (estimado)' }, [h('span', { 'class': 'destaque-num', text: l.hoje }), selo(l.nota)]),
         h('td', { 'data-rotulo': 'Limites da nota A' }, bloco(l.limites)),
         h('td', { 'data-rotulo': 'Folga em reais' }, bloco(l.folga)),
         h('td', { 'data-rotulo': 'O que consome a folga', text: l.consome })
@@ -150,63 +150,76 @@
       '. Em 2025 o resultado era ' + saldo(p26.resultado_primario_ate_agosto_2025) + ' em agosto e fechou o ano com ' + saldo(ano(2025).resultado_primario) +
       ', de modo que o dado de agosto não permite concluir sobre o ano inteiro.';
 
-    // Tabela de evidências
-    var dividas = serie('divida', 2020, 2025);
-    var cagr = Math.pow(ano(2025).rcl / ano(2021).rcl, 1 / 4) - 1;
-    var op = soma(serie('operacoes_credito', 2023, 2025)), am = soma(serie('amortizacao', 2023, 2025));
-    var pod = X.poderes, somaPod = soma(Object.keys(pod.percentuais_rcl).map(function (k) { return pod.percentuais_rcl[k]; }));
-    var perdaSetor = X.reforma.estudo_setorial_perda_icms_bi * 0.75 / D.rcl;
-    function pcDe(k) { return num(pod.percentuais_rcl[k], 3) + '%'; }
-    var linhas = [
-      { premissa: 'Caixa livre sem gasto novo',
-        achado: 'De 2021 a 2025 o caixa livre ficou entre ' + bi(Math.min.apply(null, c2125)) + ' e ' + bi(Math.max.apply(null, c2125)) + ', com a receita corrente líquida crescendo ' + pct(r2125[r2125.length - 1] / r2125[0] - 1, 0) + '.',
-        uso: 'Caixa constante em valor, com variação anual ajustável. O valor inicial da variação é zero.',
-        origem: [['Siconfi, RGF anexo 05; cálculo próprio', '']], situacao: 'oficial', rotuloSit: 'Dado do Siconfi' },
-      { premissa: 'Folga de execução',
-        achado: 'A meta de resultado primário foi de déficit em todos os anos de 2018 a 2025, e o realizado superou a meta. Em 2025 o Estado pagou ' + pct(ano(2025).exec_paga, 0) + ' da dotação atualizada.',
-        uso: 'O orçamento programa déficit que não se realiza por inteiro. Gasto de execução obrigatória tende a reduzir essa folga.',
-        origem: [['Siconfi, RREO anexo 06; cálculo próprio', '']], situacao: 'oficial', rotuloSit: 'Dado do Siconfi' },
-      { premissa: 'Crescimento da receita',
-        achado: 'A receita corrente líquida cresceu ' + pct(cagr) + ' ao ano, em média, de 2021 a 2025, e soma ' + bi(p26.rcl_12m_agosto) + ' em 12 meses até agosto de 2026, contra ' + bi(D.rcl) + ' no fim de 2025.',
-        uso: 'Valor inicial de ' + num(D.crescimento_padrao, 0) + '% ao ano, abaixo da média recente. Neste modelo, crescer mais não folga a nota, porque o caixa livre não acompanhou a receita em 2021 a 2025.',
-        origem: [['Siconfi, RGF anexo 02; cálculo próprio', '']], situacao: 'oficial', rotuloSit: 'Dado do Siconfi' },
-      { premissa: 'Dívida e empréstimos',
-        achado: 'A dívida consolidada ficou entre ' + bi(Math.min.apply(null, dividas)) + ' e ' + bi(Math.max.apply(null, dividas)) + ' de 2020 a 2025. De 2023 a 2025 as operações de crédito somaram ' + bi(op) + ' e as amortizações ' + bi(am) + '.',
-        uso: 'Dívida constante em valor. O cenário não supõe empréstimo para cobrir o gasto novo.',
-        origem: [['Siconfi, RREO anexo 06 e RGF anexo 02', '']], situacao: 'oficial', rotuloSit: 'Dado do Siconfi' },
-      { premissa: 'Emendas impositivas',
-        achado: 'A PEC 04/2026 fixou o teto em ' + num(X.emendas.percentual_rcl, 2) + '% da receita corrente líquida de 2025, o que dá ' + mi(X.emendas.valor_2027_mi) + ' em 2027 (R$ ' + num(X.emendas.por_deputado_mi, 1) + ' milhões por deputado, contra R$ ' + num(X.emendas.por_deputado_antes_mi, 0) + ' milhões hoje), ante ' + mi(X.emendas.valor_antes_mi) + '. Metade deve ir para a saúde.',
-        uso: 'Acréscimo de ' + mi(D.extras_padrao.emenda) + ', que cresce com a receita. É a diferença de ' + mi(D.extras_padrao.emenda_bruto) + ' menos o crescimento de ' + num(D.crescimento_padrao, 0) + '% que o valor de 2026 teria de qualquer forma. Como a emenda deve indicar a despesa anulada, parte pode deslocar gasto existente, o que o controle de compensação testa.',
-        origem: X.emendas.fontes, situacao: 'imprensa', rotuloSit: 'Conferido na imprensa' },
-      { premissa: 'Despesas dos Poderes',
-        achado: 'Segundo a tabela de cálculo do autor, os limites globais passam de ' + mi(D.extras_padrao.poderes_2026) + ' na LDO 2026 para ' + mi(D.extras_padrao.poderes_2027) + ' na LDO 2027, uma diferença de ' + mi(D.extras_padrao.poderes_bruto) + '. A causa é a troca da correção pelo IPCA por percentuais da receita corrente líquida, que somam ' + num(somaPod, 3) + '% (Judiciário ' + pcDe('Judiciário') + ', Ministério Público ' + pcDe('Ministério Público') + ', Assembleia ' + pcDe('Assembleia Legislativa') + ', Tribunal de Contas ' + pcDe('Tribunal de Contas') + ' e Defensoria ' + pcDe('Defensoria Pública') + '). Aplicados à receita de julho de 2025 a junho de 2026, de ' + bi(p26.rcl_12m_junho) + ', os percentuais reproduzem ' + mi(somaPod / 100 * p26.rcl_12m_junho * 1000) + '.',
-        uso: 'Acréscimo de ' + mi(D.extras_padrao.poderes) + ', que cresce com a receita. É a diferença de ' + mi(D.extras_padrao.poderes_bruto) + ' menos o crescimento de ' + num(D.crescimento_padrao, 0) + '% que o limite de 2026 teria de qualquer forma e que a despesa-base do simulador já inclui. Contar a diferença inteira contaria o mesmo gasto duas vezes.',
-        origem: pod.fontes, situacao: 'autor', rotuloSit: 'Tabela do autor, 2027 conferido' },
-      { premissa: 'Plano do Executivo para 2027',
-        achado: 'A proposta projeta receita total de ' + bi(X.ldo_2027.receita_total_bi) + ', despesa total de ' + bi(X.ldo_2027.despesa_total_bi) + ' e déficit primário de ' + bi(X.ldo_2027.deficit_primario_bi) + '. O projeto de orçamento soma ' + bi(X.ldo_2027.orcamento_2027_total_bi) + '.',
-        uso: 'Referência de contexto. A projeção da página parte do resultado realizado e não do planejado.',
-        origem: X.ldo_2027.fontes, situacao: 'imprensa', rotuloSit: 'Conferido na imprensa' },
-      { premissa: 'Perda de receita da reforma tributária',
-        achado: 'A estimativa do autor, em artigo sobre os efeitos da reforma no Espírito Santo, é de perda acumulada da receita estadual de ' + bi(X.reforma.estimativa_autor.neutro_bi) + ' no cenário neutro e de ' + bi(X.reforma.estimativa_autor.destino_pleno_bi) + ' com destino pleno, de ' + X.reforma.estimativa_autor.periodo + '. Segundo resumo da LC 227/2026, de 2029 a 2032 retêm-se ' + pct(X.reforma.retencao_2029_2032, 0) + ' da receita do IBS para distribuição pelo coeficiente histórico, e ' + pct(X.reforma.retencao_2033, 0) + ' em 2033. Um estudo do Sincades e da Apex projeta perda de ' + bi(X.reforma.estudo_setorial_perda_icms_bi) + ' de ICMS a partir de ' + X.reforma.estudo_setorial_a_partir_de + ', sem metodologia divulgada, e não foi usado.',
-        uso: 'Valor inicial de ' + num(PADRAO.perda, 2) + '% da receita corrente, que reproduz a perda acumulada do cenário neutro com uma rampa de 25% a 100% de 2029 a 2032 e percentual constante depois. Os botões do controle trocam para o destino pleno. A trajetória anual do artigo ainda deve substituir a rampa. Não entram as transferências do Fundo Nacional de Desenvolvimento Regional, em geral vinculadas a investimento.',
-        origem: X.reforma.fontes, situacao: 'autor', rotuloSit: 'Estimativa do autor' }
-    ];
-    var cab = h('thead', {}, [h('tr', {}, [h('th', { text: 'Premissa' }), h('th', { text: 'O que as fontes mostram' }), h('th', { text: 'Como entra no simulador' }),
+    // Tabela de premissas e evidências
+    var linhas = TB.premissas(D);
+    var cab = h('thead', {}, [h('tr', {}, [h('th', { text: 'Parâmetro' }), h('th', { text: 'Valor usado nas tabelas' }), h('th', { text: 'O que as fontes mostram' }),
       h('th', { text: 'Origem' }), h('th', { text: 'Situação' })])]);
     var corpo = h('tbody', {}, linhas.map(function (l) {
-      var origem = l.origem.map(function (f) {
+      var origem = l.fontes.map(function (f) {
         return f[1] ? h('div', {}, [h('a', { href: f[1], target: '_blank', rel: 'noopener noreferrer', text: f[0] })]) : h('div', { text: f[0] });
       });
       return h('tr', {}, [
-        h('td', { 'class': 'nome', 'data-rotulo': 'Premissa', text: l.premissa }),
-        h('td', { 'data-rotulo': 'O que as fontes mostram', text: l.achado }),
-        h('td', { 'data-rotulo': 'Como entra no simulador', text: l.uso }),
+        h('td', { 'class': 'nome', 'data-rotulo': 'Parâmetro', text: l.parametro }),
+        h('td', { 'data-rotulo': 'Valor usado nas tabelas', text: l.valor }),
+        h('td', { 'data-rotulo': 'O que as fontes mostram', text: l.evidencia }),
         h('td', { 'data-rotulo': 'Origem' }, origem),
-        h('td', { 'data-rotulo': 'Situação' }, [h('span', { 'class': 'sit sit-' + l.situacao, text: l.rotuloSit })])
+        h('td', { 'data-rotulo': 'Situação' }, [h('span', { 'class': 'sit sit-' + l.classe, text: l.situacao })])
       ]);
     }));
     var alvo = $('tabela-evidencias'); limpar(alvo);
     alvo.appendChild(h('table', { 'class': 'evidencias' }, [cab, corpo]));
+  }
+
+  /* ---------- 2b. as contas, ano a ano ---------- */
+  function desenharCenario(spec, alvo) {
+    var nReal = spec.colunas.filter(function (c) { return c.tipo === 'real'; }).length;
+    var nProj = spec.colunas.filter(function (c) { return c.tipo === 'projecao'; }).length;
+    var faixa = h('tr', { 'class': 'faixa' }, [h('th', { 'class': 'rot' }), h('th', { colspan: nReal, 'class': 'f-real', text: 'Realizado' }),
+      h('th', { 'class': 'f-est', text: 'Estimado' }), h('th', { colspan: nProj, 'class': 'f-proj', text: 'Projeção' })]);
+    var anos = h('tr', {}, [h('th', { 'class': 'rot', text: '' })].concat(spec.colunas.map(function (c) {
+      return h('th', { 'class': 'num' + (c.perde ? ' perde' : ''), text: c.rotulo + (c.reconstruida ? '*' : '') });
+    })));
+    var linhas = [];
+    spec.grupos.forEach(function (g) {
+      linhas.push(h('tr', { 'class': 'grupo' }, [h('th', { colspan: spec.colunas.length + 1, text: g.titulo })]));
+      g.linhas.forEach(function (l) {
+        linhas.push(h('tr', { 'class': l.destaque ? 'destaque' : '' }, [h('th', { 'class': 'rot', scope: 'row', text: l.rotulo })].concat(l.celulas.map(function (c, k) {
+          var col = spec.colunas[k];
+          return h('td', { 'class': 'num' + (col.perde ? ' perde' : '') + (col.tipo === 'real' ? ' real' : '') + (c.vazio ? ' vazio' : '') }, [c.t, c.nota ? selo(c.nota) : null]);
+        }))));
+      });
+    });
+    limpar(alvo);
+    var conclusao;
+    if (spec.primeiro) {
+      var f = spec.primeiro;
+      conclusao = 'Nesta tabela a nota deixa de ser A no exercício de ' + f.ano + ', pela ' + f.causa + ': o caixa livre fica em ' + bi(f.caixa) + ', ou ' + pct(f.lr) + ' da receita corrente líquida. ' +
+        'Depois disso os números mostram a lacuna que restaria se nenhum ajuste fosse feito. A nota divulgada pelo Tesouro Nacional sobre o exercício de ' + f.ano + ' sai em ' + (f.ano + 1) + '.';
+    } else {
+      conclusao = 'Nesta tabela a nota A se mantém em todos os exercícios até ' + M.ULTIMO_ANO + '.';
+    }
+    anexar(alvo, [h('h3', { text: spec.id + '. ' + spec.titulo }), h('p', { 'class': 'legenda', text: spec.resumo }),
+      h('div', { 'class': 'rolagem' }, [h('table', { 'class': 'anos', 'aria-label': spec.id + '. ' + spec.titulo }, [h('thead', {}, [faixa, anos]), h('tbody', {}, linhas)])]),
+      h('p', { 'class': 'nota', text: conclusao })]);
+  }
+
+  function desenharSensibilidade(spec, alvo) {
+    var cab = h('thead', {}, [h('tr', {}, [h('th', { text: 'Se a premissa mudar' })].concat(spec.colunas.map(function (c) { return h('th', { text: c }); })))]);
+    var corpo = h('tbody', {}, spec.linhas.map(function (l) {
+      return h('tr', {}, [h('th', { 'class': 'rot', scope: 'row', text: l.rotulo })].concat(l.celulas.map(function (c, k) {
+        return h('td', { 'class': c.indexOf('mantém') === 0 ? 'ok' : 'cai', 'data-rotulo': spec.colunas[k], text: c });
+      })));
+    }));
+    limpar(alvo);
+    anexar(alvo, [h('h3', { text: 'Primeiro exercício em que a nota deixa de ser A' }),
+      h('p', { 'class': 'legenda', text: 'Cada linha troca uma premissa e mantém as demais como nas tabelas. Sai do cenário central e mostra quanto o resultado depende de cada escolha.' }),
+      h('div', { 'class': 'rolagem' }, [h('table', { 'class': 'sens', 'aria-label': 'Sensibilidade do primeiro exercício sem nota A' }, [cab, corpo])])]);
+  }
+
+  function montarVerificacao() {
+    var cens = M.cenarios(D);
+    cens.forEach(function (c) { desenharCenario(TB.cenario(D, c), $('verif-' + c.id.toLowerCase())); });
+    desenharSensibilidade(TB.sensibilidade(D), $('verif-sens'));
   }
 
   /* ---------- medidor horizontal (faixas de nota com marcadores) ---------- */
@@ -349,7 +362,8 @@
 
   function calcularValvulas(p) {
     function copia(mud) {
-      var q = { crescimento: p.crescimento, emenda: p.emenda, poderes: p.poderes, ajuste: p.ajuste, perda: p.perda, deriva: p.deriva };
+      var q = {};
+      Object.keys(p).forEach(function (k) { q[k] = p[k]; });
       Object.keys(mud).forEach(function (k) { q[k] = mud[k]; });
       return q;
     }
@@ -376,25 +390,26 @@
     v1.max = arredondar(Math.max(1000, (v1.limite || 0) * 1.4, liquido * 1.15), 250);
     lista.push(v1);
 
-    // 2. Perda de receita com a reforma tributária
-    var ok2 = function (x) { return mantem(copia({ perda: x })); };
-    var v2 = { titulo: 'Perda de receita com a reforma tributária', sub: 'Percentual da receita corrente perdido, em etapas de 2029 a 2032 e constante depois',
-      melhor: 'menor', atual: p.perda, min: 0, fmt: function (x) { return num(x, 1) + '%'; } };
+    // 2. Perda de receita com a reforma tributária, em fração da trajetória da nota técnica
+    var ok2 = function (x) { return mantem(copia({ reforma: x })); };
+    var fmt2 = function (x) { return num(x * 100, 0) + '% da nota técnica'; };
+    var v2 = { titulo: 'Perda de receita com a reforma tributária', sub: 'Fração da perda estimada na nota técnica do autor (100% é a trajetória da nota, de 2029 a 2033)',
+      melhor: 'menor', atual: p.reforma, min: 0, fmt: fmt2 };
     if (!ok2(0)) {
       v2.estado = 'nunca';
-      var semGasto = function (x) { return mantem(copia({ perda: x, emenda: 0, poderes: 0, ajuste: 0 })); };
+      var semGasto = function (x) { return mantem(copia({ reforma: x, emenda: 0, poderes: 0, ajuste: 0 })); };
       v2.frase = 'Com o gasto novo dos controles, a nota A já se perde mesmo sem nenhuma perda de receita.' +
-        (!semGasto(0) ? '' : semGasto(30) ? ' Sem nenhum gasto novo, nem uma perda de 30% da receita derrubaria a nota A' + ate + '.'
-          : ' Sem nenhum gasto novo, o limite seria de ' + num(bissec(semGasto, 0, 30), 2) + '% da receita corrente, já que a perda sai do caixa livre e o caixa de hoje cobre pouco.');
-    } else if (ok2(30)) {
+        (!semGasto(0) ? '' : semGasto(3) ? ' Sem nenhum gasto novo, nem três vezes a perda da nota técnica derrubaria a nota A' + ate + '.'
+          : ' Sem nenhum gasto novo, o limite seria de ' + num(bissec(semGasto, 0, 3) * 100, 0) + '% da perda da nota técnica, já que a perda sai do caixa livre e o caixa de hoje cobre pouco.');
+    } else if (ok2(3)) {
       v2.estado = 'sempre';
-      v2.frase = 'Nestas condições, nem uma perda de 30% da receita derruba a nota A' + ate + '.';
+      v2.frase = 'Nestas condições, nem três vezes a perda da nota técnica derruba a nota A' + ate + '.';
     } else {
-      v2.estado = 'normal'; v2.limite = bissec(ok2, 0, 30);
-      v2.frase = 'No cenário, a perda chega a ' + num(p.perda, 2) + '% da receita corrente. O limite que preserva a nota A' + ate + ' é de ' + num(v2.limite, 2) + '%. ' +
-        (p.perda <= v2.limite ? 'Sobra uma folga de ' + pp(v2.limite - p.perda) + '.' : 'O excesso é de ' + pp(p.perda - v2.limite) + '.');
+      v2.estado = 'normal'; v2.limite = bissec(ok2, 0, 3);
+      v2.frase = 'No cenário, a perda é de ' + num(p.reforma * 100, 0) + '% da trajetória da nota técnica. O limite que preserva a nota A' + ate + ' é de ' + num(v2.limite * 100, 0) + '%. ' +
+        (p.reforma <= v2.limite ? 'Sobra uma folga de ' + num((v2.limite - p.reforma) * 100, 0) + ' pontos percentuais.' : 'O excesso é de ' + num((p.reforma - v2.limite) * 100, 0) + ' pontos percentuais.');
     }
-    v2.max = Math.max(6, Math.ceil(Math.max((v2.limite || 0) * 1.5, p.perda * 1.2)));
+    v2.max = Math.max(1.5, Math.ceil(Math.max((v2.limite || 0) * 1.5, p.reforma * 1.2) * 4) / 4);
     lista.push(v2);
 
     // 3. Formação de caixa livre (o que o histórico mostra que o Estado deixou de fazer desde 2022)
@@ -479,7 +494,7 @@
     linhas.forEach(function (q) {
       var classe = (q.final !== 'A' ? 'perde ' : '') + (q.ano === anoSel ? 'atual' : '');
       linhasHtml.push(h('tr', { 'class': classe.trim() }, [
-        h('td', { text: q.ano === D.ano_base ? q.ano + ' (realizado)' : q.ano + ' (projeção)' }),
+        h('td', { text: q.ano === D.ano_base ? q.ano + ' (estimado)' : q.ano + ' (projeção)' }),
         h('td', { 'class': 'num', text: mi(q.extra * 1000) }), h('td', { 'class': 'num', text: mi(q.perda * 1000) }),
         celula(pct(q.dc_rcl), q.nDC), celula(pct(q.pc), q.nPC), celula(pct(q.lr), q.nLR), h('td', {}, [selo(q.final)])]));
     });
@@ -489,33 +504,29 @@
 
   /* ---------- 3. controles e conclusão ---------- */
   var HIST = D.historico_caixa;
-  var CAGR = Math.pow(ano(2025).rcl / ano(2021).rcl, 1 / 4) - 1;
   var DERIVA_MEDIA = (ano(2025).caixa_livre - ano(2021).caixa_livre) / 4 * 1000;
   var DERIVA_18_21 = (ano(2021).caixa_livre - ano(2018).caixa_livre) / 3 * 1000;
-  // Percentual da receita corrente que, na rampa do simulador (25%, 50%, 75% e 100% de 2029 a 2032, constante depois), reproduz
-  // uma perda acumulada de 2029 a 2033 em R$ bilhões.
-  function perdaParaAcumulado(acumuladoBi, g) {
-    var soma = 0;
-    for (var a = 2029; a <= 2033; a++) soma += Math.min(1, (a - 2028) / 4) * D.rca * Math.pow(1 + g / 100, a - D.ano_base);
-    return Math.round(acumuladoBi / soma * 10000) / 100;
-  }
-  var REF = D.externos.reforma.estimativa_autor;
-  var PADRAO = { crescimento: D.crescimento_padrao, emenda: D.extras_padrao.emenda, poderes: D.extras_padrao.poderes, ajuste: 0,
-    perda: perdaParaAcumulado(REF.neutro_bi, D.crescimento_padrao), deriva: 0 };
+  // Valores iniciais: as premissas centrais das tabelas T1 e T3 (reforma em 100%, a trajetória da nota técnica).
+  var PADRAO = { receita_pp: 0, pressao: 0, emenda: D.extras_padrao.emenda, poderes: D.extras_padrao.poderes, poderes_rcl: 1, ajuste: 0, reforma: 100, deriva: 0 };
   function sinal(v) { return (v < 0 ? '-' : v > 0 ? '+' : '') + mi(Math.abs(v)); }
   var CONTROLES = [
-    { id: 'crescimento', rotulo: 'Crescimento da receita e da despesa existentes', min: 0, max: 12, passo: 0.5,
-      fmt: function (v) { return num(v, 1) + '% ao ano'; },
-      ajuda: 'Taxa nominal, igual para a receita e para a despesa que já existem. A receita corrente líquida cresceu ' + pct(CAGR) + ' ao ano em média de 2021 a 2025, e o valor inicial é mais prudente. Neste modelo, crescer mais não folga a nota, porque a despesa acompanha a receita e o caixa livre não cresce junto com ela, como nos dados de 2021 a 2025.' },
+    { id: 'receita_pp', rotulo: 'Crescimento da receita em relação ao estudo do autor', min: -3, max: 3, passo: 0.25,
+      fmt: function (v) { return (v > 0 ? '+' : '') + num(v, 2) + ' ponto percentual por ano'; },
+      ajuda: 'Zero usa o PIB real mais o IPCA do Focus e da IFI (5,3% a 5,9% ao ano). A receita corrente ajustada cresceu 7,9% ao ano de 2019 a 2025. Neste modelo, crescer mais não folga a nota, porque a despesa acompanha a receita e o caixa livre não cresceu junto com ela em 2021 a 2025.' },
+    { id: 'pressao', rotulo: 'Despesa que já existe crescendo acima da receita', min: 0, max: 3, passo: 0.25,
+      fmt: function (v) { return '+' + num(v, 2) + ' ponto percentual por ano'; },
+      ajuda: 'Zero faz a despesa existente crescer com a receita, como de 2019 a 2025 (7,9% ao ano as duas). Um valor positivo supõe que a despesa foge da receita, o que consome o caixa livre e sobe a poupança corrente.' },
     { id: 'emenda', rotulo: 'Emendas parlamentares impositivas a mais', min: 0, max: 1000, passo: 1, fmt: function (v) { return mi(v) + ' por ano'; },
       ajuda: 'Conferido na imprensa: teto de 1,55% da receita corrente líquida, R$ 435 mi em 2027 contra R$ 90 mi antes. O valor inicial desconta o crescimento que os R$ 90 mi teriam de qualquer forma, e o acréscimo cresce com a receita.' },
-    { id: 'poderes', rotulo: 'Despesas dos Poderes e órgãos a mais', min: 0, max: 1500, passo: 1, fmt: function (v) { return mi(v) + ' por ano'; },
-      ajuda: 'Tabela do autor: limites de R$ 2.989 mi na LDO 2026 e de R$ 3.505 mi na LDO 2027, diferença de R$ 516 mi. O valor inicial desconta o crescimento que o limite de 2026 teria de qualquer forma, e o acréscimo cresce com a receita.' },
+    { id: 'poderes', rotulo: 'Despesas dos Poderes e órgãos a mais, em 2027', min: 0, max: 1500, passo: 1, fmt: function (v) { return mi(v) + ' por ano'; },
+      ajuda: 'Tabela do autor: limites de R$ 2.989 mi na LDO 2026 e de R$ 3.505 mi na LDO 2027. Pela regra antiga o limite de 2026 seria corrigido pelo IPCA e chegaria a R$ 3.116 mi; o valor inicial é o que excede isso. O cenário T2 usa R$ 100 mi.' },
+    { id: 'poderes_rcl', rotulo: 'Percentuais da RCL dos Poderes seguem valendo depois de 2027', tipo: 'caixa',
+      ajuda: 'Marcado, o limite dos Poderes continua um percentual da receita e por isso se afasta, ano a ano, do que o IPCA daria (é o que acontece nos cenários T1 e T3). Desmarcado, o acréscimo é só o valor de 2027 corrigido com a receita.' },
     { id: 'ajuste', rotulo: 'Compensação por corte, receita nova ou deslocamento', min: 0, max: 1500, passo: 10, fmt: function (v) { return mi(v) + ' por ano'; },
       ajuda: 'Parte do gasto novo coberta por corte de outras despesas, por receita nova ou por deslocamento de gasto que seria executado de qualquer forma, já que a emenda deve indicar a despesa anulada. Começa em zero.' },
-    { id: 'perda', rotulo: 'Perda de receita com a reforma tributária', min: 0, max: 25, passo: 0.01, fmt: function (v) { return num(v, 2) + '% da receita'; },
-      ajuda: 'Percentual da receita corrente perdido, em quatro etapas iguais de 2029 a 2032 e constante depois. Os botões usam a estimativa do autor para a perda acumulada de 2029 a 2033 (R$ 1,84 bi no cenário neutro e R$ 3,27 bi com destino pleno), convertida em percentual com o crescimento atual. O estudo do Sincades e da Apex equivaleria a cerca de 22%.',
-      botoes: [['Sem perda', function () { return 0; }], ['Cenário neutro', function (g) { return perdaParaAcumulado(REF.neutro_bi, g); }], ['Destino pleno', function (g) { return perdaParaAcumulado(REF.destino_pleno_bi, g); }]] },
+    { id: 'reforma', rotulo: 'Perda de receita com a reforma tributária', min: 0, max: 200, passo: 5, escala: 0.01, fmt: function (v) { return num(v, 0) + '% da nota técnica'; },
+      ajuda: 'A nota técnica do autor estima perdas de R$ 217 mi em 2029 a R$ 1,5 bi em 2033, a preços de 2025 (R$ 3,57 bi no total). Cem por cento é essa trajetória, levada a valores correntes. O botão de 63% supõe que as vinculações de saúde e educação absorvam 37% da perda.',
+      botoes: [['Sem reforma', 0], ['Nota técnica', 100], ['Vinculações absorvem 37%', 63]] },
     { id: 'deriva', rotulo: 'Variação anual do caixa livre sem o gasto novo', min: -500, max: 1000, passo: 10, fmt: function (v) { return sinal(v) + ' por ano'; },
       ajuda: 'Zero mantém o caixa constante em valor, como entre 2021 e 2025. A variação média desse período foi de ' + sinal(DERIVA_MEDIA) + ' por ano, com anos de menos R$ 540 mi e de mais R$ 200 mi.' }
   ];
@@ -524,22 +535,31 @@
   function lerControles() {
     var p = {};
     CONTROLES.forEach(function (c) {
-      p[c.id] = parseFloat($('c-' + c.id).value);
-      $('o-' + c.id).textContent = c.fmt(p[c.id]);
+      var el = $('c-' + c.id);
+      if (c.tipo === 'caixa') { p[c.id] = el.checked ? 1 : 0; $('o-' + c.id).textContent = el.checked ? 'sim' : 'não'; return; }
+      var v = parseFloat(el.value);
+      $('o-' + c.id).textContent = c.fmt(v);
+      p[c.id] = v * (c.escala || 1);
     });
     return p;
+  }
+
+  function colocar(c, valor) {
+    var el = $('c-' + c.id);
+    if (c.tipo === 'caixa') el.checked = !!valor; else el.value = valor;
   }
 
   function montarControles() {
     var alvo = $('controles'); limpar(alvo);
     CONTROLES.forEach(function (c) {
-      var inp = h('input', { type: 'range', id: 'c-' + c.id, min: c.min, max: c.max, step: c.passo, value: PADRAO[c.id] });
-      inp.addEventListener('input', render);
+      var inp = c.tipo === 'caixa' ? h('input', { type: 'checkbox', id: 'c-' + c.id }) : h('input', { type: 'range', id: 'c-' + c.id, min: c.min, max: c.max, step: c.passo });
+      if (c.tipo === 'caixa') inp.checked = !!PADRAO[c.id]; else inp.value = PADRAO[c.id];
+      inp.addEventListener(c.tipo === 'caixa' ? 'change' : 'input', render);
       var botoes = null;
       if (c.botoes) {
         botoes = h('div', { 'class': 'presets' }, c.botoes.map(function (b) {
           var bt = h('button', { type: 'button', text: b[0] });
-          bt.addEventListener('click', function () { inp.value = b[1](parseFloat($('c-crescimento').value)); render(); });
+          bt.addEventListener('click', function () { inp.value = b[1]; render(); });
           return bt;
         }));
       }
@@ -566,7 +586,7 @@
       ? 'Com estas premissas, a nota deixa de ser A em ' + perde.ano + ' e passa a ser ' + perde.final + '. ' + motivo(perde)
       : 'Com estas premissas, a nota A se mantém em todos os anos até ' + M.ULTIMO_ANO + '.';
     var t2;
-    if (em.valor === 0 && em.limite) t2 = 'Mesmo sem nenhum gasto novo, as demais premissas (crescimento, perda de receita e variação do caixa) fazem a nota deixar de ser A em ' + em.limite.ano + '.';
+    if (em.valor === 0 && em.limite) t2 = 'Mesmo sem nenhum gasto novo, as demais premissas (perda de receita, crescimento e variação do caixa) fazem a nota deixar de ser A em ' + em.limite.ano + '.';
     else if (em.limite === null) t2 = 'Com este crescimento e esta perda de receita, o espaço para gasto novo permanente é superior a ' + mi(em.valor) + ' por ano.';
     else t2 = 'Com este crescimento e esta perda de receita, o gasto novo permanente líquido não pode passar de ' + mi(em.valor) + ' por ano, em valores de ' + M.ANO_INICIO_GASTO + ', para a nota A durar até ' + M.ULTIMO_ANO +
       '. No cenário ele é de ' + mi(liquido) + (liquido > em.valor ? ', ou seja, ' + mi(liquido - em.valor) + ' acima do limite.' : ', o que deixa uma folga de ' + mi(em.valor - liquido) + '.');
@@ -589,6 +609,7 @@
     montarBalde(linhas);
     montarTabelaAnos(linhas, anoSel);
     montarEvidencias();
+    montarVerificacao();
   }
 
   /* ---------- partida ---------- */
@@ -597,7 +618,7 @@
     seletor.min = D.ano_base + 1; seletor.max = M.ULTIMO_ANO;
     seletor.addEventListener('input', function () { anoSel = parseInt(seletor.value, 10); anoTocado = true; render(); });
     $('restaurar').addEventListener('click', function () {
-      CONTROLES.forEach(function (c) { $('c-' + c.id).value = PADRAO[c.id]; });
+      CONTROLES.forEach(function (c) { colocar(c, PADRAO[c.id]); });
       anoTocado = false; render();
     });
     montarTabelaEspaco();

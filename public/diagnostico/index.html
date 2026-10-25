@@ -14,19 +14,12 @@
 <header>
   <p class="selo">Versão de trabalho, sem conferência com a nota oficial</p>
   <h1>Quanto espaço o Espírito Santo tem para manter a nota A</h1>
-  <p class="lede">A Capacidade de Pagamento (CAPAG) é a nota que o Tesouro Nacional atribui aos estados. Ela depende de três ponteiros: quanto o Estado deve, quanto da receita já está comprometido com despesas de custeio e quanto dinheiro livre sobra no caixa. Esta página mostra onde cada ponteiro está hoje, qual é a folga de cada um em reais e o que acontece com a nota se as despesas crescerem e a receita encolher.</p>
+  <p class="lede">A Capacidade de Pagamento (CAPAG) é a nota que o Tesouro Nacional atribui aos estados. Ela depende de três ponteiros: quanto o Estado deve, quanto da receita já está comprometido com despesas de custeio e quanto dinheiro livre sobra no caixa. Esta página reconstrói esses três ponteiros de 2021 a 2026, projeta cada um até 2033 em três cenários e mostra, para cada ano, o numerador, o denominador, a razão e a distância até o limite, de modo que cada conta possa ser conferida.</p>
 </header>
 
 <section>
-  <h2>1. A folga de cada ponteiro hoje</h2>
-  <p>Para a nota final continuar em A, quatro condições precisam valer ao mesmo tempo: a dívida abaixo de 60% da receita corrente líquida, a poupança corrente abaixo de 95%, a liquidez acima de zero, e nunca a poupança acima de 85% junto com a liquidez abaixo de 5%. A tabela traduz cada ponteiro para reais, com os números do último exercício fechado.</p>
-  <div id="tabela-espaco" class="rolagem"></div>
-  <p id="leitura-espaco"></p>
-</section>
-
-<section>
-  <h2>2. O que os dados mostram</h2>
-  <p>As premissas do simulador não nasceram de suposições soltas. Esta seção reúne o que os demonstrativos do Siconfi, as leis de diretrizes e a reforma tributária informam sobre cada uma, e indica a origem e a situação de cada número.</p>
+  <h2>1. As premissas e a evidência de cada uma</h2>
+  <p>Cada número das tabelas da seção seguinte nasce de uma premissa, e cada premissa tem aqui o valor usado, o que os demonstrativos do Siconfi, as leis de diretrizes e a nota técnica do autor mostram e a origem. Os dois gráficos mostram o que mais pesa: o caixa livre, que não cresceu com a receita, e a meta fiscal, que o Estado costuma superar.</p>
   <div class="grafico">
     <h3>Caixa livre do Executivo</h3>
     <p class="legenda" id="leg-caixa"></p>
@@ -43,38 +36,55 @@
 </section>
 
 <section>
-  <h2>3. Mexa nas válvulas</h2>
-  <p>Cada controle abaixo representa uma decisão ou uma incerteza. Ao movê-lo, as barras de limite, os ponteiros, o mapa e a tabela de anos se atualizam. Os valores iniciais vêm das evidências da seção anterior. Onde a evidência é só a informação passada por Eduardo, a página marca o valor como a confirmar.</p>
+  <h2>2. As contas, ano a ano</h2>
+  <p>Cada tabela mostra, de 2021 a 2033, os dois números que formam cada ponteiro, a razão entre eles e a distância até o limite da nota A. Os anos de 2021 a 2025 são realizados, 2026 é a estimativa de fechamento e 2027 a 2033 são projeção. As três tabelas partem do mesmo ponto e diferem só no que se acrescenta: a primeira inclui as duas medidas já aprovadas, a segunda reduz o acréscimo dos Poderes e a terceira soma a perda de receita da reforma tributária. Quando a nota deixa de ser A, as colunas ficam sombreadas e os números seguintes mostram a lacuna que restaria se nenhum ajuste fosse feito.</p>
+  <div id="verif-t1" class="verif"></div>
+  <div id="verif-t2" class="verif"></div>
+  <div id="verif-t3" class="verif"></div>
+  <p class="nota">* Em 2021 e 2022 a nota foi reconstruída com as mesmas regras, a partir do caixa livre de série comparável, porque o Tesouro Nacional só passou a divulgar a liquidez relativa em 2023. Os indicadores são cálculo próprio com os demonstrativos do Siconfi e ainda não foram conferidos contra a nota oficial.</p>
+  <div id="verif-sens" class="verif"></div>
+</section>
+
+<section>
+  <h2>3. A folga de cada ponteiro no fechamento de 2026</h2>
+  <p>Para a nota final continuar em A, quatro condições precisam valer ao mesmo tempo: a dívida abaixo de 60% da receita corrente líquida, a poupança corrente abaixo de 95%, a liquidez acima de zero, e nunca a poupança acima de 85% junto com a liquidez abaixo de 5%. A tabela traduz cada ponteiro para reais, com a estimativa de fechamento de 2026.</p>
+  <div id="tabela-espaco" class="rolagem"></div>
+  <p id="leitura-espaco"></p>
+</section>
+
+<section>
+  <h2>4. Mexa nas válvulas</h2>
+  <p>Cada controle abaixo representa uma decisão ou uma incerteza. Ao movê-lo, as barras de limite, os ponteiros, o mapa e a tabela de anos se atualizam. Os valores iniciais são os das tabelas da seção 2 (cenário T3, com a reforma), e cada controle mostra a evidência que o sustenta.</p>
   <div id="controles" class="controles"></div>
   <div id="conclusao" class="conclusao" aria-live="polite"></div>
   <button id="restaurar" type="button">Voltar aos valores iniciais</button>
 </section>
 
 <section>
-  <h2>4. Quanto cada válvula aguenta</h2>
+  <h2>5. Quanto cada válvula aguenta</h2>
   <p>Cada barra isola uma válvula e mantém as outras como estão nos controles. A parte verde é o espaço que a válvula tem, e a parte vermelha é o território em que a nota A se perde até o último ano da projeção. O triângulo mostra onde o cenário atual está.</p>
   <div id="valvulas" class="termometros"></div>
 </section>
 
 <section>
-  <h2>5. Os três ponteiros no ano escolhido</h2>
+  <h2>6. Os três ponteiros no ano escolhido</h2>
   <div class="ano-escolha">
     <label for="ano">Ano em análise: <output id="ano-valor"></output></label>
-    <input id="ano" type="range" min="2026" max="2032" step="1" value="2029">
+    <input id="ano" type="range" min="2027" max="2033" step="1" value="2029">
   </div>
   <div id="termometros" class="termometros"></div>
-  <p class="nota">Círculo vazio: situação hoje. Triângulo cheio: situação no ano escolhido. As letras mostram em que faixa cada ponteiro cai.</p>
+  <p class="nota">Círculo vazio: situação no fechamento de 2026. Triângulo cheio: situação no ano escolhido. As letras mostram em que faixa cada ponteiro cai.</p>
 </section>
 
 <section>
-  <h2>6. O mapa da nota final</h2>
+  <h2>7. O mapa da nota final</h2>
   <p>O mapa cruza a poupança corrente, na horizontal, com a liquidez, na vertical, supondo a dívida abaixo de 60%. Verde é a nota A, amarelo é B e vermelho é C. A linha mostra o caminho do Estado de ano em ano. Quando ela sai da região verde, a nota cai.</p>
   <div id="mapa" class="mapa"></div>
   <p id="aviso-mapa" class="nota"></p>
 </section>
 
 <section>
-  <h2>7. Ano a ano</h2>
+  <h2>8. Ano a ano, no simulador</h2>
   <div class="grafico">
     <h3>O colchão de caixa livre</h3>
     <p class="legenda">Caixa livre projetado em R$ bilhões. A cor mostra a faixa da liquidez: verde com 5% ou mais da receita, amarelo entre zero e 5% e vermelho com zero ou menos.</p>
@@ -92,8 +102,8 @@
   <details>
     <summary>Premissas e limites desta versão</summary>
     <p>Os dados vêm dos demonstrativos fiscais que o Estado publica no Siconfi. Os indicadores foram recalculados com as faixas e a tabela da Portaria Normativa MF 1.583/2023, e ainda não foram conferidos contra a nota oficial divulgada pelo Tesouro Nacional. A Portaria 1.764/2024 alterou a anterior e seu texto ainda não foi lido. A série do caixa livre anterior a 2023 usa a mesma definição, mas a classificação das fontes de recursos era outra, de modo que serve para ler a trajetória.</p>
-    <p>A projeção é ilustrativa. A receita e a despesa já existentes crescem à mesma taxa, de modo que só o gasto novo e a perda de receita alteram a proporção. O caixa livre fica constante em valor quando não há gasto novo, mais uma variação anual que o usuário pode ajustar. A dívida fica constante em valor. O gasto novo cresce com a receita, porque as emendas e as despesas dos Poderes seguem percentuais da receita corrente líquida.</p>
-    <p>Todo o gasto novo, líquido de compensação, e toda a perda de receita saem do caixa livre, sem outra fonte de recursos. Essa premissa é a mais forte e é ela que faz a liquidez ceder antes da poupança corrente. A compensação inclui o deslocamento de despesas que o Executivo executaria de qualquer forma, pois a emenda impositiva deve indicar a despesa anulada. A perda de receita da reforma tributária parte da estimativa do autor para a perda acumulada de 2029 a 2033 (cenário neutro) e é distribuída em quatro etapas iguais, de 2029 a 2032, permanecendo depois como proporção constante da receita. Essa forma de rampa é uma simplificação e deve ser trocada pela trajetória anual da estimativa.</p>
+    <p>A projeção é ilustrativa e parte de uma estimativa de fechamento de 2026, feita com a execução até agosto. A receita cresce com o PIB nominal dos estudos do autor, e a despesa que já existe cresce no mesmo ritmo, como de 2019 a 2025. O caixa livre fica constante em valor quando não há fato novo, e a dívida também. O gasto novo cresce com a receita, porque as emendas e as despesas dos Poderes seguem percentuais da receita corrente líquida, e a regra nova dos Poderes se afasta ano a ano da correção pelo IPCA que valia antes.</p>
+    <p>Todo o gasto novo, líquido de compensação, e toda a perda de receita saem do caixa livre, sem outra fonte de recursos. Essa premissa é a mais forte e é ela que faz a liquidez ceder antes da poupança corrente e do endividamento, que ficam longe dos limites em todos os cenários. A compensação inclui o deslocamento de despesas que o Executivo executaria de qualquer forma, pois a emenda impositiva deve indicar a despesa anulada. A perda da reforma é a trajetória anual da nota técnica do autor, a preços de 2025, levada a valores correntes pelo crescimento da receita, e não considera que parte dela seria absorvida pelas vinculações de saúde e educação, o que a matriz de sensibilidade testa. Depois do primeiro ano sem nota A, as colunas mostram a lacuna que restaria sem ajuste, e não uma previsão: o Estado reagiria antes.</p>
   </details>
 </section>
 
@@ -105,6 +115,7 @@
 <noscript><p class="nota">Esta página precisa de JavaScript para desenhar os gráficos e as tabelas.</p></noscript>
 <script src="dados.js"></script>
 <script src="modelo.js"></script>
+<script src="tabelas.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

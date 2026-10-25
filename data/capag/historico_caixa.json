@@ -9,7 +9,17 @@
   "resultado_primario_ate_agosto_2025": 866444835.46,
   "meta_resultado_primario": -2961402000,
   "receita_primaria_ate_agosto": 20661746995.83,
-  "despesa_primaria_paga_ate_agosto": 18187410895.7
+  "despesa_primaria_paga_ate_agosto": 18187410895.7,
+  "rcl_jan_ago_2026": 21225329730.010002,
+  "rcl_jan_ago_2025": 18275224490.28,
+  "rcl_set_dez_2025": 9809615633.88,
+  "receita_corrente_ate_ago_2026": 22490418660.04,
+  "receita_corrente_ate_ago_2025": 19377792836.329998,
+  "receita_corrente_2025": 30024863723.08,
+  "despesa_corrente_ate_ago_2026": 23079296792.13,
+  "despesa_corrente_ate_ago_2025": 21164799113.109997,
+  "despesa_corrente_2025": 24084944947.579998,
+  "divida_consolidada_ago_2026": 8665615327.34
  },
  "exercicios": [
   {

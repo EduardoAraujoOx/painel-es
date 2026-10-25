@@ -54,19 +54,34 @@ EXTERNOS = {
         "situacao": "imprensa",
         "receita_total_bi": 32.3, "despesa_total_bi": 32.7, "deficit_primario_bi": 1.6, "orcamento_2027_total_bi": 35.4,
         "aprovada_em": "21/10/2026",
-        "fontes": [["Em Dia ES, 'Ales aprova projeto da LDO do ES para 2027'", "https://emdiaes.com.br/economia/ales-aprova-projeto-da-lei-de-diretrizes-orcamentarias-do-es-para-2027"]],
+        "fontes": [["Em Dia ES, 'Ales aprova projeto da LDO do ES para 2027'", "https://emdiaes.com.br/economia/ales-aprova-projeto-da-lei-de-diretrizes-orcamentarias-do-es-para-2027"],
+                   ["ES Hoje, 'Assembleia Legislativa aprova proposta da lei orçamentária para 2027'", "https://eshoje.com.br/?p=904073"]],
+    },
+    "ploa_2027": {
+        "situacao": "imprensa",
+        "orcamento_fiscal_seguridade_bi": 35.4, "orcamento_global_bi": 36.1, "orcamento_2026_bi": 32.0, "crescimento_nominal": 0.106,
+        "executivo_bi": 32.0, "investimento_direto_executivo_bi": 5.27, "receita_caixa_tesouro_bi": 26.6,
+        "poderes_mi": {"Poder Judiciário": 2070.0, "Ministério Público": 635.1, "Assembleia Legislativa": 325.7, "Tribunal de Contas": 236.8, "Defensoria Pública": 156.7},
+        "fontes": [["ES Hoje, 'Orçamento de R$ 36,1 bilhões para 2027 chega à análise da Assembleia'", "https://eshoje.com.br/politica/2026/10/r-361-bilhoes-assembleia/"],
+                   ["ES Hoje, 'Governo capixaba entrega PLOA 2027 com previsão de R$ 35,4 bi na receita'", "https://eshoje.com.br/?p=899573"]],
+    },
+    "paf": {
+        "situacao": "oficial",
+        "revisao": "24ª revisão do Programa de Reestruturação e de Ajuste Fiscal, 2025 a 2027, assinada em 30/10/2025",
+        "receita_propria_mi": {"2025": 25857, "2026": 28213, "2027": 30984},
+        "resultado_primario_mi": {"2025": -3259, "2026": -2743, "2027": 1123},
+        "dc_rcl_pct": {"2025": 34.60, "2026": 35.36, "2027": 33.83},
+        "fontes": [["Programa de Reestruturação e de Ajuste Fiscal do Espírito Santo, 24ª revisão (SEFAZ-ES)", "https://sefaz.es.gov.br/Media/Sefaz/Tesouro%20Estadual/Programa-1.pdf"]],
     },
     "reforma": {
         "situacao": "imprensa e estudo próprio",
         "retencao_2029_2032": 0.80, "retencao_2033": 0.90, "reducao_gradual_ate": 2077,
         "coeficiente_es_pct": 1.5418, "receita_media_referencia_bi": 16.090,
         "estudo_setorial_perda_icms_bi": 8.3, "estudo_setorial_a_partir_de": 2033,
-        # Estimativa do próprio autor (artigo sobre os efeitos da reforma no Espírito Santo, versão 62): perda acumulada da receita
-        # estadual de 2029 a 2033, em R$ bilhões. A trajetória anual do artigo ainda não entrou: o simulador distribui a perda em rampa.
-        "estimativa_autor": {"neutro_bi": 1.84, "destino_pleno_bi": 3.27, "perda_2033_pct": 8.0, "periodo": "2029 a 2033"},
+        # A trajetória anual da perda vem da nota técnica do autor (NOTA_TECNICA, abaixo).
         "texto": "Segundo resumo da LC 227/2026, de 2029 a 2032 retêm-se 80% da receita do IBS para distribuição pelo coeficiente histórico, 90% em 2033, com redução gradual até 2077.",
         "fontes": [
-            ["Artigo do autor sobre os efeitos da reforma tributária no Espírito Santo (versão 62)", ""],
+            ["Nota técnica do autor: Impactos da transição do ICMS para o IBS sobre a receita do Estado do Espírito Santo, 2029-2033 (materiais/nota-tecnica-es do site do autor)", ""],
             ["Radar da Reforma Tributária", "https://radardareformatributaria.com/ibs-coeficiente-municipios-estados-dados-2019-2026-arrecadacao/"],
             ["Tribuna Online, 'Reforma tributária: aliança para evitar prejuízo ao Espírito Santo'", "https://tribunaonline.com.br/economia/reforma-tributaria-alianca-para-evitar-prejuizo-ao-espirito-santo-302047"],
             ["Nota Técnica 02/2026, Unidade Fazendária da Reforma Tributária (SEFAZ-ES)", ""],
@@ -75,20 +90,85 @@ EXTERNOS = {
 }
 
 
-CRESCIMENTO_PADRAO = 6  # % ao ano, receita e despesa que já existem
+# Trajetória macroeconômica do estudo do autor sobre o IBS (Estudo 11 e 03 do site pessoal, arquivo data/ibs-projecao-longo-prazo.json):
+# PIB real e IPCA do Boletim Focus (mediana, 2026 a 2030) e da IFI (RAF 107, dez/2025, 2031 a 2033). A receita de referência cresce com o
+# PIB nominal, isto é, (1 + PIB real) x (1 + IPCA) - 1.
+MACRO = {
+    "anos": [2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033],
+    "pib_real": [0.0198, 0.0152, 0.0200, 0.0200, 0.0200, 0.0220, 0.0220, 0.0220],
+    "ipca": [0.0502, 0.0422, 0.0380, 0.0350, 0.0350, 0.0300, 0.0300, 0.0300],
+    "fonte": "Focus (BCB), mediana, 2026 a 2030; IFI, RAF 107, 2031 a 2033; arquivo data/ibs-projecao-longo-prazo.json do site do autor",
+}
+
+# Nota técnica do autor, "Impactos da transição do ICMS para o IBS sobre a receita do Estado do Espírito Santo, 2029-2033"
+# (materiais/nota-tecnica-es/tabelas/tab-trajetoria.tex). Receita estadual de referência = ICMS líquido da cota-parte municipal mais FECOP,
+# em R$ de 2025. A variação é a da receita com reforma contra o cenário sem reforma.
+NOTA_TECNICA = {
+    "base_2025_bi": 16.99,
+    "anos": [2029, 2030, 2031, 2032, 2033],
+    "sem_reforma_bi": [18.32, 18.69, 19.10, 19.52, 19.95],
+    "com_reforma_bi": [18.10, 18.28, 18.49, 18.70, 18.43],
+    "variacao_pct": [-1.19, -2.19, -3.20, -4.20, -7.60],
+    "diferenca_mi": [-217, -409, -611, -820, -1515],
+    "acumulado_bi": 3.57,
+    "texto": "Perda crescente de 2029 a 2033, a preços de 2025, no cenário central da nota técnica (coeficientes estimados pelo autor).",
+}
+
+PODERES_2026_MI = 2989.37  # soma dos limites de 2026 (tabela do autor)
 
 
-def extras_padrao(g):
-    """Gasto novo acima da trajetória normal, em R$ mi de 2027. O valor de 2026 já cresceria à taxa g mesmo sem a nova regra,
-    e esse crescimento já está na despesa-base do simulador; contar a diferença inteira entre 2026 e 2027 contaria o mesmo gasto duas vezes."""
-    f = 1 + g / 100
+
+def crescimento_nominal(ano):
+    i = MACRO["anos"].index(ano)
+    return (1 + MACRO["pib_real"][i]) * (1 + MACRO["ipca"][i]) - 1
+
+
+def extras_padrao():
+    """Gasto novo acima da trajetória que existiria sem a nova regra, em R$ mi de 2027.
+    Emendas: o valor antigo (R$ 90 mi) já cresceria com a receita. Poderes: pela regra antiga o limite de 2026 seria corrigido pelo IPCA
+    (LDO 2026, art. 21); a nova regra fixa percentuais da RCL. O que excede a regra antiga é o gasto novo."""
     em = EXTERNOS["emendas"]
     pod26 = sum(v[0] for v in EXTERNOS["poderes"]["limites_mi"].values())
     pod27 = sum(v[1] for v in EXTERNOS["poderes"]["limites_mi"].values())
-    return {"emenda": round(em["valor_2027_mi"] - em["valor_antes_mi"] * f),
-            "poderes": round(pod27 - pod26 * f),
+    i27 = MACRO["ipca"][MACRO["anos"].index(2027)]
+    antiga27 = pod26 * (1 + i27)
+    return {"emenda": round(em["valor_2027_mi"] - em["valor_antes_mi"] * (1 + crescimento_nominal(2027))),
+            "poderes": round(pod27 - antiga27),
+            "poderes_regra_antiga_2027": round(antiga27, 1),
             "emenda_bruto": em["valor_2027_mi"] - em["valor_antes_mi"], "poderes_bruto": round(pod27 - pod26),
-            "poderes_2026": round(pod26, 2), "poderes_2027": round(pod27, 2)}
+            "poderes_2026": round(pod26, 2), "poderes_2027": round(pod27, 2), "poderes_menor": 100}
+
+
+def base_2026(ex, p26):
+    """Fechamento estimado de 2026: o que foi realizado de janeiro a agosto mais setembro a dezembro de 2025 corrigido pelo PIB nominal
+    de 2026 (Focus). Despesa corrente ajustada = despesa corrente menos as transferências a municípios, que acompanham a despesa."""
+    g = crescimento_nominal(2026)
+    rcl = p26["rcl_jan_ago_2026"] + p26["rcl_set_dez_2025"] * (1 + g)
+    rca = p26["receita_corrente_ate_ago_2026"] + (p26["receita_corrente_2025"] - p26["receita_corrente_ate_ago_2025"]) * (1 + g)
+    desp = p26["despesa_corrente_ate_ago_2026"] + (p26["despesa_corrente_2025"] - p26["despesa_corrente_ate_ago_2025"]) * (1 + g)
+    c25 = ex[2025]["poupanca_corrente"]["componentes"]
+    transf = c25["transferencias_municipios"] * desp / p26["despesa_corrente_2025"]
+    desp_aj = desp - transf
+    caixa = ex[2025]["liquidez"]["caixa_bruta_nao_vinculada"] - ex[2025]["liquidez"]["obrigacoes_financeiras_nao_vinculadas"] - ex[2025]["liquidez"]["insuficiencias_fontes_vinculadas"]
+    razoes = {"2024": ex[2024]["poupanca_corrente"]["componentes"]["razao"], "2025": ex[2025]["poupanca_corrente"]["componentes"]["razao"],
+              "2026": desp_aj / rca}
+    pc = 0.5 * razoes["2026"] + 0.3 * razoes["2025"] + 0.2 * razoes["2024"]
+    return {
+        "ano": 2026, "estimado": True, "rcl": rcl / BI, "rca": rca / BI, "despesa": desp_aj / BI, "divida": p26["divida_consolidada_ago_2026"] / BI,
+        "caixa": caixa / BI, "razoes": razoes, "pc": pc, "dc_rcl": p26["divida_consolidada_ago_2026"] / rcl, "lr": caixa / rcl,
+        "crescimento_receita_set_dez": g,
+        "crescimento_ate_agosto": {"rcl": p26["rcl_jan_ago_2026"] / p26["rcl_jan_ago_2025"] - 1,
+                                   "receita_corrente": p26["receita_corrente_ate_ago_2026"] / p26["receita_corrente_ate_ago_2025"] - 1,
+                                   "despesa_corrente": p26["despesa_corrente_ate_ago_2026"] / p26["despesa_corrente_ate_ago_2025"] - 1},
+        "crescimento_ano": {"rcl": rcl / ex[2025]["endividamento"]["rcl"] - 1, "receita_corrente": rca / c25["receita_corrente_ajustada"] - 1,
+                            "despesa_corrente": desp / p26["despesa_corrente_2025"] - 1},
+    }
+
+
+def crescimento_medio(ex, de, ate, chave):
+    """Taxa média anual composta entre dois exercícios, para a receita ou a despesa corrente ajustadas."""
+    a, b = ex[de]["poupanca_corrente"]["componentes"][chave], ex[ate]["poupanca_corrente"]["componentes"][chave]
+    return (b / a) ** (1 / (ate - de)) - 1
 
 
 def main():
@@ -113,16 +193,34 @@ def main():
             "exec_paga": (paga / dot) if dot and paga else None, "exec_empenhada": (emp / dot) if dot and emp else None,
         })
     p26 = hist["parcial_2026"]
+    b26 = base_2026(ex, p26)
+    hc = {h["ano"]: h for h in hist["exercicios"]}
+
+    def componentes(a):
+        c = ex[a]["poupanca_corrente"]["componentes"]
+        caixa = hc[a].get("caixa_livre")
+        return {"ano": a, "divida": bi(ex[a]["endividamento"]["dc_bruta"]), "rcl": bi(ex[a]["endividamento"]["rcl"]),
+                "dc_rcl": ex[a]["endividamento"]["dc_rcl"], "despesa": bi(c["despesa_corrente_ajustada"]),
+                "rca": bi(c["receita_corrente_ajustada"]), "razao": c["razao"], "pc": ex[a]["poupanca_corrente"]["pc"],
+                "caixa": bi(caixa), "lr": (caixa / ex[a]["endividamento"]["rcl"]) if caixa is not None else None,
+                "nota_dc": ex[a]["notas_parciais"]["endividamento"], "nota_pc": ex[a]["notas_parciais"]["poupanca_corrente"],
+                "nota_lr": ex[a]["notas_parciais"]["liquidez_relativa"], "nota_final": ex[a]["nota_final"]}
+
+    crescimento = {"de": 2019, "ate": 2025,
+                   "receita": crescimento_medio(ex, 2019, 2025, "receita_corrente_ajustada"),
+                   "despesa": crescimento_medio(ex, 2019, 2025, "despesa_corrente_ajustada"),
+                   "receita_2021_2025": crescimento_medio(ex, 2021, 2025, "receita_corrente_ajustada"),
+                   "despesa_2021_2025": crescimento_medio(ex, 2021, 2025, "despesa_corrente_ajustada"),
+                   "razoes": {str(a): ex[a]["poupanca_corrente"]["componentes"]["razao"] for a in range(2018, 2026)}}
     dados = {
-        "ano_base": base,
-        "rcl": bi(e["endividamento"]["rcl"]),
-        "divida": bi(e["endividamento"]["dc_bruta"]),
-        "dc_rcl": e["endividamento"]["dc_rcl"],
-        "rca": bi(comp["receita_corrente_ajustada"]),
-        "despesa": bi(comp["despesa_corrente_ajustada"]),
-        "pc": e["poupanca_corrente"]["pc"],
-        "lr": e["liquidez"]["lr"],
-        "razoes": {str(a): ex[a]["poupanca_corrente"]["componentes"]["razao"] for a in (base - 2, base - 1, base)},
+        "ano_base": 2026,
+        "ano_ultimo_real": base,
+        "rcl": b26["rcl"], "divida": b26["divida"], "dc_rcl": b26["dc_rcl"], "rca": b26["rca"], "despesa": b26["despesa"],
+        "pc": b26["pc"], "lr": b26["lr"], "razoes": b26["razoes"], "base": b26,
+        "macro": MACRO,
+        "reforma_nota": NOTA_TECNICA,
+        "tabela_historica": [componentes(a) for a in range(2021, base + 1)],
+        "crescimento_historico": crescimento,
         "historico": [
             {"ano": a, "dc_rcl": ex[a]["endividamento"]["dc_rcl"], "pc": ex[a]["poupanca_corrente"]["pc"],
              "lr": ex[a]["liquidez"].get("lr"), "nota": ex[a]["nota_final"]}
@@ -131,8 +229,7 @@ def main():
         "historico_caixa": historico_caixa,
         "parcial_2026": {k: bi(v) for k, v in p26.items()},
         "externos": EXTERNOS,
-        "extras_padrao": extras_padrao(CRESCIMENTO_PADRAO),
-        "crescimento_padrao": CRESCIMENTO_PADRAO,
+        "extras_padrao": extras_padrao(),
     }
     with open(DESTINO, "w", encoding="utf-8") as f:
         f.write("// Gerado por pipeline/capag/pagina.py a partir de data/capag. Valores monetários em R$ bilhões.\n")

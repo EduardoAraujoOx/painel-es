@@ -131,9 +131,52 @@ def parcial_2026(avisos):
     if rcl_jun is None:
         avisos.append("2026: RCL de 12 meses até junho não encontrada no RREO do 3º bimestre")
     e26, e25 = execucao(2026, avisos, 4), execucao(2025, avisos, 4)
-    return {"rcl_12m_agosto": rcl_ago, "rcl_12m_junho": rcl_jun, "resultado_primario_ate_agosto": e26.get("resultado_primario"),
-            "resultado_primario_ate_agosto_2025": e25.get("resultado_primario"), "meta_resultado_primario": e26.get("meta_resultado_primario"),
-            "receita_primaria_ate_agosto": e26.get("receita_primaria"), "despesa_primaria_paga_ate_agosto": e26.get("despesa_primaria_paga")}
+    out = {"rcl_12m_agosto": rcl_ago, "rcl_12m_junho": rcl_jun, "resultado_primario_ate_agosto": e26.get("resultado_primario"),
+           "resultado_primario_ate_agosto_2025": e25.get("resultado_primario"), "meta_resultado_primario": e26.get("meta_resultado_primario"),
+           "receita_primaria_ate_agosto": e26.get("receita_primaria"), "despesa_primaria_paga_ate_agosto": e26.get("despesa_primaria_paga")}
+    out.update(fechamento_2026(avisos))
+    return out
+
+
+def rcl_mensal(nome):
+    """Os 12 valores mensais da RCL do anexo 3 do RREO (do mais antigo, <MR-11>, ao mais recente, <MR>)."""
+    linhas = [x for x in carregar(nome) if x["anexo"] == "RREO-Anexo 03" and x["conta"].startswith("RECEITA CORRENTE LÍQUIDA (III)")
+              and x["coluna"].startswith("<MR")]
+    mapa = {x["coluna"]: x["valor"] for x in linhas}
+    chaves = ["<MR-%d>" % k for k in range(11, 0, -1)] + ["<MR>"]
+    return [mapa.get(k) for k in chaves] if all(mapa.get(k) is not None for k in chaves) else None
+
+
+def corrente_ate_bimestre(nome):
+    """Receitas correntes e despesas correntes empenhadas (com intraorçamentárias), acumuladas até o bimestre do RREO."""
+    r = carregar(nome)
+    def pegar(cod, col):
+        for x in r:
+            if x["anexo"] == "RREO-Anexo 01" and x["cod_conta"] == cod and x["coluna"].startswith(col):
+                return x["valor"] or 0.0
+        return 0.0
+    rec = pegar("ReceitasCorrentes", "Até o Bimestre") + pegar("ReceitasCorrentesIntra", "Até o Bimestre")
+    des = pegar("DespesasCorrentes", "DESPESAS EMPENHADAS ATÉ") + pegar("DespesasCorrentesIntra", "DESPESAS EMPENHADAS ATÉ")
+    return rec, des
+
+
+def fechamento_2026(avisos):
+    """Insumos para estimar o fechamento de 2026: o que já foi arrecadado e empenhado até agosto contra o mesmo período de 2025,
+    e o que 2025 fez de setembro a dezembro (a base que a projeção faz crescer)."""
+    m26, m25_ago, m25_dez = rcl_mensal("rreo_2026_4"), rcl_mensal("rreo_2025_4"), rcl_mensal("rreo_2025_6")
+    if not (m26 and m25_ago and m25_dez):
+        avisos.append("2026: série mensal da RCL incompleta; fechamento de 2026 não estimado")
+        return {}
+    rec26, des26 = corrente_ate_bimestre("rreo_2026_4")
+    rec25, des25 = corrente_ate_bimestre("rreo_2025_4")
+    rec25a, des25a = corrente_ate_bimestre("rreo_2025_6")
+    div26 = valor(carregar("rgf_2026_2"), "RGF-Anexo 02", "DÍVIDA CONSOLIDADA - DC (I)", "Até o 2º Quadrimestre")
+    return {
+        "rcl_jan_ago_2026": sum(m26[4:]), "rcl_jan_ago_2025": sum(m25_ago[4:]), "rcl_set_dez_2025": sum(m25_dez[8:]),
+        "receita_corrente_ate_ago_2026": rec26, "receita_corrente_ate_ago_2025": rec25, "receita_corrente_2025": rec25a,
+        "despesa_corrente_ate_ago_2026": des26, "despesa_corrente_ate_ago_2025": des25, "despesa_corrente_2025": des25a,
+        "divida_consolidada_ago_2026": div26,
+    }
 
 
 def main():
