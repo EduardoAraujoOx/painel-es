@@ -33,15 +33,19 @@ EXTERNOS = {
         ],
     },
     "poderes": {
-        "situacao": "imprensa e informado",
+        "situacao": "tabela do autor, 2027 reproduzido",
         "percentuais_rcl": {"Judiciário": 6.131, "Ministério Público": 2.456, "Assembleia Legislativa": 1.281,
                             "Tribunal de Contas": 1.017, "Defensoria Pública": 0.750},
-        "acrescimo_explicito_pp_rcl": 0.1,
+        # Limites globais em R$ milhões, da tabela de cálculo do autor (PLOA 2026, p. 41, para 2026; PL 286/2026 com a Emenda
+        # Modificativa nº 2, aprovada em 21/10/2026, para 2027). Os de 2027 foram reproduzidos aqui: percentual x RCL de jul/2025 a jun/2026.
+        "limites_mi": {"Poder Judiciário": [1648.04, 1847.03], "Assembleia Legislativa": [333.53, 385.92], "Tribunal de Contas": [258.80, 306.38],
+                       "Ministério Público": [614.35, 739.90], "Defensoria Pública": [134.65, 225.95]},
         "base_rcl_texto": "RCL de julho de 2025 a junho de 2026",
         "regra_anterior": "dotação da LOA do ano anterior na fonte 500, corrigida pelo IPCA, mais 1,5% (texto da LDO 2026, art. 21, §1º)",
-        "acrescimo_informado_mi": 500, "acrescimo_informado_vs_proposta_mi": 300,
-        "texto": "A LDO 2027 troca a correção pelo IPCA por percentuais fixos da receita corrente líquida. O acréscimo de R$ 300 mi sobre a proposta original e de R$ 500 mi sobre a lei anterior foi informado por Eduardo e ainda não foi conferido com a proposta do Executivo.",
+        "acrescimo_informado_vs_proposta_mi": 300,
+        "texto": "A LDO 2027 troca a correção pelo IPCA por percentuais fixos da receita corrente líquida, e os limites passam de R$ 2.989 mi para R$ 3.505 mi.",
         "fontes": [
+            ["Tabela de cálculo do autor (PLOA 2026, p. 41; PL 286/2026 com a Emenda Modificativa nº 2)", ""],
             ["Folha Vitória, 21/10/2026", "https://www.folhavitoria.com.br/politica/deputados-aprovam-ldo-com-emendas-impositivas-e-aumento-no-orcamento-dos-poderes/"],
             ["LDO 2026 (Planejamento-ES)", "https://planejamento.es.gov.br/media/Or%C3%A7amento/Lei%20de%20Diretrizes%20Or%C3%A7ament%C3%A1rias/LDO%202026.pdf"],
         ],
@@ -65,6 +69,22 @@ EXTERNOS = {
         ],
     },
 }
+
+
+CRESCIMENTO_PADRAO = 6  # % ao ano, receita e despesa que já existem
+
+
+def extras_padrao(g):
+    """Gasto novo acima da trajetória normal, em R$ mi de 2027. O valor de 2026 já cresceria à taxa g mesmo sem a nova regra,
+    e esse crescimento já está na despesa-base do simulador; contar a diferença inteira entre 2026 e 2027 contaria o mesmo gasto duas vezes."""
+    f = 1 + g / 100
+    em = EXTERNOS["emendas"]
+    pod26 = sum(v[0] for v in EXTERNOS["poderes"]["limites_mi"].values())
+    pod27 = sum(v[1] for v in EXTERNOS["poderes"]["limites_mi"].values())
+    return {"emenda": round(em["valor_2027_mi"] - em["valor_antes_mi"] * f),
+            "poderes": round(pod27 - pod26 * f),
+            "emenda_bruto": em["valor_2027_mi"] - em["valor_antes_mi"], "poderes_bruto": round(pod27 - pod26),
+            "poderes_2026": round(pod26, 2), "poderes_2027": round(pod27, 2)}
 
 
 def main():
@@ -107,9 +127,8 @@ def main():
         "historico_caixa": historico_caixa,
         "parcial_2026": {k: bi(v) for k, v in p26.items()},
         "externos": EXTERNOS,
-        "extras_padrao": {"emenda": EXTERNOS["emendas"]["valor_2027_mi"] - EXTERNOS["emendas"]["valor_antes_mi"],
-                          "poderes": EXTERNOS["poderes"]["acrescimo_informado_mi"]},
-        "crescimento_padrao": 6,
+        "extras_padrao": extras_padrao(CRESCIMENTO_PADRAO),
+        "crescimento_padrao": CRESCIMENTO_PADRAO,
     }
     with open(DESTINO, "w", encoding="utf-8") as f:
         f.write("// Gerado por pipeline/capag/pagina.py a partir de data/capag. Valores monetários em R$ bilhões.\n")

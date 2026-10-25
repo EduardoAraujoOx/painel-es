@@ -199,7 +199,7 @@ window.DADOS = {
    ]
   },
   "poderes": {
-   "situacao": "imprensa e informado",
+   "situacao": "tabela do autor, 2027 reproduzido",
    "percentuais_rcl": {
     "Judiciário": 6.131,
     "Ministério Público": 2.456,
@@ -207,13 +207,37 @@ window.DADOS = {
     "Tribunal de Contas": 1.017,
     "Defensoria Pública": 0.75
    },
-   "acrescimo_explicito_pp_rcl": 0.1,
+   "limites_mi": {
+    "Poder Judiciário": [
+     1648.04,
+     1847.03
+    ],
+    "Assembleia Legislativa": [
+     333.53,
+     385.92
+    ],
+    "Tribunal de Contas": [
+     258.8,
+     306.38
+    ],
+    "Ministério Público": [
+     614.35,
+     739.9
+    ],
+    "Defensoria Pública": [
+     134.65,
+     225.95
+    ]
+   },
    "base_rcl_texto": "RCL de julho de 2025 a junho de 2026",
    "regra_anterior": "dotação da LOA do ano anterior na fonte 500, corrigida pelo IPCA, mais 1,5% (texto da LDO 2026, art. 21, §1º)",
-   "acrescimo_informado_mi": 500,
    "acrescimo_informado_vs_proposta_mi": 300,
-   "texto": "A LDO 2027 troca a correção pelo IPCA por percentuais fixos da receita corrente líquida. O acréscimo de R$ 300 mi sobre a proposta original e de R$ 500 mi sobre a lei anterior foi informado por Eduardo e ainda não foi conferido com a proposta do Executivo.",
+   "texto": "A LDO 2027 troca a correção pelo IPCA por percentuais fixos da receita corrente líquida, e os limites passam de R$ 2.989 mi para R$ 3.505 mi.",
    "fontes": [
+    [
+     "Tabela de cálculo do autor (PLOA 2026, p. 41; PL 286/2026 com a Emenda Modificativa nº 2)",
+     ""
+    ],
     [
      "Folha Vitória, 21/10/2026",
      "https://www.folhavitoria.com.br/politica/deputados-aprovam-ldo-com-emendas-impositivas-e-aumento-no-orcamento-dos-poderes/"
@@ -265,8 +289,12 @@ window.DADOS = {
   }
  },
  "extras_padrao": {
-  "emenda": 345,
-  "poderes": 500
+  "emenda": 340,
+  "poderes": 336,
+  "emenda_bruto": 345,
+  "poderes_bruto": 516,
+  "poderes_2026": 2989.37,
+  "poderes_2027": 3505.18
  },
  "crescimento_padrao": 6
 };

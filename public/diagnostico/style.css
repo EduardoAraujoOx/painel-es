@@ -167,6 +167,7 @@ table.evidencias td div + div { margin-top: 4px; }
 .sit { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; border: 1px solid var(--linha); white-space: nowrap; }
 .sit-oficial { background: color-mix(in srgb, var(--a) 18%, transparent); }
 .sit-imprensa { background: color-mix(in srgb, var(--destaque) 16%, transparent); }
+.sit-autor { background: color-mix(in srgb, var(--destaque) 16%, transparent); }
 .sit-confirmar { background: color-mix(in srgb, var(--b) 24%, transparent); }
 table.evidencias { font-size: 13.5px; }
 
