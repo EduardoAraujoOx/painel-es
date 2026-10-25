@@ -6,8 +6,11 @@
 //  1. A receita cresce com o PIB nominal do estudo do autor: (1 + PIB real) x (1 + IPCA) - 1, ano a ano (Focus até 2030, IFI depois).
 //  2. A despesa que já existe cresce no mesmo ritmo da receita (de 2019 a 2025 as duas cresceram 7,9% ao ano), mais uma pressão opcional.
 //  3. Sem fato novo o caixa livre fica constante em valor (R$ 2,1 a 2,6 bi de 2021 a 2025), mais uma deriva anual opcional.
-//  4. O gasto novo (emendas e Poderes) é regido por percentual da receita corrente líquida e por isso cresce com a receita. A regra
-//     antiga dos Poderes (IPCA) é o contrafactual: só o que excede a ela é gasto novo.
+//  4. O gasto novo (emendas e Poderes) é regido por percentual da receita corrente líquida e por isso cresce com a receita. Duas medidas:
+//     (a) modo antigo (p.emenda, p.poderes): o que excede a regra antiga dos Poderes (IPCA) e os R$ 90 mi de emendas;
+//     (b) modo novo (p.novo): o que se passa a gastar em cada ano menos a despesa executada em 2026 levada pela receita. Emendas: 1,55% da RCL
+//         de dois anos antes (PEC 04/2026, execução obrigatória). Poderes: a fração poderes_exec_futura do limite, que é 11,635% da RCL dos 12
+//         meses até junho do ano anterior (LDO 2027) ou, na regra anterior, o limite do ano anterior corrigido pelo IPCA mais 1,5%.
 //  5. Gasto novo líquido de compensação, perda de receita e pressão da despesa saem do caixa livre, sem outra fonte.
 //  6. A perda de receita da reforma é a trajetória anual da nota técnica do autor (variação percentual da receita estadual de referência
 //     contra o cenário sem reforma), aplicada à receita de referência em valores correntes e reduzindo receita e caixa na mesma quantia.
@@ -63,18 +66,39 @@
     var ref = D.reforma_nota.base_2025_bi * (1 + T.g[B.ano]); // receita de referência da nota técnica, em valores correntes
     var G = 1, I = 1;
     var pod27 = D.extras_padrao.poderes_regra_antiga_2027;
+    var N = p.novo, rclAno = {}; // RCL de cada exercício (R$ bi), para as regras defasadas do modo novo
+    D.historico_caixa.forEach(function (h) { if (h.rcl !== null && h.rcl !== undefined) rclAno[h.ano] = h.rcl; });
+    rclAno[B.ano] = B.rcl;
+    // A RCL dos 12 meses até junho de 2026 (base do limite de 2027) é calibrada pela média dos exercícios de 2025 e 2026; a mesma razão vale nos anos seguintes.
+    var limAntiga = N ? N.poderes_limite_2026_mi : 0;
+    var kRcl = N ? D.parcial_2026.rcl_12m_junho / ((rclAno[B.ano - 1] + rclAno[B.ano]) / 2) : 0;
     for (var ano = ANO_INICIO_GASTO; ano <= ULTIMO_ANO; ano++) {
       var g = T.g[ano];
       rcl0 *= 1 + g; rca0 *= 1 + g; desEq *= 1 + g; des0 *= 1 + g + pres; ref *= 1 + g;
       if (ano > ANO_INICIO_GASTO) { G *= 1 + g; I *= 1 + T.ip[ano]; }
-      var emenda = p.emenda * G;
-      var poderes = p.poderes * G + (p.poderes_rcl ? pod27 * (G - I) * (p.poderes / D.extras_padrao.poderes) : 0); // a divergência do IPCA cresce com a intensidade da nova regra
-      var extra = Math.max(0, emenda + poderes - p.ajuste * G) / 1000;
       var i = D.reforma_nota.anos.indexOf(ano);
       var var_ = i >= 0 ? D.reforma_nota.variacao_pct[i] : (ano > D.reforma_nota.anos[D.reforma_nota.anos.length - 1] ? D.reforma_nota.variacao_pct[D.reforma_nota.variacao_pct.length - 1] : 0);
       var perda = -(p.reforma || 0) * var_ / 100 * ref;
       var pressao = des0 - desEq; // quanto a despesa existente excede o que teria com o ritmo da receita
       var rca = rca0 - perda, rcl = rcl0 - perda;
+      rclAno[ano] = rcl;
+      var emenda, poderes, emBruta = 0, emBase = 0, podBruto = 0, podBase = 0;
+      if (N) { // modo novo: o que a regra autoriza no ano menos a execução de 2026 corrigida pela receita (R$ mi)
+        emBruta = N.emenda_pct_rcl * rclAno[ano - N.emenda_defasagem] * 1000;
+        emBase = N.emenda_base_mi * rcl / B.rcl;
+        var limite;
+        if (N.poderes_regra === 'antiga') { // regra anterior da LDO 2026: o limite do ano anterior corrigido pelo IPCA de julho a junho mais 1,5%
+          limAntiga *= 1 + (ano === ANO_INICIO_GASTO ? N.poderes_antiga_ipca_2027 : (T.ip[ano - 2] + T.ip[ano - 1]) / 2) + N.poderes_antiga_acrescimo;
+          limite = limAntiga;
+        } else limite = N.poderes_pct_rcl * kRcl * (rclAno[ano - 1] + rclAno[ano - 2]) / 2 * 1000;
+        podBruto = N.poderes_exec_futura * limite; // despesa dos Poderes: a fração do limite que eles executam
+        podBase = N.poderes_base_2026_mi * rcl / B.rcl; // despesa de 2026 (executada) levada pela receita
+        emenda = emBruta - emBase; poderes = podBruto - podBase;
+      } else {
+        emenda = p.emenda * G;
+        poderes = p.poderes * G + (p.poderes_rcl ? pod27 * (G - I) * (p.poderes / D.extras_padrao.poderes) : 0); // a divergência do IPCA cresce com a intensidade da nova regra
+      }
+      var extra = Math.max(0, emenda + poderes - p.ajuste * G) / 1000;
       var despesa = des0 + extra;
       var r = despesa / rca;
       razao[ano] = r;
@@ -83,7 +107,8 @@
       var lr = caixa / rcl, dcrcl = B.divida / rcl;
       var a = notaDC(dcrcl), b = notaPC(pc), c = notaLR(lr);
       linhas.push({ ano: ano, estimado: true, g: g, rcl: rcl, rca: rca, despesa: despesa, divida: B.divida, caixa: caixa, razao: r, pc: pc, dc_rcl: dcrcl, lr: lr,
-        extra: extra, emenda: emenda / 1000, poderes: poderes / 1000, perda: perda, pressao: pressao, nDC: a, nPC: b, nLR: c,
+        extra: extra, emenda: emenda / 1000, poderes: poderes / 1000, emendaBruta: emBruta / 1000, emendaBase: emBase / 1000, poderesBruto: podBruto / 1000, poderesBase: podBase / 1000,
+        perda: perda, pressao: pressao, nDC: a, nPC: b, nLR: c,
         final: notaFinal(a, b, c), causa: causa(a, b, c) });
     }
     return linhas;
@@ -137,6 +162,100 @@
     ];
   }
 
-  raiz.Modelo = { notaDC: notaDC, notaPC: notaPC, notaLR: notaLR, notaFinal: notaFinal, causa: causa, simular: simular, cenarios: cenarios,
+  // Três trajetórias da receita, sem reforma, com o gasto novo medido contra a execução de 2026 (p.novo).
+  // A receita se desvia do PIB nominal em +/- dif_pp pontos percentuais por ano (a média de 2019 a 2025 foi +2,2) e a despesa que já existe
+  // acompanha só uma fração `repasse` desse desvio (de 0,34 a 0,45 na série); o resto é pressão (sinal oposto) sobre o caixa livre.
+  function cenarios3(D) {
+    var X = D.extras_padrao, T = X.trajetorias;
+    function traj(dif, repasse) { return { receita_pp: dif, pressao: -(1 - repasse) * dif, deriva: 0, ajuste: 0, emenda: 0, poderes: 0, poderes_rcl: 0, reforma: 0, novo: X.novo }; }
+    return [
+      { id: 'CON', nome: 'Conservador', titulo: 'Trajetória conservadora', p: traj(-T.dif_pp, T.repasse),
+        resumo: 'A receita cresce ' + String(T.dif_pp).replace('.', ',') + ' pontos percentuais por ano abaixo do PIB nominal e a despesa que já existe acompanha ' + Math.round(T.repasse * 100) + '% dessa diferença.' },
+      { id: 'CEN', nome: 'Central', titulo: 'Trajetória central', p: traj(0, 1),
+        resumo: 'A receita cresce com o PIB nominal do Focus e do IFI e a despesa que já existe cresce com a receita.' },
+      { id: 'HIS', nome: 'Histórico', titulo: 'Trajetória histórica', p: traj(T.dif_pp, T.repasse),
+        resumo: 'A receita cresce ' + String(T.dif_pp).replace('.', ',') + ' pontos percentuais por ano acima do PIB nominal, como de 2019 a 2025, e a despesa que já existe acompanha ' + Math.round(T.repasse * 100) + '% dessa diferença.' }
+    ];
+  }
+
+  // Desvio mínimo da receita em relação ao PIB nominal (pontos percentuais por ano) que mantém a nota A até H, dado o repasse à despesa.
+  // Devolve null quando nenhum desvio até 10 pontos basta (com repasse de 100% a receita acima do PIB não gera caixa).
+  function desvioMinimo(D, p, H, repasse) {
+    function mantem(x) {
+      var q = {}; Object.keys(p).forEach(function (k) { q[k] = p[k]; }); q.receita_pp = x; q.pressao = -(1 - repasse) * x;
+      return simular(D, q).filter(function (l) { return l.ano <= H; }).every(function (l) { return l.final === 'A'; });
+    }
+    if (mantem(-10)) return -10;
+    if (!mantem(10)) return null;
+    var lo = -10, hi = 10;
+    for (var i = 0; i < 50; i++) { var m = (lo + hi) / 2; if (mantem(m)) hi = m; else lo = m; }
+    return hi;
+  }
+
+  // Maior pressão (pontos percentuais por ano a mais na despesa que já existe) que ainda mantém a nota A até H; negativa quando a despesa
+  // existente precisa crescer menos que a receita. Devolve null quando nem com -5 pontos a nota se mantém.
+  function pressaoMaxima(D, p, H) {
+    function mantem(x) {
+      var q = {}; Object.keys(p).forEach(function (k) { q[k] = p[k]; }); q.pressao = x;
+      return simular(D, q).filter(function (l) { return l.ano <= H; }).every(function (l) { return l.final === 'A'; });
+    }
+    if (!mantem(-5)) return null;
+    if (mantem(5)) return 5;
+    var lo = -5, hi = 5;
+    for (var i = 0; i < 50; i++) { var m = (lo + hi) / 2; if (mantem(m)) lo = m; else hi = m; }
+    return lo;
+  }
+
+  // ---- Problema inverso: o que é preciso entregar para a nota A ficar de pé até o ano H ----
+  // O piso de liquidez f é a razão mínima entre o caixa livre e a RCL em todo ano de 2027 a H (0 = o mínimo para a nota final A, com
+  // endividamento e poupança corrente em A; 0,05 = liquidez também em A). O caixa varia com o resultado primário menos o resultado
+  // primário neutro para o caixa (pn, em fração da RCL; 0 = equilíbrio primário). Com o resultado primário mínimo constante em fração
+  // da RCL (r), o caixa de cada ano é o caixa de 2026 mais a soma de (r - pn) x RCL, e r é o menor valor que respeita o piso em todos
+  // os anos. O esforço de cada ano é a diferença entre esse resultado mínimo e o resultado primário sem ação (pn x RCL menos o gasto
+  // novo e a perda da reforma); a soma do esforço independe de pn, e só a tradução em meta de resultado primário depende dele.
+  function resultadoMinimo(D, p, H, f, pn) {
+    pn = pn || 0;
+    var linhas = simular(D, p).filter(function (l) { return l.ano >= ANO_INICIO_GASTO && l.ano <= H; });
+    var caixa0 = D.base.caixa, soma = 0, r = -Infinity, anoRestritivo = null;
+    linhas.forEach(function (l) {
+      soma += l.rcl;
+      var v = pn + (f * l.rcl - caixa0) / soma;
+      if (v > r) { r = v; anoRestritivo = l.ano; }
+    });
+    var minimo = linhas.map(function (l) { return r * l.rcl; });
+    var plano = linhas.map(function (l) { return pn * l.rcl - l.extra - l.perda; });
+    var esforco = minimo.map(function (m, i) { return m - plano[i]; });
+    return { r: r, anoRestritivo: anoRestritivo, anos: linhas.map(function (l) { return l.ano; }), rcl: linhas.map(function (l) { return l.rcl; }),
+      minimo: minimo, plano: plano, esforco: esforco, total: esforco.reduce(function (a, b) { return a + b; }, 0) };
+  }
+
+  // Esforço anual constante em valores de 2027, corrigido pelo crescimento da receita (R$ mi), que mantém o piso até H.
+  function esforcoIndexado(D, p, H, f) {
+    var linhas = simular(D, p).filter(function (l) { return l.ano >= ANO_INICIO_GASTO && l.ano <= H; });
+    var G = 1, S = 0, a = 0;
+    linhas.forEach(function (l, i) {
+      if (i > 0) G *= 1 + l.g;
+      S += G;
+      a = Math.max(a, Math.max(0, f * l.rcl - l.caixa) / S);
+    });
+    return a * 1000;
+  }
+
+  // Maior gasto novo dos Poderes em 2027 (R$ mi acima da regra antiga) que mantém o piso até H, com as emendas como estão.
+  // Devolve x = null quando nem a regra antiga basta.
+  function poderesMaximo(D, p, H, f) {
+    function com(x) { var q = {}; Object.keys(p).forEach(function (k) { q[k] = p[k]; }); q.poderes = x; return q; }
+    function mantem(x) {
+      return simular(D, com(x)).filter(function (l) { return l.ano >= ANO_INICIO_GASTO && l.ano <= H; })
+        .every(function (l) { return l.lr >= f - 1e-12 && l.final === 'A'; });
+    }
+    if (!mantem(0)) return { x: null };
+    if (mantem(p.poderes)) return { x: p.poderes, cheio: true };
+    var lo = 0, hi = p.poderes;
+    for (var i = 0; i < 50; i++) { var m = (lo + hi) / 2; if (mantem(m)) lo = m; else hi = m; }
+    return { x: lo, cheio: false };
+  }
+
+  raiz.Modelo = { resultadoMinimo: resultadoMinimo, esforcoIndexado: esforcoIndexado, poderesMaximo: poderesMaximo, notaDC: notaDC, notaPC: notaPC, notaLR: notaLR, notaFinal: notaFinal, causa: causa, simular: simular, cenarios: cenarios, cenarios3: cenarios3, desvioMinimo: desvioMinimo, pressaoMaxima: pressaoMaxima,
     primeiroAnoSemA: primeiroAnoSemA, espacoMaximo: espacoMaximo, espacosAtuais: espacosAtuais, trilha: trilha, ULTIMO_ANO: ULTIMO_ANO, ANO_INICIO_GASTO: ANO_INICIO_GASTO };
 })(typeof window !== 'undefined' ? window : module.exports);

@@ -249,6 +249,8 @@ window.DADOS = {
    "divida": 6.79768272525,
    "operacoes_credito": 0.06132408254,
    "amortizacao": 0.2901504412,
+   "juros_ativos": null,
+   "juros_passivos": null,
    "dotacao": 15.61395807838,
    "empenhada": 12.96101908749,
    "paga": 12.22914821181,
@@ -265,6 +267,8 @@ window.DADOS = {
    "divida": 7.04895385943,
    "operacoes_credito": 0.34569476287,
    "amortizacao": 0.2217641119,
+   "juros_ativos": 0.76878420627,
+   "juros_passivos": 0.46552748194,
    "dotacao": 15.390217650270001,
    "empenhada": 13.47426424649,
    "paga": 12.76832405714,
@@ -281,6 +285,8 @@ window.DADOS = {
    "divida": 7.40732783282,
    "operacoes_credito": 0.24151202981,
    "amortizacao": 0.28561178317,
+   "juros_ativos": 1.07530031426,
+   "juros_passivos": 0.29002412743,
    "dotacao": 18.75646973254,
    "empenhada": 14.9620336115,
    "paga": 13.953751346870002,
@@ -297,6 +303,8 @@ window.DADOS = {
    "divida": 7.38390004612,
    "operacoes_credito": 0.23524078097999998,
    "amortizacao": 0.38541157908,
+   "juros_ativos": 0.52510428224,
+   "juros_passivos": 0.49911001023,
    "dotacao": 21.854964527139998,
    "empenhada": 17.662805484979998,
    "paga": 16.18675789147,
@@ -313,6 +321,8 @@ window.DADOS = {
    "divida": 7.26909543977,
    "operacoes_credito": 0.51535623711,
    "amortizacao": 0.4157281335,
+   "juros_ativos": 1.09280250047,
+   "juros_passivos": 0.52487999146,
    "dotacao": 24.102562798509997,
    "empenhada": 21.55297356909,
    "paga": 19.51698420435,
@@ -329,6 +339,8 @@ window.DADOS = {
    "divida": 7.53055732476,
    "operacoes_credito": 0.53103171884,
    "amortizacao": 0.44057165275,
+   "juros_ativos": 1.12073499706,
+   "juros_passivos": 0.58834304742,
    "dotacao": 24.58119705678,
    "empenhada": 23.33601368382,
    "paga": 21.348430309290002,
@@ -345,6 +357,8 @@ window.DADOS = {
    "divida": 8.4032000859,
    "operacoes_credito": 0.68435007024,
    "amortizacao": 0.49002717735,
+   "juros_ativos": 1.01264654176,
+   "juros_passivos": 0.61742693305,
    "dotacao": 27.43620464662,
    "empenhada": 26.38694608563,
    "paga": 24.20665810458,
@@ -361,11 +375,85 @@ window.DADOS = {
    "divida": 8.29132977721,
    "operacoes_credito": 0.6053633968200001,
    "amortizacao": 0.51968085491,
+   "juros_ativos": 1.5411018146300002,
+   "juros_passivos": 0.74063745523,
    "dotacao": 31.52580253681,
    "empenhada": 29.32321323773,
    "paga": 27.11966803712,
    "exec_paga": 0.8602371979414217,
    "exec_empenhada": 0.9301337595923775
+  }
+ ],
+ "ponte_caixa": [
+  {
+   "ano": 2019,
+   "variacao_caixa": 0.5985026243000001,
+   "resultado_primario": 2.2553206737600004,
+   "juros_liquidos": 0.30325672433,
+   "credito_liquido": 0.12393065097,
+   "residuo": -2.084005424760001,
+   "neutro": 1.6568180494600009,
+   "rcl": 15.8328861682
+  },
+  {
+   "ano": 2020,
+   "variacao_caixa": 0.45827360770000003,
+   "resultado_primario": 1.40446278491,
+   "juros_liquidos": 0.78527618683,
+   "credito_liquido": -0.04409975336000002,
+   "residuo": -1.68736561068,
+   "neutro": 0.94618917721,
+   "rcl": 15.64087734422
+  },
+  {
+   "ano": 2021,
+   "variacao_caixa": 0.6433866416499996,
+   "resultado_primario": 2.1302274090999997,
+   "juros_liquidos": 0.02599427201000004,
+   "credito_liquido": -0.15017079810000003,
+   "residuo": -1.3626642413600003,
+   "neutro": 1.4868407674500004,
+   "rcl": 18.82122733989
+  },
+  {
+   "ano": 2022,
+   "variacao_caixa": 0.029780124660000684,
+   "resultado_primario": 0.55073388544,
+   "juros_liquidos": 0.56792250901,
+   "credito_liquido": 0.09962810361000002,
+   "residuo": -1.1885043733999991,
+   "neutro": 0.5209537607799992,
+   "rcl": 21.2504201418
+  },
+  {
+   "ano": 2023,
+   "variacao_caixa": -0.009353619080000097,
+   "resultado_primario": -0.71109993871,
+   "juros_liquidos": 0.53239194964,
+   "credito_liquido": 0.09046006609000001,
+   "residuo": 0.07889430389999985,
+   "neutro": -0.7017463196299999,
+   "rcl": 22.37337535579
+  },
+  {
+   "ano": 2024,
+   "variacao_caixa": -0.5444441817600003,
+   "resultado_primario": 0.10142129669,
+   "juros_liquidos": 0.39521960870999995,
+   "credito_liquido": 0.19432289289000004,
+   "residuo": -1.2354079800500002,
+   "neutro": 0.6458654784500002,
+   "rcl": 26.359045239209998
+  },
+  {
+   "ano": 2025,
+   "variacao_caixa": 0.20091791921999969,
+   "resultado_primario": -0.440471938,
+   "juros_liquidos": 0.8004643594000002,
+   "credito_liquido": 0.08568254191000002,
+   "residuo": -0.2447570440900005,
+   "neutro": -0.6413898572199996,
+   "rcl": 28.08484012416
   }
  ],
  "parcial_2026": {
@@ -568,6 +656,81 @@ window.DADOS = {
   "poderes_bruto": 516,
   "poderes_2026": 2989.37,
   "poderes_2027": 3505.18,
-  "poderes_menor": 100
+  "poderes_menor": 100,
+  "novo": {
+   "emenda_pct_rcl": 0.0155,
+   "emenda_defasagem": 2,
+   "emenda_base_mi": 135,
+   "poderes_pct_rcl": 0.11635,
+   "poderes_limite_2026_mi": 2989.37,
+   "poderes_base_2026_mi": 2674,
+   "poderes_exec_futura": 1.0,
+   "poderes_regra": "nova",
+   "poderes_antiga_acrescimo": 0.015,
+   "poderes_antiga_ipca_2027": 0.0464
+  },
+  "trajetorias": {
+   "dif_pp": 2.2,
+   "repasse": 0.4
+  }
+ },
+ "sigefes": {
+  "fonte": "Portal de dados abertos do Espírito Santo, Despesas-2021.csv a Despesas-2026.csv (Sigefes)",
+  "corte": "2026-10-24",
+  "ano": 2026,
+  "poderes": {
+   "pago_ate_corte_mi": 2022.2187352700014,
+   "pago_mesmo_corte_anterior_mi": 1816.0262696699986,
+   "variacao": 0.1135404641682145,
+   "pago_anualizado_mi": 2674.2669674894914,
+   "empenhado_anualizado_mi": 2636.217210272601,
+   "limite_mi": 2989.37,
+   "fracao_do_limite_pago": 0.8945921607193126,
+   "fracao_do_limite_empenhado": 0.8818638075154969
+  },
+  "emendas": {
+   "empenhado_ate_corte_mi": 110.44019086999997,
+   "empenhado_ano_anterior_mi": 70.27936454,
+   "pago_ate_corte_mi": 104.92769747999996,
+   "pago_ano_anterior_mi": 64.5171525,
+   "pago_anualizado_mi": 134.66733856792254,
+   "fonte_500_mi": 110.44019086999997,
+   "prefixo_r_mi": 61.80698544999999,
+   "prefixo_e_mi": 48.333205419999985
+  },
+  "historico": {
+   "poderes_pago_mi": {
+    "2021": 1752.7449771899946,
+    "2022": 1816.1499733099959,
+    "2023": 2030.02514677999,
+    "2024": 2212.9539979400074,
+    "2025": 2401.589393059998,
+    "2026": 2674.2669674894914
+   },
+   "poderes_empenhado_mi": {
+    "2021": 1797.4553713199991,
+    "2022": 1857.2937391800017,
+    "2023": 2105.1293113699994,
+    "2024": 2333.986631380001,
+    "2025": 2451.7439120900035,
+    "2026": 2636.217210272601
+   },
+   "emendas_pago_mi": {
+    "2021": 17.03755089,
+    "2022": 22.813410859999994,
+    "2023": 28.372234629999998,
+    "2024": 45.2787413,
+    "2025": 64.5171525,
+    "2026": 134.66733856792254
+   },
+   "emendas_empenhado_mi": {
+    "2021": 22.524514840000016,
+    "2022": 28.438816900000006,
+    "2023": 30.595348140000002,
+    "2024": 48.37402938000002,
+    "2025": 70.27936454,
+    "2026": 141.7422371079011
+   }
+  }
  }
 };

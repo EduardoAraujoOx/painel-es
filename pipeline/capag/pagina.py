@@ -17,6 +17,7 @@ import os
 RAIZ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 ORIGEM = os.path.join(RAIZ, "data", "capag", "indicadores.json")
 HISTORICO = os.path.join(RAIZ, "data", "capag", "historico_caixa.json")
+SIGEFES = os.path.join(RAIZ, "data", "capag", "sigefes_poderes.json")
 DESTINO = os.path.join(RAIZ, "public", "diagnostico", "dados.js")
 
 BI = 1e9
@@ -132,11 +133,52 @@ def extras_padrao():
     pod27 = sum(v[1] for v in EXTERNOS["poderes"]["limites_mi"].values())
     i27 = MACRO["ipca"][MACRO["anos"].index(2027)]
     antiga27 = pod26 * (1 + i27)
+    sg = resumo_sigefes()
+    poderes_2026 = round(sg["poderes"]["pago_anualizado_mi"]) if sg else round(pod26)
+    emendas_2026 = round(sg["emendas"]["pago_anualizado_mi"]) if sg else 115
     return {"emenda": round(em["valor_2027_mi"] - em["valor_antes_mi"] * (1 + crescimento_nominal(2027))),
             "poderes": round(pod27 - antiga27),
             "poderes_regra_antiga_2027": round(antiga27, 1),
             "emenda_bruto": em["valor_2027_mi"] - em["valor_antes_mi"], "poderes_bruto": round(pod27 - pod26),
-            "poderes_2026": round(pod26, 2), "poderes_2027": round(pod27, 2), "poderes_menor": 100}
+            "poderes_2026": round(pod26, 2), "poderes_2027": round(pod27, 2), "poderes_menor": 100,
+            # Gasto novo medido contra a execução de 2026 (modo "novo" do motor): o que se passa a gastar em cada ano menos a despesa executada em
+            # 2026 levada pela receita. Emendas: 1,55% da RCL de dois anos antes (o defasamento depois de 2027 é premissa, a confirmar no texto
+            # da PEC 04/2026), contra a execução de 2026 (Sigefes, valor pago, anualizado). Poderes: a fração poderes_exec_futura do limite,
+            # contra a despesa de 2026 paga com recursos não vinculados (Sigefes, fontes 500 e 501, anualizada). Hipótese A: limite integral
+            # (exec_futura = 1); B: limite executado como em 2026 (exec_futura = fração do limite que os Poderes executaram em 2026).
+            "novo": {"emenda_pct_rcl": EXTERNOS["emendas"]["percentual_rcl"] / 100, "emenda_defasagem": 2, "emenda_base_mi": emendas_2026,
+                     "poderes_pct_rcl": round(sum(EXTERNOS["poderes"]["percentuais_rcl"].values()) / 100, 5),
+                     "poderes_limite_2026_mi": round(pod26, 2), "poderes_base_2026_mi": poderes_2026, "poderes_exec_futura": 1.0,
+                     # Regra anterior (LDO 2026, art. 21, par. 1): limite do ano anterior corrigido pelo IPCA de julho a junho mais 1,5%.
+                     # IPCA de julho de 2025 a junho de 2026 = 4,64% (BCB, SGS 433); nos anos seguintes, a média do IPCA dos dois anos-calendário.
+                     "poderes_regra": "nova", "poderes_antiga_acrescimo": 0.015, "poderes_antiga_ipca_2027": 0.0464},
+            # Trajetórias da receita (sem reforma): desvio anual da receita em relação ao PIB nominal e fração desse desvio que a despesa que já
+            # existe acompanha. 2,2 pontos = média de 2019 a 2025 da RCL acima do PIB nominal (desvio-padrão de 6,2; erro-padrão de 2,4);
+            # 0,4 = inclinação de 0,34 a 0,45 entre o desvio da despesa e o da receita no mesmo ano (erro-padrão de cerca de 0,3).
+            "trajetorias": {"dif_pp": 2.2, "repasse": 0.4}}
+
+
+def resumo_sigefes():
+    """Execução de 2026 dos Poderes e das emendas, em R$ milhões, do microdado do Sigefes (pipeline/capag/sigefes_poderes.py). Sem o arquivo, None."""
+    if not os.path.exists(SIGEFES):
+        return None
+    s = json.load(open(SIGEFES, encoding="utf-8"))
+    a = s["ano_corrente"]
+    lv = s["poderes"]["fontes_livres"]
+    lim = sum(v[0] for v in EXTERNOS["poderes"]["limites_mi"].values())
+    em = s["emendas"]
+    return {"fonte": s["fonte"], "corte": s["corte"], "ano": a,
+            "poderes": {"pago_ate_corte_mi": lv["pago"]["ate_corte_%d_mi" % a], "pago_mesmo_corte_anterior_mi": lv["pago"]["ate_corte_%d_mi" % (a - 1)],
+                        "variacao": lv["pago"]["variacao_mesmo_corte"], "pago_anualizado_mi": lv["pago"]["anualizado_%d_mi" % a],
+                        "empenhado_anualizado_mi": lv["empenhado"]["anualizado_%d_mi" % a], "limite_mi": lim,
+                        "fracao_do_limite_pago": lv["pago"]["anualizado_%d_mi" % a] / lim,
+                        "fracao_do_limite_empenhado": lv["empenhado"]["anualizado_%d_mi" % a] / lim},
+            "emendas": {"empenhado_ate_corte_mi": em[str(a)]["empenhado_mi"], "empenhado_ano_anterior_mi": em[str(a - 1)]["empenhado_mi"],
+                        "pago_ate_corte_mi": em[str(a)]["pago_mi"], "pago_ano_anterior_mi": em[str(a - 1)]["pago_mi"],
+                        "pago_anualizado_mi": em[str(a)]["pago_anualizado_mi"], "fonte_500_mi": em[str(a)]["por_fonte_mi"].get("500", 0.0),
+                        "prefixo_r_mi": em[str(a)]["por_prefixo_mi"].get("R", 0.0), "prefixo_e_mi": em[str(a)]["por_prefixo_mi"].get("E", 0.0)},
+            # série anual (R$ mi, valor pago): exercícios fechados de 2021 em diante e o ano corrente anualizado pelo perfil do ano anterior
+            "historico": s["historico"]}
 
 
 def base_2026(ex, p26):
@@ -171,6 +213,29 @@ def crescimento_medio(ex, de, ate, chave):
     return (b / a) ** (1 / (ate - de)) - 1
 
 
+def ponte_caixa(historico):
+    """Ponte entre o resultado primário e a variação do caixa livre, de 2019 a 2025, em R$ bilhões.
+
+    variação do caixa livre = resultado primário + juros líquidos (ativos menos passivos) + operações de crédito menos amortização + resíduo.
+    O resíduo reúne o que a série não separa: movimento das fontes vinculadas, restos a pagar, reclassificações de fontes e diferenças
+    entre o resultado de competência e o de caixa. O resultado primário neutro para o caixa (o que deixa o caixa livre constante) é o
+    simétrico da soma dos juros líquidos, do crédito líquido e do resíduo."""
+    por_ano = {h["ano"]: h for h in historico}
+    linhas = []
+    for a in range(2019, max(por_ano) + 1):
+        h, ant = por_ano[a], por_ano.get(a - 1)
+        if ant is None or None in (h["caixa_livre"], ant["caixa_livre"], h["resultado_primario"], h["juros_ativos"], h["juros_passivos"],
+                                    h["operacoes_credito"], h["amortizacao"]):
+            continue
+        var = h["caixa_livre"] - ant["caixa_livre"]
+        juros = h["juros_ativos"] - h["juros_passivos"]
+        credito = h["operacoes_credito"] - h["amortizacao"]
+        residuo = var - (h["resultado_primario"] + juros + credito)
+        linhas.append({"ano": a, "variacao_caixa": var, "resultado_primario": h["resultado_primario"], "juros_liquidos": juros,
+                       "credito_liquido": credito, "residuo": residuo, "neutro": -(juros + credito + residuo), "rcl": h["rcl"]})
+    return linhas
+
+
 def main():
     doc = json.load(open(ORIGEM, encoding="utf-8"))
     hist = json.load(open(HISTORICO, encoding="utf-8"))
@@ -189,9 +254,11 @@ def main():
             "ano": h["ano"], "rcl": bi(h["rcl"]), "caixa_livre": bi(h.get("caixa_livre")), "caixa_livre_rcl": h.get("caixa_livre_rcl"),
             "resultado_primario": bi(h.get("resultado_primario")), "meta_resultado_primario": bi(h.get("meta_resultado_primario")),
             "divida": bi(h["divida_consolidada"]), "operacoes_credito": bi(h.get("operacoes_credito")), "amortizacao": bi(h.get("amortizacao_divida")),
+            "juros_ativos": bi(h.get("juros_ativos")), "juros_passivos": bi(h.get("juros_passivos")),
             "dotacao": bi(dot), "empenhada": bi(emp), "paga": bi(paga),
             "exec_paga": (paga / dot) if dot and paga else None, "exec_empenhada": (emp / dot) if dot and emp else None,
         })
+    ponte = ponte_caixa(historico_caixa)
     p26 = hist["parcial_2026"]
     b26 = base_2026(ex, p26)
     hc = {h["ano"]: h for h in hist["exercicios"]}
@@ -227,9 +294,11 @@ def main():
             for a in sorted(ex) if ex[a]["nota_final"]
         ],
         "historico_caixa": historico_caixa,
+        "ponte_caixa": ponte,
         "parcial_2026": {k: bi(v) for k, v in p26.items()},
         "externos": EXTERNOS,
         "extras_padrao": extras_padrao(),
+        "sigefes": resumo_sigefes(),
     }
     with open(DESTINO, "w", encoding="utf-8") as f:
         f.write("// Gerado por pipeline/capag/pagina.py a partir de data/capag. Valores monetários em R$ bilhões.\n")
