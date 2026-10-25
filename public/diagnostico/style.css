@@ -182,3 +182,6 @@ table.evidencias { font-size: 13.5px; }
   #tabela-evidencias td.nome { background: color-mix(in srgb, var(--destaque) 10%, transparent); }
   #tabela-evidencias td.nome::before { display: none; }
 }
+
+.presets { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 2px; }
+.presets button { margin: 0; padding: 6px 12px; font-size: 13px; }

@@ -61,8 +61,12 @@ EXTERNOS = {
         "retencao_2029_2032": 0.80, "retencao_2033": 0.90, "reducao_gradual_ate": 2077,
         "coeficiente_es_pct": 1.5418, "receita_media_referencia_bi": 16.090,
         "estudo_setorial_perda_icms_bi": 8.3, "estudo_setorial_a_partir_de": 2033,
+        # Estimativa do próprio autor (artigo sobre os efeitos da reforma no Espírito Santo, versão 62): perda acumulada da receita
+        # estadual de 2029 a 2033, em R$ bilhões. A trajetória anual do artigo ainda não entrou: o simulador distribui a perda em rampa.
+        "estimativa_autor": {"neutro_bi": 1.84, "destino_pleno_bi": 3.27, "perda_2033_pct": 8.0, "periodo": "2029 a 2033"},
         "texto": "Segundo resumo da LC 227/2026, de 2029 a 2032 retêm-se 80% da receita do IBS para distribuição pelo coeficiente histórico, 90% em 2033, com redução gradual até 2077.",
         "fontes": [
+            ["Artigo do autor sobre os efeitos da reforma tributária no Espírito Santo (versão 62)", ""],
             ["Radar da Reforma Tributária", "https://radardareformatributaria.com/ibs-coeficiente-municipios-estados-dados-2019-2026-arrecadacao/"],
             ["Tribuna Online, 'Reforma tributária: aliança para evitar prejuízo ao Espírito Santo'", "https://tribunaonline.com.br/economia/reforma-tributaria-alianca-para-evitar-prejuizo-ao-espirito-santo-302047"],
             ["Nota Técnica 02/2026, Unidade Fazendária da Reforma Tributária (SEFAZ-ES)", ""],

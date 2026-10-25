@@ -187,9 +187,9 @@
         uso: 'Referência de contexto. A projeção da página parte do resultado realizado e não do planejado.',
         origem: X.ldo_2027.fontes, situacao: 'imprensa', rotuloSit: 'Conferido na imprensa' },
       { premissa: 'Perda de receita da reforma tributária',
-        achado: 'Segundo resumo da LC 227/2026, de 2029 a 2032 retêm-se ' + pct(X.reforma.retencao_2029_2032, 0) + ' da receita do IBS para distribuição pelo coeficiente histórico, ' + pct(X.reforma.retencao_2033, 0) + ' em 2033, com redução gradual até ' + X.reforma.reducao_gradual_ate + '. O coeficiente do Espírito Santo na Nota Técnica 02/2026 é de ' + num(X.reforma.coeficiente_es_pct, 4) + '%. Um estudo do Sincades e da Apex projeta perda de ' + bi(X.reforma.estudo_setorial_perda_icms_bi) + ' de ICMS a partir de ' + X.reforma.estudo_setorial_a_partir_de + ', sem metodologia divulgada. Líquido da parte dos municípios, isso equivale a cerca de ' + pct(perdaSetor, 0) + ' da receita corrente líquida de 2025.',
-        uso: 'Valor inicial zero, porque a retenção limita a perda até 2033. O controle permite testar cenários, como o do estudo setorial.',
-        origem: X.reforma.fontes, situacao: 'confirmar', rotuloSit: 'A confirmar' }
+        achado: 'A estimativa do autor, em artigo sobre os efeitos da reforma no Espírito Santo, é de perda acumulada da receita estadual de ' + bi(X.reforma.estimativa_autor.neutro_bi) + ' no cenário neutro e de ' + bi(X.reforma.estimativa_autor.destino_pleno_bi) + ' com destino pleno, de ' + X.reforma.estimativa_autor.periodo + '. Segundo resumo da LC 227/2026, de 2029 a 2032 retêm-se ' + pct(X.reforma.retencao_2029_2032, 0) + ' da receita do IBS para distribuição pelo coeficiente histórico, e ' + pct(X.reforma.retencao_2033, 0) + ' em 2033. Um estudo do Sincades e da Apex projeta perda de ' + bi(X.reforma.estudo_setorial_perda_icms_bi) + ' de ICMS a partir de ' + X.reforma.estudo_setorial_a_partir_de + ', sem metodologia divulgada, e não foi usado.',
+        uso: 'Valor inicial de ' + num(PADRAO.perda, 2) + '% da receita corrente, que reproduz a perda acumulada do cenário neutro com uma rampa de 25% a 100% de 2029 a 2032 e percentual constante depois. Os botões do controle trocam para o destino pleno. A trajetória anual do artigo ainda deve substituir a rampa. Não entram as transferências do Fundo Nacional de Desenvolvimento Regional, em geral vinculadas a investimento.',
+        origem: X.reforma.fontes, situacao: 'autor', rotuloSit: 'Estimativa do autor' }
     ];
     var cab = h('thead', {}, [h('tr', {}, [h('th', { text: 'Premissa' }), h('th', { text: 'O que as fontes mostram' }), h('th', { text: 'Como entra no simulador' }),
       h('th', { text: 'Origem' }), h('th', { text: 'Situação' })])]);
@@ -378,20 +378,20 @@
 
     // 2. Perda de receita com a reforma tributária
     var ok2 = function (x) { return mantem(copia({ perda: x })); };
-    var v2 = { titulo: 'Perda de receita com a reforma tributária', sub: 'Percentual da receita corrente perdido ao fim de 2032, em etapas a partir de 2029',
+    var v2 = { titulo: 'Perda de receita com a reforma tributária', sub: 'Percentual da receita corrente perdido, em etapas de 2029 a 2032 e constante depois',
       melhor: 'menor', atual: p.perda, min: 0, fmt: function (x) { return num(x, 1) + '%'; } };
     if (!ok2(0)) {
       v2.estado = 'nunca';
       var semGasto = function (x) { return mantem(copia({ perda: x, emenda: 0, poderes: 0, ajuste: 0 })); };
       v2.frase = 'Com o gasto novo dos controles, a nota A já se perde mesmo sem nenhuma perda de receita.' +
         (!semGasto(0) ? '' : semGasto(30) ? ' Sem nenhum gasto novo, nem uma perda de 30% da receita derrubaria a nota A' + ate + '.'
-          : ' Sem nenhum gasto novo, o limite seria de ' + num(bissec(semGasto, 0, 30), 1) + '% da receita corrente, já que a perda sai do caixa livre e o caixa de hoje cobre pouco.');
+          : ' Sem nenhum gasto novo, o limite seria de ' + num(bissec(semGasto, 0, 30), 2) + '% da receita corrente, já que a perda sai do caixa livre e o caixa de hoje cobre pouco.');
     } else if (ok2(30)) {
       v2.estado = 'sempre';
       v2.frase = 'Nestas condições, nem uma perda de 30% da receita derruba a nota A' + ate + '.';
     } else {
       v2.estado = 'normal'; v2.limite = bissec(ok2, 0, 30);
-      v2.frase = 'No cenário, a perda chega a ' + num(p.perda, 1) + '% da receita corrente. O limite que preserva a nota A' + ate + ' é de ' + num(v2.limite, 1) + '%. ' +
+      v2.frase = 'No cenário, a perda chega a ' + num(p.perda, 2) + '% da receita corrente. O limite que preserva a nota A' + ate + ' é de ' + num(v2.limite, 2) + '%. ' +
         (p.perda <= v2.limite ? 'Sobra uma folga de ' + pp(v2.limite - p.perda) + '.' : 'O excesso é de ' + pp(p.perda - v2.limite) + '.');
     }
     v2.max = Math.max(6, Math.ceil(Math.max((v2.limite || 0) * 1.5, p.perda * 1.2)));
@@ -422,7 +422,7 @@
       melhor: 'maior', atual: p.ajuste, min: 0, fmt: mi };
     if (v1.estado === 'nunca') {
       v4.estado = 'nunca';
-      v4.frase = 'Nenhuma compensação resolve, porque a nota já se perde sem gasto novo.';
+      v4.frase = 'Compensar o gasto novo não basta: mesmo sem nenhum gasto novo, as demais premissas fazem a nota deixar de ser A em ' + em.limite.ano + '.';
     } else if (v1.estado === 'sempre' || total <= em.valor) {
       v4.estado = 'sempre';
       v4.frase = 'O gasto novo informado (' + mi(total) + ' por ano) cabe no espaço disponível, sem compensação.';
@@ -492,7 +492,16 @@
   var CAGR = Math.pow(ano(2025).rcl / ano(2021).rcl, 1 / 4) - 1;
   var DERIVA_MEDIA = (ano(2025).caixa_livre - ano(2021).caixa_livre) / 4 * 1000;
   var DERIVA_18_21 = (ano(2021).caixa_livre - ano(2018).caixa_livre) / 3 * 1000;
-  var PADRAO = { crescimento: D.crescimento_padrao, emenda: D.extras_padrao.emenda, poderes: D.extras_padrao.poderes, ajuste: 0, perda: 0, deriva: 0 };
+  // Percentual da receita corrente que, na rampa do simulador (25%, 50%, 75% e 100% de 2029 a 2032, constante depois), reproduz
+  // uma perda acumulada de 2029 a 2033 em R$ bilhões.
+  function perdaParaAcumulado(acumuladoBi, g) {
+    var soma = 0;
+    for (var a = 2029; a <= 2033; a++) soma += Math.min(1, (a - 2028) / 4) * D.rca * Math.pow(1 + g / 100, a - D.ano_base);
+    return Math.round(acumuladoBi / soma * 10000) / 100;
+  }
+  var REF = D.externos.reforma.estimativa_autor;
+  var PADRAO = { crescimento: D.crescimento_padrao, emenda: D.extras_padrao.emenda, poderes: D.extras_padrao.poderes, ajuste: 0,
+    perda: perdaParaAcumulado(REF.neutro_bi, D.crescimento_padrao), deriva: 0 };
   function sinal(v) { return (v < 0 ? '-' : v > 0 ? '+' : '') + mi(Math.abs(v)); }
   var CONTROLES = [
     { id: 'crescimento', rotulo: 'Crescimento da receita e da despesa existentes', min: 0, max: 12, passo: 0.5,
@@ -504,8 +513,9 @@
       ajuda: 'Tabela do autor: limites de R$ 2.989 mi na LDO 2026 e de R$ 3.505 mi na LDO 2027, diferença de R$ 516 mi. O valor inicial desconta o crescimento que o limite de 2026 teria de qualquer forma, e o acréscimo cresce com a receita.' },
     { id: 'ajuste', rotulo: 'Compensação por corte, receita nova ou deslocamento', min: 0, max: 1500, passo: 10, fmt: function (v) { return mi(v) + ' por ano'; },
       ajuda: 'Parte do gasto novo coberta por corte de outras despesas, por receita nova ou por deslocamento de gasto que seria executado de qualquer forma, já que a emenda deve indicar a despesa anulada. Começa em zero.' },
-    { id: 'perda', rotulo: 'Perda de receita com a reforma tributária', min: 0, max: 25, passo: 0.5, fmt: function (v) { return num(v, 1) + '% da receita'; },
-      ajuda: 'Percentual da receita corrente perdido ao fim de 2032, em quatro etapas iguais a partir de 2029. Começa em zero porque a retenção de 80% a 90% da receita do IBS limita a perda até 2033. O estudo do Sincades e da Apex equivaleria a cerca de 22%.' },
+    { id: 'perda', rotulo: 'Perda de receita com a reforma tributária', min: 0, max: 25, passo: 0.01, fmt: function (v) { return num(v, 2) + '% da receita'; },
+      ajuda: 'Percentual da receita corrente perdido, em quatro etapas iguais de 2029 a 2032 e constante depois. Os botões usam a estimativa do autor para a perda acumulada de 2029 a 2033 (R$ 1,84 bi no cenário neutro e R$ 3,27 bi com destino pleno), convertida em percentual com o crescimento atual. O estudo do Sincades e da Apex equivaleria a cerca de 22%.',
+      botoes: [['Sem perda', function () { return 0; }], ['Cenário neutro', function (g) { return perdaParaAcumulado(REF.neutro_bi, g); }], ['Destino pleno', function (g) { return perdaParaAcumulado(REF.destino_pleno_bi, g); }]] },
     { id: 'deriva', rotulo: 'Variação anual do caixa livre sem o gasto novo', min: -500, max: 1000, passo: 10, fmt: function (v) { return sinal(v) + ' por ano'; },
       ajuda: 'Zero mantém o caixa constante em valor, como entre 2021 e 2025. A variação média desse período foi de ' + sinal(DERIVA_MEDIA) + ' por ano, com anos de menos R$ 540 mi e de mais R$ 200 mi.' }
   ];
@@ -525,9 +535,17 @@
     CONTROLES.forEach(function (c) {
       var inp = h('input', { type: 'range', id: 'c-' + c.id, min: c.min, max: c.max, step: c.passo, value: PADRAO[c.id] });
       inp.addEventListener('input', render);
+      var botoes = null;
+      if (c.botoes) {
+        botoes = h('div', { 'class': 'presets' }, c.botoes.map(function (b) {
+          var bt = h('button', { type: 'button', text: b[0] });
+          bt.addEventListener('click', function () { inp.value = b[1](parseFloat($('c-crescimento').value)); render(); });
+          return bt;
+        }));
+      }
       alvo.appendChild(h('div', { 'class': 'controle' }, [
         h('div', { 'class': 'topo' }, [h('label', { 'for': 'c-' + c.id, text: c.rotulo }), h('output', { id: 'o-' + c.id, 'for': 'c-' + c.id })]),
-        inp, h('p', { 'class': 'ajuda', text: c.ajuda })]));
+        inp, botoes, h('p', { 'class': 'ajuda', text: c.ajuda })]));
     });
   }
 
