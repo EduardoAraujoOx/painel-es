@@ -1,6 +1,6 @@
 {
  "ref": "2026-10-30",
- "gerado_em": "2026-10-30T18:51:13Z",
+ "gerado_em": "2026-10-30T19:19:18Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -23,8 +23,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 45,
-   "aceitos": 37
+   "lidos": 47,
+   "aceitos": 39
   },
   {
    "fonte": "Google Notícias",
@@ -37,15 +37,15 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 12,
-   "aceitos": 12
+   "lidos": 14,
+   "aceitos": 14
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 19,
-   "aceitos": 7
+   "lidos": 18,
+   "aceitos": 8
   },
   {
    "fonte": "Google Notícias",
@@ -59,7 +59,7 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 10,
-   "aceitos": 5
+   "aceitos": 4
   },
   {
    "fonte": "Google Notícias",
@@ -79,14 +79,14 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 87,
-   "aceitos": 6
+   "lidos": 90,
+   "aceitos": 7
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 82,
+   "lidos": 85,
    "aceitos": 1
   },
   {
@@ -94,7 +94,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 5
+   "aceitos": 6
   },
   {
    "fonte": "Folha Vitória",
@@ -118,8 +118,45 @@
    "aceitos": 1
   }
  ],
- "novos_na_coleta": 8,
+ "novos_na_coleta": 3,
  "itens": [
+  {
+   "id": "7614fc700ac8",
+   "titulo": "Governador eleito, Pazolini volta à Polícia Civil e terá ex-secretário como chefe",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNZXQzSVpZMjY0SmxzbTUwNE9zYzhJSU11a2xhWkFyYmZRQ2d4dHByajQ2N1A5UGZUQkoyTzQzS1pFcDBoT1E3Z2FTUHROazV4SEwtVXJOcjA0enROS29QVjIycURCMWFZSEwwLTRPQXp5Tlp5ZC1RSkRxNVVSVUtVZ2hHdTVJdDJhZHVLVUg0N3JDNjVoTzlEdFZtWlR0NW90WFBPeG13?oc=5",
+   "data": "2026-10-30T19:02:40Z",
+   "coletado_em": "2026-10-30T19:19:18Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "1cbadd75b918",
+   "titulo": "Pazolini volta à Polícia Civil do ES antes da posse em 2027",
+   "veiculo": "Folha Vitória",
+   "url": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxPTEktOUFNV2VJS2JrV2Z5NE1Ma0ZUUjZJS2NQZjlLWTU2b0NxbFZWcDFJb2RuZEQ2bVMzMFNsU3dKdWtoak1rcHFQRXhObkxnUW5aeTdweUs5QjA5MExiZ3JNbHgyN2FaOWM5dHpNVVIyVzVPWEVkQklwRXBjellsVmdYbEFIbHRzY05NeUE4cHdDNEg4aFBZeEJDRkU4SWdNMVloTTltOHFIOGs3S21zejR2dVpvLThSTVFfdjhCbFNTLVdHaGlQQnJkeUNEVDZqenF4UnB1eDctWTZOeW1rLU9PZEczbjV2dlV3ckJXbVd4Smd6ZEYyYVR2UWRvbS1XRWE4czI1T0o1VjhEWUhoNTJrUHJMdXdVcWtIenFZLS1ZMUZncEI1dkxzdmhiczBHblpqTG5XSGs3SHliOHZnY0lXUXpfcllBWTVraEp0WEVIcWE2ZXZTYnVudmd2Zmh3QTNTcks4SDE?oc=5",
+   "data": "2026-10-30T18:57:45Z",
+   "coletado_em": "2026-10-30T19:19:18Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "002af67bed80",
+   "titulo": "Grand mantém sete frentes de obras e amplia atuação no Espírito Santo",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/conteudo-de-marca/grand-mantem-sete-frentes-de-obras-e-amplia-atuacao-no-espirito-santo-1026",
+   "data": "2026-10-30T18:53:03Z",
+   "coletado_em": "2026-10-30T19:19:18Z",
+   "outras": [],
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "b152685cd29d",
    "titulo": "Governador eleito, Pazolini volta a ser delegado e será chefiado por ex-secretário",
