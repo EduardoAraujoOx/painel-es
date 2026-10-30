@@ -158,7 +158,7 @@ class Resumo(unittest.TestCase):
         msgs = self.rodar(self.ENV)
         self.assertEqual(sorted(m["To"] for m in msgs), ["B@exemplo.com", "a@exemplo.com"])
         self.assertEqual({p.get_content_type() for p in msgs[0].iter_parts()}, {"text/plain", "text/html"})
-        self.assertIn("3 novas", msgs[0]["Subject"])  # a de 30 horas atrás fica de fora no primeiro envio (24 h)
+        self.assertIn("3 notícias novas", msgs[0]["Subject"])  # a de 30 horas atrás fica de fora no primeiro envio (24 h)
         self.assertTrue(enviar.MARCO.exists())
 
     def test_segundo_envio_sem_novidade_nao_manda_nada(self):
@@ -167,13 +167,13 @@ class Resumo(unittest.TestCase):
 
     def test_teste_nao_mexe_no_marco(self):
         msgs = self.rodar(self.ENV, ["--teste"])
-        self.assertTrue(msgs[0]["Subject"].startswith("[TESTE]"))
+        self.assertTrue(msgs[0]["Subject"].startswith("[TESTE] Governo e transição no ES:"))
         self.assertFalse(enviar.MARCO.exists())
 
     def test_so_o_que_veio_depois_do_marco_entra(self):
         enviar.MARCO.write_text(json.dumps({"ultimo_envio": enviar.iso(self.ref - timedelta(minutes=150))}), encoding="utf-8")
         msgs = self.rodar(self.ENV)
-        self.assertIn("2 novas", msgs[0]["Subject"])  # só os itens 1 e 2 foram coletados depois do marco
+        self.assertIn("2 notícias novas", msgs[0]["Subject"])  # só os itens 1 e 2 foram coletados depois do marco
 
     def test_agrupa_por_tema_na_ordem_de_prioridade_sem_repetir(self):
         grupos = enviar.agrupar(enviar.selecionar(self.dados["itens"], self.ref - timedelta(hours=48)), self.dados["temas"])

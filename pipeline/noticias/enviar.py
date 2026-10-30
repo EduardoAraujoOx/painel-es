@@ -89,7 +89,7 @@ def periodo(ref):
 
 
 def assunto(n, ref, teste):
-    return f"{'[TESTE] ' if teste else ''}Notícias do governo do ES: {n} {'nova' if n == 1 else 'novas'}, {periodo(ref)}"
+    return f"{'[TESTE] ' if teste else ''}Governo e transição no ES: {n} {'notícia nova' if n == 1 else 'notícias novas'}, {periodo(ref)}"
 
 
 def link_seguro(u):
@@ -122,7 +122,7 @@ def montar_html(grupos, total, restantes, ref, painel_url, desde_txt):
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f4f3ef"><tr><td align="center" style="padding:20px 12px">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:640px;background:#fff;border-top:4px solid {COR}"><tr><td style="padding:22px 26px 26px">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
-<tr><td style="font:700 26px/1.1 Georgia,'Times New Roman',serif;color:#111">Notícias do governo do ES</td></tr>
+<tr><td style="font:700 26px/1.1 Georgia,'Times New Roman',serif;color:#111">Governo e transição no ES</td></tr>
 <tr><td style="padding-top:6px;font:13px/1.5 Arial,Helvetica,sans-serif;color:#666">Painel Fiscal · análise para a transição. {total} {"notícia nova" if total == 1 else "notícias novas"} {e(desde_txt)}.</td></tr>
 {botao}
 {"".join(blocos)}
@@ -134,7 +134,7 @@ Para sair desta lista ou incluir alguém, fale com Eduardo Araújo.</td></tr>
 
 
 def montar_texto(grupos, total, restantes, ref, painel_url, desde_txt):
-    out = [f"Notícias do governo do ES\n{total} {'notícia nova' if total == 1 else 'notícias novas'} {desde_txt}.\n"]
+    out = [f"Governo e transição no ES\n{total} {'notícia nova' if total == 1 else 'notícias novas'} {desde_txt}.\n"]
     if painel_url:
         out.append(f"Painel: {painel_url}\n")
     for rotulo, lista in grupos:
