@@ -1,7 +1,7 @@
 {
  "ref": "2026-10-30",
- "gerado_em": "2026-10-30T16:05:43Z",
- "janela_dias": 7,
+ "gerado_em": "2026-10-30T18:51:13Z",
+ "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
   "transicao": "Transição",
@@ -16,99 +16,99 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 100,
-   "aceitos": 66
+   "lidos": 19,
+   "aceitos": 13
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 100,
-   "aceitos": 76
+   "lidos": 45,
+   "aceitos": 37
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 27,
-   "aceitos": 22
+   "lidos": 10,
+   "aceitos": 9
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 29,
-   "aceitos": 29
+   "lidos": 12,
+   "aceitos": 12
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 60,
-   "aceitos": 20
+   "lidos": 19,
+   "aceitos": 7
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 3
+   "lidos": 6,
+   "aceitos": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 10,
-   "aceitos": 7
+   "aceitos": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 13,
-   "aceitos": 11
+   "lidos": 9,
+   "aceitos": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 38,
-   "aceitos": 5
+   "lidos": 10,
+   "aceitos": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 100,
-   "aceitos": 12
+   "lidos": 87,
+   "aceitos": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 100,
-   "aceitos": 17
+   "lidos": 82,
+   "aceitos": 1
   },
   {
    "fonte": "A Gazeta",
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2
+   "aceitos": 5
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0
+   "aceitos": 2
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 3
+   "aceitos": 4
   },
   {
    "fonte": "ES Hoje",
@@ -118,8 +118,82 @@
    "aceitos": 1
   }
  ],
- "novos_na_coleta": 34,
+ "novos_na_coleta": 8,
  "itens": [
+  {
+   "id": "b152685cd29d",
+   "titulo": "Governador eleito, Pazolini volta a ser delegado e será chefiado por ex-secretário",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/governador-eleito-pazolini-volta-a-ser-delegado-e-sera-chefiado-por-ex-secretario/",
+   "data": "2026-10-30T18:49:42Z",
+   "coletado_em": "2026-10-30T18:51:13Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "091736a09c16",
+   "titulo": "Servidores recebem proposta de abono natalino de R$ 8,5 mil em Câmara do ES",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/servidores-recebem-proposta-de-abono-natalino-de-r-85-mil-em-camara-do-es/",
+   "data": "2026-10-30T18:42:37Z",
+   "coletado_em": "2026-10-30T18:51:13Z",
+   "outras": [],
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "c8bac1257509",
+   "titulo": "Os dois caminhos de Pazolini após a carta golpista de Flávio Bolsonaro",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/leticia-goncalves/os-dois-caminhos-de-pazolini-apos-a-carta-golpista-de-flavio-bolsonaro-1026",
+   "data": "2026-10-30T17:36:42Z",
+   "coletado_em": "2026-10-30T18:51:13Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "ef5e63216aa8",
+   "titulo": "Gêmeas idênticas têm resultados diferentes em avaliação de cotas em concurso da Polícia Civil do ES",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/concursos/gemeas-identicas-tem-resultados-diferentes-em-avaliacao-de-cotas-em-concurso-da-policia-civil-do-es-1026",
+   "data": "2026-10-30T17:27:46Z",
+   "coletado_em": "2026-10-30T18:51:13Z",
+   "outras": [],
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "0dcb4402826e",
+   "titulo": "Governador eleito, Pazolini volta a atuar como delegado até a posse no ES",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/vilmara-fernandes/governador-eleito-pazolini-volta-a-atuar-como-delegado-ate-a-posse-no-es-1026",
+   "data": "2026-10-30T16:38:32Z",
+   "coletado_em": "2026-10-30T18:51:13Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "ca6fc523c714",
+   "titulo": "O fim do silêncio de Ricardo Ferraço",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/bastidores-da-politica/2026/10/o-fim-do-silencio-de-ricardo-ferraco/",
+   "data": "2026-10-30T16:18:26Z",
+   "coletado_em": "2026-10-30T18:51:13Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "efd66b9db1a6",
    "titulo": "Empreendedores de de Vitória, Serra e Linhares lideram financiamentos do Bandes",
@@ -411,7 +485,12 @@
    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPejl0T0N5UW9UMTNOcVZHZWYzdmRGMndqTm5kN3Uzd2swdVpZZ01mMzJVSldkNTJQeGQ0bk0tQndkRlBHUng2ZVBmTG8wYzFTTHFPQy1zbDl4NHVWcktIalFUaWQ3Nzg5cU4zdE1DNTRvTXBmckxqRDN0WTNEdWNfQVVhOHlJeHZLS3ZFLU1CRFpkeG5TeFM3cnYzTFdLNjFFdk4yaHdacHJlSkxGWWZaeWxYUEF6Q0luWlQyNkx3WUpQd0hR?oc=5",
    "data": "2026-10-29T19:25:38Z",
    "coletado_em": "2026-10-30T15:35:49Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Aqui Notícias",
+     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNdmtuWWJBTG1uZ1d6aUpxb0NtSG1ySnh1YjBNRWxzdjZGYU16QmN6eDUxT2dKUnVJeUxKRnR3RmplUEZJMXl6aEJyVDhLZW91dDdZbXp3a1BsWEVmbmJxLUNyTVVWdl9vUncwQUFGV3FXQ3NGNjNyd2ZvNzRDZ1UzQkxtU1pSclJwamJwcGZ2QUdPWmZKOTFKX1o1aU8zdmxIOU5sTnNpVllYbmtvbVUwWjVPWl9HREN2a0VVZE5XQmRWempnMVBDX3FyQ0VZd0k?oc=5"
+    }
+   ],
    "temas": [
     "governador"
    ]
@@ -636,6 +715,19 @@
    "temas": []
   },
   {
+   "id": "a3cb8d534333",
+   "titulo": "Pazolini visita Tribunal de Contas e destaca importância do respeito aos órgãos de controle",
+   "veiculo": "Aqui Notícias",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbFhrTnVXc19SdTB5bmlJQ3RDUEd0ZWExZHhsay1ObHluT1FIZnRzaEF3ZFA2em9OVDl0bmlOT2JubUN6QnRjSDZ0YlJwMExrVl9qaWZISXVuM2pHbUZTQWpJUEttY216R2kwczg0RWFXVVA4aVBDeThHLWJZOTFJSnVhRHJmcldnWUtteHlRdnZ2dXgxcjJTZUpOSTE2X0tRbFo2RXlkbUNQVnhUZzJxRTRJTGhUM3BLWXBUTjQzX1Jlbm8?oc=5",
+   "data": "2026-10-29T13:07:42Z",
+   "coletado_em": "2026-10-30T18:51:13Z",
+   "outras": [],
+   "temas": [
+    "governador",
+    "controle"
+   ]
+  },
+  {
    "id": "66370300ad33",
    "titulo": "Agenda para Pazolini: indústria e comércio listam pautas",
    "veiculo": "ES Brasil",
@@ -682,6 +774,18 @@
    "coletado_em": "2026-10-30T15:35:49Z",
    "outras": [],
    "temas": []
+  },
+  {
+   "id": "c6685ff7cc53",
+   "titulo": "Senador Fabiano Contarato e ex-governador do Espírito Santo, Renato Casagrande, defendem manutenção dos royalties do petróleo - Portal OZK - JORNALISMO DE VERDADE!!!",
+   "veiculo": "Portalozk.com",
+   "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPZi1ZTUxQVHpDZklLU3d5eHFDaVk4MlhvZ3VZR0NnSEdlWVRHNXpXclU4dC1oMHZjSmU2eS1lVHJBUEpfLVlyU0liN3NRb0luSTlGRU9VWEZfeXpXRFRvZ0NwZmEzVGFwXzlpOUxwM0tQU0tGRUdvOUVxX2hPU05ZSlRfYTNVZ25hSDlualNjXzhyZnNCcDRpZnVudm1hdmt0THp1NUJOUFdaaTNPa2JKU1ZmVHc5bXVOZmMtQVdzX2tYWFdJUmMxaDhOTVpfMnhmTk9XVHdPV0VTR3RfX3BUdFFRTkdKX2RiRlJwNmllaFpydG0tRHl5X3hyOGRsUFFfNW9WUGdHREhCdw?oc=5",
+   "data": "2026-10-29T07:00:00Z",
+   "coletado_em": "2026-10-30T18:51:13Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
   },
   {
    "id": "454a246b8f2d",
@@ -807,6 +911,10 @@
     {
      "veiculo": "Aqui Notícias",
      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPT2g4QTdEUG8zLXBycTRqMm9EYkZzM2FwQTdIY1J4VmdoSlFqX0FEeTlWNy1nT2ZIc0ZRRGNhcjhSNkZmbFVPSTF5NXIyZ3BRMkdRakhZTGQxYlowc2REZ3NsQi1iWDJlR0FxNTkzMVBHMVpOaVBNMjhJc3dXOThqb0ZFdG9QelhqeGV3dFBEZ3VfdmVZcTdKOXB2RndlWTFXa2c4REt3d1FFMnlxVzVMZW81M1BmR2o4emdQbTBSWnBRQQ?oc=5"
+    },
+    {
+     "veiculo": "rede noticia es",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbkxqUXRHdFNwZ285OEFhX2hyRlhDLUVLY3pxdW5raV9KeG8yNFhMbnFVLXRSMk0yUURsUWlmZ0tLWEh3Z2FsUkFCR1A3c0ZrSjZEZUpEYUJJOTRBcUQzRTlwMXo3Z2dnTjlIamp1QmtVRVpnS1NCWnUxVUUwQkZicG0tRHF1SG1oT1BrZmNfVG9pSkRXb3Q4NWYzMUVtZWE4ZUxkdlh2YjJBQ2t6LVJ3SmhWWWc?oc=5"
     }
    ],
    "temas": [
