@@ -191,7 +191,7 @@ A rotina roda sozinha a cada 2 horas, das 06h17 às 20h17 (Brasília), pelo GitH
 
 ### Resumo por e-mail
 
-`pipeline/noticias/enviar.py` monta um resumo das notícias que apareceram desde o último envio, agrupadas por tema (Transição, Finanças e orçamento, Contratos e obras, Pessoal, Controle e investigação, Governador e Palácio), e manda um e-mail a cada destinatário, um por vez, para que um não veja o endereço do outro. O Action envia às **08h17 e 18h17** (Brasília), dentro da própria rotina de coleta; sem notícia nova, não envia nada. O marco do último envio fica em `data/noticias/ultimo-envio.json`. O primeiro envio cobre as últimas 24 horas.
+`pipeline/noticias/enviar.py` monta um resumo das notícias que apareceram desde o último envio, agrupadas por tema (Transição, Finanças e orçamento, Contratos e obras, Pessoal, Controle e investigação, Governador e Palácio), e manda um e-mail a cada destinatário, um por vez, para que um não veja o endereço do outro. O Action envia às **08h17, 12h17 e 18h17** (Brasília), dentro da própria rotina de coleta; sem notícia nova, não envia nada. O marco do último envio fica em `data/noticias/ultimo-envio.json`. O primeiro envio cobre as últimas 24 horas.
 
 **Quem recebe.** A lista de destinatários fica no segredo `NOTICIAS_DESTINATARIOS` (endereços separados por vírgula ou ponto e vírgula), nunca no repositório, que é público. Para incluir ou retirar alguém, edite esse segredo em Settings, Secrets and variables, Actions. Não há formulário de cadastro: a equipe é pequena e a lista é mantida à mão.
 

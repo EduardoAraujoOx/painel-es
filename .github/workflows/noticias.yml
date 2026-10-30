@@ -14,7 +14,7 @@ on:
         default: false
   schedule:
     # A cada 2 horas, das 06h17 às 20h17 em Brasília (UTC-3). Só há commit e implantação quando surgem notícias novas.
-    # O resumo por e-mail sai nas execuções de 08h17 e 18h17 (11h e 21h UTC).
+    # O resumo por e-mail sai nas execuções de 08h17, 12h17 e 18h17 (11h, 15h e 21h UTC).
     - cron: '17 9,11,13,15,17,19,21,23 * * *'
 
 permissions:
@@ -47,7 +47,7 @@ jobs:
           fi
 
       # Falha no e-mail não impede a publicação das notícias; o último passo deixa a execução vermelha para o aviso chegar.
-      - name: Enviar o resumo por e-mail (08h17 e 18h17, ou teste manual)
+      - name: Enviar o resumo por e-mail (08h17, 12h17 e 18h17, ou teste manual)
         id: enviar
         continue-on-error: true
         env:
@@ -64,7 +64,7 @@ jobs:
           HORA=$(date -u +%H)
           if [ "$EVENTO" = "workflow_dispatch" ] && [ "$TESTE" = "true" ]; then
             python3 -I pipeline/noticias/enviar.py --teste
-          elif [ "$EVENTO" = "schedule" ] && { [ "$HORA" = "11" ] || [ "$HORA" = "21" ]; }; then
+          elif [ "$EVENTO" = "schedule" ] && { [ "$HORA" = "11" ] || [ "$HORA" = "15" ] || [ "$HORA" = "21" ]; }; then
             python3 -I pipeline/noticias/enviar.py
           else
             echo "Fora do horário do resumo: nada a enviar nesta execução."
