@@ -7,8 +7,14 @@ on:
         description: 'Janela de coleta em dias (deixe vazio para o padrão do config.json; use 7 para recompor desde a eleição)'
         required: false
         default: ''
+      enviar_teste:
+        description: 'Enviar agora um resumo de teste (últimas 24 horas) aos destinatários, sem alterar o marco dos envios'
+        type: boolean
+        required: false
+        default: false
   schedule:
     # A cada 2 horas, das 06h17 às 20h17 em Brasília (UTC-3). Só há commit e implantação quando surgem notícias novas.
+    # O resumo por e-mail sai nas execuções de 08h17 e 18h17 (11h e 21h UTC).
     - cron: '17 9,11,13,15,17,19,21,23 * * *'
 
 permissions:
@@ -40,9 +46,33 @@ jobs:
             python3 -I pipeline/noticias/coletar.py
           fi
 
+      # Falha no e-mail não impede a publicação das notícias; o último passo deixa a execução vermelha para o aviso chegar.
+      - name: Enviar o resumo por e-mail (08h17 e 18h17, ou teste manual)
+        id: enviar
+        continue-on-error: true
+        env:
+          EVENTO: ${{ github.event_name }}
+          TESTE: ${{ inputs.enviar_teste }}
+          NOTICIAS_DESTINATARIOS: ${{ secrets.NOTICIAS_DESTINATARIOS }}
+          SMTP_USUARIO: ${{ secrets.SMTP_USUARIO }}
+          SMTP_SENHA: ${{ secrets.SMTP_SENHA }}
+          SMTP_REMETENTE: ${{ secrets.SMTP_REMETENTE }}
+          SMTP_HOST: ${{ vars.SMTP_HOST }}
+          SMTP_PORTA: ${{ vars.SMTP_PORTA }}
+          PAINEL_URL: ${{ vars.PAINEL_URL }}
+        run: |
+          HORA=$(date -u +%H)
+          if [ "$EVENTO" = "workflow_dispatch" ] && [ "$TESTE" = "true" ]; then
+            python3 -I pipeline/noticias/enviar.py --teste
+          elif [ "$EVENTO" = "schedule" ] && { [ "$HORA" = "11" ] || [ "$HORA" = "21" ]; }; then
+            python3 -I pipeline/noticias/enviar.py
+          else
+            echo "Fora do horário do resumo: nada a enviar nesta execução."
+          fi
+
       - name: Gravar no repositório (só data/noticias; o deploy sai do push)
         run: |
-          if git diff --quiet -- data/noticias; then
+          if [ -z "$(git status --porcelain -- data/noticias)" ]; then
             echo "Sem mudanças."; exit 0
           fi
           git config user.name "coleta-noticias"
@@ -54,3 +84,9 @@ jobs:
             sleep $((tentativa * 5))
           done
           echo "Não foi possível enviar a coleta."; exit 1
+
+      - name: Avisar se o e-mail falhou
+        if: steps.enviar.outcome == 'failure'
+        run: |
+          echo "O resumo por e-mail falhou (veja o passo anterior). As notícias foram publicadas normalmente."
+          exit 1

@@ -189,6 +189,18 @@ python3 -I pipeline/noticias/coletar.py --dry-run    # só mostra o resumo
 
 A rotina roda sozinha a cada 2 horas, das 06h17 às 20h17 (Brasília), pelo GitHub Action `.github/workflows/noticias.yml`, que grava só `data/noticias/` no ramo principal e, com isso, dispara a implantação. Se nada mudou, o coletor não altera o arquivo e não há commit nem implantação; por isso "Atualizado em" mostra a última coleta que trouxe novidade. Também pode ser disparada à mão na aba Actions (com o campo "dias" para carga retroativa). Se nenhuma fonte responder, o arquivo não é alterado e a execução falha; se só algumas falharem, a tela indica quantas fontes responderam na última coleta.
 
+### Resumo por e-mail
+
+`pipeline/noticias/enviar.py` monta um resumo das notícias que apareceram desde o último envio, agrupadas por tema (Transição, Finanças e orçamento, Contratos e obras, Pessoal, Controle e investigação, Governador e Palácio), e manda um e-mail a cada destinatário, um por vez, para que um não veja o endereço do outro. O Action envia às **08h17 e 18h17** (Brasília), dentro da própria rotina de coleta; sem notícia nova, não envia nada. O marco do último envio fica em `data/noticias/ultimo-envio.json`. O primeiro envio cobre as últimas 24 horas.
+
+**Quem recebe.** A lista de destinatários fica no segredo `NOTICIAS_DESTINATARIOS` (endereços separados por vírgula ou ponto e vírgula), nunca no repositório, que é público. Para incluir ou retirar alguém, edite esse segredo em Settings, Secrets and variables, Actions. Não há formulário de cadastro: a equipe é pequena e a lista é mantida à mão.
+
+**Como o e-mail sai.** Por SMTP, que funciona com qualquer serviço de e-mail. Segredos: `SMTP_USUARIO` e `SMTP_SENHA` (e, se o remetente for diferente do usuário, `SMTP_REMETENTE`). Variáveis (não secretas, opcionais): `SMTP_HOST` (padrão `smtp.gmail.com`), `SMTP_PORTA` (padrão 587; 465 usa SSL direto) e `PAINEL_URL` (endereço do painel, para o botão "Abrir o painel"). Para usar uma conta do Gmail, ative a verificação em duas etapas e crie uma senha de app em myaccount.google.com/apppasswords; use essa senha, nunca a senha da conta, e revogue-a quando não for mais preciso. Sem `SMTP_USUARIO`, `SMTP_SENHA` ou destinatários, o envio fica desativado e o Action segue verde.
+
+**Teste.** Na aba Actions, rode "Coleta de notícias" com `enviar_teste` marcado: envia na hora o resumo das últimas 24 horas, sem mexer no marco. Localmente, `python3 -I pipeline/noticias/enviar.py --prever resumo.html` grava o HTML sem enviar.
+
+**Se o e-mail falhar**, as notícias são publicadas do mesmo jeito, mas a execução termina vermelha e o GitHub avisa por e-mail. O texto de erro do SMTP não é registrado no log, para não expor o usuário.
+
 ### Limites conhecidos
 
 O Google Notícias devolve no máximo 100 resultados por consulta e **não devolve a mesma lista a cada chamada** (a mesma busca trouxe 100 itens numa execução e 69 na seguinte). Uma coleta isolada é, portanto, incompleta; o coletor acumula o que já viu, e a partir da terceira execução seguida o conjunto estabiliza. É por isso que a coleta é frequente e que a carga retroativa deve ser repetida. Feeds que só expõem as últimas 10 a 30 matérias (Folha Vitória, ES Hoje) podem perder itens em dias de muito volume; as buscas por site no Google compensam em parte. O XML dos feeds é tratado como não confiável (recusa declarações de entidades, limita o tamanho) e os links só viram `href` quando são http ou https.
