@@ -196,6 +196,8 @@
       { mod: 'fundos', rotulo: 'Raio-x dos fundos' }] },
     { id: 'transicao', rotulo: 'Transição', itens: [
       { mod: 'lacunas', rotulo: 'Informações a solicitar' }] },
+    { id: 'noticias', rotulo: 'Notícias', itens: [
+      { mod: 'noticias', rotulo: 'Manchetes' }] },
   ];
   PF.PAINEIS = PAINEIS;
   const selos = {};

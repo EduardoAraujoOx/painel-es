@@ -1,0 +1,56 @@
+name: Coleta de notícias (a cada 2 horas)
+
+on:
+  workflow_dispatch:
+    inputs:
+      dias:
+        description: 'Janela de coleta em dias (deixe vazio para o padrão do config.json; use 7 para recompor desde a eleição)'
+        required: false
+        default: ''
+  schedule:
+    # A cada 2 horas, das 06h17 às 20h17 em Brasília (UTC-3). Só há commit e implantação quando surgem notícias novas.
+    - cron: '17 9,11,13,15,17,19,21,23 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: coleta-noticias
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Coletar as notícias
+        env:
+          DIAS: ${{ inputs.dias }}
+        run: |
+          if [ -n "$DIAS" ]; then
+            [[ "$DIAS" =~ ^[0-9]{1,3}$ ]] || { echo "dias deve ser um número"; exit 1; }
+            python3 -I pipeline/noticias/coletar.py --dias "$DIAS"
+          else
+            python3 -I pipeline/noticias/coletar.py
+          fi
+
+      - name: Gravar no repositório (só data/noticias; o deploy sai do push)
+        run: |
+          if git diff --quiet -- data/noticias; then
+            echo "Sem mudanças."; exit 0
+          fi
+          git config user.name "coleta-noticias"
+          git config user.email "coleta-noticias@users.noreply.github.com"
+          git add data/noticias
+          git commit -m "dados: notícias de $(date -u +%F)"
+          for tentativa in 1 2 3; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((tentativa * 5))
+          done
+          echo "Não foi possível enviar a coleta."; exit 1
