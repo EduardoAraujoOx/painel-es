@@ -158,7 +158,10 @@ class Resumo(unittest.TestCase):
         msgs = self.rodar(self.ENV)
         self.assertEqual(sorted(m["To"] for m in msgs), ["B@exemplo.com", "a@exemplo.com"])
         self.assertEqual({p.get_content_type() for p in msgs[0].iter_parts()}, {"text/plain", "text/html"})
-        self.assertIn("3 notícias novas", msgs[0]["Subject"])  # a de 30 horas atrás fica de fora no primeiro envio (24 h)
+        self.assertIn("3 notícias novas", msgs[0]["Subject"])
+        corpo = msgs[0].get_body(("html",)).get_content()
+        self.assertIn("Abrir o painel", corpo)  # sem PAINEL_URL, vale o endereço padrão
+        self.assertIn("https://painel-es.vercel.app", corpo)  # a de 30 horas atrás fica de fora no primeiro envio (24 h)
         self.assertTrue(enviar.MARCO.exists())
 
     def test_segundo_envio_sem_novidade_nao_manda_nada(self):

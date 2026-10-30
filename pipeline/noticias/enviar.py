@@ -10,7 +10,7 @@ Configuração por variáveis de ambiente (segredos do GitHub no Action; nada di
   NOTICIAS_DESTINATARIOS  endereços separados por vírgula ou ponto e vírgula
   SMTP_USUARIO, SMTP_SENHA, SMTP_HOST (padrão smtp.gmail.com), SMTP_PORTA (padrão 587)
   SMTP_REMETENTE          opcional; padrão é o próprio SMTP_USUARIO
-  PAINEL_URL              opcional; endereço do painel, para o link "Abrir o painel"
+  PAINEL_URL              opcional; endereço do painel no botão "Abrir o painel" (padrão: https://painel-es.vercel.app)
 Sem SMTP_USUARIO, SMTP_SENHA ou destinatários, o envio fica desativado e o script sai sem erro.
 
 Uso (sem dependências externas):
@@ -39,6 +39,7 @@ BRASILIA = timezone(timedelta(hours=-3))  # sem horário de verão desde 2019
 ORDEM = ["transicao", "financas", "contratos", "pessoal", "controle", "governador"]
 MAX_ITENS = 40
 COR = "#b3365f"
+PAINEL_PADRAO = "https://painel-es.vercel.app"
 
 
 def agora():
@@ -195,7 +196,7 @@ def main():
     else:
         desde_txt = "desde o último resumo"
         itens = selecionar(dados["itens"], marco)
-    painel = os.environ.get("PAINEL_URL", "").strip()
+    painel = os.environ.get("PAINEL_URL", "").strip() or PAINEL_PADRAO
     corpo_html, corpo_txt = montar_conteudo(dados, itens, ref, painel if link_seguro(painel) else "", desde_txt) if itens else ("", "")
 
     if args.prever:
