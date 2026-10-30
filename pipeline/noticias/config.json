@@ -1,5 +1,5 @@
 {
-  "_nota": "Configuração do coletor de notícias (coletar.py). Os termos são comparados sem acento e sem diferença de maiúsculas; um asterisco (nomea*) casa qualquer continuação da palavra. Uma notícia entra se o título casar com algum termo de contexto_es, ou se casar com algum tema E citar um localizador (ES, capixaba...). Pessoas: confira se a lista abaixo reflete o governador em exercício e o governador eleito. Edite à vontade: a próxima coleta recalcula os temas de tudo o que já foi guardado. O campo desde (AAAA-MM-DD, horário de Brasília) é o início do recorte: nada anterior a essa data é guardado.",
+  "_nota": "Configuração do coletor de notícias (coletar.py). Os termos são comparados sem acento e sem diferença de maiúsculas; um asterisco (nomea*) casa qualquer continuação da palavra. Uma notícia entra se o título casar com algum termo de contexto_es, ou se casar com algum tema E citar um localizador (ES, capixaba...). Pessoas: confira se a lista abaixo reflete o governador em exercício e o governador eleito. Edite à vontade: a próxima coleta recalcula os temas de tudo o que já foi guardado. O campo desde (AAAA-MM-DD, horário de Brasília) é o início do recorte: nada anterior a essa data é guardado. Tema restricao: sinaliza suspensões, cortes e atrasos de pagamento; é o primeiro do resumo por e-mail.",
   "janela_dias": 2,
   "consultas_google": [
     "\"governo do Espírito Santo\"",
@@ -12,7 +12,11 @@
     "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
     "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
     "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
-    "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)"
+    "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
+    "(\"insuficiência de recursos\" OR \"restrições orçamentárias\" OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) \"governo do ES\"",
+    "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
+    "(atraso OR atrasados) pagamento fornecedores \"governo do ES\" OR \"Governo do Estado\" Espírito Santo",
+    "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)"
   ],
   "feeds": [
     {
@@ -34,6 +38,11 @@
       "nome": "ES Hoje",
       "url": "https://eshoje.com.br/feed/",
       "paginas": 3
+    },
+    {
+      "nome": "G1 Espírito Santo",
+      "url": "https://g1.globo.com/rss/g1/es/espirito-santo/",
+      "paginas": 1
     }
   ],
   "contexto_es": [
@@ -93,7 +102,41 @@
     "governadora eleita",
     "vice-governador do es",
     "pazolini",
-    "ferraço"
+    "ferraço",
+    "aderes",
+    "apees",
+    "cbmes",
+    "ceasa",
+    "es- previdencia",
+    "esesp",
+    "fames",
+    "fapes",
+    "iases",
+    "ijsn",
+    "ipem-es",
+    "jucees",
+    "pces",
+    "pcies",
+    "pmes",
+    "ppes",
+    "procon",
+    "secont",
+    "secti",
+    "sedes",
+    "sedh",
+    "sejus",
+    "serd",
+    "sesm",
+    "setur",
+    "secretaria de estado da justiça",
+    "secretaria da justiça",
+    "polícia penal",
+    "polícia militar do es",
+    "polícia civil do es",
+    "corpo de bombeiros do es",
+    "defesa social",
+    "câmeras corporais",
+    "rastreamento de viaturas"
   ],
   "excluir": [
     "horóscopo",
@@ -110,6 +153,45 @@
     "dispensa eletrônica"
   ],
   "temas": {
+    "restricao": {
+      "rotulo": "Restrições e cortes",
+      "termos": [
+        "suspende contrato*",
+        "suspensão de contrato*",
+        "contratos suspensos",
+        "suspende serviço*",
+        "suspensão de serviço*",
+        "suspende uso",
+        "suspende pagamento*",
+        "insuficiência de recursos",
+        "falta de recursos",
+        "restrições orçamentárias",
+        "restrição orçamentária",
+        "restrição financeira",
+        "restrições financeiras",
+        "corte de gastos",
+        "cortes de gastos",
+        "corta gastos",
+        "contingenciamento",
+        "bloqueio de despesas",
+        "limitação de empenho",
+        "congela gastos",
+        "congelamento",
+        "atraso nos pagamentos",
+        "pagamentos atrasados",
+        "fornecedores sem receber",
+        "dívida com fornecedores",
+        "calote",
+        "atraso em pagamentos",
+        "rescinde contrato*",
+        "cancela contrato*",
+        "paralisa obra*",
+        "obras paralisadas",
+        "paralisação de obra*",
+        "interrompe serviço*",
+        "interrompe contrato*"
+      ]
+    },
     "transicao": {
       "rotulo": "Transição",
       "termos": [
@@ -317,7 +399,8 @@
       "transicao",
       "financas",
       "contratos",
-      "pessoal"
+      "pessoal",
+      "restricao"
     ]
   }
 }

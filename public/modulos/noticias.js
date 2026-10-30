@@ -26,7 +26,7 @@
   };
   // O link vem de feed de terceiros: só http(s) vira href.
   const hrefSeguro = (u) => (/^https?:\/\//i.test(u) ? u : null);
-  const seloTema = (t) => el('span', { class: 'selo ' + (t === 'transicao' ? 'n-m' : 'n-i') }, el('b', {}, dados.temas[t] || t));
+  const seloTema = (t) => el('span', { class: 'selo ' + (t === 'restricao' ? 'n-a' : t === 'transicao' ? 'n-m' : 'n-i') }, el('b', {}, dados.temas[t] || t));
   const temFiltro = () => !!(filtros.tema || filtros.busca.trim());
 
   function filtrar() {

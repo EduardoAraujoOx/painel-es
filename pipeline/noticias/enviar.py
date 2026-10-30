@@ -36,7 +36,7 @@ RAIZ = Path(__file__).resolve().parents[2]
 DADOS = RAIZ / "data" / "noticias" / "index.json"
 MARCO = RAIZ / "data" / "noticias" / "ultimo-envio.json"
 BRASILIA = timezone(timedelta(hours=-3))  # sem horário de verão desde 2019
-ORDEM = ["transicao", "financas", "contratos", "pessoal", "controle", "governador"]
+ORDEM = ["restricao", "transicao", "financas", "contratos", "pessoal", "controle", "governador"]
 MAX_ITENS = 40
 COR = "#b3365f"
 PAINEL_PADRAO = "https://painel-es.vercel.app"
