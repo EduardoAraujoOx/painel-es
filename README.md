@@ -6,7 +6,7 @@ Painel de acesso restrito para diagnósticos fiscais e de pessoal do Poder Execu
 |---|---|---|
 | `cargos` | Servidores e cargos de confiança: quadro de servidores do Executivo, cargos em comissão e funções gratificadas, custo mensal, tempo na função e a ficha da folha de cada pessoa | em operação |
 | `organograma` | Árvore de unidades de um órgão com as pessoas de cada uma, a condição (sem vínculo efetivo, servidor de carreira, função gratificada) e a remuneração somando carreira e cargo | em operação, com a estrutura oficial de 55 órgãos |
-| `noticias` | Manchetes da imprensa capixaba sobre o governo do Estado e a transição, coletadas todo dia, com tema por regras de palavras (painel Transição) | em operação |
+| `noticias` | Manchetes da imprensa capixaba sobre o governo do Estado e a transição, coletadas todo dia, com tema por regras de palavras (painel próprio, Notícias) | em operação |
 
 ## Módulo `cargos`
 
@@ -167,7 +167,7 @@ python3 -I pipeline/lacunas/montar.py
 
 ## Módulo `noticias`
 
-Tela do painel Transição que reúne, todo dia, as manchetes da imprensa capixaba sobre o governo do Estado e a transição: o que repercute a participação do governador, o que sinaliza pressão financeira (remanejamentos, créditos, dívida, caixa), contratos e obras, nomeações e exonerações, e a atuação dos órgãos de controle. Mostra título, veículo, hora e tema, com filtros por período, tema, veículo e busca no título, e leva à matéria no site do veículo.
+Painel próprio (Notícias), na chave do topo, que reúne todo dia as manchetes da imprensa capixaba sobre o governo do Estado e a transição: o que repercute a participação do governador, o que sinaliza pressão financeira (remanejamentos, créditos, dívida, caixa), contratos e obras, nomeações e exonerações, e a atuação dos órgãos de controle. Mostra título, veículo, hora e tema, com filtros por período, tema, veículo e busca no título, e leva à matéria no site do veículo.
 
 ### Fontes e o que é guardado
 
@@ -213,7 +213,7 @@ Teste local: `PAINEL_SENHA=x PAINEL_SEGREDO=<32+ caracteres> node dev-server.js 
 
 ## Navegação
 
-O site tem uma chave de painéis no topo (Pessoal, Contratos, Fundos, Transição). Cada painel tem sua cor e, quando reúne mais de uma tela, um menu de telas logo abaixo do cabeçalho; ao trocar de painel o site volta à última tela vista nele, e ao reabrir o endereço sem destino retoma de onde se parou. Os painéis ficam na lista `PAINEIS` de `public/core.js`: cada item aponta para um módulo e, se quiser, para uma tela dele (`sub`), com `casa(resto)` para marcar quando está ativo e `selo` para um contador. A cor de cada painel (`--ac-pessoal`, `--ac-contratos`, `--ac-fundos`, `--ac-transicao`) está em `public/style.css`. Um módulo registrado e não listado em `PAINEIS` aparece num painel "Outros". A marca é só tipográfica, sem brasão, para não sugerir publicação oficial; o título usa a fonte Barlow Condensed (licença SIL OFL), hospedada em `public/fontes/` para o site não depender de servidores externos.
+O site tem uma chave de painéis no topo (Pessoal, Contratos, Fundos, Transição, Notícias). Cada painel tem sua cor e, quando reúne mais de uma tela, um menu de telas logo abaixo do cabeçalho; ao trocar de painel o site volta à última tela vista nele, e ao reabrir o endereço sem destino retoma de onde se parou. Os painéis ficam na lista `PAINEIS` de `public/core.js`: cada item aponta para um módulo e, se quiser, para uma tela dele (`sub`), com `casa(resto)` para marcar quando está ativo e `selo` para um contador. A cor de cada painel (`--ac-pessoal`, `--ac-contratos`, `--ac-fundos`, `--ac-transicao`, `--ac-noticias`) está em `public/style.css`. Um módulo registrado e não listado em `PAINEIS` aparece num painel "Outros". A marca é só tipográfica, sem brasão, para não sugerir publicação oficial; o título usa a fonte Barlow Condensed (licença SIL OFL), hospedada em `public/fontes/` para o site não depender de servidores externos.
 
 ## Como acrescentar um módulo
 
