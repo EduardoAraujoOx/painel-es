@@ -1,0 +1,3315 @@
+{
+ "ref": "2026-10-30",
+ "gerado_em": "2026-10-30T15:35:49Z",
+ "janela_dias": 2,
+ "retencao_dias": 120,
+ "temas": {
+  "transicao": "Transição",
+  "governador": "Governador e Palácio",
+  "financas": "Finanças e orçamento",
+  "contratos": "Contratos e obras",
+  "pessoal": "Pessoal",
+  "controle": "Controle e investigação"
+ },
+ "fontes": [
+  {
+   "fonte": "Google Notícias",
+   "consulta": "\"governo do Espírito Santo\"",
+   "ok": true,
+   "lidos": 24,
+   "aceitos": 17
+  },
+  {
+   "fonte": "Google Notícias",
+   "consulta": "governador \"Espírito Santo\"",
+   "ok": true,
+   "lidos": 47,
+   "aceitos": 38
+  },
+  {
+   "fonte": "Google Notícias",
+   "consulta": "transição \"governo do ES\"",
+   "ok": true,
+   "lidos": 10,
+   "aceitos": 9
+  },
+  {
+   "fonte": "Google Notícias",
+   "consulta": "Pazolini governador eleito transição",
+   "ok": true,
+   "lidos": 16,
+   "aceitos": 16
+  },
+  {
+   "fonte": "Google Notícias",
+   "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
+   "ok": true,
+   "lidos": 17,
+   "aceitos": 6
+  },
+  {
+   "fonte": "Google Notícias",
+   "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
+   "ok": true,
+   "lidos": 7,
+   "aceitos": 2
+  },
+  {
+   "fonte": "Google Notícias",
+   "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
+   "ok": true,
+   "lidos": 9,
+   "aceitos": 4
+  },
+  {
+   "fonte": "Google Notícias",
+   "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
+   "ok": true,
+   "lidos": 10,
+   "aceitos": 5
+  },
+  {
+   "fonte": "Google Notícias",
+   "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
+   "ok": true,
+   "lidos": 11,
+   "aceitos": 2
+  },
+  {
+   "fonte": "Google Notícias",
+   "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
+   "ok": true,
+   "lidos": 86,
+   "aceitos": 10
+  },
+  {
+   "fonte": "Google Notícias",
+   "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
+   "ok": true,
+   "lidos": 84,
+   "aceitos": 2
+  },
+  {
+   "fonte": "A Gazeta",
+   "consulta": "https://www.agazeta.com.br/rss",
+   "ok": true,
+   "lidos": 100,
+   "aceitos": 2
+  },
+  {
+   "fonte": "Folha Vitória",
+   "consulta": "https://www.folhavitoria.com.br/feed/",
+   "ok": true,
+   "lidos": 10,
+   "aceitos": 1
+  },
+  {
+   "fonte": "Folha Vitória",
+   "consulta": "https://www.folhavitoria.com.br/politica/feed/",
+   "ok": true,
+   "lidos": 10,
+   "aceitos": 3
+  },
+  {
+   "fonte": "ES Hoje",
+   "consulta": "https://eshoje.com.br/feed/",
+   "ok": true,
+   "lidos": 30,
+   "aceitos": 1
+  }
+ ],
+ "novos_na_coleta": 13,
+ "itens": [
+  {
+   "id": "efd66b9db1a6",
+   "titulo": "Empreendedores de de Vitória, Serra e Linhares lideram financiamentos do Bandes",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/empreendedores-de-de-vitoria-serra-e-linhares-lideram-financiamentos-do-bandes/",
+   "data": "2026-10-30T14:23:26Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": []
+  },
+  {
+   "id": "f053f80bdcd9",
+   "titulo": "Pazolini escolhe Erick Musso para coordenar transição de governo no ES",
+   "veiculo": "Republicanos 10",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORllPNzk1ekhTbU1vNDBVMWE5bHBsanFBeFJfRWVFam9Dd2tyQzExLUJOSkxQWjRnTnZCYW9ucTFGT2tfQTUtQTZxcGx5STQ2TjFjRGdlNW1kS1pjNzc5a1ZmQk5IR2dxZEhGNmJyUnJhRWlUd0FMTmtBWW1LVlByOXZZenlWaUk4TXZnVVJqeVU2eVFwbzFFM3VNcFBxVzhuaU12MTVVUXc?oc=5",
+   "data": "2026-10-30T14:03:58Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "f79754743e4e",
+   "titulo": "Mãe denuncia descaso com filho de 5 anos que sofre com objeto preso no ouvido no ES",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNc3ZMQnZXMjJ3dE9XT2NUaXZiamJtNTZIQTZPbWJPRFp1eUR5eHhPNVpHVDdOVktfZkh6MkJIaGZqVTJUUXFMbmhlRVhraTZTUjU3N3g3Nm1YSTJKTW9TN3FvZHI3WUVrTUI5dG5PcmlvWUR4MWV2S3Nsb3FfZ3dxaTNTb2o?oc=5",
+   "data": "2026-10-30T13:45:44Z",
+   "coletado_em": "2026-10-30T15:35:49Z",
+   "outras": [],
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "abd16043965d",
+   "titulo": "Governador eleito Pazolini se reúne com Tribunal de Contas e defende fiscalização dos recursos públicos no ES",
+   "veiculo": "ES Fala",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRmhYUzZmTFJoWGRiSjdLRUJUZ3dpQ2JfYlE5bVZQUXZGVUFOdXlLYXI3MHA5QXYzV2VTa2lTRkpObGtEY1RTcFRRLWFpdmpCSVpPTUdrTG0tZ3ZETUpTQlhmUmRIX2dNdG9tM21xTDhpdEYzN19FOXZHYzNKRzZ1Ry1HNnJ4a1BvSHdQSHF1Q3lRWFc1dFZNSFdJODBiZ2c5cXFlY1YxQUlaZw?oc=5",
+   "data": "2026-10-30T13:30:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador",
+    "controle"
+   ]
+  },
+  {
+   "id": "bca4985db0be",
+   "titulo": "Gasolina, diesel e gás terão aumento de imposto no ES em 2027",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNREdQdkJ6UEhKSDBuRGdLRXZPZGhXQmprcHd2bkxyRmgwX0pPVXJXWFQwTVU3RzhFOFJRNWItb1J6Z0NxYkRTbTFDdmI5WDM3TUdGbHNqZU1LaWpzU21KNlN1d3M2enhvWWk1bVVnS2M4a3Fkc1N3bWtydUR2NGtDcW5FX0l0QWZITm5z?oc=5",
+   "data": "2026-10-30T12:36:11Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "bc565ef8e207",
+   "titulo": "Transição de Pazolini solicita dados de dez áreas do governo do ES",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/10/equipe-transicao-pazolini/",
+   "data": "2026-10-30T12:10:24Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "4b47779193e6",
+   "titulo": "CNH Social 2026: Detran divulga lista de suplentes na terça-feira (3); veja como consultar",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxObXV6ZmF4U2FUN3dWX2JHV3VETVFoWF93bmFQdnl5R01GNmhoQWJuNmdOMXA4bV9aRmJILU1vVEd4cWM1d05IczVtMDE4VHBYdEIxZWRkZ2dOUHA3clJUR3pLQVV6NkxZZTlPbWJ4blZnOFNFb0U5OGQya21YRGtaNFRjd2pfOGVwSW8xelpmVXI5MTh6bHhyNnBQb0lUdGl3YjVQNW5JR1JzZFc1R1E?oc=5",
+   "data": "2026-10-30T11:51:02Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": []
+  },
+  {
+   "id": "699b04333780",
+   "titulo": "Quem são os homens escolhidos para organizar a transição no Governo do ES",
+   "veiculo": "diaadiaes.com.br",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdFlSR3NibjhPOUpUUEJ0VnR5Q1JUUEdFQWJmOTJPQ1N5MHhJbGpDS0lIS0dtcjlTMjBSdnRzdjVvQUJ5WHFLcVJXLWNaNzQxWXRTUHo1M0l5UVh6Q1hJRUlWSzVpU1ZRSmRZVF9HaXR2ZkpOQVhWdWN4SHFYcXlKODNpQ3VKYktMYmZKR1RUZjM1MTNlWDhrLVhQbjNNSXhf?oc=5",
+   "data": "2026-10-30T11:40:46Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "3eea6148562b",
+   "titulo": "Equipe de transição de Pazolini inicia trabalhos com envio de 10 ofícios ao Governo do Estado",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQYm1SOFNQVGgzT3ZuZzc3em1vMi1mV0xQYlRHNmhrLTVZcndwVVZ3aXZPOW9ob0FKRjJlZFczTklnZ3NpSHlIRUJwSV9yUUJRSTA2WFVxMmpVdUk1V0NVYUd3WEQ4QmJMazF0QnA2RjFkMF9RQ3NXUVVsZHZCaTlBWXJEY1lfczVSNThEbnU0NmlDN0RYN3pCREttbXNRREtxekhsMkIyUjl0Y0N6cS02SDdKMkFZeXRVVkE?oc=5",
+   "data": "2026-10-30T11:26:18Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "c624dc5e3ac0",
+   "titulo": "Detran-ES divulga suplentes no programa CNH Social na próxima terça (3)",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/agora/detran-es-divulga-suplentes-no-programa-cnh-social-na-proxima-terca-3-1026",
+   "data": "2026-10-30T11:21:26Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": []
+  },
+  {
+   "id": "1908fdfd38f4",
+   "titulo": "BR-262, BR-259 e EF-118: os desafios logísticos do próximo governador do ES",
+   "veiculo": "Folha Vitória",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQM1FmbDlWY21rVnE5TGEzbHhCWE82QUFrZGNMQm1MaFZfenZ5SlQtNWFxQ0RMM1hXQU5TR1U2cXNwTFBsYzY3OURaS2txaXVuX19hVjl0Ty1iNGJyaVI2NVRDeWtNV29abkNOZHpYZWFIaF9lOEFMT0NNcFl4bXhONmZySVhGUzFUOUZXT1B4TWNEUDdGRWU0RUNNREM3RnhzQ1VzcHBORDhHY2RFcXlWbTA2bVdadw?oc=5",
+   "data": "2026-10-30T09:01:00Z",
+   "coletado_em": "2026-10-30T15:35:49Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "ac3c708c5715",
+   "titulo": "Os secretários da Prefeitura de Vitória cotados para o governo de Pazolini",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/os-secretarios-da-prefeitura-de-vitoria-cotados-para-o-governo-de-pazolini/",
+   "data": "2026-10-30T09:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "5fd04926d770",
+   "titulo": "Equipe de Pazolini avalia contratar auditoria para analisar situação do ES",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/abdo-filho/equipe-de-pazolini-avalia-contratar-auditoria-para-analisar-situacao-do-es-1026",
+   "data": "2026-10-30T06:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador",
+    "controle"
+   ]
+  },
+  {
+   "id": "838052fddc0f",
+   "titulo": "Após MPES, Assembleia e Tribunal de Contas, TJES é última parada de governador eleito",
+   "veiculo": "Prensa Mercosur",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOSHhObUpnLVJBdk5lSTVsb1lDelpVZ1FaN0VPeGdldVN0OF9aVmRPMzFVaDQxTXV6dXRjbGZmSllNZkhCVkxGdGpKQ3FXNTAtZmRJRFA4SFlISTlORHFLNzF4NVVsa1FzZUpyN2FQQkhtcUp5U0stdXhwbkd1RFhWNFB5U0JoRjBLaUMwY3RiTmNCRWs1bkMxSHdTbG5yMG5QTGpjdUJydmM2bllGT2VIS0I0bGNGdEhLc1ptTXFGaw?oc=5",
+   "data": "2026-10-30T03:40:59Z",
+   "coletado_em": "2026-10-30T15:35:49Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "controle"
+   ]
+  },
+  {
+   "id": "6a5c9f758b9d",
+   "titulo": "Pazolini anuncia secretária de Educação de Vitória para transição",
+   "veiculo": "Prensa Mercosur",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZzhnbzRKY2VNTEdFR3hBclowbWVSTnhGSHNzNEdRMlRMQzBTS3NLSWIyVTVHeFJacjFEU2ZUNldZbnlQWndDeE1KbEJrSnR4UndjT1Azak9CMjk3bmlkakhmMmNDQ1dOZ3FlaW5uQnFPQzJnaFRsUXQ3dGJvNHpJOWItUTRydXQ0aGthRVJXYjYyTEpUa1FsRnlpcXVvamJ3Qm94aTNiVQ?oc=5",
+   "data": "2026-10-30T03:40:59Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "963205b46658",
+   "titulo": "Detran prorroga validade de CNH vencida em 2026 e adia renovação para motoristas",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQM0NoV0wzenlnNXRtcV9nVUNVMzZaWE84bE9fNENqYUtRWDRHOGhLRkQ1S01KN3RHRUNrRHpxYmFvVVpwOVNlNTRJSUNlYjFMT3paOTNnaE5rQV90cDJjMDdQRm9nM0E3WU9pblM0TlpFakhzdkpjUE5hTHJpU3M1S3Z0ZUpNV0w4clhSYjE1YXZNdFJDQVlhZnJyRGlPUk85aDEzUzZn?oc=5",
+   "data": "2026-10-29T23:02:45Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": []
+  },
+  {
+   "id": "b0f09126fc69",
+   "titulo": "Campanhas de Ricardo e Pazolini entraram com mais de 200 ações na Justiça",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/campanhas-de-ricardo-e-pazolini-entraram-com-mais-de-200-acoes-na-justica/",
+   "data": "2026-10-29T22:28:25Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "ca98b1f0e26e",
+   "titulo": "CNJ manda retirar 11 cartórios de concurso público no Espírito Santo",
+   "veiculo": "Folha Vitória",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNNDVOSmh0OHFiTXN6UDBqcGxIczRMRlB1R1Nlb0t4UG9ZbExzWUJ0eE8yeGo3Y2FTOGpFeFJ3cHlsOUUwRGpkQWM2SXEtWm9EZ3lNdno2SGtRV0E3SlhYUWdJanZOY0NoZ08tVnVfVldBZnBBWVlTZjRYVEIyOGlDXzBMMVR0QWNqVGM4NnBDa2t4SWJyb19aUDF4WmU2ODAtLVhlWDFGWHh5X2dhMjA4?oc=5",
+   "data": "2026-10-29T21:52:47Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "ef24466a77e6",
+   "titulo": "Concurso do Idaf oferece salários de até R$ 8.477",
+   "veiculo": "ES Brasil",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1fQ2RjcWRzZGEzQVB6UnFxcDllVUkxSi1aUS1YRURrSU1EemhFNWVYbTNqLXlmVldROU1tZkpOMG81SnpTYW5YeDc0eW1tSGNpVFNoRG9yQWtBLXl1aExBakdjMEpvZFduX3AyaTkwaTg2VkU?oc=5",
+   "data": "2026-10-29T21:25:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "d80abe53b57c",
+   "titulo": "Governo Pazolini vai herdar gestão com 32 obras paralisadas pelo Espírito Santo",
+   "veiculo": "ES Hoje",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE55UW9OUTZMRlVWZlV3dEdULV9JSVZhMEZUb1p6TEw1WUlGeFpMR0VONndPaWRsaVI2NjEwUFdKdUFCY1gtRnNLZzl5YmQzNmhHb1NyX2RiUl9VYld0QkFyanNYQUJ4MHNJOHJDQWtHUjhjOHM?oc=5",
+   "data": "2026-10-29T20:53:08Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador",
+    "contratos"
+   ]
+  },
+  {
+   "id": "567d1fd5459e",
+   "titulo": "Pazolini anuncia Juliana Rohsner para integrar equipe de transição do Governo do Estado",
+   "veiculo": "Aqui Notícias",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVzFaQ0wtM0MwNFBwZU96am1ETFhXaXkwWjlhc0VQaTFHcGI1QjdUZzE5X0ZicV85LV83Y1VoRWxJbVRRRTI0cHI5X2doaEt3bjAwWnhFemE4Wl9pMXpkam1XQU9IbDhzMHhEYjNXbFNTMHhwMFZFNHlEdTBKX0lHOEJYODFzbzN4MUdCSmltclFPSUtRMHdBOHNvN0MtNUV4ZXIzazVhNGpRRDluNUc0Y1NDekd0TFJZZk5tV213?oc=5",
+   "data": "2026-10-29T20:42:52Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "0f0a4325c4d4",
+   "titulo": "Governador eleito faz visita institucional ao TJES",
+   "veiculo": "ES Hoje",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5Ba1UzX1hORDRUOGpnS1VIUU1xSGFTSEpwZE9tYUh4dk1xSHFwMUk2bEx4c2h2WnZudFJydzlTQ1h5c0xFMG9udmNVbVRUb1VpQVNsQnIxUUU1ZkpDbDY1c2ZNZDVIT1RoeXY2VURVNA?oc=5",
+   "data": "2026-10-29T19:54:44Z",
+   "coletado_em": "2026-10-30T15:35:49Z",
+   "outras": [],
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "ea4775f55ee1",
+   "titulo": "MPES apura consultoria de R$ 8,6 milhões para concessão de parques estaduais",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNU0E1ejJWVkc5R3RJanJ4RU8wQzFUMTdlcnJJaXJIUzEyUTZGQWIwWkE2TkNQNkJjdVVkOGc3X0ZkM1BCNnY2WE9iWXJJRVhfZ19UdzZVX0V3VmVyNHpyWU9SRTRfWlYwSE4wcFVwcWwxRTRSTDBrNWdSME5qQ1RENVA5c09WbTBnUFp6ek0xY19FNWdLeVJ0NkhBejAxMUZMMnhsUzU4SkVUQ0lfWmVFd0tMaEhaSHhZSkxua0hn?oc=5",
+   "data": "2026-10-29T19:41:37Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "contratos",
+    "controle"
+   ]
+  },
+  {
+   "id": "17aebae722ca",
+   "titulo": "Pazolini visita Tribunal de Justiça e reforça compromisso com o diálogo e o respeito entre os Poderes",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPejl0T0N5UW9UMTNOcVZHZWYzdmRGMndqTm5kN3Uzd2swdVpZZ01mMzJVSldkNTJQeGQ0bk0tQndkRlBHUng2ZVBmTG8wYzFTTHFPQy1zbDl4NHVWcktIalFUaWQ3Nzg5cU4zdE1DNTRvTXBmckxqRDN0WTNEdWNfQVVhOHlJeHZLS3ZFLU1CRFpkeG5TeFM3cnYzTFdLNjFFdk4yaHdacHJlSkxGWWZaeWxYUEF6Q0luWlQyNkx3WUpQd0hR?oc=5",
+   "data": "2026-10-29T19:25:38Z",
+   "coletado_em": "2026-10-30T15:35:49Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "3a59a9c77f17",
+   "titulo": "Espírito Santo terá aumento do ICMS sobre gasolina, diesel gás e gás de cozinha a partir de 2027",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNNGZZVWJ1ZXJodTAtV0dBdWtocVQwYXJnNWhHRVJrLXZaQlhZaXZ6QU1LWExRZnFsSVJPSlY3QWpMWmdyYnhpMk82WDVfREhkYnE2R0UzQXIyMU5HdE9zY2NrdmowUjVjN0tpYXpMM01uLVJXNXFtZF81VFZRVGVjVnJZWmxXekVBYURzazJIODhJYS0tclY3N1gtUFBpaHlwZXNKR1BqNW1iNnh4OWRWWFozb2tCeTBNWHc?oc=5",
+   "data": "2026-10-29T19:14:56Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "927050cd4b42",
+   "titulo": "Falta de mão de obra e reforma tributária exigem atenção do próximo governo do ES, diz Fecomércio",
+   "veiculo": "Folha Vitória",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOeFozelhhc3Z5dF9iUGE1RDZ2bk1ac0VaVHlWVmN1ZFgyUnJBZ0FMXy03V0s1Ti1iOHQ5Q2JKeWZnQnB3SkxySHhSNS1nUXhLb19EbkNCRmhPbnJOUFBWYXd2eWthYkY1NXI4S2Fhd0J5Z09qM2s1anFYUG41U3JpR1BfOGdqOVZVTWl0TWtQMW9sVm5TUTlZZ2ZhV3d3RU9ma3VzalpYR3pMSGJNcHFxSVRwVmFYd1hmQnNhMVd2S3dKdjNvb3lPQkhRY1cyV2puc3NXNw?oc=5",
+   "data": "2026-10-29T19:13:37Z",
+   "coletado_em": "2026-10-30T15:35:49Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador",
+    "financas",
+    "contratos"
+   ]
+  },
+  {
+   "id": "f9844755474d",
+   "titulo": "Veja quem vai coordenar a transição do Governo do ES",
+   "veiculo": "ES Brasil",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5hSUxqNXNhbGJOUXl3VnEzdkhYOVhuNXNaRnAxdjg1emNmYTJYN0lIbmZjYjEtR0hvMFR0RUs3aEV0RkdWR3QxdU1Namc1Q29oXzYta29LU2twbmFTc3NLcDFsXzFNYWxEaFNGMw?oc=5",
+   "data": "2026-10-29T18:20:51Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "c9fbf4dc575a",
+   "titulo": "Governos eleito e atual definem equipes e iniciam processo de transição no ES",
+   "veiculo": "A Notícia do Caparaó",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOeGxsMXN5U2hLemlZOWpueVVOZVFfYVFSbzVJSDA4VVFYaEFRc1pOTkdPMk55OTZwaVhQUFlqZHVPTks5RlBSYmNYWTFGaVZFOU1EMDYzVVVIc3AwbDdpWWgwei02QU5PLTR3UHJnb3BzaWF3NG9HelAwVi1NMjJzMS1Kamk2Ri1ScjFyVjlldGlhZnpoaThTVGRMSXp6ZmxmdUN2MjRuT2lvaDBZNUE0QmRybWtRR3NQVGozWA?oc=5",
+   "data": "2026-10-29T17:27:47Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "904b2295b5cc",
+   "titulo": "MPES recebe Pazolini e destaca importância da cooperação com o futuro governo do ES",
+   "veiculo": "Aqui Notícias",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSVo4dk51b1k3Zk90NDVHOVBaTld1YkZTLVVnY19lZ0R0eGhoeFBYMXRkUUJyN2g1dDVUbmdDOHk4RVBMYkh3ZlJOenBwRG04YlZzbUo5dDJDbXpCRjYwMXBCZGJrVk9WeG9SbnM3TlNuR3puczVxX3pWWU1vM1NfOHpkY19rVHFxVGZWT0ZuOTZoM1ljMEljTmpsa21fV0d3ck1XamI2c2FDS1lyV3JHekk5VzBjbTh1?oc=5",
+   "data": "2026-10-29T17:14:04Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador",
+    "controle"
+   ]
+  },
+  {
+   "id": "6c362f114613",
+   "titulo": "Ricardo Ferraço escolhe nomes para equipe de transição do governo do ES; veja quem são",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/eleicoes/ricardo-ferraco-escolhe-nomes-para-equipe-de-transicao-do-governo-do-es-veja-quem-sao/",
+   "data": "2026-10-29T17:05:23Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "bae510b8be71",
+   "titulo": "Turismo capixaba busca investimentos e apoio do próximo governo",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNQzdBOTJKQU15b1VsSXhwcFlHMVF3UzItU2J3aTJ4aktpbkNrVE5HdXV3c2J5My1HQ2lJbmJkNFNTSHJfWmg1N3QwY2E1a1FIckpLMmRuS19YMUUzZk1xb29YVlg3YTVudWNSTkZqRFNzX0ZUSVBoSUt0S0s5UmpfUFp3N2tkb2gxbjd6NFd4dw?oc=5",
+   "data": "2026-10-29T16:49:13Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [
+    {
+     "veiculo": "Folha Vitória",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPLXJ6S3FoYnh2UWI0QWNobTlMM0xJbEg5ZGp6Q1gyWVlwYW11YmthT1dsZ284Z1VrVW5yMTRseWVwSWcwbnVmZ3c4UTNKZkc3MVF1c2VrUjlmaFJuVmNXdGJEb2xnZzl1YzRKM2ZSYk1jR0pTN0VNczdIU21uaDFkRXFCQ1ZBVlB0YXhzNVdPUnA5WjdMNEUzU1hYZEhVLXU5MndURWdhWEo?oc=5"
+    }
+   ],
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "b9f2bd1e7752",
+   "titulo": "Orçamento de R$ 36,1 bilhões para 2027 será analisado por comissão especial na Ales",
+   "veiculo": "Vitória News",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQTXF0dl9KcXR4TkNidVhDZUxURnZFTXVzT01WeGlvcVpfb3NZVlR4SEdNLXhMXzByVnh3N2kxV3BfX1NneS1sQ25oYXg4Z2VMNWVCYm14QnZmQXdDcXFhRWJUanItVndmUTdaWHN5SXRJWkk1aTFVZDF6XzNoU1Zpa3VaSW16VnVZNU42QnAzSHNUR3p2STVlVXNMYWZsbWItbEpkQ1dpLWJvYXVD?oc=5",
+   "data": "2026-10-29T16:37:24Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "financas",
+    "controle"
+   ]
+  },
+  {
+   "id": "2f82bec7c96b",
+   "titulo": "Após derrota, Ferraço inicia transição de governo para Pazolini no ES",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSXo1dTNfRXI4aDJzeDBNWEcwSjlhRGVPRzl5Y3VVLVN0T3VZWEVzY1JEbTJZdDNuNUI5NlMxNGdtc0RHUjNXWmZsOHVMM2xNbG53TmVqSmtPWG9IUG1QZmhiR3UtYTVac2Y0ZnZ2Z281UG80a3o1NDhBMmtCZXdnMzl3aWo?oc=5",
+   "data": "2026-10-29T16:22:12Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "3635e8287cd1",
+   "titulo": "Governador eleito do Espírito Santo busca diálogo com o governo federal",
+   "veiculo": "boca.com.br",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPWEJuT0NfYTVLLTZCV3VqUzhuQnBzNXJpY3NTUUpYd09hRUxXR1VlYU12bC1aLVJsd29NdGtDX0FidGdOZGdxdUhPSkpNMGZnczJyVmVQU1VsS3BWNkJxM3NaVTBTMUJCLVFTcFNseEdwR0J5ZEpwSUF3MWMwRVlrZjgweDhXenB3aEk5UzhWQ0FzQ1VnMTJkOTJVWHdma1hDTWc?oc=5",
+   "data": "2026-10-29T15:41:44Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "372820158185",
+   "titulo": "Pazolini promete conversar com prefeitos do ES por integração de trânsito e ciclovias na Grande Vitória",
+   "veiculo": "Serra Noticiário",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOLXBhME1Xc2Q1UVdVQmpDNGRvS3J6V1lMbGNBa2M3RFN4YnAyTnFZRnhxRTY3N24zXzFjVHJRWlVpc0NFMGx0dlRrVTZzS19heGRZaW85VDR6eFBjSndyY1pCWHRrT0xRUFRyYnVQbHlIYkV5Y1dtVmxLai1nTnZhNFZNNnpYSjMtb1hvaVoyZVhVNFJOWTVod0FINkJ4TzhFQnV0OXRFa0FGbXdrdldPb1NfVkFEbEd4NFQ0emg0TjR1WlZuSGFZTkdxcjlQbDN3?oc=5",
+   "data": "2026-10-29T15:36:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "9786816ba8c9",
+   "titulo": "Comissão de Direitos Humanos da Ales requer apuração sobre repressão nas eleições",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNd2tWdFlqUEhLYnQtNGJPb3lZNWIxME9maUF6elQ5M1pGX2RoYmoxUjZmdGlqc2o1ZUJEQ05OdzF0Rk1MdjZwVWYzY0RrcUU5R0t6UG8zNngyM0RGLTlFbGlTUzhJVmVqek44VnBtV2hheTdoQXAzUVd2eHViQUhnZ1p0TE4yc3Y2WkZDLWNLbWs3MXZQb2pEa25vLVNnV3VuMjllZE5GNjFsRjkzWmlITnJsb1JaZ3pXbnFDdUNlTnE?oc=5",
+   "data": "2026-10-29T15:34:54Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "22b6b792eaeb",
+   "titulo": "Ricardo Ferraço cria equipe de transição de governo do ES; veja nomes",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNLTBHa2R0eTNOM3I4Z1V5YW5fVDdyMTRGd0JjTjloSVVvVHZsaUNBeDZPdXY2dFNMQlc1Qm1xaF9CdGlBeE5GMllIREpZZnNNQjE0cV9kTFdhZFM0MXBILXQyWDRUbWtYeUN5SllkR3J0Y3VsQmwxNXpxLXNLR2JfT3RTNHRBQXl1MkhxVXpXM2dxMExGeU9YbEwtbVRmaTVBcDRILXBERUtwYkF3bnBOVk1R?oc=5",
+   "data": "2026-10-29T15:16:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "30d6b469b6e9",
+   "titulo": "\"Ciclo eleitoral acabou e é hora de dialogar\", diz governador eleito do ES",
+   "veiculo": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQd1RYMG1zVHVGWTU1bmRwd0V6MlpMX09peWNRZkRyckR0YXI2OWo3VUpidUgtWjNkV19qeC1CRUtWUTRSLUNGNU9BTFEwNjZGaHJLN2JiODVHUXB1TWlsTktIR09Wc0ZWSlJZMU9fOWpXN0VCcXhQU2djVDNKbmV1eTJlTHhSdFQ4UXF3N2o5bV9jYjRMZFg1NjR3cXpXekF0aFRiY0g3dlFfcHk2TVVv?oc=5",
+   "data": "2026-10-29T15:15:09Z",
+   "coletado_em": "2026-10-30T15:35:49Z",
+   "outras": [],
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "a7cf0c4bc8ec",
+   "titulo": "O arquiteto da vitória: Erick Musso e o novo governo do ES",
+   "veiculo": "Jornal do ES",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMEdqZFVBLVNsVDUyTjZ0VklNeGtpQ0l1VXF5WW41QVVYX3V5SDBPRV9NcTNIMGliOXE3dHpXU3E4Z1ZZMUo4MlJBeXd5N190YUtlRVFIcTR4VzF0a2FWaUstSkRUVGdpMmRGWmstbHBHYm8xRHZfMjhRVVlVeUx2NUNJZl9xcTlSbllTaw?oc=5",
+   "data": "2026-10-29T14:27:47Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "52634bc12057",
+   "titulo": "Ricardo Ferraço assina decreto que institui equipe de transição do governo estadual",
+   "veiculo": "Aqui Notícias",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWWt4WG9BdkdRb2NlbFI1b3g3ako3QUVaZmVJRzM5SGVpUDhYcHFLSmFwdzJuUnFvemZNa3RGVzBzRWNJWDIwRDFTcXhDb0VVcjJhRjdrdjhmaXltNzhrc0VCU2V2TWhmZXBiU3BNMnZCX2tZUDFXVm9kNTRFX1VtV09YN1pTQW1OVl84R2VCN3BVZHRRVTZUd1NXNHlVZlF2TlJtV19GWXZpcWo5b24xY3pzNHdVZnhk?oc=5",
+   "data": "2026-10-29T14:26:40Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "57929960473c",
+   "titulo": "ES registra 47 denúncias de assédio eleitoral em 2026",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPVU8wY3VWU1NhaXVqcEUtUlpxWFVCTnROOHlQdFNLLWxUUkpId25jcktFZnlPM0hTUHhGOENvV3cyaFRNNFh6c29tVUJGcXpSd0Z2UGZEdjEtWjFGbUc3UFNUUXh0SmQwU1l0WU0zMk53RFpjTzdzRi1BZUQ5LTlaZWhB?oc=5",
+   "data": "2026-10-29T14:05:47Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "66370300ad33",
+   "titulo": "Agenda para Pazolini: indústria e comércio listam pautas",
+   "veiculo": "ES Brasil",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1sai1VRWxOYVp5UHpQMk9HNkRmNWt4SlJSamJHWlAtTDZ1dTJIc1FBMFRnbEY0RnlyS0N1U01SX2JwMnhjdGR4NjBpNEdGYXF6VmxHajF5cGVEdndBMjdadlV2NEtZUURaaWs5RmQwaFA?oc=5",
+   "data": "2026-10-29T12:16:17Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "45754fa3e5bc",
+   "titulo": "Pazolini visita Assembleia e defende diálogo com deputados na transição",
+   "veiculo": "Vitória News",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNSUZNN2RfV3hKMlNwbGFHMVRYOUYyempTTEF1T1RYajJkMUxTeXFuc084Tm90SUNzOGo1RW1SMVJTY0IyWEhGQmhvdUNUWjNKc3Ytcjg4M3Y0bWdULVdRRVhhNEROZGJjYndxRGtWSkM2dktTZS1HUlJ0MTFHTzlUTW9HTk4yMmI1Ty11RTl0WXNBSTR6WlVNMmluQ3VfZEU?oc=5",
+   "data": "2026-10-29T11:47:02Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "52a9d5a3c76d",
+   "titulo": "Governador eleito do Espírito Santo faz visitas ao Ministério Público, Assembleia Legislativa e ao Tribunal de Contas",
+   "veiculo": "Blog do Elimar Cortes",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOcm9UVmpudXBNNjBWYXdMcjBFWS1IdTN0ZHNNa3BWV2VKZnlsYW05cVp2dnZENEk5ZTgzcUU1b1BuVFc5UUdRbW1FTk5aU0xubWdMMlhhRGlHRVZDdElXbkZqalZUUlFBUWcyNDlDZDc1VmotSnd4NGdZU1NiQ1VDLVVfbUhnWno1WFRGZlhROUpiYUNuZnRicUVTMlU4NHRCM0JoTEhYUnhHYVBEZml5Z3VyeHROLU5oQkxubTlGeENwVXdKUTBXUThMd2dLWllUeER2WlNwdjZ6dXd6a1Y5d1AxNEhwU2Iy?oc=5",
+   "data": "2026-10-29T11:13:16Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "controle"
+   ]
+  },
+  {
+   "id": "072c24823975",
+   "titulo": "Sedu abre calendário de matrícula para 230 mil vagas no ES",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQVW81T01sRkhJNVN5LV8zanR0WkU3R2J5b3pHalp4V01CQTZfUjBpTjNjTThhSUhRTU1McWEzaEdjc0FKRmNIUHI0U19uY0dVd0NvamRKQjJxUV96UEhvbTVxTWRyalR3WXh2NEhvaTVyLWZRR2oyR05mRjdTUE9pc1RoYVBPaUtRMF9GZjlTZEEyNUNOdmlkSUgtbjFqRG8taTV4ZNIBrAFBVV95cUxNYnJsd0JNblFVcE5rSFlId0VMRnhnUFpaeGVUZmpDdnZDX1QzQ1pXa1l5RmhKUVdTZ2ZiTm14cDVwRHM5X1B0UXplaU5nTlVNWVNqTTJDZWlXbVJEZHlzSHMzcGJmYV9zM0ZfbDlHekpGYmo2djUyM1NOZlo1VU94MnJkWm44S2lMdUVLaEhlWkQ1RUVWcEp6a0dVVGNKenhieTJBd1VZNHU4NlZN?oc=5",
+   "data": "2026-10-29T10:56:06Z",
+   "coletado_em": "2026-10-30T15:35:49Z",
+   "outras": [],
+   "temas": []
+  },
+  {
+   "id": "454a246b8f2d",
+   "titulo": "Governo do ES pode enviar novo projeto de Orçamento à Assembleia",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSW05dmh5LVJsYktJSWR0Q0tsZ3ROeG4zZmRFUWdIb0hvM0RENnlxRUlIVGIyczNiNnF1S0tObkpQcHdfRW53U3YtOHhSbE5nSVhrR3Q4X05tdzMtOHAyc0tjTTFYekFXNnhtbV9GeHFvaXVSd3dVSkY5ZzF0OEJSQU40RVEzbnU3N1RnVENGZTQ2M0xjYUdMRUI4MmFqTFdTbHl1TFN3UXpKdWxK?oc=5",
+   "data": "2026-10-28T23:31:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador",
+    "financas"
+   ]
+  },
+  {
+   "id": "cc615181919a",
+   "titulo": "Pazolini visita Tribunal de Contas e destaca importância do diálogo institucional e do respeito aos órgãos de controle",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPOWh1QkRvMlNNUE1ZM2VyU3ozWjRrclNtVThKZng1RFlrMzNJaERlTEFsOFZzazlwclJZRUliSnF4MUpoWmtfR0FwaUNoLTZnczdxdnlvQkh3OHRKa200dzYtN21hTk9MNmNrb0RhaGwxWHQ3dlI1SG51OFkzVkdVTVU5TGFFRFJ4YnVVWUNaU1VOMFN6ZWZtUl9WblRXNUtmX3BWVUhDYmQ4T2Q5dFVQVk1HcjVrNGFMSldHMmRRenFDWVFXek9GVTlFYjFQU1FaUkd6d2RkNDZBMnc?oc=5",
+   "data": "2026-10-28T22:38:48Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [
+    {
+     "veiculo": "rede noticia es",
+     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOT0dobXhMbkRpUGd3VXJaUEt0TlZLWmg1Mk0zcHFEcmZ3OGtHZmNEdHV3QzRXblRFZVZqdHBPRWt0V0lMS0JyTUtaWDNubmg1ZThrUExCd1VkRzZhaWdEbktpNmJxN2U3R2NORzFxdmdmNWc3cnNlRlE0aVhPUmVQSTdIcENhVmEzVl92a0NqendiQ0o0bFFrY0hMMmR2QkstcmZJdm1GTzJabzRDVWtDVkROaVZSX25qaXUxZ0FsZGFhZm4yMDJ4aXQ5R000UVdOSTFzTkd0QnZnQQ?oc=5"
+    }
+   ],
+   "temas": [
+    "governador",
+    "controle"
+   ]
+  },
+  {
+   "id": "2a65aeac8d91",
+   "titulo": "Vitória (ES): Idaf lança concurso público com salários de até R$ 8 mil; veja prazos",
+   "veiculo": "Diário do Estado",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZTBnQUVVbEpETU5mTkFaOWFxSC03RkU5SEZyRmVoMWZYc3FCQUt3WXcyXzhSZldhYWZlSFgweVlKUWluZDd6djB3WE9nWmo4TFowaVhKa2ZKMU1ReWtfeENsRl84VlBHbDV4cmg4Qjczdm1DaExwMmxkdkVlRFllOUhIcGk4TlZiU1NuUFh0TU9uTFNtVFF0Um9Ec054SUNIZ3JCbllCN2lyT1RsTU81Rg?oc=5",
+   "data": "2026-10-28T20:00:58Z",
+   "coletado_em": "2026-10-30T15:35:49Z",
+   "outras": [],
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "0e3215cbac30",
+   "titulo": "Como será a relação do Casagrande senador com o Pazolini governador?",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWFVYNzlpYTFvV01nZ2ZDajVZbDVXV0tEVmNRVHhlYklWM2VQa3lXY21HblFtX3ByTTVTZWtHSUhnOWlPUkdKOXczM2t0Z1IxUnBBT3JBRWN2cy0wNVBjY3FnbU92M0JmOFpRUHRhRndEUXR1OFRBM2hQcjNWYXBkUTRHOThwNkh0VXMtREh3R2MxdHdMX3I5OXU1VFM4ZG5YS1p4aTZndjM4bWdyaDFFZWM5NlhZQ3VwdXk0?oc=5",
+   "data": "2026-10-28T19:47:00Z",
+   "coletado_em": "2026-10-30T15:35:49Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "cab73a5286f3",
+   "titulo": "Obras de adaptação às mudanças climáticas avançam no Espírito Santo com recursos do Fundo Cidades",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNGZvTm1fTWpQNWlDaFhYZHFtXzR4YW9aNDlpT1BUclRJUlJkckE3ZElhUFhudFViMXB2TUNlQjBQYjRPeW5IZWJDUGlQQ0N3SFVVQU5fdDJLRTc4TmNBVW9tWWx5akxXV0pNVEkxNEhMc05GRV81UmRwRm5SZHBOVUwyWXZITkZfODNyV1ZqY1F3a1Z6VzRaU2tnY0VfdE5vR21TZVdLaE15cVZYYU4ycjVLLXhseUp0bnRV?oc=5",
+   "data": "2026-10-28T19:28:00Z",
+   "coletado_em": "2026-10-30T15:35:49Z",
+   "outras": [],
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "b9339fd0cbb4",
+   "titulo": "Abono natalino de R$ 8,5 mil a servidores divide Mesa Diretora de Câmara no ES",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOdzZ6RjZTM01JS3NDSno5TUFsVWo5NG0ySGkxUVFhbVRGUFJUQWNJSnlvLVFhZGVDYm1zTU9xTkdVMnJLUURtSTBrWklhVmhLN19LaHQ3LXBlVl9uenNrUVdIVVVCVzNzNUdsN1ZnV09USkJHNmc4aTdBQzFJWDN5RU04ZC1aeGE0elZ0UlZPc05UR3J6ZGFsQzFQcV9tMXB6bUxxUVk0bG0yQ3BOd1ZHbzRocjRZTUFmY29BRThB?oc=5",
+   "data": "2026-10-28T19:10:00Z",
+   "coletado_em": "2026-10-30T15:35:49Z",
+   "outras": [],
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "ffb3c2ba2b13",
+   "titulo": "Após resultado das eleições, denúncias de assédio eleitoral no trabalho aumentam 76% no ES",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQc1l6WWpvQ2dkalZ1bDQxZXRvV0hqbXNSRDRjMEh0ZFF4T2IxNFhjcGFVd0w4azJ0Q2xxT09kWEIzaHM1azhtc0RpMnRxTzIxaElTQmN4R0JkVmtjOHdxanZnT2YycWlyNjRyOFNKWFE5Z08yMkFyN3FPeUR4bzM5R2Y1S1E2ZVh1QTM5ZGZzcHZ5Qklici1MOGExZEVmR3NPaTRvU2xLdXROU2dqM0Y2Qg?oc=5",
+   "data": "2026-10-28T18:33:32Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "9949d50afa7f",
+   "titulo": "Pazolini e Marcelo discutem relação entre Executivo e Legislativo",
+   "veiculo": "ES 24 Horas",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPV3dPZW0tSGVoblp6V2RPTFJmdE5kOWtPeVBCSlduNWhWWVlMRWd0T3dUNzYxaWtkMTVWYnZFMTBpYjVaWDYzcUhld2R2QmhQX2Y5NEQ5blM3UXNFbEVyYW9TN2V3R0RvRXN1R2VCbzJHc3A4NUFJalRtV1ZhbUJuRXNPcnkwVWdHclVpelFPamh0cUg2Qm9EakN4T1VTdEZaUlBacVQxNWxrLW5nYVlKLXh3?oc=5",
+   "data": "2026-10-28T17:50:00Z",
+   "coletado_em": "2026-10-30T15:35:49Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "f64e0226dbcb",
+   "titulo": "Pazolini se reúne com presidente da Assembleia Legislativa e reforça diálogo institucional",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOU3JNa01mTTlCWUtzWkF0eWRVbFc0VjZ2Rlhiamt6cmJCMG9VZmN6VjlhclVCWnotVWRzWWotM2QxM2tVYnlPb1pwZ0dLSW1RSWJRQmFyREQwS0JaS0owMVEtNjlURnJsV3oyU1gwb04wZkc0ekFHRG1oQ2xtcFpRVG1UeU12a0xMV3Z1cEdURE5wbTRGTWxpTk93ckIxcmZTWXhGUGx6bFdkdmNKUkZEeGQ1OTNMZw?oc=5",
+   "data": "2026-10-28T17:30:48Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [
+    {
+     "veiculo": "Aqui Notícias",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPT2g4QTdEUG8zLXBycTRqMm9EYkZzM2FwQTdIY1J4VmdoSlFqX0FEeTlWNy1nT2ZIc0ZRRGNhcjhSNkZmbFVPSTF5NXIyZ3BRMkdRakhZTGQxYlowc2REZ3NsQi1iWDJlR0FxNTkzMVBHMVpOaVBNMjhJc3dXOThqb0ZFdG9QelhqeGV3dFBEZ3VfdmVZcTdKOXB2RndlWTFXa2c4REt3d1FFMnlxVzVMZW81M1BmR2o4emdQbTBSWnBRQQ?oc=5"
+    }
+   ],
+   "temas": [
+    "governador",
+    "controle"
+   ]
+  },
+  {
+   "id": "eadbfba50e16",
+   "titulo": "Homem do caixa de Vitória e ex-secretário de Hartung entra na transição de Pazolini",
+   "veiculo": "Portal Tempo Novo",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5tbHd0NDNJd3VId3pOVms3OGNfcmk5emZLSWNHbXFEeHdRam1xZGhZSXRDUWV1bWlERWhfNXlpdlQ1THBJTnl2anNJQ2dEZ1ZJNm4ySEhqMk9EcmlUMWgwWVY5cWlLb2dOTjZhMGNUMWtBMndHYmZVbzlacjZTNlU?oc=5",
+   "data": "2026-10-28T17:16:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "51a6c4e815a0",
+   "titulo": "Regis Mattos integra equipe de transição de Pazolini",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOaW9HVS0xd01NenVkSGdvODNWem55VUdWRmEwU3B1ZWJzTzhWcFdicFVrWldCaUJZeVlBenVxTUxDSlBiaXgxc1VRMlE4bS1ZQk5tRngzZFAtVXZDbjBHVVRFTng4bV9sQkl4dkFyOVU1Y3ltRHVudW5qSEtDQUxCeHpLdkZpLUNUa2NBcGhJZUZOT2RtNGlWOHg3TVRnd9IBpgFBVV95cUxPaHg3bnNvSG94WWFSNXhOVHVYeFNlSFlyMEVpX3VYa3JjaVpnU01SbU5DbnZ6OGY0RGdYS25nR2w2aWYwYmdUTlN4bnF1aHlsa2FyRTFqVjVYYlAwZXRVOHpyeUUzMlZrWVhYbm0yTmxlMFdEbWRtRHNGLTIzbTJMYUJ1V2tIaDBiV3pwQW53aXdRekVSTWE3ejltR29GOXQxWF8zSTRR?oc=5",
+   "data": "2026-10-28T17:09:54Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "5d6dbff35838",
+   "titulo": "Regis Mattos é o segundo nome anunciado para a equipe de transição de Pazolini",
+   "veiculo": "ES Hoje",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQaUZFa0RZb0h6M3ZDUWZqMklGcmZ0MTE0bVBsNFNzeDVNTkZORkZGcGU0YUEyU3Q0bGx5ZU94cVVVamFtZEFiV2RUeHVtTkJQWXk2QkJrSHFvUjR2LUVZNnFjRHkxb2RQbmthS05QaVRFTGR3WXpSRFJtS09TM1N0azRFTGR4MFNZX0dZSWVoTjZGZTJEbTZlX0R6MlVxVzRVYTNXMVNYT0hPak9mMGp4emhvVVcyMG9mZnc?oc=5",
+   "data": "2026-10-28T16:32:46Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [
+    {
+     "veiculo": "Montanhas Capixabas",
+     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMTROdGJzTVdrM3RGY0RmRVRQbjVMUG00Y1FRV1VoNWx2cDBCdEF3ZjlKZ09BbjZLSzZ3bVpkbDVfYU1jSFFsNGRQaGpDVzEzSzgzSEZQQ2t1TXJsOHVTMEJRT004WW44ZC1XVS16SFRHQXVsOFJKTnR2bkdNZ3JyWnZrSFpHa2dNa2hwU1ZxT19LLUxYLWJsTTBpRnJ3VnBzMk1ySVpwQnhIN2JIZE56ZzlET045OFJC?oc=5"
+    }
+   ],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "a5cb0046391c",
+   "titulo": "Pazolini defende união, harmonia entre Poderes e transição com foco nos 78 municípios",
+   "veiculo": "ES Hoje",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5TdGJOUkhkTWxvT2xLakRXa2UyUkJVMjhfbmRldEtrVGRvTjhQNGRJa3VaaUdCc3dDYUd6OFNaNDZGdm5sQlBUaXg3V01PSWdtaUxtcVVwWGZud3BpcTNvVmJHOG1UakFzYi1aazdTWXk?oc=5",
+   "data": "2026-10-28T16:00:56Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "6d3c0c07f951",
+   "titulo": "Receita Federal abre leilão com caminhões, drones e até bicicletas elétricas no ES",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQOEpKcVd3c3hCaWl4SzB2MDFNQzR1bDRCWDhoMGN0bGxtX1cxX0NPX1Z3X3ZyUDVJUDZSVGVnbTdybVM0SWprdC1oaW5zZ0xWdnR2T0tmemtQQ0lKa1pWbnZ2X0twYjc2ZDZzNjdiOXROUDNzSDNOMVduQ2VRNFRTSnVtYmxSNFVKUzR1TEZaRnVNeF9OS3RfaDBkWWtJdkdkUEVSNVg4VQ?oc=5",
+   "data": "2026-10-28T15:37:09Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "09a7444a929c",
+   "titulo": "Erick Musso vai comandar grupo de transição de Governo do ES",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQa3llR0hsMzdtTE9iSE5MVU9NNEtEdnN4MDBNdnZnTmZ2M2U5Z05jMHllaWpRbTJWVjR5OXZXR0dDa1dPaW1pUkE1QUM4cC1LUm9uZ0hDVHp6d2RWY09KQnVFQlZYblNKbFlGd0IzcGRUdzZTazlMM0c3dUhhazdxclZSMzc0V05ZZEVRQ1QwQmRIbzdBX0J0UGd5eW9LdW5QZXFLNzNnWWVZN1R1TGtudtIBsAFBVV95cUxQa3llR0hsMzdtTE9iSE5MVU9NNEtEdnN4MDBNdnZnTmZ2M2U5Z05jMHllaWpRbTJWVjR5OXZXR0dDa1dPaW1pUkE1QUM4cC1LUm9uZ0hDVHp6d2RWY09KQnVFQlZYblNKbFlGd0IzcGRUdzZTazlMM0c3dUhhazdxclZSMzc0V05ZZEVRQ1QwQmRIbzdBX0J0UGd5eW9LdW5QZXFLNzNnWWVZN1R1TGtudg?oc=5",
+   "data": "2026-10-28T10:47:13Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "f1356acb16a1",
+   "titulo": "Pazolini deve buscar \"equilíbrio\" na Assembleia",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcVpoT294dFFiMjNrY2FtdC1VOGw5Y2laVHZfZXBvRmllSC1vQ0tCNlRjb3AxNG9BNktIOTlNZlpKaTNYTzFpR1BDS2JnYk9kR01vSkx4T25wM3BMMC1UcEU4Zks2enRTLWlaZ2thOEpERzdaaW05VDZsVGZETFVuQTVEQ2huY0ZNSlFyd3c2eHNvcUZaWnFpS2FFNjJRQdIBpgFBVV95cUxPMzBrX1J0bFpxNm15cVNnM0lab1o0Z1huamxDZlIxWEF6OE0wSndad0hsN0VSLWM0V0c0WVg2ZnhocFEyX3o0WGlJSVMwcU5xTHNnV3VyVnJFYTcxS3BwbjNlb1Z1ZDRrMVMtX2NkU1FoYmpJcUc1RVM0UlFKbDJXS3piaU1VZXQ5a0xhMEVNRGp0U0l4TkFmMGVDbGNaMElRblYwOEZn?oc=5",
+   "data": "2026-10-28T09:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "10d68a7673f7",
+   "titulo": "Pazolini solicita ao Governo do Estado representantes para equipe de transição",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOUEVzVHNuMkF0YUVvSjc0Tk82Nk1xeGt2bklqYlhJYzRzYmVlckNwbkRMdTU3cnl5VG9KZmcyenAzQzZuaDgyRGFyTkZldmJ1cFpOcjFFVGQ4VGlSbFdfNnktOFhHTHhJR05DM0REX1o3SEk5enotWGhTS0Y1M01ZZFVoUWs2eHp5V1h3NXJTeVV5RWF1WDNWclhuRkQ4VFZDT2NWQlpB?oc=5",
+   "data": "2026-10-27T23:19:45Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "a44fc1146c80",
+   "titulo": "Pazolini se reúne com MPES e reforça diálogo institucional no ES",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdzFlZC1EbEZZTXJHYkVjb2wwUlpLa1BpaGZxeGpaQU53NjlBaG1wNTJTcHgxaDF3aGJVLVVVOE1UeVNYVThnYW9CbWFOa3FHQkdvNFVRTjBuVEVjbnFCeWR1eHhyS3NnTERNMFRkcXcxLXFxSGpJb0RSVUJ1VFZpbWNUNlpvWDlrNEkxdnp4UDRPbzg?oc=5",
+   "data": "2026-10-27T21:58:54Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador",
+    "controle"
+   ]
+  },
+  {
+   "id": "072782173b46",
+   "titulo": "Em Cariacica, Ferraço virou em 39 bairros e venceu Pazolini no 2º turno",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNWEVKaDktelNBVEJqTHlTOXg1cUVJaDdOVG5Ba0w3REJvQUR1dE03SXNLell0NFF5QkxDRHpHMVNHVnVYZGxkWmRGSkRyUy1xYTR5RDZCRlNMU2hzU2FIQUMyYnViRXF4aVo2WTMtSHZudEZ0Q29YWkt1NHFRdFV6elozNWEtOUR3SzRvcmkyTm1TMlVhSFJRUQ?oc=5",
+   "data": "2026-10-27T20:06:59Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "5440082c103a",
+   "titulo": "Especulações sobre nomes para compor o futuro governo de Lorenzo Pazolini já movimentam os bastidores políticos do Espírito Santo",
+   "veiculo": "portal jornal do norte",
+   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPVEhaSkJoXzQ0cmR5anktR0xON0NrWjBIMGhvQmlIck9zMTJBRlN2ZFU4aGRJQ3phQmhWNDJEa3NmVnV2eFpaTTdsbWthbVpNZUt1cXZOcVVWTVZXYW8xWlVPT0tlejF1ajNDRGxTNjRGNy1YcEFtbzlZck9DbjJ3ekxQcFhaTTVIVnp6X240ZHVOM2pneDFoSHJQWEt5aWlVdHpJUzVPc3Nfcmg2blRUVlJiZXhvUHFlVkg5Q3VudnMxenVhSkdReWZqeUV1VXBVdGFHZWdzOVcta29pUlhjamRyU1lDWk5BM0xqT2RkQmZ5WFlaekJsVg?oc=5",
+   "data": "2026-10-27T19:11:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "89094dcd6cfb",
+   "titulo": "Erick Musso é nomeado coordenador da transição de governo de Lorenzo Pazolini no ES",
+   "veiculo": "Serra Noticiário",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPU2htTjVocUFBVFFXV0IxZVpRSmtmWllra3JWekhVRmJ4ZklwOG9SQkV6MlQtc1p1cFlHWUxnaTVRSVdleEFzcHNYaW5sTUpZRzBveE5Qa3loRGJDNVNvdkZkUlJ1U1dmdURzQXRHS0tIeFgzdEd4ME92MjlwSmZ3bW9iVmNOM1UxcFhVQWVPS21YNU5ELWE2TG54akwxOVd0NnhlSklzWjJGM1BPZlluTGRVQ3BFUQ?oc=5",
+   "data": "2026-10-27T18:55:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador",
+    "pessoal"
+   ]
+  },
+  {
+   "id": "1f770207bec4",
+   "titulo": "Pazolini anuncia Erick Musso como coordenador da equipe de transição do Governo do Espírito Santo",
+   "veiculo": "Montanhas Capixabas",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNWjVQemJYSTB1QjMwb3BlSEg1UjhFbzBkZEFpYmg1ZXhCclcya3pqbDR2U0lnUWhDTUc4b0dmdXhjWTB6aGJmR0tXWWJOejI1c1pmTkNDclU0R0tJMWs0QmZNa1NYbWRkQ0d1UUxScmxkaF9XVnNXZDlCMHlrdmdXRUw2Z2FPa0w1LS13MFM5bkRmNVpGdDVrWGhqVGFCbllpamxzSWxNQ1ctajRqZ3RPQkxMZGtKdTFsdlRHT19FbnIzMTNIRDAxUzRmdTVKRE5wWGc?oc=5",
+   "data": "2026-10-27T18:35:30Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "fda296e8abb1",
+   "titulo": "Lorenzo Pazolini anuncia Erick Musso como coordenador da equipe de transição do governo do ES",
+   "veiculo": "Portal 27",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcUtWWkJGMmRNY2hiMFJRQzV2YVNKb3J2SHNtaGw1UkJXY1I1Q0FuZFFscFQ0YlE1MmswQjBmV0YtY0dYSG1YN01wek9Wb2VHcndLeGtkaFE3bXNmZWt0T0N4bjhlbFhpcnZyT2pCUElpRmtyU0d0Vk9pT3hSM0g5NDRPMnpfZDh0THM1STMwbnNtRk11S2sxSXpYYmZFV2Z0ZmM1eUpCeTNwU3RXZ21JUHNXVkFXamhsV3RoUWZNaw?oc=5",
+   "data": "2026-10-27T18:21:33Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "df5c0e650d5c",
+   "titulo": "Pazolini anuncia Erick Musso como coordenador da equipe de transição do novo Governo do Espírito Santo",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPaEZjMmNoMnpjOGZCRWZBOTNfLU5CNnpsa2JBVk8zaTUyTDFiVzdQQjAtbDYyU2pwZERFS0dOS1BIOGQzcERyT1RJUkEyLWVvaDBPVVRHTE5wU3RzUS1SNTVRcEJLTmdzT19WMnNpSUpTUjZQV1Z3SGJBTXNoQnhPODJHVlBzbTFsWnQ0REszV1E0S1V5SkE2dHUtQ1JfZnVPcElNU3Fra19IbU1BdW83QkpVWEo1blpiRUdZQlQ5Wk0wYVdOcXc?oc=5",
+   "data": "2026-10-27T17:52:35Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "93150cf2cc11",
+   "titulo": "Pazolini assume governo do ES em 6 de janeiro, na Assembleia Legislativa",
+   "veiculo": "Vitória News",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbUhob0NzSnEwZ0RIRmVvamN4UkxIMjZlTUY5VkQyTFJFdnRFMHd4Mkt5X2VIeVhaRW16bWN5bXdFVnBHX3NFa0VBcG1xMzZrMGJWVVVQUVZ6RTBQeDRKeDhBbVRHU0VpTG5BRjVBZ2xadEZFS3hJSDBEMHlLaFE0a2o4STNzVlBFbTM0ajVVS1B2RS1nMXAtekliNXV5cms?oc=5",
+   "data": "2026-10-27T16:50:15Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador",
+    "controle"
+   ]
+  },
+  {
+   "id": "fc15948ffbc1",
+   "titulo": "Dia do Servidor: veja quando é ponto facultativo na Grande Vitória",
+   "veiculo": "Folha Vitória",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSGxEZVNGY05zb0g2WV9YblpPYkkzV25rLXlGa2FGNUtGTlQwV0JNLWIxQy01akJ5MUh0Tko3a2J0X3QtUkgzaWNZNkdvYS16SkUyRFF4YW02U0FCMkh5U1Ntbkk4UVFZS096MjdPV2huTGVWeVgyQjAwcU5zWFJpNzV3STkwaUpQeU9XSEZaaU5Bald3ZFQtSlR4NnNUWmdzN3NUVU1hQjl3RzF4?oc=5",
+   "data": "2026-10-27T16:31:39Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "80df39c1639b",
+   "titulo": "Erick Musso será coordenador da equipe de transição do Governo Lorenzo Pazolini",
+   "veiculo": "ES Hoje",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5WX0VRQWRUSWZWb0c1WDhXcXR0clBPQkRURVZ4MnFvQmxodEN0X095bmd6ZVJjcXhkVkZYNjNBUjhUbjJBVU01U0twZUhsYkVka21OQzNwVWNFRXVISjZDUDZKOEVIbG4wSS1oZ0MtenAtUVBHNUFF?oc=5",
+   "data": "2026-10-27T15:43:25Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "355503147b44",
+   "titulo": "Erick Musso vai coordenar a equipe de transição",
+   "veiculo": "ES Hoje",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5WX0VRQWRUSWZWb0c1WDhXcXR0clBPQkRURVZ4MnFvQmxodEN0X095bmd6ZVJjcXhkVkZYNjNBUjhUbjJBVU01U0twZUhsYkVka21OQzNwVWNFRXVISjZDUDZKOEVIbG4wSS1oZ0MtenAtUVBHNUFF?oc=5",
+   "data": "2026-10-27T15:43:25Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "b1912aba2601",
+   "titulo": "Dia do Servidor Público no ES: veja o que abre e fecha na Grande Vitória",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOZ1JHcG9hcnRRaDdNbUN5MW93RnRXREVYeUZRemJIRl9oRGpzT0VQT0pMenZwalRzZ2dXVG5rMmxJQTgxZ0VvczNlUnlEbHktYmJVZXRieFhoWDRFQWl0SEpiUE9MaXk2MXdzOWdvdFp5ZF9Ua0NPcmlDeElfN0lqUERzUnd2aWVPNnN6MHNYVHVNQjFSenBnSXpyNXpXTkhfUnNGTWRkWndKVEVvVnpNbzZFaHIxZ0k?oc=5",
+   "data": "2026-10-27T15:12:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "aa1b0184c315",
+   "titulo": "Concursos ES: novo governador fala sobre déficit na segurança",
+   "veiculo": "Estratégia Concursos",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPYzF1RElxSUF2TzJEeDlLcXAtWlNLbURDajJBaGFpdzNmeS1jaEVKMW1iRlBjMWVfelgxb0FTYmRiTm1mSDQ2OFRQRGNPOS00T0tKNjdCWG04aGRuTVh2aExteG1vZ2pPQjNIX1ZGWDdjaFR4cDRFMVZVdjYtWVhoVzVnbzhfR3hTRmxpallPdjZDWFRtOTVF0gGcAUFVX3lxTE5GRWJrNzhyNkpRY21DZkVoUlZxVmx5Tk1Fbk1Oakk3ZDAxUTNwcVhxY1I1YWFOMUkwaFRwTUd4LW9ZN0NVYUR1bGFQbW95bkhlZ3Z4Y0Z2NkgtOG4wMDU2V2xjRXk1bWRIYWNsMUVtSkZTX3FUMHZPcFcwWE1Ha2pSUDF0TXh3NFY2SFB2eTBHbHB2cGloY0R2SFM2aQ?oc=5",
+   "data": "2026-10-27T14:09:41Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "b26107fb1625",
+   "titulo": "Espírito Santo: Pazolini planeja avanços na saúde e segurança; saiba as prioridades",
+   "veiculo": "Diário do Estado",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRHlqUnZyUTVkWTRlR2J3cV93enRidVJESXVqN2tnX1BDQm8tdC02bXJOSGswdXZiQXMtVFhJdDhhX3VUWDh2aXhBeWNfbUlkTHZGSHQwWFZTZTgtdGhOWUEtQk1GU2lZak1zZENsRDVDRjNObXVvVVNMYlo4akNZR0JEdU9EQlpVQ2F6TUFHM0I3T3lUSkd2TXZpaS15SWpqd2ZIX0pZSWdrUEJ5UC1VYVNoRHM?oc=5",
+   "data": "2026-10-27T14:01:09Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "c04fc3746879",
+   "titulo": "Presidente do Republicanos vai comandar equipe de transição de Pazolini",
+   "veiculo": "Folha Vitória",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNGNvTGdmaExxOWdMX0FheUNheDNRWnJkT1dmaUJoRjduSDBRQVdsZ1ZsVmVDWTYtNXlZaWFMRV9ScWM4ckFIdjcxV2JSMnNtVktGUng0RXUyTTM4cFl4b3lFLUtDSzJpcXAxcGU1ZlNYMXIwOE54emh1RDZncE5rMTRqSHZja2tpWld6aGhYelJXcTNFRHE3a2VOcEgyNmhmcnBSVlMxeDROWmlwbTZtWlNtZw?oc=5",
+   "data": "2026-10-27T13:46:28Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "3ebaef09d07d",
+   "titulo": "Pazolini confirma coordenador da equipe de transição e diz que BR-262 e obras na saúde estão entre as prioridades do governo",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxNSUxmSkdPYmtMTEdwRURFczJWYkgwYkU5ZktDY2N4Mk5PNWxlVDRic21FRVBwcWhIUFNlX0xpV0JYRldLSkJLZUZOZDZfbkZKSHpQaGtFWFdiUmRhNXB6eGp3ZmQ2Rjk3VDZQTUl1OV93NTI0OVM1a0RPX1VwMHZxX1R3YXlpZFlQQl9TTnFvdXhseE4xaVQxSmtvMkNicHF1dFpRVF84dmgwNS0tdWg4ZHA2SXdJNUxrVG1JR3c2OS1iOTVzSjNGZGlGVnNUdWdiM3VPMHRPakxxN2d5amI3MlNFR2xPNHlFc1pCa3JOd1NCV1k3X0NSaGVHQlh5ZnhLaWtWc1NENU9pcVVkNVlXOFNVZW9PcDNZQzlaUEs0aXN1Nmk2R2tJZkpn0gG4AkFVX3lxTE5Uc2g0WWRBRlhKVzI5dWM0TUpzejJ1bW1kVzZ5SHhQQ3BPSTN2N0dmb3NweEh2RTB5UFNBOXRXNi1id1dnMmd6RERBYS1jVWhXTlA1ckJ6UzJhdnZtRGxrNktzbGE0VEhpdm94bWJhTjJuZW1SamVmaFc5TGI0LVo4RFJwSWVmbU1yQWUyWGhEb1VkY3lFOENta3hSY0Z0SHRjZlhPX1V3b1dCRy1aazZhcVpwSm1yUDh2X2JUOVNDZ1F6U0lUWHBNWnZHbWY4QktqOFNZTmgzNUJ2b1dOekwzT2N2TkEyb25rS2d1SE94cGxFMmJXQUR4dVFPVUxJSklreHI3eVk3WTJNeEtqNWo5TjlEMkU1R1BfWGZLamFGWHQwbmpDZGFnTjNMSktKbFh1SlZaMF9zMw?oc=5",
+   "data": "2026-10-27T13:41:35Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador",
+    "contratos"
+   ]
+  },
+  {
+   "id": "16b4ff98e472",
+   "titulo": "Concurso Segurança ES: novo governo planeja vagas para PM e PC",
+   "veiculo": "Blog Gran Cursos Online",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQOHA1NlhyZWpGSE1mX1ctR2RuWVJsV3NLel9EcFpXVE9OWXZtQ0E3elQ2dFNxeWx6WndzemtRSzJCN0swVFZhaG0xaVZlWUw4NUpzWE5LSi1FNHRHRWdhNkxlTEtYVXdxRmJWb2x4dVp0LTNiYk1LYXpZWjBCUlgzNFduNFJMMGc3Sno1YlE1YWZFMEJpcFE?oc=5",
+   "data": "2026-10-27T12:58:41Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "f121cea28598",
+   "titulo": "Transição no Governo do ES: Pazolini escala Erick Musso para coordenar equipe e inicia articulação política com a Assembleia e Municípios",
+   "veiculo": "ES 24 Horas",
+   "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPbjhlVWNWV3JyeDI0X0RqZi1sZ1psV2Vqb2M0VmE0dUhKRGxqcjNNbmo2UWIzamNMZjloYnVrYmRHWTNRMWNWc2xtVHE2Y3lpeHpsQVVEc0xPam5SY2VoQUk4ZnFNZllLRTVDYkRDU0w5anpLODB0NS01Zk5NVHpBRFh1bzdGZ25NQ3JaTEtrU2ZKcG5PcEZBRnhLVmZsbUIwZFRPOHZGcTZ2THlNSWdNRlZUUmk1cXlSbUllZ21wUVBaNEQzRWlLYzRpN2FRc3Vsc2NWSDZvX3ZKVEtMSXNEemZSUUpDZWNESzI5eUJPNTg4RkJaSkpQdkFENHBmeW1CWmcwazdEY3NlUnM?oc=5",
+   "data": "2026-10-27T12:49:03Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "195dc207da6a",
+   "titulo": "Vitória de Lula e Pazolini divide deputados no ES",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1SR0Jnb2Vybl96TEhtVG41NVBlN1o5THFmVlo4Q1hYV1FPOU15S3hQNnRFc2ZHaWIzSHA1bE14dkowM3EtU2d6U1kxUFY4LTh3TGk0Ukt0UVZhR2xXVVpYd19HYUl3elZqbExXSlhaemNieUd1RGxfZDZNSEg?oc=5",
+   "data": "2026-10-27T12:29:26Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "9e8a59fe8858",
+   "titulo": "Governador eleito promete pacto estadual para combater o feminicídio",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQZGNJeEt3SmlHSXhVOW5KVjktajJILXdrM3dqZFVjLVNMTWhiMkFxa3FKeXRuQlR2aGJIU0RuRzV2T000ZFFjWkVYZ1V5SXFJNHdFeWJpYmR5Z1N5WWRMQ0QyUzFQZWZvbGpvV2s2TVpobmsyV0RLOVBYWDAtZ1FjQ3FUOXdzZWIzWDFleTdjMHJmdGV0YjZKQ2pRUHpqOHVWYnpkVmNDbF9QRUFoQklGbEltQXlsS3pfakNERURQQTJUUms3TnE4SmVRYy1pU0HSAdcBQVVfeXFMTVl5Szh5LTlyWmVBTFJ6dnpHeVFUZGJuWXh3VDlidDFqbWUyRjN6aHZQRGVqcXdOYnA3U2NLbE9WUVVJVjBiMXM4ZUZ5ZHpGd3dQcXhRcmZwUnNKbHkzZDUyNTg4YVpBNU1vbjQ5eDRWbTJqN0d2X2lEOVFUZWxzWS02R3lvTHRhdkdiZnJqeGM4X3YtV2ktclViOW9uUWU1NUJPd2k4bHpXUGl5a3puaUlucHRpNjJ6SFFhN3N5YWpEbFdsQmZEYWpzNTdkN3lvMVJGN185OE0?oc=5",
+   "data": "2026-10-27T10:18:49Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "13c8b2e62602",
+   "titulo": "Na TV Tribuna, Pazolini diz que \"quer fazer diferença na vida de quem mais precisa\"",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQQ1JZTkpmeWstUTY2d19lM1p4eHFWUWdzUFd2bWFzNGpqSUlCYjBxenVrUVUtbzJXZ2FJTkRsOVRORkFsOFk1V1BKUEhsZEd2VFNfbjRjRzRjdDJzUFBDYTVoUVVmRkIycFRkMlRjUzByWVFyYkw4ckh0OWdCRWFoYmphSUhVSHQxZnBqSmVtTXVLbHBGcmFOREdDNW8tYTFHMFoxdms4eHNyRjhoQkYzRnRpNGtRLXozdWcya2g2Wnc2TG53YWR2SFlwNEFwMWNldlJFZlBoM0l1LUZkdDQ40gHnAUFVX3lxTE1NZkZZVnZDMllEQzVibmtuaGxZdC0xdVM1MWljY1Nvc0o2ZkZiMXhfVm0tWldUNzRUQVhvRXZsc3pKZkttSWFmY1dJREVTWDI1ZDBxeGF0MDcwQ2txNG1rR1Qtc2V4TGtRV3Q0ejhGcXhtZGdhT1k4SUxaekZFZk81RUF6UGUwWTRaR3RUejZ1dnJBM1VkVFdkWUxjcnlBeWQtbk1vZC1oQlNQM3pOZDhLVjBZQ3NJMTVPbFBBOVR6Sm5WVjZnR204ajBoZkdUdHdna3RPRGNXX0czOHFWYXl1VjFRbm9pSQ?oc=5",
+   "data": "2026-10-27T10:13:37Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "a52cf94a57f5",
+   "titulo": "Pazolini anuncia parte da equipe de transição de governo nesta terça",
+   "veiculo": "Folha Vitória",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNd1d0c01LZmNrZ3Z6c2FzdWZKNmQ2c2M2WDBZbUlDR1VTaXZ3RGpodmdRcmk4MENteUpWLWI1cVh1d1VSbFpPdVE3QnBSaWtCT1BhNVNhRGpWaWR4Sk9HQ0NtZG5iSV8xcjBHLVlaUEI0VERCM1A4QjRaZUMtelNOcXdQMEVXdFM2S0w0dVZiY2o4bDhIRU5jRXpaNDZyQkVYQWNPdmV5SUN4a1JYRVhB?oc=5",
+   "data": "2026-10-27T09:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [
+    {
+     "veiculo": "portal jornal do norte",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUG1ULUlrRkx4ZHpZaHFSYkllM2dCYUwtSGpPUTFmLXdVNG9PSXktZno3YjY3TDNwVHRveDhWRVY4dzM2VDFONFl2eU9wbHh0S3liSmtPQ1JoR3hfZ19sblBwZVFMallnU3JhTjFfamRSa3lBUkY1ZXhSWnluMVQyWmpGSEQyeHJjeTlkRVZuQmw5am0yV2Z3N20tQl8ybUZnVTBOLTRQdw?oc=5"
+    }
+   ],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "9af8f85cfb3c",
+   "titulo": "Nomes cotados para o novo governo Lorenzo Pazolini",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNQWt4VENLa1BtVjdkdGxHMXNTYWYwVzZWMklUV1MzdWVsWWc5ejJCUDZ0dktmX1lsM3k2cEx6ZzNDZl9pcVZ5NF83ek84OHRiQzRScTQxZVpqX3ZaQm9OYVFpOVFJMHFkOTVzby1CR1laTFV6YmFrdUc2MXRNVUgtRmtYNWI4TjQ3T2YwOWo4WHllaUoxVzljTlpDZndLOVV2Wm1BQ9IBrAFBVV95cUxQUkZKdGlyU1Zoc3c0MFQ1SDBqUGg2b19zWVFoUGdCWk4xZGZqY2hVc3hOY213X1RhaWhuTEdIcXIzNE9uUEVkNlkwY3l0V0ZwcG9XV2xnY0QxVGM5eHZub3FQMHN1dkZUdUJjdERmZjlsVldlZ3BDNE05Y3FZSldNZk5WNmxhZXJFZXB6Wi00X0UyQmxZWlFudkQzWml0OWNCV3MxYS1pdDFsNThG?oc=5",
+   "data": "2026-10-27T09:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "9f15709697f6",
+   "titulo": "Pazolini diz que vai concluir obras e prevenir desastres da chuva",
+   "veiculo": "Folha Vitória",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPVkJsTXA0LUJvVFVtYlBXeEN2V2pCVnd2VEFPTllJcnNaT09VVWJ4Uk44blVZWGhnVmxJSWkwMGRvMVJPM0ZPQlNhRXljOEllX09Tb2hfRGw2enpqaFlBRkttSWdKUGZRVWZTZl9SRER3aDlJWFZ5R1BlTFdaM2toM1BKR002MWFnTHhycW1XZmNIOXpha2FJemJvZTBUeGd4T254VlB2STF5cHcwWG9sMHh0X1VfdWUyN1BObElPMlFvbVhrUGJfZHF5U2thdw?oc=5",
+   "data": "2026-10-27T02:20:11Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador",
+    "contratos"
+   ]
+  },
+  {
+   "id": "12825b6cf098",
+   "titulo": "Governador eleito, Pazolini toma posse na Assembleia em 6 de janeiro",
+   "veiculo": "portal jornal do norte",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNSmZpUk1LVHpKS1A5Y3RKNWdOOVdKNFRORDRZZGEyeU5hTFFENHRSTnNaclV1X2lPUV9WMEZ3SXJGQ21ZNlRkQnFGNjhPOXdQTWhYbFZFZXB2WGJzbmlUNm5hYUNmRk5zVm1sQUl6LUxWbWdrT1dIUEpJT2NsZTQ1QTh5M3dBeklUXzZTRmVpR1ctVW9DSFBXTG5QMW52cGV0d3NueE9B?oc=5",
+   "data": "2026-10-26T22:41:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "79bb21ebe978",
+   "titulo": "Ricardo virou em 9 cidades do ES e Pazolini em uma no 2º turno; veja mapa",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNm00UmZwQ3FzQ1JKc2twenlTMmJWTlZ4LU8welktTUpCNmhqMFl6YWktekdZbzlHVEJCOTNzcWJtQmNUbUFvRjJVcWFEMU43VGlIZE95cjY5WEZ6aGoyZW8tSzFxVnd0UmYyaFl2X0NFSV9yRzktNktUbFlHY3NRQmF6blBxTzdLcjAxcDdlY0M4dGVGSk40aHM3TEFjOTJBTDhvWWQ2dGpETGt2NlNBUXVIZEx1QQ?oc=5",
+   "data": "2026-10-26T21:55:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "8d6326925f7e",
+   "titulo": "Capixabas poderão quitar dívidas com até 100% de desconto nos juros",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNUHJNSC1KSTdoMnJST2xkWFA0OWtjLU9CT245M0N1OTJFcUV4SFJhbTF0LWZjMTU2UloxVHFEVnd6aFNkamZtcmpfOXJXODAwRktvVkVoTjV1SzI2WWdiRDB5eko1aHZ6RkhUelpzcnlQY05Yb0dfQlRpamdVYlEtOVU4WWRQeDMwazN6NW54SGZKNG8?oc=5",
+   "data": "2026-10-26T21:43:13Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "e9b37cdb561b",
+   "titulo": "Pazolini pretende levar Erick Musso para equipe de transição e destaca apoio de Marcelo Santos na eleição",
+   "veiculo": "ES Fala",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOWVAzamZfOFo5VGQ1S0FGbmZzZUVndTdBZ0ZrNnZkd3dXRlFURE0wVExwMHY1Z0dYeGJOUTdBUVgzTFdYalNKczJXdGdPdlpyY0lBVU84MG5qRkJzaUtWcjBFMHd0WUU3T2pScm9memduWXg3M2pSUVgzbTlQUWhVNHFTZE5jOUVWRlNIbFFVSGhKeFNCa2pYWGpyNlExOTViVUNUTnk1SElEbHIy?oc=5",
+   "data": "2026-10-26T21:37:45Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "21aa5c01c9d8",
+   "titulo": "R$ 130 bilhões em jogo: o que Pazolini precisa fazer para manter investimentos no ES",
+   "veiculo": "Folha Vitória",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNVThLbzJIdXBNVlJnR29DcW1VTVZTSll6VVJSeTRualF6NGN1Rm9PcmM1aGJ0OVlaMzBWNFkzZmk3NVVwVHd5MXhHWV9BbjdyNXRIb2ZrYm9vQjAzTzFMYVc3dm4xcDV2QXpTS1pMN2N5MFk0ZVVnWVlISEJFZUROUzJUNzNYSnUtYWVteVNpWTJqYUlja1BTc194Y0F5NDB6YWlCdjUtMjllN3hZWnhaUE82cTV5NVppUTBzZjM2VVAxZw?oc=5",
+   "data": "2026-10-26T20:56:21Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "df02c651c5ed",
+   "titulo": "Lorenzo Pazolini e o ‘bolsonarismo paz e amor’",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTk1BWHlWd00xUENCT01uNnF4dEN4d1JjY2daTEVCWEtmVXo1WVdnRzJEQjZxRDVIMlFyUWVTZEdZZnVJelN2T1dmZDdzMUJTS0JQSWRzQ3VldERCdklGU3BGMl9nQldUN1ZubjEwOXVWdTd2WnhFZHdxNHJrWkw0WGVTTXlfSW5QenBqbmhhakNLWDh6UjRJZw?oc=5",
+   "data": "2026-10-26T19:27:20Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "08d7974aaf81",
+   "titulo": "Lourenzo Pasolini é eleito governador do Espírito Santo com 52,17% dos votos",
+   "veiculo": "Canal Rural",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMTBqVlYxVnpzSWdENzdFZWJYNDNzOGZWRDY2SGJKWEVDYUI5cXZnb3k3dXZyRzltbTRaQmdtcHdzX09KNmIzT0owZm9zY3RCdm0xa2FaYlE4TlZZNW5NYzhEVkVzczQxck1xQ1YzMFBGYlB1ZEw2SGxxTHhqYkZqbjlQNFQyRjY5VW02RUpJNUZPWUVXdGtNdlFSaXlkZVlhNGFKbV9EM3h0ZTRvSUpDQTlR?oc=5",
+   "data": "2026-10-26T19:05:24Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "6ee370057aa6",
+   "titulo": "Novo governo do ES: Pazolini e Eliane Leal tomarão posse em 6 de janeiro de 2027",
+   "veiculo": "Aqui Notícias",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNRHVXZXYzeFEybzV5dHJNZjUxUFUxR3F4QVJjSDlEM1NZNDhGbVpJSG0xUzBmTVJKRktqNHZvZ1ptaS1OcW9XWnZCNzNyMWJabl9KTjdmQ1dDOHpkMXhNMzFWSV94OGlsZ3o5RHdjOXFLRDJCczRjNGxTdzl2dTE5Q3ItZmhnTG9SRnRmZUVJeVJZeXNDNFF6U2RZOFpyNkFVTHlrbVgtdW1tczVNYVhfOFBrOA?oc=5",
+   "data": "2026-10-26T18:20:53Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "bcd7c1e4d6c0",
+   "titulo": "Quase 90 mil MEIs do ES podem se livrar de dívidas em 2027",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOczRfT1VCeS1kbkd4YmNDV2E2NVd3c09YajkwSUU3Q0RUTllFX0lYRmlxX2N5NWt2eVhMV3ZaOUpHQ0tjSWxBWnMybzk4UHdnTksyVGNlNHpRelI4d0dYSmxhSVZ2V1V3RHRHWW9xdjVoLTJUSkVEb1ZudzFrV05jZXBmTURfQ2lv?oc=5",
+   "data": "2026-10-26T17:57:26Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "21d001648157",
+   "titulo": "Governador eleito, Pazolini diz que vai priorizar saúde e segurança no ES",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNZENRTFFtNUVvT0lReW11R09zOG5FWWJkaGRXdThFTlBHc1Rwbkdmd3ItTEJMbDBUWlVjckdGLTN2cHI5eUZiVkUyZHo2d3ROX0lycW91ZngtOHBLZVVWY3NkaFl1a1V4ZDNMYmdwc2FJbmFwbDhqMjRJUnQzb0taS3RSUXFIVWVVYzJMazQtUFNQenI0WENndzlldk9WLUVLTkhQd0VUODE1Rmg0eWFST2tOSWFkWnl6Y1NTUG1RQzdGZ0JudnlraTFFcjBpNk9PWXBsetIB3AFBVV95cUxPaG0zdDNrai1DQzhfOTNsc2FVblRCZEJIY2ZYUnZnREI2dEFJTW4xRENUNlIwcUVoRlJWalNCRnlvZlZVU0VNdkEwcHE1ZXBpeHdHdlY1V2JoQXJvX3NUV1Q1NG5zUVhWdWdWUHhoa0M4elJzMVUxU2QxV1QxdkVuM1FIbldCYXVhS3ZVV2pyV0VOUmNVMVZKQTZya053VS1DQmsyS3hCVXlYSE5OLWJQdVdIemYtMktfTFZXQVVyT2Y1QVNxUXVMYUF4VTNUeGR3RXdHOGFlRFRLbTA0?oc=5",
+   "data": "2026-10-26T17:03:30Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "e0a1d9573e2b",
+   "titulo": "Marcelo Santos parabeniza Pazolini e cobra governo para todos os capixabas",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOU000dzVpYUhYTGpBbUZBM1RkN1hkYmIxcnd5UFZKNWt4N1RvY05tNS1aTlF0NlJXMGFVVVJBa2Zfd080N1R1dk10eTBkRzI5STFjMUxXQkZvbFZXX3ZCS1ZJZnJmZGVzeXdGcS1yZ1VBS2JxcmxNSkx0YXphdElmR2hnZldhX3FzbEJRenQtbGxkdm1zbllrdlhCTGRGQQ?oc=5",
+   "data": "2026-10-26T16:17:11Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "476eb0605f60",
+   "titulo": "Investimentos e diálogo com prefeitos: Pazolini fala sobre o novo Governo do ES",
+   "veiculo": "Portal Momento",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQWDN0SEdnRlhnMDJRYWxqU2wxX0Y4eTcwOEJNeHpjZFJ1TFpzNTV1dE9xT1RVaXdsaWkzazJnVmlPcXhGUzRGbkJYUjRjeE9vd0NLWVhBOV9xYU1qcHZqbzlkcG9ucDlfQVBENUwtTUNlWGxBN1lwblVUbUplQ21DbjA5a3drRmMwLXdrZmoxanJldWVYekFsUmJ4WF9PeEd6Vm0welFRLXFQMHItT3pMWWZ2a3Z4a3FvZkhwTFdKVThsOUxNZFhRR3ROQ3pSU3U2VFhnQjdwNl8tZw?oc=5",
+   "data": "2026-10-26T16:06:20Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "d4a6defa5aec",
+   "titulo": "Emendas impositivas: Pazolini defende rastreabilidade no uso de recursos públicos",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNb29UXzBFd1FXbE0zLXhTWlVFbmZOSDlwUHpWS3VyQXZ5TmJKS1FDOHpVVmpaOVhqTzFrMmtqREgxMm9RQ2Y0dVRvdndPU2x5QS1MWFRnSFVBcmg3Unc0cGpVNEtIX0tWcXA5dFNkVFZoY0xjeHRCa2g3NlFnbFc3SHhjRDlKMkFGSE9Dck5obFR3QVdDSzVfbm1JdHN5aUNKSHFzcEgtNU1VajBXMTZZVVdzbG5yVmNsUWtkUE1fbkM2QQ?oc=5",
+   "data": "2026-10-26T15:42:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "2d095553dda5",
+   "titulo": "Pazolini quebra ciclo de 24 anos de Casagrande e Paulo Hartung no poder",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxObEo0cnFiWU1RbVVSRXBWVzMzZ1VBNGtsd1NRUGZsVnBuM05UZHpKTFItNFF2ZHlXek96b1YyUU9rQTNGSll1REF5eVVoRlF4Z3ZURjVHN1JmY090WDVGT19BUW1hM3RXYl84QUpaYjY0Y1dnd1hTZHBzOVMxcGRyU3ZncGRGanZQS3dUNFVsRHlLaWpQY0hjdF8xQ3FVc2tFUGppbUNn?oc=5",
+   "data": "2026-10-26T15:32:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "0703442f0d48",
+   "titulo": "Pazolini confirma Erick Musso como primeiro integrante da equipe de transição",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQMXpHSDdsUEdUeEtDSUI1eWRBeG9QdGg0ZGRaVTA4dE1makFsTjFnNm5CVnFyY1BvakUzcmJNRkl4RTFSeXc1WnBfUnpRU0pOd0J4NUFzdkRfSHN2RC1kbENCYTNta1lEQnFocDQwTzhMcVZRRWhGdVp2T2toLVdFaG95WGc4T0dVSnRiWDdrN0toZjhwRFVBcTFVaGlDRkh1V0FzVFZtQW96YWFPcE4tSmFVb25IMHhOVzNrai1B?oc=5",
+   "data": "2026-10-26T14:54:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "d444e8070edf",
+   "titulo": "Em pronunciamento após eleição, Pazolini declara gratidão aos eleitores do ES",
+   "veiculo": "A Notícia do Caparaó",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxObXoxTkstVzJMRnpNT3JNS0JtTWREVXdtRmxWUkc1a3gwNXdHMDZiLV9FMnRmX2xSd1hjVVJYbnlyMEw3SGpkYW53Y1o4d2dEOXVUWE50dUxVX1N5REpURDh1M3RLbjV0SGRoSjVKR0lQT2lZM25hdGR4TTF1TUl0S3lrRFAtM2J0VWJ0Ty0wLW5hS2pFWXo5S2NjNVEtX1VWbHd2MUlQcndBUXJVNVEzTGw5MUhiQzhZR3kw?oc=5",
+   "data": "2026-10-26T14:11:09Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "e239c5273cda",
+   "titulo": "Lorenzo Pazolini será entrevistado ao vivo no Tribuna Notícias às 12h",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNbzRJWFR2enlpcWRVcnFQNzVzZWE2M2xXQ2pqTjlnaHp1OFpURk9sMXRpeVVPQkxZc2dvcDhwMnFCN3BmWFhGNjIxV2hFcTU5bDZDeHoyWjJ0c1dwRXN1MkJNVlFxMVhyYUlwWDI3Q1VHS1B5cV9BY1ZVN2RJYXRGNVhERzZweGhmdXJCRkVaRUk1c3djM20ycXZCYzFkd2tJZmFrQnJXUXZZODl2SloxRjQzam54ODIzT3pWUVV1bFowc1lCZXdRN3pnMWV2WTFx0gHYAUFVX3lxTE1iY0pkR3lsMklTanh4NkViMnJuVmpLLXloT1dycGpzYkJDMVpVSGpOTFVBX3lDbW9sRWM5WFJCVjRmeDRORFlnN1Nwcl9oU2M2MXRib2pVYlEyV3VpYzZJMFNvb1N6bFhub21XYmxrbko5dWJ5U1l2Z295SEtGNWlqeC1iaG9IcEtnTFBhZ0o5NkQ3UnpLdHZEZHZsYTZWOVFuQmE5Tm8weFFBZWU1cmdkc2RRX2pMdjRKc1dtQTViOXVic0I0TjRnUmo5UXhZN3NaY1RiYVZ0dQ?oc=5",
+   "data": "2026-10-26T14:07:59Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "861ec6134b56",
+   "titulo": "Pazolini e o pedágio da 3ª Ponte/Rodovia do Sol: o que diz o governador eleito",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNMEZweE8tOUNXbWNqTWx3Sms0cnFLbjBaMGVudjVCQmItOUFZNm1wTFltZWxsWWlxSlZsZUt3N3U4TDBabE1iYzU0VzFZLXdsT1VudW1jWnZZUU1KNVdmcVFZaDlzbUtXM3l2dEE1WDA4TC1BbUpYSWpHdk5GQ2RySkI4dm5lQTZGWW1MZGU0Z1ZYQzF4Nlp3eldtemdqcGg4RW95WDBFVXppejJGU0NGV2hJVzl1YW1JYklaNldYYzZQVnpWMHcyMTBUOA?oc=5",
+   "data": "2026-10-26T13:57:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "225131bc308a",
+   "titulo": "Investimentos e diálogo com prefeitos: Pazolini dá detalhes do futuro no Palácio Anchieta",
+   "veiculo": "portal jornal do norte",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOVXVleHVuV09vNGd2b2Zha3Ztei13MS1rZWRTUE9NNjdzZmtyZV9pRHYzMFJDVVYxaE9lb1dwcFNCN2tzWHpoREdkZ3dLeElpeWZRUEd4cHo3dktRZjJtc0FKSWNMWThQWUZ0anQxSENIcHdUREw2MGFEZldQaksxczF5N1EwaEZsV0RudWNqZVZMT3JHbmplQU5MWXFGalAyNWpQd3N4aER5RlRRaDdVN2FTQWNaOEgzN2d1aVFRRGJRUQ?oc=5",
+   "data": "2026-10-26T12:28:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "4143ac889605",
+   "titulo": "Pazolini vence em 40 cidades do ES e Ricardo em 38 no 2º turno; veja mapa",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPYkJ5amxUeHRwVEVPYnpYbnZBS3F4MS1WcFBhSFpIS25vSEM5c2lWblZMbDJSQkxCb0dDV0ZwN1JocGMybllfdmU1UXZ6Sm5QTDJiZjNManprUmFLWWg3U3BZQ1hQb2pXcXVMUHhKUWZ5cFlkamVjWUhyXzRHYk8wZEFFM2ltcGZnUGx6Sm5tcWFNeDk1M3prZ2xfakdVWFdRV2hYV3dRMnhzTkxBQ0gzNHhrOG9EUQ?oc=5",
+   "data": "2026-10-26T12:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "dbcd4cad19d0",
+   "titulo": "Lula é reeleito presidente e Lorenzo Pazolini vence disputa pelo governo do Espírito Santo",
+   "veiculo": "Conexão Safra",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOOGpndm1QT2tNZDBXdlJlY1pxOVB4ME5uUVpObnRyQU5UXzE0Ui1VdlFVYlRjRGRYblJ4d09BZTczMkhMSTVlNl9wQmRpTVdqV0sxeVI3c2prcE5HcDVrd1lMdmx3dUsxd3AzN2I4SXFOeHo1WVIwYXcwd3R0Qk1SLV9WMUw3cVZsRUY1MjI5SHA1OFRVUEJuRjVsdFJiYjBYbTJ2Xzd6clk5d3hnMHRRQ01RQ2pvVTFpSktvclc0TQ?oc=5",
+   "data": "2026-10-26T11:54:44Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "81ef0d6873ee",
+   "titulo": "“Compromisso de governar para todos”, diz Pazolini após vitória no 2º turno",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOcjZNdzFFVzdxNHJQMjZNNlBuNm56bE53RmVCTHhBXzNwa050ZEFLaFdpUUw1cl9CYW5wUE9qLTk0QVo3eHJycFJZWGwwVFZDcGI5RlVxSTl6c2NGUkY1ZmFHMlRHcE5Ua1RfSzFEYWFVT2dzcFd2UE5rcUdaTFVRWHk2ZXVfOENTQkNFUnB3ZGFWa18tU2JJTko0bGVQakR4LVJsRXhvSDdiNnp4OHIxc3g1S0IzUmxlaklhUzdScVlBZzZiVXBnMFZwTThVRmlULWNV0gHbAUFVX3lxTFBwd3YzaDkwOHpacnowWHY5X193RGJwVnF4NkMtb1ZhNDI0bW9pOGxqR0tWdXlndHNKamJFRWpBeHhObXVlaldBc085TG5HdXZOb2NLSEVsV2VtYl9VWjRfNmg0OW9ZSE53TFpNZ3ZzUWpFZHlFU0hQdTBWSGFzYWMxZ2xoazM2bEctYlhCcnNLa1MwT2NYMFZ4M0tPaFRXS3NMaWNOdm1yTmFBRlBwSjdtNXZWWE1xSmtvR29QWVlIQmdFM3p3Um05SEVycTlWNnRBcW1wa1RVM0NVRQ?oc=5",
+   "data": "2026-10-26T10:28:48Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "de178f788155",
+   "titulo": "Eleito governador, Pazolini promete união e diálogo no Espírito Santo",
+   "veiculo": "Blog do Elimar Cortes",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPU0JTTjlMMmhRVmV5SkZkc20zcTFkcXBrZVlmZXFMQlJhVk02S1EtMEN4d0U1dDBhU0tpc1FvdlZ6clNJQ0FJOUptalF0dXlxemd1UkJpbVU3YTlyQ1RkTmxyWGRBclNoZzFiMXU4X2VzWjJBUTdRSE55MUJaVWJxeWcwZnhZeU94T01oeWFCQTBYYTE3LXp4UmpqdFh6eVE1LXBZdlY2WnpZS0dX?oc=5",
+   "data": "2026-10-26T10:06:07Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "9212214c2d72",
+   "titulo": "Trajetória de Pazolini que o levou ao Palácio Anchieta",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdElOWFIwNzZrTG5QaVlDenpHM0w4WFduNldwNzhGM3M2OENiOHM3WGZiNGdKWXFTY21ndFVydkxiRkRVU3o5cmZuNUtfcUEtWHBOdk1lYUNROVNPOFB0M01jMVROWjlpdkZWMDdEaFdXWmlxSVVvZTZQS1VFRWZlUUhLRjNEemtIQWxWRVFIdVJZTTBlWjM0ZTg0RFkxUTVYY2loeXNoY2pMUdIBsgFBVV95cUxOUG02eG9hWFNxY21NM05VMjcwbmNsWmFRWVFkYVI1bHUxYWYxWWl2TXVEbmV4Z0RaNmtGOWRjSjlkM0tKaVc3dGMyTHNZeFB3VEtXTVVPZlRMaE8wYV9NYlRRdkFzRFc1SWhybzN1N04wRFVMUGlWcmxQTXBQQ3hEb1VObDBoNjZjcjRSNDk4YTFrclN4N3VhMFdmYTFwRXVBU3QzaHlUZXJjZEZrSXBQSkNn?oc=5",
+   "data": "2026-10-26T09:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "10fe8c0037fe",
+   "titulo": "No Espírito Santo, Pazolini é eleito com 52,17% dos votos",
+   "veiculo": "Valor Econômico",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPY2tuMkItV3ktREtHWndVQllWS3hpYkR1ZGV6cjdpWjctOFZKVVdHMTNHZWU2eEdYQmhuRzM2RTVZeG9xMGMyUmZwRDFPVlBiMVJYOUNUNEVORjlLcDJvZFZUQ3FlWlZ3MDJVaGRDRHlsQ0JjYk14MUhHLXFJaHpscDdxVkxIa0MwS0RoUkRtZWc0S21kbHJVVThrNk4wQTFoa1ZIQ085andCLUhUVm01YWcxSldCWTgxdHJkdW4wMGJBSFRZ0gHTAUFVX3lxTE4zQXVMZldJM2dCT002cU9SZFpweW5ZWFllUkg1LXhYdXhndGVxMW83Z181V05ST3d2RERQWUNmbjhWSTVXVUpOTmJKYTItbnBXMjNpMjBlMlRHTWJMWGRvWkZTZ2tpVi1pclhlR1J4Ty1leWlGbE82MmNkLURxLVB6SmhveGFYQkVlM1FhY3pPRkFMaGthbUZtakctd2E5VDdLcFlLcEliQ3NqQ3J0ZGJqeXBHeWlDWU1Ja0hDcVBJeDh4R3FCdThyc0xqbXAtSTZ6SmM?oc=5",
+   "data": "2026-10-26T08:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "c390cf645d76",
+   "titulo": "Lorenzo Pazolini, do Republicanos, é eleito governador do Espírito Santo",
+   "veiculo": "GZH",
+   "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPRlFfNFp6UTJ1UkppdE9qSUtlZ0lXbVMwMG9USmRFaS1tTlZuNk5DQXU5Tm9idGM4TWpsdkxaY2lhMFlCS1FHV2RoS3A3TXJOWXN1S2c2V0F2Ymw5WEc3eW9CcUEycFVJZXI4amdWR0htTTdUamdQTWQ0aXNBVk15VnhZYzVmYWVMeG4xb0pWTHhGZ3AtSTZybXJjVkc0UzFjckotY3d0MC02VnJiUGZ1X2kwb1pDVnZyWWpVMzlpVjFuQUxEOVRuV1ZWRjE0X0NxSjBmdjFSdzZFSUZCUmppVE4yM1FmUGktZGhQaG4tRFh2SVpDQ1ppU0JqMA?oc=5",
+   "data": "2026-10-26T07:38:12Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "16290b5c541b",
+   "titulo": "Pazolini fala em 'governar para todos e unir o Espírito Santo' no primeiro discurso após vitória no 2º turno para governador",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxPQ000R19EQ3o5UW04a1ozY25uS2VfTE9HdkU1cGp6dzhtMl9teWgwVzhOTFV0Ry1FM1pJdlhUMUN2MmFaT0RjOVV0ekdyWGNYek0wRXZ0UU5qaXhRd0VzWnJ6S2p5QlVib3hFeXVsNElranp6MVgzTU9xVmV0VlVwMElDU0gwNTlmV1ViUFhVUXRVbVRtX0NPNVQxYXJtUmozMzB5ZGJCWTBXRE9wU05oeWhhYTZZZWpKaTRjS2xyT0haRS1jcGVwQW16bEZlUzZ3WWVZTEhERDVoVVFfVERma1lGOUlKcG1RNUdTa1o5VnlHV1BoSkU2U0hHaXNUNS16OXQ2M1A2UXhnbGlSTHhvd1pQeXp4cl9pRS1BQ19IRzJ6X2ZUUTcw0gG2AkFVX3lxTE9YWVhFZ3JFd3FXbG9YMTZFYjVaajA1T2d6Sms1RHdidU1MZUVwMnl1enNfSjZNMlAtZlVpU2djcEsxbDNPRTRaMFo4UDVlM0hLQkRHSEQ1VTlOSlFYOVhDcEVSWTB4bHdrTTY0Z29zN3R6VFQ0MDM0UElfTEN4Y0RFVjR4NFc4S3pfeGxUNDZtQVBFRFRRU0ticjFmZHFaa21raExXVU05NU1iQ1Q0NnVFRUV1dHBMSFZic3g4YVhXMGE4Uk5hMVRvX185NEZObWNsbTN3RDlXVDhMdVNoR0lFU3kyYUVqbFBpa2tWcm5NQS1uWENtZDhPOGFfV0w5YWVGX3dlUE91Zno3cmVrU2ZIS2hpV184NzUzUWw4NlR6SmhpTjNTZHJ6eWlBNTNPdTdJLXNJMWc?oc=5",
+   "data": "2026-10-26T02:34:30Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "440f4779d727",
+   "titulo": "Espírito Santo elege Lorenzo Pazolini para o governo do estado",
+   "veiculo": "Agência Brasil",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOTEVROGwwdUFRZEhhdXRXMFJzLUxSbW5sbW56TkRybDNJeUtYR2pSNGZHTWVoOWZQZlIzakdQbkY3MFNFWG45Rm5HNDViRFdxSnM0RXA4bGdjLWsxTndGMVdXbElCOU1KMFlsTGJEejF6Z3NYNkVYbElwdnZYRlotcHdxMkRvdTdWdVRtNnUwQzM2aGtSNm1MRktmZjhBbXFlaEFQMzJ1UTlla1ZnM0pvdmF4WExjeUJCVUNLU0dqamNlcXNuZndxMmgzaWdfZmY0R3NLUGVtUQ?oc=5",
+   "data": "2026-10-26T02:23:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "4b21dcde2bff",
+   "titulo": "“Unir o Espírito Santo”: Pazolini comemora vitória e faz discurso após vencer eleição",
+   "veiculo": "Folha Vitória",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOb3hlVmJWS0ZpQWsyWF9uTko5NXpuMmZjZGtqQ1RpcG1QQnZPbXhjTXRwZC1MaGhIbGNyTm5qZkhrWkRpRGtWX1lZU3E2LW1lQVRaUU14VV81bGZKNTRUQW1HcG1Jc3NKT2tHMTRrWEhneDVqWmhYZnFINlQtNmdKOFVyV21FUFBZektGbnhLZGJ3UFBrcFFNUFNTMUFZWDdYSXM4NnRVVXVWVGk4UHFmbkRGVEZzNEo1NE4ydA?oc=5",
+   "data": "2026-10-26T02:14:37Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "ec817374ddba",
+   "titulo": "Apoiadores de Lorenzo Pazolini comemoram vitória para o governo do ES",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNM2FMemwzNnIzclJ1YWl2SEtrZjA5cUs3bl9UaGthT09MVjhfSGs5UFRnTlZiV2RiMGt3bU1LLVcxMjh3OVRkNnFaMVNCdHlyNDZXSkwzR3RCdnYzQXFTbFVUTVdOaDlpNDlkVkczMnVRdWd6cWVwQkFZRFZkM0dkLXFiQkZiU3RfejMtZmNxMFBQQmZKWlloOXY0ZU9JZWEwejFJYVBWOXhYZWRBMGF6eGlMcnBRS3JjOThxaFlOQ3VRUl9udFo3dzFZa29kbWZy?oc=5",
+   "data": "2026-10-26T01:53:53Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "dedf3b9a6b07",
+   "titulo": "Pazolini promete união e diálogo após vencer eleição no Espírito Santo",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPclMtdFdUNlE1WUtfNXJ4cHY0eDFpM1VzZmF0RTBhNWE1YUE3bkN4UG5aRkwzdTJHSkQxRlZGSHBWZ0c4SjZURjNsZjBILVA2bGVWQm5Fb19LNUNUMk56WVBvSmVia3ZKcEo2V0NEdWx5cWIyVkN3THNMdm4tbUNPMnpGWWlrRVlGY2o0UWdKcUk1cDVzZHVZUlZBQ0x2Vm5PTDNqNEEySDlaTEJCYkpDNVJJVUNuVm1manZaTGhySllqaVkxSklLZVFheXNPSmdyVXfSAdoBQVVfeXFMTVFnZGdWaUF1ZndvSzFjUnRSanZmbUVBczZFY1dJb1pjSF9WMTdRMkt4d0N2cXFGNV8tYlFrMTNzb2dzWTVrZVVTUmYxU2p5OEF6Rk5MQnhTRjRyMlZpV21fRUp4MzhyR3M1NVAyOHZReTN2MHhlMkNwM0xZR2NkU1Q3UTVrcnB1VDZlUy1wT0w1a2N5S2p2dG9EYVNRM0VwdWZ4WkJMM0JEemE2MUtjRUVTMksyWVV4QTBzYkIwTUNiLVRfeHBRYWdlNVNPSWpNSjY4WklZWVlPa2c?oc=5",
+   "data": "2026-10-26T01:22:11Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "2057cf2e8a36",
+   "titulo": "Espírito Santo elege Lorenzo Pazolini (Republicanos) como governador",
+   "veiculo": "Brasil 61",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPcHFtQnZUaWJKUXZreXpTMzRUMVplNmcxbVQxbHVWTi12RXVKcEFieEdmZk5US0dTOG54YUN3RGhxTGNPUkNQdkN0aEx5WEx0ZXN4SUJOMEd1WTFOdDBydE9FMnZNTXI5VHE3U2tDZDZVUnJiNnFqLTg4SXBEdk9POERHZElQYnFCRk1RLVhDYXl4bnBnUWVHelBFSi1IdmpyeDN30gGoAUFVX3lxTE9vTnJCZ1hsM0ZWeE5qeFFGQmtwYnVVWXkta3h4UjBXSjJZS2pvNUFKUGJMcl9Ubi1kcF9oSm5oWE1KN204eFcxNGNyRlJhY0lkQm05M1R6SUlhWFI1MW54T05iSENvdi03MUdPYzV6T3o0bmpFZVlWbXhKZkZzTUlVWWZEZmp6QUoyNGp6Zk1DMjRPN1JOZi1iaFdxT0RNNTVUNDdjS2VCTg?oc=5",
+   "data": "2026-10-26T01:22:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "01dcedaad874",
+   "titulo": "\"Respeito a decisão das urnas\", afirma Ricardo Ferraço após derrota para Pazolini",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPaGZuXzV2QWVobXNORXhDLXBETERXclhiZHFjSWZiN0hzanZkMzVsV3BuS3RDSkxqM3pVTlFyeUZKMXVVUFhCNHpOVEJsekFxZ1FJeUpTS1hucmgzNEZNQnJNSXlNU0lhc3pfOUI3ejJBcHd3SEdKQUVfMmNIc1hwMWZxWUdkSkkzLVlkRGQ0Mk12MURFWFBKRkdkaWxnV3paMmV4UXg5c3JTR3ZxQWtjOHB2MVFsYUt1TFN1WHN6V2kzTDdkYVFfUHJUQUIzM21EMzlyeTl0Z2ZUZTJJ0gHkAUFVX3lxTE01clNHWVRaQ09QX0xYcVZFMndRbWVlc0VEUHpFdjRFUU0wbG5FWmtmZDhEZUJsZm5ZbzdZRHVhXzdEYk9YN21UNEYyR0NlQzRHa1pIVVpQSHZTQ1dROEhhamJmWmFCbGxTMFI5bl9adk80NzZUSGYtLWFHUlNDRnNvSWJGV3BPeEY3dld6Z2xKTDlGYXhQU25tbjdsQTZXVk95RFcxbHdVWVZ4WFhfMndLdWlKTE0tMjFRRlpmY01MN09oZWdBNTJaMU53RmxpV1N0Sm5tQ041Y25wN2hHdHBSVzc0bw?oc=5",
+   "data": "2026-10-26T01:08:30Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "85a41043c041",
+   "titulo": "Lorenzo Pazolini vence disputa pelo governo do Espírito Santo",
+   "veiculo": "Diário da Guanabara",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOazJIeWpHYjRNZVlXUTZlVHk1XzhBRHVVN3VGc1FJUHRvaGRBazZkVXJDajVlZnV1a01DZ3JMZ196RlQ4RGllN2dJSWIwcFYtbGRqNW1TUVF6aWFveU40cFNaNUVQSkprU3RELWdYd0ZnVDdlQ1hxTFZmdXdoRnJTTjBzQ2pTTXRtMWxidk1QZE5XY1JM?oc=5",
+   "data": "2026-10-26T01:02:18Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "c8f859961fb3",
+   "titulo": "Quem é Lorenzo Pazolini, eleito governador do Espírito Santo",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSWFoZ0hNSldxaDRLVDdiMjZZamlZMWVpTV95Sy1QTndXd29rOW95T19zSmluZGtWTnRDSWNXNU9xSk1XcjFicTQxaVJmQmZiUWZ3Z1U3Ry1DNFZ5WWJTQUprNHlKWkx2MHVTSFMySlUycVdCSVFlQWRTeURKN1hKQ1FUNkFxRlh4WEJPTHI5MnltNkphb29mRjlsOEtxOGhLdWNFWFF3?oc=5",
+   "data": "2026-10-26T00:58:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "a2bb388bcf41",
+   "titulo": "Eleições 2026: Lorenzo Pazolini, do REPUBLICANOS, é eleito governador no ES com 1.151.818 votos",
+   "veiculo": "Conexão Política",
+   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQ3RzNnVVbVdDeUVIRUJxQ3BCWTJOb3AyT1dFZWpBeTdONUpmWEdiX0RkcXlQaWhuSVhEOHg5TU5Fc2JvWG1TZUp2S0JFR2EzLUdiTTdEOHpsNWE5QU0waUpkVHMxY0xIRFFZSDRLZnpjRDhDR2x0Rm9Qb21RdFlMaWlITi1UNW9LWW5NalNVN1Z4Y2VDV3diSUFwRWxPV2h3TWtHaDB6TjdMcVRKMHhORk9xSzZRWnlvT3lscTB2dk1tbldUbVVVVXZwc0RiYU9tb01PYnk2cWQ4WHBWZWo4NlR6Rng3OUNoNEVZ?oc=5",
+   "data": "2026-10-26T00:52:42Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "39be1ca4711b",
+   "titulo": "Eleições 2026: Lorenzo Pazolini é eleito governador do Espírito Santo",
+   "veiculo": "Investidor10",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNaE00clp2b2h3Mld1OGRUTHpHQ0xyel9ZaHUyQnRsX096VzNWSzg1OGN0QnhzT0xtZjJSVktTdkpZSEgtOVhrQS03RzI0SG9kQWJ6dWJvRGNQb1h2bHZXZXd2VnNXS2ptYkY2cUJaMHZGczVYOXlvWVpQd3VFbjhPN0xQcjNaLW1aN0xjVGZjT1FvcHlVTm9KV0ZCQWdqNUFLRXZZT3VKb242MUVPZWVwOFVod9IBuAFBVV95cUxPRHlpallDbHBoUjY5Z0tRcEY0eUlzYWd0SEZhcjRsVFRhUEt3WGo1TVg2ckNCOE84U1NNVEpaV2c1aGVUMlBHR3Z4N0pudHFoeld4VHFRRk5yRGVabTRYQkZrblFITjlIaFlESW9LRXFPVzB4Z1BZel9MTmlJTWNrRWxYbGw0QnNIakJwLWFzdVBzNmJOM0ZZQzU1bFNzYmstZXlUSUV1YmR5RFRMZGNCdGprOFFFbjA0?oc=5",
+   "data": "2026-10-26T00:47:06Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "74ccbe72bf4d",
+   "titulo": "Quem é Lorenzo Pazolini, eleito governador do Espírito Santo após vencer eleição no 2º turno",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNWFFUZHhtTWE3X093OVpsZnQwQTVyVmFGUFk5eTUtRGtOSGxNUU9JRGJQcy1JbGg3Q25GcGtMU1dpTWlLV1dfb1BYNGhQbzNpVEJaU3RTWmhRcHN0ZXlBSFlPTmpOSEg1bTFhUEdjakVEMWM3TFhvTGRaT3JDY1AtSlVKeG9pMFoxaWQtdVVrd0dENkN6b0REZUxHbWhrVllLMzNWa2pSd05FZmo1eHFiYkQyeUJvbnJocnVNWUZ1Vlg4OHFlTTdfempQYzlacUpJeldROFJfbmRfVS1VNVd0NjMyUEhJa01oN3JUS0dCdnBPSnRPYkV4eG9Xd0p1QdIBjAJBVV95cUxONkktc3Z6VW9WZkthRFl2dWZYVEd3bFRjTlRiT0pYMklXNDc4UnNWSWVtMC0yX2hVd1JOUWZuVGJEeThoSFZxYUdfbEEteDNWMk1raWdaekVmMjgwQ3ExdVRDcWx1dUZiQXFwU215S0lBQXh5YjBVeUF0YXF3bmhzWTFhbnIyODFYQmpJci1oeDI3cjlTTWtXdS1EY1JCQll1Rl9wZlUzVHh4bnE1U2JJSUJqY1RoVEZyQUFFa2Z4R0hVRU5lRE5WdVpOMjloZGpJVXZvWjVMZ19BNkduV2hBclZKNEQ0d3V0SzZlZ3hHQTNFT0lvRjZSVUZ0aklBd19vaWRFR3ppdnhPVGla?oc=5",
+   "data": "2026-10-26T00:26:22Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "a72cebf4b450",
+   "titulo": "Lorenzo Pazolini vence Ricardo Ferraço e é eleito governador do Espírito Santo",
+   "veiculo": "R7",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNcmxCUGRQMmFoQXdRNzMxSnRuVHE1aXBUY0tDYm1hR0VibkdIb2d6NVVSaFYyaFJVV1BmaldrczJHU3VCQU50QzdkckNOUk9kc0l6cGxsVHNZS2xETkhfdlNyNGRwaDlXLUE5TThBS1JrVHg0b3d5YU1veEJkdG5YRnRkR0RQQW1MLVc5enRpQ1hnemUteUloVVJoTGVQbzZyVGxLSjI2bWhaUVR1UkhsWmtuWlF5NExVMFBQWHEwbWhQRzBBd2RpN05sNmw?oc=5",
+   "data": "2026-10-26T00:25:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "2dbf539dae9d",
+   "titulo": "Pazolini chega ao governo do Espírito Santo com 52,01% dos votos",
+   "veiculo": "Vermelho",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWUVYR1R3TjhyZ1JwTU9wWWZmSllqVk52RFRfd25IUFI5NG5nbDU5c3pDMUVOaUs0cnhPcE9uR2xjeEVFYk5LZmZzaVpRdjk2RVZQRTJPZ1FGSl9pMjhrS0FZNHloMzN6aHVOY2g2aFRpZWFGakg3U3Q2NkptTWoxZ2Jnd0FLbkdIMFhWc19BeWMzcXRsRFZyRkZweWY4RTg?oc=5",
+   "data": "2026-10-26T00:21:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "cd2059322e53",
+   "titulo": "Lorenzo Pazolini é eleito governador do Espírito Santo no segundo turno",
+   "veiculo": "GP1",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQV3hPLTlhOXFack4wdk9Zai1RMWxBWnVFQkpTZHdMREh5eVFPZmpvNV8xbWI2clAwR29UN2dqTUNZYVZ2TVhUaHNqWFE1QVBfZGYtNHFDRmxEM09PMkc3MzhyR084QV90VXpXampQOUIzS1ZsVElPaDRrMW44amxoSzdDblNHTDRPbnlpc3VUQ1R6YzBhTXpMVUJ3emxTbUlPSGV6Wm5uTk1QZmR2Njl3UFJDOGhlMVlJTzlCQUd0ck5BbXdZNXRVU3VsWU9EMDBYb0xUNnhR0gHbAUFVX3lxTE9BUGQ1QjJ5cmwtY0Z5MENVeXU4ZXpsbWl4bE5iUUZKZ29FN0lQVWVtblVVSjNONmo3bjRUN0UzdjhKNDdiYlV6YzFSenNaTkZUSlcxTFJxZ25JMkxiaFBtNEdhY3JwVWFSaEcyeml0elphNHg4TnB5QXc3N2xGN09JdzNxVW5sVVFBenlhRXVxMTZFcU91aDVQSzk3RUJZOHdEdHFOY0NYZzRISVM1alpFSXZ6V2lGRUdKMUlsODZTN3JYX1ZubWlsVFVNUjIwUlhmR1BfcnlWNjdGaw?oc=5",
+   "data": "2026-10-26T00:14:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "859c5db61324",
+   "titulo": "Lorenzo Pazolini confirma favoritismo e vence eleição para governador",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQalpyWE9vQW9jYUdrTE51MlNQSV9FZS1UQWRzWEdYbF9yenVuLXN4RVdkQjRnVnNneFNSN3BsQTFGRHlXd2podkF0UlZQY3hVaEJldm9ONHoxYWJHZTBMTUJMdUtwNHRRUW5MWTNiTDY5M05FU3JhY203VUFPaXd4WWgxSXFKZXp6WmlCRUUzSTNBX1MxQllwZFludEt2WTFlLVU3OWw2SkZ1MUZpbExlQw?oc=5",
+   "data": "2026-10-26T00:11:28Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "d41b19d43506",
+   "titulo": "Pazolini derrota Ferraço e é eleito governador do Espírito Santo",
+   "veiculo": "Claudio Dantas",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdFptOTcyeW5iWV9FM1Y1VmhBTG5mSW5MR3RpcFFNNHFldE95cF84MnpVN3FOUnlaTzdmUE9vUzJ1SzRpeHdwaU53VzZlRGdUVFBQdjNuTmhtSlhFd3RSeV9PUC1VNno0UDREMkxxTHBYbGUxUXJpZmxOdFAwTjFSZQ?oc=5",
+   "data": "2026-10-26T00:09:29Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "11fbdad1a27b",
+   "titulo": "Pazolini vence Ricardo Ferraço e conquista o governo do Espírito Santo com 52,01% dos votos",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNOTljcTlaemtfZEdLTWxwdHVsdVRWMURIXzljSjhTU0ppNWwtTERkRFpwUHZPZ2ZKOElDUUlxa0pmRFhyZjAwNFppdXhrSWhPWDFsZUxSWGFGejBoXzFVY0tDZktNQUR0eWVGQ0xMQWFBamQwQjJFd3hlS0RpX0ozZWdFWjRMdkd0aDJyUENGeC1acG9RUlJVSGQ1cnJoVXA2S0d4V2ozakI5NFVMYW9uaGFR?oc=5",
+   "data": "2026-10-26T00:08:36Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "d1d6fa81cfdc",
+   "titulo": "Lorenzo Pazolini é eleito governador do Espírito Santo com 52% dos votos e derrota Ricardo Ferraço",
+   "veiculo": "A Crítica de Campo Grande",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWGJRSWJ5bTVJT3haOEJYTjRWVk1jNkZrUDRrckVKOHduY01nN05OdG1feUs4anpWbkxyaVl5eUNvRHFoM2c1ZE8xcnZIVG5WdVItZGRhQXdVQjZHQ2hVelVLTVpkek9BcUFxa2ozX0JteHJwcEVaQzh2Mm5uQUZkWkFzU0QxWEpnNFA2UUVQcHNIV0o3Q3FCS0ttaU4yVWsw?oc=5",
+   "data": "2026-10-26T00:05:13Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "ab56f3be95f6",
+   "titulo": "Pazolini é eleito governador do Espírito Santo em 2026",
+   "veiculo": "Campo Grande News",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONVY1bjRwLUtON3RRbmpBWWl6RWQtWGlUdEIxUkhBZjczYThnVldoQ204M29jQjlCckZjYlhxcXAzbmt0T0dwTnI1TzFTaWN3TXRkc2cwV0JtVUJVWjk3aFQyel9naEhhSGczU041Q00wM0YyZ0Y5VmUxSU5xbGgwM1cxMXFCdnpMRF9RSFRvOVJfWUpyM2FRN0RaY1FmT3hNMTNfTDFkNNIBpwFBVV95cUxPeS1JajI4R1Zzd0ZvaUpFRlIxbVJ0YlBSdGlaWVJ2Y0sydG1NQXd3RmZHWjhzbnlDQWdfZkN0bGVXSEh2RURDWUFqbTd2N1lJRENLWDk3M253Z0RYdUFhal96SW9QY1JncWRPdkgyd24xb2NXZDU5bHltczVFdFY5UzktTDBBbGwxeGRielJXYmpCWG5ndEVEbHd2eG5vT05QLWVvZ096Zw?oc=5",
+   "data": "2026-10-26T00:04:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "0bc76dc5be81",
+   "titulo": "Lorenzo Pazolini é eleito governador no Espírito Santo",
+   "veiculo": "JOTA Info",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPUzlsTGJ4NFB2QmZIeTgwWGNXcXM3X0x1YjhUenJEbXQ2bmpDSXNVd01pTjNVTVd3amtialV6d3VJcG8tOHRXcUU5NjRlcDhlRzFPS2RQMENxSW5PRjlWajJiUDlvUng1ODFrelMxZ3B4b1BQNG4xX1R1TGhHQkdxLXVvZTNacVJrTkh6a2NxbXBUU2tzcmltQ2ZpVWlnMkNY?oc=5",
+   "data": "2026-10-26T00:02:39Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "ac7e826f0ab2",
+   "titulo": "Pazolini é eleito governador do Espírito Santo, ao derrotar Ferraço",
+   "veiculo": "Diário do Poder",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOSllRU0h5M0xSN1VobGVWOUdpaDVZUTdDQU9ndnhmRXdyTXJGLXRhUUpCSS1UdVNKdXNNajhlYy1SczduQ2FXWHVBTXRldFphQ2kyaUpuR09pR0g0emtJOVF1TDlON19PX1l1dHFreUdCVmNqZHVQUk9uSzBtek51WE9BdF8wanhLOW1pdlZfWnRHejBLNVFVQ3kxTXFJUjJwZFZKT3Noal9HNjZrQUNrVkJtWFROZDBfUzkxU2RWdmXSAcYBQVVfeXFMTjI2SnA5ekV3UTNvZU95UE1oZG96SmJiUVVTTDBjbm5kNUZDQ2c3WFFJUll1bFI0QTNGM3ZjVnIteEhlM2JBMlJwQll2Sm1GWXJJZ1Z3X09NR3RWR0Zxdm1pUW9TblZ3QkF2bjFlQllfNy1CNXUzeXZGVDEtLWJRSkg5UEFGMkQ1Q1MzQ3ZBcFRtbFlRZkZnUHJPTXJoTjdINWJJUjNFbVJwWkRhcWt0WnN4eTc2Q3d0ZkJtRUJ6a00zMEJEOUlR?oc=5",
+   "data": "2026-10-26T00:02:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "de308a177898",
+   "titulo": "DECISÃO 2026: Lorenzo Pazolini é eleito governador do Espírito Santo no segundo turno",
+   "veiculo": "Times Brasil | CNBC",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQRW0wRjhSX2xaQm1CVGc0cjNjRm9QRVNkTEUtVzdCSzZrVnRNOU5NZnhQNWQza2doMzR2NktKenNpWWNNUDBfaERIc19PWV9GUU0yQ0VqV2hoYlp2NEJlblEyZFdYLXY3Vkk2dnd3YUJSMHktOHdWeDE0dmZwenJ2WEwzWVFoMG1vN0Y2QUIyd3FfRnlBWkpZRVRGR2RGaURMWU4ya1NnYjVLbFNw?oc=5",
+   "data": "2026-10-26T00:01:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "d29ab6ac564a",
+   "titulo": "Lorenzo Pazolini vence o segundo turno e vai governar o Espírito Santo",
+   "veiculo": "Agência Brasil",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOOFhpYWdDX1N2Z3ZCV2toU1M0eFNXc0ViTmc4UmVEdzZzTi1sckJkc0dHWHAyamVRbS1TY2lWT1k1bExoZWwxUS1YU1g4ai01MWNWZUhSZVc0dHlwWVQ0WHZuejNualRkS3p4RHZZaUFmME91ajhiajNQbElKZV9SZTNqTnNsdm1ySTA3TEJtVnRhbExpV3Y4OTc5MGNmQWpsMk4wUFA0ZVZPc3diTW9fRVNBX3M3a1pwMWhWdE5fSHdUU3ptU3ZN?oc=5",
+   "data": "2026-10-25T23:59:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "65365b7515bf",
+   "titulo": "Eleições 2026: Lorenzo Pazolini (Republicanos) vence a disputa no Espírito Santo (ES)",
+   "veiculo": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQWUVnTGE2RmM2VGF3TzR6S0wtRVB4NEhSZ3h4VU91WEZYUmxLcFhvVVpncmYtV1ZTcnRaallfLTkteGhfblZFZmpIcjhReEdWYldUV0tyUkxJeUFiUmt2cHJ6dkZzdnpCMmU1bkFGQXhqUTk4REI3ME9QQTlmSEcxN196a1VNeGFSMUE?oc=5",
+   "data": "2026-10-25T23:59:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "2ba534b0da99",
+   "titulo": "Lorenzo Pazolini supera Ricardo Ferraço no segundo turno e assume o governo do Espírito Santo",
+   "veiculo": "CBN",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPTjZBeUdqNzRwalY5X1hBa3NSR3RfcGREZHd5VTE2YXY2Wkd0ckJYbnE4Q21TUDNiaDB4d1RjdnR2T1hmNXIyTXJrRHl3VVRZNlE3X0gxeGgyZUUtdGQ1MWZ2RnUtdWpZVHN5SDNwRHBwbWMtdlBfeFJjMDNxQmk5VEtQbjRCVDl0SU82X0JNZ0g2RjFaTDhrV1lWcU9BU3E1cGlBckxNWGhWR3ppSkxCT0l6RmlhWmtsMkctbjVXU3VvYnVJWmJQZkNTSVdfOVNrRHppT1c4Q1ZQNjI2ZEhILVhNONIB8gFBVV95cUxPaWRPU1ZMMGg0aHp2RzdTcEN5Y3JQeFFOWm94SUhrZnNtS0x4MHlhUlFvMDlQaVhYR2R3QWxWWGduRGRuTmdYVWN1bFdxb3RPcGU1dFYzcmdCLXloSl9odEdaemtyS3NqWnEwVnFwa0pLek5nR0tRYTd5bW9uLTRCRF9td0duRWNuZlFNdzEwbGtJMzBsd0xmWUU4bHlzWnpKdXZraW5Jb19jdHFCdjl6RHlWM1JLajY5ay1iOHc1WmJTZVhCYzYyVldnYzlpRVNXaXdkSjF0OTJyTjM4ZlhDY1dNNFhyMXVySG8wdGlOc05yUQ?oc=5",
+   "data": "2026-10-25T23:57:56Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "1140b8029afb",
+   "titulo": "Lorenzo Silva de Pazolini é eleito governador do Espírito Santo",
+   "veiculo": "Brasil 247",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdGdZSUJDU215Wl8zcnJ1ekJxR3p3ZmpnYVVJXy1YcDVGMURXVmlvdkpReXZCbTg1emhHV09SNzBnQ2swX1g1NXk0M1FjMEpvd2RKRURSMEJQblVxS1lnMjRDUGNucTJJQnFMenBaRTBTXzI1X1BTWTNsRzVMd2tQZ1hZeVU5LUZ0bWJmZkZCSnFGUDFSdENtMm01Ni1YT2c?oc=5",
+   "data": "2026-10-25T23:57:49Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "b5389b35227e",
+   "titulo": "Pazolini é eleito governador do Espírito Santo; Republicanos chega a quatro governos",
+   "veiculo": "Republicanos 10",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQREVieHhKWGZNQ2VRRTVOck1PTEh0dmhNakxtZGdEcU9fc1pvNFB2dnJ2RU82eWJ1NHI0TGZGN2ZkRzBCR1lhWGRIS0VrcTFYbDNmUXdzcDNOYnlXS3hxWEZySFJINDd1R2p1Rk9GYlNodjRnLWlmdXhoUnIzVmw5d2hFMHJwWk5WdVZlU1p5VTBpbTVGOWxPVDJMdkl1eXd3aWNXNDVFdGNuQ2dPM0ZtbjIyR3h1RkJqbGNuZmRR?oc=5",
+   "data": "2026-10-25T23:57:27Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "9916c1fd8994",
+   "titulo": "Resultado eleições 2026 ES: Lorenzo Pazolini é eleito governador",
+   "veiculo": "Gazeta do Povo",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQY0JYMVUzRlByb3VuVzJWSzRFd2c5Q01GR0tfek5ZYjdta1NBWHlaSkpQalh2VldqeWRMOGFYczBackNtbElqaGUtVEl6LXRCdnZmazE2QkdkOE1fd0F0aUUxcGNUNTRVWHFlUFNBWExaLWh4NHhyaXN3c3pSdW81dG1LZTUxNjE0RjIyUnpDdGo2RU1aTVpBSjZ3V2V6Njg5MjgwdTJ0UlJ6M053d1NPcFZ3SEt2MVZROVVldC13d2d2R3h1WUtFWnlXQWx1QQ?oc=5",
+   "data": "2026-10-25T23:57:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "8adeca00ed23",
+   "titulo": "Com apoio do PL, Lorenzo Pazolini derrota Ricardo Ferraço e está eleito governador do Espírito Santo",
+   "veiculo": "Terra",
+   "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNYU5GNFloZEdUcnRac0ZmYVNweERNeUMxSHluaGNfRzc0X1d3SFpNR3hDVUs5dWZHTmhHVW1FSnM5ZWU1WG94LUNiYnhyTmt4OXd4QlNtTWlzdVM1WlN3REJselVHRzdSZ2hBX2llcFR5M1ctRnBmWTBSSzJnUDJOWVMwdmxjc1hZZVkyeDZ6RmxGOGZsOUZIbFQzaTV5X3pHWHpGb014ZDBEZUd5Q19kV2hrV2QtVmsweDNDSlFwak1sTE8zVEZuYnMzUFBoMXMyYkV5WE1sR3IxdnozeUJtNE1vTVlaNVI5M2plX2llMEl6NGhVZjhEY1puenhKOVpDX1ludTZYbEp6NGxkNmYtY0xjbkhLYW9yRkVzTE00dVROdlFvcXhSSmRhYw?oc=5",
+   "data": "2026-10-25T23:57:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "771411b1513c",
+   "titulo": "Lorenzo Pazolini derrota Ricardo Ferraço e se elege governador do Espírito Santo",
+   "veiculo": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOZUhrVDFLSGk2ZjRWNjVBVjhUeGdiOW00M1BHd3Z1d1ktSHRyZzAwb3l2TnFWQXFmWFpsNEJsY1UtOVZkaU5qX3NlWjBvb0x0bW9BRm9vejk3UFBZS01SaE1CQWQyTHY1YkJkaGR1QlhsR1dqRFVBQi0wOExTOVU0clc1TERDYWVqN1BHRG1vdzU5Y2NGbFZzSFpEeUpyU3ZWMFBDTGJ1UWh4V1VmS0Z2N2hXSXhyeXdNUWZfaXVCRnJ5WlNI0gHKAUFVX3lxTE45cFlHVjA0bFhLQWpiQXZ5bzlGT1VOdzdFSFJZelBza2pWdUkwNjdQSEpfMHVvazR5a3BJSHp3dEVWYmQtOG9FMWhfZHF5UE5mYzZKYnFJUXN6dmxKR1QxWWJydW9vSEFFYTZDY0Q5VEFsbV9BN2lrNzFTOFVrU25uVHVEeUs2T3A2TjFPTXBnN05lMDFoVWdwbm15M3VzY2Z4Mldfc1NZYmdfX3F0UXljU3JHYjlxR1hUcFFuMk9QUVBPZGRQMjN6V3c?oc=5",
+   "data": "2026-10-25T23:57:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [
+    {
+     "veiculo": "UOL Notícias",
+     "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOcGhKLTZlR0x3R0Ewa0Ytck1ES3dIUFN1ZlR6Szc2dDNhSVd5dDRZLTN0ZkVUMEZPRzhTRTNoXy1ZZjlNajFfSFFPUE8zMHFZNzhLQWU2U2tzVmpheGdhU3kzN0ZQTmtTQ0lGZFYtYmJ0YWtVMzBzdmVLNEJjT3RSLWxmU24tYVdqT3ZMSGxiLUZ3Zm9BelRpMFZGcGhHRHVRUVROQWZHYlF6Z0J3d2VUZTJGN3VDb0duTk5ZdkVIWE0wLXh2U2RpNWdadGk1aWtraXQxNUJFLUdBR1Q5d1oyQVNfVm5BVk13WDdB?oc=5"
+    }
+   ],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "82e086e02b6d",
+   "titulo": "Lorenzo Pazolini (Republicanos) é eleito governador do Espírito Santo; veja resultado da apuração",
+   "veiculo": "UOL Notícias",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOY2dmZDJUQkJuWTFhb3liUHpuZFg5LUdfMDRjNjhFSHllamtHTVJLWVF2ZEo3QTZwUzJ5WmNRZkVpVnQyUnk3ZG5jdEFuaC1uRG9DNlpvdl84alBrelpmdmhSbmQwQjdJQklnNzg0Tl81aWJaYVBjNnJwbzBPdUVHSVdFSW9sTE00MklBOF9rbjlOa2JnWl8yZnFfWnhGUlVw?oc=5",
+   "data": "2026-10-25T23:56:23Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "9e29fcd4a35c",
+   "titulo": "Lorenzo Pazolini é eleito governador do Espírito Santo em segundo turno",
+   "veiculo": "O GLOBO",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZ1ZVcE1fMjg5Smw0VmJRcmNzSW1qUTJHSTJsYmdVNW9UYUdfRGloSEp1azN0SVEzT1YxUU9lWmxfMUM5cVFucWRxRkF2NkZUckxxRnVpWHZmeHFTcGM1Y3hLUXRzZktoeXJsY3lwdTZ1Mkt5S0J1MWVBWWZqUFQzRnl3a19pQk9wc1hkWWxoZkMtcUx2dTV4Y0Iyd2g1b29XOXhObEttWlNZYldnR2FyT1ZqTnI2ZU1nMzgtNjlZWEJuU1hXV0xaTlBYM3Y1UVlYZXNuMGplWkd6Vkg00gHrAUFVX3lxTE5sYUR1M1k5OG1ZNjZuTGhLTS1SbXNXTXJzcVV6c2otWTFCdWROREwxSmYxdTJmYjQzaXNlbnNkc0tlcy1oYmZJU2RkSGRmVEZYc3UwSnA0cGVGeVJ6cGRYVmJrX0stMGtTYzFYYlgzWnFFRlRCUkFfRTNrY0YxUERDVTBQVzR1Z3dLT2dxVC01bUs2djh5X21aSUZBaTlwaWktemlaV1BnbjQ4TkNscVhBNXNfSDkwd2Z3VmV0dDJlVDFjcmVmbUhyVklfNUdlT2NLSXpfQm03LS1vbWJ0WTh2QUdqM0w3cUNfTXc?oc=5",
+   "data": "2026-10-25T23:56:15Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "f247c6caec38",
+   "titulo": "Pazolini se elege governador do Espírito Santo e garante alinhamento total do Sudeste ao bolsonarismo",
+   "veiculo": "VEJA",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQSGd1bHo0djJwWHdOR1Njb0hBUjZLQlZMYTJUMnk5QUw5WS1leUFpbU4wUTYwdmc1dGRYQUprdWVxMkh4M3ItU3pXb2FYaTViZ2ZJZzYtOHM4LTNHNXhxMW1nTE5EVy1GR0hvV25rWFg5aU9mZUtJZG8tQTNydkJ1UVRVcUp0UV9ITDhPYUxvamZCZ2xQQnYzVEdrVmRfb25uMGl2T1VQcHFWaEx4NkZFRHJPS3VldjZUTlVaeE1xYXBacS1GekprNlZB?oc=5",
+   "data": "2026-10-25T23:56:02Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "b05d0ac481b5",
+   "titulo": "Lorenzo Pazolini conquista governo do ES nas urnas",
+   "veiculo": "Bahia Notícias",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUlczNjBTMGlUY0llaTJCN21CYzZOREdzaTZPSE1zMVBEdWhoYzUtdTBmTzNZbHBXWUJZajZkZEhGZDZWN0lweVFKMVhYRFYwZjNOcUJfUEJIbHhEOGtKVlJqTzI3YmNrTXNhMmlTQmt5dHlHZHN0UWU3dThLM0hFd3BiY09fYno5c2p0NlR1S2RrdEZ4bkVYMFRhMXI4UW8?oc=5",
+   "data": "2026-10-25T23:56:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "f6c81051211d",
+   "titulo": "Lorenzo Pazolini é eleito o novo governador do Espírito Santo",
+   "veiculo": "Folha Vitória",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQbk9kdVV6UW52QUFIdTdhT2lnUDVvbjcwTThrajVzMlN5ZFZxaUxqcS1qWmVDZURjME1tcEJqWllGVTI0WUhzNFItcGF3OC1aTktjUXNueG9rRHVteTR3a3l4MjNJcDIyYzV5MzU0WVlTY1M3cDEyQkFacGdFQmdtejJpbFl1a3pRXzRaXzM1d0J0RW8tVnc?oc=5",
+   "data": "2026-10-25T23:55:43Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "b1668a92a7be",
+   "titulo": "Lorenzo Pazolini vence o segundo turno e é eleito governador do Espírito Santo",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOTXVJVUZfNFgwZ1kxamI4RXhsMDFKRW5ibERLZ2FCZkJPTzh5cjVXeTJvbWxFc1lWaTJjOGNLbHBBaWFTd0ZKbnFuRFRIcmZSVWxubTZqd2lTOFRUaVFvZzRJb0Jyc2JGSC05NFNXSU5GMzNHcEF3NGtnRXU0OF9VLUdxcjVFd19iZmYweGYzYV8yVU1YYTlkQ3FYUXFZaHJRZXUtUW5UeUZpSjdSNHZLb3NHZWE4UWsxcVlKc05VQUs1eDVOVFlSRnVrT1ZTTnVJMDdiMkR6M1Azcm5oaW15VTE2U25Bc0tDRExlbUpwRmV5V29yQXRmQlh3OVBMQdIBjAJBVV95cUxNelZITFoxYWZiNmhtSmVpWWlSX0M3RzZ2MTd3UFNEZkdXNVdxenAtenZSekV5a0Noc0dxekRJVEVhU3ZhQjB1RGZsbVkzMUdOOXNPMEhfZTRlanA2QlA3Rm1YdVNLUExFNFRpZEJ5NENnb3EwOThrLTI5aTlmRFplZnBkcTA3QktvSUVFbW5lWUZIX1lDZUo2Q1VmQmFxeXFFSmFjeExiWGdPS2h5V3o5b20zdnB2M0xXYkNsa056N1Azd0JGRnBEekc3TF9Lc3FPa1ZpSHlLWE53Y084SFl6YjVhYlVhV1MxbFBDekxrSGx5M0JacHJiZ1JiTzN5eW5Jbk8wTWtxTG1UTDVX?oc=5",
+   "data": "2026-10-25T23:55:40Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "ee57e5105496",
+   "titulo": "Lorenzo Pazolini é eleito governador do Espírito Santo no 2º turno",
+   "veiculo": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVjItZ3hsRUVya0lhMlc3NVZGeE1CQ216aG5hRmtqYnR1bjRacXZpc1A4M1FjVzNveHVIX2NJZlFYUmlXeDFGOUJYcWlFbTZKdF9tM1lldkVBeHY4ZXlqcTZfR1p4T25CWjVyTGpjZXJFMEktVld3dVNkaU1pdTdtdGNIY2ZFSEwyWHF3WGJyUFNtZk1GdDFtdm5LNXhpUHhJR3FpVVpBSGM?oc=5",
+   "data": "2026-10-25T23:55:36Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [
+    {
+     "veiculo": "Diário do Nordeste",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPbXg5VnhIODRsaXhPcExZa1VrTndYR3drQVJkOFhMbEtiR1FFb21qS1BnZkZvd0NwcEhhWmJXWHF0WnRrYkRPOEpQWndIUi1SSXlMUElSYXVtdmQwODMtdHlYa2JKX2tVQzZ4RjRLUTNhczNSVDgtUTBmV285U3U2QXZ5aEZHRm5JOG04VGRqNE5OZlZLcmFXZ2VKR2YwZ052cVpRdERmb3FBYnlpWmEzdHlHTldXWHZKandVVDdDaFRHbllwRHJfOUFn?oc=5"
+    }
+   ],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "536270655005",
+   "titulo": "Pazolini é eleito governador do Espírito Santo contra Ricardo Ferraço",
+   "veiculo": "O Antagonista",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPbkE1Z2I0bGRDbEFMZmlzR2F2YVlwUmtnalBBU1VVTDlhNFBzZm9Sbmg5R1VvTVBfU09VMFRUT1BKUDM2WDE0YmFaS1hib0w2QWNyYkRzeXZvVEdOVEdxblJQZ0hub2FXd2pqV0RWdjdJQmF3TE9TWmJvc2oxdGVmQ2FmZ3ZQZXd3c3E3WVdNYWdYRnlkdjNGcnpYTkUwdDREYW8xU24wVk4?oc=5",
+   "data": "2026-10-25T23:55:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "fb98d5719b19",
+   "titulo": "Resultado das eleições no Espírito Santo: Lorenzo Pazolini (PL) é eleito governador",
+   "veiculo": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNOXF0TGFlLVFUQ2VaeGJ0TGlqMzc4eUNVdVA3UDhVVDBfOFdqVzBYV2tQMWtyNzd0dmx2aFdmcjBVQ0NlQ1B6cFBaTFZqaFRxT1pHUUlfLXlHckhrNGZYa0xjV3NMcGR0cHdzcklsNzlZc0xrR1N2ZGw4MjBydkdvVUNPMTNZU2std2QtOWZIcWNtZWxaXzVaZkIwODAtei0xTHJoWE93U1BUdW9IdFM4?oc=5",
+   "data": "2026-10-25T23:43:40Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "96db2605100e",
+   "titulo": "Lorenzo Pazolini é eleito governador do Espírito Santo",
+   "veiculo": "Congresso em Foco",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQZGJtaS1iLTJpU1daWmY2WlAxTldEZEJxUnRmMmh6ekxnWU9uUlhYb2djbV9zZGx3b1dYQXZhTlczSHZKUGZGU2JCN0VldUhlRjFmS3N3TXRZMnZPSWYwVThfSHM2aWJzRFIxZ1U0ajF4UEtRNmJFa0JvY0ZKTl9hRUdKekQ1NlNrR2RvWHRJWmVaeFJzUnl2a24zT0lZNlRPSF9sUXFVaw?oc=5",
+   "data": "2026-10-25T23:36:25Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [
+    {
+     "veiculo": "CartaCapital",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQYUEwdXo3TUxPdGZzUEplRzhiek5FS1dsa3NTX0htV2VVMG1UckdSbjJBcGhTcXM5eTBxd0czSXgzYzNFV1dvc2Naa01RaUFJVWpEOFhtX3cwTVZmb3JZRVpvdW1Zb09KdXNTbVhZS0NFSUNlWVBjN0Y5WmFhTllyYVFKY1M2Szh5NF96cUtuSzBaUmpWdUlUbGFEclM?oc=5"
+    },
+    {
+     "veiculo": "Tribunal Superior Eleitoral",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPb2VTVDAxci1uSDJkeFpYcmlGcTdxWDhCUUd0M0hIQ3JTcEVfYWZiVDZ0NE9xUFlHLWg1TjJRRnpseUdnc25iZ0M0ZkZ4d084d0xDMUkzRXFBUGpoTnFoUVhTYTVSTG5seEtfWHZLRjNYMUZKTmR2TkVUcFBsckVvQUFjalpUUnpVYkh4MkhRZm9iSVlBLXBCa0xCeGRZTzBUMnZUOXNYaGxHRkgydjhIYg?oc=5"
+    },
+    {
+     "veiculo": "Poder360",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOeXU1UVlUR01DbTR2Y2ZHSVlLZGYwWEQtaGxWeDVPYWdPODRXclEwOVY0NWpKMWUwYjROdXlRQUlKWEhyam1tdDM5Ym5scFQ3UjZSTFhuZlJRb05xc2xsWVFTSU1GZVBlQVBSWFdZR2F0M0dQN09Nc2EtSHFBSFBvVTRYMHhrUVh2dmlIdFkxbE01ZlhHOEJWaGpKM0pDYWQxcmJXNnFR?oc=5"
+    },
+    {
+     "veiculo": "ES Brasil",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1EcXMxRVRmOUU5MDI5dU0yRjlucVJ5VlRNVW9hUFhVd3RBbWFBOV9tNFluWE50dF84cDRtczRIaTBhdlVrRXZoU2EwS1FoZVJDaHRkN25qMVdaWV9wWVYwYXhXWTgtdlNqUFd1QXBPcw?oc=5"
+    },
+    {
+     "veiculo": "Correio do Povo",
+     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPb20yY1F5RlJGQUg2T2U0U1ctNjNBOHFjRGJNMHZxR3pOeEVsVWh4bFhKVmJoaDRGdnVGaVo4U09xWFBZeHlXM1BrRmRvcmJyZnlGVUpMa1QzS3Rod3FwaXVPelpHSGF3Q1B0MHJxQS1tY25jOERBZ1ZUODJnMzZleWZ2ZzRXRVh5cExiamdnNXBMRUZxaDdaQmN5WUtYQTRzUkpwVW9uVTZYdkFmSHBJV2xrUXZWOTlpd0tlY1hRTUROSHJtcXhBYVowSkFRLXlMa0MxTEcxa0ZDUUZ5?oc=5"
+    }
+   ],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "d1a9befcc639",
+   "titulo": "Lorenzo Pazolini (Republicanos) é eleito governador do Espírito Santo",
+   "veiculo": "Brasil de Fato",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOekNBWEpsb0pPQWt0OUxmYUNQc0lac3JWeGdKMHNfRkFJWkpnd0lyR01xMTdsOW9HYVB1bjNrU3lFQnlueVhSbEthanUtNTZ3b0pmWVdZS2dfbVZ2Y0k0RDFXT0hVb2l6M19XWUlDUEE1ZkkzZTkzRmIxRXFVckJtOVhQNjJwLW40XzQ2WlFmQTgwYkwxcllKQW5JNmhWYjQxUUFtekdCVmFqekktUHI5NkJxQ0x5VTY4S2pDd2F2VlVCY3FFUlFjXw?oc=5",
+   "data": "2026-10-25T23:28:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [
+    {
+     "veiculo": "Folha de S.Paulo",
+     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNbXQzUUp6VV90aWlieU5hWmdWRHNMcUNobmN5dERybl9jb2JsQzlWUXliUmd5QjAzZTFYeF8tMW5CSVVyS1ZuSnNVV3JUdGdHRjEzUDl4ckx0MzBKRXdqVkNNRm5MWS0takdZTE5qQ2xJZ2haVE1TSnRFU0ZlaVFwNFlYQkRlMEEtaTc3ZnFrcmFibElVdEJQMnkxUGw1RTdSQWlYMF9BZjZpYkY1bWMzMnNUWUo3NEJnTk85UXpnLTZXSDMxNFBDWS0tNzBoQlRa?oc=5"
+    },
+    {
+     "veiculo": "InfoMoney",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSG9sdUdXb1hJNGxOR3pDR0c3V1FRbzZTcVljdi15cmpub2Y5VHVoSmpudm1Rd3BvSUFncjhVeEpqWGxDNVhTMkhtU1JTVnhkaFJGQkdJbG43RDR1NEhzRV92N1d5cXdqMUhDekVBNFM0LUR0NWY0OW1sRXNTY2tKZ2xlV210MDFLYWg4V1VRaGNuTTR6TjNsT0RVSWQwcDlKX05XaDRpaWNTQdIBrwFBVV95cUxQZ3F5MG5vWjExRExYUXNtT0s4Tm1TUGpTaEdLbEROOHhKeW9zdXdFWUl6VkNUdVk5aEJaVDQ0N0FKVUg3TGxOdzVLVGdaU0lZM1lqWTMxYUdjUUVrUHFZSlEwNUFCN1BWTnp3VFZEc0VvLUpDVVNPN25JZzAxdmJxa2xEcG9yOXRLaUhONHpNNDB4eEhxUW9Vak5RT1hBcGp0azZsN0Z4blVPOGd3b0pB?oc=5"
+    },
+    {
+     "veiculo": "G1",
+     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxONnkwLTk1d2NQSjhOWmcxTkM3Nm1ocklOeXR4N3JGeUdSTEdfVnBYVzg2VGdIRFQtU2p3NFpGb0NGNFRaNlAzTDhwQnAxRHh0azl2MU1hdGhPMXZTRjVYSmNMblRZVHpyaU92YzB5N3AyeTluLU1vQVBCZkI4WFV3VzFaSTRVNzZVTDBaV1pBODc2OV9iYVJKNmF5N2xjN01YMm9ta3lGdnpDR1R0Y193Tjd1aVA2NVpoUHNBYzBaMTU5S29HX0h6ck9VYVDSAdsBQVVfeXFMT0FRSmdMU3ZhS21WSmhrNkFhbXdGbXFtM25vTzkxSF9wVE9GbWRlZ1pqOXBQUk5BQUh6MndPTDU2MUlwSlZLS01mTDdhOTFoOVdpd25qWldVRlcyMmVEMVpwMXdFZEQzTURTWnk4ZGU1R0Fxclo5cDFCczBGRXM2bWhWZHM2dUpVRjNTYXBiejJKMkZncXRHR2xoT0JrNTJPX0hsY2t1THRyMklHYjg2ZUh4TDgwb0tUVU5pZTNiZmdiRTRUM0dTQ3ROT21DeVRBZEs2UU45RW13WUlJ?oc=5"
+    },
+    {
+     "veiculo": "R7",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOVlE1aEoxQ0p3MkVoUXpxMGJWVklZWm53eWF1Uk91bGVyYnRSRlJHUWl5SmVyRWZmVjdCc0VtWTZkby1PNzZLX3k3Vm5UQkM3dFowNXNsSndBeV9NQnBGbjN2V2w5R1A1b0xocTA3NEZLTjQxQUo5U1RvLWFTVXc2Xy1JOG5VWUVDVEEtcVRjd3dnWFQ1UF9XLVBEVHJTN1BEd2pLcXR5SXpQaVJPVjI2NXNUeks4Zw?oc=5"
+    }
+   ],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "b69232a5bf82",
+   "titulo": "Lorenzo Pazolini (Republicanos) é eleito governador do Espírito Santo, com 52,17% dos votos válidos",
+   "veiculo": "Valor Econômico",
+   "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQRk1rZW5sWVJBbHFFajdZU1hnbHA5ek9Vb1NYN25Ld2F4QmxMX0JGZm1xellMODdTR29QU0dJWEhLTmFIWW9iNXJOLVFtMUxLSHB3YjZLRmwwZG1NQ0tPX1ZWb3FQb1VqQTdoajVZTE44TUIxUWtvcHl0NS1maXNOaDQ0Q3BGOEVDNkhpQmc0eUJ5Zjg0QTdiZ241X2o5WlJHcWs4UWJ1c1B3X0YwaDNWR3pqbzhKWFNYVTZMdUtMR2pfYWxwLTBEZGlkVUczM0dId2x5NVBxcF9wSkdxbnN4S1ItRmFWNFk5UExWMmNobkVsVDBBbU9tOERxSEZ2VU9WSlJEVWMzaTBFejNNa3hGa2tB0gGgAkFVX3lxTFBtOVZpd2pIbDRiWUYwQlQ0UHJ4TGdzamUybWZNV2lLSG5heDZGOExmNG44d3NhSGJFTWlFUnBUemZJV2lXczhIMWEwYWRGUjMxeEdCQjdrT2tfVFBiTExxOVRDREQzaExQVEJrMWJBRjVwLWZaY2VUbFZyTFoxTmhSR0RuLTh2cmF1ZGVwcTdUMlc5dmpXbGdaX3hycGVEbUFhWHhuSFUtcVpIeGhNendNSHpjX2lpYW02TjBYemtQeFJ6TW9mREhXSGoxYk1ySUVpUHAxRmFSLUZ0MFhBYjZLU19wcEtxVjNsVkhoMzZqZ3VmSHRpekdPdFQtUV9BMVd6bE52S0RraUNJQ3Etb0Y0LWw5c1NObDFDVE85T3l0TA?oc=5",
+   "data": "2026-10-25T22:59:59Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "d9d2d58a57b2",
+   "titulo": "Pazolini larga na frente de Ricardo Ferraço na disputa pelo governo do ES",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOaXJSRGJ6czQzVGFXWlhVSGhFT0VTa2xzb0FSalc0eXNtZFRSOTIwbGhsYk9sVTRhODhWVHpDdkVtQXRTTVVweE5TeHQzdHQzUXN1MTVFSnNMdEpfSkd3d1N5UmpLQjhaUXFuS2F5SUJObERsVHlUTmtzdWs3UEhfVmhoUGxmend6eFZ5ZFRZbWkwOHBmNUpqbFVQOVg?oc=5",
+   "data": "2026-10-25T22:29:18Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "35f16a76d678",
+   "titulo": "Quem é Lorenzo Pazolini, novo governador do Espírito Santo",
+   "veiculo": "SBT News",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQMEhSNXM1NTRhTVpGdVlJMHZNT0NzaGljVUtsdGJmWDI2aXdCYTl1RWZZVHRXUkM5RkZuTjJaQzhFX0tlSnhlNzlXbF9waENoRndJNlRuRDcteE10blFmV19TdnRWcnlQX1hObDdHUnJlaThITWM0a1E0M01NOHVvVWwzS2xobnZ3cEtpbDg5U2V2WVgyRkswVkE3OG9xbi1GRVhV?oc=5",
+   "data": "2026-10-25T20:01:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "eaa65f4ea2ff",
+   "titulo": "Eleições 2026 - Apuração ao vivo para governador do ES - Segundo Turno",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9BOWRxNTBPM2l1Q1hRbU9wUTQ1YkRhZ0tCZlM5THNSTTVZcjk5V21GcVV0TGRqeXdTckp5ZUR3YU9HaURMVWo2UjlrSWZld0QtS0dXblpYVi1yUGViMWQxRVdUN05pRFduODdXRQ?oc=5",
+   "data": "2026-10-25T19:40:04Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "9cd1453e5954",
+   "titulo": "Lorenzo Pazolini x Ricardo Ferraço: acompanhe o 2º turno para governador no Espírito Santo",
+   "veiculo": "Jovem Pan",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQcHkyRlpmcEJ6QXg1RU8yNVlXS1pzWmZEQk9rbzhwVjFxa2M0LTNMNWxSV3pVeHBEUE5SdWZJa3JDdTlMWHFNc1VuNFhINzBxVXFEREZDNzJteFBXSG9TeHF5ZG9QYVB2REw2Y1hsamNjS3lxQnNLNndVUDItbXRBdk9FNW9KVWdTenpkV2kxSDdleGxGVEM3VG9Ya2tKR3BqWTV1akxZUlZKMGUtRWltQ1FZX1dJdGdJckJTbjFaWHE?oc=5",
+   "data": "2026-10-25T18:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "5912ddcb06c1",
+   "titulo": "Apuração no Espírito Santo (ES) para governador: veja resultado de Lorenzo Pazolini e Ricardo Ferraço nas eleições",
+   "veiculo": "UOL Notícias",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOV3MwRHU4UFlreUYwVHhrOW10X1NRd0h4TWNFMmlRRkZnTmR0NHB6QjE1djZCaWZ2R1VQdVA3OTF3bDZFQTQtR3ktS1YydF9BRDM2dTJBSGpxSEhsalZwNXlIS2hrYWp0NU4tQ1JoQWZ6RmJYTG5RR3FGRW1CM240dGQ1a3QtcURqU1Z0ZnJVX0dPeFlyclBWRi1MVXY4eVVjTnRhWXBfWkNINXFIT3JqVE5YTWh0XzBBU3djSGZZQ0Z6SUNfNzFTV0FVdHA0d1gwbkhGMnZaWGwzNDJVdjlqZjM1TzJnemF0MVpmQWNRRW1DT1ZTMXZZ?oc=5",
+   "data": "2026-10-25T17:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "e8eadca764ad",
+   "titulo": "Apuração para governador do ES no 2º turno: Lorenzo Pazolini x Ricardo Ferraço em tempo real",
+   "veiculo": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNU0d1M29vQkxaX05CQW1TUFVOdlJnNlh1anN0VzN2QkRDSjByN2h0ZGZuMHR4dFZiVlFxcDhEcl9NQnhDMmdtSnl1WnFEd0lOU1NZbS1pdHFZaGE4aGlCWk5sNjl0TGpZUWJtcDZYOXd2aFpFdnR1aUZXdWUybVFJRTVtNXZIN09JVkpranFpclJoTVpYX1pOOXJ0UGhRLWktaUhnNHVJcHFuczlCb3lTOVpSVkJpN2tT?oc=5",
+   "data": "2026-10-25T14:57:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "94a5096ad5b7",
+   "titulo": "Campanhas de Pazolini e Ferraço movimentam R$ 9,6 milhões com recursos públicos",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQU1J0XzFYeE83MDRjYkpBSWhlV21nQWcyN01qUUExa0huX2VLVWtEX2ZCV0FaMUJqQkFONnZ2dGE0WjJ3RGx2R0JHbWJtMTFFd0ljLXBvTHA1MlZIMnYtOW85eDhobjdNYTNUblZHcEU0UG4tUFQxckw1aGhmT0JkekJ5elh6RW1oSnoxVlFEc3ptSEJUN2hBOUNxRUI2TVFPMGdnRmtMa2NRbFVZbHJ6bU5UNjE5WVBHZ3Fv?oc=5",
+   "data": "2026-10-25T14:46:18Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "777176cf1ae6",
+   "titulo": "Pazolini vota na Faculdade de Direito de Vitória",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWnhNellVbWtyWHgtRS0tX1YyN2pMUVJmeFRjeXppT1F0aFZvaUpwS1A3QkRITHFSQ1RsR0dFNWNsMWdVZDVTWU1IYVBlNlk5XzRab2hBbXA5Q0VFaGJBbkRxQW1qeXQ4dUFfVHA3MHJRalpRd0d4RDcxdV9ReFU3RjJFZTcwWHhTVlNaZ3ZsWXBCRGxhNTZtZXcxU0lFMmpBbV80X2VLMzVoVlFHQmJXUUpONjPSAbwBQVVfeXFMTmI2MzBiaElua3BxRHFIaGxUUGJ2cVRNSV9BdVBjRnZuQWh0a2RHcnhrNWNXV3huc1R4SGZVMW1IYkw4dzRGLU91MzVJX284UWsza3V4azhqVUZHV2NqSkhIZDhfNkgxclI5SDROY19EUHk1ZW1Nd3ZaTWVxTXo0M2JTZFFTYW5lMThQUnl1QzlzMk9pc05XWUVsLUxjckNOdWZMSWFRb1VqNE92V2tsc05yU2xrSXNwTjA5RDI?oc=5",
+   "data": "2026-10-25T14:15:04Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "ccf11b55c094",
+   "titulo": "Ricardo Ferraço vota na Escola da Ilha, em Vitória",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNeVFjdWN3Unh3R3hUcVlZbTNaRDFibm5QZmgwQzRmam9jenFJek43VVhpdDI2X3FZSWpOWE1zOUJqNTBSWG9XOXE1bENzc1Npa19uU2hqc3AtNWpsTEg1TjlGUnZNdzM2SFZYRE1CSnQtbzE5em1YVVBMcVZtRXpRN18wcFhGOXFMSm1NZXB3MnlYdjI0V01WYnBVNVZiQ3p1Z3p4YTJ2eWJoUTUxaVQ1aDE3RDY5UdIBvgFBVV95cUxPZWFTaUZ6SGhNQTQ0TVMyOXAzd0RsWHVKdjJmWE1IRFZUaW5femJ5LUxSdWktM2tvQ2NJRDhiNDcyeDR4ellaemctbm8zbEVoRnhEYmNNemFGbng4WmFNWFExOU4wN1hsejdHVnluMHctOW5aTWRKSXJXa3h6eEFpWE9MUlQ3Y2xtVlRkZzNzZVZUbEJaNzhYd1ZzTDk2QlNHT2p4UUJuRC1tcnA0SUlMTGgtTGRtQjFJMHBCMVdn?oc=5",
+   "data": "2026-10-25T12:29:18Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "ffd0b7d2a292",
+   "titulo": "Eleições 2026: Candidatos ao governo do ES votam neste domingo (25)",
+   "veiculo": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZ2VYZkhoSGdSVXRGc19TTUIxamlQa293LXVDZnYzS3lMRTFWSk8xNmNJVWVsWkotRnBVZTV2akNNaWVWdnFXdHlmRjBtUXNJS01fLWxBbEYtTVI5V3JTQ01GWTFQZWJHV19KaF8tTlZUejBOMW1ncTd4bVM2VlNtVDlHRmU3c1hLTHBoTkZvRy1rWjItN1BfZy0yLUNIcmFGdnE4RzBR?oc=5",
+   "data": "2026-10-25T12:21:57Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "7e61f0804355",
+   "titulo": "Quem são e quais os números dos candidatos a governador do Espírito Santo (ES) nas eleições 2026",
+   "veiculo": "JOTA Info",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOU2puNkl6d3o4VGVyM19zZzU1NHVuY3pITW5VVmhTY3EtVkY4S3VHamlxM2R3Wjg1U3d0ZWlLUUlEOTVnZ2traXhxdG1fYjJrN0IxX29peC1La29DNEdBUEh5cjlYSmRlNmQ5V3FWbkZkMGo5c001X1ZuZ1pzOUtLSDRnNUc4ckYzNzYxU0s4amZSUWpNRmI0LVBBVG5PUFo4X3hfWXlUTFhkYm9JVVRtM090TFYtRjBpbU9VNmlTMi1hZk5xbm94dHBxUnFQN0NCY3pMYURkQ0hyVkxfWnJTZVRFNFNURnptbVowdFBqd3JwalhITUlz?oc=5",
+   "data": "2026-10-25T10:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "4a8e83b4e158",
+   "titulo": "Qual é o número de Lorenzo Pazolini para o governo do Espírito Santo?",
+   "veiculo": "O GLOBO",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOelBGXy1yc09XOEZtc1hnRXhqQ1BIR1JDS19EejUteDE5THlOMUl5UGhSWkh5U1B0Q1hYQlB6eEpYdUp5QThqVnVfaE84elpWSlRfS0wzb1lPWDB1ZEk5RjY4T08wa3QwaFZOVkdMQnpQZFpGTmtFR09NanJEZTBkaVEyUXNzaEw0OTRxSWpRM1JfZ1loTWkxVnhrY2F6dGFvdGFqVlBMejVHMGM2RzNYakU2UEhTcXdaOGpOWUZaVUxqNWlfWkHSAdQBQVVfeXFMT2hPWmN6STNoMUxnTGtFMFI1Rk4wa0wyS0RMbmR5VF9GMTU5VGdYSjMtMzZobnBBRlhDRU5KQmc5b0JYUUFJX3hEMjVzV0xNTzNfUEUzdFVXUVNnVjRfNXFfS0pTLUF4TGQxV1JDamNORE5WZDM0b2ZWNzhISWZxTTgxNFFwVWFDUmJPOW05YlozV05aRUh2ZWhPMGdZdGpUTExFVTZabXhxd2s2N3p5S09Mci1UZDcySEVmMFUzeUZtWU9aSndWSDI4eGdmZnpDMk1KY3E?oc=5",
+   "data": "2026-10-25T09:24:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "40cf2816be90",
+   "titulo": "Ciclo político no Palácio Anchieta acaba oficialmente hoje",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTjRVWTJTd3JDcWdZMFU5LUczSDJKejh3bkYtVHpwMzZZTFZiN1BHNnVTaXA5MEY4ZzZWekZRLUtIZkd0NVFfbFA2SVFhZVNjajZGYzJnWDg5WkRSS3dQS2ZPYi1kdmlCbDN4MVlKdy14dGlJam9YS3RTWGR3YUNCQ0l0MGZqa0FUWS1uTWxCczdKZzNJbVFrdjBnWFRyLUFVTzlrc2xjTDFIaVlMSG400gG3AUFVX3lxTE5nTmpXZWZPTVZBai13Y1lvZmMzWXlZT1lEQmQ2WW1wQlVPQkhQTFF4Zk4xZldpY3lISmU5amxSVEhhYmx5dHp0Z3pQSHFVcWxOaHFFYXVWSmdNTDVBOFBwTlRoOUN0dmNhd3JIa3BfSDYtUTJvY2tQTldYN0JZWXJmR3p2dFVCcHBKS2xsb2F4TG5lLWV6WEpPUmxMMTdFRVZKalpVR29JSGZJd2E5NWtXc2RWMmUyZw?oc=5",
+   "data": "2026-10-25T09:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "aa8c3db52bb4",
+   "titulo": "Lorenzo Pazolini e Ricardo Ferraço disputam governo do Espírito Santo no segundo turno",
+   "veiculo": "Jurinews",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQzdKdndHODh5T3JWOFJIX1hVVkRJWUcyWkZVRS1jT3ZqNGduOVBaa1FjTjhLa0FoamcxMzRhN1lpT3NfSlBud3Ytc3V0V2s5cmdCdUIzRVRIWllDa0N5aGRJV19Uclh0cG9xVjBNTHlvT3NoMkRBTVBOUDh6clhjellNbVF4Y2cySXFBbXhjY0Z6ZUV2V0RndmEwUzEtS1V0S3BzWVlHeDM3NXJhcjhaZDJCaw?oc=5",
+   "data": "2026-10-25T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "c86f4dd00a43",
+   "titulo": "Qual é o número de Lorenzo Pazolini, candidato ao governo do Espírito Santo em 2026?",
+   "veiculo": "Valor Econômico",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNQjZoNmE5RFBFLUU5TTRsRlNVbUJnMlRIbHBFMFp1cl9iU25qYU1pckJzOXMwTkZqQnl6XzU0VWZPcTRILUxkc25IM0txcktqSUZTSDU3d3JfQjZoQ1JTTjdBSW9jX3YxSGRPVDZ4LVZybTdHSkpLZGtySFhxOEJVaWl0ZF9WN3VCZF9BNFRjR25qaUhwSkhoN2dVeUdwMkZZR2QtaG5BMWNZUWRpbDZMa0pJWnAtRnZ1V1VBRDQ5T3VDT3RWZS1wTGR3VWpwaGtCU0wzZFY5STlEQ2YxLXVNWGZuRG5Qd1ZTaUHSAfgBQVVfeXFMT3Vuc2VzUlAwanQyTUlwZmVEU2lQa3lmZGdXSU5GaHNjbE9oRjk1emVEd25Sdy1kc0R1TUwxTHd6eEUwMHMtT3QxSFI2SVB4Y0JMR25qcHpvQzdsUWR1cTM5OUtzUVN1VmdqMEgyR1BwSmgweTBsT0RQdVpYaTFJME9CYV9uMi1fMUJUeEIxMWlrWHR2LXBfbERKR25MWFRVaG1CY2lSUDRWNU5lRDhNYXA0b3JycVA4ajJ2VVE1NU92X2paSkpEOU8zd1FPR3VLeTJFQVdfSlZ6ZlY1UnNoV05oRE9EQXpweDl2YjhpVkYyVTRrblc0R0Q?oc=5",
+   "data": "2026-10-25T03:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "b23f3fa40a75",
+   "titulo": "Qual é o número de Ricardo Ferraço, candidato ao governo do Espírito Santo em 2026?",
+   "veiculo": "Valor Econômico",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNSl9xOHRZcHNPd0FDQVVNdmJhVkdMMktUQTF1ZDdFRUY5V1ZuUHlmYTFxMlZqYXp0M3AzMHlpMDhfMWc0OV9CY3U4em5xZFFSc2RPQlpocTJnQkoxYXpFOVo4c0pYMHZ0X3NlcG1wa1FHeHg1ZDRENnJjZEhNT181eWEwRkRFRVlPVjFPZ3RINGRmNzNNa3NzX1FqMmlRMXhrb3ZIVGVtdE84ZTA0RnRWRzNHVExZek5QOS1tc1hlX25taWxoU3FxZ2NhN0hhVFE1eFdXblE3aXBaUHhlaHZVa2FyX1M4Nkl10gH3AUFVX3lxTE1wdmh2VVdOcWNoSGJJZ1ZVUDI1VVR0U0pvLUs0eGtETmRSaWhJd052RmFYZFVQN3pUYm5aQ1hIZndDTVlobHh4YTl1ank0WjlzNnVNdXh5REtxT3VkT2I3NEVYVzRjMzZoVmduaTJHVk1JTDNZZWZOMDliVUhZcGpVT05Dbjd5MTVhVkhZOXlzakJuNXFETnhiWUJTaTRaTUJiYWlQbGxhaFF1YzFwUE0tamJ2d0lnU1pTcHhpRmNLYkt6N3hzU0QwdmRqWlFSQkJ5elFNZE9xYVZ0ZmVaWlY1b3Z1aFlveDFWVGt1cWZ2NEV5WkxsdDg?oc=5",
+   "data": "2026-10-25T03:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "2b5cce8c1ce6",
+   "titulo": "Pazolini tem 55% e Ricardo, 45% dos votos válidos para governo do ES, diz Quaest",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNWEtsMWVrYWdraUdfUWNfVnVTLUFPX2JsS0lqS0RoaXVLZEZGLUZzUWppU3VENzNGN3ZNYWdWM2pfMUxMZUZIODZoVUJvLVh6RkZ4TGFEbXoyUUs3Z3FPYjhoTVlQNDZxRjd6dkdkY1lxaDhXTUNTbmNveW84UDZjM0JKT0g4U25ETTZXbzY1VWJXYnAxTkg1cUVlSklIejI0ZDg0WjBZc2pBXzlwNkk4TThNNA?oc=5",
+   "data": "2026-10-24T22:22:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "fbdff1e4a66a",
+   "titulo": "Quaest divulga pesquisa para governador do Espírito Santo na véspera do 2º turno",
+   "veiculo": "Gazeta do Povo",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPMWdfd21hVUdic3JpZWs1bFFGRHMzb09Ia1FydkMtWDUtUUk0TmktSGt3cGkxd0lrUXJXUVB6YWZMeTlNZDFBNTQxbEFESHMtVGZVS0E3c0xzRVNtT2VBcWRWZkRWb3d5UmJnZFNwVENPbktUekw0TzNjWTdYcTd3Mk8yQlJVTnBjS3E4R3FER3JZcklxbHNiQTVlSml5YlVwS3dmb3h0MG9mMFd0aGFtenA3Wm5ucDZLa0pOUS1ZTWlwZjZkZTRqQWlPNmJybG5TU3BONQ?oc=5",
+   "data": "2026-10-24T22:19:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "269bc414c760",
+   "titulo": "Quaest: Pazolini lidera no Espírito Santo com 55%; Ferraço tem 45%",
+   "veiculo": "Folha de S.Paulo",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeGhNNUNiV0Q3a0xrZWpZak5YWXZoNlN3aGNVZ1F1U0xPMXlSSzZPMVBGQVNWM29OQVJVUFUzUEtmUlRHNFg3NVRiQ1F5eEF3aGtaUzN1S2FrRmVVMVh3RS1pT2M0Ml9NOW05Wng3NkhnRGV4MVJ3LW9iRmhpMDY1ZWIxTkJMSXZwcnVqTEdyS3ctYkZ3MjR0dTF4TG1rd05aUHdxZzJKR19IUFdJT3lXdXZB?oc=5",
+   "data": "2026-10-24T22:08:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "2c0f360faf7f",
+   "titulo": "Pazolini tem 51,2% dos votos válidos e Ferraço, 48,8% no ES, diz AtlasIntel",
+   "veiculo": "Poder360",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQVo5QzgtX3lDR3RCTExWY3M4cDlfVFBkaWlWUjZoZndWZF82amRyYVA1Z2pKZ0tmZVBfcGRZalI2a3hmQUdFcjA2aE5BM3VHYjdCal9mSDRrY2hKZEM2Yy1MbmtDcU1XSHlLMVgzWVpGbWtTaENBSDRLNEVZTEpjcmRZdDNEVEotTjBGNU9HbXBtNFFEd18xWDExaEdyd2M0T1NUdk5WbmhWLVNJbV9FSkdVWXFvODVMUWc?oc=5",
+   "data": "2026-10-24T21:21:24Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "ba13ebdb2e3c",
+   "titulo": "Pesquisa AtlasIntel para governador do ES no 2º turno",
+   "veiculo": "Gazeta do Povo",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPRndWWmdXUVVZR3k2cndiYlBzS3dwYWNISENGMlphYjEzaGtBaEUwU01MQUtCZWMtNFhFRWt5ZHdZRk5sTXZSb1ZvaWRXUHh5Y2FSTnhhMGgwQmtpNHBlbjBJQjcxTmNnYnphcFQyOGh2bXFINFRDdFBnNUtKM3piY2J0Sjg5Z0FlRURSVmRJcGJnck1xU19GemtZenBQZTF1Ym5ETFlfcXQ3MnROVTI2MFB6Sy1JN3J2UkFWY0NqRTl1MEx0N042RTdER0tzdjA0c0NONW4xcmZ2UQ?oc=5",
+   "data": "2026-10-24T20:46:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "fd27d422bdc4",
+   "titulo": "Pesquisa AtlasIntel: Pazolini tem 51,2% e Ferraço, 48,8%, no segundo turno",
+   "veiculo": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdHdwVENDTTA1TlQzcTZRci1DSUVjUGdxQlluclM0aG01Z1FRdHlJZ0tYTlhONnYtUjE1RUkyYVpzMEJtSnM0ek9FZkxPUWFweEVqMWNTSlM0QnVoLUFpMWR4WTMzaDkxYk44ajQwUVdCZUducU9mZDMyajdXbnY0NEh3V3JNeEp0T29rMGxzaGE3NUxRU3FTMA?oc=5",
+   "data": "2026-10-24T18:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "077b9618e057",
+   "titulo": "2º turno: A Gazeta divulga nova pesquisa para o governo do ES neste sábado (24)",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPejVZUG9heEp3S1FWY2RMaV9yXzFxa1BBcmhhaFp3T0ttTUVqa29tZ2kxeFU1U0o1R2d3VTJyNDRwR3g0YVNWRHJaQWE4cGZzdzNyYUlLZ0xQMXRVdUV1WlJpUDZaQk9NWHNhZHdXZGROOG1mUENJVTVBS2tFcDFYV09GamxxYVZSZXkwa3NRbzM5N1FiS2ZSYnZkYVJzZ3dKQnhYOEVGOWl6WGp6N05fYXREbF9wcUtxeXdB?oc=5",
+   "data": "2026-10-24T11:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "27d799708026",
+   "titulo": "Qual é o número para votar em Lorenzo Pazolini, candidato ao governo do Espírito Santo nas eleições 2026?",
+   "veiculo": "Terra",
+   "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNR3NUUHpvMFhHeXhMS3FsUmFfMGlmMndCTmt0RTVQQzBXLWc2YlBuVmxINmdvcExDbFlQaHhYNG9DejVDNXhzcTFvblFLU2FfYmFBTnJQZXM5SWlIVnA5V0d1N1luMFZDdWgxZEpzU2QxM2JYc1FZYXZQX2dENEo2cGFxb05BdzE5Ync1clBNUjJ3MldqSUhuNFlyZWZVbTZUVm1WcEh2dEFURWNjRFJuckxHOTlPOGFrakVqM1NQUm1sbk9lSnBLaFlMMFZRYUR2QVBjV3NHSlRPQ0otSWdsamNGcU1nSEpCZnVXZnhRdjJlV3l2UWVKUEZHYk92YUJvZjk0ckg2SUEyTnhzcF9idmppQ0oyVVVHeVk4RQ?oc=5",
+   "data": "2026-10-24T09:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "10239f554667",
+   "titulo": "Qual é o número para votar em Ricardo Ferraço, candidato ao governo do Espírito Santo nas eleições 2026?",
+   "veiculo": "Terra",
+   "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPd1EzUFd6ZTdKOWRBdi1nSDJwUVVfc3VqaVR2UnhhQU1UOFQtV21yRDBieG1ucUpGV29hVHhvTUlGNkZoVHdFZzJIckgwbDFRWHRwZUVDQ3ZMZDVaMXRQQWxVMWZJRHdJS2VCT193SEtHdmc0eDBuV1RSOGZ1Z1dLQUhtdDNFUGtkRElndTVDdDI1TnFvTFhoUUZiY2pUWm5zT3BhR3hqUDBRTU5rZ3BrbGowSDNfU0wyQUVVRFpiblVUV0JtZnNEd05rei1aRWZLR3l1c0xGVmRwblRCQXpJR24wQ1ZDRUR1SVdQX2NQaUJSTmYyMzFqblNvLUNCZ0IzX25zZkVudDRmVTZzeWZCanMwSzBQTHo4elk0?oc=5",
+   "data": "2026-10-24T09:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "5fae18123b51",
+   "titulo": "Duboc não coordena mais campanha de Ricardo Ferraço; veja motivo da saída e quem assume",
+   "veiculo": "Folha Vitória",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOZVo2S1hGNlA3LVZGbmNqdjhrbVRTdXFvcGhaUEZjN0k5al9IZ3ZQZ2RiVDh3ekEwVGVMUEUtTHRXc0w4UTZaQ0s0VHJOektoNGhaRmtMNjl0M09FcGR6S0M1Y3BUNDIyeGFuRXl0S0RWTmxyZ1lxMmxfNW9Fd3RDb3hOQnJENU1vU1dJd0poS19iOFotVnVNSUFROTVvOVZUSkJkTTcxcy1renJLX0w1LTdkLTZxMFpuNHRxME5xV0RFb2R6M2s4?oc=5",
+   "data": "2026-10-23T21:10:28Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "4f4f4165f3cb",
+   "titulo": "Empresários de destaque entram na disputa eleitoral com apoio a Ricardo Ferraço",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOc0lrU0JxVnI5bzhuM3dhZkRoQldXSEZhMFlZTmdBSnM4alR3cGVjcnhFSTlHWTBqekdfaWNQSTBKaXFGTnRFNHlWUFNMUXpHUkFOTHZDcWM0aEJuZ09HNXJjeUtqMXZ2UHotM1ZCTTdnV0I0US04SWV0S3g1dFREOGxkVkIzbHdYZmFMLTNtQTNWaHZkMF92N2ROemMweVhsaXY1cw?oc=5",
+   "data": "2026-10-23T16:52:41Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "43be6ab2d33f",
+   "titulo": "Assembleia do ES fixa teto percentual para orçamento dos poderes Legislativo e Judiciário",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQzBvbTkxS1JTZkJ3cEtHYUlxTDY4RVo0Y1NaVVU3WXdmMXRlbVpsWEFLeHM2YVpMaFBpV2R6RWgxNHdSQ3ItUDFPbnlTeHJMQ2ZsS2pCVWpxN0Y3dUFVRjZtZVV5ZTFrRHU3V2EyY0hhQ2ZOZVFnMmF4VWY4clFRQkI3RHVoRi02UVpyeHVkUDZLaGN5RVM0aVJ0dHllZGZ0cGNiVGp4VGk2bUJ1VjRMd1Z5Zk5GSFBYMllEQ3ZEeGZIc2lMWEFTZDZBYlRDdw?oc=5",
+   "data": "2026-10-23T14:57:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "02e0a63addcd",
+   "titulo": "Segurança domina debate da TV Gazeta, com troca de farpas entre Ricardo e Pazolini",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQaWV0ampYa3p6UllOTEFCaEdDLURWTkxWWmRaRzQ3YXNmOHhoQUFXenJTSTZrRzdVamRSX3NkRjEyb1NfUmt0QkdvSk1maG9QV0RqV1lHajBycXQxRUZMRDJ3eERwbzdKNEFCUmp5eThDUW4xa2tTa2Y0QXlrbzJXcG9Sb1d5ZGpWdHRzcnNSWDJEcFNXODJNVTlLZVRyNEpucTZYd2dwLXVfa1g3aDlUa2FzUFZ0RkQwYjJXYnRjS1NPRTg?oc=5",
+   "data": "2026-10-23T04:27:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "67be99eb1ed7",
+   "titulo": "Pazolini e Ferraço falam de saúde e educação, prometem pouco, e trocam farpas sobre facções e feminicídio no debate para o governo do ES",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMitwJBVV95cUxNdFJGZUJ3WndibkN1OUxRQzBnbG5Wd2ZMQVp3UWo0TlV2NlR1OUVoNU5zTkpPSndYVF9Ka1U2TDZSZ1dVZDJKVXJJWk55OXYyV29YbzJLNnV2UDhaRXNyZ3RoR2IweWxvTDRjLTlRVUY2LWNSTUVZSlJXYndOV3ZKVXBNV05lWHV5QmVmQWVNRFhHNWZzSkJJeE5TSG5IOFpFRTlVb0ZKcnY2TXlXQmtfUDE2bTg2NEJGa3lFakpJUWdZdVFMVWpYaERWSlBwMXUwSkJpOENCWXBhQ2lxMGkxSzhpVzZmSzJJb0NZN2dsV3ZjZmlpakx2QjlRNVZkaXU4Y1ZVOGdkXzJjV3MwRTRLRi1jWUx0VDl0QTNLcUp0bWJ1NmJUNU14THpRODBFUzFzck51SlNhVdIBxgJBVV95cUxNczltNDdKNEFDeDhrLVFucjdjUW9mMmpCMDRMQ081TUhINGtuSGdadVhwQkcxY2NaODJyVmowMTZ6cWNYYmpFR2NYWWpxT1V3bGFlanNrOHBjeElrYTJGaGtHTFNPbkRFWkJweDBIM0UtTzVlY2FlNmk1NTcyY1VGeTZkN0ZKRXE2UERsMHBFbTYwa0lJbnY2eE1NNldid1lSZWZ2eXByS0VkMjNPYm8xVWM0eUJuLTdwdjJBSDktMmxWaWR3Z2VtRkljMHl3LTdnbXVZRmVQdldwVzhwYzIwNmc1ak13Ulh4S3F2bUVKakxaM0pWVWlrVklrRWRYQkFIWnJwV1BDQXNvRFNPUTJBSWc0TjVpS2hwYTA0c1lRTTF0bEg0ODJTS0gzTTk3WlR6ek1EbV85b2ZHNUEtbmtWT0gyODBLUQ?oc=5",
+   "data": "2026-10-23T04:00:40Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "5d35a7f345c9",
+   "titulo": "Eleição no Espírito Santo: Ferraço e Pazolini disputam governo estadual",
+   "veiculo": "RCWTV",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNd1BOU04weFhnUl9seWsyV1dnQnlLVzRqZy1fVW1US2lJVlE2VWp0X3hkRUJlNkRERW9faDFwd29xdlQ5b29hTG1tZWUxRDY0MXREOWlvWFVCeHRTdDVTYnFCZjZqYkdGWGpPUkFkTWlVOTFMaVpVYkEyTXNNTGtudVFBcGM0VzdVTlJFX2h6cnpKejZNaEd0Uzd3b1hmQnZuMk9tYmNB?oc=5",
+   "data": "2026-10-22T12:29:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "17bb1f805120",
+   "titulo": "Deputados do ES aprovam LDO de 2027 com previsão de déficit de R$ 1,6 bilhão",
+   "veiculo": "Vitória News",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOendub1ZxdHFya2FmZnZhb3dVZkVRLXBlMGpRcmhyUG9iN2ItX2JoNXVleHVuczJIaUtMdzlidV9HWmpLcUZXWjFPRHRLTFBPZDRvV1paQ3QwTlo0aVNUN1VGWUJsSHhnTnctR2xZMGtyMGp6UnpBYm5SMEo3WHlLLVcwRkNqdGdqNjNQQVFPMk9QTHY3Nmp0SllYc2o2NFZRNTdR?oc=5",
+   "data": "2026-10-22T11:41:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "b12b2ff4439e",
+   "titulo": "Eleitores do ES definem disputa para governo entre Ferraço e Pazolini",
+   "veiculo": "Agência Brasil",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNN2FnYkkzdFc5N2FROElONXZkSTBxVXdCSVQzZW1SWWZ0aS0ySUgtNEQ2RGc0czlxQV9nOElLeFlQZzZrVV94YVpPeDZwNGh0OFVpTEJIdjMzeWJNWjBXUXpoSGJvRnFxUmY3czJ1Z0F6WTBraDVFdVZYMVM1Tnk1eGZEUlZNTTVVRlRZRkpfd0JKM1pDaTkwZTF0VWN6UHdwdTdQcjlPTTZfREQzRlFSYzNOSDV3Y1RPSmJnYkpZajZIQVBKMmc?oc=5",
+   "data": "2026-10-22T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "4c3ae1d3ca57",
+   "titulo": "TV Gazeta promove debate entre candidatos ao governo do ES nesta quinta; veja regras e saiba como assistir",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPak15ZkN3T3FaR3BRcVhTUDhOSjdGb1dEUkJfQ0N4Uzh2LTR3aTZvTy11WlpjQzVZOGEtVW9KR0tRdU9lZWpadE9NazhQUmRRa3ZJV04yNnVzcXBjN2d5WXBtTjJNQzNaUWcxcXdTeDdHUUxXdWRSQ1BidkJjZDQwRzRuTDNjZWVIZ2NQUXpsdTlzSzhXR00wekRZSHRlTS1TOFNfZ1lJdzl3bjFJRDlnMGJxQlFSRE4xZXlFZ2ZmRmVYb1Z6b2FoSmlzWVA5bllRV0ZKMURGRnluN1Zib2ZvZFB1eDVfM0c0QWd1ZFJ4cmxvczlHNkQ3SXJvdWxvUdIBjAJBVV95cUxOVFJVaWl3eTEwaV8wY2VTZlNBZzNWY25yOGtGeGhtLWE1bkdhRl9pU0h5aEF0Q2JDX0NyelhTNE1waVBlcXlsRlhveV94UVdwMXd0MFNDY21HUmtyc0t3RU00R1lBc2ZoeXo3Ri1nSVVUUlZTMUppTURzdFRSNGp0MWpTZ3Q2QnJMbUhxeXpFSHB1dV9pbF9mQjFWLUJJa01zb21MRDVrdTJEYng1aGpkUjNHb3ppVkZBdVRnZmlOb2F0LXdWVi1rOXE5eFh1Q19vQWw1SExhTVdSSS1pb3BSUVc5YXZtbWVFbHNRcUJVbUR4NWszVS1QTC1ISGpKZXRRRjBkZ2hhdVI3R283?oc=5",
+   "data": "2026-10-22T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [
+    {
+     "veiculo": "Grupo Jota Sidney",
+     "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxNbGdhRVFZNFRod2lJaUhMRldzMTdqVVR5T3RkbUhvQ09PSWpteGNBeDlmQ3ZGZlpTbnZDY0t2RWFzYkpyTWxOMm55OE9keld4WnFOMWc1VFpYcFZOZ1MyYzJlOEFHVkJEZjY0QVZFMTdaaVREZ2gya3lpdy1wY0VaN3loOERJQ2E4NmY0elBXZFJLaDBaNVoyc1pPQW1kTHNQaFloY21Ua2lMbXNDZVBYUVNyanZ3cERFUE9ibTU4V3JCbENJZFRheUpSaGZqdkFtQmZ3Yzh1ejBoRF9XRkpuSjBGN3hhTlFzby14ZzAzOEFxQ1FVZ2V0eTBxYW5HY01JR2p2R21UaXRnb0ctelRHQkc0NktWMVnSAZwCQVVfeXFMUDdfNHRjc3VQS19pNXp1NzZDTXBWaGdJVkxjaGZycnlKMUNUemhHaldvU2l3eW5BWTlaNWdpaFhxc25QdFNqek9YUDFGcFE1Q2Y0VUgzMnY4Q1Z2dy1tWHA0QTNIUDh4SFFxS1lpZGhyLXRkbmw4ajVIUlBGU0o4MFpUUUpmUV9pMXNhNDJrSDh4MHZ2d2JGZ1E3aG90bjF1YmJNR3BuMGh3NGtaa21OTFNjaG5ZNHN1UGZWVElvTXNramViSUZzWXRUdzRUYS1wdEx0b25pSF9yMHQ3UU9KOWJzazlGdmJYdnpIVHE5MHZyS1puWFBtbUROWjhyZ2h3cUNNa1dGbFJrT096YThsMWZRLWxORXpQODlwSmY?oc=5"
+    }
+   ],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "2d5e95ec0533",
+   "titulo": "Coligação de Pazolini aciona Justiça para retirar vídeo com críticas políticas à candidatura",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOZnJBVUJUNFVpd3NZU251NjBFY09TUU1HZmo1YWJWN1JOY1NXMVJyVTZQemI5V2Z6bDBHTXYzN2NJYVBIME1SOGxtZTVKMWszbThwUGpJOVNhODRKblMxMHdvbk5uR3JZUFV5bjBsdTljQ2FDb2lLa3M2RjFwYUQ0UGJEUVBLMVJPeTh5V0tVT0NDbEhTUUdkcEpTbUl3YnNCS0hfemxJekd4OU5URHhaR25FbkFaSTBwNWxCSjJiMmkybHp3dXJLTWt5X29mZw?oc=5",
+   "data": "2026-10-22T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "f81f4c6b8e61",
+   "titulo": "Assembleia Legislativa aprova LDO com inclusão de emendas impositivas",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTTJ5Q250SWJDbW1rZl9YMWVlWkdlbEdackd6TGpVRW1WT0JqVWRXUXlhZmp4XzlhYkdrREs5ajJMam9EMHdzNVFZdnRfWUNneG1jcHd3dHFrVjRoalRGVWpzRlVybTVKUGt2dU5DdzMxd2hQbXJ3dG1UWDJtekZhRFJocjBmZS0yS0liWllHSDZHWE9KRjNvYkxpYmJkd3YyaWJLaVJMcDNGSXBRY2ZERg?oc=5",
+   "data": "2026-10-21T19:37:57Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "b625c64bdf1a",
+   "titulo": "Assembleia do ES aprova diretrizes para o Orçamento de 2027",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNV2U0TjdjT0s5Uk9tc0JaaWNRblI4azJhYUUxQVdpa0hvQndCZ1JBOTBNc0hVRDN5WmVLT044TmxZNWRmbzZXcE42cl9CZXBlWWZmRGE1T0pfTGdOdFVlVUQ1T180M2ZZVDgwaG0ySllsXzFFb3lsMTdVTWRMU0FrS3VLVV9XVi05Q2tkaXQwVE8wV3VkMUlj?oc=5",
+   "data": "2026-10-21T17:29:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "ad5870893729",
+   "titulo": "Pazolini processa dirigente sindical por vídeo sobre privatização do saneamento",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZUV4VUZQZENONm1wYTFuSmlXNTZXU1F2WDMyVmpNZTZmRGo3a2xnQUlsZWpSY2swcGU5dnZKZEZjc2ZSSHh4S0VVcDNSTjFJS3VSdHBidDIyVllrS3JFZTlReVRJWVFnUkFOQ0R6Y1RqWXpORnpoZG1QT3JEaEZaM0MtU0owaC1jMzRkeVRIZFgyQXB4Z0JwSUZiZl9iOE95V280enZibjk0QVRpX1AyUG0wVXVvQmkxYmxyVlpVWTF4SGx6?oc=5",
+   "data": "2026-10-21T15:48:47Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "bef6ce590b30",
+   "titulo": "Pazolini propõe cortar até 30% dos cargos comissionados e ampliar proteção às mulheres no ES",
+   "veiculo": "portal jornal do norte",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQREZvSnlSckdfWHBBT1NFV1M4RXVReWg4TEFHQ296LWFJVG9hSjFzZlRpNnBPakhXQlk5UjlWS3NWTjBzR2pTN2hqeWhtdnNNT1NpR3BUSDNzWTRUc1M5WDkyb255U0UyMzk3WDVyS1J5R3RUNFhteG5ET0tTcnJ0RTFGYU1XdERPOFlSelVMYzNRaXZwWS1OWHYwdmhyTFNBaGluSllRWUFzWVFMUDdMTjRlUk81cC1SaDA4bmI5NkViczFuV2c?oc=5",
+   "data": "2026-10-21T14:13:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador",
+    "pessoal"
+   ]
+  },
+  {
+   "id": "5e7266b5d051",
+   "titulo": "Ales aprova regras para emendas impositivas de R$ 14,5 milhões por deputado no ES",
+   "veiculo": "Folha Vitória",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNS3NraTNVOEhEdXh0TVQxM0FlQ3prNlMyUWhYTTVaeElYZzM0d2NDRG11Y18welFvM1hMN0xqTE9wY1FQVWV1YmZRbllfNXVNTWY0YTNSRjlwaThLeXdWb1FubEx3cHNRazZiYTBrOThxV0d2S2k0dDVNcUhLenY4UkszODJUX1ZSZ0V0WmNfZzNGTGFGcDdwcmdPekkxU2hHOE5KM2xPMWRWRVVMdVM1SG5wRjFpdk85Tll2aUF3?oc=5",
+   "data": "2026-10-20T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "33ff44a42a9f",
+   "titulo": "A esquerda a favor de Ferraço – ou contra Pazolini",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOQUlUT2YwUm01Unk4UjEtdVNnS0E1dnRqbkFFaEJlTEJtRzFRU1kxMEo1Z0hWZnRNdTVTaVV5cnA4YkItcGR2NjJNRV9ES2NfVUJfQWE4Y0lOWmhqd1g4Uy1zOUNneWFHWlF1dVE2VE13MUpsVjlYdDFOZnQ4b1RKLURhNFRiRlkwM01SMWpfb2F2ZEpFWnhycVBtN18tQQ?oc=5",
+   "data": "2026-10-20T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "ec01fed3ac35",
+   "titulo": "Prefeito de Baixo Guandu teria coagido 700 servidores a votar em Ricardo Ferraço para o governo do ES no segundo turno",
+   "veiculo": "Rádio Itatiaia",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNZzRSb0ZkSzNWTzZhWjZBNm9UWWZldTlfR1hkZTQxVEp1MkpRWks1WXdVTS1jd2JnRVJ1T09FOVFiSUxLMEtyZnVBWDlSaWt1SGJRZHduY1JnYWdqS05YaUhWS01Oa2djS003RExuUy1wSDEySVMxcjc2OHluT2taZ1FSMVlIaFVKMEI1eEJPczFOenJjOFV1NUt6QXZIbk1lM1NPakgyMjdJUXN3Ql95NXJTbk9aQV96bGViY2Zib3MycUpiQ2czQW41TldlcGQwVlVsTk1uR2pkMEVpLXlBV1d0VlY0Qm8yOTdfaVlVOEk?oc=5",
+   "data": "2026-10-19T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador",
+    "pessoal"
+   ]
+  },
+  {
+   "id": "9ca944b8d52e",
+   "titulo": "Com emendas obrigatórias, Ales impõe novo jogo de poder ao Governo do ES",
+   "veiculo": "Folha Vitória",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNck5lRVFIelllMmNLZ1FvdENVdFVUYlFpRk91S1RhcHBmb3ZwM2UzeEVNdnBBclh1M28xQXlSejh6MTkxclh2aW11S21DYVotemFuckFGRFJJbWdhN1lSZDhyeEFqUXhmeTFoc0RVdG95dU0yRzdMWHg3Q3JERlJWcFhTVkN5bTZBbUMyR2lCR1VHNFJlWWR3Q0JDOEJOX2NEN19IRHI2ZTFjWHA0MF9ySy02NA?oc=5",
+   "data": "2026-10-17T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador",
+    "controle"
+   ]
+  },
+  {
+   "id": "62fc7bd1db24",
+   "titulo": "Cultura com Ricardo Ferraço?",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBFcmQyNzl6Z0gzOGRadGk3aHRqbDQydjZJRHo2VFE5dnNSQnQ3ZUxlQ2hMU2dQQkFCcERFYS1NWFRoNWczVnQtazVnZVNjNGhYTmV3U3NvX2hidnRNaTZXV1FxbmJVUno0YnU2OFplcVM5OWFIaFlN?oc=5",
+   "data": "2026-10-17T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "0f779fa51f32",
+   "titulo": "Emendas impositivas superam em R$ 100 milhões valor destinado à Ales para 2027",
+   "veiculo": "Folha Vitória",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQdVFoUlNaQkVUaTY5Q3FmV2tnRzE1cGFqNEhGTVhqdVEzcTlCd0NXc3NuU2V2XzAwejhWa1ItV1ZfVGFaTTljU0xYYW5LRlRZSjNmWWdtaEZES1ZPSWQ5M3Z6VlZyVGdDQkxOOWVKaVdlMGF5d0ozdGw3WUxqX0JrcUNlMWNqWnVNa3pPWTZrWldvbUtrNkxzcjVlNWFSU2MtTEM0SG5zS25zZTZKbjF0T3BQS2pjUUc1Zm9F?oc=5",
+   "data": "2026-10-16T19:10:53Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "cb5030f565f9",
+   "titulo": "Banestes abre concurso público para 936 vagas com salários de até R$ 5,6 mil; veja cargos disponíveis",
+   "veiculo": "Portal de Prefeitura",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOWVdNVzNicmpYeHM2bHNBNFB5RWFzYi14M3RPMGxOLUFpR0gyc1JsQXhCWHZyQzNWWEZaRnVfd212TTNkYkhZd2pXdExfV1pkQlhiR3lfTEoyUGl4endGeF81YllJa2JHV1hHcjJoRjRqenU5aXdjcVQ4N0MyQmV3X2VLUV9KcW9PV1BqWk5iUVhiTWVST2U5V1FhM2FCN1JuekVv?oc=5",
+   "data": "2026-10-16T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "b828d34aedf3",
+   "titulo": "Ferraço assina compromisso contra privatização da Cesan e defende SAAEs",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOYWpWNmozU3praEZPdW5GR3h0OUpZLTZMTjlEQUlQME9IX1h3eFZHd1FEOFdGbTRfSHV5Sl9odVNVUkFHVkMzZVc0SjVYbXdueFZlVF9rQWhjcEtCR2o2Rk8xOFV0alN6YU51YjY3aEJNaEtxNmhZazM2cEU3T2lCeGJqYVJjbnN4bEhQc25tSmNTckd4YkRpREFJVTNJLTJiWEVHYVQ3QkxWbnMtemhmU293?oc=5",
+   "data": "2026-10-16T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "65b9e67bd18a",
+   "titulo": "MPES investiga denúncia de assédio eleitoral após exoneração em Santa Teresa",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOYWtlU3pldlpKVXdidnFlTjc1SDQ4OFRNVmlrZGU1eFNpbG13Rm5LTWxOMlRWNW95cmNXQXFyaVh2WlVGWGNzNzdTalk1eWVibFRvSW91ZDl6Ni0tMnl5TFNJaXJzaE54bXpvSlpOR1VUSjMxX09JN244TW4zaTFKbnE4ekNFTUlZSG15UFRVT0taa3pBazNheDBxZVBrV2JiSnFJOXZIZDRFRUh0RkRNc1gzX1cyam9Ic1E?oc=5",
+   "data": "2026-10-16T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "pessoal",
+    "controle"
+   ]
+  },
+  {
+   "id": "e7abd32545f8",
+   "titulo": "TV Gazeta entrevista candidatos ao governo do ES no 2º turno; veja horários e como assistir",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOS19BbmlTZ3BBYXFyQ2hwQlVtcklCRHZlQy1tblQtM0lkUE5XS2hxc21nekh4Wm1QOVJycWc0TGZNdWFmam9paXIxMEo3NDBvMnVJcGQyeExucS01OTU5dS0wcnlSMGdmak9hLTRjYkRsV0p3M3k5S2VvQ056a3FXTVExc2U2clF0WVVQaE1UaEMybnd4SVFUaTdxb0s4R0tVVEU3SEZyRGJsdDgyUkNDM0g3VlZSSGR0VjNCdTNvMjNCN1ZQSmFUZllZcnZyelRWbmdUUVpBQzJGcG1ybzNPeU9WZE9MMkROODZFWG54ekxneGRnY3I5LVBaZXPSAYsCQVVfeXFMT2Z1cXMzZktiNFU3a0JEQ21JX2tqZEp2TVhUX1pibWZ6dVllcXFic3FHcmJwcWdwUk1YNlVyUFhYeVl6bjhqNFFrOUlFbjJQWHBtRFp4MU5qNXdzTmh3dTlYd0ZsNGxnTmtJTWdMY1FJb1hUU2s1NmhJTXowX2NZeHM2U05MbDhYc3UzSVNXTnNkdW0tSFZWRUs0TEtua00xT3BSVi1EeE5PaE4xSFRIQm9sVVZnWGtObGhKYUk2X0FKQTJvMnJzcmpFV3BvWEdrSWtjV2h4aFNBMFBpeXhZZ25ZZWx6UGZRYXc5SEluaF9xWHpYeXB3MFNqdm9OV3A2RlJvbnpwdG1TN3I0?oc=5",
+   "data": "2026-10-15T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "8ebee93a4a64",
+   "titulo": "Cedrolândia cobra solução para crise da água e retomada de CPI contra Cesan",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNcXhYdE05VlBrVDREWmJmV2FXM29VT0NGN1djRkgzc2V0ZV91REZncnhEc1VNekVZdC13QURkRVppZVRlc2p6SnZMTFQ4RFYtMVRyblc0QlZRSUlaX0Z4b3JkblgtS2E3NFJ2X0tUUi1MOHQzamJ5RncwNlFaS2Q1U0FIVnRRZnJmS0lQLXVvVURwRHo3Um8tMnZ1b0ozX2hnYXdpNEVMZkJFYTFncUQ5Q1d2UDFtRzFB?oc=5",
+   "data": "2026-10-15T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "88d34c8562c0",
+   "titulo": "Quaest: Pazolini lidera 2º turno no Espírito Santo com 47%",
+   "veiculo": "Republicanos 10",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPSmQ1RmhDb0FNYnFqeExvbllZSjZjY1FySUlDNlVMQ1FFdUNjclgwRlJRVk1ucFA0SUN5SVJ1eDJCXzVleWJ4MFRkQ2JMbmdUZ1JOb2liSnlkRmstOXBLNVprTTR2Y1JieENvV2tJaXNuU0Vuc2JnclNHbVZEaW5JblA1ZzdlTlZYRTBqQWtpSWxpNFJVYWlDUDJ3?oc=5",
+   "data": "2026-10-15T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "80429fe12900",
+   "titulo": "Emendas de deputados vão superar em R$ 110 milhões orçamento total da Ales",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZTZaN09mZTRsdE5xR3p1dEdIWWl3Q2cydFQ1QTJ6U2lhYXc5ZzZ6Z0xCd09jam9weVVULXR3UEJVMTlmdlAtdlZrUTZMajNQTHFIMWoxYXQ1ZzZrX2s1X0FGWDZfTmlHWmFnNTI3V0FNZDN5M2ZjR2p5eWVoYmpoYjU3SThVUWlseHI4NlhHVW5MR3BVdGZtaVFNSS14bG5EVW0zSE41OGFERkM4a2NMN1dGWUIzMThz?oc=5",
+   "data": "2026-10-15T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "financas",
+    "controle"
+   ]
+  },
+  {
+   "id": "46493af3f1b0",
+   "titulo": "Pazolini avalia cortar até 30% de cargos comissionados, se eleito governador do ES",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPd3V0b1FKTm1Vb1lnUEpoV3NTd2dNTXBxbUN3V2RaV3UtQUNGbjRKa2JudUNTYnBHLTNUODNkZDdEUERsWDRjTzNPLUFIc0JqWDVRallJZ090RHptcGUtcGczVDhBVmRqYy1TYXZlQzVVZWktV0RGTGpGWW5lR0hfQk13eWVHVk0wdEczV2RWYmN4SGQ1d1AzY3MzSGp5SjRsSVZFZ1BrbXNRaHJpYWFhYm1KT3FHUFNtdjVzN1JzQVBUUQ?oc=5",
+   "data": "2026-10-15T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador",
+    "pessoal"
+   ]
+  },
+  {
+   "id": "d4ac1a6bf0cb",
+   "titulo": "Quaest no ES, 2º turno: Lorenzo Pazolini, 47%; Ricardo Ferraço, 38%",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNOEtETnNnbnl0UURaLUtsbVVMVjU0dHV5emxKZXdESURHd2tnSm82OVFnVXdxbW5CdHpMdW4yYjRkbUxaOGtLY0VDZmVBZzdIZFp3Zkw2dmNpX3FYOVI5LXltLUVWMHoycmJ4ZkhHRFVKRVNzb3BDLVB2U1ZSbEg5SXlCb3NtX3UyVy1JT2thNVNIQUpKcWRLSW9sLU5uQWdfMnhSdVlhc3NtbXRCdnJYX0ZDbkV6ZWtZSVp5Mm9kRHhIdUZUQlhNSlRCWVM5SFFI0gHfAUFVX3lxTE9iZ3dwS2s3NmZCa0c2Y3Nlc2loNHVNSEtuWnRIVEFsSllnanQwbG51UUxXdkh4alI2RnZNZjJ6a1BEc3NubDAtRGVQSThSaUhHMDUyU3MtalV6U0xudXFrX3Zobmd5STVwNGw2ZlkwZ29RWUl1SUU3WlBYTENCU3p0V0ZPY1h5TmRjWTdNT0tvQWlzVnV6ODZ1aXloOE1MS2xESlRBVWVYUEdEd21ZNjE2clZKSFowWGZVRmRSNXNkTG9fOXdjVnByR1NhVzNhVjZQSndVUk9ZTUVyUzgxMjA?oc=5",
+   "data": "2026-10-14T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "6f272bb1d61c",
+   "titulo": "Quaest: Pazolini tem 47% no 2º turno ao governo do ES; Ferraço, 38%",
+   "veiculo": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWWxMRUhDM29pZjgyOVhwNVVTcVgzb3lzeFRIbkhvVU0yQkZsYVE1bDFtSFNMTjFhY04xdXRUMHNsQXhBdmllclM4WTZ5dlN1WTBVM1dKb1lWTEtaV0lXWjhxc3dRXzZHOEdKcVpoRVNCaTYyNFgwdmRWdnFyclN5OE13Vk5vNHpYcF80QjVNTGZGMUVQaWdESi1JWU45eWN1bTRV?oc=5",
+   "data": "2026-10-14T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "59689d7f3896",
+   "titulo": "Silêncio: a Assembleia Legislativa está trabalhando",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOQmZ4Z1RyLTlRTkxISk5OTGN5Zmx1cWF2RURYZ1ppdVJLSmI1cnBfUWF3TFp0dE1vdmtjVkE5am1kNGV0UVZOTmo2VHJPeHlleVJYenljSzQ4cG81LUhuYmNVR3ZHYURfTEFCOHU4cS12d2liYWd1QTgyd25JQ1EtbzBXMmJXSFZSeXhtcmxzb2ktdS1aVzQ3WTFSb1dzYUQ1?oc=5",
+   "data": "2026-10-14T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "46145a2f44df",
+   "titulo": "A Gazeta divulga nova pesquisa para o governo do ES nesta quarta (14)",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQcU9mY1RXSG9rRjY2SzRId2M4N2pHZ1dLR3ljUXAzQ0RHSl9Cdnk4aWxwdElqeHdNckRjaWwwSXhkeEpaQVdDVVVHMjNpejBQQVdrRTBsYzZmenFyY2UtdWE5RDVWcF84RlBEbENSYXBtM2xDZDVYOGx5eDJXX0lNaFNuWW1QWnR6RUVFay1MSXdUVlpQZzJTNHIwcHI3X0ZhZ3g0SVh4Ulp2LWM5eUludQ?oc=5",
+   "data": "2026-10-14T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "41c329a7e4f6",
+   "titulo": "Pazolini tem 47% e Ricardo, 38% no 2º turno para governo do ES, diz Quaest",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOdGs1X0pXR0xDTXp3ZW56VktoNzBQZndSMURtVGFqaWVjNEhXVUtqUm51SlpuZ25jcVJCOE5nenY1UEVLU0g3X2FwSlgyd2N1eDhzc2ZLVkdkYVBBQVpRSkk4NGVJRlZUZlNfTTU5VUZLV05DaXl1N0ZPMVpxak0zUy1PX1hXUHZrWU1qWnJyU0pUWjBwSDNyWTUxa2c5SjZxWWgtSVNSODdUV3RsTjdnTWl5RQ?oc=5",
+   "data": "2026-10-14T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "22d36f1177e1",
+   "titulo": "Quaest: Pazolini tem 9 pontos de vantagem sobre Ferraço a 11 dias do 2º turno no Espírito Santo",
+   "veiculo": "CartaCapital",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNamVtakxLWWFaSk0tTG1aeFFfMUxaUFRoa0duZm5BV0l6SE9hcjB2YjF3aWhHNEFnNXNtYUI4eS03VnlMQU5MWnhGX1JZdnhsZ3BOay10V3lnVnVYcUhKS2VPRkFDWFE3LUwtLUxSeWRMUE5RWmZWU2treTRjMzl4MHU0cE11R094RWJDRHpCTnhyeG93Z2xSWGYtcmJFd0YwUndjVHdVQmhyS285aTB3eHlyYUJmVXU1UHJSWU5BXzFaY09PZGlmWWRCdU5VcWs?oc=5",
+   "data": "2026-10-14T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "18bd60fceb3a",
+   "titulo": "Quaest: Pazolini lidera no Espírito Santo com 47%, ante 38% de Ferraço",
+   "veiculo": "Folha de S.Paulo",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxONzhpejRFYXozbGhRME9CVGp5Y3J4ZmpPWVlMOExJR2ZpQXZyOUFXWTlhV3NGNWNSaklUX1RoY1B2WmVhSDg1QzNHcHlocjVEaHZfazM5YWhTZTJWeGJsX2tvSS1scXhPSkN4cVJEWnZPLUxJeGhmUFpPLVZwOWloM0NWQlhZeDE0SGVaaXZxM2dYOW5jYUx0cFg4YlJQSnlWWUJoRnBnNldaOGY1WGQ3NW1mVldwWkU?oc=5",
+   "data": "2026-10-14T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "cde31318ebf5",
+   "titulo": "A Gazeta e CBN preparam debate com candidatos ao governo do ES",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQc25HamEyOXpkU3dRWGY0UllFNVNqZm5PdTk5cTlZNE92cmowNzZxRGc5NXRka1FMekxxM1JDM0p6R2NON3pPa3pkQjBPWllXV3NlY3U5NzMzZy1RQ2VheElScjB5Z1pKUTRMZVpld3lseko3aXdxZlRJQ1VYQzhCdFFpSi1hS19iUk04NWNHLXp4OU5yX1lvdW9ZVjJEWlhDNEdoNkxfZHZwMXI1dlNKUktETko1SmlkTjJQUWE4aE42TFN3SGxGQ01NeHQ4dVFXWURHZ1Vkd9IB5gFBVV95cUxOUjl3SDZXZVRfaVJ2b1VGV3JPSHJwWGNaZktZVGZYSDQzTGhZM1F0XzJFRjZJS2J4WnJXRjgtWFlaQ2VoTGVqVUpnenU0ekxSZ3hmQlNpMElHLXlUSlUycjF5MW5TNFd0cWIxU0JjMGdfaW96MzJoNUk3MFppUFh4SHJyUEF0NmZMejI3QmhnRjdUc3lBakZrd2tqT3pOYnBGTnFQc3pRdDY5QmhYd29ZSGJjNDdSaGE0WmRvVHEwWU43Z0c1V0tKU3NpQXFYV1Y4QTJERE0xRWNMUnR4TGR3TUl0LUlpZw?oc=5",
+   "data": "2026-10-13T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "c379e3154650",
+   "titulo": "Quem são e o que pretendem os novatos na Assembleia Legislativa do ES",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYnlORTFYNzN5R2NrX3g4ZnVYRXhJdmY2X2VuMU9nSHVoNjZMcG4tb1FwTHp1ZHZvOERqY3k2bDBKWERHdUN5TTJ1UEdfVzRQaG9kQnNwN0h4R29MZWdlcEY0bW55aUI3eXQycU8tcFJ6NTRNV1pHeGNmZkxWRkxtZEpzUWU0bEdyUC02b1dyc0dnT0RsR0kzdXo3UnRIdmp0RW5NQUVHY1pMZnBpR19FdnpnSQ?oc=5",
+   "data": "2026-10-13T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "22a408bda966",
+   "titulo": "Deputados estaduais passarão a ter emendas impositivas no Orçamento do ES",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOWl2anFaajlxc041YU04RjItcGRHcWNfRG1xSVhEZHpvM3dLZHdhczRrMHV2OTRIY2xzMEJRb2doald1a2Q4ZllkX0FSS3RpNnFBRC1TNTFlT3kybnRfOWRsVkNPNlQwZEFyNDZQcmpiWl9fS2dXcm5oQ3FlSTJ6Y3dCdXVZal9FT0J4dnNlY1dmMUsyNGJfNy01bG1PSGJ3WG1PYUQwRDFaWndXaS02SkRfdUdCVnFfU3ZwS2dPb05zWHRRYmJ1Ug?oc=5",
+   "data": "2026-10-13T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "financas",
+    "controle"
+   ]
+  },
+  {
+   "id": "e107329473d2",
+   "titulo": "A nova Ales: médicos, policiais, empresários, agricultores e políticos profissionais",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPRzJyRV9vcUFKSFMzNmpnVUJfMkdJMVdVWlRFbk9pWEpJdnZnb1dKUEdaZTJtS0QzWVZKLU1PRzZpVWQ1bDViUHJOVkJ2OUp1dGs3TTF6Ujd0dVFXZVZ0dl83ODJIV05fMXFHRnpuLXo3S0txOXlDVGM1Z0UwRjdZRWRMV2FCdndjdXlPM3BNUDNYUUdfUWstTXEtVTdLRXhvY2UzX0NLNHVnZmoxZWlEeWVZeWJ1bVFRYVNsSHpqVQ?oc=5",
+   "data": "2026-10-08T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "7bf0311d8808",
+   "titulo": "Ricardo Ferraço troca coordenador de campanha ao governo do ES",
+   "veiculo": "Folha Vitória",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPYmMtLWNSaTItaXhaY1lqYU1zWTF5RE5hdzBtX01zMjd4OWNDQXhHUHRMd3A2dkVOTTNlWnlaZ0FpRkhqVk44WFlHMkZqUUVzSldDbWtON05menlNb04wbEk0OXNjcVdvNGJ6WFpfWEdyUEh4aXZZYUlDSDROblBHamFsWWUxdjU3bThvSGxmRUJYZDRWNVZ3MTYtS0xpZFFZTWtnenZmWQ?oc=5",
+   "data": "2026-10-08T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "455b2669fe4c",
+   "titulo": "Governo do ES atende pedido de prefeito e anuncia retorno da realização de partos em São Gabriel da Palha após 17 anos",
+   "veiculo": "ES1",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNbWpDcGh2OUpSSW5HMURpc2szSXBZX3JIR3VqbUZaNnhKYnc1SkhXZzZPSWRCdlpXSC16VUR6MjhtTVpEcUJ3R3Y2emI2UkFTTlZiQzI4eGJDeUYxcE1KQzBocEg4NXNSZ1d1eFUxemFOVDlHQ1ZrNjhoTnJYY1duTlVoc0x0WmNEeUNOd0NzRUN1ZVJSbUMxbURXenNlbk1EbkExeHk3aEI3MFVjT1UyMElWWGNGNE4tWDR5Y1pWWGU3Vld0d0Z0ZFZmb2RINUZJdmV1Rg?oc=5",
+   "data": "2026-10-08T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "951779c884f2",
+   "titulo": "Pazolini articula apoio em Brasília e Ferraço reúne prefeitos no início do 2º turno das eleições para o governo do ES",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxPUHpzOWNiRWYxRTliN3NucVlxYmRmU0tub1E4LTg1VWlGWm5xSjd1NmpUSmp3dV9CMEd5RXRmbEtXOU5pcUxKdEVqNUVUbXJFNXlKODgxcHpYUVhuT2JDZVlTSVo3ZTVQUUxlQnFHbmNRVEQyUHItZ2NJZFVmSjdrLWtOUGREaEcwaXVVblh1UFVnZEpQMTBreWk0UW1rdEhLMXk3LTZVa1NiWWE2WEhtSVJKVjktWHpOa19HcnhNVElueW1faGxhTXZCUFF4Z2NJZWdBUGoxR2x2TElOSlpuVmZST3F6aXZaUXdkY2xIZ0JobkNsbUY1QnMyVk5kREVhcU5XWHJUNHJ5d0EzVHlMODQwVnBSTWRTQjlEZEZBZkvSAa8CQVVfeXFMUEg2UWZpVXhad2hkX2tHTE52aXI2YUlBR1d3YVBaWU0zZzE4ZXg0MW12UTlONXE1d2JNTmVDLTFQR3JpR0N1VDRDQ01wcWhPLWQzbWE2OWpmak00MDN4T3ZQMG93eUlBclBQQkRhd2dNMkFWS1hkaldsNmZPd09rLWtJU1dtZWNsZWVzekJmc3JsYnhHYnlMazE0ZlhQNkpqZ0NtNVBkeHZVR3FHNUdndmlWOUdWZmhsbHl3Y1hoZXUxQWIzaXd4U1ZiQm9XQ3JEeWxfNm9NWXlFOU5iYkxPWVc0MXRYZXliQTN0cWJHTUR4MFpYam05ZVRLQklLX2lnSm1RZFBBMGVqSjN1RndQTnNYa3cyYU9ZRDBpYkt2eW5xZHYxbURSdGd0Y0J4SE5n?oc=5",
+   "data": "2026-10-07T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "5c75d491ec2b",
+   "titulo": "Eleições 2026: TV Gazeta promove entrevistas e debate com candidatos ao governo do ES no 2º turno",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQUFlJcUhQZ19PdE5Qd2ptQnFlMWtvSC1jR2cwOG5OUkk1d1VVZHFtNW9EdE1nNWxjS0ZlMDktZHNhRjVrb2FZS0RTUVhhT183bzV6NDk4eXhkOUFRV3BWT0lSZ1dhMGthdXdvNEdEMXh5bXJ5QjNNNnAyNi0zeVdxYWxmbVhzX0t1c21aQ3pXYk9yXzBIMnBSN0xQTmtxdGVvQi0zZWVQUmJPTExmVEp4cmZoV2E0Q3JmaUpLbjc2WlNkWmpaQ0JXOHRYVkZ5NWs1SEpSYlpMNDMyeGlOTHA2SkJLbUJGMnFnVWk0VE1UcVhCZS1rRHAtZVgwLXZqYjJWUkVmctIBkwJBVV95cUxNdktpdVJXS2tIeml6bmZGaGstRzBqb1VBVnN5cGZHNXp3VVlBT3B4Y05wOW1IWUFadW1CaHV2a2RmNHdFUkhDQk9LMFZTa3kxN3J6R29TVkdIa3ZSeVR2MDdXcnEydkoyOVljY1UtM0lxQ29OTGlVNjZkMGg4dVBGOHQzeklsUEJMb3R0aUVQYXZ5UzJZNThpZnpDUXRva2NtUnVtQjUwVWZnNlh1NEl0TU8ySDhTMWp3ZW52QjZMZmVNRWZtTnEwc29MSWFENEwtaFZGbVNhV0lnT3ZINlZLa093RVd5eElXZXhMRnZxMUpjYnBKYWd1S0dTV1BRZ25qOEMwX0tfdTlYdktNRkpxeTlTbw?oc=5",
+   "data": "2026-10-07T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "2dce59dc15e4",
+   "titulo": "Eleições 2026: Pastor Dinho Souza, do PL, é eleito deputado estadual no ES com 51.895 votos",
+   "veiculo": "Conexão Política",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQeV9PbDZXclhxY2RQSzIwMG5RWXh0QWFEQkFPZElwNWxKVEJpQXMybmFreVFIZHVKZmFHS1FNQlRmZTNoVkdZVXBrajdyRWFrUHZ1NVBoMk51RkgyMFRYRTh2cjRMQk5UdXA2NDlUUXp3YUZsMTlhdUtZRldYR3Q4RGt6Y2p6cTdtTWxEUm8yVkx3ZVZQVGMxYVJXbVlJSkJmTFN6UzlqNGFKcmgyc3R1dHBuYkxIN2ZDdnJFLWlTQnJpMmdyTFdFOFBfYmhFRWpsdExReGVtRFZOeWhvTXR4MDF5cU0wdw?oc=5",
+   "data": "2026-10-07T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "da4b1c8bf7ea",
+   "titulo": "Camila é a mais votada, mas PL sai como maior força da nova Ales",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYXhvSTNtdElVWk5pZTNjczNKdlQ0dFdXN0Y1SmhxSldrczBId2tyaWE5RXZlWWRDU2E5dXRYM3pWYXlqZGVxNXpUaXhFeXZ2MEJNQXl2enBncC1GTlFsSDAzMHYtY0xaRVVJZ05MT2NYOHJSSUxtcW1yeUNnSHNVU1pPVy1aZWtVSVExZDRzdmRJOVJZVmhKZENGaTBUaXFsSVNtV2ZnTTM?oc=5",
+   "data": "2026-10-06T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "4c2183963870",
+   "titulo": "Pazolini e Ferraço miram grandes projetos em meio a conflitos socioambientais",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZDhIcy1iWWVzTDBxTGxHUklmc3N3R2w5czl1ekJ1ZHh3S2dYdlE5Q0xER25BRUdTTGZlM2w1b25PSlU3MHZZeE1zbnd1RHhZdjA0Z0NrSzc5MVlvQW9rZkxLd2JQcHdKZ2JscjduLWVwNFdXRzFYdjFhMUVYeHM1dDVodlYxb2EzV09sYjZPUlVJSzE4VXZaUmg0MDVROVQ1ZlVablZvS1pvLU5YZ1lTeHJJRlRYbHg2S0ZwbFhqT1BRUQ?oc=5",
+   "data": "2026-10-06T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "f41f02fcd1f7",
+   "titulo": "Espírito Santo: LORENZO PAZOLINI e RICARDO FERRAÇO vão ao 2º turno para governador | Eleições 2026",
+   "veiculo": "Terra",
+   "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQTjgwV1ZRejlWcmx3WGFuY254NHpFT3JvTG4xTFBoaWVqZ01ZUkhTR09wY01ZUVJyU3B5cXJHUnN3R1Bob096N0lpMGhQcDRycC1weEZfWGl5azB2YUpEYlBoTlJ1bVBzR2tySU4yOUYtRWY4TzZIRnlSdUJGT2tHRXlJcEEyMzJsOWlVQUhMUzRHUkRMWS0wZ2prSUc0NGVRQU9aMEcxQWRydnJMQUpwUXd1ekFyWTRVV3dLUXVZSlNsQVF3Q1FLU29sN3Iwc0dSaGlxeVdid1RldmdOQlB2U3BVX1NCbmpuODF3blRTSXdOQm8xc0ZHTzJuajF5M1oxaVZVWUNYQUt3N0FVekVOVjVHSnlWOGc?oc=5",
+   "data": "2026-10-05T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "d1d695e119b1",
+   "titulo": "Quem é Ricardo Ferraço, candidato ao governo do Espírito Santo que disputará 2º turno",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQcmZPREhlVVJIeDd2V3VLTm1oUFN2aUNnaUs3cmpvTHZsa0RDbFZkYVVrTUpCcjZBWTdRd2pYdWRhdWswNFk1aXR0TmJMOGRNOHBUbC1QN1lGb2RCaUxWWG1xeDluSDNYYjBPWHVXY2dfX0dFQWs1OFNleUhob1dBTHVwbzh1aDJNMlZ6ZkxpaDBlWnQxUEg1Q3BUZWxQVHYxWFZiNUQ2Sk8xUjNSS284X21CNHlrd1ZvbUcySnE4X1FHSnU3cF9fcW4zX09JcnJvUHBZcWNMdFR3OTBCYmNYRnl2c1c1YngyWG1Ed1pHSXlacE9k0gGDAkFVX3lxTE0wRDRPYmFxNTVBTzVRVGZremZUclF6RU1ISkY1RlZoN3IySlpfaTdBbE5JNnVGeWRZNFlQdTBqVFRnYXEtMUtCZmRRUk5ZNWJXczdVbXVJLVd5OVZFVkRHZ2Fja1NPMnJZYjZxZDFSOUNpWE05djIwVDZaNTltWWkyWmpoZFBWaUpJQkdZTjQ4dmpVbjJGUjJwQlRxWWM3QVZCUFVKOEk1MmhxdTVvTGFrZzJOcnNoeDNqTnprWEpQcTVQbFN3eGFGSXh5emNPN296dVlwc2hodVhTdEdKcm1tVHV0cG5QTmQwbC1qSmliN0hEakh3dGVPZWo2V09QOHJaYzg?oc=5",
+   "data": "2026-10-05T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "cffdf25a3612",
+   "titulo": "Quem é Lorenzo Pazolini, candidato ao governo do Espírito Santo que disputará 2º turno",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOVlBEZGg3N0x3WVRyOXlweU5nejNCR3RMZXRiTFd1MWV3MGF1dVJ6RU0zSnFtdU9iNExIWFJJUGlZUnNkUTZEem9VUmh1ckNGUlN3S01ZN181UXJ4N0xHaWtZWGNKc2JtTTVqc1loVWhMaXVKQlhGYXBjWFQ5Wk9RVV9rYnloS2Z5UTlJbGVKejJweHhQZ3BDdFJUUGp3aTFqamYxSUJSU1RYTVpjM2MySEZKeElUemNPcVF2ak9RdENMeTFvbm85Z2dNcVJTQjd6X1R6ZldNNGl2bFQ5bDNnOERnTk1PRHJYeDdrdGM3QlZIZDN6X3fSAYQCQVVfeXFMTWoxY2M5R0xWUWxiRk5GVEtwbnNiMHllWTJ5Yi03QWVBOTVidlA1bnk2emtXSjlvaUhCRk5SU01PMkxpbXFuYVJxU1JZSEc0UkdtdDFpNy0yaVpNWmNBZmE4d1NkakI0NTdvd3hmcWJOQklqOTM4UXFWSlpwTjlmNHhNLWhETXMwQjNwSTlzMUV4VXNHR0xENnFqN1p5Wk00ZEFCNE1KVllaRXJ0aGhVYlBibHdwSzR1ZFk3cjRXYlllNjFJVzVJMURYNEtrYXVPYjdfWEpTUWJZbjZUeW1COE9IaUZmR2NXRVJqY3FHbTl6d1JBZ0VOYnNGY0FscnZxYkpydUc?oc=5",
+   "data": "2026-10-05T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "ffcb6e509163",
+   "titulo": "Governo do Espírito Santo: Pazolini e Ferraço disputarão 2º turno",
+   "veiculo": "Metrópoles",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPY1VGbUotU0JUeUpiQl9rY3ZoRWZsRlk2NjJ2eTBnaVpiWHdmQTNHNmhnRExIbEl4aDFFNDdWZEJRQnZNSnFURjJMVXR4dHo2Mkl3cTF5d0t6TmlNdzFSUThIeTRWWFJQYThWYy1TXzlIZVNuMFI3c0xmaE1GYTZuaUxaeG1xa2RKRE50bVlVQ0c2dDBtYmxvUEpXWEI3VXc?oc=5",
+   "data": "2026-10-04T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "e536a975243e",
+   "titulo": "Esquerda amplia bancada na Ales, mas PL vai ter mais deputados",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMTR2eURpWHJVcGo0dFVqS2lHTkpiLXczTG4xcVBJcU9PbTJEOEtHX19DQlp5aUQwZlQ1RHRvWmlISGVvejc5c2FyMURqcG5HbEd0SElEazNfUTN3N0F2Z0FnRWlZUVJfcTdSb3dnM0Qwa0I4Um50TmQzdU1iSjFuMXZxQzBSMVhSOXpsbHRsamZiLUNNcTd4WXFXc005Y3lrUE5Ob1Rn?oc=5",
+   "data": "2026-10-04T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "7deae3bf0fe6",
+   "titulo": "Lorenzo Pazolini e Ricardo Ferraço vão disputar segundo turno para o governo do ES",
+   "veiculo": "Folha Vitória",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbS00YkJFR1loV005eUF2T1pwU2x1RGFZbDZhMUhEZHRBTUNZOFE5OTZBNnpKVTlOME1YNDA2UlI3d3BTT1J2ZlE2QkZFTjdIalhLUnlxbTU5cF9BeGFYYTZWWGJqcm52NE1MbnpxeUt0a1pwM1BNMTN0RWk1YlhsbWFuS0hmZ2dIVUk0bVJfUEllZWJ0NTZhdGpENXpwODB2VjA1am00aWRDRjFPTjBJZGsxZ3pzMW9NZVhfMWF5Y1Btdw?oc=5",
+   "data": "2026-10-04T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "66da3dc7fed6",
+   "titulo": "Lorenzo Pazolini e Ricardo Ferraço vão para o 2º turno no Espírito Santo",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNcUNoRm1RUEw2UHN6RW4taHFpc2ZFSW9UbnpTRnZsdEJDTmlpQ2JKQkVZbzlLeHJyQzZPRDBqVVhFUnhoUmNyVllXS3oxTVRGZjRubkhIV0RUcGxKWElBQUVDQTQ2eC1zY00xODRnWmRZQldxXzhTWGQ3NlVRbmZ1Z3hfYXJ2YnpYa0F1cFZjeFptek42VHp3MlpaYzJBQ01RUlAzZTNyTzlQSVplajJwck5zMXQ1OVlELW5BMlB4ZV9qTnktOUZxTFd5aVJ6X1BiQnhWYWVva1k1MHMteU5qbVdEcErSAfMBQVVfeXFMTWxfcXR6ZzRMb21rWC03QVF2NzJyelZSaUZ6QUFVVi1pQkw0c1J0Tm8yaWwwb3dJSmpCbFN5ZFpkdFNyWm1VOWFPdGVzQ0VlRnZSbDBoMy1NTUZDVTdYYkpOMXdkclhpbGgzLVNYallaYnFMY1dCZnRJSE5uQUQ2WU9vZlYxMEZjVjMtckVSMTdZbGRVVk8tSy0xcTFYVWg4ZnpVYzFPdmxPZmJBTHZ5RDRzLWhXZGtTU2xxUk9hZkJsWGVfRTV4TTNBZ1hNTDJfNzRya09CSW1UaVBsa0VOMTVlRVkzRVVSVG9fOXBTaDZ0OHBF?oc=5",
+   "data": "2026-10-04T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "5cb6d81ad4e5",
+   "titulo": "Espírito Santo terá 2º turno entre Lorenzo Pazolini e Ricardo Ferraço",
+   "veiculo": "Agência Brasil",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPS3pJUmpkeTZVQ3FjWVFkSVlGaHNETnItTDFjVGtVTmtOTUN4T0lQbHJwWlg1NnptSmllQjR3NF9KVE5qaTR1cDRxbDdMb0RyN0plZGgtb3psUXZPdFpkQmNfTkR6NF9lbGJPV0hZd3NZUTRTaFo0dW5iX2NoeFFyTVRDcHZ4UUlwMUxwVEZLY0xvS2tPT0VqY3JuYWZGdHRFMnlJZFB0dTJfRFN1S2NJb2RnZXEyalNsVVNqb2pLYV92a2o1VGc?oc=5",
+   "data": "2026-10-04T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "55a0288cb6fc",
+   "titulo": "Lorenzo Pazolini e Ricardo Ferraço vão disputar segundo turno para governador",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQaHpXdXh3Z0FvOGcwdU4wTTROaWZLbWNUZ0VuZVRiWFJaUXVfRDVudTJtTEtreVBIY0MwQ3NNcG5kMm1JTzFoM2M5d0pJNmVPRk1WMTlvOUFUVTRPdlVaRW9Pemo0a2szQkRUWVFzMFUyVFF4UnhxR0J1S0pmSVUtcjd6LWE5dXdOVzVmMTlNNU5zZGtsekl3aE9IZTRzSlhfcjZJZWlVMEk5TEduQ1VlTUZ3RERoVktKczJj?oc=5",
+   "data": "2026-10-04T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "4b2ce34db229",
+   "titulo": "Apuração eleições 2026: resultado para governador do Espírito Santo em tempo real",
+   "veiculo": "O GLOBO",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPdUE5QVdqM3hZdkR3ZzZGUVZqT2xXaWdERkJseV9zZHpxanJRU3JYNnNVU2hlR3AwMElQdmZVdGdkeFhuV0N5eGh5Z05iME1BNVc4ODQydjdwT2FBeFIzU2NxWE1OeHhwVGZVUjNqaHRwRjJ1THEwOFBBdDNJQWtXSTUzUGNWZWU2REhXaFVPeTlBVkR0RjV1YzFYclB3ejltYlV1VXJoanRLenBQcG1MSkVmWFcwc3FJVUVaRlRyY0ZoTVVCV1c5bEJsaTBKM3pnWFI4cldLaFBTekZpNm04REpzLU1vbFJW0gH3AUFVX3lxTE5tWnpmZ3J6VExvMHZYUjN6T19JTV9zOXcxN0lMc0dadDFRQ0twY3VQSTYtMUVINm8xdlZiY0FBTko5ZkIzRk5EMFlwY19kLUFsRXZQZ0Z3cTg3eU1IRXdMTDJnb1JfeVpvR3BiSXp3Y3B2MkQ2bzhod3gzWEdJd2gyeHhnSWpReWFkU1JVVWF3NFk3eDlXazlRNGdRS0JNTU0xYTVwUjRtcmFIMmZYU3dsYVl1UzR4NVVEdHJXVWFqdVlEMHZqLXRBVEFSZzhiZ3hiOU9WN0lMdEZkV1lHeloyMklQUHZoeHgwM1pqRF8taHZsR1pCdFU?oc=5",
+   "data": "2026-10-04T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "3930c13005e4",
+   "titulo": "Lorenzo Pazolini e Ricardo Ferraço vão ao 2º turno pelo governo do ES",
+   "veiculo": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbGUzR0hlTldpVGZrM0VLU21KZkJxZlZJZkFleXhPTlJrY2lNT3hFMm5CTGkwX3NIRHZHdkdvME13RDNZUnZoU1ZuajRNdl9JckFqSlpOXzRNc0VPdVNvWEVSejNoS0dGOTVnTmwzQ3VlUC12Wmd4enpmWm00SkxtTXdIS1dhQS1XaFVDUDJMT1BhQ0k2SlJuSkl0Yk9JQWVlSTFDZjU1MFpkY3lP?oc=5",
+   "data": "2026-10-04T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [
+    {
+     "veiculo": "TNH1",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPbmlZcjFSRWJLNjNQWEltVXl4cDhabDlBNkUxcEQ4dHZSeXZRcUE1THRrT1dBeWRxRG5YOC1URld3Y25sY3RuOGh2bjNJRXpDZGtSQjRET3NsWU1ybTlpSGJaMC1WSjJRbFZERE5heUxtRjJWU1dwODdrX3gtMGtRbTdUbVRNUmFoRkdvVGI4Ri1WWTI5WVhhaV8tNmFvVWVVdFFOaFdLT2zSAaMBQVVfeXFMTkhVSzhTUWpDU25pQ3RKSnVBTzZpYkIwVGVwN2hrR01KVjEycmpQVEgzUTJFbWtjaER4UTNzSDVIeVhiaU1BRGRpNWpTR01STXA0dW85UzlfaVFqWlRBeC1SX09uNTR1UDR1RDhWNEhiTVp2dkRkTk5mOWJTcWM1WmEwNlVzbEkzcS1aeU1LRXROUzVVUUZheWtYR3kyd2V4VHE3cw?oc=5"
+    }
+   ],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "3327a9b9d5b1",
+   "titulo": "Pazolini e Ricardo vão disputar o segundo turno para o governo do ES",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNbnBNMDZ2YndicENNX3g2MDR3amYwSzJqdkVPY2ZFYjVmMzA5elZVYzRVOFZDbk9ZYXotQVJKV2FkWDVnT1RGakVRR1ljWFZKakpsY3F4WHZrb0RnZ3V4Q0NKZE41bnRvU3lQRmU2d3N3N3Baa3VIQ3dianpocDFiX1Vsc29DQVppU2dzVXI4MEZtQzFZMmtZWTVRZDFVcGd4V2phME82Q0RHTVpFMEE4eVl3?oc=5",
+   "data": "2026-10-04T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "1b9831c11e7d",
+   "titulo": "Lorenzo Pazolini e Ricardo Ferraço vão disputar 2º turno no Espírito Santo",
+   "veiculo": "JOTA Info",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOY2dsM21lR1BQMkdCOFZPUWVZeGtCSVJUVFE1MXFEOE5NX2dNZzk2UThYWWFqcFlKaXNITHVRT0huNzJaLW5iYzE0OW91U2JZTTdoMEVtc2owdmlfZDNyQTdlaFNibjFHc3J2SUVpRGxpckNiRGY4NFl0TVhTU2t4MFI2UmtCVjZnc01oMEFWbDlYRkZYMVpkVGFjVnkwUzlSeWJ0SW1NM3R4cDk3R3RvdWRMZWJHWVBCak9v?oc=5",
+   "data": "2026-10-04T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "c13625f6ba77",
+   "titulo": "Quaest no Espírito Santo, votos válidos: Lorenzo Pazolini, 45%; Ricardo Ferraço, 41%; Helder Salomão, 12%",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOdEpLaHZnSjV3NWc5RGRUd2VaUEFsVEk5V2NZaGQ4bHZTWnZaY0RCdXpvVHA5ZnkzMXJDcUxkSGtUeEY4XzdOdzFjUXZ2QkFRTUxSVlVHRFVhejBJMlB2eWdVMGtRd2ZCdHpzOXdoaFhhakhtbzV2aHRHVVFIb05kdGw5cmRZNTgydjE1U09sajFRRjY1bzgzU3JPeUpJMTh5V0MyNC13SlhUZ9IBuAFBVV95cUxPWElzRmZYSUg2VlBIUHRUdC1udEhSbzdwbEtEWW1USEZHNm1Bck1BLVJQTkJZQ2xWSHI3REFBTk83T0tGbHF0VFNkQWNoNnZpV3BuLXgxSkpEbTlJajd5NENGRzFra0dpZTVIRWdUT2RMSVBneDgtS2xqWlpKYURZYXZaSUc1R2hWTkxzWC0xYjRjaGJycVh1UGhZakdEdW80b19ybVJHUms2UmVudWtyTVVNSGxNR1Ro?oc=5",
+   "data": "2026-10-03T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "65cad9252d95",
+   "titulo": "Campanha de candidatos ao governo do ES é marcada por propostas em segurança pública, educação e saúde",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPZEhJSmNoMUlvZGtsZnNhSGdZTHdKd3BCX21nRThWVnp3a2YxZjZldjA4WGtnV2doWjRvOWoxM29XbUdUVFp2NUFmOTVjQ3o0TjF6VlBjVVo1ampTTzdvREttWC1uUDF4VHdOWWJoVWdvd190bzBSQzZoRzAxTDlJWkw4WWZacjdBVGMzU0tQY1FwMnRvSnhYemczWVFPVDJ5VGhuUDk4YlZHbDhCNXNxbmhzU2theDRwcVVqQmUxbDJFZnlicXhrbXJWOGNHMlRGNVhyck9FbHRERGJyUDVBLVpKMC1kdE1IUkc1SFJ4eE4tWEZzMWt1d2JPT0ZvMUkzYTA5bUZNSEZ1VjA?oc=5",
+   "data": "2026-10-03T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "37bdbf0702c8",
+   "titulo": "Ricardo Ferraço lidera última pesquisa para o Governo do Estado à véspera da eleição",
+   "veiculo": "Jornal Norte Capixaba",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPNHQwU1BWbmlBRUFSSE1JcFpESUwxWEFHZjNWenpSOU9EdGc0Ylg0T2dTelEwNWdsT21tYmJPdzd6TXVrcWV6bXhFVk5JYU9ucm15b1FYMUJLdTBSX2R6RGM4TTU4cGZMNnMyZmNJZDNxWHNnRlQ5TjlDYTFaMDc0d195Z3dvcHp3dG5sdVp0cDNDdk5hYi1mRGlHY3EtZHdOUUdZa0lua0Z0OVA4UTJWcWNQYUxyWmF1WFRmdA?oc=5",
+   "data": "2026-10-03T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "1e9d0ca8a39a",
+   "titulo": "Pazolini e Ricardo estão empatados no 2º turno para governo do ES, mostra Quaest",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNLWUzNDFHU1dod2psZ0U2ZTlyZG15ZTFhTEhhZE9iY1NOLVpNOEVuS1Z6ems2UUtFZGVnNThuajhNSXBUTjMybFRpMjRlM0RZcWZLMFMxb2lncGtfb29FLUF6MWV1cEZTQURCazdmOXZXR1gxZmptVV9nUDgwOXZlZm5tdzBoRnZBanJmcXNOVHR4RHpUTmVWVTJWWHBOOFBVMGN3NEZ6X0FmMDc3TzlucnJUS3J3YVFkckNRLWtaSQ?oc=5",
+   "data": "2026-10-03T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "fb042e28393a",
+   "titulo": "Rafael Demuner, candidato ao Governo do ES, fala sobre propostas para a economia",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNQ2ljdGg0RTdLNmZZTWhtdzctejAwb0JwZE5aS3NrakNCdzRJVHZMUnNJRDNnRnRWMWxtTmRKd2VtUkQyWmVZSkxBTHhoYUhnRkQzOWEzem9TVk5mOW9WSTBqRE9rMlBYVGxkNDNtUkFLRGN5NU5RNUlyMEJMVDJzNG9aYTR2Y0wtZUpVTm90YmFWeXBkTEZfVUxueW43dVNpQ19VZXpFSVFTMzZKOERQWVpicnJSeFZfQTRWVEpKcDhGOEFQSmpxTUliemd1WUt4WS1KSnhzcEhmYUFfZ2NYcTlFZE9rVnllNlVrWG9uSUTSAf8BQVVfeXFMT25pa0psSDdTaDJqZ3F4QnktbUQyVXJpZUNEZ1VXTUVSOFdvYmlvYlJucmFoR0xJXzZfclctckp5YVJBeUp2a2lzWmJWaTNJLXZCeGphaEFkLXg4SGZMeVBhVWljS2NNNGhoZ1ZnQXREaGl2MVp4aWFWSEM2eDBzY3REel9KeEhVbWs0NFhtVU9ZeXo4VWxnM0pBWTdhQmE0S25maHU1VUEyTjdOU0JSLUg5TUlKTWxlUlBXMFdkYXI4Y2VCRExseGlyQUpTREF3eVdESnE5MmcxX1ZPVUppTHBQQ0gzdjJSZDQwbTZOenZNLWJHelRqUmh6ZFFjUFRF?oc=5",
+   "data": "2026-10-02T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "e0fe22ba2689",
+   "titulo": "PLOA 2027: orçamento do ES cresce R$ 3,4 bilhões, valor suficiente para governo recuperar perdas salariais acumuladas",
+   "veiculo": "Sindipublicos",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNZHpXbG5iajZFRllnZ2hQSEtNSEd3NFFPbFQtSGlqYm1oYjdHNWpDY2ZJbGVEZW94aEVnV2hucWZSS1RhNVFySjFyc3lSLVJaZVZJX1FPZTdYRDJJNjVDM2s3MFhDTjRkVGVQS2dRM0NKUENQMlBnU3RuVkdqbDFhNERYNlNoNXdxYTJvWlA3SlExRkNPbVBfb3M5NmVvUHNleHktZE9tVWlJODdzT1F6d1JQaFJXNDFROERmdXlvektMZUdGUTc4cEp1cVp2bVo4cEMzMlBma2VCdUE5S3pTSA?oc=5",
+   "data": "2026-10-02T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "c4e6ed96cae3",
+   "titulo": "Procon do ES tem banca definida para novo edital de concurso público",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPaXRjVmhxaFhFX0VqY3ZJbGZwTVhBYVBEeTI4WlM0NnRPQmRRSklFRnJGOWJkeVpjR1JHN3N4Y2dDQjBOcTRMY194SFlmOVNoQkp0eWp3WFlPeGdTYWNjZUNESU5xUlFTTmV2eGlEYmpRSXlWVXdaMk15ZjJwc092OE03eHVBdEZrVVp0TWNNY002X3VqSW54aW9RdXMzaUdSVndVNi1kWDF6TU9wMzNN?oc=5",
+   "data": "2026-10-02T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "b47fa66ba810",
+   "titulo": "ES prevê R$ 28 bilhões em receitas de ICMS e de recursos do petróleo em 2027",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQcGVqSFd0WFFUbzlfaDBoZmROZG55ZE8ySDNCU2Y2Q1FrQkNYSXNQdHZsNnlOTUZKMGpmY0QyYll6dEVkZ0dKcTV6ZlRPTm1SanQ2NGM0emhUMVRmYjF1eEU1RnU3STRjWmU4OUhMWmcyYzRVd2xSWmJGejRHMkJPcTd3NmJyajd4YXVDcjdkUEZjdVlEdFVpaE1VOXJ5Nk9WeWc?oc=5",
+   "data": "2026-10-02T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "b19738788d47",
+   "titulo": "Com salário de R$ 8,1 mil, concurso do Procon-ES abre oportunidades para cinco áreas superiores",
+   "veiculo": "Portal 27",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNkw5dTEzTDVhVEhGekgzanlKWDVkSW1MRXBYV1JYV0Y3T3gyRVYxRjdJdlFRc0dJZlBDR0RDTm9UUmo5eGwxOE9fQzZuTFdmOWdsTjZWWGtnUXh3M3hVeVJBMTJHMENneGs1VXd0a2FSYUNBX1AtdmlQbEM5MmhHM0FUVmY0a2N0T2xLWVNFcWM5MHl5TEFYLUFwX1JOQ05ZeXllWDFJR1RRUG9iVWtDVk9pdkZXY3l3Nm15OFFR?oc=5",
+   "data": "2026-10-02T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "6bf7559aab09",
+   "titulo": "Espírito Santo prevê orçamento de R$ 35,4 bilhões para 2027",
+   "veiculo": "Vitória News",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOeVBzZkQ3UEI4NWp1dmdmczlMbFVCVGVJU2Y0WjZocEQ3NWZzN2xkMzJZbG5hMHNZSnBaVGJvdm5MV2wyaDlNaG1Uam9iMWJUWVJWc2EzSmFNaWVaMlB3ZDZ2YlJqTHJxUVJod2N0dHpGdFJReUhtYUQwaVdWOTFZMUJFY0dQRnd1bmozbA?oc=5",
+   "data": "2026-10-02T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "c4de3ae0add6",
+   "titulo": "Governo do ES prevê orçamento de R$ 35,4 bilhões para 2027",
+   "veiculo": "Montanhas Capixabas",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPb0o4dDQ5UnVCQ2lSWUFXVWxsWmhrVmZUY0NxQ05udWFmckZuemZGRGlyaTFHM05xaDY5TUxfRDBJRUhjRlRXZWxkMU5XUERtWmM4R2F0T2NudF9ubjZKUWgtY1o5LWlCeS02NWhabUlNYXF4cW5KUXU5dmxKaHRMdk9lcGxEdG1Hd05IUVM1WW5hQnRKWWhUeTJHTQ?oc=5",
+   "data": "2026-10-01T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador",
+    "financas"
+   ]
+  },
+  {
+   "id": "b70e42e5dca1",
+   "titulo": "Governo do Estado apresenta projeto do Orçamento para 2027",
+   "veiculo": "rede noticia es",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPZzZ5dm0wSFFuVDF5TTBQdkhwSHNpUUNQcTMwNEgwZ3UySUFhMEF0OWl6ZXYzX0VNRkVBS1E2NnlROExkb1dEY25UOVBXWlg0VmpBZ1QzTUZJUlVWSjFkWldQdUY4blBOY2VvZzVNMVpvNF80OWhqM3hObXdFQTMxOFhSYUxmWWoyLUE?oc=5",
+   "data": "2026-10-01T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "governador",
+    "financas"
+   ]
+  },
+  {
+   "id": "679d07d0deaf",
+   "titulo": "Orçamento do ES prevê reforma de pontes e novos hospitais",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVl9va3BEekttUXBQWU1aQ0xLcS1wb1VkOGxUdXFOU2xRYkFXRzFfcVJ2UjIyNXFoWklQZU9jc0FEUXNka2Y2X043VzNDZTdjc1h3UjhERWVlb1Y2SzJ5NDhCQ0ItRmJQdzkxWmd3QXhfR044aUFtYVJHS3dQR1R5X2c3Zll1UzJzSVlCZmlTMm81UF9OS0VvdHFrV3hXazJIeFpZ0gGrAUFVX3lxTE9aVllrZnJqbk9qWEZhaHo2eVg3aTlwQzdMSmpnb1l2bWY1b0FubkotTTJWZHF6MDFldW1GNEx3ZnV4Uk04WjFZRFpVNHB2WUxIZ2JNQ3RHTXF4M05hSTJ0aXRvMzFobTBaY3ZuR3g3Q2xrOEFET0U1cFZURkMzc19DVXRtbnJTcTZPV29VaGI3ZnJ6NUx3X3JBemxoMFJXakpvV2ZQYWJCcTRibw?oc=5",
+   "data": "2026-10-01T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "4cb88d366c75",
+   "titulo": "Orçamento do ES em 2027 prevê 28 concursos para contratar servidores; veja lista",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQN1Vnc0RwTHRZQlRPNllsVVJtWU5NRF83YlFOQ1lZUFJ5Q2JLeVpWSmN3d1VzbVIxeElhRHBKVmU5b3NJSEVTb1pWM1puX3lnb0h5VWw4NHRSeG12Q1NFaWtaeTd6Z2hWZFVWaVMxdHVhSWhfQzk4ZkVIVzFTY2FtdWhmS2c1OUczV3VGZW41d1RmdlUwS2RONFo1d09FbVFlREpZbmJxb2ZMMHJDTTR1UHg1bER0M3lpYzRWWEd3?oc=5",
+   "data": "2026-10-01T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "financas",
+    "pessoal"
+   ]
+  },
+  {
+   "id": "00c1d140927e",
+   "titulo": "ES projeta orçamento de R$ 35,4 bilhões para 2027; veja áreas com mais recursos",
+   "veiculo": "Aqui Notícias",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQlVPZFV0ejduNXcwdl9GeHEyUEstZTZZX2huYzA5U0lGODlfVDVVbkJSNG9OZ19scEZvbTlaS0paQms0RWpxYXIzS29KY1czdXNVVUFpWWdvbDhnS3ZhQ1VPVTlqSjNzOVNQUEVmYm84U0xBYkNDWWRxX0RndEl5TURUNFJzdlR2WDlsa1hCN2VUSm81dWFnRWZnUm1tWlE4dU5fRlNHZURONVd2dXp3?oc=5",
+   "data": "2026-10-01T07:00:00Z",
+   "coletado_em": "2026-10-30T15:32:37Z",
+   "outras": [],
+   "temas": [
+    "financas"
+   ]
+  }
+ ]
+}
