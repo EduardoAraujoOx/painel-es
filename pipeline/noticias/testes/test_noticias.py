@@ -51,6 +51,28 @@ FEED = b"""<?xml version="1.0"?><rss version="2.0"><channel>
 </channel></rss>"""
 
 
+class CasoSejus(unittest.TestCase):
+    """Matérias reais de 29-30/10/2026 que o filtro antigo descartava por não conhecer a Sejus."""
+    TITULOS = ["Sejus suspende uso de câmeras corporais, rastreamento de viaturas e biometria facial",
+               "Sejus suspende contratos de rastreamento de viaturas e câmeras corporais",
+               "Sejus suspende contratos de infraestrutura e tecnologia por falta de recursos"]
+
+    def test_entram_e_recebem_o_tema_de_restricao(self):
+        gate = coletar.compilar_lista(CFG["contexto_es"])
+        comp = {t: coletar.compilar_lista(v["termos"]) for t, v in CFG["temas"].items()}
+        for t in self.TITULOS:
+            self.assertTrue(coletar.casa(gate, coletar.normalizar(t)), t)
+            self.assertIn("restricao", coletar.temas_de(CFG, t, comp), t)
+
+    def test_notícia_policial_com_restricao_nao_e_descartada_como_ruido(self):
+        tmp = Path(tempfile.mkdtemp()); coletar.SAIDA = tmp / "index.json"
+        hoje = datetime(2026, 10, 30, 15, 0, tzinfo=UTC)
+        it = {"titulo": self.TITULOS[1], "veiculo": "V", "url": "https://e.com/x", "data": hoje - timedelta(hours=1)}
+        itens, _ = coletar.consolidar(CFG, [it], hoje)
+        self.assertEqual(len(itens), 1)
+        self.assertEqual(itens[0]["temas"][0], "restricao")
+
+
 class Feeds(unittest.TestCase):
     def test_le_item_valido_e_descarta_link_inseguro_ou_ausente(self):
         itens = coletar.ler_feed(FEED)
