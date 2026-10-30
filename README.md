@@ -6,7 +6,7 @@ Painel de acesso restrito para diagnósticos fiscais e de pessoal do Poder Execu
 |---|---|---|
 | `cargos` | Servidores e cargos de confiança: quadro de servidores do Executivo, cargos em comissão e funções gratificadas, custo mensal, tempo na função e a ficha da folha de cada pessoa | em operação |
 | `organograma` | Árvore de unidades de um órgão com as pessoas de cada uma, a condição (sem vínculo efetivo, servidor de carreira, função gratificada) e a remuneração somando carreira e cargo | em operação, com a estrutura oficial de 55 órgãos |
-| `noticias` | Manchetes da imprensa capixaba sobre o governo do Estado e a transição, coletadas todo dia, com tema por regras de palavras (painel próprio, Notícias) | em operação |
+| `noticias` | Manchetes da imprensa capixaba sobre o governo do Estado e a transição, coletadas a cada 2 horas desde a eleição, com tema por regras de palavras (painel próprio, Notícias) | em operação |
 
 ## Módulo `cargos`
 
@@ -167,15 +167,15 @@ python3 -I pipeline/lacunas/montar.py
 
 ## Módulo `noticias`
 
-Painel próprio (Notícias), na chave do topo, que reúne todo dia as manchetes da imprensa capixaba sobre o governo do Estado e a transição: o que repercute a participação do governador, o que sinaliza pressão financeira (remanejamentos, créditos, dívida, caixa), contratos e obras, nomeações e exonerações, e a atuação dos órgãos de controle. Mostra título, veículo, hora e tema, com filtros por período, tema, veículo e busca no título, e leva à matéria no site do veículo.
+Painel próprio (Notícias), na chave do topo, que reúne, desde a eleição (25/10/2026), as manchetes da imprensa capixaba sobre o governo do Estado e a transição, da mais recente para a mais antiga: o que repercute a participação do governador, o que sinaliza pressão financeira (remanejamentos, créditos, dívida, caixa), contratos e obras, nomeações e exonerações, e a atuação dos órgãos de controle. A tela tem formato de capa (manchete e quatro destaques, depois a lista por dia), busca nas manchetes e atalhos por tema, e leva à matéria no site do veículo. O botão Atualizar recarrega o que já foi coletado; não dispara coleta.
 
 ### Fontes e o que é guardado
 
-O coletor `pipeline/noticias/coletar.py` lê o Google Notícias (consultas fixas, inclusive buscas por site, que alcançam Século Diário, Folha do ES e Tribuna Online, que bloqueiam a leitura direta do feed) e os feeds RSS de A Gazeta, Folha Vitória e ES Hoje. **Guarda só título, veículo, data e link**, nunca o texto da matéria. Os dados ficam em `data/noticias/index.json`, com o histórico dos últimos 120 dias. Cada notícia traz `coletado_em` (primeira vez que foi vista), campo previsto para um futuro aviso diário aos inscritos.
+O coletor `pipeline/noticias/coletar.py` lê o Google Notícias (consultas fixas, inclusive buscas por site, que alcançam Século Diário, Folha do ES e Tribuna Online, que bloqueiam a leitura direta do feed) e os feeds RSS de A Gazeta, Folha Vitória e ES Hoje. **Guarda só título, veículo, data e link**, nunca o texto da matéria. Os dados ficam em `data/noticias/index.json`, com tudo o que foi publicado desde a data `desde` do `config.json` (hoje, o dia da eleição); o que for anterior a ela não é guardado. Cada notícia traz `coletado_em` (primeira vez que foi vista), campo previsto para um futuro aviso diário aos inscritos.
 
 ### Critério de triagem (`pipeline/noticias/config.json`)
 
-A triagem é determinística, sem modelo de linguagem, e **indica onde olhar; não substitui a leitura**. Uma notícia entra quando o título cita o governo estadual, um órgão do Estado, a transição ou um dos nomes acompanhados (`contexto_es`), ou quando casa com algum tema e menciona o Espírito Santo (`localizador`). Os temas são Transição, Governador e Palácio, Finanças e orçamento, Contratos e obras, Pessoal, e Controle e investigação, cada um com sua lista de termos (comparados sem acento; o asterisco casa qualquer continuação da palavra). Avisos legais em caixa alta e assuntos da lista `excluir` são descartados. Notícias iguais em veículos diferentes são reunidas numa só, com os demais links em "também em". Ao mudar o `config.json`, a próxima coleta recalcula os temas de tudo o que já foi guardado.
+A triagem é determinística, sem modelo de linguagem, e **indica onde olhar; não substitui a leitura**. Uma notícia entra quando o título cita o governo estadual, um órgão do Estado, a transição ou um dos nomes acompanhados (`contexto_es`), ou quando casa com algum tema e menciona o Espírito Santo (`localizador`). Os temas são Transição, Governador e Palácio, Finanças e orçamento, Contratos e obras, Pessoal, e Controle e investigação, cada um com sua lista de termos (comparados sem acento; o asterisco casa qualquer continuação da palavra). Avisos legais em caixa alta e assuntos da lista `excluir` são descartados; notícias policiais ou de acidente (lista `ruido_sem_tema`) só ficam se tiverem também tema de transição, finanças, contratos ou pessoal. Notícias iguais em veículos diferentes são reunidas numa só, com os demais links em "também em". Ao mudar o `config.json`, a próxima coleta recalcula os temas de tudo o que já foi guardado.
 
 **Nomes acompanhados.** A lista `pessoas` e os termos de contexto citam hoje o governador eleito e o governador em exercício; confira e ajuste conforme a transição avança.
 
@@ -183,15 +183,15 @@ A triagem é determinística, sem modelo de linguagem, e **indica onde olhar; n�
 
 ```bash
 python3 -I pipeline/noticias/coletar.py              # janela do config.json (2 dias)
-python3 -I pipeline/noticias/coletar.py --dias 30    # carga retroativa
+python3 -I pipeline/noticias/coletar.py --dias 7     # recompõe desde a eleição (rode 2 ou 3 vezes; veja os limites abaixo)
 python3 -I pipeline/noticias/coletar.py --dry-run    # só mostra o resumo
 ```
 
-A rotina roda sozinha às 06h17 (Brasília) pelo GitHub Action `.github/workflows/noticias.yml`, que grava só `data/noticias/` no ramo principal e, com isso, dispara a implantação. Também pode ser disparada à mão na aba Actions (com o campo "dias" para carga retroativa). Se nenhuma fonte responder, o arquivo não é alterado e a execução falha; se só algumas falharem, a tela indica quantas fontes responderam na última coleta.
+A rotina roda sozinha a cada 2 horas, das 06h17 às 20h17 (Brasília), pelo GitHub Action `.github/workflows/noticias.yml`, que grava só `data/noticias/` no ramo principal e, com isso, dispara a implantação. Se nada mudou, o coletor não altera o arquivo e não há commit nem implantação; por isso "Atualizado em" mostra a última coleta que trouxe novidade. Também pode ser disparada à mão na aba Actions (com o campo "dias" para carga retroativa). Se nenhuma fonte responder, o arquivo não é alterado e a execução falha; se só algumas falharem, a tela indica quantas fontes responderam na última coleta.
 
 ### Limites conhecidos
 
-O Google Notícias devolve no máximo 100 resultados por consulta, então cargas retroativas muito longas ficam incompletas nos veículos de maior volume. Feeds que só expõem as últimas 10 a 30 matérias (Folha Vitória, ES Hoje) podem perder itens em dias de muito volume; as buscas por site no Google compensam em parte. O XML dos feeds é tratado como não confiável (recusa declarações de entidades, limita o tamanho) e os links só viram `href` quando são http ou https.
+O Google Notícias devolve no máximo 100 resultados por consulta e **não devolve a mesma lista a cada chamada** (a mesma busca trouxe 100 itens numa execução e 69 na seguinte). Uma coleta isolada é, portanto, incompleta; o coletor acumula o que já viu, e a partir da terceira execução seguida o conjunto estabiliza. É por isso que a coleta é frequente e que a carga retroativa deve ser repetida. Feeds que só expõem as últimas 10 a 30 matérias (Folha Vitória, ES Hoje) podem perder itens em dias de muito volume; as buscas por site no Google compensam em parte. O XML dos feeds é tratado como não confiável (recusa declarações de entidades, limita o tamanho) e os links só viram `href` quando são http ou https.
 
 ## Acesso e implantação (Vercel)
 

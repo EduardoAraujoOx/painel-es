@@ -157,6 +157,11 @@ def tirar_veiculo_do_titulo(titulo, veiculo):
 
 # ---------------------------------------------------------------- coleta
 
+def inicio_do_recorte(cfg):
+    """Início do recorte (config 'desde', AAAA-MM-DD, meia-noite de Brasília) em UTC."""
+    return datetime.fromisoformat(cfg["desde"] + "T00:00:00-03:00").astimezone(timezone.utc)
+
+
 def fontes_do_config(cfg, dias):
     for q in cfg["consultas_google"]:
         url = GOOGLE.format(q=urllib.parse.quote(f"{q} when:{dias}d"))
@@ -167,7 +172,7 @@ def fontes_do_config(cfg, dias):
 
 
 def coletar(cfg, dias):
-    limite = agora() - timedelta(days=dias)
+    limite = max(agora() - timedelta(days=dias), inicio_do_recorte(cfg))
     gate = compilar_lista(cfg["contexto_es"])
     local = compilar_lista(cfg["localizador"])
     excluir = compilar_lista(cfg["excluir"])
@@ -217,7 +222,7 @@ def temas_de(cfg, titulo, compilados):
     return [t for t, padroes in compilados.items() if casa(padroes, n)]
 
 
-def consolidar(cfg, coletados, hoje, retencao_dias):
+def consolidar(cfg, coletados, hoje):
     compilados = {t: compilar_lista(v["termos"]) for t, v in cfg["temas"].items()}
     existentes = {}
     if SAIDA.exists():
@@ -242,12 +247,16 @@ def consolidar(cfg, coletados, hoje, retencao_dias):
         if reg["url"] != atual["url"] and all(o["url"] != reg["url"] for o in atual["outras"]) and len(atual["outras"]) < MAX_OUTRAS \
                 and normalizar(reg["veiculo"]) != normalizar(atual["veiculo"]):
             atual["outras"].append(reg)
-    corte = hoje - timedelta(days=retencao_dias)
+    corte = inicio_do_recorte(cfg)
+    ruido = compilar_lista(cfg["ruido_sem_tema"]["termos"])
+    salvo = set(cfg["ruido_sem_tema"]["salvo_temas"])
     itens = []
     for it in por_id.values():
         if datetime.fromisoformat(it["data"].replace("Z", "+00:00")) < corte:
             continue
         it["temas"] = temas_de(cfg, it["titulo"], compilados)  # recalcula: mudar o config vale para o que já foi guardado
+        if casa(ruido, normalizar(it["titulo"])) and not (set(it["temas"]) & salvo):
+            continue  # notícia policial ou de acidente sem tema de atenção
         itens.append(it)
     itens.sort(key=lambda x: (x["data"], x["id"]), reverse=True)
     return itens, novos
@@ -269,12 +278,12 @@ def main():
     if not any(r["ok"] for r in relatorio):
         sys.exit("nenhuma fonte respondeu: o arquivo de saída não foi alterado")
 
-    itens, novos = consolidar(cfg, coletados, hoje, cfg["retencao_dias"])
+    itens, novos = consolidar(cfg, coletados, hoje)
     saida = {
         "ref": hoje.strftime("%Y-%m-%d"),
         "gerado_em": iso(hoje),
         "janela_dias": dias,
-        "retencao_dias": cfg["retencao_dias"],
+        "desde": cfg["desde"],
         "temas": {t: v["rotulo"] for t, v in cfg["temas"].items()},
         "fontes": relatorio,
         "novos_na_coleta": novos,
@@ -283,6 +292,15 @@ def main():
     print(f"\n{len(itens)} notícias guardadas, {novos} novas nesta coleta.")
     if args.dry_run:
         return
+    if SAIDA.exists():
+        try:
+            antes = json.loads(SAIDA.read_text(encoding="utf-8"))
+        except ValueError:
+            antes = {}
+        falhas = lambda d: sorted(f["consulta"] for f in d.get("fontes", []) if not f["ok"])
+        if antes.get("itens") == itens and falhas(antes) == falhas(saida):
+            print("sem novidades: o arquivo não foi alterado (o Action só publica quando algo muda)")
+            return
     SAIDA.parent.mkdir(parents=True, exist_ok=True)
     SAIDA.write_text(json.dumps(saida, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"gravado: {SAIDA.relative_to(RAIZ)}")

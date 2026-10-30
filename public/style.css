@@ -521,7 +521,8 @@ button.kpi:hover { border-color: var(--acento); border-top-color: var(--acento);
   .marca-texto small { display: none; }
   .cabeca-acoes { order: 2; }
   .chave { order: 3; width: 100%; }
-  .chave a { flex: 1 1 0; text-align: center; padding: 7px 8px; font-size: 17px; }
+  .chave { overflow-x: auto; scrollbar-width: none; }
+  .chave a { flex: 1 1 auto; min-width: 0; text-align: center; padding: 7px 6px; font-size: 15px; letter-spacing: .02em; }
   .corpo { padding: 14px 14px 40px; }
   .modulo-titulo { font-size: 30px; }
   .abas { max-width: 100%; flex-wrap: wrap; }
@@ -628,3 +629,25 @@ tr.clicavel.marcada td { background: color-mix(in srgb, var(--acento) 14%, trans
 .noticias-metodo p { font-size: 13px; color: var(--tinta-2); line-height: 1.55; max-width: 80ch; }
 .noticias-fontes { font-size: 12px; color: var(--tinta-2); line-height: 1.6; padding-left: 18px; }
 .noticia-erro { color: var(--erro); font-weight: 600; }
+
+/* ── Notícias: capa, destaques, faixa e chips ── */
+.faixa-noticias { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 16px; margin: 0 0 14px; padding: 10px 14px; border: 1px solid var(--borda); border-left: 4px solid var(--acento); border-radius: 10px; background: var(--superficie); font-size: 14px; }
+.faixa-noticias b { font-family: var(--fonte-titulo); font-size: 20px; color: var(--acento); }
+.faixa-acoes { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 2px 0 14px; }
+.chip { display: inline-flex; align-items: baseline; gap: 6px; padding: 6px 12px; min-height: 34px; border: 1px solid var(--eixo); border-radius: 999px; background: transparent; color: var(--tinta); font: inherit; font-size: 13px; cursor: pointer; }
+.chip small { color: var(--tinta-2); font-size: 11px; font-variant-numeric: tabular-nums; }
+.chip:hover { background: var(--grade); }
+.chip[aria-pressed="true"] { background: var(--acento); border-color: var(--acento); color: var(--sobre-serie); font-weight: 600; }
+.chip[aria-pressed="true"] small { color: inherit; opacity: .85; }
+.manchete { padding: 4px 0 18px; border-bottom: 2px solid var(--tinta); margin-bottom: 18px; }
+.kicker { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--acento); margin-bottom: 6px; }
+.cartao .manchete .manchete-titulo { margin: 0 0 8px; font-family: var(--fonte-titulo); font-weight: 700; font-size: clamp(28px, 4.4vw, 44px); line-height: 1.08; }
+.manchete-titulo a { color: var(--tinta); text-decoration: none; }
+.manchete-titulo a:hover, .manchete-titulo a:focus-visible { color: var(--acento); text-decoration: underline; }
+.destaques { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 28px; margin-bottom: 8px; }
+.destaque { padding: 12px 0 14px; border-bottom: 1px solid var(--borda); }
+.destaque h4 { margin: 0 0 6px; font-family: var(--fonte-titulo); font-weight: 700; font-size: clamp(20px, 2.4vw, 25px); line-height: 1.15; }
+.destaque h4 a { color: var(--tinta); text-decoration: none; }
+.destaque h4 a:hover, .destaque h4 a:focus-visible { color: var(--acento); text-decoration: underline; }
+@media (max-width: 640px) { .destaques { grid-template-columns: 1fr; } }

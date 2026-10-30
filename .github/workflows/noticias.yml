@@ -1,15 +1,15 @@
-name: Coleta diária de notícias
+name: Coleta de notícias (a cada 2 horas)
 
 on:
   workflow_dispatch:
     inputs:
       dias:
-        description: 'Janela de coleta em dias (deixe vazio para o padrão do config.json; use 30 para carga retroativa)'
+        description: 'Janela de coleta em dias (deixe vazio para o padrão do config.json; use 7 para recompor desde a eleição)'
         required: false
         default: ''
   schedule:
-    # 06h17 em Brasília: as notícias da madrugada já estão no painel quando a equipe começa o dia.
-    - cron: '17 9 * * *'
+    # A cada 2 horas, das 06h17 às 20h17 em Brasília (UTC-3). Só há commit e implantação quando surgem notícias novas.
+    - cron: '17 9,11,13,15,17,19,21,23 * * *'
 
 permissions:
   contents: write

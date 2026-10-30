@@ -1,7 +1,6 @@
 {
-  "_nota": "Configuração do coletor de notícias (coletar.py). Os termos são comparados sem acento e sem diferença de maiúsculas; um asterisco (nomea*) casa qualquer continuação da palavra. Uma notícia entra se o título casar com algum termo de contexto_es, ou se casar com algum tema E citar um localizador (ES, capixaba...). Pessoas: confira se a lista abaixo reflete o governador em exercício e o governador eleito. Edite à vontade: a próxima coleta recalcula os temas de tudo o que já foi guardado.",
+  "_nota": "Configuração do coletor de notícias (coletar.py). Os termos são comparados sem acento e sem diferença de maiúsculas; um asterisco (nomea*) casa qualquer continuação da palavra. Uma notícia entra se o título casar com algum termo de contexto_es, ou se casar com algum tema E citar um localizador (ES, capixaba...). Pessoas: confira se a lista abaixo reflete o governador em exercício e o governador eleito. Edite à vontade: a próxima coleta recalcula os temas de tudo o que já foi guardado. O campo desde (AAAA-MM-DD, horário de Brasília) é o início do recorte: nada anterior a essa data é guardado.",
   "janela_dias": 2,
-  "retencao_dias": 120,
   "consultas_google": [
     "\"governo do Espírito Santo\"",
     "governador \"Espírito Santo\"",
@@ -265,7 +264,6 @@
         "polícia federal",
         "controladoria",
         "secont",
-        "denúncia*",
         "cpi",
         "improbidade",
         "auditoria",
@@ -284,5 +282,42 @@
     "espírito santo",
     "capixaba*",
     "vitória"
-  ]
+  ],
+  "desde": "2026-10-25",
+  "ruido_sem_tema": {
+    "_nota": "Notícia policial ou de acidente só fica se tiver também um destes temas de atenção; do contrário é descartada.",
+    "termos": [
+      "preso",
+      "presa",
+      "presos",
+      "prisão",
+      "homicídio*",
+      "assassin*",
+      "assalto*",
+      "tráfico",
+      "furto*",
+      "roubo*",
+      "morre*",
+      "morto*",
+      "acidente*",
+      "atropel*",
+      "estupro",
+      "tiroteio",
+      "apreend*",
+      "foragido*",
+      "latrocínio",
+      "feminicídio",
+      "afogad*",
+      "incêndio*",
+      "desaparecid*",
+      "criança* sofre*",
+      "objeto preso"
+    ],
+    "salvo_temas": [
+      "transicao",
+      "financas",
+      "contratos",
+      "pessoal"
+    ]
+  }
 }
