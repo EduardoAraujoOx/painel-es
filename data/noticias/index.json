@@ -1,6 +1,6 @@
 {
  "ref": "2026-10-30",
- "gerado_em": "2026-10-30T19:19:18Z",
+ "gerado_em": "2026-10-30T21:29:30Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -16,15 +16,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 19,
+   "lidos": 20,
    "aceitos": 13
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 47,
-   "aceitos": 39
+   "lidos": 48,
+   "aceitos": 40
   },
   {
    "fonte": "Google Notícias",
@@ -37,15 +37,15 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 14,
-   "aceitos": 14
+   "lidos": 15,
+   "aceitos": 15
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 18,
-   "aceitos": 8
+   "lidos": 19,
+   "aceitos": 9
   },
   {
    "fonte": "Google Notícias",
@@ -72,21 +72,21 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 10,
+   "lidos": 11,
    "aceitos": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 90,
+   "lidos": 97,
    "aceitos": 7
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 85,
+   "lidos": 87,
    "aceitos": 1
   },
   {
@@ -101,7 +101,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2
+   "aceitos": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -115,11 +115,67 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1
+   "aceitos": 3
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 6,
  "itens": [
+  {
+   "id": "65b2a41282bb",
+   "titulo": "Equipe de transição de protocola mais seis ofícios e amplia levantamento de informações sobre o governo estadual",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNWnlvdU5kWXZGUGxDd09YMmZndkZyZW1LcDFSM2Nhc0VvYklSYjhGU0pHYU02QmJ0dGRmZ2pWWlpOelVORVpROVd6NXFFVE93SFVvUGM0VHZuUXBCSXRrMXBjNzgxSUxLUkdHa2N5bVpmYjZSOExFbFNHejNDZE14bDBNbEc5a3E0LVA2UzdHQlZKYlE5Y3RNdmtmazhkZnd3d1pOSTNjcW9PdWVoREw3NUN1UnpobjNrNEY3cTVwd2x5V1ZTc2luVjkxY0UtY0E3LTA4?oc=5",
+   "data": "2026-10-30T20:25:15Z",
+   "coletado_em": "2026-10-30T21:29:30Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "d0999922abeb",
+   "titulo": "Serra terá ação gratuita com negociação de dívidas, serviços da Cesan e EDP neste sábado",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/servicos/2026/10/serra-acao-gratuita-com-negociacao/",
+   "data": "2026-10-30T20:14:55Z",
+   "coletado_em": "2026-10-30T21:29:30Z",
+   "outras": [],
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "2256e19f41e1",
+   "titulo": "Transição de Pazolini pede informações sobre mais seis áreas do governo",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/10/transicao-pazolini-governo/",
+   "data": "2026-10-30T20:11:09Z",
+   "coletado_em": "2026-10-30T21:29:30Z",
+   "outras": [],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "fba8aa2ce089",
+   "titulo": "Governador eleito do ES, Lorenzo Pazolini volta a atuar como delegado até a posse",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOenZURnhPSWdWRlZLYnl1NjJsdjh5UGlHTVhhbWdtc2czdEpHWEd4VjJTcFlFS1Z6VW9nYmw5VHcxWEFETi1MckxLRHNvWnFJWVZRWTVwd2NGbzhqamExX2NVeW5tQTlBTDczbF9UQ3JtSExfRlI5ckdVUGd3aW9icmhyYnVXR2txTWJHTVhMLUowVlpJbTBvUlR3WDdMRHFkTUxUS1pWMDNJcDdheDRlVzdTUTBjSjE3YkR2MDlINlppUGNfSHZLUkVwd1VTNXJVVFZ1TVVwSENHa2Fm0gHrAUFVX3lxTE43SWJmQzg2WDRlSjdRZlR2TUdCWEdrZjY0WGRCak5vYXBmR2NlTE5IR1Z1RldxbmVyMEpsR1poazE0UkItZXVVeTM1WnJOYklheUM0RVRGWnhXa2d1T2FyenJTdzZsbHY1c1lfcnhhbzlNaFQtOW15UUdCRmJNYkVfMDFnS1JaOEIzYTFPbHQyUEtEMjJkWm1RQWtQRmhDQ3NNSi1ZVmlJdkFWajdGdzkxcnV5WlQ5YkcycHc5WmthN3gtWjNxUDlUa0tvTGtDcEdTTkp6WFZ2ZGw4V2x6cmpPaGRfcDlwaW01Y1U?oc=5",
+   "data": "2026-10-30T19:44:24Z",
+   "coletado_em": "2026-10-30T21:29:30Z",
+   "outras": [
+    {
+     "veiculo": "Grupo Jota Sidney",
+     "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNUmhHNHl1MGJ4dUR1enM0RTNEMlpGTVdIVGJXTktrcDB3SWFQS1dvV251bHNJeDJnRHJYZ0k4STk0Qmw5VEJuUGVCVWhPVi1NVkJQUDVMZjVTX3VuSTBzTlUwTk11ZVgySkFXQWJockEzZF96OW9hd1JvcXFLcUpOZlFZMUtYLTVSZDNhay1EcGZyenZXUks2MWRTczlCd3ZmMmw5dnBOQUwzd2FUSnN3ckVuNDhlSVRRSXRBb25wLVk5ei1wWkRMeXd0VHFaR05NX1hKUzkya2RfQWI4aVpnWElfd2VISDFNWHlXM0xGLXPSAfYBQVVfeXFMTXJrZXpOaEk3cEJtSVVOQ0IycDNsbzFVUzlRTnVXaE9rVGo5MlMwUkI2MjY3bVVLeUZPdDUyZ3VfdndydlpZbEZrWFBleENIV3hlMXBmNVl1THVVV0VFY3BCLVpGNEZmOHREMlZHQWo2eFRyRTJqMnhHN19CTnJ6dDFSR3NIWFRuYlJrZjY1Rk1fMEJSRnJzNEpNUmNfZnJ0Q2k0NGh2bjBOX3RWenJielJhNXVEQ2Z6aWtlRTRvSzA4WkVSdkswQ21kSVk0RFRLS242TU9ub2wyNlRPenR4MHpPX2I4WWI3N0QtMXFEbHV0dkFJaWdn?oc=5"
+    }
+   ],
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
   {
    "id": "7614fc700ac8",
    "titulo": "Governador eleito, Pazolini volta à Polícia Civil e terá ex-secretário como chefe",
@@ -691,6 +747,18 @@
    ]
   },
   {
+   "id": "b0f9f1c726bb",
+   "titulo": "Precisamos de ajuda do governo federal, afirma Pazolini à CNN | LIVE CNN",
+   "veiculo": "YouTube",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFB1Z05Bb0JEMjNabUdkS29RS3JSaHdnaDhtdi1rQlQ1NHh4bUpQVlFMc00xVnR2b3FoUmswWFVEMWFxb0JTc0NEWDA3Y0w5eFpGT01mQmNHR2lQeEx4?oc=5",
+   "data": "2026-10-29T15:23:56Z",
+   "coletado_em": "2026-10-30T21:29:30Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
+  },
+  {
    "id": "22b6b792eaeb",
    "titulo": "Ricardo Ferraço cria equipe de transição de governo do ES; veja nomes",
    "veiculo": "A Gazeta",
@@ -750,6 +818,18 @@
    "coletado_em": "2026-10-30T15:32:37Z",
    "outras": [],
    "temas": []
+  },
+  {
+   "id": "4826fc022299",
+   "titulo": "Pazolini visita presidente da Assembleia e defende diálogo entre os Poderes no Espírito Santo",
+   "veiculo": "O Singular Portal de Notícias",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQektUa21SaFhlX2FwbEFMVzNlTWU0dmxwTG10Y1BKLW56al9mZ2c1MnA2RFZwdUNLc195T21LQ05INnF2ay11eFFoRU0zRHBWR2JjdnhUWkNtdUoyczNLZDRWWXhPRmoxdmVjUC1MVjNjTlpGR2hkMFRKYzVjTDF6MHRXZUt5WUQ2VGlvdFBNNmdmRDAzNXEwOHBPY29VcVBaX0pJVC1tLU1QR3hzV1o3YlBVV0FmZ05zNzRpTFY1ekpaX1FzcW1uWVZhNDE?oc=5",
+   "data": "2026-10-29T13:47:26Z",
+   "coletado_em": "2026-10-30T21:29:30Z",
+   "outras": [],
+   "temas": [
+    "governador"
+   ]
   },
   {
    "id": "a3cb8d534333",
