@@ -171,15 +171,69 @@ def fontes_do_config(cfg, dias):
         yield {"nome": f["nome"], "tipo": "feed", "rotulo": f["url"], "urls": urls}
 
 
-def coletar(cfg, dias):
+def compilar_temas(cfg):
+    """Cada tema vale por termos soltos ou por combinações: título que traga algo de CADA grupo da combinação
+    (ex.: um verbo de corte e um alvo de gasto), em qualquer ordem e com qualquer preposição no meio."""
+    return {t: {"termos": compilar_lista(v.get("termos", [])),
+                "comb": [[compilar_lista(g) for g in comb] for comb in v.get("combinacoes", [])]}
+            for t, v in cfg["temas"].items()}
+
+
+def temas_de(cfg, titulo, compilados):
+    n = normalizar(titulo)
+    return [t for t, c in compilados.items() if casa(c["termos"], n) or any(all(casa(g, n) for g in comb) for comb in c["comb"])]
+
+
+def preparar(cfg):
+    """Compila uma vez tudo o que o filtro usa."""
+    return {"gate": compilar_lista(cfg["contexto_es"]), "local": compilar_lista(cfg["localizador"]), "excluir": compilar_lista(cfg["excluir"]),
+            "setor": compilar_lista(cfg.get("setor_publico", [])), "temas": compilar_temas(cfg),
+            "oficiais": {normalizar(v) for v in cfg.get("fontes_oficiais", [])}, "locais": {normalizar(v) for v in cfg.get("veiculos_capixabas", [])},
+            "ambig": compilar_lista(cfg.get("siglas_ambiguas", [])), "ancoras": compilar_lista(cfg.get("ancoras_es", cfg["localizador"])), "veic_excl": compilar_lista(cfg.get("veiculos_excluidos", [])),
+            "outro_uf": re.compile(r"(?<![A-Za-z])(?:" + "|".join(re.escape(u) for u in cfg.get("outros_estados", [])) + r")(?![A-Za-z])") if cfg.get("outros_estados") else None}
+
+
+def decidir(cfg, titulo, veiculo, F, regional=False):
+    """Classifica o título em 'confirmada', 'possivel' ou 'descartada', com o motivo.
+    `regional` diz que a fonte já é capixaba (feed do ES ou busca restrita a site capixaba).
+    Possível = cheira a assunto público capixaba mas não cita o Estado: fica guardada, fora do e-mail e dos números, para não
+    perder em silêncio o que um filtro rígido deixaria passar."""
+    n = normalizar(titulo)
+    letras = [ch for ch in titulo if ch.isalpha()]
+    if len(letras) > 30 and sum(ch.isupper() for ch in letras) / len(letras) > 0.8:
+        return "descartada", "caixa_alta"  # aviso legal em caixa alta (licitações de conselhos, editais), não é notícia
+    if casa(F["excluir"], n):
+        return "descartada", "excluir"
+    if casa(F["veic_excl"], normalizar(veiculo)):
+        return "descartada", "veiculo_excluido"
+    # sigla de outro estado (SP, DF...) sem nenhuma âncora do ES: as siglas de órgãos (Sefaz, Detran, Sesa) existem em todos os estados
+    if F["outro_uf"] and F["outro_uf"].search(titulo) and not casa(F["ancoras"], n):
+        return "descartada", "outro_estado"
+    if normalizar(veiculo) in F["oficiais"]:
+        return "confirmada", "fonte_oficial"
+    if casa(F["gate"], n):
+        return "confirmada", "contexto"
+    capixaba = regional or normalizar(veiculo) in F["locais"]
+    if casa(F["ambig"], n):  # sigla que existe em vários estados: precisa de fonte capixaba ou de âncora do ES
+        return ("confirmada", "sigla_com_ancora") if capixaba or casa(F["ancoras"], n) else ("possivel", "sigla_sem_ancora")
+    temas = temas_de(cfg, titulo, F["temas"])
+    # "restricao" sozinho não basta com a mera menção ao ES (uma operadora que suspende serviço no ES não é notícia do governo)
+    if casa(F["local"], n) and [t for t in temas if t != "restricao"]:
+        return "confirmada", "tema_e_localizador"
+    if (casa(F["local"], n) or capixaba) and (temas or casa(F["setor"], n)):
+        return "possivel", "possivel"
+    return "descartada", "sem_contexto_com_tema" if temas else "sem_contexto"
+
+
+def coletar(cfg, dias, descartadas=None):
+    """Lê as fontes e devolve (aceitas, relatório). As possíveis vão junto, com possivel=True.
+    Se `descartadas` for uma lista, nela entram as recusadas e as possíveis, com o motivo."""
     limite = max(agora() - timedelta(days=dias), inicio_do_recorte(cfg))
-    gate = compilar_lista(cfg["contexto_es"])
-    local = compilar_lista(cfg["localizador"])
-    excluir = compilar_lista(cfg["excluir"])
-    compilados = {t: compilar_lista(v["termos"]) for t, v in cfg["temas"].items()}
+    F = preparar(cfg)
     coletados, relatorio = [], []
     for fonte in fontes_do_config(cfg, dias):
-        lidos = aceitos = 0
+        regional = fonte["tipo"] == "feed" or "site:" in fonte["rotulo"]  # feeds e buscas restritas a sites: todos capixabas
+        lidos = aceitos = possiveis = 0
         erro = ""
         for url in fonte["urls"]:
             try:
@@ -194,16 +248,17 @@ def coletar(cfg, dias):
                 data = it["data"] or agora()
                 if data < limite:
                     continue
-                n = normalizar(titulo)
-                letras = [ch for ch in titulo if ch.isalpha()]
-                if len(letras) > 30 and sum(ch.isupper() for ch in letras) / len(letras) > 0.8:
-                    continue  # aviso legal em caixa alta (licitações de conselhos, editais), não é notícia
-                # entra se citar o governo do Estado (contexto_es) ou se tiver tema e um localizador (ES, capixaba...)
-                if casa(excluir, n) or not (casa(gate, n) or (casa(local, n) and temas_de(cfg, titulo, compilados))):
+                classe, motivo = decidir(cfg, titulo, veiculo, F, regional)
+                if descartadas is not None and classe != "confirmada":
+                    descartadas.append({"titulo": titulo, "veiculo": veiculo, "url": it["url"], "data": data, "motivo": motivo, "fonte": fonte["nome"], "consulta": fonte["rotulo"]})
+                if classe == "descartada":
                     continue
-                aceitos += 1
-                coletados.append({"titulo": titulo, "veiculo": veiculo, "url": it["url"], "data": data})
-        relatorio.append({"fonte": fonte["nome"], "consulta": fonte["rotulo"], "ok": not erro, "lidos": lidos, "aceitos": aceitos, **({"erro": erro} if erro else {})})
+                if classe == "possivel":
+                    possiveis += 1
+                else:
+                    aceitos += 1
+                coletados.append({"titulo": titulo, "veiculo": veiculo, "url": it["url"], "data": data, "possivel": classe == "possivel"})
+        relatorio.append({"fonte": fonte["nome"], "consulta": fonte["rotulo"], "ok": not erro, "lidos": lidos, "aceitos": aceitos, "possiveis": possiveis, **({"erro": erro} if erro else {})})
     return coletados, relatorio
 
 
@@ -217,13 +272,8 @@ def eh_redirecionador(url):
     return urllib.parse.urlparse(url).netloc.endswith("news.google.com")
 
 
-def temas_de(cfg, titulo, compilados):
-    n = normalizar(titulo)
-    return [t for t, padroes in compilados.items() if casa(padroes, n)]
-
-
 def consolidar(cfg, coletados, hoje):
-    compilados = {t: compilar_lista(v["termos"]) for t, v in cfg["temas"].items()}
+    compilados = compilar_temas(cfg)
     existentes = {}
     if SAIDA.exists():
         try:
@@ -238,9 +288,15 @@ def consolidar(cfg, coletados, hoje):
         atual = por_id.get(i)
         reg = {"veiculo": c["veiculo"], "url": c["url"]}
         if atual is None:
-            por_id[i] = {"id": i, "titulo": c["titulo"], "veiculo": c["veiculo"], "url": c["url"], "data": iso(c["data"]), "coletado_em": iso(hoje), "outras": []}
-            novos += 1
+            por_id[i] = {"id": i, "titulo": c["titulo"], "veiculo": c["veiculo"], "url": c["url"], "data": iso(c["data"]), "coletado_em": iso(hoje), "outras": [],
+                         "possivel": bool(c.get("possivel"))}
+            if not c.get("possivel"):
+                novos += 1  # "novos" conta só as confirmadas
             continue
+        if atual.get("possivel") and not c.get("possivel"):
+            atual["possivel"] = False  # a mesma matéria apareceu confirmada em outra busca: sobe de categoria
+            atual["coletado_em"] = iso(hoje)
+            novos += 1
         # mesmo título em outro veículo ou link: prefere o link direto ao do Google e guarda os demais
         if eh_redirecionador(atual["url"]) and not eh_redirecionador(c["url"]):
             reg, atual["veiculo"], atual["url"] = {"veiculo": atual["veiculo"], "url": atual["url"]}, c["veiculo"], c["url"]
@@ -271,10 +327,14 @@ def main():
     cfg = json.loads(CONFIG.read_text(encoding="utf-8"))
     dias = args.dias or cfg["janela_dias"]
     hoje = agora()
-    coletados, relatorio = coletar(cfg, dias)
+    descartadas = []
+    coletados, relatorio = coletar(cfg, dias, descartadas)
     for r in relatorio:
         marca = "ok " if r["ok"] else "FALHA"
-        print(f"{marca} {r['fonte']:<16} lidos={r['lidos']:<4} aceitos={r['aceitos']:<4} {r['consulta'][:70]}" + (f"  [{r['erro']}]" if not r["ok"] else ""))
+        print(f"{marca} {r['fonte']:<16} lidos={r['lidos']:<4} aceitos={r['aceitos']:<4} possiveis={r['possiveis']:<3} {r['consulta'][:60]}" + (f"  [{r['erro']}]" if not r["ok"] else ""))
+    descartes = {}
+    for d in descartadas:
+        descartes[d["motivo"]] = descartes.get(d["motivo"], 0) + 1
     if not any(r["ok"] for r in relatorio):
         sys.exit("nenhuma fonte respondeu: o arquivo de saída não foi alterado")
 
@@ -287,9 +347,11 @@ def main():
         "temas": {t: v["rotulo"] for t, v in cfg["temas"].items()},
         "fontes": relatorio,
         "novos_na_coleta": novos,
+        "descartes_na_coleta": descartes,
         "itens": itens,
     }
-    print(f"\n{len(itens)} notícias guardadas, {novos} novas nesta coleta.")
+    confirmadas = sum(1 for i in itens if not i.get("possivel"))
+    print(f"\n{confirmadas} notícias confirmadas e {len(itens) - confirmadas} possíveis guardadas, {novos} novas confirmadas nesta coleta. Descartes: {descartes}")
     if args.dry_run:
         return
     if SAIDA.exists():
