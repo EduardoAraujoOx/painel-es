@@ -14,7 +14,7 @@ on:
         default: false
   schedule:
     # A cada 2 horas, das 06h17 às 20h17 em Brasília (UTC-3). Só há commit e implantação quando surgem notícias novas.
-    # O resumo por e-mail sai nas execuções de 08h17, 12h17 e 18h17 (11h, 15h e 21h UTC).
+    # O resumo por e-mail e o levantamento de contratos suspensos saem nas execuções de 08h17, 12h17 e 18h17 (11h, 15h e 21h UTC).
     - cron: '17 9,11,13,15,17,19,21,23 * * *'
 
 permissions:
@@ -46,6 +46,21 @@ jobs:
             python3 -I pipeline/noticias/coletar.py
           fi
 
+      # Contratos suspensos, rescindidos ou anulados (SIGA): leva cerca de 1 minuto, por isso só nos horários do resumo e nos disparos manuais.
+      # Roda antes do e-mail para que o resumo já traga o que há de novo. Falha aqui não impede a publicação das notícias.
+      - name: Detectar contratos suspensos (08h17, 12h17 e 18h17, ou disparo manual)
+        id: suspensos
+        continue-on-error: true
+        env:
+          EVENTO: ${{ github.event_name }}
+        run: |
+          HORA=$(date -u +%H)
+          if [ "$EVENTO" = "workflow_dispatch" ] || { [ "$EVENTO" = "schedule" ] && { [ "$HORA" = "11" ] || [ "$HORA" = "15" ] || [ "$HORA" = "21" ]; }; }; then
+            python3 -I pipeline/contratos/suspensos.py
+          else
+            echo "Fora do horário do levantamento: nada a fazer nesta execução."
+          fi
+
       # Falha no e-mail não impede a publicação das notícias; o último passo deixa a execução vermelha para o aviso chegar.
       - name: Enviar o resumo por e-mail (08h17, 12h17 e 18h17, ou teste manual)
         id: enviar
@@ -70,23 +85,23 @@ jobs:
             echo "Fora do horário do resumo: nada a enviar nesta execução."
           fi
 
-      - name: Gravar no repositório (só data/noticias; o deploy sai do push)
+      - name: Gravar no repositório (só data/noticias e data/suspensos; o deploy sai do push)
         run: |
-          if [ -z "$(git status --porcelain -- data/noticias)" ]; then
+          if [ -z "$(git status --porcelain -- data/noticias data/suspensos)" ]; then
             echo "Sem mudanças."; exit 0
           fi
           git config user.name "coleta-noticias"
           git config user.email "coleta-noticias@users.noreply.github.com"
-          git add data/noticias
-          git commit -m "dados: notícias de $(date -u +%F)"
+          git add data/noticias data/suspensos
+          git commit -m "dados: notícias e contratos de $(date -u +%F)"
           for tentativa in 1 2 3; do
             git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
             sleep $((tentativa * 5))
           done
           echo "Não foi possível enviar a coleta."; exit 1
 
-      - name: Avisar se o e-mail falhou
-        if: steps.enviar.outcome == 'failure'
+      - name: Avisar se o e-mail ou o levantamento de contratos falhou
+        if: steps.enviar.outcome == 'failure' || steps.suspensos.outcome == 'failure'
         run: |
-          echo "O resumo por e-mail falhou (veja o passo anterior). As notícias foram publicadas normalmente."
+          echo "O resumo por e-mail ou o levantamento de contratos suspensos falhou (veja os passos acima). As notícias foram publicadas normalmente."
           exit 1

@@ -35,6 +35,7 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parents[2]
 DADOS = RAIZ / "data" / "noticias" / "index.json"
 MARCO = RAIZ / "data" / "noticias" / "ultimo-envio.json"
+SUSPENSOS = RAIZ / "data" / "suspensos" / "index.json"
 BRASILIA = timezone(timedelta(hours=-3))  # sem horário de verão desde 2019
 ORDEM = ["restricao", "transicao", "financas", "contratos", "pessoal", "controle", "governador"]
 MAX_ITENS = 40
@@ -67,6 +68,25 @@ def selecionar(itens, desde):
     return sorted(novos, key=lambda i: (i["data"], i["id"]), reverse=True)
 
 
+ROTULO_CONTRATO = {"suspenso": "Suspenso", "rescindido": "Rescindido", "anulado": "Anulado ou revogado"}
+
+
+def contratos_novos(desde):
+    """Contratos que o detector viu suspensos, rescindidos ou anulados depois de `desde` (módulo suspensos). Sem o arquivo, lista vazia."""
+    try:
+        d = json.loads(SUSPENSOS.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return []
+    novos = [i for i in d.get("itens", []) if i.get("visto_em") and lido(i["visto_em"]) > desde]
+    return sorted(novos, key=lambda i: (i["categoria"] != "suspenso", -(i.get("valor_final") or i.get("valor_inicial") or 0)))
+
+
+def valor_curto(v):
+    if not v:
+        return "valor não informado"
+    return f"R$ {v / 1e6:.1f} mi".replace(".", ",") if v >= 1e6 else f"R$ {v / 1e3:.0f} mil" if v >= 1e3 else f"R$ {v:.0f}"
+
+
 def agrupar(itens, temas):
     """Cada notícia aparece uma vez, no tema de maior prioridade; quem não tem tema vai para 'Outras'."""
     grupos = {t: [] for t in ORDEM}
@@ -89,17 +109,31 @@ def periodo(ref):
     return f"{'manhã' if h.hour < 12 else 'tarde'} de {h.strftime('%d/%m')}"
 
 
-def assunto(n, ref, teste):
-    return f"{'[TESTE] ' if teste else ''}Governo e transição no ES: {n} {'notícia nova' if n == 1 else 'notícias novas'}, {periodo(ref)}"
+def assunto(n, ref, teste, nc=0):
+    partes = []
+    if n or not nc:
+        partes.append(f"{n} {'notícia nova' if n == 1 else 'notícias novas'}")
+    if nc:
+        partes.append(f"{nc} {'contrato suspenso, rescindido ou anulado' if nc == 1 else 'contratos suspensos, rescindidos ou anulados'}")
+    return f"{'[TESTE] ' if teste else ''}Governo e transição no ES: {' e '.join(partes)}, {periodo(ref)}"
 
 
 def link_seguro(u):
     return u if re.match(r"^https?://", u or "", re.I) else ""
 
 
-def montar_html(grupos, total, restantes, ref, painel_url, desde_txt):
+def montar_html(grupos, total, restantes, ref, painel_url, desde_txt, contratos=()):
     e = html.escape
     blocos = []
+    if contratos:
+        linhas = [f'<tr><td style="padding:9px 0;border-bottom:1px solid #eee">'
+                  f'<div style="font:600 15px/1.35 Georgia,\'Times New Roman\',serif;color:#111">{e(c["fornecedor"] or "Fornecedor não informado")} · {e(c["orgao"])}</div>'
+                  f'<div style="font:13px/1.45 Arial,Helvetica,sans-serif;color:#444;margin-top:2px">{e(c["objeto"][:160])}</div>'
+                  f'<div style="font:12px/1.5 Arial,Helvetica,sans-serif;color:#666;margin-top:2px"><b style="color:#b32424">{e(ROTULO_CONTRATO[c["categoria"]])}</b> · {e(c.get("tipo") or "Instrumento")} · {e(valor_curto(c.get("valor_final") or c.get("valor_inicial")))}</div>'
+                  f'</td></tr>' for c in contratos[:15]]
+        blocos.append(f'<tr><td style="padding:18px 0 4px;font:700 12px/1.2 Arial,Helvetica,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#b32424">'
+                      f'Contratos suspensos, rescindidos ou anulados ({len(contratos)})</td></tr>' + "".join(linhas)
+                      + (f'<tr><td style="padding:8px 0;font:12px Arial,Helvetica,sans-serif;color:#666">E mais {len(contratos) - 15} no painel.</td></tr>' if len(contratos) > 15 else ""))
     for rotulo, lista in grupos:
         linhas = []
         for i in lista:
@@ -124,7 +158,7 @@ def montar_html(grupos, total, restantes, ref, painel_url, desde_txt):
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:640px;background:#fff;border-top:4px solid {COR}"><tr><td style="padding:22px 26px 26px">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
 <tr><td style="font:700 26px/1.1 Georgia,'Times New Roman',serif;color:#111">Governo e transição no ES</td></tr>
-<tr><td style="padding-top:6px;font:13px/1.5 Arial,Helvetica,sans-serif;color:#666">Painel Fiscal · análise para a transição. {total} {"notícia nova" if total == 1 else "notícias novas"} {e(desde_txt)}.</td></tr>
+<tr><td style="padding-top:6px;font:13px/1.5 Arial,Helvetica,sans-serif;color:#666">Painel Fiscal · análise para a transição. {f"{total} " + ("notícia nova" if total == 1 else "notícias novas") if total else "Nenhuma notícia nova"} {e(desde_txt)}{f", e {len(contratos)} " + ("contrato com mudança de situação" if len(contratos) == 1 else "contratos com mudança de situação") if contratos else ""}.</td></tr>
 {botao}
 {"".join(blocos)}
 {mais}
@@ -134,10 +168,14 @@ Para sair desta lista ou incluir alguém, fale com Eduardo Araújo.</td></tr>
 </table></td></tr></table></td></tr></table></body></html>"""
 
 
-def montar_texto(grupos, total, restantes, ref, painel_url, desde_txt):
-    out = [f"Governo e transição no ES\n{total} {'notícia nova' if total == 1 else 'notícias novas'} {desde_txt}.\n"]
+def montar_texto(grupos, total, restantes, ref, painel_url, desde_txt, contratos=()):
+    out = [f"Governo e transição no ES\n{(str(total) + ' ' + ('notícia nova' if total == 1 else 'notícias novas')) if total else 'Nenhuma notícia nova'} {desde_txt}.\n"]
     if painel_url:
         out.append(f"Painel: {painel_url}\n")
+    if contratos:
+        out.append(f"\nCONTRATOS SUSPENSOS, RESCINDIDOS OU ANULADOS ({len(contratos)})")
+        for c in contratos[:15]:
+            out.append(f"- {c['fornecedor'] or 'Fornecedor não informado'} · {c['orgao']}\n  {c['objeto'][:160]}\n  {ROTULO_CONTRATO[c['categoria']]} · {c.get('tipo') or 'Instrumento'} · {valor_curto(c.get('valor_final') or c.get('valor_inicial'))}")
     for rotulo, lista in grupos:
         out.append(f"\n{rotulo.upper()} ({len(lista)})")
         for i in lista:
@@ -148,12 +186,12 @@ def montar_texto(grupos, total, restantes, ref, painel_url, desde_txt):
     return "\n".join(out)
 
 
-def montar_conteudo(dados, itens, ref, painel_url, desde_txt):
+def montar_conteudo(dados, itens, ref, painel_url, desde_txt, contratos=()):
     escolhidos = itens[:MAX_ITENS]
     restantes = len(itens) - len(escolhidos)
     grupos = agrupar(escolhidos, dados["temas"])
-    return (montar_html(grupos, len(itens), restantes, ref, painel_url, desde_txt),
-            montar_texto(grupos, len(itens), restantes, ref, painel_url, desde_txt))
+    return (montar_html(grupos, len(itens), restantes, ref, painel_url, desde_txt, contratos),
+            montar_texto(grupos, len(itens), restantes, ref, painel_url, desde_txt, contratos))
 
 
 def destinatarios(bruto):
@@ -192,16 +230,19 @@ def main():
     if args.teste or args.prever or marco is None:
         # sem marco de envio (primeiro envio, teste ou prévia): o que foi publicado nas últimas 24 horas
         desde_txt = "nas últimas 24 horas"
-        itens = ordenar([i for i in dados["itens"] if lido(i["data"]) >= ref - timedelta(hours=24) and not i.get("possivel")])
+        desde = ref - timedelta(hours=24)
+        itens = ordenar([i for i in dados["itens"] if lido(i["data"]) >= desde and not i.get("possivel")])
     else:
         desde_txt = "desde o último resumo"
+        desde = marco
         itens = selecionar(dados["itens"], marco)
+    contratos = contratos_novos(desde)
     painel = os.environ.get("PAINEL_URL", "").strip() or PAINEL_PADRAO
-    corpo_html, corpo_txt = montar_conteudo(dados, itens, ref, painel if link_seguro(painel) else "", desde_txt) if itens else ("", "")
+    corpo_html, corpo_txt = montar_conteudo(dados, itens, ref, painel if link_seguro(painel) else "", desde_txt, contratos) if (itens or contratos) else ("", "")
 
     if args.prever:
         Path(args.prever).write_text(corpo_html or "<p>Sem notícias novas.</p>", encoding="utf-8")
-        print(f"{len(itens)} notícias no resumo; HTML gravado em {args.prever}")
+        print(f"{len(itens)} notícias e {len(contratos)} contratos no resumo; HTML gravado em {args.prever}")
         return
 
     usuario, senha = os.environ.get("SMTP_USUARIO", "").strip(), os.environ.get("SMTP_SENHA", "")
@@ -209,15 +250,15 @@ def main():
     if not (usuario and senha and lista):
         print("envio desativado: faltam SMTP_USUARIO, SMTP_SENHA ou NOTICIAS_DESTINATARIOS (nada foi enviado)")
         return
-    if not itens:
-        print("sem notícias novas desde o último resumo: nada a enviar")
+    if not itens and not contratos:
+        print("sem notícias nem contratos novos desde o último resumo: nada a enviar")
         return
 
     remetente = os.environ.get("SMTP_REMETENTE", "").strip() or usuario
     msgs = []
     for dest in lista:
         m = EmailMessage()
-        m["Subject"] = assunto(len(itens), ref, args.teste)
+        m["Subject"] = assunto(len(itens), ref, args.teste, len(contratos))
         m["From"] = formataddr(("Painel Fiscal ES", remetente))
         m["To"] = dest
         m["Date"] = formatdate(localtime=False)
@@ -229,9 +270,9 @@ def main():
         enviar(msgs, os.environ.get("SMTP_HOST", "smtp.gmail.com").strip() or "smtp.gmail.com", int(os.environ.get("SMTP_PORTA", "587") or 587), usuario, senha)
     except (smtplib.SMTPException, OSError) as erro:
         sys.exit(f"falha no envio: {type(erro).__name__}")  # sem detalhes: a mensagem de erro pode ecoar o usuário
-    print(f"resumo enviado a {len(lista)} destinatário(s): {len(itens)} notícias")
+    print(f"resumo enviado a {len(lista)} destinatário(s): {len(itens)} notícias e {len(contratos)} contratos")
     if not args.teste:
-        MARCO.write_text(json.dumps({"ultimo_envio": iso(ref), "noticias": len(itens)}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        MARCO.write_text(json.dumps({"ultimo_envio": iso(ref), "noticias": len(itens), "contratos": len(contratos)}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":

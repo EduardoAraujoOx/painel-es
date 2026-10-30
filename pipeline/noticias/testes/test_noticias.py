@@ -278,5 +278,46 @@ class Resumo(unittest.TestCase):
         self.assertNotIn("javascript:", corpo_txt)
 
 
+    # --- o resumo também traz contratos que o detector viu suspensos, rescindidos ou anulados ---
+
+    def prepara(self, contratos):
+        enviar.SUSPENSOS = self.tmp / "suspensos.json"
+        enviar.SUSPENSOS.write_text(json.dumps({"itens": contratos}), encoding="utf-8")
+
+    def contrato(self, i, horas, cat="suspenso", **extra):
+        return {"id": f"c{i}", "orgao": "SECRETARIA DE ESTADO DA JUSTIÇA", "fornecedor": f"Fornecedor {i}", "objeto": "Sistema de monitoramento <b>eletrônico</b>",
+                "tipo": "Contrato", "valor_inicial": 2500000.0, "valor_final": 2500000.0, "categoria": cat, "situacao": "Instrumento Contratual Suspenso",
+                "visto_em": enviar.iso(self.ref - timedelta(hours=horas)), **extra}
+
+    def test_so_entra_o_que_foi_visto_depois_do_marco_e_o_baseline_nao_conta(self):
+        self.prepara([self.contrato(1, 2), self.contrato(2, 40), {**self.contrato(3, 1), "visto_em": None}])
+        self.assertEqual([c["id"] for c in enviar.contratos_novos(self.ref - timedelta(hours=24))], ["c1"])
+        enviar.SUSPENSOS = self.tmp / "nao_existe.json"
+        self.assertEqual(enviar.contratos_novos(self.ref - timedelta(hours=24)), [])
+
+    def test_assunto_com_contratos(self):
+        self.assertIn("2 notícias novas e 1 contrato suspenso, rescindido ou anulado", enviar.assunto(2, self.ref, False, 1))
+        self.assertIn("3 contratos suspensos, rescindidos ou anulados", enviar.assunto(0, self.ref, False, 3))
+        self.assertNotIn("contrato", enviar.assunto(2, self.ref, False, 0))
+
+    def test_dia_so_com_contrato_novo_ainda_envia_e_escapa_o_html(self):
+        d = json.loads(json.dumps(self.dados)); d["itens"] = []
+        enviar.DADOS.write_text(json.dumps(d), encoding="utf-8")
+        self.prepara([self.contrato(1, 1)])
+        msgs = self.rodar(self.ENV)
+        self.assertEqual(len(msgs), 2)
+        self.assertIn("1 contrato suspenso", msgs[0]["Subject"])
+        corpo = msgs[0].get_body(("html",)).get_content()
+        self.assertIn("Contratos suspensos, rescindidos ou anulados (1)", corpo)
+        self.assertIn("&lt;b&gt;eletrônico", corpo)
+        self.assertNotIn("<b>eletrônico", corpo)
+
+    def test_sem_noticia_e_sem_contrato_novo_nao_envia(self):
+        d = json.loads(json.dumps(self.dados)); d["itens"] = []
+        enviar.DADOS.write_text(json.dumps(d), encoding="utf-8")
+        self.prepara([self.contrato(1, 40)])
+        self.assertEqual(self.rodar(self.ENV), [])
+
+
 if __name__ == "__main__":
     unittest.main()
