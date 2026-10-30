@@ -1,0 +1,51 @@
+name: Verificação das notícias
+
+# Roda sozinha a cada envio a um PR que mexe no módulo de notícias. Não grava nada no repositório.
+# Prova, na nuvem do GitHub, que os testes passam, que as fontes respondem a partir dos servidores do GitHub
+# e que o resumo por e-mail é montado. O envio real por SMTP depende dos segredos e não é testado aqui.
+on:
+  pull_request:
+    paths:
+      - 'pipeline/noticias/**'
+      - '.github/workflows/noticias*.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Testes (coletor e resumo por e-mail)
+        run: python3 -I -m unittest discover -s pipeline/noticias/testes -v
+
+      - name: Coleta real a partir dos servidores do GitHub (sem gravar)
+        run: |
+          python3 -I pipeline/noticias/coletar.py --dry-run --dias 2 | tee coleta.log
+          {
+            echo "### Coleta real (simulação, sem gravar)"
+            echo '```'
+            grep -E "^(ok|FALHA)|notícias guardadas" coleta.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          grep -q "^ok  Google" coleta.log || { echo "::error::O Google Notícias não respondeu a partir do GitHub"; exit 1; }
+          grep -E "^FALHA" coleta.log | sed 's/^/::warning::/' || true
+
+      - name: Prévia do resumo por e-mail
+        env:
+          PAINEL_URL: https://painel-es.vercel.app
+        run: python3 -I pipeline/noticias/enviar.py --prever resumo-previa.html
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: resumo-previa
+          path: resumo-previa.html
+          retention-days: 7
