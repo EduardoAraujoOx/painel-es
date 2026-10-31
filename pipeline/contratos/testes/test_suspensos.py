@@ -19,6 +19,11 @@ def linha(i, situacao, orgao="SECRETARIA DE ESTADO DA JUSTIÇA", cel="10/03/2025
             "ValorInicial": valor, "ValorFinal": valor, "_ano": ano, **extra}
 
 
+def K(i):
+    """Identidade (chave) do contrato fictício i, como o detector a calcula: não depende do campo Id do SIGA."""
+    return f"85|CT{i}|Contrato|00000000000191|2025-03-10"
+
+
 class Classificacao(unittest.TestCase):
     def test_categoria(self):
         self.assertEqual(S.categoria("Instrumento Contratual com Execução Suspensa"), "suspenso")
@@ -46,9 +51,9 @@ class Classificacao(unittest.TestCase):
         linhas = [linha(1, "Instrumento Contratual com Execução Suspensa"), linha(2, "Instrumento Contratual em Execução"),
                   linha(3, "Rescisão Contratual", cel="01/01/2019 00:00:00", fim="01/01/2020 00:00:00")]
         itens = S.extrair(linhas, 2026)
-        self.assertEqual(list(itens), ["1"])
-        self.assertEqual(itens["1"]["objeto"], "Objeto do contrato 1")  # espaços repetidos viram um
-        self.assertEqual((itens["1"]["categoria"], itens["1"]["valor_final"], itens["1"]["fim"]), ("suspenso", 1234.56, "2027-03-10"))
+        self.assertEqual(list(itens), [K(1)])
+        self.assertEqual(itens[K(1)]["objeto"], "Objeto do contrato 1")  # espaços repetidos viram um
+        self.assertEqual((itens[K(1)]["categoria"], itens[K(1)]["valor_final"], itens[K(1)]["fim"]), ("suspenso", 1234.56, "2027-03-10"))
 
 
 class Comparacao(unittest.TestCase):
@@ -67,18 +72,18 @@ class Comparacao(unittest.TestCase):
 
     def test_novo_suspenso_aparece_como_novo_com_a_data_da_deteccao(self):
         r2 = S.montar(S.extrair([linha(1, "Instrumento Contratual Suspenso"), linha(2, "Instrumento Contratual com Execução Suspensa")], 2026), self.base(), self.D2)
-        self.assertEqual(r2["novos"], ["2"])
+        self.assertEqual(r2["novos"], [K(2)])
         por_id = {i["id"]: i for i in r2["itens"]}
-        self.assertEqual(por_id["2"]["visto_em"], "2026-10-31T12:00:00Z")
-        self.assertIsNone(por_id["1"]["visto_em"])  # o antigo continua sem data de detecção
+        self.assertEqual(por_id[K(2)]["visto_em"], "2026-10-31T12:00:00Z")
+        self.assertIsNone(por_id[K(1)]["visto_em"])  # o antigo continua sem data de detecção
 
     def test_mudanca_de_situacao_e_novidade(self):
         r2 = S.montar(S.extrair([linha(1, "Rescisão Contratual")], 2026), self.base(), self.D2)
-        self.assertEqual(r2["novos"], ["1"])  # suspenso virou rescindido
+        self.assertEqual(r2["novos"], [K(1)])  # suspenso virou rescindido
 
     def test_o_que_deixou_de_estar_suspenso_vai_para_saidas(self):
         r2 = S.montar(S.extrair([], 2026), self.base(), self.D2)
-        self.assertEqual([s["id"] for s in r2["saidas"]], ["1"])
+        self.assertEqual([s["id"] for s in r2["saidas"]], [K(1)])
         self.assertEqual(r2["saidas"][0]["saiu_em"], "2026-10-31T12:00:00Z")
         self.assertEqual(r2["contagem"]["suspenso"], 0)
 
@@ -88,6 +93,40 @@ class Comparacao(unittest.TestCase):
         self.assertEqual(len(r2["serie"]), 1)
         r3 = S.montar(S.extrair([linha(1, "Instrumento Contratual Suspenso"), linha(2, "Instrumento Contratual Suspenso")], 2026), r2, self.D3)
         self.assertEqual([p["suspenso"] for p in r3["serie"]], [1, 2])
+
+    def test_renumeracao_do_id_do_siga_nao_gera_novidade(self):
+        # O SIGA renumera o campo Id a cada publicação (62778 virou 45536): o mesmo contrato não pode parecer saída + entrada.
+        r1 = S.montar(S.extrair([linha(i, "Instrumento Contratual Suspenso") for i in (1, 2, 3)], 2026), None, self.D1)
+        r2 = S.montar(S.extrair([linha(i, "Instrumento Contratual Suspenso", **{"Id": str(900 + i)}) for i in (1, 2, 3)], 2026), r1, self.D2)
+        self.assertEqual((r2["novos"], r2["saidas"]), ([], []))
+        self.assertTrue(all(i["visto_em"] is None for i in r2["itens"]))
+
+    def test_levantamento_gravado_com_regra_antiga_de_id_casa_pela_identidade(self):
+        r1 = S.montar(S.extrair([linha(i, "Instrumento Contratual Suspenso") for i in (1, 2, 3)], 2026), None, self.D1)
+        for it in r1["itens"]:
+            it["id"] = "numero-antigo-" + it["documento"]  # id gravado por versão anterior do detector
+        r2 = S.montar(S.extrair([linha(i, "Instrumento Contratual Suspenso") for i in (1, 2, 3)], 2026), r1, self.D2)
+        self.assertEqual((r2["novos"], r2["saidas"]), ([], []))
+
+    def test_trava_contra_tudo_novo_de_uma_vez(self):
+        # Se, por qualquer mudança na identificação, mais da metade aparece como nova de uma vez, não é notícia: vira nova base.
+        antigos = S.extrair([linha(i, "Instrumento Contratual Suspenso") for i in range(1, 31)], 2026)
+        r1 = S.montar(antigos, None, self.D1)
+        outros = S.extrair([linha(i, "Instrumento Contratual Suspenso", cel="11/04/2025 00:00:00") for i in range(1, 31)], 2026)  # outra data de celebração: outra chave
+        r2 = S.montar(outros, r1, self.D2)
+        self.assertEqual(r2["novos"], [])
+        self.assertTrue(all(i["visto_em"] is None for i in r2["itens"]))
+
+    def test_suspensao_em_massa_de_verdade_continua_sendo_novidade(self):
+        # 40 suspensos novos de uma vez, sem os antigos saírem: é exatamente o sinal que o detector existe para mostrar.
+        r1 = S.montar(S.extrair([linha(i, "Instrumento Contratual Suspenso") for i in range(1, 31)], 2026), None, self.D1)
+        r2 = S.montar(S.extrair([linha(i, "Instrumento Contratual Suspenso") for i in range(1, 71)], 2026), r1, self.D2)
+        self.assertEqual(len(r2["novos"]), 40)
+
+    def test_poucos_novos_continuam_sendo_novos_mesmo_com_muitos_itens(self):
+        r1 = S.montar(S.extrair([linha(i, "Instrumento Contratual Suspenso") for i in range(1, 31)], 2026), None, self.D1)
+        r2 = S.montar(S.extrair([linha(i, "Instrumento Contratual Suspenso") for i in range(1, 33)], 2026), r1, self.D2)
+        self.assertEqual(sorted(r2["novos"]), sorted([K(31), K(32)]))
 
     def test_mudou_ignora_a_hora_de_geracao(self):
         r1 = self.base()
