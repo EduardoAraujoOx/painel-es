@@ -1,4 +1,4 @@
-name: Coleta de notícias (a cada hora)
+name: Coleta de notícias (a cada hora, das 06h às 22h)
 
 on:
   workflow_dispatch:
@@ -13,10 +13,11 @@ on:
         required: false
         default: false
   schedule:
-    # A cada hora, aos 17 minutos. Cada coleta grava data/noticias/verificacao.json (a tela mostra "Última verificação"), então há um commit e uma implantação por hora.
+    # A cada hora, aos 17 minutos, das 06h17 às 22h17 em Brasília (UTC-3): 17 coletas por dia, sem coleta de madrugada.
+    # Cada coleta grava data/noticias/verificacao.json (a tela mostra "Última verificação"), então há um commit e uma implantação por coleta.
     # O GitHub costuma pular execuções agendadas, por isso o resumo por e-mail e o levantamento de contratos não dependem de um
     # horário exato: saem na primeira execução depois de 08h17, 12h17 ou 18h17 (11h17, 15h17 e 21h17 UTC) que ainda não tenha enviado.
-    - cron: '17 * * * *'
+    - cron: '17 0,1,9-23 * * *'
 
 permissions:
   contents: write
