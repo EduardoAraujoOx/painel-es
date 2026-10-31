@@ -89,6 +89,20 @@ class CasamentoSiga(unittest.TestCase):
         linhas.append(siga("Contrato 2022.000008.44102.01/2022", SESA, "PRONAR S/A"))  # com a Pronar também na lista, a empresa do título desempata
         self.assertEqual(self.cruzar([ato(t, "rescisao", "Secretaria de Estado da Saúde - SESA -")], linhas)["1"]["siga"]["fornecedor"], "PRONAR S/A")
 
+    def test_sufixo_legal_nao_identifica_a_empresa(self):
+        # "LTDA" em comum não faz a Pronar ser a M & L: o título cita a Pronar, o contrato 8/2022 do órgão é de outra empresa
+        linhas = [siga("Contrato 2022.000008.44101.01/2022", SESA, "M & L CLIMATIZACAO E SERVICOS LTDA")]
+        for titulo in ("Extrato - Rescisão Amigável - Contrato 0008.2022 - PRONAR LTDA", "Extrato - Rescisão Amigável - Contrato 0008.2022 - PRONAR EIRELI - ME"):
+            self.assertIsNone(self.cruzar([ato(titulo, "rescisao", "Secretaria de Estado da Saúde - SESA -")], linhas)["1"]["siga"], titulo)
+        # com nome distintivo em comum (e sufixos diferentes), casa
+        linhas = [siga("Contrato 2022.000008.44101.01/2022", SESA, "PRONAR S/A")]
+        self.assertIsNotNone(self.cruzar([ato("Extrato - Rescisão Amigável - Contrato 0008.2022 - PRONAR LTDA", "rescisao", "Secretaria de Estado da Saúde - SESA -")], linhas)["1"]["siga"])
+
+    def test_tokens_de_nome(self):
+        self.assertEqual(C.tokens_nome("PRONAR LTDA"), {"pronar"})
+        self.assertEqual(C.tokens_nome("M & L CLIMATIZACAO E SERVICOS LTDA"), {"climatizacao"})
+        self.assertEqual(C.tokens_nome("EGS ELEVADORES LTDA"), {"egs", "elevadores"})
+
     def test_duas_empresas_compativeis_e_ambiguidade_nao_casa(self):
         linhas = [siga("Contrato 2024.000094.42101.01/2024", SEDU, "A"), siga("Contrato 2024.000094.42102.01/2024", SEDU, "B")]
         self.assertIsNone(self.cruzar([ato("Extrato 1ª Ordem de Paralisacao CT094-2024")], linhas)["1"]["siga"])

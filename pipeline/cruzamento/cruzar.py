@@ -81,14 +81,25 @@ GENERICAS = set("""extrato contrato contratos termo termos aditivo aditivos resc
 publicacao processo errata dio segundo primeiro terceiro quarto quinto ata arp cancelamento cont resumo minuta cooperacao""".split())
 
 
+# sufixos legais e palavras genéricas de razão social: não identificam a empresa ("LTDA" não faz duas empresas serem a mesma)
+GENERICAS_EMPRESA = set("""ltda eireli epp mei sociedade anonima limitada individual microempresa empresa empresas comercio comercial servico servicos industria industrial
+construcoes construcao construtora engenharia consultoria tecnologia tecnologias treinamento treinamentos solucoes solucao distribuidora materiais equipamentos saude medica
+medicos hospitalar projetos gestao brasil brasileira nacional grupo associados participacoes instituto associacao fundacao cooperativa companhia transportes transporte
+locacao locacoes representacoes assessoria sistemas informatica eventos educacional educacao ambiental ambientais capixaba espirito santo""".split())
+
+
+def tokens_nome(s):
+    """Palavras que identificam uma empresa: sem sufixo legal, sem termo genérico de razão social, sem palavras de ato."""
+    return {w for w in re.findall(r"[a-z]+", normalizar(s)) if len(w) >= 3 and w not in GENERICAS_EMPRESA and w not in GENERICAS}
+
+
 def nomes_no_titulo(titulo):
     """Tokens dos trechos do título que parecem nome de empresa (separados por ' - ', sem número de contrato e sem só palavras de ato)."""
     toks = set()
     for seg in re.split(r"\s+-\s+", titulo):
         if re.search(r"\d", seg):
             continue  # trecho com número (contrato, processo, ata): não é nome
-        t = {w for w in re.findall(r"[a-z]+", normalizar(seg)) if len(w) >= 4 and w not in GENERICAS}
-        toks |= t
+        toks |= tokens_nome(seg)
     return toks
 
 
@@ -134,7 +145,7 @@ def melhor_por_orgao(candidatos, orgao, nome_orgao, titulo=""):
     for c in candidatos:
         s = similaridade(orgao, nome_orgao(c))
         tit = normalizar(titulo)
-        forn = [t for t in tokens_orgao(c.get("Fornecedor", "") if isinstance(c, dict) else "") if len(t) > 3][:2]
+        forn = sorted(tokens_nome(c.get("Fornecedor", "") if isinstance(c, dict) else ""))[:2]
         bonus = 0.25 if forn and all(t in tit for t in forn) else 0.0
         pont.append((s + bonus, s, c))
     pont.sort(key=lambda x: -x[0])
@@ -159,7 +170,7 @@ def casar_siga(ato, por_codigo, por_par, categoria_fn, valor_fn):
             c = melhor_por_orgao(por_par.get(par, []), ato["orgao"], lambda r: r.get("NomeOrgao", ""), ato["titulo"])
             if c and nomes:
                 # o título cita uma empresa: o contrato achado por número, ano e órgão só vale se for a mesma empresa (senão é outro contrato)
-                forn = {w for w in re.findall(r"[a-z]+", normalizar(c.get("Fornecedor", ""))) if len(w) >= 4}
+                forn = tokens_nome(c.get("Fornecedor", ""))
                 if not (forn & nomes):
                     c = None
             if c:
