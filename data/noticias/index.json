@@ -1,6 +1,6 @@
 {
  "ref": "2026-10-31",
- "gerado_em": "2026-10-31T16:17:12Z",
+ "gerado_em": "2026-10-31T17:17:11Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,16 +17,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 17,
-   "aceitos": 15,
+   "lidos": 16,
+   "aceitos": 14,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 44,
-   "aceitos": 34,
+   "lidos": 42,
+   "aceitos": 32,
    "possiveis": 0
   },
   {
@@ -41,15 +41,15 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 11,
-   "aceitos": 11,
+   "lidos": 10,
+   "aceitos": 10,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 18,
+   "lidos": 17,
    "aceitos": 7,
    "possiveis": 4
   },
@@ -74,14 +74,14 @@
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,17 +89,17 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 96,
-   "aceitos": 11,
+   "lidos": 94,
+   "aceitos": 9,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 68,
-   "aceitos": 6,
-   "possiveis": 5
+   "lidos": 75,
+   "aceitos": 7,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -129,15 +129,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 1,
+   "lidos": 2,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 41,
+   "lidos": 44,
    "aceitos": 7,
    "possiveis": 6
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 25,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -153,16 +153,16 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 55,
+   "lidos": 57,
    "aceitos": 9,
-   "possiveis": 6
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 59,
-   "aceitos": 1,
+   "lidos": 100,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -208,16 +208,43 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 343,
-  "veiculo_excluido": 32,
-  "possivel": 19,
-  "sem_contexto_com_tema": 9,
+  "sem_contexto": 351,
+  "veiculo_excluido": 34,
+  "possivel": 18,
+  "sem_contexto_com_tema": 8,
   "excluir": 4,
-  "outro_estado": 30,
-  "caixa_alta": 5,
-  "sigla_sem_ancora": 14
+  "outro_estado": 31,
+  "caixa_alta": 4,
+  "sigla_sem_ancora": 15
  },
  "itens": [
+  {
+   "id": "ab0a42acbf7a",
+   "titulo": "Governador eleito do ES, Lorenzo Pazolini volta a atuar como delegado até a posse em janeiro",
+   "veiculo": "Jurinews",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNQ1VNcGRKYkhjZHJUQjhGWGRRdDdwckFBVXQ5aWg5bEYxQ3Uzd092cmFDOFN0aXZ3RDdaa3ZxSUJrZnpXQmp4SXlZVUowMF9EMXMwX21mZVRHZmNjUDN6RS1CM2VpazdVVnJZVVpQV21lb1NtVm1yMnJ0N2NHRHNPakQtSHhaSFhGV2hBQnR2VDdxVU1KRlQ1NjRfZHJQSGpXRVRYdWVSdTNMQnF6VFRHU3hBdXJKZUJZamJPeXhGN09kbEpKOWMyeWs2MV81QQ?oc=5",
+   "data": "2026-10-31T16:41:00Z",
+   "coletado_em": "2026-10-31T17:17:11Z",
+   "outras": [],
+   "possivel": false,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "4543e7ae7a61",
+   "titulo": "Detran alerta para golpe com falsas multas e suspensão da CNH; como se proteger",
+   "veiculo": "Diário do Centro do Mundo",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSFVlRDRjazlVdXhBakktd0E2SEJ2RmwxS3ZRNkJmbF9ZQlFDSEJhWWZyWHdyWWM2MHZlY2tIeEtKVmhYTXJEcHZfTDdnMFRmeWFfYVFpeDlJMjR5UndHYTFEVjFKNmE0RTBudHZ5dmFlZnlIbUtBV1d1OU5mZ25zVzUwNUVvd0U4N3JheFlPTWFVdjRvRTZhV3lQWQ?oc=5",
+   "data": "2026-10-31T16:35:25Z",
+   "coletado_em": "2026-10-31T17:17:11Z",
+   "outras": [],
+   "possivel": true,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "9b723624f8d4",
    "titulo": "Quer viajar sem fazer dívidas? Veja como planejar gastos com antecedência",
