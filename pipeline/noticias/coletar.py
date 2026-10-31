@@ -37,6 +37,7 @@ AQUI = Path(__file__).resolve().parent
 RAIZ = AQUI.parents[1]
 CONFIG = AQUI / "config.json"
 SAIDA = RAIZ / "data" / "noticias" / "index.json"
+TRIAGEM = 2  # versão das regras de triagem por praça; itens guardados sem este marcador são reavaliados uma vez (ver consolidar)
 VERIFICACAO = RAIZ / "data" / "noticias" / "verificacao.json"
 
 AGENTE = "Mozilla/5.0 (compatible; painel-es-noticias/1.0; +https://github.com/EduardoAraujoOx/painel-es)"
@@ -187,7 +188,8 @@ def temas_de(cfg, titulo, compilados):
 
 def preparar(cfg):
     """Compila uma vez tudo o que o filtro usa."""
-    return {"gate": compilar_lista(cfg["contexto_es"]), "local": compilar_lista(cfg["localizador"]), "excluir": compilar_lista(cfg["excluir"]),
+    return {"gate": compilar_lista(cfg["contexto_es"]), "gate_gen": compilar_lista(cfg.get("contexto_generico", [])),
+            "outra_praca": compilar_lista(cfg.get("veiculos_outras_pracas", [])), "local": compilar_lista(cfg["localizador"]), "excluir": compilar_lista(cfg["excluir"]),
             "setor": compilar_lista(cfg.get("setor_publico", [])), "temas": compilar_temas(cfg),
             "oficiais": {normalizar(v) for v in cfg.get("fontes_oficiais", [])}, "locais": {normalizar(v) for v in cfg.get("veiculos_capixabas", [])},
             "ambig": compilar_lista(cfg.get("siglas_ambiguas", [])), "ancoras": compilar_lista(cfg.get("ancoras_es", cfg["localizador"])), "veic_excl": compilar_lista(cfg.get("veiculos_excluidos", [])),
@@ -210,11 +212,17 @@ def decidir(cfg, titulo, veiculo, F, regional=False):
     # sigla de outro estado (SP, DF...) sem nenhuma âncora do ES: as siglas de órgãos (Sefaz, Detran, Sesa) existem em todos os estados
     if F["outro_uf"] and F["outro_uf"].search(titulo) and not casa(F["ancoras"], n):
         return "descartada", "outro_estado"
+    capixaba = regional or normalizar(veiculo) in F["locais"]
+    # veículo de outra praça (Natal, Bahia...) cujo título não cita nada do ES: é notícia daquele estado, mesmo que diga "governo estadual"
+    if not capixaba and casa(F["outra_praca"], normalizar(veiculo)) and not casa(F["ancoras"], n):
+        return "descartada", "veiculo_outra_praca"
     if normalizar(veiculo) in F["oficiais"]:
         return "confirmada", "fonte_oficial"
     if casa(F["gate"], n):
         return "confirmada", "contexto"
-    capixaba = regional or normalizar(veiculo) in F["locais"]
+    # termo genérico ("governo estadual", "transição", "governador eleito") vale em qualquer estado: só confirma com fonte capixaba ou âncora do ES
+    if casa(F["gate_gen"], n):
+        return ("confirmada", "contexto") if capixaba or casa(F["ancoras"], n) else ("possivel", "generico_sem_ancora")
     if casa(F["ambig"], n):  # sigla que existe em vários estados: precisa de fonte capixaba ou de âncora do ES
         return ("confirmada", "sigla_com_ancora") if capixaba or casa(F["ancoras"], n) else ("possivel", "sigla_sem_ancora")
     temas = temas_de(cfg, titulo, F["temas"])
@@ -290,7 +298,7 @@ def consolidar(cfg, coletados, hoje):
         reg = {"veiculo": c["veiculo"], "url": c["url"]}
         if atual is None:
             por_id[i] = {"id": i, "titulo": c["titulo"], "veiculo": c["veiculo"], "url": c["url"], "data": iso(c["data"]), "coletado_em": iso(hoje), "outras": [],
-                         "possivel": bool(c.get("possivel"))}
+                         "possivel": bool(c.get("possivel")), "triagem": TRIAGEM}
             if not c.get("possivel"):
                 novos += 1  # "novos" conta só as confirmadas
             continue
@@ -308,9 +316,19 @@ def consolidar(cfg, coletados, hoje):
     ruido = compilar_lista(cfg["ruido_sem_tema"]["termos"])
     salvo = set(cfg["ruido_sem_tema"]["salvo_temas"])
     itens = []
+    F = preparar(cfg)
     for it in por_id.values():
         if datetime.fromisoformat(it["data"].replace("Z", "+00:00")) < corte:
             continue
+        if it.get("triagem") != TRIAGEM:
+            # migração única das regras de praça: o que foi guardado antes delas é reavaliado uma vez (só pelos dois motivos novos) e marcado
+            it["triagem"] = TRIAGEM
+            if not it.get("possivel"):
+                motivo = decidir(cfg, it["titulo"], it["veiculo"], F)[1]
+                if motivo == "veiculo_outra_praca":
+                    continue  # notícia de outro estado que a regra antiga deixou entrar
+                if motivo == "generico_sem_ancora":
+                    it["possivel"] = True
         it["temas"] = temas_de(cfg, it["titulo"], compilados)  # recalcula: mudar o config vale para o que já foi guardado
         if casa(ruido, normalizar(it["titulo"])) and not (set(it["temas"]) & salvo):
             continue  # notícia policial ou de acidente sem tema de atenção
