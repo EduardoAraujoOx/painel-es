@@ -262,6 +262,7 @@ class Resumo(unittest.TestCase):
         self.dados = dados_ficticios(self.ref)
         self.tmp = Path(tempfile.mkdtemp())
         enviar.DADOS, enviar.MARCO = self.tmp / "index.json", self.tmp / "ultimo-envio.json"
+        enviar.ATOS = self.tmp / "atos.json"  # sem atos do Diário, a menos que o teste os crie
         enviar.DADOS.write_text(json.dumps(self.dados), encoding="utf-8")
         self.enviados = []
         outer = self
@@ -352,6 +353,39 @@ class Resumo(unittest.TestCase):
         self.assertEqual([c["id"] for c in enviar.contratos_novos(self.ref - timedelta(hours=24))], ["c1"])
         enviar.SUSPENSOS = self.tmp / "nao_existe.json"
         self.assertEqual(enviar.contratos_novos(self.ref - timedelta(hours=24)), [])
+
+    # --- e atos de contrato publicados no Diário Oficial ---
+
+    def ato(self, i, horas, tipo="paralisacao", **extra):
+        return {"id": f"a{i}", "data": "2026-10-28", "tipo": tipo, "alvo": "contrato", "titulo": f"Extrato 1ª Ordem de Paralisacao CT093-{i} <b>x</b>",
+                "orgao": "Secretaria de Estado da Educação - SEDU -", "url": f"https://diario.exemplo/{i}", "visto_em": enviar.iso(self.ref - timedelta(hours=horas)), **extra}
+
+    def test_so_entram_atos_vistos_depois_do_marco(self):
+        enviar.ATOS.write_text(json.dumps({"itens": [self.ato(1, 2), self.ato(2, 40), {**self.ato(3, 1), "visto_em": None}]}), encoding="utf-8")
+        self.assertEqual([a["id"] for a in enviar.atos_novos(self.ref - timedelta(hours=24))], ["a1"])
+        enviar.ATOS = self.tmp / "nao_existe.json"
+        self.assertEqual(enviar.atos_novos(self.ref - timedelta(hours=24)), [])
+
+    def test_assunto_e_corpo_com_atos_do_diario(self):
+        self.assertIn("1 ato de contrato no Diário Oficial", enviar.assunto(2, self.ref, False, 0, 1))
+        self.assertIn("2 notícias novas e 3 atos de contrato no Diário Oficial", enviar.assunto(2, self.ref, False, 0, 3))
+        self.assertNotIn("Diário", enviar.assunto(2, self.ref, False, 0, 0))
+        d = {**self.dados, "itens": self.dados["itens"][:1]}
+        corpo_html, corpo_txt = enviar.montar_conteudo(d, d["itens"], self.ref, "", "agora", (), [self.ato(1, 1)])
+        self.assertIn("Atos de contrato no Diário Oficial (1)", corpo_html)
+        self.assertIn("&lt;b&gt;x", corpo_html)  # título escapado
+        self.assertNotIn("<b>x</b>", corpo_html)
+        self.assertIn("publicado em 28/10/2026", corpo_html)
+        self.assertIn("ATOS DE CONTRATO NO DIÁRIO OFICIAL (1)", corpo_txt)
+        self.assertIn("https://diario.exemplo/1", corpo_txt)
+
+    def test_dia_so_com_ato_novo_ainda_envia(self):
+        d = json.loads(json.dumps(self.dados)); d["itens"] = []
+        enviar.DADOS.write_text(json.dumps(d), encoding="utf-8")
+        enviar.ATOS.write_text(json.dumps({"itens": [self.ato(1, 1)]}), encoding="utf-8")
+        msgs = self.rodar(self.ENV)
+        self.assertEqual(len(msgs), 2)
+        self.assertIn("1 ato de contrato no Diário Oficial", msgs[0]["Subject"])
 
     def test_resumo_devido_recupera_horario_pulado(self):
         h = lambda dia, hora, minuto: datetime(2026, 10, dia, hora, minuto, tzinfo=UTC)

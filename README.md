@@ -7,6 +7,7 @@ Painel de acesso restrito para diagnósticos fiscais e de pessoal do Poder Execu
 | `cargos` | Servidores e cargos de confiança: quadro de servidores do Executivo, cargos em comissão e funções gratificadas, custo mensal, tempo na função e a ficha da folha de cada pessoa | em operação |
 | `organograma` | Árvore de unidades de um órgão com as pessoas de cada uma, a condição (sem vínculo efetivo, servidor de carreira, função gratificada) e a remuneração somando carreira e cargo | em operação, com a estrutura oficial de 55 órgãos |
 | `noticias` | Manchetes da imprensa capixaba sobre o governo do Estado e a transição, coletadas a cada hora (das 06h às 22h) desde a eleição, com tema por regras de palavras (painel próprio, Notícias) | em operação |
+| `atos` | Atos de contrato publicados no Diário Oficial do Estado desde 04/10/2026 (paralisação, suspensão, rescisão, cancelamento, anulação/revogação), com data de publicação, órgão e link da matéria (painel Contratos, tela "Contratos recentes") | em operação |
 | `suspensos` | Contratos do Estado com situação de suspensão, rescisão ou anulação no SIGA e o que mudou desde o levantamento anterior (painel Contratos) | em operação |
 
 ## Módulo `cargos`
@@ -217,6 +218,14 @@ Para reduzir esse risco por desenho, o filtro tem as seguintes defesas. **Combin
 ### Limites conhecidos
 
 O Google Notícias devolve no máximo 100 resultados por consulta e **não devolve a mesma lista a cada chamada** (a mesma busca trouxe 100 itens numa execução e 69 na seguinte). Uma coleta isolada é, portanto, incompleta; o coletor acumula o que já viu, e a partir da terceira execução seguida o conjunto estabiliza. É por isso que a coleta é frequente e que a carga retroativa deve ser repetida. Feeds que só expõem as últimas 10 a 30 matérias (Folha Vitória, ES Hoje) podem perder itens em dias de muito volume; as buscas por site no Google compensam em parte. O XML dos feeds é tratado como não confiável (recusa declarações de entidades, limita o tamanho) e os links só viram `href` quando são http ou https.
+
+## Módulo `atos` (Diário Oficial)
+
+Tela "Contratos recentes" do painel Contratos. O cadastro de contratos (SIGA) não informa a data da suspensão e demora a registrá-la; o Diário Oficial do Estado publica alguns atos de contrato com data (por exemplo, "Extrato de Ordem de Paralisação", "Termo de Rescisão", "Termo de Cancelamento de ARP"). `pipeline/diario/coletar.py` lê, pelos endereços públicos do Diário (`ioes.dio.es.gov.br`), a lista de edições e o sumário de cada uma (títulos das matérias organizados por órgão), e guarda em `data/atos/index.json` as matérias do **Poder Executivo** cujo **título** trata de paralisação, suspensão, rescisão ou distrato, cancelamento de ata ou contrato, e anulação ou revogação de licitação ou contrato, com data de publicação, órgão, setor e o link da matéria (`publicacoes_ver_conteudo`). O corte é 04/10/2026, o primeiro turno das eleições; a primeira carga já traz tudo o que foi publicado desde então. Cada coleta lê só as edições ainda não lidas e as de hoje e de ontem (uma edição extra pode ganhar matérias depois). "Novo" é o que a coleta viu pela primeira vez depois da carga inicial (`visto_em`).
+
+**Limites.** A triagem é pelo título, não pelo texto da matéria, e indica onde olhar. Ficam de fora prefeituras, câmaras e publicações de terceiros, e os atos de pessoal (férias, portarias individuais, estágio, cessão de servidor, monitores de ressocialização); "suspensão de penalidade" é alívio dado à empresa e não entra. O Diário não publica tudo: a suspensão de um contrato costuma ser ato interno e não sai lá. Por isso a tela convive com "Suspensos e rescindidos" (SIGA): o Diário dá a data, o SIGA dá a situação cadastral. Em 31/10/2026, por exemplo, duas ordens de paralisação de contratos da Educação publicadas em 22 e 28/10 ainda constavam no SIGA como "em execução" e "publicado". O cruzamento automático entre o ato e o contrato do SIGA (pelo número) ainda não existe.
+
+O Action `noticias.yml` roda a leitura a cada coleta, antes do e-mail, e grava `data/atos/`. O **resumo por e-mail** ganha o bloco "Atos de contrato no Diário Oficial" com os novos desde o último envio, e um dia só com ato novo ainda dispara o envio. Testes em `pipeline/diario/testes/` (sumário fictício no formato do Diário), mais os do e-mail.
 
 ## Módulo `suspensos`
 
