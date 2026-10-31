@@ -651,3 +651,4 @@ tr.clicavel.marcada td { background: color-mix(in srgb, var(--acento) 14%, trans
 .destaque h4 a { color: var(--tinta); text-decoration: none; }
 .destaque h4 a:hover, .destaque h4 a:focus-visible { color: var(--acento); text-decoration: underline; }
 @media (max-width: 640px) { .destaques { grid-template-columns: 1fr; } }
+.chip-possivel { border-style: dashed; color: var(--tinta-2); }

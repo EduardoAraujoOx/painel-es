@@ -8,6 +8,7 @@
   let raiz = null;
   const $ = (s) => raiz.querySelector(s);
   let dados = null;
+  const POSSIVEIS = '@possiveis';
   const POR_VEZ = 40;
   const DESTAQUES = 4;
   const filtros = { tema: '', busca: '' };
@@ -32,7 +33,9 @@
   function filtrar() {
     const termos = norm(filtros.busca).split(/\s+/).filter(Boolean);
     return dados.itens.filter((i) => {
-      if (filtros.tema && !i.temas.includes(filtros.tema)) return false;
+      if (filtros.tema === POSSIVEIS) { if (!i.possivel) return false; }
+      else if (i.possivel && !termos.length) return false; // possíveis só no atalho próprio ou numa busca por palavra
+      else if (filtros.tema && !i.temas.includes(filtros.tema)) return false;
       if (termos.length) { const t = norm(i.titulo + ' ' + i.veiculo); if (!termos.every((x) => t.includes(x))) return false; }
       return true;
     });
@@ -46,6 +49,7 @@
     const d = new Date(i.data);
     const outras = (i.outras || []).filter((o) => hrefSeguro(o.url)).map((o) => el('a', { href: o.url, target: '_blank', rel: 'noopener noreferrer' }, o.veiculo));
     return el('div', { class: 'noticia-meta' }, el('span', { class: 'noticia-veiculo' }, i.veiculo), el('span', {}, comHa && ha(d) ? `${hora(d)} · ${ha(d)}` : hora(d)),
+      i.possivel ? el('span', { class: 'selo n-i' }, el('b', {}, 'possível')) : null,
       i.temas.map(seloTema),
       outras.length ? el('span', { class: 'noticia-tambem' }, 'também em: ', outras.flatMap((a, k) => (k ? [', ', a] : [a]))) : null);
   }
@@ -91,17 +95,22 @@
   }
 
   function chips() {
-    const conta = (t) => dados.itens.filter((i) => !t || i.temas.includes(t)).length;
+    const conta = (t) => dados.itens.filter((i) => !i.possivel && (!t || i.temas.includes(t))).length;
+    const nPossiveis = dados.itens.filter((i) => i.possivel).length;
     const um = (valor, rotulo) => el('button', { type: 'button', class: 'chip', 'aria-pressed': String(filtros.tema === valor),
       onclick: () => { filtros.tema = valor; visiveis = POR_VEZ; render(); } }, rotulo, el('small', {}, nInt.format(conta(valor))));
-    return [um('', 'Todas'), ...Object.entries(dados.temas).filter(([t]) => conta(t)).map(([t, r]) => um(t, r))];
+    const possiveis = nPossiveis ? el('button', { type: 'button', class: 'chip chip-possivel', 'aria-pressed': String(filtros.tema === POSSIVEIS),
+      title: 'Parecem assunto público capixaba, mas o título não cita o Estado. Ficam fora da capa, dos números e do e-mail.',
+      onclick: () => { filtros.tema = POSSIVEIS; visiveis = POR_VEZ; render(); } }, 'Possíveis', el('small', {}, nInt.format(nPossiveis))) : null;
+    return [um('', 'Todas'), ...Object.entries(dados.temas).filter(([t]) => conta(t)).map(([t, r]) => um(t, r)), possiveis];
   }
 
   function render() {
     if (!raiz || !dados || !$('#lista')) return;
     const agora = Date.now();
-    const ult24 = dados.itens.filter((i) => new Date(i.data).getTime() >= agora - 86400000).length;
-    $('#faixa-dados').replaceChildren(el('b', {}, nInt.format(dados.itens.length)), ` notícias desde a eleição (${dataBR(dados.desde)}) · `, el('b', {}, nInt.format(ult24)), ' nas últimas 24 horas');
+    const confirmadas = dados.itens.filter((i) => !i.possivel);
+    const ult24 = confirmadas.filter((i) => new Date(i.data).getTime() >= agora - 86400000).length;
+    $('#faixa-dados').replaceChildren(el('b', {}, nInt.format(confirmadas.length)), ` notícias desde a eleição (${dataBR(dados.desde)}) · `, el('b', {}, nInt.format(ult24)), ' nas últimas 24 horas');
     $('#atualizado').textContent = `Atualizado em ${dataHora(dados.gerado_em)}`;
     $('#chips').replaceChildren(...chips());
     atualizarLista();
@@ -137,7 +146,7 @@
       f.ok ? `${nInt.format(f.lidos)} lidas, ${nInt.format(f.aceitos)} aceitas` : el('span', { class: 'noticia-erro' }, 'sem resposta')));
     return el('details', { class: 'cartao noticias-metodo' }, el('summary', {}, 'Fonte e método'),
       el('p', {}, 'Uma rotina automática consulta, a cada duas horas, o Google Notícias (consultas sobre o governo do Estado, incluindo buscas dentro de veículos que não permitem leitura direta) e os feeds RSS de A Gazeta, Folha Vitória e ES Hoje. O painel guarda apenas título, veículo, data de publicação e link; o texto da matéria fica no site do veículo. Aparecem as notícias publicadas desde a eleição, da mais recente para a mais antiga.'),
-      el('p', {}, 'Uma notícia entra quando o título cita o governo estadual, um órgão do Estado, a transição ou os nomes acompanhados, ou quando trata de finanças, contratos, pessoal ou controle e menciona o Espírito Santo. Notícias policiais e de acidente só ficam se tiverem também tema de transição, finanças, contratos ou pessoal. Os temas são marcados por regras de palavras no título (arquivo pipeline/noticias/config.json): servem para indicar onde olhar, podem errar e não substituem a leitura da notícia.'),
+      el('p', {}, 'Uma notícia entra quando o título cita o governo estadual, um órgão do Estado, a transição ou os nomes acompanhados, ou quando trata de finanças, contratos, pessoal ou controle e menciona o Espírito Santo. Notícias policiais e de acidente só ficam se tiverem também tema de transição, finanças, contratos ou pessoal. Notícia que parece assunto público capixaba mas não cita o Estado (por exemplo, sem o nome do órgão) não é descartada: fica no atalho "Possíveis", fora da capa, dos números e do e-mail, e aparece também nas buscas por palavra. Os temas são marcados por regras de palavras no título (arquivo pipeline/noticias/config.json): servem para indicar onde olhar, podem errar e não substituem a leitura da notícia.'),
       el('p', {}, 'O Google Notícias não devolve a mesma lista a cada consulta, então uma coleta isolada pode deixar passar matérias; as coletas repetidas se acumulam e reduzem essa perda, mas a lista não é garantidamente completa. O botão Atualizar recarrega o que já foi coletado; ele não dispara uma coleta nova.'),
       el('p', {}, `Última coleta com novidades: ${dataHora(dados.gerado_em)} (horário de Brasília). Fontes na última coleta: ${nInt.format(dados.fontes.length - falhas)} de ${nInt.format(dados.fontes.length)} responderam.`),
       el('ul', { class: 'noticias-fontes' }, lista));

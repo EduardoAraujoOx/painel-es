@@ -36,7 +36,7 @@ class TextoERegras(unittest.TestCase):
         self.assertFalse(coletar.casa([coletar.compilar("tce")], coletar.normalizar("tcetera")))
 
     def test_temas_da_config(self):
-        comp = {t: coletar.compilar_lista(v["termos"]) for t, v in CFG["temas"].items()}
+        comp = coletar.compilar_temas(CFG)
         self.assertIn("transicao", coletar.temas_de(CFG, "Pazolini escolhe Erick Musso para coordenar transição de governo no ES", comp))
         self.assertIn("financas", coletar.temas_de(CFG, "Governo do ES pode enviar novo projeto de Orçamento à Assembleia", comp))
 
@@ -58,11 +58,10 @@ class CasoSejus(unittest.TestCase):
                "Sejus suspende contratos de infraestrutura e tecnologia por falta de recursos"]
 
     def test_entram_e_recebem_o_tema_de_restricao(self):
-        gate = coletar.compilar_lista(CFG["contexto_es"])
-        comp = {t: coletar.compilar_lista(v["termos"]) for t, v in CFG["temas"].items()}
+        F = coletar.preparar(CFG)
         for t in self.TITULOS:
-            self.assertTrue(coletar.casa(gate, coletar.normalizar(t)), t)
-            self.assertIn("restricao", coletar.temas_de(CFG, t, comp), t)
+            self.assertEqual(coletar.decidir(CFG, t, "G1", F, regional=True)[0], "confirmada", t)  # via busca restrita ao G1 Espírito Santo
+            self.assertIn("restricao", coletar.temas_de(CFG, t, F["temas"]), t)
 
     def test_notícia_policial_com_restricao_nao_e_descartada_como_ruido(self):
         tmp = Path(tempfile.mkdtemp()); coletar.SAIDA = tmp / "index.json"
@@ -71,6 +70,69 @@ class CasoSejus(unittest.TestCase):
         itens, _ = coletar.consolidar(CFG, [it], hoje)
         self.assertEqual(len(itens), 1)
         self.assertEqual(itens[0]["temas"][0], "restricao")
+
+
+class Auditoria(unittest.TestCase):
+    """Falhas achadas na auditoria de 30/10/2026 (matérias relevantes que o filtro descartava) e os falsos positivos que as correções poderiam criar."""
+
+    def classe(self, titulo, veiculo="Folha do ES", regional=False):
+        return coletar.decidir(CFG, titulo, veiculo, coletar.preparar(CFG), regional)[0]
+
+    def test_vocabulario_fiscal_royalties_e_emendas(self):
+        self.assertEqual(self.classe("ES pode perder R$ 500 milhões com decisão do STF sobre royalties do petróleo"), "confirmada")
+        self.assertEqual(self.classe("Lei fixa regras para execução de emendas parlamentares no ES"), "confirmada")
+
+    def test_governo_do_espirito_santo_por_extenso(self):
+        self.assertEqual(self.classe("Governo do Espírito Santo assina aval e Polícia Científica prepara primeiro concurso"), "confirmada")
+
+    def test_flexao_e_preposicao_nao_escondem_a_restricao(self):
+        comp = coletar.compilar_temas(CFG)
+        for t in ("Sejus suspendeu os contratos de rastreamento", "Suspensão dos contratos da Sesp preocupa servidores",
+                  "Secretaria interrompe obras por falta de verba", "Sesa deixa de pagar fornecedores e atrasa repasses"):
+            self.assertIn("restricao", coletar.temas_de(CFG, t, comp), t)
+
+    def test_siglas_de_outros_estados_nao_entram(self):
+        for t in ("Concurso da SEFAZ SP: últimos dias de inscrição para 60 vagas de analista", "Detran-DF suspende atendimento presencial até segunda-feira"):
+            self.assertEqual(self.classe(t, "G1"), "descartada", t)
+        self.assertEqual(self.classe("Sefaz-ES divulga calendário do IPVA", "A Gazeta"), "confirmada")
+        self.assertEqual(self.classe("Pazolini se reúne com governador de SP", "A Gazeta"), "confirmada")  # âncora do ES
+
+    def test_sigla_de_orgao_que_existe_em_varios_estados_exige_fonte_capixaba_ou_ancora(self):
+        t = "TCE determina suspensão de licitação da Sedurb por divergências em edital"
+        self.assertEqual(self.classe(t, "Amazonas1"), "possivel")                    # fonte de fora, sem âncora do ES
+        self.assertEqual(self.classe(t, "Folha do ES"), "confirmada")                 # veículo capixaba
+        self.assertEqual(self.classe(t, "Amazonas1", regional=True), "confirmada")    # veio de busca restrita a site capixaba
+        self.assertEqual(self.classe("Sedurb do ES licita obra", "Amazonas1"), "confirmada")  # âncora no próprio título
+
+    def test_site_de_concurso_e_excluido(self):
+        self.assertEqual(self.classe("Concurso Banestes: inscrições abertas para 936 vagas", "Estratégia Concursos"), "descartada")
+
+    def test_fonte_oficial_passa_direto(self):
+        self.assertEqual(self.classe("Confira o expediente dos órgãos nos dias 30 de outubro e 2 de novembro", "Governo ES"), "confirmada")
+
+    def test_restricao_sozinha_nao_basta_com_a_mera_mencao_ao_es(self):
+        # uma operadora que suspende serviço no ES não é notícia do governo: vira "possível", não "confirmada"
+        self.assertEqual(self.classe("Vivo suspende serviços de internet no ES após falha"), "possivel")
+
+    def test_o_que_cheira_a_assunto_publico_capixaba_vira_possivel_e_o_resto_cai(self):
+        self.assertEqual(self.classe("Estado deixa de pagar fornecedores e atrasa repasses a hospitais"), "possivel")
+        self.assertEqual(self.classe("Flávio Bolsonaro usou passaporte italiano para entrar na Argentina"), "descartada")
+
+    def test_palavra_de_dois_sentidos_nao_vira_tema_fiscal(self):
+        comp = coletar.compilar_temas(CFG)
+        self.assertNotIn("financas", coletar.temas_de(CFG, "Almoço sem carne: 5 receitas práticas e ricas em proteínas vegetais", comp))
+        self.assertIn("financas", coletar.temas_de(CFG, "Queda na receita pública preocupa o governo do ES", comp))
+
+    def test_possivel_fica_fora_do_resumo_e_sobe_de_categoria_quando_confirmada(self):
+        tmp = Path(tempfile.mkdtemp()); coletar.SAIDA = tmp / "index.json"
+        hoje = datetime(2026, 10, 30, 15, 0, tzinfo=UTC)
+        base = {"titulo": "Estado deixa de pagar fornecedores e atrasa repasses a hospitais", "veiculo": "V", "url": "https://e.com/x", "data": hoje - timedelta(hours=1)}
+        itens, novos = coletar.consolidar(CFG, [{**base, "possivel": True}], hoje)
+        self.assertEqual((len(itens), novos, itens[0]["possivel"]), (1, 0, True))  # "novos" conta só as confirmadas
+        self.assertEqual(enviar.selecionar(itens, hoje - timedelta(days=1)), [])
+        coletar.SAIDA.write_text(json.dumps({"itens": itens}), encoding="utf-8")
+        itens, novos = coletar.consolidar(CFG, [{**base, "possivel": False}], hoje)
+        self.assertEqual((len(itens), novos, itens[0]["possivel"]), (1, 1, False))
 
 
 class Feeds(unittest.TestCase):

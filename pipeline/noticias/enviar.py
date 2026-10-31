@@ -63,7 +63,7 @@ def carregar_marco():
 
 def selecionar(itens, desde):
     """Notícias vistas pela coleta depois de `desde`, da mais recente para a mais antiga."""
-    novos = [i for i in itens if lido(i["coletado_em"]) > desde]
+    novos = [i for i in itens if lido(i["coletado_em"]) > desde and not i.get("possivel")]
     return sorted(novos, key=lambda i: (i["data"], i["id"]), reverse=True)
 
 
@@ -192,7 +192,7 @@ def main():
     if args.teste or args.prever or marco is None:
         # sem marco de envio (primeiro envio, teste ou prévia): o que foi publicado nas últimas 24 horas
         desde_txt = "nas últimas 24 horas"
-        itens = ordenar([i for i in dados["itens"] if lido(i["data"]) >= ref - timedelta(hours=24)])
+        itens = ordenar([i for i in dados["itens"] if lido(i["data"]) >= ref - timedelta(hours=24) and not i.get("possivel")])
     else:
         desde_txt = "desde o último resumo"
         itens = selecionar(dados["itens"], marco)
