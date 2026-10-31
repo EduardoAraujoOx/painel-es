@@ -84,6 +84,23 @@ jobs:
             echo "Sem resumo vencido: nada a fazer nesta execução."
           fi
 
+      # Obras paralisadas e com contrato rescindido no Portal da Transparência (com a data da situação): leva de 1 a 2 minutos na primeira vez e menos nas seguintes.
+      # Mesma regra do levantamento de contratos: só quando há resumo vencido e nos disparos manuais. Falha aqui não impede a publicação das notícias.
+      - name: Ler as obras paralisadas (resumo vencido ou disparo manual)
+        id: obras
+        continue-on-error: true
+        env:
+          EVENTO: ${{ github.event_name }}
+          DEVIDO: ${{ steps.devido.outputs.sim }}
+          AGENDADO: ${{ inputs.agendado }}
+        run: |
+          # disparo manual (sem agendado): sempre; agendado (GitHub ou externo): só com resumo vencido
+          if { [ "$EVENTO" = "workflow_dispatch" ] && [ "$AGENDADO" != "true" ]; } || { [ "$DEVIDO" = "sim" ] && { [ "$EVENTO" = "schedule" ] || [ "$AGENDADO" = "true" ]; }; }; then
+            python3 -I pipeline/obras/coletar.py
+          else
+            echo "Sem resumo vencido: nada a fazer nesta execução."
+          fi
+
       # Falha no e-mail não impede a publicação das notícias; o último passo deixa a execução vermelha para o aviso chegar.
       - name: Enviar o resumo por e-mail (resumo vencido ou teste manual)
         id: enviar
@@ -109,14 +126,14 @@ jobs:
             echo "Sem resumo vencido: nada a enviar nesta execução."
           fi
 
-      - name: Gravar no repositório (só data/noticias, data/suspensos e data/atos; o deploy sai do push)
+      - name: Gravar no repositório (só data/noticias, data/suspensos, data/atos e data/obras; o deploy sai do push)
         run: |
-          if [ -z "$(git status --porcelain -- data/noticias data/suspensos data/atos)" ]; then
+          if [ -z "$(git status --porcelain -- data/noticias data/suspensos data/atos data/obras)" ]; then
             echo "Sem mudanças."; exit 0
           fi
           git config user.name "coleta-noticias"
           git config user.email "coleta-noticias@users.noreply.github.com"
-          git add data/noticias data/suspensos data/atos
+          git add data/noticias data/suspensos data/atos data/obras
           git commit -m "dados: notícias e contratos de $(date -u +%F)"
           for tentativa in 1 2 3; do
             git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
@@ -124,8 +141,8 @@ jobs:
           done
           echo "Não foi possível enviar a coleta."; exit 1
 
-      - name: Avisar se o e-mail, o levantamento de contratos ou a leitura do Diário falhou
-        if: steps.enviar.outcome == 'failure' || steps.suspensos.outcome == 'failure' || steps.diario.outcome == 'failure'
+      - name: Avisar se o e-mail, o levantamento de contratos, a leitura do Diário ou a das obras falhou
+        if: steps.enviar.outcome == 'failure' || steps.suspensos.outcome == 'failure' || steps.diario.outcome == 'failure' || steps.obras.outcome == 'failure'
         run: |
-          echo "O resumo por e-mail, o levantamento de contratos suspensos ou a leitura do Diário Oficial falhou (veja os passos acima). As notícias foram publicadas normalmente."
+          echo "O resumo por e-mail, o levantamento de contratos suspensos ou a leitura do Diário Oficial ou a das obras falhou (veja os passos acima). As notícias foram publicadas normalmente."
           exit 1

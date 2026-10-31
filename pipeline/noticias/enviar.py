@@ -38,6 +38,7 @@ DADOS = RAIZ / "data" / "noticias" / "index.json"
 MARCO = RAIZ / "data" / "noticias" / "ultimo-envio.json"
 SUSPENSOS = RAIZ / "data" / "suspensos" / "index.json"
 ATOS = RAIZ / "data" / "atos" / "index.json"
+OBRAS = RAIZ / "data" / "obras" / "index.json"
 BRASILIA = timezone(timedelta(hours=-3))  # sem horário de verão desde 2019
 ORDEM = ["restricao", "transicao", "financas", "contratos", "pessoal", "controle", "governador"]
 MAX_ITENS = 40
@@ -106,6 +107,19 @@ def atos_novos(desde):
     return sorted(novos, key=lambda i: (i["data"], i["id"]), reverse=True)
 
 
+ROTULO_OBRA = {"paralisada": "Paralisada", "rescindida": "Contrato rescindido"}
+
+
+def obras_novas(desde):
+    """Obras que o coletor do Portal da Transparência viu paralisadas ou com contrato rescindido depois de `desde` (módulo obras). Sem o arquivo, lista vazia."""
+    try:
+        d = json.loads(OBRAS.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return []
+    novas = [i for i in d.get("itens", []) if i.get("visto_em") and lido(i["visto_em"]) > desde]
+    return sorted(novas, key=lambda i: (i["tipo"] != "paralisada", -(i.get("valor") or 0)))
+
+
 def valor_curto(v):
     if not v:
         return "valor não informado"
@@ -134,14 +148,16 @@ def periodo(ref):
     return f"{'manhã' if h.hour < 12 else 'tarde'} de {h.strftime('%d/%m')}"
 
 
-def assunto(n, ref, teste, nc=0, na=0):
+def assunto(n, ref, teste, nc=0, na=0, no=0):
     partes = []
-    if n or not (nc or na):
+    if n or not (nc or na or no):
         partes.append(f"{n} {'notícia nova' if n == 1 else 'notícias novas'}")
     if nc:
         partes.append(f"{nc} {'contrato suspenso, rescindido ou anulado' if nc == 1 else 'contratos suspensos, rescindidos ou anulados'}")
     if na:
         partes.append(f"{na} {'ato de contrato no Diário Oficial' if na == 1 else 'atos de contrato no Diário Oficial'}")
+    if no:
+        partes.append(f"{no} {'obra paralisada ou com contrato rescindido' if no == 1 else 'obras paralisadas ou com contrato rescindido'}")
     return f"{'[TESTE] ' if teste else ''}Governo e transição no ES: {' e '.join(partes)}, {periodo(ref)}"
 
 
@@ -153,9 +169,17 @@ def data_br(iso_dia):
     return "/".join(reversed((iso_dia or "").split("-")))
 
 
-def montar_html(grupos, total, restantes, ref, painel_url, desde_txt, contratos=(), atos=()):
+def montar_html(grupos, total, restantes, ref, painel_url, desde_txt, contratos=(), atos=(), obras=()):
     e = html.escape
     blocos = []
+    if obras:
+        linhas = [f'<tr><td style="padding:9px 0;border-bottom:1px solid #eee">'
+                  f'<div style="font:600 15px/1.35 Georgia,\'Times New Roman\',serif;color:#111">{e(o["objeto"][:170])}</div>'
+                  f'<div style="font:12px/1.5 Arial,Helvetica,sans-serif;color:#666;margin-top:2px"><b style="color:#b32424">{e(ROTULO_OBRA.get(o["tipo"], o["tipo"]))}</b> em {data_br(o["data_situacao"])} · {e(o["municipio"])} · {e(o["orgao"].split(" - ")[0])} · {e(valor_curto(o.get("valor")))}</div>'
+                  f'</td></tr>' for o in obras[:15]]
+        blocos.append(f'<tr><td style="padding:18px 0 4px;font:700 12px/1.2 Arial,Helvetica,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#b32424">'
+                      f'Obras paralisadas ou com contrato rescindido ({len(obras)})</td></tr>' + "".join(linhas)
+                      + (f'<tr><td style="padding:8px 0;font:12px Arial,Helvetica,sans-serif;color:#666">E mais {len(obras) - 15} no painel.</td></tr>' if len(obras) > 15 else ""))
     if atos:
         linhas = []
         for a in atos[:15]:
@@ -201,7 +225,7 @@ def montar_html(grupos, total, restantes, ref, painel_url, desde_txt, contratos=
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:640px;background:#fff;border-top:4px solid {COR}"><tr><td style="padding:22px 26px 26px">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
 <tr><td style="font:700 26px/1.1 Georgia,'Times New Roman',serif;color:#111">Governo e transição no ES</td></tr>
-<tr><td style="padding-top:6px;font:13px/1.5 Arial,Helvetica,sans-serif;color:#666">Painel Fiscal · análise para a transição. {f"{total} " + ("notícia nova" if total == 1 else "notícias novas") if total else "Nenhuma notícia nova"} {e(desde_txt)}{f", e {len(contratos)} " + ("contrato com mudança de situação" if len(contratos) == 1 else "contratos com mudança de situação") if contratos else ""}{f", e {len(atos)} " + ("ato de contrato no Diário Oficial" if len(atos) == 1 else "atos de contrato no Diário Oficial") if atos else ""}.</td></tr>
+<tr><td style="padding-top:6px;font:13px/1.5 Arial,Helvetica,sans-serif;color:#666">Painel Fiscal · análise para a transição. {f"{total} " + ("notícia nova" if total == 1 else "notícias novas") if total else "Nenhuma notícia nova"} {e(desde_txt)}{f", e {len(contratos)} " + ("contrato com mudança de situação" if len(contratos) == 1 else "contratos com mudança de situação") if contratos else ""}{f", e {len(atos)} " + ("ato de contrato no Diário Oficial" if len(atos) == 1 else "atos de contrato no Diário Oficial") if atos else ""}{f", e {len(obras)} " + ("obra paralisada ou com contrato rescindido" if len(obras) == 1 else "obras paralisadas ou com contrato rescindido") if obras else ""}.</td></tr>
 {botao}
 {"".join(blocos)}
 {mais}
@@ -211,10 +235,14 @@ Para sair desta lista ou incluir alguém, fale com Eduardo Araújo.</td></tr>
 </table></td></tr></table></td></tr></table></body></html>"""
 
 
-def montar_texto(grupos, total, restantes, ref, painel_url, desde_txt, contratos=(), atos=()):
+def montar_texto(grupos, total, restantes, ref, painel_url, desde_txt, contratos=(), atos=(), obras=()):
     out = [f"Governo e transição no ES\n{(str(total) + ' ' + ('notícia nova' if total == 1 else 'notícias novas')) if total else 'Nenhuma notícia nova'} {desde_txt}.\n"]
     if painel_url:
         out.append(f"Painel: {painel_url}\n")
+    if obras:
+        out.append(f"\nOBRAS PARALISADAS OU COM CONTRATO RESCINDIDO ({len(obras)})")
+        for o in obras[:15]:
+            out.append(f"- {o['objeto'][:170]}\n  {ROTULO_OBRA.get(o['tipo'], o['tipo'])} em {data_br(o['data_situacao'])} · {o['municipio']} · {o['orgao'].split(' - ')[0]} · {valor_curto(o.get('valor'))}")
     if atos:
         out.append(f"\nATOS DE CONTRATO NO DIÁRIO OFICIAL ({len(atos)})")
         for a in atos[:15]:
@@ -233,12 +261,12 @@ def montar_texto(grupos, total, restantes, ref, painel_url, desde_txt, contratos
     return "\n".join(out)
 
 
-def montar_conteudo(dados, itens, ref, painel_url, desde_txt, contratos=(), atos=()):
+def montar_conteudo(dados, itens, ref, painel_url, desde_txt, contratos=(), atos=(), obras=()):
     escolhidos = itens[:MAX_ITENS]
     restantes = len(itens) - len(escolhidos)
     grupos = agrupar(escolhidos, dados["temas"])
-    return (montar_html(grupos, len(itens), restantes, ref, painel_url, desde_txt, contratos, atos),
-            montar_texto(grupos, len(itens), restantes, ref, painel_url, desde_txt, contratos, atos))
+    return (montar_html(grupos, len(itens), restantes, ref, painel_url, desde_txt, contratos, atos, obras),
+            montar_texto(grupos, len(itens), restantes, ref, painel_url, desde_txt, contratos, atos, obras))
 
 
 def destinatarios(bruto):
@@ -289,12 +317,13 @@ def main():
         itens = selecionar(dados["itens"], marco)
     contratos = contratos_novos(desde)
     atos = atos_novos(desde)
+    obras = obras_novas(desde)
     painel = os.environ.get("PAINEL_URL", "").strip() or PAINEL_PADRAO
-    corpo_html, corpo_txt = montar_conteudo(dados, itens, ref, painel if link_seguro(painel) else "", desde_txt, contratos, atos) if (itens or contratos or atos) else ("", "")
+    corpo_html, corpo_txt = montar_conteudo(dados, itens, ref, painel if link_seguro(painel) else "", desde_txt, contratos, atos, obras) if (itens or contratos or atos or obras) else ("", "")
 
     if args.prever:
         Path(args.prever).write_text(corpo_html or "<p>Sem notícias novas.</p>", encoding="utf-8")
-        print(f"{len(itens)} notícias, {len(contratos)} contratos e {len(atos)} atos do Diário no resumo; HTML gravado em {args.prever}")
+        print(f"{len(itens)} notícias, {len(contratos)} contratos, {len(atos)} atos do Diário e {len(obras)} obras no resumo; HTML gravado em {args.prever}")
         return
 
     usuario, senha = os.environ.get("SMTP_USUARIO", "").strip(), os.environ.get("SMTP_SENHA", "")
@@ -302,15 +331,15 @@ def main():
     if not (usuario and senha and lista):
         print("envio desativado: faltam SMTP_USUARIO, SMTP_SENHA ou NOTICIAS_DESTINATARIOS (nada foi enviado)")
         return
-    if not itens and not contratos and not atos:
-        print("sem notícias, contratos nem atos do Diário novos desde o último resumo: nada a enviar")
+    if not itens and not contratos and not atos and not obras:
+        print("sem notícias, contratos, atos do Diário nem obras novos desde o último resumo: nada a enviar")
         return
 
     remetente = os.environ.get("SMTP_REMETENTE", "").strip() or usuario
     msgs = []
     for dest in lista:
         m = EmailMessage()
-        m["Subject"] = assunto(len(itens), ref, args.teste, len(contratos), len(atos))
+        m["Subject"] = assunto(len(itens), ref, args.teste, len(contratos), len(atos), len(obras))
         m["From"] = formataddr(("Painel Fiscal ES", remetente))
         m["To"] = dest
         m["Date"] = formatdate(localtime=False)
@@ -322,9 +351,9 @@ def main():
         enviar(msgs, os.environ.get("SMTP_HOST", "smtp.gmail.com").strip() or "smtp.gmail.com", int(os.environ.get("SMTP_PORTA", "587") or 587), usuario, senha)
     except (smtplib.SMTPException, OSError) as erro:
         sys.exit(f"falha no envio: {type(erro).__name__}")  # sem detalhes: a mensagem de erro pode ecoar o usuário
-    print(f"resumo enviado a {len(lista)} destinatário(s): {len(itens)} notícias, {len(contratos)} contratos e {len(atos)} atos do Diário")
+    print(f"resumo enviado a {len(lista)} destinatário(s): {len(itens)} notícias, {len(contratos)} contratos, {len(atos)} atos do Diário e {len(obras)} obras")
     if not args.teste:
-        MARCO.write_text(json.dumps({"ultimo_envio": iso(ref), "noticias": len(itens), "contratos": len(contratos), "atos": len(atos)}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        MARCO.write_text(json.dumps({"ultimo_envio": iso(ref), "noticias": len(itens), "contratos": len(contratos), "atos": len(atos), "obras": len(obras)}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":

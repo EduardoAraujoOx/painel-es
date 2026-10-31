@@ -192,6 +192,7 @@
       { mod: 'contratacoes', sub: 'diagnostico', rotulo: 'Contratos principais', casa: (r) => /^diagnostico/.test(r) },
       { mod: 'fimmandato', rotulo: 'Fim de mandato' },
       { mod: 'atos', rotulo: 'Contratos recentes' },
+      { mod: 'obras', rotulo: 'Obras paralisadas' },
       { mod: 'suspensos', rotulo: 'Suspensos e rescindidos' },
       { mod: 'contratacoes', sub: 'revisao', rotulo: 'Lista de revisão', selo: 'revisao', casa: (r) => /^(revisao|relatorio)/.test(r) }] },
     { id: 'fundos', rotulo: 'Fundos', itens: [
