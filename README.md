@@ -6,7 +6,7 @@ Painel de acesso restrito para diagnósticos fiscais e de pessoal do Poder Execu
 |---|---|---|
 | `cargos` | Servidores e cargos de confiança: quadro de servidores do Executivo, cargos em comissão e funções gratificadas, custo mensal, tempo na função e a ficha da folha de cada pessoa | em operação |
 | `organograma` | Árvore de unidades de um órgão com as pessoas de cada uma, a condição (sem vínculo efetivo, servidor de carreira, função gratificada) e a remuneração somando carreira e cargo | em operação, com a estrutura oficial de 55 órgãos |
-| `noticias` | Manchetes da imprensa capixaba sobre o governo do Estado e a transição, coletadas a cada 2 horas desde a eleição, com tema por regras de palavras (painel próprio, Notícias) | em operação |
+| `noticias` | Manchetes da imprensa capixaba sobre o governo do Estado e a transição, coletadas a cada hora desde a eleição, com tema por regras de palavras (painel próprio, Notícias) | em operação |
 | `suspensos` | Contratos do Estado com situação de suspensão, rescisão ou anulação no SIGA e o que mudou desde o levantamento anterior (painel Contratos) | em operação |
 
 ## Módulo `cargos`
@@ -168,7 +168,7 @@ python3 -I pipeline/lacunas/montar.py
 
 ## Módulo `noticias`
 
-Painel próprio (Notícias), na chave do topo, que reúne, desde a eleição (25/10/2026), as manchetes da imprensa capixaba sobre o governo do Estado e a transição, da mais recente para a mais antiga: o que repercute a participação do governador, o que sinaliza pressão financeira (remanejamentos, créditos, dívida, caixa), contratos e obras, nomeações e exonerações, e a atuação dos órgãos de controle. A tela tem formato de capa (manchete e quatro destaques, depois a lista por dia), busca nas manchetes e atalhos por tema, e leva à matéria no site do veículo. O botão Atualizar recarrega o que já foi coletado; não dispara coleta.
+Painel próprio (Notícias), na chave do topo, que reúne, desde a eleição (25/10/2026), as manchetes da imprensa capixaba sobre o governo do Estado e a transição, da mais recente para a mais antiga: o que repercute a participação do governador, o que sinaliza pressão financeira (remanejamentos, créditos, dívida, caixa), contratos e obras, nomeações e exonerações, e a atuação dos órgãos de controle. A tela tem formato de capa (manchete e quatro destaques, depois a lista por dia), busca nas manchetes e atalhos por tema, e leva à matéria no site do veículo.
 
 ### Fontes e o que é guardado
 
@@ -188,7 +188,7 @@ python3 -I pipeline/noticias/coletar.py --dias 7     # recompõe desde a eleiç�
 python3 -I pipeline/noticias/coletar.py --dry-run    # só mostra o resumo
 ```
 
-A rotina roda sozinha a cada 2 horas, das 06h17 às 20h17 (Brasília), pelo GitHub Action `.github/workflows/noticias.yml`, que grava só `data/noticias/` no ramo principal e, com isso, dispara a implantação. Se nada mudou, o coletor não altera o arquivo e não há commit nem implantação; por isso "Atualizado em" mostra a última coleta que trouxe novidade. Também pode ser disparada à mão na aba Actions (com o campo "dias" para carga retroativa). Se nenhuma fonte responder, o arquivo não é alterado e a execução falha; se só algumas falharem, a tela indica quantas fontes responderam na última coleta.
+A rotina roda sozinha a cada hora (aos 17 minutos), pelo GitHub Action `.github/workflows/noticias.yml`, que grava só `data/noticias/` no ramo principal e, com isso, dispara a implantação. Se nada mudou, o coletor não altera o arquivo e não há commit nem implantação; por isso "Atualizado em" mostra a última coleta que trouxe novidade. Também pode ser disparada à mão na aba Actions (com o campo "dias" para carga retroativa). Se nenhuma fonte responder, o arquivo não é alterado e a execução falha; se só algumas falharem, a tela indica quantas fontes responderam na última coleta.
 
 ### Auditoria do filtro (o que ele descarta)
 
@@ -198,7 +198,7 @@ Para reduzir esse risco por desenho, o filtro tem as seguintes defesas. **Combin
 
 ### Resumo por e-mail
 
-`pipeline/noticias/enviar.py` monta um resumo das notícias que apareceram desde o último envio, agrupadas por tema (Transição, Finanças e orçamento, Contratos e obras, Pessoal, Controle e investigação, Governador e Palácio), e manda um e-mail a cada destinatário, um por vez, para que um não veja o endereço do outro. O Action envia às **08h17, 12h17 e 18h17** (Brasília), dentro da própria rotina de coleta; sem notícia nova, não envia nada. O marco do último envio fica em `data/noticias/ultimo-envio.json`. O primeiro envio cobre as últimas 24 horas.
+`pipeline/noticias/enviar.py` monta um resumo das notícias que apareceram desde o último envio, agrupadas por tema (Transição, Finanças e orçamento, Contratos e obras, Pessoal, Controle e investigação, Governador e Palácio), e manda um e-mail a cada destinatário, um por vez, para que um não veja o endereço do outro. O Action envia na primeira coleta depois de **08h17, 12h17 e 18h17** (Brasília) que ainda não tenha enviado, dentro da própria rotina de coleta: como o GitHub costuma pular execuções agendadas, o envio não depende de um minuto exato e um horário perdido é recuperado na coleta seguinte (`enviar.py --devido`). Sem notícia nova, não envia nada. O marco do último envio fica em `data/noticias/ultimo-envio.json`. O primeiro envio cobre as últimas 24 horas.
 
 **Quem recebe.** A lista de destinatários fica no segredo `NOTICIAS_DESTINATARIOS` (endereços separados por vírgula ou ponto e vírgula), nunca no repositório, que é público. Para incluir ou retirar alguém, edite esse segredo em Settings, Secrets and variables, Actions. Não há formulário de cadastro: a equipe é pequena e a lista é mantida à mão.
 
@@ -222,7 +222,7 @@ Tela do painel Contratos ("Suspensos e rescindidos") que mostra os instrumentos 
 
 `pipeline/contratos/suspensos.py` baixa os arquivos anuais `Contratos-AAAA.csv` do Portal da Transparência (pacote `portal-da-transparencia-contratos`, atualizado todo dia, cerca de 77 mil contratos, leva cerca de 1 minuto), separa os de situação suspensa, rescindida ou anulada/revogada e compara com o levantamento anterior, guardado em `data/suspensos/index.json`. **Escopo:** suspensos de qualquer ano; rescindidos e anulados/revogados só se celebrados desde 2023 ou com fim de vigência no ano corrente (rescisão antiga não é alerta). **"Novo"** é o que não constava no levantamento anterior ou mudou de situação (suspenso virou rescindido); o primeiro levantamento (30/10/2026) é só a base de comparação e nada nele é marcado como novo. O arquivo guarda ainda a série de contagens, os itens que saíram e o resumo por órgão. Se algum arquivo anual não baixar, nada é alterado, para não confundir ausência com saída.
 
-O Action `noticias.yml` roda o levantamento nos horários do resumo (08h17, 12h17 e 18h17) e nos disparos manuais, antes do e-mail, e só grava quando algo muda. O **resumo por e-mail** ganha um bloco "Contratos suspensos, rescindidos ou anulados" com os novos, e um dia só com contrato novo (sem notícia nova) ainda dispara o envio.
+O Action `noticias.yml` roda o levantamento quando há resumo vencido (mesma regra do e-mail: primeira coleta depois de 08h17, 12h17 ou 18h17 ainda sem envio) e nos disparos manuais, antes do e-mail, e só grava quando algo muda. O **resumo por e-mail** ganha um bloco "Contratos suspensos, rescindidos ou anulados" com os novos, e um dia só com contrato novo (sem notícia nova) ainda dispara o envio.
 
 ```bash
 python3 -I pipeline/contratos/suspensos.py            # baixa, compara e grava

@@ -17,6 +17,7 @@ Uso (sem dependências externas):
   python3 -I pipeline/noticias/enviar.py                       # envia o que for novo e guarda o marco do envio
   python3 -I pipeline/noticias/enviar.py --prever resumo.html  # só grava o HTML do resumo, sem enviar
   python3 -I pipeline/noticias/enviar.py --teste               # envia as últimas 24 horas, sem guardar o marco
+  python3 -I pipeline/noticias/enviar.py --devido              # imprime sim/nao: já passou um horário de resumo sem envio?
 """
 
 import argparse
@@ -60,6 +61,16 @@ def carregar_marco():
         return lido(json.loads(MARCO.read_text(encoding="utf-8"))["ultimo_envio"])
     except (OSError, ValueError, KeyError):
         return None
+
+
+HORARIOS_RESUMO = ((11, 17), (15, 17), (21, 17))  # UTC: 08h17, 12h17 e 18h17 em Brasília
+
+
+def resumo_devido(marco, ref):
+    """Há um horário de resumo já passado sem envio depois dele? Assim, se o GitHub pular o horário, a próxima coleta do dia envia."""
+    passados = [datetime(d.year, d.month, d.day, h, m, tzinfo=timezone.utc) for d in (ref - timedelta(days=1), ref) for h, m in HORARIOS_RESUMO]
+    ultimo = max(p for p in passados if p <= ref)
+    return marco is None or marco < ultimo
 
 
 def selecionar(itens, desde):
@@ -221,11 +232,15 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--prever", metavar="ARQ.html", help="grava o HTML do resumo e sai, sem enviar")
     ap.add_argument("--teste", action="store_true", help="considera as últimas 24 horas e não guarda o marco do envio")
+    ap.add_argument("--devido", action="store_true", help="só diz 'sim' ou 'nao': há horário de resumo vencido sem envio? (não envia nada)")
     args = ap.parse_args()
 
-    dados = json.loads(DADOS.read_text(encoding="utf-8"))
     ref = agora()
     marco = carregar_marco()
+    if args.devido:
+        print("sim" if resumo_devido(marco, ref) else "nao")
+        return
+    dados = json.loads(DADOS.read_text(encoding="utf-8"))
     ordenar = lambda lista: sorted(lista, key=lambda i: (i["data"], i["id"]), reverse=True)
     if args.teste or args.prever or marco is None:
         # sem marco de envio (primeiro envio, teste ou prévia): o que foi publicado nas últimas 24 horas

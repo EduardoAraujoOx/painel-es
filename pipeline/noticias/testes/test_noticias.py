@@ -318,6 +318,27 @@ class Resumo(unittest.TestCase):
         enviar.SUSPENSOS = self.tmp / "nao_existe.json"
         self.assertEqual(enviar.contratos_novos(self.ref - timedelta(hours=24)), [])
 
+    def test_resumo_devido_recupera_horario_pulado(self):
+        h = lambda dia, hora, minuto: datetime(2026, 10, dia, hora, minuto, tzinfo=UTC)
+        # 08h17 BRT (11h17 UTC) pulado: às 12h UTC ainda é devido, e deixa de ser depois de um envio
+        self.assertTrue(enviar.resumo_devido(h(30, 21, 29), h(31, 12, 0)))
+        self.assertFalse(enviar.resumo_devido(h(31, 12, 5), h(31, 13, 0)))
+        # antes do primeiro horário do dia, vale o envio da noite anterior (21h17 UTC)
+        self.assertFalse(enviar.resumo_devido(h(30, 21, 29), h(31, 10, 0)))
+        self.assertTrue(enviar.resumo_devido(h(30, 15, 30), h(31, 10, 0)))
+        self.assertTrue(enviar.resumo_devido(None, h(31, 10, 0)))
+
+    def test_devido_so_informa_e_nao_envia(self):
+        enviar.MARCO.write_text(json.dumps({"ultimo_envio": enviar.iso(self.ref - timedelta(hours=30))}), encoding="utf-8")
+        import io, contextlib, sys
+        enviar.agora = lambda: self.ref
+        sys.argv = ["enviar.py", "--devido"]
+        saida = io.StringIO()
+        with contextlib.redirect_stdout(saida):
+            enviar.main()
+        self.assertEqual(saida.getvalue().strip(), "sim")
+        self.assertEqual(self.enviados, [])
+
     def test_assunto_com_contratos(self):
         self.assertIn("2 notícias novas e 1 contrato suspenso, rescindido ou anulado", enviar.assunto(2, self.ref, False, 1))
         self.assertIn("3 contratos suspensos, rescindidos ou anulados", enviar.assunto(0, self.ref, False, 3))

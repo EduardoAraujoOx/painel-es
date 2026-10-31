@@ -116,38 +116,14 @@
     atualizarLista();
   }
 
-  let recarregando = false;
-  async function recarregar() {
-    if (recarregando) return;
-    recarregando = true;
-    const botao = $('#recarregar'), aviso = $('#aviso-recarga');
-    botao.disabled = true; botao.textContent = 'Atualizando…'; aviso.textContent = '';
-    try {
-      const r = await fetch('/api/dados?mod=noticias&arq=index', { credentials: 'same-origin', cache: 'no-store' });
-      if (r.status === 401) { PF.mostrarLogin(); return; }
-      if (!r.ok) throw new Error(String(r.status));
-      const novo = await r.json();
-      const antes = new Set(dados.itens.map((i) => i.id));
-      const n = novo.itens.filter((i) => !antes.has(i.id)).length;
-      dados = novo;
-      render();
-      $('#metodo').replaceChildren(metodo());
-      aviso.textContent = n ? `${nInt.format(n)} ${n === 1 ? 'notícia nova' : 'notícias novas'}.` : 'Sem notícias novas desde a última coleta.';
-    } catch (e) {
-      aviso.textContent = 'Não foi possível atualizar agora.';
-    } finally {
-      recarregando = false; botao.disabled = false; botao.textContent = 'Atualizar';
-    }
-  }
-
   function metodo() {
     const falhas = dados.fontes.filter((f) => !f.ok).length;
     const lista = dados.fontes.map((f) => el('li', {}, el('b', {}, f.fonte), ' · ', f.consulta.length > 90 ? f.consulta.slice(0, 90) + '…' : f.consulta, ': ',
       f.ok ? `${nInt.format(f.lidos)} lidas, ${nInt.format(f.aceitos)} aceitas` : el('span', { class: 'noticia-erro' }, 'sem resposta')));
     return el('details', { class: 'cartao noticias-metodo' }, el('summary', {}, 'Fonte e método'),
-      el('p', {}, 'Uma rotina automática consulta, a cada duas horas, o Google Notícias (consultas sobre o governo do Estado, incluindo buscas dentro de veículos que não permitem leitura direta) e os feeds RSS de A Gazeta, Folha Vitória e ES Hoje. O painel guarda apenas título, veículo, data de publicação e link; o texto da matéria fica no site do veículo. Aparecem as notícias publicadas desde a eleição, da mais recente para a mais antiga.'),
+      el('p', {}, 'Uma rotina automática consulta, a cada hora, o Google Notícias (consultas sobre o governo do Estado, incluindo buscas dentro de veículos que não permitem leitura direta) e os feeds RSS de A Gazeta, Folha Vitória e ES Hoje. O painel guarda apenas título, veículo, data de publicação e link; o texto da matéria fica no site do veículo. Aparecem as notícias publicadas desde a eleição, da mais recente para a mais antiga.'),
       el('p', {}, 'Uma notícia entra quando o título cita o governo estadual, um órgão do Estado, a transição ou os nomes acompanhados, ou quando trata de finanças, contratos, pessoal ou controle e menciona o Espírito Santo. Notícias policiais e de acidente só ficam se tiverem também tema de transição, finanças, contratos ou pessoal. Notícia que parece assunto público capixaba mas não cita o Estado (por exemplo, sem o nome do órgão) não é descartada: fica no atalho "Possíveis", fora da capa, dos números e do e-mail, e aparece também nas buscas por palavra. Os temas são marcados por regras de palavras no título (arquivo pipeline/noticias/config.json): servem para indicar onde olhar, podem errar e não substituem a leitura da notícia.'),
-      el('p', {}, 'O Google Notícias não devolve a mesma lista a cada consulta, então uma coleta isolada pode deixar passar matérias; as coletas repetidas se acumulam e reduzem essa perda, mas a lista não é garantidamente completa. O botão Atualizar recarrega o que já foi coletado; ele não dispara uma coleta nova.'),
+      el('p', {}, 'O Google Notícias não devolve a mesma lista a cada consulta, então uma coleta isolada pode deixar passar matérias; as coletas repetidas se acumulam e reduzem essa perda, mas a lista não é garantidamente completa. Para ver a coleta mais recente, basta recarregar a página; "Atualizado em" mostra a última coleta que trouxe novidade.'),
       el('p', {}, `Última coleta com novidades: ${dataHora(dados.gerado_em)} (horário de Brasília). Fontes na última coleta: ${nInt.format(dados.fontes.length - falhas)} de ${nInt.format(dados.fontes.length)} responderam.`),
       el('ul', { class: 'noticias-fontes' }, lista));
   }
@@ -162,7 +138,7 @@
       </div>
       <div class="faixa-noticias">
         <span id="faixa-dados"></span>
-        <span class="faixa-acoes"><span id="atualizado" class="mesref"></span><button id="recarregar" type="button" class="botao">Atualizar</button><span id="aviso-recarga" class="mesref" role="status"></span></span>
+        <span class="faixa-acoes"><span id="atualizado" class="mesref"></span></span>
       </div>
       <div class="cartao">
         <div class="filtros">
@@ -186,7 +162,6 @@
     }
     let t = null;
     $('#busca').addEventListener('input', (ev) => { filtros.busca = ev.target.value; visiveis = POR_VEZ; clearTimeout(t); t = setTimeout(atualizarLista, 150); });
-    $('#recarregar').addEventListener('click', recarregar);
     $('#metodo').replaceChildren(metodo());
     return true;
   }
