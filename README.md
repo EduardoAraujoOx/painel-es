@@ -6,7 +6,7 @@ Painel de acesso restrito para diagnósticos fiscais e de pessoal do Poder Execu
 |---|---|---|
 | `cargos` | Servidores e cargos de confiança: quadro de servidores do Executivo, cargos em comissão e funções gratificadas, custo mensal, tempo na função e a ficha da folha de cada pessoa | em operação |
 | `organograma` | Árvore de unidades de um órgão com as pessoas de cada uma, a condição (sem vínculo efetivo, servidor de carreira, função gratificada) e a remuneração somando carreira e cargo | em operação, com a estrutura oficial de 55 órgãos |
-| `noticias` | Manchetes da imprensa capixaba sobre o governo do Estado e a transição, coletadas a cada hora desde a eleição, com tema por regras de palavras (painel próprio, Notícias) | em operação |
+| `noticias` | Manchetes da imprensa capixaba sobre o governo do Estado e a transição, coletadas a cada hora (das 06h às 22h) desde a eleição, com tema por regras de palavras (painel próprio, Notícias) | em operação |
 | `suspensos` | Contratos do Estado com situação de suspensão, rescisão ou anulação no SIGA e o que mudou desde o levantamento anterior (painel Contratos) | em operação |
 
 ## Módulo `cargos`
@@ -188,7 +188,7 @@ python3 -I pipeline/noticias/coletar.py --dias 7     # recompõe desde a eleiç�
 python3 -I pipeline/noticias/coletar.py --dry-run    # só mostra o resumo
 ```
 
-A rotina roda sozinha a cada hora (aos 17 minutos), pelo GitHub Action `.github/workflows/noticias.yml`, que grava só `data/noticias/` no ramo principal e, com isso, dispara a implantação. Se nada mudou, o coletor não altera o arquivo e não há commit nem implantação; por isso "Atualizado em" mostra a última coleta que trouxe novidade. Também pode ser disparada à mão na aba Actions (com o campo "dias" para carga retroativa). Se nenhuma fonte responder, o arquivo não é alterado e a execução falha; se só algumas falharem, a tela indica quantas fontes responderam na última coleta.
+A rotina roda sozinha a cada hora, aos 17 minutos, das 06h17 às 22h17 (Brasília; sem coleta de madrugada), pelo GitHub Action `.github/workflows/noticias.yml`, que grava só `data/noticias/` no ramo principal e, com isso, dispara a implantação. Se nada mudou nas notícias, o coletor não altera `index.json`, mas sempre grava `verificacao.json` (hora da coleta e quantas notícias novas trouxe): a tela mostra "Última verificação: hora · sem notícias novas" e, ao lado, "Última coleta com novidade", de modo que se vê se o agendador do GitHub falhou ou se só não houve novidade. Isso gera um commit e uma implantação por coleta (17 por dia). Também pode ser disparada à mão na aba Actions (com o campo "dias" para carga retroativa). Se nenhuma fonte responder, o arquivo não é alterado e a execução falha; se só algumas falharem, a tela indica quantas fontes responderam na última coleta.
 
 ### Auditoria do filtro (o que ele descarta)
 

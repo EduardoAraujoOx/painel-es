@@ -8,6 +8,7 @@
   let raiz = null;
   const $ = (s) => raiz.querySelector(s);
   let dados = null;
+  let verificacao = null;
   const POSSIVEIS = '@possiveis';
   const POR_VEZ = 40;
   const DESTAQUES = 4;
@@ -111,7 +112,9 @@
     const confirmadas = dados.itens.filter((i) => !i.possivel);
     const ult24 = confirmadas.filter((i) => new Date(i.data).getTime() >= agora - 86400000).length;
     $('#faixa-dados').replaceChildren(el('b', {}, nInt.format(confirmadas.length)), ` notícias desde a eleição (${dataBR(dados.desde)}) · `, el('b', {}, nInt.format(ult24)), ' nas últimas 24 horas');
-    $('#atualizado').textContent = `Atualizado em ${dataHora(dados.gerado_em)}`;
+    const v = verificacao && verificacao.verificado_em
+      ? `Última verificação: ${dataHora(verificacao.verificado_em)} · ${verificacao.novas ? `${nInt.format(verificacao.novas)} ${verificacao.novas === 1 ? 'notícia nova' : 'notícias novas'}` : 'sem notícias novas'} · ` : '';
+    $('#atualizado').textContent = `${v}Última coleta com novidade: ${dataHora(dados.gerado_em)}`;
     $('#chips').replaceChildren(...chips());
     atualizarLista();
   }
@@ -121,7 +124,7 @@
     const lista = dados.fontes.map((f) => el('li', {}, el('b', {}, f.fonte), ' · ', f.consulta.length > 90 ? f.consulta.slice(0, 90) + '…' : f.consulta, ': ',
       f.ok ? `${nInt.format(f.lidos)} lidas, ${nInt.format(f.aceitos)} aceitas` : el('span', { class: 'noticia-erro' }, 'sem resposta')));
     return el('details', { class: 'cartao noticias-metodo' }, el('summary', {}, 'Fonte e método'),
-      el('p', {}, 'Uma rotina automática consulta, a cada hora, o Google Notícias (consultas sobre o governo do Estado, incluindo buscas dentro de veículos que não permitem leitura direta) e os feeds RSS de A Gazeta, Folha Vitória e ES Hoje. O painel guarda apenas título, veículo, data de publicação e link; o texto da matéria fica no site do veículo. Aparecem as notícias publicadas desde a eleição, da mais recente para a mais antiga.'),
+      el('p', {}, 'Uma rotina automática consulta, a cada hora, das 6h às 22h, o Google Notícias (consultas sobre o governo do Estado, incluindo buscas dentro de veículos que não permitem leitura direta) e os feeds RSS de A Gazeta, Folha Vitória e ES Hoje. O painel guarda apenas título, veículo, data de publicação e link; o texto da matéria fica no site do veículo. Aparecem as notícias publicadas desde a eleição, da mais recente para a mais antiga.'),
       el('p', {}, 'Uma notícia entra quando o título cita o governo estadual, um órgão do Estado, a transição ou os nomes acompanhados, ou quando trata de finanças, contratos, pessoal ou controle e menciona o Espírito Santo. Notícias policiais e de acidente só ficam se tiverem também tema de transição, finanças, contratos ou pessoal. Notícia que parece assunto público capixaba mas não cita o Estado (por exemplo, sem o nome do órgão) não é descartada: fica no atalho "Possíveis", fora da capa, dos números e do e-mail, e aparece também nas buscas por palavra. Os temas são marcados por regras de palavras no título (arquivo pipeline/noticias/config.json): servem para indicar onde olhar, podem errar e não substituem a leitura da notícia.'),
       el('p', {}, 'O Google Notícias não devolve a mesma lista a cada consulta, então uma coleta isolada pode deixar passar matérias; as coletas repetidas se acumulam e reduzem essa perda, mas a lista não é garantidamente completa. Para ver a coleta mais recente, basta recarregar a página; "Atualizado em" mostra a última coleta que trouxe novidade.'),
       el('p', {}, `Última coleta com novidades: ${dataHora(dados.gerado_em)} (horário de Brasília). Fontes na última coleta: ${nInt.format(dados.fontes.length - falhas)} de ${nInt.format(dados.fontes.length)} responderam.`),
@@ -155,6 +158,7 @@
     ctx = contexto;
     raiz = ctx.container;
     raiz.innerHTML = ESQUELETO;
+    try { verificacao = await ctx.api('verificacao'); } catch (e) { verificacao = null; } // opcional: sem o arquivo, a tela mostra só a última coleta com novidade
     try { dados = await ctx.api('index'); } catch (e) {
       if (e.sessao) { PF.mostrarLogin(); return false; }
       $('#lista').replaceChildren(el('p', { class: 'vazio' }, 'Não foi possível carregar as notícias.'));
@@ -166,6 +170,6 @@
     return true;
   }
   function aoNavegar() { if (dados) render(); }
-  function desmontar() { dados = null; visiveis = POR_VEZ; }
+  function desmontar() { dados = null; verificacao = null; visiveis = POR_VEZ; }
   PF.registrar({ id: 'noticias', titulo: 'Notícias', montar, aoNavegar, desmontar });
 })();

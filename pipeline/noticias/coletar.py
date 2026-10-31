@@ -37,6 +37,7 @@ AQUI = Path(__file__).resolve().parent
 RAIZ = AQUI.parents[1]
 CONFIG = AQUI / "config.json"
 SAIDA = RAIZ / "data" / "noticias" / "index.json"
+VERIFICACAO = RAIZ / "data" / "noticias" / "verificacao.json"
 
 AGENTE = "Mozilla/5.0 (compatible; painel-es-noticias/1.0; +https://github.com/EduardoAraujoOx/painel-es)"
 LIMITE_BYTES = 6_000_000
@@ -354,6 +355,9 @@ def main():
     print(f"\n{confirmadas} notícias confirmadas e {len(itens) - confirmadas} possíveis guardadas, {novos} novas confirmadas nesta coleta. Descartes: {descartes}")
     if args.dry_run:
         return
+    # Selo de que a coleta rodou, mesmo sem novidade: a tela mostra "Última verificação" (e o Action publica uma vez por hora)
+    VERIFICACAO.parent.mkdir(parents=True, exist_ok=True)
+    VERIFICACAO.write_text(json.dumps({"verificado_em": iso(hoje), "novas": novos}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     if SAIDA.exists():
         try:
             antes = json.loads(SAIDA.read_text(encoding="utf-8"))

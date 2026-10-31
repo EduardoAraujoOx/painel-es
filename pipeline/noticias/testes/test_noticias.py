@@ -221,6 +221,41 @@ def dados_ficticios(agora):
                       it(4, "Notícia antiga já enviada", ["financas"], 30, 30)]}
 
 
+class Verificacao(unittest.TestCase):
+    """A coleta grava o selo de verificação mesmo quando nada mudou (a tela mostra "Última verificação")."""
+
+    def setUp(self):
+        import sys
+        self.tmp = Path(tempfile.mkdtemp())
+        self.salvo = (coletar.RAIZ, coletar.SAIDA, coletar.VERIFICACAO, coletar.coletar, coletar.agora, sys.argv)
+        coletar.RAIZ, coletar.SAIDA, coletar.VERIFICACAO = self.tmp, self.tmp / "index.json", self.tmp / "verificacao.json"
+        relatorio = [{"fonte": "Falsa", "consulta": "q", "ok": True, "lidos": 0, "aceitos": 0, "possiveis": 0}]
+        coletar.coletar = lambda cfg, dias, descartadas=None: ([], relatorio)
+        sys.argv = ["coletar.py"]
+
+    def tearDown(self):
+        import sys
+        coletar.RAIZ, coletar.SAIDA, coletar.VERIFICACAO, coletar.coletar, coletar.agora, sys.argv = self.salvo
+
+    def rodar(self, hora):
+        coletar.agora = lambda: datetime(2026, 10, 31, hora, 17, tzinfo=UTC)
+        coletar.main()
+        return json.loads(coletar.VERIFICACAO.read_text(encoding="utf-8"))
+
+    def test_grava_o_selo_a_cada_coleta_mesmo_sem_novidade(self):
+        self.assertEqual(self.rodar(12), {"verificado_em": "2026-10-31T12:17:00Z", "novas": 0})
+        antes = coletar.SAIDA.read_text(encoding="utf-8")
+        self.assertEqual(self.rodar(13)["verificado_em"], "2026-10-31T13:17:00Z")
+        self.assertEqual(coletar.SAIDA.read_text(encoding="utf-8"), antes)  # as notícias não mudaram, só o selo
+
+    def test_dry_run_nao_grava_selo(self):
+        import sys
+        sys.argv = ["coletar.py", "--dry-run"]
+        coletar.agora = lambda: datetime(2026, 10, 31, 12, 17, tzinfo=UTC)
+        coletar.main()
+        self.assertFalse(coletar.VERIFICACAO.exists())
+
+
 class Resumo(unittest.TestCase):
     def setUp(self):
         self.ref = datetime(2026, 10, 30, 15, 0, tzinfo=UTC)
