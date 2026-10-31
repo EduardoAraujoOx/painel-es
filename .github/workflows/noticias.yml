@@ -1,4 +1,4 @@
-name: Coleta de notícias (a cada 2 horas)
+name: Coleta de notícias (a cada hora)
 
 on:
   workflow_dispatch:
@@ -13,9 +13,10 @@ on:
         required: false
         default: false
   schedule:
-    # A cada 2 horas, das 06h17 às 20h17 em Brasília (UTC-3). Só há commit e implantação quando surgem notícias novas.
-    # O resumo por e-mail e o levantamento de contratos suspensos saem nas execuções de 08h17, 12h17 e 18h17 (11h, 15h e 21h UTC).
-    - cron: '17 9,11,13,15,17,19,21,23 * * *'
+    # A cada hora, aos 17 minutos. Só há commit e implantação quando surgem notícias novas.
+    # O GitHub costuma pular execuções agendadas, por isso o resumo por e-mail e o levantamento de contratos não dependem de um
+    # horário exato: saem na primeira execução depois de 08h17, 12h17 ou 18h17 (11h17, 15h17 e 21h17 UTC) que ainda não tenha enviado.
+    - cron: '17 * * * *'
 
 permissions:
   contents: write
@@ -46,27 +47,33 @@ jobs:
             python3 -I pipeline/noticias/coletar.py
           fi
 
-      # Contratos suspensos, rescindidos ou anulados (SIGA): leva cerca de 1 minuto, por isso só nos horários do resumo e nos disparos manuais.
+      # Há um horário de resumo vencido (08h17, 12h17 ou 18h17) sem e-mail enviado depois dele? Se sim, esta execução faz o levantamento e o envio.
+      - name: Ver se há resumo vencido
+        id: devido
+        run: echo "sim=$(python3 -I pipeline/noticias/enviar.py --devido)" >> "$GITHUB_OUTPUT"
+
+      # Contratos suspensos, rescindidos ou anulados (SIGA): leva cerca de 1 minuto, por isso só quando há resumo vencido e nos disparos manuais.
       # Roda antes do e-mail para que o resumo já traga o que há de novo. Falha aqui não impede a publicação das notícias.
-      - name: Detectar contratos suspensos (08h17, 12h17 e 18h17, ou disparo manual)
+      - name: Detectar contratos suspensos (resumo vencido ou disparo manual)
         id: suspensos
         continue-on-error: true
         env:
           EVENTO: ${{ github.event_name }}
+          DEVIDO: ${{ steps.devido.outputs.sim }}
         run: |
-          HORA=$(date -u +%H)
-          if [ "$EVENTO" = "workflow_dispatch" ] || { [ "$EVENTO" = "schedule" ] && { [ "$HORA" = "11" ] || [ "$HORA" = "15" ] || [ "$HORA" = "21" ]; }; }; then
+          if [ "$EVENTO" = "workflow_dispatch" ] || { [ "$EVENTO" = "schedule" ] && [ "$DEVIDO" = "sim" ]; }; then
             python3 -I pipeline/contratos/suspensos.py
           else
-            echo "Fora do horário do levantamento: nada a fazer nesta execução."
+            echo "Sem resumo vencido: nada a fazer nesta execução."
           fi
 
       # Falha no e-mail não impede a publicação das notícias; o último passo deixa a execução vermelha para o aviso chegar.
-      - name: Enviar o resumo por e-mail (08h17, 12h17 e 18h17, ou teste manual)
+      - name: Enviar o resumo por e-mail (resumo vencido ou teste manual)
         id: enviar
         continue-on-error: true
         env:
           EVENTO: ${{ github.event_name }}
+          DEVIDO: ${{ steps.devido.outputs.sim }}
           TESTE: ${{ inputs.enviar_teste }}
           NOTICIAS_DESTINATARIOS: ${{ secrets.NOTICIAS_DESTINATARIOS }}
           SMTP_USUARIO: ${{ secrets.SMTP_USUARIO }}
@@ -76,13 +83,12 @@ jobs:
           SMTP_PORTA: ${{ vars.SMTP_PORTA }}
           PAINEL_URL: ${{ vars.PAINEL_URL }}
         run: |
-          HORA=$(date -u +%H)
           if [ "$EVENTO" = "workflow_dispatch" ] && [ "$TESTE" = "true" ]; then
             python3 -I pipeline/noticias/enviar.py --teste
-          elif [ "$EVENTO" = "schedule" ] && { [ "$HORA" = "11" ] || [ "$HORA" = "15" ] || [ "$HORA" = "21" ]; }; then
+          elif [ "$EVENTO" = "schedule" ] && [ "$DEVIDO" = "sim" ]; then
             python3 -I pipeline/noticias/enviar.py
           else
-            echo "Fora do horário do resumo: nada a enviar nesta execução."
+            echo "Sem resumo vencido: nada a enviar nesta execução."
           fi
 
       - name: Gravar no repositório (só data/noticias e data/suspensos; o deploy sai do push)
