@@ -7,6 +7,9 @@ on:
   pull_request:
     paths:
       - 'pipeline/noticias/**'
+      - 'pipeline/contratos/suspensos.py'
+      - 'pipeline/contratos/testes/**'
+      - 'public/modulos/suspensos.js'
       - '.github/workflows/noticias*.yml'
   workflow_dispatch:
 
@@ -27,6 +30,9 @@ jobs:
       - name: Testes (coletor e resumo por e-mail)
         run: python3 -I -m unittest discover -s pipeline/noticias/testes -v
 
+      - name: Testes (detector de contratos suspensos)
+        run: python3 -I -m unittest discover -s pipeline/contratos/testes -v
+
       - name: Coleta real a partir dos servidores do GitHub (sem gravar)
         run: |
           python3 -I pipeline/noticias/coletar.py --dry-run --dias 2 | tee coleta.log
@@ -38,6 +44,11 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
           grep -q "^ok  Google" coleta.log || { echo "::error::O Google Notícias não respondeu a partir do GitHub"; exit 1; }
           grep -E "^FALHA" coleta.log | sed 's/^/::warning::/' || true
+
+      - name: Levantamento real de contratos suspensos, a partir dos servidores do GitHub (sem gravar)
+        run: |
+          python3 -I pipeline/contratos/suspensos.py --dry-run | tee suspensos.log
+          { echo "### Contratos suspensos (simulação, sem gravar)"; echo '```'; head -3 suspensos.log; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Prévia do resumo por e-mail
         env:

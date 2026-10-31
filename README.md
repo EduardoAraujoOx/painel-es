@@ -7,6 +7,7 @@ Painel de acesso restrito para diagnósticos fiscais e de pessoal do Poder Execu
 | `cargos` | Servidores e cargos de confiança: quadro de servidores do Executivo, cargos em comissão e funções gratificadas, custo mensal, tempo na função e a ficha da folha de cada pessoa | em operação |
 | `organograma` | Árvore de unidades de um órgão com as pessoas de cada uma, a condição (sem vínculo efetivo, servidor de carreira, função gratificada) e a remuneração somando carreira e cargo | em operação, com a estrutura oficial de 55 órgãos |
 | `noticias` | Manchetes da imprensa capixaba sobre o governo do Estado e a transição, coletadas a cada 2 horas desde a eleição, com tema por regras de palavras (painel próprio, Notícias) | em operação |
+| `suspensos` | Contratos do Estado com situação de suspensão, rescisão ou anulação no SIGA e o que mudou desde o levantamento anterior (painel Contratos) | em operação |
 
 ## Módulo `cargos`
 
@@ -210,6 +211,28 @@ Para reduzir esse risco por desenho, o filtro tem as seguintes defesas. **Combin
 ### Limites conhecidos
 
 O Google Notícias devolve no máximo 100 resultados por consulta e **não devolve a mesma lista a cada chamada** (a mesma busca trouxe 100 itens numa execução e 69 na seguinte). Uma coleta isolada é, portanto, incompleta; o coletor acumula o que já viu, e a partir da terceira execução seguida o conjunto estabiliza. É por isso que a coleta é frequente e que a carga retroativa deve ser repetida. Feeds que só expõem as últimas 10 a 30 matérias (Folha Vitória, ES Hoje) podem perder itens em dias de muito volume; as buscas por site no Google compensam em parte. O XML dos feeds é tratado como não confiável (recusa declarações de entidades, limita o tamanho) e os links só viram `href` quando são http ou https.
+
+## Módulo `suspensos`
+
+Tela do painel Contratos ("Suspensos e rescindidos") que mostra os instrumentos do Estado cuja situação no cadastro de contratos (SIGA) é de suspensão, rescisão ou anulação/revogação, com o que é novo desde o levantamento anterior. Nasceu do caso da Sejus (27/10/2026), que suspendeu quatro contratos de tecnologia por insuficiência de recursos.
+
+**O cadastro confirma, não antecipa.** Em 30/10 a imprensa já noticiava a suspensão e os contratos da Sejus continuavam como "em execução" no SIGA: o órgão registra a situação depois de decidir. Por isso o detector convive com o módulo Notícias (tema "Restrições e cortes") e não o substitui. A vantagem é o ruído baixo: em onze anos há só 24 contratos suspensos, então cada novo é um evento raro.
+
+### Como funciona
+
+`pipeline/contratos/suspensos.py` baixa os arquivos anuais `Contratos-AAAA.csv` do Portal da Transparência (pacote `portal-da-transparencia-contratos`, atualizado todo dia, cerca de 77 mil contratos, leva cerca de 1 minuto), separa os de situação suspensa, rescindida ou anulada/revogada e compara com o levantamento anterior, guardado em `data/suspensos/index.json`. **Escopo:** suspensos de qualquer ano; rescindidos e anulados/revogados só se celebrados desde 2023 ou com fim de vigência no ano corrente (rescisão antiga não é alerta). **"Novo"** é o que não constava no levantamento anterior ou mudou de situação (suspenso virou rescindido); o primeiro levantamento (30/10/2026) é só a base de comparação e nada nele é marcado como novo. O arquivo guarda ainda a série de contagens, os itens que saíram e o resumo por órgão. Se algum arquivo anual não baixar, nada é alterado, para não confundir ausência com saída.
+
+O Action `noticias.yml` roda o levantamento nos horários do resumo (08h17, 12h17 e 18h17) e nos disparos manuais, antes do e-mail, e só grava quando algo muda. O **resumo por e-mail** ganha um bloco "Contratos suspensos, rescindidos ou anulados" com os novos, e um dia só com contrato novo (sem notícia nova) ainda dispara o envio.
+
+```bash
+python3 -I pipeline/contratos/suspensos.py            # baixa, compara e grava
+python3 -I pipeline/contratos/suspensos.py --dry-run  # só mostra o resumo
+python3 -I -m unittest discover -s pipeline/contratos/testes -v
+```
+
+### Limites
+
+O cadastro depende do registro do órgão e pode atrasar em relação à decisão. Os instrumentos incluem contratos, ordens de fornecimento e autorizações de compra, de valores muito diferentes. A lista não avalia a regularidade de nenhuma suspensão: indica onde olhar.
 
 ## Acesso e implantação (Vercel)
 
