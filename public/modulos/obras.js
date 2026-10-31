@@ -9,7 +9,7 @@
   let raiz = null;
   const $ = (s) => raiz.querySelector(s);
   let dados = null;
-  const filtros = { tipo: 'paralisada', busca: '', novos: false };
+  const filtros = { tipo: '', busca: '', novos: false, recentes: true }; // por padrão, só o que é recente (desde o corte); o estoque antigo fica nos outros atalhos
   const POR_VEZ = 40;
   let visiveis = POR_VEZ;
   const TIPOS = { paralisada: 'Paralisadas', rescindida: 'Contrato rescindido' };
@@ -23,6 +23,7 @@
     const termos = norm(filtros.busca).split(/\s+/).filter(Boolean);
     const novos = new Set(dados.novos);
     return dados.itens.filter((i) => {
+      if (filtros.recentes && i.data_situacao < dados.desde) return false;
       if (filtros.novos) return novos.has(i.id) && (!termos.length || termos.every((x) => norm([i.objeto, i.orgao, i.municipio, i.empresa, i.contrato].join(' ')).includes(x)));
       if (filtros.tipo && i.tipo !== filtros.tipo) return false;
       if (termos.length) { const t = norm([i.objeto, i.descricao, i.orgao, i.municipio, i.empresa, i.contrato].join(' ')); if (!termos.every((x) => t.includes(x))) return false; }
@@ -75,14 +76,19 @@
       kpi('Paralisadas desde ' + dataBR(dados.desde), nInt.format(d.paralisada), d.paralisada ? 'registradas no portal depois do primeiro turno' : 'nenhuma registrada no portal desde então', d.paralisada > 0),
       kpi('Contrato rescindido', nInt.format(c.rescindida), `${d.rescindida ? nInt.format(d.rescindida) + ' desde ' + dataBR(dados.desde) : 'nenhuma desde ' + dataBR(dados.desde)}`),
       kpi('Paralisada há mais tempo', maisAntiga ? String(anosDesde(maisAntiga.data_situacao)) + ' anos' : '—', maisAntiga ? `desde ${dataBR(maisAntiga.data_situacao)}` : ''));
-    $('#chips').replaceChildren(...Object.entries(TIPOS).map(([k, r]) =>
-      el('button', { type: 'button', class: 'chip', 'aria-pressed': String(filtros.tipo === k && !filtros.novos), onclick: () => { filtros.tipo = k; filtros.novos = false; visiveis = POR_VEZ; render(); } }, r, el('small', {}, nInt.format(c[k])))),
-    el('button', { type: 'button', class: 'chip', 'aria-pressed': String(filtros.novos), onclick: () => { filtros.novos = !filtros.novos; visiveis = POR_VEZ; render(); } }, 'Só as novas', el('small', {}, nInt.format(dados.novos.length))));
+    const recentes = d.paralisada + d.rescindida;
+    $('#chips').replaceChildren(
+      el('button', { type: 'button', class: 'chip', 'aria-pressed': String(filtros.recentes && !filtros.novos), onclick: () => { filtros.recentes = true; filtros.tipo = ''; filtros.novos = false; visiveis = POR_VEZ; render(); } }, `Desde ${dataBR(dados.desde)}`, el('small', {}, nInt.format(recentes))),
+      ...Object.entries(TIPOS).map(([k, r]) =>
+        el('button', { type: 'button', class: 'chip', title: 'Estoque: obras que o portal registra nessa situação em qualquer data', 'aria-pressed': String(!filtros.recentes && filtros.tipo === k && !filtros.novos), onclick: () => { filtros.recentes = false; filtros.tipo = k; filtros.novos = false; visiveis = POR_VEZ; render(); } }, `${r} (todas as datas)`, el('small', {}, nInt.format(c[k])))),
+      el('button', { type: 'button', class: 'chip', 'aria-pressed': String(filtros.novos), onclick: () => { filtros.novos = !filtros.novos; filtros.recentes = false; visiveis = POR_VEZ; render(); } }, 'Só as novas', el('small', {}, nInt.format(dados.novos.length))));
     const lista = filtrar();
-    $('#resumo').textContent = `${nInt.format(lista.length)} ${lista.length === 1 ? 'obra' : 'obras'}, agrupadas pelo ano da situação, da mais recente para a mais antiga`;
+    $('#resumo').textContent = `${nInt.format(lista.length)} ${lista.length === 1 ? 'obra' : 'obras'}${filtros.recentes ? ` com situação registrada desde ${dataBR(dados.desde)}` : ''}, agrupadas pelo ano da situação, da mais recente para a mais antiga`;
     const pedaco = lista.slice(0, visiveis);
     $('#lista').replaceChildren(
-      ...(lista.length ? porAno(pedaco, novos) : [el('p', { class: 'vazio' }, 'Nenhuma obra corresponde ao filtro.')]),
+      ...(lista.length ? porAno(pedaco, novos) : [el('p', { class: 'vazio' }, filtros.recentes && !filtros.busca
+        ? `Nenhuma obra entrou em paralisação ou rescisão no portal desde ${dataBR(dados.desde)}. O que já estava nessas situações (${nInt.format(c.paralisada)} paralisadas e ${nInt.format(c.rescindida)} com contrato rescindido, todas anteriores a 2025) está nos atalhos "todas as datas". As paralisações recentes publicadas no Diário Oficial estão na tela "Contratos recentes".`
+        : 'Nenhuma obra corresponde ao filtro.')]),
       lista.length > visiveis ? el('div', { class: 'ferramentas' }, el('button', { type: 'button', class: 'botao', onclick: () => { visiveis += POR_VEZ; render(); } }, `Mostrar mais (${nInt.format(lista.length - visiveis)} restantes)`)) : null);
   }
 
