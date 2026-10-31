@@ -38,6 +38,7 @@ ANO_INICIAL = 2016
 LIMITE_BYTES = 40_000_000
 MAX_SAIDAS = 200
 MAX_SERIE = 400
+LIMITE_MASSA = 20  # a partir de quantos instrumentos vale a trava contra "tudo novo de uma vez"
 
 
 def agora():
@@ -106,6 +107,12 @@ def ler_csv(dados, ano):
         yield {**linha, "_ano": ano}
 
 
+def chave(it):
+    """Identidade estável do instrumento: o campo Id do SIGA é renumerado a cada publicação do arquivo (o mesmo contrato mudou de 62778 para 45536
+    de um dia para o outro), então não serve. Vale órgão, tipo e número do documento, CNPJ do fornecedor e data de celebração."""
+    return "|".join([str(it.get("orgao_id") or ""), it.get("documento") or "", it.get("tipo") or "", it.get("cnpj") or "", it.get("celebracao") or ""])
+
+
 def extrair(linhas, ano_corrente):
     itens = {}
     for r in linhas:
@@ -115,21 +122,22 @@ def extrair(linhas, ano_corrente):
         cel, fim = data_iso(r.get("DataCelebracao")), data_iso(r.get("DataFimVigencia"))
         if not relevante(cat, cel, fim, ano_corrente):
             continue
-        i = str(r.get("Id") or f"{r.get('IdOrgao')}|{r.get('NumeroDocumento')}")
-        itens[i] = {
-            "id": i, "orgao": (r.get("NomeOrgao") or "").strip(), "orgao_id": str(r.get("IdOrgao") or ""),
+        item = {
+            "orgao": (r.get("NomeOrgao") or "").strip(), "orgao_id": str(r.get("IdOrgao") or ""),
             "documento": (r.get("NumeroDocumento") or "").strip(), "tipo": (r.get("TipoDocumento") or "").strip(),
             "fornecedor": (r.get("Fornecedor") or "").strip(), "cnpj": (r.get("CnpjFornecedor") or "").strip(),
             "objeto": re.sub(r"\s+", " ", (r.get("Objeto") or "")).strip()[:300],
             "valor_inicial": valor_br(r.get("ValorInicial")), "valor_final": valor_br(r.get("ValorFinal")),
             "celebracao": cel, "fim": fim, "situacao": (r.get("Situacao") or "").strip(), "categoria": cat, "ano": str(r.get("_ano")),
         }
+        i = chave(item)
+        itens[i] = {"id": i, **item}
     return itens
 
 
 def comparar(atuais, anterior, hoje):
     """Aplica `visto_em` (primeira vez em que o detector viu o item) e acha o que entrou e o que saiu desde o levantamento anterior."""
-    antes = {i["id"]: i for i in (anterior or {}).get("itens", [])}
+    antes = {chave(i): i for i in (anterior or {}).get("itens", [])}  # pela identidade natural, não pelo id gravado (que pode ser de outra regra)
     baseline = not anterior
     novos, saidas = [], list((anterior or {}).get("saidas", []))
     for i, it in atuais.items():
@@ -146,6 +154,14 @@ def comparar(atuais, anterior, hoje):
     for i, velho in antes.items():
         if i not in atuais:
             saidas.append({**velho, "saiu_em": iso(hoje)})
+    sairam = sum(1 for i in antes if i not in atuais)
+    if not baseline and len(atuais) >= LIMITE_MASSA and len(novos) > len(atuais) / 2 and sairam > len(antes) / 2:
+        # Mais da metade entrando E mais da metade saindo ao mesmo tempo é a assinatura de troca na forma de identificar os contratos, não de decisão
+        # de governo (suspensão em massa real teria entradas sem saídas correspondentes). Trata como nova base de comparação.
+        print(f"AVISO: {len(novos)} de {len(atuais)} apareceriam como novos e {sairam} de {len(antes)} como saídas de uma vez; tratado como nova base (nada é marcado como novo)")
+        for i in novos:
+            atuais[i]["visto_em"] = (antes.get(i) or {}).get("visto_em")
+        return [], list((anterior or {}).get("saidas", []))[-MAX_SAIDAS:], baseline
     return novos, saidas[-MAX_SAIDAS:], baseline
 
 
