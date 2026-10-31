@@ -13,7 +13,7 @@ on:
         required: false
         default: false
   schedule:
-    # A cada hora, aos 17 minutos. Só há commit e implantação quando surgem notícias novas.
+    # A cada hora, aos 17 minutos. Cada coleta grava data/noticias/verificacao.json (a tela mostra "Última verificação"), então há um commit e uma implantação por hora.
     # O GitHub costuma pular execuções agendadas, por isso o resumo por e-mail e o levantamento de contratos não dependem de um
     # horário exato: saem na primeira execução depois de 08h17, 12h17 ou 18h17 (11h17, 15h17 e 21h17 UTC) que ainda não tenha enviado.
     - cron: '17 * * * *'

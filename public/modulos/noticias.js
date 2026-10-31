@@ -8,6 +8,7 @@
   let raiz = null;
   const $ = (s) => raiz.querySelector(s);
   let dados = null;
+  let verificacao = null;
   const POSSIVEIS = '@possiveis';
   const POR_VEZ = 40;
   const DESTAQUES = 4;
@@ -111,7 +112,9 @@
     const confirmadas = dados.itens.filter((i) => !i.possivel);
     const ult24 = confirmadas.filter((i) => new Date(i.data).getTime() >= agora - 86400000).length;
     $('#faixa-dados').replaceChildren(el('b', {}, nInt.format(confirmadas.length)), ` notícias desde a eleição (${dataBR(dados.desde)}) · `, el('b', {}, nInt.format(ult24)), ' nas últimas 24 horas');
-    $('#atualizado').textContent = `Atualizado em ${dataHora(dados.gerado_em)}`;
+    const v = verificacao && verificacao.verificado_em
+      ? `Última verificação: ${dataHora(verificacao.verificado_em)} · ${verificacao.novas ? `${nInt.format(verificacao.novas)} ${verificacao.novas === 1 ? 'notícia nova' : 'notícias novas'}` : 'sem notícias novas'} · ` : '';
+    $('#atualizado').textContent = `${v}Última coleta com novidade: ${dataHora(dados.gerado_em)}`;
     $('#chips').replaceChildren(...chips());
     atualizarLista();
   }
@@ -155,6 +158,7 @@
     ctx = contexto;
     raiz = ctx.container;
     raiz.innerHTML = ESQUELETO;
+    try { verificacao = await ctx.api('verificacao'); } catch (e) { verificacao = null; } // opcional: sem o arquivo, a tela mostra só a última coleta com novidade
     try { dados = await ctx.api('index'); } catch (e) {
       if (e.sessao) { PF.mostrarLogin(); return false; }
       $('#lista').replaceChildren(el('p', { class: 'vazio' }, 'Não foi possível carregar as notícias.'));
@@ -166,6 +170,6 @@
     return true;
   }
   function aoNavegar() { if (dados) render(); }
-  function desmontar() { dados = null; visiveis = POR_VEZ; }
+  function desmontar() { dados = null; verificacao = null; visiveis = POR_VEZ; }
   PF.registrar({ id: 'noticias', titulo: 'Notícias', montar, aoNavegar, desmontar });
 })();
