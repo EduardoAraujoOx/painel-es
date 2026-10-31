@@ -102,10 +102,11 @@ class OutrasPracas(unittest.TestCase):
         self.assertEqual(self.decide("Governo estadual fixa prazos no ES", "Portal Qualquer")[0], "confirmada")
 
     def test_termos_especificos_do_es_seguem_confirmando_em_qualquer_fonte(self):
-        for t in ("Cesan anuncia reajuste da tarifa", "Palácio Anchieta divulga nova secretária", "TCE-ES aponta falhas em contratos"):
+        for t in ("Cesan anuncia reajuste da tarifa", "Palácio Anchieta divulga nova secretária", "TCE-ES aponta falhas em contratos", "Banestes anuncia concurso público"):
             self.assertEqual(self.decide(t, "Portal Qualquer")[0], "confirmada", t)
+            self.assertEqual(self.decide(t, "Jornal de Brasília")[0], "confirmada", t)  # nem o veículo de outra praça derruba o que é inequivocamente do ES
 
-    def test_guardado_antes_das_regras_e_reavaliado_uma_vez(self):
+    def test_guardado_antes_das_regras_so_perde_o_de_outra_praca_e_uma_vez(self):
         tmp = Path(tempfile.mkdtemp()); coletar.SAIDA = tmp / "index.json"
         hoje = datetime(2026, 10, 31, 15, 0, tzinfo=UTC)
         def guardado(i, titulo, veiculo):
@@ -117,7 +118,7 @@ class OutrasPracas(unittest.TestCase):
         itens, _ = coletar.consolidar(CFG, [], hoje)
         por_id = {i["id"]: i for i in itens}
         self.assertNotIn("id1", por_id)  # outra praça: sai
-        self.assertTrue(por_id["id2"]["possivel"])  # genérico sem âncora: vira possível
+        self.assertFalse(por_id["id2"]["possivel"])  # genérico sem âncora: a migração não rebaixa (não sabe se veio de fonte capixaba)
         self.assertFalse(por_id["id3"]["possivel"])  # tem âncora do ES: fica
         self.assertTrue(all(i["triagem"] == coletar.TRIAGEM for i in itens))
         # segunda passada: já marcados, não são reavaliados (não oscila a cada coleta)

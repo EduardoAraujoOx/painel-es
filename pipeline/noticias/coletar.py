@@ -214,7 +214,8 @@ def decidir(cfg, titulo, veiculo, F, regional=False):
         return "descartada", "outro_estado"
     capixaba = regional or normalizar(veiculo) in F["locais"]
     # veículo de outra praça (Natal, Bahia...) cujo título não cita nada do ES: é notícia daquele estado, mesmo que diga "governo estadual"
-    if not capixaba and casa(F["outra_praca"], normalizar(veiculo)) and not casa(F["ancoras"], n):
+    # (termo específico do ES, como Cesan, Banestes ou TCE-ES, mantém a notícia mesmo em veículo de fora: confirma logo abaixo)
+    if not capixaba and casa(F["outra_praca"], normalizar(veiculo)) and not casa(F["ancoras"], n) and not casa(F["gate"], n):
         return "descartada", "veiculo_outra_praca"
     if normalizar(veiculo) in F["oficiais"]:
         return "confirmada", "fonte_oficial"
@@ -321,14 +322,12 @@ def consolidar(cfg, coletados, hoje):
         if datetime.fromisoformat(it["data"].replace("Z", "+00:00")) < corte:
             continue
         if it.get("triagem") != TRIAGEM:
-            # migração única das regras de praça: o que foi guardado antes delas é reavaliado uma vez (só pelos dois motivos novos) e marcado
+            # migração única: o que foi guardado antes das regras de praça é reavaliado uma vez e marcado. Só se tira o que vem de veículo de outra praça
+            # (decidido pelo nome do veículo e pelo título). Não se rebaixa por "genérico sem âncora": o item guardado não diz se veio de feed ou busca
+            # restrita a site capixaba, e rebaixar errado esconderia notícia boa; a regra vale para o que for coletado daqui em diante.
             it["triagem"] = TRIAGEM
-            if not it.get("possivel"):
-                motivo = decidir(cfg, it["titulo"], it["veiculo"], F)[1]
-                if motivo == "veiculo_outra_praca":
-                    continue  # notícia de outro estado que a regra antiga deixou entrar
-                if motivo == "generico_sem_ancora":
-                    it["possivel"] = True
+            if not it.get("possivel") and decidir(cfg, it["titulo"], it["veiculo"], F)[1] == "veiculo_outra_praca":
+                continue
         it["temas"] = temas_de(cfg, it["titulo"], compilados)  # recalcula: mudar o config vale para o que já foi guardado
         if casa(ruido, normalizar(it["titulo"])) and not (set(it["temas"]) & salvo):
             continue  # notícia policial ou de acidente sem tema de atenção
