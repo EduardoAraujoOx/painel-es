@@ -1,6 +1,6 @@
 {
  "ref": "2026-10-31",
- "gerado_em": "2026-10-31T15:17:12Z",
+ "gerado_em": "2026-10-31T16:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 20,
-   "aceitos": 16,
+   "lidos": 17,
+   "aceitos": 15,
    "possiveis": 0
   },
   {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 44,
-   "aceitos": 36,
+   "aceitos": 34,
    "possiveis": 0
   },
   {
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 12,
-   "aceitos": 12,
+   "lidos": 11,
+   "aceitos": 11,
    "possiveis": 0
   },
   {
@@ -57,7 +57,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -81,23 +81,23 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 2,
+   "lidos": 9,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 96,
    "aceitos": 11,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 69,
+   "lidos": 68,
    "aceitos": 6,
    "possiveis": 5
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -145,24 +145,24 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 27,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 55,
-   "aceitos": 8,
+   "aceitos": 9,
    "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
-   "aceitos": 0,
+   "lidos": 59,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -178,8 +178,8 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
-   "possiveis": 0
+   "aceitos": 0,
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -206,18 +206,42 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 348,
-  "veiculo_excluido": 33,
+  "sem_contexto": 343,
+  "veiculo_excluido": 32,
   "possivel": 19,
-  "sem_contexto_com_tema": 8,
-  "excluir": 5,
-  "outro_estado": 29,
+  "sem_contexto_com_tema": 9,
+  "excluir": 4,
+  "outro_estado": 30,
   "caixa_alta": 5,
-  "sigla_sem_ancora": 15
+  "sigla_sem_ancora": 14
  },
  "itens": [
+  {
+   "id": "9b723624f8d4",
+   "titulo": "Quer viajar sem fazer dívidas? Veja como planejar gastos com antecedência",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/quer-viajar-sem-fazer-dividas-veja-como-planejar-gastos-com-antecedencia/",
+   "data": "2026-10-31T16:02:38Z",
+   "coletado_em": "2026-10-31T16:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "55a704f97570",
+   "titulo": "Detran-ES convoca suplentes da CNH Social e DF alerta para golpe",
+   "veiculo": "ncnews.com.br",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVVNxeThMcEVsa1dBT3RGMVlGakZ6MEN0X0FXTXUxYjJfdHk5NXNoTVRsbW5WNjI5cWZLRnVRcUFnRVhDU3VfQkFDN0VOUTVpMTlFMXpKalVPa3dNcmNhTGVhZkxLVk5YcEV3SVJqbnFjckIyNXVGcUNOeklNRE1pMjdtRndobkZubVNZcDdiX2hqZw?oc=5",
+   "data": "2026-10-31T15:01:17Z",
+   "coletado_em": "2026-10-31T16:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "temas": []
+  },
   {
    "id": "baaa3650cadc",
    "titulo": "Craque Neto pede desculpas aos fãs do BTS após ser cancelado",
