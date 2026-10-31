@@ -55,6 +55,13 @@ jobs:
             python3 -I pipeline/noticias/coletar.py
           fi
 
+      # Atos de contrato no Diário Oficial (paralisação, suspensão, rescisão...): lê só as edições novas (e as de hoje e de ontem), leva segundos.
+      # Roda a cada coleta, antes do e-mail, para o resumo já trazer o que saiu. Falha aqui não impede a publicação das notícias.
+      - name: Ler o Diário Oficial (atos de contrato)
+        id: diario
+        continue-on-error: true
+        run: python3 -I pipeline/diario/coletar.py
+
       # Há um horário de resumo vencido (08h17, 12h17 ou 18h17) sem e-mail enviado depois dele? Se sim, esta execução faz o levantamento e o envio.
       - name: Ver se há resumo vencido
         id: devido
@@ -102,14 +109,14 @@ jobs:
             echo "Sem resumo vencido: nada a enviar nesta execução."
           fi
 
-      - name: Gravar no repositório (só data/noticias e data/suspensos; o deploy sai do push)
+      - name: Gravar no repositório (só data/noticias, data/suspensos e data/atos; o deploy sai do push)
         run: |
-          if [ -z "$(git status --porcelain -- data/noticias data/suspensos)" ]; then
+          if [ -z "$(git status --porcelain -- data/noticias data/suspensos data/atos)" ]; then
             echo "Sem mudanças."; exit 0
           fi
           git config user.name "coleta-noticias"
           git config user.email "coleta-noticias@users.noreply.github.com"
-          git add data/noticias data/suspensos
+          git add data/noticias data/suspensos data/atos
           git commit -m "dados: notícias e contratos de $(date -u +%F)"
           for tentativa in 1 2 3; do
             git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
@@ -117,8 +124,8 @@ jobs:
           done
           echo "Não foi possível enviar a coleta."; exit 1
 
-      - name: Avisar se o e-mail ou o levantamento de contratos falhou
-        if: steps.enviar.outcome == 'failure' || steps.suspensos.outcome == 'failure'
+      - name: Avisar se o e-mail, o levantamento de contratos ou a leitura do Diário falhou
+        if: steps.enviar.outcome == 'failure' || steps.suspensos.outcome == 'failure' || steps.diario.outcome == 'failure'
         run: |
-          echo "O resumo por e-mail ou o levantamento de contratos suspensos falhou (veja os passos acima). As notícias foram publicadas normalmente."
+          echo "O resumo por e-mail, o levantamento de contratos suspensos ou a leitura do Diário Oficial falhou (veja os passos acima). As notícias foram publicadas normalmente."
           exit 1

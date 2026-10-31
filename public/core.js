@@ -191,6 +191,7 @@
       { mod: 'contratacoes', rotulo: 'Visão do governo', casa: (r) => !/^(diagnostico|revisao|relatorio)/.test(r) },
       { mod: 'contratacoes', sub: 'diagnostico', rotulo: 'Contratos principais', casa: (r) => /^diagnostico/.test(r) },
       { mod: 'fimmandato', rotulo: 'Fim de mandato' },
+      { mod: 'atos', rotulo: 'Contratos recentes' },
       { mod: 'suspensos', rotulo: 'Suspensos e rescindidos' },
       { mod: 'contratacoes', sub: 'revisao', rotulo: 'Lista de revisão', selo: 'revisao', casa: (r) => /^(revisao|relatorio)/.test(r) }] },
     { id: 'fundos', rotulo: 'Fundos', itens: [

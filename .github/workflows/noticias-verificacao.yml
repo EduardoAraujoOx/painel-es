@@ -10,6 +10,8 @@ on:
       - 'pipeline/contratos/suspensos.py'
       - 'pipeline/contratos/testes/**'
       - 'public/modulos/suspensos.js'
+      - 'pipeline/diario/**'
+      - 'public/modulos/atos.js'
       - '.github/workflows/noticias*.yml'
   workflow_dispatch:
 
@@ -33,6 +35,9 @@ jobs:
       - name: Testes (detector de contratos suspensos)
         run: python3 -I -m unittest discover -s pipeline/contratos/testes -v
 
+      - name: Testes (Diário Oficial)
+        run: python3 -I -m unittest discover -s pipeline/diario/testes -v
+
       - name: Coleta real a partir dos servidores do GitHub (sem gravar)
         run: |
           python3 -I pipeline/noticias/coletar.py --dry-run --dias 2 | tee coleta.log
@@ -49,6 +54,11 @@ jobs:
         run: |
           python3 -I pipeline/contratos/suspensos.py --dry-run | tee suspensos.log
           { echo "### Contratos suspensos (simulação, sem gravar)"; echo '```'; head -3 suspensos.log; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Leitura real do Diário Oficial, a partir dos servidores do GitHub (sem gravar)
+        run: |
+          python3 -I pipeline/diario/coletar.py --dry-run | tee diario.log
+          { echo "### Diário Oficial (simulação, sem gravar)"; echo '```'; head -3 diario.log; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Prévia do resumo por e-mail
         env:
