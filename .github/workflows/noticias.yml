@@ -101,6 +101,24 @@ jobs:
             echo "Sem resumo vencido: nada a fazer nesta execução."
           fi
 
+      # Cruza os atos do Diário (data/atos) com o SIGA e o Portal de Obras: mostra onde o Diário está na frente do cadastro. Baixa os arquivos anuais do SIGA
+      # que os atos citam (cerca de 1 minuto). Roda depois das obras, na mesma regra (resumo vencido ou disparo manual).
+      - name: Cruzar os atos do Diário com o SIGA e o Portal de Obras (resumo vencido ou disparo manual)
+        id: cruzamento
+        continue-on-error: true
+        env:
+          EVENTO: ${{ github.event_name }}
+          DEVIDO: ${{ steps.devido.outputs.sim }}
+          AGENDADO: ${{ inputs.agendado }}
+        run: |
+          # disparo manual (sem agendado): sempre; agendado (GitHub ou externo): só com resumo vencido
+          if { [ "$EVENTO" = "workflow_dispatch" ] && [ "$AGENDADO" != "true" ]; } || { [ "$DEVIDO" = "sim" ] && { [ "$EVENTO" = "schedule" ] || [ "$AGENDADO" = "true" ]; }; }; then
+            python3 -I pipeline/cruzamento/cruzar.py
+          else
+            echo "Sem resumo vencido: nada a fazer nesta execução."
+          fi
+
+
       # Falha no e-mail não impede a publicação das notícias; o último passo deixa a execução vermelha para o aviso chegar.
       - name: Enviar o resumo por e-mail (resumo vencido ou teste manual)
         id: enviar
@@ -142,8 +160,8 @@ jobs:
           done
           echo "Não foi possível enviar a coleta."; exit 1
 
-      - name: Avisar se o e-mail, o levantamento de contratos, a leitura do Diário ou a das obras falhou
-        if: steps.enviar.outcome == 'failure' || steps.suspensos.outcome == 'failure' || steps.diario.outcome == 'failure' || steps.obras.outcome == 'failure'
+      - name: Avisar se o e-mail, o levantamento de contratos, a leitura do Diário, a das obras ou o cruzamento falhou
+        if: steps.enviar.outcome == 'failure' || steps.suspensos.outcome == 'failure' || steps.diario.outcome == 'failure' || steps.obras.outcome == 'failure' || steps.cruzamento.outcome == 'failure'
         run: |
-          echo "O resumo por e-mail, o levantamento de contratos suspensos ou a leitura do Diário Oficial ou a das obras falhou (veja os passos acima). As notícias foram publicadas normalmente."
+          echo "O resumo por e-mail, o levantamento de contratos suspensos ou a leitura do Diário Oficial, a das obras ou o cruzamento falhou (veja os passos acima). As notícias foram publicadas normalmente."
           exit 1

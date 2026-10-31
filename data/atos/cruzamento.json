@@ -1,0 +1,182 @@
+{
+ "gerado_em": "2026-10-31T18:56:11Z",
+ "resumo": {
+  "total": 24,
+  "com_siga": 5,
+  "registrado": 2,
+  "nao_registrado": 3,
+  "nao_encontrado": 14
+ },
+ "itens": {
+  "2051735": {
+   "siga": null,
+   "leitura": "nao_encontrado",
+   "obras": null
+  },
+  "2051224": {
+   "siga": null,
+   "leitura": "nao_encontrado",
+   "obras": null
+  },
+  "2051082": {
+   "siga": null,
+   "leitura": null,
+   "obras": null
+  },
+  "2051081": {
+   "siga": null,
+   "leitura": null,
+   "obras": null
+  },
+  "2050506": {
+   "siga": {
+    "documento": "Contrato 2026.000093.42101.01/2026",
+    "fornecedor": "LIVE SOLUCOES LTDA",
+    "orgao": "SECRETARIA DE ESTADO DA EDUCAÇÃO",
+    "situacao": "Instrumento Contratual Publicado",
+    "categoria": null,
+    "valor": 6207278.19,
+    "celebracao": "2026-04-28",
+    "objeto": "Contratação de empresa especializada para serviço de engenharia de implantação de Ambientes de Rápida Implantação (ARI) com marquises, ambos em estrutura metálica, visando atender às demandas urgente ",
+    "como": "número e ano, com o órgão"
+   },
+   "leitura": "nao_registrado",
+   "obras": null
+  },
+  "2049848": {
+   "siga": null,
+   "leitura": "nao_encontrado",
+   "obras": null
+  },
+  "2048666": {
+   "siga": {
+    "documento": "CONTRATO/SEDU/00061/2021",
+    "fornecedor": "DON CONSULTORIA EM GESTAO EMPRESARIAL EDUCACIONAL LTDA",
+    "orgao": "SECRETARIA DE ESTADO DA EDUCAÇÃO",
+    "situacao": "CELEBRADO",
+    "categoria": null,
+    "valor": 139000.0,
+    "celebracao": "2021-10-15",
+    "objeto": "Contratação de empresa especializada na elaboração e produção de conteúdo didático-pedagógico digital para formação de professores on-line que visa o desenvolvimento de competências para atuação docen",
+    "como": "número e ano, com o órgão"
+   },
+   "leitura": "nao_registrado",
+   "obras": null
+  },
+  "2046176": {
+   "siga": null,
+   "leitura": "nao_encontrado",
+   "obras": null
+  },
+  "2045999": {
+   "siga": null,
+   "leitura": "nao_encontrado",
+   "obras": null
+  },
+  "2045924": {
+   "siga": {
+    "documento": "Contrato 2024.000094.42101.01/2024",
+    "fornecedor": "SUENGE ENGENHARIA LTDA",
+    "orgao": "SECRETARIA DE ESTADO DA EDUCAÇÃO",
+    "situacao": "Instrumento Contratual em Execução",
+    "categoria": null,
+    "valor": 8017949.96,
+    "celebracao": "2024-05-09",
+    "objeto": "Contratação de empresa especializada em serviços de engenharia para execução de reforma e ampliação na EEEFM Vila Regência, localizada no município de Linhares/ES, com fornecimento de mão de obra e ma",
+    "como": "número e ano, com o órgão"
+   },
+   "leitura": "nao_registrado",
+   "obras": null
+  },
+  "2045816": {
+   "siga": null,
+   "leitura": "nao_encontrado",
+   "obras": null
+  },
+  "2045526": {
+   "siga": null,
+   "leitura": "nao_encontrado",
+   "obras": null
+  },
+  "2045321": {
+   "siga": null,
+   "leitura": null,
+   "obras": null
+  },
+  "2045312": {
+   "siga": null,
+   "leitura": null,
+   "obras": null
+  },
+  "2045308": {
+   "siga": {
+    "documento": "Contrato 2024.000137.44928.01/2024",
+    "fornecedor": "MULTIPLA CONSULTORIA TREINAMENTOS E EVENTOS LTDA - ME",
+    "orgao": "SUPERINTENDÊNCIA REGIONAL DE SAÚDE DE COLATINA",
+    "situacao": "Rescisão Contratual",
+    "categoria": "rescindido",
+    "valor": 576000.0,
+    "celebracao": "2024-12-11",
+    "objeto": "REGISTRO DE PREÇOS PARA PRESTAÇÃO DE SERVIÇOS:DE PSICÓLOGO E EQUOTERAPIA NO MUNICÍPIO DE COLATINA",
+    "como": "código do contrato"
+   },
+   "leitura": "registrado",
+   "obras": null
+  },
+  "2045299": {
+   "siga": {
+    "documento": "Contrato 2025.000029.44928.01/2025",
+    "fornecedor": "FERNANDO BUENO FRANCO VASQUES DE MIRANDA- ME",
+    "orgao": "SUPERINTENDÊNCIA REGIONAL DE SAÚDE DE COLATINA",
+    "situacao": "Rescisão Contratual",
+    "categoria": "rescindido",
+    "valor": 89352.0,
+    "celebracao": "2025-04-24",
+    "objeto": "REGISTRO DE PREÇOS COM CONTRATO PARA AQUISIÇÃO DE TRATAMENTO COM TERAPIA PELO MÉTODO ABA COM FORNECIMENTO PARA O MUNICIPIO DE LINHARES, PARA ATENDER MANDADO JUDICIAL EMFAVOR DE A.A.",
+    "como": "código do contrato"
+   },
+   "leitura": "registrado",
+   "obras": null
+  },
+  "2043761": {
+   "siga": null,
+   "leitura": "nao_encontrado",
+   "obras": null
+  },
+  "2043362": {
+   "siga": null,
+   "leitura": "nao_encontrado",
+   "obras": null
+  },
+  "2043360": {
+   "siga": null,
+   "leitura": "nao_encontrado",
+   "obras": null
+  },
+  "2043358": {
+   "siga": null,
+   "leitura": "nao_encontrado",
+   "obras": null
+  },
+  "2043354": {
+   "siga": null,
+   "leitura": "nao_encontrado",
+   "obras": null
+  },
+  "2042497": {
+   "siga": null,
+   "leitura": null,
+   "obras": null
+  },
+  "2038228": {
+   "siga": null,
+   "leitura": "nao_encontrado",
+   "obras": null
+  },
+  "2038084": {
+   "siga": null,
+   "leitura": "nao_encontrado",
+   "obras": null
+  }
+ }
+}

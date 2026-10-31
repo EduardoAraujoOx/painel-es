@@ -14,6 +14,7 @@ on:
       - 'public/modulos/atos.js'
       - 'pipeline/obras/**'
       - 'public/modulos/obras.js'
+      - 'pipeline/cruzamento/**'
       - '.github/workflows/noticias*.yml'
   workflow_dispatch:
 
@@ -43,6 +44,9 @@ jobs:
       - name: Testes (obras)
         run: python3 -I -m unittest discover -s pipeline/obras/testes -v
 
+      - name: Testes (cruzamento Diário, SIGA e obras)
+        run: python3 -I -m unittest discover -s pipeline/cruzamento/testes -v
+
       - name: Coleta real a partir dos servidores do GitHub (sem gravar)
         run: |
           python3 -I pipeline/noticias/coletar.py --dry-run --dias 2 | tee coleta.log
@@ -69,6 +73,11 @@ jobs:
         run: |
           python3 -I pipeline/obras/coletar.py --dry-run | tee obras.log
           { echo "### Obras paralisadas (simulação, sem gravar)"; echo '```'; head -2 obras.log; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Cruzamento real dos atos do Diário com o SIGA, a partir dos servidores do GitHub (sem gravar)
+        run: |
+          python3 -I pipeline/cruzamento/cruzar.py --dry-run | tee cruzamento.log
+          { echo "### Cruzamento (simulação, sem gravar)"; echo '```'; head -8 cruzamento.log; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Prévia do resumo por e-mail
         env:
