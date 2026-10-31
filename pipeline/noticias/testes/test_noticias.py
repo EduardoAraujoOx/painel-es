@@ -72,6 +72,62 @@ class CasoSejus(unittest.TestCase):
         self.assertEqual(itens[0]["temas"][0], "restricao")
 
 
+class OutrasPracas(unittest.TestCase):
+    """Notícia de outro estado que usa expressão genérica ("governo estadual") não pode entrar como do governo do ES."""
+    NATAL = "Governo estadual fixa prazos e regras para encerrar o orçamento de 2026"  # Portal 98 FM Natal, 31/10/2026
+
+    def setUp(self):
+        self.F = coletar.preparar(CFG)
+
+    def decide(self, titulo, veiculo, regional=False):
+        return coletar.decidir(CFG, titulo, veiculo, self.F, regional)
+
+    def test_veiculo_de_outra_praca_sem_ancora_do_es_e_descartado(self):
+        self.assertEqual(self.decide(self.NATAL, "Portal 98 FM Natal"), ("descartada", "veiculo_outra_praca"))
+        self.assertEqual(self.decide("Governador eleito anuncia secretariado", "G1 Bahia")[0], "descartada")
+        self.assertEqual(self.decide("Transição: equipe do governo eleito recebe dados", "Tribuna do Norte - Natal")[0], "descartada")
+
+    def test_veiculo_de_outra_praca_com_ancora_do_es_continua(self):
+        self.assertEqual(self.decide("Governo estadual do Espírito Santo fixa prazos para encerrar o orçamento", "Portal 98 FM Natal")[0], "confirmada")
+        self.assertEqual(self.decide("Pazolini recebe equipe de transição", "Jornal de Brasília")[0], "confirmada")
+
+    def test_expressao_generica_de_fonte_desconhecida_sem_ancora_vira_possivel(self):
+        self.assertEqual(self.decide(self.NATAL, "Portal Qualquer"), ("possivel", "generico_sem_ancora"))
+        self.assertEqual(self.decide("Governador eleito promete pacto contra o feminicídio", "Folha de S.Paulo"), ("possivel", "generico_sem_ancora"))
+
+    def test_expressao_generica_confirma_com_fonte_capixaba_ou_ancora(self):
+        self.assertEqual(self.decide(self.NATAL, "A Gazeta")[0], "confirmada")  # veículo capixaba da lista
+        self.assertEqual(self.decide(self.NATAL, "Portal Qualquer", regional=True)[0], "confirmada")  # feed ou busca restrita a site capixaba
+        self.assertEqual(self.decide("Governo do Estado libera verba para obras em Guarapari", "Portal Qualquer")[0], "confirmada")  # município capixaba
+        self.assertEqual(self.decide("Governo estadual fixa prazos no ES", "Portal Qualquer")[0], "confirmada")
+
+    def test_termos_especificos_do_es_seguem_confirmando_em_qualquer_fonte(self):
+        for t in ("Cesan anuncia reajuste da tarifa", "Palácio Anchieta divulga nova secretária", "TCE-ES aponta falhas em contratos", "Banestes anuncia concurso público"):
+            self.assertEqual(self.decide(t, "Portal Qualquer")[0], "confirmada", t)
+            self.assertEqual(self.decide(t, "Jornal de Brasília")[0], "confirmada", t)  # nem o veículo de outra praça derruba o que é inequivocamente do ES
+
+    def test_guardado_antes_das_regras_so_perde_o_de_outra_praca_e_uma_vez(self):
+        tmp = Path(tempfile.mkdtemp()); coletar.SAIDA = tmp / "index.json"
+        hoje = datetime(2026, 10, 31, 15, 0, tzinfo=UTC)
+        def guardado(i, titulo, veiculo):
+            return {"id": f"id{i}", "titulo": titulo, "veiculo": veiculo, "url": f"https://e.com/{i}", "data": enviar.iso(hoje - timedelta(hours=2)),
+                    "coletado_em": enviar.iso(hoje - timedelta(hours=1)), "outras": [], "possivel": False, "temas": []}
+        antigos = [guardado(1, self.NATAL, "Portal 98 FM Natal"), guardado(2, "Governo estadual fixa regras para o orçamento", "Portal Qualquer"),
+                   guardado(3, "Governo do ES fixa regras para o orçamento", "Portal Qualquer")]
+        coletar.SAIDA.write_text(json.dumps({"itens": antigos}), encoding="utf-8")
+        itens, _ = coletar.consolidar(CFG, [], hoje)
+        por_id = {i["id"]: i for i in itens}
+        self.assertNotIn("id1", por_id)  # outra praça: sai
+        self.assertFalse(por_id["id2"]["possivel"])  # genérico sem âncora: a migração não rebaixa (não sabe se veio de fonte capixaba)
+        self.assertFalse(por_id["id3"]["possivel"])  # tem âncora do ES: fica
+        self.assertTrue(all(i["triagem"] == coletar.TRIAGEM for i in itens))
+        # segunda passada: já marcados, não são reavaliados (não oscila a cada coleta)
+        por_id["id3"]["titulo"] = self.NATAL
+        coletar.SAIDA.write_text(json.dumps({"itens": list(por_id.values())}), encoding="utf-8")
+        itens2, _ = coletar.consolidar(CFG, [], hoje)
+        self.assertIn("id3", {i["id"] for i in itens2})
+
+
 class Auditoria(unittest.TestCase):
     """Falhas achadas na auditoria de 30/10/2026 (matérias relevantes que o filtro descartava) e os falsos positivos que as correções poderiam criar."""
 
