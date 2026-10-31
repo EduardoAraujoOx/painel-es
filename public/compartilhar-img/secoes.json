@@ -46,5 +46,29 @@
     "chips": ["Cortes e restrições", "Contratos", "Pessoal", "Orçamento"], "cta": "Acompanhe",
     "og_titulo": "Transição no ES: as notícias, hora a hora",
     "og_texto": "O que a imprensa capixaba publica sobre o governo do Estado: cortes e restrições, contratos, pessoal e orçamento. Toque para acompanhar."
+  },
+  "contratos-recentes": {
+    "cor": "#1f6bc4", "hash": "#/atos", "rotulo": "Contratos recentes",
+    "titulo": "Contratos recentes: o que mudou desde o 1º turno",
+    "sub": "Suspensões, rescisões e anulações publicadas no Diário Oficial desde 04/10, e o que o SIGA e o Portal de Obras já registram de cada um.",
+    "chips": ["Diário Oficial", "Cruzamento com o SIGA", "Só o recente"], "cta": "Acompanhe",
+    "og_titulo": "Contratos recentes: o que mudou desde o 1º turno",
+    "og_texto": "Os atos do Diário Oficial desde 04/10 e o que o SIGA e o Portal de Obras já registram de cada um. Toque para acompanhar."
+  },
+  "contratos-suspensos": {
+    "cor": "#17508f", "hash": "#/suspensos", "rotulo": "Suspensos e rescindidos",
+    "titulo": "Contratos suspensos e rescindidos no SIGA",
+    "sub": "A relação do cadastro oficial de contratos do Estado, com os que mudaram de situação em cada coleta.",
+    "chips": ["Suspensos", "Rescindidos", "Novos na relação"], "cta": "Acompanhe",
+    "og_titulo": "Contratos suspensos e rescindidos no SIGA",
+    "og_texto": "A relação do cadastro oficial de contratos do Estado e o que mudou de situação em cada coleta. Toque para acompanhar."
+  },
+  "obras-paralisadas": {
+    "cor": "#a0651b", "hash": "#/obras", "rotulo": "Obras paralisadas",
+    "titulo": "Obras paralisadas do governo do ES",
+    "sub": "As obras paralisadas e com contrato rescindido no Portal da Transparência, com a data e o valor de cada uma.",
+    "chips": ["Paralisadas", "Contrato rescindido", "Valor e data"], "cta": "Acompanhe",
+    "og_titulo": "Obras paralisadas do governo do ES",
+    "og_texto": "As obras paralisadas e com contrato rescindido no Portal da Transparência, com data e valor. Toque para acompanhar."
   }
 }
