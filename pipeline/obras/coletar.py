@@ -73,10 +73,19 @@ def tem_proxima(texto, pg):
     return f"page={pg + 1}" in texto
 
 
+def lista_valida(texto):
+    """Um fragmento de resultados de verdade traz o cabeçalho da tabela (Descrição, Setor, Município, Órgão, Valor). Página de erro ou layout
+    novo, mesmo com HTTP 200, não traz: tratar como lista vazia faria todas as obras parecerem ter saído da situação."""
+    t = texto_plano(texto)
+    return "Setor" in t and "Valor" in t and re.search(r"Munic[ií]pio", t) is not None
+
+
 def ids_da_situacao(cod, baixar_fn=baixar):
     ids, pg = [], 1
     while pg <= MAX_PAGINAS:
         t = baixar_fn(LISTA.format(cod=cod, pg=pg))
+        if not lista_valida(t):
+            raise RuntimeError(f"lista da situação {cod} (página {pg}) com formato inesperado: nada foi alterado")
         novos = [i for i in ids_da_pagina(t) if i not in ids]
         if not novos:
             break
@@ -170,6 +179,17 @@ def montar(atuais, anterior, hoje, desde=DESDE):
     }
 
 
+def queda_abrupta(anterior, atuais):
+    """Mensagem se uma situação perdeu mais da metade das obras de uma vez (com pelo menos 10 guardadas): quase sempre é mudança no portal, não
+    retomada em massa. Nesse caso o levantamento é recusado, em vez de publicar contagens erradas e saídas falsas."""
+    for tipo in ("paralisada", "rescindida"):
+        antes = sum(1 for i in (anterior or {}).get("itens", []) if i.get("tipo") == tipo)
+        agora_ = sum(1 for i in atuais.values() if i["tipo"] == tipo)
+        if antes >= 10 and agora_ < antes / 2:
+            return f"{tipo}: {antes} obras guardadas e só {agora_} lidas agora"
+    return None
+
+
 def mudou(antes, depois):
     chaves = ("itens", "saidas", "contagem", "novos")
     return not antes or any(antes.get(k) != depois.get(k) for k in chaves)
@@ -217,6 +237,9 @@ def main():
         sys.exit(f"portal de obras indisponível ({str(e)[:100]}): nada foi alterado")
     if not atuais:
         sys.exit("nenhuma obra paralisada ou rescindida lida: nada foi alterado, para não confundir falha com ausência")
+    queda = queda_abrupta(anterior, atuais)
+    if queda:
+        sys.exit(f"queda abrupta ({queda}): provável mudança no portal; nada foi alterado")
     saida = montar(atuais, anterior, hoje)
     c, v = saida["contagem"], saida["valor"]
     print(f"{c['paralisada']} paralisadas (R$ {v['paralisada'] / 1e6:.1f} mi) e {c['rescindida']} com contrato rescindido; "

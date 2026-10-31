@@ -17,7 +17,7 @@ EXEMPLO = (AQUI / "detalhe_exemplo.html").read_text(encoding="utf-8")
 
 def pagina(ids, proxima=None):
     links = f'<a href="/Obras/ObrasGeral/ObterObras?Ordenar=Descricao&amp;Situacao=103&amp;page={proxima}">próxima</a>' if proxima else ""
-    return "<table>" + "".join(f'<tr><td><a cont-id="{i}">obra {i}</a></td></tr>' for i in ids) + "</table>" + links
+    return "<table><tr><th>Descrição</th><th>Setor</th><th>Município</th><th>Órgão</th><th>Valor</th></tr>" + "".join(f'<tr><td><a cont-id="{i}">obra {i}</a></td></tr>' for i in ids) + "</table>" + links
 
 
 def detalhe(situacao="Paralisada (12/10/2026)", valor="R$ 1.000.000,00", objeto="Obra X"):
@@ -57,6 +57,40 @@ class Leitura(unittest.TestCase):
         finally:
             O.PAUSA = antes
         self.assertEqual(chamadas, [1, 2])
+
+
+class ListaInesperada(unittest.TestCase):
+    """Resposta com HTTP 200 mas sem a lista (página de erro, layout novo) não pode virar "nenhuma obra", nem "todas saíram"."""
+
+    def test_pagina_sem_cabecalho_da_tabela_e_recusada(self):
+        for ruim in ("<html><body>Erro interno</body></html>", "", "<div>Em manutenção</div>"):
+            with self.assertRaises(RuntimeError):
+                O.ids_da_situacao("103", lambda url, r=ruim: r)
+
+    def test_pagina_seguinte_com_formato_inesperado_tambem_aborta(self):
+        paginas = {1: pagina(["1", "2"], proxima=2), 2: "<html>Erro</html>"}
+        with self.assertRaises(RuntimeError):
+            O.PAUSA, antes = 0, O.PAUSA
+            try:
+                O.ids_da_situacao("103", lambda url: paginas[int(url.rsplit("page=", 1)[1])])
+            finally:
+                O.PAUSA = antes
+
+    def test_coleta_aborta_em_vez_de_marcar_tudo_como_saida(self):
+        anterior = {"itens": [{"id": "1", "tipo": "paralisada", "data_situacao": "2024-01-01", "valor": 5.0}]}
+        def f(url):
+            return "<html>Erro</html>" if "Situacao=103" in url else pagina([])
+        with self.assertRaises(RuntimeError):
+            O.coletar(anterior, f, pausa=0)
+
+    def test_queda_abrupta_recusa_o_levantamento(self):
+        guardadas = [{"id": str(i), "tipo": "paralisada"} for i in range(20)]
+        poucas = {str(i): {"tipo": "paralisada"} for i in range(5)}
+        muitas = {str(i): {"tipo": "paralisada"} for i in range(18)}
+        self.assertIn("paralisada", O.queda_abrupta({"itens": guardadas}, poucas))
+        self.assertIsNone(O.queda_abrupta({"itens": guardadas}, muitas))  # pequena oscilação é normal
+        self.assertIsNone(O.queda_abrupta({"itens": guardadas[:5]}, {}))  # poucas guardadas: sem trava
+        self.assertIsNone(O.queda_abrupta(None, poucas))
 
 
 class Comparacao(unittest.TestCase):

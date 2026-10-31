@@ -133,7 +133,8 @@ jobs:
           fi
           git config user.name "coleta-noticias"
           git config user.email "coleta-noticias@users.noreply.github.com"
-          git add data/noticias data/suspensos data/atos data/obras
+          # só os caminhos que existem: "git add" com um caminho ausente (ex.: data/obras antes do primeiro levantamento) falha e não guarda nada
+          for d in data/noticias data/suspensos data/atos data/obras; do if [ -e "$d" ]; then git add "$d"; fi; done
           git commit -m "dados: notícias e contratos de $(date -u +%F)"
           for tentativa in 1 2 3; do
             git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
