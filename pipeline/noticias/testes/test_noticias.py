@@ -135,6 +135,29 @@ class Auditoria(unittest.TestCase):
         self.assertEqual((len(itens), novos, itens[0]["possivel"]), (1, 1, False))
 
 
+class FerramentaDeAuditoria(unittest.TestCase):
+    """A auditoria só serve se mostrar TODO motivo de descarte: o que ela omite é justamente o que ninguém vai ver."""
+
+    def test_todo_motivo_que_o_filtro_emite_esta_descrito_na_auditoria(self):
+        auditar = carregar("auditar")
+        F = coletar.preparar(CFG)
+        casos = [("TCE determina suspensão de licitação da Sedurb por divergências em edital", "Amazonas1"),  # sigla_sem_ancora
+                 ("Concurso da SEFAZ SP: últimos dias de inscrição", "G1"),                                  # outro_estado
+                 ("Horóscopo de hoje: veja o que os astros revelam", "A Gazeta"),                            # excluir
+                 ("Concurso Banestes: inscrições abertas para 936 vagas", "Estratégia Concursos"),           # veiculo_excluido
+                 ("ATA DA ASSEMBLEIA GERAL EXTRAORDINÁRIA DA COMPANHIA ESTADUAL DE TRANSPORTES COLETIVOS", "Tribuna Online"),  # caixa_alta
+                 ("Estado deixa de pagar fornecedores e atrasa repasses a hospitais", "Folha do ES"),         # possivel
+                 ("Prefeitura anuncia novo orçamento para 2027", "Folha Nacional"),                           # sem_contexto_com_tema
+                 ("Flávio Bolsonaro usou passaporte italiano", "Folha do ES")]                                # sem_contexto
+        vistos = set()
+        for titulo, veiculo in casos:
+            classe, motivo = coletar.decidir(CFG, titulo, veiculo, F)
+            if classe != "confirmada":
+                vistos.add(motivo)
+                self.assertIn(motivo, auditar.MOTIVOS, f"a auditoria omitiria o motivo {motivo!r} ({titulo})")
+        self.assertGreaterEqual(len(vistos), 7)  # o teste cobre de fato os motivos, não só um
+
+
 class Feeds(unittest.TestCase):
     def test_le_item_valido_e_descarta_link_inseguro_ou_ausente(self):
         itens = coletar.ler_feed(FEED)
