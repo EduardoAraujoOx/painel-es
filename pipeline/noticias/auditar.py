@@ -26,6 +26,7 @@ MOTIVOS = {
     "possivel": "parece assunto público capixaba mas não cita o Estado: fica guardada como POSSÍVEL (veja se alguma merece virar regra)",
     "sem_contexto_com_tema": "tem palavra de tema mas nenhum contexto do Estado (RISCO MAIOR de perder matéria relevante)",
     "sem_contexto": "nenhum contexto do Estado e nenhum tema (veio de busca sobre o ES, mas o título não diz nada do governo)",
+    "sigla_sem_ancora": "sigla de órgão que existe em vários estados, de fonte não capixaba e sem âncora do ES: guardada como POSSÍVEL",
     "excluir": "caiu numa palavra da lista 'excluir'",
     "outro_estado": "cita a sigla de outro estado (SP, DF...) sem nenhuma âncora do ES",
     "veiculo_excluido": "veio de site que só republica concursos",
@@ -52,7 +53,9 @@ def main():
     por = collections.defaultdict(list)
     for d in unicos:
         por[d["motivo"]].append(d)
-    for motivo, texto in MOTIVOS.items():
+    # motivos descritos acima, na ordem; depois qualquer outro que o filtro venha a emitir (nada some da saída por falta de descrição)
+    for motivo in list(MOTIVOS) + sorted(m for m in por if m not in MOTIVOS):
+        texto = MOTIVOS.get(motivo, "motivo ainda sem descrição em MOTIVOS (auditar.py)")
         lista = por.get(motivo, [])
         print(f"== {motivo}: {len(lista)}  ({texto})")
         for d in (lista if args.todos else lista[: args.amostra]):
