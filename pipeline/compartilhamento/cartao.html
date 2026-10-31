@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+  @font-face { font-family: "Barlow Condensed"; font-weight: 600; src: url("../../public/fontes/barlow-condensed-600.woff2") format("woff2"); }
+  @font-face { font-family: "Barlow Condensed"; font-weight: 700; src: url("../../public/fontes/barlow-condensed-700.woff2") format("woff2"); }
+  * { box-sizing: border-box; margin: 0; }
+  body { width: 1200px; height: 630px; overflow: hidden; color: #fff; position: relative;
+    font-family: "Barlow Condensed", "Arial Narrow", system-ui, sans-serif; background: {{cor}}; }
+  .fundo { position: absolute; inset: 0; background: linear-gradient(135deg, color-mix(in srgb, {{cor}} 88%, white) 0%, {{cor}} 45%, color-mix(in srgb, {{cor}} 72%, black) 100%); }
+  .barras { position: absolute; right: -30px; bottom: -10px; display: flex; align-items: flex-end; gap: 22px; opacity: .16; }
+  .barras i { display: block; width: 92px; background: #fff; border-radius: 10px; }
+  .conteudo { position: relative; padding: 52px 64px; height: 100%; display: flex; flex-direction: column; }
+  .marca { display: flex; align-items: center; gap: 16px; font-weight: 700; font-size: 34px; letter-spacing: .06em; text-transform: uppercase; }
+  .marca svg { width: 52px; height: 52px; }
+  .marca small { font-weight: 600; font-size: 28px; opacity: .85; letter-spacing: .04em; }
+  h1 { margin-top: 38px; font-weight: 700; font-size: 108px; line-height: .98; text-transform: uppercase; letter-spacing: .005em; max-width: 1080px; }
+  p { margin-top: 22px; font-family: system-ui, "Segoe UI", Arial, sans-serif; font-size: 31px; line-height: 1.3; max-width: 880px; opacity: .96; }
+  .rodape { margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+  .temas { font-family: system-ui, "Segoe UI", Arial, sans-serif; font-size: 24px; display: flex; gap: 12px; flex-wrap: wrap; }
+  .temas span { border: 2px solid rgba(255,255,255,.7); border-radius: 999px; padding: 8px 18px; white-space: nowrap; }
+  .botao { background: #fff; color: color-mix(in srgb, {{cor}} 80%, black); font-weight: 700; font-size: 40px; text-transform: uppercase; letter-spacing: .04em; padding: 12px 34px; border-radius: 14px; white-space: nowrap; }
+</style></head>
+<body>
+  <div class="fundo"></div>
+  <div class="barras"><i style="height:190px"></i><i style="height:300px"></i><i style="height:430px"></i></div>
+  <div class="conteudo">
+    <div class="marca">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#fff"/><rect x="6.5" y="17" width="5" height="8.5" rx="1" fill="{{cor}}"/><rect x="13.5" y="11.5" width="5" height="14" rx="1" fill="{{cor}}"/><rect x="20.5" y="6" width="5" height="19.5" rx="1" fill="{{cor}}"/></svg>
+      <span>Painel Fiscal <small>· Espírito Santo</small></span>
+    </div>
+    <h1 id="titulo">{{titulo}}</h1>
+    <p>{{sub}}</p>
+    <div class="rodape">
+      <div class="temas">{{chips}}</div>
+      <div class="botao">{{cta}} →</div>
+    </div>
+  </div>
+</body></html>
