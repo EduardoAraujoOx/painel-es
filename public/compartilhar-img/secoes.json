@@ -1,0 +1,50 @@
+{
+  "painel": {
+    "cor": "#2f2e2a", "hash": "", "rotulo": "Painel Fiscal ES",
+    "titulo": "Monitoramento da transição no ES",
+    "sub": "Pessoal, contratos, fundos e notícias do governo do Estado, num só painel.",
+    "chips": ["Pessoal", "Contratos", "Fundos", "Notícias"], "cta": "Acesse",
+    "og_titulo": "Monitoramento da transição no Espírito Santo",
+    "og_texto": "Pessoal, contratos, fundos e notícias do governo do Estado, num só painel. Toque para acompanhar."
+  },
+  "pessoal": {
+    "cor": "#0c7a57", "hash": "#/cargos", "rotulo": "Pessoal",
+    "titulo": "Quem ocupa os cargos do governo do ES",
+    "sub": "Servidores, cargos de confiança e custo mensal, órgão por órgão, a partir de dados públicos.",
+    "chips": ["Cargos e funções", "Organograma", "Custo mensal"], "cta": "Acompanhe",
+    "og_titulo": "Quem ocupa os cargos do governo do ES",
+    "og_texto": "Servidores, cargos de confiança e custo mensal, órgão por órgão. Toque para acompanhar."
+  },
+  "contratos": {
+    "cor": "#1f6bc4", "hash": "#/contratacoes", "rotulo": "Contratos",
+    "titulo": "Os contratos do governo do ES, sob lupa",
+    "sub": "O que o Estado tem comprometido, o que vence no fim do mandato e o que foi suspenso ou rescindido.",
+    "chips": ["Contratos principais", "Fim de mandato", "Suspensos e rescindidos"], "cta": "Acompanhe",
+    "og_titulo": "Os contratos do governo do ES, sob lupa",
+    "og_texto": "O que o Estado tem comprometido, o que vence no fim do mandato e o que foi suspenso ou rescindido. Toque para acompanhar."
+  },
+  "fundos": {
+    "cor": "#7b4fb8", "hash": "#/fundos", "rotulo": "Fundos",
+    "titulo": "Raio-x dos fundos do Estado",
+    "sub": "Quanto cada fundo paga, quanto guarda e onde há margem para realocar recursos.",
+    "chips": ["Pago e saldo", "Margem aparente", "Realocação"], "cta": "Acompanhe",
+    "og_titulo": "Raio-x dos fundos do Estado do ES",
+    "og_texto": "Quanto cada fundo paga, quanto guarda e onde há margem para realocar recursos. Toque para acompanhar."
+  },
+  "transicao": {
+    "cor": "#b4531a", "hash": "#/lacunas", "rotulo": "Transição",
+    "titulo": "Transição no ES: o que pedir ao governo que sai",
+    "sub": "Lacunas de dados e de transparência encontradas, com o que solicitar, a quem e com que prioridade.",
+    "chips": ["Informações a solicitar", "Evidências", "Prioridades"], "cta": "Acompanhe",
+    "og_titulo": "Transição no ES: o que pedir ao governo que sai",
+    "og_texto": "Lacunas de dados e de transparência encontradas, com o que solicitar e a quem. Toque para acompanhar."
+  },
+  "noticias": {
+    "cor": "#b3365f", "hash": "#/noticias", "rotulo": "Notícias",
+    "titulo": "Transição no ES: as notícias, hora a hora",
+    "sub": "O que a imprensa capixaba publica sobre o governo do Estado, reunido num só lugar e atualizado das 6h às 22h.",
+    "chips": ["Cortes e restrições", "Contratos", "Pessoal", "Orçamento"], "cta": "Acompanhe",
+    "og_titulo": "Transição no ES: as notícias, hora a hora",
+    "og_texto": "O que a imprensa capixaba publica sobre o governo do Estado: cortes e restrições, contratos, pessoal e orçamento. Toque para acompanhar."
+  }
+}
