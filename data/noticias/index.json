@@ -1,6 +1,6 @@
 {
  "ref": "2026-10-31",
- "gerado_em": "2026-10-31T18:17:12Z",
+ "gerado_em": "2026-10-31T19:17:11Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,24 +17,24 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 16,
-   "aceitos": 14,
+   "lidos": 15,
+   "aceitos": 13,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 42,
-   "aceitos": 31,
+   "lidos": 26,
+   "aceitos": 23,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 8,
+   "lidos": 8,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 17,
+   "lidos": 15,
    "aceitos": 7,
    "possiveis": 4
   },
@@ -57,8 +57,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 2,
+   "lidos": 3,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -89,16 +89,16 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 92,
-   "aceitos": 9,
+   "lidos": 89,
+   "aceitos": 7,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 77,
-   "aceitos": 8,
+   "lidos": 69,
+   "aceitos": 7,
    "possiveis": 4
   },
   {
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 24,
    "aceitos": 6,
    "possiveis": 2
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 24,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 57,
-   "aceitos": 9,
-   "possiveis": 6
+   "lidos": 28,
+   "aceitos": 7,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 58,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -206,19 +206,45 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 341,
-  "veiculo_excluido": 28,
-  "possivel": 16,
-  "sem_contexto_com_tema": 7,
+  "sem_contexto": 315,
+  "veiculo_excluido": 20,
+  "possivel": 17,
+  "sem_contexto_com_tema": 4,
   "excluir": 4,
-  "outro_estado": 28,
+  "outro_estado": 22,
   "caixa_alta": 4,
-  "sigla_sem_ancora": 10,
-  "veiculo_outra_praca": 9
+  "sigla_sem_ancora": 7,
+  "veiculo_outra_praca": 8
  },
  "itens": [
+  {
+   "id": "a8804bf33bd8",
+   "titulo": "Governo dos EUA ‘não se envolveu’ na saída de Flávio Bolsonaro do Brasil, diz Marco Rubio",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/cotidiano/governo-dos-eua-nao-se-envolveu-na-saida-de-flavio-bolsonaro-do-brasil-diz-marco-rubio/",
+   "data": "2026-10-31T18:50:50Z",
+   "coletado_em": "2026-10-31T19:17:11Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 2,
+   "temas": []
+  },
+  {
+   "id": "304ae9286cad",
+   "titulo": "Assembleia Legislativa: aberta a temporada de apostas para o comando da Casa",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/bastidores-da-politica/2026/10/apostas-comando-assembleia/",
+   "data": "2026-10-31T18:25:56Z",
+   "coletado_em": "2026-10-31T19:17:11Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 2,
+   "temas": [
+    "controle"
+   ]
+  },
   {
    "id": "8eebf0079925",
    "titulo": "Secretário de Estado dos EUA nega que país tenha ajudado Flávio Bolsonaro a fugir",
