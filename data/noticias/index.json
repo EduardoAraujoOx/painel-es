@@ -1,6 +1,6 @@
 {
  "ref": "2026-10-31",
- "gerado_em": "2026-10-31T19:17:11Z",
+ "gerado_em": "2026-10-31T20:17:11Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,33 +25,33 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 23,
+   "lidos": 40,
+   "aceitos": 32,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 7,
+   "lidos": 9,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 9,
+   "lidos": 10,
+   "aceitos": 10,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 15,
+   "lidos": 14,
    "aceitos": 7,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -66,30 +66,30 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 4,
-   "possiveis": 1
+   "aceitos": 5,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 2,
-   "possiveis": 1
+   "lidos": 10,
+   "aceitos": 4,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 89,
+   "lidos": 88,
    "aceitos": 7,
    "possiveis": 2
   },
@@ -97,8 +97,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 69,
-   "aceitos": 7,
+   "lidos": 74,
+   "aceitos": 8,
    "possiveis": 4
   },
   {
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 4,
+   "lidos": 3,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 23,
    "aceitos": 6,
    "possiveis": 2
   },
@@ -145,8 +145,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
-   "aceitos": 1,
+   "lidos": 23,
+   "aceitos": 0,
    "possiveis": 2
   },
   {
@@ -154,7 +154,7 @@
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 28,
-   "aceitos": 7,
+   "aceitos": 6,
    "possiveis": 3
   },
   {
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 6,
+   "aceitos": 5,
    "possiveis": 4
   },
   {
@@ -206,19 +206,33 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 5,
  "descartes_na_coleta": {
-  "sem_contexto": 315,
-  "veiculo_excluido": 20,
-  "possivel": 17,
-  "sem_contexto_com_tema": 4,
+  "sem_contexto": 322,
+  "veiculo_excluido": 22,
+  "possivel": 14,
+  "sem_contexto_com_tema": 6,
   "excluir": 4,
-  "outro_estado": 22,
+  "outro_estado": 20,
   "caixa_alta": 4,
   "sigla_sem_ancora": 7,
   "veiculo_outra_praca": 8
  },
  "itens": [
+  {
+   "id": "31277ccdc0a0",
+   "titulo": "Sem férias após a eleição, Pazolini volta ao trabalho como delegado antes de assumir o Governo do ES",
+   "veiculo": "ES Fala",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVW12dm50Yk1oS3NoNmxSMG9TNF9ubHE0TnZBd19NWlB6eWlEaVlIZm1xNm1GNUJKUGM3ZGdXd0t0UDE4M01PMHFmOTVYY1VBZEpOajhQTzFIMjhoSkJDYTVHWFN6c1U0T1JiQ2M0Qm1hU2hDT05WWGdOMVFaZ1R0WGExcHFKY0QzMGdzajVYeThEMDNmUHVoYXJNUnp5R2xIcktnZ1FpUm5TUmlEM1Jz?oc=5",
+   "data": "2026-10-31T20:00:00Z",
+   "coletado_em": "2026-10-31T20:17:11Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 2,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "a8804bf33bd8",
    "titulo": "Governo dos EUA ‘não se envolveu’ na saída de Flávio Bolsonaro do Brasil, diz Marco Rubio",
@@ -560,6 +574,21 @@
    "triagem": 2
   },
   {
+   "id": "57817477248b",
+   "titulo": "Pazolini visita TJES, TCE-ES e Ministério Público e reforça diálogo institucional",
+   "veiculo": "Portal 27",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRzVSc3RVMEVnR1NuNUxxOHdFS1VYVzdZQWhNNzRTVS1UQXcydFZDSDFQZXFzc3hNTVNZZFhSaThhTFlVN2sybE1pRjVWMFgwNUpmdlNIQVI0cjc5RkdDZ3NkbFBFbEpCMzlYMHZVdF9BUEI0S0N0ejZ2YWJJZWgtT1dhMWJSRnFKZFVjc0lOaVhEQlpQQmVJUHdjQ3I1aElXNU9Xajd5anl5bmtrSmc?oc=5",
+   "data": "2026-10-30T20:33:30Z",
+   "coletado_em": "2026-10-31T20:17:11Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 2,
+   "temas": [
+    "governador",
+    "controle"
+   ]
+  },
+  {
    "id": "65b2a41282bb",
    "titulo": "Equipe de transição de protocola mais seis ofícios e amplia levantamento de informações sobre o governo estadual",
    "veiculo": "TC Online",
@@ -614,6 +643,20 @@
     "governador"
    ],
    "triagem": 2
+  },
+  {
+   "id": "0189f9910bec",
+   "titulo": "Pazolini retorna ao cargo de delegado da Polícia Civil após eleições; entenda",
+   "veiculo": "Aqui Notícias",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZWtGdXRUNk9pOGNCS29OcFFnV1Z4Uk5TS2QxakhjVXZTZzVhdGRXbHRsSEQtWXFlNGxqOTUteGVKWXBqZjVjMDBSY05JTW05bk84di1vOHBnTE92bk5lckpYaTRxSUtuUEpabjN4RWFDeklJd1FXX21YREVCLXcyWFNmZEdKSURiNU1Ubml3eW5VTVdLM3FoZ2hVZUQ0ZHFaWjltOU5CeDAwcXgzNGc0?oc=5",
+   "data": "2026-10-30T20:06:43Z",
+   "coletado_em": "2026-10-31T20:17:11Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 2,
+   "temas": [
+    "governador"
+   ]
   },
   {
    "id": "fba8aa2ce089",
@@ -826,6 +869,21 @@
    "possivel": false,
    "temas": [],
    "triagem": 2
+  },
+  {
+   "id": "c475a3a5819e",
+   "titulo": "Justiça Eleitoral determina investigação da Polícia Federal sobre divulgação de vídeo contra Pazolini durante campanha eleitoral",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQYmJ5dVJQUmcxQWtJY1VkLUp0U1J6dW1PVEg0bVBYajg2cG5GSVhZUlZjZk5Zay16em9mSjhtUHpnbURqZFA2b3JzbHlCdWxxY1daQ1VMbGh6TmlfZEtBNnFpQ2dzaHQ1Q0pUSGw1bTl0ODd5NzFCN1NkbHBud1RSbVNGUkFJTEJoMDV5bzJnMTkycnNWbVpWSUdMTDZ4UVBNMUxzR29VekRMM2c5ZnNtZk9mbS14RUdBYWZUWWp5a0NTeUNyb2NBLThWc2x4RktPQ2JxWnMzdHNnYWhka0xUMFNYbW5VT21f?oc=5",
+   "data": "2026-10-30T17:39:26Z",
+   "coletado_em": "2026-10-31T20:17:11Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 2,
+   "temas": [
+    "governador",
+    "controle"
+   ]
   },
   {
    "id": "c8bac1257509",
@@ -1183,6 +1241,21 @@
     "contratos"
    ],
    "triagem": 2
+  },
+  {
+   "id": "0908aaea4abc",
+   "titulo": "Edmar Camata lidera equipe de transição da atual gestão do Governo do Estado",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZW1yLXMzSWYwZG14dEdaTmVDYktjX2hrbW43Q3FMMjVNMElpZUtfVHpwQ2NWN2kyUk56X25ydVlxYV9xRzBiVTNtVjdBWFFhcVl5SDhzMHVUTEdpX2dPSFVCTE1fZU95VUdBeHM1eGJBbHhqaF9EOXRTdE96Y0l1cnEwemJLY1ZTWnNSUENrWEpTYzVtVmVYbkNkbTZJWU10WE40?oc=5",
+   "data": "2026-10-30T12:29:50Z",
+   "coletado_em": "2026-10-31T20:17:11Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 2,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
   },
   {
    "id": "bc565ef8e207",
