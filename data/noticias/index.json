@@ -1,6 +1,6 @@
 {
  "ref": "2026-10-31",
- "gerado_em": "2026-10-31T14:21:48Z",
+ "gerado_em": "2026-10-31T15:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,32 +25,32 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 46,
-   "aceitos": 39,
+   "lidos": 44,
+   "aceitos": 36,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 11,
-   "aceitos": 10,
+   "lidos": 9,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 13,
-   "aceitos": 13,
+   "lidos": 12,
+   "aceitos": 12,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 19,
-   "aceitos": 8,
+   "lidos": 18,
+   "aceitos": 7,
    "possiveis": 4
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 11,
+   "lidos": 10,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 98,
+   "lidos": 100,
    "aceitos": 11,
    "possiveis": 3
   },
@@ -98,7 +98,7 @@
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
    "lidos": 69,
-   "aceitos": 7,
+   "aceitos": 6,
    "possiveis": 5
   },
   {
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 4,
    "possiveis": 0
   },
@@ -145,24 +145,24 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 25,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
-   "aceitos": 6,
-   "possiveis": 5
+   "lidos": 55,
+   "aceitos": 8,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 59,
-   "aceitos": 1,
+   "lidos": 100,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -171,7 +171,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 6,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Folha Vitória",
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -206,18 +206,31 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 7,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 334,
-  "veiculo_excluido": 25,
+  "sem_contexto": 348,
+  "veiculo_excluido": 33,
   "possivel": 19,
-  "sem_contexto_com_tema": 7,
+  "sem_contexto_com_tema": 8,
   "excluir": 5,
-  "outro_estado": 26,
+  "outro_estado": 29,
   "caixa_alta": 5,
-  "sigla_sem_ancora": 13
+  "sigla_sem_ancora": 15
  },
  "itens": [
+  {
+   "id": "baaa3650cadc",
+   "titulo": "Craque Neto pede desculpas aos fãs do BTS após ser cancelado",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/hz/tv-e-famosos/craque-neto-pede-desculpas-aos-fas-do-bts-apos-ser-cancelado-1026",
+   "data": "2026-10-31T14:29:33Z",
+   "coletado_em": "2026-10-31T15:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "7dc56e450c52",
    "titulo": "DETRAN faz pente-fino e bloqueia serviços da CNH; Como evitar multa de R$ 293,47 e sete pontos na carteira",
