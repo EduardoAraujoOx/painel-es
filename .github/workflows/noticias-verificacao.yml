@@ -12,6 +12,8 @@ on:
       - 'public/modulos/suspensos.js'
       - 'pipeline/diario/**'
       - 'public/modulos/atos.js'
+      - 'pipeline/obras/**'
+      - 'public/modulos/obras.js'
       - '.github/workflows/noticias*.yml'
   workflow_dispatch:
 
@@ -38,6 +40,9 @@ jobs:
       - name: Testes (Diário Oficial)
         run: python3 -I -m unittest discover -s pipeline/diario/testes -v
 
+      - name: Testes (obras)
+        run: python3 -I -m unittest discover -s pipeline/obras/testes -v
+
       - name: Coleta real a partir dos servidores do GitHub (sem gravar)
         run: |
           python3 -I pipeline/noticias/coletar.py --dry-run --dias 2 | tee coleta.log
@@ -59,6 +64,11 @@ jobs:
         run: |
           python3 -I pipeline/diario/coletar.py --dry-run | tee diario.log
           { echo "### Diário Oficial (simulação, sem gravar)"; echo '```'; head -3 diario.log; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Leitura real das obras paralisadas, a partir dos servidores do GitHub (sem gravar)
+        run: |
+          python3 -I pipeline/obras/coletar.py --dry-run | tee obras.log
+          { echo "### Obras paralisadas (simulação, sem gravar)"; echo '```'; head -2 obras.log; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Prévia do resumo por e-mail
         env:

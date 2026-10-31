@@ -319,6 +319,7 @@ class Resumo(unittest.TestCase):
         self.tmp = Path(tempfile.mkdtemp())
         enviar.DADOS, enviar.MARCO = self.tmp / "index.json", self.tmp / "ultimo-envio.json"
         enviar.ATOS = self.tmp / "atos.json"  # sem atos do Diário, a menos que o teste os crie
+        enviar.OBRAS = self.tmp / "obras.json"  # idem para obras
         enviar.DADOS.write_text(json.dumps(self.dados), encoding="utf-8")
         self.enviados = []
         outer = self
@@ -442,6 +443,38 @@ class Resumo(unittest.TestCase):
         msgs = self.rodar(self.ENV)
         self.assertEqual(len(msgs), 2)
         self.assertIn("1 ato de contrato no Diário Oficial", msgs[0]["Subject"])
+
+    # --- e obras paralisadas / com contrato rescindido no Portal da Transparência ---
+
+    def obra(self, i, horas, tipo="paralisada", **extra):
+        return {"id": f"o{i}", "tipo": tipo, "data_situacao": "2026-10-20", "objeto": f"Reforma da escola <b>{i}</b>", "municipio": "Guaçuí",
+                "orgao": "SEDU - SECRETARIA DE ESTADO DA EDUCAÇÃO", "valor": 12013859.56, "visto_em": enviar.iso(self.ref - timedelta(hours=horas)), **extra}
+
+    def test_so_entram_obras_vistas_depois_do_marco_e_as_paralisadas_vem_primeiro(self):
+        enviar.OBRAS.write_text(json.dumps({"itens": [self.obra(1, 2, "rescindida"), self.obra(2, 1), self.obra(3, 40), {**self.obra(4, 1), "visto_em": None}]}), encoding="utf-8")
+        self.assertEqual([o["id"] for o in enviar.obras_novas(self.ref - timedelta(hours=24))], ["o2", "o1"])
+        enviar.OBRAS = self.tmp / "nao_existe.json"
+        self.assertEqual(enviar.obras_novas(self.ref - timedelta(hours=24)), [])
+
+    def test_assunto_e_corpo_com_obras(self):
+        self.assertIn("1 obra paralisada ou com contrato rescindido", enviar.assunto(0, self.ref, False, 0, 0, 1))
+        self.assertIn("2 obras paralisadas ou com contrato rescindido", enviar.assunto(0, self.ref, False, 0, 0, 2))
+        self.assertNotIn("obra", enviar.assunto(2, self.ref, False, 0, 0, 0))
+        d = {**self.dados, "itens": self.dados["itens"][:1]}
+        corpo_html, corpo_txt = enviar.montar_conteudo(d, d["itens"], self.ref, "", "agora", (), (), [self.obra(1, 1)])
+        self.assertIn("Obras paralisadas ou com contrato rescindido (1)", corpo_html)
+        self.assertIn("&lt;b&gt;1", corpo_html)  # objeto escapado
+        self.assertNotIn("<b>1</b>", corpo_html)
+        self.assertIn("em 20/10/2026", corpo_html)
+        self.assertIn("OBRAS PARALISADAS OU COM CONTRATO RESCINDIDO (1)", corpo_txt)
+
+    def test_dia_so_com_obra_nova_ainda_envia(self):
+        d = json.loads(json.dumps(self.dados)); d["itens"] = []
+        enviar.DADOS.write_text(json.dumps(d), encoding="utf-8")
+        enviar.OBRAS.write_text(json.dumps({"itens": [self.obra(1, 1)]}), encoding="utf-8")
+        msgs = self.rodar(self.ENV)
+        self.assertEqual(len(msgs), 2)
+        self.assertIn("1 obra paralisada ou com contrato rescindido", msgs[0]["Subject"])
 
     def test_resumo_devido_recupera_horario_pulado(self):
         h = lambda dia, hora, minuto: datetime(2026, 10, dia, hora, minuto, tzinfo=UTC)

@@ -40,6 +40,24 @@
         el('span', {}, i.alvo ? `alvo: ${i.alvo}` : '')));
   }
 
+  // Lista agrupada pela data de publicação no Diário, da mais recente para a mais antiga (a lista já vem ordenada).
+  const diaRotulo = (iso) => { const t = new Date(iso + 'T12:00:00').toLocaleDateString('pt-BR', { weekday: 'long', day: '2-digit', month: '2-digit', year: 'numeric' }); return t[0].toUpperCase() + t.slice(1); };
+  function porDia(itens, todos, novos) {
+    const conta = {};
+    for (const i of todos) conta[i.data] = (conta[i.data] || 0) + 1;
+    const blocos = [];
+    let dia = null, ul = null;
+    for (const i of itens) {
+      if (i.data !== dia) {
+        dia = i.data;
+        ul = el('ul', { class: 'noticias' });
+        blocos.push(el('section', { class: 'noticias-dia' }, el('h3', {}, `${diaRotulo(i.data)} · ${nInt.format(conta[i.data])} ${conta[i.data] === 1 ? 'ato' : 'atos'}`), ul));
+      }
+      ul.append(linha(i, novos.has(i.id)));
+    }
+    return blocos;
+  }
+
   function render() {
     if (!raiz || !dados) return;
     const c = dados.contagem;
@@ -54,10 +72,10 @@
       el('button', { type: 'button', class: 'chip', 'aria-pressed': String(filtros.tipo === v && !filtros.novos), onclick: () => { filtros.tipo = v; filtros.novos = false; visiveis = POR_VEZ; render(); } }, r, el('small', {}, nInt.format(n)))),
     el('button', { type: 'button', class: 'chip', 'aria-pressed': String(filtros.novos), onclick: () => { filtros.novos = !filtros.novos; filtros.tipo = ''; visiveis = POR_VEZ; render(); } }, 'Só os novos', el('small', {}, nInt.format(dados.novos.length))));
     const lista = filtrar();
-    $('#resumo').textContent = `${nInt.format(lista.length)} ${lista.length === 1 ? 'ato' : 'atos'}, do mais recente para o mais antigo`;
+    $('#resumo').textContent = `${nInt.format(lista.length)} ${lista.length === 1 ? 'ato' : 'atos'}, agrupados pela data de publicação, do mais recente para o mais antigo`;
     const pedaco = lista.slice(0, visiveis);
     $('#lista').replaceChildren(
-      lista.length ? el('ul', { class: 'noticias' }, pedaco.map((i) => linha(i, novos.has(i.id)))) : el('p', { class: 'vazio' }, 'Nenhum ato corresponde ao filtro.'),
+      ...(lista.length ? porDia(pedaco, lista, novos) : [el('p', { class: 'vazio' }, 'Nenhum ato corresponde ao filtro.')]),
       lista.length > visiveis ? el('div', { class: 'ferramentas' }, el('button', { type: 'button', class: 'botao', onclick: () => { visiveis += POR_VEZ; render(); } }, `Mostrar mais (${nInt.format(lista.length - visiveis)} restantes)`)) : null);
   }
 
