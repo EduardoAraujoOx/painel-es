@@ -1,0 +1,24 @@
+{
+ "gerado_em": "2026-10-31T20:53:49Z",
+ "resumo": {
+  "total": 149,
+  "com_data": 2,
+  "diario": 2,
+  "obras": 0,
+  "painel": 0
+ },
+ "itens": {
+  "168|Contrato 2024.000137.44928.01/2024|Contrato|20135900000153|2024-12-11": {
+   "data": "2026-10-21",
+   "fonte": "diario",
+   "texto": "Rescisão publicada no Diário Oficial",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2045308/11571"
+  },
+  "168|Contrato 2025.000029.44928.01/2025|Contrato|27677915000192|2025-04-24": {
+   "data": "2026-10-21",
+   "fonte": "diario",
+   "texto": "Rescisão publicada no Diário Oficial",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2045299/11571"
+  }
+ }
+}
