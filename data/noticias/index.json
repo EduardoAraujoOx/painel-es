@@ -1,9 +1,10 @@
 {
- "ref": "2026-10-30",
- "gerado_em": "2026-10-30T21:29:30Z",
+ "ref": "2026-10-31",
+ "gerado_em": "2026-10-31T02:20:21Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
+  "restricao": "Restrições e cortes",
   "transicao": "Transição",
   "governador": "Governador e Palácio",
   "financas": "Finanças e orçamento",
@@ -16,110 +17,300 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 20,
-   "aceitos": 13
+   "lidos": 18,
+   "aceitos": 15,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 48,
-   "aceitos": 40
+   "lidos": 46,
+   "aceitos": 40,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 9
+   "lidos": 11,
+   "aceitos": 10,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 15,
-   "aceitos": 15
+   "lidos": 16,
+   "aceitos": 16,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
    "lidos": 19,
-   "aceitos": 9
+   "aceitos": 9,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 2
+   "lidos": 5,
+   "aceitos": 2,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 4
+   "lidos": 9,
+   "aceitos": 4,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 5
+   "aceitos": 4,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 11,
-   "aceitos": 2
+   "lidos": 9,
+   "aceitos": 2,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 97,
-   "aceitos": 7
+   "lidos": 95,
+   "aceitos": 10,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 87,
-   "aceitos": 1
+   "lidos": 79,
+   "aceitos": 9,
+   "possiveis": 6
+  },
+  {
+   "fonte": "Google Notícias",
+   "consulta": "(\"insuficiência de recursos\" OR \"restrições orçamentárias\" OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) \"governo do ES\"",
+   "ok": true,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0
+  },
+  {
+   "fonte": "Google Notícias",
+   "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
+   "ok": true,
+   "lidos": 3,
+   "aceitos": 3,
+   "possiveis": 0
+  },
+  {
+   "fonte": "Google Notícias",
+   "consulta": "(atraso OR atrasados) pagamento fornecedores \"governo do ES\" OR \"Governo do Estado\" Espírito Santo",
+   "ok": true,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0
+  },
+  {
+   "fonte": "Google Notícias",
+   "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
+   "ok": true,
+   "lidos": 16,
+   "aceitos": 4,
+   "possiveis": 0
+  },
+  {
+   "fonte": "Google Notícias",
+   "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
+   "ok": true,
+   "lidos": 26,
+   "aceitos": 5,
+   "possiveis": 4
+  },
+  {
+   "fonte": "Google Notícias",
+   "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
+   "ok": true,
+   "lidos": 28,
+   "aceitos": 1,
+   "possiveis": 3
+  },
+  {
+   "fonte": "Google Notícias",
+   "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
+   "ok": true,
+   "lidos": 58,
+   "aceitos": 8,
+   "possiveis": 6
+  },
+  {
+   "fonte": "Google Notícias",
+   "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
+   "ok": true,
+   "lidos": 100,
+   "aceitos": 0,
+   "possiveis": 0
   },
   {
    "fonte": "A Gazeta",
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 6
+   "aceitos": 6,
+   "possiveis": 5
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0
+   "aceitos": 0,
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 4
+   "aceitos": 4,
+   "possiveis": 0
   },
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 3
+   "aceitos": 3,
+   "possiveis": 1
+  },
+  {
+   "fonte": "G1 Espírito Santo",
+   "consulta": "https://g1.globo.com/rss/g1/es/espirito-santo/",
+   "ok": true,
+   "lidos": 100,
+   "aceitos": 3,
+   "possiveis": 0
   }
  ],
- "novos_na_coleta": 6,
+ "novos_na_coleta": 30,
+ "descartes_na_coleta": {
+  "sem_contexto": 348,
+  "veiculo_excluido": 41,
+  "possivel": 23,
+  "sem_contexto_com_tema": 8,
+  "excluir": 7,
+  "outro_estado": 25,
+  "caixa_alta": 4,
+  "sigla_sem_ancora": 13
+ },
  "itens": [
+  {
+   "id": "8080a61f7d97",
+   "titulo": "Concurso do Detran terá vagas para Goioerê e outras cidades da região – VEJA TODAS",
+   "veiculo": "Goionews",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOXzFwTXQwNTlOaVhEWkRjRUdhd1hzUVlRNDFDZTYwZmV2NzQ5TlhHN1lUZ09LcGhIN0ltNE8zc29WZnA1dENOdnhLdDVYMnQwUXIyZktoWC1lR1Zyc0x6Rm00cjdMUXUyZUR5WTV2dzJZeWR2U1NBQUQ1dDI0dGM3ME1pLUJfdjVEMUsxVlR1Q29jeE9rZjZ6dTV1U2V4R3lYbFJneWF1MllySVlwR21wdEpRbWdudFdjU1E?oc=5",
+   "data": "2026-10-31T02:04:38Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "b4ee92bf37e2",
+   "titulo": "Eleitos, senador Evair e governador Pazolini realizam encontro com lideranças e moradores do Sul do ES",
+   "veiculo": "Aqui Notícias",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOaGExUFZvcXJFZVpyZ2xJbFRVUm9Nbi1jZmtiQXJFb0xndDJOamRvX1M3ZTZDZWlpcWFWMjR1U1JKekdnTGNRV3M1MlhCUXBhU3YxLW1YZkVBOGRhTG1RUjg3YzZRY1Z3NDc1UEVOTGRhWTdaQ0h4Qlk2dGZfaFM0bk5DdkxHdVZCWWNVZUNaZTVhSlpoY0lOQmZnWmdnckpsUkk3LUJXNWk1T1ItZWNSTlpEd1ladjVKNEc4Ng?oc=5",
+   "data": "2026-10-31T00:32:13Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "4715829c4ddd",
+   "titulo": "Após homologar R$ 54,9 milhões, SEDURB revoga licitação",
+   "veiculo": "Amazonas1",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOcnpfYm5Ka2d6VWFZMkQwbTVsbTdGOENvdjZrb2VOZWJvTnBVZEhjUk9ZTnhyX19mQVFMbXRoZ1V3LTNqcXRGcTNOblZIYXNrWU5hcURUYTVxbXA2SUVDVllWTUJHOTctcFU4Y0hrQkZCYWV4R056RnVuejFqRHp0a0FReE4?oc=5",
+   "data": "2026-10-31T00:30:00Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": [
+    "restricao",
+    "contratos"
+   ]
+  },
+  {
+   "id": "82c90cb04ac4",
+   "titulo": "Namorado some e pedagoga descobre dívida de R$ 200 mil com 30 agiotas",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/policia/namorado-some-e-pedagoga-descobre-divida-de-r-200-mil-com-30-agiotas/",
+   "data": "2026-10-30T23:11:11Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "5698507d35de",
+   "titulo": "Equipe de transição estuda auditoria externa nas contas do ES",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNYzBqaElRWWRNOTRNb1AwWHpReVZDcFdzaXVkNzYtSElPNzJpYzFvYlFBYXc1aERDTTJsSm04SmxLeC0tUWNLakxuZU95TUF0Q3I4RXpQbEIwVzI4TWlJSl9odzNhMnVmTnFmczlmelFPWHdnVEFzQXNfeU5haHAxdl9oVHVRLXcwMFVVcTVqNGdnNkFoMmxERW5PZXBMdjN1cUlyMU51MmF1QdIBsgFBVV95cUxNTmZ0NmNWNEgtdVduMmlOOTAtMV82TWN3WXRVWTR6Y0xqRWd2aWhxTjcxcnM5Ym9iRnBrYmg5WWNNMFJhNU0zZ2JuWUdyV1I4WGJNbUZOQUlWa25fWjQ1blRYUURJZXFmVUZ3Mm1VZ3F0bnBLN2FYMzdzRzI0ZWk1NXRrVWpBRjdmWS1qQUN2elVYX3JqOUpEU0VWbE1kZmExR2VrQUkxeTRoME55UDg0bG5B?oc=5",
+   "data": "2026-10-30T21:51:40Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": [
+    "transicao",
+    "controle"
+   ]
+  },
+  {
+   "id": "77f726504dd8",
+   "titulo": "Pazolini volta à Polícia Civil como delegado até a posse em 2027",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVlVuQTl0cldFTGFQbUJlWG1xSll5cHlSdnB1ODUxTjBPOXBiRENMazE2djM0TFRwQUE3WTEwdE92ZmJmN3A2dTBOd0FyRHU3MnF0RDJpaklWOGl5SFBWMzFJckxZYkVxU3IwaUhnOUQ2VU5EbDZYSENodXlhQWFkTjdicDE3MGU4cVE5REhlMElvRGdUcFZTT2VNbUdqYXgxajR5Wnd5bE5iSm9zQWfSAbYBQVVfeXFMUDBGRWpMclRNMnoxdV9LWUprRHBZT3NJb0pEUXZnWEFvcUk0b2M2X1ZtTlNoNVUzM1duYkx5eFpSeWx0RkFyUzFXWkhDR1pGNDM2cV9xcXBQQVFweWxraGJfTXNrbWNnWDV2emc3UHJ0dnduSmhyTjBHV3NyUmRManpzVWdlaEpxOWhvLXhxejlrT0I3OFQwcURocEdEQ28yU1F5U2trWXRUbzRReVVILTcyVGgzVlE?oc=5",
+   "data": "2026-10-30T21:47:08Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "7776a2570edc",
+   "titulo": "Governo do Espírito Santo assina aval e Polícia Científica prepara primeiro concurso",
+   "veiculo": "Imprensa 24h",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOenpfU3hBUGNmVTBQRG5rdm1sUWRvdFVVdW9hS3hjdHQ4MmcyeE4tUVNWN3NRNmIzV0NObzhSY3g1X3B0eE5ZRENhUGdMeG95dVd6THU3bl92TjY2N3NzMkh4UU91MGw5NEI4Z2pTelh2QWdob3lRUG9LYXdWRFlYXzllanROZw?oc=5",
+   "data": "2026-10-30T20:50:25Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "65b2a41282bb",
    "titulo": "Equipe de transição de protocola mais seis ofícios e amplia levantamento de informações sobre o governo estadual",
@@ -161,19 +352,36 @@
   {
    "id": "fba8aa2ce089",
    "titulo": "Governador eleito do ES, Lorenzo Pazolini volta a atuar como delegado até a posse",
-   "veiculo": "G1",
-   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOenZURnhPSWdWRlZLYnl1NjJsdjh5UGlHTVhhbWdtc2czdEpHWEd4VjJTcFlFS1Z6VW9nYmw5VHcxWEFETi1MckxLRHNvWnFJWVZRWTVwd2NGbzhqamExX2NVeW5tQTlBTDczbF9UQ3JtSExfRlI5ckdVUGd3aW9icmhyYnVXR2txTWJHTVhMLUowVlpJbTBvUlR3WDdMRHFkTUxUS1pWMDNJcDdheDRlVzdTUTBjSjE3YkR2MDlINlppUGNfSHZLUkVwd1VTNXJVVFZ1TVVwSENHa2Fm0gHrAUFVX3lxTE43SWJmQzg2WDRlSjdRZlR2TUdCWEdrZjY0WGRCak5vYXBmR2NlTE5IR1Z1RldxbmVyMEpsR1poazE0UkItZXVVeTM1WnJOYklheUM0RVRGWnhXa2d1T2FyenJTdzZsbHY1c1lfcnhhbzlNaFQtOW15UUdCRmJNYkVfMDFnS1JaOEIzYTFPbHQyUEtEMjJkWm1RQWtQRmhDQ3NNSi1ZVmlJdkFWajdGdzkxcnV5WlQ5YkcycHc5WmthN3gtWjNxUDlUa0tvTGtDcEdTTkp6WFZ2ZGw4V2x6cmpPaGRfcDlwaW01Y1U?oc=5",
+   "veiculo": "G1 Espírito Santo",
+   "url": "https://g1.globo.com/es/espirito-santo/noticia/2026/10/30/governador-eleito-do-es-lorenzo-pazolini-volta-a-atuar-como-delegado-ate-a-posse.ghtml",
    "data": "2026-10-30T19:44:24Z",
    "coletado_em": "2026-10-30T21:29:30Z",
    "outras": [
     {
      "veiculo": "Grupo Jota Sidney",
      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNUmhHNHl1MGJ4dUR1enM0RTNEMlpGTVdIVGJXTktrcDB3SWFQS1dvV251bHNJeDJnRHJYZ0k4STk0Qmw5VEJuUGVCVWhPVi1NVkJQUDVMZjVTX3VuSTBzTlUwTk11ZVgySkFXQWJockEzZF96OW9hd1JvcXFLcUpOZlFZMUtYLTVSZDNhay1EcGZyenZXUks2MWRTczlCd3ZmMmw5dnBOQUwzd2FUSnN3ckVuNDhlSVRRSXRBb25wLVk5ei1wWkRMeXd0VHFaR05NX1hKUzkya2RfQWI4aVpnWElfd2VISDFNWHlXM0xGLXPSAfYBQVVfeXFMTXJrZXpOaEk3cEJtSVVOQ0IycDNsbzFVUzlRTnVXaE9rVGo5MlMwUkI2MjY3bVVLeUZPdDUyZ3VfdndydlpZbEZrWFBleENIV3hlMXBmNVl1THVVV0VFY3BCLVpGNEZmOHREMlZHQWo2eFRyRTJqMnhHN19CTnJ6dDFSR3NIWFRuYlJrZjY1Rk1fMEJSRnJzNEpNUmNfZnJ0Q2k0NGh2bjBOX3RWenJielJhNXVEQ2Z6aWtlRTRvSzA4WkVSdkswQ21kSVk0RFRLS242TU9ub2wyNlRPenR4MHpPX2I4WWI3N0QtMXFEbHV0dkFJaWdn?oc=5"
+    },
+    {
+     "veiculo": "G1",
+     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOenZURnhPSWdWRlZLYnl1NjJsdjh5UGlHTVhhbWdtc2czdEpHWEd4VjJTcFlFS1Z6VW9nYmw5VHcxWEFETi1MckxLRHNvWnFJWVZRWTVwd2NGbzhqamExX2NVeW5tQTlBTDczbF9UQ3JtSExfRlI5ckdVUGd3aW9icmhyYnVXR2txTWJHTVhMLUowVlpJbTBvUlR3WDdMRHFkTUxUS1pWMDNJcDdheDRlVzdTUTBjSjE3YkR2MDlINlppUGNfSHZLUkVwd1VTNXJVVFZ1TVVwSENHa2Fm0gHrAUFVX3lxTE43SWJmQzg2WDRlSjdRZlR2TUdCWEdrZjY0WGRCak5vYXBmR2NlTE5IR1Z1RldxbmVyMEpsR1poazE0UkItZXVVeTM1WnJOYklheUM0RVRGWnhXa2d1T2FyenJTdzZsbHY1c1lfcnhhbzlNaFQtOW15UUdCRmJNYkVfMDFnS1JaOEIzYTFPbHQyUEtEMjJkWm1RQWtQRmhDQ3NNSi1ZVmlJdkFWajdGdzkxcnV5WlQ5YkcycHc5WmthN3gtWjNxUDlUa0tvTGtDcEdTTkp6WFZ2ZGw4V2x6cmpPaGRfcDlwaW01Y1U?oc=5"
     }
    ],
    "temas": [
     "transicao",
     "governador"
+   ]
+  },
+  {
+   "id": "08458ad8e7b3",
+   "titulo": "Julgamento sobre royalties do petróleo que afeta o ES é adiado no STF",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOc0podV9EQTNRb2dkbTlIR0h4R1BVR1ZxMmxTamhLNWVFdTdDM042MTJhVkhrSEdDZXdMZG1rMHRldV9iN0ViZzZGNUNwckx6bkxQUWhPTkFQVFpVVkVaMTNwcWNaME5JR2FMQnlvSUd5dTMzNzk1Zm1CTlBsODF1Vmw5SGJsXzNMNGNNX3ZzQzNJcTJpLVBaLVpxNnoweURsNnUxR3U5UTRteVVnOVpHLTFCekHSAbwBQVVfeXFMTnRYQjNTTlVFVC1DTTdueHpReE1SU0FuTEl5Q29tU1ZoeGdRYzNRdldBYW5JZW9sbjBBRVRSM2NITTAtc3o0STh5LWRwVml3Qy1QbE1Fd1pDczVZcGJZT0I3U1NiYnRlYUMtTXZXdHhicDVUMkktVWR2eV9uY1I5UDNVbi1NYWx0OEpaUUhzbW8tejVDbmV2TnF5NWJZRmVrczJOZ2FGUFBGZDUyVU5WRXJIWTdmWE93NkhBSU0?oc=5",
+   "data": "2026-10-30T19:17:29Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": [
+    "financas"
    ]
   },
   {
@@ -199,6 +407,19 @@
    "outras": [],
    "temas": [
     "governador"
+   ]
+  },
+  {
+   "id": "cd623fb5cc11",
+   "titulo": "'Pensei que fosse erro de digitação', diz gêmea reprovada em avaliação de cotas em concurso da Polícia Civil no ES; irmã foi aprovada",
+   "veiculo": "G1 Espírito Santo",
+   "url": "https://g1.globo.com/es/espirito-santo/concursos-e-emprego/noticia/2026/10/30/pensei-que-fosse-erro-de-digitacao-diz-gemea-reprovada-em-avaliacao-de-cotas-em-concurso-da-policia-civil-no-es-irma-foi-aprovada.ghtml",
+   "data": "2026-10-30T18:56:29Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": [
+    "pessoal"
    ]
   },
   {
@@ -239,6 +460,89 @@
    ]
   },
   {
+   "id": "466540af7332",
+   "titulo": "Preço das flores para o Dia de Finados varia até 300% em Vitória, aponta Procon",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/economia/preco-das-flores-para-o-dia-de-finados-varia-ate-300-em-vitoria-aponta-procon-1026",
+   "data": "2026-10-30T18:33:54Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": []
+  },
+  {
+   "id": "40f7a69bffac",
+   "titulo": "Quem chega, quem fica e quem sai: quais são os nomes cotados para o governo Lula 4",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/mundo/quem-chega-quem-fica-e-quem-sai-quais-sao-os-nomes-cotados-para-o-governo-lula-4-1026",
+   "data": "2026-10-30T18:33:31Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "883e2148a0dd",
+   "titulo": "STF aprova regra que aumenta contribuição de servidor aposentado por doença grave",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQN1VuTzdkZFN0QUcwNHFrcnRPbUltdUF4N09rR25wOEZMZnNQRE1KNlNBUURMSERiSkRJWXB0aFoyVkN3N250OWpmSzY0VVFpbFowWnQ1Z2lITjgzeHA4UURzWDd1d2I2aXVmUEdlRllPbG9UVzN6YUhLQ1JtSEJFaVFjVk1UVVluS0NnRXd0clgtQW9xSy1FMWF3TW9IZEZQS3k2b21MSEtHNUVnM2NRMlVjUWdCYUN3Mm5GLVcwNEtXS1A00gHMAUFVX3lxTE05T0FncFFJaTNDODJ4bkZsV09qS1h3cGE4dF9adVVKbjg0a05jQ2FHVnRpUHh0aW9VZ1VJc0hiRkxyRE41T3liNlFaclgyaG0zcTBJR19UVVpOd2dranpHMDJTdEJLa1dNLWtyTmthcUtGcFBELWhsVXlVaE1lRFZseUNFWWRXQVhTTGFHbmIyQ3AwS3N3LUg2YlUxc0dqNkhBRm9hYVBjbWxsdU9WeHVabk5vdUFyNi1DZTBRdURfMjA4RldlRG91Qi1lMw?oc=5",
+   "data": "2026-10-30T18:24:49Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "f9e4192c2b18",
+   "titulo": "Idaf abre concurso público no Espírito Santo com salários de até R$ 8,4 mil",
+   "veiculo": "Sudeste Agora",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQSWswekVYN0NnNE1iUF96ZjNydGVZam55M3R6dzMtOFdfLUZPQlJrVVNaTGNhYmFBUjUtNGp2MS13RGxTeUFyR3lTcEVtZDc1QVd0UWp2QkMtUkdnQW83cnNzcWJfaXRrY2tySGFUM0dBZ0ljUnpMclJtQlJBeVNRbi04RUxON0lvTkVKak1VanBseERaLWJXejJ2UnN1SDlTcWt5SNIBpAFBVV95cUxQSWswekVYN0NnNE1iUF96ZjNydGVZam55M3R6dzMtOFdfLUZPQlJrVVNaTGNhYmFBUjUtNGp2MS13RGxTeUFyR3lTcEVtZDc1QVd0UWp2QkMtUkdnQW83cnNzcWJfaXRrY2tySGFUM0dBZ0ljUnpMclJtQlJBeVNRbi04RUxON0lvTkVKak1VanBseERaLWJXejJ2UnN1SDlTcWt5SA?oc=5",
+   "data": "2026-10-30T18:14:06Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "619b67b0f0ce",
+   "titulo": "Governo alerta para golpe envolvendo o Auxílio Reconstrução",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQ2ZDcWZBQnlkY3M3b3lhN2FtN2ZrZngtajdReGRYX1gxeEdGVUtMZWJzMXd1U1VxTnJLSTA3QnlTN2VnZFkyM3B2YXFjZGVxeVB1VzA0RnRJdVFFVjhOZ0tNOUo1V3dWZ0dRX0RiZzJkdzdvRlNfb2NxWEE2azNUTkdwNjd1YzNKYWlyR1ROOFJxWm40VGRMdXIwdFBSQlhrci10adIBrAFBVV95cUxNM2RKdFhCVl9BR3gzbVBLNUdqcHpGNWQ1QmhsTWF6TWx1TkduOWNHQU8wNWR5U2tvTmlNWTZBcmhqNUV0ZXljVWo5eGltNlJrUVA1Y2Zsc0RaUU5pb0x6ektrT0d4Y2xXTnFQczRaRFpkWmNNaUdoTEdkdGhWSFpJTTV6S2NmaEdmWkYwWFVJbkkyNHNsOU9EOUtyWmlYY2gteHVxVXlYNEwxTFc0?oc=5",
+   "data": "2026-10-30T18:09:28Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": []
+  },
+  {
+   "id": "421b223f3094",
+   "titulo": "Governo adia mudanças no saque-aniversário do FGTS; veja o que muda",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQTmZ5a3R3Z2xtV3BpX1VJRnMyQXh0NHBmWkpvUlZHRWh5MlJySlVLVXpzNmhtalozWGJ3T3dOUWhiMmdsa0gxM2hvWjk1N1owQVpyTnkxZzhEdzdLaGNPQjk3cE1oTTZtb1hUYTU0RnJxeTVmTzhwTmhRd0FYTTZtZHQ1LVZFNnhMMGdtSjBjdFdVWHM?oc=5",
+   "data": "2026-10-30T17:56:47Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": []
+  },
+  {
+   "id": "4b29d3c0666e",
+   "titulo": "Finados: Procon de Cachoeiro alerta sobre compras e serviços",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQNUJfd0d6Z2tubjRjUHRJYzVYX0FtaVRBUE9kZkY0b0NTQzVMSHlOU0lmY2s4c1Y4WWZsSDFuTDM3NGxtYWl4a0ZJc1JoWTFsenhnZHBPLTVYd2d2NTJqeFQyVnlQeGcwWFpWODlEY3RSOEo4Ti1vSHdmM3laT2dfT3p1Yms4YnJ5ZlE?oc=5",
+   "data": "2026-10-30T17:51:46Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": []
+  },
+  {
    "id": "c8bac1257509",
    "titulo": "Os dois caminhos de Pazolini após a carta golpista de Flávio Bolsonaro",
    "veiculo": "A Gazeta",
@@ -257,10 +561,52 @@
    "url": "https://www.agazeta.com.br/concursos/gemeas-identicas-tem-resultados-diferentes-em-avaliacao-de-cotas-em-concurso-da-policia-civil-do-es-1026",
    "data": "2026-10-30T17:27:46Z",
    "coletado_em": "2026-10-30T18:51:13Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "G1",
+     "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNaTc1TnU0NmdEa1R0UWROamxwSXdaanF2NnJLMnQxVmhBUFp5OHhEY0gyU2ZTVlVNRm1mYllnNXlYVUJlVUlNcVRZTGZtOHQ5RmxXMGJNSVJQMjBobDQxVkhUR2M0QTZORVNEajI3M2dQa29OZEg1RXZ6and6ZnVNSHVNemNjWWFtbE9jdlM5dnRsVHkxNEVNNWtlMjJXOEFnUnJNUFQzc1lhOEs0M1lxSmFwaUJJUTJEM0l2Ymc0d0Y4ZUR1WFpYRjh3dWZTX1gyWGNZN240bjdlT1ZlYy00NWo2UTFXVlZmVDhmLWlINlNEMGdjd0Z2TTVId1V1NUg4b1ZmVjM2eXlyNVJBbjRZbdIBnwJBVV95cUxQRnA1aGRiX1ZfY3F3REx2d0pqOThlS21XejFVWl9QTVBfU3Bfdm45eGlmeG0taEl1ZUtEby1IQUd1RnZmUWxuVzJSZHMxWWwydFVPLWNiMmVVZFJKRk1KQkJHengyLWFFWld1alRyRXhQVjNzZk9HaEhhM0ZnRVlZbF9iS0hKaU9UZVFFN0t4U1ctMHlzTHM2TElJbEtvM3VEZXUtS01fU1pjX2wzVVllcy0wQTZqYmFLVm9qc0NHYzN6V2k2c3FVQmxtUEtsT1F1Z2hFRDJEeGhubTZJWi1xRFlwSXpVTks4aVJJekdnWWJBbTJhcjhGN1J6cnVqZ19OMGYwalpZSFhSMjZEQWNVTzVhdGU2RUliV1pDbERnaw?oc=5"
+    },
+    {
+     "veiculo": "G1 Espírito Santo",
+     "url": "https://g1.globo.com/es/espirito-santo/concursos-e-emprego/noticia/2026/10/30/gemeas-identicas-tem-resultados-diferentes-em-avaliacao-de-cotas-em-concurso-da-policia-civil-do-es.ghtml"
+    }
+   ],
    "temas": [
     "pessoal"
    ]
+  },
+  {
+   "id": "841eb5faaca3",
+   "titulo": "Governo adia regra que limita antecipação do saque-aniversário do FGTS",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQOHV5NzJDejBIVDhGVUtuUVkwekdLQW94RTZtZVRWOWxNbndIR0V2ekdpQWxzMjBUTXA3NzlkOFh3bTRPUDd5NEtKekNMTVU0akJNNHdfZXY2NjM0bWlmd1ZXTks3cTRSczlaaDloOGxmT083X1V3ZjB4Z0pxazZsS3RUb2VKTUdMREU2anFuUEhyUGdyVzFMUXNHVUFPWmI4Wld6SEhOZElncHF5dmc2b2tFVXltd9IBvgFBVV95cUxQTkwwWG1rbW55MlprWFhLdTBRYjRCM1JXTzlTV0JiWmhjSXJaZXpDNktDQmpfc1luZjVxS1Nwb3pHbVRpVGpuUzZ4U0hPdllTM2gwSjVmcm1IbnFPdS1FYngzZzhDckViLWc4YnIwRlpBdUJ6TVRUOFFvbWNnNTZfMzdOS09XNWt3RjEzY3BlcU00dkJEVkgwaGRnMEFSTG9xeHBISEVBeDI3OVVJdndFZl93eWZSRDJtWXBkSW5B?oc=5",
+   "data": "2026-10-30T17:27:13Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": []
+  },
+  {
+   "id": "d85172ae3c17",
+   "titulo": "Vote agora! Escolha os vencedores estaduais do Prêmio Biguá 2026",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/premiobigua/vote-agora-escolha-os-vencedores-estaduais-do-premio-bigua-1026",
+   "data": "2026-10-30T17:26:32Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": []
+  },
+  {
+   "id": "83681bc1eb64",
+   "titulo": "Golpe da CNH: criminosos enviam mensagens falsas do Detran pelo WhatsApp",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPM3JNcFBaaXB5TncxWExET01LN2MxMEZYLURTMXNPTnZSVlRwMEFpODZRU1dYQlB6SkNBV0xOYUN2RFZVZUJkT3dSUVk5a04zRTFYVmI2dEs4QWxUVlRHODMtMldfbWFOZjVlTkJhTXE0X2lGWWsxRFRPaU1xWlgxa2NmY24tMmFCVVlvVGdIbG53Y2ZaMk9KaWh3?oc=5",
+   "data": "2026-10-30T16:51:35Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": []
   },
   {
    "id": "0dcb4402826e",
@@ -288,6 +634,96 @@
    ]
   },
   {
+   "id": "de2691f8d4ca",
+   "titulo": "Apex Partners X Fernando Cinelli: desembargador recebe recurso sobre suspensão de direito do fundador",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/seguranca/justica/2026/10/apex-cinelli-recurso/",
+   "data": "2026-10-30T16:10:48Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": [
+    "restricao",
+    "contratos"
+   ]
+  },
+  {
+   "id": "cd7f2ef56c6e",
+   "titulo": "Deputados dos EUA cobram explicações de Rubio sobre ajuda a Flávio Bolsonaro",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/mundo/deputados-dos-eua-cobram-explicacoes-de-rubio-sobre-ajuda-a-flavio-bolsonaro-1026",
+   "data": "2026-10-30T15:58:35Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": []
+  },
+  {
+   "id": "b8a837083de1",
+   "titulo": "Sejus suspende contratos de tecnologia de rastreamento de viaturas e câmeras policiais",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPcm51OWI1NEdhTjFDVFJEM1hXMEdqV2VjRjJXc3lLVkNtSEZhNmxOYVNZNmM3OWtGWjJObEp2MWZHekxLMnFiNVJzMVcteGl4a2xrX1ZyanAxZ0Z2NEhzdHJLdVpCSFZqamVtT2FwTDlFTEU4UkZMOWEzV0M2TUZRSVNkTWlGUkZYdzhrdHI1and2Q0RzREo5enlBT2JnS3g1Znc1WVdnUm9KXzRId3lJcUE3Ny1UYm95Yi1CTHcyd3Q0V21KQkkwbHY3aW5Tbjd4WndZQ0JzSjJqWENpSlRkTHM3VFJZREVrVXhYeHNRWGM4blRWUXk0LVhoYzVmWEJBWUdtd0x0MGPSAYgCQVVfeXFMT3JudTliNTRHYU4xQ1RSRDNYVzBHaldlY0YyV3N5S1ZDbUhGYTZsTmFTWTZjNzlrRloyTmxKdjFmR3pMSzJxYjVSczFXLXhpeGtsa19WcmpwMWdGdjRIc3RyS3VaQkhWamplbU9hcEw5RUxFOFJGTDlhM1dDNk1GUUlTZE1pRlJGWHc4a3RyNWp3dkNEc0RKOXp5QU9iZ0t4NWZ3NVlXZ1JvSl80SHd5SXFBNzctVGJveWItQkx3Mnd0NFdtSkJJMGx2N2luU243eFp3WUNCc0oyalhDaUpUZExzN1RSWURFa1V4WHhzUVhjOG5UVlF5NC1YaGM1ZlhCQVlHbXdMdDBj?oc=5",
+   "data": "2026-10-30T15:56:08Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": [
+    "restricao",
+    "contratos"
+   ]
+  },
+  {
+   "id": "3d2c1da42649",
+   "titulo": "Compras internacionais de até US$ 50 terão novo imposto em 2027",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOa3Rmbnk0Sko2MTI2Q2o3WTVvV1dnSXpNY18xb1VHTFg2cWlLdE1FYmp3d3dhMC0tMlFxd1F5N1RXM0lXeVpDUktQS1l5d3VyNU84S0d2VTBYTVEweXg4WG93SlF2d1EtVkF0Wmt3VERqNFpVTXloZmd0ZTdsX21vWTJhTlFfLW1sWVZMMkFR?oc=5",
+   "data": "2026-10-30T15:46:16Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "c043c492d219",
+   "titulo": "Sejus suspende contratos para rastreamento e uso de câmeras corporais por policiais",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPSDZGb3d1MlBwN3dqcW14ZFE4em45STdiMXhTUnEyNmwzNUQ5ZG1PS1hlb0d4LXpyZ0FKWXVGbGlqd2VrX1RjcWR5aWhqOGRjV0tLS3BMOFJBSFp2YzNRS3BRLWwwcktqclhwT0RURlJMWW1rcGEydExCSGtadWY1Z3dzaEkzWWt4Z18xc2p6cmpKcXVwd3BMcjNjYkZIal9rLVZGV0hqUXk4M01kX2FIQkNTT19pWGt5TXB6RnhwRlBGN1lGaE1kSHNNaEF2SkVablVjWXlrdWtWcVNlRk02UUVIWUhVVXAwOF9jem1ZZEZsd08tclBj0gGGAkFVX3lxTE1DZjNNX3ZZb2ZEcEEweG12WHk1cmpMUWJSYjUwX2hkNUxUdDU5QzdrRzM0aGNUT2ttUkhXc0xicVFEY3dwUnJRUURfMXF3aXRDUmx3LWVnTWxEYnBQQllFSEQtbFdaUEN5eUcwbWM0dVZGZWtxU2F2Q0loWGhxdUdOSGh0SDhHbHJySV9QNTNSUTBsLUFsTlZDUWN1dUJmUjRYM3pYQ1lBa1phbzZyX2w0YklHSXVuR0ZiMmowa0tJTXFNTng1Y3hWQVo4cjN1VXVfQkpxUy1hR3lrUW8ycGFSblBzT09yQ1NwTzRra1hHN01kdFU2NFdFNlhUSnBOaVJMcmVDcHc?oc=5",
+   "data": "2026-10-30T15:32:01Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": [
+    "restricao",
+    "contratos"
+   ]
+  },
+  {
+   "id": "ed42ab59aacc",
+   "titulo": "Secult abre inscrições para projetos culturais do Programa Djalma Maranhão",
+   "veiculo": "Blog Antenado",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNN2J5dFdSaXRUekhIb2xzRTdUQ083Zi02blpuOENpTFRNLTNHTUVTSlhtSWd4OHhSODBjLXVDeWxlR1FXY3lMZnlMZ0VVVTlTMjJxZ1dSQmY1bnViQ2hRcGlnTWcxUUZCOV9SR1BkV2ZtSDBXMVdpeVN0dkQyelZJS2c0eksyMU5obGJBQ2VSQmgtX21NZGxTNnhuc0R5NTFMcnc?oc=5",
+   "data": "2026-10-30T15:12:28Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": []
+  },
+  {
+   "id": "1a923405f185",
+   "titulo": "Governo federal registra superávit de R$ 4,8 bilhões, mas déficit ameaça meta fiscal de 2027",
+   "veiculo": "Folha Vitória",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNUkpqT0pNdC1YV0J1ZmkyTWFiUEFEaHFJVlF0VXNjYWEwbXgtM0pDZFVkVmttSU9ldV9xTGN5VmZGSGF1cTJSc1Zzd1dwODZ1aENLdWVFbzBUMDg3eTNMZFNacU1TZjhmOUItWlN4bHlMZTNjcDJ1amg2MWJHdmhlT0swNGRSakYzSW5yN3JxcXJMaFlNSW5RMWZobUV5TGVuYjFYYVVoMjVPZHN3WXQ1M2JfNG1McXZUUkxWZTRib3d1eWFweVhvUEQ5aw?oc=5",
+   "data": "2026-10-30T14:43:05Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
    "id": "efd66b9db1a6",
    "titulo": "Empreendedores de de Vitória, Serra e Linhares lideram financiamentos do Bandes",
    "veiculo": "Folha Vitória",
@@ -296,6 +732,20 @@
    "coletado_em": "2026-10-30T15:32:37Z",
    "outras": [],
    "temas": []
+  },
+  {
+   "id": "c250fbfa61a7",
+   "titulo": "Juros da dívida passam de R$ 1,2 trilhão e contas públicas desafiam novo governo Lula",
+   "veiculo": "Folha Vitória",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOTjJzUDJ6LTA5VkNWLVlfTnpiaUtsclZ3eUJJNzYtSlpiVnZtd2N0MWVTLTJyV0s2VGtQOGpRa1gwendiMng1cVhyMlVPaVRFUTlsQ0d5b0I4THU3aTdwdlR3YjJ1VnhNZjN6czdBTTYxX09MaFBycGpkdXExOFhONzdhalFOalNfWGdmcnE2X2NfallMNEI0N0dBWno4X29LOTIybm50T1FwX2VyYWUzZ3U1NjFXWmo3WmptcUlJcnFsZGM?oc=5",
+   "data": "2026-10-30T14:20:09Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": [
+    "transicao",
+    "financas"
+   ]
   },
   {
    "id": "f053f80bdcd9",
@@ -308,6 +758,19 @@
    "temas": [
     "transicao",
     "governador"
+   ]
+  },
+  {
+   "id": "5faae07152fa",
+   "titulo": "DETRAN Alerta para Golpe com Falsas Notificações de Multas e Suspensões da CNH",
+   "veiculo": "Atualiza Bahia",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPTU95S29acXd4MENvMmw2bWJvMmxENmlNTjRJX1F6anNWY3VpSTNOM04yWjdlVHdUTkJFYnlNY21XV21CM3d2ajlMU1BrU0ZtQXMta0I3Q1dtMzVTWUpuRGpLVVZXTDlYbmJJNGRWUjVnb2czMHgyTV9hT0tLV1NiNDdqYVpSTFZVdVlxeXpxUG9xZU5VR21MOHhlSGRRLTJvdFhOSkNrZHpLQW8?oc=5",
+   "data": "2026-10-30T13:56:06Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": [
+    "contratos"
    ]
   },
   {
@@ -325,6 +788,54 @@
    ]
   },
   {
+   "id": "986d3cc271c6",
+   "titulo": "Fim da passagem dupla! Vila Velha ganha integração com o Transcol neste sábado (31)",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRnpSUXo1ZllvMzN6cjlvcXlId2ZHMEJiNnY4OGtUaGsyYmpxR0U5RTM0NVRlQWhJVkZXSkJ3bVFzakRqajcxYzBjal85MHZzZHFWbDlOSnZ3Yjc0dHZxZ0FBclI0bDJJR3JIOGhHZVpPMl95OTE1S1RBYUNNZTFXNjMtQWMxNXJ4bkIwQXh5WmFBZzZCRjd6Skcya09USUhDeGJUZ3V3?oc=5",
+   "data": "2026-10-30T13:15:39Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": []
+  },
+  {
+   "id": "f5b75da68d0f",
+   "titulo": "Secult divulga editais com recursos e oportunidades para artistas no Piauí",
+   "veiculo": "180graus",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPT296TmNab3BFeGFia1NIaThKb0pOazhwaDgwMGowMURRenMyZGVqalYxUTdfTEEwSkZNZnVmdU1QQmVNS0p3V0ZkQlI3RnZMNWJBSTE0SzRudjlJRWVITGdWbm9yZE5hSmt0aXlvS2FzQncwM2MyUTE4a0FVQUE0bnJaOUU1alB1NFBFR2VKNFV3Q3VGTDRtZ1gwRXBpN2xCUFFYZWY5VVJVb00?oc=5",
+   "data": "2026-10-30T13:15:00Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": []
+  },
+  {
+   "id": "20ecbaf6a5b1",
+   "titulo": "Sejus interrope contratos de segurança por 30 dias",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOMTQtcUprWE5VZnFRcnRES2thcFNQalJMd3hEZklTNVRJS011ck1icDh6WWZ2cTVXMV9Ic3l5UDc0d2hUNHdWRTVoSkRQVTdPRnhKam9hdmpnUW1MeTdEYWZsRW55eV9WYjhDWENIQlp3cHZGMHR3aW1lbmZWdmhmV296dmwxSU1XX3dwMnd3dVYxcXdPRzhRQUZ0ZG1TMWpfSVJFNTBZcHZUNWtaVGpUNkhWaE5ObVhybXFjZ1h0SG1BYXA5dHVSOFgteHV4cjNuUjNPVXRn0gHWAUFVX3lxTE4xNC1xSmtYTlVmcVFydERLa2FwU1BqUkx3eERmSVM1VElLTXVyTWJwOHpZZnZxNVcxX0hzeXlQNzR3aFQ0d1ZFNWhKRFBVN09GeEpqb2F2amdRbUx5N0RhZmxFbnl5X1ZiOENYQ0hCWndwdkYwdHdpbWVuZlZ2aGZXb3p2bDFJTVdfd3Ayd3d1VjFxd09HOFFBRnRkbVMxal9JUkU1MFlwdlQ1a1pUalQ2SFZoTk5tWHJtcWNnWHRIbUFhcDl0dVI4WC14dXhyM25SM09VdGc?oc=5",
+   "data": "2026-10-30T13:13:58Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "2164e36c1906",
+   "titulo": "Restituição do Imposto de Renda: Receita paga R$ 531,6 milhões em lote extra",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/ta-no-lucro/restituicao-do-imposto-de-renda-receita-paga-r-531-6-milhoes-em-lote-extra-1026",
+   "data": "2026-10-30T13:12:01Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
    "id": "bca4985db0be",
    "titulo": "Gasolina, diesel e gás terão aumento de imposto no ES em 2027",
    "veiculo": "Folha do ES",
@@ -334,6 +845,19 @@
    "outras": [],
    "temas": [
     "financas"
+   ]
+  },
+  {
+   "id": "c429e1d8e96a",
+   "titulo": "Golpistas utilizam contas verificadas no WhatsApp para enviar falsas cobranças do Detran e ameaçar suspensão de documentos",
+   "veiculo": "Jornal Democrático",
+   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOZTktUERvd2dGVGpHLW1lN2l5MUt1TWlpZnBFSVdnN3dVVzdfSDZlTTlZQWpYZ3lxVFRJclVJZVFwV0ZPaGtmbWszdG51U1ZxdG1tcl9OakY0dDhiU2tUclRiRk9aU0ZnbDhUTmhlUFo3akgwNWhmd0lZOHp6OFVDMmpxQ1ZMV292VWVOT0ZtY0M4aFNDVUUyWS0xVTMzdVFXOEJPVlNhSEh3R2xNZ1VXYWtUSS1SLW5lTWszdHNEMmNqaDhiejRqZDBMdXVuZXZzMV9HejF4ZzlLaFZJcUNPZ2ViLXBOaGt2VHpSN1p5aC1DMk80?oc=5",
+   "data": "2026-10-30T12:33:55Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": [
+    "contratos"
    ]
   },
   {
@@ -360,6 +884,20 @@
    "temas": []
   },
   {
+   "id": "35e6c3774c5e",
+   "titulo": "Sejus suspende quatro contratos no ES",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPdEZCZ2s4V3hqU3dNblhuQS1NdHQ4QlJPZlBQY3FYRkhGZFFodTNxM1FRd044cXJMNXc4VzJqT3pBSmtXSmFlaklhd0xSZG13aWtvTERZbnMwQWpqSTJ6TXlqclBIcklWRXJpb0IxWmk3bVlwWTI2ZC1WNjVVTWVkb0pzam9HNkZkQ3c1TGZ2UXB6SFFmZ2FEendkaUFmNHZFZk5LSmdwVndDS05YWG50Qk9BbXMwUdIBxAFBVV95cUxOV1VDLUtnQjNOSkhheHAzNHl2cjNmdENiYmlYejdLbXY5Q21vTmVVNVhhRkdTdVRvWXMwejBCZ1hMZXpCaldSV3FNeXJyWHFyVVY3TWxCZ1ExbG91SWVkY3NaNUlzLV9GOVNURmQ5V28wdmFmSi1EM2ZhRDhUckx1VW9ZZlZHeDRheGVoNmw2WWlJSDFmU0NmemI0RktqZks3XzZELVdPTTJteUk2YVFwTmd2U3JtTFh2dmxGUGhKLVo3WlNQ?oc=5",
+   "data": "2026-10-30T11:47:57Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": [
+    "restricao",
+    "contratos"
+   ]
+  },
+  {
    "id": "699b04333780",
    "titulo": "Quem são os homens escolhidos para organizar a transição no Governo do ES",
    "veiculo": "diaadiaes.com.br",
@@ -370,6 +908,19 @@
    "temas": [
     "transicao",
     "governador"
+   ]
+  },
+  {
+   "id": "3e639e505e2a",
+   "titulo": "Presidente do STF adia julgamento dos royalties do petróleo",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/abdo-filho/presidente-do-stf-adia-julgamento-dos-royalties-do-petroleo-1026",
+   "data": "2026-10-30T11:33:29Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": [
+    "financas"
    ]
   },
   {
@@ -399,6 +950,19 @@
    "coletado_em": "2026-10-30T15:32:37Z",
    "outras": [],
    "temas": []
+  },
+  {
+   "id": "5107bafc247f",
+   "titulo": "Otimismo no ES com decisão do STF sobre royalties de petróleo",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQWmc4UTlBbXNsZm1xNTZ0QXdONjhWM3ZXZkx1WXF4R1ZuVjlRUmZOOUdFY3RuR1gyYTRhdFNadERHcFkwMmI2V1RtdVRGdnN4bUNSQUdhWGptOEUwaHJiT0FRUV9sbkh2Q3dyZEV1ekczb3V1aVptanJuOGsyNldkaEVaS2RnMkdSUjVTU3J0RUJyVnlLSG9wYU01VldyT0syQmVJVEdXOFExZ9IBsgFBVV95cUxPckJRQXFDLUV3M3VDdHJ4VGNhVkEtZWl1SVRsRGd0ckJBempRYlRCcWRsSExwb0E4TGZCQWt5Y3pKTnJhSzlNU1lnNXhPclp4eXFkeGtGWnZweHd2ZkNuVjZWMHU4ZUdLbnhvUk43RlFkRUFoaFloZXdteGhkZ2tlU2JBV210OEZjNmFYbjdaUExnR0NQX3plR1prT1cyV1I3ZXBRUnFiVUVDeW5NVTUwMWt3?oc=5",
+   "data": "2026-10-30T10:40:04Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": [
+    "financas"
+   ]
   },
   {
    "id": "1908fdfd38f4",
@@ -470,6 +1034,17 @@
    ]
   },
   {
+   "id": "fa5f75c76d4d",
+   "titulo": "Detran reforça cuidados nas estradas durante feriado prolongado de Finados",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOMWdabDZYbFdmZnpPRlJtNjRlcmJZZEFUTEhPTjV4ZnZkdm9iY2t6djJCNU04V2JBQVNSX0R3eVR2T2dBOXB0TnVsbmxZLXk2WXlLb3VxdS1mQmFtY2ZVaUUxbDVaOWtDUWdTR21iNTNMbVJJekVWeTE1UFpKQ05PNkxaYjQzVUYyOEdLaC1qM1ZrbFBiclRJS2d5bDMzS3djMjNWbkFPNDJYU0gzSTAtRWp1OENfbjdzcThjaE96S2xMNjg1WElOQTFDVHVZZGFmbVE0bDE0aVU3X0toN2lTTmJiSnBwODJfMkY4QjJzMl9UQdIB8gFBVV95cUxOMWdabDZYbFdmZnpPRlJtNjRlcmJZZEFUTEhPTjV4ZnZkdm9iY2t6djJCNU04V2JBQVNSX0R3eVR2T2dBOXB0TnVsbmxZLXk2WXlLb3VxdS1mQmFtY2ZVaUUxbDVaOWtDUWdTR21iNTNMbVJJekVWeTE1UFpKQ05PNkxaYjQzVUYyOEdLaC1qM1ZrbFBiclRJS2d5bDMzS3djMjNWbkFPNDJYU0gzSTAtRWp1OENfbjdzcThjaE96S2xMNjg1WElOQTFDVHVZZGFmbVE0bDE0aVU3X0toN2lTTmJiSnBwODJfMkY4QjJzMl9UQQ?oc=5",
+   "data": "2026-10-30T01:01:11Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": []
+  },
+  {
    "id": "963205b46658",
    "titulo": "Detran prorroga validade de CNH vencida em 2026 e adia renovação para motoristas",
    "veiculo": "Folha do ES",
@@ -477,6 +1052,77 @@
    "data": "2026-10-29T23:02:45Z",
    "coletado_em": "2026-10-30T15:32:37Z",
    "outras": [],
+   "temas": []
+  },
+  {
+   "id": "36bce58c29c8",
+   "titulo": "Incaper reúne especialistas para discutir riscos do El Niño para a produção rural",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOR1M3blFYWVphdkJKMzhobHg4b2xfVXFFU2JHNjhlWENKc0NnNGFDMlVfU01oRUgtRmU2OVRpMTM5VVpvSjRQSHBMMlRfVjB6RnZjQ2xhN3BPWWpxUmxTcTVKQlR4ai1FR3AyOXFScHpHbERyRWtVdzBINlg4aGR5V2dILVYxUlEyWG9oekhFT2s3Q09BWGhtSWpKdVBmMjlITHZaVVZkT3V2RWpCOGR6WTJ1SVl2c0VuNjNRbDR5bmhtMi04LTg4VUFPQVAyWHpqVF9mVHlzUWxUY1poaU5Xd2NEd2ctU0FLY0JHVHRuTmlEQlR2ODJaVTF1cjhzNWx2QS1B0gGDAkFVX3lxTE5HUzduUVhZWmF2QkozOGhseDhvbF9VcUVTYkc2OGVYQ0pzQ2c0YUMyVV9TTWhFSC1GZTY5VGkxMzlVWm9KNFBIcEwyVF9WMHpGdmNDbGE3cE9ZanFSbFNxNUpCVHhqLUVHcDI5cVJwekdsRHJFa1V3MEg2WDhoZHlXZ0gtVjFSUTJYb2h6SEVPazdDT0FYaG1Jakp1UGYyOUhMdlpVVmRPdXZFakI4ZHpZMnVJWXZzRW42M1FsNHluaG0yLTgtODhVQU9BUDJYempUX2ZUeXNRbFRjWmhpTld3Y0R3Zy1TQUtjQkdUdG5OaURCVHY4MlpVMXVyOHM1bHZBLUE?oc=5",
+   "data": "2026-10-29T22:52:39Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": []
+  },
+  {
+   "id": "555c14880d53",
+   "titulo": "Confira as vagas em concursos e seleções no Banestes, Idaf e prefeituras do ES",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNNGthN3BDNmFTcTdPcTNkQ0hSMHRmeTR3djkyVHk4STBtZU82VW50ZmdrN0RjM0xzUzh5N2Jzc3RraUFVbmd5Z0R1VldGZ2R6ajh5XzJBNjhMdEU2LTZnbFVLVjRSTHAwaWNHSmM5a0FpZlEwVHFFUTl5WjJYTldpODNUSHIyejNSQXBDNmt2NnE0M0MwdTdaUFZLSTZQT2M2UUN0ZHZQREFnTUJRSi1LOFZIcWh4SFB6bkM5N1R5b19xaHV0bnpXdW9yTWp1U2JOc0VGb3p1a3JQa3F0QXhJV2t30gHiAUFVX3lxTE00a2E3cEM2YVNxN09xM2RDSFIwdGZ5NHd2OTJUeThJMG1lTzZVbnRmZ2s3RGMzTHNTOHk3YnNzdGtpQVVuZ3lnRHVWV0ZnZHpqOHlfMkE2OEx0RTYtNmdsVUtWNFJMcDBpY0dKYzlrQWlmUTBUcUVROXlaMlhOV2k4M1RIcjJ6M1JBcEM2a3Y2cTQzQzB1N1pQVktJNlBPYzZRQ3RkdlBEQWdNQlFKLUs4VkhxaHhIUHpuQzk3VHlvX3FodXRueld1b3JNanVTYk5zRUZvenVrclBrcXRBeElXa3c?oc=5",
+   "data": "2026-10-29T22:51:12Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": []
+  },
+  {
+   "id": "ce949b36aa0d",
+   "titulo": "Diretor do Detran diz que prefeito de Cruz das Almas vive de propaganda",
+   "veiculo": "A TARDE",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQc1JUc2Z6S1J1T0NWbmhSR0NPdmxKNFVIQ2hpZEUxWkMwWktBZ0I2WlZKOHZ3bktWRVR4TUw2Rl9EaUU1NDIxRjUzOWNCWFh0bHBFdEFnWjFCdm4tMkpjZXJveHJSTGtkSkVGZjNqMGNpaXRCR0ZwdTFQSHFRaFY1SHBmbGJ6NEQ2RkxNdkh1a3A0a3BDb2xkd2pmcmZQd3N0aDJYZmNtN2IzZmlVeVhB0gG3AUFVX3lxTE1nWEoyRjVwWG1jZnNuYUtoOFY0ZTE4THlocTlReHRhd2VUcnV5d29TcW5HR2FPZVM1dzVFTTlzbk1NVWl1cnBzUEowMVpNUWV0cHN6OTVkdFc1NzJpaFNPcFhseVc3R1cwVjBDMkQ4UUJmam5pczdwY2lkNTV5bWd0ZjJoT2xqRm51bnpkWXRqdGl3cGRqb0dEWm1oVTVGMWxNdF9lcDRRT1Q4TncwdUV2QkRLTXdHQQ?oc=5",
+   "data": "2026-10-29T22:49:01Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": []
+  },
+  {
+   "id": "5b6cb1798da0",
+   "titulo": "Findes apresenta 65 propostas para o desenvolvimento do Espírito Santo",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQenIzYXIzVDlBN1o2UzNUQnNTQTJtb21CQ0M0Tnk2cG5FMWVHZFNYaHp4OThzYlpvMHFjam9qa2hXenhCSHg2Q0ZqZ0o0NzVFNDdoN3p0OUp1YnRpaEtRMlVuV0l2U0M3dHZ5SDJZcjI0RjZPX2w5dEJNWDFsaW4ySWUwcW1Ec0FKbDdEQkFXUDlIYWpjcnllQ0NWS1dRd3FUb3IyZWd3aktYTllSMlg1YlJpVXJwUdIBvgFBVV95cUxPWjIwNWhqc05ONkRGdjAxc2oyYXlMWVJGUjVxbGxvRE9oOXA2NjhFZkdqOUlLekVLTS1Sbjg2UHVBd3FHTXhweXNVX0lYUjhjbHpEUWZsQmhkQTdoQXlhbkM2TktnVGtqM3R0S3c3WFYzSG90cm5qZXlveTlSMFEzamZNM3RRWXhfbmZhWDZyckRxa1NCT19OSlhKMWlRUy1tdWdnWFhpSVZYSEJkNDlUSVBYU2o1eEo1YXdjQ2hB?oc=5",
+   "data": "2026-10-29T22:47:00Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "38905099947b",
+   "titulo": "Sejus suspende contratos de rastreamento de viaturas e câmeras corporais",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQbDJsaVdFSGhXWUNhbHgweUJadFlXbllxUFhKbEJEUF8wdy0yWmhTQ2FNLWhzNnlMeWItQTFnZ3ZXMEhlaGNRcHp6bTRTbFdIaWJYVFZWSXBUX2ZaWEswTTRaWktfaURQWlJzM3RtZlFVRnh2M2JqNWV5S0RteDZnOFhBSVdZeHJSRTlnd253TXE3VnZERVl1YkUzMDRBa3VwckZjTE9MVkZtY05JRVJWWC1zWkM5OHBqaEZqbG5SNnVQdUNGSDBIUFFtaGpFaExkOTVyZVY1N0dVSExhMWxZa2JsZWVRdlRpWFluYVRFdVVUREtKZFRV0gH3AUFVX3lxTFBsMmxpV0VIaFdZQ2FseDB5Qlp0WVduWXFQWEpsQkRQXzB3LTJaaFNDYU0taHM2eUx5Yi1BMWdndlcwSGVoY1FwenptNFNsV0hpYlhUVlZJcFRfZlpYSzBNNFpaS19pRFBaUnMzdG1mUVVGeHYzYmo1ZXlLRG14Nmc4WEFJV1l4clJFOWd3bndNcTdWdkRFWXViRTMwNEFrdXByRmNMT0xWRm1jTklFUlZYLXNaQzk4cGpoRmpsblI2dVB1Q0ZIMEhQUW1oakVoTGQ5NXJlVjU3R1VITGExbFlrYmxlZVF2VGlYWW5hVEV1VVRES0pkVFU?oc=5",
+   "data": "2026-10-29T22:45:41Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": [
+    "restricao",
+    "contratos"
+   ]
+  },
+  {
+   "id": "f6358400eef1",
+   "titulo": "Concurso Idaf ES: edital oferece 14 vagas e salários de até R$ 9,2 mil com benefícios",
+   "veiculo": "auxilioconcursos.com.br",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPRGhqUWZlMktKbXF4MEhqZXNLeFFINW8xcWZBQnNkMXVNYUF2X3I0bE0tTVR6d0ZaQXF4b2JIY0pEN3p2dVVtV2wtLWpOYzM5UGJOaVphOVNBSVVQY2E0a0ZGWFpNRkxZdjlRcHhFY21HY3RTdW9GREVBcE5RTFFvSFh0eGwzNzlnRm5HOU5jai1fVC1VdnV5bjdzZGJqN0liT01OVXpVWTBleWk3ZlFJUXZwcXYtUQ?oc=5",
+   "data": "2026-10-29T22:42:00Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
    "temas": []
   },
   {
@@ -490,6 +1136,17 @@
    "temas": [
     "governador"
    ]
+  },
+  {
+   "id": "4d2e8738d0a5",
+   "titulo": "Integração do Transcol com linhas municipais de Vila Velha começa dia 31",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORnlZaTdpLXVFaDdDSFhONzh2RkVzb1RRbzB4SG5yWEo5ZXVSU21GbmptOEQzSFlFUG8xeWFXWVdXUm5MckNQT2h1YlVTVTF1bldEVlZ1cWt1NWZpbmxQMi1waUV6cndkRHVuMU1DVE5uX3FZU3B5blBOSC10QzE4ZUtPT2ZZOGM3dzFIYmo5aTVzajF5MTMwQ3BkYVlHcHpXeWtSMHpkeEotSmhaY3puTko0cW1seEHSAb8BQVVfeXFMTUI2NW1Tc2xPd0JuWTdqaTZQbENEaXRDckdpaVphQk8tZHVueXpwVHdVWUVzR1pkVHM5TkRqdHdZcDlDQ2tLMHg2dmNjMkJySk9YSHFObjVCTjVuNDlRWEx1d013S0QwdWNLMU4zRDlhZDAtaWVIRjYxd1F2ZDZRcjFycGFmVEl4VEU4X09SMzhXWFJaNnZMQVpFczk3cTBQTVpwVnJ2NFM0c2Y2c3o3NnYzcFNpTHhlNUNpQ3lUVkU?oc=5",
+   "data": "2026-10-29T22:18:49Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": []
   },
   {
    "id": "ca98b1f0e26e",
@@ -516,6 +1173,19 @@
    ]
   },
   {
+   "id": "3ee3ce694a14",
+   "titulo": "Sejus suspende uso de câmeras corporais, rastreamento de viaturas e biometria facial",
+   "veiculo": "A Gazeta",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPcDYwRXNOUlJoeUlTa0MzQjdid3I0aGhhbnZLaU5oTTA1RW80NW8taXpiemtSTG0zZUVvZ1p6Yzk2dDdSWnNFcGx6Wm13SVVHX2treHBfam1mUjhSakVCNkxZTENRU1FISDVlX0ZNS21iOHViUHlrQ2tTdmhtdGF1ZHJZTjU1NUdXTTFwSkJKd1BvRWxEZmpXaldDRUg2NDVQOUx4TXgtN2dmSGZRaEI2ckRlZmdYeXVVbk1IWEZZUkNoeGtMME5yTVFwVmh6a01qY0JzYlh2a3A?oc=5",
+   "data": "2026-10-29T21:07:00Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": [
+    "restricao"
+   ]
+  },
+  {
    "id": "d80abe53b57c",
    "titulo": "Governo Pazolini vai herdar gestão com 32 obras paralisadas pelo Espírito Santo",
    "veiculo": "ES Hoje",
@@ -524,6 +1194,7 @@
    "coletado_em": "2026-10-30T15:32:37Z",
    "outras": [],
    "temas": [
+    "restricao",
     "governador",
     "contratos"
    ]
@@ -547,6 +1218,41 @@
    ]
   },
   {
+   "id": "e4f97d52263c",
+   "titulo": "Sefaz tira R$ 430 mil de fundo da Receita para pagar móveis após faltar dinheiro no caixa do governo do Amapá",
+   "veiculo": "Imediato Online",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPRW5WWWlwWWhhUUhJLVFNdFo4Zjd1a3dVWmFtYXlpQnNhRlgyOVdwQi10QUQwSF9ULThDR1V2UURXZHJOQ1l6MU5taHRrZXI2cDlMQkpHRnh1TDdrV3dpZnp3ZXlKM050aFpheE92Yi1INldJLUs1eS13OE56X3NTejNsdWVaUVJNeVE4Z0RpQVZpQkVvMl9CaFR1YW56UFFQOVZEWE5VY19vQnUybEhILVdpYWNfSHpyc184RnZwdEtrcmdYUjRZZXVmZHBkaFlGOVQwRnhVX25hQVhqT3JtdjRvckJRZw?oc=5",
+   "data": "2026-10-29T20:23:37Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "3dd43200486f",
+   "titulo": "Governo envia alerta sobre assédio eleitoral e orienta trabalhadores a denunciar ameaças",
+   "veiculo": "Folha Vitória",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQSVdteVc5dG9WNTVIUVZieTVrdWhUWE5YY2JmZVVBcWRWWEkwUG8tc2J1aGJYSjNrdkxTOXVwOGhhZ2JaZkRrcThod0oyM0hNREdPRmFsemNpcE80SFg2aGFZZU5udDN0dnFzQWR5blVlV1FhYzVWQzdsb0tvZTZsR1dKcUxkU2lYbWtfd05yUWhCNWJaWGpvb0xIYlZsSTFfNVg0RmFjRzNrYXZsLVlDQUtpc25LTlhHQlR4Z1E5eGpKWkl0WjZFWS13?oc=5",
+   "data": "2026-10-29T20:08:32Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": []
+  },
+  {
+   "id": "90404b37fc41",
+   "titulo": "Integração dos Sistemas Transcol e Municipal de Vila Velha, no Espírito Santo, começa neste sábado (31)",
+   "veiculo": "Diário do Transporte",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPc3N0Z0h6T3kxLXNDUzRpQjRPVmF4eWw0NWVLMjY2bkNETE90eF9UbUltSGx4R2VIdkRNOTBPeGdLWU4tS2lZaDVlVHhjd2xvRW9hVUNISmdYTk1tcldkRTltNlp5MjB3Z3lyWDVDM3ROU2lScUJ5OXlVSlBjX19Id0tQcjZzX2dnZnluYjJPQ1F4MzRkdFhCdV9mdWVoeG8zOWZkWkF1U3JWd3hpVHdiLWs1SGR1bWR1T2VCNC1pOVRkNll2dllDVjE3ZzNoMjc0dVlsM3laTUc1UHJTb3fSAeMBQVVfeXFMTXBXZWRsRUt4MTROWnQtbmNLeGEzYU4xb0dtZWZVZHNUc2RudWc1M0dvSUg1YS1wNzRXUVZ1WWwyRXhueUpRZ1pWMzRoMGZxWmdFQlJQRFVreEdIS0Fmb2RMTW5WRW1sZVkxQ3c5REZSR1NwMVpPRjJSR2tNdzBuaEJVaWl2dTRWbWI3UUhTUHA0aTRWMGlaNlJGRENZSmtqNjZkTTZmOTdTWng0NHN5LTlSNF9keXJ0OXlTckNTOUJVWEFNUXUzZXZnMVBUUjMzUFpMRW5XazVfM3NFUUVKT082UlU?oc=5",
+   "data": "2026-10-29T20:02:21Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": []
+  },
+  {
    "id": "0f0a4325c4d4",
    "titulo": "Governador eleito faz visita institucional ao TJES",
    "veiculo": "ES Hoje",
@@ -556,6 +1262,30 @@
    "outras": [],
    "temas": [
     "transicao"
+   ]
+  },
+  {
+   "id": "17d50a851bc8",
+   "titulo": "Idaf abre concurso com 14 vagas e salário de até R$ 8,4 mil",
+   "veiculo": "Folha Vitória",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNNkNCRVFUajhVMTRaMkdMRFFLWElwd0l6YnA3QjVzb3JDNVhKdnFRd29EWEFsZE5jV2hKaVU5T3FMMGJkazBEby0yQmN6M0xzQ2U4VWEyc2xZZE43YmZKamhLLWYzSHdQbmFiX2J4NldTcGNjZVpUdnFzdFZrUnJuOWREWkFYSlk5dkhaOXdJLXhRMjFsUHY2ZVE1NndEa2p2NTJ2QlozU2JCUnpzT0E?oc=5",
+   "data": "2026-10-29T19:48:03Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": []
+  },
+  {
+   "id": "cacfc552e241",
+   "titulo": "Dívida pública fica em 82,9% do PIB em setembro, maior nível desde 2021",
+   "veiculo": "Folha Vitória",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNNnRUc1JyV2JaSnVxaVFMSUhyVHhNOGZyYWFNZFhaY3ZkbTNYclQ0Uy1ldlpPRUxLSFZQOTZuTnM1NktRZW5FS2I2QWRRNEstWGRNbF9RNEl0NXdmN0k2TmZyNXI1cENNaEJ2Rnh5MnpRdm5jenhZZVZDYlpTb0pjTGlMb085eDFBWWRfLU9wNlp0NDdDVXhteXlTY1hzRFFiZEJOSzlEV0R3dUxxSnhv?oc=5",
+   "data": "2026-10-29T19:46:05Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": [
+    "financas"
    ]
   },
   {
@@ -616,6 +1346,19 @@
    ]
   },
   {
+   "id": "c15481fb25ca",
+   "titulo": "ES pode perder R$ 500 milhões com decisão do STF sobre royalties do petróleo",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPS2l0RlZsa0R0TEI5S05wWEZwdjREZS03ODhud2lYeWtQaDdlWjkzS2tKanJqSVNMX1VIdC1GLW9rLWxKWThqQ1ZTSGxrZGY3OGZXc3MtS2IzRi0yeXlkelNuSW5aVmczVVpWUUZ2aXVaVkZpSENGSjBlc29CVWZfbW1B?oc=5",
+   "data": "2026-10-29T18:29:47Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
    "id": "f9844755474d",
    "titulo": "Veja quem vai coordenar a transição do Governo do ES",
    "veiculo": "ES Brasil",
@@ -638,6 +1381,19 @@
    "outras": [],
    "temas": [
     "transicao"
+   ]
+  },
+  {
+   "id": "735e8b6a13ac",
+   "titulo": "Justiça determina a suspensão imediata das contratações via PSS na SESA",
+   "veiculo": "Portal Verdade",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOanNCRVRNX0hYaGNWZGFTUjFsLURnYWxsbDRzeHVOb1hfWVZJbFc4SzFJb0x2eE90N3RFdGVkOUE5TWxnZnpKTkpyQ3pfTHp1WmUxbkM4SjNkbFUzNnN4Z0gyZmhUbEM0WHB4QWhoSWVBTlFGX3hmcW5LRlRhTlpIbUg5bVJOd1I2TS1iRURfdDJxdV9iUHNrVlEtR2JNR2dzY0c0?oc=5",
+   "data": "2026-10-29T17:24:12Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": [
+    "contratos"
    ]
   },
   {
@@ -666,6 +1422,17 @@
     "transicao",
     "governador"
    ]
+  },
+  {
+   "id": "f2c870b8b901",
+   "titulo": "Governo alerta que cadastramento para o Pix MEI ainda não começou",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOd00xaVhLbm1qbzFBNDNrUTVCVTFPdGdJYWtFVVpLeDFkdXNrNHFaQXJKeS1BZFdlRnBoQ0RxR3BGSzZ5cGFUd3k4c1lRa1VHTGowTlNtMWFIeW1tVktCQTV3NHRGZDk2T3diRXViQnFvUkNyU1ViWXRzeXlwcWE4MjYxb2FjRFRMSkVPSHRMRWk3MC1xaU1WUmxIcmlIOGFaLWtjcUhFN2I0QXM1MFBz0gG3AUFVX3lxTE40R1NfWm9xTVRPREU5QnhWdlg5Y0NpRjliTExqaURBYk12c2NDbkJCdWtPTk5RNlU5QUFvMkRlNlBLeXZYcmpGZU1GWmpJRy13MVRaa19Nbm5nSHVZcE1qcTBGUTMwRzEzWXpGbTNJcF85TVhJNExxLUdLNXFSNmt4VFJxUkV5SlFxcE13VHU3X1BkT3hxNlBKdFNJUmVMazFlTmxDcm9rVWxlemtGbUZoZVJSWDJKaw?oc=5",
+   "data": "2026-10-29T16:57:58Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": []
   },
   {
    "id": "bae510b8be71",
@@ -747,6 +1514,19 @@
    ]
   },
   {
+   "id": "73c0de189664",
+   "titulo": "Carro capota durante festa de servidores em Viana",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1lUHU5NGEwdEVJTkdJbDRhWjZrbkh0X3FCUF82dU03eGFPMk81VUt6cl9IX3JlTUFfZ3BTdmlmMm5pd2JQVDhZbFJ6YlV2N2M1bEdoMEpoQzZaVEdFVnZ2UHRkTGFjMHBnWFN5OHFXTjI0akpjSVFqU2lNZ2w?oc=5",
+   "data": "2026-10-29T15:33:48Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
    "id": "b0f9f1c726bb",
    "titulo": "Precisamos de ajuda do governo federal, afirma Pazolini à CNN | LIVE CNN",
    "veiculo": "YouTube",
@@ -810,6 +1590,17 @@
    ]
   },
   {
+   "id": "979b26f1ef92",
+   "titulo": "Governo estuda restringir crédito a empresas por assédio eleitoral",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOU05hczhHRUpvMFVsZWtxa0htWkk0ZC1MVk93elI0czZrQ214SURYb0JHV21DQ3BMR0dodXVnbVUzM19CWU1paVU5Y19aMDZrNDRPT0dJcnVVbHRvRkd6cUhnanJudDVYY2tXOWdJT2hSNVJlSXFqSUxQODBkcG5KY0JYdkVUTV9rbzhKbEJBU0pQeDl0UWpuVHRFZkgzYWNIczhuSkpxYU81Z1pscHZJRVlqMU5zYVpER0RGUzFkNNIBxwFBVV95cUxNeDZ4Z2p5a0o2dnM3SkJmanppZlVCejhqTTZQTGNSRlA4eWZBM3Rfd1duUkk1MXVzUGFVeWdnLUowdnNPQlY5VmYzM3FwMUYwVnRjZjZhU3VHRU84SGxFTDB4bUE2clZxR1haYlVudFhIb3E5UDZQM2hZeWIzWHZ3UURzN0FBWkU1eXpuRXEza25nLWhDWDlRdE5CTkNSa2RyTTFHYXhzcmktMERhLWtHSHNHMWVjZTVjQXNCUlg4Qlp5MHhMYlRB?oc=5",
+   "data": "2026-10-29T14:21:36Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": []
+  },
+  {
    "id": "57929960473c",
    "titulo": "ES registra 47 denúncias de assédio eleitoral em 2026",
    "veiculo": "Folha do ES",
@@ -818,6 +1609,30 @@
    "coletado_em": "2026-10-30T15:32:37Z",
    "outras": [],
    "temas": []
+  },
+  {
+   "id": "6292c461735d",
+   "titulo": "Confira o expediente dos órgãos nos dias 30 de outubro e 2 de novembro",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOTDY2WjJYTFlnRFRIWTdLR21nRjVCa0xOMFFaMnZHOHRkZVBNaFlBQkpJaExQYnZBV29Tc3JpOU1ZNTVIRFdXRFJ2czBWQ043WFZRcEV6MVVmMFdSamFKZFVpWWhTeGxIOU55dTlpcS10NnhfRjRVQlZzRmVQVnpxbkZhOUtwUVIwclF1MWZ3YjA2LUdYMzJV?oc=5",
+   "data": "2026-10-29T13:53:50Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": []
+  },
+  {
+   "id": "46c56c2647b0",
+   "titulo": "Ministério prevê novo CNU em 2027 e aguarda aval do Orçamento no Congresso",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQZzVhd1hfaElFWGJqenN0N1NHdEdYWHRxVjFBRURYbm92UUFib1B1QVdCZE14RUhEeG5VaGNEZlAwTDAzbGlaMUhSNVUxU1k4d1BqV3drMkRtT0lfaGcta3haR2ZnTS1GRkZEYjBIZlJXMEF5bW55RTJPcTlMeEJfTzB3TjVtNFV0a2Z1S2p6aVhGYTlad2xMQXJoSEd3U1BJS3VfMHluaEFQUHpxME5TZmtNdVFsTlh5V1A5NU1xOVBhQko20gHEAUFVX3lxTFBnNWF3WF9oSUVYYmp6c3Q3U0d0R1hYdHFWMUFFRFhub3ZRQWJvUHVBV0JkTXhFSER4blVoY0RmUDBMMDNsaVoxSFI1VTFTWTh3UGpXd2syRG1PSV9oZy1reFpHZmdNLUZGRkRiMEhmUlcwQXltbnlFMk9xOUx4Ql9PMHdONW00VXRrZnVLanppWEZhOVp3bExBcmhIR3dTUElLdV8weW5oQVBQenEwTlNma011UWxOWHlXUDk1TXE5UGFCSjY?oc=5",
+   "data": "2026-10-29T13:48:11Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": [
+    "financas"
+   ]
   },
   {
    "id": "4826fc022299",
@@ -829,6 +1644,19 @@
    "outras": [],
    "temas": [
     "governador"
+   ]
+  },
+  {
+   "id": "eafb460631a8",
+   "titulo": "Lei fixa regras para execução de emendas parlamentares no ES",
+   "veiculo": "Aqui Notícias",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWHdxRVhUNk4yUkxpSFExZU1ydXdMaGtUOWpTeWtjalM3SEpGdlhtcWJSenBCRGtfdWwyRWZ0LVpwOXNxMC1vd0k0cjR4cHNWbWozX05Ma0lzZUx0enloTkxYNnV6YnY2a25GYXNjRmI4aVVPR0dpelFReFRTbVduZTdqME03MTNfOVo4ajNEdHZ4ZEdoRzRqeUl3?oc=5",
+   "data": "2026-10-29T13:40:37Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": [
+    "financas"
    ]
   },
   {
@@ -845,6 +1673,30 @@
    ]
   },
   {
+   "id": "2762963bb27c",
+   "titulo": "Transcol ganha 40 novos ônibus e assume linhas em Vila Velha",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNU2N4ZlhRS3djUzFHWHJla1VBN1ZvUVBMdFNuZ0lnLXJ3OFFHZ2g2Zm1RWUxIdlU4NDYtelV2VWd6ZzVfeWFveWI3OENwbHVSNlBpblY2b1UtTXNMVm1ZeTJ5a2UxeWE2WlAyMTN5V2FrTWVWYVNlTGZVQkJWbXhDTTdIT0hoVU5vR2ZFNjBqSDM4WGZkX2NxX0FSb2RjZndEenBXdTRvONIBrwFBVV95cUxPRG13MVlUZV9YMVI4VE90TzQ3MFRGYUFZNGxWTjliU2hndTVDOGVEc0RENGFJdjJaYTBXRGpqZnlMVFhNeW4xOUdXMUpUN3J5NVJjbDh3SUxLNGRXTWdvZlRxVFNydnAzaWRIUU9sRlBGN055LXNZTG5aVW1vaE1rVkdBZlRfbTRhcm1vQUhmSzVUNTBROGhhak93V3BIVE1mQjhUSWVNdjRuRkU2bUJR?oc=5",
+   "data": "2026-10-29T12:54:49Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": []
+  },
+  {
+   "id": "e81291d046a5",
+   "titulo": "Idaf lança edital de concurso público com salários de R$ 8 mil no ES",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOV2RRVjJmYjBmNHNhZXN6VnVvSmQ1Vjlid3RXQ052ZWVJdG15S2cwQ0t2UkFrSDJJNHp5MzAzb2djLThqU2hJNUlZMlc0V1otMVFVTktfQWYxZ2dBX1NIX2VfTzMwS2RTNThmNVZJTlRyWDZfWDgyNzc3dGNMMWtESUJ4WEM4YTlaT1I0eGxzT3hsUEp0VWZWNFllbnF6VFZwWE1TZnV6Y0RkR1BFcEhvMDdVaUtsZ3JpNWNWWGFMYWMwNGZrWktzSXFpTjBhUC1DRVBsWGV2Y2tEbEtiemlkSjNoUlBqNy1feGluRtIB7AFBVV95cUxOV2RRVjJmYjBmNHNhZXN6VnVvSmQ1Vjlid3RXQ052ZWVJdG15S2cwQ0t2UkFrSDJJNHp5MzAzb2djLThqU2hJNUlZMlc0V1otMVFVTktfQWYxZ2dBX1NIX2VfTzMwS2RTNThmNVZJTlRyWDZfWDgyNzc3dGNMMWtESUJ4WEM4YTlaT1I0eGxzT3hsUEp0VWZWNFllbnF6VFZwWE1TZnV6Y0RkR1BFcEhvMDdVaUtsZ3JpNWNWWGFMYWMwNGZrWktzSXFpTjBhUC1DRVBsWGV2Y2tEbEtiemlkSjNoUlBqNy1feGluRg?oc=5",
+   "data": "2026-10-29T12:32:03Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
    "id": "66370300ad33",
    "titulo": "Agenda para Pazolini: indústria e comércio listam pautas",
    "veiculo": "ES Brasil",
@@ -854,6 +1706,19 @@
    "outras": [],
    "temas": [
     "governador"
+   ]
+  },
+  {
+   "id": "6a345c882b38",
+   "titulo": "Novo Desenrola vai perdoar dívidas de até R$ 10 mil e tirar nomes do Serasa com desconto de 90%",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOaEpXNk9mT2Jfb081NlNFSF81a3hkcXg5RHI1WUZDYTJqR2ZsX29HSWw0RjlsWFRpVkRHS2drandLbFF0NkZ4U1dCOUlXdDRaRFh0SjBEZy1hSVhPbHZEbmRURUhXR3BlNlZrMHRWTUpLM1N1VzdOakZWNlpCLVVPMG9OaHhsMU53YVB2M3lucDN2bUlRb1ZmNXVGa3VhSENJNGM0enRrMGJqcjFMS0JWaUxJYVVReTA?oc=5",
+   "data": "2026-10-29T12:00:05Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": [
+    "financas"
    ]
   },
   {
@@ -867,6 +1732,19 @@
    "temas": [
     "transicao",
     "governador"
+   ]
+  },
+  {
+   "id": "66a055516189",
+   "titulo": "IPVA, multas e CNH no cartão em 12x? Detran anuncia nova modalidade que salva o orçamento",
+   "veiculo": "Serra Noticiário",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxORWxBb0FqSGxJTXE2TkwtVHMzS0o2THcwLUdLMzA2dU5UelA1YWwwelE3UUJWd290dnplci14d1c3Y1YtazYwMFdTb0d4NHY2U2JMNDBWTWlxTmVTSmFRMXl2R1dHUzhlSTFhM3FOY09ZZ3l0ZU9wMGp2Q1hSQThieVYwN3ViR25LX0swZWUwU01rbEtBVDd0VVIwT2RkNGlrT0l6NHd6NTBjUUluSjhVV0FzVzBZdHJSS3dj?oc=5",
+   "data": "2026-10-29T11:28:00Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": [
+    "financas"
    ]
   },
   {
@@ -893,6 +1771,31 @@
    "temas": []
   },
   {
+   "id": "abe335843171",
+   "titulo": "PGE barra aditivo da Sefaz por inclusão de produto fora do contrato",
+   "veiculo": "AL 102",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOMWdnQTZkalU4U0k0cmpaTEVYRUhBdVZhUmoxMXVCalhaUktsYnZlMHhHY1c1MVBWWDlYWkZudFI3dUkyVmlXNjh1T0tVbFpPSHllTU94XzA1MWM2TnpGVkhFSzI1dFc4N1NnQzcyVUZsam1qMGY1VXFqMFVaTzhBbUtTa0Y4WTQ3ZUpscTgyc3JZUU9xY2ZBRWkxSWJaN2ZWRnlNT1BFYTBOV0k?oc=5",
+   "data": "2026-10-29T10:49:00Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": true,
+   "temas": [
+    "financas",
+    "contratos"
+   ]
+  },
+  {
+   "id": "ad462afacd3e",
+   "titulo": "Repartições públicas fecham sexta e segunda no Espírito Santo",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOTXVJbFhhUlV0eUVrZ3JIX1FZOF9WdGlncWdMRWp2dE9MNjFiMzNJTE9OSl9XLW5QdjRIUUVWZmpnVjhPaTJuM1RHN003V2xaYjM3bm1hUFd1VENIU2lSWWJueFhFdkU4NXlJaDJtbXQyZzQwbWZEcDRteTVVeDZTTDBKUjFkalJCaUR1bEgzbUliX3JtUlMzTXhhdjI0UDN5ZzhaSGU1X3jSAbABQVVfeXFMTjJkejBVaDFWTVpnaVlENkxMWlFwMDg0aGVpZXUxd3Q0QWNMZV9CakRqMTFXakNyZElQbW5DVWd4bWhZSWF6ODBFelpCNHJPaTJ5Ry16UWRTWS1QR0ZKcEMwTDY4Q2ZtUmw4Z1Y0TW12ajV2eWtVNWdMeF9Ka05hTzZPUTZHNGZXaWRqdlBfcUVfbnhocWRSU2x3UjdYaGRNYmhIeEQxYmtKQXdwWWdiVWM?oc=5",
+   "data": "2026-10-29T10:47:32Z",
+   "coletado_em": "2026-10-31T02:20:21Z",
+   "outras": [],
+   "possivel": false,
+   "temas": []
+  },
+  {
    "id": "c6685ff7cc53",
    "titulo": "Senador Fabiano Contarato e ex-governador do Espírito Santo, Renato Casagrande, defendem manutenção dos royalties do petróleo - Portal OZK - JORNALISMO DE VERDADE!!!",
    "veiculo": "Portalozk.com",
@@ -901,7 +1804,8 @@
    "coletado_em": "2026-10-30T18:51:13Z",
    "outras": [],
    "temas": [
-    "governador"
+    "governador",
+    "financas"
    ]
   },
   {
@@ -1108,9 +2012,7 @@
    "data": "2026-10-28T15:37:09Z",
    "coletado_em": "2026-10-30T15:32:37Z",
    "outras": [],
-   "temas": [
-    "financas"
-   ]
+   "temas": []
   },
   {
    "id": "09a7444a929c",
@@ -1754,7 +2656,8 @@
    "coletado_em": "2026-10-30T15:32:37Z",
    "outras": [],
    "temas": [
-    "governador"
+    "governador",
+    "financas"
    ]
   },
   {
