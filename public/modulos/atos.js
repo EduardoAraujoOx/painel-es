@@ -114,7 +114,7 @@
         </div>
         <span id="mesref" class="mesref"></span>
       </div>
-      <p class="aviso solto">O Diário traz a <b>data do ato</b>, que o cadastro de contratos (SIGA) não informa, e às vezes publica antes de o SIGA registrar: abaixo de cada ato, a tela mostra o que o SIGA e o Portal de Obras registram sobre o contrato citado ("SIGA ainda não registra" é o Diário na frente do cadastro). Mas o Diário <b>não publica tudo</b>: a suspensão de um contrato costuma ser ato interno. A tela "Suspensos e rescindidos" mostra o que o SIGA registra, sem data.</p>
+      <p class="aviso solto">O Diário traz a <b>data do ato</b>, que o cadastro de contratos (SIGA) não informa, e às vezes publica antes de o SIGA registrar: abaixo de cada ato, a tela mostra o que o SIGA e o Portal de Obras registram sobre o contrato citado ("SIGA ainda não registra" é o Diário na frente do cadastro). Mas o Diário <b>não publica tudo</b>: a suspensão de um contrato costuma ser ato interno. A tela "Suspensos e rescindidos" mostra o que o SIGA registra e, onde o Diário ou o Portal de Obras trazem a data, a data.</p>
       <div id="kpis" class="kpis"></div>
       <div class="cartao">
         <div class="filtros"><label class="busca">Buscar por órgão, contrato ou palavra do título<input id="busca" type="search" maxlength="80" placeholder="Ex.: Educação, paralisação, CT093…"></label></div>
