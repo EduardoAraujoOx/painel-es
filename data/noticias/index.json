@@ -1,6 +1,6 @@
 {
  "ref": "2026-10-31",
- "gerado_em": "2026-10-31T17:45:25Z",
+ "gerado_em": "2026-10-31T18:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,7 +18,7 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 16,
-   "aceitos": 13,
+   "aceitos": 14,
    "possiveis": 0
   },
   {
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 16,
+   "lidos": 17,
    "aceitos": 7,
    "possiveis": 4
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 93,
+   "lidos": 92,
    "aceitos": 9,
    "possiveis": 2
   },
@@ -97,8 +97,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 70,
-   "aceitos": 6,
+   "lidos": 77,
+   "aceitos": 8,
    "possiveis": 4
   },
   {
@@ -139,23 +139,23 @@
    "ok": true,
    "lidos": 25,
    "aceitos": 6,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 22,
+   "lidos": 25,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
-   "aceitos": 7,
-   "possiveis": 4
+   "lidos": 57,
+   "aceitos": 9,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -206,19 +206,43 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 329,
-  "veiculo_excluido": 23,
-  "possivel": 17,
-  "sem_contexto_com_tema": 3,
+  "sem_contexto": 341,
+  "veiculo_excluido": 28,
+  "possivel": 16,
+  "sem_contexto_com_tema": 7,
   "excluir": 4,
-  "outro_estado": 21,
-  "caixa_alta": 5,
-  "sigla_sem_ancora": 8,
-  "veiculo_outra_praca": 6
+  "outro_estado": 28,
+  "caixa_alta": 4,
+  "sigla_sem_ancora": 10,
+  "veiculo_outra_praca": 9
  },
  "itens": [
+  {
+   "id": "8eebf0079925",
+   "titulo": "Secretário de Estado dos EUA nega que país tenha ajudado Flávio Bolsonaro a fugir",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNekRLZ0F5azlUX2RfaFlKeUxtOGg4eGdPVnpzTXRJN3dCN2FHdml1YVA0Y29sUkN5ZldZd28wc3lVMi15WWhqMEMyYzRKX0lRMVBJTV80cWM2ZUNXbWFwd3o2MzlKNldEX2FBcGRqWU5pT1FUQTJWaUYzdEpaREFxbDYtRGJiR0l4ZnRTZzNab0RtNzhEaUxoZFpZcjVmVEVBeVliQWtuWEg0bi1VemFBLWN1NlJhenZxRkx3TlN5M0pfeEJVb1dBTUxBa9IB0wFBVV95cUxNbnd1RmlHS2xUN3hWUmZ5eUxLcWM1MkZpbUpvTVhzMy1FeDlVTmtpYTk0RXpvaEkySXh2bFJqVXpjcG0xZE96cXBQeXBWdkVjS2RNMHZkby00T192MW50cjBSUFFFSjVkOXM1Qndyc2hWWVBkd0JrbmRYLUhJQWRyTzhQb1lXZTk1V2dEVUNUMGtfNzJMeEJONm1OcVNFWVZSbUM5S2tNTGRpR1ZSeGxUMFlBdEdhM3VPdjFNM19UVWNpWHNLVUJYYzY5VVU5VjUtRy1N?oc=5",
+   "data": "2026-10-31T18:04:16Z",
+   "coletado_em": "2026-10-31T18:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 2,
+   "temas": []
+  },
+  {
+   "id": "b99b5fa5ef42",
+   "titulo": "Vice-governadora eleita do ES convoca jejum pelo El Niño e pela ‘situação política do Brasil’",
+   "veiculo": "Portal Tempo Novo",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1CWU5TeGJ1Slg5bmJsVThJZGhhTW1aay1fazBFZ3FZd2lRdW5RMWk4MGJEVy0wVlVzdFZ3STdvZjkyYkM4VlhTOFNkNWlfRGhjakdQTkwyZnJPcU1rRmQxUkNFbG5RUGw5VmdfNU5laS0?oc=5",
+   "data": "2026-10-31T17:56:00Z",
+   "coletado_em": "2026-10-31T18:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 2,
+   "temas": []
+  },
   {
    "id": "ab0a42acbf7a",
    "titulo": "Governador eleito do ES, Lorenzo Pazolini volta a atuar como delegado até a posse em janeiro",
