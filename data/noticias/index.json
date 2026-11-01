@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-01",
- "gerado_em": "2026-11-01T09:17:11Z",
+ "gerado_em": "2026-11-01T10:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 14,
+   "lidos": 13,
    "aceitos": 10,
    "possiveis": 0
   },
@@ -25,8 +25,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 28,
-   "aceitos": 23,
+   "lidos": 42,
+   "aceitos": 30,
    "possiveis": 0
   },
   {
@@ -41,7 +41,7 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 8,
    "possiveis": 0
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 14,
+   "lidos": 13,
    "aceitos": 5,
    "possiveis": 3
   },
@@ -57,7 +57,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 2,
+   "lidos": 1,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 48,
+   "lidos": 46,
    "aceitos": 7,
    "possiveis": 4
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 21,
+   "lidos": 22,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 51,
    "aceitos": 3,
-   "possiveis": 5
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 2
   },
   {
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -206,17 +206,17 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 288,
-  "sem_contexto_com_tema": 8,
-  "veiculo_excluido": 18,
-  "possivel": 15,
+  "sem_contexto": 302,
+  "veiculo_excluido": 26,
+  "sem_contexto_com_tema": 12,
+  "possivel": 14,
   "caixa_alta": 3,
   "excluir": 6,
-  "outro_estado": 21,
-  "veiculo_outra_praca": 6,
-  "sigla_sem_ancora": 10
+  "outro_estado": 24,
+  "veiculo_outra_praca": 7,
+  "sigla_sem_ancora": 12
  },
  "itens": [
   {
@@ -447,6 +447,18 @@
    "triagem": 2
   },
   {
+   "id": "fbebf8a160fa",
+   "titulo": "Motoristas podem perder a CNH? Mensagem golpista enviada por número da Colômbia cobra multas e ameaça suspender carteira; Detran faz alerta",
+   "veiculo": "ND Mais",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB1TGFBUUtWNXZaOGQ5TVZNWjBvcFh1ZVh1YTlvQ1RXdk5yMG9WQ0l4RVZZTkQzaENEVE8yVEh1SVdFRVdSN05Qc29xcktXZkd1UFBmQnlRMkplUmNDWmowbEc2WnNxZTZLM2hBaVpPbGR2a0t3MmVBQkFyVWdqdw?oc=5",
+   "data": "2026-10-31T14:32:21Z",
+   "coletado_em": "2026-11-01T10:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 2,
+   "temas": []
+  },
+  {
    "id": "baaa3650cadc",
    "titulo": "Craque Neto pede desculpas aos fãs do BTS após ser cancelado",
    "veiculo": "A Gazeta",
@@ -608,6 +620,20 @@
     "contratos"
    ],
    "triagem": 2
+  },
+  {
+   "id": "eb589f9a463e",
+   "titulo": "No 2º turno, crescimento em 42 dos 50 locais de votação em São Mateus ajudou a vitória de Pazolini",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPN3I2SkE1RzYyTjFiWTRYYUJKc0pZSExwYm9ELXFTUDk0RHpiOWFBVzJaSkhZNFBjSjRySFM2X3dpQ3k1dkJuc3lUVG1pYXBwVFIwYnJyTlRLRnBSajk4M3VVTmNsNFdGa1RKaDZnbG9lVUk3YU1tU0RybWROUTV5MkJ4cldVU3VxLUJPVjBLTlpaM0RSaE1DUnN6ZnNvaEdLdlF4V2lsSEdKbjc4dTU4R1V6WWlkdWVncXY5aGNacw?oc=5",
+   "data": "2026-10-30T23:42:10Z",
+   "coletado_em": "2026-11-01T10:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 2,
+   "temas": [
+    "governador"
+   ]
   },
   {
    "id": "82c90cb04ac4",
@@ -1362,6 +1388,20 @@
    "triagem": 2,
    "temas": [
     "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "9eea51477378",
+   "titulo": "Guerino Zanon teve papel fundamental na vitória de Pazolini para o governo do ES",
+   "veiculo": "Site de Linhares",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPc1JOMWItYnZ2WVU5MFpHRUlZY0pzRE9CVW5aOGhTdkdRX0x5RVFMcHRDajRVdzJKd3RBUjBZMEZrQUEtcnNIVndtdG5nazBiakI4Q0o2cWNRRHNtZFlIaExRWlY4RWtzZGJhOE5qZ3VkZU9tdnhaQWZCRFhqSmNUSHdHOHRNOTRGUFFacWs4YWRqYUhwcVdHcVBKei1CT2xqcmZNVlJBaENTa0VsTENoVXdYVEp2ZmZGR1h0TVkwbmk4cXVDREs0?oc=5",
+   "data": "2026-10-30T12:29:20Z",
+   "coletado_em": "2026-11-01T10:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 2,
+   "temas": [
     "governador"
    ]
   },
