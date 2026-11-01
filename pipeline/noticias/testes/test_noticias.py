@@ -128,6 +128,47 @@ class OutrasPracas(unittest.TestCase):
         self.assertIn("id3", {i["id"] for i in itens2})
 
 
+class Exterior(unittest.TestCase):
+    """Governo, secretário ou parlamentar de outro país não é notícia do governo do ES, mesmo em veículo capixaba (achado de 31/10/2026: "Marco Rubio,
+    secretário de Estado dos EUA..." entrou porque "secretário de Estado" é termo genérico)."""
+    RUBIO = ["Marco Rubio, secretário de Estado dos EUA, nega que país tenha ajudado Flávio Bolsonaro a fugir",
+             "Governo dos EUA ‘não se envolveu’ na saída de Flávio Bolsonaro do Brasil, diz Marco Rubio",
+             "Deputados dos EUA cobram explicações de Rubio sobre ajuda a Flávio Bolsonaro",
+             "Secretário de Estado dos EUA nega que país tenha ajudado Flávio Bolsonaro a fugir"]
+
+    def setUp(self):
+        self.F = coletar.preparar(CFG)
+
+    def decide(self, titulo, veiculo="A Gazeta", regional=True):
+        return coletar.decidir(CFG, titulo, veiculo, self.F, regional)
+
+    def test_governo_de_outro_pais_e_descartado_mesmo_em_veiculo_capixaba(self):
+        for t in self.RUBIO:
+            for reg in (True, False):
+                self.assertEqual(self.decide(t, regional=reg), ("descartada", "exterior_sem_ancora"), t)
+
+    def test_com_ancora_do_es_ou_termo_especifico_do_estado_continua(self):
+        for t in ("Tarifaço dos EUA: governo do ES prepara socorro a exportadores de café e rochas ornamentais",
+                  "Governo do ES busca mercado americano para o café capixaba após tarifa de Trump",
+                  "Cesan fecha contrato com empresa dos Estados Unidos", "Secretário de Estado da Fazenda do ES comenta tarifa dos EUA"):
+            self.assertNotEqual(self.decide(t)[0], "descartada", t)
+
+    def test_nao_derruba_o_que_nao_cita_o_exterior(self):
+        self.assertEqual(self.decide("Secretário de Estado da Fazenda anuncia corte de despesas")[0], "confirmada")
+        self.assertEqual(self.decide("Governo estadual fixa prazos para encerrar o orçamento")[0], "confirmada")
+
+    def test_guardado_do_exterior_sai_na_migracao_inclusive_o_possivel(self):
+        tmp = Path(tempfile.mkdtemp()); coletar.SAIDA = tmp / "index.json"
+        hoje = datetime(2026, 10, 31, 22, 0, tzinfo=UTC)
+        def guardado(i, titulo, possivel):
+            return {"id": f"id{i}", "titulo": titulo, "veiculo": "A Gazeta", "url": f"https://e.com/{i}", "data": enviar.iso(hoje - timedelta(hours=2)),
+                    "coletado_em": enviar.iso(hoje - timedelta(hours=1)), "outras": [], "possivel": possivel, "temas": [], "triagem": 2}
+        antigos = [guardado(1, self.RUBIO[0], False), guardado(2, self.RUBIO[2], True), guardado(3, "Secretário de Estado da Fazenda anuncia corte de despesas", False)]
+        coletar.SAIDA.write_text(json.dumps({"itens": antigos}), encoding="utf-8")
+        itens, _ = coletar.consolidar(CFG, [], hoje)
+        self.assertEqual({i["id"] for i in itens}, {"id3"})
+
+
 class Auditoria(unittest.TestCase):
     """Falhas achadas na auditoria de 30/10/2026 (matérias relevantes que o filtro descartava) e os falsos positivos que as correções poderiam criar."""
 

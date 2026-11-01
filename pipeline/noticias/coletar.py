@@ -37,7 +37,7 @@ AQUI = Path(__file__).resolve().parent
 RAIZ = AQUI.parents[1]
 CONFIG = AQUI / "config.json"
 SAIDA = RAIZ / "data" / "noticias" / "index.json"
-TRIAGEM = 2  # versão das regras de triagem por praça; itens guardados sem este marcador são reavaliados uma vez (ver consolidar)
+TRIAGEM = 3  # versão das regras de triagem por praça; itens guardados sem este marcador são reavaliados uma vez (ver consolidar)
 VERIFICACAO = RAIZ / "data" / "noticias" / "verificacao.json"
 
 AGENTE = "Mozilla/5.0 (compatible; painel-es-noticias/1.0; +https://github.com/EduardoAraujoOx/painel-es)"
@@ -189,7 +189,7 @@ def temas_de(cfg, titulo, compilados):
 def preparar(cfg):
     """Compila uma vez tudo o que o filtro usa."""
     return {"gate": compilar_lista(cfg["contexto_es"]), "gate_gen": compilar_lista(cfg.get("contexto_generico", [])),
-            "outra_praca": compilar_lista(cfg.get("veiculos_outras_pracas", [])), "local": compilar_lista(cfg["localizador"]), "excluir": compilar_lista(cfg["excluir"]),
+            "outra_praca": compilar_lista(cfg.get("veiculos_outras_pracas", [])), "exterior": compilar_lista(cfg.get("exterior", [])), "local": compilar_lista(cfg["localizador"]), "excluir": compilar_lista(cfg["excluir"]),
             "setor": compilar_lista(cfg.get("setor_publico", [])), "temas": compilar_temas(cfg),
             "oficiais": {normalizar(v) for v in cfg.get("fontes_oficiais", [])}, "locais": {normalizar(v) for v in cfg.get("veiculos_capixabas", [])},
             "ambig": compilar_lista(cfg.get("siglas_ambiguas", [])), "ancoras": compilar_lista(cfg.get("ancoras_es", cfg["localizador"])), "veic_excl": compilar_lista(cfg.get("veiculos_excluidos", [])),
@@ -212,6 +212,10 @@ def decidir(cfg, titulo, veiculo, F, regional=False):
     # sigla de outro estado (SP, DF...) sem nenhuma âncora do ES: as siglas de órgãos (Sefaz, Detran, Sesa) existem em todos os estados
     if F["outro_uf"] and F["outro_uf"].search(titulo) and not casa(F["ancoras"], n):
         return "descartada", "outro_estado"
+    # governo, secretário ou parlamentar de outro país ("secretário de Estado dos EUA"): o termo "secretário de Estado" é genérico e um veículo capixaba o
+    # confirmaria. Sem âncora do ES nem termo específico do Estado, é notícia internacional (com âncora, como "tarifaço dos EUA e as exportações capixabas", vale)
+    if F["exterior"] and casa(F["exterior"], n) and not casa(F["ancoras"], n) and not casa(F["gate"], n):
+        return "descartada", "exterior_sem_ancora"
     capixaba = regional or normalizar(veiculo) in F["locais"]
     # veículo de outra praça (Natal, Bahia...) cujo título não cita nada do ES: é notícia daquele estado, mesmo que diga "governo estadual"
     # (termo específico do ES, como Cesan, Banestes ou TCE-ES, mantém a notícia mesmo em veículo de fora: confirma logo abaixo)
@@ -323,10 +327,11 @@ def consolidar(cfg, coletados, hoje):
             continue
         if it.get("triagem") != TRIAGEM:
             # migração única: o que foi guardado antes das regras de praça é reavaliado uma vez e marcado. Só se tira o que vem de veículo de outra praça
-            # (decidido pelo nome do veículo e pelo título). Não se rebaixa por "genérico sem âncora": o item guardado não diz se veio de feed ou busca
+            # (decidido pelo nome do veículo e pelo título) ou notícia do exterior sem âncora do ES (regra de TRIAGEM 3, vale também para as "possíveis"). Não se rebaixa por "genérico sem âncora": o item guardado não diz se veio de feed ou busca
             # restrita a site capixaba, e rebaixar errado esconderia notícia boa; a regra vale para o que for coletado daqui em diante.
             it["triagem"] = TRIAGEM
-            if not it.get("possivel") and decidir(cfg, it["titulo"], it["veiculo"], F)[1] == "veiculo_outra_praca":
+            motivo = decidir(cfg, it["titulo"], it["veiculo"], F)[1]
+            if motivo == "exterior_sem_ancora" or (not it.get("possivel") and motivo == "veiculo_outra_praca"):
                 continue
         it["temas"] = temas_de(cfg, it["titulo"], compilados)  # recalcula: mudar o config vale para o que já foi guardado
         if casa(ruido, normalizar(it["titulo"])) and not (set(it["temas"]) & salvo):

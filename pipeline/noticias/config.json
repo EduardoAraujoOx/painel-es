@@ -636,6 +636,19 @@
     "governador eleito",
     "governadora eleita"
   ],
+  "exterior": [
+    "eua",
+    "estados unidos",
+    "americano*",
+    "americana*",
+    "norte americano*",
+    "casa branca",
+    "donald trump",
+    "trump",
+    "rubio",
+    "departamento de estado dos",
+    "congresso americano"
+  ],
   "veiculos_outras_pracas": [
     "natal",
     "rio grande do norte",
