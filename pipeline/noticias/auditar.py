@@ -29,6 +29,7 @@ MOTIVOS = {
     "sigla_sem_ancora": "sigla de órgão que existe em vários estados, de fonte não capixaba e sem âncora do ES: guardada como POSSÍVEL",
     "generico_sem_ancora": "só tem expressão genérica (governo estadual, transição, governador eleito...), de fonte não capixaba e sem âncora do ES: guardada como POSSÍVEL",
     "veiculo_outra_praca": "veículo de outro estado (Natal, Bahia...) e título sem âncora do ES: notícia de outra praça",
+    "exterior_sem_ancora": "cita governo, secretário ou parlamentar de outro país (EUA...) e não tem âncora do ES: notícia internacional",
     "excluir": "caiu numa palavra da lista 'excluir'",
     "outro_estado": "cita a sigla de outro estado (SP, DF...) sem nenhuma âncora do ES",
     "veiculo_excluido": "veio de site que só republica concursos",
