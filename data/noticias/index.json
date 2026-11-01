@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-01",
- "gerado_em": "2026-11-01T16:17:11Z",
+ "gerado_em": "2026-11-01T17:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,7 +18,7 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 8,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
@@ -26,14 +26,14 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 36,
-   "aceitos": 24,
+   "aceitos": 23,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 11,
+   "lidos": 10,
    "aceitos": 4,
    "possiveis": 1
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 53,
+   "lidos": 46,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 37,
+   "lidos": 39,
    "aceitos": 5,
    "possiveis": 4
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 39,
+   "lidos": 26,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 12,
+   "lidos": 11,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 3,
-   "possiveis": 6
+   "lidos": 50,
+   "aceitos": 2,
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -210,14 +210,14 @@
  "descartes_na_coleta": {
   "sem_contexto": 254,
   "veiculo_excluido": 22,
-  "sem_contexto_com_tema": 11,
-  "possivel": 14,
+  "sem_contexto_com_tema": 15,
+  "possivel": 13,
   "caixa_alta": 2,
-  "excluir": 5,
+  "excluir": 4,
   "exterior_sem_ancora": 9,
-  "outro_estado": 18,
-  "veiculo_outra_praca": 2,
-  "sigla_sem_ancora": 7
+  "outro_estado": 15,
+  "veiculo_outra_praca": 3,
+  "sigla_sem_ancora": 8
  },
  "itens": [
   {
@@ -334,6 +334,20 @@
    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRGI5SldwNi14TU9sVkZMMU9uMXc2RGFXRW5nOE82aXV2Y3FhMHVRVG5FeTBtMXA3bENNc0JVRlhzMFJLYm9uZzgxU1NhRGQ3cTlGUVRSUXFDVzF3SFBLeEtqTTJ6WUZrQWpzRndzVDRHU19PTmRRTHVwbjZxcHM4RS1JMGVBZFY3YzJ3djhjaFo3MHZlSlpnSklGdjVhNTlmcjFST1QtdHp5Q2xmVWNmQjVEeVjSAbwBQVVfeXFMTzJVRHpfXzNmc3U3Z1A2NW1UendmR2U4SHhVNjVTbDVyaUlydkUtR1FOb0laSXdKaUROcXN6QkU3bWY2dTJKMHVXM1JmVVMzX1ZVVlJDQ0VYeGpfV0hlUTYxcVp2V3VzNnpJbFdYN3Vqc1JuRmJqT01XOHVGaXNWaVcxanFyckxPcWtJQThCczNfVHFXdmxnZWN6S2hYMFR6ZWNqb2pMcm0tVU9vdzc4bjdfWHlLMzNOd01fNmU?oc=5",
    "data": "2026-11-01T09:00:00Z",
    "coletado_em": "2026-11-01T09:17:11Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "01507f927f68",
+   "titulo": "Pazolini vai observar movimentação direto do Palácio Anchieta",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQOTFYM3g4aS1wQXhRaVU5cnM4SVRzZzlhUm9Jdk0yT3lRcUVEYjc1YjJPYzJqcUlyekN5OGFHa3hHY3Rzd3BEOHJYUkl5a0labVdQTjBiMzZiaWJ3Um0ySlJzR1hoc3dIZjc3akJOZU1LeExmN3FGX1NEOTA2TFpCdXJiZkZqamZmaTYzVzY4LW9RcUwxbUN4aVh3Unc0NXRRN2dtTFRzdno5QnNkSjNPVk1DNNIBuwFBVV95cUxOMmgwd1V5OHEwb0tnMlVRb1BiWUZVZzVqbjJXSU1pV1ZKci1RTGpxS2hJaFcxWDBHd0tpdFBJXzJSdGxiX0N3OUVKX3laWU5fdUNPaGpsdEZLRWRRSnd4Q1A4ZVEwU1FRTGVBM3NJTmJETG1BLW1QU1ZiMXR6QzJFdFdGVDV3WWp0NGx2ZXpJMHZNOFJyVEg1ZldMX0V6ZDBMeG02bU1TaXNXcGlOa243WU1rLVdjeHpXLW9B?oc=5",
+   "data": "2026-11-01T09:00:00Z",
+   "coletado_em": "2026-11-01T17:17:12Z",
    "outras": [],
    "possivel": false,
    "triagem": 3,
