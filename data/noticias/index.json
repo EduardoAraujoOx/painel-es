@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-01",
- "gerado_em": "2026-11-01T13:17:11Z",
+ "gerado_em": "2026-11-01T14:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,24 +25,24 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 29,
-   "aceitos": 21,
+   "lidos": 40,
+   "aceitos": 22,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 4,
+   "lidos": 10,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 8,
+   "lidos": 8,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -50,7 +50,7 @@
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
    "lidos": 13,
-   "aceitos": 5,
+   "aceitos": 4,
    "possiveis": 3
   },
   {
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -74,7 +74,7 @@
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 69,
+   "lidos": 61,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 40,
+   "lidos": 39,
    "aceitos": 5,
    "possiveis": 4
   },
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 1,
-   "aceitos": 1,
+   "lidos": 2,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,31 +137,31 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
-   "aceitos": 3,
+   "lidos": 33,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 12,
+   "lidos": 16,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 51,
    "aceitos": 3,
-   "possiveis": 4
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 59,
+   "lidos": 100,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -178,7 +178,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -206,20 +206,59 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto": 259,
-  "sem_contexto_com_tema": 6,
-  "veiculo_excluido": 17,
+  "sem_contexto": 273,
+  "veiculo_excluido": 23,
+  "sem_contexto_com_tema": 12,
   "possivel": 15,
   "caixa_alta": 2,
-  "excluir": 6,
+  "excluir": 5,
   "exterior_sem_ancora": 8,
-  "outro_estado": 14,
-  "veiculo_outra_praca": 4,
-  "sigla_sem_ancora": 5
+  "outro_estado": 19,
+  "veiculo_outra_praca": 5,
+  "sigla_sem_ancora": 8
  },
  "itens": [
+  {
+   "id": "21b086e5f329",
+   "titulo": "Sejus suspende contratos por falta de verba no ES",
+   "veiculo": "Seu Crédito Digital",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1oOVozU1BMY2cwUXFGT1NzWW92cjJRck5TTHRFUFkzbC1Vc0UyeU54WkU3cDdVSF8weEdWSm1teF9qdW9DRG5QWnh1dW40bFRxVGxKcktQeWZiS05KbFE1bEhKQ0VyMUp4cEtMUHhYam4weXhHZ3BiZXVNRDE?oc=5",
+   "data": "2026-11-01T14:00:00Z",
+   "coletado_em": "2026-11-01T14:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "restricao",
+    "contratos"
+   ]
+  },
+  {
+   "id": "dd90c22d2ff6",
+   "titulo": "Transcol terá ônibus extras no Dia de Finados; veja os terminais",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/transito/transcol-tera-onibus-extras-no-dia-de-finados-veja-os-terminais/",
+   "data": "2026-11-01T13:48:14Z",
+   "coletado_em": "2026-11-01T14:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "300ff28f418e",
+   "titulo": "Chamada Escolar 2027: escolas estaduais vão abrir matrículas e rematrículas",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/educacao/chamada-escolar-2027-escolas-estaduais-vao-abrir-matriculas-e-rematriculas/",
+   "data": "2026-11-01T13:43:11Z",
+   "coletado_em": "2026-11-01T14:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
   {
    "id": "8f7541a33c35",
    "titulo": "Lula: Empresas sob pressão enfrentam dívida elevada e expectativa de queda mais lenta dos juros",
