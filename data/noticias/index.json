@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-01",
- "gerado_em": "2026-11-01T21:17:12Z",
+ "gerado_em": "2026-11-01T22:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,22 +18,22 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 6,
-   "possiveis": 0
+   "aceitos": 4,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 33,
-   "aceitos": 11,
+   "lidos": 29,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -42,8 +42,8 @@
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
    "lidos": 8,
-   "aceitos": 6,
-   "possiveis": 0
+   "aceitos": 4,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 18,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,8 +97,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 33,
-   "aceitos": 4,
+   "lidos": 32,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 48,
    "aceitos": 4,
-   "possiveis": 6
+   "possiveis": 9
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 60,
+   "lidos": 100,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -206,18 +206,19 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 234,
-  "veiculo_excluido": 14,
+  "possivel": 10,
+  "sem_contexto": 233,
   "outro_estado": 14,
-  "possivel": 9,
+  "generico_sem_ancora": 1,
   "caixa_alta": 1,
   "excluir": 6,
-  "exterior_sem_ancora": 9,
-  "sem_contexto_com_tema": 6,
+  "exterior_sem_ancora": 10,
+  "sem_contexto_com_tema": 8,
+  "veiculo_excluido": 23,
   "veiculo_outra_praca": 3,
-  "sigla_sem_ancora": 7
+  "sigla_sem_ancora": 10
  },
  "itens": [
   {
@@ -650,6 +651,20 @@
    "triagem": 3
   },
   {
+   "id": "c6ddd41f3a92",
+   "titulo": "Ricardo assina decreto e oficializa equipe de transição",
+   "veiculo": "Tribuna Norte Leste",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQaTJObEU3TWQxRnRhckktY2Jkd3NOWmtlSWFHck1LaWdjWVVGdkhnS0ZrQkhlNFp1aVdxeWkwQTRMZVNhMlJ6aW5EQUlJa29QOGs5RkdGWXI2R3Q4UmE3Mk95djBZQzh2SzBWdUszR3o5WWhnN2N4aWhSYUZ2d3ZISXRpSGRJNE9QbTAyeE95X1hJeXM?oc=5",
+   "data": "2026-10-31T13:27:52Z",
+   "coletado_em": "2026-11-01T22:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
    "id": "7dc56e450c52",
    "titulo": "DETRAN faz pente-fino e bloqueia serviços da CNH; Como evitar multa de R$ 293,47 e sete pontos na carteira",
    "veiculo": "Serra Noticiário",
@@ -698,6 +713,18 @@
    "possivel": true,
    "temas": [],
    "triagem": 3
+  },
+  {
+   "id": "efeb446c438f",
+   "titulo": "Parque Estadual da Pedra Azul completa 66 anos neste sábado",
+   "veiculo": "ES Brasil",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFByMEYyaXZzQlRqLTRfRUFJZUVqT0Vnd0s4ZVFqR1JDU0lmbDNodnVJa29salIweWQtRFdHZjZzYmlkR3lWSWNnVlc0UjlBemozbnhUeWo0Z1pIUVlFQXlNS3hWdHlYQnBiZnJn?oc=5",
+   "data": "2026-10-31T12:18:24Z",
+   "coletado_em": "2026-11-01T22:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
   },
   {
    "id": "5021ccf432d9",
