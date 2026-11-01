@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-01",
- "gerado_em": "2026-11-01T17:17:12Z",
+ "gerado_em": "2026-11-01T18:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,23 +17,23 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 9,
+   "lidos": 9,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 36,
-   "aceitos": 23,
+   "lidos": 37,
+   "aceitos": 21,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -81,17 +81,17 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 0,
+   "lidos": 7,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 46,
-   "aceitos": 2,
-   "possiveis": 1
+   "lidos": 40,
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -99,7 +99,7 @@
    "ok": true,
    "lidos": 39,
    "aceitos": 5,
-   "possiveis": 4
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 24,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 11,
+   "lidos": 14,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -155,7 +155,7 @@
    "ok": true,
    "lidos": 50,
    "aceitos": 2,
-   "possiveis": 7
+   "possiveis": 8
   },
   {
    "fonte": "Google Notícias",
@@ -209,17 +209,31 @@
  "novos_na_coleta": 2,
  "descartes_na_coleta": {
   "sem_contexto": 254,
-  "veiculo_excluido": 22,
+  "veiculo_excluido": 21,
   "sem_contexto_com_tema": 15,
-  "possivel": 13,
+  "possivel": 10,
   "caixa_alta": 2,
   "excluir": 4,
   "exterior_sem_ancora": 9,
-  "outro_estado": 15,
-  "veiculo_outra_praca": 3,
-  "sigla_sem_ancora": 8
+  "outro_estado": 14,
+  "veiculo_outra_praca": 4,
+  "sigla_sem_ancora": 9
  },
  "itens": [
+  {
+   "id": "41ea8aca7ace",
+   "titulo": "RUCA cobra de Pazolini implementação da política de agricultura urbana",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPQW1oNWxJNzE2NmYzN3VSUUpuYUhEWDNTWThZTjFtMEd2RUR2S1hraEItbEdsYzhHY3dWUUtUNlV5alNBUFo2Y1l1ZG9SWmFXMDJMOGF5X09ZUlNSZkNxcTgyUUNzSTlfc2VpVllvaFpYXzhCQUpfeGZOdmJlRjdiWV9WZ1ZsMzlFTXdDS29uQlhubUZEQUgxRDZmR3A1aHE5TlRqb0MzOHpFNEZlS2VvcUpFVFhBOENh?oc=5",
+   "data": "2026-11-01T17:39:51Z",
+   "coletado_em": "2026-11-01T18:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "ae8718c374b4",
    "titulo": "Alíquota da CBS a 11,3% aumenta carga tributária sobre consumo em 2027",
@@ -675,6 +689,18 @@
     "financas"
    ],
    "triagem": 3
+  },
+  {
+   "id": "0b30afb7ec1e",
+   "titulo": "Golpe da CNH: saiba como se proteger de mensagens falsas em nome do Detran",
+   "veiculo": "R7",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQb2duNlV2dkNva08xRUNvMEVmUjYzeFA4LVBnTFZHZXpNblBCRFhUcXA2N1NPVWR2VkMzcnlJd1dSR1c5VWdpT2NOMHY0THRMbzhkSEd1WnpYUjBweWtUNDd3RnM2djN1bm1NcVN0bHFYTmE4QThiY0xRNFpzQkpGdnlTYmdvZ1NjYy1QSXpNd3NNcU5XWWI0QnJTalhEMUU1VjBiYkRVN2JkanpqVDhxc0hVV1o4cXM?oc=5",
+   "data": "2026-10-31T05:00:01Z",
+   "coletado_em": "2026-11-01T18:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
   },
   {
    "id": "8080a61f7d97",
