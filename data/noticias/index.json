@@ -1,6 +1,6 @@
 {
- "ref": "2026-10-31",
- "gerado_em": "2026-10-31T22:17:11Z",
+ "ref": "2026-11-01",
+ "gerado_em": "2026-11-01T00:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,24 +17,24 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 14,
-   "aceitos": 12,
+   "lidos": 13,
+   "aceitos": 11,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 42,
-   "aceitos": 33,
+   "lidos": 41,
+   "aceitos": 31,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 8,
+   "lidos": 8,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 13,
+   "lidos": 14,
    "aceitos": 6,
    "possiveis": 3
   },
@@ -57,7 +57,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 2,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -65,8 +65,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 4,
+   "lidos": 6,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 79,
+   "lidos": 78,
    "aceitos": 5,
    "possiveis": 2
   },
@@ -97,8 +97,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 68,
-   "aceitos": 7,
+   "lidos": 71,
+   "aceitos": 6,
    "possiveis": 4
   },
   {
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 38,
-   "aceitos": 5,
-   "possiveis": 3
+   "lidos": 37,
+   "aceitos": 4,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 19,
+   "lidos": 23,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
-   "aceitos": 5,
-   "possiveis": 5
+   "lidos": 51,
+   "aceitos": 4,
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 59,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 5,
+   "aceitos": 4,
    "possiveis": 3
   },
   {
@@ -186,17 +186,16 @@
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 415: Unsupported Media Type"
+   "ok": true,
+   "lidos": 30,
+   "aceitos": 3,
+   "possiveis": 2
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -209,17 +208,45 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 289,
-  "veiculo_excluido": 24,
-  "possivel": 14,
-  "sem_contexto_com_tema": 6,
+  "sem_contexto": 327,
+  "veiculo_excluido": 29,
+  "sem_contexto_com_tema": 11,
+  "possivel": 16,
   "excluir": 5,
-  "outro_estado": 21,
-  "caixa_alta": 5,
-  "veiculo_outra_praca": 8,
-  "sigla_sem_ancora": 10
+  "outro_estado": 27,
+  "caixa_alta": 4,
+  "veiculo_outra_praca": 9,
+  "sigla_sem_ancora": 11
  },
  "itens": [
+  {
+   "id": "5db2329bd355",
+   "titulo": "“Natal Azul”: Vila Velha realiza mutirão de renegociação de dívidas em novembro",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/economia/2026/10/renegociacao-natal-azul/",
+   "data": "2026-10-31T22:27:24Z",
+   "coletado_em": "2026-11-01T00:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 2,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "a46b7f448dbc",
+   "titulo": "Ação Popular pede suspensão do salário de Flávio Bolsonaro como senador",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/10/suspensao-salario-flavio/",
+   "data": "2026-10-31T22:00:55Z",
+   "coletado_em": "2026-11-01T00:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 2,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "31f3066a6ffc",
    "titulo": "Golpe usa falsas multas do Detran para enganar motoristas por WhatsApp",
