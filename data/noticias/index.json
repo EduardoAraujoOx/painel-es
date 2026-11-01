@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-01",
- "gerado_em": "2026-11-01T07:34:14Z",
+ "gerado_em": "2026-11-01T09:17:11Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -16,180 +16,161 @@
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "lidos": 14,
+   "aceitos": 10,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "lidos": 28,
+   "aceitos": 23,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "lidos": 10,
+   "aceitos": 6,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "lidos": 9,
+   "aceitos": 8,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "lidos": 14,
+   "aceitos": 5,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "lidos": 2,
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "lidos": 6,
+   "aceitos": 2,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "lidos": 10,
+   "aceitos": 2,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
-   "ok": false,
-   "lidos": 0,
+   "ok": true,
+   "lidos": 8,
    "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "lidos": 73,
+   "aceitos": 5,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "lidos": 48,
+   "aceitos": 7,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(\"insuficiência de recursos\" OR \"restrições orçamentárias\" OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) \"governo do ES\"",
-   "ok": false,
+   "ok": true,
    "lidos": 0,
    "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "lidos": 1,
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(atraso OR atrasados) pagamento fornecedores \"governo do ES\" OR \"Governo do Estado\" Espírito Santo",
-   "ok": false,
+   "ok": true,
    "lidos": 0,
    "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "lidos": 5,
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "lidos": 37,
+   "aceitos": 4,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
-   "ok": false,
-   "lidos": 0,
+   "ok": true,
+   "lidos": 21,
    "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "lidos": 28,
+   "aceitos": 3,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
-   "ok": false,
-   "lidos": 0,
+   "ok": true,
+   "lidos": 100,
    "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "possiveis": 0
   },
   {
    "fonte": "A Gazeta",
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 2
   },
   {
@@ -205,7 +186,7 @@
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -225,13 +206,33 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 147,
-  "excluir": 5,
-  "possivel": 5
+  "sem_contexto": 288,
+  "sem_contexto_com_tema": 8,
+  "veiculo_excluido": 18,
+  "possivel": 15,
+  "caixa_alta": 3,
+  "excluir": 6,
+  "outro_estado": 21,
+  "veiculo_outra_praca": 6,
+  "sigla_sem_ancora": 10
  },
  "itens": [
+  {
+   "id": "ed9563773623",
+   "titulo": "Pazolini vai observar movimentação direito do Palácio Anchieta",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRGI5SldwNi14TU9sVkZMMU9uMXc2RGFXRW5nOE82aXV2Y3FhMHVRVG5FeTBtMXA3bENNc0JVRlhzMFJLYm9uZzgxU1NhRGQ3cTlGUVRSUXFDVzF3SFBLeEtqTTJ6WUZrQWpzRndzVDRHU19PTmRRTHVwbjZxcHM4RS1JMGVBZFY3YzJ3djhjaFo3MHZlSlpnSklGdjVhNTlmcjFST1QtdHp5Q2xmVWNmQjVEeVjSAbwBQVVfeXFMTzJVRHpfXzNmc3U3Z1A2NW1UendmR2U4SHhVNjVTbDVyaUlydkUtR1FOb0laSXdKaUROcXN6QkU3bWY2dTJKMHVXM1JmVVMzX1ZVVlJDQ0VYeGpfV0hlUTYxcVp2V3VzNnpJbFdYN3Vqc1JuRmJqT01XOHVGaXNWaVcxanFyckxPcWtJQThCczNfVHFXdmxnZWN6S2hYMFR6ZWNqb2pMcm0tVU9vdzc4bjdfWHlLMzNOd01fNmU?oc=5",
+   "data": "2026-11-01T09:00:00Z",
+   "coletado_em": "2026-11-01T09:17:11Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 2,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "5db2329bd355",
    "titulo": "“Natal Azul”: Vila Velha realiza mutirão de renegociação de dívidas em novembro",
