@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-01",
- "gerado_em": "2026-11-01T16:02:41Z",
+ "gerado_em": "2026-11-01T16:17:11Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,15 +18,15 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 9,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 28,
-   "aceitos": 20,
+   "lidos": 36,
+   "aceitos": 24,
    "possiveis": 0
   },
   {
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 8,
+   "lidos": 9,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 54,
+   "lidos": 53,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 38,
+   "lidos": 37,
    "aceitos": 5,
    "possiveis": 4
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 39,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 16,
+   "lidos": 12,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 51,
+   "lidos": 26,
    "aceitos": 3,
-   "possiveis": 7
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 59,
+   "lidos": 60,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -208,16 +208,16 @@
  ],
  "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 259,
-  "sem_contexto_com_tema": 14,
-  "veiculo_excluido": 21,
+  "sem_contexto": 254,
+  "veiculo_excluido": 22,
+  "sem_contexto_com_tema": 11,
   "possivel": 14,
   "caixa_alta": 2,
   "excluir": 5,
   "exterior_sem_ancora": 9,
-  "outro_estado": 17,
-  "veiculo_outra_praca": 4,
-  "sigla_sem_ancora": 8
+  "outro_estado": 18,
+  "veiculo_outra_praca": 2,
+  "sigla_sem_ancora": 7
  },
  "itens": [
   {
@@ -776,6 +776,20 @@
     "contratos"
    ],
    "triagem": 3
+  },
+  {
+   "id": "508134ca499f",
+   "titulo": "Sandro Locutor 15100 (MDB): candidato a Deputado Estadual pelo ES",
+   "veiculo": "Gazeta do Povo",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNZE9OSC1WNnZ4R25RVUpyV1haTHJJNXEyTHktemx1RmhlbXRldHBlRUpjVFZZYTBITEFRMzZaVnVpZG0wbHRwX2FRRGxCU0VOZ3VtQlhuXzJZTjNmLXJ0Y1ljWnhPLVotR19LWHVHcEJaTDNoZWZBNGU2S2RPWkJQV0cwMUVDUEJhZzliRlFya2pMSklLWVRQYzBVbjl1RVRBRGdvSmNn?oc=5",
+   "data": "2026-10-30T21:01:00Z",
+   "coletado_em": "2026-11-01T16:17:11Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "controle"
+   ]
   },
   {
    "id": "7776a2570edc",
