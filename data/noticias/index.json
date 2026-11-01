@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-01",
- "gerado_em": "2026-11-01T19:17:12Z",
+ "gerado_em": "2026-11-01T20:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,32 +25,32 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 36,
-   "aceitos": 19,
+   "lidos": 35,
+   "aceitos": 17,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 2,
+   "lidos": 8,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 7,
+   "lidos": 8,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 1,
+   "lidos": 4,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 33,
+   "lidos": 26,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -97,8 +97,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 37,
-   "aceitos": 5,
+   "lidos": 35,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
@@ -137,9 +137,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 43,
+   "lidos": 26,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 47,
    "aceitos": 2,
-   "possiveis": 6
+   "possiveis": 9
   },
   {
    "fonte": "Google Notícias",
@@ -178,7 +178,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 2
   },
   {
@@ -202,25 +202,36 @@
    "consulta": "https://g1.globo.com/rss/g1/es/espirito-santo/",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto": 237,
-  "veiculo_excluido": 12,
+  "sem_contexto": 246,
+  "veiculo_excluido": 22,
   "possivel": 10,
   "caixa_alta": 2,
-  "excluir": 4,
+  "excluir": 6,
   "exterior_sem_ancora": 8,
-  "outro_estado": 15,
-  "sem_contexto_com_tema": 9,
-  "veiculo_outra_praca": 6,
-  "sigla_sem_ancora": 8,
-  "generico_sem_ancora": 1
+  "outro_estado": 13,
+  "sem_contexto_com_tema": 11,
+  "veiculo_outra_praca": 3,
+  "sigla_sem_ancora": 10
  },
  "itens": [
+  {
+   "id": "cb997472d087",
+   "titulo": "Transcol terá horários especiais e ônibus extra em Finados",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/espirito-santo/2026/11/transcol-finados-linhas/",
+   "data": "2026-11-01T19:29:08Z",
+   "coletado_em": "2026-11-01T20:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
   {
    "id": "2a38eb919425",
    "titulo": "Obras do mergulhão e viaduto de Alto Lage chegam a 65% e entram em nova fase",
@@ -629,6 +640,18 @@
    "triagem": 3
   },
   {
+   "id": "d09279e6d811",
+   "titulo": "Quem pagou multa do Free Flow pode receber o dinheiro de volta pelo sistema do Detran",
+   "veiculo": "Acorda Cidade",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPcHQwejdUTklFUVY0ZGhTZVF5Sk5BUVpvbktndHIyQWE2Um5iYXdKd2J2cTFSWEIxbnB6MVJaVV9KMHJUOGhBbzhZWS0ydmFwOGFQWkNRT1V5bkd6aXlVYmk0Q0F3Q3lYajlhekstbW1EcHY1STNhMHdHX3BkdGhoVXB2U2VFUnNsYmVnQTRVcExMLXVBTXZpWC0yRU1jNlNueTY2Y3lPd1NUSk9NNGwtX1EwaUt0cTFVcVluT09ESDRkY3F2dUxv?oc=5",
+   "data": "2026-10-31T12:54:00Z",
+   "coletado_em": "2026-11-01T20:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
+  {
    "id": "4ed9777683e4",
    "titulo": "CNH Social: Detran-ES divulga lista de suplentes na terça (3)",
    "veiculo": "ES Brasil",
@@ -858,6 +881,20 @@
     "contratos"
    ],
    "triagem": 3
+  },
+  {
+   "id": "7f429e7dceee",
+   "titulo": "Raquel Ramos 44500 (UNIÃO): candidata a Deputado Estadual pelo ES",
+   "veiculo": "Gazeta do Povo",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTDBTZjZUY2w2MG54Rm5sRGpmdmUwZVFFNGZFNEhSRVRPVVMwYXJmeEIzU3o5LWczZUk4TzBKeGc1ZVVaWnY2YU1kZk5GeURYeFZWSzQ3RmhsV2VFYVRIYWZSbXkxMkVBZWZEZFEwWE5PSlpEbnJzblYxZHJPT2FRR2MtU2pJYjFZekc5MUtyR1VuTFVSYmx2eTdwU1BRUFJoVkFGQWZR?oc=5",
+   "data": "2026-10-30T21:01:00Z",
+   "coletado_em": "2026-11-01T20:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "controle"
+   ]
   },
   {
    "id": "508134ca499f",
