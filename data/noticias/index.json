@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-01",
- "gerado_em": "2026-11-01T18:17:13Z",
+ "gerado_em": "2026-11-01T19:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 8,
    "possiveis": 0
   },
@@ -25,8 +25,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 37,
-   "aceitos": 21,
+   "lidos": 36,
+   "aceitos": 19,
    "possiveis": 0
   },
   {
@@ -34,7 +34,7 @@
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 9,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -42,15 +42,15 @@
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
    "lidos": 9,
-   "aceitos": 9,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 4,
+   "lidos": 8,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 40,
+   "lidos": 33,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 39,
+   "lidos": 37,
    "aceitos": 5,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 43,
    "aceitos": 2,
-   "possiveis": 0
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 14,
+   "lidos": 11,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 50,
+   "lidos": 23,
    "aceitos": 2,
-   "possiveis": 8
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -178,15 +178,15 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
-   "possiveis": 1
+   "aceitos": 1,
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -202,24 +202,39 @@
    "consulta": "https://g1.globo.com/rss/g1/es/espirito-santo/",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 254,
-  "veiculo_excluido": 21,
-  "sem_contexto_com_tema": 15,
+  "sem_contexto": 237,
+  "veiculo_excluido": 12,
   "possivel": 10,
   "caixa_alta": 2,
   "excluir": 4,
-  "exterior_sem_ancora": 9,
-  "outro_estado": 14,
-  "veiculo_outra_praca": 4,
-  "sigla_sem_ancora": 9
+  "exterior_sem_ancora": 8,
+  "outro_estado": 15,
+  "sem_contexto_com_tema": 9,
+  "veiculo_outra_praca": 6,
+  "sigla_sem_ancora": 8,
+  "generico_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "2a38eb919425",
+   "titulo": "Obras do mergulhão e viaduto de Alto Lage chegam a 65% e entram em nova fase",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/transito/obras-do-mergulhao-e-viaduto-de-alto-lage-chegam-a-65-em-cariacica/",
+   "data": "2026-11-01T19:13:13Z",
+   "coletado_em": "2026-11-01T19:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "41ea8aca7ace",
    "titulo": "RUCA cobra de Pazolini implementação da política de agricultura urbana",
@@ -370,6 +385,21 @@
    ]
   },
   {
+   "id": "6059569a9e3d",
+   "titulo": "A partir de ação civil proposta pelo Ministério Público do Paraná, Judiciário determina suspensão de contratações temporárias na Secretaria Estadual de Saúde",
+   "veiculo": "Ubiratã Online Notícias",
+   "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxPc3RrX0lHX01LUWxUTl9SaG1ndVJMVkJCLVZhSHcxbUFkR0lKZ3VPaUE2R203UlZxNzFyMmtnVmlTZG9WWExaX3FFSm5yaTZIMC1lSThWZWVfc3QxOHVIa192blhQWmR3U2xGVmhrdWNpRFF4MzZScWdXbXpoQWw3X0dzTkVuemhzd0kzbHRTbTQwWWZEVzBIMDRuV0YweUVfSHZzM3lMeUV2c0t5cmxXMUZ1MFNlUnBVc3hVMTJNLWI1N0JnTV9QQWVKek5uR1laWlVXSmZNZXhjdlFDLUtmYnphM2lYVE1SV3lUcDFOT3ZLSnFfdmdXX1k2R0lvMWg0SFBSZGlUS1BYcDFfRVh6OXpzeTA1Skdu?oc=5",
+   "data": "2026-11-01T01:08:16Z",
+   "coletado_em": "2026-11-01T19:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "contratos",
+    "controle"
+   ]
+  },
+  {
    "id": "5db2329bd355",
    "titulo": "“Natal Azul”: Vila Velha realiza mutirão de renegociação de dívidas em novembro",
    "veiculo": "ES Hoje",
@@ -474,6 +504,18 @@
    "coletado_em": "2026-10-31T18:17:12Z",
    "outras": [],
    "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "f6674657df27",
+   "titulo": "SESP informa interdição temporária do Parque Municipal Erivaldo Cerqueira devido a enxame de abelhas",
+   "veiculo": "PÁGINA DE POLÍCIA",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNcHAzQ3dGZkgybEN1TUNqbFplOU82SWRWellBd2dPSGx2WEJpdXdTNG1MYjJZY0Rad2pjcXd6cVY3X2IwWWM2cTczUDY1T2NvTnJDaHdVNS1qU1MteDkxbmlsOFhwWHNBTTUxRWRLaks1Q2JyaUxidzl2Tno3VXpBMHlmZEVxc0FPNEJpdWp5enRjVy1yUjFqUk5TNEk3TGpodGIySXJKdkw2STZBVE1valFKSklQM25uQmlTMUxNdHBJNU00bnBhNlkxLWttSHdnNFJQLXB2QkJMZXhpWXVWaVlMWmU?oc=5",
+   "data": "2026-10-31T17:51:04Z",
+   "coletado_em": "2026-11-01T19:17:12Z",
+   "outras": [],
+   "possivel": true,
    "triagem": 3,
    "temas": []
   },
