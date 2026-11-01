@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-01",
- "gerado_em": "2026-11-01T22:17:13Z",
+ "gerado_em": "2026-11-01T23:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,8 +25,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 29,
-   "aceitos": 9,
+   "lidos": 23,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 4,
+   "lidos": 7,
+   "aceitos": 5,
    "possiveis": 1
   },
   {
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 18,
+   "lidos": 17,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 32,
+   "lidos": 26,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 27,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 13,
+   "lidos": 14,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,16 +153,16 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 48,
+   "lidos": 24,
    "aceitos": 4,
-   "possiveis": 9
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 100,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -206,19 +206,19 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
   "possivel": 10,
-  "sem_contexto": 233,
-  "outro_estado": 14,
+  "sem_contexto": 223,
+  "outro_estado": 15,
   "generico_sem_ancora": 1,
   "caixa_alta": 1,
   "excluir": 6,
   "exterior_sem_ancora": 10,
-  "sem_contexto_com_tema": 8,
-  "veiculo_excluido": 23,
+  "sem_contexto_com_tema": 7,
+  "veiculo_excluido": 13,
   "veiculo_outra_praca": 3,
-  "sigla_sem_ancora": 10
+  "sigla_sem_ancora": 7
  },
  "itens": [
   {
@@ -252,6 +252,18 @@
    "url": "https://eshoje.com.br/espirito-santo/2026/11/transcol-finados-linhas/",
    "data": "2026-11-01T19:29:08Z",
    "coletado_em": "2026-11-01T20:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "89d09b4e6b6a",
+   "titulo": "Itaú, Bradesco, Banestes e Allos pagam provento na semana. Caixa Seguridade tem data de corte para dividendo",
+   "veiculo": "Finance News",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPX1RGRFBTTnctZlZST3BIT2dEN3JyTEp3dU9CSTRURkpQc3g0LWFSVTNkRlpyTzZhUTNITjNTVlAyVXV1R2R0Q0tuZ1ItbUlRbHV5TEhrYThBRkdScE5IOWhfZ1g5LVBFdlBhOWp2bVlndC1BekdnUU01dXJnTkY0U0JPeUdGSVZOSVE1dVhOcU1sLXU1ZEoyZHhndU1jYUJhbk9aWlFKaC1PQ0xtbWhJd3g3c1ZNTEFKOEYwb29VVDlWaE51WEVhZ0xMd3VneDFTZGZLRjNvbmM?oc=5",
+   "data": "2026-11-01T19:19:35Z",
+   "coletado_em": "2026-11-01T23:17:12Z",
    "outras": [],
    "possivel": false,
    "triagem": 3,
