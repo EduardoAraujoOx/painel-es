@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-01",
- "gerado_em": "2026-11-01T10:17:12Z",
+ "gerado_em": "2026-11-01T13:17:11Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,31 +17,31 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 13,
-   "aceitos": 10,
+   "lidos": 9,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 42,
-   "aceitos": 30,
+   "lidos": 29,
+   "aceitos": 21,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 6,
+   "lidos": 8,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 8,
    "possiveis": 0
   },
@@ -57,8 +57,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 1,
-   "aceitos": 1,
+   "lidos": 0,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -89,16 +89,16 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 73,
-   "aceitos": 5,
+   "lidos": 69,
+   "aceitos": 2,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 46,
-   "aceitos": 7,
+   "lidos": 40,
+   "aceitos": 5,
    "possiveis": 4
   },
   {
@@ -129,39 +129,39 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 1,
+   "lidos": 3,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 37,
-   "aceitos": 4,
-   "possiveis": 2
+   "lidos": 23,
+   "aceitos": 3,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 22,
+   "lidos": 12,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 51,
+   "lidos": 27,
    "aceitos": 3,
-   "possiveis": 7
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 59,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 2
   },
   {
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -194,7 +194,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 3,
+   "aceitos": 1,
    "possiveis": 2
   },
   {
@@ -206,19 +206,34 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 302,
-  "veiculo_excluido": 26,
-  "sem_contexto_com_tema": 12,
-  "possivel": 14,
-  "caixa_alta": 3,
+  "sem_contexto": 259,
+  "sem_contexto_com_tema": 6,
+  "veiculo_excluido": 17,
+  "possivel": 15,
+  "caixa_alta": 2,
   "excluir": 6,
-  "outro_estado": 24,
-  "veiculo_outra_praca": 7,
-  "sigla_sem_ancora": 12
+  "exterior_sem_ancora": 8,
+  "outro_estado": 14,
+  "veiculo_outra_praca": 4,
+  "sigla_sem_ancora": 5
  },
  "itens": [
+  {
+   "id": "8f7541a33c35",
+   "titulo": "Lula: Empresas sob pressão enfrentam dívida elevada e expectativa de queda mais lenta dos juros",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/lula-4-empresas-sob-pressao-enfrentam-divida-elevada-e-expectativa-de-queda-mais-lenta-dos-juros/",
+   "data": "2026-11-01T12:37:52Z",
+   "coletado_em": "2026-11-01T13:17:11Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "ed9563773623",
    "titulo": "Pazolini vai observar movimentação direito do Palácio Anchieta",
@@ -228,7 +243,7 @@
    "coletado_em": "2026-11-01T09:17:11Z",
    "outras": [],
    "possivel": false,
-   "triagem": 2,
+   "triagem": 3,
    "temas": [
     "governador"
    ]
@@ -242,7 +257,7 @@
    "coletado_em": "2026-11-01T00:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 2,
+   "triagem": 3,
    "temas": [
     "financas"
    ]
@@ -256,7 +271,7 @@
    "coletado_em": "2026-11-01T00:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 2,
+   "triagem": 3,
    "temas": [
     "contratos"
    ]
@@ -270,19 +285,7 @@
    "coletado_em": "2026-10-31T21:17:11Z",
    "outras": [],
    "possivel": true,
-   "triagem": 2,
-   "temas": []
-  },
-  {
-   "id": "76f61a445655",
-   "titulo": "Marco Rubio, secretário de Estado dos EUA, nega que país tenha ajudado Flávio Bolsonaro a fugir",
-   "veiculo": "A Gazeta",
-   "url": "https://www.agazeta.com.br/brasil/marco-rubio-secretario-de-estado-dos-eua-nega-que-pais-tenha-ajudado-flavio-bolsonaro-a-fugir-1026",
-   "data": "2026-10-31T20:13:56Z",
-   "coletado_em": "2026-10-31T21:17:11Z",
-   "outras": [],
-   "possivel": false,
-   "triagem": 2,
+   "triagem": 3,
    "temas": []
   },
   {
@@ -294,7 +297,7 @@
    "coletado_em": "2026-10-31T21:17:11Z",
    "outras": [],
    "possivel": true,
-   "triagem": 2,
+   "triagem": 3,
    "temas": [
     "contratos"
    ]
@@ -308,7 +311,7 @@
    "coletado_em": "2026-10-31T20:17:11Z",
    "outras": [],
    "possivel": false,
-   "triagem": 2,
+   "triagem": 3,
    "temas": [
     "governador"
    ]
@@ -322,22 +325,10 @@
    "coletado_em": "2026-10-31T22:17:11Z",
    "outras": [],
    "possivel": true,
-   "triagem": 2,
+   "triagem": 3,
    "temas": [
     "financas"
    ]
-  },
-  {
-   "id": "a8804bf33bd8",
-   "titulo": "Governo dos EUA ‘não se envolveu’ na saída de Flávio Bolsonaro do Brasil, diz Marco Rubio",
-   "veiculo": "Folha Vitória",
-   "url": "https://www.folhavitoria.com.br/cotidiano/governo-dos-eua-nao-se-envolveu-na-saida-de-flavio-bolsonaro-do-brasil-diz-marco-rubio/",
-   "data": "2026-10-31T18:50:50Z",
-   "coletado_em": "2026-10-31T19:17:11Z",
-   "outras": [],
-   "possivel": true,
-   "triagem": 2,
-   "temas": []
   },
   {
    "id": "304ae9286cad",
@@ -348,22 +339,10 @@
    "coletado_em": "2026-10-31T19:17:11Z",
    "outras": [],
    "possivel": false,
-   "triagem": 2,
+   "triagem": 3,
    "temas": [
     "controle"
    ]
-  },
-  {
-   "id": "8eebf0079925",
-   "titulo": "Secretário de Estado dos EUA nega que país tenha ajudado Flávio Bolsonaro a fugir",
-   "veiculo": "Tribuna Online",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNekRLZ0F5azlUX2RfaFlKeUxtOGg4eGdPVnpzTXRJN3dCN2FHdml1YVA0Y29sUkN5ZldZd28wc3lVMi15WWhqMEMyYzRKX0lRMVBJTV80cWM2ZUNXbWFwd3o2MzlKNldEX2FBcGRqWU5pT1FUQTJWaUYzdEpaREFxbDYtRGJiR0l4ZnRTZzNab0RtNzhEaUxoZFpZcjVmVEVBeVliQWtuWEg0bi1VemFBLWN1NlJhenZxRkx3TlN5M0pfeEJVb1dBTUxBa9IB0wFBVV95cUxNbnd1RmlHS2xUN3hWUmZ5eUxLcWM1MkZpbUpvTVhzMy1FeDlVTmtpYTk0RXpvaEkySXh2bFJqVXpjcG0xZE96cXBQeXBWdkVjS2RNMHZkby00T192MW50cjBSUFFFSjVkOXM1Qndyc2hWWVBkd0JrbmRYLUhJQWRyTzhQb1lXZTk1V2dEVUNUMGtfNzJMeEJONm1OcVNFWVZSbUM5S2tNTGRpR1ZSeGxUMFlBdEdhM3VPdjFNM19UVWNpWHNLVUJYYzY5VVU5VjUtRy1N?oc=5",
-   "data": "2026-10-31T18:04:16Z",
-   "coletado_em": "2026-10-31T18:17:12Z",
-   "outras": [],
-   "possivel": false,
-   "triagem": 2,
-   "temas": []
   },
   {
    "id": "b99b5fa5ef42",
@@ -374,7 +353,7 @@
    "coletado_em": "2026-10-31T18:17:12Z",
    "outras": [],
    "possivel": false,
-   "triagem": 2,
+   "triagem": 3,
    "temas": []
   },
   {
@@ -390,7 +369,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "4543e7ae7a61",
@@ -404,7 +383,7 @@
    "temas": [
     "contratos"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "9b723624f8d4",
@@ -418,7 +397,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "e5de1fc63bba",
@@ -429,7 +408,7 @@
    "coletado_em": "2026-10-31T22:17:11Z",
    "outras": [],
    "possivel": true,
-   "triagem": 2,
+   "triagem": 3,
    "temas": [
     "controle"
    ]
@@ -444,7 +423,7 @@
    "outras": [],
    "possivel": false,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "fbebf8a160fa",
@@ -455,7 +434,7 @@
    "coletado_em": "2026-11-01T10:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 2,
+   "triagem": 3,
    "temas": []
   },
   {
@@ -470,7 +449,7 @@
    "temas": [
     "contratos"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "7dc56e450c52",
@@ -484,7 +463,7 @@
    "temas": [
     "restricao"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "0d4c0d791cb8",
@@ -496,7 +475,7 @@
    "outras": [],
    "possivel": true,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "5021ccf432d9",
@@ -510,7 +489,7 @@
    "temas": [
     "restricao"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "1aa2b7337c9c",
@@ -522,7 +501,7 @@
    "outras": [],
    "possivel": false,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "0febeee4c510",
@@ -536,7 +515,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "0c85a7b081a4",
@@ -548,7 +527,7 @@
    "outras": [],
    "possivel": true,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "559083432b7d",
@@ -562,7 +541,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "7be8896d3611",
@@ -576,7 +555,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "8080a61f7d97",
@@ -590,7 +569,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "b4ee92bf37e2",
@@ -604,7 +583,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "4715829c4ddd",
@@ -619,7 +598,7 @@
     "restricao",
     "contratos"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "eb589f9a463e",
@@ -630,7 +609,7 @@
    "coletado_em": "2026-11-01T10:17:12Z",
    "outras": [],
    "possivel": false,
-   "triagem": 2,
+   "triagem": 3,
    "temas": [
     "governador"
    ]
@@ -647,7 +626,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "5698507d35de",
@@ -662,7 +641,7 @@
     "transicao",
     "controle"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "77f726504dd8",
@@ -676,7 +655,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "ace7f0d52f95",
@@ -691,7 +670,7 @@
     "financas",
     "contratos"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "7776a2570edc",
@@ -705,7 +684,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "57817477248b",
@@ -716,7 +695,7 @@
    "coletado_em": "2026-10-31T20:17:11Z",
    "outras": [],
    "possivel": false,
-   "triagem": 2,
+   "triagem": 3,
    "temas": [
     "governador",
     "controle"
@@ -734,7 +713,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "4dda8644bb66",
@@ -749,7 +728,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "d0999922abeb",
@@ -762,7 +741,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "2256e19f41e1",
@@ -776,7 +755,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "0189f9910bec",
@@ -787,7 +766,7 @@
    "coletado_em": "2026-10-31T20:17:11Z",
    "outras": [],
    "possivel": false,
-   "triagem": 2,
+   "triagem": 3,
    "temas": [
     "governador"
    ]
@@ -817,7 +796,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "08458ad8e7b3",
@@ -831,7 +810,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "7614fc700ac8",
@@ -845,7 +824,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "1cbadd75b918",
@@ -858,7 +837,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "cd623fb5cc11",
@@ -872,7 +851,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "002af67bed80",
@@ -885,7 +864,7 @@
    "temas": [
     "contratos"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "b152685cd29d",
@@ -899,7 +878,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "091736a09c16",
@@ -912,7 +891,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "466540af7332",
@@ -924,7 +903,7 @@
    "outras": [],
    "possivel": false,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "40f7a69bffac",
@@ -938,7 +917,7 @@
    "temas": [
     "transicao"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "883e2148a0dd",
@@ -952,7 +931,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "f9e4192c2b18",
@@ -966,7 +945,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "619b67b0f0ce",
@@ -978,7 +957,7 @@
    "outras": [],
    "possivel": true,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "421b223f3094",
@@ -990,7 +969,7 @@
    "outras": [],
    "possivel": true,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "4b29d3c0666e",
@@ -1002,7 +981,7 @@
    "outras": [],
    "possivel": false,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "c475a3a5819e",
@@ -1013,7 +992,7 @@
    "coletado_em": "2026-10-31T20:17:11Z",
    "outras": [],
    "possivel": false,
-   "triagem": 2,
+   "triagem": 3,
    "temas": [
     "governador",
     "controle"
@@ -1030,7 +1009,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "ef5e63216aa8",
@@ -1052,7 +1031,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "841eb5faaca3",
@@ -1064,7 +1043,7 @@
    "outras": [],
    "possivel": true,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "d85172ae3c17",
@@ -1076,7 +1055,7 @@
    "outras": [],
    "possivel": true,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "83681bc1eb64",
@@ -1088,7 +1067,7 @@
    "outras": [],
    "possivel": false,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "0dcb4402826e",
@@ -1102,7 +1081,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "ca6fc523c714",
@@ -1115,7 +1094,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "de2691f8d4ca",
@@ -1130,19 +1109,7 @@
     "restricao",
     "contratos"
    ],
-   "triagem": 2
-  },
-  {
-   "id": "cd7f2ef56c6e",
-   "titulo": "Deputados dos EUA cobram explicações de Rubio sobre ajuda a Flávio Bolsonaro",
-   "veiculo": "A Gazeta",
-   "url": "https://www.agazeta.com.br/mundo/deputados-dos-eua-cobram-explicacoes-de-rubio-sobre-ajuda-a-flavio-bolsonaro-1026",
-   "data": "2026-10-30T15:58:35Z",
-   "coletado_em": "2026-10-31T02:20:21Z",
-   "outras": [],
-   "possivel": true,
-   "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "b8a837083de1",
@@ -1157,7 +1124,7 @@
     "restricao",
     "contratos"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "3d2c1da42649",
@@ -1171,7 +1138,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "c043c492d219",
@@ -1186,7 +1153,7 @@
     "restricao",
     "contratos"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "ed42ab59aacc",
@@ -1198,7 +1165,7 @@
    "outras": [],
    "possivel": true,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "1a923405f185",
@@ -1212,7 +1179,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "efd66b9db1a6",
@@ -1223,7 +1190,7 @@
    "coletado_em": "2026-10-30T15:32:37Z",
    "outras": [],
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "c250fbfa61a7",
@@ -1238,7 +1205,7 @@
     "transicao",
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "f053f80bdcd9",
@@ -1252,7 +1219,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "5faae07152fa",
@@ -1266,7 +1233,7 @@
    "temas": [
     "contratos"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "f9023aeb8a5b",
@@ -1280,7 +1247,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "abd16043965d",
@@ -1295,7 +1262,7 @@
     "governador",
     "controle"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "986d3cc271c6",
@@ -1307,7 +1274,7 @@
    "outras": [],
    "possivel": false,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "f5b75da68d0f",
@@ -1319,7 +1286,7 @@
    "outras": [],
    "possivel": true,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "20ecbaf6a5b1",
@@ -1333,7 +1300,7 @@
    "temas": [
     "contratos"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "2164e36c1906",
@@ -1347,7 +1314,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "bca4985db0be",
@@ -1360,7 +1327,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "c429e1d8e96a",
@@ -1374,7 +1341,7 @@
    "temas": [
     "contratos"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "0908aaea4abc",
@@ -1385,7 +1352,7 @@
    "coletado_em": "2026-10-31T20:17:11Z",
    "outras": [],
    "possivel": false,
-   "triagem": 2,
+   "triagem": 3,
    "temas": [
     "transicao",
     "governador"
@@ -1400,7 +1367,7 @@
    "coletado_em": "2026-11-01T10:17:12Z",
    "outras": [],
    "possivel": false,
-   "triagem": 2,
+   "triagem": 3,
    "temas": [
     "governador"
    ]
@@ -1422,7 +1389,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "4b47779193e6",
@@ -1433,7 +1400,7 @@
    "coletado_em": "2026-10-30T15:32:37Z",
    "outras": [],
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "35e6c3774c5e",
@@ -1448,7 +1415,7 @@
     "restricao",
     "contratos"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "699b04333780",
@@ -1462,7 +1429,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "3e639e505e2a",
@@ -1476,7 +1443,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "3eea6148562b",
@@ -1495,7 +1462,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "c624dc5e3ac0",
@@ -1506,7 +1473,7 @@
    "coletado_em": "2026-10-30T15:32:37Z",
    "outras": [],
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "5107bafc247f",
@@ -1520,7 +1487,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "1908fdfd38f4",
@@ -1533,7 +1500,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "ac3c708c5715",
@@ -1547,7 +1514,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "5fd04926d770",
@@ -1561,7 +1528,7 @@
     "governador",
     "controle"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "838052fddc0f",
@@ -1575,7 +1542,7 @@
     "transicao",
     "controle"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "6a5c9f758b9d",
@@ -1594,7 +1561,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "fa5f75c76d4d",
@@ -1606,7 +1573,7 @@
    "outras": [],
    "possivel": true,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "13ab76771891",
@@ -1620,7 +1587,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "963205b46658",
@@ -1631,7 +1598,7 @@
    "coletado_em": "2026-10-30T15:32:37Z",
    "outras": [],
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "36bce58c29c8",
@@ -1643,7 +1610,7 @@
    "outras": [],
    "possivel": false,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "555c14880d53",
@@ -1655,7 +1622,7 @@
    "outras": [],
    "possivel": false,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "ce949b36aa0d",
@@ -1667,7 +1634,7 @@
    "outras": [],
    "possivel": true,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "5b6cb1798da0",
@@ -1681,7 +1648,7 @@
    "temas": [
     "transicao"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "38905099947b",
@@ -1696,7 +1663,7 @@
     "restricao",
     "contratos"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "f6358400eef1",
@@ -1708,7 +1675,7 @@
    "outras": [],
    "possivel": false,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "b0f09126fc69",
@@ -1721,7 +1688,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "4d2e8738d0a5",
@@ -1733,7 +1700,7 @@
    "outras": [],
    "possivel": false,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "ca98b1f0e26e",
@@ -1746,7 +1713,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "ef24466a77e6",
@@ -1759,7 +1726,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "3ee3ce694a14",
@@ -1773,7 +1740,7 @@
    "temas": [
     "restricao"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "d80abe53b57c",
@@ -1788,7 +1755,7 @@
     "governador",
     "contratos"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "567d1fd5459e",
@@ -1807,7 +1774,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "e4f97d52263c",
@@ -1821,7 +1788,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "3dd43200486f",
@@ -1833,7 +1800,7 @@
    "outras": [],
    "possivel": true,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "90404b37fc41",
@@ -1845,7 +1812,7 @@
    "outras": [],
    "possivel": false,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "0f0a4325c4d4",
@@ -1858,7 +1825,7 @@
    "temas": [
     "transicao"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "17d50a851bc8",
@@ -1870,7 +1837,7 @@
    "outras": [],
    "possivel": false,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "cacfc552e241",
@@ -1884,7 +1851,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "ea4775f55ee1",
@@ -1898,7 +1865,7 @@
     "contratos",
     "controle"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "17aebae722ca",
@@ -1916,7 +1883,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "3a59a9c77f17",
@@ -1929,7 +1896,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "927050cd4b42",
@@ -1945,7 +1912,7 @@
     "financas",
     "contratos"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "d24b5b5dcdc5",
@@ -1957,7 +1924,7 @@
    "outras": [],
    "possivel": false,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "c15481fb25ca",
@@ -1971,7 +1938,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "f9844755474d",
@@ -1985,7 +1952,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "c9fbf4dc575a",
@@ -1998,7 +1965,7 @@
    "temas": [
     "transicao"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "735e8b6a13ac",
@@ -2012,7 +1979,7 @@
    "temas": [
     "contratos"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "904b2295b5cc",
@@ -2027,7 +1994,7 @@
     "governador",
     "controle"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "6c362f114613",
@@ -2041,7 +2008,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "f2c870b8b901",
@@ -2053,7 +2020,7 @@
    "outras": [],
    "possivel": true,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "bae510b8be71",
@@ -2071,7 +2038,7 @@
    "temas": [
     "transicao"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "b9f2bd1e7752",
@@ -2085,7 +2052,7 @@
     "financas",
     "controle"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "2f82bec7c96b",
@@ -2099,7 +2066,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "3635e8287cd1",
@@ -2112,7 +2079,7 @@
    "temas": [
     "transicao"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "372820158185",
@@ -2125,7 +2092,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "9786816ba8c9",
@@ -2138,7 +2105,7 @@
    "temas": [
     "controle"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "73c0de189664",
@@ -2152,7 +2119,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "b0f9f1c726bb",
@@ -2165,7 +2132,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "22b6b792eaeb",
@@ -2179,7 +2146,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "30d6b469b6e9",
@@ -2192,7 +2159,7 @@
    "temas": [
     "transicao"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "a7cf0c4bc8ec",
@@ -2206,7 +2173,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "52634bc12057",
@@ -2220,7 +2187,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "979b26f1ef92",
@@ -2232,7 +2199,7 @@
    "outras": [],
    "possivel": true,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "57929960473c",
@@ -2243,7 +2210,7 @@
    "coletado_em": "2026-10-30T15:32:37Z",
    "outras": [],
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "6292c461735d",
@@ -2255,7 +2222,7 @@
    "outras": [],
    "possivel": false,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "46c56c2647b0",
@@ -2269,7 +2236,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "4826fc022299",
@@ -2282,7 +2249,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "eafb460631a8",
@@ -2296,7 +2263,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "a3cb8d534333",
@@ -2310,7 +2277,7 @@
     "governador",
     "controle"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "2762963bb27c",
@@ -2322,7 +2289,7 @@
    "outras": [],
    "possivel": false,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "e81291d046a5",
@@ -2336,7 +2303,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "66370300ad33",
@@ -2349,7 +2316,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "6a345c882b38",
@@ -2363,7 +2330,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "45754fa3e5bc",
@@ -2377,7 +2344,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "66a055516189",
@@ -2391,7 +2358,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "52a9d5a3c76d",
@@ -2405,7 +2372,7 @@
     "transicao",
     "controle"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "072c24823975",
@@ -2416,7 +2383,7 @@
    "coletado_em": "2026-10-30T15:35:49Z",
    "outras": [],
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "abe335843171",
@@ -2431,7 +2398,7 @@
     "financas",
     "contratos"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "ad462afacd3e",
@@ -2443,7 +2410,7 @@
    "outras": [],
    "possivel": false,
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "c6685ff7cc53",
@@ -2457,7 +2424,7 @@
     "governador",
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "454a246b8f2d",
@@ -2471,7 +2438,7 @@
     "governador",
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "9c050b055ead",
@@ -2484,7 +2451,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "cc615181919a",
@@ -2503,7 +2470,7 @@
     "governador",
     "controle"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "2a65aeac8d91",
@@ -2516,7 +2483,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "0e3215cbac30",
@@ -2529,7 +2496,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "cab73a5286f3",
@@ -2542,7 +2509,7 @@
    "temas": [
     "contratos"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "b9339fd0cbb4",
@@ -2555,7 +2522,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "ffb3c2ba2b13",
@@ -2566,7 +2533,7 @@
    "coletado_em": "2026-10-30T15:32:37Z",
    "outras": [],
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "9949d50afa7f",
@@ -2579,7 +2546,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "f64e0226dbcb",
@@ -2602,7 +2569,7 @@
     "governador",
     "controle"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "eadbfba50e16",
@@ -2616,7 +2583,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "51a6c4e815a0",
@@ -2630,7 +2597,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "5d6dbff35838",
@@ -2653,7 +2620,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "a5cb0046391c",
@@ -2667,7 +2634,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "6d3c0c07f951",
@@ -2678,7 +2645,7 @@
    "coletado_em": "2026-10-30T15:32:37Z",
    "outras": [],
    "temas": [],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "09a7444a929c",
@@ -2692,7 +2659,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "fadb0c034c8b",
@@ -2707,7 +2674,7 @@
     "governador",
     "controle"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "f1356acb16a1",
@@ -2720,7 +2687,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "10d68a7673f7",
@@ -2734,7 +2701,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "a44fc1146c80",
@@ -2748,7 +2715,7 @@
     "governador",
     "controle"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "072782173b46",
@@ -2761,7 +2728,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "5440082c103a",
@@ -2775,7 +2742,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "89094dcd6cfb",
@@ -2790,7 +2757,7 @@
     "governador",
     "pessoal"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "1f770207bec4",
@@ -2804,7 +2771,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "8249b411e9c1",
@@ -2818,7 +2785,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "fda296e8abb1",
@@ -2832,7 +2799,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "df5c0e650d5c",
@@ -2846,7 +2813,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "93150cf2cc11",
@@ -2861,7 +2828,7 @@
     "governador",
     "controle"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "fc15948ffbc1",
@@ -2874,7 +2841,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "80df39c1639b",
@@ -2888,7 +2855,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "355503147b44",
@@ -2901,7 +2868,7 @@
    "temas": [
     "transicao"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "b1912aba2601",
@@ -2914,7 +2881,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "aa1b0184c315",
@@ -2927,7 +2894,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "b26107fb1625",
@@ -2940,7 +2907,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "c04fc3746879",
@@ -2954,7 +2921,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "3ebaef09d07d",
@@ -2969,7 +2936,7 @@
     "governador",
     "contratos"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "5463045196fd",
@@ -2982,7 +2949,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "d5a0be462888",
@@ -2995,7 +2962,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "92e743259c74",
@@ -3009,7 +2976,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "16b4ff98e472",
@@ -3022,7 +2989,7 @@
    "temas": [
     "transicao"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "b8c56f3ea038",
@@ -3035,7 +3002,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "f121cea28598",
@@ -3049,7 +3016,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "195dc207da6a",
@@ -3062,7 +3029,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "9e8a59fe8858",
@@ -3075,7 +3042,7 @@
    "temas": [
     "transicao"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "13c8b2e62602",
@@ -3088,7 +3055,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "a52cf94a57f5",
@@ -3107,7 +3074,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "9af8f85cfb3c",
@@ -3121,7 +3088,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "9f15709697f6",
@@ -3135,7 +3102,7 @@
     "governador",
     "contratos"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "e67dee257285",
@@ -3148,7 +3115,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "12825b6cf098",
@@ -3162,7 +3129,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "79bb21ebe978",
@@ -3175,7 +3142,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "8d6326925f7e",
@@ -3188,7 +3155,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "e9b37cdb561b",
@@ -3202,7 +3169,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "e08ae42a271d",
@@ -3215,7 +3182,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "6d570e1318a1",
@@ -3228,7 +3195,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "21aa5c01c9d8",
@@ -3241,7 +3208,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "e211e3dacb18",
@@ -3254,7 +3221,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "df02c651c5ed",
@@ -3267,7 +3234,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "08d7974aaf81",
@@ -3280,7 +3247,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "6ee370057aa6",
@@ -3294,7 +3261,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "bcd7c1e4d6c0",
@@ -3307,7 +3274,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "21d001648157",
@@ -3321,7 +3288,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "643ee7e7ce49",
@@ -3334,7 +3301,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "e0a1d9573e2b",
@@ -3347,7 +3314,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "476eb0605f60",
@@ -3361,7 +3328,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "d4a6defa5aec",
@@ -3375,7 +3342,7 @@
     "governador",
     "financas"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "2d095553dda5",
@@ -3388,7 +3355,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "0703442f0d48",
@@ -3402,7 +3369,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "d444e8070edf",
@@ -3415,7 +3382,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "e239c5273cda",
@@ -3428,7 +3395,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "861ec6134b56",
@@ -3442,7 +3409,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "e016799ae9ba",
@@ -3455,7 +3422,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "225131bc308a",
@@ -3468,7 +3435,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "4143ac889605",
@@ -3481,7 +3448,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "dbcd4cad19d0",
@@ -3494,7 +3461,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "81ef0d6873ee",
@@ -3507,7 +3474,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "de178f788155",
@@ -3520,7 +3487,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "9212214c2d72",
@@ -3533,7 +3500,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "10fe8c0037fe",
@@ -3546,7 +3513,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "c390cf645d76",
@@ -3559,7 +3526,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "16290b5c541b",
@@ -3572,7 +3539,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "5487fbe3d97e",
@@ -3585,7 +3552,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "440f4779d727",
@@ -3598,7 +3565,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "4b21dcde2bff",
@@ -3611,7 +3578,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "ec817374ddba",
@@ -3624,7 +3591,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "0fa7b82ea739",
@@ -3637,7 +3604,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "55e991013dd9",
@@ -3650,7 +3617,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "dedf3b9a6b07",
@@ -3663,7 +3630,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "2057cf2e8a36",
@@ -3676,7 +3643,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "01dcedaad874",
@@ -3689,7 +3656,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "85a41043c041",
@@ -3707,7 +3674,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "c8f859961fb3",
@@ -3725,7 +3692,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "a2bb388bcf41",
@@ -3738,7 +3705,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "39be1ca4711b",
@@ -3751,7 +3718,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "ae52c60ad682",
@@ -3764,7 +3731,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "fca8b61606f8",
@@ -3777,7 +3744,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "4b94d5e7f940",
@@ -3790,7 +3757,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "d1509137738b",
@@ -3803,7 +3770,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "e6c9e7deb0b7",
@@ -3816,7 +3783,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "74ccbe72bf4d",
@@ -3829,7 +3796,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "a72cebf4b450",
@@ -3847,7 +3814,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "2dbf539dae9d",
@@ -3860,7 +3827,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "da680ced2bf0",
@@ -3873,7 +3840,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "cd2059322e53",
@@ -3886,7 +3853,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "fc27185aba8f",
@@ -3899,7 +3866,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "859c5db61324",
@@ -3912,7 +3879,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "d41b19d43506",
@@ -3925,7 +3892,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "11fbdad1a27b",
@@ -3938,7 +3905,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "af218305a340",
@@ -3951,7 +3918,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "d1d6fa81cfdc",
@@ -3964,7 +3931,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "ab56f3be95f6",
@@ -3977,7 +3944,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "0bc76dc5be81",
@@ -3990,7 +3957,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "ce10cd3bfe9d",
@@ -4003,7 +3970,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "ac7e826f0ab2",
@@ -4016,7 +3983,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "8f23c9b1f3d8",
@@ -4029,7 +3996,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "de308a177898",
@@ -4042,7 +4009,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "3801b0d02908",
@@ -4055,7 +4022,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "d29ab6ac564a",
@@ -4068,7 +4035,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "65365b7515bf",
@@ -4081,7 +4048,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "c6e84a949763",
@@ -4094,7 +4061,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "2ba534b0da99",
@@ -4107,7 +4074,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "1140b8029afb",
@@ -4120,7 +4087,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "d2418c7774a8",
@@ -4133,7 +4100,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "b5389b35227e",
@@ -4146,7 +4113,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "44bfbabccecb",
@@ -4159,7 +4126,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "3e827d7efb81",
@@ -4172,7 +4139,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "f07abd4a8441",
@@ -4185,7 +4152,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "9b75b6b94be4",
@@ -4198,7 +4165,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "d2088161a11f",
@@ -4211,7 +4178,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "82e72572dc5a",
@@ -4224,7 +4191,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "f70f36e3d233",
@@ -4237,7 +4204,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "9916c1fd8994",
@@ -4250,7 +4217,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "8adeca00ed23",
@@ -4263,7 +4230,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "771411b1513c",
@@ -4281,7 +4248,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "3b5e70ba6cd0",
@@ -4294,7 +4261,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "dcfa02545797",
@@ -4307,7 +4274,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "9a92a2ce2c4e",
@@ -4320,7 +4287,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "78034bec1fd3",
@@ -4333,7 +4300,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "5ce4f4df9dd3",
@@ -4346,7 +4313,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "88d5d86dc2e8",
@@ -4359,7 +4326,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "81266e8daba9",
@@ -4372,7 +4339,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "4ae100ea2938",
@@ -4385,7 +4352,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "1dccf514cac6",
@@ -4398,7 +4365,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "7d79ec07a763",
@@ -4411,7 +4378,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "a5544cf16a12",
@@ -4424,7 +4391,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "82e086e02b6d",
@@ -4437,7 +4404,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "9e29fcd4a35c",
@@ -4450,7 +4417,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "f247c6caec38",
@@ -4463,7 +4430,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "b05d0ac481b5",
@@ -4476,7 +4443,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "f6c81051211d",
@@ -4489,7 +4456,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "b1668a92a7be",
@@ -4502,7 +4469,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "ee57e5105496",
@@ -4524,7 +4491,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "fcc04afcdac2",
@@ -4537,7 +4504,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "536270655005",
@@ -4550,7 +4517,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "fb98d5719b19",
@@ -4563,7 +4530,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "96db2605100e",
@@ -4597,7 +4564,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "d1a9befcc639",
@@ -4631,7 +4598,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "b69232a5bf82",
@@ -4644,7 +4611,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "8aa1422c1858",
@@ -4657,7 +4624,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "d9d2d58a57b2",
@@ -4670,7 +4637,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "35f16a76d678",
@@ -4683,7 +4650,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "eaa65f4ea2ff",
@@ -4696,7 +4663,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "7e680c098489",
@@ -4709,7 +4676,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "9cd1453e5954",
@@ -4722,7 +4689,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "5912ddcb06c1",
@@ -4735,7 +4702,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "e8eadca764ad",
@@ -4748,7 +4715,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "94a5096ad5b7",
@@ -4761,7 +4728,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "777176cf1ae6",
@@ -4774,7 +4741,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "d407730735e7",
@@ -4787,7 +4754,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "ccf11b55c094",
@@ -4800,7 +4767,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "ffd0b7d2a292",
@@ -4813,7 +4780,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "7e61f0804355",
@@ -4826,7 +4793,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "4a8e83b4e158",
@@ -4839,7 +4806,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "4f5bbb5fbd22",
@@ -4852,7 +4819,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "40cf2816be90",
@@ -4865,7 +4832,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "fb971967fe41",
@@ -4878,7 +4845,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "aa8c3db52bb4",
@@ -4891,7 +4858,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "2b4a696a977f",
@@ -4904,7 +4871,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "b09972a9733b",
@@ -4917,7 +4884,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "c86f4dd00a43",
@@ -4930,7 +4897,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   },
   {
    "id": "b23f3fa40a75",
@@ -4943,7 +4910,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 2
+   "triagem": 3
   }
  ]
 }
