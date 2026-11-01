@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-01",
- "gerado_em": "2026-11-01T14:17:14Z",
+ "gerado_em": "2026-11-01T15:17:11Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,23 +17,23 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 7,
+   "lidos": 10,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 40,
-   "aceitos": 22,
+   "lidos": 39,
+   "aceitos": 23,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -42,16 +42,16 @@
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
    "lidos": 8,
-   "aceitos": 6,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 13,
+   "lidos": 12,
    "aceitos": 4,
-   "possiveis": 3
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -66,7 +66,7 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 4,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 61,
+   "lidos": 57,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 39,
+   "lidos": 38,
    "aceitos": 5,
    "possiveis": 4
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 33,
+   "lidos": 34,
    "aceitos": 4,
    "possiveis": 0
   },
@@ -145,15 +145,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 16,
+   "lidos": 13,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 51,
+   "lidos": 28,
    "aceitos": 3,
    "possiveis": 6
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 59,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -206,20 +206,32 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 273,
-  "veiculo_excluido": 23,
-  "sem_contexto_com_tema": 12,
-  "possivel": 15,
+  "sem_contexto": 259,
+  "veiculo_excluido": 21,
+  "sem_contexto_com_tema": 9,
+  "possivel": 14,
   "caixa_alta": 2,
   "excluir": 5,
-  "exterior_sem_ancora": 8,
-  "outro_estado": 19,
-  "veiculo_outra_praca": 5,
-  "sigla_sem_ancora": 8
+  "exterior_sem_ancora": 9,
+  "outro_estado": 15,
+  "veiculo_outra_praca": 2,
+  "sigla_sem_ancora": 7
  },
  "itens": [
+  {
+   "id": "f3ee278303d4",
+   "titulo": "Cinco parques estaduais do ES abrem de graça no feriado de Finados",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/cultura/turismo/cinco-parques-estaduais-do-es-abrem-de-graca-no-feriado-de-finados/",
+   "data": "2026-11-01T15:02:15Z",
+   "coletado_em": "2026-11-01T15:17:11Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
   {
    "id": "21b086e5f329",
    "titulo": "Sejus suspende contratos por falta de verba no ES",
@@ -258,6 +270,20 @@
    "possivel": false,
    "triagem": 3,
    "temas": []
+  },
+  {
+   "id": "a0eee6d6a19f",
+   "titulo": "Detran põe mais de R$ 400 milhões em licitação à margem dos sistemas oficiais",
+   "veiculo": "Coluna Olavo Dutra",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaE1ZSDJDbTNNUFVHck1BRjZfWnVUVkV0WUdyTDdOMV9RTnctbG9aRmxWYmtvRVJvbHMzelFFS3A3M2hSc3N6UzhTRnFvUlR3Z3ZxYXVvRjl0Y3JTb3pWTHJfZUZRVVljdkR0SHI3QzRUMVB3amNOb0ltbGt5czlBcndpek9MNURxSVJqVFZvOXEwZTBrM0w0cElDUmEzS1Q1S3QxeG1qNklabXlNVGdScGk1eTQ2WFhsVWxMUm55dw?oc=5",
+   "data": "2026-11-01T13:10:03Z",
+   "coletado_em": "2026-11-01T15:17:11Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "contratos"
+   ]
   },
   {
    "id": "8f7541a33c35",
@@ -503,6 +529,18 @@
     "restricao"
    ],
    "triagem": 3
+  },
+  {
+   "id": "4ed9777683e4",
+   "titulo": "CNH Social: Detran-ES divulga lista de suplentes na terça (3)",
+   "veiculo": "ES Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9OWGhhYmZ4MEFMVl8yb1ZoS3AtMEZjRmF1V0w1M3RzYTczWjhHWFllc2Y1SEJVbGZyc1ZIZFV1WVFHLUFzZDFPUlo1ZnpZT2NmZDE5U0VpVThOMEQ2ZzBsUXhabk56Zw?oc=5",
+   "data": "2026-10-31T12:30:00Z",
+   "coletado_em": "2026-11-01T15:17:11Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
   },
   {
    "id": "0d4c0d791cb8",
