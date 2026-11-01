@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-01",
- "gerado_em": "2026-11-01T20:30:31Z",
+ "gerado_em": "2026-11-01T21:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,14 +18,14 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 7,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 28,
+   "lidos": 33,
    "aceitos": 11,
    "possiveis": 0
   },
@@ -42,14 +42,14 @@
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
    "lidos": 8,
-   "aceitos": 3,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 4,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 24,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 34,
+   "lidos": 33,
    "aceitos": 4,
    "possiveis": 1
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 14,
+   "lidos": 13,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -154,7 +154,7 @@
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 24,
-   "aceitos": 3,
+   "aceitos": 4,
    "possiveis": 6
   },
   {
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 2
   },
   {
@@ -178,8 +178,8 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
-   "possiveis": 2
+   "aceitos": 1,
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -208,23 +208,35 @@
  ],
  "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 236,
-  "outro_estado": 14,
-  "possivel": 10,
-  "caixa_alta": 2,
-  "excluir": 6,
-  "exterior_sem_ancora": 8,
-  "sem_contexto_com_tema": 7,
+  "sem_contexto": 234,
   "veiculo_excluido": 14,
-  "veiculo_outra_praca": 4,
+  "outro_estado": 14,
+  "possivel": 9,
+  "caixa_alta": 1,
+  "excluir": 6,
+  "exterior_sem_ancora": 9,
+  "sem_contexto_com_tema": 6,
+  "veiculo_outra_praca": 3,
   "sigla_sem_ancora": 7
  },
  "itens": [
   {
+   "id": "c0454a176c2f",
+   "titulo": "Idaf, Banestes e CGU: veja 8 concursos com salários de até R$ 20 mil",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/trabalho/concursos/idaf-banestes-e-cgu-veja-8-concursos-com-salarios-de-ate-r-20-mil/",
+   "data": "2026-11-01T21:00:00Z",
+   "coletado_em": "2026-11-01T21:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
    "id": "328dec85c72a",
    "titulo": "Idaf, Cachoeiro e Banestes: 44 mil vagas em concursos e seleções",
    "veiculo": "A Gazeta",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOdUNuSG9wLWNYY0hpODZtRk4zeVBLWGppdTZRaTh0RkxXVWd2T1UzMzZ1MDRPQlk3RU9oRUdxWk1YbDZMcUNUYzJ4MjJjNXpxbTVkVnkwTVdyc3J4N2c5VWlmaFVLWGQ0Z0ZJUnFoeThQUjA4UWxNeXpfMnpXZGRoNlVyT1hOWXVNenpfTWxNZTZqZy1DaXJrd0pBV3dVdHJhSWJnZFJTdw?oc=5",
+   "url": "https://www.agazeta.com.br/concursos/idaf-cachoeiro-e-banestes-44-mil-vagas-em-concursos-e-selecoes-1126",
    "data": "2026-11-01T20:25:00Z",
    "coletado_em": "2026-11-01T20:30:31Z",
    "outras": [],
