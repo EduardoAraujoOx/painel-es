@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-02",
- "gerado_em": "2026-11-02T16:17:12Z",
+ "gerado_em": "2026-11-02T19:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,22 +18,22 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 21,
-   "aceitos": 7,
-   "possiveis": 1
+   "lidos": 24,
+   "aceitos": 6,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -41,17 +41,17 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 5,
+   "lidos": 4,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 3,
+   "lidos": 6,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 5,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 26,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 18,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 34,
+   "lidos": 30,
    "aceitos": 2,
-   "possiveis": 5
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 60,
+   "lidos": 100,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -187,7 +187,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "ES Hoje",
@@ -206,21 +206,34 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 229,
-  "possivel": 5,
-  "veiculo_outra_praca": 7,
-  "sem_contexto_com_tema": 9,
+  "sem_contexto": 222,
+  "possivel": 9,
+  "veiculo_outra_praca": 5,
+  "sem_contexto_com_tema": 8,
   "caixa_alta": 1,
-  "excluir": 5,
-  "exterior_sem_ancora": 12,
-  "outro_estado": 12,
+  "excluir": 6,
   "veiculo_excluido": 14,
-  "generico_sem_ancora": 1,
-  "sigla_sem_ancora": 5
+  "outro_estado": 11,
+  "sigla_sem_ancora": 4,
+  "exterior_sem_ancora": 10
  },
  "itens": [
+  {
+   "id": "da7f7a6e52fb",
+   "titulo": "Quem são os cotados para assumir o Ministério da Fazenda no governo Lula",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/quem-sao-os-cotados-para-assumir-o-ministerio-da-fazenda-no-governo-lula/",
+   "data": "2026-11-02T18:29:33Z",
+   "coletado_em": "2026-11-02T19:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "transicao"
+   ]
+  },
   {
    "id": "449e93c54c63",
    "titulo": "Governo Lula corta R$ 345 milhões da Defesa e PRF",
