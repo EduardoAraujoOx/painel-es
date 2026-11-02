@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-02",
- "gerado_em": "2026-11-02T19:17:12Z",
+ "gerado_em": "2026-11-02T19:30:04Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 24,
-   "aceitos": 6,
-   "possiveis": 2
+   "lidos": 18,
+   "aceitos": 5,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -43,7 +43,7 @@
    "ok": true,
    "lidos": 4,
    "aceitos": 3,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -137,9 +137,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 18,
+   "lidos": 19,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 26,
    "aceitos": 2,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 60,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -208,15 +208,16 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 222,
+  "sem_contexto": 213,
   "possivel": 9,
-  "veiculo_outra_praca": 5,
-  "sem_contexto_com_tema": 8,
+  "veiculo_outra_praca": 6,
+  "generico_sem_ancora": 3,
+  "sem_contexto_com_tema": 9,
   "caixa_alta": 1,
   "excluir": 6,
-  "veiculo_excluido": 14,
+  "veiculo_excluido": 10,
   "outro_estado": 11,
-  "sigla_sem_ancora": 4,
+  "sigla_sem_ancora": 5,
   "exterior_sem_ancora": 10
  },
  "itens": [
@@ -653,7 +654,12 @@
    "url": "https://eshoje.com.br/politica/bastidores-da-politica/2026/10/apostas-comando-assembleia/",
    "data": "2026-10-31T18:25:56Z",
    "coletado_em": "2026-10-31T19:17:11Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Prensa Mercosur",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNSjJsZGlta1pJcV9CcV9IXzZVUnA5dDhMdzdsd29lMXpON25rdUFEdmxvb1BwbWtJZjR5ajJGc2N6UWlveG1idFZKZ0lkbVRLZnhaVlpPdFVqMFRHOFVEMDA3Tmt2OERxWUFkZ3V6SUxQX0x6ckUzUG5lc0Znam5GTEZMdUgyNXNMaVdGRFc4U1VmS21BWHV3TTRhTlRmLUowdy1haDRyQVFUNlgwTHNPOGNHY20?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 3,
    "temas": [
