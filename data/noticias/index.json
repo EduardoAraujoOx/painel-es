@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-02",
- "gerado_em": "2026-11-02T21:17:11Z",
+ "gerado_em": "2026-11-02T22:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,7 +25,7 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 24,
+   "lidos": 18,
    "aceitos": 4,
    "possiveis": 4
   },
@@ -33,7 +33,7 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 1,
+   "lidos": 0,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 2,
+   "lidos": 4,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 23,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -99,7 +99,7 @@
    "ok": true,
    "lidos": 27,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 17,
+   "lidos": 18,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 27,
    "aceitos": 2,
-   "possiveis": 4
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 58,
+   "lidos": 100,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -194,7 +194,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -206,21 +206,49 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 223,
-  "possivel": 11,
+  "sem_contexto": 216,
+  "possivel": 12,
   "veiculo_outra_praca": 4,
   "generico_sem_ancora": 3,
-  "sem_contexto_com_tema": 8,
+  "sem_contexto_com_tema": 6,
   "caixa_alta": 1,
-  "excluir": 6,
-  "veiculo_excluido": 14,
-  "outro_estado": 14,
-  "sigla_sem_ancora": 4,
+  "excluir": 5,
+  "veiculo_excluido": 12,
+  "outro_estado": 15,
+  "sigla_sem_ancora": 6,
   "exterior_sem_ancora": 9
  },
  "itens": [
+  {
+   "id": "b0e83a7218ef",
+   "titulo": "Um fantasma de 2014/2015 na sombra de Ricardo Ferraço e Renato Casagrande",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/bastidores-da-politica/2026/11/fantasma-ricardo-casagrande/",
+   "data": "2026-11-02T21:57:29Z",
+   "coletado_em": "2026-11-02T22:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "d90321c6bae6",
+   "titulo": "Velório é cancelado após corpo de jovem carbonizado desaparecer de IML",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOSmRvNzI4eGZoclFJdThXX1l0TXd2Z2Y1dl9BcGMtQV9xWWNEUnNmajFDNl93bVY0VTV1ejhuejZrVFl3VmFsVnZBMjNTcVlHSlBLbEJ4RWdud2x4RnR0SmlxM2o5Zk5kMVpoMzltS1MtNE9na2ZRQWpnenZSQ1pwUGxOQVQ0cUtwVmV3Yy1PYnB0S3FWaEtwWktvc2Z1XzdRd1BJcUpJMWk4VVZrWXd0dm9fRdIBuwFBVV95cUxPdWo3R2o3OVZPSE1rM05tZEEzeXJzSXV1QUF4aDdQQngyekNzZ2g0d2hpYTZjOWJib0FKSGhFREhnUGUzZ0tDa2xtekNYV2hPaE55X0p0d001ZTYyaXI2eDlfSWxiVUk3UDdZN2MySzVHUXBHbUpBZU53bzE0N1B6N21qaHozUG5oR3RvUUlmSlg0Slo2dkktTTJrUmVORkFldEF6cTVWUlZDaDdINVg5cjZEczJ3TFBPdmlN?oc=5",
+   "data": "2026-11-02T21:38:27Z",
+   "coletado_em": "2026-11-02T22:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "fa2ae4c39895",
    "titulo": "É cilada, Bino! Detran alerta para golpe da CNH suspensa e multas falsas pelo WhatsApp",
