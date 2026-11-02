@@ -1,6 +1,6 @@
 {
- "ref": "2026-10-31",
- "gerado_em": "2026-10-31T14:22:01Z",
+ "ref": "2026-11-02",
+ "gerado_em": "2026-11-02T15:17:28Z",
  "primeiro_levantamento": "2026-10-30",
  "baseline": false,
  "contagem": {
@@ -934,24 +934,6 @@
    "visto_em": null
   },
   {
-   "id": "168|Contrato 2025.000051.44928.01/2025|Contrato|06018666000153|2025-06-02",
-   "orgao": "SUPERINTENDÊNCIA REGIONAL DE SAÚDE DE COLATINA",
-   "orgao_id": "168",
-   "documento": "Contrato 2025.000051.44928.01/2025",
-   "tipo": "Contrato",
-   "fornecedor": "NUCLEAR LINHARES LTDA - EPP",
-   "cnpj": "06018666000153",
-   "objeto": "CREDENCIAMENTO DE SERVIÇOS PARA OFERTA DOS EXAMES DE CITILOGRAFIAS DIVERSAS - SRSC - 2025",
-   "valor_inicial": 1094144.72,
-   "valor_final": 1094144.72,
-   "celebracao": "2025-06-02",
-   "fim": "2026-06-03",
-   "situacao": "Rescisão Contratual",
-   "categoria": "rescindido",
-   "ano": "2025",
-   "visto_em": null
-  },
-  {
    "id": "168|Contrato 2025.000052.44928.01/2025|Contrato|02895765000162|2025-06-02",
    "orgao": "SUPERINTENDÊNCIA REGIONAL DE SAÚDE DE COLATINA",
    "orgao_id": "168",
@@ -964,6 +946,24 @@
    "valor_final": 1094144.72,
    "celebracao": "2025-06-02",
    "fim": "2026-06-04",
+   "situacao": "Rescisão Contratual",
+   "categoria": "rescindido",
+   "ano": "2025",
+   "visto_em": null
+  },
+  {
+   "id": "168|Contrato 2025.000051.44928.01/2025|Contrato|06018666000153|2025-06-02",
+   "orgao": "SUPERINTENDÊNCIA REGIONAL DE SAÚDE DE COLATINA",
+   "orgao_id": "168",
+   "documento": "Contrato 2025.000051.44928.01/2025",
+   "tipo": "Contrato",
+   "fornecedor": "NUCLEAR LINHARES LTDA - EPP",
+   "cnpj": "06018666000153",
+   "objeto": "CREDENCIAMENTO DE SERVIÇOS PARA OFERTA DOS EXAMES DE CITILOGRAFIAS DIVERSAS - SRSC - 2025",
+   "valor_inicial": 1094144.72,
+   "valor_final": 1094144.72,
+   "celebracao": "2025-06-02",
+   "fim": "2026-06-03",
    "situacao": "Rescisão Contratual",
    "categoria": "rescindido",
    "ano": "2025",
