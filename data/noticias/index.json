@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-02",
- "gerado_em": "2026-11-02T13:17:25Z",
+ "gerado_em": "2026-11-02T14:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,7 +25,7 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 22,
+   "lidos": 24,
    "aceitos": 7,
    "possiveis": 0
   },
@@ -33,7 +33,7 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 4,
+   "lidos": 3,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -43,13 +43,13 @@
    "ok": true,
    "lidos": 7,
    "aceitos": 5,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 0,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 1,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 19,
+   "lidos": 21,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 21,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 37,
+   "lidos": 35,
    "aceitos": 3,
    "possiveis": 6
   },
@@ -171,7 +171,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -206,21 +206,34 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 226,
+  "sem_contexto": 229,
   "veiculo_outra_praca": 4,
-  "generico_sem_ancora": 1,
   "caixa_alta": 1,
-  "possivel": 3,
+  "possivel": 4,
   "excluir": 5,
   "exterior_sem_ancora": 11,
-  "outro_estado": 13,
+  "outro_estado": 11,
   "veiculo_excluido": 15,
   "sem_contexto_com_tema": 9,
   "sigla_sem_ancora": 6
  },
  "itens": [
+  {
+   "id": "32ab8415ad36",
+   "titulo": "Ministério da Gestão lança calculadora de cotas em concursos públicos",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/concursos-e-empregos/concursos/ministerio-da-gestao-lanca-calculadora-de-cotas-em-concursos-publicos-1126",
+   "data": "2026-11-02T13:21:30Z",
+   "coletado_em": "2026-11-02T14:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "346a83e6481e",
    "titulo": "Peter de Mimoso sinaliza aproximação com governo de Pazolini",
