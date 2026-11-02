@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-02",
- "gerado_em": "2026-11-02T07:42:15Z",
+ "gerado_em": "2026-11-02T10:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,15 +25,15 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 24,
-   "aceitos": 6,
+   "lidos": 18,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 27,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 34,
    "aceitos": 2,
-   "possiveis": 0
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 13,
+   "lidos": 12,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
-   "aceitos": 4,
-   "possiveis": 5
+   "lidos": 24,
+   "aceitos": 3,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -206,19 +206,19 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
   "possivel": 9,
-  "sem_contexto": 229,
-  "outro_estado": 13,
-  "generico_sem_ancora": 1,
-  "veiculo_excluido": 18,
+  "sem_contexto": 222,
+  "veiculo_outra_praca": 7,
+  "outro_estado": 19,
+  "generico_sem_ancora": 2,
   "caixa_alta": 1,
   "excluir": 5,
-  "exterior_sem_ancora": 10,
-  "sem_contexto_com_tema": 7,
-  "veiculo_outra_praca": 3,
-  "sigla_sem_ancora": 5
+  "exterior_sem_ancora": 9,
+  "veiculo_excluido": 7,
+  "sem_contexto_com_tema": 9,
+  "sigla_sem_ancora": 7
  },
  "itens": [
   {
@@ -234,6 +234,18 @@
    "temas": [
     "controle"
    ]
+  },
+  {
+   "id": "670d170838c0",
+   "titulo": "Comprador adquire carro seminovo de R$ 60 mil, descobre histórico de perda total no Detran e Justiça obriga loja a devolver o valor integral",
+   "veiculo": "Super Rádio Tupi",
+   "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQRGM2VzFsWW1DWVJhT3BOTG1qOGRCTG5HT3hpNnZiRF91Vi1YeGMxYW1CbG1iYzBlWDczYUJMdFVLM19FVURXcGY3VTc1TVZtQ280cVpTdUFzYnVDT3dhWWNvSHhIdGJFS0RtNEtaekdKMTA1bFBCMWhtNVgyZ2pUQjB3Z2hpZWM0MVRtUE54d3pHaUlfQk4xdlNzMFhwclNVLWo1ZWNtdXRQMVVlLUpjQWY1djNaemtsYVBYQ2dHLWVrQ2FlYVNmbGRLQk5vSExrOXdzcVJyRU56ei1KSGdXUUJsSS15aGRwQ3E3Tk5qRThKRmpKQ0Zxei1xT2I?oc=5",
+   "data": "2026-11-02T01:56:55Z",
+   "coletado_em": "2026-11-02T10:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
   },
   {
    "id": "c0454a176c2f",
