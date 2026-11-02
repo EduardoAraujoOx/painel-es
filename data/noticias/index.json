@@ -1,6 +1,6 @@
 {
- "ref": "2026-11-01",
- "gerado_em": "2026-11-01T23:17:12Z",
+ "ref": "2026-11-02",
+ "gerado_em": "2026-11-02T07:42:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,22 +18,22 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 23,
-   "aceitos": 8,
+   "lidos": 24,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 4,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 17,
+   "lidos": 18,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 29,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -145,17 +145,17 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 14,
+   "lidos": 13,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 25,
    "aceitos": 4,
-   "possiveis": 6
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -208,19 +208,33 @@
  ],
  "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "possivel": 10,
-  "sem_contexto": 223,
-  "outro_estado": 15,
+  "possivel": 9,
+  "sem_contexto": 229,
+  "outro_estado": 13,
   "generico_sem_ancora": 1,
+  "veiculo_excluido": 18,
   "caixa_alta": 1,
-  "excluir": 6,
+  "excluir": 5,
   "exterior_sem_ancora": 10,
   "sem_contexto_com_tema": 7,
-  "veiculo_excluido": 13,
   "veiculo_outra_praca": 3,
-  "sigla_sem_ancora": 7
+  "sigla_sem_ancora": 5
  },
  "itens": [
+  {
+   "id": "5556efc8f7f5",
+   "titulo": "O que o Tribunal de Contas do ES deve fiscalizar? O povo está com a palavra",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/leonel-ximenes/o-que-o-tribunal-de-contas-do-es-deve-fiscalizar-o-povo-esta-com-a-palavra-1026",
+   "data": "2026-11-02T06:15:00Z",
+   "coletado_em": "2026-11-02T07:42:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "controle"
+   ]
+  },
   {
    "id": "c0454a176c2f",
    "titulo": "Idaf, Banestes e CGU: veja 8 concursos com salários de até R$ 20 mil",
