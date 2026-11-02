@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-02",
- "gerado_em": "2026-11-02T15:17:15Z",
+ "gerado_em": "2026-11-02T16:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,7 +25,7 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 27,
+   "lidos": 21,
    "aceitos": 7,
    "possiveis": 1
   },
@@ -41,7 +41,7 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 5,
    "possiveis": 0
   },
@@ -73,9 +73,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -89,15 +89,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 19,
+   "lidos": 22,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 31,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 1,
+   "lidos": 0,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,9 +137,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 21,
+   "lidos": 23,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 35,
+   "lidos": 34,
    "aceitos": 2,
    "possiveis": 5
   },
@@ -206,20 +206,33 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 235,
+  "sem_contexto": 229,
   "possivel": 5,
-  "veiculo_outra_praca": 4,
-  "sem_contexto_com_tema": 10,
+  "veiculo_outra_praca": 7,
+  "sem_contexto_com_tema": 9,
   "caixa_alta": 1,
   "excluir": 5,
-  "exterior_sem_ancora": 11,
+  "exterior_sem_ancora": 12,
   "outro_estado": 12,
   "veiculo_excluido": 14,
+  "generico_sem_ancora": 1,
   "sigla_sem_ancora": 5
  },
  "itens": [
+  {
+   "id": "449e93c54c63",
+   "titulo": "Governo Lula corta R$ 345 milhões da Defesa e PRF",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9VMkhfSWg3VWkwWGRNV1BlR3Q3SGcwb2lVLWFOcVVFVTZwcW9ZV0JtaUpMa2J3VUZpQnlMMGdyVktROTdOaUtKNzNUTTYta1I1NXA4SHBlMmt5azZNUVo1NUl4WmxuZUlsa05MQmNFOHZHNWJDeS1Rc1ZqVQ?oc=5",
+   "data": "2026-11-02T15:59:25Z",
+   "coletado_em": "2026-11-02T16:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
   {
    "id": "27c2207e93f9",
    "titulo": "Quer aproveitar o feriado na natureza? Parques estaduais do ES estarão abertos",
@@ -550,6 +563,20 @@
    "triagem": 3,
    "temas": [
     "contratos"
+   ]
+  },
+  {
+   "id": "357fa287b12a",
+   "titulo": "zé Preto 20500 (PODE): candidato a Deputado Estadual pelo ES",
+   "veiculo": "Gazeta do Povo",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdW9lQjh1R3hzUXM3ZGljWWg3ZXdVVndsdXk5QTZhSUlpc1FITkNEa2wtenJBMmZRMFBWdURoVmJBTTVoR0JiZEs0bm52N0pZRWVTLWRBLWR6Ukp5c0tCaUY0QXhWZjJpbUlsMmFabDJiUXJsNG1yckM4QzBKSzR1MU1Ud00wTVJ1ekFQRlg0V2dtbGpob0dJRGxHYjhpblU?oc=5",
+   "data": "2026-10-31T21:01:00Z",
+   "coletado_em": "2026-11-02T16:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "controle"
    ]
   },
   {
