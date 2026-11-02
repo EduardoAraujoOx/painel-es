@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-02",
- "gerado_em": "2026-11-02T10:17:12Z",
+ "gerado_em": "2026-11-02T11:17:11Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -51,7 +51,7 @@
    "ok": true,
    "lidos": 2,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 31,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 12,
+   "lidos": 13,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 34,
    "aceitos": 3,
-   "possiveis": 6
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
@@ -208,19 +208,31 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "possivel": 9,
-  "sem_contexto": 222,
+  "possivel": 7,
+  "sem_contexto": 227,
   "veiculo_outra_praca": 7,
-  "outro_estado": 19,
   "generico_sem_ancora": 2,
   "caixa_alta": 1,
   "excluir": 5,
   "exterior_sem_ancora": 9,
-  "veiculo_excluido": 7,
-  "sem_contexto_com_tema": 9,
-  "sigla_sem_ancora": 7
+  "outro_estado": 17,
+  "sem_contexto_com_tema": 10,
+  "sigla_sem_ancora": 8,
+  "veiculo_excluido": 10
  },
  "itens": [
+  {
+   "id": "2e8182261b54",
+   "titulo": "Detran recua e adia multas de novos radares nas rodovias de Alagoas; veja o que muda",
+   "veiculo": "Tribuna do Sertão",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQMVpsVzRxMUd4X0dscTRtQmJUSFJWeW1EUUZkNVNvcjlfdnhzanVBUzZVajZwMjhodjNkN2ZodjRuYXNLNE1za3gydVkzenVubGpkTE5oU3cyUUVxRDJwY2lYNDVscG9FRksxQmsyNk5RbFo5WU1vVHkxdE9pS2pldlA0ajRrTndnRWVvUlBHSnZWV1JObFF2MXhYYko1SFBlOE9xNXpUWmgydHU2b2JPRWxNZUxCQVEtRGdtV0RTZksxWnBWU1JFZDFpeER1ZkRUMHBHUjVzQ21oZnAwM0E?oc=5",
+   "data": "2026-11-02T11:03:00Z",
+   "coletado_em": "2026-11-02T11:17:11Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
   {
    "id": "5556efc8f7f5",
    "titulo": "O que o Tribunal de Contas do ES deve fiscalizar? O povo está com a palavra",
