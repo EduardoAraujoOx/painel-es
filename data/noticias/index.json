@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-02",
- "gerado_em": "2026-11-02T11:17:11Z",
+ "gerado_em": "2026-11-02T13:17:25Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -19,14 +19,14 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 3,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 18,
-   "aceitos": 5,
+   "lidos": 22,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 2,
+   "lidos": 0,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 18,
+   "lidos": 19,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,8 +97,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 31,
-   "aceitos": 2,
+   "lidos": 28,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 2,
+   "lidos": 1,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -137,9 +137,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 34,
-   "aceitos": 2,
-   "possiveis": 2
+   "lidos": 24,
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 34,
+   "lidos": 37,
    "aceitos": 3,
-   "possiveis": 7
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -171,14 +171,14 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -195,7 +195,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 1
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -206,21 +206,35 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "possivel": 7,
-  "sem_contexto": 227,
-  "veiculo_outra_praca": 7,
-  "generico_sem_ancora": 2,
+  "sem_contexto": 226,
+  "veiculo_outra_praca": 4,
+  "generico_sem_ancora": 1,
   "caixa_alta": 1,
+  "possivel": 3,
   "excluir": 5,
-  "exterior_sem_ancora": 9,
-  "outro_estado": 17,
-  "sem_contexto_com_tema": 10,
-  "sigla_sem_ancora": 8,
-  "veiculo_excluido": 10
+  "exterior_sem_ancora": 11,
+  "outro_estado": 13,
+  "veiculo_excluido": 15,
+  "sem_contexto_com_tema": 9,
+  "sigla_sem_ancora": 6
  },
  "itens": [
+  {
+   "id": "346a83e6481e",
+   "titulo": "Peter de Mimoso sinaliza aproximação com governo de Pazolini",
+   "veiculo": "Aqui Notícias",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVVJVeDhVWFZIa05pa3FQYjdyMGRVWWo5Skp1c1ZMZFFzd3pyVV8zdGlaYm5kT2NMNWpjM0FOd0c0THpYMkF4X0t1ZG5QeVhfWVR3TFVKcFF5ZjZNc3RjX2lkT2QwcnpsZlN4TzNpXy1vNThhTk53dWh2MkZpVEV4SGZaTWRpNE11bDR5Q0xTeVdTaWJka0ZUb3hB?oc=5",
+   "data": "2026-11-02T12:19:49Z",
+   "coletado_em": "2026-11-02T13:17:25Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "2e8182261b54",
    "titulo": "Detran recua e adia multas de novos radares nas rodovias de Alagoas; veja o que muda",
