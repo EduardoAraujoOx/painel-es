@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-02",
- "gerado_em": "2026-11-02T19:30:04Z",
+ "gerado_em": "2026-11-02T21:17:11Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,40 +18,40 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 18,
-   "aceitos": 5,
-   "possiveis": 3
+   "lidos": 24,
+   "aceitos": 4,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 1,
+   "lidos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 3,
+   "lidos": 3,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -65,23 +65,23 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 1,
-   "aceitos": 1,
+   "lidos": 0,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 1,
+   "lidos": 2,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 3,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 22,
+   "lidos": 24,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 27,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 19,
+   "lidos": 17,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 30,
    "aceitos": 2,
-   "possiveis": 5
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 60,
+   "lidos": 58,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -208,19 +208,33 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 213,
-  "possivel": 9,
-  "veiculo_outra_praca": 6,
+  "sem_contexto": 223,
+  "possivel": 11,
+  "veiculo_outra_praca": 4,
   "generico_sem_ancora": 3,
-  "sem_contexto_com_tema": 9,
+  "sem_contexto_com_tema": 8,
   "caixa_alta": 1,
   "excluir": 6,
-  "veiculo_excluido": 10,
-  "outro_estado": 11,
-  "sigla_sem_ancora": 5,
-  "exterior_sem_ancora": 10
+  "veiculo_excluido": 14,
+  "outro_estado": 14,
+  "sigla_sem_ancora": 4,
+  "exterior_sem_ancora": 9
  },
  "itens": [
+  {
+   "id": "fa2ae4c39895",
+   "titulo": "É cilada, Bino! Detran alerta para golpe da CNH suspensa e multas falsas pelo WhatsApp",
+   "veiculo": "G5News",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQd040Q1FDcTI2dC1tZkt4T2NSekVLaTVKZnF4R3c5ZWRXeS1XRk56czZVWm8zUVR4WmVETHh2Q256cktNRjdyUmttYlVJMzdMZXhSN0hpb2NHWnlnZHRjWjYxRG5aaTdwUk1ZWWExbUFVbDhRY1FGMGZoeXQzOTIzZ1BRM0VLdjlGY0dGc3JndXAtQ0k3SVFYdENGcFdHOW5ydDZfOUM3QVlCV216TlZ1OHdSU05yTGs?oc=5",
+   "data": "2026-11-02T20:24:03Z",
+   "coletado_em": "2026-11-02T21:17:11Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "da7f7a6e52fb",
    "titulo": "Quem são os cotados para assumir o Ministério da Fazenda no governo Lula",
