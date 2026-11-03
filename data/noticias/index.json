@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-03",
- "gerado_em": "2026-11-03T09:17:11Z",
+ "gerado_em": "2026-11-03T10:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -16,154 +16,173 @@
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
-   "ok": true,
-   "lidos": 10,
-   "aceitos": 2,
-   "possiveis": 1
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 503: Service Unavailable"
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
-   "ok": true,
-   "lidos": 25,
-   "aceitos": 7,
-   "possiveis": 3
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 503: Service Unavailable"
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
-   "ok": true,
-   "lidos": 3,
-   "aceitos": 1,
-   "possiveis": 2
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 503: Service Unavailable"
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
-   "ok": true,
-   "lidos": 7,
-   "aceitos": 4,
-   "possiveis": 0
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 503: Service Unavailable"
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
-   "ok": true,
-   "lidos": 6,
+   "ok": false,
+   "lidos": 0,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 0,
+   "erro": "HTTP Error 503: Service Unavailable"
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
-   "ok": true,
+   "ok": false,
    "lidos": 0,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 0,
+   "erro": "HTTP Error 503: Service Unavailable"
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
-   "ok": true,
-   "lidos": 1,
+   "ok": false,
+   "lidos": 0,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 0,
+   "erro": "HTTP Error 503: Service Unavailable"
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
-   "ok": true,
-   "lidos": 2,
-   "aceitos": 1,
-   "possiveis": 0
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 503: Service Unavailable"
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
-   "ok": true,
-   "lidos": 2,
-   "aceitos": 1,
-   "possiveis": 0
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 503: Service Unavailable"
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
-   "ok": true,
-   "lidos": 25,
+   "ok": false,
+   "lidos": 0,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0,
+   "erro": "HTTP Error 503: Service Unavailable"
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
-   "ok": true,
-   "lidos": 29,
-   "aceitos": 1,
-   "possiveis": 1
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 503: Service Unavailable"
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(\"insuficiência de recursos\" OR \"restrições orçamentárias\" OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) \"governo do ES\"",
-   "ok": true,
+   "ok": false,
    "lidos": 0,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 0,
+   "erro": "HTTP Error 503: Service Unavailable"
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
-   "ok": true,
-   "lidos": 2,
-   "aceitos": 1,
-   "possiveis": 0
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 503: Service Unavailable"
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(atraso OR atrasados) pagamento fornecedores \"governo do ES\" OR \"Governo do Estado\" Espírito Santo",
-   "ok": true,
+   "ok": false,
    "lidos": 0,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 0,
+   "erro": "HTTP Error 503: Service Unavailable"
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
-   "ok": true,
+   "ok": false,
    "lidos": 0,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 0,
+   "erro": "HTTP Error 503: Service Unavailable"
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
-   "ok": true,
-   "lidos": 16,
-   "aceitos": 1,
-   "possiveis": 0
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 503: Service Unavailable"
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
-   "ok": true,
-   "lidos": 7,
+   "ok": false,
+   "lidos": 0,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 0,
+   "erro": "HTTP Error 503: Service Unavailable"
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
-   "ok": true,
-   "lidos": 26,
-   "aceitos": 2,
-   "possiveis": 6
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 503: Service Unavailable"
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
-   "ok": true,
-   "lidos": 59,
-   "aceitos": 1,
-   "possiveis": 0
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 503: Service Unavailable"
   },
   {
    "fonte": "A Gazeta",
@@ -206,18 +225,12 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 224,
-  "possivel": 14,
-  "caixa_alta": 2,
-  "veiculo_outra_praca": 4,
-  "exterior_sem_ancora": 7,
-  "sem_contexto_com_tema": 10,
-  "excluir": 7,
-  "outro_estado": 15,
-  "veiculo_excluido": 10,
-  "sigla_sem_ancora": 6
+  "sem_contexto": 143,
+  "exterior_sem_ancora": 6,
+  "excluir": 5,
+  "possivel": 4
  },
  "itens": [
   {
