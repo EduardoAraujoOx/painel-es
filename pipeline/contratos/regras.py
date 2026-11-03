@@ -26,7 +26,34 @@ def tipo_instrumento(tipo_documento):
 
 
 def encerrado(situacao):
-    return norm_nome(situacao) in SITUACOES_ENCERRADAS
+    n = norm_nome(situacao)
+    # o SIGA tem uma variante longa de "Finalizado" ("... (quando não houver mais informações ...)")
+    return n in SITUACOES_ENCERRADAS or n.startswith("INSTRUMENTO CONTRATUAL FINALIZADO")
+
+
+# Situações de encerramento ADMINISTRATIVO (o instrumento é dado como concluído), diferentes de rescisão, anulação ou cancelamento,
+# que são atos de extinção. Só as primeiras podem ter sido lançadas por engano e, por isso, só elas geram o alerta de divergência
+# quando a data final registrada ainda não chegou.
+SITUACOES_FINALIZADAS = {"INSTRUMENTO CONTRATUAL FINALIZADO", "ENCERRADO", "EXTINTO"}
+
+
+def finalizado(situacao):
+    n = norm_nome(situacao)
+    return n in SITUACOES_FINALIZADAS or n.startswith("INSTRUMENTO CONTRATUAL FINALIZADO")
+
+
+def pago_apos(fim, pago_mensal, carencia_meses=None):
+    """Soma do que foi pago depois do fim da vigência, em meses AAAA-MM, com carência.
+
+    A carência existe porque a última fatura costuma ser paga no mês seguinte ao fim do contrato; por isso só contam os meses
+    posteriores ao mês do fim mais a carência. Devolve (total pago, primeiro mês contado ou None)."""
+    carencia = PAGO_APOS_FIM_CARENCIA_MESES if carencia_meses is None else carencia_meses
+    if not fim:
+        return 0.0, None
+    indice = fim.year * 12 + (fim.month - 1) + carencia
+    limite = f"{indice // 12:04d}-{indice % 12 + 1:02d}"
+    meses = sorted(m for m, v in pago_mensal.items() if m > limite and v > 0)
+    return sum(pago_mensal[m] for m in meses), (meses[0] if meses else None)
 
 
 # --- modalidade ---------------------------------------------------------------------------------
@@ -113,6 +140,8 @@ TETO_ME = 360_000.0                # LC 123/2006: microempresa; EPP até 4,8 mil
 TETO_EPP = 4_800_000.0
 LIMITE_DISPENSA = 62_725.59        # limite de dispensa por valor (compras e serviços), Decreto 12.343/2024; conferir o vigente
 REDE_GRANDE = 25                   # sócio com participação em 25 ou mais empresas
+PAGO_APOS_FIM_MINIMO = 250_000.0   # pago ao fornecedor depois do fim do último contrato no órgão, a partir do qual há alerta
+PAGO_APOS_FIM_CARENCIA_MESES = 2   # a última fatura costuma ser paga no mês seguinte; não se conta o que sai até 2 meses depois do fim
 
 ALTA, MEDIA, INFO = "alta", "média", "info"
 ALERTAS = {
@@ -193,7 +222,13 @@ ALERTAS["pago_acima"] = (MEDIA, "Pago acima do contratado",
 ALERTAS["ritmo_acelerado"] = (MEDIA, "Execução em ritmo acelerado",
                               "Já foram pagos 80% ou mais do valor do contrato com menos de metade do prazo decorrido.")
 ALERTAS["pago_sem_contrato"] = (MEDIA, "Pagamentos sem contrato vigente",
-                                "O fornecedor recebeu R$ 1 milhão ou mais nos últimos dois exercícios deste órgão sem ter contrato vigente nele (pode ser compra direta, ata ou contrato vencido).")
+                                "O fornecedor recebeu R$ 1 milhão ou mais nos últimos dois exercícios deste órgão sem ter contrato vigente nele (pode ser compra direta, ata, contrato vencido, ou contratação registrada em outro órgão ou fora do SIGA).")
+ALERTAS["pago_apos_fim"] = (MEDIA, "Pagamentos depois do fim do contrato",
+                            "O órgão seguiu pagando ao fornecedor depois do término do último contrato registrado no SIGA com ele (R$ 250 mil ou mais, "
+                            "descontados os dois meses seguintes ao fim). Pode haver prorrogação ou novo instrumento não registrado, ou execução sem cobertura contratual.")
+ALERTAS["situacao_divergente"] = (MEDIA, "Situação encerrada com prazo em aberto",
+                                  "O SIGA registra o instrumento como finalizado, encerrado ou extinto, mas a data final (com aditivos) ainda não chegou. "
+                                  "Pode ser conclusão antecipada do objeto ou situação lançada por engano; no segundo caso, o contrato está em vigor e fora da contagem de vigentes.")
 ALERTAS["sem_pagamento"] = (INFO, "Contrato sem pagamento identificado",
                             "Contrato vigente há mais de um ano, de valor relevante, sem nenhum pagamento do órgão ao fornecedor desde 2021.")
 
@@ -247,6 +282,8 @@ ESCLARECER = {
     "sancao_encerrada": "Sem providência necessária; conferir apenas se a sanção estava em vigor na época da contratação.",
     "socio_sancionado": "Verificação de impedimento de contratar por meio do sócio sancionado.",
     "pago_sem_contrato": "Instrumento (contrato, ata ou dispensa) que ampara os pagamentos recebidos sem contrato vigente.",
+    "pago_apos_fim": "Instrumento que ampara os pagamentos posteriores ao fim do último contrato registrado: termo aditivo de prazo, novo contrato ou contratação emergencial, e por que não constam do SIGA.",
+    "situacao_divergente": "Se o objeto foi de fato concluído antes do prazo ou se o instrumento segue em execução; data de término correta e correção da situação no SIGA.",
     "doacao_governador": "Triagem interna: por si só não motiva pedido formal.",
     "doacao_eleitoral": "Triagem interna: por si só não motiva pedido formal.",
     "doacao_pj": "Triagem interna: por si só não motiva pedido formal.",
