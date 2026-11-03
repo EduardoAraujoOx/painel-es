@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-03",
- "gerado_em": "2026-11-03T13:17:12Z",
+ "gerado_em": "2026-11-03T14:17:11Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,7 +25,7 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 32,
+   "lidos": 34,
    "aceitos": 10,
    "possiveis": 3
   },
@@ -33,7 +33,7 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 6,
+   "lidos": 8,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 40,
+   "lidos": 45,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -98,7 +98,7 @@
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
    "lidos": 33,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 2
   },
   {
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 1,
+   "lidos": 2,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 1,
+   "lidos": 36,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 43,
    "aceitos": 3,
    "possiveis": 7
   },
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 3
   },
   {
@@ -194,7 +194,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 2
   },
   {
@@ -206,20 +206,35 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 6,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto_com_tema": 12,
-  "sem_contexto": 237,
+  "sem_contexto_com_tema": 15,
+  "sem_contexto": 244,
   "possivel": 18,
   "caixa_alta": 2,
-  "veiculo_excluido": 14,
-  "veiculo_outra_praca": 9,
-  "exterior_sem_ancora": 11,
+  "veiculo_excluido": 27,
+  "veiculo_outra_praca": 12,
+  "exterior_sem_ancora": 13,
   "excluir": 9,
-  "outro_estado": 17,
+  "outro_estado": 23,
   "sigla_sem_ancora": 8
  },
  "itens": [
+  {
+   "id": "6617b9a3f0b8",
+   "titulo": "Gustavo Perin será novo integrante da equipe de transição de Pazolini",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/gustavo-perin-sera-novo-integrante-da-equipe-de-transicao-de-pazolini/",
+   "data": "2026-11-03T14:07:52Z",
+   "coletado_em": "2026-11-03T14:17:11Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
   {
    "id": "643fff060354",
    "titulo": "Concurso Polícia Científica ES: autorização assinada; veja próximos passos",
