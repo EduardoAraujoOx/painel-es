@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-03",
- "gerado_em": "2026-11-03T12:17:18Z",
+ "gerado_em": "2026-11-03T13:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,31 +18,31 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
-   "possiveis": 1
+   "aceitos": 3,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 21,
-   "aceitos": 6,
+   "lidos": 32,
+   "aceitos": 10,
    "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 1,
+   "lidos": 6,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 4,
+   "lidos": 9,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,8 +89,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 33,
-   "aceitos": 0,
+   "lidos": 40,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -137,9 +137,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 26,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -155,13 +155,13 @@
    "ok": true,
    "lidos": 27,
    "aceitos": 3,
-   "possiveis": 8
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 62,
+   "lidos": 100,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -206,20 +206,105 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 6,
  "descartes_na_coleta": {
-  "sem_contexto_com_tema": 14,
-  "sem_contexto": 229,
-  "possivel": 17,
-  "veiculo_excluido": 13,
-  "veiculo_outra_praca": 6,
-  "exterior_sem_ancora": 10,
-  "caixa_alta": 1,
-  "excluir": 7,
-  "outro_estado": 18,
+  "sem_contexto_com_tema": 12,
+  "sem_contexto": 237,
+  "possivel": 18,
+  "caixa_alta": 2,
+  "veiculo_excluido": 14,
+  "veiculo_outra_praca": 9,
+  "exterior_sem_ancora": 11,
+  "excluir": 9,
+  "outro_estado": 17,
   "sigla_sem_ancora": 8
  },
  "itens": [
+  {
+   "id": "643fff060354",
+   "titulo": "Concurso Polícia Científica ES: autorização assinada; veja próximos passos",
+   "veiculo": "Magistrar",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRkg5RFcteGMyVG1YNXdzZWpJV1YyTlprVU9kN2xnSXh0NUFkTnFueVEtVTFyVjZ3d2VMQlhyNUtwbE9QQkN3VEN0NlI4Ym1iM2dDZ2dSLUllUVRSTjdYMV96OWVnVHdnN1p4VFJqQ1JUUEJnbDY4NVZ2TEhwa0xMNWJWeWJNT3RidEViMTJtNW9ldw?oc=5",
+   "data": "2026-11-03T13:07:10Z",
+   "coletado_em": "2026-11-03T13:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "4b6ea7789e20",
+   "titulo": "Espírito Santo acumula 32 obras paradas e R$ 333 milhões em investimentos",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOLWF4Qk5NakFyaDVRdzBoQk9hZVJSMnZnU3JjTk9tT0RGeTgzTG43UlQ5Y3J6RU0tT0VpZTNDMTFwWnE1VjE3TkNHOExtbkJHa1o5NC1QY0M3NEhsTU9RZnhheS1sTGxvTlNSeEYyMTdua2xBa0h4R0EwUzhmQk1seFoyYkdfLW1qN2c?oc=5",
+   "data": "2026-11-03T12:58:21Z",
+   "coletado_em": "2026-11-03T13:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "38ec56a9bb64",
+   "titulo": "Pazolini se reúne com Marcelo Santos e inicia diálogo com Assembleia para novo governo",
+   "veiculo": "conexaoes.com.br",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQSXVzX29JdVdldk44bzNCd3B3RlZMMFlFUGRLQ0hZQUtLanEyVWVBT29JTDNsTGJXOWhhZldYdkZzcGs0VHBmT1QwS3I2eVV2S0ZYZFFHbzJFN1hDZ2Jmc2ZaRlZUN3Q3eHVfVGJYazlHb2h5V1dablcyREpYdkRNUWRoX1g3X3ItRVBmVW95UlZ2MlV1Zmp3Q3VYSEhMNVN1bEZTNFhLM3BTS01FVnN6cG1ZaG1ZQlBBb2Fwa1J4aE4?oc=5",
+   "data": "2026-11-03T12:58:00Z",
+   "coletado_em": "2026-11-03T13:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "828277adde95",
+   "titulo": "CBN Vitória ao vivo: saiba como será a transição de governo do ES",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/cotidiano/cbn-vitoria-ao-vivo-saiba-como-sera-a-transicao-de-governo-do-es-1126",
+   "data": "2026-11-03T12:54:00Z",
+   "coletado_em": "2026-11-03T13:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "6ae058f045b0",
+   "titulo": "Governo do ES tem 32 obras paradas que juntas somam R$ 333 milhões",
+   "veiculo": "Site de Linhares",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPS0hTOGRteGhMMjY4Q3l2RFYwWXdTaUFpdmVUMUZLQWhZZXRkMVpsNVJfby1vRmJiSXNVSEpNTE5HWVdoRnJUQlR1WDY0c1REQl93d0xjdUFjOXV3N0tZcFM3UUE2MnlxMWpMdjFnN0gwamoyT1duSzV5VTZFQ05PSGN5QTNpdlRiSW5MbzRGV0tEVzVaeE50ZGc5a0JjZ3FLdVFsTTJyVU1UalhtSHN2NHVPOA?oc=5",
+   "data": "2026-11-03T12:28:55Z",
+   "coletado_em": "2026-11-03T13:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "governador",
+    "contratos"
+   ]
+  },
+  {
+   "id": "b7cab0d1dd2a",
+   "titulo": "Concurso da Sedes divulga resultado da prova objetiva",
+   "veiculo": "Acorda DF",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPWGFfVkNJdlU0TVQ4RUdEWVE5T2U5SERUZEg1MGVHOUhaTmF4QjN2VG1JQ1pfSFNZRFZHcjUtS0pvc3FJMUhBcmczekJrZml3dGg3X1hPb0pVTGVIWEhaVUdYM3BPeF8ybVF5ZDJMNVN2eU5xZVZIaldXeHEzR2pxQmNDUVZDNk55X2F2RQ?oc=5",
+   "data": "2026-11-03T12:19:31Z",
+   "coletado_em": "2026-11-03T13:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "28d0adcdd98d",
    "titulo": "PEC da Segurança amplia papel federal na área e governo Lula planeja novo ministério",
@@ -265,6 +350,18 @@
    "coletado_em": "2026-11-03T12:17:18Z",
    "outras": [],
    "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "d1b085ef3f91",
+   "titulo": "Detran pode impedir serviços da CNH por problemas no CPF, mas motoristas precisam saber o que realmente muda a partir de agora",
+   "veiculo": "Agência GBC",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOYUhwUXU4U1oxcDJoRVhzQjZRN2hqaEtBN0NhbV9RblUyZkVRWGdzbHI4VzNkOXBocEI0NWFLdm8tZUlYX3FuUW9BTFY3ZUlXbkd3STFvTUhQc2w0dnl3dXJtdjhacWdoMWpaRzh6ZnN1Y0pobWFQNFc3aGZEQlZ2ci1xd1BveGpoUW11OUQ5bTVQdVlNMFFiMEZiYVJEVDZXYlp6ZXkxRFJIMTdEZVlFNDd2VHRvdmVLbGdMOEdaNXFhR29iXzVaclZQaC15RGJaTGNTMHZlMDZFOWswRnFpaGlZYjR2NXd0NlVZcVREX0dZdw?oc=5",
+   "data": "2026-11-03T11:10:10Z",
+   "coletado_em": "2026-11-03T13:17:12Z",
+   "outras": [],
+   "possivel": true,
    "triagem": 3,
    "temas": []
   },
