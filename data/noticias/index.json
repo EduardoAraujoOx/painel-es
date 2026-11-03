@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-03",
- "gerado_em": "2026-11-03T17:04:38Z",
+ "gerado_em": "2026-11-03T17:17:17Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -33,7 +33,7 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 6,
    "possiveis": 1
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 52,
+   "lidos": 53,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 35,
+   "lidos": 34,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 40,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 11,
+   "lidos": 9,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 28,
    "aceitos": 5,
    "possiveis": 7
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 60,
+   "lidos": 100,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -206,20 +206,32 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 4,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto_com_tema": 8,
-  "sem_contexto": 248,
-  "possivel": 18,
+  "sem_contexto_com_tema": 13,
+  "sem_contexto": 246,
+  "possivel": 19,
   "caixa_alta": 2,
-  "veiculo_excluido": 21,
-  "outro_estado": 21,
-  "veiculo_outra_praca": 8,
-  "exterior_sem_ancora": 11,
+  "veiculo_excluido": 25,
+  "veiculo_outra_praca": 9,
   "excluir": 7,
-  "sigla_sem_ancora": 7
+  "exterior_sem_ancora": 11,
+  "outro_estado": 21,
+  "sigla_sem_ancora": 9
  },
  "itens": [
+  {
+   "id": "a4d8e0e2ba77",
+   "titulo": "Corrida Luzes da Cidade: confira o mapa e veja como fazer inscrição na maior night run do Estado",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/esportes/corrida-luzes-da-cidade-confira-o-mapa-e-veja-como-fazer-inscricao-na-maior-night-run-do-estado/",
+   "data": "2026-11-03T17:13:18Z",
+   "coletado_em": "2026-11-03T17:17:17Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
   {
    "id": "941f1c50da29",
    "titulo": "Bandes amplia transparência e disponibiliza informações sobre operações de crédito no site",
