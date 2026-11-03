@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-03",
- "gerado_em": "2026-11-03T20:17:24Z",
+ "gerado_em": "2026-11-03T21:17:28Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,16 +17,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 11,
+   "lidos": 10,
    "aceitos": 6,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 25,
-   "aceitos": 20,
+   "lidos": 36,
+   "aceitos": 24,
    "possiveis": 2
   },
   {
@@ -41,7 +41,7 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 5,
    "possiveis": 0
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 10,
+   "lidos": 13,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 63,
+   "lidos": 64,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 51,
+   "lidos": 55,
    "aceitos": 2,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 3,
+   "lidos": 5,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 44,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 14,
+   "lidos": 18,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,8 +153,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 58,
-   "aceitos": 5,
+   "lidos": 59,
+   "aceitos": 3,
    "possiveis": 11
   },
   {
@@ -171,14 +171,14 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 9,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -186,7 +186,7 @@
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -206,20 +206,75 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 5,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto": 269,
-  "sem_contexto_com_tema": 8,
-  "possivel": 15,
-  "veiculo_excluido": 24,
-  "exterior_sem_ancora": 12,
-  "caixa_alta": 2,
+  "sem_contexto": 277,
+  "sem_contexto_com_tema": 13,
+  "caixa_alta": 3,
+  "veiculo_excluido": 32,
+  "possivel": 16,
+  "exterior_sem_ancora": 14,
   "excluir": 9,
-  "outro_estado": 37,
-  "veiculo_outra_praca": 11,
-  "sigla_sem_ancora": 12
+  "outro_estado": 43,
+  "veiculo_outra_praca": 15,
+  "sigla_sem_ancora": 14
  },
  "itens": [
+  {
+   "id": "1b47a31f414a",
+   "titulo": "Novo vereador acena à prefeita, mais um secretário na transição e a lupa em Casagrande e Evair",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/novo-vereador-acena-a-prefeita-mais-um-secretario-na-transicao-e-a-lupa-em-casagrande-e-evair/",
+   "data": "2026-11-03T21:15:21Z",
+   "coletado_em": "2026-11-03T21:17:28Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "937564849fb4",
+   "titulo": "Governo Lula tenta separar redução da maioridade penal de PEC da Segurança",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/brasil/governo-lula-tenta-separar-reducao-da-maioridade-penal-de-pec-da-seguranca-1126",
+   "data": "2026-11-03T20:17:46Z",
+   "coletado_em": "2026-11-03T21:17:28Z",
+   "outras": [
+    {
+     "veiculo": "Tribuna Online",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQSFh5QnNLbFdWOFFIeHNrWHJ5MlFmc3lJTEF0Uk9mbHpCbkxiT3BCaVllRUt4bHhrTVMxcllRNlg5RFRfY1h0dEFxOXQyeThkejZmTkRFNDdqMG5WbHJRWmZ2Z1ZMeThrOFA4bGdMOTRBclJpRFRLU1JYSEdtdHpFQU1SM2wtaHM0NkEwSE50NmRlZUd6YWVkZGNoX3ZuWHhSUmtCNFUxYUFMX0VsN1gtaDFLVmEtUkhpWUdR0gHDAUFVX3lxTE1pdFhsODlCWDlKakFuTzkwclJpNUszRlF1bUNLTm1rLWx2aUo1aHVRbXdZNVg5WWhIRUFIMG5iaF90bE5EWUZ4VV9jaEhxczJfVDVRRTZBa3FjNk1KQll6ekExR1QxU1RFaXp4ZWJydGZGOXNDX1h1TkxUUm9DOEtqcUxQX1pqM2pLVzgwdnZRVWp5aUhUTzFaLXRPSHQ2VW9Jb19OQXVCWUhIVnc2Y1RvVmVpTmdOTTZCbUktRmdESUtSTQ?oc=5"
+    }
+   ],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "9f72c188dbc8",
+   "titulo": "Casa da Música Sônia Cabral celebra a ancestralidade e a cultura negra em programação especial de novembro",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNZGNvcThwQUFnYjA3WXRYdDRrd3dHR1doa3R6NGRxMzZCNjcxcTRkV2ZRQzN3OF9mdVJ2NTRCRm1xdzlVLVlYbXFfanhQdWxaZWJOLUs2NnlsdzVBRlBFT0N4VU0tQ0Z4dlZqRzNLNXVwMTJDM3Y2MUFvUUNPOXdZV3I4U0FQcEpoc3dET0tTRGNKWWxZeGU1aXZSX21BQkNLTk84Y3k3OExzaUxlUEZLd1VhbXNsZFkycV9UaXVSbzhuc2dhbk44?oc=5",
+   "data": "2026-11-03T20:14:00Z",
+   "coletado_em": "2026-11-03T21:17:28Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "db51ff2e34cd",
+   "titulo": "Operação Cavalo de Aço fiscaliza motocicletas em Colatina",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPdGpFSWdLNHpvU2ZVdDBPQ1pjVUlNdGdpelRWREZyeDdpb1ZLNW9RakFZUHh2ZWNZTlk3ajdxWWVFeFBGVk9DMGRicHQtVlF3YTJnTEl1NENTWlhGenlZNWN3R3phOXZyeVlJYURDQmpha1pBS1BObTVPaEZhbzhtVDhTMi1yUQ?oc=5",
+   "data": "2026-11-03T20:08:00Z",
+   "coletado_em": "2026-11-03T21:17:28Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
   {
    "id": "39326e6abf35",
    "titulo": "Blitz da Lei Seca flagra 62 dirigindo sob efeito de álcool",
