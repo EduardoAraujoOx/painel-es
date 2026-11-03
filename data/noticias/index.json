@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-03",
- "gerado_em": "2026-11-03T11:17:13Z",
+ "gerado_em": "2026-11-03T12:17:18Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,8 +25,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 27,
-   "aceitos": 7,
+   "lidos": 21,
+   "aceitos": 6,
    "possiveis": 3
   },
   {
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 33,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 34,
+   "lidos": 33,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 21,
+   "lidos": 27,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 37,
-   "aceitos": 2,
-   "possiveis": 7
+   "lidos": 27,
+   "aceitos": 3,
+   "possiveis": 8
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 60,
+   "lidos": 62,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -171,7 +171,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 3,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Folha Vitória",
@@ -194,8 +194,8 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 2,
-   "possiveis": 1
+   "aceitos": 1,
+   "possiveis": 2
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -206,20 +206,68 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 233,
-  "possivel": 14,
-  "caixa_alta": 2,
-  "veiculo_excluido": 17,
-  "veiculo_outra_praca": 5,
+  "sem_contexto_com_tema": 14,
+  "sem_contexto": 229,
+  "possivel": 17,
+  "veiculo_excluido": 13,
+  "veiculo_outra_praca": 6,
   "exterior_sem_ancora": 10,
-  "sem_contexto_com_tema": 12,
-  "excluir": 8,
+  "caixa_alta": 1,
+  "excluir": 7,
   "outro_estado": 18,
-  "sigla_sem_ancora": 7
+  "sigla_sem_ancora": 8
  },
  "itens": [
+  {
+   "id": "28d0adcdd98d",
+   "titulo": "PEC da Segurança amplia papel federal na área e governo Lula planeja novo ministério",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/brasil/pec-da-seguranca-amplia-papel-federal-na-area-e-governo-lula-planeja-novo-ministerio-1126",
+   "data": "2026-11-03T11:56:02Z",
+   "coletado_em": "2026-11-03T12:17:18Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "108cda475ff2",
+   "titulo": "Órgãos estaduais não terão expediente nesta segunda-feira (2) no Espírito Santo",
+   "veiculo": "www.conexaoes.com.br",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOT21CVWpuRTBBQmtLTXJxY1NVOXBtOGlsY1V6aHN3T2o1cWY1LUJQSS01YWYwOGxyV1c2Sk1QMGNncE0tMXdmcV9fNVRhXzNrWjNyWU1WaHNRcW56bGJhbHR3Q2JWNFRjLXA1anQ1bjcxaXRFdW5BdnBkNk1nQ1ZuVmpHeWFfYkhfWXlmWDhjeTlkejY5ZzBha3FPbzhkUXZXREFrN2VTbGVqUnViQzJkc3N0cEw?oc=5",
+   "data": "2026-11-03T11:55:00Z",
+   "coletado_em": "2026-11-03T12:17:18Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "6270256c73db",
+   "titulo": "Deputado propõe indenização por erro médico na rede pública",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/ze-preto-propoe-indenizacao/",
+   "data": "2026-11-03T11:49:41Z",
+   "coletado_em": "2026-11-03T12:17:18Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "416115542b4f",
+   "titulo": "Idaf abre concurso com salários de até R$ 8,4 mil no Espírito Santo",
+   "veiculo": "conexaoes.com.br",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOWGNtNU1iZDc3VmtBQ0xJOGt1NFh1UWpGODF2MXEzRlBMaEhxa0w3aEhmTWxMaUtjMUNROENSWTlndld3MmNaYVAyUldEZ1JKcmtONWhlbWpRYm9LbHdzZVF5M2JwWkoycDJPU1RJSllZc2pSZ01zVUZDdzZQRHFrakNxclp6MWt4SmtBUFJBVDRVMHprZGw2aWcyOTl3VF93VVFINUxB?oc=5",
+   "data": "2026-11-03T11:26:00Z",
+   "coletado_em": "2026-11-03T12:17:18Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
   {
    "id": "a587b64687e4",
    "titulo": "CNH e CPF irregular: veja quando o Detran pode bloquear serviços ainda em 2026",
