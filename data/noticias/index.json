@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-03",
- "gerado_em": "2026-11-03T17:17:17Z",
+ "gerado_em": "2026-11-03T18:17:17Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 4,
    "possiveis": 2
   },
@@ -25,7 +25,7 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 35,
+   "lidos": 26,
    "aceitos": 16,
    "possiveis": 2
   },
@@ -33,7 +33,7 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 6,
    "possiveis": 1
   },
@@ -42,7 +42,7 @@
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
    "lidos": 8,
-   "aceitos": 6,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
@@ -81,24 +81,24 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 1,
+   "lidos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 53,
-   "aceitos": 1,
+   "lidos": 58,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 34,
-   "aceitos": 0,
+   "lidos": 36,
+   "aceitos": 1,
    "possiveis": 3
   },
   {
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 0,
+   "lidos": 3,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 40,
+   "lidos": 25,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 11,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 60,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 6,
+   "aceitos": 7,
    "possiveis": 3
   },
   {
@@ -195,7 +195,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -206,20 +206,64 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto_com_tema": 13,
-  "sem_contexto": 246,
-  "possivel": 19,
-  "caixa_alta": 2,
-  "veiculo_excluido": 25,
-  "veiculo_outra_praca": 9,
+  "sem_contexto_com_tema": 7,
+  "possivel": 18,
+  "sem_contexto": 243,
+  "veiculo_excluido": 19,
+  "veiculo_outra_praca": 7,
+  "caixa_alta": 1,
   "excluir": 7,
   "exterior_sem_ancora": 11,
-  "outro_estado": 21,
-  "sigla_sem_ancora": 9
+  "outro_estado": 24,
+  "sigla_sem_ancora": 7
  },
  "itens": [
+  {
+   "id": "2c94b6dc72dc",
+   "titulo": "Transição no ES tem primeiro embate entre equipes de Pazolini e Ferraço",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPTzcxU2hPU1lVQzVhZkh0Qmh6d0hpa2oxUEduNUNNdlhiQ2QzblZHSzJoYkprdXJWcU8yUnBEeWdsZHUwUk16TU9LWDlJSk5VZDBwdXMxWHNrWXBIMElLXzRHY0JmMkZPdW9tZGtyTG1mSkRFbWtQbk1kenlCeE5IMmVjV0dkdXBDam9v?oc=5",
+   "data": "2026-11-03T17:58:43Z",
+   "coletado_em": "2026-11-03T18:17:17Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "7abd521660cb",
+   "titulo": "Especialistas debatem impactos da Reforma Tributária em Vitória",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQUzNSVFRSWjVmRC1hNmNxaEY1aEpaLUU3Nm9VdzRMTXFpTU94UmpBZXNTX3VsNExTWEhDM1padkFWLTRscHJZUmlHX1UweEFYTWZFNWg2UHhRQmZSb0tnZUNaS281dVZtMHBRYy1STHZIenplWjJoUmhER25aYUFJV3BNUWJGWDFjR1YzRmZQN3V3TWFRb09pZDJ5REVHTFotd0ozNkRWY0x1ZDhX0gG0AUFVX3lxTFA1bkp3Mk5LX2EwaDdrMTcybnk0OVFLdXpVNWtCNXBLMzE0T3ZKWTIyTlFmUldrT2FIWmFBR2t1V01BRlhUXzdJRGpuUmxCQXhiUXJkWFZ2MW1lX1FsX2hhSnFzdU9DVEppemdHTWt2WkI2ZnluajI1V3hpNnptMlZ0UlgzY0VnUjc4UmpBNVFkek43N2V3X2ZDX3FZVkJsV21iMk5PS3NqMnFUV25taHBhWUVuSA?oc=5",
+   "data": "2026-11-03T17:55:44Z",
+   "coletado_em": "2026-11-03T18:17:17Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "244fcbe685e8",
+   "titulo": "Uma divergência na transição entre os governos Ricardo e Pazolini",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/leticia-goncalves/uma-divergencia-na-transicao-entre-os-governos-ricardo-e-pazolini-1126",
+   "data": "2026-11-03T17:40:00Z",
+   "coletado_em": "2026-11-03T18:17:17Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
   {
    "id": "a4d8e0e2ba77",
    "titulo": "Corrida Luzes da Cidade: confira o mapa e veja como fazer inscrição na maior night run do Estado",
