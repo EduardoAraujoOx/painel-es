@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-03",
- "gerado_em": "2026-11-03T10:17:12Z",
+ "gerado_em": "2026-11-03T11:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -16,173 +16,154 @@
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "lidos": 10,
+   "aceitos": 2,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "lidos": 27,
+   "aceitos": 7,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "lidos": 3,
+   "aceitos": 1,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "lidos": 7,
+   "aceitos": 4,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
-   "ok": false,
-   "lidos": 0,
+   "ok": true,
+   "lidos": 6,
    "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
-   "ok": false,
+   "ok": true,
    "lidos": 0,
    "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
-   "ok": false,
-   "lidos": 0,
+   "ok": true,
+   "lidos": 1,
    "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "lidos": 2,
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "lidos": 2,
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
-   "ok": false,
-   "lidos": 0,
+   "ok": true,
+   "lidos": 28,
    "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "lidos": 34,
+   "aceitos": 1,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(\"insuficiência de recursos\" OR \"restrições orçamentárias\" OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) \"governo do ES\"",
-   "ok": false,
+   "ok": true,
    "lidos": 0,
    "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "lidos": 2,
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(atraso OR atrasados) pagamento fornecedores \"governo do ES\" OR \"Governo do Estado\" Espírito Santo",
-   "ok": false,
+   "ok": true,
    "lidos": 0,
    "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
-   "ok": false,
+   "ok": true,
    "lidos": 0,
    "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "lidos": 21,
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
-   "ok": false,
-   "lidos": 0,
+   "ok": true,
+   "lidos": 7,
    "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "lidos": 37,
+   "aceitos": 2,
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "lidos": 60,
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "A Gazeta",
@@ -225,14 +206,72 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 143,
-  "exterior_sem_ancora": 6,
-  "excluir": 5,
-  "possivel": 4
+  "sem_contexto": 233,
+  "possivel": 14,
+  "caixa_alta": 2,
+  "veiculo_excluido": 17,
+  "veiculo_outra_praca": 5,
+  "exterior_sem_ancora": 10,
+  "sem_contexto_com_tema": 12,
+  "excluir": 8,
+  "outro_estado": 18,
+  "sigla_sem_ancora": 7
  },
  "itens": [
+  {
+   "id": "a587b64687e4",
+   "titulo": "CNH e CPF irregular: veja quando o Detran pode bloquear serviços ainda em 2026",
+   "veiculo": "Agência GBC",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOYUhwUXU4U1oxcDJoRVhzQjZRN2hqaEtBN0NhbV9RblUyZkVRWGdzbHI4VzNkOXBocEI0NWFLdm8tZUlYX3FuUW9BTFY3ZUlXbkd3STFvTUhQc2w0dnl3dXJtdjhacWdoMWpaRzh6ZnN1Y0pobWFQNFc3aGZEQlZ2ci1xd1BveGpoUW11OUQ5bTVQdVlNMFFiMEZiYVJEVDZXYlp6ZXkxRFJIMTdEZVlFNDd2VHRvdmVLbGdMOEdaNXFhR29iXzVaclZQaC15RGJaTGNTMHZlMDZFOWswRnFpaGlZYjR2NXd0NlVZcVREX0dZdw?oc=5",
+   "data": "2026-11-03T11:10:10Z",
+   "coletado_em": "2026-11-03T11:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "restricao"
+   ]
+  },
+  {
+   "id": "caa73fdf628d",
+   "titulo": "SAC tem novas regras para atendimento, espera e cancelamento",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/brasil/2026/11/sacs-atentimento-regras/",
+   "data": "2026-11-03T11:05:48Z",
+   "coletado_em": "2026-11-03T11:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "ab9b97dee6a4",
+   "titulo": "PEC da Segurança amplia papel federal na área e governo planeja novo ministério",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNbmt6QTlZX0FvelpFWUx3TGIwaC1OVDViNE9tSXljMDNHcmVfVjBFM0dULWFDcFpWUHlHU2EzQklwRzhkajg3YTM3MVBhR3pLX2FzaFVvdW5TTW9KUUVyZWZBYm1sT042Y1dzNlRNVFVzM0ppZVJmWWZuRjNGUUxSUTFSZV9aWk9jZ0pSN05CU2tOZGhUekE5eUtFMXpCVnR6UUVSWlpnVHJRd2hjNXR6d056SVdqemFFamlZbTB5eERiQdIBygFBVV95cUxPWjVsRFkzM2lrdXB0OFFlS3lZdVAwZVhmVktlbFVQVHZBV1lXNDktOXMyMlBzV2x0ZnhVNXliTnotQjgwRnpNNzBiZkM3MDgxejJ4eTBlNTNiS0I1aUpsdnRxYjVmT0JMSU55WXJkVVR2Y2VHQmxQVkZxQzJ5NkY4dGY1b2M3dUhrZWJPMVpUWGtoVEdMeXZ3aDR2cm0zTFVLWDZQWU1FWTdQNktTMmc2SVBycmdrdzNHcXBSVnZMdmlnLTEwSE5RQ01B?oc=5",
+   "data": "2026-11-03T10:32:08Z",
+   "coletado_em": "2026-11-03T11:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "a568161468c5",
+   "titulo": "Detran muda regras e CNH de motorista com pendência no CPF pode ser bloqueada",
+   "veiculo": "DOL",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbHM2cjNPRW40dlBxdlpnN25ZLWo3UE5faWtUUzNIU216U1lZbll1TU9Wa3hxeUJzZ0xfaEM1QkM5LWxCWGVJbVdfM3hFQTR3YkRLZWdCMkVUZGtESG00UmQzRFJ0a1REY3EzSDBlU2dSUk5FM2s5dUlEVTFmcG9iS3ZqbE90dTVIZTVfclprY25wZFFoVHJMN2lPcjBiNTc3VXk0cFBwaklyOVBXUVZNbk8yUnNONXVybWw4?oc=5",
+   "data": "2026-11-03T10:28:40Z",
+   "coletado_em": "2026-11-03T11:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
   {
    "id": "c9f4bffc8387",
    "titulo": "Detran-ES divulga nesta terça-feira (3) os suplentes no programa CNH Social",
