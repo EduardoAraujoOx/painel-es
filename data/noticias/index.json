@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-03",
- "gerado_em": "2026-11-03T14:17:11Z",
+ "gerado_em": "2026-11-03T15:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -19,22 +19,22 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 3,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 34,
-   "aceitos": 10,
+   "lidos": 26,
+   "aceitos": 11,
    "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 3,
+   "lidos": 8,
+   "aceitos": 5,
    "possiveis": 1
   },
   {
@@ -42,7 +42,7 @@
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
    "lidos": 8,
-   "aceitos": 5,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -57,8 +57,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 0,
-   "aceitos": 0,
+   "lidos": 1,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -73,8 +73,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 1,
+   "lidos": 4,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 45,
+   "lidos": 46,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 33,
+   "lidos": 34,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 36,
+   "lidos": 25,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 43,
-   "aceitos": 3,
-   "possiveis": 7
+   "lidos": 46,
+   "aceitos": 4,
+   "possiveis": 8
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 59,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -170,8 +170,8 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
-   "possiveis": 3
+   "aceitos": 4,
+   "possiveis": 4
   },
   {
    "fonte": "Folha Vitória",
@@ -206,20 +206,144 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 6,
  "descartes_na_coleta": {
-  "sem_contexto_com_tema": 15,
-  "sem_contexto": 244,
-  "possivel": 18,
-  "caixa_alta": 2,
-  "veiculo_excluido": 27,
+  "sem_contexto_com_tema": 12,
+  "sem_contexto": 236,
+  "possivel": 19,
+  "veiculo_excluido": 23,
   "veiculo_outra_praca": 12,
   "exterior_sem_ancora": 13,
-  "excluir": 9,
-  "outro_estado": 23,
+  "caixa_alta": 1,
+  "excluir": 7,
+  "outro_estado": 22,
   "sigla_sem_ancora": 8
  },
  "itens": [
+  {
+   "id": "f52a50733e15",
+   "titulo": "Pazolini anuncia secretário de Obras de Vitória na equipe de transição de governo",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/politica/pazolini-anuncia-secretario-de-obras-de-vitoria-na-equipe-de-transicao-de-governo-1126",
+   "data": "2026-11-03T14:56:00Z",
+   "coletado_em": "2026-11-03T15:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "transicao",
+    "governador",
+    "contratos"
+   ]
+  },
+  {
+   "id": "565754b8bcdf",
+   "titulo": "EDP inicia Feirão de Negociação com parcelamento de dívidas em até 60 vezes",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQnp6WV9vOThEMHk0cEZzdHgxQi1QTVZfZXFuN2hqNkRqaXgySDVYLW5pM1JXZnpXWXVRalBrMExHZjJqRS14QS10TU5VWHU5cGFhbHNyZEF0ZTNMZ1Rlbjd5Z0VMaDlJYnlzMWRvU25nTEVpc1NKLUFfT2I1SG12UUlrdG1oRVlCRzh2SzgwMW5FQmVETy1vaWdUTXY5TnVKaEtwVGVSM19lSnpKWVFYV0dnVVdjMHBEM3ZmcNIBxAFBVV95cUxPX1MxSHdya3Z5V2I0NWhPRzBobTlkU1JSQU5KbWE0RWduYk9qU0FEUWI3STZyMUtxQjVMWG1qdUk1dUg2QV9KMFZBTUJNSGJ6Y000eVVPZjhENGtTdUItbEtVNDlqRHZUd095bjdWUWZ5SXMxVUdzNGV5NVg2UDlTMm12NU1fdlhwQlRFSUhiTWFVUVRNbk1iQ204WXhMRFc3NFZOQXNILXR2dUl6NUhmQ3VfdzRSS3hQUjFZTC1hQW9PaUtq?oc=5",
+   "data": "2026-11-03T14:50:52Z",
+   "coletado_em": "2026-11-03T15:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "8f49206e75c7",
+   "titulo": "Pazolini anuncia novo nome para equipe de transição do Governo",
+   "veiculo": "Sim Notícias",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQRzFtMG5yM2E3bFJNeGJ5UHdyWE5KZUdTZjZXUDJrejRtX25EM1VBTTU0ZV9fTFQ0ZzRmNl9SRzFzNEpnaXNjbHJkLVo1UV9ZQmhHX3FiT0IzaUN3TS01Z2tLOW1GVzdNSUxnNzVsdHQxRFJlTnZURmtUbmQtZFIyMUJyU1o5Mm9oUHRTcENCUmVPclg5R2dpcFY5anFkNmNp?oc=5",
+   "data": "2026-11-03T14:50:00Z",
+   "coletado_em": "2026-11-03T15:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "dd2f1c6c104b",
+   "titulo": "Detran instala totens com inteligência artificial para monitorar trânsito em Rondônia",
+   "veiculo": "Ariquemes 190",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE92cFJ3RkgwTnNMU01nbUUyM3pFdElQRkwzc0xhcVQwdy1rc1lSVWJhTjlXSUF6ejZTRnJHbm4tZnJVUFBrMTk2X3NIQ3FfVTNZSzJNYURzMnpqZjc5?oc=5",
+   "data": "2026-11-03T14:49:04Z",
+   "coletado_em": "2026-11-03T15:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "9e08e78b6a95",
+   "titulo": "Caravana Incaper leva orientações para ajudar agricultores a enfrentar impactos do El Niño",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQWxsNmpRLWl0cDI5OHpYbnFrV2sySURuTzdHOGdIN2FlZndieDR4QUplaFZ5YnZYX0Z3Q3d6U1JMc2RuYkdxeVFrR0lvV05TQll5R1QyRkJ3OUdTZ1VBWHFFV1ZsREpjcFlraWowNlJrLWlWcktQUlBRWDJtX0hDd3hNUlRGMXl4LV9XZjMtTW15RVBFYUFtbXFlOUFsSDRGU0hNSTE2SThlZUlIYXRaQ1Rn?oc=5",
+   "data": "2026-11-03T14:49:00Z",
+   "coletado_em": "2026-11-03T15:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "155269117053",
+   "titulo": "Artista capixaba Ângela Gomes celebra 50 anos de carreira com exposição no Palácio Anchieta",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/hz/cultura/artista-capixaba-angela-gomes-celebra-50-anos-de-carreira-com-exposicao-no-palacio-anchieta-1126",
+   "data": "2026-11-03T14:34:38Z",
+   "coletado_em": "2026-11-03T15:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "c11aa14d5d4a",
+   "titulo": "Governo Lula deve enviar nesta terça (3) alíquota do 'imposto do pegado' ao Congresso, diz ministro",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/brasil/governo-lula-deve-enviar-nesta-terca-3-aliquota-do-imposto-do-pegado-ao-congresso-diz-ministro-1126",
+   "data": "2026-11-03T14:31:15Z",
+   "coletado_em": "2026-11-03T15:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "3f813c2f0648",
+   "titulo": "Detran|ES convoca suplentes no programa CNH Social nesta terça-feira",
+   "veiculo": "Site Aracruz",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNZm93VTBGb1A5dXZOdXBnc3lKa29GVDFGLVF2MUEyM3ZCZTFScUlOSEV4dUNfRGsxVXNpcDZGZnpvY1F6TnROOVoxRHZxZkVHMlNaRUhmcDVFT3dNei1LX0YySnZYdW9EZzVfVGJVLVpBMnZmNi1leFVQNFIwREpjRk05aGwzdVRtVGdxZ1I1STNiUkhyUVJUTGdsTUp5UHBJWmJHRXZ0MzBLUQ?oc=5",
+   "data": "2026-11-03T14:30:19Z",
+   "coletado_em": "2026-11-03T15:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "ad3949ab2c8e",
+   "titulo": "Pazolini anuncia Gustavo Perin como novo integrante da equipe de transição do Governo do Estado",
+   "veiculo": "Aqui Notícias",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPYkdCZGhUWFJORUJ1UHQ4aFF1MEx2ZDRnMWJzcktoMlAwc0VBLVVsSUxBZnNaeUZuSUN3eHVVVmJ2MzJHMFM4NUlzUnUwaVAtZVBpZGlrS1RYNU94M3NmaEl1WEROSFpMU0hubnJmU2xSSGJmMDlhWWJoRlJtNWYyOUcydWpaNEthZkJHQkRRQnZjczlwS2ZQbWdNcEM0Z0o2VU5kUmx0QVBvbXY0RzBWM1JhYUNaOGRQcTBjZ3MtYm4xazVMTUFySg?oc=5",
+   "data": "2026-11-03T14:10:06Z",
+   "coletado_em": "2026-11-03T15:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
   {
    "id": "6617b9a3f0b8",
    "titulo": "Gustavo Perin será novo integrante da equipe de transição de Pazolini",
