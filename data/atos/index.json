@@ -1,9 +1,9 @@
 {
- "ref": "2026-10-31",
- "gerado_em": "2026-10-31T17:08:04Z",
+ "ref": "2026-11-03",
+ "gerado_em": "2026-11-03T09:17:22Z",
  "desde": "2026-10-04",
  "primeiro_levantamento": "2026-10-31",
- "baseline": true,
+ "baseline": false,
  "contagem": {
   "paralisacao": 2,
   "suspensao": 1,
@@ -35,6 +35,7 @@
   11591,
   11595,
   11596,
+  11597,
   11600
  ],
  "itens": [

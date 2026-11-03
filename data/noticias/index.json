@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-03",
- "gerado_em": "2026-11-03T01:17:11Z",
+ "gerado_em": "2026-11-03T09:17:11Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,23 +25,23 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 23,
-   "aceitos": 6,
+   "lidos": 25,
+   "aceitos": 7,
    "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 1,
+   "lidos": 3,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 4,
+   "lidos": 7,
    "aceitos": 4,
    "possiveis": 0
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 0,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 1,
+   "lidos": 2,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 25,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 29,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 20,
+   "lidos": 16,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 32,
+   "lidos": 26,
    "aceitos": 2,
-   "possiveis": 5
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 2
   },
   {
@@ -206,19 +206,44 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto": 221,
-  "possivel": 12,
+  "sem_contexto": 224,
+  "possivel": 14,
+  "caixa_alta": 2,
   "veiculo_outra_praca": 4,
+  "exterior_sem_ancora": 7,
   "sem_contexto_com_tema": 10,
-  "excluir": 5,
-  "outro_estado": 17,
-  "veiculo_excluido": 15,
-  "sigla_sem_ancora": 5,
-  "exterior_sem_ancora": 8
+  "excluir": 7,
+  "outro_estado": 15,
+  "veiculo_excluido": 10,
+  "sigla_sem_ancora": 6
  },
  "itens": [
+  {
+   "id": "c9f4bffc8387",
+   "titulo": "Detran-ES divulga nesta terça-feira (3) os suplentes no programa CNH Social",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/agora/detran-es-divulga-nesta-terca-suplentes-no-programa-cnh-social-1126",
+   "data": "2026-11-03T08:56:14Z",
+   "coletado_em": "2026-11-03T09:17:11Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "973b7475ddaa",
+   "titulo": "SESP-ES institui governança e limita uso de reconhecimento facial e do Cerco Inteligente",
+   "veiculo": "atlaspublico.com.br",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdEJYbHJCUGJFbXhCQ1FxSFJMUVVnYXJ5X1RFX0hUQW5mT240OERITTU1SHRkNUJ0M3JrYjJGYmw4VnNFWFU4VF82RlZUQnFkZzBMVV9iamx3Q1FXSTRHREQzQ1g0U3VhU3J5aGJJWUp0a2puV0NDYVdQbnRFM0RIUGpNdUVFWjg2R1NaMGhZN2dMbHdVOVZtQXF2bXJnemYwTlVhOFhXSVJ3ckZLOWhYSXRR?oc=5",
+   "data": "2026-11-03T05:02:07Z",
+   "coletado_em": "2026-11-03T09:17:11Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
   {
    "id": "d886398fbb1b",
    "titulo": "Pablo Muribeca é um dos cotados à presidência da Assembleia Legislativa do ES",
@@ -259,6 +284,18 @@
    "temas": [
     "governador"
    ]
+  },
+  {
+   "id": "5b5572f64bfc",
+   "titulo": "ONU elogia Governo Lula em relatório sobre avanço da restauração da natureza no mundo. o ES recupera áreas da Mata Atlântica",
+   "veiculo": "Grafitti News",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPLTE1aTVnX3l0MUdZTlhVUEVVLURpVk1BQnhZZE9ZR2NHbUVjRGFQT21YZmJBN3o3N0NkXzRPNzlkU1BtazNpVE9lMUFEZm04VWxya2pSbVhibzBxNENjTlRGQjJuVzRLbWdrV1VEWDZlUWttTUFmMDVvcWxVU0pkSTdUQS1MTFVEOXM3WERWdDdRcHh6VzFILUxZWUtSZ2JyOTNrbXNpem1RNHVCRzRiZFFubnBCN090N3RXVE04ci1IeGVRd1A4Z2xnaE1Gb3VEQVViRHBDcmlLNEhSU2MzcU95eWFOMFE?oc=5",
+   "data": "2026-11-03T00:02:00Z",
+   "coletado_em": "2026-11-03T09:17:11Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
   },
   {
    "id": "952a5182b6b4",
