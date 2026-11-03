@@ -40,6 +40,40 @@ function iguais(a, b) {
   return crypto.timingSafeEqual(ha, hb);
 }
 
+// Usuários nomeados: variável PAINEL_USUARIOS, um JSON {"usuario": "senha", ...} (configurada no Vercel, nunca no repositório).
+// O nome do usuário não distingue maiúsculas de minúsculas; a senha, sim.
+function usuarios() {
+  const bruto = process.env.PAINEL_USUARIOS;
+  if (!bruto) return {};
+  try {
+    const o = JSON.parse(bruto);
+    return o && typeof o === 'object' && !Array.isArray(o) ? o : {};
+  } catch (e) {
+    return {};
+  }
+}
+
+// Confere usuário e senha. Sem usuário informado, vale a senha única (PAINEL_SENHA), como antes.
+// Percorre todos os usuários e compara sempre os dois campos, para não revelar por tempo de resposta se o usuário existe.
+function credencialValida(usuario, senha) {
+  const nome = String(usuario || '').trim().toLowerCase();
+  if (!nome) {
+    const unica = process.env.PAINEL_SENHA;
+    return Boolean(unica) && iguais(senha, unica);
+  }
+  let ok = false;
+  for (const [u, s] of Object.entries(usuarios())) {
+    const mesmoUsuario = iguais(nome, String(u).trim().toLowerCase());
+    const mesmaSenha = iguais(senha, String(s));
+    if (mesmoUsuario && mesmaSenha) ok = true;
+  }
+  return ok;
+}
+
+function acessoConfigurado() {
+  return Boolean(process.env.PAINEL_SENHA) || Object.keys(usuarios()).length > 0;
+}
+
 function emitirSessao() {
   const exp = Math.floor(Date.now() / 1000) + DURACAO_S;
   return `${exp}.${assinar(exp)}`;
@@ -90,5 +124,5 @@ function responder(res, status, objeto, extras = {}) {
 }
 
 module.exports = {
-  COOKIE, DURACAO_S, acessoAberto, iguais, emitirSessao, sessaoValida, lerCookie, cookieSessao, lerCorpo, responder,
+  COOKIE, DURACAO_S, acessoAberto, credencialValida, acessoConfigurado, iguais, emitirSessao, sessaoValida, lerCookie, cookieSessao, lerCorpo, responder,
 };
