@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-03",
- "gerado_em": "2026-11-03T19:17:26Z",
+ "gerado_em": "2026-11-03T20:17:24Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,40 +17,40 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 5,
+   "lidos": 11,
+   "aceitos": 6,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 18,
+   "lidos": 25,
+   "aceitos": 20,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 6,
+   "lidos": 10,
+   "aceitos": 8,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 7,
+   "lidos": 6,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 1,
+   "lidos": 10,
+   "aceitos": 2,
    "possiveis": 2
   },
   {
@@ -65,31 +65,31 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 1,
+   "lidos": 5,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 3,
+   "lidos": 8,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 1,
-   "aceitos": 0,
+   "lidos": 4,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 60,
+   "lidos": 63,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 43,
+   "lidos": 51,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 26,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,9 +145,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 15,
+   "lidos": 14,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -155,14 +155,14 @@
    "ok": true,
    "lidos": 58,
    "aceitos": 5,
-   "possiveis": 10
+   "possiveis": 11
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 59,
-   "aceitos": 1,
+   "lidos": 100,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 8,
+   "aceitos": 9,
    "possiveis": 3
   },
   {
@@ -178,7 +178,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -194,7 +194,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -208,18 +208,98 @@
  ],
  "novos_na_coleta": 5,
  "descartes_na_coleta": {
-  "sem_contexto": 258,
-  "sem_contexto_com_tema": 9,
+  "sem_contexto": 269,
+  "sem_contexto_com_tema": 8,
   "possivel": 15,
-  "veiculo_excluido": 30,
-  "veiculo_outra_praca": 12,
-  "exterior_sem_ancora": 13,
+  "veiculo_excluido": 24,
+  "exterior_sem_ancora": 12,
   "caixa_alta": 2,
   "excluir": 9,
-  "outro_estado": 31,
-  "sigla_sem_ancora": 10
+  "outro_estado": 37,
+  "veiculo_outra_praca": 11,
+  "sigla_sem_ancora": 12
  },
  "itens": [
+  {
+   "id": "39326e6abf35",
+   "titulo": "Blitz da Lei Seca flagra 62 dirigindo sob efeito de álcool",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcExGT3FjTV9FNTgtb0NUVXNrbUxzMUd4cXhXZy1lcGlQbVdMVWRvbnhhbDVDZjEyTHZjcm9ibnBxcnB3NnNzZGdneXY1TmZXYWVOM3lNNG5sXy1hU1FlR2o3bnBTM0EzVUpsVjJqNkc0TUhYckF4UWoxNXFTeGVaeGdMc094d0k?oc=5",
+   "data": "2026-11-03T20:07:00Z",
+   "coletado_em": "2026-11-03T20:17:24Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "2d8dc90c7532",
+   "titulo": "Nova regra do Detran pode bloquear a CNH de motoristas com pendências no CPF em 2026; saiba quais irregularidades precisam ser corrigidas",
+   "veiculo": "ND Mais",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQbUJxNHdaclE4eklsZGFXWWhqNG1sTlNIOTRuX2NiY0F2RzZQMXdXb2I3eENTam9KOXRvRlBnNjdnTE1DVkRpRThQOUNxM2FCMmZYNE5UZ0d4NFlFWTBTYWgtbTk2NlpHQ01BVWE0Ry1lay1rcnFWUVBicGw2bUtneXlZLWpQVmRjcEJoUW5rWkJ1dC14Q1pyYw?oc=5",
+   "data": "2026-11-03T19:55:45Z",
+   "coletado_em": "2026-11-03T20:17:24Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "f2da5d3c41c9",
+   "titulo": "Governo do ES entrega 16 novas viaturas ao Corpo de Bombeiros com investimento de R$ 18,9 milhões",
+   "veiculo": "Montanhas Capixabas",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPLUQ0aTF0TmVkMl9qR3VqZnhiWXBpS3MwRE5jRE41enBfUU1zRnZsRmliQmpYVm5aSDRlSUdRV25FT2VqallTWHFGeElUZEZMVkg0dGVtMVc2OHVYYjBLcnV3bjBKcjM1RERvX1NJU0dtdURsN253a3FYRXB6cEttZ2dfY1dtN0FBbDRJclM5OURpV1JFaWtmVWQ0WERWcUNBSng1Q2cxVUpQeEhyWF9VSEVtNS1RS2VscFhjRzl1dHhJaDhrNjk4VGVGZVljV00?oc=5",
+   "data": "2026-11-03T19:53:32Z",
+   "coletado_em": "2026-11-03T20:17:24Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "b7eb34254a35",
+   "titulo": "Sinais, fortes sinais: Os nomes escalados por Pazolini até agora",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/leticia-goncalves/sinais-fortes-sinais-os-nomes-escalados-por-pazolini-ate-agora-1126",
+   "data": "2026-11-03T19:32:00Z",
+   "coletado_em": "2026-11-03T20:17:24Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "bfd5a7820290",
+   "titulo": "Governo do Estado adquire 16 novas viaturas para atuar em emergências na Bacia do Rio Doce",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNaFJGSXVzeEZicjhCLXo4X01rWlNuRWwyaG9QVVJlREE4NVVtREV4cF9FalFWNmwzUk1qQWpUUHlrbExWeGd6T1d1Wk45UkZsS056UzZOYzlHbDNKeEx6NWh0bXpLRllqZlF5cExzQ24zcThzVGpIME9PVFRsWmduUUdibU9IbkhoNW9IZVhEdmxTaktiM1pIaUN6enFDZWNRV3lGZC00VHc1aDJ5ejJBREJB?oc=5",
+   "data": "2026-11-03T19:27:00Z",
+   "coletado_em": "2026-11-03T20:17:24Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "5edc53288526",
+   "titulo": "A cinco dias do Enem, governo do Estado não garantiu transporte gratuito",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQRlFkb2htc1RUSzQzTFNXcWpybF9aNmhWbFJsbWhVU2ItUVNGSWszWTNheEZpUFhLWXFaUXZmNi1vbVBaYlc2VXhUZmhuNVNzcnFvazNuWHAwVXhEVDBfYy1tclYyZnJWZGs1X1kySWFuU25aR2hJVERXMXRjVVhCTjBvVnVNWS1QcUphYnlSTlExc2JpTEhabjZUZFlXOHItcnR0cExIUjdseExsZWxKTDJxTQ?oc=5",
+   "data": "2026-11-03T19:17:40Z",
+   "coletado_em": "2026-11-03T20:17:24Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "7873627b2490",
    "titulo": "Procon Manaus: onde reclamar e quais documentos levar",
@@ -359,6 +439,18 @@
    "temas": []
   },
   {
+   "id": "fec2e8e42f5d",
+   "titulo": "Secult abre consulta pública para construção dos editais do Ciclo 3 da PNAB",
+   "veiculo": "Correio dos Municípios",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOU2t6OUxzS2RZZ2Fmb2piVWpmTU1PYTdlWTItblhIWFJzOTVnZVY3NUJmb2hlQUQtaVctajZvSTRiTmJ5ejJJdHVCMU44cWt3ZmtVTUhrM3oyVkllUDNaSXpSM1hMZURDUk81dm1oRzZZbDJWdU0tVHJzTFBPVzdwYWRQQzFiMkI1NUpKUG1sbU5FQWxVVGRKTnpHSFk3cFlmMHAyeHc3RTZJWkoxNW1hZUVWUWQtenFpWDJkVnlPaUJ4RjlSWW82T2NCaV9sZmgyQW4wZQ?oc=5",
+   "data": "2026-11-03T17:07:18Z",
+   "coletado_em": "2026-11-03T20:17:24Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
+  {
    "id": "941f1c50da29",
    "titulo": "Bandes amplia transparência e disponibiliza informações sobre operações de crédito no site",
    "veiculo": "Governo ES",
@@ -486,7 +578,12 @@
    "url": "https://www.agazeta.com.br/es/politica/pazolini-anuncia-secretario-de-obras-de-vitoria-na-equipe-de-transicao-de-governo-1126",
    "data": "2026-11-03T14:56:00Z",
    "coletado_em": "2026-11-03T15:17:15Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Portal Momento",
+     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQaUQxZXdWSlJfM0ZJMVVUZEtLb1ZZcV84M0Y3YXFtWUFWbGN5dl91VlVkamRBa1I2cWgwcWMtclhEWFdGdzlXMElTcnM5ZUE3c0RoLTBQd2daUElqc3pFTGN2aWFWdnRiTFl2UTJrcmRxZ05hUUpDaGNUNEtiVllGM3diVWJCMUo4Tmo2djcwX0loZTVTZG9BN1IyNWY2c19ZckVjWElkaUhEQnBsUWdhVWhhbHk0TEdtcXJQeHpjYVp2OEJG?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 3,
    "temas": [
