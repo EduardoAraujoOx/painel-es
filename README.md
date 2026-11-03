@@ -272,13 +272,14 @@ Variáveis de ambiente do projeto (configurar no Vercel, nunca no repositório):
 
 | Variável | Uso |
 |---|---|
-| `PAINEL_SENHA` | senha compartilhada de acesso |
+| `PAINEL_SENHA` | senha compartilhada de acesso (vale quando o campo "Usuário" fica em branco) |
+| `PAINEL_USUARIOS` | usuários nomeados, em JSON: `{"usuario":"senha"}`; o nome não distingue maiúsculas, a senha sim |
 | `PAINEL_SEGREDO` | chave de assinatura da sessão (32+ caracteres aleatórios) |
 | `PAINEL_ACESSO` | opcional: `aberto` desliga a senha; prevalece sobre `acesso.json` |
 
-Para trocar a senha, altere `PAINEL_SENHA` no painel do Vercel e faça um novo deploy; para derrubar todas as sessões abertas, altere também `PAINEL_SEGREDO`. A sessão dura 12 horas. O site envia `noindex`, `robots.txt` restritivo e cabeçalhos de segurança (`vercel.json`).
+Para criar, trocar ou retirar um usuário, edite `PAINEL_USUARIOS` no painel do Vercel e faça um novo deploy (as credenciais nunca vão para o repositório). Para trocar a senha única, altere `PAINEL_SENHA` no painel do Vercel e faça um novo deploy; para derrubar todas as sessões abertas, altere também `PAINEL_SEGREDO`. A sessão dura 12 horas. O site envia `noindex`, `robots.txt` restritivo e cabeçalhos de segurança (`vercel.json`).
 
-Teste local: `PAINEL_SENHA=x PAINEL_SEGREDO=<32+ caracteres> node dev-server.js 3000`.
+Teste local: `PAINEL_ACESSO=senha PAINEL_SENHA=x PAINEL_SEGREDO=<32+ caracteres> node dev-server.js 3000` (com usuários: `PAINEL_USUARIOS='{"ana":"x"}'`). Testes do login: `node --test api/testes/login.test.js`.
 
 ## Navegação
 

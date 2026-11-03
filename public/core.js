@@ -137,7 +137,7 @@
     esconderDica();
     $('#app').hidden = true;
     $('#login').hidden = false;
-    $('#senha').focus();
+    ($('#usuario').value ? $('#senha') : $('#usuario')).focus();
   };
   $('#form-login').addEventListener('submit', async (ev) => {
     ev.preventDefault();
@@ -146,13 +146,13 @@
     const r = await fetch('/api/login', {
       method: 'POST', credentials: 'same-origin',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ senha: $('#senha').value }),
+      body: JSON.stringify({ usuario: $('#usuario').value, senha: $('#senha').value }),
     });
     if (r.ok) {
       $('#senha').value = '';
       iniciar();
     } else {
-      erro.textContent = r.status === 401 ? 'Senha incorreta.' : 'Acesso indisponível no momento.';
+      erro.textContent = r.status === 401 ? 'Usuário ou senha incorretos.' : 'Acesso indisponível no momento.';
       erro.hidden = false;
     }
   });
