@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-03",
- "gerado_em": "2026-11-03T15:17:15Z",
+ "gerado_em": "2026-11-03T16:17:20Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,7 +18,7 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 3,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 26,
-   "aceitos": 11,
+   "aceitos": 12,
    "possiveis": 3
   },
   {
@@ -34,7 +34,7 @@
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 8,
-   "aceitos": 5,
+   "aceitos": 6,
    "possiveis": 1
   },
   {
@@ -49,32 +49,32 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 0,
+   "lidos": 8,
+   "aceitos": 1,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 1,
-   "aceitos": 1,
+   "lidos": 2,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 1,
-   "aceitos": 0,
+   "lidos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 2,
+   "lidos": 5,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 46,
+   "lidos": 48,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 42,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 9,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 46,
-   "aceitos": 4,
-   "possiveis": 8
+   "lidos": 29,
+   "aceitos": 5,
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 59,
+   "lidos": 100,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -170,8 +170,8 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
-   "possiveis": 4
+   "aceitos": 6,
+   "possiveis": 3
   },
   {
    "fonte": "Folha Vitória",
@@ -194,7 +194,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 2
   },
   {
@@ -206,20 +206,76 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 6,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto_com_tema": 12,
-  "sem_contexto": 236,
-  "possivel": 19,
-  "veiculo_excluido": 23,
-  "veiculo_outra_praca": 12,
-  "exterior_sem_ancora": 13,
+  "sem_contexto_com_tema": 13,
+  "sem_contexto": 238,
+  "possivel": 18,
+  "veiculo_excluido": 25,
+  "veiculo_outra_praca": 9,
   "caixa_alta": 1,
   "excluir": 7,
+  "exterior_sem_ancora": 12,
   "outro_estado": 22,
-  "sigla_sem_ancora": 8
+  "sigla_sem_ancora": 9
  },
  "itens": [
+  {
+   "id": "4676f851dc4a",
+   "titulo": "Banco Mundial e Sefaz analisam aplicação de recursos e investimentos no Piauí",
+   "veiculo": "Portal O Dia",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxONzMxeDFHZmFhSzNGczhqdGdweDlzRmtjUHZEM3lPZEVGWS00bFNSUHQ1OWd0OVlvZGxCeTJYYnBZT1NwTDFtVU1iTy1kdGNiOUx5Q2x2V0lPZFdJWlZNUTQxN3NBa3lFRkJac29RYmhxdE9SRW1vZTRKT3BTMldsQTNaM2dQZ1E3VHI5REVrazZSbEl3MjJ6OU4xWm80Nk9kWVJFRHlGNWtjRmlac3NRQmVaNXZWUlliMmQ3bFRoVzBVdw?oc=5",
+   "data": "2026-11-03T15:50:10Z",
+   "coletado_em": "2026-11-03T16:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "2fdb10038ed2",
+   "titulo": "Secretário diz que governo do ES já tem como rastrear emendas impositivas de deputados estaduais",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/politica/secretario-diz-que-governo-do-es-ja-tem-como-rastrear-emendas-impositivas-de-deputados-estaduais-1126",
+   "data": "2026-11-03T15:48:00Z",
+   "coletado_em": "2026-11-03T16:17:20Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "governador",
+    "financas",
+    "controle"
+   ]
+  },
+  {
+   "id": "be93e404efb0",
+   "titulo": "Sua CNH pode estar garantida! Detran libera nova lista de selecionados no ES",
+   "veiculo": "Aqui Notícias",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOQUhnV3IwOGNrVmVEZFFXSVltdHd0a2d0QWRLNF81X2xmTEhraEZSTWpLT0VfQlBQdEdiSFp3S3NsODRmc2g3VmNMckdlN3NPdE1mZkxsa2h3WF84aE02ZVQxNXJuaGJCVk5FWl9WZVR4dFd4MzJ3MFlIMnZUVFg3ekZWRmJOXzZQRzF5cWwxWjUtdnZwUTI4VzRyYl93MkVzNGxqZFVsSzJaM1B1enc?oc=5",
+   "data": "2026-11-03T15:21:53Z",
+   "coletado_em": "2026-11-03T16:17:20Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "e931faf469f2",
+   "titulo": "Veja como fazer o concurso do Idaf sem pagar nada",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/concursos/veja-como-fazer-o-concurso-do-idaf-sem-pagar-nada-1126",
+   "data": "2026-11-03T15:18:00Z",
+   "coletado_em": "2026-11-03T16:17:20Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "f52a50733e15",
    "titulo": "Pazolini anuncia secretário de Obras de Vitória na equipe de transição de governo",
