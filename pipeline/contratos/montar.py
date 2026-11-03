@@ -223,6 +223,8 @@ def avaliar_contrato(c):
         if (c["vigente"] and c["vfin"] >= R.VALOR_RELEVANTE * 10 and c["ini"] and c["fim_ef"] and c["fim_ef"] > c["ini"] and (c["fim_ef"] - c["ini"]).days >= 365
                 and c["pago"] >= 0.8 * c["vfin"] and (REF - c["ini"]).days / (c["fim_ef"] - c["ini"]).days < 0.5):
             al.append(("ritmo_acelerado", "m"))
+        if R.finalizado(c["sit"]) and c["fim_ef"] and c["fim_ef"] >= REF:
+            al.append(("situacao_divergente", "m"))
     if c["modal"] in R.DIRETAS and c["inst"] == "contrato":
         if c["vfin"] >= R.DIRETA_VALOR_ALTO:
             al.append(("direta_valor", "a"))
@@ -519,7 +521,7 @@ def main():
     # --- por fornecedor x órgão: contratado, empenhado, fracionamento
     fo = collections.defaultdict(lambda: {"cont": collections.Counter(), "emp": collections.Counter(), "n_av": 0, "dir": 0.0,
                                          "vig": 0, "anual": 0.0, "saldo": 0.0, "n_ct": 0, "dir_docs": collections.defaultdict(list),
-                                         "nome": "", "desde": None, "ate": None, "restante": 0.0,
+                                         "nome": "", "desde": None, "ate": None, "restante": 0.0, "fim_ult": None,
                                          "ess_w": collections.Counter(), "cat_w": collections.Counter()})
     org_nome, org_ano_cont, org_ano_emp = {}, collections.defaultdict(collections.Counter), collections.defaultdict(collections.Counter)
     org_cat, org_modal = collections.defaultdict(collections.Counter), collections.defaultdict(collections.Counter)
@@ -547,6 +549,8 @@ def main():
                 org_modal[c["org"]][c["modal"]] += v
         if c["inst"] == "contrato":
             a["n_ct"] += 1
+            if c["fim_ef"] and (a["fim_ult"] is None or c["fim_ef"] > a["fim_ult"]):
+                a["fim_ult"] = c["fim_ef"]
             if c["vigente"]:
                 a["vig"] += 1
                 a["anual"] += c["anual"]
@@ -557,6 +561,20 @@ def main():
             a["dir"] += c["vfin"]
             if c["inst"] == "avulso" and 0 < c["vfin"] < R.LIMITE_DISPENSA:
                 a["dir_docs"][ano].append(c["vfin"])
+    # Pagamentos da unidade gestora a CNPJs que não têm NENHUM documento do SIGA no órgão (contratação feita em outro órgão ou fora do
+    # SIGA, ou instrumento não registrado). Entravam no total pago do órgão, mas ficavam fora da lista de fornecedores e dos alertas.
+    nomes_cnpj = {}
+    for c in recs:
+        nomes_cnpj.setdefault(c["cnpj"], c["forn"])
+    sem_doc_n, sem_doc_v = 0, 0.0
+    for (o_, cnpj_), po_ in pago_of.items():
+        v_ = sum(po_.get(int(y), 0.0) for y in ANOS_GASTO)
+        if (o_, cnpj_) in fo or o_ not in org_nome or v_ <= 0:
+            continue
+        fo[(o_, cnpj_)]["nome"] = nomes_cnpj.get(cnpj_, cnpj_)
+        sem_doc_n += 1
+        sem_doc_v += v_
+    print(f"pagamentos a CNPJs sem documento do SIGA no órgão pagador: {sem_doc_n} pares órgão x CNPJ, R$ {sem_doc_v:,.0f} em {ANOS_GASTO[0]}–{ANOS_GASTO[1]}", flush=True)
     frac = {}
     for k, a in fo.items():
         for ano, vs in a["dir_docs"].items():
@@ -659,7 +677,7 @@ def main():
     CAMPOS = ["doc", "proc", "forn", "cnpj", "objeto", "cat", "modal", "vini", "vfin", "cel", "ini", "fim", "fimef", "sit", "anual", "saldo", "empAnt", "empAtu", "npror", "rp", "ess", "restante", "pago", "pagoAnt", "pagoAtu", "pago23", "classeA", "alertas"]
     for org in sorted(org_nome):
         meus = [c for c in recs if c["org"] == org]
-        alvo = [c for c in meus if c["vigente"] or any(a[0] == "vigencia_vencida" for a in c["alertas"])]
+        alvo = [c for c in meus if c["vigente"] or any(a[0] in ("vigencia_vencida", "situacao_divergente") for a in c["alertas"])]
         alvo.sort(key=lambda c: -c["anual"])
         contratos = [[c["doc"], c["proc"], titulo(c["forn"]) if c["forn"].isupper() else c["forn"], c["cnpj"], c["objeto"][:300], c["cat"], c["modal"],
                       round(c["vini"], 2), round(c["vfin"], 2), iso(c["cel"]), iso(c["ini"]), iso(c["fim"]), iso(c["fim_ef"]), c["sit"],
@@ -689,14 +707,21 @@ def main():
             fr = [(ano, n, s) for (k, ano), (n, s) in frac.items() if k == (o, cnpj)]
             al = [[x[0], x[1], x[2]] for x in alertas_forn.get(cnpj, [])]
             al += [["fracionamento", "m", f"{n} compras diretas abaixo de R$ {R.LIMITE_DISPENSA:,.0f} em {ano}, somando R$ {s:,.0f}.".replace(",", ".")] for ano, n, s in fr]
+            sem_doc = a["n_ct"] == 0 and a["n_av"] == 0
             if a["vig"] == 0 and pago_ant + pago_atu >= 1_000_000:
-                al.append(["pago_sem_contrato", "m", f"Pagos R$ {pago_ant + pago_atu:,.0f} em {ANOS_GASTO[0]}–{ANOS_GASTO[1]} sem contrato vigente neste órgão.".replace(",", ".")])
+                texto = (f"Pagos R$ {pago_ant + pago_atu:,.0f} em {ANOS_GASTO[0]}–{ANOS_GASTO[1]} sem contrato vigente neste órgão".replace(",", ".")
+                         + ("; o SIGA não tem nenhum documento deste fornecedor neste órgão." if sem_doc else "."))
+                al.append(["pago_sem_contrato", "m", texto])
+            if a["vig"] == 0 and a["fim_ult"]:
+                pos, desde_m = R.pago_apos(a["fim_ult"], pago_om.get((o, cnpj), {}))
+                if pos >= R.PAGO_APOS_FIM_MINIMO:
+                    al.append(["pago_apos_fim", "m", f"O último contrato registrado terminou em {iso(a['fim_ult'])}; o órgão pagou R$ {pos:,.0f} ao fornecedor de {desde_m} em diante (pagamentos mensais lidos desde {MENSAL_DESDE}).".replace(",", ".")])
             forns.append({"cnpj": cnpj, "nome": titulo(a["nome"]) if a["nome"].isupper() else a["nome"], "vig": a["vig"], "anual": round(a["anual"], 2),
                           "pagoAnt": round(pago_ant, 2), "pagoAtu": round(pago_atu, 2), "pagoTot": round(sum(po.values()), 2),
                           "natureza": fichas.get(cnpj, {}).get("natureza", ""),
                           "saldo": round(a["saldo"], 2), "empAnt": round(a["emp"].get(ANOS_GASTO[0], 0.0), 2), "empAtu": round(a["emp"].get(ANOS_GASTO[1], 0.0), 2),
                           "cont": round(cont_recente, 2), "direta": round(a["dir"], 2), "nAvulsos": a["n_av"],
-                          "desde": iso(a["desde"]), "ate": iso(a["ate"]), "restante": round(a["restante"], 2),
+                          "desde": iso(a["desde"]), "ate": iso(a["ate"]), "restante": round(a["restante"], 2), "semDoc": int(sem_doc),
                           "cat": a["cat_w"].most_common(1)[0][0] if a["cat_w"] else "", "ess": a["ess_w"].most_common(1)[0][0] if a["ess_w"] else "indefinido",
                           "alertas": [f"{a}:{n}" for a, n in unicos(al).items()], "risco": sum(nivel_peso[n] for n in unicos(al).values())})
         forns.sort(key=lambda x: -(x["pagoAnt"] + x["pagoAtu"] + x["empAnt"] + x["empAtu"] + x["anual"]))
@@ -721,6 +746,8 @@ def main():
                   "contratosAlta": n_al_alto, "contratosMedia": n_al_medio, "fornecedoresSinalizados": n_forn_sinal,
                   "arquivo": f"org/{org}"}
         resumo["maiorForn"] = round(resumo["maiorForn"], 4)
+        resumo["pagoSemContrato"] = round(sum(x["pagoAnt"] + x["pagoAtu"] for x in forns if x["vig"] == 0), 2)       # pago a CNPJs sem contrato vigente neste órgão
+        resumo["pagoSemDoc"] = round(sum(x["pagoAnt"] + x["pagoAtu"] for x in forns if x["semDoc"]), 2)             # ... e sem nenhum documento do SIGA neste órgão
         anual_total = sum(x["anual"] for x in forns) or 1.0
         resumo["maiorFornAnual"] = round(max((x["anual"] for x in forns), default=0.0) / anual_total, 4)
         resumo["coberturaEmpenho"] = round((resumo["empAnt"] + resumo["empAtu"]) / max(1, len(ANOS_GASTO)) / resumo["anualVigente"], 4) if resumo["anualVigente"] else None

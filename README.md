@@ -156,6 +156,18 @@ python3 -I pipeline/contratos/montar.py                 # gera data/contratacoes
 
 Limites conhecidos: a classificação do objeto é por palavras-chave; não há comparação de preços entre contratações; o pago do contrato depende de o SIGA vincular os empenhos a ele; empresas públicas e fundos fora do SIGA não aparecem.
 
+### Onde a cobertura de contratos falha (e o que o painel faz a respeito)
+
+A contagem de "contratos vigentes" mede o que está **registrado** no SIGA, não o que está **em execução**. A diferença aparece sobretudo no custeio (vigilância, limpeza, mão de obra, telecomunicações), em que o serviço é contínuo e o instrumento é prorrogado, substituído ou contratado em caráter emergencial sem que o registro acompanhe. O painel trata hoje quatro situações:
+
+- **Pagamento sem contrato vigente.** O fornecedor recebeu R$ 1 milhão ou mais em dois exercícios do órgão sem ter contrato vigente nele (alerta `pago_sem_contrato`). Desde a revisão de nov/2026, a lista de fornecedores do órgão inclui também as empresas pagas pela unidade gestora que **não têm nenhum documento do SIGA naquele órgão** (campo `semDoc`); antes, esses pagamentos entravam no total pago do órgão, mas não apareciam na lista nem nos alertas. O resumo de cada órgão traz `pagoSemContrato` e `pagoSemDoc`.
+- **Pagamento depois do fim do contrato** (`pago_apos_fim`). O último contrato registrado com o fornecedor no órgão terminou (com aditivos de prazo) e o órgão seguiu pagando R$ 250 mil ou mais, sem contar os dois meses seguintes ao fim (a última fatura costuma sair depois). Usa os pagamentos mensais do SIGEFES, lidos desde jan/2025 (`MENSAL_DESDE`).
+- **Situação encerrada com prazo em aberto** (`situacao_divergente`). O SIGA marca o instrumento como finalizado, encerrado ou extinto, mas a data final, com aditivos, ainda não chegou. O contrato **não** entra na contagem de vigentes (a regra de vigência não mudou), mas passa a constar da lista do órgão, no filtro "Vencidos ou com situação divergente", para conferência. Rescisão, anulação e cancelamento não geram o alerta, por serem atos de extinção.
+- **Execução fora do SIGA.** Há contratação conduzida fora do sistema (campo `procRealizadoSiga`), registrada como alerta informativo, e há pagamento a fornecedores que nunca passaram pelo SIGA, que o pipeline não lê (`execucao.py` só guarda CNPJs que aparecem em algum documento do SIGA). Para esses, a fonte de conferência é o PNCP (Lei 14.133), ainda não integrada ao painel.
+
+Os arquivos do SIGA anteriores a 2016 (inclusive o de data nula, `1753`, e os de ano digitado errado, como `1991`) não são baixados; conferidos em nov/2026, têm um único contrato ainda dentro do prazo (R$ 0,5 milhão), o que não justifica lê-los.
+
+
 ## Módulo `lacunas` (Informações a solicitar)
 
 Catálogo das lacunas de dados e de transparência que a análise encontrou, para compor o pedido de informações da equipe de transição. Cada item traz o que falta, a evidência calculada a partir dos próprios dados do painel (por exemplo, quantos contratos principais não têm pagamento ligado, quantas contratações foram conduzidas fora do SIGA, o fim da cobertura do conjunto de obras), a decisão que a informação habilitaria, o que solicitar, a quem e a prioridade. O catálogo está em `pipeline/lacunas/montar.py`; para incluir ou ajustar um item, edite a lista `itens` desse arquivo e rode o script depois de `pipeline/contratos/montar.py` e `pipeline/organograma/montar.py`.

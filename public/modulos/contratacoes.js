@@ -234,7 +234,7 @@
   }
   function passaFiltro(k, vigenteOuNao) {
     const f = estado.f;
-    const venc = k.alertas.some((a) => a.startsWith('vigencia_vencida'));
+    const venc = k.alertas.some((a) => a.startsWith('vigencia_vencida') || a.startsWith('situacao_divergente'));
     if (f.situ === 'vigentes' && !vigenteOuNao) return false;
     if (f.situ === 'vencidos' && !venc) return false;
     if (f.cat && k.cat !== f.cat) return false;
@@ -264,7 +264,7 @@
     if (meu !== tokenRender) return;
     c.classList.remove('carregando');
     const hoje = dados.ref;
-    const todos = det.contratos.map(contrato).map((k) => ({ ...k, vigente: !k.fimef || k.fimef >= hoje }));
+    const todos = det.contratos.map(contrato).map((k) => ({ ...k, vigente: (!k.fimef || k.fimef >= hoje) && !k.alertas.some((a) => a.startsWith('situacao_divergente')) }));
     const vig = todos.filter((k) => k.vigente);
     const [aAnt, aAtu] = dados.anosGasto;
     const cob = org.coberturaEmpenho;
@@ -274,7 +274,7 @@
       kpi('Pago aos fornecedores', brlCompacto(org.pagoAnt + org.pagoAtu), `${aAnt}: ${brlCompacto(org.pagoAnt)} · ${aAtu}: ${brlCompacto(org.pagoAtu)}`),
       kpi('Contratos principais do Estado', `${nInt.format(org.classeA)} contrato(s)`, `${brlCompacto(org.classeAValor)} por ano`),
       kpi('Alertas', `${nInt.format(org.contratosAlta)} altos`, `${nInt.format(org.contratosMedia)} com sinal médio · ${nInt.format(org.fornecedoresSinalizados)} fornecedores sinalizados`, 'alerta'));
-    const perfil = el('p', { class: 'perfil-linha' }, `Contratação direta: ${pct(org.diretaPct)} do valor contratado em ${aAnt}–${aAtu} · Maior fornecedor: ${pct(org.maiorFornAnual)} do compromisso anual · Empenhado no SIGA: ${brlCompacto(org.empAnt + org.empAtu)}`);
+    const perfil = el('p', { class: 'perfil-linha' }, `Contratação direta: ${pct(org.diretaPct)} do valor contratado em ${aAnt}–${aAtu} · Maior fornecedor: ${pct(org.maiorFornAnual)} do compromisso anual · Empenhado no SIGA: ${brlCompacto(org.empAnt + org.empAtu)}` + (org.pagoSemContrato != null && (org.pagoAnt + org.pagoAtu) > 0 ? ` · Pago a fornecedores sem contrato vigente neste órgão: ${brlCompacto(org.pagoSemContrato)} (${pct(org.pagoSemContrato / (org.pagoAnt + org.pagoAtu))} do pago)` : ''));
     const aviso = cob != null && cob < 0.35 ? el('p', { class: 'aviso solto' },
       `Atenção: os empenhos registrados no SIGA cobrem só ${pct(cob)} do compromisso anual deste órgão. Use a coluna "pago" (SIGEFES), que traz o dinheiro que saiu do caixa para os fornecedores, e não o empenho, para medir a execução.`) : null;
 
@@ -334,7 +334,7 @@
     const sel = (valor, opcoes, aoMudar, rotulo) => el('label', {}, rotulo, el('select', { onchange: (ev) => { aoMudar(ev.target.value); estado.limite = 50; render(); } },
       opcoes.map(([v, r]) => el('option', { value: v, selected: v === valor }, r))));
     const filtros = el('div', { class: 'filtros' },
-      sel(f.situ, [['vigentes', 'Vigentes'], ['vencidos', 'Vencidos com empenho posterior'], ['todos', 'Todos']], (v) => { f.situ = v; }, 'Situação'),
+      sel(f.situ, [['vigentes', 'Vigentes'], ['vencidos', 'Vencidos ou com situação divergente'], ['todos', 'Todos']], (v) => { f.situ = v; }, 'Situação'),
       sel(f.cat, [['', 'Todos'], ...cats.map((x) => [x, x])], (v) => { f.cat = v; }, 'Objeto'),
       sel(f.ca, [['', 'Todos'], ['sim', 'Só contratos principais (80% do valor do Estado)']], (v) => { f.ca = v; }, 'Valor'),
       sel(f.ess, [['', 'Todas'], ...Object.entries(ESS()).filter(([k]) => todos.some((c) => c.ess === k)).map(([k, r]) => [k, r])], (v) => { f.ess = v; }, 'Essencialidade'),
@@ -370,7 +370,7 @@
     const rolagem = el('div', { class: 'rolagem' }, el('table', {},
       cabecalhoOrdenavel(cols, estado.ordem, (k) => { estado.ordem = { col: k, dir: estado.ordem.col === k ? -estado.ordem.dir : -1 }; render(true); }),
       el('tbody', {}, linhas.length ? linhas : [el('tr', {}, el('td', { colspan: 6 }, el('p', { class: 'vazio' }, 'Nenhum contrato corresponde aos filtros.')))])));
-    const titulos = { vigentes: 'Contratos vigentes', vencidos: 'Contratos vencidos que seguem recebendo empenhos', todos: 'Contratos' };
+    const titulos = { vigentes: 'Contratos vigentes', vencidos: 'Contratos vencidos que seguem recebendo empenhos, ou dados como encerrados com prazo em aberto (a conferir)', todos: 'Contratos' };
     return el('div', { class: 'cartao', id: 'lista-contratos' }, el('div', { class: 'cartao-topo' }, el('div', {},
       el('h2', {}, `${titulos[f.situ]} (${nInt.format(lista.length)})`),
       el('p', {}, `Somam ${brlCompacto(soma(lista, (k) => k.anual))} por ano. Clique numa linha para abrir os detalhes e os motivos de cada alerta.`)),
