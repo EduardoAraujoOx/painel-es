@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-03",
- "gerado_em": "2026-11-03T18:17:17Z",
+ "gerado_em": "2026-11-03T19:17:26Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,16 +17,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 4,
-   "possiveis": 2
+   "lidos": 10,
+   "aceitos": 5,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 26,
-   "aceitos": 16,
+   "aceitos": 18,
    "possiveis": 2
   },
   {
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 4,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 7,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 58,
+   "lidos": 60,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -97,8 +97,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 36,
-   "aceitos": 1,
+   "lidos": 43,
+   "aceitos": 2,
    "possiveis": 3
   },
   {
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 27,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 11,
+   "lidos": 15,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 58,
    "aceitos": 5,
-   "possiveis": 7
+   "possiveis": 10
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 60,
+   "lidos": 59,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 7,
+   "aceitos": 8,
    "possiveis": 3
   },
   {
@@ -178,15 +178,15 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
-   "possiveis": 2
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -194,7 +194,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -206,20 +206,90 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 5,
  "descartes_na_coleta": {
-  "sem_contexto_com_tema": 7,
-  "possivel": 18,
-  "sem_contexto": 243,
-  "veiculo_excluido": 19,
-  "veiculo_outra_praca": 7,
-  "caixa_alta": 1,
-  "excluir": 7,
-  "exterior_sem_ancora": 11,
-  "outro_estado": 24,
-  "sigla_sem_ancora": 7
+  "sem_contexto": 258,
+  "sem_contexto_com_tema": 9,
+  "possivel": 15,
+  "veiculo_excluido": 30,
+  "veiculo_outra_praca": 12,
+  "exterior_sem_ancora": 13,
+  "caixa_alta": 2,
+  "excluir": 9,
+  "outro_estado": 31,
+  "sigla_sem_ancora": 10
  },
  "itens": [
+  {
+   "id": "7873627b2490",
+   "titulo": "Procon Manaus: onde reclamar e quais documentos levar",
+   "veiculo": "AM POST",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbUx4LUR4bHlQT3BnMk5rallYREhtTG9jMWJQbXhDQU9vQy1xeXktVThNZlI3anJFMWRzYnZfaG1Dam5iV014SHpjV1hxZ0hCQklKWm9HZlU2LTJBcVVrZ3JPRDFjNVBDaU5kV3dDNVdCSkJodDRNVFEtcm96b2xRTEIwMUV0dXVlTlI3OGZR?oc=5",
+   "data": "2026-11-03T19:09:15Z",
+   "coletado_em": "2026-11-03T19:17:26Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "be646d3ccc7e",
+   "titulo": "Pazolini anuncia secretário de Obras de Vitória para equipe de transição",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOanhpdGhodm9sZzNfel9OcVFWNjg3S0s0dDE3ZjJkZGxqWi1NRjNGNjZabmFwczVTc2VMZDJaMTIxeWdKdE1mZUZiWUtYZkhpZDBMTzNFTzV4XzNHM0dzNlBLLS1WaDdHU3I0Q2k0N1FXdVVOclM5dWwtZ3N3b3RULXdyeG50Y3lrSzFyR1M5d25VLXlsYXQwWk5lR0xHME00aUJmR2ZJb01XR2RHakhMZzBHMzZ1UmJn0gHAAUFVX3lxTE0tR2VvUWdISU92U2RyeTgycWktZUQwdlM5eDlORzJfVkdZdkhUM2VLQXhqUnhJTVp3RC1tQjRhYXhoREYtUTlBLUF5SjNaRWV0bHg1WEtqZWcycVFiRVJKVlFzTjB0dnpOV3Nmb3ZESXUzQVhpNTFJbFBKV1VsVW9hYXZ5d3NWZ2ZYamJiUUJ6cjFEV0UxbERQR0E5S05QczFURmRTREUzQUY5ZTVDcDgxMzJObEFXelBIVVlSTlJRTQ?oc=5",
+   "data": "2026-11-03T18:46:45Z",
+   "coletado_em": "2026-11-03T19:17:26Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "transicao",
+    "governador",
+    "contratos"
+   ]
+  },
+  {
+   "id": "6162ab4b0e6f",
+   "titulo": "Ruas de Lazer e ciclofaixas de Vitória serão suspensas nos dias do Enem",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/transito/ruas-de-lazer-e-ciclofaixas-de-vitoria-serao-suspensas-nos-dias-do-enem-1126",
+   "data": "2026-11-03T18:45:02Z",
+   "coletado_em": "2026-11-03T19:17:26Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "428d0a9c35a4",
+   "titulo": "Vereadores aprovam reajuste do tíquete-alimentação dos servidores de Vitória",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/vereadores-aprovam-reajuste-do-tiquete-alimentacao-dos-servidores-de-vitoria/",
+   "data": "2026-11-03T18:33:30Z",
+   "coletado_em": "2026-11-03T19:17:26Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "1934d344f52b",
+   "titulo": "Enem 2026: ruas de lazer e ciclofaixas serão suspensas em Vitória",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/servicos/2026/11/enem-2026-ruas-de-lazer-ciclofaixas/",
+   "data": "2026-11-03T18:24:26Z",
+   "coletado_em": "2026-11-03T19:17:26Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "2c94b6dc72dc",
    "titulo": "Transição no ES tem primeiro embate entre equipes de Pazolini e Ferraço",
@@ -265,6 +335,18 @@
    ]
   },
   {
+   "id": "3f5a75add720",
+   "titulo": "Pagou o licenciamento e não conseguiu emitir o CRLV-e? Detran explica possíveis impedimentos",
+   "veiculo": "AF Notícias",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPM0pZOGV4cEd0cW9HbEpBT1VPR0YtX2Z3UWx1bkRMOWJzMjRkOWtad01JSDVoTUh0cnFBMDBxeTFMNTlXQzBTUDVrMG12c1IxeGpiV0pyUjJUVmpIWF93Ri1WdTdqM0xmaTBma2gtcDdaeW1JckRUaDl6M2R4ekxvbGZTUmVrSzlpM1BLZlVDR09QNGxfZkhQQk83OE9FVEVFd3QyRkpYdjZwZlRRN3dTWVc0dlQyUjRJa2tqbmRNSmFZdw?oc=5",
+   "data": "2026-11-03T17:25:00Z",
+   "coletado_em": "2026-11-03T19:17:26Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
+  {
    "id": "a4d8e0e2ba77",
    "titulo": "Corrida Luzes da Cidade: confira o mapa e veja como fazer inscrição na maior night run do Estado",
    "veiculo": "Folha Vitória",
@@ -299,6 +381,21 @@
    "possivel": false,
    "triagem": 3,
    "temas": []
+  },
+  {
+   "id": "4e81ce0c1c9b",
+   "titulo": "Lorenzo Pazolini anuncia Gustavo Perin como novo integrante da equipe de transição do Governo do Estado",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQX1lqYWVRTmhKS1lTZzdJV3RaSGN4QmczMDJTay1HNHJGVWdSWm9XNFhIU2dGbmFyMEtrMFlsQmhvcXF1dHNGb1k0YTdOTGRNLXVSeEpqc2V3VFY5M29IYkUtUkVXZ0daRGo3Rk52YkhEbU1fOGZ2XzVZVnAxRWdIaDRfU1ZiR1pvOS0yRHFONTc0VEZMbVYwQTdIQk44XzU2d2p0M0MtNzdSMV9XQ0tWb1N1V3dPdlE1Z2hadFZWYndPMWhoNXVJ?oc=5",
+   "data": "2026-11-03T16:45:55Z",
+   "coletado_em": "2026-11-03T19:17:26Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
   },
   {
    "id": "f9e0829d5e75",
