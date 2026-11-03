@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-03",
- "gerado_em": "2026-11-03T21:17:28Z",
+ "gerado_em": "2026-11-03T22:17:17Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,8 +25,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 36,
-   "aceitos": 24,
+   "lidos": 25,
+   "aceitos": 20,
    "possiveis": 2
   },
   {
@@ -34,15 +34,15 @@
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 8,
-   "possiveis": 1
+   "aceitos": 9,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 5,
+   "lidos": 6,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -57,16 +57,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 2,
+   "lidos": 4,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 2,
+   "lidos": 4,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 55,
+   "lidos": 56,
    "aceitos": 2,
    "possiveis": 4
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 44,
+   "lidos": 41,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 18,
+   "lidos": 19,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 59,
+   "lidos": 30,
    "aceitos": 3,
-   "possiveis": 11
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 59,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -178,7 +178,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -186,7 +186,7 @@
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -195,7 +195,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -208,18 +208,58 @@
  ],
  "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto": 277,
+  "sem_contexto": 270,
   "sem_contexto_com_tema": 13,
-  "caixa_alta": 3,
-  "veiculo_excluido": 32,
   "possivel": 16,
-  "exterior_sem_ancora": 14,
-  "excluir": 9,
-  "outro_estado": 43,
-  "veiculo_outra_praca": 15,
-  "sigla_sem_ancora": 14
+  "veiculo_excluido": 32,
+  "exterior_sem_ancora": 12,
+  "excluir": 8,
+  "outro_estado": 31,
+  "caixa_alta": 1,
+  "veiculo_outra_praca": 9,
+  "sigla_sem_ancora": 7
  },
  "itens": [
+  {
+   "id": "ad95a37eab94",
+   "titulo": "EDP faz feirão de dívidas com parcelamento no cartão; veja como negociar",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/servicos/2026/11/edp-faz-feirao-de-dividas-cartao/",
+   "data": "2026-11-03T21:46:19Z",
+   "coletado_em": "2026-11-03T22:17:17Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "06f5927a37bc",
+   "titulo": "Saiba quem são os três deputados estaduais eleitos pela primeira vez no ES",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/saiba-quem-sao-os-tres-deputados-estaduais-eleitos-pela-primeira-vez-no-es/",
+   "data": "2026-11-03T21:43:42Z",
+   "coletado_em": "2026-11-03T22:17:17Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "b6674cdaab7c",
+   "titulo": "Governo Lula impõe sigilo a documentos do 'pacote de bondades' lançado nas eleições",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/mundo/governo-lula-impoe-sigilo-a-documentos-do-pacote-de-bondades-lancado-nas-eleicoes-1126",
+   "data": "2026-11-03T21:33:35Z",
+   "coletado_em": "2026-11-03T22:17:17Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
   {
    "id": "1b47a31f414a",
    "titulo": "Novo vereador acena à prefeita, mais um secretário na transição e a lupa em Casagrande e Evair",
@@ -258,6 +298,18 @@
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNZGNvcThwQUFnYjA3WXRYdDRrd3dHR1doa3R6NGRxMzZCNjcxcTRkV2ZRQzN3OF9mdVJ2NTRCRm1xdzlVLVlYbXFfanhQdWxaZWJOLUs2NnlsdzVBRlBFT0N4VU0tQ0Z4dlZqRzNLNXVwMTJDM3Y2MUFvUUNPOXdZV3I4U0FQcEpoc3dET0tTRGNKWWxZeGU1aXZSX21BQkNLTk84Y3k3OExzaUxlUEZLd1VhbXNsZFkycV9UaXVSbzhuc2dhbk44?oc=5",
    "data": "2026-11-03T20:14:00Z",
    "coletado_em": "2026-11-03T21:17:28Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "7ae03f556e2d",
+   "titulo": "Saúde recebe 28 ambulâncias para reforçar atendimento nos municípios capixabas",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOVEVvbjdsU1k4emNYdlJtbHdiSkNBelotSmUxbGZkdUhZbkt1VHM1SXJqdlNXRkc4Qm1yNHBjVmdBSFJpS0xvUGdFNmgzZkpIZlVVOUdveURVemNIMTZHZkdKYzRZLUZzcTZzZVdWSTJVeWx0T0t1dHExaUlKX0h0VHBQWlZPd0VkRE54eTVocE43c0hmTnBWOFdJdE05SGFxb1E?oc=5",
+   "data": "2026-11-03T20:10:00Z",
+   "coletado_em": "2026-11-03T22:17:17Z",
    "outras": [],
    "possivel": false,
    "triagem": 3,
@@ -312,6 +364,18 @@
    "temas": [
     "governador"
    ]
+  },
+  {
+   "id": "86fda6296aef",
+   "titulo": "Transcol em Vila Velha: 30 linhas integradas em 2026",
+   "veiculo": "capixabadagema.com.br",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOT2ZyVjFqdGNCNTdwZ0Z6dTJ3RHVCTUMwbUV2SjNCaEdtZDhvMl9kM2FlckdQNGtBbkVHYUlOU3F0SDM2Z1prMFJudnJJZzRkbDhJcERYcnhXb09fRF9FaTFTSW9YWTQ3OXl5SVVyajdQZkNKUXhxZVd4V3RkQkY0ZEgzYXIzeFlGX0lB?oc=5",
+   "data": "2026-11-03T19:51:52Z",
+   "coletado_em": "2026-11-03T22:17:17Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
   },
   {
    "id": "b7eb34254a35",
@@ -536,7 +600,12 @@
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQX1lqYWVRTmhKS1lTZzdJV3RaSGN4QmczMDJTay1HNHJGVWdSWm9XNFhIU2dGbmFyMEtrMFlsQmhvcXF1dHNGb1k0YTdOTGRNLXVSeEpqc2V3VFY5M29IYkUtUkVXZ0daRGo3Rk52YkhEbU1fOGZ2XzVZVnAxRWdIaDRfU1ZiR1pvOS0yRHFONTc0VEZMbVYwQTdIQk44XzU2d2p0M0MtNzdSMV9XQ0tWb1N1V3dPdlE1Z2hadFZWYndPMWhoNXVJ?oc=5",
    "data": "2026-11-03T16:45:55Z",
    "coletado_em": "2026-11-03T19:17:26Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Montanhas Capixabas",
+     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOaFZDSWlySXducjNYMmFvajZNMHhZU0lDVlhSWVlmaDNXVWJhdGxCZEFUM01LbG1JZnd5TjhqV1M1eDJpTC1XaFJMUFBMdUNXQjZPXzRmd2tIcjVPY3lSVm16eW1iRHZRTENjUDgwbkE4bkQ0V0xNYV9USUtxNzVoV3l3dzMwNjg0aHVnU3p2TUx3T3BaT0RRLUhhSFFDV2hjaFl2RElnZUtOaW5XUWdUd0pPLWxRSmVzXzR0cHJJM2JfQzBpVnhiVFBwTjNnTDgxZjNwM0w1VDlZUQ?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 3,
    "temas": [
