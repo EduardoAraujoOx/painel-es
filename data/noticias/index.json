@@ -1,6 +1,6 @@
 {
- "ref": "2026-11-02",
- "gerado_em": "2026-11-02T22:17:12Z",
+ "ref": "2026-11-03",
+ "gerado_em": "2026-11-03T00:17:11Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,31 +25,31 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 18,
-   "aceitos": 4,
-   "possiveis": 4
+   "lidos": 23,
+   "aceitos": 5,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 0,
-   "aceitos": 0,
+   "lidos": 1,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 4,
+   "lidos": 3,
    "aceitos": 3,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -73,8 +73,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 0,
+   "lidos": 1,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 1,
+   "lidos": 2,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -137,9 +137,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 18,
+   "lidos": 16,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -155,13 +155,13 @@
    "ok": true,
    "lidos": 27,
    "aceitos": 2,
-   "possiveis": 6
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 59,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -171,7 +171,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -208,19 +208,45 @@
  ],
  "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 216,
-  "possivel": 12,
+  "sem_contexto": 221,
+  "possivel": 13,
   "veiculo_outra_praca": 4,
-  "generico_sem_ancora": 3,
-  "sem_contexto_com_tema": 6,
-  "caixa_alta": 1,
+  "sem_contexto_com_tema": 8,
   "excluir": 5,
-  "veiculo_excluido": 12,
-  "outro_estado": 15,
-  "sigla_sem_ancora": 6,
+  "outro_estado": 16,
+  "veiculo_excluido": 11,
+  "sigla_sem_ancora": 5,
   "exterior_sem_ancora": 9
  },
  "itens": [
+  {
+   "id": "89fdb6d60e66",
+   "titulo": "Cinco Pontes: Governo do ES e prefeituras abandonam a ponte à própria sorte não querem ser responsáveis pela manutenção",
+   "veiculo": "Grafitti News",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOdmU5dUdVRzh0NE1FMGNSMHRIcjR2RHNzOXN1VmIya2twUElHOWRsTXY1SGRTb0NpZnpUMUZtX3R4ZjN0M01LSHE0c28zWUlXTlF5NDdwbnhnRzJQOThhOTdPeEdlOXNFZlQwR2ZYVGlGMFgyWVFtbWtVQU0zTVRtdkhRZGdOd2FIT1lwNFZoWk43cmRycXFrRHZLX2Z1b2Y4UU9zekd1cjFRWlhjWWprT3dVeWZRcmdfcHFiU1luVVFSNGEtVkp6ZlRVdUoyT0ZQY3BuXzJqdVJEZ1FuS01Tdw?oc=5",
+   "data": "2026-11-03T00:04:00Z",
+   "coletado_em": "2026-11-03T00:17:11Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "952a5182b6b4",
+   "titulo": "BR 101 será totalmente interditada por duas horas para obras em Fundão",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/agora/br-101-sera-totalmente-interditada-por-duas-horas-para-obras-em-fundao-1126",
+   "data": "2026-11-03T00:01:36Z",
+   "coletado_em": "2026-11-03T00:17:11Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "b0e83a7218ef",
    "titulo": "Um fantasma de 2014/2015 na sombra de Ricardo Ferraço e Renato Casagrande",
