@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-03",
- "gerado_em": "2026-11-03T16:17:20Z",
+ "gerado_em": "2026-11-03T17:04:38Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -19,21 +19,21 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 4,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 12,
-   "possiveis": 3
+   "lidos": 35,
+   "aceitos": 16,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 6,
    "possiveis": 1
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 48,
+   "lidos": 52,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 34,
+   "lidos": 35,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 42,
+   "lidos": 25,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 11,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 60,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -195,7 +195,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -206,20 +206,70 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 4,
  "descartes_na_coleta": {
-  "sem_contexto_com_tema": 13,
-  "sem_contexto": 238,
+  "sem_contexto_com_tema": 8,
+  "sem_contexto": 248,
   "possivel": 18,
-  "veiculo_excluido": 25,
-  "veiculo_outra_praca": 9,
-  "caixa_alta": 1,
+  "caixa_alta": 2,
+  "veiculo_excluido": 21,
+  "outro_estado": 21,
+  "veiculo_outra_praca": 8,
+  "exterior_sem_ancora": 11,
   "excluir": 7,
-  "exterior_sem_ancora": 12,
-  "outro_estado": 22,
-  "sigla_sem_ancora": 9
+  "sigla_sem_ancora": 7
  },
  "itens": [
+  {
+   "id": "941f1c50da29",
+   "titulo": "Bandes amplia transparência e disponibiliza informações sobre operações de crédito no site",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPazhVTF8waXJuYTl3UUd3UVdoV3UtdmY5RmZaS2tFVjdUNmNlWVV0aHNQaWs2MmdGdlhFQUdlZ1BZakVScDZtbDcwQVlIRjdBMUNUajd1LXFYbnBWbC1jcjMzeEVEdVNGdHY1ZlpJT1Zqd3M0RkxpMUxqTnNwRnYxcWpHOGxOeGxoZUV2SC1Xc2didVNOOGZhZExSVi0zbUhGc0h0bUxsWFhJTFpWVWlsN1Jn?oc=5",
+   "data": "2026-11-03T16:55:00Z",
+   "coletado_em": "2026-11-03T17:04:38Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "39c7008eb757",
+   "titulo": "Cais das Artes inaugura exposição ‘Trama Capixaba’, que reúne histórias e vozes da cultura do Espírito Santo",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPTkVQbUdRb1VkNkdUWDUyQW5rNGJzYlRua0NqNng1b3E3b04tOHRiNjZiNVJLNk1TTENQS0xDdUdORVR1dXhXN2NMNjhnU0pXSU84MXFEWUdWQ0pzUGkzNkdoSnR3WW5uenJKVW9WLTc3WHY3cFc1WU11ZkF6clREZDhVQ01YRTVpM0JvTnZaVlVyWnlFZmVjdUpiWVFzNFBNdFRZWlZzTDNLUGJDUm5LVWxNcGVDamloVTNucVc0UmxULS1hdGc?oc=5",
+   "data": "2026-11-03T16:51:00Z",
+   "coletado_em": "2026-11-03T17:04:38Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "f9e0829d5e75",
+   "titulo": "Detran|ES convoca 3.008 suplentes no programa CNH Social",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOdkJLVjY4WDJweC12cEJlNHJKaDFsSDdGNm5xWWVha2UtSnMyczczZ19nY2t4OUdhUWJaQkFsVnB3MGp0VFJaZFVBbWZxN2VtcmV1NEdmeU9xdm04QmJzOHZ0dFBFR0UxUW55TVdqSWR5bXlrMTdxbHV6clo2MW5YUnE1Q2Q?oc=5",
+   "data": "2026-11-03T16:41:00Z",
+   "coletado_em": "2026-11-03T17:04:38Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "ea1dd1179988",
+   "titulo": "Governo quer enviar MP do Imposto Seletivo ainda hoje ao Congresso",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/governo-quer-enviar-mp-do-imposto-seletivo-ainda-hoje-ao-congresso/",
+   "data": "2026-11-03T16:30:46Z",
+   "coletado_em": "2026-11-03T17:04:38Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "4676f851dc4a",
    "titulo": "Banco Mundial e Sefaz analisam aplicação de recursos e investimentos no Piauí",
@@ -407,6 +457,21 @@
    "url": "https://eshoje.com.br/politica/2026/11/gustavo-perin-sera-novo-integrante-da-equipe-de-transicao-de-pazolini/",
    "data": "2026-11-03T14:07:52Z",
    "coletado_em": "2026-11-03T14:17:11Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "dfe56a54620b",
+   "titulo": "Linhares entra no radar político de Pazolini e cinco lideranças aparecem nas articulações para o novo governo",
+   "veiculo": "O Singular Portal de Notícias",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPVXJPb1I3bnNlRnE1REFwT29lYUc3dU9hTWhGYWJjbE1aTWduN2pTRkdqSmhzSXpNWDVCMlB3bER6ZnV1YU5fMWFVVUVIdkM5alRVNVU4Q3VfekhSUll0SEVPOWtiTDYyNWIwLUVuZkFYVUFiYWZOMkhPU1l5b2luYkhiT3Z6d2J0NmFURkhGei1kaHlNazVad1Z0Qlg0dUFualZjbUtiQndweWpOREUyQXF3ZGd6S0Jvemk3QVZKdHQyRjc0YjZXYWkxZzFFcG9wU1ZOanljWWlTekxxZnBiR29n?oc=5",
+   "data": "2026-11-03T13:57:49Z",
+   "coletado_em": "2026-11-03T17:04:38Z",
    "outras": [],
    "possivel": false,
    "triagem": 3,
