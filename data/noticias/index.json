@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-03",
- "gerado_em": "2026-11-03T00:17:11Z",
+ "gerado_em": "2026-11-03T01:17:11Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,7 +18,7 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 23,
-   "aceitos": 5,
+   "aceitos": 6,
    "possiveis": 3
   },
   {
@@ -41,15 +41,15 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 3,
+   "lidos": 4,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 16,
+   "lidos": 20,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 32,
    "aceitos": 2,
    "possiveis": 5
   },
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -209,16 +209,43 @@
  "novos_na_coleta": 2,
  "descartes_na_coleta": {
   "sem_contexto": 221,
-  "possivel": 13,
+  "possivel": 12,
   "veiculo_outra_praca": 4,
-  "sem_contexto_com_tema": 8,
+  "sem_contexto_com_tema": 10,
   "excluir": 5,
-  "outro_estado": 16,
-  "veiculo_excluido": 11,
+  "outro_estado": 17,
+  "veiculo_excluido": 15,
   "sigla_sem_ancora": 5,
-  "exterior_sem_ancora": 9
+  "exterior_sem_ancora": 8
  },
  "itens": [
+  {
+   "id": "d886398fbb1b",
+   "titulo": "Pablo Muribeca é um dos cotados à presidência da Assembleia Legislativa do ES",
+   "veiculo": "Serra Noticiário",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZmExWjU4TDNzeEV2SkhYUzQySUtWMVFfcEF0WWRCWHRYS1NfamF2Wi1PTDBkMFI3RHBfYW9CalVwWkFRUkYtV3FMSjlWNnoySDlaN25MWTBnRHZPMngwdjBLV2lrZ0J2cGNRUDJsRndyQkVEdnc2LWtfOVNhRjVkaUtwWHkwb1lVeGRoN3prNk9wTVA5MG01SXlRSk03MW1xR1d3NUNMc2ZDaElDd0E?oc=5",
+   "data": "2026-11-03T00:49:00Z",
+   "coletado_em": "2026-11-03T01:17:11Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "transicao",
+    "controle"
+   ]
+  },
+  {
+   "id": "0e716ab0002d",
+   "titulo": "Detran muda regras e vai bloquear CNH de motoristas com pendências no CPF em 2026",
+   "veiculo": "Portal Tempo Novo",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxONnFJREpDNm03UjQwSmhjOExEaElzYkRIZUU5alM2ajJxLVpkbWREcV91eG5UWEQzc2FzREI1VU9UaHVSWXliZS00RVJsbTlBYkFGMWFIV01wWEhZSmpjby1XaFFBQWNGUl9IMFcxalZDRE1TY19feUNwNW9kbzNpZVFaLTZEel9GV0N3UC1Fa0czaTV6RTJxaEN6LUl4ZVlpb2F5T183XzRSaEpKSEE?oc=5",
+   "data": "2026-11-03T00:20:00Z",
+   "coletado_em": "2026-11-03T01:17:11Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
   {
    "id": "89fdb6d60e66",
    "titulo": "Cinco Pontes: Governo do ES e prefeituras abandonam a ponte à própria sorte não querem ser responsáveis pela manutenção",
