@@ -77,5 +77,25 @@ class Refino(unittest.TestCase):
         self.assertEqual(D.refinar_ato(b)["t"], "Citação")
 
 
+class Campos(unittest.TestCase):
+    def test_termo_objeto_e_valor_do_extrato(self):
+        a = {"n": "2024.000012.41201.01", "c": "", "x": "Protocolo 1516482 RESUMO DO PRIMEIRO TERMO ADITIVO AO CONTRATO Nº 2024.000012.41201.01 Processo nº 2023-5V3HQ Contratante: IEMA. Objeto: prorrogação do prazo de vigência do Contrato nº 2024.000012.41201.01 pelo prazo de 12 (doze) meses. Valor total anual: R$ 11.846.880,00 (onze milhões). Dotação Orçamentária: Fonte 175300013 Cariacica/ES"}
+        f = D.campos_do_ato(a)
+        self.assertEqual(f["termo"], 1)
+        self.assertEqual((f["valor"], f["rotulo"]), (11846880.0, "total anual"))
+        self.assertTrue(f["objeto"].startswith("prorrogação do prazo de vigência"))
+        self.assertNotIn("Valor", f["objeto"])
+
+    def test_extrato_sem_campos_devolve_vazio_e_nao_inventa(self):
+        a = {"n": "2024.000050.10109.01", "c": "", "x": "TERMO DE RESCISÃO UNILATERAL DO CONTRATO Nº 2024.000050.10109.01 PROCESSO ADMINISTRATIVO Nº 2024-P9NG2"}
+        self.assertEqual(D.campos_do_ato(a), {})
+        self.assertEqual(D.campos_do_ato({"n": "", "c": "", "x": "sem citação"}), {})
+
+    def test_ordinal_por_extenso_e_cnpj_como_ancora(self):
+        a = {"n": "", "c": "08109994000190", "x": "EXTRATO DO SEGUNDO TERMO ADITIVO AO CONTRATO Nº 034/2023 Contratante: SEDU Contratado: Appolus CNPJ: 08.109.994/0001-90 Objeto: Supressão de 2,47% Valor Global: R$ 15.798.818,82 Josivaldo Barreto"}
+        f = D.campos_do_ato(a)
+        self.assertEqual((f["termo"], f["valor"]), (2, 15798818.82))
+
+
 if __name__ == "__main__":
     unittest.main()

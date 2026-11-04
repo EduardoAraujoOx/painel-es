@@ -144,7 +144,7 @@ def atos_do_contrato(doc, cnpj, proc, por_n, por_c, maximo=12):
 
     Liga pelo número estruturado do contrato (único: traz o ano, a unidade gestora e a sequência). Só quando o contrato não tem esse número,
     liga pelo CNPJ do fornecedor quando o trecho cita também o mesmo protocolo de processo ou a mesma numeração antiga N/AAAA; com número
-    estruturado essa via não vale, porque um mesmo fornecedor e um mesmo processo de origem alcançam contratos de órgãos diferentes. Devolve [[data, tipo, protocolo, página, edição, trecho]] por data,
+    estruturado essa via não vale, porque um mesmo fornecedor e um mesmo processo de origem alcançam contratos de órgãos diferentes. Devolve [[data, tipo, protocolo, página, edição, trecho, campos]] por data (campos: termo, objeto e valor do ato, quando o extrato os traz),
     sem repetir o mesmo ato (data, tipo e protocolo) e ficando com os `maximo` mais recentes."""
     achados = []
     n = numero_estruturado(doc)
@@ -160,7 +160,7 @@ def atos_do_contrato(doc, cnpj, proc, por_n, por_c, maximo=12):
         if chave in vistos:
             continue
         vistos.add(chave)
-        saida.append([a["d"], a["t"], a["p"], a["pg"], a["e"], a["x"][:520]])
+        saida.append([a["d"], a["t"], a["p"], a["pg"], a["e"], a["x"][:520], a.get("f") or {}])
     return saida[-maximo:]
 
 
