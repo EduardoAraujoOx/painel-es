@@ -84,7 +84,7 @@
   }
   const linkForn = (x) => el('a', { href: `#/contratacoes/${encodeURIComponent('f:' + x.cnpj)}` }, nomeProprio(x.forn));
   const celulaObjeto = (x) => el('td', { class: 'objeto' }, el('strong', {}, linkForn(x)), x.principal ? el('span', { class: 'selo n-i', title: 'Entre os contratos que somam 80% do compromisso anual do Estado' }, el('b', {}, 'Principal')) : null,
-    el('small', {}, x.orgNome + ' · ' + x.doc), el('small', {}, cortar(x.objeto, 160)));
+    el('small', {}, x.orgNome + ' · ' + x.doc), el('small', {}, x.objeto));
 
   function rodapeLista(e, total, mostrados, aoMais) {
     return total > mostrados ? el('div', { class: 'rodape-tabela' }, el('span', {}, `Mostrando ${nInt.format(mostrados)} de ${nInt.format(total)}`),
@@ -120,7 +120,7 @@
       'Sinal para conferir, não conclusão: o saldo de caixa que decide o cumprimento do art. 42 não é público.'].filter(Boolean);
     return { titulo: 'Contratos novos com parcelas depois de 2026', filtros, arquivo: `fim-de-mandato-contratos-novos-${dados.ref}`,
       colunas: [{ t: '#', w: 0.5 }, { t: 'Órgão', w: 2.2 }, { t: 'Fornecedor e objeto', w: 5.5 }, { t: 'Assinado', w: 1.1 }, { t: 'Até', w: 1.1 }, { t: 'Modalidade', w: 1.4 }, { t: 'Por ano', w: 1.2, n: 1 }, { t: 'Após 2026', w: 1.2, n: 1 }],
-      linhas: lista.map((x, i) => [i + 1, x.orgNome, `${nomeProprio(x.forn)}: ${cortar(x.objeto, 180)}`, dataBR(x.cel), dataBR(x.fimef), x.modal || '-', brlCompacto(x.anual), brlCompacto(x.alem)]),
+      linhas: lista.map((x, i) => [i + 1, x.orgNome, `${nomeProprio(x.forn)}: ${x.objeto}`, dataBR(x.cel), dataBR(x.fimef), x.modal || '-', brlCompacto(x.anual), brlCompacto(x.alem)]),
       texto: lista.slice(0, 12).map((x, i) => `${i + 1}. ${nomeProprio(x.forn)} (${x.orgNome}) - ${brlCompacto(x.anual)}/ano, até ${dataBR(x.fimef)} - ${cortar(x.objeto, 70)}`).concat(lista.length > 12 ? [`... e mais ${lista.length - 12}. O PDF traz a lista completa.`] : []) };
   }
 
@@ -158,7 +158,7 @@
       'Sinal para conferir, não conclusão: prorrogação é rotina em serviços contínuos.'].filter(Boolean);
     return { titulo: 'Aditivos de prazo e de valor desde 1º de maio', filtros, arquivo: `fim-de-mandato-aditivos-${dados.ref}`,
       colunas: [{ t: 'Órgão', w: 2.2 }, { t: 'Fornecedor e objeto', w: 5.5 }, { t: 'Data', w: 1.1 }, { t: 'Tipo', w: 1.2 }, { t: 'Nova vigência', w: 1.2 }, { t: 'Valor do aditivo', w: 1.4, n: 1 }, { t: '% do inicial', w: 1, n: 1 }, { t: 'Contrato/ano', w: 1.3, n: 1 }],
-      linhas: lista.map((x) => [x.orgNome, `${nomeProprio(x.forn)}: ${cortar(x.objeto, 160)}`, dataBR(x.data), [x.prazo ? 'Prazo' : '', x.valor ? 'Valor' : ''].filter(Boolean).join(' e '), x.prazo ? dataBR(x.novoFim) : '-',
+      linhas: lista.map((x) => [x.orgNome, `${nomeProprio(x.forn)}: ${x.objeto}`, dataBR(x.data), [x.prazo ? 'Prazo' : '', x.valor ? 'Valor' : ''].filter(Boolean).join(' e '), x.prazo ? dataBR(x.novoFim) : '-',
         x.valor && x.valorAlt != null ? brlCompacto(x.valorAlt) : '-', x.valor && x.valorAlt && x.vini ? pct(x.valorAlt / x.vini) : '-', brlCompacto(x.anual)]),
       texto: lista.slice(0, 12).map((x, i) => `${i + 1}. ${nomeProprio(x.forn)} (${x.orgNome}) - ${[x.prazo ? 'prazo' : '', x.valor ? 'valor' : ''].filter(Boolean).join(' e ')} em ${dataBR(x.data)} - contrato de ${brlCompacto(x.anual)}/ano`).concat(lista.length > 12 ? [`... e mais ${lista.length - 12}. O PDF traz a lista completa.`] : []) };
   }

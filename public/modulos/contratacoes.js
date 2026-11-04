@@ -332,7 +332,7 @@
     const [aAnt, aAtu] = dados.anosGasto;
     const visiveis = estado.verPncp ? vig : vig.slice(0, 10);
     const linhas = visiveis.map((x) => el('tr', {},
-      el('td', { class: 'objeto' }, el('strong', {}, nomeProprio(x.forn)), el('small', {}, x.objeto.length > 150 ? x.objeto.slice(0, 150) + '…' : x.objeto)),
+      el('td', { class: 'objeto' }, el('strong', {}, nomeProprio(x.forn)), el('small', {}, x.objeto)),
       el('td', { class: 'num' }, brlCompacto(x.valor)),
       el('td', {}, dataBR(x.ini), el('small', {}, `até ${dataBR(x.fim)}`)),
       el('td', { class: 'num' }, x.pagoAtu > 0 ? brlCompacto(x.pagoAtu) : '—'),
@@ -375,7 +375,7 @@
       const tr = el('tr', { class: 'clicavel' + (aberto ? ' aberta' : ''), tabindex: '0', 'aria-expanded': String(aberto),
         onclick: () => { const id = k.doc + k.proc; if (estado.aberto.has(id)) estado.aberto.delete(id); else estado.aberto.add(id); render(true); },
         onkeydown: (ev) => { if (ev.key === 'Enter') ev.currentTarget.click(); } },
-      el('td', { class: 'objeto' }, el('strong', {}, nomeProprio(k.forn)), k.classeA ? el('span', { class: 'selo n-i', title: 'Entre os contratos que somam 80% do compromisso anual do Estado' }, el('b', {}, 'Principal')) : null, naLista(org.id, k) ? el('span', { class: 'selo n-m' }, el('b', {}, '⚑'), ' na lista de revisão') : null, el('small', {}, k.objeto.length > 150 ? k.objeto.slice(0, 150) + '…' : k.objeto)),
+      el('td', { class: 'objeto' }, el('strong', {}, nomeProprio(k.forn)), k.classeA ? el('span', { class: 'selo n-i', title: 'Entre os contratos que somam 80% do compromisso anual do Estado' }, el('b', {}, 'Principal')) : null, naLista(org.id, k) ? el('span', { class: 'selo n-m' }, el('b', {}, '⚑'), ' na lista de revisão') : null, el('small', {}, k.objeto)),
       el('td', {}, k.cat, el('small', {}, k.modal + (k.rp ? ' · registro de preços' : '')), tagEss(k.ess)),
       el('td', { class: 'num' }, brlCompacto(k.anual), el('small', {}, 'total ' + brlCompacto(k.vfin)), k.pago > 0 ? el('small', {}, `pago ${brlCompacto(k.pago)} (${pct(k.vfin ? k.pago / k.vfin : 0)})`) : null),
       el('td', { class: 'num' }, k.saldo == null ? '—' : brlCompacto(k.saldo)),
@@ -420,7 +420,7 @@
         f.alerta && 'Alerta: ' + rotuloFiltroAlerta(f.alerta), f.q && 'Busca: ' + f.q].filter(Boolean).join(' | ')].filter(Boolean);
     return { titulo: `${tit} - ${org.nome}`, filtros, arquivo: `contratos-${org.nome.replace(/\W+/g, '-')}-${dados.ref}`,
       colunas: [{ t: 'Fornecedor e objeto', w: 6 }, { t: 'Tipo', w: 2 }, { t: 'Por ano', w: 1.4, n: 1 }, { t: 'Saldo', w: 1.4, n: 1 }, { t: 'Até quando', w: 1.2 }, { t: 'Alertas', w: 3 }],
-      linhas: lista.map((k) => [`${nomeProprio(k.forn)}: ${cortar(k.objeto, 200)}`, k.cat, brlCompacto(k.anual), k.saldo == null ? '-' : brlCompacto(k.saldo), dataBR(k.fimef), nomesAlertas(k, 3)]),
+      linhas: lista.map((k) => [`${nomeProprio(k.forn)}: ${k.objeto}`, k.cat, brlCompacto(k.anual), k.saldo == null ? '-' : brlCompacto(k.saldo), dataBR(k.fimef), nomesAlertas(k, 3)]),
       texto: lista.slice(0, 12).map((k, i) => `${i + 1}. ${nomeProprio(k.forn)} - ${brlCompacto(k.anual)}/ano - ${cortar(k.objeto, 80)}`).concat(lista.length > 12 ? [`... e mais ${lista.length - 12}. O PDF traz a lista completa.`] : []) };
   }
 
@@ -858,7 +858,7 @@
       el('thead', {}, el('tr', {}, ['Fornecedor e órgão', 'Objeto', 'Valores', 'Até quando', 'Motivo', 'Situação', 'Anotação', ''].map((t, n) => el('th', { class: n === 2 ? 'num' : '' }, t)))),
       el('tbody', {}, lista.map((i) => el('tr', {},
         el('td', {}, el('strong', {}, nomeProprio(i.forn)), el('small', {}, i.orgNome), el('small', {}, cnpjFmt(i.cnpj || ''))),
-        el('td', { class: 'objeto' }, i.objeto.length > 160 ? i.objeto.slice(0, 160) + '…' : i.objeto, el('small', {}, `${i.cat} · ${i.modal}`)),
+        el('td', { class: 'objeto' }, i.objeto, el('small', {}, `${i.cat} · ${i.modal}`)),
         el('td', { class: 'num' }, brlCompacto(i.anual) + ' por ano', el('small', {}, 'total ' + brlCompacto(i.vfin)), el('small', {}, 'a receber ' + brlCompacto(i.restante))),
         el('td', {}, dataBR(i.fimef), el('small', {}, i.fimef ? 'faltam ' + duracao(mesesAte(i.fimef)) : '')),
         el('td', {}, select(MOTIVOS, i, 'motivo')), el('td', {}, select(STATUS, i, 'status')),
@@ -1113,7 +1113,7 @@
       const tr = el('tr', { class: 'clicavel' + (aberto ? ' aberta' : ''), tabindex: '0', 'aria-expanded': String(aberto),
         onclick: () => { if (D.aberto.has(id)) D.aberto.delete(id); else D.aberto.add(id); render(true); }, onkeydown: (ev) => { if (ev.key === 'Enter') ev.currentTarget.click(); } },
       el('td', {}, String(r.rank)),
-      el('td', { class: 'objeto' }, el('strong', {}, nomeProprio(k.forn)), marcado ? el('span', { class: 'selo n-m' }, el('b', {}, '⚑'), ' na lista de revisão') : null, el('small', {}, k.orgNome), el('small', {}, k.objeto.length > 140 ? k.objeto.slice(0, 140) + '…' : k.objeto)),
+      el('td', { class: 'objeto' }, el('strong', {}, nomeProprio(k.forn)), marcado ? el('span', { class: 'selo n-m' }, el('b', {}, '⚑'), ' na lista de revisão') : null, el('small', {}, k.orgNome), el('small', {}, k.objeto)),
       el('td', {}, k.cat, el('small', {}, k.modal + (k.rp ? ' · registro de preços' : '')), tagEss(k.ess)),
       el('td', { class: 'num' }, brlCompacto(r.v), el('small', {}, 'acum. ' + pct(r.cum)), k.pago23 > 0 ? el('small', {}, `pago desde ${MANDATO} ${brlCompacto(k.pago23)}`) : el('small', {}, `nada pago desde ${MANDATO} nos empenhos do contrato`)),
       el('td', {}, dataBR(k.fimef), el('small', {}, k.fimef ? 'faltam ' + duracao(mesesAte(k.fimef)) : 'sem prazo'), el('small', {}, 'desde ' + dataBR(k.ini))),
@@ -1157,7 +1157,7 @@
         f.soAlerta && 'Só com alerta', f.q && 'Busca: ' + f.q].filter(Boolean).join(' | ')].filter(Boolean);
     return { titulo: 'Diagnóstico dos contratos principais do Estado', filtros, arquivo: `diagnostico-contratos-${dados.ref}`,
       colunas: [{ t: '#', w: 0.5 }, { t: 'Órgão', w: 2.2 }, { t: 'Fornecedor e objeto', w: 5.5 }, { t: 'Valor', w: 1.3, n: 1 }, { t: '% acum.', w: 0.9, n: 1 }, { t: 'Até quando', w: 1.2 }, { t: 'Alertas', w: 3 }],
-      linhas: lista.map((r) => [r.rank, r.k.orgNome, `${nomeProprio(r.k.forn)}: ${cortar(r.k.objeto, 180)}`, brlCompacto(r.v), pct(r.cum), dataBR(r.k.fimef), nomesAlertas(r.k, 3)]),
+      linhas: lista.map((r) => [r.rank, r.k.orgNome, `${nomeProprio(r.k.forn)}: ${r.k.objeto}`, brlCompacto(r.v), pct(r.cum), dataBR(r.k.fimef), nomesAlertas(r.k, 3)]),
       texto: lista.slice(0, 12).map((r) => `${r.rank}. ${nomeProprio(r.k.forn)} (${r.k.orgNome}) - ${brlCompacto(r.v)} - ${cortar(r.k.objeto, 70)}`).concat(lista.length > 12 ? [`... e mais ${lista.length - 12}. O PDF traz a lista completa.`] : []) };
   }
   function csvDiag(lista) {
