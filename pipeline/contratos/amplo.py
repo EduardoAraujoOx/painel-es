@@ -168,3 +168,27 @@ def rescisao_publicada(atos, celebracao_iso=""):
     """Data (ISO) da rescisão mais recente publicada no Diário depois da celebração do contrato, ou ''."""
     datas = [a[0] for a in atos if a[1] == "Rescisão" and a[0] >= (celebracao_iso or "")]
     return max(datas) if datas else ""
+
+
+# --- contato cadastral do fornecedor (Receita Federal) ------------------------------------------------------------------------------------------
+def telefone(ddd, numero):
+    """'(27) 3331-3100' a partir do DDD e do número da Receita; '' se não houver número utilizável."""
+    ddd, numero = re.sub(r"\D", "", ddd or ""), re.sub(r"\D", "", numero or "")
+    if len(numero) not in (8, 9) or len(ddd) not in (2, 3):
+        return ""
+    return f"({ddd}) {numero[:-4]}-{numero[-4:]}"
+
+
+def contato_cadastral(natureza, email, ddd1="", tel1="", ddd2="", tel2=""):
+    """E-mail e telefones do cadastro do CNPJ, ou None se a empresa é individual (empresário individual, inclusive MEI, e EIRELI), cujo contato
+    costuma ser pessoal, ou se o cadastro não traz nenhum dos dois."""
+    if "individual" in (natureza or "").lower():
+        return None
+    email = (email or "").strip().lower()
+    telefones = []
+    for t in (telefone(ddd1, tel1), telefone(ddd2, tel2)):
+        if t and t not in telefones:
+            telefones.append(t)
+    if "@" not in email:
+        email = ""
+    return {"email": email, "telefones": telefones} if email or telefones else None

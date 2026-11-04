@@ -141,5 +141,25 @@ class AtosDoDiario(unittest.TestCase):
         self.assertEqual(A.rescisao_publicada([], "2025-01-03"), "")
 
 
+class ContatoCadastral(unittest.TestCase):
+    def test_telefone_formatado(self):
+        self.assertEqual(A.telefone("27", "33313100"), "(27) 3331-3100")
+        self.assertEqual(A.telefone("11", "987654321"), "(11) 98765-4321")
+        self.assertEqual(A.telefone("", "33313100"), "")
+        self.assertEqual(A.telefone("27", "123"), "")
+
+    def test_email_e_telefones(self):
+        c = A.contato_cadastral("Sociedade Empresária Limitada", " Contato@Empresa.com.br ", "27", "33313100", "27", "33313100")
+        self.assertEqual(c, {"email": "contato@empresa.com.br", "telefones": ["(27) 3331-3100"]})
+
+    def test_empresario_individual_e_eireli_ficam_sem_contato(self):
+        self.assertIsNone(A.contato_cadastral("Empresário (Individual)", "eu@mail.com", "27", "33313100"))
+        self.assertIsNone(A.contato_cadastral("Empresa Individual de Responsabilidade Limitada (de Natureza Empresária)", "eu@mail.com"))
+
+    def test_sem_dado_utilizavel(self):
+        self.assertIsNone(A.contato_cadastral("Sociedade Anônima Fechada", "", "", ""))
+        self.assertEqual(A.contato_cadastral("Sociedade Anônima Fechada", "sem-arroba", "27", "33313100")["email"], "")
+
+
 if __name__ == "__main__":
     unittest.main()
