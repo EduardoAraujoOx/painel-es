@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-04",
- "gerado_em": "2026-11-04T21:17:14Z",
+ "gerado_em": "2026-11-04T22:17:18Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,15 +17,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 11,
-   "aceitos": 5,
+   "lidos": 12,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 28,
+   "lidos": 30,
    "aceitos": 20,
    "possiveis": 1
   },
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 5,
+   "lidos": 6,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 10,
+   "lidos": 12,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 67,
+   "lidos": 66,
    "aceitos": 3,
-   "possiveis": 5
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 9,
+   "lidos": 7,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 32,
+   "lidos": 31,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 62,
+   "lidos": 61,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 5,
+   "aceitos": 7,
    "possiveis": 7
   },
   {
@@ -178,8 +178,8 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
-   "possiveis": 0
+   "aceitos": 0,
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -194,7 +194,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -206,20 +206,76 @@
    "possiveis": 3
   }
  ],
- "novos_na_coleta": 5,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 310,
-  "sem_contexto_com_tema": 8,
+  "sem_contexto": 311,
+  "sem_contexto_com_tema": 7,
   "possivel": 21,
   "veiculo_excluido": 39,
   "excluir": 5,
   "exterior_sem_ancora": 19,
-  "outro_estado": 26,
+  "outro_estado": 23,
   "caixa_alta": 1,
-  "veiculo_outra_praca": 4,
+  "veiculo_outra_praca": 5,
   "sigla_sem_ancora": 6
  },
  "itens": [
+  {
+   "id": "b20e519cb664",
+   "titulo": "Tornado causa destruição e voos são suspensos no aeroporto de Chapecó",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/tempo/tornado-causa-destruicao-e-voos-sao-suspensos-no-aeroporto-de-chapeco/",
+   "data": "2026-11-04T22:16:18Z",
+   "coletado_em": "2026-11-04T22:17:18Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "b455d527f251",
+   "titulo": "Mulheres do ES e de SP relatam dívidas e ameaças após namorar o mesmo homem",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/cotidiano/mulheres-do-es-e-de-sp-relatam-dividas-e-ameacas-apos-namorar-o-mesmo-homem-1126",
+   "data": "2026-11-04T22:03:22Z",
+   "coletado_em": "2026-11-04T22:17:18Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "e5af298b0090",
+   "titulo": "Operações da Apex serão investigadas por auditoria internacional",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/operacoes-da-apex-serao-investigadas-por-auditoria-internacional/",
+   "data": "2026-11-04T21:44:34Z",
+   "coletado_em": "2026-11-04T22:17:18Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "21ac0a7bbf2b",
+   "titulo": "ICMS sobre combustíveis sobe em 2027: o que muda no ES",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/economia/icms-sobre-combustiveis-sobe-em-2027-o-que-muda-no-es-1126",
+   "data": "2026-11-04T21:40:00Z",
+   "coletado_em": "2026-11-04T22:17:18Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "609e0985af70",
    "titulo": "Apex contrata gigante global de auditoria para realizar pente-fino contábil",
