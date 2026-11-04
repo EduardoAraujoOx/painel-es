@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-04",
- "gerado_em": "2026-11-04T17:17:15Z",
+ "gerado_em": "2026-11-04T18:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,8 +25,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 29,
-   "aceitos": 21,
+   "lidos": 27,
+   "aceitos": 20,
    "possiveis": 2
   },
   {
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 14,
+   "lidos": 15,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 29,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 26,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -155,13 +155,13 @@
    "ok": true,
    "lidos": 29,
    "aceitos": 3,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 60,
+   "lidos": 61,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -170,8 +170,8 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
-   "possiveis": 7
+   "aceitos": 2,
+   "possiveis": 8
   },
   {
    "fonte": "Folha Vitória",
@@ -203,23 +203,63 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 3
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 305,
-  "sem_contexto_com_tema": 9,
-  "possivel": 23,
+  "sem_contexto": 307,
+  "sem_contexto_com_tema": 10,
+  "possivel": 25,
   "veiculo_excluido": 36,
-  "excluir": 5,
-  "exterior_sem_ancora": 17,
-  "outro_estado": 28,
+  "excluir": 4,
+  "exterior_sem_ancora": 20,
+  "outro_estado": 26,
   "caixa_alta": 1,
   "veiculo_outra_praca": 5,
-  "sigla_sem_ancora": 4
+  "sigla_sem_ancora": 5
  },
  "itens": [
+  {
+   "id": "1b122a805d0f",
+   "titulo": "Enem no ES: Transcol terá passagem gratuita para estudantes e ônibus extras",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/servicos/2026/11/enem-es-transcol-gratuito-onibus/",
+   "data": "2026-11-04T17:47:16Z",
+   "coletado_em": "2026-11-04T18:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "772b2da240f9",
+   "titulo": "Ataque a tiros deixa auxiliar de obras e comerciante feridos em Cariacica",
+   "veiculo": "G1 Espírito Santo",
+   "url": "https://g1.globo.com/es/espirito-santo/noticia/2026/11/04/ataque-a-tiros-deixa-auxiliar-de-obras-e-comerciante-feridos-em-cariacica.ghtml",
+   "data": "2026-11-04T17:40:36Z",
+   "coletado_em": "2026-11-04T18:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "2316f3ebeb9f",
+   "titulo": "Diego Souza é suspenso por um ano por uso de licença falsa de treinador",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/esportes/futebol/diego-souza-e-suspenso-por-um-ano-por-uso-de-licenca-falsa-de-treinador-1126",
+   "data": "2026-11-04T17:17:33Z",
+   "coletado_em": "2026-11-04T18:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "988cb502f32e",
    "titulo": "A dois meses para entrega de parque urbano, Vila Velha só fez 30% da obra",
@@ -501,7 +541,12 @@
    "url": "https://g1.globo.com/es/espirito-santo/agronegocios/noticia/2026/11/04/cidade-do-es-tem-327-galinhas-e-perus-para-cada-morador-media-do-estado-e-de-cinco-veja-todos-os-municipios.ghtml",
    "data": "2026-11-04T07:00:00Z",
    "coletado_em": "2026-11-04T16:17:13Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "G1",
+     "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNQ00wUmtXRUt4WXpobnR0QzNObDJHYXZtcktoNm5XS1NDMVA5WXdFcnFsbkdyYm8wZGNSc0N0OVhDLTVFMUJTZTg1NU5wRGJHYlpYVTh5VUI0c1J5b3V3dW8wTmlmVzhpNU1rVElPSG00eTQ5c3pVVy0zMWthSzUxUTBidUJ1YzBhTjktMUprU21lX1FjOWhxZExLQlkwZ09YaHJFdkpMVmR1RlhxN3d1RWlJRWZ4a05YTk0yS2ZUd3NaOW5EYlhGUUU0YjhzcUt5QnlFbm1FWGplMW9NS1ZXNHRpVEp2aEJONEFpcWFpUURLNHJXWkhQSFcwVlhqc1ZHMkswQnU0MXJXeXd5eWRKNEtn0gGgAkFVX3lxTFBQaTNWV1QxX01pSS1UV1FxeW9SNmtlRVI3TlZGTjlramxxaVVDWUxLR0luY2ZpU3ZzQ2U4SFlCbHZjX0Vza3BiMVpRZDV4endhYTRaNjZ5Ym9wcXdRQUs5ZkRuM01QcEVtdm5hS3RNU2FtWFhVSWdIdEk2UW9lcGZzelFsT210NW54NG9jdTktN1dNdjVEeHRCU1J5ZVpMUlBtX1ZfdlZRTGRjSmR3Q0RLbnVGUWVTcVRSSVZVR2dVencyVjhYWkY0eWQyYmxqRFdtN2JpeVBJdlA1YXppUG5UWHViZl9fNGprd0FnMXpDUzVXdWhTVlBOZDh5bGJOUVpsQjhaNWh1bWtpU1JmT05yak8zQ0hpQWU2b1ZlR05qaQ?oc=5"
+    }
+   ],
    "possivel": true,
    "triagem": 3,
    "temas": []
