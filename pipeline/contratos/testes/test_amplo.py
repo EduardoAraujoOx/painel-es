@@ -104,5 +104,42 @@ class Gestao(unittest.TestCase):
         self.assertEqual(A.resumir_gestao([]), [])
 
 
+class AtosDoDiario(unittest.TestCase):
+    ATOS = [{"n": "2024.000050.10109.01", "c": "", "t": "Rescisão", "p": "1880890", "pg": 2, "x": "Termo de rescisão unilateral", "np": ["2024-P9NG2"], "nc": [], "e": 11522, "d": "2026-10-05"},
+            {"n": "", "c": "02593165000140", "t": "Rescisão", "p": "1880890", "pg": 2, "x": "Termo de rescisão unilateral do contrato, com texto mais longo", "np": ["2024-P9NG2"], "nc": [], "e": 11522, "d": "2026-10-05"},
+            {"n": "", "c": "11111111000111", "t": "Aditivo ou prorrogação", "p": "1700000", "pg": 9, "x": "Termo aditivo ao contrato 23/2022", "np": [], "nc": ["23/2022"], "e": 9000, "d": "2025-03-01"},
+            {"n": "", "c": "11111111000111", "t": "Aditivo ou prorrogação", "p": "1700001", "pg": 9, "x": "Termo aditivo ao contrato 7/2022", "np": [], "nc": ["7/2022"], "e": 9001, "d": "2025-03-02"}]
+
+    def test_numero_estruturado_e_antigo(self):
+        self.assertEqual(A.numero_estruturado("Contrato 2024.000050.10109.01/2024"), "2024.000050.10109.01")
+        self.assertIsNone(A.numero_estruturado("Contrato 023/2022"))
+        self.assertEqual(A.numero_antigo("Contrato 023/2022"), "23/2022")
+
+    def test_liga_pelo_numero_sem_repetir_o_mesmo_ato(self):
+        por_n, por_c = A.indexar_atos(self.ATOS)
+        r = A.atos_do_contrato("Contrato 2024.000050.10109.01/2024", "02593165000140", "2024-P9NG2", por_n, por_c)
+        self.assertEqual(len(r), 1)
+        self.assertEqual(r[0][:4], ["2026-10-05", "Rescisão", "1880890", 2])
+
+    def test_liga_pelo_cnpj_com_numeracao_antiga_e_nao_confunde_outro_numero(self):
+        por_n, por_c = A.indexar_atos(self.ATOS)
+        r = A.atos_do_contrato("Contrato 023/2022", "11111111000111", "", por_n, por_c)
+        self.assertEqual([x[2] for x in r], ["1700000"])
+        self.assertEqual(A.atos_do_contrato("Contrato 99/2022", "11111111000111", "", por_n, por_c), [])
+
+    def test_numero_estruturado_nao_se_liga_por_cnpj_a_contrato_de_outro_orgao(self):
+        outro = {"n": "2026.000100.44922.01", "c": "", "t": "Rescisão", "p": "1868084", "pg": 21, "x": "Rescisão unilateral", "np": ["2024-M38D0"], "nc": [], "e": 1, "d": "2026-09-15"}
+        cnpj = dict(outro, n="", c="09077954000177")
+        por_n, por_c = A.indexar_atos([outro, cnpj])
+        self.assertEqual(A.atos_do_contrato("Contrato 2026.001001.44101.01/2026", "09077954000177", "2024-M38D0", por_n, por_c), [])
+        self.assertEqual(len(A.atos_do_contrato("Contrato 2026.000100.44922.01/2026", "09077954000177", "2024-M38D0", por_n, por_c)), 1)
+
+    def test_rescisao_publicada_depois_da_celebracao(self):
+        atos = [["2026-10-05", "Rescisão", "1", 1, 1, ""], ["2024-01-01", "Rescisão", "2", 1, 1, ""]]
+        self.assertEqual(A.rescisao_publicada(atos, "2025-01-03"), "2026-10-05")
+        self.assertEqual(A.rescisao_publicada(atos, "2027-01-01"), "")
+        self.assertEqual(A.rescisao_publicada([], "2025-01-03"), "")
+
+
 if __name__ == "__main__":
     unittest.main()

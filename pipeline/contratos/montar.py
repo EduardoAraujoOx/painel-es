@@ -189,6 +189,17 @@ def complementar_execucao(cnpjs_siga):
     return len(soma), sum(v[2] for v in soma.values())
 
 
+def carregar_diario():
+    """Atos do Diário Oficial (diario.py): índices por número de contrato e por CNPJ, ou (None, None) se o arquivo não foi gerado."""
+    try:
+        d = json.load(open(os.path.join(CACHE, "dio_atos.json")))
+    except OSError:
+        return None, None, None
+    por_n, por_c = AM.indexar_atos(d["atos"])
+    datas = sorted(e["data"] for e in d["edicoes"].values())
+    return por_n, por_c, {"geradoEm": d.get("geradoEm"), "edicoes": len(datas), "desde": datas[0] if datas else None, "ate": datas[-1] if datas else None, "atos": len(d["atos"])}
+
+
 def carregar_pncp():
     """Contratos do PNCP dos órgãos estaduais (pncp.py), ou None se o arquivo não foi gerado."""
     try:
@@ -579,6 +590,16 @@ def main():
     for c in recs:
         c["gestao"] = AM.resumir_gestao(comissoes.get(c["id_origem"], [])) if c["id_origem"] else []
     print(f"comissões: {sum(1 for c in recs if c['gestao'] and c['inst'] == 'contrato')} de {sum(1 for c in recs if c['inst'] == 'contrato')} contratos com gestor ou fiscal publicado", flush=True)
+    por_n, por_c, meta_dio = carregar_diario()
+    n_dio = n_resc = 0
+    for c in recs:
+        c["dio"] = AM.atos_do_contrato(c["doc"], c["cnpj"], c["proc"], por_n, por_c) if por_n is not None and c["inst"] == "contrato" else []
+        if c["dio"]:
+            n_dio += 1
+        if c["dio"] and not R.finalizado(c["sit"]) and AM.rescisao_publicada(c["dio"], iso(c["cel"])):
+            c["alertas"].append(("rescisao_diario", "m"))
+            n_resc += 1
+    print(f"Diário Oficial: {n_dio} contratos com atos publicados; {n_resc} com rescisão publicada e situação ainda aberta no SIGA" if por_n is not None else "Diário Oficial: arquivo não gerado (diario.py)", flush=True)
     # unidade gestora do SIGEFES -> órgão do SIGA: pela maioria dos empenhos vinculados a contratos; na falta, pelo nome
     votos = collections.defaultdict(collections.Counter)
     for c in recs:
@@ -784,7 +805,7 @@ def main():
         return melhor
 
     pontos_forn = {k: sum(nivel_peso[n] for n in unicos(v).values()) for k, v in alertas_forn.items()}
-    CAMPOS = ["doc", "proc", "forn", "cnpj", "objeto", "cat", "modal", "vini", "vfin", "cel", "ini", "fim", "fimef", "sit", "anual", "saldo", "empAnt", "empAtu", "npror", "rp", "ess", "restante", "pago", "pagoAnt", "pagoAtu", "pago23", "classeA", "alertas", "pncp", "pncpLink", "gestao", "edocs"]
+    CAMPOS = ["doc", "proc", "forn", "cnpj", "objeto", "cat", "modal", "vini", "vfin", "cel", "ini", "fim", "fimef", "sit", "anual", "saldo", "empAnt", "empAtu", "npror", "rp", "ess", "restante", "pago", "pagoAnt", "pagoAtu", "pago23", "classeA", "alertas", "pncp", "pncpLink", "gestao", "edocs", "dio"]
     pncp_dados = carregar_pncp()
     so_pncp_org = cruzar_pncp(recs, pncp_dados, org_nome) if pncp_dados else {}
     if not pncp_dados:
@@ -799,7 +820,7 @@ def main():
                       round(c["emp"].get(ANOS_GASTO[0], 0.0), 2), round(c["emp"].get(ANOS_GASTO[1], 0.0), 2), c["n_pror"], int(c["reg_preco"]), c["ess"], round(c["restante"], 2),
                       round(c["pago"], 2), round(c["pago_ano"].get(int(ANOS_GASTO[0]), 0.0), 2), round(c["pago_ano"].get(int(ANOS_GASTO[1]), 0.0), 2), round(pago_mandato(c), 2),
                       int((c["org"], c["proc"], c["doc"]) in classe_a), [f"{a}:{n}" for a, n in c["alertas"]],
-                      None if c.get("pncp_valor") is None else round(c["pncp_valor"], 2), c.get("pncp_link", ""), c["gestao"][:4], AM.protocolo_edocs(c["proc"]) or ""] for c in alvo]
+                      None if c.get("pncp_valor") is None else round(c["pncp_valor"], 2), c.get("pncp_link", ""), c["gestao"][:4], AM.protocolo_edocs(c["proc"]) or "", c["dio"]] for c in alvo]
         for c in alvo:
             pc = sum(nivel_peso[n] for _, n in c["alertas"])
             pf = pontos_forn.get(c["cnpj"], 0)
@@ -1001,7 +1022,7 @@ def main():
     json.dump({"ref": iso(REF), "anosGasto": list(ANOS_GASTO), "receita": receita["publicacao"],
                "alertas": {k: {"nivel": v[0], "titulo": v[1], "descricao": v[2], "esclarecer": R.ESCLARECER.get(k, "")} for k, v in R.ALERTAS.items()},
                "limiteDispensa": R.LIMITE_DISPENSA, "fontesExternas": fontes_ext, "execucaoAnos": EXEC["anos"], "essencialidade": R.ROTULO_ESSENCIALIDADE,
-               "baseAmpla": {"pncp": {"geradoEm": pncp_dados["geradoEm"], "inicio": pncp_dados["inicio"], "fim": pncp_dados["fim"], "contratos": sum(len(v) for v in pncp_dados["contratos"].values())} if pncp_dados else None,
+               "baseAmpla": {"diario": meta_dio, "pncp": {"geradoEm": pncp_dados["geradoEm"], "inicio": pncp_dados["inicio"], "fim": pncp_dados["fim"], "contratos": sum(len(v) for v in pncp_dados["contratos"].values())} if pncp_dados else None,
                              "despesasCompletas": sorted(os.path.basename(f)[10:14] for f in glob.glob(os.path.join(CACHE, "despesas_20??.json"))),
                              "comissoes": sum(1 for c in recs if c["gestao"] and c["inst"] == "contrato"), "contratosSiga": sum(1 for c in recs if c["inst"] == "contrato")},
                "fonte": {"contratos": "Portal da Transparência do ES — Contratos, Alterações Contratuais e Empenhos (SIGA)",
