@@ -104,7 +104,40 @@ def refinar_ato(a):
             a["p"] = m.group(1)
     if a["t"] == "Citação":
         a["t"] = classificar(a["x"], aceita_rescisao=False)
+    a["f"] = campos_do_ato(a)
     return a
+
+
+ORDINAIS = {"PRIMEIRO": 1, "SEGUNDO": 2, "TERCEIRO": 3, "QUARTO": 4, "QUINTO": 5, "SEXTO": 6, "SÉTIMO": 7, "SETIMO": 7, "OITAVO": 8, "NONO": 9, "DÉCIMO": 10, "DECIMO": 10}
+TERMO = re.compile(r"(?:(\d{1,2})\s*[ºo°]|(PRIMEIRO|SEGUNDO|TERCEIRO|QUARTO|QUINTO|SEXTO|S[ÉE]TIMO|OITAVO|NONO|D[ÉE]CIMO))\s+TERMO\s+ADITIVO", re.I)
+OBJETO = re.compile(r"Objeto:\s*(.{15,320}?)(?=\s+(?:Valor|Fontes?|Dota[cç][aã]o|Protocolo|Vit[óo]ria|Cariacica|Vila Velha|Serra)\b|\s+[A-ZÁÉÍÓÚÂÊÔÃÕÇ]{3,}(?:\s+[A-ZÁÉÍÓÚÂÊÔÃÕÇ]{2,}){1,}\s|$)", re.S)
+VALOR = re.compile(r"Valor\s+(Global|Total(?:\s+anual|\s+do\s+Contrato)?|do\s+Contrato)\s*:?\s*R\$\s*([\d.]+,\d{2})", re.I)
+
+
+def campos_do_ato(a):
+    """Campos que os extratos de aditivo trazem no texto, lidos depois da citação do contrato: número do termo aditivo, objeto do ato e valor citado.
+    Devolve só o que encontrou; o termo é procurado logo antes da citação (o título vem antes do número do contrato)."""
+    x = a["x"]
+    c = a.get("c") or ""
+    chave = a.get("n") or (f"{c[:2]}.{c[2:5]}.{c[5:8]}/{c[8:12]}-{c[12:]}" if len(c) == 14 else "")
+    i = x.find(chave) if chave else -1
+    if i < 0:
+        return {}
+    out = {}
+    antes = x[max(0, i - 420):i + 40]
+    achados = list(TERMO.finditer(antes))
+    if achados:
+        m = achados[-1]
+        out["termo"] = int(m.group(1)) if m.group(1) else ORDINAIS[m.group(2).upper().replace("É", "É")]
+    depois = x[i:]
+    m = OBJETO.search(depois)
+    if m:
+        out["objeto"] = re.sub(r"\s+", " ", m.group(1)).strip(" .;")
+    m = VALOR.search(depois)
+    if m:
+        out["valor"] = float(m.group(2).replace(".", "").replace(",", "."))
+        out["rotulo"] = re.sub(r"\s+", " ", m.group(1)).lower()      # "global", "total", "total anual", "do contrato": o valor do ato nem sempre é o do prazo todo
+    return out
 
 
 def pagina_em(texto, i):
