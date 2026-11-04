@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-04",
- "gerado_em": "2026-11-04T16:17:13Z",
+ "gerado_em": "2026-11-04T17:15:51Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 5,
    "possiveis": 0
   },
@@ -26,15 +26,15 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 29,
-   "aceitos": 19,
+   "aceitos": 21,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 9,
+   "lidos": 9,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 57,
+   "lidos": 62,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 14,
+   "lidos": 13,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 28,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 24,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -155,7 +155,7 @@
    "ok": true,
    "lidos": 29,
    "aceitos": 3,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 6
   },
   {
@@ -206,20 +206,44 @@
    "possiveis": 2
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 302,
+  "sem_contexto": 307,
   "sem_contexto_com_tema": 8,
   "possivel": 22,
-  "veiculo_excluido": 34,
+  "veiculo_excluido": 36,
   "excluir": 5,
-  "exterior_sem_ancora": 19,
-  "outro_estado": 29,
+  "exterior_sem_ancora": 17,
+  "outro_estado": 28,
   "caixa_alta": 1,
   "veiculo_outra_praca": 5,
-  "sigla_sem_ancora": 4
+  "sigla_sem_ancora": 5
  },
  "itens": [
+  {
+   "id": "4f9d9ee8a6ca",
+   "titulo": "Sedu publica 6ª edição de e-book com mais de 170 práticas pedagógicas",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQbXdPOEdHNnZlNXpCSW14T202VFh5LTAySzlBY2txdmFFOE1wQWU5UnBnVmNXMUdBVVNtU1U0d1NRNVRzWmlRLTFBcE10R3pGaWFFWmVDQ2JBdXU2SW5Qa3ozZmpXVk5RczhubU1SVHY2UWlRbjZWMGV3WVV6QmhlQlZaMUhlNjN4Xy1OdnAzdTBFWlNKamc?oc=5",
+   "data": "2026-11-04T17:04:00Z",
+   "coletado_em": "2026-11-04T17:15:51Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "f5cb485ff57b",
+   "titulo": "Espírito Santo encerra participação nos Jogos da Juventude 2026 com recorde de 33 medalhas",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSnZqYTRrbU1kbURPTHlRWTdNekduc0xqb0V3NkFGYTlYRi01cXVZMjNrcUttaGRzdHBIMnNOSEd2dHo4bHRUMmRrOWR2OWNYYWZlWVQ2NV8yWG9jSElrM1Y5SEVvTjJCcVVkcFFMNlRIUkhtVUIzRlZhUVBpd1hRbTQ2R2ZZX1FtYThfV0NpV05vTjNGZ0ZxV0t3dlpfbzBiR1l2cVJyN3hIMERXenFIQUNR?oc=5",
+   "data": "2026-11-04T16:59:00Z",
+   "coletado_em": "2026-11-04T17:15:51Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
   {
    "id": "ccebc509e689",
    "titulo": "MPF recorre ao STJ contra retorno de Serrinha ao mandato de vereador",
