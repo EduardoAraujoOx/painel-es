@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-04",
- "gerado_em": "2026-11-04T22:40:12Z",
+ "gerado_em": "2026-11-04T23:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -33,23 +33,23 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 9,
+   "lidos": 9,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 6,
+   "lidos": 5,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 15,
+   "lidos": 16,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 64,
+   "lidos": 66,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 68,
+   "lidos": 67,
    "aceitos": 3,
    "possiveis": 4
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -145,9 +145,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 25,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -171,7 +171,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 7,
-   "possiveis": 7
+   "possiveis": 6
   },
   {
    "fonte": "Folha Vitória",
@@ -194,7 +194,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 3,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
@@ -206,20 +206,35 @@
    "possiveis": 3
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 314,
+  "sem_contexto": 315,
   "sem_contexto_com_tema": 8,
-  "possivel": 21,
-  "veiculo_excluido": 39,
+  "possivel": 20,
+  "veiculo_excluido": 43,
   "excluir": 5,
   "exterior_sem_ancora": 19,
-  "outro_estado": 23,
+  "outro_estado": 22,
   "caixa_alta": 1,
   "veiculo_outra_praca": 3,
-  "sigla_sem_ancora": 7
+  "sigla_sem_ancora": 8
  },
  "itens": [
+  {
+   "id": "164656117620",
+   "titulo": "Projetos de Ricardo Ferraço nas mãos da Assembleia Legislativa",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/projeto-ricardo-ferraco-ales/",
+   "data": "2026-11-04T23:07:24Z",
+   "coletado_em": "2026-11-04T23:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "governador",
+    "controle"
+   ]
+  },
   {
    "id": "286f7ea265b2",
    "titulo": "Enem: gratuidade no Transcol exclui candidatos sem cartão escolar",
@@ -545,6 +560,18 @@
    ]
   },
   {
+   "id": "6465115d858e",
+   "titulo": "Finanças verdes transformam desafios ambientais em oportunidades de desenvolvimento",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNc3lSQVJub0FfZVo1dHhZWWVFVXh6ZXFIejVEd3ZNbHo1cHluTkxESnF6VHIxbTUzTk1QRjJaMmtvUGhraW5oOUtscGFuNUw1NnJJT1RrZHVEZ2tqVy1JeGk1am5lUHVFRTNEZEJaZFpFM1ZpWG8zLW9Jc2xIWno5YjF0OFRLNVJTOHRIdm5XRklVWWdaTEktV0JSdDI5dDhoZ18tQkg0cUY?oc=5",
+   "data": "2026-11-04T17:09:00Z",
+   "coletado_em": "2026-11-04T23:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
    "id": "4f9d9ee8a6ca",
    "titulo": "Sedu publica 6ª edição de e-book com mais de 170 práticas pedagógicas",
    "veiculo": "Governo ES",
@@ -579,6 +606,32 @@
    "possivel": false,
    "triagem": 3,
    "temas": []
+  },
+  {
+   "id": "28576f47faad",
+   "titulo": "SECULT Convida Para Santa Missa Ação De Graças Pela Imagem De Nazaré",
+   "veiculo": "Portal & TV Gurupi",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOcnpGQTJhMXFEZjF2bElKVUJCTUwtTC1OeU9sRHhCQ3d2QzhnLW9YTnFlZ0MtM3dDeUlaYm5mSlFEbzI4WkFGSS1yaE0tUi1GdDBTY3pEd3hJbjBpVXFJZGhodkJObW53YjRZRWwyVzRqWHluZEMxbTZacDgzRlBHZVAzenpLXy1icEVYMEZSMTZrYmxYcURyYkFNSXhvdw?oc=5",
+   "data": "2026-11-04T16:35:58Z",
+   "coletado_em": "2026-11-04T23:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "3c7de9cff0a2",
+   "titulo": "Detran vai bloquear sua CNH em 2026? Entenda o impacto do CPF irregular nos serviços",
+   "veiculo": "Perfil Brasil",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMEp5VFJVbE1lUWdjRVEzZkFqUzF0aGFwd1dJNXlkZDdYRU85S1ZLOG9VZnp4WV96aVFmbklqdTZpaUJESW9oMkZTdXRiYi1UWmh4V0pjTnFPdE8xb2VtcUo3dWVDdldid2QzVms1c1pZaHNwZ0JHaENJX1hMTnl2bWR3dXQ4SjBFZGY1dFNGWW83VDNENzFPVURhTWRiVEowQTUyX3cybExVbW5vakZCUUhWZ1U3ZmluZldPRlZENA?oc=5",
+   "data": "2026-11-04T15:57:24Z",
+   "coletado_em": "2026-11-04T23:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "restricao"
+   ]
   },
   {
    "id": "ccebc509e689",
