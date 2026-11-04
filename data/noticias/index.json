@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-04",
- "gerado_em": "2026-11-04T13:17:13Z",
+ "gerado_em": "2026-11-04T14:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 5,
+   "lidos": 10,
+   "aceitos": 6,
    "possiveis": 1
   },
   {
@@ -57,7 +57,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 63,
+   "lidos": 62,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 69,
+   "lidos": 75,
    "aceitos": 3,
    "possiveis": 5
   },
@@ -129,15 +129,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 15,
+   "lidos": 14,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 43,
+   "lidos": 42,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,17 +145,17 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 25,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 56,
+   "lidos": 57,
    "aceitos": 3,
-   "possiveis": 8
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 8,
+   "aceitos": 7,
    "possiveis": 6
   },
   {
@@ -178,7 +178,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -195,7 +195,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -206,21 +206,48 @@
    "possiveis": 2
   }
  ],
- "novos_na_coleta": 4,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto_com_tema": 12,
-  "sem_contexto": 320,
+  "sem_contexto_com_tema": 13,
+  "sem_contexto": 322,
   "possivel": 25,
   "caixa_alta": 3,
-  "veiculo_excluido": 46,
+  "veiculo_excluido": 41,
   "exterior_sem_ancora": 18,
   "excluir": 5,
-  "outro_estado": 36,
-  "veiculo_outra_praca": 11,
-  "sigla_sem_ancora": 9,
-  "generico_sem_ancora": 1
+  "outro_estado": 41,
+  "veiculo_outra_praca": 13,
+  "sigla_sem_ancora": 8
  },
  "itens": [
+  {
+   "id": "77950634e39b",
+   "titulo": "Imposto sobre diesel subirá R$ 0,13 e R$ 0,07 sobre a gasolina no ES",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/imposto-sobre-diesel-subira-r-013-e-r-007-sobre-a-gasolina-no-es/",
+   "data": "2026-11-04T14:06:15Z",
+   "coletado_em": "2026-11-04T14:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "7316fb0bbfe6",
+   "titulo": "Reforma tributária ameaça competitividade do comércio exterior do ES, diz Sindiex",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/reforma-tributaria-ameaca-competitividade-do-comercio-exterior-do-es-diz-sindiex/",
+   "data": "2026-11-04T14:03:23Z",
+   "coletado_em": "2026-11-04T14:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "95e996481cc9",
    "titulo": "Quem vai comandar a Assembleia do ES? Há dois possíveis candidatos, mas nada definido",
@@ -360,7 +387,12 @@
    "url": "https://g1.globo.com/es/espirito-santo/agronegocios/noticia/2026/11/04/cidade-do-es-tem-327-galinhas-e-perus-para-cada-morador-media-do-estado-e-de-cinco-veja-todos-os-municipios.ghtml",
    "data": "2026-11-04T07:00:00Z",
    "coletado_em": "2026-11-04T09:17:14Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "G1",
+     "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNQ00wUmtXRUt4WXpobnR0QzNObDJHYXZtcktoNm5XS1NDMVA5WXdFcnFsbkdyYm8wZGNSc0N0OVhDLTVFMUJTZTg1NU5wRGJHYlpYVTh5VUI0c1J5b3V3dW8wTmlmVzhpNU1rVElPSG00eTQ5c3pVVy0zMWthSzUxUTBidUJ1YzBhTjktMUprU21lX1FjOWhxZExLQlkwZ09YaHJFdkpMVmR1RlhxN3d1RWlJRWZ4a05YTk0yS2ZUd3NaOW5EYlhGUUU0YjhzcUt5QnlFbm1FWGplMW9NS1ZXNHRpVEp2aEJONEFpcWFpUURLNHJXWkhQSFcwVlhqc1ZHMkswQnU0MXJXeXd5eWRKNEtn0gGgAkFVX3lxTFBQaTNWV1QxX01pSS1UV1FxeW9SNmtlRVI3TlZGTjlramxxaVVDWUxLR0luY2ZpU3ZzQ2U4SFlCbHZjX0Vza3BiMVpRZDV4endhYTRaNjZ5Ym9wcXdRQUs5ZkRuM01QcEVtdm5hS3RNU2FtWFhVSWdIdEk2UW9lcGZzelFsT210NW54NG9jdTktN1dNdjVEeHRCU1J5ZVpMUlBtX1ZfdlZRTGRjSmR3Q0RLbnVGUWVTcVRSSVZVR2dVencyVjhYWkY0eWQyYmxqRFdtN2JpeVBJdlA1YXppUG5UWHViZl9fNGprd0FnMXpDUzVXdWhTVlBOZDh5bGJOUVpsQjhaNWh1bWtpU1JmT05yak8zQ0hpQWU2b1ZlR05qaQ?oc=5"
+    }
+   ],
    "possivel": true,
    "triagem": 3,
    "temas": []
