@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-04",
- "gerado_em": "2026-11-04T20:17:12Z",
+ "gerado_em": "2026-11-04T21:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 10,
+   "lidos": 11,
    "aceitos": 5,
    "possiveis": 0
   },
@@ -26,23 +26,23 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 28,
-   "aceitos": 21,
+   "aceitos": 20,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 9,
+   "lidos": 9,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 6,
+   "lidos": 5,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
@@ -65,8 +65,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 4,
+   "lidos": 10,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 10,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 63,
+   "lidos": 64,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 66,
+   "lidos": 67,
    "aceitos": 3,
    "possiveis": 5
   },
@@ -129,15 +129,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 11,
+   "lidos": 7,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 32,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,9 +145,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 25,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -155,13 +155,13 @@
    "ok": true,
    "lidos": 29,
    "aceitos": 3,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 60,
+   "lidos": 62,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 5,
    "possiveis": 7
   },
   {
@@ -178,7 +178,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -186,7 +186,7 @@
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -206,20 +206,112 @@
    "possiveis": 3
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 5,
  "descartes_na_coleta": {
-  "sem_contexto": 307,
-  "sem_contexto_com_tema": 9,
-  "possivel": 22,
-  "exterior_sem_ancora": 21,
-  "veiculo_excluido": 37,
+  "sem_contexto": 310,
+  "sem_contexto_com_tema": 8,
+  "possivel": 21,
+  "veiculo_excluido": 39,
   "excluir": 5,
+  "exterior_sem_ancora": 19,
   "outro_estado": 26,
   "caixa_alta": 1,
-  "veiculo_outra_praca": 5,
+  "veiculo_outra_praca": 4,
   "sigla_sem_ancora": 6
  },
  "itens": [
+  {
+   "id": "609e0985af70",
+   "titulo": "Apex contrata gigante global de auditoria para realizar pente-fino contábil",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/economia/apex-contrata-gigante-global-de-auditoria-para-realizar-pente-fino-contabil-1126",
+   "data": "2026-11-04T21:11:29Z",
+   "coletado_em": "2026-11-04T21:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "4c3a34697bb6",
+   "titulo": "TCU mantém multas de R$ 100 mil por irregularidades em obra no Porto de Vitória",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/economia/tcu-mantem-multas-de-r-100-mil-por-irregularidades-em-obra-no-porto-de-vitoria-1126",
+   "data": "2026-11-04T20:57:45Z",
+   "coletado_em": "2026-11-04T21:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "6262e36425c1",
+   "titulo": "Rua é interditada para obras de reurbanização no Centro de Vitória",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/transito/rua-e-interditada-para-obras-de-reurbanizacao-no-centro-de-vitoria/",
+   "data": "2026-11-04T20:37:49Z",
+   "coletado_em": "2026-11-04T21:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "428dcf0f0010",
+   "titulo": "Anuário IEL 2026: Banestes lidera em ativos no Espírito Santo e consolida 8ª posição entre as maiores empresas do Estado",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOV2RRSGt2QUFCUzBYZ2lSaGdWZTQ2UmdXVkpqTERBNkNVZjRkQi1HdnFIdm1YbXhBdlZ6Z2ZYV29qekxqSlh6anZqNW9GMjdicDJpaS1lVXpEWklaYVUwM1hJOTVCY2g0T0FXeG40THV5Z0daMFlWelRtRzNubDQxWlFseEhNcE5XU1ZBRXdRd2xwcXR3UDEtaWhCRnU2cV9haXhXUVRnUzMyVlVkN2hiOWJkelp6bHJrTFZoNnlhNm9WblRaZ0NlWklCdXdITHpXTm9pWVpleEI?oc=5",
+   "data": "2026-11-04T20:37:00Z",
+   "coletado_em": "2026-11-04T21:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "63f51536e824",
+   "titulo": "Em Paris, baianos fazem prévia do Salon du Chocolat em Salvador | SECOM - Secretaria de Comunicação Social",
+   "veiculo": "ba.gov.br",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOeVB6eFBKWG9iYkNPRVVPV0dtVDFkNEd5STBGVnBaQVRkeU4wWTBqRWc0a1BuVWV0ajhzM0ZZZExzUlo5Y2JEdjRNVnR1RlN1aG83Z3RtbGdEODVGOUl0aGpMcGJyUGw1dlIxOXdZOFAzekdxV05TbU5UM3hyTDduZTltdFltRi1VQ2lDNURFYUJMcmREYXY4eUtkUmZNZEFmaXYxNFBhblZWRHNVTFdHNXFNT0J0TmM1QmhjSw?oc=5",
+   "data": "2026-11-04T20:22:45Z",
+   "coletado_em": "2026-11-04T21:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "c6079766e7e0",
+   "titulo": "TVE transmite aulão especial para o Enem",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE53MzFFWHdJT0dJWFA2XzBUOWhySURSQnJxejZHR3daR2QyRm1nU2xlUWRPdEtteGdaUUU0OTZBRDhTOHdYc2ktRjRpTHVaakhncUR6dUMxMDVpeTBRQnpxLUVMc3Roc3I1clA3U21IVQ?oc=5",
+   "data": "2026-11-04T20:22:00Z",
+   "coletado_em": "2026-11-04T21:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "9e722aa68d9b",
+   "titulo": "Transição de carreira em TI: como usar a experiência para conquistar novas oportunidades",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/economia/transicao-de-carreira-em-ti-como-usar-a-experiencia-para-conquistar-novas-oportunidades-1126",
+   "data": "2026-11-04T20:13:31Z",
+   "coletado_em": "2026-11-04T21:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "transicao"
+   ]
+  },
   {
    "id": "afe5ce27d1c1",
    "titulo": "Banestes lidera em ativos no ES e consolida 8ª posição entre as maiores empresas do Estado",
@@ -363,6 +455,20 @@
    "url": "https://www.agazeta.com.br/es/cotidiano/a-dois-meses-para-entrega-de-parque-urbano-vila-velha-so-fez-30-da-obra-1126",
    "data": "2026-11-04T17:09:29Z",
    "coletado_em": "2026-11-04T17:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "8915931dfa18",
+   "titulo": "Obra em parque no Centro de Vila Velha deve ficar pronta em janeiro de 2027",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/cotidiano/obra-em-parque-no-centro-de-vila-velha-deve-ficar-pronta-em-janeiro-de-1126",
+   "data": "2026-11-04T17:09:29Z",
+   "coletado_em": "2026-11-04T21:17:14Z",
    "outras": [],
    "possivel": true,
    "triagem": 3,
