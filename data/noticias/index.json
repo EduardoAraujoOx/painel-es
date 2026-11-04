@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-04",
- "gerado_em": "2026-11-04T18:17:13Z",
+ "gerado_em": "2026-11-04T19:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,8 +26,8 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 27,
-   "aceitos": 20,
-   "possiveis": 2
+   "aceitos": 21,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 15,
+   "lidos": 14,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 62,
+   "lidos": 61,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -145,9 +145,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 28,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -155,13 +155,13 @@
    "ok": true,
    "lidos": 29,
    "aceitos": 3,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 61,
+   "lidos": 60,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -194,7 +194,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -206,20 +206,60 @@
    "possiveis": 3
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
   "sem_contexto": 307,
-  "sem_contexto_com_tema": 10,
-  "possivel": 25,
+  "sem_contexto_com_tema": 9,
+  "possivel": 23,
+  "exterior_sem_ancora": 21,
   "veiculo_excluido": 36,
   "excluir": 4,
-  "exterior_sem_ancora": 20,
-  "outro_estado": 26,
+  "outro_estado": 27,
   "caixa_alta": 1,
   "veiculo_outra_praca": 5,
   "sigla_sem_ancora": 5
  },
  "itens": [
+  {
+   "id": "89625e92c8b0",
+   "titulo": "Câmara da Serra reintegra vereador afastado e exonera 15 servidores de suplente",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/politica/camara-da-serra-reintegra-vereador-afastado-e-exonera-15-servidores-de-suplente-1126",
+   "data": "2026-11-04T19:01:10Z",
+   "coletado_em": "2026-11-04T19:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "0cb23ce0ba36",
+   "titulo": "Choque elétrico em obra mata trabalhador e deixa outro ferido no Sul do ES",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/espirito-santo/2026/11/choque-obra-mata-trabalhador/",
+   "data": "2026-11-04T18:41:20Z",
+   "coletado_em": "2026-11-04T19:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "e4f627eab6a5",
+   "titulo": "Secult Camaçari abre credenciamento para pareceristas dos editais da PNAB 2026",
+   "veiculo": "Jornal Camaçari",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRHNxMWxBTnFWQTFab0xWTFBIMGpkTE5OQmZWNGtibDNBMjZ1VlN0RUVwTm5xakRRR1g0UzBVZWJtSXBPUVJNSmdTMENQOWg2dHR4LVpwS2Vic2NZTXQ3NkxQMmUwYm5mclBVbVllazJEN29MN3RmVUtFRXhSaUZvSURQQzAtT3ZxbVN1dTJ6YmZfbVZpY0hfNjJDM1VoMFJsbzdQaGdYQ0NLYWdFX1E?oc=5",
+   "data": "2026-11-04T18:39:34Z",
+   "coletado_em": "2026-11-04T19:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
   {
    "id": "1b122a805d0f",
    "titulo": "Enem no ES: Transcol terá passagem gratuita para estudantes e ônibus extras",
@@ -239,7 +279,12 @@
    "url": "https://g1.globo.com/es/espirito-santo/noticia/2026/11/04/ataque-a-tiros-deixa-auxiliar-de-obras-e-comerciante-feridos-em-cariacica.ghtml",
    "data": "2026-11-04T17:40:36Z",
    "coletado_em": "2026-11-04T18:17:13Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "G1",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQazNoTjJJS1dLZmYxM09XSlVUZU5DdzFUbklORlh3bFZfMmJDR2NwS0ZYLXJjMFl0ZzdNdEZTTTFFX090WXpXV3JXOVk0eFpSUFhNZVVvVUJYWldzNW1oVllINk5tOUVuYkFncURWdm5IQTBJYTZhaVdraUd3OFJqUFgtem5kV28zN0VhNDlsa0U0NHVKclpFWDBma1FaYUt4MjJ5YmtOZ3BkZHR4TXY1ZkhlZ3B5VkVZRDBlNWJFY0t5bEoxYnViR2tobUNKNlU0WWVz0gHiAUFVX3lxTE9Ma3pRc0VBTWszb0lGaVkwSWRlZXFjVnYwamxmQWh2Y0YxSzBWSDlFTVN5Qjczc3JVdy0tM180aXF3d2w0RFFFMzJHcUp2YXFCOGxZdjNsSmFhMU03aUlyZk5aQWNJYWRHcGR2VXBJYlRfMkZPcmMyNFhqMTBCQTF1Q0c2aTgtRHRRbVltT2lMS05GTVd4TkRUUlBmTUp0YjhhOWF2YUVKNVcySGJhMnAxeEc2angxMFIyamhqcTQ5cDl2b1JEVWJNa0VRYmpKQTJLQUZlZUVnSWdVNEt1QlBzZmc?oc=5"
+    }
+   ],
    "possivel": true,
    "triagem": 3,
    "temas": [
@@ -293,6 +338,18 @@
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSnZqYTRrbU1kbURPTHlRWTdNekduc0xqb0V3NkFGYTlYRi01cXVZMjNrcUttaGRzdHBIMnNOSEd2dHo4bHRUMmRrOWR2OWNYYWZlWVQ2NV8yWG9jSElrM1Y5SEVvTjJCcVVkcFFMNlRIUkhtVUIzRlZhUVBpd1hRbTQ2R2ZZX1FtYThfV0NpV05vTjNGZ0ZxV0t3dlpfbzBiR1l2cVJyN3hIMERXenFIQUNR?oc=5",
    "data": "2026-11-04T16:59:00Z",
    "coletado_em": "2026-11-04T17:15:51Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "9b7fa660f1d3",
+   "titulo": "Ceturb-ES disponibiliza ônibus extras de reserva nos terminais para o Enem",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMU9tNlNpNFFqZTJTMzJPS3FUd3l4aDdaanNOUHg0aFFhS21CYmljc3pvd2NrZVFiSDljeFJfNUMwSHNOTjJwWUdtSEdfREs4akNTbFVGYi0yYjJtVGg4VThyLXNSajhGdmx0XzNFVnpFSGZHRVhhaVBUeE5FaGdTV3drZVFhY3AxZ0FGR0YtN2dfV3ZPTzVYYXpDcXA?oc=5",
+   "data": "2026-11-04T16:57:00Z",
+   "coletado_em": "2026-11-04T19:17:12Z",
    "outras": [],
    "possivel": false,
    "triagem": 3,
