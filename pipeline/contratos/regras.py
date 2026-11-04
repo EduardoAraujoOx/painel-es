@@ -229,6 +229,9 @@ ALERTAS["pago_apos_fim"] = (MEDIA, "Pagamentos depois do fim do contrato",
 ALERTAS["situacao_divergente"] = (MEDIA, "Situação encerrada com prazo em aberto",
                                   "O SIGA registra o instrumento como finalizado, encerrado ou extinto, mas a data final (com aditivos) ainda não chegou. "
                                   "Pode ser conclusão antecipada do objeto ou situação lançada por engano; no segundo caso, o contrato está em vigor e fora da contagem de vigentes.")
+ALERTAS["rescisao_diario"] = (MEDIA, "Rescisão publicada no Diário Oficial",
+                              "O Diário Oficial publicou termo de rescisão do contrato, mas o SIGA ainda não registra a situação como encerrada. "
+                              "Conferir a data de efeito da rescisão, os pagamentos posteriores e a atualização do SIGA.")
 ALERTAS["sem_pagamento"] = (INFO, "Contrato sem pagamento identificado",
                             "Contrato vigente há mais de um ano, de valor relevante, sem nenhum pagamento do órgão ao fornecedor desde 2021.")
 
@@ -284,6 +287,7 @@ ESCLARECER = {
     "pago_sem_contrato": "Instrumento (contrato, ata ou dispensa) que ampara os pagamentos recebidos sem contrato vigente.",
     "pago_apos_fim": "Instrumento que ampara os pagamentos posteriores ao fim do último contrato registrado: termo aditivo de prazo, novo contrato ou contratação emergencial, e por que não constam do SIGA.",
     "situacao_divergente": "Se o objeto foi de fato concluído antes do prazo ou se o instrumento segue em execução; data de término correta e correção da situação no SIGA.",
+    "rescisao_diario": "Termo de rescisão e data de seus efeitos, valores pagos depois dela, saldo a pagar e a atualização da situação do contrato no SIGA.",
     "doacao_governador": "Triagem interna: por si só não motiva pedido formal.",
     "doacao_eleitoral": "Triagem interna: por si só não motiva pedido formal.",
     "doacao_pj": "Triagem interna: por si só não motiva pedido formal.",

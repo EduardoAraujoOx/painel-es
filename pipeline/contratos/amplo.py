@@ -109,3 +109,62 @@ def resumir_gestao(linhas):
         vistos.add((funcao, nome.upper()))
         saida.append((ordem, [funcao, nome, (r.get("Setor") or "").strip(), _data_iso(r.get("DataInicio")), _data_iso(r.get("DataFim")), (r.get("Situacao") or "").strip()]))
     return [x for _, x in sorted(saida, key=lambda t: (t[0], t[1][1]))]
+
+
+# --- atos do Diário Oficial (diario.py) ligados aos contratos ---------------------------------------------------------------------------------
+NUMERO_CONTRATO = re.compile(r"\b(20\d{2}\.\d{6}\.\d{4,6}\.\d{2})\b")
+NUMERO_ANTIGO = re.compile(r"(\d{1,10})\s*/\s*(\d{4})")
+
+
+def numero_estruturado(doc):
+    """Número no formato AAAA.NNNNNN.UG.SS dentro do texto do documento do SIGA (ex.: 'Contrato 2024.000050.10109.01/2024'), ou None."""
+    m = NUMERO_CONTRATO.search(doc or "")
+    return m.group(1) if m else None
+
+
+def numero_antigo(doc):
+    """Numeração antiga 'N/AAAA' (ex.: 'Contrato 023/2022' -> '23/2022'), ou None."""
+    m = NUMERO_ANTIGO.search(doc or "")
+    return f"{int(m.group(1))}/{m.group(2)}" if m else None
+
+
+def indexar_atos(atos):
+    """Índices dos atos do Diário por número de contrato e por CNPJ."""
+    por_n, por_c = {}, {}
+    for a in atos:
+        if a.get("n"):
+            por_n.setdefault(a["n"], []).append(a)
+        if a.get("c"):
+            por_c.setdefault(a["c"], []).append(a)
+    return por_n, por_c
+
+
+def atos_do_contrato(doc, cnpj, proc, por_n, por_c, maximo=12):
+    """Atos do Diário que dizem respeito ao contrato.
+
+    Liga pelo número estruturado do contrato (único: traz o ano, a unidade gestora e a sequência). Só quando o contrato não tem esse número,
+    liga pelo CNPJ do fornecedor quando o trecho cita também o mesmo protocolo de processo ou a mesma numeração antiga N/AAAA; com número
+    estruturado essa via não vale, porque um mesmo fornecedor e um mesmo processo de origem alcançam contratos de órgãos diferentes. Devolve [[data, tipo, protocolo, página, edição, trecho]] por data,
+    sem repetir o mesmo ato (data, tipo e protocolo) e ficando com os `maximo` mais recentes."""
+    achados = []
+    n = numero_estruturado(doc)
+    if n:
+        achados += por_n.get(n, [])
+    antigo, p = numero_antigo(doc), normaliza_processo(proc)
+    for a in ([] if n else por_c.get(cnpj, [])):
+        if (p and p in a.get("np", ())) or (antigo and antigo in a.get("nc", ())):
+            achados.append(a)
+    vistos, saida = set(), []
+    for a in sorted(achados, key=lambda a: (a["d"], a["p"], -len(a["x"]))):
+        chave = (a["d"], a["t"], a["p"])
+        if chave in vistos:
+            continue
+        vistos.add(chave)
+        saida.append([a["d"], a["t"], a["p"], a["pg"], a["e"], a["x"][:520]])
+    return saida[-maximo:]
+
+
+def rescisao_publicada(atos, celebracao_iso=""):
+    """Data (ISO) da rescisão mais recente publicada no Diário depois da celebração do contrato, ou ''."""
+    datas = [a[0] for a in atos if a[1] == "Rescisão" and a[0] >= (celebracao_iso or "")]
+    return max(datas) if datas else ""

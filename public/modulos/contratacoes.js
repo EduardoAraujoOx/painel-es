@@ -10,6 +10,7 @@
 
   let dados = null;
   const URL_EDOCS = 'https://processoeletronico.es.gov.br/?protocolo=';
+  const URL_DIO = 'https://ioes.dio.es.gov.br/portal/edicoes/download/';   // PDF da edição do Diário Oficial
   let CAMPOS = null;
   const cacheOrg = new Map();
   const cacheForn = new Map();
@@ -106,6 +107,14 @@
     if (processos) return processos;
     try { processos = await ctx.api('processos'); } catch (e) { if (e && e.sessao) throw e; processos = {}; }
     return processos;
+  }
+
+  // Atos publicados no Diário Oficial (diario.py): rescisões, aditivos, prorrogações, penalidades. Cada um leva ao PDF da edição; o trecho é o texto extraído do PDF, para conferência.
+  function atosDiario(lista) {
+    return el('div', { class: 'atos-diario' }, lista.map(([data, tipo, protocolo, pagina, edicao, trecho]) => el('details', {},
+      el('summary', {}, `${dataBR(data)} · ${tipo}${protocolo ? ' · protocolo ' + protocolo : ''}`, ' ',
+        el('a', { href: URL_DIO + encodeURIComponent(edicao), target: '_blank', rel: 'noopener noreferrer', onclick: (ev) => ev.stopPropagation() }, `abrir a edição (p. ${pagina})`)),
+      el('p', { class: 'trecho-diario' }, trecho))));
   }
 
   // ---------- busca de fornecedor ----------
@@ -411,6 +420,7 @@
           ...(k.pncp != null ? [['Valor global no PNCP', el('span', {}, brlCompacto(k.pncp), ' ', k.pncpLink ? el('a', { href: k.pncpLink, target: '_blank', rel: 'noopener noreferrer', onclick: (ev) => ev.stopPropagation() }, 'abrir no PNCP') : null)]] : []),
           ...(k.edocs ? [['Processo no e-Docs', el('a', { href: URL_EDOCS + encodeURIComponent(k.edocs), target: '_blank', rel: 'noopener noreferrer', onclick: (ev) => ev.stopPropagation() }, k.edocs + ' (consulta pública)')]] : []),
           ...(k.edocs && processos && processos[k.edocs] && !processos[k.edocs].naoEncontrado ? processoEdocs(processos[k.edocs]) : []),
+          ...(k.dio && k.dio.length ? [['Atos no Diário Oficial', atosDiario(k.dio)]] : []),
           ...(k.gestao && k.gestao.length ? [['Gestão e fiscalização (SIGA)', el('span', {}, k.gestao.map(([fn, nome, setor, ini, fim, sit]) => `${fn}: ${nomeProprio(nome)}${setor ? ' (' + setor + ')' : ''}${ini ? ', desde ' + dataBR(ini) : ''}${fim ? ' até ' + dataBR(fim) : ''}${sit ? ' [' + sit + ']' : ''}`).join(' · '))]] : [])
         ].flatMap(([t, v]) => [el('dt', {}, t), el('dd', {}, v)]));
       const alertas = k.alertas.length ? el('ul', { class: 'lista-alertas' }, k.alertas.map((a) => el('li', {}, selo(a), ' ', dados.alertas[a.split(':')[0]].descricao))) : null;

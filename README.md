@@ -154,14 +154,15 @@ python3 -I pipeline/contratos/execucao.py 2021 2022 2023 2024 2025 2026   # paga
 python3 -I pipeline/contratos/despesas.py 2025 2026     # (base ampla) todos os pagamentos a CNPJ, inclusive fornecedores fora do SIGA
 python3 -I pipeline/contratos/pncp.py                   # (base ampla) contratos publicados no PNCP pelos órgãos do Executivo
 python3 -I pipeline/contratos/montar.py                 # gera data/contratacoes/ (index, org/, forn/, busca)
+python3 -I pipeline/contratos/diario.py                  # (opcional) atos do Diário Oficial do ES (rescisões, aditivos, penalidades); primeira vez ~20 min, depois só as edições novas
 python3 -I pipeline/contratos/edocs.py --max 400        # (opcional) consulta pública dos processos dos contratos principais → data/contratacoes/processos.json
 ```
 
 O `baixar.py` passa a baixar também o arquivo de comissões (`Comissoes`). Os passos `despesas.py` e `pncp.py` são opcionais: sem eles o `montar.py` roda como antes, só com o SIGA.
 
-#### Base ampla: PNCP, SIGEFES completo, gestor e fiscal, e-Docs
+#### Base ampla: PNCP, SIGEFES completo, gestor e fiscal, e-Docs, Diário Oficial
 
-O SIGA não esgota os contratos dos órgãos. Em 2025–2026, por exemplo, o ITIC tem 79 contratos no PNCP e 27 no SIGA. A base ampla complementa o SIGA com quatro fontes, sem substituí-lo:
+O SIGA não esgota os contratos dos órgãos. Em 2025–2026, por exemplo, o ITIC tem 79 contratos no PNCP e 27 no SIGA. A base ampla complementa o SIGA com cinco fontes, sem substituí-lo:
 
 **PNCP.** `pncp.py` lê a API pública de consulta (sem credencial) e guarda os contratos de 2025 em diante dos órgãos listados em `pncp_orgaos.json`, ampliados pela consulta das contratações publicadas em UF=ES. `montar.py` liga cada contrato do PNCP ao do SIGA pelo CNPJ do fornecedor e pelo número do processo (o protocolo do e-Docs) e, na falta dele, pela data de assinatura com até 60 dias de diferença (`amplo.casar`). Cada contrato do SIGA ganha o valor global do PNCP e o link, e os contratos do PNCP sem par no SIGA vão para o cartão "Contratos vigentes só no PNCP" de cada órgão (`pncp` no JSON do órgão), com o pago do ano pelo fornecedor e pela unidade gestora do órgão.
 
@@ -170,6 +171,8 @@ O SIGA não esgota os contratos dos órgãos. Em 2025–2026, por exemplo, o ITI
 **Gestor e fiscal.** O arquivo de comissões do SIGA liga cada contrato (`idOrigem` = `idContrato`) às pessoas designadas, com função, setor, datas e situação. A ficha do contrato mostra gestor, suplente, fiscal e suplente (`amplo.resumir_gestao`). A cobertura é parcial.
 
 **e-Docs.** O número do processo do SIGA (`NumeroProcesso`) é o protocolo do e-Docs (formato `AAAA-XXXXX`). A ficha do contrato traz o link da consulta pública de processos. `edocs.py` é opcional, consulta até 400 processos por execução, a 1 por segundo, e identifica o painel no User-Agent; não usa a API oficial, que exige credencial de órgão. A consulta devolve número, unidades envolvidas, assunto, descrição (campo livre, que costuma citar o número do contrato, o fornecedor e o objeto), situação e a lista de trâmites, mas não o texto dos documentos. Quando `data/contratacoes/processos.json` existe, a ficha do contrato mostra assunto, descrição, unidades e o último trâmite.
+
+**Diário Oficial.** O SIGA e o PNCP atrasam ou omitem atos que só saem no Diário, como rescisões, aditivos, prorrogações e penalidades. `diario.py` lê a lista de edições da Imprensa Oficial (`ioes.dio.es.gov.br`, sem login, desde nov/2023), baixa o PDF de cada edição, extrai o texto com `pdftotext` e descarta o PDF. No texto procura o número de contrato no formato `AAAA.NNNNNN.UG.SS` (76% dos contratos do SIGA) e os CNPJs dos fornecedores do SIGA; este vale quando o trecho cita também o mesmo protocolo de processo ou a mesma numeração antiga `N/AAAA`. Cada citação vira um ato com tipo (classificado por palavras-chave), data, protocolo da publicação, página e trecho, guardado em `.cache/contratos/dio_atos.json`; edições já lidas não são baixadas de novo. O `montar.py` liga os atos aos contratos (campo `dio`, até 12 por contrato; contrato com número estruturado só se liga por ele, o CNPJ vale apenas para numeração antiga) e cria o alerta `rescisao_diario` quando há rescisão publicada depois da celebração e o SIGA ainda não registra o contrato como encerrado. Limites: o PDF sai em colunas e atos vizinhos se misturam no trecho, por isso o tipo é uma classificação automática e a ficha leva à edição para conferência; contratos com numeração antiga e fornecedor sem CNPJ citado no ato podem não ser ligados.
 
 Limites da base ampla: o PNCP traz o que o órgão publicou, com atraso e lacunas; o casamento por data pode errar e a ligação do pago ao contrato do PNCP é por fornecedor e unidade gestora, não por empenho; os dados de `data/contratacoes` só incluem a base ampla depois de rodar `despesas.py`, `pncp.py` e `montar.py` com a rede liberada.
 

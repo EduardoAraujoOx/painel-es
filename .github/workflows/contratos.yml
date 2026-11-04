@@ -1,7 +1,7 @@
 name: Atualização diária dos contratos (SIGA, SIGEFES, PNCP)
 
 # Roda todo o pipeline de pipeline/contratos e grava data/contratacoes, data/fimmandato e data/lacunas.
-# Diário: baixa o SIGA (inclusive comissões), lê a execução de 2025 e 2026 (SIGEFES, com e sem filtro de CNPJ), baixa o PNCP e monta.
+# Diário: baixa o SIGA (inclusive comissões), lê a execução de 2025 e 2026 (SIGEFES, com e sem filtro de CNPJ), baixa o PNCP, lê o Diário Oficial e monta.
 # Completo (aos domingos, em disparo manual com "completo" e sempre que faltar o cache): refaz também todos os anos da execução, o cadastro
 # da Receita, as bases externas (PGFN, CEIS/CNEP, TSE) e os nomes de servidores. Os resultados pesados ficam em cache entre as execuções.
 
@@ -50,6 +50,7 @@ jobs:
             .cache/contratos/receita.json
             .cache/contratos/ext
             .cache/contratos/exec_20*.json
+            .cache/contratos/dio_atos.json
             .cache/organograma
             .cache/cargos
           key: contratos-cache-${{ github.run_id }}
@@ -120,6 +121,14 @@ jobs:
         continue-on-error: true
         run: python3 -I pipeline/contratos/pncp.py
 
+      # Atos do Diário Oficial (rescisões, aditivos, prorrogações, penalidades): lê só as edições novas; a primeira execução lê todas desde nov/2023 (cerca de 20 minutos).
+      - name: Diário Oficial do Espírito Santo
+        id: diario
+        continue-on-error: true
+        run: |
+          command -v pdftotext >/dev/null || sudo apt-get install -y -qq poppler-utils
+          python3 -I pipeline/contratos/diario.py
+
       - name: Montar data/contratacoes
         run: python3 -I pipeline/contratos/montar.py
 
@@ -174,12 +183,13 @@ jobs:
             .cache/contratos/receita.json
             .cache/contratos/ext
             .cache/contratos/exec_20*.json
+            .cache/contratos/dio_atos.json
             .cache/organograma
             .cache/cargos
           key: contratos-cache-${{ github.run_id }}
 
       - name: Avisar se a base ampla ou o e-Docs falhou
-        if: steps.despesas.outcome == 'failure' || steps.pncp.outcome == 'failure' || steps.edocs.outcome == 'failure'
+        if: steps.despesas.outcome == 'failure' || steps.pncp.outcome == 'failure' || steps.diario.outcome == 'failure' || steps.edocs.outcome == 'failure'
         run: |
-          echo "A leitura completa da despesa, a do PNCP ou a do e-Docs falhou (veja os passos acima). Os dados foram publicados só com as fontes que funcionaram."
+          echo "A leitura completa da despesa, a do PNCP, a do Diário Oficial ou a do e-Docs falhou (veja os passos acima). Os dados foram publicados só com as fontes que funcionaram."
           exit 1

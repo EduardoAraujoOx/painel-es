@@ -653,3 +653,8 @@ tr.clicavel.marcada td { background: color-mix(in srgb, var(--acento) 14%, trans
 @media (max-width: 640px) { .destaques { grid-template-columns: 1fr; } }
 .chip-possivel { border-style: dashed; color: var(--tinta-2); }
 .susp-obj { margin: 2px 0 4px; font-size: 13px; color: var(--tinta-2); line-height: 1.4; }
+
+/* Atos do Diário Oficial na ficha do contrato */
+.atos-diario details { margin: 0 0 6px; }
+.atos-diario summary { cursor: pointer; }
+.trecho-diario { margin: 6px 0 0; font-size: 12px; color: var(--mudo); line-height: 1.5; max-width: 90ch; overflow-wrap: anywhere; }
