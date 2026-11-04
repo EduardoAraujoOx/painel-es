@@ -1,17 +1,19 @@
 {
- "ref": "2026-11-03",
- "gerado_em": "2026-11-03T09:17:22Z",
+ "ref": "2026-11-04",
+ "gerado_em": "2026-11-04T03:00:44Z",
  "desde": "2026-10-04",
  "primeiro_levantamento": "2026-10-31",
  "baseline": false,
  "contagem": {
   "paralisacao": 2,
   "suspensao": 1,
-  "rescisao": 15,
+  "rescisao": 16,
   "cancelamento": 5,
   "anulacao": 1
  },
- "novos": [],
+ "novos": [
+  "2053425"
+ ],
  "edicoes_lidas": [
   11522,
   11528,
@@ -36,9 +38,22 @@
   11595,
   11596,
   11597,
-  11600
+  11600,
+  11603
  ],
  "itens": [
+  {
+   "id": "2053425",
+   "edicao": 11603,
+   "data": "2026-11-04",
+   "tipo": "rescisao",
+   "alvo": "contrato",
+   "titulo": "EXTRATO DE TERMO DE RESCISÃO AMIGÁVEL",
+   "orgao": "Governadoria do Estado",
+   "setor": "Aditivo",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2053425/11603",
+   "visto_em": "2026-11-04T03:00:44Z"
+  },
   {
    "id": "2051735",
    "edicao": 11595,
