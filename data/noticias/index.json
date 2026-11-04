@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-04",
- "gerado_em": "2026-11-04T09:17:14Z",
+ "gerado_em": "2026-11-04T10:17:16Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 38,
-   "aceitos": 25,
-   "possiveis": 1
+   "lidos": 23,
+   "aceitos": 19,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 14,
+   "lidos": 15,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 63,
+   "lidos": 56,
    "aceitos": 2,
    "possiveis": 4
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 10,
+   "lidos": 12,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,15 +145,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 21,
+   "lidos": 20,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 56,
+   "lidos": 55,
    "aceitos": 3,
    "possiveis": 9
   },
@@ -178,7 +178,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -208,18 +208,33 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 309,
+  "sem_contexto": 300,
   "sem_contexto_com_tema": 11,
-  "caixa_alta": 3,
-  "veiculo_excluido": 37,
-  "possivel": 16,
+  "veiculo_excluido": 34,
+  "possivel": 15,
   "exterior_sem_ancora": 10,
   "excluir": 6,
-  "outro_estado": 32,
-  "veiculo_outra_praca": 9,
-  "sigla_sem_ancora": 10
+  "outro_estado": 29,
+  "caixa_alta": 2,
+  "veiculo_outra_praca": 8,
+  "sigla_sem_ancora": 10,
+  "generico_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "220274afbff6",
+   "titulo": "Nova cobrança da Uber pode ser suspensa pela Justiça; veja o que muda para motoristas do ES",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/justica/nova-cobranca-da-uber-pode-ser-suspensa-pela-justica-veja-o-que-muda-para-motoristas-do-es/",
+   "data": "2026-11-04T10:01:16Z",
+   "coletado_em": "2026-11-04T10:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "de7baf22a84e",
    "titulo": "Cidade do ES tem 327 galinhas e perus para cada morador; média do estado é de cinco; veja todos os municípios",
@@ -499,6 +514,20 @@
    "triagem": 3,
    "temas": [
     "contratos"
+   ]
+  },
+  {
+   "id": "dc933fed9b37",
+   "titulo": "Assembleia autoriza governo estadual a repassar R$ 2,5 milhões à Unidos da Tijuca",
+   "veiculo": "Diário do Nordeste",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPZkpKejlUdjc1TjdvTWdJb0tRRkgxaThKY0lqdmltbENvcm5XMC1TeU53VDR5STZveDZDWTBYa2k2Rkp5OHpya2syTHc5b3F5TktHNHZoUm5kYUtSd21nWFJaY3l3NkdvQlZvZjB4di1jdUdvSFNla3IzN21UNVhnWjBxMFJyclJPOHd5WHdULVlWTHppNm13ZHF1dHVCdFd6cktFMWIxbVR6V3VkQlZEdXR6NU1GUEw5Szl3czNqX1djOE9IMlNlRmx3UkRJYmxWTkhNTDk4Ny1PcGNi?oc=5",
+   "data": "2026-11-03T18:40:00Z",
+   "coletado_em": "2026-11-04T10:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "governador"
    ]
   },
   {
