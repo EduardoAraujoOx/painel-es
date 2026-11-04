@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-04",
- "gerado_em": "2026-11-04T12:17:12Z",
+ "gerado_em": "2026-11-04T13:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,16 +18,16 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 9,
-   "aceitos": 6,
-   "possiveis": 0
+   "aceitos": 5,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 24,
-   "aceitos": 20,
-   "possiveis": 1
+   "lidos": 47,
+   "aceitos": 25,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 6,
+   "lidos": 5,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 61,
+   "lidos": 63,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -97,8 +97,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 66,
-   "aceitos": 2,
+   "lidos": 69,
+   "aceitos": 3,
    "possiveis": 5
   },
   {
@@ -115,7 +115,7 @@
    "ok": true,
    "lidos": 6,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 45,
+   "lidos": 43,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,23 +145,23 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 21,
+   "lidos": 24,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 56,
    "aceitos": 3,
-   "possiveis": 4
+   "possiveis": 8
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 58,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 7,
+   "aceitos": 8,
    "possiveis": 6
   },
   {
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -194,7 +194,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 2
   },
   {
@@ -206,20 +206,101 @@
    "possiveis": 2
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 4,
  "descartes_na_coleta": {
-  "sem_contexto": 302,
   "sem_contexto_com_tema": 12,
-  "veiculo_excluido": 38,
-  "possivel": 21,
-  "exterior_sem_ancora": 14,
+  "sem_contexto": 320,
+  "possivel": 25,
+  "caixa_alta": 3,
+  "veiculo_excluido": 46,
+  "exterior_sem_ancora": 18,
   "excluir": 5,
-  "outro_estado": 32,
-  "caixa_alta": 1,
-  "veiculo_outra_praca": 7,
-  "sigla_sem_ancora": 5
+  "outro_estado": 36,
+  "veiculo_outra_praca": 11,
+  "sigla_sem_ancora": 9,
+  "generico_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "95e996481cc9",
+   "titulo": "Quem vai comandar a Assembleia do ES? Há dois possíveis candidatos, mas nada definido",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/leticia-goncalves/quem-vai-comandar-a-assembleia-do-es-ha-dois-possiveis-candidatos-mas-nada-definido-1126",
+   "data": "2026-11-04T13:03:00Z",
+   "coletado_em": "2026-11-04T13:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "bb48a417d4a1",
+   "titulo": "Mais uma rua é fechada para obras no Centro de Vitória; veja o que fica pronto até o Natal",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/cotidiano/mais-uma-rua-e-fechada-para-obras-no-centro-de-vitoria-veja-o-que-fica-pronto-ate-o-natal-1126",
+   "data": "2026-11-04T13:01:32Z",
+   "coletado_em": "2026-11-04T13:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "b660d3fcb1aa",
+   "titulo": "Reforma tributária e eficiência alocativa: o que muda para as empresas a partir de 2026",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/ibef-reforma-tributaria-e-eficiencia-alocativa-o-que-muda-para-as-empresas-a-partir-de-2026/",
+   "data": "2026-11-04T13:00:00Z",
+   "coletado_em": "2026-11-04T13:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "894a92907ed9",
+   "titulo": "Fim da escala 6x1: a transição para empresas contratadas pelo poder público",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/artigos/fim-da-escala-6x1-a-transicao-para-empresas-contratadas-pelo-poder-publico-1126",
+   "data": "2026-11-04T13:00:00Z",
+   "coletado_em": "2026-11-04T13:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "23a570cdcd62",
+   "titulo": "Caravana do Incaper discute impactos do El Niño no campo",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/meio-ambiente/2026/11/caravana-do-incaper-el-nino/",
+   "data": "2026-11-04T12:47:10Z",
+   "coletado_em": "2026-11-04T13:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "0ecfaf543931",
+   "titulo": "Enem 2026: Ruas de Lazer de Vitória serão suspensas nos próximos dois domingos",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNM254eWZuRzBKWGJlcDFmY0ZGdGpUQ3lqRk1TZ2FnSE1mZU85ckYtbXhZUklwYzlGbzlFS3lJeWJXd2ZRR2tkbkJvcnpWTHJKZzg5WG1FcXRDUG93TU1VVUhJcmVCTldNbFIzcnlYVzB3b1l1RWdBTDA4ZXpqUExyMTJ0aFlrRGxJYnpIbjBIWF9zSTU2aXJWaHdGZ2hFOGg2SFJTS3JQSUVzODZtU0owQnIyZXNnMzNZaldHXy130gHGAUFVX3lxTE8tbFpDT3ZnTXBheUpTOTlUT1JUVm9DYW9mUjJSUWhwUE81bTdzaUFCVjJYN1Brc0RhQm5VZERiNld3Q3NVdWgxMnFGS0FpZXQ0RTk1d09kYWNyZHhKMmloc3hZbW9JZFhpVnlrNTgzY3hqVXA0ZVBmZE9ULVNSYU83UGdWRzZlemVZVHMtT2dWQWlPTU9xZW80S0gwcmhVdzdyejI4SXIwMVZWa2h0R2MzdndhUmF6TmljUEVhajNtQ0h0VHQ1UQ?oc=5",
+   "data": "2026-11-04T12:19:29Z",
+   "coletado_em": "2026-11-04T13:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "3d88e680ff35",
    "titulo": "Assembleia mantém 15 vetos a projetos de lei no ES; veja quais são",
