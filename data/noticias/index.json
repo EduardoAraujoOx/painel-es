@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-04",
- "gerado_em": "2026-11-04T19:17:12Z",
+ "gerado_em": "2026-11-04T20:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,7 +25,7 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 27,
+   "lidos": 28,
    "aceitos": 21,
    "possiveis": 1
   },
@@ -33,8 +33,8 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 8,
+   "lidos": 10,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
@@ -65,8 +65,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 2,
+   "lidos": 8,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 61,
+   "lidos": 63,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 13,
+   "lidos": 11,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 31,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -155,7 +155,7 @@
    "ok": true,
    "lidos": 29,
    "aceitos": 3,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -170,8 +170,8 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
-   "possiveis": 8
+   "aceitos": 3,
+   "possiveis": 7
   },
   {
    "fonte": "Folha Vitória",
@@ -194,7 +194,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 2,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
@@ -206,20 +206,71 @@
    "possiveis": 3
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
   "sem_contexto": 307,
   "sem_contexto_com_tema": 9,
-  "possivel": 23,
+  "possivel": 22,
   "exterior_sem_ancora": 21,
-  "veiculo_excluido": 36,
-  "excluir": 4,
-  "outro_estado": 27,
+  "veiculo_excluido": 37,
+  "excluir": 5,
+  "outro_estado": 26,
   "caixa_alta": 1,
   "veiculo_outra_praca": 5,
-  "sigla_sem_ancora": 5
+  "sigla_sem_ancora": 6
  },
  "itens": [
+  {
+   "id": "afe5ce27d1c1",
+   "titulo": "Banestes lidera em ativos no ES e consolida 8ª posição entre as maiores empresas do Estado",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/economia/2026/11/banestes-lidera-em-ativos-no-es/",
+   "data": "2026-11-04T20:09:03Z",
+   "coletado_em": "2026-11-04T20:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "91b5b7156fcd",
+   "titulo": "Vitória sedia final do Circuito Estadual de Judô e Festival Judolândia",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/esportes/2026/11/vitoria-sedia-final-estadual-judo/",
+   "data": "2026-11-04T20:00:37Z",
+   "coletado_em": "2026-11-04T20:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "188e95d255fa",
+   "titulo": "Transição sob pressão: Decreto Estadual impõe prazos rígidos para suplementação orçamentária às secretarias",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/bastidores-da-politica/2026/11/transicao-decreto-orcamento/",
+   "data": "2026-11-04T19:41:43Z",
+   "coletado_em": "2026-11-04T20:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "transicao",
+    "financas"
+   ]
+  },
+  {
+   "id": "6ae39f17bcf8",
+   "titulo": "Transcol será gratuito no domingo para estudantes que farão o Enem",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/enem-2026/transcol-sera-gratuito-no-domingo-para-estudantes-que-farao-o-enem-1126",
+   "data": "2026-11-04T19:22:13Z",
+   "coletado_em": "2026-11-04T20:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
   {
    "id": "89625e92c8b0",
    "titulo": "Câmara da Serra reintegra vereador afastado e exonera 15 servidores de suplente",
