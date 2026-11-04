@@ -78,12 +78,33 @@ def protocolo_em(texto, spans, i):
     return min(cand)[2] if cand else ""
 
 
-def classificar(janela):
+def classificar(janela, aceita_rescisao=True):
     j = janela.upper()
     for nome, padrao in TIPOS:
+        if nome == "Rescisão" and not aceita_rescisao:
+            continue
         if padrao.search(j):
             return nome
     return "Citação"
+
+
+PROTOCOLO_TEXTO = re.compile(r"Protocolo\s+(\d{6,8})")
+
+
+def refinar_ato(a):
+    """Completa um ato já extraído. (1) Sem marca de publicação (edições antigas), o protocolo é o primeiro 'Protocolo NNNNNNN' impresso depois da
+    citação no trecho. (2) Ato só 'Citação' (a palavra-chave não estava perto do número) é reclassificado pelo trecho inteiro, que é o texto da
+    mesma publicação, mas sem aceitar 'Rescisão', que exige a palavra perto do número, já que o trecho pode trazer o ato vizinho."""
+    if not a.get("p"):
+        c = a.get("c") or ""
+        chave = a.get("n") or (f"{c[:2]}.{c[2:5]}.{c[5:8]}/{c[8:12]}-{c[12:]}" if len(c) == 14 else "")
+        i = a["x"].find(chave) if chave else -1
+        m = PROTOCOLO_TEXTO.search(a["x"], i) if i >= 0 else None      # sem a citação no trecho, não se adivinha o protocolo
+        if m:
+            a["p"] = m.group(1)
+    if a["t"] == "Citação":
+        a["t"] = classificar(a["x"], aceita_rescisao=False)
+    return a
 
 
 def pagina_em(texto, i):
@@ -116,9 +137,9 @@ def atos_da_edicao(texto, cnpjs, antes=300, depois=900):
         tipo = classificar(perto)
         if not n and tipo == "Citação":
             return                      # CNPJ solto (licitações, listas de empresas): não é ato de contrato
-        saida.append({"n": n, "c": c, "t": tipo, "p": proto, "pg": pagina_em(texto, i), "x": trecho[:760],
-                      "np": sorted(set(PROCESSO.findall(trecho)))[:4],
-                      "nc": sorted({f"{int(a_)}/{b_}" for a_, b_ in NUMERO_ANTIGO.findall(trecho)})[:6]})
+        saida.append(refinar_ato({"n": n, "c": c, "t": tipo, "p": proto, "pg": pagina_em(texto, i), "x": trecho[:760],
+                                  "np": sorted(set(PROCESSO.findall(trecho)))[:4],
+                                  "nc": sorted({f"{int(a_)}/{b_}" for a_, b_ in NUMERO_ANTIGO.findall(trecho)})[:6]}))
 
     for m in NUMERO.finditer(texto):
         registrar(m.start(), m.end(), m.group(1), "")
