@@ -59,5 +59,23 @@ class Tipos(unittest.TestCase):
         self.assertEqual(D.classificar("lista de empresas"), "Citação")
 
 
+class Refino(unittest.TestCase):
+    def test_protocolo_do_texto_quando_nao_ha_marca(self):
+        a = {"n": "2024.000012.41201.01", "c": "", "t": "Aditivo ou prorrogação", "p": "", "pg": 86, "x": "Protocolo 1516482 RESUMO DO PRIMEIRO TERMO ADITIVO AO CONTRATO Nº 2024.000012.41201.01 Processo nº 2023-5V3HQ. Protocolo 1592385"}
+        self.assertEqual(D.refinar_ato(a)["p"], "1592385")      # o primeiro depois da citação, não o do ato anterior
+
+    def test_sem_a_citacao_no_trecho_nao_adivinha_o_protocolo(self):
+        a = {"n": "", "c": "02960701000106", "t": "Aditivo ou prorrogação", "p": "", "pg": 1, "x": "Protocolo 1349615 EXTRATO DO 2º TERMO ADITIVO. Contratada: X, CNPJ 02.960.701/0001-06. Protocolo 1349700"}
+        self.assertEqual(D.refinar_ato(a)["p"], "1349700")
+        b = dict(a, p="", x="Protocolo 1349615 EXTRATO DO 2º TERMO ADITIVO sem o CNPJ")
+        self.assertEqual(D.refinar_ato(b)["p"], "")
+
+    def test_citacao_vira_penalidade_pelo_trecho_mas_nunca_rescisao(self):
+        a = {"n": "2025.000014.60201.01", "c": "", "t": "Citação", "p": "1885020", "pg": 2, "x": "aplicação da penalidade de ADVERTÊNCIA à empresa X. Contrato nº 2025.000014.60201.01"}
+        self.assertEqual(D.refinar_ato(a)["t"], "Penalidade")
+        b = {"n": "2025.000014.60201.01", "c": "", "t": "Citação", "p": "1", "pg": 2, "x": "termo de rescisão de outro contrato. Contrato nº 2025.000014.60201.01"}
+        self.assertEqual(D.refinar_ato(b)["t"], "Citação")
+
+
 if __name__ == "__main__":
     unittest.main()
