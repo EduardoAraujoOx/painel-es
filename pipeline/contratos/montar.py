@@ -552,6 +552,9 @@ def fichas_fornecedores(recs, receita):
                      motivo=tab["motivos"].get(s[4], "") if s[4] not in ("", "00") else "", abertura=fmt_data_rfb(s[5]),
                      cnae=(s[6], tab["cnaes"].get(s[6], "")), endereco=logr, bairro=s[11], cep=s[12], uf=s[13],
                      municipio=tab["municipios"].get(s[14], s[14]), matriz=s[0] == "1")
+            contato = AM.contato_cadastral(f.get("natureza"), s[15] if len(s) > 15 else "", *(s[16:20] if len(s) >= 20 else ()))
+            if contato:
+                f["contato"] = contato
         socios = []
         for ident, nome, cpf, qual, entrada, faixa, rep in soc.get(raiz, []):
             item = {"tipo": {"1": "PJ", "2": "PF", "3": "Exterior"}.get(ident, ident), "nome": nome, "doc": cpf,

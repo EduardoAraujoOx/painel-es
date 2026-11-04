@@ -659,7 +659,9 @@
       ...kv('Situação cadastral', el('span', {}, f.situacao + (f.data_situacao ? ` desde ${dataBR(f.data_situacao)}` : '') + (f.motivo ? ` (${f.motivo})` : ''), irregular ? el('span', { class: 'selo n-a' }, el('b', {}, 'Alta'), ' irregular') : null)),
       ...kv('Abertura', dataBR(f.abertura)), ...kv('Natureza jurídica', f.natureza), ...kv('Porte', f.porte),
       ...kv('Capital social', f.capital != null ? PF.nBRL.format(f.capital) : ''), ...kv('Atividade principal', f.cnae && f.cnae[1] ? `${f.cnae[0]} · ${f.cnae[1]}` : ''),
-      ...kv('Endereço', [f.endereco, f.bairro, f.cep && 'CEP ' + f.cep].filter(Boolean).join(', ')), ...kv('Município', f.municipio ? `${f.municipio}/${f.uf}` : ''))
+      ...kv('Endereço', [f.endereco, f.bairro, f.cep && 'CEP ' + f.cep].filter(Boolean).join(', ')), ...kv('Município', f.municipio ? `${f.municipio}/${f.uf}` : ''),
+      ...kv('E-mail (cadastro na Receita)', f.contato && f.contato.email ? el('a', { href: 'mailto:' + f.contato.email }, f.contato.email) : ''),
+      ...kv('Telefone (cadastro na Receita)', f.contato && f.contato.telefones && f.contato.telefones.length ? f.contato.telefones.join(' · ') : ''))
       : el('p', { class: 'vazio' }, 'Sem cadastro na Receita Federal para este CNPJ (ou fornecedor pessoa física).'));
 
     const alertas = el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Alertas'),

@@ -6,7 +6,7 @@ espelho público da publicação mensal da Receita (mesmos arquivos de dadosaber
 em .cache/contratos/receita.json só o que diz respeito aos CNPJs que aparecem nos contratos e empenhos:
 
   * empresas:  razão social, natureza jurídica, capital social, porte;
-  * estab:     situação cadastral, data de abertura, CNAE principal, endereço, município;
+  * estab:     situação cadastral, data de abertura, CNAE principal, endereço, município, e-mail e telefones do cadastro;
   * socios:    quadro societário (nome, CPF mascarado pela Receita, qualificação, entrada, faixa etária);
   * rede:      para cada sócio pessoa física, em quantas empresas do país (CNPJ básicos distintos) ele
                consta como sócio, para apontar quem controla várias empresas.
@@ -104,7 +104,7 @@ def passo_estabelecimentos(args):
         if linha[1:9].decode("ascii", "ignore") in basicos:
             c = campos(linha)
             saida[c[0] + c[1] + c[2]] = [c[3], c[4], c[5], c[6], c[7], c[10], c[11], c[13], c[14], c[15], c[16],
-                                         c[17], c[18], c[19], c[20], c[27]]
+                                         c[17], c[18], c[19], c[20], c[27], c[21], c[22], c[23], c[24]]
     return saida
 
 
