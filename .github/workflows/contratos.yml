@@ -1,0 +1,185 @@
+name: Atualização diária dos contratos (SIGA, SIGEFES, PNCP)
+
+# Roda todo o pipeline de pipeline/contratos e grava data/contratacoes, data/fimmandato e data/lacunas.
+# Diário: baixa o SIGA (inclusive comissões), lê a execução de 2025 e 2026 (SIGEFES, com e sem filtro de CNPJ), baixa o PNCP e monta.
+# Completo (aos domingos, em disparo manual com "completo" e sempre que faltar o cache): refaz também todos os anos da execução, o cadastro
+# da Receita, as bases externas (PGFN, CEIS/CNEP, TSE) e os nomes de servidores. Os resultados pesados ficam em cache entre as execuções.
+
+on:
+  workflow_dispatch:
+    inputs:
+      completo:
+        description: 'Refazer também Receita, bases externas, nomes de servidores e todos os anos da execução (demora algumas horas)'
+        type: boolean
+        required: false
+        default: false
+      edocs:
+        description: 'Consultar também a consulta pública de processos do e-Docs (até 150 protocolos; grava data/contratacoes/processos.json)'
+        type: boolean
+        required: false
+        default: false
+  schedule:
+    # 04h23 em Brasília (07h23 UTC): fora do horário de pico do GitHub e antes do expediente.
+    - cron: '23 7 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atualizacao-contratos
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # Resultados pesados e lentos de refazer: cadastro da Receita, bases externas, nomes de servidores e execução dos anos fechados.
+      # Cada execução grava um cache novo (a chave leva o número da execução) e a seguinte parte do mais recente.
+      - name: Restaurar o cache
+        id: cache
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            .cache/contratos/receita.json
+            .cache/contratos/ext
+            .cache/contratos/exec_20*.json
+            .cache/organograma
+            .cache/cargos
+          key: contratos-cache-${{ github.run_id }}
+          restore-keys: |
+            contratos-cache-
+
+      - name: Escolher o modo (diário ou completo)
+        id: modo
+        env:
+          COMPLETO: ${{ inputs.completo }}
+        run: |
+          if [ "$COMPLETO" = "true" ] || [ "$(date -u +%u)" = "7" ] || [ ! -s .cache/contratos/receita.json ]; then
+            echo "completo=sim" >> "$GITHUB_OUTPUT"; echo "Modo completo."
+          else
+            echo "completo=nao" >> "$GITHUB_OUTPUT"; echo "Modo diário."
+          fi
+
+      # --- passos do modo completo --------------------------------------------------------------------------------------------------
+      - name: Nomes de servidores (folha do último mês disponível)
+        if: steps.modo.outputs.completo == 'sim'
+        continue-on-error: true
+        run: |
+          # tenta o mês anterior e, se a folha ainda não saiu, o retrasado
+          for atras in 1 2 3; do
+            m=$(date -u -d "$(date -u +%Y-%m-01) -$atras month" +%Y-%m)
+            if python3 -I pipeline/cargos/extrair.py --meses "$m:$m" --jobs 6; then
+              python3 -I pipeline/cargos/extrair_vinculos.py && python3 -I pipeline/organograma/extrair_todos.py && exit 0
+            fi
+          done
+          echo "Folha não encontrada; os alertas de sócio com nome de servidor usam o cache anterior, se houver."; exit 1
+
+      # --- passos de todo dia (a Receita e as bases externas leem os CNPJs do SIGA, por isso vêm depois do download) --------------------------------------------------------------------------------------------------------
+      - name: Baixar o SIGA (contratos, alterações, empenhos e comissões)
+        run: python3 -I pipeline/contratos/baixar.py
+
+      # A Receita é lida só para os CNPJs dos contratos. No modo diário, CNPJs que entraram depois da última leitura ficam sem ficha até o próximo domingo.
+      - name: Cadastro da Receita Federal
+        if: steps.modo.outputs.completo == 'sim'
+        env:
+          PUBLICACAO: ${{ vars.RECEITA_PUBLICACAO }}
+        run: python3 -I pipeline/contratos/receita.py "${PUBLICACAO:-2026-09-14}"
+
+      - name: Bases externas (PGFN, CEIS/CNEP, TSE)
+        if: steps.modo.outputs.completo == 'sim'
+        continue-on-error: true
+        run: |
+          python3 -I pipeline/contratos/externos.py pgfn sancoes &
+          for a in 2018 2020 2022 2024; do python3 -I pipeline/contratos/externos.py "tse$a" & done
+          wait
+
+      - name: Execução da despesa (SIGEFES) aos CNPJs do SIGA
+        run: |
+          if [ "${{ steps.modo.outputs.completo }}" = "sim" ]; then
+            python3 -I pipeline/contratos/execucao.py 2021 2022 2023 2024 2025 2026
+          else
+            python3 -I pipeline/contratos/execucao.py 2025 2026
+          fi
+
+      # Base ampla: todos os pagamentos a CNPJ, inclusive de fornecedores que nunca passaram pelo SIGA; e os contratos do PNCP.
+      # Se algum falhar, o montar.py segue só com o SIGA e o aviso final deixa a execução vermelha.
+      - name: Execução completa da despesa (fornecedores fora do SIGA)
+        id: despesas
+        continue-on-error: true
+        run: python3 -I pipeline/contratos/despesas.py 2025 2026
+
+      - name: Contratos do PNCP
+        id: pncp
+        continue-on-error: true
+        run: python3 -I pipeline/contratos/pncp.py
+
+      - name: Montar data/contratacoes
+        run: python3 -I pipeline/contratos/montar.py
+
+      - name: Fim de mandato e lacunas
+        run: |
+          python3 -I pipeline/contratos/fimmandato.py
+          python3 -I pipeline/lacunas/montar.py
+
+      - name: Consulta pública do e-Docs (só em disparo manual)
+        id: edocs
+        if: inputs.edocs == true
+        continue-on-error: true
+        run: python3 -I pipeline/contratos/edocs.py --max 150
+
+      # Trava de sanidade: uma leitura que perdeu dados (download cortado, API fora do ar) não pode apagar o que já está publicado.
+      - name: Conferir se o resultado é plausível
+        run: |
+          python3 -I - <<'EOF'
+          import json, subprocess, sys
+          novo = json.load(open("data/contratacoes/index.json"))
+          try:
+              antigo = json.loads(subprocess.check_output(["git", "show", "HEAD:data/contratacoes/index.json"]))
+          except Exception:
+              print("Sem versão anterior para comparar."); sys.exit(0)
+          v = lambda d: sum(o["vigentes"] for o in d["orgs"])
+          a, n = v(antigo), v(novo)
+          print(f"contratos vigentes: antes {a}, agora {n}; órgãos: antes {len(antigo['orgs'])}, agora {len(novo['orgs'])}")
+          if n < 0.8 * a or len(novo["orgs"]) < 0.9 * len(antigo["orgs"]):
+              sys.exit("Queda grande demais nos contratos vigentes ou nos órgãos: nada foi gravado. Confira os passos acima.")
+          EOF
+
+      - name: Gravar no repositório (só data/contratacoes, data/fimmandato e data/lacunas; o deploy sai do push)
+        run: |
+          if [ -z "$(git status --porcelain -- data/contratacoes data/fimmandato data/lacunas)" ]; then
+            echo "Sem mudanças."; exit 0
+          fi
+          git config user.name "atualizacao-contratos"
+          git config user.email "atualizacao-contratos@users.noreply.github.com"
+          for d in data/contratacoes data/fimmandato data/lacunas; do if [ -e "$d" ]; then git add "$d"; fi; done
+          git commit -m "dados: contratos de $(date -u +%F)"
+          for tentativa in 1 2 3; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((tentativa * 5))
+          done
+          echo "Não foi possível enviar a atualização."; exit 1
+
+      - name: Guardar o cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            .cache/contratos/receita.json
+            .cache/contratos/ext
+            .cache/contratos/exec_20*.json
+            .cache/organograma
+            .cache/cargos
+          key: contratos-cache-${{ github.run_id }}
+
+      - name: Avisar se a base ampla ou o e-Docs falhou
+        if: steps.despesas.outcome == 'failure' || steps.pncp.outcome == 'failure' || steps.edocs.outcome == 'failure'
+        run: |
+          echo "A leitura completa da despesa, a do PNCP ou a do e-Docs falhou (veja os passos acima). Os dados foram publicados só com as fontes que funcionaram."
+          exit 1

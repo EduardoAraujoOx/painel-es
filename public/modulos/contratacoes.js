@@ -9,6 +9,7 @@
   const $ = (s) => raiz.querySelector(s);
 
   let dados = null;
+  const URL_EDOCS = 'https://processoeletronico.es.gov.br/?protocolo=';
   let CAMPOS = null;
   const cacheOrg = new Map();
   const cacheForn = new Map();
@@ -16,7 +17,7 @@
   let tokenRender = 0;
   const estado = {
     medida: 'anual', vista: PF.telaEstreita() ? 'lista' : 'mapa', ordemOrgs: { col: 'anualVigente', dir: -1 },
-    org: null, forn: null, origem: null, verTodosForn: false, verMaisPrioridades: false,
+    org: null, forn: null, origem: null, verTodosForn: false, verPncp: false, verMaisPrioridades: false,
     f: { situ: 'vigentes', cat: '', modal: '', alerta: '', ess: '', ca: '', q: '' }, dg: { base: 'anual', corte: 80, pub: true, mais: 25, casos: 40, sensivel: false, aberto: new Set(), f: { org: '', cat: '', modal: '', ess: '', alerta: '', soAlerta: false, q: '' } }, rev: { status: '', motivo: '', org: '', decididos: false, sensivel: false }, msg: '', tela: '', par: { base: 'anual', ess: new Set(), corte: 80, mais: 10, pub: true }, ordem: { col: 'anual', dir: -1 }, limite: 50,
     aberto: new Set(),
   };
@@ -60,7 +61,7 @@
   const contrato = (linha) => Object.fromEntries(CAMPOS.map((k, i) => [k, linha[i]]));
 
   // ---------- navegação ----------
-  function irOrg(id) { estado.f = { situ: 'vigentes', cat: '', modal: '', alerta: '', ess: '', ca: '', q: '' }; estado.limite = 50; estado.aberto.clear(); estado.verTodosForn = false; ctx.irPara(String(id)); }
+  function irOrg(id) { estado.f = { situ: 'vigentes', cat: '', modal: '', alerta: '', ess: '', ca: '', q: '' }; estado.limite = 50; estado.aberto.clear(); estado.verTodosForn = false; estado.verPncp = false; ctx.irPara(String(id)); }
   function irForn(cnpj, origem) { estado.origem = origem == null ? estado.org : origem; ctx.irPara('f:' + cnpj); }
   function aoNavegar(resto) {
     if (!dados) return;
@@ -319,7 +320,32 @@
     graficoBarras(cSerie, { meses: det.serie.anos.map(String), rotulo: (m) => m, rotuloLongo: (m) => m, eixo: brlCompacto, fmt: brlCompacto,
       series: [{ nome: 'Contratado', cor: 'var(--serie-1)', barra: true, vals: det.serie.contratado }, { nome: 'Empenhado', cor: 'var(--serie-2)', barra: true, vals: det.serie.empenhado }] });
 
-    c.replaceChildren(...[kp, perfil, aviso, el('div', { class: 'duas-colunas' }, cCat, cMod), cEss, cForn, cartaoPareto(paretoItensOrg(det.fornecedores), 'Regra de Pareto: poucos fornecedores, quase todo o valor', org.id), cSerie, cartaoContratos(todos, org)].filter(Boolean));
+    c.replaceChildren(...[kp, perfil, aviso, el('div', { class: 'duas-colunas' }, cCat, cMod), cEss, cForn, cartaoPareto(paretoItensOrg(det.fornecedores), 'Regra de Pareto: poucos fornecedores, quase todo o valor', org.id), cSerie, cartaoPncp(det.pncp, org), cartaoContratos(todos, org)].filter(Boolean));
+  }
+
+  // Contratos vigentes publicados no PNCP que não constam do SIGA do órgão (ver "Como ler" na descrição do cartão).
+  function cartaoPncp(lista, org) {
+    if (!lista || !lista.length) return null;
+    const hoje = dados.ref;
+    const vig = lista.filter((x) => !x.fim || x.fim >= hoje);
+    if (!vig.length) return null;
+    const [aAnt, aAtu] = dados.anosGasto;
+    const visiveis = estado.verPncp ? vig : vig.slice(0, 10);
+    const linhas = visiveis.map((x) => el('tr', {},
+      el('td', { class: 'objeto' }, el('strong', {}, nomeProprio(x.forn)), el('small', {}, x.objeto.length > 150 ? x.objeto.slice(0, 150) + '…' : x.objeto)),
+      el('td', { class: 'num' }, brlCompacto(x.valor)),
+      el('td', {}, dataBR(x.ini), el('small', {}, `até ${dataBR(x.fim)}`)),
+      el('td', { class: 'num' }, x.pagoAtu > 0 ? brlCompacto(x.pagoAtu) : '—'),
+      el('td', {}, x.processo && /^\d{4}-[0-9A-Z]{5}$/.test(x.processo) ? el('a', { href: URL_EDOCS + encodeURIComponent(x.processo), target: '_blank', rel: 'noopener noreferrer' }, x.processo) : (x.processo || '—')),
+      el('td', {}, el('a', { href: x.link, target: '_blank', rel: 'noopener noreferrer' }, 'PNCP'))));
+    return el('div', { class: 'cartao', id: 'so-pncp' }, el('div', { class: 'cartao-topo' }, el('div', {},
+      el('h2', {}, `Contratos vigentes só no PNCP (${nInt.format(vig.length)})`),
+      el('p', {}, `Contratos que o órgão publicou no Portal Nacional de Contratações Públicas e que não casam com nenhum contrato do SIGA do mesmo fornecedor (pelo número do processo ou, na falta dele, por data de assinatura com até 60 dias de diferença). Somam ${brlCompacto(soma(vig, (x) => x.valor))} em valor global. A coluna "pago ${aAtu}" vem do SIGEFES, por fornecedor e unidade gestora do órgão, e pode incluir pagamentos de outros contratos do mesmo fornecedor.`))),
+    el('div', { class: 'rolagem' }, el('table', {},
+      el('thead', {}, el('tr', {}, ['Fornecedor e objeto', 'Valor global', 'Vigência', `Pago ${aAtu}`, 'Processo (e-Docs)', 'Fonte'].map((t) => el('th', {}, t)))),
+      el('tbody', {}, linhas))),
+    vig.length > 10 ? el('div', { class: 'rodape-tabela' }, el('button', { type: 'button', class: 'botao',
+      onclick: () => { estado.verPncp = !estado.verPncp; render(true); } }, estado.verPncp ? 'Mostrar menos' : `Mostrar os ${nInt.format(vig.length)}`)) : null);
   }
 
   function cartaoContratos(todos, org) {
@@ -362,7 +388,11 @@
           ['Celebração', dataBR(k.cel)], ['Vigência', `${dataBR(k.ini)} a ${dataBR(k.fim)}` + (k.fimef !== k.fim ? ` (com aditivos: até ${dataBR(k.fimef)})` : '')],
           ['Valor inicial → final', `${brlCompacto(k.vini)} → ${brlCompacto(k.vfin)}`], ['Ainda a receber (estimativa)', brlCompacto(k.restante)], ['Pago nos empenhos do contrato', k.pago > 0 ? `${brlCompacto(k.pago23)} desde ${MANDATO} (${dados.anosGasto[0]}: ${brlCompacto(k.pagoAnt)} · ${dados.anosGasto[1]}: ${brlCompacto(k.pagoAtu)}); ${brlCompacto(k.pago)} desde 2021` : 'nenhum pagamento vinculado aos empenhos registrados'], ['Essencialidade sugerida', ESS()[k.ess]],
           ['Empenhado', `${dados.anosGasto[0]}: ${brlCompacto(k.empAnt)} · ${dados.anosGasto[1]}: ${brlCompacto(k.empAtu)}`],
-          ['Situação no SIGA', k.sit]].flatMap(([t, v]) => [el('dt', {}, t), el('dd', {}, v)]));
+          ['Situação no SIGA', k.sit],
+          ...(k.pncp != null ? [['Valor global no PNCP', el('span', {}, brlCompacto(k.pncp), ' ', k.pncpLink ? el('a', { href: k.pncpLink, target: '_blank', rel: 'noopener noreferrer', onclick: (ev) => ev.stopPropagation() }, 'abrir no PNCP') : null)]] : []),
+          ...(k.edocs ? [['Processo no e-Docs', el('a', { href: URL_EDOCS + encodeURIComponent(k.edocs), target: '_blank', rel: 'noopener noreferrer', onclick: (ev) => ev.stopPropagation() }, k.edocs + ' (consulta pública)')]] : []),
+          ...(k.gestao && k.gestao.length ? [['Gestão e fiscalização (SIGA)', el('span', {}, k.gestao.map(([fn, nome, setor, ini, fim, sit]) => `${fn}: ${nomeProprio(nome)}${setor ? ' (' + setor + ')' : ''}${ini ? ', desde ' + dataBR(ini) : ''}${fim ? ' até ' + dataBR(fim) : ''}${sit ? ' [' + sit + ']' : ''}`).join(' · '))]] : [])
+        ].flatMap(([t, v]) => [el('dt', {}, t), el('dd', {}, v)]));
       const alertas = k.alertas.length ? el('ul', { class: 'lista-alertas' }, k.alertas.map((a) => el('li', {}, selo(a), ' ', dados.alertas[a.split(':')[0]].descricao))) : null;
       const acao = el('button', { type: 'button', class: 'botao', onclick: (ev) => { ev.stopPropagation(); irForn(k.cnpj, org.id); } }, 'Ficha do fornecedor e sócios');
       return [tr, el('tr', { class: 'detalhe-linha' }, el('td', { colspan: 6 }, dl, alertas, formRevisao(org, k), acao))];

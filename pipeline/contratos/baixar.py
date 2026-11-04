@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Baixa do Portal da Transparência do ES (dados abertos, sistema SIGA) os arquivos anuais de
-Contratos, Alterações Contratuais e Empenhos, e os guarda em .cache/contratos/ (não vão ao Git).
+Contratos, Alterações Contratuais, Empenhos e Comissões (gestor e fiscal de cada contrato), e os guarda em .cache/contratos/ (não vão ao Git).
 
 Uso: python3 -I pipeline/contratos/baixar.py [ano_inicial]     (padrão: 2016)
 """
@@ -13,7 +13,7 @@ import sys
 RAIZ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 CACHE = os.path.join(RAIZ, ".cache", "contratos")
 PACOTE = "https://dados.es.gov.br/api/3/action/package_show?id=portal-da-transparencia-contratos"
-PREFIXO = {"Contratos": "c", "AlteracoesContratuais": "a", "Empenhos": "e"}
+PREFIXO = {"Contratos": "c", "AlteracoesContratuais": "a", "Empenhos": "e", "Comissoes": "k"}   # k: gestor e fiscal de cada contrato
 
 
 def curl(url, destino=None):
@@ -31,7 +31,7 @@ def main():
     recursos = json.loads(curl(PACOTE))["result"]["resources"]
     n = 0
     for r in recursos:
-        m = re.match(r"(Contratos|AlteracoesContratuais|Empenhos)-(\d{4})\.csv$", r["name"])
+        m = re.match(r"(Contratos|AlteracoesContratuais|Empenhos|Comissoes)-(\d{4})\.csv$", r["name"])
         if not m or int(m.group(2)) < inicial:
             continue
         destino = os.path.join(CACHE, f"{PREFIXO[m.group(1)]}{m.group(2)}.csv")

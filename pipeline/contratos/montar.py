@@ -20,6 +20,7 @@ import shutil
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import amplo as AM  # noqa: E402
 import externos as X  # noqa: E402
 import regras as R  # noqa: E402
 
@@ -142,6 +143,109 @@ def carregar_execucao():
 EXEC = {"ne": {}, "ne_ug": {}, "ug_org": {}, "ugs": {}, "mes": [], "anos": []}
 
 
+# Elementos de despesa que são compra de bens e contratação de serviços e obras (os que um contrato sustenta). Ficam de fora transferências
+# (auxílios, subvenções, contribuições), contratos de gestão com organizações sociais, dívida, tributos, sentenças, pessoal e imóveis.
+ELEMENTOS_CONTRATACAO = {"30": "material de consumo", "32": "material de distribuição gratuita", "33": "passagens e locomoção", "34": "terceirização de pessoal",
+                         "35": "serviços de consultoria", "37": "locação de mão de obra", "38": "arrendamento mercantil", "39": "outros serviços de terceiros, pessoa jurídica",
+                         "40": "serviços de tecnologia da informação e comunicação", "51": "obras e instalações", "52": "equipamentos e material permanente"}
+
+
+def carregar_comissoes():
+    """Gestor e fiscal de cada contrato (arquivo de comissões do SIGA, baixar.py): idContrato -> linhas. Liga-se ao contrato pelo idOrigem."""
+    por = collections.defaultdict(list)
+    for r in ler("k20*.csv"):
+        por[(r.get("idContrato") or "").strip()].append(r)
+    return por
+
+
+def complementar_execucao(cnpjs_siga):
+    """Soma à execução os pagamentos do SIGEFES completo (despesas.py) a CNPJs que NÃO aparecem em nenhum documento do SIGA,
+    limitados aos elementos de despesa de contratação (ELEMENTOS_CONTRATACAO).
+
+    execucao.py só guarda os CNPJs do SIGA; esses ficavam fora do pago dos órgãos. Para os CNPJs do SIGA vale o que o execucao.py já leu
+    (com o vínculo por empenho), de modo que nada é contado duas vezes. Só entram anos para os quais há execucao.py (as séries ficam comparáveis)."""
+    soma, nomes_ug, nomes_fav = collections.defaultdict(lambda: [0.0, 0.0, 0.0]), {}, {}
+    for f in sorted(glob.glob(os.path.join(CACHE, "despesas_20??.json"))):
+        d = json.load(open(f))
+        if str(d["ano"]) not in [str(a) for a in EXEC["anos"]]:
+            continue
+        for cnpj, ug, el, _ct, _lic, mes, emp_, liq_, pago_ in d["linhas"]:
+            if cnpj in cnpjs_siga or el not in ELEMENTOS_CONTRATACAO:
+                continue
+            x = soma[(cnpj, ug, mes)]
+            x[0] += emp_
+            x[1] += liq_
+            x[2] += pago_
+        for k, v in d["nomes"].items():
+            if k.startswith("UG"):
+                nomes_ug[k[2:]] = v
+            elif not k.startswith("EL"):
+                nomes_fav.setdefault(k, v)
+    for (cnpj, ug, mes), v in soma.items():
+        EXEC["mes"].append([cnpj, ug, mes, v])
+    for ug, v in nomes_ug.items():
+        EXEC["ugs"].setdefault(ug, v)
+    EXEC.setdefault("nomes_fav", {}).update(nomes_fav)
+    return len(soma), sum(v[2] for v in soma.values())
+
+
+def carregar_pncp():
+    """Contratos do PNCP dos órgãos estaduais (pncp.py), ou None se o arquivo não foi gerado."""
+    try:
+        return json.load(open(os.path.join(CACHE, "pncp_estado.json")))
+    except OSError:
+        return None
+
+
+def cruzar_pncp(recs, pncp, nome_do_org):
+    """Liga os contratos do PNCP aos do SIGA. Marca cada contrato do SIGA com o valor global e o link do PNCP e devolve, por órgão do SIGA,
+    os contratos que só existem no PNCP e seguem vigentes na data de referência.
+
+    O órgão do PNCP (CNPJ) é ligado ao órgão do SIGA pela maioria dos contratos que casam por processo e fornecedor; na falta, pelo nome."""
+    siga_por_chave = collections.defaultdict(collections.Counter)
+    for c in recs:
+        if c["inst"] == "contrato":
+            siga_por_chave[(c["cnpj"], AM.normaliza_processo(c["proc"]))][c["org"]] += 1
+    nome2org = {R.norm_nome(n): o for o, n in nome_do_org.items()}
+    todos = []
+    for cnpj_org, lista in pncp["contratos"].items():
+        lista = [x for x in lista if x.get("esfera") == "E" and x.get("poder") not in ("J", "L")]
+        votos = collections.Counter()
+        for x in lista:
+            votos.update(siga_por_chave.get((x["cnpj"], AM.normaliza_processo(x["processo"])), {}))
+        org = None
+        if votos:
+            top, n = votos.most_common(1)[0]
+            if n >= 2 or len(lista) <= 10:
+                org = top
+        if org is None:
+            nm = R.norm_nome(pncp.get("orgaos", {}).get(cnpj_org, ""))
+            org = nome2org.get(nm)
+        if org is None:
+            continue
+        todos += [(org, x) for x in lista]
+    so_pncp, pares_n = collections.defaultdict(list), 0
+    por_org = collections.defaultdict(list)
+    for org, x in todos:
+        por_org[org].append(x)
+    ref = REF.isoformat()
+    for org, lista in por_org.items():
+        meus = [c for c in recs if c["org"] == org and c["inst"] == "contrato"]
+        data = lambda s: datetime.date.fromisoformat(s) if s else None
+        pares, sp, _ = AM.casar([{"cnpj": c["cnpj"], "processo": c["proc"], "data": c["cel"] or c["ini"]} for c in meus],
+                                [{"cnpj": x["cnpj"], "processo": x["processo"], "data": data(x["assinatura"])} for x in lista])
+        for i, j in pares:
+            meus[j]["pncp_valor"] = lista[i]["valorGlobal"]
+            meus[j]["pncp_link"] = f"https://pncp.gov.br/app/contratos/{lista[i]['orgaoCnpj']}/{lista[i]['ano']}/{lista[i]['sequencial']}"
+        pares_n += len(pares)
+        for i in sp:
+            x = lista[i]
+            if not x["fim"] or x["fim"] >= ref:
+                so_pncp[org].append(x)
+    print(f"PNCP: {sum(len(v) for v in por_org.values())} contratos de {len(por_org)} órgãos do SIGA; {pares_n} casam com o SIGA; {sum(len(v) for v in so_pncp.values())} vigentes só no PNCP", flush=True)
+    return so_pncp
+
+
 def meses_entre(a, b):
     return max(0.0, (b - a).days / 30.4375) if a and b else 0.0
 
@@ -166,7 +270,7 @@ def montar_contratos():
             "objeto": re.sub(r"\s+", " ", r["Objeto"]).strip(), "forn": r["Fornecedor"].strip(), "cnpj": cnpj,
             "vini": num(r["ValorInicial"]), "vfin": num(r["ValorFinal"]),
             "cel": cel, "ini": ini or cel, "fim": fim, "fim_ef": fim_ef, "sit": r["Situacao"].strip(),
-            "fora_siga": (r.get("procRealizadoSiga") or "").strip().upper() == "N", "reg_preco": (r.get("eRegistroPreco") or "").upper() == "S",
+            "id_origem": (r.get("idOrigem") or "").strip(), "fora_siga": (r.get("procRealizadoSiga") or "").strip().upper() == "N", "reg_preco": (r.get("eRegistroPreco") or "").upper() == "S",
             "n_alt": len(al), "n_pror": n_pror, "emp": emp, "emp_tot": sum(emp.values()), "nes": nes.get((proc, doc), set()),
         })
     return recs
@@ -469,6 +573,12 @@ def main():
         c["nes_excl"] = {k for k in c["nes"] if uso_ne[k] == 1}
     recs = [avaliar_contrato(c) for c in brutos_recs]
     print(f"execução: anos {EXEC['anos']}; {sum(1 for c in recs if c['ligado'])} contratos com empenho vinculado a pagamentos", flush=True)
+    n_compl, v_compl = complementar_execucao({c["cnpj"] for c in recs})
+    print(f"execução completa (despesas.py): {n_compl} grupos CNPJ x UG x mês de fornecedores fora do SIGA, R$ {v_compl:,.0f} pagos" if n_compl else "execução completa (despesas.py): não gerada; o pago cobre só os CNPJs do SIGA", flush=True)
+    comissoes = carregar_comissoes()
+    for c in recs:
+        c["gestao"] = AM.resumir_gestao(comissoes.get(c["id_origem"], [])) if c["id_origem"] else []
+    print(f"comissões: {sum(1 for c in recs if c['gestao'] and c['inst'] == 'contrato')} de {sum(1 for c in recs if c['inst'] == 'contrato')} contratos com gestor ou fiscal publicado", flush=True)
     # unidade gestora do SIGEFES -> órgão do SIGA: pela maioria dos empenhos vinculados a contratos; na falta, pelo nome
     votos = collections.defaultdict(collections.Counter)
     for c in recs:
@@ -571,7 +681,7 @@ def main():
         v_ = sum(po_.get(int(y), 0.0) for y in ANOS_GASTO)
         if (o_, cnpj_) in fo or o_ not in org_nome or v_ <= 0:
             continue
-        fo[(o_, cnpj_)]["nome"] = nomes_cnpj.get(cnpj_, cnpj_)
+        fo[(o_, cnpj_)]["nome"] = nomes_cnpj.get(cnpj_) or EXEC.get("nomes_fav", {}).get(cnpj_, cnpj_)
         sem_doc_n += 1
         sem_doc_v += v_
     print(f"pagamentos a CNPJs sem documento do SIGA no órgão pagador: {sem_doc_n} pares órgão x CNPJ, R$ {sem_doc_v:,.0f} em {ANOS_GASTO[0]}–{ANOS_GASTO[1]}", flush=True)
@@ -674,7 +784,11 @@ def main():
         return melhor
 
     pontos_forn = {k: sum(nivel_peso[n] for n in unicos(v).values()) for k, v in alertas_forn.items()}
-    CAMPOS = ["doc", "proc", "forn", "cnpj", "objeto", "cat", "modal", "vini", "vfin", "cel", "ini", "fim", "fimef", "sit", "anual", "saldo", "empAnt", "empAtu", "npror", "rp", "ess", "restante", "pago", "pagoAnt", "pagoAtu", "pago23", "classeA", "alertas"]
+    CAMPOS = ["doc", "proc", "forn", "cnpj", "objeto", "cat", "modal", "vini", "vfin", "cel", "ini", "fim", "fimef", "sit", "anual", "saldo", "empAnt", "empAtu", "npror", "rp", "ess", "restante", "pago", "pagoAnt", "pagoAtu", "pago23", "classeA", "alertas", "pncp", "pncpLink", "gestao", "edocs"]
+    pncp_dados = carregar_pncp()
+    so_pncp_org = cruzar_pncp(recs, pncp_dados, org_nome) if pncp_dados else {}
+    if not pncp_dados:
+        print("PNCP: arquivo não gerado (pncp.py); o painel fica só com o SIGA", flush=True)
     for org in sorted(org_nome):
         meus = [c for c in recs if c["org"] == org]
         alvo = [c for c in meus if c["vigente"] or any(a[0] in ("vigencia_vencida", "situacao_divergente") for a in c["alertas"])]
@@ -684,7 +798,8 @@ def main():
                       round(c["anual"], 2), None if c["saldo"] is None else round(c["saldo"], 2),
                       round(c["emp"].get(ANOS_GASTO[0], 0.0), 2), round(c["emp"].get(ANOS_GASTO[1], 0.0), 2), c["n_pror"], int(c["reg_preco"]), c["ess"], round(c["restante"], 2),
                       round(c["pago"], 2), round(c["pago_ano"].get(int(ANOS_GASTO[0]), 0.0), 2), round(c["pago_ano"].get(int(ANOS_GASTO[1]), 0.0), 2), round(pago_mandato(c), 2),
-                      int((c["org"], c["proc"], c["doc"]) in classe_a), [f"{a}:{n}" for a, n in c["alertas"]]] for c in alvo]
+                      int((c["org"], c["proc"], c["doc"]) in classe_a), [f"{a}:{n}" for a, n in c["alertas"]],
+                      None if c.get("pncp_valor") is None else round(c["pncp_valor"], 2), c.get("pncp_link", ""), c["gestao"][:4], AM.protocolo_edocs(c["proc"]) or ""] for c in alvo]
         for c in alvo:
             pc = sum(nivel_peso[n] for _, n in c["alertas"])
             pf = pontos_forn.get(c["cnpj"], 0)
@@ -753,10 +868,16 @@ def main():
         resumo["coberturaEmpenho"] = round((resumo["empAnt"] + resumo["empAtu"]) / max(1, len(ANOS_GASTO)) / resumo["anualVigente"], 4) if resumo["anualVigente"] else None
         if not (resumo["vigentes"] or resumo["empAnt"] or resumo["empAtu"] or resumo["contratadoRecente"] or resumo["pagoAnt"] or resumo["pagoAtu"]):
             continue
+        so_pncp = sorted(so_pncp_org.get(org, []), key=lambda x: -(x["valorGlobal"] or 0))
+        resumo["pncpSoNoPncp"] = len(so_pncp)
+        resumo["pncpSoValor"] = round(sum(x["valorGlobal"] or 0 for x in so_pncp), 2)
         indice_orgs.append(resumo)
         serie = {"anos": ANOS_SERIE, "contratado": [round(org_ano_cont[org].get(y, 0.0), 2) for y in ANOS_SERIE],
                  "empenhado": [round(org_ano_emp[org].get(y, 0.0), 2) for y in ANOS_SERIE]}
-        json.dump({"org": resumo, "campos": CAMPOS, "contratos": contratos, "fornecedores": forns[:120],
+        pncp_bloco = [{"controle": x["controle"], "link": f"https://pncp.gov.br/app/contratos/{x['orgaoCnpj']}/{x['ano']}/{x['sequencial']}", "forn": x["fornecedor"], "cnpj": x["cnpj"],
+                       "objeto": x["objeto"][:260], "valor": x["valorGlobal"], "ini": x["ini"], "fim": x["fim"], "assinatura": x["assinatura"], "processo": AM.protocolo_edocs(x["processo"]) or x["processo"],
+                       "categoria": x["categoria"], "tipo": x["tipo"], "pagoAtu": round(pago_of.get((org, x["cnpj"]), {}).get(int(ANOS_GASTO[1]), 0.0), 2)} for x in so_pncp[:150]]
+        json.dump({"org": resumo, "campos": CAMPOS, "contratos": contratos, "pncp": pncp_bloco, "fornecedores": forns[:120],
                    "categorias": [[k, round(v, 2)] for k, v in org_cat[org].most_common()],
                    "modalidades": [[k, round(v, 2)] for k, v in org_modal[org].most_common()], "serie": serie},
                   open(os.path.join(DESTINO, "org", f"{org}.json"), "w"), ensure_ascii=False, separators=(",", ":"))
@@ -880,6 +1001,9 @@ def main():
     json.dump({"ref": iso(REF), "anosGasto": list(ANOS_GASTO), "receita": receita["publicacao"],
                "alertas": {k: {"nivel": v[0], "titulo": v[1], "descricao": v[2], "esclarecer": R.ESCLARECER.get(k, "")} for k, v in R.ALERTAS.items()},
                "limiteDispensa": R.LIMITE_DISPENSA, "fontesExternas": fontes_ext, "execucaoAnos": EXEC["anos"], "essencialidade": R.ROTULO_ESSENCIALIDADE,
+               "baseAmpla": {"pncp": {"geradoEm": pncp_dados["geradoEm"], "inicio": pncp_dados["inicio"], "fim": pncp_dados["fim"], "contratos": sum(len(v) for v in pncp_dados["contratos"].values())} if pncp_dados else None,
+                             "despesasCompletas": sorted(os.path.basename(f)[10:14] for f in glob.glob(os.path.join(CACHE, "despesas_20??.json"))),
+                             "comissoes": sum(1 for c in recs if c["gestao"] and c["inst"] == "contrato"), "contratosSiga": sum(1 for c in recs if c["inst"] == "contrato")},
                "fonte": {"contratos": "Portal da Transparência do ES — Contratos, Alterações Contratuais e Empenhos (SIGA)",
                          "cadastro": f"Receita Federal — dados abertos do CNPJ, publicação de {receita['publicacao']}"},
                "prioridades": prioridades[:80], "classeA": {"contratos": len(classe_a), "vigentes": len(vig_ord), "valor": round(sum(c["anual"] for c in vig_ord if (c["org"], c["proc"], c["doc"]) in classe_a), 2), "total": round(total_anual_vig, 2)}, "topFornecedores": top_forn,
