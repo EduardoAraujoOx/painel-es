@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-04",
- "gerado_em": "2026-11-04T22:17:18Z",
+ "gerado_em": "2026-11-04T22:40:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -33,8 +33,8 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 8,
+   "lidos": 10,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
@@ -49,8 +49,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 14,
-   "aceitos": 2,
+   "lidos": 15,
+   "aceitos": 3,
    "possiveis": 2
   },
   {
@@ -82,7 +82,7 @@
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
    "lidos": 12,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 66,
+   "lidos": 68,
    "aceitos": 3,
    "possiveis": 4
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 32,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 24,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -155,7 +155,7 @@
    "ok": true,
    "lidos": 29,
    "aceitos": 3,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -206,20 +206,32 @@
    "possiveis": 3
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 311,
-  "sem_contexto_com_tema": 7,
+  "sem_contexto": 314,
+  "sem_contexto_com_tema": 8,
   "possivel": 21,
   "veiculo_excluido": 39,
   "excluir": 5,
   "exterior_sem_ancora": 19,
   "outro_estado": 23,
   "caixa_alta": 1,
-  "veiculo_outra_praca": 5,
-  "sigla_sem_ancora": 6
+  "veiculo_outra_praca": 3,
+  "sigla_sem_ancora": 7
  },
  "itens": [
+  {
+   "id": "286f7ea265b2",
+   "titulo": "Enem: gratuidade no Transcol exclui candidatos sem cartão escolar",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQOGduMnBHNTdOdTJHVGVRLU1PSjhkSnNuVmxtVjVGX0JkOTJXOTFab0ZuYy1sbHl4bV9FM0hZOG10aWNnTlBCeUplX3o1NWVkSXVvb2dnQm0tNUlnakZNUkhmSS1jeHluSUwwZm9TU2l3V2ZWMjNNVWxKU1ZiQ19WNDN0eExQWmpaeWNEN2VhTWRXSzZGTkdLZjBjcFZ3ZUxiSXY1Skt4UGQzUQ?oc=5",
+   "data": "2026-11-04T22:19:49Z",
+   "coletado_em": "2026-11-04T22:40:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
   {
    "id": "b20e519cb664",
    "titulo": "Tornado causa destruição e voos são suspensos no aeroporto de Chapecó",
