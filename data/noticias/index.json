@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-04",
- "gerado_em": "2026-11-04T14:17:15Z",
+ "gerado_em": "2026-11-04T16:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,16 +17,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 6,
-   "possiveis": 1
+   "lidos": 9,
+   "aceitos": 5,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 47,
-   "aceitos": 25,
+   "lidos": 29,
+   "aceitos": 19,
    "possiveis": 2
   },
   {
@@ -34,24 +34,24 @@
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 10,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 5,
+   "lidos": 6,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 15,
+   "lidos": 14,
    "aceitos": 2,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,15 +89,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 62,
+   "lidos": 57,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 75,
+   "lidos": 67,
    "aceitos": 3,
    "possiveis": 5
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 6,
+   "lidos": 9,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -131,13 +131,13 @@
    "ok": true,
    "lidos": 14,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 42,
+   "lidos": 27,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 57,
+   "lidos": 29,
    "aceitos": 3,
-   "possiveis": 7
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 58,
+   "lidos": 60,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 7,
+   "aceitos": 4,
    "possiveis": 6
   },
   {
@@ -178,8 +178,8 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
-   "possiveis": 1
+   "aceitos": 0,
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -194,7 +194,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -206,20 +206,79 @@
    "possiveis": 2
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto_com_tema": 13,
-  "sem_contexto": 322,
-  "possivel": 25,
-  "caixa_alta": 3,
-  "veiculo_excluido": 41,
-  "exterior_sem_ancora": 18,
+  "sem_contexto": 302,
+  "sem_contexto_com_tema": 8,
+  "possivel": 22,
+  "veiculo_excluido": 34,
   "excluir": 5,
-  "outro_estado": 41,
-  "veiculo_outra_praca": 13,
-  "sigla_sem_ancora": 8
+  "exterior_sem_ancora": 19,
+  "outro_estado": 29,
+  "caixa_alta": 1,
+  "veiculo_outra_praca": 5,
+  "sigla_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "ccebc509e689",
+   "titulo": "MPF recorre ao STJ contra retorno de Serrinha ao mandato de vereador",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/mpf-serrinha-revisao-no-stj-mandato/",
+   "data": "2026-11-04T15:52:06Z",
+   "coletado_em": "2026-11-04T16:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "95a1721eb8d2",
+   "titulo": "Congresso em Vitória debate reajustes e negativas dos planos de saúde",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/espirito-santo/2026/11/congresso-planos-de-saude/",
+   "data": "2026-11-04T15:15:01Z",
+   "coletado_em": "2026-11-04T16:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "699ef3ead7d1",
+   "titulo": "Saúde, combate ao feminicídio e auditoria em obras paralisadas: Lorenzo Pazolini detalha prioridades para o ES em 2027",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/entrevistas-pazolini-eleito/",
+   "data": "2026-11-04T14:23:12Z",
+   "coletado_em": "2026-11-04T16:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "restricao",
+    "governador",
+    "contratos",
+    "controle"
+   ]
+  },
+  {
+   "id": "328fa9c24f05",
+   "titulo": "Pazolini antecipa a ES Hoje suas prioridades",
+   "veiculo": "ES Hoje",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1VVEtzQ0VJRFNWWmEyMXMyMUx4cHprYks5a0JPZXBzVmdhV1ZVNFM0R2Uta0Vvbl9VMlFQZlNMeWJzSU4xMEFud3BTT2RxbEMxdUg0eVhiOU80ZndUd0FSdnpnMnhMNDdGaGRkcERaa090amtleHc?oc=5",
+   "data": "2026-11-04T14:23:12Z",
+   "coletado_em": "2026-11-04T16:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "77950634e39b",
    "titulo": "Imposto sobre diesel subirá R$ 0,13 e R$ 0,07 sobre a gasolina no ES",
@@ -393,6 +452,18 @@
      "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNQ00wUmtXRUt4WXpobnR0QzNObDJHYXZtcktoNm5XS1NDMVA5WXdFcnFsbkdyYm8wZGNSc0N0OVhDLTVFMUJTZTg1NU5wRGJHYlpYVTh5VUI0c1J5b3V3dW8wTmlmVzhpNU1rVElPSG00eTQ5c3pVVy0zMWthSzUxUTBidUJ1YzBhTjktMUprU21lX1FjOWhxZExLQlkwZ09YaHJFdkpMVmR1RlhxN3d1RWlJRWZ4a05YTk0yS2ZUd3NaOW5EYlhGUUU0YjhzcUt5QnlFbm1FWGplMW9NS1ZXNHRpVEp2aEJONEFpcWFpUURLNHJXWkhQSFcwVlhqc1ZHMkswQnU0MXJXeXd5eWRKNEtn0gGgAkFVX3lxTFBQaTNWV1QxX01pSS1UV1FxeW9SNmtlRVI3TlZGTjlramxxaVVDWUxLR0luY2ZpU3ZzQ2U4SFlCbHZjX0Vza3BiMVpRZDV4endhYTRaNjZ5Ym9wcXdRQUs5ZkRuM01QcEVtdm5hS3RNU2FtWFhVSWdIdEk2UW9lcGZzelFsT210NW54NG9jdTktN1dNdjVEeHRCU1J5ZVpMUlBtX1ZfdlZRTGRjSmR3Q0RLbnVGUWVTcVRSSVZVR2dVencyVjhYWkY0eWQyYmxqRFdtN2JpeVBJdlA1YXppUG5UWHViZl9fNGprd0FnMXpDUzVXdWhTVlBOZDh5bGJOUVpsQjhaNWh1bWtpU1JmT05yak8zQ0hpQWU2b1ZlR05qaQ?oc=5"
     }
    ],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "5fccfef3d921",
+   "titulo": "Cidade do ES tem 328 galinhas e perus para cada morador; média do estado é de cinco; veja todos os municípios",
+   "veiculo": "G1 Espírito Santo",
+   "url": "https://g1.globo.com/es/espirito-santo/agronegocios/noticia/2026/11/04/cidade-do-es-tem-327-galinhas-e-perus-para-cada-morador-media-do-estado-e-de-cinco-veja-todos-os-municipios.ghtml",
+   "data": "2026-11-04T07:00:00Z",
+   "coletado_em": "2026-11-04T16:17:13Z",
+   "outras": [],
    "possivel": true,
    "triagem": 3,
    "temas": []
