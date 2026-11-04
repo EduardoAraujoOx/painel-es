@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-04",
- "gerado_em": "2026-11-04T17:15:51Z",
+ "gerado_em": "2026-11-04T17:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 67,
+   "lidos": 66,
    "aceitos": 3,
    "possiveis": 5
   },
@@ -155,7 +155,7 @@
    "ok": true,
    "lidos": 29,
    "aceitos": 3,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -171,7 +171,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 3,
-   "possiveis": 6
+   "possiveis": 7
   },
   {
    "fonte": "Folha Vitória",
@@ -206,20 +206,34 @@
    "possiveis": 2
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 307,
-  "sem_contexto_com_tema": 8,
-  "possivel": 22,
+  "sem_contexto": 305,
+  "sem_contexto_com_tema": 9,
+  "possivel": 23,
   "veiculo_excluido": 36,
   "excluir": 5,
   "exterior_sem_ancora": 17,
   "outro_estado": 28,
   "caixa_alta": 1,
   "veiculo_outra_praca": 5,
-  "sigla_sem_ancora": 5
+  "sigla_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "988cb502f32e",
+   "titulo": "A dois meses para entrega de parque urbano, Vila Velha só fez 30% da obra",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/cotidiano/a-dois-meses-para-entrega-de-parque-urbano-vila-velha-so-fez-30-da-obra-1126",
+   "data": "2026-11-04T17:09:29Z",
+   "coletado_em": "2026-11-04T17:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "4f9d9ee8a6ca",
    "titulo": "Sedu publica 6ª edição de e-book com mais de 170 práticas pedagógicas",
