@@ -169,7 +169,7 @@ O SIGA não esgota os contratos dos órgãos. Em 2025–2026, por exemplo, o ITI
 
 **Gestor e fiscal.** O arquivo de comissões do SIGA liga cada contrato (`idOrigem` = `idContrato`) às pessoas designadas, com função, setor, datas e situação. A ficha do contrato mostra gestor, suplente, fiscal e suplente (`amplo.resumir_gestao`). A cobertura é parcial.
 
-**e-Docs.** O número do processo do SIGA (`NumeroProcesso`) é o protocolo do e-Docs (formato `AAAA-XXXXX`). A ficha do contrato traz o link da consulta pública de processos. `edocs.py` é opcional, consulta até 400 processos por execução, a 1 por segundo, e identifica o painel no User-Agent; não usa a API oficial, que exige credencial de órgão.
+**e-Docs.** O número do processo do SIGA (`NumeroProcesso`) é o protocolo do e-Docs (formato `AAAA-XXXXX`). A ficha do contrato traz o link da consulta pública de processos. `edocs.py` é opcional, consulta até 400 processos por execução, a 1 por segundo, e identifica o painel no User-Agent; não usa a API oficial, que exige credencial de órgão. A consulta devolve número, unidades envolvidas, assunto, descrição (campo livre, que costuma citar o número do contrato, o fornecedor e o objeto), situação e a lista de trâmites, mas não o texto dos documentos. Quando `data/contratacoes/processos.json` existe, a ficha do contrato mostra assunto, descrição, unidades e o último trâmite.
 
 Limites da base ampla: o PNCP traz o que o órgão publicou, com atraso e lacunas; o casamento por data pode errar e a ligação do pago ao contrato do PNCP é por fornecedor e unidade gestora, não por empenho; os dados de `data/contratacoes` só incluem a base ampla depois de rodar `despesas.py`, `pncp.py` e `montar.py` com a rede liberada.
 

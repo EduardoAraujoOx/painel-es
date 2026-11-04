@@ -100,6 +100,14 @@
     return todosForn;
   }
 
+  // Resumo da consulta pública do e-Docs por protocolo (gerado por edocs.py, opcional): assunto, descrição, unidades e último trâmite.
+  let processos = null;
+  async function carregarProcessos() {
+    if (processos) return processos;
+    try { processos = await ctx.api('processos'); } catch (e) { if (e && e.sessao) throw e; processos = {}; }
+    return processos;
+  }
+
   // ---------- busca de fornecedor ----------
   async function carregarBusca() {
     if (!listaBusca) listaBusca = (await ctx.api('busca')).map(([c, n, s]) => ({ c, n, s, k: norm(n + ' ' + c + ' ' + s) }));
@@ -263,6 +271,8 @@
       return c.replaceChildren(el('p', { class: 'vazio' }, 'Não foi possível carregar este órgão.'));
     }
     if (meu !== tokenRender) return;
+    try { await carregarProcessos(); } catch (e) { if (e.sessao) return PF.mostrarLogin(); }
+    if (meu !== tokenRender) return;
     c.classList.remove('carregando');
     const hoje = dados.ref;
     const todos = det.contratos.map(contrato).map((k) => ({ ...k, vigente: (!k.fimef || k.fimef >= hoje) && !k.alertas.some((a) => a.startsWith('situacao_divergente')) }));
@@ -348,6 +358,15 @@
       onclick: () => { estado.verPncp = !estado.verPncp; render(true); } }, estado.verPncp ? 'Mostrar menos' : `Mostrar os ${nInt.format(vig.length)}`)) : null);
   }
 
+  // Linhas da ficha com o que a consulta pública do e-Docs informa do processo (sem o conteúdo dos documentos).
+  function processoEdocs(r) {
+    const u = r.ultima;
+    return [r.assunto ? ['Assunto do processo (e-Docs)', r.assunto] : null,
+      r.resumo ? ['Descrição no e-Docs', r.resumo] : null,
+      r.unidades && r.unidades.length ? ['Unidades pelas quais o processo passou', r.unidades.join('; ')] : null,
+      u ? ['Último trâmite no e-Docs', `${dataBR(u.data)}: ${[u.status, u.area || u.orgao].filter(Boolean).join(' em ')} (${nInt.format(r.tramites)} trâmites; consulta de ${dataBR(r.consultadoEm)})`] : null].filter(Boolean);
+  }
+
   function cartaoContratos(todos, org) {
     const f = estado.f;
     const lista = todos.filter((k) => passaFiltro(k, k.vigente));
@@ -391,6 +410,7 @@
           ['Situação no SIGA', k.sit],
           ...(k.pncp != null ? [['Valor global no PNCP', el('span', {}, brlCompacto(k.pncp), ' ', k.pncpLink ? el('a', { href: k.pncpLink, target: '_blank', rel: 'noopener noreferrer', onclick: (ev) => ev.stopPropagation() }, 'abrir no PNCP') : null)]] : []),
           ...(k.edocs ? [['Processo no e-Docs', el('a', { href: URL_EDOCS + encodeURIComponent(k.edocs), target: '_blank', rel: 'noopener noreferrer', onclick: (ev) => ev.stopPropagation() }, k.edocs + ' (consulta pública)')]] : []),
+          ...(k.edocs && processos && processos[k.edocs] && !processos[k.edocs].naoEncontrado ? processoEdocs(processos[k.edocs]) : []),
           ...(k.gestao && k.gestao.length ? [['Gestão e fiscalização (SIGA)', el('span', {}, k.gestao.map(([fn, nome, setor, ini, fim, sit]) => `${fn}: ${nomeProprio(nome)}${setor ? ' (' + setor + ')' : ''}${ini ? ', desde ' + dataBR(ini) : ''}${fim ? ' até ' + dataBR(fim) : ''}${sit ? ' [' + sit + ']' : ''}`).join(' · '))]] : [])
         ].flatMap(([t, v]) => [el('dt', {}, t), el('dd', {}, v)]));
       const alertas = k.alertas.length ? el('ul', { class: 'lista-alertas' }, k.alertas.map((a) => el('li', {}, selo(a), ' ', dados.alertas[a.split(':')[0]].descricao))) : null;
