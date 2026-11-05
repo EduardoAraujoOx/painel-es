@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-05",
- "gerado_em": "2026-11-05T21:17:13Z",
+ "gerado_em": "2026-11-05T22:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,8 +25,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 29,
-   "aceitos": 14,
+   "lidos": 28,
+   "aceitos": 13,
    "possiveis": 1
   },
   {
@@ -81,15 +81,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 11,
+   "lidos": 13,
    "aceitos": 2,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 50,
+   "lidos": 49,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 67,
+   "lidos": 64,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -115,7 +115,7 @@
    "ok": true,
    "lidos": 8,
    "aceitos": 2,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 1,
+   "lidos": 0,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,9 +145,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 23,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -186,7 +186,7 @@
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
@@ -206,19 +206,47 @@
    "possiveis": 3
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 319,
-  "possivel": 16,
-  "veiculo_excluido": 40,
-  "sem_contexto_com_tema": 8,
+  "sem_contexto": 313,
+  "possivel": 18,
+  "veiculo_excluido": 42,
+  "sem_contexto_com_tema": 6,
   "excluir": 6,
   "exterior_sem_ancora": 13,
   "outro_estado": 19,
-  "sigla_sem_ancora": 4,
-  "veiculo_outra_praca": 3
+  "sigla_sem_ancora": 3,
+  "veiculo_outra_praca": 4
  },
  "itens": [
+  {
+   "id": "889dfcfe0002",
+   "titulo": "Servidores de cidade do ES podem receber abono de até R$ 20 mil; veja quem tem direito",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/politica/servidores-de-cidade-do-es-podem-receber-abono-de-ate-r-20-mil-veja-quem-tem-direito-1126",
+   "data": "2026-11-05T21:44:49Z",
+   "coletado_em": "2026-11-05T22:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "6fbe7d856889",
+   "titulo": "Defensoria aponta déficit de 57 Caps em 22 municípios do Estado",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNLUlFengweGpTVVNvWTZmVi1FcTFiZUhORUEybjgxZjk1eU5aY2E1ZzB3NGs3eVA2ZlhCci1NY0FwTENrclZKQ0w4R2JuTW1rZFgzWXViMGpHZWQyaWwtemZhd1BIZ0ZBZEFISEV5ZWV6QnNuQUw4ZjFhWGlzaG5VUGtIUmJ4NERWRHZQT1M0RWJNbk05bmh3ZXJhQVVWblY3RkZ3MQ?oc=5",
+   "data": "2026-11-05T21:15:41Z",
+   "coletado_em": "2026-11-05T22:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "e332490007d7",
    "titulo": "Dino marca conciliação entre empresas, trabalhadores e governo sobre transição para o fim da 6×1",
