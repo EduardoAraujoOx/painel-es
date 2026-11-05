@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-05",
- "gerado_em": "2026-11-05T14:17:14Z",
+ "gerado_em": "2026-11-05T15:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,7 +25,7 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 26,
+   "lidos": 28,
    "aceitos": 19,
    "possiveis": 1
   },
@@ -34,7 +34,7 @@
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 8,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 55,
+   "lidos": 53,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 85,
+   "lidos": 83,
    "aceitos": 5,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 24,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 31,
    "aceitos": 1,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -171,15 +171,15 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 6,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
-   "possiveis": 2
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -194,7 +194,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 5
   },
   {
@@ -206,19 +206,59 @@
    "possiveis": 3
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto": 319,
-  "possivel": 24,
-  "sem_contexto_com_tema": 9,
-  "veiculo_excluido": 40,
+  "sem_contexto": 318,
+  "possivel": 22,
+  "sem_contexto_com_tema": 10,
+  "veiculo_excluido": 39,
   "excluir": 5,
   "exterior_sem_ancora": 14,
-  "outro_estado": 21,
-  "sigla_sem_ancora": 8,
+  "outro_estado": 22,
+  "sigla_sem_ancora": 9,
   "veiculo_outra_praca": 4
  },
  "itens": [
+  {
+   "id": "30342386b9fa",
+   "titulo": "Estudantes que vão fazer a prova do Enem terão passe livre no Transcol neste domingo",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/educacao/estudantes-que-vao-fazer-a-prova-do-enem-terao-passe-livre-no-transcol-neste-domingo/",
+   "data": "2026-11-05T15:00:25Z",
+   "coletado_em": "2026-11-05T15:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "eb0f2039e7b6",
+   "titulo": "Compras públicas: ES cria grupo para a Reforma Tributária",
+   "veiculo": "ES Brasil",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE94NEhWeXRKSGQzU19YWWJRdTQ5eTd1TUduSWhIRkU1SUd1Q3hhTGtLaVZjVVdUenVvVG9PbFdFd0pRNGlReWJXNlRXY25iY25WZTRMaHpvNllIM1MyVzdYcFZxa0VqbWI5Vld6TDZ4NWp0c1czb09ydw?oc=5",
+   "data": "2026-11-05T15:00:00Z",
+   "coletado_em": "2026-11-05T15:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "49254707480c",
+   "titulo": "Cristiano Ronaldo anuncia aposentadoria da seleção de Portugal",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/futebol/cristiano-ronaldo-anuncia-aposentadoria-da-selecao-de-portugal-1126",
+   "data": "2026-11-05T14:48:32Z",
+   "coletado_em": "2026-11-05T15:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "9e0227e50c3d",
    "titulo": "“Imposto do pecado”: cigarro, cerveja e refrigerante terão nova cobrança; entenda o que pode ficar mais caro",
@@ -443,6 +483,18 @@
    ]
   },
   {
+   "id": "ded6c5510cdc",
+   "titulo": "Programa Detran na Escola mobiliza gestores educacionais do Baixo São Francisco e Litoral Sul de Alagoas em Penedo",
+   "veiculo": "Correio dos Municípios",
+   "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNaVNkaWlfTFN4Mm5BRkJFY0YxWThCajNvTjV6VU9FVDVkNjdLaG1QMDdOZ2lHQmVjQ05Vdm5IYlN5ZmxxR3JTRDE4aVU3U2hKWUJRWjJGblExOVVhRTI2ZENLZVRKZnJGeV95T0hqZmtJcnRCcHdCRDVOQXctLUVoeWxrSVpHX2hNZldvUE5INFV2OWlmUVhFbDF0NXN2OUdvNjVQb0NxWmhuZml5b0t5elFXel8xU1M2Q0kzc3hvU3VfR3YycUpMVEJEaVpSTWp0MU5hUHE5Mm5TeFctOE93eTE5NjB2M0VoeVUwLXlpVXNBNFJ6YVo2Y0x5aENiY0p3UzFTd0phY3E?oc=5",
+   "data": "2026-11-04T22:21:33Z",
+   "coletado_em": "2026-11-05T15:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
+  {
    "id": "286f7ea265b2",
    "titulo": "Enem: gratuidade no Transcol exclui candidatos sem cartão escolar",
    "veiculo": "Século Diário",
@@ -578,6 +630,21 @@
    "possivel": false,
    "triagem": 3,
    "temas": []
+  },
+  {
+   "id": "3dd29263976a",
+   "titulo": "Estado institui Grupo de Trabalho Interinstitucional para orientar compras públicas e reequilíbrio de contratos na Reforma Tributária",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQOWUwSHdLUUI0NXJ1ZV9rT002MVlYaWIwYVkxaEw5NjJGZmFrUlV5anUtYmlEM3NEbktsNXlLMVIzUjNKTlFZUk9VdV84aVpIenJYU3pjRVRwZjNmdnlWNUdGTGZEM2t2NU9jRzVjV0R2ejlBajdjcFdnN3hQZTJ6VGNHMjJyNUhFRVFaVTk0NDZ5ZS1wQXdWMW5SbHV3eTVfQUpMSlh1R1RUcnd3WjFkWklLSlBvUEFSR0pIRFVvZlFHTThBb2pCX1J5enoya09kbzFkWVdxQmNUb1diMHF2bVd1YlhGUDZSanBZ?oc=5",
+   "data": "2026-11-04T20:25:00Z",
+   "coletado_em": "2026-11-05T15:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "financas",
+    "contratos"
+   ]
   },
   {
    "id": "63f51536e824",
