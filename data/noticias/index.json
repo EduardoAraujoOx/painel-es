@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-05",
- "gerado_em": "2026-11-05T13:17:14Z",
+ "gerado_em": "2026-11-05T14:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 4,
    "possiveis": 0
   },
@@ -41,15 +41,15 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 6,
+   "lidos": 7,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 15,
+   "lidos": 14,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 4,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 14,
+   "lidos": 12,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 61,
+   "lidos": 55,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 84,
+   "lidos": 85,
    "aceitos": 5,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -154,14 +154,14 @@
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 30,
-   "aceitos": 2,
-   "possiveis": 3
+   "aceitos": 1,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 58,
+   "lidos": 59,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -195,7 +195,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 2,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -206,19 +206,52 @@
    "possiveis": 3
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 329,
-  "possivel": 21,
+  "sem_contexto": 319,
+  "possivel": 24,
   "sem_contexto_com_tema": 9,
-  "veiculo_excluido": 38,
+  "veiculo_excluido": 40,
   "excluir": 5,
-  "exterior_sem_ancora": 15,
+  "exterior_sem_ancora": 14,
   "outro_estado": 21,
-  "sigla_sem_ancora": 7,
+  "sigla_sem_ancora": 8,
   "veiculo_outra_praca": 4
  },
  "itens": [
+  {
+   "id": "9e0227e50c3d",
+   "titulo": "“Imposto do pecado”: cigarro, cerveja e refrigerante terão nova cobrança; entenda o que pode ficar mais caro",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/imposto-do-pecado-cigarro-cerveja-e-refrigerante-terao-nova-cobranca-entenda-o-que-pode-ficar-mais-caro/",
+   "data": "2026-11-05T14:08:54Z",
+   "coletado_em": "2026-11-05T14:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "03fcc4738866",
+   "titulo": "Governo publica MP das alíquotas do Imposto Seletivo para 2027",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/economia/2026/11/governo-imposto-seletivo/",
+   "data": "2026-11-05T13:11:11Z",
+   "coletado_em": "2026-11-05T14:17:14Z",
+   "outras": [
+    {
+     "veiculo": "Tribuna Online",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPM0RKVDBDNnhDN1E3b0tJWUFYUllCUEROS3MtZlAxdFNZUE9LYWppeFBtOVlZay03UDJxTTZEM1Y5MFB2VDNPT2ZEeG9Pb3FxMXBKaXNSQ2ltRjRiR3JpQ05oaFdwdWx5dkctWWdUdHpsc0Voc0l3dGh4S3NNeHpOQWFtY19GY1hLOWJRcGhvWFhlWkVTdVF5NmxfbEE0Z2FHM0lXN3hvUDV1eWvSAbMBQVVfeXFMTjF0ZmpoejZ3elhrMGhEVmlNSUQyaklvWWhpTi1DRmtoN1BHQjM5WWNXdUJhWEhDdnJGd1lodG9IeUJzTmxoZFZaVk5pZEJ1bVpueElQb3gxWjRKaTZZOUNsZl83THhjUEZQS0dwVndMQlRmV1dWRDNHeEEzWDhMQ25BdWt3YXFoaWp4NE5uMUs3dWU0dTdHRlFoNzJOeVl1WHBxYWdGcWY3QzJhd2lGU1NiRHM?oc=5"
+    }
+   ],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "4c6823c733a1",
    "titulo": "O verdadeiro valor de um ponto de auditoria",
@@ -337,7 +370,12 @@
    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQnltakRUcVlfV3VFVk9IZnd4Sk1IZnk4NW9yT2hiQWgzY3lsTmRWSnZCMDRST2tNQU1uR2xuODFoOXdvVkxpa0dqdEtZbmJXa0NiWGJvbXc1WURyUHRDSWNGMldudy1fRnkyczlLa2xWNnRMckdva3h6VFhLcktOZi1VTlpTdmxHRy1Td3liQ2VKRnpIb0dDbmJvNXhQMVZzTUdtN194M2F6UFVRWjZBYnRKdWJSTnUt?oc=5",
    "data": "2026-11-05T00:14:18Z",
    "coletado_em": "2026-11-05T01:17:13Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Aqui Notícias",
+     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNdG9vVkNVLXdpQ0J4RVpGeWFReFBrZjJuT3ViX09VV1FrX0kzdkw5VTJDcGRpdml0MmlfNUstTEZGYXE0cFFWVkhVWEZ6R3lJVk0ycndSWGVJay1WV0Z0Z2ZLWGdvVm5zRkhpSC1tOGxKeDVkUjRERVJFeUp1aDd0OVlOS01lR0NoX0FPNm16OWNtU2VrNkplcjBuVjBOcGwzclJ1emRtbVE1VE05LXZCYktJOGxiM1BfeFozcVF2OEFMVGdi?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 3,
    "temas": [
