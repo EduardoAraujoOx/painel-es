@@ -47,6 +47,28 @@
       "nome": "G1 Espírito Santo",
       "url": "https://g1.globo.com/rss/g1/es/espirito-santo/",
       "paginas": 1
+    },
+    {
+      "nome": "A Gazeta",
+      "url": "https://www.agazeta.com.br/es/politica/rss",
+      "paginas": 1
+    },
+    {
+      "nome": "A Gazeta",
+      "url": "https://www.agazeta.com.br/colunas/rss",
+      "paginas": 1,
+      "coluna": true
+    },
+    {
+      "nome": "Sim Notícias",
+      "url": "https://simnoticias.com.br/politica/feed/",
+      "paginas": 1
+    },
+    {
+      "nome": "Sim Notícias",
+      "url": "https://simnoticias.com.br/vinicius-baptista/feed/",
+      "paginas": 1,
+      "coluna": true
     }
   ],
   "contexto_es": [
@@ -521,7 +543,8 @@
     "Imprensa 24h",
     "G1 Espírito Santo",
     "Governo ES",
-    "Folha ES"
+    "Folha ES",
+    "Sim Notícias"
   ],
   "fontes_oficiais": [
     "Governo ES"
