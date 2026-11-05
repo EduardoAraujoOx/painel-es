@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-05",
- "gerado_em": "2026-11-05T16:17:13Z",
+ "gerado_em": "2026-11-05T17:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 4,
+   "lidos": 9,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 29,
-   "aceitos": 18,
+   "aceitos": 17,
    "possiveis": 1
   },
   {
@@ -41,15 +41,15 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 8,
+   "lidos": 9,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 14,
+   "lidos": 15,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 12,
+   "lidos": 13,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -89,15 +89,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 53,
+   "lidos": 52,
    "aceitos": 3,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 85,
+   "lidos": 83,
    "aceitos": 5,
    "possiveis": 3
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -129,15 +129,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 32,
+   "lidos": 29,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -147,7 +147,7 @@
    "ok": true,
    "lidos": 23,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 6,
+   "aceitos": 7,
    "possiveis": 4
   },
   {
@@ -178,7 +178,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
@@ -206,19 +206,61 @@
    "possiveis": 3
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 334,
+  "sem_contexto": 330,
   "possivel": 21,
-  "exterior_sem_ancora": 12,
-  "sem_contexto_com_tema": 9,
-  "veiculo_excluido": 39,
-  "excluir": 5,
-  "outro_estado": 23,
-  "sigla_sem_ancora": 9,
+  "exterior_sem_ancora": 13,
+  "sem_contexto_com_tema": 12,
+  "veiculo_excluido": 37,
+  "excluir": 6,
+  "outro_estado": 21,
+  "sigla_sem_ancora": 7,
   "veiculo_outra_praca": 4
  },
  "itens": [
+  {
+   "id": "80bed5336c7c",
+   "titulo": "Governo do Estado lança primeiro Radar Agtech estadual para mapear inovação no agro",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNm9iOXZveTJnckFObHpBc0RKUTVPNTdpcDBhcDRyc0JjLWhJeTltZS0yVkxKaldqUVdCMWJoMjVNamhMdlQwOENwdzYzRWtUdjlQY3hnUy12MXFOSmpVejJlNVpoUThvbm0tbW1yQkJHYVBuZ0Z6LWZ5RU5qYk5RVGlEejNMY0I4Sk5RQlROZW5Ud2NLZmFlMzNxVVFTTWthY2s0QWZYNVg?oc=5",
+   "data": "2026-11-05T16:59:00Z",
+   "coletado_em": "2026-11-05T17:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "e7c6a6ac54af",
+   "titulo": "Serra abre licitação internacional para construir a Terceira Via",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOeFFWSjh5VElmMWU1Z3UtUk85UlF0QnB3LWFabU15UmJrcHA0VTlxb3pPQ2pCWkUxVTM0TVdZbTBjVHFQVkhJS0hHbFFlVXRKRXlBdFdWY2Z4T0dqT3hMV1ViRmVuSDFDZkVBNmc3b1BQSWdsNHNPSDJZRnFlZzJ2clZGSEVROHc?oc=5",
+   "data": "2026-11-05T16:36:43Z",
+   "coletado_em": "2026-11-05T17:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "5ffd3ded78e8",
+   "titulo": "MPES e Polícia Civil investigam listas de boicote por posicionamento político",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/politica/mpes-e-policia-civil-investigam-listas-de-boicote-por-posicionamento-politico-1126",
+   "data": "2026-11-05T16:24:26Z",
+   "coletado_em": "2026-11-05T17:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "controle"
+   ]
+  },
   {
    "id": "0cdff8f3f64e",
    "titulo": "Governador Pazolini retorna pela segunda vez para agradecer à população da Serra",
@@ -1910,7 +1952,12 @@
    "url": "https://eshoje.com.br/politica/2026/11/gustavo-perin-sera-novo-integrante-da-equipe-de-transicao-de-pazolini/",
    "data": "2026-11-03T14:07:52Z",
    "coletado_em": "2026-11-03T14:17:11Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Prensa Mercosur",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQRzhUSDFpNUo0Q2c0a2hsZzJTYXZjc3RGM1haVlp0NEU0d0otY3NvQU42elQ2b24tSkJfWmN4Ty1DQnp6eXVTcXFZVGowS194U09jWlVNb2gyZUlzOUc2Ujg4akQ0VG1TQWotRUxCbHJsTnMtRkt1b3lqM1B0QUpKUnJGN0RaYU03MmdOTHZINHduUVYzY1lLeHNlZ1M4QnRoeXZrYlplb3l2Z0RJ?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 3,
    "temas": [
