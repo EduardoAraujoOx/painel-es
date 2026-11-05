@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-05",
- "gerado_em": "2026-11-05T20:17:13Z",
+ "gerado_em": "2026-11-05T21:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -33,7 +33,7 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -42,14 +42,14 @@
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
    "lidos": 8,
-   "aceitos": 6,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 16,
+   "lidos": 14,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 53,
+   "lidos": 50,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 69,
+   "lidos": 67,
    "aceitos": 3,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -145,9 +145,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 24,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 6,
+   "aceitos": 4,
    "possiveis": 2
   },
   {
@@ -186,7 +186,7 @@
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -194,8 +194,8 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
-   "possiveis": 3
+   "aceitos": 2,
+   "possiveis": 2
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -206,19 +206,57 @@
    "possiveis": 3
   }
  ],
- "novos_na_coleta": 5,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto": 326,
-  "possivel": 18,
-  "veiculo_excluido": 41,
+  "sem_contexto": 319,
+  "possivel": 16,
+  "veiculo_excluido": 40,
   "sem_contexto_com_tema": 8,
   "excluir": 6,
   "exterior_sem_ancora": 13,
-  "outro_estado": 17,
-  "sigla_sem_ancora": 3,
+  "outro_estado": 19,
+  "sigla_sem_ancora": 4,
   "veiculo_outra_praca": 3
  },
  "itens": [
+  {
+   "id": "e332490007d7",
+   "titulo": "Dino marca conciliação entre empresas, trabalhadores e governo sobre transição para o fim da 6×1",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/seguranca/justica/2026/11/dino-marca-conciliacao-6x1/",
+   "data": "2026-11-05T20:53:12Z",
+   "coletado_em": "2026-11-05T21:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "c8dee6f035e4",
+   "titulo": "Detran|ES lança portal mais moderno e facilita acesso aos serviços",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPSjl6UmQ0aF9oVjhsVld4VFZMQVVyaldqZ3FmdkEtQWpsUGUyNS1mdWJpSlMxTmlQY3JtR1NlaFF0Qi1aUERQUG1iWHpMRmVSUTM3a1BrVnFBU0NtX1dYd2w3NG40Z0hUWGVXM0p4eGdxZTY4bVhIcVJyWm9ObVRQcF9FUGoxb251bmJNVV9qcVNHUQ?oc=5",
+   "data": "2026-11-05T20:37:00Z",
+   "coletado_em": "2026-11-05T21:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "b2f0ab8e510a",
+   "titulo": "Parque Aberto e Festival Movimento Cidade levam shows ao Parque Cultural Casa do Governador neste sábado (07)",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPYjhRdUhtaEFWTHIxQkdKOWdJSXBFV245eGd5cWZxU1Z6R2VkNTBxTC13WlVtODdjY2xhLVN5clB4dURDdmxWbEhqd3dINDhwZ01aQk1zeDllVzlJaXRTOUw1eFdwMHBtbllGbnBRT0VqeWhTWTlUZGpFZndwejdFc0FQU2E5c0xrMDNncW5CRllwb1JpNEs4Y3VQMFNNeGdrZDkyeXNPLS1hTUdzbTF2OWV3MzhwWmJfZGRNcFVtQ05CbVZ4VmtwQg?oc=5",
+   "data": "2026-11-05T20:36:00Z",
+   "coletado_em": "2026-11-05T21:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
   {
    "id": "6c4892931e59",
    "titulo": "IDAF ES cria cota para hipossuficientes no concurso",
