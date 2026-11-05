@@ -269,6 +269,11 @@ def montar_conteudo(dados, itens, ref, painel_url, desde_txt, contratos=(), atos
             montar_texto(grupos, len(itens), restantes, ref, painel_url, desde_txt, contratos, atos, obras))
 
 
+def nome_remetente():
+    """Nome que aparece como remetente (o endereço continua sendo o da conta SMTP). Troca-se pela variável SMTP_NOME do repositório."""
+    return os.environ.get("SMTP_NOME", "").strip()[:80] or "Painel ES · Monitoramento da transição"
+
+
 def carregar_assinantes():
     """Módulo dos assinantes (cadastro pela página /alertas). Carregado pelo caminho: com `python3 -I` a pasta do script não está no sys.path."""
     import importlib.util
@@ -368,7 +373,7 @@ def main():
     for dest in lista:
         m = EmailMessage()
         m["Subject"] = assunto(len(itens), ref, args.teste, len(contratos), len(atos), len(obras))
-        m["From"] = formataddr(("Painel Fiscal ES", remetente))
+        m["From"] = formataddr((nome_remetente(), remetente))
         m["To"] = dest
         m["Date"] = formatdate(localtime=False)
         m["Message-ID"] = make_msgid(domain=remetente.split("@")[-1])
@@ -382,7 +387,7 @@ def main():
             h, t = com_rodape_sair(corpo_html, corpo_txt, mod.rodape_sair(painel_link, a["token_sair"]))
             m = EmailMessage()
             m["Subject"] = assunto(len(itens), ref, args.teste, len(contratos), len(atos), len(obras))
-            m["From"] = formataddr(("Painel Fiscal ES", remetente))
+            m["From"] = formataddr((nome_remetente(), remetente))
             m["To"] = a["email"]
             m["Date"] = formatdate(localtime=False)
             m["Message-ID"] = make_msgid(domain=remetente.split("@")[-1])

@@ -137,6 +137,7 @@ jobs:
           SMTP_REMETENTE: ${{ secrets.SMTP_REMETENTE }}
           SMTP_HOST: ${{ vars.SMTP_HOST }}
           SMTP_PORTA: ${{ vars.SMTP_PORTA }}
+          SMTP_NOME: ${{ vars.SMTP_NOME }}
           PAINEL_URL: ${{ vars.PAINEL_URL }}
         run: python3 -I pipeline/noticias/assinantes.py
 
@@ -155,6 +156,7 @@ jobs:
           SMTP_REMETENTE: ${{ secrets.SMTP_REMETENTE }}
           SMTP_HOST: ${{ vars.SMTP_HOST }}
           SMTP_PORTA: ${{ vars.SMTP_PORTA }}
+          SMTP_NOME: ${{ vars.SMTP_NOME }}
           PAINEL_URL: ${{ vars.PAINEL_URL }}
         run: |
           if [ "$EVENTO" = "workflow_dispatch" ] && [ "$TESTE" = "true" ]; then

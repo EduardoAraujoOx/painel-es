@@ -116,7 +116,7 @@ def montar_confirmacao(dest, painel, token, remetente):
     url = link_pagina(painel, "confirmar", token)
     m = EmailMessage()
     m["Subject"] = "Confirme seu cadastro nos alertas do Painel Fiscal ES"
-    m["From"] = formataddr(("Painel Fiscal ES", remetente))
+    m["From"] = formataddr((os.environ.get("SMTP_NOME", "").strip()[:80] or "Painel ES · Monitoramento da transição", remetente))
     m["To"] = dest
     m["Date"] = formatdate(localtime=False)
     m["Message-ID"] = make_msgid(domain=remetente.split("@")[-1])

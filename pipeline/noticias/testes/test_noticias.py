@@ -405,6 +405,15 @@ class Resumo(unittest.TestCase):
         self.assertIn("https://painel-es.vercel.app", corpo)  # a de 30 horas atrás fica de fora no primeiro envio (24 h)
         self.assertTrue(enviar.MARCO.exists())
 
+    def test_nome_do_remetente_e_o_da_transicao_e_pode_ser_trocado(self):
+        from email.header import decode_header, make_header
+        msgs = self.rodar(self.ENV)
+        nome = str(make_header(decode_header(msgs[0]["From"])))
+        self.assertIn("Monitoramento da transição", nome)
+        self.assertIn("u@exemplo.com", nome)  # o endereço segue sendo o da conta SMTP
+        msgs = self.rodar({**self.ENV, "SMTP_NOME": "Equipe de Transição ES"}, ("--teste",))  # --teste: não depende do marco do envio anterior
+        self.assertIn("Equipe de Transição ES", str(make_header(decode_header(msgs[0]["From"]))))
+
     def test_segundo_envio_sem_novidade_nao_manda_nada(self):
         self.rodar(self.ENV)
         self.assertEqual(self.rodar(self.ENV), [])
