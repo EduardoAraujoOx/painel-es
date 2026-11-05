@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-05",
- "gerado_em": "2026-11-05T11:17:22Z",
+ "gerado_em": "2026-11-05T12:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 12,
+   "lidos": 11,
    "aceitos": 6,
    "possiveis": 0
   },
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 26,
-   "aceitos": 20,
+   "aceitos": 19,
    "possiveis": 1
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 14,
+   "lidos": 13,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 67,
+   "lidos": 66,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 76,
+   "lidos": 81,
    "aceitos": 4,
    "possiveis": 3
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 31,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -171,7 +171,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 6,
-   "possiveis": 5
+   "possiveis": 4
   },
   {
    "fonte": "Folha Vitória",
@@ -194,8 +194,8 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 4,
-   "possiveis": 3
+   "aceitos": 3,
+   "possiveis": 5
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -206,20 +206,45 @@
    "possiveis": 3
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 326,
-  "sem_contexto_com_tema": 7,
-  "possivel": 20,
+  "sem_contexto": 331,
+  "possivel": 21,
   "veiculo_excluido": 41,
+  "sem_contexto_com_tema": 7,
   "excluir": 5,
   "exterior_sem_ancora": 15,
   "outro_estado": 22,
-  "caixa_alta": 1,
   "sigla_sem_ancora": 6,
   "veiculo_outra_praca": 4
  },
  "itens": [
+  {
+   "id": "f759059f426c",
+   "titulo": "Vila Velha recebe título de Capital Estadual da Canoagem",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/esportes/2026/11/vila-velha-canoagem-titulo-capital/",
+   "data": "2026-11-05T12:06:50Z",
+   "coletado_em": "2026-11-05T12:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "986a75aa3f55",
+   "titulo": "Começa hoje: mutirão Natal Azul reúne bancos e empresas em Vila Velha para renegociar dívidas",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/economia/2026/11/natal-azul-vila-velha/",
+   "data": "2026-11-05T11:27:14Z",
+   "coletado_em": "2026-11-05T12:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "d20612d67cf3",
    "titulo": "Municípios devem aplicar 4% do Fundeb no tempo integral",
