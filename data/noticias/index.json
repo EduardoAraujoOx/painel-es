@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-05",
- "gerado_em": "2026-11-05T19:17:14Z",
+ "gerado_em": "2026-11-05T20:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,7 +18,7 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -26,15 +26,15 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 29,
-   "aceitos": 15,
+   "aceitos": 14,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 5,
+   "lidos": 8,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -42,22 +42,22 @@
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
    "lidos": 8,
-   "aceitos": 7,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 18,
-   "aceitos": 3,
+   "lidos": 16,
+   "aceitos": 2,
    "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -66,30 +66,30 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 5,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 3,
+   "lidos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 13,
-   "aceitos": 3,
+   "lidos": 11,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 52,
+   "lidos": 53,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 71,
+   "lidos": 69,
    "aceitos": 3,
    "possiveis": 3
   },
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 1,
+   "lidos": 8,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 29,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -145,8 +145,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
-   "aceitos": 0,
+   "lidos": 23,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -154,8 +154,8 @@
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 30,
-   "aceitos": 0,
-   "possiveis": 2
+   "aceitos": 1,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -170,8 +170,8 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 7,
-   "possiveis": 3
+   "aceitos": 6,
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -194,7 +194,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 3
   },
   {
@@ -206,19 +206,86 @@
    "possiveis": 3
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 5,
  "descartes_na_coleta": {
-  "sem_contexto": 324,
-  "possivel": 19,
-  "sem_contexto_com_tema": 12,
-  "veiculo_excluido": 39,
+  "sem_contexto": 326,
+  "possivel": 18,
+  "veiculo_excluido": 41,
+  "sem_contexto_com_tema": 8,
   "excluir": 6,
-  "exterior_sem_ancora": 12,
-  "outro_estado": 19,
-  "sigla_sem_ancora": 4,
-  "veiculo_outra_praca": 4
+  "exterior_sem_ancora": 13,
+  "outro_estado": 17,
+  "sigla_sem_ancora": 3,
+  "veiculo_outra_praca": 3
  },
  "itens": [
+  {
+   "id": "6c4892931e59",
+   "titulo": "IDAF ES cria cota para hipossuficientes no concurso",
+   "veiculo": "diariodamidia.com.br",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQM0YtVTJuSEdQeC1YMDBudGF3M3IxOHJXQm9WSFhtSFlBTUk3RVhwWkhwVFRxN01tak03SVd3bWpWN3ZPbHFBWEtMLVFaRnl6VFdRX1dHTllzSEdvVFp5NFM4bkdiYk1NSl9JOHdLMEZNWlM5MTBWQWdSdzA1SGZjM1VWcmU0Z0U?oc=5",
+   "data": "2026-11-05T20:09:36Z",
+   "coletado_em": "2026-11-05T20:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "1ddf31bede56",
+   "titulo": "TCE-ES encontra salários abaixo do piso em 40 municípios capixabas",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/espirito-santo/2026/11/tce-es-salarios-abaixo-piso/",
+   "data": "2026-11-05T20:00:14Z",
+   "coletado_em": "2026-11-05T20:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "fb37d213fcee",
+   "titulo": "Vila Velha recebe a segunda etapa do Estadual de Bodyboarding 2026",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/esportes/2026/11/vila-velha-recebe-bodyboarding-2026/",
+   "data": "2026-11-05T19:43:47Z",
+   "coletado_em": "2026-11-05T20:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "3a1694abb94e",
+   "titulo": "Reforma Tributária leva ES a revisar critérios de contratos públicos",
+   "veiculo": "Portal Contabeis",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQcWxaTWs5UHFMaUZGRTVEYWhEMnNRVWJIalItZzBfbmZtMVFTOW9qbFpLWXNZUG9leVZjblpvdXNZQjVNcHpEdm9WMUtCdmR5M1NFZy1iRUFST1U0TzFSLVQ1MlpiUjNRcGdmNC1TaFN1Y05FMXU5NEV2bjR4d3FVRFo1NDdWQjdOd0ozd1hxcmFPZmxYWHhxS0pPbFJmZmVzUEpxT2M5TVd2MWota1hzbUd1WQ?oc=5",
+   "data": "2026-11-05T19:30:01Z",
+   "coletado_em": "2026-11-05T20:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "financas",
+    "contratos"
+   ]
+  },
+  {
+   "id": "d2320c1290cf",
+   "titulo": "Santa Vitória conquista nota máxima da Secult-MG e assegura repasses do ICMS Turismo",
+   "veiculo": "Regionalzão",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQX3VQMFBsYzNab3hta0VaWFVOMlRrV0hpMXJER05DdjlOMGwxU21RZk1JQWN1Ym54TlVSSS02VFlaRjhzSzk0OFhXYTFoZW5LUEo1emlzbFkyVVFtZEN4QnFBSFNOVWlFc1cyX2k1ZnRySExFYXZHVnZMZmp5Q29MYmtsdldsdU1kVTRzTlh5clRPXzJLbnNqZWFIMTVRaFpGbDRzMTR1MTIwOTBqa3VBeU96RnI3cC1ISEI4WlhGd2xMUm84VlNLaTFR?oc=5",
+   "data": "2026-11-05T19:13:20Z",
+   "coletado_em": "2026-11-05T20:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "2fecd7e9d998",
    "titulo": "FNDR e Reforma Tributária: o Espírito Santo pronto para o futuro",
@@ -491,6 +558,18 @@
    "temas": [
     "pessoal"
    ]
+  },
+  {
+   "id": "00189f7f3e12",
+   "titulo": "Ação integrada das Polícias Civil e Militar resgata vítima de sequestro na Serra - PCES - Polícia Civil",
+   "veiculo": "PCES - Polícia Civil",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQYWFSYUF5ZzdELXd1SkZMRFctRkxqdmJFLWQzSHR2TkVYT3QxMG5sSXYxTm1iUi1XRXhFbnE3T2xpX3FSNGRiZkE0ZzUxd1QtTmZFYnRmVDduemsyb1NqUER1MVlZbGpIbnFRVzJ1Zkh5YjVXQ1BudE1kYlE0UE5pZ2pMQS16WjlVTVYzbE12SUJEVDBfY0tsSHFqUDkzUmxIdHRj?oc=5",
+   "data": "2026-11-05T14:21:00Z",
+   "coletado_em": "2026-11-05T20:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
   },
   {
    "id": "9e0227e50c3d",
