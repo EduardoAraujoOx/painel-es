@@ -255,6 +255,72 @@ class FerramentaDeAuditoria(unittest.TestCase):
         self.assertGreaterEqual(len(vistos), 7)  # o teste cobre de fato os motivos, não só um
 
 
+class RuidoDeObrasETransicao(unittest.TestCase):
+    """Achados de 05/11/2026: "transição" (de carreira, para o fim da 6x1) e "obra" (acidente, rua fechada, TCU no porto) confirmavam notícia que não é do governo do ES,
+    e a TVE (fonte oficial) entrava com divulgação sem relação com gestão."""
+
+    def setUp(self):
+        self.F = coletar.preparar(CFG)
+
+    def classe(self, titulo, veiculo, regional=True):
+        return coletar.decidir(CFG, titulo, veiculo, self.F, regional)[0]
+
+    def test_o_que_a_lista_de_5_de_novembro_nao_deve_ser_confirmado(self):
+        casos = [("Dino marca conciliação entre empresas, trabalhadores e governo sobre transição para o fim da 6×1", "ES Hoje"),
+                 ("Choque elétrico em obra mata trabalhador e deixa outro ferido no Sul do ES", "ES Hoje"),
+                 ("Rua é interditada para obras de reurbanização no Centro de Vitória", "Folha Vitória"),
+                 ("TCU mantém multas de R$ 100 mil por irregularidades em obra no Porto de Vitória", "A Gazeta"),
+                 ("Transição de carreira em TI: como usar a experiência para conquistar novas oportunidades", "A Gazeta"),
+                 ("TVE transmite aulão especial para o Enem", "Governo ES")]
+        for t, v in casos:
+            self.assertNotEqual(self.classe(t, v), "confirmada", t)
+
+    def test_o_que_e_do_governo_do_estado_continua(self):
+        for t, v in [("Transição sob pressão: Decreto Estadual impõe prazos rígidos para suplementação orçamentária", "ES Hoje"),
+                     ("Espírito Santo acumula 32 obras paradas e R$ 333 milhões em investimentos", "Folha do ES"),
+                     ("Pazolini recebe equipe de transição e pede dados das secretarias", "A Gazeta"),
+                     ("Equipe de transição de Pazolini pede relatório de contratos ao governo do ES", "ES Hoje"),
+                     ("Governo do ES paralisa obras de escolas por falta de recursos", "Folha Vitória"),
+                     ("Obras públicas do governo do estado ficam sem pagamento", "A Gazeta"),
+                     ("Confira o expediente dos órgãos nos dias 30 de outubro e 2 de novembro", "Governo ES")]:
+            self.assertEqual(self.classe(t, v), "confirmada", t)
+
+    def test_guardado_antes_dessas_regras_sai_na_migracao_e_o_resto_fica(self):
+        import tempfile
+        tmp = Path(tempfile.mkdtemp()); coletar.SAIDA = tmp / "index.json"
+        hoje = datetime(2026, 11, 5, 22, 0, tzinfo=UTC)
+        def guardado(i, titulo, veiculo, possivel=False):
+            return {"id": f"id{i}", "titulo": titulo, "veiculo": veiculo, "url": f"https://e.com/{i}", "data": enviar.iso(hoje - timedelta(hours=2)),
+                    "coletado_em": enviar.iso(hoje - timedelta(hours=1)), "outras": [], "possivel": possivel, "temas": [], "triagem": 3}
+        antigos = [guardado(1, "Choque elétrico em obra mata trabalhador e deixa outro ferido no Sul do ES", "ES Hoje"),
+                   guardado(2, "Transição de carreira em TI: como usar a experiência", "A Gazeta"),
+                   guardado(3, "TVE transmite aulão especial para o Enem", "Governo ES"),
+                   guardado(4, "Espírito Santo acumula 32 obras paradas e R$ 333 milhões em investimentos", "Folha do ES"),
+                   guardado(5, "Rua é interditada para obras de reurbanização no Centro de Vitória", "Folha Vitória", True)]
+        coletar.SAIDA.write_text(json.dumps({"itens": antigos}), encoding="utf-8")
+        itens, _ = coletar.consolidar(CFG, [], hoje)
+        por = {i["id"]: i for i in itens}
+        self.assertEqual(set(por), {"id2", "id4"})  # sai o que as regras de hoje descartam, mesmo na leitura generosa
+        self.assertTrue(por["id2"]["possivel"])  # "transição de carreira": confirmada antes, agora só possível
+        self.assertFalse(por["id4"]["possivel"])
+        self.assertTrue(all(i["triagem"] == coletar.TRIAGEM for i in itens))
+
+    def test_a_migracao_nao_rebaixa_coluna_politica_pelo_endereco(self):
+        import tempfile
+        tmp = Path(tempfile.mkdtemp()); coletar.SAIDA = tmp / "index.json"
+        hoje = datetime(2026, 11, 5, 22, 0, tzinfo=UTC)
+        col = {"id": "idc", "titulo": "Uma corrida de madrugada e outra pela presidência da Assembleia", "veiculo": "Sim Notícias",
+               "url": "https://simnoticias.com.br/vinicius-baptista/uma-corrida-de-madrugada-e-outra-pela-presidencia-da-assembleia/", "data": enviar.iso(hoje - timedelta(hours=2)),
+               "coletado_em": enviar.iso(hoje - timedelta(hours=1)), "outras": [], "possivel": False, "temas": [], "triagem": 3}
+        coletar.SAIDA.write_text(json.dumps({"itens": [col]}), encoding="utf-8")
+        itens, _ = coletar.consolidar(CFG, [], hoje)
+        self.assertFalse(itens[0]["possivel"])
+
+    def test_divulgacao_de_fonte_oficial_cai_mas_a_gestao_passa(self):
+        self.assertEqual(coletar.decidir(CFG, "TVE transmite aulão especial para o Enem", "Governo ES", self.F, True), ("descartada", "oficial_divulgacao"))
+        self.assertEqual(coletar.decidir(CFG, "Saúde recebe 28 ambulâncias para reforçar atendimento nos municípios capixabas", "Governo ES", self.F, True)[0], "confirmada")
+
+
 class ColunasPoliticas(unittest.TestCase):
     """Colunistas políticos (A Gazeta, Sim Notícias): o título raramente cita o Estado. Achado de 05/11/2026: "Uma corrida de madrugada e outra pela presidência
     da Assembleia" (coluna de Vinícius Baptista, Sim Notícias) não entrava, porque o veículo nem era lido."""

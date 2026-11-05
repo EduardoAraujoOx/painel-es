@@ -37,7 +37,7 @@ AQUI = Path(__file__).resolve().parent
 RAIZ = AQUI.parents[1]
 CONFIG = AQUI / "config.json"
 SAIDA = RAIZ / "data" / "noticias" / "index.json"
-TRIAGEM = 3  # versão das regras de triagem por praça; itens guardados sem este marcador são reavaliados uma vez (ver consolidar)
+TRIAGEM = 4  # versão das regras de triagem por praça; itens guardados sem este marcador são reavaliados uma vez (ver consolidar)
 VERIFICACAO = RAIZ / "data" / "noticias" / "verificacao.json"
 
 AGENTE = "Mozilla/5.0 (compatible; painel-es-noticias/1.0; +https://github.com/EduardoAraujoOx/painel-es)"
@@ -189,7 +189,7 @@ def temas_de(cfg, titulo, compilados):
 def preparar(cfg):
     """Compila uma vez tudo o que o filtro usa."""
     return {"gate": compilar_lista(cfg["contexto_es"]), "gate_gen": compilar_lista(cfg.get("contexto_generico", [])),
-            "outra_praca": compilar_lista(cfg.get("veiculos_outras_pracas", [])), "exterior": compilar_lista(cfg.get("exterior", [])), "local": compilar_lista(cfg["localizador"]), "excluir": compilar_lista(cfg["excluir"]),
+            "outra_praca": compilar_lista(cfg.get("veiculos_outras_pracas", [])), "excluir_oficial": compilar_lista(cfg.get("excluir_oficial", [])), "exterior": compilar_lista(cfg.get("exterior", [])), "local": compilar_lista(cfg["localizador"]), "excluir": compilar_lista(cfg["excluir"]),
             "setor": compilar_lista(cfg.get("setor_publico", [])), "temas": compilar_temas(cfg),
             "oficiais": {normalizar(v) for v in cfg.get("fontes_oficiais", [])}, "locais": {normalizar(v) for v in cfg.get("veiculos_capixabas", [])},
             "ambig": compilar_lista(cfg.get("siglas_ambiguas", [])), "ancoras": compilar_lista(cfg.get("ancoras_es", cfg["localizador"])), "veic_excl": compilar_lista(cfg.get("veiculos_excluidos", [])),
@@ -224,6 +224,9 @@ def decidir(cfg, titulo, veiculo, F, regional=False, coluna=False):
     if not capixaba and casa(F["outra_praca"], normalizar(veiculo)) and not casa(F["ancoras"], n) and not casa(F["gate"], n):
         return "descartada", "veiculo_outra_praca"
     if normalizar(veiculo) in F["oficiais"]:
+        # a fonte oficial passa direto, menos o que é divulgação sem relação com gestão (aulão do Enem na TVE, festival, show): lista `excluir_oficial`
+        if casa(F["excluir_oficial"], n):
+            return "descartada", "oficial_divulgacao"
         return "confirmada", "fonte_oficial"
     if casa(F["gate"], n):
         return "confirmada", "contexto"
@@ -335,6 +338,14 @@ def consolidar(cfg, coletados, hoje):
             motivo = decidir(cfg, it["titulo"], it["veiculo"], F)[1]
             if motivo == "exterior_sem_ancora" or (not it.get("possivel") and motivo == "veiculo_outra_praca"):
                 continue
+            # leitura mais generosa (como se viesse de feed capixaba; coluna política, pelo endereço): se mesmo assim as regras de hoje descartam, sai; se só
+            # deixam como possível, é rebaixado (TRIAGEM 4: "transição" e "obra" soltos, divulgação oficial)
+            coluna = any(t in it.get("url", "") for t in cfg.get("colunas_url", []))
+            classe = decidir(cfg, it["titulo"], it["veiculo"], F, True, coluna)[0]
+            if classe == "descartada":
+                continue
+            if classe == "possivel":
+                it["possivel"] = True
         it["temas"] = temas_de(cfg, it["titulo"], compilados)  # recalcula: mudar o config vale para o que já foi guardado
         if casa(ruido, normalizar(it["titulo"])) and not (set(it["temas"]) & salvo):
             continue  # notícia policial ou de acidente sem tema de atenção
