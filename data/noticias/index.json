@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-05",
- "gerado_em": "2026-11-05T01:17:13Z",
+ "gerado_em": "2026-11-05T09:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,7 +25,7 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 27,
+   "lidos": 26,
    "aceitos": 20,
    "possiveis": 1
   },
@@ -33,8 +33,8 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 9,
+   "lidos": 9,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 16,
+   "lidos": 15,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -65,15 +65,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 5,
+   "lidos": 8,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 4,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 12,
+   "lidos": 13,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 69,
+   "lidos": 65,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -97,8 +97,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 68,
-   "aceitos": 3,
+   "lidos": 71,
+   "aceitos": 4,
    "possiveis": 4
   },
   {
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -129,9 +129,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 6,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -147,7 +147,7 @@
    "ok": true,
    "lidos": 24,
    "aceitos": 0,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -155,13 +155,13 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 2,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 61,
+   "lidos": 58,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -171,7 +171,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 8,
-   "possiveis": 6
+   "possiveis": 5
   },
   {
    "fonte": "Folha Vitória",
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -208,18 +208,32 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 316,
-  "sem_contexto_com_tema": 8,
-  "possivel": 21,
-  "veiculo_excluido": 44,
-  "excluir": 4,
-  "exterior_sem_ancora": 20,
-  "outro_estado": 22,
+  "sem_contexto": 314,
+  "sem_contexto_com_tema": 7,
+  "possivel": 19,
+  "veiculo_excluido": 42,
+  "excluir": 5,
+  "exterior_sem_ancora": 18,
+  "outro_estado": 23,
   "caixa_alta": 1,
-  "veiculo_outra_praca": 4,
-  "sigla_sem_ancora": 8
+  "sigla_sem_ancora": 8,
+  "veiculo_outra_praca": 3
  },
  "itens": [
+  {
+   "id": "f786aaa5d8d0",
+   "titulo": "Articulador político de Pazolini vai assumir articulação com Assembleia",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMUJfekhocTJXYlBreEJJLWhQVEIzVGRkOXZMUFNQNHBBM182QmRHa3VfQ0g2LXg1Tjdtb1JfZk92VERhZ1pyRFIteWM4M1pzLUpIeFZ1d09mSHBDdmZzY25yWnk3TzFaa2lRQ3VSakJkMHZQMmxrVXZYNlRLelRYZHF4d2pESjZmXzNIS09mQ0lIOHlCWm9abWRsT2I2UmhGY1BtMjNBaHRDOWJlMS1TcXlMZXlyLXFMV09JYjlJbDHSAcgBQVVfeXFMT2dtRk96Wnd3cnJJang3Y1pxRG9hTmJxVlhOUlFJLVMtMWNlaFFYX3NvMXZwcmtrd2FpVGhqeTFjTW5NSUtGanhUa3VNODNsVGx5dXg1LWZ5QUN2Qmd3VkEtY3pyZjZuTEF1OXNxRWRwcDB5Unk0THpwSVhVZWFuV3BRSnJDd0M4dWdxLWlIZTR0TUdGWWRpT1BqS05lX2QwNHlBWlFNMDNvUVdIRHM0eDFDYWdCRjhZdkd5OEdwVlNJeGtELUZEMXI?oc=5",
+   "data": "2026-11-05T09:00:00Z",
+   "coletado_em": "2026-11-05T09:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "9e297e1c937f",
    "titulo": "Dois advogados passam a integrar a equipe de transição do governador eleito Lorenzo Pazolini",
