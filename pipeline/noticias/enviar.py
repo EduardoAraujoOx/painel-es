@@ -269,6 +269,30 @@ def montar_conteudo(dados, itens, ref, painel_url, desde_txt, contratos=(), atos
             montar_texto(grupos, len(itens), restantes, ref, painel_url, desde_txt, contratos, atos, obras))
 
 
+def nome_remetente():
+    """Nome que aparece como remetente (o endereço continua sendo o da conta SMTP). Troca-se pela variável SMTP_NOME do repositório."""
+    return os.environ.get("SMTP_NOME", "").strip()[:80] or "Painel ES · Monitoramento da transição"
+
+
+def carregar_assinantes():
+    """Módulo dos assinantes (cadastro pela página /alertas). Carregado pelo caminho: com `python3 -I` a pasta do script não está no sys.path."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("assinantes", Path(__file__).resolve().parent / "assinantes.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+def com_rodape_sair(corpo_html, corpo_txt, rodape):
+    """Acrescenta o link de saída ao fim do resumo (html antes de </body>; texto no fim)."""
+    rodape_html, rodape_txt = rodape
+    if "</body>" in corpo_html:
+        corpo_html = corpo_html.replace("</body>", rodape_html + "</body>", 1)
+    else:
+        corpo_html += rodape_html
+    return corpo_html, corpo_txt + rodape_txt
+
+
 def destinatarios(bruto):
     achados = [x.strip() for x in re.split(r"[,;\s]+", bruto or "") if x.strip()]
     validos, vistos = [], set()
@@ -328,8 +352,17 @@ def main():
 
     usuario, senha = os.environ.get("SMTP_USUARIO", "").strip(), os.environ.get("SMTP_SENHA", "")
     lista = destinatarios(os.environ.get("NOTICIAS_DESTINATARIOS", ""))
-    if not (usuario and senha and lista):
-        print("envio desativado: faltam SMTP_USUARIO, SMTP_SENHA ou NOTICIAS_DESTINATARIOS (nada foi enviado)")
+    # assinantes confirmados pela página /alertas (só dentro do fluxo do GitHub, que tem o token OIDC): cada um recebe o resumo com o seu link para sair
+    assinantes_ok = []
+    if usuario and senha and (itens or contratos or atos or obras):
+        try:
+            dados_a = carregar_assinantes().listar()
+        except Exception:  # a lista de assinantes nunca pode derrubar o resumo dos destinatários fixos
+            dados_a = None
+        fixos = {x.lower() for x in lista}
+        assinantes_ok = [a for a in (dados_a or {}).get("confirmados", []) if a["email"].lower() not in fixos]
+    if not (usuario and senha and (lista or assinantes_ok)):
+        print("envio desativado: faltam SMTP_USUARIO, SMTP_SENHA ou destinatários (nada foi enviado)")
         return
     if not itens and not contratos and not atos and not obras:
         print("sem notícias, contratos, atos do Diário nem obras novos desde o último resumo: nada a enviar")
@@ -340,18 +373,33 @@ def main():
     for dest in lista:
         m = EmailMessage()
         m["Subject"] = assunto(len(itens), ref, args.teste, len(contratos), len(atos), len(obras))
-        m["From"] = formataddr(("Painel Fiscal ES", remetente))
+        m["From"] = formataddr((nome_remetente(), remetente))
         m["To"] = dest
         m["Date"] = formatdate(localtime=False)
         m["Message-ID"] = make_msgid(domain=remetente.split("@")[-1])
         m.set_content(corpo_txt)
         m.add_alternative(corpo_html, subtype="html")
         msgs.append(m)
+    if assinantes_ok:
+        mod = carregar_assinantes()
+        painel_link = painel if link_seguro(painel) else mod.PAINEL_PADRAO
+        for a in assinantes_ok:
+            h, t = com_rodape_sair(corpo_html, corpo_txt, mod.rodape_sair(painel_link, a["token_sair"]))
+            m = EmailMessage()
+            m["Subject"] = assunto(len(itens), ref, args.teste, len(contratos), len(atos), len(obras))
+            m["From"] = formataddr((nome_remetente(), remetente))
+            m["To"] = a["email"]
+            m["Date"] = formatdate(localtime=False)
+            m["Message-ID"] = make_msgid(domain=remetente.split("@")[-1])
+            m["List-Unsubscribe"] = f"<{mod.link_pagina(painel_link, 'sair', a['token_sair'])}>"
+            m.set_content(t)
+            m.add_alternative(h, subtype="html")
+            msgs.append(m)
     try:
         enviar(msgs, os.environ.get("SMTP_HOST", "smtp.gmail.com").strip() or "smtp.gmail.com", int(os.environ.get("SMTP_PORTA", "587") or 587), usuario, senha)
     except (smtplib.SMTPException, OSError) as erro:
         sys.exit(f"falha no envio: {type(erro).__name__}")  # sem detalhes: a mensagem de erro pode ecoar o usuário
-    print(f"resumo enviado a {len(lista)} destinatário(s): {len(itens)} notícias, {len(contratos)} contratos, {len(atos)} atos do Diário e {len(obras)} obras")
+    print(f"resumo enviado a {len(msgs)} destinatário(s) ({len(lista)} fixos e {len(assinantes_ok)} assinantes): {len(itens)} notícias, {len(contratos)} contratos, {len(atos)} atos do Diário e {len(obras)} obras")
     if not args.teste:
         MARCO.write_text(json.dumps({"ultimo_envio": iso(ref), "noticias": len(itens), "contratos": len(contratos), "atos": len(atos), "obras": len(obras)}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 

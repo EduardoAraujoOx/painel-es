@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>Receber alertas · Painel Fiscal ES</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    body { margin: 0; background: var(--pagina); color: var(--tinta); }
+    .alertas { max-width: 34rem; margin: 0 auto; padding: 1.5rem 16px 3rem; }
+    .alertas h1 { font-size: 1.5rem; margin: 0 0 .5rem; }
+    .alertas p { line-height: 1.5; color: var(--tinta-2); }
+    .alertas form { display: grid; gap: .9rem; margin: 1.25rem 0; }
+    .alertas label { display: grid; gap: .3rem; font-weight: 600; }
+    .alertas input[type=email], .alertas input[type=text] { font: inherit; padding: .65rem .75rem; border: 1px solid var(--borda); border-radius: .5rem; background: var(--pagina); color: var(--tinta); }
+    .alertas .isca { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+    .alertas .botao { justify-self: start; padding: .65rem 1.1rem; cursor: pointer; }
+    #retorno { padding: .75rem 1rem; border-radius: .5rem; border: 1px solid var(--borda); }
+    #retorno.erro { border-color: #c0392b; }
+    #retorno.certo { border-color: #1e8449; }
+    .alertas a.voltar { color: inherit; }
+  </style>
+</head>
+<body>
+  <main class="alertas">
+    <h1 id="titulo">Receber os alertas do painel</h1>
+    <p id="explica">Resumos por e-mail, às 8h, 12h e 18h, com as notícias do governo do Espírito Santo, os atos do Diário Oficial sobre contratos e as obras paralisadas. O cadastro é por convite: use o link que você recebeu. Enviamos um e-mail para confirmar o endereço, e todo resumo traz o link para sair da lista.</p>
+
+    <form id="form-assinar" hidden novalidate>
+      <label>Seu e-mail <input id="email" type="email" name="email" autocomplete="email" required maxlength="254" placeholder="nome@exemplo.com"></label>
+      <label>Código do convite <input id="codigo" type="text" name="codigo" autocomplete="off" required maxlength="64"></label>
+      <div class="isca" aria-hidden="true"><label>Não preencha <input id="site" type="text" name="site" tabindex="-1" autocomplete="off"></label></div>
+      <button class="botao" type="submit">Cadastrar</button>
+    </form>
+
+    <div id="acao" hidden>
+      <button id="botao-acao" class="botao" type="button"></button>
+    </div>
+
+    <p id="retorno" role="status" hidden></p>
+    <p><a class="voltar" href="/">Ir para o painel</a></p>
+  </main>
+  <script src="/alertas/alertas.js"></script>
+</body>
+</html>

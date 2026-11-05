@@ -503,6 +503,15 @@ class Resumo(unittest.TestCase):
         self.assertIn("https://painel-es.vercel.app", corpo)  # a de 30 horas atrás fica de fora no primeiro envio (24 h)
         self.assertTrue(enviar.MARCO.exists())
 
+    def test_nome_do_remetente_e_o_da_transicao_e_pode_ser_trocado(self):
+        from email.header import decode_header, make_header
+        msgs = self.rodar(self.ENV)
+        nome = str(make_header(decode_header(msgs[0]["From"])))
+        self.assertIn("Monitoramento da transição", nome)
+        self.assertIn("u@exemplo.com", nome)  # o endereço segue sendo o da conta SMTP
+        msgs = self.rodar({**self.ENV, "SMTP_NOME": "Equipe de Transição ES"}, ("--teste",))  # --teste: não depende do marco do envio anterior
+        self.assertIn("Equipe de Transição ES", str(make_header(decode_header(msgs[0]["From"]))))
+
     def test_segundo_envio_sem_novidade_nao_manda_nada(self):
         self.rodar(self.ENV)
         self.assertEqual(self.rodar(self.ENV), [])
@@ -658,6 +667,82 @@ class Resumo(unittest.TestCase):
         enviar.DADOS.write_text(json.dumps(d), encoding="utf-8")
         self.prepara([self.contrato(1, 40)])
         self.assertEqual(self.rodar(self.ENV), [])
+
+
+class Assinantes(unittest.TestCase):
+    """Assinantes dos alertas (cadastro pela página /alertas): validação do que vem da função, e-mails de confirmação, resumo com link para sair."""
+    TOK = "ab" * 32
+    ID = "123e4567-e89b-42d3-a456-426614174000"
+
+    def setUp(self):
+        self.mod = carregar("assinantes")
+        original = enviar.carregar_assinantes
+        self.addCleanup(lambda: setattr(enviar, "carregar_assinantes", original))  # os testes que o trocam não vazam para os outros
+
+    def test_limpar_descarta_o_que_nao_tem_o_formato_esperado(self):
+        bruto = [{"email": "ok@exemplo.com", "token_sair": self.TOK}, {"email": "x@exemplo.com\nBcc: y@z.com", "token_sair": self.TOK},
+                 {"email": "sem-token@exemplo.com", "token_sair": "curto"}, {"email": "outro@exemplo.com"}, "texto", None, {"email": "a b@exemplo.com", "token_sair": self.TOK}]
+        self.assertEqual(self.mod.limpar(bruto, {"token_sair": self.mod.RE_TOKEN}), [{"email": "ok@exemplo.com", "token_sair": self.TOK}])
+        self.assertEqual(self.mod.limpar(None, {}), [])
+
+    def test_sem_token_oidc_nao_consulta_nada(self):
+        import os
+        for k in ("ACTIONS_ID_TOKEN_REQUEST_URL", "ACTIONS_ID_TOKEN_REQUEST_TOKEN"):
+            os.environ.pop(k, None)
+        self.assertIsNone(self.mod.token_oidc())
+        self.assertIsNone(self.mod.listar())
+        self.assertFalse(self.mod.marcar_enviados([self.ID]))
+
+    def test_listar_filtra_a_resposta_da_funcao(self):
+        self.mod.token_oidc = lambda: "tok"
+        self.mod.chamar = lambda corpo, token: {"ok": True, "confirmados": [{"email": "a@exemplo.com", "token_sair": self.TOK}, {"email": "ruim", "token_sair": self.TOK}],
+                                                  "pendentes": [{"id": self.ID, "email": "b@exemplo.com", "token_confirmar": self.TOK}, {"id": "x", "email": "c@exemplo.com", "token_confirmar": self.TOK}]}
+        r = self.mod.listar()
+        self.assertEqual([c["email"] for c in r["confirmados"]], ["a@exemplo.com"])
+        self.assertEqual([p["email"] for p in r["pendentes"]], ["b@exemplo.com"])
+        self.mod.chamar = lambda corpo, token: {"ok": False}
+        with self.assertRaises(RuntimeError):  # com token e sem lista é falha (o passo fica vermelho), não ausência
+            self.mod.listar()
+        self.mod.chamar = lambda corpo, token: None
+        with self.assertRaises(RuntimeError):
+            self.mod.listar()
+
+    def test_confirmacao_leva_o_link_da_pagina_e_so_o_destinatario(self):
+        m = self.mod.montar_confirmacao("a@exemplo.com", "https://painel-es.vercel.app/", self.TOK, "painel@exemplo.com")
+        self.assertEqual(m["To"], "a@exemplo.com")
+        url = f"https://painel-es.vercel.app/alertas/?acao=confirmar&t={self.TOK}"
+        self.assertIn(url, m.get_body(("plain",)).get_content())
+        self.assertIn(url, m.get_body(("html",)).get_content())
+
+    def test_resumo_vai_a_fixos_e_assinantes_cada_um_com_seu_link_de_sair(self):
+        # reaproveita a montagem do teste de resumo: dados fictícios e SMTP falso
+        base = Resumo("test_envia_um_por_destinatario_sem_duplicar_e_grava_marco")
+        base.setUp()
+        self.addCleanup(base.tearDown)
+        outro = "cd" * 32
+        mod = self.mod
+        mod.listar = lambda: {"confirmados": [{"email": "assinante@exemplo.com", "token_sair": self.TOK}, {"email": "A@exemplo.com", "token_sair": outro},
+                                              {"email": "outro@exemplo.com", "token_sair": outro}], "pendentes": []}
+        enviar.carregar_assinantes = lambda: mod
+        msgs = base.rodar(Resumo.ENV)
+        destinos = sorted(m["To"] for m in msgs)
+        self.assertEqual(destinos, ["B@exemplo.com", "a@exemplo.com", "assinante@exemplo.com", "outro@exemplo.com"])  # A@ já é destinatário fixo: não duplica
+        por = {m["To"]: m for m in msgs}
+        self.assertNotIn("alertas/?acao=sair", por["a@exemplo.com"].get_body(("html",)).get_content())  # fixos: sem link
+        h = por["assinante@exemplo.com"].get_body(("html",)).get_content()
+        self.assertIn(f"/alertas/?acao=sair&t={self.TOK}", h)
+        self.assertNotIn(outro, h)  # o link de um assinante não vai no e-mail de outro
+        self.assertIn(f"/alertas/?acao=sair&t={outro}", por["outro@exemplo.com"].get_body(("plain",)).get_content())
+        self.assertIn("List-Unsubscribe", por["assinante@exemplo.com"])
+
+    def test_falha_ao_ler_assinantes_nao_derruba_o_resumo_dos_fixos(self):
+        base = Resumo("test_envia_um_por_destinatario_sem_duplicar_e_grava_marco")
+        base.setUp()
+        self.addCleanup(base.tearDown)
+        def quebra():
+            raise RuntimeError("sem rede")
+        enviar.carregar_assinantes = quebra
+        self.assertEqual(sorted(m["To"] for m in base.rodar(Resumo.ENV)), ["B@exemplo.com", "a@exemplo.com"])
 
 
 if __name__ == "__main__":
