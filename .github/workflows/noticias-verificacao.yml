@@ -15,6 +15,9 @@ on:
       - 'pipeline/obras/**'
       - 'public/modulos/obras.js'
       - 'pipeline/cruzamento/**'
+      - 'supabase/**'
+      - 'api/alertas.js'
+      - 'public/alertas/**'
       - '.github/workflows/noticias*.yml'
   workflow_dispatch:
 
@@ -43,6 +46,12 @@ jobs:
 
       - name: Testes (obras)
         run: python3 -I -m unittest discover -s pipeline/obras/testes -v
+
+      - name: "Testes (cadastro de alertas: função do Supabase e página)"
+        run: |
+          node --test supabase/functions/alertas/testes/util.test.mjs supabase/functions/alertas/testes/api.test.mjs
+          node --check api/alertas.js
+          node --check public/alertas/alertas.js
 
       - name: Testes (cruzamento Diário, SIGA e obras)
         run: python3 -I -m unittest discover -s pipeline/cruzamento/testes -v

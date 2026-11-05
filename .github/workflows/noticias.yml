@@ -28,6 +28,7 @@ on:
 
 permissions:
   contents: write
+  id-token: write  # token OIDC do fluxo: é com ele que a função de alertas (Supabase) entrega a lista de assinantes, sem segredo guardado
 
 concurrency:
   group: coleta-noticias
@@ -125,6 +126,20 @@ jobs:
         continue-on-error: true
         run: python3 -I pipeline/cruzamento/datas.py
 
+      # Cadastro de alertas (página /alertas do painel): a cada coleta, manda o e-mail de confirmação a quem acabou de se cadastrar (o link só
+      # confirma ao apertar um botão). Os resumos para os confirmados saem no passo seguinte, junto com os destinatários fixos. Sem token OIDC, não faz nada.
+      - name: Enviar as confirmações de cadastro de alertas
+        id: alertas
+        continue-on-error: true
+        env:
+          SMTP_USUARIO: ${{ secrets.SMTP_USUARIO }}
+          SMTP_SENHA: ${{ secrets.SMTP_SENHA }}
+          SMTP_REMETENTE: ${{ secrets.SMTP_REMETENTE }}
+          SMTP_HOST: ${{ vars.SMTP_HOST }}
+          SMTP_PORTA: ${{ vars.SMTP_PORTA }}
+          PAINEL_URL: ${{ vars.PAINEL_URL }}
+        run: python3 -I pipeline/noticias/assinantes.py
+
       # Falha no e-mail não impede a publicação das notícias; o último passo deixa a execução vermelha para o aviso chegar.
       - name: Enviar o resumo por e-mail (resumo vencido ou teste manual)
         id: enviar
@@ -167,7 +182,7 @@ jobs:
           echo "Não foi possível enviar a coleta."; exit 1
 
       - name: Avisar se o e-mail, o levantamento de contratos, a leitura do Diário, a das obras ou o cruzamento falhou
-        if: steps.enviar.outcome == 'failure' || steps.suspensos.outcome == 'failure' || steps.diario.outcome == 'failure' || steps.obras.outcome == 'failure' || steps.cruzamento.outcome == 'failure' || steps.datas.outcome == 'failure'
+        if: steps.enviar.outcome == 'failure' || steps.suspensos.outcome == 'failure' || steps.diario.outcome == 'failure' || steps.obras.outcome == 'failure' || steps.cruzamento.outcome == 'failure' || steps.alertas.outcome == 'failure' || steps.datas.outcome == 'failure'
         run: |
           echo "O resumo por e-mail, o levantamento de contratos suspensos ou a leitura do Diário Oficial, a das obras, o cruzamento ou as datas dos suspensos falhou (veja os passos acima). As notícias foram publicadas normalmente."
           exit 1
