@@ -1,6 +1,6 @@
 {
- "ref": "2026-11-04",
- "gerado_em": "2026-11-04T23:17:12Z",
+ "ref": "2026-11-05",
+ "gerado_em": "2026-11-05T00:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,23 +26,23 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 30,
-   "aceitos": 20,
+   "aceitos": 21,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 8,
+   "lidos": 10,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 5,
+   "lidos": 6,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 12,
+   "lidos": 13,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -89,15 +89,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 66,
-   "aceitos": 2,
+   "lidos": 67,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 67,
+   "lidos": 68,
    "aceitos": 3,
    "possiveis": 4
   },
@@ -139,13 +139,13 @@
    "ok": true,
    "lidos": 32,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 24,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -153,8 +153,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
-   "aceitos": 3,
+   "lidos": 30,
+   "aceitos": 2,
    "possiveis": 4
   },
   {
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 7,
+   "aceitos": 8,
    "possiveis": 6
   },
   {
@@ -208,18 +208,48 @@
  ],
  "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 315,
+  "sem_contexto": 314,
   "sem_contexto_com_tema": 8,
   "possivel": 20,
   "veiculo_excluido": 43,
-  "excluir": 5,
+  "excluir": 4,
   "exterior_sem_ancora": 19,
   "outro_estado": 22,
   "caixa_alta": 1,
-  "veiculo_outra_praca": 3,
-  "sigla_sem_ancora": 8
+  "veiculo_outra_praca": 4,
+  "sigla_sem_ancora": 9
  },
  "itens": [
+  {
+   "id": "5c565beeaaee",
+   "titulo": "Dois advogados reforçam equipe de transição de Pazolini",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/politica/dois-advogados-reforcam-equipe-de-transicao-de-pazolini-1126",
+   "data": "2026-11-05T00:00:00Z",
+   "coletado_em": "2026-11-05T00:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "a661ca88d2e4",
+   "titulo": "Concurso da Sefaz é prorrogado; são 60 vagas com salários de R$ 11,3 mil",
+   "veiculo": "Araraquara Agora",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNYjEzblNpV2I0SVFKb3hEWXN2U0VKYzgzMWtrTERTRlFWZXJadlFDbGhTU2l6WUd2R1dDbmlMc0NwVW9tSGdnMkNzbUJUZGFhaHlGZzB3eFhMdkhMdGMtaWVQMFFKSnBRMjVQYmN0MnZNalNMd0d5VlRQLUtTSDF0eEJra3JVUTk0ckhRUG4tM25jdS1Za1RWaWRHX181YW5yT2c?oc=5",
+   "data": "2026-11-04T23:47:00Z",
+   "coletado_em": "2026-11-05T00:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "financas",
+    "pessoal"
+   ]
+  },
   {
    "id": "164656117620",
    "titulo": "Projetos de Ricardo Ferraço nas mãos da Assembleia Legislativa",
@@ -301,6 +331,21 @@
    "triagem": 3,
    "temas": [
     "financas"
+   ]
+  },
+  {
+   "id": "35f0dfe979b5",
+   "titulo": "Nova ponte de Cachoeiro poderá levar nome de Irmã Otília; Ferraço anuncia mudanças na obra",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPR2c0cTNwdkNXbHk1cVZEZUZGczl1bnVGazE1b0VQamhfMmlTWG5oN0E3bDhpcnhfbkdCMmtPWS1mUlBySUttQmIyT3dZUEtUUWpwREZ4NlR3OVdPa080V3pqVFA2SElkemJBcmxubHlJWDZLUE1kR3dpZGt5WW5EWW1oMDVKekk?oc=5",
+   "data": "2026-11-04T21:14:10Z",
+   "coletado_em": "2026-11-05T00:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "governador",
+    "contratos"
    ]
   },
   {
