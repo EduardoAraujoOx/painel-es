@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-05",
- "gerado_em": "2026-11-05T09:17:13Z",
+ "gerado_em": "2026-11-05T11:17:22Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -33,8 +33,8 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 8,
+   "lidos": 10,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 13,
+   "lidos": 14,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 65,
+   "lidos": 67,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 71,
+   "lidos": 76,
    "aceitos": 4,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 33,
+   "lidos": 29,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -155,7 +155,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 2,
-   "possiveis": 4
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 8,
+   "aceitos": 6,
    "possiveis": 5
   },
   {
@@ -195,7 +195,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 4,
-   "possiveis": 1
+   "possiveis": 3
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -208,18 +208,61 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 314,
+  "sem_contexto": 326,
   "sem_contexto_com_tema": 7,
-  "possivel": 19,
-  "veiculo_excluido": 42,
+  "possivel": 20,
+  "veiculo_excluido": 41,
   "excluir": 5,
-  "exterior_sem_ancora": 18,
-  "outro_estado": 23,
+  "exterior_sem_ancora": 15,
+  "outro_estado": 22,
   "caixa_alta": 1,
-  "sigla_sem_ancora": 8,
-  "veiculo_outra_praca": 3
+  "sigla_sem_ancora": 6,
+  "veiculo_outra_praca": 4
  },
  "itens": [
+  {
+   "id": "d20612d67cf3",
+   "titulo": "Municípios devem aplicar 4% do Fundeb no tempo integral",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/fundeb-tempo-integral-municipios/",
+   "data": "2026-11-05T10:50:17Z",
+   "coletado_em": "2026-11-05T11:17:22Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "3438d0019668",
+   "titulo": "Licitação de R$ 66,5 milhões em Vitória é liberada pelo Tribunal de Contas",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/licitacao-tribunal-de-contas/",
+   "data": "2026-11-05T10:48:41Z",
+   "coletado_em": "2026-11-05T11:17:22Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "contratos",
+    "controle"
+   ]
+  },
+  {
+   "id": "a4272787b3a6",
+   "titulo": "Tribunal de Contas afasta multa de ex-secretário da Serra",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/tribunal-contas-secretario-serra/",
+   "data": "2026-11-05T10:46:43Z",
+   "coletado_em": "2026-11-05T11:17:22Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "controle"
+   ]
+  },
   {
    "id": "f786aaa5d8d0",
    "titulo": "Articulador político de Pazolini vai assumir articulação com Assembleia",
