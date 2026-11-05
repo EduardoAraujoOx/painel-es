@@ -255,6 +255,38 @@ class FerramentaDeAuditoria(unittest.TestCase):
         self.assertGreaterEqual(len(vistos), 7)  # o teste cobre de fato os motivos, não só um
 
 
+class ColunasPoliticas(unittest.TestCase):
+    """Colunistas políticos (A Gazeta, Sim Notícias): o título raramente cita o Estado. Achado de 05/11/2026: "Uma corrida de madrugada e outra pela presidência
+    da Assembleia" (coluna de Vinícius Baptista, Sim Notícias) não entrava, porque o veículo nem era lido."""
+    TITULO = "Uma corrida de madrugada e outra pela presidência da Assembleia"
+
+    def setUp(self):
+        self.F = coletar.preparar(CFG)
+
+    def test_feed_de_colunas_confirma_assunto_publico_sem_o_estado_no_titulo(self):
+        self.assertEqual(coletar.decidir(CFG, self.TITULO, "Sim Notícias", self.F, True, True), ("confirmada", "coluna_politica"))
+        self.assertEqual(coletar.decidir(CFG, "Emendas impositivas: deputados largam na frente para 2030", "Sim Notícias", self.F, True, True)[0], "confirmada")
+
+    def test_o_mesmo_titulo_fora_de_feed_de_colunas_segue_possivel(self):
+        self.assertEqual(coletar.decidir(CFG, self.TITULO, "Sim Notícias", self.F, True, False), ("possivel", "possivel"))
+
+    def test_coluna_sem_assunto_publico_ou_do_exterior_continua_descartada(self):
+        self.assertEqual(coletar.decidir(CFG, "Por que homens vivem menos", "A Gazeta", self.F, True, True)[0], "descartada")
+        self.assertEqual(coletar.decidir(CFG, "Rubio dribla Moraes e resgata Flávio", "A Gazeta", self.F, True, True), ("descartada", "exterior_sem_ancora"))
+
+    def test_feeds_de_colunas_e_de_politica_estao_no_config_e_o_veiculo_e_capixaba(self):
+        urls = {f["url"]: f for f in CFG["feeds"]}
+        for u in ("https://www.agazeta.com.br/colunas/rss", "https://simnoticias.com.br/vinicius-baptista/feed/"):
+            self.assertTrue(urls[u].get("coluna"), u)
+        for u in ("https://www.agazeta.com.br/es/politica/rss", "https://simnoticias.com.br/politica/feed/"):
+            self.assertIn(u, urls)
+            self.assertFalse(urls[u].get("coluna"), u)  # feed de política geral: sem a promoção
+        self.assertIn("Sim Notícias", CFG["veiculos_capixabas"])
+        fontes = {f["rotulo"]: f for f in coletar.fontes_do_config(CFG, 3) if f["tipo"] == "feed"}
+        self.assertTrue(fontes["https://simnoticias.com.br/vinicius-baptista/feed/"]["coluna"])
+        self.assertFalse(fontes["https://simnoticias.com.br/politica/feed/"]["coluna"])
+
+
 class Feeds(unittest.TestCase):
     def test_le_item_valido_e_descarta_link_inseguro_ou_ausente(self):
         itens = coletar.ler_feed(FEED)

@@ -170,7 +170,7 @@ def fontes_do_config(cfg, dias):
         yield {"nome": "Google Notícias", "tipo": "google", "rotulo": q, "urls": [url]}
     for f in cfg["feeds"]:
         urls = [f["url"]] + [f"{f['url']}{'&' if '?' in f['url'] else '?'}paged={n}" for n in range(2, f.get("paginas", 1) + 1)]
-        yield {"nome": f["nome"], "tipo": "feed", "rotulo": f["url"], "urls": urls}
+        yield {"nome": f["nome"], "tipo": "feed", "rotulo": f["url"], "urls": urls, "coluna": bool(f.get("coluna"))}
 
 
 def compilar_temas(cfg):
@@ -196,11 +196,13 @@ def preparar(cfg):
             "outro_uf": re.compile(r"(?<![A-Za-z])(?:" + "|".join(re.escape(u) for u in cfg.get("outros_estados", [])) + r")(?![A-Za-z])") if cfg.get("outros_estados") else None}
 
 
-def decidir(cfg, titulo, veiculo, F, regional=False):
+def decidir(cfg, titulo, veiculo, F, regional=False, coluna=False):
     """Classifica o título em 'confirmada', 'possivel' ou 'descartada', com o motivo.
     `regional` diz que a fonte já é capixaba (feed do ES ou busca restrita a site capixaba).
     Possível = cheira a assunto público capixaba mas não cita o Estado: fica guardada, fora do e-mail e dos números, para não
-    perder em silêncio o que um filtro rígido deixaria passar."""
+    perder em silêncio o que um filtro rígido deixaria passar.
+    `coluna` diz que a fonte é um feed de colunas políticas de veículo capixaba: o título do colunista raramente cita "ES" ou "governo do Estado" ("Uma corrida
+    de madrugada e outra pela presidência da Assembleia"), então o que só ficaria como possível (assunto público, sem o Estado no título) vale como confirmado."""
     n = normalizar(titulo)
     letras = [ch for ch in titulo if ch.isalpha()]
     if len(letras) > 30 and sum(ch.isupper() for ch in letras) / len(letras) > 0.8:
@@ -235,7 +237,7 @@ def decidir(cfg, titulo, veiculo, F, regional=False):
     if casa(F["local"], n) and [t for t in temas if t != "restricao"]:
         return "confirmada", "tema_e_localizador"
     if (casa(F["local"], n) or capixaba) and (temas or casa(F["setor"], n)):
-        return "possivel", "possivel"
+        return ("confirmada", "coluna_politica") if coluna else ("possivel", "possivel")
     return "descartada", "sem_contexto_com_tema" if temas else "sem_contexto"
 
 
@@ -262,7 +264,7 @@ def coletar(cfg, dias, descartadas=None):
                 data = it["data"] or agora()
                 if data < limite:
                     continue
-                classe, motivo = decidir(cfg, titulo, veiculo, F, regional)
+                classe, motivo = decidir(cfg, titulo, veiculo, F, regional, fonte.get("coluna", False))
                 if descartadas is not None and classe != "confirmada":
                     descartadas.append({"titulo": titulo, "veiculo": veiculo, "url": it["url"], "data": data, "motivo": motivo, "fonte": fonte["nome"], "consulta": fonte["rotulo"]})
                 if classe == "descartada":
