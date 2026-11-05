@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-05",
- "gerado_em": "2026-11-05T15:17:14Z",
+ "gerado_em": "2026-11-05T16:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,8 +25,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 28,
-   "aceitos": 19,
+   "lidos": 29,
+   "aceitos": 18,
    "possiveis": 1
   },
   {
@@ -34,15 +34,15 @@
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 7,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 7,
+   "lidos": 8,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
@@ -50,15 +50,15 @@
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
    "lidos": 14,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 3,
+   "lidos": 3,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -66,7 +66,7 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 8,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -74,7 +74,7 @@
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 7,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -90,14 +90,14 @@
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
    "lidos": 53,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 83,
+   "lidos": 85,
    "aceitos": 5,
    "possiveis": 3
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 32,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 23,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -154,7 +154,7 @@
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 31,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 5
   },
   {
@@ -171,7 +171,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 6,
-   "possiveis": 5
+   "possiveis": 4
   },
   {
    "fonte": "Folha Vitória",
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -194,8 +194,8 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
-   "possiveis": 5
+   "aceitos": 0,
+   "possiveis": 4
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -208,17 +208,85 @@
  ],
  "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto": 318,
-  "possivel": 22,
-  "sem_contexto_com_tema": 10,
+  "sem_contexto": 334,
+  "possivel": 21,
+  "exterior_sem_ancora": 12,
+  "sem_contexto_com_tema": 9,
   "veiculo_excluido": 39,
   "excluir": 5,
-  "exterior_sem_ancora": 14,
-  "outro_estado": 22,
+  "outro_estado": 23,
   "sigla_sem_ancora": 9,
   "veiculo_outra_praca": 4
  },
  "itens": [
+  {
+   "id": "0cdff8f3f64e",
+   "titulo": "Governador Pazolini retorna pela segunda vez para agradecer à população da Serra",
+   "veiculo": "Serra Noticiário",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPOG5ob3UzaDh0SVZCeVVyQTBFTGxFMXdQVkxDUFI4cUdBOFRrUXF1RFZlQ2RORDY3OGZubnI2NXRfLWs3UVRLVEJXa3FxOF9uOFNZaUdBb0RjTFA5cGNScThZbDl3bUVHYlhWSE4tbklSYWJ4Qjh1eC1ibVc3UU5nQXZBWGpoclhtblU4UjVnUlc3SURiZERhTkxJcDFsbnFDTHVuUWpORVhZSEFMRVctdHlB?oc=5",
+   "data": "2026-11-05T16:07:00Z",
+   "coletado_em": "2026-11-05T16:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "3e4f261f00a5",
+   "titulo": "Licença-maternidade unificada: STF corrige uma dívida histórica",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/artigos/licenca-maternidade-unificada-stf-corrige-uma-divida-historica-1126",
+   "data": "2026-11-05T16:00:00Z",
+   "coletado_em": "2026-11-05T16:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "f9435eac983c",
+   "titulo": "Concurso Polícia Científica ES: autorização assinada",
+   "veiculo": "Magistrar",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBnb1NLeVU2V2xkNzkxWXFLcVlVVG4zWUMtRWphZUc1UGVNU0ZyWVdNSFBUN3VOdGgzYXoyWlZaY1B4UHY4Z0NxUkQyQUFuYTdfczhhckNzOWo1a1pJbnJuVnY5Q1hzTkE3T0NpQnctTmh4Xzk5U2c?oc=5",
+   "data": "2026-11-05T15:47:23Z",
+   "coletado_em": "2026-11-05T16:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "45f91c63b4a6",
+   "titulo": "Empresas estrangeiras poderão disputar licitação de obra da Terceira Via na Serra",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/cotidiano/empresas-estrangeiras-poderao-disputar-licitacao-de-obra-da-terceira-via-na-serra/",
+   "data": "2026-11-05T15:33:01Z",
+   "coletado_em": "2026-11-05T16:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "b0af5bbf8640",
+   "titulo": "Dívidas da Cesan disparam e balanço fica sob pressão",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPTmNWaXQ5MU9jWEtya0E2Q0xObEJYVjF1SUNuMmI4YTkteFN2SW9TNkpUd0IyazVmZEIwVVo1LWlKaHFrSHF6MUF2MDFqTWZMSlR1ZU9hYWdCcWFlVnRVNU1QODBoSWRZNmRYMmN3bEtldzB3Q3JhQkhVV0otLTB4eA?oc=5",
+   "data": "2026-11-05T15:21:13Z",
+   "coletado_em": "2026-11-05T16:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "30342386b9fa",
    "titulo": "Estudantes que vão fazer a prova do Enem terão passe livre no Transcol neste domingo",
