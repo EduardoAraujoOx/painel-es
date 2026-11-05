@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-05",
- "gerado_em": "2026-11-05T17:25:27Z",
+ "gerado_em": "2026-11-05T18:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 29,
-   "aceitos": 17,
+   "aceitos": 16,
    "possiveis": 1
   },
   {
@@ -41,17 +41,17 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 9,
+   "lidos": 7,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 15,
+   "lidos": 16,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -65,8 +65,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 2,
+   "lidos": 7,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -81,8 +81,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 13,
-   "aceitos": 2,
+   "lidos": 14,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -90,15 +90,15 @@
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
    "lidos": 52,
-   "aceitos": 4,
-   "possiveis": 1
+   "aceitos": 3,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 83,
-   "aceitos": 5,
+   "lidos": 73,
+   "aceitos": 4,
    "possiveis": 3
   },
   {
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -137,23 +137,23 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
-   "aceitos": 0,
+   "lidos": 30,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 24,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 30,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 59,
+   "lidos": 60,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -171,14 +171,14 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 7,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -195,7 +195,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 0,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -206,19 +206,100 @@
    "possiveis": 3
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto": 328,
+  "sem_contexto": 322,
   "possivel": 20,
   "exterior_sem_ancora": 13,
   "sem_contexto_com_tema": 12,
   "veiculo_excluido": 37,
-  "excluir": 6,
-  "outro_estado": 22,
-  "sigla_sem_ancora": 6,
+  "excluir": 7,
+  "outro_estado": 18,
+  "sigla_sem_ancora": 7,
   "veiculo_outra_praca": 4
  },
  "itens": [
+  {
+   "id": "e7c6d41ff435",
+   "titulo": "Governo publica MP do ‘imposto do pecado’, que terá transição em 2027; veja produtos e alíquotas",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/governo-publica-mp-do-imposto-do-pecado-que-tera-transicao-em-2027-veja-produtos-e-aliquotas/",
+   "data": "2026-11-05T18:04:12Z",
+   "coletado_em": "2026-11-05T18:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "transicao",
+    "financas"
+   ]
+  },
+  {
+   "id": "13b5a85b8bea",
+   "titulo": "Lula reúne aliados para discutir economia e dívida pública",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQNEZnS3Q3enZCcDV2WHNvMmFqbFZ6R1paMGpYWDRsVW9jUWZPRmxxVklFME1TbkdwYU1xQVZrRWF1TUg5azhPaVM5aEFBeU5MQkRPclcycTVIUUl0b0Izc0xsc3lSYTJwbjBiNGVINE40T2ZMc2pwNUdQcGFra1ZGREhXSnZjbURp?oc=5",
+   "data": "2026-11-05T18:03:02Z",
+   "coletado_em": "2026-11-05T18:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "a1150108c386",
+   "titulo": "Sejus suspende câmeras corporais em presídios do Estado",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPX0hSVUVXeTZuTkRfVERpdndoUURUanIzUUhabXJnczdVQVRrbWdIZzM0SlRMdU1yLUVBZnluRGlDeTdvaVFoN29tVEl3OTk5YzNjMTdmLXpBb2FFMGdxYWY4RWNPaGZ3azNCaVhOQThoZ3hGZmxHX1JCZHJTRUtLRzRFeWg0Z0xYanRFRkVmZUZ1d1lzRXlaWE43QzZrYU5JQldyeGh3?oc=5",
+   "data": "2026-11-05T18:02:16Z",
+   "coletado_em": "2026-11-05T18:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "a54092d82259",
+   "titulo": "Transcol terá viagens extras para a Festa da Banana, em Cariacica",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/cotidiano/transcol-tera-viagens-extras-para-a-festa-da-banana-em-cariacica-1126",
+   "data": "2026-11-05T17:49:07Z",
+   "coletado_em": "2026-11-05T18:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": []
+  },
+  {
+   "id": "bc5aa76bdd6b",
+   "titulo": "Emendas parlamentares: veja o caminho até dinheiro chegar à população",
+   "veiculo": "Aqui Notícias",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNMG9la1ozbkozbnM1Y1NOaTNSWjZBLXFJV3pNMnNBLWFXMW9OS0VTY0U3SGs4RXdZamZxQUNyVmJYWTJqc1RzWlFxRTZiZk10czNUNFhMR0xuQmdNdGxXUnZrQ09UV0h3MTV6cTNKQWJEQkJaQXF6ckJ0SE1WanpIc0RJbTNwMTdELXY0VEFtbWpyR2syXzVCMUE0WDZLeFIyQ3hhaA?oc=5",
+   "data": "2026-11-05T17:48:21Z",
+   "coletado_em": "2026-11-05T18:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "1ccb8dae47ba",
+   "titulo": "Cristiano Ronaldo anuncia aposentadoria da seleção portuguesa",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/esportes/2026/11/cristiano-ronaldo-anuncia-aposentadoria-da-selecao-portuguesa/",
+   "data": "2026-11-05T17:34:47Z",
+   "coletado_em": "2026-11-05T18:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "a04919ccc911",
    "titulo": "Lista de boicote político em 15 cidades do ES vira alvo do Ministério Público",
