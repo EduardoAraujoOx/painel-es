@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-05",
- "gerado_em": "2026-11-05T00:17:12Z",
+ "gerado_em": "2026-11-05T01:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,8 +25,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 30,
-   "aceitos": 21,
+   "lidos": 27,
+   "aceitos": 20,
    "possiveis": 1
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 13,
+   "lidos": 12,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 67,
+   "lidos": 69,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 32,
+   "lidos": 33,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -155,7 +155,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 2,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -187,7 +187,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 2,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "ES Hoje",
@@ -206,20 +206,35 @@
    "possiveis": 3
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 314,
+  "sem_contexto": 316,
   "sem_contexto_com_tema": 8,
-  "possivel": 20,
-  "veiculo_excluido": 43,
+  "possivel": 21,
+  "veiculo_excluido": 44,
   "excluir": 4,
-  "exterior_sem_ancora": 19,
+  "exterior_sem_ancora": 20,
   "outro_estado": 22,
   "caixa_alta": 1,
   "veiculo_outra_praca": 4,
-  "sigla_sem_ancora": 9
+  "sigla_sem_ancora": 8
  },
  "itens": [
+  {
+   "id": "9e297e1c937f",
+   "titulo": "Dois advogados passam a integrar a equipe de transição do governador eleito Lorenzo Pazolini",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQnltakRUcVlfV3VFVk9IZnd4Sk1IZnk4NW9yT2hiQWgzY3lsTmRWSnZCMDRST2tNQU1uR2xuODFoOXdvVkxpa0dqdEtZbmJXa0NiWGJvbXc1WURyUHRDSWNGMldudy1fRnkyczlLa2xWNnRMckdva3h6VFhLcktOZi1VTlpTdmxHRy1Td3liQ2VKRnpIb0dDbmJvNXhQMVZzTUdtN194M2F6UFVRWjZBYnRKdWJSTnUt?oc=5",
+   "data": "2026-11-05T00:14:18Z",
+   "coletado_em": "2026-11-05T01:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
   {
    "id": "5c565beeaaee",
    "titulo": "Dois advogados reforçam equipe de transição de Pazolini",
@@ -263,6 +278,20 @@
    "temas": [
     "governador",
     "controle"
+   ]
+  },
+  {
+   "id": "71be9edfcb95",
+   "titulo": "Senado aprova renegociação de dívidas de estados e municípios no fim do mandato",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/senado-aprova-renegociacao-de-dividas-de-estados-e-municipios-no-fim-do-mandato/",
+   "data": "2026-11-04T22:43:00Z",
+   "coletado_em": "2026-11-05T01:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "financas"
    ]
   },
   {
