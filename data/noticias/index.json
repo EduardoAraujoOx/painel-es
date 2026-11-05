@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-05",
- "gerado_em": "2026-11-05T12:17:12Z",
+ "gerado_em": "2026-11-05T13:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 11,
-   "aceitos": 6,
+   "lidos": 9,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -34,7 +34,7 @@
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 9,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 13,
+   "lidos": 14,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -89,16 +89,16 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 66,
-   "aceitos": 3,
+   "lidos": 61,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 81,
-   "aceitos": 4,
+   "lidos": 84,
+   "aceitos": 5,
    "possiveis": 3
   },
   {
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 23,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -155,7 +155,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -194,8 +194,8 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 3,
-   "possiveis": 5
+   "aceitos": 2,
+   "possiveis": 4
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -206,19 +206,47 @@
    "possiveis": 3
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 331,
+  "sem_contexto": 329,
   "possivel": 21,
-  "veiculo_excluido": 41,
-  "sem_contexto_com_tema": 7,
+  "sem_contexto_com_tema": 9,
+  "veiculo_excluido": 38,
   "excluir": 5,
   "exterior_sem_ancora": 15,
-  "outro_estado": 22,
-  "sigla_sem_ancora": 6,
+  "outro_estado": 21,
+  "sigla_sem_ancora": 7,
   "veiculo_outra_praca": 4
  },
  "itens": [
+  {
+   "id": "4c6823c733a1",
+   "titulo": "O verdadeiro valor de um ponto de auditoria",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/ibef-o-verdadeiro-valor-de-um-ponto-de-auditoria/",
+   "data": "2026-11-05T13:00:00Z",
+   "coletado_em": "2026-11-05T13:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "640ca0188a68",
+   "titulo": "Articulador político de Pazolini vai assumir conversas com Assembleia",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQaF82Zjc3X2tmek9nUnplWDN3OXpyZzNBR1RLdkd5LWhPU3RRTUxHQ193OEJ2dHRQQXg2b3dHQUl6cVNOc1cyNGhXVG4wOXdPcjZzeldodFFZUjNfX3ZtY1l5RWo4WTRCZEtZOWVrWE1OYUl4Znlpc2NPLWU3MkVDTXBaVGFfY1l3RFdicFoxWnRMTkRxQTVObjNoaWYxSTZRd0tBQnpFdDM1T0NLVFFMeHRMVWRzQmozQWZvVnVn0gHGAUFVX3lxTFBLRXBSbHNwRWRGY2d2T2RxSmhfSVQyRjV3bXZYbGozTXBCUml0UmpPeFVuRC03Tkl1S1MzVjQtT1BIaGZuNk5FaThlOUs4RWV0bm1rTEtUUnpkTHF5OHJFdjh4Mm1IUm9wQ1UyTGNOWE5tWUc2aUFZdU9vQTZTSDR1R2tIS0o0YjBBQ2M0U2s0NFh1ZjJlMDVleVZ1c1VTRk5zeXBPTEtubDRaTnJMMTRwTmx3ZFc4VmxmcHpBcS1RMk1zMFNOUQ?oc=5",
+   "data": "2026-11-05T12:18:06Z",
+   "coletado_em": "2026-11-05T13:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 3,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "f759059f426c",
    "titulo": "Vila Velha recebe título de Capital Estadual da Canoagem",
@@ -536,6 +564,20 @@
    "possivel": false,
    "triagem": 3,
    "temas": []
+  },
+  {
+   "id": "46eb6e36929a",
+   "titulo": "Pendência no CPF bloqueia serviços da CNH no Detran para renovação em 2026; saiba como regularizar",
+   "veiculo": "Mix Vale",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQbWVHaWdPVzdQbko3ZFh5ZkpsUml5WWZJb2MwQ3MyWFhUWVExSEx6MUM2ZjlpMlZwTTJKZjdRcjd6akJPa18xUDJjemtQRVRLS0xNQnRXMk15R1d0WVpmLU1ac0YyOHZlRDUyMklCV3I3SFk4NUxtRFM3RFhsVUVyVF9sR0lZb3k5cnNBTVJJUjZjZ2ljNFZmc3VEZTFwWng4dDRaSDhvMFJRakRUZEgxelZjbG5RYl9zMkFPV3NLLVZBNmlDOTYtT0RRWngxZVVsOEE?oc=5",
+   "data": "2026-11-04T20:20:02Z",
+   "coletado_em": "2026-11-05T13:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 3,
+   "temas": [
+    "restricao"
+   ]
   },
   {
    "id": "9e722aa68d9b",
