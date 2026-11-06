@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-06",
- "gerado_em": "2026-11-06T20:17:13Z",
+ "gerado_em": "2026-11-06T21:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 12,
+   "lidos": 11,
    "aceitos": 4,
    "possiveis": 0
   },
@@ -25,8 +25,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 24,
-   "aceitos": 8,
+   "lidos": 22,
+   "aceitos": 7,
    "possiveis": 4
   },
   {
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 5,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 65,
+   "lidos": 67,
    "aceitos": 4,
    "possiveis": 5
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 66,
+   "lidos": 65,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 26,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 25,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 29,
    "aceitos": 5,
    "possiveis": 1
   },
@@ -171,7 +171,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 4,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Folha Vitória",
@@ -238,22 +238,36 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 5,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 348,
+  "sem_contexto": 344,
   "oficial_sem_tema": 4,
   "oficial_divulgacao": 1,
-  "possivel": 19,
-  "veiculo_excluido": 40,
-  "outro_estado": 18,
-  "sem_contexto_com_tema": 4,
+  "possivel": 20,
+  "veiculo_excluido": 42,
+  "outro_estado": 19,
+  "sem_contexto_com_tema": 3,
   "exterior_sem_ancora": 5,
-  "excluir": 12,
+  "excluir": 10,
   "caixa_alta": 1,
-  "veiculo_outra_praca": 4,
+  "veiculo_outra_praca": 5,
   "sigla_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "b4d00a0b8254",
+   "titulo": "13º salário na conta? Veja erros que podem comprometer seu orçamento",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/economia/13-salario-na-conta-veja-erros-que-podem-comprometer-seu-orcamento-1126",
+   "data": "2026-11-06T20:13:32Z",
+   "coletado_em": "2026-11-06T21:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "27da22b65022",
    "titulo": "Camila Valadão: da militância à Assembleia Legislativa",
@@ -461,6 +475,18 @@
    "temas": []
   },
   {
+   "id": "d561dbc56957",
+   "titulo": "Setur participa de evento para promover Alagoas a 70 agentes de viagens em Caruaru",
+   "veiculo": "Correio dos Municípios",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOckIzSTE3WDRSalJNVkEtUHAwVFR5Vy1JWTVhYTJldHBQTVlUR0gtckI4SXZuU3J5b1lUSWNpVC1CRGhBM1kzRnBxYTFQV21PUVR6QjVTWV9iWU1xalpPRFNQOTVraERfZGtmNTR5NFpHMHZ3MUlzbklndDBneWZ3cVZHREM0Z1BHa2lMZUQxS3Rza2kwR2h4MU1tVWllaVBLRXotOERxc3N6YjRsTUlOalNNcTFncU85NjdFMmQyaW42SW1FZXBDam1wcXMxNmRHR1hVd2RINjE1TWEtRFE?oc=5",
+   "data": "2026-11-06T17:28:28Z",
+   "coletado_em": "2026-11-06T21:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": []
+  },
+  {
    "id": "d1bf8f7ea8ed",
    "titulo": "Mais um integrante na equipe de transição de Pazolini. Conheça!",
    "veiculo": "ES Hoje",
@@ -552,6 +578,20 @@
    "triagem": 5,
    "temas": [
     "contratos"
+   ]
+  },
+  {
+   "id": "a313e97ecd66",
+   "titulo": "Inscrições para concurso do Idaf começam nesta sexta-feira (6) com salários de até R$ 8,4 mil",
+   "veiculo": "Noroeste News",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNVGFZMFZoVWxmNko0REJaN19jb2d6Y2JWZGV0ODljS1gycUNmbURNOE94X2ZNTGFHRGN0N0RVRmJhN2sybmQwbW44ckNlWTdvcTJUS0E3RnFwalVOaVRnZkxJeEFMa3BqZ3d1RFJuOEtQcjVRMW9BTVBZZlNlRVNhR3MzZw?oc=5",
+   "data": "2026-11-06T14:16:00Z",
+   "coletado_em": "2026-11-06T21:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": [
+    "pessoal"
    ]
   },
   {
