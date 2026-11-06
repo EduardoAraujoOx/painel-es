@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-06",
- "gerado_em": "2026-11-06T19:17:13Z",
+ "gerado_em": "2026-11-06T20:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -27,14 +27,14 @@
    "ok": true,
    "lidos": 24,
    "aceitos": 8,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 5,
+   "aceitos": 6,
    "possiveis": 1
   },
   {
@@ -49,9 +49,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 12,
+   "lidos": 13,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -65,16 +65,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 1,
+   "lidos": 7,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 2,
+   "lidos": 4,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 67,
+   "lidos": 65,
    "aceitos": 4,
    "possiveis": 5
   },
@@ -97,8 +97,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 62,
-   "aceitos": 2,
+   "lidos": 66,
+   "aceitos": 3,
    "possiveis": 2
   },
   {
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 2,
+   "lidos": 9,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 25,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 24,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 30,
    "aceitos": 5,
    "possiveis": 1
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 59,
+   "lidos": 60,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -171,7 +171,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 4,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Folha Vitória",
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -194,7 +194,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
@@ -226,7 +226,7 @@
    "consulta": "https://simnoticias.com.br/politica/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -238,22 +238,103 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 5,
  "descartes_na_coleta": {
-  "sem_contexto": 351,
-  "oficial_sem_tema": 3,
+  "sem_contexto": 348,
+  "oficial_sem_tema": 4,
   "oficial_divulgacao": 1,
-  "possivel": 18,
-  "veiculo_excluido": 37,
+  "possivel": 19,
+  "veiculo_excluido": 40,
   "outro_estado": 18,
   "sem_contexto_com_tema": 4,
-  "exterior_sem_ancora": 8,
-  "excluir": 10,
+  "exterior_sem_ancora": 5,
+  "excluir": 12,
   "caixa_alta": 1,
-  "veiculo_outra_praca": 5,
+  "veiculo_outra_praca": 4,
   "sigla_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "27da22b65022",
+   "titulo": "Camila Valadão: da militância à Assembleia Legislativa",
+   "veiculo": "Sim Notícias",
+   "url": "https://simnoticias.com.br/politica/camila-valadao-da-militancia-a-assembleia-legislativa/",
+   "data": "2026-11-06T19:55:23Z",
+   "coletado_em": "2026-11-06T20:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "c3bddeeb16fd",
+   "titulo": "Maurinho Rossoni é convidado por Pazolini e Erick Musso para integrar equipe de transição do governo do ES",
+   "veiculo": "O Singular Portal de Notícias",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNZGYyMU9lNU1iaGRzQU1tOVNabzVpUjdhS01CaGxhZFpfSDlDVU5VcFFSZ2JzUUVyV3I2QjdPOUkzaklzV1BJQTUweTBpQmRKelBXMHJULVNScFFlRkpGM2R0Z3RBTG84c2tpS1BUQlN0V3I2NXVLX2pUWFE4OWpWRjR4bjlNOXRVcnZiX0JoM2tkdjc5emxHQnFacy1GNWs3VXVoVHRBWnJDcU5QS3hhTXJnVHV1SjZ1RGJqVVZrUEFOSURiYzItVUc4bVhmZVJpeFJ4OUxxMmlsUm5zblE?oc=5",
+   "data": "2026-11-06T19:49:34Z",
+   "coletado_em": "2026-11-06T20:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "52579b0c1110",
+   "titulo": "Sesport recebe disputas dos Jogos Estudantis do Espírito Santo (JOEES) 2026",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNYkdqUjU0YkR4ZER3a2ZyWkVHSHVIVlRLUUJBZlJ1Y0xibkMwWUU4TmVxS1lHTWdSSW5NakdVclRJc2dENkk4REhtdkFpYUh0RWhFcll2Tnh6UWdYcWFBSllFeVFrc2ZTS0FRSVZjVEsxM0VyUUtNVUFzV2w0WnlEMll4d0ttVnBQUldxM2x3VmxBWWxmUVJIZ1VpRQ?oc=5",
+   "data": "2026-11-06T19:34:00Z",
+   "coletado_em": "2026-11-06T20:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": []
+  },
+  {
+   "id": "b066b445fc1d",
+   "titulo": "Deputado aciona órgãos de controle contra atos de R$ 8,6 mi e suspensão de tecnologia em presídios do ES",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/deputado-aciona-orgaos-de-controle-contra-atos-de-r-86-mi-e-suspensao-de-tecnologia-em-presidios-do-es/",
+   "data": "2026-11-06T19:30:09Z",
+   "coletado_em": "2026-11-06T20:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "d9bb62fe63ad",
+   "titulo": "Escritórios de advocacia do ES que faturam mais de R$ 5 milhões podem pagar mais impostos",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/politica/escritorios-de-advocacia-do-es-que-faturam-mais-de-r-5-milhoes-podem-pagar-mais-impostos-1126",
+   "data": "2026-11-06T19:22:57Z",
+   "coletado_em": "2026-11-06T20:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "9f6a001aa2c7",
+   "titulo": "Lula volta a defender responsabilidade nas contas e diz que será 'fiscal' de entregas do governo",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/brasil/lula-volta-a-defender-responsabilidade-nas-contas-e-diz-que-sera-fiscal-de-entregas-do-governo-1126",
+   "data": "2026-11-06T19:19:00Z",
+   "coletado_em": "2026-11-06T20:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": []
+  },
   {
    "id": "161cec8cfdc2",
    "titulo": "Casagrande defende Alckmin no Ministério da Fazenda do governo Lula-4",
@@ -524,6 +605,18 @@
    "temas": [
     "transicao"
    ]
+  },
+  {
+   "id": "39409b152a43",
+   "titulo": "Matrículas nas escolas estaduais do ES para 2027 começam na segunda",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeGEtTE9ZRmlWaDRKVmVUSDE1SktHU3I0ZzlySWtCTkpscHdlbWZLUEFNMG05QWJjdmVFSXZvMUdiNndhLUhnWmZUWnNXRExnRVVFaWFxUmJrMURKLTg4QWZoY1UzSzEtM1RVR3FJOUJaYkV4WFZFbmJFWV8yb05xeGNfU1RobVFpMEI5ZXFyT3dORllMY1p4SlJUWENDSUJTQnE0X1ZhcjF0RENUVG43eUNB0gG6AUFVX3lxTE9GRUtfVEF3azRUanNHNGo2ZWxyMXdSRm9zeEpiQlNmSnRwel81SjJQUG9uOUJiOWJRa2c1bVk4VVpNem1PN1JmZkNxd0djaXFTNDVjSGV6TGhIZk9nbDNDSlF4YUxxWUdDRmR4MjFmYVNFc3lobGZFOWNsS1d1UlpmT1JxRUctYUtSU3FhY1AwZlNfZ2RKTEphdG5jM0d3WEpPY1hHSlNLZmI3SFdtSjVoZk1JRFJucTZfUQ?oc=5",
+   "data": "2026-11-06T12:06:18Z",
+   "coletado_em": "2026-11-06T20:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": []
   },
   {
    "id": "91c449245846",
