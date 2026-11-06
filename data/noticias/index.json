@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-06",
- "gerado_em": "2026-11-06T15:17:13Z",
+ "gerado_em": "2026-11-06T16:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 10,
+   "lidos": 11,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -27,13 +27,13 @@
    "ok": true,
    "lidos": 25,
    "aceitos": 6,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 4,
    "possiveis": 0
   },
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 4,
+   "lidos": 7,
+   "aceitos": 5,
    "possiveis": 1
   },
   {
@@ -57,16 +57,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 1,
-   "aceitos": 1,
+   "lidos": 2,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 0,
+   "lidos": 5,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 10,
+   "lidos": 11,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 65,
+   "lidos": 64,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 12,
+   "lidos": 10,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
-   "aceitos": 3,
+   "lidos": 28,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 57,
+   "lidos": 59,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -178,7 +178,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -195,7 +195,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -234,19 +234,19 @@
    "consulta": "https://simnoticias.com.br/vinicius-baptista/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 353,
+  "sem_contexto": 350,
   "oficial_divulgacao": 1,
-  "oficial_sem_tema": 3,
-  "possivel": 20,
-  "veiculo_excluido": 42,
+  "oficial_sem_tema": 4,
+  "possivel": 19,
+  "veiculo_excluido": 38,
   "sem_contexto_com_tema": 5,
-  "exterior_sem_ancora": 13,
+  "exterior_sem_ancora": 9,
   "excluir": 8,
   "caixa_alta": 1,
   "veiculo_outra_praca": 3,
@@ -254,6 +254,33 @@
   "sigla_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "e8ba6ccfc296",
+   "titulo": "PL ganha espaço na equipe de transição de Pazolini",
+   "veiculo": "Sim Notícias",
+   "url": "https://simnoticias.com.br/vinicius-baptista/pl-ganha-espaco-na-equipe-de-transicao-de-pazolini/",
+   "data": "2026-11-06T15:36:00Z",
+   "coletado_em": "2026-11-06T16:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "6a9f7e1b571c",
+   "titulo": "Idaf abre inscrições nesta sexta para concurso com salários de até R$ 8,4 mil",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/trabalho/concursos/idaf-abre-inscricoes-nesta-sexta-para-concurso-com-salarios-de-ate-r-84-mil/",
+   "data": "2026-11-06T15:26:01Z",
+   "coletado_em": "2026-11-06T16:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": []
+  },
   {
    "id": "d1b12e10d528",
    "titulo": "Justiça autoriza três bets a voltar a funcionar no Brasil após proibição do governo",
