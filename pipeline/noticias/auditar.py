@@ -30,6 +30,7 @@ MOTIVOS = {
     "generico_sem_ancora": "só tem expressão genérica (governo estadual, transição, governador eleito...), de fonte não capixaba e sem âncora do ES: guardada como POSSÍVEL",
     "veiculo_outra_praca": "veículo de outro estado (Natal, Bahia...) e título sem âncora do ES: notícia de outra praça",
     "exterior_sem_ancora": "cita governo, secretário ou parlamentar de outro país (EUA...) e não tem âncora do ES: notícia internacional",
+    "oficial_sem_tema": "veio de fonte oficial (Governo ES), mas o título não trata de nenhum tema de atenção: fica como possível",
     "oficial_divulgacao": "fonte oficial (Governo ES), mas divulgação sem relação com gestão (Enem, aulão, festival...): lista 'excluir_oficial'",
     "excluir": "caiu numa palavra da lista 'excluir'",
     "outro_estado": "cita a sigla de outro estado (SP, DF...) sem nenhuma âncora do ES",

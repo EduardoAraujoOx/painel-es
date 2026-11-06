@@ -37,7 +37,7 @@ AQUI = Path(__file__).resolve().parent
 RAIZ = AQUI.parents[1]
 CONFIG = AQUI / "config.json"
 SAIDA = RAIZ / "data" / "noticias" / "index.json"
-TRIAGEM = 4  # versão das regras de triagem por praça; itens guardados sem este marcador são reavaliados uma vez (ver consolidar)
+TRIAGEM = 5  # versão das regras de triagem por praça; itens guardados sem este marcador são reavaliados uma vez (ver consolidar)
 VERIFICACAO = RAIZ / "data" / "noticias" / "verificacao.json"
 
 AGENTE = "Mozilla/5.0 (compatible; painel-es-noticias/1.0; +https://github.com/EduardoAraujoOx/painel-es)"
@@ -224,10 +224,13 @@ def decidir(cfg, titulo, veiculo, F, regional=False, coluna=False):
     if not capixaba and casa(F["outra_praca"], normalizar(veiculo)) and not casa(F["ancoras"], n) and not casa(F["gate"], n):
         return "descartada", "veiculo_outra_praca"
     if normalizar(veiculo) in F["oficiais"]:
-        # a fonte oficial passa direto, menos o que é divulgação sem relação com gestão (aulão do Enem na TVE, festival, show): lista `excluir_oficial`
+        # a fonte oficial publica muita divulgação sem relação com gestão: o que é puro evento (Enem, festival, show...: `excluir_oficial`) cai, e o que não
+        # trata de nenhum tema de atenção (e-book da Sedu, Jogos da Juventude, expediente) fica só como possível, fora do e-mail e dos números
         if casa(F["excluir_oficial"], n):
             return "descartada", "oficial_divulgacao"
-        return "confirmada", "fonte_oficial"
+        if temas_de(cfg, titulo, F["temas"]):
+            return "confirmada", "fonte_oficial"
+        return "possivel", "oficial_sem_tema"
     if casa(F["gate"], n):
         return "confirmada", "contexto"
     # termo genérico ("governo estadual", "transição", "governador eleito") vale em qualquer estado: só confirma com fonte capixaba ou âncora do ES
