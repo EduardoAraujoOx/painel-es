@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-06",
- "gerado_em": "2026-11-06T14:17:13Z",
+ "gerado_em": "2026-11-06T15:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 11,
+   "lidos": 10,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 13,
+   "lidos": 12,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -89,15 +89,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 57,
+   "lidos": 60,
    "aceitos": 4,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 66,
+   "lidos": 65,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 14,
+   "lidos": 12,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -154,7 +154,7 @@
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 29,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 5,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -240,20 +240,60 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 354,
+  "sem_contexto": 353,
   "oficial_divulgacao": 1,
   "oficial_sem_tema": 3,
-  "possivel": 18,
-  "veiculo_excluido": 43,
+  "possivel": 20,
+  "veiculo_excluido": 42,
   "sem_contexto_com_tema": 5,
-  "excluir": 10,
   "exterior_sem_ancora": 13,
+  "excluir": 8,
   "caixa_alta": 1,
   "veiculo_outra_praca": 3,
   "outro_estado": 15,
   "sigla_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "d1b12e10d528",
+   "titulo": "Justiça autoriza três bets a voltar a funcionar no Brasil após proibição do governo",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/justica-autoriza-tres-bets-a-voltar-a-funcionar-no-brasil-apos-proibicao-do-governo/",
+   "data": "2026-11-06T15:00:38Z",
+   "coletado_em": "2026-11-06T15:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": []
+  },
+  {
+   "id": "4b1ccfe15889",
+   "titulo": "Justiça determina cancelamento de empréstimos e devolução de dinheiro a aposentados",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTS1Lam8zVjl1MUJnSmFvOVR2cG5hZVBxMGFDYnlCNkJXNGJ1cVgycXlNS29iTEhWem82UjdjaFNBU0JhNzBpdDZ6cHM0ekd1V2hZb0g0S1d2TmpUcFZtd0tsRHhRMlNTVjIzdWRwdXo5ZEQyVTU1NVlBYzBDN2x3WFlYcDU?oc=5",
+   "data": "2026-11-06T14:50:37Z",
+   "coletado_em": "2026-11-06T15:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "6f2c751e2a1e",
+   "titulo": "Idaf publica edital de concurso para cargos técnicos e de nível superior com salários de até R$ 8,4 mil",
+   "veiculo": "Noroeste News",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNVGFZMFZoVWxmNko0REJaN19jb2d6Y2JWZGV0ODljS1gycUNmbURNOE94X2ZNTGFHRGN0N0RVRmJhN2sybmQwbW44ckNlWTdvcTJUS0E3RnFwalVOaVRnZkxJeEFMa3BqZ3d1RFJuOEtQcjVRMW9BTVBZZlNlRVNhR3MzZw?oc=5",
+   "data": "2026-11-06T14:16:00Z",
+   "coletado_em": "2026-11-06T15:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "1b604017ce69",
    "titulo": "Idaf abre inscrições para concurso com salários de até R$ 8,4 mil",
