@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-06",
- "gerado_em": "2026-11-06T16:17:12Z",
+ "gerado_em": "2026-11-06T16:47:28Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 25,
+   "lidos": 23,
    "aceitos": 6,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -41,7 +41,7 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 5,
    "possiveis": 1
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 12,
+   "lidos": 11,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 60,
+   "lidos": 63,
    "aceitos": 4,
    "possiveis": 5
   },
@@ -145,9 +145,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 26,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -155,7 +155,7 @@
    "ok": true,
    "lidos": 28,
    "aceitos": 5,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -187,7 +187,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "ES Hoje",
@@ -195,7 +195,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -238,15 +238,15 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 350,
+  "sem_contexto": 357,
   "oficial_divulgacao": 1,
-  "oficial_sem_tema": 4,
+  "oficial_sem_tema": 3,
   "possivel": 19,
-  "veiculo_excluido": 38,
+  "veiculo_excluido": 36,
   "sem_contexto_com_tema": 5,
-  "exterior_sem_ancora": 9,
+  "exterior_sem_ancora": 10,
   "excluir": 8,
   "caixa_alta": 1,
   "veiculo_outra_praca": 3,
@@ -254,6 +254,18 @@
   "sigla_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "4ca3a1f74fed",
+   "titulo": "Franco Fiorot quer focar em agricultura, desenvolvimento e duplicação da BR-101 na Assembleia",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/eleicoes/franco-fiorot-quer-focar-em-agricultura-desenvolvimento-e-duplicacao-da-br-101-na-assembleia/",
+   "data": "2026-11-06T16:18:31Z",
+   "coletado_em": "2026-11-06T16:47:28Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": []
+  },
   {
    "id": "e8ba6ccfc296",
    "titulo": "PL ganha espaço na equipe de transição de Pazolini",
@@ -267,6 +279,20 @@
    "temas": [
     "transicao",
     "governador"
+   ]
+  },
+  {
+   "id": "982ee1847226",
+   "titulo": "SEM LICITAÇÃO: Totens de vigilância do Detran são alvo de nova representação do MPC",
+   "veiculo": "Rondoniaovivo.com",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNjIzMmxlVVc2Mkg3a1N1M2wyNzV6cVQ4RGh1bVVaV3RDZFd4MjN4ckFaQ1A4T19HSDhVdDRxeHl6cGt5Rl9IZmw1Tm5YYld4QkxKVHpwb296U0t4SG9SS242QWs5b3o4QWx5aGhTRFNkNEVfM2N2aUt2Tno5WFhwWGxJckRJVWJzd01sbWRKM0V4a1BPS0xMM1VGdlZjeGdvYW13MnFrblhxQ1pFenl2U3BsNjZtdEdsWHRFcF9JTWZBTHVvMml5YlpJNXhFZjBzV0xMYw?oc=5",
+   "data": "2026-11-06T15:27:30Z",
+   "coletado_em": "2026-11-06T16:47:28Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": [
+    "contratos"
    ]
   },
   {
