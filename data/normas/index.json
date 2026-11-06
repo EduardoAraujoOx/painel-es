@@ -1,9 +1,9 @@
 {
- "ref": "2026-11-05",
- "gerado_em": "2026-11-06T01:26:56Z",
+ "ref": "2026-11-06",
+ "gerado_em": "2026-11-06T07:00:11Z",
  "desde": "2026-10-04",
  "primeiro_levantamento": "2026-11-05",
- "baseline": true,
+ "baseline": false,
  "contagem": {
   "decreto": 7,
   "transicao": 1,
@@ -37,7 +37,8 @@
   11597,
   11600,
   11603,
-  11606
+  11606,
+  11613
  ],
  "ignoradas": [
   "2040862",
