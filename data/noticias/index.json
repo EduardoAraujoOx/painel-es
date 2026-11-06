@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-06",
- "gerado_em": "2026-11-06T17:17:13Z",
+ "gerado_em": "2026-11-06T18:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,16 +18,16 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 11,
-   "aceitos": 3,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 23,
-   "aceitos": 6,
-   "possiveis": 2
+   "lidos": 24,
+   "aceitos": 8,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -41,15 +41,15 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 5,
-   "possiveis": 1
+   "lidos": 4,
+   "aceitos": 4,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 10,
+   "lidos": 12,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 11,
+   "lidos": 12,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 65,
+   "lidos": 69,
    "aceitos": 4,
    "possiveis": 5
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 64,
+   "lidos": 63,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 24,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -171,7 +171,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 3,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -195,7 +195,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -227,7 +227,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Sim Notícias",
@@ -238,22 +238,120 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 353,
+  "sem_contexto": 349,
+  "oficial_sem_tema": 4,
   "oficial_divulgacao": 1,
-  "oficial_sem_tema": 2,
-  "possivel": 19,
-  "veiculo_excluido": 36,
-  "sem_contexto_com_tema": 4,
-  "exterior_sem_ancora": 10,
-  "excluir": 9,
-  "outro_estado": 16,
+  "outro_estado": 18,
+  "veiculo_excluido": 38,
+  "possivel": 17,
+  "sem_contexto_com_tema": 2,
+  "exterior_sem_ancora": 9,
+  "excluir": 10,
   "caixa_alta": 1,
-  "veiculo_outra_praca": 3,
+  "veiculo_outra_praca": 4,
   "sigla_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "47fa4ecbcbc7",
+   "titulo": "MP investiga contratos do Detran e da Seduc somando R$ 143 milhões",
+   "veiculo": "Painel Político",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMmU1a0FJSE9hSC02UzVBSThXbVpmQmUwcFlRYmtOMjFhR1VyVUxSTEZKajFLRUhGZHBmNVFkcUk3Z0xhTmt0RmROV1hHS1BOSlp3YUdmdkZRbU1ydUdhWEpXSVBYNXV3MlN3cE9ucTNSeTdQTk8tUUdaUi1ONUQ2dU9PeC0xamFYOEdQR1ZsZnNPUGpBMUlJ?oc=5",
+   "data": "2026-11-06T18:14:57Z",
+   "coletado_em": "2026-11-06T18:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "438c41e3f0e0",
+   "titulo": "Entenda como funciona a transição verde na indústria",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/conteudo-de-marca/entenda-como-funciona-a-transicao-verde-na-industria-1126",
+   "data": "2026-11-06T18:09:52Z",
+   "coletado_em": "2026-11-06T18:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "279054e7ee40",
+   "titulo": "Mauro Rossoni Junior é anunciado para equipe de transição do governador eleito Lorenzo Pazolini",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWFF5TTZaanV4VG1JdGJDVW5KR0JXSEhiaE5oWXlCUGwzYUQ1S2FUNjh6VThVT2pzNVRzbWdnakZfUzZNdEVFSm1nSEpsT1lYT094WFE5LVpFUkliX203ZWFhc2RFdmFtZTNNN2FmdVNVSFBVVldQT1FkMnI0dnV2bU1yaEhQelJjSzd6akliaWstZFV6VXRLbllfVEpPV19ZeUliSFhtMS1CZ25HV0FYT1Z2SkxvMzZ5eHlYZQ?oc=5",
+   "data": "2026-11-06T18:02:04Z",
+   "coletado_em": "2026-11-06T18:17:14Z",
+   "outras": [
+    {
+     "veiculo": "Aqui Notícias",
+     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMEpRRE1sM0trakVfckFMbUpqTF9YREhBd0pveUttNmVSVW5HMm0yVUhvYmZLT0FQcC1HSE9sbFdFMlVPYUxLUnJMX1NlM2NiTjdzVTA4SDFyakVtYUpRREp3a0ozc202Z3lIMXI4R3VPQXdobUkwTDcyX2NrcnBySEdxa0dqTEFPVE1tQTk3WEducU5VbHFENlBVSEJQUzBPN0JBdmRzZkp3Q2F5aTVHZTE4bGRIeVdLeUI1M3BqcHJWTUdrQnpLaA?oc=5"
+    }
+   ],
+   "possivel": false,
+   "triagem": 5,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "a0e9471d49ec",
+   "titulo": "AGU vai recorrer contra liberação de bets a juiz que já validou MP do governo que proibiu apostas",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/agu-vai-recorrer-contra-liberacao-de-bets-a-juiz-que-ja-validou-mp-do-governo-que-proibiu-apostas/",
+   "data": "2026-11-06T17:42:12Z",
+   "coletado_em": "2026-11-06T18:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": []
+  },
+  {
+   "id": "86eac63d2099",
+   "titulo": "Engenheiro agrônomo passa a fazer parte da equipe de transição do governador eleito do Espírito Santo",
+   "veiculo": "Blog do Elimar Cortes",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPNDRxRHhNaGs5WW9uVm1rUnhoc3VEVmU0LVoxMTRaclQ2bDFJMEY0d0lGN0h0ZUJrYWs4VTJndzJkV3RhLWd1X2x1aVBmWkpfWHhBbHlmbFFmNFRleTJmb2VoZHFZcjltVzVBeTVMT3dXdmU2LTdtNk54b2djM0tFUW1ZWDN5MTFzaEtVU0cwZEdmS1Badk5UcDBSM2lxQVVoNUVkU2VQYmduNEdBOXlkT0xRbDJhWFMxbXlnZl9vWHpRaFJyUUt3NjUyMXkxazN0WEVuTkp0Q20?oc=5",
+   "data": "2026-11-06T17:40:45Z",
+   "coletado_em": "2026-11-06T18:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "9ecc7310f005",
+   "titulo": "Ateliê aberto e oficinas de cerâmica chegam ao Parque Cultural Casa do Governador em novembro e dezembro",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQdjhrSzhPUE1aWjFiYXd5S2k5eGFDTEl2akRyU3VhM2VYUGNzeE9CTzk0T19wMFpIQ3dnZVdxbGRuZldCYk4zbGlaY2VTeEFHWEJVelg4Q3pzYTdNVWZ5SzJKTGsxdlJYUl9pSE83cjFhRjNCM28teFRKcUlfMzlRQnlEZTlUeW5UV1ZYd1h5YlBUOEJBUHMyQkpCWElaTGEtc2RTcTVuSzFYTWdCMVhjaE1RSlZqdWhNV0Q5UEdwWXhqTWV5?oc=5",
+   "data": "2026-11-06T17:31:00Z",
+   "coletado_em": "2026-11-06T18:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": []
+  },
+  {
+   "id": "2b6f25f0d52a",
+   "titulo": "Sementes e Formação Avançada colocam política de inovação do Espírito Santo entre referências nacionais",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPYUZSMnN2dGJrbE5HN0dmN3JDWko5cXBlZmdiTXZnNUV3aDZXdFRjQmdZX0pFOEpaeFE3WklrblI1SUZyVUpNeHR6NzBZWW10MndBRXRXRlNRT1Vkd0VRQ082Z3NzNjZuaDZWQ3gyLW10TF9FVUw2T3R3N0ZKVzRsdFd4ZHVaR3RtNkNjTWc1WFdPVWlNMHZFODhYUjBIZUVoeHlORDlaTWlmVENEM2V6Zl9kbThkbWhLcDZ5eUI5MThSZk0?oc=5",
+   "data": "2026-11-06T17:29:00Z",
+   "coletado_em": "2026-11-06T18:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": []
+  },
   {
    "id": "d1bf8f7ea8ed",
    "titulo": "Mais um integrante na equipe de transição de Pazolini. Conheça!",
