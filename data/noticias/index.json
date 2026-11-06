@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-06",
- "gerado_em": "2026-11-06T11:17:13Z",
+ "gerado_em": "2026-11-06T12:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,16 +25,16 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 29,
-   "aceitos": 9,
-   "possiveis": 5
+   "lidos": 26,
+   "aceitos": 7,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 3,
+   "lidos": 8,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -89,9 +89,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 53,
+   "lidos": 52,
    "aceitos": 3,
-   "possiveis": 2
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -129,15 +129,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 13,
+   "lidos": 14,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 27,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -145,17 +145,17 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 22,
+   "lidos": 26,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 31,
-   "aceitos": 1,
-   "possiveis": 1
+   "aceitos": 2,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 5,
+   "aceitos": 6,
    "possiveis": 3
   },
   {
@@ -195,7 +195,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -203,7 +203,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "A Gazeta",
@@ -238,21 +238,89 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 336,
+  "sem_contexto": 338,
   "oficial_divulgacao": 2,
-  "oficial_sem_tema": 4,
-  "possivel": 23,
-  "veiculo_excluido": 45,
-  "sem_contexto_com_tema": 4,
+  "oficial_sem_tema": 3,
+  "possivel": 24,
+  "veiculo_excluido": 43,
+  "sem_contexto_com_tema": 5,
   "excluir": 10,
-  "exterior_sem_ancora": 14,
-  "outro_estado": 22,
+  "exterior_sem_ancora": 13,
+  "outro_estado": 21,
   "veiculo_outra_praca": 3,
   "sigla_sem_ancora": 3
  },
  "itens": [
+  {
+   "id": "1e01a20df0b7",
+   "titulo": "Herança de Erasmo Carlos envolve disputa sobre união estável após os 70",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/seguranca/justica/2026/11/heranca-de-erasmo-carlos/",
+   "data": "2026-11-06T12:11:12Z",
+   "coletado_em": "2026-11-06T12:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "91c449245846",
+   "titulo": "Imposto do Pecado: veja os produtos que vão ficar mais caros em 2027",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPVUZCZEdJVjU3cmNkb1IyaDRMXzRLMWNhaHJpSmF3SmFyeXpZNzRRS1hUcHZnekkyaFdTcjA4bEM4SkU4OF9LanRFdmFwcDlQb2VQcm1Xek01enNOd1E4TEdmVFA3cE8zX1lJbDE5emo0ODdMSXRqVzhFVmZKUnZnTHV6QjhNa1RCb0lKazZtRkI0cTJm?oc=5",
+   "data": "2026-11-06T12:06:16Z",
+   "coletado_em": "2026-11-06T12:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "efdaa4eaa145",
+   "titulo": "Cervejinha na mira do “imposto do pecado”: governo define taxa para 2027",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxObXVrN0thM3pMTHBJUU5IQ29leF9HNDV6T3FSNGNNZWRzcUE0ZHFyMHo4Snh3NXlqbmVhVi1KcVdrdkNhR3dNV21yWkNCQ1VheDFncjRlYlRCUmFPT3ZEamlLUWxNX01iOGdvSktBcmZUWFF4N0xJQ1pmMVRSTk5XaVFkNmZFVDFIVW80dU1NcEJqOWZKWDZv?oc=5",
+   "data": "2026-11-06T12:06:12Z",
+   "coletado_em": "2026-11-06T12:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "74ab9e07f4c9",
+   "titulo": "Idaf abre inscrição de concurso público nesta sexta-feira (6)",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/concursos/idaf-abre-inscricao-de-concurso-publico-nesta-sexta-feira-6-1126",
+   "data": "2026-11-06T12:03:00Z",
+   "coletado_em": "2026-11-06T12:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "e5d2ff53030d",
+   "titulo": "Novo site do Detran-ES reúne serviços e atalhos por área",
+   "veiculo": "ES Brasil",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5oWnlaR2tzZ055dEpYWXFBLUJKamF4Q0pCc28xY1NSSXNFcUE4bkFNNmJXTDhyZ1BUb3d4TGlZZzVnRUJCTlppSFhYOG9KZFRvdEs1TnE1NkhPXzJsTGFSSkJ1YV9LWkdQUzItMnJtVQ?oc=5",
+   "data": "2026-11-06T12:00:00Z",
+   "coletado_em": "2026-11-06T12:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": []
+  },
   {
    "id": "34279860c860",
    "titulo": "Imposto do Pecado: veja quanto pode pesar no bolso em 2027",
@@ -330,6 +398,18 @@
    "url": "https://eshoje.com.br/edicao-digital/2026/11/es-hoje-06-11-medo-do-toque-retal-ainda-mata-centenas-no-estado/",
    "data": "2026-11-06T03:00:51Z",
    "coletado_em": "2026-11-06T06:48:52Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": []
+  },
+  {
+   "id": "d3aac58e7a11",
+   "titulo": "Secult De Viseu Celebra A Cultura E As Tradições Locais",
+   "veiculo": "Portal & TV Gurupi",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNN2FseVVsSEdxdVNpTmpTdW5TWWNTazRmdC1vV1l6QlhHT2JzWXlEaEZqOGQtNElhdE5vSzVVVExJWGVJMVp1QWdxNlNueVN6V2c4UENjSjRzVS1hN2MzYUNYMVVrSnJtaGdPSGIxUS1XZGpJQWZma0lFTGJBaGRaU282Yy1ZZTc0TVc4VA?oc=5",
+   "data": "2026-11-05T22:42:48Z",
+   "coletado_em": "2026-11-06T12:17:12Z",
    "outras": [],
    "possivel": true,
    "triagem": 5,
