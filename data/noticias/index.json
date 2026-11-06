@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-06",
- "gerado_em": "2026-11-06T21:17:13Z",
+ "gerado_em": "2026-11-06T23:17:25Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 11,
+   "lidos": 12,
    "aceitos": 4,
    "possiveis": 0
   },
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 22,
-   "aceitos": 7,
+   "aceitos": 9,
    "possiveis": 4
   },
   {
@@ -34,12 +34,28 @@
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 6,
+   "aceitos": 7,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
+   "ok": true,
+   "lidos": 4,
+   "aceitos": 4,
+   "possiveis": 0
+  },
+  {
+   "fonte": "Google Notícias",
+   "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
+   "ok": true,
+   "lidos": 12,
+   "aceitos": 1,
+   "possiveis": 1
+  },
+  {
+   "fonte": "Google Notícias",
+   "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
    "lidos": 3,
    "aceitos": 3,
@@ -47,26 +63,10 @@
   },
   {
    "fonte": "Google Notícias",
-   "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
-   "ok": true,
-   "lidos": 13,
-   "aceitos": 2,
-   "possiveis": 2
-  },
-  {
-   "fonte": "Google Notícias",
-   "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
-   "ok": true,
-   "lidos": 2,
-   "aceitos": 2,
-   "possiveis": 0
-  },
-  {
-   "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 2,
+   "lidos": 4,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -81,23 +81,23 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 2,
+   "lidos": 8,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 67,
-   "aceitos": 4,
+   "lidos": 64,
+   "aceitos": 3,
    "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 65,
+   "lidos": 61,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 3,
+   "lidos": 11,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
@@ -145,8 +145,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
-   "aceitos": 1,
+   "lidos": 26,
+   "aceitos": 2,
    "possiveis": 2
   },
   {
@@ -170,15 +170,15 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
-   "possiveis": 4
+   "aceitos": 3,
+   "possiveis": 3
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -187,7 +187,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 1,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "ES Hoje",
@@ -238,22 +238,50 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 344,
+  "sem_contexto": 331,
   "oficial_sem_tema": 4,
   "oficial_divulgacao": 1,
-  "possivel": 20,
-  "veiculo_excluido": 42,
+  "possivel": 17,
   "outro_estado": 19,
-  "sem_contexto_com_tema": 3,
-  "exterior_sem_ancora": 5,
-  "excluir": 10,
+  "veiculo_excluido": 43,
+  "sem_contexto_com_tema": 4,
+  "exterior_sem_ancora": 4,
+  "excluir": 13,
   "caixa_alta": 1,
-  "veiculo_outra_praca": 5,
+  "veiculo_outra_praca": 6,
   "sigla_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "8d43d18b104d",
+   "titulo": "Pazolini quer nomes da iniciativa privada na equipe do governo do Estado",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/pazolini-quer-nomes-da-iniciativa-privada-na-equipe-do-governo-do-estado/",
+   "data": "2026-11-06T22:41:22Z",
+   "coletado_em": "2026-11-06T23:17:25Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "a36d952924b6",
+   "titulo": "ES fixa regras e trava caixa para pagamento de obras e contratos no fim de 2026",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/economia/es-fixa-regras-e-trava-de-caixa-para-pagamento-de-obras-e-contratos-no-fim-de-1126",
+   "data": "2026-11-06T22:19:00Z",
+   "coletado_em": "2026-11-06T23:17:25Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "b4d00a0b8254",
    "titulo": "13º salário na conta? Veja erros que podem comprometer seu orçamento",
