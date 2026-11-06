@@ -108,7 +108,7 @@ def atos_novos(desde):
     return sorted(novos, key=lambda i: (i["data"], i["id"]), reverse=True)
 
 
-ROTULO_NORMA = {"decreto": "Decreto regulamentar", "transicao": "Transição de governo", "fiscal": "Gestão fiscal"}
+ROTULO_NORMA = {"decreto": "Decreto regulamentar", "transicao": "Transição de governo", "fiscal": "Gestão fiscal", "lei": "Lei estadual"}
 
 
 def normas_novas(desde):

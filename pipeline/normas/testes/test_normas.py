@@ -46,7 +46,7 @@ class Classificacao(unittest.TestCase):
                      ("Extrato de contrato - encerramento do exercício", sefaz),
                      ("Decreto nº 22889 de 29-10-2026 - Declara nulidade do Decreto nº 22818", ["CM - EXECUTIVO", "Prefeituras", "Nova Venécia", "Decreto"]),
                      ("DECRETO Nº 100-R - Encerramento de exercício", ["CM - EXECUTIVO", "Prefeituras", "Linhares", "Decreto R"]),
-                     ("LEI Nº 12.967", ["Poder Executivo", "Governadoria do Estado", "Leis", "Leis Ordinárias"]), ("", [])]:
+                     ("", [])]:
             self.assertIsNone(N.classificar(t, c), t)
 
 
@@ -67,7 +67,47 @@ class Ementa(unittest.TestCase):
         self.assertIsNone(N.ementa_do_texto("%PDF-1.7 %âãÏÓ 1 0 obj"))
         self.assertIsNone(N.ementa_do_texto(""))
         self.assertIsNone(N.ementa_do_texto("<p>Nada que lembre uma ementa aqui</p>"))
-        self.assertLessEqual(len(N.ementa_do_texto("<p>Dispõe sobre " + "x " * 600 + "</p>")), 320)
+        self.assertLessEqual(len(N.ementa_do_texto("<p>Dispõe sobre " + "x " * 600 + "</p>")), 360)
+
+
+LEI_HTML = """<html><body><p>LEI Nº 12.968</p><p>Autoriza o Poder Executivo a aderir ao Programa de Acompanhamento e Transparência Fiscal de que trata a Lei Complementar Federal
+nº 178, de 13 de janeiro de 2021.</p><p>O GOVERNADOR DO ESTADO DO ESPÍRITO SANTO Faço saber que a Assembleia Legislativa decretou e eu sanciono a seguinte Lei: Art. 1º Fica o Poder Executivo autorizado</p></body></html>"""
+LEI_UTILIDADE = """<p>LEI Nº 12.957</p><p>Declara de utilidade pública a Academia Aracruzense de Letras, localizada no município de Aracruz.</p><p>O GOVERNADOR DO ESTADO DO ESPÍRITO SANTO Faço saber</p>"""
+
+
+class Leis(unittest.TestCase):
+    LEIS = ["Poder Executivo", "Governadoria do Estado", "Leis", "Leis Ordinárias"]
+
+    def test_lei_entra_pelo_caminho_e_o_titulo_so_traz_o_numero(self):
+        self.assertEqual(N.classificar("#1894950 - LEI Nº 12.968", self.LEIS)[0], "lei")
+        self.assertEqual(N.classificar("#1894951 - LEI COMPLEMENTAR Nº 1.158", ["Poder Executivo", "Governadoria do Estado", "Leis", "Leis Complementares"])[0], "lei")
+        self.assertIsNone(N.classificar("LEI Nº 100", ["CM - EXECUTIVO", "Câmaras", "Castelo", "Lei"]))  # câmara: fora
+        self.assertIsNone(N.classificar("LEI Nº 1", ["Diversos", "Poder Legislativo", "Assembléia Legislativa do Espírito Santo - ALES -", "Leis"]))  # Legislativo: fora
+
+    def test_ementa_da_lei_vem_depois_do_cabecalho_e_antes_do_preambulo(self):
+        e = N.ementa_do_texto(LEI_HTML)
+        self.assertTrue(e.startswith("Autoriza o Poder Executivo a aderir ao Programa de Acompanhamento"))
+        self.assertTrue(e.endswith("13 de janeiro de 2021."))
+        self.assertNotIn("GOVERNADOR", e)
+        self.assertTrue(N.ementa_do_texto(LEI_UTILIDADE).endswith("município de Aracruz."))
+
+    def test_lei_honorifica_sai_e_a_de_gestao_fica_com_tema(self):
+        for e in ("Declara de utilidade pública a Academia Aracruzense de Letras, localizada no município de Aracruz.",
+                  "Acrescenta item ao Anexo I da Lei nº 10.974, de 14 de janeiro de 2019, conferindo ao município de Vila Velha o Título de Capital Estadual da Canoagem Havaiana.",
+                  "Institui o Dia Estadual do Combate à Fome.", "Denomina Rodovia Fulano de Tal o trecho da ES-164."):
+            self.assertIsNone(N.qualificar_lei(e), e)
+        self.assertEqual(N.qualificar_lei("Autoriza o Poder Executivo a aderir ao Programa de Acompanhamento e Transparência Fiscal de que trata a Lei Complementar Federal nº 178"), ["fiscal", "programa"])
+        self.assertIn("orcamento", N.qualificar_lei("Regulamenta a execução orçamentária e financeira das emendas parlamentares individuais"))
+        self.assertIn("cargos", N.qualificar_lei("Altera a Lei Complementar nº 46 e dispõe sobre a remuneração dos servidores da Polícia Civil"))
+        self.assertEqual(N.qualificar_lei("Institui o Programa Mão Amiga Alimentar-ES e dispõe sobre a isenção de responsabilidade civil para doadores de alimentos"), ["programa"])
+        self.assertEqual(N.qualificar_lei(None), ["outro"])  # PDF sem leitor: fica, sem tema (a LDO não pode se perder)
+
+    def test_montar_guarda_as_leis_ignoradas_e_nao_as_lista(self):
+        hoje = datetime(2026, 11, 5, 15, 0, tzinfo=UTC)
+        m = N.montar(None, [], [1], "2026-10-04", hoje, ["1886027"])
+        self.assertEqual((m["ignoradas"], m["itens"]), (["1886027"], []))
+        m2 = N.montar(m, [], [1, 2], "2026-10-04", hoje, ["1888833"])
+        self.assertEqual(m2["ignoradas"], ["1886027", "1888833"])  # acumula, em ordem numérica
 
 
 class Montagem(unittest.TestCase):

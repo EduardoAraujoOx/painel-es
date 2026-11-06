@@ -85,6 +85,7 @@ jobs:
 
       - name: Leitura real dos decretos e normas do Diário Oficial, a partir dos servidores do GitHub (sem gravar)
         run: |
+          command -v pdftotext >/dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils; }
           python3 -I pipeline/normas/coletar.py --dry-run | tee normas.log
           { echo "### Decretos e normas (simulação, sem gravar)"; echo '```'; head -3 normas.log; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
 

@@ -1,8 +1,8 @@
 (() => {
   'use strict';
   // Módulo "Decretos e normas": atos normativos e fiscais do Poder Executivo estadual publicados no Diário Oficial desde o primeiro turno (04/10/2026):
-  // decretos regulamentares (série R: encerramento de exercício, tributos, estrutura de cargos), atos da transição de governo e atos de gestão fiscal
-  // (pipeline/normas/coletar.py). A triagem é pelo título e a ementa ("Dispõe sobre...") vem do texto do decreto.
+  // decretos regulamentares (série R: encerramento de exercício, tributos, estrutura de cargos), atos da transição de governo, atos de gestão fiscal e leis
+  // estaduais (pipeline/normas/coletar.py). A triagem dos decretos é pelo título, a das leis pela ementa, lida do texto da matéria.
   const { el, nInt, norm } = PF;
 
   let raiz = null;
@@ -11,9 +11,9 @@
   const filtros = { tipo: '', tema: '', busca: '', novos: false };
   const POR_VEZ = 50;
   let visiveis = POR_VEZ;
-  const TIPOS = { decreto: 'Decretos regulamentares', transicao: 'Transição de governo', fiscal: 'Gestão fiscal' };
-  const SELO = { decreto: 'Decreto', transicao: 'Transição', fiscal: 'Gestão fiscal' };
-  const TEMAS = { encerramento: 'Encerramento do exercício', tributario: 'Tributos', cargos: 'Cargos e estrutura', orcamento: 'Orçamento e despesa', transicao: 'Transição', outro: 'Outros' };
+  const TIPOS = { decreto: 'Decretos regulamentares', lei: 'Leis estaduais', transicao: 'Transição de governo', fiscal: 'Gestão fiscal' };
+  const SELO = { decreto: 'Decreto', lei: 'Lei', transicao: 'Transição', fiscal: 'Gestão fiscal' };
+  const TEMAS = { encerramento: 'Encerramento do exercício', tributario: 'Tributos', cargos: 'Cargos e estrutura', orcamento: 'Orçamento e despesa', fiscal: 'Ajuste fiscal', programa: 'Programas e políticas', transicao: 'Transição', outro: 'Outros' };
   const dataBR = (iso) => (iso ? iso.slice(0, 10).split('-').reverse().join('/') : '—');
   const linkSeguro = (u) => (/^https:\/\/ioes\.dio\.es\.gov\.br\//.test(u || '') ? u : '');
   const kpi = (rotulo, valor, nota, alerta) => el('div', { class: 'kpi' + (alerta ? ' alerta' : '') }, el('div', { class: 'rotulo' }, rotulo), el('div', { class: 'valor' }, valor), nota ? el('div', { class: 'nota' }, nota) : null);
@@ -68,6 +68,7 @@
     $('#kpis').replaceChildren(
       kpi('Atos desde ' + dataBR(dados.desde), nInt.format(total), 'normativos e fiscais, no Diário Oficial'),
       kpi('Decretos regulamentares', nInt.format(c.decreto), 'série R do Governador'),
+      kpi('Leis estaduais', nInt.format(c.lei || 0), 'sancionadas, sem as honoríficas'),
       kpi('Transição de governo', nInt.format(c.transicao), 'atos que tratam da transição', c.transicao > 0),
       kpi('Gestão fiscal', nInt.format(c.fiscal), 'contingenciamento, crédito, restos a pagar...', c.fiscal > 0));
     const botao = (rotulo, n, ativo, fn) => el('button', { type: 'button', class: 'chip', 'aria-pressed': String(ativo), onclick: () => { fn(); visiveis = POR_VEZ; render(); } }, rotulo, el('small', {}, nInt.format(n)));
@@ -89,11 +90,11 @@
       <div class="modulo-topo">
         <div>
           <h2 class="modulo-titulo">Decretos e normas</h2>
-          <p class="sub">Atos normativos e fiscais do Poder Executivo publicados no Diário Oficial do Estado desde o primeiro turno (04/10/2026): decretos regulamentares, atos da transição de governo e gestão fiscal (encerramento do exercício, contingenciamento, créditos, restos a pagar). Atualizado a cada coleta.</p>
+          <p class="sub">Atos normativos e fiscais do Poder Executivo publicados no Diário Oficial do Estado desde o primeiro turno (04/10/2026): decretos regulamentares, leis estaduais, atos da transição de governo e gestão fiscal (encerramento do exercício, contingenciamento, créditos, restos a pagar). Atualizado a cada coleta.</p>
         </div>
         <span id="mesref" class="mesref"></span>
       </div>
-      <p class="aviso solto">É onde aparecem as regras que o governo que sai fixa para o fim do mandato, como o <b>decreto de encerramento do exercício</b>, os de estrutura de cargos e os tributários. A triagem é pelo <b>título</b> e a ementa vem do texto do decreto; leis não entram (o Diário as publica em PDF, com o número como título).</p>
+      <p class="aviso solto">É onde aparecem as regras que o governo que sai fixa para o fim do mandato, como o <b>decreto de encerramento do exercício</b>, os de estrutura de cargos e os tributários. A triagem dos decretos é pelo <b>título</b>; a das leis, pela <b>ementa</b>, lida do texto (o título da lei é só o número). Leis honoríficas, como utilidade pública e títulos de capital, ficam de fora.</p>
       <div id="kpis" class="kpis"></div>
       <div class="cartao">
         <div class="filtros"><label class="busca">Buscar por palavra do título ou da ementa<input id="busca" type="search" maxlength="80" placeholder="Ex.: encerramento, ICMS, cargos…"></label></div>
@@ -102,8 +103,8 @@
         <div id="lista"></div>
       </div>
       <details class="cartao noticias-metodo"><summary>Fonte e método</summary>
-        <p>Sumários das edições do Diário Oficial do Espírito Santo (ioes.dio.es.gov.br, endereços públicos), lidos a cada coleta. Entram as matérias do <b>Poder Executivo estadual</b> que são (1) decreto regulamentar do Governador (série R); (2) ato que trata de transição de governo, como o decreto que criou a Equipe de Transição; ou (3) ato de gestão fiscal pelo título: encerramento de exercício, contingenciamento, limitação de empenho, crédito adicional, restos a pagar, programação financeira, cota, LDO e LOA. Os decretos de pessoa (série S: nomeação, designação, reversão), a descentralização orçamentária, os aditivos e os extratos são rotina e ficam de fora, como prefeituras e câmaras.</p>
-        <p>Limites: a triagem é pelo título e pode errar nos dois sentidos (deixar passar ato cujo título não o descreve, ou incluir um que não é relevante). A lista não avalia o conteúdo nem a regularidade de nenhum ato; para isso, abra a matéria. "Novo" é o que a coleta viu pela primeira vez depois do levantamento inicial.</p>
+        <p>Sumários das edições do Diário Oficial do Espírito Santo (ioes.dio.es.gov.br, endereços públicos), lidos a cada coleta. Entram as matérias do <b>Poder Executivo estadual</b> que são (1) decreto regulamentar do Governador (série R); (2) ato que trata de transição de governo, como o decreto que criou a Equipe de Transição; ou (3) ato de gestão fiscal pelo título: encerramento de exercício, contingenciamento, limitação de empenho, crédito adicional, restos a pagar, programação financeira, cota, LDO e LOA. Também entram as <b>leis estaduais</b> sancionadas (ordinárias e complementares), pela ementa; as honoríficas (utilidade pública, título de capital, dia ou selo comemorativo) ficam de fora. Os decretos de pessoa (série S: nomeação, designação, reversão), a descentralização orçamentária, os aditivos e os extratos são rotina e ficam de fora, como prefeituras e câmaras.</p>
+        <p>Limites: a triagem é pelo título (decretos) ou pela ementa (leis) e pode errar nos dois sentidos (deixar passar ato cujo título não o descreve, ou incluir um que não é relevante). A lista não avalia o conteúdo nem a regularidade de nenhum ato; para isso, abra a matéria. "Novo" é o que a coleta viu pela primeira vez depois do levantamento inicial.</p>
       </details>
     </section>`;
 

@@ -63,7 +63,12 @@ jobs:
         continue-on-error: true
         run: python3 -I pipeline/diario/coletar.py
 
-      # Decretos e normas do Diário Oficial (decretos regulamentares, transição de governo, gestão fiscal): mesma leitura, também a cada coleta e antes do e-mail.
+      # Decretos e normas do Diário Oficial (decretos regulamentares, transição de governo, gestão fiscal, leis): mesma leitura, também a cada coleta e antes do e-mail.
+      # Leis longas (como a LDO) vêm em PDF: o pdftotext (poppler) lê a primeira página; sem ele, a lei entra só com o número.
+      - name: Garantir o leitor de PDF (poppler)
+        continue-on-error: true
+        run: command -v pdftotext >/dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils; }
+
       - name: Ler o Diário Oficial (decretos e normas)
         id: normas
         continue-on-error: true
