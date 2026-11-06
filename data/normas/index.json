@@ -1,0 +1,156 @@
+{
+ "ref": "2026-11-05",
+ "gerado_em": "2026-11-05T23:59:59Z",
+ "desde": "2026-10-04",
+ "primeiro_levantamento": "2026-11-05",
+ "baseline": true,
+ "contagem": {
+  "decreto": 7,
+  "transicao": 1,
+  "fiscal": 0
+ },
+ "novos": [],
+ "edicoes_lidas": [
+  11522,
+  11528,
+  11532,
+  11533,
+  11538,
+  11542,
+  11547,
+  11548,
+  11552,
+  11556,
+  11560,
+  11561,
+  11564,
+  11571,
+  11575,
+  11579,
+  11580,
+  11581,
+  11587,
+  11591,
+  11595,
+  11596,
+  11597,
+  11600,
+  11603,
+  11606
+ ],
+ "itens": [
+  {
+   "id": "2054957",
+   "edicao": 11606,
+   "data": "2026-11-05",
+   "tipo": "decreto",
+   "temas": [
+    "cargos"
+   ],
+   "titulo": "DECRETO Nº 6520-R - Transformação de cargos SESPORT_SEG_03.11.26 - DIO",
+   "orgao": "Governadoria do Estado",
+   "ementa": "Dispõe sobre a transformação de cargos de provimento em comissão e funções gratificadas, no âmbito da Secretaria de Estado de Esportes e Lazer - SESPORT e da Secretaria de Estado do Governo - SEG, sem elevação da despesa fixada.",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2054957/11606",
+   "visto_em": null
+  },
+  {
+   "id": "2054956",
+   "edicao": 11606,
+   "data": "2026-11-05",
+   "tipo": "decreto",
+   "temas": [
+    "cargos"
+   ],
+   "titulo": "DECRETO Nº 6519-R - Transferência de Cargos SCV-SETADES - Alceni Soares de Oliveira - DIO",
+   "orgao": "Governadoria do Estado",
+   "ementa": "Dispõe sobre a transferência de cargo de provimento em comissão, sem elevação da despesa fixada.",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2054956/11606",
+   "visto_em": null
+  },
+  {
+   "id": "2053932",
+   "edicao": 11603,
+   "data": "2026-11-04",
+   "tipo": "decreto",
+   "temas": [
+    "encerramento"
+   ],
+   "titulo": "DECRETO Nº 6518-R - Encerramento de exercício - 2026",
+   "orgao": "Governadoria do Estado",
+   "ementa": "Dispõe sobre os procedimentos a serem adotados pelos órgãos e entidades da administração pública estadual para o encerramento orçamentário, financeiro e contábil do exercício de 2026, em cumprimento às normas de Direito Financeiro, e dá outras providências.",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2053932/11603",
+   "visto_em": null
+  },
+  {
+   "id": "2053927",
+   "edicao": 11603,
+   "data": "2026-11-04",
+   "tipo": "decreto",
+   "temas": [
+    "tributario"
+   ],
+   "titulo": "DECRETO Nº 6517-R - Retificacao IPM provisório 2027 (1)",
+   "orgao": "Governadoria do Estado",
+   "ementa": "Retifica a tabela com os valores provisórios do Índice de Participação dos Municípios no produto da receita do ICMS, que vigorarão no ano de 2027.",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2053927/11603",
+   "visto_em": null
+  },
+  {
+   "id": "2052842",
+   "edicao": 11597,
+   "data": "2026-11-03",
+   "tipo": "decreto",
+   "temas": [
+    "tributario"
+   ],
+   "titulo": "DECRETO Nº 6516-R - Altera RICMS - Operadores Logísticos - 2026-FR3C9",
+   "orgao": "Governadoria do Estado",
+   "ementa": null,
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2052842/11597",
+   "visto_em": null
+  },
+  {
+   "id": "2052798",
+   "edicao": 11597,
+   "data": "2026-11-03",
+   "tipo": "decreto",
+   "temas": [
+    "cargos"
+   ],
+   "titulo": "DECRETO Nº 6515-R - Transformação de cargos SCV-SEG_29.10.26 - DIO",
+   "orgao": "Governadoria do Estado",
+   "ementa": "Dispõe sobre a transformação de cargos de provimento em comissão e funções gratificadas, no âmbito da Secretaria de Estado do Governo - SEG e Secretaria da Casa Civil - SCV, sem elevação da despesa fixada.",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2052798/11597",
+   "visto_em": null
+  },
+  {
+   "id": "2052142",
+   "edicao": 11597,
+   "data": "2026-11-03",
+   "tipo": "decreto",
+   "temas": [
+    "tributario"
+   ],
+   "titulo": "DECRETO Nº 6514-R - Altera RICMS-ES - isenção preservativos",
+   "orgao": "Governadoria do Estado",
+   "ementa": null,
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2052142/11597",
+   "visto_em": null
+  },
+  {
+   "id": "2052029",
+   "edicao": 11596,
+   "data": "2026-10-29",
+   "tipo": "transicao",
+   "temas": [
+    "transicao"
+   ],
+   "titulo": "DECRETO Nº 2270-S - Equipe de Transição de Governo 2026 - DIO",
+   "orgao": "Governadoria do Estado",
+   "ementa": "Dispõe sobre o processo de transição de Governo, referente às eleições 2026.",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2052029/11596",
+   "visto_em": null
+  }
+ ],
+ "escopo": "Matérias do Poder Executivo estadual: decretos regulamentares (série R), atos da transição de governo e atos de gestão fiscal (encerramento de exercício, contingenciamento, crédito adicional, restos a pagar, LDO e LOA), pelo título."
+}

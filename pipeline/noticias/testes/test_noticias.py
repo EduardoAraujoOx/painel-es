@@ -204,8 +204,9 @@ class Auditoria(unittest.TestCase):
     def test_site_de_concurso_e_excluido(self):
         self.assertEqual(self.classe("Concurso Banestes: inscrições abertas para 936 vagas", "Estratégia Concursos"), "descartada")
 
-    def test_fonte_oficial_passa_direto(self):
-        self.assertEqual(self.classe("Confira o expediente dos órgãos nos dias 30 de outubro e 2 de novembro", "Governo ES"), "confirmada")
+    def test_fonte_oficial_passa_quando_trata_de_tema_de_atencao_e_sem_tema_fica_como_possivel(self):
+        self.assertEqual(self.classe("Estado institui Grupo de Trabalho para orientar compras públicas e reequilíbrio de contratos", "Governo ES"), "confirmada")
+        self.assertEqual(self.classe("Confira o expediente dos órgãos nos dias 30 de outubro e 2 de novembro", "Governo ES"), "possivel")
 
     def test_restricao_sozinha_nao_basta_com_a_mera_mencao_ao_es(self):
         # uma operadora que suspende serviço no ES não é notícia do governo: vira "possível", não "confirmada"
@@ -282,7 +283,7 @@ class RuidoDeObrasETransicao(unittest.TestCase):
                      ("Equipe de transição de Pazolini pede relatório de contratos ao governo do ES", "ES Hoje"),
                      ("Governo do ES paralisa obras de escolas por falta de recursos", "Folha Vitória"),
                      ("Obras públicas do governo do estado ficam sem pagamento", "A Gazeta"),
-                     ("Confira o expediente dos órgãos nos dias 30 de outubro e 2 de novembro", "Governo ES")]:
+                     ("Governo do Estado adquire 16 novas viaturas para atuar em emergências na Bacia do Rio Doce", "Governo ES")]:
             self.assertEqual(self.classe(t, v), "confirmada", t)
 
     def test_guardado_antes_dessas_regras_sai_na_migracao_e_o_resto_fica(self):
@@ -318,7 +319,9 @@ class RuidoDeObrasETransicao(unittest.TestCase):
 
     def test_divulgacao_de_fonte_oficial_cai_mas_a_gestao_passa(self):
         self.assertEqual(coletar.decidir(CFG, "TVE transmite aulão especial para o Enem", "Governo ES", self.F, True), ("descartada", "oficial_divulgacao"))
-        self.assertEqual(coletar.decidir(CFG, "Saúde recebe 28 ambulâncias para reforçar atendimento nos municípios capixabas", "Governo ES", self.F, True)[0], "confirmada")
+        for t in ("Saúde recebe 28 ambulâncias para reforçar atendimento nos municípios capixabas", "Sedu publica 6ª edição de e-book com mais de 170 práticas pedagógicas",
+                  "Espírito Santo encerra participação nos Jogos da Juventude 2026 com recorde de 33 medalhas"):
+            self.assertEqual(coletar.decidir(CFG, t, "Governo ES", self.F, True), ("possivel", "oficial_sem_tema"), t)  # divulgação sem tema de atenção: só possível
 
 
 class ColunasPoliticas(unittest.TestCase):
@@ -459,6 +462,7 @@ class Resumo(unittest.TestCase):
         enviar.DADOS, enviar.MARCO = self.tmp / "index.json", self.tmp / "ultimo-envio.json"
         enviar.ATOS = self.tmp / "atos.json"  # sem atos do Diário, a menos que o teste os crie
         enviar.OBRAS = self.tmp / "obras.json"  # idem para obras
+        enviar.NORMAS = self.tmp / "normas.json"  # idem para decretos e normas
         enviar.DADOS.write_text(json.dumps(self.dados), encoding="utf-8")
         self.enviados = []
         outer = self
@@ -591,6 +595,36 @@ class Resumo(unittest.TestCase):
         msgs = self.rodar(self.ENV)
         self.assertEqual(len(msgs), 2)
         self.assertIn("1 ato de contrato no Diário Oficial", msgs[0]["Subject"])
+
+    # --- decretos e normas do Diário Oficial (módulo normas) ---
+
+    def norma(self, i, horas, tipo="decreto", **extra):
+        return {"id": f"n{i}", "tipo": tipo, "data": "2026-11-04", "titulo": f"DECRETO Nº 65{i}-R - Encerramento de exercício - 2026", "orgao": "Governadoria do Estado",
+                "ementa": "Dispõe sobre os procedimentos para o encerramento orçamentário <b>x</b>", "url": f"https://ioes.dio.es.gov.br/m/{i}", "temas": ["encerramento"],
+                "visto_em": enviar.iso(self.ref - timedelta(hours=horas)), **extra}
+
+    def test_so_entram_normas_vistas_depois_do_marco(self):
+        enviar.NORMAS.write_text(json.dumps({"itens": [self.norma(1, 2), self.norma(2, 40), {**self.norma(3, 1), "visto_em": None}]}), encoding="utf-8")
+        self.assertEqual([n["id"] for n in enviar.normas_novas(self.ref - timedelta(hours=24))], ["n1"])
+        enviar.NORMAS = self.tmp / "nao_existe.json"
+        self.assertEqual(enviar.normas_novas(self.ref - timedelta(hours=24)), [])
+
+    def test_dia_so_com_norma_nova_ainda_envia_e_o_corpo_traz_a_ementa_escapada(self):
+        d = json.loads(json.dumps(self.dados)); d["itens"] = []
+        enviar.DADOS.write_text(json.dumps(d), encoding="utf-8")
+        enviar.NORMAS.write_text(json.dumps({"itens": [self.norma(1, 1)]}), encoding="utf-8")
+        msgs = self.rodar(self.ENV)
+        self.assertEqual(len(msgs), 2)
+        self.assertIn("1 decreto ou norma no Diário Oficial", msgs[0]["Subject"])
+        html_ = msgs[0].get_body(("html",)).get_content()
+        self.assertIn("Decretos e normas no Diário Oficial (1)", html_)
+        self.assertIn("Dispõe sobre os procedimentos", html_)
+        self.assertIn("&lt;b&gt;x", html_)  # ementa escapada
+        self.assertIn("DECRETOS E NORMAS NO DIÁRIO OFICIAL (1)", msgs[0].get_body(("plain",)).get_content())
+
+    def test_assunto_com_normas(self):
+        self.assertIn("2 decretos e normas no Diário Oficial", enviar.assunto(0, self.ref, False, 0, 0, 0, 2))
+        self.assertNotIn("notícia", enviar.assunto(0, self.ref, False, 0, 0, 0, 1))
 
     # --- e obras paralisadas / com contrato rescindido no Portal da Transparência ---
 

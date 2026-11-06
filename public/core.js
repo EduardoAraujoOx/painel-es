@@ -198,7 +198,8 @@
     { id: 'fundos', rotulo: 'Fundos', itens: [
       { mod: 'fundos', rotulo: 'Raio-x dos fundos' }] },
     { id: 'transicao', rotulo: 'Transição', itens: [
-      { mod: 'lacunas', rotulo: 'Informações a solicitar' }] },
+      { mod: 'lacunas', rotulo: 'Informações a solicitar' },
+      { mod: 'normas', rotulo: 'Decretos e normas' }] },
     { id: 'noticias', rotulo: 'Notícias', itens: [
       { mod: 'noticias', rotulo: 'Manchetes' }] },
   ];
