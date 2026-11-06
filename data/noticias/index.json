@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-06",
- "gerado_em": "2026-11-06T09:17:14Z",
+ "gerado_em": "2026-11-06T11:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -26,15 +26,15 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 29,
-   "aceitos": 8,
+   "aceitos": 9,
    "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 2,
+   "lidos": 7,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -49,9 +49,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 13,
+   "lidos": 11,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -99,7 +99,7 @@
    "ok": true,
    "lidos": 62,
    "aceitos": 3,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 15,
+   "lidos": 13,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -146,7 +146,7 @@
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 22,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -170,16 +170,16 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
-   "possiveis": 2
+   "aceitos": 5,
+   "possiveis": 3
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
-   "possiveis": 0
+   "aceitos": 0,
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -187,7 +187,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "ES Hoje",
@@ -240,19 +240,75 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 341,
+  "sem_contexto": 336,
   "oficial_divulgacao": 2,
   "oficial_sem_tema": 4,
-  "possivel": 22,
-  "veiculo_excluido": 46,
+  "possivel": 23,
+  "veiculo_excluido": 45,
   "sem_contexto_com_tema": 4,
   "excluir": 10,
-  "exterior_sem_ancora": 15,
+  "exterior_sem_ancora": 14,
+  "outro_estado": 22,
   "veiculo_outra_praca": 3,
-  "outro_estado": 20,
   "sigla_sem_ancora": 3
  },
  "itens": [
+  {
+   "id": "34279860c860",
+   "titulo": "Imposto do Pecado: veja quanto pode pesar no bolso em 2027",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/economia/2026/11/imposto-do-pecado-em-2027/",
+   "data": "2026-11-06T11:15:35Z",
+   "coletado_em": "2026-11-06T11:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "dc76f42fa85d",
+   "titulo": "Servidores da educação recebem abono de até R$ 20 mil em Ibatiba",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/servidores-da-educacao-recebem-abono-de-ate-r-20-mil-em-ibatiba/",
+   "data": "2026-11-06T11:13:47Z",
+   "coletado_em": "2026-11-06T11:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "e99f868fbb0b",
+   "titulo": "MPES pede investigação após engenheiro deixar Fórum antes de sentença em Vitória",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/cotidiano/mpes-pede-investigacao-apos-engenheiro-deixar-forum-antes-de-sentenca-em-vitoria-1126",
+   "data": "2026-11-06T10:53:56Z",
+   "coletado_em": "2026-11-06T11:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "4d2aaf436354",
+   "titulo": "'Meu medo é o governo Lula buscar atalhos e brigar com o mercado': por que professor em Cambridge defende ajuste fiscal 'suave'",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/mundo/meu-medo-e-o-governo-lula-buscar-atalhos-e-brigar-com-o-mercado-por-que-professor-em-cambridge-defende-ajuste-fiscal-suave-1126",
+   "data": "2026-11-06T10:33:31Z",
+   "coletado_em": "2026-11-06T11:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "639332503fd3",
    "titulo": "“Serei uma ponte para os que quiserem”, diz Casagrande sobre relação com Pazolini",
