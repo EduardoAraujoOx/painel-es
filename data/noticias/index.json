@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-06",
- "gerado_em": "2026-11-06T13:17:15Z",
+ "gerado_em": "2026-11-06T14:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -57,7 +57,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 2,
+   "lidos": 1,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 11,
+   "lidos": 10,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -89,15 +89,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 51,
-   "aceitos": 3,
+   "lidos": 57,
+   "aceitos": 4,
    "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 63,
+   "lidos": 66,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 24,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -145,15 +145,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 25,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 29,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 58,
+   "lidos": 57,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -170,8 +170,8 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 6,
-   "possiveis": 2
+   "aceitos": 5,
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -194,8 +194,8 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
-   "possiveis": 4
+   "aceitos": 0,
+   "possiveis": 3
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -240,19 +240,32 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 347,
+  "sem_contexto": 354,
   "oficial_divulgacao": 1,
   "oficial_sem_tema": 3,
-  "possivel": 21,
-  "veiculo_excluido": 42,
+  "possivel": 18,
+  "veiculo_excluido": 43,
   "sem_contexto_com_tema": 5,
-  "excluir": 9,
-  "exterior_sem_ancora": 12,
+  "excluir": 10,
+  "exterior_sem_ancora": 13,
+  "caixa_alta": 1,
   "veiculo_outra_praca": 3,
-  "outro_estado": 19,
-  "sigla_sem_ancora": 3
+  "outro_estado": 15,
+  "sigla_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "1b604017ce69",
+   "titulo": "Idaf abre inscrições para concurso com salários de até R$ 8,4 mil",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOaFZJTXNPSVVVcDF1ZFRPUkx5WURRVTdGX2pYZk1GcGVUNWdkWkFvZWdjZXBDYWR4djdMSlRjcVBiVjZyX283djBGTUQxVjVDUmZFcUFnakxMT0ZRWEk1TE1xLXJNM1gxc3R6VW1pWDlySllZNy1mUzY0N24tZjhDVWZ3SnlpRkY1ODR6dA?oc=5",
+   "data": "2026-11-06T13:55:31Z",
+   "coletado_em": "2026-11-06T14:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": []
+  },
   {
    "id": "d4b01749ff4a",
    "titulo": "Detran|ES reformula site e reorganiza serviços para facilitar atendimento aos motoristas",
