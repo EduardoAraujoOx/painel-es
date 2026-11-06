@@ -25,7 +25,7 @@ test('repassa só as ações públicas e só os campos conhecidos', async () => 
 
 test('a porta privada (lista e marcar) não passa pelo painel', async () => {
   globalThis.fetch = async () => { throw new Error('não devia chamar'); };
-  for (const acao of ['lista', 'marcar', 'x', undefined]) {
+  for (const acao of ['lista', 'marcar', 'confirmar', 'x', undefined]) {
     const r = res();
     await handler(pedido({ acao }), r);
     assert.equal(r.status, 400, String(acao));

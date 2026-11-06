@@ -704,7 +704,7 @@ class Resumo(unittest.TestCase):
 
 
 class Assinantes(unittest.TestCase):
-    """Assinantes dos alertas (cadastro pela página /alertas): validação do que vem da função, e-mails de confirmação, resumo com link para sair."""
+    """Assinantes dos alertas (cadastro pela página /alertas): validação do que vem da função, e-mails de boas-vindas, resumo com link para sair."""
     TOK = "ab" * 32
     ID = "123e4567-e89b-42d3-a456-426614174000"
 
@@ -730,10 +730,10 @@ class Assinantes(unittest.TestCase):
     def test_listar_filtra_a_resposta_da_funcao(self):
         self.mod.token_oidc = lambda: "tok"
         self.mod.chamar = lambda corpo, token: {"ok": True, "confirmados": [{"email": "a@exemplo.com", "token_sair": self.TOK}, {"email": "ruim", "token_sair": self.TOK}],
-                                                  "pendentes": [{"id": self.ID, "email": "b@exemplo.com", "token_confirmar": self.TOK}, {"id": "x", "email": "c@exemplo.com", "token_confirmar": self.TOK}]}
+                                                  "novos": [{"id": self.ID, "email": "b@exemplo.com", "token_sair": self.TOK}, {"id": "x", "email": "c@exemplo.com", "token_sair": self.TOK}]}
         r = self.mod.listar()
         self.assertEqual([c["email"] for c in r["confirmados"]], ["a@exemplo.com"])
-        self.assertEqual([p["email"] for p in r["pendentes"]], ["b@exemplo.com"])
+        self.assertEqual([p["email"] for p in r["novos"]], ["b@exemplo.com"])
         self.mod.chamar = lambda corpo, token: {"ok": False}
         with self.assertRaises(RuntimeError):  # com token e sem lista é falha (o passo fica vermelho), não ausência
             self.mod.listar()
@@ -741,12 +741,14 @@ class Assinantes(unittest.TestCase):
         with self.assertRaises(RuntimeError):
             self.mod.listar()
 
-    def test_confirmacao_leva_o_link_da_pagina_e_so_o_destinatario(self):
-        m = self.mod.montar_confirmacao("a@exemplo.com", "https://painel-es.vercel.app/", self.TOK, "painel@exemplo.com")
+    def test_boas_vindas_levam_o_link_para_sair_e_so_o_destinatario(self):
+        m = self.mod.montar_boas_vindas("a@exemplo.com", "https://painel-es.vercel.app/", self.TOK, "painel@exemplo.com")
         self.assertEqual(m["To"], "a@exemplo.com")
-        url = f"https://painel-es.vercel.app/alertas/?acao=confirmar&t={self.TOK}"
+        url = f"https://painel-es.vercel.app/alertas/?acao=sair&t={self.TOK}"
         self.assertIn(url, m.get_body(("plain",)).get_content())
         self.assertIn(url, m.get_body(("html",)).get_content())
+        self.assertIn("List-Unsubscribe", m)
+        self.assertNotIn("confirm", m.get_body(("plain",)).get_content().lower())  # sem pedido de confirmação: o cadastro já vale
 
     def test_resumo_vai_a_fixos_e_assinantes_cada_um_com_seu_link_de_sair(self):
         # reaproveita a montagem do teste de resumo: dados fictícios e SMTP falso
