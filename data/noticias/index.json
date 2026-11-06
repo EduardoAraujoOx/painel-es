@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-06",
- "gerado_em": "2026-11-06T12:17:12Z",
+ "gerado_em": "2026-11-06T13:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,17 +17,17 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 2,
+   "lidos": 11,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 7,
-   "possiveis": 4
+   "lidos": 25,
+   "aceitos": 6,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 11,
+   "lidos": 13,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 52,
+   "lidos": 51,
    "aceitos": 3,
    "possiveis": 4
   },
@@ -97,8 +97,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 62,
-   "aceitos": 3,
+   "lidos": 63,
+   "aceitos": 2,
    "possiveis": 2
   },
   {
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 26,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 30,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -171,7 +171,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 6,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -211,14 +211,14 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 3,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "A Gazeta",
    "consulta": "https://www.agazeta.com.br/colunas/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -238,21 +238,33 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 338,
-  "oficial_divulgacao": 2,
+  "sem_contexto": 347,
+  "oficial_divulgacao": 1,
   "oficial_sem_tema": 3,
-  "possivel": 24,
-  "veiculo_excluido": 43,
+  "possivel": 21,
+  "veiculo_excluido": 42,
   "sem_contexto_com_tema": 5,
-  "excluir": 10,
-  "exterior_sem_ancora": 13,
-  "outro_estado": 21,
+  "excluir": 9,
+  "exterior_sem_ancora": 12,
   "veiculo_outra_praca": 3,
+  "outro_estado": 19,
   "sigla_sem_ancora": 3
  },
  "itens": [
+  {
+   "id": "d4b01749ff4a",
+   "titulo": "Detran|ES reformula site e reorganiza serviços para facilitar atendimento aos motoristas",
+   "veiculo": "Jornal Espírito Santo Notícias",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNaU80SFBtNUxKa3F0REliMms3cy1YN0t4Wkg1SzNGMEthV2doYlNfUGhldml4cGxQUjFUWVFnOHd0LUlJaTQ3VGI4LTZWSXdpZXdLQ1J3TVJyNkhibnFsWUI1WVlUNHc3Uk5zV1hCNWNqZ2VYTHlVMk8wTjRWQ1A4TVo4M1RVVU4zU2tMRDg3a0pjNnU1SnVXVHRBXzJIbEZ2TUJjX2ZUWHR4MEJnMDhEbDJvMDFTZDZ1a2RLb2lSMXVoOW8?oc=5",
+   "data": "2026-11-06T12:45:50Z",
+   "coletado_em": "2026-11-06T13:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": []
+  },
   {
    "id": "1e01a20df0b7",
    "titulo": "Herança de Erasmo Carlos envolve disputa sobre união estável após os 70",
