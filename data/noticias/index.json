@@ -1,6 +1,6 @@
 {
- "ref": "2026-11-05",
- "gerado_em": "2026-11-05T23:38:59Z",
+ "ref": "2026-11-06",
+ "gerado_em": "2026-11-06T01:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 49,
+   "lidos": 51,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 61,
+   "lidos": 64,
    "aceitos": 3,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 0,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,8 +145,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
-   "aceitos": 1,
+   "lidos": 21,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 59,
+   "lidos": 58,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -238,17 +238,17 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 5,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 328,
-  "oficial_divulgacao": 2,
+  "sem_contexto": 335,
+  "oficial_divulgacao": 1,
   "possivel": 22,
-  "veiculo_excluido": 45,
-  "sem_contexto_com_tema": 6,
-  "excluir": 8,
-  "exterior_sem_ancora": 14,
+  "veiculo_excluido": 47,
+  "sem_contexto_com_tema": 5,
+  "excluir": 7,
+  "exterior_sem_ancora": 15,
   "veiculo_outra_praca": 4,
-  "outro_estado": 19,
+  "outro_estado": 18,
   "sigla_sem_ancora": 3
  },
  "itens": [
@@ -287,6 +287,20 @@
    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNLUlFengweGpTVVNvWTZmVi1FcTFiZUhORUEybjgxZjk1eU5aY2E1ZzB3NGs3eVA2ZlhCci1NY0FwTENrclZKQ0w4R2JuTW1rZFgzWXViMGpHZWQyaWwtemZhd1BIZ0ZBZEFISEV5ZWV6QnNuQUw4ZjFhWGlzaG5VUGtIUmJ4NERWRHZQT1M0RWJNbk05bmh3ZXJhQVVWblY3RkZ3MQ?oc=5",
    "data": "2026-11-05T21:15:41Z",
    "coletado_em": "2026-11-05T22:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 4,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "24f6c6811fa4",
+   "titulo": "Imposto do pecado: entenda cobrança sobre cigarros, bebidas e veículos",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSDBpektlWGYzWUdlUzlMTmhFN1IzVE9xMWR4Q3JKU0RLSzRGUm84QUNfZ0l0N1pwTGNxVi0tcDNvcTR2Y0RfN1VJSzdRNGcwRDRhdFplVHBYM3FYX3huZXoyZFJ4dDBtekx3Qmxyam85UzE4dmd4dWtXODczQ2RuMWV2N1Q0dUctT2d3LU10NVpWaHRUeWRxVjlOZ3BRWmZBdlViTFZLaXNCbHVMYWlwbGk0eWN6dGpFYXM00gG7AUFVX3lxTE9IMGl6S2VYZjNZR2VTOUxOaEU3UjNUT3ExZHhDckpTREtLNEZSbzhBQ19nSXQ3WnBMY3FWLS1wM29xNHZjRF83VUlLN1E0ZzBENGF0WmVUcFgzcVhfeG5lejJkUnh0MG16THdCbHJqbzlTMTh2Z3h1a1c4NzNDZG4xZXY3VDR1Ry1PZ3ctTXQ1WlZodFR5ZHFWOU5ncFFaZkF2VWJMVktpc0JsdUxhaXBsaTR5Y3p0akVhczQ?oc=5",
+   "data": "2026-11-05T20:48:44Z",
+   "coletado_em": "2026-11-06T01:17:13Z",
    "outras": [],
    "possivel": true,
    "triagem": 4,
