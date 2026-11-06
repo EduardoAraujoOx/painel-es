@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-06",
- "gerado_em": "2026-11-06T18:17:14Z",
+ "gerado_em": "2026-11-06T19:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 11,
+   "lidos": 12,
    "aceitos": 4,
    "possiveis": 0
   },
@@ -27,22 +27,22 @@
    "ok": true,
    "lidos": 24,
    "aceitos": 8,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 4,
-   "possiveis": 0
+   "lidos": 10,
+   "aceitos": 5,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 4,
+   "lidos": 3,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 12,
+   "lidos": 10,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 69,
+   "lidos": 67,
    "aceitos": 4,
    "possiveis": 5
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 63,
+   "lidos": 62,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 26,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 29,
    "aceitos": 5,
    "possiveis": 1
   },
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 4,
    "possiveis": 2
   },
   {
@@ -187,7 +187,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "ES Hoje",
@@ -210,8 +210,8 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
-   "possiveis": 1
+   "aceitos": 4,
+   "possiveis": 0
   },
   {
    "fonte": "A Gazeta",
@@ -238,22 +238,49 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 349,
-  "oficial_sem_tema": 4,
+  "sem_contexto": 351,
+  "oficial_sem_tema": 3,
   "oficial_divulgacao": 1,
+  "possivel": 18,
+  "veiculo_excluido": 37,
   "outro_estado": 18,
-  "veiculo_excluido": 38,
-  "possivel": 17,
-  "sem_contexto_com_tema": 2,
-  "exterior_sem_ancora": 9,
+  "sem_contexto_com_tema": 4,
+  "exterior_sem_ancora": 8,
   "excluir": 10,
   "caixa_alta": 1,
-  "veiculo_outra_praca": 4,
+  "veiculo_outra_praca": 5,
   "sigla_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "161cec8cfdc2",
+   "titulo": "Casagrande defende Alckmin no Ministério da Fazenda do governo Lula-4",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/casagrande-defende-alckmin-no-ministerio-da-fazenda-do-governo-lula-4/",
+   "data": "2026-11-06T18:42:55Z",
+   "coletado_em": "2026-11-06T19:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": []
+  },
+  {
+   "id": "104d1bd2948a",
+   "titulo": "Engenheiro agronômo é novo integrante da equipe de transição de Pazolini",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/politica/engenheiro-agronomo-e-novo-integrante-da-equipe-de-transicao-de-pazolini-1126",
+   "data": "2026-11-06T18:28:00Z",
+   "coletado_em": "2026-11-06T19:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
   {
    "id": "47fa4ecbcbc7",
    "titulo": "MP investiga contratos do Detran e da Seduc somando R$ 143 milhões",
