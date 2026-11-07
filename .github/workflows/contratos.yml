@@ -95,6 +95,14 @@ jobs:
         run: python3 -I pipeline/contratos/despesas.py 2025 2026
 
       # Compara o que foi baixado com os totais por órgão da página Contratos do Portal da Transparência (grava data/contratacoes/cobertura.json).
+      # Contratos de publicidade que a Secom publica no próprio site (não estão no SIGA): valor anual estimado, vigência e aditivos; lidos com pdftotext.
+      - name: Contratos de publicidade publicados pela Secom
+        id: secom
+        continue-on-error: true
+        run: |
+          command -v pdftotext >/dev/null || sudo apt-get install -y poppler-utils
+          python3 -I pipeline/contratos/secom.py
+
       - name: Conferir com o Portal da Transparência
         id: portal
         continue-on-error: true

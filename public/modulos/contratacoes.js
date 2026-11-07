@@ -386,6 +386,12 @@
     return el('td', { title: detalhe }, el('strong', {}, i.nivel.charAt(0).toUpperCase() + i.nivel.slice(1)), el('small', {}, i.periodicidade),
       i.duvidas.length ? el('small', {}, i.duvidas[0]) : null);
   }
+  // Contrato publicado pelo órgão no próprio site (a Secom publica os de publicidade): número, valor anual estimado e vigência conhecida.
+  function linhaInstrumento(x) {
+    if (!x.instrumento || !x.instrumento.length) return null;
+    const txt = x.instrumento.map((i) => `contrato ${i.numero} (lote ${i.lote}), ${brlCompacto(i.valorAnual)} por ano, desde ${dataBR(i.inicio)}, ${nInt.format(i.aditivos)} termos aditivos publicados (vigência publicada até ${dataBR(i.vigenciaPublicadaAte)}; limite legal ${dataBR(i.limiteLegalAte)})`).join(' ou ');
+    return el('small', {}, 'Contrato publicado pelo órgão: ', ...x.instrumento.flatMap((i, n) => [n ? ' ou ' : '', el('a', { href: i.url, target: '_blank', rel: 'noopener noreferrer', title: txt }, `${i.numero} (lote ${i.lote})`)]), x.instrumento.length === 1 ? ` · ${brlCompacto(x.instrumento[0].valorAnual)} por ano estimados, vigência publicada até ${dataBR(x.instrumento[0].vigenciaPublicadaAte)}` : ` · ${brlCompacto(x.instrumento[0].valorAnual)} e ${brlCompacto(x.instrumento[1].valorAnual)} por ano estimados`);
+  }
   function itemRevisaoSigefes(org, x) {
     const pagoTot = x.pagoAnt + x.pagoAtu;
     const meses = Math.max(1, x.meses || 1);
@@ -404,7 +410,7 @@
       return el('tr', {},
         el('td', { class: 'objeto' }, el('strong', {}, el('a', { href: '#', onclick: (ev) => { ev.preventDefault(); irForn(x.cnpj, org.id); } }, nomeProprio(x.forn))), el('small', {}, cnpjFmt(x.cnpj))),
         el('td', { class: 'objeto' }, x.objeto ? nomeProprio(x.objeto) : nomeProprio(x.elemento || '—'), el('small', {}, [x.subfuncao && nomeProprio(x.subfuncao), x.licitacao && nomeProprio(x.licitacao), x.numeroLicitacao && 'licitação ' + x.numeroLicitacao].filter(Boolean).join(' · ')),
-          x.processo && /^\d{4}-[0-9A-Z]{5}$/.test(x.processo) ? el('small', {}, 'Processo ', el('a', { href: URL_EDOCS + encodeURIComponent(x.processo), target: '_blank', rel: 'noopener noreferrer' }, x.processo)) : null),
+          x.processo && /^\d{4}-[0-9A-Z]{5}$/.test(x.processo) ? el('small', {}, 'Processo ', el('a', { href: URL_EDOCS + encodeURIComponent(x.processo), target: '_blank', rel: 'noopener noreferrer' }, x.processo)) : null, linhaInstrumento(x)),
         el('td', {}, TIPO_SIGEFES[x.tipo] || x.tipo, el('small', {}, x.codigo ? 'código ' + x.codigo : `${x.meses} meses com pagamento`)),
         celulaIndicio(x),
         el('td', { class: 'num' }, x.pagoAnt > 0 ? brlCompacto(x.pagoAnt) : '—'),
@@ -445,7 +451,7 @@
       lista.length ? el('div', { class: 'rolagem' }, el('table', {},
         el('thead', {}, el('tr', {}, ['Órgão', 'Objeto do gasto', 'Tipo', 'Indício contratual', `Pago ${aAnt}`, `Pago ${aAtu}`, 'Pagamentos'].map((t, n) => el('th', { class: n === 4 || n === 5 ? 'num' : '' }, t)))),
         el('tbody', {}, lista.map((x) => el('tr', {},
-          el('td', {}, x.orgNome), el('td', { class: 'objeto' }, x.objeto ? nomeProprio(x.objeto) : nomeProprio(x.elemento || '—'), el('small', {}, [x.licitacao && nomeProprio(x.licitacao), x.numeroLicitacao && 'licitação ' + x.numeroLicitacao].filter(Boolean).join(' · '))),
+          el('td', {}, x.orgNome), el('td', { class: 'objeto' }, x.objeto ? nomeProprio(x.objeto) : nomeProprio(x.elemento || '—'), el('small', {}, [x.licitacao && nomeProprio(x.licitacao), x.numeroLicitacao && 'licitação ' + x.numeroLicitacao].filter(Boolean).join(' · ')), linhaInstrumento(x)),
           el('td', {}, TIPO_SIGEFES[x.tipo] || x.tipo, el('small', {}, x.codigo ? 'código ' + x.codigo : `${x.meses} meses`)),
           celulaIndicio(x),
           el('td', { class: 'num' }, x.pagoAnt > 0 ? brlCompacto(x.pagoAnt) : '—'), el('td', { class: 'num' }, x.pagoAtu > 0 ? brlCompacto(x.pagoAtu) : '—'), el('td', {}, `${x.desde} a ${x.ate}`)))))) : null);

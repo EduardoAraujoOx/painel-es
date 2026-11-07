@@ -206,7 +206,7 @@ def sigefes_item(g):
     return {"cnpj": g["cnpj"], "forn": titulo(g["forn"]) if g["forn"].isupper() else g["forn"], "tipo": g["tipo"], "codigo": g["codigo"], "licitacao": g["licitacao"],
             "numeroLicitacao": g["numeroLicitacao"], "processo": AM.protocolo_edocs(g["processo"]) or g["processo"], "embasamento": g["embasamento"], "acao": g["acao"],
             "objeto": g["objeto"], "subfuncao": g["subfuncao"], "elemento": g["elementoNome"], "ug": g["ug"], "pagoAnt": g["pago"].get(a, 0.0), "pagoAtu": g["pago"].get(b, 0.0), "meses": g["meses"],
-            "desde": g["desde"], "ate": g["ate"], "indicio": g.get("indicio")}
+            "desde": g["desde"], "ate": g["ate"], "indicio": g.get("indicio"), "instrumento": g.get("instrumento") or None}
 
 
 def carregar_diario():
@@ -846,7 +846,7 @@ def main():
     # --- arquivos
     # arquivos gerados por outros scripts (edocs.py, portal.py) e que a remontagem não pode apagar
     preservar = {}
-    for nome_ in ("processos.json", "cobertura.json"):
+    for nome_ in ("processos.json", "cobertura.json", "publicidade_secom.json"):
         if os.path.exists(os.path.join(DESTINO, nome_)):
             preservar[nome_] = open(os.path.join(DESTINO, nome_), "rb").read()
     if os.path.isdir(DESTINO):
@@ -884,8 +884,13 @@ def main():
         processos_edocs = json.load(open(os.path.join(DESTINO, "processos.json")))
     except (OSError, ValueError):
         processos_edocs = {}
+    try:
+        contratos_publicados = json.load(open(os.path.join(DESTINO, "publicidade_secom.json")))["contratos"]
+    except (OSError, ValueError, KeyError):
+        contratos_publicados = []
     for lista_ in sigefes_org.values():
         for g_ in lista_:
+            g_["instrumento"] = AM.instrumentos_publicados(g_, contratos_publicados)
             g_["indicio"] = AM.qualificar_relacao(g_, atos=(por_c_ or {}).get(g_["cnpj"], []), pncp_contratos=pncp_cnpj.get(g_["cnpj"], 0),
                                                   edocs=processos_edocs.get(AM.protocolo_edocs(g_["processo"]) or ""))
     if sigefes_org:
