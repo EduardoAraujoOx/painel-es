@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-07",
- "gerado_em": "2026-11-07T01:17:12Z",
+ "gerado_em": "2026-11-07T09:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,15 +25,15 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 23,
-   "aceitos": 8,
-   "possiveis": 4
+   "lidos": 24,
+   "aceitos": 7,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 6,
    "possiveis": 1
   },
@@ -41,15 +41,15 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 4,
+   "lidos": 3,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 11,
+   "lidos": 9,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -57,7 +57,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -65,15 +65,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 1,
+   "lidos": 5,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 59,
+   "lidos": 58,
    "aceitos": 3,
    "possiveis": 5
   },
@@ -97,8 +97,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 69,
-   "aceitos": 3,
+   "lidos": 72,
+   "aceitos": 2,
    "possiveis": 3
   },
   {
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 11,
+   "lidos": 10,
    "aceitos": 4,
    "possiveis": 1
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 27,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -145,15 +145,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 27,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 32,
    "aceitos": 6,
    "possiveis": 1
   },
@@ -170,15 +170,15 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
-   "possiveis": 4
+   "aceitos": 4,
+   "possiveis": 5
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -218,7 +218,7 @@
    "consulta": "https://www.agazeta.com.br/colunas/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 0,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -238,22 +238,62 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 337,
+  "sem_contexto": 334,
   "oficial_sem_tema": 4,
+  "possivel": 21,
   "oficial_divulgacao": 1,
-  "possivel": 19,
-  "veiculo_excluido": 43,
+  "veiculo_excluido": 44,
   "sem_contexto_com_tema": 3,
   "exterior_sem_ancora": 3,
-  "excluir": 12,
-  "outro_estado": 19,
+  "excluir": 13,
+  "outro_estado": 18,
   "caixa_alta": 1,
-  "veiculo_outra_praca": 7,
-  "sigla_sem_ancora": 4
+  "veiculo_outra_praca": 9,
+  "sigla_sem_ancora": 5
  },
  "itens": [
+  {
+   "id": "b7e4d5322740",
+   "titulo": "Estoque que vale dinheiro: oportunidade de geração de caixa na transição para a CBS",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/paulo-cesar-caetano/estoque-que-vale-dinheiro-oportunidade-de-geracao-de-caixa-na-transicao-para-a-cbs-1126",
+   "data": "2026-11-07T07:00:00Z",
+   "coletado_em": "2026-11-07T09:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "a880636f2837",
+   "titulo": "Prefeito no ES cita El Niño e reduz horário de trabalho dos servidores",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/leonel-ximenes/prefeito-no-es-cita-el-nino-e-reduz-horario-de-trabalho-dos-servidores-1126",
+   "data": "2026-11-07T06:15:00Z",
+   "coletado_em": "2026-11-07T09:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "ba8033457f9b",
+   "titulo": "Secult Certifica Artesãs Da Primeira Etapa De Projetos Culturais Em Viseu",
+   "veiculo": "Portal & TV Gurupi",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQdlVvMHNjV1FVTVNwU0t0RTdiTnJ6UUhlNG9lY0Z0NC01UVZDdGRkMzRrMGhHWkNZRk5BNnJCVDhHZzV6REQ0WEdYaUR3WGpiNTVaWVVUdl9RN3J6YkNPNHV4ZlFUZ2EyakU3SjJhejM4bExWWUVfLU9CZzdVa2Zmc1ZyTFpKZ0prUjNhUnZsX2l0cGtfY01tQTA5bWh3MWxyUHl5ag?oc=5",
+   "data": "2026-11-07T02:27:13Z",
+   "coletado_em": "2026-11-07T09:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": []
+  },
   {
    "id": "0d1eca019b4a",
    "titulo": "Após impeachment, Ministério Público do Paraguai ordena detenção imediata de ex-presidente",
@@ -862,6 +902,18 @@
    "url": "https://eshoje.com.br/edicao-digital/2026/11/es-hoje-06-11-medo-do-toque-retal-ainda-mata-centenas-no-estado/",
    "data": "2026-11-06T03:00:51Z",
    "coletado_em": "2026-11-06T06:48:52Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": []
+  },
+  {
+   "id": "3faa184f4145",
+   "titulo": "Deputado Federal em Espírito Santo: conheça os candidatos nas eleições 2026",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNWc5dEtDUVFVcmhPNmt2S2RpRHBvNVpDc2ZJcVRWbTFSNVFLZzB1LXNkRDZoUUhEM2IwUktzTHBPNzFLaldRX3R6UkJ0NFRIcWw1SFRNbC1xbzRJUDU0MzZiWklrOHlja0dKajlybWl6cmpKRVZsOGNSLVF5NXRTYjJIWEN3clktWWVTNFZmb0ZyZ0dsZ1ow?oc=5",
+   "data": "2026-11-05T23:30:35Z",
+   "coletado_em": "2026-11-07T09:17:13Z",
    "outras": [],
    "possivel": true,
    "triagem": 5,
