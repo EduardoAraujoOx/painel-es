@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-07",
- "gerado_em": "2026-11-07T19:17:11Z",
+ "gerado_em": "2026-11-07T20:14:47Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -57,9 +57,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -89,9 +89,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 42,
+   "lidos": 40,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 3,
+   "lidos": 6,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -145,16 +145,16 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 23,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
-   "aceitos": 7,
+   "lidos": 27,
+   "aceitos": 6,
    "possiveis": 2
   },
   {
@@ -171,7 +171,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 4,
-   "possiveis": 5
+   "possiveis": 4
   },
   {
    "fonte": "Folha Vitória",
@@ -194,7 +194,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
@@ -238,22 +238,36 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
   "oficial_sem_tema": 5,
-  "sem_contexto": 298,
-  "possivel": 23,
+  "sem_contexto": 294,
+  "possivel": 24,
   "oficial_divulgacao": 1,
   "veiculo_excluido": 33,
+  "veiculo_outra_praca": 15,
   "sem_contexto_com_tema": 6,
-  "excluir": 11,
-  "outro_estado": 15,
+  "excluir": 12,
+  "outro_estado": 13,
   "exterior_sem_ancora": 4,
   "caixa_alta": 1,
-  "veiculo_outra_praca": 14,
-  "sigla_sem_ancora": 7
+  "sigla_sem_ancora": 6
  },
  "itens": [
+  {
+   "id": "a0fdb40f267e",
+   "titulo": "Imposto do pecado chega em 2027: veja quais produtos podem ficar mais caros",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQcjAyRTVhZkNNazdUNUsycnRrRTRybU5vX0ZJTjNOaHYyX0ZDOFFYREtORzMwZDMzczZlOGNmdWU0TXQ2STNWX19ldmplazcxTW85c09zRExsTWtiNmFva0ozQjk5Y0N1MmFSbExYdWdHdTNtaHRja2JRb2xfXy1fRjlpM25kTG1xdkptNmo5RlhLdXdOV1lYQXlrSDN6dw?oc=5",
+   "data": "2026-11-07T19:47:23Z",
+   "coletado_em": "2026-11-07T20:14:47Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "fb84fd52d0bc",
    "titulo": "Investimento bilionário em energia vai criar mil empregos no Estado",
