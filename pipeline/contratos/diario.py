@@ -29,6 +29,9 @@ import subprocess
 import sys
 import tempfile
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import amplo  # noqa: E402
+
 RAIZ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 CACHE = os.path.join(RAIZ, ".cache", "contratos")
 DESTINO = os.path.join(CACHE, "dio_atos.json")
@@ -49,6 +52,7 @@ TIPOS = [("Rescisão", re.compile(r"TERMO DE RESCIS|RESCIS[ÃA]O (UNILATERAL|AMI
          ("Aditivo ou prorrogação", re.compile(r"ADITIV|ADITAMENTO|PRORROGA")),
          ("Apostilamento", re.compile(r"APOSTIL")),
          ("Reajuste ou repactuação", re.compile(r"REAJUST|REPACTUA")),
+         ("Parceria", re.compile(r"TERMO DE FOMENTO|TERMO DE COLABORA|TERMO DE PARCERIA|CONV[ÊE]NIO|CONTRATO DE GEST[ÃA]O|ACORDO DE COOPERA")),
          ("Extrato de contrato", re.compile(r"EXTRATO|TERMO DE CONTRATO|CONTRATANTE|CONTRATADA"))]
 
 
@@ -184,14 +188,14 @@ def atos_da_edicao(texto, cnpjs, antes=300, depois=900):
 
 
 def cnpjs_do_siga():
-    """CNPJs dos fornecedores nos CSVs de contratos do SIGA (coluna 9)."""
+    """CNPJs dos fornecedores nos CSVs de contratos do SIGA (coluna 9) e os fornecedores relevantes do SIGEFES fora do SIGA."""
     s = set()
     for f in glob.glob(os.path.join(CACHE, "c20*.csv")):
         for linha in open(f, encoding="utf-8", errors="replace"):
             p = linha.split(";")
             if len(p) > 8 and re.fullmatch(r"\d{14}", p[8]):
                 s.add(p[8])
-    return s
+    return s | amplo.cnpjs_relevantes_do_cache(s, CACHE)      # inclui quem o SIGEFES paga de forma relevante e o SIGA não conhece
 
 
 def get(url, destino=None, tentativas=4):
@@ -216,6 +220,16 @@ def ler_edicao(ed):
 
 def iso(d):
     return f"{d[6:]}-{d[3:5]}-{d[:2]}"
+
+
+def salvar(estado):
+    """Grava o estado por inteiro (em arquivo temporário e renomeando, para nunca deixar um arquivo pela metade)."""
+    estado["geradoEm"] = datetime.date.today().isoformat()
+    os.makedirs(CACHE, exist_ok=True)
+    tmp = DESTINO + ".tmp"
+    with open(tmp, "w") as f:
+        json.dump(estado, f, ensure_ascii=False, separators=(",", ":"))
+    os.replace(tmp, DESTINO)
 
 
 def main():
@@ -245,10 +259,8 @@ def main():
             lidas[str(ed["id"])] = {"data": ed["data"], "numero": ed["numero"], "sup": ed["sup"], "atos": len(atos)}
             if k % 25 == 0 or k == len(faltam):
                 print(f"  {k}/{len(faltam)} edições; {len(estado['atos'])} atos", flush=True)
-    estado["geradoEm"] = datetime.date.today().isoformat()
-    os.makedirs(CACHE, exist_ok=True)
-    with open(DESTINO, "w") as f:
-        json.dump(estado, f, ensure_ascii=False, separators=(",", ":"))
+                salvar(estado)          # ponto de retomada: uma queda no meio não perde o que já foi lido
+    salvar(estado)
     print(f"{len(lidas)} edições lidas no total, {len(estado['atos'])} atos → {DESTINO}" + (f"; {falhas} edições falharam (serão tentadas de novo na próxima execução)" if falhas else ""))
     if falhas:
         sys.exit(1)

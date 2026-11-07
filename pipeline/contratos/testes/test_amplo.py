@@ -161,5 +161,139 @@ class ContatoCadastral(unittest.TestCase):
         self.assertEqual(A.contato_cadastral("Sociedade Anônima Fechada", "sem-arroba", "27", "33313100")["email"], "")
 
 
+class ContratosDoSigefes(unittest.TestCase):
+    NOMES = {"11145893000341": "AMPLA SERVICOS DE PROPAGANDA E PUBLICIDADE LTDA", "22222222000122": "LIMPEZA RECORRENTE LTDA", "33333333000133": "EVENTUAL LTDA",
+             "44444444000144": "ASSOCIAÇÃO X", "EL43": "SUBVENÇÕES SOCIAIS", "EL39": "OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA"}
+    SUBS = {"100104|11145893000341|21003003": {"SERVIÇOS DE PUBLICIDADE INSTITUCIONAL|COMUNICAÇÃO SOCIAL": 3000.0, "OUTRO|X": 10.0},
+            "100104|22222222000122|": {"LIMPEZA E CONSERVAÇÃO|ADMINISTRAÇÃO": 900.0}}
+    META = {"100104|11145893000341|21003003": ["001/2021", "2021-ABCDE", "Lei nº 8.666/1993", "DIVULGAÇÃO INSTITUCIONAL"]}
+    LINHAS = [["11145893000341", "100104", "39", "21003003", "CONCORRÊNCIA", "2026-03", 0.0, 0.0, 168367.0],
+              ["11145893000341", "100104", "39", "21003003", "CONCORRÊNCIA", "2026-06", 0.0, 0.0, 100000.0],
+              ["11145893000341", "100104", "39", "21003003", "CONCORRÊNCIA", "2025-12", 0.0, 0.0, 50000.0],
+              ["11145893000341", "100104", "13", "21003003", "CONCORRÊNCIA", "2026-03", 0.0, 0.0, 9999.0],      # elemento fora do rastreamento (obrigações patronais)
+              ["22222222000122", "100104", "39", "", "PREGÃO", "2026-01", 0.0, 0.0, 40000.0],                     # recorrente sem código: 3 meses e R$ 120 mil
+              ["22222222000122", "100104", "39", "00000000", "PREGÃO", "2026-02", 0.0, 0.0, 40000.0],
+              ["22222222000122", "100104", "39", "", "PREGÃO", "2026-03", 0.0, 0.0, 40000.0],
+              ["33333333000133", "100104", "39", "", "DISPENSA", "2026-03", 0.0, 0.0, 500000.0],                # contratação em um mês só: não é recorrente
+              ["44444444000144", "100104", "43", "", "NÃO APLICÁVEL", "2026-03", 0.0, 0.0, 300000.0],           # repasse de uma vez só, acima do mínimo
+              ["44444444000144", "100104", "43", "", "NÃO APLICÁVEL", "2026-04", 0.0, 0.0, 10.0],
+              ["99999999000199", "100104", "39", "55", "PREGÃO", "2026-03", 0.0, 0.0, 800000.0]]                # fornecedor com documento no SIGA
+
+    def roda(self, **kw):
+        args = dict(linhas=self.LINHAS, nomes=self.NOMES, subs=self.SUBS, meta=self.META, ug_org={"100104": 175},
+                    pares_com_doc={(175, "99999999000199")}, anos=("2025", "2026"))
+        args.update(kw)
+        return A.contratos_do_sigefes(**args)
+
+    def test_contrato_com_codigo_agrupa_e_traz_objeto_e_metadados(self):
+        r = self.roda()[175]
+        g = [x for x in r if x["tipo"] == "contrato"][0]
+        self.assertEqual((g["codigo"], g["licitacao"], g["objeto"], g["subfuncao"]), ("21003003", "CONCORRÊNCIA", "SERVIÇOS DE PUBLICIDADE INSTITUCIONAL", "COMUNICAÇÃO SOCIAL"))
+        self.assertEqual(g["pago"], {"2025": 50000.0, "2026": 268367.0})
+        self.assertEqual((g["desde"], g["ate"], g["total"], g["meses"]), ("2025-12", "2026-06", 318367.0, 3))
+        self.assertEqual((g["numeroLicitacao"], g["processo"], g["embasamento"]), ("001/2021", "2021-ABCDE", "Lei nº 8.666/1993"))
+        self.assertEqual((g["elemento"], g["elementoNome"]), ("39", "OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA"))
+
+    def test_recorrente_sem_codigo_entra_so_com_valor_e_meses_suficientes(self):
+        r = self.roda()[175]
+        rec = [x for x in r if x["tipo"] == "recorrente"]
+        self.assertEqual([x["cnpj"] for x in rec], ["22222222000122"])
+        self.assertEqual((rec[0]["total"], rec[0]["meses"], rec[0]["objeto"]), (120000.0, 3, "LIMPEZA E CONSERVAÇÃO"))
+        self.assertNotIn("33333333000133", [x["cnpj"] for x in r])      # R$ 500 mil de contratação em um mês só
+
+    def test_repasse_entra_com_o_valor_mesmo_em_um_mes(self):
+        r = self.roda()[175]
+        rep = [x for x in r if x["tipo"] == "repasse"]
+        self.assertEqual([(x["cnpj"], x["total"], x["elemento"], x["elementoNome"]) for x in rep], [("44444444000144", 300010.0, "43", "SUBVENÇÕES SOCIAIS")])
+        self.assertEqual([x["tipo"] for x in r], ["contrato", "repasse", "recorrente"])      # ordenado por valor pago
+
+    def test_pares_com_documento_e_ug_desconhecida_ficam_de_fora(self):
+        todos = {(175, c) for c in ("11145893000341", "22222222000122", "33333333000133", "44444444000144", "99999999000199")}
+        self.assertEqual(self.roda(pares_com_doc=todos), {})
+        self.assertEqual(self.roda(ug_org={}), {})
+
+    def test_ano_fora_do_periodo_nao_entra(self):
+        self.assertEqual(self.roda(anos=("2024",)), {})
+
+
+class FornecedoresRelevantes(unittest.TestCase):
+    LINHAS = [["1", "10", "39", "", "P", "2026-01", 0, 0, 40000.0], ["1", "10", "39", "", "P", "2026-02", 0, 0, 40000.0], ["1", "10", "39", "", "P", "2026-03", 0, 0, 40000.0],
+              ["2", "10", "39", "777", "C", "2026-03", 0, 0, 150000.0],                 # um mês, mas com código de contrato
+              ["3", "10", "39", "", "D", "2026-03", 0, 0, 900000.0],                    # contratação, um mês e sem código
+              ["4", "10", "13", "", "P", "2026-01", 0, 0, 500000.0],                    # elemento fora do rastreamento
+              ["5", "10", "39", "", "P", "2026-01", 0, 0, 90000.0], ["5", "10", "39", "", "P", "2026-02", 0, 0, 5000.0], ["5", "10", "39", "", "P", "2026-03", 0, 0, 5000.0],
+              ["6", "10", "39", "", "P", "2026-01", 0, 0, 90000.0], ["6", "10", "39", "", "P", "2026-02", 0, 0, 90000.0], ["6", "10", "39", "", "P", "2026-03", 0, 0, 90000.0],
+              ["7", "10", "43", "", "N", "2026-03", 0, 0, 200000.0],                    # subvenção social de uma vez só
+              ["8", "10", "91", "", "N", "2026-03", 0, 0, 50000.0]]                     # sentença abaixo do mínimo
+
+    def test_criterio(self):
+        r = A.fornecedores_relevantes(self.LINHAS, cnpjs_siga={"6"})
+        self.assertEqual(r, {"1", "2", "5", "7"})
+        # 3 fora (contratação em um mês, sem código), 4 (elemento fora), 6 (está no SIGA), 8 (abaixo de R$ 100 mil); 5 soma R$ 100 mil em 3 meses
+
+    def test_classe_do_elemento(self):
+        self.assertEqual([A.classe_do_elemento(x) for x in ("39", "43", "85", "91", "47", "")], ["contratacao", "repasse", "repasse", "outro", None, None])
+
+
+class NaturezaJuridica(unittest.TestCase):
+    def test_classes(self):
+        self.assertEqual(A.classe_juridica("1015"), "publico")
+        self.assertEqual(A.classe_juridica("1031"), "publico")             # município
+        self.assertEqual(A.classe_juridica("2011"), "estatal")             # empresa pública
+        self.assertEqual(A.classe_juridica("2038"), "estatal")             # sociedade de economia mista
+        self.assertEqual(A.classe_juridica("2062"), "empresa privada")
+        self.assertEqual(A.classe_juridica("3999"), "sem fins lucrativos")
+        self.assertEqual(A.classe_juridica("5002"), "outro")
+        self.assertEqual(A.classe_juridica("2054", "Sociedade de Economia Mista"), "estatal")
+
+    def test_ente_publico_sai_da_lista_e_vai_para_o_resumo(self):
+        linhas = [["P1", "100104", "42", "", "N", "2026-03", 0, 0, 900000.0], ["P1", "100104", "47", "", "N", "2026-03", 0, 0, 100000.0],
+                  ["E1", "100104", "71", "", "N", "2026-03", 0, 0, 500000.0], ["S1", "100104", "43", "", "N", "2026-03", 0, 0, 300000.0]]
+        classes = {"P1": "publico", "E1": "estatal", "S1": "sem fins lucrativos"}
+        lista = A.contratos_do_sigefes(linhas, {"S1": "SANTA CASA"}, {}, {}, {"100104": 175}, set(), ("2026",), classe_cnpj=classes)
+        self.assertEqual([(g["cnpj"], g["tipo"]) for g in lista[175]], [("S1", "repasse")])
+        r = A.pagamentos_a_entes_publicos(linhas, {"P1": "MUNICÍPIO X"}, {"100104": 175}, set(), ("2026",), classes)[175]
+        self.assertEqual((r["total"], r["cnpjs"]), (1500000.0, 2))
+        self.assertEqual(r["porGrupo"], {"transferências": 900000.0, "dívida": 500000.0, "tributos e encargos": 100000.0})
+        self.assertEqual(r["porClasse"], {"publico": 1000000.0, "estatal": 500000.0})
+        self.assertEqual(r["maiores"][0], {"cnpj": "P1", "nome": "MUNICÍPIO X", "classe": "publico", "pago": 1000000.0})
+
+
+class Qualificacao(unittest.TestCase):
+    def grupo(self, **kw):
+        g = {"tipo": "contrato", "codigo": "21003003", "licitacao": "CONCORRÊNCIA", "numeroLicitacao": "001/2019", "processo": "", "meses": 24,
+             "desde": "2025-01", "ate": "2026-10", "mesesLista": [f"2025-{m:02d}" for m in range(1, 13)] + [f"2026-{m:02d}" for m in range(1, 11)]}
+        g.update(kw)
+        return g
+
+    def test_periodicidade(self):
+        self.assertEqual(A.periodicidade([]), "sem pagamento")
+        self.assertEqual(A.periodicidade(["2026-03"]), "pagamento único")
+        self.assertEqual(A.periodicidade(["2026-03", "2026-04", "2026-05"]), "poucas parcelas")
+        self.assertEqual(A.periodicidade([f"2026-{m:02d}" for m in range(1, 11)]), "mensal contínuo")
+        self.assertEqual(A.periodicidade(["2025-01", "2025-02", "2025-04", "2025-05", "2025-07"]), "frequente")
+        self.assertEqual(A.periodicidade(["2024-01", "2025-06", "2026-10"]), "esporádico")
+
+    def test_contrato_com_licitacao_e_pagamento_mensal_e_forte(self):
+        q = A.qualificar_relacao(self.grupo(), atos=[{"t": "Extrato de contrato"}], pncp_contratos=1)
+        self.assertEqual((q["nivel"], q["periodicidade"]), ("forte", "mensal contínuo"))
+        self.assertTrue(any("código de contrato" in m for m in q["motivos"]))
+        self.assertEqual(q["duvidas"], [])
+
+    def test_sem_licitacao_ato_nem_processo_e_com_pagamento_isolado_e_fraca(self):
+        g = self.grupo(codigo="", licitacao="NÃO APLICÁVEL - DEMAIS CASOS", numeroLicitacao="", meses=1, mesesLista=["2026-03"], desde="2026-03", ate="2026-03", tipo="outro")
+        q = A.qualificar_relacao(g)
+        self.assertEqual(q["nivel"], "fraca")
+        self.assertTrue(any("único mês" in d for d in q["duvidas"]))
+        self.assertTrue(any("eventual" in d for d in q["duvidas"]))
+
+    def test_edocs_que_cita_instrumento_soma_e_atos_nao_contratuais_nao_contam(self):
+        g = self.grupo(codigo="", licitacao="DISPENSA DE LICITAÇÃO", numeroLicitacao="", processo="2025-ABCDE", meses=5, mesesLista=["2025-01", "2025-02", "2025-03", "2025-04", "2025-06"], desde="2025-01", ate="2025-06")
+        sem = A.qualificar_relacao(g, atos=[{"t": "Penalidade"}])
+        com = A.qualificar_relacao(g, atos=[{"t": "Penalidade"}], edocs={"assunto": "Termo de colaboração", "resumo": ""})
+        self.assertEqual(com["pontos"], sem["pontos"] + 1)
+        self.assertTrue(any("Diário" in d for d in sem["duvidas"]))
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -256,6 +256,33 @@ def main():
              solicitar="Tabela de correspondência entre o código de setor da folha e a unidade do organograma oficial, com os decretos de estrutura vigentes.",
              destinatarios=["SEGER (pessoal)", "SESP", "IASES"], valorAfetado=0.0, prioridadeFixa="média", fonteEvidencia="Base de vínculos (Portal da Transparência) e Organograma ES"),
     ]
+    # contratos que o SIGEFES conhece (pagamento com código de contrato) e o SIGA não registra: publicidade e outras contratações fora do SIGA
+    sg = sorted((o for o in idx["orgs"] if o.get("sigefesPago")), key=lambda o: -o.get("sigefesPago", 0))
+    if sg:
+        tot_pago = sum(o["sigefesPago"] for o in sg)
+        n_tipo = {t: sum(o.get("sigefes" + t.capitalize(), 0) for o in sg) for t in ("contrato", "recorrente", "repasse", "outro")}
+        por_objeto, publ_orgs, publ_forns = {}, {}, {}
+        for o in sg:       # composição pelos blocos dos órgãos (até 80 maiores contratos de cada um)
+            arq_o = os.path.join(RAIZ, "data", "contratacoes", o["arquivo"] + ".json")
+            if os.path.exists(arq_o):
+                for g in json.load(open(arq_o)).get("sigefes", []):
+                    x = por_objeto.setdefault(g["objeto"] or "sem subelemento", [0, 0.0])
+                    x[0] += 1
+                    x[1] += g["pagoAnt"] + g["pagoAtu"]
+                    if (g["objeto"] or "").upper().startswith("SERVIÇOS DE PUBLICIDADE"):
+                        publ_orgs[o["nome"]] = publ_orgs.get(o["nome"], 0.0) + g["pagoAnt"] + g["pagoAtu"]
+                        publ_forns[g["forn"]] = publ_forns.get(g["forn"], 0.0) + g["pagoAnt"] + g["pagoAtu"]
+        publ = (sum(n for k, (n, v) in por_objeto.items() if k.upper().startswith("SERVIÇOS DE PUBLICIDADE")), sum(v for k, (n, v) in por_objeto.items() if k.upper().startswith("SERVIÇOS DE PUBLICIDADE"))) if any(k.upper().startswith("SERVIÇOS DE PUBLICIDADE") for k in por_objeto) else None
+        grandes = "; ".join(f"{k.lower()} ({mi(v)})" for k, (n, v) in sorted(por_objeto.items(), key=lambda kv: -kv[1][1])[:3])
+        itens.append(dict(id="contratos-so-sigefes", area="Contratos", verificado=True,
+             titulo="Pagamentos do SIGEFES a CNPJs sem documento no SIGA (publicidade, obras, serviços continuados, repasses e outros)",
+             lacuna="Seguir o dinheiro: o SIGEFES paga a CNPJs dos quais o SIGA não tem nenhum documento no órgão pagador, seja por contratação (com código de contrato ou de forma recorrente), seja por repasse a entidades ou por pagamento eventual. É o caso dos contratos das agências de publicidade da Secom: o Portal da Transparência (que reúne SIGA e CidadES), o SIGA e o PNCP não os trazem, e o dado aberto da execução só mostra o pagamento. Parte do conjunto pode ser contrato registrado em outro órgão ou em nome de outro CNPJ.",
+             evidencia=(f"{n_tipo['contrato']} contratos com código do SIGEFES, {n_tipo['recorrente']} contratações recorrentes sem contrato, {n_tipo['repasse']} repasses (contratos de gestão, subvenções, auxílios e contribuições) e {n_tipo['outro']} pagamentos eventuais, em {len(sg)} órgãos, somam {mi(tot_pago)} pagos nos dois últimos exercícios a fornecedores sem documento do SIGA no órgão. Maiores objetos de gasto: {grandes}."
+                        + (f" Publicidade (institucional e legal): {publ[0]} contratos, {mi(publ[1])}, sobretudo em {'; '.join(k for k, _ in sorted(publ_orgs.items(), key=lambda kv: -kv[1])[:1])}; maiores fornecedores: {', '.join(k for k, _ in sorted(publ_forns.items(), key=lambda kv: -kv[1])[:5])}." if publ else "")),
+             decisao="Ter a lista completa de contratos do Estado, inclusive publicidade e contratações conduzidas fora do SIGA, para avaliar valor, prazo, justificativa e saldo antes de decidir sobre manter, renegociar ou encerrar.",
+             solicitar="Relação dos contratos de publicidade (agências, veículos e produção) e dos demais contratos pagos pelo SIGEFES sem registro no SIGA, com número do instrumento, valor, vigência, aditivos, processo de contratação e saldo; e a correspondência entre o código de contrato do SIGEFES e o número do instrumento.",
+             destinatarios=["Secom", "SEGER (SIGA)", "SEFAZ (SIGEFES)"], valorAfetado=0.0, prioridadeFixa="alta" if tot_pago >= 100e6 else "média",
+             fonteEvidencia="SIGEFES (Portal da Transparência), cruzamento do painel com o SIGA"))
     for i in itens:
         v = i["valorAfetado"]
         auto = "alta" if v >= 500e6 else "média" if v >= 50e6 else "baixa"

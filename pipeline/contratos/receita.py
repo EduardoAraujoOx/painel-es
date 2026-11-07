@@ -24,6 +24,9 @@ import sys
 import zlib
 from multiprocessing import Pool
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import amplo  # noqa: E402
+
 RAIZ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 CACHE = os.path.join(RAIZ, ".cache", "contratos")
 ESPELHO = "https://dados-abertos-rf-cnpj.casadosdados.com.br/arquivos"
@@ -49,7 +52,11 @@ def cnpjs_dos_contratos():
                     d = so_digitos(linha[col])
                     if len(d) == 14:
                         achados.add(d)
-    return achados
+    # fornecedores que o SIGEFES paga de forma relevante e o SIGA não conhece (rode despesas.py antes): também precisam de cadastro, sócios e bases externas
+    extras = amplo.cnpjs_relevantes_do_cache(achados, CACHE)
+    if extras:
+        print(f"{len(extras)} CNPJs a mais, pagos pelo SIGEFES e ausentes do SIGA (relevantes: valor e recorrência)", flush=True)
+    return achados | extras
 
 
 def fluxo(nome):
