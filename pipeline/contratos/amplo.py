@@ -200,60 +200,88 @@ def contato_cadastral(natureza, email, ddd1="", tel1="", ddd2="", tel2=""):
 ELEMENTOS_CONTRATACAO = {"30": "material de consumo", "32": "material de distribuição gratuita", "33": "passagens e locomoção", "34": "terceirização de pessoal",
                          "35": "serviços de consultoria", "37": "locação de mão de obra", "38": "arrendamento mercantil", "39": "outros serviços de terceiros, pessoa jurídica",
                          "40": "serviços de tecnologia da informação e comunicação", "51": "obras e instalações", "52": "equipamentos e material permanente"}
+# Seguir o dinheiro: além da contratação, o SIGEFES paga a CNPJs por repasse (parcerias, subvenções, auxílios, contribuições e contratos de gestão com
+# organizações sociais) e por pagamentos eventuais (sentenças, despesas de exercícios anteriores, indenizações, aquisição de imóveis). Tributos, obrigações
+# patronais, dívida e pessoal ficam de fora: o favorecido é o próprio setor público ou uma instituição financeira e não há o que rever em contrato.
+ELEMENTOS_REPASSE = {"41": "contribuições", "42": "auxílios", "43": "subvenções sociais", "45": "subvenções econômicas", "85": "contrato de gestão"}
+ELEMENTOS_OUTROS = {"91": "sentenças judiciais", "92": "despesas de exercícios anteriores", "93": "indenizações e restituições", "61": "aquisição de imóveis"}
+ELEMENTOS_RASTREAVEIS = {**ELEMENTOS_CONTRATACAO, **ELEMENTOS_REPASSE, **ELEMENTOS_OUTROS}
+
+
+def classe_do_elemento(el):
+    """'contratacao', 'repasse' ou 'outro' conforme o elemento de despesa; None se o elemento não é rastreado."""
+    return "contratacao" if el in ELEMENTOS_CONTRATACAO else "repasse" if el in ELEMENTOS_REPASSE else "outro" if el in ELEMENTOS_OUTROS else None
+
+
 VALOR_RELEVANTE_SIGEFES = 100_000.0       # pago nos dois últimos exercícios, em elementos de contratação
 MESES_RECORRENTE = 3                      # meses distintos com pagamento ao mesmo fornecedor pela mesma unidade gestora
 
 
-def fornecedores_relevantes(linhas, cnpjs_siga, elementos, minimo_valor=VALOR_RELEVANTE_SIGEFES, minimo_meses=MESES_RECORRENTE):
-    """CNPJs pagos pelo SIGEFES em elementos de contratação que não aparecem em nenhum documento do SIGA e têm pagamento relevante: ao menos
-    `minimo_valor` e, ou pagamentos em `minimo_meses` meses distintos, ou algum pagamento que cita código de contrato do SIGEFES.
+def fornecedores_relevantes(linhas, cnpjs_siga, elementos=None, minimo_valor=VALOR_RELEVANTE_SIGEFES, minimo_meses=MESES_RECORRENTE):
+    """CNPJs pagos pelo SIGEFES em elementos rastreáveis que não aparecem em nenhum documento do SIGA e têm pagamento relevante: ao menos
+    `minimo_valor` e, ou pagamentos em `minimo_meses` meses distintos, ou algum pagamento que cita código de contrato do SIGEFES, ou algum repasse ou
+    pagamento eventual (esses não precisam ser recorrentes: um repasse único alto já é motivo de olhar).
 
     linhas: [cnpj, ug, elemento, contrato, licitação, 'AAAA-MM', empenhado, liquidado, pago] (despesas.py). Serve para ampliar a Receita, as bases
     externas (PGFN, CEIS, TSE) e o Diário Oficial a quem o SIGA não conhece."""
-    pago, meses, com_codigo = {}, {}, set()
+    elementos = ELEMENTOS_RASTREAVEIS if elementos is None else elementos
+    pago, meses, motivo = {}, {}, set()
     for cnpj, _ug, el, ct, _lic, mes, _e, _l, p in linhas:
         if el not in elementos or p <= 0 or cnpj in cnpjs_siga:
             continue
         pago[cnpj] = pago.get(cnpj, 0.0) + p
         meses.setdefault(cnpj, set()).add(mes)
-        if (ct or "").strip().strip("0"):
-            com_codigo.add(cnpj)
-    return {c for c, v in pago.items() if v >= minimo_valor and (len(meses[c]) >= minimo_meses or c in com_codigo)}
+        if (ct or "").strip().strip("0") or classe_do_elemento(el) != "contratacao":
+            motivo.add(cnpj)
+    return {c for c, v in pago.items() if v >= minimo_valor and (len(meses[c]) >= minimo_meses or c in motivo)}
 
 
-def contratos_do_sigefes(linhas, nomes, subs, meta, ug_org, pares_sem_doc, anos, elementos, minimo_valor=VALOR_RELEVANTE_SIGEFES, minimo_meses=MESES_RECORRENTE):
-    """Agrupa os pagamentos do SIGEFES a fornecedores que não têm documento algum do SIGA no órgão pagador, por órgão, fornecedor, unidade gestora e
-    código de contrato do SIGEFES.
+def contratos_do_sigefes(linhas, nomes, subs, meta, ug_org, pares_com_doc, anos, elementos=None, minimo_valor=VALOR_RELEVANTE_SIGEFES, minimo_meses=MESES_RECORRENTE):
+    """Agrupa os pagamentos do SIGEFES a fornecedores que não têm documento algum do SIGA no órgão pagador, por órgão, fornecedor, unidade gestora,
+    código de contrato do SIGEFES e natureza do pagamento.
 
-    Dois tipos: 'contrato' (os pagamentos citam um código de contrato) e 'recorrente' (sem código, mas com ao menos `minimo_valor` pago e
-    `minimo_meses` meses distintos de pagamento: despesa continuada, passível de revisão contratual embora sem instrumento no SIGA).
-    nomes: nomes dos fornecedores; subs: {'ug|cnpj|contrato': {'subelemento|subfunção': pago}}; meta: {'ug|cnpj|contrato': [licitação, processo,
-    embasamento, ação]}; ug_org: unidade gestora -> órgão do SIGA; pares_sem_doc: {(órgão, cnpj)}; anos: anos de interesse (texto); elementos: elementos de
-    despesa de contratação. Devolve {órgão: [grupo]} com os de maior pago primeiro."""
+    Tipos: 'contrato' (despesa de contratação que cita código de contrato do SIGEFES); 'recorrente' (contratação sem código, mas com ao menos
+    `minimo_valor` pago em `minimo_meses` meses distintos: despesa continuada, passível de revisão contratual embora sem instrumento no SIGA);
+    'repasse' (contribuição, auxílio, subvenção ou contrato de gestão, com ao menos `minimo_valor`); 'outro' (sentença, exercício anterior, indenização
+    ou imóvel, com ao menos `minimo_valor`).
+    nomes: nomes dos fornecedores e dos elementos ('EL<código>'); subs: {'ug|cnpj|contrato': {'subelemento|subfunção': pago}}; meta: {'ug|cnpj|contrato':
+    [licitação, processo, embasamento, ação]}; ug_org: unidade gestora -> órgão do SIGA; pares_com_doc: {(órgão, cnpj)} que têm documento no SIGA;
+    anos: anos de interesse (texto). Devolve {órgão: [grupo]} com os de maior pago primeiro."""
+    elementos = ELEMENTOS_RASTREAVEIS if elementos is None else elementos
     grupos = {}
     for cnpj, ug, el, ct, lic, mes, _emp, _liq, pago in linhas:
         ct = (ct or "").strip()
         if not ct.strip("0"):
             ct = ""
         org = ug_org.get(ug)
-        if org is None or el not in elementos or (org, cnpj) not in pares_sem_doc or mes[:4] not in anos or pago <= 0:
+        classe = classe_do_elemento(el)
+        if org is None or el not in elementos or classe is None or (org, cnpj) in pares_com_doc or mes[:4] not in anos or pago <= 0:
             continue
-        g = grupos.setdefault((org, cnpj, ct, ug), {"cnpj": cnpj, "forn": nomes.get(cnpj, cnpj), "codigo": ct, "tipo": "contrato" if ct else "recorrente",
-                                                    "licitacao": lic or "", "ug": ug, "pago": {a: 0.0 for a in anos}, "meses": set(), "desde": mes, "ate": mes})
+        g = grupos.setdefault((org, cnpj, ct, ug, classe), {"cnpj": cnpj, "forn": nomes.get(cnpj, cnpj), "codigo": ct, "classe": classe, "licitacao": lic or "", "ug": ug,
+                                                            "pago": {a: 0.0 for a in anos}, "meses": set(), "desde": mes, "ate": mes, "elementos": {}})
         g["pago"][mes[:4]] += pago
         g["meses"].add(mes)
+        g["elementos"][el] = g["elementos"].get(el, 0.0) + pago
         g["desde"], g["ate"] = min(g["desde"], mes), max(g["ate"], mes)
     saida = {}
-    for (org, cnpj, ct, ug), g in grupos.items():
+    for (org, cnpj, ct, ug, classe), g in grupos.items():
         total = sum(g["pago"].values())
-        if not ct and (total < minimo_valor or len(g["meses"]) < minimo_meses):
-            continue
+        if classe == "contratacao":
+            g["tipo"] = "contrato" if ct else "recorrente"
+            if not ct and (total < minimo_valor or len(g["meses"]) < minimo_meses):
+                continue
+        else:
+            g["tipo"] = classe
+            if total < minimo_valor:
+                continue
         chave = f"{ug}|{cnpj}|{ct}"
         sub = max((subs or {}).get(chave, {}).items(), key=lambda kv: kv[1], default=("|", 0.0))[0]
         objeto, _, subfuncao = sub.partition("|")
         licit, processo, embasamento, acao = (list((meta or {}).get(chave, [])) + ["", "", "", ""])[:4]
+        el_principal = max(g["elementos"].items(), key=lambda kv: kv[1])[0]
         g.update(objeto=objeto.strip(), subfuncao=subfuncao.strip(), numeroLicitacao=licit, processo=processo, embasamento=embasamento, acao=acao,
-                 total=round(total, 2), meses=len(g["meses"]))
+                 elemento=el_principal, elementoNome=(nomes or {}).get("EL" + el_principal, ""), total=round(total, 2), meses=len(g["meses"]))
+        del g["elementos"]
         g["pago"] = {a: round(v, 2) for a, v in g["pago"].items()}
         saida.setdefault(org, []).append(g)
     for lista in saida.values():
@@ -274,4 +302,4 @@ def cnpjs_relevantes_do_cache(cnpjs_siga, pasta, anos=None):
             continue
         if anos is None or str(d.get("ano")) in anos:
             linhas += d["linhas"]
-    return fornecedores_relevantes(linhas, cnpjs_siga, ELEMENTOS_CONTRATACAO) if linhas else set()
+    return fornecedores_relevantes(linhas, cnpjs_siga) if linhas else set()

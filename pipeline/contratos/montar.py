@@ -192,7 +192,7 @@ def sigefes_item(g):
     a, b = [str(x) for x in ANOS_GASTO][:2]
     return {"cnpj": g["cnpj"], "forn": titulo(g["forn"]) if g["forn"].isupper() else g["forn"], "tipo": g["tipo"], "codigo": g["codigo"], "licitacao": g["licitacao"],
             "numeroLicitacao": g["numeroLicitacao"], "processo": AM.protocolo_edocs(g["processo"]) or g["processo"], "embasamento": g["embasamento"], "acao": g["acao"],
-            "objeto": g["objeto"], "subfuncao": g["subfuncao"], "ug": g["ug"], "pagoAnt": g["pago"].get(a, 0.0), "pagoAtu": g["pago"].get(b, 0.0), "meses": g["meses"],
+            "objeto": g["objeto"], "subfuncao": g["subfuncao"], "elemento": g["elementoNome"], "ug": g["ug"], "pagoAnt": g["pago"].get(a, 0.0), "pagoAtu": g["pago"].get(b, 0.0), "meses": g["meses"],
             "desde": g["desde"], "ate": g["ate"]}
 
 
@@ -734,9 +734,10 @@ def main():
                     x_[kk_] = x_.get(kk_, 0.0) + vv_
             meta_desp.update(d_.get("meta") or {})
     if linhas_desp:
-        sigefes_org = AM.contratos_do_sigefes(linhas_desp, nomes_desp, subs_desp, meta_desp, ug2siga, sem_doc_pares, [str(a) for a in ANOS_GASTO], ELEMENTOS_CONTRATACAO)
-        n_ct_ = sum(1 for v in sigefes_org.values() for g in v if g["tipo"] == "contrato")
-        print(f"pagamentos só no SIGEFES (sem documento do SIGA no órgão): {n_ct_} contratos com código e {sum(len(v) for v in sigefes_org.values()) - n_ct_} fornecedores recorrentes sem contrato, em {len(sigefes_org)} órgãos, R$ {sum(g['total'] for v in sigefes_org.values() for g in v):,.0f} pagos", flush=True)
+        pares_com_doc_ = {(c["org"], c["cnpj"]) for c in recs}
+        sigefes_org = AM.contratos_do_sigefes(linhas_desp, nomes_desp, subs_desp, meta_desp, ug2siga, pares_com_doc_, [str(a) for a in ANOS_GASTO])
+        por_tipo_ = collections.Counter(g["tipo"] for v in sigefes_org.values() for g in v)
+        print(f"pagamentos do SIGEFES sem documento do SIGA no órgão: {dict(por_tipo_)} em {len(sigefes_org)} órgãos, R$ {sum(g['total'] for v in sigefes_org.values() for g in v):,.0f} pagos", flush=True)
     else:
         print("contratos só no SIGEFES: despesas.py não gerado; bloco omitido", flush=True)
     frac = {}
@@ -951,8 +952,8 @@ def main():
                                          "vigentes": sum(1 for c in docs_ if c["vigente"]), "encerrados": sum(1 for c in docs_ if c["inst"] == "contrato" and not c["vigente"]),
                                          "valorVigente": round(sum(c["vfin"] for c in docs_ if c["vigente"]), 2)}
         sigefes_bloco = [sigefes_item(g) for g in sigefes_org.get(org, [])[:120]]
-        resumo["sigefesContratos"] = sum(1 for g in sigefes_org.get(org, []) if g["tipo"] == "contrato")
-        resumo["sigefesRecorrentes"] = sum(1 for g in sigefes_org.get(org, []) if g["tipo"] == "recorrente")
+        for tipo_ in ("contrato", "recorrente", "repasse", "outro"):
+            resumo["sigefes" + tipo_.capitalize()] = sum(1 for g in sigefes_org.get(org, []) if g["tipo"] == tipo_)
         resumo["sigefesPago"] = round(sum(g["total"] for g in sigefes_org.get(org, [])), 2)
         json.dump({"org": resumo, "campos": CAMPOS, "contratos": contratos, "pncp": pncp_bloco, "sigefes": sigefes_bloco, "resumoAno": resumo_ano, "fornecedores": forns[:120],
                    "categorias": [[k, round(v, 2)] for k, v in org_cat[org].most_common()],
