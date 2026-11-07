@@ -1,6 +1,6 @@
 {
- "ref": "2026-11-06",
- "gerado_em": "2026-11-06T23:17:25Z",
+ "ref": "2026-11-07",
+ "gerado_em": "2026-11-07T00:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,8 +25,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 22,
-   "aceitos": 9,
+   "lidos": 23,
+   "aceitos": 8,
    "possiveis": 4
   },
   {
@@ -34,7 +34,7 @@
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 7,
+   "aceitos": 6,
    "possiveis": 1
   },
   {
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 12,
+   "lidos": 11,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -57,8 +57,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 3,
+   "lidos": 2,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -73,8 +73,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 3,
+   "lidos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 64,
+   "lidos": 63,
    "aceitos": 3,
    "possiveis": 5
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 61,
+   "lidos": 64,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -139,14 +139,14 @@
    "ok": true,
    "lidos": 26,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 2,
+   "lidos": 25,
+   "aceitos": 1,
    "possiveis": 2
   },
   {
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 5,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -238,20 +238,20 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 331,
+  "sem_contexto": 335,
   "oficial_sem_tema": 4,
   "oficial_divulgacao": 1,
   "possivel": 17,
-  "outro_estado": 19,
+  "veiculo_outra_praca": 9,
   "veiculo_excluido": 43,
   "sem_contexto_com_tema": 4,
-  "exterior_sem_ancora": 4,
+  "exterior_sem_ancora": 3,
   "excluir": 13,
+  "outro_estado": 18,
   "caixa_alta": 1,
-  "veiculo_outra_praca": 6,
-  "sigla_sem_ancora": 4
+  "sigla_sem_ancora": 3
  },
  "itens": [
   {
@@ -443,6 +443,10 @@
     {
      "veiculo": "Aqui Notícias",
      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMEpRRE1sM0trakVfckFMbUpqTF9YREhBd0pveUttNmVSVW5HMm0yVUhvYmZLT0FQcC1HSE9sbFdFMlVPYUxLUnJMX1NlM2NiTjdzVTA4SDFyakVtYUpRREp3a0ozc202Z3lIMXI4R3VPQXdobUkwTDcyX2NrcnBySEdxa0dqTEFPVE1tQTk3WEducU5VbHFENlBVSEJQUzBPN0JBdmRzZkp3Q2F5aTVHZTE4bGRIeVdLeUI1M3BqcHJWTUdrQnpLaA?oc=5"
+    },
+    {
+     "veiculo": "Jornal do ES",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNTXJwanU2NkZxSGFNT0JlMHRjLTNLRFljSERiX2xsSmQ0a0h0WnphUFU5UjNqdGFRNDVBSGxSYjlXemVCejBrdjgzV3RxWWY5ZHliczdobF9VaVQ2bUg3cGdIb0xXUUpqSVpmV1V5aG1CM2ZwVVJkSUdqTFB4YzBJR3ozTDJGMzJjWTJJaWUyQ05fdXNtQXdOaDUxVDlPbWZhN1gwT2I4SUZiNHpSTWV4N1Vibm5LWl8zcjRwSGhtcw?oc=5"
     }
    ],
    "possivel": false,
