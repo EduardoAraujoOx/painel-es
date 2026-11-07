@@ -167,9 +167,9 @@ class ContratosDoSigefes(unittest.TestCase):
     SUBS = {"100104|11145893000341|21003003": {"SERVIÇOS DE PUBLICIDADE INSTITUCIONAL|COMUNICAÇÃO SOCIAL": 3000.0, "OUTRO|X": 10.0},
             "100104|22222222000122|": {"LIMPEZA E CONSERVAÇÃO|ADMINISTRAÇÃO": 900.0}}
     META = {"100104|11145893000341|21003003": ["001/2021", "2021-ABCDE", "Lei nº 8.666/1993", "DIVULGAÇÃO INSTITUCIONAL"]}
-    LINHAS = [["11145893000341", "100104", "39", "21003003", "CONCORRÊNCIA", "2026-03", 0.0, 0.0, 1683.67],
-              ["11145893000341", "100104", "39", "21003003", "CONCORRÊNCIA", "2026-06", 0.0, 0.0, 1000.0],
-              ["11145893000341", "100104", "39", "21003003", "CONCORRÊNCIA", "2025-12", 0.0, 0.0, 500.0],
+    LINHAS = [["11145893000341", "100104", "39", "21003003", "CONCORRÊNCIA", "2026-03", 0.0, 0.0, 168367.0],
+              ["11145893000341", "100104", "39", "21003003", "CONCORRÊNCIA", "2026-06", 0.0, 0.0, 100000.0],
+              ["11145893000341", "100104", "39", "21003003", "CONCORRÊNCIA", "2025-12", 0.0, 0.0, 50000.0],
               ["11145893000341", "100104", "13", "21003003", "CONCORRÊNCIA", "2026-03", 0.0, 0.0, 9999.0],      # elemento fora do rastreamento (obrigações patronais)
               ["22222222000122", "100104", "39", "", "PREGÃO", "2026-01", 0.0, 0.0, 40000.0],                     # recorrente sem código: 3 meses e R$ 120 mil
               ["22222222000122", "100104", "39", "00000000", "PREGÃO", "2026-02", 0.0, 0.0, 40000.0],
@@ -177,7 +177,7 @@ class ContratosDoSigefes(unittest.TestCase):
               ["33333333000133", "100104", "39", "", "DISPENSA", "2026-03", 0.0, 0.0, 500000.0],                # contratação em um mês só: não é recorrente
               ["44444444000144", "100104", "43", "", "NÃO APLICÁVEL", "2026-03", 0.0, 0.0, 300000.0],           # repasse de uma vez só, acima do mínimo
               ["44444444000144", "100104", "43", "", "NÃO APLICÁVEL", "2026-04", 0.0, 0.0, 10.0],
-              ["99999999000199", "100104", "39", "55", "PREGÃO", "2026-03", 0.0, 0.0, 800.0]]                   # fornecedor com documento no SIGA
+              ["99999999000199", "100104", "39", "55", "PREGÃO", "2026-03", 0.0, 0.0, 800000.0]]                # fornecedor com documento no SIGA
 
     def roda(self, **kw):
         args = dict(linhas=self.LINHAS, nomes=self.NOMES, subs=self.SUBS, meta=self.META, ug_org={"100104": 175},
@@ -189,8 +189,8 @@ class ContratosDoSigefes(unittest.TestCase):
         r = self.roda()[175]
         g = [x for x in r if x["tipo"] == "contrato"][0]
         self.assertEqual((g["codigo"], g["licitacao"], g["objeto"], g["subfuncao"]), ("21003003", "CONCORRÊNCIA", "SERVIÇOS DE PUBLICIDADE INSTITUCIONAL", "COMUNICAÇÃO SOCIAL"))
-        self.assertEqual(g["pago"], {"2025": 500.0, "2026": 2683.67})
-        self.assertEqual((g["desde"], g["ate"], g["total"], g["meses"]), ("2025-12", "2026-06", 3183.67, 3))
+        self.assertEqual(g["pago"], {"2025": 50000.0, "2026": 268367.0})
+        self.assertEqual((g["desde"], g["ate"], g["total"], g["meses"]), ("2025-12", "2026-06", 318367.0, 3))
         self.assertEqual((g["numeroLicitacao"], g["processo"], g["embasamento"]), ("001/2021", "2021-ABCDE", "Lei nº 8.666/1993"))
         self.assertEqual((g["elemento"], g["elementoNome"]), ("39", "OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA"))
 
@@ -205,7 +205,7 @@ class ContratosDoSigefes(unittest.TestCase):
         r = self.roda()[175]
         rep = [x for x in r if x["tipo"] == "repasse"]
         self.assertEqual([(x["cnpj"], x["total"], x["elemento"], x["elementoNome"]) for x in rep], [("44444444000144", 300010.0, "43", "SUBVENÇÕES SOCIAIS")])
-        self.assertEqual([x["tipo"] for x in r], ["repasse", "recorrente", "contrato"])      # ordenado por valor pago
+        self.assertEqual([x["tipo"] for x in r], ["contrato", "repasse", "recorrente"])      # ordenado por valor pago
 
     def test_pares_com_documento_e_ug_desconhecida_ficam_de_fora(self):
         todos = {(175, c) for c in ("11145893000341", "22222222000122", "33333333000133", "44444444000144", "99999999000199")}
@@ -233,6 +233,30 @@ class FornecedoresRelevantes(unittest.TestCase):
 
     def test_classe_do_elemento(self):
         self.assertEqual([A.classe_do_elemento(x) for x in ("39", "43", "85", "91", "47", "")], ["contratacao", "repasse", "repasse", "outro", None, None])
+
+
+class NaturezaJuridica(unittest.TestCase):
+    def test_classes(self):
+        self.assertEqual(A.classe_juridica("1015"), "publico")
+        self.assertEqual(A.classe_juridica("1031"), "publico")             # município
+        self.assertEqual(A.classe_juridica("2011"), "estatal")             # empresa pública
+        self.assertEqual(A.classe_juridica("2038"), "estatal")             # sociedade de economia mista
+        self.assertEqual(A.classe_juridica("2062"), "empresa privada")
+        self.assertEqual(A.classe_juridica("3999"), "sem fins lucrativos")
+        self.assertEqual(A.classe_juridica("5002"), "outro")
+        self.assertEqual(A.classe_juridica("2054", "Sociedade de Economia Mista"), "estatal")
+
+    def test_ente_publico_sai_da_lista_e_vai_para_o_resumo(self):
+        linhas = [["P1", "100104", "42", "", "N", "2026-03", 0, 0, 900000.0], ["P1", "100104", "47", "", "N", "2026-03", 0, 0, 100000.0],
+                  ["E1", "100104", "71", "", "N", "2026-03", 0, 0, 500000.0], ["S1", "100104", "43", "", "N", "2026-03", 0, 0, 300000.0]]
+        classes = {"P1": "publico", "E1": "estatal", "S1": "sem fins lucrativos"}
+        lista = A.contratos_do_sigefes(linhas, {"S1": "SANTA CASA"}, {}, {}, {"100104": 175}, set(), ("2026",), classe_cnpj=classes)
+        self.assertEqual([(g["cnpj"], g["tipo"]) for g in lista[175]], [("S1", "repasse")])
+        r = A.pagamentos_a_entes_publicos(linhas, {"P1": "MUNICÍPIO X"}, {"100104": 175}, set(), ("2026",), classes)[175]
+        self.assertEqual((r["total"], r["cnpjs"]), (1500000.0, 2))
+        self.assertEqual(r["porGrupo"], {"transferências": 900000.0, "dívida": 500000.0, "tributos e encargos": 100000.0})
+        self.assertEqual(r["porClasse"], {"publico": 1000000.0, "estatal": 500000.0})
+        self.assertEqual(r["maiores"][0], {"cnpj": "P1", "nome": "MUNICÍPIO X", "classe": "publico", "pago": 1000000.0})
 
 
 if __name__ == "__main__":

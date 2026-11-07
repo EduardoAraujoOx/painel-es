@@ -342,7 +342,7 @@
     graficoBarras(cSerie, { meses: det.serie.anos.map(String), rotulo: (m) => m, rotuloLongo: (m) => m, eixo: brlCompacto, fmt: brlCompacto,
       series: [{ nome: 'Contratado', cor: 'var(--serie-1)', barra: true, vals: det.serie.contratado }, { nome: 'Empenhado', cor: 'var(--serie-2)', barra: true, vals: det.serie.empenhado }] });
 
-    c.replaceChildren(...[kp, perfil, linhaPortal, aviso, el('div', { class: 'duas-colunas' }, cCat, cMod), cEss, cForn, cartaoPareto(paretoItensOrg(det.fornecedores), 'Regra de Pareto: poucos fornecedores, quase todo o valor', org.id), cSerie, cartaoPncp(det.pncp, org), cartaoSigefes(det.sigefes, org), cartaoContratos(todos, org)].filter(Boolean));
+    c.replaceChildren(...[kp, perfil, linhaPortal, aviso, el('div', { class: 'duas-colunas' }, cCat, cMod), cEss, cForn, cartaoPareto(paretoItensOrg(det.fornecedores), 'Regra de Pareto: poucos fornecedores, quase todo o valor', org.id), cSerie, cartaoPncp(det.pncp, org), cartaoSigefes(det.sigefes, org), resumoEntesPublicos(det.entesPublicos), cartaoContratos(todos, org)].filter(Boolean));
   }
 
   // Contratos vigentes publicados no PNCP que não constam do SIGA do órgão (ver "Como ler" na descrição do cartão).
@@ -403,12 +403,20 @@
     const nTipo = (t) => lista.filter((x) => x.tipo === t).length;
     return el('div', { class: 'cartao', id: 'so-sigefes' }, el('div', { class: 'cartao-topo' }, el('div', {},
       el('h2', {}, `Pagamentos do SIGEFES sem contrato no SIGA (${nInt.format(lista.length)})`),
-      el('p', {}, `Seguir o dinheiro: fornecedores que receberam pagamentos de ${aAnt}–${aAtu} e dos quais o SIGA não tem nenhum documento neste órgão. ${nInt.format(nTipo('contrato'))} citam um código de contrato do SIGEFES (o sistema financeiro do Estado), ${nInt.format(nTipo('recorrente'))} são contratações recorrentes (ao menos 3 meses e R$ 100 mil) sem contrato registrado, ${nInt.format(nTipo('repasse'))} são repasses a entidades (contrato de gestão, subvenção, auxílio ou contribuição) e ${nInt.format(nTipo('outro'))} são pagamentos eventuais (sentença, exercício anterior, indenização ou imóvel), todos a partir de R$ 100 mil. Somam ${brlCompacto(total)} pagos. Pode ser contratação conduzida fora do SIGA (como as agências de publicidade da Secom, que não estão no SIGA, no PNCP nem no Portal da Transparência), parceria com instrumento próprio, contrato registrado em outro órgão ou em nome de outro CNPJ; vale confirmar com o órgão. A ficha do fornecedor traz o cadastro da Receita, os sócios e as demais bases. O código é o do SIGEFES, não o número do instrumento; o objeto é o subelemento de despesa mais pago.`))),
+      el('p', {}, `Seguir o dinheiro: empresas privadas e entidades sem fins lucrativos (pela natureza jurídica na Receita) que receberam pagamentos de ${aAnt}–${aAtu} e das quais o SIGA não tem nenhum documento neste órgão; entes públicos e estatais ficam fora, porque o pagamento a eles é transferência, tributo ou dívida. ${nInt.format(nTipo('contrato'))} citam um código de contrato do SIGEFES (o sistema financeiro do Estado), ${nInt.format(nTipo('recorrente'))} são contratações recorrentes (ao menos 3 meses e R$ 100 mil) sem contrato registrado, ${nInt.format(nTipo('repasse'))} são repasses a entidades (contrato de gestão, subvenção, auxílio ou contribuição) e ${nInt.format(nTipo('outro'))} são pagamentos eventuais (sentença, exercício anterior, indenização ou imóvel), todos a partir de R$ 100 mil. Somam ${brlCompacto(total)} pagos. Pode ser contratação conduzida fora do SIGA (como as agências de publicidade da Secom, que não estão no SIGA, no PNCP nem no Portal da Transparência), parceria com instrumento próprio, contrato registrado em outro órgão ou em nome de outro CNPJ; vale confirmar com o órgão. A ficha do fornecedor traz o cadastro da Receita, os sócios e as demais bases. O código é o do SIGEFES, não o número do instrumento; o objeto é o subelemento de despesa mais pago.`))),
     el('div', { class: 'rolagem' }, el('table', {},
       el('thead', {}, el('tr', {}, ['Fornecedor', 'Objeto do gasto (SIGEFES)', 'Tipo', `Pago ${aAnt}`, `Pago ${aAtu}`, 'Pagamentos', 'Revisão'].map((t, n) => el('th', { class: n === 3 || n === 4 ? 'num' : '' }, t)))),
       el('tbody', {}, linhas))),
     lista.length > 10 ? el('div', { class: 'rodape-tabela' }, el('button', { type: 'button', class: 'botao',
       onclick: () => { estado.verSigefes = !estado.verSigefes; render(true); } }, estado.verSigefes ? 'Mostrar menos' : `Mostrar os ${nInt.format(lista.length)}`)) : null);
+  }
+
+  // Pagamentos a entes públicos e estatais sem documento no SIGA: não são contratos (transferências, tributos, dívida, sentenças); ficam só como resumo.
+  function resumoEntesPublicos(r) {
+    if (!r || !r.total) return null;
+    const grupos = Object.entries(r.porGrupo).map(([g, v]) => `${g}: ${brlCompacto(v)}`).join('; ');
+    const maiores = (r.maiores || []).slice(0, 3).map((x) => `${nomeProprio(x.nome)} (${brlCompacto(x.pago)})`).join('; ');
+    return el('p', { class: 'perfil-linha' }, `Fora da lista, por não serem contratos: ${brlCompacto(r.total)} pagos em ${dados.anosGasto.join('–')} a ${nInt.format(r.cnpjs)} entes públicos e estatais (outros órgãos, municípios, fundações públicas, INSS, Receita, bancos e empresas públicas) sem documento no SIGA. Por natureza: ${grupos}. Maiores: ${maiores}.`);
   }
 
   // Ficha do fornecedor: pagamentos do SIGEFES sem documento do SIGA, com o aviso do que falta (instrumento, vigência e valor contratado).

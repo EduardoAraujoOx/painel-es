@@ -213,6 +213,30 @@ def classe_do_elemento(el):
     return "contratacao" if el in ELEMENTOS_CONTRATACAO else "repasse" if el in ELEMENTOS_REPASSE else "outro" if el in ELEMENTOS_OUTROS else None
 
 
+# Natureza jurídica do favorecido (tabela de naturezas da Receita): só empresas privadas e entidades sem fins lucrativos são tratadas como contratadas passíveis de
+# revisão. Pagamento a ente público (órgão, autarquia, fundação pública, município, outro poder) ou a estatal é transferência, tributo, dívida, sentença ou
+# reembolso, e não contrato: fica de fora da lista e aparece só como resumo.
+CLASSES_FORA_DA_LISTA = ("publico", "estatal")
+GRUPO_DO_ELEMENTO = {"41": "transferências", "42": "transferências", "43": "transferências", "45": "transferências", "85": "transferências",
+                     "47": "tributos e encargos", "13": "tributos e encargos", "04": "tributos e encargos",
+                     "71": "dívida", "21": "dívida", "91": "sentenças, exercícios anteriores e indenizações", "92": "sentenças, exercícios anteriores e indenizações",
+                     "93": "sentenças, exercícios anteriores e indenizações"}      # os demais (compras, serviços, obras, imóveis): "compras e serviços"
+
+
+def classe_juridica(codigo, descricao=""):
+    """'publico', 'estatal', 'sem fins lucrativos', 'empresa privada' ou 'outro' pelo código de natureza jurídica da Receita (e a descrição, quando há)."""
+    codigo, descricao = (codigo or "").strip(), (descricao or "").lower()
+    if codigo in ("2011", "2038") or "economia mista" in descricao or "empresa pública" in descricao:
+        return "estatal"
+    if codigo.startswith("1"):
+        return "publico"
+    if codigo.startswith("3"):
+        return "sem fins lucrativos"
+    if codigo.startswith("2"):
+        return "empresa privada"
+    return "outro"
+
+
 VALOR_RELEVANTE_SIGEFES = 100_000.0       # pago nos dois últimos exercícios, em elementos de contratação
 MESES_RECORRENTE = 3                      # meses distintos com pagamento ao mesmo fornecedor pela mesma unidade gestora
 
@@ -236,18 +260,20 @@ def fornecedores_relevantes(linhas, cnpjs_siga, elementos=None, minimo_valor=VAL
     return {c for c, v in pago.items() if v >= minimo_valor and (len(meses[c]) >= minimo_meses or c in motivo)}
 
 
-def contratos_do_sigefes(linhas, nomes, subs, meta, ug_org, pares_com_doc, anos, elementos=None, minimo_valor=VALOR_RELEVANTE_SIGEFES, minimo_meses=MESES_RECORRENTE):
+def contratos_do_sigefes(linhas, nomes, subs, meta, ug_org, pares_com_doc, anos, elementos=None, minimo_valor=VALOR_RELEVANTE_SIGEFES, minimo_meses=MESES_RECORRENTE, classe_cnpj=None):
     """Agrupa os pagamentos do SIGEFES a fornecedores que não têm documento algum do SIGA no órgão pagador, por órgão, fornecedor, unidade gestora,
     código de contrato do SIGEFES e natureza do pagamento.
 
-    Tipos: 'contrato' (despesa de contratação que cita código de contrato do SIGEFES); 'recorrente' (contratação sem código, mas com ao menos
-    `minimo_valor` pago em `minimo_meses` meses distintos: despesa continuada, passível de revisão contratual embora sem instrumento no SIGA);
+    Tipos (todos com ao menos `minimo_valor` pago): 'contrato' (despesa de contratação que cita código de contrato do SIGEFES); 'recorrente' (contratação sem código, mas paga em
+    `minimo_meses` meses distintos: despesa continuada, passível de revisão contratual embora sem instrumento no SIGA);
     'repasse' (contribuição, auxílio, subvenção ou contrato de gestão, com ao menos `minimo_valor`); 'outro' (sentença, exercício anterior, indenização
     ou imóvel, com ao menos `minimo_valor`).
     nomes: nomes dos fornecedores e dos elementos ('EL<código>'); subs: {'ug|cnpj|contrato': {'subelemento|subfunção': pago}}; meta: {'ug|cnpj|contrato':
     [licitação, processo, embasamento, ação]}; ug_org: unidade gestora -> órgão do SIGA; pares_com_doc: {(órgão, cnpj)} que têm documento no SIGA;
-    anos: anos de interesse (texto). Devolve {órgão: [grupo]} com os de maior pago primeiro."""
+    anos: anos de interesse (texto); classe_cnpj: {cnpj: natureza} de classe_juridica (favorecidos de classes_fora_da_lista não entram; sem a informação, entram).
+    Devolve {órgão: [grupo]} com os de maior pago primeiro."""
     elementos = ELEMENTOS_RASTREAVEIS if elementos is None else elementos
+    classe_cnpj = classe_cnpj or {}
     grupos = {}
     for cnpj, ug, el, ct, lic, mes, _emp, _liq, pago in linhas:
         ct = (ct or "").strip()
@@ -256,6 +282,8 @@ def contratos_do_sigefes(linhas, nomes, subs, meta, ug_org, pares_com_doc, anos,
         org = ug_org.get(ug)
         classe = classe_do_elemento(el)
         if org is None or el not in elementos or classe is None or (org, cnpj) in pares_com_doc or mes[:4] not in anos or pago <= 0:
+            continue
+        if classe_cnpj.get(cnpj) in CLASSES_FORA_DA_LISTA:
             continue
         g = grupos.setdefault((org, cnpj, ct, ug, classe), {"cnpj": cnpj, "forn": nomes.get(cnpj, cnpj), "codigo": ct, "classe": classe, "licitacao": lic or "", "ug": ug,
                                                             "pago": {a: 0.0 for a in anos}, "meses": set(), "desde": mes, "ate": mes, "elementos": {}})
@@ -268,7 +296,7 @@ def contratos_do_sigefes(linhas, nomes, subs, meta, ug_org, pares_com_doc, anos,
         total = sum(g["pago"].values())
         if classe == "contratacao":
             g["tipo"] = "contrato" if ct else "recorrente"
-            if not ct and (total < minimo_valor or len(g["meses"]) < minimo_meses):
+            if total < minimo_valor or (not ct and len(g["meses"]) < minimo_meses):
                 continue
         else:
             g["tipo"] = classe
@@ -286,6 +314,32 @@ def contratos_do_sigefes(linhas, nomes, subs, meta, ug_org, pares_com_doc, anos,
         saida.setdefault(org, []).append(g)
     for lista in saida.values():
         lista.sort(key=lambda g: -g["total"])
+    return saida
+
+
+def pagamentos_a_entes_publicos(linhas, nomes, ug_org, pares_com_doc, anos, classe_cnpj, maiores=5):
+    """Resumo, por órgão pagador, do que o SIGEFES pagou a entes públicos e estatais sem documento do SIGA: transferências a outros órgãos, municípios e
+    fundações públicas, tributos e encargos, dívida, sentenças e indenizações. Não são contratos; o resumo existe para mostrar para onde vai o dinheiro.
+
+    Devolve {órgão: {'total', 'cnpjs', 'porGrupo': {grupo: pago}, 'porClasse': {classe: pago}, 'maiores': [{'cnpj', 'nome', 'classe', 'pago'}]}}."""
+    por = {}
+    for cnpj, ug, el, ct, lic, mes, _e, _l, pago in linhas:
+        org = ug_org.get(ug)
+        classe = classe_cnpj.get(cnpj)
+        if org is None or classe not in CLASSES_FORA_DA_LISTA or (org, cnpj) in pares_com_doc or mes[:4] not in anos or pago <= 0:
+            continue
+        x = por.setdefault(org, {"total": 0.0, "porGrupo": {}, "porClasse": {}, "cnpj": {}})
+        grupo = GRUPO_DO_ELEMENTO.get(el, "compras e serviços")
+        x["total"] += pago
+        x["porGrupo"][grupo] = x["porGrupo"].get(grupo, 0.0) + pago
+        x["porClasse"][classe] = x["porClasse"].get(classe, 0.0) + pago
+        x["cnpj"][cnpj] = x["cnpj"].get(cnpj, 0.0) + pago
+    saida = {}
+    for org, x in por.items():
+        top = sorted(x["cnpj"].items(), key=lambda kv: -kv[1])[:maiores]
+        saida[org] = {"total": round(x["total"], 2), "cnpjs": len(x["cnpj"]), "porGrupo": {k: round(v, 2) for k, v in sorted(x["porGrupo"].items(), key=lambda kv: -kv[1])},
+                      "porClasse": {k: round(v, 2) for k, v in x["porClasse"].items()},
+                      "maiores": [{"cnpj": c, "nome": nomes.get(c, c), "classe": classe_cnpj[c], "pago": round(v, 2)} for c, v in top]}
     return saida
 
 
