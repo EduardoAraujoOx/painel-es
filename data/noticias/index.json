@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-07",
- "gerado_em": "2026-11-07T00:17:13Z",
+ "gerado_em": "2026-11-07T01:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 63,
+   "lidos": 59,
    "aceitos": 3,
    "possiveis": 5
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 64,
+   "lidos": 69,
    "aceitos": 3,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -139,7 +139,7 @@
    "ok": true,
    "lidos": 26,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -153,8 +153,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
-   "aceitos": 5,
+   "lidos": 31,
+   "aceitos": 6,
    "possiveis": 1
   },
   {
@@ -171,7 +171,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 3,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Folha Vitória",
@@ -238,22 +238,36 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 335,
+  "sem_contexto": 337,
   "oficial_sem_tema": 4,
   "oficial_divulgacao": 1,
-  "possivel": 17,
-  "veiculo_outra_praca": 9,
+  "possivel": 19,
   "veiculo_excluido": 43,
-  "sem_contexto_com_tema": 4,
+  "sem_contexto_com_tema": 3,
   "exterior_sem_ancora": 3,
-  "excluir": 13,
-  "outro_estado": 18,
+  "excluir": 12,
+  "outro_estado": 19,
   "caixa_alta": 1,
-  "sigla_sem_ancora": 3
+  "veiculo_outra_praca": 7,
+  "sigla_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "0d1eca019b4a",
+   "titulo": "Após impeachment, Ministério Público do Paraguai ordena detenção imediata de ex-presidente",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/mundo/apos-impeachment-ministerio-publico-do-paraguai-ordena-detencao-imediata-de-ex-presidente-1126",
+   "data": "2026-11-07T00:26:36Z",
+   "coletado_em": "2026-11-07T01:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": [
+    "controle"
+   ]
+  },
   {
    "id": "8d43d18b104d",
    "titulo": "Pazolini quer nomes da iniciativa privada na equipe do governo do Estado",
@@ -269,6 +283,18 @@
    ]
   },
   {
+   "id": "d770b28c2cd4",
+   "titulo": "Concurso IDAF ES: 14 vagas e salário de até R$ 9,2 mil",
+   "veiculo": "diariodamidia.com.br",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQb21HaklEQWdjX1VxWUFUV0c4ZGNKc3N1UF8wU0I5anppd3Y4MWl3YkdnaUk4Y0ZpVWtfRTd4Y0Zhb29sQXUxLVhNOWFvQkxySFNxTFplWjRkd1k3WExjc0x1cmpJSmg5M3BkTmwzNFNuZWluM09ZZ1lZRVlITDNlaG5lY2xhOGM?oc=5",
+   "data": "2026-11-06T22:24:44Z",
+   "coletado_em": "2026-11-07T01:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": []
+  },
+  {
    "id": "a36d952924b6",
    "titulo": "ES fixa regras e trava caixa para pagamento de obras e contratos no fim de 2026",
    "veiculo": "A Gazeta",
@@ -279,6 +305,21 @@
    "possivel": false,
    "triagem": 5,
    "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "4ec0a3ce927f",
+   "titulo": "MPRR recomenda à SEFAZ suspensão de procedimentos fiscais e requisita investigação sobre possíveis irregularidades na concessão de créditos de ICMS",
+   "veiculo": "diariorr.com.br",
+   "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQNGdGeU5xY2h3QTk2NmFfdDRLOFJ1SW02WV8ycy1IR0xBcTdBdGg3WnRyMmxEUkpudnhWLXpxYUdhSkxDbnRqNlY5bjRjUkptaGVHenMyWnpIcGhNb0xyMW1RYmdnT0dlZHhheFNpcTFSUEx0NDdZWThmQVZtTUlzTjBzQm5jd3BHczdkV3gxb0NzcXl6Q19Cc0pJMHJhTXF1U1l4eUhlN3FhOTlmb1FocXZnVklXeWg4YjAxOUhJQTctMUE3ZTJJaEM5QnplbnVKWTJKbU11RGNyM3pjUTI5Uk1pbFB4WVowbHY0c1VfMmFRV1dBbDB5b2psT1VDZlAxZGZMRHAycw?oc=5",
+   "data": "2026-11-06T21:22:53Z",
+   "coletado_em": "2026-11-07T01:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": [
+    "financas",
     "contratos"
    ]
   },
@@ -905,6 +946,20 @@
    "possivel": true,
    "triagem": 5,
    "temas": []
+  },
+  {
+   "id": "848258ee86ed",
+   "titulo": "Ministro diz que novos impostos não trazem aumento de carga tributária",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPX1BlenpPNURFU3hXbjVFdVZRX0ZpZ1lrcU03WUdtdFQ2M29jbFQ5anMwdzQ0SmlMRUVhQnpiZUQyal9pUFZUS3RoaC11NVByWUNRdFpsY0pLNFdiUWFtUmRVNzBVNlNxTFB2bk9WSG52QkRYUTdEZGFhMm5PM3NEd2lzdE5mOUtkX0NGY1dkd1FibHVxQ0JXbzFFMFE3bVpITEFZSjg5MXFMcU9lN1V0dU5kSUlwQdIBvgFBVV95cUxPbndVRzc4R0p3WHBmSXJwSEYyUGRVYm5zV1REd2ZSZHBDYTc0UzFzZ2QtRkt2bDdRblR0NWFjU1lMTDRtTkxhdzBWdHY4ZmN4R0tOa3Rhb0p3WFpIV25Rd2EzVThONUFqSGk5Y1RIQk15YnFzQlNUcWxTWjAtN1h0WGJ5UHJxMEIyTEZCeE83SzZZS0M1RVBDMEppbm9oSndhbGdRX1pvN2ZlQWg3N1c5M1ppMGg1QkxFeUVTZE9R?oc=5",
+   "data": "2026-11-05T20:20:33Z",
+   "coletado_em": "2026-11-07T01:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": [
+    "financas"
+   ]
   },
   {
    "id": "6c4892931e59",
