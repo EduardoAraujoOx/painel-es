@@ -373,6 +373,14 @@
   // Pagamentos do SIGEFES a fornecedores sem documento algum do SIGA no órgão: contratos que só o sistema financeiro conhece (com código de contrato, como a
   // publicidade da Secom) e despesa recorrente sem contrato registrado. São passíveis de revisão contratual como os demais: o botão leva à lista de revisão.
   const TIPO_SIGEFES = { contrato: 'Contrato no SIGEFES', recorrente: 'Pagamento recorrente, sem contrato', repasse: 'Repasse a entidade', outro: 'Pagamento eventual' };
+  // Indício de que o pagamento decorre de uma relação contratual revisável (periodicidade, licitação ou procedimento, Diário Oficial, PNCP, e-Docs), com o que falta.
+  function celulaIndicio(x) {
+    const i = x.indicio;
+    if (!i) return el('td', {}, '—');
+    const detalhe = [...i.motivos.map((m) => 'Indício: ' + m), ...i.duvidas.map((d) => 'Dúvida: ' + d)].join('\n');
+    return el('td', { title: detalhe }, el('strong', {}, i.nivel.charAt(0).toUpperCase() + i.nivel.slice(1)), el('small', {}, i.periodicidade),
+      i.duvidas.length ? el('small', {}, i.duvidas[0]) : null);
+  }
   function itemRevisaoSigefes(org, x) {
     const pagoTot = x.pagoAnt + x.pagoAtu;
     const meses = Math.max(1, x.meses || 1);
@@ -393,6 +401,7 @@
         el('td', { class: 'objeto' }, x.objeto ? nomeProprio(x.objeto) : nomeProprio(x.elemento || '—'), el('small', {}, [x.subfuncao && nomeProprio(x.subfuncao), x.licitacao && nomeProprio(x.licitacao), x.numeroLicitacao && 'licitação ' + x.numeroLicitacao].filter(Boolean).join(' · ')),
           x.processo && /^\d{4}-[0-9A-Z]{5}$/.test(x.processo) ? el('small', {}, 'Processo ', el('a', { href: URL_EDOCS + encodeURIComponent(x.processo), target: '_blank', rel: 'noopener noreferrer' }, x.processo)) : null),
         el('td', {}, TIPO_SIGEFES[x.tipo] || x.tipo, el('small', {}, x.codigo ? 'código ' + x.codigo : `${x.meses} meses com pagamento`)),
+        celulaIndicio(x),
         el('td', { class: 'num' }, x.pagoAnt > 0 ? brlCompacto(x.pagoAnt) : '—'),
         el('td', { class: 'num' }, x.pagoAtu > 0 ? brlCompacto(x.pagoAtu) : '—'),
         el('td', {}, `${x.desde} a ${x.ate}`),
@@ -403,9 +412,9 @@
     const nTipo = (t) => lista.filter((x) => x.tipo === t).length;
     return el('div', { class: 'cartao', id: 'so-sigefes' }, el('div', { class: 'cartao-topo' }, el('div', {},
       el('h2', {}, `Pagamentos do SIGEFES sem contrato no SIGA (${nInt.format(lista.length)})`),
-      el('p', {}, `Seguir o dinheiro: empresas privadas e entidades sem fins lucrativos (pela natureza jurídica na Receita) que receberam pagamentos de ${aAnt}–${aAtu} e das quais o SIGA não tem nenhum documento neste órgão; entes públicos e estatais ficam fora, porque o pagamento a eles é transferência, tributo ou dívida. ${nInt.format(nTipo('contrato'))} citam um código de contrato do SIGEFES (o sistema financeiro do Estado), ${nInt.format(nTipo('recorrente'))} são contratações recorrentes (ao menos 3 meses e R$ 100 mil) sem contrato registrado, ${nInt.format(nTipo('repasse'))} são repasses a entidades (contrato de gestão, subvenção, auxílio ou contribuição) e ${nInt.format(nTipo('outro'))} são pagamentos eventuais (sentença, exercício anterior, indenização ou imóvel), todos a partir de R$ 100 mil. Somam ${brlCompacto(total)} pagos. Pode ser contratação conduzida fora do SIGA (como as agências de publicidade da Secom, que não estão no SIGA, no PNCP nem no Portal da Transparência), parceria com instrumento próprio, contrato registrado em outro órgão ou em nome de outro CNPJ; vale confirmar com o órgão. A ficha do fornecedor traz o cadastro da Receita, os sócios e as demais bases. O código é o do SIGEFES, não o número do instrumento; o objeto é o subelemento de despesa mais pago.`))),
+      el('p', {}, `Seguir o dinheiro: empresas privadas e entidades sem fins lucrativos (pela natureza jurídica na Receita) que receberam pagamentos de ${aAnt}–${aAtu} e das quais o SIGA não tem nenhum documento neste órgão; entes públicos e estatais ficam fora, porque o pagamento a eles é transferência, tributo ou dívida. ${nInt.format(nTipo('contrato'))} citam um código de contrato do SIGEFES (o sistema financeiro do Estado), ${nInt.format(nTipo('recorrente'))} são contratações recorrentes (ao menos 3 meses e R$ 100 mil) sem contrato registrado, ${nInt.format(nTipo('repasse'))} são repasses a entidades (contrato de gestão, subvenção, auxílio ou contribuição) e ${nInt.format(nTipo('outro'))} são pagamentos eventuais (sentença, exercício anterior, indenização ou imóvel), todos a partir de R$ 100 mil. Somam ${brlCompacto(total)} pagos. Pode ser contratação conduzida fora do SIGA (como as agências de publicidade da Secom, que não estão no SIGA, no PNCP nem no Portal da Transparência), parceria com instrumento próprio, contrato registrado em outro órgão ou em nome de outro CNPJ; vale confirmar com o órgão. A ficha do fornecedor traz o cadastro da Receita, os sócios e as demais bases. O código é o do SIGEFES, não o número do instrumento; o objeto é o subelemento de despesa mais pago. A coluna Indício contratual combina a periodicidade dos pagamentos com licitação ou procedimento informado, atos do Diário Oficial e contratos do PNCP pelo CNPJ e processo no e-Docs; passe o cursor sobre a célula para ver os motivos e as dúvidas (repasse a entidade, por exemplo, tem convênio ou termo, não contrato de fornecimento).`))),
     el('div', { class: 'rolagem' }, el('table', {},
-      el('thead', {}, el('tr', {}, ['Fornecedor', 'Objeto do gasto (SIGEFES)', 'Tipo', `Pago ${aAnt}`, `Pago ${aAtu}`, 'Pagamentos', 'Revisão'].map((t, n) => el('th', { class: n === 3 || n === 4 ? 'num' : '' }, t)))),
+      el('thead', {}, el('tr', {}, ['Fornecedor', 'Objeto do gasto (SIGEFES)', 'Tipo', 'Indício contratual', `Pago ${aAnt}`, `Pago ${aAtu}`, 'Pagamentos', 'Revisão'].map((t, n) => el('th', { class: n === 4 || n === 5 ? 'num' : '' }, t)))),
       el('tbody', {}, linhas))),
     lista.length > 10 ? el('div', { class: 'rodape-tabela' }, el('button', { type: 'button', class: 'botao',
       onclick: () => { estado.verSigefes = !estado.verSigefes; render(true); } }, estado.verSigefes ? 'Mostrar menos' : `Mostrar os ${nInt.format(lista.length)}`)) : null);
@@ -429,10 +438,11 @@
       : 'O SIGA não tem documento deste fornecedor em alguns dos órgãos que o pagam; os pagamentos abaixo vêm do SIGEFES.';
     return el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Pagamentos no SIGEFES sem registro no SIGA'), el('p', {}, aviso))),
       lista.length ? el('div', { class: 'rolagem' }, el('table', {},
-        el('thead', {}, el('tr', {}, ['Órgão', 'Objeto do gasto', 'Tipo', `Pago ${aAnt}`, `Pago ${aAtu}`, 'Pagamentos'].map((t, n) => el('th', { class: n === 3 || n === 4 ? 'num' : '' }, t)))),
+        el('thead', {}, el('tr', {}, ['Órgão', 'Objeto do gasto', 'Tipo', 'Indício contratual', `Pago ${aAnt}`, `Pago ${aAtu}`, 'Pagamentos'].map((t, n) => el('th', { class: n === 4 || n === 5 ? 'num' : '' }, t)))),
         el('tbody', {}, lista.map((x) => el('tr', {},
           el('td', {}, x.orgNome), el('td', { class: 'objeto' }, x.objeto ? nomeProprio(x.objeto) : nomeProprio(x.elemento || '—'), el('small', {}, [x.licitacao && nomeProprio(x.licitacao), x.numeroLicitacao && 'licitação ' + x.numeroLicitacao].filter(Boolean).join(' · '))),
           el('td', {}, TIPO_SIGEFES[x.tipo] || x.tipo, el('small', {}, x.codigo ? 'código ' + x.codigo : `${x.meses} meses`)),
+          celulaIndicio(x),
           el('td', { class: 'num' }, x.pagoAnt > 0 ? brlCompacto(x.pagoAnt) : '—'), el('td', { class: 'num' }, x.pagoAtu > 0 ? brlCompacto(x.pagoAtu) : '—'), el('td', {}, `${x.desde} a ${x.ate}`)))))) : null);
   }
 

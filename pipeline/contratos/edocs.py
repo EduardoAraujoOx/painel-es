@@ -70,6 +70,17 @@ def protocolos_principais():
     return [p for p, _ in sorted(achados.items(), key=lambda x: -x[1])]
 
 
+def protocolos_sigefes():
+    """Protocolos e-Docs dos pagamentos do SIGEFES sem documento no SIGA (bloco `sigefes` dos arquivos por órgão), os de maior pago primeiro."""
+    achados = {}
+    for f in glob.glob(os.path.join(DADOS, "org", "*.json")):
+        for g in json.load(open(f)).get("sigefes", []):
+            p = amplo.protocolo_edocs(g.get("processo"))
+            if p:
+                achados[p] = max(achados.get(p, 0), (g.get("pagoAnt") or 0) + (g.get("pagoAtu") or 0))
+    return [p for p, _ in sorted(achados.items(), key=lambda x: -x[1])]
+
+
 def main():
     args = sys.argv[1:]
     limite = int(args[args.index("--max") + 1]) if "--max" in args else 400
@@ -80,7 +91,9 @@ def main():
         cache = {}
     hoje = datetime.date.today()
     recentes = lambda p: p in cache and (hoje - datetime.date.fromisoformat(cache[p]["consultadoEm"])).days <= dias
-    pendentes = [p for p in protocolos_principais() if not recentes(p)][:limite]
+    vistos = set()
+    todos = [p for p in protocolos_principais() + protocolos_sigefes() if not (p in vistos or vistos.add(p))]      # contratos principais e pagamentos do SIGEFES sem contrato
+    pendentes = [p for p in todos if not recentes(p)][:limite]
     print(f"{len(pendentes)} protocolos a consultar (1 por segundo); {len(cache)} já em cache", flush=True)
     for i, p in enumerate(pendentes, 1):
         r = consultar(p)

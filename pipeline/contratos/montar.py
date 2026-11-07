@@ -204,7 +204,7 @@ def sigefes_item(g):
     return {"cnpj": g["cnpj"], "forn": titulo(g["forn"]) if g["forn"].isupper() else g["forn"], "tipo": g["tipo"], "codigo": g["codigo"], "licitacao": g["licitacao"],
             "numeroLicitacao": g["numeroLicitacao"], "processo": AM.protocolo_edocs(g["processo"]) or g["processo"], "embasamento": g["embasamento"], "acao": g["acao"],
             "objeto": g["objeto"], "subfuncao": g["subfuncao"], "elemento": g["elementoNome"], "ug": g["ug"], "pagoAnt": g["pago"].get(a, 0.0), "pagoAtu": g["pago"].get(b, 0.0), "meses": g["meses"],
-            "desde": g["desde"], "ate": g["ate"]}
+            "desde": g["desde"], "ate": g["ate"], "indicio": g.get("indicio")}
 
 
 def carregar_diario():
@@ -864,6 +864,20 @@ def main():
     pontos_forn = {k: sum(nivel_peso[n] for n in unicos(v).values()) for k, v in alertas_forn.items()}
     CAMPOS = ["doc", "proc", "forn", "cnpj", "objeto", "cat", "modal", "vini", "vfin", "cel", "ini", "fim", "fimef", "sit", "anual", "saldo", "empAnt", "empAtu", "npror", "rp", "ess", "restante", "pago", "pagoAnt", "pagoAtu", "pago23", "classeA", "alertas", "pncp", "pncpLink", "gestao", "edocs", "dio"]
     pncp_dados = carregar_pncp()
+    # indícios de relação contratual nos pagamentos do SIGEFES sem documento no SIGA: periodicidade, Diário Oficial (pelo CNPJ), PNCP e e-Docs
+    por_n_, por_c_, _ = carregar_diario()
+    pncp_cnpj = collections.Counter(x["cnpj"] for lista in (pncp_dados or {"contratos": {}})["contratos"].values() for x in lista)
+    try:
+        processos_edocs = json.load(open(os.path.join(DESTINO, "processos.json")))
+    except (OSError, ValueError):
+        processos_edocs = {}
+    for lista_ in sigefes_org.values():
+        for g_ in lista_:
+            g_["indicio"] = AM.qualificar_relacao(g_, atos=(por_c_ or {}).get(g_["cnpj"], []), pncp_contratos=pncp_cnpj.get(g_["cnpj"], 0),
+                                                  edocs=processos_edocs.get(AM.protocolo_edocs(g_["processo"]) or ""))
+    if sigefes_org:
+        niveis_ = collections.Counter(g_["indicio"]["nivel"] for v_ in sigefes_org.values() for g_ in v_)
+        print(f"indício de relação contratual nos pagamentos só do SIGEFES: {dict(niveis_)}", flush=True)
     so_pncp_org = cruzar_pncp(recs, pncp_dados, org_nome) if pncp_dados else {}
     if not pncp_dados:
         print("PNCP: arquivo não gerado (pncp.py); o painel fica só com o SIGA", flush=True)

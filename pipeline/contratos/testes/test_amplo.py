@@ -259,5 +259,41 @@ class NaturezaJuridica(unittest.TestCase):
         self.assertEqual(r["maiores"][0], {"cnpj": "P1", "nome": "MUNICÍPIO X", "classe": "publico", "pago": 1000000.0})
 
 
+class Qualificacao(unittest.TestCase):
+    def grupo(self, **kw):
+        g = {"tipo": "contrato", "codigo": "21003003", "licitacao": "CONCORRÊNCIA", "numeroLicitacao": "001/2019", "processo": "", "meses": 24,
+             "desde": "2025-01", "ate": "2026-10", "mesesLista": [f"2025-{m:02d}" for m in range(1, 13)] + [f"2026-{m:02d}" for m in range(1, 11)]}
+        g.update(kw)
+        return g
+
+    def test_periodicidade(self):
+        self.assertEqual(A.periodicidade([]), "sem pagamento")
+        self.assertEqual(A.periodicidade(["2026-03"]), "pagamento único")
+        self.assertEqual(A.periodicidade(["2026-03", "2026-04", "2026-05"]), "poucas parcelas")
+        self.assertEqual(A.periodicidade([f"2026-{m:02d}" for m in range(1, 11)]), "mensal contínuo")
+        self.assertEqual(A.periodicidade(["2025-01", "2025-02", "2025-04", "2025-05", "2025-07"]), "frequente")
+        self.assertEqual(A.periodicidade(["2024-01", "2025-06", "2026-10"]), "esporádico")
+
+    def test_contrato_com_licitacao_e_pagamento_mensal_e_forte(self):
+        q = A.qualificar_relacao(self.grupo(), atos=[{"t": "Extrato de contrato"}], pncp_contratos=1)
+        self.assertEqual((q["nivel"], q["periodicidade"]), ("forte", "mensal contínuo"))
+        self.assertTrue(any("código de contrato" in m for m in q["motivos"]))
+        self.assertEqual(q["duvidas"], [])
+
+    def test_sem_licitacao_ato_nem_processo_e_com_pagamento_isolado_e_fraca(self):
+        g = self.grupo(codigo="", licitacao="NÃO APLICÁVEL - DEMAIS CASOS", numeroLicitacao="", meses=1, mesesLista=["2026-03"], desde="2026-03", ate="2026-03", tipo="outro")
+        q = A.qualificar_relacao(g)
+        self.assertEqual(q["nivel"], "fraca")
+        self.assertTrue(any("único mês" in d for d in q["duvidas"]))
+        self.assertTrue(any("eventual" in d for d in q["duvidas"]))
+
+    def test_edocs_que_cita_instrumento_soma_e_atos_nao_contratuais_nao_contam(self):
+        g = self.grupo(codigo="", licitacao="DISPENSA DE LICITAÇÃO", numeroLicitacao="", processo="2025-ABCDE", meses=5, mesesLista=["2025-01", "2025-02", "2025-03", "2025-04", "2025-06"], desde="2025-01", ate="2025-06")
+        sem = A.qualificar_relacao(g, atos=[{"t": "Penalidade"}])
+        com = A.qualificar_relacao(g, atos=[{"t": "Penalidade"}], edocs={"assunto": "Termo de colaboração", "resumo": ""})
+        self.assertEqual(com["pontos"], sem["pontos"] + 1)
+        self.assertTrue(any("Diário" in d for d in sem["duvidas"]))
+
+
 if __name__ == "__main__":
     unittest.main()

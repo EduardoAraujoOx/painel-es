@@ -57,6 +57,8 @@ class Tipos(unittest.TestCase):
         self.assertEqual(D.classificar("aplicação de penalidade de multa"), "Penalidade")
         self.assertEqual(D.classificar("apostilamento ao contrato"), "Apostilamento")
         self.assertEqual(D.classificar("lista de empresas"), "Citação")
+        self.assertEqual(D.classificar("extrato do termo de fomento nº 3/2026"), "Parceria")
+        self.assertEqual(D.classificar("extrato do primeiro termo aditivo ao convênio"), "Aditivo ou prorrogação")
 
 
 class Refino(unittest.TestCase):

@@ -52,6 +52,7 @@ TIPOS = [("Rescisão", re.compile(r"TERMO DE RESCIS|RESCIS[ÃA]O (UNILATERAL|AMI
          ("Aditivo ou prorrogação", re.compile(r"ADITIV|ADITAMENTO|PRORROGA")),
          ("Apostilamento", re.compile(r"APOSTIL")),
          ("Reajuste ou repactuação", re.compile(r"REAJUST|REPACTUA")),
+         ("Parceria", re.compile(r"TERMO DE FOMENTO|TERMO DE COLABORA|TERMO DE PARCERIA|CONV[ÊE]NIO|CONTRATO DE GEST[ÃA]O|ACORDO DE COOPERA")),
          ("Extrato de contrato", re.compile(r"EXTRATO|TERMO DE CONTRATO|CONTRATANTE|CONTRATADA"))]
 
 

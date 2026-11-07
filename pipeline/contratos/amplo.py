@@ -308,13 +308,101 @@ def contratos_do_sigefes(linhas, nomes, subs, meta, ug_org, pares_com_doc, anos,
         licit, processo, embasamento, acao = (list((meta or {}).get(chave, [])) + ["", "", "", ""])[:4]
         el_principal = max(g["elementos"].items(), key=lambda kv: kv[1])[0]
         g.update(objeto=objeto.strip(), subfuncao=subfuncao.strip(), numeroLicitacao=licit, processo=processo, embasamento=embasamento, acao=acao,
-                 elemento=el_principal, elementoNome=(nomes or {}).get("EL" + el_principal, ""), total=round(total, 2), meses=len(g["meses"]))
+                 elemento=el_principal, elementoNome=(nomes or {}).get("EL" + el_principal, ""), total=round(total, 2), meses=len(g["meses"]), mesesLista=sorted(g["meses"]))
         del g["elementos"]
         g["pago"] = {a: round(v, 2) for a, v in g["pago"].items()}
         saida.setdefault(org, []).append(g)
     for lista in saida.values():
         lista.sort(key=lambda g: -g["total"])
     return saida
+
+
+# --- qualificação: o pagamento do SIGEFES indica uma relação contratual passível de revisão? ----------------------------------------------------------------------
+PROCEDIMENTOS = ("CONCORR", "PREGÃO", "PREGAO", "RDC", "REGIME DIFERENCIADO", "TOMADA", "CONVITE", "LEIL", "DIÁLOGO", "DIALOGO", "CONCURSO", "ADESÃO", "ADESAO")
+DIRETAS_SIGEFES = ("DISPENSA", "INEXIGIBILIDADE")
+TIPOS_ATO_CONTRATUAL = ("Extrato de contrato", "Aditivo ou prorrogação", "Apostilamento", "Reajuste ou repactuação", "Parceria")
+
+
+def _indice_mes(m):
+    return int(m[:4]) * 12 + int(m[5:7])
+
+
+def periodicidade(meses):
+    """Rótulo da cadência de pagamento a partir dos meses ('AAAA-MM') com pagamento: 'pagamento único', 'poucas parcelas', 'mensal contínuo',
+    'frequente' ou 'esporádico'. Pagamento contínuo ao longo de meses é o que a execução de um contrato costuma deixar; um pagamento isolado, não."""
+    ms = sorted(set(meses))
+    if not ms:
+        return "sem pagamento"
+    if len(ms) == 1:
+        return "pagamento único"
+    vao = _indice_mes(ms[-1]) - _indice_mes(ms[0]) + 1
+    cobertura = len(ms) / vao
+    if len(ms) <= 3 and vao <= 6:
+        return "poucas parcelas"
+    if len(ms) >= 6 and cobertura >= 0.8:
+        return "mensal contínuo"
+    if len(ms) >= 4 and cobertura >= 0.5:
+        return "frequente"
+    return "esporádico"
+
+
+def qualificar_relacao(g, atos=(), pncp_contratos=0, edocs=None):
+    """Indícios, a favor e contra, de que os pagamentos do SIGEFES de um grupo (AM.contratos_do_sigefes) decorrem de relação contratual passível de revisão.
+
+    Não prova nada: ajuda a separar contratação continuada (código de contrato, licitação, pagamento mensal, ato no Diário, contrato no PNCP, processo no
+    e-Docs) de pagamento isolado, indenização ou imóvel. atos: atos do Diário que citam o CNPJ ([{'t': tipo, ...}]); pncp_contratos: quantos contratos
+    do mesmo CNPJ constam do PNCP; edocs: resumo do processo no e-Docs ({'assunto', 'resumo'}) quando há.
+    Devolve {'nivel': 'forte'|'média'|'fraca', 'pontos', 'periodicidade', 'motivos': [...], 'duvidas': [...]}."""
+    pontos, motivos, duvidas = 0, [], []
+    per = periodicidade(g.get("mesesLista") or [])
+    if g.get("codigo"):
+        pontos += 2
+        motivos.append(f"cita o código de contrato {g['codigo']} no SIGEFES")
+    lic = (g.get("licitacao") or "").upper()
+    num = g.get("numeroLicitacao") or ""
+    if any(x in lic for x in PROCEDIMENTOS):
+        pontos += 2
+        motivos.append(f"licitação: {g['licitacao'].title()}" + (f" nº {num}" if num else ""))
+    elif any(x in lic for x in DIRETAS_SIGEFES):
+        pontos += 1
+        motivos.append(f"contratação direta: {g['licitacao'].title()}")
+    else:
+        duvidas.append("não informa licitação nem contratação direta")
+    if per == "mensal contínuo":
+        pontos += 2
+        motivos.append(f"pagamento mensal contínuo ({g['meses']} meses, de {g['desde']} a {g['ate']})")
+    elif per == "frequente":
+        pontos += 1
+        motivos.append(f"pagamentos frequentes ({g['meses']} meses, de {g['desde']} a {g['ate']})")
+    elif per == "pagamento único":
+        pontos -= 1
+        duvidas.append("pagamento em um único mês")
+    elif per == "esporádico":
+        duvidas.append(f"pagamentos esporádicos ({g['meses']} meses entre {g['desde']} e {g['ate']})")
+    contratuais = [a for a in atos if a.get("t") in TIPOS_ATO_CONTRATUAL]
+    if contratuais:
+        pontos += 2
+        motivos.append(f"{len(contratuais)} ato(s) no Diário Oficial que citam o CNPJ (extrato, termo, aditivo ou parceria)")
+    else:
+        duvidas.append("nenhum extrato, termo ou aditivo localizado no Diário Oficial pelo CNPJ (leitura desde nov/2023)")
+    if pncp_contratos:
+        pontos += 1
+        motivos.append(f"o CNPJ tem {pncp_contratos} contrato(s) no PNCP")
+    if g.get("processo"):
+        pontos += 1
+        motivos.append(f"processo {g['processo']}")
+    if edocs and not edocs.get("naoEncontrado"):
+        texto = f"{edocs.get('assunto', '')} {edocs.get('resumo', '')}".upper()
+        if any(x in texto for x in ("CONTRAT", "TERMO", "CONV", "ATA DE REGISTRO", "ADITIV", "GESTÃO", "FOMENTO", "COLABORA")):
+            pontos += 1
+            motivos.append("a descrição do processo no e-Docs cita contrato, termo ou convênio")
+    if g.get("tipo") == "outro":
+        pontos -= 2
+        duvidas.append("pagamento eventual (sentença, exercício anterior, indenização ou imóvel): em regra não há contrato a rever")
+    if g.get("tipo") == "repasse":
+        duvidas.append("repasse a entidade: o instrumento é convênio, termo de fomento ou colaboração, subvenção ou contrato de gestão, e não contrato de fornecimento")
+    nivel = "forte" if pontos >= 5 else "média" if pontos >= 3 else "fraca"
+    return {"nivel": nivel, "pontos": pontos, "periodicidade": per, "motivos": motivos, "duvidas": duvidas}
 
 
 def pagamentos_a_entes_publicos(linhas, nomes, ug_org, pares_com_doc, anos, classe_cnpj, maiores=5):
