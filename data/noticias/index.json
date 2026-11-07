@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-07",
- "gerado_em": "2026-11-07T12:17:13Z",
+ "gerado_em": "2026-11-07T14:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,17 +17,17 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 13,
+   "lidos": 14,
    "aceitos": 4,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 24,
-   "aceitos": 8,
-   "possiveis": 5
+   "aceitos": 7,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 4,
+   "lidos": 3,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 10,
+   "lidos": 11,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 56,
+   "lidos": 54,
    "aceitos": 3,
    "possiveis": 5
   },
@@ -99,7 +99,7 @@
    "ok": true,
    "lidos": 65,
    "aceitos": 3,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 12,
+   "lidos": 9,
    "aceitos": 4,
    "possiveis": 1
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 30,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -145,9 +145,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 26,
    "aceitos": 2,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -194,8 +194,8 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 2,
-   "possiveis": 0
+   "aceitos": 1,
+   "possiveis": 1
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -234,26 +234,52 @@
    "consulta": "https://simnoticias.com.br/vinicius-baptista/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
   "oficial_sem_tema": 5,
-  "sem_contexto": 328,
-  "possivel": 22,
+  "sem_contexto": 326,
+  "possivel": 24,
   "oficial_divulgacao": 1,
-  "veiculo_excluido": 42,
+  "veiculo_excluido": 43,
   "sem_contexto_com_tema": 4,
-  "exterior_sem_ancora": 3,
+  "exterior_sem_ancora": 4,
   "excluir": 12,
-  "outro_estado": 17,
+  "outro_estado": 16,
   "caixa_alta": 1,
   "veiculo_outra_praca": 9,
-  "sigla_sem_ancora": 5
+  "sigla_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "78af5e11c158",
+   "titulo": "Investimentos estaduais ampliam armazenamento de água e fortalecem prevenção à seca no Espírito Santo",
+   "veiculo": "Montanhas Capixabas",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOdmZyTU95Qzhwb0FPdm1xT1J5M3R0X1M2SGZyUXQ4aDZwVFcwUUp1YWd5dGdsaDFvVHhrTmcyLVhOOVJHd1UtR1BCWnJNeEI2T29tZEhaUy0tSmliVHAtZER1SHJaWlhuUUNTR0E3dXoxSk53anJHbEN4UTJNY3pMbTI1VHlhUkxJd0o5enItRFlWaG9RMVYwSUFWc1FvS0FHVzNpbmdnbWtkNmZFUURkbU9BOXRySkFXYjE3T25yckJfMk45UnpXQXM2Z01rdjZOemgzODdiZw?oc=5",
+   "data": "2026-11-07T14:00:41Z",
+   "coletado_em": "2026-11-07T14:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": []
+  },
+  {
+   "id": "40f196f2391d",
+   "titulo": "O açúcar é essencial, mas o refrigerante é pecado? A contradição da Reforma Tributária",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/colunistas/2026/11/o-acucar-e-essencial/",
+   "data": "2026-11-07T13:37:39Z",
+   "coletado_em": "2026-11-07T14:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "a981370a9fb1",
    "titulo": "Equipe de transição de Pazolini tem sete nomes; veja quem são",
