@@ -31,6 +31,7 @@ REF = datetime.date.fromisoformat(sys.argv[1]) if len(sys.argv) > 1 else datetim
 ANOS_SERIE = list(range(2019, REF.year + 1))
 ANOS_GASTO = (REF.year - 1, REF.year)          # janela de "gasto recente": ano anterior e ano corrente
 MANDATO_DESDE = 2023                            # início da gestão atual: "pago desde 2023"
+ORG_SO_SIGEFES = 9_000_000                    # número dos órgãos que só existem no SIGEFES (unidades gestoras sem órgão no SIGA): ORG_SO_SIGEFES + código da UG
 MENSAL_DESDE = "2025-01"                        # pagamentos mês a mês no detalhe do órgão
 ATIVIDADE_DESDE = 2023                          # fornecedores com algum documento a partir deste ano ganham ficha
 
@@ -735,6 +736,7 @@ def main():
     print(f"pagamentos a CNPJs sem documento do SIGA no órgão pagador: {sem_doc_n} pares órgão x CNPJ, R$ {sem_doc_v:,.0f} em {ANOS_GASTO[0]}–{ANOS_GASTO[1]}", flush=True)
     # contratos que o SIGEFES conhece (pagamento com código de contrato) e o SIGA não: publicidade e outras contratações fora do SIGA
     sigefes_org, entes_org, linhas_desp, nomes_desp, subs_desp, meta_desp = {}, {}, [], {}, {}, {}
+    org_so_sigefes = {}
     for f_ in sorted(glob.glob(os.path.join(CACHE, "despesas_20??.json"))):
         d_ = json.load(open(f_))
         if str(d_["ano"]) in [str(a) for a in ANOS_GASTO]:
@@ -747,9 +749,19 @@ def main():
             meta_desp.update(d_.get("meta") or {})
     if linhas_desp:
         pares_com_doc_ = {(c["org"], c["cnpj"]) for c in recs}
+        # unidades gestoras sem órgão no SIGA (Assembleia, Judiciário, Ministério Público, Tribunal de Contas, fundos, empates de votos) viram órgãos
+        # só do SIGEFES, com número a partir de ORG_SO_SIGEFES + código da UG, para que o dinheiro pago por elas também seja seguido
+        for ug_ in {l_[1] for l_ in linhas_desp}:
+            if ug_ not in ug2siga and ug_.isdigit():
+                ug2siga[ug_] = ORG_SO_SIGEFES + int(ug_)
+                org_so_sigefes[ORG_SO_SIGEFES + int(ug_)] = EXEC["ugs"].get(ug_) or ("Unidade gestora " + ug_)
         sigefes_org = AM.contratos_do_sigefes(linhas_desp, nomes_desp, subs_desp, meta_desp, ug2siga, pares_com_doc_, [str(a) for a in ANOS_GASTO], classe_cnpj=classe_cnpj)
         entes_org = AM.pagamentos_a_entes_publicos(linhas_desp, nomes_desp, ug2siga, pares_com_doc_, [str(a) for a in ANOS_GASTO], classe_cnpj)
         print(f"pagamentos a entes públicos e estatais sem documento no SIGA (fora da lista, só resumo): R$ {sum(x['total'] for x in entes_org.values()):,.0f} em {len(entes_org)} órgãos", flush=True)
+        for o_, nome_ in org_so_sigefes.items():
+            if o_ in sigefes_org or o_ in entes_org:
+                org_nome[o_] = nome_
+        print(f"órgãos só do SIGEFES (unidades gestoras sem órgão no SIGA): {sum(1 for o_ in org_so_sigefes if o_ in org_nome)}", flush=True)
         por_tipo_ = collections.Counter(g["tipo"] for v in sigefes_org.values() for g in v)
         print(f"pagamentos do SIGEFES sem documento do SIGA no órgão: {dict(por_tipo_)} em {len(sigefes_org)} órgãos, R$ {sum(g['total'] for v in sigefes_org.values() for g in v):,.0f} pagos", flush=True)
     else:
@@ -960,7 +972,7 @@ def main():
         anual_total = sum(x["anual"] for x in forns) or 1.0
         resumo["maiorFornAnual"] = round(max((x["anual"] for x in forns), default=0.0) / anual_total, 4)
         resumo["coberturaEmpenho"] = round((resumo["empAnt"] + resumo["empAtu"]) / max(1, len(ANOS_GASTO)) / resumo["anualVigente"], 4) if resumo["anualVigente"] else None
-        if not (resumo["vigentes"] or resumo["empAnt"] or resumo["empAtu"] or resumo["contratadoRecente"] or resumo["pagoAnt"] or resumo["pagoAtu"]):
+        if not (resumo["vigentes"] or resumo["empAnt"] or resumo["empAtu"] or resumo["contratadoRecente"] or resumo["pagoAnt"] or resumo["pagoAtu"] or sigefes_bloco):
             continue
         so_pncp = sorted(so_pncp_org.get(org, []), key=lambda x: -(x["valorGlobal"] or 0))
         resumo["pncpSoNoPncp"] = len(so_pncp)
