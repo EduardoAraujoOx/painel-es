@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-07",
- "gerado_em": "2026-11-07T09:17:13Z",
+ "gerado_em": "2026-11-07T10:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,7 +25,7 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 24,
+   "lidos": 23,
    "aceitos": 7,
    "possiveis": 5
   },
@@ -49,9 +49,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 58,
+   "lidos": 59,
    "aceitos": 3,
    "possiveis": 5
   },
@@ -97,8 +97,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 72,
-   "aceitos": 2,
+   "lidos": 60,
+   "aceitos": 3,
    "possiveis": 3
   },
   {
@@ -146,14 +146,14 @@
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 27,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 32,
+   "lidos": 31,
    "aceitos": 6,
    "possiveis": 1
   },
@@ -238,17 +238,17 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 334,
+  "sem_contexto": 323,
   "oficial_sem_tema": 4,
-  "possivel": 21,
+  "possivel": 22,
   "oficial_divulgacao": 1,
-  "veiculo_excluido": 44,
+  "veiculo_excluido": 43,
   "sem_contexto_com_tema": 3,
   "exterior_sem_ancora": 3,
   "excluir": 13,
-  "outro_estado": 18,
+  "outro_estado": 17,
   "caixa_alta": 1,
   "veiculo_outra_praca": 9,
   "sigla_sem_ancora": 5
@@ -576,6 +576,18 @@
    "temas": []
   },
   {
+   "id": "016e46b85776",
+   "titulo": "Governo do Brasil destina mais uma carreta de saúde para ampliar o diagnóstico precoce de doenças no SUS no Espírito Santo",
+   "veiculo": "www.gov.br",
+   "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxOOHc4R2xGLVFlVVl0VGRjalpxRUJxdzlQY3R5SmR2QU5LUHNuck5UallDTlkyWFhIMjRhRjJEZnh2cTd3QmpicnNLN3dSZjNyQ0FGVkhjUHBRUTVQZ3pYVERuUWZKTmhqZC1nc25mTEhoTi1sODdXVXlhcFFUVzhIMFFBUVowZl90aG5McEoySVZ2Zko2VFYxOFhCRHZJOU92WEQzcmpNczNSUDMyMEc2dWhZbmVoRV9fbTNiQ1ZFbG0tVnoyMEFaNEdMeWFlb3FLRVV4NjVfZWhENTFJMk5jYXpXR0VocGp6elpZTDlMaDVRZngySmJtRTJNX1Ria2RJTFo5YmZIeUQyRTR4aDFOZVVnR0ltX00zWnFvLS1sZDlId2w2NmxENFV3?oc=5",
+   "data": "2026-11-06T17:31:00Z",
+   "coletado_em": "2026-11-07T10:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": []
+  },
+  {
    "id": "2b6f25f0d52a",
    "titulo": "Sementes e Formação Avançada colocam política de inovação do Espírito Santo entre referências nacionais",
    "veiculo": "Governo ES",
@@ -728,6 +740,18 @@
    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOaFZJTXNPSVVVcDF1ZFRPUkx5WURRVTdGX2pYZk1GcGVUNWdkWkFvZWdjZXBDYWR4djdMSlRjcVBiVjZyX283djBGTUQxVjVDUmZFcUFnakxMT0ZRWEk1TE1xLXJNM1gxc3R6VW1pWDlySllZNy1mUzY0N24tZjhDVWZ3SnlpRkY1ODR6dA?oc=5",
    "data": "2026-11-06T13:55:31Z",
    "coletado_em": "2026-11-06T14:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": []
+  },
+  {
+   "id": "9d0964d4c336",
+   "titulo": "Alunos da rede estadual terão ônibus gratuito nos dias de provas do Enem",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNQXdxYjNTMm9sODFXVFZNTDM4cUE4SlNUMXdBZmlDUHZLeGlBLU80MGdwMV9uTm5qQVVueTEycDJoOW9xSk1hLVNwNGV3Qk1kMUZwY2NzRE00cUhLS2RJckN4NW12cVFTZXlXRkt5U1RKTk5iZTRial9MZzY0dlYxMm4yc040R3Z0TWxmeVVsY245ZWhiTC1kczAyNUZuNTdtMmhLUTEzVXRSXzZHUFBUTnFaRnhic0lIV0dvLVBhQm1XZWdyanMxQTd3NFgzUDJRYXRnV1V2YmE2TUlx0gHcAUFVX3lxTE1Bd3FiM1Myb2w4MVdUVk1MMzhxQThKU1Qxd0FmaUNQdkt4aUEtTzQwZ3AxX25ObmpBVW55MTJwMmg5b3FKTWEtU3A0ZXdCTWQxRnBjY3NETTRxSEtLZElyQ3g1bXZxUVNleVdGS3lTVEpOTmJlNGJqX0xnNjR2VjEybjJzTjRHdnRNbGZ5VWxjbjllaGJMLWRzMDI1Rm41N20yaEtRMTNVdFJfNkdQUFROcVpGeGJzSUhXR28tUGFCbVdlZ3JqczFBN3c0WDNQMlFhdGdXVXZiYTZNSXE?oc=5",
+   "data": "2026-11-06T12:56:13Z",
+   "coletado_em": "2026-11-07T10:17:12Z",
    "outras": [],
    "possivel": false,
    "triagem": 5,
