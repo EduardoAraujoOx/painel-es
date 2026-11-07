@@ -188,6 +188,16 @@ def iso(d):
     return f"{d[6:]}-{d[3:5]}-{d[:2]}"
 
 
+def salvar(estado):
+    """Grava o estado por inteiro (em arquivo temporário e renomeando, para nunca deixar um arquivo pela metade)."""
+    estado["geradoEm"] = datetime.date.today().isoformat()
+    os.makedirs(CACHE, exist_ok=True)
+    tmp = DESTINO + ".tmp"
+    with open(tmp, "w") as f:
+        json.dump(estado, f, ensure_ascii=False, separators=(",", ":"))
+    os.replace(tmp, DESTINO)
+
+
 def main():
     args = sys.argv[1:]
     desde = args[args.index("--desde") + 1] if "--desde" in args else "2023-11-01"
@@ -215,10 +225,8 @@ def main():
             lidas[str(ed["id"])] = {"data": ed["data"], "numero": ed["numero"], "sup": ed["sup"], "atos": len(atos)}
             if k % 25 == 0 or k == len(faltam):
                 print(f"  {k}/{len(faltam)} edições; {len(estado['atos'])} atos", flush=True)
-    estado["geradoEm"] = datetime.date.today().isoformat()
-    os.makedirs(CACHE, exist_ok=True)
-    with open(DESTINO, "w") as f:
-        json.dump(estado, f, ensure_ascii=False, separators=(",", ":"))
+                salvar(estado)          # ponto de retomada: uma queda no meio não perde o que já foi lido
+    salvar(estado)
     print(f"{len(lidas)} edições lidas no total, {len(estado['atos'])} atos → {DESTINO}" + (f"; {falhas} edições falharam (serão tentadas de novo na próxima execução)" if falhas else ""))
     if falhas:
         sys.exit(1)
