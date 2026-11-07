@@ -32,6 +32,7 @@ ANOS_SERIE = list(range(2019, REF.year + 1))
 ANOS_GASTO = (REF.year - 1, REF.year)          # janela de "gasto recente": ano anterior e ano corrente
 MANDATO_DESDE = 2023                            # início da gestão atual: "pago desde 2023"
 ORG_SO_SIGEFES = 9_000_000                    # número dos órgãos que só existem no SIGEFES (unidades gestoras sem órgão no SIGA): ORG_SO_SIGEFES + código da UG
+UGS_FORA = {"10101"}                          # unidades gestoras que o painel não acompanha (10101: Assembleia Legislativa, Poder Legislativo)
 MENSAL_DESDE = "2025-01"                        # pagamentos mês a mês no detalhe do órgão
 ATIVIDADE_DESDE = 2023                          # fornecedores com algum documento a partir deste ano ganham ficha
 
@@ -752,7 +753,7 @@ def main():
         # unidades gestoras sem órgão no SIGA (Assembleia, Judiciário, Ministério Público, Tribunal de Contas, fundos, empates de votos) viram órgãos
         # só do SIGEFES, com número a partir de ORG_SO_SIGEFES + código da UG, para que o dinheiro pago por elas também seja seguido
         for ug_ in {l_[1] for l_ in linhas_desp}:
-            if ug_ not in ug2siga and ug_.isdigit():
+            if ug_ not in ug2siga and ug_.isdigit() and ug_ not in UGS_FORA:
                 ug2siga[ug_] = ORG_SO_SIGEFES + int(ug_)
                 org_so_sigefes[ORG_SO_SIGEFES + int(ug_)] = EXEC["ugs"].get(ug_) or ("Unidade gestora " + ug_)
         sigefes_org = AM.contratos_do_sigefes(linhas_desp, nomes_desp, subs_desp, meta_desp, ug2siga, pares_com_doc_, [str(a) for a in ANOS_GASTO], classe_cnpj=classe_cnpj)
