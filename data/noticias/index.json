@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-07",
- "gerado_em": "2026-11-07T14:17:12Z",
+ "gerado_em": "2026-11-07T15:17:17Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 14,
+   "lidos": 13,
    "aceitos": 4,
    "possiveis": 2
   },
@@ -25,7 +25,7 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 24,
+   "lidos": 23,
    "aceitos": 7,
    "possiveis": 6
   },
@@ -33,8 +33,8 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 6,
+   "lidos": 8,
+   "aceitos": 5,
    "possiveis": 1
   },
   {
@@ -51,14 +51,14 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 2,
+   "lidos": 3,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -73,15 +73,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 2,
+   "lidos": 3,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 11,
+   "lidos": 10,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 65,
+   "lidos": 63,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -138,14 +138,14 @@
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
-   "possiveis": 1
+   "aceitos": 2,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 25,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 30,
    "aceitos": 6,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -178,7 +178,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -241,17 +241,17 @@
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
   "oficial_sem_tema": 5,
-  "sem_contexto": 326,
-  "possivel": 24,
+  "sem_contexto": 321,
+  "possivel": 25,
   "oficial_divulgacao": 1,
-  "veiculo_excluido": 43,
+  "veiculo_excluido": 42,
   "sem_contexto_com_tema": 4,
   "exterior_sem_ancora": 4,
-  "excluir": 12,
+  "excluir": 11,
   "outro_estado": 16,
   "caixa_alta": 1,
-  "veiculo_outra_praca": 9,
-  "sigla_sem_ancora": 4
+  "veiculo_outra_praca": 8,
+  "sigla_sem_ancora": 6
  },
  "itens": [
   {
@@ -293,6 +293,20 @@
    "temas": [
     "transicao",
     "governador"
+   ]
+  },
+  {
+   "id": "77a8da3bef32",
+   "titulo": "R$ 143 milhões na mira: MPRO investiga contratos do Detran e da Seduc em Rondônia",
+   "veiculo": "Diário da Amazônia",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNaVRKS0VBOTJFV2NkajZxQ2RRdEh2SGpuS2ZyUkRzTk02X0dYNU9vQ2xzQVd4MndaWmd2NGNPd05wVlFUOWtqdDEySUFFQktMeURFdEFpbndKSm9RNDhXSWhsVUJXNlh1UWUzQ25DeUVFY29GZGFvb3FEdk81b0ZSbHZJcm14UXdfbFNkS2lVNE5ETlNVQW5qR3hkdW9RM3Z3bVRORWVxYVhJa0JpLWcxbzNqbFo2aHYxYkk1OE4yN1JKRlA2a1RV?oc=5",
+   "data": "2026-11-07T10:46:10Z",
+   "coletado_em": "2026-11-07T15:17:17Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": [
+    "contratos"
    ]
   },
   {
@@ -550,6 +564,20 @@
    "temas": [
     "transicao",
     "governador"
+   ]
+  },
+  {
+   "id": "07a4e3a7e941",
+   "titulo": "Política | Sefaz afasta e Casa Civil exonera superintendente de combate a fraudes fiscais",
+   "veiculo": "T1 Notícias",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQbWJHY1k0dXZsSVM2Vi04VEQ2QmlWMGFFWklGbjFYeDN4MlFhSHk4QnBmYjc2RU9wZUNhZklPMGlhS1llakJJY09QVGxoUjRYYnJjcWFEUThOOFRuQkY0X2VkVWhuSGxQaV8tUnV4YlVVejZMZl9rdlFzakw4bGRzb2VOVTFkR1JmTzgyVDVkd25YSmhrNktqLS1XSXExYXFaM2pnQmRTa0lLVVY5MWl5QTRTX0FYcmJIVEZRd0NR?oc=5",
+   "data": "2026-11-06T18:17:16Z",
+   "coletado_em": "2026-11-07T15:17:17Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": [
+    "financas"
    ]
   },
   {
