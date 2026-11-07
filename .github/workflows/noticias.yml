@@ -137,9 +137,9 @@ jobs:
         continue-on-error: true
         run: python3 -I pipeline/cruzamento/datas.py
 
-      # Cadastro de alertas (página /alertas do painel): a cada coleta, manda o e-mail de confirmação a quem acabou de se cadastrar (o link só
-      # confirma ao apertar um botão). Os resumos para os confirmados saem no passo seguinte, junto com os destinatários fixos. Sem token OIDC, não faz nada.
-      - name: Enviar as confirmações de cadastro de alertas
+      # Cadastro de alertas (página /alertas do painel): a cada coleta, manda o e-mail de boas-vindas (com o link para sair) a quem acabou de se cadastrar.
+      # Os resumos aos assinantes saem no passo seguinte, junto com os destinatários fixos. Sem token OIDC, não faz nada.
+      - name: Enviar as boas-vindas aos novos assinantes de alertas
         id: alertas
         continue-on-error: true
         env:

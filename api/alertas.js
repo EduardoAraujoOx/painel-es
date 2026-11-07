@@ -1,11 +1,11 @@
 // Cadastro de e-mails para os alertas do painel. Repassa ao Supabase (Edge Function "alertas", que guarda a lista) só as três ações
-// públicas: assinar, confirmar e sair. A lista e o "marcar enviado" são da porta privada, que só o fluxo do GitHub alcança (token OIDC).
-//   POST /api/alertas   {"acao":"assinar","email":"...","codigo":"..."}   |   {"acao":"confirmar","t":"..."}   |   {"acao":"sair","t":"..."}
+// públicas: assinar e sair. A lista e o "marcar enviado" são da porta privada, que só o fluxo do GitHub alcança (token OIDC).
+//   POST /api/alertas   {"acao":"assinar","email":"...","codigo":"..."}   |   {"acao":"sair","t":"..."}
 // Fica de propósito fora da senha do painel: quem recebe o convite se cadastra sem entrar no painel.
 const { responder } = require('./_auth');
 
 const FUNCAO = process.env.ALERTAS_FUNCAO_URL || 'https://ecjeuwadpmtvbkcvrxoc.supabase.co/functions/v1/alertas';
-const ACOES = new Set(['assinar', 'confirmar', 'sair']);
+const ACOES = new Set(['assinar', 'sair']);
 const MAX_CORPO = 2000;
 
 function lerCorpo(req) {
