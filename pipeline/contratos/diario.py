@@ -29,6 +29,9 @@ import subprocess
 import sys
 import tempfile
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import amplo  # noqa: E402
+
 RAIZ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 CACHE = os.path.join(RAIZ, ".cache", "contratos")
 DESTINO = os.path.join(CACHE, "dio_atos.json")
@@ -151,14 +154,14 @@ def atos_da_edicao(texto, cnpjs, antes=300, depois=900):
 
 
 def cnpjs_do_siga():
-    """CNPJs dos fornecedores nos CSVs de contratos do SIGA (coluna 9)."""
+    """CNPJs dos fornecedores nos CSVs de contratos do SIGA (coluna 9) e os fornecedores relevantes do SIGEFES fora do SIGA."""
     s = set()
     for f in glob.glob(os.path.join(CACHE, "c20*.csv")):
         for linha in open(f, encoding="utf-8", errors="replace"):
             p = linha.split(";")
             if len(p) > 8 and re.fullmatch(r"\d{14}", p[8]):
                 s.add(p[8])
-    return s
+    return s | amplo.cnpjs_relevantes_do_cache(s, CACHE)      # inclui quem o SIGEFES paga de forma relevante e o SIGA não conhece
 
 
 def get(url, destino=None, tentativas=4):

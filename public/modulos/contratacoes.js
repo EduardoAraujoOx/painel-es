@@ -370,27 +370,62 @@
       onclick: () => { estado.verPncp = !estado.verPncp; render(true); } }, estado.verPncp ? 'Mostrar menos' : `Mostrar os ${nInt.format(vig.length)}`)) : null);
   }
 
-  // Contratos que o SIGEFES conhece (pagamento com código de contrato) e o SIGA não: publicidade e outras contratações fora do SIGA.
+  // Pagamentos do SIGEFES a fornecedores sem documento algum do SIGA no órgão: contratos que só o sistema financeiro conhece (com código de contrato, como a
+  // publicidade da Secom) e despesa recorrente sem contrato registrado. São passíveis de revisão contratual como os demais: o botão leva à lista de revisão.
+  const TIPO_SIGEFES = { contrato: 'Contrato no SIGEFES', recorrente: 'Pagamento recorrente, sem contrato' };
+  function itemRevisaoSigefes(org, x) {
+    const pagoTot = x.pagoAnt + x.pagoAtu;
+    const meses = Math.max(1, x.meses || 1);
+    return { doc: x.codigo ? `SIGEFES ${x.codigo}` : `SIGEFES sem código (${x.ug})`, proc: x.processo || '', forn: x.forn, cnpj: x.cnpj, cat: 'Sem registro no SIGA', modal: x.licitacao || '—',
+      objeto: `${x.objeto ? nomeProprio(x.objeto) : 'Pagamentos no SIGEFES'}${x.numeroLicitacao ? ' · licitação ' + x.numeroLicitacao : ''} (pagamentos de ${x.desde} a ${x.ate}; sem documento no SIGA)`,
+      ess: 'indefinido', vini: 0, vfin: pagoTot, anual: x.pagoAtu > 0 ? x.pagoAtu : pagoTot / 2, restante: 0, pago: pagoTot, cel: x.desde + '-01', ini: x.desde + '-01', fim: x.ate + '-28', fimef: x.ate + '-28',
+      sit: 'Pagamentos no SIGEFES sem registro no SIGA', alertas: [] };
+  }
   function cartaoSigefes(lista, org) {
     if (!lista || !lista.length) return null;
     const [aAnt, aAtu] = dados.anosGasto;
     const visiveis = estado.verSigefes ? lista : lista.slice(0, 10);
-    const linhas = visiveis.map((x) => el('tr', {},
-      el('td', { class: 'objeto' }, el('strong', {}, nomeProprio(x.forn)), el('small', {}, cnpjFmt(x.cnpj))),
-      el('td', { class: 'objeto' }, x.objeto ? nomeProprio(x.objeto) : '', el('small', {}, [x.subfuncao && nomeProprio(x.subfuncao), x.licitacao && nomeProprio(x.licitacao)].filter(Boolean).join(' · '))),
-      el('td', {}, x.codigo),
-      el('td', { class: 'num' }, x.pagoAnt > 0 ? brlCompacto(x.pagoAnt) : '—'),
-      el('td', { class: 'num' }, x.pagoAtu > 0 ? brlCompacto(x.pagoAtu) : '—'),
-      el('td', {}, `${x.desde} a ${x.ate}`)));
+    const linhas = visiveis.map((x) => {
+      const item = itemRevisaoSigefes(org, x);
+      const marcado = Object.keys(revisao.itens).some((k) => k === `${org.id}|${item.proc}|${item.doc}`);
+      return el('tr', {},
+        el('td', { class: 'objeto' }, el('strong', {}, el('a', { href: '#', onclick: (ev) => { ev.preventDefault(); irForn(x.cnpj, org.id); } }, nomeProprio(x.forn))), el('small', {}, cnpjFmt(x.cnpj))),
+        el('td', { class: 'objeto' }, x.objeto ? nomeProprio(x.objeto) : '—', el('small', {}, [x.subfuncao && nomeProprio(x.subfuncao), x.licitacao && nomeProprio(x.licitacao), x.numeroLicitacao && 'licitação ' + x.numeroLicitacao].filter(Boolean).join(' · ')),
+          x.processo && /^\d{4}-[0-9A-Z]{5}$/.test(x.processo) ? el('small', {}, 'Processo ', el('a', { href: URL_EDOCS + encodeURIComponent(x.processo), target: '_blank', rel: 'noopener noreferrer' }, x.processo)) : null),
+        el('td', {}, TIPO_SIGEFES[x.tipo] || x.tipo, el('small', {}, x.codigo ? 'código ' + x.codigo : `${x.meses} meses com pagamento`)),
+        el('td', { class: 'num' }, x.pagoAnt > 0 ? brlCompacto(x.pagoAnt) : '—'),
+        el('td', { class: 'num' }, x.pagoAtu > 0 ? brlCompacto(x.pagoAtu) : '—'),
+        el('td', {}, `${x.desde} a ${x.ate}`),
+        el('td', {}, el('button', { type: 'button', class: 'botao', title: 'Colocar na lista de revisão', disabled: marcado,
+          onclick: async (ev) => { ev.stopPropagation(); ev.currentTarget.disabled = true; await marcar(org, itemRevisaoSigefes(org, x), 'apurar', 'revisar', 'Pagamento no SIGEFES sem contrato no SIGA: confirmar o instrumento, a vigência e o saldo.'); render(true); } }, marcado ? '⚑ Na lista' : '⚑ Marcar')));
+    });
     const total = soma(lista, (x) => x.pagoAnt + x.pagoAtu);
+    const nContrato = lista.filter((x) => x.tipo === 'contrato').length;
     return el('div', { class: 'cartao', id: 'so-sigefes' }, el('div', { class: 'cartao-topo' }, el('div', {},
-      el('h2', {}, `Contratos só no SIGEFES, sem registro no SIGA (${nInt.format(lista.length)})`),
-      el('p', {}, `Pagamentos de ${aAnt}–${aAtu} que citam um código de contrato no SIGEFES (o sistema financeiro do Estado), a fornecedores dos quais o SIGA não tem nenhum documento neste órgão. Somam ${brlCompacto(total)} pagos. Pode ser contratação conduzida fora do SIGA (como as agências de publicidade da Secom, que não estão no SIGA, no PNCP nem no Portal da Transparência), contrato registrado em outro órgão ou em nome de outro CNPJ; vale confirmar com o órgão. O código é o do SIGEFES, não o número do instrumento; o objeto é o subelemento de despesa do pagamento.`))),
+      el('h2', {}, `Pagamentos do SIGEFES sem contrato no SIGA (${nInt.format(lista.length)})`),
+      el('p', {}, `Fornecedores que receberam pagamentos de ${aAnt}–${aAtu} em despesas de contratação e dos quais o SIGA não tem nenhum documento neste órgão: ${nInt.format(nContrato)} citam um código de contrato do SIGEFES (o sistema financeiro do Estado) e ${nInt.format(lista.length - nContrato)} são pagamentos recorrentes (ao menos 3 meses e R$ 100 mil) sem contrato registrado. Somam ${brlCompacto(total)} pagos. Pode ser contratação conduzida fora do SIGA (como as agências de publicidade da Secom, que não estão no SIGA, no PNCP nem no Portal da Transparência), contrato registrado em outro órgão ou em nome de outro CNPJ; vale confirmar com o órgão. A ficha do fornecedor traz o cadastro da Receita, os sócios e as demais bases. O código é o do SIGEFES, não o número do instrumento; o objeto é o subelemento de despesa mais pago.`))),
     el('div', { class: 'rolagem' }, el('table', {},
-      el('thead', {}, el('tr', {}, ['Fornecedor', 'Objeto do gasto (SIGEFES)', 'Código no SIGEFES', `Pago ${aAnt}`, `Pago ${aAtu}`, 'Meses com pagamento'].map((t, n) => el('th', { class: n === 3 || n === 4 ? 'num' : '' }, t)))),
+      el('thead', {}, el('tr', {}, ['Fornecedor', 'Objeto do gasto (SIGEFES)', 'Tipo', `Pago ${aAnt}`, `Pago ${aAtu}`, 'Pagamentos', 'Revisão'].map((t, n) => el('th', { class: n === 3 || n === 4 ? 'num' : '' }, t)))),
       el('tbody', {}, linhas))),
     lista.length > 10 ? el('div', { class: 'rodape-tabela' }, el('button', { type: 'button', class: 'botao',
       onclick: () => { estado.verSigefes = !estado.verSigefes; render(true); } }, estado.verSigefes ? 'Mostrar menos' : `Mostrar os ${nInt.format(lista.length)}`)) : null);
+  }
+
+  // Ficha do fornecedor: pagamentos do SIGEFES sem documento do SIGA, com o aviso do que falta (instrumento, vigência e valor contratado).
+  function cartaoSigefesForn(f) {
+    const lista = f.sigefes || [];
+    if (!f.semSiga && !lista.length) return null;
+    const [aAnt, aAtu] = dados.anosGasto;
+    const aviso = f.semSiga
+      ? 'Este fornecedor não tem contrato, ata nem compra registrada no SIGA em nenhum órgão. O que se sabe dele vem do SIGEFES (pagamentos), da Receita Federal (cadastro e sócios) e das bases de dívida ativa, sanções e prestação de contas eleitorais; contrato, vigência e valor contratado não constam dos dados abertos.'
+      : 'O SIGA não tem documento deste fornecedor em alguns dos órgãos que o pagam; os pagamentos abaixo vêm do SIGEFES.';
+    return el('div', { class: 'cartao' }, el('div', { class: 'cartao-topo' }, el('div', {}, el('h2', {}, 'Pagamentos no SIGEFES sem registro no SIGA'), el('p', {}, aviso))),
+      lista.length ? el('div', { class: 'rolagem' }, el('table', {},
+        el('thead', {}, el('tr', {}, ['Órgão', 'Objeto do gasto', 'Tipo', `Pago ${aAnt}`, `Pago ${aAtu}`, 'Pagamentos'].map((t, n) => el('th', { class: n === 3 || n === 4 ? 'num' : '' }, t)))),
+        el('tbody', {}, lista.map((x) => el('tr', {},
+          el('td', {}, x.orgNome), el('td', { class: 'objeto' }, x.objeto ? nomeProprio(x.objeto) : '—', el('small', {}, [x.licitacao && nomeProprio(x.licitacao), x.numeroLicitacao && 'licitação ' + x.numeroLicitacao].filter(Boolean).join(' · '))),
+          el('td', {}, TIPO_SIGEFES[x.tipo] || x.tipo, el('small', {}, x.codigo ? 'código ' + x.codigo : `${x.meses} meses`)),
+          el('td', { class: 'num' }, x.pagoAnt > 0 ? brlCompacto(x.pagoAnt) : '—'), el('td', { class: 'num' }, x.pagoAtu > 0 ? brlCompacto(x.pagoAtu) : '—'), el('td', {}, `${x.desde} a ${x.ate}`)))))) : null);
   }
 
   // Linhas da ficha com o que a consulta pública do e-Docs informa do processo (sem o conteúdo dos documentos).
@@ -779,7 +814,7 @@
       el('li', {}, 'Dívida ativa da União: ', el('a', { href: 'https://www.regularize.pgfn.gov.br/', target: '_blank', rel: 'noopener' }, 'PGFN, Regularize'), ' e dados abertos em dadosabertos.pgfn.gov.br'),
       el('li', {}, 'Doações e candidaturas: ', el('a', { href: 'https://divulgacandcontas.tse.jus.br/', target: '_blank', rel: 'noopener' }, 'DivulgaCandContas (TSE)'), ' e dados abertos em dadosabertos.tse.jus.br'),
       el('li', {}, 'Contratos e pagamentos do Estado: ', el('a', { href: 'https://transparencia.es.gov.br/', target: '_blank', rel: 'noopener' }, 'Portal da Transparência do ES'), ' (buscar pelo CNPJ ou pelo número do contrato)')));
-    c.replaceChildren(...[cab, barra, faixa, ficha, cPagos, alertas, cartaoPolitico(f.externo, f), cartaoFiscal(f.externo), socios, orgs, fontes].filter(Boolean));
+    c.replaceChildren(...[cab, barra, faixa, ficha, cartaoSigefesForn(f), cPagos, alertas, cartaoPolitico(f.externo, f), cartaoFiscal(f.externo), socios, orgs, fontes].filter(Boolean));
   }
 
   // ---------- lista de revisão ----------

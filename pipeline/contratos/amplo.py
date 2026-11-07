@@ -194,35 +194,84 @@ def contato_cadastral(natureza, email, ddd1="", tel1="", ddd2="", tel2=""):
     return {"email": email, "telefones": telefones} if email or telefones else None
 
 
-# --- contratos que só aparecem no SIGEFES (pagamento com código de contrato, sem nenhum documento do SIGA no órgão) --------------------------------
-def contratos_do_sigefes(linhas, nomes, ug_org, pares_sem_doc, anos, elementos):
-    """Agrupa os pagamentos do SIGEFES que citam um código de contrato e cujo fornecedor não tem documento algum do SIGA no órgão pagador.
+# --- pagamentos do SIGEFES sem documento do SIGA: contratos conhecidos só pelo sistema financeiro e fornecedores recorrentes sem contrato registrado ----------
+# Elementos de despesa que são compra de bens e contratação de serviços e obras (os que um contrato sustenta). Ficam de fora transferências
+# (auxílios, subvenções, contribuições), contratos de gestão com organizações sociais, dívida, tributos, sentenças, pessoal e imóveis.
+ELEMENTOS_CONTRATACAO = {"30": "material de consumo", "32": "material de distribuição gratuita", "33": "passagens e locomoção", "34": "terceirização de pessoal",
+                         "35": "serviços de consultoria", "37": "locação de mão de obra", "38": "arrendamento mercantil", "39": "outros serviços de terceiros, pessoa jurídica",
+                         "40": "serviços de tecnologia da informação e comunicação", "51": "obras e instalações", "52": "equipamentos e material permanente"}
+VALOR_RELEVANTE_SIGEFES = 100_000.0       # pago nos dois últimos exercícios, em elementos de contratação
+MESES_RECORRENTE = 3                      # meses distintos com pagamento ao mesmo fornecedor pela mesma unidade gestora
 
-    linhas: [cnpj, ug, elemento, contrato, licitação, 'AAAA-MM', empenhado, liquidado, pago] (despesas.py); nomes: nomes de fornecedores e as
-    descrições 'SB<ug>|<cnpj>|<contrato>' -> 'subelemento|subfunção'; ug_org: unidade gestora -> órgão do SIGA; pares_sem_doc: {(órgão, cnpj)};
-    anos: anos de interesse (texto); elementos: elementos de despesa de contratação. Devolve {órgão: [contrato]} com os de maior pago primeiro.
 
-    Serve para publicidade e outras contratações que o SIGA não registra: o SIGEFES conhece o contrato (código, tipo de licitação e o que se
-    paga), o SIGA não."""
+def fornecedores_relevantes(linhas, cnpjs_siga, elementos, minimo_valor=VALOR_RELEVANTE_SIGEFES, minimo_meses=MESES_RECORRENTE):
+    """CNPJs pagos pelo SIGEFES em elementos de contratação que não aparecem em nenhum documento do SIGA e têm pagamento relevante: ao menos
+    `minimo_valor` e, ou pagamentos em `minimo_meses` meses distintos, ou algum pagamento que cita código de contrato do SIGEFES.
+
+    linhas: [cnpj, ug, elemento, contrato, licitação, 'AAAA-MM', empenhado, liquidado, pago] (despesas.py). Serve para ampliar a Receita, as bases
+    externas (PGFN, CEIS, TSE) e o Diário Oficial a quem o SIGA não conhece."""
+    pago, meses, com_codigo = {}, {}, set()
+    for cnpj, _ug, el, ct, _lic, mes, _e, _l, p in linhas:
+        if el not in elementos or p <= 0 or cnpj in cnpjs_siga:
+            continue
+        pago[cnpj] = pago.get(cnpj, 0.0) + p
+        meses.setdefault(cnpj, set()).add(mes)
+        if (ct or "").strip().strip("0"):
+            com_codigo.add(cnpj)
+    return {c for c, v in pago.items() if v >= minimo_valor and (len(meses[c]) >= minimo_meses or c in com_codigo)}
+
+
+def contratos_do_sigefes(linhas, nomes, subs, meta, ug_org, pares_sem_doc, anos, elementos, minimo_valor=VALOR_RELEVANTE_SIGEFES, minimo_meses=MESES_RECORRENTE):
+    """Agrupa os pagamentos do SIGEFES a fornecedores que não têm documento algum do SIGA no órgão pagador, por órgão, fornecedor, unidade gestora e
+    código de contrato do SIGEFES.
+
+    Dois tipos: 'contrato' (os pagamentos citam um código de contrato) e 'recorrente' (sem código, mas com ao menos `minimo_valor` pago e
+    `minimo_meses` meses distintos de pagamento: despesa continuada, passível de revisão contratual embora sem instrumento no SIGA).
+    nomes: nomes dos fornecedores; subs: {'ug|cnpj|contrato': {'subelemento|subfunção': pago}}; meta: {'ug|cnpj|contrato': [licitação, processo,
+    embasamento, ação]}; ug_org: unidade gestora -> órgão do SIGA; pares_sem_doc: {(órgão, cnpj)}; anos: anos de interesse (texto); elementos: elementos de
+    despesa de contratação. Devolve {órgão: [grupo]} com os de maior pago primeiro."""
     grupos = {}
     for cnpj, ug, el, ct, lic, mes, _emp, _liq, pago in linhas:
         ct = (ct or "").strip()
+        if not ct.strip("0"):
+            ct = ""
         org = ug_org.get(ug)
-        if org is None or el not in elementos or not ct.strip("0") or (org, cnpj) not in pares_sem_doc or mes[:4] not in anos:
+        if org is None or el not in elementos or (org, cnpj) not in pares_sem_doc or mes[:4] not in anos or pago <= 0:
             continue
-        g = grupos.setdefault((org, cnpj, ct), {"cnpj": cnpj, "forn": nomes.get(cnpj, cnpj), "codigo": ct, "licitacao": lic or "", "ug": ug,
-                                               "pago": {a: 0.0 for a in anos}, "desde": mes, "ate": mes})
+        g = grupos.setdefault((org, cnpj, ct, ug), {"cnpj": cnpj, "forn": nomes.get(cnpj, cnpj), "codigo": ct, "tipo": "contrato" if ct else "recorrente",
+                                                    "licitacao": lic or "", "ug": ug, "pago": {a: 0.0 for a in anos}, "meses": set(), "desde": mes, "ate": mes})
         g["pago"][mes[:4]] += pago
+        g["meses"].add(mes)
         g["desde"], g["ate"] = min(g["desde"], mes), max(g["ate"], mes)
     saida = {}
-    for (org, cnpj, ct), g in grupos.items():
-        sub, _, fun = (nomes.get(f"SB{g['ug']}|{cnpj}|{ct}") or "").partition("|")
+    for (org, cnpj, ct, ug), g in grupos.items():
         total = sum(g["pago"].values())
-        if total <= 0:
+        if not ct and (total < minimo_valor or len(g["meses"]) < minimo_meses):
             continue
-        g.update(objeto=sub.strip(), subfuncao=fun.strip(), total=round(total, 2))
+        chave = f"{ug}|{cnpj}|{ct}"
+        sub = max((subs or {}).get(chave, {}).items(), key=lambda kv: kv[1], default=("|", 0.0))[0]
+        objeto, _, subfuncao = sub.partition("|")
+        licit, processo, embasamento, acao = (list((meta or {}).get(chave, [])) + ["", "", "", ""])[:4]
+        g.update(objeto=objeto.strip(), subfuncao=subfuncao.strip(), numeroLicitacao=licit, processo=processo, embasamento=embasamento, acao=acao,
+                 total=round(total, 2), meses=len(g["meses"]))
         g["pago"] = {a: round(v, 2) for a, v in g["pago"].items()}
         saida.setdefault(org, []).append(g)
     for lista in saida.values():
         lista.sort(key=lambda g: -g["total"])
     return saida
+
+
+def cnpjs_relevantes_do_cache(cnpjs_siga, pasta, anos=None):
+    """fornecedores_relevantes lendo os despesas_AAAA.json de `pasta` (todos, ou só os `anos` pedidos, em texto). Conjunto vazio se não há arquivo."""
+    import glob
+    import json
+    import os
+    linhas = []
+    for f in sorted(glob.glob(os.path.join(pasta, "despesas_20??.json"))):
+        try:
+            d = json.load(open(f))
+        except (OSError, ValueError):
+            continue
+        if anos is None or str(d.get("ano")) in anos:
+            linhas += d["linhas"]
+    return fornecedores_relevantes(linhas, cnpjs_siga, ELEMENTOS_CONTRATACAO) if linhas else set()

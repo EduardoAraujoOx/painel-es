@@ -4,7 +4,7 @@
 `execucao.py` guarda só os pagamentos a CNPJs que aparecem em algum documento do SIGA, o que deixa de fora fornecedores que
 nunca passaram pelo SIGA. Este script lê o mesmo arquivo anual (em fatias de bytes, em paralelo, sem gravá-lo em disco) e guarda
 todos os pagamentos a CNPJ (CPF não é lido), agregados por CNPJ, unidade gestora, elemento de despesa, código de contrato do
-SIGEFES, tipo de licitação e mês. Guarda também, em `nomes`, o subelemento e a subfunção de cada (UG, CNPJ, contrato do SIGEFES). O `montar.py` usa esse arquivo para completar o pago dos órgãos com os fornecedores fora do SIGA.
+SIGEFES, tipo de licitação e mês. Guarda também, por (UG, CNPJ, contrato do SIGEFES), os subelementos e subfunções pagos (`subelementos`) e a licitação, o processo, o embasamento e a ação do último pagamento (`meta`). O `montar.py` usa esse arquivo para completar o pago dos órgãos com os fornecedores fora do SIGA.
 
 Resultado: .cache/contratos/despesas_<ano>.json
 Uso: python3 -I pipeline/contratos/despesas.py 2025 2026      (cada ano leva de 5 a 10 minutos; arquivo de 1 a 1,5 GB)
@@ -30,7 +30,7 @@ NCOLUNAS = 71
 # posições no arquivo Despesas-AAAA.csv
 C_DATA, C_EMP, C_LIQ, C_PAGO, C_CNPJ, C_FAVORECIDO, C_LICITACAO = 1, 2, 3, 4, 6, 9, 11
 C_UG, C_UG_NOME, C_ELEMENTO, C_ELEMENTO_NOME, C_CONTRATO = 21, 22, 25, 26, 69
-C_SUBFUNCAO, C_SUBELEMENTO = 39, 47
+C_SUBFUNCAO, C_SUBELEMENTO, C_ACAO, C_EMBASAMENTO, C_NUM_LICITACAO, C_ANO_LICITACAO, C_NUM_PROCESSO = 39, 47, 43, 54, 59, 60, 51
 
 
 def valor(b):
@@ -60,15 +60,17 @@ def linha_para_registro(linha):
     chave = (c[C_CNPJ], c[C_UG], c[C_ELEMENTO], c[C_CONTRATO].strip(), c[C_LICITACAO], mes)
     vals = [valor(c[C_EMP].encode()), valor(c[C_LIQ].encode()), valor(c[C_PAGO].encode())]
     nomes = {c[C_CNPJ]: c[C_FAVORECIDO], "UG" + c[C_UG]: c[C_UG_NOME], "EL" + c[C_ELEMENTO]: c[C_ELEMENTO_NOME]}
-    if c[C_CONTRATO].strip().strip("0"):
-        # o que o SIGEFES diz do objeto do gasto (subelemento e subfunção) por unidade gestora, fornecedor e código de contrato do SIGEFES
-        nomes[f"SB{c[C_UG]}|{c[C_CNPJ]}|{c[C_CONTRATO].strip()}"] = f"{c[C_SUBELEMENTO].strip()}|{c[C_SUBFUNCAO].strip()}"
-    return chave, vals, nomes
+    # o que o SIGEFES diz do gasto, por unidade gestora, fornecedor e código de contrato do SIGEFES (vazio quando o pagamento não cita contrato):
+    # subelemento e subfunção (somados por valor pago) e, do último pagamento visto, a licitação, o processo, o embasamento legal e a ação
+    ctx = f"{c[C_UG]}|{c[C_CNPJ]}|{c[C_CONTRATO].strip()}"
+    extra = (ctx, f"{c[C_SUBELEMENTO].strip()}|{c[C_SUBFUNCAO].strip()}",
+             [f"{c[C_NUM_LICITACAO].strip()}/{c[C_ANO_LICITACAO].strip()}" if c[C_NUM_LICITACAO].strip() else "", c[C_NUM_PROCESSO].strip(), c[C_EMBASAMENTO].strip(), c[C_ACAO].strip()])
+    return chave, vals, nomes, extra
 
 
 def ler_fatia(args):
     url, ini, fim, tam = args
-    agg, nomes, vistas, lidas, aceitas, ruins = {}, {}, set(), 0, 0, 0
+    agg, nomes, subs, meta, vistas, lidas, aceitas, ruins = {}, {}, {}, {}, set(), 0, 0, 0
     cmd = ["curl", "-sS", "-L", "--fail", "--retry", "4", "--retry-delay", "3", "-r", f"{max(0, ini - 1)}-{min(tam - 1, fim + SOBRA)}", url]
     p = subprocess.Popen(cmd, stdout=subprocess.PIPE, bufsize=1 << 20)
     pos, primeira = max(0, ini - 1), True
@@ -93,15 +95,18 @@ def ler_fatia(args):
             continue
         vistas.add(h)
         aceitas += 1
-        chave, vals, nm = r
+        chave, vals, nm, (ctx, sub, info) = r
         a = agg.setdefault(chave, [0.0, 0.0, 0.0])
         for j in range(3):
             a[j] += vals[j]
         nomes.update(nm)
+        d_ = subs.setdefault(ctx, {})
+        d_[sub] = d_.get(sub, 0.0) + vals[2]
+        meta[ctx] = info
     p.stdout.close()
     if p.wait() != 0:
         return None
-    return agg, nomes, lidas, aceitas, ruins
+    return agg, nomes, subs, meta, lidas, aceitas, ruins
 
 
 def fatia(args):
@@ -116,10 +121,15 @@ def ler_ano(ano):
     url = E.resolver_recursos()[ano]
     tam = E.tamanho(url)
     trabalhos = [(url, i, min(tam, i + FATIA), tam) for i in range(0, tam, FATIA)]
-    agg, nomes, lidas, aceitas, ruins = {}, {}, 0, 0, 0
+    agg, nomes, subs, meta, lidas, aceitas, ruins = {}, {}, {}, {}, 0, 0, 0
     with Pool(PARALELO) as pool:
-        for ag, nm, l, a, r in pool.imap_unordered(fatia, trabalhos):
+        for ag, nm, sb, mt, l, a, r in pool.imap_unordered(fatia, trabalhos):
             lidas += l
+            for k_, v_ in sb.items():
+                d_ = subs.setdefault(k_, {})
+                for kk, vv in v_.items():
+                    d_[kk] = d_.get(kk, 0.0) + vv
+            meta.update(mt)
             aceitas += a
             ruins += r
             nomes.update(nm)
@@ -131,7 +141,8 @@ def ler_ano(ano):
     os.makedirs(CACHE, exist_ok=True)
     with open(destino, "w") as f:
         json.dump({"ano": ano, "colunas": ["cnpj", "ug", "elemento", "contrato", "licitacao", "mes", "empenhado", "liquidado", "pago"],
-                   "linhas": [list(k) + v for k, v in sorted(agg.items())], "nomes": nomes}, f, ensure_ascii=False, separators=(",", ":"))
+                   "linhas": [list(k) + v for k, v in sorted(agg.items())], "nomes": nomes,
+                   "subelementos": {k: {a: round(b, 2) for a, b in v.items()} for k, v in subs.items()}, "meta": meta}, f, ensure_ascii=False, separators=(",", ":"))
     print(f"{ano}: {lidas} linhas lidas, {aceitas} pagamentos a CNPJ, {ruins} descartadas; {len(agg)} grupos → {destino}", flush=True)
 
 

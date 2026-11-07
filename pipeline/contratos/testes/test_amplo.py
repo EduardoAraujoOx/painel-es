@@ -162,27 +162,41 @@ class ContatoCadastral(unittest.TestCase):
 
 
 class ContratosDoSigefes(unittest.TestCase):
-    NOMES = {"11145893000341": "AMPLA SERVICOS DE PROPAGANDA E PUBLICIDADE LTDA", "SB100104|11145893000341|21003003": "SERVIÇOS DE PUBLICIDADE INSTITUCIONAL|COMUNICAÇÃO SOCIAL"}
+    NOMES = {"11145893000341": "AMPLA SERVICOS DE PROPAGANDA E PUBLICIDADE LTDA", "22222222000122": "LIMPEZA RECORRENTE LTDA", "33333333000133": "EVENTUAL LTDA"}
+    SUBS = {"100104|11145893000341|21003003": {"SERVIÇOS DE PUBLICIDADE INSTITUCIONAL|COMUNICAÇÃO SOCIAL": 3000.0, "OUTRO|X": 10.0},
+            "100104|22222222000122|": {"LIMPEZA E CONSERVAÇÃO|ADMINISTRAÇÃO": 900.0}}
+    META = {"100104|11145893000341|21003003": ["001/2021", "2021-ABCDE", "Lei nº 8.666/1993", "DIVULGAÇÃO INSTITUCIONAL"]}
     LINHAS = [["11145893000341", "100104", "39", "21003003", "CONCORRÊNCIA", "2026-03", 0.0, 0.0, 1683.67],
               ["11145893000341", "100104", "39", "21003003", "CONCORRÊNCIA", "2026-06", 0.0, 0.0, 1000.0],
               ["11145893000341", "100104", "39", "21003003", "CONCORRÊNCIA", "2025-12", 0.0, 0.0, 500.0],
               ["11145893000341", "100104", "13", "21003003", "CONCORRÊNCIA", "2026-03", 0.0, 0.0, 9999.0],      # elemento fora da contratação
-              ["11145893000341", "100104", "39", "00000000", "CONCORRÊNCIA", "2026-03", 0.0, 0.0, 7.0],         # sem código de contrato
+              ["22222222000122", "100104", "39", "", "PREGÃO", "2026-01", 0.0, 0.0, 40000.0],                     # recorrente sem código: 3 meses e R$ 120 mil
+              ["22222222000122", "100104", "39", "00000000", "PREGÃO", "2026-02", 0.0, 0.0, 40000.0],
+              ["22222222000122", "100104", "39", "", "PREGÃO", "2026-03", 0.0, 0.0, 40000.0],
+              ["33333333000133", "100104", "39", "", "DISPENSA", "2026-03", 0.0, 0.0, 500000.0],                # um mês só: não é recorrente
               ["99999999000199", "100104", "39", "55", "PREGÃO", "2026-03", 0.0, 0.0, 800.0]]                   # fornecedor com documento no SIGA
 
     def roda(self, **kw):
-        args = dict(linhas=self.LINHAS, nomes=self.NOMES, ug_org={"100104": 175}, pares_sem_doc={(175, "11145893000341")}, anos=("2025", "2026"), elementos={"39": "x"})
+        args = dict(linhas=self.LINHAS, nomes=self.NOMES, subs=self.SUBS, meta=self.META, ug_org={"100104": 175},
+                    pares_sem_doc={(175, "11145893000341"), (175, "22222222000122"), (175, "33333333000133")}, anos=("2025", "2026"), elementos={"39": "x"})
         args.update(kw)
         return A.contratos_do_sigefes(**args)
 
-    def test_agrupa_por_contrato_e_soma_por_ano(self):
-        r = self.roda()
-        self.assertEqual(list(r), [175])
-        g = r[175][0]
+    def test_contrato_com_codigo_agrupa_e_traz_objeto_e_metadados(self):
+        r = self.roda()[175]
+        g = [x for x in r if x["tipo"] == "contrato"][0]
         self.assertEqual((g["codigo"], g["licitacao"], g["objeto"], g["subfuncao"]), ("21003003", "CONCORRÊNCIA", "SERVIÇOS DE PUBLICIDADE INSTITUCIONAL", "COMUNICAÇÃO SOCIAL"))
         self.assertEqual(g["pago"], {"2025": 500.0, "2026": 2683.67})
-        self.assertEqual((g["desde"], g["ate"], g["total"]), ("2025-12", "2026-06", 3183.67))
-        self.assertEqual(len(r[175]), 1)
+        self.assertEqual((g["desde"], g["ate"], g["total"], g["meses"]), ("2025-12", "2026-06", 3183.67, 3))
+        self.assertEqual((g["numeroLicitacao"], g["processo"], g["embasamento"]), ("001/2021", "2021-ABCDE", "Lei nº 8.666/1993"))
+
+    def test_recorrente_sem_codigo_entra_so_com_valor_e_meses_suficientes(self):
+        r = self.roda()[175]
+        rec = [x for x in r if x["tipo"] == "recorrente"]
+        self.assertEqual([x["cnpj"] for x in rec], ["22222222000122"])
+        self.assertEqual((rec[0]["total"], rec[0]["meses"], rec[0]["objeto"]), (120000.0, 3, "LIMPEZA E CONSERVAÇÃO"))
+        self.assertNotIn("33333333000133", [x["cnpj"] for x in r])      # R$ 500 mil em um mês só
+        self.assertEqual(r[0]["tipo"], "recorrente")                    # ordenado por valor pago
 
     def test_so_pares_sem_documento_e_ug_conhecida(self):
         self.assertEqual(self.roda(pares_sem_doc=set()), {})
@@ -190,6 +204,19 @@ class ContratosDoSigefes(unittest.TestCase):
 
     def test_ano_fora_do_periodo_nao_entra(self):
         self.assertEqual(self.roda(anos=("2024",)), {})
+
+
+class FornecedoresRelevantes(unittest.TestCase):
+    LINHAS = [["1", "10", "39", "", "P", "2026-01", 0, 0, 40000.0], ["1", "10", "39", "", "P", "2026-02", 0, 0, 40000.0], ["1", "10", "39", "", "P", "2026-03", 0, 0, 40000.0],
+              ["2", "10", "39", "777", "C", "2026-03", 0, 0, 150000.0],                 # um mês, mas com código de contrato
+              ["3", "10", "39", "", "D", "2026-03", 0, 0, 900000.0],                    # um mês e sem código
+              ["4", "10", "13", "", "P", "2026-01", 0, 0, 500000.0],                    # elemento fora da contratação
+              ["5", "10", "39", "", "P", "2026-01", 0, 0, 90000.0], ["5", "10", "39", "", "P", "2026-02", 0, 0, 5000.0], ["5", "10", "39", "", "P", "2026-03", 0, 0, 5000.0],
+              ["6", "10", "39", "", "P", "2026-01", 0, 0, 90000.0], ["6", "10", "39", "", "P", "2026-02", 0, 0, 90000.0], ["6", "10", "39", "", "P", "2026-03", 0, 0, 90000.0]]
+
+    def test_criterio(self):
+        r = A.fornecedores_relevantes(self.LINHAS, cnpjs_siga={"6"}, elementos={"39": "x"})
+        self.assertEqual(r, {"1", "2", "5"})          # 3 fora (um mês, sem código), 4 (elemento), 6 (está no SIGA); 5 soma R$ 100 mil em 3 meses
 
 
 if __name__ == "__main__":
