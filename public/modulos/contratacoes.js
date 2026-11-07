@@ -111,10 +111,15 @@
 
   // Atos publicados no Diário Oficial (diario.py): rescisões, aditivos, prorrogações, penalidades. Cada um leva ao PDF da edição; o trecho é o texto extraído do PDF, para conferência.
   function atosDiario(lista) {
-    return el('div', { class: 'atos-diario' }, lista.map(([data, tipo, protocolo, pagina, edicao, trecho]) => el('details', {},
-      el('summary', {}, `${dataBR(data)} · ${tipo}${protocolo ? ' · protocolo ' + protocolo : ''}`, ' ',
-        el('a', { href: URL_DIO + encodeURIComponent(edicao), target: '_blank', rel: 'noopener noreferrer', onclick: (ev) => ev.stopPropagation() }, `abrir a edição (p. ${pagina})`)),
-      el('p', { class: 'trecho-diario' }, trecho))));
+    return el('div', { class: 'atos-diario' }, lista.map(([data, tipo, protocolo, pagina, edicao, trecho, campos]) => {
+      const f = campos || {};
+      const resumo = [f.termo ? `${f.termo}º termo aditivo` : '', f.valor != null ? `valor citado ${brlCompacto(f.valor)}` : ''].filter(Boolean).join(' · ');
+      return el('details', {},
+        el('summary', {}, `${dataBR(data)} · ${tipo}${resumo ? ' · ' + resumo : ''}${protocolo ? ' · protocolo ' + protocolo : ''}`, ' ',
+          el('a', { href: URL_DIO + encodeURIComponent(edicao), target: '_blank', rel: 'noopener noreferrer', onclick: (ev) => ev.stopPropagation() }, `abrir a edição (p. ${pagina})`)),
+        f.objeto ? el('p', { class: 'trecho-diario' }, el('b', {}, 'Objeto do ato: '), f.objeto) : null,
+        el('p', { class: 'trecho-diario' }, trecho));
+    }));
   }
 
   // ---------- busca de fornecedor ----------
