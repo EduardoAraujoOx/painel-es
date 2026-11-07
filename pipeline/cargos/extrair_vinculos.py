@@ -6,22 +6,32 @@
     oficial (EFETIVO, COMISSIONADO...), a data de exercício do vínculo e o setor de lotação
     (código e nome), de onde o módulo "organograma" tira a hierarquia de unidades.
 
-O CPF vem mascarado na fonte e, de todo modo, não é lido nem guardado.
+O CPF vem mascarado na fonte (***.123.456-**). Só os seis dígitos centrais são lidos, e apenas para confirmar identidade por nome mais esses dígitos no cruzamento com sócios de
+fornecedores (contratos/montar.py); ficam em .cache/cargos/miolos.json, que não é versionado. O CPF completo nunca é lido.
 Resultado em .cache/cargos/vinculos.json. Uso: python3 pipeline/cargos/extrair_vinculos.py
 """
 import json
 import os
+import re
 import sys
+import unicodedata
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import extrair  # noqa: E402
 import regras  # noqa: E402
 
 
+def norm_nome(s):
+    """Nome sem acento, em maiúsculas e com espaços normalizados (mesma regra de contratos/regras.py)."""
+    sem = "".join(c for c in unicodedata.normalize("NFD", s or "") if unicodedata.category(c) != "Mn")
+    return re.sub(r"\s+", " ", sem.upper()).strip()
+
+
 def main():
     url = extrair.listar_recursos()["vinculos"]
     orgaos = {}
     vinc = {}
+    miolos = {}  # "NOME NORMALIZADO|seis dígitos centrais do CPF" -> órgãos de lotação dos vínculos ATIVOS
     todos = {}   # todos os vínculos ATIVOS (inclusive sem função): [tipo de vínculo, código do setor, nome do setor]
     lidas = 0
     for r in extrair.linhas_csv(url):
@@ -29,6 +39,9 @@ def main():
         orgaos.setdefault(r["Orgao"], r["OrgaoExt"])
         if r["Situacao"] == "ATIVO":
             todos[f'{r["Orgao"]}|{r["NumFunc"]}|{r["NumVinc"]}'] = [r["TipoVinculo"], r["SiglaSetor"], r["NomeSetor"]]
+            m = re.match(r"\*\*\*\.(\d{3})\.(\d{3})-\*\*", r.get("Cpf") or "")
+            if m:
+                miolos.setdefault(f'{norm_nome(r["Nome"])}|{m.group(1)}{m.group(2)}', set()).add(r["Orgao"])
         if r["Situacao"] != "ATIVO" or r["TipoFuncao"] not in regras.TIPOS_ALVO:
             continue
         chave = f'{r["Orgao"]}|{r["NumFunc"]}|{r["NumVinc"]}'
@@ -39,6 +52,7 @@ def main():
               ensure_ascii=False, separators=(",", ":"))
     json.dump(todos, open(os.path.join(extrair.CACHE, "vinculos_todos.json"), "w"),
               ensure_ascii=False, separators=(",", ":"))
+    json.dump({k: sorted(v) for k, v in miolos.items()}, open(os.path.join(extrair.CACHE, "miolos.json"), "w"), ensure_ascii=False, separators=(",", ":"))
     print(f"{len(todos)} vínculos ativos no total;", end=" ")
     print(f"{lidas} linhas lidas; {len(orgaos)} órgãos; {len(vinc)} vínculos ativos com função")
 

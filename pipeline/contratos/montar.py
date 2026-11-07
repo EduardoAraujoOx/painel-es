@@ -374,18 +374,12 @@ def avaliar_contrato(c):
 
 
 # ----------------------------------------------------------------------------------- servidores
-def nomes_de_servidores():
-    nomes = collections.defaultdict(set)
+def miolos_de_servidores():
+    """{"NOME|seis dígitos centrais do CPF": [órgãos]} dos servidores ativos (cargos/extrair_vinculos.py); vazio se ainda não foi gerado, e então nenhum sócio é apontado."""
     try:
-        for p in json.load(open(os.path.join(RAIZ, ".cache", "organograma", "todos.json")))["pessoas"]:
-            nomes[R.norm_nome(p[3])].add(p[0])
-    except OSError:
-        pass
-    cargos = sorted(glob.glob(os.path.join(RAIZ, ".cache", "cargos", "20??-??.json")))
-    if cargos:
-        for p in json.load(open(cargos[-1]))["registros"]:
-            nomes[R.norm_nome(p[3])].add(p[0])
-    return nomes
+        return json.load(open(os.path.join(RAIZ, ".cache", "cargos", "miolos.json")))
+    except (OSError, ValueError):
+        return {}
 
 
 # ------------------------------------------------------------------------------- bases externas
@@ -553,7 +547,9 @@ def fmt_data_rfb(s):
 def fichas_fornecedores(recs, receita, extras=frozenset()):
     """Ficha por CNPJ com cadastro e sócios; devolve também índices para os alertas cruzados."""
     emp_rfb, est, soc, rede, tab = (receita["empresas"], receita["estab"], receita["socios"], receita["rede"], receita["tabelas"])
-    nomes_srv = nomes_de_servidores()
+    miolos_srv = miolos_de_servidores()
+    if not miolos_srv:
+        print("servidores: .cache/cargos/miolos.json ausente; nenhum sócio é apontado como servidor (a confirmação exige nome e seis dígitos do CPF)", flush=True)
     cnpjs = {c["cnpj"] for c in recs if len(c["cnpj"]) == 14} | set(extras)      # extras: pagos pelo SIGEFES e sem documento algum no SIGA
     por_raiz = collections.defaultdict(list)
     for c in sorted(cnpjs):
@@ -583,7 +579,7 @@ def fichas_fornecedores(recs, receita, extras=frozenset()):
                 outras = [b for b in rede.get(f"{nome}|{cpf}", []) if b != raiz]
                 item["rede"] = len(outras) + 1
                 item["outros"] = [x for b in outras for x in por_raiz.get(b, [])]
-                item["servidor"] = sorted(nomes_srv.get(R.norm_nome(nome), ())) if len(nome.split()) >= 3 else []
+                item["servidor"] = sorted(R.servidor_confirmado(nome, cpf, miolos_srv))
             socios.append(item)
         f["socios"] = socios
         fichas[cnpj] = f
@@ -836,7 +832,7 @@ def main():
                     onde = ", com contratação no mesmo processo." if mesmo_proc else ", atendendo ao mesmo órgão." if mesmo_orgao else "."
                     al.append(("socio_em_comum", nivel, f"{s['nome']} também é sócio de {len(s['outros'])} outro(s) fornecedor(es) do Estado" + onde))
                 if s["servidor"]:
-                    al.append(("socio_servidor", "m", f"{s['nome']}: nome igual ao de servidor ativo ({', '.join(s['servidor'][:4])})."))
+                    al.append(("socio_servidor", "m", f"{s['nome']}: nome e seis dígitos centrais do CPF iguais aos de servidor ativo ({', '.join(s['servidor'][:4])})."))
                 if s["rede"] >= R.REDE_GRANDE:
                     al.append(("rede_grande", "i", f"{s['nome']} consta como sócio em {s['rede']} empresas."))
         if len(c) == 14:

@@ -768,7 +768,7 @@
         el('td', {}, s.rede ? `${nInt.format(s.rede)} empresa${s.rede > 1 ? 's' : ''} no país` : '—'),
         el('td', {}, s.outros && s.outros.length ? el('div', {}, 'Também sócio de fornecedor(es) do Estado: ', s.outros.map((o, i) => [i ? ', ' : '',
           el('a', { href: `#/contratacoes/${encodeURIComponent('f:' + o.cnpj)}` }, nomeProprio(o.nome))])) : null,
-        s.servidor && s.servidor.length ? el('small', { class: 'aviso-inline' }, `Nome igual ao de servidor ativo (${s.servidor.slice(0, 4).join(', ')}); pode ser homonímia.`) : null))))))
+        s.servidor && s.servidor.length ? el('small', { class: 'aviso-inline' }, `Servidor ativo (${s.servidor.slice(0, 4).join(', ')}): nome e seis dígitos centrais do CPF coincidem; confirmar com o CPF completo.`) : null))))))
       : el('p', { class: 'vazio' }, 'Quadro societário não disponível.'));
 
     const [aAnt, aAtu] = dados.anosGasto;
@@ -1375,7 +1375,7 @@
   function preencherMetodo() {
     const lista = Object.values(dados.alertas).map((v) => el('li', {}, el('b', {}, `${v.titulo} (nível padrão: ${v.nivel}): `), v.descricao));
     $('#metodo').replaceChildren(
-      el('p', {}, `Fontes: ${dados.fonte.contratos}; ${dados.fonte.cadastro}; e a folha de pagamento do Poder Executivo (módulo Cargos), para o cruzamento de nomes de sócios com servidores. Posição em ${dataBR(dados.ref)}.`),
+      el('p', {}, `Fontes: ${dados.fonte.contratos}; ${dados.fonte.cadastro}; e a folha de pagamento do Poder Executivo (módulo Cargos), para o cruzamento de sócios com servidores (só se apontam os que coincidem em nome e nos seis dígitos centrais do CPF). Posição em ${dataBR(dados.ref)}.`),
       el('p', {}, 'Desde quando é a data do primeiro instrumento registrado do fornecedor no SIGA (a base começa em 2016). Ainda a receber é uma estimativa linear: valor anual do contrato vezes o tempo que falta, limitado ao valor final. A essencialidade é uma classificação sugerida pelo tipo de objeto (essencial, suporte, investimento, discricionário), para orientar a conversa com o gestor, não para decidir por ele.'),
       el('p', {}, 'Contrato vigente é o instrumento do tipo contrato, carta-contrato ou termo de adesão cuja data final, já considerados os aditivos de prazo, não passou, e cuja situação não é de encerramento, rescisão ou anulação. Compras avulsas (autorizações de compra, ordens de fornecimento e de serviço, notas de empenho) não entram na lista de vigentes, mas entram nos totais empenhados e na contratação direta.'),
       el('p', {}, 'Valor final é o valor total do instrumento. Em registros de preços, costuma ser o máximo estimado, não o que será executado. Compromisso anual é o valor final dividido pela duração em meses (no mínimo 12) e multiplicado por 12. Saldo a executar é o valor final menos o total empenhado no instrumento. Empenhado é o valor empenhado no ano, conforme o SIGA, que não cobre toda a execução. Pago vem da execução da despesa do SIGEFES (Portal da Transparência, despesas): somam-se os pagamentos aos CNPJs que aparecem nos contratos, por unidade gestora, ligada ao órgão do SIGA pelo número do empenho. No contrato, o pago soma só os empenhos que o SIGA vincula a ele (o painel mostra desde 2023, início da gestão atual, e desde 2021); no órgão e na ficha do fornecedor, é tudo o que o órgão pagou ao CNPJ, com ou sem contrato. Contagens: a visão geral conta contratos vigentes; a regra de Pareto de fornecedores conta CNPJs; os contratos principais contam contratos com valor anual registrado.'),
