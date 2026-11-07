@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-07",
- "gerado_em": "2026-11-07T16:17:12Z",
+ "gerado_em": "2026-11-07T19:17:11Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 12,
-   "aceitos": 3,
+   "lidos": 13,
+   "aceitos": 4,
    "possiveis": 2
   },
   {
@@ -49,9 +49,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 1,
-   "possiveis": 3
+   "lidos": 8,
+   "aceitos": 0,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -81,25 +81,25 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 1,
+   "lidos": 9,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 53,
-   "aceitos": 2,
-   "possiveis": 5
+   "lidos": 42,
+   "aceitos": 1,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 62,
+   "lidos": 60,
    "aceitos": 3,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 4,
+   "lidos": 8,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,24 +137,24 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
-   "aceitos": 2,
+   "lidos": 29,
+   "aceitos": 1,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
-   "aceitos": 2,
+   "lidos": 24,
+   "aceitos": 1,
    "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
-   "aceitos": 6,
+   "lidos": 29,
+   "aceitos": 7,
    "possiveis": 2
   },
   {
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -226,7 +226,7 @@
    "consulta": "https://simnoticias.com.br/politica/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -238,22 +238,46 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
   "oficial_sem_tema": 5,
-  "sem_contexto": 315,
-  "possivel": 25,
+  "sem_contexto": 298,
+  "possivel": 23,
   "oficial_divulgacao": 1,
-  "veiculo_excluido": 41,
+  "veiculo_excluido": 33,
   "sem_contexto_com_tema": 6,
   "excluir": 11,
-  "outro_estado": 16,
-  "exterior_sem_ancora": 3,
+  "outro_estado": 15,
+  "exterior_sem_ancora": 4,
   "caixa_alta": 1,
-  "veiculo_outra_praca": 8,
+  "veiculo_outra_praca": 14,
   "sigla_sem_ancora": 7
  },
  "itens": [
+  {
+   "id": "fb84fd52d0bc",
+   "titulo": "Investimento bilionário em energia vai criar mil empregos no Estado",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQOVJySUpsNG5pakktOW1QWVRvWFduTzBsYzdoamNQZ29oNHJuX0FZNTNKVmZadlNMUjk0VDFTZmNEU0gwMUR2Wi1jUTRWejA1X3JEVG5LNFdDLVZTTzZKSFVMdHVGUlJZS2xiMy1WRVphdURHYmlleVV4NjVBZ3NZVWtrc2JpOTBvcFNwV1g2VEZDYkZZNzRhYlBOT0tNZGtMYlpKTnVfMzdpZjhKVS13U0tn0gG6AUFVX3lxTFA2TkFzOGNjUUhvYlhzM3FESWtVRThXV0w0M2xIaDlQSzdPcS1Uc3plRm5RcllmRnVObjJxYWlCQlVQcHNmMkZ5Uy1nb0lwMm5uUUhPUHlQN01mRl8zZHNOdUxnbmlCVWxIRGVTbndHdFZkdlVROW5FYkRzQ244eTFsaERjcXBMbkxITXpXUGJPam5QQWdETnR4MGFPV2NFajhTLTJkRkpfTlJyaTFscl82Y05XU28xNUk0Zw?oc=5",
+   "data": "2026-11-07T18:31:42Z",
+   "coletado_em": "2026-11-07T19:17:11Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": []
+  },
+  {
+   "id": "5c787cabf633",
+   "titulo": "Concurso Idaf 2026: salários, cargos e data da prova",
+   "veiculo": "Capixaba da Gema",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPUGJDc1VtUm5wNTRsVkYtRWR1NXVxQmg2cVIzM1JWVWpLeTdYQzZMLVQyRGNkLUVPNURJZmplc0RFdWZBRzlqdWhJMkNGTF8tMjNtRmtuQTFoUjdFY3YxNlg0NDh0b05hTnFpaVViTFhielpITGF4NXVhT2JGdlJJVkJR?oc=5",
+   "data": "2026-11-07T14:59:22Z",
+   "coletado_em": "2026-11-07T19:17:11Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": []
+  },
   {
    "id": "78af5e11c158",
    "titulo": "Investimentos estaduais ampliam armazenamento de água e fortalecem prevenção à seca no Espírito Santo",
