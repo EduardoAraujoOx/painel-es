@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-07",
- "gerado_em": "2026-11-07T15:17:17Z",
+ "gerado_em": "2026-11-07T16:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 13,
-   "aceitos": 4,
+   "lidos": 12,
+   "aceitos": 3,
    "possiveis": 2
   },
   {
@@ -26,14 +26,14 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 23,
-   "aceitos": 7,
+   "aceitos": 6,
    "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 5,
    "possiveis": 1
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,15 +89,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 54,
-   "aceitos": 3,
+   "lidos": 53,
+   "aceitos": 2,
    "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 63,
+   "lidos": 62,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -147,7 +147,7 @@
    "ok": true,
    "lidos": 25,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -241,17 +241,17 @@
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
   "oficial_sem_tema": 5,
-  "sem_contexto": 321,
+  "sem_contexto": 315,
   "possivel": 25,
   "oficial_divulgacao": 1,
-  "veiculo_excluido": 42,
-  "sem_contexto_com_tema": 4,
-  "exterior_sem_ancora": 4,
+  "veiculo_excluido": 41,
+  "sem_contexto_com_tema": 6,
   "excluir": 11,
   "outro_estado": 16,
+  "exterior_sem_ancora": 3,
   "caixa_alta": 1,
   "veiculo_outra_praca": 8,
-  "sigla_sem_ancora": 6
+  "sigla_sem_ancora": 7
  },
  "itens": [
   {
@@ -1131,6 +1131,18 @@
    "temas": [
     "financas"
    ]
+  },
+  {
+   "id": "4500cc9a77b8",
+   "titulo": "Sedurb lança edital para comerciantes informais que queiram trabalhar na Romaria da Penha 2026",
+   "veiculo": "PBNews",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQYkJIUVBSVUo2S3hHMzMyWGtGeXE5V1dzUm4zZjUybzg5VUJCZXFkS3ZuM1ZlalplUHlYckZPYmQ3ZUJheDJrbEpWelVDOHEwc1RpbTlUZkhJdmdfN1plQnNLOTR5V0ZjSUtsd2p1bXN4N1FxUEFrTjRXdjhYNm80QWhFWkpxdGRMSHhqS1VZRjVrSnJBcTR6Z1ZXTzBtNGZHeEw4ZnRFaUhjLXFnWURfdTZfbzFCWEV3MVZYYm5mM0xmNFdFMGxkS2p3?oc=5",
+   "data": "2026-11-05T20:13:32Z",
+   "coletado_em": "2026-11-07T16:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": []
   },
   {
    "id": "6c4892931e59",
