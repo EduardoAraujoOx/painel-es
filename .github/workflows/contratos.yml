@@ -86,6 +86,12 @@ jobs:
       - name: Baixar o SIGA (contratos, alterações, empenhos e comissões)
         run: python3 -I pipeline/contratos/baixar.py
 
+      # Compara o que foi baixado com os totais por órgão da página Contratos do Portal da Transparência (grava data/contratacoes/cobertura.json).
+      - name: Conferir com o Portal da Transparência
+        id: portal
+        continue-on-error: true
+        run: python3 -I pipeline/contratos/portal.py
+
       # A Receita é lida só para os CNPJs dos contratos. No modo diário, CNPJs que entraram depois da última leitura ficam sem ficha até o próximo domingo.
       - name: Cadastro da Receita Federal
         if: steps.modo.outputs.completo == 'sim'
@@ -189,7 +195,7 @@ jobs:
           key: contratos-cache-${{ github.run_id }}
 
       - name: Avisar se a base ampla ou o e-Docs falhou
-        if: steps.despesas.outcome == 'failure' || steps.pncp.outcome == 'failure' || steps.diario.outcome == 'failure' || steps.edocs.outcome == 'failure'
+        if: steps.despesas.outcome == 'failure' || steps.portal.outcome == 'failure' || steps.pncp.outcome == 'failure' || steps.diario.outcome == 'failure' || steps.edocs.outcome == 'failure'
         run: |
-          echo "A leitura completa da despesa, a do PNCP, a do Diário Oficial ou a do e-Docs falhou (veja os passos acima). Os dados foram publicados só com as fontes que funcionaram."
+          echo "A leitura completa da despesa, a conferência com o Portal, a do PNCP, a do Diário Oficial ou a do e-Docs falhou (veja os passos acima). Os dados foram publicados só com as fontes que funcionaram."
           exit 1

@@ -161,5 +161,36 @@ class ContatoCadastral(unittest.TestCase):
         self.assertEqual(A.contato_cadastral("Sociedade Anônima Fechada", "sem-arroba", "27", "33313100")["email"], "")
 
 
+class ContratosDoSigefes(unittest.TestCase):
+    NOMES = {"11145893000341": "AMPLA SERVICOS DE PROPAGANDA E PUBLICIDADE LTDA", "SB100104|11145893000341|21003003": "SERVIÇOS DE PUBLICIDADE INSTITUCIONAL|COMUNICAÇÃO SOCIAL"}
+    LINHAS = [["11145893000341", "100104", "39", "21003003", "CONCORRÊNCIA", "2026-03", 0.0, 0.0, 1683.67],
+              ["11145893000341", "100104", "39", "21003003", "CONCORRÊNCIA", "2026-06", 0.0, 0.0, 1000.0],
+              ["11145893000341", "100104", "39", "21003003", "CONCORRÊNCIA", "2025-12", 0.0, 0.0, 500.0],
+              ["11145893000341", "100104", "13", "21003003", "CONCORRÊNCIA", "2026-03", 0.0, 0.0, 9999.0],      # elemento fora da contratação
+              ["11145893000341", "100104", "39", "00000000", "CONCORRÊNCIA", "2026-03", 0.0, 0.0, 7.0],         # sem código de contrato
+              ["99999999000199", "100104", "39", "55", "PREGÃO", "2026-03", 0.0, 0.0, 800.0]]                   # fornecedor com documento no SIGA
+
+    def roda(self, **kw):
+        args = dict(linhas=self.LINHAS, nomes=self.NOMES, ug_org={"100104": 175}, pares_sem_doc={(175, "11145893000341")}, anos=("2025", "2026"), elementos={"39": "x"})
+        args.update(kw)
+        return A.contratos_do_sigefes(**args)
+
+    def test_agrupa_por_contrato_e_soma_por_ano(self):
+        r = self.roda()
+        self.assertEqual(list(r), [175])
+        g = r[175][0]
+        self.assertEqual((g["codigo"], g["licitacao"], g["objeto"], g["subfuncao"]), ("21003003", "CONCORRÊNCIA", "SERVIÇOS DE PUBLICIDADE INSTITUCIONAL", "COMUNICAÇÃO SOCIAL"))
+        self.assertEqual(g["pago"], {"2025": 500.0, "2026": 2683.67})
+        self.assertEqual((g["desde"], g["ate"], g["total"]), ("2025-12", "2026-06", 3183.67))
+        self.assertEqual(len(r[175]), 1)
+
+    def test_so_pares_sem_documento_e_ug_conhecida(self):
+        self.assertEqual(self.roda(pares_sem_doc=set()), {})
+        self.assertEqual(self.roda(ug_org={}), {})
+
+    def test_ano_fora_do_periodo_nao_entra(self):
+        self.assertEqual(self.roda(anos=("2024",)), {})
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -14,6 +14,7 @@ def linha(cnpj="09232819000159", data="03/02/2026 00:00:00", emp="100,50", liq="
     c[0], c[1], c[2], c[3], c[4], c[6], c[9], c[11] = "2026", data, emp, liq, pago, cnpj, "FORNECEDOR TESTE LTDA", lic
     if n > 69:
         c[21], c[22], c[25], c[26], c[69] = ug, "SECRETARIA DE ESTADO DO GOVERNO", elemento, "SERVIÇOS DE TECNOLOGIA", contrato
+        c[39], c[47] = "COMUNICAÇÃO SOCIAL", "SERVIÇOS DE PUBLICIDADE INSTITUCIONAL"
     return (";".join(c) + "\n").encode("utf-8")
 
 
@@ -24,6 +25,7 @@ class Linha(unittest.TestCase):
         self.assertEqual(vals, [100.5, 80.25, 60.0])
         self.assertEqual(nomes["09232819000159"], "FORNECEDOR TESTE LTDA")
         self.assertEqual(nomes["UG100109"], "SECRETARIA DE ESTADO DO GOVERNO")
+        self.assertEqual(nomes["SB100109|09232819000159|25000052"], "SERVIÇOS DE PUBLICIDADE INSTITUCIONAL|COMUNICAÇÃO SOCIAL")
 
     def test_cpf_ou_documento_invalido_nao_e_lido(self):
         for doc in ("12345678901", "***123456**", "0923281900015", "0923281900015A", ""):
@@ -32,6 +34,10 @@ class Linha(unittest.TestCase):
     def test_linha_curta_ou_truncada(self):
         self.assertIsNone(D.linha_para_registro(b"curta;demais\n"))
         self.assertEqual(D.linha_para_registro(linha(n=40)), "ruim")
+
+    def test_contrato_zerado_ou_vazio_nao_gera_descricao_do_gasto(self):
+        for ct in ("00000000", "  "):
+            self.assertFalse([k for k in D.linha_para_registro(linha(contrato=ct))[2] if k.startswith("SB")])
 
     def test_contrato_sem_codigo_fica_vazio_ou_zerado(self):
         self.assertEqual(D.linha_para_registro(linha(contrato="00000000"))[0][3], "00000000")

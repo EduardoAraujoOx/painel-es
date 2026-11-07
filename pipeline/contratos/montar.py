@@ -701,6 +701,7 @@ def main():
     for c in recs:
         nomes_cnpj.setdefault(c["cnpj"], c["forn"])
     sem_doc_n, sem_doc_v = 0, 0.0
+    sem_doc_pares = set()
     for (o_, cnpj_), po_ in pago_of.items():
         v_ = sum(po_.get(int(y), 0.0) for y in ANOS_GASTO)
         if (o_, cnpj_) in fo or o_ not in org_nome or v_ <= 0:
@@ -708,7 +709,20 @@ def main():
         fo[(o_, cnpj_)]["nome"] = nomes_cnpj.get(cnpj_) or EXEC.get("nomes_fav", {}).get(cnpj_, cnpj_)
         sem_doc_n += 1
         sem_doc_v += v_
+        sem_doc_pares.add((o_, cnpj_))
     print(f"pagamentos a CNPJs sem documento do SIGA no órgão pagador: {sem_doc_n} pares órgão x CNPJ, R$ {sem_doc_v:,.0f} em {ANOS_GASTO[0]}–{ANOS_GASTO[1]}", flush=True)
+    # contratos que o SIGEFES conhece (pagamento com código de contrato) e o SIGA não: publicidade e outras contratações fora do SIGA
+    sigefes_org, linhas_desp, nomes_desp = {}, [], {}
+    for f_ in sorted(glob.glob(os.path.join(CACHE, "despesas_20??.json"))):
+        d_ = json.load(open(f_))
+        if str(d_["ano"]) in [str(a) for a in ANOS_GASTO]:
+            linhas_desp += d_["linhas"]
+            nomes_desp.update(d_["nomes"])
+    if linhas_desp:
+        sigefes_org = AM.contratos_do_sigefes(linhas_desp, nomes_desp, ug2siga, sem_doc_pares, [str(a) for a in ANOS_GASTO], ELEMENTOS_CONTRATACAO)
+        print(f"contratos só no SIGEFES (sem documento do SIGA no órgão): {sum(len(v) for v in sigefes_org.values())} em {len(sigefes_org)} órgãos, R$ {sum(g['total'] for v in sigefes_org.values() for g in v):,.0f} pagos", flush=True)
+    else:
+        print("contratos só no SIGEFES: despesas.py não gerado; bloco omitido", flush=True)
     frac = {}
     for k, a in fo.items():
         for ano, vs in a["dir_docs"].items():
@@ -784,10 +798,17 @@ def main():
         alertas_forn[c] = al
 
     # --- arquivos
+    # arquivos gerados por outros scripts (edocs.py, portal.py) e que a remontagem não pode apagar
+    preservar = {}
+    for nome_ in ("processos.json", "cobertura.json"):
+        if os.path.exists(os.path.join(DESTINO, nome_)):
+            preservar[nome_] = open(os.path.join(DESTINO, nome_), "rb").read()
     if os.path.isdir(DESTINO):
         shutil.rmtree(DESTINO)
     os.makedirs(os.path.join(DESTINO, "org"))
     os.makedirs(os.path.join(DESTINO, "forn"))
+    for nome_, conteudo_ in preservar.items():
+        open(os.path.join(DESTINO, nome_), "wb").write(conteudo_)
     nivel_peso = {"a": 3, "m": 1, "i": 0}
     vig_ord = sorted((c for c in recs if c["vigente"] and c["anual"] > 0), key=lambda c: -c["anual"])
     total_anual_vig = sum(c["anual"] for c in vig_ord) or 1.0
@@ -815,7 +836,9 @@ def main():
         print("PNCP: arquivo não gerado (pncp.py); o painel fica só com o SIGA", flush=True)
     for org in sorted(org_nome):
         meus = [c for c in recs if c["org"] == org]
-        alvo = [c for c in meus if c["vigente"] or any(a[0] in ("vigencia_vencida", "situacao_divergente") for a in c["alertas"])]
+        # vigentes e a conferir, mais os contratos do exercício já encerrados (o Portal da Transparência lista todos os celebrados no ano)
+        alvo = [c for c in meus if c["vigente"] or any(a[0] in ("vigencia_vencida", "situacao_divergente") for a in c["alertas"])
+                or (c["inst"] == "contrato" and c["cel"] and c["cel"].year >= REF.year)]
         alvo.sort(key=lambda c: -c["anual"])
         contratos = [[c["doc"], c["proc"], titulo(c["forn"]) if c["forn"].isupper() else c["forn"], c["cnpj"], c["objeto"][:300], c["cat"], c["modal"],
                       round(c["vini"], 2), round(c["vfin"], 2), iso(c["cel"]), iso(c["ini"]), iso(c["fim"]), iso(c["fim_ef"]), c["sit"],
@@ -901,7 +924,20 @@ def main():
         pncp_bloco = [{"controle": x["controle"], "link": f"https://pncp.gov.br/app/contratos/{x['orgaoCnpj']}/{x['ano']}/{x['sequencial']}", "forn": x["fornecedor"], "cnpj": x["cnpj"],
                        "objeto": x["objeto"][:260], "valor": x["valorGlobal"], "ini": x["ini"], "fim": x["fim"], "assinatura": x["assinatura"], "processo": AM.protocolo_edocs(x["processo"]) or x["processo"],
                        "categoria": x["categoria"], "tipo": x["tipo"], "pagoAtu": round(pago_of.get((org, x["cnpj"]), {}).get(int(ANOS_GASTO[1]), 0.0), 2)} for x in so_pncp[:150]]
-        json.dump({"org": resumo, "campos": CAMPOS, "contratos": contratos, "pncp": pncp_bloco, "fornecedores": forns[:120],
+        resumo_ano = {}
+        for ano_ in (REF.year - 1, REF.year):
+            docs_ = [c for c in meus if c["cel"] and c["cel"].year == ano_]
+            if docs_:
+                resumo_ano[str(ano_)] = {"documentos": len(docs_), "contratos": sum(1 for c in docs_ if c["inst"] == "contrato"), "avulsos": sum(1 for c in docs_ if c["inst"] != "contrato"),
+                                         "valorInicial": round(sum(c["vini"] for c in docs_), 2), "valorFinal": round(sum(c["vfin"] for c in docs_), 2),
+                                         "vigentes": sum(1 for c in docs_ if c["vigente"]), "encerrados": sum(1 for c in docs_ if c["inst"] == "contrato" and not c["vigente"]),
+                                         "valorVigente": round(sum(c["vfin"] for c in docs_ if c["vigente"]), 2)}
+        sigefes_bloco = [{"cnpj": g["cnpj"], "forn": titulo(g["forn"]) if g["forn"].isupper() else g["forn"], "codigo": g["codigo"], "licitacao": g["licitacao"], "objeto": g["objeto"],
+                          "subfuncao": g["subfuncao"], "pagoAnt": g["pago"].get(str(ANOS_GASTO[0]), 0.0), "pagoAtu": g["pago"].get(str(ANOS_GASTO[1]), 0.0), "desde": g["desde"], "ate": g["ate"]}
+                         for g in sigefes_org.get(org, [])[:80]]
+        resumo["sigefesContratos"] = len(sigefes_org.get(org, []))
+        resumo["sigefesPago"] = round(sum(g["total"] for g in sigefes_org.get(org, [])), 2)
+        json.dump({"org": resumo, "campos": CAMPOS, "contratos": contratos, "pncp": pncp_bloco, "sigefes": sigefes_bloco, "resumoAno": resumo_ano, "fornecedores": forns[:120],
                    "categorias": [[k, round(v, 2)] for k, v in org_cat[org].most_common()],
                    "modalidades": [[k, round(v, 2)] for k, v in org_modal[org].most_common()], "serie": serie},
                   open(os.path.join(DESTINO, "org", f"{org}.json"), "w"), ensure_ascii=False, separators=(",", ":"))

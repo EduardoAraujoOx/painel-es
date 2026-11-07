@@ -192,3 +192,37 @@ def contato_cadastral(natureza, email, ddd1="", tel1="", ddd2="", tel2=""):
     if "@" not in email:
         email = ""
     return {"email": email, "telefones": telefones} if email or telefones else None
+
+
+# --- contratos que só aparecem no SIGEFES (pagamento com código de contrato, sem nenhum documento do SIGA no órgão) --------------------------------
+def contratos_do_sigefes(linhas, nomes, ug_org, pares_sem_doc, anos, elementos):
+    """Agrupa os pagamentos do SIGEFES que citam um código de contrato e cujo fornecedor não tem documento algum do SIGA no órgão pagador.
+
+    linhas: [cnpj, ug, elemento, contrato, licitação, 'AAAA-MM', empenhado, liquidado, pago] (despesas.py); nomes: nomes de fornecedores e as
+    descrições 'SB<ug>|<cnpj>|<contrato>' -> 'subelemento|subfunção'; ug_org: unidade gestora -> órgão do SIGA; pares_sem_doc: {(órgão, cnpj)};
+    anos: anos de interesse (texto); elementos: elementos de despesa de contratação. Devolve {órgão: [contrato]} com os de maior pago primeiro.
+
+    Serve para publicidade e outras contratações que o SIGA não registra: o SIGEFES conhece o contrato (código, tipo de licitação e o que se
+    paga), o SIGA não."""
+    grupos = {}
+    for cnpj, ug, el, ct, lic, mes, _emp, _liq, pago in linhas:
+        ct = (ct or "").strip()
+        org = ug_org.get(ug)
+        if org is None or el not in elementos or not ct.strip("0") or (org, cnpj) not in pares_sem_doc or mes[:4] not in anos:
+            continue
+        g = grupos.setdefault((org, cnpj, ct), {"cnpj": cnpj, "forn": nomes.get(cnpj, cnpj), "codigo": ct, "licitacao": lic or "", "ug": ug,
+                                               "pago": {a: 0.0 for a in anos}, "desde": mes, "ate": mes})
+        g["pago"][mes[:4]] += pago
+        g["desde"], g["ate"] = min(g["desde"], mes), max(g["ate"], mes)
+    saida = {}
+    for (org, cnpj, ct), g in grupos.items():
+        sub, _, fun = (nomes.get(f"SB{g['ug']}|{cnpj}|{ct}") or "").partition("|")
+        total = sum(g["pago"].values())
+        if total <= 0:
+            continue
+        g.update(objeto=sub.strip(), subfuncao=fun.strip(), total=round(total, 2))
+        g["pago"] = {a: round(v, 2) for a, v in g["pago"].items()}
+        saida.setdefault(org, []).append(g)
+    for lista in saida.values():
+        lista.sort(key=lambda g: -g["total"])
+    return saida

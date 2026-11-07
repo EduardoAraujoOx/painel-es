@@ -4,7 +4,7 @@
 `execucao.py` guarda só os pagamentos a CNPJs que aparecem em algum documento do SIGA, o que deixa de fora fornecedores que
 nunca passaram pelo SIGA. Este script lê o mesmo arquivo anual (em fatias de bytes, em paralelo, sem gravá-lo em disco) e guarda
 todos os pagamentos a CNPJ (CPF não é lido), agregados por CNPJ, unidade gestora, elemento de despesa, código de contrato do
-SIGEFES, tipo de licitação e mês. O `montar.py` usa esse arquivo para completar o pago dos órgãos com os fornecedores fora do SIGA.
+SIGEFES, tipo de licitação e mês. Guarda também, em `nomes`, o subelemento e a subfunção de cada (UG, CNPJ, contrato do SIGEFES). O `montar.py` usa esse arquivo para completar o pago dos órgãos com os fornecedores fora do SIGA.
 
 Resultado: .cache/contratos/despesas_<ano>.json
 Uso: python3 -I pipeline/contratos/despesas.py 2025 2026      (cada ano leva de 5 a 10 minutos; arquivo de 1 a 1,5 GB)
@@ -30,6 +30,7 @@ NCOLUNAS = 71
 # posições no arquivo Despesas-AAAA.csv
 C_DATA, C_EMP, C_LIQ, C_PAGO, C_CNPJ, C_FAVORECIDO, C_LICITACAO = 1, 2, 3, 4, 6, 9, 11
 C_UG, C_UG_NOME, C_ELEMENTO, C_ELEMENTO_NOME, C_CONTRATO = 21, 22, 25, 26, 69
+C_SUBFUNCAO, C_SUBELEMENTO = 39, 47
 
 
 def valor(b):
@@ -59,6 +60,9 @@ def linha_para_registro(linha):
     chave = (c[C_CNPJ], c[C_UG], c[C_ELEMENTO], c[C_CONTRATO].strip(), c[C_LICITACAO], mes)
     vals = [valor(c[C_EMP].encode()), valor(c[C_LIQ].encode()), valor(c[C_PAGO].encode())]
     nomes = {c[C_CNPJ]: c[C_FAVORECIDO], "UG" + c[C_UG]: c[C_UG_NOME], "EL" + c[C_ELEMENTO]: c[C_ELEMENTO_NOME]}
+    if c[C_CONTRATO].strip().strip("0"):
+        # o que o SIGEFES diz do objeto do gasto (subelemento e subfunção) por unidade gestora, fornecedor e código de contrato do SIGEFES
+        nomes[f"SB{c[C_UG]}|{c[C_CNPJ]}|{c[C_CONTRATO].strip()}"] = f"{c[C_SUBELEMENTO].strip()}|{c[C_SUBFUNCAO].strip()}"
     return chave, vals, nomes
 
 
