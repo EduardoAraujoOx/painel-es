@@ -260,13 +260,26 @@ def main():
     sg = sorted((o for o in idx["orgs"] if o.get("sigefesContratos")), key=lambda o: -o.get("sigefesPago", 0))
     if sg:
         tot_pago, tot_n = sum(o["sigefesPago"] for o in sg), sum(o["sigefesContratos"] for o in sg)
-        maiores = "; ".join(f"{o['nome']} ({o['sigefesContratos']} contratos, {mi(o['sigefesPago'])})" for o in sg[:3])
+        por_objeto, publ_orgs, publ_forns = {}, {}, {}
+        for o in sg:       # composição pelos blocos dos órgãos (até 80 maiores contratos de cada um)
+            arq_o = os.path.join(RAIZ, "data", "contratacoes", o["arquivo"] + ".json")
+            if os.path.exists(arq_o):
+                for g in json.load(open(arq_o)).get("sigefes", []):
+                    x = por_objeto.setdefault(g["objeto"] or "sem subelemento", [0, 0.0])
+                    x[0] += 1
+                    x[1] += g["pagoAnt"] + g["pagoAtu"]
+                    if (g["objeto"] or "").upper().startswith("SERVIÇOS DE PUBLICIDADE"):
+                        publ_orgs[o["nome"]] = publ_orgs.get(o["nome"], 0.0) + g["pagoAnt"] + g["pagoAtu"]
+                        publ_forns[g["forn"]] = publ_forns.get(g["forn"], 0.0) + g["pagoAnt"] + g["pagoAtu"]
+        publ = (sum(n for k, (n, v) in por_objeto.items() if k.upper().startswith("SERVIÇOS DE PUBLICIDADE")), sum(v for k, (n, v) in por_objeto.items() if k.upper().startswith("SERVIÇOS DE PUBLICIDADE"))) if any(k.upper().startswith("SERVIÇOS DE PUBLICIDADE") for k in por_objeto) else None
+        grandes = "; ".join(f"{k.lower()} ({mi(v)})" for k, (n, v) in sorted(por_objeto.items(), key=lambda kv: -kv[1][1])[:3])
         itens.append(dict(id="contratos-so-sigefes", area="Contratos", verificado=True,
-             titulo="Contratos que o SIGEFES conhece e o SIGA não registra (publicidade e outros)",
-             lacuna="Há pagamentos com código de contrato no SIGEFES a fornecedores dos quais o SIGA não tem nenhum documento no órgão pagador. É o caso dos contratos das agências de publicidade da Secom: o Portal da Transparência (que reúne SIGA e CidadES), o SIGA e o PNCP não os trazem, e o dado aberto da execução só mostra o pagamento.",
-             evidencia=f"{tot_n} contratos em {len(sg)} órgãos, com {mi(tot_pago)} pagos nos dois últimos exercícios, sem documento do SIGA no órgão. Os maiores: {maiores}.",
+             titulo="Contratos que o SIGEFES conhece e o SIGA não registra (publicidade, obras e outros)",
+             lacuna="Há pagamentos com código de contrato no SIGEFES a fornecedores dos quais o SIGA não tem nenhum documento no órgão pagador. É o caso dos contratos das agências de publicidade da Secom: o Portal da Transparência (que reúne SIGA e CidadES), o SIGA e o PNCP não os trazem, e o dado aberto da execução só mostra o pagamento. Parte do conjunto pode ser contrato registrado em outro órgão ou em nome de outro CNPJ.",
+             evidencia=(f"{tot_n} contratos em {len(sg)} órgãos, com {mi(tot_pago)} pagos nos dois últimos exercícios, sem documento do SIGA no órgão. Maiores objetos de gasto: {grandes}."
+                        + (f" Publicidade (institucional e legal): {publ[0]} contratos, {mi(publ[1])}, sobretudo em {'; '.join(k for k, _ in sorted(publ_orgs.items(), key=lambda kv: -kv[1])[:1])}; maiores fornecedores: {', '.join(k for k, _ in sorted(publ_forns.items(), key=lambda kv: -kv[1])[:5])}." if publ else "")),
              decisao="Ter a lista completa de contratos do Estado, inclusive publicidade e contratações conduzidas fora do SIGA, para avaliar valor, prazo, justificativa e saldo antes de decidir sobre manter, renegociar ou encerrar.",
-             solicitar="Relação dos contratos de publicidade (agências, veículos e produção) e dos demais contratos pagos pelo SIGEFES sem registro no SIGA, com número do instrumento, valor, vigência, aditivos, processo de contratação e saldo.",
+             solicitar="Relação dos contratos de publicidade (agências, veículos e produção) e dos demais contratos pagos pelo SIGEFES sem registro no SIGA, com número do instrumento, valor, vigência, aditivos, processo de contratação e saldo; e a correspondência entre o código de contrato do SIGEFES e o número do instrumento.",
              destinatarios=["Secom", "SEGER (SIGA)", "SEFAZ (SIGEFES)"], valorAfetado=0.0, prioridadeFixa="alta" if tot_pago >= 100e6 else "média",
              fonteEvidencia="SIGEFES (Portal da Transparência), cruzamento do painel com o SIGA"))
     for i in itens:

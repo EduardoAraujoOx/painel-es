@@ -385,7 +385,7 @@
     const total = soma(lista, (x) => x.pagoAnt + x.pagoAtu);
     return el('div', { class: 'cartao', id: 'so-sigefes' }, el('div', { class: 'cartao-topo' }, el('div', {},
       el('h2', {}, `Contratos só no SIGEFES, sem registro no SIGA (${nInt.format(lista.length)})`),
-      el('p', {}, `Pagamentos de ${aAnt}–${aAtu} a fornecedores que citam um código de contrato no SIGEFES (o sistema financeiro do Estado) e dos quais o SIGA não tem nenhum documento neste órgão. Somam ${brlCompacto(total)} pagos. É onde aparecem, por exemplo, as agências de publicidade da Secom: o Portal da Transparência, o SIGA e o PNCP não trazem esses contratos. O código é o do SIGEFES, não o número do instrumento; o objeto é o subelemento de despesa do pagamento.`))),
+      el('p', {}, `Pagamentos de ${aAnt}–${aAtu} que citam um código de contrato no SIGEFES (o sistema financeiro do Estado), a fornecedores dos quais o SIGA não tem nenhum documento neste órgão. Somam ${brlCompacto(total)} pagos. Pode ser contratação conduzida fora do SIGA (como as agências de publicidade da Secom, que não estão no SIGA, no PNCP nem no Portal da Transparência), contrato registrado em outro órgão ou em nome de outro CNPJ; vale confirmar com o órgão. O código é o do SIGEFES, não o número do instrumento; o objeto é o subelemento de despesa do pagamento.`))),
     el('div', { class: 'rolagem' }, el('table', {},
       el('thead', {}, el('tr', {}, ['Fornecedor', 'Objeto do gasto (SIGEFES)', 'Código no SIGEFES', `Pago ${aAnt}`, `Pago ${aAtu}`, 'Meses com pagamento'].map((t, n) => el('th', { class: n === 3 || n === 4 ? 'num' : '' }, t)))),
       el('tbody', {}, linhas))),
