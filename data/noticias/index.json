@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-07",
- "gerado_em": "2026-11-07T21:17:12Z",
+ "gerado_em": "2026-11-07T23:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 13,
+   "lidos": 14,
    "aceitos": 4,
    "possiveis": 2
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 40,
+   "lidos": 36,
    "aceitos": 1,
    "possiveis": 4
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 57,
+   "lidos": 58,
    "aceitos": 4,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -145,9 +145,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 22,
+   "lidos": 24,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 59,
+   "lidos": 58,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -238,21 +238,33 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
   "oficial_sem_tema": 5,
-  "sem_contexto": 293,
-  "possivel": 20,
+  "sem_contexto": 291,
+  "possivel": 21,
   "veiculo_excluido": 32,
-  "veiculo_outra_praca": 15,
-  "sem_contexto_com_tema": 6,
-  "outro_estado": 12,
+  "sem_contexto_com_tema": 5,
+  "outro_estado": 13,
   "excluir": 10,
-  "exterior_sem_ancora": 4,
+  "exterior_sem_ancora": 3,
   "caixa_alta": 1,
-  "sigla_sem_ancora": 6
+  "veiculo_outra_praca": 15,
+  "sigla_sem_ancora": 5
  },
  "itens": [
+  {
+   "id": "e339d9d2199c",
+   "titulo": "Presidente de Israel indica Gadi Eisenkot para formar governo",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZ25wS3pCaHY1c1F1cGdLNkZRMTdteG9rX3NDdkhIMGxhWUNTSzVNeEVNZGFrV05BWVJ4WmV4OUVxV3ZhMVRaeUY0Smk0WEFObXFQeTN5U0tXM2dDZThSNnJFWTZ2a25lX3BsZUFwOGxFMHVtNkt5SGlCSElTalRqbEFkV3dnTVRXM0dHLTFuWF9yTjNxY0h4RkJ0aUVXMmFVWGN5TERTVGE3ZWpZc1hZNtIBuAFBVV95cUxPaGRmVmg3U09SUXByVEdTVmhvamxWMG5KSlU5ajgwRmZxanJTd0tmaUN6Rzg0cFl5Um5iZmN4NHBPaGgwWHZKeGhhcWs4c2RwZjVqaktiWktxQ081cTJpeVJleEhYMHNRNXRWN25rRm1ySW9xbWhOeXFzbEhYdnFub3FLZy11XzJsUjdzekRYa3d0WEo0VGpzQmtqOXNjR2trMFNONFVGTGc1a3FkelFabmtTT1ZKekZr?oc=5",
+   "data": "2026-11-07T22:18:01Z",
+   "coletado_em": "2026-11-07T23:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": []
+  },
   {
    "id": "e64e0dddeaa8",
    "titulo": "Batata acerta pré-contrato e será novo atacante do Vitória em 2027",
