@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-07",
- "gerado_em": "2026-11-07T10:17:12Z",
+ "gerado_em": "2026-11-07T12:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,16 +17,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 12,
+   "lidos": 13,
    "aceitos": 4,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 23,
-   "aceitos": 7,
+   "lidos": 24,
+   "aceitos": 8,
    "possiveis": 5
   },
   {
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 3,
+   "lidos": 4,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -57,7 +57,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 59,
+   "lidos": 56,
    "aceitos": 3,
    "possiveis": 5
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 60,
+   "lidos": 65,
    "aceitos": 3,
    "possiveis": 3
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 10,
+   "lidos": 12,
    "aceitos": 4,
    "possiveis": 1
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 28,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 29,
    "aceitos": 6,
    "possiveis": 1
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 60,
+   "lidos": 59,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -178,7 +178,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -186,7 +186,7 @@
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 3
   },
   {
@@ -226,7 +226,7 @@
    "consulta": "https://simnoticias.com.br/politica/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -238,22 +238,51 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 323,
-  "oficial_sem_tema": 4,
+  "oficial_sem_tema": 5,
+  "sem_contexto": 328,
   "possivel": 22,
   "oficial_divulgacao": 1,
-  "veiculo_excluido": 43,
-  "sem_contexto_com_tema": 3,
+  "veiculo_excluido": 42,
+  "sem_contexto_com_tema": 4,
   "exterior_sem_ancora": 3,
-  "excluir": 13,
+  "excluir": 12,
   "outro_estado": 17,
   "caixa_alta": 1,
   "veiculo_outra_praca": 9,
   "sigla_sem_ancora": 5
  },
  "itens": [
+  {
+   "id": "a981370a9fb1",
+   "titulo": "Equipe de transição de Pazolini tem sete nomes; veja quem são",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/equipe-de-transicao-de-pazolini-tem-sete-nomes-veja-quem-sao/",
+   "data": "2026-11-07T12:02:00Z",
+   "coletado_em": "2026-11-07T12:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "23f3626da9ec",
+   "titulo": "Após eleição, Lorenzo Pazolini faz primeiro aceno ao PL",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdUFtS1RITjJ1SlRDNW40RDlQN3Y4TWxqSW9kdGlWdVVRTWJOTDJ2X1pwM3dPQS1heC1qSkIzNzFRS012bEIyR25TQXhpMm96YXRmYmVtcFZWdlpETVFqbVRfNTJaQW1JYjlCR3oyN2xIZFhMZzdaZDlfRm1DWG5TVlVvLThrVExaRkxIeXBaS1BEUjEwcFd3aHBwYm14NW5wdVZEbGtVNnctcS1kLS1uWF930gGyAUFVX3lxTE11QW1LVEhOMnVKVEM1bjREOVA3djhNbGpJb2R0aVZ1VVFNYk5MMnZfWnAzd09BLWF4LWpKQjM3MVFLTXZsQjJHblNBeGkyb3phdGZiZW1wVlZ2WkRNUWptVF81MlpBbUliOUJHejI3bEhkWExnN1pkOV9GbUNYblNWVW8tOGtUTFpGTEh5cFpLUERSMTBwV3docHBibXg1bnB1VkRsa1U2dy1xLWQtLW5YX3c?oc=5",
+   "data": "2026-11-07T09:00:00Z",
+   "coletado_em": "2026-11-07T12:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "b7e4d5322740",
    "titulo": "Estoque que vale dinheiro: oportunidade de geração de caixa na transição para a CBS",
@@ -376,6 +405,18 @@
    "temas": [
     "financas"
    ]
+  },
+  {
+   "id": "7fcfc4900206",
+   "titulo": "Barragens construídas com recursos do Fundo Cidades reforçam segurança hídrica em municípios capixabas",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPajdxc3pNMDg2NGR5VW40SXlqa05rOTZyd2VxaGNoeHdxWWtKV3VULTJGUWlKdEE4bGx0cEVKVEpVWmFDc3hZVGc3Y0hBMGgxVUdRM21McTkyNWxId0tGd0NINUtXTjVwM0lpb1FObFRLSXhhb3k1VVhqcTBZamhMZEFsWFZxSk0ydGFKS2ljai1yZ0gxRVphOUtVX1laYmtRVGVOMWNpX1JQaUJoaWdVSkZSczVjLUlCdE51LXUtZmtSdw?oc=5",
+   "data": "2026-11-06T20:12:00Z",
+   "coletado_em": "2026-11-07T12:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 5,
+   "temas": []
   },
   {
    "id": "27da22b65022",
