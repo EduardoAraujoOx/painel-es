@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-07",
- "gerado_em": "2026-11-07T20:14:47Z",
+ "gerado_em": "2026-11-07T21:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 23,
-   "aceitos": 6,
+   "aceitos": 7,
    "possiveis": 6
   },
   {
@@ -83,7 +83,7 @@
    "ok": true,
    "lidos": 7,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 60,
-   "aceitos": 3,
-   "possiveis": 3
+   "lidos": 57,
+   "aceitos": 4,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 22,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 26,
    "aceitos": 6,
    "possiveis": 2
   },
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 4
   },
   {
@@ -238,22 +238,35 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
   "oficial_sem_tema": 5,
-  "sem_contexto": 294,
-  "possivel": 24,
-  "oficial_divulgacao": 1,
-  "veiculo_excluido": 33,
+  "sem_contexto": 293,
+  "possivel": 20,
+  "veiculo_excluido": 32,
   "veiculo_outra_praca": 15,
   "sem_contexto_com_tema": 6,
-  "excluir": 12,
-  "outro_estado": 13,
+  "outro_estado": 12,
+  "excluir": 10,
   "exterior_sem_ancora": 4,
   "caixa_alta": 1,
   "sigla_sem_ancora": 6
  },
  "itens": [
+  {
+   "id": "e64e0dddeaa8",
+   "titulo": "Batata acerta pré-contrato e será novo atacante do Vitória em 2027",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNLVdDeWxGdDQ0ZDg3ZGNWTWhKMVR6SVFqX1UxOTlJSEtPamtIa2FtbTNFcmFCU0o4Z3RScU9vOUVSUkR0MzlmUi04clk3M2o5Yko5c2Nhd0ljc1V2OGhmSDJkRjJadmhPdFl1VE5fVDZtLW81UHFOUVpoQlQ2TVc3VUpXYktLay1TSFozZmdxUFdyUlU4NXlBWV9lUWx5MGszMlRoVjQwcnRPbjhtbC1KZXAwd01vUTMtUW1ndl8yRmlzMGxrRGfSAc4BQVVfeXFMT3pSU1NrWnc0c05pLVllS0w0Y09RZl9pN0ZZOWpQMDRhemdON09hWnkzWUZ6cXd0YjFBRHNCRmxsaE5MWTI4LXhHSHZlemdiUWlPU3BfVTZrVnA3UUR2aXhkemNQQm9LSlhyZmhwWWN5NHd1aldCZG1HWXhVZjVfVFhuS3FBNGw2OUVzYW1JZEtXQVQzU1N6ekVraDdCREZYVDlSX2w4OFpEdzZTaFQ0T0tFcmtGSml3Zno0RGI5UVowaWcxQ2dmWkRQYzNyNlE?oc=5",
+   "data": "2026-11-07T20:55:05Z",
+   "coletado_em": "2026-11-07T21:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "a0fdb40f267e",
    "titulo": "Imposto do pecado chega em 2027: veja quais produtos podem ficar mais caros",
@@ -495,6 +508,20 @@
    "possivel": true,
    "triagem": 5,
    "temas": []
+  },
+  {
+   "id": "46bbb50c429c",
+   "titulo": "Após dois anos do Novo Acordo do Rio Doce, Governo do Estado contempla 1,2 bilhão de investimentos nas cidades impactadas pelo desastre de Mariana",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPcGpGRWlZRTUtRUEwa2U4Z2kzVmZOWXhCdm5yWWdpenpFNmk5OG92Xy0yN2MxUzk4cndHdC0taG1yQWlyZ0E3S0hwakt4RzhjSmx2Wkk2V0ItZFg2WG1XWnFnc0p0T09QT0VDLU1QWGJnSFgzZzl1ZEhOUmNnMGsxYk5tNDEzcTNtZ3k1OENsMW9yeGp0MjVRX1FneWpMVU9YQ1ZpOVNzWlJ5al9RRDZDdVR0UjhSaG5xUHFGdkxlcDdkU04wR29ZSFhhTnc2SmY2MXpKMnFFclRPSVEtMTM2X0w0RGRaYVVxMm9mZDRWeTBTY05BR2V4b0Ewbw?oc=5",
+   "data": "2026-11-06T20:08:00Z",
+   "coletado_em": "2026-11-07T21:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 5,
+   "temas": [
+    "governador"
+   ]
   },
   {
    "id": "27da22b65022",
