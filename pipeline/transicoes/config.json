@@ -1,0 +1,446 @@
+{
+  "_nota": "Transições de governo em outros estados (eleições de 2026), para comparar o que as equipes fazem e o que pode ser aproveitado no ES. Só entram os 13 estados em que o governador eleito é um novo nome; os que mantêm o mesmo governo e o ES ficam de fora. Fonte: resultados do TSE de 25/10/2026, conforme Jovem Pan e O Povo.",
+  "desde": "2026-10-04",
+  "janela_dias": 60,
+  "estados": [
+    {
+      "uf": "AL",
+      "nome": "Alagoas",
+      "eleito": "JHC",
+      "partido": "PSDB",
+      "buscas": [
+        "JHC",
+        "Alagoas"
+      ],
+      "cues": [
+        "alagoas",
+        "jhc",
+        "paulo dantas"
+      ]
+    },
+    {
+      "uf": "AP",
+      "nome": "Amapá",
+      "eleito": "Dr. Furlan",
+      "partido": "PSD",
+      "buscas": [
+        "Furlan",
+        "Amapá"
+      ],
+      "cues": [
+        "amapa",
+        "furlan",
+        "clecio"
+      ]
+    },
+    {
+      "uf": "AM",
+      "nome": "Amazonas",
+      "eleito": "Omar Aziz",
+      "partido": "PSD",
+      "buscas": [
+        "Omar Aziz",
+        "Amazonas"
+      ],
+      "cues": [
+        "amazonas",
+        "omar aziz",
+        "wilson lima"
+      ]
+    },
+    {
+      "uf": "MA",
+      "nome": "Maranhão",
+      "eleito": "Eduardo Braide",
+      "partido": "PSD",
+      "buscas": [
+        "Braide",
+        "Maranhão"
+      ],
+      "cues": [
+        "maranhao",
+        "braide",
+        "carlos brandao"
+      ]
+    },
+    {
+      "uf": "MG",
+      "nome": "Minas Gerais",
+      "eleito": "Cleitinho Azevedo",
+      "partido": "Republicanos",
+      "buscas": [
+        "Cleitinho",
+        "Minas Gerais"
+      ],
+      "cues": [
+        "minas gerais",
+        "cleitinho",
+        "mateus simoes"
+      ]
+    },
+    {
+      "uf": "PA",
+      "nome": "Pará",
+      "eleito": "Dr. Daniel Santos",
+      "partido": "Podemos",
+      "buscas": [
+        "Daniel Santos",
+        "Pará"
+      ],
+      "cues": [
+        "daniel santos",
+        "hana ghassan"
+      ],
+      "cues_exatos": [
+        "Pará"
+      ]
+    },
+    {
+      "uf": "PR",
+      "nome": "Paraná",
+      "eleito": "Sergio Moro",
+      "partido": "PL",
+      "buscas": [
+        "Sergio Moro",
+        "Paraná"
+      ],
+      "cues": [
+        "parana",
+        "sergio moro"
+      ]
+    },
+    {
+      "uf": "RJ",
+      "nome": "Rio de Janeiro",
+      "eleito": "Douglas Ruas",
+      "partido": "PL",
+      "buscas": [
+        "Douglas Ruas",
+        "Rio de Janeiro"
+      ],
+      "cues": [
+        "douglas ruas",
+        "governo do rio de janeiro",
+        "governo do estado do rio de janeiro",
+        "estado do rio de janeiro"
+      ],
+      "siglas": [
+        "RJ"
+      ]
+    },
+    {
+      "uf": "RN",
+      "nome": "Rio Grande do Norte",
+      "eleito": "Cadu Xavier",
+      "partido": "PT",
+      "buscas": [
+        "Cadu Xavier",
+        "Rio Grande do Norte"
+      ],
+      "cues": [
+        "rio grande do norte",
+        "cadu xavier",
+        "cadu de lula",
+        "fatima bezerra"
+      ],
+      "siglas": [
+        "RN"
+      ]
+    },
+    {
+      "uf": "RS",
+      "nome": "Rio Grande do Sul",
+      "eleito": "Luciano Zucco",
+      "partido": "PL",
+      "buscas": [
+        "Zucco",
+        "Rio Grande do Sul"
+      ],
+      "cues": [
+        "rio grande do sul",
+        "zucco",
+        "eduardo leite"
+      ],
+      "siglas": [
+        "RS"
+      ]
+    },
+    {
+      "uf": "RO",
+      "nome": "Rondônia",
+      "eleito": "Marcos Rogério",
+      "partido": "PL",
+      "buscas": [
+        "Marcos Rogério",
+        "Rondônia"
+      ],
+      "cues": [
+        "rondonia",
+        "marcos rogerio",
+        "marcos rocha"
+      ],
+      "siglas": [
+        "RO"
+      ]
+    },
+    {
+      "uf": "RR",
+      "nome": "Roraima",
+      "eleito": "Arthur Henrique",
+      "partido": "PL",
+      "buscas": [
+        "Arthur Henrique",
+        "Roraima"
+      ],
+      "cues": [
+        "roraima",
+        "arthur henrique"
+      ],
+      "siglas": [
+        "RR"
+      ]
+    },
+    {
+      "uf": "TO",
+      "nome": "Tocantins",
+      "eleito": "Vicentinho Júnior",
+      "partido": "PSDB",
+      "buscas": [
+        "Vicentinho Júnior",
+        "Tocantins"
+      ],
+      "cues": [
+        "tocantins",
+        "vicentinho"
+      ]
+    }
+  ],
+  "buscas_gerais": [
+    "\"equipe de transição\" \"governador eleito\" (corte OR cortes OR \"redução de gastos\" OR austeridade)",
+    "\"equipe de transição\" \"governo eleito\" (auditoria OR rombo OR déficit OR \"situação fiscal\" OR \"contas do estado\")",
+    "transição governo estadual \"reforma administrativa\" OR \"enxugamento\" OR \"número de secretarias\"",
+    "\"governador eleito\" \"primeiros 100 dias\" OR \"primeiros cem dias\" medidas economia"
+  ],
+  "transicao": [
+    "transição",
+    "equipe de transição",
+    "comissão de transição",
+    "gabinete de transição",
+    "governo eleito",
+    "governador eleito",
+    "governadora eleita",
+    "governo de transição",
+    "futuro governo",
+    "novo governo",
+    "próximo governo",
+    "passagem de governo",
+    "troca de governo",
+    "mudança de governo",
+    "primeiros 100 dias",
+    "primeiros cem dias",
+    "100 primeiros dias",
+    "gestão eleita",
+    "governo que entra",
+    "governo que sai",
+    "governo atual"
+  ],
+  "excluir": [
+    "transição energética",
+    "transição de carreira",
+    "transição digital",
+    "transição demográfica",
+    "transição ecológica",
+    "transição para a cbs",
+    "transição hormonal",
+    "transição para o ensino",
+    "transição de gênero",
+    "transição climática",
+    "transição justa",
+    "prefeito eleito",
+    "prefeita eleita",
+    "prefeitura",
+    "vereador",
+    "futebol",
+    "horóscopo",
+    "boicote",
+    "boicotes"
+  ],
+  "temas": {
+    "gastos": {
+      "rotulo": "Economia de gastos",
+      "termos": [
+        "corte de gastos",
+        "cortes de gastos",
+        "corte de despesas",
+        "cortes de despesas",
+        "cortes profundos",
+        "corte* na máquina",
+        "cortar gastos",
+        "cortar despesas",
+        "cortar cargos",
+        "redução de gastos",
+        "reduzir gastos",
+        "redução de despesas",
+        "reduzir despesas",
+        "revisão de gastos",
+        "revisar gastos",
+        "enxugamento",
+        "enxugar",
+        "enxuga",
+        "austeridade",
+        "racionalização",
+        "contenção de gastos",
+        "contingenciamento",
+        "economia de gastos",
+        "economizar",
+        "pacote de redução",
+        "pacote de economia",
+        "ajuste fiscal",
+        "teto de gastos",
+        "arrumar a casa",
+        "redução da máquina",
+        "reduzir a máquina",
+        "máquina pública",
+        "gastos com pessoal",
+        "despesa de pessoal",
+        "gastos públicos"
+      ]
+    },
+    "diagnostico": {
+      "rotulo": "Diagnóstico das contas",
+      "termos": [
+        "diagnóstico",
+        "auditoria",
+        "auditar",
+        "rombo",
+        "déficit",
+        "situação financeira",
+        "situação fiscal",
+        "situação das contas",
+        "contas do estado",
+        "contas públicas",
+        "contas do governo",
+        "herança",
+        "restos a pagar",
+        "dívida",
+        "passivo",
+        "passivos",
+        "caixa do estado",
+        "caixa do governo",
+        "balanço da gestão",
+        "retrato da situação",
+        "retrato completo",
+        "levantamento",
+        "relatório",
+        "pente-fino",
+        "pente fino",
+        "desafios fiscais",
+        "crise fiscal",
+        "equilíbrio das contas",
+        "buraco",
+        "capacidade de pagamento",
+        "inadimplência"
+      ]
+    },
+    "contratos": {
+      "rotulo": "Contratos e obras",
+      "termos": [
+        "contrato*",
+        "licitação",
+        "licitações",
+        "revisão de contratos",
+        "obras paradas",
+        "obras paralisadas",
+        "obra paralisada",
+        "obras abandonadas",
+        "terceirizados",
+        "terceirizadas",
+        "fornecedores",
+        "compras públicas",
+        "aditivos"
+      ]
+    },
+    "estrutura": {
+      "rotulo": "Estrutura administrativa",
+      "termos": [
+        "reforma administrativa",
+        "estrutura administrativa",
+        "estrutura do governo",
+        "organograma",
+        "reestruturação",
+        "número de secretarias",
+        "menos secretarias",
+        "redução de secretarias",
+        "fusão de secretarias",
+        "novas secretarias",
+        "nova secretaria",
+        "extinção de secretarias",
+        "extingue",
+        "recria",
+        "cargos comissionados",
+        "cargos em comissão",
+        "secretarias estratégicas",
+        "modelo de gestão",
+        "gestão por resultados",
+        "escritório de projetos"
+      ]
+    },
+    "economia": {
+      "rotulo": "Propostas econômicas e fiscais",
+      "termos": [
+        "plano de governo",
+        "equilíbrio fiscal",
+        "responsabilidade fiscal",
+        "orçamento",
+        "loa",
+        "ldo",
+        "arrecadação",
+        "receita*",
+        "icms",
+        "reforma tributária",
+        "regime de recuperação fiscal",
+        "propag",
+        "investimentos",
+        "investimento",
+        "desenvolvimento econômico",
+        "concessões",
+        "concessão",
+        "parceria público-privada",
+        "parcerias público-privadas",
+        "ppp",
+        "privatização",
+        "privatizações",
+        "crescimento econômico",
+        "atração de empresas",
+        "incentivos fiscais",
+        "pib",
+        "economia do estado"
+      ]
+    },
+    "pessoal": {
+      "rotulo": "Servidores e pessoal",
+      "termos": [
+        "servidores",
+        "servidor",
+        "funcionalismo",
+        "concurso*",
+        "reajuste*",
+        "folha de pagamento",
+        "previdência",
+        "salário*",
+        "carreira*",
+        "quadro de pessoal",
+        "PCCR",
+        "plano de cargos"
+      ]
+    }
+  },
+  "temas_de_medida": [
+    "gastos",
+    "diagnostico",
+    "contratos",
+    "estrutura",
+    "economia",
+    "pessoal"
+  ]
+}

@@ -203,6 +203,8 @@
       { mod: 'normas', rotulo: 'Decretos e normas' }] },
     { id: 'noticias', rotulo: 'Notícias', itens: [
       { mod: 'noticias', rotulo: 'Manchetes' }] },
+    { id: 'estados', rotulo: 'Estados', itens: [
+      { mod: 'transicoes', rotulo: 'Transições em curso' }] },
   ];
   PF.PAINEIS = PAINEIS;
   const selos = {};
