@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-08T18:58:07Z",
+ "gerado_em": "2026-11-08T19:17:35Z",
  "ref": "2026-11-08",
  "desde": "2026-10-04",
  "estados": [
@@ -22,7 +22,7 @@
    "nome": "Amazonas",
    "eleito": "Omar Aziz",
    "partido": "PSD",
-   "total": 72
+   "total": 74
   },
   {
    "uf": "MA",
@@ -50,14 +50,14 @@
    "nome": "Paraná",
    "eleito": "Sergio Moro",
    "partido": "PL",
-   "total": 66
+   "total": 67
   },
   {
    "uf": "RJ",
    "nome": "Rio de Janeiro",
    "eleito": "Douglas Ruas",
    "partido": "PL",
-   "total": 68
+   "total": 69
   },
   {
    "uf": "RN",
@@ -71,7 +71,7 @@
    "nome": "Rio Grande do Sul",
    "eleito": "Luciano Zucco",
    "partido": "PL",
-   "total": 78
+   "total": 79
   },
   {
    "uf": "RO",
@@ -85,7 +85,7 @@
    "nome": "Roraima",
    "eleito": "Arthur Henrique",
    "partido": "PL",
-   "total": 19
+   "total": 20
   },
   {
    "uf": "TO",
@@ -104,11 +104,27 @@
   "pessoal": "Servidores e pessoal"
  },
  "contagem": {
-  "total": 693,
-  "medidas": 183,
-  "equipe": 510
+  "total": 699,
+  "medidas": 184,
+  "equipe": 515
  },
  "itens": [
+  {
+   "id": "e28368839a0c",
+   "titulo": "Zucco articula fusão de secretarias no RS antes de tomar posse",
+   "veiculo": "TV Sim Brasil",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOU3NESmZ5QklXa3kxSzRSdHh2UTRRcmo2dURyYVJiX2p5NlZhZmplaG5RaE81QVNDZUU3SGlDTmxXcUJSYmJPbGIwcDcxN0psbEtKQ3BrUTB0WS1kNnhtd1M0UzZTWEZ3ZHVodHRUM2ZqaDhfdGN6YnpVaHZNam5LdWlqcjJtek9CWFluR1Y4NVlaM2Q4dXo5LUY3ZzVCeVFwZTVqd1pMN3Z4ODV4NmJJdFNPMlJEd1ZNLUpROGhYTmktV0o0ZUJJ?oc=5",
+   "data": "2026-11-08T19:11:59Z",
+   "coletado_em": "2026-11-08T19:17:35Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
+  },
   {
    "id": "3c1354d2de57",
    "titulo": "Zucco mira fusão de secretarias em reforma administrativa que será votada antes do novo governo do assumir",
@@ -680,6 +696,20 @@
    "outras": [],
    "ufs": [
     "MA"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "29db80e8e34f",
+   "titulo": "Em meio à transição entre Ratinho Junior e Moro, secretário garante segurança planejada para o Verão Maior Paraná",
+   "veiculo": "Portal Nosso Dia",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOU0QyWkZuck1udE5ZM3FTVjRzQ1ZjWmJSa3BFaEM3eVBtb1VHSlQzVnBWaThGbkdCQmJ1TFYxSGowSVBtcG85YkRYcnJIOVQwZVBFZ3pUSWk4ZnZDV1p0ck5xSzhXSHNqWTM1ZFYzQXhvdjZ1b1V6aldpbG9xNmxoQ01zNUhGS1B5Xzl5di0xVVhDX3RRWlRCQ3lHejZUQ3F4ZWFjTmIzMDBKeUJyMXJvamctVjZoSDNUSHFydnpBaEk0WUFRR2M1dW5Sb1UwUUpsRDZv?oc=5",
+   "data": "2026-11-06T16:17:41Z",
+   "coletado_em": "2026-11-08T19:17:35Z",
+   "outras": [],
+   "ufs": [
+    "PR"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -1796,6 +1826,20 @@
     "contratos"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "6953f370e63f",
+   "titulo": "Omar Aziz define equipe de transição com vice-governadora eleita e ex-chefe da Suframa",
+   "veiculo": "Portal Tucumã",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRnNENGFQWC1Pb1JXc0dlQzJzU3lBb2RoeXhBbjFlTXdFTWR6bERwTm1pdkZSTWJ0c1ppZThHZmt4eWxXMl95d05LQUhNNW11OEQwblZBbE1ockwxa2lEbVBEV1c2TzFfT1pMempVT3hYTUJpc0xlajJyTVo0d3lwZmx1QUNId0xEUkFOYXRsN1VIbnZNeGQ5eTVSb19aSS10aVc3cTBGbXliaVRDT2lwcUEzOXE0Zw?oc=5",
+   "data": "2026-11-04T22:25:34Z",
+   "coletado_em": "2026-11-08T19:17:35Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "61cb9967aa8e",
@@ -3846,6 +3890,20 @@
    "categoria": "medida"
   },
   {
+   "id": "da096b8e2f95",
+   "titulo": "Omar Aziz e Roberto Cidade iniciam preparativos para a transição no Governo do Amazonas",
+   "veiculo": "AmEmPauta",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQYXZJVHZWVnhhUDB2dENOSTBoMmFJeG1yZm5vOHROd2tMMWlQNmJNbUwtN1hJcDNqVm5FODBGQjM0bmVhdmg2WGNZd18zTFR1TnJpQnIzNHVFb2ZjVGpSNmgxcW9BNFJnVUZpUnhrTDNwMVRBQXo3TVp0ZGZVZXdOMm8yQndxMFpySF9DZ0xuT0FmMWliN25DZXBUR1U2VU8yTHc?oc=5",
+   "data": "2026-10-29T23:29:50Z",
+   "coletado_em": "2026-11-08T19:17:35Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "c8904cde3762",
    "titulo": "Roberto Cidade e Omar Aziz alinham transição com foco na transparência",
    "veiculo": "Amazonas1",
@@ -5673,7 +5731,12 @@
    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbEx4SFdNTWgzNy1pb19meUJ5MlV5aVhIQndscUJVY2c3My1xRjh2S1JOTTVuYU9Fcm9XMzg4aUt6aV9NZ0lqOG53dTUwQS1OaTdQbXRtdHF1TkNxa0F2MkpJX3JIUnRhRDZfay1UN3hDTmJaYy1vRXdkbWk2UHNBLVUzTWczOUd3Szd1N3hn?oc=5",
    "data": "2026-10-20T07:00:00Z",
    "coletado_em": "2026-10-20T07:00:00Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Tudo Rondônia",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPLW9yMjV4a3RwQ3NjeXRIUTdWdmFmWDBpRWxHSFN0aE85NUF4Smc4NDdxX1FGdXdEQ2RCTG80aG92ZjFTN0t1ZG5IQWx4TUtIaUhSOWFQZExKbVFtVEZrUDFWWm9GcHNMcmJwMVNvMkdLU2RmMVA5VGVVRVliS2NLV25HTTVuNTNKVzhCQ2RIbzlTakZhVTdSQWZfdWsxR2w3MmNfWXJveGU?oc=5"
+    }
+   ],
    "ufs": [
     "RO"
    ],
@@ -7299,6 +7362,20 @@
    "outras": [],
    "ufs": [
     "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "43b0656c86d0",
+   "titulo": "RJ publica decreto com regras para transição de governo",
+   "veiculo": "SBT News",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNa3ZOQnlrVERTeE84YXhiWnM1amZ4dHJ1eVY3LVNjb2xjdnQ4NVpWcXdMakZOZ3hldS13X0p1NWcwS19HZFJvVUlUdXh6VWQ2Ui14b2R1X0Zkc1dBb1dEV3dONDlISXpUbHF4VWhjTDBua3pzdnZkbWxuSGRZTkx5b1JVZmt0ZUFQTnB2X2RIOC1uWWJrVm00RXpNYzZvQQ?oc=5",
+   "data": "2026-10-14T07:00:00Z",
+   "coletado_em": "2026-11-08T19:17:35Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -9545,6 +9622,20 @@
     "estrutura"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "e2f294a9bce1",
+   "titulo": "Governador eleito, Arthur Henrique (PL) é entrevistado no Jornal de Roraima 1ª Edição",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOaHEteTdTU0gwSlJIMHlJdnJHUThodW9yZFU1MC00STdSYmx3VEJVR1M5bUJVdFdXNHBGd2JGZC14cG5kemNyREgyeWc4eGtra1k4U0k0S0p0UVJZTkhaa2JyeHRHeDZ0MEtVdWpIbHRaa0o5andYOVgxckZFdDFRTkpYX0FFa2RUNEw3S214eHhUamJ3MUJyMkdTZ0VQUTFjN21VcFBzN3Q1TlhHcVduRlBBRjdnSXpma091b0ZYdUR1dVhMQzFRT3RnMlNmNWhWVUtRS2k3VjIycUdqVFJKRGZCektYNDNUcGptVVBUMC12a2tlX1EzbFo4dU5sUdIBjAJBVV95cUxON0dHbTI3YnRBSTliQkR0TklJSjNEajNuZTM4TlJqWFRGT09hNmVUQl9wNnBQT0o1Y0pMZkQyazFrOHNYWTBVMWppSHFBZTMwZm81Y2VVMno5SW93QmlwQzRsWGw0WjRZOUpCQlJzaVBhaHhIY2pfdWxNZTdaSTZhMmkxMUdUSjBnd0Nla3ZXOU5jWWgwc0hJcW1YbVBVa2hkRGRkNkVpaWljTTNVZTAtbjhUb2NjS2hiaWZMRk9hOUE4elR4WjF5eWNYUXExZVZwbWFKRFZEdVJVV0F3all6VFRpZkpsRHBEY1JBZjBlWWlTX3g0OFVBRTAzaHdZdmVqTHhHeURta1FiTXFr?oc=5",
+   "data": "2026-10-05T07:00:00Z",
+   "coletado_em": "2026-11-08T19:17:35Z",
+   "outras": [],
+   "ufs": [
+    "RR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "d3b976c06424",
