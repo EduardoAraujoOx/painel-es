@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-08",
- "gerado_em": "2026-11-08T09:17:12Z",
+ "gerado_em": "2026-11-08T10:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 17,
+   "lidos": 16,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 24,
-   "aceitos": 6,
-   "possiveis": 5
+   "lidos": 26,
+   "aceitos": 7,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 32,
+   "lidos": 31,
    "aceitos": 1,
    "possiveis": 4
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 57,
+   "lidos": 49,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 23,
    "aceitos": 6,
    "possiveis": 2
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 59,
+   "lidos": 58,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -171,7 +171,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -240,16 +240,15 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "oficial_sem_tema": 5,
-  "sem_contexto": 275,
+  "oficial_sem_tema": 6,
+  "sem_contexto": 264,
   "possivel": 19,
-  "excluir": 36,
+  "excluir": 37,
   "veiculo_outra_praca": 17,
-  "sem_contexto_com_tema": 7,
+  "sem_contexto_com_tema": 9,
   "outro_estado": 13,
   "exterior_sem_ancora": 4,
-  "caixa_alta": 1,
-  "veiculo_excluido": 23,
+  "veiculo_excluido": 19,
   "sigla_sem_ancora": 6
  },
  "itens": [
@@ -480,6 +479,18 @@
    ]
   },
   {
+   "id": "88c2bc0ae009",
+   "titulo": "Fapes lança quarta edição do edital de manutenção de equipamentos",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOV1pEdFl1akotalF2R0R3SW02WGRFM3B0WXFFSEJsMlNESTJFeGhjQnJJRTBEQnJzUWZ6WFl0Q3NBOGpmbUZiMnhLZkVIckF2eGxtVm9jMzQyaFFnRW5WN1FacFlWMzFLZGdBUnpzdzRjb2FlcGNCb3BRMzViMHRLRlVLUVVGbENGU0ZycUdncGQ?oc=5",
+   "data": "2026-11-06T20:13:00Z",
+   "coletado_em": "2026-11-08T10:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 6,
+   "temas": []
+  },
+  {
    "id": "7fcfc4900206",
    "titulo": "Barragens construídas com recursos do Fundo Cidades reforçam segurança hídrica em municípios capixabas",
    "veiculo": "Governo ES",
@@ -668,6 +679,20 @@
    "temas": [
     "transicao",
     "governador"
+   ]
+  },
+  {
+   "id": "7b2f1a73c3a8",
+   "titulo": "Fiscalizações da Sefaz no Norte e Noroeste do Estado resultam em R$ 289 mil em autuações",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUDJqVUZaZjRrdnRSQ29iaFNGalcxZFNQSTRvcGpYbVhzeVVGRDc3VHdMOUl1TGRTOFVUaG5iYmdGamE5bWoxQVJfaU9iTXIyd25ia0s0QUNubVNmWU55NnVidTlIcEN2akNMX0dDMG5OQUhmUEppM1FxSEhOM3NxallXOXlrbms3UXktQUxRQ2ZrZkZKQV9sbldfZTNyNzZndy1oTm5CWmt0VFdfN0E?oc=5",
+   "data": "2026-11-06T18:02:00Z",
+   "coletado_em": "2026-11-08T10:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 6,
+   "temas": [
+    "financas"
    ]
   },
   {
@@ -889,6 +914,20 @@
    "possivel": false,
    "triagem": 6,
    "temas": []
+  },
+  {
+   "id": "51a052adcbec",
+   "titulo": "Servidores têm salários zerados por greve e decisão agrava conflito no IBGE",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOeVVsUkRaMmduUTkzVnEyRmlEY0R0aU9vVktoN0gxalNDNGNSVEFzOUU4b1hhSF9ib3NkVUo2T2c2bGIzOFl2eFZqd3ZFSUk2a0FpbWJ5elVaSVhmZWtrZUQ4LXhwOEpuLWRxaVlYa0lha3V6YURicWRudVlNM0FIQ3NHcXJmRk9lZDVlYng2Vk5vc0R1VEJnUS0talBLUXp5SGJsWXQ2THV2NG8yTzA0X0tlUnFaSHRmamlvLWtkbklkQdIBwgFBVV95cUxOeVVsUkRaMmduUTkzVnEyRmlEY0R0aU9vVktoN0gxalNDNGNSVEFzOUU4b1hhSF9ib3NkVUo2T2c2bGIzOFl2eFZqd3ZFSUk2a0FpbWJ5elVaSVhmZWtrZUQ4LXhwOEpuLWRxaVlYa0lha3V6YURicWRudVlNM0FIQ3NHcXJmRk9lZDVlYng2Vk5vc0R1VEJnUS0talBLUXp5SGJsWXQ2THV2NG8yTzA0X0tlUnFaSHRmamlvLWtkbklkQQ?oc=5",
+   "data": "2026-11-06T12:55:25Z",
+   "coletado_em": "2026-11-08T10:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 6,
+   "temas": [
+    "pessoal"
+   ]
   },
   {
    "id": "1e01a20df0b7",
