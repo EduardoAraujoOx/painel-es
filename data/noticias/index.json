@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-08",
- "gerado_em": "2026-11-08T01:17:14Z",
+ "gerado_em": "2026-11-08T06:02:20Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 15,
+   "lidos": 16,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -25,8 +25,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 22,
-   "aceitos": 7,
+   "lidos": 23,
+   "aceitos": 6,
    "possiveis": 5
   },
   {
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 34,
+   "lidos": 32,
    "aceitos": 1,
    "possiveis": 4
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 58,
+   "lidos": 57,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 29,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -145,15 +145,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 20,
+   "lidos": 21,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 25,
    "aceitos": 6,
    "possiveis": 2
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 60,
+   "lidos": 59,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -241,16 +241,16 @@
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
   "oficial_sem_tema": 5,
-  "sem_contexto": 277,
+  "sem_contexto": 274,
   "possivel": 19,
   "excluir": 36,
-  "veiculo_outra_praca": 15,
-  "veiculo_excluido": 31,
+  "veiculo_outra_praca": 14,
   "sem_contexto_com_tema": 6,
-  "outro_estado": 12,
+  "outro_estado": 11,
   "exterior_sem_ancora": 4,
   "caixa_alta": 1,
-  "sigla_sem_ancora": 5
+  "veiculo_excluido": 30,
+  "sigla_sem_ancora": 6
  },
  "itens": [
   {
@@ -286,6 +286,18 @@
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQOVJySUpsNG5pakktOW1QWVRvWFduTzBsYzdoamNQZ29oNHJuX0FZNTNKVmZadlNMUjk0VDFTZmNEU0gwMUR2Wi1jUTRWejA1X3JEVG5LNFdDLVZTTzZKSFVMdHVGUlJZS2xiMy1WRVphdURHYmlleVV4NjVBZ3NZVWtrc2JpOTBvcFNwV1g2VEZDYkZZNzRhYlBOT0tNZGtMYlpKTnVfMzdpZjhKVS13U0tn0gG6AUFVX3lxTFA2TkFzOGNjUUhvYlhzM3FESWtVRThXV0w0M2xIaDlQSzdPcS1Uc3plRm5RcllmRnVObjJxYWlCQlVQcHNmMkZ5Uy1nb0lwMm5uUUhPUHlQN01mRl8zZHNOdUxnbmlCVWxIRGVTbndHdFZkdlVROW5FYkRzQ244eTFsaERjcXBMbkxITXpXUGJPam5QQWdETnR4MGFPV2NFajhTLTJkRkpfTlJyaTFscl82Y05XU28xNUk0Zw?oc=5",
    "data": "2026-11-07T18:31:42Z",
    "coletado_em": "2026-11-07T19:17:11Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 6,
+   "temas": []
+  },
+  {
+   "id": "800447a0c46f",
+   "titulo": "Secult abre inscrições para edital que vai premiar agentes culturais de Camaçari com R$ 10 mil",
+   "veiculo": "Revista Metropolitana",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOb25teG5WWW5SNjRjSV80UGF1WDVWVGtZQmtMNFp0cFY3OExiWnZTSFBmeUZ2bGlzemlGbGpXUHBVYU1PdkR4bHJwdG1icUtwWEtwTTBNYnBhUTRmOW9fOUxGX3p4VGpTdWtDQ3FNZXdJdVdYWHJVTnhRNmdPNFozX3NINXdxVFNvTDZkN3plOGVHSm43ZEt0RERwSlBRbGp5YVMyQVFacVdEV3YzN2ZoRUxXR05maWd0RnVOYUJKenNpOGxXYzlTN3I0SzN3Nk96YS1QNzJSWkRVSVU?oc=5",
+   "data": "2026-11-07T16:42:00Z",
+   "coletado_em": "2026-11-08T06:02:20Z",
    "outras": [],
    "possivel": true,
    "triagem": 6,
