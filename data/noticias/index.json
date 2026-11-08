@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-08",
- "gerado_em": "2026-11-08T13:17:13Z",
+ "gerado_em": "2026-11-08T14:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 13,
+   "lidos": 14,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -65,8 +65,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 2,
+   "lidos": 4,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -89,9 +89,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 30,
-   "aceitos": 1,
-   "possiveis": 3
+   "lidos": 25,
+   "aceitos": 0,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 22,
-   "aceitos": 5,
+   "lidos": 20,
+   "aceitos": 3,
    "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 58,
+   "lidos": 57,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -171,7 +171,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -224,31 +224,33 @@
   {
    "fonte": "Sim Notícias",
    "consulta": "https://simnoticias.com.br/politica/feed/",
-   "ok": true,
-   "lidos": 30,
-   "aceitos": 1,
-   "possiveis": 0
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "<urlopen error [Errno 101] Network is unreachable>"
   },
   {
    "fonte": "Sim Notícias",
    "consulta": "https://simnoticias.com.br/vinicius-baptista/feed/",
-   "ok": true,
-   "lidos": 30,
-   "aceitos": 1,
-   "possiveis": 0
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "<urlopen error [Errno 101] Network is unreachable>"
   }
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
   "oficial_sem_tema": 5,
-  "sem_contexto": 264,
-  "possivel": 17,
+  "sem_contexto": 261,
+  "possivel": 15,
+  "excluir": 31,
   "veiculo_outra_praca": 17,
   "sem_contexto_com_tema": 8,
-  "outro_estado": 9,
-  "excluir": 31,
+  "outro_estado": 11,
   "exterior_sem_ancora": 4,
-  "veiculo_excluido": 15,
+  "veiculo_excluido": 13,
   "sigla_sem_ancora": 7
  },
  "itens": [
