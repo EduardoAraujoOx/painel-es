@@ -32,6 +32,7 @@ ANOS_SERIE = list(range(2019, REF.year + 1))
 ANOS_GASTO = (REF.year - 1, REF.year)          # janela de "gasto recente": ano anterior e ano corrente
 MANDATO_DESDE = 2023                            # início da gestão atual: "pago desde 2023"
 ORG_SO_SIGEFES = 9_000_000                    # número dos órgãos que só existem no SIGEFES (unidades gestoras sem órgão no SIGA): ORG_SO_SIGEFES + código da UG
+UGS_FORA = {"10101"}                          # unidades gestoras que o painel não acompanha (10101: Assembleia Legislativa, Poder Legislativo)
 MENSAL_DESDE = "2025-01"                        # pagamentos mês a mês no detalhe do órgão
 ATIVIDADE_DESDE = 2023                          # fornecedores com algum documento a partir deste ano ganham ficha
 
@@ -205,7 +206,7 @@ def sigefes_item(g):
     return {"cnpj": g["cnpj"], "forn": titulo(g["forn"]) if g["forn"].isupper() else g["forn"], "tipo": g["tipo"], "codigo": g["codigo"], "licitacao": g["licitacao"],
             "numeroLicitacao": g["numeroLicitacao"], "processo": AM.protocolo_edocs(g["processo"]) or g["processo"], "embasamento": g["embasamento"], "acao": g["acao"],
             "objeto": g["objeto"], "subfuncao": g["subfuncao"], "elemento": g["elementoNome"], "ug": g["ug"], "pagoAnt": g["pago"].get(a, 0.0), "pagoAtu": g["pago"].get(b, 0.0), "meses": g["meses"],
-            "desde": g["desde"], "ate": g["ate"], "indicio": g.get("indicio")}
+            "desde": g["desde"], "ate": g["ate"], "indicio": g.get("indicio"), "instrumento": g.get("instrumento") or None}
 
 
 def carregar_diario():
@@ -373,18 +374,12 @@ def avaliar_contrato(c):
 
 
 # ----------------------------------------------------------------------------------- servidores
-def nomes_de_servidores():
-    nomes = collections.defaultdict(set)
+def miolos_de_servidores():
+    """{"NOME|seis dígitos centrais do CPF": [órgãos]} dos servidores ativos (cargos/extrair_vinculos.py); vazio se ainda não foi gerado, e então nenhum sócio é apontado."""
     try:
-        for p in json.load(open(os.path.join(RAIZ, ".cache", "organograma", "todos.json")))["pessoas"]:
-            nomes[R.norm_nome(p[3])].add(p[0])
-    except OSError:
-        pass
-    cargos = sorted(glob.glob(os.path.join(RAIZ, ".cache", "cargos", "20??-??.json")))
-    if cargos:
-        for p in json.load(open(cargos[-1]))["registros"]:
-            nomes[R.norm_nome(p[3])].add(p[0])
-    return nomes
+        return json.load(open(os.path.join(RAIZ, ".cache", "cargos", "miolos.json")))
+    except (OSError, ValueError):
+        return {}
 
 
 # ------------------------------------------------------------------------------- bases externas
@@ -552,7 +547,9 @@ def fmt_data_rfb(s):
 def fichas_fornecedores(recs, receita, extras=frozenset()):
     """Ficha por CNPJ com cadastro e sócios; devolve também índices para os alertas cruzados."""
     emp_rfb, est, soc, rede, tab = (receita["empresas"], receita["estab"], receita["socios"], receita["rede"], receita["tabelas"])
-    nomes_srv = nomes_de_servidores()
+    miolos_srv = miolos_de_servidores()
+    if not miolos_srv:
+        print("servidores: .cache/cargos/miolos.json ausente; nenhum sócio é apontado como servidor (a confirmação exige nome e seis dígitos do CPF)", flush=True)
     cnpjs = {c["cnpj"] for c in recs if len(c["cnpj"]) == 14} | set(extras)      # extras: pagos pelo SIGEFES e sem documento algum no SIGA
     por_raiz = collections.defaultdict(list)
     for c in sorted(cnpjs):
@@ -582,7 +579,7 @@ def fichas_fornecedores(recs, receita, extras=frozenset()):
                 outras = [b for b in rede.get(f"{nome}|{cpf}", []) if b != raiz]
                 item["rede"] = len(outras) + 1
                 item["outros"] = [x for b in outras for x in por_raiz.get(b, [])]
-                item["servidor"] = sorted(nomes_srv.get(R.norm_nome(nome), ())) if len(nome.split()) >= 3 else []
+                item["servidor"] = sorted(R.servidor_confirmado(nome, cpf, miolos_srv))
             socios.append(item)
         f["socios"] = socios
         fichas[cnpj] = f
@@ -752,7 +749,7 @@ def main():
         # unidades gestoras sem órgão no SIGA (Assembleia, Judiciário, Ministério Público, Tribunal de Contas, fundos, empates de votos) viram órgãos
         # só do SIGEFES, com número a partir de ORG_SO_SIGEFES + código da UG, para que o dinheiro pago por elas também seja seguido
         for ug_ in {l_[1] for l_ in linhas_desp}:
-            if ug_ not in ug2siga and ug_.isdigit():
+            if ug_ not in ug2siga and ug_.isdigit() and ug_ not in UGS_FORA:
                 ug2siga[ug_] = ORG_SO_SIGEFES + int(ug_)
                 org_so_sigefes[ORG_SO_SIGEFES + int(ug_)] = EXEC["ugs"].get(ug_) or ("Unidade gestora " + ug_)
         sigefes_org = AM.contratos_do_sigefes(linhas_desp, nomes_desp, subs_desp, meta_desp, ug2siga, pares_com_doc_, [str(a) for a in ANOS_GASTO], classe_cnpj=classe_cnpj)
@@ -835,7 +832,7 @@ def main():
                     onde = ", com contratação no mesmo processo." if mesmo_proc else ", atendendo ao mesmo órgão." if mesmo_orgao else "."
                     al.append(("socio_em_comum", nivel, f"{s['nome']} também é sócio de {len(s['outros'])} outro(s) fornecedor(es) do Estado" + onde))
                 if s["servidor"]:
-                    al.append(("socio_servidor", "m", f"{s['nome']}: nome igual ao de servidor ativo ({', '.join(s['servidor'][:4])})."))
+                    al.append(("socio_servidor", "m", f"{s['nome']}: nome e seis dígitos centrais do CPF iguais aos de servidor ativo ({', '.join(s['servidor'][:4])})."))
                 if s["rede"] >= R.REDE_GRANDE:
                     al.append(("rede_grande", "i", f"{s['nome']} consta como sócio em {s['rede']} empresas."))
         if len(c) == 14:
@@ -845,7 +842,7 @@ def main():
     # --- arquivos
     # arquivos gerados por outros scripts (edocs.py, portal.py) e que a remontagem não pode apagar
     preservar = {}
-    for nome_ in ("processos.json", "cobertura.json"):
+    for nome_ in ("processos.json", "cobertura.json", "publicidade_secom.json"):
         if os.path.exists(os.path.join(DESTINO, nome_)):
             preservar[nome_] = open(os.path.join(DESTINO, nome_), "rb").read()
     if os.path.isdir(DESTINO):
@@ -883,8 +880,13 @@ def main():
         processos_edocs = json.load(open(os.path.join(DESTINO, "processos.json")))
     except (OSError, ValueError):
         processos_edocs = {}
+    try:
+        contratos_publicados = json.load(open(os.path.join(DESTINO, "publicidade_secom.json")))["contratos"]
+    except (OSError, ValueError, KeyError):
+        contratos_publicados = []
     for lista_ in sigefes_org.values():
         for g_ in lista_:
+            g_["instrumento"] = AM.instrumentos_publicados(g_, contratos_publicados)
             g_["indicio"] = AM.qualificar_relacao(g_, atos=(por_c_ or {}).get(g_["cnpj"], []), pncp_contratos=pncp_cnpj.get(g_["cnpj"], 0),
                                                   edocs=processos_edocs.get(AM.protocolo_edocs(g_["processo"]) or ""))
     if sigefes_org:

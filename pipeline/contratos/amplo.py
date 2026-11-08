@@ -385,6 +385,11 @@ def qualificar_relacao(g, atos=(), pncp_contratos=0, edocs=None):
         motivos.append(f"{len(contratuais)} ato(s) no Diário Oficial que citam o CNPJ (extrato, termo, aditivo ou parceria)")
     else:
         duvidas.append("nenhum extrato, termo ou aditivo localizado no Diário Oficial pelo CNPJ (leitura desde nov/2023)")
+    for i in (g.get("instrumento") or [])[:1]:
+        pontos += 3
+        motivos.append("contrato publicado pelo órgão em seu site: " + " ou ".join(f"nº {x['numero']} (lote {x['lote']})" for x in g["instrumento"]))
+        if len(g["instrumento"]) > 1:
+            duvidas.append("a empresa consta de mais de um lote; o código do SIGEFES não diz qual")
     if pncp_contratos:
         pontos += 1
         motivos.append(f"o CNPJ tem {pncp_contratos} contrato(s) no PNCP")
@@ -445,3 +450,18 @@ def cnpjs_relevantes_do_cache(cnpjs_siga, pasta, anos=None):
         if anos is None or str(d.get("ano")) in anos:
             linhas += d["linhas"]
     return fornecedores_relevantes(linhas, cnpjs_siga) if linhas else set()
+
+
+def instrumentos_publicados(g, contratos):
+    """Contratos publicados pelo próprio órgão (secom.py) que correspondem a um pagamento do SIGEFES sem documento no SIGA.
+
+    A ligação é pela licitação (número e ano) e pelo CNPJ-raiz de uma das agências ou empresas contratadas; o código de contrato do SIGEFES não é o número do
+    instrumento, então, quando a mesma empresa está em mais de um contrato (como uma agência com dois lotes), todos os candidatos são devolvidos."""
+    lic = (g.get("numeroLicitacao") or "").strip()
+    raiz = (g.get("cnpj") or "")[:8]
+    saida = []
+    for c in contratos or []:
+        if lic and c.get("licitacao") == lic and any(raiz in p.get("raizes", []) for p in c.get("partes", [])):
+            saida.append({"numero": c["numero"], "lote": c["lote"], "valorAnual": c["valorAnual"], "inicio": c["inicio"], "vigenciaPublicadaAte": c["vigenciaPublicadaAte"],
+                          "limiteLegalAte": c["limiteLegalAte"], "aditivos": len(c.get("aditivos", [])), "url": c["url"]})
+    return saida

@@ -15,6 +15,16 @@ def norm_nome(s):
     return re.sub(r"\s+", " ", sem_acento(s).upper()).strip()
 
 
+def servidor_confirmado(nome, doc, miolos):
+    """Órgãos de lotação de servidor ativo cujo nome E seis dígitos centrais do CPF coincidem com os do sócio; [] se não houver confirmação.
+
+    Coincidência só de nome não conta (homonímia). doc: CPF mascarado da Receita (***123456**); miolos: {"NOME|123456": [órgãos]} (cargos/extrair_vinculos.py)."""
+    d = re.sub(r"\D", "", doc or "")
+    if len(d) != 6 or len((nome or "").split()) < 2:
+        return []
+    return list(miolos.get(f"{norm_nome(nome)}|{d}", ()))
+
+
 # --- instrumentos -----------------------------------------------------------------------------
 INSTRUMENTOS_CONTRATUAIS = {"CONTRATO", "CARTA CONTRATO", "CARTA-CONTRATO", "TERMO DE ADESAO"}
 SITUACOES_ENCERRADAS = {"RESCISAO CONTRATUAL", "INSTRUMENTO CONTRATUAL ANULADO", "ENCERRADO", "EXTINTO", "CANCELADO",
@@ -175,8 +185,8 @@ ALERTAS = {
                          "Micro ou pequena empresa cujo valor anual contratado supera o teto de receita bruta do seu porte."),
     "socio_em_comum": (MEDIA, "Sócio em comum com outro fornecedor",
                        "Um mesmo sócio (nome e CPF parcial) consta em mais de um fornecedor do Estado. Nível alto: ganharam o mesmo processo; médio: atendem ao mesmo órgão; informativo: apenas coincidem no Estado."),
-    "socio_servidor": (MEDIA, "Sócio com nome de servidor",
-                       "O nome de um sócio coincide com o de servidor ativo do Poder Executivo estadual. Pode ser homonímia: confirmar."),
+    "socio_servidor": (MEDIA, "Sócio identificado como servidor",
+                       "O nome e os seis dígitos centrais do CPF de um sócio coincidem com os de servidor ativo do Poder Executivo estadual. Coincidência só de nome não é listada. O CPF completo não é público; confirmar com a base da Controladoria."),
     "endereco_comum": (INFO, "Endereço compartilhado",
                        "Outro fornecedor do Estado registra o mesmo endereço (logradouro, número e CEP)."),
     "rede_grande": (INFO, "Sócio com muitas empresas",
@@ -275,7 +285,7 @@ ESCLARECER = {
     "capital_baixo": "Qualificação econômico-financeira exigida e verificada na habilitação, e garantias prestadas.",
     "porte_acima_teto": "Enquadramento do fornecedor como micro ou pequena empresa e benefícios concedidos por esse enquadramento.",
     "socio_em_comum": "Se houve verificação de vínculo entre fornecedores do mesmo processo ou órgão e análise de eventual combinação de propostas.",
-    "socio_servidor": "Se há vínculo de servidor com o fornecedor e a existência de declaração de impedimento ou de conflito de interesses.",
+    "socio_servidor": "Se há vínculo de servidor com o fornecedor e a existência de declaração de impedimento ou de conflito de interesses (nome e seis dígitos centrais do CPF coincidem; confirmar com o CPF completo).",
     "endereco_comum": "Verificação da independência entre fornecedores que informam o mesmo endereço.",
     "pessoa_fisica": "Justificativa da contratação de pessoa física, enquadramento e comprovação de regularidade.",
     "sem_cadastro": "Existência regular da empresa e confirmação do CNPJ informado.",

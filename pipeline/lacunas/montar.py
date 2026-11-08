@@ -186,11 +186,11 @@ def main():
              solicitar="Tipo, valor, seguradora ou instituição e vigência da garantia de cada contrato de obras e de serviços continuados dos contratos principais.",
              destinatarios=["Órgãos contratantes"], valorAfetado=0.0, prioridadeFixa="baixa", fonteEvidencia="Dicionário de dados do SIGA"),
         dict(id="cruzamento-cpf", area="Integridade", verificado=True,
-             titulo="Cruzamento por CPF entre servidores e sócios de fornecedores",
-             lacuna="A folha aberta não traz CPF e o cadastro da Receita mascara o dos sócios. Só é possível comparar nomes, o que mistura homônimos com os casos reais.",
-             evidencia=f"{len(socserv)} contratos vigentes ({mi(soma(socserv))} por ano) têm fornecedor com sócio de nome igual ao de servidor ativo; sem CPF não se separa homonímia de conflito de interesses.",
+             titulo="Confirmação por CPF completo de servidores que são sócios de fornecedores",
+             lacuna="A folha aberta e o cadastro da Receita mascaram o CPF e deixam visíveis só os seis dígitos centrais. O painel aponta apenas quem coincide em nome e nesses seis dígitos; coincidência só de nome não é listada, e o CPF completo só a Controladoria tem.",
+             evidencia=f"{len(socserv)} contratos vigentes ({mi(soma(socserv))} por ano) têm fornecedor com sócio que coincide em nome e nos seis dígitos centrais do CPF com servidor ativo; falta a confirmação pelo CPF completo.",
              decisao="Identificar conflito de interesses e vedações de contratar com a administração.",
-             solicitar="Cruzamento por CPF entre a folha de pessoal e o quadro societário dos fornecedores, feito pela Controladoria com acesso à base cadastral, e a relação dos casos confirmados.",
+             solicitar="Confirmação, pela Controladoria e com o CPF completo, dos sócios apontados, e a relação dos casos confirmados e das declarações de impedimento.",
              destinatarios=["CGE", "SEGER (pessoal)"], valorAfetado=soma(socserv), prioridadeFixa="alta", fonteEvidencia="Folha (Portal da Transparência) e quadro societário (Receita Federal)"),
         dict(id="sancoes-estaduais", area="Integridade", verificado=False,
              titulo="Cadastro estadual de fornecedores sancionados",
@@ -280,7 +280,7 @@ def main():
              evidencia=(f"{n_tipo['contrato']} contratos com código do SIGEFES, {n_tipo['recorrente']} contratações recorrentes sem contrato, {n_tipo['repasse']} repasses (contratos de gestão, subvenções, auxílios e contribuições) e {n_tipo['outro']} pagamentos eventuais, em {len(sg)} órgãos, somam {mi(tot_pago)} pagos nos dois últimos exercícios a fornecedores sem documento do SIGA no órgão. Maiores objetos de gasto: {grandes}."
                         + (f" Publicidade (institucional e legal): {publ[0]} contratos, {mi(publ[1])}, sobretudo em {'; '.join(k for k, _ in sorted(publ_orgs.items(), key=lambda kv: -kv[1])[:1])}; maiores fornecedores: {', '.join(k for k, _ in sorted(publ_forns.items(), key=lambda kv: -kv[1])[:5])}." if publ else "")),
              decisao="Ter a lista completa de contratos do Estado, inclusive publicidade e contratações conduzidas fora do SIGA, para avaliar valor, prazo, justificativa e saldo antes de decidir sobre manter, renegociar ou encerrar.",
-             solicitar="Relação dos contratos de publicidade (agências, veículos e produção) e dos demais contratos pagos pelo SIGEFES sem registro no SIGA, com número do instrumento, valor, vigência, aditivos, processo de contratação e saldo; e a correspondência entre o código de contrato do SIGEFES e o número do instrumento.",
+             solicitar="Contratos de publicidade: a Secom publica no site os contratos consolidados 002/2021 (lote 01) e 003/2021 (lote 02), até o 3º termo aditivo; falta a vigência e os aditivos posteriores, a relação de veículos e produção por contrato e a correspondência entre o código do SIGEFES e o número do instrumento. Demais contratos pagos pelo SIGEFES sem registro no SIGA: número do instrumento, valor, vigência, aditivos, processo de contratação e saldo.",
              destinatarios=["Secom", "SEGER (SIGA)", "SEFAZ (SIGEFES)"], valorAfetado=0.0, prioridadeFixa="alta" if tot_pago >= 100e6 else "média",
              fonteEvidencia="SIGEFES (Portal da Transparência), cruzamento do painel com o SIGA"))
     for i in itens:
