@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-08",
- "gerado_em": "2026-11-08T17:17:13Z",
+ "gerado_em": "2026-11-08T18:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,41 +17,41 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 14,
-   "aceitos": 3,
+   "lidos": 13,
+   "aceitos": 2,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 27,
+   "lidos": 28,
    "aceitos": 8,
-   "possiveis": 7
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 3,
+   "lidos": 6,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 3,
-   "possiveis": 0
+   "lidos": 9,
+   "aceitos": 8,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -65,8 +65,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 1,
+   "lidos": 5,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 20,
+   "lidos": 17,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 49,
+   "lidos": 48,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 1,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -147,7 +147,7 @@
    "ok": true,
    "lidos": 21,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -155,7 +155,7 @@
    "ok": true,
    "lidos": 20,
    "aceitos": 3,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -178,7 +178,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -238,20 +238,47 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "oficial_sem_tema": 7,
-  "sem_contexto": 259,
+  "oficial_sem_tema": 4,
+  "sem_contexto": 253,
   "possivel": 16,
-  "excluir": 34,
-  "veiculo_outra_praca": 11,
-  "sem_contexto_com_tema": 7,
+  "excluir": 37,
+  "veiculo_outra_praca": 9,
+  "sem_contexto_com_tema": 6,
   "outro_estado": 12,
-  "veiculo_excluido": 16,
+  "veiculo_excluido": 18,
   "sigla_sem_ancora": 6,
-  "exterior_sem_ancora": 3
+  "exterior_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "de87a2db4812",
+   "titulo": "Candidatos denunciam falhas em prova de concurso da Polícia Militar, e MPES cobra explicações",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/trabalho/concursos/candidatos-denunciam-falhas-em-prova-de-concurso-da-policia-militar-e-mpes-cobra-explicacoes/",
+   "data": "2026-11-08T18:03:09Z",
+   "coletado_em": "2026-11-08T18:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 6,
+   "temas": [
+    "pessoal",
+    "controle"
+   ]
+  },
+  {
+   "id": "d3bf4eab89e3",
+   "titulo": "Taser 10: Detran-ES capacita 11 agentes de trânsito",
+   "veiculo": "ES Brasil",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1wdDJwdnFCZmh6X2Uwc0RkamVOZmRzWHBDbUtyZ2tJLTEwcW55cU1yOFJkcnNBbTh3aEI5OGpLcmlmc0xCbEsySWZRU2Z0bGhENk1jNkVNVEI0U1dNdWdQNUI2dFNfYjROcFdDdWlvcnF4azZYU2E5d1pUOGk?oc=5",
+   "data": "2026-11-08T18:00:00Z",
+   "coletado_em": "2026-11-08T18:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 6,
+   "temas": []
+  },
   {
    "id": "7e841e206c1b",
    "titulo": "Motorista que morreu em acidente na Serra era servidor da prefeitura",
@@ -305,6 +332,18 @@
    "temas": [
     "financas"
    ]
+  },
+  {
+   "id": "766fb6a91bcb",
+   "titulo": "MP investiga contratações de R$ 143,3 milhões no Detran e na Seduc de Rondônia",
+   "veiculo": "Plan FM",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNMnVxczhYSFVZcm9hT2tfeDhtbEJ0TVJXd2w5blc4dDIxSG9KZFB2SmpzZnZlYk4xNkZJNWliNmRtLWJfT0RFRXYxOENmVmJZelE0VTRXY0VhTkk4RTBBemJMLXhFYzJYa0t2Rmc1b2FJZGhWXzQzcS1TZDJoWFVlXzd3S0h0UkdGR3N0QV9PaXVQdVNDOW1OUUlqZU1lRlFraTFMRURXUUhZNWxDLWtlUXlPZV9wcU1UWHc?oc=5",
+   "data": "2026-11-08T13:53:16Z",
+   "coletado_em": "2026-11-08T18:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 6,
+   "temas": []
   },
   {
    "id": "9d819015f9dc",
@@ -722,6 +761,20 @@
    "temas": []
   },
   {
+   "id": "7f25ea5af162",
+   "titulo": "TRE-ES fará a diplomação das eleitas e dos eleitos no dia 18 de dezembro, às 15h",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQzhWVW01ckZoWktsaG1XSTFLTEFMX3FQTG4yQXBLUk1wLUZ4WnpnU0luT0lYYmJHY0k4ZHFOdlhWSmFsekJaeTh2TFh4VTNwVlg3OTEwRUdHZHJNMjM2a0x4VUk0bUR2azFDWEVnUUZheEhmQkxsZE4yTC1ZZU1GV3Zjc0tzN3d0ODVmR2wxdnA0bGROVkhJODlaWWtWWnVjb3I5UDQyQQ?oc=5",
+   "data": "2026-11-06T18:20:29Z",
+   "coletado_em": "2026-11-08T18:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 6,
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
    "id": "07a4e3a7e941",
    "titulo": "Política | Sefaz afasta e Casa Civil exonera superintendente de combate a fraudes fiscais",
    "veiculo": "T1 Notícias",
@@ -894,7 +947,12 @@
    "url": "https://eshoje.com.br/politica/2026/11/mais-um-integrante-na-equipe-de-transicao-de-pazolini-conheca/",
    "data": "2026-11-06T17:15:02Z",
    "coletado_em": "2026-11-06T17:17:13Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Prensa Mercosur",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcUlaeVlrZFNPMUl3NDBOcmJsb1diTEJZc3Z0U2hGdDZmbjZoWVVYdUI0cGY2UzRHTnY3Y1UzZy04Q0ZyRmQtLWJhUjhhZkVqY2tCd0ZCMUN6WkhGZ0xPOFJSVk1jYUViRl9Md2U1QzhobXhJWjVfVUp3cFpWLTV3U3FpS2gzaUFuelpFbjVTRWNhZjRwbnAybGxfRFlJdVpuYWc?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 6,
    "temas": [
