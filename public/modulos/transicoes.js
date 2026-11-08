@@ -103,7 +103,7 @@ footer { margin-top: 14pt; font-size: 8pt; color: #666; }
 <h1>Transições em outros estados</h1>
 <p class="sub">O que as equipes dos 13 estados que trocaram de governador em 2026 estão anunciando e fazendo · ${ed ? `síntese de ${ed} · ` : ''}manchetes até ${dBR(d.ref)} · Painel Fiscal ES</p>
 ${sint ? `<p class="nota">${esc(sint.nota)}</p>` : `<p class="nota">Documento gerado a partir das manchetes guardadas no painel (título, veículo, data e link). A triagem é pelo título e pode errar; leia as matérias antes de citar.</p>`}
-${sint ? `<h2>Leitura comparada</h2>${sint.transversal.map((t) => `<h3>${esc(t.titulo)}</h3><p>${esc(t.texto)}</p>`).join('')}<h2 class="quebra">Estado a estado</h2>${d.estados.map(blocoEstado).join('')}` : ''}
+${sint ? `<h2>Leitura comparada</h2>${sint.transversal.map((t) => `<h3>${esc(t.titulo)}</h3><p>${esc(t.texto)}</p>` + (t.fontes && t.fontes.length ? `<p class="fontes"><b>Fontes:</b> ${t.fontes.map((f) => lnk(f.url, `${f.veiculo}: ${f.titulo}`)).join(' · ')}</p>` : '')).join('')}<h2 class="quebra">Estado a estado</h2>${d.estados.map(blocoEstado).join('')}` : ''}
 <h2 class="${sint ? 'quebra' : ''}">Anexo: manchetes de medidas e diagnósticos, por estado</h2>
 <p class="sub">Notícias cujo título trata de gastos, contas, contratos, estrutura administrativa, economia ou pessoal, em ordem de data (mais recente primeiro). O tema vem de palavras do título.</p>
 ${anexo}
@@ -197,7 +197,7 @@ ${anexo}
     if (sintese && sintese.transversal) {
       $('#sintese').hidden = false;
       $('#sintese-resumo').textContent = `Síntese das medidas (edição de ${dataBR(sintese.edicao)}): leitura comparada dos 13 estados`;
-      $('#sintese-corpo').replaceChildren(el('p', { class: 'mesref' }, sintese.nota), ...sintese.transversal.flatMap((t) => [el('h3', {}, t.titulo), el('p', {}, t.texto)]));
+      $('#sintese-corpo').replaceChildren(el('p', { class: 'mesref' }, sintese.nota), ...sintese.transversal.flatMap((t) => [el('h3', {}, t.titulo), el('p', {}, t.texto), t.fontes && t.fontes.length ? el('div', { class: 'noticia-meta' }, el('span', {}, 'Fontes:'), ...t.fontes.filter((f) => linkSeguro(f.url)).map((f) => el('a', { href: f.url, target: '_blank', rel: 'noopener noreferrer' }, `${f.veiculo}: ${f.titulo.length > 70 ? f.titulo.slice(0, 68) + '…' : f.titulo}`))) : null]));
     }
     $('#pdf').addEventListener('click', baixarPDF);
     $('#quem').replaceChildren(el('ul', { class: 'noticias' }, ...dados.estados.map((e) => el('li', { class: 'noticia' }, el('div', { class: 'noticia-titulo' }, `${e.nome} (${e.uf})`), el('div', { class: 'noticia-meta' }, el('span', {}, `Governador eleito: ${e.eleito}`), el('span', {}, e.partido))))));
