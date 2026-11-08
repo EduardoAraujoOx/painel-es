@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-08",
- "gerado_em": "2026-11-08T10:17:13Z",
+ "gerado_em": "2026-11-08T11:17:18Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 26,
+   "lidos": 27,
    "aceitos": 7,
-   "possiveis": 6
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 49,
+   "lidos": 45,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 21,
+   "lidos": 23,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 21,
    "aceitos": 6,
    "possiveis": 2
   },
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -187,7 +187,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "ES Hoje",
@@ -238,20 +238,34 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "oficial_sem_tema": 6,
-  "sem_contexto": 264,
+  "oficial_sem_tema": 7,
+  "sem_contexto": 263,
   "possivel": 19,
   "excluir": 37,
-  "veiculo_outra_praca": 17,
+  "veiculo_outra_praca": 16,
   "sem_contexto_com_tema": 9,
-  "outro_estado": 13,
+  "outro_estado": 10,
   "exterior_sem_ancora": 4,
-  "veiculo_excluido": 19,
+  "veiculo_excluido": 20,
   "sigla_sem_ancora": 6
  },
  "itens": [
+  {
+   "id": "45af7ef01ff8",
+   "titulo": "Pastor Usiel faz revelações sobre conflitos, depressão e aposentadoria: “Ser objeto de ódio é algo terrível”",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/religiao/pastor-usiel-faz-revelacoes-sobre-conflitos-depressao-e-aposentadoria-ser-objeto-de-odio-e-algo-terrivel/",
+   "data": "2026-11-08T11:00:00Z",
+   "coletado_em": "2026-11-08T11:17:18Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 6,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "e339d9d2199c",
    "titulo": "Presidente de Israel indica Gadi Eisenkot para formar governo",
@@ -890,6 +904,18 @@
    "temas": [
     "pessoal"
    ]
+  },
+  {
+   "id": "4f3da81de286",
+   "titulo": "Prodest apresenta soluções tecnológicas para estudantes de escola estadual de Vila Velha",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOb2lCWko4Z0tMZ3p1N0NmaThzbXZjVENnMDh1b2phWC1vUzlVOTEwRG5IQUlhT04zd0lpbktKaHpITExfeHNveWprdkszdl81SEVjRlFlMng4ci1Id0lYc21TOWc2UElVV2lUT0JlaWc2T3BoWUZSblIxQWdKYS1HSnpfOTZuY1A3OTlKOTJrdHBJSTdKZlE5LXYwWkVzZmpSX0Q2VUtRYnhfZWlySlRN?oc=5",
+   "data": "2026-11-06T14:16:00Z",
+   "coletado_em": "2026-11-08T11:17:18Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 6,
+   "temas": []
   },
   {
    "id": "1b604017ce69",
