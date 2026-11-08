@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-08",
- "gerado_em": "2026-11-08T20:17:13Z",
+ "gerado_em": "2026-11-08T20:29:39Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 47,
+   "lidos": 45,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 20,
+   "lidos": 19,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 15,
+   "lidos": 14,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -178,7 +178,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
@@ -192,11 +192,10 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": false,
-   "lidos": 0,
+   "ok": true,
+   "lidos": 30,
    "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 415: Unsupported Media Type"
+   "possiveis": 2
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -241,17 +240,31 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 226,
-  "possivel": 12,
-  "excluir": 27,
-  "veiculo_outra_praca": 7,
-  "outro_estado": 13,
-  "veiculo_excluido": 8,
-  "sigla_sem_ancora": 8,
+  "sem_contexto": 247,
+  "possivel": 14,
+  "excluir": 30,
+  "veiculo_outra_praca": 6,
+  "outro_estado": 14,
+  "veiculo_excluido": 7,
+  "sigla_sem_ancora": 9,
   "sem_contexto_com_tema": 5,
   "exterior_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "274b6851984c",
+   "titulo": "Servidor da Serra morre após colisão na Rodovia Audifax Barcelos",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/seguranca/2026/11/servidor-da-serra-morre/",
+   "data": "2026-11-08T20:21:42Z",
+   "coletado_em": "2026-11-08T20:29:39Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "6764eaca039a",
    "titulo": "Servidor da Prefeitura da Serra morre em acidente entre dois carros",
@@ -494,6 +507,20 @@
    "url": "https://eshoje.com.br/colunistas/2026/11/o-acucar-e-essencial/",
    "data": "2026-11-07T13:37:39Z",
    "coletado_em": "2026-11-07T14:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "d4f0d8f3056b",
+   "titulo": "PGI Itinerante: Sefaz aborda desenvolvimento institucional em Sobral e Juazeiro do Norte",
+   "veiculo": "Leia Sempre Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNQWVmLVZRQk92d2haQ2hPYldYbWlIOUk3aXNISHhpaFlpeHFsclFBTy15aXZJOUk5Z0pEeHF0T0FxM3Q4R1JFS1B1TnA0T21FX2RNSDA5REhyX09HY0hoWkJ6Slh3RXZ3Z2hoRVg4aXBSSUJxb3VpWU9zQTMxMlhDZ3dPazFOc0pCcGxQa0dxLUlXUklXMDJqd0M5Z3d1UU9KenQ0M0gzSEVXaUUyNzRnTzlyMldlV2xtN2dlTXNNTjF0ci1Kcl9YN2F5dw?oc=5",
+   "data": "2026-11-07T13:02:21Z",
+   "coletado_em": "2026-11-08T20:29:39Z",
    "outras": [],
    "possivel": true,
    "triagem": 7,

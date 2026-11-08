@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-08T20:17:47Z",
+ "gerado_em": "2026-11-08T20:30:07Z",
  "ref": "2026-11-08",
  "desde": "2026-10-04",
  "estados": [
@@ -36,14 +36,14 @@
    "nome": "Minas Gerais",
    "eleito": "Cleitinho Azevedo",
    "partido": "Republicanos",
-   "total": 97
+   "total": 99
   },
   {
    "uf": "PA",
    "nome": "Pará",
    "eleito": "Dr. Daniel Santos",
    "partido": "Podemos",
-   "total": 41
+   "total": 42
   },
   {
    "uf": "PR",
@@ -64,7 +64,7 @@
    "nome": "Rio Grande do Norte",
    "eleito": "Cadu Xavier",
    "partido": "PT",
-   "total": 44
+   "total": 45
   },
   {
    "uf": "RS",
@@ -92,7 +92,7 @@
    "nome": "Tocantins",
    "eleito": "Vicentinho Júnior",
    "partido": "PSDB",
-   "total": 50
+   "total": 51
   }
  ],
  "temas": {
@@ -104,9 +104,9 @@
   "pessoal": "Servidores e pessoal"
  },
  "contagem": {
-  "total": 710,
-  "medidas": 186,
-  "equipe": 524
+  "total": 715,
+  "medidas": 187,
+  "equipe": 528
  },
  "itens": [
   {
@@ -2093,6 +2093,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "bd0af45661ab",
+   "titulo": "Ratinho visita Cleitinho em Divinópolis e prevê que governador eleito poderá chegar à Presidência da República",
+   "veiculo": "DiviNews",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQUXZ2MW55cFZDTGViRWtqMlc0TGFTSm1aY1d3Nlh1MHo1RU9nSzZ5VkVJSXZKZ1JOYXgxUElHTmdqRW93MGpQci1SUVZFR2NneDV6ODc4aWhKSHlORFE4Q081VHdJU2FKR3BDSUh0SEJZSnhPdG8zY3A1RlU5YzBidUhiWjNFZzdVQWJ2WmcyQ3EzZUV2QTNMYW1GUE5LQUduYUdPVXRoQjEyMUJNUXR0Yy16REFtSmdRcDRxVlhpd1UxRGU5TGxodXZ4blU1UExhbTREQmJxWF9hMjQ?oc=5",
+   "data": "2026-11-04T18:14:00Z",
+   "coletado_em": "2026-11-08T20:30:07Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "8f9afbcf2648",
    "titulo": "Cadu Xavier diz que terá governo com identidade própria e foco em desenvolvimento econômico no RN",
    "veiculo": "Blog Lucas Tavares",
@@ -3550,6 +3564,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "4322950fa8d3",
+   "titulo": "Cadu Xavier terá gabinete na Escola de Governo e inicia transição com primeira reunião em novembro",
+   "veiculo": "BNews RN",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQdXlyU2VyUGNWUGFyQ292d1hPQXFKdDJLZjVYNGMzc19BSEY3dW1NVFpqM05GV0RQcFNmMl9mb1BmQ2l2YkRMVjlMempQYWNmaWJzNkhIMXB1clJWRW4zdjlETWl5S0JWdEtlMUFWZnZuX0szNy0tc0tCeUd1X0RkbS1UenpXRlFlcFpXRlUzX2x6Rnk4dFFxTWc0QzZ4SkJVRVZEQUM0bmR2RUZsb3o5a0ZpNGRyTE5QaVRPSWRqOEVFaWctVmlpM3pMWnNIRW94T1JZUk5RVDRjMGlqX2dVdjNn0gHnAUFVX3lxTE9vTThQZmpIMGpTSmtGeTVTcHVxVERCWFFuaXBrbnZQcGJSNUtpMjRJa2hBS1Z6NzNsZHIzZTFOWFA0aklOam11Z2Njazl6ZEdLaVY1YjR0TG1fSnBlN2Y4R0tTZVF2a29ka0JzbUFhcmVBNnZPWmRwVjR3bFplTGJmRC1BeXZNQkFJbnNUWkFERzI3NXlSM296a2Y0NS1aVUJCR1FQQWxGZmJRSzNNVjNYX1VRejh6czFZTVRpU0tsaXFfQWFnV2VwOVpmam9rVEFJdl9qSDdpVWYwbTdlRnFJSVBJekd0MA?oc=5",
+   "data": "2026-10-31T14:34:03Z",
+   "coletado_em": "2026-11-08T20:30:07Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "56b57cda6706",
    "titulo": "ALE nunca legislou tanto para atrapalhar um governador eleito como tem sido contra JHC",
    "veiculo": "Blog Kleverson Levy",
@@ -4659,6 +4687,20 @@
    "outras": [],
    "ufs": [
     "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "c3248b6b72fe",
+   "titulo": "Vicentinho Júnior inicia transição de governo no Tocantins",
+   "veiculo": "Surgiu",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVjNOSzdraU4yM0UzM251TzBmNjlNSGM3cnQ4RTZTeXBJSWZsZ2pOVVVsaTRJZ29rSU8zOUZhWWR2ZF9JemZsN1E5VXI5Z0t2NDNxckViSWFVWGpIeDhuYzhBeURCTkNKY0p1OHB4UW5QeWpiWGx4NmFaak5mYzk1Ri04c1FRRzBkQTQyMFZCUE9SYWktYUww?oc=5",
+   "data": "2026-10-27T23:00:00Z",
+   "coletado_em": "2026-11-08T20:30:07Z",
+   "outras": [],
+   "ufs": [
+    "TO"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -6785,6 +6827,23 @@
    "categoria": "equipe"
   },
   {
+   "id": "d6802532dadc",
+   "titulo": "No plenário do Senado, Cleitinho critica Simões, pede humildade e diz que vai auditar todos os contratos do governo",
+   "veiculo": "Rádio Itatiaia",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOSVBLYWE0U09aY1dyd3dENndFYWFtZkJKOFZHYl9ucTVxbmJYeHp4eVZRdHhxcmUtX2x2S3VpVGpTcGF6andZcnY0VUo3Sk8xdXE1M1RtNVdYN3czMWViYU9PcDB2TDZPODRFaW9JYVBjcWhlQktWU1VMMUZVOGozMTNOSXIzUVdpQmFsazBuUXlyN3dKQWo5LVRQZXFRdWNLckxNWXdGMW1jaFM1SUZpR2ZuMWFGX2pza3d0UzhnM0ZvTGdUcXNaa2xVRGQ5a0hTM25EclhUVGFkNTlEeHpSdTRGaDBXaVBHYk5aWlQ0NWhYdw?oc=5",
+   "data": "2026-10-15T07:00:00Z",
+   "coletado_em": "2026-11-08T20:30:07Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico",
+    "contratos"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "d49aee55b3a2",
    "titulo": "Prazo para Clécio se manifestar sobre transição de governo termina nesta quinta-feira, 15",
    "veiculo": "Diário do Amapá",
@@ -7513,6 +7572,20 @@
    "outras": [],
    "ufs": [
     "RJ"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "ec4bf01faf5a",
+   "titulo": "Governador eleito Daniel Santos visita Ministério Público do Pará",
+   "veiculo": "O Liberal",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUHB1Y1dSYWdoRENrQWlMTWFwOE1DZ1dyc0NEY3RuXy1vQjFvLS1VeEM3TlBQazFwbWQ1QWNXT05qa2pnWGV1ck03WVRDVkwwbUx2RGR5UkVkUGNkbWZQS0xWREw5Tm5BTk1YT0I3RmxpZnJiWU9aMWZ3MmZmZ29zNFRUZDJTeUhqMDQ1OVUzR1llck55NzFLM1JxTml2ckREbXpGa3VnbzhWSTJXWnc?oc=5",
+   "data": "2026-10-13T07:00:00Z",
+   "coletado_em": "2026-11-08T20:30:07Z",
+   "outras": [],
+   "ufs": [
+    "PA"
    ],
    "temas": [],
    "categoria": "equipe"
