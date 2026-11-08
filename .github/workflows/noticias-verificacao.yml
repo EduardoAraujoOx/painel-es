@@ -43,6 +43,9 @@ jobs:
       - name: Testes (detector de contratos suspensos)
         run: python3 -I -m unittest discover -s pipeline/contratos/testes -v
 
+      - name: Testes (empresas estatais, CidadES)
+        run: python3 -I -m unittest discover -s pipeline/estatais/testes -v
+
       - name: Testes (Diário Oficial)
         run: python3 -I -m unittest discover -s pipeline/diario/testes -v
 

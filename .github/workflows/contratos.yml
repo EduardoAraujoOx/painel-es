@@ -82,6 +82,13 @@ jobs:
           done
           echo "Folha não encontrada; os alertas de sócio com nome de servidor usam o cache anterior, se houver."; exit 1
 
+      # Empresas estatais (Banestes, Bandes, Cesan, Ceturb-GV, ES Gás, Ceasa): contratos e pagamentos declarados ao CidadES (TCE-ES). O arquivo tem cerca de 1,5 GB e
+      # é atualizado por volta do dia 1 de cada mês; lê em fluxo, sem gravar em disco. Grava data/estatais.
+      - name: Empresas estatais (CidadES)
+        if: steps.modo.outputs.completo == 'sim'
+        continue-on-error: true
+        run: python3 -I pipeline/estatais/cidades.py
+
       # --- passos de todo dia (a Receita e as bases externas leem os CNPJs do SIGA, por isso vêm depois do download) --------------------------------------------------------------------------------------------------------
       - name: Baixar o SIGA (contratos, alterações, empenhos e comissões)
         run: python3 -I pipeline/contratos/baixar.py
@@ -175,14 +182,14 @@ jobs:
               sys.exit("Queda grande demais nos contratos vigentes ou nos órgãos: nada foi gravado. Confira os passos acima.")
           EOF
 
-      - name: Gravar no repositório (só data/contratacoes, data/fimmandato e data/lacunas; o deploy sai do push)
+      - name: Gravar no repositório (só data/contratacoes, data/estatais, data/fimmandato e data/lacunas; o deploy sai do push)
         run: |
-          if [ -z "$(git status --porcelain -- data/contratacoes data/fimmandato data/lacunas)" ]; then
+          if [ -z "$(git status --porcelain -- data/contratacoes data/estatais data/fimmandato data/lacunas)" ]; then
             echo "Sem mudanças."; exit 0
           fi
           git config user.name "atualizacao-contratos"
           git config user.email "atualizacao-contratos@users.noreply.github.com"
-          for d in data/contratacoes data/fimmandato data/lacunas; do if [ -e "$d" ]; then git add "$d"; fi; done
+          for d in data/contratacoes data/estatais data/fimmandato data/lacunas; do if [ -e "$d" ]; then git add "$d"; fi; done
           git commit -m "dados: contratos de $(date -u +%F)"
           for tentativa in 1 2 3; do
             git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
