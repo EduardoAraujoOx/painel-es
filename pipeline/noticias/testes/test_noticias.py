@@ -318,10 +318,67 @@ class RuidoDeObrasETransicao(unittest.TestCase):
         self.assertFalse(itens[0]["possivel"])
 
     def test_divulgacao_de_fonte_oficial_cai_mas_a_gestao_passa(self):
-        self.assertEqual(coletar.decidir(CFG, "TVE transmite aulão especial para o Enem", "Governo ES", self.F, True), ("descartada", "oficial_divulgacao"))
+        self.assertEqual(coletar.decidir(CFG, "TVE transmite aulão especial de redação", "Governo ES", self.F, True), ("descartada", "oficial_divulgacao"))  # (com "Enem" no título, vale antes a regra geral `excluir`)
         for t in ("Saúde recebe 28 ambulâncias para reforçar atendimento nos municípios capixabas", "Sedu publica 6ª edição de e-book com mais de 170 práticas pedagógicas",
                   "Espírito Santo encerra participação nos Jogos da Juventude 2026 com recorde de 33 medalhas"):
             self.assertEqual(coletar.decidir(CFG, t, "Governo ES", self.F, True), ("possivel", "oficial_sem_tema"), t)  # divulgação sem tema de atenção: só possível
+
+
+class ForaDoObjetivo(unittest.TestCase):
+    """Revisão de 08/11/2026 das 409 notícias confirmadas: cerca de um quarto não tinha relação com o governo do Estado (finanças, contratos, pessoal, controle,
+    transição). Resultado de eleição cidade a cidade, Enem e Transcol, CNH Social, Procon, câmaras e prefeituras, futebol, planos de saúde e afins."""
+
+    def setUp(self):
+        self.F = coletar.preparar(CFG)
+
+    def classe(self, titulo, veiculo, regional=True):
+        return coletar.decidir(CFG, titulo, veiculo, self.F, regional)[0]
+
+    def test_o_que_nao_e_do_governo_do_estado_nao_e_confirmado(self):
+        for t, v in [("Batata acerta pré-contrato e será novo atacante do Vitória em 2027", "Tribuna Online"),
+                     ("Iconha (ES): Lorenzo Pazolini vence o 2º turno para o governo; veja resultado na cidade", "UOL Notícias"),
+                     ("Qual é o número de Lorenzo Pazolini para o governo do Espírito Santo?", "O GLOBO"),
+                     ("Eleições 2026 - Apuração ao vivo para governador do ES - Segundo Turno", "A Gazeta"),
+                     ("Raquel Ramos 44500 (UNIÃO): candidata a Deputado Estadual pelo ES", "Gazeta do Povo"),
+                     ("Estudantes que vão fazer a prova do Enem terão passe livre no Transcol neste domingo", "Folha Vitória"),
+                     ("Enem 2026: Ruas de Lazer de Vitória serão suspensas nos próximos dois domingos", "Tribuna Online"),
+                     ("Transcol terá ônibus extras no Dia de Finados; veja os terminais", "Folha Vitória"),
+                     ("Fim da passagem dupla! Vila Velha ganha integração com o Transcol neste sábado (31)", "Folha do ES"),
+                     ("Detran-ES divulga nesta terça-feira (3) os suplentes no programa CNH Social", "A Gazeta"),
+                     ("Golpe da CNH: criminosos enviam mensagens falsas do Detran pelo WhatsApp", "Folha do ES"),
+                     ("Preço das flores para o Dia de Finados varia até 300% em Vitória, aponta Procon", "A Gazeta"),
+                     ("Vereadores aprovam reajuste do tíquete-alimentação dos servidores de Vitória", "Folha Vitória"),
+                     ("Servidores de cidade do ES podem receber abono de até R$ 20 mil; veja quem tem direito", "A Gazeta"),
+                     ("Abono natalino de R$ 8,5 mil a servidores divide Mesa Diretora de Câmara no ES", "A Gazeta"),
+                     ("Dia do Servidor: veja quando é ponto facultativo na Grande Vitória", "Folha Vitória"),
+                     ("Congresso em Vitória debate reajustes e negativas dos planos de saúde", "ES Hoje"),
+                     ("Nova cobrança da Uber pode ser suspensa pela Justiça; veja o que muda para motoristas do ES", "Folha Vitória"),
+                     ("Estoque que vale dinheiro: oportunidade de geração de caixa na transição para a CBS", "A Gazeta"),
+                     ("Idaf, Cachoeiro e Banestes: 44 mil vagas em concursos e seleções", "A Gazeta"),
+                     ("Itaú, Bradesco, Banestes e Allos pagam provento na semana", "Finance News"),
+                     ("Santa Vitória conquista nota máxima da Secult-MG e assegura repasses do ICMS Turismo", "Regionalzão")]:
+            self.assertEqual(self.classe(t, v), "descartada", t)
+
+    def test_policial_e_clima_sem_tema_de_atencao_sai_na_consolidacao(self):
+        r = coletar.compilar_lista(CFG["ruido_sem_tema"]["termos"])
+        for t in ("Ação integrada das Polícias Civil e Militar resgata vítima de sequestro na Serra", "Caravana do Incaper discute impactos do El Niño no campo"):
+            self.assertTrue(coletar.casa(r, coletar.normalizar(t)), t)
+
+    def test_o_que_e_gestao_do_estado_continua_confirmado(self):
+        for t, v in [("Sejus suspende contratos de tecnologia de rastreamento de viaturas e câmeras policiais", "G1"),
+                     ("SESP-ES institui governança e limita uso de reconhecimento facial e do Cerco Inteligente", "atlaspublico"),
+                     ("ES fixa regras e trava caixa para pagamento de obras e contratos no fim de 2026", "A Gazeta"),
+                     ("ICMS sobre combustíveis sobe em 2027: o que muda no ES", "A Gazeta"),
+                     ("ES pode perder R$ 500 milhões com decisão do STF sobre royalties do petróleo", "Folha do ES"),
+                     ("Emendas parlamentares no ES: entenda como o dinheiro chega aos municípios", "rede noticia"),
+                     ("Compras públicas: ES cria grupo para a Reforma Tributária", "ES Brasil"),
+                     ("Equipe de transição estuda auditoria externa nas contas do ES", "Tribuna Online"),
+                     ("Dívidas da Cesan disparam e balanço fica sob pressão", "Folha do ES"),
+                     ("Concurso Idaf 2026: salários, cargos e data da prova", "Capixaba da Gema"),
+                     ("Pazolini volta a atuar como delegado até a posse em janeiro", "A Gazeta"),
+                     ("Pazolini visita Tribunal de Contas e destaca importância do respeito aos órgãos de controle", "TC Online"),
+                     ("Lorenzo Pazolini é eleito governador do Espírito Santo", "G1")]:
+            self.assertEqual(self.classe(t, v), "confirmada", t)
 
 
 class ColunasPoliticas(unittest.TestCase):
