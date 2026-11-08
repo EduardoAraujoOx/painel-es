@@ -1,7 +1,7 @@
 // Gera o convite de cada seção do painel, a partir de public/compartilhar-img/secoes.json:
 //   public/compartilhar-img/<seção>.jpg   imagem 1200x630 que o WhatsApp mostra na prévia do link
 //   public/<seção>/index.html             página do link (etiquetas Open Graph) que leva à seção; "painel" é a página inicial e não tem página própria
-// Uso (precisa do Playwright com Chromium): node pipeline/compartilhamento/gerar.js
+// Uso (precisa do Playwright com Chromium): node pipeline/compartilhamento/gerar.js [seção ...]   (sem argumentos, gera todas)
 const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
@@ -47,7 +47,9 @@ const pagina = (id, s) => `<!doctype html>
   const b = await chromium.launch();
   const p = await b.newPage({ viewport: { width: 1200, height: 630 } });
   const tmp = path.join(__dirname, '.cartao-tmp.html');
+  const SO = process.argv.slice(2); // opcional: só estas seções (ex.: node gerar.js estados); sem argumentos, todas
   for (const [id, s] of Object.entries(SECOES)) {
+    if (SO.length && !SO.includes(id)) continue;
     const html = MODELO.replace(/{{cor}}/g, s.cor).replace('{{titulo}}', esc(s.titulo)).replace('{{sub}}', esc(s.sub))
       .replace('{{chips}}', s.chips.map((c) => `<span>${esc(c)}</span>`).join('')).replace('{{cta}}', esc(s.cta));
     fs.writeFileSync(tmp, html);

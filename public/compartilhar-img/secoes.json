@@ -70,5 +70,13 @@
     "chips": ["Paralisadas", "Contrato rescindido", "Valor e data"], "cta": "Acompanhe",
     "og_titulo": "Obras paralisadas do governo do ES",
     "og_texto": "As obras paralisadas e com contrato rescindido no Portal da Transparência, com data e valor. Toque para acompanhar."
+  },
+  "estados": {
+    "cor": "#0b7d8c", "hash": "#/transicoes", "rotulo": "Estados",
+    "titulo": "O que outros estados fazem na transição",
+    "sub": "As medidas das equipes de transição dos 13 estados que trocaram de governador em 2026: corte de gastos, diagnóstico das contas e estrutura do governo.",
+    "chips": ["Corte de gastos", "Diagnóstico das contas", "Por estado"], "cta": "Acompanhe",
+    "og_titulo": "O que outros estados fazem na transição",
+    "og_texto": "Medidas das equipes de transição de 13 estados: corte de gastos, diagnóstico das contas e estrutura do governo. Toque para acompanhar."
   }
 }

@@ -4,7 +4,7 @@
   // daquela seção (public/compartilhar-img/). O link da barra do navegador termina em #/seção, parte que o WhatsApp não lê.
   const botao = document.getElementById('compartilhar');
   if (!botao) return;
-  const SECOES_COM_LINK = ['pessoal', 'contratos', 'fundos', 'transicao', 'noticias']; // o endereço não depende do arquivo de textos, que carrega à parte
+  const SECOES_COM_LINK = ['pessoal', 'contratos', 'fundos', 'transicao', 'noticias', 'estados']; // o endereço não depende do arquivo de textos, que carrega à parte
   // Telas de Contratos que têm convite próprio (a tela é lida do endereço, #/atos, e não de dado carregado depois)
   const TELAS_COM_LINK = { atos: 'contratos-recentes', suspensos: 'contratos-suspensos', obras: 'obras-paralisadas' };
   let secoes = null;
