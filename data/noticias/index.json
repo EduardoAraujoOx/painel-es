@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-08",
- "gerado_em": "2026-11-08T15:58:59Z",
+ "gerado_em": "2026-11-08T17:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 24,
-   "aceitos": 6,
-   "possiveis": 5
+   "lidos": 27,
+   "aceitos": 8,
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 2,
+   "lidos": 3,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 20,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 47,
+   "lidos": 49,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 26,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 20,
+   "lidos": 21,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 19,
+   "lidos": 20,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -171,7 +171,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -187,7 +187,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "ES Hoje",
@@ -240,18 +240,32 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "oficial_sem_tema": 5,
-  "sem_contexto": 264,
-  "possivel": 15,
-  "excluir": 31,
-  "veiculo_outra_praca": 13,
-  "sem_contexto_com_tema": 8,
+  "oficial_sem_tema": 7,
+  "sem_contexto": 259,
+  "possivel": 16,
+  "excluir": 34,
+  "veiculo_outra_praca": 11,
+  "sem_contexto_com_tema": 7,
   "outro_estado": 12,
-  "exterior_sem_ancora": 4,
-  "veiculo_excluido": 15,
-  "sigla_sem_ancora": 6
+  "veiculo_excluido": 16,
+  "sigla_sem_ancora": 6,
+  "exterior_sem_ancora": 3
  },
  "itens": [
+  {
+   "id": "7e841e206c1b",
+   "titulo": "Motorista que morreu em acidente na Serra era servidor da prefeitura",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/transito/motorista-que-morreu-em-acidente-na-serra-era-servidor-da-prefeitura-1126",
+   "data": "2026-11-08T17:00:43Z",
+   "coletado_em": "2026-11-08T17:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 6,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "e4d6215b536b",
    "titulo": "Servidor público morre após carro ser atingido por outro veículo e capotar na Serra",
@@ -265,6 +279,18 @@
    "temas": [
     "pessoal"
    ]
+  },
+  {
+   "id": "db990f09b5d2",
+   "titulo": "Combustíveis estariam 2X mais caros sem ação do governo contra choque do petróleo",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOY251Z0dLZ25rOXV6endKTDdQb3I0ODRfNjhUMmlXSWFibzJPalVCLWxZUGRwaWhBV3A5S2U3R0YtUzNiejZaRENCWFRnc2FENUx0ZkNyTDRtd1c0ZmVVQjhGVkY2Y2RlcVp6ejhRLTNDNVRMYzVMbm9pOHNwZVlITFVoelg0WXNRLVZsNEYzUDBZWDhXSHRBdUtyVXYxVU1tNjcxczBZcjl6RkhTLWxfTkhnRVJITzdPc29BNUpVazNHU3JxWlV2bzg1ZnDSAcwBQVVfeXFMTmNudWdHS2duazl1enp3Skw3UG9yNDg0XzY4VDJpV0lhYm8yT2pVQi1sWVBkcGloQVdwOUtlN0dGLVMzYno2WkRDQlhUZ3NhRDVMdGZDckw0bXdXNGZlVUI4RlZGNmNkZXFaeno4US0zQzVUTGM1TG5vaThzcGVZSExVaHpYNFlzUS1WbDRGM1AwWVg4V0h0QXVLclV2MVVNbTY3MXMwWXI5ekZIUy1sX05IZ0VSSE83T3NvQTVKVWszR1NycVpVdm84NWZw?oc=5",
+   "data": "2026-11-08T15:31:02Z",
+   "coletado_em": "2026-11-08T17:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 6,
+   "temas": []
   },
   {
    "id": "e69ee67da9ba",
@@ -684,6 +710,18 @@
    ]
   },
   {
+   "id": "1ed6a6fed4c0",
+   "titulo": "Detran|ES capacita agentes de trânsito para uso da Taser 10",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbFI5UjF6czMwM3Y3ZTFZSjAtVnIzUVhTeEZyOHNGMEZNTmVhQ0VvTDVlWjlvV29nNTZFbjdXbGRvYjR2SmJubkVLb1k2TXUtRnZvY1lkV2g2T05HNVpCdFlwN29VZWlNV21vMDJVUS1MdEROWW1iSUxobTBwTmE0aHpmZWdib3F6?oc=5",
+   "data": "2026-11-06T18:22:00Z",
+   "coletado_em": "2026-11-08T17:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 6,
+   "temas": []
+  },
+  {
    "id": "07a4e3a7e941",
    "titulo": "Política | Sefaz afasta e Casa Civil exonera superintendente de combate a fraudes fiscais",
    "veiculo": "T1 Notícias",
@@ -788,6 +826,18 @@
    "temas": [
     "transicao"
    ]
+  },
+  {
+   "id": "959b2faf80b4",
+   "titulo": "Fames abre processo seletivo para 62 vagas nos Cursos de Formação Musical em 2027",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOa2NQc3JHLVZGVHVFdmpCRU9mQk41UmpHQ2dfT1Bkemg3WVBBVm9EVFJsQllHUFJDeUVlX3ZBMTlVWkQ2TDE2TFl6X3kxc1NMVnMyZllDWmR0by1WbGo5STFzZV9EcDRFb2h0dnhfZmp4Wm5KdEZRTXZYNkxRbUlJNGNORGU3WG5JNkVMcFdmOFlMMF9lNFNGcFp1U3BYbmlUbEhiTWNn?oc=5",
+   "data": "2026-11-06T17:39:00Z",
+   "coletado_em": "2026-11-08T17:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 6,
+   "temas": []
   },
   {
    "id": "9ecc7310f005",
