@@ -359,6 +359,15 @@ class ForaDoObjetivo(unittest.TestCase):
                      ("Santa Vitória conquista nota máxima da Secult-MG e assegura repasses do ICMS Turismo", "Regionalzão")]:
             self.assertEqual(self.classe(t, v), "descartada", t)
 
+    def test_termo_que_existe_em_todo_estado_nao_vale_em_veiculo_de_outra_praca(self):
+        """Caso de 08/11/2026: "Rede Estadual Saúde Escola", do Governo do Estado do Ceará, entrou porque "rede estadual" estava entre os termos específicos do ES."""
+        t = "6º Encontro da Rede Estadual Saúde Escola celebra integração da Educação Popular nas políticas do SUS"
+        self.assertEqual(coletar.decidir(CFG, t, "Governo do Estado do Ceará", self.F, False), ("descartada", "veiculo_outra_praca"))
+        self.assertEqual(coletar.decidir(CFG, "Secretário da Fazenda anuncia pacote de incentivos", "Diário do Nordeste", self.F, False)[0], "possivel")  # sem fonte capixaba nem âncora do ES: só possível
+        # em veículo capixaba, ou com âncora do ES, o termo continua valendo
+        self.assertEqual(coletar.decidir(CFG, "Rede estadual de ensino do ES tem matrículas abertas para 2027", "Folha Vitória", self.F, True)[0], "confirmada")
+        self.assertEqual(coletar.decidir(CFG, "Secretário da Fazenda do ES detalha o caixa de 2027", "G1", self.F, False)[0], "confirmada")
+
     def test_policial_e_clima_sem_tema_de_atencao_sai_na_consolidacao(self):
         r = coletar.compilar_lista(CFG["ruido_sem_tema"]["termos"])
         for t in ("Ação integrada das Polícias Civil e Militar resgata vítima de sequestro na Serra", "Caravana do Incaper discute impactos do El Niño no campo"):
