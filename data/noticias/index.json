@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-08",
- "gerado_em": "2026-11-08T14:17:13Z",
+ "gerado_em": "2026-11-08T15:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 14,
+   "lidos": 13,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 24,
-   "aceitos": 6,
+   "aceitos": 7,
    "possiveis": 5
   },
   {
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -91,13 +91,13 @@
    "ok": true,
    "lidos": 25,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 46,
+   "lidos": 44,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -195,7 +195,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -224,20 +224,18 @@
   {
    "fonte": "Sim Notícias",
    "consulta": "https://simnoticias.com.br/politica/feed/",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "<urlopen error [Errno 101] Network is unreachable>"
+   "ok": true,
+   "lidos": 30,
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "Sim Notícias",
    "consulta": "https://simnoticias.com.br/vinicius-baptista/feed/",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "<urlopen error [Errno 101] Network is unreachable>"
+   "ok": true,
+   "lidos": 30,
+   "aceitos": 1,
+   "possiveis": 0
   }
  ],
  "novos_na_coleta": 0,
@@ -246,14 +244,28 @@
   "sem_contexto": 261,
   "possivel": 15,
   "excluir": 31,
-  "veiculo_outra_praca": 17,
-  "sem_contexto_com_tema": 8,
+  "veiculo_outra_praca": 14,
+  "sem_contexto_com_tema": 9,
   "outro_estado": 11,
   "exterior_sem_ancora": 4,
-  "veiculo_excluido": 13,
+  "veiculo_excluido": 14,
   "sigla_sem_ancora": 7
  },
  "itens": [
+  {
+   "id": "e69ee67da9ba",
+   "titulo": "Falecido deixou dívidas? Saiba quem deve pagar",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/economia/2026/11/falecido-deixou-dividas/",
+   "data": "2026-11-08T15:00:18Z",
+   "coletado_em": "2026-11-08T15:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 6,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "9d819015f9dc",
    "titulo": "No Detran, Justiça suspende pregão de mais de R$ 54 mi e questiona o edital",
