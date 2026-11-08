@@ -37,7 +37,7 @@ AQUI = Path(__file__).resolve().parent
 RAIZ = AQUI.parents[1]
 CONFIG = AQUI / "config.json"
 SAIDA = RAIZ / "data" / "noticias" / "index.json"
-TRIAGEM = 5  # versão das regras de triagem por praça; itens guardados sem este marcador são reavaliados uma vez (ver consolidar)
+TRIAGEM = 6  # versão das regras de triagem por praça; itens guardados sem este marcador são reavaliados uma vez (ver consolidar)
 VERIFICACAO = RAIZ / "data" / "noticias" / "verificacao.json"
 
 AGENTE = "Mozilla/5.0 (compatible; painel-es-noticias/1.0; +https://github.com/EduardoAraujoOx/painel-es)"
@@ -342,7 +342,7 @@ def consolidar(cfg, coletados, hoje):
             if motivo == "exterior_sem_ancora" or (not it.get("possivel") and motivo == "veiculo_outra_praca"):
                 continue
             # leitura mais generosa (como se viesse de feed capixaba; coluna política, pelo endereço): se mesmo assim as regras de hoje descartam, sai; se só
-            # deixam como possível, é rebaixado (TRIAGEM 4: "transição" e "obra" soltos, divulgação oficial)
+            # deixam como possível, é rebaixado (TRIAGEM 4: "transição" e "obra" soltos, divulgação oficial). TRIAGEM 6: termos fora do objetivo (`excluir`) saem também do guardado
             coluna = any(t in it.get("url", "") for t in cfg.get("colunas_url", []))
             classe = decidir(cfg, it["titulo"], it["veiculo"], F, True, coluna)[0]
             if classe == "descartada":
