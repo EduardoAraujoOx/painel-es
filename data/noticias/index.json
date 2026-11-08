@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-08",
- "gerado_em": "2026-11-08T19:17:13Z",
+ "gerado_em": "2026-11-08T20:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,41 +17,41 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 12,
+   "lidos": 11,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 29,
-   "aceitos": 8,
-   "possiveis": 3
+   "lidos": 26,
+   "aceitos": 6,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 3,
+   "lidos": 2,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 6,
+   "lidos": 5,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 8,
+   "lidos": 6,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -65,23 +65,23 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 2,
-   "possiveis": 0
-  },
-  {
-   "fonte": "Google Notícias",
-   "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
-   "ok": true,
    "lidos": 3,
    "aceitos": 1,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
+   "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
+   "ok": true,
+   "lidos": 2,
+   "aceitos": 0,
+   "possiveis": 0
+  },
+  {
+   "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 18,
+   "lidos": 17,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 48,
+   "lidos": 47,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 21,
+   "lidos": 20,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -145,17 +145,17 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 17,
-   "aceitos": 1,
-   "possiveis": 1
+   "lidos": 15,
+   "aceitos": 0,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 20,
+   "lidos": 24,
    "aceitos": 3,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -192,10 +192,11 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": true,
-   "lidos": 30,
+   "ok": false,
+   "lidos": 0,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0,
+   "erro": "HTTP Error 415: Unsupported Media Type"
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -226,7 +227,7 @@
    "consulta": "https://simnoticias.com.br/politica/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -240,18 +241,31 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "oficial_sem_tema": 3,
-  "sem_contexto": 254,
-  "possivel": 13,
-  "excluir": 38,
-  "veiculo_outra_praca": 8,
-  "sem_contexto_com_tema": 5,
-  "outro_estado": 14,
+  "sem_contexto": 226,
+  "possivel": 12,
+  "excluir": 27,
+  "veiculo_outra_praca": 7,
+  "outro_estado": 13,
   "veiculo_excluido": 8,
-  "sigla_sem_ancora": 6,
+  "sigla_sem_ancora": 8,
+  "sem_contexto_com_tema": 5,
   "exterior_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "6764eaca039a",
+   "titulo": "Servidor da Prefeitura da Serra morre em acidente entre dois carros",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/transito/servidor-da-prefeitura-da-serra-morre-em-acidente-entre-dois-carros/",
+   "data": "2026-11-08T19:22:05Z",
+   "coletado_em": "2026-11-08T20:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "3806131aad78",
    "titulo": "Servidor da Prefeitura da Serra morre em acidente após pedir aposentadoria",
@@ -372,6 +386,18 @@
    "temas": [
     "contratos"
    ]
+  },
+  {
+   "id": "5ef4f801ab89",
+   "titulo": "Detran moderniza fiscalização em rodovias do Pará",
+   "veiculo": "Portal Debate",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQeGRnckdkR0FidkE0R0xxRF9RZjNQMHpwR3hmcko5cWRoY3c0R2w0Qmx6MG81U0hpckEwR2VqdGxVd2Z2SHNGcHlCN2JoQ3J1a3NYY1lIcHkwWUFIY1FRU1c0ZWxjZlNWbldFT3dZc3VOT1VHLTIyT3BkNlk1eFl3R0hOejJZZw?oc=5",
+   "data": "2026-11-08T11:03:13Z",
+   "coletado_em": "2026-11-08T20:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": []
   },
   {
    "id": "45af7ef01ff8",
@@ -529,6 +555,18 @@
    "temas": [
     "governador"
    ]
+  },
+  {
+   "id": "b8bd96717de3",
+   "titulo": "Secult abre painel com dados dos 190 projetos do Câmara Cascudo, que teve recorde de R$ 47,4 milhões",
+   "veiculo": "Agora RN",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPbkJEcmtzY2hBMEJEQTl5WDh2dXVlTjlTSWJ1X2ZnOWhGRzBlTUJjM1J0UUxGRFFRNFNiVmtMZ0hYVDVJOVJoWFNXXzdJLUNIRjBlaHUzTUVGQUItVHZ6MFBzQXdqOUFnd1ExRl9DOEJ4UXZyVjlaTDlyTS1OeFBNYg?oc=5",
+   "data": "2026-11-07T08:00:00Z",
+   "coletado_em": "2026-11-08T20:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": []
   },
   {
    "id": "ba8033457f9b",

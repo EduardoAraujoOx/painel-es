@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-08T19:17:35Z",
+ "gerado_em": "2026-11-08T20:17:47Z",
  "ref": "2026-11-08",
  "desde": "2026-10-04",
  "estados": [
@@ -29,14 +29,14 @@
    "nome": "Maranhão",
    "eleito": "Eduardo Braide",
    "partido": "PSD",
-   "total": 44
+   "total": 45
   },
   {
    "uf": "MG",
    "nome": "Minas Gerais",
    "eleito": "Cleitinho Azevedo",
    "partido": "Republicanos",
-   "total": 95
+   "total": 97
   },
   {
    "uf": "PA",
@@ -50,28 +50,28 @@
    "nome": "Paraná",
    "eleito": "Sergio Moro",
    "partido": "PL",
-   "total": 67
+   "total": 68
   },
   {
    "uf": "RJ",
    "nome": "Rio de Janeiro",
    "eleito": "Douglas Ruas",
    "partido": "PL",
-   "total": 69
+   "total": 70
   },
   {
    "uf": "RN",
    "nome": "Rio Grande do Norte",
    "eleito": "Cadu Xavier",
    "partido": "PT",
-   "total": 41
+   "total": 44
   },
   {
    "uf": "RS",
    "nome": "Rio Grande do Sul",
    "eleito": "Luciano Zucco",
    "partido": "PL",
-   "total": 79
+   "total": 82
   },
   {
    "uf": "RO",
@@ -104,11 +104,25 @@
   "pessoal": "Servidores e pessoal"
  },
  "contagem": {
-  "total": 699,
-  "medidas": 184,
-  "equipe": 515
+  "total": 710,
+  "medidas": 186,
+  "equipe": 524
  },
  "itens": [
+  {
+   "id": "c91b00c27fc2",
+   "titulo": "Primeiro escalão de Zucco prioriza indicações pessoais do governador eleito",
+   "veiculo": "Jornal do Comércio",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQRjJyOFA0bnZ3RHVnR2d3T1NhN2JmUm9FTVpwQS1uVGF0enlobTY4NW9UVmJPTURnV3NvYjRyb3V4TlRNOXB5czNzbVBfNXIzbXA2amVZa2ROUUxIY25pNnlwdDhWV2JER2VhQlZTSDlqZjVBSy1TWmVZMmxRNUNaSXk2b2pEYUs2QU05b2tBQ2dfOXNpTnVBWnQ0anhPQXJUdFF3RHBFVXZjNVRkanN5a2cyRWhNemJ3amdqUkVCWmJlanphU0l6SF9aTG90TjdoNUxGWA?oc=5",
+   "data": "2026-11-08T19:56:01Z",
+   "coletado_em": "2026-11-08T20:17:47Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
   {
    "id": "e28368839a0c",
    "titulo": "Zucco articula fusão de secretarias no RS antes de tomar posse",
@@ -247,6 +261,22 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "a627ed37e28e",
+   "titulo": "Cleitinho promete proibir recursos estaduais para festas e cita dívida de R$ 200 bilhões de MG",
+   "veiculo": "Rádio Itatiaia",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNVlhLSmNVZGVsRDZzV2JlSnlKLVZ5OU1WTmJJREYtSmczYmx1eUhSS3M5VDhsdEJYV0NmeWV5b1FxZXVDeFowS1BwNFRKSk5BLWlySHVUTmhzQlpLNUNlck1mNHRwMUh3d2F3Ym1TaWN4SlgtRWJYbmxkX1R6WGZrLWxHcWFEdmtYV1Q1Ql8yMDhNVm1tYzdwUTlKTW81R1lMdWVtYk93Q0Fnb1VYRWpCZTFJNVplSExlNjJaUFdkZlU1OThzRHhPQzFtbw?oc=5",
+   "data": "2026-11-07T21:56:42Z",
+   "coletado_em": "2026-11-08T20:17:47Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "4ffe4989127c",
@@ -502,6 +532,20 @@
     "diagnostico"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "bcb49cfff7e9",
+   "titulo": "Prioridade é definir como serão os primeiros 100 dias de Cadu no Governo do RN",
+   "veiculo": "BNews RN",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPSzVjRTIzVWF0a3duZTJQS0tQSmJvTml5WmVBdnpEMllSbjkyUEdjMjNPUEJVa0hJVEFWNTZBLWhSTVUtOHU4bVpkQlZwUm5ZLXlIM1h0eDljTGZyN3pocFNXLW9ldldoNnpkRFY0WE1SRTJ5SXpiVlhuVmYtNUdsc2MzYkVCSllhSGpsRnU2dUFyUHFhbFhQUXlMY19OY0s0RVE3TzNKY2RWb0g3R1dQVTRlU1BwMnFac1dyVV83XzVmWmRaUlNV0gHMAUFVX3lxTE82dmhnUUk4ekFubTVhVmlBejRGckw3OTEwYjQybmRRN05FWU5MVU0wMGZrejlpRW9DeUdObUdQeDhMV2czTUdIMFdxQkE0THJ5bDY1Y1ZjazhoZldLZXpIVnRqY0tFVVV0QXNtYVJ6SmRmaU10TDFjVmxORTV0RTZHZjFCS1g3UjFVRmtLMWdxRllaUTVFN1djcDEtR3VubDdHXy16VVNkdEVvTGVhUEh3aWhzTzI1NkJ6dFB4cTVwTU8yWXloTHZPVHZ4NQ?oc=5",
+   "data": "2026-11-06T20:18:00Z",
+   "coletado_em": "2026-11-08T20:17:47Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "49d1b7ae9f28",
@@ -3910,7 +3954,12 @@
    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOYWxhTE9nVnhnN0NBWmpUUTVGRnA2SHZpVDgwR202ZWFKNEtnUGQyTUo4djNNRHJwektkU1E1bDhFNmRQdldFNmZFVzYtRWZXVDYwdEgtczJwNFFpemp6d3Z2ME9LTnA4T3FlbTFHcnJxNEZUa0JXSG1EaXo4RGJoSTVxQ3ZaM1QxVlNQeUxEcnlVQnMtSDh4b0kyRng?oc=5",
    "data": "2026-10-29T17:10:00Z",
    "coletado_em": "2026-10-29T17:10:00Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Agite Manaus",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVUpDTUNhNUR5NFdUUkV3a0psbnhlaGZwa0F2MThWNEJYbWpmaUNWMU96V1FFWUoyRkMwcDdXeExjcDZ0czhXRUszT3ZPeGQxWXY2QndMbmd6U2QxaDA4UzR2aGk0QVNfUUk3bzdGajFJMm9mcl95Y29EZ0psVU1Ob2Z0SXktaDBjSVFRMVhNVDR3SmxoeC03Wm9oTnE1d2lzalBlV3dSVE1jMEJsUVJxTUJvaw?oc=5"
+    }
+   ],
    "ufs": [
     "AM"
    ],
@@ -3954,6 +4003,20 @@
    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1LMGVaWDlSeTcteGMtUkRhQWVFTm5JdUNXSUNvMnlfRXdXZ09ZTTFIYkpTTm9jNUNwU0JZMkdYV3VUTXpVT0JkZlhsYXZ5ZlREZlBNemRwejVHUVdoN3lMS2NMSF82RzZWWkVlbmFQVG43Zw?oc=5",
    "data": "2026-10-29T13:54:56Z",
    "coletado_em": "2026-10-29T13:54:56Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "4ccb3cf0e334",
+   "titulo": "Cadu Xavier define nomes para equipe de transição no RN",
+   "veiculo": "Portal do RN",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPaVdkT1UydHdmX3Z0MTlHM3pLQ2RsYlVQX1JvNGM5UV9kcWtXWWthbXVDLTk0NW95ME5zT2licFhUelYzbVJaVWJ6S1JZRTR1dzZ2b2RiUEdWZGlaWEJhRC1qb3J2ckp3VTlFQ2ZFcThFM3otdXdnVUNFV0k1emxGMWM1VzNUZw?oc=5",
+   "data": "2026-10-29T12:30:31Z",
+   "coletado_em": "2026-11-08T20:17:47Z",
    "outras": [],
    "ufs": [
     "RN"
@@ -4097,6 +4160,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "84a6b0ded1c9",
+   "titulo": "Cadu Xavier anuncia 12 nomes e conclui formação da equipe de transição no RN",
+   "veiculo": "Mossoró Notícias",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMUgwRHNsTV9NVVhDUHFaQmFpTUVPSnM1YWRyelk3c0JhOXFwQV9lZkRpSl9HaW1FY3haUDR4M1RvT2hYSENfR3JUXzZ5Q3p3aUp3aWZEQ2Ftdl83bFFwR0xxMGdwZmZldXVkVVZRU1pzajdqMmFBWmxCZkVCWG1UM0N0RGRJekRRLVdiTTRaWU5jRTZCLXN4VEhtX2NFY2d4TlZKaWd5OWZDWVdR?oc=5",
+   "data": "2026-10-29T07:00:00Z",
+   "coletado_em": "2026-11-08T20:17:47Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "7fcf2bba9e95",
    "titulo": "Governador eleito, Omar Aziz diz que ainda não escolheu secretários",
    "veiculo": "amazonas atual",
@@ -4203,6 +4280,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "0be49ccc22f7",
+   "titulo": "Zema afaga Cleitinho enquanto transição com Simões tem troca de acusações",
+   "veiculo": "Metrópoles",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOXzZHcnJwSFJWSmh0MDFlQzhKdFdVRW9jX01VUXMzUUlxQVpaYWZ5YlFLNVlwQ1JlSWVxOGtsUHhndC1QaVFjN3hGZXhodHdlb3BWZ0I0Q3RLYnNxa2tGNTFTb2I4M08tMGZuei1aTkxmRGYwbGViRUkxd1piOFFQM2szanNRYS1rb0JVMU1fdlZqZ2dVX1ZYWHdvSXpIWkVtcGhIdkd5NC1qazEtSFYyYmlmZw?oc=5",
+   "data": "2026-10-29T07:00:00Z",
+   "coletado_em": "2026-11-08T20:17:47Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "708e07c2b604",
    "titulo": "Governador eleito Omar Aziz discute ações emergenciais para a saúde do Amazonas com ministro Padilha em Brasília",
    "veiculo": "Portal Flagrante",
@@ -4243,6 +4334,22 @@
    ],
    "temas": [
     "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "e9911f10ec1f",
+   "titulo": "Governador Braide parabeniza servidores públicos no Dia do Servidor",
+   "veiculo": "iMaranhense",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQa0t3bjNrUTBGYVZXRndYT1EwRHFwUl9tTFdEcnctR19rc19ZMVBZM0J4OGtQLWlJU1NhVzdGSjFuVWl1QnQ5dDg3S1QzQTQ0a1lTbEVqLXRETVRnZjZBN1FvY1IxN0stZ25WZ2hVd1RGQ2tWeFhwRUxNd01tTS1kSDVOWnh6TV9qQlZ4RnRXOXlsb0pXR1ZubE93VnBsYTE3SWY3S295T2I?oc=5",
+   "data": "2026-10-28T13:17:37Z",
+   "coletado_em": "2026-11-08T20:17:47Z",
+   "outras": [],
+   "ufs": [
+    "MA"
+   ],
+   "temas": [
+    "pessoal"
    ],
    "categoria": "medida"
   },
@@ -7499,6 +7606,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "99d57e46a73f",
+   "titulo": "Moro aguarda encontro com Ratinho Junior para transição no Paraná",
+   "veiculo": "Band",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNa19hcVVDV1BfZmprRzN6c096VGJWRm9tLU1GQnJpMUQwZm13VHl4MVliOHhBeWdYcmJNZThJRk05NDU3Y2VvMm41dGdabGNBTDd3c1FzX1kwTW5qQ1ZPVThrTFpmMHpjVW41UTdOY2IxeEx6SVppb1FRZ1E4TUtoZHRXUzZ6NG81TFlsTVBIZUljTWNoWjFLVWxkcGN0U2c?oc=5",
+   "data": "2026-10-13T07:00:00Z",
+   "coletado_em": "2026-11-08T20:17:47Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "98439f33b364",
    "titulo": "Cleitinho anuncia mais seis nomes para equipe de transição do governo de MG",
    "veiculo": "G1",
@@ -7583,6 +7704,20 @@
     "pessoal"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "451997916e14",
+   "titulo": "Grupo RBS entrega ao governador eleito Luciano Zucco documento com os desafios para o desenvolvimento do RS",
+   "veiculo": "GZH",
+   "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxOMWdGSzJtbHdlbC1wVXdqVlAzYVN4em5peE9NN2ZiU1NqYW4ySUllcXNEcUNwaDdnMi1zZzI4X3M2OU5LNk9IN0Y4NVlId1ZBaDA2VkJyYjhTX3hwVGh3R2ZOSExoY01wTjFKdWQ2aGMwTFVEWUVvLUJvdkpiR0kwXzNoUFJQemhMM3ltQWtRQXdoMHoyeEdEdmR2d2hYRk1ycDk0cEpTYkpwbm96LXlWLWlCS3BIMXkzTlp0SkJ1WTdxaFVkSHdZVzh5TGtfWmtGbVlrcEdpME1qV01CN0FvRS1PbDBYbkpqcG5ucmpya1ZSR3FzZVhjM2htUjcxU0VCTjlNZGljMU94VzljcFhPZnNvS2dld2dXanRrRVdLaWJEaGl0N2g5Q1dzRmQ?oc=5",
+   "data": "2026-10-13T07:00:00Z",
+   "coletado_em": "2026-11-08T20:17:47Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "3ca7523fc640",
@@ -7760,6 +7895,20 @@
     "pessoal"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "85eaf2a05763",
+   "titulo": "A primeira reunião de Douglas Ruas com Ricardo Couto para alinhar a transição de governo no Rio",
+   "veiculo": "VEJA",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOcEJwN05zMlBfX05Pa0h1Y3M2YWItei0xU0xQZ2o0VFVxWEVJdUp1dUw5LVV0VUQyTDJUVHNrVElaMXJQRmxIaEdxNU1kb0dTYTczQUFKMkVfQklpX2hvaHZQUVlUdkdPazdpZUtJNmI5VTBZWF9uSWhYZzdIYlZ4bXlrWXNfdkxOeThKYWZ6UmNpTlJ4UldEbElnb0swaVZ2c19DalY2NkNrUHlHSk0zREF1QXBhZDAtU1Iwc2dWa2Y3R25Fc3dqUndPVQ?oc=5",
+   "data": "2026-10-12T07:00:00Z",
+   "coletado_em": "2026-11-08T20:17:47Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "7165d4d04adc",
@@ -10309,6 +10458,20 @@
    "outras": [],
    "ufs": [
     "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "5f0f7eac08bd",
+   "titulo": "Após vitória de Zucco, Eduardo Leite deve tratar dos aspectos da transição nos próximos dias",
+   "veiculo": "Correio do Povo",
+   "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPZVBrRklXb3Z4WVAyai1TQTNxOTEzRTRDc3RJQXRKYy12X3NMRG9iRGROczhOQjhfX2ZEMFJXcVpWNVd1VHF2RjRJNloyTS1KVU1JTHplMDJZZkktajJGY3VkaVAtdl9ka0ZJTzV6dEVGRnJ3Q2ZRTjVSRDJxVDhRVk5FUnlvOTNVa2c4QTdCenY2TTYzbVVyWHJJUzF0N18yWVdpbjBFZDJveXpVX3BkbmRlUlB6TUxVTWRpWi03dnVLbHBwSVU2ODFnWEFnSmtmLUlGeDBpTVR6dy1HaEJtQUI1YjJMeGVJbmdGYkUtX0ZaMkhNOWxPdWg1VVRFNmFwZjZjSE5BZFRDeUtJYkE?oc=5",
+   "data": "2026-10-04T07:00:00Z",
+   "coletado_em": "2026-11-08T20:17:47Z",
+   "outras": [],
+   "ufs": [
+    "RS"
    ],
    "temas": [],
    "categoria": "equipe"
