@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-08",
- "gerado_em": "2026-11-08T15:17:13Z",
+ "gerado_em": "2026-11-08T15:58:59Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 13,
+   "lidos": 14,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 24,
-   "aceitos": 7,
+   "aceitos": 6,
    "possiveis": 5
   },
   {
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 3,
+   "lidos": 2,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 44,
+   "lidos": 47,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 27,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -145,17 +145,17 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 19,
-   "aceitos": 0,
+   "lidos": 20,
+   "aceitos": 1,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 20,
+   "lidos": 19,
    "aceitos": 3,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -203,7 +203,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "A Gazeta",
@@ -234,24 +234,38 @@
    "consulta": "https://simnoticias.com.br/vinicius-baptista/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   }
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
   "oficial_sem_tema": 5,
-  "sem_contexto": 261,
+  "sem_contexto": 264,
   "possivel": 15,
   "excluir": 31,
-  "veiculo_outra_praca": 14,
-  "sem_contexto_com_tema": 9,
-  "outro_estado": 11,
+  "veiculo_outra_praca": 13,
+  "sem_contexto_com_tema": 8,
+  "outro_estado": 12,
   "exterior_sem_ancora": 4,
-  "veiculo_excluido": 14,
-  "sigla_sem_ancora": 7
+  "veiculo_excluido": 15,
+  "sigla_sem_ancora": 6
  },
  "itens": [
+  {
+   "id": "e4d6215b536b",
+   "titulo": "Servidor público morre após carro ser atingido por outro veículo e capotar na Serra",
+   "veiculo": "G1 Espírito Santo",
+   "url": "https://g1.globo.com/es/espirito-santo/noticia/2026/11/08/servidor-publico-morre-apos-carro-ser-atingido-por-outro-veiculo-e-capotar-na-serra.ghtml",
+   "data": "2026-11-08T15:42:24Z",
+   "coletado_em": "2026-11-08T15:58:59Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 6,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "e69ee67da9ba",
    "titulo": "Falecido deixou dívidas? Saiba quem deve pagar",
