@@ -45,7 +45,7 @@ def preparar(cfg):
         estados.append({"uf": e["uf"], "cues": N.compilar_lista(e["cues"]), "siglas": sig, "exatos": exatos, "eleito": N.compilar_lista([e["eleito"]] + [b for b in e["buscas"][:1]])})
     return {"estados": estados, "transicao": N.compilar_lista(cfg["transicao"]), "excluir": N.compilar_lista(cfg["excluir"]),
             "temas": N.compilar_temas({"temas": cfg["temas"]}), "medida": set(cfg["temas_de_medida"]),
-            "estadual": N.compilar_lista(cfg.get("contexto_estadual", [])), "tema_estadual": set(cfg.get("temas_com_contexto_estadual", []))}
+            "eleito_generico": N.compilar_lista(cfg.get("eleito_generico", [])), "estadual": N.compilar_lista(cfg.get("contexto_estadual", [])), "tema_estadual": set(cfg.get("temas_com_contexto_estadual", []))}
 
 
 def ufs_do_titulo(F, titulo):
@@ -71,10 +71,11 @@ def classificar(cfg, titulo, F=None):
     temas = [t for t, c in F["temas"].items() if N.casa(c["termos"], n) or any(all(N.casa(g, n) for g in comb) for comb in c["comb"])]
     medida = [t for t in temas if t in F["medida"]]
     transicao = N.casa(F["transicao"], n)
-    # sem palavra de transição só vale quando cita o próprio governador eleito e trata de alguma medida ("Marcos Rogério prepara cortes profundos...")
+    # "governador eleito" sozinho não basta (perfil, voto, política nacional): só vale com palavra de transição ou de composição da equipe (config `transicao`),
+    # ou quando cita o próprio governador eleito (pelo nome ou pela expressão) e trata de alguma medida ("Marcos Rogério prepara cortes profundos...")
     # ou quando trata de previdência ou FNDR do estado (com palavra de governo ou de estado no título), que são o que se quer comparar mesmo fora do clima de transição
     if not transicao:
-        eleito = any(N.casa(e["eleito"], n) for e in F["estados"] if e["uf"] in ufs)
+        eleito = any(N.casa(e["eleito"], n) for e in F["estados"] if e["uf"] in ufs) or N.casa(F["eleito_generico"], n)
         tema_estadual = bool(F["tema_estadual"] & set(temas)) and N.casa(F["estadual"], n)
         if not ((eleito and medida) or tema_estadual):
             return None
