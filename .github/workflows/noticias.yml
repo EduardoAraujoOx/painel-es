@@ -74,6 +74,13 @@ jobs:
         continue-on-error: true
         run: python3 -I pipeline/normas/coletar.py
 
+      # Transições de governo em outros estados (aba "Estados"): 13 estados que trocaram de governador em 2026; cerca de 40 consultas ao Google Notícias, pouco mais de 1 minuto.
+      # Roda a cada coleta; não entra no e-mail. Falha aqui não impede a publicação das notícias (e uma consulta que falha não derruba as outras).
+      - name: Coletar as transições de outros estados
+        id: transicoes
+        continue-on-error: true
+        run: python3 -I pipeline/transicoes/coletar.py
+
       # Há um horário de resumo vencido (08h17, 12h17 ou 18h17) sem e-mail enviado depois dele? Se sim, esta execução faz o levantamento e o envio.
       - name: Ver se há resumo vencido
         id: devido
@@ -178,15 +185,15 @@ jobs:
             echo "Sem resumo vencido: nada a enviar nesta execução."
           fi
 
-      - name: Gravar no repositório (só data/noticias, data/suspensos, data/atos, data/normas e data/obras; o deploy sai do push)
+      - name: Gravar no repositório (só data/noticias, data/suspensos, data/atos, data/normas, data/obras e data/transicoes; o deploy sai do push)
         run: |
-          if [ -z "$(git status --porcelain -- data/noticias data/suspensos data/atos data/normas data/obras)" ]; then
+          if [ -z "$(git status --porcelain -- data/noticias data/suspensos data/atos data/normas data/obras data/transicoes)" ]; then
             echo "Sem mudanças."; exit 0
           fi
           git config user.name "coleta-noticias"
           git config user.email "coleta-noticias@users.noreply.github.com"
           # só os caminhos que existem: "git add" com um caminho ausente (ex.: data/obras antes do primeiro levantamento) falha e não guarda nada
-          for d in data/noticias data/suspensos data/atos data/normas data/obras; do if [ -e "$d" ]; then git add "$d"; fi; done
+          for d in data/noticias data/suspensos data/atos data/normas data/obras data/transicoes; do if [ -e "$d" ]; then git add "$d"; fi; done
           git commit -m "dados: notícias e contratos de $(date -u +%F)"
           for tentativa in 1 2 3; do
             git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
@@ -195,7 +202,7 @@ jobs:
           echo "Não foi possível enviar a coleta."; exit 1
 
       - name: Avisar se o e-mail, o levantamento de contratos, a leitura do Diário, a das obras ou o cruzamento falhou
-        if: steps.enviar.outcome == 'failure' || steps.suspensos.outcome == 'failure' || steps.diario.outcome == 'failure' || steps.obras.outcome == 'failure' || steps.cruzamento.outcome == 'failure' || steps.normas.outcome == 'failure' || steps.alertas.outcome == 'failure' || steps.datas.outcome == 'failure'
+        if: steps.enviar.outcome == 'failure' || steps.suspensos.outcome == 'failure' || steps.diario.outcome == 'failure' || steps.obras.outcome == 'failure' || steps.cruzamento.outcome == 'failure' || steps.normas.outcome == 'failure' || steps.alertas.outcome == 'failure' || steps.datas.outcome == 'failure' || steps.transicoes.outcome == 'failure'
         run: |
           echo "O resumo por e-mail, o levantamento de contratos suspensos ou a leitura do Diário Oficial, a das obras, o cruzamento ou as datas dos suspensos falhou (veja os passos acima). As notícias foram publicadas normalmente."
           exit 1
