@@ -91,6 +91,32 @@ class Classificacao(unittest.TestCase):
         self.assertEqual((r["ufs"], r["categoria"]), (["RO"], "medida"))
 
 
+class Sintese(unittest.TestCase):
+    """A síntese escrita (data/transicoes/sintese.json) é uma edição datada, feita à mão a partir das manchetes e de consultas à imprensa: o teste só garante a forma."""
+    S = json.loads((T.RAIZ / "data" / "transicoes" / "sintese.json").read_text(encoding="utf-8"))
+
+    def test_cobre_os_13_estados_com_texto_e_fontes_https(self):
+        self.assertEqual(set(self.S["estados"]), {e["uf"] for e in CFG["estados"]})
+        for uf, e in self.S["estados"].items():
+            self.assertGreater(len(e["texto"]), 150, uf)
+            self.assertGreaterEqual(len(e["fontes"]), 2, uf)
+            for f in e["fontes"]:
+                self.assertTrue(f["url"].startswith("https://") and f["titulo"] and f["veiculo"], (uf, f))
+
+    def test_tem_edicao_nota_de_ia_e_leitura_comparada(self):
+        datetime.fromisoformat(self.S["edicao"])
+        self.assertIn("inteligência artificial", self.S["nota"])
+        self.assertGreaterEqual(len(self.S["transversal"]), 5)
+        for t in self.S["transversal"]:
+            self.assertTrue(t["titulo"] and len(t["texto"]) > 150)
+
+    def test_nao_cita_o_es_como_estado_em_transicao(self):
+        self.assertNotIn("ES", self.S["estados"])
+
+    def test_suspeita_de_corrupcao_sobre_candidato_nao_entra(self):
+        self.assertIsNone(c("Vicentinho Júnior, candidato ao governo do TO, é suspeito de corrupção em contratos de licitação"))
+
+
 class Consolidacao(unittest.TestCase):
     HOJE = datetime(2026, 11, 8, 12, 0, tzinfo=UTC)
 
