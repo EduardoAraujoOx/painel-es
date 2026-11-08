@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-08",
- "gerado_em": "2026-11-08T11:17:18Z",
+ "gerado_em": "2026-11-08T12:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 16,
+   "lidos": 15,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -25,15 +25,15 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 27,
+   "lidos": 25,
    "aceitos": 7,
-   "possiveis": 7
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -41,15 +41,15 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 3,
+   "lidos": 2,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 32,
    "aceitos": 1,
    "possiveis": 4
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 45,
+   "lidos": 44,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -138,14 +138,14 @@
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 28,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 22,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -153,8 +153,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 21,
-   "aceitos": 6,
+   "lidos": 22,
+   "aceitos": 5,
    "possiveis": 2
   },
   {
@@ -238,17 +238,17 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "oficial_sem_tema": 7,
-  "sem_contexto": 263,
+  "oficial_sem_tema": 5,
+  "sem_contexto": 261,
   "possivel": 19,
-  "excluir": 37,
-  "veiculo_outra_praca": 16,
-  "sem_contexto_com_tema": 9,
-  "outro_estado": 10,
+  "excluir": 35,
+  "veiculo_outra_praca": 17,
+  "sem_contexto_com_tema": 8,
+  "outro_estado": 11,
   "exterior_sem_ancora": 4,
-  "veiculo_excluido": 20,
+  "veiculo_excluido": 19,
   "sigla_sem_ancora": 6
  },
  "itens": [
@@ -611,6 +611,18 @@
    "coletado_em": "2026-11-06T19:17:13Z",
    "outras": [],
    "possivel": true,
+   "triagem": 6,
+   "temas": []
+  },
+  {
+   "id": "dad9dd33829f",
+   "titulo": "6º Encontro da Rede Estadual Saúde Escola celebra integração da Educação Popular nas políticas do SUS",
+   "veiculo": "Governo do Estado do Ceará",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQeWpjSU9OdjRrekFfM3Juc092S0JQdE1Fd0VSOWRzVFFNR1ZYVTRJajBNZ1dpU3J1MWpCNmF4V0VZb2lieUpLZkVBSEtWd3YwSzZPcWNaOUFkZUMxTGQ4OTlVWXd3YURvOE9GMjdkb0tiUm1aZFNNaGxqaTJIRkFZUDdxUGNjOVR3Q2Q0VVZ6ZVp0VXBJMWFtd19qM0h3aFRJZWIxSTd6M2dyemR3bXdJQy1rb2dQWThQT1Q2Zm9SbVpOUHR0YUkyaXN6NlRXbWdNbXBZQTY0Qlc?oc=5",
+   "data": "2026-11-06T18:40:31Z",
+   "coletado_em": "2026-11-08T12:17:13Z",
+   "outras": [],
+   "possivel": false,
    "triagem": 6,
    "temas": []
   },
