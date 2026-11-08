@@ -37,9 +37,20 @@ class Configuracao(unittest.TestCase):
             self.assertIn(t, CFG["temas"])
 
     def test_consultas_cobrem_cada_estado_e_as_gerais(self):
-        q = list(T.consultas(CFG, 30))
-        self.assertEqual(len(q), 13 * 3 + len(CFG["buscas_gerais"]))
-        self.assertTrue(all("when:30d" in txt for _, txt in q))
+        q = list(T.consultas(CFG))
+        self.assertEqual(len(q), 13 * 6 + len(CFG["buscas_gerais"]))
+        rotulos = {r for r, _ in q}
+        for r in ("MG: finanças 1", "MG: finanças 2", "MG: previdência e FNDR"):
+            self.assertIn(r, rotulos)
+        # o recorte de datas é acrescentado à parte
+        self.assertTrue(all("when:" not in txt and "after:" not in txt for _, txt in q))
+        self.assertEqual(T.com_recorte("x", 30), "x when:30d")
+        self.assertEqual(T.com_recorte("x", 30, datetime(2026, 10, 4, tzinfo=UTC), datetime(2026, 10, 20, tzinfo=UTC)), "x after:2026-10-04 before:2026-10-20")
+
+    def test_temas_novos_previdencia_e_fndr_sao_de_medida(self):
+        for t in ("previdencia", "fndr"):
+            self.assertIn(t, CFG["temas"])
+            self.assertIn(t, CFG["temas_de_medida"])
 
 
 class Classificacao(unittest.TestCase):
@@ -89,6 +100,81 @@ class Classificacao(unittest.TestCase):
     def test_nome_do_eleito_com_medida_basta_sem_a_palavra_transicao(self):
         r = c("Marcos Rogério prepara cortes profundos na própria carne do governo, para iniciar seu mandato")
         self.assertEqual((r["ufs"], r["categoria"]), (["RO"], "medida"))
+
+
+class PrevidenciaFndrEFinancas(unittest.TestCase):
+    """Busca ampliada de 08/11/2026: previdência e FNDR (também fora do clima de transição, desde que o título fale do governo ou do estado) e palavras de finanças que faltavam."""
+
+    def test_previdencia_do_estado_entra_mesmo_sem_a_palavra_transicao(self):
+        for t, uf in [("Previdência consome R$ 5,6 bi no RN e tem maior peso do país, com 35% dos gastos do governo", "RN"),
+                      ("Governo do Rio Grande do Sul prepara reforma da previdência estadual", "RS"),
+                      ("Furlan anuncia Luciany Amaral como futura presidente da Amprev, a previdência do estado do Amapá", "AP"),
+                      ("Cadu Xavier quer aprovar contribuição extra de 20% para Previdência do RN ainda em 2026", "RN")]:
+            r = c(t)
+            self.assertIsNotNone(r, t)
+            self.assertEqual((r["ufs"], r["categoria"]), ([uf], "medida"), t)
+            self.assertIn("previdencia", r["temas"], t)
+
+    def test_previdencia_federal_ou_sem_governo_no_titulo_nao_entra(self):
+        for t in ("Mutirão da Previdência Social oferece vagas de atendimento em 17 estados, entre eles Minas Gerais",
+                  "Previdência de São Roque é alvo da PF em operação sobre o Banco Master",  # município paulista
+                  "INSS: indiciado na máfia negocia cargos no governo Cleitinho",
+                  "Sérgio Moro aponta que a aposentadoria de Lula é inevitável",
+                  "Reforma tributária pode beneficiar 160 mil MEIs no Rio Grande do Norte",  # sem governo ou estado no título
+                  "CFC e Fenacon promovem seminário sobre Reforma Tributária em Minas Gerais"):
+            self.assertIsNone(c(t), t)
+
+    def test_fndr_do_estado_entra_com_governo_no_titulo(self):
+        r = c("Governo de Minas Gerais discute uso dos recursos do FNDR para atrair investimentos")
+        self.assertEqual((r["ufs"], r["categoria"]), (["MG"], "medida"))
+        self.assertIn("fndr", r["temas"])
+
+    def test_palavras_de_financas_que_faltavam(self):
+        casos = [("JHC pede que governo de Alagoas evite novas despesas, nomeações e empréstimos durante transição", "gastos"),
+                 ("Omar Aziz promete renegociar dívida de R$ 7,5 bi do Amazonas", "diagnostico"),
+                 ("Cleitinho confirma Vittorio Medioli no governo de Minas para focar na dívida pública", "diagnostico"),
+                 ("Omar Aziz diz que recursos para aviões contra incêndios continuam no caixa do estado, na transição do Amazonas", "diagnostico")]
+        for t, tema in casos:
+            r = c(t)
+            self.assertIsNotNone(r, t)
+            self.assertIn(tema, r["temas"], t)
+            self.assertEqual(r["categoria"], "medida", t)
+
+    def test_previdencia_nao_conta_mais_como_pessoal(self):
+        self.assertNotIn("previdência", CFG["temas"]["pessoal"]["termos"])
+
+
+class DivisaoDeConsultas(unittest.TestCase):
+    """O Google devolve no máximo cerca de 100 resultados por consulta: a que chega perto do teto é refeita em duas janelas de datas."""
+    HOJE = datetime(2026, 11, 8, 12, 0, tzinfo=UTC)
+
+    def test_metades_cobrem_a_janela_toda(self):
+        inicio = datetime(2026, 10, 4, 3, 0, tzinfo=UTC)
+        (a0, a1), (b0, b1) = T.metades(60, self.HOJE, inicio)
+        self.assertEqual(a0, inicio)
+        self.assertEqual(a1, b0)
+        self.assertGreater(b1, self.HOJE)
+        self.assertTrue(a0 < a1 < self.HOJE)
+
+    def test_consulta_no_teto_e_dividida_e_a_normal_nao(self):
+        chamadas = []
+        def itens(n):
+            return [{"titulo": f"Sergio Moro promete reduzir secretarias no Paraná {i}", "url": f"https://g.com/{i}", "data": self.HOJE - timedelta(days=1), "veiculo": "G1"} for i in range(n)]
+        def falso(q):
+            chamadas.append(q)
+            return (itens(100) if "PR: transição" in q or ('"Sergio Moro" (transição' in q and "when:" in q) else itens(3)), ""
+        antigo_ler, antigo_pausa = T._ler, T.PAUSA
+        T._ler, T.PAUSA = falso, 0
+        try:
+            cfg = dict(CFG); cfg["estados"] = [e for e in CFG["estados"] if e["uf"] == "PR"]; cfg["buscas_gerais"] = []
+            _, rel = T.coletar(cfg, 30, self.HOJE)
+        finally:
+            T._ler, T.PAUSA = antigo_ler, antigo_pausa
+        self.assertEqual(len(rel), 6)
+        dividida = [r for r in rel if "dividida" in r["consulta"]]
+        self.assertEqual(len(dividida), 1, rel)
+        self.assertTrue(any("after:" in q and "before:" in q for q in chamadas))
+        self.assertEqual(sum("after:" in q for q in chamadas), 2)
 
 
 class Sintese(unittest.TestCase):

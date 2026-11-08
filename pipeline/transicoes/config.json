@@ -1,5 +1,5 @@
 {
-  "_nota": "Transições de governo em outros estados (eleições de 2026), para comparar o que as equipes fazem e o que pode ser aproveitado no ES. Só entram os 13 estados em que o governador eleito é um novo nome; os que mantêm o mesmo governo e o ES ficam de fora. Fonte: resultados do TSE de 25/10/2026, conforme Jovem Pan e O Povo.",
+  "_nota": "Transições de governo em outros estados (eleições de 2026), para comparar o que as equipes fazem e o que pode ser aproveitado no ES. Só entram os 13 estados em que o governador eleito é um novo nome; os que mantêm o mesmo governo e o ES ficam de fora. Fonte: resultados do TSE de 25/10/2026, conforme Jovem Pan e O Povo. Busca ampliada em 08/11/2026: consultas de finanças e de previdência/FNDR por estado, temas Previdência e FNDR, e divisão por datas das consultas que batem no teto de ~100 resultados do Google.",
   "desde": "2026-10-04",
   "janela_dias": 60,
   "estados": [
@@ -265,7 +265,11 @@
     "boicote",
     "boicotes",
     "suspeito de corrupção",
-    "suspeita de corrupção"
+    "suspeita de corrupção",
+    "previdência social",
+    "inss",
+    "mutirão da previdência",
+    "aposentadoria de lula"
   ],
   "temas": {
     "gastos": {
@@ -305,7 +309,18 @@
         "máquina pública",
         "gastos com pessoal",
         "despesa de pessoal",
-        "gastos públicos"
+        "gastos públicos",
+        "gastos",
+        "despesas",
+        "despesa",
+        "novas despesas",
+        "freio em nomeações",
+        "congelamento de nomeações",
+        "congelar nomeações",
+        "evitar novas despesas",
+        "reduzir custos",
+        "redução de custos",
+        "economia nos gastos"
       ]
     },
     "diagnostico": {
@@ -341,7 +356,20 @@
         "equilíbrio das contas",
         "buraco",
         "capacidade de pagamento",
-        "inadimplência"
+        "inadimplência",
+        "caixa",
+        "em caixa",
+        "caixa único",
+        "fluxo de caixa",
+        "dívida pública",
+        "dívida com a União",
+        "renegociar",
+        "renegociação",
+        "Tesouro",
+        "Tesouro Nacional",
+        "superávit",
+        "capag",
+        "recursos federais"
       ]
     },
     "contratos": {
@@ -416,7 +444,22 @@
         "atração de empresas",
         "incentivos fiscais",
         "pib",
-        "economia do estado"
+        "economia do estado",
+        "ipva",
+        "impostos",
+        "imposto",
+        "tributos",
+        "precatórios",
+        "precatório",
+        "empréstimo",
+        "empréstimos",
+        "financiamento",
+        "financiamentos",
+        "royalties",
+        "benefícios fiscais",
+        "renúncia fiscal",
+        "isenções",
+        "isenção fiscal"
       ]
     },
     "pessoal": {
@@ -428,12 +471,48 @@
         "concurso*",
         "reajuste*",
         "folha de pagamento",
-        "previdência",
         "salário*",
         "carreira*",
         "quadro de pessoal",
         "PCCR",
         "plano de cargos"
+      ]
+    },
+    "previdencia": {
+      "rotulo": "Previdência",
+      "termos": [
+        "previdência",
+        "previdenciário",
+        "previdenciária",
+        "previdenciários",
+        "previdenciárias",
+        "RPPS",
+        "regime próprio",
+        "reforma da previdência",
+        "contribuição previdenciária",
+        "alíquota previdenciária",
+        "déficit previdenciário",
+        "rombo da previdência",
+        "Rioprevidência",
+        "Amprev",
+        "Ipern",
+        "Iperon",
+        "Ipsemg",
+        "Iprev",
+        "fundo previdenciário",
+        "fundos de previdência"
+      ]
+    },
+    "fndr": {
+      "rotulo": "FNDR e reforma tributária",
+      "termos": [
+        "FNDR",
+        "Fundo Nacional de Desenvolvimento Regional",
+        "Fundo de Desenvolvimento Regional",
+        "fundo regional",
+        "reforma tributária",
+        "IBS",
+        "compensação de perdas"
       ]
     }
   },
@@ -443,6 +522,34 @@
     "contratos",
     "estrutura",
     "economia",
-    "pessoal"
-  ]
+    "pessoal",
+    "previdencia",
+    "fndr"
+  ],
+  "contexto_estadual": [
+    "estado",
+    "estadual",
+    "estaduais",
+    "governo",
+    "governador",
+    "governadora",
+    "assembleia",
+    "tesouro",
+    "fazenda",
+    "sefaz",
+    "secretaria",
+    "rpps",
+    "regime próprio",
+    "servidores",
+    "gastos",
+    "déficit",
+    "orçamento",
+    "contribuição",
+    "alíquota"
+  ],
+  "temas_com_contexto_estadual": [
+    "previdencia",
+    "fndr"
+  ],
+  "janela_dividir_acima_de": 90
 }

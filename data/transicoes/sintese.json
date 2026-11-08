@@ -20,8 +20,54 @@
    "texto": "O caso mais nítido é o do Rio de Janeiro: Douglas Ruas, que preside a Assembleia até a posse, conduz a votação do orçamento de 2027 que pretende executar, quer revê-lo (a proposta projeta déficit em torno de R$ 14 bilhões) e anunciou um projeto de teto de gastos, sob a Secretaria de Planejamento. Em Minas, o déficit projetado para 2027 passou de cerca de R$ 8,9 bilhões para R$ 10,5 bilhões, e a equipe teme que o desequilíbrio impeça o cumprimento das exigências do Propag. No Amazonas, a imprensa registra previsão de queda de R$ 768 milhões no orçamento de 2027 e dívida de R$ 10,8 bilhões. No Rio Grande do Sul, a equipe de Zucco e o governo Leite divergem sobre as projeções do orçamento, e a discussão chegou ao risco de atraso de salários, que o governo Leite nega. Em Alagoas, a Assembleia avançou numa emenda que retira do governador parte do controle do orçamento antes da posse de JHC."
   },
   {
-   "titulo": "Pessoal e previdência: o ajuste que depende de lei",
-   "texto": "No Rio Grande do Norte, Cadu Xavier quer que Judiciário, Ministério Público e Tribunal de Contas contribuam mais para reduzir o déficit da Previdência estadual e defende aprovar ainda em 2026 uma contribuição extra de 20%. Em Rondônia, a equipe prepara o cancelamento da cessão de 505 policiais militares a outros órgãos e a revisão de todos os servidores da segurança cedidos. No Rio de Janeiro, Ruas promete convocar aprovados em concursos e reforçar o efetivo da Polícia Militar; no Amazonas, Omar Aziz promete concursos e redução de filas na saúde nos primeiros cem dias. Em Minas e no Rio Grande do Sul, a discussão sobre a capacidade de pagar os salários do início do mandato opôs governador eleito (ou aliados) e governo que sai."
+   "titulo": "Pessoal: o ajuste que depende de gestão e de lei",
+   "texto": "Em Rondônia, a equipe prepara o cancelamento da cessão de 505 policiais militares a outros órgãos e a revisão de todos os servidores da segurança cedidos. No Rio de Janeiro, Ruas promete convocar aprovados em concursos e reforçar o efetivo da Polícia Militar; no Amazonas, Omar Aziz promete concursos e redução de filas na saúde nos primeiros cem dias. Em Minas e no Rio Grande do Sul, a discussão sobre a capacidade de pagar os salários do início do mandato opôs governador eleito (ou aliados) e governo que sai."
+  },
+  {
+   "titulo": "Previdência e FNDR: pouco nas manchetes das transições",
+   "texto": "Previdência aparece com clareza, nas manchetes, só no Rio Grande do Norte: Cadu Xavier quer que Judiciário, Ministério Público e Tribunal de Contas contribuam mais para reduzir o déficit da Previdência estadual e defende aprovar ainda em 2026 uma contribuição extra, que as manchetes locais dão como de 20%; outra manchete diz que a previdência consome R$ 5,6 bilhões e 35% dos gastos do estado, o maior peso do país, e uma terceira fala em déficit de R$ 200 milhões por mês. Esses números são os das manchetes: a confirmação em matéria não foi encontrada. No Paraná, uma manchete registra déficit de R$ 5,7 bilhões da previdência do estado em oito meses. No Amapá, Dr. Furlan anunciou a nova presidente da Amprev, o instituto de previdência do estado. Em outros estados o assunto surge em colunas e análises (no Rio de Janeiro, sobre reforma preventiva e sobre o caso Master e o Rioprevidência), e não como medida anunciada pelas equipes de transição. O FNDR (Fundo Nacional de Desenvolvimento Regional, criado pela reforma tributária) não aparece em nenhuma manchete de transição dos 13 estados. Pelas fontes consultadas à parte, o fundo deve começar a ser pago a partir de 2029, é objeto de um grupo de trabalho do Comsefaz (primeira reunião em agosto de 2026) e um dos pontos em disputa é a possibilidade de usar o recurso para abater dívida com a União. No Espírito Santo, as secretarias da Fazenda e de Desenvolvimento criaram um grupo de trabalho para acompanhar a regulamentação, e A Gazeta publicou em 5 de novembro o artigo \"FNDR e Reforma Tributária: o Espírito Santo pronto para o futuro\". Ou seja, o uso do FNDR pelos novos governos ainda não chegou ao noticiário das transições e vale acompanhar.",
+   "fontes": [
+    {
+     "titulo": "Cadu Xavier defende maior contribuição dos Poderes para reduzir déficit de R$ 200 mi na Previdência do RN",
+     "veiculo": "Tribuna do Norte",
+     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQaTdaMGxTN0hIUVhVN202SlJPRDR4aVp0NmE1NVpUUDFPMV94SlFReGwtZE1YUGJlMXVoYko0YUE5T2pkTmFINjB3LXd1MUI1VVc2MGhLSTV1dllvYWNaYkZkQk9NcmFUN0lhN0RrOVFRRXU1VEVMejZaUl9pOWU1QjBTanhkN2ZfaWpQVDlVX2hHZmRndkdLUmlLVkF3M3JXakhvaExnT1hmVXp3RHk0Vi0xVG9pOEcwRHlzUmVFbk9tSlg2dWlNQjBveV9ZZlp1VEl0c1hRbkxVaThN?oc=5"
+    },
+    {
+     "titulo": "Cadu Xavier quer aprovar contribuição extra de 20% para Previdência do RN ainda em 2026",
+     "veiculo": "O Potiguar",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNV1dyTHk1WkdNV0M3cnY3eVE4dHFJM3lkdjFDZktCbE11cFFVM0tZNldVd3RJMDZMWnpiVGNaQ1NGXy1pQjZlTXh2ZVhPSkRMWEZIbzVUS0xkNzc3OFE5SlgxZ0lpd3ZqR2tNNVV4akh5Q2Q2aHZqQTNJRklNX3RuanVRYUNEU0V6RUxSNFlBX1R6QUJwSGxuLWNVV3BkdG5WUDh1eTh3c3hWUmM4SXVBZWNpNmI2dw?oc=5"
+    },
+    {
+     "titulo": "Previdência consome R$ 5,6 bilhões e compromete 35% dos gastos do RN, maior percentual do Brasil",
+     "veiculo": "O Potiguar",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNMVpQOWZ1QTRCXzBsLUFaaDNYbTFSNWpnMGlFWGZPQVpnZWRBajhCVTY4RmRKakZmcWtrd1BEa3ZsQlotZlNwdUFIeEhTRHF5OUZFN3ZLS1REdHpEZGt0eEtNeF83UE1pRGRFaGtINVRJMkdRVjQwcVA3Rm9yNFJHVVh1NlRVaWxlUFNuMWV5eEZJNDAwS3NOU1R1WWRiekZrU1hHY1ZEd0Zaby02OTl3dGRQM3o0X0J1UnplOVln?oc=5"
+    },
+    {
+     "titulo": "Previdência do Paraná tem déficit de R$ 5,7 bi em 8 meses",
+     "veiculo": "Gazeta do Paraná",
+     "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOc2g5TUt2MkZNTTNNUGlVdXUzUHJTLVVFNkdIX0d5WHJYd2pTeHd5bUFpa3REUkdsQl9iMDJYRXJFRUpUbGsyWnZBT3pERU1kZ0ZwSEZhdC1qeGxWZ3lyVVFMcnM1cUZweVBwZ0k2OXpPU3dGTXY2YUxuTW9Jck42TEFPTGFxaUU0d05WQjFTVnFZbFh3eUF0STJwRWdnR1M2YWVuOHFlSklDaDRPcGxPcEtpNTY5US1QWERQTjI2d1hKaHRJdkFQVV9XVVJELVRzVWN1eGF0MFkxUWdsbEJTOTItTFJBUQ?oc=5"
+    },
+    {
+     "titulo": "Furlan anuncia Luciany Amaral como futura presidente da Amprev",
+     "veiculo": "Diário do Amapá",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNd1F5dF80aHcyeGowQ2NCUmJsMmYwY3h2UjNiMzl4RTl6c2NXQ1VCMElpR1Uzc05NdlhVMTFJZjRlejEtbDFHRHpKSS0weDlSNWdvUWFjMTNSUkNjTHBJTXlZMzJJakY3d2doRGVsNFk0X21IVUt0ODFOQzRmbl9vdVA0QWVKYXFheTJmWXVYS0x6Nm1oRGdZQnR0Xy16WVltSU1FSV8yd1A5TldyUVIwaTZ5MmQ?oc=5"
+    },
+    {
+     "titulo": "Comsefaz dá início aos trabalhos sobre o novo fundo de desenvolvimento regional",
+     "veiculo": "Comsefaz",
+     "url": "https://comsefaz.org.br/novo/comsefaz-da-inicio-aos-trabalhos-sobre-o-novo-fundo-de-desenvolvimento-regional/"
+    },
+    {
+     "titulo": "Sefaz e Sedes criam grupo de trabalho para acompanhar regulamentação do Fundo Nacional de Desenvolvimento Regional",
+     "veiculo": "Sefaz-ES",
+     "url": "https://sefaz.es.gov.br/sefaz-e-sedes-criam-grupo-de-trabalho-para-acompanhar-regulamentacao-do-fundo-nacional-de-desenvolvimento-regional"
+    },
+    {
+     "titulo": "FNDR e Reforma Tributária: o Espírito Santo pronto para o futuro",
+     "veiculo": "A Gazeta",
+     "url": "https://www.agazeta.com.br/artigos/fndr-e-reforma-tributaria-o-espirito-santo-pronto-para-o-futuro-1126"
+    }
+   ]
   },
   {
    "titulo": "Atritos e acesso à informação",
@@ -29,7 +75,7 @@
   },
   {
    "titulo": "O que há para comparar com o ES",
-   "texto": "Sem avaliar se cabem no Espírito Santo, os pontos de comparação mais concretos são estes: decreto de transição que fixa prazo, produto e acesso a sistemas (Alagoas e Paraná); relatório fiscal com prazo definido para depois da posse (Roraima); pedido de suspensão cautelar de pagamentos de contratos ao tribunal de contas durante a transição (Maranhão e Tocantins); teto de gastos proposto por lei (Rio de Janeiro); reforma administrativa votada antes da posse, com o custo político que isso acarretou (Rio Grande do Sul); levantamento dos servidores cedidos como fonte de economia ou de realocação (Rondônia); e a nomeação de um técnico do Tesouro para comandar a Fazenda diante de um déficit declarado (Minas, segundo manchete). Cada ponto depende do arcabouço jurídico capixaba e da situação das contas do ES, que esta síntese não examina."
+   "texto": "Sem avaliar se cabem no Espírito Santo, os pontos de comparação mais concretos são estes: decreto de transição que fixa prazo, produto e acesso a sistemas (Alagoas e Paraná); relatório fiscal com prazo definido para depois da posse (Roraima); pedido de suspensão cautelar de pagamentos de contratos ao tribunal de contas durante a transição (Maranhão e Tocantins); teto de gastos proposto por lei (Rio de Janeiro); reforma administrativa votada antes da posse, com o custo político que isso acarretou (Rio Grande do Sul); levantamento dos servidores cedidos como fonte de economia ou de realocação (Rondônia); a nomeação de um técnico do Tesouro para comandar a Fazenda diante de um déficit declarado (Minas, segundo manchete); a cobrança de que os outros Poderes contribuam mais para o equilíbrio da previdência estadual (Rio Grande do Norte); e o acompanhamento do FNDR, que ainda não entrou na pauta das transições dos outros estados. Cada ponto depende do arcabouço jurídico capixaba e da situação das contas do ES, que esta síntese não examina."
   }
  ],
  "estados": {
@@ -77,9 +123,9 @@
    "texto": "Omar Aziz (PSD) volta ao Executivo. A equipe de transição, coordenada por Alessandra Campêlo, começou a levantar a situação das contas e iniciou o diagnóstico de saúde, educação e segurança. A imprensa registra dívida de R$ 10,8 bilhões e previsão de queda de R$ 768 milhões no orçamento de 2027 (orçamento total de R$ 36,2 bilhões). Omar Aziz promete, para os primeiros cem dias, renegociar a dívida, fazer concursos e reduzir as filas na saúde, e disse que pretende avaliar os contratos terceirizados da saúde e fiscalizar os da merenda escolar.",
    "fontes": [
     {
-     "titulo": "Omar Aziz promete renegociar dívida do AM, fazer concursos e reduzir filas na saúde nos primeiros 100 dias de governo",
-     "veiculo": "G1",
-     "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOYnBuU25XbXFsU0pNcFZyZ1FTbngyckhVNWVmQWJNb01GQzRDRUN4eUpRUTUzYlJJYk40ZzZMUDZPTGVlUGZFZ2FELWw3eUNJYWFkQktkY2pUQXhoSjVWZzdYYVVlVUR6OHl2S1hOYk9LdmVWM05MTUxZRmNlQU81TFJ2TlFxNE1EMkZOeGJOcUgxNEp6bS15TG0zcVRhQ0gzYVl6N25GWDZ6RE9WSk9TSlgyU0lHRDhrdWw2Y0VCUzRiUEtrSExGRERGV1RBVmJnUlFqbVM4UGl3Smd0am1oRXRXVU9ZeFBsTVhOUmh3aHgyTV9pXzJkeE1ucFNEa2V2NXN4dtIBkwJBVV95cUxQb0VmeWUtdmt5RjlzVVVXZ3pCNGxpckNfUlFEY09Dc1laVDdzc2RicWhIRnRGbjExY0ZsVC15U19VckdPVTRqQnFySmRveUxUcmh0UmxqYkV3TXNYVUNqQmdEU3FPdURHVnJzcW9TcjdlLXRGc3FaYlNoNEFIZ0N6SnI5aTVCZ0N2ZlFReFEzdW5MTklUMnZYMG9kRFVGOEFidTM2bE10UGc1RElDRmc5emZRVDRuY2FxX3pPREJ0N1ZhMk1kVXliUVI0bmtHWUhkY3lVRjJJV2o1aURzUmRJbU5XanVRdnYtR1RTWV9hcXZUd2xJRjBUZXlaUU0xbHdiNV9LOTlqSkpaQTRac3U4YTk3cw?oc=5"
+     "titulo": "Omar Aziz promete renegociar dívida de R$ 7,5 bi do Amazonas",
+     "veiculo": "O Cafezinho",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZ29ON1lSNkdrNHBGZnVfdVJHVlN1a3c3QWNSWWotUHJsSVZ2ampHN2NWRGYtTW8wZWdUNHd5Y0gwdUwyajNwWHJ3cEVqa3RiTVp5cTBtQlJLTV9xSUJQaHRVaHNlQk5wZWdxemxkMmFLek5xWFJRU0FvRFpIUTFmcmNoLU9va1M4UFhueV8wd1pCbW5vdnNEUkF4SGhiZ9IBowFBVV95cUxPZmh4eW4xTWpCdFM2Zzc0OHFUTlp6LThpMF9ZSTZhWnVoSGtrd3h2QU5UQkxVS2JVY3ZNMTlZR0hGUWMtMmVJb294d2hzc2VuNlk0Z09adFh2YVY5NjlFNkJtczZwWjBhNWxtUlBCWnNjRjNiYkVsU0tXNWVQU25NTjlEdzB4WG9HY3d4NXJ5T2tIZkdiVzhjelF0NVh6SFRRVEF3?oc=5"
     },
     {
      "titulo": "Equipe de Omar Aziz inicia diagnóstico da saúde, educação e segurança para preparar nova gestão no Amazonas",
@@ -199,7 +245,7 @@
    ]
   },
   "RN": {
-   "texto": "Cadu Xavier (PT) fixou 20 de dezembro para concluir o diagnóstico da gestão e disse que a transição vai mapear contas, contratos e gargalos. A equipe descartou moratória, reconheceu as dificuldades fiscais e garantiu o cumprimento dos contratos. O governador eleito promete equilíbrio fiscal sem aumentar impostos, retomar o calendário do 13º salário e priorizar critérios técnicos no secretariado. No centro das manchetes está a Previdência: ele quer que Judiciário, Ministério Público e Tribunal de Contas contribuam mais para reduzir o déficit e aprovar ainda em 2026 uma contribuição extra de 20%.",
+   "texto": "Cadu Xavier (PT) fixou 20 de dezembro para concluir o diagnóstico da gestão e disse que a transição vai mapear contas, contratos e gargalos. A equipe descartou moratória, reconheceu as dificuldades fiscais e garantiu o cumprimento dos contratos. O governador eleito promete equilíbrio fiscal sem aumentar impostos, retomar o calendário do 13º salário e priorizar critérios técnicos no secretariado. No centro das manchetes está a Previdência: ele quer que Judiciário, Ministério Público e Tribunal de Contas contribuam mais para reduzir o déficit e aprovar ainda em 2026 uma contribuição extra (as manchetes falam em 20%, número que não consegui confirmar em matéria).",
    "fontes": [
     {
      "titulo": "Cadu Xavier fixa 20 de dezembro para concluir diagnóstico no RN",

@@ -116,7 +116,7 @@ jobs:
 
       - name: Leitura real das transições em outros estados, a partir dos servidores do GitHub (sem gravar)
         run: |
-          python3 -I pipeline/transicoes/coletar.py --dry-run | tee transicoes.log
+          python3 -I pipeline/transicoes/coletar.py --dry-run --amostra 12 | tee transicoes.log
           { echo "### Transições em outros estados (simulação, sem gravar)"; echo '```'; tail -3 transicoes.log; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
           grep -q "^ok " transicoes.log || { echo "::error::O Google Notícias não respondeu às consultas de transição"; exit 1; }
 

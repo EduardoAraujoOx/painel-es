@@ -74,17 +74,28 @@ jobs:
         continue-on-error: true
         run: python3 -I pipeline/normas/coletar.py
 
-      # Transições de governo em outros estados (aba "Estados"): 13 estados que trocaram de governador em 2026; cerca de 40 consultas ao Google Notícias, pouco mais de 1 minuto.
-      # Roda a cada coleta; não entra no e-mail. Falha aqui não impede a publicação das notícias (e uma consulta que falha não derruba as outras).
-      - name: Coletar as transições de outros estados
-        id: transicoes
-        continue-on-error: true
-        run: python3 -I pipeline/transicoes/coletar.py
-
       # Há um horário de resumo vencido (08h17, 12h17 ou 18h17) sem e-mail enviado depois dele? Se sim, esta execução faz o levantamento e o envio.
       - name: Ver se há resumo vencido
         id: devido
         run: echo "sim=$(python3 -I pipeline/noticias/enviar.py --devido)" >> "$GITHUB_OUTPUT"
+
+      # Transições de governo em outros estados (aba "Estados"): 13 estados que trocaram de governador em 2026; cerca de 85 consultas ao Google Notícias (mais algumas quando
+      # uma consulta bate no teto de ~100 resultados), uns 4 minutos. Roda só quando há resumo vencido (08h17, 12h17 ou 18h17) e nos disparos manuais, para não pesar sobre o
+      # Google a cada hora (o mesmo endereço de saída coleta as notícias do ES). Não entra no e-mail. Falha aqui não impede a publicação das notícias.
+      - name: Coletar as transições de outros estados (resumo vencido ou disparo manual)
+        id: transicoes
+        continue-on-error: true
+        env:
+          EVENTO: ${{ github.event_name }}
+          DEVIDO: ${{ steps.devido.outputs.sim }}
+          AGENDADO: ${{ inputs.agendado }}
+        run: |
+          # disparo manual (sem agendado): sempre; agendado (GitHub ou externo): só com resumo vencido; e sempre que o primeiro levantamento ainda não existir
+          if [ ! -e data/transicoes/index.json ] || { [ "$EVENTO" = "workflow_dispatch" ] && [ "$AGENDADO" != "true" ]; } || { [ "$DEVIDO" = "sim" ] && { [ "$EVENTO" = "schedule" ] || [ "$AGENDADO" = "true" ]; }; }; then
+            python3 -I pipeline/transicoes/coletar.py
+          else
+            echo "Sem resumo vencido: nada a fazer nesta execução."
+          fi
 
       # Contratos suspensos, rescindidos ou anulados (SIGA): leva cerca de 1 minuto, por isso só quando há resumo vencido e nos disparos manuais.
       # Roda antes do e-mail para que o resumo já traga o que há de novo. Falha aqui não impede a publicação das notícias.

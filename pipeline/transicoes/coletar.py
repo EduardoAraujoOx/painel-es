@@ -44,7 +44,8 @@ def preparar(cfg):
         exatos = [re.compile(r"(?<![A-Za-zÀ-ú])" + re.escape(x) + r"(?![A-Za-zÀ-ú])") for x in e.get("cues_exatos", [])]
         estados.append({"uf": e["uf"], "cues": N.compilar_lista(e["cues"]), "siglas": sig, "exatos": exatos, "eleito": N.compilar_lista([e["eleito"]] + [b for b in e["buscas"][:1]])})
     return {"estados": estados, "transicao": N.compilar_lista(cfg["transicao"]), "excluir": N.compilar_lista(cfg["excluir"]),
-            "temas": N.compilar_temas({"temas": cfg["temas"]}), "medida": set(cfg["temas_de_medida"])}
+            "temas": N.compilar_temas({"temas": cfg["temas"]}), "medida": set(cfg["temas_de_medida"]),
+            "estadual": N.compilar_lista(cfg.get("contexto_estadual", [])), "tema_estadual": set(cfg.get("temas_com_contexto_estadual", []))}
 
 
 def ufs_do_titulo(F, titulo):
@@ -71,37 +72,65 @@ def classificar(cfg, titulo, F=None):
     medida = [t for t in temas if t in F["medida"]]
     transicao = N.casa(F["transicao"], n)
     # sem palavra de transição só vale quando cita o próprio governador eleito e trata de alguma medida ("Marcos Rogério prepara cortes profundos...")
+    # ou quando trata de previdência ou FNDR do estado (com palavra de governo ou de estado no título), que são o que se quer comparar mesmo fora do clima de transição
     if not transicao:
         eleito = any(N.casa(e["eleito"], n) for e in F["estados"] if e["uf"] in ufs)
-        if not (eleito and medida):
+        tema_estadual = bool(F["tema_estadual"] & set(temas)) and N.casa(F["estadual"], n)
+        if not ((eleito and medida) or tema_estadual):
             return None
     return {"ufs": ufs, "temas": temas, "categoria": "medida" if medida else "equipe"}
 
 
-def consultas(cfg, dias):
+FINANCAS_A = '(Fazenda OR Tesouro OR dívida OR precatórios OR arrecadação OR caixa OR "folha de pagamento" OR Propag)'
+FINANCAS_B = '(gastos OR despesas OR "ajuste fiscal" OR "equilíbrio fiscal" OR "contas públicas" OR déficit OR superávit OR orçamento)'
+
+
+def consultas(cfg):
+    """(rótulo, consulta) sem o recorte de datas, que o coletor acrescenta (when:Nd, ou after/before quando a consulta bate no teto do Google)."""
     for e in cfg["estados"]:
         a, b = e["buscas"]
-        yield f"{e['uf']}: transição", f'"{a}" (transição OR "governo eleito" OR "governador eleito") when:{dias}d'
-        yield f"{e['uf']}: medidas", f'"{a}" (corte OR cortes OR auditoria OR contratos OR rombo OR déficit OR secretarias OR orçamento OR servidores OR "reforma administrativa") when:{dias}d'
-        yield f"{e['uf']}: contas", f'transição governo "{b}" (corte OR auditoria OR rombo OR déficit OR contratos OR secretarias OR "situação fiscal") when:{dias}d'
+        yield f"{e['uf']}: transição", f'"{a}" (transição OR "governo eleito" OR "governador eleito")'
+        yield f"{e['uf']}: medidas", f'"{a}" (corte OR cortes OR auditoria OR contratos OR rombo OR déficit OR secretarias OR orçamento OR servidores OR "reforma administrativa")'
+        yield f"{e['uf']}: contas", f'transição governo "{b}" (corte OR auditoria OR rombo OR déficit OR contratos OR secretarias OR "situação fiscal")'
+        yield f"{e['uf']}: finanças 1", f'"{a}" governo {FINANCAS_A}'
+        yield f"{e['uf']}: finanças 2", f'"{a}" governo {FINANCAS_B}'
+        yield f"{e['uf']}: previdência e FNDR", f'("{a}" previdência) OR (intitle:previdência "{b}") OR (FNDR "{b}")'
     for i, q in enumerate(cfg["buscas_gerais"], 1):
-        yield f"geral {i}", f"{q} when:{dias}d"
+        yield f"geral {i}", q
 
 
-def coletar(cfg, dias, hoje):
+def com_recorte(q, dias, desde=None, ate=None):
+    """Consulta com o recorte: os últimos `dias` dias, ou (desde, ate) como after/before, usado para dividir a consulta que bate no teto de ~100 resultados."""
+    if desde and ate:
+        return f"{q} after:{desde:%Y-%m-%d} before:{ate:%Y-%m-%d}"
+    return f"{q} when:{dias}d"
+
+
+def metades(dias, hoje, inicio):
+    """Divide a janela de coleta em duas, no meio: [(início, meio), (meio, amanhã)]."""
+    ini = max(hoje - timedelta(days=dias), inicio)
+    meio = ini + (hoje - ini) / 2
+    return [(ini, meio), (meio, hoje + timedelta(days=1))]
+
+
+def _ler(q):
+    """Lê uma consulta do Google Notícias; devolve (itens, erro)."""
+    try:
+        return N.ler_feed(N.baixar(N.GOOGLE.format(q=urllib.parse.quote(q)))), ""
+    except (RuntimeError, ValueError, Exception) as e:  # uma consulta que falha não derruba as outras
+        return [], str(e)[:160]
+
+
+def coletar(cfg, dias, hoje, max_consultas=None):
     F = preparar(cfg)
-    limite = max(hoje - timedelta(days=dias), datetime.fromisoformat(cfg["desde"] + "T00:00:00-03:00").astimezone(timezone.utc))
+    inicio = datetime.fromisoformat(cfg["desde"] + "T00:00:00-03:00").astimezone(timezone.utc)
+    limite = max(hoje - timedelta(days=dias), inicio)
+    teto = cfg.get("janela_dividir_acima_de", 90)
     coletados, relatorio = [], []
-    for rotulo, q in consultas(cfg, dias):
-        url = N.GOOGLE.format(q=urllib.parse.quote(q))
-        lidos = aceitos = 0
-        erro = ""
-        try:
-            itens = N.ler_feed(N.baixar(url))
-        except (RuntimeError, ValueError, Exception) as e:  # uma consulta que falha não derruba as outras
-            itens, erro = [], str(e)[:160]
+
+    def aceitar(itens):
+        aceitos = 0
         for it in itens:
-            lidos += 1
             veiculo = it["veiculo"] or "Google Notícias"
             titulo = N.tirar_veiculo_do_titulo(it["titulo"], veiculo)
             data = it["data"] or hoje
@@ -110,10 +139,29 @@ def coletar(cfg, dias, hoje):
             if classificar(cfg, titulo, F):
                 aceitos += 1
                 coletados.append({"titulo": titulo, "veiculo": veiculo, "url": it["url"], "data": data})
-        relatorio.append({"consulta": rotulo, "ok": not erro, "lidos": lidos, "aceitos": aceitos, **({"erro": erro} if erro else {})})
+        return aceitos
+
+    for n, (rotulo, q) in enumerate(consultas(cfg)):
+        if max_consultas is not None and n >= max_consultas:
+            break
+        itens, erro = _ler(com_recorte(q, dias))
+        lidos, aceitos = len(itens), aceitar(itens)
+        extra = ""
+        # o Google devolve no máximo cerca de 100 resultados: consulta que chega perto do teto perdeu as notícias mais antigas, então é refeita em duas janelas de datas
+        if not erro and lidos >= teto:
+            for de, ate in metades(dias, hoje, inicio):
+                time.sleep(PAUSA)
+                it2, erro2 = _ler(com_recorte(q, dias, de, ate))
+                lidos += len(it2)
+                aceitos += aceitar(it2)
+                erro = erro or erro2
+            extra = " (dividida em duas janelas)"
+        relatorio.append({"consulta": rotulo + extra, "ok": not erro, "lidos": lidos, "aceitos": aceitos, **({"erro": erro} if erro else {})})
         time.sleep(PAUSA)
     return coletados, relatorio
 
+
+# ---------------------------------------------------------------- consolidação
 
 def consolidar(cfg, coletados, hoje, existentes=None):
     """Junta o coletado ao já guardado, deduplica pelo título e reclassifica tudo pelas regras de hoje (mudar o config vale para o que já foi guardado)."""
@@ -159,10 +207,11 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--dias", type=int, help="janela de coleta em dias (padrão: janela_dias do config.json)")
     ap.add_argument("--dry-run", action="store_true", help="só mostra o resumo")
+    ap.add_argument("--amostra", type=int, metavar="N", help="só as N primeiras consultas (para a verificação do PR: prova que o Google responde sem gastar minutos)")
     args = ap.parse_args()
     cfg = json.loads(CONFIG.read_text(encoding="utf-8"))
     hoje = N.agora()
-    coletados, relatorio = coletar(cfg, args.dias or cfg["janela_dias"], hoje)
+    coletados, relatorio = coletar(cfg, args.dias or cfg["janela_dias"], hoje, args.amostra)
     existentes = []
     if SAIDA.exists():
         try:
