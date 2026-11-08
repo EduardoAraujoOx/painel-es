@@ -58,7 +58,8 @@ jobs:
         run: python3 -I -m unittest discover -s pipeline/obras/testes -v
 
       - name: Testes (transições em outros estados)
-        run: python3 -I -m unittest discover -s pipeline/transicoes/testes -v
+        run: |
+          python3 -I -m unittest discover -s pipeline/transicoes/testes -v
           node --check public/modulos/transicoes.js
 
       - name: "Testes (cadastro de alertas: função do Supabase e página)"
