@@ -144,6 +144,50 @@ class PrevidenciaFndrEFinancas(unittest.TestCase):
         self.assertNotIn("previdência", CFG["temas"]["pessoal"]["termos"])
 
 
+class LimpezaDeRuido(unittest.TestCase):
+    """Revisão de 08/11/2026: "governador eleito" sozinho deixava entrar perfil, voto, política nacional e curiosidade. Agora só vale com palavra de transição ou de composição
+    da equipe, ou com uma medida no título."""
+
+    def test_perfil_voto_e_politica_nacional_nao_entram(self):
+        for t in ("Quem é Douglas Ruas, governador eleito do RJ - 08/10/2026 - Política",
+                  "Conheça Omar Aziz, governador eleito do Amazonas",
+                  "Governador eleito do RJ, Douglas Ruas, vota em São Gonçalo",
+                  "Governador eleito do Pará, Daniel Santos parabeniza Lula e Alckmin por reeleição",
+                  "Governador eleito do Pará, Dr. Daniel declara apoio a Flávio Bolsonaro",
+                  "Governador eleito, Cleitinho quer morar 'na mesma casa onde vive há 10 anos' no interior de MG",
+                  "Governador eleito de MG, Cleitinho já teve banda de pagode",
+                  "Governador eleito, Daniel Santos chama promotor de bandido após parecer favorável",
+                  "Governador eleito do Rio, Douglas Ruas se encontra com Zanin para discutir ação sobre segundo turno",
+                  "Levantamento feito pelo Estadão revela que Dr. Furlan teve o 2º voto mais caro do País",
+                  "Governador Braide parabeniza servidores públicos no Dia do Servidor",
+                  "Cleitinho Azevedo: o elétrico, conheça a carreira anterior do governador de MG",
+                  "A dívida de gratidão de Flávio Bolsonaro com Sergio Moro",
+                  "Em Palmas, Vicentinho Júnior apresenta propostas para a saúde, defende servidores e convoca para carreata"):
+            self.assertIsNone(c(t), t)
+
+    def test_equipe_e_protocolo_de_verdade_continua(self):
+        for t, cat in [("Maria Gabriela Bessa é nomeada por Douglas Ruas como coordenadora da transição de governo; saiba quem é", "equipe"),
+                       ("Governador eleito do RJ anuncia 3 primeiros secretários", "equipe"),
+                       ("Conheça a equipe escalada por Douglas Ruas para cuidar da transição de governo no Rio", "equipe"),
+                       ("Primeiro escalão de Zucco prioriza indicações pessoais do governador eleito", "equipe"),
+                       ("Governador eleito do Pará anuncia advogado do agro para comandar a Secretaria de Meio Ambiente", "equipe")]:
+            r = c(t)
+            self.assertIsNotNone(r, t)
+            self.assertEqual(r["categoria"], cat, t)
+
+    def test_governador_eleito_com_medida_no_titulo_continua(self):
+        r = c("Governador eleito de Minas Gerais descarta privatização da Cemig")
+        self.assertEqual((r["ufs"], r["categoria"]), (["MG"], "medida"))
+        r = c("Antes da posse de JHC, deputados votam PEC que engessa mais uma fatia do orçamento de Alagoas")
+        self.assertEqual((r["ufs"], r["categoria"]), (["AL"], "medida"))  # "votam" de deputados não é o voto do eleitor
+
+    def test_palavras_que_geravam_falso_tema(self):
+        # "carreira" (servidor de carreira, carreira anterior), "Tesouro" (cargo de secretário) e "caixa" (caixa-preta) não bastam para ser medida
+        self.assertNotIn("carreira*", CFG["temas"]["pessoal"]["termos"])
+        self.assertEqual(c("Pedro Henrique Alves é anunciado para comandar Secretaria Executiva do Tesouro no governo Vicentinho Júnior")["categoria"], "equipe")
+        self.assertEqual(c("Cleitinho quer técnico do Tesouro Nacional para comandar Fazenda e enfrentar rombo")["categoria"], "medida")
+
+
 class DivisaoDeConsultas(unittest.TestCase):
     """O Google devolve no máximo cerca de 100 resultados por consulta: a que chega perto do teto é refeita em duas janelas de datas."""
     HOJE = datetime(2026, 11, 8, 12, 0, tzinfo=UTC)
