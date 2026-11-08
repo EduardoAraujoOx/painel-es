@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-08",
- "gerado_em": "2026-11-08T20:29:39Z",
+ "gerado_em": "2026-11-08T21:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,7 +25,7 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 26,
+   "lidos": 23,
    "aceitos": 6,
    "possiveis": 1
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 17,
+   "lidos": 16,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 45,
+   "lidos": 44,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 19,
+   "lidos": 18,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 14,
+   "lidos": 15,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -154,8 +154,8 @@
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 24,
-   "aceitos": 3,
-   "possiveis": 5
+   "aceitos": 4,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -171,15 +171,15 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
-   "possiveis": 1
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -238,19 +238,31 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 247,
-  "possivel": 14,
-  "excluir": 30,
+  "sem_contexto": 240,
+  "possivel": 12,
+  "excluir": 32,
   "veiculo_outra_praca": 6,
   "outro_estado": 14,
-  "veiculo_excluido": 7,
-  "sigla_sem_ancora": 9,
-  "sem_contexto_com_tema": 5,
+  "veiculo_excluido": 5,
+  "sigla_sem_ancora": 8,
+  "sem_contexto_com_tema": 6,
   "exterior_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "bd1ec13202d8",
+   "titulo": "IBGE, Banestes e prefeituras: veja mais de 29 mil vagas abertas em concursos",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/trabalho/concursos/ibge-banestes-e-prefeituras-veja-mais-de-29-mil-vagas-abertas-em-concursos/",
+   "data": "2026-11-08T20:34:12Z",
+   "coletado_em": "2026-11-08T21:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": []
+  },
   {
    "id": "274b6851984c",
    "titulo": "Servidor da Serra morre após colisão na Rodovia Audifax Barcelos",
