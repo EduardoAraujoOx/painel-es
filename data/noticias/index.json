@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-09",
- "gerado_em": "2026-11-09T19:50:06Z",
+ "gerado_em": "2026-11-09T20:17:16Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,24 +25,24 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 29,
+   "lidos": 28,
    "aceitos": 8,
-   "possiveis": 5
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 5,
+   "lidos": 8,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 5,
+   "lidos": 10,
+   "aceitos": 7,
    "possiveis": 2
   },
   {
@@ -65,16 +65,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 3,
+   "lidos": 5,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 1,
+   "lidos": 5,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 26,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -97,8 +97,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 41,
-   "aceitos": 1,
+   "lidos": 45,
+   "aceitos": 2,
    "possiveis": 6
   },
   {
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 23,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 17,
+   "lidos": 18,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 55,
+   "lidos": 56,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -178,8 +178,8 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
-   "possiveis": 0
+   "aceitos": 1,
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -194,7 +194,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 2
   },
   {
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "A Gazeta",
@@ -238,21 +238,90 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 4,
  "descartes_na_coleta": {
-  "sem_contexto": 248,
+  "sem_contexto": 249,
+  "veiculo_excluido": 22,
   "excluir": 26,
-  "possivel": 29,
+  "possivel": 31,
+  "oficial_sem_tema": 3,
   "sem_contexto_com_tema": 3,
-  "oficial_sem_tema": 2,
+  "oficial_divulgacao": 1,
   "veiculo_outra_praca": 6,
-  "veiculo_excluido": 19,
   "caixa_alta": 1,
-  "outro_estado": 19,
+  "outro_estado": 17,
   "sigla_sem_ancora": 4,
   "exterior_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "1af260868c06",
+   "titulo": "Quais carros podem ficar isentos de imposto em 2027? Veja a lista",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/quais-carros-podem-ficar-isentos-de-imposto-em-2027-veja-a-lista/",
+   "data": "2026-11-09T20:10:16Z",
+   "coletado_em": "2026-11-09T20:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "ab0d3c6a5ac7",
+   "titulo": "Governo do Estado entrega 30 casas para famílias de Pedro Canário",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPd2hzSFZuMXlkaE1VY2t2S1FCYmJfQzFpSDVHeGJTcUFyZ2phODktRHZJbUtuN0RjUWR6dWYwNU9LTGJ4ZWFham1BaEE3ZTZZLXczdGhWaTVFQWx2Vi13OWZyRWtJUUZSSHk1eS1oQ2lfUnB2MVFFNXJGR0t4Z2VLM1RIaGJqZFkyWWxBR2FXc1Q?oc=5",
+   "data": "2026-11-09T20:03:00Z",
+   "coletado_em": "2026-11-09T20:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "587211fc7f8d",
+   "titulo": "Workshop debate viabilidade financeira de sistemas agroflorestais na região sul do Espírito Santo",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPT0xlbkwyajBNTTZKcnQtcmN5aHhTQ01WMnlQR0FQLU5maGFZcEhLeDBxT2MyaVpNN19yNDc4Um1GaVF4d2NQbW9senp4ZDVBZlZJZ185OUctVzNhemxyUkUweXY3SWZ0NGdiX0NCeE9yajQwZ3lfaENCM1hYcnp4LW10amxYVVB0a2czcDFWWHJGVGoybUtBZEo4WTJzR3ZORUNIVW9NcWxySy0tNEE3Rm1zY2JULXdzT0R3?oc=5",
+   "data": "2026-11-09T19:57:00Z",
+   "coletado_em": "2026-11-09T20:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": []
+  },
+  {
+   "id": "66bfadd06145",
+   "titulo": "Concurso da PMES: veja o que fazer se você foi prejudicado na prova",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/trabalho/concursos/concurso-da-pmes-veja-o-que-fazer-se-voce-foi-prejudicado-na-prova/",
+   "data": "2026-11-09T19:56:08Z",
+   "coletado_em": "2026-11-09T20:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "44532cdc50a9",
+   "titulo": "Quem é Maurinho Rossoni? escolhido por Pazolini para integrar equipe do governo do ES",
+   "veiculo": "portaldenoticiasosingular.com",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOVHRXZGs4dm9FUUtNOUp2R04yUGdQbTBKbkhyUDk4eXZvelZyQzBzSWZ0YjRzWXFlMXZxT0t0UUlxd3ZKQXJvU2Vfa2l3MldLdGg1a1NLa1N2MTAzZ1lYVzBhTzduTV9zRy1DOVc2c01EOWpDbDM4LWIyczdNX3NUekk1cFlCaVpNbGhUbkxNWU5SZHRwUzlnWWkyZWpYU2NVSVFjekFXOGY4b3A1eXRndGk1VVhadjAyVnU5RU5iVTk?oc=5",
+   "data": "2026-11-09T19:53:46Z",
+   "coletado_em": "2026-11-09T20:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "bad04d3b04cd",
    "titulo": "Servidores de Cariacica vão ter reajuste no auxílio-alimentação; veja valor",
@@ -300,6 +369,21 @@
    "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQWEtMMHRtbzhRd2x3RWhoa0RmVjJaU20xNnNkMHhGSG5RZWZSanR1RTAyX01Vb3RsV19nVlZSZ3JSYUxxaTJlX21LbzVpdnhfTnNEQXZWWGJHM0psVkstUTZLWmZsWjNMSzVMWHUwNEpWd05kWFB3X2xmSzkzTnViMEJIa2hIZjVGcTdMTFNEOVVDRUd5OFJhTHdOS09MeGhCS3pnZ1RqbGRvOHc4NG12TXZJMThiTlViVjlyeFdzUVdJbUU5R0htVWYzRkNtMlhEX2syNTN2VDRmMjRJWm5BdzNGVmRyVmw1NFgtVUFIRF9xRGJCdzJJcg?oc=5",
    "data": "2026-11-09T19:09:20Z",
    "coletado_em": "2026-11-09T19:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "1345e92b5d26",
+   "titulo": "Desenvolvimento do ES é tema da primeira reunião da transição de Pazolini",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQa1YxRjIwU3Q3NG1hZGFXampfcGV5aGZZbjNjNi1lSjBSUkdTSkRnbTV0MHhTdGw5aWttTFI0cmlBYmk2ZkMtaWV6aHlqY1hJMXducmFsOVFvaW5yZzVQY3ZBal9kUzNfY0hqV244dmx1MDVfZFlRNS1PTHhmV3gtYjFScTdFS1RJVi04d3pmd2Y4VmgtS2xvdXU5R0tvaXFISHpkVmxOOS1QdWVQc1RsLVIxeldzYnlrSW5Xdlc1UjJ3QdIBwgFBVV95cUxQa1YxRjIwU3Q3NG1hZGFXampfcGV5aGZZbjNjNi1lSjBSUkdTSkRnbTV0MHhTdGw5aWttTFI0cmlBYmk2ZkMtaWV6aHlqY1hJMXducmFsOVFvaW5yZzVQY3ZBal9kUzNfY0hqV244dmx1MDVfZFlRNS1PTHhmV3gtYjFScTdFS1RJVi04d3pmd2Y4VmgtS2xvdXU5R0tvaXFISHpkVmxOOS1QdWVQc1RsLVIxeldzYnlrSW5Xdlc1UjJ3QQ?oc=5",
+   "data": "2026-11-09T18:51:12Z",
+   "coletado_em": "2026-11-09T20:17:16Z",
    "outras": [],
    "possivel": false,
    "triagem": 7,
