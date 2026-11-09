@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-09",
- "gerado_em": "2026-11-09T17:17:16Z",
+ "gerado_em": "2026-11-09T18:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -27,21 +27,21 @@
    "ok": true,
    "lidos": 27,
    "aceitos": 7,
-   "possiveis": 2
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 4,
+   "lidos": 6,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 4,
    "possiveis": 1
   },
@@ -49,9 +49,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 6,
+   "lidos": 8,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -65,15 +65,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 2,
+   "lidos": 4,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 24,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 11,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 14,
+   "lidos": 13,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 16,
-   "aceitos": 1,
-   "possiveis": 3
+   "lidos": 17,
+   "aceitos": 2,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 55,
+   "lidos": 56,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -171,23 +171,23 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 3
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
-   "possiveis": 0
+   "aceitos": 1,
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
-   "possiveis": 1
+   "aceitos": 1,
+   "possiveis": 3
   },
   {
    "fonte": "ES Hoje",
@@ -238,20 +238,102 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 229,
-  "excluir": 30,
-  "possivel": 22,
+  "sem_contexto": 230,
+  "excluir": 31,
+  "possivel": 30,
   "sem_contexto_com_tema": 4,
-  "outro_estado": 16,
-  "veiculo_outra_praca": 7,
-  "veiculo_excluido": 17,
+  "oficial_sem_tema": 2,
+  "veiculo_outra_praca": 6,
+  "veiculo_excluido": 15,
   "caixa_alta": 1,
-  "sigla_sem_ancora": 4,
+  "outro_estado": 15,
+  "sigla_sem_ancora": 5,
   "exterior_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "3e58177f9022",
+   "titulo": "Ex-presidente da Colômbia é investigado por oferecer contratos públicos em troca de sexo",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/ex-presidente-da-colombia-e-investigado-por-oferecer-contratos-publicos-em-troca-de-sexo/",
+   "data": "2026-11-09T18:10:16Z",
+   "coletado_em": "2026-11-09T18:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "96f7cee1a30a",
+   "titulo": "Governo do ES muda nome da Secont para Controladoria-Geral do Estado",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/governo-do-es-muda-nome-da-secont-para-controladoria-geral-do-estado/",
+   "data": "2026-11-09T18:00:58Z",
+   "coletado_em": "2026-11-09T18:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "governador",
+    "controle"
+   ]
+  },
+  {
+   "id": "f5bc1b39f8cd",
+   "titulo": "Detran divulga lista de motoristas envolvidos em processos de suspensão e cassação da CNH; punições chegam a 2 anos",
+   "veiculo": "ND Mais",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQYVRqaDZqQ3FEamRiMlVucEIybWZwY3VSZWFqRld1M0xqUG5pVUVFZjVBUHZiYW82Tktid3U2OHhnZTZmcXYwTXBOdnlKSjlHazVMcVFjYWtaMWcyYUdkeXRUX1I4MW9ybGtlelRDUFlxeVk3TUl1UzdndHEyUUVkMnNFbmhLd0o5cDFvQ1RlVW04SWVnVDhwSg?oc=5",
+   "data": "2026-11-09T17:53:45Z",
+   "coletado_em": "2026-11-09T18:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "9d05c33c1f82",
+   "titulo": "Transparência na saúde pública vai além da publicação de contratos",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/artigos/transparencia-na-saude-publica-vai-alem-da-publicacao-de-contratos-1126",
+   "data": "2026-11-09T17:48:56Z",
+   "coletado_em": "2026-11-09T18:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "2acc74ad39c7",
+   "titulo": "Fiscalização integrada aborda 516 veículos em Guarapari",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOQV96ZC1YTkFwaGlhN09fSXcyemhzRS0xM0FmOTg2RU45SGFINmpBOUU5QW1lQVNLQWVtc0hoRnlBcVVQcGx6enRZbGRyaVlGUjFwbEVvYS1yalJTU05JaVRhNVpBVUljNVRCLU1TTlY5XzRrWjB1Szl3N21iMlpZWk4yMA?oc=5",
+   "data": "2026-11-09T17:38:00Z",
+   "coletado_em": "2026-11-09T18:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": []
+  },
+  {
+   "id": "71500896a676",
+   "titulo": "Concurso Idaf ES abre 14 vagas e cadastro reserva com salários de até R$ 9,2 mil",
+   "veiculo": "Portal Tempo Novo",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQUmRxX2FTSlN3MFJEdElPdGZXWlpNSlVVT0lTWmhVRFJfTWNBdzJNOFFobk5FNDBHM1JWNGllRVNFT2Q0S0sxQ2tMMnZWeUJaWGVKQm9pMU02NUlBdEM2NnZ0TFhkdFJXSVhmNmszMFZ4ZkZ5SkZBaXgzOXR1aXZnVExzalItRExmclZwRUtCemh3UmwzN2ppdTJRell3cUpfTEd6b25NZDZjcTMzbEFkRHpYVzI?oc=5",
+   "data": "2026-11-09T17:33:00Z",
+   "coletado_em": "2026-11-09T18:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": []
+  },
   {
    "id": "ff44ded2bc22",
    "titulo": "Decreto altera denominação da Secont, que passa a ser Controladoria-Geral do Estado do Espírito Santo (CGE)",
@@ -273,10 +355,29 @@
    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNREtwOUc1Vlc2V2pjSjQyTERaaG5aZFdWNGZBV2czcXR5Wjgwb21QQnNtM01iTEVUbjBEdUI1LVp3WWNuYzZNbXdNSVBDYnNEQjlXWV9uYk12Q2xNbWFfYW1NZXo2TldyVTF0UkYyMGpMMG5YUlVobFdSQWZmT0dMQ3pmeERielhpZ0JVVFVrenJja2tTWG9RcVNrMTRuLTRMSVhaeXlEamQ?oc=5",
    "data": "2026-11-09T16:34:00Z",
    "coletado_em": "2026-11-09T17:17:16Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Governo ES",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOMkp3cXdpS3VCenQ1NTdrZ09zNkRwZTVySm9wclg1N2VjLTNCSVdSYVpOdkdkNGRXOTZmX0RPVTNzSUdhU2tSLVBOb0tYTmRoSG1KR0ttdFk2aUxZTVJ0UVBlbXQ0RnhFWFBnaENjdzlNN2JNamlWdW56YUt6TE13YU5fOU1JdGNXdVRyS0N1Q2xVWjFnSTBWaXVtbVhLSzlDbTh5bA?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 7,
    "temas": []
+  },
+  {
+   "id": "e41f7d974ede",
+   "titulo": "PT faz vaquinha para quitar dívidas de campanha",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/pt-faz-vaquinha-para-quitar-dividas-de-campanha/",
+   "data": "2026-11-09T16:18:00Z",
+   "coletado_em": "2026-11-09T18:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "financas"
+   ]
   },
   {
    "id": "e001af7292b0",
@@ -296,11 +397,20 @@
   {
    "id": "d06f02e1cc32",
    "titulo": "Gás do Povo: governo prorroga vigência do auxílio até 2031",
-   "veiculo": "Tribuna Online",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbjNsWDVmUEk4cXRNQXMyeGFUREdRalNyekx6QVlGVG5BeDNHVnNiZFY2WjZ4STNLQXNSQndCWFVSeHVuRl9PTDdILUI0aFVQdVA4cTdPRmxHTEZqVG9FN09jTWF5b1g3MlFFRGNNczZvR1dwVHlLT2psOTBfdFVTUVpFSnEyOE9PaGlkdDNLWXM0UnN5U2YwdDFPVGpWVE1DbFN3c9IBrAFBVV95cUxOb3l5UHRFaGJNRVRYbGZ4YnU3NzE1TV9nZWplZlJKN3hXemtMUjdZWVBzY1IwYTczMTA4MzFsX1l2N1NaTng3YnppQUhadkFtNEJGQ2s2Z1BhRmgxZnRRbnpGRVZBUDYzZXFrVmFZWHN5enRlaHRIdER4WnQ4LW41b0RVVnNRdUQ4b2FldS1CaFpsMHBGZ2FxS18tVnVlQV9JTWN4NFBGU1lMT0s2?oc=5",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/gas-do-povo-governo-prorroga-vigencia-do-auxilio-ate-2031/",
    "data": "2026-11-09T15:26:56Z",
    "coletado_em": "2026-11-09T16:17:14Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Folha Vitória",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOTDhXZ0F2VkpCTDFoTV9HdnUwcE1HOEY4OVpRNkROUGxXRS1PQ3Rsd1VQTE9hdU13SEs4ckRHX1loUEpsZWkyNUNRTjRXdmFwYTdqWjg4STBUUF80WWNZb1g3U2pkNUJFdGVHc3hzcXB3ZW9YWmZZOXNGYkhCSmkxOUQ2Y2F5VEh3OHFHd2otVzFKd2F5eUQyX05fa3Eyek1J?oc=5"
+    },
+    {
+     "veiculo": "Tribuna Online",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbjNsWDVmUEk4cXRNQXMyeGFUREdRalNyekx6QVlGVG5BeDNHVnNiZFY2WjZ4STNLQXNSQndCWFVSeHVuRl9PTDdILUI0aFVQdVA4cTdPRmxHTEZqVG9FN09jTWF5b1g3MlFFRGNNczZvR1dwVHlLT2psOTBfdFVTUVpFSnEyOE9PaGlkdDNLWXM0UnN5U2YwdDFPVGpWVE1DbFN3c9IBrAFBVV95cUxOb3l5UHRFaGJNRVRYbGZ4YnU3NzE1TV9nZWplZlJKN3hXemtMUjdZWVBzY1IwYTczMTA4MzFsX1l2N1NaTng3YnppQUhadkFtNEJGQ2s2Z1BhRmgxZnRRbnpGRVZBUDYzZXFrVmFZWHN5enRlaHRIdER4WnQ4LW41b0RVVnNRdUQ4b2FldS1CaFpsMHBGZ2FxS18tVnVlQV9JTWN4NFBGU1lMT0s2?oc=5"
+    }
+   ],
    "possivel": true,
    "triagem": 7,
    "temas": []
@@ -357,7 +467,12 @@
    "url": "https://eshoje.com.br/economia/2026/11/governo-lula-gas-do-povo/",
    "data": "2026-11-09T15:22:21Z",
    "coletado_em": "2026-11-09T16:17:14Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "A Gazeta",
+     "url": "https://www.agazeta.com.br/brasil/governo-lula-prorroga-vigencia-do-gas-do-povo-ate-1126"
+    }
+   ],
    "possivel": true,
    "triagem": 7,
    "temas": []
