@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-09",
- "gerado_em": "2026-11-09T09:17:18Z",
+ "gerado_em": "2026-11-09T10:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -25,8 +25,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 17,
-   "aceitos": 3,
+   "lidos": 18,
+   "aceitos": 2,
    "possiveis": 3
   },
   {
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 2,
+   "lidos": 2,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 13,
+   "lidos": 14,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 34,
+   "lidos": 27,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 1,
+   "lidos": 5,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
@@ -137,8 +137,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 13,
-   "aceitos": 1,
+   "lidos": 15,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
@@ -155,7 +155,7 @@
    "ok": true,
    "lidos": 24,
    "aceitos": 2,
-   "possiveis": 5
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -227,7 +227,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Sim Notícias",
@@ -240,17 +240,44 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 208,
-  "possivel": 19,
-  "excluir": 32,
-  "veiculo_outra_praca": 7,
-  "outro_estado": 11,
-  "veiculo_excluido": 5,
-  "sem_contexto_com_tema": 7,
-  "sigla_sem_ancora": 7,
+  "sem_contexto": 205,
+  "possivel": 20,
+  "excluir": 31,
+  "sem_contexto_com_tema": 8,
+  "veiculo_outra_praca": 6,
+  "caixa_alta": 1,
+  "outro_estado": 12,
+  "veiculo_excluido": 7,
+  "sigla_sem_ancora": 8,
   "exterior_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "4e03375b0673",
+   "titulo": "Karla Coser: da herança política à própria trajetória",
+   "veiculo": "Sim Notícias",
+   "url": "https://simnoticias.com.br/politica/karla-coser-da-heranca-politica-a-propria-trajetoria/",
+   "data": "2026-11-09T10:00:01Z",
+   "coletado_em": "2026-11-09T10:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "7506b7b93e26",
+   "titulo": "Detran altera regras e vai bloquear CNH de motoristas com pendências no CPF em 2026",
+   "veiculo": "Portal Tempo Novo",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUGtoTXpWc1JTY3ZsQnhVa1RZYUphSzZ2NmwwNk83R3BBWktURzNKZ0VUTUJLcXZ1LUpEYThqMHFpemptVGtKQnZmWkR4ZmlNVkhoXy1iVFpRamYzeEhfdDZzVzdMQWtXVGNMR0pISXBQc0FDTm5PVTRiV0dqNXROa0VyTnJxVV9pei02blNyRUhvTTZfaUxaVjl6QUlsNmJ4eXhfblRJQWozRkNOdlFQNQ?oc=5",
+   "data": "2026-11-09T09:03:00Z",
+   "coletado_em": "2026-11-09T10:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": []
+  },
   {
    "id": "4ef3cbdcff2c",
    "titulo": "O desafio de formar uma boa equipe de governo",
