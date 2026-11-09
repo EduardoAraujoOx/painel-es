@@ -1,16 +1,22 @@
 {
- "ref": "2026-11-06",
- "gerado_em": "2026-11-06T07:00:11Z",
+ "ref": "2026-11-09",
+ "gerado_em": "2026-11-09T07:59:40Z",
  "desde": "2026-10-04",
  "primeiro_levantamento": "2026-11-05",
  "baseline": false,
  "contagem": {
-  "decreto": 7,
+  "decreto": 12,
   "transicao": 1,
   "fiscal": 0,
   "lei": 6
  },
- "novos": [],
+ "novos": [
+  "2056558",
+  "2056571",
+  "2056581",
+  "2056588",
+  "2056658"
+ ],
  "edicoes_lidas": [
   11522,
   11528,
@@ -38,7 +44,8 @@
   11600,
   11603,
   11606,
-  11613
+  11613,
+  11614
  ],
  "ignoradas": [
   "2040862",
@@ -52,6 +59,76 @@
   "2052823"
  ],
  "itens": [
+  {
+   "id": "2056658",
+   "edicao": 11614,
+   "data": "2026-11-09",
+   "tipo": "decreto",
+   "temas": [
+    "outro"
+   ],
+   "titulo": "DECRETO Nº 6525-R - Alteração da denominação SECONT",
+   "orgao": "Governadoria do Estado",
+   "ementa": "Dispõe sobre a alteração da denominação da Secretaria de Estado de Controle e Transparência para Controladoria-Geral do Estado do Espírito Santo e sobre a adequação das denominações de suas unidades organizacionais.",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2056658/11614",
+   "visto_em": "2026-11-09T07:59:40Z"
+  },
+  {
+   "id": "2056588",
+   "edicao": 11614,
+   "data": "2026-11-09",
+   "tipo": "decreto",
+   "temas": [
+    "outro"
+   ],
+   "titulo": "DECRETO Nº 6524 -R_ALTERADOR_CICC_El NINO - REVISADO",
+   "orgao": "Governadoria do Estado",
+   "ementa": "Altera o Decreto nº 6463-R, de 8 de julho de 2026, que institui o Centro Integrado de Comando e Controle para o Enfrentamento dos Impactos do Fenômeno El Niño - CICC-El Niño 2026/2027, e dá outras providências.",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2056588/11614",
+   "visto_em": "2026-11-09T07:59:40Z"
+  },
+  {
+   "id": "2056581",
+   "edicao": 11614,
+   "data": "2026-11-09",
+   "tipo": "decreto",
+   "temas": [
+    "outro"
+   ],
+   "titulo": "DECRETO Nº 6523-R- Criação da Quarta Companhia",
+   "orgao": "Governadoria do Estado",
+   "ementa": "Cria a Quarta Companhia (4ª Cia), com sede no município de Sooretama.",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2056581/11614",
+   "visto_em": "2026-11-09T07:59:40Z"
+  },
+  {
+   "id": "2056571",
+   "edicao": 11614,
+   "data": "2026-11-09",
+   "tipo": "decreto",
+   "temas": [
+    "outro"
+   ],
+   "titulo": "DECRETO Nº 6522-R - Licitação - mulheres vítimas de violência doméstica.docx s.marcações",
+   "orgao": "Governadoria do Estado",
+   "ementa": "Regulamenta o disposto no inciso I do § 9º do art. 25 e no inciso III do caput do art. 60, da Lei Federal nº 14.133, de 1º de abril de 2021.",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2056571/11614",
+   "visto_em": "2026-11-09T07:59:40Z"
+  },
+  {
+   "id": "2056558",
+   "edicao": 11614,
+   "data": "2026-11-09",
+   "tipo": "decreto",
+   "temas": [
+    "outro"
+   ],
+   "titulo": "DECRETO Nº 6521-R - CAMARA TECNICA",
+   "orgao": "Governadoria do Estado",
+   "ementa": "Institui a Câmara Técnica responsável pelo monitoramento e acompanhamento da execução, no Estado do Espírito Santo, das ações do Pacto Estadual pelo Enfrentamento às Violências contra as Mulheres e Prevenção aos Feminicídios, e dá outras providências.",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2056558/11614",
+   "visto_em": "2026-11-09T07:59:40Z"
+  },
   {
    "id": "2054957",
    "edicao": 11606,

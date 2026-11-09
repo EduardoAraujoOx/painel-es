@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-09",
- "gerado_em": "2026-11-09T01:17:13Z",
+ "gerado_em": "2026-11-09T07:59:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 17,
+   "lidos": 19,
    "aceitos": 4,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -57,7 +57,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 15,
+   "lidos": 14,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 37,
+   "lidos": 39,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 3,
+   "lidos": 5,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 1,
+   "lidos": 0,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 14,
-   "aceitos": 1,
+   "lidos": 12,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 11,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -153,8 +153,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
-   "aceitos": 3,
+   "lidos": 23,
+   "aceitos": 2,
    "possiveis": 5
   },
   {
@@ -178,7 +178,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -240,17 +240,43 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 212,
-  "possivel": 14,
-  "excluir": 36,
-  "veiculo_outra_praca": 5,
-  "outro_estado": 12,
-  "veiculo_excluido": 6,
-  "sem_contexto_com_tema": 6,
+  "sem_contexto": 211,
+  "possivel": 16,
+  "excluir": 33,
+  "veiculo_outra_praca": 6,
+  "outro_estado": 11,
+  "veiculo_excluido": 5,
+  "sem_contexto_com_tema": 7,
   "sigla_sem_ancora": 8,
-  "exterior_sem_ancora": 5
+  "exterior_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "36e1f3dd8e74",
+   "titulo": "Decreto do ES exige 8% das vagas para mulheres vítimas de violência em serviços contínuos com 25 ou mais colaboradores",
+   "veiculo": "atlaspublico.com.br",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPaUxkbnVod2gzRXJYek40YUtpY1hsbkdDTS1BaEkzMml1TnhaeTFJSlZNY1ZsTklYb3QxOFdnMWdUaXFOQVpEM3ozbHRTVk9sbE5HVWQ0Ni1FVW5ZNDBpeWc3N1ROem8xVUExekhpcm96UndrQzlmOHBEMGNOXzFFeVJmMDZRN3dNZWN0S1Fya0lRMkp5NWgxeEcwMlM1eW1tYURfUDdwWUQzc2E4V2F4alFDcw?oc=5",
+   "data": "2026-11-09T05:01:46Z",
+   "coletado_em": "2026-11-09T07:59:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": []
+  },
+  {
+   "id": "0bcca9d0372c",
+   "titulo": "Amigas mantêm a tradição e homenageiam Paula Pazolini em almoço festivo",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/social/amigas-mantem-a-tradicao-e-homenageiam-paula-pazolini-em-almoco-festivo/",
+   "data": "2026-11-09T03:02:00Z",
+   "coletado_em": "2026-11-09T07:59:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "456a58f22596",
    "titulo": "Lula promete responsabilidade fiscal e medidas para reduzir juros no Brasil",

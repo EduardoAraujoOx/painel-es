@@ -1,17 +1,19 @@
 {
- "ref": "2026-11-06",
- "gerado_em": "2026-11-06T06:59:57Z",
+ "ref": "2026-11-09",
+ "gerado_em": "2026-11-09T07:59:26Z",
  "desde": "2026-10-04",
  "primeiro_levantamento": "2026-10-31",
  "baseline": false,
  "contagem": {
   "paralisacao": 2,
-  "suspensao": 1,
+  "suspensao": 2,
   "rescisao": 16,
   "cancelamento": 5,
   "anulacao": 1
  },
- "novos": [],
+ "novos": [
+  "2056926"
+ ],
  "edicoes_lidas": [
   11522,
   11528,
@@ -39,9 +41,22 @@
   11600,
   11603,
   11606,
-  11613
+  11613,
+  11614
  ],
  "itens": [
+  {
+   "id": "2056926",
+   "edicao": 11614,
+   "data": "2026-11-09",
+   "tipo": "suspensao",
+   "alvo": "licitação",
+   "titulo": "SECOM Aviso de Suspensão de licitação",
+   "orgao": "Governadoria do Estado",
+   "setor": "Portaria",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2056926/11614",
+   "visto_em": "2026-11-09T07:59:26Z"
+  },
   {
    "id": "2053425",
    "edicao": 11603,
