@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-09",
- "gerado_em": "2026-11-09T21:17:13Z",
+ "gerado_em": "2026-11-09T22:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,7 +18,7 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 5,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 29,
-   "aceitos": 11,
+   "aceitos": 12,
    "possiveis": 6
   },
   {
@@ -34,7 +34,7 @@
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 9,
-   "aceitos": 7,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
@@ -42,14 +42,14 @@
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
    "lidos": 9,
-   "aceitos": 7,
-   "possiveis": 1
+   "aceitos": 8,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -57,7 +57,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 4,
    "possiveis": 0
   },
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 8,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 29,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -139,13 +139,13 @@
    "ok": true,
    "lidos": 24,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 14,
+   "lidos": 15,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 18,
+   "lidos": 19,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 56,
+   "lidos": 55,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 4
   },
   {
@@ -178,8 +178,8 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
-   "possiveis": 2
+   "aceitos": 1,
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -187,7 +187,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 2,
-   "possiveis": 5
+   "possiveis": 4
   },
   {
    "fonte": "ES Hoje",
@@ -195,7 +195,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -240,19 +240,91 @@
  ],
  "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto": 255,
+  "sem_contexto": 263,
   "oficial_sem_tema": 3,
   "sem_contexto_com_tema": 3,
-  "possivel": 33,
+  "possivel": 29,
   "oficial_divulgacao": 1,
   "veiculo_excluido": 24,
-  "veiculo_outra_praca": 4,
   "caixa_alta": 1,
-  "excluir": 19,
+  "excluir": 20,
   "outro_estado": 20,
-  "sigla_sem_ancora": 4
+  "veiculo_outra_praca": 2,
+  "sigla_sem_ancora": 6,
+  "exterior_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "0adb8366484c",
+   "titulo": "Canal de Camburi: Vitória muda regras de funcionamento de restaurantes e adia licitação",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/cotidiano/canal-de-camburi-vitoria-muda-regras-de-funcionamento-de-restaurantes-e-adia-licitacao/",
+   "data": "2026-11-09T21:50:14Z",
+   "coletado_em": "2026-11-09T22:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "3b23fc13f637",
+   "titulo": "Justiça nega cobrança de imposto de prefeitura a trabalhadores do Porto de Vitória",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/economia/justica-nega-cobranca-de-imposto-de-prefeitura-a-trabalhadores-do-porto-de-vitoria-1126",
+   "data": "2026-11-09T21:49:11Z",
+   "coletado_em": "2026-11-09T22:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "84f0027889b3",
+   "titulo": "Motorista consegue parcelar IPVA, multas e CNH com essa nova ajuda do Detran",
+   "veiculo": "Serra Noticiário",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVzRmWnNnT1hBQzBfbEtwS0w4ei1kWGZmSWFka0ZXeGdVXzN6SmlEdWFsTTlvVndPRGthc2xIMjRQSTdfN1BaSHhuNnZySms5NHdyTXB3S0lHY0hscmNGYW0xb18tYWJaRGhmNTJvS0RtTmdsbHYzcVhzWGhZOXZOb1NFOHlYS2hZekRpVzFKaklINWxYNzQ5SE9CeEp5cG5vS3gydkZiaVF3RzA?oc=5",
+   "data": "2026-11-09T21:45:00Z",
+   "coletado_em": "2026-11-09T22:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "760a2f3e9c36",
+   "titulo": "Pazolini reúne transição com entidade privada que vai ajudar a planejar o novo governo",
+   "veiculo": "Portal Tempo Novo",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNaGZuNkZ1eEpwU05hdndLREpPbVZfOWcwdGFtZnhWS0JmLUFGQU00RGt6NF9SenlpU2h5Y2VsNDV2NWhiNVZDeEdwc2tnQ2owWnFLSy1SbzFXcVJSLUdQQXdjdXhuQVI1Q1cyY29hTGxuM25uaVRnQ1lVZlRuQmt5bQ?oc=5",
+   "data": "2026-11-09T21:38:00Z",
+   "coletado_em": "2026-11-09T22:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "9b0c760bb4e2",
+   "titulo": "Servidores de Cariacica terão reajuste de 12,5% no vale-alimentação",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/servidores-de-cariacica-terao-reajuste-de-125-no-vale-alimentacao/",
+   "data": "2026-11-09T21:29:45Z",
+   "coletado_em": "2026-11-09T22:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "dc7b09d06f21",
    "titulo": "Victor Coelho quer atuar com turismo, saúde e seguir o legado do irmão na Assembleia do ES",
@@ -264,6 +336,20 @@
    "possivel": true,
    "triagem": 7,
    "temas": []
+  },
+  {
+   "id": "9dd0604deb71",
+   "titulo": "Sefaz suspende credenciamento de transportadora de Arapiraca por irregularidades",
+   "veiculo": "7Segundos",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQTUFUdGh6V0RReVJCRk9Ub3YtQkRuN2dCZzItMnFlX0pEajJqUEtsUlgwMERKYUZJMXlmZk9sS1YwUXdNYWU4Mk5zZFVBQ24xNGFQeExDWUZra0cwZkx3UFJ2a3lMYUZnRkd4ck9PZHNIVlZJSjQ0VGp3ckMwMVljY0J6dWZVUm45ZERVM0xQZEVwN2ZvdVVqU2ZUbnlFOC1DYk0yUHJoTlA2eWZxd09aVWhMR1I1TWtGUWljdjNidFVyeFVQVkRsaWFjTk5MMDM2WkJLUEF3a1JpRkdFbURN?oc=5",
+   "data": "2026-11-09T21:06:00Z",
+   "coletado_em": "2026-11-09T22:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "financas"
+   ]
   },
   {
    "id": "21dca2833bf7",
