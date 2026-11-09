@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-09",
- "gerado_em": "2026-11-09T11:17:15Z",
+ "gerado_em": "2026-11-09T12:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,15 +18,15 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 15,
-   "aceitos": 2,
+   "lidos": 14,
+   "aceitos": 1,
    "possiveis": 3
   },
   {
@@ -41,15 +41,15 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 1,
+   "lidos": 1,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,17 +89,17 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 14,
-   "aceitos": 0,
+   "lidos": 16,
+   "aceitos": 1,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 35,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 4,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 1,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 16,
+   "lidos": 15,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
-   "aceitos": 2,
+   "lidos": 23,
+   "aceitos": 3,
    "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 57,
+   "lidos": 56,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -178,15 +178,15 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
-   "possiveis": 0
+   "aceitos": 1,
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
@@ -238,20 +238,48 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 198,
-  "possivel": 18,
-  "excluir": 34,
-  "sem_contexto_com_tema": 8,
+  "sem_contexto": 203,
+  "possivel": 21,
+  "excluir": 32,
+  "sem_contexto_com_tema": 7,
   "veiculo_outra_praca": 7,
   "caixa_alta": 1,
-  "outro_estado": 15,
-  "veiculo_excluido": 10,
+  "outro_estado": 12,
+  "veiculo_excluido": 8,
   "sigla_sem_ancora": 8,
   "exterior_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "11123f7f6f81",
+   "titulo": "Lula se compromete com responsabilidade fiscal e busca conciliação",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxONUl0YkNmaEx6SC01UHVKa2tKRmdxSF8xaXRWazZnWUFWUi01TkYtNGpySXlTUTlNQm5fU2FQNVFvbWN2eG15bjhsZVloUC1EVXV5NzlFQkdkRzFwd21nUlMwSU5SMDNBRDltcVBKN1hDNkp6NjQ1VlRqQWRuSGR1Zzd4Y1NsT3llbVVya2NScWRZbHEwdzg5VjBNN1pmWDdIU1Z2bkJvZ3p3dUxhVHk2WtIBuAFBVV95cUxQRFU0UTR4WVhuQS1BR0pQT0RiZVNTdDFTczZxVGE2QjNDMVJTUkZzMFh2dW1LbXBxaEJOLVlZbEdMdVJhSFp4bTd3dlJxQ1Q0X3ljMWVfV1phR1pSSERqa3FadXdtaXV2bllfZ1MxWWlFUjJKQXJpS0QwdGZxb1ctbFg1ZklYRFIyMkREaHAxWmtCankxVmZQYm93RGdGRjk0RW8yMGRuTHNmbHo5WkxiU1hQekFKdWlr?oc=5",
+   "data": "2026-11-09T12:00:30Z",
+   "coletado_em": "2026-11-09T12:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "a5954202b76e",
+   "titulo": "Piso da enfermagem: portaria prevê R$ 7,91 milhões em repasses ao ES",
+   "veiculo": "Vitória News",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNEdZdEZEbVJHbUdLb2h4eS1jRDFCLXNKeTQ4bDZ3U2R3UE5nYW10OFlacGRETHZ1TlhmS0FMY2U1RlFyOFE3WmZsTGJPc3R4OWJPdUhRWmdfRElxdVpSU21QMGZQUnNKN3JaMlRUZWJINTRqUEVkOUxZZkVqaGRPLVBOU1lRLTZ0d2pyaGpEN3NXWGQ5Y0FZ?oc=5",
+   "data": "2026-11-09T11:31:16Z",
+   "coletado_em": "2026-11-09T12:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "4e03375b0673",
    "titulo": "Karla Coser: da herança política à própria trajetória",
@@ -272,9 +300,14 @@
    "veiculo": "Portal Tempo Novo",
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUGtoTXpWc1JTY3ZsQnhVa1RZYUphSzZ2NmwwNk83R3BBWktURzNKZ0VUTUJLcXZ1LUpEYThqMHFpemptVGtKQnZmWkR4ZmlNVkhoXy1iVFpRamYzeEhfdDZzVzdMQWtXVGNMR0pISXBQc0FDTm5PVTRiV0dqNXROa0VyTnJxVV9pei02blNyRUhvTTZfaUxaVjl6QUlsNmJ4eXhfblRJQWozRkNOdlFQNQ?oc=5",
    "data": "2026-11-09T09:03:00Z",
-   "coletado_em": "2026-11-09T10:17:15Z",
-   "outras": [],
-   "possivel": true,
+   "coletado_em": "2026-11-09T12:17:13Z",
+   "outras": [
+    {
+     "veiculo": "Folha do ES",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQa19ENTNnUFByY0RLa0ZDemxvOHJlRTRxZUpqdE5iLUpGVUw4dmhHSVhULXNxeDd6WHRDUG8xbkFiRkRDN05idWk4M0pLeExxdDFXMElIQ0NreF92cm1qXzlNUzcxWmZfMUpGRW03RlhydFljX0M4RDU5U3lDN29SZFBHeXlSdzU1azBILW5jNllSVURwZ0gxZFFzQ2JuVXF5Z210RTA0ZTVpUQ?oc=5"
+    }
+   ],
+   "possivel": false,
    "triagem": 7,
    "temas": []
   },
