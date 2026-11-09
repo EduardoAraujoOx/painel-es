@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-09",
- "gerado_em": "2026-11-09T22:17:14Z",
+ "gerado_em": "2026-11-09T23:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,9 +17,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 6,
-   "possiveis": 0
+   "lidos": 12,
+   "aceitos": 5,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -27,14 +27,14 @@
    "ok": true,
    "lidos": 29,
    "aceitos": 12,
-   "possiveis": 6
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 9,
-   "aceitos": 5,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 4,
    "possiveis": 0
   },
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 10,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -99,7 +99,7 @@
    "ok": true,
    "lidos": 46,
    "aceitos": 2,
-   "possiveis": 7
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 14,
+   "lidos": 16,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 15,
+   "lidos": 16,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 19,
+   "lidos": 20,
    "aceitos": 1,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -178,8 +178,8 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
-   "possiveis": 1
+   "aceitos": 0,
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -194,7 +194,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -238,22 +238,34 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 263,
+  "sem_contexto": 285,
+  "possivel": 27,
   "oficial_sem_tema": 3,
   "sem_contexto_com_tema": 3,
-  "possivel": 29,
   "oficial_divulgacao": 1,
   "veiculo_excluido": 24,
+  "excluir": 16,
   "caixa_alta": 1,
-  "excluir": 20,
   "outro_estado": 20,
   "veiculo_outra_praca": 2,
-  "sigla_sem_ancora": 6,
+  "sigla_sem_ancora": 7,
   "exterior_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "692f2732bab6",
+   "titulo": "Demandas do Agronegócio Capixaba para os Novos Governos",
+   "veiculo": "Diário do Estado",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNWFNzbVBsU3RIa2ZxN29SWnZhRWRKYlJieVFMZnRiVXFKa05MSXNrVXRydXFqY0dPcTV6ZG1WVHNVM2ZEaG80elBEQ0ViTlMzNWhKN185QWZyUG4yMWZHdFFFZ0FxWHZSRGtPQlFUby1wYUNDQ3pFM09rS2w0V0t3RkF0MWItTVZWazRMX3h5Qm5hQQ?oc=5",
+   "data": "2026-11-09T22:31:04Z",
+   "coletado_em": "2026-11-09T23:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": []
+  },
   {
    "id": "0adb8366484c",
    "titulo": "Canal de Camburi: Vitória muda regras de funcionamento de restaurantes e adia licitação",
@@ -501,6 +513,18 @@
    "temas": [
     "pessoal"
    ]
+  },
+  {
+   "id": "6644400d9c7a",
+   "titulo": "Detran divulga lista de motoristas que podem ficar até 2 anos sem dirigir; veja os nomes",
+   "veiculo": "GMC Online",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNbFpTRHNBUmZlZUV3VUxoMWtqYzBxcldWeWlIM0s4eTVtVXBDbUVzZDNrU0hSYk5VbTJ4UlBWa2tqUVF3RVJZRmNRQWhFV0VVdmJ5anhKMy1wUFJlZHN2Zy0zajFldUpXTERINWFkU1hCSDgzNTQ5bzA1M3B4bG9KdDg3cjlENUc4aEZ1OWRValJ0OXFzRlR2ZkxJSVlyTmtrYTdwRGhBdExRT3NHenNHZVctbUJTbkVtVlVtWWFjQU42TU8wUXJj0gHMAUFVX3lxTE9qSENnYWNHeFF1Wk9MdUFaMjl5Rk53OGFnOTRkV0tLSkpCZHNZdk9pUFgzQXliY2VfNXVoWU9KNnJtYV9pSDNXY1k0eVdBcC1WaGNaakxTREdoMGZ0YnUtX2hmR2p4Ml9BbXdnMTc3aTZnRGVlRU9way1HVUZOb1ZTdFRUVEhWdTVaUHJ0V1Z4WUNMY1Blcmk2Y0s4VzBGeHFxcUpRMnpEdGVJUEY2bFFDajBGRXZKS2tKT0U4WEV3aEREbG5JZm1zYzRsMQ?oc=5",
+   "data": "2026-11-09T19:27:00Z",
+   "coletado_em": "2026-11-09T23:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": []
   },
   {
    "id": "a7a6c4105142",
