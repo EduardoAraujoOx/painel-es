@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-09",
- "gerado_em": "2026-11-09T10:17:15Z",
+ "gerado_em": "2026-11-09T11:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,7 +25,7 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 18,
+   "lidos": 15,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 28,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 15,
+   "lidos": 16,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 28,
    "aceitos": 2,
    "possiveis": 6
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 58,
+   "lidos": 57,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -178,8 +178,8 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
-   "possiveis": 2
+   "aceitos": 0,
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -240,14 +240,14 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 205,
-  "possivel": 20,
-  "excluir": 31,
+  "sem_contexto": 198,
+  "possivel": 18,
+  "excluir": 34,
   "sem_contexto_com_tema": 8,
-  "veiculo_outra_praca": 6,
+  "veiculo_outra_praca": 7,
   "caixa_alta": 1,
-  "outro_estado": 12,
-  "veiculo_excluido": 7,
+  "outro_estado": 15,
+  "veiculo_excluido": 10,
   "sigla_sem_ancora": 8,
   "exterior_sem_ancora": 4
  },
@@ -341,6 +341,18 @@
    "temas": [
     "financas"
    ]
+  },
+  {
+   "id": "ab07bee10620",
+   "titulo": "Empresa suspeita de “ciberataques” em sistemas do Detran quer fazer acordo",
+   "veiculo": "FOLHAMAX",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQQ3NHd1Ziajk0UTJvZDRvNExUcWx3R3pZLWFjZ1UwQUZfUjRmbmZtWVRRM2oxV3VjRFU4dmdZVkphZEo4NkRzNDN5NnpMYVltaTR5QWc5cFgyU3NZeTNuenhHVXQxOG1SRTVhSUlKSWpxZnlFTE4xRzVVeEdPRWt3bDJ1TDMzVXE0MUVJc21mbTNab1VnVjg2QmVCN3pmX1duNElHQklhRXEwd1hfOVp0ajJ6Tm8zWmc?oc=5",
+   "data": "2026-11-08T22:24:31Z",
+   "coletado_em": "2026-11-09T11:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": []
   },
   {
    "id": "bd1ec13202d8",
@@ -462,6 +474,20 @@
    "possivel": true,
    "triagem": 7,
    "temas": []
+  },
+  {
+   "id": "e53b34bd0b45",
+   "titulo": "MP apura contratos de R$ 143 milhões envolvendo Detran e Seduc em Rondônia",
+   "veiculo": "Rondonoticias",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxON0hqd29leGhOT3dGZUxTUTR6Z3k4c2VQOVNSdERXblZlSzFuWkhkT1JSZmtmbC1yZndsd0VhLVlJYUJnRUNnanNXMzRZZFJpWFhQTUVMb0tyM0tmR0hTZEpKYk1ydm1fWHcyMEgxdndBMGxtZnNBOE9lOGZPR0NsNUpYamZna0J1U095SjVBcnNHSGxXX0RkQlpEeWN1X2RycjYycHRpaUI1MWlpTElIUVdLemIxM0FTZno0RGVnMzZRbEgzcm5YQlp6Yzg?oc=5",
+   "data": "2026-11-08T15:10:29Z",
+   "coletado_em": "2026-11-09T11:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "contratos"
+   ]
   },
   {
    "id": "e69ee67da9ba",
