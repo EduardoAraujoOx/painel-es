@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-09",
- "gerado_em": "2026-11-09T14:17:15Z",
+ "gerado_em": "2026-11-09T15:18:37Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,16 +25,16 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 14,
-   "aceitos": 2,
+   "lidos": 21,
+   "aceitos": 5,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 1,
+   "lidos": 4,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -73,8 +73,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 1,
-   "aceitos": 0,
+   "lidos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 18,
+   "lidos": 19,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 37,
+   "lidos": 39,
    "aceitos": 1,
-   "possiveis": 5
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 19,
-   "aceitos": 3,
-   "possiveis": 4
+   "lidos": 18,
+   "aceitos": 2,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -178,7 +178,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -194,7 +194,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 2
   },
   {
@@ -238,20 +238,102 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 5,
  "descartes_na_coleta": {
-  "sem_contexto": 207,
-  "excluir": 32,
-  "possivel": 19,
-  "veiculo_excluido": 13,
-  "sem_contexto_com_tema": 8,
-  "veiculo_outra_praca": 5,
+  "sem_contexto": 218,
+  "excluir": 31,
+  "possivel": 20,
+  "sem_contexto_com_tema": 6,
   "outro_estado": 17,
+  "veiculo_outra_praca": 5,
   "caixa_alta": 1,
-  "sigla_sem_ancora": 6,
-  "exterior_sem_ancora": 3
+  "veiculo_excluido": 13,
+  "sigla_sem_ancora": 5,
+  "exterior_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "133a8b3b9cfd",
+   "titulo": "Servidor público morre após acidente entre carros na Serra; arma foi encontrada em veículo",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/seguranca/2026/11/servidor-publico-morre-serra/",
+   "data": "2026-11-09T15:12:09Z",
+   "coletado_em": "2026-11-09T15:18:37Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "66478f0fa515",
+   "titulo": "Quem é bispa Eliane Leal, vice-governadora eleita do ES? Ela mesma responde",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/leticia-goncalves/quem-e-bispa-eliane-leal-vice-governadora-eleita-do-es-ela-mesma-responde-1126",
+   "data": "2026-11-09T15:10:00Z",
+   "coletado_em": "2026-11-09T15:18:37Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": []
+  },
+  {
+   "id": "f9339815c01a",
+   "titulo": "Vitória terá tributo gratuito a Marília Mendonça nesta sexta",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/entretenimento/2026/11/tributo-marilia-mendonca/",
+   "data": "2026-11-09T15:07:26Z",
+   "coletado_em": "2026-11-09T15:18:37Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "e7f6b27c3186",
+   "titulo": "Novo Acordo do Rio Doce - Governo do ES contempla 1,2 bilhão de investimentos nas cidades impactadas pelo desastre de Mariana",
+   "veiculo": "Site Aracruz",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQOUdSTmNUZ3NkaXA1eGF6MWt3b3A3VTdrTXc0bE5rWUVkRU5CRHA5TXBaa3FWRElscEdKc0FHSTRzb0VjbmVTQ0ZFV3k0ak9pWjg1b2tzUHV2Zlg5bnJpbVptdWUxZi10eWFvM1J5Z2NFQnlSVmNiMGtJQm0xcVl2Y0ZyTzdjSTRuMFY2d0JfN011SlZoa3dvSVNOcy1IblRhUU1PTnF4LW9BVnZYemJPSWVmZTQ1TGxMdzhGTjRyUjhPZUROck5VblhsTTJKTnhfQUFGeUJPQkgycU9YaEdxbFNGazRsekpSOHBlTWUxbU5VZGM?oc=5",
+   "data": "2026-11-09T15:04:54Z",
+   "coletado_em": "2026-11-09T15:18:37Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "1a2dca232beb",
+   "titulo": "Eleitos no Espírito Santo serão diplomados em 18 de dezembro; posse do governador terá nova data",
+   "veiculo": "ES Fala",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQODBjLU9OMzVuNEQtUEVzTWhyUV9tcmhaM1l2YmJlbWhTZV9aUThoU0tINGpESjY0RG95NVFlcHZEQzFfbXFyb2tnRWxJbDNTdUQ4UTM2R1FFRkpBbS1lMU5ualpYUUZwcVJWQWdCWWVBN3V4cU9Hd0VsMGIxcnJyRU1pMXRaU1RTX25wdk8tNDlQaHZWVVd3SU5OVWFheklYY290dENoTzIzQms?oc=5",
+   "data": "2026-11-09T14:30:00Z",
+   "coletado_em": "2026-11-09T15:18:37Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "368678de4823",
+   "titulo": "Governo do Estado divulga os 40 finalistas do Prêmio Cafés Especiais do Espírito Santo 2026",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOSkVJRjVaSXJ3aVpJbF9iOEI1TTFLa3ZMTlllSy1SaF8zd01aU0JVMWV1ZjBBZUVLZmM5MkZyRXVpMHNKMFZEX0gyZnZoYzYyTmFkTHpyNm1jQUg4M010Z0lfNEZONjZ4RzdCcE5fX1l6eHVlM2xrbTR2OWVRREI5dVBhRUpkeGhtR0ZYRUZzTnZqYnpjUGotQ1l5RE8wVENUclEzSTIzZlIwZUMzR3hXMlNrRQ?oc=5",
+   "data": "2026-11-09T14:26:00Z",
+   "coletado_em": "2026-11-09T15:18:37Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "1815aea90ffc",
    "titulo": "Qual será o papel da vice de Pazolini?",
@@ -278,6 +360,20 @@
    "triagem": 7,
    "temas": [
     "financas"
+   ]
+  },
+  {
+   "id": "9fdebdc973dc",
+   "titulo": "Filipinas suspendem carne suína importada por 60 dias; Brasil é o maior fornecedor",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNczhkLVlQeklXSkpsTmNqZHk1WGtGdENqcEdmNXhWNUhsNXl2bFlwa0RUUktSS1poSkVSeWVSSC1GY1BRLWRwdm90cEM2dXNqV1JLOGtyeXVUNmk0b2JhUWRoTzA2cWZpejQyamQzZS1tSTJybEM3SGNpdE1yRmNPLTZGWDdRaDdrMTJzTlRlWDhaNWxPaUwwTzBZMlJycWlUNjE5UlUtZTJQYk5WWkZzQmMwdllWYzJkSkgtTHdSRkJwMkJMSUU1MXkxc9IB0wFBVV95cUxQM3VXZkgyQ2pDel8zSlZjeVhwUW9HR3drX0xqZWFNcXNZS05kSnRqUlRDWGh2djFDdXVfZzhob2hrLXltVjVxVVR0ay1oeTFEbDNQQzB3ZWM5d21WbldoQUZXVXdNWk0tWmxkZFFZYUFSRGdNbU1ZYllQTXFUODFtLWF1NmdteWR3OG5iNkd3SmxTcm9aY0pJRzFCRjZnUnlHRGp2TVFwelozWDlWSnBqUjZkRUlGREQ3aDdCbWF2YUJ1Rk1RSzBoeGtxYXFTX2FiLU9n?oc=5",
+   "data": "2026-11-09T13:47:34Z",
+   "coletado_em": "2026-11-09T15:18:37Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "restricao"
    ]
   },
   {
