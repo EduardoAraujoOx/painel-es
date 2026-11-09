@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-09",
- "gerado_em": "2026-11-09T13:17:17Z",
+ "gerado_em": "2026-11-09T14:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -19,15 +19,15 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 14,
-   "aceitos": 1,
-   "possiveis": 3
+   "aceitos": 2,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 1,
-   "aceitos": 0,
+   "lidos": 2,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,8 +97,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 41,
-   "aceitos": 0,
+   "lidos": 37,
+   "aceitos": 1,
    "possiveis": 5
   },
   {
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 20,
+   "lidos": 21,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 10,
+   "lidos": 11,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 21,
+   "lidos": 19,
    "aceitos": 3,
-   "possiveis": 5
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -194,7 +194,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 0,
+   "aceitos": 2,
    "possiveis": 2
   },
   {
@@ -238,20 +238,77 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto": 208,
-  "possivel": 22,
-  "excluir": 34,
-  "sem_contexto_com_tema": 7,
-  "veiculo_outra_praca": 6,
+  "sem_contexto": 207,
+  "excluir": 32,
+  "possivel": 19,
+  "veiculo_excluido": 13,
+  "sem_contexto_com_tema": 8,
+  "veiculo_outra_praca": 5,
   "outro_estado": 17,
   "caixa_alta": 1,
-  "veiculo_excluido": 11,
-  "sigla_sem_ancora": 7,
-  "exterior_sem_ancora": 4
+  "sigla_sem_ancora": 6,
+  "exterior_sem_ancora": 3
  },
  "itens": [
+  {
+   "id": "1815aea90ffc",
+   "titulo": "Qual será o papel da vice de Pazolini?",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/bastidores-da-politica/2026/11/vice-de-pazolini/",
+   "data": "2026-11-09T14:01:03Z",
+   "coletado_em": "2026-11-09T14:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "934ac1dc9a0a",
+   "titulo": "Sefaz determina que recursos de investimentos do Estado retornem diretamente à Conta Única",
+   "veiculo": "Olhar Direto",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQX19YUDVEX1ZQdHBPQkMyN3hWMC0ybWxXZ0xDSGFsSGVjWDBIazkxVl9ORDdhcDdtZjBtV2w0SkxWdkhiS0poZFhIYTZoRVNSMUx4U0NxakxsUzM1QmJ0ZU90cHVJSno3RVV2UGZqa0czcW5qRXdGb2xtdWlON3F1RUEzRkliSEtLZV9GcWJpaFN6cFctX19SOGZ1MDdRVEpoY1Q0aklNTWFFQmo3ei1qcXM5ODBSdW9nczZoYVlHT3lZTXhLczVLenR3?oc=5",
+   "data": "2026-11-09T13:50:00Z",
+   "coletado_em": "2026-11-09T14:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "c806c006168d",
+   "titulo": "Advertência, suspensão e justa causa: os limites do poder de punir",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/colunistas/joao-batista-dallapiccola-sampaio/2026/11/advertencia-suspensao-e-justa-causa-os-limites-do-poder-de-punir/",
+   "data": "2026-11-09T13:45:28Z",
+   "coletado_em": "2026-11-09T14:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "d5cdebeedd0f",
+   "titulo": "Secom suspende licitação de R$ 85 milhões para contratação de serviços de publicidade",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/secom-suspende-licitacao/",
+   "data": "2026-11-09T13:19:18Z",
+   "coletado_em": "2026-11-09T14:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "restricao",
+    "contratos"
+   ]
+  },
   {
    "id": "e00275ac6029",
    "titulo": "CBN Vitória ao vivo: tire todas suas dúvidas sobre a Reforma Tributária",
@@ -307,6 +364,18 @@
    "temas": [
     "financas"
    ]
+  },
+  {
+   "id": "14e73c98726c",
+   "titulo": "Matrículas na rede estadual do ES para 2027 começam nesta segunda",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOZ2xNcnYyRU04X1VXTWRDNm1SdXRaalFMb2JvQjFyZVpteEI2dTlZRk1WLU9RSEd6aVF5UVJnb19OOEppTmctWWItUnc0dXl3N3BFbDRWc0VvQWR5RnU2MFNRdkhaQjhlYWh3VElWUXdCVEZFeGlGLWt0Z0FlWnExb2pXanFHNkZRSEVDdzYydlo0QzFUU2RpZmV6UGNvS05MdkV2d2x5anMzamVxWlJiOUZIQVluUWPSAbcBQVVfeXFMTmdsTXJ2MkVNOF9VV01kQzZtUnV0WmpRTG9ib0IxcmVabXhCNnU5WUZNVi1PUUhHemlReVFSZ29fTjhKaU5nLVliLVJ3NHV5dzdwRWw0VnNFb0FkeUZ1NjBTUXZIWkI4ZWFod1RJVlF3QlRGRXhpRi1rdGdBZVpxMW9qV2pxRzZGUUhFQ3c2MnZaNEMxVFNkaWZlelBjb0tOTHZFdndseWpzM2plcVpSYjlGSEFZblFj?oc=5",
+   "data": "2026-11-09T11:38:10Z",
+   "coletado_em": "2026-11-09T14:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": []
   },
   {
    "id": "a5954202b76e",
