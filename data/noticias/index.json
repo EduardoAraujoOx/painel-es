@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-09",
- "gerado_em": "2026-11-09T12:17:13Z",
+ "gerado_em": "2026-11-09T13:17:17Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 16,
+   "lidos": 18,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 35,
+   "lidos": 41,
    "aceitos": 0,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -129,15 +129,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 5,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 15,
+   "lidos": 20,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 21,
    "aceitos": 3,
-   "possiveis": 6
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -238,20 +238,62 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 203,
-  "possivel": 21,
-  "excluir": 32,
+  "sem_contexto": 208,
+  "possivel": 22,
+  "excluir": 34,
   "sem_contexto_com_tema": 7,
-  "veiculo_outra_praca": 7,
+  "veiculo_outra_praca": 6,
+  "outro_estado": 17,
   "caixa_alta": 1,
-  "outro_estado": 12,
-  "veiculo_excluido": 8,
-  "sigla_sem_ancora": 8,
+  "veiculo_excluido": 11,
+  "sigla_sem_ancora": 7,
   "exterior_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "e00275ac6029",
+   "titulo": "CBN Vitória ao vivo: tire todas suas dúvidas sobre a Reforma Tributária",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/cotidiano/cbn-vitoria-ao-vivo-tire-todas-suas-duvidas-sobre-a-reforma-tributaria-1126",
+   "data": "2026-11-09T12:43:13Z",
+   "coletado_em": "2026-11-09T13:17:17Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "23ce1d4d0b6c",
+   "titulo": "Abandono de prédios históricos da Sefaz em Campina Grande e João Pessoa confirma o descaso com o patrimônio e com a categoria",
+   "veiculo": "Portal do Litoral PB",
+   "url": "https://news.google.com/rss/articles/CBMi1wNBVV95cUxQdXFFb3JZTXJrVGttaG1lR0k1bGE3MnRzUDJobll4ZmRnd2dGOWhjMGhtemZacmZYaGF3SmU4UHdRTFN3LVBLZ3R5T2ZNS0U1T0szUmZIY2dSUlEzNTVkaDYtbmdSbkt6b0ZtS2swd1drd3RyeUdiREFLRnFvT0s0YUo2d21mcDFQcjFHY19tVF8wQ0NPMXltZTJGT0JNX0FTXzRDQk5QdFUxd3lVNFRwSnktalU1LWpJT3BEaG05ODNhYTZRRjd6dk04NmVtOVkxVWpzSy16SG84TlN4X1RMbTdVUXRHbGlTN2ZsbF9acmNseUpZT2RjYlE4cEtLVFZvLS1IRlJKTk5QM0xINzdBZThqcUJURHdMcVFuMElCTXpuTUUxMGxONDBIaXE5VndNeDlNV3pLTC0tUzFXaGgtYXdKS1dBOXpSQzVMVzF2eTlFck4yQ1RHQl82a3FlQXBhTDRxREFOU3FGTm9peVlvcnVqWk5PTXp3TkNWb3RWbTl3REg3VFRXZlJYQngydGFXWU1ZSUFmaGtPVzE3dFoyRk1oWnFRejI2RnpIbG5iaWZIQTZQRlM3TDgwa0tJSHE0cW10aHJNSGV0SDFQY29fQ3EwYnZOSjQ?oc=5",
+   "data": "2026-11-09T12:33:07Z",
+   "coletado_em": "2026-11-09T13:17:17Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "b0e12c43186c",
+   "titulo": "27 mil vagas para recenseador com salário de até R$ 4.370 em novo concurso do IBGE",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQaUl1RjRPcnJkSjVNMkU2Q1A1TnB4Z0tiWWlUeERZbS03ODFQaEk5cGI2UlpFVERTcDA5eHBWOGxCaWZublowSmFVYVJxSlZuZWt0MXZXN1Foby15WlRWOFVSc0VpNUs3WnFwck85R3VhbVIyUGpPNi1udUZsaFRzS1ZYeDA5OTZzVGxIX1Y4OGx1dml5ckNEWDVJYmZJaEc4ZTFpbThzMkFIY092WjFhSTJIVlZ0U3hDX2tvUDNvSWZtSGtl0gHMAUFVX3lxTFBka1E0bjAybkJMXzFMRXlGVmVpVXExX1RhT3ZEYldjaTdERkotclkwNzBoNkt5THlmTDI3eU9TcTd5VmNSYjdCNjE4NUpmRWd0Y3ZOdTRHYTBtU2duY09RTE8tMzlWN1BsOEsyN3ROZGVsa2xGaHZXNVFzbGc0MU1xR3Jpd3lKVVpEd3dVSFBtc3pMTTNiVlBSYS1SZUdJclRlNGM5U09OQzhrbXZ2X190ZU9HS3gzbkhUNUVrazBuc2l0bjhoWFZKM2pWTw?oc=5",
+   "data": "2026-11-09T12:25:50Z",
+   "coletado_em": "2026-11-09T13:17:17Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "11123f7f6f81",
    "titulo": "Lula se compromete com responsabilidade fiscal e busca conciliação",
@@ -489,7 +531,12 @@
    "url": "https://g1.globo.com/es/espirito-santo/noticia/2026/11/08/servidor-publico-morre-apos-carro-ser-atingido-por-outro-veiculo-e-capotar-na-serra.ghtml",
    "data": "2026-11-08T15:42:24Z",
    "coletado_em": "2026-11-08T15:58:59Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "G1",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOZGlIUXZuNGNaY1ZFaV9oOFpXeUxTYTZGcXZIMWZWR0VsSllQaE5yQWwtYTMyYjlORmxwSWpyMjhocEQ4clVreUwzSWF5R1BHWVUxZ3IyeEJPOUR6dDRabWxreEZZZUlFUlVjY1pCZndSM1JsQVZOMk05V1daUlR6VEkyaXpYU3d5VVdLQUkxQTFYSTVpd0RvaFdVLVdzelFrU0RqbEw3Z0h1dFNTelhtUlNzUHhDRFMzWGFodW5ZQlpHb1pnaExLV0JXWXNPdWlld2ZLWDVJN3FNckd4RDQ2Y9IB7wFBVV95cUxPUkxrb0x4aGk5ZzF5WkR6MldKdm5wbXhjY3ludUx6ckZXLXhyYy1lNGh1NDdIbi05c05IWXZmYW02bV9JX1dlREN0elVmVVJoSUVxTkxDakU4T3VoZFY3VTZUMVdRenB0R2lLRVRPYmpSRy1XdlhvRUFIWUo1bG1CMXE1UUpvZ1BKOE9sZ1poVEE1Q0hDSm05RGxxXy0wWDdYdzhOQWhRcFVNLVFYZlczdW1lSTRDbWF6dTZQNTNnVjlZUkxmTVNXZWhDcDZwcjZ4X3RHc01GNHpTR2YzV01CcURIVWhZcEYtVkhObkRXdw?oc=5"
+    }
+   ],
    "possivel": true,
    "triagem": 7,
    "temas": [
