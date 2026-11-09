@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-09",
- "gerado_em": "2026-11-09T07:59:14Z",
+ "gerado_em": "2026-11-09T09:17:18Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 19,
-   "aceitos": 4,
-   "possiveis": 2
+   "lidos": 17,
+   "aceitos": 3,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -42,8 +42,8 @@
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
    "lidos": 3,
-   "aceitos": 3,
-   "possiveis": 0
+   "aceitos": 2,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 14,
+   "lidos": 13,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -97,8 +97,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 39,
-   "aceitos": 1,
+   "lidos": 34,
+   "aceitos": 0,
    "possiveis": 3
   },
   {
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 0,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,23 +137,23 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 12,
-   "aceitos": 0,
+   "lidos": 13,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 11,
+   "lidos": 10,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 24,
    "aceitos": 2,
    "possiveis": 5
   },
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -238,19 +238,43 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 211,
-  "possivel": 16,
-  "excluir": 33,
-  "veiculo_outra_praca": 6,
+  "sem_contexto": 208,
+  "possivel": 19,
+  "excluir": 32,
+  "veiculo_outra_praca": 7,
   "outro_estado": 11,
   "veiculo_excluido": 5,
   "sem_contexto_com_tema": 7,
-  "sigla_sem_ancora": 8,
+  "sigla_sem_ancora": 7,
   "exterior_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "4ef3cbdcff2c",
+   "titulo": "O desafio de formar uma boa equipe de governo",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/opiniao/o-desafio-de-formar-uma-boa-equipe-de-governo/",
+   "data": "2026-11-09T09:00:00Z",
+   "coletado_em": "2026-11-09T09:17:18Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": []
+  },
+  {
+   "id": "29ce26fc283c",
+   "titulo": "Editorial: O desafio de formar uma boa equipe de governo",
+   "veiculo": "Folha Vitória",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVG54N3ZGSXIxMXN6UEJQY09ObEpXMHJVZ0RGejlSZG5XWkZQR2xEUUR6WDF1QndCXzdpb0RaUVhoN1pacjZVOGMwTmJDdmJaQnl0MjB3MzVIYTFCaEI4NmMxY2JLMXVzbDZaWGpreUJyMW1aVlJaRUxHZzA4amNrVTdxNUpzMTBTdHczSkk4NA?oc=5",
+   "data": "2026-11-09T09:00:00Z",
+   "coletado_em": "2026-11-09T09:17:18Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": []
+  },
   {
    "id": "36e1f3dd8e74",
    "titulo": "Decreto do ES exige 8% das vagas para mulheres vítimas de violência em serviços contínuos com 25 ou mais colaboradores",
