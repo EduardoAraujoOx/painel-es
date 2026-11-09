@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-09",
- "gerado_em": "2026-11-09T15:18:37Z",
+ "gerado_em": "2026-11-09T16:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -25,8 +25,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 21,
-   "aceitos": 5,
+   "lidos": 25,
+   "aceitos": 7,
    "possiveis": 2
   },
   {
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 1,
+   "lidos": 5,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
@@ -57,16 +57,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 0,
+   "lidos": 3,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 1,
+   "lidos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 39,
+   "lidos": 40,
    "aceitos": 1,
-   "possiveis": 6
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 10,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 11,
+   "lidos": 15,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,8 +153,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 18,
-   "aceitos": 2,
+   "lidos": 17,
+   "aceitos": 0,
    "possiveis": 3
   },
   {
@@ -194,8 +194,8 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 3,
-   "possiveis": 2
+   "aceitos": 4,
+   "possiveis": 3
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -218,7 +218,7 @@
    "consulta": "https://www.agazeta.com.br/colunas/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -234,24 +234,93 @@
    "consulta": "https://simnoticias.com.br/vinicius-baptista/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 5,
+ "novos_na_coleta": 4,
  "descartes_na_coleta": {
-  "sem_contexto": 218,
-  "excluir": 31,
-  "possivel": 20,
-  "sem_contexto_com_tema": 6,
-  "outro_estado": 17,
-  "veiculo_outra_praca": 5,
+  "sem_contexto": 223,
+  "excluir": 30,
+  "possivel": 22,
+  "veiculo_excluido": 17,
+  "sem_contexto_com_tema": 4,
+  "outro_estado": 19,
+  "veiculo_outra_praca": 7,
   "caixa_alta": 1,
-  "veiculo_excluido": 13,
   "sigla_sem_ancora": 5,
   "exterior_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "d06f02e1cc32",
+   "titulo": "Gás do Povo: governo prorroga vigência do auxílio até 2031",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbjNsWDVmUEk4cXRNQXMyeGFUREdRalNyekx6QVlGVG5BeDNHVnNiZFY2WjZ4STNLQXNSQndCWFVSeHVuRl9PTDdILUI0aFVQdVA4cTdPRmxHTEZqVG9FN09jTWF5b1g3MlFFRGNNczZvR1dwVHlLT2psOTBfdFVTUVpFSnEyOE9PaGlkdDNLWXM0UnN5U2YwdDFPVGpWVE1DbFN3c9IBrAFBVV95cUxOb3l5UHRFaGJNRVRYbGZ4YnU3NzE1TV9nZWplZlJKN3hXemtMUjdZWVBzY1IwYTczMTA4MzFsX1l2N1NaTng3YnppQUhadkFtNEJGQ2s2Z1BhRmgxZnRRbnpGRVZBUDYzZXFrVmFZWHN5enRlaHRIdER4WnQ4LW41b0RVVnNRdUQ4b2FldS1CaFpsMHBGZ2FxS18tVnVlQV9JTWN4NFBGU1lMT0s2?oc=5",
+   "data": "2026-11-09T15:26:56Z",
+   "coletado_em": "2026-11-09T16:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": []
+  },
+  {
+   "id": "4f4b67e16d78",
+   "titulo": "Pazolini começa transição com discurso de gestão por resultados",
+   "veiculo": "Sim Notícias",
+   "url": "https://simnoticias.com.br/vinicius-baptista/pazolini-comeca-transicao-com-discurso-de-gestao-por-resultados/",
+   "data": "2026-11-09T15:24:00Z",
+   "coletado_em": "2026-11-09T16:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "ccbee8d8c76f",
+   "titulo": "Lorenzo Pazolini reúne equipe de transição e define prioridades com Centro de Liderança Pública",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/lorenzo-pazolini-equipe/",
+   "data": "2026-11-09T15:23:38Z",
+   "coletado_em": "2026-11-09T16:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "a6958efab60a",
+   "titulo": "Transição ES: Lorenzo Pazolini reúne equipe e define prioridades",
+   "veiculo": "ES Hoje",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1oWXZpajFWSEJvdHlXdDQyeTZ3ZDk3YmY0QXhEQjhfdy1HWG9xb01VR3RjVnRvSUJJakFlVnZRTmdRbjhFankxUXRiXzZxNjBHemRIeEM3ejBuVmVhLVNxaGNuWEkybWZPYzZENWhJMGg?oc=5",
+   "data": "2026-11-09T15:23:38Z",
+   "coletado_em": "2026-11-09T16:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "25197c217e81",
+   "titulo": "Governo Lula prorroga vigência do Gás do Povo até 2031",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/economia/2026/11/governo-lula-gas-do-povo/",
+   "data": "2026-11-09T15:22:21Z",
+   "coletado_em": "2026-11-09T16:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": []
+  },
   {
    "id": "133a8b3b9cfd",
    "titulo": "Servidor público morre após acidente entre carros na Serra; arma foi encontrada em veículo",
@@ -299,6 +368,20 @@
    "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQOUdSTmNUZ3NkaXA1eGF6MWt3b3A3VTdrTXc0bE5rWUVkRU5CRHA5TXBaa3FWRElscEdKc0FHSTRzb0VjbmVTQ0ZFV3k0ak9pWjg1b2tzUHV2Zlg5bnJpbVptdWUxZi10eWFvM1J5Z2NFQnlSVmNiMGtJQm0xcVl2Y0ZyTzdjSTRuMFY2d0JfN011SlZoa3dvSVNOcy1IblRhUU1PTnF4LW9BVnZYemJPSWVmZTQ1TGxMdzhGTjRyUjhPZUROck5VblhsTTJKTnhfQUFGeUJPQkgycU9YaEdxbFNGazRsekpSOHBlTWUxbU5VZGM?oc=5",
    "data": "2026-11-09T15:04:54Z",
    "coletado_em": "2026-11-09T15:18:37Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "37c1915216f5",
+   "titulo": "BRAVI 2026: missão do Governo do ES leva startups apoiadas pela Fapes a Bolonha, a capital do agro italiano",
+   "veiculo": "FAPES",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSkJpejVhbW52MGQ3ZjY1ekp6ZVp4dUR6R1NBUW9PTnlIWDJyZ2lIbTlhQXpjd1E5XzhnVkw3SUVRR1RwbW1GN1FIS1JvTE0xOXUtc0h0Tk9KV29tWkRncW00VXZXdnBUaTE3X1FDclUzV0pfRDdRdkRvTzk0dHFPc2NTRzBiUjlqY0RKVkR0NWd4bUtUN3pOX0pqRU5xdVEyNzdVUTdUNFY3RW1pa1VMVUN2OWFRd3d6STN4OWl5UlRoX211NTJ1Vw?oc=5",
+   "data": "2026-11-09T14:40:00Z",
+   "coletado_em": "2026-11-09T16:17:14Z",
    "outras": [],
    "possivel": false,
    "triagem": 7,
