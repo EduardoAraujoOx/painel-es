@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-09",
- "gerado_em": "2026-11-09T20:17:16Z",
+ "gerado_em": "2026-11-09T21:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,46 +18,46 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 3,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 28,
-   "aceitos": 8,
+   "lidos": 29,
+   "aceitos": 11,
    "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 6,
+   "lidos": 9,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 7,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,17 +89,17 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 28,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 45,
+   "lidos": 46,
    "aceitos": 2,
-   "possiveis": 6
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 13,
+   "lidos": 14,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 24,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 15,
+   "lidos": 14,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -154,7 +154,7 @@
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 18,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 3
   },
   {
@@ -178,16 +178,16 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
-   "possiveis": 1
+   "aceitos": 2,
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
-   "possiveis": 4
+   "aceitos": 2,
+   "possiveis": 5
   },
   {
    "fonte": "ES Hoje",
@@ -195,7 +195,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -238,22 +238,102 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 4,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto": 249,
-  "veiculo_excluido": 22,
-  "excluir": 26,
-  "possivel": 31,
+  "sem_contexto": 255,
   "oficial_sem_tema": 3,
   "sem_contexto_com_tema": 3,
+  "possivel": 33,
   "oficial_divulgacao": 1,
-  "veiculo_outra_praca": 6,
+  "veiculo_excluido": 24,
+  "veiculo_outra_praca": 4,
   "caixa_alta": 1,
-  "outro_estado": 17,
-  "sigla_sem_ancora": 4,
-  "exterior_sem_ancora": 1
+  "excluir": 19,
+  "outro_estado": 20,
+  "sigla_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "dc7b09d06f21",
+   "titulo": "Victor Coelho quer atuar com turismo, saúde e seguir o legado do irmão na Assembleia do ES",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/eleicoes/victor-coelho-quer-atuar-com-turismo-saude-e-seguir-o-legado-do-irmao-na-assembleia-do-es/",
+   "data": "2026-11-09T21:10:02Z",
+   "coletado_em": "2026-11-09T21:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": []
+  },
+  {
+   "id": "21dca2833bf7",
+   "titulo": "Pazolini reúne equipe de transição e discute prioridades para o governo do ES",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/pazolini-reune-equipe-de-transicao-e-discute-prioridades-para-o-governo-do-es/",
+   "data": "2026-11-09T21:02:12Z",
+   "coletado_em": "2026-11-09T21:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "6799bed26f30",
+   "titulo": "Bispa de Colatina e vice-governadora eleita admite possibilidade de assumir secretaria no governo Pazolini",
+   "veiculo": "ES Fala",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUE5IX01JTDV2Um5zN3psZzFWdldULUFVdWtzR1F0dEprb25NYU1KeTVDZng3VWVjbzBjenppdFpQbHZsMXMxY0VqaEdGR3hQa2JTR1JJNmdneWNCNkhpZHhXX0lnOVlfSkw4N1ladGlxQ1pJRnJ2WlBva1ptNmFLbXMzbHQwUWhfZlc4SlZiTWd2RS1tVXJKRktLVUtzbno2ZVBZSmdBanY?oc=5",
+   "data": "2026-11-09T21:00:00Z",
+   "coletado_em": "2026-11-09T21:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "441b2ebf362d",
+   "titulo": "Agro capixaba apresenta demandas para os próximos governos",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQMnhOSWxFYU1KZ3F1LXNqNU9NbGZFSzV2Y3lOZFZtVTZ5SW5kbGhfdWNydkwzQnJUUTY3T1lvUEJrQ0cwUU83dnd2Z3lvOGZ1dzBHWUlzNEFDaTZVMXpvRHMyQzZzNGJ5b1pxd3lHMW1iWUowaXhoMWNUMHRJNjNhMVZjRUttanZHUENXMW5KV3NCdFdvbWRTRzluaGtXaTdEdlNJcXlkSEFCd9IBsgFBVV95cUxOTHBwcnJ1eWstandmZ0RuRVdhM3d6SGRUX3BvTU90OHZmMndObG5kX3hvZUJJbU1BOVVTR0c1eVpZVC1BS1lfdzVjU1l5aTFsZE5XNC1nMGxpODlFaU1GRlhUTGpsanlWR3V6Qml1RGllbVZ5aGZXMTQ5d2FDa2xTWWNpbEkzTzBLTTZaZXFkbTB2Zld0QmpWR1VxQ2dFcjBTT2FtNjl0MWFNWWluUERETWRB?oc=5",
+   "data": "2026-11-09T20:57:28Z",
+   "coletado_em": "2026-11-09T21:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": []
+  },
+  {
+   "id": "b0b4ecd21943",
+   "titulo": "Secretário apresenta a Ales dados e garante: ES bate recorde de R$ 4,1 bi em investimentos",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/secretario-apresenta-a-ales-dados-e-garante-es-bate-recorde-de-r-41-bi-em-investimentos/",
+   "data": "2026-11-09T20:47:10Z",
+   "coletado_em": "2026-11-09T21:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "95a024a92791",
+   "titulo": "Petro é investigado por suspeita de trocar contratos públicos por favores sexuais",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQNDBXbVc4QWJLcExYZmN6MHZRRkpkSUpQRS1zeGRYYTRvblk5ZXkxTTExOXdxOWZMZDFmVEJxcTI5c21Tbi1QNVFxcW1lYUxPMjk2b0VoRkprZVN0SkdLQ0R6d3RzbUxObkVMMEdEVzZERHlwbmJ3T3l0UzlhWmRsTDZCSVVMaG55ZlBpWkJuNGtVdkNfdDR6NTBRSWNDTUlZNFJ6Rkw1QQ?oc=5",
+   "data": "2026-11-09T20:39:53Z",
+   "coletado_em": "2026-11-09T21:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "1af260868c06",
    "titulo": "Quais carros podem ficar isentos de imposto em 2027? Veja a lista",
@@ -751,7 +831,12 @@
    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOSkVJRjVaSXJ3aVpJbF9iOEI1TTFLa3ZMTlllSy1SaF8zd01aU0JVMWV1ZjBBZUVLZmM5MkZyRXVpMHNKMFZEX0gyZnZoYzYyTmFkTHpyNm1jQUg4M010Z0lfNEZONjZ4RzdCcE5fX1l6eHVlM2xrbTR2OWVRREI5dVBhRUpkeGhtR0ZYRUZzTnZqYnpjUGotQ1l5RE8wVENUclEzSTIzZlIwZUMzR3hXMlNrRQ?oc=5",
    "data": "2026-11-09T14:26:00Z",
    "coletado_em": "2026-11-09T15:18:37Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "SiteBarra",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNdmREdElNTHJZRGlUa1A1ZGJmUk1rTjBPWmJaVG1NQWVWcjdwb1lFQUxpVGtVNmY5bDlLM2hrbkJicGM5TEFCUGtIZ0tPeFpEeXV0T0x1WlhNOVlXakc5T2dOVVNFN2R3c1ZULUsyZHByQ0JLLVZJX3kzVVZqdnE5WTROWEVNX1FvWHJ3U0J5UWdFMDNfMGVBWGw1Mk92WXNxaU1RUWxWSmJqbXA5N1U1am5sWmhHX2JmdTJqVw?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 7,
    "temas": [
