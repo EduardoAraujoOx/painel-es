@@ -1,6 +1,6 @@
 {
- "ref": "2026-11-08",
- "gerado_em": "2026-11-08T21:17:13Z",
+ "ref": "2026-11-09",
+ "gerado_em": "2026-11-09T00:55:45Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,16 +17,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 11,
-   "aceitos": 2,
+   "lidos": 10,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 23,
-   "aceitos": 6,
+   "lidos": 17,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -34,15 +34,15 @@
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 2,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 5,
+   "lidos": 4,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -57,8 +57,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 1,
+   "lidos": 3,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 16,
+   "lidos": 15,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 44,
+   "lidos": 39,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 2,
+   "lidos": 3,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 18,
-   "aceitos": 2,
-   "possiveis": 2
+   "lidos": 15,
+   "aceitos": 1,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 15,
+   "lidos": 9,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
-   "aceitos": 4,
-   "possiveis": 4
+   "lidos": 25,
+   "aceitos": 3,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 57,
+   "lidos": 58,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -178,8 +178,8 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
-   "possiveis": 0
+   "aceitos": 0,
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -187,7 +187,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "ES Hoje",
@@ -238,19 +238,33 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 240,
-  "possivel": 12,
-  "excluir": 32,
-  "veiculo_outra_praca": 6,
-  "outro_estado": 14,
-  "veiculo_excluido": 5,
-  "sigla_sem_ancora": 8,
+  "sem_contexto": 219,
+  "possivel": 14,
+  "excluir": 35,
+  "veiculo_outra_praca": 5,
+  "outro_estado": 12,
+  "veiculo_excluido": 7,
   "sem_contexto_com_tema": 6,
-  "exterior_sem_ancora": 4
+  "sigla_sem_ancora": 8,
+  "exterior_sem_ancora": 5
  },
  "itens": [
+  {
+   "id": "456a58f22596",
+   "titulo": "Lula promete responsabilidade fiscal e medidas para reduzir juros no Brasil",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/lula-promete-responsabilidade-fiscal-e-medidas-para-reduzir-juros-no-brasil/",
+   "data": "2026-11-09T00:45:20Z",
+   "coletado_em": "2026-11-09T00:55:45Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "bd1ec13202d8",
    "titulo": "IBGE, Banestes e prefeituras: veja mais de 29 mil vagas abertas em concursos",
