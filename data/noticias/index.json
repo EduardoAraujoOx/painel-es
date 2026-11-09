@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-09",
- "gerado_em": "2026-11-09T16:17:14Z",
+ "gerado_em": "2026-11-09T17:17:16Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -25,7 +25,7 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 25,
+   "lidos": 27,
    "aceitos": 7,
    "possiveis": 2
   },
@@ -33,8 +33,8 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 3,
+   "lidos": 5,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 19,
+   "lidos": 23,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 0,
+   "lidos": 5,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 21,
+   "lidos": 20,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -145,23 +145,23 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 15,
+   "lidos": 14,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 17,
-   "aceitos": 0,
+   "lidos": 16,
+   "aceitos": 1,
    "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 56,
+   "lidos": 55,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -238,20 +238,61 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 4,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto": 223,
+  "sem_contexto": 229,
   "excluir": 30,
   "possivel": 22,
-  "veiculo_excluido": 17,
   "sem_contexto_com_tema": 4,
-  "outro_estado": 19,
+  "outro_estado": 16,
   "veiculo_outra_praca": 7,
+  "veiculo_excluido": 17,
   "caixa_alta": 1,
-  "sigla_sem_ancora": 5,
+  "sigla_sem_ancora": 4,
   "exterior_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "ff44ded2bc22",
+   "titulo": "Decreto altera denominação da Secont, que passa a ser Controladoria-Geral do Estado do Espírito Santo (CGE)",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZ2VDSERnbW5lTUMtS0ZkNW5USktyRVI0ZjhDYVNBVGZiRkY0a0duQmRvQVdUVG5iWjNQUDVJV09FNU5OZnc0WVotVlJ0eWprTTJQMHlQb3BEb0ZSeUlEcFpVVkZSZU1IRFo1Qjl3ME1fZlE0elpfcVFTWkxFNlQ5cVJFSU9yaWRrSldzZFY5MTR3VlpVZlFIYWNfUHpPTko1VmZwTk5US2Ztam45ajhmd1NSZEhZQXRYX1RhRm5oQWFHeEdN?oc=5",
+   "data": "2026-11-09T16:58:00Z",
+   "coletado_em": "2026-11-09T17:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "dda925297274",
+   "titulo": "Operação integrada do Detran|ES flagra 13 conduzindo sem habilitação em Colatina",
+   "veiculo": "Detran-ES",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNREtwOUc1Vlc2V2pjSjQyTERaaG5aZFdWNGZBV2czcXR5Wjgwb21QQnNtM01iTEVUbjBEdUI1LVp3WWNuYzZNbXdNSVBDYnNEQjlXWV9uYk12Q2xNbWFfYW1NZXo2TldyVTF0UkYyMGpMMG5YUlVobFdSQWZmT0dMQ3pmeERielhpZ0JVVFVrenJja2tTWG9RcVNrMTRuLTRMSVhaeXlEamQ?oc=5",
+   "data": "2026-11-09T16:34:00Z",
+   "coletado_em": "2026-11-09T17:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": []
+  },
+  {
+   "id": "e001af7292b0",
+   "titulo": "Começa transição do Governo do ES",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQ0E5a2lMLVdqV2NxZkk0UGV0VUxHZDBvbFFiS2lvaXJjbUd5eHNrcC1hYm9KbFQtZTNpaUZ1WDhXSEROajFJNGpMTjR6VzRULVdTNllybWM1eER1azVWNWVSWDQ3WXlnUmNWWkRkRTRmR2pJYUNlenEtdDBoWWFOMm44VF8zdUlkS1FNTTdaOHAtNHp0bUF1dGl1TndiYmk3cnlEeGlFRjJNZ3R2U0tZRFZFYmPSAcMBQVVfeXFMTmhHdllIQkY4SXZHZUZnSEVtemMzQVY0MmpXa0ZiZFZ2S3lHbnJlc3BLaTBQRUFELW9yY1JqTlBDRWhjSTlTM3pjcHhUOTd5c2lWaktaaDNzMFdienVQZ0llalBZWXZoZzNVZDBDN1hpTktCaEJZZ0FBRDZUT1l4dDZkcVZpX05ua1RwTHU1X29OR1pNMmZjVzNPREtHVDAwTmt5MEdSTHNNTmx2UUM5cjRsOGVlNmJRVlZMdXFBWEF0Z0RZ?oc=5",
+   "data": "2026-11-09T16:11:33Z",
+   "coletado_em": "2026-11-09T17:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
   {
    "id": "d06f02e1cc32",
    "titulo": "Gás do Povo: governo prorroga vigência do auxílio até 2031",
@@ -320,6 +361,20 @@
    "possivel": true,
    "triagem": 7,
    "temas": []
+  },
+  {
+   "id": "1355f5767fcd",
+   "titulo": "Revólver é encontrado em carro após acidente que matou servidor público na Serra",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/seguranca/2026/11/servidor-publico-morre-serra/",
+   "data": "2026-11-09T15:12:09Z",
+   "coletado_em": "2026-11-09T17:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "pessoal"
+   ]
   },
   {
    "id": "133a8b3b9cfd",
