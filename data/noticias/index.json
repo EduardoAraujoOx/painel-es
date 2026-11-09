@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-09",
- "gerado_em": "2026-11-09T18:17:14Z",
+ "gerado_em": "2026-11-09T19:17:16Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,16 +18,16 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 27,
-   "aceitos": 7,
-   "possiveis": 4
+   "lidos": 28,
+   "aceitos": 8,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -41,16 +41,16 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 4,
-   "possiveis": 1
+   "lidos": 8,
+   "aceitos": 5,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 0,
+   "lidos": 10,
+   "aceitos": 1,
    "possiveis": 2
   },
   {
@@ -59,7 +59,7 @@
    "ok": true,
    "lidos": 3,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -81,15 +81,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 25,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 40,
+   "lidos": 41,
    "aceitos": 1,
-   "possiveis": 7
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 11,
+   "lidos": 12,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 20,
+   "lidos": 22,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 17,
+   "lidos": 18,
    "aceitos": 2,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 56,
+   "lidos": 55,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -178,8 +178,8 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
-   "possiveis": 2
+   "aceitos": 0,
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -187,14 +187,14 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 3
   },
   {
@@ -240,19 +240,88 @@
  ],
  "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 230,
-  "excluir": 31,
-  "possivel": 30,
-  "sem_contexto_com_tema": 4,
+  "sem_contexto": 247,
+  "excluir": 26,
+  "possivel": 31,
+  "sem_contexto_com_tema": 3,
   "oficial_sem_tema": 2,
   "veiculo_outra_praca": 6,
-  "veiculo_excluido": 15,
+  "veiculo_excluido": 16,
   "caixa_alta": 1,
-  "outro_estado": 15,
-  "sigla_sem_ancora": 5,
-  "exterior_sem_ancora": 2
+  "outro_estado": 18,
+  "sigla_sem_ancora": 4,
+  "exterior_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "a7a6c4105142",
+   "titulo": "Petrobras pede ao governo período sem multas na reforma tributária",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/economia/petrobras-pede-ao-governo-periodo-sem-multas-na-reforma-tributaria-1126",
+   "data": "2026-11-09T19:16:09Z",
+   "coletado_em": "2026-11-09T19:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "71ec4d25b263",
+   "titulo": "Data center em Baixo Guandu: deputada cobra audiência e informações sobre água",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQS1BsNTRwTHV4cmdGbERGTUdRUG9ITGVkYS1JUjZsbnhhdVFZdE9FLXZKbURWRkZjRVBUTTRaSmNFNXhCcGoycVlHQUFkY1EtMTBwVHFYR29VbUJTNHFTMkdZa09jTE1OY3BUXzJnZV9IbXN3VDFiSkJTdXoyQjNpM0FoMDVJeXNGUFhWS0JiRTBWU2wtNU83NndKTGYwWVk2UGYzZ182WUhtOXZSU2tvV2pLZDJRVnQzTEE?oc=5",
+   "data": "2026-11-09T19:10:15Z",
+   "coletado_em": "2026-11-09T19:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": []
+  },
+  {
+   "id": "e1bea32bb8f4",
+   "titulo": "Pazolini realiza primeira reunião da equipe de transição e discute futuro do Espírito Santo com presidente do Centro de Liderança Pública - CLP",
+   "veiculo": "rede noticia es",
+   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQWEtMMHRtbzhRd2x3RWhoa0RmVjJaU20xNnNkMHhGSG5RZWZSanR1RTAyX01Vb3RsV19nVlZSZ3JSYUxxaTJlX21LbzVpdnhfTnNEQXZWWGJHM0psVkstUTZLWmZsWjNMSzVMWHUwNEpWd05kWFB3X2xmSzkzTnViMEJIa2hIZjVGcTdMTFNEOVVDRUd5OFJhTHdOS09MeGhCS3pnZ1RqbGRvOHc4NG12TXZJMThiTlViVjlyeFdzUVdJbUU5R0htVWYzRkNtMlhEX2syNTN2VDRmMjRJWm5BdzNGVmRyVmw1NFgtVUFIRF9xRGJCdzJJcg?oc=5",
+   "data": "2026-11-09T19:09:20Z",
+   "coletado_em": "2026-11-09T19:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "27f7e9f6e461",
+   "titulo": "Bombeiros ES: decreto libera R$ 10.000,00 para novo concurso",
+   "veiculo": "diariodamidia.com.br",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPQk9lXzN4WnRrd1NUWDYteG42Uy1GcWExR3F1a25Ycmh2X0JnUk5MbTFnaEFCbG5vQm1Ed1ptdzF5N2NEUW9CLXdtQVU5V2puTTRPS19DOEU4N0NnUEdWQlpQc1FmWUp3c2wtWnRMMm03Wm5RME5sWFBDcXJlWHRna3dJenlwWlRRQldHYUVn?oc=5",
+   "data": "2026-11-09T18:49:41Z",
+   "coletado_em": "2026-11-09T19:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "a97054867635",
+   "titulo": "Quem são os cotados para o comando da Assembleia? Os prós e contras de cada um",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/quem-sao-os-cotados-para-o-comando-da-assembleia-os-pros-e-contras-de-cada-um/",
+   "data": "2026-11-09T18:32:45Z",
+   "coletado_em": "2026-11-09T19:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "transicao"
+   ]
+  },
   {
    "id": "3e58177f9022",
    "titulo": "Ex-presidente da Colômbia é investigado por oferecer contratos públicos em troca de sexo",
@@ -409,6 +478,10 @@
     {
      "veiculo": "Tribuna Online",
      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbjNsWDVmUEk4cXRNQXMyeGFUREdRalNyekx6QVlGVG5BeDNHVnNiZFY2WjZ4STNLQXNSQndCWFVSeHVuRl9PTDdILUI0aFVQdVA4cTdPRmxHTEZqVG9FN09jTWF5b1g3MlFFRGNNczZvR1dwVHlLT2psOTBfdFVTUVpFSnEyOE9PaGlkdDNLWXM0UnN5U2YwdDFPVGpWVE1DbFN3c9IBrAFBVV95cUxOb3l5UHRFaGJNRVRYbGZ4YnU3NzE1TV9nZWplZlJKN3hXemtMUjdZWVBzY1IwYTczMTA4MzFsX1l2N1NaTng3YnppQUhadkFtNEJGQ2s2Z1BhRmgxZnRRbnpGRVZBUDYzZXFrVmFZWHN5enRlaHRIdER4WnQ4LW41b0RVVnNRdUQ4b2FldS1CaFpsMHBGZ2FxS18tVnVlQV9JTWN4NFBGU1lMT0s2?oc=5"
+    },
+    {
+     "veiculo": "Tribuna Online",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOb3l5UHRFaGJNRVRYbGZ4YnU3NzE1TV9nZWplZlJKN3hXemtMUjdZWVBzY1IwYTczMTA4MzFsX1l2N1NaTng3YnppQUhadkFtNEJGQ2s2Z1BhRmgxZnRRbnpGRVZBUDYzZXFrVmFZWHN5enRlaHRIdER4WnQ4LW41b0RVVnNRdUQ4b2FldS1CaFpsMHBGZ2FxS18tVnVlQV9JTWN4NFBGU1lMT0s20gGsAUFVX3lxTE5veXlQdEVoYk1FVFhsZnhidTc3MTVNX2dlamVmUko3eFd6a0xSN1lZUHNjUjBhNzMxMDgzMWxfWXY3U1pOeDdiemlBSFp2QW00QkZDazZnUGFGaDFmdFFuekZFVkFQNjNlcWtWYVlYc3l6dGVodEh0RHhadDgtbjVvRFVWc1F1RDhvYWV1LUJoWmwwcEZnYXFLXy1WdWVBX0lNY3g0UEZTWUxPSzY?oc=5"
     }
    ],
    "possivel": true,
