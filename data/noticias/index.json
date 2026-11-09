@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-09",
- "gerado_em": "2026-11-09T00:55:45Z",
+ "gerado_em": "2026-11-09T01:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 17,
-   "aceitos": 3,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
@@ -41,7 +41,7 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 4,
+   "lidos": 3,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 39,
+   "lidos": 37,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 15,
+   "lidos": 14,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 24,
    "aceitos": 3,
    "possiveis": 5
   },
@@ -238,14 +238,14 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 219,
+  "sem_contexto": 212,
   "possivel": 14,
-  "excluir": 35,
+  "excluir": 36,
   "veiculo_outra_praca": 5,
   "outro_estado": 12,
-  "veiculo_excluido": 7,
+  "veiculo_excluido": 6,
   "sem_contexto_com_tema": 6,
   "sigla_sem_ancora": 8,
   "exterior_sem_ancora": 5
@@ -433,7 +433,12 @@
    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQeGRnckdkR0FidkE0R0xxRF9RZjNQMHpwR3hmcko5cWRoY3c0R2w0Qmx6MG81U0hpckEwR2VqdGxVd2Z2SHNGcHlCN2JoQ3J1a3NYY1lIcHkwWUFIY1FRU1c0ZWxjZlNWbldFT3dZc3VOT1VHLTIyT3BkNlk1eFl3R0hOejJZZw?oc=5",
    "data": "2026-11-08T11:03:13Z",
    "coletado_em": "2026-11-08T20:17:13Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "O Liberal",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQOERIT2F2VjZtc2RYdEQ1ZkFJRFVna0otYmRzenlzSFhKWF9kLTBKU1ZYZllNRjdzYzFGS01majg1N0s3VUEzLVA3N3J4cTdscnN1S25paVBWSGhxUW5WdkFHemR1dk9vc0lZS2NQbVR0bGp0cGd2M2VHbnpPalhvVVBXRUsxZWNVTVliR041OTlQRFk?oc=5"
+    }
+   ],
    "possivel": true,
    "triagem": 7,
    "temas": []
@@ -489,6 +494,20 @@
    "possivel": true,
    "triagem": 7,
    "temas": []
+  },
+  {
+   "id": "69995caf0478",
+   "titulo": "SEGURANÇA: totens serão instalados no interior do Espírito Santo, garante governador Ricardo Ferraço",
+   "veiculo": "Espírito Santo Notícias",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNRHJ6aXJBV3VQdTdLSklhM0VrR3RBTUN3bmVNbC1FQkpQaUxOYjMtdTNaZXVpc2gyMXlkd2l2MGR5N1R1ZldENHJPRkFQMkMtN0FFWVpMQ0x3ZVBad0Z1ekgtVEpEZGd6R0JLWXBIYjdTdWs1UmZnMzZjb0t1OXZ3VVI5TmJFQ0VITFpSckk0LTZYdThzRWdPSEZWM09zZ3N5aVRFMXhzcFktQjQ1YkNrQ1hSUG9CMnQwSy14U0Fyb3RBamVpX3JSWVJ3djlTeEs0OVE?oc=5",
+   "data": "2026-11-07T17:42:26Z",
+   "coletado_em": "2026-11-09T01:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "governador"
+   ]
   },
   {
    "id": "800447a0c46f",
