@@ -1,6 +1,6 @@
 {
- "ref": "2026-11-09",
- "gerado_em": "2026-11-09T23:17:14Z",
+ "ref": "2026-11-10",
+ "gerado_em": "2026-11-10T00:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 12,
-   "aceitos": 5,
+   "lidos": 13,
+   "aceitos": 6,
    "possiveis": 1
   },
   {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 29,
-   "aceitos": 12,
+   "aceitos": 13,
    "possiveis": 5
   },
   {
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 46,
+   "lidos": 47,
    "aceitos": 2,
    "possiveis": 6
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 8,
+   "lidos": 10,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 23,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 16,
+   "lidos": 18,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 55,
+   "lidos": 54,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 4
   },
   {
@@ -238,22 +238,37 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 285,
+  "sem_contexto": 292,
   "possivel": 27,
   "oficial_sem_tema": 3,
   "sem_contexto_com_tema": 3,
   "oficial_divulgacao": 1,
   "veiculo_excluido": 24,
-  "excluir": 16,
+  "excluir": 15,
   "caixa_alta": 1,
   "outro_estado": 20,
   "veiculo_outra_praca": 2,
-  "sigla_sem_ancora": 7,
+  "sigla_sem_ancora": 6,
   "exterior_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "58bf61833478",
+   "titulo": "Pazolini inicia transição de governo com reunião sobre desenvolvimento e gestão pública",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPV0txbFg4OElkTUdSbnRmdldxREQxNlFmbHRFNmZzSGdHMVlOSWdKUktxODlnbVJpOWlFWi1qYUdWdU1QMXBvQWJ5SHhJS251RXhmbEFmTFY2SlE0a1VqQjRWaVlDSmNlNFRBODNVRk9TYmhucWtmUEdTb3NsYUVJUlNWd0pyS29wY3hTakN6MUNWXzl1VklaQUNqQnRMZ1FvSDVDeGJULU5IcWozeENNTDBn?oc=5",
+   "data": "2026-11-10T00:09:17Z",
+   "coletado_em": "2026-11-10T00:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
   {
    "id": "692f2732bab6",
    "titulo": "Demandas do Agronegócio Capixaba para os Novos Governos",
