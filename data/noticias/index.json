@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-10",
- "gerado_em": "2026-11-10T11:17:15Z",
+ "gerado_em": "2026-11-10T12:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 11,
-   "aceitos": 6,
+   "lidos": 13,
+   "aceitos": 7,
    "possiveis": 1
   },
   {
@@ -26,15 +26,15 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 29,
-   "aceitos": 13,
-   "possiveis": 7
+   "aceitos": 11,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 9,
-   "aceitos": 5,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
@@ -49,15 +49,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 13,
-   "aceitos": 3,
+   "lidos": 14,
+   "aceitos": 2,
    "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 5,
+   "lidos": 3,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -65,8 +65,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 3,
+   "lidos": 4,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -89,17 +89,17 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 42,
-   "aceitos": 2,
+   "lidos": 45,
+   "aceitos": 0,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 54,
-   "aceitos": 3,
-   "possiveis": 8
+   "lidos": 63,
+   "aceitos": 2,
+   "possiveis": 9
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 16,
+   "lidos": 17,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 27,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 18,
+   "lidos": 17,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -155,7 +155,7 @@
    "ok": true,
    "lidos": 19,
    "aceitos": 1,
-   "possiveis": 5
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -166,11 +166,51 @@
    "possiveis": 0
   },
   {
+   "fonte": "Google Notícias",
+   "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
+   "ok": true,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0
+  },
+  {
+   "fonte": "Google Notícias",
+   "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
+   "ok": true,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0
+  },
+  {
+   "fonte": "Google Notícias",
+   "consulta": "\"próximo governador\" OR \"futuro governador\" Espírito Santo (contas OR caixa OR receita OR orçamento OR dívida OR \"bombas fiscais\")",
+   "ok": true,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0
+  },
+  {
+   "fonte": "Google Notícias",
+   "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
+   "ok": true,
+   "lidos": 5,
+   "aceitos": 4,
+   "possiveis": 1
+  },
+  {
+   "fonte": "Google Notícias",
+   "consulta": "\"governo do ES\" (previdência OR Ipajm OR \"regime próprio\" OR \"contribuição previdenciária\" OR aposentadoria)",
+   "ok": true,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0
+  },
+  {
    "fonte": "A Gazeta",
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 1,
    "possiveis": 6
   },
   {
@@ -179,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -195,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -210,7 +250,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -218,7 +258,7 @@
    "consulta": "https://www.agazeta.com.br/colunas/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -238,23 +278,35 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto": 294,
-  "possivel": 36,
-  "oficial_sem_tema": 3,
+  "sem_contexto": 300,
+  "excluir": 37,
+  "possivel": 37,
+  "oficial_sem_tema": 2,
   "oficial_divulgacao": 1,
-  "sem_contexto_com_tema": 2,
-  "generico_sem_ancora": 1,
-  "veiculo_excluido": 24,
-  "excluir": 18,
+  "sem_contexto_com_tema": 1,
+  "generico_sem_ancora": 2,
+  "veiculo_excluido": 26,
   "caixa_alta": 1,
-  "outro_estado": 20,
-  "veiculo_outra_praca": 1,
-  "sigla_sem_ancora": 8,
+  "outro_estado": 21,
+  "veiculo_outra_praca": 2,
+  "sigla_sem_ancora": 7,
   "exterior_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "4abf9d6f7d98",
+   "titulo": "Assembleia vai apurar denúncias de violência política no ES",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/assembleia-violencia-politica-no-es/",
+   "data": "2026-11-10T11:26:59Z",
+   "coletado_em": "2026-11-10T12:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "8048e258d803",
    "titulo": "Estande da Setur",
@@ -264,7 +316,7 @@
    "coletado_em": "2026-11-10T11:17:15Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -276,7 +328,7 @@
    "coletado_em": "2026-11-10T11:17:15Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -288,7 +340,26 @@
    "coletado_em": "2026-11-10T10:17:15Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "c6276421960b",
+   "titulo": "Espírito Santo registra superávits, bate recorde de investimentos e lidera indicadores fiscais do País",
+   "veiculo": "Blog do Elimar Cortes",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPRWhielNHU3k4MGthQUs2WWE4amR3dExCQ3hScGNOUzV0OWM4cWFyNTVNNlpEUVhCbE9MQm8yRTNBM2NqZHBzaExQSXlCRmtmaW9ySkdBZy0ydkg0SlhMczVEWWtnRlRWOHVicVlaQno5VXRmTTJvZlJxc1hHLTlMd19sMnpDZzRQTUJ6Y1F5dHRzR096TDNtdnBVU1BsS25LTTBPYjNwcTZXcFdhdVdoOFduaTJtTzI3MjJpdTVSYzhQcEJNRnN0WEVXSWVSM0JjWEJfdm1TRmU?oc=5",
+   "data": "2026-11-10T09:34:35Z",
+   "coletado_em": "2026-11-10T12:17:15Z",
+   "outras": [
+    {
+     "veiculo": "Sefaz-ES",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPeE05WG5Ea0tYankzQUFJR3Npb3JScUw0aDZvOHZVM1RmTGhDRk5qbE5BRWZieWoyMmppclpRbjZ2YUFBOHpkLTU1TzZ6ZWYwVzR0VVRwZ094TF9QWnNtYTdFSXFuSHA2c3YzbUJFV2hMSThxSHlUWFNWdVZyOTQzNDB6TXR1eFEzUVpSR2NQa3RodnZSSDMzSlpkejZweEx5RnpfWG5sSHdDMl8zeXc1TG1DRFU4bGdSTW1RTW5wRFhCa3M?oc=5"
+    }
+   ],
+   "possivel": false,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -302,7 +373,7 @@
    "coletado_em": "2026-11-10T09:17:14Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -316,23 +387,9 @@
    "coletado_em": "2026-11-10T09:17:14Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
-   ]
-  },
-  {
-   "id": "cf17a5332a3a",
-   "titulo": "Importação de carros pelo ES seguirá forte (apesar do imposto mais alto...)",
-   "veiculo": "A Gazeta",
-   "url": "https://www.agazeta.com.br/colunas/abdo-filho/importacao-de-carros-pelo-es-seguira-forte-apesar-do-imposto-mais-alto-1126",
-   "data": "2026-11-10T06:00:00Z",
-   "coletado_em": "2026-11-10T09:17:14Z",
-   "outras": [],
-   "possivel": false,
-   "triagem": 7,
-   "temas": [
-    "financas"
    ]
   },
   {
@@ -344,7 +401,7 @@
    "coletado_em": "2026-11-10T09:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -358,7 +415,7 @@
    "coletado_em": "2026-11-10T02:44:58Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -372,7 +429,7 @@
    "coletado_em": "2026-11-10T09:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "controle"
    ]
@@ -391,7 +448,7 @@
     }
    ],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -403,7 +460,7 @@
    "coletado_em": "2026-11-10T00:17:14Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -418,7 +475,7 @@
    "coletado_em": "2026-11-10T10:17:15Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -430,36 +487,8 @@
    "coletado_em": "2026-11-09T23:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
-  },
-  {
-   "id": "0adb8366484c",
-   "titulo": "Canal de Camburi: Vitória muda regras de funcionamento de restaurantes e adia licitação",
-   "veiculo": "Folha Vitória",
-   "url": "https://www.folhavitoria.com.br/cotidiano/canal-de-camburi-vitoria-muda-regras-de-funcionamento-de-restaurantes-e-adia-licitacao/",
-   "data": "2026-11-09T21:50:14Z",
-   "coletado_em": "2026-11-09T22:17:14Z",
-   "outras": [],
-   "possivel": false,
-   "triagem": 7,
-   "temas": [
-    "contratos"
-   ]
-  },
-  {
-   "id": "3b23fc13f637",
-   "titulo": "Justiça nega cobrança de imposto de prefeitura a trabalhadores do Porto de Vitória",
-   "veiculo": "A Gazeta",
-   "url": "https://www.agazeta.com.br/es/economia/justica-nega-cobranca-de-imposto-de-prefeitura-a-trabalhadores-do-porto-de-vitoria-1126",
-   "data": "2026-11-09T21:49:11Z",
-   "coletado_em": "2026-11-09T22:17:14Z",
-   "outras": [],
-   "possivel": false,
-   "triagem": 7,
-   "temas": [
-    "financas"
-   ]
   },
   {
    "id": "84f0027889b3",
@@ -470,7 +499,7 @@
    "coletado_em": "2026-11-09T22:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -484,7 +513,7 @@
    "coletado_em": "2026-11-09T22:17:14Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -499,7 +528,7 @@
    "coletado_em": "2026-11-09T22:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "pessoal"
    ]
@@ -513,7 +542,7 @@
    "coletado_em": "2026-11-09T21:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -525,7 +554,7 @@
    "coletado_em": "2026-11-09T22:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -539,7 +568,7 @@
    "coletado_em": "2026-11-09T21:17:13Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -554,7 +583,7 @@
    "coletado_em": "2026-11-09T21:17:13Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -568,7 +597,7 @@
    "coletado_em": "2026-11-09T21:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -580,7 +609,7 @@
    "coletado_em": "2026-11-09T21:17:13Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "controle"
    ]
@@ -594,7 +623,7 @@
    "coletado_em": "2026-11-09T21:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "contratos"
    ]
@@ -608,7 +637,7 @@
    "coletado_em": "2026-11-09T20:17:16Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -622,7 +651,7 @@
    "coletado_em": "2026-11-09T20:17:16Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -636,22 +665,8 @@
    "coletado_em": "2026-11-09T20:17:16Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
-  },
-  {
-   "id": "66bfadd06145",
-   "titulo": "Concurso da PMES: veja o que fazer se você foi prejudicado na prova",
-   "veiculo": "Folha Vitória",
-   "url": "https://www.folhavitoria.com.br/trabalho/concursos/concurso-da-pmes-veja-o-que-fazer-se-voce-foi-prejudicado-na-prova/",
-   "data": "2026-11-09T19:56:08Z",
-   "coletado_em": "2026-11-09T20:17:16Z",
-   "outras": [],
-   "possivel": false,
-   "triagem": 7,
-   "temas": [
-    "pessoal"
-   ]
   },
   {
    "id": "44532cdc50a9",
@@ -662,7 +677,7 @@
    "coletado_em": "2026-11-09T20:17:16Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -676,7 +691,7 @@
    "coletado_em": "2026-11-09T19:50:06Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "pessoal"
    ]
@@ -690,7 +705,7 @@
    "coletado_em": "2026-11-09T23:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -702,7 +717,7 @@
    "coletado_em": "2026-11-09T19:17:16Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -716,7 +731,7 @@
    "coletado_em": "2026-11-09T19:17:16Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -728,7 +743,7 @@
    "coletado_em": "2026-11-09T19:17:16Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -743,7 +758,7 @@
    "coletado_em": "2026-11-09T20:17:16Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -758,7 +773,7 @@
    "coletado_em": "2026-11-09T19:17:16Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "pessoal"
    ]
@@ -772,7 +787,7 @@
    "coletado_em": "2026-11-09T19:17:16Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao"
    ]
@@ -786,7 +801,7 @@
    "coletado_em": "2026-11-09T18:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "contratos"
    ]
@@ -800,7 +815,7 @@
    "coletado_em": "2026-11-09T18:17:14Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador",
     "controle"
@@ -815,7 +830,7 @@
    "coletado_em": "2026-11-09T18:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "contratos"
    ]
@@ -829,7 +844,7 @@
    "coletado_em": "2026-11-09T18:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "contratos"
    ]
@@ -843,7 +858,7 @@
    "coletado_em": "2026-11-09T18:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -855,7 +870,7 @@
    "coletado_em": "2026-11-09T18:17:14Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -867,27 +882,24 @@
    "coletado_em": "2026-11-09T17:17:16Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "controle"
    ]
   },
   {
-   "id": "dda925297274",
-   "titulo": "Operação integrada do Detran|ES flagra 13 conduzindo sem habilitação em Colatina",
-   "veiculo": "Detran-ES",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNREtwOUc1Vlc2V2pjSjQyTERaaG5aZFdWNGZBV2czcXR5Wjgwb21QQnNtM01iTEVUbjBEdUI1LVp3WWNuYzZNbXdNSVBDYnNEQjlXWV9uYk12Q2xNbWFfYW1NZXo2TldyVTF0UkYyMGpMMG5YUlVobFdSQWZmT0dMQ3pmeERielhpZ0JVVFVrenJja2tTWG9RcVNrMTRuLTRMSVhaeXlEamQ?oc=5",
-   "data": "2026-11-09T16:34:00Z",
-   "coletado_em": "2026-11-09T17:17:16Z",
-   "outras": [
-    {
-     "veiculo": "Governo ES",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOMkp3cXdpS3VCenQ1NTdrZ09zNkRwZTVySm9wclg1N2VjLTNCSVdSYVpOdkdkNGRXOTZmX0RPVTNzSUdhU2tSLVBOb0tYTmRoSG1KR0ttdFk2aUxZTVJ0UVBlbXQ0RnhFWFBnaENjdzlNN2JNamlWdW56YUt6TE13YU5fOU1JdGNXdVRyS0N1Q2xVWjFnSTBWaXVtbVhLSzlDbTh5bA?oc=5"
-    }
-   ],
+   "id": "07ce36d6a419",
+   "titulo": "Fórum de Financiamento Climático 2026 debate transição verde em Vitória",
+   "veiculo": "Informe Capixaba",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA4a1psaHE2WldIdVBXQndJdGlVeVZTM1JFOEluZTdVU3ptRGhYLVhSZkQ3cEdFUW1OT09NZUNEbVJ0YXhaRk00VE55NktJdnlZdHcwdmtKWFItdUYwaURlTmdrRy0xWnprb3hVRGZySHNHOEFPdDJEenBkUzA?oc=5",
+   "data": "2026-11-09T16:43:18Z",
+   "coletado_em": "2026-11-10T12:17:15Z",
+   "outras": [],
    "possivel": false,
-   "triagem": 7,
-   "temas": []
+   "triagem": 8,
+   "temas": [
+    "transicao"
+   ]
   },
   {
    "id": "e41f7d974ede",
@@ -898,7 +910,7 @@
    "coletado_em": "2026-11-09T18:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -912,23 +924,11 @@
    "coletado_em": "2026-11-09T17:17:16Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
    ]
-  },
-  {
-   "id": "2b781cb741d5",
-   "titulo": "Fames abre inscrições com 62 vagas para cursos de música",
-   "veiculo": "Folha do ES",
-   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNOFdPZDhIcEt5V0VkNnRSTlB1aWZEeVBIQ0pwQmh5d0dnYTJYWTR6V0FvX2xyUklNQ3BSTVdqQlZ4bWRWcUlNNnZYT2RMYmp5c0RlYUREekxKa1Z4NnNIMk1sVi0zRGpXNjhUTzBQZG1Uc3BEdTJhTUFFbkhTUklSbFRfcktUdw?oc=5",
-   "data": "2026-11-09T16:04:30Z",
-   "coletado_em": "2026-11-10T09:17:14Z",
-   "outras": [],
-   "possivel": false,
-   "triagem": 7,
-   "temas": []
   },
   {
    "id": "d06f02e1cc32",
@@ -952,7 +952,7 @@
     }
    ],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -964,7 +964,7 @@
    "coletado_em": "2026-11-09T16:17:14Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -979,7 +979,7 @@
    "coletado_em": "2026-11-09T16:17:14Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -994,7 +994,7 @@
    "coletado_em": "2026-11-09T16:17:14Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -1014,7 +1014,7 @@
     }
    ],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -1026,7 +1026,7 @@
    "coletado_em": "2026-11-09T17:17:16Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "pessoal"
    ]
@@ -1040,35 +1040,9 @@
    "coletado_em": "2026-11-09T15:18:37Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "pessoal"
-   ]
-  },
-  {
-   "id": "66478f0fa515",
-   "titulo": "Quem é bispa Eliane Leal, vice-governadora eleita do ES? Ela mesma responde",
-   "veiculo": "A Gazeta",
-   "url": "https://www.agazeta.com.br/colunas/leticia-goncalves/quem-e-bispa-eliane-leal-vice-governadora-eleita-do-es-ela-mesma-responde-1126",
-   "data": "2026-11-09T15:10:00Z",
-   "coletado_em": "2026-11-09T15:18:37Z",
-   "outras": [],
-   "possivel": false,
-   "triagem": 7,
-   "temas": []
-  },
-  {
-   "id": "f9339815c01a",
-   "titulo": "Vitória terá tributo gratuito a Marília Mendonça nesta sexta",
-   "veiculo": "ES Hoje",
-   "url": "https://eshoje.com.br/entretenimento/2026/11/tributo-marilia-mendonca/",
-   "data": "2026-11-09T15:07:26Z",
-   "coletado_em": "2026-11-09T15:18:37Z",
-   "outras": [],
-   "possivel": false,
-   "triagem": 7,
-   "temas": [
-    "financas"
    ]
   },
   {
@@ -1080,9 +1054,24 @@
    "coletado_em": "2026-11-09T15:18:37Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
-    "governador"
+    "governador",
+    "financas"
+   ]
+  },
+  {
+   "id": "941489109373",
+   "titulo": "Acordo do Rio Doce soma R$ 1,2 bilhão em ações no Espírito Santo",
+   "veiculo": "Vitória News",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOdHpxUUtGNzJvX2pEMG5jWjZrN3FPN1pPZ0draVFNMEpfNXI0XzhOMUtoeGQyRHAxQWtaYlB1cHBldmt3SHhiMldJS1VQMmFTU1R3dEZXVDFVUlRIVTktVml2SVFVVFp0MFU3WDNXTk15b1BwWl9oVnF2TTBXRlVIM083NGd1MHA1U1ZCem1KWi1fb1k?oc=5",
+   "data": "2026-11-09T14:57:19Z",
+   "coletado_em": "2026-11-10T12:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "financas"
    ]
   },
   {
@@ -1094,7 +1083,7 @@
    "coletado_em": "2026-11-09T16:17:14Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -1108,28 +1097,9 @@
    "coletado_em": "2026-11-09T15:18:37Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao"
-   ]
-  },
-  {
-   "id": "368678de4823",
-   "titulo": "Governo do Estado divulga os 40 finalistas do Prêmio Cafés Especiais do Espírito Santo 2026",
-   "veiculo": "Governo ES",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOSkVJRjVaSXJ3aVpJbF9iOEI1TTFLa3ZMTlllSy1SaF8zd01aU0JVMWV1ZjBBZUVLZmM5MkZyRXVpMHNKMFZEX0gyZnZoYzYyTmFkTHpyNm1jQUg4M010Z0lfNEZONjZ4RzdCcE5fX1l6eHVlM2xrbTR2OWVRREI5dVBhRUpkeGhtR0ZYRUZzTnZqYnpjUGotQ1l5RE8wVENUclEzSTIzZlIwZUMzR3hXMlNrRQ?oc=5",
-   "data": "2026-11-09T14:26:00Z",
-   "coletado_em": "2026-11-09T15:18:37Z",
-   "outras": [
-    {
-     "veiculo": "SiteBarra",
-     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNdmREdElNTHJZRGlUa1A1ZGJmUk1rTjBPWmJaVG1NQWVWcjdwb1lFQUxpVGtVNmY5bDlLM2hrbkJicGM5TEFCUGtIZ0tPeFpEeXV0T0x1WlhNOVlXakc5T2dOVVNFN2R3c1ZULUsyZHByQ0JLLVZJX3kzVVZqdnE5WTROWEVNX1FvWHJ3U0J5UWdFMDNfMGVBWGw1Mk92WXNxaU1RUWxWSmJqbXA5N1U1am5sWmhHX2JmdTJqVw?oc=5"
-    }
-   ],
-   "possivel": false,
-   "triagem": 7,
-   "temas": [
-    "governador"
    ]
   },
   {
@@ -1141,7 +1111,7 @@
    "coletado_em": "2026-11-09T14:17:15Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -1155,7 +1125,7 @@
    "coletado_em": "2026-11-09T14:17:15Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -1169,7 +1139,7 @@
    "coletado_em": "2026-11-09T15:18:37Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "restricao"
    ]
@@ -1183,7 +1153,7 @@
    "coletado_em": "2026-11-09T14:17:15Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "contratos"
    ]
@@ -1197,24 +1167,10 @@
    "coletado_em": "2026-11-09T14:17:15Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "restricao",
     "contratos"
-   ]
-  },
-  {
-   "id": "e00275ac6029",
-   "titulo": "CBN Vitória ao vivo: tire todas suas dúvidas sobre a Reforma Tributária",
-   "veiculo": "A Gazeta",
-   "url": "https://www.agazeta.com.br/es/cotidiano/cbn-vitoria-ao-vivo-tire-todas-suas-duvidas-sobre-a-reforma-tributaria-1126",
-   "data": "2026-11-09T12:43:13Z",
-   "coletado_em": "2026-11-09T13:17:17Z",
-   "outras": [],
-   "possivel": false,
-   "triagem": 7,
-   "temas": [
-    "financas"
    ]
   },
   {
@@ -1226,9 +1182,23 @@
    "coletado_em": "2026-11-09T13:17:17Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
+   ]
+  },
+  {
+   "id": "eefe6133beb4",
+   "titulo": "27 mil vagas para recenseador em novo concurso do IBGE",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPQl9UNnhmek5SaWZmN04tblB3c3FmSlBlQl92Y1FPMnF5UGFJTXp6YllnTkdDWkhYRTVQQ195eHc3UjF2eHl2bENVeDNUWHh2blFVQnIwbTVjVFg0akFNOVZCREdhV0ZHREZWaWxIbjJnblZRM0YxWXoxaUZENWFRMEM0ekt2eVF4RV81cDR0R191OFBIRUpBeEYwV3I4eUdYUlVrRDZQUEdsQdIBqgFBVV95cUxPQl9UNnhmek5SaWZmN04tblB3c3FmSlBlQl92Y1FPMnF5UGFJTXp6YllnTkdDWkhYRTVQQ195eHc3UjF2eHl2bENVeDNUWHh2blFVQnIwbTVjVFg0akFNOVZCREdhV0ZHREZWaWxIbjJnblZRM0YxWXoxaUZENWFRMEM0ekt2eVF4RV81cDR0R191OFBIRUpBeEYwV3I4eUdYUlVrRDZQUEdsQQ?oc=5",
+   "data": "2026-11-09T12:25:50Z",
+   "coletado_em": "2026-11-10T12:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
    ]
   },
   {
@@ -1240,7 +1210,7 @@
    "coletado_em": "2026-11-09T13:17:17Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "pessoal"
    ]
@@ -1254,22 +1224,10 @@
    "coletado_em": "2026-11-09T12:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
-  },
-  {
-   "id": "14e73c98726c",
-   "titulo": "Matrículas na rede estadual do ES para 2027 começam nesta segunda",
-   "veiculo": "Tribuna Online",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOZ2xNcnYyRU04X1VXTWRDNm1SdXRaalFMb2JvQjFyZVpteEI2dTlZRk1WLU9RSEd6aVF5UVJnb19OOEppTmctWWItUnc0dXl3N3BFbDRWc0VvQWR5RnU2MFNRdkhaQjhlYWh3VElWUXdCVEZFeGlGLWt0Z0FlWnExb2pXanFHNkZRSEVDdzYydlo0QzFUU2RpZmV6UGNvS05MdkV2d2x5anMzamVxWlJiOUZIQVluUWPSAbcBQVVfeXFMTmdsTXJ2MkVNOF9VV01kQzZtUnV0WmpRTG9ib0IxcmVabXhCNnU5WUZNVi1PUUhHemlReVFSZ29fTjhKaU5nLVliLVJ3NHV5dzdwRWw0VnNFb0FkeUZ1NjBTUXZIWkI4ZWFod1RJVlF3QlRGRXhpRi1rdGdBZVpxMW9qV2pxRzZGUUhFQ3c2MnZaNEMxVFNkaWZlelBjb0tOTHZFdndseWpzM2plcVpSYjlGSEFZblFj?oc=5",
-   "data": "2026-11-09T11:38:10Z",
-   "coletado_em": "2026-11-09T14:17:15Z",
-   "outras": [],
-   "possivel": false,
-   "triagem": 7,
-   "temas": []
   },
   {
    "id": "a5954202b76e",
@@ -1280,7 +1238,7 @@
    "coletado_em": "2026-11-09T12:17:13Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -1294,27 +1252,10 @@
    "coletado_em": "2026-11-09T10:17:15Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao"
    ]
-  },
-  {
-   "id": "7506b7b93e26",
-   "titulo": "Detran altera regras e vai bloquear CNH de motoristas com pendências no CPF em 2026",
-   "veiculo": "Portal Tempo Novo",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUGtoTXpWc1JTY3ZsQnhVa1RZYUphSzZ2NmwwNk83R3BBWktURzNKZ0VUTUJLcXZ1LUpEYThqMHFpemptVGtKQnZmWkR4ZmlNVkhoXy1iVFpRamYzeEhfdDZzVzdMQWtXVGNMR0pISXBQc0FDTm5PVTRiV0dqNXROa0VyTnJxVV9pei02blNyRUhvTTZfaUxaVjl6QUlsNmJ4eXhfblRJQWozRkNOdlFQNQ?oc=5",
-   "data": "2026-11-09T09:03:00Z",
-   "coletado_em": "2026-11-09T12:17:13Z",
-   "outras": [
-    {
-     "veiculo": "Folha do ES",
-     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQa19ENTNnUFByY0RLa0ZDemxvOHJlRTRxZUpqdE5iLUpGVUw4dmhHSVhULXNxeDd6WHRDUG8xbkFiRkRDN05idWk4M0pLeExxdDFXMElIQ0NreF92cm1qXzlNUzcxWmZfMUpGRW03RlhydFljX0M4RDU5U3lDN29SZFBHeXlSdzU1azBILW5jNllSVURwZ0gxZFFzQ2JuVXF5Z210RTA0ZTVpUQ?oc=5"
-    }
-   ],
-   "possivel": false,
-   "triagem": 7,
-   "temas": []
   },
   {
    "id": "4ef3cbdcff2c",
@@ -1325,7 +1266,7 @@
    "coletado_em": "2026-11-09T09:17:18Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -1337,7 +1278,7 @@
    "coletado_em": "2026-11-09T09:17:18Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -1349,21 +1290,21 @@
    "coletado_em": "2026-11-09T07:59:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
-   "id": "0bcca9d0372c",
-   "titulo": "Amigas mantêm a tradição e homenageiam Paula Pazolini em almoço festivo",
-   "veiculo": "Folha Vitória",
-   "url": "https://www.folhavitoria.com.br/social/amigas-mantem-a-tradicao-e-homenageiam-paula-pazolini-em-almoco-festivo/",
-   "data": "2026-11-09T03:02:00Z",
-   "coletado_em": "2026-11-09T07:59:14Z",
+   "id": "2e3ce7b5a70b",
+   "titulo": "Acordo do Rio Doce completa dois anos com R$ 3,7 bilhões repassados",
+   "veiculo": "Prensa Mercosur",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOdHR5YnZaOTFzRk5JNm5EVmcxenBwTXlMaUNNVHFJSU5sd3c3S21OTUdQMU5hV3JtMk91SUtVelRRb0pXS3paUktVQVJaMU5pVGVub0s1ODZwcnN2NUlGc3liMkhCRC1NU201ZmV5N3hpeC1vT1ZjV1NKWkNsUi1aSk5GT29iN0hhSzgwZ1FlSHExb1hGam5aYmgzMnpTNlJVc1hMYWJrQQ?oc=5",
+   "data": "2026-11-09T01:35:40Z",
+   "coletado_em": "2026-11-10T12:17:15Z",
    "outras": [],
-   "possivel": false,
-   "triagem": 7,
+   "possivel": true,
+   "triagem": 8,
    "temas": [
-    "governador"
+    "financas"
    ]
   },
   {
@@ -1375,7 +1316,7 @@
    "coletado_em": "2026-11-09T00:55:45Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -1389,19 +1330,7 @@
    "coletado_em": "2026-11-09T11:17:15Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
-   "temas": []
-  },
-  {
-   "id": "bd1ec13202d8",
-   "titulo": "IBGE, Banestes e prefeituras: veja mais de 29 mil vagas abertas em concursos",
-   "veiculo": "Folha Vitória",
-   "url": "https://www.folhavitoria.com.br/trabalho/concursos/ibge-banestes-e-prefeituras-veja-mais-de-29-mil-vagas-abertas-em-concursos/",
-   "data": "2026-11-08T20:34:12Z",
-   "coletado_em": "2026-11-08T21:17:13Z",
-   "outras": [],
-   "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -1413,7 +1342,7 @@
    "coletado_em": "2026-11-08T20:29:39Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "pessoal"
    ]
@@ -1427,7 +1356,7 @@
    "coletado_em": "2026-11-08T20:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "pessoal"
    ]
@@ -1441,7 +1370,7 @@
    "coletado_em": "2026-11-08T19:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "pessoal"
    ]
@@ -1455,23 +1384,11 @@
    "coletado_em": "2026-11-08T18:17:12Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "pessoal",
     "controle"
    ]
-  },
-  {
-   "id": "d3bf4eab89e3",
-   "titulo": "Taser 10: Detran-ES capacita 11 agentes de trânsito",
-   "veiculo": "ES Brasil",
-   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1wdDJwdnFCZmh6X2Uwc0RkamVOZmRzWHBDbUtyZ2tJLTEwcW55cU1yOFJkcnNBbTh3aEI5OGpLcmlmc0xCbEsySWZRU2Z0bGhENk1jNkVNVEI0U1dNdWdQNUI2dFNfYjROcFdDdWlvcnF4azZYU2E5d1pUOGk?oc=5",
-   "data": "2026-11-08T18:00:00Z",
-   "coletado_em": "2026-11-08T18:17:12Z",
-   "outras": [],
-   "possivel": false,
-   "triagem": 7,
-   "temas": []
   },
   {
    "id": "7e841e206c1b",
@@ -1482,7 +1399,7 @@
    "coletado_em": "2026-11-08T17:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "pessoal"
    ]
@@ -1501,7 +1418,7 @@
     }
    ],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "pessoal"
    ]
@@ -1515,7 +1432,7 @@
    "coletado_em": "2026-11-08T17:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -1527,7 +1444,7 @@
    "coletado_em": "2026-11-09T11:17:15Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "contratos"
    ]
@@ -1541,7 +1458,7 @@
    "coletado_em": "2026-11-08T15:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -1555,7 +1472,7 @@
    "coletado_em": "2026-11-08T18:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -1567,7 +1484,7 @@
    "coletado_em": "2026-11-08T13:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "contratos"
    ]
@@ -1586,7 +1503,7 @@
     }
    ],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -1598,7 +1515,7 @@
    "coletado_em": "2026-11-08T11:17:18Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "pessoal"
    ]
@@ -1612,7 +1529,7 @@
    "coletado_em": "2026-11-07T23:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -1624,7 +1541,7 @@
    "coletado_em": "2026-11-07T20:14:47Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -1638,7 +1555,7 @@
    "coletado_em": "2026-11-07T19:17:11Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -1650,7 +1567,7 @@
    "coletado_em": "2026-11-09T01:17:13Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -1664,7 +1581,7 @@
    "coletado_em": "2026-11-08T06:02:20Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -1676,7 +1593,7 @@
    "coletado_em": "2026-11-07T19:17:11Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -1688,7 +1605,7 @@
    "coletado_em": "2026-11-07T14:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -1700,7 +1617,7 @@
    "coletado_em": "2026-11-07T14:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -1714,7 +1631,7 @@
    "coletado_em": "2026-11-08T20:29:39Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -1728,7 +1645,7 @@
    "coletado_em": "2026-11-07T12:17:13Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -1743,7 +1660,7 @@
    "coletado_em": "2026-11-08T19:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -1755,7 +1672,7 @@
    "coletado_em": "2026-11-07T15:17:17Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "contratos"
    ]
@@ -1769,7 +1686,7 @@
    "coletado_em": "2026-11-07T12:17:13Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -1783,7 +1700,7 @@
    "coletado_em": "2026-11-08T20:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -1795,7 +1712,7 @@
    "coletado_em": "2026-11-07T09:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -1807,7 +1724,7 @@
    "coletado_em": "2026-11-07T01:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "controle"
    ]
@@ -1821,7 +1738,7 @@
    "coletado_em": "2026-11-06T23:17:25Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -1835,7 +1752,7 @@
    "coletado_em": "2026-11-07T01:17:12Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -1847,7 +1764,7 @@
    "coletado_em": "2026-11-06T23:17:25Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "contratos"
    ]
@@ -1861,7 +1778,7 @@
    "coletado_em": "2026-11-07T01:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas",
     "contratos"
@@ -1876,7 +1793,7 @@
    "coletado_em": "2026-11-06T21:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -1890,7 +1807,7 @@
    "coletado_em": "2026-11-08T10:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -1902,7 +1819,7 @@
    "coletado_em": "2026-11-07T12:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -1914,23 +1831,10 @@
    "coletado_em": "2026-11-07T21:17:12Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
-    "governador"
-   ]
-  },
-  {
-   "id": "27da22b65022",
-   "titulo": "Camila Valadão: da militância à Assembleia Legislativa",
-   "veiculo": "Sim Notícias",
-   "url": "https://simnoticias.com.br/politica/camila-valadao-da-militancia-a-assembleia-legislativa/",
-   "data": "2026-11-06T19:55:23Z",
-   "coletado_em": "2026-11-06T20:17:13Z",
-   "outras": [],
-   "possivel": false,
-   "triagem": 7,
-   "temas": [
-    "controle"
+    "governador",
+    "financas"
    ]
   },
   {
@@ -1942,7 +1846,7 @@
    "coletado_em": "2026-11-06T20:17:13Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -1957,7 +1861,7 @@
    "coletado_em": "2026-11-06T20:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -1974,7 +1878,7 @@
     }
    ],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "contratos"
    ]
@@ -1988,7 +1892,7 @@
    "coletado_em": "2026-11-06T20:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -2000,7 +1904,7 @@
    "coletado_em": "2026-11-06T19:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -2012,23 +1916,11 @@
    "coletado_em": "2026-11-06T19:17:13Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
    ]
-  },
-  {
-   "id": "1ed6a6fed4c0",
-   "titulo": "Detran|ES capacita agentes de trânsito para uso da Taser 10",
-   "veiculo": "Governo ES",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbFI5UjF6czMwM3Y3ZTFZSjAtVnIzUVhTeEZyOHNGMEZNTmVhQ0VvTDVlWjlvV29nNTZFbjdXbGRvYjR2SmJubkVLb1k2TXUtRnZvY1lkV2g2T05HNVpCdFlwN29VZWlNV21vMDJVUS1MdEROWW1iSUxobTBwTmE0aHpmZWdib3F6?oc=5",
-   "data": "2026-11-06T18:22:00Z",
-   "coletado_em": "2026-11-08T17:17:13Z",
-   "outras": [],
-   "possivel": true,
-   "triagem": 7,
-   "temas": []
   },
   {
    "id": "7f25ea5af162",
@@ -2039,7 +1931,7 @@
    "coletado_em": "2026-11-08T18:17:12Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao"
    ]
@@ -2053,7 +1945,7 @@
    "coletado_em": "2026-11-07T15:17:17Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -2067,7 +1959,7 @@
    "coletado_em": "2026-11-06T18:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "contratos"
    ]
@@ -2081,7 +1973,7 @@
    "coletado_em": "2026-11-06T18:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao"
    ]
@@ -2104,7 +1996,7 @@
     }
    ],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -2119,7 +2011,7 @@
    "coletado_em": "2026-11-08T10:17:13Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -2133,7 +2025,7 @@
    "coletado_em": "2026-11-06T18:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -2145,7 +2037,7 @@
    "coletado_em": "2026-11-06T18:17:14Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao"
    ]
@@ -2159,7 +2051,7 @@
    "coletado_em": "2026-11-08T17:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -2171,7 +2063,7 @@
    "coletado_em": "2026-11-06T18:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -2183,7 +2075,7 @@
    "coletado_em": "2026-11-07T10:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -2195,7 +2087,7 @@
    "coletado_em": "2026-11-06T18:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -2207,7 +2099,7 @@
    "coletado_em": "2026-11-06T21:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -2224,7 +2116,7 @@
     }
    ],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -2239,7 +2131,7 @@
    "coletado_em": "2026-11-06T16:47:28Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -2251,7 +2143,7 @@
    "coletado_em": "2026-11-06T16:17:12Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -2266,7 +2158,7 @@
    "coletado_em": "2026-11-06T16:47:28Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "contratos"
    ]
@@ -2280,7 +2172,7 @@
    "coletado_em": "2026-11-06T16:17:12Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -2292,7 +2184,7 @@
    "coletado_em": "2026-11-06T15:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -2304,7 +2196,7 @@
    "coletado_em": "2026-11-06T15:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "contratos"
    ]
@@ -2318,7 +2210,7 @@
    "coletado_em": "2026-11-06T21:17:13Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "pessoal"
    ]
@@ -2332,7 +2224,7 @@
    "coletado_em": "2026-11-06T15:17:13Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "pessoal"
    ]
@@ -2346,7 +2238,7 @@
    "coletado_em": "2026-11-08T11:17:18Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -2358,19 +2250,7 @@
    "coletado_em": "2026-11-06T14:17:13Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
-   "temas": []
-  },
-  {
-   "id": "ebf5720dcbc9",
-   "titulo": "PMES divulga novas etapas dos concursos",
-   "veiculo": "PMES",
-   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1ZUjhoSlpTbDRYOGdpRjFOajdJQUl0RzAtbFJZRlg2VUdSaTR2VnVFd2RJSU1nUERuNFJlaEY4Uk1Ub3lIQ2FFSXYtT3d3b29zQnRXbTFkbkY1UEpMQ1ZXdEVXR1lIbzhTdy05ckg1SnBJSC1GSWlr?oc=5",
-   "data": "2026-11-06T13:07:02Z",
-   "coletado_em": "2026-11-08T09:17:12Z",
-   "outras": [],
-   "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -2382,7 +2262,7 @@
    "coletado_em": "2026-11-08T10:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "pessoal"
    ]
@@ -2396,7 +2276,7 @@
    "coletado_em": "2026-11-06T12:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao"
    ]
@@ -2410,7 +2290,7 @@
    "coletado_em": "2026-11-06T12:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -2424,7 +2304,7 @@
    "coletado_em": "2026-11-06T12:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -2438,7 +2318,7 @@
    "coletado_em": "2026-11-06T12:17:12Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "pessoal"
    ]
@@ -2452,7 +2332,7 @@
    "coletado_em": "2026-11-06T11:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -2466,23 +2346,9 @@
    "coletado_em": "2026-11-06T11:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "pessoal"
-   ]
-  },
-  {
-   "id": "e99f868fbb0b",
-   "titulo": "MPES pede investigação após engenheiro deixar Fórum antes de sentença em Vitória",
-   "veiculo": "A Gazeta",
-   "url": "https://www.agazeta.com.br/es/cotidiano/mpes-pede-investigacao-apos-engenheiro-deixar-forum-antes-de-sentenca-em-vitoria-1126",
-   "data": "2026-11-06T10:53:56Z",
-   "coletado_em": "2026-11-06T11:17:13Z",
-   "outras": [],
-   "possivel": false,
-   "triagem": 7,
-   "temas": [
-    "controle"
    ]
   },
   {
@@ -2494,7 +2360,7 @@
    "coletado_em": "2026-11-06T11:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -2508,7 +2374,7 @@
    "coletado_em": "2026-11-06T09:17:14Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -2522,7 +2388,7 @@
    "coletado_em": "2026-11-06T06:48:52Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -2534,7 +2400,7 @@
    "coletado_em": "2026-11-07T09:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -2546,7 +2412,7 @@
    "coletado_em": "2026-11-06T12:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -2558,7 +2424,7 @@
    "coletado_em": "2026-11-05T23:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "pessoal"
    ]
@@ -2572,7 +2438,7 @@
    "coletado_em": "2026-11-05T22:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -2586,7 +2452,7 @@
    "coletado_em": "2026-11-06T01:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -2600,7 +2466,7 @@
    "coletado_em": "2026-11-05T21:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -2612,7 +2478,7 @@
    "coletado_em": "2026-11-07T01:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -2626,7 +2492,7 @@
    "coletado_em": "2026-11-07T16:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -2638,7 +2504,7 @@
    "coletado_em": "2026-11-05T20:17:13Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -2650,7 +2516,7 @@
    "coletado_em": "2026-11-05T20:17:13Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "controle"
    ]
@@ -2664,7 +2530,7 @@
    "coletado_em": "2026-11-05T20:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -2676,7 +2542,7 @@
    "coletado_em": "2026-11-05T20:17:13Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas",
     "contratos"
@@ -2691,7 +2557,7 @@
    "coletado_em": "2026-11-05T19:17:14Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -2705,7 +2571,7 @@
    "coletado_em": "2026-11-05T19:17:14Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -2719,7 +2585,7 @@
    "coletado_em": "2026-11-05T18:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "financas"
@@ -2734,7 +2600,7 @@
    "coletado_em": "2026-11-05T18:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -2748,7 +2614,7 @@
    "coletado_em": "2026-11-05T18:17:13Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -2760,7 +2626,7 @@
    "coletado_em": "2026-11-05T18:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -2774,7 +2640,7 @@
    "coletado_em": "2026-11-05T18:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "pessoal"
    ]
@@ -2788,7 +2654,7 @@
    "coletado_em": "2026-11-05T23:38:59Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -2802,7 +2668,7 @@
    "coletado_em": "2026-11-05T17:17:15Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -2816,7 +2682,7 @@
    "coletado_em": "2026-11-05T17:17:15Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "contratos"
    ]
@@ -2830,7 +2696,7 @@
    "coletado_em": "2026-11-05T16:17:13Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -2844,7 +2710,7 @@
    "coletado_em": "2026-11-05T16:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -2858,7 +2724,7 @@
    "coletado_em": "2026-11-05T16:17:13Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -2870,7 +2736,7 @@
    "coletado_em": "2026-11-05T16:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "contratos"
    ]
@@ -2884,7 +2750,7 @@
    "coletado_em": "2026-11-05T16:17:13Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -2898,7 +2764,7 @@
    "coletado_em": "2026-11-05T15:17:14Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -2912,7 +2778,7 @@
    "coletado_em": "2026-11-05T15:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "pessoal"
    ]
@@ -2926,7 +2792,7 @@
    "coletado_em": "2026-11-05T14:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -2940,7 +2806,7 @@
    "coletado_em": "2026-11-05T23:38:59Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -2957,7 +2823,7 @@
     }
    ],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -2971,7 +2837,7 @@
    "coletado_em": "2026-11-05T13:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "controle"
    ]
@@ -2985,7 +2851,7 @@
    "coletado_em": "2026-11-06T09:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -2997,7 +2863,7 @@
    "coletado_em": "2026-11-05T13:17:14Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -3011,7 +2877,7 @@
    "coletado_em": "2026-11-05T12:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3023,7 +2889,7 @@
    "coletado_em": "2026-11-05T23:38:59Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -3038,7 +2904,7 @@
    "coletado_em": "2026-11-05T12:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -3052,7 +2918,7 @@
    "coletado_em": "2026-11-05T11:17:22Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -3066,7 +2932,7 @@
    "coletado_em": "2026-11-05T11:17:22Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "contratos",
     "controle"
@@ -3081,7 +2947,7 @@
    "coletado_em": "2026-11-05T11:17:22Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "controle"
    ]
@@ -3095,7 +2961,7 @@
    "coletado_em": "2026-11-05T09:17:13Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -3114,7 +2980,7 @@
     }
    ],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -3129,7 +2995,7 @@
    "coletado_em": "2026-11-05T00:17:12Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -3144,7 +3010,7 @@
    "coletado_em": "2026-11-05T00:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas",
     "pessoal"
@@ -3159,7 +3025,7 @@
    "coletado_em": "2026-11-04T23:17:12Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador",
     "controle"
@@ -3174,7 +3040,7 @@
    "coletado_em": "2026-11-05T01:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -3188,7 +3054,7 @@
    "coletado_em": "2026-11-05T15:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3200,7 +3066,7 @@
    "coletado_em": "2026-11-04T22:17:18Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "contratos"
    ]
@@ -3214,7 +3080,7 @@
    "coletado_em": "2026-11-04T22:17:18Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "controle"
    ]
@@ -3228,7 +3094,7 @@
    "coletado_em": "2026-11-04T22:17:18Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -3242,7 +3108,7 @@
    "coletado_em": "2026-11-05T00:17:12Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -3256,7 +3122,7 @@
    "coletado_em": "2026-11-04T21:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "controle"
    ]
@@ -3270,7 +3136,7 @@
    "coletado_em": "2026-11-04T21:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3282,7 +3148,7 @@
    "coletado_em": "2026-11-05T15:17:14Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas",
     "contratos"
@@ -3297,7 +3163,7 @@
    "coletado_em": "2026-11-04T21:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3309,7 +3175,7 @@
    "coletado_em": "2026-11-05T13:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "restricao"
    ]
@@ -3323,7 +3189,7 @@
    "coletado_em": "2026-11-04T21:17:14Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao"
    ]
@@ -3337,7 +3203,7 @@
    "coletado_em": "2026-11-04T20:17:12Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3349,7 +3215,7 @@
    "coletado_em": "2026-11-04T20:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3361,7 +3227,7 @@
    "coletado_em": "2026-11-04T20:17:12Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "financas"
@@ -3376,7 +3242,7 @@
    "coletado_em": "2026-11-04T19:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "pessoal"
    ]
@@ -3390,7 +3256,7 @@
    "coletado_em": "2026-11-04T19:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3402,7 +3268,7 @@
    "coletado_em": "2026-11-05T23:38:59Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3414,7 +3280,7 @@
    "coletado_em": "2026-11-04T18:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "contratos"
    ]
@@ -3428,7 +3294,7 @@
    "coletado_em": "2026-11-04T23:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3440,7 +3306,7 @@
    "coletado_em": "2026-11-04T17:15:51Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3452,7 +3318,7 @@
    "coletado_em": "2026-11-04T17:15:51Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3464,7 +3330,7 @@
    "coletado_em": "2026-11-04T23:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3476,7 +3342,7 @@
    "coletado_em": "2026-11-04T16:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "controle"
    ]
@@ -3490,7 +3356,7 @@
    "coletado_em": "2026-11-04T16:17:13Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "restricao",
     "governador",
@@ -3506,7 +3372,7 @@
    "coletado_em": "2026-11-04T16:17:13Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -3520,7 +3386,7 @@
    "coletado_em": "2026-11-04T14:17:15Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -3534,7 +3400,7 @@
    "coletado_em": "2026-11-04T14:17:15Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -3548,7 +3414,7 @@
    "coletado_em": "2026-11-05T23:38:59Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3560,7 +3426,7 @@
    "coletado_em": "2026-11-04T13:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -3574,7 +3440,7 @@
    "coletado_em": "2026-11-04T11:18:53Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3586,7 +3452,7 @@
    "coletado_em": "2026-11-04T11:18:53Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3598,7 +3464,7 @@
    "coletado_em": "2026-11-04T12:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "controle"
    ]
@@ -3617,7 +3483,7 @@
     }
    ],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3634,7 +3500,7 @@
     }
    ],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3646,7 +3512,7 @@
    "coletado_em": "2026-11-05T23:38:59Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -3660,23 +3526,9 @@
    "coletado_em": "2026-11-03T22:17:17Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
-   ]
-  },
-  {
-   "id": "06f5927a37bc",
-   "titulo": "Saiba quem são os três deputados estaduais eleitos pela primeira vez no ES",
-   "veiculo": "Folha Vitória",
-   "url": "https://www.folhavitoria.com.br/politica/saiba-quem-sao-os-tres-deputados-estaduais-eleitos-pela-primeira-vez-no-es/",
-   "data": "2026-11-03T21:43:42Z",
-   "coletado_em": "2026-11-03T22:17:17Z",
-   "outras": [],
-   "possivel": false,
-   "triagem": 7,
-   "temas": [
-    "controle"
    ]
   },
   {
@@ -3688,7 +3540,7 @@
    "coletado_em": "2026-11-03T22:17:17Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3700,7 +3552,7 @@
    "coletado_em": "2026-11-03T21:17:28Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao"
    ]
@@ -3719,7 +3571,7 @@
     }
    ],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3731,7 +3583,7 @@
    "coletado_em": "2026-11-03T21:17:28Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3743,7 +3595,7 @@
    "coletado_em": "2026-11-03T22:17:17Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3755,7 +3607,7 @@
    "coletado_em": "2026-11-03T21:17:28Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3767,19 +3619,7 @@
    "coletado_em": "2026-11-03T20:17:24Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
-   "temas": []
-  },
-  {
-   "id": "2d8dc90c7532",
-   "titulo": "Nova regra do Detran pode bloquear a CNH de motoristas com pendências no CPF em 2026; saiba quais irregularidades precisam ser corrigidas",
-   "veiculo": "ND Mais",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQbUJxNHdaclE4eklsZGFXWWhqNG1sTlNIOTRuX2NiY0F2RzZQMXdXb2I3eENTam9KOXRvRlBnNjdnTE1DVkRpRThQOUNxM2FCMmZYNE5UZ0d4NFlFWTBTYWgtbTk2NlpHQ01BVWE0Ry1lay1rcnFWUVBicGw2bUtneXlZLWpQVmRjcEJoUW5rWkJ1dC14Q1pyYw?oc=5",
-   "data": "2026-11-03T19:55:45Z",
-   "coletado_em": "2026-11-03T20:17:24Z",
-   "outras": [],
-   "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3791,7 +3631,7 @@
    "coletado_em": "2026-11-03T20:17:24Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -3805,7 +3645,7 @@
    "coletado_em": "2026-11-04T09:17:14Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -3819,7 +3659,7 @@
    "coletado_em": "2026-11-03T20:17:24Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -3833,7 +3673,7 @@
    "coletado_em": "2026-11-03T20:17:24Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -3847,7 +3687,7 @@
    "coletado_em": "2026-11-03T19:17:26Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -3862,7 +3702,7 @@
    "coletado_em": "2026-11-04T10:17:16Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -3876,7 +3716,7 @@
    "coletado_em": "2026-11-03T18:17:17Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -3891,7 +3731,7 @@
    "coletado_em": "2026-11-03T18:17:17Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -3905,7 +3745,7 @@
    "coletado_em": "2026-11-03T18:17:17Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -3920,7 +3760,7 @@
    "coletado_em": "2026-11-03T19:17:26Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3932,7 +3772,7 @@
    "coletado_em": "2026-11-03T17:17:17Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3944,7 +3784,7 @@
    "coletado_em": "2026-11-03T20:17:24Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3956,7 +3796,7 @@
    "coletado_em": "2026-11-03T17:04:38Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -3973,7 +3813,7 @@
     }
    ],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -3988,7 +3828,7 @@
    "coletado_em": "2026-11-03T17:04:38Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -4002,7 +3842,7 @@
    "coletado_em": "2026-11-03T16:17:20Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -4016,7 +3856,7 @@
    "coletado_em": "2026-11-03T16:17:20Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador",
     "financas",
@@ -4032,7 +3872,7 @@
    "coletado_em": "2026-11-03T16:17:20Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "pessoal"
    ]
@@ -4051,7 +3891,7 @@
     }
    ],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -4066,7 +3906,7 @@
    "coletado_em": "2026-11-03T15:17:15Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -4080,7 +3920,7 @@
    "coletado_em": "2026-11-03T15:17:15Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -4095,7 +3935,7 @@
    "coletado_em": "2026-11-03T15:17:15Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -4107,7 +3947,7 @@
    "coletado_em": "2026-11-03T15:17:15Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -4121,7 +3961,7 @@
    "coletado_em": "2026-11-03T15:17:15Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -4141,7 +3981,7 @@
     }
    ],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -4156,7 +3996,7 @@
    "coletado_em": "2026-11-03T17:04:38Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -4171,7 +4011,7 @@
    "coletado_em": "2026-11-03T13:17:12Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -4183,7 +4023,7 @@
    "coletado_em": "2026-11-03T13:17:12Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "contratos"
    ]
@@ -4197,7 +4037,7 @@
    "coletado_em": "2026-11-03T13:17:12Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -4212,7 +4052,7 @@
    "coletado_em": "2026-11-03T13:17:12Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -4227,7 +4067,7 @@
    "coletado_em": "2026-11-03T13:17:12Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador",
     "contratos"
@@ -4242,7 +4082,7 @@
    "coletado_em": "2026-11-03T13:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "pessoal"
    ]
@@ -4256,7 +4096,7 @@
    "coletado_em": "2026-11-03T12:17:18Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -4268,7 +4108,7 @@
    "coletado_em": "2026-11-03T12:17:18Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -4280,7 +4120,7 @@
    "coletado_em": "2026-11-03T12:17:18Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -4292,7 +4132,7 @@
    "coletado_em": "2026-11-03T12:17:18Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -4304,7 +4144,7 @@
    "coletado_em": "2026-11-03T13:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -4316,7 +4156,7 @@
    "coletado_em": "2026-11-03T11:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "restricao"
    ]
@@ -4330,7 +4170,7 @@
    "coletado_em": "2026-11-03T11:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "contratos"
    ]
@@ -4344,7 +4184,7 @@
    "coletado_em": "2026-11-03T11:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -4356,7 +4196,7 @@
    "coletado_em": "2026-11-03T11:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -4368,7 +4208,7 @@
    "coletado_em": "2026-11-03T09:17:11Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -4380,23 +4220,11 @@
    "coletado_em": "2026-11-03T01:17:11Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "controle"
    ]
-  },
-  {
-   "id": "0e716ab0002d",
-   "titulo": "Detran muda regras e vai bloquear CNH de motoristas com pendências no CPF em 2026",
-   "veiculo": "Portal Tempo Novo",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxONnFJREpDNm03UjQwSmhjOExEaElzYkRIZUU5alM2ajJxLVpkbWREcV91eG5UWEQzc2FzREI1VU9UaHVSWXliZS00RVJsbTlBYkFGMWFIV01wWEhZSmpjby1XaFFBQWNGUl9IMFcxalZDRE1TY19feUNwNW9kbzNpZVFaLTZEel9GV0N3UC1Fa0czaTV6RTJxaEN6LUl4ZVlpb2F5T183XzRSaEpKSEE?oc=5",
-   "data": "2026-11-03T00:20:00Z",
-   "coletado_em": "2026-11-03T01:17:11Z",
-   "outras": [],
-   "possivel": true,
-   "triagem": 7,
-   "temas": []
   },
   {
    "id": "89fdb6d60e66",
@@ -4407,7 +4235,7 @@
    "coletado_em": "2026-11-03T00:17:11Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -4421,7 +4249,7 @@
    "coletado_em": "2026-11-03T09:17:11Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -4433,7 +4261,7 @@
    "coletado_em": "2026-11-02T22:17:12Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -4447,7 +4275,7 @@
    "coletado_em": "2026-11-02T22:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "contratos"
    ]
@@ -4461,7 +4289,7 @@
    "coletado_em": "2026-11-02T19:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao"
    ]
@@ -4475,7 +4303,7 @@
    "coletado_em": "2026-11-02T16:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -4487,7 +4315,7 @@
    "coletado_em": "2026-11-02T15:17:15Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -4499,7 +4327,7 @@
    "coletado_em": "2026-11-02T14:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "pessoal"
    ]
@@ -4513,7 +4341,7 @@
    "coletado_em": "2026-11-02T13:17:25Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -4527,7 +4355,7 @@
    "coletado_em": "2026-11-02T11:17:11Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -4539,7 +4367,7 @@
    "coletado_em": "2026-11-02T07:42:15Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "controle"
    ]
@@ -4553,7 +4381,7 @@
    "coletado_em": "2026-11-02T10:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -4565,7 +4393,7 @@
    "coletado_em": "2026-11-01T18:17:13Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -4579,7 +4407,7 @@
    "coletado_em": "2026-11-01T16:02:41Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -4593,7 +4421,7 @@
    "coletado_em": "2026-11-01T16:02:41Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -4607,7 +4435,7 @@
    "coletado_em": "2026-11-01T14:17:14Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "restricao",
     "contratos"
@@ -4622,7 +4450,7 @@
    "coletado_em": "2026-11-01T15:17:11Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "contratos"
    ]
@@ -4636,7 +4464,7 @@
    "coletado_em": "2026-11-01T13:17:11Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -4650,7 +4478,7 @@
    "coletado_em": "2026-11-01T09:17:11Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -4664,7 +4492,7 @@
    "coletado_em": "2026-11-01T17:17:12Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -4678,7 +4506,7 @@
    "coletado_em": "2026-11-01T19:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "contratos",
     "controle"
@@ -4693,7 +4521,7 @@
    "coletado_em": "2026-11-01T00:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -4707,7 +4535,7 @@
    "coletado_em": "2026-11-01T00:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "contratos"
    ]
@@ -4721,7 +4549,7 @@
    "coletado_em": "2026-10-31T21:17:11Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -4733,7 +4561,7 @@
    "coletado_em": "2026-10-31T21:17:11Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "contratos"
    ]
@@ -4747,7 +4575,7 @@
    "coletado_em": "2026-10-31T20:17:11Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -4761,7 +4589,7 @@
    "coletado_em": "2026-10-31T22:17:11Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "financas"
    ]
@@ -4780,7 +4608,7 @@
     }
    ],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "controle"
    ]
@@ -4794,7 +4622,7 @@
    "coletado_em": "2026-11-01T19:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -4810,7 +4638,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "4543e7ae7a61",
@@ -4824,7 +4652,7 @@
    "temas": [
     "contratos"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "9b723624f8d4",
@@ -4838,7 +4666,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "e5de1fc63bba",
@@ -4849,7 +4677,7 @@
    "coletado_em": "2026-10-31T22:17:11Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "controle"
    ]
@@ -4863,7 +4691,7 @@
    "coletado_em": "2026-11-01T10:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -4878,7 +4706,7 @@
    "temas": [
     "contratos"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "c6ddd41f3a92",
@@ -4889,7 +4717,7 @@
    "coletado_em": "2026-11-01T22:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao"
    ]
@@ -4906,7 +4734,7 @@
    "temas": [
     "restricao"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "d09279e6d811",
@@ -4917,7 +4745,7 @@
    "coletado_em": "2026-11-01T20:17:12Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -4930,7 +4758,7 @@
    "outras": [],
    "possivel": true,
    "temas": [],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "efeb446c438f",
@@ -4941,7 +4769,7 @@
    "coletado_em": "2026-11-01T22:17:13Z",
    "outras": [],
    "possivel": true,
-   "triagem": 7,
+   "triagem": 8,
    "temas": []
   },
   {
@@ -4956,7 +4784,7 @@
    "temas": [
     "restricao"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "0febeee4c510",
@@ -4970,7 +4798,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "559083432b7d",
@@ -4984,7 +4812,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "7be8896d3611",
@@ -4998,7 +4826,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "8080a61f7d97",
@@ -5012,7 +4840,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "b4ee92bf37e2",
@@ -5026,7 +4854,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "4715829c4ddd",
@@ -5041,7 +4869,7 @@
     "restricao",
     "contratos"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "eb589f9a463e",
@@ -5052,7 +4880,7 @@
    "coletado_em": "2026-11-01T10:17:12Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -5069,7 +4897,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "5698507d35de",
@@ -5084,7 +4912,7 @@
     "transicao",
     "controle"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "77f726504dd8",
@@ -5098,7 +4926,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "ace7f0d52f95",
@@ -5112,7 +4940,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "7776a2570edc",
@@ -5126,7 +4954,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "57817477248b",
@@ -5137,7 +4965,7 @@
    "coletado_em": "2026-10-31T20:17:11Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador",
     "controle"
@@ -5155,7 +4983,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "4dda8644bb66",
@@ -5170,7 +4998,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "2256e19f41e1",
@@ -5184,7 +5012,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "0189f9910bec",
@@ -5195,7 +5023,7 @@
    "coletado_em": "2026-10-31T20:17:11Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -5225,7 +5053,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "08458ad8e7b3",
@@ -5239,7 +5067,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "7614fc700ac8",
@@ -5253,7 +5081,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "1cbadd75b918",
@@ -5266,7 +5094,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "cd623fb5cc11",
@@ -5280,7 +5108,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "b152685cd29d",
@@ -5294,7 +5122,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "40f7a69bffac",
@@ -5308,7 +5136,7 @@
    "temas": [
     "transicao"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "883e2148a0dd",
@@ -5322,7 +5150,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "f9e4192c2b18",
@@ -5336,7 +5164,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "619b67b0f0ce",
@@ -5348,7 +5176,7 @@
    "outras": [],
    "possivel": true,
    "temas": [],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "421b223f3094",
@@ -5360,7 +5188,7 @@
    "outras": [],
    "possivel": true,
    "temas": [],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "c475a3a5819e",
@@ -5371,7 +5199,7 @@
    "coletado_em": "2026-10-31T20:17:11Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador",
     "controle"
@@ -5388,7 +5216,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "ef5e63216aa8",
@@ -5410,7 +5238,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "841eb5faaca3",
@@ -5422,7 +5250,7 @@
    "outras": [],
    "possivel": true,
    "temas": [],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "d85172ae3c17",
@@ -5434,7 +5262,7 @@
    "outras": [],
    "possivel": true,
    "temas": [],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "0dcb4402826e",
@@ -5448,7 +5276,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "ca6fc523c714",
@@ -5461,7 +5289,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "de2691f8d4ca",
@@ -5476,7 +5304,7 @@
     "restricao",
     "contratos"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "b8a837083de1",
@@ -5491,7 +5319,7 @@
     "restricao",
     "contratos"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "3d2c1da42649",
@@ -5505,7 +5333,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "c043c492d219",
@@ -5520,7 +5348,7 @@
     "restricao",
     "contratos"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "ed42ab59aacc",
@@ -5532,7 +5360,7 @@
    "outras": [],
    "possivel": true,
    "temas": [],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "1a923405f185",
@@ -5546,7 +5374,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "efd66b9db1a6",
@@ -5557,7 +5385,7 @@
    "coletado_em": "2026-10-30T15:32:37Z",
    "outras": [],
    "temas": [],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "c250fbfa61a7",
@@ -5572,7 +5400,7 @@
     "transicao",
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "f053f80bdcd9",
@@ -5586,7 +5414,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "5faae07152fa",
@@ -5600,7 +5428,7 @@
    "temas": [
     "contratos"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "f9023aeb8a5b",
@@ -5614,7 +5442,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "abd16043965d",
@@ -5629,7 +5457,7 @@
     "governador",
     "controle"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "f5b75da68d0f",
@@ -5641,7 +5469,7 @@
    "outras": [],
    "possivel": true,
    "temas": [],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "20ecbaf6a5b1",
@@ -5655,7 +5483,7 @@
    "temas": [
     "contratos"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "2164e36c1906",
@@ -5669,7 +5497,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "bca4985db0be",
@@ -5682,7 +5510,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "c429e1d8e96a",
@@ -5696,7 +5524,7 @@
    "temas": [
     "contratos"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "0908aaea4abc",
@@ -5707,7 +5535,7 @@
    "coletado_em": "2026-10-31T20:17:11Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "transicao",
     "governador"
@@ -5722,7 +5550,7 @@
    "coletado_em": "2026-11-01T10:17:12Z",
    "outras": [],
    "possivel": false,
-   "triagem": 7,
+   "triagem": 8,
    "temas": [
     "governador"
    ]
@@ -5744,7 +5572,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "35e6c3774c5e",
@@ -5759,7 +5587,7 @@
     "restricao",
     "contratos"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "699b04333780",
@@ -5773,7 +5601,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "3e639e505e2a",
@@ -5787,7 +5615,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "3eea6148562b",
@@ -5806,7 +5634,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "5107bafc247f",
@@ -5820,7 +5648,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "1908fdfd38f4",
@@ -5833,7 +5661,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "ac3c708c5715",
@@ -5847,7 +5675,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "5fd04926d770",
@@ -5861,7 +5689,7 @@
     "governador",
     "controle"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "838052fddc0f",
@@ -5875,7 +5703,7 @@
     "transicao",
     "controle"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "6a5c9f758b9d",
@@ -5894,7 +5722,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "13ab76771891",
@@ -5908,7 +5736,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "ce949b36aa0d",
@@ -5920,7 +5748,7 @@
    "outras": [],
    "possivel": true,
    "temas": [],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "5b6cb1798da0",
@@ -5934,7 +5762,7 @@
    "temas": [
     "transicao"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "38905099947b",
@@ -5949,7 +5777,7 @@
     "restricao",
     "contratos"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "f6358400eef1",
@@ -5961,7 +5789,7 @@
    "outras": [],
    "possivel": false,
    "temas": [],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "b0f09126fc69",
@@ -5974,7 +5802,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "ef24466a77e6",
@@ -5987,7 +5815,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "3ee3ce694a14",
@@ -6001,7 +5829,7 @@
    "temas": [
     "restricao"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "d80abe53b57c",
@@ -6015,7 +5843,7 @@
     "restricao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "567d1fd5459e",
@@ -6034,7 +5862,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "e4f97d52263c",
@@ -6048,7 +5876,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "3dd43200486f",
@@ -6060,7 +5888,7 @@
    "outras": [],
    "possivel": true,
    "temas": [],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "0f0a4325c4d4",
@@ -6073,7 +5901,7 @@
    "temas": [
     "transicao"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "17d50a851bc8",
@@ -6085,7 +5913,7 @@
    "outras": [],
    "possivel": false,
    "temas": [],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "cacfc552e241",
@@ -6099,7 +5927,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "ea4775f55ee1",
@@ -6113,7 +5941,7 @@
     "contratos",
     "controle"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "17aebae722ca",
@@ -6131,7 +5959,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "3a59a9c77f17",
@@ -6144,7 +5972,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "927050cd4b42",
@@ -6159,7 +5987,7 @@
     "governador",
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "c15481fb25ca",
@@ -6173,7 +6001,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "f9844755474d",
@@ -6187,7 +6015,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "c9fbf4dc575a",
@@ -6200,7 +6028,7 @@
    "temas": [
     "transicao"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "735e8b6a13ac",
@@ -6214,7 +6042,7 @@
    "temas": [
     "contratos"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "904b2295b5cc",
@@ -6229,7 +6057,7 @@
     "governador",
     "controle"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "6c362f114613",
@@ -6243,7 +6071,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "f2c870b8b901",
@@ -6255,7 +6083,7 @@
    "outras": [],
    "possivel": true,
    "temas": [],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "bae510b8be71",
@@ -6273,7 +6101,7 @@
    "temas": [
     "transicao"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "b9f2bd1e7752",
@@ -6287,7 +6115,7 @@
     "financas",
     "controle"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "2f82bec7c96b",
@@ -6301,7 +6129,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "3635e8287cd1",
@@ -6314,7 +6142,7 @@
    "temas": [
     "transicao"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "372820158185",
@@ -6327,7 +6155,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "9786816ba8c9",
@@ -6340,7 +6168,7 @@
    "temas": [
     "controle"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "73c0de189664",
@@ -6354,7 +6182,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "b0f9f1c726bb",
@@ -6367,7 +6195,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "22b6b792eaeb",
@@ -6381,7 +6209,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "30d6b469b6e9",
@@ -6394,7 +6222,7 @@
    "temas": [
     "transicao"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "a7cf0c4bc8ec",
@@ -6408,7 +6236,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "52634bc12057",
@@ -6422,7 +6250,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "979b26f1ef92",
@@ -6434,7 +6262,7 @@
    "outras": [],
    "possivel": true,
    "temas": [],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "6292c461735d",
@@ -6446,7 +6274,7 @@
    "outras": [],
    "possivel": true,
    "temas": [],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "46c56c2647b0",
@@ -6460,7 +6288,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "4826fc022299",
@@ -6473,7 +6301,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "eafb460631a8",
@@ -6487,7 +6315,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "a3cb8d534333",
@@ -6501,7 +6329,7 @@
     "governador",
     "controle"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "e81291d046a5",
@@ -6515,7 +6343,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "66370300ad33",
@@ -6528,7 +6356,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "6a345c882b38",
@@ -6542,7 +6370,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "45754fa3e5bc",
@@ -6556,7 +6384,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "66a055516189",
@@ -6570,7 +6398,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "52a9d5a3c76d",
@@ -6584,7 +6412,7 @@
     "transicao",
     "controle"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "abe335843171",
@@ -6599,7 +6427,7 @@
     "financas",
     "contratos"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "c6685ff7cc53",
@@ -6613,7 +6441,7 @@
     "governador",
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "454a246b8f2d",
@@ -6627,7 +6455,7 @@
     "governador",
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "9c050b055ead",
@@ -6640,7 +6468,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "cc615181919a",
@@ -6659,7 +6487,7 @@
     "governador",
     "controle"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "2a65aeac8d91",
@@ -6672,7 +6500,7 @@
    "temas": [
     "pessoal"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "0e3215cbac30",
@@ -6685,7 +6513,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "cab73a5286f3",
@@ -6696,7 +6524,7 @@
    "coletado_em": "2026-10-30T15:35:49Z",
    "outras": [],
    "temas": [],
-   "triagem": 7,
+   "triagem": 8,
    "possivel": true
   },
   {
@@ -6710,7 +6538,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "f64e0226dbcb",
@@ -6733,7 +6561,7 @@
     "governador",
     "controle"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "eadbfba50e16",
@@ -6747,7 +6575,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "51a6c4e815a0",
@@ -6761,7 +6589,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "5d6dbff35838",
@@ -6784,7 +6612,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "a5cb0046391c",
@@ -6798,7 +6626,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "09a7444a929c",
@@ -6812,7 +6640,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "fadb0c034c8b",
@@ -6827,7 +6655,7 @@
     "governador",
     "controle"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "f1356acb16a1",
@@ -6840,7 +6668,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "10d68a7673f7",
@@ -6854,7 +6682,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "a44fc1146c80",
@@ -6868,20 +6696,7 @@
     "governador",
     "controle"
    ],
-   "triagem": 7
-  },
-  {
-   "id": "072782173b46",
-   "titulo": "Em Cariacica, Ferraço virou em 39 bairros e venceu Pazolini no 2º turno",
-   "veiculo": "Folha do ES",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNWEVKaDktelNBVEJqTHlTOXg1cUVJaDdOVG5Ba0w3REJvQUR1dE03SXNLell0NFF5QkxDRHpHMVNHVnVYZGxkWmRGSkRyUy1xYTR5RDZCRlNMU2hzU2FIQUMyYnViRXF4aVo2WTMtSHZudEZ0Q29YWkt1NHFRdFV6elozNWEtOUR3SzRvcmkyTm1TMlVhSFJRUQ?oc=5",
-   "data": "2026-10-27T20:06:59Z",
-   "coletado_em": "2026-10-30T15:32:37Z",
-   "outras": [],
-   "temas": [
-    "governador"
-   ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "5440082c103a",
@@ -6895,7 +6710,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "89094dcd6cfb",
@@ -6910,7 +6725,7 @@
     "governador",
     "pessoal"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "1f770207bec4",
@@ -6924,7 +6739,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "8249b411e9c1",
@@ -6938,7 +6753,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "fda296e8abb1",
@@ -6952,7 +6767,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "df5c0e650d5c",
@@ -6966,7 +6781,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "93150cf2cc11",
@@ -6981,7 +6796,7 @@
     "governador",
     "controle"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "80df39c1639b",
@@ -6995,7 +6810,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "355503147b44",
@@ -7008,7 +6823,7 @@
    "temas": [
     "transicao"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "b26107fb1625",
@@ -7021,7 +6836,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "c04fc3746879",
@@ -7035,7 +6850,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "3ebaef09d07d",
@@ -7049,7 +6864,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "d5a0be462888",
@@ -7062,7 +6877,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "92e743259c74",
@@ -7076,7 +6891,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "b8c56f3ea038",
@@ -7089,7 +6904,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "f121cea28598",
@@ -7103,7 +6918,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "195dc207da6a",
@@ -7116,7 +6931,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "9e8a59fe8858",
@@ -7129,7 +6944,7 @@
    "temas": [
     "transicao"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "13c8b2e62602",
@@ -7142,7 +6957,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "a52cf94a57f5",
@@ -7161,7 +6976,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "9af8f85cfb3c",
@@ -7175,7 +6990,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "9f15709697f6",
@@ -7188,7 +7003,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "e67dee257285",
@@ -7201,7 +7016,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "12825b6cf098",
@@ -7215,20 +7030,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
-  },
-  {
-   "id": "79bb21ebe978",
-   "titulo": "Ricardo virou em 9 cidades do ES e Pazolini em uma no 2º turno; veja mapa",
-   "veiculo": "A Gazeta",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNm00UmZwQ3FzQ1JKc2twenlTMmJWTlZ4LU8welktTUpCNmhqMFl6YWktekdZbzlHVEJCOTNzcWJtQmNUbUFvRjJVcWFEMU43VGlIZE95cjY5WEZ6aGoyZW8tSzFxVnd0UmYyaFl2X0NFSV9yRzktNktUbFlHY3NRQmF6blBxTzdLcjAxcDdlY0M4dGVGSk40aHM3TEFjOTJBTDhvWWQ2dGpETGt2NlNBUXVIZEx1QQ?oc=5",
-   "data": "2026-10-26T21:55:00Z",
-   "coletado_em": "2026-10-30T15:32:37Z",
-   "outras": [],
-   "temas": [
-    "governador"
-   ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "8d6326925f7e",
@@ -7241,7 +7043,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "e9b37cdb561b",
@@ -7255,7 +7057,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "e08ae42a271d",
@@ -7268,20 +7070,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
-  },
-  {
-   "id": "6d570e1318a1",
-   "titulo": "Conheça a trajetória de Lorenzo Pazolini, eleito governador do Espírito Santo",
-   "veiculo": "Serra Noticiário",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNY25DbEZuRmNySG81WTZkcXh6SjQzNnpya2hTRFNheW1UaUV2UGVUM0F3dGpqSHdvVzB1alVlNW95bEZhV3BjYkdVWWV0Y0dxTzg0N3lWblZ1UDNhUDBOYWdzaUN2WTlVbjU5QXA5YXZWVFNqWFRIazRvNDZZRHNIbVhKcWtyd0pXNm5RMmVEUlloNGptZS1mdmJtakRpX0ZoTW01QnhPTm1xVkpm?oc=5",
-   "data": "2026-10-26T21:04:00Z",
-   "coletado_em": "2026-10-30T16:05:43Z",
-   "outras": [],
-   "temas": [
-    "governador"
-   ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "21aa5c01c9d8",
@@ -7294,7 +7083,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "e211e3dacb18",
@@ -7307,7 +7096,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "df02c651c5ed",
@@ -7320,20 +7109,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
-  },
-  {
-   "id": "08d7974aaf81",
-   "titulo": "Lourenzo Pasolini é eleito governador do Espírito Santo com 52,17% dos votos",
-   "veiculo": "Canal Rural",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMTBqVlYxVnpzSWdENzdFZWJYNDNzOGZWRDY2SGJKWEVDYUI5cXZnb3k3dXZyRzltbTRaQmdtcHdzX09KNmIzT0owZm9zY3RCdm0xa2FaYlE4TlZZNW5NYzhEVkVzczQxck1xQ1YzMFBGYlB1ZEw2SGxxTHhqYkZqbjlQNFQyRjY5VW02RUpJNUZPWUVXdGtNdlFSaXlkZVlhNGFKbV9EM3h0ZTRvSUpDQTlR?oc=5",
-   "data": "2026-10-26T19:05:24Z",
-   "coletado_em": "2026-10-30T15:32:37Z",
-   "outras": [],
-   "temas": [
-    "governador"
-   ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "6ee370057aa6",
@@ -7347,7 +7123,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "bcd7c1e4d6c0",
@@ -7360,7 +7136,7 @@
    "temas": [
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "21d001648157",
@@ -7374,7 +7150,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "643ee7e7ce49",
@@ -7387,7 +7163,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "e0a1d9573e2b",
@@ -7400,7 +7176,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "476eb0605f60",
@@ -7414,7 +7190,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "d4a6defa5aec",
@@ -7428,7 +7204,7 @@
     "governador",
     "financas"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "2d095553dda5",
@@ -7441,7 +7217,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "0703442f0d48",
@@ -7455,7 +7231,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "d444e8070edf",
@@ -7468,7 +7244,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "e239c5273cda",
@@ -7481,7 +7257,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "861ec6134b56",
@@ -7495,7 +7271,7 @@
     "transicao",
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "e016799ae9ba",
@@ -7508,7 +7284,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "225131bc308a",
@@ -7521,20 +7297,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
-  },
-  {
-   "id": "4143ac889605",
-   "titulo": "Pazolini vence em 40 cidades do ES e Ricardo em 38 no 2º turno; veja mapa",
-   "veiculo": "A Gazeta",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPYkJ5amxUeHRwVEVPYnpYbnZBS3F4MS1WcFBhSFpIS25vSEM5c2lWblZMbDJSQkxCb0dDV0ZwN1JocGMybllfdmU1UXZ6Sm5QTDJiZjNManprUmFLWWg3U3BZQ1hQb2pXcXVMUHhKUWZ5cFlkamVjWUhyXzRHYk8wZEFFM2ltcGZnUGx6Sm5tcWFNeDk1M3prZ2xfakdVWFdRV2hYV3dRMnhzTkxBQ0gzNHhrOG9EUQ?oc=5",
-   "data": "2026-10-26T12:00:00Z",
-   "coletado_em": "2026-10-30T15:32:37Z",
-   "outras": [],
-   "temas": [
-    "governador"
-   ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "dbcd4cad19d0",
@@ -7547,7 +7310,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "81ef0d6873ee",
@@ -7560,7 +7323,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "de178f788155",
@@ -7573,33 +7336,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
-  },
-  {
-   "id": "9212214c2d72",
-   "titulo": "Trajetória de Pazolini que o levou ao Palácio Anchieta",
-   "veiculo": "Tribuna Online",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdElOWFIwNzZrTG5QaVlDenpHM0w4WFduNldwNzhGM3M2OENiOHM3WGZiNGdKWXFTY21ndFVydkxiRkRVU3o5cmZuNUtfcUEtWHBOdk1lYUNROVNPOFB0M01jMVROWjlpdkZWMDdEaFdXWmlxSVVvZTZQS1VFRWZlUUhLRjNEemtIQWxWRVFIdVJZTTBlWjM0ZTg0RFkxUTVYY2loeXNoY2pMUdIBsgFBVV95cUxOUG02eG9hWFNxY21NM05VMjcwbmNsWmFRWVFkYVI1bHUxYWYxWWl2TXVEbmV4Z0RaNmtGOWRjSjlkM0tKaVc3dGMyTHNZeFB3VEtXTVVPZlRMaE8wYV9NYlRRdkFzRFc1SWhybzN1N04wRFVMUGlWcmxQTXBQQ3hEb1VObDBoNjZjcjRSNDk4YTFrclN4N3VhMFdmYTFwRXVBU3QzaHlUZXJjZEZrSXBQSkNn?oc=5",
-   "data": "2026-10-26T09:00:00Z",
-   "coletado_em": "2026-10-30T15:32:37Z",
-   "outras": [],
-   "temas": [
-    "governador"
-   ],
-   "triagem": 7
-  },
-  {
-   "id": "10fe8c0037fe",
-   "titulo": "No Espírito Santo, Pazolini é eleito com 52,17% dos votos",
-   "veiculo": "Valor Econômico",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPY2tuMkItV3ktREtHWndVQllWS3hpYkR1ZGV6cjdpWjctOFZKVVdHMTNHZWU2eEdYQmhuRzM2RTVZeG9xMGMyUmZwRDFPVlBiMVJYOUNUNEVORjlLcDJvZFZUQ3FlWlZ3MDJVaGRDRHlsQ0JjYk14MUhHLXFJaHpscDdxVkxIa0MwS0RoUkRtZWc0S21kbHJVVThrNk4wQTFoa1ZIQ085andCLUhUVm01YWcxSldCWTgxdHJkdW4wMGJBSFRZ0gHTAUFVX3lxTE4zQXVMZldJM2dCT002cU9SZFpweW5ZWFllUkg1LXhYdXhndGVxMW83Z181V05ST3d2RERQWUNmbjhWSTVXVUpOTmJKYTItbnBXMjNpMjBlMlRHTWJMWGRvWkZTZ2tpVi1pclhlR1J4Ty1leWlGbE82MmNkLURxLVB6SmhveGFYQkVlM1FhY3pPRkFMaGthbUZtakctd2E5VDdLcFlLcEliQ3NqQ3J0ZGJqeXBHeWlDWU1Ja0hDcVBJeDh4R3FCdThyc0xqbXAtSTZ6SmM?oc=5",
-   "data": "2026-10-26T08:00:00Z",
-   "coletado_em": "2026-10-30T15:32:37Z",
-   "outras": [],
-   "temas": [
-    "governador"
-   ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "c390cf645d76",
@@ -7612,7 +7349,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "16290b5c541b",
@@ -7625,20 +7362,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
-  },
-  {
-   "id": "5487fbe3d97e",
-   "titulo": "Pazolini ganhou mais 103 mil votos no 2º turno; Ricardo, 336 mil",
-   "veiculo": "A Gazeta",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWmtLRTItdm5WZXBUX0xkOGg4dl9jNGY3V2lMTlRKbGx4M3RSMEZ4TnEwcVd1RVZhTVp0VWdDbVZtSDREMl8yV0N3ZWQ0OEhaLUc5MFhndHZ6U1Brd3RTLXpIa2wxb0YyN25hcWtHU0VNbnFfUlBlN1lwYUgxcnhLeWlkQ2xmaUZqV2czTUdFOEZrOEtwU0NRUFVVNE42elo2Wm5pU1Vna3g?oc=5",
-   "data": "2026-10-26T02:24:00Z",
-   "coletado_em": "2026-10-30T16:05:43Z",
-   "outras": [],
-   "temas": [
-    "governador"
-   ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "440f4779d727",
@@ -7651,7 +7375,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "4b21dcde2bff",
@@ -7664,7 +7388,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "ec817374ddba",
@@ -7677,7 +7401,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "dedf3b9a6b07",
@@ -7690,7 +7414,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "2057cf2e8a36",
@@ -7703,7 +7427,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "01dcedaad874",
@@ -7716,7 +7440,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "85a41043c041",
@@ -7734,25 +7458,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
-  },
-  {
-   "id": "c8f859961fb3",
-   "titulo": "Quem é Lorenzo Pazolini, eleito governador do Espírito Santo",
-   "veiculo": "A Gazeta",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSWFoZ0hNSldxaDRLVDdiMjZZamlZMWVpTV95Sy1QTndXd29rOW95T19zSmluZGtWTnRDSWNXNU9xSk1XcjFicTQxaVJmQmZiUWZ3Z1U3Ry1DNFZ5WWJTQUprNHlKWkx2MHVTSFMySlUycVdCSVFlQWRTeURKN1hKQ1FUNkFxRlh4WEJPTHI5MnltNkphb29mRjlsOEtxOGhLdWNFWFF3?oc=5",
-   "data": "2026-10-26T00:58:00Z",
-   "coletado_em": "2026-10-30T15:32:37Z",
-   "outras": [
-    {
-     "veiculo": "Diário do Poder",
-     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOT0VrNEkxOUp3RGVMT2JMZmxWWDU2Um1vTnNTZkNseEZuTE1TYU15Y1NTNnByYURyaVFIRXVTbmhXakhVZmJzMllldmFuajZCakRpUm9kZFVxS1Buc195S3g5NXo4aHl3ZkV5ZWt2YlBrSi1YbGIwcGdrMVhNR3BpeXVCcmsxbGNDNENPWDR1V3B5aUJ0VzBJY3N0UXJWQmNKVGlHVW95NjgzakxRbWtSanJnMUpHUTDSAbwBQVVfeXFMT1Q3a250cmpmVHJtWENkdEowRDF3MG1BckRFOU9DME4tcjBqSURvbTFHU0M2dUVSYkNHTzhNNFRubk1ZR0JnWjJoZ2tfNHdhdVNqVnBCVWN2eGVFaEVISXpKeGhFVHRibFJoZGRnZTJiS005REgxWi1lbDJRdmhWMXE1bTczRjFTX1hTaUhRVnJPMTBtNlZLaVRaNFJUTHdtcGJodTNVWWxDckM5a0d4dHNBeUp0WFpaMDloa2g?oc=5"
-    }
-   ],
-   "temas": [
-    "governador"
-   ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "a2bb388bcf41",
@@ -7765,7 +7471,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "39be1ca4711b",
@@ -7778,20 +7484,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
-  },
-  {
-   "id": "4b94d5e7f940",
-   "titulo": "Pazolini é eleito governador do ES com 52,17% dos votos",
-   "veiculo": "A Gazeta",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPbFhSQVJqTGp1MDNVMjdwNnB0VEpZeF9PeUxsSU5ETzdvYlowejRNS3RlaFY1UjF4SnA0aTNzMVRxV2l6cHV2cHJSWnRiUnpES2FDR2dkeHFndjdHcGZpZXp3U1ktbHVyRkFnWWxaMVhObWhhRERweHBIa2JDel8zUkw3UFFRdzY2dVQ5azZqcUFrVGFKQ3Y0UmJ2UQ?oc=5",
-   "data": "2026-10-26T00:35:00Z",
-   "coletado_em": "2026-10-30T16:05:32Z",
-   "outras": [],
-   "temas": [
-    "governador"
-   ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "d1509137738b",
@@ -7804,7 +7497,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "e6c9e7deb0b7",
@@ -7817,20 +7510,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
-  },
-  {
-   "id": "74ccbe72bf4d",
-   "titulo": "Quem é Lorenzo Pazolini, eleito governador do Espírito Santo após vencer eleição no 2º turno",
-   "veiculo": "G1",
-   "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNWFFUZHhtTWE3X093OVpsZnQwQTVyVmFGUFk5eTUtRGtOSGxNUU9JRGJQcy1JbGg3Q25GcGtMU1dpTWlLV1dfb1BYNGhQbzNpVEJaU3RTWmhRcHN0ZXlBSFlPTmpOSEg1bTFhUEdjakVEMWM3TFhvTGRaT3JDY1AtSlVKeG9pMFoxaWQtdVVrd0dENkN6b0REZUxHbWhrVllLMzNWa2pSd05FZmo1eHFiYkQyeUJvbnJocnVNWUZ1Vlg4OHFlTTdfempQYzlacUpJeldROFJfbmRfVS1VNVd0NjMyUEhJa01oN3JUS0dCdnBPSnRPYkV4eG9Xd0p1QdIBjAJBVV95cUxONkktc3Z6VW9WZkthRFl2dWZYVEd3bFRjTlRiT0pYMklXNDc4UnNWSWVtMC0yX2hVd1JOUWZuVGJEeThoSFZxYUdfbEEteDNWMk1raWdaekVmMjgwQ3ExdVRDcWx1dUZiQXFwU215S0lBQXh5YjBVeUF0YXF3bmhzWTFhbnIyODFYQmpJci1oeDI3cjlTTWtXdS1EY1JCQll1Rl9wZlUzVHh4bnE1U2JJSUJqY1RoVEZyQUFFa2Z4R0hVRU5lRE5WdVpOMjloZGpJVXZvWjVMZ19BNkduV2hBclZKNEQ0d3V0SzZlZ3hHQTNFT0lvRjZSVUZ0aklBd19vaWRFR3ppdnhPVGla?oc=5",
-   "data": "2026-10-26T00:26:22Z",
-   "coletado_em": "2026-10-30T15:32:37Z",
-   "outras": [],
-   "temas": [
-    "governador"
-   ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "a72cebf4b450",
@@ -7848,20 +7528,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
-  },
-  {
-   "id": "2dbf539dae9d",
-   "titulo": "Pazolini chega ao governo do Espírito Santo com 52,01% dos votos",
-   "veiculo": "Vermelho",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWUVYR1R3TjhyZ1JwTU9wWWZmSllqVk52RFRfd25IUFI5NG5nbDU5c3pDMUVOaUs0cnhPcE9uR2xjeEVFYk5LZmZzaVpRdjk2RVZQRTJPZ1FGSl9pMjhrS0FZNHloMzN6aHVOY2g2aFRpZWFGakg3U3Q2NkptTWoxZ2Jnd0FLbkdIMFhWc19BeWMzcXRsRFZyRkZweWY4RTg?oc=5",
-   "data": "2026-10-26T00:21:00Z",
-   "coletado_em": "2026-10-30T15:32:37Z",
-   "outras": [],
-   "temas": [
-    "governador"
-   ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "da680ced2bf0",
@@ -7874,7 +7541,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "cd2059322e53",
@@ -7887,7 +7554,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "fc27185aba8f",
@@ -7900,7 +7567,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "859c5db61324",
@@ -7913,7 +7580,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "d41b19d43506",
@@ -7926,20 +7593,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
-  },
-  {
-   "id": "11fbdad1a27b",
-   "titulo": "Pazolini vence Ricardo Ferraço e conquista o governo do Espírito Santo com 52,01% dos votos",
-   "veiculo": "Folha do ES",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNOTljcTlaemtfZEdLTWxwdHVsdVRWMURIXzljSjhTU0ppNWwtTERkRFpwUHZPZ2ZKOElDUUlxa0pmRFhyZjAwNFppdXhrSWhPWDFsZUxSWGFGejBoXzFVY0tDZktNQUR0eWVGQ0xMQWFBamQwQjJFd3hlS0RpX0ozZWdFWjRMdkd0aDJyUENGeC1acG9RUlJVSGQ1cnJoVXA2S0d4V2ozakI5NFVMYW9uaGFR?oc=5",
-   "data": "2026-10-26T00:08:36Z",
-   "coletado_em": "2026-10-30T15:32:37Z",
-   "outras": [],
-   "temas": [
-    "governador"
-   ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "af218305a340",
@@ -7952,20 +7606,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
-  },
-  {
-   "id": "d1d6fa81cfdc",
-   "titulo": "Lorenzo Pazolini é eleito governador do Espírito Santo com 52% dos votos e derrota Ricardo Ferraço",
-   "veiculo": "A Crítica de Campo Grande",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWGJRSWJ5bTVJT3haOEJYTjRWVk1jNkZrUDRrckVKOHduY01nN05OdG1feUs4anpWbkxyaVl5eUNvRHFoM2c1ZE8xcnZIVG5WdVItZGRhQXdVQjZHQ2hVelVLTVpkek9BcUFxa2ozX0JteHJwcEVaQzh2Mm5uQUZkWkFzU0QxWEpnNFA2UUVQcHNIV0o3Q3FCS0ttaU4yVWsw?oc=5",
-   "data": "2026-10-26T00:05:13Z",
-   "coletado_em": "2026-10-30T15:32:37Z",
-   "outras": [],
-   "temas": [
-    "governador"
-   ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "ab56f3be95f6",
@@ -7978,7 +7619,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "0bc76dc5be81",
@@ -7991,7 +7632,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "ce10cd3bfe9d",
@@ -8004,7 +7645,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "ac7e826f0ab2",
@@ -8017,7 +7658,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "8f23c9b1f3d8",
@@ -8030,7 +7671,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "de308a177898",
@@ -8043,7 +7684,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "3801b0d02908",
@@ -8056,7 +7697,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "d29ab6ac564a",
@@ -8069,7 +7710,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "65365b7515bf",
@@ -8082,7 +7723,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "c6e84a949763",
@@ -8095,7 +7736,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "2ba534b0da99",
@@ -8108,7 +7749,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "1140b8029afb",
@@ -8121,7 +7762,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "b5389b35227e",
@@ -8134,7 +7775,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "9916c1fd8994",
@@ -8147,7 +7788,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "8adeca00ed23",
@@ -8160,7 +7801,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "771411b1513c",
@@ -8178,7 +7819,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "82e086e02b6d",
@@ -8191,7 +7832,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "9e29fcd4a35c",
@@ -8204,7 +7845,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "f247c6caec38",
@@ -8217,7 +7858,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "b05d0ac481b5",
@@ -8230,7 +7871,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "f6c81051211d",
@@ -8243,7 +7884,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "b1668a92a7be",
@@ -8256,7 +7897,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "ee57e5105496",
@@ -8278,7 +7919,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "fcc04afcdac2",
@@ -8291,7 +7932,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "536270655005",
@@ -8304,7 +7945,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "fb98d5719b19",
@@ -8317,7 +7958,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "96db2605100e",
@@ -8351,7 +7992,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "d1a9befcc639",
@@ -8385,33 +8026,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
-  },
-  {
-   "id": "b69232a5bf82",
-   "titulo": "Lorenzo Pazolini (Republicanos) é eleito governador do Espírito Santo, com 52,17% dos votos válidos",
-   "veiculo": "Valor Econômico",
-   "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQRk1rZW5sWVJBbHFFajdZU1hnbHA5ek9Vb1NYN25Ld2F4QmxMX0JGZm1xellMODdTR29QU0dJWEhLTmFIWW9iNXJOLVFtMUxLSHB3YjZLRmwwZG1NQ0tPX1ZWb3FQb1VqQTdoajVZTE44TUIxUWtvcHl0NS1maXNOaDQ0Q3BGOEVDNkhpQmc0eUJ5Zjg0QTdiZ241X2o5WlJHcWs4UWJ1c1B3X0YwaDNWR3pqbzhKWFNYVTZMdUtMR2pfYWxwLTBEZGlkVUczM0dId2x5NVBxcF9wSkdxbnN4S1ItRmFWNFk5UExWMmNobkVsVDBBbU9tOERxSEZ2VU9WSlJEVWMzaTBFejNNa3hGa2tB0gGgAkFVX3lxTFBtOVZpd2pIbDRiWUYwQlQ0UHJ4TGdzamUybWZNV2lLSG5heDZGOExmNG44d3NhSGJFTWlFUnBUemZJV2lXczhIMWEwYWRGUjMxeEdCQjdrT2tfVFBiTExxOVRDREQzaExQVEJrMWJBRjVwLWZaY2VUbFZyTFoxTmhSR0RuLTh2cmF1ZGVwcTdUMlc5dmpXbGdaX3hycGVEbUFhWHhuSFUtcVpIeGhNendNSHpjX2lpYW02TjBYemtQeFJ6TW9mREhXSGoxYk1ySUVpUHAxRmFSLUZ0MFhBYjZLU19wcEtxVjNsVkhoMzZqZ3VmSHRpekdPdFQtUV9BMVd6bE52S0RraUNJQ3Etb0Y0LWw5c1NObDFDVE85T3l0TA?oc=5",
-   "data": "2026-10-25T22:59:59Z",
-   "coletado_em": "2026-10-30T15:32:37Z",
-   "outras": [],
-   "temas": [
-    "governador"
-   ],
-   "triagem": 7
-  },
-  {
-   "id": "8aa1422c1858",
-   "titulo": "Lorenzo Pazolini é eleito governador do Espírito Santo com 52,01% dos votos",
-   "veiculo": "Midiamax",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdEJZU0QxS3dqMlFvVzJxMUpKSTZsWTl5dm5rdkNPWDlRS25OUkUzX2xxMWQ5Rzlxd0xoeHNCY3hiY3ZEZnZlTXhTbzQybGRmQ3JITl9WMTFhbEVMTTh5UUZ2ZFVPY19MNTJkOVl5LXVfVlBmenJJZzhtUGhoUEpFRlhqZnpZbHBuNzRHeXRR?oc=5",
-   "data": "2026-10-25T22:56:00Z",
-   "coletado_em": "2026-10-30T16:05:43Z",
-   "outras": [],
-   "temas": [
-    "governador"
-   ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "d9d2d58a57b2",
@@ -8424,20 +8039,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
-  },
-  {
-   "id": "35f16a76d678",
-   "titulo": "Quem é Lorenzo Pazolini, novo governador do Espírito Santo",
-   "veiculo": "SBT News",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQMEhSNXM1NTRhTVpGdVlJMHZNT0NzaGljVUtsdGJmWDI2aXdCYTl1RWZZVHRXUkM5RkZuTjJaQzhFX0tlSnhlNzlXbF9waENoRndJNlRuRDcteE10blFmV19TdnRWcnlQX1hObDdHUnJlaThITWM0a1E0M01NOHVvVWwzS2xobnZ3cEtpbDg5U2V2WVgyRkswVkE3OG9xbi1GRVhV?oc=5",
-   "data": "2026-10-25T20:01:00Z",
-   "coletado_em": "2026-10-30T15:32:37Z",
-   "outras": [],
-   "temas": [
-    "governador"
-   ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "9cd1453e5954",
@@ -8450,7 +8052,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "94a5096ad5b7",
@@ -8463,20 +8065,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
-  },
-  {
-   "id": "40cf2816be90",
-   "titulo": "Ciclo político no Palácio Anchieta acaba oficialmente hoje",
-   "veiculo": "Tribuna Online",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTjRVWTJTd3JDcWdZMFU5LUczSDJKejh3bkYtVHpwMzZZTFZiN1BHNnVTaXA5MEY4ZzZWekZRLUtIZkd0NVFfbFA2SVFhZVNjajZGYzJnWDg5WkRSS3dQS2ZPYi1kdmlCbDN4MVlKdy14dGlJam9YS3RTWGR3YUNCQ0l0MGZqa0FUWS1uTWxCczdKZzNJbVFrdjBnWFRyLUFVTzlrc2xjTDFIaVlMSG400gG3AUFVX3lxTE5nTmpXZWZPTVZBai13Y1lvZmMzWXlZT1lEQmQ2WW1wQlVPQkhQTFF4Zk4xZldpY3lISmU5amxSVEhhYmx5dHp0Z3pQSHFVcWxOaHFFYXVWSmdNTDVBOFBwTlRoOUN0dmNhd3JIa3BfSDYtUTJvY2tQTldYN0JZWXJmR3p2dFVCcHBKS2xsb2F4TG5lLWV6WEpPUmxMMTdFRVZKalpVR29JSGZJd2E5NWtXc2RWMmUyZw?oc=5",
-   "data": "2026-10-25T09:00:00Z",
-   "coletado_em": "2026-10-30T15:32:37Z",
-   "outras": [],
-   "temas": [
-    "governador"
-   ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "aa8c3db52bb4",
@@ -8489,7 +8078,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   },
   {
    "id": "b09972a9733b",
@@ -8502,7 +8091,7 @@
    "temas": [
     "governador"
    ],
-   "triagem": 7
+   "triagem": 8
   }
  ]
 }
