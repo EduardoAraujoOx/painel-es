@@ -390,6 +390,59 @@ class ForaDoObjetivo(unittest.TestCase):
             self.assertEqual(self.classe(t, v), "confirmada", t)
 
 
+class RevisaoDe10DeNovembro(unittest.TestCase):
+    """Revisão das 351 notícias confirmadas do ES em 10/11/2026: sobrava ruído de eleição (mapa, perfil, percentual de votos), de serviço ao cidadão (Detran, matrícula,
+    concurso de vários órgãos) e de assunto municipal; e faltava o que é do Estado mas não traz "ES" no título (LDO, emendas impositivas, "próximo governador", Acordo do Rio Doce)."""
+
+    def setUp(self):
+        self.F = coletar.preparar(CFG)
+
+    def decide(self, titulo, veiculo, regional=False):
+        return coletar.decidir(CFG, titulo, veiculo, self.F, regional)
+
+    def test_o_que_nao_tem_relacao_sai(self):
+        for t, v in [("Pazolini vence em 40 cidades do ES e Ricardo em 38 no 2º turno; veja mapa", "A Gazeta"),
+                     ("Quem é Lorenzo Pazolini, eleito governador do Espírito Santo", "A Gazeta"),
+                     ("Pazolini é eleito governador do ES com 52,17% dos votos", "A Gazeta"),
+                     ("Em Cariacica, Ferraço virou em 39 bairros e venceu Pazolini no 2º turno", "Folha do ES"),
+                     ("Operação integrada do Detran|ES flagra 13 conduzindo sem habilitação em Colatina", "Detran-ES"),
+                     ("Taser 10: Detran-ES capacita 11 agentes de trânsito", "ES Brasil"),
+                     ("Matrículas na rede estadual do ES para 2027 começam nesta segunda", "Tribuna Online"),
+                     ("IBGE, Banestes e prefeituras: veja mais de 29 mil vagas abertas em concursos", "Folha Vitória"),
+                     ("Fames abre inscrições com 62 vagas para cursos de música", "Folha do ES"),
+                     ("Amigas mantêm a tradição e homenageiam Paula Pazolini em almoço festivo", "Folha Vitória"),
+                     ("Vitória terá tributo gratuito a Marília Mendonça nesta sexta", "ES Hoje"),
+                     ("Justiça nega cobrança de imposto de prefeitura a trabalhadores do Porto de Vitória", "A Gazeta"),
+                     ("Canal de Camburi: Vitória muda regras de funcionamento de restaurantes e adia licitação", "Folha Vitória"),
+                     ("Governo do Estado divulga os 40 finalistas do Prêmio Cafés Especiais do Espírito Santo 2026", "Governo ES")]:
+            self.assertEqual(self.decide(t, v, True)[0], "descartada", t)
+
+    def test_o_que_e_do_estado_e_nao_dizia_es_passa_a_entrar(self):
+        for t, v in [("Bombas fiscais: próximo governador terá R$ 650 milhões a menos sob seu controle", "A Gazeta"),
+                     ("Governo sanciona LDO e não descarta enviar outro Orçamento para a Assembleia", "Folha Vitória"),
+                     ("Emendas impositivas: deputados indicam verba ao Santa Rita", "ES Brasil"),
+                     ("Acordo do Rio Doce soma R$ 1,2 bilhão em ações no Espírito Santo", "Vitória News"),
+                     ("Guerra no Oriente Médio empurra petróleo e fundo soberano do ES chega aos R$ 3 bi", "A Gazeta"),
+                     ("Espírito Santo se consolida como referência nacional em excelência na gestão fiscal", "Sefaz-ES")]:
+            self.assertEqual(self.decide(t, v)[0], "confirmada", t)
+
+    def test_de_veiculo_de_fora_sem_ancora_vira_so_possivel(self):
+        self.assertEqual(self.decide("Próximo governador do Piauí terá orçamento de 2027 apertado", "Meio Norte")[0], "possivel")
+
+    def test_protocolo_e_gestao_continuam(self):
+        for t, v in [("Quem é Maurinho Rossoni? escolhido por Pazolini para integrar equipe do governo do ES", "portaldenot"),
+                     ("Pazolini reúne equipe de transição e discute prioridades para o governo do ES", "Folha Vitória"),
+                     ("Secom suspende licitação de R$ 85 milhões para contratação de serviços de publicidade", "ES Hoje"),
+                     ("Governo do ES muda nome da Secont para Controladoria-Geral do Estado", "Folha Vitória"),
+                     ("Pazolini é eleito governador do Espírito Santo", "G1")]:
+            self.assertEqual(self.decide(t, v, True)[0], "confirmada", t)
+
+    def test_consultas_novas_cobrem_orcamento_pazolini_proximo_governador_e_rio_doce(self):
+        q = " ".join(CFG["consultas_google"])
+        for termo in ("LDO", "Pazolini (emendas", "próximo governador", "Acordo do Rio Doce", "previdência"):
+            self.assertIn(termo, q)
+
+
 class ColunasPoliticas(unittest.TestCase):
     """Colunistas políticos (A Gazeta, Sim Notícias): o título raramente cita o Estado. Achado de 05/11/2026: "Uma corrida de madrugada e outra pela presidência
     da Assembleia" (coluna de Vinícius Baptista, Sim Notícias) não entrava, porque o veículo nem era lido."""
