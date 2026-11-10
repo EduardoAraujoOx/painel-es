@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-10",
- "gerado_em": "2026-11-10T00:17:14Z",
+ "gerado_em": "2026-11-10T01:17:16Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,17 +17,17 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 13,
-   "aceitos": 6,
+   "lidos": 10,
+   "aceitos": 5,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 29,
-   "aceitos": 13,
-   "possiveis": 5
+   "lidos": 30,
+   "aceitos": 12,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 8,
+   "lidos": 8,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
@@ -57,7 +57,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -65,8 +65,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 4,
+   "lidos": 6,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 47,
+   "lidos": 45,
    "aceitos": 2,
-   "possiveis": 6
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 10,
+   "lidos": 8,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -137,9 +137,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 24,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -171,7 +171,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 2,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Folha Vitória",
@@ -238,10 +238,10 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 292,
-  "possivel": 27,
+  "sem_contexto": 287,
+  "possivel": 30,
   "oficial_sem_tema": 3,
   "sem_contexto_com_tema": 3,
   "oficial_divulgacao": 1,
@@ -250,10 +250,27 @@
   "caixa_alta": 1,
   "outro_estado": 20,
   "veiculo_outra_praca": 2,
-  "sigla_sem_ancora": 6,
+  "sigla_sem_ancora": 7,
   "exterior_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "075111cbad3c",
+   "titulo": "Governo Lula vai prorrogar desoneração da gasolina e do etanol por mais 30 dias",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/brasil/governo-lula-vai-prorrogar-desoneracao-da-gasolina-e-do-etanol-por-mais-30-dias-1126",
+   "data": "2026-11-10T00:44:21Z",
+   "coletado_em": "2026-11-10T01:17:16Z",
+   "outras": [
+    {
+     "veiculo": "Tribuna Online",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOdVhXYklSTTM4Z04tNkFPRmxiRldibVFuRHB5U2pjZWtsZWdvN3I2bTRUSk1VSVloWm1IZTlxQ3RSMWw1WG5OaFNBTXk4dVZPdExrNTRHWFAwUHcwck9EYmhnSzFxSXFRVDdLQklKaERBQzJVQjVFTjVrOGtyQUpLSHMxSzQ3VmV2LVpYYnJOUEdSVDlwTDQ4UDZOYVlJeGRTWS1ZaExtNWFaNkdqUEhPNmh1SHZ3VXk2TDdTVjdYVjEwZ9IBygFBVV95cUxPS2xEQVVJUXlvVG9qMUowWlpGdVEwNXZZWl9DQ0poa2haUk40N3dfVU5QM05YRklTdy1fUVBtUWg3VFZHalRsbnRnVXdNcTJ0b0RZcXQ5STFMWnZxZGs0azY1UGE1VG1jbzJZUWpQTlB0U05IbkVYYkxMY0I1YzI5dzZyMmVtUTJqTDU3cFctZTlGOEJPa3FkN3ZmRFk5ZTMyQTdNdFlRcDl0SEFtZkY0N3VHZnJpS1hvU2xzNFJqNnNRekZmWVdUSk1B?oc=5"
+    }
+   ],
+   "possivel": true,
+   "triagem": 7,
+   "temas": []
+  },
   {
    "id": "58bf61833478",
    "titulo": "Pazolini inicia transição de governo com reunião sobre desenvolvimento e gestão pública",
