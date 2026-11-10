@@ -1,16 +1,19 @@
 {
- "ref": "2026-11-09",
- "gerado_em": "2026-11-09T09:17:47Z",
+ "ref": "2026-11-10",
+ "gerado_em": "2026-11-10T09:17:54Z",
  "desde": "2026-10-04",
  "primeiro_levantamento": "2026-11-05",
  "baseline": false,
  "contagem": {
   "decreto": 12,
   "transicao": 1,
-  "fiscal": 0,
-  "lei": 6
+  "fiscal": 1,
+  "lei": 7
  },
- "novos": [],
+ "novos": [
+  "2057857",
+  "2057103"
+ ],
  "edicoes_lidas": [
   11522,
   11528,
@@ -39,7 +42,8 @@
   11603,
   11606,
   11613,
-  11614
+  11614,
+  11617
  ],
  "ignoradas": [
   "2040862",
@@ -53,6 +57,34 @@
   "2052823"
  ],
  "itens": [
+  {
+   "id": "2057857",
+   "edicao": 11617,
+   "data": "2026-11-10",
+   "tipo": "lei",
+   "temas": [
+    "outro"
+   ],
+   "titulo": "LEI COMPLEMENTAR Nº 1.159",
+   "orgao": "Governadoria do Estado",
+   "ementa": "Dispõe sobre a gestão dos honorários advocatícios no âmbito da Procuradoria-Geral do Estado, sua transparência e limitação ao teto constitucional, e dá outras providências .",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2057857/11617",
+   "visto_em": "2026-11-10T09:17:54Z"
+  },
+  {
+   "id": "2057103",
+   "edicao": 11617,
+   "data": "2026-11-10",
+   "tipo": "fiscal",
+   "temas": [
+    "encerramento"
+   ],
+   "titulo": "PORTARIA 428-S/2026 - ENCERRAMENTO EXERCICIO/2026 - SRSV",
+   "orgao": "Secretaria de Estado da Saúde - SESA -",
+   "ementa": null,
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2057103/11617",
+   "visto_em": "2026-11-10T09:17:54Z"
+  },
   {
    "id": "2056658",
    "edicao": 11614,

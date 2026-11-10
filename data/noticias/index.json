@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-10",
- "gerado_em": "2026-11-10T02:44:58Z",
+ "gerado_em": "2026-11-10T09:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,24 +17,24 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 5,
+   "lidos": 11,
+   "aceitos": 6,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 30,
-   "aceitos": 11,
-   "possiveis": 6
+   "lidos": 29,
+   "aceitos": 12,
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 9,
-   "aceitos": 4,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
@@ -42,14 +42,14 @@
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
    "lidos": 9,
-   "aceitos": 8,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 11,
+   "lidos": 12,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -57,7 +57,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 4,
+   "lidos": 3,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -75,7 +75,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 2,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -89,8 +89,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 30,
-   "aceitos": 1,
+   "lidos": 41,
+   "aceitos": 2,
    "possiveis": 2
   },
   {
@@ -98,7 +98,7 @@
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
    "lidos": 46,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 7
   },
   {
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 25,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 19,
+   "lidos": 17,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -170,8 +170,8 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
-   "possiveis": 5
+   "aceitos": 4,
+   "possiveis": 6
   },
   {
    "fonte": "Folha Vitória",
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -218,7 +218,7 @@
    "consulta": "https://www.agazeta.com.br/colunas/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -238,15 +238,16 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 4,
  "descartes_na_coleta": {
-  "sem_contexto": 291,
-  "possivel": 31,
+  "sem_contexto": 286,
+  "possivel": 33,
   "oficial_sem_tema": 3,
-  "oficial_divulgacao": 1,
   "sem_contexto_com_tema": 3,
+  "oficial_divulgacao": 1,
+  "generico_sem_ancora": 1,
   "veiculo_excluido": 24,
-  "excluir": 14,
+  "excluir": 17,
   "caixa_alta": 1,
   "outro_estado": 19,
   "veiculo_outra_praca": 1,
@@ -254,6 +255,62 @@
   "exterior_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "fea8681b5515",
+   "titulo": "Eleições que merecem atenção de Pazolini",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQWHpMaDVKZ3pEeTRadDBRSUszVmZOc28wdDVxZy1RZlJIakZuZjdjNGtZUUhTdXNEUDVydS0xdGpGTjIxakh4SnhUWGhZaFNsWlpxQVRfTG00a0tlQTJ4RXNWbExGWGtTb3hvVTlZRUFXV04xOFkza3FPRmtyWUlnZlgtQlREZk1MRXY0Y05hRmdPSDBzVlFR0gGfAUFVX3lxTE9qVlZnSl9SX2d3VTBwSHA0ODgtVTlCNjZxWVoyTnJUTWp3YjZ6THNGd2huWmFPOFVrRHVYMnZ4dW1iYUJvRExoWktkZFBvTmRSR1V0T1pmaTNqOVRHdkRienlfZHl4X3MtdWlHamc5WXlfMVMzVUxHX2tkUHlVYWVJTUdVQVZhbU5qMUx3QjRqcFhCQy1fb1ljXzJjcVh5MA?oc=5",
+   "data": "2026-11-10T09:00:00Z",
+   "coletado_em": "2026-11-10T09:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "cd4600bff676",
+   "titulo": "Pazolini em Cariacica: a mudança no pêndulo de poder no ES",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/vitor-vogas/pazolini-em-cariacica-a-mudanca-no-pendulo-de-poder-no-es-1126",
+   "data": "2026-11-10T08:00:00Z",
+   "coletado_em": "2026-11-10T09:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "cf17a5332a3a",
+   "titulo": "Importação de carros pelo ES seguirá forte (apesar do imposto mais alto...)",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/abdo-filho/importacao-de-carros-pelo-es-seguira-forte-apesar-do-imposto-mais-alto-1126",
+   "data": "2026-11-10T06:00:00Z",
+   "coletado_em": "2026-11-10T09:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "3a57d66f3ce0",
+   "titulo": "Quando a grávida deve tomar ácido fólico? Saiba em que momento iniciar a suplementação",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/se-cuida/quando-a-gravida-deve-tomar-acido-folico-saiba-em-que-momento-iniciar-a-suplementacao-1126",
+   "data": "2026-11-10T03:13:32Z",
+   "coletado_em": "2026-11-10T09:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "112327d4bbb1",
    "titulo": "Governo federal prorroga desoneração de impostos sobre gasolina e etanol",
@@ -266,6 +323,20 @@
    "triagem": 7,
    "temas": [
     "financas"
+   ]
+  },
+  {
+   "id": "8397b55b47e8",
+   "titulo": "Após 188 anos, Serra pode ter um deputado da cidade no comando da Assembleia Legislativa",
+   "veiculo": "Portal Tempo Novo",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPM1huZmFrbEYtYktBaGoxWU1XYzVMMjBqZUltZjFiSE1nSTkxZW1nbUVXVm5TTlp1cjU5M2dPRVF0UG5CQTZHTTVaVDRyWmVZZ2NOckhDamdacldpOGRramhLbkRvZ0x6aVRGVXppOGR1NmdEYlNjbEFpM2F2alVaSndvLXYtSm9fZ2h4NzhDNA?oc=5",
+   "data": "2026-11-10T00:47:00Z",
+   "coletado_em": "2026-11-10T09:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "controle"
    ]
   },
   {
@@ -796,6 +867,18 @@
     "transicao",
     "governador"
    ]
+  },
+  {
+   "id": "2b781cb741d5",
+   "titulo": "Fames abre inscrições com 62 vagas para cursos de música",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNOFdPZDhIcEt5V0VkNnRSTlB1aWZEeVBIQ0pwQmh5d0dnYTJYWTR6V0FvX2xyUklNQ3BSTVdqQlZ4bWRWcUlNNnZYT2RMYmp5c0RlYUREekxKa1Z4NnNIMk1sVi0zRGpXNjhUTzBQZG1Uc3BEdTJhTUFFbkhTUklSbFRfcktUdw?oc=5",
+   "data": "2026-11-09T16:04:30Z",
+   "coletado_em": "2026-11-10T09:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": []
   },
   {
    "id": "d06f02e1cc32",

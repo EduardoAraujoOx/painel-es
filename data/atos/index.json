@@ -1,17 +1,19 @@
 {
- "ref": "2026-11-09",
- "gerado_em": "2026-11-09T09:17:27Z",
+ "ref": "2026-11-10",
+ "gerado_em": "2026-11-10T09:17:28Z",
  "desde": "2026-10-04",
  "primeiro_levantamento": "2026-10-31",
  "baseline": false,
  "contagem": {
   "paralisacao": 2,
   "suspensao": 2,
-  "rescisao": 16,
+  "rescisao": 17,
   "cancelamento": 5,
   "anulacao": 1
  },
- "novos": [],
+ "novos": [
+  "2057422"
+ ],
  "edicoes_lidas": [
   11522,
   11528,
@@ -40,9 +42,22 @@
   11603,
   11606,
   11613,
-  11614
+  11614,
+  11617
  ],
  "itens": [
+  {
+   "id": "2057422",
+   "edicao": 11617,
+   "data": "2026-11-10",
+   "tipo": "rescisao",
+   "alvo": "contrato",
+   "titulo": "Publicação Rescisão Contratual",
+   "orgao": "Secretaria de Estado do Meio Ambiente e Recursos Hídricos - SEAMA -",
+   "setor": "Contrato",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2057422/11617",
+   "visto_em": "2026-11-10T09:17:28Z"
+  },
   {
    "id": "2056926",
    "edicao": 11614,
