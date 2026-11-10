@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-10",
- "gerado_em": "2026-11-10T18:17:13Z",
+ "gerado_em": "2026-11-10T19:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 18,
-   "aceitos": 10,
+   "lidos": 20,
+   "aceitos": 11,
    "possiveis": 1
   },
   {
@@ -35,7 +35,7 @@
    "ok": true,
    "lidos": 9,
    "aceitos": 4,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -49,9 +49,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 22,
+   "lidos": 24,
    "aceitos": 5,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 69,
+   "lidos": 68,
    "aceitos": 1,
    "possiveis": 4
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 68,
+   "lidos": 67,
    "aceitos": 2,
    "possiveis": 8
   },
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 9,
+   "lidos": 7,
    "aceitos": 3,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 27,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 17,
+   "lidos": 18,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -169,7 +169,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 0,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 6,
+   "lidos": 10,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -280,20 +280,46 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 330,
-  "excluir": 37,
-  "possivel": 35,
-  "oficial_sem_tema": 2,
+  "sem_contexto": 336,
+  "excluir": 36,
+  "possivel": 33,
   "veiculo_outra_praca": 2,
+  "oficial_sem_tema": 2,
   "oficial_divulgacao": 1,
-  "sem_contexto_com_tema": 4,
+  "sem_contexto_com_tema": 5,
   "veiculo_excluido": 30,
   "caixa_alta": 1,
-  "outro_estado": 22,
+  "outro_estado": 23,
   "sigla_sem_ancora": 7,
   "exterior_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "da0637213b1e",
+   "titulo": "Governo do Estado vai investir R$ 1 milhão em projeto para fortalecer a produção sustentável de pimenta-do-reino no Espírito Santo",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNZVoydTU4YnlubjdTeEVraEJxRHIzeGtucXpydktwUTJHWnpVYmRwSG9JLWY3RkV6OE5ubHhfSC1sWlQyLVA1MTFmQzhqMXBmTFlFY2ZBT2RTSnFRRUhHMUxaT3ZxNzU2NXM1MDVJWDE4UEF0OG13eDdUaldUZG40dkhQRnJDUTIzYlo5S2ltTnh5bHlXMUJCbzlzS2taY2tMNklwcS13dmh2ZUZrWEc4WGVSaUd3QU5PMmlXMHp4YklISXZ0dmlCX0hEbVE1U2pINV9ESzVrcWptblRLNzM5Wkc0S2RoQQ?oc=5",
+   "data": "2026-11-10T18:38:00Z",
+   "coletado_em": "2026-11-10T19:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "41b201e4a52f",
+   "titulo": "No governo Lula, sacola de tomate chega a quase R$ 100 e assusta consumidor",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOdkV2ZXRub0VjUlNmOWZsTmhULTl6SzdlWWcyc0d3MFd5VnpXUGZHYWR0QlZpdkxzb2FMT19rb3pzWFhNWmhDZlktOFJ1QlQxZ09Cdkdyd094QUREOVZLUlBNSEZGRUtSbU44bmFDR2VoclNsTmFreXNHZTBmODZ3bw?oc=5",
+   "data": "2026-11-10T18:27:23Z",
+   "coletado_em": "2026-11-10T19:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "019564db30c2",
    "titulo": "Gracyanne Barbosa dá 15 dias para Belo pagar dívida e ameaça ir à Justiça",
@@ -306,6 +332,21 @@
    "triagem": 8,
    "temas": [
     "financas"
+   ]
+  },
+  {
+   "id": "5772b27d332a",
+   "titulo": "Pedro Longo defende convocação de auditores fiscais aprovados em concurso da Sefaz",
+   "veiculo": "REDE BRASIL DE TELEVISÃO",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPeU9uci14Y0RLeEFJck9PbklFTURhVVpZX3VhellWa293V1pkWWFKNU1jOXg4Y3ZlS3ctS0xBM2FKelkwWXFMTWdkTU9sWFhOVHhlZFUwWTN3ZWlGT0Q5NlA2cFk4OGFweEZXdkVvVnZSX1BVeTBaSm5DUTBybFZGSm9VNWloNS0yLUdzNjhSVXNNMWJTVHJKblVEYUkyM0NWWndFUHhJeDI4aTVEUXFUS21OTUY0RDhJZGcyRA?oc=5",
+   "data": "2026-11-10T17:31:00Z",
+   "coletado_em": "2026-11-10T19:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas",
+    "pessoal"
    ]
   },
   {
