@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-10",
- "gerado_em": "2026-11-10T22:23:05Z",
+ "gerado_em": "2026-11-10T23:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,16 +17,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 24,
-   "aceitos": 13,
+   "lidos": 27,
+   "aceitos": 15,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 27,
-   "aceitos": 17,
+   "lidos": 28,
+   "aceitos": 19,
    "possiveis": 3
   },
   {
@@ -34,15 +34,15 @@
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 9,
-   "aceitos": 6,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 8,
+   "lidos": 7,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
@@ -50,7 +50,7 @@
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
    "lidos": 27,
-   "aceitos": 7,
+   "aceitos": 8,
    "possiveis": 4
   },
   {
@@ -65,16 +65,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 5,
-   "possiveis": 0
+   "lidos": 10,
+   "aceitos": 7,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -89,15 +89,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 66,
-   "aceitos": 1,
+   "lidos": 69,
+   "aceitos": 2,
    "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 69,
+   "lidos": 68,
    "aceitos": 4,
    "possiveis": 8
   },
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 3,
+   "lidos": 8,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -129,8 +129,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 13,
-   "aceitos": 0,
+   "lidos": 14,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 19,
+   "lidos": 18,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 24,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 55,
+   "lidos": 56,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 4,
+   "lidos": 6,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -201,7 +201,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (previdência OR Ipajm OR \"regime próprio\" OR \"contribuição previdenciária\" OR aposentadoria)",
    "ok": true,
-   "lidos": 0,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -210,15 +210,15 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 6,
-   "possiveis": 2
+   "aceitos": 5,
+   "possiveis": 3
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -235,14 +235,14 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "G1 Espírito Santo",
    "consulta": "https://g1.globo.com/rss/g1/es/espirito-santo/",
    "ok": true,
    "lidos": 100,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -251,7 +251,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 3,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "A Gazeta",
@@ -281,18 +281,51 @@
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
   "sem_contexto": 339,
-  "excluir": 36,
-  "possivel": 31,
-  "veiculo_outra_praca": 2,
+  "excluir": 34,
+  "possivel": 33,
   "oficial_sem_tema": 2,
-  "sem_contexto_com_tema": 6,
-  "veiculo_excluido": 32,
+  "sem_contexto_com_tema": 7,
+  "veiculo_excluido": 33,
   "outro_estado": 32,
   "caixa_alta": 1,
   "sigla_sem_ancora": 8,
+  "veiculo_outra_praca": 2,
   "exterior_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "ad6671292224",
+   "titulo": "Governador eleito no ES, Lorenzo Pazolini anuncia exoneração de todos os comissionados em janeiro",
+   "veiculo": "G1 Espírito Santo",
+   "url": "https://g1.globo.com/es/espirito-santo/noticia/2026/11/10/governador-eleito-no-es-lorenzo-pazolini-anuncia-exoneracao-de-todos-os-comissionados-em-janeiro.ghtml",
+   "data": "2026-11-10T22:47:07Z",
+   "coletado_em": "2026-11-10T23:17:14Z",
+   "outras": [
+    {
+     "veiculo": "G1",
+     "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPU2ZWWld6MmoteExmZG1BZExoRndLMk5KWlhZdm5DS0JEcHE4SW9Od0h4a1UwNHFzS3pnSGlxcFFqb3NoNS1QZi1xWnhOZHc3eWtfWGFKTHljS3ZDUG1SWVFPZzVPNEJRYjdXc3d0RTk5NFdxSnEtd2VaVVQtSC1pa1E4a0VkdUVyUUZYSy1oTlpGX1NiZFgzX2FhUzJwamFCbnE0UjhtNUp0c29QaWdqVTBzekVsVTVtSGdsdmlXamtpN1FsUDJnU1czaGd6SGh4aGduMy1nbkZWYzJJQko1M1pzU2t1S0Rpb2JXQTB5VVJNQdIBgAJBVV95cUxNY1hURm5nVlBHaFNQYkpyTktLQ0J1NmtnOUFmMGVKY0pNMUNXOG1obDRHWDhuYzlwVGUzQXRVbmkyVV8teWg3Q0wyYXhBZ01zR1JwR1d5Tk1qRXpQbXJGcTItWm56ZFJ4cG85WDR2VFlCRDFYWlg4SzV0NzNWaUloMnNkREZ4M1pPMzZmMFlMYnlNMmZuM19ySWp5TEJxWGlmbEg3N21lR2czRHBYcmxJMWEyY0tsNHdGNlZ1WXB0V3RUX1l0NG1TeS1SSXYxQW9ZWVBXYk1GUUw5QU82dVJyTmNqSUc5WEk4dGFUTTVDNUt4Z2JIQzZKREZvSmRzOWh4?oc=5"
+    }
+   ],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao",
+    "governador",
+    "pessoal"
+   ]
+  },
+  {
+   "id": "bf0a7c04cd5e",
+   "titulo": "Assembleia do ES lidera ranking de transparência entre legislativos estaduais",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/politica/assembleia-do-es-lidera-ranking-de-transparencia-entre-legislativos-estaduais-1126",
+   "data": "2026-11-10T22:25:00Z",
+   "coletado_em": "2026-11-10T23:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "7ef6aa51c0b9",
    "titulo": "Pazolini vai exonerar todos os servidores comissionados no primeiro dia de governo",
@@ -424,7 +457,12 @@
    "url": "https://www.folhavitoria.com.br/trabalho/tribunal-de-contas-do-es-abre-selecao-com-salarios-de-ate-r-176-mil/",
    "data": "2026-11-10T20:36:31Z",
    "coletado_em": "2026-11-10T21:17:14Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Folha do ES",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQb1NhZlMyUFBOWl9lWDhtZEN3MFhreHcyZVRxSzJsYzBsMTNFaDRFRUFWSmthRklXZmo4Q2paTm45YmNoS1g1VzJ5ZTFfUndPYldBeVhreEgyX3cyT1BNcmdSSzJGQ242Q2ZBMmpmdm5MQnZBemZia2RfdFRZNlk4eDh6dnFpcHVYTzE5dWo2RGdDeE5V?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 8,
    "temas": [
