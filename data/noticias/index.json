@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-10",
- "gerado_em": "2026-11-10T16:17:15Z",
+ "gerado_em": "2026-11-10T17:03:58Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 18,
+   "lidos": 20,
    "aceitos": 10,
    "possiveis": 1
   },
@@ -25,7 +25,7 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 28,
+   "lidos": 27,
    "aceitos": 14,
    "possiveis": 3
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 60,
+   "lidos": 66,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 27,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 5,
    "possiveis": 4
   },
   {
@@ -278,22 +278,36 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 322,
+  "sem_contexto": 325,
   "excluir": 36,
   "possivel": 33,
   "oficial_sem_tema": 2,
-  "veiculo_outra_praca": 3,
+  "veiculo_outra_praca": 4,
   "oficial_divulgacao": 1,
   "veiculo_excluido": 30,
+  "sem_contexto_com_tema": 3,
   "caixa_alta": 1,
-  "outro_estado": 24,
+  "outro_estado": 23,
   "sigla_sem_ancora": 5,
-  "sem_contexto_com_tema": 2,
   "exterior_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "7fcf650cf240",
+   "titulo": "Inscrições para o concurso do Creci-ES terminam nesta terça-feira (10)",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/concursos/inscricoes-para-o-concurso-do-creci-es-terminam-nesta-terca-feira-10-1126",
+   "data": "2026-11-10T16:56:57Z",
+   "coletado_em": "2026-11-10T17:03:58Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "db4fdf746d06",
    "titulo": "86ª Reunião do Conaprev: Espírito Santo reúne dirigentes de todo o país para debater o futuro da Previdência",
