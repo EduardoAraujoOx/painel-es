@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-10",
- "gerado_em": "2026-11-10T19:17:15Z",
+ "gerado_em": "2026-11-10T20:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 20,
-   "aceitos": 11,
+   "lidos": 19,
+   "aceitos": 10,
    "possiveis": 1
   },
   {
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 24,
+   "lidos": 25,
    "aceitos": 5,
    "possiveis": 4
   },
@@ -57,7 +57,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 67,
+   "lidos": 68,
    "aceitos": 2,
    "possiveis": 8
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 13,
+   "lidos": 12,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 30,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 54,
+   "lidos": 53,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 10,
+   "lidos": 11,
    "aceitos": 7,
    "possiveis": 0
   },
@@ -227,7 +227,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 1,
-   "possiveis": 4
+   "possiveis": 2
   },
   {
    "fonte": "ES Hoje",
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -267,7 +267,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Sim Notícias",
@@ -278,22 +278,34 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 336,
-  "excluir": 36,
-  "possivel": 33,
+  "sem_contexto": 343,
+  "excluir": 39,
+  "possivel": 31,
   "veiculo_outra_praca": 2,
   "oficial_sem_tema": 2,
   "oficial_divulgacao": 1,
-  "sem_contexto_com_tema": 5,
-  "veiculo_excluido": 30,
+  "sem_contexto_com_tema": 6,
+  "veiculo_excluido": 29,
+  "outro_estado": 26,
   "caixa_alta": 1,
-  "outro_estado": 23,
   "sigla_sem_ancora": 7,
   "exterior_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "704dfb149175",
+   "titulo": "Governo Lula enxuga agenda de 2026 e adia pauta legislativa",
+   "veiculo": "Sim Notícias",
+   "url": "https://simnoticias.com.br/politica/governo-lula-enxuga-agenda-de-2026-e-adia-pauta-legislativa/",
+   "data": "2026-11-10T19:17:16Z",
+   "coletado_em": "2026-11-10T20:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "da0637213b1e",
    "titulo": "Governo do Estado vai investir R$ 1 milhão em projeto para fortalecer a produção sustentável de pimenta-do-reino no Espírito Santo",
