@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-10",
- "gerado_em": "2026-11-10T15:17:19Z",
+ "gerado_em": "2026-11-10T16:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 16,
-   "aceitos": 9,
+   "lidos": 18,
+   "aceitos": 10,
    "possiveis": 1
   },
   {
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 19,
+   "lidos": 20,
    "aceitos": 5,
    "possiveis": 3
   },
@@ -65,8 +65,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 2,
+   "lidos": 6,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -89,8 +89,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 59,
-   "aceitos": 0,
+   "lidos": 60,
+   "aceitos": 1,
    "possiveis": 3
   },
   {
@@ -99,7 +99,7 @@
    "ok": true,
    "lidos": 66,
    "aceitos": 2,
-   "possiveis": 9
+   "possiveis": 8
   },
   {
    "fonte": "Google Notícias",
@@ -129,9 +129,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 14,
+   "lidos": 13,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -139,7 +139,7 @@
    "ok": true,
    "lidos": 28,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 21,
+   "lidos": 22,
    "aceitos": 1,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 6,
    "possiveis": 0
   },
@@ -210,8 +210,8 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
-   "possiveis": 5
+   "aceitos": 4,
+   "possiveis": 4
   },
   {
    "fonte": "Folha Vitória",
@@ -243,14 +243,14 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "A Gazeta",
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -258,7 +258,7 @@
    "consulta": "https://www.agazeta.com.br/colunas/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -278,22 +278,91 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto": 317,
+  "sem_contexto": 322,
   "excluir": 36,
-  "possivel": 37,
+  "possivel": 33,
   "oficial_sem_tema": 2,
+  "veiculo_outra_praca": 3,
   "oficial_divulgacao": 1,
-  "outro_estado": 23,
-  "veiculo_excluido": 29,
+  "veiculo_excluido": 30,
   "caixa_alta": 1,
-  "veiculo_outra_praca": 2,
-  "sigla_sem_ancora": 7,
+  "outro_estado": 24,
+  "sigla_sem_ancora": 5,
   "sem_contexto_com_tema": 2,
   "exterior_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "db4fdf746d06",
+   "titulo": "86ª Reunião do Conaprev: Espírito Santo reúne dirigentes de todo o país para debater o futuro da Previdência",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNXzgxbmwxdDNrS0d6V2Fja3Z5UERHaG9kcGwtUDg1SGxMV1NYTTF0TXh5T1pxVG5DSEtRN0VxREh4bmhnOXNoamZJNzhCcDFiVDFxX3VBbVpMZ2twQ0NrRTZhZUhrOHRRdDh2LTVleHpicEE1dmUybWIyWmF2TjFpb2VIdENHb2xYM01yZmlpODJkQ2JPSl8tdGJxX09rZ1lMRG5zWlJWX2psdUlhV0YxWVFzT2s3MHl3cUdkSVNkYVVyWUZoem5SOQ?oc=5",
+   "data": "2026-11-10T16:08:00Z",
+   "coletado_em": "2026-11-10T16:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "f512f5ab452c",
+   "titulo": "Pazolini dá sua opinião sobre a fuga de Flávio Bolsonaro",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/vitor-vogas/pazolini-da-sua-opiniao-sobre-a-fuga-de-flavio-bolsonaro-1126",
+   "data": "2026-11-10T15:50:00Z",
+   "coletado_em": "2026-11-10T16:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "ed3d6ede6a14",
+   "titulo": "Governo do ES transforma secretaria em Controladoria-Geral do Estado",
+   "veiculo": "Aqui Notícias",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQ21pNHdLcVhMNEtrMjl2N2YtRzJ6Q3g0ellEOUt3M0hKQzZBVFRKVkdDUnlaeVFXWF94cGxXWEFTakQzVkpOQUxralFEQkdMc3NQbFVZam1TLXdxd3RuRFU1NkxsbG03ekNpQkJqaUM4NEVvWVVtSzF0WnM4cGFlb09oM2dhZHU1QjdKOXJRNTlEcm9fVGJkYWEyQmNmeURFeHNZLQ?oc=5",
+   "data": "2026-11-10T15:46:26Z",
+   "coletado_em": "2026-11-10T16:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador",
+    "controle"
+   ]
+  },
+  {
+   "id": "e61163646354",
+   "titulo": "Candidatos denunciam falhas no concurso da PMES e pedem correção de 6 mil redações",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBQVVJ1QjZ5VkplenBZWmpfX2N1amRyNnpPRnI0WWNka0I2QzM1M20tSTFONTNmNFQ5eDJ3aEdudDBHZnhkeHZzaFZ6RHV1V3YzQWFEcWp2enowUUNiYkgxSmd4bV8xWDY5WkxybkJLZFFWalhFREFoR3J0S01hUQ?oc=5",
+   "data": "2026-11-10T15:31:50Z",
+   "coletado_em": "2026-11-10T16:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "1e7b4cafcdac",
+   "titulo": "Prefeitura de Rio Bananal abre concurso público para professor",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/concursos/prefeitura-de-rio-bananal-abre-concurso-publico-para-professor-1126",
+   "data": "2026-11-10T15:25:58Z",
+   "coletado_em": "2026-11-10T16:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "328d7234fc49",
    "titulo": "Atendimento humano e cancelamento fácil: o que muda no SAC e como cobrar seus direitos",
