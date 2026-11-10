@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-10",
- "gerado_em": "2026-11-10T17:17:14Z",
+ "gerado_em": "2026-11-10T18:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 20,
+   "lidos": 18,
    "aceitos": 10,
    "possiveis": 1
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 19,
+   "lidos": 22,
    "aceitos": 5,
    "possiveis": 3
   },
@@ -57,7 +57,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -89,15 +89,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 66,
+   "lidos": 69,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 66,
+   "lidos": 68,
    "aceitos": 2,
    "possiveis": 8
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -139,7 +139,7 @@
    "ok": true,
    "lidos": 26,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 22,
+   "lidos": 23,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -226,7 +226,7 @@
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 4
   },
   {
@@ -234,8 +234,8 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 0,
-   "possiveis": 3
+   "aceitos": 1,
+   "possiveis": 2
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -278,22 +278,62 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 321,
-  "excluir": 36,
+  "sem_contexto": 330,
+  "excluir": 37,
   "possivel": 35,
   "oficial_sem_tema": 2,
-  "veiculo_outra_praca": 3,
+  "veiculo_outra_praca": 2,
   "oficial_divulgacao": 1,
+  "sem_contexto_com_tema": 4,
   "veiculo_excluido": 30,
-  "sem_contexto_com_tema": 3,
   "caixa_alta": 1,
-  "outro_estado": 23,
-  "sigla_sem_ancora": 6,
-  "exterior_sem_ancora": 2
+  "outro_estado": 22,
+  "sigla_sem_ancora": 7,
+  "exterior_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "019564db30c2",
+   "titulo": "Gracyanne Barbosa dá 15 dias para Belo pagar dívida e ameaça ir à Justiça",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/cultura/famosos/gracyanne-barbosa-da-15-dias-para-belo-pagar-divida-e-ameaca-ir-a-justica/",
+   "data": "2026-11-10T18:04:43Z",
+   "coletado_em": "2026-11-10T18:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "2a455395f771",
+   "titulo": "Governo do ES anuncia R$ 1mi para blindar liderança nacional na pimenta-do-reino e destravar mercado externo",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/economia/agronegocio/2026/11/pimenta-do-reino-no-es/",
+   "data": "2026-11-10T17:25:23Z",
+   "coletado_em": "2026-11-10T18:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "1b7098784ab7",
+   "titulo": "Governo prorroga até 9 de dezembro desoneração da gasolina e do etanol",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPODdSa0xFYmxMMnFjUFRyVkotV0Q4V2c2eEU2X2hWbDlVMVg0RFRORGhGYTJTTjVOSGRwY1RYRHROdFJnME12UUM3Ny1RZUlTa05oOV9UNWxBbjVqejJEaE9BM2J2Tkg5dWh3bFVDX1pKN0E0RjRyZFUzU2RJNnJ6RzB4VjR5Rk5udVUySHdmR3NVcnQyZEZacA?oc=5",
+   "data": "2026-11-10T17:17:11Z",
+   "coletado_em": "2026-11-10T18:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "b0f6632a90b1",
    "titulo": "Ufes regulamenta uso de Inteligência Artificial: veja o que muda para alunos e servidores",
@@ -305,6 +345,21 @@
    "possivel": true,
    "triagem": 8,
    "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "0e4eac7224a2",
+   "titulo": "Deputado cobra convocação de quase 50 auditores fiscais aprovados em concurso da Sefaz no Acre",
+   "veiculo": "O Juruá Em Tempo",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNY240Vk1VeXBOZk5WTXZqMlE4dVdBYjkwUUlVNXZRc29UbnUwdmtZRDZDd3UwZGJQenFrN3dmTWt4OTdLMGoyNl9XdFlnQmh4UG5YOENvRDhrSWpVRDNvQUpvaUJtUGJwakozYlc0Uy16Yk0yMlh4MnEwbDNiWHN6U0J5QTdoR0dzM2dXUmU4RU9vZEx6di1lVlNYLUFZWnZ2bF8tQkEzUDVzLXJ1b3ZmeU9OeXRPTmYwRmhTQnBpUXpiTWswVzFwcS10dEVQQWlBS3k0?oc=5",
+   "data": "2026-11-10T17:13:51Z",
+   "coletado_em": "2026-11-10T18:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas",
     "pessoal"
    ]
   },
