@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-10",
- "gerado_em": "2026-11-10T10:17:15Z",
+ "gerado_em": "2026-11-10T11:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -35,14 +35,14 @@
    "ok": true,
    "lidos": 9,
    "aceitos": 5,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 9,
+   "lidos": 8,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
@@ -57,7 +57,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 41,
+   "lidos": 42,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 48,
+   "lidos": 54,
    "aceitos": 3,
-   "possiveis": 7
+   "possiveis": 8
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 15,
+   "lidos": 16,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -147,7 +147,7 @@
    "ok": true,
    "lidos": 18,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 55,
+   "lidos": 54,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -238,23 +238,47 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 290,
-  "possivel": 34,
+  "sem_contexto": 294,
+  "possivel": 36,
   "oficial_sem_tema": 3,
   "oficial_divulgacao": 1,
-  "sem_contexto_com_tema": 3,
+  "sem_contexto_com_tema": 2,
   "generico_sem_ancora": 1,
   "veiculo_excluido": 24,
-  "excluir": 17,
+  "excluir": 18,
   "caixa_alta": 1,
-  "outro_estado": 19,
+  "outro_estado": 20,
   "veiculo_outra_praca": 1,
-  "sigla_sem_ancora": 7,
+  "sigla_sem_ancora": 8,
   "exterior_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "8048e258d803",
+   "titulo": "Estande da Setur",
+   "veiculo": "Angelo Rigon",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9DZWFnMjFvc3NVMGoteFhaeFJMZDFrU1ROZVJpRlBlZkw4M2FtcWZVOEhpRV9la1E4dFltWEtlVXRHVk1pYU8yNEZRM0gzbGhEV09PVUpjaXdWOHJDLUtDVFM1cVl1amFsMEZqYzBB0gFuQVVfeXFMT0NlYWcyMW9zc1Uwai14WFp4UkxkMWtTVE5lUmlGUGVmTDgzYW1xZlU4SGlFX2VrUTh0WW1YS2VVdEdWTWlhTzI0RlEzSDNsaERXT09VSmNpd1Y4ckMtS0NUUzVxWXVqYWwwRmpjMEE?oc=5",
+   "data": "2026-11-10T10:30:00Z",
+   "coletado_em": "2026-11-10T11:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": []
+  },
+  {
+   "id": "c92f7beb2ab4",
+   "titulo": "ATA DA ASSEMBLEIA GERAL ORDINÁRIA Jornal A Tribuna",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxOaF9ETDVGSHEwYlFyb0tRQUJadlFXZEo4NXlJVnJxbG1ZYmlIdnBmTlFKc1VLSHFHMDZvNVpndHA2Y2VURHA5VHd4VEUzVXRyMzlwQzBCaHQ1aW9yR3dMSmtPYW0wdnVFcTV4ZF9yM0JqWkx1VlNmR044Y3k1V1ZNVklQekFzbWE3R0ZtVmxJU2dvUG9JYmIyWWZaT3pKWTI5THVfMjVaRXNzdHhXRTRkU3FkS2xwRmtiQlBRSHdyRlFLa0xaTmpxdkxwOU91alowWXpyVTQ4MHNabWdEOUxpZFhoS2k4ejMwNVptZFV5djV6cDQycnh1QjgtRk1ERTcxOFAwSTNfNDNiTThtbE13SDg0Q0xnWTBPNGNNNFZ2RDI5emhuT0pYbC13MU94QzhZR1pv?oc=5",
+   "data": "2026-11-10T10:04:07Z",
+   "coletado_em": "2026-11-10T11:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": []
+  },
   {
    "id": "a029dc7bd1f6",
    "titulo": "Espírito Santo a todo vapor: superávit, baixa dívida e alto investimento",
