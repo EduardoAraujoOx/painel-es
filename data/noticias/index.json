@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-10",
- "gerado_em": "2026-11-10T09:17:14Z",
+ "gerado_em": "2026-11-10T10:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 29,
-   "aceitos": 12,
+   "aceitos": 13,
    "possiveis": 7
   },
   {
@@ -49,15 +49,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 12,
+   "lidos": 13,
    "aceitos": 3,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 46,
+   "lidos": 48,
    "aceitos": 3,
    "possiveis": 7
   },
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 2,
+   "lidos": 10,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 17,
+   "lidos": 18,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -170,7 +170,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 6
   },
   {
@@ -238,13 +238,13 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 4,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 286,
-  "possivel": 33,
+  "sem_contexto": 290,
+  "possivel": 34,
   "oficial_sem_tema": 3,
-  "sem_contexto_com_tema": 3,
   "oficial_divulgacao": 1,
+  "sem_contexto_com_tema": 3,
   "generico_sem_ancora": 1,
   "veiculo_excluido": 24,
   "excluir": 17,
@@ -252,9 +252,23 @@
   "outro_estado": 19,
   "veiculo_outra_praca": 1,
   "sigla_sem_ancora": 7,
-  "exterior_sem_ancora": 1
+  "exterior_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "a029dc7bd1f6",
+   "titulo": "Espírito Santo a todo vapor: superávit, baixa dívida e alto investimento",
+   "veiculo": "Tribuna Norte Leste",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQN2hiWWI0MGtneUM4TGRWbkVtV0NUUG02SDRneGJLWGlPc2ozVGt0TUN5djYxaGk4TEFHbU45bTN3bEgxb29KZHBtS0pIQlpRRXZTVFloelZRWlJiaWtVQno1MzlueVVVaGJDLUVDOWt0alNOaThCOHNHbE10X0FVUGNoZ3F2VEhUMjFyazlLaEZEcFR0cDZ4eFFHQk5QRTRzaEk0eXYtTQ?oc=5",
+   "data": "2026-11-10T10:03:05Z",
+   "coletado_em": "2026-11-10T10:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 7,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "fea8681b5515",
    "titulo": "Eleições que merecem atenção de Pazolini",
@@ -370,6 +384,18 @@
     "transicao",
     "governador"
    ]
+  },
+  {
+   "id": "a5844854979f",
+   "titulo": "Organizações lançam manifesto pelo combate aos supersalários como prioridade do Governo",
+   "veiculo": "Vitória News",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNaUtkRDhWTHh3NnVNODFxWk1nanp0bFlnbEhtV2V6bVFQREE0MFRuY1IxRG52RDZiUUFDS0phU1o5akU3NXBjcW5YSV9NLTNsOThrdXJFUTJnLWktMnM5Nk9OaF9uTl9XLWdKaVcxekMwMWdFN1duX29nYUZCV3B3OURDWS1QV1VxbVJBMk9tQU8wWlcyUzlULUxBQ0E3SXUzUmhPZVhWMi0xNFd2UUlGcG4waWE?oc=5",
+   "data": "2026-11-09T22:51:00Z",
+   "coletado_em": "2026-11-10T10:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": []
   },
   {
    "id": "692f2732bab6",
