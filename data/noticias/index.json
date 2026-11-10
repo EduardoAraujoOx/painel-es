@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-10",
- "gerado_em": "2026-11-10T22:17:15Z",
+ "gerado_em": "2026-11-10T22:23:05Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,14 +26,14 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 27,
-   "aceitos": 16,
+   "aceitos": 17,
    "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 6,
    "possiveis": 0
   },
@@ -49,8 +49,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 6,
+   "lidos": 27,
+   "aceitos": 7,
    "possiveis": 4
   },
   {
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 5,
    "possiveis": 0
   },
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 4,
    "possiveis": 1
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 35,
+   "lidos": 34,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 54,
+   "lidos": 55,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -278,22 +278,36 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 5,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 338,
+  "sem_contexto": 339,
   "excluir": 36,
   "possivel": 31,
   "veiculo_outra_praca": 2,
   "oficial_sem_tema": 2,
-  "oficial_divulgacao": 1,
   "sem_contexto_com_tema": 6,
-  "veiculo_excluido": 34,
-  "outro_estado": 31,
+  "veiculo_excluido": 32,
+  "outro_estado": 32,
   "caixa_alta": 1,
   "sigla_sem_ancora": 8,
   "exterior_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "7ef6aa51c0b9",
+   "titulo": "Pazolini vai exonerar todos os servidores comissionados no primeiro dia de governo",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/pazolini-vai-exonerar-todos-os-servidores-comissionados-no-primeiro-dia-de-governo/",
+   "data": "2026-11-10T22:20:29Z",
+   "coletado_em": "2026-11-10T22:23:05Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador",
+    "pessoal"
+   ]
+  },
   {
    "id": "0e7ae4ca24dd",
    "titulo": "Equipe de transição de Pazolini anuncia exoneração de todos os servidores comissionados e dispensa das funções gratificadas no primeiro dia do novo governo",
