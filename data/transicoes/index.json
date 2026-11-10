@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-10T15:17:59Z",
+ "gerado_em": "2026-11-10T21:17:53Z",
  "ref": "2026-11-10",
  "desde": "2026-10-04",
  "estados": [
@@ -8,7 +8,7 @@
    "nome": "Alagoas",
    "eleito": "JHC",
    "partido": "PSDB",
-   "total": 58
+   "total": 59
   },
   {
    "uf": "AP",
@@ -22,21 +22,21 @@
    "nome": "Amazonas",
    "eleito": "Omar Aziz",
    "partido": "PSD",
-   "total": 76
+   "total": 78
   },
   {
    "uf": "MA",
    "nome": "Maranhão",
    "eleito": "Eduardo Braide",
    "partido": "PSD",
-   "total": 46
+   "total": 49
   },
   {
    "uf": "MG",
    "nome": "Minas Gerais",
    "eleito": "Cleitinho Azevedo",
    "partido": "Republicanos",
-   "total": 129
+   "total": 131
   },
   {
    "uf": "PA",
@@ -57,42 +57,42 @@
    "nome": "Rio de Janeiro",
    "eleito": "Douglas Ruas",
    "partido": "PL",
-   "total": 109
+   "total": 110
   },
   {
    "uf": "RN",
    "nome": "Rio Grande do Norte",
    "eleito": "Cadu Xavier",
    "partido": "PT",
-   "total": 51
+   "total": 53
   },
   {
    "uf": "RS",
    "nome": "Rio Grande do Sul",
    "eleito": "Luciano Zucco",
    "partido": "PL",
-   "total": 98
+   "total": 101
   },
   {
    "uf": "RO",
    "nome": "Rondônia",
    "eleito": "Marcos Rogério",
    "partido": "PL",
-   "total": 50
+   "total": 53
   },
   {
    "uf": "RR",
    "nome": "Roraima",
    "eleito": "Arthur Henrique",
    "partido": "PL",
-   "total": 19
+   "total": 20
   },
   {
    "uf": "TO",
    "nome": "Tocantins",
    "eleito": "Vicentinho Júnior",
    "partido": "PSDB",
-   "total": 82
+   "total": 84
   }
  ],
  "temas": {
@@ -106,11 +106,198 @@
   "fndr": "FNDR e reforma tributária"
  },
  "contagem": {
-  "total": 883,
-  "medidas": 262,
-  "equipe": 621
+  "total": 903,
+  "medidas": 272,
+  "equipe": 631
  },
  "itens": [
+  {
+   "id": "0fbaa4c32515",
+   "titulo": "Em busca de socorro para dívida bilionária, Cleitinho Azevedo sinaliza aproximação com Lula",
+   "veiculo": "Plantão Brasil",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQbGtfTzB2VUtxM3hrcnUxTVR6UXg2TDJCZk5FSE5lUjY3TXdsbFppVDZBRTBoQ2VpNF90Z01RQ3lSSVY0Yi1ITG9JLWxWaEZ1RUFPYkZSQjM1a1d3QVFkXzgtQW5VUDRpOW5VUUpMOVBURjN6Z2x2dGhzVElPZWEyNFFZd1puT05EMmYyWnd1Unp2STRxNkRFc2I2WlBTTzdNdGdzbUhkODFUbmdrRFNwU3hPemlydlVkYS1jNS1IeldlbnZfVVVmSEhMOTlaYnZsbGc?oc=5",
+   "data": "2026-11-10T19:18:45Z",
+   "coletado_em": "2026-11-10T21:17:53Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "04d5755409f7",
+   "titulo": "Braide suspende contrato de R$ 65 milhões do Governo do Maranhão",
+   "veiculo": "Gazeta Carajás",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxORElQQUIxZkxxREZ0TmdQUWpkMGxwZ1JQZEUxRG9hMTlmZ2pKR2IzYXR6eDBvR09CNFVrNlNoek9weW5oODZwOV82elpQajlWRlcyb01FMll5bnpsUWFKclhyNVlETVQ4UWExbE1IcGNvc283WTVncjFQMmJYU2xEdjJfZW1uRnJENm1kNHR4em43RHZ5M3Nod2xiOG9mSUNJSFhj?oc=5",
+   "data": "2026-11-10T19:02:00Z",
+   "coletado_em": "2026-11-10T21:17:53Z",
+   "outras": [],
+   "ufs": [
+    "MA"
+   ],
+   "temas": [
+    "contratos"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "3b2f83768aea",
+   "titulo": "Como foi encontro de Zucco com a Fetag-RS sobre fusão de secretarias do agro",
+   "veiculo": "GZH",
+   "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOaUJrRzNWMVVkVnNEV3hwak1CQlRqSjB6QmxwZVlocFRITG9xQzJudWltUnNSQV9sZ3Bpb1QyYzRRQXZDaFJERTJOTVhlM01MMTNWWmZ3ZmkzSHA4cmJIcjViRC1GOTU0NWxVQm1mX3dXVUpXV19wb05LVTdmeTd0U1lQSGxfUGE3ODVuNG05S1lQcl9jTV9LR0VlU0RtdFhJQS1nQ3dhTHdjNDFuQ1laUzk3V05pNzU3RTdmQXZUZm9VUVRGaWpGLW1KZTFBU3pVUHYyVWl1bTk3VnEzazlxTk94LVhZQkQ5cmxUZ0c3UGVmallBRDEzUGJzRmdUbXhZNHVlb0EwTmNJblg1?oc=5",
+   "data": "2026-11-10T18:35:36Z",
+   "coletado_em": "2026-11-10T21:17:53Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "36e9aef44bd5",
+   "titulo": "Fátima Bezerra afirma que Cadu Xavier poderá escolher a própria equipe",
+   "veiculo": "Agora RN",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1zSnZZdXAxZnhTVVFDVnFiRHM3WFVBUW5LcEEwNFVja2xfdFg2ZWxURGdYbE1hR0RBNzY5OF9pY3pUdndfdm5nOXB5b1VLYWFweDYxQVpKOEQ4ZGtqay0tNzkwYXF6OVJLTUkxdDJYR29uN3RYV1E?oc=5",
+   "data": "2026-11-10T18:18:20Z",
+   "coletado_em": "2026-11-10T21:17:53Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "e6a47ea3eb7a",
+   "titulo": "Marcos Rogério critica pedágios na BR-364 e concessão da hidrovia do Madeira: ‘O que está por trás disso?’",
+   "veiculo": "Rondônia Dinâmica",
+   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOMHZrbXd6cEN2UEVNUmVmN243dUFPOFJVWUZ0ek8yNmlsU1hEbEQ2NFFSR2ZZMUgwb3ZqU2g4RW51TGg5TjRaeUNITlNfSVNGaWJTSmwtbWtYQlAtaWV6Mm92WFV1R0l1OHUxMnRhcW41OHVwMzVlajB5cUl4NFJaMHROMW1FREZoU3JTWXlZVlBoNlhCR2w1ZFNoR3R6OV9lMGM1X3ZrcDlsTHRJWnpEb0NYN183TWYzSlBLS1pyRnRIejFCQ1p3Ylp0V1M5TFdaZThSdElxbGRVdlBRVExzTFJ0cURVVUJLR0tSd2kxc25Palp0OXZwSw?oc=5",
+   "data": "2026-11-10T18:12:00Z",
+   "coletado_em": "2026-11-10T21:17:53Z",
+   "outras": [],
+   "ufs": [
+    "RO"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "de8f260a5a4e",
+   "titulo": "Marcos Rogério critica pedágios na BR-364 e concessão da hidrovia do Madeira: “O que está por trás?”",
+   "veiculo": "Rondônia Dinâmica",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNVzQxeVhKRGdyWG1nY3pGZk5DbHNZVC1keG5Yc1N1SWV1eUQ1V2c2RVVzc2V4dmR1U2pXSjZub1l3ZDlJYUg3YzJPaVhNYXNWaExwZUhlN1gwWnlidTFEZmJnLXkxOGFlSGlxSzNNTm03MjNnWWlPUVNOc2VyRXVxUFVvV3pTZzh6LU1Zc2FzTHBXQmtfdWpWTWpzRUQ3a2o0YmtKZGdtOGRZZ1VMZUNWanI2c1FUMjBaX1lpQWVRMkpBb3JUMFg2QVplckk2VEk4OFZ6UW00MWJYM0Ytd1Q2YlZsbHd3am5va2lXdGs4RDU?oc=5",
+   "data": "2026-11-10T18:12:00Z",
+   "coletado_em": "2026-11-10T21:17:53Z",
+   "outras": [],
+   "ufs": [
+    "RO"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "e5d48f33485b",
+   "titulo": "Redano governado e Laerte presidente da Ale-RO, vereadores de Porto Velho eleitos deputados, deputada na futura equipe de governo?",
+   "veiculo": "Rondônia Dinâmica",
+   "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxQSGRmQmlzWFozVUVhUEdHNDFQNFQtcXE3VFowUWNtUl9SSElaVVh1NGFEVWNPOXJvWVY5am5Td1Z5YjRYWkpjMjBGZjFmV1RwREhhX0dYUkoycEI3MDV3M0ozTEpSalRFNFMzN0tOaWctQWxVSUNnN0RwOGZEaUVyb3YxV0dEWURZZkxPVm16TWtvSzB3Y3hab05rd0VRVzNjbzZLcXFwR0tFVWYzNmJyQ21HZk1mVllzbEplRzlkWVpvbmVwVGpsV1BnOVVqQjIzeWs1ZmoyU1FzcGtJWmdHTmtheDBuZmlyb2tzbGRxbTlva2tXaUlpRlJfTi1vVmROWDA0UGZROUFuSUhrVWFoQjR3M0J4R3ZOR1E?oc=5",
+   "data": "2026-11-10T17:41:15Z",
+   "coletado_em": "2026-11-10T21:17:53Z",
+   "outras": [],
+   "ufs": [
+    "RO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "0d470bdf1205",
+   "titulo": "Braide amplia pente-fino sobre governo após barrar contratação de R$ 65 milhões",
+   "veiculo": "Marrapá",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMFh4b1N0Z3pkN2FjN29sZDZuamYtUHNvT0NZZnU1LWN3Qk1jV0tTQmxGa1hYbjhiNGxULUJzMVpKMFlkdTllVUxZa1JhdmZDcGQ4V0FiWnpHekJZTXhYYkRzOGxHYzctbDd1S29LUDNjLXI4TFp4bFhPVGdKYUtwQm5yMTU5WGJ3TnpLY3A3MzRXWmFwQWRfTlhHWUxUV1Z4d3hrLUJxejhDN09TQ3Uw?oc=5",
+   "data": "2026-11-10T17:29:34Z",
+   "coletado_em": "2026-11-10T21:17:53Z",
+   "outras": [],
+   "ufs": [
+    "MA"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "0667cf85f8cd",
+   "titulo": "JHC vai ao STJ para barrar nomeação de Otávio Lessa e preservar autonomia do próximo governo",
+   "veiculo": "Francês News",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOX05mTF9yQnBsWFRULU44Nzl2MVVwQjd6YVhfTHo5VjNwRzZmNHlnWHNMUzlDc3NNMFZERmZqRDA4VlQ3LVBTS3hqVjJ0dHB2WWY4cmdEZTNfYjJ0U1lwWS1pWTN6TF95dDBVU2EwZVJVYnBzdUx3SVJFaGZfTWFEcWxLOXF5aFZoQ2dRckY0MUxhVFIyWTN5ZGpYQkp0MWFWUUZiSkcwcFdZUV85U2x5eHVMSVExM0d2Y1ZuSDhWQkJXdllKSVR2WkJhRmJRN2VVUm1MN2JTZHQ?oc=5",
+   "data": "2026-11-10T17:07:00Z",
+   "coletado_em": "2026-11-10T21:17:53Z",
+   "outras": [],
+   "ufs": [
+    "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "8d796fbf2e59",
+   "titulo": "Após barrar contrato de R$ 65 milhões, Braide anuncia fiscalização de gastos do governo Brandão",
+   "veiculo": "Gilberto Léda",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNaXc4dldnZkJZdHUwbER3UXZGUGdjck80ZnJod3ZxdGVjT0JMaHhhWU1adGFNdzZMWFVlUGxSZmVRVnI5ek1RSjZsMGhiejNFUEZfUEEwX3pJX3hCalp5QmhqcUJmLW9wenl2a0V3S1hMQUJtaU5ONVIzUVFsNFltYUlXTDQ1WHM0VGNWa0xFRmVBYmpPemV4dHZQanFRajJEMk1aQ24xMmNjWFl1SElpMTFJQldoU3VMcWo4dndMQURZeWp5QldVZjVkaHMzQQ?oc=5",
+   "data": "2026-11-10T16:45:20Z",
+   "coletado_em": "2026-11-10T21:17:53Z",
+   "outras": [],
+   "ufs": [
+    "MA"
+   ],
+   "temas": [
+    "gastos",
+    "contratos"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "6f1d1986d174",
+   "titulo": "Omar Aziz defende investimentos em logística aérea para impulsionar turismo no Amazonas",
+   "veiculo": "emtempo.com.br",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQajFoQ1BvX3RSRXQyaUJuTU81QkJqQVN2SVcyUDJ1YmZ4RGduUnpkSDJsZVNQMGhVUXlLakRISU54T3hwcnYtbzZLZGdoNVdISjNDOVlUZ0h0bDVPQlhPaUlkcElBQlBTRHBLWjRHbWZWSUNjMVJhcE54a0ZUdEtPMg?oc=5",
+   "data": "2026-11-10T15:53:55Z",
+   "coletado_em": "2026-11-10T21:17:53Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "2c08c1b6a698",
+   "titulo": "A resposta da secretária de Planejamento de MG a equipe de Cleitinho sobre concursos públicos",
+   "veiculo": "Rádio Itatiaia",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQMGFDQU91V0JuZnVhbnZ0RWE4U3BCaEM1cVRQRWluZEJWTk16X3VsZXFHM01GTVYwRHlESUJ4TG9LVFlBWnIwTFBqTmoyYmRYSktFUFBRTlI5VTBMeTNIUFJPTUdwbFdyb1J4YnNXTTFhUkVxZmdYTWdRV05DRkpxQUoxNmJpUE9Pak9Wc3kzSTlMLUl3MG5TMW9VTmFaR1kzVTJxekdtR202UGhXWVNFMzUzZEM5RHJwbXNJdVd3U0xpU1pZaEJCakxTcXNGOXNQdXJWb2NycGdObHlkU0M0?oc=5",
+   "data": "2026-11-10T15:43:27Z",
+   "coletado_em": "2026-11-10T21:17:53Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "pessoal"
+   ],
+   "categoria": "medida"
+  },
   {
    "id": "e22714c9d726",
    "titulo": "Transição do governo de Minas: seis secretarias já prestaram contas a Cleitinho; orçamento prevê déficit de R$ 10,5 bilhões e ainda faltam Fazenda e Planejamento",
@@ -125,6 +312,36 @@
    "temas": [
     "diagnostico",
     "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "412dd2ad0093",
+   "titulo": "Arthur Henrique anuncia Marcela Medeiros para comandar Planejamento de Roraima",
+   "veiculo": "ncnews.com.br",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE16SmVwRnc0QzNCMDlqVDdJVmxuVGxBeXAyWkY1YTFOeHZ4YXgxbU13M1AzellCTGNjamtsc0FMVWlnRTU1bnVMWUJIU3VieXM3NDExeVhmcy00UFhHTW80ZVl2d0pKaU40LWhMdEdwQ2tqcHhvZEFIVFRB?oc=5",
+   "data": "2026-11-10T12:02:02Z",
+   "coletado_em": "2026-11-10T21:17:53Z",
+   "outras": [],
+   "ufs": [
+    "RR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "2cece1e76c10",
+   "titulo": "Vicentinho oficializa transição no Tocantins e reúne futuros secretários no diagnóstico do Estado",
+   "veiculo": "Diário Tocantinense",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOOHhOaXFuNFh0ZzcyWXdLN3BQNzNoUmdRa3gxY1lkR2M2Mkw3RW1zRy1paVpUeTJSbDBFdTYzZGZSem9naTVNd3lBb0o3b18xQ2ZtXzk2ZkRsbHUydVRsakMxeUo1M0RXMlkzWkY1eFo4V3R3NFBHUk9BT3BZR3h6enMyZ3Z6NDF5RUgtaU90UkZZMnRYNVFDa1ZZSF9hamRONEd2Z0E1RjJyRllld242bGZmWU5tMnZrdV9YZGRkVF9sN1VFSmdCbndESi05NXJqU3ZPWjEyektYcG8?oc=5",
+   "data": "2026-11-10T11:40:22Z",
+   "coletado_em": "2026-11-10T21:17:53Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [
+    "diagnostico"
    ],
    "categoria": "medida"
   },
@@ -262,6 +479,20 @@
    "outras": [],
    "ufs": [
     "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "42c45c38b8c4",
+   "titulo": "Equipe de Douglas Ruas monitora estragos das chuvas em Itaperuna e São José de Ubá",
+   "veiculo": "Rádio Itaperuna 96 FM",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNQ1o2dmJleHlPSU9jeWlldTZKNm10dmxVVENDNmM0MHFnSzA2Qml3aDhkNkk1Y2ZQREJmb1RVVm10RnQwSHBUTVl3NTd6eVMyalNjckw4YTRfem85WDNrRnpoRWNndXkyNXlGN0RDZ243LXQ5Q1hoSEduV0xGUy0tZXZzWkVITGJ6d1lyd3hTZ1FiTUtxeUNGYWViUkRWUDRPczkzXzVlNWx1dVZ1RGh3SERGbmFNeDk0bGs0TlJiVFFEeENzUEtLY3RENkVyb1FGYmVpcFVVRkE1N2x6REcw?oc=5",
+   "data": "2026-11-09T22:02:17Z",
+   "coletado_em": "2026-11-10T21:17:53Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -589,6 +820,20 @@
     "diagnostico"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "14eed0bed22e",
+   "titulo": "Turismo das Hortênsias reage à possibilidade de perder a secretaria própria no governo Zucco: \"É tripudiar\"",
+   "veiculo": "GZH",
+   "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxPNHAwNnIwZkZkNEJOWkt3c1RLLTF2RWw1V05NUG5JYnlGbVJoNllGUWRybTFpb2dYa05aZElxTThNR185OE81VEd1ejVlajNpM1pEYzRlZTZZT2dOdjUzcUVlUUhQZ3JSUGlXN3huRVNpYUNYZ0Vlc2h6b3EtM2JfQTRQUjZsTThUeThUV3dRVmM4dG44bFc5T0lMNWVPM2dxSHhfdGMyV1pzSjl4NnpFQkd2ZnRKNEtqNnpsWVJZNkVrZ0c4Tl9xTTJUYjBNellhYURWRHlDRURlVHM0WUhqemRKYUxvT1VHbWdGdlQ5cGFFMFg0N0stdFBMa015T3BmN09STWpadHBvT0ZLTHdtREdhN0JrdWdvLVZHRjRKcTYtek1Vd291eHpwVkRCYktR?oc=5",
+   "data": "2026-11-09T14:47:56Z",
+   "coletado_em": "2026-11-10T21:17:53Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "c8ddfdf51fcb",
@@ -3997,6 +4242,20 @@
    "categoria": "medida"
   },
   {
+   "id": "910773af4e09",
+   "titulo": "Valdemar Júnior é anunciado para comandar a Educação no governo Vicentinho e destaca compromisso com a transformação do ensino no Tocantins",
+   "veiculo": "Luiz Armando Costa",
+   "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxNWGlBZ1pmMlluY1NzT2FQYUpJUHEzQW5LZkFMdFQ1OVlLb2cyRUhrT0VuRjlwVlR3RDRNaldoUEptLU9OM1NzblB5WFFrbGVhZHNZaWFZU2Y4R0l3Sk9IaFlfU0s2eURuNVFKdmNISVRscnpwSkRmMDBLYlViU2FnT0tYQkR1WlI4N3dtbHQ3bWpOZTJ1aXhxLWFMbnRpcHQwWTZxUzRWdERlRXFOZ2VhUDc2TWZPbzFqNEZkd3Z6YmNwRlhqWmc0enhBcTRaU2VPTWI0V2YtUldFYVRVallORWZteUhSNENCTktJSlY3S2FZZkZSYnlrbTBUMmFOVWxyOVlCUVVGZ3FndC15OU5wOXZMLVpGOWpE?oc=5",
+   "data": "2026-11-04T10:28:03Z",
+   "coletado_em": "2026-11-10T21:17:53Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "b838b5cd2916",
    "titulo": "JHC indica ex-presidente do Iplam para integrar equipe de transição do governo",
    "veiculo": "GazetaWeb",
@@ -5515,6 +5774,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "8e1cdca8b65a",
+   "titulo": "Zucco define novos nomes e monta equipe para o governo do RS",
+   "veiculo": "Claudio Dantas",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQU0RLd0xwSWt0TlZpRlFhVm9XNzdMSWc4cFQwZHdId01HWGR6MGN3d0lRbXk2RGRSVG1ROTNJT3J6bUtTWUhTR29vUFlEU0hRMDU1X01XOURoVmIyeUl5blFUWnhQdENKYTJpZ0d1ZWhnQlI5MXk2dU5TdVBLUTFsLWU5NXQtQWhEODZHYkk4eThnNDFu?oc=5",
+   "data": "2026-11-02T21:04:06Z",
+   "coletado_em": "2026-11-10T21:17:53Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "8d3dc9f05684",
    "titulo": "Vicentinho Júnior anuncia primeiros nomes do secretariado em coletiva de imprensa nesta terça-feira na Casa 45 na Capital",
    "veiculo": "Luiz Armando Costa",
@@ -6291,6 +6564,20 @@
    "categoria": "medida"
   },
   {
+   "id": "9a532669816c",
+   "titulo": "Transição de governo no Amazonas começa com compromisso de compartilhamento de informações",
+   "veiculo": "Jornal do Commercio do Amazonas",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQTnFjV3dZdDdHLW5LRkZEX21tSzZybjNXODQyMDRxY1o5SHpWbHhBU25UeDZRVnpnM2tMREpjSlh2aENHLXI2dDIwMVY5cFNQb0tkbHBmVk1fTEhQU0tTcFgySDR3YU5fTXFsMDVkd2dpa29Vd1FveXlFTzRZbnFtOFhJWnhwQW4yV0tjTk5PUlhGUVpXWk4tX3lycGF2ZXg2cHFLekZSaXBDQkI3U2E4cFYzenNSYnFDR0RnYQ?oc=5",
+   "data": "2026-10-29T18:48:53Z",
+   "coletado_em": "2026-11-10T21:17:53Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "759434df0c93",
    "titulo": "Roberto Cidade e Omar Aziz alinham início da transição de governo",
    "veiculo": "Rádio Rio Mar",
@@ -6969,6 +7256,20 @@
    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPZDQyUlN2WmpXcDZRcm10cmJHWUJUZXdTY3JCODZ3Qk50WnRlOG9tRmtJci1lcEVXMUFOdFkzSGNoTUMwR29HTkptZ0kxNkZicXBpSU9TaEpiLUlITWx5SUhBU01uNEVpM1FaRkFXUUlFdzVxaFplaEpIcl9pVGdYUkpuX1dLcEdEN0ltTzI3QkJNNFY5RG9xM0NRQ3NOZ2tramtrYkJhVEhwTFlzczBoWkpmNWtjSGl1TDNKaUJQVEhPWmdSUEJGYk82aUJlT1g5M1g2LXhZaEdhazA00gHrAUFVX3lxTE84aUpsWmdzbUloa2VmQ2N3ZXllSzE5Q25rZ2QxUFRpSVFMTDQzakJubzBfdTZZbkZxR3I0QUhMUXYydlNCOU8tek9WSjBGRWh6bHVlVVJXSFhsckZSblJxQVpfZkFwcEY0NThsRWJDOE9ON1JZQjlRMmRTN2sxLWlibDVfbDBzYklaT3VWSUswODRuVzV3d3NzLXZnX1BRNUpDODhFOWtlME1Xa3c4WlFYdC14bFhpa3I1SVpSMzNhLU5IZDhJMzFuYlgteUNLYnpIeVVab3IyMTFZX0tRSGV6YXl2czNQMkY4bDA?oc=5",
    "data": "2026-10-28T07:00:00Z",
    "coletado_em": "2026-10-28T07:00:00Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "66ce6957b564",
+   "titulo": "Com governador eleito e vice, comissão de transição 2026–2027 no RN vai ter 18 nomes; veja a lista completa",
+   "veiculo": "Portal 98 FM Natal",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPWjFpbnVhSkNUOVlBR0l2Tm84b2NibEVhNlB2Zm9RUUkyemR0SW9PUVViR05WNHlFcXFhVThzaHp5YVFvZzBEbm9xcjllMG5uRThseTNSV2xuVDJLMVVEckQyLVJ0cmtPakFJNGtXYTVpdWtNZWlUcUxmTWdZXzhJMjBfUm5wWXhhanZiYnRMUnB5UDBnOXRLbTBlTzVJWlFQN3dZa0Fma3l0UXdmSWZHYTBtYjMwTURUNWpFN0VQTl9qa1AyQVB0YkhaMGR2VVA3R19wa3ZxdTFwcnRFUVBsVg?oc=5",
+   "data": "2026-10-28T07:00:00Z",
+   "coletado_em": "2026-11-10T21:17:53Z",
    "outras": [],
    "ufs": [
     "RN"
