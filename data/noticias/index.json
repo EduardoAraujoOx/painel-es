@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-10",
- "gerado_em": "2026-11-10T12:17:15Z",
+ "gerado_em": "2026-11-10T13:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -27,7 +27,7 @@
    "ok": true,
    "lidos": 29,
    "aceitos": 11,
-   "possiveis": 6
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 14,
+   "lidos": 15,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -81,23 +81,23 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 0,
-   "possiveis": 1
-  },
-  {
-   "fonte": "Google Notícias",
-   "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
-   "ok": true,
-   "lidos": 45,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
+   "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
+   "ok": true,
+   "lidos": 49,
+   "aceitos": 0,
+   "possiveis": 3
+  },
+  {
+   "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 63,
+   "lidos": 67,
    "aceitos": 2,
    "possiveis": 9
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 17,
+   "lidos": 15,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 4,
+   "lidos": 4,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
+   "aceitos": 3,
    "possiveis": 6
   },
   {
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -278,23 +278,89 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 300,
+  "sem_contexto": 302,
   "excluir": 37,
-  "possivel": 37,
+  "possivel": 41,
   "oficial_sem_tema": 2,
   "oficial_divulgacao": 1,
   "sem_contexto_com_tema": 1,
   "generico_sem_ancora": 2,
   "veiculo_excluido": 26,
   "caixa_alta": 1,
-  "outro_estado": 21,
+  "outro_estado": 22,
   "veiculo_outra_praca": 2,
   "sigla_sem_ancora": 7,
   "exterior_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "01e2353717bd",
+   "titulo": "Assembleia aprova novas regras para honorários de procuradores do Estado",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTGVFLXJuZDJRWkMxQUFqeXotQnphREUtcUdSOW03R296Qnp5LWV5TzI5cXNVN1g2UV9LTmU4WU1qSXN0cGFHelpKbkFmUXBoN3NOQ2lhd2tyM1ZRUU4wMUY5TVZXVjNMTVM2eFRzQWl1X2N6Z2N4ZG8wcng2dS1HS3lHVm4wWE9fRzRWT21zZEd3Z3A1V0J0R204VWJfdzl1UGU0YzllY0I3ODZ3TnFSV01DX0U?oc=5",
+   "data": "2026-11-10T13:09:02Z",
+   "coletado_em": "2026-11-10T13:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "d4a2d340a9fd",
+   "titulo": "FC Estadual comemora o bicampeonato do Festival Estadual Feminino Sub-17; veja fotos",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/esportes/fc-estadual-comemora-o-bicampeonato-do-festival-estadual-feminino-sub-17-veja-fotos/",
+   "data": "2026-11-10T12:43:28Z",
+   "coletado_em": "2026-11-10T13:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "c9a1148655ab",
+   "titulo": "Tribunal de Contas do ES abre seleção com salário de R$ 17 mil",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/concursos/tribunal-de-contas-do-es-abre-selecao-com-salario-de-r-17-mil-1126",
+   "data": "2026-11-10T12:33:55Z",
+   "coletado_em": "2026-11-10T13:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "b4a847eb2de0",
+   "titulo": "PF prende ex-servidor do STJ suspeito de facilitar acesso a processos sigilosos",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9MTzBUS1FFRnZRbzZyeENkZ3pxUVlPMU1WMXdNYjJkaF9KbzM2SFA0RzBNUG1ZWGZVOFNJekNRd0dkTndyc1Ezb3NoLVVobWQyNzN0Q0ZONlQtZm51NkstNXhDUUxfTkhXck8zRnZFYnA2WHZyYXRKc3dR?oc=5",
+   "data": "2026-11-10T12:31:40Z",
+   "coletado_em": "2026-11-10T13:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "6cd8eb8c1527",
+   "titulo": "Acordo do Rio Doce: recursos vão impulsionar agricultura familiar no ES",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/agro/acordo-do-rio-doce-recursos-vao-impulsionar-agricultura-familiar-no-es-1126",
+   "data": "2026-11-10T12:28:07Z",
+   "coletado_em": "2026-11-10T13:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "4abf9d6f7d98",
    "titulo": "Assembleia vai apurar denúncias de violência política no ES",
