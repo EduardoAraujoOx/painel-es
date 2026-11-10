@@ -1,6 +1,6 @@
 {
- "ref": "2026-11-04",
- "gerado_em": "2026-11-04T11:30:25Z",
+ "ref": "2026-11-10",
+ "gerado_em": "2026-11-10T15:19:58Z",
  "primeiro_levantamento": "2026-10-30",
  "baseline": false,
  "contagem": {
@@ -228,7 +228,10 @@
    "valor": 21980.0
   }
  ],
- "novos": [],
+ "novos": [
+  "168|Ordem de Execução de Serviço 4074/2026|Ordem de Execução de Serviço|00530076000129|2026-08-18",
+  "168|Ordem de Execução de Serviço 4311/2026|Ordem de Execução de Serviço|18958032000160|2026-08-26"
+ ],
  "saidas": [],
  "itens": [
   {
@@ -2044,10 +2047,10 @@
    "valor_final": 4600.0,
    "celebracao": "2026-08-26",
    "fim": null,
-   "situacao": "Instrumento Contratual Revogado",
+   "situacao": "Instrumento Contratual Anulado",
    "categoria": "anulado",
    "ano": "2026",
-   "visto_em": null
+   "visto_em": "2026-11-10T15:19:58Z"
   },
   {
    "id": "181|Autorização de Compra/Ordem de Fornecimento 2025.000049.45105.05/2025|Autorização de Compra/Ordem de Fornecimento|33760101000110|2025-03-21",
@@ -2548,10 +2551,10 @@
    "valor_final": 800.0,
    "celebracao": "2026-08-18",
    "fim": null,
-   "situacao": "Instrumento Contratual Revogado",
+   "situacao": "Instrumento Contratual Anulado",
    "categoria": "anulado",
    "ano": "2026",
-   "visto_em": null
+   "visto_em": "2026-11-10T15:19:58Z"
   },
   {
    "id": "67|Autorização de Compra/Ordem de Fornecimento 3388/2023|Autorização de Compra/Ordem de Fornecimento|36325157000215|2023-10-04",

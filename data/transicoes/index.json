@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-10T11:17:52Z",
+ "gerado_em": "2026-11-10T15:17:59Z",
  "ref": "2026-11-10",
  "desde": "2026-10-04",
  "estados": [
@@ -8,7 +8,7 @@
    "nome": "Alagoas",
    "eleito": "JHC",
    "partido": "PSDB",
-   "total": 57
+   "total": 58
   },
   {
    "uf": "AP",
@@ -36,7 +36,7 @@
    "nome": "Minas Gerais",
    "eleito": "Cleitinho Azevedo",
    "partido": "Republicanos",
-   "total": 125
+   "total": 129
   },
   {
    "uf": "PA",
@@ -106,11 +106,28 @@
   "fndr": "FNDR e reforma tributária"
  },
  "contagem": {
-  "total": 878,
-  "medidas": 258,
-  "equipe": 620
+  "total": 883,
+  "medidas": 262,
+  "equipe": 621
  },
  "itens": [
+  {
+   "id": "e22714c9d726",
+   "titulo": "Transição do governo de Minas: seis secretarias já prestaram contas a Cleitinho; orçamento prevê déficit de R$ 10,5 bilhões e ainda faltam Fazenda e Planejamento",
+   "veiculo": "DiviNews",
+   "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNM2lSWXR1dVBVblVUMWxNTDZsRVdBVnVEQTlUZWlaZTNhVnpxMTBrZmhfbHgxREtxb3FteWlrRVpTUzRzWk5pSk5LSE1CRjd4bml4S3BoWG9GWXdxMEtaU1RpZUliWXZRbms1UzhOdkh5V1BaNzJ5cEdXY2RfVmIxQ1dTelBBaHVnV2JSSWJjRmNPR2lYQmNqMDhvc05sbWoySFpORTVUUzBUYWdfSWtvLTBQaDJiY0dmX0FxUGNxT1Jnc1lRekZkVU8xaFkxNzJ1VGNqejQwVDh5ekNsNFhBeHIyX1VXRFJBMzQ4RWNNeUxNMUc2WTRBeGZhT21kaGo5d0FMQ3ViUFBrODRodzJqNFFwb1FZWUttelE?oc=5",
+   "data": "2026-11-10T15:06:31Z",
+   "coletado_em": "2026-11-10T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico",
+    "economia"
+   ],
+   "categoria": "medida"
+  },
   {
    "id": "73aab38e3516",
    "titulo": "Vicentinho Júnior cumpre agenda com magistrados em SP e segue para articulação do orçamento em Brasília",
@@ -121,6 +138,22 @@
    "outras": [],
    "ufs": [
     "TO"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "8c6e7a06478a",
+   "titulo": "ALE leva à votação final PEC que reduz controle do futuro governo sobre o orçamento de Alagoas",
+   "veiculo": "AL 102",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQTE5rVDFTRmVjRjJKWDVBbV9ncGJYcEllNHVXMHVSeEpvTmgtRWo4MF9id3RrTjlETlJfSDA0d1oyV254VnpUVW90QmhOeWJpNXd6NFZfZEhyTzgyME1CaUc1Ni1YNEEzNWhZMG83Rnhxa2VhLUxQME9LUE8wcHZRZnp1X2VYa29iNlNvWUVnck96Tk54OTlRcWNMUGV0VnlMTXRRcXNyalN0cTE5c0pkY2V0X1lGdWl2ZTFCdVdqSTBzUnJuSTMtV21TNzgwV00?oc=5",
+   "data": "2026-11-10T10:52:00Z",
+   "coletado_em": "2026-11-10T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "AL"
    ],
    "temas": [
     "economia"
@@ -482,6 +515,22 @@
    "categoria": "equipe"
   },
   {
+   "id": "7563d762615c",
+   "titulo": "Cleitinho anuncia medida que pode mudar o financiamento de shows com dinheiro público em Minas",
+   "veiculo": "Por Dentro de Tudo",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNbVAtYldYdnhmRUlhbjVPNTZ4RWxCM3ktRW9mNlNpeVBCY200ZnNEclpZd09RQUIzRVdkNlQ3MXpYUDNVWV9BVXRjQ1p1MHhsT0tkb3ZkMzMycmNwWXRVdjBpeTUtaGZKNzZmaVdrMmhsR0Fuc3hWRkltSTctWUdwMFlzZndsdjRrb0FsREVGTHB5Y3VwX19ybnpDVGIydlhoOENURmMwRDVIbElpZTFCazFhaFVNX2Y1MmhiWW81emwxYjc0?oc=5",
+   "data": "2026-11-09T17:00:00Z",
+   "coletado_em": "2026-11-10T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "fe5710f93c8d",
    "titulo": "Quem é Fabiano Bordignon, confirmado por Moro como secretário de Segurança Pública do Paraná",
    "veiculo": "Ric.com.br",
@@ -687,6 +736,22 @@
    "categoria": "equipe"
   },
   {
+   "id": "863169ca9465",
+   "titulo": "Com dívida de R$ 200 bilhões, Cleitinho quer cortar verba para festas em MG",
+   "veiculo": "JM Online",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdmhiLWFRMkVtcU1HVnpHbzZKV0hzSFRtZk1yZERpS2Y1OV9iVk5KNVZsOTh3dlJmcEp5c25Cd2t0SGF4LXdyaGFyQUp5RXJqUHc3dmVtSm8zYVdSTTdiejdFMzJrUl9XaUtsdl9qZE5fVlppUjFaZlR3MDhzejl3QVhkcV9sMkp1VkNiZ0ZmNGJKQlJVblR6T0pqN0NwU29UWHhuXzY0WU5Kc1JPclc4bV9CbGJ4UdIBvgFBVV95cUxQaG15MEJTZTFNbC1DOGdvZUNZS1hzSUdyR3A1OUNYUkZ6dlJZekJOYUFSbVlNcTFYQkZpZWJLbTZjcTRBWHRhVGpVdWMwS2kzSHlkZkNtRzBNR0pWcEpCekltYzlyeXAtZzBzOS1fWW9ZQUlhSHpITkRqTnlrNjYyQnJLUUJsdU0zeERIak1peEJ2aE9GRXc3TlVXbFlPRUhUUHcyN3BMVVVid1AwbV9vTEo1VzRFYzZ3WjlOSkh3?oc=5",
+   "data": "2026-11-09T12:33:43Z",
+   "coletado_em": "2026-11-10T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "0080cf82ce55",
    "titulo": "O aumento do ICMS dos combustíveis em 2027; proposta de Braide é corte de impostos — Rádio Universidade FM",
    "veiculo": "Universidade Federal do Maranhão",
@@ -723,6 +788,20 @@
    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxObFFtMmdFTE1rdXJwNmxUdFphbVRMbUEyX2s2NlNHcGg2cVI5dldic0hwYk1PQ0xzYlJXeHdROEVHSkhESlk1Y0tDa1R2RjRmenZSZ2NUU01RQmFzUGJaZXY2YzRYUjVScEdNRmhVamFib2RTQ2FNYXBYWlViV2pHa0NNWkQtWFUyR19fTUxaN25rTUxQOXhDTGVB?oc=5",
    "data": "2026-11-09T11:55:00Z",
    "coletado_em": "2026-11-09T15:19:07Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "cf88b65b75e8",
+   "titulo": "Abraçando cachorro caramelo, Cleitinho diz que vai criar secretaria só para animais em MG",
+   "veiculo": "Plox",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBPRW9kdUJIT3ltN2RBOWFzUE9KUmVLTERsbS1OelpTZXVpbEJodFNib29JZFNQMDlmN0l2NjliQWlNdGFQZUdSRkdzUW5ERXR3UWFFYkFrRVJwSU9CYlNyVUlyTHhVbC1XU2lIRkxLN2VYQy1TcXhyNndR?oc=5",
+   "data": "2026-11-09T11:00:00Z",
+   "coletado_em": "2026-11-10T15:17:59Z",
    "outras": [],
    "ufs": [
     "MG"
@@ -5409,7 +5488,12 @@
    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQmxnX1ZJM2htUUJuRGNMcktTUlBvLTFFdUVzZVRYbHBoTnNHV2ZLemQtWXBGd196elg3YUxGLUR6d2pLQV9HTG4wRFk2V042eDNINGlRUHRBcm5fX3dweS1UbVd0eWJwMFdFdDNlSHdNRHg2TlNTSkt0WlZfUXA2N2pZRGVfNVVoYkpEV1lyXzdkM0o5?oc=5",
    "data": "2026-11-03T11:26:10Z",
    "coletado_em": "2026-11-03T11:26:10Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Portal Você Online",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPeWt2NXJrb2lGbUw0cFJPRTdBTkpLUm91YzFsSGxlcjltWXZKbHJhS2g0d3dTdjBCaVdFY0hQUzQzOHNkS185RW1tZUN6bEV3akppWXBpaFI4YXRMVXlueGJETjFaOXpnM2JrN2JnR01pa3JwOWhUaW0xd0lvc3JwaVRhZ3l3X1U?oc=5"
+    }
+   ],
    "ufs": [
     "AM"
    ],
