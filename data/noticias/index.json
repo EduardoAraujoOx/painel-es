@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-10",
- "gerado_em": "2026-11-10T17:03:58Z",
+ "gerado_em": "2026-11-10T17:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 20,
+   "lidos": 19,
    "aceitos": 5,
    "possiveis": 3
   },
@@ -74,7 +74,7 @@
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 26,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 16,
+   "lidos": 17,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -278,22 +278,50 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 325,
+  "sem_contexto": 321,
   "excluir": 36,
-  "possivel": 33,
+  "possivel": 35,
   "oficial_sem_tema": 2,
-  "veiculo_outra_praca": 4,
+  "veiculo_outra_praca": 3,
   "oficial_divulgacao": 1,
   "veiculo_excluido": 30,
   "sem_contexto_com_tema": 3,
   "caixa_alta": 1,
   "outro_estado": 23,
-  "sigla_sem_ancora": 5,
+  "sigla_sem_ancora": 6,
   "exterior_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "b0f6632a90b1",
+   "titulo": "Ufes regulamenta uso de Inteligência Artificial: veja o que muda para alunos e servidores",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/tecnologia/2026/11/ufes-inteligencia-artificial/",
+   "data": "2026-11-10T17:14:29Z",
+   "coletado_em": "2026-11-10T17:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "2c74a3b65dcb",
+   "titulo": "Governo mantém impostos da gasolina e do etanol zerados até 9 de dezembro",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/governo-prorroga-ate-9-de-dezembro-desoneracao-da-gasolina-e-do-etanol/",
+   "data": "2026-11-10T17:04:34Z",
+   "coletado_em": "2026-11-10T17:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "7fcf650cf240",
    "titulo": "Inscrições para o concurso do Creci-ES terminam nesta terça-feira (10)",
@@ -305,6 +333,21 @@
    "possivel": false,
    "triagem": 8,
    "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "664e0d06d258",
+   "titulo": "Longo defende convocação de auditores fiscais aprovados em concurso da Sefaz",
+   "veiculo": "ac24horas",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPdGRkdlkzY2ZKZUF1czl1ZEhma3FvNmVReFVNU0tUck9odlNDYnAxVTRZS3lLZE1rYzNINUp3cXNpRVZXYWVSRldnOHFCS1VQVnRydzBSV2M3OElKZmcwRWpLNWZ1NkpxcDdmYnR0MTV2QjNKUU1Sckk2ZFJfVkotQTVlNF9YV2tsSks0SDlqTVBDSjAxVjNUZko5ck9jeXQ1VlhmeU9WRHdpdzdSS1ZF0gG0AUFVX3lxTFB6aWtkUjV3em1NYzRYOGFsUGNPcmdpV1lTOThMWTA0RXFXVVdLT1VRS3VjeDRBeW1jSkxreDM2YkZpVjV6cC04NHlHNUJxUC1lRk5ZR3pGYjlYajJXSjV4eVBGSm9ZV2lYTk5wQmxvS1VVZVh3dXdKZGxtX1oteDdpSnZ4M05rY0wzZXhjb1JWVHZqWWQ5TmUybS1QeC00X2JwdU80WGIwZUtfTUt5blRRRDRScg?oc=5",
+   "data": "2026-11-10T16:53:18Z",
+   "coletado_em": "2026-11-10T17:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas",
     "pessoal"
    ]
   },
@@ -616,6 +659,10 @@
     {
      "veiculo": "Governo ES",
      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMVJzTW9pTTUyTi10MVYyNGJDcVlteGo3Xy15S0wzZk5WQzVvVDY5ZVVqNHNvV2JmNXNCSHJ5bERYajNOTFpYcWRyRDlKV3FBZ0ZqN3NvTDVCTHNraWNUNGtlQXJGQkRaTFBWcVl5cGVKWm5tUXA3UmFldTBuRW8xVXVRc2RCWHJNLWg3REhoWjVzU3JwdWlWX1UtQ2dYQmVFU2FWdHQwNV9ONEtaaXZIRWwzWmdvSFlTbDRwdllJdlQ?oc=5"
+    },
+    {
+     "veiculo": "Site Aracruz",
+     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPaWFmbDFEMUdWQmtRa01HakVBUFlKUzNtVVo4TU5OYU4yWUZET0dadkVOTlAzTE5BTnhCVVRlMEF3czhlTUlGX0RBRU5iVVVsOW1wakdyZlJXMUdHY3loT2dORElPalNxNVNwMGIyZzZycUFrNHNmU3paMTc2TnBNVnptSnpWSzVfMk1NMWk4ZlpBN1BHNlZfb2NJZkxYOUpCd2ROckxlWWh0UEFJWWxPcXo5MDRybVdxQ3JfNXRLSk9fQTUzcHFPcHRNSWNTR1U0SXY0aUNCTQ?oc=5"
     }
    ],
    "possivel": false,
