@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-10",
- "gerado_em": "2026-11-10T01:17:16Z",
+ "gerado_em": "2026-11-10T02:44:58Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 30,
-   "aceitos": 12,
+   "aceitos": 11,
    "possiveis": 6
   },
   {
@@ -41,16 +41,16 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 7,
+   "lidos": 9,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 2,
+   "lidos": 11,
+   "aceitos": 3,
    "possiveis": 2
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 30,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 45,
+   "lidos": 46,
    "aceitos": 2,
    "possiveis": 7
   },
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 1,
+   "lidos": 9,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 16,
+   "lidos": 15,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 18,
+   "lidos": 19,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 20,
+   "lidos": 19,
    "aceitos": 1,
    "possiveis": 5
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 54,
+   "lidos": 55,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -179,7 +179,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -240,20 +240,34 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 287,
-  "possivel": 30,
+  "sem_contexto": 291,
+  "possivel": 31,
   "oficial_sem_tema": 3,
-  "sem_contexto_com_tema": 3,
   "oficial_divulgacao": 1,
+  "sem_contexto_com_tema": 3,
   "veiculo_excluido": 24,
-  "excluir": 15,
+  "excluir": 14,
   "caixa_alta": 1,
-  "outro_estado": 20,
-  "veiculo_outra_praca": 2,
+  "outro_estado": 19,
+  "veiculo_outra_praca": 1,
   "sigla_sem_ancora": 7,
   "exterior_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "112327d4bbb1",
+   "titulo": "Governo federal prorroga desoneração de impostos sobre gasolina e etanol",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/governo-federal-prorroga-desoneracao-de-impostos-sobre-gasolina-e-etanol/",
+   "data": "2026-11-10T02:07:47Z",
+   "coletado_em": "2026-11-10T02:44:58Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 7,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "075111cbad3c",
    "titulo": "Governo Lula vai prorrogar desoneração da gasolina e do etanol por mais 30 dias",
