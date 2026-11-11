@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-11",
- "gerado_em": "2026-11-11T00:17:14Z",
+ "gerado_em": "2026-11-11T01:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,7 +25,7 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 28,
+   "lidos": 26,
    "aceitos": 20,
    "possiveis": 3
   },
@@ -33,23 +33,23 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 9,
-   "possiveis": 0
-  },
-  {
-   "fonte": "Google Notícias",
-   "consulta": "Pazolini governador eleito transição",
-   "ok": true,
    "lidos": 8,
    "aceitos": 8,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
+   "consulta": "Pazolini governador eleito transição",
+   "ok": true,
+   "lidos": 7,
+   "aceitos": 7,
+   "possiveis": 0
+  },
+  {
+   "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 27,
+   "lidos": 26,
    "aceitos": 7,
    "possiveis": 4
   },
@@ -65,15 +65,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 10,
+   "lidos": 8,
    "aceitos": 8,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 4,
    "possiveis": 1
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 33,
+   "lidos": 34,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 14,
+   "lidos": 16,
    "aceitos": 10,
    "possiveis": 0
   },
@@ -278,18 +278,18 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 336,
-  "excluir": 35,
-  "possivel": 32,
+  "sem_contexto": 335,
+  "excluir": 33,
+  "possivel": 31,
   "oficial_sem_tema": 2,
   "sem_contexto_com_tema": 5,
-  "veiculo_excluido": 34,
-  "outro_estado": 30,
+  "veiculo_excluido": 35,
+  "outro_estado": 31,
   "caixa_alta": 1,
   "sigla_sem_ancora": 9,
-  "veiculo_outra_praca": 2
+  "veiculo_outra_praca": 3
  },
  "itens": [
   {
@@ -410,7 +410,12 @@
    "url": "https://www.agazeta.com.br/es/politica/pazolini-anuncia-exoneracao-de-todos-os-comissionados-do-governo-do-es-em-janeiro-1126",
    "data": "2026-11-10T22:00:00Z",
    "coletado_em": "2026-11-10T22:17:15Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "SÃO FRANCISCO 24hs",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPZzdoWDlGR2NSR29IWlZFNXNONXZ3VVJsNXpiNVZ5b0xPRUZuT1l0WkdxSXVKdGI5cVNpeDBxTFk4aElPbXJYcGZ4cVNFenM2VnlaaDVidUZyaS0xZXlIWmtSSl9ISFM5YlNiMmdIUWNzcnhVX3FQRGJLOFJEQXFFZTdBRll5ZWxEdW1VMloxODFoWHlLbTh1STdaZ1JhSG1jNWJTbFhyc3hRUC1xNnFIaXE2WjlIak4tc2hqd3BuQQ?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 8,
    "temas": [
