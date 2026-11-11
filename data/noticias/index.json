@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-11",
- "gerado_em": "2026-11-11T20:17:18Z",
+ "gerado_em": "2026-11-11T21:17:31Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,17 +17,17 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 36,
-   "aceitos": 24,
+   "lidos": 37,
+   "aceitos": 23,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 25,
+   "lidos": 24,
    "aceitos": 20,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -49,8 +49,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 11,
+   "lidos": 22,
+   "aceitos": 9,
    "possiveis": 1
   },
   {
@@ -65,17 +65,17 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 10,
+   "lidos": 11,
+   "aceitos": 11,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 5,
-   "possiveis": 2
+   "lidos": 9,
+   "aceitos": 4,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -89,17 +89,17 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 56,
+   "lidos": 52,
    "aceitos": 3,
-   "possiveis": 6
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 59,
+   "lidos": 58,
    "aceitos": 5,
-   "possiveis": 7
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,16 +137,16 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 25,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 24,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -155,14 +155,14 @@
    "ok": true,
    "lidos": 27,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 61,
-   "aceitos": 2,
+   "lidos": 64,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 6,
+   "lidos": 5,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
@@ -194,7 +194,7 @@
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
    "lidos": 16,
-   "aceitos": 6,
+   "aceitos": 7,
    "possiveis": 2
   },
   {
@@ -211,15 +211,15 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
-   "possiveis": 1
+   "aceitos": 1,
+   "possiveis": 3
   },
   {
    "fonte": "Folha Vitória",
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 3,
+   "aceitos": 4,
    "possiveis": 3
   },
   {
@@ -242,7 +242,7 @@
    "consulta": "https://g1.globo.com/rss/g1/es/espirito-santo/",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -278,21 +278,143 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 5,
+ "novos_na_coleta": 7,
  "descartes_na_coleta": {
-  "sem_contexto": 311,
+  "sem_contexto": 305,
   "possivel": 32,
-  "oficial_sem_tema": 1,
-  "veiculo_excluido": 33,
+  "veiculo_excluido": 37,
   "exterior_sem_ancora": 6,
-  "sem_contexto_com_tema": 11,
-  "excluir": 21,
+  "sem_contexto_com_tema": 10,
+  "excluir": 23,
   "outro_estado": 29,
-  "caixa_alta": 1,
+  "caixa_alta": 2,
   "sigla_sem_ancora": 6,
-  "veiculo_outra_praca": 4
+  "veiculo_outra_praca": 3
  },
  "itens": [
+  {
+   "id": "66db5768221f",
+   "titulo": "Servidor do Idaf é o oitavo integrante da equipe de transição do futuro governador, Pazolini",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/servidor-do-idaf-e-o-oitavo-integrante-da-equipe-de-transicao-do-futuro-governador-pazolini/",
+   "data": "2026-11-11T21:12:55Z",
+   "coletado_em": "2026-11-11T21:17:31Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao",
+    "governador",
+    "pessoal"
+   ]
+  },
+  {
+   "id": "111a69f695ff",
+   "titulo": "Governador eleito, Pazolini se reúne com ES em Ação e discute prioridades para o Espírito Santo",
+   "veiculo": "rede noticia es",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQYkM0RFl4UDVtbVJwaU43YkphczY3SGhrUkNXUXc4SDgtNnF5U29lMUJ2Q0dTYVZreEpEMUtkbGZORm91MHV0MG82a1hxaFNpemNmV2FKV1FYb2JUUndEdUdIeHZoMlBfYzJnTnNYUXZGNXA5WWJ3SFpTTHZKSFFoLTZVdlFzMkpGS3lrd2VPMHliN0ZOMG14M0V2UkY4NGx6WHJZRVFvT1N2U3l2ZUJfVWlSN2lxai1XYVE?oc=5",
+   "data": "2026-11-11T21:07:43Z",
+   "coletado_em": "2026-11-11T21:17:31Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "db38b9d64c77",
+   "titulo": "Frente Capixaba pela Cultura se mobiliza pela manutenção da Secult e avanço em políticas culturais",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/entretenimento/cultura/2026/11/frente-capixaba-pela-cultura-se-mobiliza-pela-manutencao-da-secult-e-avanco-em-politicas-culturais/",
+   "data": "2026-11-11T21:06:08Z",
+   "coletado_em": "2026-11-11T21:17:31Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "c0d61c019b4d",
+   "titulo": "Projeção para 2027 pode aumentar aposentadorias do INSS; veja quem será afetado e o valor estimado",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/projecao-para-2027-pode-aumentar-aposentadorias-do-inss-veja-quem-sera-afetado-e-o-valor-estimado/",
+   "data": "2026-11-11T20:45:51Z",
+   "coletado_em": "2026-11-11T21:17:31Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "5ef8adec72f5",
+   "titulo": "Gêmea reprovada na etapa de cotas raciais no concurso da Polícia Civil do ES consegue reverter resultado após recurso",
+   "veiculo": "G1 Espírito Santo",
+   "url": "https://g1.globo.com/es/espirito-santo/concursos-e-emprego/noticia/2026/11/11/gemea-reprovada-na-etapa-de-cotas-raciais-no-concurso-da-policia-civil-do-es-consegue-reverter-resultado-apos-recurso.ghtml",
+   "data": "2026-11-11T20:38:23Z",
+   "coletado_em": "2026-11-11T21:17:31Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "59ef77e4e666",
+   "titulo": "Assembleia começa a discutir gratuidade na passagem do Transcol para servidores da educação",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/espirito-santo/2026/11/ales-cratuidade-na-passagem-do-transcol/",
+   "data": "2026-11-11T20:34:31Z",
+   "coletado_em": "2026-11-11T21:17:31Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "b24a71ab3c60",
+   "titulo": "Crise com delegados do caso Master amplia desgaste de Andrei na PF, e governo vê futuro incerto",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/brasil/crise-com-delegados-do-caso-master-amplia-desgaste-de-andrei-na-pf-e-governo-ve-futuro-incerto-1126",
+   "data": "2026-11-11T20:29:02Z",
+   "coletado_em": "2026-11-11T21:17:31Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "d6d4a4fd93e6",
+   "titulo": "Banestes divulga novos editais de concurso com salários de até R$ 6,3 mil",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/trabalho/concursos/banestes-divulga-novos-editais-de-concurso-com-salarios-de-ate-r-63-mil/",
+   "data": "2026-11-11T20:20:53Z",
+   "coletado_em": "2026-11-11T21:17:31Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "7801b9267004",
+   "titulo": "Descoberta inesperada durante a obra do Canal da Costa atrasa entrega para 2027",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/cotidiano/descoberta-inesperada-obra-canal-da-costa-atrasa-entrega-para-2027/",
+   "data": "2026-11-11T20:20:26Z",
+   "coletado_em": "2026-11-11T21:17:31Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "restricao"
+   ]
+  },
   {
    "id": "a5aa27ac4e9f",
    "titulo": "Governo vai enviar nesta quarta projeto com medidas de ajuste fiscal de até R$ 60 bi em 2027",
@@ -688,6 +810,21 @@
      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOcm1vTWJBMEpsbzZIX19LOEFXb3VVOF9xR2MyMVJpZm55UXFLVEpoRlFlcmxuaU9qR29Pc0pSbnE5T3lFMzhqNEZidzNYbVUyVGpMZ2VtSlZ4UEVOd2tfRFhQMjlyN29YYTE5X0ZLU2NLdjdNV3AxZmRHMEdlT2YxN2tGbjgtMjFORUpaZjJzZ2NfaElPUUFiX2cxOFdKak82?oc=5"
     }
    ],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador",
+    "pessoal"
+   ]
+  },
+  {
+   "id": "6db31d4dd85c",
+   "titulo": "Pazolini anuncia exoneração de todos os comissionados do Governo do ES em janeiro de 2027",
+   "veiculo": "Sudeste Agora",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOTmV6Ry0yVTNTb0lVVHdIUW1lVTBmd2lPYUxyZmQ1ZjJrUERvemV0WEs4ZVktQVNiM09OOG5Oc2JxcHhIcFFrQW9PLUFSMlpLZkxQUjNVanlPM3JMRUhBb21kMDFkS3FWTnVJdzlhNF91NVNTeVJPOEZsQzZscE4tQWhkeEl0WXpqUTRDc0t2OVBnOVkwT1dpem1iaG9kZUtKVmUyTi01VW9MVzJzT2ZTRWhBZDJWS1djQkHSAboBQVVfeXFMTk5lekctMlUzU29JVVR3SFFtZVUwZndpT2FMcmZkNWYya1BEb3pldFhLOGVZLUFTYjNPTjhuTnNicXB4SHBRa0FvTy1BUjJaS2ZMUFIzVWp5TzNyTEVIQW9tZDAxZEtxVk51SXc5YTRfdTVTU3lSTzhGbEM2bHBOLUFoZHhJdFl6alE0Q3NLdjlQZzlZME9XaXptYmhvZGVLSlZlMk4tNVVvTFcyc09mU0VoQWQyVktXY0JB?oc=5",
+   "data": "2026-11-11T12:49:42Z",
+   "coletado_em": "2026-11-11T21:17:31Z",
+   "outras": [],
    "possivel": false,
    "triagem": 8,
    "temas": [
@@ -1395,6 +1532,18 @@
    "temas": [
     "governador"
    ]
+  },
+  {
+   "id": "70832ddb7260",
+   "titulo": "Georgeo cobra soluções para plantões policiais e provas práticas do Detran",
+   "veiculo": "FaxAju",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQb0p3TXlkV3AybVZGQUlzdW1jN05wUUJSOTkwbWN6c3FLWTVlT19uNUFDVDV3VWh0MW5xYk5Fb2ZkekZsX0t3RUY1enkzTklxblYyY2hCS29SOHFmQndBeHk0R2dFakgxRl9XSjUxVnY0REhLVGJFY1FuYUlhUXE5ZFhlSHN3WG9wRnJrTkVuZ2pBOFVjUXZITExnaVYtR2h6Q1AyWWVSYjFFWHAz?oc=5",
+   "data": "2026-11-10T18:30:00Z",
+   "coletado_em": "2026-11-11T21:17:31Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
   },
   {
    "id": "41b201e4a52f",
