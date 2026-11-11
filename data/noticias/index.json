@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-11",
- "gerado_em": "2026-11-11T16:17:14Z",
+ "gerado_em": "2026-11-11T17:08:25Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,24 +17,24 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 31,
-   "aceitos": 21,
+   "lidos": 33,
+   "aceitos": 22,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 25,
-   "aceitos": 21,
+   "lidos": 26,
+   "aceitos": 22,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 11,
-   "aceitos": 11,
+   "lidos": 13,
+   "aceitos": 13,
    "possiveis": 0
   },
   {
@@ -50,7 +50,7 @@
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
    "lidos": 27,
-   "aceitos": 9,
+   "aceitos": 11,
    "possiveis": 2
   },
   {
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 5,
    "possiveis": 2
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 61,
+   "lidos": 60,
    "aceitos": 3,
    "possiveis": 6
   },
@@ -114,7 +114,7 @@
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
    "lidos": 4,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -155,7 +155,7 @@
    "ok": true,
    "lidos": 27,
    "aceitos": 2,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -218,7 +218,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -278,22 +278,65 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 319,
+  "sem_contexto": 321,
   "oficial_sem_tema": 1,
   "possivel": 34,
-  "veiculo_excluido": 32,
-  "sem_contexto_com_tema": 10,
+  "veiculo_excluido": 31,
   "exterior_sem_ancora": 5,
-  "outro_estado": 25,
-  "excluir": 25,
+  "sem_contexto_com_tema": 11,
+  "outro_estado": 28,
+  "excluir": 22,
   "caixa_alta": 1,
-  "sigla_sem_ancora": 9,
+  "sigla_sem_ancora": 8,
   "veiculo_outra_praca": 4,
   "generico_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "f285039500e3",
+   "titulo": "Pazolini anuncia exoneração de 3,4 mil servidores comissionados no Governo do ES",
+   "veiculo": "A Notícia do Caparaó",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNemF4Y25FaEVsWktiVVQ5ZjJ3bUtLbFZFY18xZThiYXotLXdHc08tNmZfOVZsbk03X2VXdlpFeW1BWTFaMDZnTko5Qjh5UEwtd2s4QlVBVVFRMnptUkk1TXp3RWdSN2tkbW95UjZQVnJmLW90UV9VYUFnYlI1ZEtnTndTOWNfRFplYlJCR1J5RHFqVWpMVWNyVjc2dVVzQW9HRUlRak5laVJwRm5pSlpmQkJhUGg1ZmM2WG9fLWQ4MA?oc=5",
+   "data": "2026-11-11T16:37:15Z",
+   "coletado_em": "2026-11-11T17:08:25Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador",
+    "pessoal"
+   ]
+  },
+  {
+   "id": "2b24abb6312f",
+   "titulo": "CPI dos maus-tratos resgata cão com pata necrosada e multa tutores em Cariacica",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/seguranca/policia/2026/11/cpi-dos-maus-tratos-cao/",
+   "data": "2026-11-11T16:34:30Z",
+   "coletado_em": "2026-11-11T17:08:25Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "e82b146f4575",
+   "titulo": "Concurso da Transpetro com salário de até R$ 15 mil terá novos locais de prova no ES; veja mudanças",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/trabalho/concursos/concurso-da-transpetro-tera-novos-locais-de-prova-no-espirito-santo/",
+   "data": "2026-11-11T16:23:27Z",
+   "coletado_em": "2026-11-11T17:08:25Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "4196daed061d",
    "titulo": "Assembleia do ES conquista nota máxima em transparência e fica entre as melhores do Brasil",
