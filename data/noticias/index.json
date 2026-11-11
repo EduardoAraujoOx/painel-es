@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-11",
- "gerado_em": "2026-11-11T09:17:15Z",
+ "gerado_em": "2026-11-11T10:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 27,
-   "aceitos": 15,
+   "lidos": 28,
+   "aceitos": 16,
    "possiveis": 1
   },
   {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 27,
-   "aceitos": 21,
+   "aceitos": 20,
    "possiveis": 2
   },
   {
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 7,
+   "lidos": 6,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 65,
+   "lidos": 66,
    "aceitos": 2,
    "possiveis": 4
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 72,
+   "lidos": 60,
    "aceitos": 5,
    "possiveis": 9
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 55,
+   "lidos": 56,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -266,7 +266,7 @@
    "consulta": "https://simnoticias.com.br/politica/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 2
   },
   {
@@ -280,18 +280,61 @@
  ],
  "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 348,
-  "excluir": 30,
+  "sem_contexto": 331,
+  "excluir": 32,
   "possivel": 31,
   "oficial_sem_tema": 2,
   "sem_contexto_com_tema": 8,
-  "veiculo_excluido": 31,
-  "exterior_sem_ancora": 3,
-  "outro_estado": 29,
+  "veiculo_excluido": 30,
+  "exterior_sem_ancora": 4,
+  "outro_estado": 31,
   "sigla_sem_ancora": 9,
   "veiculo_outra_praca": 3
  },
  "itens": [
+  {
+   "id": "ba5a649e7241",
+   "titulo": "Novo governo de Pazolini vai exonerar comissionados no primeiro dia de gestão",
+   "veiculo": "Sim Notícias",
+   "url": "https://simnoticias.com.br/politica/novo-governo-de-pazolini-vai-exonerar-comissionados-no-primeiro-dia-de-gestao/",
+   "data": "2026-11-11T10:02:12Z",
+   "coletado_em": "2026-11-11T10:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao",
+    "governador",
+    "pessoal"
+   ]
+  },
+  {
+   "id": "a6d9ad3ca23d",
+   "titulo": "De Barcelona para a Assembleia: a trajetória de Xambinho",
+   "veiculo": "Sim Notícias",
+   "url": "https://simnoticias.com.br/politica/de-barcelona-para-a-assembleia-a-trajetoria-de-xambinho/",
+   "data": "2026-11-11T10:00:09Z",
+   "coletado_em": "2026-11-11T10:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "096ede5a7cda",
+   "titulo": "Agências de publicidade: Secom suspende licitação do ES",
+   "veiculo": "ES Brasil",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9NSUYzODd5UHhPNGZNWGNmZlZjcFIzZC0yRzdUQ1NlcGo1YnJpQ2I3MTIxVmpXRWc4MGlSS2lUaGkySVJ0WGZyT09OazNRQTU3QzNxeHZEN0lza0llY1BUOXBEUEIzRDlrbkZobnJFbGNfM3NCcXVTazdYWDc3QQ?oc=5",
+   "data": "2026-11-11T09:57:29Z",
+   "coletado_em": "2026-11-11T10:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "restricao",
+    "contratos"
+   ]
+  },
   {
    "id": "ce1f8e140c60",
    "titulo": "Concursos no ES: Banestes, câmaras, prefeituras e Idaf pagam salário de até R$ 14 mil; veja como se inscrever",
