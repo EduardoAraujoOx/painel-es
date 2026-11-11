@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-11T11:17:43Z",
+ "gerado_em": "2026-11-11T15:23:40Z",
  "ref": "2026-11-11",
  "desde": "2026-10-04",
  "estados": [
@@ -22,21 +22,21 @@
    "nome": "Amazonas",
    "eleito": "Omar Aziz",
    "partido": "PSD",
-   "total": 80
+   "total": 81
   },
   {
    "uf": "MA",
    "nome": "Maranhão",
    "eleito": "Eduardo Braide",
    "partido": "PSD",
-   "total": 51
+   "total": 52
   },
   {
    "uf": "MG",
    "nome": "Minas Gerais",
    "eleito": "Cleitinho Azevedo",
    "partido": "Republicanos",
-   "total": 136
+   "total": 137
   },
   {
    "uf": "PA",
@@ -85,14 +85,14 @@
    "nome": "Roraima",
    "eleito": "Arthur Henrique",
    "partido": "PL",
-   "total": 21
+   "total": 22
   },
   {
    "uf": "TO",
    "nome": "Tocantins",
    "eleito": "Vicentinho Júnior",
    "partido": "PSDB",
-   "total": 88
+   "total": 93
   }
  ],
  "temas": {
@@ -106,11 +106,90 @@
   "fndr": "FNDR e reforma tributária"
  },
  "contagem": {
-  "total": 925,
-  "medidas": 285,
-  "equipe": 640
+  "total": 934,
+  "medidas": 290,
+  "equipe": 644
  },
  "itens": [
+  {
+   "id": "8cf22091521e",
+   "titulo": "Arthur Henrique escala Marlon Buss para comandar a Secretaria de Agricultura de Roraima em 2027",
+   "veiculo": "portalofato.com.br",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPTEJlby1jaWp4N0s0YzZRZmZzM2dOc0llTzNPV1o4bGE4MkJOUWJkUXF6WWNxMXFmXy1oZ1luV1VCMWJyaFVoOE5ieVBINnRwbTREYTJ4cWVCSXhaUF84ZzRoMkNWRXpuZjMxVEQySldXQjVhS1lfMmlVcUVST3RQclpLTjctZkxTQzRQUjJkMzlaMEo1U2oxMWlHbnE4dW00ZkVpa3dHTnVFMFFnbVJVRzAxbVd6OGJaYU8zYnVuSVpnOXNuMTBkaUZjQTRGUTQ?oc=5",
+   "data": "2026-11-11T12:40:48Z",
+   "coletado_em": "2026-11-11T15:23:40Z",
+   "outras": [],
+   "ufs": [
+    "RR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "cca6b01f26c1",
+   "titulo": "Wanderlei Barbosa determina levantamento de contratos, dívidas e pendências para transição a Vicentinho Júnior",
+   "veiculo": "Sou de Palmas",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQc21NckVrNHRNenhSTG1EZGdBbjFrdFR5Ylh1Y2ZfbFl5bU4zaHdSeUU0TTNhYVdpU2dRLVhLUlloSllVeVZWMjZYZV9uTUM4YnBsNWpTdUFUdGlmaThaeWE4enJGYkRneFFjNmVTa0dCM2M3WHAyeFhmTDZYemJzMkRSNEVKd2tjUVktbXhrMTduMW1pSzFQRlVQdHdvLXdhbjZhRkNHMWlJMWtYVHp2WEpmdGtJZW1jMDU0Xy05ejVjLWhiUUt1RmJpQm56QWdBb2VlSHdDclQwLUQzMGhV?oc=5",
+   "data": "2026-11-11T12:25:05Z",
+   "coletado_em": "2026-11-11T15:23:40Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [
+    "diagnostico",
+    "contratos"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "e40dd7f10b7e",
+   "titulo": "Cleitinho critica licitação de iPhones para o Senado: “Povo feito de otário”",
+   "veiculo": "BossaNews Brasil",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQQU9YTy1pNktlVWliSHhISjh2VFdENkVubDZ2aF9rLS1pQi1rSXlhZFhyY0JJLXBWSnlwaDRwd3dDb29fTllSWTNpaDJSRk5qYm5waF95bFFObEE3YjJ4V1hLVUd5VUZJenloa2tpQVhTQU56YU1nYnlPTUZMVG54ZWV6X3l2SHRHWmFpdllXOUppRGpkOW1iV3M2Smg4MVRL?oc=5",
+   "data": "2026-11-11T11:47:42Z",
+   "coletado_em": "2026-11-11T15:23:40Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "contratos"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "0f67a41e46d0",
+   "titulo": "Governador eleito, Vicentinho discute folha de pagamento do Estado com Banco do Brasil e Caixa",
+   "veiculo": "Araguaína Notícias",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNUFZSR1JmalRIMUpmRUZWSWVMOTlETDRYMHphWWJLMWttZ1BCVTFjbFA1TEY2NDE0ZUZ1Ty1pM2dkc2RLT2xlLWJIUUYyNThtM3RRTVVQeGpIUXVLdG5rMldCTjVVbU5MZ0RYN0duamZwaW02VjlJMFNRRVhZNTRpbjMzcmJzNFRQVnhJbEFsMFFoR0VrcWlTSGtMLTYyeThlXzF5WEotU1BmX3NGaFB5RTNua1Q5VTVfM2EzYldrbTh2MjZTdzFsV0N6Qjd6bFVrcnNKQmg3aw?oc=5",
+   "data": "2026-11-11T11:31:00Z",
+   "coletado_em": "2026-11-11T15:23:40Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [
+    "pessoal"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "34c467fc4f14",
+   "titulo": "Em Brasília, Vicentinho Júnior se reúne com Banco do Brasil e Caixa e discute folha do funcionalismo; BRB opera pagamento há 17 meses",
+   "veiculo": "Cleber Toledo",
+   "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPNjlyT2E0VVI5SUVOWjBqSmRQQ3BmQ3FHeTRmYUx4MmxMU1FGcmV2bVF3LU5odnR1c0QzNGdIcktjN0p0UGc3eVhiZ0JTdU5wSGc0V3RFLS1jZ0FZU3U3OWNNVUtOcGxLVkQxX1Y0UXhaekJrby1KZnhEQzAtT2FnR3J1SUs5TWVVVFdSSGlpOHFWcVJwTURKS3A5QTU5YUpURS1ROWVQSXB5ZlltM1FrSFd3Z2poNFU1TkZrSWp6ZTJNWnRaT3VKVVM3dmV2aTEwcjFfbFFqRFJJMWFWX3YzbWNGM1BWa2lsLVY2cVhZV3p3YkVXb3M0SWJOLUl2UQ?oc=5",
+   "data": "2026-11-11T11:11:00Z",
+   "coletado_em": "2026-11-11T15:23:40Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [
+    "pessoal"
+   ],
+   "categoria": "medida"
+  },
   {
    "id": "1df992d138d1",
    "titulo": "Em Brasília, Vicentinho Júnior se reúne com Banco do Brasil e Caixa e discute folha de pagamento; BRB opera pagamento há 17 meses",
@@ -170,6 +249,23 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "89c0356ee851",
+   "titulo": "Governador eleito por Tocantins defende adiamento da reforma tributária",
+   "veiculo": "JC",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQbGhXSjB5UFhTOWxVWjA5N0x4ZUxTNmlLZ3pPQlM1Tkx6X1h5SGNfbHhndDZnQ1hJNEo0cGg1Y05SelFMREpfWjNDTW5ac0FuWUNtYUc0NUd2R3dwdDk2VDRzbjdORUtlSlVWcDV6VzVCUFhLTFk1OEhuZjNkMmNuVXI5LUlicWZTSDZjN1Bsb0phUHJtUUtLNmg2Q3dEM2RGRzQyMW1VWVk2QXZDZmtrTmRudU11aGlqNDZ6STdQUzN2S2hzLTM5YzBzYXRSUDdUMWE0aA?oc=5",
+   "data": "2026-11-11T00:49:14Z",
+   "coletado_em": "2026-11-11T15:23:40Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [
+    "economia",
+    "fndr"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "b9870a8a67f4",
@@ -5962,6 +6058,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "8c25f367885d",
+   "titulo": "Secretariado de Vicentinho tem Estelamaris para a Casa Civil, Tiago Schüler vai para o planejamento e Jairo Mariano na Secad",
+   "veiculo": "Gazeta do Cerrado",
+   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPUkloMmlUdk1xSzFoYWVzZjI1UkljSW9iTU1hT3hJWk9tcWdwSEVxdEliWXZEczRnU085QmdoWVozbWI0dnRKVUo5V2FDRDZ2M1Q5dTF4ZzRjbWN4U1EzU283SHNQQkJvSHdCQ2NXbzZKQ0FmSGhLSmwzLVVCM2piZEtEaUIzRGFWemVNX1lablREUGVuZGluWExCOFBCMnVndnF3bS1NdmR3NGhDTElwenBvaTFsTmotNDJ1QjNIVEU0aXRhWDc3eldBWDc4Q0U2LS1oOVhDUXBkaHdkNVFuSUpURlZJNlZjSjV0bTN3Nm15YnpYVkg4SA?oc=5",
+   "data": "2026-11-03T08:00:00Z",
+   "coletado_em": "2026-11-11T15:23:40Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "7d8cf72b31c5",
    "titulo": "Wanderlei Barbosa regulamenta transição de governo e mexe no 1º escalão do Tocantins",
    "veiculo": "Jornal do Tocantins",
@@ -6868,6 +6978,20 @@
     "pessoal"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "24a581280f30",
+   "titulo": "Omar Aziz se reúne com ministro da Saúde e promete reduzir fila do Sisreg nos primeiros 100 dias de governo",
+   "veiculo": "Diário da Capital",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQZk05MEJyYllmS3dZQXh4NVk1N1k0ODRIaHVsU3BhNEkwTHlUa0I3LW8zOWRtR0Y1c2Zma2lHTnRnT1VRYURfb2FZeGNYU0NSMzlneWRKY01FaWhRb1kxeGt6bFlpZFNITm9IMjZ2OUtXM0dFcTV2SFBnQWx6VGFXbXNpUEYyTGNVRWwtRmVMdWVkNEpOamFWQjdkWE1UWm9WVEdWVU85X25tdVp5ZVdBN0w3VzRuanV2ZFBTQWNLaktnbmE5OGdYZDNaUi01Slo1cEdIVzRSWHFZSVQwYkE?oc=5",
+   "data": "2026-10-29T14:26:28Z",
+   "coletado_em": "2026-11-11T15:23:40Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "c27ff5f29236",
@@ -12415,6 +12539,20 @@
    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQN05xel9xNGpNY0ViTXhlZE9DQVRrOUZNNkFXR0MtTlN1YUlhQlVoelFMZU4yQ3JES2Jzdmt1M0R4cHA4YS1HczZqcmRwZ3lDOWJHOVQxRlhZLU9yTW1IUUdyb3BkOG5adXMtc1NiM25wQTRyZC12a0FEZW1kOFRULWs3dVVUQ2UtRmp5WmJZNTYxWlB2a002Rk1sZGxlak0?oc=5",
    "data": "2026-10-08T07:00:00Z",
    "coletado_em": "2026-10-08T07:00:00Z",
+   "outras": [],
+   "ufs": [
+    "MA"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "eb47236c8c76",
+   "titulo": "Eduardo Braide anuncia mais três nomes para equipe de transição d...",
+   "veiculo": "Imperatriz Online",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNOU9zdGp6QVBpYUM3YmZ1cm9OenVJV2Y0WkNfSUtMaWdITTNuTkw3VVRLQi1NS3BXN3JNallkRVY1OGpYQW80eEYyZnJlVkF2SFJJUUpBRVpaQ3Y4SHlqX0xkcjltWTNmMndaYlBGblpsOHlGckRQaDlyYjE1bkhmODQ2VUxodkdQN3BPRlpxT3R1MW1OZWUyUXZwMkV6R2htVEhkdkotNExxR0IyNFQ5djFNSQ?oc=5",
+   "data": "2026-10-08T07:00:00Z",
+   "coletado_em": "2026-11-11T15:23:40Z",
    "outras": [],
    "ufs": [
     "MA"
