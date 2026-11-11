@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-11",
- "gerado_em": "2026-11-11T18:17:20Z",
+ "gerado_em": "2026-11-11T19:17:18Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,15 +17,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 33,
-   "aceitos": 22,
+   "lidos": 35,
+   "aceitos": 23,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 26,
+   "lidos": 25,
    "aceitos": 21,
    "possiveis": 3
   },
@@ -50,14 +50,14 @@
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
    "lidos": 27,
-   "aceitos": 12,
+   "aceitos": 11,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -65,8 +65,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 9,
+   "lidos": 0,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -81,15 +81,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 57,
+   "lidos": 55,
    "aceitos": 3,
    "possiveis": 6
   },
@@ -97,8 +97,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 65,
-   "aceitos": 6,
+   "lidos": 63,
+   "aceitos": 5,
    "possiveis": 6
   },
   {
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 2,
+   "lidos": 3,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,31 +145,31 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 23,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
-   "aceitos": 2,
-   "possiveis": 3
+   "lidos": 26,
+   "aceitos": 1,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 57,
-   "aceitos": 1,
+   "lidos": 59,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 13,
+   "lidos": 15,
    "aceitos": 6,
    "possiveis": 1
   },
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 3
   },
   {
@@ -278,22 +278,61 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 315,
+  "sem_contexto": 312,
   "oficial_sem_tema": 2,
-  "possivel": 32,
-  "veiculo_excluido": 32,
-  "exterior_sem_ancora": 5,
-  "sem_contexto_com_tema": 10,
-  "excluir": 23,
-  "outro_estado": 29,
+  "possivel": 31,
+  "veiculo_excluido": 33,
+  "exterior_sem_ancora": 6,
+  "sem_contexto_com_tema": 11,
+  "excluir": 24,
+  "outro_estado": 30,
   "caixa_alta": 1,
-  "sigla_sem_ancora": 8,
-  "veiculo_outra_praca": 4,
-  "generico_sem_ancora": 1
+  "sigla_sem_ancora": 7,
+  "veiculo_outra_praca": 4
  },
  "itens": [
+  {
+   "id": "8ff4baa26860",
+   "titulo": "Edital do concurso Banestes traz 645 vagas e salários de até R$ 6 mil",
+   "veiculo": "Imprensa 24h",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9uR2pUZ1JhQnQxb0JxLVVJUk91UVFOZVdMeEh5UHJWZWVuMDlHbjVWcHFMaHJvcnE3OFZoT01ibE40anRTY3p3R19hU2dhX1czT3I2dnFnTmhjUWI5V01qQ2JDaHp1UzlxZlE?oc=5",
+   "data": "2026-11-11T18:52:18Z",
+   "coletado_em": "2026-11-11T19:17:18Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "98baf6dd1cc1",
+   "titulo": "Número de servidores municipais cresce 3,2% e alcança 7,9 milhões, diz IBGE",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/brasil/2026/11/servidores-municipais-79-mi/",
+   "data": "2026-11-11T18:42:32Z",
+   "coletado_em": "2026-11-11T19:17:18Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "ee45af85b952",
+   "titulo": "ES registra R$ 3,3 bilhões em superávit orçamentário no 2º quadrimestre de 2026",
+   "veiculo": "A Notícia do Caparaó",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPNWQ1Mm9UZHFkVVF2YWNLaV9OTGdLMnJNbFlsTU1EWjlVQ3haMnlxREVhTzBQMDBVekc3azIxcWFZZVV5a2JnaElacWlWUHFZV0VmNHpUWllWQ1JINzZ2eFlKTG93ZDZiWHZnOUp4YWJYMy1aYkRXYVJHWkVnX3VGZ1ZhWmd2TkE2a2pyaF9hcW1TRTAyTzVQa1VRT21aa3p4ZUE1UkR0VC1fUHE3U0xpbnpMLTNCUXpEUXZad0xBZWpnRnJv?oc=5",
+   "data": "2026-11-11T18:25:18Z",
+   "coletado_em": "2026-11-11T19:17:18Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "d59c69e2e55f",
    "titulo": "Banestes lança novos editais de concurso público com mais de 600 vagas",
