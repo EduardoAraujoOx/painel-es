@@ -1,6 +1,6 @@
 {
- "ref": "2026-11-10",
- "gerado_em": "2026-11-10T23:17:14Z",
+ "ref": "2026-11-11",
+ "gerado_em": "2026-11-11T00:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 27,
-   "aceitos": 15,
+   "lidos": 29,
+   "aceitos": 16,
    "possiveis": 1
   },
   {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 28,
-   "aceitos": 19,
+   "aceitos": 20,
    "possiveis": 3
   },
   {
@@ -34,15 +34,15 @@
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 9,
-   "aceitos": 8,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 7,
+   "lidos": 8,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
@@ -50,14 +50,14 @@
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
    "lidos": 27,
-   "aceitos": 8,
+   "aceitos": 7,
    "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -66,22 +66,22 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 10,
-   "aceitos": 7,
+   "aceitos": 8,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 3,
+   "lidos": 8,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -97,8 +97,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 68,
-   "aceitos": 4,
+   "lidos": 69,
+   "aceitos": 5,
    "possiveis": 8
   },
   {
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 14,
+   "lidos": 10,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 34,
+   "lidos": 33,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -145,9 +145,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 18,
+   "lidos": 20,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 56,
+   "lidos": 55,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 6,
+   "lidos": 7,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
@@ -194,7 +194,7 @@
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
    "lidos": 14,
-   "aceitos": 9,
+   "aceitos": 10,
    "possiveis": 0
   },
   {
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -278,21 +278,35 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 339,
-  "excluir": 34,
-  "possivel": 33,
+  "sem_contexto": 336,
+  "excluir": 35,
+  "possivel": 32,
   "oficial_sem_tema": 2,
-  "sem_contexto_com_tema": 7,
-  "veiculo_excluido": 33,
-  "outro_estado": 32,
+  "sem_contexto_com_tema": 5,
+  "veiculo_excluido": 34,
+  "outro_estado": 30,
   "caixa_alta": 1,
-  "sigla_sem_ancora": 8,
-  "veiculo_outra_praca": 2,
-  "exterior_sem_ancora": 1
+  "sigla_sem_ancora": 9,
+  "veiculo_outra_praca": 2
  },
  "itens": [
+  {
+   "id": "004c7c399fbc",
+   "titulo": "Pazolini anuncia exoneração de todos os nomeados de Casagrande e Ferraço para colocar os seus",
+   "veiculo": "Portal Tempo Novo",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFB1VlozYV9jNlRPMVlSbi1kRWh2QWRWT0FJa3JFQk10ajgzY1JPaWxZZEsxVWdpZXdmTGZ2R0FRY0FiSmw5dXpjeWdrMkN0THJVUXg1cG1FcnJQMjFWeVVEY240SHNmbGlmb1M4LU9sOU5XczBsbFlnazFQNA?oc=5",
+   "data": "2026-11-10T23:30:00Z",
+   "coletado_em": "2026-11-11T00:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador",
+    "pessoal"
+   ]
+  },
   {
    "id": "ad6671292224",
    "titulo": "Governador eleito no ES, Lorenzo Pazolini anuncia exoneração de todos os comissionados em janeiro",
@@ -313,6 +327,18 @@
     "governador",
     "pessoal"
    ]
+  },
+  {
+   "id": "7af02b744a01",
+   "titulo": "ÁUDIO: Festivais fortalecem turismo de eventos e negócios na Bahia | SECOM - Secretaria de Comunicação Social",
+   "veiculo": "ba.gov.br",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOaWpLRjZHQTJaQ0JKTC1RRmRUZ0ZXVnI4MlMwRmc5Um5FTzE0RFltNVZYcXVTMDNOS0ZwS2IyQURjenpVLVVqdVc2RGVSTW55elh0bldEMHdMR2tuWGl3LXpIdWd4N2FkVEVkVWxtQ2NRVWhhbENuOWl5c0ZPTmtKU2phdEdHSF92Z0lkTXdmTnFyOGViSlVWS2gwWEJ4ZTl1WHltcUhjNzlGVHJsb3RVOHh2ZG9KeUkyUEJYcDY2OTc?oc=5",
+   "data": "2026-11-10T22:41:19Z",
+   "coletado_em": "2026-11-11T00:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
   },
   {
    "id": "bf0a7c04cd5e",
@@ -389,6 +415,20 @@
    "triagem": 8,
    "temas": [
     "governador",
+    "pessoal"
+   ]
+  },
+  {
+   "id": "f87df805d98c",
+   "titulo": "Servidor do Himaba é investigado por usar diploma falso e vender diplomas no ES",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOemI5RGJqTDRwNXhTaDJGcVFmemNYcTNCNVN6ZldNNEw3d0FOMVhUdVhjS3YwY2dWNTNzbXYzNllPZXlnaWpEM1VNUGpvU29hYU9BNDZuSmtzZmxDUW9iSHdwMm9pUHJGT0xhbTI2a3dqeHBiZTZhTGgtWW5CVEY2X25KLU84a0oweDRRX3Z4OUJoTU9sRHZPU1o2V1dUX1Q2NE5CRUM5V3EyektoY0NNLXZlQnM5b0JPR3ZqSjZ0aVdDQldWbW5NZU82TmNhNlNtUUNJYW9n0gHWAUFVX3lxTE56YjlEYmpMNHA1eFNoMkZxUWZ6Y1hxM0I1U3pmV000TDd3QU4xWFR1WGNLdjBjZ1Y1M3NtdjM2WU9leWdpakQzVU1Qam9Tb2FhT0E0Nm5Ka3NmbENRb2JId3Ayb2lQckZPTGFtMjZrd2p4cGJlNmFMaC1ZbkJURjZfbkotTzhrSjB4NFFfdng5QmhNT2xEdk9TWjZXV1RfVDY0TkJFQzlXcTJ6S2hjQ00tdmVCczlvQk9HdmpKNnRpV0NCV1Ztbk1lTzZOY2E2U21RQ0lhb2c?oc=5",
+   "data": "2026-11-10T21:57:13Z",
+   "coletado_em": "2026-11-11T00:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
     "pessoal"
    ]
   },
