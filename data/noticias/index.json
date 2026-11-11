@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-11",
- "gerado_em": "2026-11-11T17:08:25Z",
+ "gerado_em": "2026-11-11T17:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,8 +25,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 22,
+   "lidos": 25,
+   "aceitos": 21,
    "possiveis": 2
   },
   {
@@ -65,8 +65,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 9,
+   "lidos": 10,
+   "aceitos": 10,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 60,
+   "lidos": 61,
    "aceitos": 3,
    "possiveis": 6
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 4,
+   "lidos": 3,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -155,7 +155,7 @@
    "ok": true,
    "lidos": 27,
    "aceitos": 2,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 13,
-   "aceitos": 6,
+   "lidos": 14,
+   "aceitos": 7,
    "possiveis": 1
   },
   {
@@ -264,36 +264,49 @@
   {
    "fonte": "Sim Notícias",
    "consulta": "https://simnoticias.com.br/politica/feed/",
-   "ok": true,
-   "lidos": 30,
-   "aceitos": 1,
-   "possiveis": 2
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "<urlopen error [Errno 101] Network is unreachable>"
   },
   {
    "fonte": "Sim Notícias",
    "consulta": "https://simnoticias.com.br/vinicius-baptista/feed/",
-   "ok": true,
-   "lidos": 30,
-   "aceitos": 1,
-   "possiveis": 0
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "<urlopen error [Errno 101] Network is unreachable>"
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 321,
+  "sem_contexto": 319,
   "oficial_sem_tema": 1,
-  "possivel": 34,
-  "veiculo_excluido": 31,
+  "possivel": 32,
+  "veiculo_excluido": 30,
   "exterior_sem_ancora": 5,
   "sem_contexto_com_tema": 11,
-  "outro_estado": 28,
-  "excluir": 22,
+  "outro_estado": 26,
+  "excluir": 21,
   "caixa_alta": 1,
-  "sigla_sem_ancora": 8,
-  "veiculo_outra_praca": 4,
-  "generico_sem_ancora": 1
+  "sigla_sem_ancora": 10,
+  "veiculo_outra_praca": 4
  },
  "itens": [
+  {
+   "id": "c1f995eab0e8",
+   "titulo": "OSBA estreia festival gratuito na Chapada Diamantina | SECOM - Secretaria de Comunicação Social",
+   "veiculo": "ba.gov.br",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOR2JXZTJaQnRWeEM1b08tM2xoNWZHQkhoTTllUmFyMFhNcm4xM1o4WXR4aVQ3MXJkZTdqd19helBhY1FmbXRuUGxqYlR5cG10QmRTaVNJcGhnVDNlYzZqVEY4dFpNLUNQNk9hcF9lanVKcUVFcm9kS0V0M3ZpN1l2aGxvTDVEbEVhRU91bDdIMDRhcVllckt3dUplQjZBUlhHcEliQmpUTHVIUkhnV0g4?oc=5",
+   "data": "2026-11-11T17:08:06Z",
+   "coletado_em": "2026-11-11T17:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "f285039500e3",
    "titulo": "Pazolini anuncia exoneração de 3,4 mil servidores comissionados no Governo do ES",
@@ -495,7 +508,12 @@
    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOX1hobjY3SjZGSHZ4Y090UzVtdTBNdFpMUjIxQ1VGU2J1RjZQN2ZETFNweGNBbERfdHhvb0NFY1V5QlJKZGNfenZZcXhxSllGcm5fdUQ2YzBlZDV4WVRzazFKelZCb2pIcG5PRE1wcndSNHU1WlJHQldmS3BjSEFFMmtkakdvZVpIak5GTUlnYUs5SFEtTHkyVzQzVjFlTEdjd2tIWUI5aw?oc=5",
    "data": "2026-11-11T13:02:39Z",
    "coletado_em": "2026-11-11T13:17:14Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "SiteBarra",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOcm1vTWJBMEpsbzZIX19LOEFXb3VVOF9xR2MyMVJpZm55UXFLVEpoRlFlcmxuaU9qR29Pc0pSbnE5T3lFMzhqNEZidzNYbVUyVGpMZ2VtSlZ4UEVOd2tfRFhQMjlyN29YYTE5X0ZLU2NLdjdNV3AxZmRHMEdlT2YxN2tGbjgtMjFORUpaZjJzZ2NfaElPUUFiX2cxOFdKak82?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 8,
    "temas": [
@@ -927,6 +945,18 @@
    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOaWpLRjZHQTJaQ0JKTC1RRmRUZ0ZXVnI4MlMwRmc5Um5FTzE0RFltNVZYcXVTMDNOS0ZwS2IyQURjenpVLVVqdVc2RGVSTW55elh0bldEMHdMR2tuWGl3LXpIdWd4N2FkVEVkVWxtQ2NRVWhhbENuOWl5c0ZPTmtKU2phdEdHSF92Z0lkTXdmTnFyOGViSlVWS2gwWEJ4ZTl1WHltcUhjNzlGVHJsb3RVOHh2ZG9KeUkyUEJYcDY2OTc?oc=5",
    "data": "2026-11-10T22:41:19Z",
    "coletado_em": "2026-11-11T00:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "5f9650a6a73f",
+   "titulo": "Motoristas levam multa de R$ 293,47 e sete pontos na CNH após pente-fino do DETRAN",
+   "veiculo": "Serra Noticiário",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQLXJYODZ5dmlZS05ILWJPcTc3Z3pGNmEtNzdudnNLeHlXbkY4MEh0aVFGdWpYbzI1OGNld1JncExwaG0wYjJ5ckNMN1FXRXhKVktfeXNOdktVSkdJMnJOY2dPZUIxdk5zeEdWVUk4YmNjN2JlT0lwd1U0N3hXTDJPbkhlUFBnSGdJbG43TURWN3NDblBYVlVmYVNnUUIxU2NGQlB2RHBFWEpNbURXdlI2aGZn?oc=5",
+   "data": "2026-11-10T22:30:00Z",
+   "coletado_em": "2026-11-11T17:17:15Z",
    "outras": [],
    "possivel": true,
    "triagem": 8,
