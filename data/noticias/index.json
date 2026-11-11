@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-11",
- "gerado_em": "2026-11-11T15:17:14Z",
+ "gerado_em": "2026-11-11T16:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,24 +25,24 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 22,
+   "lidos": 25,
+   "aceitos": 21,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 12,
-   "aceitos": 12,
+   "lidos": 11,
+   "aceitos": 11,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 7,
+   "lidos": 6,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -51,13 +51,13 @@
    "ok": true,
    "lidos": 27,
    "aceitos": 9,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -65,23 +65,23 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 8,
+   "lidos": 9,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 5,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 63,
+   "lidos": 61,
    "aceitos": 3,
    "possiveis": 6
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 69,
+   "lidos": 67,
    "aceitos": 6,
-   "possiveis": 7
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 2,
+   "lidos": 4,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 26,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -145,9 +145,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 25,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 5,
+   "lidos": 6,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 14,
-   "aceitos": 7,
+   "lidos": 13,
+   "aceitos": 6,
    "possiveis": 1
   },
   {
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 4,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -274,25 +274,38 @@
    "consulta": "https://simnoticias.com.br/vinicius-baptista/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 327,
+  "sem_contexto": 319,
   "oficial_sem_tema": 1,
   "possivel": 34,
   "veiculo_excluido": 32,
-  "sem_contexto_com_tema": 9,
-  "exterior_sem_ancora": 4,
-  "outro_estado": 27,
+  "sem_contexto_com_tema": 10,
+  "exterior_sem_ancora": 5,
+  "outro_estado": 25,
   "excluir": 25,
-  "caixa_alta": 2,
+  "caixa_alta": 1,
   "sigla_sem_ancora": 9,
-  "veiculo_outra_praca": 4
+  "veiculo_outra_praca": 4,
+  "generico_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "4196daed061d",
+   "titulo": "Assembleia do ES conquista nota máxima em transparência e fica entre as melhores do Brasil",
+   "veiculo": "ES Fala",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPMzV5dGdJUVhzZEJtTnJKUF9UdnhlQldEMDJqbFZrd3RkSDl1bTlrNmxqRHppeUR2akVaMy1XdEx6SThnUUtrSFptR2VKMmV0ek5WT3lhemdLcWFIaUNYdlBVT3U5VnlpWHZ2YzR6Nmx4NmJUU2JqOENiUHRBcUc2THJTMEdRR0tacWhDbHBDVGlXeGJBbFFqMDNoTmxLUXdqUFZfZnpXVmRPT2d4V3c?oc=5",
+   "data": "2026-11-11T15:30:00Z",
+   "coletado_em": "2026-11-11T16:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "d79aca1f5f15",
    "titulo": "Concurso da Transpetro amplia locais de prova no ES",
@@ -316,6 +329,18 @@
    "coletado_em": "2026-11-11T14:17:16Z",
    "outras": [],
    "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "c1790c5d3d93",
+   "titulo": "Free flow: governo envia notificações sobre débitos pendentes",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVzVGRW53Yk5Ua21lckxVYnlTelU0a0xmYUJQZUEzVXVVLU5lR013QjdMdUp2a3hMMzczX01EVDNDT2JtVDJJcDZVU0VscU1iZ2VZaUJHRWpPNkc5X1FUY3YwX2dmaUNHRTU1d2hfbHhDZW1Oc1NuN190TzFEWlM2d0JZQjVkeklXSnVwNEx1LXZsRjZqWEtUY0tCLXc3aGdITGtobF9TQ0JZVnU2WEHSAa4BQVVfeXFMTlc1RkVud2JOVGttZXJMVWJ5U3pVNGtMZmFCUGVBM1V1VS1OZUdNd0I3THVKdmt4TDM3M19NRFQzQ09ibVQySXA2VVNFbHFNYmdlWWlCR0VqTzZHOV9RVGN2MF9nZmlDR0U1NXdoX2x4Q2VtTnNTbjdfdE8xRFpTNndCWUI1ZHpJV0p1cDRMdS12bEY2alhLVGNLQi13N2hnSExraGxfU0NCWVZ1NlhB?oc=5",
+   "data": "2026-11-11T14:10:10Z",
+   "coletado_em": "2026-11-11T16:17:14Z",
+   "outras": [],
+   "possivel": true,
    "triagem": 8,
    "temas": []
   },
@@ -450,11 +475,16 @@
   {
    "id": "32c14fd14a2d",
    "titulo": "Senado prevê 95 iPhones e 330 outros celulares a parlamentares e servidores",
-   "veiculo": "Tribuna Online",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUkR6WGdyYVlzbUxza3Z1b05ZNXd2emUyTnhjdWt6ZUpZYlU0bXdjeEMxMWIzUlBmODZaR2EyOXEtekdtaThlZEtQOTN3SnM4Y2U3WEEyczVHQ1NTZm03WUV3SVlWRDQyTUZRd3J0UklGRnJ4LXNlRmg0eTloNElRTU44QzN4VWdFTWI1UG9wdjVTYWRSOFJyOFExR0pUNnVTcVZFWDFITnBSWkIyVlNMcE5iYzVTdVRzRnBNONIBxAFBVV95cUxOazZhZFJmQWhWQ0ppQkdpdUhOT2t5cVNDVGlZMVdPV2ViMDQ0LXdkTEpGaFJEWkZ3MTRrYVEzTzZNbTJkUllxZ0QwSFZQSWtnc2Y1SWxjUjRSVEEyWFF3azdicG1senJ0dWlzanVQNk0wOVVOR0FKeEJkZk1LQ0hvb0FGVjFZdG5nMUlUdDE3MFJPckVEOWxBN2ctR2VpREJvSHIwRG85UmR3VkJ4R0RBUEl6RnlUZXphY3Jic1hQZndIMFAx?oc=5",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/senado-preve-95-iphones/",
    "data": "2026-11-11T12:44:40Z",
    "coletado_em": "2026-11-11T15:17:14Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Tribuna Online",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUkR6WGdyYVlzbUxza3Z1b05ZNXd2emUyTnhjdWt6ZUpZYlU0bXdjeEMxMWIzUlBmODZaR2EyOXEtekdtaThlZEtQOTN3SnM4Y2U3WEEyczVHQ1NTZm03WUV3SVlWRDQyTUZRd3J0UklGRnJ4LXNlRmg0eTloNElRTU44QzN4VWdFTWI1UG9wdjVTYWRSOFJyOFExR0pUNnVTcVZFWDFITnBSWkIyVlNMcE5iYzVTdVRzRnBNONIBxAFBVV95cUxOazZhZFJmQWhWQ0ppQkdpdUhOT2t5cVNDVGlZMVdPV2ViMDQ0LXdkTEpGaFJEWkZ3MTRrYVEzTzZNbTJkUllxZ0QwSFZQSWtnc2Y1SWxjUjRSVEEyWFF3azdicG1senJ0dWlzanVQNk0wOVVOR0FKeEJkZk1LQ0hvb0FGVjFZdG5nMUlUdDE3MFJPckVEOWxBN2ctR2VpREJvSHIwRG85UmR3VkJ4R0RBUEl6RnlUZXphY3Jic1hQZndIMFAx?oc=5"
+    }
+   ],
    "possivel": true,
    "triagem": 8,
    "temas": [
@@ -1058,6 +1088,20 @@
    "url": "https://www.folhavitoria.com.br/folha-motor/imposto-pneus-importados-30-por-cento/",
    "data": "2026-11-10T20:30:31Z",
    "coletado_em": "2026-11-10T21:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "638b5d1552e8",
+   "titulo": "Léo Barbosa apresenta emendas à LDO 2027 com propostas para saúde, infraestrutura, esporte e segurança pública",
+   "veiculo": "Gazeta do Cerrado",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNdHNhV0lyNVlka0lkYVJmN2wtaHd3TFhUVDgtakhzZDBZMDFLM1VfRjBPZnFnbzhadWJ0MG1pTXh6S0RYa3l6QkQ4Q01GZHJjYjZGbm5EMkMxQ0tFcVFCNXVMSmU1OWMyRjBzYm1wQjU2ZXBYdkxkUlFGSTNPNXY3VF82NnkyT3RaWHpRQjdubDRtRjd4amotN1VwaGFXSlpWYS1UQ3BseEpVeXV4U2loWm5XRTZLV1h6R3l2REYyNEdmaHdDdWRQQkhNendhWWVSSndqTVo0aFIzQXlVZjVXX292SXc?oc=5",
+   "data": "2026-11-10T20:13:22Z",
+   "coletado_em": "2026-11-11T16:17:14Z",
    "outras": [],
    "possivel": true,
    "triagem": 8,
