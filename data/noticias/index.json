@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-11",
- "gerado_em": "2026-11-11T13:17:14Z",
+ "gerado_em": "2026-11-11T14:17:16Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,15 +17,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 30,
-   "aceitos": 19,
+   "lidos": 32,
+   "aceitos": 21,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 26,
+   "lidos": 27,
    "aceitos": 21,
    "possiveis": 2
   },
@@ -33,8 +33,8 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 12,
-   "aceitos": 12,
+   "lidos": 13,
+   "aceitos": 13,
    "possiveis": 0
   },
   {
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 28,
+   "lidos": 27,
    "aceitos": 9,
    "possiveis": 3
   },
@@ -65,15 +65,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 7,
+   "lidos": 9,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 5,
    "possiveis": 1
   },
@@ -89,16 +89,16 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 66,
-   "aceitos": 2,
-   "possiveis": 5
+   "lidos": 64,
+   "aceitos": 3,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 61,
-   "aceitos": 5,
+   "lidos": 63,
+   "aceitos": 6,
    "possiveis": 6
   },
   {
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 22,
+   "lidos": 23,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 27,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -169,7 +169,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -193,15 +193,15 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 13,
+   "lidos": 15,
    "aceitos": 8,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (previdência OR Ipajm OR \"regime próprio\" OR \"contribuição previdenciária\" OR aposentadoria)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 3,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Folha Vitória",
@@ -232,10 +232,11 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": true,
-   "lidos": 30,
-   "aceitos": 3,
-   "possiveis": 3
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 415: Unsupported Media Type"
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -264,34 +265,121 @@
   {
    "fonte": "Sim Notícias",
    "consulta": "https://simnoticias.com.br/politica/feed/",
-   "ok": true,
-   "lidos": 30,
-   "aceitos": 1,
-   "possiveis": 2
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "<urlopen error [Errno 101] Network is unreachable>"
   },
   {
    "fonte": "Sim Notícias",
    "consulta": "https://simnoticias.com.br/vinicius-baptista/feed/",
-   "ok": true,
-   "lidos": 30,
-   "aceitos": 2,
-   "possiveis": 0
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "<urlopen error [Errno 101] Network is unreachable>"
   }
  ],
- "novos_na_coleta": 5,
+ "novos_na_coleta": 4,
  "descartes_na_coleta": {
-  "sem_contexto": 334,
-  "excluir": 29,
+  "sem_contexto": 301,
+  "excluir": 26,
   "oficial_sem_tema": 1,
-  "possivel": 30,
-  "sem_contexto_com_tema": 8,
-  "veiculo_excluido": 28,
+  "possivel": 28,
+  "sem_contexto_com_tema": 9,
+  "veiculo_excluido": 30,
   "exterior_sem_ancora": 4,
-  "outro_estado": 28,
+  "outro_estado": 27,
   "sigla_sem_ancora": 9,
-  "veiculo_outra_praca": 1
+  "veiculo_outra_praca": 3
  },
  "itens": [
+  {
+   "id": "035ec69e86cc",
+   "titulo": "Detran usa radar portátil em operação contra bikes elétricas acima da velocidade em Vila Velha",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/agora/detran-usa-radar-portatil-em-operacao-contra-bikes-eletricas-acima-da-velocidade-em-vila-velha-1126",
+   "data": "2026-11-11T14:12:49Z",
+   "coletado_em": "2026-11-11T14:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "993b1a06abfb",
+   "titulo": "Idosos poderão comprar carro novo com isenção de imposto; entenda",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxObnBtTjV3bXBMZy1BNjJOZzM5LVZPa240eWJDNURMaVJGODlYWnByODAzTjlGODRHWTFIWk5FamJQSy1TMl9wNkhzMUF3SmN2WHJvRDliR0VzZ2NGWUZhSUluVTk3R3BlQ2Z6aVNjUXNjblBCX1M3bDVNYkU0ZS1Eeg?oc=5",
+   "data": "2026-11-11T13:42:37Z",
+   "coletado_em": "2026-11-11T14:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "04289b279235",
+   "titulo": "Reforma Tributária: frentes parlamentares cobram 32 ajustes",
+   "veiculo": "Vitória News",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZWI5VnZmMXFfcDBNQjhuZ1ZIVFdodmpiNUh1MUJoRnFuN3Z5OTZVdjNRc2NLZmdscmZnR0MxSnZvRlBxZlJHbV9qcTB2bmJGVFpuVmFDTW9GV3VCQWdpSGI1dHNEYlRnaGFzS2FyMU0tOWhpNTFKTmtTU0pEUlBoRE10MXZ1dTVKRG9mWDNR?oc=5",
+   "data": "2026-11-11T13:36:45Z",
+   "coletado_em": "2026-11-11T14:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "ba0fb64e2d95",
+   "titulo": "Governo sinaliza ao mercado cancelamento extra de R$ 12,8 bi em gastos em 2027 para cumprir meta",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/brasil/governo-sinaliza-ao-mercado-cancelamento-extra-de-r-12-8-bi-em-gastos-em-2027-para-cumprir-meta-1126",
+   "data": "2026-11-11T13:25:35Z",
+   "coletado_em": "2026-11-11T14:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "restricao",
+    "contratos"
+   ]
+  },
+  {
+   "id": "37b47134fd6b",
+   "titulo": "Governo Pazolini prevê exoneração de cerca de 5 mil comissionados no primeiro dia de gestão no ES",
+   "veiculo": "Portal 27",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNa0Yya3AwTURMWk5wU2Z3MGpGTVpYeGlZSmxPZmh2NjFOb1VuMnhoNVdxVVBDbGdBZ1V2WFFQUzB1Y3dkQlJta0xsWF93Q3R0TnRVanh1YzdlSkJrNnRCdzVMODc1UnFadF8xZnQ4TzJjWVV6bjF1VDNuU0RUT0ZOdGxNM3Z1c2E4eFFvemVMaWdRakxRTmcyeWxHTWh4UlpGM0pVaEdoZmcteTRhbTd2aHVnaThoR3pRRVVLaWJ4WUZZYUZi?oc=5",
+   "data": "2026-11-11T13:24:50Z",
+   "coletado_em": "2026-11-11T14:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador",
+    "pessoal"
+   ]
+  },
+  {
+   "id": "23b075970b07",
+   "titulo": "Equipe de Pazolini anuncia exoneração de comissionados no ES",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRzRyUjh5VFdjT2RhYWdUZUszTGEtYnhWZ3NEOW5yQ1UyMmc2TndmcXh5WmdpMUJ2aDBqam9RMDZMOEtPRGtLalI0OC1pR1RJdnFfdS1iV3pjSkRINV9iYXhpWVpqZlp0c0M4YVowMW1ab3lTblFYUk1pRVZFRGJqVjFCNVhvdWFBSDNF?oc=5",
+   "data": "2026-11-11T13:23:10Z",
+   "coletado_em": "2026-11-11T14:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador",
+    "pessoal"
+   ]
+  },
   {
    "id": "4fe5cb11ce53",
    "titulo": "TCE-ES abre seleção para TI com salário de R$ 17,6 mil",
@@ -458,6 +546,20 @@
    "triagem": 8,
    "temas": [
     "governador"
+   ]
+  },
+  {
+   "id": "3a3acdf30e55",
+   "titulo": "Seleção com salários de até R$ 19.863 para atuar no Tribunal de Contas do ES",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQSXFVVFZjbFdBMU5VM1hjWHZpSXZoM0V1TWhvaElfal9BM1JYLS1OMmRIVTFUTklkbE81M2tENFBKU0xyd0FEOWFqN1ZtLWNLRHR1X0YybW9OODE0WTV6aHo2WHZ6dW5DNmg1NmtBZWZuWlRldkFESmJaZmR1VmluZ1dGM3pyRFFTdkhoVUxVanp3Ql9BaTdHNTZCaGo5aGVsMjRCRzRDQ21zejFuXzlxZUU4RVRqSVU3ZUNINTZvWG1LUXFDVHRIeUI3RFVULWo1bllQZlUzT21wZG_SAdsBQVVfeXFMUElxVVRWY2xXQTFOVTNYY1h2aUl2aDNFdU1ob2hJX2pfQTNSWC0tTjJkSFUxVE5JZGxPNTNrRDRQSlNMcndBRDlhajdWbS1jS0R0dV9GMm1vTjgxNFk1emh6Nlh2enVuQzZoNTZrQWVmblpUZXZBREpiWmZkdVZpbmdXRjN6ckRRU3ZIaFVMVWp6d0JfQWk3RzU2QmhqOWhlbDI0Qkc0Q0Ntc3oxbl85cWVFOEVUaklVN2VDSDU2b1htS1FxQ1R0SHlCN0RVVC1qNW5ZUGZVM09tcGRv?oc=5",
+   "data": "2026-11-11T11:37:34Z",
+   "coletado_em": "2026-11-11T14:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "controle"
    ]
   },
   {
