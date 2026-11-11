@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-11",
- "gerado_em": "2026-11-11T17:17:15Z",
+ "gerado_em": "2026-11-11T18:17:20Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 25,
+   "lidos": 26,
    "aceitos": 21,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -50,14 +50,14 @@
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
    "lidos": 27,
-   "aceitos": 11,
-   "possiveis": 2
+   "aceitos": 12,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -65,8 +65,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 10,
+   "lidos": 9,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
@@ -74,14 +74,14 @@
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 5,
+   "aceitos": 4,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 61,
+   "lidos": 57,
    "aceitos": 3,
    "possiveis": 6
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 67,
+   "lidos": 65,
    "aceitos": 6,
    "possiveis": 6
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 24,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -155,14 +155,14 @@
    "ok": true,
    "lidos": 27,
    "aceitos": 2,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 55,
-   "aceitos": 0,
+   "lidos": 57,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 14,
-   "aceitos": 7,
+   "lidos": 13,
+   "aceitos": 6,
    "possiveis": 1
   },
   {
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 3
   },
   {
@@ -218,7 +218,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 4,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -264,37 +264,50 @@
   {
    "fonte": "Sim Notícias",
    "consulta": "https://simnoticias.com.br/politica/feed/",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "<urlopen error [Errno 101] Network is unreachable>"
+   "ok": true,
+   "lidos": 30,
+   "aceitos": 1,
+   "possiveis": 2
   },
   {
    "fonte": "Sim Notícias",
    "consulta": "https://simnoticias.com.br/vinicius-baptista/feed/",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "<urlopen error [Errno 101] Network is unreachable>"
+   "ok": true,
+   "lidos": 30,
+   "aceitos": 1,
+   "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto": 319,
-  "oficial_sem_tema": 1,
+  "sem_contexto": 315,
+  "oficial_sem_tema": 2,
   "possivel": 32,
-  "veiculo_excluido": 30,
+  "veiculo_excluido": 32,
   "exterior_sem_ancora": 5,
-  "sem_contexto_com_tema": 11,
-  "outro_estado": 26,
-  "excluir": 21,
+  "sem_contexto_com_tema": 10,
+  "excluir": 23,
+  "outro_estado": 29,
   "caixa_alta": 1,
-  "sigla_sem_ancora": 10,
-  "veiculo_outra_praca": 4
+  "sigla_sem_ancora": 8,
+  "veiculo_outra_praca": 4,
+  "generico_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "d59c69e2e55f",
+   "titulo": "Banestes lança novos editais de concurso público com mais de 600 vagas",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/concursos/banestes-lanca-novos-editais-de-concurso-publico-com-mais-de-600-vagas-1126",
+   "data": "2026-11-11T18:09:00Z",
+   "coletado_em": "2026-11-11T18:17:20Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "c1f995eab0e8",
    "titulo": "OSBA estreia festival gratuito na Chapada Diamantina | SECOM - Secretaria de Comunicação Social",
@@ -550,6 +563,20 @@
    "triagem": 8,
    "temas": [
     "pessoal"
+   ]
+  },
+  {
+   "id": "1803d064d198",
+   "titulo": "Governo do ES abre processo seletivo com salários de até R$ 4,5 mil e vagas em todos os municípios",
+   "veiculo": "O Singular Portal de Notícias",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSFZMQjJrQnpYWVlQNnluWmZBTEtDQTkyRGY5Ujl4S2k4ckJYVWhMU0p1QUl4eHdnTnZaeEwzaTF6NU9uUUJaRkNsZ2cyT1FSZTNIT3JuSzdEb3JxZHA1bzZHX0RoMG0zUFpPaTlnUVN6V2VUazUwdDFNekdJam5UZlJrTG9oY3JjREUwT21MWW9VZC1OYmNTZ3FYaDNLT1FFUzFrLUNjREttNVdKMDlkbFZVUGE5SWxTQzVtUENhbGZPSzViOC1qc1RvRHlVay1m?oc=5",
+   "data": "2026-11-11T12:38:10Z",
+   "coletado_em": "2026-11-11T18:17:20Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
    ]
   },
   {
@@ -1479,6 +1506,18 @@
    "coletado_em": "2026-11-10T14:17:19Z",
    "outras": [],
    "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "605dbad8f093",
+   "titulo": "Estado repassa R$8 milhões em recursos do Detran e Idaf para a Saúde",
+   "veiculo": "ContilNet",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNYWwwOF9kNzhFYzdYeDJ6V2xTdkZCRV94c0FrVXYxMXdjUC1wd01FSzFuSUV1TFRQWnVWNW5yZ1JvWVJnYkhCckc4RmdzZ2gxS1pzNTBpRVpKNmhvWEVpV0NNMl91SW1FNGcwcHZiR3FFdE1FV1FEWkMxVFExMlBTMFVoR3ZucjB6al9xRW1DUTdxdVR5SUowVXJBZlZFaE9zWFdNLWUtM2RRdy1nekxOOGJ3?oc=5",
+   "data": "2026-11-10T13:34:27Z",
+   "coletado_em": "2026-11-11T18:17:20Z",
+   "outras": [],
+   "possivel": false,
    "triagem": 8,
    "temas": []
   },
