@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-11",
- "gerado_em": "2026-11-11T22:17:17Z",
+ "gerado_em": "2026-11-11T23:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 37,
+   "lidos": 36,
    "aceitos": 23,
    "possiveis": 0
   },
@@ -49,15 +49,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 24,
+   "lidos": 25,
    "aceitos": 10,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -74,7 +74,7 @@
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 5,
+   "aceitos": 6,
    "possiveis": 1
   },
   {
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 56,
+   "lidos": 57,
    "aceitos": 5,
-   "possiveis": 5
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 1,
+   "lidos": 7,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -137,9 +137,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 26,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -161,8 +161,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 69,
-   "aceitos": 4,
+   "lidos": 71,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 16,
+   "lidos": 15,
    "aceitos": 7,
    "possiveis": 3
   },
@@ -201,8 +201,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (previdência OR Ipajm OR \"regime próprio\" OR \"contribuição previdenciária\" OR aposentadoria)",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 1,
+   "lidos": 3,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 4,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Folha Vitória",
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -278,20 +278,73 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 5,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto": 307,
+  "sem_contexto": 302,
   "possivel": 29,
-  "veiculo_excluido": 40,
-  "exterior_sem_ancora": 6,
-  "sem_contexto_com_tema": 8,
-  "excluir": 20,
+  "veiculo_excluido": 42,
+  "exterior_sem_ancora": 5,
+  "sem_contexto_com_tema": 9,
+  "excluir": 19,
   "outro_estado": 28,
   "caixa_alta": 2,
-  "sigla_sem_ancora": 6,
+  "sigla_sem_ancora": 7,
   "veiculo_outra_praca": 4
  },
  "itens": [
+  {
+   "id": "419c722c5125",
+   "titulo": "Ex-secretário de Linhares é indiciado por assédio sexual contra ex-servidora",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/policia/ex-secretario-de-linhares-e-indiciado-por-assedio-sexual-contra-ex-servidora-1126",
+   "data": "2026-11-11T22:51:02Z",
+   "coletado_em": "2026-11-11T23:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "f9b890558977",
+   "titulo": "Banestes lança concurso com 645 vagas em CR e salário de R$ 6,3 mil",
+   "veiculo": "diariodamidia.com.br",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNcUpqNXJ6UGRuVGF1RHNHSVBBNnRYUzJHczNnbWVmQzhGeHhRdERWZVFSLXVJMDRSOGhCVjJITDJTTjlzOFNRaC1BYTNXb0xLZnBRc2RySHFUejFaWjRzc3J3RnBWTUg3ZHRnOG1BdkRqeUc1aUl3eG12aXE5V2xwaWUyQlBuc19HZlBfd2M1VFVkcUdMWi1raExB?oc=5",
+   "data": "2026-11-11T22:33:42Z",
+   "coletado_em": "2026-11-11T23:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "7bd1fa18efeb",
+   "titulo": "Pazolini vai exonerar todos os comissionados em 6 de janeiro",
+   "veiculo": "ES Brasil",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5ldXlMNl92WGFBdkJBTlB1ZHUxd3UyRW1VUl83QlJ1X2Jxclhwc1otdk9jcndRNVlhWHN2ZWpvaGF5bGNoRkNTQlVVWHlmQ2tkOGNEWV85enEzQnFfbV9VYklIV1h2UE9zdnlEeHMzd1pyRmk5NHVOWnFZSQ?oc=5",
+   "data": "2026-11-11T22:16:42Z",
+   "coletado_em": "2026-11-11T23:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador",
+    "pessoal"
+   ]
+  },
+  {
+   "id": "668d0c849f02",
+   "titulo": "Banestes abre concurso com 645 oportunidades no ES",
+   "veiculo": "ES Brasil",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQbUwzekRYY3FPN1FHNTdEUXlzU2ZSVnNXSkJpNTV1cG9BSXU2eHpUOXctVHp2MXpFdjNOa2E5T20zQ1hVOVE4Qmx2enZSZ0RzcWRjMm54eDI0QXNUbmU4RmlPdXJpU3Zib29xcG1hNkt5VEJhcm10MVhFQno3N2s2Yg?oc=5",
+   "data": "2026-11-11T22:16:24Z",
+   "coletado_em": "2026-11-11T23:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "b59f8cfcecf1",
    "titulo": "Discussão entre pai, filho e funcionários do Transcol termina em pancadaria em Vila Velha",
@@ -453,6 +506,20 @@
    "triagem": 8,
    "temas": [
     "pessoal"
+   ]
+  },
+  {
+   "id": "dfdd7a572f17",
+   "titulo": "Receita quer ampliar em 30 dias prazo para pagamento da CBS da reforma tributária",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQX2J1LURzQk1NbFQxZC1zaXE0eUpwMzNQZXRaNlkxbTRrUVpzZDE0NXMzMWlKNUltMWxwTzhpaVpmeUh0dV9LYUhicllMcnZMTm8xZ3Vkc0xQcDl0WXMwcThEd3V5ZlR0M2FSbUhfd1l4MnBZV1BBRU45V2wwaFZYQlA5N1U1M290c0VseTlxblpUR08taDBlSGU1b3RDTmVHS0x1Q0VndlRzcnNDYlJxclY4S3lCNE52Y25heTRTZlhVYjdESjZ1dzZxQ3HSAcwBQVVfeXFMUF9idS1Ec0JNTWxUMWQtc2lxNHlKcDMzUGV0WjZZMW00a1Fac2QxNDVzMzFpSjVJbTFscE84aWlaZnlIdHVfS2FIYnJZTHJ2TE5vMWd1ZHNMUHA5dFlzMHE4RHd1eWZUdDNhUm1IX3dZeDJwWVdQQUVOOVdsMGhWWEJQOTdVNTNvdHNFbHk5cW5aVEdPLWgwZUhlNW90Q05lR0tMdUNFZ3ZUc3JzQ2JScXJWOEt5QjROdmNuYXk0U2ZYVWI3REo2dXc2cUNx?oc=5",
+   "data": "2026-11-11T20:33:54Z",
+   "coletado_em": "2026-11-11T23:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
    ]
   },
   {
