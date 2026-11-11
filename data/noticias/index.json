@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-11",
- "gerado_em": "2026-11-11T12:17:17Z",
+ "gerado_em": "2026-11-11T13:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 29,
-   "aceitos": 18,
+   "lidos": 30,
+   "aceitos": 19,
    "possiveis": 0
   },
   {
@@ -33,8 +33,8 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 9,
+   "lidos": 12,
+   "aceitos": 12,
    "possiveis": 0
   },
   {
@@ -65,8 +65,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 5,
+   "lidos": 7,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
@@ -74,7 +74,7 @@
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 4,
+   "aceitos": 5,
    "possiveis": 1
   },
   {
@@ -89,17 +89,17 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 65,
+   "lidos": 66,
    "aceitos": 2,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 63,
+   "lidos": 61,
    "aceitos": 5,
-   "possiveis": 8
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 4,
+   "lidos": 7,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 11,
+   "lidos": 9,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 28,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 26,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 56,
+   "lidos": 55,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 14,
+   "lidos": 13,
    "aceitos": 8,
    "possiveis": 0
   },
@@ -201,8 +201,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (previdência OR Ipajm OR \"regime próprio\" OR \"contribuição previdenciária\" OR aposentadoria)",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 0,
+   "lidos": 3,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 3,
-   "possiveis": 4
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 3
   },
   {
@@ -278,20 +278,129 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 5,
  "descartes_na_coleta": {
-  "sem_contexto": 337,
-  "excluir": 28,
-  "oficial_sem_tema": 2,
+  "sem_contexto": 334,
+  "excluir": 29,
+  "oficial_sem_tema": 1,
+  "possivel": 30,
   "sem_contexto_com_tema": 8,
   "veiculo_excluido": 28,
-  "possivel": 32,
   "exterior_sem_ancora": 4,
   "outro_estado": 28,
   "sigla_sem_ancora": 9,
-  "veiculo_outra_praca": 2
+  "veiculo_outra_praca": 1
  },
  "itens": [
+  {
+   "id": "4fe5cb11ce53",
+   "titulo": "TCE-ES abre seleção para TI com salário de R$ 17,6 mil",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/oportunidade/2026/11/tce-selecao-ti-salario/",
+   "data": "2026-11-11T13:14:08Z",
+   "coletado_em": "2026-11-11T13:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "78abbec860d1",
+   "titulo": "Pazolini anuncia exoneração de todos os comissionados do Governo do ES",
+   "veiculo": "Aqui Notícias",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOX1hobjY3SjZGSHZ4Y090UzVtdTBNdFpMUjIxQ1VGU2J1RjZQN2ZETFNweGNBbERfdHhvb0NFY1V5QlJKZGNfenZZcXhxSllGcm5fdUQ2YzBlZDV4WVRzazFKelZCb2pIcG5PRE1wcndSNHU1WlJHQldmS3BjSEFFMmtkakdvZVpIak5GTUlnYUs5SFEtTHkyVzQzVjFlTEdjd2tIWUI5aw?oc=5",
+   "data": "2026-11-11T13:02:39Z",
+   "coletado_em": "2026-11-11T13:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador",
+    "pessoal"
+   ]
+  },
+  {
+   "id": "83b42185203d",
+   "titulo": "Deputada federal eleita, Manu articula investimentos com presidente em exercício Geraldo Alckmin",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOaGpDaXJkc3laaUtWRjY0YmZrXzNZRXp0OThTdjRGeDhaTUdpUTFaczhrNHFOaDc2cG5OeFlNaXhUX2xLelg1NGNIYXc0bW5fTUJtRElhekluT0RQUmdVZ2c3bTlvS3NXM0ZNRVV3bHExTkgtaldka2Z1QnpuQ284cXREYkhjLUpMLTBwWGZDck1KRFZqWDctODM0aUVsQU8xM0tmeUJiMXRzT2J4RVZMRExwMG1IbDhrR3A0VA?oc=5",
+   "data": "2026-11-11T12:49:13Z",
+   "coletado_em": "2026-11-11T13:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "1ba409b3cf7a",
+   "titulo": "Antes de assumir o Governo do ES, Lorenzo Pazolini volta à rotina de delegado da Polícia Civil",
+   "veiculo": "rede noticia es",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOYkZwZ3FXM3RLTVNiYXk0T3JWZnEtQVBKWlV4bHFFU0oxUHJzd0lVRXpqNFlldHFKVUYxZmd3T094WDhIWms5NGNXOGxGd0RZOE9WWDZzZ0dSSmk3OGpuemRIdF9YaEtjU1BvVDk0a0g4MGpBZVQ0RHNMMlRCNnNZWkx5djNZQmFGbk1kek1NNDlhcU5QWDVKZ3ZyX1lOLWUxS0thbVRUS2xXRE5xZTdzX3B3Qms4OThD?oc=5",
+   "data": "2026-11-11T12:27:22Z",
+   "coletado_em": "2026-11-11T13:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "3f0c2c139423",
+   "titulo": "Cachoeiro vence prêmio estadual em segurança pública",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQTGE1cG1jYmFVXzNBRjFKemdWLUE0YXlXSnduM2Q4SGdVS1RodTZGMF9TY2x6R0ktRDhUMEM0cGNydjVhc1NyNXVqS0RtSDJiLWpNcDE2T1JaR0R1VUhNUGMycVlMZDRUdUxpRThRdDg1TlpTTUNoMXNOMVJkM3hMUQ?oc=5",
+   "data": "2026-11-11T12:22:33Z",
+   "coletado_em": "2026-11-11T13:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "c2bea5870358",
+   "titulo": "Equipe de transição de Pazolini anuncia exoneração de todos os servidores comissionados",
+   "veiculo": "SiteBarra",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNeWx6TklmdUNQaVBnR1BDMXdyU18zcUwyajA0ellJVFdHWl9mQlhDZDFHb1RBRE1QMXVQdC01d0JialR4UnBHbHNEV3EwdGhNMzk2SWd6Q1J4Q1h3NktyWlZnX2hsYVZxWGhOUmY2VW9UVTk4dXAtMHI3dXZ4UUVrdktzb2RsSzc2aDNMOGExV2dGeHlEbkYweU45amRKVGNQZ3d0cVVHa0J4WG5Qa3lxaDJNd1ZkWkE?oc=5",
+   "data": "2026-11-11T12:19:12Z",
+   "coletado_em": "2026-11-11T13:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao",
+    "governador",
+    "pessoal"
+   ]
+  },
+  {
+   "id": "45271dc190b9",
+   "titulo": "Morre Maria das Graças, ex-servidora da Câmara de Cachoeiro",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOMkRuTUZpQldmMUs5VmpzMFpXeUFOc3VFUEllMW5obFRWSGZPU0liYTlSV0k4cnpJZDU3T1piWFRzMHpEbzF3SlpOYnRTUV80Rm5SYlVXRjVqYVpaV2FTcmQ3bk5WZjFIMi1OYmNzMTE1aENyMlF5S1lIc1F3OFpseFpMZHVLZFpM?oc=5",
+   "data": "2026-11-11T12:17:35Z",
+   "coletado_em": "2026-11-11T13:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "06217e24ca44",
+   "titulo": "Concursos no ES têm vagas abertas no Banestes, câmaras e Idaf",
+   "veiculo": "SiteBarra",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNejQ5ektuLTdFSTF3U3l3QjVlLTVGY0JUZ1pGN1hoY0lXUGFrMzkxTy1tWUhfRlhQelMxUXlHZkEwN2hVdk96QVdrSDhtRkM3cmtFd09wSnF5QkpTRnBnM1BrbmN4UmZTcGpTS1VLUS1UdFNoVEhoQXNuSTNrRGhVclJkVW5HRVVQSllpUE5vd0xlTFU?oc=5",
+   "data": "2026-11-11T12:15:40Z",
+   "coletado_em": "2026-11-11T13:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "ea3c9e847412",
    "titulo": "Orçamento de R$ 36 bilhões entra na reta decisiva na Ales",
@@ -668,6 +777,10 @@
     {
      "veiculo": "SÃO FRANCISCO 24hs",
      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPZzdoWDlGR2NSR29IWlZFNXNONXZ3VVJsNXpiNVZ5b0xPRUZuT1l0WkdxSXVKdGI5cVNpeDBxTFk4aElPbXJYcGZ4cVNFenM2VnlaaDVidUZyaS0xZXlIWmtSSl9ISFM5YlNiMmdIUWNzcnhVX3FQRGJLOFJEQXFFZTdBRll5ZWxEdW1VMloxODFoWHlLbTh1STdaZ1JhSG1jNWJTbFhyc3hRUC1xNnFIaXE2WjlIak4tc2hqd3BuQQ?oc=5"
+    },
+    {
+     "veiculo": "ES Fala",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPLV85bTIwemVKZHR5dDd2Sk1EWFg3dkhIYl9QZGVzNEgxbGdONVJ6NFpaMXJlUFVGTmNxdlFaeTEtUWc4a0lSQ2RtVVdNZm11dmhDUlF5TzlZQ2pVUThENUQtS0tBWWQ5OENVRHVUcjVnakNLcVlUdlBhcEtTbkJERzIzcS1ORWJ0bmRkVndWSC12bG5DOEZTRkZUc290bVFOQWJyclhiWUNwMmNrSFF6Nw?oc=5"
     }
    ],
    "possivel": false,
