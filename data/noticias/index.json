@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-11",
- "gerado_em": "2026-11-11T01:17:13Z",
+ "gerado_em": "2026-11-11T09:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,17 +17,17 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 29,
-   "aceitos": 16,
+   "lidos": 27,
+   "aceitos": 15,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 20,
-   "possiveis": 3
+   "lidos": 27,
+   "aceitos": 21,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 26,
+   "lidos": 27,
    "aceitos": 7,
    "possiveis": 4
   },
@@ -66,14 +66,14 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 8,
-   "aceitos": 8,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 4,
    "possiveis": 1
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 69,
+   "lidos": 65,
    "aceitos": 2,
    "possiveis": 4
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 69,
+   "lidos": 72,
    "aceitos": 5,
-   "possiveis": 8
+   "possiveis": 9
   },
   {
    "fonte": "Google Notícias",
@@ -114,7 +114,7 @@
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
    "lidos": 8,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -130,14 +130,14 @@
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 34,
+   "lidos": 32,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 20,
+   "lidos": 23,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -153,8 +153,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
-   "aceitos": 1,
+   "lidos": 23,
+   "aceitos": 2,
    "possiveis": 3
   },
   {
@@ -169,7 +169,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 1,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -193,15 +193,15 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 16,
-   "aceitos": 10,
+   "lidos": 15,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (previdência OR Ipajm OR \"regime próprio\" OR \"contribuição previdenciária\" OR aposentadoria)",
    "ok": true,
-   "lidos": 1,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 5,
+   "aceitos": 3,
    "possiveis": 3
   },
   {
@@ -218,7 +218,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -242,7 +242,7 @@
    "consulta": "https://g1.globo.com/rss/g1/es/espirito-santo/",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -278,20 +278,49 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 335,
-  "excluir": 33,
+  "sem_contexto": 348,
+  "excluir": 30,
   "possivel": 31,
   "oficial_sem_tema": 2,
-  "sem_contexto_com_tema": 5,
-  "veiculo_excluido": 35,
-  "outro_estado": 31,
-  "caixa_alta": 1,
+  "sem_contexto_com_tema": 8,
+  "veiculo_excluido": 31,
+  "exterior_sem_ancora": 3,
+  "outro_estado": 29,
   "sigla_sem_ancora": 9,
   "veiculo_outra_praca": 3
  },
  "itens": [
+  {
+   "id": "ce1f8e140c60",
+   "titulo": "Concursos no ES: Banestes, câmaras, prefeituras e Idaf pagam salário de até R$ 14 mil; veja como se inscrever",
+   "veiculo": "G1 Espírito Santo",
+   "url": "https://g1.globo.com/es/espirito-santo/concursos-e-emprego/noticia/2026/11/11/concursos-no-es-banestes-camaras-prefeituras-e-idaf-pagam-salario-de-ate-r-14-mil-veja-como-se-inscrever.ghtml",
+   "data": "2026-11-11T07:00:01Z",
+   "coletado_em": "2026-11-11T09:17:15Z",
+   "outras": [
+    {
+     "veiculo": "G1",
+     "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxQM0ozRDF6ZWpTZUtUUXp1STk5MFF1VHJEeHZubTh4YjJOd3JvaVFZTkkwYjF5bnlqdTBhNE1ueGpJUEx4R28wcVVXSkJmX2dEUEV3R0FXYUZPelJqdnhQYm9TczIxcEV2b2xvVUlOU3hrTnRQbWVzRmJyZG9KSU8xUW4ycEpuZDNNUy1rQXhXZnc2WU1yRWxhb0c3NUxERjhibGpOcGpHNVhMQ3ZfSEF2QVl0TWU2T1BVQUg3SHM1dFpxVlBJZUJOQktBR3I3YlRwRUhxU0paeF96VXhpZkZSV21YOVdnOFZfS0FOUHI0ck9vLTNXRjI1X3NsNWFzN1ZNdkpidTExXzRqYms2YTZYTWhaMms0VGlwbHpBWWlnU2tjSHFpUmfSAaYCQVVfeXFMUDNKM0QxemVqU2VLVFF6dUk5OTBRdVRyRHh2bm04eGIyTndyb2lRWU5JMGIxeW55anUwYTRNbnhqSVBMeEdvMHFVV0pCZl9nRFBFd0dBV2FGT3pSanZ4UGJvU3MyMXBFdm9sb1VJTlN4a050UG1lc0ZicmRvSklPMVFuMnBKbmQzTVMta0F4V2Z3NllNckVsYW9HNzVMREY4YmxqTnBqRzVYTEN2X0hBdkFZdE1lNk9QVUFIN0hzNXRacVZQSWVCTkJLQUdyN2JUcEVIcVNKWnhfelV4aWZGUldtWDlXZzhWX0tBTlByNHJPby0zV0YyNV9zbDVhczdWTXZKYnUxMV80amJrNmE2WE1oWjJrNFRpcGx6QVlpZ1NrY0hxaVJn?oc=5"
+    }
+   ],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "7728976cf792",
+   "titulo": "Governo de Pernambuco prorroga inscrições para Carnaval e São João 2027",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQMUtqS2hJYUxFLTdEOEZkeUE0OHZveVpLNUY2Y0x6U1AtUG0ydG41UlIzZFQ2QnYxUm1pUG1HckE4VFEwUDc0azczNUI2S05PeEVQZ3dKNHhpLVB4WUQ4R2VNOGJEOEY2VUtwOWI2WXhHcUpxQXNYVXk5MlFGb3BQY3hNd3hDYWg3UkQxOERxZFR2d2hlN25rVm5mNmtPQmdoa09kcUVaY3RMVEliWWM1LThKQlFycGdLdFVqV1E0M2ZtaGI20gHMAUFVX3lxTE1fTDFpVC11aU9vYWM4YlFjYWhsWThHS0dPNDdWSThPb0h1LUMzWnF5bmZESHRjYzVpMWh1R1JnMWpBTW85NWlSTGJsZVBGaUhLcVFvcTZOc0pwLUx1UTNjLUhMdzVIX2lhenFXSHJ3UnNpTkZiOFN2ZFFTVFdCdnBRQmNSMkxSeFptOGRnRzJia2VpekVLdUxzeUJDWEdGQWd2Y2JZQlBiOFlIWnFITmlnSEwtOVZYSXlJOTk4S2pSQXJ0bDM0dm8xeDhCSw?oc=5",
+   "data": "2026-11-11T00:00:20Z",
+   "coletado_em": "2026-11-11T09:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "004c7c399fbc",
    "titulo": "Pazolini anuncia exoneração de todos os nomeados de Casagrande e Ferraço para colocar os seus",
@@ -299,6 +328,21 @@
    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFB1VlozYV9jNlRPMVlSbi1kRWh2QWRWT0FJa3JFQk10ajgzY1JPaWxZZEsxVWdpZXdmTGZ2R0FRY0FiSmw5dXpjeWdrMkN0THJVUXg1cG1FcnJQMjFWeVVEY240SHNmbGlmb1M4LU9sOU5XczBsbFlnazFQNA?oc=5",
    "data": "2026-11-10T23:30:00Z",
    "coletado_em": "2026-11-11T00:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador",
+    "pessoal"
+   ]
+  },
+  {
+   "id": "f76b5c58455b",
+   "titulo": "Espírito Santo: Pazolini exonera comissionados em janeiro; entenda mudanças",
+   "veiculo": "Diário do Estado",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOTUJnSU1ITC1KOHVlUHJ6cXlMRUFnNTVmQkY4Y2NpaEQ0SGNfendxTUFISWNHNjhoSFJKNjRBSG9sajI3TFlVS0UyQVE5M2tOM29LZ0s3bU1ucVZpNEl5aG1FYjRRTGZvVzJUVzBuM2lCSlpqZWMySFhNNk52Y3dHSEY3NlFzQlRhZFZrNTIwQVBSdlVhVU1rWFVPOHFlLTFFMVBucGlDeDd3UQ?oc=5",
+   "data": "2026-11-10T23:02:23Z",
+   "coletado_em": "2026-11-11T09:17:15Z",
    "outras": [],
    "possivel": false,
    "triagem": 8,
