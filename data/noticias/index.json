@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-11",
- "gerado_em": "2026-11-11T19:17:18Z",
+ "gerado_em": "2026-11-11T20:17:18Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 35,
-   "aceitos": 23,
+   "lidos": 36,
+   "aceitos": 24,
    "possiveis": 0
   },
   {
@@ -26,15 +26,15 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 25,
-   "aceitos": 21,
+   "aceitos": 20,
    "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 13,
-   "aceitos": 13,
+   "lidos": 12,
+   "aceitos": 12,
    "possiveis": 0
   },
   {
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 27,
+   "lidos": 26,
    "aceitos": 11,
    "possiveis": 1
   },
@@ -65,16 +65,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 0,
-   "aceitos": 0,
+   "lidos": 10,
+   "aceitos": 10,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 4,
+   "lidos": 8,
+   "aceitos": 5,
    "possiveis": 2
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 55,
+   "lidos": 56,
    "aceitos": 3,
    "possiveis": 6
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 63,
+   "lidos": 59,
    "aceitos": 5,
-   "possiveis": 6
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 23,
    "aceitos": 0,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 24,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 1,
+   "lidos": 27,
+   "aceitos": 2,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 59,
+   "lidos": 61,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -193,16 +193,16 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 15,
+   "lidos": 16,
    "aceitos": 6,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (previdência OR Ipajm OR \"regime próprio\" OR \"contribuição previdenciária\" OR aposentadoria)",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 2,
+   "lidos": 4,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -210,8 +210,8 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
-   "possiveis": 3
+   "aceitos": 2,
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -219,15 +219,15 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
-   "possiveis": 3
+   "aceitos": 2,
+   "possiveis": 1
   },
   {
    "fonte": "ES Hoje",
@@ -251,7 +251,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 3,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "A Gazeta",
@@ -267,32 +267,140 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Sim Notícias",
    "consulta": "https://simnoticias.com.br/vinicius-baptista/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 5,
  "descartes_na_coleta": {
-  "sem_contexto": 312,
-  "oficial_sem_tema": 2,
-  "possivel": 31,
+  "sem_contexto": 311,
+  "possivel": 32,
+  "oficial_sem_tema": 1,
   "veiculo_excluido": 33,
   "exterior_sem_ancora": 6,
   "sem_contexto_com_tema": 11,
-  "excluir": 24,
-  "outro_estado": 30,
+  "excluir": 21,
+  "outro_estado": 29,
   "caixa_alta": 1,
-  "sigla_sem_ancora": 7,
+  "sigla_sem_ancora": 6,
   "veiculo_outra_praca": 4
  },
  "itens": [
+  {
+   "id": "a5aa27ac4e9f",
+   "titulo": "Governo vai enviar nesta quarta projeto com medidas de ajuste fiscal de até R$ 60 bi em 2027",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/governo-vai-enviar-nesta-quarta-projeto-com-medidas-de-ajuste-fiscal-de-ate-r-60-bi-em-2027/",
+   "data": "2026-11-11T20:12:35Z",
+   "coletado_em": "2026-11-11T20:17:18Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "ed5afeb668c0",
+   "titulo": "Orçamento de Vitória vira refém da disputa pela Câmara",
+   "veiculo": "Sim Notícias",
+   "url": "https://simnoticias.com.br/vinicius-baptista/orcamento-de-vitoria-vira-refem-da-disputa-pela-camara/",
+   "data": "2026-11-11T19:58:19Z",
+   "coletado_em": "2026-11-11T20:17:18Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "2ce94f329072",
+   "titulo": "Plenário aprova rota turística estadual voltada às festividades do Divino Espírito Santo em SC",
+   "veiculo": "Assembleia Legislativa do Estado de Santa Catarina",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcmg0dTRUaGlyWi1MaFhGek9Idm5xSGJUanhQVjY4cGhCcmhfRHZLTkoyWVdVYzJGMWVIbDZQSTNDdzJEVU1kQ2M5MV9mem90OEViSWw3cnRIUERqMnhTWFMwZVFHLVdvbTk4NV9lZDVzSHJLRU9DSU1wQVlFTEwzajlrRjBkM0lTcXM1aUYzdWFKbGhkczg1SkNYVDNjb0ozUDhuLXg1U1h0N3BGeHFVUm5mUnlSdHY3c1BKRWVmTlg1b0I3ZDl4QktsdkVkUmZ3WXlsdDZB?oc=5",
+   "data": "2026-11-11T19:52:30Z",
+   "coletado_em": "2026-11-11T20:17:18Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "6bcf5f7e5d12",
+   "titulo": "Sob sigilo, cúpula do MPES articula criação de centenas de cargos com altos salários",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/mpes-criacao-de-cargos/",
+   "data": "2026-11-11T19:28:44Z",
+   "coletado_em": "2026-11-11T20:17:18Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "47e0b11275d9",
+   "titulo": "MPES trabalha em projeto para criação de cargos",
+   "veiculo": "ES Hoje",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1sLUJiVmJEMGRjeVV6TVhlaTFCWkMzaHE5Q2J2cVcwQ1J2ZDVVOTRpNEFfYlphaER4SmR6YVhHTEl6QWhoMmFVdHQyZEVEOW1IZzM3TDNPYjhSbVItd3dNdUZmaGF5MEloTzBwbG1ucw?oc=5",
+   "data": "2026-11-11T19:28:44Z",
+   "coletado_em": "2026-11-11T20:17:18Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "b002fa00ea48",
+   "titulo": "Assembleia do ES conquista Selo Diamante pelo 3º ano seguido",
+   "veiculo": "Sim Notícias",
+   "url": "https://simnoticias.com.br/politica/assembleia-do-es-conquista-selo-diamante-pelo-3o-ano-seguido/",
+   "data": "2026-11-11T19:28:11Z",
+   "coletado_em": "2026-11-11T20:17:18Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "3388a995158b",
+   "titulo": "Assembleia Legislativa do ES é eleita a mais transparente do Brasil",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/assembleia-legislativa-do-es-e-eleita-a-mais-transparente-do-brasil/",
+   "data": "2026-11-11T19:24:30Z",
+   "coletado_em": "2026-11-11T20:17:18Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "782e8b8fe405",
+   "titulo": "Assembleia Legislativa do ES conquista Selo Diamante de Transparência pelo terceiro ano consecutivo",
+   "veiculo": "O Singular Portal de Notícias",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPRUlWWUlmRDRUU2pMeFk0WjB2bGFuNWNZbmMzek1QTmJSQTBZck1PcE93c2ZlZGVrZjV2RXRhbzNwNVVFY3IzVXVvRnFoN0JGZ05INXF1S3hiYi05Yi1URkEwU1MxSkxIZFBfUzFkbTJQLUJERVI0OGZSUzJmYnRmZWExRmJNa0NDVEVTaE02bDRiZHdaNnRNTllxUFhBdW1Yd21pU09pWWhVY2piUS1ka3ZZdFdFTkFud1dtQ08yZGUyLTFMM1czYVVaN1k0MVVobE94NA?oc=5",
+   "data": "2026-11-11T19:21:04Z",
+   "coletado_em": "2026-11-11T20:17:18Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "controle"
+   ]
+  },
   {
    "id": "8ff4baa26860",
    "titulo": "Edital do concurso Banestes traz 645 vagas e salários de até R$ 6 mil",
@@ -345,6 +453,20 @@
    "triagem": 8,
    "temas": [
     "pessoal"
+   ]
+  },
+  {
+   "id": "282c67709721",
+   "titulo": "Reforma tributária: governo apresentará texto para facilitar adaptação",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNRHB3X2w5Y1l6UEtfWjVPb2RtVkZoMkxXbmJoZUtJV2NCZ0dvQ2N5aVlqY3dOWXlGYnJoWFlDQkNLUVpRckhLRkxQMkdJWkcwQ3h2M2MyZ2NQbjdfOVkyZHpnTnJjX1ZVejd6VlNCTzQyYlFCTjIxdDRpZVYxZHZ6WkhCZGtNbmZfRFFUSFZ6QUdidmU2Vy1sSVBR?oc=5",
+   "data": "2026-11-11T17:08:32Z",
+   "coletado_em": "2026-11-11T20:17:18Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
    ]
   },
   {
