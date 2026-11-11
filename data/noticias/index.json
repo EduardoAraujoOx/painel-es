@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-11",
- "gerado_em": "2026-11-11T21:17:31Z",
+ "gerado_em": "2026-11-11T22:17:17Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -41,16 +41,16 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 6,
+   "lidos": 7,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 22,
-   "aceitos": 9,
+   "lidos": 24,
+   "aceitos": 10,
    "possiveis": 1
   },
   {
@@ -65,8 +65,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 11,
-   "aceitos": 11,
+   "lidos": 10,
+   "aceitos": 10,
    "possiveis": 0
   },
   {
@@ -74,14 +74,14 @@
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 4,
+   "aceitos": 5,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 58,
+   "lidos": 56,
    "aceitos": 5,
-   "possiveis": 6
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 24,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -161,16 +161,16 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 64,
-   "aceitos": 3,
+   "lidos": 69,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 1,
+   "lidos": 6,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -195,7 +195,7 @@
    "ok": true,
    "lidos": 16,
    "aceitos": 7,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 4,
    "possiveis": 3
   },
   {
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -234,8 +234,8 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 4,
-   "possiveis": 3
+   "aceitos": 5,
+   "possiveis": 2
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -250,7 +250,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
@@ -278,20 +278,98 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 7,
+ "novos_na_coleta": 5,
  "descartes_na_coleta": {
-  "sem_contexto": 305,
-  "possivel": 32,
-  "veiculo_excluido": 37,
+  "sem_contexto": 307,
+  "possivel": 29,
+  "veiculo_excluido": 40,
   "exterior_sem_ancora": 6,
-  "sem_contexto_com_tema": 10,
-  "excluir": 23,
-  "outro_estado": 29,
+  "sem_contexto_com_tema": 8,
+  "excluir": 20,
+  "outro_estado": 28,
   "caixa_alta": 2,
   "sigla_sem_ancora": 6,
-  "veiculo_outra_praca": 3
+  "veiculo_outra_praca": 4
  },
  "itens": [
+  {
+   "id": "b59f8cfcecf1",
+   "titulo": "Discussão entre pai, filho e funcionários do Transcol termina em pancadaria em Vila Velha",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/policia/briga-entre-pai-filho-e-funcionarios-do-transcol-termina-em-briga-em-vila-velha-veja-video/",
+   "data": "2026-11-11T22:09:33Z",
+   "coletado_em": "2026-11-11T22:17:17Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "80e794dd8277",
+   "titulo": "Gêmea reprovada na etapa de cotas raciais no concurso da Polícia Civil do ES reverte resultado",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/concursos-e-empregos/gemea-reprovada-na-etapa-de-cotas-raciais-no-concurso-da-policia-civil-do-es-reverte-resultado-1126",
+   "data": "2026-11-11T21:56:46Z",
+   "coletado_em": "2026-11-11T22:17:17Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "b8dbd7b2fef3",
+   "titulo": "Banestes abre concurso com mais de 600 vagas para cadastro de reserva no ES",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/economia/2026/11/banestes-abre-concurso-es/",
+   "data": "2026-11-11T21:54:36Z",
+   "coletado_em": "2026-11-11T22:17:17Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "8505a79376ce",
+   "titulo": "Concurso Banestes: novos editais oferecem 645 vagas para níveis médio e superior",
+   "veiculo": "Terra",
+   "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQb3VUSzZzclhpSUh0eWJLMll6dFlKS1lPbEFrRFlSWnZzTUVhcm1WNWFjNHlMWVpCcFVNeEVTU2J5dG1rX1BONzhTLUY0a1dUTzFqUUt0ZkxudldzZEs2Z0pURm5LRVVZMWxsRXM3MVR2a2VacnBwQ254NmZwV1JnamxfUHRhdnY0eTlpY3dUUG85TFFyVVdGU2tXUTNuZ0NJSHhrVzJiSllpVUo3Vl9DdWlRSUhVWHBoT2RZMlV2NVhSY0tvQ3IxWWxzX284S051bk1CV3ltRnlOcURzYkJGQXJ1UEZGemNORi1vMFY3NVhoNGZxQjc5RDY1dGRfWjdTeXU3c0Y3eFE?oc=5",
+   "data": "2026-11-11T21:41:11Z",
+   "coletado_em": "2026-11-11T22:17:17Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "b99c703163ec",
+   "titulo": "MP investiga contrato de R$ 58,5 milhões do Detran para instalação de totens de monitoramento em Rondônia",
+   "veiculo": "Eu Ideal",
+   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQa3R0dGNpd1FiSVZDNHczLVZnNTdGSzd1MzlWMnB2aEd5YncwNC1sZjlyTVFlR1JncllQV3ptMUg5akxNZVp6VC11R281R2p6VVJ6V2EtUjhSTDZCYkdRWUZfdzRWOHBBaktVcU1jZUNXbkJZQWM2UDZGbEEtWWh4cml5ZGNxN19nSjdpZFRmeUtob1pIdFRST3BHck5yeWRrX3hGc21vemIzTk9XWXFWMzNBaFhmRWZSN2Rmald4MEFWUlpZMVFsVENON3pUSlVORmZuNVhKVHNEVnZEQU56emV5UmJ2Y0t3U2pfR1dFX2dFQmZ6U0NJUFhn?oc=5",
+   "data": "2026-11-11T21:41:00Z",
+   "coletado_em": "2026-11-11T22:17:17Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "4babca1027c1",
+   "titulo": "Governo do ES ganha selo diamante de transparência pública",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/politica/governo-do-es-ganha-selo-diamante-de-transparencia-publica-1126",
+   "data": "2026-11-11T21:34:00Z",
+   "coletado_em": "2026-11-11T22:17:17Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "66db5768221f",
    "titulo": "Servidor do Idaf é o oitavo integrante da equipe de transição do futuro governador, Pazolini",
@@ -521,6 +599,21 @@
    "triagem": 8,
    "temas": [
     "controle"
+   ]
+  },
+  {
+   "id": "dafa39d4b65f",
+   "titulo": "Reforma tributária: governo propõe regra de transição na CBS",
+   "veiculo": "ES Brasil",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5BY2RBbEVDVWpXbXJ5cktGeVJIQlNISTFIQkR6Q0pSTTBMVUZyVnhSSUtXeTRIU25XWmpHbllqbWhWVWpZWmNPdWExd2lnYVZydmZaRXktS0ZpRjFDeHduSm03dVEzQ3QwMVN6dk02V2o?oc=5",
+   "data": "2026-11-11T18:59:00Z",
+   "coletado_em": "2026-11-11T22:17:17Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "transicao",
+    "financas"
    ]
   },
   {
@@ -2175,7 +2268,12 @@
    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNaGZuNkZ1eEpwU05hdndLREpPbVZfOWcwdGFtZnhWS0JmLUFGQU00RGt6NF9SenlpU2h5Y2VsNDV2NWhiNVZDeEdwc2tnQ2owWnFLSy1SbzFXcVJSLUdQQXdjdXhuQVI1Q1cyY29hTGxuM25uaVRnQ1lVZlRuQmt5bQ?oc=5",
    "data": "2026-11-09T21:38:00Z",
    "coletado_em": "2026-11-09T22:17:14Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Prensa Mercosur",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPb3hSXzA5UE5UNWYtc2N4TXBnSkxUc2JNalNwTHljM2ZHTTRWWi0yOS1GWmVWcWpkeG56MVZZekN6OE9CUEtsbGFyaTFzMHRFSm10dk5HZ01ZdlNSTU44T252WjN5ZXhOX2RIeW1lVk16ci1OblpuNE9ySThLZldFYjFiMEZBSUs5b1RUREkyc1UyY3lyUUFsNTFnQ3QxTU1GLWRva01LZWdJd1lyQ01DVTA5OGxxZ2RJYS04ZVVaYTlCb1E?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 8,
    "temas": [
