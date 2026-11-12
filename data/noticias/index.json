@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-12",
- "gerado_em": "2026-11-12T20:17:15Z",
+ "gerado_em": "2026-11-12T21:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -33,8 +33,8 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 12,
-   "aceitos": 12,
+   "lidos": 13,
+   "aceitos": 13,
    "possiveis": 0
   },
   {
@@ -49,8 +49,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 20,
-   "aceitos": 9,
+   "lidos": 21,
+   "aceitos": 10,
    "possiveis": 2
   },
   {
@@ -73,15 +73,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 7,
-   "possiveis": 1
+   "lidos": 10,
+   "aceitos": 6,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 9,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 58,
+   "lidos": 62,
    "aceitos": 4,
    "possiveis": 6
   },
@@ -97,8 +97,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 52,
-   "aceitos": 4,
+   "lidos": 54,
+   "aceitos": 3,
    "possiveis": 5
   },
   {
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 11,
+   "lidos": 10,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -147,13 +147,13 @@
    "ok": true,
    "lidos": 20,
    "aceitos": 2,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 28,
    "aceitos": 1,
    "possiveis": 10
   },
@@ -161,8 +161,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 78,
-   "aceitos": 15,
+   "lidos": 77,
+   "aceitos": 14,
    "possiveis": 0
   },
   {
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 3,
+   "lidos": 6,
+   "aceitos": 1,
    "possiveis": 3
   },
   {
@@ -218,15 +218,15 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
-   "possiveis": 2
+   "aceitos": 3,
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 3,
+   "aceitos": 4,
    "possiveis": 2
   },
   {
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
+   "aceitos": 3,
    "possiveis": 2
   },
   {
@@ -274,25 +274,94 @@
    "consulta": "https://simnoticias.com.br/vinicius-baptista/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 5,
  "descartes_na_coleta": {
-  "sem_contexto": 300,
-  "possivel": 33,
+  "sem_contexto": 305,
+  "possivel": 32,
   "veiculo_excluido": 38,
   "sem_contexto_com_tema": 7,
   "generico_sem_ancora": 3,
   "exterior_sem_ancora": 7,
   "excluir": 14,
-  "outro_estado": 21,
-  "caixa_alta": 1,
-  "sigla_sem_ancora": 11,
-  "veiculo_outra_praca": 7
+  "outro_estado": 18,
+  "caixa_alta": 2,
+  "veiculo_outra_praca": 9,
+  "sigla_sem_ancora": 12
  },
  "itens": [
+  {
+   "id": "7c56d9a872e2",
+   "titulo": "Imposto do Pecado: reforma pode encarecer cachaça de alambique no ES",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/imposto-do-pecado-reforma-pode-encarecer-cachaca-de-alambique-no-es/",
+   "data": "2026-11-12T21:11:19Z",
+   "coletado_em": "2026-11-12T21:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "15506d16828a",
+   "titulo": "Quarta sessão para votar orçamento de Vitória é adiada por falta de vereadores",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/quarta-sessao-para-votar-orcamento-de-vitoria-e-adiada-por-falta-de-vereadores/",
+   "data": "2026-11-12T21:00:05Z",
+   "coletado_em": "2026-11-12T21:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "1dedd1f687ec",
+   "titulo": "Drogômetro: Detran-ES apresenta equipamento e dá passo para iniciar uso em blitz",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/transito/drogometro-detran-es-apresenta-equipamento-e-da-passo-para-iniciar-uso-em-blitz/",
+   "data": "2026-11-12T20:57:33Z",
+   "coletado_em": "2026-11-12T21:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "725a02ac9464",
+   "titulo": "Ex-secretário de Segurança de Vitória é o novo integrante da equipe de transição de Pazolini",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/ex-secretario-de-seguranca-de-vitoria-e-o-novo-integrante-da-equipe-de-transicao-de-pazolini/",
+   "data": "2026-11-12T20:53:56Z",
+   "coletado_em": "2026-11-12T21:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "ace63cf3461b",
+   "titulo": "Ângela Gomes expõe 50 anos de arte no Palácio Anchieta",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/entretenimento/cultura/2026/11/angela-gomes-expoe-50-anos-de-arte-no-palacio-anchieta/",
+   "data": "2026-11-12T20:43:42Z",
+   "coletado_em": "2026-11-12T21:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "e1f43412de99",
    "titulo": "Imóvel transferido como venda pode entrar na divisão da herança",
@@ -501,6 +570,18 @@
    "temas": [
     "controle"
    ]
+  },
+  {
+   "id": "3a2ebcb51e8b",
+   "titulo": "Bahia acumula maior crescimento no turismo brasileiro | SECOM - Secretaria de Comunicação Social",
+   "veiculo": "ba.gov.br",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOVGRqLW1PX1NEMGNKRnRvN2sxcGRGak1HTWF4dXYtTzlWblZpQ3Ewcl9PdGowdUNzaVUtb0hHUGpFVDg2WjZxVlFWVzY4V2N0NXROS1JWeVFNbFVhYTg2TFRycUNXRW5Gc0stbzAtU2MyUjZsWmlxMzlSakVXWmstTlVHaEcxN0JiUnphbHh6MTRpbUJQdVFHRDRoRHpHdWZHc2txWlRNTmFFaWZLaWZPVw?oc=5",
+   "data": "2026-11-12T16:42:44Z",
+   "coletado_em": "2026-11-12T21:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
   },
   {
    "id": "80134545779f",
