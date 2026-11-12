@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-12",
- "gerado_em": "2026-11-12T19:17:17Z",
+ "gerado_em": "2026-11-12T20:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 32,
+   "lidos": 31,
    "aceitos": 19,
    "possiveis": 0
   },
@@ -25,8 +25,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 24,
-   "aceitos": 18,
+   "lidos": 25,
+   "aceitos": 19,
    "possiveis": 2
   },
   {
@@ -49,15 +49,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 21,
-   "aceitos": 10,
+   "lidos": 20,
+   "aceitos": 9,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 4,
+   "lidos": 3,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 56,
+   "lidos": 58,
    "aceitos": 4,
    "possiveis": 6
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 47,
+   "lidos": 52,
    "aceitos": 4,
    "possiveis": 5
   },
@@ -130,14 +130,14 @@
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
    "lidos": 11,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 27,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 19,
+   "lidos": 20,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 27,
    "aceitos": 1,
    "possiveis": 10
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 80,
+   "lidos": 78,
    "aceitos": 15,
    "possiveis": 0
   },
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -234,8 +234,8 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 2,
-   "possiveis": 0
+   "aceitos": 1,
+   "possiveis": 2
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -278,21 +278,77 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 298,
-  "possivel": 29,
-  "veiculo_outra_praca": 5,
-  "veiculo_excluido": 40,
-  "sem_contexto_com_tema": 5,
+  "sem_contexto": 300,
+  "possivel": 33,
+  "veiculo_excluido": 38,
+  "sem_contexto_com_tema": 7,
   "generico_sem_ancora": 3,
-  "exterior_sem_ancora": 6,
+  "exterior_sem_ancora": 7,
   "excluir": 14,
-  "outro_estado": 25,
+  "outro_estado": 21,
   "caixa_alta": 1,
-  "sigla_sem_ancora": 11
+  "sigla_sem_ancora": 11,
+  "veiculo_outra_praca": 7
  },
  "itens": [
+  {
+   "id": "e1f43412de99",
+   "titulo": "Imóvel transferido como venda pode entrar na divisão da herança",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/economia/2026/11/imovel-divisao-da-heranca/",
+   "data": "2026-11-12T19:54:24Z",
+   "coletado_em": "2026-11-12T20:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "3621970fffbd",
+   "titulo": "Dino mantém prazo inicial da 5×2, mas flexibiliza regra de transição",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/dino-mantem-prazo-inicial-da-5x2-mas-flexibiliza-regra-de-transicao/",
+   "data": "2026-11-12T19:52:30Z",
+   "coletado_em": "2026-11-12T20:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "81810c8bc365",
+   "titulo": "Argentina renova contrato com técnico Lionel Scaloni até 2030",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/esportes/2026/11/argentina-renova-contrato-com-tecnico-lionel-scaloni-ate-2030/",
+   "data": "2026-11-12T19:43:20Z",
+   "coletado_em": "2026-11-12T20:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "ff23983220c3",
+   "titulo": "Aposentadoria pelo INSS muda em janeiro: quem completar os requisitos até dezembro pode manter as regras atuais",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/aposentadoria-pelo-inss-muda-em-janeiro-quem-completar-os-requisitos-ate-dezembro-pode-manter-as-regras-atuais/",
+   "data": "2026-11-12T19:19:00Z",
+   "coletado_em": "2026-11-12T20:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "0395ce38a370",
    "titulo": "MPES abre vagas de estágio com bolsas de até R$ 1,9 mil em Vitória",
@@ -340,7 +396,12 @@
    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOT21TMl9Ga0Nld2tUZmloaXJmc3QxLTRHUGozZnJMVDUwYVlKZFNSU1RXbk91SmlsWlhkX01FVXRNSmtFTGNXUENmQWxZSDJ1akMyTEpnbnpxbm1GdU1tNmNTX24zeF9rUk9DVnU2c0pKbC1USkt0aEYzbTRUVklmWFBPZHJJOUFtSy1nZmtmT3lpVnRCUmNDSEUyYlhoSWtNSllzUFdmbC1kb3RKQWNNclVOYw?oc=5",
    "data": "2026-11-12T18:34:26Z",
    "coletado_em": "2026-11-12T19:17:17Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Prensa Mercosur",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOd2lKYXlMLWlpUzVUbWVEeV9WdDhSWXFCenZHZjFBM19OS3dVa1NUQ3hpUnIzLVE0RjVJb3d0aXk5Z0w2MkYtUmgwOWdRVFhrbE0yX0o4R0ZtcnJ1VUphZk1wczVoZlQ3VTByR1RJSlBpVmNGbHFTYXJNaXlpMVFyelBnSUhwTVNfT3d6THFlbzlKYktEREY5aXBydw?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 8,
    "temas": []
