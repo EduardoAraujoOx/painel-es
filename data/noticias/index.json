@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-12",
- "gerado_em": "2026-11-12T01:17:14Z",
+ "gerado_em": "2026-11-12T07:12:31Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 24,
-   "aceitos": 21,
+   "aceitos": 22,
    "possiveis": 1
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 57,
+   "lidos": 54,
    "aceitos": 5,
    "possiveis": 5
   },
@@ -115,7 +115,7 @@
    "ok": true,
    "lidos": 8,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 27,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 23,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -155,7 +155,7 @@
    "ok": true,
    "lidos": 27,
    "aceitos": 1,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -169,16 +169,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 2,
+   "lidos": 7,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 5,
+   "lidos": 6,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -201,8 +201,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (previdência OR Ipajm OR \"regime próprio\" OR \"contribuição previdenciária\" OR aposentadoria)",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 0,
+   "lidos": 5,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -211,14 +211,14 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 4,
-   "possiveis": 5
+   "possiveis": 4
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -234,8 +234,8 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 5,
-   "possiveis": 2
+   "aceitos": 6,
+   "possiveis": 1
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -278,21 +278,35 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 305,
-  "possivel": 28,
-  "sem_contexto_com_tema": 9,
-  "veiculo_excluido": 44,
+  "sem_contexto": 300,
+  "possivel": 27,
+  "sem_contexto_com_tema": 8,
+  "veiculo_excluido": 47,
   "generico_sem_ancora": 1,
   "exterior_sem_ancora": 5,
-  "excluir": 19,
-  "outro_estado": 27,
+  "excluir": 18,
+  "outro_estado": 24,
   "caixa_alta": 2,
-  "sigla_sem_ancora": 8,
+  "sigla_sem_ancora": 7,
   "veiculo_outra_praca": 3
  },
  "itens": [
+  {
+   "id": "67253edd2873",
+   "titulo": "Pazolini acena à indústria capixaba com controle fiscal, atração de investimentos e portas abertas no Palácio Anchieta",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/economia/economia-e-mercado/2026/11/pazolini-acena-a-industria-capixaba-com-controle-fiscal-atracao-de-investimentos-e-portas-abertas-no-palacio-anchieta/",
+   "data": "2026-11-12T03:00:23Z",
+   "coletado_em": "2026-11-12T07:12:31Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "aa2c0a2a5add",
    "titulo": "Gêmea reverte reprovação em cotas raciais de concurso da polícia",
@@ -373,6 +387,21 @@
    "possivel": false,
    "triagem": 8,
    "temas": []
+  },
+  {
+   "id": "059479f783a1",
+   "titulo": "Pazolini anuncia que vai exonerar todos os comissionados do ES em 6 de janeiro",
+   "veiculo": "O Cafezinho",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZ2lySkh4V3VCN3RlQm45U2RXRmZLeWhyOENDWm5kZ3pXZGctRlNXcEhnSEZTSHJlRjAwdzdqY21qWVZEQ2JKOU5kdGhZMEpOQjhRZC1faVVGekplZjF3S2dvUm9oM3FHVHQ0amFVQldtMXh6YlpZeDJNcUNSUVdlZll3dVRpSk5PQXZKeXJMdF9jY2ZJR2o2WjZQUkFQU29ibUgybG43V2FUemtUTElkeDY4cGZWdk9PbW9lOWV30gG-AUFVX3lxTE9naXJKSHhXdUI3dGVCbjlTZFdGZkt5aHI4Q0NabmRneldkZy1GU1dwSGdIRlNIcmVGMDB3N2pjbWpZVkRDYko5TmR0aFkwSk5COFFkLV9pVUZ6SmVmMXdLZ29Sb2gzcUdUdDRqYVVCV20xeHpiWll4Mk1xQ1JRV2VmWXd1VGlKTk9Bdkp5ckx0X2NjZklHajZaNlBSQVBTb2JtSDJsbjdXYVR6a1RMSWR4NjhwZlZ2T09tb2U5ZXc?oc=5",
+   "data": "2026-11-11T23:25:00Z",
+   "coletado_em": "2026-11-12T07:12:31Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador",
+    "pessoal"
+   ]
   },
   {
    "id": "39733dba404b",
@@ -847,6 +876,18 @@
    "temas": [
     "pessoal"
    ]
+  },
+  {
+   "id": "047c2b7c19a4",
+   "titulo": "CIB aprova o Plano Estadual de Atenção Oncológica de 2026 do Espírito Santo",
+   "veiculo": "atlaspublico.com.br",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNd2RudHhRSzRNdDlhWGxZdElzaVExRWVJMDJZbmlaWVNtbXNtTHVyQk81QU84Um5KcWNLSlR3Nk1yeVBmbWZ4MGJiZjZRNXoxTEdpUTVaNVFfYVBBb3h1M1FrNDVRVWlXbG1JYnE0azJBV21YMDZkcHI2OG96TFFaSjhQTDVqZjhtV3ktWXhQNDVwWm5uZkFmOGtPQVhqcFBYMWdoVWJNc3lZbXBGdWxGajNB?oc=5",
+   "data": "2026-11-11T17:12:55Z",
+   "coletado_em": "2026-11-12T07:12:31Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
   },
   {
    "id": "282c67709721",

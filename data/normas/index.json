@@ -1,16 +1,20 @@
 {
- "ref": "2026-11-11",
- "gerado_em": "2026-11-11T12:17:49Z",
+ "ref": "2026-11-12",
+ "gerado_em": "2026-11-12T07:13:02Z",
  "desde": "2026-10-04",
  "primeiro_levantamento": "2026-11-05",
  "baseline": false,
  "contagem": {
   "decreto": 12,
   "transicao": 1,
-  "fiscal": 1,
+  "fiscal": 4,
   "lei": 7
  },
- "novos": [],
+ "novos": [
+  "2059561",
+  "2059325",
+  "2059331"
+ ],
  "edicoes_lidas": [
   11522,
   11524,
@@ -67,7 +71,8 @@
   11617,
   11618,
   11621,
-  11623
+  11623,
+  11628
  ],
  "ignoradas": [
   "2040862",
@@ -81,6 +86,49 @@
   "2052823"
  ],
  "itens": [
+  {
+   "id": "2059561",
+   "edicao": 11628,
+   "data": "2026-11-12",
+   "tipo": "fiscal",
+   "temas": [
+    "encerramento"
+   ],
+   "titulo": "PORTARIA 429-S/2026 - ENCERRAMENTO EXERCICIO/2026 - CENTRAL SESA",
+   "orgao": "Secretaria de Estado da Saúde - SESA -",
+   "ementa": null,
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2059561/11628",
+   "visto_em": "2026-11-12T07:13:02Z"
+  },
+  {
+   "id": "2059331",
+   "edicao": 11628,
+   "data": "2026-11-12",
+   "tipo": "fiscal",
+   "temas": [
+    "encerramento",
+    "orcamento"
+   ],
+   "titulo": "Portaria nº 1284-S.2026 - Comissão Para Elaboração da Prestação de Contas Anual do Ordenador de Despesas - Encerramento de Exercício 2026",
+   "orgao": "Secretaria de Estado da Justiça - SEJUS -",
+   "ementa": null,
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2059331/11628",
+   "visto_em": "2026-11-12T07:13:02Z"
+  },
+  {
+   "id": "2059325",
+   "edicao": 11628,
+   "data": "2026-11-12",
+   "tipo": "fiscal",
+   "temas": [
+    "encerramento"
+   ],
+   "titulo": "Portaria nº 1283-S.2026 - Comissão Inventário Físico e Contábil de Bens em Almoxarifado - Encerramento Exercício 2026 - Prestação de Contas Anual",
+   "orgao": "Secretaria de Estado da Justiça - SEJUS -",
+   "ementa": null,
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2059325/11628",
+   "visto_em": "2026-11-12T07:13:02Z"
+  },
   {
    "id": "2057857",
    "edicao": 11617,
