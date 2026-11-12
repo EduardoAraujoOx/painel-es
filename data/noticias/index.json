@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-12",
- "gerado_em": "2026-11-12T18:17:15Z",
+ "gerado_em": "2026-11-12T19:17:17Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 33,
+   "lidos": 32,
    "aceitos": 19,
    "possiveis": 0
   },
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 23,
+   "lidos": 24,
    "aceitos": 18,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -49,9 +49,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 22,
+   "lidos": 21,
    "aceitos": 10,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -65,8 +65,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 12,
-   "aceitos": 12,
+   "lidos": 13,
+   "aceitos": 13,
    "possiveis": 0
   },
   {
@@ -89,9 +89,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 61,
-   "aceitos": 3,
-   "possiveis": 7
+   "lidos": 56,
+   "aceitos": 4,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -105,17 +105,17 @@
    "fonte": "Google Notícias",
    "consulta": "(\"insuficiência de recursos\" OR \"restrições orçamentárias\" OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) \"governo do ES\"",
    "ok": true,
-   "lidos": 1,
+   "lidos": 0,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 11,
+   "lidos": 9,
    "aceitos": 3,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -129,15 +129,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 13,
-   "aceitos": 4,
+   "lidos": 11,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 29,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 18,
+   "lidos": 19,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -153,25 +153,25 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 26,
    "aceitos": 1,
-   "possiveis": 9
+   "possiveis": 10
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 78,
-   "aceitos": 13,
+   "lidos": 80,
+   "aceitos": 15,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 3,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -210,15 +210,15 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 7,
-   "possiveis": 5
+   "aceitos": 6,
+   "possiveis": 6
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -267,7 +267,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Sim Notícias",
@@ -280,19 +280,109 @@
  ],
  "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto": 305,
-  "possivel": 31,
+  "sem_contexto": 298,
+  "possivel": 29,
+  "veiculo_outra_praca": 5,
   "veiculo_excluido": 40,
   "sem_contexto_com_tema": 5,
-  "generico_sem_ancora": 1,
+  "generico_sem_ancora": 3,
   "exterior_sem_ancora": 6,
   "excluir": 14,
-  "outro_estado": 26,
+  "outro_estado": 25,
   "caixa_alta": 1,
-  "sigla_sem_ancora": 10,
-  "veiculo_outra_praca": 4
+  "sigla_sem_ancora": 11
  },
  "itens": [
+  {
+   "id": "0395ce38a370",
+   "titulo": "MPES abre vagas de estágio com bolsas de até R$ 1,9 mil em Vitória",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/trabalho/mpes-abre-vagas-de-estagio-com-bolsas-de-ate-r-19-mil-em-vitoria/",
+   "data": "2026-11-12T19:08:39Z",
+   "coletado_em": "2026-11-12T19:17:17Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "a0b6830a83cc",
+   "titulo": "Projeto das emendas impositivas não será colocado em votação neste ano, assegura Curi",
+   "veiculo": "Umuarama News",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQVzJoUnJPaXFDcjhtZ0w5V1VoZTBEWFVkbzlGTGFrV3hwTVJ2N3pRcjIyMTlReTVFcnowRU5aTzdCUGsxMGg0cmFNN2p6SC1GZUU5V015WlZSQWpvdE96ZDdocW1YUHpQMXRBWVZxdEZMQTN6LU5SQnVtX2p3YXJ5RDhIWVF4czJiOTR2T2MwSkJrRDAtdHNjVTZvelVsTlZoRl9jOGt2UjBTMHVBMGFoR1NuMTl1QnUtdVQzR3N3R1RsS2RYcERJeDBn?oc=5",
+   "data": "2026-11-12T18:58:19Z",
+   "coletado_em": "2026-11-12T19:17:17Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "11c745822469",
+   "titulo": "Falta de água suspende atendimento presencial do Detran em Ponta Porã",
+   "veiculo": "Capital News",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOSl9mNk5fRkdqMnhpS005OGVjeHRVc1ZRcC1ra014ZjlTNjRrcm9WMXZ2cFgwRDVCdUh6RDJyTjlRdUZkWkhWV3lSTnRLcEZ0SzNqMEtSOWZzSmVIZ0FXc2drbUtZaGtBOERyaGhiaXdsMnh1X1V6Um0yekhsUXctaHoxMGs4eWZ2aldmbDFhamdhenRHMWJIYVpvUzIxYndVV1h2WFh0SU43WXZMSEFRYm1TdWJreUVLRDV5Nkp4ZG4?oc=5",
+   "data": "2026-11-12T18:52:00Z",
+   "coletado_em": "2026-11-12T19:17:17Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "88a08bff6fff",
+   "titulo": "Concurso Banestes abre 625 vagas com salário de R$ 6,4 mil",
+   "veiculo": "TV Sim Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOT21TMl9Ga0Nld2tUZmloaXJmc3QxLTRHUGozZnJMVDUwYVlKZFNSU1RXbk91SmlsWlhkX01FVXRNSmtFTGNXUENmQWxZSDJ1akMyTEpnbnpxbm1GdU1tNmNTX24zeF9rUk9DVnU2c0pKbC1USkt0aEYzbTRUVklmWFBPZHJJOUFtSy1nZmtmT3lpVnRCUmNDSEUyYlhoSWtNSllzUFdmbC1kb3RKQWNNclVOYw?oc=5",
+   "data": "2026-11-12T18:34:26Z",
+   "coletado_em": "2026-11-12T19:17:17Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "c69523674cf0",
+   "titulo": "Medalha para deputada que se diz inimiga das feministas gera revolta no Rio",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQcUd2UEVKR2pWc1JIdXB2bGhVdkRlb3AzclR1Nk5YVWZPZjJya0tVeXFhdEIxU3Z5X0tnRTFaZUxuZ1dIMnpKQU9CLUNUQUt4Nm9mLWh0VnhPTWJsdm1idVpRQ0x4V3dqdUFuMDR4LTJRUHduekRKNDAyeVN5NERuaQ?oc=5",
+   "data": "2026-11-12T18:33:34Z",
+   "coletado_em": "2026-11-12T19:17:17Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "d3a4d9f98e42",
+   "titulo": "Concurso Banestes tem 645 oportunidades e provas em Cachoeiro",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPc3k3bHJLWlJjM3VQN2p5UUR3YnBLb3htaDRSRHc4MmVLcDhBclc5Qkk2eVkxV0ZqVHBSQnluQUI1LWNNTkFZSm51RGJrUWh3bW82RGZfcTZSQ0ZUWktNUzIxLXNZSzF0MXJSc3RacGxEN3VDNlplTVNGUy16YkFsRlo0MDdnYmU4cHd6Tg?oc=5",
+   "data": "2026-11-12T18:29:40Z",
+   "coletado_em": "2026-11-12T19:17:17Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "caea6b21a8c5",
+   "titulo": "As acusações de 'festas sexuais em troca de contratos' que levaram à investigação do ex-presidente colombiano Gustavo Petro",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/mundo/as-acusacoes-de-festas-sexuais-em-troca-de-contratos-que-levaram-a-investigacao-do-ex-presidente-colombiano-gustavo-petro-1126",
+   "data": "2026-11-12T18:16:54Z",
+   "coletado_em": "2026-11-12T19:17:17Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "3e52ea4bf3d4",
    "titulo": "Pazolini se reúne com arcebispo de Vitória e amplia agenda institucional durante transição no ES",
