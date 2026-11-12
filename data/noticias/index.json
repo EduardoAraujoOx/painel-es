@@ -1,6 +1,6 @@
 {
- "ref": "2026-11-11",
- "gerado_em": "2026-11-11T23:17:15Z",
+ "ref": "2026-11-12",
+ "gerado_em": "2026-11-12T00:17:16Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 36,
+   "lidos": 34,
    "aceitos": 23,
    "possiveis": 0
   },
@@ -25,8 +25,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 24,
-   "aceitos": 20,
+   "lidos": 25,
+   "aceitos": 21,
    "possiveis": 2
   },
   {
@@ -49,9 +49,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 25,
+   "lidos": 26,
    "aceitos": 10,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -75,7 +75,7 @@
    "ok": true,
    "lidos": 9,
    "aceitos": 6,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 57,
+   "lidos": 55,
    "aceitos": 5,
    "possiveis": 6
   },
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 2,
+   "lidos": 6,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 25,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -155,14 +155,14 @@
    "ok": true,
    "lidos": 27,
    "aceitos": 2,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 71,
-   "aceitos": 7,
+   "lidos": 73,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 15,
+   "lidos": 16,
    "aceitos": 7,
    "possiveis": 3
   },
@@ -211,14 +211,14 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 4,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -226,7 +226,7 @@
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -278,20 +278,102 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 4,
  "descartes_na_coleta": {
-  "sem_contexto": 302,
+  "sem_contexto": 299,
   "possivel": 29,
-  "veiculo_excluido": 42,
-  "exterior_sem_ancora": 5,
   "sem_contexto_com_tema": 9,
+  "veiculo_excluido": 42,
+  "generico_sem_ancora": 1,
+  "exterior_sem_ancora": 5,
   "excluir": 19,
-  "outro_estado": 28,
+  "outro_estado": 27,
   "caixa_alta": 2,
-  "sigla_sem_ancora": 7,
-  "veiculo_outra_praca": 4
+  "sigla_sem_ancora": 8,
+  "veiculo_outra_praca": 3
  },
  "itens": [
+  {
+   "id": "080d91f08098",
+   "titulo": "Casal suspeito de ameaçar idosa por dívida é preso com drogas em Marataízes",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/policia/casal-suspeito-de-ameacar-idosa-por-divida-e-preso-com-drogas-em-marataizes-1126",
+   "data": "2026-11-12T00:13:30Z",
+   "coletado_em": "2026-11-12T00:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "cb9a3d2c6535",
+   "titulo": "Manutenção da Cesan pode deixar 140 bairros sem água; veja quais",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/cotidiano/manutencao-da-cesan-pode-deixar-140-bairros-sem-agua-veja-quais/",
+   "data": "2026-11-12T00:12:22Z",
+   "coletado_em": "2026-11-12T00:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "0d4fb17e681d",
+   "titulo": "Governador eleito Pazolini se reúne com ES em Ação e discute prioridades para o ES",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQOGVQZnlIcWJyanVqalh3TlhmYmdiUXZvS2RtUFllQVZySDJJQml6Yzd3STlHR2x0bHhFb1NqYzZQRWNQZWdpRnJtQXNJX25WRC0yX05HalpXSEhFdEg1UGpVaWtEOWVSbzBrc2xfR1Q0TzgzMS1oZkhkMkpibm1NY0dlM2theFpPemZZVjdsVGhGQXhkcFIwcGFDNzhzWXhIQWYtUjBaZFVjVlU?oc=5",
+   "data": "2026-11-11T23:59:17Z",
+   "coletado_em": "2026-11-12T00:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "52cc2df81605",
+   "titulo": "Vereadores se retiram de sessão marcada para votar orçamento de Vitória",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/vereadores-se-retiram-de-sessao-marcada-para-votar-orcamento-de-vitoria/",
+   "data": "2026-11-11T23:53:28Z",
+   "coletado_em": "2026-11-12T00:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "cb598a871963",
+   "titulo": "Concurso Banestes oferece 645 vagas e salários de até R$ 6,3 mil",
+   "veiculo": "Colatina em Ação",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONkdnTXA2Sk9nOGFYWUhRVWJHMkUzS1dlbktmMHR2U3lVamVOVTRVaWxDODFHbVl6a0R1R29jTlYzY3VCRldEWVpvcG1TalMxM1pfWTkwQ3R4UzRNd3l6NVJfSk51T0RNRFIyVWRvaUtZcFVGR2VLRzhEc0VRcGNaZjlMWl90eG9jRS1YZXRCRzFiLUpaUTNlMS1TOEVSQ1ZsZ3pteml3RQ?oc=5",
+   "data": "2026-11-11T23:51:13Z",
+   "coletado_em": "2026-11-12T00:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "39733dba404b",
+   "titulo": "Salário mínimo de R$ 1.741 e superávit cabem no Orçamento de 2027",
+   "veiculo": "O Cafezinho",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQb0xYOHZhcFhOTGNHWGVMWHJJZmszZTFIeUlwSXFmQWJPUW5OUDM4OHNySWlERlJSQjR6QmNiTDNMcFIyR2Izb2hyVzJxRGhLM1JOYmN6cDBmejViOEJ3ZERMc0hRMDBic0RtaTlaY21xekVCOGM0UWhUVzg4VURLZ2tYVEFjb2tuamtNZy1vaGVqSW5hYWtXVWhaUV9sWnh2dzFEMWNn0gGrAUFVX3lxTFB4MGlIU0J6c1pxZUVQc0JId0lBbmEzZ1YxSERhRExvb0htOFRIeVVnS2xvSnZfZUoxUkI1X2VKeEd2MHdwM2NBM3ZDS2I0LW12aTd2VjFOOXAzbGRmaWt2RXlzVVlidlduWnp1UHlQZF9xS3dTSzdib3R3djc4RmtrOGU0ZER6eURTLU1vUGJJOGNmTEZ2V2tKUlBOQmtWNTc0ZmplWU5tOUlsOA?oc=5",
+   "data": "2026-11-11T23:00:00Z",
+   "coletado_em": "2026-11-12T00:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "419c722c5125",
    "titulo": "Ex-secretário de Linhares é indiciado por assédio sexual contra ex-servidora",
