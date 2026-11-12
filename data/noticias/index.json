@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-12",
- "gerado_em": "2026-11-12T15:19:50Z",
+ "gerado_em": "2026-11-12T16:17:16Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -50,8 +50,8 @@
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
    "lidos": 27,
-   "aceitos": 12,
-   "possiveis": 1
+   "aceitos": 11,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -73,15 +73,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 7,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 61,
+   "lidos": 62,
    "aceitos": 3,
    "possiveis": 6
   },
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 11,
-   "aceitos": 3,
+   "lidos": 9,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 11,
+   "lidos": 13,
    "aceitos": 4,
    "possiveis": 0
   },
@@ -145,9 +145,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 21,
+   "lidos": 18,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 12,
+   "lidos": 10,
    "aceitos": 3,
    "possiveis": 3
   },
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -227,14 +227,14 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 3,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -250,7 +250,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 5,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
@@ -258,7 +258,7 @@
    "consulta": "https://www.agazeta.com.br/colunas/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -278,21 +278,35 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 313,
-  "possivel": 29,
-  "veiculo_excluido": 39,
+  "sem_contexto": 310,
+  "possivel": 33,
+  "veiculo_excluido": 36,
   "generico_sem_ancora": 1,
-  "sem_contexto_com_tema": 8,
-  "exterior_sem_ancora": 4,
+  "sem_contexto_com_tema": 7,
+  "exterior_sem_ancora": 5,
   "excluir": 14,
-  "outro_estado": 24,
+  "outro_estado": 26,
   "caixa_alta": 1,
-  "sigla_sem_ancora": 12,
-  "veiculo_outra_praca": 3
+  "sigla_sem_ancora": 11,
+  "veiculo_outra_praca": 4
  },
  "itens": [
+  {
+   "id": "35555736e63b",
+   "titulo": "Governo Lula apresenta projeto com medidas de ajuste fiscal de até R$ 60 bi em 2027; veja propostas",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/governo-lula-apresenta-projeto-com-medidas-de-ajuste-fiscal-de-ate-r-60-bi-em-2027-veja-propostas/",
+   "data": "2026-11-12T16:11:38Z",
+   "coletado_em": "2026-11-12T16:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "bdb82f6af911",
    "titulo": "Detran suspende emissão de CNHs e outros serviços em todo o Tocantins após incêndio em Palmas",
@@ -431,6 +445,20 @@
    ]
   },
   {
+   "id": "291c2fd201b6",
+   "titulo": "Senado deve votar nesta quinta ajuste fiscal com previsão de economia de R$ 60 bi",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQLXFqdldKQ09rWXN5WjVPUDRQcE40bExzbWt1eE9lOXlSZWVKb1phLTFicUhuZXVYS29fbXpkSzZFWmN3SG05YUd1aW14YmJsdnZvY1lYOEVHME9jOUlob3BNU0tjaWJYdlBNdU1OcURGdVNiV1pXV0xHVkJ5NXRsamoyMjMtNGJRTnNpZUpBRDY4UXhwWTlHUGMxX2JkWTJlczVTRGJzVXhGcXo0dGNYNFBhZ1l0VTRlVUgtQVV5T1ppODIwcmpITlB5TdIBywFBVV95cUxQLXFqdldKQ09rWXN5WjVPUDRQcE40bExzbWt1eE9lOXlSZWVKb1phLTFicUhuZXVYS29fbXpkSzZFWmN3SG05YUd1aW14YmJsdnZvY1lYOEVHME9jOUlob3BNU0tjaWJYdlBNdU1OcURGdVNiV1pXV0xHVkJ5NXRsamoyMjMtNGJRTnNpZUpBRDY4UXhwWTlHUGMxX2JkWTJlczVTRGJzVXhGcXo0dGNYNFBhZ1l0VTRlVUgtQVV5T1ppODIwcmpITlB5TQ?oc=5",
+   "data": "2026-11-12T13:08:25Z",
+   "coletado_em": "2026-11-12T16:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
    "id": "9e3c0d037a65",
    "titulo": "Transpetro aumenta locais de provas de concurso público no ES",
    "veiculo": "A Gazeta",
@@ -443,6 +471,18 @@
    "temas": [
     "pessoal"
    ]
+  },
+  {
+   "id": "e49f432f56b6",
+   "titulo": "Ex-secretário de Linhares é indiciado por assédio sexual e invasão de dispositivo eletrônico",
+   "veiculo": "ES Fala",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPckF2YkJKLXQ3T3F2ZnFUWkxJTUdTS250SElFSGVITWdFX3I0QnJaOWViTmFPQmctZTB6ZHpLYm9id21xWjRyOXVBQ3ZiSjlMa3FOZTB5cWpXSTRGTkhick93SmZtZUhxckdMb1N6aEcxV1QwY0hyT1VNaWVRUjhkbUlLNW9DNlVVYmdMd1VWS3hablZuaU9tbE1NRXpzY2pNaXJDX3Vtd09zYlE?oc=5",
+   "data": "2026-11-12T13:00:00Z",
+   "coletado_em": "2026-11-12T16:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
   },
   {
    "id": "4b51a793355f",
