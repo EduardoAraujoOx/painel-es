@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-12",
- "gerado_em": "2026-11-12T17:17:16Z",
+ "gerado_em": "2026-11-12T17:36:43Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,7 +18,7 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 33,
-   "aceitos": 21,
+   "aceitos": 20,
    "possiveis": 0
   },
   {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 23,
-   "aceitos": 19,
+   "aceitos": 18,
    "possiveis": 2
   },
   {
@@ -49,15 +49,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 10,
-   "possiveis": 2
+   "lidos": 23,
+   "aceitos": 9,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 9,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,9 +89,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 59,
+   "lidos": 61,
    "aceitos": 3,
-   "possiveis": 6
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 10,
+   "lidos": 11,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 28,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 27,
    "aceitos": 1,
    "possiveis": 9
   },
@@ -201,8 +201,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (previdência OR Ipajm OR \"regime próprio\" OR \"contribuição previdenciária\" OR aposentadoria)",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 0,
+   "lidos": 3,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -278,21 +278,35 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 311,
-  "possivel": 34,
-  "veiculo_excluido": 38,
+  "sem_contexto": 313,
+  "possivel": 32,
+  "veiculo_excluido": 39,
   "sem_contexto_com_tema": 7,
   "generico_sem_ancora": 1,
   "exterior_sem_ancora": 5,
   "excluir": 12,
-  "outro_estado": 24,
+  "outro_estado": 25,
   "caixa_alta": 1,
   "sigla_sem_ancora": 10,
   "veiculo_outra_praca": 5
  },
  "itens": [
+  {
+   "id": "bac99c8d34f2",
+   "titulo": "Polícia Federal investiga fraude no Farmácia Popular em Cariacica e Viana",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOV3NZRXRaZlZ2eVp6c2owR3h0SWpiSFUtRE5xRk90MU9BbF9iTzkwWkt4S2w2Sl90UlJINE5lR3M3N1dTLVdreGF4S3g5aXJMVmRlaDRnWU4waWIwZ2JNUW9yUURRY0FtcXVrYnVrTDUxR0NVYzF4M2VreWpXbnpXOW1xVEUzWjFFVjRv?oc=5",
+   "data": "2026-11-12T17:29:12Z",
+   "coletado_em": "2026-11-12T17:36:43Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "controle"
+   ]
+  },
   {
    "id": "80134545779f",
    "titulo": "Banestes abre concurso com 645 vagas e salários de até R$ 6,3 mil",
