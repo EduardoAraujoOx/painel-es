@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-12",
- "gerado_em": "2026-11-12T21:17:15Z",
+ "gerado_em": "2026-11-12T22:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,8 +25,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 25,
-   "aceitos": 19,
+   "lidos": 23,
+   "aceitos": 17,
    "possiveis": 2
   },
   {
@@ -49,8 +49,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 21,
-   "aceitos": 10,
+   "lidos": 19,
+   "aceitos": 8,
    "possiveis": 2
   },
   {
@@ -73,15 +73,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 6,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 62,
+   "lidos": 61,
    "aceitos": 4,
    "possiveis": 6
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 54,
-   "aceitos": 3,
-   "possiveis": 5
+   "lidos": 55,
+   "aceitos": 1,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 10,
+   "lidos": 6,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 77,
+   "lidos": 78,
    "aceitos": 14,
    "possiveis": 0
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 8,
+   "lidos": 9,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
@@ -211,14 +211,14 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 6,
-   "possiveis": 6
+   "possiveis": 4
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 3,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -226,8 +226,8 @@
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 4,
-   "possiveis": 2
+   "aceitos": 3,
+   "possiveis": 1
   },
   {
    "fonte": "ES Hoje",
@@ -258,7 +258,7 @@
    "consulta": "https://www.agazeta.com.br/colunas/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -278,21 +278,59 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 5,
+ "novos_na_coleta": 4,
  "descartes_na_coleta": {
-  "sem_contexto": 305,
-  "possivel": 32,
-  "veiculo_excluido": 38,
-  "sem_contexto_com_tema": 7,
+  "sem_contexto": 306,
+  "possivel": 29,
+  "veiculo_outra_praca": 8,
+  "veiculo_excluido": 37,
+  "sem_contexto_com_tema": 9,
   "generico_sem_ancora": 3,
-  "exterior_sem_ancora": 7,
-  "excluir": 14,
-  "outro_estado": 18,
+  "exterior_sem_ancora": 6,
+  "excluir": 18,
   "caixa_alta": 2,
-  "veiculo_outra_praca": 9,
+  "outro_estado": 18,
   "sigla_sem_ancora": 12
  },
  "itens": [
+  {
+   "id": "d197c75bf0b4",
+   "titulo": "MPES pretende criar cargos e expandir sua estrutura",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/vitor-vogas/mpes-pretende-criar-cargos-e-expandir-sua-estrutura-1126",
+   "data": "2026-11-12T21:56:03Z",
+   "coletado_em": "2026-11-12T22:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "12007a787a4c",
+   "titulo": "Bandes e Finep reforçam crédito à inovação no ES",
+   "veiculo": "ES Brasil",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1yV3lQbEd1M2dhdVpEV3EwTUhxSWthellrUnVuVEw2bXN3aENVRDYyV1RKU0d4VEdqejRwZVhvYVBvSlJ5RWZUT0VFQVF3M1hiQzlNSnZaa3J2R0pFSDZOd2FWeTVBb1dvX04w?oc=5",
+   "data": "2026-11-12T21:25:00Z",
+   "coletado_em": "2026-11-12T22:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "9b660ce7eb9b",
+   "titulo": "Drogômetro no Espírito Santo: Detran apresenta aparelho",
+   "veiculo": "ES Brasil",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5LZU10OTM3MjhieTRSdTZzck05RHhsLXJMdHNNbXI5Nk12NWc0VzdLbVVXVmhtc3BjdGtYb1RhcVZmb28yU2gyVFNDY2RYWDlMUVFybkJxU3J2bzhKemJ2YTJHRTBQdVJvUUNpMA?oc=5",
+   "data": "2026-11-12T21:13:12Z",
+   "coletado_em": "2026-11-12T22:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "7c56d9a872e2",
    "titulo": "Imposto do Pecado: reforma pode encarecer cachaça de alambique no ES",
@@ -363,6 +401,18 @@
    ]
   },
   {
+   "id": "1bf6d9071345",
+   "titulo": "Fames abre mais de 60 vagas para Cursos de Formação Musical em 2027",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/hz/cultura/fames-abre-mais-de-60-vagas-para-cursos-de-formacao-musical-em-1126",
+   "data": "2026-11-12T20:29:58Z",
+   "coletado_em": "2026-11-12T22:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
    "id": "e1f43412de99",
    "titulo": "Imóvel transferido como venda pode entrar na divisão da herança",
    "veiculo": "ES Hoje",
@@ -397,7 +447,12 @@
    "url": "https://eshoje.com.br/esportes/2026/11/argentina-renova-contrato-com-tecnico-lionel-scaloni-ate-2030/",
    "data": "2026-11-12T19:43:20Z",
    "coletado_em": "2026-11-12T20:17:15Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "A Gazeta",
+     "url": "https://www.agazeta.com.br/futebol/argentina-renova-contrato-com-tecnico-lionel-scaloni-ate-1126"
+    }
+   ],
    "possivel": true,
    "triagem": 8,
    "temas": [
