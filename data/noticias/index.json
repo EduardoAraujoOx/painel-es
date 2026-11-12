@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-12",
- "gerado_em": "2026-11-12T22:17:14Z",
+ "gerado_em": "2026-11-12T23:17:16Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 31,
-   "aceitos": 19,
+   "lidos": 32,
+   "aceitos": 20,
    "possiveis": 0
   },
   {
@@ -26,31 +26,31 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 23,
-   "aceitos": 17,
+   "aceitos": 18,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 13,
-   "aceitos": 13,
+   "lidos": 11,
+   "aceitos": 11,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 7,
+   "lidos": 8,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 19,
-   "aceitos": 8,
+   "lidos": 20,
+   "aceitos": 9,
    "possiveis": 2
   },
   {
@@ -65,23 +65,23 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 13,
-   "aceitos": 13,
+   "lidos": 11,
+   "aceitos": 11,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 6,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,8 +89,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 61,
-   "aceitos": 4,
+   "lidos": 60,
+   "aceitos": 3,
    "possiveis": 6
   },
   {
@@ -99,7 +99,7 @@
    "ok": true,
    "lidos": 55,
    "aceitos": 1,
-   "possiveis": 6
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -114,8 +114,8 @@
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
    "lidos": 8,
-   "aceitos": 3,
-   "possiveis": 0
+   "aceitos": 2,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -145,15 +145,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 20,
+   "lidos": 21,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 29,
    "aceitos": 1,
    "possiveis": 10
   },
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 1,
+   "lidos": 7,
+   "aceitos": 2,
    "possiveis": 3
   },
   {
@@ -218,8 +218,8 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
-   "possiveis": 0
+   "aceitos": 0,
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -242,7 +242,7 @@
    "consulta": "https://g1.globo.com/rss/g1/es/espirito-santo/",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -251,7 +251,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 4,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "A Gazeta",
@@ -278,21 +278,47 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 4,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
   "sem_contexto": 306,
-  "possivel": 29,
-  "veiculo_outra_praca": 8,
+  "possivel": 31,
   "veiculo_excluido": 37,
   "sem_contexto_com_tema": 9,
   "generico_sem_ancora": 3,
   "exterior_sem_ancora": 6,
-  "excluir": 18,
+  "excluir": 19,
   "caixa_alta": 2,
-  "outro_estado": 18,
-  "sigla_sem_ancora": 12
+  "outro_estado": 19,
+  "veiculo_outra_praca": 7,
+  "sigla_sem_ancora": 11
  },
  "itens": [
+  {
+   "id": "65dd964dee88",
+   "titulo": "Outlook apresenta falhas nesta quinta (12); Microsoft confirma problemas em seus servidores",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/tecnologia/outlook-apresenta-falhas-nesta-quinta-12-microsoft-confirma-problemas-em-seus-servidores/",
+   "data": "2026-11-12T22:36:54Z",
+   "coletado_em": "2026-11-12T23:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "5e3a0fbb2bf8",
+   "titulo": "Estaduais Sub-17 e Sub-19 de Vôlei entram na fase decisiva; veja os confrontos",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/esportes/estaduais-sub-17-e-sub-19-de-volei-entram-na-fase-decisiva-veja-os-confrontos/",
+   "data": "2026-11-12T22:16:29Z",
+   "coletado_em": "2026-11-12T23:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "d197c75bf0b4",
    "titulo": "MPES pretende criar cargos e expandir sua estrutura",
@@ -584,6 +610,21 @@
    ]
   },
   {
+   "id": "f68c42d416a8",
+   "titulo": "Governador eleito Lorenzo Pazolini visita a sede da Defensoria Pública do ES -",
+   "veiculo": "Defensoria Pública do Espírito Santo",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTWs0Vks3b08wV2tUTk4wc09qQUxQbEdfMUtoVkZfNk50ZlpNNTFmR082S3hpdmJMNGlHU1lZanBSMHg5djRwM1VPbDBCWlNrMDF5WENHSVhJLXQ4OG1JdEc0dTZLT3VxSUZ4bjdkc3NXekdZd3d4bjBJRXl2ZjBXTjVsM1NvMmJHdFM3bzd0cW03d3pkUGZUSlczX0QyWktKNkxoS3FlVl9IZ2hWbmEw?oc=5",
+   "data": "2026-11-12T18:05:17Z",
+   "coletado_em": "2026-11-12T23:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
    "id": "7a05ffcc1ee6",
    "titulo": "Governador eleito, Pazolini tem reunião com arcebispo de Vitória",
    "veiculo": "TC Online",
@@ -685,12 +726,31 @@
    "url": "https://www.agazeta.com.br/es/politica/exoneracao-de-todos-os-comissionados-do-governo-do-es-pode-atrapalhar-servicos-especialistas-opinam-1126",
    "data": "2026-11-12T14:52:00Z",
    "coletado_em": "2026-11-12T15:19:50Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "www.noroestenews.com",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNaVd2Rkowalh3LWhTSWV5MW05Z0RCMllVUGxDc3NLYTBCY21Dc093LTNLX0tmLUJ6Z1kzSUFaTElWclpJempyUHRwSkZXeVF2eWstYm5QS3d3ZENTV014LUdwdndjUWVlb0ZGMjRZQnlTcEE3Z1dPNnVHT1pKVWFXdEhHVHZjLVE?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 8,
    "temas": [
     "governador",
     "pessoal"
+   ]
+  },
+  {
+   "id": "07387e58e167",
+   "titulo": "Pazolini volta à Polícia Civil e participa de operação contra o Comando Vermelho",
+   "veiculo": "Serra Noticiário",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVnBIOGpieExNYUVrR1RUbzE1WVRiNWQtRnJOdFlQY1JMMXdVRjBGNHVXaVlEVS1oNXU2dVpiZ2doN09xb3pLQWwwTGU3MzVwVktWZEVuVDdoSjNxb3ZLcDRUSjNMNWhVNUxZcWJjc21zSXZGdWdBa3BiYzA1WGU2clp0ZjNTNS1yUE96OWgxRWJXLVJQNTdoajZqTEtaaFpOX2V5bGI0SDRBSU5NYUxuVDF3?oc=5",
+   "data": "2026-11-12T14:49:00Z",
+   "coletado_em": "2026-11-12T23:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
    ]
   },
   {
@@ -1040,7 +1100,12 @@
    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUmd6Y0NuOWVmd2dGRGlIbXhfRF96SEFRNDl2OVF6Y0s1YlZTdE9DV0xwczNTUUdjSUJlZTREZjFtcWFERFdrc1pJRTQwM3dpQlhtVVZlczhwUUdDWVJreVFfU3JnOEUydmhIcXZpM01MbVFvQjFjRnowd294cVhzeUc4YzktcjhXLUtqM19RbmxpcGJqNHdWOE5ubkdHYmowWkJaY1M1bkJFcVY2V1lOMkVFRkplejlZa2xXbm1HZnc?oc=5",
    "data": "2026-11-12T10:39:51Z",
    "coletado_em": "2026-11-12T11:17:17Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Governo ES",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQ3FNM1lyVUpYLThFVzM1SHVHSjFYSEZiQVpOMENJTmxfYktnY0M0bGpOYlY1WG1IT3k0bUdscjRMNzJmNUxsdkY0X3RhcjlFb1VMRlAxaHBIWE5GODBpMWZwamd5LXN1RTktazRMSngtbUh0V1pCZ3AtRUNFYmN5ODNFSXpVWnpCWHhyREEwNGxBWlJuUVdtUFd5MThTNHM1S2htWE5Ya1QwOGtnVTNmNndiREZ5NHhyZEJ2YkVB?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 8,
    "temas": [
