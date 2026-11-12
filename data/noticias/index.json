@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-12",
- "gerado_em": "2026-11-12T16:17:16Z",
+ "gerado_em": "2026-11-12T17:17:16Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 34,
+   "lidos": 33,
    "aceitos": 21,
    "possiveis": 0
   },
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 22,
+   "lidos": 23,
    "aceitos": 19,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -49,8 +49,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 27,
-   "aceitos": 11,
+   "lidos": 26,
+   "aceitos": 10,
    "possiveis": 2
   },
   {
@@ -75,7 +75,7 @@
    "ok": true,
    "lidos": 9,
    "aceitos": 7,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 62,
+   "lidos": 59,
    "aceitos": 3,
    "possiveis": 6
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 48,
+   "lidos": 47,
    "aceitos": 4,
    "possiveis": 5
   },
@@ -105,16 +105,16 @@
    "fonte": "Google Notícias",
    "consulta": "(\"insuficiência de recursos\" OR \"restrições orçamentárias\" OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) \"governo do ES\"",
    "ok": true,
-   "lidos": 0,
+   "lidos": 1,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 2,
+   "lidos": 10,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 25,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 18,
+   "lidos": 19,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -161,8 +161,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 78,
-   "aceitos": 13,
+   "lidos": 79,
+   "aceitos": 14,
    "possiveis": 0
   },
   {
@@ -201,8 +201,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (previdência OR Ipajm OR \"regime próprio\" OR \"contribuição previdenciária\" OR aposentadoria)",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 1,
+   "lidos": 2,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -278,21 +278,33 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 310,
-  "possivel": 33,
-  "veiculo_excluido": 36,
-  "generico_sem_ancora": 1,
+  "sem_contexto": 311,
+  "possivel": 34,
+  "veiculo_excluido": 38,
   "sem_contexto_com_tema": 7,
+  "generico_sem_ancora": 1,
   "exterior_sem_ancora": 5,
-  "excluir": 14,
-  "outro_estado": 26,
+  "excluir": 12,
+  "outro_estado": 24,
   "caixa_alta": 1,
-  "sigla_sem_ancora": 11,
-  "veiculo_outra_praca": 4
+  "sigla_sem_ancora": 10,
+  "veiculo_outra_praca": 5
  },
  "itens": [
+  {
+   "id": "80134545779f",
+   "titulo": "Banestes abre concurso com 645 vagas e salários de até R$ 6,3 mil",
+   "veiculo": "Sim Notícias",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVHlNOTFucjk1WmhrNm5MUkdnMktKUG91a2NtVmhYNGJnM3U3RVV2SUtnZklGT2QyU0dCdTEza2E5UmNBWHFRcTdhTkFONXlJUzFvdHQ1V1AwV3NVVkVoS1FpemhfU25Jb0FLRDMtRDNiQVJXYUxnMU1ZRWhBSUxrUU5Rc0R2NVhXc2xQQk96RWpnNDllSVluS2U0OWhzQm9JNlE?oc=5",
+   "data": "2026-11-12T16:23:00Z",
+   "coletado_em": "2026-11-12T17:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "35555736e63b",
    "titulo": "Governo Lula apresenta projeto com medidas de ajuste fiscal de até R$ 60 bi em 2027; veja propostas",
@@ -635,6 +647,10 @@
     {
      "veiculo": "A Gazeta",
      "url": "https://www.agazeta.com.br/economia/entenda-ponto-a-ponto-o-plano-moretti-proposta-de-ajuste-fiscal-do-governo-lula-1126"
+    },
+    {
+     "veiculo": "A Gazeta",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNcmQ0akhsQUVFV2cyRXFXZThRUUxIaVM1YjFFTjRTWHZwb21tSklKdVJWLUgyZ0o2VkNsZnVCVDlicEdGaWk4VTBFbDczYUFkQkZUN3huMDZaeE9YSTB6VlZubGtLNnpWcDNyeFEtV05IMDdsaS1xU1lxWFVzR01tb3dzNWt4QUxiS1Yza19ORXJVZS1nSUFZRlBCWDI1TkQzQU02Y3JpUGRjNEl2ZFRMa0ZrbDh1LWdfQXY1RQ?oc=5"
     }
    ],
    "possivel": true,
@@ -1190,7 +1206,12 @@
    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcmg0dTRUaGlyWi1MaFhGek9Idm5xSGJUanhQVjY4cGhCcmhfRHZLTkoyWVdVYzJGMWVIbDZQSTNDdzJEVU1kQ2M5MV9mem90OEViSWw3cnRIUERqMnhTWFMwZVFHLVdvbTk4NV9lZDVzSHJLRU9DSU1wQVlFTEwzajlrRjBkM0lTcXM1aUYzdWFKbGhkczg1SkNYVDNjb0ozUDhuLXg1U1h0N3BGeHFVUm5mUnlSdHY3c1BKRWVmTlg1b0I3ZDl4QktsdkVkUmZ3WXlsdDZB?oc=5",
    "data": "2026-11-11T19:52:30Z",
    "coletado_em": "2026-11-11T20:17:18Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "jornaljc.com.br",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNc1g3a0dwX0hTSGU5N0N3cXpqSy16UGpfaXlONFNMOXhuZ3diZFc0TlFVNXEwenBjazRyaVFvTW5IWXlTOTlQRU9rcmlBQU1QdVYtbDAwTGs0QWNsUkgwU2wzSXQ1SDVjaXNKbGcwWWx4cU5OcGc4YWlhXzJwOEdFdFh4MjlyUjZjN3BpY3pIcTJ4OFcxOTJ0eUdySGxMaUNBWjNxc0FmeWRFdXpId21mM1pnSTNEamFwT0ZQM0I0eFJhZmVQSzNwSURtOVpiQQ?oc=5"
+    }
+   ],
    "possivel": true,
    "triagem": 8,
    "temas": []
@@ -2345,7 +2366,12 @@
    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPeU9uci14Y0RLeEFJck9PbklFTURhVVpZX3VhellWa293V1pkWWFKNU1jOXg4Y3ZlS3ctS0xBM2FKelkwWXFMTWdkTU9sWFhOVHhlZFUwWTN3ZWlGT0Q5NlA2cFk4OGFweEZXdkVvVnZSX1BVeTBaSm5DUTBybFZGSm9VNWloNS0yLUdzNjhSVXNNMWJTVHJKblVEYUkyM0NWWndFUHhJeDI4aTVEUXFUS21OTUY0RDhJZGcyRA?oc=5",
    "data": "2026-11-10T17:31:00Z",
    "coletado_em": "2026-11-10T19:17:15Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Acreaovivo.com",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxONDlZWDZ0Wm43cHpwUFhUVVVWX2d5SWtUbHhOeVMtY042YTJnYkNtTHBDaEpqb2ltYTFGWWxDSjBnZS1sSEgwR2F5ekZHWWt5MjZrNV9GNWVaSVRCSDJZSHgyX2VnbDJJRTYyNmNXRDZBbGNtZWdTZGxqR1dZWFB3T0cxakx0SWVBaUZCTG51dndVTUJDdlN3bTNBTDVTWmdmdEZsNW1XUFlMdTV2d0pvX3FvenZxNGdNMHZFa3ZxMnB6QQ?oc=5"
+    }
+   ],
    "possivel": true,
    "triagem": 8,
    "temas": [
