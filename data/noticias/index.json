@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-12",
- "gerado_em": "2026-11-12T09:17:13Z",
+ "gerado_em": "2026-11-12T11:17:17Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -49,8 +49,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 27,
-   "aceitos": 10,
+   "lidos": 28,
+   "aceitos": 12,
    "possiveis": 1
   },
   {
@@ -75,13 +75,13 @@
    "ok": true,
    "lidos": 9,
    "aceitos": 7,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -90,16 +90,16 @@
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
    "lidos": 52,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 53,
-   "aceitos": 3,
-   "possiveis": 4
+   "lidos": 50,
+   "aceitos": 4,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 27,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 25,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -161,8 +161,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 73,
-   "aceitos": 8,
+   "lidos": 74,
+   "aceitos": 10,
    "possiveis": 0
   },
   {
@@ -218,8 +218,8 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
-   "possiveis": 1
+   "aceitos": 0,
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -242,7 +242,7 @@
    "consulta": "https://g1.globo.com/rss/g1/es/espirito-santo/",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -267,7 +267,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Sim Notícias",
@@ -278,20 +278,79 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 308,
-  "possivel": 26,
-  "sem_contexto_com_tema": 9,
+  "sem_contexto": 299,
+  "possivel": 28,
+  "sem_contexto_com_tema": 10,
   "veiculo_excluido": 41,
   "generico_sem_ancora": 1,
   "exterior_sem_ancora": 5,
-  "excluir": 18,
-  "outro_estado": 24,
+  "excluir": 19,
+  "outro_estado": 25,
+  "caixa_alta": 1,
   "sigla_sem_ancora": 7,
   "veiculo_outra_praca": 5
  },
  "itens": [
+  {
+   "id": "ec64885861ff",
+   "titulo": "Vereador Vitor Soares Louzada é citado em investigação do MP sobre suspeita de improbidade de servidor que teria atuado como seu advogado em Colatina",
+   "veiculo": "ES Fala",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNMEpiU0JQZldla0xCNG1YOFEzSnZPZmtzWFJPemIyZjNreFBndGhIYUdwWFJFQXhBOUhFRGhsT0diOXozWkVJS1RXRGVJY1hzLVFhT21UUTgxbmVrbktBM3k0dHlWV1Q2cDZQV0xjVVR4SmprZ0dVNHQ3VEczQ3M2VWR1bmg1TXRHOURBd3FBTGZhZGhKMkpoMVMwamppOFRLbkFXcFlGUQ?oc=5",
+   "data": "2026-11-12T11:00:00Z",
+   "coletado_em": "2026-11-12T11:17:17Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "pessoal",
+    "controle"
+   ]
+  },
+  {
+   "id": "0ff52688da36",
+   "titulo": "Banestes e Banescor lançam novos editais de concurso público com 645 vagas para cadastro de reserva",
+   "veiculo": "rede noticia es",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUmd6Y0NuOWVmd2dGRGlIbXhfRF96SEFRNDl2OVF6Y0s1YlZTdE9DV0xwczNTUUdjSUJlZTREZjFtcWFERFdrc1pJRTQwM3dpQlhtVVZlczhwUUdDWVJreVFfU3JnOEUydmhIcXZpM01MbVFvQjFjRnowd294cVhzeUc4YzktcjhXLUtqM19RbmxpcGJqNHdWOE5ubkdHYmowWkJaY1M1bkJFcVY2V1lOMkVFRkplejlZa2xXbm1HZnc?oc=5",
+   "data": "2026-11-12T10:39:51Z",
+   "coletado_em": "2026-11-12T11:17:17Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "200e24edbe7a",
+   "titulo": "Governo envia alertas sobre sarampo pelo WhatsApp",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZzlQSkIxMjlDYVBDTnJldGJwc094RGZuMFJhNWFWNG5Md2NJWFRSSW1wcHhoS2ZTci1XdlphWTVpMF9lcXd0aVhEWnN6bFBjV2MzOWJjaEpSeFpxNHJfWUQtbllMQUVoTHFVUXJzb1NMb2tBNF96Yl9rcGxCMFAtbWpsQ1N0eHlVSEowUUJiVllFN09RaXh5MGZrYS16eTM0MFNV0gGrAUFVX3lxTE9lY1BKX0pqdWtKZmlCS2F5WVgwdHhScmQzekpfcWpCYmp1ZFpTY1YwVHlBMXdKVG16SDBiaUlTWjVFQjRIWktXTVdSVzZTUV9pdndoRUtmUEpwTm1yQ1I4czFWZmt0cHBlYzNaYlZZZUNTVWZXdXVYeUwzQmlaS1Nlc2NZUTVlbm42Smx4Sm5BWGQxSGItZmFwRTJsYlZOcW92SGh4bUltWlZ2aw?oc=5",
+   "data": "2026-11-12T10:35:39Z",
+   "coletado_em": "2026-11-12T11:17:17Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "8e440fc7babb",
+   "titulo": "Banestes abre concurso com 645 vagas e salários de até R$ 6,3 mil no ES; veja como participar",
+   "veiculo": "G1 Espírito Santo",
+   "url": "https://g1.globo.com/es/espirito-santo/noticia/2026/11/12/banestes-abre-concurso-com-645-vagas-e-salarios-de-ate-r-63-mil-no-es-veja-como-participar.ghtml",
+   "data": "2026-11-12T10:32:00Z",
+   "coletado_em": "2026-11-12T11:17:17Z",
+   "outras": [
+    {
+     "veiculo": "G1",
+     "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPMzFTdjZpZ1RwM3dOU01tVjJrTVFOenNfOXR1MU45R1FtMzZlcnR4UTVZTDZteVRfQngyamotYWJBZjNJRVFNX2JpR0VJNGREWW1DVXlMMTdmOURIdThuYnRVdVlEWnEtZW15dmdDc1pHYUVqUVUtZHAzNXZlTWdPUFBvSnlIczZPRHNOM2daR1dxTUUtdGV1YzRFOXFmLWJveTFxT3NpWTB0eU5qbjgtcUUyV1dfazhpc1RqS0lJM1dxQ3A4ekFSbVpTX09GajRwanBpMDI5MWJjM3FUUk1rd19oZWl2TU05enfSAfgBQVVfeXFMUEhNTVFhOUdoYmNTdDZNUV9kUThVS2FsMFBqdzFiOHZfWmhSamxzMW9YSkx4V3dWd2tHVUFsNEtfd01sOUFsNnhLTVJSenlySkpjQXI5VVBGMUIwTHdWbFU1cUhfTFVsbUVoQ2tYYXdWM2M2eDVVd1RGckxOZUI1MlE0ZkVOUnVlWEpMTmVHZ21zM2FEeHNDTWtZcmtxNjRYd0xoWkdFWDI5VzZDbUc0VFZ1NTg3c2V4NGVKMVdZd0I0QW9qS2xwMzQyaHIxRTVnTmFmdHVaUzdOUmMwcUo0YTVKblpoU2RSejUwaXdXSUlGbmVaeVZFQmo?oc=5"
+    }
+   ],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "b67a4121ac87",
    "titulo": "Impasse, dedo na cara, boicote ao orçamento e “terror”: o clima na Câmara de Vitória",
@@ -301,6 +360,20 @@
    "coletado_em": "2026-11-12T09:17:13Z",
    "outras": [],
    "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "12fc34393086",
+   "titulo": "Senado pode votar ajuste fiscal nesta quinta e Alcolumbre busca consenso",
+   "veiculo": "Sim Notícias",
+   "url": "https://simnoticias.com.br/politica/senado-pode-votar-ajuste-fiscal-nesta-quinta-e-alcolumbre-busca-consenso/",
+   "data": "2026-11-12T07:10:05Z",
+   "coletado_em": "2026-11-12T11:17:17Z",
+   "outras": [],
+   "possivel": true,
    "triagem": 8,
    "temas": [
     "financas"
