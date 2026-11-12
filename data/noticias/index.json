@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-12",
- "gerado_em": "2026-11-12T07:12:31Z",
+ "gerado_em": "2026-11-12T09:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,8 +25,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 24,
-   "aceitos": 22,
+   "lidos": 22,
+   "aceitos": 20,
    "possiveis": 1
   },
   {
@@ -65,8 +65,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 10,
+   "lidos": 11,
+   "aceitos": 11,
    "possiveis": 0
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 54,
-   "aceitos": 5,
-   "possiveis": 5
+   "lidos": 53,
+   "aceitos": 3,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 26,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 24,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 26,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 17,
+   "lidos": 18,
    "aceitos": 7,
    "possiveis": 3
   },
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 5,
    "possiveis": 4
   },
   {
@@ -218,7 +218,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -278,21 +278,34 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 300,
-  "possivel": 27,
-  "sem_contexto_com_tema": 8,
-  "veiculo_excluido": 47,
+  "sem_contexto": 308,
+  "possivel": 26,
+  "sem_contexto_com_tema": 9,
+  "veiculo_excluido": 41,
   "generico_sem_ancora": 1,
   "exterior_sem_ancora": 5,
   "excluir": 18,
   "outro_estado": 24,
-  "caixa_alta": 2,
   "sigla_sem_ancora": 7,
-  "veiculo_outra_praca": 3
+  "veiculo_outra_praca": 5
  },
  "itens": [
+  {
+   "id": "b67a4121ac87",
+   "titulo": "Impasse, dedo na cara, boicote ao orçamento e “terror”: o clima na Câmara de Vitória",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/politica/impasse-dedo-na-cara-boicote-ao-orcamento-e-terror-o-clima-na-camara-de-vitoria-1126",
+   "data": "2026-11-12T08:00:00Z",
+   "coletado_em": "2026-11-12T09:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "67253edd2873",
    "titulo": "Pazolini acena à indústria capixaba com controle fiscal, atração de investimentos e portas abertas no Palácio Anchieta",
