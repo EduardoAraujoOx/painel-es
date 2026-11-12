@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-12",
- "gerado_em": "2026-11-12T13:17:15Z",
+ "gerado_em": "2026-11-12T14:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,7 +18,7 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 36,
-   "aceitos": 24,
+   "aceitos": 23,
    "possiveis": 0
   },
   {
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 27,
+   "lidos": 26,
    "aceitos": 12,
    "possiveis": 1
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,15 +89,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 62,
+   "lidos": 61,
    "aceitos": 3,
-   "possiveis": 5
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 50,
+   "lidos": 49,
    "aceitos": 4,
    "possiveis": 5
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 10,
+   "lidos": 11,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -129,40 +129,40 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 2,
+   "lidos": 5,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 27,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 23,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 29,
    "aceitos": 1,
-   "possiveis": 7
+   "possiveis": 8
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 77,
-   "aceitos": 12,
+   "lidos": 79,
+   "aceitos": 13,
    "possiveis": 0
   },
   {
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 19,
-   "aceitos": 6,
+   "lidos": 17,
+   "aceitos": 4,
    "possiveis": 3
   },
   {
@@ -210,8 +210,8 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 5,
-   "possiveis": 4
+   "aceitos": 6,
+   "possiveis": 5
   },
   {
    "fonte": "Folha Vitória",
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 7,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
@@ -278,21 +278,75 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 7,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 311,
-  "possivel": 28,
-  "veiculo_excluido": 40,
-  "generico_sem_ancora": 2,
+  "sem_contexto": 316,
+  "possivel": 30,
+  "veiculo_excluido": 42,
+  "generico_sem_ancora": 1,
   "exterior_sem_ancora": 5,
-  "sem_contexto_com_tema": 9,
+  "sem_contexto_com_tema": 8,
   "excluir": 15,
   "outro_estado": 26,
   "caixa_alta": 1,
-  "sigla_sem_ancora": 11,
-  "veiculo_outra_praca": 5
+  "sigla_sem_ancora": 10,
+  "veiculo_outra_praca": 4
  },
  "itens": [
+  {
+   "id": "b098132fc8a5",
+   "titulo": "Saiba como fazer o novo concurso público o Banestes sem pagar nada",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/concursos/saiba-como-fazer-o-novo-concurso-publico-o-banestes-sem-pagar-nada-1126",
+   "data": "2026-11-12T14:05:00Z",
+   "coletado_em": "2026-11-12T14:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "c4dbac022732",
+   "titulo": "Euclério Sampaio anuncia aumento do ticket-alimentação de servidores de Cariacica para R$ 900",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQZ29QR3VWU1puTjdibWs0enUyS05WSDVPQmpRLW9RRjNMSTZ6OUJiMG0zX09IYjIzcU1qYjBoNVdjczIxTkFBc1Q0RkFyak8xQWVzVmlwblV6RklodlhtNWhTZE0yeUpnUEFPQ3cwMXY0bmNQU0ZGY25VM3Fpa3M1V04wNGRqaFVPejRr?oc=5",
+   "data": "2026-11-12T13:30:35Z",
+   "coletado_em": "2026-11-12T14:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "fb1499863931",
+   "titulo": "Detran suspende 1.062 carteiras de habilitação por embriaguez, manobras perigosas e excesso de velocidade",
+   "veiculo": "Portal do Zacarias",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQRG4xUnExWjRjdHp4NjRDTXN2WHJXTUFLYmRzNWxzS1FRekVNRHZsREVGZTAydno3b1JuZEpKcmc0V0RWdHhkXzFjUkpONjAzMnI5WTVEQm9ieGh4MWFVYVhoR1F0UDQ2U01vVjQ2R0pTMmVwUG9ReG1OQnFhRTl0V2U2THo4RDZ2NTAxWFJuV01JT3otUUNnY0tKV3VCWG9iam1TT0gtbFlja1dOZnFNRHlQTzlkdTNBZTZyUjhJU0dJamhqOTRRSVRaQ0RnTFhvYnVLdFF4WjBNMU42em00bFJPenFoQQ?oc=5",
+   "data": "2026-11-12T13:27:00Z",
+   "coletado_em": "2026-11-12T14:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "428eddc58147",
+   "titulo": "CONCURSO PÚBLICO: Banestes e Banescor lançam novos editais com 645 vagas para cadastro de reserva",
+   "veiculo": "Jornal Espírito Santo Notícias",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZkN5R1RWWkRFU1dTVDZ5ZVFiM1NlY1BRODVyUzF5ekRhRHdrLVhhbFYzbS1NSnBxZnV3alpnT29LME9WX1Y4XzRZVndOVnpXeXlQSGJUTVphMGoxRW44WDdhU3o1ZTVyVi0tNlpycWlrNnVSQ0xLci16U29vOUc3T09hUHRINm8yOUZDRmJmX05fVVJkejJqUVg4SkVTVm5RTk1EVjlZbWgtS054eHBjLVJkYWxURi1DY3JsYWdEQ2xaQ1h2a0J5a0ZqaVBGLWM?oc=5",
+   "data": "2026-11-12T13:24:25Z",
+   "coletado_em": "2026-11-12T14:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "f2622a65074b",
    "titulo": "Banestes abre concurso com 645 vagas em cadastro de reserva e salários de até R$ 6,3 mil",
@@ -494,7 +548,12 @@
    "url": "https://eshoje.com.br/economia/2026/11/plano-moretti-proposta/",
    "data": "2026-11-12T11:20:17Z",
    "coletado_em": "2026-11-12T12:17:15Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "A Gazeta",
+     "url": "https://www.agazeta.com.br/economia/entenda-ponto-a-ponto-o-plano-moretti-proposta-de-ajuste-fiscal-do-governo-lula-1126"
+    }
+   ],
    "possivel": true,
    "triagem": 8,
    "temas": [
