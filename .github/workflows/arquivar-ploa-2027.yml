@@ -1,0 +1,48 @@
+name: Arquivar anexos oficiais do PLOA 2027
+
+on:
+  push:
+    paths:
+      - '.github/workflows/arquivar-ploa-2027.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  arquivar:
+    runs-on: ubuntu-latest
+    if: github.repository == 'EduardoAraujoOx/painel-es'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Baixar e validar anexos da Assembleia Legislativa
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p fontes/ploa/texto
+          curl --fail --location --retry 4 --retry-all-errors --connect-timeout 30 --max-time 300 --user-agent "Mozilla/5.0" \
+            'https://www3.al.es.gov.br/Arquivo/Documents/2026/09/29/PL/PL2026/496278-20260929111842029_11c826f9.pdf?identificador=3400390036003200370038003A005000' \
+            -o fontes/ploa/01_Detalhamento_dotacoes_elemento_PLOA2027.pdf
+          curl --fail --location --retry 4 --retry-all-errors --connect-timeout 30 --max-time 600 --user-agent "Mozilla/5.0" \
+            'https://www3.al.es.gov.br/Arquivo/Documents/2026/09/29/PL/20260929111822200_174f7647.pdf?identificador=3400390036003200370038003A005000' \
+            -o fontes/ploa/02_Mensagem_189_2026_e_anexos_PLOA2027.pdf
+          python3 - <<'PY'
+          from pathlib import Path
+          for name in (
+              '01_Detalhamento_dotacoes_elemento_PLOA2027.pdf',
+              '02_Mensagem_189_2026_e_anexos_PLOA2027.pdf',
+          ):
+              data = Path('fontes/ploa', name).read_bytes()
+              assert data[:5] == b'%PDF-', f'Arquivo invalido: {name}'
+              assert len(data) > 500_000, f'Arquivo incompleto: {name}'
+              print(name, len(data))
+          PY
+          pdftotext -layout fontes/ploa/01_Detalhamento_dotacoes_elemento_PLOA2027.pdf fontes/ploa/texto/01_Detalhamento_dotacoes_elemento_PLOA2027.txt
+          (cd fontes/ploa && sha256sum 01_*.pdf 02_*.pdf > SHA256SUMS.txt)
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add fontes/ploa/
+          if ! git diff --cached --quiet; then
+            git commit -m "Arquiva anexos originais do PLOA 2027 e texto pesquisavel"
+            git push
+          fi
