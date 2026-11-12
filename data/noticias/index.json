@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-12",
- "gerado_em": "2026-11-12T23:17:16Z",
+ "gerado_em": "2026-11-12T23:39:33Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -41,16 +41,16 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 8,
+   "lidos": 7,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 20,
-   "aceitos": 9,
+   "lidos": 19,
+   "aceitos": 8,
    "possiveis": 2
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 60,
+   "lidos": 56,
    "aceitos": 3,
    "possiveis": 6
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 55,
+   "lidos": 54,
    "aceitos": 1,
-   "possiveis": 5
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -161,8 +161,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 78,
-   "aceitos": 14,
+   "lidos": 79,
+   "aceitos": 15,
    "possiveis": 0
   },
   {
@@ -201,7 +201,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (previdência OR Ipajm OR \"regime próprio\" OR \"contribuição previdenciária\" OR aposentadoria)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -219,15 +219,15 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 3,
-   "possiveis": 1
+   "aceitos": 2,
+   "possiveis": 2
   },
   {
    "fonte": "ES Hoje",
@@ -278,14 +278,14 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 306,
-  "possivel": 31,
+  "sem_contexto": 299,
+  "possivel": 34,
   "veiculo_excluido": 37,
   "sem_contexto_com_tema": 9,
   "generico_sem_ancora": 3,
-  "exterior_sem_ancora": 6,
+  "exterior_sem_ancora": 4,
   "excluir": 19,
   "caixa_alta": 2,
   "outro_estado": 19,
@@ -293,6 +293,18 @@
   "sigla_sem_ancora": 11
  },
  "itens": [
+  {
+   "id": "170650427469",
+   "titulo": "Banestes abre concurso com 645 vagas e salários de até $ 6,3 mil no ES; veja detalhes",
+   "veiculo": "Rádio Itatiaia",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMG5kQ0hOc251NWtqajI3Y29qRkYySzc0Q0JrYmh0UnZRaWI5c291d3M2MnRqZUxSSnA2V1MyakdjNnNmQm5oWVVqdmc1N0RoSUpPalB5VlgxM0FselpUT0xsaUN6eDZ5VXNPT3JFZGdzUk9yUTlTQzZJU01hSTI2Vjk5WXhTaUVHZWZmaFpxLTFMeS0wOUpqUVZqbkpNYnRwODlhMWxEZmVnMG5FejgtVzBYZk1DWEVpbENUSF9ZZGdBWHppZER2U3lR?oc=5",
+   "data": "2026-11-12T23:24:34Z",
+   "coletado_em": "2026-11-12T23:39:33Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "65dd964dee88",
    "titulo": "Outlook apresenta falhas nesta quinta (12); Microsoft confirma problemas em seus servidores",
@@ -1300,7 +1312,12 @@
    "url": "https://www.agazeta.com.br/es/policia/ex-secretario-de-linhares-e-indiciado-por-assedio-sexual-contra-ex-servidora-1126",
    "data": "2026-11-11T22:51:02Z",
    "coletado_em": "2026-11-11T23:17:15Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Folha Vitória",
+     "url": "https://www.folhavitoria.com.br/politica/ex-secretario-de-linhares-e-indiciado-por-assedio-sexual-contra-ex-servidora/"
+    }
+   ],
    "possivel": true,
    "triagem": 8,
    "temas": [
