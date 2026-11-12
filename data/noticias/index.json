@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-12",
- "gerado_em": "2026-11-12T12:17:15Z",
+ "gerado_em": "2026-11-12T13:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 35,
+   "lidos": 36,
    "aceitos": 24,
    "possiveis": 0
   },
@@ -25,8 +25,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 22,
-   "aceitos": 19,
+   "lidos": 23,
+   "aceitos": 20,
    "possiveis": 1
   },
   {
@@ -57,7 +57,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -65,8 +65,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 11,
-   "aceitos": 11,
+   "lidos": 12,
+   "aceitos": 12,
    "possiveis": 0
   },
   {
@@ -74,8 +74,8 @@
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 6,
-   "possiveis": 2
+   "aceitos": 7,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -83,14 +83,14 @@
    "ok": true,
    "lidos": 8,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 60,
-   "aceitos": 2,
+   "lidos": 62,
+   "aceitos": 3,
    "possiveis": 5
   },
   {
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 1,
+   "lidos": 10,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -129,15 +129,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 1,
-   "aceitos": 0,
+   "lidos": 6,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 26,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -155,14 +155,14 @@
    "ok": true,
    "lidos": 27,
    "aceitos": 1,
-   "possiveis": 6
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 75,
-   "aceitos": 10,
+   "lidos": 77,
+   "aceitos": 12,
    "possiveis": 0
   },
   {
@@ -194,14 +194,14 @@
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
    "lidos": 19,
-   "aceitos": 7,
+   "aceitos": 6,
    "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (previdência OR Ipajm OR \"regime próprio\" OR \"contribuição previdenciária\" OR aposentadoria)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 3,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 6,
+   "aceitos": 7,
    "possiveis": 1
   },
   {
@@ -278,21 +278,128 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 7,
  "descartes_na_coleta": {
-  "sem_contexto": 307,
-  "possivel": 30,
-  "sem_contexto_com_tema": 9,
-  "veiculo_excluido": 41,
+  "sem_contexto": 311,
+  "possivel": 28,
+  "veiculo_excluido": 40,
   "generico_sem_ancora": 2,
   "exterior_sem_ancora": 5,
-  "excluir": 16,
+  "sem_contexto_com_tema": 9,
+  "excluir": 15,
   "outro_estado": 26,
   "caixa_alta": 1,
-  "sigla_sem_ancora": 10,
+  "sigla_sem_ancora": 11,
   "veiculo_outra_praca": 5
  },
  "itens": [
+  {
+   "id": "f2622a65074b",
+   "titulo": "Banestes abre concurso com 645 vagas em cadastro de reserva e salários de até R$ 6,3 mil",
+   "veiculo": "Noroeste News",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxON3lXLWNnRWlnaEVkd0twOGE3cC1yRmpQMW9OSmpXY0lxUXR4WFprVjA2VVJFTGVieUoxWTQ1Z2huSHJITVdjdGd0aVdaQV9JT1lfYVdyU25PWDRyVU9Rb2xnbUpzeTlOWEZZcFJOVGJyNWNPOUxGUFd2SWFQVkotaTdCNkNFMFk?oc=5",
+   "data": "2026-11-12T13:13:00Z",
+   "coletado_em": "2026-11-12T13:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "ef4bd1787490",
+   "titulo": "Orçamento de Vitória não é votado pela quarta vez",
+   "veiculo": "ES Hoje",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1DYkFoXzQxc0o5NFI0eFRhOWV4UHZ4ZjdoU0ljdFlGanlRUVlwcXdXamZidVVKX0tGWWl1cWk2QzJJcG5aSVhaeGpHaFZ3b2VYalk3WEFQZUw1WWpjMnVYWFFjc0dQYlBlWXJxV3B6RnJpXzg2QkE?oc=5",
+   "data": "2026-11-12T13:11:52Z",
+   "coletado_em": "2026-11-12T13:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "504ed000664d",
+   "titulo": "Orçamento de Vitória: sessão termina sem votação pela 4ª vez",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/orcamento-de-vitoria-sessao/",
+   "data": "2026-11-12T13:11:52Z",
+   "coletado_em": "2026-11-12T13:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "9e3c0d037a65",
+   "titulo": "Transpetro aumenta locais de provas de concurso público no ES",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/concursos/transpetro-aumenta-locais-de-provas-de-concurso-publico-no-es-1126",
+   "data": "2026-11-12T13:02:56Z",
+   "coletado_em": "2026-11-12T13:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "4b51a793355f",
+   "titulo": "Gracyanne Barbosa diz que pode ter contas bloqueadas por dívidas de Belo",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/hz/tv-e-famosos/gracyanne-barbosa-diz-que-pode-ter-contas-bloqueadas-por-dividas-de-belo-1126",
+   "data": "2026-11-12T12:56:59Z",
+   "coletado_em": "2026-11-12T13:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "3171c54fdcd9",
+   "titulo": "Detran-ES avalia uso de aparelho que detecta drogas em motoristas",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPX0ZFRVQ2ZkdSd2xqOHZDdC00ZnBXWS1KbWI5NnF3U3laUWhuMVRzSDI4aVNoWm5zVEhUclBDb2ItOExTQTlPdkFQZDV0dzhoaXplaE52QV82RWtQbEJMdWd5VlJGRGo1NlYyTm1UWW8xZmE4Tk42SFdCaWI1Y1Y1WF8yeHFSNGFJ?oc=5",
+   "data": "2026-11-12T12:29:07Z",
+   "coletado_em": "2026-11-12T13:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "1564891dde6b",
+   "titulo": "Banestes: concurso oferece 645 vagas com 440 para Analista de TI",
+   "veiculo": "diariodamidia.com.br",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOaHo2Sk9hX1ZnQTFObmZKdW5aMHpzZVZiRk1nQUx4eEQ1QTlfdXF1R1VMTW9QVWQ5SnZ0dFk3SzFKUjZTVnZPUFg4amNoU01XSEM3R1FOc2xwZXY1dGY1NE5EY3VVUERzaTFNWVhFNlVnYzdYdkVSQnAyT19yRktMdHBCQVc3Q2tYYUNDNFhEdllsRFFUbWNn?oc=5",
+   "data": "2026-11-12T12:21:30Z",
+   "coletado_em": "2026-11-12T13:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "f1e72ccdda88",
+   "titulo": "Pazolini anuncia exoneração de todos os comissionados do governo do ES para 2027",
+   "veiculo": "Serra Noticiário",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNY2U0MXF3RmtmQVhDckd3WEZJaW9ISlBnWXpjcHlFNTJoUHg3S1Z1R3dpc0ctRWpXMW0yeXkwT2hTbGFhOXlhOGg0NmRnZXZMTURmb1kxMm1veVpTa1hPM3o5cU81Zk1GY2xxTXlYc2xqblJIalJuMGlENmRQVzJKbFhfdWFBUWxmWGQ0eHdac1hscVJMS3lsczBLcFZCS1paRkRkUWtBZkZ6VU9Ud3dBTkpn?oc=5",
+   "data": "2026-11-12T12:19:00Z",
+   "coletado_em": "2026-11-12T13:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador",
+    "pessoal"
+   ]
+  },
   {
    "id": "a4524e02d920",
    "titulo": "Governador eleito do Espírito Santo anuncia que vai exonerar todos os comissionados em janeiro",
@@ -327,7 +434,12 @@
    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE8wM3luY0U3dDgwTFp2UzNwWDNUZHhRMzNra1lHblhXWVNTZC1YbHczYmEzdmI4R2htOFNKMjhPLUJ5VHNzeDBydlRSRGtWNm1pNDhiLXNiTHczalFpQWIzOVlYNHRReXZWR1p6Tzg2U09nbGk3aGc?oc=5",
    "data": "2026-11-12T12:04:23Z",
    "coletado_em": "2026-11-12T12:17:15Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Diário Goianiense",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWWo3LWI1cTJwVDNuS1pZV09xQVRQbFkxdzZXb1BXNVhLbVgwSzJvMGVzc2VuRlVhdEViMExiZnFwSlRUVkNtOHVDcXBVVkVoam15bTloZVhPWFltcUpqNWRpZkpHLUlNN0ItUHBsX0k1MnlXU2I2WUR1QTA4NENJaVRydkZXUjNoLWlJa1lVMW1MT0tlRm8yX1Rlc1E1dmV0NUFXUw?oc=5"
+    }
+   ],
    "possivel": true,
    "triagem": 8,
    "temas": []
@@ -823,7 +935,12 @@
    "url": "https://g1.globo.com/es/espirito-santo/concursos-e-emprego/noticia/2026/11/11/gemea-reprovada-na-etapa-de-cotas-raciais-no-concurso-da-policia-civil-do-es-consegue-reverter-resultado-apos-recurso.ghtml",
    "data": "2026-11-11T20:38:23Z",
    "coletado_em": "2026-11-11T21:17:31Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "G1",
+     "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNNWNQVlBmMkpKaFBnUmcxcXI0QWNaQ25sZTY0eFA0RHMwanNEVWQxQVVZWDY2a3VldFVvelYycXhVOXRwVXhGc2VhNTByLWFZUGxzZU5tUTBTcGRVNEUtbG5UQWZodWJrc2g2SDJZRnVwM1hKQ0d5cS1aX2Z1SnI2QmhLZWxQX0VfcjBabk9fV0pnYWhWeUUyZ3hCaEFxX3I0QUZmUllkOThKREFudXhYTDRMT3RBOWx2U0UtclJ0T0VnOW9ROVhaWTlmUTQ4dGF4V0FfcGttR19Dd1cyczhGLXhlMXFxMkJiblYxWWMwbVk0RWJnVkxTV2ZiaDMydVBmOVBUbHQ5NDRuazY0MWFUck50SjRvLTJrbGFkZjFSUFE3Y1UtN0F3NNIBtwJBVV95cUxQcW9NYjR2WVFfZjI0bDBkSEtNMDd5eElTU0t3LVdvU0VlSExrN011cm81N2o1eF9qRXB6YUN6MDhsSWw4amNLRU9xUFpDZUhjTjRKSzA1UjRGTzZQZTFnOGRzN3FDWWFsMVpuZFVBYjZaUU5DTW9iYVJrbmVibTRfLWhyZjA3Y0pMU0czVWpxYVdULWZyRElCX1ZTY3RpNzBnLWJNekctTFlqRWFKQTk0VS1OU01CbDkyR3pqQmF0RTRGd3FGSVhhWkRkTG81YmNlbldCdkZJZlhKU2FOSGlIR3VfMG1ibGQtWXpWZmxoeUdLZzRMYUVSSWhCMWM1aGZETExMWGxPYmhMMUtVZmtRNVgwTFl3dlBkZllmLWc2OUVGZmNIV2xIS2dPN0FXRFpBSVhhckpoMA?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 8,
    "temas": [
