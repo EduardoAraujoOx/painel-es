@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-12",
- "gerado_em": "2026-11-12T17:36:43Z",
+ "gerado_em": "2026-11-12T18:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,7 +18,7 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 33,
-   "aceitos": 20,
+   "aceitos": 19,
    "possiveis": 0
   },
   {
@@ -27,7 +27,7 @@
    "ok": true,
    "lidos": 23,
    "aceitos": 18,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -49,8 +49,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 23,
-   "aceitos": 9,
+   "lidos": 22,
+   "aceitos": 10,
    "possiveis": 1
   },
   {
@@ -65,8 +65,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 13,
-   "aceitos": 13,
+   "lidos": 12,
+   "aceitos": 12,
    "possiveis": 0
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,8 +145,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 19,
-   "aceitos": 1,
+   "lidos": 18,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -161,15 +161,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 79,
-   "aceitos": 14,
+   "lidos": 78,
+   "aceitos": 13,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -201,8 +201,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (previdência OR Ipajm OR \"regime próprio\" OR \"contribuição previdenciária\" OR aposentadoria)",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 1,
+   "lidos": 2,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -278,21 +278,65 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto": 313,
-  "possivel": 32,
-  "veiculo_excluido": 39,
-  "sem_contexto_com_tema": 7,
+  "sem_contexto": 305,
+  "possivel": 31,
+  "veiculo_excluido": 40,
+  "sem_contexto_com_tema": 5,
   "generico_sem_ancora": 1,
-  "exterior_sem_ancora": 5,
-  "excluir": 12,
-  "outro_estado": 25,
+  "exterior_sem_ancora": 6,
+  "excluir": 14,
+  "outro_estado": 26,
   "caixa_alta": 1,
   "sigla_sem_ancora": 10,
-  "veiculo_outra_praca": 5
+  "veiculo_outra_praca": 4
  },
  "itens": [
+  {
+   "id": "3e52ea4bf3d4",
+   "titulo": "Pazolini se reúne com arcebispo de Vitória e amplia agenda institucional durante transição no ES",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/pazolini-se-reune-com-arcebispo-de-vitoria-e-amplia-agenda-institucional-durante-transicao-no-es/",
+   "data": "2026-11-12T18:09:06Z",
+   "coletado_em": "2026-11-12T18:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "7a05ffcc1ee6",
+   "titulo": "Governador eleito, Pazolini tem reunião com arcebispo de Vitória",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPUzNKYVBOUDVUQ0NEYUFQS0NSTFNrWmZBSTlVdHVWaVdCbFItRXVSUDhOTG5UN3NYVmVwOTVEMWo1b2dKS0NJTEhGS0gxMmU5ZFhTVUppRXgtVDR5MTJNY0tmV25lRlJXdDI0MDVxUTh6XzdwVkJMYkt0X0c5WTBsLXZFRk0zaTZoN1RjY1JvejJsUQ?oc=5",
+   "data": "2026-11-12T17:54:19Z",
+   "coletado_em": "2026-11-12T18:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "0ef889ee75af",
+   "titulo": "Governador eleito se reúne com Dom Ângelo Mezzari e reforça importância do diálogo institucional",
+   "veiculo": "Aqui Notícias",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPQmI3c21MVmMxeGtTWnE4YlVUMHhfM1ZKSFVVT0J1STdTSDNtUXhDU0tWa3NSdzNCakJhMnBKRDdORjd6X2R4T01VM210VlBpbFVVWWwtNEk2QnFyNlRfUFk0cHk3ai1jU2kzeFk3bVJVVXdxMFdIUXFKRDNqU0VfTmN2R3dwc1JST2pyODZPdW5HWk5CU2NQSklTZTFuSGNJVTNLejk5dGlYV3NYc01Hd2owZ05LZW1zUURtekR0SE51S1VwcTZKdUt3?oc=5",
+   "data": "2026-11-12T17:37:54Z",
+   "coletado_em": "2026-11-12T18:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao"
+   ]
+  },
   {
    "id": "bac99c8d34f2",
    "titulo": "Polícia Federal investiga fraude no Farmácia Popular em Cariacica e Viana",
@@ -1081,7 +1125,12 @@
    "url": "https://eshoje.com.br/entretenimento/cultura/2026/11/frente-capixaba-pela-cultura-se-mobiliza-pela-manutencao-da-secult-e-avanco-em-politicas-culturais/",
    "data": "2026-11-11T21:06:08Z",
    "coletado_em": "2026-11-11T21:17:31Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "portalsbn.com.br",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOQlctbFlZQ0hKa3pzeXd2aEFBbjhDUzJsVHJNYlBqeGo3anE3WWwzRmt4eURGM25iSGxPWEFUdkFuMU5DVW5kOGNqenZSXzR2dXNxMEktWHB4UGVGR05tNjI1eFdQTW1tUDRxZ3c3VTVuMXVCZk1YNXZCV0c5VllCWTZ6a09WNzN4SUtyazNZajdINTVDUG1ZNXZ1ZEZmcHZYek4xeC1KTGs4UG1LU0NSZmx0MHpOWEgxQTdoVUkteWQ?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 8,
    "temas": []
