@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-12",
- "gerado_em": "2026-11-12T14:17:15Z",
+ "gerado_em": "2026-11-12T15:19:50Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,24 +17,24 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 36,
-   "aceitos": 23,
+   "lidos": 34,
+   "aceitos": 21,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 23,
-   "aceitos": 20,
+   "lidos": 22,
+   "aceitos": 19,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 11,
-   "aceitos": 11,
+   "lidos": 12,
+   "aceitos": 12,
    "possiveis": 0
   },
   {
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 26,
+   "lidos": 27,
    "aceitos": 12,
    "possiveis": 1
   },
@@ -65,15 +65,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 12,
-   "aceitos": 12,
+   "lidos": 13,
+   "aceitos": 13,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 7,
    "possiveis": 1
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 8,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 49,
+   "lidos": 48,
    "aceitos": 4,
    "possiveis": 5
   },
@@ -129,15 +129,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 1,
+   "lidos": 11,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 24,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -145,23 +145,23 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 21,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 28,
    "aceitos": 1,
-   "possiveis": 8
+   "possiveis": 9
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 79,
+   "lidos": 78,
    "aceitos": 13,
    "possiveis": 0
   },
@@ -177,24 +177,24 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 7,
+   "lidos": 8,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"próximo governador\" OR \"futuro governador\" Espírito Santo (contas OR caixa OR receita OR orçamento OR dívida OR \"bombas fiscais\")",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 2,
+   "lidos": 0,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 17,
-   "aceitos": 4,
+   "lidos": 12,
+   "aceitos": 3,
    "possiveis": 3
   },
   {
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 6,
+   "aceitos": 7,
    "possiveis": 5
   },
   {
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -250,7 +250,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 5,
    "possiveis": 1
   },
   {
@@ -280,19 +280,48 @@
  ],
  "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 316,
-  "possivel": 30,
-  "veiculo_excluido": 42,
+  "sem_contexto": 313,
+  "possivel": 29,
+  "veiculo_excluido": 39,
   "generico_sem_ancora": 1,
-  "exterior_sem_ancora": 5,
   "sem_contexto_com_tema": 8,
-  "excluir": 15,
-  "outro_estado": 26,
+  "exterior_sem_ancora": 4,
+  "excluir": 14,
+  "outro_estado": 24,
   "caixa_alta": 1,
-  "sigla_sem_ancora": 10,
-  "veiculo_outra_praca": 4
+  "sigla_sem_ancora": 12,
+  "veiculo_outra_praca": 3
  },
  "itens": [
+  {
+   "id": "bdb82f6af911",
+   "titulo": "Detran suspende emissão de CNHs e outros serviços em todo o Tocantins após incêndio em Palmas",
+   "veiculo": "Gazeta do Cerrado",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQcEhFTy01aTRRS3B5aE05ellwUGtxbFBfWVdIRkxJTE4zbmhHdDZ4emtZUF83RDFjSXlpM2Y0SHF6LUJvcEhNVjY4MjFtMGQtVk1ubXFWQ2dDd0dIUGxpeW9uNS00eEVQYW9sSFhOMXoxUzZqbkxJNFh1YmtxYjJHcUdBbDFnYklILTZDSklnMTVoV3V1eXU2VEwzVldCRzZrSHBSYnZVc1pFSDA0Y1ZPSnh0WkJzRmh1SGJ3SnVOeWZrVGtKTTVyOHdwU2ZleWdz?oc=5",
+   "data": "2026-11-12T15:04:44Z",
+   "coletado_em": "2026-11-12T15:19:50Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "restricao"
+   ]
+  },
+  {
+   "id": "92e4c1fadb2b",
+   "titulo": "Exoneração de todos os comissionados do governo do ES pode atrapalhar serviços? Especialistas opinam",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/politica/exoneracao-de-todos-os-comissionados-do-governo-do-es-pode-atrapalhar-servicos-especialistas-opinam-1126",
+   "data": "2026-11-12T14:52:00Z",
+   "coletado_em": "2026-11-12T15:19:50Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador",
+    "pessoal"
+   ]
+  },
   {
    "id": "b098132fc8a5",
    "titulo": "Saiba como fazer o novo concurso público o Banestes sem pagar nada",
@@ -300,6 +329,20 @@
    "url": "https://www.agazeta.com.br/concursos/saiba-como-fazer-o-novo-concurso-publico-o-banestes-sem-pagar-nada-1126",
    "data": "2026-11-12T14:05:00Z",
    "coletado_em": "2026-11-12T14:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "6dde5db2af65",
+   "titulo": "Saiba como fazer o novo concurso público do Banestes sem pagar nada",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/concursos/saiba-como-fazer-o-novo-concurso-publico-o-banestes-sem-pagar-nada-1126",
+   "data": "2026-11-12T14:05:00Z",
+   "coletado_em": "2026-11-12T15:19:50Z",
    "outras": [],
    "possivel": false,
    "triagem": 8,
