@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-12",
- "gerado_em": "2026-11-12T11:17:17Z",
+ "gerado_em": "2026-11-12T12:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,7 +18,7 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 35,
-   "aceitos": 23,
+   "aceitos": 24,
    "possiveis": 0
   },
   {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 22,
-   "aceitos": 20,
+   "aceitos": 19,
    "possiveis": 1
   },
   {
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 28,
+   "lidos": 27,
    "aceitos": 12,
    "possiveis": 1
   },
@@ -74,8 +74,8 @@
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 7,
-   "possiveis": 1
+   "aceitos": 6,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 52,
+   "lidos": 60,
    "aceitos": 2,
    "possiveis": 5
   },
@@ -147,21 +147,21 @@
    "ok": true,
    "lidos": 24,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 27,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 74,
+   "lidos": 75,
    "aceitos": 10,
    "possiveis": 0
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 6,
+   "lidos": 7,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 18,
+   "lidos": 19,
    "aceitos": 7,
    "possiveis": 3
   },
@@ -201,8 +201,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (previdência OR Ipajm OR \"regime próprio\" OR \"contribuição previdenciária\" OR aposentadoria)",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 2,
+   "lidos": 4,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -278,21 +278,131 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto": 299,
-  "possivel": 28,
-  "sem_contexto_com_tema": 10,
+  "sem_contexto": 307,
+  "possivel": 30,
+  "sem_contexto_com_tema": 9,
   "veiculo_excluido": 41,
-  "generico_sem_ancora": 1,
+  "generico_sem_ancora": 2,
   "exterior_sem_ancora": 5,
-  "excluir": 19,
-  "outro_estado": 25,
+  "excluir": 16,
+  "outro_estado": 26,
   "caixa_alta": 1,
-  "sigla_sem_ancora": 7,
+  "sigla_sem_ancora": 10,
   "veiculo_outra_praca": 5
  },
  "itens": [
+  {
+   "id": "a4524e02d920",
+   "titulo": "Governador eleito do Espírito Santo anuncia que vai exonerar todos os comissionados em janeiro",
+   "veiculo": "Jornal Correio",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOckg3NGNNdjk2bDBZRUwtWHFCWjNiSWpmTVdrODZoaVJKZU0xbFVINlgtUWxjd2RxTE5JSXA2SnBkNGFtcVY2STF4WE5RTzJEQ01YZ0IxNHdLQl9OV2ZybzliazBwcXNVU2YtVXhlRXhaTTVabndTVU1MQTItS3FxZFUtdkZYM1pBaXdvaGpkbFNNT2hheG9TQndkZEE3MVJ1TmdtS0JVdThzRUczVUhNWGgwQVFBa0VuSVdmM3hGVkVZamtpSjBnaU9od3MzTEJiZDVoRktNNA?oc=5",
+   "data": "2026-11-12T12:10:11Z",
+   "coletado_em": "2026-11-12T12:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao",
+    "pessoal"
+   ]
+  },
+  {
+   "id": "043d9bb8a94e",
+   "titulo": "Detran-ES discute uso de ‘drogômetro’ em operações da Lei Seca",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/seguranca/2026/11/drogometro-detran-lei-seca/",
+   "data": "2026-11-12T12:09:12Z",
+   "coletado_em": "2026-11-12T12:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "ec956b71af8d",
+   "titulo": "Detran suspende 1.062 CNHs por álcool e manobras perigosas",
+   "veiculo": "Povo na Rua",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE8wM3luY0U3dDgwTFp2UzNwWDNUZHhRMzNra1lHblhXWVNTZC1YbHczYmEzdmI4R2htOFNKMjhPLUJ5VHNzeDBydlRSRGtWNm1pNDhiLXNiTHczalFpQWIzOVlYNHRReXZWR1p6Tzg2U09nbGk3aGc?oc=5",
+   "data": "2026-11-12T12:04:23Z",
+   "coletado_em": "2026-11-12T12:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "ea55e8863dba",
+   "titulo": "Álcool, manobras perigosas e alta velocidade: Detran suspende 1.062 CNHs",
+   "veiculo": "Metrópoles",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQMUZOSEs3b0dOeDNPend6eXcxN3UzRC1waDJtcDA1djU4LUxKd1lFelFXLUtHV25DSkJjdGdGemFvdEdRd1RRR2VqVFRSUmZiSEVrTmVEdFNsc3VJal9vaXdqRkhHVFMzYU5YcHN5Vl9yT3JYNGo1T3MyY3ZtY2JvMDZlbmVyX3FpLVJLQnZlaVhGS3J6S0NKWm1oOG50YzBENE1FOEFxNnppNmZ1UFgtOHpqdDI?oc=5",
+   "data": "2026-11-12T11:40:00Z",
+   "coletado_em": "2026-11-12T12:17:15Z",
+   "outras": [
+    {
+     "veiculo": "DELIO ANDRADE",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPVUpjWXFVdzZtMTEyUHluM0pId2ZnbzVIYnVETDFlTEJsOWU5NUVNUzFQZVoyaUx1bUd5NTZCb21qUGp0RW5sRXdMNzVTaVl5d2t0ekNPdV9UeGJXaEZzbTFRNW1lWkZ5QjJEeWoxRkxrdGxUbFk3YVZhZTRQMXpIRktIcFM1ODlMeThoeXdlRVBXbkIyQUV3dlBwd29GbnBy?oc=5"
+    }
+   ],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "57fedd01b840",
+   "titulo": "O salário pode ser penhorado para pagar dívidas?",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/justica/o-salario-pode-ser-penhorado-para-pagar-dividas/",
+   "data": "2026-11-12T11:30:00Z",
+   "coletado_em": "2026-11-12T12:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "d5ddd6cce50b",
+   "titulo": "Pesquisadoras capixabas vão estudar na Itália com a Fapes",
+   "veiculo": "ES Brasil",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9sa2RiSVd3RnhPWGpxbGF3OG1QZEtueHg0UmhtRGlPM2FWaFBxbmE1aGhYTnl1SVc2a29JSFlDRDQwbFV3bGlrNXJaSG9uU0h3THdQcUJZT2VHUWhOWmVZOG96M0RxU1hDYWdFTVhlU01GbE5sRFE?oc=5",
+   "data": "2026-11-12T11:25:00Z",
+   "coletado_em": "2026-11-12T12:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "182836440f8b",
+   "titulo": "Entenda ponto a ponto o Plano Moretti, proposta de ajuste fiscal do governo Lula",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/economia/2026/11/plano-moretti-proposta/",
+   "data": "2026-11-12T11:20:17Z",
+   "coletado_em": "2026-11-12T12:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "97549aed7cc5",
+   "titulo": "Licenciamento 2026: Detran alerta para atraso no pagamento de 38,6% da frota",
+   "veiculo": "O POTI",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQUFZVMVlfRnIwWFNqa3YzZzFLVnhCSU5oU285SC1waU54aFFOVWp5a2w3RkZJUXN5dXpxZkhJQTdBMUVKN0t4LXpjSkFtUXBtUjJPZ3hzZHdOMEk1cjk0T0VLbnczRGZST1E0SkFUMkZ3dXEtYXdhdVF2a3AzWDFjNWpLd1RieFZIajRRTnBPZmxEbEJpdHNRcXRCbw?oc=5",
+   "data": "2026-11-12T11:14:49Z",
+   "coletado_em": "2026-11-12T12:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "restricao"
+   ]
+  },
   {
    "id": "ec64885861ff",
    "titulo": "Vereador Vitor Soares Louzada é citado em investigação do MP sobre suspeita de improbidade de servidor que teria atuado como seu advogado em Colatina",
@@ -2307,6 +2417,20 @@
    "triagem": 8,
    "temas": [
     "pessoal"
+   ]
+  },
+  {
+   "id": "58d910331ded",
+   "titulo": "Governo Federal mantém impostos zerados sobre gasolina e etanol até dezembro",
+   "veiculo": "ES Fala",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQbE9EV0Q2LVRLREdfMGlKTXFzd0FPbnVTQWxEbW16eFhoZjk2c1dUc09Oem4zZ2c0cmtfOFVPQXNXVkpSQm5JNjc2cWhLVlVfQnQ2amZ6TkFjVF9oSjFMYzFYb2Jpa3dqb3NsNzBiZ0FoaHhFQkRjSVhEdGNOMEMxX2ljWnp4T2UySUZzb3FmTnNpNUk2eTk2SzdSMlFULWxTUkxjZUdrSWk?oc=5",
+   "data": "2026-11-10T12:30:00Z",
+   "coletado_em": "2026-11-12T12:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
    ]
   },
   {
