@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-12",
- "gerado_em": "2026-11-12T00:17:16Z",
+ "gerado_em": "2026-11-12T01:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 34,
+   "lidos": 35,
    "aceitos": 23,
    "possiveis": 0
   },
@@ -25,16 +25,16 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 25,
+   "lidos": 24,
    "aceitos": 21,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 12,
-   "aceitos": 12,
+   "lidos": 11,
+   "aceitos": 11,
    "possiveis": 0
   },
   {
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 26,
+   "lidos": 27,
    "aceitos": 10,
    "possiveis": 1
   },
@@ -74,14 +74,14 @@
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 6,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 55,
+   "lidos": 57,
    "aceitos": 5,
-   "possiveis": 6
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 6,
+   "lidos": 8,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 26,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -154,7 +154,7 @@
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 27,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 4
   },
   {
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 16,
+   "lidos": 17,
    "aceitos": 7,
    "possiveis": 3
   },
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 3,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -278,12 +278,12 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 4,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 299,
-  "possivel": 29,
+  "sem_contexto": 305,
+  "possivel": 28,
   "sem_contexto_com_tema": 9,
-  "veiculo_excluido": 42,
+  "veiculo_excluido": 44,
   "generico_sem_ancora": 1,
   "exterior_sem_ancora": 5,
   "excluir": 19,
@@ -293,6 +293,20 @@
   "veiculo_outra_praca": 3
  },
  "itens": [
+  {
+   "id": "aa2c0a2a5add",
+   "titulo": "Gêmea reverte reprovação em cotas raciais de concurso da polícia",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/cotidiano/gemea-reverte-reprovacao-em-cotas-raciais-de-concurso-da-policia/",
+   "data": "2026-11-12T00:46:41Z",
+   "coletado_em": "2026-11-12T01:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "080d91f08098",
    "titulo": "Casal suspeito de ameaçar idosa por dívida é preso com drogas em Marataízes",
@@ -399,6 +413,21 @@
    "possivel": false,
    "triagem": 8,
    "temas": []
+  },
+  {
+   "id": "2b7a5d7dcc38",
+   "titulo": "Anderson Teixeira Baptista passa a integrar equipe de transição do governador eleito Lorenzo Pazolini",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOTE9QdEtwRm9scmNPSXE1ZTBGVzJCeGZQV2pvcXlGdHdOSUdOU2VjTXRlOVdtZWJxLVRnc3NyWTREU05tNVlnUW1Gcy1NcEh3OVJQcUFoNEJjd2ZiNUJGVkZHQ04wUDBrTmxTdnR2U1lkVWFYZ20yMUxjLU80a0dGU3Bkd0RFRklDWkwxZFZjSE1SVVdBOEYzR0tBSVRzRkpGUlpzTTRkVTJvY280ZGFQMmE2SnNYV2NuX2Q1UHo3UW5BUkVB?oc=5",
+   "data": "2026-11-11T22:30:26Z",
+   "coletado_em": "2026-11-12T01:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
   },
   {
    "id": "7bd1fa18efeb",
