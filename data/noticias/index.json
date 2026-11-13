@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-13",
- "gerado_em": "2026-11-13T22:40:44Z",
+ "gerado_em": "2026-11-13T23:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,7 +25,7 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 28,
+   "lidos": 27,
    "aceitos": 17,
    "possiveis": 5
   },
@@ -49,9 +49,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 17,
-   "aceitos": 5,
-   "possiveis": 3
+   "lidos": 15,
+   "aceitos": 4,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 63,
+   "lidos": 68,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 77,
+   "lidos": 76,
    "aceitos": 10,
    "possiveis": 0
   },
@@ -278,20 +278,20 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 347,
-  "possivel": 35,
+  "sem_contexto": 348,
+  "possivel": 36,
   "oficial_sem_tema": 1,
-  "veiculo_excluido": 25,
-  "veiculo_outra_praca": 12,
+  "veiculo_excluido": 26,
+  "veiculo_outra_praca": 11,
   "sem_contexto_com_tema": 10,
-  "generico_sem_ancora": 3,
-  "exterior_sem_ancora": 3,
+  "exterior_sem_ancora": 6,
   "excluir": 25,
   "caixa_alta": 1,
-  "outro_estado": 17,
-  "sigla_sem_ancora": 13
+  "outro_estado": 16,
+  "sigla_sem_ancora": 13,
+  "generico_sem_ancora": 2
  },
  "itens": [
   {
@@ -332,6 +332,20 @@
    "triagem": 8,
    "temas": [
     "governador"
+   ]
+  },
+  {
+   "id": "8b03d592cdd7",
+   "titulo": "Cariacica anuncia suspensão temporária de atendimentos no Faça Fácil",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMnYyVWMxMm5pSFNfaWJzbkVibncxOE5kaDZ4S3BUTG5UMmZKSExZa01pbERqMWRMbEN0Q25TenNzejI3RkV6R0Jycm5XLWZnaTFSTnBiSjJpZDFPTTBFTkhpSU1BLWFPTlM0aGRhWE9vOWExTjQya2VhNkRXbHZGSWZZdUFmZVozMFFQRjdZalRDRzhSMFBWcU4wQjY1SHpkTFYxc05CWDVZSTl1Zm1YR0xVQXHSAbwBQVVfeXFMTzVaTnNDVlFFWlk1bGdaMGNsVXVmS0IyNHE3QzhHdXZyOEswQ1luZFlUQldMMXpzcW9Fb2N4cjdqTzloeTBieU5UNDN3M25saUJ5SC0yWXhTbS1HM3FrMFU3bmZ5VkxCQmdPWGRIdnNDbWMyMGZ1Y1JuNHVFM1A3Y3Rqbm43djJ5b0V5djFFMDM5MEJzN1h4TzNpaXdIbXlqUmhvdEdWaXBCVU9sYklURVM2SWhfVXNxaVJiRl8?oc=5",
+   "data": "2026-11-13T21:52:54Z",
+   "coletado_em": "2026-11-13T23:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "contratos"
    ]
   },
   {
