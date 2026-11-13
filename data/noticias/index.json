@@ -1,6 +1,6 @@
 {
- "ref": "2026-11-12",
- "gerado_em": "2026-11-12T23:39:33Z",
+ "ref": "2026-11-13",
+ "gerado_em": "2026-11-13T00:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -33,8 +33,8 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 11,
-   "aceitos": 11,
+   "lidos": 12,
+   "aceitos": 12,
    "possiveis": 0
   },
   {
@@ -50,7 +50,7 @@
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
    "lidos": 19,
-   "aceitos": 8,
+   "aceitos": 7,
    "possiveis": 2
   },
   {
@@ -74,14 +74,14 @@
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 10,
-   "aceitos": 6,
+   "aceitos": 7,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 56,
+   "lidos": 53,
    "aceitos": 3,
    "possiveis": 6
   },
@@ -99,7 +99,7 @@
    "ok": true,
    "lidos": 54,
    "aceitos": 1,
-   "possiveis": 6
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -147,7 +147,7 @@
    "ok": true,
    "lidos": 21,
    "aceitos": 2,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 9,
+   "lidos": 10,
+   "aceitos": 10,
    "possiveis": 0
   },
   {
@@ -280,19 +280,34 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 299,
-  "possivel": 34,
-  "veiculo_excluido": 37,
+  "sem_contexto": 297,
+  "possivel": 33,
+  "veiculo_excluido": 38,
   "sem_contexto_com_tema": 9,
   "generico_sem_ancora": 3,
   "exterior_sem_ancora": 4,
-  "excluir": 19,
+  "excluir": 18,
   "caixa_alta": 2,
   "outro_estado": 19,
   "veiculo_outra_praca": 7,
-  "sigla_sem_ancora": 11
+  "sigla_sem_ancora": 12
  },
  "itens": [
+  {
+   "id": "ce73d00203cc",
+   "titulo": "Delegado Ícaro Ruginski é convidado a integrar equipe de transição do Governo do ES",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZU50OFJBeURTV21DMGV2QVdXQmoyZFVMUGJYZW9qY3lhTkpraWV6QlBzWWN2OUpiRzhEbERBdVNBOV9LZTBXYnlJX2ZGNEFqSGwtQlhBMkJ4MHRrSHlFcU9jTzBXU0IzQzVqcGl2UWFmVGNsX0l0ZUJTZG9Hdy1mMnRKUDZSTDQ1UjcybERkM285bW83ZlRYZk90Y01jWXFpZXZmU0cwYklvNzdi?oc=5",
+   "data": "2026-11-12T23:42:17Z",
+   "coletado_em": "2026-11-13T00:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
   {
    "id": "170650427469",
    "titulo": "Banestes abre concurso com 645 vagas e salários de até $ 6,3 mil no ES; veja detalhes",
