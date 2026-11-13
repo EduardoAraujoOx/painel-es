@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-13",
- "gerado_em": "2026-11-13T00:17:13Z",
+ "gerado_em": "2026-11-13T01:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 32,
-   "aceitos": 20,
+   "lidos": 31,
+   "aceitos": 19,
    "possiveis": 0
   },
   {
@@ -41,17 +41,17 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 7,
+   "lidos": 8,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 19,
+   "lidos": 18,
    "aceitos": 7,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -65,8 +65,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 11,
-   "aceitos": 11,
+   "lidos": 10,
+   "aceitos": 10,
    "possiveis": 0
   },
   {
@@ -74,7 +74,7 @@
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 10,
-   "aceitos": 7,
+   "aceitos": 6,
    "possiveis": 2
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 53,
+   "lidos": 51,
    "aceitos": 3,
    "possiveis": 6
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 3,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -145,15 +145,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 21,
+   "lidos": 22,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 28,
    "aceitos": 1,
    "possiveis": 10
   },
@@ -169,9 +169,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 3,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -193,9 +193,9 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 2,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -210,8 +210,8 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 6,
-   "possiveis": 4
+   "aceitos": 5,
+   "possiveis": 5
   },
   {
    "fonte": "Folha Vitória",
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -227,7 +227,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "ES Hoje",
@@ -280,19 +280,61 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 297,
-  "possivel": 33,
+  "sem_contexto": 298,
+  "possivel": 37,
+  "veiculo_outra_praca": 8,
   "veiculo_excluido": 38,
   "sem_contexto_com_tema": 9,
   "generico_sem_ancora": 3,
   "exterior_sem_ancora": 4,
-  "excluir": 18,
+  "excluir": 17,
   "caixa_alta": 2,
-  "outro_estado": 19,
-  "veiculo_outra_praca": 7,
-  "sigla_sem_ancora": 12
+  "outro_estado": 17,
+  "sigla_sem_ancora": 11
  },
  "itens": [
+  {
+   "id": "852d4e50f395",
+   "titulo": "Deputados já podem enviar emendas ao orçamento de R$ 36 bilhões para 2027",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/deputados-ja-podem-enviar-emendas-ao-orcamento-de-r-36-bilhoes-para-2027/",
+   "data": "2026-11-13T00:49:32Z",
+   "coletado_em": "2026-11-13T01:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "1b7eb8079ed8",
+   "titulo": "Deputados podem enviar emendas parlamentares ao orçamento",
+   "veiculo": "Folha Vitória",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZ1dIYWt2WnJoemFqcU8xSkM4MC1zWGo2NDVGTl9HbXl4ZlBNQmdHT1QxYkUtTWVkOENuSkdxM25CZl92ckgyMkFuNE5BR1pIOUdvRHZDZ3Bfa2pMbTNoemd1QlYydEZzZ0sxdzRsanZiQjQ2aTNnWGE4T3Nsdk4xdWItMUlPWU5aRTItNVVRdmh4ZDltbE9XOHBOZnFERzFzV2xETm01NV8yT3NpUHFRXzV6cG0?oc=5",
+   "data": "2026-11-13T00:49:32Z",
+   "coletado_em": "2026-11-13T01:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "7f1615fa37a2",
+   "titulo": "Por 45 a 31, Senado aprova texto-base do PLP de ajuste fiscal",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/brasil/por-45-a-31-senado-aprova-texto-base-do-plp-de-ajuste-fiscal-1126",
+   "data": "2026-11-13T00:35:43Z",
+   "coletado_em": "2026-11-13T01:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "ce73d00203cc",
    "titulo": "Delegado Ícaro Ruginski é convidado a integrar equipe de transição do Governo do ES",
@@ -319,6 +361,21 @@
    "possivel": false,
    "triagem": 8,
    "temas": []
+  },
+  {
+   "id": "3d4b61206a12",
+   "titulo": "Pazolini convida Ícaro Ruginski para equipe de transição do governo do ES",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRFBjdHpnZnhuX0VRdGpWYzdHZVZWeXlrci1rREdFLUhZMkIydmFMTDM4bkdHLWV1NHNubkpIU1d0Tkh5S3pJR0dXY3Nrc1dPWDVTbk1LakhTcmFIeWxhYVpHQm9pbmFpaWM2WWptcTdBd0MwOHhGOXFDazJYU21hWVhsRDJtaDFVTWY1R3VWd2N1MENaT0NlVncwS0l3bFRhVTMyVjNwZGpGSTJLbm8zcFBOZDJNSC1acFHSAcIBQVVfeXFMTmstRGVEUUNfajM3VDNKdUdkWjRYR2NURl92TGV4M05EcUp5T3JxdTFpMkV1NkdpU1JlVTZMSjJLWl9YUEc3UzVqbUJTWTV1ZWpjLUc2Z1VVY0ducHhrcWpFeWtCWjg1dTVkQ2Z5RmgtYS1oRGNXSFFuVG5MVEJyeGNZV0hXN21ISUtEaEFoUnEyWTM1Um5uXzAwM1QyTzVNU0xGSDU3ejEzU2k1NmdsamRaWUctWmVCUjJpSkFfZU5jQ0E?oc=5",
+   "data": "2026-11-12T22:38:15Z",
+   "coletado_em": "2026-11-13T01:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
   },
   {
    "id": "65dd964dee88",
