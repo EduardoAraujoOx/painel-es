@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-13",
- "gerado_em": "2026-11-13T12:17:15Z",
+ "gerado_em": "2026-11-13T13:17:17Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,25 +17,25 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 24,
-   "aceitos": 12,
+   "lidos": 22,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 26,
+   "lidos": 25,
    "aceitos": 17,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 10,
-   "possiveis": 0
+   "aceitos": 8,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -51,7 +51,7 @@
    "ok": true,
    "lidos": 18,
    "aceitos": 6,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -65,17 +65,17 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 7,
-   "possiveis": 1
+   "lidos": 9,
+   "aceitos": 6,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 8,
-   "aceitos": 6,
-   "possiveis": 1
+   "aceitos": 5,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -89,15 +89,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 65,
+   "lidos": 62,
    "aceitos": 3,
-   "possiveis": 5
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 66,
+   "lidos": 64,
    "aceitos": 1,
    "possiveis": 5
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 22,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 80,
+   "lidos": 79,
    "aceitos": 16,
    "possiveis": 0
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 10,
+   "lidos": 8,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 3
   },
   {
@@ -234,8 +234,8 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 2,
-   "possiveis": 5
+   "aceitos": 3,
+   "possiveis": 3
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -278,21 +278,33 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 328,
-  "possivel": 37,
-  "veiculo_outra_praca": 10,
-  "veiculo_excluido": 32,
-  "sem_contexto_com_tema": 10,
-  "generico_sem_ancora": 4,
+  "sem_contexto": 329,
+  "possivel": 35,
+  "veiculo_outra_praca": 12,
+  "veiculo_excluido": 31,
+  "sem_contexto_com_tema": 12,
+  "generico_sem_ancora": 3,
   "exterior_sem_ancora": 4,
-  "excluir": 20,
+  "excluir": 19,
   "caixa_alta": 1,
-  "outro_estado": 19,
+  "outro_estado": 16,
   "sigla_sem_ancora": 13
  },
  "itens": [
+  {
+   "id": "16f7ba2e0895",
+   "titulo": "Banestes acumula lucro de R$ 310 milhões em 2026, alta de 1,9%",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/economia/2026/11/banestes-acumula-lucro/",
+   "data": "2026-11-13T12:57:46Z",
+   "coletado_em": "2026-11-13T13:17:17Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "87a24f44baa8",
    "titulo": "Vereadora de Vila Velha denuncia assessor por fotos de servidora municipal",
@@ -305,6 +317,20 @@
    "triagem": 8,
    "temas": [
     "pessoal"
+   ]
+  },
+  {
+   "id": "20ad0f9a3133",
+   "titulo": "Dino mantém prazo inicial da 5x2, mas flexibiliza regra de transição",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMGdKNXppQkZZUnd5c0RfZmhzbEdPZ1VjVmR2b1JMYkpmNjBWbFhnWXJzRUdheTIwRW8tc0ZYS0RYaTVDWEVaZ3Y1ajlqeE9zZkdJN2VyRWdFVmJmdFJKSHFxTlQ2SWkwRGJBYzFBc3VEZjF0S1J3LVNLMUM1UjlfREhtZmZtNm5VWkdiLVgtaHBqN2sxTzlN?oc=5",
+   "data": "2026-11-13T11:54:40Z",
+   "coletado_em": "2026-11-13T13:17:17Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "transicao"
    ]
   },
   {
