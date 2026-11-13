@@ -1,10 +1,10 @@
 {
- "ref": "2026-11-10",
- "gerado_em": "2026-11-10T21:20:00Z",
+ "ref": "2026-11-13",
+ "gerado_em": "2026-11-13T15:19:57Z",
  "primeiro_levantamento": "2026-10-30",
  "baseline": false,
  "contagem": {
-  "suspenso": 24,
+  "suspenso": 25,
   "rescindido": 75,
   "anulado": 50
  },
@@ -12,6 +12,12 @@
   {
    "data": "2026-10-30",
    "suspenso": 24,
+   "rescindido": 75,
+   "anulado": 50
+  },
+  {
+   "data": "2026-11-13",
+   "suspenso": 25,
    "rescindido": 75,
    "anulado": 50
   }
@@ -53,6 +59,13 @@
    "valor": 239684755.56
   },
   {
+   "orgao": "SUPERINTENDÊNCIA REGIONAL DE SAÚDE DE VITÓRIA",
+   "suspenso": 6,
+   "rescindido": 0,
+   "anulado": 0,
+   "valor": 113181.2
+  },
+  {
    "orgao": "HOSPITAL DE SÃO JOSÉ DO CALÇADO",
    "suspenso": 1,
    "rescindido": 4,
@@ -65,13 +78,6 @@
    "rescindido": 4,
    "anulado": 1,
    "valor": 2668746.4
-  },
-  {
-   "orgao": "SUPERINTENDÊNCIA REGIONAL DE SAÚDE DE VITÓRIA",
-   "suspenso": 5,
-   "rescindido": 0,
-   "anulado": 0,
-   "valor": 100421.2
   },
   {
    "orgao": "ESCOLA DE SERVIÇO PÚBLICO DO EPÍRITO SANTO",
@@ -228,7 +234,9 @@
    "valor": 21980.0
   }
  ],
- "novos": [],
+ "novos": [
+  "169|Ordem de Execução de Serviço 291100/2024|Ordem de Execução de Serviço|27512782000102|2024-07-11"
+ ],
  "saidas": [],
  "itens": [
   {
@@ -536,6 +544,24 @@
    "categoria": "suspenso",
    "ano": "2022",
    "visto_em": null
+  },
+  {
+   "id": "169|Ordem de Execução de Serviço 291100/2024|Ordem de Execução de Serviço|27512782000102|2024-07-11",
+   "orgao": "SUPERINTENDÊNCIA REGIONAL DE SAÚDE DE VITÓRIA",
+   "orgao_id": "169",
+   "documento": "Ordem de Execução de Serviço 291100/2024",
+   "tipo": "Ordem de Execução de Serviço",
+   "fornecedor": "ELITE CIRURGICA LTDA",
+   "cnpj": "27512782000102",
+   "objeto": "EXAME BERA (POTENCIAL AUDITIVO DE TRONCO ENCEFÁLICO).",
+   "valor_inicial": 12760.0,
+   "valor_final": 12760.0,
+   "celebracao": "2024-07-11",
+   "fim": null,
+   "situacao": "Instrumento Contratual com Execução Suspensa",
+   "categoria": "suspenso",
+   "ano": "2024",
+   "visto_em": "2026-11-13T15:19:57Z"
   },
   {
    "id": "163|Autorização de Compra/Ordem de Fornecimento 0494/2025|Autorização de Compra/Ordem de Fornecimento|33846912000138|2025-04-23",

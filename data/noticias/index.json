@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-13",
- "gerado_em": "2026-11-13T14:17:14Z",
+ "gerado_em": "2026-11-13T15:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 66,
+   "lidos": 68,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 1,
+   "lidos": 0,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -139,13 +139,13 @@
    "ok": true,
    "lidos": 27,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 21,
+   "lidos": 20,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 27,
    "aceitos": 0,
    "possiveis": 11
   },
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 3,
+   "aceitos": 1,
    "possiveis": 3
   },
   {
@@ -243,7 +243,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 2,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "A Gazeta",
@@ -280,19 +280,33 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 337,
-  "possivel": 35,
+  "sem_contexto": 338,
+  "possivel": 36,
   "veiculo_outra_praca": 12,
-  "veiculo_excluido": 29,
+  "veiculo_excluido": 28,
   "sem_contexto_com_tema": 9,
-  "generico_sem_ancora": 4,
+  "generico_sem_ancora": 3,
   "exterior_sem_ancora": 3,
-  "excluir": 18,
+  "excluir": 19,
   "caixa_alta": 1,
-  "outro_estado": 17,
+  "outro_estado": 16,
   "sigla_sem_ancora": 13
  },
  "itens": [
+  {
+   "id": "8398758b15b7",
+   "titulo": "Ex-secretário de Linhares é indiciado por assédio sexual contra ex-servidora e invasão de dispositivo informático",
+   "veiculo": "G1 Espírito Santo",
+   "url": "https://g1.globo.com/es/espirito-santo/norte-noroeste-es/noticia/2026/11/13/ex-secretario-de-linhares-e-indiciado-por-assedio-sexual-contra-ex-servidora-e-invasao-de-dispositivo-informatico.ghtml",
+   "data": "2026-11-13T14:15:26Z",
+   "coletado_em": "2026-11-13T15:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "af750c117201",
    "titulo": "Novos contornos, duplicações e restaurações marcam segundo ano do novo contrato da Ecovias Capixaba",
@@ -410,6 +424,21 @@
    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNUjJvU0JhX2dBQVRVZ0ltYUE5VU1vNEwyUURzZXdGWjVVQXZRU1I4MGl6QUhRNWQ4al9rZ2VDajFGdTZJcDRpZGJ6M3ozQ2JPWVJhM1JYQ2ZBLXdUTnJFQnNUa2ZSMXhmMGdRd1FNaUY5OXdibVhvR1hrWVZvNnVXSDQyczBqNmVJc0xmQWpJbHFwNUNNNWZJV3VhTUE1dndObzBKeUJhaTJFZnlGdkxON1lCb3U0LXFfNWxSRGd3WnBnQUFGbVpOS0N3U3c3Q2tDdllMX29neEJWRUJpWkJ3?oc=5",
    "data": "2026-11-13T09:10:34Z",
    "coletado_em": "2026-11-13T09:17:19Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "7324fb6d01d9",
+   "titulo": "Cotado para assumir a Sesp ou o comando da Polícia Civil, delegado Ícaro Ruginski entra na equipe de transição de Pazolini",
+   "veiculo": "Blog do Elimar Cortes",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNUjJvU0JhX2dBQVRVZ0ltYUE5VU1vNEwyUURzZXdGWjVVQXZRU1I4MGl6QUhRNWQ4al9rZ2VDajFGdTZJcDRpZGJ6M3ozQ2JPWVJhM1JYQ2ZBLXdUTnJFQnNUa2ZSMXhmMGdRd1FNaUY5OXdibVhvR1hrWVZvNnVXSDQyczBqNmVJc0xmQWpJbHFwNUNNNWZJV3VhTUE1dndObzBKeUJhaTJFZnlGdkxON1lCb3U0LXFfNWxSRGd3WnBnQUFGbVpOS0N3U3c3Q2tDdllMX29neEJWRUJpWkJ3?oc=5",
+   "data": "2026-11-13T09:10:16Z",
+   "coletado_em": "2026-11-13T15:17:14Z",
    "outras": [],
    "possivel": false,
    "triagem": 8,
