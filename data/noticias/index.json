@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-13",
- "gerado_em": "2026-11-13T15:17:14Z",
+ "gerado_em": "2026-11-13T16:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 25,
-   "aceitos": 16,
+   "aceitos": 17,
    "possiveis": 3
   },
   {
@@ -50,7 +50,7 @@
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
    "lidos": 18,
-   "aceitos": 5,
+   "aceitos": 6,
    "possiveis": 3
   },
   {
@@ -73,8 +73,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 4,
+   "lidos": 8,
+   "aceitos": 5,
    "possiveis": 2
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 68,
+   "lidos": 70,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -169,17 +169,17 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 1,
+   "lidos": 6,
+   "aceitos": 2,
    "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 8,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 4,
    "possiveis": 3
   },
   {
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 3
   },
   {
@@ -250,8 +250,8 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
-   "possiveis": 0
+   "aceitos": 5,
+   "possiveis": 1
   },
   {
    "fonte": "A Gazeta",
@@ -278,21 +278,78 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto": 338,
+  "sem_contexto": 335,
   "possivel": 36,
-  "veiculo_outra_praca": 12,
+  "veiculo_outra_praca": 11,
   "veiculo_excluido": 28,
-  "sem_contexto_com_tema": 9,
+  "sem_contexto_com_tema": 10,
   "generico_sem_ancora": 3,
   "exterior_sem_ancora": 3,
-  "excluir": 19,
+  "excluir": 20,
   "caixa_alta": 1,
-  "outro_estado": 16,
+  "outro_estado": 15,
   "sigla_sem_ancora": 13
  },
  "itens": [
+  {
+   "id": "d1f9add8fabd",
+   "titulo": "Deputados do ES já podem apresentar emendas ao Orçamento de 2027",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/politica/deputados-do-es-ja-podem-apresentar-emendas-ao-orcamento-de-1126",
+   "data": "2026-11-13T15:59:00Z",
+   "coletado_em": "2026-11-13T16:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "8493ea9ffa3a",
+   "titulo": "Câmara da Serra oficializa retorno de Saulinho à presidência e exonera servidores de suplente",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/politica/camara-da-serra-oficializa-retorno-de-saulinho-a-presidencia-e-exonera-servidores-de-suplente-1126",
+   "data": "2026-11-13T15:40:48Z",
+   "coletado_em": "2026-11-13T16:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "899be5de7b53",
+   "titulo": "Governo Pazolini: nove estão no radar para assumir cargos em 2027",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/bastidores-da-politica/2026/11/governo-pazolini-secretario/",
+   "data": "2026-11-13T15:19:11Z",
+   "coletado_em": "2026-11-13T16:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "2fff38cde2d0",
+   "titulo": "Governo Pazolini: nove nomes cotados para 2027",
+   "veiculo": "ES Hoje",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZHFSVWVNcG5RUi11TGpxbUE4cVVBV1JQOWU4WEQ5SG9yRjRwd2ozZm9qanAwdHp4WUdxV0JMcm5Mc2Y1eF8xOXF4WVZnRjdITzlBMmx0T2hwWXFvclpYdUR1U1MwYnJickRQZDA3SUlXdkowcFJ0bFRnaGJPYUtDRVFmRDZ4UW50aWJ1a3gzakVVV3R1?oc=5",
+   "data": "2026-11-13T15:19:11Z",
+   "coletado_em": "2026-11-13T16:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
   {
    "id": "8398758b15b7",
    "titulo": "Ex-secretário de Linhares é indiciado por assédio sexual contra ex-servidora e invasão de dispositivo informático",
