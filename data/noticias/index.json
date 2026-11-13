@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-13",
- "gerado_em": "2026-11-13T20:17:13Z",
+ "gerado_em": "2026-11-13T21:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 19,
+   "lidos": 18,
    "aceitos": 6,
    "possiveis": 0
   },
@@ -25,31 +25,31 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 26,
+   "lidos": 27,
    "aceitos": 16,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 5,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 9,
+   "lidos": 10,
+   "aceitos": 10,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 18,
+   "lidos": 17,
    "aceitos": 6,
    "possiveis": 3
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 70,
+   "lidos": 69,
    "aceitos": 2,
    "possiveis": 4
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 62,
+   "lidos": 63,
    "aceitos": 1,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -146,14 +146,14 @@
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 19,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 30,
    "aceitos": 0,
    "possiveis": 12
   },
@@ -162,7 +162,7 @@
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 77,
-   "aceitos": 14,
+   "aceitos": 13,
    "possiveis": 0
   },
   {
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 1,
+   "lidos": 8,
+   "aceitos": 2,
    "possiveis": 2
   },
   {
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 3,
-   "possiveis": 2
+   "possiveis": 4
   },
   {
    "fonte": "Folha Vitória",
@@ -235,14 +235,14 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "G1 Espírito Santo",
    "consulta": "https://g1.globo.com/rss/g1/es/espirito-santo/",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -258,7 +258,7 @@
    "consulta": "https://www.agazeta.com.br/colunas/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -278,22 +278,75 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto": 348,
-  "possivel": 34,
+  "sem_contexto": 343,
+  "possivel": 36,
   "oficial_sem_tema": 2,
   "veiculo_excluido": 23,
-  "sem_contexto_com_tema": 9,
+  "sem_contexto_com_tema": 11,
   "generico_sem_ancora": 3,
   "exterior_sem_ancora": 2,
   "excluir": 24,
   "caixa_alta": 1,
-  "outro_estado": 15,
+  "outro_estado": 17,
   "sigla_sem_ancora": 14,
   "veiculo_outra_praca": 11
  },
  "itens": [
+  {
+   "id": "9e95a8dd2fa5",
+   "titulo": "Faça Fácil de Cariacica terá serviços suspensos por uma semana",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/cotidiano/faca-facil-de-cariacica-tera-servicos-suspensos-por-uma-semana-1126",
+   "data": "2026-11-13T20:51:36Z",
+   "coletado_em": "2026-11-13T21:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "restricao",
+    "contratos"
+   ]
+  },
+  {
+   "id": "5a243500fb94",
+   "titulo": "Comissão da Assembleia reúne denúncias de violência política em 14 cidades do Espírito Santo",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/comissao-da-assembleia-reune-denuncias-de-violencia-politica-em-14-cidades-do-espirito-santo/",
+   "data": "2026-11-13T20:47:23Z",
+   "coletado_em": "2026-11-13T21:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "2c33be4b4d3e",
+   "titulo": "Ufes e Ifes vão buscar recursos de Acordo do Rio Doce para reformas e modernização",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/cotidiano/chamada-publica-preve-r-80-milhoes-para-modernizar-instituicoes-de-ensino-1126",
+   "data": "2026-11-13T20:46:00Z",
+   "coletado_em": "2026-11-13T21:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "25c6a6ab6dd2",
+   "titulo": "Vocação logística do ES gera oportunidades e dita o ritmo do desenvolvimento do Estado",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/pelo-mercado/vocacao-logistica-do-es-gera-oportunidades-e-dita-o-ritmo-do-desenvolvimento-do-estado-1126",
+   "data": "2026-11-13T20:16:25Z",
+   "coletado_em": "2026-11-13T21:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "039ec49d707b",
    "titulo": "Detran retoma emissão de CNHs após suspensão provocada por incêndio em Palmas",
@@ -315,7 +368,12 @@
    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxObThTTW1ScG5iSEUtYmFEeXpCZTFJcTF1NzNaSjVVYlNwclVNNFJZRHFpdERwRkxRd2RlQnNWTlMzYjB1cHdMbmdma0pHVlp6VERydzRvRjZTYU9VcXZkSWZYd3lzU0o5UnVxMHQxRHJWUnlHQWRoNENUUGV5WG5LZ3RoYy1ZZktHczYxYXNCbDdPblZQbEtSY3V2d3ZxeFpySDJabnRTbElHWWZYZERMSC1XcURfOFNzUW9PdlJYVjVoWDQ?oc=5",
    "data": "2026-11-13T19:48:31Z",
    "coletado_em": "2026-11-13T20:17:13Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Secretaria de Estado do Governo",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMjdkMm1xdGZNX2tPZlI3eTlXT0RzTTlmeWZHMFo4WkNCWjFlOGRoTTNoN181andUdUo0STNaT1djTWdteFpyVi1rZ05Md0hPM1Zjd1JuYlZrZkJYeWxaZF9wdXJQNEJnYlVfZlVXVUNwSU9WSWpjems5b3V5aDd6RGF0aDRSeHZfeWtLUnpYMFZvWUxjV0l3VTVzRFg0MGlmb19Lbl9LbVhxNTlNT3V6Q3hQcw?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 8,
    "temas": [
@@ -943,6 +1001,21 @@
    "possivel": false,
    "triagem": 8,
    "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "8ef92d49e822",
+   "titulo": "Pazolini convida delegado Ícaro Ruginski para integrar equipe de transição do Governo do Estado",
+   "veiculo": "Aqui Notícias",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNR3hxV3Nydy14WkVidzczVlpSanBSWmxDWS11bUUwRVFNTWJVRUg2UXVwaWxscVRBM3c0c1JIcnZHaGdjbVpVOW5iUnVXNEFpM0ltdEJ1OUlkZUFMRHhxNkN6NjNPRmx0RzRscmVRNmFIRURhM19NeHpMakMyZTREZnF0SGpFcnZQaVlURk5RS1FMUkFrSzRtVUVyY0FLYV9lUGl5ZFlORXJUNmhxb0FWd1hERk9XSl81QXYteUVoSGo5aEpGQWR1UA?oc=5",
+   "data": "2026-11-12T20:40:23Z",
+   "coletado_em": "2026-11-13T21:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao",
     "governador"
    ]
   },
@@ -2220,6 +2293,10 @@
     {
      "veiculo": "jornaljc.com.br",
      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNc1g3a0dwX0hTSGU5N0N3cXpqSy16UGpfaXlONFNMOXhuZ3diZFc0TlFVNXEwenBjazRyaVFvTW5IWXlTOTlQRU9rcmlBQU1QdVYtbDAwTGs0QWNsUkgwU2wzSXQ1SDVjaXNKbGcwWWx4cU5OcGc4YWlhXzJwOEdFdFh4MjlyUjZjN3BpY3pIcTJ4OFcxOTJ0eUdySGxMaUNBWjNxc0FmeWRFdXpId21mM1pnSTNEamFwT0ZQM0I0eFJhZmVQSzNwSURtOVpiQQ?oc=5"
+    },
+    {
+     "veiculo": "Portal Palhoça",
+     "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNNFZnSXdRZ2ZvS3FUSlVBVEVDclMzdnhDUGJGRFk4YXlBTUljZVJWaVdienlhdThxNGhPVEdhSXN1dXJSZ1lFS0VhVmkxMG5xb1JXWE5OR1hCZUVDZ1BQbHZpYlFLWjE3VXhmSTBJdXZEa2VsUXE1TVNjajBidDNvVVpHeHdfSHBveUhQajF5blE2cGRDWDdXQ1FOSklUMnR2RFVxVm81cmh2TmlmOGhMd1JadVAzRlJBbXVndW44NWY5aThxV1F2UVpFZGptd1ZVYTV1ajRTZ0taVkdnZHc?oc=5"
     }
    ],
    "possivel": true,

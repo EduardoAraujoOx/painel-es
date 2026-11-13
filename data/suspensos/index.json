@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-13",
- "gerado_em": "2026-11-13T15:19:57Z",
+ "gerado_em": "2026-11-13T21:20:04Z",
  "primeiro_levantamento": "2026-10-30",
  "baseline": false,
  "contagem": {
@@ -234,9 +234,7 @@
    "valor": 21980.0
   }
  ],
- "novos": [
-  "169|Ordem de Execução de Serviço 291100/2024|Ordem de Execução de Serviço|27512782000102|2024-07-11"
- ],
+ "novos": [],
  "saidas": [],
  "itens": [
   {
