@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-13",
- "gerado_em": "2026-11-13T01:17:14Z",
+ "gerado_em": "2026-11-13T06:46:46Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 31,
+   "lidos": 30,
    "aceitos": 19,
    "possiveis": 0
   },
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 23,
-   "aceitos": 18,
-   "possiveis": 2
+   "lidos": 25,
+   "aceitos": 17,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 8,
+   "lidos": 9,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
@@ -51,7 +51,7 @@
    "ok": true,
    "lidos": 18,
    "aceitos": 7,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -74,8 +74,8 @@
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 10,
-   "aceitos": 6,
-   "possiveis": 2
+   "aceitos": 8,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -89,17 +89,17 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 51,
+   "lidos": 57,
    "aceitos": 3,
-   "possiveis": 6
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
    "lidos": 54,
-   "aceitos": 1,
-   "possiveis": 5
+   "aceitos": 2,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 2,
-   "possiveis": 1
+   "lidos": 6,
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -129,8 +129,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 2,
+   "lidos": 4,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -139,7 +139,7 @@
    "ok": true,
    "lidos": 27,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -147,7 +147,7 @@
    "ok": true,
    "lidos": 22,
    "aceitos": 2,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -161,17 +161,17 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 79,
-   "aceitos": 15,
+   "lidos": 81,
+   "aceitos": 16,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 3,
-   "possiveis": 2
+   "lidos": 7,
+   "aceitos": 2,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 2,
    "possiveis": 4
   },
@@ -210,8 +210,8 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 5,
-   "possiveis": 5
+   "aceitos": 4,
+   "possiveis": 4
   },
   {
    "fonte": "Folha Vitória",
@@ -227,7 +227,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 2,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "ES Hoje",
@@ -278,21 +278,59 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 298,
-  "possivel": 37,
+  "sem_contexto": 303,
+  "possivel": 38,
   "veiculo_outra_praca": 8,
   "veiculo_excluido": 38,
-  "sem_contexto_com_tema": 9,
-  "generico_sem_ancora": 3,
+  "sem_contexto_com_tema": 8,
+  "generico_sem_ancora": 4,
   "exterior_sem_ancora": 4,
-  "excluir": 17,
+  "excluir": 19,
   "caixa_alta": 2,
   "outro_estado": 17,
-  "sigla_sem_ancora": 11
+  "sigla_sem_ancora": 12
  },
  "itens": [
+  {
+   "id": "dc75fd9fb801",
+   "titulo": "Concurso Banestes 2026 abre 645 vagas para níveis médio e superior com salários de até R$ 6,3 mil",
+   "veiculo": "Informe Capixaba",
+   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9TTFJpZGI5MWI5YktsSi05RFVhaE13bkszR2k2cS13WVRKX3QtbGRzYWxzR1V1YUoxN05ZRnkyYmhfd1BydTlxaWJRY0h4Y2lwMnYxemF2d1Uzc09VV21mTGZlMjBDNWNYVW92UWkwcUJ0UQ?oc=5",
+   "data": "2026-11-13T04:51:57Z",
+   "coletado_em": "2026-11-13T06:46:46Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "047c3ffcb775",
+   "titulo": "Espírito Santo: será um governo da ruptura ou da continuidade?",
+   "veiculo": "Nexo Jornal",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVkRzUGJHTzJvRV84Mkc0d0FPYnVWQkNUM1gzalZUUUNablRnSW1JbHMycHdqM1l3QkwzV211SnhERXluTUhXTUhzNGdXTE1nOHQ4dl94cnFHZk9INXFGZ3VhTWxWWm5NWThSc28zZVJEc3ZMWWxaMmQ4elpMYXMwcFNRMDRvXzg5ZVF5azU0UjREVGUwZWkzVHdOSzZPOEFKdklSbjdhOA?oc=5",
+   "data": "2026-11-13T02:11:24Z",
+   "coletado_em": "2026-11-13T06:46:46Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "6386c1faed78",
+   "titulo": "Senado aprova texto-base de ajuste fiscal de até R$ 56 bilhões",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/senado-aprova-texto-base-do-projeto-de-lei-com-ajuste-fiscal-que-pode-chegar-a-r-56-bi-em-2027/",
+   "data": "2026-11-13T02:10:55Z",
+   "coletado_em": "2026-11-13T06:46:46Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "852d4e50f395",
    "titulo": "Deputados já podem enviar emendas ao orçamento de R$ 36 bilhões para 2027",
@@ -389,6 +427,20 @@
    "triagem": 8,
    "temas": [
     "pessoal"
+   ]
+  },
+  {
+   "id": "603d87959d42",
+   "titulo": "Vereadores impõem nova derrota ao Executivo e rejeitam urgência para remanejamento de R$ 11 milhões no Orçamento de 2027",
+   "veiculo": "Portal Pebinha de Açúcar",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQX3QxbWdhcl9XX0dMY1dzSnJuRDVqZUM4Uk5HUGk4N05ybFAwUWtNX3czVjZVd2h3ci1vSUtTTXB2TS1kMXh1MElVbFNhRUpDbjh2enhBS3RrbUhac1hIUW5JTEVzLVRBOG1hREtBcHNhY01hanJKNUp2bFkzbGZmellwU2RpOEJLMTdfOWpXcjY2UDNiNWVWOVBEaV9GRUNXcklfb1dSN3dEUWY5M1VXMkl3WUFnd3NrVlNZTE9NQ1lNV3E1UjJMc3ZzT1hUcktPN1p6WV9USmVQSll5RUE?oc=5",
+   "data": "2026-11-12T22:28:00Z",
+   "coletado_em": "2026-11-13T06:46:46Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
    ]
   },
   {
@@ -762,6 +814,20 @@
    "possivel": true,
    "triagem": 8,
    "temas": []
+  },
+  {
+   "id": "5a4ea0074dd8",
+   "titulo": "Polícia Federal investiga fraude de estabelecimento do ES contra o programa Farmácia Popular",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORGVObTh4d25mSEZYR1V4YWs4QjRMT0hkekRLSFkwa1YxXy1hSVFiaS1KTjRjSGlUQnRkRTFzb1pJZ2tEOWtKWk90cDlJbDNWZHZ0MmVWUG5WNHgwWlY4bVRwWHBKQ3VNMzJ0R0hXS2Z5S2YyT0VzMkFLNHRwQ3VDSFo0bTdWbWo0MjNPbDBoRl90M0YyQ0ptbDFXaTR0NkJ6UlhaT25nbTB1aXd3NllkZldNTnhfaG9q?oc=5",
+   "data": "2026-11-12T16:38:39Z",
+   "coletado_em": "2026-11-13T06:46:46Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "controle"
+   ]
   },
   {
    "id": "80134545779f",
@@ -1140,6 +1206,14 @@
     {
      "veiculo": "A Gazeta",
      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNcmQ0akhsQUVFV2cyRXFXZThRUUxIaVM1YjFFTjRTWHZwb21tSklKdVJWLUgyZ0o2VkNsZnVCVDlicEdGaWk4VTBFbDczYUFkQkZUN3huMDZaeE9YSTB6VlZubGtLNnpWcDNyeFEtV05IMDdsaS1xU1lxWFVzR01tb3dzNWt4QUxiS1Yza19ORXJVZS1nSUFZRlBCWDI1TkQzQU02Y3JpUGRjNEl2ZFRMa0ZrbDh1LWdfQXY1RQ?oc=5"
+    },
+    {
+     "veiculo": "Tribuna Online",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNcTU1TG9lMWhUNC1fVk5haVIzMEwzRlNDWkhoTXRfdXk4V0tKdUZtVlZReHRENzJCVHIzVnhpSVVtTWRHcTJ5TlF0WUFDOTRTZ2NXRF82WFRtLWxQQ2JLRTBNYU1PQVhUeGRZTXhXdW5tUHluNm1LczFMSHlZMFowalB2T1JxSHNHNlRuUERUR1V0WlZRMy0zUUNBbjI2Tm44ZEw3OFZOU0ZKcDQ5a0sxQmowQVhaR1hrbEdhU01SY2NscnFpZjg0ZTNB0gHKAUFVX3lxTE1xNTVMb2UxaFQ0LV9WTmFpUjMwTDNGU0NaSGhNdF91eThXS0p1Rm1WVlF4dEQ3MkJUcjNWeGlJVW1NZEdxMnlOUXRZQUM5NFNnY1dEXzZYVG0tbFBDYktFME1hTU9BWFR4ZFlNeFd1bm1QeW42bUtzMUxIeVkwWjBqUHZPUnFIc0c2VG5QRFRHVXRaVlEzLTNRQ0FuMjZObjhkTDc4Vk5TRkpwNDlrSzFCajBBWFpHWGtsR2FTTVJjY2xycWlmODRlM0E?oc=5"
+    },
+    {
+     "veiculo": "Tribuna Online",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNT3VsQ09QQU94TUFTUExoaXA3RWZsNlAtMjZWOHFTTEl4R3drTDlwbVpHQ0k5b05TVmJuZ1FKdmdOWE5MSkNUZEp5bDdiUnhTclM4d3VpNGFHZkVzTFFKbHB3dFZ6XzdGazNBMjBpWXBtSEQ1VWNkcVlYR1AtQjh0XzI3Mm5rV19oX1c0YUx2T0JSUnNINFdZeEFaTmRFSGFKMDFnLWdibkl5eDBMa2ZOMGpOWHRiRW9udXJGTE9ZZjlLd9IBygFBVV95cUxNcTU1TG9lMWhUNC1fVk5haVIzMEwzRlNDWkhoTXRfdXk4V0tKdUZtVlZReHRENzJCVHIzVnhpSVVtTWRHcTJ5TlF0WUFDOTRTZ2NXRF82WFRtLWxQQ2JLRTBNYU1PQVhUeGRZTXhXdW5tUHluNm1LczFMSHlZMFowalB2T1JxSHNHNlRuUERUR1V0WlZRMy0zUUNBbjI2Tm44ZEw3OFZOU0ZKcDQ5a0sxQmowQVhaR1hrbEdhU01SY2NscnFpZjg0ZTNB?oc=5"
     }
    ],
    "possivel": true,

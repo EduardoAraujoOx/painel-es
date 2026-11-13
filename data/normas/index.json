@@ -1,16 +1,21 @@
 {
- "ref": "2026-11-12",
- "gerado_em": "2026-11-12T09:17:52Z",
+ "ref": "2026-11-13",
+ "gerado_em": "2026-11-13T06:47:13Z",
  "desde": "2026-10-04",
  "primeiro_levantamento": "2026-11-05",
  "baseline": false,
  "contagem": {
-  "decreto": 12,
+  "decreto": 13,
   "transicao": 1,
-  "fiscal": 4,
+  "fiscal": 7,
   "lei": 7
  },
- "novos": [],
+ "novos": [
+  "2061225",
+  "2060143",
+  "2060153",
+  "2060680"
+ ],
  "edicoes_lidas": [
   11522,
   11524,
@@ -68,7 +73,8 @@
   11618,
   11621,
   11623,
-  11628
+  11628,
+  11633
  ],
  "ignoradas": [
   "2040862",
@@ -79,9 +85,72 @@
   "2052816",
   "2052817",
   "2052820",
-  "2052823"
+  "2052823",
+  "2061092",
+  "2061099",
+  "2061106",
+  "2061115",
+  "2061117",
+  "2061134",
+  "2061154"
  ],
  "itens": [
+  {
+   "id": "2061225",
+   "edicao": 11633,
+   "data": "2026-11-13",
+   "tipo": "decreto",
+   "temas": [
+    "outro"
+   ],
+   "titulo": "DECRETO Nº 6526-R - Parâmetros de avaliação dos Programas de Integridade",
+   "orgao": "Governadoria do Estado",
+   "ementa": "Dispõe sobre os parâmetros de avaliação dos Programas de Integridade, no âmbito das contratações realizadas pela Administração Pública Estadual direta, autárquica e fundacional, e dá outras providências.",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2061225/11633",
+   "visto_em": "2026-11-13T06:47:13Z"
+  },
+  {
+   "id": "2060680",
+   "edicao": 11633,
+   "data": "2026-11-13",
+   "tipo": "fiscal",
+   "temas": [
+    "encerramento"
+   ],
+   "titulo": "Encaminhamento 2026-048XRG - Portaria 1269-S - Constituição das Comissões para o Encerramento do Exercício Financeiro de 2026 - SEGER - publicar",
+   "orgao": "Secretaria de Estado de Gestão e Recursos Humanos - SEGER -",
+   "ementa": null,
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2060680/11633",
+   "visto_em": "2026-11-13T06:47:13Z"
+  },
+  {
+   "id": "2060153",
+   "edicao": 11633,
+   "data": "2026-11-13",
+   "tipo": "fiscal",
+   "temas": [
+    "encerramento"
+   ],
+   "titulo": "PORTARIA 431-S/2026 - ENCERRAMENTO EXERCICIO/2026 - UIJM",
+   "orgao": "Secretaria de Estado da Saúde - SESA -",
+   "ementa": null,
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2060153/11633",
+   "visto_em": "2026-11-13T06:47:13Z"
+  },
+  {
+   "id": "2060143",
+   "edicao": 11633,
+   "data": "2026-11-13",
+   "tipo": "fiscal",
+   "temas": [
+    "encerramento"
+   ],
+   "titulo": "PORTARIA 430-S/2026 - ENCERRAMENTO DE EXERCICIO/2026 - CAPPAC",
+   "orgao": "Secretaria de Estado da Saúde - SESA -",
+   "ementa": null,
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2060143/11633",
+   "visto_em": "2026-11-13T06:47:13Z"
+  },
   {
    "id": "2059561",
    "edicao": 11628,
