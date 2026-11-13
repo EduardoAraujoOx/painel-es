@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-13",
- "gerado_em": "2026-11-13T11:17:16Z",
+ "gerado_em": "2026-11-13T12:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 25,
-   "aceitos": 14,
+   "lidos": 24,
+   "aceitos": 12,
    "possiveis": 0
   },
   {
@@ -65,23 +65,23 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 9,
-   "possiveis": 0
+   "lidos": 8,
+   "aceitos": 7,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 7,
+   "lidos": 8,
+   "aceitos": 6,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 64,
+   "lidos": 65,
    "aceitos": 3,
    "possiveis": 5
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -154,14 +154,14 @@
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 28,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 11
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 79,
+   "lidos": 80,
    "aceitos": 16,
    "possiveis": 0
   },
@@ -169,8 +169,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 2,
+   "lidos": 6,
+   "aceitos": 1,
    "possiveis": 3
   },
   {
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 3
   },
   {
@@ -234,8 +234,8 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 3,
-   "possiveis": 3
+   "aceitos": 2,
+   "possiveis": 5
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -280,19 +280,47 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 324,
-  "possivel": 34,
-  "veiculo_outra_praca": 9,
+  "sem_contexto": 328,
+  "possivel": 37,
+  "veiculo_outra_praca": 10,
   "veiculo_excluido": 32,
-  "sem_contexto_com_tema": 9,
+  "sem_contexto_com_tema": 10,
   "generico_sem_ancora": 4,
   "exterior_sem_ancora": 4,
-  "excluir": 22,
+  "excluir": 20,
   "caixa_alta": 1,
   "outro_estado": 19,
   "sigla_sem_ancora": 13
  },
  "itens": [
+  {
+   "id": "87a24f44baa8",
+   "titulo": "Vereadora de Vila Velha denuncia assessor por fotos de servidora municipal",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/vila-velha-denuncia-assessor/",
+   "data": "2026-11-13T12:07:29Z",
+   "coletado_em": "2026-11-13T12:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "68fb5f81b154",
+   "titulo": "TCE condena instituto a devolver R$ 683 mil ao Estado",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/tribunal-contas-condena-instituto/",
+   "data": "2026-11-13T11:19:26Z",
+   "coletado_em": "2026-11-13T12:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "controle"
+   ]
+  },
   {
    "id": "6eb91935bccc",
    "titulo": "Detran publica lista de 1.063 motoristas que podem ter a CNH suspensa por até um ano",
@@ -890,6 +918,18 @@
    "temas": [
     "controle"
    ]
+  },
+  {
+   "id": "f38c15a13090",
+   "titulo": "Assembleia do ES é a mais transparente do país e Poder mais transparente do estado",
+   "veiculo": "portal jornal do norte",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNYWVMN3MtU0t1VVlTY2laVmpsSEM4aXZHX08zSnVqaWxMbGQ0V2NBTFN3VC1RbHNwQlYxRnpwUnVtWDE1cXpYVnRPZHZuMkF1eGVUbnJrN1QtYjQ3dHVHUVVBV0JuRWVidzNSbGp6enN3X3FVUkJZRnlDemI2TE1feTVCdTRaMzZHb2hSRDlJVWFxSDlCTVAzUGZ6RlVHNWdybF9LVUNGZnlmcTdERVRnQUl5T09DQXhSOXc?oc=5",
+   "data": "2026-11-12T16:26:00Z",
+   "coletado_em": "2026-11-13T12:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
   },
   {
    "id": "80134545779f",
@@ -2498,6 +2538,10 @@
     {
      "veiculo": "SiteBarra",
      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQd29XR3RJdHBnOHBGZkVtN19tNjBTdlZGeTMwaWJNWkZlcF9hV0VNSzM3N3ppSVN4QU5Eb0p3UVBrTldRQWFEX21TV25mZzNpUHVJaERCdHctSmxJNVJrQ1UtOUlSMkJhcThSVGtZQmhSS3A4c05rbG9BeXpqb3lsNWVWcHFRSGNGU1FvTk1CTUNVNi1ETURqbDVoR1RfMC1C?oc=5"
+    },
+    {
+     "veiculo": "portal jornal do norte",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQT0VKNGt4RFlOMmUwcnpwUVM1a0hRN2sySHZfVWdReEk0dFZMcHllaUUtN01CSEQ5N2RSSjZQdkxOajBiOUwwUjdabkRkUXlVVXJ3VnMxa3pWdkg1Zng0eFZkU0NEUlI2MmRsUWVNQUIyLWRlVmZBdTlWTkNBY1pmQk0xaHpWeW1WM1pLNW05Zy12S3BrUlloUmcydzh1Mm1GcjZUdDk1WW5SZw?oc=5"
     }
    ],
    "possivel": false,
