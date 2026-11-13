@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-13",
- "gerado_em": "2026-11-13T06:46:46Z",
+ "gerado_em": "2026-11-13T09:17:19Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,24 +17,24 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 30,
-   "aceitos": 19,
+   "lidos": 29,
+   "aceitos": 18,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 25,
-   "aceitos": 17,
+   "lidos": 27,
+   "aceitos": 19,
    "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 12,
-   "aceitos": 12,
+   "lidos": 11,
+   "aceitos": 11,
    "possiveis": 0
   },
   {
@@ -65,8 +65,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 10,
+   "lidos": 9,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
@@ -74,14 +74,14 @@
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 10,
-   "aceitos": 8,
-   "possiveis": 1
+   "aceitos": 7,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,15 +89,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 57,
-   "aceitos": 3,
+   "lidos": 56,
+   "aceitos": 2,
    "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 54,
+   "lidos": 63,
    "aceitos": 2,
    "possiveis": 6
   },
@@ -129,8 +129,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 1,
+   "lidos": 3,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -138,14 +138,14 @@
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 27,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 22,
+   "lidos": 23,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 27,
    "aceitos": 1,
    "possiveis": 10
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 2,
    "possiveis": 4
   },
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 4,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Folha Vitória",
@@ -242,7 +242,7 @@
    "consulta": "https://g1.globo.com/rss/g1/es/espirito-santo/",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -278,21 +278,36 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 303,
+  "sem_contexto": 310,
   "possivel": 38,
-  "veiculo_outra_praca": 8,
-  "veiculo_excluido": 38,
-  "sem_contexto_com_tema": 8,
+  "veiculo_outra_praca": 10,
+  "veiculo_excluido": 33,
+  "sem_contexto_com_tema": 10,
   "generico_sem_ancora": 4,
   "exterior_sem_ancora": 4,
-  "excluir": 19,
+  "excluir": 20,
   "caixa_alta": 2,
-  "outro_estado": 17,
+  "outro_estado": 18,
   "sigla_sem_ancora": 12
  },
  "itens": [
+  {
+   "id": "5607d79750d7",
+   "titulo": "Cotado para assumir a Sesp ou o comando da Polícia Civil, delegado Ícaro Ruginski entra equipe de transição de Pazolini",
+   "veiculo": "Blog do Elimar Cortes",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNUjJvU0JhX2dBQVRVZ0ltYUE5VU1vNEwyUURzZXdGWjVVQXZRU1I4MGl6QUhRNWQ4al9rZ2VDajFGdTZJcDRpZGJ6M3ozQ2JPWVJhM1JYQ2ZBLXdUTnJFQnNUa2ZSMXhmMGdRd1FNaUY5OXdibVhvR1hrWVZvNnVXSDQyczBqNmVJc0xmQWpJbHFwNUNNNWZJV3VhTUE1dndObzBKeUJhaTJFZnlGdkxON1lCb3U0LXFfNWxSRGd3WnBnQUFGbVpOS0N3U3c3Q2tDdllMX29neEJWRUJpWkJ3?oc=5",
+   "data": "2026-11-13T09:10:34Z",
+   "coletado_em": "2026-11-13T09:17:19Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
   {
    "id": "dc75fd9fb801",
    "titulo": "Concurso Banestes 2026 abre 645 vagas para níveis médio e superior com salários de até R$ 6,3 mil",
