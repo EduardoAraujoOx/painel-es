@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-13",
- "gerado_em": "2026-11-13T10:17:14Z",
+ "gerado_em": "2026-11-13T11:17:16Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,24 +17,24 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 27,
-   "aceitos": 16,
+   "lidos": 25,
+   "aceitos": 14,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 27,
-   "aceitos": 18,
+   "lidos": 26,
+   "aceitos": 17,
    "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 11,
-   "aceitos": 11,
+   "lidos": 10,
+   "aceitos": 10,
    "possiveis": 0
   },
   {
@@ -50,14 +50,14 @@
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
    "lidos": 18,
-   "aceitos": 7,
+   "aceitos": 6,
    "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -73,9 +73,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 7,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 63,
+   "lidos": 64,
    "aceitos": 3,
    "possiveis": 5
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 67,
+   "lidos": 66,
    "aceitos": 1,
-   "possiveis": 6
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -155,13 +155,13 @@
    "ok": true,
    "lidos": 28,
    "aceitos": 1,
-   "possiveis": 10
+   "possiveis": 11
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 81,
+   "lidos": 79,
    "aceitos": 16,
    "possiveis": 0
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 11,
-   "aceitos": 11,
+   "lidos": 10,
+   "aceitos": 10,
    "possiveis": 0
   },
   {
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 3,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -278,21 +278,49 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 326,
-  "possivel": 36,
+  "sem_contexto": 324,
+  "possivel": 34,
   "veiculo_outra_praca": 9,
   "veiculo_excluido": 32,
-  "sem_contexto_com_tema": 10,
+  "sem_contexto_com_tema": 9,
   "generico_sem_ancora": 4,
   "exterior_sem_ancora": 4,
-  "excluir": 20,
+  "excluir": 22,
   "caixa_alta": 1,
   "outro_estado": 19,
-  "sigla_sem_ancora": 12
+  "sigla_sem_ancora": 13
  },
  "itens": [
+  {
+   "id": "6eb91935bccc",
+   "titulo": "Detran publica lista de 1.063 motoristas que podem ter a CNH suspensa por até um ano",
+   "veiculo": "ND Mais",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOUVVrUnprbnhLVEJTdjFQSGwxX2tGQzRQN29NR3JPb3lWUlBXMkd1TWswX3dTaUh4dWlHU2RJODFHaE01NW8zNlJ0Q09PdWFoQThrUDFEYy1UajdfdEtyOExqOHFPRDJjZDFTSENDa0hiRkl5N0JEMjgzYWVVbEVBbHpkRHV0eFpMZHRFVjVzbmZoZw?oc=5",
+   "data": "2026-11-13T11:01:22Z",
+   "coletado_em": "2026-11-13T11:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "76a54cb548cb",
+   "titulo": "Vereador de Vila Velha vê risco à fiscalização da limpeza em contrato de R$ 548 milhões",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/limpeza-fiscalizacao-vila-velha/",
+   "data": "2026-11-13T10:54:32Z",
+   "coletado_em": "2026-11-13T11:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "4b6a45f741d2",
    "titulo": "Açucena: mulher, negra, sapatona e do axé na Ales",
@@ -781,7 +809,12 @@
    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTWs0Vks3b08wV2tUTk4wc09qQUxQbEdfMUtoVkZfNk50ZlpNNTFmR082S3hpdmJMNGlHU1lZanBSMHg5djRwM1VPbDBCWlNrMDF5WENHSVhJLXQ4OG1JdEc0dTZLT3VxSUZ4bjdkc3NXekdZd3d4bjBJRXl2ZjBXTjVsM1NvMmJHdFM3bzd0cW03d3pkUGZUSlczX0QyWktKNkxoS3FlVl9IZ2hWbmEw?oc=5",
    "data": "2026-11-12T18:05:17Z",
    "coletado_em": "2026-11-12T23:17:16Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Jornal Espírito Santo Notícias",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcFFrSjZublNrMy1SUDVxZUJ5V3dGejIzblhhS0ZkbEdVVlYxWEtQTzdabW5aT2lfVmwtNUpxU2FzdUU0OGs3ZnFBczNxeEl6Y1dGSTc5dGRPSjdiOHpKOXVQdllGV25KWVZ4QldUMDdZWmRaTlc3dk96dXFRbFJ1MmpSSHNXS1Z5M04wY0lJN2RESkFZSE1GdjEzLWstdjRkWlRUcFl5VjRxX09rQkFScTlaMUc?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 8,
    "temas": [
