@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-13",
- "gerado_em": "2026-11-13T17:13:48Z",
+ "gerado_em": "2026-11-13T18:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 19,
-   "aceitos": 6,
+   "lidos": 21,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
@@ -33,9 +33,9 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
+   "lidos": 7,
    "aceitos": 6,
-   "possiveis": 2
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -49,9 +49,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 18,
+   "lidos": 19,
    "aceitos": 6,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -59,22 +59,22 @@
    "ok": true,
    "lidos": 2,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 4,
-   "possiveis": 3
+   "lidos": 9,
+   "aceitos": 6,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 5,
+   "lidos": 9,
+   "aceitos": 6,
    "possiveis": 2
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 67,
+   "lidos": 70,
    "aceitos": 2,
    "possiveis": 4
   },
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 1,
+   "lidos": 5,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 28,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 27,
    "aceitos": 0,
    "possiveis": 11
   },
@@ -161,8 +161,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 79,
-   "aceitos": 16,
+   "lidos": 77,
+   "aceitos": 14,
    "possiveis": 0
   },
   {
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -278,21 +278,47 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 327,
-  "possivel": 38,
+  "sem_contexto": 335,
+  "possivel": 35,
   "veiculo_outra_praca": 11,
-  "veiculo_excluido": 29,
-  "sem_contexto_com_tema": 10,
-  "generico_sem_ancora": 3,
+  "veiculo_excluido": 30,
+  "sem_contexto_com_tema": 9,
+  "generico_sem_ancora": 4,
   "exterior_sem_ancora": 3,
-  "excluir": 23,
+  "excluir": 22,
   "caixa_alta": 1,
-  "outro_estado": 14,
+  "outro_estado": 15,
   "sigla_sem_ancora": 13
  },
  "itens": [
+  {
+   "id": "ad561d6af586",
+   "titulo": "Idaf inicia operação de usina solar para atender unidades em todo o Espírito Santo",
+   "veiculo": "diaadiaes.com.br",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONHNEelJFSnNzSlV4S2VGZWFVNm9Hb3NiMVZRdW9ldFJ6SEZ2dDBldWY3SHJ5UVM2b19LUkhpdkRKUGlmbF93alE4RTVFY1ZsZFVfTnNfa2s2enZNMGpDTnJ3OGNaUTlDZjRIZFR5ZEJmcV92Qy1pVGV3TG1vOHFESnItRGx3UGQwRDFOX0FQTmVhZGJiemluUXdXeDdKdmZtTWFZVU9wS0p3Uk5P?oc=5",
+   "data": "2026-11-13T17:53:01Z",
+   "coletado_em": "2026-11-13T18:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "36a3fe0cfba4",
+   "titulo": "Secretaria de Recuperação do Rio Doce descentraliza recursos para cirurgias de joelho de pacientes de 11 municípios capixabas",
+   "veiculo": "atlaspublico.com.br",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNYnYzSERZOGpBV1JJSi1RR0x5d0k1c1Y5T2dEdjQ3R2NHaEQtYXoxX1NZNjFQS3otWDJSY1hqN2NZQ3lobmYxSG54dk5WQ00wemdybVEtdm4zOVEtZU52Q0ZsMVpMR0pZSlBkellPOFZzTmppSU92SjlzNVJYOUJvRm9RM1NfWmVqbWx5MTdFX25RdUZ4bWwzdzk3cFIwbDBxMWFPSUxWa1RCdw?oc=5",
+   "data": "2026-11-13T17:13:10Z",
+   "coletado_em": "2026-11-13T18:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "5b268aafa2c0",
    "titulo": "Câmara aprova projeto de deputado do ES para adaptar casas do Minha Casa, Minha Vida",
