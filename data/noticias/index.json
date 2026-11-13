@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-13",
- "gerado_em": "2026-11-13T13:17:17Z",
+ "gerado_em": "2026-11-13T14:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 22,
-   "aceitos": 9,
+   "lidos": 20,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
@@ -26,23 +26,23 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 25,
-   "aceitos": 17,
+   "aceitos": 16,
    "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 8,
+   "lidos": 9,
+   "aceitos": 7,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 9,
+   "lidos": 8,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
@@ -50,7 +50,7 @@
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
    "lidos": 18,
-   "aceitos": 6,
+   "aceitos": 5,
    "possiveis": 3
   },
   {
@@ -66,15 +66,15 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 6,
-   "possiveis": 2
+   "aceitos": 5,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 5,
+   "lidos": 7,
+   "aceitos": 4,
    "possiveis": 2
   },
   {
@@ -89,8 +89,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 62,
-   "aceitos": 3,
+   "lidos": 66,
+   "aceitos": 2,
    "possiveis": 3
   },
   {
@@ -99,7 +99,7 @@
    "ok": true,
    "lidos": 64,
    "aceitos": 1,
-   "possiveis": 5
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -139,13 +139,13 @@
    "ok": true,
    "lidos": 27,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 22,
+   "lidos": 21,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -169,7 +169,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -177,9 +177,9 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 7,
-   "possiveis": 0
+   "lidos": 10,
+   "aceitos": 8,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -193,15 +193,15 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 2,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (previdência OR Ipajm OR \"regime próprio\" OR \"contribuição previdenciária\" OR aposentadoria)",
    "ok": true,
-   "lidos": 1,
+   "lidos": 0,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 3
   },
   {
@@ -280,19 +280,33 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 329,
+  "sem_contexto": 337,
   "possivel": 35,
   "veiculo_outra_praca": 12,
-  "veiculo_excluido": 31,
-  "sem_contexto_com_tema": 12,
-  "generico_sem_ancora": 3,
-  "exterior_sem_ancora": 4,
-  "excluir": 19,
+  "veiculo_excluido": 29,
+  "sem_contexto_com_tema": 9,
+  "generico_sem_ancora": 4,
+  "exterior_sem_ancora": 3,
+  "excluir": 18,
   "caixa_alta": 1,
-  "outro_estado": 16,
+  "outro_estado": 17,
   "sigla_sem_ancora": 13
  },
  "itens": [
+  {
+   "id": "af750c117201",
+   "titulo": "Novos contornos, duplicações e restaurações marcam segundo ano do novo contrato da Ecovias Capixaba",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/conteudo-de-marca/novos-contornos-duplicacoes-e-restauracoes-marcam-segundo-ano-do-novo-contrato-da-ecovias-capixaba-1126",
+   "data": "2026-11-13T13:46:34Z",
+   "coletado_em": "2026-11-13T14:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "16f7ba2e0895",
    "titulo": "Banestes acumula lucro de R$ 310 milhões em 2026, alta de 1,9%",
@@ -730,6 +744,20 @@
    "triagem": 8,
    "temas": [
     "contratos"
+   ]
+  },
+  {
+   "id": "a452e3e98011",
+   "titulo": "Corte de comissionados exige foco na qualidade dos serviços",
+   "veiculo": "ES Brasil",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9rUXlRVTMzR2RzOWZQLW5JVFhRNmo0N3k0Xzd0SGFjSU5mU3VZaXBKOElIbUdXOXhWaFFBUkF5OUk2MkdPV1ZqOVhBdUdRQ0NSdTNjTWExYUxfWEpMMDRBSXc0d2QzQWFhMXgtQ0lyYnFhMGJrZHc?oc=5",
+   "data": "2026-11-12T19:23:55Z",
+   "coletado_em": "2026-11-13T14:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
    ]
   },
   {
@@ -2165,6 +2193,18 @@
    "temas": [
     "pessoal"
    ]
+  },
+  {
+   "id": "d8e5ebe084b6",
+   "titulo": "Trabalhadores denunciam infestação de ratos e crise sanitária no prédio da Secretaria de Saúde do Paraná",
+   "veiculo": "Brasil de Fato",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOUWtkdENaY2lDXzl4azNVZlhYN0I0dG5OYk9SLXZqWFR0Mk9wV1Z2cW16b0xicmhoeWYwYnFLd3BGcXd4dVpfMk14aTFZSkp5NWF4SzBkUHduZC1FaE5WS05WVXpDQk9SaVBqVVFjNFdVTlY1c0JRai1vMlV0ZVVaWENOOU5ENDBoT01GZmZsV2pHUWRVWEExcXFoNjZoM0Y4WW5iQVl6d3hRWVZaMVdDLXJSUUdCTXYtSklRX3ZvODJ1VjQwZHhXc0VQR0tkYmdtU1VTV2g5UUxFejBPYUZkQmhB?oc=5",
+   "data": "2026-11-11T14:25:00Z",
+   "coletado_em": "2026-11-13T14:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
   },
   {
    "id": "035ec69e86cc",
