@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-13",
- "gerado_em": "2026-11-13T16:17:14Z",
+ "gerado_em": "2026-11-13T17:13:48Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 20,
-   "aceitos": 7,
+   "lidos": 19,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 25,
-   "aceitos": 17,
+   "aceitos": 16,
    "possiveis": 3
   },
   {
@@ -34,8 +34,8 @@
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 9,
-   "aceitos": 7,
-   "possiveis": 1
+   "aceitos": 6,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -65,8 +65,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 5,
+   "lidos": 8,
+   "aceitos": 4,
    "possiveis": 3
   },
   {
@@ -89,9 +89,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 70,
+   "lidos": 67,
    "aceitos": 2,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 28,
    "aceitos": 0,
    "possiveis": 11
   },
@@ -178,8 +178,8 @@
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 8,
-   "possiveis": 0
+   "aceitos": 7,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 2,
-   "possiveis": 3
+   "possiveis": 1
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -278,21 +278,47 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 335,
-  "possivel": 36,
+  "sem_contexto": 327,
+  "possivel": 38,
   "veiculo_outra_praca": 11,
-  "veiculo_excluido": 28,
+  "veiculo_excluido": 29,
   "sem_contexto_com_tema": 10,
   "generico_sem_ancora": 3,
   "exterior_sem_ancora": 3,
-  "excluir": 20,
+  "excluir": 23,
   "caixa_alta": 1,
-  "outro_estado": 15,
+  "outro_estado": 14,
   "sigla_sem_ancora": 13
  },
  "itens": [
+  {
+   "id": "5b268aafa2c0",
+   "titulo": "Câmara aprova projeto de deputado do ES para adaptar casas do Minha Casa, Minha Vida",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOeWFFblIyYmdMZ3VUVkRTV0NDSThlbFU5c1I2cXZrVDZ1MWRhS1NiQ1U4RGVSNWd3aFNzQUgtbkZQTlJLNWc3VExBWlV4V181UHVud2VHeHpMSkt3Ymt0SE9xSWN2d0l4VUI1SGloMU5iem1SX1lsdVhnR2xLSGMtcFZqWFNEaHVQOHllTGtYVQ?oc=5",
+   "data": "2026-11-13T16:45:22Z",
+   "coletado_em": "2026-11-13T17:13:48Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "00d6151be8e9",
+   "titulo": "Mansão de Renato Aragão é penhorada por dívida; imóvel de R$ 18 milhões tem heliponto e piscina",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/cultura/famosos/mansao-de-renato-aragao-e-penhorada-por-divida-imovel-de-r-18-milhoes-tem-heliponto-e-piscina/",
+   "data": "2026-11-13T16:32:56Z",
+   "coletado_em": "2026-11-13T17:13:48Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "d1f9add8fabd",
    "titulo": "Deputados do ES já podem apresentar emendas ao Orçamento de 2027",
