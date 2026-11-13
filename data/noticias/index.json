@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-13",
- "gerado_em": "2026-11-13T22:17:14Z",
+ "gerado_em": "2026-11-13T22:40:44Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 9,
+   "lidos": 10,
+   "aceitos": 10,
    "possiveis": 0
   },
   {
@@ -57,16 +57,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 1,
+   "lidos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 6,
+   "lidos": 8,
+   "aceitos": 5,
    "possiveis": 2
   },
   {
@@ -74,7 +74,7 @@
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 2
   },
   {
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 64,
+   "lidos": 63,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 20,
+   "lidos": 19,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 7,
+   "lidos": 10,
+   "aceitos": 8,
    "possiveis": 1
   },
   {
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -218,7 +218,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -227,7 +227,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 1,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "ES Hoje",
@@ -278,10 +278,10 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 4,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
   "sem_contexto": 347,
-  "possivel": 36,
+  "possivel": 35,
   "oficial_sem_tema": 1,
   "veiculo_excluido": 25,
   "veiculo_outra_praca": 12,
@@ -290,10 +290,22 @@
   "exterior_sem_ancora": 3,
   "excluir": 25,
   "caixa_alta": 1,
-  "outro_estado": 18,
+  "outro_estado": 17,
   "sigla_sem_ancora": 13
  },
  "itens": [
+  {
+   "id": "b6cfaa21d5fa",
+   "titulo": "Banestes acumula lucro de R$ 310 milhões e bate recorde de receita trimestral",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/banestes-acumula-lucro-de-r-310-milhoes-e-bate-recorde-de-receita-trimestral/",
+   "data": "2026-11-13T22:30:12Z",
+   "coletado_em": "2026-11-13T22:40:44Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "4f300a738f93",
    "titulo": "Ao lado de sócio da XP, Pazolini reúne-se com governadores e economistas em SP",
@@ -429,6 +441,20 @@
    "url": "https://eshoje.com.br/servicos/2026/11/faca-facil-cariacica-suspensao-servicos-novembro/",
    "data": "2026-11-13T19:28:49Z",
    "coletado_em": "2026-11-13T20:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "restricao"
+   ]
+  },
+  {
+   "id": "3cc599bd2c30",
+   "titulo": "Faça Fácil Cariacica suspende serviços por 7 dias",
+   "veiculo": "ES Hoje",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNVllXSUdaa2R6czJUSW9WU3ZJSXNWT2UtYUtmaUVGYVMzUTlZek1JU0Y5aG1oMVdsS3ZWV0Vxa01yWTgxWWlSaTZSbi1GUzVLTldIdnZMVHFaVktVRm1hZUlGYUNrTVV0N19PVVV5QVp2QjFhZGYzWnJCNjNUNEdDVXVCbVBBUUhNdXRsdXdXZ3JhQQ?oc=5",
+   "data": "2026-11-13T19:28:49Z",
+   "coletado_em": "2026-11-13T22:40:44Z",
    "outras": [],
    "possivel": true,
    "triagem": 8,
@@ -2161,7 +2187,12 @@
    "url": "https://eshoje.com.br/politica/2026/11/servidor-do-idaf-e-o-oitavo-integrante-da-equipe-de-transicao-do-futuro-governador-pazolini/",
    "data": "2026-11-11T21:12:55Z",
    "coletado_em": "2026-11-11T21:17:31Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Prensa Mercosur",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOeVRJTDctWG1Tc3h0QTJ4eGZTcTUtV25OVUdiVFB4LWUzQURmdTQxYWVRazU4WUZnOXNVR1pUajVEcGwzcFZXWE1HNE9FVFNiY1ZQakwtN3hXRm42T3BodXdfVkR2RFRGeXJlZjlQMml4MEdRd2VDenBmQkRyMzJSWlRPNHM1dnA5NjM2R29ZeUptYkhONU1kNmlTeU1vZWEwTmpxdVNUd0d2UzYxRGN6RXVZOTkwQVdzaWFvVUJzQ1RXWlBjLXdncUVB?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 8,
    "temas": [
