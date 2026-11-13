@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-13",
- "gerado_em": "2026-11-13T19:17:16Z",
+ "gerado_em": "2026-11-13T20:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,24 +25,24 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 25,
+   "lidos": 26,
    "aceitos": 16,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 8,
-   "aceitos": 6,
-   "possiveis": 1
+   "aceitos": 5,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 8,
+   "lidos": 9,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
@@ -73,8 +73,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 6,
+   "lidos": 9,
+   "aceitos": 5,
    "possiveis": 2
   },
   {
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 63,
+   "lidos": 62,
    "aceitos": 1,
    "possiveis": 4
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 0,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 29,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 18,
+   "lidos": 19,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 29,
    "aceitos": 0,
-   "possiveis": 11
+   "possiveis": 12
   },
   {
    "fonte": "Google Notícias",
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 7,
+   "lidos": 10,
+   "aceitos": 8,
    "possiveis": 1
   },
   {
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 3,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -226,7 +226,7 @@
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 4
   },
   {
@@ -234,8 +234,8 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 2,
-   "possiveis": 0
+   "aceitos": 1,
+   "possiveis": 1
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -267,33 +267,89 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Sim Notícias",
    "consulta": "https://simnoticias.com.br/vinicius-baptista/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 338,
+  "sem_contexto": 348,
   "possivel": 34,
-  "veiculo_excluido": 27,
-  "veiculo_outra_praca": 11,
-  "sem_contexto_com_tema": 10,
+  "oficial_sem_tema": 2,
+  "veiculo_excluido": 23,
+  "sem_contexto_com_tema": 9,
   "generico_sem_ancora": 3,
-  "exterior_sem_ancora": 3,
-  "excluir": 21,
+  "exterior_sem_ancora": 2,
+  "excluir": 24,
   "caixa_alta": 1,
+  "outro_estado": 15,
   "sigla_sem_ancora": 14,
-  "outro_estado": 14,
-  "oficial_sem_tema": 1
+  "veiculo_outra_praca": 11
  },
  "itens": [
+  {
+   "id": "039ec49d707b",
+   "titulo": "Detran retoma emissão de CNHs após suspensão provocada por incêndio em Palmas",
+   "veiculo": "Gazeta do Cerrado",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMi1jWE1vZEc5cXNVRkFGV2VncnQzTnpfOVFkTEI0RVVya3RlWVpQQVBPNkMwU1dwWUJ4UG51YXdhRDlRajNfS2o2RlJDNXA5RFM2Qkt6REdDb0ZpcGRULTJLQ3ZYcUo3T05KeGVKeGRvTk13YjYyN2xnbUFnNE55UllmUzNDa01NU0lXa0x5aWRZc2l5c2Iza1JBRHBFU0FlT1pxVGtsbmFuWF9jdFYwM1JWNXNfU3NvbzhJ?oc=5",
+   "data": "2026-11-13T20:05:00Z",
+   "coletado_em": "2026-11-13T20:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "2a5667ba31dd",
+   "titulo": "Governo do Estado garante mais de 17 quilômetros de ciclovias em cinco municípios capixabas",
+   "veiculo": "Aqui Notícias",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxObThTTW1ScG5iSEUtYmFEeXpCZTFJcTF1NzNaSjVVYlNwclVNNFJZRHFpdERwRkxRd2RlQnNWTlMzYjB1cHdMbmdma0pHVlp6VERydzRvRjZTYU9VcXZkSWZYd3lzU0o5UnVxMHQxRHJWUnlHQWRoNENUUGV5WG5LZ3RoYy1ZZktHczYxYXNCbDdPblZQbEtSY3V2d3ZxeFpySDJabnRTbElHWWZYZERMSC1XcURfOFNzUW9PdlJYVjVoWDQ?oc=5",
+   "data": "2026-11-13T19:48:31Z",
+   "coletado_em": "2026-11-13T20:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "ae336f5502ba",
+   "titulo": "Faça Fácil Cariacica suspende serviços por sete dias; veja alternativas",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/servicos/2026/11/faca-facil-cariacica-suspensao-servicos-novembro/",
+   "data": "2026-11-13T19:28:49Z",
+   "coletado_em": "2026-11-13T20:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "restricao"
+   ]
+  },
+  {
+   "id": "98379c8968dd",
+   "titulo": "Governador eleito participa do Encontro de Líderes 2026 e destaca importância da união para o futuro",
+   "veiculo": "Aqui Notícias",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQQnRQSV8yTVlhRUpGQW5uWVJKMlJrLUcya1dTbWdkbkNiSzJTZzNuOVlDZHFDdjFtMWozdE9wY0xadHFydnNmaWZhREVyaHppUmRfQXVwaWEtTXc5aTNmRGhtMkJzZEZCX200eHJjQmRxMDlVMXg5dmlVY2E4LXNTeEFhaDZXNUh4TDlVT1ZBYXE0NGZWMGlwQ2w0SWowWTdld1RyeXFiMGhnZjd3eUN2RFR1cWtUZ0tsUkFEZ2JqQTd4a0VvOFJlQ2dnVTNCR28?oc=5",
+   "data": "2026-11-13T19:21:21Z",
+   "coletado_em": "2026-11-13T20:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao"
+   ]
+  },
   {
    "id": "3817b4783499",
    "titulo": "Comissão da Ales aponta 14 casos de violência política pós-eleição no Estado",
@@ -482,6 +538,18 @@
    "temas": [
     "contratos"
    ]
+  },
+  {
+   "id": "825b720f9061",
+   "titulo": "Espírito Santo ultrapassa 1 milhão de Carteiras de Identidade Nacional emitidas",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOc0hYX0NneXpPV09uYXY1bXhUSFRvTXhmS0RLQ0FNN2xiaGh2UFZxU0xHOVl4NkdkMGhyWVlYWDFOU05pZUFRR3ExS3RTdmtMS3EtenBKVWx2U1ZRNFU4bjB1RlR3VGkyQ2QzTjcybjMyeHRYX2ZXMHctay1YRTIxcVNRemNSaV9RSEM3M0VmUWx1c3lic1F4c0hYbnctWUVZYTFZ?oc=5",
+   "data": "2026-11-13T13:37:00Z",
+   "coletado_em": "2026-11-13T20:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
   },
   {
    "id": "16f7ba2e0895",
@@ -1376,6 +1444,18 @@
    "temas": [
     "financas"
    ]
+  },
+  {
+   "id": "c0c0aef9ea5b",
+   "titulo": "Alesc aprova rota turística estadual voltada às festividades do Divino Espírito Santo",
+   "veiculo": "HojeSC",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0zdDRUa2dRdkhzYWRnVFBIREpkRXRZamRyRTJkdmFCanlCRlJPSE91SkFHX3MwNHEyN3VCc3JZWUdYbDhEcGF1U1Rja3Q1WFpJWTBENklHb3FMamZCcUZWSVRlQThJRmJYSFF6X2pFanY?oc=5",
+   "data": "2026-11-12T13:06:01Z",
+   "coletado_em": "2026-11-13T20:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
   },
   {
    "id": "9e3c0d037a65",
