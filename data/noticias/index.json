@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-13",
- "gerado_em": "2026-11-13T18:17:13Z",
+ "gerado_em": "2026-11-13T19:17:16Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 21,
-   "aceitos": 7,
+   "lidos": 19,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -33,9 +33,9 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 6,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -49,9 +49,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 19,
+   "lidos": 18,
    "aceitos": 6,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -59,7 +59,7 @@
    "ok": true,
    "lidos": 2,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 6,
    "possiveis": 2
   },
@@ -81,8 +81,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 0,
+   "lidos": 7,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 64,
+   "lidos": 63,
    "aceitos": 1,
    "possiveis": 4
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 27,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 20,
+   "lidos": 18,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 28,
    "aceitos": 0,
    "possiveis": 11
   },
@@ -169,7 +169,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 2,
+   "lidos": 7,
+   "aceitos": 1,
    "possiveis": 2
   },
   {
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 3
   },
   {
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -267,7 +267,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Sim Notícias",
@@ -278,21 +278,60 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 335,
-  "possivel": 35,
+  "sem_contexto": 338,
+  "possivel": 34,
+  "veiculo_excluido": 27,
   "veiculo_outra_praca": 11,
-  "veiculo_excluido": 30,
-  "sem_contexto_com_tema": 9,
-  "generico_sem_ancora": 4,
+  "sem_contexto_com_tema": 10,
+  "generico_sem_ancora": 3,
   "exterior_sem_ancora": 3,
-  "excluir": 22,
+  "excluir": 21,
   "caixa_alta": 1,
-  "outro_estado": 15,
-  "sigla_sem_ancora": 13
+  "sigla_sem_ancora": 14,
+  "outro_estado": 14,
+  "oficial_sem_tema": 1
  },
  "itens": [
+  {
+   "id": "3817b4783499",
+   "titulo": "Comissão da Ales aponta 14 casos de violência política pós-eleição no Estado",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQWjZYZS1ndkdjUS12cWF6Z0hTa1VPQkZiMTdrNHJMcl9qZkxScmNCR1lNR2UtakxaNGI0bTJaRTd5ZmVlTnRpREZiYWlYV0Y0SlZka0xqLUQtMERzaGVHLXUwUFUwdl9QQXI1c3NueDdlRlpfQXhTZHZRVUYta3ZYeGYwVjVyODU0U3FGQU9yNVlsMG5IOHRXM2pPVVJJWkdCTkVEa2tfa2FfclV3YmYwRkxjaHB0U1h1?oc=5",
+   "data": "2026-11-13T18:57:20Z",
+   "coletado_em": "2026-11-13T19:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "e0411171160d",
+   "titulo": "ARSP abre consulta pública sobre proposta de redução de 5,52% nas tarifas de água e esgoto da Cesan",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQMlFZaDl4eGp3SEpvMUZFSGdVVlJMYnhPTFBYaGM3NHQ0VFNaWEp0aV9KVF9xYl9aYnN1TG42ZUttOEg0WThiUXYyWUdkZ1dhNUZxWEhOWWg5SFh6TTNsc3NBTUtObG41alZiRDg5N21RRjdvMlNSdm4wU2ROdG85TXJONlY3dnZRWGxxNWw3c2RSSFFTMWJsY3VhbkhoeVM3dm5pM1VyRmF4QUJud2tBVDhwOEtYNmxpVkNqYw?oc=5",
+   "data": "2026-11-13T18:43:00Z",
+   "coletado_em": "2026-11-13T19:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "4d140fa19726",
+   "titulo": "Lula 4 terá que dialogar com oposição no Senado, diz líder do governo à CNN",
+   "veiculo": "Sim Notícias",
+   "url": "https://simnoticias.com.br/politica/lula-4-tera-que-dialogar-com-oposicao-no-senado-diz-lider-do-governo-a-cnn/",
+   "data": "2026-11-13T18:17:13Z",
+   "coletado_em": "2026-11-13T19:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "ad561d6af586",
    "titulo": "Idaf inicia operação de usina solar para atender unidades em todo o Espírito Santo",
@@ -304,6 +343,20 @@
    "possivel": false,
    "triagem": 8,
    "temas": []
+  },
+  {
+   "id": "087861048847",
+   "titulo": "Sefaz remaneja R$ 521,3 milhões do orçamento a menos de dois meses do fim do mandato",
+   "veiculo": "Amazonas1",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPV0lsVVF1cy1xYVlHU2s1d3Y0Sk9Ub3VXejFuZGx5N0V2SDBENFctUmpkWmotVWFRazhJcXE1dVFzdzNDeFBfREFxTTFSWDhLUDhmOHpNcUhHeTd4bHRlTTduYi1pMTdBMTBjYXJILWl4NWJyc21IZFFNWldZM0tQVEFnZ19nclhZNTE2U3UtVWp3d3FLWU4yR2tBTGYtYkhLZ3NDUU5lUEg2ZUVD?oc=5",
+   "data": "2026-11-13T17:35:00Z",
+   "coletado_em": "2026-11-13T19:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
   },
   {
    "id": "36a3fe0cfba4",
@@ -858,7 +911,12 @@
    "url": "https://www.folhavitoria.com.br/economia/dino-mantem-prazo-inicial-da-5x2-mas-flexibiliza-regra-de-transicao/",
    "data": "2026-11-12T19:52:30Z",
    "coletado_em": "2026-11-12T20:17:15Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "TC Online",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMGdKNXppQkZZUnd5c0RfZmhzbEdPZ1VjVmR2b1JMYkpmNjBWbFhnWXJzRUdheTIwRW8tc0ZYS0RYaTVDWEVaZ3Y1ajlqeE9zZkdJN2VyRWdFVmJmdFJKSHFxTlQ2SWkwRGJBYzFBc3VEZjF0S1J3LVNLMUM1UjlfREhtZmZtNm5VWkdiLVgtaHBqN2sxTzlN?oc=5"
+    }
+   ],
    "possivel": true,
    "triagem": 8,
    "temas": [
