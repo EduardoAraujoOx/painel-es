@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-13",
- "gerado_em": "2026-11-13T21:17:15Z",
+ "gerado_em": "2026-11-13T22:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,15 +25,15 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 27,
-   "aceitos": 16,
+   "lidos": 28,
+   "aceitos": 17,
    "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 5,
    "possiveis": 1
   },
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 10,
+   "lidos": 9,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
@@ -50,7 +50,7 @@
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
    "lidos": 17,
-   "aceitos": 6,
+   "aceitos": 5,
    "possiveis": 3
   },
   {
@@ -74,14 +74,14 @@
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 5,
+   "aceitos": 4,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 63,
+   "lidos": 64,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 2,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -138,14 +138,14 @@
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 29,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 19,
+   "lidos": 20,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -155,30 +155,30 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 0,
-   "possiveis": 12
+   "possiveis": 11
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 77,
-   "aceitos": 13,
+   "aceitos": 10,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 2,
+   "lidos": 4,
+   "aceitos": 1,
    "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 8,
+   "lidos": 9,
+   "aceitos": 7,
    "possiveis": 1
   },
   {
@@ -193,9 +193,9 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 2,
-   "possiveis": 2
+   "lidos": 7,
+   "aceitos": 3,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 3,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Folha Vitória",
@@ -250,7 +250,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 5,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
@@ -278,22 +278,64 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 4,
  "descartes_na_coleta": {
-  "sem_contexto": 343,
+  "sem_contexto": 347,
   "possivel": 36,
-  "oficial_sem_tema": 2,
-  "veiculo_excluido": 23,
-  "sem_contexto_com_tema": 11,
+  "oficial_sem_tema": 1,
+  "veiculo_excluido": 25,
+  "veiculo_outra_praca": 12,
+  "sem_contexto_com_tema": 10,
   "generico_sem_ancora": 3,
-  "exterior_sem_ancora": 2,
-  "excluir": 24,
+  "exterior_sem_ancora": 3,
+  "excluir": 25,
   "caixa_alta": 1,
-  "outro_estado": 17,
-  "sigla_sem_ancora": 14,
-  "veiculo_outra_praca": 11
+  "outro_estado": 18,
+  "sigla_sem_ancora": 13
  },
  "itens": [
+  {
+   "id": "4f300a738f93",
+   "titulo": "Ao lado de sócio da XP, Pazolini reúne-se com governadores e economistas em SP",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/pazolini-encontro-lideres/",
+   "data": "2026-11-13T21:54:28Z",
+   "coletado_em": "2026-11-13T22:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "33f7930cfe5b",
+   "titulo": "Pazolini e sócio da XP em encontro de lideres",
+   "veiculo": "ES Hoje",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9RLXFUQmdqQkJZeENZVEdUQzRaXzFRV1lScjJoTmJMOWxUYkdyelNoX3NPTDdic251ZExGblNIR2xYRkZKaGdmUUpVRDRIMGpoYzlTeEtSWHhabDhDd2R5NmRmYWV0WUdVMm5BZHdKTnZmUzg?oc=5",
+   "data": "2026-11-13T21:54:28Z",
+   "coletado_em": "2026-11-13T22:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "c1c302c25a09",
+   "titulo": "Governador eleito do Espírito Santo participa de encontro nacional de líderes em São Paulo",
+   "veiculo": "rede noticia es",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNRlg5NUs1ZDgyMnRYOWhJbzhzNm45YVptbV8zOXVva2xzZ2VoQ1VoaHRqclJsTGFLSlIxTlJTNnpGb3NLOFdlcWZyT1VkU25yMWZxcjJPZ3Uzc2lhR0lMNXJKQndLQWd3RGRfTXkwQW5NWXYzYzAwYk5uVm5RZTlzTnNLZEhYRDY4cFRrbndGYzQ0d2RKNDlPZnNaRTRvVFpKQjVTV0h6a1hXSEpWc1h4TXRLV0M?oc=5",
+   "data": "2026-11-13T21:44:00Z",
+   "coletado_em": "2026-11-13T22:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao"
+   ]
+  },
   {
    "id": "9e95a8dd2fa5",
    "titulo": "Faça Fácil de Cariacica terá serviços suspensos por uma semana",
@@ -428,9 +470,14 @@
    "veiculo": "Governo ES",
    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQMlFZaDl4eGp3SEpvMUZFSGdVVlJMYnhPTFBYaGM3NHQ0VFNaWEp0aV9KVF9xYl9aYnN1TG42ZUttOEg0WThiUXYyWUdkZ1dhNUZxWEhOWWg5SFh6TTNsc3NBTUtObG41alZiRDg5N21RRjdvMlNSdm4wU2ROdG85TXJONlY3dnZRWGxxNWw3c2RSSFFTMWJsY3VhbkhoeVM3dm5pM1VyRmF4QUJud2tBVDhwOEtYNmxpVkNqYw?oc=5",
    "data": "2026-11-13T18:43:00Z",
-   "coletado_em": "2026-11-13T19:17:16Z",
-   "outras": [],
-   "possivel": true,
+   "coletado_em": "2026-11-13T22:17:14Z",
+   "outras": [
+    {
+     "veiculo": "Secretaria de Estado do Governo",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPLTd3V0ptamlHdk9KckJjSUE1QVZ2dXVXX1pQU0t1YTNUZFhDRWx0d05hTUhfNUViUGFxa21vUVJ1aFNURGNjN0UyOFpNYjlmYWNJZm1vVmRRMmpyRVVScmxvOEVrX1JleWZVZEFzRGZZdng1aUpFaGR2M2t1X0FZem1HRHo3LWh0YmpOcTh2Tlc2S2xCRnRNbGdSdndJazY2WDJ2dEJsS1VYV2pabUMtUjAtSWt5ck04YjJzUQ?oc=5"
+    }
+   ],
+   "possivel": false,
    "triagem": 8,
    "temas": []
   },
