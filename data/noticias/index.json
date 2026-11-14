@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-14",
- "gerado_em": "2026-11-14T19:17:20Z",
+ "gerado_em": "2026-11-14T20:17:17Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 29,
-   "aceitos": 13,
-   "possiveis": 4
+   "lidos": 28,
+   "aceitos": 12,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -41,9 +41,9 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 8,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 4,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 28,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 20,
+   "lidos": 19,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -145,9 +145,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 24,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -177,9 +177,9 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 3,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -280,16 +280,17 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "possivel": 31,
-  "sem_contexto": 318,
+  "possivel": 27,
+  "sem_contexto": 314,
   "oficial_sem_tema": 1,
-  "sem_contexto_com_tema": 11,
+  "sem_contexto_com_tema": 10,
   "outro_estado": 20,
-  "excluir": 18,
+  "excluir": 17,
   "exterior_sem_ancora": 10,
-  "veiculo_excluido": 24,
+  "veiculo_excluido": 25,
+  "veiculo_outra_praca": 9,
   "sigla_sem_ancora": 5,
-  "veiculo_outra_praca": 9
+  "generico_sem_ancora": 1
  },
  "itens": [
   {
@@ -701,6 +702,20 @@
    "triagem": 8,
    "temas": [
     "financas"
+   ]
+  },
+  {
+   "id": "78c00d12a3be",
+   "titulo": "Governo do Estado promove ação de cadastramento de poços na Bacia do Rio Gravataí",
+   "veiculo": "Secretaria do Meio Ambiente e Infraestrutura",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPLVYwSnN1MndoUkdUbzNvT2NGa0JCaUYzM1Ztc2pFdVNsU2RIc3Q3WXpma2F2R1E2bjhnTFhid3ZRaExQLTB5THhrdHU5SFRxWFVsbHdmcjJPUzlVLUJCTDZRSDdqUzROTDdadERnTHFlWFNTSW9lS1MyTG1kTmpSd1VSeFJvVUNVTy05eWp6cExfRE1JNDRSV1JwYm9TNGgzZjl0Uk1jZEh2U0JmSXc?oc=5",
+   "data": "2026-11-13T17:32:25Z",
+   "coletado_em": "2026-11-14T20:17:17Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "governador"
    ]
   },
   {
