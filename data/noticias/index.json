@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-14",
- "gerado_em": "2026-11-14T09:17:20Z",
+ "gerado_em": "2026-11-14T10:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 9,
+   "lidos": 8,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 3,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 59,
+   "lidos": 58,
    "aceitos": 1,
    "possiveis": 4
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 57,
+   "lidos": 59,
    "aceitos": 2,
    "possiveis": 5
   },
@@ -129,9 +129,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 18,
+   "lidos": 19,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 75,
+   "lidos": 76,
    "aceitos": 9,
    "possiveis": 0
   },
@@ -232,11 +232,10 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 415: Unsupported Media Type"
+   "ok": true,
+   "lidos": 30,
+   "aceitos": 1,
+   "possiveis": 2
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -279,20 +278,20 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 318,
-  "possivel": 35,
+  "sem_contexto": 343,
+  "possivel": 38,
   "oficial_sem_tema": 1,
   "veiculo_excluido": 25,
   "sem_contexto_com_tema": 8,
   "generico_sem_ancora": 2,
-  "exterior_sem_ancora": 10,
-  "excluir": 21,
+  "exterior_sem_ancora": 11,
+  "excluir": 23,
   "caixa_alta": 1,
-  "outro_estado": 16,
+  "outro_estado": 15,
   "sigla_sem_ancora": 14,
-  "veiculo_outra_praca": 10
+  "veiculo_outra_praca": 11
  },
  "itens": [
   {
@@ -719,7 +718,12 @@
    "url": "https://g1.globo.com/es/espirito-santo/norte-noroeste-es/noticia/2026/11/13/ex-secretario-de-linhares-e-indiciado-por-assedio-sexual-contra-ex-servidora-e-invasao-de-dispositivo-informatico.ghtml",
    "data": "2026-11-13T14:15:26Z",
    "coletado_em": "2026-11-13T15:17:14Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "G1",
+     "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxNNGFXQU5OSHRaTURLQmF2ZTk2YXNOMFdrdnRjQmhkc2tfV096TnJBTFpRZ1pkX0l1a3NBRmUzMDNIWW9tSjJpdTVjcVNQTzBpNEdFakI3dTVFS2FjSms2V2d6SXA5NGZOcllLbGJ3TjlBYWZ5Z2hYRk1KNlpDaXVvNm12VHM4UHM3b2IzWGJkS0pXTFJIOTJDUzlDVWs3R0I5cS1BZm5lTWxFaTRXRzNpOGZMZlI4cFFPLVlRZlBrTFdXdTNibUZGeWtjNmJNWnVyc1FsRWpPM190Ymp4Tk9KT19xcHhVbTdBUnRIR0xMelc4Q0NmRm1PX1AxQXJadG1SVVNpQldIMThTSzFxYzRTa1JYWHF1RWNRSGlGZ1N2VjbSAa8CQVVfeXFMTjdiRUhIVmU0Y21RaFdUeGZodDFIenFqdXFLanl1M3NQeV9xYl90U3hCVUV1RnFqYzg0aU94RHgyaDljdjRyZnJEdXNaUHIwT2p0cGZQVU84SHk2dGZjbGJLYkRhU3pHeldORUZoR2pZZERKa1EzelFaYmNicUVhdl9FVVZKMnNjM1oyeVlQWENiNEZLak12cGFMSm1CNkx5Zi1UUTNMTDZEY2pGTmxfdDFtTmVSNFl1YklGaEVDamlFTW04ellSODhYNVFWSi1vc1ZoV3FXVS1BMk5qa3pNTHROZ3FteS1ELUZ3SFJwNjI0amZRdm10YWlvTVBPeVU3NnhJNVpOTlhTTGdXSExYcXpncWRmZ3JneEw5VmwtY25Qa0F1amRjTWFUWFFOaVhz?oc=5"
+    }
+   ],
    "possivel": true,
    "triagem": 8,
    "temas": [
