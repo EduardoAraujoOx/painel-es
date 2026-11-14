@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-14",
- "gerado_em": "2026-11-14T01:17:13Z",
+ "gerado_em": "2026-11-14T09:17:20Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 27,
-   "aceitos": 16,
+   "aceitos": 15,
    "possiveis": 5
   },
   {
@@ -34,24 +34,24 @@
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 8,
-   "aceitos": 4,
+   "aceitos": 5,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 9,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 15,
+   "lidos": 16,
    "aceitos": 5,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,16 +89,16 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 69,
-   "aceitos": 2,
+   "lidos": 59,
+   "aceitos": 1,
    "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 67,
-   "aceitos": 1,
+   "lidos": 57,
+   "aceitos": 2,
    "possiveis": 5
   },
   {
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 18,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,9 +137,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
-   "aceitos": 0,
-   "possiveis": 2
+   "lidos": 30,
+   "aceitos": 1,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 29,
    "aceitos": 0,
    "possiveis": 11
   },
@@ -161,8 +161,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 76,
-   "aceitos": 10,
+   "lidos": 75,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
@@ -218,7 +218,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -232,10 +232,11 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": true,
-   "lidos": 30,
-   "aceitos": 1,
-   "possiveis": 2
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 415: Unsupported Media Type"
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -250,7 +251,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -258,7 +259,7 @@
    "consulta": "https://www.agazeta.com.br/colunas/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -267,7 +268,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Sim Notícias",
@@ -278,22 +279,51 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 349,
-  "possivel": 39,
+  "sem_contexto": 318,
+  "possivel": 35,
   "oficial_sem_tema": 1,
-  "veiculo_excluido": 23,
-  "sem_contexto_com_tema": 10,
-  "exterior_sem_ancora": 8,
-  "excluir": 24,
+  "veiculo_excluido": 25,
+  "sem_contexto_com_tema": 8,
+  "generico_sem_ancora": 2,
+  "exterior_sem_ancora": 10,
+  "excluir": 21,
   "caixa_alta": 1,
-  "outro_estado": 17,
+  "outro_estado": 16,
   "sigla_sem_ancora": 14,
-  "veiculo_outra_praca": 10,
-  "generico_sem_ancora": 2
+  "veiculo_outra_praca": 10
  },
  "itens": [
+  {
+   "id": "a71413826ed8",
+   "titulo": "Ex-secretário de Segurança Pública de Vitória irá integrar equipe de transição do governo Pazolini",
+   "veiculo": "Serra Noticiário",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNdU82d2pNYnRxZ0trb0xZZ1lYMVRDdkZia2JTMERRa2JqcU9IR2Z0RHVobnplTmROSVN2aHJkdHJ4RTc5RGxuNW1Lb1JLRXIwWHVPSngyOEo4Ny1uQmF6b1hYRzRKVEhLNUJHYU5remlnUTU0TmFOV2NuZTBxZlJucFFBUzlZWmdfaFVpSTRWRHNWSzVVOXQxN25iNU5LWHJMcjQ3SXlwX1VoZmt6Wk9raEJ5a19lUU5WaTJadnc1dFRvX2JKU3R4aU1B?oc=5",
+   "data": "2026-11-14T00:35:00Z",
+   "coletado_em": "2026-11-14T09:17:20Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "b106c67ddeee",
+   "titulo": "'Não é um novo 11 de setembro', diz secretário de Segurança sobre suspensão de voos",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOTU5WMTlLSTM3X0N0UWlmaW9uZ3RjQTVKSlVvTUh2cDhiVW9JWXk4NXhuZWtHNDFkRnV1OElpUm9JelhMcnJkWm9VckVnLW1OLVpBZXFvUE5JaUpwV2VoVHUwLWNLcndvMURSeUlRdGlrMTBVRVd0RF9UeXdodXpEVXNrVjM0WVhlOTJra2ZmYWE3WmhhUHF6NTNiYncwQUtJendmMHp0a2h0QjZxQ3Vlc094YjFFM0ZlMWNndFVNMFp3SmlkVjZrZUtR0gHSAUFVX3lxTE0tQUJIREVVRVJHMHU1NVlIQW1LNWpKYUF0YWhnNFltUGZwRDNIVWdHbmpsdFcyQm1JWnlpS3d2cVRDZ2sxNFBXOUdNTGY4NVJzTVdPc0MwNzB2NjBHMVRxWVVVaGRyMk5CbXotaTRXQl9ILXl4R0dNeXBnMV9hQTh6aWh0a2dNUUNVUFlfN1JTTTBob3ZTQnd5eXg2cEhZbGFXaEYwWWppendJdjNMSW1zR2txcVE2Y1ZJVy1pWVFlanNYSVhDbEN2dmZfeEhmeWVDQQ?oc=5",
+   "data": "2026-11-14T00:29:58Z",
+   "coletado_em": "2026-11-14T09:17:20Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "739bde6a8158",
    "titulo": "Governo diz não ver indícios de ameaça, mas não descarta ataque após voos suspensos",
