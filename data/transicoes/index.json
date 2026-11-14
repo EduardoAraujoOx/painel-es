@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-14T11:18:04Z",
+ "gerado_em": "2026-11-14T15:17:49Z",
  "ref": "2026-11-14",
  "desde": "2026-10-04",
  "estados": [
@@ -22,14 +22,14 @@
    "nome": "Amazonas",
    "eleito": "Omar Aziz",
    "partido": "PSD",
-   "total": 113
+   "total": 114
   },
   {
    "uf": "MA",
    "nome": "Maranhão",
    "eleito": "Eduardo Braide",
    "partido": "PSD",
-   "total": 55
+   "total": 57
   },
   {
    "uf": "MG",
@@ -50,28 +50,28 @@
    "nome": "Paraná",
    "eleito": "Sergio Moro",
    "partido": "PL",
-   "total": 148
+   "total": 149
   },
   {
    "uf": "RJ",
    "nome": "Rio de Janeiro",
    "eleito": "Douglas Ruas",
    "partido": "PL",
-   "total": 152
+   "total": 154
   },
   {
    "uf": "RN",
    "nome": "Rio Grande do Norte",
    "eleito": "Cadu Xavier",
    "partido": "PT",
-   "total": 74
+   "total": 75
   },
   {
    "uf": "RS",
    "nome": "Rio Grande do Sul",
    "eleito": "Luciano Zucco",
    "partido": "PL",
-   "total": 132
+   "total": 133
   },
   {
    "uf": "RO",
@@ -85,7 +85,7 @@
    "nome": "Roraima",
    "eleito": "Arthur Henrique",
    "partido": "PL",
-   "total": 24
+   "total": 25
   },
   {
    "uf": "TO",
@@ -106,11 +106,41 @@
   "fndr": "FNDR e reforma tributária"
  },
  "contagem": {
-  "total": 1191,
-  "medidas": 364,
-  "equipe": 827
+  "total": 1200,
+  "medidas": 366,
+  "equipe": 834
  },
  "itens": [
+  {
+   "id": "084710dc144a",
+   "titulo": "Governador eleito anuncia ex-presidente da Fetec para comandar Casa Civil em Roraima",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQUzI5RU9xVk5ONnY0SXFMbktNSDd4Q0tnU2hxbmh6VVY0bEFaY09KeV9PMmRJekdNdEVMV19iSVhFSDQ1MFdMMzlpNlNoTTAzNzlGaUQzTTA2dFEwbER6c3hwYXFyNXY1WWVxbjFSVEFjUmxBTlZFZkNfRVhvMGRxTGpiV0JUdFYzWEFTNzhPazlITkZxNVpHalRFYks3T2pnY1RKaGQwbWpUd0VGd2Z4dkNoQVdFM0Q4WV9OQ2d0dHo2b3Y3UTFweUxQQk04TnhfT0t6dmtvakrSAecBQVVfeXFMTlJ5NzduMUItems3Y05HLUtuT21hN0ZKSFJQa0V6YV9QTkJRdnpUN2ZuMUVGSlJueWIzUkx6VWdBbHk1Vjc4U0gzQlN6Nzg5NFZKbUFzdkgxU1dZNFV1NzhhYjZEUU9fU2ZBWE5IOGdCS1g2eWJ3a3hqc0pmY0s0aTlqcHJyMkNKVlh4MnVnZF9QUEhRNmwybF9qbTAtRFhxZDROZEdmejdnellQeVNWYlZ0SXFsanh6NXppRVkyLVJCenBobHlnTlowMWpIOHQtWGZrRmlWdDcyb1Bjcm5QQkRmaGNxMXNR?oc=5",
+   "data": "2026-11-14T14:18:21Z",
+   "coletado_em": "2026-11-14T15:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "4be3b35de8cb",
+   "titulo": "Teto de gastos de Douglas Ruas: entenda a proposta que pretende limitar o crescimento das despesas do estado",
+   "veiculo": "Tempo Real",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE13ZHhPM3RpMmFHT0N2WTdYRGg5OUpBYjg4b2RNMzZEMi05S0pRTEJBbUVUNnMtcnZkTm9QUVRVdS0ycnhfc2I2OHlmX083ZnVuRkl5TDFzNTN0NXQyVXhEdDdoczUyS2pEeUh2em9GN2tqd200dlp3clV0WUIyTUk?oc=5",
+   "data": "2026-11-14T11:00:02Z",
+   "coletado_em": "2026-11-14T15:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
+   ],
+   "temas": [
+    "gastos"
+   ],
+   "categoria": "medida"
+  },
   {
    "id": "f3ef9418891b",
    "titulo": "Transição de governo deve colocar situação administrativa e financeira de Alagoas em pauta nesta segunda-feira",
@@ -160,6 +190,22 @@
    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9wS3ktTEpvRGl3X1BvbDB4aXB1V29Qdm41MGZLMnRaR3N1eFk0UVQ1Q1RVWW9JR2ZrTGFsZXVOTXctU0haZ0pFMnN5TXFyNzZUT2xWYjVlZDJxeExqeGRQdkZpOGZYY3RQZDNRRzZqSGlYU0tfVVBTbVBJdTE?oc=5",
    "data": "2026-11-14T00:37:31Z",
    "coletado_em": "2026-11-14T11:18:04Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [
+    "pessoal"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "3243d895b665",
+   "titulo": "Transição de Cadu põe reajuste de secretários em pauta com RN no topo do gasto com pessoal",
+   "veiculo": "Agora RN",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9wS3ktTEpvRGl3X1BvbDB4aXB1V29Qdm41MGZLMnRaR3N1eFk0UVQ1Q1RVWW9JR2ZrTGFsZXVOTXctU0haZ0pFMnN5TXFyNzZUT2xWYjVlZDJxeExqeGRQdkZpOGZYY3RQZDNRRzZqSGlYU0tfVVBTbVBJdTE?oc=5",
+   "data": "2026-11-14T00:37:31Z",
+   "coletado_em": "2026-11-14T15:17:49Z",
    "outras": [],
    "ufs": [
     "RN"
@@ -1213,6 +1259,20 @@
    "categoria": "medida"
   },
   {
+   "id": "93df47270846",
+   "titulo": "Transição de governo no Amazonas: TCE-AM oferece apoio técnico à equipe de Omar Aziz",
+   "veiculo": "No Amazonas é Assim",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQnd0aUJSOU9JLXNOWF9mOWxYSHJYLWlzTk9RSmpHUzRSWnhaQXFxQlBlZ3RtVjNEdmtIb2lpeXE0MjNhQUNGbGsyeC1hVkNtMlJ4MGFvZTl4UU9xQjlKZ09mOWxkeHdvQVo3aFJQVUNmZ0xwYW91TlY3blE3YlhOZjdDVHQ3V0w0ZGdBbDNUZFJrQmFvWUpoaUJVR0U3cV8tdTlxTzV6REVZSmRxRk5HNmFPSQ?oc=5",
+   "data": "2026-11-13T05:06:46Z",
+   "coletado_em": "2026-11-14T15:17:49Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "83c15b4dfd92",
    "titulo": "Equipe de transição de Omar Aziz visita Cema e ouve servidores e usuários",
    "veiculo": "Amazonas1",
@@ -1319,6 +1379,20 @@
    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNXzJ0US0zczZzNXJBeFpGRmQ1bU81a1RobWI3N2hpeFJOR0V0bERPX0taVmkzUVZjWFdOUnB3bnR3VXZHc01WZlBWYjlNd2JrU29aRXBGQlo0OFhVUm5raGFHX0hKYjllamdOaWo0WHRoR1JDMG9YZHhLZ193UldqUWh3UmpyZ1FoSW1RWUdlY1pGNjZjcjBjTWVseFA5aGlHRGhleU9hQ3pOdjNvYjBPbzZvemhtYVdteVHSAcgBQVVfeXFMTkV6RV9IU2Q5d0UtdUZCYUQ4eE9VTGtUODlsbjI1dVI2cHBRWUVFWWdWVm13Zzlkc29KVTFjRWhvM3gwY0pnUVJ3cXNpNEJvdExxRXB6RWxJMXJBSXRWZG5UTnBjdzk0ZjdXRDRKdWJSYUo1QlJPMThFZlJ4VDUyMlBHNVJTTHVJcDQ4aHRta1R6cUNXMnJUOTVwSjdMOElzcDlhb1lBNkdjNWFOcXZ4MF9nZ2xxWHF4WkVYVVVaVmtLa0hNZDh0NXA?oc=5",
    "data": "2026-11-13T01:32:02Z",
    "coletado_em": "2026-11-13T11:18:01Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "fd5dfa7df0d5",
+   "titulo": "Ruas escolhe delegado Lauro Rangel para comandar a Segurança do RJ",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNXzJ0US0zczZzNXJBeFpGRmQ1bU81a1RobWI3N2hpeFJOR0V0bERPX0taVmkzUVZjWFdOUnB3bnR3VXZHc01WZlBWYjlNd2JrU29aRXBGQlo0OFhVUm5raGFHX0hKYjllamdOaWo0WHRoR1JDMG9YZHhLZ193UldqUWh3UmpyZ1FoSW1RWUdlY1pGNjZjcjBjTWVseFA5aGlHRGhleU9hQ3pOdjNvYjBPbzZvemhtYVdteVE?oc=5",
+   "data": "2026-11-13T01:32:02Z",
+   "coletado_em": "2026-11-14T15:17:49Z",
    "outras": [],
    "ufs": [
     "RJ"
@@ -10120,7 +10194,12 @@
    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1LMGVaWDlSeTcteGMtUkRhQWVFTm5JdUNXSUNvMnlfRXdXZ09ZTTFIYkpTTm9jNUNwU0JZMkdYV3VUTXpVT0JkZlhsYXZ5ZlREZlBNemRwejVHUVdoN3lMS2NMSF82RzZWWkVlbmFQVG43Zw?oc=5",
    "data": "2026-10-29T13:54:56Z",
    "coletado_em": "2026-10-29T13:54:56Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "O Potiguar",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNcDVoTDZFNXNOTG5ITkhhN05RSE14V2xyU1JYYThNS1p6dS1zWE9QMjZQbjJMbFdESDEyVXpKZkgwa1VXYV9lMHdRcE84b3BBdm8zWGttakRuckFHVnY3bEhqcW5PM0pLeW1DWjZQSTFfTVQ3Qy1Wa3I2ZnNTMTlXYVdxaWF0WEF2TFdDbHJxRG93ODhKQzBXX2JQN1ZTcW5HN2NFaFVqX3V4RGJhaFE?oc=5"
+    }
+   ],
    "ufs": [
     "RN"
    ],
@@ -11261,6 +11340,20 @@
     "gastos"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "da4ea6c668f1",
+   "titulo": "Zucco anuncia hoje à tarde os primeiros nomes do Secretariado",
+   "veiculo": "Correio do Povo",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQWUIyb3gwMEtpaHA5YVNuTTQwd1BKaTFUQnl2VS1yLTFKZWNHdU5sY01oRS1RbkdZUzR2TFNSM3hMeG9rUzZaRkM1Zk9rUk5FcXpwLVV2anVPUHNySkM1anN4clVWMms1a2ROQTlxNTBxekl5LU5EOFlZLUpDbVlRX0xfQlpVU056VGpYT0xuY2Q5MVJReGRDRzRnZi1qOWhoam9zdFRBMFh3Y3VnTlJiajczUWo2ZUhFcGhveW4tMU5idk9MT3FXaTNYN0FZamp5dEFpSnVZa1ZaNVBWNHpyblNpTXV2UQ?oc=5",
+   "data": "2026-10-27T07:00:00Z",
+   "coletado_em": "2026-11-14T15:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "d79b9ca1a1a9",
@@ -12753,6 +12846,20 @@
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZ3hOY3JDNzZfZWlDeDNiUWE4eGJ3cktzbVRFZXQzSzk1aFR6dmNHM1RtRDFWM3V6NzdiUDhNZ0piSXF6RVZmOXE4cWsxSl95cnR0dGlkQV81VmZOb0pFOVFrNVM5U1NKX2h2cnVXbDdUNE0wd3h2a0RhRmxIT0FBd1d3cWFKZW9VckwxWUdxYmc3NnpSZWdjb1JZTDNua3E5UXJFMUhaZUZna01YQVM3OElFTnRNMmNlQ3Bv?oc=5",
    "data": "2026-10-20T07:00:00Z",
    "coletado_em": "2026-11-13T21:18:00Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "aaac1f3132c5",
+   "titulo": "Governador eleito Sérgio Moro anuncia Pricilla Santana como secretária da Fazenda do Paraná",
+   "veiculo": "TVCI",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWW1QdVppdktUb2ljNmNIMXFMaVBGM0tIRlNKWm1VZVRJNjQ3SzA3MlZIWHN1VG5NeVlYRUV6UFZySE52MFdHQXo1UTkzX0tKVExIVFhMVElMQWtBeXlkNnoybUtMbWgxaUhSSkRsREJFaG5BbTA3TUxpM29tYWlybU1aM3NpWE84cDc3TUZrWThwV1BScG9pVjFlTTBydDAxOHp4UUMwaTNGNEJ1TWsyR0JxOGpoekNXT2RuYk5n?oc=5",
+   "data": "2026-10-20T07:00:00Z",
+   "coletado_em": "2026-11-14T15:17:49Z",
    "outras": [],
    "ufs": [
     "PR"
@@ -16744,6 +16851,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "49f2071f75c6",
+   "titulo": "Braide anuncia secretários municipais como integrantes de equipe de transição",
+   "veiculo": "Blog do Gláucio Ericeira",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTHFCQmN5TmxJSUpnVFc0VXRMWHpRYmJkcGFYZFdmclZNSFJXRVc2VmpQc3JHdTlWZXJ6OUhYUlMwTVBiM1lSTXpjdWZwUTNpX24zTkhSNnJDMmdlaUVlZDRSbkFBMURJY3ljT2I3SW9yRWJCMkR1cVVPb08ySzNfX0VRUXU1T1p4eUx2SE9qd3JPSE1CekctdWVZaWQ1emZXZGE4TE1MbmVQRVQ4MzZ2elUwaDJ3ZmNudF9CYVFB?oc=5",
+   "data": "2026-10-07T07:00:00Z",
+   "coletado_em": "2026-11-14T15:17:49Z",
+   "outras": [],
+   "ufs": [
+    "MA"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "48082c75a93f",
    "titulo": "Declaração de apoio de Dr. Luizinho irrita equipe de Douglas Ruas; candidato do PL planeja tirar do PP o comando da Secretaria de Saúde e nomear um técnico",
    "veiculo": "Tempo Real",
@@ -16809,6 +16930,20 @@
    "outras": [],
    "ufs": [
     "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "1c86ea82bc8b",
+   "titulo": "Esmênia deve perder auxiliares de primeiro escalão para Eduardo Braide",
+   "veiculo": "Imirante.com",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNQzBFdUFST1I4QTc5MDZkNzZiLUR5bC03Ni1iN01kVkVySk1ER1VPai1BRWhsdnZYZjByeGNtdGNuNW00Uzl1eWpUbER2UGlwd0Z5VFBMdWo3aUQ5a1l3WWJIVG9ibjVvcU1RcC1Kb1p1c1pyZVRmUTFJT3NBam16UlF5RXJxVTRmcmI5ZG1nb2tIdE9MMEk2VXhrOWloQ3l4TDN0Vk1saFUyVGlZUFljenh5NXBKMFhGYXVkZ0hJZ9IBxAFBVV95cUxQckJFSEJOTEF3elYzVkc3VHEtNng2dGt4WmRvSUl4aUZCdk8xY3hjWUJ1SnhhT0JuSXFzT1FhUGxwSnFjVWowMl93dDRTUGM0MmtNWjlFVnQ1YjVudzBXazJ5WXZ5REFoWDJsNG1UMDM1VEZGS2hNM1QxMnNURFBNZElEbFU0X2t5all6aENsTXhDaUJ6ako5a3dFTkZ3VmVhdWxKSFpkTW1vSTBIRk5mQWcxNl81aF9lbUxsVnlGM0ZsZUxL?oc=5",
+   "data": "2026-10-07T07:00:00Z",
+   "coletado_em": "2026-11-14T15:17:49Z",
+   "outras": [],
+   "ufs": [
+    "MA"
    ],
    "temas": [],
    "categoria": "equipe"
