@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-14",
- "gerado_em": "2026-11-14T22:17:15Z",
+ "gerado_em": "2026-11-14T23:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 12,
+   "lidos": 13,
    "aceitos": 4,
    "possiveis": 1
   },
@@ -33,8 +33,8 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 4,
+   "lidos": 10,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -42,7 +42,7 @@
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
    "lidos": 9,
-   "aceitos": 9,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
@@ -57,7 +57,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -65,23 +65,23 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 4,
+   "lidos": 7,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 3,
+   "lidos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 41,
-   "aceitos": 2,
-   "possiveis": 3
+   "lidos": 43,
+   "aceitos": 1,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 20,
+   "lidos": 21,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 3,
+   "lidos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -278,16 +278,16 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "possivel": 30,
-  "sem_contexto": 298,
+  "possivel": 31,
+  "sem_contexto": 312,
   "oficial_sem_tema": 1,
-  "outro_estado": 20,
-  "sem_contexto_com_tema": 8,
+  "sem_contexto_com_tema": 6,
+  "outro_estado": 18,
   "excluir": 14,
-  "exterior_sem_ancora": 11,
-  "veiculo_excluido": 25,
+  "exterior_sem_ancora": 10,
+  "veiculo_excluido": 26,
   "veiculo_outra_praca": 7,
   "sigla_sem_ancora": 8,
   "generico_sem_ancora": 1
@@ -911,6 +911,20 @@
    ]
   },
   {
+   "id": "3ff3a02fd172",
+   "titulo": "Descontos de até 95% para quitação de dívidas com ICMS, IPVA e Taxa de Bombeiros",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPQ2VSRlV4MXprcVNqMTB0YVQ1NTZ0azIyYl9xQXBuSDRmMzZ6WGJsWFpSMkV1NnZ3cHg0UTNXR2pacVQxQmNtWFVyM0IxeUY3dmE2YTRmQ2RWNk91d0RVWkJGTV9JN0J4U0FoTVlfRlBWaWN4bnVvSDVqZW9FbXdXX1VIQ1dKNXZSMXo0WU8zMWFndF9ucEE1UGhIRjhmNTVMY3pWNmZ1UzN3QnVsZVBXUmoxRVhlSW1haG5wVGZqZlpyTkFHRVlWX1ZaODFOWTDSAdcBQVVfeXFMUDlWVG5mOUFCMi03aGhTYm9aMnpQSldIdUM1UDltcHBfMkl4QWptc3JzQ3Z2MElycWZCejc5RXpPWTROdUdZTjVkV2MzeWZ3MXBxZGpxSjhvaGF0MFZxOWQ1UnZFS1RqTWZ1djdkbEFpY1FDZTJ1RE5VTGlXTEllRnBMdG5xcTdnVFpKYWhMbjFSYjlmUFNZSmh5QkVJSmFHM2o3OC03dmw3cE10dzcyY3l0dFFIYmpTdzBGVUtUV2JaeTU2Q3dYeDl1bXBQSW13ek43WmtlS1U?oc=5",
+   "data": "2026-11-13T13:47:06Z",
+   "coletado_em": "2026-11-14T23:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
    "id": "af750c117201",
    "titulo": "Novos contornos, duplicações e restaurações marcam segundo ano do novo contrato da Ecovias Capixaba",
    "veiculo": "A Gazeta",
@@ -1183,6 +1197,21 @@
    "triagem": 8,
    "temas": [
     "financas"
+   ]
+  },
+  {
+   "id": "ae29f91d7055",
+   "titulo": "Pazolini, governador eleito, se reúne com arcebispo e reforça importância do diálogo institucional",
+   "veiculo": "Tribuna Norte Leste",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQVTc5RmM2cDQ0cGRvTDRxbjB2QUpWU0xTSnBmVHpXekpkSE9pYkpKUG45R3NHdmZ4Y2lWby04XzBYX1p6bVlqVURmNmdLVmdyZDlnUGFJRFdKYzRpOVFaaWtNcUU5cGRLQy1sNll0dmFkNkVnQ2dFS0FQTlZTVjgxSjNISGVxYkpEbU1YaHRLdnpfeE5YMUJzelpGUGI4ZnlJeHo4ZU1sOEVrZnRIVkF6LTE0ZG1icERLZE9Wb0FST2s4OFh5X3Rsb3J3?oc=5",
+   "data": "2026-11-13T00:20:57Z",
+   "coletado_em": "2026-11-14T23:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao",
+    "governador"
    ]
   },
   {
