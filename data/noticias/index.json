@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-14",
- "gerado_em": "2026-11-14T10:17:13Z",
+ "gerado_em": "2026-11-14T13:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 20,
-   "aceitos": 7,
+   "lidos": 17,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -26,15 +26,15 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 27,
-   "aceitos": 15,
-   "possiveis": 5
+   "aceitos": 13,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 8,
-   "aceitos": 5,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
@@ -49,8 +49,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 16,
-   "aceitos": 5,
+   "lidos": 13,
+   "aceitos": 2,
    "possiveis": 3
   },
   {
@@ -66,22 +66,22 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 8,
-   "aceitos": 5,
-   "possiveis": 2
+   "aceitos": 4,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 3,
-   "possiveis": 3
+   "aceitos": 4,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,17 +89,17 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 58,
+   "lidos": 48,
    "aceitos": 1,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 59,
+   "lidos": 43,
    "aceitos": 2,
-   "possiveis": 5
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 2,
+   "lidos": 4,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 19,
+   "lidos": 20,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,16 +153,16 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 27,
    "aceitos": 0,
-   "possiveis": 11
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 76,
-   "aceitos": 9,
+   "lidos": 75,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 7,
+   "lidos": 8,
+   "aceitos": 5,
    "possiveis": 1
   },
   {
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 3
   },
   {
@@ -242,7 +242,7 @@
    "consulta": "https://g1.globo.com/rss/g1/es/espirito-santo/",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
@@ -280,20 +280,33 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 343,
-  "possivel": 38,
+  "sem_contexto": 329,
+  "possivel": 32,
   "oficial_sem_tema": 1,
-  "veiculo_excluido": 25,
-  "sem_contexto_com_tema": 8,
+  "sem_contexto_com_tema": 14,
+  "veiculo_excluido": 22,
   "generico_sem_ancora": 2,
-  "exterior_sem_ancora": 11,
-  "excluir": 23,
-  "caixa_alta": 1,
+  "exterior_sem_ancora": 7,
+  "excluir": 24,
   "outro_estado": 15,
-  "sigla_sem_ancora": 14,
-  "veiculo_outra_praca": 11
+  "sigla_sem_ancora": 9,
+  "veiculo_outra_praca": 12
  },
  "itens": [
+  {
+   "id": "2ee8dc6c58d3",
+   "titulo": "Morre Elis Regina Pazini, servidora da Educação de Cachoeiro, aos 52 anos",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQVVNhT0l3SU9SbW5PaV81TXA4MFJucklySUN6MF83anRnb3dRbnRxOE40M0lFSXludWJFZTBVR3Y1QjUtTXpmbENrWkRlRm1OZDNJZjdpMHJGYXNCLUVic3FmSVRxd1pfS2I2TlVZclJ4LUFHZG9kcmpkMHFENXFkWUdkTGhlTHBucGc?oc=5",
+   "data": "2026-11-14T12:26:47Z",
+   "coletado_em": "2026-11-14T13:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "a71413826ed8",
    "titulo": "Ex-secretário de Segurança Pública de Vitória irá integrar equipe de transição do governo Pazolini",
