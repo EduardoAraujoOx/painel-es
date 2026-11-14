@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-14",
- "gerado_em": "2026-11-14T14:17:13Z",
+ "gerado_em": "2026-11-14T15:50:00Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 17,
+   "lidos": 15,
    "aceitos": 6,
    "possiveis": 1
   },
@@ -27,13 +27,13 @@
    "ok": true,
    "lidos": 28,
    "aceitos": 12,
-   "possiveis": 5
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 4,
    "possiveis": 1
   },
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 8,
+   "lidos": 10,
+   "aceitos": 9,
    "possiveis": 1
   },
   {
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 9,
    "aceitos": 4,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 46,
+   "lidos": 43,
    "aceitos": 1,
    "possiveis": 4
   },
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 1,
+   "lidos": 2,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 18,
+   "lidos": 19,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 23,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -155,7 +155,7 @@
    "ok": true,
    "lidos": 28,
    "aceitos": 0,
-   "possiveis": 6
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 5,
+   "lidos": 6,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
@@ -210,8 +210,8 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
-   "possiveis": 3
+   "aceitos": 2,
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -250,7 +250,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -278,21 +278,33 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "possivel": 35,
-  "sem_contexto": 323,
+  "possivel": 32,
+  "sem_contexto": 326,
   "oficial_sem_tema": 1,
   "sem_contexto_com_tema": 12,
   "exterior_sem_ancora": 8,
-  "excluir": 23,
-  "outro_estado": 14,
+  "excluir": 22,
+  "outro_estado": 16,
   "veiculo_excluido": 23,
-  "sigla_sem_ancora": 9,
-  "veiculo_outra_praca": 15,
+  "sigla_sem_ancora": 7,
+  "veiculo_outra_praca": 12,
   "generico_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "50843edde817",
+   "titulo": "Governo de Mato Grosso do Sul libera R$ 11,5 milhões para modernização dos serviços do Detran",
+   "veiculo": "Capital News",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPb21wcE9qT0gyMmt6cm0zU0d4WHlHbV9lalMzbXg3UEx2c2c5cEMwZ2tiYV9TOEdGbmxZUWRKbFVTTTByZk5QamxDaUJjeXl3LUx3QllObG42c1o4RldCd25UbXJvY25rVlpGWGVkeGNiRmtCRHVpN0xIMUtWNms4OW0xNmxxOE5FdXJZQzNOdTdnUm5qWTFvbFI4TThwYjViTEVKOFFtQzhwYk1qOXRPZEtFcFZ1NXRNZXJ3WUU2ODVVMnJTMHVuS1c3el9IMk1PRkdvb090R1R6YzI3ZkQ3WllNUXJWTWJEYURiOA?oc=5",
+   "data": "2026-11-14T15:40:00Z",
+   "coletado_em": "2026-11-14T15:50:00Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "1a36fd09e4b1",
    "titulo": "Consulta pública discute redução de 5,52% nas tarifas da Cesan",
