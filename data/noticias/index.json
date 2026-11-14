@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-14",
- "gerado_em": "2026-11-14T17:17:13Z",
+ "gerado_em": "2026-11-14T18:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 15,
+   "lidos": 16,
    "aceitos": 6,
    "possiveis": 1
   },
@@ -25,7 +25,7 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 28,
+   "lidos": 29,
    "aceitos": 13,
    "possiveis": 4
   },
@@ -57,7 +57,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 1,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,15 +89,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 40,
+   "lidos": 38,
    "aceitos": 1,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 45,
+   "lidos": 43,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 30,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 4,
+   "lidos": 5,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -278,18 +278,18 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "possivel": 32,
-  "sem_contexto": 330,
+  "possivel": 31,
+  "sem_contexto": 328,
   "oficial_sem_tema": 1,
-  "sem_contexto_com_tema": 12,
-  "exterior_sem_ancora": 9,
+  "sem_contexto_com_tema": 11,
+  "outro_estado": 17,
+  "exterior_sem_ancora": 11,
   "excluir": 22,
-  "outro_estado": 15,
   "veiculo_excluido": 23,
   "sigla_sem_ancora": 6,
-  "veiculo_outra_praca": 10,
+  "veiculo_outra_praca": 9,
   "generico_sem_ancora": 1
  },
  "itens": [
@@ -567,6 +567,10 @@
     {
      "veiculo": "Secretaria de Estado do Governo",
      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMjdkMm1xdGZNX2tPZlI3eTlXT0RzTTlmeWZHMFo4WkNCWjFlOGRoTTNoN181andUdUo0STNaT1djTWdteFpyVi1rZ05Md0hPM1Zjd1JuYlZrZkJYeWxaZF9wdXJQNEJnYlVfZlVXVUNwSU9WSWpjems5b3V5aDd6RGF0aDRSeHZfeWtLUnpYMFZvWUxjV0l3VTVzRFg0MGlmb19Lbl9LbVhxNTlNT3V6Q3hQcw?oc=5"
+    },
+    {
+     "veiculo": "Governo ES",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPOC00VkxTRHNlUFVHMEV4Smh6Nzc5UWRCeFBheDdObW5aUTBTMllJUDhrd1E3VnU4T3hwSDkyZEZtZUlRYVc5dTBaeDBWQ2dpcEV5cTEyQWx5SWpHOV9pYXZtNFZtRzliNHFGVE52Rnd5WV9OWjI5NFJMZUFGcUIwb09NQmRkMjRuVFoxdTlHeUtqOTczV0J1MjdtZmFlZkNPZjNtZjNHRERRNXFHVlNNQjRDQQ?oc=5"
     }
    ],
    "possivel": false,
@@ -1005,6 +1009,21 @@
    "possivel": false,
    "triagem": 8,
    "temas": []
+  },
+  {
+   "id": "f4222c4261d7",
+   "titulo": "Delegado Ícaro passa a integrar equipe de transição de Pazolini",
+   "veiculo": "Tribuna Norte Leste",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQ0VvZzdYM1JhbG9QNkZOM1M2a0JRbm54U0hFQmlXMW1KRWlpbmUyNFAwbjlDcWxhbGZBSWxNYmZaZDItUkxZMHZKdFNWd0V2alBGSWhvS1BiTzdYMTlDVlNGb3Z0VGp2SkdGbWEyX2puZFp3UktadXd0MkZ4M0NIZkZPUHNfZGs2bl9vMGowRDJxUEdKNzF4c0IwMENwdw?oc=5",
+   "data": "2026-11-13T02:41:02Z",
+   "coletado_em": "2026-11-14T18:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
   },
   {
    "id": "047c3ffcb775",
