@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-14",
- "gerado_em": "2026-11-14T21:17:14Z",
+ "gerado_em": "2026-11-14T22:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 13,
-   "aceitos": 5,
+   "lidos": 12,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
@@ -33,7 +33,7 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 4,
    "possiveis": 1
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 43,
+   "lidos": 41,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 29,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 22,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 28,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 76,
+   "lidos": 75,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -250,7 +250,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -258,7 +258,7 @@
    "consulta": "https://www.agazeta.com.br/colunas/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -280,19 +280,45 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "possivel": 28,
-  "sem_contexto": 305,
+  "possivel": 30,
+  "sem_contexto": 298,
   "oficial_sem_tema": 1,
   "outro_estado": 20,
   "sem_contexto_com_tema": 8,
-  "excluir": 17,
+  "excluir": 14,
   "exterior_sem_ancora": 11,
   "veiculo_excluido": 25,
   "veiculo_outra_praca": 7,
-  "sigla_sem_ancora": 7,
+  "sigla_sem_ancora": 8,
   "generico_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "4367ea35d699",
+   "titulo": "Detran divulga lista de 34 motoristas que podem ficar até 2 anos sem CNH; veja o que aconteceu",
+   "veiculo": "Agência GBC",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQazZpNTRpSnNlbXkwQ2RGME02WjRfNTNMNUdmZnZUM0ZhY3ZmYWNZbHNHaTFUZHBUdWxNNk14ZEotczRfSC1uNUZubHpfWkVUbTlfV0xVeGNlQ3k2b2F2ZWJRWTB6b0I2MHZ2cVVRWXg1X0k1bW80RkRaUkhpNGw1dVc3OTRSQ0J4YXdPNHJLaXJXb3RGeHlBT293Z0JCMW5lUHAwcnNyYVN6U2FsNXVST1dqVGxKZEo0bTlBRWNhN2pxc0FLSnFZ?oc=5",
+   "data": "2026-11-14T22:00:00Z",
+   "coletado_em": "2026-11-14T22:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "a7f04a9c8ca2",
+   "titulo": "Faça Fácil de Cariacica suspende serviços por 7 dias; veja quais",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/cotidiano/faca-facil-de-cariacica-suspende-servicos-por-7-dias-veja-quais/",
+   "data": "2026-11-14T21:16:49Z",
+   "coletado_em": "2026-11-14T22:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "restricao"
+   ]
+  },
   {
    "id": "884d8d3665c5",
    "titulo": "Senado fecha pregão de iPhones para parlamentares por R$ 4,95 milhões",
