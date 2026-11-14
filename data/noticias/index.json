@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-14",
- "gerado_em": "2026-11-14T20:17:17Z",
+ "gerado_em": "2026-11-14T20:43:34Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 28,
-   "aceitos": 12,
+   "aceitos": 11,
    "possiveis": 3
   },
   {
@@ -41,17 +41,17 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 8,
+   "lidos": 10,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 13,
+   "lidos": 12,
    "aceitos": 2,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 6,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 27,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 43,
+   "lidos": 44,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 29,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 23,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 28,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -267,7 +267,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Sim Notícias",
@@ -281,18 +281,32 @@
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
   "possivel": 27,
-  "sem_contexto": 314,
+  "sem_contexto": 312,
   "oficial_sem_tema": 1,
-  "sem_contexto_com_tema": 10,
+  "sem_contexto_com_tema": 9,
   "outro_estado": 20,
   "excluir": 17,
-  "exterior_sem_ancora": 10,
-  "veiculo_excluido": 25,
-  "veiculo_outra_praca": 9,
-  "sigla_sem_ancora": 5,
+  "exterior_sem_ancora": 11,
+  "veiculo_excluido": 24,
+  "veiculo_outra_praca": 7,
+  "sigla_sem_ancora": 6,
   "generico_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "884d8d3665c5",
+   "titulo": "Senado fecha pregão de iPhones para parlamentares por R$ 4,95 milhões",
+   "veiculo": "Sim Notícias",
+   "url": "https://simnoticias.com.br/politica/senado-fecha-pregao-de-iphones-para-parlamentares-por-r-495-milhoes/",
+   "data": "2026-11-14T20:42:44Z",
+   "coletado_em": "2026-11-14T20:43:34Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "637a728484a9",
    "titulo": "Por que o México arrecada tão poucos impostos (e como financia seus crescentes benefícios sociais)",
@@ -306,6 +320,18 @@
    "temas": [
     "financas"
    ]
+  },
+  {
+   "id": "b4261651cbaa",
+   "titulo": "Sejus libera carros sem identificação para operações de inteligência e combate ao crime",
+   "veiculo": "Muvuca Popular",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQZE9OLS1GOG41bWRDTVI3ME1CNFMyYXVWcFZ5S3JOUVlHbWxxeFUzellaNjJtT3hGcmJlUTFqRWU5b0l3WmlOdlNCWUNYWDU3U0xZcktWMGdmNTBWSlZhQ2hGWGMwTzVxSG01eXhJLVc0ckpkWGFrcjBQRmF4NkpXUFZKYTVqeUYwZV9SLWh4ZENHT0h0b3NrV29xbjhPVXlvbzJMLU0zNnlCVkRMOThtUTYybEw1ODNKNDZHT0hiUjFOalZheTdIYlRGcGQ?oc=5",
+   "data": "2026-11-14T18:07:20Z",
+   "coletado_em": "2026-11-14T20:43:34Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
   },
   {
    "id": "39e773c0b1d8",
