@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-14",
- "gerado_em": "2026-11-14T13:17:13Z",
+ "gerado_em": "2026-11-14T14:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -19,15 +19,15 @@
    "ok": true,
    "lidos": 17,
    "aceitos": 6,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 27,
-   "aceitos": 13,
-   "possiveis": 4
+   "lidos": 28,
+   "aceitos": 12,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -41,17 +41,17 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 8,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 13,
+   "lidos": 12,
    "aceitos": 2,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 4,
    "possiveis": 0
   },
@@ -89,15 +89,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 48,
+   "lidos": 46,
    "aceitos": 1,
-   "possiveis": 5
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 43,
+   "lidos": 44,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 20,
+   "lidos": 18,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 22,
+   "lidos": 24,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 28,
    "aceitos": 0,
    "possiveis": 6
   },
@@ -162,7 +162,7 @@
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 75,
-   "aceitos": 6,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -177,7 +177,7 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 5,
    "possiveis": 1
   },
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 3
   },
   {
@@ -243,7 +243,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "A Gazeta",
@@ -278,21 +278,52 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 329,
-  "possivel": 32,
+  "possivel": 35,
+  "sem_contexto": 323,
   "oficial_sem_tema": 1,
-  "sem_contexto_com_tema": 14,
-  "veiculo_excluido": 22,
-  "generico_sem_ancora": 2,
-  "exterior_sem_ancora": 7,
-  "excluir": 24,
-  "outro_estado": 15,
+  "sem_contexto_com_tema": 12,
+  "exterior_sem_ancora": 8,
+  "excluir": 23,
+  "outro_estado": 14,
+  "veiculo_excluido": 23,
   "sigla_sem_ancora": 9,
-  "veiculo_outra_praca": 12
+  "veiculo_outra_praca": 15,
+  "generico_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "1a36fd09e4b1",
+   "titulo": "Consulta pública discute redução de 5,52% nas tarifas da Cesan",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/cotidiano/consulta-publica-discute-reducao-de-5-52-nas-tarifas-da-cesan-1126",
+   "data": "2026-11-14T13:58:34Z",
+   "coletado_em": "2026-11-14T14:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "18441d802d02",
+   "titulo": "Teatro do Cais das Artes tem entrega adiada para 2027; complexo cultural em Vitória segue com obras atrasadas",
+   "veiculo": "G1 Espírito Santo",
+   "url": "https://g1.globo.com/es/espirito-santo/noticia/2026/11/14/teatro-do-cais-das-artes-tem-entrega-adiada-para-2027-complexo-cultural-em-vitoria-segue-com-obras-atrasadas.ghtml",
+   "data": "2026-11-14T13:54:59Z",
+   "coletado_em": "2026-11-14T14:17:13Z",
+   "outras": [
+    {
+     "veiculo": "G1",
+     "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOTW9IM0lqQURwTzRUanQyZkN2d3R6VTRxcUc2V2FfMThldm40aU9USndGbmRHSVFUdVlzeHMycHY0aXRLc2YzYURiMGh5QjUtMUJKenQ0TG9oemFmR3VZcUF4bGtBb2hGT1JIZ0R6blNtaFNjaTdibEVZd0d5dmd2aUw5TkMzUXpQTUlEZjl6U3pzMzVsZ0d0MVdkMmtyZzdmQm56U1g2NnQxalNSbWRXbjd2RGJWRVBLblVEVXBqd0RNYnotTmhkLWFoa2lMUHllR004eGZqTUNXR1dlbVhSdEo2Nkktc1Y3SWNuRlIyQlZUdEN0V2owZjlZZGFZajdIRnfSAZACQVVfeXFMT2lzN0dUNjVrTzdtTjNSVDlNWi1PS21NODJVZGsyWXkwOWVJQW5uREdxYzhqNEtBbDRYN0Ftejl3RDdZdm9mV0Z1TEFLdDZJRkQyZ1NmRVZpRm1zQVhFdzMwY2tTM1lxYmZFM0xqR3BhcmJNa1c1NEIzYzhXeHUyZUJFSUZzT3dyWW5YMWFkbmpaOVZXM29zSkVORlRtNktUYjEwdUZDNVo2Z1E5cE56bmRFTkw5d3o3U3owOFJyU2syd3plTjVLVmNKZGhqZzNqQXhCS25pQUN0Q2Q2QnJlS0dkZXFHemFoVVdPUUhBOXR5T29Ob0N1TmxfTjczSk5ObkpBSk9mZ2FiczdUWU9zVmc?oc=5"
+    }
+   ],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "restricao"
+   ]
+  },
   {
    "id": "2ee8dc6c58d3",
    "titulo": "Morre Elis Regina Pazini, servidora da Educação de Cachoeiro, aos 52 anos",
@@ -1583,6 +1614,18 @@
    "temas": [
     "governador"
    ]
+  },
+  {
+   "id": "6ccb676b6c6f",
+   "titulo": "Falta de água suspende atendimento do Detran em Ponta Porã nesta quinta-feira - Ponta Porã Informa -",
+   "veiculo": "Ponta Porã Informa",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPV1hkV2N4VWVWVVRoUHpnb1FKLUdHaS1SMEVXSWJaNGJkSi1XX29XX0F6Y3IxWFNGMjN0dmVoVUhVWmE5emVXNDdRUDNzM3BoZTVua0x3U2NSYUM5bWFvQU1JT1FrT0k4WW9xalJnWDcyR3M2dUJrdU1kMnZSN3RVMUpzSF9kb2hINldXeG5LMEJDQkpWd1ltTm94dTJHN3pQOVRmUHpDVEVGam5hNm9pWFFudlDSAboBQVVfeXFMTWNYdllOS2hwVVA4a2tkeko2MkhzMDNBLXdNeTBvMXJfRDREV29nN0VPdUZoU2M2Q2s2RHVaYlgxUGxfd1NuRnd5eVlMeWs5ejRDYl94UGpYbkJTZm9BOG9venItcGFPNE11RldZdkNYUjhzWlNzSXVCUnF6MjJGUmFYLWdRVUlRSy0xUVZtZklaUm52dXBMcnJIZmV3aE16ODEyQUZwTGtWSWJfTGxSbHVjRWlfb1VDUWNB?oc=5",
+   "data": "2026-11-12T14:20:00Z",
+   "coletado_em": "2026-11-14T14:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
   },
   {
    "id": "b098132fc8a5",
