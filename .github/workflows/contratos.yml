@@ -107,7 +107,7 @@ jobs:
         id: secom
         continue-on-error: true
         run: |
-          command -v pdftotext >/dev/null || sudo apt-get install -y poppler-utils
+          bash .github/scripts/garantir_poppler.sh
           python3 -I pipeline/contratos/secom.py
 
       - name: Conferir com o Portal da Transparência
@@ -148,7 +148,7 @@ jobs:
         id: diario
         continue-on-error: true
         run: |
-          command -v pdftotext >/dev/null || sudo apt-get install -y -qq poppler-utils
+          bash .github/scripts/garantir_poppler.sh
           python3 -I pipeline/contratos/diario.py
 
       - name: Montar data/contratacoes
