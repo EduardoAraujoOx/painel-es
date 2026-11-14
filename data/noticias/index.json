@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-14",
- "gerado_em": "2026-11-14T00:17:13Z",
+ "gerado_em": "2026-11-14T01:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 70,
+   "lidos": 69,
    "aceitos": 2,
    "possiveis": 4
   },
@@ -99,7 +99,7 @@
    "ok": true,
    "lidos": 67,
    "aceitos": 1,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,9 +145,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 19,
+   "lidos": 22,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -278,22 +278,36 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 350,
-  "possivel": 38,
+  "sem_contexto": 349,
+  "possivel": 39,
   "oficial_sem_tema": 1,
-  "veiculo_excluido": 25,
+  "veiculo_excluido": 23,
   "sem_contexto_com_tema": 10,
-  "exterior_sem_ancora": 6,
+  "exterior_sem_ancora": 8,
   "excluir": 24,
   "caixa_alta": 1,
   "outro_estado": 17,
-  "sigla_sem_ancora": 13,
-  "veiculo_outra_praca": 9,
+  "sigla_sem_ancora": 14,
+  "veiculo_outra_praca": 10,
   "generico_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "739bde6a8158",
+   "titulo": "Governo diz não ver indícios de ameaça, mas não descarta ataque após voos suspensos",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQSW5oOE5UbTdjdHJvSHR2UzA3SVFmQm1mM2Fuc2gwM0w1dkpEeFJnSHByZVFjcmdqUGRnX2dQTHBsSS1KQlFWUkE2bzNXSUxNNzJ6cWlORDJiNENfZ04yUW5Oc2ZjVGJTMkJEdl9hbFJBS0dUS0hBdzV1UVpUeE9NTjE3MUlybEtraFVYaFczTDREc2VuVjJhcnRkb3V4Zjl1aEs1R0Jxa0lUYkw5a0VvbW9PeF9GZVIyRjNxczhVTE5MLXBacTFEN25KdU4?oc=5",
+   "data": "2026-11-13T23:09:10Z",
+   "coletado_em": "2026-11-14T01:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "b6cfaa21d5fa",
    "titulo": "Banestes acumula lucro de R$ 310 milhões e bate recorde de receita trimestral",
@@ -832,6 +846,20 @@
    "temas": [
     "transicao",
     "governador"
+   ]
+  },
+  {
+   "id": "5eb7529651d2",
+   "titulo": "Juazeiro do Norte: SECULT realiza convocação dos proponentes classificados e habilitados na PNAB para assinatura ds contratos – Badalo",
+   "veiculo": "Badalo",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNRndWOFd4SnBfWWZoNE15TEtFYkhoZFpvRkktc055TXlqQVJMaXE3VXRvdThkYVZOWFNqUUlVblBHM05PQ2tQQmVmRTM2Nm0zUjE2OU8yWFctY3ZpanhlYlQtTVZVNndHeThNa0M2cE1IRGtKaE1JSURQU2VQcFg5ZFNRQlE0RVFvWFhqVVl0TlhTUDZ6alB6bUhMRV9mQkFsSEhEUkdCVUlCT0VuOEJzUW9UWE9FcUdaX2VTLXhSM0Z1NURCTjlXNUllTDhsZGNINGVFbjdfWkE3bGRnd1pUQw?oc=5",
+   "data": "2026-11-13T09:02:49Z",
+   "coletado_em": "2026-11-14T01:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "contratos"
    ]
   },
   {
