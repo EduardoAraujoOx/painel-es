@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-14T15:17:49Z",
+ "gerado_em": "2026-11-14T21:17:48Z",
  "ref": "2026-11-14",
  "desde": "2026-10-04",
  "estados": [
@@ -15,14 +15,14 @@
    "nome": "Amapá",
    "eleito": "Dr. Furlan",
    "partido": "PSD",
-   "total": 25
+   "total": 26
   },
   {
    "uf": "AM",
    "nome": "Amazonas",
    "eleito": "Omar Aziz",
    "partido": "PSD",
-   "total": 114
+   "total": 118
   },
   {
    "uf": "MA",
@@ -36,7 +36,7 @@
    "nome": "Minas Gerais",
    "eleito": "Cleitinho Azevedo",
    "partido": "Republicanos",
-   "total": 166
+   "total": 168
   },
   {
    "uf": "PA",
@@ -64,14 +64,14 @@
    "nome": "Rio Grande do Norte",
    "eleito": "Cadu Xavier",
    "partido": "PT",
-   "total": 75
+   "total": 78
   },
   {
    "uf": "RS",
    "nome": "Rio Grande do Sul",
    "eleito": "Luciano Zucco",
    "partido": "PL",
-   "total": 133
+   "total": 134
   },
   {
    "uf": "RO",
@@ -92,7 +92,7 @@
    "nome": "Tocantins",
    "eleito": "Vicentinho Júnior",
    "partido": "PSDB",
-   "total": 116
+   "total": 117
   }
  ],
  "temas": {
@@ -106,11 +106,53 @@
   "fndr": "FNDR e reforma tributária"
  },
  "contagem": {
-  "total": 1200,
-  "medidas": 366,
-  "equipe": 834
+  "total": 1212,
+  "medidas": 369,
+  "equipe": 843
  },
  "itens": [
+  {
+   "id": "3cbb234f66e0",
+   "titulo": "» Zucco ergue bandeira de Livramento e confirma ao Jornal A Plateia que manterá Secretaria de Turismo no RS",
+   "veiculo": "Jornal A Plateia",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPM2FEY014ZWhhSUN0a19fNmNxVC04ZlB1NndsaVNEUm5tdEt5NzRRb2hoY0hSdE8xSXJnUDJscmk2ZHU2b1U3RGdwRjM0T3h2aTRKSk0xa211QTBVSThDTDZFN3dxaV9WTUF5b0tQTVctbkRwdTlJT0kyY29qb1pSRnNrbFBiR29GTTJqQ0E4a1E5cmVCT2FsRC1Ca1JOY2pobHV0cjdNRDdOcmcyU3dwTVF6ZGJaYlRZVWp0NDV6VlVHLWc2SEl1X0ZtVi15MnFGa2hSLTh2OXhNUQ?oc=5",
+   "data": "2026-11-14T20:32:00Z",
+   "coletado_em": "2026-11-14T21:17:48Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "6f9df9f0a72e",
+   "titulo": "Equipe de transição de Omar Aziz encontra 16 milhões de livros parados em depósito da Seduc no AM",
+   "veiculo": "EM TEMPO",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQM2tCZGJZWlJUTnZ1Ynkwek85MFQ5WTBaSTJ5dGVvVDZJdXBOZ1NVOUtjOTZXaTY0WXpMV0xtYjNoLWhSQko4TWVyX05Ybk1wUWEzTFh6TF9QVEpwT2I5Z0hsbXhJdjZZVnpldGp1cXU5WGR6VzNiOXpqVktrYjYzLVdMS0JZR3JOdHRHN2FZUGhJZ25UX0tSQm1rWkdjLUhabnA3d3ZWMFJia1pPSDBHX1RHR0tYdFhKU05rREp0ZTA?oc=5",
+   "data": "2026-11-14T19:30:00Z",
+   "coletado_em": "2026-11-14T21:17:48Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "b719029f4ab9",
+   "titulo": "Dr. Furlan anuncia Ivo Melo como futuro secretário de planejamento do Amapá",
+   "veiculo": "Diário do Amapá",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTmlzUWhtcm9vVEFjYU1XNzM2NWozamUtenRrTnRPaE9MME14S2FjV0hzUUxxOW1UX1BIbzQwMXl6aEltYkdJMXBEVnpyUUtHeXdfNDlTQ0FabEhaMDR3b1VKUFcyanlwS0NrUU1jLTFyV2FiMWhxdGhNcDhjM25qa3ZnSVFZVk1qcGE5MnB4SmJ4amFEQk9VZzQ0MTl2NkFFeFpBU1hpQm96aFVZWHFuNWs5ZlhwVC1oR0dpdG1qakt2NUdv?oc=5",
+   "data": "2026-11-14T14:40:30Z",
+   "coletado_em": "2026-11-14T21:17:48Z",
+   "outras": [],
+   "ufs": [
+    "AP"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
   {
    "id": "084710dc144a",
    "titulo": "Governador eleito anuncia ex-presidente da Fetec para comandar Casa Civil em Roraima",
@@ -124,6 +166,23 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "0df9ce3dc544",
+   "titulo": "Governo Cadu avalia reajuste salarial de secretários no RN em meio a crise nas contas públicas",
+   "veiculo": "BNews RN",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPN1RSeF9UUkItbnpNaU03S2NDX214a2R4TFhfQWlZaXNFdUd1VWxEc29LT0xlRk9LZzI0MjRPcW9xd0F4TFpsR1BlTU5KYWR6VlYyUVh3UXBiLVVwNDd0TllyS25iWlAxSXQyOWNuZzRFdXZPQVMtNVdjRC1lQnB3bE9VblhETHpMT05OQkZlWlhrOGdKNDBoWUZTaTFURkw3OHpjdHRzeDB3X0Z6Qmx5aWI0SGkxTjNJclBrUEJxa19DOGhZaWZQRmZ2OFhlY0FabmFlNUljaDhRNHUy0gHiAUFVX3lxTE5BbmZ0LUowTUdQdUlQbTc3NXM3WGc1YmhUZG45TDlfVlVSTGlXYzljUlB4SGJ0cnZlS1dtaU80ODlNN0NkS2RPbmEwQTZpNGNSR2sxdkRZTnlSM3R2b1VSUU16enhzNEhJbmlXNER5bXB1RjhRU3B3V3lpOF8xcndMX1JNa1hwQ0Y1MHRGak5XdW9oeFVLTW93Z1I2XzJQNTB2d0tZcmp2TnV6Ulcwa1c5b3FRZFFmUlR4LW9wWTJNWjlEV2U0N2dxd0QyeE5wdmItRVVBTzgzbkVuX1JmYzR2SVE?oc=5",
+   "data": "2026-11-14T13:50:18Z",
+   "coletado_em": "2026-11-14T21:17:48Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [
+    "diagnostico",
+    "pessoal"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "4be3b35de8cb",
@@ -179,6 +238,20 @@
    "outras": [],
    "ufs": [
     "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "1184f0bc4726",
+   "titulo": "Vittorio Medioli confirma que será secretário de Planejamento no governo Cleitinho",
+   "veiculo": "Rede 98",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPLVlhSDROMTZfb1dnSXRhTVpOc0UxalZqMElKcm9mVnVRQmF6eFVqYTB4Y1E1S1ROMTNSMFFFYUtwLUVLa2tyNDBJWXZlcEYtcHVDWE9XTGZlMTFqbnRJTHVmMmRsWVJPYWVwTWIxUzFVUVE2cFR4bXlSNzBQMHE3MWZmR2g3cDZEOUlrVG1qU21oSXZoWjJoOEZjUHpZaTZvR2ZSVmZ1RXBia052bm5TVDFWdFQza1UwbGpXc05vcko?oc=5",
+   "data": "2026-11-14T00:56:00Z",
+   "coletado_em": "2026-11-14T21:17:48Z",
+   "outras": [],
+   "ufs": [
+    "MG"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -275,6 +348,20 @@
     "diagnostico"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "645233384f3a",
+   "titulo": "Cadu Xavier confirma à coluna que anunciará todo o secretariado até 20 de dezembro",
+   "veiculo": "Portal 98 FM Natal",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOOGpybV91MmhNR05ueWpGRzNJV3FtN2xjckhUN2RoZThnMWdOVXM0MTRRQXRqQnRydnJ2ZEtkc2dtbjUydnBIVkp4WFlMeHIyNHNObEVUVXYzZlVCUUtoMm9ZeldPSEJCRUNxSTBqUlFKTVlseFRGcGpOYnRjbkhyLVBReHhDS2treEdfSTdjQ0pDMFZWanpqQVIzSEZmaWg5ckVjR3FQMjRtc3BzcFBWdHQ0Z2Y4Q2RJeHZpdEl3d2IyTUpSeGU5X1dQb2c?oc=5",
+   "data": "2026-11-13T22:16:00Z",
+   "coletado_em": "2026-11-14T21:17:48Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "5206bfef0880",
@@ -751,6 +838,22 @@
    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxObWRaZXdxeFJOem5iUi1EdkZGb2VHRzV0ZzItZ3RfS1lET1FpRUJ0ZVRPTzZycU9HSGpOZXItWmxhemNWVWRCWldfbzBoaUNQMm9zX1prREpuRHBxT0xLYnlrblByeWs4UnNNQ1JITm9GeDByM1p3WF9CdVV0Z3pBcmZGc2tFYi16T0w4dTFkU3k0WEpCLUFGcWR0MTZXanRtX0ttNngwTml4R004LVFoZDloVERIWTEyZ0s3OC1LYy1TaXI0YUtEc3E0MVBJSTg?oc=5",
    "data": "2026-11-13T14:45:54Z",
    "coletado_em": "2026-11-13T15:17:48Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "92ce04f505eb",
+   "titulo": "Os acenos de Cleitinho a Lula para tentar renegociar dívida de MG",
+   "veiculo": "Diário do Centro do Mundo",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNDlQN0RzdHptekZYNkg3czFsdFdETTVfQ0h1WVFrUzVtNFNxa1pydEdMQjMyOU8tY1RjQTQ3MTZJdFFDM0YxZ19nUlZiWV9pN3NWSW95QWEzSHdJNW1PdzE1b19TRFFoMW5KeEt4SU1fYmQ0d2xMaGwwVS1oSlFvdzl1M05DT3FUVUhiRVktb21id3VGQ3kxNjMxeEl2UWlrZGtNNDhVYWVuZlk?oc=5",
+   "data": "2026-11-13T14:43:00Z",
+   "coletado_em": "2026-11-14T21:17:48Z",
    "outras": [],
    "ufs": [
     "MG"
@@ -1899,6 +2002,10 @@
     {
      "veiculo": "Ponta Negra News",
      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5WZ05WeDlrRk1HQ2ExcHo1bTd1U0Z4dEpzQUdfMzlWNGNrMHZqZWk5V0VYT1NuMm5YcS1OZXM3MldQM0RnSkJrRVpDQ1RHdGlPZm5icjRFM1NLc2c0MVFRWXVIbFNISmVZYTRGZk1fWkJMU3RRdXZkQkhORTJURjjSAYQBQVVfeXFMTUhOcmh2U05sZkZfR2NvalFHWWtfYnU5blBFSnMyWlRMb2JFRUR2ZTZQR1RJaU96TzhVSlhZRFlkcU1hTkdtclBUNnJRTFRxeWlVcTJyVmhFQlB3am9HSU04MVVlNGFJM3JFUC1XcGF5SVI0OEdTSGwyQVhYTjZubjZzR3Fl?oc=5"
+    },
+    {
+     "veiculo": "Ponta Negra News",
+     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5WZ05WeDlrRk1HQ2ExcHo1bTd1U0Z4dEpzQUdfMzlWNGNrMHZqZWk5V0VYT1NuMm5YcS1OZXM3MldQM0RnSkJrRVpDQ1RHdGlPZm5icjRFM1NLc2c0MVFRWXVIbFNISmVZYTRGZk1fWkJMU3RRdXZkQkhORTJURjg?oc=5"
     }
    ],
    "ufs": [
@@ -4928,6 +5035,22 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "49122115b35f",
+   "titulo": "Cadu Xavier fixa 20 de dezembro como prazo para fechar diagnóstico do governo e anunciar equipe",
+   "veiculo": "Agora RN",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQRFZXaUZQV3M1TUV6VEZneWsxcXF5a0FxVXZwcVV2OEJBNjMwNFhRa2JPaHhWYnBoOVl3RFhkcFV2UGdwSWFvMHpscVl2N1EtVDd3dm1PSlZnWG82U3dTWUlNYUR6dUlaME1jVTFzWVA4WFZNNlBEVzV3dGxhR00tQw?oc=5",
+   "data": "2026-11-06T18:56:29Z",
+   "coletado_em": "2026-11-14T21:17:48Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "1aa0a749d0e3",
@@ -11834,6 +11957,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "f39b74d7d659",
+   "titulo": "Governador Wanderlei reúne secretariado, revela conversa com Vicentinho e garante regulamentação da transição de governo nos próximos dias",
+   "veiculo": "Cleber Toledo",
+   "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOeDJQTWd0d2ZRMmwtdDcwTkE0aXhTaHlWcS12cE5rbVNYZ2tKako0ZFloNG5qMkJIVkxDUFJkWnBoLW9WQXNpQmYyMW9OYkJTYV83dXBOYVNTdEZOVmZMQXQ1NTdsYUpIRFR3QmpRcVJBWTVGQklkWWlpZ2JuSm1vLXN2TUJpdk1qa2QxUVJwMWp2RGdSTkQ1T0VmZTdXeUtCM1ZGUTVhR1FEQ3ZTYTZRTHBOVWVHZ2NBbm5ON2EzZTY1TkR5dUdkNFV3R09xTklBZ1FQcnoyRDN4RTB0Yi1YczBYZGdDQURmX2VVRG4yUHI5SVhPZ01QdkpnMENmTDJxTGYzV0Nn?oc=5",
+   "data": "2026-10-26T07:00:00Z",
+   "coletado_em": "2026-11-14T21:17:48Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "d8b0f83668ba",
    "titulo": "Sintergs protocola ofício junto ao governador eleito Luciano Zucco e propõe diálogo sobre valorização dos servidores públicos",
    "veiculo": "Sintergs",
@@ -12043,12 +12180,54 @@
    "categoria": "equipe"
   },
   {
+   "id": "c4822181af26",
+   "titulo": "Omar Aziz fala sobre equipe de transição e promete corregedoria independente",
+   "veiculo": "Portal Mário Adolfo",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQXzNXdi1kMi1GODJTRU5KWGZNM3cxdi1CenFmeVBpdzBOckszVnhHc1ZYbHZqYVgwQjhPRk1SMzNVQmZQcEVfUUtEZHVVLUF1OG5MX19Da1BOYW9rUDZTaDYzb0pSc0l3bjRWZVhTcldaUWlCdVNlLUs5QzktdDJ3STVNaE9kNlptOUxqYXFZbGUyYW9ESk0wdG5RTFhWNEc1RU9v?oc=5",
+   "data": "2026-10-25T07:00:00Z",
+   "coletado_em": "2026-11-14T21:17:48Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "b1e879c763ce",
+   "titulo": "Cidade parabeniza Omar Aziz e promete transição “tranquila, responsável e transparente”",
+   "veiculo": "Radar Amazônico",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSWZtUmFIZ2piUmtSaXVsT2xMcFJyNzJtdFlzdVFrN2hDTHk2RzVWWHBvTUJJU0dPSWhNRWVPd2lLS1M3Nk84NWhhNEpjc3BESmZvdmZiRmQxTGpBTFEtVHBMNjhtRzNYOGhxR19XV3piM0F5bXpvWHpYRGNNdjVZQWRIQnNSbm81TUcwRmtJR0F1TE1zQ0F3aURZT3RiTlhQZTE3UlhwRlJ5OWRRTlZOa1h2TGM3dw?oc=5",
+   "data": "2026-10-25T07:00:00Z",
+   "coletado_em": "2026-11-14T21:17:48Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "ada5af8a00b6",
    "titulo": "Omar Aziz critica adversários e diz que inicia transição de governo nesta segunda-feira no primeiro discurso após vitória",
    "veiculo": "G1",
    "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNd3YybF8wNVBVb1lna3FzVVU1THJILTY1T1FBVjM2LW1jODNFWVhRbjRfajVLUFJDV3lsZVNkOHlmN3hiMXFkOXJHcnZTdkJCSjQyMUh4X3dQbzJqdjZjSGJiMl9kN3M1QTZ6b2dpVXNzRFphOUI1NGdrQTB0aUFDdVpXQzZxSkdJX04tLWZ4c2xySEUtY2ljU0RSejFCaE9EdWJiMGNWRGpqa2RTaXE0MnJEM0EzeGtPdkNCX3BrQ0ZGelhWakZDTTJQei1WUkVGTVJrQXhnaTdRTzJObE9GRDJrVWZsYTg2c3ZLNXdyZllqWGhaNXlSSVdHcl9xSFItU1VCdG9uYkdkSnk3UGxxVHBrZzc2QdIBpAJBVV95cUxQU3BFWUJ6OGhUYXRWSDYzQVdReXowV3NXcVZJWkxpdGRKVVFwSXNxUjUxWGFLRXpsdXRBbjdURE84eV82VjJSazRyWWU4amhMd3BXNWRTUXYzemxTemhoYXBweWVGLVpTX2lQT3JXYjlPVlZRYzRIWlc1ZmY4Ni1URUMyZkgyb1Zia19nQ0F4VV9BSzdHbXRoUHg5SERkTEVuOFJvZy1ydFRhMFpPbzU4b3BVMUhXMjNWU0dOalRxUkpQdXRwQ3dFdnJMMXl4d2huanVuS0QyUFlIWFBWZkY2UUxkamItZk1lWUtPUHo0Z0gyam1wakFVb1gwc3ZpZ1NrRTd1MzZLT3NKeExISWhWVkFMdzkzVWQ2aUg0Q3Q4MXQxTU13?oc=5",
    "data": "2026-10-25T07:00:00Z",
    "coletado_em": "2026-10-25T07:00:00Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "a85a042abd9d",
+   "titulo": "Roberto Cidade parabeniza Omar Aziz e defende transição tranquila no Amazonas",
+   "veiculo": "BNC Amazonas",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1uSXhNWXNKWXBzX2FzSUFYdmdtbzZoREg5N3pvMmZGRjdudDZ2VG5WOHFITFNwYkdmSUpGTjNzM2FkbFFvX0lubUtNSWFGamxhTnZZZ2tIMFF6Y19ONnFF?oc=5",
+   "data": "2026-10-25T07:00:00Z",
+   "coletado_em": "2026-11-14T21:17:48Z",
    "outras": [],
    "ufs": [
     "AM"

@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-14",
- "gerado_em": "2026-11-14T20:43:34Z",
+ "gerado_em": "2026-11-14T21:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,16 +17,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 15,
-   "aceitos": 6,
+   "lidos": 13,
+   "aceitos": 5,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 28,
-   "aceitos": 11,
+   "lidos": 27,
+   "aceitos": 10,
    "possiveis": 3
   },
   {
@@ -41,7 +41,7 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 9,
    "possiveis": 0
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 12,
+   "lidos": 13,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 4,
    "possiveis": 0
   },
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 25,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 44,
+   "lidos": 43,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -129,15 +129,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 19,
+   "lidos": 20,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 30,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -145,15 +145,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 24,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 27,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 3,
+   "lidos": 5,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -226,7 +226,7 @@
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 3
   },
   {
@@ -280,16 +280,16 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "possivel": 27,
-  "sem_contexto": 312,
+  "possivel": 28,
+  "sem_contexto": 305,
   "oficial_sem_tema": 1,
-  "sem_contexto_com_tema": 9,
   "outro_estado": 20,
+  "sem_contexto_com_tema": 8,
   "excluir": 17,
   "exterior_sem_ancora": 11,
-  "veiculo_excluido": 24,
+  "veiculo_excluido": 25,
   "veiculo_outra_praca": 7,
-  "sigla_sem_ancora": 6,
+  "sigla_sem_ancora": 7,
   "generico_sem_ancora": 1
  },
  "itens": [
@@ -569,6 +569,18 @@
    "temas": [
     "financas"
    ]
+  },
+  {
+   "id": "60fbcae38aaa",
+   "titulo": "Região Turística Polo Teresina recebe modificação em seu nome pela Setur",
+   "veiculo": "Portal Lupa1",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPMURLMUM3YXlCM0s0Z1ZhaE1vREw3LTh1TG53ckNTdVlHUGpPZl9TM3dTSDJGU3pxTU5LbldVV05vWXlTbmM0Ui16eVdzbXZ5UTlxQng2OUhVR0hHX1VvR1lZRV9GX0w5aUx0QnpLN2JBemNOMVdsVGVqSHRJX0JITmdManBacDhBcm5YYlQ5UTllaFphOGpyVWlpLUVtRUZtMEE4bDVBT1hXYW9TNHZxWlViZEhmTnd5cW92UVpxTG4wYjJZRl9kbkY0bFDSAcwBQVVfeXFMTzFESzFDN2F5QjNLNGdWYWhNb0RMNy04dUxud3JDU3VZR1BqT2ZfUzN3U0gyRlN6cU1OS25XVVdOb1l5U25jNFItenlXc212eVE5cUJ4NjlIVUdIR19Vb0dZWUVfRl9MOWlMdEJ6SzdiQXpjTjFXbFRlakh0SV9CSE5nTGpwWnA4QXJuWGJUOVE5ZWhaYThqclVpaS1FbUVGbTBBOGw1QU9YV2FvUzR2cVpVYmRIZk53eXFvdlFacUxuMGIyWUZfZG5GNGxQ?oc=5",
+   "data": "2026-11-13T20:39:46Z",
+   "coletado_em": "2026-11-14T21:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
   },
   {
    "id": "25c6a6ab6dd2",
