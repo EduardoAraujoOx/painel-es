@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-14",
- "gerado_em": "2026-11-14T15:50:00Z",
+ "gerado_em": "2026-11-14T16:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 28,
-   "aceitos": 12,
+   "aceitos": 13,
    "possiveis": 4
   },
   {
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 19,
+   "lidos": 20,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 29,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 2
   },
   {
@@ -278,21 +278,49 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
   "possivel": 32,
-  "sem_contexto": 326,
+  "sem_contexto": 329,
   "oficial_sem_tema": 1,
   "sem_contexto_com_tema": 12,
   "exterior_sem_ancora": 8,
-  "excluir": 22,
-  "outro_estado": 16,
+  "excluir": 21,
+  "outro_estado": 15,
   "veiculo_excluido": 23,
   "sigla_sem_ancora": 7,
   "veiculo_outra_praca": 12,
   "generico_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "39e773c0b1d8",
+   "titulo": "Capixaba relata transtornos após suspensão de voos nos Estados Unidos",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/cotidiano/capixaba-relata-transtornos-apos-suspensao-de-voos-nos-estados-unidos-1126",
+   "data": "2026-11-14T16:07:10Z",
+   "coletado_em": "2026-11-14T16:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "73734d4ff393",
+   "titulo": "Pazolini defende combate ao crime em evento com governadores eleitos e reeleitos em SP",
+   "veiculo": "Republicanos 10",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOS241MkhZWUxBeXRHbnhMRmdWeVJhTE9mek81bE5RT1ZodmZSZFhjeVZGc1VTbjJEb1cwNjNISW5PS09UYmkzaGNqLThLcTNiaEhUSWtMdnlqbExVVW5UZXpRc2VwWlFhZkR4cEhGM2pLVjkzelUyemRfdFlWNWJGdHBrbUM0Ulc3RWcxRjBadjhqb284UFlTLU1BelY0d2ZiMVV4MXVqbk90WXZzNWdueFh6QVE2cVZLWEQ3RGw1a0pWZw?oc=5",
+   "data": "2026-11-14T15:52:58Z",
+   "coletado_em": "2026-11-14T16:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "50843edde817",
    "titulo": "Governo de Mato Grosso do Sul libera R$ 11,5 milhões para modernização dos serviços do Detran",
