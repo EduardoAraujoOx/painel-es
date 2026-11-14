@@ -1,6 +1,6 @@
 {
- "ref": "2026-11-13",
- "gerado_em": "2026-11-13T23:17:13Z",
+ "ref": "2026-11-14",
+ "gerado_em": "2026-11-14T00:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 18,
-   "aceitos": 6,
+   "lidos": 20,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 27,
-   "aceitos": 17,
+   "aceitos": 16,
    "possiveis": 5
   },
   {
@@ -34,7 +34,7 @@
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 8,
-   "aceitos": 5,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
@@ -42,15 +42,15 @@
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
    "lidos": 10,
-   "aceitos": 10,
-   "possiveis": 0
+   "aceitos": 9,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
    "lidos": 15,
-   "aceitos": 4,
+   "aceitos": 5,
    "possiveis": 2
   },
   {
@@ -75,13 +75,13 @@
    "ok": true,
    "lidos": 9,
    "aceitos": 3,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 3,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 69,
+   "lidos": 70,
    "aceitos": 2,
    "possiveis": 4
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 68,
+   "lidos": 67,
    "aceitos": 1,
    "possiveis": 4
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 8,
+   "lidos": 9,
+   "aceitos": 7,
    "possiveis": 1
   },
   {
@@ -278,19 +278,19 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 348,
-  "possivel": 36,
+  "sem_contexto": 350,
+  "possivel": 38,
   "oficial_sem_tema": 1,
-  "veiculo_excluido": 26,
-  "veiculo_outra_praca": 11,
+  "veiculo_excluido": 25,
   "sem_contexto_com_tema": 10,
   "exterior_sem_ancora": 6,
-  "excluir": 25,
+  "excluir": 24,
   "caixa_alta": 1,
-  "outro_estado": 16,
+  "outro_estado": 17,
   "sigla_sem_ancora": 13,
+  "veiculo_outra_praca": 9,
   "generico_sem_ancora": 2
  },
  "itens": [
@@ -558,6 +558,18 @@
    "temas": [
     "financas"
    ]
+  },
+  {
+   "id": "77a11d930041",
+   "titulo": "Idaf coloca em operação usina fotovoltaica para abastecer unidades em todo o Espírito Santo",
+   "veiculo": "Aqui Notícias",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPZG1id01SU3kzQTBmd0I0OXJuOHVyYUU3ZUJrSnVaUXliSW9lNE11TEFIeHlNV2JhbDBVUXY3YW9qQ29ha0hFblhGSnF3c1diX19ESGloeXIxbzhkODYzZjZ4M3psNWRKamRWMEU2UnVHRlp5N3dzbGpvbFVuTWRfTGhLT29lbExaVlVSc0kwYkdGTGZYQ2NQaGNpYmlRcFNMSTBLdHVjb3h6bW4tT3RwdzAzZHNWQzFab1REdzVweEJtY3c?oc=5",
+   "data": "2026-11-13T17:31:12Z",
+   "coletado_em": "2026-11-14T00:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
   },
   {
    "id": "36a3fe0cfba4",
@@ -1382,6 +1394,20 @@
    "possivel": true,
    "triagem": 8,
    "temas": []
+  },
+  {
+   "id": "655c4ad40c6b",
+   "titulo": "Senado deve votar ajuste fiscal com previsão de economia de R$ 60 bi",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOaUxuWlRXMmJJbVZaZTgtd3hIYmRCYm9kRk94cHdQUWV5a2V4UFVNMU9YWDVSQUVrRTdSdmRvcDRQVXhHQUhpb05ndS1zR3Y1UU1tWi1HQmpodjMwWUVhNEQyMjR2dllzWjUtVXRqNkloZ1Y1MmZxLTB4TktRM19wazRfaTVOYkExR3NDWW5FR2RyeGx0SFp3?oc=5",
+   "data": "2026-11-12T16:39:23Z",
+   "coletado_em": "2026-11-14T00:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
   },
   {
    "id": "5a4ea0074dd8",
