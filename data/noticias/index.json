@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-15",
- "gerado_em": "2026-11-15T19:17:20Z",
+ "gerado_em": "2026-11-15T20:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 7,
+   "lidos": 9,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -26,14 +26,14 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 22,
-   "aceitos": 10,
+   "aceitos": 9,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -41,7 +41,7 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 6,
    "possiveis": 0
   },
@@ -57,7 +57,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 2,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 17,
+   "lidos": 16,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 39,
+   "lidos": 38,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -115,7 +115,7 @@
    "ok": true,
    "lidos": 5,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -129,9 +129,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -139,15 +139,15 @@
    "ok": true,
    "lidos": 31,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 13,
+   "lidos": 11,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -155,7 +155,7 @@
    "ok": true,
    "lidos": 28,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -232,11 +232,10 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 415: Unsupported Media Type"
+   "ok": true,
+   "lidos": 30,
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -259,7 +258,7 @@
    "consulta": "https://www.agazeta.com.br/colunas/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -279,20 +278,32 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "possivel": 16,
-  "sem_contexto": 232,
+  "possivel": 15,
+  "sem_contexto": 251,
   "sem_contexto_com_tema": 2,
-  "outro_estado": 19,
+  "outro_estado": 16,
   "excluir": 21,
   "exterior_sem_ancora": 8,
   "veiculo_outra_praca": 4,
-  "veiculo_excluido": 27,
+  "veiculo_excluido": 30,
   "sigla_sem_ancora": 6,
   "generico_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "e87dea4b51b8",
+   "titulo": "Detran lança curso que vai zerar pontos da CNH e impedir motoristas de perderem a carteira por multas",
+   "veiculo": "Portal Tempo Novo",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQVFlyYUdoM3Bpb21lMEN2UVFCam1lTXBKOXNEMTFDSmxpU050TmN1QUg5b3JOa3huVDl6ZTNhOS1CXzI5VHd1Q19qMV9zeUcwX0VMbG9UMXRIQ1ctS1hsU0d4bUhMYnhpbmVLOG0tN292UEc1NU5sSUdSUEJnT0NnWTNWQzJCV1JHdnJNb2Q0N3U4NmEyS0pvMlFTdWRHSGdISmlBZUN0cHlfLXpCdldKMVNYZXlIUkN1S01NUzM3LVdObHFR?oc=5",
+   "data": "2026-11-15T20:14:00Z",
+   "coletado_em": "2026-11-15T20:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "d7c3fb756808",
    "titulo": "Pazolini participa de corrida do Flamengo e reúne torcedores em manhã de esporte em Vitória",
@@ -472,6 +483,18 @@
    ]
   },
   {
+   "id": "11fa8edad438",
+   "titulo": "Secult divulga relação de inscritos em chamamento público para fomento de ações culturais",
+   "veiculo": "Diário de Prudente",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOeUp6X2hPdVBHYnFCbTljeWtETUZnS3ZJdVp4RlRMQU54Nnpyb2NlbFR2b1JkbDRfd3BmWmRXa1RNc1hKbWc3OFFOcVNCcGRxR0REbHRXWE95MEtjaTRzYzVwRk53eXB4SXVQTm02eWdYU1dNNzNtR25JNG42dGNvdjk4RC0xQlNxaUw0Y1FoSE9aMURadE1vclRJT3ZLbVR1T2FFOUR1Z29LcmtveHJJbzVlSFprUk1nd2Q3V1NmOWU?oc=5",
+   "data": "2026-11-14T20:58:13Z",
+   "coletado_em": "2026-11-15T20:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
    "id": "884d8d3665c5",
    "titulo": "Senado fecha pregão de iPhones para parlamentares por R$ 4,95 milhões",
    "veiculo": "Sim Notícias",
@@ -574,6 +597,10 @@
     {
      "veiculo": "G1",
      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOTW9IM0lqQURwTzRUanQyZkN2d3R6VTRxcUc2V2FfMThldm40aU9USndGbmRHSVFUdVlzeHMycHY0aXRLc2YzYURiMGh5QjUtMUJKenQ0TG9oemFmR3VZcUF4bGtBb2hGT1JIZ0R6blNtaFNjaTdibEVZd0d5dmd2aUw5TkMzUXpQTUlEZjl6U3pzMzVsZ0d0MVdkMmtyZzdmQm56U1g2NnQxalNSbWRXbjd2RGJWRVBLblVEVXBqd0RNYnotTmhkLWFoa2lMUHllR004eGZqTUNXR1dlbVhSdEo2Nkktc1Y3SWNuRlIyQlZUdEN0V2owZjlZZGFZajdIRnfSAZACQVVfeXFMT2lzN0dUNjVrTzdtTjNSVDlNWi1PS21NODJVZGsyWXkwOWVJQW5uREdxYzhqNEtBbDRYN0Ftejl3RDdZdm9mV0Z1TEFLdDZJRkQyZ1NmRVZpRm1zQVhFdzMwY2tTM1lxYmZFM0xqR3BhcmJNa1c1NEIzYzhXeHUyZUJFSUZzT3dyWW5YMWFkbmpaOVZXM29zSkVORlRtNktUYjEwdUZDNVo2Z1E5cE56bmRFTkw5d3o3U3owOFJyU2syd3plTjVLVmNKZGhqZzNqQXhCS25pQUN0Q2Q2QnJlS0dkZXFHemFoVVdPUUhBOXR5T29Ob0N1TmxfTjczSk5ObkpBSk9mZ2FiczdUWU9zVmc?oc=5"
+    },
+    {
+     "veiculo": "G1",
+     "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPaXM3R1Q2NWtPN21OM1JUOU1aLU9LbU04MlVkazJZeTA5ZUlBbm5ER3FjOGo0S0FsNFg3QW16OXdEN1l2b2ZXRnVMQUt0NklGRDJnU2ZFVmlGbXNBWEV3MzBja1MzWXFiZkUzTGpHcGFyYk1rVzU0QjNjOFd4dTJlQkVJRnNPd3JZblgxYWRualo5Vlczb3NKRU5GVG02S1RiMTB1RkM1WjZnUTlwTnpuZEVOTDl3ejdTejA4UnJTazJ3emVONUtWY0pkaGpnM2pBeEJLbmlBQ3RDZDZCcmVLR2RlcUd6YWhVV09RSEE5dHlPb05vQ3VObF9ONzNKTk5uSkFKT2ZnYWJzN1RZT3NWZ9IBkAJBVV95cUxPaXM3R1Q2NWtPN21OM1JUOU1aLU9LbU04MlVkazJZeTA5ZUlBbm5ER3FjOGo0S0FsNFg3QW16OXdEN1l2b2ZXRnVMQUt0NklGRDJnU2ZFVmlGbXNBWEV3MzBja1MzWXFiZkUzTGpHcGFyYk1rVzU0QjNjOFd4dTJlQkVJRnNPd3JZblgxYWRualo5Vlczb3NKRU5GVG02S1RiMTB1RkM1WjZnUTlwTnpuZEVOTDl3ejdTejA4UnJTazJ3emVONUtWY0pkaGpnM2pBeEJLbmlBQ3RDZDZCcmVLR2RlcUd6YWhVV09RSEE5dHlPb05vQ3VObF9ONzNKTk5uSkFKT2ZnYWJzN1RZT3NWZw?oc=5"
     }
    ],
    "possivel": true,
@@ -829,6 +856,10 @@
     {
      "veiculo": "Governo ES",
      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPOC00VkxTRHNlUFVHMEV4Smh6Nzc5UWRCeFBheDdObW5aUTBTMllJUDhrd1E3VnU4T3hwSDkyZEZtZUlRYVc5dTBaeDBWQ2dpcEV5cTEyQWx5SWpHOV9pYXZtNFZtRzliNHFGVE52Rnd5WV9OWjI5NFJMZUFGcUIwb09NQmRkMjRuVFoxdTlHeUtqOTczV0J1MjdtZmFlZkNPZjNtZjNHRERRNXFHVlNNQjRDQQ?oc=5"
+    },
+    {
+     "veiculo": "Noroeste News",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPbmdBOXc1UlZVYVNfd2JVTnVaNWpQVWxiOEdweDFRS1o5XzZoQnJhejNlS0tFOVVHU25lSVVDMW56VXAtTFBYUHZXWXRWUWp4WHFWcEpKU2I2OXVVSEt4dXJ4dUcyUXRpYTVwQmMxUTlzMzF3WlM4MEsxUVVRVi1PSEFvOA?oc=5"
     }
    ],
    "possivel": false,
