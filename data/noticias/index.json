@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-15",
- "gerado_em": "2026-11-15T16:17:14Z",
+ "gerado_em": "2026-11-15T17:17:21Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 4,
    "possiveis": 1
   },
@@ -25,7 +25,7 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 23,
+   "lidos": 22,
    "aceitos": 9,
    "possiveis": 1
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 3,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -89,16 +89,16 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 18,
+   "lidos": 17,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 39,
-   "aceitos": 1,
+   "lidos": 40,
+   "aceitos": 2,
    "possiveis": 3
   },
   {
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 3,
+   "lidos": 4,
+   "aceitos": 0,
    "possiveis": 2
   },
   {
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -232,10 +232,11 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": true,
-   "lidos": 30,
-   "aceitos": 1,
-   "possiveis": 0
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 415: Unsupported Media Type"
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -280,13 +281,13 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 273,
-  "possivel": 17,
-  "sem_contexto_com_tema": 4,
-  "outro_estado": 20,
-  "excluir": 19,
-  "exterior_sem_ancora": 10,
-  "veiculo_excluido": 23,
+  "possivel": 16,
+  "sem_contexto": 236,
+  "sem_contexto_com_tema": 3,
+  "outro_estado": 19,
+  "excluir": 21,
+  "exterior_sem_ancora": 8,
+  "veiculo_excluido": 24,
   "veiculo_outra_praca": 6,
   "sigla_sem_ancora": 7,
   "generico_sem_ancora": 1
@@ -299,6 +300,20 @@
    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQQ1hjY1ZnaGxkSFdPamMyUG9SUmZBYWM1NjJCRkZzTFllZHNuTFdZb0VldTNxXzdlVGZSY1I1dlVXNzJYdndwS1dkR0dmcGVCdHJhUm9XVjJabGNlWEJldGxjSEtXdVFJd1pKRVh5SG5IQmwxeGVzMnZFRzVYeGFnTm5KRDVqSDBocTNDQjA3SkJmR2RmUzhGX1hQQmFTV3R3YUVkbjBuM1pwZ3h6UzVxT3RpU0tUVmItUDdzVmZCaGZDa3V5Q3c2SGZBSlI4VkpwSDBCaHZlNm1LSEJUdWRJ?oc=5",
    "data": "2026-11-15T15:51:30Z",
    "coletado_em": "2026-11-15T16:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "dc254a8110f9",
+   "titulo": "Pazolini participa de Corrida do Flamengo neste domingo em Vitória",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOWEF2dm5BeWZKQkY4dDhOVThZLVpRQUFFNVhWN3d3bkJ4Sk9DUHBfbU01R1h1c3lsMmxkc0M0MS1ITG1uTDZ1WXhSVUJEVEx0QWpnR0RXc2RlbkdWNG1mZGVKV0tXb25HSG1HZl9sbkpobVVSMjlzQjdfTFd3bU4wTUVkU1FqbDdaZDVmY1BhUzdMeDZfT3R1bjJuQ0lONlRMVzIzVkhuSmpENXJhZUJKNW5lamJmNmRE0gG4AUFVX3lxTE5YQXZ2bkF5ZkpCRjh0OE5VOFktWlFBQUU1WFY3d3duQnhKT0NQcF9tTTVHWHVzeWwybGRzQzQxLUhMbW5MNnVZeFJVQkRUTHRBamdHRFdzZGVuR1Y0bWZkZUpXS1dvbkdIbUdmX2xuSmhtVVIyOXNCN19MV3dtTjBNRWRTUWpsN1pkNWZjUGFTN0x4Nl9PdHVuMm5DSU42VExXMjNWSG5KakQ1cmFlQko1bmVqYmY2ZEQ?oc=5",
+   "data": "2026-11-15T15:25:17Z",
+   "coletado_em": "2026-11-15T17:17:21Z",
    "outras": [],
    "possivel": false,
    "triagem": 8,
