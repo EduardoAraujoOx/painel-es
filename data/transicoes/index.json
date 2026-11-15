@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-15T11:17:39Z",
+ "gerado_em": "2026-11-15T15:17:40Z",
  "ref": "2026-11-15",
  "desde": "2026-10-04",
  "estados": [
@@ -8,7 +8,7 @@
    "nome": "Alagoas",
    "eleito": "JHC",
    "partido": "PSDB",
-   "total": 86
+   "total": 87
   },
   {
    "uf": "AP",
@@ -36,7 +36,7 @@
    "nome": "Minas Gerais",
    "eleito": "Cleitinho Azevedo",
    "partido": "Republicanos",
-   "total": 171
+   "total": 174
   },
   {
    "uf": "PA",
@@ -50,7 +50,7 @@
    "nome": "Paraná",
    "eleito": "Sergio Moro",
    "partido": "PL",
-   "total": 149
+   "total": 150
   },
   {
    "uf": "RJ",
@@ -71,7 +71,7 @@
    "nome": "Rio Grande do Sul",
    "eleito": "Luciano Zucco",
    "partido": "PL",
-   "total": 134
+   "total": 136
   },
   {
    "uf": "RO",
@@ -106,11 +106,27 @@
   "fndr": "FNDR e reforma tributária"
  },
  "contagem": {
-  "total": 1222,
-  "medidas": 372,
-  "equipe": 850
+  "total": 1229,
+  "medidas": 376,
+  "equipe": 853
  },
  "itens": [
+  {
+   "id": "58e8c0c2a9e1",
+   "titulo": "Equipes de Paulo Dantas e JHC iniciam nesta segunda-feira discussão sobre estrutura administrativa de Alagoas",
+   "veiculo": "Tribuna do Sertão",
+   "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNME1KWGpBSnR1T3NIR2h0dnduamsyRFgwNFRiRG1CcXRGMVBuYWNpTjc4aVdjLWdYckEycjNFQU1DSUN1V01Fek5LY0p6OXl5RXVOd1FaQTZINDdGOWMtZFNkaFNDajNRTXFYRmxVNHhYWnJOYUlMdG90SWRjY0tDWmMzbUljVGoyMVBaMjAzMTdWdkdlVWVsand3aDZQejRGaHhZZkp5MDFqNjFlVXBla0E4QTd0bnRvMGo1YjJHT1E3bnN5ZTZnd1AtMEtJVnRjY0prTF9kb1dxc1dzV0FDazRibjFNR3gxWDhraWtDZmpUaFJENVZqcndIUE1HTGpmNlE?oc=5",
+   "data": "2026-11-15T14:19:00Z",
+   "coletado_em": "2026-11-15T15:17:40Z",
+   "outras": [],
+   "ufs": [
+    "AL"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
+  },
   {
    "id": "191392750ec4",
    "titulo": "O discurso da austeridade: Cleitinho Azevedo financiou shows milionários antes de pregar cortes",
@@ -118,6 +134,22 @@
    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOX2w4Z25nWGs0X0NCZUwwVGlid0VIQ2xjMi1Md2tJMF9EUDR4WEpibkY4WWRHQTF4SUZYQURFdUZ5QmJHWU1sOGV1TzdPVUxwNi1sVW5GMEJPRFJ6RTNKTDYxQTdid2ZrNmVZM2xWWXlWbUlOOUItWWZqSnQ1c01uLWhjZUNNWlR0dFQzZ2h3bl92TnQ0SkxyVFpBR3BjOU9QdlY2c1RHYmZFeDhHbE9pZWlhR0ExUy1LMC11d2FuRUtGRzBGS3dHLW9hYnBPblZnNURzYW9URQ?oc=5",
    "data": "2026-11-15T10:43:56Z",
    "coletado_em": "2026-11-15T11:17:39Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "gastos"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "6ec9344f6200",
+   "titulo": "Cleitinho bancou show de Cláudia Leitte e depois criticou gastos públicos com festas",
+   "veiculo": "Revista Fórum",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSndfU3lGTEJFdlAwSlBxT0NweWd3c0N4MnRiUEI2eDhpa3pubUVpRkhqb3Zaa1J3dUlSSWVWeHFhX0pCT2JuMkhkOURoWUxVYUZibHVnc3FxWC1PenBidldGRUtNenVWNzhRNlJzT284ZloxVWF5Ml9Rb3JMZHJnTWhlTU9xNHZZdjdWdGJaRmVtQmRHTGgw?oc=5",
+   "data": "2026-11-15T10:36:46Z",
+   "coletado_em": "2026-11-15T15:17:40Z",
    "outras": [],
    "ufs": [
     "MG"
@@ -6433,6 +6465,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "03f01942b9be",
+   "titulo": "Equipes de Moro e Ratinho Junior iniciam transição do governo do Paraná - Folha do Litoral News - Paranaguá",
+   "veiculo": "Folha do Litoral News - Paranaguá",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNTlVeDY0LTFKNEVEaFZOZ0hCUFJUOThmM3VKZDlHT3FxNlhlX1hjYzBHd0E0T3A4TWhJbHdDNFcybWN3bHJ4Q1R3MTQ5b0FvbkFMRUFtN0FrZVpIN3pQZUNrejU2SEtqS2VkZDE5V3VPTDlqdzdaNWNKcnlyTF9wR1hTU0VFSDVERFV3UloxZ1owaWlwa05RRkJoblFLeHZmRE1KOU5UaHYteDVhaFNkY3ZBUS1WVVFpaU5WakxR?oc=5",
+   "data": "2026-11-05T13:00:57Z",
+   "coletado_em": "2026-11-15T15:17:40Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "a3ebe166f3a1",
    "titulo": "Equipes de Moro e Ratinho Junior iniciam transição do governo do Paraná - TNOnline",
    "veiculo": "TNOnline",
@@ -10940,6 +10986,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "1448b41f6c4d",
+   "titulo": "Zucco anuncia mudanças na Agricultura e na Segurança para reduzir secretarias no RS",
+   "veiculo": "Leouve",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQ1owdm9QTlJqTmFnNTNFRU5UdjNPUzVSMllaanFUS00yOUhKVkRhMzZIOEQ1RExNVkF4cGhwTDN3S1NURktLNGRsNmJGczhtTkpWTl9vdFRuQl9JaE1IMVBjM2RaLTdsNktFeXczLVZVLVJFY1dLN0J3MlRieS1oam9SWFA3OWN2VllIT3lsRG9pVkZSX2R5RURMaU9XOTZxSXlqRw?oc=5",
+   "data": "2026-10-29T07:00:00Z",
+   "coletado_em": "2026-11-15T15:17:40Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "0dd18f9f2818",
    "titulo": "Déficit no sistema prisional preocupa equipe de transição de Cleitinho em Minas Gerais",
    "veiculo": "Rádio Itatiaia",
@@ -12292,6 +12352,22 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "d67e0dfdf542",
+   "titulo": "Cleitinho alfineta Simões e diz que não vai deixar de pagar servidores do estado",
+   "veiculo": "O Tempo",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOTEpqaXZaeWh5VGRJS2JseXRtQXcxVzBYNUR5QlVNc3R1OXB3TUFXMUV6UFBpVGNSRVRkSmVCTkh3UnBxcDhxcmhKdUR0UWxtZF9MWXEyS1dIaDRZODVyS1VONE5lYmtYSEdxbmc2V0gwbFdaRVdTOVlOWUd0UDZ1R2tkcG1YczBkRC05NnNLeDc0bGJjYl9GaXJ5WE9sMGFjVDFvLXdORDBpZjVhc1pPcWpBYnlyRDdUbHdfdjBTUGtfelEzXzdRRldCSUdmSWN5RXpUajR5amNnVlE?oc=5",
+   "data": "2026-10-25T07:00:00Z",
+   "coletado_em": "2026-11-15T15:17:40Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "pessoal"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "c4822181af26",
@@ -15091,6 +15167,22 @@
    "categoria": "medida"
   },
   {
+   "id": "a79150d1bc9b",
+   "titulo": "Cleitinho encontrará dívida com a União de quase R$ 200 bilhões e déficit anual de R$ 9 bilhões",
+   "veiculo": "Portal 14B",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1jampfSTUtNGZlMElhamxyRktobVk2SnlScHctOGt2V0J6MkVyeXdqTUljU3ladXo3a3pETS0zTXRudy1XNndwYXc0Zl9jMFdyTl83eFZJN0sxc2xBZkNr?oc=5",
+   "data": "2026-10-14T07:00:00Z",
+   "coletado_em": "2026-11-15T15:17:40Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "97443e592c98",
    "titulo": "Maria Gabriela Bessa é nomeada por Douglas Ruas como coordenadora da transição de governo; saiba quem é",
    "veiculo": "G1",
@@ -17565,6 +17657,20 @@
     "estrutura"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "6207a12bb38b",
+   "titulo": "Zucco define equipe de transição para o governo do Rio Grande do Sul",
+   "veiculo": "portaldenoticias.com.br",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOV0ZfaHBhS29IMGI0UjBoYlJxemZDVFFWa1RPZUM0WkFqNlZncXBKNEtBQ1FKQVUyVHdfTWVrNjJCWHM3LXJISHROcUl1eWt5Yzl2cERCOE1UYTNZN09HTmpnQ2RtQ0dRanJTb2lkLUNUemJIci1DU3EyUDhydi1DSGVqSlBBTjhJQXJXU2NvcHJ1ZFgtZUxSNUhXbDFrNzJ2cXY1THJjQXdaVHdnbmhRMlRub3A3a0VyR0wxT3lOLW14aktaR2dFanduc1JocXBvQ2NmZEp0NjdWMHAxbHJPMWxn?oc=5",
+   "data": "2026-10-06T07:00:00Z",
+   "coletado_em": "2026-11-15T15:17:40Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "5e80598ace76",
