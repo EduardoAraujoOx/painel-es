@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-15",
- "gerado_em": "2026-11-15T13:17:13Z",
+ "gerado_em": "2026-11-15T14:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,23 +17,23 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 11,
-   "aceitos": 3,
+   "lidos": 12,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 23,
-   "aceitos": 7,
-   "possiveis": 2
+   "lidos": 22,
+   "aceitos": 9,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -41,7 +41,7 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 6,
    "possiveis": 0
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 4,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 22,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 39,
+   "lidos": 38,
    "aceitos": 1,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 11,
+   "lidos": 8,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 1,
-   "aceitos": 1,
+   "lidos": 2,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -193,9 +193,9 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 3,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Folha Vitória",
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -243,7 +243,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "A Gazeta",
@@ -278,13 +278,12 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 293,
-  "possivel": 21,
-  "oficial_sem_tema": 1,
+  "sem_contexto": 281,
+  "possivel": 19,
   "sem_contexto_com_tema": 4,
-  "outro_estado": 21,
+  "outro_estado": 20,
   "excluir": 14,
   "exterior_sem_ancora": 10,
   "veiculo_excluido": 25,
@@ -293,6 +292,50 @@
   "generico_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "2146a0c3b93e",
+   "titulo": "Articulação, transição, corpo a corpo: Pazolini concilia agendas no interior e na capital no fim de semana",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/articulacao-transicao-corpo-a-corpo-pazolini-concilia-agendas-no-interior-e-na-capital-no-fim-de-semana/",
+   "data": "2026-11-15T13:54:16Z",
+   "coletado_em": "2026-11-15T14:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "56853cce0c9c",
+   "titulo": "Pazolini participa da Corrida do Flamengo em manhã de esporte, alegria e confraternização em Vitória",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQaWR6UllaMUYxRmdmWUpjUFB5NTJuQWtRUXJMS05NUlhJd0RkOU1NeXRjem9IazV6UDZnVU9HbDZnZWE2RmpTNDlCRDRyRm1vemhHR05jRXl6WUd6MVA4c2ZscHR0SDlNVkowa1BmUkNjUllUbzAzTURJRFJjVTkyRExnRkluLXJQc0ZGMXNGNUdxekJzRGN4bTltM0Jrb3REZ1Juel95bjRlS2FpNVlPNUdmV1dfTkZPYWpWeG5sZElNdw?oc=5",
+   "data": "2026-11-15T13:48:36Z",
+   "coletado_em": "2026-11-15T14:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "75d211203cf4",
+   "titulo": "Prefeituras dizem que têm de demitir servidores com a reforma tributária",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOLV9neEFxcVphN3J1ZF94T3A2QTFDV21WcnhIMEprNC1tSFdUR19odXdJVVROR0JwSXB4dklPdDBuX1RPSkU0NHRRZEJKQTk0UVMybkdOVnAtTEpJRUFDSDAxSmNQamJhZk1JZGM2alU2ei12emZqVS0zYWRXMndxWHE3UTB6TEtiQlByeENPcjRXLUpONzEzZE02ZVA4TFNzNG1Rd3RITnU1REFtUElxU1pWTDJvcE960gHAAUFVX3lxTE5iazdtRnB1ZXNoc0NUR3hzY2VpY0pPaHcyUzkwZEMxRFZ2WWVmOU05OGsweUlsNW8wLUcxakZFbFdkLXRDZXJkMzNxX29xMXpQd2dqdWhFLXlTZDZUSWh4ZkNyaWpIbXJFRWhXWWlaekUwWTVIeWdWRS1RSlo4X2M3RjRzVmVuQTJJY0hLb3VNdGlMS1F0U1lBSU92eEhDYlViUXpkQ1N0SEdGLUJYQ1NmX2w3d1lVR3lsQjNrSVpmXw?oc=5",
+   "data": "2026-11-15T13:03:15Z",
+   "coletado_em": "2026-11-15T14:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas",
+    "pessoal"
+   ]
+  },
   {
    "id": "c845bbbd7a66",
    "titulo": "Governo estuda novo modelo para concurso público unificado em 2027",
