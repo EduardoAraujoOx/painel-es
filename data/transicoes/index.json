@@ -1,6 +1,6 @@
 {
- "gerado_em": "2026-11-14T21:17:48Z",
- "ref": "2026-11-14",
+ "gerado_em": "2026-11-15T11:17:39Z",
+ "ref": "2026-11-15",
  "desde": "2026-10-04",
  "estados": [
   {
@@ -22,7 +22,7 @@
    "nome": "Amazonas",
    "eleito": "Omar Aziz",
    "partido": "PSD",
-   "total": 118
+   "total": 122
   },
   {
    "uf": "MA",
@@ -36,7 +36,7 @@
    "nome": "Minas Gerais",
    "eleito": "Cleitinho Azevedo",
    "partido": "Republicanos",
-   "total": 168
+   "total": 171
   },
   {
    "uf": "PA",
@@ -64,7 +64,7 @@
    "nome": "Rio Grande do Norte",
    "eleito": "Cadu Xavier",
    "partido": "PT",
-   "total": 78
+   "total": 79
   },
   {
    "uf": "RS",
@@ -92,7 +92,7 @@
    "nome": "Tocantins",
    "eleito": "Vicentinho Júnior",
    "partido": "PSDB",
-   "total": 117
+   "total": 119
   }
  ],
  "temas": {
@@ -106,11 +106,69 @@
   "fndr": "FNDR e reforma tributária"
  },
  "contagem": {
-  "total": 1212,
-  "medidas": 369,
-  "equipe": 843
+  "total": 1222,
+  "medidas": 372,
+  "equipe": 850
  },
  "itens": [
+  {
+   "id": "191392750ec4",
+   "titulo": "O discurso da austeridade: Cleitinho Azevedo financiou shows milionários antes de pregar cortes",
+   "veiculo": "Plantão Brasil",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOX2w4Z25nWGs0X0NCZUwwVGlid0VIQ2xjMi1Md2tJMF9EUDR4WEpibkY4WWRHQTF4SUZYQURFdUZ5QmJHWU1sOGV1TzdPVUxwNi1sVW5GMEJPRFJ6RTNKTDYxQTdid2ZrNmVZM2xWWXlWbUlOOUItWWZqSnQ1c01uLWhjZUNNWlR0dFQzZ2h3bl92TnQ0SkxyVFpBR3BjOU9QdlY2c1RHYmZFeDhHbE9pZWlhR0ExUy1LMC11d2FuRUtGRzBGS3dHLW9hYnBPblZnNURzYW9URQ?oc=5",
+   "data": "2026-11-15T10:43:56Z",
+   "coletado_em": "2026-11-15T11:17:39Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "gastos"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "96d68c59e99f",
+   "titulo": "Omar Aziz reúne aliados dos 62 municípios e projeta articulação para futuro governo",
+   "veiculo": "AM POST",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPckMyQkdhTDd3ajREZ0doVjJRT2MyWmVoU2R6dDhBNWZGZjN1QklFWnAweS1UYmdjc0Z0ZG9NTFowaDdqMDVDQ2dfSlRBV0VqTkhXSk5UZjRmQTZiQVNQVkp4cC16OFpLcEg5Y09DZVczUjRhS2ptV0FxMTVFTkktc0djLUVLbGYtUGZocjRXVzVTTnRrdVhLX3Q3dEV1LWl6ZF9vWGRmaUgyWjlOZDVENDRZNkVTdw?oc=5",
+   "data": "2026-11-15T00:11:36Z",
+   "coletado_em": "2026-11-15T11:17:39Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "1dc434169f86",
+   "titulo": "Omar Aziz reúne lideranças dos 62 municípios do Amazonas e projeta prioridades para novo governo",
+   "veiculo": "O Chefão da Notícia",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZWNNbk1tMWtMeGVCSmE4eEZneTZQMkhTNExYX3ViTTREUEU5TnBSZHliWkdnaTMtSjRCWFp5NDBtN2NOblg1dWkxcTdqbTVpcXQ0T1cwWnZaaU43bVhOdVlVcVlJNHJVWG5QMkpXSGoxQXlEVm9KejNzNFh5YUNDSkVuRl9kV0tfdDVJTW91VnVtR3RQQ2RYOEhBWVdwZnExekFnRHZuc2JraDM1Q3BnZ3FzVGdpYTZfajktNXFLTkJEd1JWdjRBdmFYZXJDRVhyWmpuRQ?oc=5",
+   "data": "2026-11-14T22:47:18Z",
+   "coletado_em": "2026-11-15T11:17:39Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "63e2971227a8",
+   "titulo": "Omar Aziz projeta prioridades para novo governo durante encontro com lideranças dos 62 municípios do AM",
+   "veiculo": "Amazonas1",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9PWTV3YnFEVVZkNXE1bURCUlYyZEg0aFlGcmdKaDJUNDVFdnBnbjRMUC1LeS05YlgyUElKT0hoa0NhWVl2ODB6aUM3RUcxOXNEZjQwc0paSkQzVG1IcEV5cGxWaEVxVDRScjc4NjJUMy1ndy05Rmo5Rkw3UQ?oc=5",
+   "data": "2026-11-14T21:53:00Z",
+   "coletado_em": "2026-11-15T11:17:39Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
   {
    "id": "3cbb234f66e0",
    "titulo": "» Zucco ergue bandeira de Livramento e confirma ao Jornal A Plateia que manterá Secretaria de Turismo no RS",
@@ -1429,6 +1487,20 @@
    "outras": [],
    "ufs": [
     "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "d8e0a22be42c",
+   "titulo": "Equipe de transição de Omar Aziz discute planejamento do governo com TCE-AM",
+   "veiculo": "Toda Hora",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZVE1bDc5OWt1LXdSMl9peDVIeDVCdzZYdENaS0NTRExoS1RKcXAxWFNPOXNQOGFaUEhRVzBWWmp4Q1pRSGxSN3BEZlJPckdHeC1mRU5zbFFiYlRjOXFWb1dndzNzb2lxcDVwdzlUZE9xMzl1QVR3OXFVMzVSZDNtTTBzREtoRVhrUDRvd21RQ2FEZjVUQnlvWFBlMWlsZw?oc=5",
+   "data": "2026-11-13T03:26:33Z",
+   "coletado_em": "2026-11-15T11:17:39Z",
+   "outras": [],
+   "ufs": [
+    "AM"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -9232,6 +9304,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "fb904cdee350",
+   "titulo": "Vicentinho Júnior indica o primeiro escalão do seu governo; confira os nomes",
+   "veiculo": "Conexão Tocantins",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZUNNX1ZFeWUxRHRoNWp2ZlpZQlJxaWZPY1NIYnQxYVlObUZWcnBlbHp1WjJoZldyRjNIQ0xfVGtUSmFwcDZUNHczX20ybDYtNGNvajV6WDNaOVY0VTFLcnRqazNUcm5QLXdiQ0FscnpTaXpsWF8wS290Q05ON2UyQUJMOFBieDVZZkQ1N1NkNzVlejNOdTg5TG0wQ3R0WEJNY2JORUoyTWpUckNhWFJiWQ?oc=5",
+   "data": "2026-11-03T08:00:00Z",
+   "coletado_em": "2026-11-15T11:17:39Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "b6697bbaa40f",
    "titulo": "AUDIFISCO destaca nomes escolhidos para o secretariado do novo governo do Tocantins",
    "veiculo": "Audifisco",
@@ -9793,6 +9879,20 @@
     "estrutura"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "345782ffca5c",
+   "titulo": "​Cadu amplia equipe de transição no RN e inclui o presidente da CUT-RN",
+   "veiculo": "CUT-RN",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOY3ZsYnBYOE9LZENwMGVOd3hxSUppSllabG1kVGxvYkZJMGhnY3RrSlFMbE9OWFZXaWNFOEZ6dW9ITUUxR2t3QjNrQjE5ZEQ2Z2FuYWw3RExnMzF2SjF0UE5vWjZUbnJRLWNiR0ZtOHUzcUNGcjR1Qkw2eVNLcExGYkVNOXgyekJOVzdDT0NkR3hBcGxLTjM3UzBfQWplZU5WbFVVMG5aN1h2RDVJcVhuWQ?oc=5",
+   "data": "2026-10-30T17:41:00Z",
+   "coletado_em": "2026-11-15T11:17:39Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "b752445f8791",
@@ -11806,6 +11906,20 @@
    "outras": [],
    "ufs": [
     "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "156f4ea53dcd",
+   "titulo": "Vicentinho Júnior anuncia Zelma Coelho e Rogério Tortola para a comunicação do próximo governo",
+   "veiculo": "Jornal Opção | Tocantins",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNRHVGdzlrYVlGN3JaR1RzS0hKbVVtY1VnLUZxQVhpdjlrNkVPM25hYndUekVER29YY0hfN0tTdVU5a1cwN1poX0w2d2pjallzd1d2YlBmQnlSdXNEVzJTa1czQlBBeFBtVUpJMWt4cmVwUm8yVVFjdFhqSDdZUVNfRHRJblhuaGcwQklMNTV2cVJyenozRk5kcDM3LTRicElnVEZxOFVYQk9PNU1teXFZczl1UVJxUU5aejVGQ3A0WDB4LXctcGsxZWZBUVRXWmJNaDAtTUprOGY0bjF2aGF2RW5n?oc=5",
+   "data": "2026-10-27T07:00:00Z",
+   "coletado_em": "2026-11-15T11:17:39Z",
+   "outras": [],
+   "ufs": [
+    "TO"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -14756,6 +14870,22 @@
    "categoria": "medida"
   },
   {
+   "id": "3228738a356b",
+   "titulo": "Equipe de Cleitinho cobra informações sobre déficit e situação financeira de Minas para 2027",
+   "veiculo": "Gazeta De Varginha",
+   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQYkZhbFlUak9DdXo2RWtkaVhqT0FjQ2ttVHpHOGxZUDh0bmxzeGZQTTMzOW9ucTM2b1Rsd3V1R2laY3JwcnN0RFR3d09zbGJaSjREeTJZWkt2S3NaZlNiV1F6YXVFN3JJWHZnTEpMSTRGb1RuLUVULXZTMWhEc3VuNjlJdW9OM1hyTE5YWDJEVzdjc2NFcjRfckM4OUROeERrNFFGcFdCQnRPWTIwUFlUZzU1R1dGUGtjQzl3WS1fR3ZkVktKd2dPbEczcDg0QVNDdEtCTXVBSzRXRzhDamJXN2M1MGF2OVRhYndkTFZpVQ?oc=5",
+   "data": "2026-10-14T12:30:03Z",
+   "coletado_em": "2026-11-15T11:17:39Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "ee317c3fccfd",
    "titulo": "Douglas Ruas conduz votação do orçamento do Rio de Janeiro para 2027 como presidente da Alerj",
    "veiculo": "BandNews",
@@ -17604,6 +17734,23 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "d882de120432",
+   "titulo": "Cleitinho cita renegociação da dívida, redução do IPVA e saúde como prioridades do governo",
+   "veiculo": "O Tempo",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOV2dSVU1HZUpzSWJIVzJKSElIamNQVk55U2dpUjRFb1k3UzJSckhIYnVsdW9YQ0sxbFhFZGMzU2VNa0d4NERiQlhQNzZrYkdzdkhXakp4bXVvVFFvY0FaUVdnVEZYUkt4Z0x3Y3ZqVExWU200V19oa3RMOTB2N1pnLVFQd01jQUp2R05SRGlFQXNjSWwwYzd4S0p6SHRjRDNBVkFrWTJua0JzZVMxQjFUQTdGZ2VhT3N1M3lSQ25ieG1oeGZsdmFwX0dZb1RRYWxXWUlhZVJzdGtsZDgzYjNIakxuak1ZaGM?oc=5",
+   "data": "2026-10-05T07:00:00Z",
+   "coletado_em": "2026-11-15T11:17:39Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico",
+    "economia"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "d26556563703",
