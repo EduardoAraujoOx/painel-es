@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-15",
- "gerado_em": "2026-11-15T14:17:13Z",
+ "gerado_em": "2026-11-15T16:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 12,
+   "lidos": 10,
    "aceitos": 4,
    "possiveis": 1
   },
@@ -25,7 +25,7 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 22,
+   "lidos": 23,
    "aceitos": 9,
    "possiveis": 1
   },
@@ -33,7 +33,7 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -49,8 +49,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 1,
+   "lidos": 6,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 22,
+   "lidos": 18,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 38,
+   "lidos": 39,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -139,13 +139,13 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 18,
+   "lidos": 16,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 65,
+   "lidos": 62,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -169,16 +169,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 1,
-   "aceitos": 1,
+   "lidos": 0,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 2,
+   "lidos": 1,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -210,8 +210,8 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
-   "possiveis": 3
+   "aceitos": 2,
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -250,8 +250,8 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
-   "possiveis": 1
+   "aceitos": 0,
+   "possiveis": 0
   },
   {
    "fonte": "A Gazeta",
@@ -278,20 +278,34 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 281,
-  "possivel": 19,
+  "sem_contexto": 273,
+  "possivel": 17,
   "sem_contexto_com_tema": 4,
   "outro_estado": 20,
-  "excluir": 14,
+  "excluir": 19,
   "exterior_sem_ancora": 10,
-  "veiculo_excluido": 25,
+  "veiculo_excluido": 23,
   "veiculo_outra_praca": 6,
-  "sigla_sem_ancora": 6,
+  "sigla_sem_ancora": 7,
   "generico_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "74489b26f1be",
+   "titulo": "Pazolini prestigia Festival das Etnias e destaca riqueza cultural e potencial turístico de Santa Leopoldina",
+   "veiculo": "Montanhas Capixabas",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQQ1hjY1ZnaGxkSFdPamMyUG9SUmZBYWM1NjJCRkZzTFllZHNuTFdZb0VldTNxXzdlVGZSY1I1dlVXNzJYdndwS1dkR0dmcGVCdHJhUm9XVjJabGNlWEJldGxjSEtXdVFJd1pKRVh5SG5IQmwxeGVzMnZFRzVYeGFnTm5KRDVqSDBocTNDQjA3SkJmR2RmUzhGX1hQQmFTV3R3YUVkbjBuM1pwZ3h6UzVxT3RpU0tUVmItUDdzVmZCaGZDa3V5Q3c2SGZBSlI4VkpwSDBCaHZlNm1LSEJUdWRJ?oc=5",
+   "data": "2026-11-15T15:51:30Z",
+   "coletado_em": "2026-11-15T16:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "2146a0c3b93e",
    "titulo": "Articulação, transição, corpo a corpo: Pazolini concilia agendas no interior e na capital no fim de semana",
@@ -373,6 +387,20 @@
    "possivel": true,
    "triagem": 8,
    "temas": []
+  },
+  {
+   "id": "df6f9d4c14b3",
+   "titulo": "Sefaz lança sistema Sauros para combater fraudes fiscais",
+   "veiculo": "Cinform Online",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPU1BaUlY2QTd0Z3VOd0Zlbk1yRGEzdlVXaUQyOU1QNnNLb0NfNi1ndHN2VUhoMk9xcmZ3TW01QWwzVkh4Q2xCaldKSUx1dExjMUZuX012M2tmRWdjbURNSVVlUTR3Z2RsRmxrZGh4SEI3UUUyT2FhaDRWRzRWWWxyTl9CQ1czekE0LWhMVXlacw?oc=5",
+   "data": "2026-11-15T10:00:05Z",
+   "coletado_em": "2026-11-15T16:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
   },
   {
    "id": "e06656c09bea",
