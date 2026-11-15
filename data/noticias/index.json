@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-15",
- "gerado_em": "2026-11-15T00:17:13Z",
+ "gerado_em": "2026-11-15T07:53:11Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,15 +25,15 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 9,
-   "possiveis": 3
+   "lidos": 25,
+   "aceitos": 8,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -41,17 +41,17 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 8,
+   "lidos": 10,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 14,
-   "aceitos": 2,
-   "possiveis": 1
+   "lidos": 9,
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 7,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 44,
+   "lidos": 45,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 21,
+   "lidos": 22,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -137,8 +137,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
-   "aceitos": 1,
+   "lidos": 31,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
@@ -146,14 +146,14 @@
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 21,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 28,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -169,9 +169,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 3,
+   "lidos": 1,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -193,9 +193,9 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -227,14 +227,14 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 0
   },
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -278,21 +278,35 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "possivel": 28,
-  "sem_contexto": 313,
+  "sem_contexto": 312,
+  "possivel": 21,
   "oficial_sem_tema": 1,
-  "sem_contexto_com_tema": 6,
-  "outro_estado": 19,
-  "excluir": 14,
-  "exterior_sem_ancora": 10,
-  "veiculo_excluido": 27,
+  "outro_estado": 24,
+  "sem_contexto_com_tema": 5,
+  "excluir": 15,
+  "exterior_sem_ancora": 9,
+  "veiculo_excluido": 26,
   "veiculo_outra_praca": 8,
   "sigla_sem_ancora": 7,
   "generico_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "e06656c09bea",
+   "titulo": "Brasil e Filipinas assinam acordos sobre agro e livre concorrência",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPYjg4SVlYQlNQQ1VaTVNacTVsR3c5a0RoTGVVQ1d3RzlRdl9QcU14cnZ2bU1YN2ZZMzc3ajhGRGFabzVrVEFoRXZtY1dJUTd0NUF4ZklyMzNfOHctV19IUlhjU09RdlFybEZkY1JRMC1YZ3JkSlcxRi1vd2xFWTlhS3U2aTEyZzdFTXNuYTdUdjduTGJpYXQ1UGJRVXUtbC0wOGI0Y05xTTcwRU9zbzN6RXdKM1Bzd2PSAb8BQVVfeXFMTUFRVXNpT0dBaGNQd3U2QnpvRXh2aXpBMHMwRnA1OTBuclRLUU9HRzlNRmljbTA5NUh4c2ZFaDJFY1hTeV93QWRxbVZvVFZGVGtzMGF3dkQ0Q2tqRjVlNWtRdUE0UEFpM3EtWUxoSEtiZHJKejdYNG1nTlN0ZkYyY0hOZzZicVpVWDdDV2ZyeHV2TWE4UmFiUm12X1hmX01hRXJKai1EWUlwZDR0OURBbmpheHFUNmRZekRtRTg1VkE?oc=5",
+   "data": "2026-11-14T23:28:30Z",
+   "coletado_em": "2026-11-15T07:53:11Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "4367ea35d699",
    "titulo": "Detran divulga lista de 34 motoristas que podem ficar até 2 anos sem CNH; veja o que aconteceu",
@@ -1395,7 +1409,12 @@
    "url": "https://eshoje.com.br/politica/2026/11/ex-secretario-de-seguranca-de-vitoria-e-o-novo-integrante-da-equipe-de-transicao-de-pazolini/",
    "data": "2026-11-12T20:53:56Z",
    "coletado_em": "2026-11-12T21:17:15Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "portal jornal do norte",
+     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQTktWM2hMRVhPQjVGYlF3R1BMRWxWQi1kSkV5UTNjSU5XZllxLThlOGwzZXJXN0lOSmhwVzVURE5JeTc2Qmh2VnR3ZGl1dkttWmlnU01MNllnSDNZVlJ0d25uRVUyY3dHbjFMRy1fX2ZzZ2d1VTJjRVBMS29Kd0xzS3ZFV2c1Q1A0RHBfUkJyUUhiNVBkQTN0d1pmTmJGZWRKdkJzOXBRclhZZDd3WHFRSzdFdzdfUUpzV0JTX0I5YjRpSVNoVnlr?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 8,
    "temas": [
