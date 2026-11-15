@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-15",
- "gerado_em": "2026-11-15T07:53:11Z",
+ "gerado_em": "2026-11-15T10:17:20Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 7,
+   "lidos": 9,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 45,
+   "lidos": 44,
    "aceitos": 1,
    "possiveis": 4
   },
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 0,
+   "lidos": 6,
+   "aceitos": 2,
    "possiveis": 2
   },
   {
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 22,
+   "lidos": 21,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -137,17 +137,17 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 30,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 21,
+   "lidos": 20,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 75,
+   "lidos": 63,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 2,
+   "lidos": 1,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -232,10 +232,11 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": true,
-   "lidos": 30,
+   "ok": false,
+   "lidos": 0,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 0,
+   "erro": "HTTP Error 415: Unsupported Media Type"
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -266,8 +267,8 @@
    "consulta": "https://simnoticias.com.br/politica/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
-   "possiveis": 2
+   "aceitos": 0,
+   "possiveis": 3
   },
   {
    "fonte": "Sim Notícias",
@@ -278,21 +279,33 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 312,
-  "possivel": 21,
+  "sem_contexto": 282,
+  "possivel": 22,
   "oficial_sem_tema": 1,
-  "outro_estado": 24,
+  "outro_estado": 22,
   "sem_contexto_com_tema": 5,
-  "excluir": 15,
-  "exterior_sem_ancora": 9,
+  "excluir": 13,
+  "exterior_sem_ancora": 7,
   "veiculo_excluido": 26,
-  "veiculo_outra_praca": 8,
+  "veiculo_outra_praca": 9,
   "sigla_sem_ancora": 7,
   "generico_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "2ebf5fe3bd83",
+   "titulo": "Do Casal Policial à Assembleia: a trajetória de Thiago",
+   "veiculo": "Sim Notícias",
+   "url": "https://simnoticias.com.br/politica/do-casal-policial-a-assembleia-a-trajetoria-de-thiago/",
+   "data": "2026-11-15T10:00:47Z",
+   "coletado_em": "2026-11-15T10:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "e06656c09bea",
    "titulo": "Brasil e Filipinas assinam acordos sobre agro e livre concorrência",
@@ -686,6 +699,18 @@
    ]
   },
   {
+   "id": "18598297de32",
+   "titulo": "Sesa reúne gestores de saúde do Sul para debater urgência e emergência",
+   "veiculo": "Agora Litoral",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObkFjNGkwYVFxVTFUQXZYenlWSVpRd05lRUJ0QTBBZkZsc0VRRXhZZzZKa2ctMTVyM1dLYnZ0V2ptQ0lyOV80Yjh1STBrS19faF8yelQwbXBDVzRnMklyMUFvVFpDSUxlWlBmeFMwanNOME9yU0dra1dkRF9Rb29ZYThyX0dQdjM2XzdKd2d6WGVVN3Vfa21CLVdaYlhCcHJ5RnhzNVFsTFBOUWdNQlJV?oc=5",
+   "data": "2026-11-13T19:47:14Z",
+   "coletado_em": "2026-11-15T10:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
    "id": "ae336f5502ba",
    "titulo": "Faça Fácil Cariacica suspende serviços por sete dias; veja alternativas",
    "veiculo": "ES Hoje",
@@ -817,6 +842,32 @@
    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPZG1id01SU3kzQTBmd0I0OXJuOHVyYUU3ZUJrSnVaUXliSW9lNE11TEFIeHlNV2JhbDBVUXY3YW9qQ29ha0hFblhGSnF3c1diX19ESGloeXIxbzhkODYzZjZ4M3psNWRKamRWMEU2UnVHRlp5N3dzbGpvbFVuTWRfTGhLT29lbExaVlVSc0kwYkdGTGZYQ2NQaGNpYmlRcFNMSTBLdHVjb3h6bW4tT3RwdzAzZHNWQzFab1REdzVweEJtY3c?oc=5",
    "data": "2026-11-13T17:31:12Z",
    "coletado_em": "2026-11-14T00:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "ee69a649ab95",
+   "titulo": "Saúde do ES autoriza repasse de recursos federais do piso da enfermagem a Alegre, Colatina e Nova Venécia",
+   "veiculo": "atlaspublico.com.br",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNc2w4MEFlV2U3allHRE9Zd3p0czU0enIxNWRvME9CRUhvNDRScmhXUWE4TTY0b0x5dW84R2VWX01BZ01aZzg2aXlGQ3RYeWllZ3BuVkpZUUxvcVVxSHdqTVhHLTJqelQyZ0RfUi1xa094LTI5TzcxSHcwR3N6dlZJNHpNZVBDT3JQQXhZbzV5Ynh1WFktSzJSMlpWQ3I1N1dDNWpobEs2dWhQb0pvU1JveUh3?oc=5",
+   "data": "2026-11-13T17:15:31Z",
+   "coletado_em": "2026-11-15T10:17:20Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "164157791245",
+   "titulo": "Educação do ES repassa R$ 250 mil ao DER-ES para obra de reforma e ampliação de escola em Pancas",
+   "veiculo": "atlaspublico.com.br",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQZFhfSjhLX1pjMVBEMVhIQWZTRjZyX0xZc2Zld1J4N1VIdGhHS1hiS0o1ZlJqTDhrWmRhOV9xZk5neW5aOExVYldHeHcyTnNUQ182dnRqTExjb0Q0QVJjSkpIa2VZWjZpcmZoOWszb19DQm1rd014N2t5dVVsb29lZDZHOWVGQ25KYlhlOXdaX3Z2U1VCMzZtc0MwSHJEY2VYbXo5SjY5dmJmR3pCdDFDUA?oc=5",
+   "data": "2026-11-13T17:14:17Z",
+   "coletado_em": "2026-11-15T10:17:20Z",
    "outras": [],
    "possivel": false,
    "triagem": 8,
