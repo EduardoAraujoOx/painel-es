@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-15",
- "gerado_em": "2026-11-15T21:50:33Z",
+ "gerado_em": "2026-11-15T23:17:16Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,15 +25,15 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 20,
-   "aceitos": 8,
+   "lidos": 18,
+   "aceitos": 6,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 6,
+   "lidos": 7,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -65,15 +65,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 2,
+   "lidos": 1,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 1,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 32,
+   "lidos": 29,
    "aceitos": 2,
-   "possiveis": 3
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 11,
+   "lidos": 10,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -155,7 +155,7 @@
    "ok": true,
    "lidos": 28,
    "aceitos": 0,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -227,7 +227,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "ES Hoje",
@@ -280,17 +280,31 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "possivel": 15,
-  "sem_contexto": 242,
-  "sem_contexto_com_tema": 1,
-  "outro_estado": 15,
+  "possivel": 14,
+  "sem_contexto": 237,
   "excluir": 23,
-  "exterior_sem_ancora": 8,
+  "sem_contexto_com_tema": 2,
+  "outro_estado": 12,
+  "exterior_sem_ancora": 6,
+  "veiculo_excluido": 32,
   "veiculo_outra_praca": 4,
-  "veiculo_excluido": 31,
   "sigla_sem_ancora": 5
  },
  "itens": [
+  {
+   "id": "0166250716ec",
+   "titulo": "Ajuste fiscal: entenda, ponto a ponto, o projeto do governo aprovado pelo Senado",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/ajuste-fiscal-entenda-ponto-a-ponto-o-projeto-do-governo-aprovado-no-senado/",
+   "data": "2026-11-15T23:13:34Z",
+   "coletado_em": "2026-11-15T23:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "e87dea4b51b8",
    "titulo": "Detran lança curso que vai zerar pontos da CNH e impedir motoristas de perderem a carteira por multas",
@@ -302,6 +316,20 @@
    "possivel": true,
    "triagem": 8,
    "temas": []
+  },
+  {
+   "id": "836703d620f4",
+   "titulo": "Ajuste fiscal de Lula é tímido para o mercado, mas provoca racha na esquerda",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/ajuste-fiscal-de-lula-e-considerado-timido-pelo-mercado-mas-racha-esquerda-que-ve-tesouraco/",
+   "data": "2026-11-15T19:13:00Z",
+   "coletado_em": "2026-11-15T23:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
   },
   {
    "id": "d7c3fb756808",
