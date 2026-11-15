@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-15T15:17:40Z",
+ "gerado_em": "2026-11-15T21:17:40Z",
  "ref": "2026-11-15",
  "desde": "2026-10-04",
  "estados": [
@@ -8,21 +8,21 @@
    "nome": "Alagoas",
    "eleito": "JHC",
    "partido": "PSDB",
-   "total": 87
+   "total": 88
   },
   {
    "uf": "AP",
    "nome": "Amapá",
    "eleito": "Dr. Furlan",
    "partido": "PSD",
-   "total": 26
+   "total": 27
   },
   {
    "uf": "AM",
    "nome": "Amazonas",
    "eleito": "Omar Aziz",
    "partido": "PSD",
-   "total": 122
+   "total": 123
   },
   {
    "uf": "MA",
@@ -36,14 +36,14 @@
    "nome": "Minas Gerais",
    "eleito": "Cleitinho Azevedo",
    "partido": "Republicanos",
-   "total": 174
+   "total": 177
   },
   {
    "uf": "PA",
    "nome": "Pará",
    "eleito": "Dr. Daniel Santos",
    "partido": "Podemos",
-   "total": 40
+   "total": 41
   },
   {
    "uf": "PR",
@@ -64,7 +64,7 @@
    "nome": "Rio Grande do Norte",
    "eleito": "Cadu Xavier",
    "partido": "PT",
-   "total": 79
+   "total": 80
   },
   {
    "uf": "RS",
@@ -106,11 +106,39 @@
   "fndr": "FNDR e reforma tributária"
  },
  "contagem": {
-  "total": 1229,
-  "medidas": 376,
-  "equipe": 853
+  "total": 1237,
+  "medidas": 377,
+  "equipe": 860
  },
  "itens": [
+  {
+   "id": "60110351d55b",
+   "titulo": "Demora de Clécio para transição de governo poderá afetar continuidade nos atendimentos de Saúde e Segurança",
+   "veiculo": "Ponto da Pauta",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBPbkJhX1R4eWY5NzZKcC1oWk1aT1N4VnVDUktNcHRUbElSOW5OVnlXUDNGYndkVnpZdFY5eW1zN0ZKMUE4VGRwVE1yZk5aVzRKRXI0RU1zb0VlalRkaXEydTBUdWI0UGg0V0FjMWlyNA?oc=5",
+   "data": "2026-11-15T16:05:13Z",
+   "coletado_em": "2026-11-15T21:17:40Z",
+   "outras": [],
+   "ufs": [
+    "AP"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "982401d3ffbd",
+   "titulo": "Transição no Governo de Alagoas: Primeira Reunião entre Paulo Dantas e JHC Prepara Terreno para Mudança Administrativa e Planejamento Eficiente.",
+   "veiculo": "Repórter Maceió",
+   "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOcjR4cnlRVTBubWlMOUJLZW5vZ0ZicXMwOFB1UzRlTnlvM1FRVG90R0J6TW0ybXlsYTA4VUtGd2w0YmQxVGZWLVlRcWFmM2oxZGZha1JkTmxjTHB0MlVJbXZTQjdRd3hmZld1Q29FeE5MS3pTZWZKQmlndHc4MkJXV0JNNEhSMWE5aEVIM3ZlcE4wN0dkcjlBcGRGNlNBQlJhakxScFlMMVcyTVMwWl9HcTA4ZnBIN0VRVHJUOE9zemJ6SHdHNWk0RGNOcWhVQVQ5NUNxRUhmTTNXbGlLdXlQYzRydUFBbjgzcUpUN2pvTzZYOGxkOGZUakc0b182Y3hnSllR?oc=5",
+   "data": "2026-11-15T14:25:00Z",
+   "coletado_em": "2026-11-15T21:17:40Z",
+   "outras": [],
+   "ufs": [
+    "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
   {
    "id": "58e8c0c2a9e1",
    "titulo": "Equipes de Paulo Dantas e JHC iniciam nesta segunda-feira discussão sobre estrutura administrativa de Alagoas",
@@ -682,6 +710,20 @@
    "outras": [],
    "ufs": [
     "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "e06e7d0a7de2",
+   "titulo": "Sob coordenação de Omar Aziz, Comissão de Transição acompanha de perto trabalho da Central de Medicamentos do Amazonas",
+   "veiculo": "MSKTV",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNeFdkSV9XcnR4R0JrdmRwcmZGX2hTQkxYMzl5d2Nxd3dZR2U5LVJzaHJ4eU8xd1prV0dXbm05aWRzOElra0VDRDJlOURwOUpCMWVBQ3hzc0hZQmR6aW4wcXFKQ2lQZVJfZmU5NkoyajBfZ2F3amMtRzRPSDRvZk9PLVR5UmdUbWxPeFQ5d3BSVzExUzR4ZnU4VVdiM1RPbDhGRE4yNTRzMGd5WVVVT3o4a3gwMjA2eGc3VU42ODNNd3hIcl9kenl0Qk02MktCdVZfOUVhbnF3?oc=5",
+   "data": "2026-11-13T18:05:26Z",
+   "coletado_em": "2026-11-15T21:17:40Z",
+   "outras": [],
+   "ufs": [
+    "AM"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -2117,6 +2159,22 @@
    ],
    "temas": [
     "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "8b3eee444785",
+   "titulo": "Cleitinho critica licitação de R$ 6 milhões para celulares no Senado: “É um escárnio”",
+   "veiculo": "Meio News",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPd2FadFJTdnE4TnFOcUdVZzhlRWc5R0F0bUh5bW8zdWRKRWJrV2xUQno1VVFoUi00bVJLeDdJZktncFNyaWFxaUFQWklBb3pmMUN5RURnUUV4TUFINFJQR3psWWk5b3dZZGlid1VVeWVKWHBHbkI2cWh0Yy0tWFE3Y2ZSYjhLRl9xWGdNTUJpNUhIT0lqRFZKb3AzUnhHSTY2ZF94eHRxM1U3SlhYVjJBd0dnSS1xNHBPQ2VHdXJsTdIBvwFBVV95cUxPd2FadFJTdnE4TnFOcUdVZzhlRWc5R0F0bUh5bW8zdWRKRWJrV2xUQno1VVFoUi00bVJLeDdJZktncFNyaWFxaUFQWklBb3pmMUN5RURnUUV4TUFINFJQR3psWWk5b3dZZGlid1VVeWVKWHBHbkI2cWh0Yy0tWFE3Y2ZSYjhLRl9xWGdNTUJpNUhIT0lqRFZKb3AzUnhHSTY2ZF94eHRxM1U3SlhYVjJBd0dnSS1xNHBPQ2VHdXJsTQ?oc=5",
+   "data": "2026-11-12T18:07:00Z",
+   "coletado_em": "2026-11-15T21:17:40Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "contratos"
    ],
    "categoria": "medida"
   },
@@ -11325,6 +11383,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "5e39e011ff63",
+   "titulo": "Governo do RN: Fátima Bezerra e Cadu Xavier anuncia equipe de transição do Governo do RN; veja os nomes",
+   "veiculo": "Ponta Negra News",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPejJSSlkzNWxiNUlkWlhFYmU2aWFVT0RtUjZBSjc0RHpWcHd5TlpObjJiSmJpME54QmpvMUlpNi1XY3VaR21iX3ctRW01bkR1blNWRXZseFdaZFotN1V4OVZtM3VuaWZQYmRFblBUWWRqa2t4SDRhYzRlS0EzN2R3RnNEWnNxOU5X0gGOAUFVX3lxTFA3VWhwaFppYUlwZVczeXFFWC1JQXlnZV8xYm5pSF90UFQwUDFZb0xqUXl1LS10dnhBRDhPM0lWS2hGUnZLV0FmbWwxVU1mT2Y4NVdMWDlxeFc5bGVFM2dCUmM4SzRWQ1dyc2dXcEJaVG0xY3QtMk1YU29PUXd3TUl1eDN5NnluVkxPVzhzR2c?oc=5",
+   "data": "2026-10-28T07:00:00Z",
+   "coletado_em": "2026-11-15T21:17:40Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "5db99a9a2851",
    "titulo": "Cadu Xavier anuncia nomes do 1º escalão até 20 de dezembro",
    "veiculo": "Tribuna do Norte",
@@ -14384,6 +14456,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "34e579fe95d4",
+   "titulo": "Daniel Santos anuncia equipe de transição do governo do Pará para 2027",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPR1NpcDQ2QzJmbVVsbnBlLXZkLWFlNTEyS2xJZEM1X2xMR0g3S2tpdURSSG1DQWwycmgxZlloUFhONy1nT3piaFNCVmlZNG1BZ1NxbWN0aHFlMHZWSHo2MEJWN3NXZEt5cGRVbGphRjBtNjY2ZU8tS2l3a1FPU3dFYXloQk5lYzBjb3JoMDFQZk1oNUwtN2NWX1plQWJEQmFkdWtyUVFlRzdydjNrLVdTQlROc0NUSGN3TlFIQmlIRVI2VlpCdW1mckJmdDczekpnbk5CTlQ4aHVZRTFvTjFmelFFQk9QUdIB9AFBVV95cUxNRl9TWDAxR1ZnZjJleTNZNFIxZEViZG5GQ2lfSlhhOXBtVFNnUmxnWktTczQ1bUFEZ3RqOEFWVi1kSnhqdEYxekYwSko1NkZsZnVUdFNxVHhVMmFEbTBEOENnYWQ0cF9PSU9mQ0hXWFEwTHV0eTQwVHNsczBXZmYyNXdwY0I3TlRocnZLanJmXzlfNGc2NVlRYTVBQ3QxTWVJVGFaWnNtQVh6VktxNkw1LVZobnNaTHFsMFE1X1p2NEFxaVlXY3lmbHV6a0J6SVAzeFdMZUdZSE5RNWdMYkhYTUJ6TE9kQXZyQkFTVTBWdFFsUlpx?oc=5",
+   "data": "2026-10-16T07:00:00Z",
+   "coletado_em": "2026-11-15T21:17:40Z",
+   "outras": [],
+   "ufs": [
+    "PA"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "0a9eb55289c5",
    "titulo": "Simões entregará governo a Cleitinho com déficit semelhante ao que Zema herdou de Pimentel",
    "veiculo": "O Tempo",
@@ -14771,6 +14857,20 @@
    "outras": [],
    "ufs": [
     "PA"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "350bc6c2d4ad",
+   "titulo": "Cleitinho manda recado a Mateus sobre transição: ‘Não faça sacanagem comigo’",
+   "veiculo": "Rede 98",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVEQxci1MOTd6RTlmVXFRSFMtTncxbmdoWU4xUmkyWk1ycjMtSmx1Yk1DR3pRa21kdXN4R1VoWkxFb3ZabWxtRFRWU3M3ZkNFYnJjcHgwZHl5WFItZHI2aS1xNUpFQjJuaVMwUjdQQ0pmQThhdzVXMGJNdl9LdWFlMktaeF9lTDRnTHF4MXJSTkpmR3NzQnFrb3g5RGN0RmpaM1p5dGl5RTIzSnRUeG8zem0zWWg?oc=5",
+   "data": "2026-10-15T07:00:00Z",
+   "coletado_em": "2026-11-15T21:17:40Z",
+   "outras": [],
+   "ufs": [
+    "MG"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -15632,6 +15732,20 @@
    "outras": [],
    "ufs": [
     "RJ"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "9024e98de526",
+   "titulo": "Cleitinho anuncia novos integrantes da equipe de transição",
+   "veiculo": "SBT News",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQSGlBRzh6ZTVja1pWTmxUaHJkSTBDUlJjRW5XOUoyNGE0ZEd0ZXdMWjh3N1JVcE1QVHhGSVBEcS14cVdQaWRWODVjcktDbUlkSUNGWU5VdEd1cFBXTzhlUV9tVmpBSVhmNnFGUmpNR0dYTDcwVzVfSnlkMHdBZXJ5WUpfeC1TV01IajkyVnZHbkdhaXI1TVF5QkQyZkhsOWIyMmFpQg?oc=5",
+   "data": "2026-10-13T07:00:00Z",
+   "coletado_em": "2026-11-15T21:17:40Z",
+   "outras": [],
+   "ufs": [
+    "MG"
    ],
    "temas": [],
    "categoria": "equipe"
