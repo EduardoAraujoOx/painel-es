@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-15",
- "gerado_em": "2026-11-15T20:17:13Z",
+ "gerado_em": "2026-11-15T21:50:33Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,15 +18,15 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 9,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 22,
-   "aceitos": 9,
+   "lidos": 20,
+   "aceitos": 8,
    "possiveis": 1
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 16,
+   "lidos": 18,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 38,
+   "lidos": 32,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -147,7 +147,7 @@
    "ok": true,
    "lidos": 11,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 62,
+   "lidos": 74,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -169,9 +169,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 1,
+   "lidos": 0,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -281,15 +281,14 @@
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
   "possivel": 15,
-  "sem_contexto": 251,
-  "sem_contexto_com_tema": 2,
-  "outro_estado": 16,
-  "excluir": 21,
+  "sem_contexto": 242,
+  "sem_contexto_com_tema": 1,
+  "outro_estado": 15,
+  "excluir": 23,
   "exterior_sem_ancora": 8,
   "veiculo_outra_praca": 4,
-  "veiculo_excluido": 30,
-  "sigla_sem_ancora": 6,
-  "generico_sem_ancora": 1
+  "veiculo_excluido": 31,
+  "sigla_sem_ancora": 5
  },
  "itens": [
   {
@@ -368,7 +367,12 @@
    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQaWR6UllaMUYxRmdmWUpjUFB5NTJuQWtRUXJMS05NUlhJd0RkOU1NeXRjem9IazV6UDZnVU9HbDZnZWE2RmpTNDlCRDRyRm1vemhHR05jRXl6WUd6MVA4c2ZscHR0SDlNVkowa1BmUkNjUllUbzAzTURJRFJjVTkyRExnRkluLXJQc0ZGMXNGNUdxekJzRGN4bTltM0Jrb3REZ1Juel95bjRlS2FpNVlPNUdmV1dfTkZPYWpWeG5sZElNdw?oc=5",
    "data": "2026-11-15T13:48:36Z",
    "coletado_em": "2026-11-15T14:17:13Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "rede noticia es",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZjcyRnNieVhveHNZWWFJSElRZnBZUkprVW9yaWU4RkFlVFZ0WmhBQ2h5VkFPNkF1a0lWd05yNlR5OTE5eDZrMVlNSEt1aDMzQjJONkNKbG9XM0J6ZzM0UThxZ010WXBoQXZwd0dQY3QzT1pwNDJzZjd1LXNZZXBqZDdhT1Z5eUlxS0l2U1lZWHVpRzVQQ2FPUDZiOG53eXd4Uk92dk9JalNBV3k3MU1zLWFtRlUwdjRxY0NwNUtnNlg?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 8,
    "temas": [
