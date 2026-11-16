@@ -1,6 +1,6 @@
 {
- "ref": "2026-11-15",
- "gerado_em": "2026-11-15T23:17:16Z",
+ "ref": "2026-11-16",
+ "gerado_em": "2026-11-16T00:17:20Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,14 +18,14 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 9,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 18,
+   "lidos": 17,
    "aceitos": 6,
    "possiveis": 1
   },
@@ -33,7 +33,7 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 27,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -139,7 +139,7 @@
    "ok": true,
    "lidos": 31,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -227,15 +227,16 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": true,
-   "lidos": 30,
-   "aceitos": 1,
-   "possiveis": 0
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 415: Unsupported Media Type"
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -278,15 +279,15 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "possivel": 14,
-  "sem_contexto": 237,
-  "excluir": 23,
-  "sem_contexto_com_tema": 2,
+  "possivel": 15,
+  "sem_contexto": 203,
+  "excluir": 22,
+  "sem_contexto_com_tema": 1,
   "outro_estado": 12,
-  "exterior_sem_ancora": 6,
-  "veiculo_excluido": 32,
+  "exterior_sem_ancora": 5,
+  "veiculo_excluido": 31,
   "veiculo_outra_praca": 4,
   "sigla_sem_ancora": 5
  },
@@ -372,6 +373,18 @@
    "temas": [
     "governador"
    ]
+  },
+  {
+   "id": "34323631dcb8",
+   "titulo": "Detran da Paraíba anuncia dois leilões de sucatas para dezembro; veja datas e como consultar os lotes",
+   "veiculo": "THMais",
+   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNcC1hdmVQeU05NmRmc1U1RGFOb2V5SUx3MVh5NGJsQmdxNWVDWlFIY0xFQlcyNS05dEx6cWxVQmhZZEhhbllVMzZiT3VISW1uR1YtR09hdmpRRmpYcF9TemZORm5GWVZqMFhrSUpLYVk3TExxcjN1ZUZrdmRWWGNmYi1hNW1mSlVPQnE0U0QxcUdrb1dOME0wYWtRVFNTZnJ3RER2empISXlzNDlqbjlsaUFrWnVBSFRrRG5mbS1scDVkNVBxVll4RWJRT0dUOTUzVTFyNzIyem1VQURXM2FkS2owTjVzd2ZWY09NQTdYQ1RBVEhIOXdadQ?oc=5",
+   "data": "2026-11-15T14:30:00Z",
+   "coletado_em": "2026-11-16T00:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
   },
   {
    "id": "2146a0c3b93e",
@@ -473,6 +486,18 @@
    "temas": [
     "financas"
    ]
+  },
+  {
+   "id": "d9748e0bc856",
+   "titulo": "Tarifas de água e esgoto da Cesan podem cair 5,52% em 2027",
+   "veiculo": "ES Brasil",
+   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1VYVo5Nk1Nc1VJOWZ0bHdHMHJYYWg5TlJxQldrbWpId2ZKejBuY2VJN0ZLV0FVeU11V3Ztdk5ydHBqeHVWb1Q5T2dVYU5YMVUtbUREU2tlNEhuaFNKMXNXUGEzSXliQzZwWEo1aTFNU0w2Y0FG?oc=5",
+   "data": "2026-11-15T09:11:24Z",
+   "coletado_em": "2026-11-16T00:17:20Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
   },
   {
    "id": "e06656c09bea",
@@ -653,6 +678,20 @@
    "triagem": 8,
    "temas": [
     "pessoal"
+   ]
+  },
+  {
+   "id": "7ce2b28d42ef",
+   "titulo": "Programa Rode Bem encerra inscrições em dezembro e garante isenção no IPVA em Sergipe",
+   "veiculo": "Imprensa 24h",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE10Rmt4ejdvMHhzNmdQVjk0RE1tZkNtdDJha19VaW9JODBuYWhtcGotVEs4MGVqLUJ3eTIySUljazFrQ0ExRW1MQ3MxVnJjRmpFdnlvRlBDQmpIOVhCbXVNbmtpOFUwS2xRajFNRg?oc=5",
+   "data": "2026-11-14T01:21:13Z",
+   "coletado_em": "2026-11-16T00:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
    ]
   },
   {
