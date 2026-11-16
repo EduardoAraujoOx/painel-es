@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-16",
- "gerado_em": "2026-11-16T22:17:30Z",
+ "gerado_em": "2026-11-16T23:17:16Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,7 +18,7 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -26,14 +26,14 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 26,
-   "aceitos": 7,
+   "aceitos": 6,
    "possiveis": 9
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -58,7 +58,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 2,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -90,7 +90,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 30,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -98,7 +98,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 32,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -114,7 +114,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 7,
+   "lidos": 9,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -146,7 +146,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 11,
+   "lidos": 12,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -219,7 +219,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -227,17 +227,16 @@
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 3,
-   "possiveis": 2
+   "aceitos": 4,
+   "possiveis": 3
   },
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 415: Unsupported Media Type"
+   "ok": true,
+   "lidos": 30,
+   "aceitos": 4,
+   "possiveis": 1
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -283,19 +282,59 @@
  "novos_na_coleta": 2,
  "descartes_na_coleta": {
   "caixa_alta": 2,
-  "sem_contexto": 233,
+  "sem_contexto": 262,
   "oficial_sem_tema": 8,
   "generico_sem_ancora": 1,
-  "outro_estado": 15,
-  "excluir": 18,
-  "sem_contexto_com_tema": 5,
-  "possivel": 17,
+  "outro_estado": 18,
+  "excluir": 17,
+  "sem_contexto_com_tema": 6,
+  "possivel": 19,
   "veiculo_excluido": 25,
   "veiculo_outra_praca": 5,
   "sigla_sem_ancora": 5,
   "exterior_sem_ancora": 3
  },
  "itens": [
+  {
+   "id": "0f9c46c71781",
+   "titulo": "Magno Malta apresenta PEC para limitar salários de servidores públicos a R$ 20 mil",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/magno-malta-apresenta-pec-para-limitar-salarios-de-servidores-publicos-a-r-20-mil/",
+   "data": "2026-11-16T23:12:54Z",
+   "coletado_em": "2026-11-16T23:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "e814743997cd",
+   "titulo": "Peixe-leão é registrado em Guarapari e Iema prepara controle no litoral do ES",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/meio-ambiente/peixe-leao-e-registrado-em-guarapari-e-iema-prepara-controle-no-litoral-do-es/",
+   "data": "2026-11-16T23:08:32Z",
+   "coletado_em": "2026-11-16T23:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "db92f6b7edf7",
+   "titulo": "Assembleia aprova pacote que cria 575 novos cargos e 40 funções gratificadas no MPES",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/assembleia-aprova-pacote-que-cria-575-novos-cargos-e-40-funcoes-gratificadas-no-mpes/",
+   "data": "2026-11-16T22:40:12Z",
+   "coletado_em": "2026-11-16T23:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "controle"
+   ]
+  },
   {
    "id": "ea82e2379a41",
    "titulo": "Câmara de Vitória aprova orçamento de R$ 4,14 bilhões; veja valores para Saúde, Educação e Segurança",
