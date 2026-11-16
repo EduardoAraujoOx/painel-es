@@ -1,16 +1,25 @@
 {
- "ref": "2026-11-13",
- "gerado_em": "2026-11-13T19:17:57Z",
+ "ref": "2026-11-16",
+ "gerado_em": "2026-11-16T09:31:30Z",
  "desde": "2026-10-04",
  "primeiro_levantamento": "2026-11-05",
  "baseline": false,
  "contagem": {
-  "decreto": 13,
+  "decreto": 14,
   "transicao": 1,
-  "fiscal": 7,
+  "fiscal": 14,
   "lei": 7
  },
- "novos": [],
+ "novos": [
+  "2062525",
+  "2061393",
+  "2061840",
+  "2061849",
+  "2061850",
+  "2061852",
+  "2061866",
+  "2062168"
+ ],
  "edicoes_lidas": [
   11522,
   11524,
@@ -70,7 +79,8 @@
   11623,
   11628,
   11633,
-  11635
+  11635,
+  11636
  ],
  "ignoradas": [
   "2040862",
@@ -91,6 +101,118 @@
   "2061154"
  ],
  "itens": [
+  {
+   "id": "2062525",
+   "edicao": 11636,
+   "data": "2026-11-16",
+   "tipo": "decreto",
+   "temas": [
+    "outro"
+   ],
+   "titulo": "DECRETO Nº 6527-R - Institui a Política Estadual de Proteção de Dados Pessoais",
+   "orgao": "Governadoria do Estado",
+   "ementa": "Institui a Política Estadual de Proteção de Dados Pessoais e da Privacidade - PEPDP do Poder Executivo Estadual em consonância com a Lei Federal nº 13.709, de 14 de agosto de 2018, Lei Geral de Proteção de Dados Pessoais - LGPD.",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2062525/11636",
+   "visto_em": "2026-11-16T09:31:30Z"
+  },
+  {
+   "id": "2062168",
+   "edicao": 11636,
+   "data": "2026-11-16",
+   "tipo": "fiscal",
+   "temas": [
+    "encerramento"
+   ],
+   "titulo": "PORTARIA 444-S/2026 - ENCERRAMENTO EXERCICIO 2026 - HEAC",
+   "orgao": "Secretaria de Estado da Saúde - SESA -",
+   "ementa": null,
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2062168/11636",
+   "visto_em": "2026-11-16T09:31:30Z"
+  },
+  {
+   "id": "2061866",
+   "edicao": 11636,
+   "data": "2026-11-16",
+   "tipo": "fiscal",
+   "temas": [
+    "encerramento"
+   ],
+   "titulo": "PORTARIA 441-S/2026 - ENCERRAMENTO EXERCICIO 2026 - SRSC",
+   "orgao": "Secretaria de Estado da Saúde - SESA -",
+   "ementa": null,
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2061866/11636",
+   "visto_em": "2026-11-16T09:31:30Z"
+  },
+  {
+   "id": "2061852",
+   "edicao": 11636,
+   "data": "2026-11-16",
+   "tipo": "fiscal",
+   "temas": [
+    "encerramento"
+   ],
+   "titulo": "PORTARIA 440/2026 - ENCERRAMENTO EXERCICIO 2026 - HPF",
+   "orgao": "Secretaria de Estado da Saúde - SESA -",
+   "ementa": null,
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2061852/11636",
+   "visto_em": "2026-11-16T09:31:30Z"
+  },
+  {
+   "id": "2061850",
+   "edicao": 11636,
+   "data": "2026-11-16",
+   "tipo": "fiscal",
+   "temas": [
+    "encerramento"
+   ],
+   "titulo": "PORTARIA 439/2026 - ENCERRAMENTO EXERCICIO 2026 - CREFES",
+   "orgao": "Secretaria de Estado da Saúde - SESA -",
+   "ementa": null,
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2061850/11636",
+   "visto_em": "2026-11-16T09:31:30Z"
+  },
+  {
+   "id": "2061849",
+   "edicao": 11636,
+   "data": "2026-11-16",
+   "tipo": "fiscal",
+   "temas": [
+    "encerramento"
+   ],
+   "titulo": "PORTARIA 438/2026 - ENCERRAMENTO EXERCICIO 2026 - HDDS",
+   "orgao": "Secretaria de Estado da Saúde - SESA -",
+   "ementa": null,
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2061849/11636",
+   "visto_em": "2026-11-16T09:31:30Z"
+  },
+  {
+   "id": "2061840",
+   "edicao": 11636,
+   "data": "2026-11-16",
+   "tipo": "fiscal",
+   "temas": [
+    "encerramento"
+   ],
+   "titulo": "PORTARIA 437-S/2026 - ENCERRAMENTO EXERCICIO 2026 - HMSA",
+   "orgao": "Secretaria de Estado da Saúde - SESA -",
+   "ementa": null,
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2061840/11636",
+   "visto_em": "2026-11-16T09:31:30Z"
+  },
+  {
+   "id": "2061393",
+   "edicao": 11636,
+   "data": "2026-11-16",
+   "tipo": "fiscal",
+   "temas": [
+    "encerramento"
+   ],
+   "titulo": "PORTARIA 435-S/2026 - ENCERRAMENTO EXERCICIO/2026 - HINSG",
+   "orgao": "Secretaria de Estado da Saúde - SESA -",
+   "ementa": null,
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2061393/11636",
+   "visto_em": "2026-11-16T09:31:30Z"
+  },
   {
    "id": "2061225",
    "edicao": 11633,
