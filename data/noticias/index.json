@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-16",
- "gerado_em": "2026-11-16T10:17:25Z",
+ "gerado_em": "2026-11-16T11:17:28Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,31 +26,31 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 13,
-   "aceitos": 5,
+   "aceitos": 6,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 0,
+   "lidos": 6,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 4,
+   "lidos": 8,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 1,
+   "lidos": 8,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -65,16 +65,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 1,
+   "lidos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 0,
-   "aceitos": 0,
+   "lidos": 1,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 19,
+   "lidos": 21,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 19,
+   "lidos": 22,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 20,
    "aceitos": 0,
    "possiveis": 5
   },
@@ -169,8 +169,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 1,
-   "aceitos": 1,
+   "lidos": 2,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -218,7 +218,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -232,10 +232,11 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": true,
-   "lidos": 30,
-   "aceitos": 2,
-   "possiveis": 0
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 415: Unsupported Media Type"
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -278,19 +279,34 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
   "possivel": 15,
-  "sem_contexto": 236,
-  "outro_estado": 14,
+  "sem_contexto": 211,
+  "excluir": 29,
   "sem_contexto_com_tema": 3,
-  "excluir": 26,
+  "outro_estado": 14,
   "exterior_sem_ancora": 7,
-  "veiculo_excluido": 7,
+  "sigla_sem_ancora": 8,
   "veiculo_outra_praca": 2,
-  "sigla_sem_ancora": 8
+  "veiculo_excluido": 2
  },
  "itens": [
+  {
+   "id": "51d41451e6d0",
+   "titulo": "Erick Musso é cotado para chefiar a Casa Civil no governo Pazolini",
+   "veiculo": "ES Fala",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQMUJZOFJ6WUU1eks0MzVoeTlTcjhNME45WFd3ZVRVMFVueHF0NC1ESWRoaEl3cEk2NWJKQ3hzcVBqQ1VuWHBHaUp1NGZGOVYzblgzdDFBN0Y1XzNsQUZMLTlsZzlSbG83QWRXcnlvS2dNeVZDUTNUWkRQSk52ZzY2bE5NeVROUWJYMHppRm15VC1CMXYxNkJDQ1hDcW1YMGExOFBRTTVSOA?oc=5",
+   "data": "2026-11-16T10:59:48Z",
+   "coletado_em": "2026-11-16T11:17:28Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
   {
    "id": "443ba8b8aa52",
    "titulo": "Coordenador da equipe de transição de Pazolini é cotado para chefiar a Casa Civil",
@@ -305,6 +321,18 @@
     "transicao",
     "governador"
    ]
+  },
+  {
+   "id": "11e3c0460d19",
+   "titulo": "Do sol para as unidades: Idaf inicia operação de usina fotovoltaica no Espírito Santo",
+   "veiculo": "Conexão Safra",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOTnlHR2x2OThvMjJKS2FDVlVhRVRzWUQxdTZHd0tPM2tXbmU4YjIwSGZvcmZVVUJ5NmJPLTJYdFE3V1NXd2tSZTVkcHIxcjJod1BuMVg4alZ5ZG1BOTlmaXpETloxNHh3X1ExZGdlaUo0UUZXMmhHZXp6a0lfX3kxck1nUTJrR3hBTTdOYzVWU3FvSm1BMTVVdDlpR09oMWVzNEZ5VllVcDg5aW56WEZQaHViN2hUUEVybGc0TzNn?oc=5",
+   "data": "2026-11-16T07:37:00Z",
+   "coletado_em": "2026-11-16T11:17:28Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
   },
   {
    "id": "716fb16bf6da",

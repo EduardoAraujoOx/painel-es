@@ -1,6 +1,6 @@
 {
- "gerado_em": "2026-11-15T21:17:40Z",
- "ref": "2026-11-15",
+ "gerado_em": "2026-11-16T11:18:38Z",
+ "ref": "2026-11-16",
  "desde": "2026-10-04",
  "estados": [
   {
@@ -22,7 +22,7 @@
    "nome": "Amazonas",
    "eleito": "Omar Aziz",
    "partido": "PSD",
-   "total": 123
+   "total": 124
   },
   {
    "uf": "MA",
@@ -36,7 +36,7 @@
    "nome": "Minas Gerais",
    "eleito": "Cleitinho Azevedo",
    "partido": "Republicanos",
-   "total": 177
+   "total": 181
   },
   {
    "uf": "PA",
@@ -71,7 +71,7 @@
    "nome": "Rio Grande do Sul",
    "eleito": "Luciano Zucco",
    "partido": "PL",
-   "total": 136
+   "total": 140
   },
   {
    "uf": "RO",
@@ -106,11 +106,121 @@
   "fndr": "FNDR e reforma tributária"
  },
  "contagem": {
-  "total": 1237,
-  "medidas": 377,
-  "equipe": 860
+  "total": 1246,
+  "medidas": 383,
+  "equipe": 863
  },
  "itens": [
+  {
+   "id": "3a282fc114e3",
+   "titulo": "Governo Zucco prevê reduzir de 30 para 17 o número de secretarias no RS",
+   "veiculo": "Rádio Acústica FM",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBPbVFzQUNBSzk5UmpwaWVrMi1VUlk4cFZfcEl1bU5kTGRHc0RIeU5oUEozamZfZEdnazVMX2J4NXpPQWU2cEgzQ09nRHBZeUd3OC1IaXNQU0JQcEprLUlhTmZhUW0tM2h0cmwxS0RiaEtjMUYxdjZ1YmJyRQ?oc=5",
+   "data": "2026-11-16T11:11:43Z",
+   "coletado_em": "2026-11-16T11:18:38Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "0e9418eb3549",
+   "titulo": "Dívida de R$ 187 bilhões de Minas entra na mira do Congresso e pode pressionar Cleitinho",
+   "veiculo": "ncnews.com.br",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPc0NLMnRvdmI4Vy03NXFaQWNreUZVd0NrME5ZLUt0OHczcFFoc1dPMVZIUDNOa00zVXlEVlNUSU5KSXk0SktJYzh3WXozVXZ3R0NxdER2WnBuT1pMYVIwMXlzV29RSndSYU5JcXZ4R2pUYllzQVlwTHd3bTc3eVpNN2RLWTV1RDZYakFvMkVObw?oc=5",
+   "data": "2026-11-16T10:44:40Z",
+   "coletado_em": "2026-11-16T11:18:38Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "c1597224cd1f",
+   "titulo": "Servidores entram na era Cleitinho à espera de reajustes e nomeações não cumpridos",
+   "veiculo": "O Tempo",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOVDc5V0lHUGdGWHJVS2hWS29KZ3RITFR2R3NPNXBQNXBCX2lvSTJBRWQwV1pKbTJkOVNiTWZZX1lBaS1NRjNjV05fR0t4Ykl0Y1BUMUFLT2tnenJyYy1oMTdGVU5aRUdpWGwyZzBaZUYxMC0zaXJVV0x2czQwblFDV2lwdG5ienhOelp5Q3Q1Mld0MkVrWVBhbUpGZ25OcW5hSFpieEd4RXl2dklVV3UwWGVIMmh6Y2pxY3Bld09JN2FLV1ZUc1I4?oc=5",
+   "data": "2026-11-16T10:00:03Z",
+   "coletado_em": "2026-11-16T11:18:38Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "pessoal"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "4d669b4da21a",
+   "titulo": "Zucco apresenta proposta de fusão de secretarias a partidos aliados nesta segunda-feira",
+   "veiculo": "Berlinda News",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQdjM0V1NIb1Jnc1diSVY2bC0tcUVMYU4wM3cxRnA1VTFkY1pFeklheGZwNllYTk9yeHFrRHRhU0pyV0hKTFE0UFdOeExFeGpqRXZhb0RwV0k1T1h3ajVQU0ZwUi1YNF80SGpTX0xDY05HZUpueDNkY241ektSbk9lZ0htYW9ucS1nUmlyaUtlSzlQVmVVbDhyOFJ2VDlkbEhrc0duS0NxVWZGNEZ4bmxIWVBsRldOQ3VBVmtBcg?oc=5",
+   "data": "2026-11-16T09:14:57Z",
+   "coletado_em": "2026-11-16T11:18:38Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "d3d6cec1fcb1",
+   "titulo": "Zucco apresenta fusões de secretarias a aliados nesta segunda-feira",
+   "veiculo": "GZH",
+   "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQZ2ZQR2xNMHJES2M2c1VSWnhnUXJwU09ENzdlMTlObFFubXVSTlBlVS1ZRXotU0NnX2NWR09ab25FMEx3VmljOVZGdVVYa1YzVExfS3lGaEw5MFJ5bWRHWE05UG1sclAxOGtOOVVETFg4UTVxdl8ydkY2SktCbmE0ZThaMFZtSDRDWlFRQ3pnRFN3a1hiUTRwNGc3YTI2WDZpZGRMZzlTTDVtRWQtSkJlREpJUGhYc1o3T1hudXp0a0I0aUpWeW13OGY5a1ZjRFVybGNsLWVuaTdmeHhJRkFIVE90WThCZmJkTVJIVjItUnExdXRjZ3BWR01LT0trbnFOYWV2UW5QOA?oc=5",
+   "data": "2026-11-16T02:01:20Z",
+   "coletado_em": "2026-11-16T11:18:38Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "3f4e3bcfddfe",
+   "titulo": "Com Marília, Cleitinho vai ouvir proposta para renegociar dívida de Minas",
+   "veiculo": "Estado de Minas",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPUnNJU3VnMEprLVdVUTRZbkpSeGpmbmtja3ZNNFQyX0twRVc3c1NPc0FhU3VVZ2tzY3B2eGlnZzBQSE9tb3FBUzkyOGVYS1JwbGQteVZuNHBaVUQ2SzE2V2lESzM5UXljUnRvOWEzcExPdTc1bXJEdzE1bF84QlctNHpYVHRrb24tRHptMTZRN2UtdTNQLTlaVGVxTHlUUk9vMTZrYVl0Q2JERkpTZndZdWFOMEV6b1FHRTVaYlVEeXZQQdIBxwFBVV95cUxNTVZYcTVySzN6bHFHQTVBUy1fb3ZSc3k5VDF1cmZTWjQ0azhheHlpUkVOZWtCcUFydG9HcDlNcF9tQzlQdkwwX1ZlTGtoM2RuaHd4S3RRV19pNFNiWW42cUt6cEVOdTAzS21BRFNSeTFZMzZnTUU4aU1LVlNvVk1CV1RfQ0locUgtNE1SbDhjMjhkT0ZuS0NNZGxHdFdNSnJralNPTDJ6bWVVLWQxQkZoRlhBY2JiY2YxZDJVNzZGZDJaUHpFWTJ3?oc=5",
+   "data": "2026-11-15T18:48:00Z",
+   "coletado_em": "2026-11-16T11:18:38Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "c886690d05f0",
+   "titulo": "Cleitinho e Marília irão se reunir para discutir dívida de Minas com a União",
+   "veiculo": "Rádio Itatiaia",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOSXRfQzN2MC1UNFplQUZlZHBLQ3NQOHVaRXliZjVvMGNFMV9qODFhVTRObFU4YmZmekhHT3pyV1Rta0FhMkFTS1J1ZU5kcDY0d2VMZ2VpcjlqS0U0aXdMd25ubnNFdzMxMG4zZDB6cmFidGNOT0ZkbnpraGlJMTZHVnBTVmJDeC1McGR4elNxSmd0MTJRdi0yV204bzFwU19LTk5oYmw1dFliU29VNDROak5DTDg?oc=5",
+   "data": "2026-11-15T18:35:31Z",
+   "coletado_em": "2026-11-16T11:18:38Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
   {
    "id": "60110351d55b",
    "titulo": "Demora de Clécio para transição de governo poderá afetar continuidade nos atendimentos de Saúde e Segurança",
@@ -807,6 +917,20 @@
    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVHZiTy10NVp5aHNtZzJzVDZfRHcySjBjNU5pNVV1SmVmd295WlhYUUZsODYzb1c3WHhpOFM0WW92Z1FkbE5ya3k2WDZGekVVT0drTTZqWm9TY203Yy1KSjNQVEsyZm5OaURDRGdaSXFtVEJLNHp2REFLRDRlWi1kWDZqSXpsdWVRemRoM2NCMWoyZEZRS1JCWWtFWWRVUTE4?oc=5",
    "data": "2026-11-13T16:09:51Z",
    "coletado_em": "2026-11-13T21:18:00Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "426007890326",
+   "titulo": "Equipe de transição de Omar Aziz acompanha Central de Medicamentos",
+   "veiculo": "D24AM",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVHZuYUlMQVRMZVRSb0hXZ3oxVW5GQnBGS2hIRXNIdHZBREhOdTliRWVtWTY1a2cyRktmZWh2NWNSSVhIeVNpNlVmSlNTN0ZIVDNiQzM3WTlSV2FMaXUycU5tUm5YUUVRNHNjbGlkSnZtbGZfbzEtS3YwMi1MTTVZeThicnA4b1hsd1lVZVpJaHNGRXkzV05nYXNESkVBSjk4NWZtOHZRR2p6U01WVFZ1UFJweDdFSFBxcVhueXJ3?oc=5",
+   "data": "2026-11-13T16:08:00Z",
+   "coletado_em": "2026-11-16T11:18:38Z",
    "outras": [],
    "ufs": [
     "AM"
@@ -2975,6 +3099,10 @@
     {
      "veiculo": "Portal Rondon",
      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOaDZjbjl4c1BTMjVpMDRhT3psdThOcVpaWXBqVnNuMThqVXZVWnZWcnFBeWR5dEtLbmhnbWQyYk5nbFhkMTQwVkhBMS1ZSS04a1FuTHFidkFnSElIWTNiRFpNRnJaR0lranBPcmF1cmlVRzNBWEVXTy1Bd2R0Q1VyMnpPZ0p6aEwyYjVXS1R5eFkyemlvWVlrWllKUnNHM1VWV3F0cFgycGJzMHlJODVsYWs1SWt6b2tZMEtVR3JhNUxjV1U?oc=5"
+    },
+    {
+     "veiculo": "OBemdito",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOaGJ1SW4wOU16d3NPbWZ3RmUyMmRrb0RJUnVQX0JOYWpsczd4aFZrd0lwSUVtV01vTnV4enVHZ3gxQnNEZVhST0JuUXZ2bGRENnAyM0p2NXNDNWg2X2VvcTlMVEdIaTkzN1RyOThUeDRaaVFLMFI3dVF0V3R3NWRjZUlwQ0tCUUpieWxQY1VCWDVSNDZtdGhtVHpLV0dGbUJRTUpjMmRMQkQyR1JOWkZlNEhiQWFHcXR3WjNmMHlDR2N6UFFLUUHSAcsBQVVfeXFMUGMzLUtBeGlOOEc0d01hSV8wM3NVRjNzd3Y2WXJPUXFsSVNvV3J5bGY1TTI4U1Y0UlJiS0dJb2oxMTRJck13VVZsWEFtWDhsUHM1cEV3c3BZZEFQQWx4T2IxLWVJMjdJOHlYaU9EZXhJWEc4VlltZjF1TkVGVllNNG5FQXlMTlZGTElkZUY5ZzQ3Ul95ekd6RTk1a3h4ak11a1dRa0lOSFlOcUpQS2JsYWs3R3FuSHhmR1prczMwVnNlWWhVU05QajhwUGs?oc=5"
     }
    ],
    "ufs": [
@@ -3088,7 +3216,12 @@
    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNQ3duXzRFb1NvcG9Na0QyVVdqRXpSWjZFSWZlcmZQOXphVnlFd21JQ2N2aTc3cUthemZZN1pZMGYyOWpCU0IxSVdrWTRQRURZUnFIcHNZMWM3V2o2cUZBclhKMUY1UUxJR0w3b1pXRlNFcWRKdk9kTW1uQ1B2MGg0aHlNMllxcldiNmJneFlEbEh6TmxGTTJUSFhienNwaGRvTEtzSVJOSXpITVp2NHZOSExwR1BiVGU3MXpSRXR4QWlEUW1i?oc=5",
    "data": "2026-11-11T19:13:47Z",
    "coletado_em": "2026-11-11T21:18:06Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "BNews RN",
+     "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQMHFHUE1kUU91WTlCSHRtOG9Ja2dhNVlnNm5MR1pWaUgwWnJDTU5GRG9wVF9FZjZwUzBrMXVVdk1DYnllRU5Zekp4aDRrVlU1NFVNZkNGbUpUcEZfb3Vvckprd05iREsxWkczd2ZHRXBIcGk5WEp5RFZfR21zYklJa3RFcFd2NzB2b1o2bXN6NlF4NFpNYTlURkhpUTExd3ZSRUlPeXhoZXItVzlaR2Y0TFpnRGtnWHF6Y0x4YjNjNmxDcWNnSmVPMFU3RjhtVHdfeHJyY3EtN1lCaGhsLXfSAeMBQVVfeXFMUGxNYU9ZSTdQQVhVb3lIT2hLcURfbEt3ejMweG05SDJmWmhSSzU3UEF1N0tGZlFCVHlySEZ2aFBYeExacXB6ZE5CSURBT25kLVNDN1UzUnh5bzVpWlhyXzZ3cmM0MzR2aTVTWUJyX1NiY2JyakxTd2UtUy1jLTlCcG5ZdGNyWVRBX05vZjJ1TExkeDl1eWlCRmdPeDk0V3F4XzkwaDU4ZjdMM19JUFAxNHdFZVh1THRVTDJZUkFxU3hwLUJsSnhnejM4eXBmY3Q5RE9qT3FqX05BcGFCMGNxclllbWs?oc=5"
+    }
+   ],
    "ufs": [
     "RN"
    ],
@@ -3355,6 +3488,20 @@
    "outras": [],
    "ufs": [
     "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "7a5d479bc02d",
+   "titulo": "COLUNA | Zucco deveria repensar seus secretários antes de começar; ainda dá tempo!",
+   "veiculo": "Terra",
+   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxONFZWMlM4LXRCN3hVQ2ltZVRQNXEyRlZ6aUtNUXlvZUZRSUZNX1oxMUlyWW1fMXdQMkRKbDNYSmpZcG56RndDaFFZTlVnZFh4X1doUEpXcW1zZF82eHJrRDhNSkF6S28wSlVkQmxGdERIaHJjckhvRTJqMzVtUGJveFQ1bjl5c3Z2YURUVE42b0JRMlBJQWJwdzNGZ0dYWWJkSnpjNDVzak92dTdqZWE1c2FUV1JIS2xOLUowZnllbm5YVm1ITm11di1tR3o3eXpVb2NRLTFJb2xMVnc5SnlOZ3JfUGFDMFd5a0lTdmNuVWp2SnBsbTVoY2p6ZnVXdkthX2Vydg?oc=5",
+   "data": "2026-11-10T23:34:00Z",
+   "coletado_em": "2026-11-16T11:18:38Z",
+   "outras": [],
+   "ufs": [
+    "RS"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -10361,7 +10508,12 @@
    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQSDlaY2pwSGpFMlE1SmVNSFhnWXhvVnJYZXVVU1UyWllha1I3ZkpsUVJIbWVubVBrNjNIZXcxNHlyeThDRDk1U2RUUHhfdUdxdHNMVTdHOWM1OXAzaVRJSzRCYXZhckJiaDA5MXN3cWU1RU5QaXJOS2dod3l1Y25WVEZuNWhzVlJxRzVYdWxqWW5adWdVOWZBdHhXWnhSdUo4WEhmZ25jNWxJMzJRWVJudzRfejNXLTlwdWtGUE16b3FycDJDMnNObUZwR1B3bkVva0E?oc=5",
    "data": "2026-10-29T20:00:48Z",
    "coletado_em": "2026-11-08T21:17:34Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Jornal O Sul",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNVFFUUGNBc182YlRCRGpkRjAxLWpuWXZ3c2kxRFdxVTBCOXJwblBCWTAxVTNDLW5sWU9PM19IYnJVeW1KWUtJTHlkRzE1V2VnV0pFQWJFb01YSk5sbnFISV9kd0daSzJia2JpVXUyZFF6WWtVMUdXTzZ1eDM2UmJ6SzNpdVhLMHdDQ0pxVXRnZkQ2VWxFS1hQVDZrb3dsM3h0MkJqY0Nqc3VTekp5emZiQ0E2MHJVb0Z4MGxtZXRxQXI0Y1BpS0FRclpsV1ZKd9IB0wFBVV95cUxNVlBrcVNab0h5Y1EzZ0pORVR4eHNyUzcwYWc4WWFJbXRCNWJmNFBiLXlLTTBXTlA3SEJ2cFFZUm1KREFXVC1McnVreHVEZnp3S3k1YVBCeTgxYlZyQi05a1ptbFNUdWZZc1JYdmxFTGxwZzhBNi1vQWJOZkdSUGNZVEJPSW00LVdxeDFsMG1jMmE2b1o3d2NnSHpOS0ZCbmJ2UldCMVBJdEpmdl9US0RWLS10QTdBbVUzdGIwR0lFVUNqTXlacm1yQXJxWnJsMTVmZDJ3?oc=5"
+    }
+   ],
    "ufs": [
     "RS"
    ],
@@ -15084,7 +15236,12 @@
    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPSXFFZHRtSzRqRXJXZExiaHp3OUJQeVg2U3hETVNwTGdCVU9FSHltMEdmeDlpSURfZldPTjlxSmVMVlNEUnNyV2NLMkVIMjMxaTQ2dVltQ2MxbFJ6bkkweThWZTJsVDFoeV9mQ0JwbS1fMjY1dDhSaUxSZjJMVDViY1pjYVVPRW13aUVCM19hMnZickhOZk9faG1SVkpKejhUVEpTV0lOT2tLbkpDUFBIWUVqb9IBtwFBVV95cUxPUkswdW5nTV9INmgzVlUyaFZtaFA0NzlaR09rX2F3WldoYW1xcU40S2NlNXd4ZUtUTHZLdXVyLXpTN3JfM2xnTXVXMFB4eEdiZG5ZWTZCejBqOFNjSEVIb1otQnE5cW93bXY4eEF0NlVUVWZ6bnlEYXIwTHFMdVA1MjUzNFpCR0UtMEotVVluSzVJemwwVUJWSG04UU1teWpIb012akVQU0t2N0lKRXk5dkwtcDN3bTA?oc=5",
    "data": "2026-10-14T07:00:00Z",
    "coletado_em": "2026-11-11T21:18:06Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "O GLOBO",
+     "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNSDVCdnY1TTc1WGFQNXZoUks4S0hlYnNCRXBCQVFpYnhkWHVodUxDU05XMEVzR1NicVExUDk3V283VGJtMEVmaWcyck01aG5FOHBFVmpPanp0aVh4TkYxZnphakxoeEt4ZmNwNkwzSGY2QzNaMC1sNWxadzdHU21KTlF0WHBBMWNLU2tKZ3RrUkZLT1FhX21Jc3pvUWRtN3JkaUJKT0RnZGt3Vk91cGRvbGdqRmkya3M1ZnhaNm5WaW5Gd09zVnhwSWJCUDZldUtCcEc3OUh2QU01eUnSAeoBQVVfeXFMTnNZWFBTR2xlRXJjNDBvdVJwc2hhb0RLZGZkRF9wcEVWY0oxNEFSVWVhSDJTcEo5MmRSOTlLTkNaRnNhZ0RhaXpxVVd1VTduSFVyRjVIZndvZHhBdHZKanR3XzhvejJGSHh0eFB3SjZSblRBaXR0Yml5WVZYUW9LSkUwSmJwQ2pMSHlvUUI4VjRsWjg5SjRReWt5dy0zSGd3SnVIZGFhR2ZHM2ZvU1FoaVlsUXNpcE1lOWxXZnc0STAxS2NMTVZ6LWJYY0ZFaTdjM1BiREdKR1gyM0kxWHpHNFZjZVJZUGhjOGdn?oc=5"
+    }
+   ],
    "ufs": [
     "RJ"
    ],
