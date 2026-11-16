@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-16",
- "gerado_em": "2026-11-16T20:17:14Z",
+ "gerado_em": "2026-11-16T21:17:30Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,14 +26,14 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 26,
-   "aceitos": 8,
+   "aceitos": 7,
    "possiveis": 8
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 28,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 9,
+   "lidos": 7,
    "aceitos": 0,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -147,7 +147,7 @@
    "ok": true,
    "lidos": 11,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 60,
+   "lidos": 57,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -193,9 +193,9 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -211,14 +211,14 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 3,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -226,7 +226,7 @@
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 2
   },
   {
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 3,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
@@ -267,7 +267,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Sim Notícias",
@@ -278,22 +278,64 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
   "caixa_alta": 2,
-  "sem_contexto": 261,
+  "sem_contexto": 262,
   "oficial_sem_tema": 7,
   "generico_sem_ancora": 1,
   "outro_estado": 17,
-  "excluir": 23,
+  "excluir": 22,
   "possivel": 18,
   "sem_contexto_com_tema": 6,
-  "veiculo_excluido": 21,
+  "veiculo_excluido": 22,
   "veiculo_outra_praca": 4,
-  "sigla_sem_ancora": 7,
-  "exterior_sem_ancora": 2
+  "sigla_sem_ancora": 6,
+  "exterior_sem_ancora": 3
  },
  "itens": [
+  {
+   "id": "e6732af9df64",
+   "titulo": "STF julga reajuste do piso dos professores nesta quarta-feira (18); ES tem irregularidades",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/seguranca/justica/2026/11/reajuste-piso-professores/",
+   "data": "2026-11-16T20:52:26Z",
+   "coletado_em": "2026-11-16T21:17:30Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "7a1c9a922fa4",
+   "titulo": "MPES envia projetos à Ales para criar 575 novos cargos e 40 funções gratificadas",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/mpes-envia-projeto-a-ales-para-criar-575-novos-cargos-e-40-funcoes-gratificadas/",
+   "data": "2026-11-16T20:44:25Z",
+   "coletado_em": "2026-11-16T21:17:30Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "ab83c5768fb8",
+   "titulo": "Reforma tributária: especialista alerta empresas sobre mudança em incentivos fiscais",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/economia/reforma-tributaria-especialista-alerta-empresas-sobre-mudanca-em-incentivos-fiscais-1126",
+   "data": "2026-11-16T20:15:00Z",
+   "coletado_em": "2026-11-16T21:17:30Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "472460a74e4c",
    "titulo": "Assembleia aprova projeto de Mazinho que transforma Estado Presente em política pública permanente no ES",
