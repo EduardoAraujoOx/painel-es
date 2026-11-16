@@ -30,7 +30,7 @@ import amplo  # noqa: E402
 RAIZ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 CACHE = os.path.join(RAIZ, ".cache", "contratos")
 ESPELHO = "https://dados-abertos-rf-cnpj.casadosdados.com.br/arquivos"
-PUBLICACAO = sys.argv[1] if len(sys.argv) > 1 else "2026-09-14"
+PUBLICACAO = sys.argv[1] if len(sys.argv) > 1 else "2026-10-13"
 FATIAS = range(10)
 
 

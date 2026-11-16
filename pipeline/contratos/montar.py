@@ -452,7 +452,7 @@ def carregar_externos(receita):
             for raiz in raizes:
                 fs = faixa_socio[raiz].get(nome, "")
                 if reg["via"] == "nome":
-                    conf, base = "a conferir", "só pelo nome (o TSE oculta o CPF dos candidatos de 2024)" + (", faixa etária coerente" if fs.isdigit() and reg["faixa"] == int(fs) else ", faixa etária diverge")
+                    conf, base = "a conferir", "só pelo nome (o TSE oculta o CPF dos candidatos de 2024 e 2026)" + (", faixa etária coerente" if fs.isdigit() and reg["faixa"] == int(fs) else ", faixa etária diverge")
                 elif reg["faixa"] is None or not fs.isdigit() or fs == "0":
                     conf, base = "provável", "nome e CPF parcial"
                 else:
@@ -520,7 +520,7 @@ def alertas_externos(cnpj, ext, valor_anual):
             al.append(("doacao_governador", "m" if tot >= 10_000 else "i", f"Sócios doaram R$ {tot:,.0f} a candidatos ao governo do ES: {quem}.".replace(",", ".")))
         tot = sum(x["valor"] for x in e["doacoes"])
         eleitos = sum(x["valor"] for x in e["doacoes"] if (x.get("resultado") or "").upper().startswith("ELEITO"))
-        al.append(("doacao_eleitoral", "i", f"Sócios doaram R$ {tot:,.0f} em {sum(x['n'] for x in e['doacoes'])} doações a campanhas e partidos (2018–2024), R$ {eleitos:,.0f} a candidatos eleitos.".replace(",", ".")))
+        al.append(("doacao_eleitoral", "i", f"Sócios doaram R$ {tot:,.0f} em {sum(x['n'] for x in e['doacoes'])} doações a campanhas e partidos (2018–2026), R$ {eleitos:,.0f} a candidatos eleitos.".replace(",", ".")))
     if e["doacoes_pj"]:
         tot = sum(x["valor"] for x in e["doacoes_pj"])
         al.append(("doacao_pj", "m", f"O próprio CNPJ consta como doador de R$ {tot:,.0f} em {len(e['doacoes_pj'])} registros.".replace(",", ".")))

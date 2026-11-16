@@ -38,7 +38,7 @@ As entradas e saídas por mês continuam calculadas em `montar.py` (campos da s�
 Requer Python 3.9+ e `curl`; nenhuma dependência externa.
 
 ```bash
-python3 pipeline/cargos/extrair.py --meses 2024-10:2026-09 --jobs 6   # lê em fluxo e guarda só CC/FG em .cache/cargos/
+python3 pipeline/cargos/extrair.py --meses 2024-10:2026-10 --jobs 6   # lê em fluxo e guarda só CC/FG em .cache/cargos/
 python3 pipeline/cargos/extrair_vinculos.py                            # nomes dos órgãos e vínculo oficial
 GERADO_EM=$(date +%F) python3 pipeline/cargos/montar.py                # gera data/cargos/index.json e data/cargos/org/*.json
 ```
@@ -119,14 +119,14 @@ A ficha de cada fornecedor mostra o quadro societário (Receita Federal) e o cru
 
 - **Dívida ativa da União** (PGFN, dados abertos: previdenciária, FGTS e não previdenciária), somada por CNPJ-raiz (todas as filiais), com a parte em cobrança, a ajuizada e a data da primeira inscrição.
 - **Sanções** do CEIS e do CNEP (CGU), para a empresa e para os sócios. O alerta é de nível alto para inidoneidade ou sanção aplicada por órgão do Espírito Santo, e médio quando aplicada em outro estado ou esfera (o alcance deve ser conferido).
-- **Vínculos eleitorais** (TSE, prestação de contas de candidatos e de órgãos partidários, eleições de 2018, 2020, 2022 e 2024): doações de sócios a candidatos e partidos (com destaque para candidatos a governador e vice no ES), sócios que foram candidatos, empresas contratadas por campanhas no ES e a própria empresa como doadora.
+- **Vínculos eleitorais** (TSE, prestação de contas de candidatos e de órgãos partidários, eleições de 2018, 2020, 2022, 2024 e 2026): doações de sócios a candidatos e partidos (com destaque para candidatos a governador e vice no ES), sócios que foram candidatos, empresas contratadas por campanhas no ES e a própria empresa como doadora.
 
 **Grau de confiança de cada vínculo.** Além de nome e seis dígitos do CPF, o painel usa dados oficiais para confirmar o vínculo. Candidatos: o cadastro de candidaturas do TSE (`consulta_cand`) traz data de nascimento, ocupação e resultado, e a Receita informa a faixa etária do sócio; faixa igual dá "Confirmado", vizinha dá "Provável" e divergente dá "A conferir". Para 2024, em que o TSE oculta o CPF dos candidatos, só se aproxima por nome, em candidaturas no ES, e o vínculo é sempre "A conferir". Doações: "Confirmado" quando o município do doador é o da sede da empresa; "Provável" nos demais casos. Cada doação mostra também se o candidato foi eleito. Os alertas não sobem de nível pela confiança; ela aparece no detalhe de cada vínculo.
 
 **Como o sócio é reconhecido.** A Receita mascara o CPF dos sócios (`***123456**`, dígitos 4 a 9), enquanto o TSE e a CGU trazem o CPF inteiro. Dá-se o sócio como a mesma pessoa só quando o nome é igual e os seis dígitos conferem. O critério é forte, mas a conferência final é humana. Em sociedades anônimas, "sócio" inclui administradores. Doação eleitoral é ato legal e público: o painel aponta proximidade a conferir, não irregularidade. Não aparecem vínculos por parentesco, doações por terceiros e eleições anteriores a 2018 (nas de 2014 e antes, empresas podiam doar; os arquivos têm outro formato e não foram incluídos).
 
 ```bash
-python3 -I pipeline/contratos/externos.py sancoes pgfn tse2018 tse2020 tse2022 tse2024   # rode os anos do TSE em processos separados para ir mais rápido
+python3 -I pipeline/contratos/externos.py sancoes pgfn tse2018 tse2020 tse2022 tse2024 tse2026 cand2026   # rode os anos do TSE em processos separados para ir mais rápido
 ```
 
 ### Contratos principais (diagnóstico)
@@ -149,7 +149,7 @@ São regras objetivas de triagem, listadas na própria tela (rodapé "Fonte e m�
 
 ```bash
 python3 -I pipeline/contratos/baixar.py                 # contratos, alterações e empenhos (.cache/contratos)
-python3 -I pipeline/contratos/receita.py 2026-09-14     # cadastro da Receita para os CNPJs dos contratos (data da publicação mensal)
+python3 -I pipeline/contratos/receita.py 2026-10-13     # cadastro da Receita para os CNPJs dos contratos (data da publicação mensal)
 python3 -I pipeline/contratos/execucao.py 2021 2022 2023 2024 2025 2026   # pagamentos (SIGEFES) aos CNPJs dos contratos
 python3 -I pipeline/contratos/despesas.py 2025 2026     # (base ampla) todos os pagamentos a CNPJ, inclusive fornecedores fora do SIGA
 python3 -I pipeline/contratos/pncp.py                   # (base ampla) contratos publicados no PNCP pelos órgãos do Executivo

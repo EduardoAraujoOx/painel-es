@@ -257,13 +257,13 @@ ALERTAS["socio_sancionado"] = (MEDIA, "Sócio sancionado",
 ALERTAS["doacao_governador"] = (MEDIA, "Sócio doou a candidato ao governo do ES",
                                 "Sócio ou administrador (nome e seis dígitos do CPF) doou a campanha de candidato a governador ou vice no Espírito Santo. Nível médio a partir de R$ 10 mil no total. Doação é ato legal e público; o dado indica proximidade a conferir.")
 ALERTAS["doacao_eleitoral"] = (INFO, "Sócio doador de campanhas",
-                               "Sócio (nome e seis dígitos do CPF) aparece como doador na prestação de contas de candidatos ou partidos (2018–2024).")
+                               "Sócio (nome e seis dígitos do CPF) aparece como doador na prestação de contas de candidatos ou partidos (2018–2026).")
 ALERTAS["doacao_pj"] = (MEDIA, "Empresa consta como doadora",
-                        "O próprio CNPJ aparece como doador na prestação de contas de candidatos ou partidos (2018–2024).")
+                        "O próprio CNPJ aparece como doador na prestação de contas de candidatos ou partidos (2018–2026).")
 ALERTAS["socio_candidato"] = (INFO, "Sócio foi candidato",
-                              "Sócio (nome e seis dígitos do CPF) concorreu a cargo eletivo em 2018–2024.")
+                              "Sócio (nome e seis dígitos do CPF) concorreu a cargo eletivo em 2018–2026.")
 ALERTAS["fornecedor_campanha"] = (INFO, "Fornecedor de campanhas eleitorais",
-                                  "A empresa foi contratada por campanhas de candidatos no Espírito Santo (2018–2024), conforme a prestação de contas.")
+                                  "A empresa foi contratada por campanhas de candidatos no Espírito Santo (2018–2026), conforme a prestação de contas.")
 
 
 # --- o que esclarecer (orientação INTERNA de conferência; depois servirá de base ao pedido formal) ------------
