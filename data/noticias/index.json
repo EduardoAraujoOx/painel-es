@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-16",
- "gerado_em": "2026-11-16T11:17:28Z",
+ "gerado_em": "2026-11-16T12:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,14 +18,14 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 9,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 13,
+   "lidos": 12,
    "aceitos": 6,
    "possiveis": 1
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 21,
+   "lidos": 23,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -129,17 +129,17 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 20,
+   "lidos": 22,
    "aceitos": 0,
-   "possiveis": 5
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 72,
+   "lidos": 70,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 2,
+   "lidos": 3,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -218,7 +218,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -232,11 +232,10 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 415: Unsupported Media Type"
+   "ok": true,
+   "lidos": 30,
+   "aceitos": 3,
+   "possiveis": 2
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -279,19 +278,45 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "possivel": 15,
-  "sem_contexto": 211,
+  "possivel": 19,
+  "sem_contexto": 241,
+  "outro_estado": 15,
   "excluir": 29,
-  "sem_contexto_com_tema": 3,
-  "outro_estado": 14,
-  "exterior_sem_ancora": 7,
-  "sigla_sem_ancora": 8,
+  "exterior_sem_ancora": 8,
+  "veiculo_excluido": 5,
+  "sigla_sem_ancora": 7,
   "veiculo_outra_praca": 2,
-  "veiculo_excluido": 2
+  "sem_contexto_com_tema": 2
  },
  "itens": [
+  {
+   "id": "656ccbffc69a",
+   "titulo": "Municípios têm novos prazos para executar emendas do Suas",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/municipios-emendas-do-suas/",
+   "data": "2026-11-16T12:10:04Z",
+   "coletado_em": "2026-11-16T12:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "0fd549492b2b",
+   "titulo": "Faça Fácil Cariacica suspende serviços; veja onde buscar atendimento",
+   "veiculo": "Sim Notícias",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNdl83TzlzTUVUUHBtcFQ0dzF0aGthcTllZFdFVWpYVTczSHluUjdQZ0Jwcm1rdDQxdkpJdVZEZ2FROVFuY1h6dXpTZndFeUJvNXB1MXB5MG9UTDZGTnRyOG4yenN4ZlNtQ3l2MnFoV3JlQ3RWLUNsaU1ndWxjRUtGVGJaaHRWX092Tlp3TVg3ejVCN1VjUEQ2NUpsb1lQR1A5b01HUE1R?oc=5",
+   "data": "2026-11-16T12:03:00Z",
+   "coletado_em": "2026-11-16T12:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "restricao"
+   ]
+  },
   {
    "id": "51d41451e6d0",
    "titulo": "Erick Musso é cotado para chefiar a Casa Civil no governo Pazolini",
@@ -305,6 +330,34 @@
    "temas": [
     "transicao",
     "governador"
+   ]
+  },
+  {
+   "id": "e0d20b23bbb5",
+   "titulo": "Guarda de Vitória será foco de debate entre vereadores sobre orçamento para 2027",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/guarda-de-vitoria-orcamento/",
+   "data": "2026-11-16T10:53:26Z",
+   "coletado_em": "2026-11-16T12:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "017d393981d5",
+   "titulo": "Fraude contra idosos pode levar à perda do direito à herança",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/seguranca/justica/2026/11/fraude-contra-idosos-heranca/",
+   "data": "2026-11-16T10:39:52Z",
+   "coletado_em": "2026-11-16T12:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "transicao"
    ]
   },
   {
