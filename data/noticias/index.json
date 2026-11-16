@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-16",
- "gerado_em": "2026-11-16T17:17:14Z",
+ "gerado_em": "2026-11-16T18:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,14 +18,14 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 21,
+   "lidos": 23,
    "aceitos": 8,
    "possiveis": 2
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 28,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 27,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 10,
+   "lidos": 11,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -153,16 +153,16 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 30,
    "aceitos": 0,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 62,
-   "aceitos": 1,
+   "lidos": 60,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -234,8 +234,8 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 0,
-   "possiveis": 4
+   "aceitos": 3,
+   "possiveis": 0
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -250,7 +250,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -258,7 +258,7 @@
    "consulta": "https://www.agazeta.com.br/colunas/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -278,21 +278,93 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 4,
+ "novos_na_coleta": 5,
  "descartes_na_coleta": {
   "caixa_alta": 2,
-  "sem_contexto": 256,
+  "sem_contexto": 260,
   "oficial_sem_tema": 2,
-  "outro_estado": 18,
-  "excluir": 26,
-  "possivel": 20,
+  "outro_estado": 15,
+  "excluir": 28,
+  "possivel": 16,
   "sem_contexto_com_tema": 6,
   "exterior_sem_ancora": 4,
-  "veiculo_excluido": 14,
+  "veiculo_excluido": 16,
   "veiculo_outra_praca": 2,
-  "sigla_sem_ancora": 7
+  "sigla_sem_ancora": 7,
+  "generico_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "ec2b3d1d1de5",
+   "titulo": "MPES pede 561 cargos comissionados e impacto de R$ 9,8 milhões",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/mpes-cargos-comissionados/",
+   "data": "2026-11-16T17:40:29Z",
+   "coletado_em": "2026-11-16T18:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "pessoal",
+    "controle"
+   ]
+  },
+  {
+   "id": "7bab3c7a15d3",
+   "titulo": "Fim do sigilo: MPES protocola criação de 9 cargos de procurador e liberação de fundo para auxílios",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/mpes-protocola-novos-cargos/",
+   "data": "2026-11-16T17:24:24Z",
+   "coletado_em": "2026-11-16T18:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "7fc219506f9a",
+   "titulo": "Governo do ES entrega 34 caminhões a 27 municípios com investimento de R$ 15,5 milhões",
+   "veiculo": "Montanhas Capixabas",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPMVpReTQ3aEVCdWFvSzdnXzhodDdTdUNkVmdibkg3eExFZTBQVmhGdE5tWHhmTkdtM01FTEg2YUlHWm5VYnNZZWIzOGRIMml0NllRTVR5VC04U3YzVjFSaEt0LWRCOGVUekg3cFNTbnZmNGljNDFlQXhyUWl5QXVjcW1Da2NNSmRyM09obWsyM2pXZ0NaZnJJSTZub1JKYnp5aFlIU3VlMlpRNVZpMENFcFY1YnRSaVczSjQ5WnIxQmg?oc=5",
+   "data": "2026-11-16T17:22:56Z",
+   "coletado_em": "2026-11-16T18:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "61bf23b63834",
+   "titulo": "Orçamento de Vitória é aprovado para 2027, em momento de tensão na Câmara",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/vitor-vogas/orcamento-de-vitoria-e-aprovado-para-2027-em-momento-de-tensao-na-camara-1126",
+   "data": "2026-11-16T17:15:12Z",
+   "coletado_em": "2026-11-16T18:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "43672ae5b3d9",
+   "titulo": "Deputado Amélio Cayres apresenta emendas à LDO 2027 com propostas para saúde, infraestrutura e segurança pública",
+   "veiculo": "Gazeta do Cerrado",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPd1RXa28yaW5hb3EzVlVDV2RzOFVaR2pFd2xDNUhUcXpBaVNfYmd3TWhjYVp0M1VBWVZKek85R0tWcDhmTFhMbGFOLWVLTndxcE9jcWpzakRMNldhVFV4Ynl6dGx6ZHlMSnZ5Zzh0WDZ2cXEtbGZPZGFtM0RJanlobzk2bG9heWRjVGtoMEZkblF6VGZVLUVMbzRtbXhrY1BIc1VNYlAtelNvejVfU1ZhMkRRWEdoeE9qN19GT2ZLbTFSNmdYT01GQXZ6NDJtSUxSNFRNNWFSYl94ZXZGYnlVTWdnSGhkQzlh?oc=5",
+   "data": "2026-11-16T17:12:44Z",
+   "coletado_em": "2026-11-16T18:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "2021c9451a74",
    "titulo": "Radar Agtech Espírito Santo amplia prazo para participação de startups até 22 de novembro",
@@ -304,6 +376,20 @@
    "possivel": true,
    "triagem": 8,
    "temas": []
+  },
+  {
+   "id": "b8482177b3ab",
+   "titulo": "Câmara aprova orçamento de R$ 4,1 bilhões para Vitória em votação marcada por emendas rejeitadas",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/camara-aprova-orcamento-de-r-41-bilhoes-para-vitoria-em-votacao-marcada-por-emendas-rejeitadas/",
+   "data": "2026-11-16T17:00:47Z",
+   "coletado_em": "2026-11-16T18:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
   },
   {
    "id": "da0a09e8b884",
