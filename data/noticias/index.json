@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-16",
- "gerado_em": "2026-11-16T13:17:13Z",
+ "gerado_em": "2026-11-16T14:17:27Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,17 +17,17 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 14,
-   "aceitos": 7,
-   "possiveis": 1
+   "lidos": 15,
+   "aceitos": 8,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -41,15 +41,15 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 4,
+   "lidos": 7,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 9,
+   "lidos": 7,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 22,
+   "lidos": 24,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 22,
+   "lidos": 24,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 6,
+   "lidos": 8,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -129,39 +129,39 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 2,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 28,
    "aceitos": 0,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 10,
+   "lidos": 11,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 28,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 68,
+   "lidos": 64,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 4,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -210,8 +210,8 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 0,
-   "possiveis": 2
+   "aceitos": 1,
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 2,
-   "possiveis": 3
+   "possiveis": 5
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -243,7 +243,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "A Gazeta",
@@ -278,20 +278,100 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
+  "caixa_alta": 2,
   "sem_contexto": 243,
-  "possivel": 20,
-  "outro_estado": 17,
-  "caixa_alta": 1,
-  "excluir": 28,
+  "outro_estado": 16,
+  "excluir": 29,
   "sem_contexto_com_tema": 5,
-  "exterior_sem_ancora": 6,
-  "veiculo_excluido": 9,
-  "sigla_sem_ancora": 7,
-  "veiculo_outra_praca": 2
+  "possivel": 21,
+  "exterior_sem_ancora": 5,
+  "veiculo_excluido": 11,
+  "veiculo_outra_praca": 3,
+  "sigla_sem_ancora": 8
  },
  "itens": [
+  {
+   "id": "d9e17822299d",
+   "titulo": "Faça Fácil Cariacica suspende parte dos serviços de 24 a 30",
+   "veiculo": "Vitória News",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdGJoYmhIa1hWWVdNRkNjckNtaVlldEZfNk5qaEpXT1E3aEdrWVhzT0pBREdvQmg2eC1jSFo0Vzhua2lnOUh2cEpPVWw5RGVOeWM0a1JYcWNGSWFnWVJRU0dDLW9QUG9mTW1fZ2FBU0xaU3l2b09hZk90U3hCTUI0R1NUckozZ3lyMTJWUmpVUQ?oc=5",
+   "data": "2026-11-16T14:02:11Z",
+   "coletado_em": "2026-11-16T14:17:27Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "restricao"
+   ]
+  },
+  {
+   "id": "901375231097",
+   "titulo": "Inscrições abertas para seleção do Tribunal de Contas do ES; salário de R$ 17 mil",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/concursos/inscricoes-abertas-para-selecao-do-tribunal-de-contas-do-es-salario-de-r-17-mil-1126",
+   "data": "2026-11-16T13:27:28Z",
+   "coletado_em": "2026-11-16T14:17:27Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "093df37b7996",
+   "titulo": "Karla Coser critica orçamento municipal e relata intimidação na Câmara",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/karla-coser-critica-orcamento/",
+   "data": "2026-11-16T13:27:11Z",
+   "coletado_em": "2026-11-16T14:17:27Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "6ee792979e6f",
+   "titulo": "Contribuintes de Cariacica passarão a ser atendidos na Agência da Receita Estadual de Vitória",
+   "veiculo": "Sefaz-ES",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVE9HUlprSERBWE1pZDBocWFSa1JORVNQcmNVNExRbG1ETzJRRTR3aWg4T0VfdkFRV3RhYVBfZS14WTJFNjhDSkNFWUMyNDVuZUJCTUJzWUpGMlNrSnF4eXAxOTUzeDBhVklERXl6cVVwZlpWWWo0d0J6Q1NIM3RQTjN6aVFQQThhZW5MUHd5M2c2SklQd01CRHZjdFJkM0RocUtLcEViUUpsVm1nWjM0cEt6cXRsUjdF?oc=5",
+   "data": "2026-11-16T13:22:00Z",
+   "coletado_em": "2026-11-16T14:17:27Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "ff570e217786",
+   "titulo": "Black Friday: 6 dicas de compras para proteger seu orçamento",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/economia/2026/11/black-friday-orcamento/",
+   "data": "2026-11-16T13:18:23Z",
+   "coletado_em": "2026-11-16T14:17:27Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "7f2796e8965b",
+   "titulo": "Sedurb inicia a semana com serviços de podas de árvores em Jaguaribe, Geisel, Cuiá e Bessa",
+   "veiculo": "REDE BRASIL DE TELEVISÃO",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbl9JTEhabDVjOTFRZGQ3N1IwTUlBMkNXa2k0X1hGc3RKOHh2U0plSmFuYlcwQU1pNTY5NTgyd2pocWZnSTFXejdXZGxhc09kRDdoT1hPZ0ltLTBFdlNvQlBjZG84TU9MYzROdTB5cklqRUpzRGFnZjFpc3FyTjhCZWV6dkZzdUh2UU1JLUY2MDB2eURwQnA2b3Iwdm5ReEVHaEV1cUZIQmpOU05yd3ZPdzhtWFF3TWRzcjd0LURLcw?oc=5",
+   "data": "2026-11-16T13:14:09Z",
+   "coletado_em": "2026-11-16T14:17:27Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "f6c5fede5e56",
    "titulo": "Produtividade sustentável e o papel complementar do Estado e do mercado",
@@ -316,6 +396,20 @@
    "triagem": 8,
    "temas": [
     "contratos"
+   ]
+  },
+  {
+   "id": "d31e5b8efecf",
+   "titulo": "RICARDO DE REZENDE FERRAÇO (MDB) — Governador · Espírito Santo",
+   "veiculo": "Olhar Direto",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxONDVFZVhzZXhyYlZOMmpSMUNOMjFRWGotT3B3aklsaXN6VS0yVnlwTWd2RS1UX0ptUV9VX0xWYTFOWWljZGpPejZ5S0JzcmlsQ1FxYmsxMjFydkFsdkluMlhXTl9PZW01aEJ0aGhWTFZYTnF2SUNlazlkY3ZYTjFwQW0wTGtrcjQ?oc=5",
+   "data": "2026-11-16T12:14:56Z",
+   "coletado_em": "2026-11-16T14:17:27Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
    ]
   },
   {
