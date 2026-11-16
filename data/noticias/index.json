@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-16",
- "gerado_em": "2026-11-16T19:17:28Z",
+ "gerado_em": "2026-11-16T19:37:20Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,8 +26,8 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 25,
-   "aceitos": 8,
-   "possiveis": 6
+   "aceitos": 7,
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 29,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 32,
+   "lidos": 31,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -278,22 +278,46 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
   "caixa_alta": 2,
-  "sem_contexto": 262,
-  "oficial_sem_tema": 5,
+  "sem_contexto": 261,
+  "oficial_sem_tema": 6,
   "generico_sem_ancora": 1,
-  "outro_estado": 13,
+  "outro_estado": 14,
   "excluir": 25,
   "possivel": 17,
-  "sem_contexto_com_tema": 5,
+  "sem_contexto_com_tema": 6,
   "veiculo_excluido": 21,
   "veiculo_outra_praca": 3,
   "sigla_sem_ancora": 7,
   "exterior_sem_ancora": 3
  },
  "itens": [
+  {
+   "id": "18eab6e557b4",
+   "titulo": "Peixe-leão é registrado pela primeira vez no Espírito Santo, na Ilha Escavada, em Guarapari",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNbmtDVXhocVFOR1NnYlE0ZU1xRzdCZGpFNWFmSmhMaE43VTBOSE1xM29hNHE5Z2RMU0t0SUJRMFI2WkFsUlRLdXZZcWNKNEE5VmdmWTV3Q0RyQXd2YzdXcmFtUUdOQ2FNLWx4Y0trMk5qNktpektqZnlaUldWU0t2OW85UkdOaXVDS3pGREVNdl93MGYwOXJXc1RlTmVETVBIeHZOdUpGSmlrbEFrMFdNdQ?oc=5",
+   "data": "2026-11-16T19:23:00Z",
+   "coletado_em": "2026-11-16T19:37:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "d8ebd2631809",
+   "titulo": "Novembro Roxo: hospitais estaduais reforçam cuidados e conscientização sobre a prematuridade",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONjZzYVlGRzd1bnVYbVdFUlpRckRPRzN3aTA4bmhpcTE3UktXOXN6R1RFNXpEVWlyS1EtQ3VIUmx3SnZEUUZXNUdTTGpzdlZoYlZoNVcteVdyalBmY1hyQXV1bHRUZkhWZTllUzJ2cFFuZjB2Q1VKUWhaQWxrSG5jSkVEUEZBX29XUEQ4NVRCWlFoWWY5enREVnpVcjZRLVQxNzZVdHBuRnlhemJYbjFaTFljUQ?oc=5",
+   "data": "2026-11-16T19:21:00Z",
+   "coletado_em": "2026-11-16T19:37:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "534a1f02472f",
    "titulo": "Incaper completa 70 anos de história, inovação e desenvolvimento rural no Espírito Santo",
