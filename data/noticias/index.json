@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-16",
- "gerado_em": "2026-11-16T21:17:30Z",
+ "gerado_em": "2026-11-16T22:17:30Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,7 +18,7 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -27,7 +27,7 @@
    "ok": true,
    "lidos": 26,
    "aceitos": 7,
-   "possiveis": 8
+   "possiveis": 9
   },
   {
    "fonte": "Google Notícias",
@@ -48,10 +48,11 @@
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
-   "ok": true,
-   "lidos": 8,
-   "aceitos": 2,
-   "possiveis": 1
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 429: Too Many Requests"
   },
   {
    "fonte": "Google Notícias",
@@ -81,7 +82,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -90,16 +91,16 @@
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
    "lidos": 28,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 31,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +130,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,7 +138,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 27,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -153,15 +154,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 31,
    "aceitos": 0,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 57,
+   "lidos": 55,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -218,7 +219,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -226,23 +227,24 @@
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 2
   },
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": true,
-   "lidos": 30,
-   "aceitos": 4,
-   "possiveis": 1
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 415: Unsupported Media Type"
   },
   {
    "fonte": "G1 Espírito Santo",
    "consulta": "https://g1.globo.com/rss/g1/es/espirito-santo/",
    "ok": true,
    "lidos": 100,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -281,19 +283,53 @@
  "novos_na_coleta": 2,
  "descartes_na_coleta": {
   "caixa_alta": 2,
-  "sem_contexto": 262,
-  "oficial_sem_tema": 7,
+  "sem_contexto": 233,
+  "oficial_sem_tema": 8,
   "generico_sem_ancora": 1,
-  "outro_estado": 17,
-  "excluir": 22,
-  "possivel": 18,
-  "sem_contexto_com_tema": 6,
-  "veiculo_excluido": 22,
-  "veiculo_outra_praca": 4,
-  "sigla_sem_ancora": 6,
+  "outro_estado": 15,
+  "excluir": 18,
+  "sem_contexto_com_tema": 5,
+  "possivel": 17,
+  "veiculo_excluido": 25,
+  "veiculo_outra_praca": 5,
+  "sigla_sem_ancora": 5,
   "exterior_sem_ancora": 3
  },
  "itens": [
+  {
+   "id": "ea82e2379a41",
+   "titulo": "Câmara de Vitória aprova orçamento de R$ 4,14 bilhões; veja valores para Saúde, Educação e Segurança",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/camara-de-vitoria-aprova-orcamento-de-r-414-bilhoes-veja-valores-para-saude-educacao-e-seguranca/",
+   "data": "2026-11-16T22:13:35Z",
+   "coletado_em": "2026-11-16T22:17:30Z",
+   "outras": [
+    {
+     "veiculo": "Folha do ES",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVnFjU2o0elQxMi13cVlydzVJOHJmSjZFTnhoY2JUWVR0NUVQajJNdU9XTVVnT0NuQ2tkRjJUTkpvV1AxSy1Gd05jdENYVHU0ZDY1ZTdJb1hGbndpTmhveHpHa202ODZMUGsyZnBvdG5RUzBpTzJ0SmZEN0c3eTBBeDhUV2NVMnJacHFScmJVTjBXbEw1UC11cFlIR0YtY0l1WDh2R1ZJM2dMbUxvVmZ5b3pFdnI3MTlRQ3pn?oc=5"
+    }
+   ],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "813cff9d9af6",
+   "titulo": "Ministério Público do ES vai criar mais de 500 cargos, 9 níveis nas carreiras e aumentar salário de comissionados",
+   "veiculo": "G1 Espírito Santo",
+   "url": "https://g1.globo.com/es/espirito-santo/noticia/2026/11/16/ministerio-publico-do-es-vai-criar-mais-de-500-cargos-9-niveis-nas-carreiras-e-aumentar-salario-de-comissionados.ghtml",
+   "data": "2026-11-16T21:59:08Z",
+   "coletado_em": "2026-11-16T22:17:30Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "pessoal",
+    "controle"
+   ]
+  },
   {
    "id": "e6732af9df64",
    "titulo": "STF julga reajuste do piso dos professores nesta quarta-feira (18); ES tem irregularidades",
@@ -320,6 +356,20 @@
    "triagem": 8,
    "temas": [
     "controle"
+   ]
+  },
+  {
+   "id": "7c0d579742ba",
+   "titulo": "Neoenergia oferece até 100% de desconto em dívidas antigas",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMFkxcGduVEE4cEtoRzJlY21JWWZSejJPSVV4aWdqejlMVU1xc2M2VHBKRjIyMW5TbWZaOXRvTFRuZnNZTG5MVjNwSTJIeUpGQjBiZXNKUmZuZGVwVGZacjc4TlNjQXpZV2g4bmZ5WnVmS1l2b3Yyc05HQ2NJd1l5dGNKVDhVUGZ4OUktcld0ME8zd184ak91cFdQUFFaNXo4a19TVFgtR0Y0Rk1qdk1Sbms2d9IBuwFBVV95cUxQY3N3ZVlfSmUyaVJZVmc5OWk3dEhhYlZOZUdFdkxsMVJheFpEaXJNc2duLTFQalFZUmxMblJzZ1E3Y3dhdVVxdjdKSUFMdnlpdUFjXy02eXVPdC1nQjRkNk9fZGVJS2g3UTc4TmloSkxqeldJbFpjSFVHZW1XZV9YRHQyVHplRHhjLXlacUlPRExIRmNMLXpwTGNTNzhoY0swSGU0RTZQcXZZekVyeE9TSDI3c055ZFVBQnFz?oc=5",
+   "data": "2026-11-16T20:17:50Z",
+   "coletado_em": "2026-11-16T22:17:30Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
    ]
   },
   {
@@ -361,6 +411,18 @@
    "temas": [
     "financas"
    ]
+  },
+  {
+   "id": "5fc616984355",
+   "titulo": "Palestras e mostra audiovisual marcam o Dia da Consciência Negra da Fames",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNR1FUQXNMRXV5ZnRuMHpZdlRWZG4wQldLVkgtTTkwQWhOYjVzOHdwUjdHdFZ5Tko1NFZ3TTBsTFFYeV83TXlUR2F5c09Xb3N0VE1IcjN4aTc0dHExaGpGOXYzSHdNM0tpbmNoS0QwODEwdmxodGk5MFFaVy1fcE45RS1hcXQtZFBKYkFlOVBrWGR4M0JKYmJjQkZoSQ?oc=5",
+   "data": "2026-11-16T19:28:00Z",
+   "coletado_em": "2026-11-16T22:17:30Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
   },
   {
    "id": "18eab6e557b4",
