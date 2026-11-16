@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-16",
- "gerado_em": "2026-11-16T18:17:14Z",
+ "gerado_em": "2026-11-16T19:17:28Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,16 +18,16 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 23,
+   "lidos": 25,
    "aceitos": 8,
-   "possiveis": 2
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 6,
+   "lidos": 7,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 32,
    "aceitos": 0,
-   "possiveis": 5
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -250,7 +250,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -258,7 +258,7 @@
    "consulta": "https://www.agazeta.com.br/colunas/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -278,22 +278,114 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 5,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
   "caixa_alta": 2,
-  "sem_contexto": 260,
-  "oficial_sem_tema": 2,
-  "outro_estado": 15,
-  "excluir": 28,
-  "possivel": 16,
-  "sem_contexto_com_tema": 6,
-  "exterior_sem_ancora": 4,
-  "veiculo_excluido": 16,
-  "veiculo_outra_praca": 2,
+  "sem_contexto": 262,
+  "oficial_sem_tema": 5,
+  "generico_sem_ancora": 1,
+  "outro_estado": 13,
+  "excluir": 25,
+  "possivel": 17,
+  "sem_contexto_com_tema": 5,
+  "veiculo_excluido": 21,
+  "veiculo_outra_praca": 3,
   "sigla_sem_ancora": 7,
-  "generico_sem_ancora": 1
+  "exterior_sem_ancora": 3
  },
  "itens": [
+  {
+   "id": "534a1f02472f",
+   "titulo": "Incaper completa 70 anos de história, inovação e desenvolvimento rural no Espírito Santo",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQNV8xSjNhWDNkN21XOGcwbm1acUVILVZRWThEdld6WG9kQnlKcmFlN0EyU08xS3ZwMVg5S2VMRlVPeTBVVERISVRuQVVCc0g4ZWRtUGs0aTFpV0hLOGdoMTlKQzYxLUJwb0FVdDR4R1pMWWxiQ0JSQ1ZnNnZZZk5MUnk2UUFNbkViQVN1MlNjQ0pWbEJDb2pMOEVRSmRCOGt0VHVTc2N5YjZSWEhZM0E?oc=5",
+   "data": "2026-11-16T18:55:00Z",
+   "coletado_em": "2026-11-16T19:17:28Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "469fc65986a6",
+   "titulo": "MPES criará mais de 500 cargos, incluindo 3 novos subprocuradores-gerais",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/vitor-vogas/mpes-criara-mais-de-500-cargos-incluindo-3-novos-subprocuradores-gerais-1126",
+   "data": "2026-11-16T18:44:21Z",
+   "coletado_em": "2026-11-16T19:17:28Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "8b26c5445e41",
+   "titulo": "INSS muda regras para a aposentadoria em 2027; veja as novas exigências",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/inss-muda-regras-para-a-aposentadoria-em-2027-veja-as-novas-exigencias/",
+   "data": "2026-11-16T18:40:05Z",
+   "coletado_em": "2026-11-16T19:17:28Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "da505b61dde3",
+   "titulo": "Aposentadoria do INSS muda em 2027: veja o que vale para CLT, PJ, MEI e autônomos",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/aposentadoria-do-inss-muda-em-2027-veja-o-que-vale-para-clt-pj-mei-e-autonomos/",
+   "data": "2026-11-16T18:34:52Z",
+   "coletado_em": "2026-11-16T19:17:28Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "4dba8cc44a4e",
+   "titulo": "Fiscalização flagra 47 condutores dirigindo sob efeito de álcool em Aracruz",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeFlhaEQzZTB5eFVKTExkSTVzZnc0czJzTzVNRlZRZFAya3d4U0hnbUlkZEprUGQwZWZCRUJyT0hzeGtITGJuSWJvd01VRFVjOTNpdGF1SHRmZ05GcnZvM3Rzb1I3eTZkTzFkX0gxSGFoUWFlX2V5SmhNVFNmb1FaNWVKNlJhVHdRWHlrdExublczMlhXa19mUzRPQzNXdw?oc=5",
+   "data": "2026-11-16T18:34:00Z",
+   "coletado_em": "2026-11-16T19:17:28Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "fcff9a45d9ba",
+   "titulo": "Saca de café é vendida por R$ 20 mil em leilão em Marechal Floriano",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOUkJCNXpmREVDaFdvWGt5OE5LLTdNaVplUFJHQ0hKN3VYdm14SE1WeGpwVEZTZk5EYnJZSVU1cy1NdFVUOGtLX3RzUUxpWEpRcGNSQ0RVUy1zWEczVFkzWFJDY0Rmd0kwTHF0aXd5cGtrd0hGc25PNm9OdHhUTEhGWHpYY2xneEt5RmY2eE50ZXljUQ?oc=5",
+   "data": "2026-11-16T18:31:00Z",
+   "coletado_em": "2026-11-16T19:17:28Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "314b1d805631",
+   "titulo": "Plenário da Assembleia Legislativa aprova rota turística estadual",
+   "veiculo": "Folha do Oeste",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNYkNRQWpaSmdfSGxOa0dZVjFMYllnaFd4dWlsd1FWY3FMeDU1bWIydEtFbUZHMllkOTJzYy1DQTBhc2NZc0lLSEZFaFFHZDRSVXlBRVZ4T2tacnJCeHVqWnFCZHNPeUowbkZTRFM1MVAzWUQ5OWNDVEhBTFJNd05rNzlZYkZPOEFBYmV0b3lzcm5fcU12TF9kQ0FzclpDTkh4UWE1UFVCdTR3MVhfRlRtZQ?oc=5",
+   "data": "2026-11-16T18:08:00Z",
+   "coletado_em": "2026-11-16T19:17:28Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "controle"
+   ]
+  },
   {
    "id": "ec2b3d1d1de5",
    "titulo": "MPES pede 561 cargos comissionados e impacto de R$ 9,8 milhões",
