@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-16",
- "gerado_em": "2026-11-16T19:37:20Z",
+ "gerado_em": "2026-11-16T20:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 25,
-   "aceitos": 7,
-   "possiveis": 7
+   "lidos": 26,
+   "aceitos": 8,
+   "possiveis": 8
   },
   {
    "fonte": "Google Notícias",
@@ -41,15 +41,15 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 5,
+   "lidos": 8,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -73,9 +73,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 27,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 30,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 30,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 4,
+   "lidos": 6,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 3,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -282,18 +282,44 @@
  "descartes_na_coleta": {
   "caixa_alta": 2,
   "sem_contexto": 261,
-  "oficial_sem_tema": 6,
+  "oficial_sem_tema": 7,
   "generico_sem_ancora": 1,
-  "outro_estado": 14,
-  "excluir": 25,
-  "possivel": 17,
+  "outro_estado": 17,
+  "excluir": 23,
+  "possivel": 18,
   "sem_contexto_com_tema": 6,
   "veiculo_excluido": 21,
-  "veiculo_outra_praca": 3,
+  "veiculo_outra_praca": 4,
   "sigla_sem_ancora": 7,
-  "exterior_sem_ancora": 3
+  "exterior_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "472460a74e4c",
+   "titulo": "Assembleia aprova projeto de Mazinho que transforma Estado Presente em política pública permanente no ES",
+   "veiculo": "Tribuna Norte Leste",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNbmNOUlc5UmMzcTZUX2k3akpaTnBkT0tGd0UzQV85bmZwVm81TUtZSHY0c01kdkdvcFloZUtLb3g2TUY2RlF0RThTSHhSbTExUkJ0c0VIeGJ4RXJHOUhNSXVUVFQtWFl2RHAtZVd4YUxCcWFqbXZ6emVUOG5jbFo5Y2RjUXFSMUtqYXhOYmhPNlJpZFZ1Y3VyZmc1WmdUNjZ4dVllcVhtc1FJU1hBVlo4RE5WbXpXVEZkcTdEaWg1QUNmdDFHeW5RQzNNekNEVmZ6aTRmMg?oc=5",
+   "data": "2026-11-16T20:14:35Z",
+   "coletado_em": "2026-11-16T20:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "652a38996634",
+   "titulo": "Credores da Apex se organizam para negociar dívidas e cobrar informações",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/economia/2026/11/credores-apex-organizam/",
+   "data": "2026-11-16T19:41:43Z",
+   "coletado_em": "2026-11-16T20:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "18eab6e557b4",
    "titulo": "Peixe-leão é registrado pela primeira vez no Espírito Santo, na Ilha Escavada, em Guarapari",
