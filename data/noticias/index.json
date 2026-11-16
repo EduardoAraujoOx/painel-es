@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-16",
- "gerado_em": "2026-11-16T00:17:20Z",
+ "gerado_em": "2026-11-16T01:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,31 +18,31 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 9,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 17,
-   "aceitos": 6,
+   "lidos": 16,
+   "aceitos": 5,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 1,
+   "lidos": 5,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 4,
+   "lidos": 6,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -65,23 +65,23 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 1,
-   "aceitos": 1,
+   "lidos": 0,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 1,
-   "aceitos": 1,
+   "lidos": 0,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 18,
+   "lidos": 19,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -97,8 +97,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 27,
-   "aceitos": 2,
+   "lidos": 25,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -155,7 +155,7 @@
    "ok": true,
    "lidos": 28,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -232,11 +232,10 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 415: Unsupported Media Type"
+   "ok": true,
+   "lidos": 30,
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -279,17 +278,17 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
   "possivel": 15,
-  "sem_contexto": 203,
-  "excluir": 22,
-  "sem_contexto_com_tema": 1,
+  "sem_contexto": 230,
   "outro_estado": 12,
+  "sem_contexto_com_tema": 1,
+  "excluir": 26,
   "exterior_sem_ancora": 5,
-  "veiculo_excluido": 31,
+  "veiculo_excluido": 32,
   "veiculo_outra_praca": 4,
-  "sigla_sem_ancora": 5
+  "sigla_sem_ancora": 4
  },
  "itens": [
   {
