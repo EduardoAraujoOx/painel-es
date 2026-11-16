@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-16",
- "gerado_em": "2026-11-16T14:17:27Z",
+ "gerado_em": "2026-11-16T17:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 15,
+   "lidos": 21,
    "aceitos": 8,
-   "possiveis": 0
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 5,
+   "lidos": 8,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -51,7 +51,7 @@
    "ok": true,
    "lidos": 7,
    "aceitos": 2,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 26,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 28,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 26,
    "aceitos": 0,
-   "possiveis": 5
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 11,
+   "lidos": 10,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 29,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -161,8 +161,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 64,
-   "aceitos": 0,
+   "lidos": 62,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 0,
+   "lidos": 4,
+   "aceitos": 1,
    "possiveis": 2
   },
   {
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -234,8 +234,8 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 2,
-   "possiveis": 5
+   "aceitos": 0,
+   "possiveis": 4
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -278,20 +278,111 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 4,
  "descartes_na_coleta": {
   "caixa_alta": 2,
-  "sem_contexto": 243,
-  "outro_estado": 16,
-  "excluir": 29,
-  "sem_contexto_com_tema": 5,
-  "possivel": 21,
-  "exterior_sem_ancora": 5,
-  "veiculo_excluido": 11,
-  "veiculo_outra_praca": 3,
-  "sigla_sem_ancora": 8
+  "sem_contexto": 256,
+  "oficial_sem_tema": 2,
+  "outro_estado": 18,
+  "excluir": 26,
+  "possivel": 20,
+  "sem_contexto_com_tema": 6,
+  "exterior_sem_ancora": 4,
+  "veiculo_excluido": 14,
+  "veiculo_outra_praca": 2,
+  "sigla_sem_ancora": 7
  },
  "itens": [
+  {
+   "id": "2021c9451a74",
+   "titulo": "Radar Agtech Espírito Santo amplia prazo para participação de startups até 22 de novembro",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPRUNrbGZSenZ4OFl6LU5PTzFQcGlPcF90c1pXRlNuVFJEM2xmNjlyQTJHeFd4cGd0R2hVR0liRE9LYzNOMllZUUVweW11SWFoLVczMTFxeXUtQmt3RWdzRnpGQ3BQaFFDS1ZUOFdHRk5QSE5QMGU1Y3d5Y25FZVNSOWs2VEdCSU11SEh3d2I5UXltTVdpdEZUX1hZWW9KZTJPMC16Y0FjZ2tyU3ZRNU92Nw?oc=5",
+   "data": "2026-11-16T17:02:00Z",
+   "coletado_em": "2026-11-16T17:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "da0a09e8b884",
+   "titulo": "Banestes Corretora ES concurso assistente securitário vagas salários",
+   "veiculo": "Sou Enfermagem",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdUN0dF92dUM3aVR6cVVvVTJPbEVNV3k2aVZKZFhzakxaWUY2WG1ncDlBemNXM0o1SXFMLTBKamYzYnIwQV90UFI5RDJGU1Y1d2lSZ1VSWjBzWWc4NmtBczNNVTBvbU9fYndjYjZhQTJDMm9XQnRpVVFqMWstMUw2cGtTWUJyS0dySVloX25wUG8tTXd0VkE2M204RnNMZkFVS2tIVDNZNF9Oei0wWTFuQg?oc=5",
+   "data": "2026-11-16T16:52:33Z",
+   "coletado_em": "2026-11-16T17:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "283f1e22ba99",
+   "titulo": "Conta de água da Cesan pode ficar mais barata em 2027 com redução de 5,52%",
+   "veiculo": "Portal Tempo Novo",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1YalhKYmQyd1RjeUZITnF3YUdLY0Q2MWpsUW9heFByVmJqZHY0TzUtaWZwNmZ5cFo2Yko4eWZ6cUxtSlZINk5iVXlpWXpVRHJSUE1YN21hR1ZqWkh0NDdab1o3Y0VieDBhMEFkQkJtRU1zTjA?oc=5",
+   "data": "2026-11-16T16:41:00Z",
+   "coletado_em": "2026-11-16T17:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "fabea8ea2448",
+   "titulo": "Moretti: com o PLP, arrecadação extra pode elevar orçamento da Saúde em R$ 5 bi",
+   "veiculo": "Vitória News",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQVlxLXgzdWFZdHRRQjc0Y0ZraHZRWVVtU3RzR0lpMG5uTGJ3SVlEdm1SWUhKc3c3eWZrcEdVQkFsUHRxb1ZuekRYT2IzeEhQMzJIa0ZEUW56dDRaQzg5ZnI2b2QtWDk4NTBnYmEyOHJFYS1Bd0hPY01VTjR5U2tFQUtSak82ZUd3Vjl2eURjcFA5WWszTVZscUxTWHJTRHNXZVBjNnpR?oc=5",
+   "data": "2026-11-16T16:30:00Z",
+   "coletado_em": "2026-11-16T17:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "3c0a7f25ad9d",
+   "titulo": "Pazolini define o nome do primeiro secretário de sua equipe de governo",
+   "veiculo": "Portal Momento",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQRmZXOHlMN0FwTTJHajFvR3VoZzdVRThNUkUtMmJaNjZKX2IyNlY3bHBVc25XYkJWNzRodlZaU1lreFlJV2NOUFk2TWdmMzhCOExzRW1EZDJ1OURiQkhnbE9SeEp0ZzduQ3NGTGU5N0xnWjVlM2Njem0xMnc5c19MMlNhQzF3TW56U25CbVI5Z3duSnZLemVkUnczY19QNzlCeU5OOHUzNnk0dTgxRzk5dE1NMGdJQQ?oc=5",
+   "data": "2026-11-16T16:05:41Z",
+   "coletado_em": "2026-11-16T17:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "1866a78f9ebf",
+   "titulo": "Detran divulga lista de mais de mil motoristas que podem ficar até um ano sem dirigir e informa como recorrer",
+   "veiculo": "O Antagonista",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNREdNNUEwX3VCVzF3MWxQWFZHRGNiM2I5NFpxRUJTaURwMjgzcjRnV1RNQXFONTdoYkNmTXIxN2JtSXNEOF9VOEVraV9Ka3B3Q0VMZjdkZXByMEdLdExlY3NZVE1Ma0cxT28yRnNiRmhSajZVQ2x2WlBQTmNndU12VlVBMnJ4ZEpnUXNuUWZPZjl0S0hhM0xMckJvSVo1MGJKNF81Szc0UmlpU3JDcUZ0QmJxY00wSEZGcGM2WXFYN0sxbEVvaDNnSlZMRjlnVm81c2tsSnQyRERRTVZsWklpeA?oc=5",
+   "data": "2026-11-16T14:53:00Z",
+   "coletado_em": "2026-11-16T17:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "f2dd5537192a",
+   "titulo": "Prefeitura de Muqui abre concurso público com mais de 150 vagas",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/concursos/prefeitura-de-muqui-abre-concurso-publico-com-mais-de-150-vagas-1126",
+   "data": "2026-11-16T14:43:59Z",
+   "coletado_em": "2026-11-16T17:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "d9e17822299d",
    "titulo": "Faça Fácil Cariacica suspende parte dos serviços de 24 a 30",
@@ -341,7 +432,12 @@
    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVE9HUlprSERBWE1pZDBocWFSa1JORVNQcmNVNExRbG1ETzJRRTR3aWg4T0VfdkFRV3RhYVBfZS14WTJFNjhDSkNFWUMyNDVuZUJCTUJzWUpGMlNrSnF4eXAxOTUzeDBhVklERXl6cVVwZlpWWWo0d0J6Q1NIM3RQTjN6aVFQQThhZW5MUHd5M2c2SklQd01CRHZjdFJkM0RocUtLcEViUUpsVm1nWjM0cEt6cXRsUjdF?oc=5",
    "data": "2026-11-16T13:22:00Z",
    "coletado_em": "2026-11-16T14:17:27Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Governo ES",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNFBTcExKWE9PcUJWUlRNY3lCQ3dJMi16Z2pjOS1hb3RPelFzWUdEZFdJc0tyeTllbDBMZlUwQmdWNGJoRk9DUGljRTMzb3ZJZVJTWlRxSVdjOUhCWThBSHIxNDNxTEhqWmlEY1FDY1lYQ3NwaDZYdkxfMFRZMnhpX3ZYNHVWb1B1eWFTQkRYVmxlODdieXpDeHRqSU1Scm9Mb2pOOEllTDdQRXQ0XzNQeDREZ0NDdw?oc=5"
+    }
+   ],
    "possivel": true,
    "triagem": 8,
    "temas": []
@@ -367,7 +463,12 @@
    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbl9JTEhabDVjOTFRZGQ3N1IwTUlBMkNXa2k0X1hGc3RKOHh2U0plSmFuYlcwQU1pNTY5NTgyd2pocWZnSTFXejdXZGxhc09kRDdoT1hPZ0ltLTBFdlNvQlBjZG84TU9MYzROdTB5cklqRUpzRGFnZjFpc3FyTjhCZWV6dkZzdUh2UU1JLUY2MDB2eURwQnA2b3Iwdm5ReEVHaEV1cUZIQmpOU05yd3ZPdzhtWFF3TWRzcjd0LURLcw?oc=5",
    "data": "2026-11-16T13:14:09Z",
    "coletado_em": "2026-11-16T14:17:27Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Inteligência Brasil Imprensa",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOV0Y0cHFTdGdEQXlXRERTZFdPZERqVzRweUg2Wi1pSjZPREczR0hWaElDV19rQ3dIR1o2Nk1WU0NfN3A1bFUtbEFRQzczaUV2QkxfZE5fYW5XcWZsWmt2Qk1kYmkySDZRYjRWLS1ZRy1iNFg1bXFsWlVfVUtSZy1wZ2FqeWtYaXRSYmtTX21pd0pWMWpKZVc4TlZfTVVqWmxLS2liN3hRcThYdXZMNVFhblV5c2xxdmZsdlhFSUdBcw?oc=5"
+    }
+   ],
    "possivel": true,
    "triagem": 8,
    "temas": []
@@ -396,6 +497,20 @@
    "triagem": 8,
    "temas": [
     "contratos"
+   ]
+  },
+  {
+   "id": "40f4865b9c33",
+   "titulo": "Com orçamento 40% menor, Náutico inicia planejamento de 2027 e foca em ajustes",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNdWpIeUtnYkNUbmJnLThSdmphSUJRYjBYeU5FT09kOWJJSlR3VmNZOXIwMzZyTlNvRy1PQldSaThENVNCRHQyOE9lSHQ5Wk92cWVHYWR0SlhWY1Z4YmNBZGZzVF9NTUYyUTA4Mm1IQUZsd1Q0NnNpUEJfVkNpOEJWank4Qzd6LUlya1dpVmlucTVSZkJVOE1Jc1ZOZWJpTU9SR3BDdnRTVmtwMVRvcnNCRXJick02M3JKS1dSYTFOSk52RnNTclFWMmR6SVBCSXJPMGJB0gHTAUFVX3lxTE11akh5S2diQ1RuYmctOFJ2amFJQlFiMFh5TkVPT2Q5YklKVHdWY1k5cjAzNnJOU29HLU9CV1JpOEQ1U0JEdDI4T2VIdDlaT3ZxZUdhZHRKWFZjVnhiY0FkZnNUX01NRjJRMDgybUhBRmx3VDQ2c2lQQl9WQ2k4QlZqeThDN3otSXJrV2lWaW5xNVJmQlU4TUlzVk5lYmlNT1JHcEN2dFNWa3AxVG9yc0JFcmJyTTYzckpLV1JhMU5KTnZGc1NyUVYyZHpJUEJJck8wYkE?oc=5",
+   "data": "2026-11-16T12:19:31Z",
+   "coletado_em": "2026-11-16T17:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
    ]
   },
   {
@@ -512,6 +627,21 @@
    "possivel": false,
    "triagem": 8,
    "temas": []
+  },
+  {
+   "id": "cabf230022d6",
+   "titulo": "Eleição no MPES começa com projeto de reestruturação",
+   "veiculo": "ES Hoje",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOamtzblExRU1VUlMtYXlXX0c5QWFNWGNLeTRFUEZRd0IzNi1Hank4U0ZGczgwYVV2Tlp4Rm1jOWloQTNadnN2N1NTME9ZMVVoRncwNlZrVzhvVURSSnRodlpGTjZCeUVLYUxMd3dFYzhQZzR3Z1U4U2tDMENNSWJpeWZ4bks3OGdWeTZvaWdKZldiaHM?oc=5",
+   "data": "2026-11-16T07:00:30Z",
+   "coletado_em": "2026-11-16T17:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "pessoal",
+    "controle"
+   ]
   },
   {
    "id": "716fb16bf6da",

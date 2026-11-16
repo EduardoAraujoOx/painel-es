@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-16T11:18:38Z",
+ "gerado_em": "2026-11-16T17:17:59Z",
  "ref": "2026-11-16",
  "desde": "2026-10-04",
  "estados": [
@@ -8,21 +8,21 @@
    "nome": "Alagoas",
    "eleito": "JHC",
    "partido": "PSDB",
-   "total": 88
+   "total": 90
   },
   {
    "uf": "AP",
    "nome": "Amapá",
    "eleito": "Dr. Furlan",
    "partido": "PSD",
-   "total": 27
+   "total": 29
   },
   {
    "uf": "AM",
    "nome": "Amazonas",
    "eleito": "Omar Aziz",
    "partido": "PSD",
-   "total": 124
+   "total": 125
   },
   {
    "uf": "MA",
@@ -36,7 +36,7 @@
    "nome": "Minas Gerais",
    "eleito": "Cleitinho Azevedo",
    "partido": "Republicanos",
-   "total": 181
+   "total": 184
   },
   {
    "uf": "PA",
@@ -57,7 +57,7 @@
    "nome": "Rio de Janeiro",
    "eleito": "Douglas Ruas",
    "partido": "PL",
-   "total": 154
+   "total": 155
   },
   {
    "uf": "RN",
@@ -71,7 +71,7 @@
    "nome": "Rio Grande do Sul",
    "eleito": "Luciano Zucco",
    "partido": "PL",
-   "total": 140
+   "total": 144
   },
   {
    "uf": "RO",
@@ -106,11 +106,113 @@
   "fndr": "FNDR e reforma tributária"
  },
  "contagem": {
-  "total": 1246,
-  "medidas": 383,
-  "equipe": 863
+  "total": 1259,
+  "medidas": 387,
+  "equipe": 872
  },
  "itens": [
+  {
+   "id": "0e13a7d3a4d4",
+   "titulo": "Secretário do Turismo terá respaldo do setor, promete Zucco",
+   "veiculo": "GZH",
+   "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOeTJsZWlOWmRiX2Job19uRUVEMkk0SFBfRHhpYTFCY0FSVm5FSXBvVzlBNDExUkQwQWlsRlIyZzRmSV9zeWw0RTg1d3lLUW5xT2J0djdtMjRRaEdsMElJV3NZemtHcU9CbkJJbWFZNkFTUVJaZDZ6UVNPVEwySnBTblBfbzJDamZnOEZERFRqbC1XN0R2bXVtRWRzTy1ON2dkMkpzS0J4azh0aGMxVllLV1lsdVlOQ21pWGViVUh6eXRpR09ybFRBS0VaN29FUllhbFRnS1kwU0h6dGhGMVc4c2QzdzFHX2tqRGJhREF3dzFIN3owSXJrQjdxYmQxWDJP?oc=5",
+   "data": "2026-11-16T17:16:40Z",
+   "coletado_em": "2026-11-16T17:17:59Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "cce26b7536c6",
+   "titulo": "R. Nelson vai cobrar informações de Clécio sobre transição para que população não seja prejudicada",
+   "veiculo": "Ponto da Pauta",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9yQkJXamtIcVRCaTZPb0FyeHZ4VDhyalJjVHlVZjRJUW9NQk5IWWNTaTNXWS1BekFQSEprZ25QMThaMVpfWlVrbHJyVmZPS2QzQnhBQ3BQVkZpM1ZvYXFuaG9zcFVDeXZ1Z1Z5WU1yZw?oc=5",
+   "data": "2026-11-16T17:14:48Z",
+   "coletado_em": "2026-11-16T17:17:59Z",
+   "outras": [],
+   "ufs": [
+    "AP"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "8911e65a2394",
+   "titulo": "Representante de JHC não comparece à primeira reunião da transição",
+   "veiculo": "GazetaWeb",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPcjdVSGxJeVY5bDJoSWczYk9aUnFMb29IRWxsVjh6NTN3UmVOdGR2eW9ELWh6eENjcUp5YVpZSURaQ3RIVFlGcEVSZFBKU0hLQzRsMko1Z1diUWZCb3BmaV9Sek9wc2ZXWHhGYXJfYUJqZ1hZWEg2TGxhWVBjeDZxb25sTnJrZkJRVU5HWmRXNGI5dkxYa0JwVm1CaEZuZndYalRUNkJYemttS2VGSlI0aXdLWHZLM0Vx?oc=5",
+   "data": "2026-11-16T15:36:37Z",
+   "coletado_em": "2026-11-16T17:17:59Z",
+   "outras": [],
+   "ufs": [
+    "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "5531a72b156f",
+   "titulo": "Zucco apresenta proposta de fusão de secretarias a aliados nesta segunda-feira",
+   "veiculo": "AU ONLINE",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPTlo0aHBuNW50WF9NOEJLalJRU2EwVG4xZGhYY0F1ay1TZjAyOTk2MEk1OUVzb0lxS2VUSjFvMFZPa0QyWmVQZ3ppWXlBbElOVmFsZHhQaE4xOXFlQUhyZXdWb3FicVdBczhUSzJreXBfR2xnZ0VITEtXQ2FEVEotTVBCWEdNZldkYlBmREVVckZNaDh0UzZpQnNBZWpYdzIwOU1kYVJQSEhuUko2SmVvOE5Kck9TTE5UcFNMR0M4NHo4dVdwSVZrUEVoZw?oc=5",
+   "data": "2026-11-16T15:17:33Z",
+   "coletado_em": "2026-11-16T17:17:59Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "c25d37b3ed25",
+   "titulo": "Transição de governo: um compromisso com o Rio Grande do Sul",
+   "veiculo": "Portal do Estado do Rio Grande do Sul",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOOTZ6NXhydG5ETjcwYmtpYVFfVVpQaXpqWnVqd0RuUkFhMG9Kc2hKQnZvdXg5TmNlcml2Ui02Smo1OFotd1BlSk93am1hSVBzY085djhxU040TG1IUkZjT003S3ZfR09SNzI3dmdOb3M5d3dKQm14dTVRMVljMlU3NVdLU2I0MW1DVVFseA?oc=5",
+   "data": "2026-11-16T14:58:29Z",
+   "coletado_em": "2026-11-16T17:17:59Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "d054e2303108",
+   "titulo": "Furlan anuncia Mayla Carvalho para Secretaria de Administração do Amapá",
+   "veiculo": "Diário do Amapá",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNT29KM0kySHctRVB5MmVDVXp1NktOR2FTeEdFcGk2N19FOG8tS3hOYXpoOWlnZ01xVHBaS204dDZCdHh4OTVWTWNjbFdvZE1iLU1za0FlMHJIMEtZSmVwakZCdnFMQUU5Q0lZSHNKTEdhM1IxaDY2QUhOcnVSTkpaQUZ1cDFnXzg3RUI1N2hfMmg1Y0dMdEwtUlRidEgxdlVKS2NZZlpZZnJ4UzVuaG1GVDRVdS1NZThHQkNfRXBhQ3Q?oc=5",
+   "data": "2026-11-16T14:13:11Z",
+   "coletado_em": "2026-11-16T17:17:59Z",
+   "outras": [],
+   "ufs": [
+    "AP"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "502f1175c3fd",
+   "titulo": "Excedentes de concursos da Segurança Pública serão convocados no início de 2027, diz Douglas Ruas",
+   "veiculo": "Extra online",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQc1JxbGF4TU00SlkzQjZIWU05N1YyVUcwazdySFVGd2FuTFhwLVNVZllnUU03ZFdYZzZVY3JlYkFzd216MGpnZElvMXZRdmhvWms4TVZnSnRQZWhtdlRRcGs2YUlMbUFoLU1pSVFTbUhIZDEzck43Ykl1bDJ2X2RCemVrVWJGa2JMQ3VRc1huLUZzT2lvYjZ2ODhDZDhaYnc3NXNzM0V2dmc2NDczcjN1WnY5QUZXb3JKbTJqRDB4SVJVeEl4ZUVrOVBRSkRmTl9hbTNrcTctYmRsQnNELV9yc0NNM2ttZnpP0gH3AUFVX3lxTE5MZFRSanU2ZU9JQ1NLejYtQTR5X3Q1QjFHR2h1LThfZ3loVnozSmhkX2szeF81UzdsOWYzSVFUREdUaXhyQVc3Vl9hLW5oRFpVZXVtSUIyUmJmWTBDZ3BucUtXdUFEbzZNbHNVSHBGT2xocE9YNlRRZHhfblluU3UxNS1pWkVlbi1SUm13NEVib3NHeXpHR2xUb3FOai1BR09PNmE4NkJhLVU4aDJlZTU1UWdGcWF4S2JoNDBOaHh6ZTZHNzZUaVBZR2JNQXR3VHJOTThXeldsYTRYbXZhQng4RXFfdHJmSGJfZGg3R1BuY2YzLVpDMnc?oc=5",
+   "data": "2026-11-16T13:58:40Z",
+   "coletado_em": "2026-11-16T17:17:59Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
+   ],
+   "temas": [
+    "pessoal"
+   ],
+   "categoria": "medida"
+  },
   {
    "id": "3a282fc114e3",
    "titulo": "Governo Zucco prevê reduzir de 30 para 17 o número de secretarias no RS",
@@ -126,6 +228,20 @@
     "estrutura"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "529cb05ecfcb",
+   "titulo": "Luciano Zucco reduzirá estrutura estadual de 28 para 17 secretarias",
+   "veiculo": "Complexo Luz e Alegria",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPakJCLWtxaURVNmRNWEVFeUhiTXRTT09fMlY0Y0YwY1BfWlV2dnJDdk5LbEpKZTlRZmk3UDIzSVJCaGZoZjZnYlhBOEUzMm5VOUJWYjZlWDBlT3paSlVoVXlnOXNiLXFJb1JoamY3N1d0Y0hoLVh3NVVodWlfNXUza1M1cGh5TGJpcnhGeERPRTBEX0dWQUhlaHUwSEswV25ua0U2TzlR?oc=5",
+   "data": "2026-11-16T11:02:00Z",
+   "coletado_em": "2026-11-16T17:17:59Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "0e9418eb3549",
@@ -477,7 +593,12 @@
    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPLVlhSDROMTZfb1dnSXRhTVpOc0UxalZqMElKcm9mVnVRQmF6eFVqYTB4Y1E1S1ROMTNSMFFFYUtwLUVLa2tyNDBJWXZlcEYtcHVDWE9XTGZlMTFqbnRJTHVmMmRsWVJPYWVwTWIxUzFVUVE2cFR4bXlSNzBQMHE3MWZmR2g3cDZEOUlrVG1qU21oSXZoWjJoOEZjUHpZaTZvR2ZSVmZ1RXBia052bm5TVDFWdFQza1UwbGpXc05vcko?oc=5",
    "data": "2026-11-14T00:56:00Z",
    "coletado_em": "2026-11-14T21:17:48Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Betim Online",
+     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNNktSaG8zQXVnanVVTHlqTVZNMWppLVVrSDV4T2NhSVdwcU00cWRCN3ZQTnl1OEp5YXd2OEkxSDM0bHlIeHVCV1lPNnpuOHN0bm1wbWVjVEtBUTh5MEpQRnRIbUFJNFVnM1I4VjdfOHdkSUJVOWd2RktUQU9icUd2YVFKN215QzRJR243bTJnSVJlc05JWlNCLU1VaGpodHBhbWNFUFFINDVSVXRTV25tbnAxdjVGRVJTYV9KRm5TRFI2OUFYWGt2VA?oc=5"
+    }
+   ],
    "ufs": [
     "MG"
    ],
@@ -606,6 +727,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "7763898a58eb",
+   "titulo": "Vittorio Medioli será secretário de Planejamento e Gestão no governo Cleitinho",
+   "veiculo": "BHAZ",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQczhqM2t4Q2VqdGkwaEtyN05iWDl3SUpnUlh1cUhkYnBhdVRJWHlaTnBRdDlaZVUweXo5aHdSRFZoX3lpQjllNnZIZVZiNG1nT3RKN1dTTGhESTRPMF9ZUFd4a1NzVFRaTWtHelROaGRUSDhzYXdEYTdWa1hjNW5UcU5Jc2pldHpuc3BVM3BEMEhaeFk?oc=5",
+   "data": "2026-11-13T21:41:00Z",
+   "coletado_em": "2026-11-16T17:17:59Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "bfec791b291b",
    "titulo": "Assédio marca transição de Marcos Rogério e pressão por cargos públicos",
    "veiculo": "oobservador.com",
@@ -637,6 +772,22 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "53a613cd51ac",
+   "titulo": "Cleitinho Azevedo pode criar secretaria especial para tratar da dívida de Minas",
+   "veiculo": "Tribuna de Minas",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVGM3TGo5dUNlODJVLXZweXhWZ250QUMzR3YxNXluRzhNZEsyS3NhSi1VVVhtcDlHSEpIcHVQczBBbGdld0pQRmZ0bldHdzA3bTlFSWJVM2tyWXphNHVOYklKNzVOdVllLUpONFdod1huUWY4Mjd3OEtxMEljQnF1YnpXRkVWQVNaZ0ViN2NUUGt6UG4wZHNIZGNyckJhNnJQMFFZVmF5eGZCWm1jNmRfVC03clVfcmpRUnNXNXE1RGt2c2RyYTVBNU5McDNzRmtTWkdzVnNCOA?oc=5",
+   "data": "2026-11-13T19:55:23Z",
+   "coletado_em": "2026-11-16T17:17:59Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "2162cd3873fd",
@@ -1583,6 +1734,22 @@
    "categoria": "equipe"
   },
   {
+   "id": "18edc74a6d2a",
+   "titulo": "Cleitinho monta plano com para negociar dívida com Lula",
+   "veiculo": "Área VIP",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQLWZwQl9NRGlRNGhkU1c3cVBXQkRUbktOOXRqWDN2R0dTRE5pd29seXl2alI3d0hkRWZuWWJublo3SEhEWWs1UmNFX1RpbVAwbjVBRWgyZlBKaGhkeE1OZzdmS3U5M0lnMGFNRVZoSVlhNFNhQXlGVld0MmtWSXBWVXhIell1UDJZZlg5VjdVdmEzLUhmNkRXOHl1dzE4S0FEV2tN?oc=5",
+   "data": "2026-11-13T09:00:26Z",
+   "coletado_em": "2026-11-16T17:17:59Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "654e909433f1",
    "titulo": "Douglas Ruas escolhe delegado de São Gonçalo para comandar Segurança Pública do Rio; veja nomes cotados para PM e Polícia Civil",
    "veiculo": "O GLOBO",
@@ -2191,6 +2358,20 @@
     "economia"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "3ceafde6520e",
+   "titulo": "Comissão de transição se reúne com presidente do TCE-AM para subsidiar o planejamento do próximo governo Omar Aziz",
+   "veiculo": "MSKTV",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOZjNiUkhQbWxZVkY0S3kwdXpRcHl0emlaTjRVLWh5MDg0enFGTDdCSE40UjFDOEgtYUNrM0ZON3l5S2hNaFd4ODVER0YyVTd1TTBtTHJ1NF96Q09NZzM0cXJHVzhkWlpHRjhrVDU2cGRxVmM2UU1rS2x6cTlFS194ejQxWF9MbXNoRjlLWXQ1SHg0cWJQbU5Sb1NrZzFsTzFnLXZTa3Z2S24zd2pUTnNldTA5emtuUEpPNUhpb3NDM2lmRnVfSVJOYkZCdVphMWR0Z0E?oc=5",
+   "data": "2026-11-12T19:02:04Z",
+   "coletado_em": "2026-11-16T17:17:59Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "aa9ff522fbb7",
@@ -12413,6 +12594,20 @@
     "pessoal"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "a810b1edb580",
+   "titulo": "Alagoas: após eleição presidencial, JHC prepara novo governo",
+   "veiculo": "Gazeta de Alagoas",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNR0dYX215QW02dHBsS0w0OE5fWU9sd3h0NjJXT2R0RWVBclZQazhiZ0ZKN2xyS0pER1VqN2dsb05YMC1YQzlNMkxhSnZINEIzVjJRUHdQYUExc0dCVzRaWk5JUTlnY0tNRmNDdzlpd1ZQLXNxOHhSR2lsUm1wUzRiaDU3aHo5WThhUmEyeTl4SnU5c3JZZHl4cnlQc3N5U1dmZkVkU3Z6aFZ5QnRzVnfSAbYBQVVfeXFMTkxJOWl2SDBCeW4tN1M0RjhoSW5ZU3NiVV9QQ1IwUVdLYnVzOXI3SlRjLXVyQktVNkpnRElTOTBPX0ltSklybTVtTkg2SG9vN3F6WkJ4ZHlUcXVZSWlyUVJXUGx5MmJERzRvb1lZUnl4a01lZndSeFY2ZUc2d3RfRjdMX0lxS1pzZzNGTkc2SWNRYThFNlVfenJkc1hQRkhIQVJISVl0OUVvTGhrT1RMS0FRdHJsYlE?oc=5",
+   "data": "2026-10-26T07:00:00Z",
+   "coletado_em": "2026-11-16T17:17:59Z",
+   "outras": [],
+   "ufs": [
+    "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "97288de7e239",
