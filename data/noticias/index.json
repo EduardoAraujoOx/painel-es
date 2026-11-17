@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-17",
- "gerado_em": "2026-11-17T18:17:19Z",
+ "gerado_em": "2026-11-17T18:35:43Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -33,7 +33,7 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 20,
+   "lidos": 19,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 28,
    "aceitos": 0,
-   "possiveis": 9
+   "possiveis": 8
   },
   {
    "fonte": "Google Notícias",
@@ -232,10 +232,11 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": true,
-   "lidos": 30,
-   "aceitos": 3,
-   "possiveis": 1
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 415: Unsupported Media Type"
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -280,18 +281,18 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "veiculo_excluido": 28,
+  "veiculo_excluido": 29,
   "caixa_alta": 3,
-  "sem_contexto": 280,
+  "sem_contexto": 253,
   "oficial_sem_tema": 7,
-  "possivel": 29,
+  "possivel": 28,
   "outro_estado": 16,
   "generico_sem_ancora": 2,
-  "sem_contexto_com_tema": 14,
+  "sem_contexto_com_tema": 15,
   "excluir": 18,
-  "exterior_sem_ancora": 4,
+  "exterior_sem_ancora": 5,
   "veiculo_outra_praca": 4,
-  "sigla_sem_ancora": 10
+  "sigla_sem_ancora": 9
  },
  "itens": [
   {
