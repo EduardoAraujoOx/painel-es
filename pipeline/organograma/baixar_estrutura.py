@@ -38,7 +38,11 @@ def pegar(caminho):
     if proc.returncode != 0:
         raise RuntimeError(f"{caminho}: {proc.stderr.strip()[:200]}")
     d = json.loads(proc.stdout)
-    if not d.get("ok"):
+    if "isSuccess" in d:                      # formato atual da plataforma (nov/2026): {"value", "message", "isSuccess", ...}
+        if not d["isSuccess"]:
+            raise RuntimeError(f"{caminho}: {d.get('message')}")
+        return d["value"]
+    if not d.get("ok"):                       # formato anterior: {"ok", "retorno", "mensagem"}
         raise RuntimeError(f"{caminho}: {d.get('mensagem')}")
     return d["retorno"]
 

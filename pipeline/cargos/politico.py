@@ -128,6 +128,10 @@ def situacao_candidatos(ano):
                 resultado = "segundo-turno"
             else:
                 resultado = "sem-resultado"
+            # Com 2º turno o arquivo traz uma linha por turno para o mesmo SQ_CANDIDATO (a do 1º turno diz "2º TURNO", a do 2º diz
+            # "ELEITO" ou "NÃO ELEITO"), em ordem não garantida: o resultado definitivo nunca é substituído por "segundo-turno".
+            if resultado == "segundo-turno" and saida.get(sq, {}).get("resultado") in ("eleito", "nao"):
+                continue
             saida[sq] = {"resultado": resultado}
     return saida
 

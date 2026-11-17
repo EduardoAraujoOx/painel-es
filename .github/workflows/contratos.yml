@@ -120,14 +120,14 @@ jobs:
         if: steps.modo.outputs.completo == 'sim'
         env:
           PUBLICACAO: ${{ vars.RECEITA_PUBLICACAO }}
-        run: python3 -I pipeline/contratos/receita.py "${PUBLICACAO:-2026-09-14}"
+        run: python3 -I pipeline/contratos/receita.py "${PUBLICACAO:-2026-10-13}"
 
       - name: Bases externas (PGFN, CEIS/CNEP, TSE)
         if: steps.modo.outputs.completo == 'sim'
         continue-on-error: true
         run: |
           python3 -I pipeline/contratos/externos.py pgfn sancoes &
-          for a in 2018 2020 2022 2024; do python3 -I pipeline/contratos/externos.py "tse$a" & done
+          for a in 2018 2020 2022 2024 2026; do (python3 -I pipeline/contratos/externos.py "tse$a" && python3 -I pipeline/contratos/externos.py "cand$a") & done
           wait
 
       - name: Execução da despesa (SIGEFES) aos CNPJs do SIGA

@@ -3,7 +3,7 @@
 
   pgfn.json     dívida ativa com a União (PGFN: previdenciária, FGTS e não previdenciária), por raiz de CNPJ;
   sancoes.json  sanções do CEIS (inidôneas e suspensas) e do CNEP (Lei Anticorrupção), por CNPJ e por sócio;
-  tse.json      doações eleitorais de sócios (candidatos e órgãos partidários, 2018 a 2024), sócios que foram
+  tse.json      doações eleitorais de sócios (candidatos e órgãos partidários, 2018 a 2026), sócios que foram
                 candidatos e fornecedores pagos por campanhas.
 
 Ligação com os sócios: a Receita mascara o CPF (***123456**: dígitos 4 a 9) e o TSE e a CGU trazem o CPF
@@ -11,7 +11,7 @@ inteiro. Um sócio só é dado como o mesmo doador, candidato ou sancionado quan
 conferem. É um critério forte, mas não infalível: a conferência final é humana.
 
 Os arquivos grandes são baixados para uma pasta temporária (que é apagada) e lidos em fluxo.
-Uso: python3 -I pipeline/contratos/externos.py [pgfn] [sancoes] [tse2018 tse2020 tse2022 tse2024]   (sem argumentos: tudo; rode os anos do TSE em processos separados para ir mais rápido)
+Uso: python3 -I pipeline/contratos/externos.py [pgfn] [sancoes] [tse2018 tse2020 tse2022 tse2024 tse2026] [cand2018 … cand2026]   (sem argumentos: tudo; rode os anos do TSE em processos separados para ir mais rápido)
 """
 import csv
 import datetime
@@ -35,7 +35,7 @@ PGFN = "https://dadosabertos.pgfn.gov.br"
 TSE = "https://cdn.tse.jus.br/estatistica/sead/odsele/prestacao_contas"
 TSE_CAND = "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand"
 CGU = "https://portaldatransparencia.gov.br/download-de-dados"
-ANOS_TSE = (2018, 2020, 2022, 2024)
+ANOS_TSE = (2018, 2020, 2022, 2024, 2026)
 csv.field_size_limit(1 << 24)
 
 
@@ -311,13 +311,17 @@ def candidatos(receita, chaves, anos=ANOS_TSE):
                     nome, cargo, uf = c[ix["NM_CANDIDATO"]], c[ix["DS_CARGO"]], c[ix["SG_UF"]]
                     resultado = c[ix["DS_SIT_TOT_TURNO"]]
                     if (R.norm_nome(nome), R.norm_nome(cargo), uf) in destinos:
-                        situacao["|".join((R.norm_nome(nome), R.norm_nome(cargo), uf))] = resultado
+                        chave_sit = "|".join((R.norm_nome(nome), R.norm_nome(cargo), uf))
+                        # com 2º turno o arquivo traz uma linha por turno, em ordem não garantida: o definitivo nunca é trocado por "2º TURNO"
+                        anterior = situacao.get(chave_sit)
+                        if not (anterior and "TURNO" in resultado.upper() and "TURNO" not in anterior.upper()):
+                            situacao[chave_sit] = resultado
                     k = chave_cpf(nome, c[ix["NR_CPF_CANDIDATO"]])
                     reg = {"nome": nome, "ano": ano, "cargo": cargo, "uf": uf, "partido": c[ix["SG_PARTIDO"]], "municipio": c[ix["NM_UE"]], "nasc": c[ix["DT_NASCIMENTO"]],
                            "faixa": faixa_de_idade(c[ix["DT_NASCIMENTO"]]), "ocupacao": c[ix["DS_OCUPACAO"]], "resultado": resultado}
                     if k and k in chaves:
                         socios.append(dict(reg, via="cpf", chave=list(k)))
-                    elif not k and uf == "ES" and R.norm_nome(nome) in por_nome:    # CPF ocultado pelo TSE (2024): só pelo nome, a conferir
+                    elif not k and uf == "ES" and R.norm_nome(nome) in por_nome:    # CPF ocultado pelo TSE (2024 e 2026): só pelo nome, a conferir
                         socios.append(dict(reg, via="nome", chave=[R.norm_nome(nome), None]))
         os.remove(destino)
         json.dump({"ano": ano, "socios": socios, "situacao": situacao}, open(os.path.join(EXT, f"cand_{ano}.json"), "w"), ensure_ascii=False, separators=(",", ":"))
