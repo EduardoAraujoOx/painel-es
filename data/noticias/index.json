@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-17",
- "gerado_em": "2026-11-17T01:17:15Z",
+ "gerado_em": "2026-11-17T02:56:35Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,15 +26,15 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 27,
-   "aceitos": 5,
-   "possiveis": 10
+   "aceitos": 8,
+   "possiveis": 9
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 1,
+   "lidos": 8,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -49,9 +49,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 2,
-   "possiveis": 0
+   "lidos": 13,
+   "aceitos": 3,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -65,8 +65,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 2,
+   "lidos": 7,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 34,
+   "lidos": 31,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 33,
+   "lidos": 32,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,16 +137,16 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 29,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 16,
-   "aceitos": 0,
+   "lidos": 17,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -162,7 +162,7 @@
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 56,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -211,14 +211,14 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 4,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 3,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -278,22 +278,67 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
   "caixa_alta": 2,
-  "sem_contexto": 275,
-  "oficial_sem_tema": 8,
+  "sem_contexto": 265,
+  "oficial_sem_tema": 6,
   "generico_sem_ancora": 1,
+  "possivel": 25,
   "outro_estado": 17,
   "excluir": 17,
-  "possivel": 22,
-  "sem_contexto_com_tema": 8,
+  "sem_contexto_com_tema": 9,
   "exterior_sem_ancora": 5,
-  "veiculo_excluido": 26,
+  "veiculo_excluido": 30,
   "veiculo_outra_praca": 5,
-  "sigla_sem_ancora": 5
+  "sigla_sem_ancora": 6
  },
  "itens": [
+  {
+   "id": "daba194a389b",
+   "titulo": "Flamengo tem contrato com bet suspenso e faz orçamento para 2027",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/esportes/flamengo-tem-contrato-com-bet-suspenso-e-faz-orcamento-para-1126",
+   "data": "2026-11-17T02:44:39Z",
+   "coletado_em": "2026-11-17T02:56:35Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "restricao",
+    "financas",
+    "contratos"
+   ]
+  },
+  {
+   "id": "9bddc22255f4",
+   "titulo": "Cultura capixaba teme retrocessos no governo Pazolini e mobiliza 118 entidades em defesa da Secult",
+   "veiculo": "Grafitti News",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOUnpNRXJTQXdVTEVEN0xYbmswMVRwZFBrajhpZEx5ZXg5YThLRGdsRGI4TTEyTDREM0diY2tiQmpLZ3pxem5ZbGFHMDJHR2V4S3lhNklPT3otOXlqQlBKZWpsV3VfNnhvZzJ6SEpoNmdHTC1KNUl0enp0amg1NkJhRjdiTmpSdC1qbWhMVmQ2VGdYMC1iLTdyaEo4d2ZWN09ZWmNienJLR3c1ZmpsNFd5cEJnV3ZOa1NQSVAwSEtodXpUajlmRUE?oc=5",
+   "data": "2026-11-17T01:04:00Z",
+   "coletado_em": "2026-11-17T02:56:35Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "58882e344cb8",
+   "titulo": "Com 352 novos assessores de promotor, MPES amplia quadro de comissionados no Espírito Santo",
+   "veiculo": "Portal 27",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUU1XY3FHelNZLWktNDdseFR1R2tGLVpCc0FRVWNqS0FobzFKMHk4X0NtYlctZ2hOci1VV3o3TGE5RjI2VFdNZ2pqUWJ6cXBOX0s3bW1UaDNDd01wZGw1X2EyMVdDYzh2Vy1VR2dSMWkyU2Z0UkI3OGh2WER3QTNIT2pXdExOa01DbFR4T3dPT2xKRUw2WWJwcmNyMUNVYUtId05zajVTQjRMVFpkWXJfVXdKOGp4emZDUURV?oc=5",
+   "data": "2026-11-17T00:23:46Z",
+   "coletado_em": "2026-11-17T02:56:35Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "pessoal",
+    "controle"
+   ]
+  },
   {
    "id": "c0132ba02f31",
    "titulo": "UBS do Aquidaban tem atendimentos suspensos na manhã desta terça-feira (17)",
@@ -427,6 +472,20 @@
    "triagem": 8,
    "temas": [
     "controle"
+   ]
+  },
+  {
+   "id": "c900d67bbe92",
+   "titulo": "Sefaz aponta queda na arrecadação em 2026, mas diz que estado manteve metas fiscais",
+   "veiculo": "T1 Notícias",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPWVRWMzF5cGNrdjE2ZjUxQmg5MXBGZ1lpRGpTZnlCU19IOGVIeFRhRVY0QTZOSy1fWldUbGh3Y2g5R0s4UmNtTkNFaGFOWklaNm54MWluQzZPaUd2QktNaFhPNHhaOTlUOFlOVUhkTUNyLV9vaU1HbVNHdkFQVmZUS1loYm4xdjlMNWhtOURqTkNWUWUzT3laN2RoWTFxWV9MUW5wRmZfcDlTUk5BV001c3lNVFFJVXRiSEotcUU0bDQ?oc=5",
+   "data": "2026-11-16T20:30:04Z",
+   "coletado_em": "2026-11-17T02:56:35Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
    ]
   },
   {
@@ -787,6 +846,18 @@
    ]
   },
   {
+   "id": "f7f804b3d43c",
+   "titulo": "Tarcísio diz ver com preocupação a intenção do governo de tributar LCA e CRA",
+   "veiculo": "Vitória News",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNZGZOTVIxeWlJd3A5ZWRZd0hxdExUSkNPQzUzS0lHWkJnTmF0WmpPUlJJSVhNeVI2VFh1ZVRZT2VwdGtVeTB2RWhDQTloSGdvbEdpWXV4TjlVVGxxajJUM3ZJTzlkaVNaZXVFTnBZcl9vWlc4a1pZYU1RTVhRRFI5OTB6WDAzMUdOSDNMLTN6dl9EWXNBdDRBS2hteF9NZEJ4R1F3YjFR?oc=5",
+   "data": "2026-11-16T14:23:00Z",
+   "coletado_em": "2026-11-17T02:56:35Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
    "id": "d9e17822299d",
    "titulo": "Faça Fácil Cariacica suspende parte dos serviços de 24 a 30",
    "veiculo": "Vitória News",
@@ -998,6 +1069,18 @@
    "temas": [
     "transicao"
    ]
+  },
+  {
+   "id": "57f1468da3f6",
+   "titulo": "Banestes e Banescor lançam concurso com 645 vagas para cadastro de reserva",
+   "veiculo": "Infonet",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZTk5MEttalV4NHhiZW1wSWlJR3dSb1M0X1JJUUk1NHk3RWg5dm1LQlhkbHVlbUVvcG90ZW1VN2twQndPZkREOE13VzBhQmVwa1J5eUhpTWZSeUpyc2t5c0tZT3g2WWJaUFdLcThYaVJEUWNxWHFIa0ZpTFVGdk51RGkyLTMwWEJQSjlPS2U5eXZXWFI0bk1ocEdpSEVrTlh2T2tJM01uV3RfcTBT?oc=5",
+   "data": "2026-11-16T10:00:20Z",
+   "coletado_em": "2026-11-17T02:56:35Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
   },
   {
    "id": "443ba8b8aa52",
