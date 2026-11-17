@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-17",
- "gerado_em": "2026-11-17T13:17:13Z",
+ "gerado_em": "2026-11-17T14:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,15 +25,15 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 27,
-   "aceitos": 8,
-   "possiveis": 10
+   "lidos": 28,
+   "aceitos": 7,
+   "possiveis": 11
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -42,14 +42,14 @@
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
    "lidos": 9,
-   "aceitos": 8,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 11,
+   "lidos": 10,
    "aceitos": 4,
    "possiveis": 1
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,15 +89,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 35,
-   "aceitos": 1,
-   "possiveis": 3
+   "lidos": 39,
+   "aceitos": 2,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 45,
+   "lidos": 43,
    "aceitos": 2,
    "possiveis": 4
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 16,
+   "lidos": 15,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -155,14 +155,14 @@
    "ok": true,
    "lidos": 31,
    "aceitos": 0,
-   "possiveis": 5
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 56,
-   "aceitos": 1,
+   "lidos": 55,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 4,
+   "lidos": 3,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -278,22 +278,102 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 8,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
   "caixa_alta": 3,
-  "sem_contexto": 280,
-  "oficial_sem_tema": 7,
-  "possivel": 24,
-  "outro_estado": 16,
+  "sem_contexto": 277,
+  "oficial_sem_tema": 8,
+  "possivel": 25,
+  "outro_estado": 18,
+  "excluir": 20,
   "generico_sem_ancora": 2,
-  "excluir": 19,
-  "sem_contexto_com_tema": 13,
+  "sem_contexto_com_tema": 11,
   "exterior_sem_ancora": 3,
-  "veiculo_excluido": 24,
+  "veiculo_excluido": 25,
   "veiculo_outra_praca": 3,
-  "sigla_sem_ancora": 7
+  "sigla_sem_ancora": 9
  },
  "itens": [
+  {
+   "id": "87e73a1376d9",
+   "titulo": "Detran notifica dezenas de motoristas que podem perder a CNH; veja nomes",
+   "veiculo": "ContilNet",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNQncxQmJ0bDdMN0w4cjVoa3RCcmI5RTM5Ym9DTWR0UG1rZEhzWkUycWIzUzk2M19IdmUzUXQ2OTBhZ19UZHlJYkJHcUJfRTR5SjBfMHliY1VmU2RvVE94VGxhYjNOVVdiNkRhZUhOd1N6WWxkazlKeFJqNm9QbGl2bWoxQ092dUdKa1FIZjFocmVSMkJtNUppdjA3M2NUZXBOS3FVUGJKUTlDTXhnX084UDR6TlVoRnc?oc=5",
+   "data": "2026-11-17T14:12:58Z",
+   "coletado_em": "2026-11-17T14:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "5c9701771497",
+   "titulo": "Avenida Theodorico de Assis Ferraço é interditada temporariamente para limpeza",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZTZneWFQZ3hhNGdlZWFGb1RaTEIyTGdpUmtrdVZEOFEydXFueDdpbnJPY3FKaF9KN0F5ZUI3bEdBcmZKazMzS0kzNlJpdUtSd3hxLWs4b2pjNWNCSVBIM3o5a0c1d0xlNXNNSkloTkVmbmZTQkhMUXBZTnNhWlNBMk9sZXMzYVJELTJuejVjdXV0eE5VaEJVZEZINWJqR0REalV3?oc=5",
+   "data": "2026-11-17T14:06:44Z",
+   "coletado_em": "2026-11-17T14:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "3ff8331b5a69",
+   "titulo": "Seu nome está na lista? Detran divulga listas de penalidades, processos e resultados de julgamentos",
+   "veiculo": "Primeira Página",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNN2hRcmR2bGFCdHBFWjNoenNWY2dvRkdrMXd3V2dVZXB0ZXAtTjJFbjdhelIwTzBJRTNFT1NtbFZULWNhb2l1V0R2SWtmYmViOV9aNlp6Q0VrQWhzV1JQYzlacVJVS04tU0FXMnZCbUhQT210b1lHS0V6YWh1bl9hNWtkU3VIVlZDWEF2VERxU1pUR0lEcFE?oc=5",
+   "data": "2026-11-17T14:00:26Z",
+   "coletado_em": "2026-11-17T14:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "51a5c04df23c",
+   "titulo": "Detran notifica motoristas no Acre e estabelece prazo para evitar suspensão da CNH",
+   "veiculo": "Juruá 24 horas",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNaVo3c0dhcWZIdzB2RFVvckxxSFRTX2c1OE81NkJBUzhTRWNMUDA4WkpCUmxEYWdvR25kdVpBaWtnU1VwNEI3OUxkdnJDa0g1SDNLeEVuNVMxaE9QNWhQMmZrMGlKUE9aZTVpU1B1YnV2dWFzQWZiaW1RcDAxTjdCZmFfZmhrenVxbUtGcmNXWnJ2UVNEa2lSMTFEMWdsSjRBVWREWGZ0d2lDQVN2Z2xLQS03c0I1UQ?oc=5",
+   "data": "2026-11-17T13:56:26Z",
+   "coletado_em": "2026-11-17T14:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "8beb1772eb83",
+   "titulo": "Vídeo: Carro da Prefeitura de Rio Bananal bate em carreta e deixa servidores feridos",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOLTJHVlkxOFBFNkdCaDlKbjBibEJGN282dGdjSzJxNmZRNS01WEhIYWZFTmZxUVB0Y0lMci1Cd0syVmVRcS0wamVCNEppelZZOC00ZkxUT0xUSS1ndXZjUWxLZ2NSZDRpNWN4SnZFaERjRkQ3RFRtbEZCaF9Kby1TcmdfZ3E1QktBRFpN?oc=5",
+   "data": "2026-11-17T13:26:10Z",
+   "coletado_em": "2026-11-17T14:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "d7f1923b2580",
+   "titulo": "Ales usa inteligência artificial para criar portal destinado a deputados e orienta novatos",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/portal-parlamentar-es-ia/",
+   "data": "2026-11-17T13:23:39Z",
+   "coletado_em": "2026-11-17T14:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "controle"
+   ]
+  },
   {
    "id": "475cc7943e4c",
    "titulo": "Concurso do Banestes oferece 645 vagas e salários de até R$ 6,3 mil",
