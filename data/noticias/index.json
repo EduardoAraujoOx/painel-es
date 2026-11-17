@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-17",
- "gerado_em": "2026-11-17T02:56:35Z",
+ "gerado_em": "2026-11-17T09:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,8 +26,8 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 27,
-   "aceitos": 8,
-   "possiveis": 9
+   "aceitos": 7,
+   "possiveis": 10
   },
   {
    "fonte": "Google Notícias",
@@ -51,7 +51,7 @@
    "ok": true,
    "lidos": 13,
    "aceitos": 3,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 33,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 32,
+   "lidos": 31,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 17,
+   "lidos": 13,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -153,16 +153,16 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 32,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 56,
-   "aceitos": 1,
+   "lidos": 55,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 8,
+   "lidos": 11,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 3
   },
   {
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 4,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -278,18 +278,18 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
   "caixa_alta": 2,
-  "sem_contexto": 265,
-  "oficial_sem_tema": 6,
-  "generico_sem_ancora": 1,
+  "sem_contexto": 274,
+  "oficial_sem_tema": 7,
+  "outro_estado": 14,
+  "generico_sem_ancora": 2,
   "possivel": 25,
-  "outro_estado": 17,
   "excluir": 17,
-  "sem_contexto_com_tema": 9,
-  "exterior_sem_ancora": 5,
-  "veiculo_excluido": 30,
+  "sem_contexto_com_tema": 11,
+  "exterior_sem_ancora": 3,
+  "veiculo_excluido": 27,
   "veiculo_outra_praca": 5,
   "sigla_sem_ancora": 6
  },
@@ -397,6 +397,20 @@
    "possivel": false,
    "triagem": 8,
    "temas": []
+  },
+  {
+   "id": "b4b014113c9d",
+   "titulo": "Transição de governo reúne secretários indicados e avança no diálogo com atual gestão sobre compartilhamento de informações",
+   "veiculo": "Gazeta do Cerrado",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNdmpWTjlmOUE3dEU3VzRyc01zMjgtRlkzNEs4enlocU5LYUlvcGxxZGtLQU5ld1VHOGQwV2ktZDdJLXh5a3h5Z2ZYOHpBX1Y5X0FCT2VnbDZPZndKeFlYT0pBUWZsbkRpeVJJOVhyc2lUdjllT01yQVlUR05rOFlxRWJUZlp0NHZBc1RNWVVQeWxpMVlXVTlMRkNtakpKd3RaTWxkRzNSall3MElkc1VNVnJzNjZvU0dwdC1XRUNKNzBTcW9fQlgzOUdlblhXVUlfWTdoMkZzUVAtUG9oMjJTZVpIUHJ5SnRSQ2JhWlExR0dEc18zclpn?oc=5",
+   "data": "2026-11-16T22:49:33Z",
+   "coletado_em": "2026-11-17T09:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "transicao"
+   ]
   },
   {
    "id": "db92f6b7edf7",

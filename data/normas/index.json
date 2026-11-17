@@ -1,16 +1,21 @@
 {
- "ref": "2026-11-16",
- "gerado_em": "2026-11-16T10:18:16Z",
+ "ref": "2026-11-17",
+ "gerado_em": "2026-11-17T09:17:53Z",
  "desde": "2026-10-04",
  "primeiro_levantamento": "2026-11-05",
  "baseline": false,
  "contagem": {
-  "decreto": 14,
+  "decreto": 16,
   "transicao": 1,
-  "fiscal": 14,
-  "lei": 7
+  "fiscal": 15,
+  "lei": 8
  },
- "novos": [],
+ "novos": [
+  "2063691",
+  "2063689",
+  "2063690",
+  "2063338"
+ ],
  "edicoes_lidas": [
   11522,
   11524,
@@ -71,7 +76,8 @@
   11628,
   11633,
   11635,
-  11636
+  11636,
+  11642
  ],
  "ignoradas": [
   "2040862",
@@ -92,6 +98,62 @@
   "2061154"
  ],
  "itens": [
+  {
+   "id": "2063691",
+   "edicao": 11642,
+   "data": "2026-11-17",
+   "tipo": "lei",
+   "temas": [
+    "orcamento"
+   ],
+   "titulo": "LEI Nº 12.983",
+   "orgao": "Governadoria do Estado",
+   "ementa": "Altera a redação dos §§ 2º e 3º do art. 22 da Lei nº 12.967, de 26 de outubro de 2026, que dispõe sobre as diretrizes para a elaboração e execução da Lei Orçamentária para o exercício de 2027 e dá outras providências.",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2063691/11642",
+   "visto_em": "2026-11-17T09:17:53Z"
+  },
+  {
+   "id": "2063690",
+   "edicao": 11642,
+   "data": "2026-11-17",
+   "tipo": "decreto",
+   "temas": [
+    "outro"
+   ],
+   "titulo": "DECRETO Nº 6529 - R - FÓRUM RIO DOCE DE PARTICIPAÇÃO SOCIAL",
+   "orgao": "Governadoria do Estado",
+   "ementa": "Institui o Fórum Rio Doce de Participação Social, no âmbito da Secretaria de Estado de Recuperação do Rio Doce, e dá outras providências.",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2063690/11642",
+   "visto_em": "2026-11-17T09:17:53Z"
+  },
+  {
+   "id": "2063689",
+   "edicao": 11642,
+   "data": "2026-11-17",
+   "tipo": "decreto",
+   "temas": [
+    "outro"
+   ],
+   "titulo": "DECRETO Nº 6528-R - Emergência - Zoossanitária",
+   "orgao": "Governadoria do Estado",
+   "ementa": "Prorroga o prazo de vigência do Estado de Emergência Zoossanitária no Estado do Espírito Santo.",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2063689/11642",
+   "visto_em": "2026-11-17T09:17:53Z"
+  },
+  {
+   "id": "2063338",
+   "edicao": 11642,
+   "data": "2026-11-17",
+   "tipo": "fiscal",
+   "temas": [
+    "encerramento"
+   ],
+   "titulo": "PORTARIA 446-S/2026 - ENCERRAMENTO EXERCICIO DE 2026 - HSJC",
+   "orgao": "Secretaria de Estado da Saúde - SESA -",
+   "ementa": null,
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2063338/11642",
+   "visto_em": "2026-11-17T09:17:53Z"
+  },
   {
    "id": "2062525",
    "edicao": 11636,

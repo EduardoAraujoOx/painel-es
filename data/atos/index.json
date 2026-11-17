@@ -1,17 +1,20 @@
 {
- "ref": "2026-11-16",
- "gerado_em": "2026-11-16T09:31:03Z",
+ "ref": "2026-11-17",
+ "gerado_em": "2026-11-17T09:17:33Z",
  "desde": "2026-10-04",
  "primeiro_levantamento": "2026-10-31",
  "baseline": false,
  "contagem": {
-  "paralisacao": 2,
+  "paralisacao": 4,
   "suspensao": 2,
   "rescisao": 18,
   "cancelamento": 5,
   "anulacao": 1
  },
- "novos": [],
+ "novos": [
+  "2062774",
+  "2063375"
+ ],
  "edicoes_lidas": [
   11522,
   11528,
@@ -46,9 +49,34 @@
   11628,
   11633,
   11635,
-  11636
+  11636,
+  11642
  ],
  "itens": [
+  {
+   "id": "2063375",
+   "edicao": 11642,
+   "data": "2026-11-17",
+   "tipo": "paralisacao",
+   "alvo": "contrato",
+   "titulo": "Extrato - Ordem de Paralisação - Contrato nº nº2024.000005.48101.01",
+   "orgao": "Secretaria de Estado de Direitos Humanos - SEDH",
+   "setor": "Termos",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2063375/11642",
+   "visto_em": "2026-11-17T09:17:33Z"
+  },
+  {
+   "id": "2062774",
+   "edicao": 11642,
+   "data": "2026-11-17",
+   "tipo": "paralisacao",
+   "alvo": "contrato",
+   "titulo": "Extrato 1ª Ordem de Paralisacao CT214-2025 (1)",
+   "orgao": "Secretaria de Estado da Educação - SEDU -",
+   "setor": "Contrato",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2062774/11642",
+   "visto_em": "2026-11-17T09:17:33Z"
+  },
   {
    "id": "2061275",
    "edicao": 11633,
