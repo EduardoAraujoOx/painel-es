@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-17",
- "gerado_em": "2026-11-17T11:17:26Z",
+ "gerado_em": "2026-11-17T12:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -27,7 +27,7 @@
    "ok": true,
    "lidos": 27,
    "aceitos": 8,
-   "possiveis": 9
+   "possiveis": 10
   },
   {
    "fonte": "Google Notícias",
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 11,
+   "lidos": 10,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -89,15 +89,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 34,
+   "lidos": 35,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 46,
+   "lidos": 47,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 1,
+   "lidos": 0,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 27,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -155,14 +155,14 @@
    "ok": true,
    "lidos": 32,
    "aceitos": 0,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 55,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 10,
+   "lidos": 11,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 3,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Folha Vitória",
@@ -278,22 +278,77 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
   "caixa_alta": 3,
-  "sem_contexto": 288,
+  "sem_contexto": 285,
   "oficial_sem_tema": 7,
-  "outro_estado": 13,
+  "possivel": 26,
+  "outro_estado": 15,
   "generico_sem_ancora": 2,
   "excluir": 18,
-  "possivel": 23,
-  "sem_contexto_com_tema": 12,
+  "sem_contexto_com_tema": 13,
   "exterior_sem_ancora": 3,
-  "veiculo_excluido": 26,
+  "veiculo_excluido": 23,
   "veiculo_outra_praca": 4,
-  "sigla_sem_ancora": 6
+  "sigla_sem_ancora": 7
  },
  "itens": [
+  {
+   "id": "1e6df91e5451",
+   "titulo": "COMBATE À VIOLÊNCIA NO ESPÍRITO SANTO: Deputados aprovam Lei que transforma ‘Estado Presente’ em política pública permanente",
+   "veiculo": "Blog do Elimar Cortes",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPTWVZc19xUENsLWxOaVdVbHQxWVd0TkR1ZDhQUkowam9ZbDV5VXlLMlBDN0dWcU1tN1dWdkw4Tk5nVkN5Yms2d3JfckZoREpmNXpyc1VwYUt1STAyM0Jndll5TWFwNlRERDZnRHpzWTdDU05ySUM2V1U3TER0UjhiM25hYTFEWEl6WWczbUo3Ul9wbEVnV3MySnZhTG1xVVRnNDRtX25RZlF0OS14MGVBb1N1cGJYY3g5Vm1Kdm9EOG5kMVpFYWZMVktWb0h3LXNWY0xzdlppNTJaNDVnQms0LVI4WEFsdC1nMDU2cnZSMk8tSW8?oc=5",
+   "data": "2026-11-17T12:12:39Z",
+   "coletado_em": "2026-11-17T12:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "f437e74b9441",
+   "titulo": "Muro da Escola Anacleto Ramos desaba e aulas são suspensas em Cachoeiro",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE44cnFXRWVBa0hnM0Q4S1IyblRENGYyTGNNZW9USy1IbmZUaW9ZWWRLZW5mSW91RURFVm05MXNjcGtuZmM4c1NVamk1QVpHaGVTQWl2MXZOSmpVZGhXNWFGUTRZQWFLVnZ4cVlOaF9VN0xpVk1PQ3d1N2FrM3I?oc=5",
+   "data": "2026-11-17T11:50:56Z",
+   "coletado_em": "2026-11-17T12:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "43e74016ba5f",
+   "titulo": "O que é o ajuste fiscal que o mercado cobra de Lula? Entenda por que ele desagrada muita gente e divide economistas",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/mundo/o-que-e-o-ajuste-fiscal-que-o-mercado-cobra-de-lula-entenda-por-que-ele-desagrada-muita-gente-e-divide-economistas-1126",
+   "data": "2026-11-17T11:41:53Z",
+   "coletado_em": "2026-11-17T12:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "535a99b3dab0",
+   "titulo": "Sefaz e PGE: Cadu anuncia nomes dos primeiros secretários do novo governo -",
+   "veiculo": "- Mossoró Online",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOUDhUSVhqak9uSDFUVzhnOUVKcG5fXzdqNGlZeUlKQWhfNDJiaGVudnhQZnQ5SUlicmJ3SS1rdWZPb05fRmN4Z2JwUGhzZEF2ajNwd0VPQU1fQWxXRVl1YWZMTVM1RnljdGhrQjhYZGtLNlFGTWRoejhFVGxnb3I2emc5ZWE4cDVSTlo1RzVsLXFlN05JZ0hlc0ZBMVg5bkoxT280dA?oc=5",
+   "data": "2026-11-17T11:16:19Z",
+   "coletado_em": "2026-11-17T12:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "transicao",
+    "financas"
+   ]
+  },
   {
    "id": "e97ea1d42353",
    "titulo": "Erick Musso é cotado para assumir a Casa Civil no governo de Lorenzo Pazolini",
@@ -307,6 +362,20 @@
    "temas": [
     "transicao",
     "governador"
+   ]
+  },
+  {
+   "id": "65f8f8950239",
+   "titulo": "Atendimento no Detran de Vicentina estará suspenso entre 18 e 27",
+   "veiculo": "Dourados News",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNZEc5c2ljZGM1VXhXT1kwTFYxbUpTODFTaGs2WjVrcTBrQmRfRE9MRThGVjgyNnlrTHpVZS1JblNuQ0NWMC1DeUxYVi1jaGxEWEdoTFl1UkcwWjhMYmxBUU9FWENNRjFHRkxSSmZLUFcycTZaMS01Y1g2LXh3cG5fYjd1dHBXWlk4UGh4Z0VxUnlUVFpFOGFyNURodU1YUFN6eDR6SHJHQWY2dFVXODV5b2VVU1VMUmx5TmlDQnFIa9IBuAFBVV95cUxQWkVydW9SaFpSMjBwc0FaVmFMTkFXRXJiQXNDaE1Ia2FmUmhVUUtSbDA5cGZnMGZGQ3RTOHc5RE5kdFQ5MExNUXhHNmpoVWc4VGtrRlBJMWpOTXJ4WlQyNTl1REFIdFNWd2RvYl8yeFNHUlZUS0VpSXVIWnF6MU02UktUWkQ3S0FEemx6Zjk1RGw2cVdVY0RxUmVkbmt4S01jNzltUFpTMGtyLVl2aVYtRWE2c3FkZDVE?oc=5",
+   "data": "2026-11-17T09:57:00Z",
+   "coletado_em": "2026-11-17T12:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "contratos"
    ]
   },
   {
