@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-17",
- "gerado_em": "2026-11-17T20:17:15Z",
+ "gerado_em": "2026-11-17T21:17:23Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 28,
-   "aceitos": 8,
+   "aceitos": 7,
    "possiveis": 9
   },
   {
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 4,
    "possiveis": 1
   },
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 46,
+   "lidos": 47,
    "aceitos": 1,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -137,9 +137,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 28,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -177,7 +177,7 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -210,8 +210,8 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
-   "possiveis": 3
+   "aceitos": 2,
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 4
   },
   {
@@ -278,20 +278,20 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
   "veiculo_excluido": 31,
-  "sem_contexto": 279,
+  "sem_contexto": 281,
   "caixa_alta": 3,
-  "possivel": 28,
   "oficial_sem_tema": 6,
-  "outro_estado": 15,
+  "possivel": 28,
+  "sem_contexto_com_tema": 20,
   "generico_sem_ancora": 2,
-  "excluir": 20,
-  "sem_contexto_com_tema": 15,
-  "exterior_sem_ancora": 5,
+  "outro_estado": 15,
+  "excluir": 21,
+  "exterior_sem_ancora": 6,
   "veiculo_outra_praca": 5,
-  "sigla_sem_ancora": 10
+  "sigla_sem_ancora": 11
  },
  "itens": [
   {
@@ -356,6 +356,20 @@
    "triagem": 8,
    "temas": [
     "governador"
+   ]
+  },
+  {
+   "id": "3b81033cf9ab",
+   "titulo": "Feirões oferecem descontos de até 99% para renegociar dívidas no fim do ano",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQcFViV2FBb2ViZXc2cWxZaHZNcmNUdG90S2xuVGlscS1ISDVkeEtadUpoaW9BVHBQRzEwbWxtYVhocVU1RkI0bmR6OFd0dFE0dkVCUEdJeGU5THEzTG1laE4tc3RxMjVUQmtHbVZuMjhTcDNPbVNJcllTSnBlM2VJWU9HTjMzM2ZjemM0b05xX1dxdkVvRnRUY0xhR1A0b2NZVGJKWjRwak5iX3ZpWEhxT3VjNVV3Z1daQ05iSk1aS3BfLWvSAcMBQVVfeXFMUHBVYldhQW9lYmV3NnFsWWh2TXJjVHRvdEtsblRpbHEtSEg1ZHhLWnVKaGlvQVRwUEcxMG1sbWFYaHFVNUZCNG5kejhXdHRRNHZFQlBHSXhlOUxxM0xtZWhOLXN0cTI1VEJrR21WbjI4U3AzT21TSXJZU0pwZTNlSVlPR04zMzNmY3pjNG9OcV9XcXZFb0Z0VGNMYUdQNG9jWVRiSlo0cGpOYl92aVhIcU91YzVVd2dXWkNOYkpNWktwXy1r?oc=5",
+   "data": "2026-11-17T19:40:41Z",
+   "coletado_em": "2026-11-17T21:17:23Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas"
    ]
   },
   {
@@ -868,6 +882,21 @@
    "triagem": 8,
    "temas": [
     "contratos"
+   ]
+  },
+  {
+   "id": "53cdb9798d56",
+   "titulo": "Dantas autoriza mais três servidores da Sefaz a viajar a Lisboa com despesas públicas",
+   "veiculo": "Francês News",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPcU5JRGlDVmZESDdRdHhjTFc0amU4VEZrR25KcDJJSWNGU25wajJKa3JMekJjcnZDZFRNOTZrN3JLczJwYlkwZmMyMzFxdTFNWUdNNzdxeWdaR0F1LTQxLTNuMG5NbGpabHNTeFkzUm83UDFyV1owenpUUTh2NFFBOGNHZjJoSWhPb3BoZ0ozbFNiQ2ktYXZFdGZTUEpFWWstRVBQYjFWTHNYRXAtOFRhQXRZd0Q4YlN6ZFktcmVzb1FoOHpMVmpEOHUyblRaOVk?oc=5",
+   "data": "2026-11-17T09:05:00Z",
+   "coletado_em": "2026-11-17T21:17:23Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "financas",
+    "pessoal"
    ]
   },
   {
