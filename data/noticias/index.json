@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-17",
- "gerado_em": "2026-11-17T09:17:15Z",
+ "gerado_em": "2026-11-17T10:17:25Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,8 +97,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 31,
-   "aceitos": 1,
+   "lidos": 40,
+   "aceitos": 2,
    "possiveis": 2
   },
   {
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -218,8 +218,8 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
-   "possiveis": 1
+   "aceitos": 0,
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -232,10 +232,11 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": true,
-   "lidos": 30,
-   "aceitos": 2,
-   "possiveis": 1
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 415: Unsupported Media Type"
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -267,7 +268,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Sim Notícias",
@@ -278,22 +279,36 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
   "caixa_alta": 2,
-  "sem_contexto": 274,
+  "sem_contexto": 259,
   "oficial_sem_tema": 7,
   "outro_estado": 14,
   "generico_sem_ancora": 2,
-  "possivel": 25,
-  "excluir": 17,
-  "sem_contexto_com_tema": 11,
+  "possivel": 23,
+  "excluir": 16,
+  "sem_contexto_com_tema": 12,
   "exterior_sem_ancora": 3,
-  "veiculo_excluido": 27,
+  "veiculo_excluido": 26,
   "veiculo_outra_praca": 5,
   "sigla_sem_ancora": 6
  },
  "itens": [
+  {
+   "id": "47a5395577a0",
+   "titulo": "Saiba quais cidades do ES ganham e quais perdem com a Reforma Tributária",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPeHNQekZVYVRoNXk2czBBT2M4ckVpQlF6Q0Vvb2NWR2pWQkc2N3dWeDd2UWtuZ2puS2dQTGhvWFV4WU5FR19yNk1nMlVRdWw0MF9CcTdMUnU5ZGd3SzNvU3EtTnNRYnliNkRrODJKc3JfZVUyZkhDb1JGUXRKQ3pqZjBKR2pBRGxqT3gtU2NfUmZfeUVhZ1pOblBWaTlSdTZ5dDFhWndva1NmakZWVVlNNE1FRUF1UG5a0gHAAUFVX3lxTE9QLXFWZFdQRnlqdFpwUXJRUHV6cnMwLUY4a2FYdHJ6MkNraVFTZkctQ3hYaEFtX0NubUd0eUJpaVU2b1JjT1J1ZUNoQllidEFxbDhYNXBxVnBXZDA5QktMWE1RSGptcHVTaHIwR0pfTTNJWlRMMFotN1lxWmlxTHRWcFVFdWRhc1hTTllzSG81VDhLdGJGTjNGWjR0QWEwNEVtWGNaX09WR3A0WUN1eXotMXV5NVlhblNrMkt4NUVsbw?oc=5",
+   "data": "2026-11-17T09:00:00Z",
+   "coletado_em": "2026-11-17T10:17:25Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "daba194a389b",
    "titulo": "Flamengo tem contrato com bet suspenso e faz orçamento para 2027",
