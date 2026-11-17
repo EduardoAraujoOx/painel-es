@@ -1,6 +1,6 @@
 {
- "ref": "2026-11-16",
- "gerado_em": "2026-11-16T23:17:16Z",
+ "ref": "2026-11-17",
+ "gerado_em": "2026-11-17T00:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -24,10 +24,11 @@
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
-   "ok": true,
-   "lidos": 26,
-   "aceitos": 6,
-   "possiveis": 9
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 429: Too Many Requests"
   },
   {
    "fonte": "Google Notícias",
@@ -48,11 +49,10 @@
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "lidos": 9,
+   "aceitos": 2,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -66,7 +66,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -82,7 +82,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -90,9 +90,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 31,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -100,7 +100,7 @@
    "ok": true,
    "lidos": 32,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -114,7 +114,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 9,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -146,7 +146,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 12,
+   "lidos": 13,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -154,17 +154,18 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 30,
    "aceitos": 0,
    "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
-   "ok": true,
-   "lidos": 55,
+   "ok": false,
+   "lidos": 0,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 0,
+   "erro": "HTTP Error 429: Too Many Requests"
   },
   {
    "fonte": "Google Notícias",
@@ -211,7 +212,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 4,
    "possiveis": 2
   },
   {
@@ -220,7 +221,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 3,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -279,22 +280,34 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
   "caixa_alta": 2,
-  "sem_contexto": 262,
-  "oficial_sem_tema": 8,
-  "generico_sem_ancora": 1,
-  "outro_estado": 18,
-  "excluir": 17,
-  "sem_contexto_com_tema": 6,
-  "possivel": 19,
-  "veiculo_excluido": 25,
+  "sem_contexto": 256,
+  "sem_contexto_com_tema": 8,
+  "excluir": 16,
+  "possivel": 20,
+  "exterior_sem_ancora": 4,
+  "outro_estado": 16,
+  "veiculo_excluido": 24,
   "veiculo_outra_praca": 5,
-  "sigla_sem_ancora": 5,
-  "exterior_sem_ancora": 3
+  "sigla_sem_ancora": 5
  },
  "itens": [
+  {
+   "id": "11de4e2b664b",
+   "titulo": "\"Pior que a dor é a humilhação\", diz servidor ferido em abordagem da Guarda no ES",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/policia/pior-que-a-dor-e-a-humilhacao-diz-servidor-ferido-em-abordagem-da-guarda-no-es-1126",
+   "data": "2026-11-17T00:08:59Z",
+   "coletado_em": "2026-11-17T00:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "0f9c46c71781",
    "titulo": "Magno Malta apresenta PEC para limitar salários de servidores públicos a R$ 20 mil",
@@ -302,7 +315,12 @@
    "url": "https://www.folhavitoria.com.br/politica/magno-malta-apresenta-pec-para-limitar-salarios-de-servidores-publicos-a-r-20-mil/",
    "data": "2026-11-16T23:12:54Z",
    "coletado_em": "2026-11-16T23:17:16Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Folha do ES",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQejN1eXFQMVJuYUc4OHJrdTc1WnNDalhMWGVKVUtfdDQ2RHhWaUh2WlpQcl90a1V3RDZhSFJGYUh6R01HU1VvT0xnZDJGUnNSeVBYZTN1MzR0d1BiakZpMGVHQ1h0ZlZLSHJqU2JHU3ZCX1lYVkh1dVFPaDktZDhxRGtQUC1GcEhELWlhVjJ6My1EbHgzRzVMbFBvQlhVY2JwTXRkVHRoVQ?oc=5"
+    }
+   ],
    "possivel": true,
    "triagem": 8,
    "temas": [
