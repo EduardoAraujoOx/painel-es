@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-17",
- "gerado_em": "2026-11-17T12:17:13Z",
+ "gerado_em": "2026-11-17T13:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 2,
+   "lidos": 10,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -34,23 +34,23 @@
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 8,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 7,
+   "lidos": 9,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 3,
+   "lidos": 11,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
@@ -73,15 +73,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 1,
+   "lidos": 4,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 47,
+   "lidos": 45,
    "aceitos": 2,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 0,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,15 +145,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 13,
-   "aceitos": 1,
+   "lidos": 16,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 32,
+   "lidos": 31,
    "aceitos": 0,
    "possiveis": 5
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 55,
+   "lidos": 56,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 3,
+   "lidos": 4,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -195,7 +195,7 @@
    "ok": true,
    "lidos": 11,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -234,15 +234,15 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
-   "possiveis": 1
+   "aceitos": 3,
+   "possiveis": 0
   },
   {
    "fonte": "G1 Espírito Santo",
    "consulta": "https://g1.globo.com/rss/g1/es/espirito-santo/",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -278,22 +278,117 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 8,
  "descartes_na_coleta": {
   "caixa_alta": 3,
-  "sem_contexto": 285,
+  "sem_contexto": 280,
   "oficial_sem_tema": 7,
-  "possivel": 26,
-  "outro_estado": 15,
+  "possivel": 24,
+  "outro_estado": 16,
   "generico_sem_ancora": 2,
-  "excluir": 18,
+  "excluir": 19,
   "sem_contexto_com_tema": 13,
   "exterior_sem_ancora": 3,
-  "veiculo_excluido": 23,
-  "veiculo_outra_praca": 4,
+  "veiculo_excluido": 24,
+  "veiculo_outra_praca": 3,
   "sigla_sem_ancora": 7
  },
  "itens": [
+  {
+   "id": "475cc7943e4c",
+   "titulo": "Concurso do Banestes oferece 645 vagas e salários de até R$ 6,3 mil",
+   "veiculo": "Portal Tempo Novo",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNck5Eek9TWHFtYTFTdlMxQkpmQ2VzNGs1VGZWRzJzc1Z0cy1QYzZSdDljTjk5LWpWd19GZ0hWcmVlVkNBSjlZd1NEM2d4YllWQ3NxSndXcG5oNUtIeXZSRUItbmpCbVRvLXhsOUhEWlF1NmlzaHJJdjN5ZzhaMjRBXzVTRnV5WlFyOUpmeVVKc3BLaVpDcDE3eHNvaUk3MnNiMVln?oc=5",
+   "data": "2026-11-17T13:13:00Z",
+   "coletado_em": "2026-11-17T13:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "355620eae2b1",
+   "titulo": "Pazolini anuncia 1ª equipe de transição no governo do ES",
+   "veiculo": "TV Sim Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQTFloR3M5SS1qU3NGVlNnX0YwWXdTbnpMZzliVkpUc3pDMHZCdEVHNzFTYnFQUVRtaUFvQjhRX1hCM3lfaU1YVWlmanFveVRZWmV3RGZObjZFZ0FxRFEySWN3c0FNUzc5UUhUVkpBS2lJU1NxMkVDZU1TbGg0YzZzb2tZR01RZEx1XzVaYzZiY2xlTWd4cThEUHdhRm5pczdnb3N2dXFhMEYyZzVxNVRVTHVrNFBjSTB3ZDI0Sy0wMUtOY28?oc=5",
+   "data": "2026-11-17T12:57:04Z",
+   "coletado_em": "2026-11-17T13:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "31d069a83969",
+   "titulo": "Nova Venécia recebe do Governo do Estado caminhão para reforçar atendimento ao meio rural",
+   "veiculo": "www.noroestenews.com",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeXRjYUxocGNOQjFkclNOcDNSMGktVlJQNTN1eHRjTTBkWXJSMjlGRnRqdklpbVdwM0F1dVFqU0tQQ2J0ZnVvS19zWXlRU3I3ZnExUld0OGtHNXhVSmpLN2E0RndSbWVsbUFPRWJZaFNxWWhrZ2tlWktPWDBPa0k2Nw?oc=5",
+   "data": "2026-11-17T12:47:00Z",
+   "coletado_em": "2026-11-17T13:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "5077bf0420d6",
+   "titulo": "Carreta dá 'L', atinge carro da prefeitura de Rio Bananal e deixa quatro servidores feridos na BR-101 no ES",
+   "veiculo": "G1 Espírito Santo",
+   "url": "https://g1.globo.com/es/espirito-santo/noticia/2026/11/17/carreta-da-l-atinge-carro-da-prefeitura-de-rio-bananal-e-deixa-quatro-servidores-feridos-na-br-101-no-es.ghtml",
+   "data": "2026-11-17T12:43:32Z",
+   "coletado_em": "2026-11-17T13:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "c55a2e4726e7",
+   "titulo": "Acidente entre carro de prefeitura e carreta deixa quatro servidores feridos na BR 101",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/agora/acidente-entre-carro-de-prefeitura-e-carreta-deixa-quatro-servidores-feridos-na-br-101-1126",
+   "data": "2026-11-17T12:37:37Z",
+   "coletado_em": "2026-11-17T13:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "a38a49b1c9d9",
+   "titulo": "Iema prepara operação para conter peixe-leão em Guarapari",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/meio-ambiente/2026/11/peixe-leao-guarapari-iema/",
+   "data": "2026-11-17T12:30:26Z",
+   "coletado_em": "2026-11-17T13:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "94f6ab7cc5a0",
+   "titulo": "Cesan notifica imóveis sem ligação à rede de esgoto em Vila Velha",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/espirito-santo/2026/11/cesan-esgoto-em-vila-velha/",
+   "data": "2026-11-17T12:21:40Z",
+   "coletado_em": "2026-11-17T13:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "1e6df91e5451",
    "titulo": "COMBATE À VIOLÊNCIA NO ESPÍRITO SANTO: Deputados aprovam Lei que transforma ‘Estado Presente’ em política pública permanente",
@@ -347,6 +442,20 @@
    "temas": [
     "transicao",
     "financas"
+   ]
+  },
+  {
+   "id": "04747a6addfd",
+   "titulo": "Governo do Estado entrega 34 caminhões para fortalecer a estrutura de 27 municípios capixabas",
+   "veiculo": "Blog do Elimar Cortes",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxObzdSbmtEaWFpa09RTlZhR2VhaGk1YmRWcEM2dk5MUnNMQzJBRHFzTFYxQVIzeEg3dWs0bGFHQlR0RDlGNHlTQ3BPU0NHZVZiaWRkY0pBQ1dGaFM4V1hyeEN0bjRsSFRTcFBCYXJqQ1lvZG5hUFJoNkppQm9ueGEyb0F6dDBOR1Z0UkFlVThDVGhGamtPTnNweV9EZ05GaXEwSzFSZWdPRXlua2NtUHpOUnV2aGt0YWJHb1RmdkhJMi1jRDdtM3RNX2Y0bnB1Zw?oc=5",
+   "data": "2026-11-17T11:07:40Z",
+   "coletado_em": "2026-11-17T13:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
    ]
   },
   {
@@ -413,7 +522,12 @@
    "url": "https://www.agazeta.com.br/esportes/flamengo-tem-contrato-com-bet-suspenso-e-faz-orcamento-para-1126",
    "data": "2026-11-17T02:44:39Z",
    "coletado_em": "2026-11-17T02:56:35Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Tribuna Online",
+     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNUldOcXNOaDY0aWVzRHRxUGFuVjU2NkdnaEtQM1RDdjMzWVphYk9IWUZhX28wWk9hZklWNjJEUDB3V2pXdzVJMGtBTmRLSzZPV1dadkN6SWp5MkZRUEVXNUM0REhLZFZSZDNwUGFuNmxJLUNoMjFVQm1DMW1mZHdkcUdXNnFhWmdQZTRpaGdhUWczZ21hT1ZDMFRJUmlVTGZrTnZDVUFoNzZvamFnLWRWaUZHTkFFbFNr0gHAAUFVX3lxTE1jV295cHdxTE9pOTIzWHRrR3BwSmZaU29zcE95NERmMkp3cWpXUGtBV21iUnZDbHB5eUp0cXRleWRQMjlaUlpVSGNxUDlKdkl2emtab1dENjhoYVJGWE9Ccm5pOEpKRmZFeDQxWlhRZTIwaWNVV1RHSklXYnltcTA2V0xqb29wNjNQdlpvQWpGWFVXVXZra2ozVmpJODB2MWVZWkZicXdtblJJaFFEWkEyWDd2Z01GSXdNUEtTNnc5RA?oc=5"
+    }
+   ],
    "possivel": true,
    "triagem": 8,
    "temas": [
@@ -710,9 +824,14 @@
    "veiculo": "Governo ES",
    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQNV8xSjNhWDNkN21XOGcwbm1acUVILVZRWThEdld6WG9kQnlKcmFlN0EyU08xS3ZwMVg5S2VMRlVPeTBVVERISVRuQVVCc0g4ZWRtUGs0aTFpV0hLOGdoMTlKQzYxLUJwb0FVdDR4R1pMWWxiQ0JSQ1ZnNnZZZk5MUnk2UUFNbkViQVN1MlNjQ0pWbEJDb2pMOEVRSmRCOGt0VHVTc2N5YjZSWEhZM0E?oc=5",
    "data": "2026-11-16T18:55:00Z",
-   "coletado_em": "2026-11-16T19:17:28Z",
-   "outras": [],
-   "possivel": true,
+   "coletado_em": "2026-11-17T13:17:13Z",
+   "outras": [
+    {
+     "veiculo": "portal jornal do norte",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMlpoVnFIdkhIQVlxR1JoMHAwWDNzMWtDRFJlQldoTTJ6WldfZXdFY1lzVEVPT0FtNDhlUVBlMkRVczFDMHZ2ZjhwdlFROEhEQlV0Z3NibHlrc1Z0NWtlUFFfZmYzUy13T3hoRUVyVkg5VEJRSjBYME5Ma1M5blFpemtIbTg3R2ZrWFZoS00ycmZPZml4RjBTbnhRZ2Y4Vko4am1hSklUdldBQ3YzQU9scHJtazlUOHNYeDNONmd6cFE?oc=5"
+    }
+   ],
+   "possivel": false,
    "triagem": 8,
    "temas": []
   },
@@ -1421,7 +1540,12 @@
    "url": "https://eshoje.com.br/politica/2026/11/articulacao-transicao-corpo-a-corpo-pazolini-concilia-agendas-no-interior-e-na-capital-no-fim-de-semana/",
    "data": "2026-11-15T13:54:16Z",
    "coletado_em": "2026-11-15T14:17:13Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Prensa Mercosur",
+     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQVmY4eHBrdDhza1BQNHFXQVRaeUptNHVOTkNFR0ZHMTQ2NHdqN29QTWlyWVMwdnRBMUpod0RhbEdoYkdNa0VWd0w0V0t0UGdDQ2o0NDNzZXV0OWNZUHg2c21sU3lkTFVhWnZ3SWNYS2NBX2xBU1ZiYWkzaW1WSGRZZXdjeGs4OUxlaEJWWmcwcXJ0TFQxUlAyNzBydklRbFI5OUswczZ5YTNCdnJxa21YQ09SY3QwN25aZW4zQ2wzd2VkV3hsQmJkclpOeVYwQ3E0ajhVWXVRTkQtQQ?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 8,
    "temas": [
