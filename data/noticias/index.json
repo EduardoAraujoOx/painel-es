@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-17",
- "gerado_em": "2026-11-17T15:17:17Z",
+ "gerado_em": "2026-11-17T16:17:17Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 4,
    "possiveis": 0
   },
@@ -26,14 +26,14 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 28,
-   "aceitos": 8,
+   "aceitos": 7,
    "possiveis": 10
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -41,7 +41,7 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 7,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,8 +97,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 45,
-   "aceitos": 2,
+   "lidos": 44,
+   "aceitos": 1,
    "possiveis": 4
   },
   {
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -139,13 +139,13 @@
    "ok": true,
    "lidos": 27,
    "aceitos": 0,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 16,
+   "lidos": 19,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -155,7 +155,7 @@
    "ok": true,
    "lidos": 31,
    "aceitos": 0,
-   "possiveis": 8
+   "possiveis": 9
   },
   {
    "fonte": "Google Notícias",
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 11,
+   "lidos": 10,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 4
   },
   {
@@ -218,7 +218,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -278,22 +278,48 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "caixa_alta": 4,
-  "sem_contexto": 279,
+  "caixa_alta": 3,
+  "sem_contexto": 284,
   "oficial_sem_tema": 7,
   "possivel": 25,
-  "outro_estado": 18,
+  "outro_estado": 17,
   "generico_sem_ancora": 2,
-  "excluir": 19,
-  "sem_contexto_com_tema": 11,
+  "excluir": 16,
+  "sem_contexto_com_tema": 12,
   "exterior_sem_ancora": 3,
-  "veiculo_excluido": 24,
-  "veiculo_outra_praca": 2,
+  "veiculo_excluido": 25,
+  "veiculo_outra_praca": 4,
   "sigla_sem_ancora": 10
  },
  "itens": [
+  {
+   "id": "f63577bccff5",
+   "titulo": "Dívida de R$ 350 mil leva terreno do Saldanha da Gama a leilão em Vitória",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/cotidiano/divida-de-r-350-mil-leva-terreno-do-saldanha-da-gama-a-leilao-em-vitoria/",
+   "data": "2026-11-17T16:00:37Z",
+   "coletado_em": "2026-11-17T16:17:17Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "71bf2943955f",
+   "titulo": "Detran de Quatis suspende temporariamente emissão de identidade",
+   "veiculo": "Diário do Vale",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNbG04aC02bTdmeU4xakhOczE1dzBPOWFkQTE4ZmJCQzRqWTJEYzhHNEhlSnZhN1lvSjYxTkJMTm5KSGRHd2N0MVZvRFg0V2d2TmszN0h5VnpEUmZURkxWalRMUXRrNU1KeUItaE56TTNQOFMxZGZWQ0VNQXhxb2dzQTVZbUJwd001eTlaRUJsS1IyQWsyUjJCNFFxYjNyMlRy?oc=5",
+   "data": "2026-11-17T15:27:43Z",
+   "coletado_em": "2026-11-17T16:17:17Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "680be7ac3d23",
    "titulo": "Após aprovação do Orçamento, presidente da Câmara de Vitória marca eleição da Mesa Diretora",
