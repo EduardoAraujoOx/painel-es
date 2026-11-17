@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-17",
- "gerado_em": "2026-11-17T19:17:15Z",
+ "gerado_em": "2026-11-17T20:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,8 +26,8 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 28,
-   "aceitos": 7,
-   "possiveis": 10
+   "aceitos": 8,
+   "possiveis": 9
   },
   {
    "fonte": "Google Notícias",
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 45,
+   "lidos": 46,
    "aceitos": 1,
    "possiveis": 4
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -137,25 +137,25 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
-   "aceitos": 0,
+   "lidos": 27,
+   "aceitos": 1,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 22,
+   "lidos": 23,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 28,
    "aceitos": 0,
-   "possiveis": 9
+   "possiveis": 8
   },
   {
    "fonte": "Google Notícias",
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 3,
-   "possiveis": 2
+   "possiveis": 4
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -274,26 +274,104 @@
    "consulta": "https://simnoticias.com.br/vinicius-baptista/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   }
  ],
  "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "veiculo_excluido": 30,
-  "caixa_alta": 4,
-  "sem_contexto": 278,
+  "veiculo_excluido": 31,
+  "sem_contexto": 279,
+  "caixa_alta": 3,
+  "possivel": 28,
   "oficial_sem_tema": 6,
-  "possivel": 27,
-  "outro_estado": 17,
+  "outro_estado": 15,
   "generico_sem_ancora": 2,
-  "sem_contexto_com_tema": 16,
-  "excluir": 19,
-  "exterior_sem_ancora": 6,
-  "veiculo_outra_praca": 4,
+  "excluir": 20,
+  "sem_contexto_com_tema": 15,
+  "exterior_sem_ancora": 5,
+  "veiculo_outra_praca": 5,
   "sigla_sem_ancora": 10
  },
  "itens": [
+  {
+   "id": "60fb35b0843c",
+   "titulo": "MPES cria 566 cargos, mas não explica por que precisa deles",
+   "veiculo": "Sim Notícias",
+   "url": "https://simnoticias.com.br/vinicius-baptista/mpes-cria-566-cargos-mas-nao-explica-por-que-precisa-deles/",
+   "data": "2026-11-17T20:13:26Z",
+   "coletado_em": "2026-11-17T20:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "6302ecb3929f",
+   "titulo": "Deputado cobra convocação de aprovados nos concursos da segurança estadual",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/deputado-cobra-convocacao-de-aprovados-nos-concursos-da-seguranca-estadual/",
+   "data": "2026-11-17T20:07:44Z",
+   "coletado_em": "2026-11-17T20:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "5e687ccdc508",
+   "titulo": "Assembleia reconhece entidade Mulher que Lidera como utilidade pública",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/assembleia-reconhece-entidade-mulher-que-lidera-como-utilidade-publica/",
+   "data": "2026-11-17T20:00:58Z",
+   "coletado_em": "2026-11-17T20:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "969699a42633",
+   "titulo": "Eventos do turismo náutico e religioso atraem visitantes a Salvador | SECOM - Secretaria de Comunicação Social",
+   "veiculo": "ba.gov.br",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZndDcjBuUmN5SkFtVGhWRmVFZ01mYWd5WEJVamF4eUR4SGRmREpUaFgxbjFGVzNkeUtjVlMtRi0zWFAzbTR6UFZFdklVaVkwWDJQQS1aTmRaREktaUVRRGtMX2RkQlNVZnR5X3l1dFVYVVpoek9VOGJsWW9sYWUxZ0lCWmxiSkFzSFRVQXo3OXYxLUwzUkxPMlJVeTlhVzhDcW1CbFN1ZkthX1VOd2pVVkNpZGZpRXhuUUhTdEVXT08?oc=5",
+   "data": "2026-11-17T19:50:15Z",
+   "coletado_em": "2026-11-17T20:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "d00713c158ff",
+   "titulo": "Decreto estabelece critérios para avaliação de Programas de Integridade de empresas contratadas pelo Governo do Estado",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPc19DVnk2Mm1paEVKdmljMTFvVEgwaUdmN3p5M3pXUFpLQVRGWWpyQjh4OFBJejRWN1g1OFRiNjExMGhyUlVldDlOZmtZandnRU1WYVJzajVsOEV0bjdFZTFhUmw5UnNzNTR3UUZpcEM1V3dkTlJSYl9NWE45ZGZHeTNpQ291R3dmUW8tM3RXTmp3RWdPUlZTbW5TQTRTRTlaWXN6MzNMbWI3SnNpLTduN2h2UWlvbFdObS1MQUFEZjNOUmtlaDJQdTV6bjRxOWEwb2htUHVfQQ?oc=5",
+   "data": "2026-11-17T19:48:00Z",
+   "coletado_em": "2026-11-17T20:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "264b013ade2f",
+   "titulo": "Sefaz-ES alerta produtores rurais sobre regularização de inscrições estaduais - PREFEITURA DE BARRA DE SÃO FRANCISCO - ES",
+   "veiculo": "PREFEITURA DE BARRA DE SÃO FRANCISCO - ES",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNc3J5Qk0zT01PdzMwRjFBaVNtV0ZVZVBEdkYyZV9WUGNWcVJScEJxZnNXdzB5bVNSQmkxYjNZTEZJY29WbGVveC1weUEzOEc1R3pISEZ6M1BvMXd2ZEQ2Ny1iZjFFRXItRl9WX2xySnR5REJkX3k5T3haVnlzRk5WZ2tWTWlZSndWSlB4TmotTVlvaHVCLWhMS2tjVTVpeXhScm5GSGlrcTdnY2FtWGhmaWJwak5UMGxaUGRFOEx2UQ?oc=5",
+   "data": "2026-11-17T19:39:00Z",
+   "coletado_em": "2026-11-17T20:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "5c708f008e09",
    "titulo": "Novos cargos do MPES exigem explicações claras e rápidas",
