@@ -196,10 +196,10 @@ class Auditoria(unittest.TestCase):
 
     def test_sigla_de_orgao_que_existe_em_varios_estados_exige_fonte_capixaba_ou_ancora(self):
         t = "TCE determina suspensão de licitação da Sedurb por divergências em edital"
-        self.assertEqual(self.classe(t, "Amazonas1"), "possivel")                    # fonte de fora, sem âncora do ES
+        self.assertEqual(self.classe(t, "Portal Nacional"), "possivel")                    # fonte de fora, sem âncora do ES
         self.assertEqual(self.classe(t, "Folha do ES"), "confirmada")                 # veículo capixaba
-        self.assertEqual(self.classe(t, "Amazonas1", regional=True), "confirmada")    # veio de busca restrita a site capixaba
-        self.assertEqual(self.classe("Sedurb do ES licita obra", "Amazonas1"), "confirmada")  # âncora no próprio título
+        self.assertEqual(self.classe(t, "Portal Nacional", regional=True), "confirmada")    # veio de busca restrita a site capixaba
+        self.assertEqual(self.classe("Sedurb do ES licita obra", "Portal Nacional"), "confirmada")  # âncora no próprio título
 
     def test_site_de_concurso_e_excluido(self):
         self.assertEqual(self.classe("Concurso Banestes: inscrições abertas para 936 vagas", "Estratégia Concursos"), "descartada")
@@ -898,6 +898,71 @@ class Assinantes(unittest.TestCase):
             raise RuntimeError("sem rede")
         enviar.carregar_assinantes = quebra
         self.assertEqual(sorted(m["To"] for m in base.rodar(Resumo.ENV)), ["B@exemplo.com", "a@exemplo.com"])
+
+
+class RevisaoDe17DeNovembro(unittest.TestCase):
+    """Revisão das 433 notícias de 10 a 17/11/2026: das 218 confirmadas, cerca de 45 não tinham relação com o objetivo (agenda cerimonial, orçamento da Câmara de
+    Vitória, Faça Fácil de Cariacica, drogômetro, peixe-leão, perfis, Transpetro) e as possíveis traziam muito assunto nacional (ajuste fiscal federal, INSS, iPhones do
+    Senado), consumo (feirões, Black Friday) e veículos de outros estados (Bahia, Acre, Tocantins, Rio Grande do Norte) que citam siglas comuns como Idaf e Sefaz."""
+
+    def setUp(self):
+        self.F = coletar.preparar(CFG)
+
+    def decide(self, titulo, veiculo, regional=True):
+        return coletar.decidir(CFG, titulo, veiculo, self.F, regional)
+
+    def test_o_que_nao_tem_relacao_sai(self):
+        for t, v in [("Ricardo Ferraço participa de agenda do Dia da Consciência Negra em São Mateus nesta sexta", "TC Online"),
+                     ("Pazolini participa da Corrida do Flamengo em manhã de esporte, alegria e confraternização em Vitória", "TC Online"),
+                     ("Câmara de Vitória aprova orçamento de R$ 4,14 bilhões; veja valores para Saúde, Educação e Segurança", "Folha Vitória"),
+                     ("Orçamento de Vitória não é votado pela quarta vez", "ES Hoje"),
+                     ("Faça Fácil Cariacica suspende serviços por 7 dias", "ES Hoje"),
+                     ("Drogômetro: Detran-ES apresenta equipamento e dá passo para iniciar uso em blitz", "Folha Vitória"),
+                     ("Peixe-leão é registrado em Guarapari e Iema prepara controle no litoral do ES", "Folha Vitória"),
+                     ("Avenida Theodorico de Assis Ferraço é interditada temporariamente para limpeza", "Folha do ES"),
+                     ("Biografia inédita resgata história de Henrique Coutinho, ex-governador do ES", "ES Hoje"),
+                     ("Carreta atinge carro da prefeitura de Rio Bananal e deixa quatro servidores feridos na BR-101 no ES", "G1 Espírito Santo"),
+                     ("Incaper completa 70 anos de história, inovação e desenvolvimento rural no Espírito Santo", "Governo ES"),
+                     ("Concurso da Transpetro com salário de até R$ 15 mil terá novos locais de prova no ES", "Folha Vitória"),
+                     ("Gêmea reprovada na etapa de cotas raciais no concurso da Polícia Civil do ES reverte resultado", "A Gazeta"),
+                     ("Açucena: mulher, negra, sapatona e do axé na Ales", "Sim Notícias"),
+                     ("Capixaba relata transtornos após suspensão de voos nos Estados Unidos", "A Gazeta"),
+                     ("Pazolini e Leandro Sperandio na linha de frente de Operação Contenção", "ES Hoje")]:
+            self.assertEqual(self.decide(t, v)[0], "descartada", t)
+
+    def test_assunto_nacional_ou_de_consumo_sai_mesmo_em_veiculo_capixaba(self):
+        for t, v in [("Entenda ponto a ponto o Plano Moretti, proposta de ajuste fiscal do governo Lula", "ES Hoje"),
+                     ("Senado aprova texto-base do PLP de ajuste fiscal por 45 a 31", "A Gazeta"),
+                     ("Senado prevê 95 iPhones e 330 outros celulares a parlamentares e servidores", "ES Hoje"),
+                     ("INSS terá novas regras na aposentadoria a partir de 1º de janeiro de 2027", "ES Hoje"),
+                     ("Receita vai perdoar dívidas de MEIs automaticamente; veja quem tem direito", "Folha Vitória"),
+                     ("Governo prorroga até 9 de dezembro desoneração da gasolina e do etanol", "Folha do ES"),
+                     ("Dino mantém prazo inicial da 5x2, mas flexibiliza regra de transição", "Folha Vitória"),
+                     ("Feirões oferecem descontos de até 99% para renegociar dívidas no fim do ano", "Tribuna Online"),
+                     ("Black Friday: 6 dicas de compras para proteger seu orçamento", "ES Hoje"),
+                     ("Flamengo tem contrato com bet suspenso e faz orçamento para 2027", "A Gazeta")]:
+            self.assertEqual(self.decide(t, v)[0], "descartada", t)
+
+    def test_veiculo_de_outro_estado_sai_mesmo_citando_sigla_comum(self):
+        for t, v in [("Estado repassa R$8 milhões em recursos do Detran e Idaf para a Saúde", "ContilNet"),
+                     ("Eventos do turismo náutico e religioso atraem visitantes a Salvador", "ba.gov.br"),
+                     ("Léo Barbosa apresenta emendas à LDO 2027 com propostas para saúde, infraestrutura, esporte e segurança pública", "Gazeta do Cerrado"),
+                     ("Sefaz e PGE: Cadu anuncia nomes dos primeiros secretários do novo governo", "- Mossoró Online -"),
+                     ("Detran suspende 1.062 CNHs por álcool e manobras perigosas", "Metrópoles")]:
+            self.assertEqual(self.decide(t, v, False)[0], "descartada", t)
+
+    def test_o_que_importa_continua(self):
+        for t, v in [("Pazolini anuncia exoneração de todos os comissionados do governo do ES em janeiro", "A Gazeta"),
+                     ("MPES criará mais de 500 cargos, incluindo 3 novos subprocuradores-gerais", "A Gazeta"),
+                     ("Governo do ES suspende licitação para contratar agência de publicidade", "Tribuna Norte Leste"),
+                     ("Orçamento de R$ 36 bilhões entra na reta decisiva na Ales", "ES Hoje"),
+                     ("Saiba quais cidades do ES ganham e quais perdem com a Reforma Tributária", "Tribuna Online"),
+                     ("Tarifas de água e esgoto da Cesan podem cair 5,52% em 2027", "ES Brasil"),
+                     ("Pazolini aponta saúde, segurança e obras paradas como prioridades no ES", "Sim Notícias"),
+                     ("Sefaz aponta queda na arrecadação em 2026, mas diz que estado manteve metas fiscais", "T1 Notícias"),
+                     ("Pazolini volta à Polícia Civil do ES antes da posse em 2027", "Folha Vitória"),
+                     ("Ex-secretário de Segurança de Vitória é o novo integrante da equipe de transição de Pazolini", "ES Hoje")]:
+            self.assertEqual(self.decide(t, v)[0], "confirmada", t)
 
 
 if __name__ == "__main__":
