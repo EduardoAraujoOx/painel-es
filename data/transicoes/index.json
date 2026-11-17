@@ -1,6 +1,6 @@
 {
- "gerado_em": "2026-11-16T21:19:06Z",
- "ref": "2026-11-16",
+ "gerado_em": "2026-11-17T11:18:26Z",
+ "ref": "2026-11-17",
  "desde": "2026-10-04",
  "estados": [
   {
@@ -8,35 +8,35 @@
    "nome": "Alagoas",
    "eleito": "JHC",
    "partido": "PSDB",
-   "total": 98
+   "total": 103
   },
   {
    "uf": "AP",
    "nome": "Amapá",
    "eleito": "Dr. Furlan",
    "partido": "PSD",
-   "total": 30
+   "total": 31
   },
   {
    "uf": "AM",
    "nome": "Amazonas",
    "eleito": "Omar Aziz",
    "partido": "PSD",
-   "total": 131
+   "total": 132
   },
   {
    "uf": "MA",
    "nome": "Maranhão",
    "eleito": "Eduardo Braide",
    "partido": "PSD",
-   "total": 57
+   "total": 58
   },
   {
    "uf": "MG",
    "nome": "Minas Gerais",
    "eleito": "Cleitinho Azevedo",
    "partido": "Republicanos",
-   "total": 191
+   "total": 196
   },
   {
    "uf": "PA",
@@ -50,49 +50,49 @@
    "nome": "Paraná",
    "eleito": "Sergio Moro",
    "partido": "PL",
-   "total": 150
+   "total": 153
   },
   {
    "uf": "RJ",
    "nome": "Rio de Janeiro",
    "eleito": "Douglas Ruas",
    "partido": "PL",
-   "total": 156
+   "total": 166
   },
   {
    "uf": "RN",
    "nome": "Rio Grande do Norte",
    "eleito": "Cadu Xavier",
    "partido": "PT",
-   "total": 80
+   "total": 85
   },
   {
    "uf": "RS",
    "nome": "Rio Grande do Sul",
    "eleito": "Luciano Zucco",
    "partido": "PL",
-   "total": 165
+   "total": 187
   },
   {
    "uf": "RO",
    "nome": "Rondônia",
    "eleito": "Marcos Rogério",
    "partido": "PL",
-   "total": 62
+   "total": 64
   },
   {
    "uf": "RR",
    "nome": "Roraima",
    "eleito": "Arthur Henrique",
    "partido": "PL",
-   "total": 25
+   "total": 26
   },
   {
    "uf": "TO",
    "nome": "Tocantins",
    "eleito": "Vicentinho Júnior",
    "partido": "PSDB",
-   "total": 119
+   "total": 122
   }
  ],
  "temas": {
@@ -106,11 +106,454 @@
   "fndr": "FNDR e reforma tributária"
  },
  "contagem": {
-  "total": 1303,
-  "medidas": 407,
-  "equipe": 896
+  "total": 1360,
+  "medidas": 428,
+  "equipe": 932
  },
  "itens": [
+  {
+   "id": "36f27b47f363",
+   "titulo": "Cadu Xavier anuncia primeiros nomes do secretariado do Governo do RN para 2027",
+   "veiculo": "Portal da Abelhinha",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVmN5LWRHU1NKMmlfTUdUX2s4MU1NTzJfNVZDWHpabktOa3Bxc25uSXprVVdMdnRsR0FmX2tTWllZWkdScDl1dnF6cG9kMFhHQWYxcHdXem1ZTE1Hbjg4Z3RRNEVtb3RYTnFzSEN3dTIycVBmb04zUmM0NWo3UnNKNExUZGNfckV2Q0RUVFpXUU9HdHlWU2FTYm9HWkFXdmJuMUtTbVp2b3F5QjRUN09mbTRn?oc=5",
+   "data": "2026-11-17T11:09:08Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "dc6cc2db046e",
+   "titulo": "Anúncio Cadu Xavier divulga primeiros secretários da nova gestão estadual; saiba quem são",
+   "veiculo": "NOVO Notícias",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbXBLenVFd253b19ScENyWFBWY0RLa0ZxOHpEV1FCWW44S0dVeE11a0sxbmJPdklXclNWSnBTZGRyYi1ESzJlMGd5ZnZFV3ktSXEzMDJJZ29rYnY4NHpnTndIQnlHV2JBQV9sV0k0cVAwWHhVcm1qT1lEb0hIQ08yQUtuTlZMR2pmTDgzSTNaTlFYeVpEamNDWTBGdy11ek1fbkg2YXdDTG1IaUtQdXc?oc=5",
+   "data": "2026-11-17T11:05:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "ae3d5b7524a5",
+   "titulo": "Zucco apresenta modelo de governo com redução de 11 secretarias",
+   "veiculo": "Eco Regional",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPalFoSlhrR2p3OVUzRFVWZ0s1ZE5iNS15TzZWcVZtY0NvSXNsSzZRbldEeFp0ckVXdE5xcm9OWnpleV9IWXFxdWJWNFBhUlRjVHNwREh3aERFTEJPaVBUcUZTREdRVU13WC02MzRaOThUQkdYWTNHY1d1UUlFZ1NjM2ZLLUhjeUdqXzVSNk5CR0IzTTNlRlczWXp5ZVY?oc=5",
+   "data": "2026-11-17T11:03:34Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "8755012a2d1e",
+   "titulo": "Cadu Xavier anuncia primeiros nomes do secretariado do Governo do RN",
+   "veiculo": "Blog do Barreto",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQT01DT0MyU2tKSmNwWl84SFJ6VHJ1NFB0Y01NckZ6eTNZSTZEOTZGbTZMeFNTWmRVb1Q5RWhVYk1POXBOU0liZy1wbC1SbUtKWDdLekxMMFlxUDFINXJRdWhGbzBvOUpCY0laUm9rNlp6X3dXOHl0ZEJfZFpLWDZqQ1c5WG1qdXJ6d29QTlRzaXhOYkJ6UHdXeXJ4bU95cjg?oc=5",
+   "data": "2026-11-17T11:02:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [
+    {
+     "veiculo": "Tribuna do Norte",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQOEVxSEszWWxIcGVrQXpZLWlnX3RSSGkzUmV6UnJDelRjdnNaMi0ta0dXTGZsLW9UUW4xM3lVQkh5QlRjQ3ptazVRcWY5T1RFOGtqSjdCMmsxdFZsRmlfRGptaS1EVV9WM05MX2ljWi00SnNrTFo5OHZYc1djS0xxVkxETlo2M1BxQ3YwNzV0SXZXc1VwbHlGMTl3MGozU0ROSmNKQkpvOUwxaWs0?oc=5"
+    }
+   ],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "a01ed353ff93",
+   "titulo": "Zucco reduzirá para 18 o número de secretarias no governo do RS; veja a nova estrutura",
+   "veiculo": "Litoral na Rede",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQSmNxaGFVS0d1MXRabWJuOFI3Zk5iR2t6OFBGckNHZGtSaGZKWDdSNVVlWFlqSmtMcFZtbXNIakw4dGcxTnRlRDJnem5jMk5QWm1UVWVUMFFIWWtXeGVXdHFhYjFKSE10TS1weXdWUmNFTWZPWnFNSFB5aXdKUk1VV0EyT3lSSmNKRmxNdVFhWTJjVzl3UkozbWJBSVdSZEVsTWt1OTUzdVc4Y3hFUzRHU1djbW5FQQ?oc=5",
+   "data": "2026-11-17T10:59:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "32cdfc352634",
+   "titulo": "Zucco prevê 17 secretarias e PGE em estrutura de 18 pastas no RS",
+   "veiculo": "Studio Notícias",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNVjFhb2h0TXJaTks2ajRkM3NiS3FtdFk2SGFrcTROdkhCZE1BZTBVQ3NpNjVtaDdhVDVITFZSZGl6cW9ScXFXeGVlLVV0dl96MDlLZmp6eVRRWlp4Uk9kcXBpZmhfYmJpUHVPYmh0Ni1tb2MzX0pxVlk0RVJ6QkJNMzQ4S0UxZ0FfRlRRVnV0azBMbUw5RDR4Q1cxdjl6akk?oc=5",
+   "data": "2026-11-17T10:46:01Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "2fbaa86f9c80",
+   "titulo": "Zucco define 18 secretarias no novo governo do Rio Grande do Sul",
+   "veiculo": "TV Sim Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNZ1lKTHZ3Y0NnVUx5c3c4NWpjV3hCSFdJaXN2SFhJTEVwdnMza2FTUzV1S0sxUkE3QlRvV1ZRNnE3NDRQc1ZfODQxaVp4a2tPUmc2RU9mT0laaVBEa0RPMnhkN09Ia3J5bjVmNGVEazdKN2NEQklxaG9WczlYMWlDQnducGRzNXdwVmxVUTBwRlMtcDJyUnMxRDRDWlZ6a2ZxRDlha3lPX1hkSzEzLUVwSl9wS2ROcC1MTmMtRDZvWW95M0J3bU9SeGpRTQ?oc=5",
+   "data": "2026-11-17T10:22:58Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "750457cf99e8",
+   "titulo": "Notícias | Notícias: zucco-vai-cortar-40-das-secretarias-no-rs",
+   "veiculo": "Jornal Bom Dia",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNVUdGX0N1a3ZQb2JOS2JndFA4Rm1SVzViekdZcXdMS2F3dmE4cUdUSVd6bWVyOVdMM2RfOHdPU0xWZ0hQY3BiSWwtLVV2YkZpYXhnMHQwb3kycjljNEYtb3R5aEQzNXZhZTl6OTNDTFBjemdrWDR4MXBsVzQ0akxLdXYwQlRXSU45TU1TYVZoQm0?oc=5",
+   "data": "2026-11-17T10:20:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "10b38f558676",
+   "titulo": "Zucco reduz secretarias em um terço; veja como fica a estrutura",
+   "veiculo": "Correio do Povo",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPNUdsMk9Lb0h2RVNDaHEzeXJhRVdmWE5WR2pqalhHNWcyRHgtdFVLMFNNeXhkNFVjN2lHTnYwUW8tMC1pQVRubUZJQWtQS1hpN0hjdzdFLThHNVM4dTJzSWNXbF9ONlpBUlNLeWZBUXhzR3VXV2g3cjdXWE9MVmZpa0FqTTAzLW4wX3o1dU9LV3hoVkwxOHFaY0poVnFwdXhLMUY4ajMzVV9zeWtqUzRnclR3dV9EaEJQR3pYY3BDMkdFdGdzdERqek0yZm04Zw?oc=5",
+   "data": "2026-11-17T10:00:53Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "74fbb998c841",
+   "titulo": "Cadu Xavier anuncia hoje dois nomes do secretariado; expectativa é de um homem e uma mulher",
+   "veiculo": "Blog do Robson Pires",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVXhVNXRKcjhaWUdlUWdxT3VSYzNYRU8xcHlDS3RpemRBRFlGa0ZUbWE0TmtlMDc5SUFWSko3SUdXcFBsaDZMQVFxamxSLTZiWHUySFJPOWhra3lSdUFBaU9aaXhTVllmallRRjY4NzI3akpPRDlpTFlnNnkzWF85aGtUVVMzZlJpRmYtalBhU0xzR1pqNDBERGZQb0JCcXZDTDB5aUpsVnVCS3ZnSndZQTIwTmM1ZnZIQ2s3Tk5R?oc=5",
+   "data": "2026-11-17T09:59:59Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "862c1c22341f",
+   "titulo": "Vídeo: Transição, queira ou não; o que governo quer mostrar a JHC",
+   "veiculo": "GazetaWeb",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZmVVell1bVFVeWRzMUE0ZjVYbkljcUFPSVFRUXMzUFp4MktuejRxYVllN0ljeURxOTFJdVJFN3RlYzRTMXJtSmZGUU8tTVRYR19Uamk1cTRZeF9MV2laWTByTmhlMXhXdFBqU01YSjlfaGh4RlU2WUNfRmd1WGdDUzBaYVdfZ25BVnU4SHpuaEdTd3daT3RCRzllSU1tYXJqclJYZTlKRlNyVzVHRGtsY3JRc3VOdzJi0gHAAUFVX3lxTFBGMmJPbGdtbVBHbVdLUy1qUTBjZ1hNUXRWZUxuZXhVSXRJS1lReVF2NUFvMWhZWWhPZFRaT1pIYTMwb3Zjdk1Ebi1jTTBvMVh5cC1VODdvU184NWh4eUVPbGI1OGI1dWJsdWZTVEJRRnpqNGREVFR0T2dMSDNiMnUxNWdYQVhzeDJidlUwRFFDaTlMbkNvM0l4SHdmeHllVFBBNkRwVU84enNsRGg0cjFJdm0zXzlDMU5nWWg1T3B6dA?oc=5",
+   "data": "2026-11-17T09:00:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "5fa0bfefe8aa",
+   "titulo": "Zucco define desenho do próximo governo do RS com corte de 10 secretarias",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQUWRkM3ZFaTJIRHk0eE56QVRmTHVfNDFlSWFUcnZnYUlYSWFqZFlDcnp5c1NYekw1c2hYUUFVbGt3ZjQ3Vm5aNTJfMkpsblV4ZzhHN3FkTDU5ZHk2VlJPSjIzZnEzTDFlbkVoSUFDTEE2UTk1UlZpb3JqZlVfWC1meVVDOE1nMkF4UTgwd0JqT0NtNDFuYy1ZcVhQUnlYMWgzbFJCcm00T2FZWUFhNHZFcldxVzBlUVhHRHFyS9IBywFBVV95cUxOMzJuQThRREFMZjZOX1RSbV9UOGItcHhCdkpTdVlrdTVCdjM0bENxbi1EaEEzSlJuYVBGYVB6d3IxdHl2Rlp2cjdzeFV1blpmcVk5V0dvbUtVZHk3X1d2TzNuYlhpaU52bERNWU1heEtYaEo1NGR5ckFldlhVV19UUW1Rd0hyMTZZYUdBZzdLTjA5UzFkWngzLXVYWjd1TEFDbWNFNnl4dU5vdU03dXd4QnV1aXBFWktyU3lTOWcwWDJQVzJIVlA4VEtuOA?oc=5",
+   "data": "2026-11-17T08:00:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "cdd16fcd5a12",
+   "titulo": "Governo do Estado enviará dados à equipe de JHC por e-mail",
+   "veiculo": "Gazeta de Alagoas",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNdW1qSlVrbVhjak9DOTNYWFNIUG5rZEkzRFFRRGE4Qk95amQxSDg1ZXF5TXllTi1jZXR4Yk40azJSaFJES21MSVllSUVLQmtiQVFwZ2dtYUZZQmxuVXZDR0xaUkRYaWJybHJweFJaSXVsbkF1WDNCckF5dUtaaWhuMGxsTlRmTGhHRmw2Njg5d0tkYVZqalNsaVhLMTZ5TURfc21fcFI4WHpKNkFpdXfSAbYBQVVfeXFMUERJNWxONWo0S1hwaWQ3NWN3UHhpYmEwWGt2UVktS01za3lFbXl4VjVBcWpBekp5T2RsUlZ6eTVfYnpWdEdUdkF0dVVYaml4Q2ltazk3aXVOX2s2VDRhVnZDYllNTmNwR19meFVNU1pJWHNhR1RkVXdMQWZUUWMyS1FGU1hyY080MjhrczRiblBkQVlqUWJBdng5MW5wSUw0dlQ1TmxOaWczWXdWOGM1N1dWaUpqWGc?oc=5",
+   "data": "2026-11-17T02:02:19Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "6ababaaa8224",
+   "titulo": "Zucco anuncia redução de 28 para 18 secretarias no governo do RS",
+   "veiculo": "Fato Novo",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcUpJZGVzdkdzSnhZM0RMTVFicTd1djhlRmIxdHVqUHgxQ084Y1k0VVl1U0E5OEdYQlp4ZkNpWmlmOGVldml3V203WG5DaS01Yk13ZWFxN19iNUtwYVl5QktwYXo4dl9jVm5KOS0tMFFUdVdwSVcwZVdNZ2lnU3gwdFBoODZ1SE1CNDY2UDV6VTg0eGhZVzRLTlNjMHN4czg?oc=5",
+   "data": "2026-11-17T01:53:11Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "a441f4838570",
+   "titulo": "Zucco anuncia redução de 40% no número de secretarias",
+   "veiculo": "Jornal SERRANOSSA",
+   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1IX1ByM3NOYXF0SGlJNmNYWVhqMnBZQmwzSFZobURXMnhoVzBKSUFkdWhObzlIWjg5c21Ya1BDZnFRcXd3eTM3OWd5QnMtazZqNWdMaUpFZUU3aTE5NUpmdVpGR2dzUQ?oc=5",
+   "data": "2026-11-17T00:30:44Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "98d0f9545806",
+   "titulo": "Governo Zucco: 18 secretarias e quatro perguntas",
+   "veiculo": "GZH",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOSmhlTDVBU0ZZd00xeFFjZDVJcnVfLUFLcnlFREE0YkJRZEtHOHhkeXVsQklYT3BUbUl0ancxbXFiY3g1cUh2eGNnZVNxQ1BHWHNXVVBOSmVvempsZEVJRlBSUktkblEtTV9LOWZOcnhLSlZUM2NVamN5UDN0VFNqUFpxOEVkdGFfZmtzZG5RZ0F4TEJWRGIySW9TV2dtZnJCZ0RzMkRQTmNyRE5uUmZpc1BaaEpneERFNEJsRV9rRzRlSlZ2cEN2d0FNb1VMVkJLbmlNeTBJRk9ZVzVSbGxwTUwtQklEYnc?oc=5",
+   "data": "2026-11-16T23:54:18Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "a575822751ed",
+   "titulo": "Zucco anuncia redução de quase 40% no número de secretarias do RS e promete estrutura com 18 pastas",
+   "veiculo": "Portal Dia Dia News",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPRW5QNDJSVTBhODVkaWhIc0F2R0tGdkF1bVcyRFJEUEE3ZndwaGdyQXRDdzdoTl8ydXBoZWZjSXhkTW5KekRjamY0aFlYNTVPVUNPd2M4emJOdHhkQ2FacGdWc2VqLTFXdUpUVWhoN2w1QS1fN19VdmpDakpYdnBKUkRENlFNUURLRXI5a2d5MFdDYWR5MU5CdnVqR1RPYTlCeHA2VmdxdnNyaURxYm1jdTR3ODBaUS1YaHFNQV8yYVJydlBUbzVnZzg5b0k3cW1VVDZrZHRqZUhOdWFwQmJKZk51MFNLZ2g1bDU4cFFUWjZ3dw?oc=5",
+   "data": "2026-11-16T23:54:14Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "ce644c380788",
+   "titulo": "Cleitinho busca acordo com Lula sobre dívida de MG de R$ 188 bi",
+   "veiculo": "TV Sim Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRkVGaS15d0JIcS1HWHVtYjJidUNKemtZUTBBZncwWHgtbGxMaldTMFBvVGlXZ09xRWk3UTZCVFVVREdVT3dZVFdqT1hoZG5jUlJ5Vl9EaDRRNlgtU3JscUU1dXhDeElQSDY4R0ozTnlqQzlqUzdXRWl3SWw3REJ4dndFM0pCYU55SVMyckNXTVNPV2pFcElPa19LRG5EN2xfdDJEYV9KTUxNUHBvdk1yMGJUMzRLMEZn?oc=5",
+   "data": "2026-11-16T23:52:48Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "1e8de17a8f65",
+   "titulo": "Zucco é alvo de críticas após fusão de secretarias: ‘Ninguém faz isso, a não ser quem odeia meio ambiente’",
+   "veiculo": "Sul 21",
+   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOZTQyOFI1LXIyUTBELUdvN1FiRGJqWVZLM0pzUzBIUk1jcVBuMjNzZnNMaHpqVGRTeU5uNHk5ZUVVYy1jSVhad1RGZWtOWGVaOWJpc1NBVnEyTXd5UkNpNFJoMGluel9MWmVJSUYwQW5NNU12NF9wRFFVY2JjR1JQTGZrZU1ObnozRllTclpraEtXNm5iMWxYNFI0STgyRXlqeWZEaldwVmFjQU5HRTF0a0JYZ2dtSkFLU3d0YnFhb2dROGVPYmJicFJ6S3VYXzBuRElvUEtjeTh3SHpqdkxwRjlQRFZqQjNuMXln?oc=5",
+   "data": "2026-11-16T23:42:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "eab3c9d64df7",
+   "titulo": "Governo do Tocantins e equipe de Vicentinho Júnior iniciam reuniões de transição",
+   "veiculo": "Surgiu",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQ19VVzZvRkZzR3F2VUhFcXM4VTBRZEt6OC1VVFN0aFotNzRaNkVlZUU3bGpwOVpCRnBRWkVEU3RBZ1dlWTh6dGtUT2xNMkgwM3lTX3IxV3hPZzBtSTBOU1JPZXp0cVRwWXRPbVdaeVZ6NUdMMS1hLTRkTE5FaHpqckFzSjV4Rk5Xd0lxcDJpeDFTRFduUzRiT2ljUnpMbHhxNFhCVTJGZUk1QUpCVjVjbmdkRS0?oc=5",
+   "data": "2026-11-16T23:23:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "213b498508f6",
+   "titulo": "Com votação nesta terça-feira, ajuste fiscal conta com quatro emendas de Sergio Moro",
+   "veiculo": "Ric.com.br",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOeGxFc1d3a25McjlqVlc2MFluZHAwLUI2TFowd3dMYWRKZTRGVm8wY3pCNTcyMlhyMEpSeWo0bks5QkoyQ3dHWnY0aGdxQ0FZUHdSc2lraTB1Znh0VjdCdTIyaTl1dFNXWUpOc2NIN0w4X2RETEtTX3N5LVJUd3BQLVZxeXBxR29hb1JIUGlMUXpfaVo0c3JzTl9PMnBsekdwdXFOZWc1NGZMQ2toa0hKUGZ3?oc=5",
+   "data": "2026-11-16T23:14:27Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [
+    "gastos"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "fee2174025ea",
+   "titulo": "Femurn cobra Cadu, transição prepara diagnóstico das contas e Carnatal amplia ações sociais no RN",
+   "veiculo": "Portal 98 FM Natal",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOeWxQc1hodzkta05aOWVrRVhDU2I1a2x3WmQtc29uTlp0b2V6dHB0ZWJzajRtTFdXWEk0R3pHSmdqSmNaWTU2NmtkZFJ5YmszMTMwa0xvdVVCZDZwS3dnVnY2dy1nd1BXNWd1WUR2bXlHa2VzYThDOHNnTkZTTGtheVZJeVpuTzJsN2htbm1DbFBQYzJrTE51WjBXaGtWUDdMVW1mbzd3RQ?oc=5",
+   "data": "2026-11-16T22:55:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "137f7234c6c9",
+   "titulo": "Transição de governo no Amazonas terá plataforma para centralizar dados administrativos e financeiros",
+   "veiculo": "Amazônia Sem Fronteira",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOZG9WVGhTVDlxTHlDblFST2VFWnlPcHczUXZ6SHVPTFFmU2Vvcnc3bzBKa1VIZ2Vwd3N5UVlWRnZaNVowWEZHRWYyV0VVZW03Vi1CTjNYcHdWT3FRZVlyQ3BFRm5MOXlBcktqTEplV3MxSE5LN1FGcW0zRkZMOURKM1pjcVQ0V0t2aHZXTHA2dklpNk1LRzJCSXg4M3FZUXBldVZyQXAtYmJBV2FsaXpQZ0dpdEhYdy01X3pMQUcyb0xTSTlhcVZFcTRudXFzYmdUZlhleA?oc=5",
+   "data": "2026-11-16T22:52:17Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "2e25d80aed4b",
+   "titulo": "Douglas Ruas anuncia Anderfábio Oliveira dos Santos como novo secretário de Educação do Rio de Janeiro",
+   "veiculo": "Times Brasil | CNBC",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNSDVURHliSmlIZDA3TkZ1MTB4aEhUUzJneXVFVGFPT2paMGpxX01sb05OcDUycG5DZ1RJTUFWNjFYTGhsNmFLUkFtYkQ1SEdKWkZqWmo2YXlnRmF5X3F2SVUxQzFGWDlGaTU0YVItTm1NOGNxQ3VzNGltTWkzYm43MDkxdmhtc25lalFrRGVLbzBlU1U1WUZGZ2lGOXJHUG5EYnpDUVJSZUh4T1Vra21uczFzOHB0ZG5McUpyTlVmOS1sY3lqR1BwcVJnN0F3cG4zZUk4?oc=5",
+   "data": "2026-11-16T22:47:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "198626daa1fc",
+   "titulo": "Governo Wanderlei e equipe de Vicentinho Júnior acertam repasse de documentos da transição",
+   "veiculo": "Folha do Bico",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOY2xpRUJkYWJINXkxNHdrejA3enZvLUtqcC1BR3lwbExhTF91dnUwNFo5RGU1RUh6eGxrZE42RXZieS1jSnViTTVpRDJraGJ6eXhKRU56LWtPajNGRFYtMUtoNXdiakQwZEdnejgzUVNCZnAwbENjSTZxa3BQdlhFM1pMZUd0WGpkcGRoYUJlazA4QzgzX3ZPVWhqLW53UG15WVgtY1duMHYxaHpfSmUtM2RhN21Kb3lvb0E?oc=5",
+   "data": "2026-11-16T22:22:31Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "7c6584518703",
+   "titulo": "Douglas Ruas anuncia secretário que promete gestão mais próxima das escolas",
+   "veiculo": "A Tribuna RJ",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxON3U0SF9Pb2RFMVY4OTgwYk5wQ0RfSGEweVlQdkgtY2xPWG5aV25zT2pyN3lWX2VFcjd5MWhRbDF2YzRCbnY4TWtaVTNTZHhucjdELWhzVTU4dXVfeE9rV0tmSEVGNDAzd3d2ZmRyNnNqMlFxaUMzN012VGlvYW5GazJaUnI3bGhvVkd3RUFwZWRuakU5MUNfdThGaThteks5anhOMWs5SEFrT1ZEdWhCUFZHRQ?oc=5",
+   "data": "2026-11-16T22:12:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "2aa587e1c5d7",
+   "titulo": "Zucco cumpre promessa de campanha e vai cortar 40% das secretarias no RS",
+   "veiculo": "Jornal da Cidade Online",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQSG5UbFFXOXFfYkVLYTctOENaLVlZWlVUd1dkeEQ4eWxvREdBcmRvUHgyOVdDLXVrZWJYQlYtMHYyaGMtdThJbi1IWW5TSzU1Z3pPdFpRRUVCYlNpUUJjR05oaF9sVHpXS1Z3S2ZvWmxFNUlXaV9MaEdtME1PcW10YVI4LW9ZRFhTcHMzUkQyMWdDTWhFRllPWjFrSjdlQ3I3Smh2N05rcTQybmV6cXFFZkJLUUpINjNLa1doZHFwc0xxZmlz0gHKAUFVX3lxTFB0MW1vZjJKTmJycUtkQmhBSDh4ZmZvd0k1ZEk5cjZnbE05UnpXdTVGQ3FZTUxrNUI3UFRsNVl4bWEwUXJBOGJ1Z3FEOWpZeUZLY3NIMlhDbnFQSkRHY3M0dFF1T0thWUE3aFBzT2Frby15bnBQcXByb2FIZ0lpRE1sM0U5T1phVTQ2WG1fQjZadlJJTGFxMGk1STNCdnBCUm5lVXBxWlRuNjE4UzlZUEVBNU9aYmdlV0UzdENocVVMMElzUGVFdXRxeWc?oc=5",
+   "data": "2026-11-16T22:07:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "69a664a27092",
+   "titulo": "Governo do Rio terá 30% menos secretarias, promete Douglas Ruas sem detalhar mudanças",
+   "veiculo": "Diário do Rio",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOUHNyb1liRC1TZmJwbmhrYlBCQVFGRlZXbUNhNXlVZWo0TE0wVFc0WkhNYy15V0VLSXdFR1NiQUdhbjZfZm42RVNVc0FWUDNMcXJWX21NUzBxMFFscVEtWHBKU1JZRHNjejh4a0hUVzkxVDdMd0JOam02Z0tkcVlVQXZod3I0dTF3MlVmSUd1dWpKc3lETnZzSGhRMUlBOWJqZVdkVVk5SXNVaVNVc2h2R2Z6eGdScnlqdUMyRXV4T2VTelJNSzcwTEhzQUg?oc=5",
+   "data": "2026-11-16T21:31:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "0809b3ab7f0f",
+   "titulo": "Zucco reduz secretarias em 40%, mas não informa economia prevista",
+   "veiculo": "abc+",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxORUdubWE2WnU0dzRXQ21vSlJ4NnN4TTE1VGZEZmlQMUNhOGJVdU5PVkFEdU1scmh3M01WNDhiRG42ZFZlTy1GOUVGN1ZoYmtDUlQyVmlWdkxmRU53WnhDWVhMZ2t6NEd1TG5keF9ocnhpcVFMT2JGcHNHZnlUaFFQMnVRU3dqQ0hZTHFKNnlNa0NxbDVSRnM0SXM2blBxdw?oc=5",
+   "data": "2026-11-16T21:24:23Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "af8163246b0a",
+   "titulo": "Douglas Ruas anuncia para a Educação do RJ secretário pró-privatização",
+   "veiculo": "CartaCapital",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPaGF5YkNjMHAzdERxUERzVlJzOW9OZVk3Z2NoTUdMMkZrcHpVRjNsX280TkZ0SkFkcjdsRHBZQTZjVFVWYzNXc0Nya01FaUJvR1pBeFVIaFZTX3VJaXNneEpybGk4WEUwYTd1THBPN1VvWXY3YTVxT05UczlRTEVfbkRLYTFmQlpHYkhSMkxGbzVPTjhqYnNJMWp0WTFQRFRVQ3BuNlN5a25jeFlQU1p6UlhB?oc=5",
+   "data": "2026-11-16T21:23:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
+  },
   {
    "id": "8bab9347e1fc",
    "titulo": "Melo só anunciará sucessores de secretários quando Zucco fizer anúncio oficial",
@@ -121,6 +564,20 @@
    "outras": [],
    "ufs": [
     "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "b6e51ab5664d",
+   "titulo": "Sem representantes de JHC, Governo de AL mantém estrutura pronta para a transição",
+   "veiculo": "7Segundos",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNelkzTUlHRF9CYWZHbkU2eGhwY0FHX3BlUlRuU1hYZ2FoME41V3p2SzlnMEtTQnZmTVU1ZkdvcFgtSmUzREtsZC1NSHpWVWNpTGY3VjBuYjJab3R2RUtZa2wyUEYwWnpWRzZ1MFVoS1Q4a1JRODBwaTdpUFdhVWZIajNQc0xRdjVLaWVGUWc1UUVReVJ4R2lkUG52ZVI3M25lVS1xRUdiU1NvazNjNkNEVTdsVEljbTdvU2hrdlBQcVo1UDlyZHBfM3hFOC1rbEZQVUtvSlQ3VWZUT2M?oc=5",
+   "data": "2026-11-16T21:06:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "AL"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -172,6 +629,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "a4181a5af5fb",
+   "titulo": "Reunião de transição do governo de Alagoas ocorre sem representantes de JHC",
+   "veiculo": "Jornal Extra Alagoas",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNaDJHbW54Vi1rZGJpMEdjT21oOWp2bWk0bGV3WEotbm9FQXZnMDcwaU43MHRkOHZYZFl1anV1LTlQSDlPZV9HMllsRVBQTkRGT1lGVWJ5elMwRmtudGtlVG1jRWdzUFNnNkdidmcwSDduUGlWOXQwTzdtYzctYXpqcEhTMGdmdEhsOElJaGRpTk8xT1ljT0RsQXpyblU5cVV3OEIwQ2EtZGVOZmNQLVZqNU5LVmU4Q0FnN2dPTXpkV3VRaWhaaWNpcGEzSUxJNHU5?oc=5",
+   "data": "2026-11-16T20:55:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "c81010603fc4",
    "titulo": "Governo de Alagoas mantém estrutura pronta para a transição",
    "veiculo": "TNH1",
@@ -202,6 +673,20 @@
    "categoria": "medida"
   },
   {
+   "id": "b87843a1327c",
+   "titulo": "O Tribunal de Justiça de Rondônia (TJRO) recebeu nesta sexta-feira (13) o governador eleito de Rondônia, Marcos Rogério, e integrantes da equipe de transição do Governo do Estado para uma reunião institucional voltada à apresentação de ações prioritár",
+   "veiculo": "Instagram",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9ROHN5RTVYbi0zZmZDZ1RsZnFBaXFzdUVKeXFucGhDcUFQOWpITnJ2YU1VcC04X3phbjZwWGRmVXlob0JSQmxmSk1VZ3pnYklEUmc?oc=5",
+   "data": "2026-11-16T20:43:50Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "7769e68b306a",
    "titulo": "Governo ZUCCO terá 18 secretarias: o que muda na prática? Entenda | Gaúcha+",
    "veiculo": "GZH",
@@ -211,6 +696,35 @@
    "outras": [],
    "ufs": [
     "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "bb3602b1b5d4",
+   "titulo": "Douglas Ruas confirma novo secretário de Educação do Rio",
+   "veiculo": "Diário do Poder",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcTE5V1MzSElBWGlxbFF2SkZ4SHNSaEZvQndpaFc2cEZqb3RyNDg2X2VIbHNoMWtDNUdHSnhfdzN0M0laZXA4QUFBOWpIWTZfUFMxTU5IcUJuWlVFWnFZd3l4aXJ0b0hEUWRCWC1MQUNfU3ZSbl80ZFJKTkRKSVZWOUtHZFlMb2x3Qk5RWW5CaF9NX0ZEMjVrT195RWsyTGlnYzdHQy1GWE0wTkRvRTFrZXlSUXNpV2piZ19sZFNUSTZnTFdOSS1aRjNEUUdyalRkenfSAdcBQVVfeXFMUFFkZWNrLVFtWEpiSEFsZVhxcTdVOUMxOHlFUzJMMEdGV01XVTN4My1Qb0ktQy1BODdhVUNONlk0MXNaa19sZFhlQWgtQW5Fb1pWUHA5aFdiVFY3eFY1UmFEMDFGSjB2RFphMFoxTXdVVHBXT1VHRTFRUGQwRXVlczd6X1VKTFY5Y3ZpZS03TDd6aWNxTHd1ODRSc3BEeTU5aEZuUEo5eS12cUZBZndLQ29McVl5d0NRSVhlZzlFUTIzc0N3b2hIVmpMaXAxbng1eUtzMGRjaFk?oc=5",
+   "data": "2026-11-16T20:32:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "d39ec42453b2",
+   "titulo": "Diretor de Educação do Paraná será secretário no governo Douglas Ruas no Rio",
+   "veiculo": "Gazeta do Povo",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQN1JGbFpCRVBpYVJ1V1I1Y192WXNUdGl0Z1RiRnk3eUhNdVNwMG15VHpLV0JybnNjZDJmVC1RaWVFaGZacUNoSWtVUWNjQTRFd3B4eUhNbXlKUzQxQWJUcEdtbDNGMWFUX2JjaUpGOXNROHNuLUxRcWc2UTZlVkFVTzB2WlZlYk9YbTFqV3BJdVUtR3NWVlgxSE8tQVpqRi1hOVV5RV95Ym9YRFhlX2FXWFpUTko4SU0?oc=5",
+   "data": "2026-11-16T20:30:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "PR",
+    "RJ"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -256,6 +770,22 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "17f95c1e51d1",
+   "titulo": "Zucco reduz estrutura do governo do RS e mantém fim da Secretaria de Desenvolvimento Rural",
+   "veiculo": "Brasil de Fato",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOSFF6cTNMcGdYSEVDcjJVZGdhNG91c29WQkJLV0c3ellkaFVDdUNyRmpRZ0FqdVYwb2VUeG9Za2hoM3JTYndJWUt6WjBsekxSLW8wZGtvSC1HUDdQaENGYXpHQ1p3Q01lS2J3eHgxSWpiSDlXdUd0aWx3TUlwUVR0QkM4cEhPaDZ6TFNMX2dsU0swUTUwUV8zaHR5dXoyVHVQb1BPdHFZNEJlYzZQQ2dzRzg0Y0J4NHVLN1Qtdkh2d25BSFFYMlFra3p0SWJwVGs?oc=5",
+   "data": "2026-11-16T20:14:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "6fbaefa677aa",
@@ -322,6 +852,22 @@
    "categoria": "medida"
   },
   {
+   "id": "5a460ea63cf6",
+   "titulo": "Cleitinho busca diálogo com Lula para negociar dívida de Minas",
+   "veiculo": "n3news.com.br",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOdVhSNnBGZXExZk9yOXozN2tRd0lUa1J6QlhmczV4WmdnUVVNTkl4LWRxVER1OS1RQ2t1SmRSaDhSekU4dldUemJYRTVxdWtlX0VUb1czOVlvSFF3SUZESFdmZkVJUkhhU0xVZy1uRndvMC1NM25FbVVsRHJBSlQwSmx2Z2stZVllRkE?oc=5",
+   "data": "2026-11-16T20:01:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "233e08aec67b",
    "titulo": "Zucco reduz de 28 para 18 as secretarias do governo do RS",
    "veiculo": "R7",
@@ -352,6 +898,21 @@
    "categoria": "medida"
   },
   {
+   "id": "8aa395f907f9",
+   "titulo": "Douglas Ruas anuncia secretário de Educação ligado à ataques contra Educação Pública e à autonomia sindical no Paraná – Sepe",
+   "veiculo": "Sepe-RJ",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQREhfVTkwalR3akxROTBVWVBkRExuV0RFOU1Mdzd5Y2QwWkpoVndyNU1DZkNLRC1JQ3YwNGZqTk1LeHU1dldiY1dGWkdHdTQxZ3VNTjF3SmRYbi12SWZOUnkxN0p5RVNXNTM0RG5lb0xiSVJiSEZHaGROVl9PS2NUckpId08tRjh1bl9lVHRyVFdZcnphNU84OVhhVVc1UzUtd0IxTGszOFY2NmVMVXpiTmNPSk56MjRMLTdvUnVzQ091MkJHSlp0RWdNMEJLV3llbE9nNEdxOA?oc=5",
+   "data": "2026-11-16T19:37:05Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "PR",
+    "RJ"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "0d67f54e2287",
    "titulo": "Quase 40% menos secretarias: O que Zucco planeja para o governo do RS em 2027 e quais secretarias serão mantidas",
    "veiculo": "abc+",
@@ -366,6 +927,20 @@
     "estrutura"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "00a8b2272127",
+   "titulo": "A cotada para assumir a Secretaria de Educação de Minas sob Cleitinho",
+   "veiculo": "O Fator",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNeDFYb1hsM2t0czlQQW9LR3VwZ2d0MnVnR2ZCNThNcGZWRnNWZC0wbzFWQTB3OFhWcU93VldyMkRYUG9jQmZGYjkxWkl0V1dsRHFnR09MZ0NfODFtZFQ5VGdicF9pRjhBYUptWEhpWFJTbUthQ1N6cW04d3V0ZkU5M3BjMUg5MS1pSXJhdlBZaEZCTDJhdG9zLUVJZlRjc2ktb0hzdUFn?oc=5",
+   "data": "2026-11-16T19:28:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "3a99c4fd4477",
@@ -414,6 +989,22 @@
    "categoria": "medida"
   },
   {
+   "id": "1abb62413d88",
+   "titulo": "Zucco reduz estrutura do governo do RS de 28 para 18 órgãos; veja como ficará",
+   "veiculo": "Agora No Vale",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQQmJTa3pqVUJ0Xy10YVJEWXUzYUJJOGpmZjNPakR2dGhCMWtNVDRmQ0pKMTRHOWFHQmZTS2RmaGVBalFBZkpUdW5SX3JWZ2xZbVFyRDY4M1BEZmxCRWFJLVNSQ3hySXdLWnd5YVVBN0d1N3p4aVU5MXdRTm9UcjRvdXk1QUUtcEh4V0pxUGhWOWZldUFUb25OUHE5Mlg4N3lQWkdIV0lxeUNGbDRYc3lBcHBuaUdfY3BabGkyeWh5dnZtS0JPa0xB?oc=5",
+   "data": "2026-11-16T19:16:42Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "44bc8fa73a3a",
    "titulo": "Luciano Zucco anuncia próxima estrutura de governo com 18 secretarias",
    "veiculo": "Jornal do Comércio",
@@ -442,6 +1033,20 @@
     "estrutura"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "969fd247b1bd",
+   "titulo": "Secretário de Saquarema antecipa novo nome do governo Douglas Ruas",
+   "veiculo": "Clique Diário",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQUTg1NVk2bndkR0RoR2x1QUtCR0otZUx3aHlSaUkxZElnMFdGeVdZTDFYMFV3Y3hCZ2hWeFBkbGI3enBYRERaakRRdkVDblUzLXpyMnlQSEhtTG53UmRZSUhjUXdrWFUzX0dPWnNmenRPZDZ2ZE4yczNHS29jQWZJUUF0RHFUUFB4MEg3QlBRWVcwZnVBRkxlaFJzNG9WX183RDU5cjFn0gGrAUFVX3lxTE0wWGw0QVN2V09xWHJUcVlvTU0yaWRPZm9YTVcyeWJZVklNTEZ2WXNtakdUX2tQU3lDdTlhQW94dFFBWDl6NEFpRmNSX0dqdlpLdFlQbUJDSUt1NEpoZEN3TV94UDNaUjVCb0xSLXJnQ2FKVF9tanJMTjRJTFVFc3ZBMlZmS3RNY194VmZLZEU4aFpOZUdIOXJqbnlOLTB3V2EtbEhlTFgxczA2WQ?oc=5",
+   "data": "2026-11-16T19:09:25Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "8f37c12bcbff",
@@ -476,6 +1081,22 @@
    "categoria": "medida"
   },
   {
+   "id": "3dc080858720",
+   "titulo": "Douglas Ruas defende concessão do Estádio de Remo da Lagoa: 'Defendemos Estado menor'",
+   "veiculo": "Tribuna do Sertão",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPZUczWVZhdXB6bGVxRkl1UG12ay1MVGhGalRGVV9JMFdtNHl1UTh5V3NsRXBPY3BaSWcyNmx0aFJhcUxVdk83VTUyWE5jS0d1M1BWdVBhTnFuMm0taEpaanlLLWRrOFpFUTlFTW5HUWticXZ3MzhFVFE4VjV4Y1d4OFFpMmhJdFdpUFFEOEFaRDBOODBETndXZjdVTlpCZDI0UWFMRmpieDZDZG9KcnRHZ1YyX0JYNHpQRUZMaDVuMk9zVnFqUnpnUUh6WlNCeGFYQ19ZOHJmbXB6djFBUkt3Mw?oc=5",
+   "data": "2026-11-16T19:05:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "d4fbcbb33cfd",
    "titulo": "Sem representantes de JHC, Governo de Alagoas mantém estrutura pronta para a transição",
    "veiculo": "Correio dos Municípios",
@@ -486,6 +1107,18 @@
     {
      "veiculo": "www.giroes.com.br",
      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPQXpXWjFiRC01eF9xZmhnbS12bklPU0g0MXVoY2JMR25QRkVCOE52Njd3QkZGLTZabVZPOC0tdTROLXhOb3FlajUwYUVONVN4cXp1dUF4MmV5amxHazBfajNmeFJrMUJTLTRLLWJPanFMcWkyV2xwdGpaQjJBdTVQSjdGenpSbmk5UXI1OGNPelZXdEZwcHpnWVdtRVNwOVNyZEtrXzIwemNnN3Z0emNKNmllSFlWSGVzRFZqLWk5S3ZDcGM?oc=5"
+    },
+    {
+     "veiculo": "Portal AL 7",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZVdjY0toOGhIQXdzdnJTQ2gwZ3FlMnBlcXZlR3U0eG43U0R0dXJ1WUdHUHpDcjh5SExHcF9TSk1NUDB5aFY4eHRXWnBpZDFsUFc2UUYtVW1aTDZlN0kwTU9Ob2JGTDBNSWtnc0hXdUxwTlRoV3ZJZDd5b3Jxd1FGSEZPa2tjdFRfUVJFZHF3VjJGZFU0VkFZVHozaVhPYThfbGRjMTlLSF9FcmxabFN2Ng?oc=5"
+    },
+    {
+     "veiculo": "csastudiowebradio.com.br",
+     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNVXFZS25pSFBYNnRrT0hnR2hFX2JmZnhEcC1iZG40ZnNGU2M0VVJzeGhmMXN3MENyN20tckZRZGhtc19CNndfR0ZLZ3pGQWxncnIzekVvUV9sRWxTNjRPSVVia3ktSzBDaDJScnFUbjJwcGZidzByR3RMTmVmRzNyWTN6MzhXaGJYWlprSDRtVzZhakFHRVJndVVyOG1QaVhUV0RSOG41QzZDM2puckRsVHVuMnh1SEVvR1ZHVm9rYVR0NlJpbzR6YWFmV2wyX2ZvX0E?oc=5"
+    },
+    {
+     "veiculo": "Tribuna Hoje",
+     "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPUmlCTzVJR3BXWEp3ZEZCSkdyeDlsTzdIX0VaRFNSLTIxT2NmLXBVNEx6NTA0Y2dLcFloLVVOVGxwZEYxWTBQWlNYdDE2M0tYaC1XdmltRGgwdFJHTWpPbDBkVmNPSm9oc21sMFZhUUNZTHY3N0lvOWoxU3JVNVZZZjhiNEpsMWx1emZWYVNlaFc5ODBYX2tCa19WNU9ESjAzTHhURFpEeDMzWjZTdVVmMEFIS0UtZWRnOHhIRWxneGFkZjNHTy1CM2gwS1VqX2hlY1hkVGpLSnRMdGtRTUE?oc=5"
     }
    ],
    "ufs": [
@@ -493,6 +1126,22 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "cb4f493f84ff",
+   "titulo": "Zucco define a estrutura administrativa",
+   "veiculo": "Correio do Povo",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRVR1eUVCVW5iY05PUkdIeXdHTWt1LXpFMS1VMmFHdDFhUXRQTnJIZGl4TTZEYTRPbldKMk1wRThqN2lvY2wzOVdkMVFTV0ZEbC1jdExhWTRyQjM4NlVfUFBpUG1ManVPSGFmUFhUX3ZMcXF0UmlnWlRfaXg4TUVXZ1lPTXd4SkRpbWVaTVNiTnBodFdjb29Zcm94Q0dtdHJWYXBtc2J0ZFVPY1dJVUZz?oc=5",
+   "data": "2026-11-16T18:58:15Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "68c97e691b9b",
@@ -561,7 +1210,12 @@
    "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxPODNRNU1ad1ZTWDNNYjFEN0k5Ul84WXZDUU81a1JCR2F1WGtaNTFjY0o4WjVTbnZQX3piME5aWnVtMFRvNnA1V1g0djJkTWhna1hxd1dtZkRfUFcxZ3VyZGRiU2JjTkZLLU1HajBwS3Vvc2o0VURVNktubW1TbGdhbGFxLW0xeDAxcjEyM1lpb3NZZ2YwTk84V09WY0FvMEYxek9GaGNWcVJNZ2M4YU52bW1TY2VycUVtNmJqR0FSNmhNcm44RHhZNEk2UG5OcDEtaHNEVjRYblNya09FcnVqV3IyWG5mOGUyMTA4cUlZSTUzOGtzZXo1X0dISlBkVkJFZGVwclZsbFdtdjlVT0kxVHBjelNRRHhXakdqYw?oc=5",
    "data": "2026-11-16T18:31:50Z",
    "coletado_em": "2026-11-16T21:19:06Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Paulo Marques Notícias",
+     "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPNGpZWE10WkpXYXJlVDMweTJWWGhiZXJBQmpSemRobXlIYVViY0N0azZDcjUxVXJYc3ZtUU4waldUWTcxc183UlozZkt6aW1va2daa25sTDNYdV9JQnNzSUtCWS1FcHBNSHdYOWc2STlQTk16TzJFQmVMWU9DNWFzZjU1ZnE1bGl2azJJRDFZWGs4WW5rSG4zdUlnX21fMmhqV29uTXRYa1hxNFAxWHRyQk82aV92ZTNlUzc3bm9YSVF0TEZ5dTRsWUpEMTJ1S1RNelN4eGg2b0JBRnM?oc=5"
+    }
+   ],
    "ufs": [
     "RS"
    ],
@@ -667,7 +1321,12 @@
    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNNGh6UDBBT0FYanlvQTkyNTVDN0hIZWRJTF9xR1JqUklIMU1vV0hHXzdPdVlkZkJDZk4td3hocWd0LVNmMllZbmZpUTBuVXZRcjIzV0FjV1R1aG9jd2FUeTVNODg3STFUOGEtSnEwTXdNN2p3b0x5aVo4WWV4ZFltTGJsUjd3SjladHQ1RnUzeVZRbnZMWnVjdDVGRDVBdUlOQzNteU5iWTk2VlVlUU9MMFNCNXRDQXRJSEg4RFdhU0lPb3c0UzNYeU1R?oc=5",
    "data": "2026-11-16T17:45:00Z",
    "coletado_em": "2026-11-16T21:19:06Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Tribuna do Agreste",
+     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOSXVZbFUyTmUxSk1IQ2F0ZEFKeFA0MnBWSTIzOGh2Y1Z0MldITF95bGpKYUlLSW5jVTloUXJOTGtKSzg3MHJzaWxwU0ZGRXVkY0hrNXVyUncyeFNpaGxnelBZSWdZQWh5WkN1amQ0czRUT2daVEtVZTI0QlhiRGRqUTVoY2tjd1BuNDJ6bjlkWDlYVzlwTHNPU1pnRmJ2T2dTai1acmN1TC1FcWEyVzhaVWxuTG1IQVl0eHFqLVFIZUs4RW9TaVVVZGk3aw?oc=5"
+    }
+   ],
    "ufs": [
     "AL"
    ],
@@ -717,6 +1376,38 @@
    "categoria": "equipe"
   },
   {
+   "id": "badbf21e64ad",
+   "titulo": "Douglas Ruas defende concessão do Estádio de Remo da Lagoa iniciada por Ricardo Couto: 'Defendemos Estado menor'",
+   "veiculo": "O GLOBO",
+   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPa0Fod0w4aTYzR3BQV1FxZFJ6UXNJTDYzclg1a1l2UnQ4eldjTGZldnZpd1podUFTN1RpNUpWM2hmeEpxWDB4YWpNdU5qa2tVVUlCcFRaTG4zT2J3OXJOTURsUno2aFRpX0FyVnF1ZFZBNHFqc2ZiZDRvTkk4YnJkVFBQeE83WG82dHVDWVZrT0tzeUdyMEpyYWtSU3VTVjNuRnZsZm0zX1ZuczFVcTh2SkJLMGdLTEh4RXdWdkdQcTZnVG5MZDd4OVlESU1sUnllUm1td2xqZFpoRW1nR0s0cExHV21VWFFwODhydzVpZWZWS0RIZExPSHdNbWRjSVZmelVCNdIBhAJBVV95cUxPa0Fod0w4aTYzR3BQV1FxZFJ6UXNJTDYzclg1a1l2UnQ4eldjTGZldnZpd1podUFTN1RpNUpWM2hmeEpxWDB4YWpNdU5qa2tVVUlCcFRaTG4zT2J3OXJOTURsUno2aFRpX0FyVnF1ZFZBNHFqc2ZiZDRvTkk4YnJkVFBQeE83WG82dHVDWVZrT0tzeUdyMEpyYWtSU3VTVjNuRnZsZm0zX1ZuczFVcTh2SkJLMGdLTEh4RXdWdkdQcTZnVG5MZDd4OVlESU1sUnllUm1td2xqZFpoRW1nR0s0cExHV21VWFFwODhydzVpZWZWS0RIZExPSHdNbWRjSVZmelVCNQ?oc=5",
+   "data": "2026-11-16T16:05:26Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "308acb34c90a",
+   "titulo": "Ajuste fiscal Janones declara esquerda como inimiga e o bolsonarista Cleitinho como amigo",
+   "veiculo": "Esquerda Diário",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWkZ0cFkzWVktS2VCcVBoQjF4bWJpN1ZKS1ZTeVVwWnFZUGVRdUR6X09NU3NvQVV4VXE1dXItT1ZWSUMtUVh5RjB3TDhCbnhCa1RieVI4T00xcHlwdS15bnlLWHMyRjRKbXEyUTZQQ3M3NHlXQ3hUWUZvaEFQYnA1NGNvUlkxSmo0SVVva29UbklidVZyN05MZUEyVkRwRXp2Zk9nN1lQX1REMmdQY1E?oc=5",
+   "data": "2026-11-16T15:51:11Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "gastos"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "8911e65a2394",
    "titulo": "Representante de JHC não comparece à primeira reunião da transição",
    "veiculo": "GazetaWeb",
@@ -726,6 +1417,20 @@
    "outras": [],
    "ufs": [
     "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "3f1c26da4677",
+   "titulo": "Cumprindo compromisso de campanha, Zucco vai cortar 40% das secretarias no RS",
+   "veiculo": "Jornal Tradição Regional",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOdGFuSWM5T2xVQkxtck1RY3NXVDBBYjMzOVRndFlCeEJpZjRsYVk3dzU0d0RjRU5uc0I0N21Nb09lT3BfNjdEWnEyRjBkV28xS1M4SHhRckdXcUpsWkNFYTBBTGFtSUc2bFViZ1ZYdU5oU0ZnSDRGSFgyNzB0d25tazNNcWhVT21XSGdJeEFFalE4dzhnSF9lbVJSSGZpUXIyVFlkOGV5UUNNeGxMOXM4amhrVXR2SWN4cC03VkN0UVU?oc=5",
+   "data": "2026-11-16T15:29:54Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RS"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -787,6 +1492,22 @@
    ],
    "temas": [
     "pessoal"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "b95f049489c2",
+   "titulo": "Zucco apresenta proposta de fusão de secretarias nesta segunda-feira",
+   "veiculo": "grupo sepé",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1CYUh2N2dzbmlvX08xTjJ6M05QUlRabTRZb3Jsem9UTVp5WWdZV3BUaDlXdFJKLTNFTEhHNElxRmE0Y3E3OUlwdF9iOGFRcnEyZDIwVWg1OUh6bi1VNmhXSmZoRlBwWEx3LXhKZzY2dw?oc=5",
+   "data": "2026-11-16T13:01:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "estrutura"
    ],
    "categoria": "medida"
   },
@@ -895,6 +1616,22 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "7c8fbabd2922",
+   "titulo": "Cleitinho foi responsável por show de Cláudia Leitte mas criticou gastos públicos com shows",
+   "veiculo": "Área VIP",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZHNFQ0VSY196eTRpRFcxVU1zOFgyblJDRW01RUd1bXJRVi04Wk1BNzBPamFsVWxtRXRjZlo2TFpwQlg4S21KSnRUMVh3bVg4RlhvWkpva2xjQ2laV05VcG5xZTB0R1pkRmxUMDlLRFN1NjFtN1NTY0o0Xzl0SnVvNldfVWhFYkZBZEg0emNYU1pwbjZhc0RNczdkbUNkWTVHWnA5aV9mNVhRSV9HR3JLcG9HeV9ESlB5a0RsTDlNa291bEU2UjFoc2R1ZVNlQlh3MWZn?oc=5",
+   "data": "2026-11-15T22:30:27Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "gastos"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "6ad890a7a271",
@@ -1341,6 +2078,20 @@
    "outras": [],
    "ufs": [
     "AP"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "242e8d58ed31",
+   "titulo": "Zucco prepara anúncio de secretários e estrutura com 17 secretarias",
+   "veiculo": "grupo sepé",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5sWUZRMzNsMjEwcjlwbWcyd1RSUkU0eTg4RGl3UmlCdi0yeDhDMHJsX2p1VTlMRXR6R05CS1MwaDVrVkV0VjNxandLVWt1cV8yeXpUMERnWnQxd21LWDF5UkNQU0xvZlpRTFl4VTJVdw?oc=5",
+   "data": "2026-11-13T22:00:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RS"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -2485,6 +3236,20 @@
    "outras": [],
    "ufs": [
     "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "b51f65b56ccb",
+   "titulo": "Em Gramado, Zucco garante que secretaria de Turismo não será extinta",
+   "veiculo": "DuduNews",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOY3VadEsyUzBlYzRnRG50X2dELUNoWnVtbDFBM2tCanI0ajVGR19VeVlKMjloTVhicHVBUjVZY0Y5a3hCU0J1WmVpZDIyc0JBSENrQmFuZ0prOVNIWjROSDNWOVduVUhYZ3Q4dUhDTVdNUnpTNDJKNXBUdUtoSTYyNk5tcmt6cnNKeWNyVkQ0enhadFhDc0l3?oc=5",
+   "data": "2026-11-13T02:54:58Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RS"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -4735,7 +5500,12 @@
    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQTE5rVDFTRmVjRjJKWDVBbV9ncGJYcEllNHVXMHVSeEpvTmgtRWo4MF9id3RrTjlETlJfSDA0d1oyV254VnpUVW90QmhOeWJpNXd6NFZfZEhyTzgyME1CaUc1Ni1YNEEzNWhZMG83Rnhxa2VhLUxQME9LUE8wcHZRZnp1X2VYa29iNlNvWUVnck96Tk54OTlRcWNMUGV0VnlMTXRRcXNyalN0cTE5c0pkY2V0X1lGdWl2ZTFCdVdqSTBzUnJuSTMtV21TNzgwV00?oc=5",
    "data": "2026-11-10T10:52:00Z",
    "coletado_em": "2026-11-10T15:17:59Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Francês News",
+     "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPUjRuX19UTDZlZE9EVUpGZmttUzNtYzd4SG00RUljdmdIMXB5dEhabmQxU0xQMDlUNFpNaXB0UDR1bEdHTVp2OURDZXR3NWtiS3B6QUtQdDdHS3BJZUpZMjBLM2h6U1ZZOXFOR1Iyb2s5RzBMMkRGdXQ0enhRV3V2QnFOUlBXLXpOaUo3aU9NVGZvT3FSRDRMcXRFc1UzUWswOVpncG53QWQxeVFPNEE5aHB1WHRWRDBqNG9iRUJKdHVnQjJVVFU5Rkh5VjRvTFFkRWV1T2Y0bGNUTFE?oc=5"
+    }
+   ],
    "ufs": [
     "AL"
    ],
@@ -10588,6 +11358,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "e021a0c25ae1",
+   "titulo": "Marcos Rocha e Marcos Rogério deixam disputas de lado e destacam união na transição - Portal da Cidade - Porto Velho / RO",
+   "veiculo": "Portal da Cidade - Porto Velho / RO",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNN29ZT1RRN2trZ2lDckZsWjBfdlI3VnhwbmVCX1dmWDh4YU1pNUlydVBvUnNNeHlPZENsTERaaXBoMUx6VWdGWGZyemU5ckFLUktLVDF6Yl80Tkg5ZHRZM19KbHRpRmdONU51TW5LWFpXYThWbXZvZFd1VEdJam5FNE9tOGxTWHd6UkJ6SHpKN2Znak8zNlRhLWZMZVNlb2dSc0RGVWRVWi1aazVDTHR3d1B1QWI1ZTdhenhJb25DWGNVWldCY2JlZF96cGJLdkVvOGo1NzFvNVdQb2M3?oc=5",
+   "data": "2026-11-02T14:13:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "ac9538a206bf",
    "titulo": "Confira os novos nomes que vão integrar o governo de Luciano Zucco no RS",
    "veiculo": "a folha torres",
@@ -12803,6 +13587,22 @@
    ],
    "temas": [
     "contratos"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "81cdc504c423",
+   "titulo": "Olyntho Neto admite mudanças no Orçamento de 2027 para atender prioridades de Vicentinho Júnior",
+   "veiculo": "Jornal Opção | Tocantins",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOZFpKa0J4d3Y3V0I5N1phTjhLcmFYd01KeS1LbGFvMnc1ZUc4aTlCc1o2RmtfMHMycWo3c2hDOUZKTGtjUUlLMWxUbnBvVExKSlluQjN6UUhQUVZnVEx3ZWNzTFNtNE8wdjNVVl9KOVV0THBaaU5SUUIzMkE4Zm5FU2gwT3NUMVo1TmVCVHg3THJPbkpjdzVSMVZIWThJU1l2WThDQUV5SFVxR2ZzSkhta3JhWGlRVTNPRDRNT3pybXlWcUs5RkZaR01zRk9VdXlvakZLNVBTUFc3SzRsazNKTkZfVQ?oc=5",
+   "data": "2026-10-27T07:00:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [
+    "economia"
    ],
    "categoria": "medida"
   },
@@ -15665,6 +16465,23 @@
    "categoria": "medida"
   },
   {
+   "id": "c97bb3137f21",
+   "titulo": "Arthur Henrique terá acesso a contas, contratos e despesas do Estado durante transição de governo em Roraima",
+   "veiculo": "portalofato.com.br",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQLXVyaC1oT3JLWmtHdTVROGZnMUo2NTdpQzlhOWo1c0NYMXI5SVA4bkYtM0tSdThLb1liRHd6cWU3WXJTR2gwUjZwdHdrWFhOc1pTSmVIOFo0X1R1eFJVSFl4SkFGaWo0TjJPZnk0bkJDemxONEZ6RlUtQVFGQmlDQUtCWmJsbmEtWEw5aDlINGVoY1RmME1vano2dUg1UmJrd05ULVUwQmhkUGlkWkhhNW5rRVFzRm9lZkdmUVBuVlNxODVHcUtsTUdWRnp5bU5iRHgyUklmUmpMSE5EeTZj?oc=5",
+   "data": "2026-10-15T07:00:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RR"
+   ],
+   "temas": [
+    "gastos",
+    "contratos"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "bec9b38e75a2",
    "titulo": "Ex-candidato a prefeito de Belém questiona nomes apontados como futuros secretários no governo Daniel Santos",
    "veiculo": "Estado do Pará Online",
@@ -15723,6 +16540,20 @@
     "diagnostico"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "8ddf96f273e9",
+   "titulo": "Amapá define regras para transição de governo em 2026 -",
+   "veiculo": "amazônia brasil rádio web",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNkdfQlJMVnVYTlc2MmdHb3hmR3NSTEFoV0JDMU1DcWVSLUxJYV9IUHFGQWUxQktKSDlrNTBSNXNncGJuQzhWME5qRWR0S19Kc1ZmN3dmS0MtRTFIeE16RC13N3lGR1RISm4xU0d2dmpMbTZfcThfaVh6R2tMekJ3cmtkRVI4OEdRQmd4NmhsQkdSQQ?oc=5",
+   "data": "2026-10-15T07:00:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "AP"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "8aff4425ebb3",
@@ -17593,6 +18424,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "9f4454c7f497",
+   "titulo": "Ronaldo Lessa anunciou a renúncia ao cargo de vice-governador de Alagoas nesta sexta-feira (9). Em carta, ele informou que pretende colaborar com a transição do governo de João Henrique Caldas (JHC). Lessa não detalhou qual será sua função na tran",
+   "veiculo": "Instagram",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBaZWJ1OFJjVXJNUGFaZ2JaNHRpdDN6Ylc4aU1XQTExZURZaW82NkE4YU1SWUxnRFB0MTdRZEhlb3AtREQ2YUFPelpOMzlhcmsxOHc?oc=5",
+   "data": "2026-10-09T07:00:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "93a5604734ae",
    "titulo": "Como equipe de Cleitinho quer lidar com o déficit nas contas de Minas",
    "veiculo": "O Fator",
@@ -18458,6 +19303,20 @@
    "outras": [],
    "ufs": [
     "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "294c5849e81e",
+   "titulo": "Braide anuncia primeiros nomes da equipe de transição de governo",
+   "veiculo": "Imirante.com",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOeXBVTHFQdHhTQVNvenpBSTJKOG1EZ0JJNEQzMTRhTU1OY1llZkFVdFBxQjFNeUxpMWtUTGVlUTlzbTlNc3JTMjlOVEQ5WVJHUUFiRFNOa2w3cFJncFJ6M0FlZmEwcmo2dndzT0tfZUYxb3RzU3c0WHluWWNiY01TbHNmTy1OZUZOd2NqbnJoR2dfQ28yZS05U01QZm5YSmlLY3lyWFJmSmVKNnVw0gGyAUFVX3lxTE41aUNkMUNxdEJmWWdpY3E4ZVBjTTVlV1hWRDJITVp6RXY0RENnTlg1Y3lDVVJ4ODRuTDZkSWpSREs2MU9iNW9qb2lieEZzR0lBSVRZWHpic2pJZjdBRTQyTWMzSjFFTFhrTDJtaDhyalAtX3hpSktYbno4am9HcDlTVEJIcTdaTi1YVDVzclZtblJRLWlRbjQyVXZtamtWbzFyYThBLWNkaXdMcWlTUzFpamc?oc=5",
+   "data": "2026-10-07T07:00:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "MA"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -19443,6 +20302,22 @@
    ],
    "temas": [
     "estrutura"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "09c328d5077f",
+   "titulo": "Zucco fala sobre articulação entre RS, SP, PR e SC para fundo Sul-Sudeste e renegociar dívidas em entrevista à RBS TV",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNeUlvVmRRQzN3M2xkQUk5cmZvLUxxbjRob0FlaTJXSG1pLVFGaTZ3c21sZXhPVnJHNncxZGtlWUp1S0xwOG9leU9pZ05pRlpKR2RMOWlOODcyZzI4emwzSWpON09qMnhxWF9yS0h4cFdjMk41aFV1YVNUaGZXX3FuTzM2OVpPNTFWY3FucXJxNFV5d1ZiWEFqTFFGQW5lMVllS01Xb1FTU1gtYV8teHF30gG-AUFVX3lxTE1DQ3JZeGg4R29Ya2NZYklXUlR6eWVjOHAzRVhia29MVnB3ZlVjX1NXSF9fMlZDWm01ckxLVkNPNjdzWEI0NGFjcjJ2T2xadk5Ycl9YVC1obEdqU3puRUJhTHZNbDl3SUFxdXRBV21YWDVNU3ZNbDFHb0YwUXVRclBnSUQxVzhqVFdEakNVLWx4d0RucWtaUEVOdzVXVjFqVVZjMXZOOEoxQmJHY3l3eWVOUkM0YWN0bUJlNnVvUlE?oc=5",
+   "data": "2026-10-05T07:00:00Z",
+   "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "diagnostico"
    ],
    "categoria": "medida"
   },

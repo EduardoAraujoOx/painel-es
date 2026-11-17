@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-17",
- "gerado_em": "2026-11-17T10:17:25Z",
+ "gerado_em": "2026-11-17T11:17:26Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,8 +26,8 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 27,
-   "aceitos": 7,
-   "possiveis": 10
+   "aceitos": 8,
+   "possiveis": 9
   },
   {
    "fonte": "Google Notícias",
@@ -42,16 +42,16 @@
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
    "lidos": 8,
-   "aceitos": 6,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 13,
+   "lidos": 11,
    "aceitos": 3,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -65,8 +65,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 3,
+   "lidos": 9,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 33,
+   "lidos": 34,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 40,
+   "lidos": 46,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 28,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 11,
+   "lidos": 10,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -201,8 +201,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (previdência OR Ipajm OR \"regime próprio\" OR \"contribuição previdenciária\" OR aposentadoria)",
    "ok": true,
-   "lidos": 0,
-   "aceitos": 0,
+   "lidos": 1,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -232,11 +232,10 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 415: Unsupported Media Type"
+   "ok": true,
+   "lidos": 30,
+   "aceitos": 1,
+   "possiveis": 1
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -281,20 +280,35 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "caixa_alta": 2,
-  "sem_contexto": 259,
+  "caixa_alta": 3,
+  "sem_contexto": 288,
   "oficial_sem_tema": 7,
-  "outro_estado": 14,
+  "outro_estado": 13,
   "generico_sem_ancora": 2,
+  "excluir": 18,
   "possivel": 23,
-  "excluir": 16,
   "sem_contexto_com_tema": 12,
   "exterior_sem_ancora": 3,
   "veiculo_excluido": 26,
-  "veiculo_outra_praca": 5,
+  "veiculo_outra_praca": 4,
   "sigla_sem_ancora": 6
  },
  "itens": [
+  {
+   "id": "e97ea1d42353",
+   "titulo": "Erick Musso é cotado para assumir a Casa Civil no governo de Lorenzo Pazolini",
+   "veiculo": "rede noticia es",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNT0VSZXhfMzZJcmJRNVpZWHU2bFlCbV9kUUs3X3RKdk5ZR3NVeFdiOXl5VTJQOWNXLWZXSU5DVm5FdFE1amhpalRwUjgzSFFuaFJZY2lwVktnUzJSS1FyYUJ4SDJZX0xEVFMzUEVyZWRLWkxRdURpZlVYS0Q1OVoyS1IyX2JDT3V3aHVzOHlEMUxJc2xPUWZkLVp6SkpXVkRESDNB?oc=5",
+   "data": "2026-11-17T10:31:44Z",
+   "coletado_em": "2026-11-17T11:17:26Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
   {
    "id": "47a5395577a0",
    "titulo": "Saiba quais cidades do ES ganham e quais perdem com a Reforma Tributária",
@@ -307,6 +321,20 @@
    "triagem": 8,
    "temas": [
     "financas"
+   ]
+  },
+  {
+   "id": "5fc434fdb5be",
+   "titulo": "EDITAL DE CONCURSO PÚBLICO 01/2024 AVISO DE EDITAL Jornal A Tribuna",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxQNHJfLWZtZmpfWERfeU1iaGlBelVPSG9kOWU1eEQ5RVl0X0ZhdWR6SXFzeVlCT1EzX1ZzdHFlNTNPNjBEekltWlRhcHo4WWFsZWxHMnl2NFYtWUQ1VzByUVE5QmgyR2ZlVGE5WnZpSktsb01CVzUtOThFQWJMZTVlWFU1VnpXcGlKR0F2MHlpQ0VVbmUweGxaUnpyQ0VGN0V2MVVhRloyU3NHMUVBb3VadklFRFY1dkxYZWZRODFFT095U2pyenh3ZFp5anR5RFRmdEFpZGRMc2xnZ1BKLUlyaGtjVkNsVXVNYTl6RUZ1Y281OU1uT2Q3UFloZ2hDUzBCRE5nS09nd1l5SlNXNU85UllaVlpYcnNvQkVyTTJR?oc=5",
+   "data": "2026-11-17T08:53:45Z",
+   "coletado_em": "2026-11-17T11:17:26Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
    ]
   },
   {

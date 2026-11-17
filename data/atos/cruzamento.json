@@ -1,13 +1,33 @@
 {
- "gerado_em": "2026-11-13T11:22:31Z",
+ "gerado_em": "2026-11-17T11:23:20Z",
  "resumo": {
-  "total": 28,
-  "com_siga": 5,
+  "total": 30,
+  "com_siga": 6,
   "registrado": 2,
-  "nao_registrado": 3,
-  "nao_encontrado": 18
+  "nao_registrado": 4,
+  "nao_encontrado": 19
  },
  "itens": {
+  "2063375": {
+   "siga": null,
+   "leitura": "nao_encontrado",
+   "obras": null
+  },
+  "2062774": {
+   "siga": {
+    "documento": "Contrato 2025.000214.42101.01/2025",
+    "fornecedor": "ILUMITERRA CONSTRUCOES E MONTAGENS LTDA",
+    "orgao": "SECRETARIA DE ESTADO DA EDUCAÇÃO",
+    "situacao": "Instrumento Contratual Publicado",
+    "categoria": null,
+    "valor": 842062.94,
+    "celebracao": "2025-12-15",
+    "objeto": "Contratação de empresa para execução da obra de reconstrução do castelo d'água e manutenção da climatização EEEFM Zumbi Dos Palmares, localizada no município de Serra/ES, com fornecimento de mão de ob",
+    "como": "número e ano, com o órgão"
+   },
+   "leitura": "nao_registrado",
+   "obras": null
+  },
   "2061275": {
    "siga": null,
    "leitura": "nao_encontrado",
