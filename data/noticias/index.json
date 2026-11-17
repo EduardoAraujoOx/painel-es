@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-17",
- "gerado_em": "2026-11-17T00:17:14Z",
+ "gerado_em": "2026-11-17T01:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,17 +18,16 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "lidos": 27,
+   "aceitos": 5,
+   "possiveis": 10
   },
   {
    "fonte": "Google Notícias",
@@ -66,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -90,15 +89,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 34,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 32,
+   "lidos": 33,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -114,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -138,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 28,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -146,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 13,
+   "lidos": 16,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -154,18 +153,17 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 31,
    "aceitos": 0,
    "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
-   "ok": false,
-   "lidos": 0,
+   "ok": true,
+   "lidos": 56,
    "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 429: Too Many Requests"
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -195,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -280,20 +278,36 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
   "caixa_alta": 2,
-  "sem_contexto": 256,
+  "sem_contexto": 275,
+  "oficial_sem_tema": 8,
+  "generico_sem_ancora": 1,
+  "outro_estado": 17,
+  "excluir": 17,
+  "possivel": 22,
   "sem_contexto_com_tema": 8,
-  "excluir": 16,
-  "possivel": 20,
-  "exterior_sem_ancora": 4,
-  "outro_estado": 16,
-  "veiculo_excluido": 24,
+  "exterior_sem_ancora": 5,
+  "veiculo_excluido": 26,
   "veiculo_outra_praca": 5,
   "sigla_sem_ancora": 5
  },
  "itens": [
+  {
+   "id": "c0132ba02f31",
+   "titulo": "UBS do Aquidaban tem atendimentos suspensos na manhã desta terça-feira (17)",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNbU9TbGQ0UVFVV0ZmNVl5OU1NTks3cVRENXlhUjFkVW9BdnotU2M0WC1lSU1JSGZtZklkaEVZclZFa0VoMUN2MXkwdzMxZDJvb3B6SWNQV1hCSVczcmlFSDVvQXBHUlpTcHdNNTBWMFNKYk1rRGJtaVM4QVRCWGU0Y2c5TnJLVldWZmEwUFdCczRVTmdUVTFhMGVITmo?oc=5",
+   "data": "2026-11-17T00:23:43Z",
+   "coletado_em": "2026-11-17T01:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "11de4e2b664b",
    "titulo": "\"Pior que a dor é a humilhação\", diz servidor ferido em abordagem da Guarda no ES",
