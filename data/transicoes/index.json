@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-17T11:18:26Z",
+ "gerado_em": "2026-11-17T15:17:59Z",
  "ref": "2026-11-17",
  "desde": "2026-10-04",
  "estados": [
@@ -8,7 +8,7 @@
    "nome": "Alagoas",
    "eleito": "JHC",
    "partido": "PSDB",
-   "total": 103
+   "total": 109
   },
   {
    "uf": "AP",
@@ -36,7 +36,7 @@
    "nome": "Minas Gerais",
    "eleito": "Cleitinho Azevedo",
    "partido": "Republicanos",
-   "total": 196
+   "total": 197
   },
   {
    "uf": "PA",
@@ -50,28 +50,28 @@
    "nome": "Paraná",
    "eleito": "Sergio Moro",
    "partido": "PL",
-   "total": 153
+   "total": 154
   },
   {
    "uf": "RJ",
    "nome": "Rio de Janeiro",
    "eleito": "Douglas Ruas",
    "partido": "PL",
-   "total": 166
+   "total": 168
   },
   {
    "uf": "RN",
    "nome": "Rio Grande do Norte",
    "eleito": "Cadu Xavier",
    "partido": "PT",
-   "total": 85
+   "total": 94
   },
   {
    "uf": "RS",
    "nome": "Rio Grande do Sul",
    "eleito": "Luciano Zucco",
    "partido": "PL",
-   "total": 187
+   "total": 192
   },
   {
    "uf": "RO",
@@ -92,7 +92,7 @@
    "nome": "Tocantins",
    "eleito": "Vicentinho Júnior",
    "partido": "PSDB",
-   "total": 122
+   "total": 129
   }
  ],
  "temas": {
@@ -106,11 +106,360 @@
   "fndr": "FNDR e reforma tributária"
  },
  "contagem": {
-  "total": 1360,
-  "medidas": 428,
-  "equipe": 932
+  "total": 1389,
+  "medidas": 435,
+  "equipe": 954
  },
  "itens": [
+  {
+   "id": "5032c7e4c62a",
+   "titulo": "O que JHC deixou de ver na primeira reunião da transição",
+   "veiculo": "GazetaWeb",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdGlQaDh3S252QWpNMklnWFJpRkg5b0xaODZpNmJob0hHeDlUb0VKNkdDRnlpX1l2VG1jU3M2dmVTc3drRTVodlZqaHZZYkpENWlibFRaajY4d0JNV2FvQmw4V2hOOG1IVm84YkJNanhDSS14VU5CS3BqNGJBbmN0TmZKeWdqRmVNRm1nUllicEM1LXF4ek5TZTk4UExOV3poLVZ2X1lWU0JDbjJFdGRTUNIBuAFBVV95cUxOVDZ0VzFzd2RwaG51cUg2VEpXVUQtald6Q0JjSngzLTlKb3huc0dXdHNKZ2tjUnRxcXlocmRVekl3U3JSRkVQRnUzTTBlOFRyR0tZWHZpZGJkLWdnaVIxNmtxSU5SMTdpUjctdGxQV2ZDYklfOFk1dWVhVUJ3NXJmX1pxLVAzVzNTb0NpSWx2Z2pmQWlEZ3h6dU1oU0FWOUY0ZmI3WHlIeEdBeEJucHhaZ2xZVmtnU1Iy?oc=5",
+   "data": "2026-11-17T15:00:00Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "f1580e523e15",
+   "titulo": "Zucco planeja reduzir em 37% o número de secretarias do RS",
+   "veiculo": "JETSS ENTRETENIMENTO -",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOQmYxTmlTYnRUVHNlLVhwUmxleFNmd2V2eDJSN3hPaVBjY0FZRHdLbWk1alZmVnY3c2NxQ2V4SUZDcEloa3h5bjRlaG9fb0o3T1d1UEZFZ2dCbTJEVkk1Qk1TcHBlZ1ZnT2FPZUZ5NUJfbW1nWWhWNUxkTVczajFLMWxMTHRTSmMzRlg4?oc=5",
+   "data": "2026-11-17T14:54:33Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "f043a12bee39",
+   "titulo": "Cadu Xavier anuncia primeiros secretários; veja nomes",
+   "veiculo": "Portal 96FM",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQ3FLUmpPRU1RV0psUFl3Uk1kZFRZYlB6QjBDcS1VZ002Zkp6YzhxUXVsQ20tTU9IV3RyT0VhXzRPR2lyMnVFLS01T19WSWJvMGZVcF9yUDc4OTVENHQwTmkwSno5bWZfUEdYM1VSaGJCd1R1QV9idEFhSmxaNEJDbklrNnRtZXBS?oc=5",
+   "data": "2026-11-17T14:38:45Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "8b1e7be3f2b3",
+   "titulo": "Zucco reduz número de secretarias do RS em 37%",
+   "veiculo": "Terra",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNcERxUDR1UnAyVm1mNW1QMTc5NjNCLWt2cFJlVmg3YWJEbjkzYWlIMnRQZ3l2ckJYTERRazNpTE1BbUd0UkN0YkpQUERVZXBZemU0WU1wcGZyWC1XOURnMUpjQ1dzUk5BRUVPMDVQRFp2aUJjMXE1QnZtMTJoYnE4Qk1tUVZ3NG10aDBpaUhVUG1vOC0xRU9HUV9IcUZkaTJpZWdMWS1kZlRGTHpnX3VUU09DeVQ1QWRhZlYxU3JjQmtOenRXZUV1RkFwNV9tMHQ4VFhrWkM2bW0?oc=5",
+   "data": "2026-11-17T14:29:00Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "7b2a717b195d",
+   "titulo": "Equipe de Vicentinho pede raio-x de contratos, dívidas e servidores de 20 secretarias do Tocantins",
+   "veiculo": "AF Notícias",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQVnhONWlfN2pNQzJJMkxwUElZZG1XN3lCeW9lZk1ZbjJscnZBUENfbDJPazVtbi1TSE43S1dVR2xra3JXTzF1MGpjNDQzSFphUkV6R3RxN0JDRlVPeC1VMDJlRlNIanluMFliOUtXblNPU0xFUEdRbm0wTUJONlBTUjZBNFkxQU9aSmZ4MGdZSnoyMEZocmk1VmhKVHN2T1BDc29pY2hPT2FsUjlGV0lTYmc5czFvaXBnX1ZYcWE1UWZvQzJiTThzNzRR?oc=5",
+   "data": "2026-11-17T14:09:00Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [
+    "contratos",
+    "pessoal"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "6b86802f385c",
+   "titulo": "Cadu Xavier anuncia 1ª dupla do secretariado do novo governo do RN",
+   "veiculo": "TV Sim Brasil",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNnZkS3MweDZrWGZwaVJSclI3SnBsSmIzaGZlT0JBeHFRWDN6ZFozLUtFYnh5NmVYU0hQcUhydzhWQXo1cjhhRFU3eTdFS19JLTFpb24yQmljZGdYQnluZGs5VmlsdGxWNnVHMTBFS2NHSE5YRUpiLTVZSXFhUV9CU2RWbWdWQ29TZEpXZjAxZmZrNnA2clBNQjUzd2VZaXRPc1Z3SXpJbGZ1RlVrc2VOWF9kZEhDTjIybGg2Rg?oc=5",
+   "data": "2026-11-17T14:08:43Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "15f6cf19fe20",
+   "titulo": "Governo do Tocantins realiza primeira reunião oficial com comissão de transição",
+   "veiculo": "Conexão Tocantins",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQXzVYQ1JyY19oUHVkN3BJTmV0ZDV4UlNsLTJMMVdvWUdwZ015VFhEV2g3ZGFOWDU1cTZvRFZaLTZhdW9hbWVoN0FQRldkMkJ0cVhHY2t2VFdpT3dlR01IbFptQ25lR19wb2hnTmxkWDBqXzdDTnpSUG1XQllucUI5OG01cGNIR1FzNmtPdmN5c1NHRmR6QTZpdV93S0V5Qm13NXNaUDJfbFlkQnZYc3pRTzNZczNOdw?oc=5",
+   "data": "2026-11-17T14:05:03Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "434478f03a26",
+   "titulo": "JHC, o mau vencedor, tumultua a transição",
+   "veiculo": "Cadaminuto",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNaUx2bXp0dnp0UFY3YkVlbkNaazg1SnJiWmEyVnA2S1BQRm5qX216S29ZV1N3Nk9VcGVUQUpJdHQyUkJSSE5fcWcwSHJWWGxubGMxUnIwX2I2dERNYmk0VGlCaFg5YmMzOUdlb0xMeWo3U0prSUJ2bXd4WksxeS1TbnRFc0N2XzJpMG5wdXlxcXFXQQ?oc=5",
+   "data": "2026-11-17T13:45:00Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "1e4c2dc76d07",
+   "titulo": "RS terá menos secretarias no governo Zucco; veja o que muda",
+   "veiculo": "Leouve",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1wQWlKeXNHRWt6Zjc2NHVYTlJvTlpCdGU5ZlRzMzRJalpPVjZGamRqUndwZzNlQUloSW5YMTNhSjlhbUhYR1VkdHA3UENoSHYzbWJzQ1RvTUFwWkhMdG4wZnd0RFk2bmJPRFZ5Y0g3YjVscXgzU19oUFJB?oc=5",
+   "data": "2026-11-17T13:26:58Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "4d9127ade1d4",
+   "titulo": "JHC dispensa reuniões da transição e quer apenas as senhas do governo",
+   "veiculo": "GazetaWeb",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNb3ZrOHYxcXZnS3RiMmNKTUhrSGZMRFpjbEhsbEJpSnltZkw1NG04WVVIZWtkVkxzM1dqUktfUk5BOVl1alhCTFZ1UUVnaGY0dGpVUHVKRFZMMzU0LVpaSXBiUGRLYXA3dXh1aUJiRGItWTI0NG9McXRaU2trUXZIV2YwdFM1M1F6Q3lLakszRVhTZGloeWJxcWJKRlRtcVpGOUJjb0dEWW9MeDkzVV9QT3c3a3VxNUZ0em9kSkhjM0pVQdIBygFBVV95cUxNMlNHdURUUUFSQ19xbTRsRmxNVTVESjR0ZnJibHl0bmpRcTFsZUNTc0NnYzZPRkFuN2w2NHJERzRwRVJMd0lsUGVuRzhzX1l0ZE94akctNVc0U3NZOEZCclJuQU5zeWp3ckVzSjRrTnBfUVVRaGVsV1ExUFJQQXJYVmtoTjZ5WnVBR1VkTnFBTEJxQkdxWjRRREVVM2I3MnVPU2ppRUJnMnBPQ3FlX0RteHRIeU5CLUtIVUQ4QmNhWlFDTTVQcGxrSnRn?oc=5",
+   "data": "2026-11-17T13:00:00Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "2d1e61687000",
+   "titulo": "Transição no Tocantins reúne futuros secretários e avança no compartilhamento de contas, contratos e documentos",
+   "veiculo": "Diário Tocantinense",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOR2x4ZWZJbTVMbE83V1hNcG40VVZTa180aTc4TTh1enk4SDNES25IaHVvSkxaS29TOUtjWlZyV09nRWRwcXl6aGZDaGpyQ2Q2X0FTUWdsM1JFd21WbUlCOC11YnNzWFVRVTd6VWpjbjBVeGJudGhGN2ZsalkwWXl5UlRpZmVJQ0dOV1d5bzdqTHA3ekRPMjBJNUFOVEhJVC04VDRvQjRzWWdrc0VRam9hdzMyaEdaYU1xYVVRWDlmQUhvR2V1SHpYTXFHM2RzQS0tbTBjZHRlYWwwYVFYdTMxRWEwaHQybGZmOHgwYw?oc=5",
+   "data": "2026-11-17T12:48:05Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [
+    "contratos"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "554090aa91d9",
+   "titulo": "Zucco confirma fusão das secretarias do agro, saiba o que muda e o que preocupa setor",
+   "veiculo": "GZH",
+   "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxQckl1UGNHOW9wb3F3aVZIazRHMjZPTkhtN3NFQTJIWDhhaHRGWUVObmtlX1lsYmZaSzVHVEdiNXJVQjZwaUstZFdSVkJIQ3k0UGM2ZFZEV3BSLW1OLVdUVXI2YmNESWR5QTgyWWFpRkFyS2hFS0xQd29JY2p6bkxyWm84Mnh3b2dOOThqbTd5b1o1ZG9nazNTWUpRVjZtME84WU81bkNWNUhZeXVFVWJDNDYwLS11bzF4MGZOTXQ5Mm10TUs5UjdfbXFUckEtZTNQVTZKNXBoRmN5R2taYnVtd3FzUlNWTy16S0pnTkpVeHdPUTZveUdVQkVPNGY2QnRONkhLc0dIR25DQlg2b0Y4UkpjbnRGRUR4TGc?oc=5",
+   "data": "2026-11-17T12:33:09Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "ed7e6ac7c239",
+   "titulo": "Cadu Xavier anuncia nomes para Fazenda e Procuradoria do Estado",
+   "veiculo": "portaldorn.com",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQWd6ZHVkQ05SZUU5VHlUdFBTcE5HZWhReTc3V1drSkZnZGNTWm1Mem4wZkxrNEcxYUMwNzhaWUxPaHhmNEE4UWxJcjdCUDBqckJWRzgwNEdNY2JFcVYtZE9zUmdvZW16TkdXTjE4YjNNNDlCb2hyTmJHMlZHaDVMclJxTVo4S0g1d2pxNkVkSEc?oc=5",
+   "data": "2026-11-17T12:31:18Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "a48be91819d6",
+   "titulo": "Saiba quem são os três escolhidos de Douglas Ruas (PL) para comandar a Segurança Pública do Estado do Rio",
+   "veiculo": "Voz das Comunidades",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOTmNTdnU4NEhRUU4tWG1ZUHZLNFZYSkhpR1JsUG1IdjBUMWZuLWVOajU2Ml9SRC10a2wtTFIzQ2thaTZwWUhoZjRQc1VGNXMybnVJbEZ0MHZ4eXJOUEpVSERsLUwzb3ZyMmtPaGNmb2tmcTBGT2E5SU83enV6al9uaWJiLTdHQmNRR3Y3TlkzbjZyVDdvb2ExNENDNkhXSld1bFk5dG1aTmstZEVZc3hCNnFvRHY5VURZRFpzeGV1MV96VzlTSFh2UEpMMWxKNEplWDVnOG4wS3o3cXZYTTY3Rw?oc=5",
+   "data": "2026-11-17T12:26:00Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "dbfe2c512d3a",
+   "titulo": "Política | Comissões de transição de Vicentinho Júnior e do Estado fazem primeira reunião",
+   "veiculo": "T1 Notícias",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVHRGZUdUV19mb2pqUlVpQ01xTWs2RDBITGpGdWdvTk9xY3h5clY1YU1TVnFyc1VXNG5uMkxIWnFnOFFrcHNGT0hra19XSm51emZzMU5CanNaaDdyVkZpcWJPbG5GTTRKVGhWbFJFa2tpYjdzNEI0N2Nmb0JXSmJKUTBzWEVsZ21fWGlScjQzYjQ3X3dxb01oVDlxRWNycEo3Vmo3Yng2Z0JqdlZUS2UtQm14dDBadUxYeU1GWW93?oc=5",
+   "data": "2026-11-17T12:22:11Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "c89faa738c31",
+   "titulo": "Cadu Xavier anuncia primeiros nomes do secretariado do RN",
+   "veiculo": "Blog do BG",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNYmhta284eXJYelZxRGYwZlBqOUNoT1BheW94YlVwaDg5TlQ1T2x4cmhBeHUzYjNNaW1USkpOOF9sNVB3WDB1alM3RFBnazZYOV9XVVFpNGIxR0xvTW9peUxtUFk2MjZ2d0RIQWVUQ19FY19CTDVLSXVjN0ZLaU5ndHo4RlczM3d2aTFuWXo3dw?oc=5",
+   "data": "2026-11-17T12:09:28Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "43304c5cc98d",
+   "titulo": "Governo de Minas Gerais apresenta dados de transição para gestão 2027-2030",
+   "veiculo": "MRNews",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOTDlfalNCZ3dTdHBzY3lBdHFhYXdjc2R3clZHYkVXSGFZZzY4dG1KX2tQNUh3OEtDdjFxUTdVYWNIaWg0R3VHaXNiRGNTX3pETXVMUEJ0c0ZKRXMyRkphenN0Y0NCQ200RkJJSlBtVy0zRkdQMmVLT1Y2WmUzeWhZM0pzZlg1bEVYdlpFQTRmMnJfc25fbk9mM2dYa2F3Qzd1c3A5UlozWHMyV2ZoWEVTYmFJZWdiazd5RUE?oc=5",
+   "data": "2026-11-17T12:08:54Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "57104bd65db2",
+   "titulo": "Cadu anuncia secretária da Fazenda de Alagoas para a Fazenda do RN e procurador do Estado para a PGE",
+   "veiculo": "Agora RN",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9NcVlrYnFpU3JvcDJDQy1DeTNaV1BwY3h1ejFJcFdQRkRad296TGlaR0czcDlRR0JfaU9ZYVBXM0JJdGJaRU9XM3M1anh1dV9jOERIVXpHSlU4QWFoUm5YQlEyMXk4MkJXVHBYMlhsZ2Y3SE9ENVRyWmZ6ZERZRXM?oc=5",
+   "data": "2026-11-17T12:07:33Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "AL",
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "fbb4a34f9159",
+   "titulo": "Governo do Tocantins e equipe do governador eleito Vicentinho Júnior fazem primeira reunião oficial para alinhar transição",
+   "veiculo": "Sou de Palmas",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNZHdZcVVHT0NtbDBOYnBEdXJNZTlvaXlXa3d4ZFZZbnNSb01ETzhtM3ctSmZ6amRCQ21mUTA2R2t2R0o2ZWdNempQZHc2aGVnM0FmNHRnVTFOM1FyS2xSSXBPT0xSek42RTV2RVlsMW1oX3ViWFZUM0JIdXVxT1ZZaTN1VWs5dGs4NV9XMmI5M0xmTWxKZ0hCRU1FU05oZF9OVExBMlpaNlhjczdnNEI2S0c1QV9wTnB3XzdaaVJtd1FYNzVsNk02N29YVmw3NzkyWGhmTVkxeElwekJyU2ZLYjViYWEyWnNweGpLNjJ6LXc?oc=5",
+   "data": "2026-11-17T11:57:45Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "918c72522366",
+   "titulo": "Cadu Xavier escolhe secretária da Fazenda de Alagoas e procurador do RN para o 1º escalão",
+   "veiculo": "Tribuna do Norte",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNd1ZNOS1ZN3N5VXBPMFZkMVVuVEtnclEtbFRBZ2M5NVVfcjlHSkotU0dLaGlYNnVyOUtUcFBkQW1TcDRUWGJNWlV1NDVieElKMlRQajRkc0RadkxtRHM3U3lPb01XU0FSWlBzMkszajVydWVCNFRwYl95UHdIMWp5X1RfYkZBc1pqWkNrUzFvTjdYdnJoZjJwbTJMcHJqaHF6V28wUGhhVENWVldJU0JNZENLakVjMVhrbU9Zd1RsTDQ2Zmh0LUk1YlJ5WTQySXdodVdUN2tzcko?oc=5",
+   "data": "2026-11-17T11:31:45Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "AL",
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "dcfa31955ee5",
+   "titulo": "Equipe de transição de Vicentinho Júnior faz primeira reunião oficial com atual governo e solicita dados a 20 secretarias",
+   "veiculo": "Cleber Toledo",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQRUVOZ2g1OGQtcElsc2w2angyMnk2VFRudmk1ZHdEVEpTdEdpVWxld2FMOGY0ckFEaVdmUkVwM0VwYVJZaC1BUjVIakZZRXNlQllmQkI1MjJWMUkxTzNFbkx2RjNETXBSVWJKNHNoWlBoMDQyUEVsUklhT0VqcjZBZHNibXZYOWRidzF6aGNTUmlFbDJGX2RTcmFDREluOGdmQWhoT0REajVXdHdZMXgycURwVFQ1NGxqZHZxalVGdlNUWFlpSVBJSkxzaWZmamY1c2prajJkaElpd0xOSXVBTkNyVVFFNnZwb0xidEUtMXY?oc=5",
+   "data": "2026-11-17T11:26:00Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "6efd23155d1e",
+   "titulo": "Cadu Xavier anuncia primeiros nomes do secretariado para o governo do RN em 2027",
+   "veiculo": "BNews RN",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQRHZGTUNaUTJ6MlJCLWVucDVqUjlEMjlTTmNuTkhqYm9qZHhEMUd1bmc2NDZHM0NPbkkzdzRYYkpMTmVDemVONWxqLUZXZnFldXJuMU1BOFNydkx5d2N1QWlJYkhTdm9VLV9hTUdibjVqaFJ6ZGFNODFKeHVVOGlnbHBUTXp5ZTRRYUhVcXVFRTlTbG1DaXVEclp1VUpXU3VJS3pUYjZMTDRPckt5UGNKeDYtMjN6TEhtQjRlUUFvVm5EdmRFcUlTOHFB0gHPAUFVX3lxTE5lZDlJUDk0allXY0swMXN4VThBU3NMampYUVBGTVpZUXVqX0k0R3FHZDF2cUNNblg5SjlYcjdKcnZRRGlWWURnYUs2UGlNazQ3X2ZDQXVId3ZFVWoxZjM1TTY4RVE3Ym1aWnJxN1VseGdwWU1Qb2xyTjVJYzJUZVZUblQ0bUxiNU5EYTc5THpxWnhZODBIakp0Y0ZScWZrc1Nzdm1UVzJKOXV6MXBHOEJNR2RfUUJCUWxKREk3RUVQVlFOZlRZUks3dkJYWkI3cw?oc=5",
+   "data": "2026-11-17T11:14:33Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "6744a0485b7e",
+   "titulo": "Cadu Xavier define nomes para comandar Secretaria da Fazenda e PGE no RN",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNRFNIZzhFSHJHOUZGOVl2Si1OSGJMeE02TFA5UGRPQ0ZGM0dVeVozdUJMUnlvUzZBZktlZ2FHZW9QaTFadFV1cXo5UXJ4VHg0Vm9vVGdsUFRmdzREV3dEUjU1dTNpZnQ3aHd3OXZRc0FOUGNqdkw5WWtrLUt5RndkeVA5NlQyRXpndlhTVGNSWDBKMXhPdkxxSjZFY3pvVGd1aV9ZY3VYYVl1WlZON0NaTkRzR3NaM1lReWdfMkhsSXZLNFNDNzlfT0VVY1dBdFJabzF4RUF1UDbSAecBQVVfeXFMUHpKZ1FhbmFqei1ad3lYZGU1V2FCQ1FSa1JhNFlEU1Q3U0FqdGFNcWRRYjF6VXl6UVlDN2pKeGY3VUpGbUZxSndtZHhSLTF6cWJXRmRjdm4wa1dnc0dacVVhOEJvQWNoS0dIOHBSSlJabUpLSklYeHZxX29TLU1kSm0wQkJuVTFVR2xTRWtKRjdacnM0M0xXb3dGWlV2cm5ENXBSVXpUUGl1NmVCQnU1YXVNTC1YcXV3VGV3SHE3OGVOQ3FiTU9mNThTUmtnU1NTcEZSUVFybVRvXzRqOUw5aXFwcDlVbUVv?oc=5",
+   "data": "2026-11-17T11:11:26Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "b82871c567a9",
+   "titulo": "Zucco define estrutura com 18 secretarias para o governo do RS",
+   "veiculo": "Acontece no RS",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOdTMwMW5ESHdITnhpdlhITGM1UXVzSVNDcERUaVdicW92Y3NxLXhXZGU3eUFsejhWcFdYSFhUc0JVeGhGLWJUNE5JWlZ2WnB5cGFMczJsU3ZzR09KUkRYbjlxQmFGbXUzZTdCYmgzdy1IMHcwVHl4c0ZpbGNuSnlwUkdOUkt3VFlvb19pS0w0YmJaVE5Ec2xLN3BoVzh0MjFXRy1GVm5oby1hZTNHYVE?oc=5",
+   "data": "2026-11-17T11:11:09Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
   {
    "id": "36f27b47f363",
    "titulo": "Cadu Xavier anuncia primeiros nomes do secretariado do Governo do RN para 2027",
@@ -118,6 +467,36 @@
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVmN5LWRHU1NKMmlfTUdUX2s4MU1NTzJfNVZDWHpabktOa3Bxc25uSXprVVdMdnRsR0FmX2tTWllZWkdScDl1dnF6cG9kMFhHQWYxcHdXem1ZTE1Hbjg4Z3RRNEVtb3RYTnFzSEN3dTIycVBmb04zUmM0NWo3UnNKNExUZGNfckV2Q0RUVFpXUU9HdHlWU2FTYm9HWkFXdmJuMUtTbVp2b3F5QjRUN09mbTRn?oc=5",
    "data": "2026-11-17T11:09:08Z",
    "coletado_em": "2026-11-17T11:18:26Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "89dde39d8c53",
+   "titulo": "Governo abre dados e contratos para equipe de Vicentinho na primeira reunião oficial de transição",
+   "veiculo": "AF Notícias",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdlVrZjlPWFc0aHdIdjEzSmpQWTI0OUo0MW9UanJ1a1dzS1lTUTRQMXhSXzJwckwxblRKTVpKTFZEZnNxbWRySU1nV0gyRHhfOXJQc1pZMkNNY2h0TktmeGg4Z0p0aWxlOGdUMGVZMGx2S2VQMGVOWXVqNTFfR1FzUUNJN1VOeV9HVWdKTHNQRERlRHd0b25BSlRmRjhJdkZuZXk0M3AwQ2QxUjAxdHJyWEtnS1NnTFRTV0E?oc=5",
+   "data": "2026-11-17T11:08:00Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [
+    "contratos"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "21af5c7c49ef",
+   "titulo": "Cadu Xavier anuncia dois primeiros nomes para o secretariado; veja os titulares da Sefaz e PGE",
+   "veiculo": "Portal 98 FM Natal",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQZVIxRm5MOGpubzA3SGlYalNDdFVEOWpRVUlUMFNnRENtWTdkd0gtcnBTVHVZcnBLTW84RU1YTmRrdktUOVh3azlLSmxvMDNkY1RodTViQlYzVDJqSmZLRHZuNlMwaTBMazFvX19nMHZOM2tLeXo5VDhsMmVzb0pnUnNDNUFVazFpdnFUdEc3UVdkMTA1SDZZd1FQalFzazEtNkd4cUlSZTg0c3R3dzJqd2Fqc01XNkxQdUR3OGRvb1FncnpkLXJ5ZVp3?oc=5",
+   "data": "2026-11-17T11:05:42Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
    "outras": [],
    "ufs": [
     "RN"
@@ -164,6 +543,14 @@
     {
      "veiculo": "Tribuna do Norte",
      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQOEVxSEszWWxIcGVrQXpZLWlnX3RSSGkzUmV6UnJDelRjdnNaMi0ta0dXTGZsLW9UUW4xM3lVQkh5QlRjQ3ptazVRcWY5T1RFOGtqSjdCMmsxdFZsRmlfRGptaS1EVV9WM05MX2ljWi00SnNrTFo5OHZYc1djS0xxVkxETlo2M1BxQ3YwNzV0SXZXc1VwbHlGMTl3MGozU0ROSmNKQkpvOUwxaWs0?oc=5"
+    },
+    {
+     "veiculo": "Blog do Anthony Medeiros",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNQld5UnBkMHR5OC1lRUhnN3czZEdNZWZCVlVseld1aXdnNEp3Z0VZTTl2Z1pqQVJhRzZPcU1ZZGp2dGJTSVd0NTEzNzhWY29jX19Bemc1anpFRkFrV3UtNmRhMFlkY3VkaDJWWGhvSHh6Wjd1QkVqQWZuQ0Z1M2NOWUxLTHpWcDl4SDgxMjZvNUJlTjNIdld0bTE0NEllalZxV21YUmlkUUFCZw?oc=5"
+    },
+    {
+     "veiculo": "Blog Silverio Alves",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdkNtZVNOZDVaVUFDMldOeVQzaGFYYkRTRmVvRmVOeFhGeGFMTTJRdDlhc2lsdHdkRXV0eTlkcTkyUVhHOGhzelljUG5TU1ZidVcybDg1ZHFlLXBUTUtrQ1ZuaVViNDNQcVBMNGtOMUhscGhwekRWZm9idnJSdlBjeElwRFdROVh2UVZPdG1HNUlhLWFLcWlxSDlENTd6T1Z6UnVtZ2RGMzc?oc=5"
     }
    ],
    "ufs": [
@@ -198,6 +585,20 @@
    "outras": [],
    "ufs": [
     "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "480f9a07cbc4",
+   "titulo": "Representante indicado por JHC falta à primeira reunião da equipe de transição em Alagoas",
+   "veiculo": "estadaoalagoas.com.br",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxObmlsUkhtRXZ5Q1l6eFhwLWFLbjdzUHZxb1FEb1JMLTg3cUphVXhObEh3TGk1Mzl0OFo1M1ZwVXlvZDFJUFRNeWFHM0IteTdpX2o4cjlteE1EYy1yTGlhQTZ4dlZoVTR3X283NDNxU2pSZ09ncUR4WklkYnBab0wzbzFPcmwzclNUNXFpMm1yZWxQUENWUWtxODhEa3JyaWxORU1hZ3piZzhaMEJEX0l2bm5GLXk3NVNFbnVuMVYtaXh6VFZfMlVoZGRURQ?oc=5",
+   "data": "2026-11-17T10:34:34Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "AL"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -4682,6 +5083,10 @@
     {
      "veiculo": "OBemdito",
      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOaGJ1SW4wOU16d3NPbWZ3RmUyMmRrb0RJUnVQX0JOYWpsczd4aFZrd0lwSUVtV01vTnV4enVHZ3gxQnNEZVhST0JuUXZ2bGRENnAyM0p2NXNDNWg2X2VvcTlMVEdIaTkzN1RyOThUeDRaaVFLMFI3dVF0V3R3NWRjZUlwQ0tCUUpieWxQY1VCWDVSNDZtdGhtVHpLV0dGbUJRTUpjMmRMQkQyR1JOWkZlNEhiQWFHcXR3WjNmMHlDR2N6UFFLUUHSAcsBQVVfeXFMUGMzLUtBeGlOOEc0d01hSV8wM3NVRjNzd3Y2WXJPUXFsSVNvV3J5bGY1TTI4U1Y0UlJiS0dJb2oxMTRJck13VVZsWEFtWDhsUHM1cEV3c3BZZEFQQWx4T2IxLWVJMjdJOHlYaU9EZXhJWEc4VlltZjF1TkVGVllNNG5FQXlMTlZGTElkZUY5ZzQ3Ul95ekd6RTk1a3h4ak11a1dRa0lOSFlOcUpQS2JsYWs3R3FuSHhmR1prczMwVnNlWWhVU05QajhwUGs?oc=5"
+    },
+    {
+     "veiculo": "Maringá Post",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNaldnSTl5V1ZYQTlyR0dmbUVMcDZCREZoSGMtbHRTNlgxSlJFX3dvSDZjUDAwdC1kbDhab19FaDg2LVJYOEdEMThSYmFzcWhucmM5OWNreUNHZXpfTFVCbUljRV92clljWmU2ZWhyMTFYVWo1LWlNTlphVk1XUk5LVWxDZXdPRzZMMlhnbVNTNF9kOFIzNjhrMEg3Y3ZfT1RIbDJHQndfTnlTcmpxdXBqc1ZaaGQ1YlRweUVLM1Z2SUtsSDBVUUE?oc=5"
     }
    ],
    "ufs": [
@@ -7393,6 +7798,20 @@
    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOckRsSWRIQUQwbjRVaS1JWGR6VTlzWTNtUkJrdnR6cGZUNXRlMElJSnpSb3hHbkRyeWkyMWE4Y3ZvT2tMeDFLMEctWWlRSlBoUmlWclFsY1B0NDJaVVBja3pKa3FJSVYyanZRcXA3dms1UmRrUkJwUmFrR1RVUEctQVhNMXFteTR0cVN0VS1lLVFXMUxLRHlVTWVKTUJ4VVZNc3FZVkV4cG9sWXdIM0pScm9RRmpmaVpySEZsYUFTVU8ySnMwelRxc1FsMEFDU1k?oc=5",
    "data": "2026-11-06T10:40:02Z",
    "coletado_em": "2026-11-06T10:40:02Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "8186d04cd8bc",
+   "titulo": "Reunião entre equipes de Ratinho Jr. e Moro define transição do governo do Paraná",
+   "veiculo": "Jornal Plural",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUUJyRHVjLWMxYUVxcUk5V3FNeWJiRTRxd185WEFQY3NER2VQZ1I1QVNZYnZHZnhrRGI3NWI4bHJEOFAzalNrSXVDb0NmNUxOanpNR0NCdjdzSS1lVDVtZFU4OTB3bEVBU1k5dVZNWHFFV0FZZmx0U3Flbmd5UTZLQmhENVFjbE9TdHAyRDhKb1ZTVkNoM3VwcXZNcjJTRExWbXY4Z2V3TkJEcEo3SldtMkhyMA?oc=5",
+   "data": "2026-11-06T08:00:00Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
    "outras": [],
    "ufs": [
     "PR"
@@ -17447,6 +17866,22 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "dd9fe08b6848",
+   "titulo": "Douglas Ruas inicia transição de governo e prevê cortes de gastos no Rio",
+   "veiculo": "Rádio 93 FM",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZFFsejdfUnNJOUFQU24xZGhkMnZvY1dKSXhlWFpsOVR6OHo2MEVMQ0ZHcl8xVVdnSTJ5QWw3N0k2VVdGVU1rNXZjdUVyT2VUNXk1YWVKX0JVYS1oQ0w1ZDZCLTJkajZQZlcxSjMzZUE3elZUWGhLb1U2RFVhdkhGOUg4VTBaVk54Y1VaWGE3Rm5Bb2pQSDVpU1FPUUZWRnUwZWNLdU5peHh4Uy1Q?oc=5",
+   "data": "2026-10-13T07:00:00Z",
+   "coletado_em": "2026-11-17T15:17:59Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
+   ],
+   "temas": [
+    "gastos"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "da0b32aacb8b",

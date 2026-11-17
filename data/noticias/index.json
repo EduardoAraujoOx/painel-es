@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-17",
- "gerado_em": "2026-11-17T14:17:15Z",
+ "gerado_em": "2026-11-17T15:17:17Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 4,
    "possiveis": 0
   },
@@ -26,14 +26,14 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 28,
-   "aceitos": 7,
-   "possiveis": 11
+   "aceitos": 8,
+   "possiveis": 10
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 39,
+   "lidos": 40,
    "aceitos": 2,
    "possiveis": 4
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 43,
+   "lidos": 45,
    "aceitos": 2,
    "possiveis": 4
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 15,
+   "lidos": 16,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -155,7 +155,7 @@
    "ok": true,
    "lidos": 31,
    "aceitos": 0,
-   "possiveis": 7
+   "possiveis": 8
   },
   {
    "fonte": "Google Notícias",
@@ -218,7 +218,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -226,7 +226,7 @@
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 4,
+   "aceitos": 5,
    "possiveis": 3
   },
   {
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 3,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -280,20 +280,72 @@
  ],
  "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "caixa_alta": 3,
-  "sem_contexto": 277,
-  "oficial_sem_tema": 8,
+  "caixa_alta": 4,
+  "sem_contexto": 279,
+  "oficial_sem_tema": 7,
   "possivel": 25,
   "outro_estado": 18,
-  "excluir": 20,
   "generico_sem_ancora": 2,
+  "excluir": 19,
   "sem_contexto_com_tema": 11,
   "exterior_sem_ancora": 3,
-  "veiculo_excluido": 25,
-  "veiculo_outra_praca": 3,
-  "sigla_sem_ancora": 9
+  "veiculo_excluido": 24,
+  "veiculo_outra_praca": 2,
+  "sigla_sem_ancora": 10
  },
  "itens": [
+  {
+   "id": "680be7ac3d23",
+   "titulo": "Após aprovação do Orçamento, presidente da Câmara de Vitória marca eleição da Mesa Diretora",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/apos-aprovacao-do-orcamento-presidente-da-camara-de-vitoria-marca-eleicao-da-mesa-diretora/",
+   "data": "2026-11-17T14:54:17Z",
+   "coletado_em": "2026-11-17T15:17:17Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "0c9f6f6bf2e2",
+   "titulo": "Biografia inédita resgata história de Henrique Coutinho, ex-governador do ES",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/espirito-santo/2026/11/ex-governador-henrique-coutinho/",
+   "data": "2026-11-17T14:38:25Z",
+   "coletado_em": "2026-11-17T15:17:17Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "dac0d6e18f44",
+   "titulo": "Referência nacional em finanças verdes: como o Bandes impulsiona a agenda sustentável no Espírito Santo",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQN09DSEJiNUE4aTlDOG1wQ0h1VnVpRUZKZjMtX1RIbmx3QlYyOUFCLVlqNGtCN3RqdmFGdXh2NVlVaGVUOE45NXFVTlJ0Nm9PeDJDa1l6QWxEa1BsdmtqVmNCcEdWcEpVOWtzVjN4YlQ5RlBOeG5nTUUzU25iUDdnSkxqU0x3Q2g5MlFZR2U3Y2I0NzlBX3JPV0F4Qm5oMkI5SGVZdzB6MFBaSGdRMlVSTU41WUk4MGQxekJOM0tQLWpZQQ?oc=5",
+   "data": "2026-11-17T14:32:00Z",
+   "coletado_em": "2026-11-17T15:17:17Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "29ea3dfa3b59",
+   "titulo": "Fapes realiza Mostra Científica do PIC Jr. 2026 com 152 projetos de estudantes da rede pública em três regiões do Espírito Santo",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPcWN4STdxNmlfU2g2dmdpOXV5RjlMcjd2Tjl0d1hRM1FTS1dnYWE0SF80UzdFSUFITEd1SGJZak55OExxV0FVM3dkdDV4eTJHQUNXN19jTG51UFJHaFVBRmZkczh3UTFQWTdRS1RXek52NldQMTFNZTRlVmJZUFpPNUg3TWJJLUFOQUpWOVBKNkdHU1ZMOE02bmVyRGZXTWdLUkx2eFpsSHh6NXU1MUpENThBTkRoaWg1TFQ2dDhqQ2pyM1UzZ0lfSFdEWnhXRkFQN2tQQW1UNkRtdzl4X2Vva1N1Yw?oc=5",
+   "data": "2026-11-17T14:20:00Z",
+   "coletado_em": "2026-11-17T15:17:17Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
   {
    "id": "87e73a1376d9",
    "titulo": "Detran notifica dezenas de motoristas que podem perder a CNH; veja nomes",
@@ -327,6 +379,18 @@
    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNN2hRcmR2bGFCdHBFWjNoenNWY2dvRkdrMXd3V2dVZXB0ZXAtTjJFbjdhelIwTzBJRTNFT1NtbFZULWNhb2l1V0R2SWtmYmViOV9aNlp6Q0VrQWhzV1JQYzlacVJVS04tU0FXMnZCbUhQT210b1lHS0V6YWh1bl9hNWtkU3VIVlZDWEF2VERxU1pUR0lEcFE?oc=5",
    "data": "2026-11-17T14:00:26Z",
    "coletado_em": "2026-11-17T14:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "15554477c8f1",
+   "titulo": "Detran suspende prazos em cidades com emergência; veja quais",
+   "veiculo": "SCC10",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxORERxdE1XSWl3Mms0UjVGcFFKeUxHb3pVdWNxV0NCcXY2TGJyajJSVE1aenRGcEQ3WmdaVUNFejFGQnFRbmt1cnFUR25ZNVNzZWFHQ3NXVUZHbUxZZnZYYVRGR3lhbFh0a2JYM3FSNWlJazl3eUxZamx5dlZIclA3eURDZ2ctakdSQ1Vv?oc=5",
+   "data": "2026-11-17T13:57:35Z",
+   "coletado_em": "2026-11-17T15:17:17Z",
    "outras": [],
    "possivel": true,
    "triagem": 8,
