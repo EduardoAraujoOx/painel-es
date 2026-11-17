@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-17",
- "gerado_em": "2026-11-17T21:17:23Z",
+ "gerado_em": "2026-11-17T22:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,7 +18,7 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 4,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 28,
-   "aceitos": 7,
+   "aceitos": 8,
    "possiveis": 9
   },
   {
@@ -42,7 +42,7 @@
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
    "lidos": 9,
-   "aceitos": 6,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 40,
+   "lidos": 37,
    "aceitos": 2,
    "possiveis": 4
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 47,
+   "lidos": 46,
    "aceitos": 1,
    "possiveis": 5
   },
@@ -137,23 +137,23 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 27,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 25,
    "aceitos": 2,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 29,
    "aceitos": 0,
    "possiveis": 8
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 3,
+   "lidos": 5,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -266,7 +266,7 @@
    "consulta": "https://simnoticias.com.br/politica/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -278,22 +278,65 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
   "veiculo_excluido": 31,
-  "sem_contexto": 281,
-  "caixa_alta": 3,
+  "sem_contexto": 282,
+  "caixa_alta": 2,
   "oficial_sem_tema": 6,
-  "possivel": 28,
+  "possivel": 29,
   "sem_contexto_com_tema": 20,
-  "generico_sem_ancora": 2,
   "outro_estado": 15,
-  "excluir": 21,
+  "generico_sem_ancora": 2,
+  "excluir": 20,
   "exterior_sem_ancora": 6,
-  "veiculo_outra_praca": 5,
-  "sigla_sem_ancora": 11
+  "veiculo_outra_praca": 6,
+  "sigla_sem_ancora": 9
  },
  "itens": [
+  {
+   "id": "106c42a4afe8",
+   "titulo": "STF vai julgar reajuste do piso salarial nacional dos professores nesta quarta",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/stf-vai-julgar-reajuste-do-piso-salarial-nacional-dos-professores-nesta-quarta/",
+   "data": "2026-11-17T22:09:55Z",
+   "coletado_em": "2026-11-17T22:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "03b0061b51b5",
+   "titulo": "Pazolini aponta saúde, segurança e obras paradas como prioridades no ES",
+   "veiculo": "Sim Notícias",
+   "url": "https://simnoticias.com.br/politica/pazolini-aponta-saude-seguranca-e-obras-paradas-como-prioridades-no-es/",
+   "data": "2026-11-17T22:09:00Z",
+   "coletado_em": "2026-11-17T22:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador",
+    "contratos"
+   ]
+  },
+  {
+   "id": "323c0bcdba66",
+   "titulo": "Ricardo Ferraço participa de agenda do Dia da Consciência Negra em São Mateus nesta sexta",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObGRwRFVMQTBqYXUzd08zd3JJaVFEMzQzN0NXMU1ka0NyLV9IeXVpWkdCeDZWVnlqZXhPSGdyblJPVVFMdkhyM21hVVNkb1NRSUZ0REF0clJTZzQ0aXFmb0JiSUJxVmdiR0o2T1hiWTRUR0N1cWwta0NxbDhIZEs5VTczZk5DSXFqWGtMNUFNaHdYeUNyX21IcEJkSXRPenVLVDFBb0J0U0hVWnB4VjFoZ3RYSWE?oc=5",
+   "data": "2026-11-17T21:42:14Z",
+   "coletado_em": "2026-11-17T22:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "60fb35b0843c",
    "titulo": "MPES cria 566 cargos, mas não explica por que precisa deles",
