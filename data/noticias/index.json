@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-17",
- "gerado_em": "2026-11-17T18:35:43Z",
+ "gerado_em": "2026-11-17T19:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,8 +26,8 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 28,
-   "aceitos": 6,
-   "possiveis": 11
+   "aceitos": 7,
+   "possiveis": 10
   },
   {
    "fonte": "Google Notícias",
@@ -41,7 +41,7 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 6,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 44,
+   "lidos": 45,
    "aceitos": 1,
    "possiveis": 4
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 19,
+   "lidos": 22,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 29,
    "aceitos": 0,
-   "possiveis": 8
+   "possiveis": 9
   },
   {
    "fonte": "Google Notícias",
@@ -210,8 +210,8 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
-   "possiveis": 4
+   "aceitos": 3,
+   "possiveis": 3
   },
   {
    "fonte": "Folha Vitória",
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -227,16 +227,15 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 5,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 415: Unsupported Media Type"
+   "ok": true,
+   "lidos": 30,
+   "aceitos": 3,
+   "possiveis": 2
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -279,22 +278,74 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "veiculo_excluido": 29,
-  "caixa_alta": 3,
-  "sem_contexto": 253,
-  "oficial_sem_tema": 7,
-  "possivel": 28,
-  "outro_estado": 16,
+  "veiculo_excluido": 30,
+  "caixa_alta": 4,
+  "sem_contexto": 278,
+  "oficial_sem_tema": 6,
+  "possivel": 27,
+  "outro_estado": 17,
   "generico_sem_ancora": 2,
-  "sem_contexto_com_tema": 15,
-  "excluir": 18,
-  "exterior_sem_ancora": 5,
+  "sem_contexto_com_tema": 16,
+  "excluir": 19,
+  "exterior_sem_ancora": 6,
   "veiculo_outra_praca": 4,
-  "sigla_sem_ancora": 9
+  "sigla_sem_ancora": 10
  },
  "itens": [
+  {
+   "id": "5c708f008e09",
+   "titulo": "Novos cargos do MPES exigem explicações claras e rápidas",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/editorial/novos-cargos-do-mpes-exigem-explicacoes-claras-e-rapidas-1126",
+   "data": "2026-11-17T19:09:55Z",
+   "coletado_em": "2026-11-17T19:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "8b115ca89e19",
+   "titulo": "Espírito Santo é bronze no Brasileiro de Seleções Estaduais Sub-16 de basquete",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/esportes/2026/11/espirito-santo-e-bronze-no-brasileiro-de-selecoes-estaduais-sub-16-de-basquete/",
+   "data": "2026-11-17T19:00:56Z",
+   "coletado_em": "2026-11-17T19:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "38bf46e43f63",
+   "titulo": "Transcol amplia integração entre linhas de ônibus em Vila Velha; veja quais",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/transito/transcol-amplia-integracao-entre-linhas-de-onibus-em-vila-velha-veja-quais-1126",
+   "data": "2026-11-17T18:54:18Z",
+   "coletado_em": "2026-11-17T19:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": []
+  },
+  {
+   "id": "69becc61559e",
+   "titulo": "O xadrez da Ales: o fator Muribeca e a costura de Erick para 2027",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/bastidores-da-politica/2026/11/muribeca-na-ales-erick/",
+   "data": "2026-11-17T18:27:20Z",
+   "coletado_em": "2026-11-17T19:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 8,
+   "temas": [
+    "controle"
+   ]
+  },
   {
    "id": "f6808627436c",
    "titulo": "INSS terá novas regras na aposentadoria a partir de 1º de janeiro de 2027; veja o que muda",
