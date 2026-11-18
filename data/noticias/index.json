@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-18",
- "gerado_em": "2026-11-18T13:17:17Z",
+ "gerado_em": "2026-11-18T14:17:27Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,23 +25,23 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 28,
+   "lidos": 26,
    "aceitos": 6,
-   "possiveis": 5
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 1,
+   "lidos": 8,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 5,
    "possiveis": 0
   },
@@ -49,8 +49,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 2,
+   "lidos": 10,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -65,17 +65,17 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 0,
+   "lidos": 8,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 1,
-   "possiveis": 1
+   "lidos": 6,
+   "aceitos": 2,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 67,
+   "lidos": 70,
    "aceitos": 0,
    "possiveis": 6
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 47,
+   "lidos": 45,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -137,17 +137,17 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 32,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 26,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -161,8 +161,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 52,
-   "aceitos": 1,
+   "lidos": 54,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -185,9 +185,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"próximo governador\" OR \"futuro governador\" Espírito Santo (contas OR caixa OR receita OR orçamento OR dívida OR \"bombas fiscais\")",
    "ok": true,
-   "lidos": 0,
+   "lidos": 1,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 2
   },
   {
@@ -232,10 +232,11 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": true,
-   "lidos": 30,
-   "aceitos": 4,
-   "possiveis": 0
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 415: Unsupported Media Type"
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -250,7 +251,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -278,22 +279,63 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
   "veiculo_excluido": 47,
-  "sem_contexto": 275,
+  "sem_contexto": 255,
   "oficial_sem_tema": 4,
-  "possivel": 19,
+  "excluir": 64,
   "sem_contexto_com_tema": 16,
-  "excluir": 67,
   "outro_estado": 16,
+  "possivel": 17,
   "exterior_sem_ancora": 8,
   "caixa_alta": 2,
-  "sigla_sem_ancora": 3,
-  "veiculo_outra_praca": 9,
+  "sigla_sem_ancora": 4,
+  "veiculo_outra_praca": 8,
   "generico_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "d0e4ade1fc07",
+   "titulo": "Concurso do Banestes oferece oportunidades em cadastro de reserva com salários de até R$ 5,6 mil",
+   "veiculo": "Blog do Amarildo",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPQVhqVzdYZERqeEVYaVc3R3gwXzFXd0xZbWRRcWkzQVJkajlOVmRMZWJIMFllcVpnaEo1bnVOLTRyUzROYzRmcVFXckhQaU12SjQ2Wnk4TzFyalU5MXNlMlZtdExJM090Ykh6VTNybVp5QVQxVUtoVTdXVURjdVBxQlU4MzhpTzU5d3NXZ2llaG1aVDVaQmFLYUNja2k1dTJ2a2FsMnFJM1hRdkpycW8xR2FZMjdZd0NhX0o1TjNfQUNrZGc?oc=5",
+   "data": "2026-11-18T14:01:38Z",
+   "coletado_em": "2026-11-18T14:17:27Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "628341c8dc75",
+   "titulo": "Governo do ES sanciona lei que cria mais de 560 cargos no MPES",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/politica/governo-do-es-sanciona-lei-que-cria-mais-de-560-cargos-no-mpes-1126",
+   "data": "2026-11-18T13:53:00Z",
+   "coletado_em": "2026-11-18T14:17:27Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador",
+    "controle"
+   ]
+  },
+  {
+   "id": "99411e2cd247",
+   "titulo": "Coluna César Santos: trégua de 365 dias para o futuro governador",
+   "veiculo": "DeFato.com",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVTgtcWtBX2FXQk95Q210RnBVNHAwS2pGakYxVllLUkRmQWVMaG13cnA1TDJYMXBLUExFaGFKLTkzMm1DaUNXM3pvdHowUlM4U3pfc0txX3pJM1B5bmpMa2V5WDlBWEk3LUFXcEVGUEMzTTlkT2RYbG8tVnJCNTg0V3VVZXBVMWtyaUQ0TW8zMGZPWjRINW9qOF9hVC0?oc=5",
+   "data": "2026-11-18T13:22:27Z",
+   "coletado_em": "2026-11-18T14:17:27Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "919c7a28ec18",
    "titulo": "Transcol amplia integração para acesso ao CRAS Jabaeté",
@@ -474,6 +516,18 @@
     "transicao",
     "governador"
    ]
+  },
+  {
+   "id": "fb560440f5af",
+   "titulo": "Sesa destaca políticas de equidade e fortalecimento da saúde das mulheres negras em seminário estadual",
+   "veiculo": "Agora Litoral",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPZHJfTGVac0pDenVTUURKbGpfM2ptOFJxWnJyVy0ydnVmWGlQXzZSOWhiUS1Nc2lrWktyaGREcU1BMG1PUk9weEkwV3hGU0g5T09saklVcjNHVk5QRzVINmFfWV95NGh1Qi1LSTFiRzFabW9scm5kbmVJOURTTnQwUnZleUV2VnFsOEtLdE50eFcwb242QnRhSXVpMzNaS0N5S1BvR3FNX21nREpZNEpaLWVJbEE2M05sUDM5LUZfTkRObFdLb09aYnBuTVR0VXRNM19ndHpCRkp0QQ?oc=5",
+   "data": "2026-11-17T23:22:02Z",
+   "coletado_em": "2026-11-18T14:17:27Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "f6f4d5329f4c",
@@ -976,7 +1030,12 @@
    "url": "https://www.folhavitoria.com.br/politica/assembleia-aprova-pacote-que-cria-575-novos-cargos-e-40-funcoes-gratificadas-no-mpes/",
    "data": "2026-11-16T22:40:12Z",
    "coletado_em": "2026-11-16T23:17:16Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "portal jornal do norte",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPNHpidVExZ3lqWTBZMjRrTF9hSF9CcnVqMFJNcHdFRlN0MExLTGdjSXF1dmRxdl9MZjdoVjNZWmVzTVUySG5YZEtkTTlNNllOWmw3eXBHd01vU0JQY3h2SUU5VVp2dTVFc2htdy00ZDFQWGtyc0ZmSUpCYzM4aUM4WWFzZDl0NDAzVW1FelZvUW03R24tOUlYWDZRV3FBT2hGNmdESVJWU2Y0ODhSQkZWUVZPUG9pMlgtZ0t4ZA?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 9,
    "temas": [
