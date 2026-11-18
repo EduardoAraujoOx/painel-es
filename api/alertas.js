@@ -1,8 +1,10 @@
 // Cadastro de e-mails para os alertas do painel. Repassa ao Supabase (Edge Function "alertas", que guarda a lista) só as três ações
 // públicas: assinar e sair. A lista e o "marcar enviado" são da porta privada, que só o fluxo do GitHub alcança (token OIDC).
 //   POST /api/alertas   {"acao":"assinar","email":"...","codigo":"..."}   |   {"acao":"sair","t":"..."}
-// Fica de propósito fora da senha do painel: quem recebe o convite se cadastra sem entrar no painel.
-const { responder } = require('./_auth');
+// Dois caminhos para assinar. (1) Com o código do convite no corpo (link da página /alertas/): fica de propósito fora da senha do painel, quem recebe o convite se
+// cadastra sem entrar no painel. (2) Sem código, pelo campo da tela de Notícias: só com a sessão do painel (ou com o painel aberto, em teste); aí a própria função
+// acrescenta o código, guardado na variável ALERTAS_CODIGO, para que a função do Supabase siga exigindo convite de quem a chama direto, de fora.
+const { responder, acessoAberto, sessaoValida, lerCookie } = require('./_auth');
 
 const FUNCAO = process.env.ALERTAS_FUNCAO_URL || 'https://ecjeuwadpmtvbkcvrxoc.supabase.co/functions/v1/alertas';
 const ACOES = new Set(['assinar', 'sair']);
@@ -33,6 +35,15 @@ module.exports = async (req, res) => {
   // só os campos conhecidos seguem adiante
   const envio = { acao: corpo.acao };
   for (const k of ['email', 'codigo', 't', 'site']) if (typeof corpo[k] === 'string') envio[k] = corpo[k].slice(0, 300);
+  if (corpo.acao === 'assinar' && !envio.codigo) {
+    // pelo painel, sem código: quem não entrou no painel não se cadastra por aqui
+    let autorizado = false;
+    try { autorizado = acessoAberto() || sessaoValida(lerCookie(req)); } catch (e) { return responder(res, 503, { ok: false, msg: 'Acesso não configurado.' }); }
+    if (!autorizado) return responder(res, 401, { ok: false, msg: 'Entre no painel para se inscrever.' });
+    const codigo = process.env.ALERTAS_CODIGO || '';
+    if (!codigo) return responder(res, 503, { ok: false, msg: 'A inscrição pelo painel ainda não está ligada. Tente de novo mais tarde.' });
+    envio.codigo = codigo;
+  }
   try {
     const r = await fetch(FUNCAO, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(envio), signal: AbortSignal.timeout(15000) });
     let dados;

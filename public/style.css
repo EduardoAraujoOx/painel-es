@@ -125,6 +125,7 @@ select, input[type="search"], input[type="password"] {
   padding: 8px 12px; min-height: 38px; cursor: pointer;
 }
 .botao:hover { background: var(--grade); }
+a.botao { color: inherit; text-decoration: none; }  /* o botão Alertas é um link: sem isso aparece azul e sublinhado, como texto comum */
 .botao-primario { background: var(--acento); color: var(--sobre-serie); border-color: transparent; font-weight: 600; }
 .botao-primario:hover { filter: brightness(1.08); }
 
@@ -149,6 +150,17 @@ select, input[type="search"], input[type="password"] {
 .kpi .nota { color: var(--mudo); font-size: 12px; }
 
 .cartao { background: var(--superficie); border: 1px solid var(--borda); border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+.inscricao { display: grid; gap: 10px; border-left: 4px solid var(--ac-noticias, var(--eixo)); }
+.inscricao-texto { display: grid; gap: 2px; }
+.inscricao-texto b { font-size: 15px; }
+.inscricao-texto span { color: var(--tinta-2); font-size: 13px; line-height: 1.45; }
+.inscricao-campos { display: flex; gap: 8px; align-items: flex-end; flex-wrap: wrap; }
+.inscricao-rotulo { display: grid; gap: 4px; flex: 1 1 260px; max-width: 420px; font-size: 13px; color: var(--tinta-2); }
+.inscricao-rotulo input { width: 100%; box-sizing: border-box; }
+.inscricao .isca { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.inscricao-retorno { margin: 0; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--borda); font-size: 13px; }
+.inscricao-retorno.certo { border-color: #1e8449; }
+.inscricao-retorno.erro { border-color: #c0392b; }
 .cartao-topo { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; }
 .cartao-topo p { margin: 2px 0 0; color: var(--tinta-2); font-size: 13px; }
 .abas { display: inline-flex; border: 1px solid var(--borda); border-radius: 8px; overflow: hidden; }
