@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-18",
- "gerado_em": "2026-11-18T10:17:16Z",
+ "gerado_em": "2026-11-18T11:17:24Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 13,
+   "lidos": 12,
    "aceitos": 7,
    "possiveis": 0
   },
@@ -25,16 +25,16 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 28,
+   "lidos": 30,
    "aceitos": 7,
-   "possiveis": 4
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 6,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -42,15 +42,15 @@
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
    "lidos": 10,
-   "aceitos": 7,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 2,
+   "lidos": 8,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -65,16 +65,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 1,
+   "lidos": 7,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 2,
+   "lidos": 5,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 52,
+   "lidos": 53,
    "aceitos": 0,
    "possiveis": 5
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 47,
+   "lidos": 48,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 27,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 27,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -155,13 +155,13 @@
    "ok": true,
    "lidos": 29,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 51,
+   "lidos": 52,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -169,16 +169,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 1,
+   "lidos": 1,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 4,
+   "lidos": 4,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -232,10 +232,11 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": true,
-   "lidos": 30,
-   "aceitos": 2,
-   "possiveis": 3
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 415: Unsupported Media Type"
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -280,20 +281,35 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "veiculo_excluido": 54,
-  "sem_contexto": 259,
+  "veiculo_excluido": 52,
+  "sem_contexto": 241,
   "caixa_alta": 4,
-  "oficial_sem_tema": 3,
-  "possivel": 22,
-  "excluir": 69,
+  "excluir": 65,
+  "oficial_divulgacao": 1,
+  "oficial_sem_tema": 4,
+  "possivel": 20,
   "sem_contexto_com_tema": 14,
-  "outro_estado": 13,
+  "outro_estado": 15,
   "exterior_sem_ancora": 7,
-  "sigla_sem_ancora": 4,
+  "sigla_sem_ancora": 5,
   "veiculo_outra_praca": 6,
   "generico_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "a0d8ab1e8514",
+   "titulo": "A reforma tributária não pode nascer com os vícios do passado",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/dinheiro/felipe-storch/a-reforma-tributaria-nao-pode-nascer-com-os-vicios-do-passado-1126",
+   "data": "2026-11-18T11:11:45Z",
+   "coletado_em": "2026-11-18T11:17:24Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "dec68872073c",
    "titulo": "O que fazer com o 13º? Veja se vale mais a pena pagar dívidas, guardar ou investir",
@@ -551,6 +567,18 @@
    "temas": [
     "controle"
    ]
+  },
+  {
+   "id": "f12511f98b4b",
+   "titulo": "Imprudência no trânsito: Paraná registra 2,7 mil mortes em um ano e Detran alerta para cinco infrações gravíssimas",
+   "veiculo": "Rádio Clube de Realeza",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOT2VXOGJEVGRzUlQ0U1BRQjduc0NWUDE5aEVMRVhxR0tTdkJldlN2VXlXSDlKWHY3ZUZsSEpWZmpUNm4zWk5qd3lCaDItUVF1WDd4LUFRWDk4UlpVOEpGNGw2eDYyUld0TlhORnl4ejZja05FRU44dFlUZV8xZFpsWmlYdTNTZzlhVzZha3JSN1JRdDdVVWoyQWNoYkE0Sk1DRk9kUzBTLXhjbldTRVlsR1Z5UjdCbk5WZmNLTVNqVEx3TnBWRzEwT0hRSko1Wm4wLW8wbEV0dzUwXzVxNFhtQUpRb05UYWpZM3JBbmdCZVo5QQ?oc=5",
+   "data": "2026-11-17T18:16:35Z",
+   "coletado_em": "2026-11-18T11:17:24Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "605f92b5596a",
