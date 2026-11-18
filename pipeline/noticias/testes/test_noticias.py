@@ -901,7 +901,7 @@ class Assinantes(unittest.TestCase):
 
 
 class RevisaoDe17DeNovembro(unittest.TestCase):
-    """Revisão das 433 notícias de 10 a 17/11/2026: das 218 confirmadas, cerca de 45 não tinham relação com o objetivo (agenda cerimonial, orçamento da Câmara de
+    """Revisão das 433 notícias de 10 a 17/11/2026: das 218 confirmadas, cerca de 45 não tinham relação com o objetivo (agenda cerimonial do governador em exercício, orçamento da Câmara de
     Vitória, Faça Fácil de Cariacica, drogômetro, peixe-leão, perfis, Transpetro) e as possíveis traziam muito assunto nacional (ajuste fiscal federal, INSS, iPhones do
     Senado), consumo (feirões, Black Friday) e veículos de outros estados (Bahia, Acre, Tocantins, Rio Grande do Norte) que citam siglas comuns como Idaf e Sefaz."""
 
@@ -913,7 +913,6 @@ class RevisaoDe17DeNovembro(unittest.TestCase):
 
     def test_o_que_nao_tem_relacao_sai(self):
         for t, v in [("Ricardo Ferraço participa de agenda do Dia da Consciência Negra em São Mateus nesta sexta", "TC Online"),
-                     ("Pazolini participa da Corrida do Flamengo em manhã de esporte, alegria e confraternização em Vitória", "TC Online"),
                      ("Câmara de Vitória aprova orçamento de R$ 4,14 bilhões; veja valores para Saúde, Educação e Segurança", "Folha Vitória"),
                      ("Orçamento de Vitória não é votado pela quarta vez", "ES Hoje"),
                      ("Faça Fácil Cariacica suspende serviços por 7 dias", "ES Hoje"),
@@ -927,7 +926,7 @@ class RevisaoDe17DeNovembro(unittest.TestCase):
                      ("Gêmea reprovada na etapa de cotas raciais no concurso da Polícia Civil do ES reverte resultado", "A Gazeta"),
                      ("Açucena: mulher, negra, sapatona e do axé na Ales", "Sim Notícias"),
                      ("Capixaba relata transtornos após suspensão de voos nos Estados Unidos", "A Gazeta"),
-                     ("Pazolini e Leandro Sperandio na linha de frente de Operação Contenção", "ES Hoje")]:
+                     ("Fames abre mais de 60 vagas para Cursos de Formação Musical em 2027", "A Gazeta")]:
             self.assertEqual(self.decide(t, v)[0], "descartada", t)
 
     def test_assunto_nacional_ou_de_consumo_sai_mesmo_em_veiculo_capixaba(self):
@@ -961,6 +960,10 @@ class RevisaoDe17DeNovembro(unittest.TestCase):
                      ("Pazolini aponta saúde, segurança e obras paradas como prioridades no ES", "Sim Notícias"),
                      ("Sefaz aponta queda na arrecadação em 2026, mas diz que estado manteve metas fiscais", "T1 Notícias"),
                      ("Pazolini volta à Polícia Civil do ES antes da posse em 2027", "Folha Vitória"),
+                     ("Pazolini participa da Corrida do Flamengo em manhã de esporte, alegria e confraternização em Vitória", "TC Online"),
+                     ("Pazolini prestigia Festival das Etnias e destaca riqueza cultural e potencial turístico de Santa Leopoldina", "Montanhas Capixaba"),
+                     ("Pazolini volta à Polícia Civil e participa de operação contra o Comando Vermelho", "Serra Noticiário"),
+                     ("Pazolini e Leandro Sperandio na linha de frente de Operação Contenção", "ES Hoje"),
                      ("Ex-secretário de Segurança de Vitória é o novo integrante da equipe de transição de Pazolini", "ES Hoje")]:
             self.assertEqual(self.decide(t, v)[0], "confirmada", t)
 
