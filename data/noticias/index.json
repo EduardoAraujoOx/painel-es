@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-18",
- "gerado_em": "2026-11-18T21:17:18Z",
+ "gerado_em": "2026-11-18T22:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,9 +17,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 14,
+   "lidos": 13,
    "aceitos": 7,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -57,7 +57,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 2,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -66,7 +66,7 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 10,
-   "aceitos": 6,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 50,
+   "lidos": 52,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 8,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 29,
    "aceitos": 1,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 27,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -169,7 +169,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -201,7 +201,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (previdência OR Ipajm OR \"regime próprio\" OR \"contribuição previdenciária\" OR aposentadoria)",
    "ok": true,
-   "lidos": 1,
+   "lidos": 0,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -242,7 +242,7 @@
    "consulta": "https://g1.globo.com/rss/g1/es/espirito-santo/",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -278,22 +278,34 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "possivel": 16,
-  "veiculo_excluido": 40,
-  "sem_contexto": 283,
+  "sem_contexto": 294,
+  "veiculo_excluido": 39,
   "oficial_sem_tema": 4,
-  "sem_contexto_com_tema": 15,
-  "excluir": 67,
-  "exterior_sem_ancora": 6,
+  "sem_contexto_com_tema": 14,
+  "excluir": 66,
+  "possivel": 15,
+  "exterior_sem_ancora": 7,
   "caixa_alta": 2,
   "outro_estado": 14,
-  "sigla_sem_ancora": 7,
+  "sigla_sem_ancora": 6,
   "veiculo_outra_praca": 6,
   "generico_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "f0e053b78554",
+   "titulo": "Motorista perde R$ 1,6 mil ao pagar documento do carro em site falso do Detran",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/policia/motorista-perde-r-16-mil-ao-pagar-documento-do-carro-em-site-falso-do-detran/",
+   "data": "2026-11-18T21:35:51Z",
+   "coletado_em": "2026-11-18T22:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "0f443ca5d0d7",
    "titulo": "Governo do Estado apresenta programa de desenvolvimento rural de R$ 830 milhões em parceria com o Banco Mundial",
