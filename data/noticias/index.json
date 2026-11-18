@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-18",
- "gerado_em": "2026-11-18T17:17:27Z",
+ "gerado_em": "2026-11-18T18:05:47Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,8 +18,8 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 12,
-   "aceitos": 7,
-   "possiveis": 0
+   "aceitos": 6,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -35,7 +35,7 @@
    "ok": true,
    "lidos": 9,
    "aceitos": 2,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 70,
+   "lidos": 67,
    "aceitos": 0,
    "possiveis": 6
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 50,
+   "lidos": 49,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -129,8 +129,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 1,
-   "aceitos": 0,
+   "lidos": 4,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 29,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 26,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -211,14 +211,14 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 3,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -242,7 +242,7 @@
    "consulta": "https://g1.globo.com/rss/g1/es/espirito-santo/",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -280,21 +280,54 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "veiculo_excluido": 46,
-  "sem_contexto": 287,
-  "oficial_divulgacao": 1,
+  "possivel": 19,
+  "veiculo_excluido": 43,
+  "sem_contexto": 285,
   "oficial_sem_tema": 5,
+  "oficial_divulgacao": 1,
   "sem_contexto_com_tema": 17,
   "excluir": 68,
-  "outro_estado": 19,
-  "possivel": 16,
-  "exterior_sem_ancora": 8,
+  "outro_estado": 17,
+  "exterior_sem_ancora": 7,
   "caixa_alta": 2,
   "sigla_sem_ancora": 5,
-  "veiculo_outra_praca": 5,
+  "veiculo_outra_praca": 6,
   "generico_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "b0f390046a61",
+   "titulo": "IPVA 2027: veja o calendário de pagamento e confira como ter desconto",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/ta-no-lucro/ipva-2027-veja-o-calendario-de-pagamento-e-confira-como-ter-desconto-1126",
+   "data": "2026-11-18T17:45:00Z",
+   "coletado_em": "2026-11-18T18:05:47Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "04f724cecf04",
+   "titulo": "Transparência Internacional critica criação de 566 cargos no Ministério Público do ES: 'faltou debate'",
+   "veiculo": "G1 Espírito Santo",
+   "url": "https://g1.globo.com/es/espirito-santo/noticia/2026/11/18/transparencia-internacional-critica-criacao-de-566-cargos-no-ministerio-publico-do-es-faltou-debate.ghtml",
+   "data": "2026-11-18T17:31:40Z",
+   "coletado_em": "2026-11-18T18:05:47Z",
+   "outras": [
+    {
+     "veiculo": "G1",
+     "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNcGZlaFZqQzkwU3FDREJ5QWZseTh3bUJxWFVpY2Z4S0t0QUVZWE9FUE9kbC0zVEE4SmhvTFQ2WHRncmtMMHAtY2NyVU1ValBZTFJjSnVWOHlkZC1lMVBWRTA2d1ZfcHRkRVJsTU00WGt1cDdHNTdOVTNCdjU1TEZSNnVZYVJrYW5CNXJfMzZ3SnUwWlRjc0ZxbTdWM1ZmRWxRb3FPYUg4OUJjemZsa3lfRTJTRHJ4QkpoaWljZWtVeEdnQllZYjNWbUN0R09lbm1yeGhYbFpwZVliVHlDVHp4R1VsYWc5Nk9vVGRVVVJtcjItOWh6RlHSAYQCQVVfeXFMUHhvVXhzSm9WUVlrMy1ZWkJqLU9ldDMwc2ZISExmTXEtWFdlS3pBVFBRcUpldjNab2QzMFBBQzRnRFpDcktIQ3VqRUxfaERES1M0WXl5cy1EUjdENU51ekdGUmtaazM5TGlPdW9XX0oxLTVWaG5RTlJORmI4WFZNMlliUEMtSWpGVVBreDlEYTFZcmpkVkJ2bXZEWloyLW1Ydk1RaWc3cVpFM2NDQjI0UW1NbjRWUzQ0elhPLUV0U2l5ZXNoZ2FocGQ4TW9FdFJWZ2hWaDFteUxkSVdoY2J1OGxNUHBFakR5WEJ4TFJveUdKUXZZNFdrLXlfVFhFc3hKTGFRU1Q?oc=5"
+    }
+   ],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "controle"
+   ]
+  },
   {
    "id": "4623ac7b16dd",
    "titulo": "Erick Musso conversa com 20 deputados em cinco dias e articula base de Pazolini na Ales",
