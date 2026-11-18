@@ -1,6 +1,6 @@
 {
- "ref": "2026-11-17",
- "gerado_em": "2026-11-17T23:17:14Z",
+ "ref": "2026-11-18",
+ "gerado_em": "2026-11-18T01:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,23 +17,23 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 4,
+   "lidos": 11,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 28,
-   "aceitos": 5,
-   "possiveis": 6
+   "lidos": 27,
+   "aceitos": 6,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -49,15 +49,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 3,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 2,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 39,
+   "lidos": 40,
    "aceitos": 0,
    "possiveis": 5
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 46,
+   "lidos": 47,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Folha Vitória",
@@ -274,25 +274,54 @@
    "consulta": "https://simnoticias.com.br/vinicius-baptista/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "veiculo_excluido": 52,
-  "sem_contexto": 255,
+  "veiculo_excluido": 53,
+  "sem_contexto": 254,
   "caixa_alta": 2,
-  "oficial_sem_tema": 4,
-  "excluir": 70,
-  "possivel": 21,
-  "sem_contexto_com_tema": 15,
+  "oficial_sem_tema": 3,
+  "possivel": 20,
+  "excluir": 71,
+  "sem_contexto_com_tema": 14,
   "outro_estado": 13,
   "exterior_sem_ancora": 6,
   "sigla_sem_ancora": 3,
   "veiculo_outra_praca": 6
  },
  "itens": [
+  {
+   "id": "e46f4e7cc255",
+   "titulo": "Saldanha paga dívida de R$ 375 mil para barrar leilão de terreno",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/cotidiano/saldanha-paga-divida-de-r-375-mil-para-barrar-leilao-de-terreno/",
+   "data": "2026-11-18T00:30:10Z",
+   "coletado_em": "2026-11-18T01:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "a2c263e02e9b",
+   "titulo": "Alemão do Forró pode embalar posse de Pazolini longe do Palácio",
+   "veiculo": "Sim Notícias",
+   "url": "https://simnoticias.com.br/vinicius-baptista/alemao-do-forro-pode-embalar-posse-de-pazolini-longe-do-palacio/",
+   "data": "2026-11-18T00:17:58Z",
+   "coletado_em": "2026-11-18T01:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
   {
    "id": "f6f4d5329f4c",
    "titulo": "Senado adia votação do ajuste fiscal que pode ter impacto de até R$ 56 bilhões",
