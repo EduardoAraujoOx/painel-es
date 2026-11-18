@@ -65,3 +65,13 @@ test('OIDC: recusa emissor, público, prazo, repositório e ramo errados', async
   await assert.rejects(tenta({ repository: 'outro/repo' }), /repositório/);
   await assert.rejects(tenta({ ref: 'refs/pull/1/merge' }), /ramo/);
 });
+
+test('código de pessoa da contagem de logins: 12 caracteres hexadecimais', async () => {
+  const { pessoaValida } = await import('../util.js');
+  assert.ok(pessoaValida('0123456789ab'));
+  assert.ok(!pessoaValida('0123456789a'));
+  assert.ok(!pessoaValida('0123456789abc'));
+  assert.ok(!pessoaValida('0123456789AB'));
+  assert.ok(!pessoaValida('maria.teste1'));
+  assert.ok(!pessoaValida(undefined));
+});

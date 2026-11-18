@@ -1,11 +1,11 @@
 // Edge Function "alertas": cadastro de e-mails para receber os resumos do painel (Painel Fiscal ES).
 // Uma única função, sem JWT do Supabase (verify_jwt = false), com duas portas:
-//   pública (chamada pelo servidor do painel, api/alertas.js):  assinar, sair
+//   pública (chamada pelo servidor do painel, api/alertas.js e api/login.js):  assinar, sair, acesso (conta um login; exige o código do convite)
 //   privada (chamada só pelo fluxo do GitHub, com token OIDC):    lista, marcar
 // O banco só é acessado aqui, com a chave de serviço que o próprio Supabase injeta; as tabelas têm RLS ligado e nenhuma política,
 // então nada é legível pela chave pública. O cadastro é direto (convite + e-mail, sem clique de confirmação); o envio dos e-mails (boas-vindas e resumos) é feito pelo fluxo do GitHub, que já tem o SMTP.
 import { createClient } from 'jsr:@supabase/supabase-js@2';
-import { emailValido, normalizarEmail, tokenValido, igualConstante, verificarOidc } from './util.js';
+import { emailValido, normalizarEmail, tokenValido, pessoaValida, igualConstante, verificarOidc } from './util.js';
 
 const LIMITE_ATIVOS = 80; // assinantes ativos: a lista é de algumas dezenas de pessoas
 const LIMITE_PEDIDOS_HORA = 15; // pedidos válidos de cadastro por hora, no total
@@ -76,6 +76,17 @@ async function assinar(corpo: Record<string, unknown>) {
   return resp(200, resposta);
 }
 
+// contagem de logins: o servidor do painel avisa a cada login bem-sucedido, com um código de pessoa (não o nome) e o código do convite, para que ninguém de fora
+// infle a contagem. Não conta como "convite errado" (não pode travar os cadastros) e não revela se o código bateu além do status.
+async function acesso(corpo: Record<string, unknown>) {
+  if (!pessoaValida(corpo.pessoa)) return resp(400, { ok: false, msg: 'pedido inválido' });
+  const { data: cfg } = await db.from('alertas_config').select('valor').eq('chave', 'codigo_convite').maybeSingle();
+  if (!cfg || !igualConstante(String(corpo.codigo ?? '').trim(), cfg.valor)) return resp(403, { ok: false, msg: 'não autorizado' });
+  const { error } = await db.rpc('registrar_login', { p_pessoa: corpo.pessoa as string });
+  if (error) return resp(500, { ok: false, msg: 'erro interno' });
+  return resp(200, { ok: true });
+}
+
 async function sair(corpo: Record<string, unknown>) {
   if (!tokenValido(corpo.t)) return resp(400, { ok: false, msg: 'Link inválido.' });
   const { data } = await db.from('alertas_assinantes').select('id, estado').eq('token_sair', corpo.t as string).maybeSingle();
@@ -115,6 +126,7 @@ Deno.serve(async (req) => {
     switch (corpo.acao) {
       case 'assinar': return await assinar(corpo);
       case 'sair': return await sair(corpo);
+      case 'acesso': return await acesso(corpo);
       case 'lista': return (await autorizadoGithub(req)) ? await lista() : resp(401, { ok: false, msg: 'não autorizado' });
       case 'marcar': return (await autorizadoGithub(req)) ? await marcar(corpo) : resp(401, { ok: false, msg: 'não autorizado' });
       default: return resp(400, { ok: false, msg: 'ação desconhecida' });

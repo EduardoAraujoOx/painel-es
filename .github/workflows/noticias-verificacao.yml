@@ -21,6 +21,9 @@ on:
       - 'public/modulos/transicoes.js'
       - 'supabase/**'
       - 'api/alertas.js'
+      - 'api/login.js'
+      - 'api/_auth.js'
+      - 'api/testes/**'
       - 'public/alertas/**'
       - '.github/workflows/noticias*.yml'
   workflow_dispatch:
@@ -65,7 +68,9 @@ jobs:
       - name: "Testes (cadastro de alertas: função do Supabase e página)"
         run: |
           node --test supabase/functions/alertas/testes/util.test.mjs supabase/functions/alertas/testes/api.test.mjs
+          node --test api/testes/acesso.test.js api/testes/login.test.js
           node --check api/alertas.js
+          node --check api/login.js
           node --check public/alertas/alertas.js
 
       - name: Testes (cruzamento Diário, SIGA e obras)

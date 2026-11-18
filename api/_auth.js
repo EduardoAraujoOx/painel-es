@@ -34,6 +34,15 @@ function assinar(exp) {
   return crypto.createHmac('sha256', segredo()).update(String(exp)).digest('hex');
 }
 
+// código de 12 caracteres que identifica o usuário na contagem de logins sem revelar o nome: mesmo usuário, mesmo código; o código não leva de volta ao usuário
+function pseudonimo(usuario) {
+  const nome = String(usuario || '').trim().toLowerCase() || '(senha única)';
+  return crypto.createHmac('sha256', segredo()).update('login:' + nome).digest('hex').slice(0, 12);
+}
+
+// endereço da função do Supabase que guarda a lista de alertas e a contagem de logins
+const FUNCAO_ALERTAS = () => process.env.ALERTAS_FUNCAO_URL || 'https://ecjeuwadpmtvbkcvrxoc.supabase.co/functions/v1/alertas';
+
 function iguais(a, b) {
   const ha = crypto.createHash('sha256').update(String(a)).digest();
   const hb = crypto.createHash('sha256').update(String(b)).digest();
@@ -124,5 +133,5 @@ function responder(res, status, objeto, extras = {}) {
 }
 
 module.exports = {
-  COOKIE, DURACAO_S, acessoAberto, credencialValida, acessoConfigurado, iguais, emitirSessao, sessaoValida, lerCookie, cookieSessao, lerCorpo, responder,
+  COOKIE, DURACAO_S, pseudonimo, FUNCAO_ALERTAS, acessoAberto, credencialValida, acessoConfigurado, iguais, emitirSessao, sessaoValida, lerCookie, cookieSessao, lerCorpo, responder,
 };
