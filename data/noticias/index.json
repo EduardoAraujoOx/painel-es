@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-18",
- "gerado_em": "2026-11-18T16:17:21Z",
+ "gerado_em": "2026-11-18T17:17:27Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 29,
-   "aceitos": 7,
+   "aceitos": 8,
    "possiveis": 5
   },
   {
@@ -41,7 +41,7 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 5,
    "possiveis": 0
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -73,15 +73,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 3,
+   "lidos": 8,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 0,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 27,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 29,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -169,7 +169,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -193,15 +193,15 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 2,
+   "lidos": 9,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (previdência OR Ipajm OR \"regime próprio\" OR \"contribuição previdenciária\" OR aposentadoria)",
    "ok": true,
-   "lidos": 0,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -232,11 +232,10 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 415: Unsupported Media Type"
+   "ok": true,
+   "lidos": 30,
+   "aceitos": 4,
+   "possiveis": 0
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -279,23 +278,38 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "veiculo_excluido": 48,
-  "sem_contexto": 263,
-  "oficial_sem_tema": 6,
-  "sem_contexto_com_tema": 17,
+  "veiculo_excluido": 46,
+  "sem_contexto": 287,
   "oficial_divulgacao": 1,
-  "excluir": 67,
-  "outro_estado": 16,
+  "oficial_sem_tema": 5,
+  "sem_contexto_com_tema": 17,
+  "excluir": 68,
+  "outro_estado": 19,
   "possivel": 16,
-  "exterior_sem_ancora": 7,
+  "exterior_sem_ancora": 8,
   "caixa_alta": 2,
   "sigla_sem_ancora": 5,
-  "veiculo_outra_praca": 7,
+  "veiculo_outra_praca": 5,
   "generico_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "4623ac7b16dd",
+   "titulo": "Erick Musso conversa com 20 deputados em cinco dias e articula base de Pazolini na Ales",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/erick-musso-articula-ales/",
+   "data": "2026-11-18T17:06:01Z",
+   "coletado_em": "2026-11-18T17:17:27Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador",
+    "controle"
+   ]
+  },
   {
    "id": "025647f4812a",
    "titulo": "Seis linhas do Transcol passam a ter integração gratuita em Vila Velha",
