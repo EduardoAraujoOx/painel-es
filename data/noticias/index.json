@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-18",
- "gerado_em": "2026-11-18T15:17:26Z",
+ "gerado_em": "2026-11-18T16:17:21Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,8 +25,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 28,
-   "aceitos": 5,
+   "lidos": 29,
+   "aceitos": 7,
    "possiveis": 5
   },
   {
@@ -66,7 +66,7 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -74,8 +74,8 @@
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 7,
-   "aceitos": 2,
-   "possiveis": 2
+   "aceitos": 3,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 67,
+   "lidos": 70,
    "aceitos": 0,
    "possiveis": 6
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 49,
+   "lidos": 50,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 29,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 28,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -201,7 +201,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (previdência OR Ipajm OR \"regime próprio\" OR \"contribuição previdenciária\" OR aposentadoria)",
    "ok": true,
-   "lidos": 1,
+   "lidos": 0,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -232,10 +232,11 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": true,
-   "lidos": 30,
-   "aceitos": 4,
-   "possiveis": 0
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 415: Unsupported Media Type"
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -278,19 +279,19 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "veiculo_excluido": 47,
-  "sem_contexto": 284,
+  "veiculo_excluido": 48,
+  "sem_contexto": 263,
   "oficial_sem_tema": 6,
+  "sem_contexto_com_tema": 17,
   "oficial_divulgacao": 1,
-  "sem_contexto_com_tema": 16,
-  "excluir": 70,
-  "outro_estado": 19,
-  "possivel": 17,
+  "excluir": 67,
+  "outro_estado": 16,
+  "possivel": 16,
   "exterior_sem_ancora": 7,
   "caixa_alta": 2,
-  "sigla_sem_ancora": 4,
+  "sigla_sem_ancora": 5,
   "veiculo_outra_praca": 7,
   "generico_sem_ancora": 2
  },
@@ -352,7 +353,12 @@
    "url": "https://www.agazeta.com.br/es/politica/governo-do-es-sanciona-lei-que-cria-mais-de-560-cargos-no-mpes-1126",
    "data": "2026-11-18T13:53:00Z",
    "coletado_em": "2026-11-18T14:17:27Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "G1",
+     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOcWNZWlcwRU1SSDZFa2hnbGNtV1hqcDM5VzYwbmVPajJhanZMb2lidEJLblZ5aXpsSnhpdUgzWE02VnFLdkROT29fNXM5a3lydUxZdWprNmlDMGFEeDVlaDhJUHRJTDJUNGRpNzRKMHNaSjdGcVg2R0owVDVaRnpmR0dRRG8tSXNvMUpTeWd5OHRPMHo4Tjk4UU05VTBtcTdhMGNWbVF1NHF0OVZ1VFkwYzBMRGVUQzZFd1pzRnNrZU1HSmx6d0d1TWwxMmlWT0p0d3N5TWtIa9IB5gFBVV95cUxOQXFUQlpoM3kySDZTU0VVMVlCaHZMTDNIbWhNSDRhMzJfdWxfX0QtTng1SEpHRW85aHNMMEV5NVNjaVNVaHgwSThrYmpESDE5czdtV3ZlOE8xb3lJb1N6TkZ6TTB3Y0xMY1ZVN1ZMMjhjRUxTcTNSQmNUS3hjUnlKX05OOUtBZWFRZlJVcUNSdTZVUlBmZldVZTdDTVJjN08tNkxVMmFRaWNERURQLTV1UUZPUDNsWXJrMjNLUmJYNF9MTUwzYnFqZGo3b2E0a2p5ZldLdm9obU9wVFdTZ0lCWURuRHZ6QQ?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 9,
    "temas": [
@@ -424,6 +430,20 @@
    "triagem": 9,
    "temas": [
     "financas"
+   ]
+  },
+  {
+   "id": "fadb739620e6",
+   "titulo": "Convênio com o Detran ampliará capacidade de fiscalização da frota pública no Paraná",
+   "veiculo": "TCE-PR",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNaWdsZHNXS1BDeEpPemp5amNkMGJ6ZGRld2FWdk5iQjJrZ29CQzMyYzNtNGNNLWFFUXN3dF9mZTZmWmJFeVN0ejhISzhXTTdaTU9KM0hVSWNuemRZQ0JpalRXWnhoUTRYOEktRjBPMjlYQ2dfOEtWR0RjdFRIOU80N3RYX1RYc3ZLUDZ2bF81dWxiclg1QmFVaUNIUEo5YWc4SVFWbjQzT2M2RXFqNTBjWm5TbU9uYmd4bWJtM1htUk8?oc=5",
+   "data": "2026-11-18T12:00:00Z",
+   "coletado_em": "2026-11-18T16:17:21Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "contratos"
    ]
   },
   {
