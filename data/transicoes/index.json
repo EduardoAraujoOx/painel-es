@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-18T15:19:41Z",
+ "gerado_em": "2026-11-18T21:17:56Z",
  "ref": "2026-11-18",
  "desde": "2026-10-04",
  "estados": [
@@ -8,21 +8,21 @@
    "nome": "Alagoas",
    "eleito": "JHC",
    "partido": "PSDB",
-   "total": 116
+   "total": 118
   },
   {
    "uf": "AP",
    "nome": "Amapá",
    "eleito": "Dr. Furlan",
    "partido": "PSD",
-   "total": 33
+   "total": 34
   },
   {
    "uf": "AM",
    "nome": "Amazonas",
    "eleito": "Omar Aziz",
    "partido": "PSD",
-   "total": 135
+   "total": 139
   },
   {
    "uf": "MA",
@@ -36,7 +36,7 @@
    "nome": "Minas Gerais",
    "eleito": "Cleitinho Azevedo",
    "partido": "Republicanos",
-   "total": 219
+   "total": 224
   },
   {
    "uf": "PA",
@@ -50,14 +50,14 @@
    "nome": "Paraná",
    "eleito": "Sergio Moro",
    "partido": "PL",
-   "total": 161
+   "total": 173
   },
   {
    "uf": "RJ",
    "nome": "Rio de Janeiro",
    "eleito": "Douglas Ruas",
    "partido": "PL",
-   "total": 174
+   "total": 175
   },
   {
    "uf": "RN",
@@ -71,14 +71,14 @@
    "nome": "Rio Grande do Sul",
    "eleito": "Luciano Zucco",
    "partido": "PL",
-   "total": 201
+   "total": 206
   },
   {
    "uf": "RO",
    "nome": "Rondônia",
    "eleito": "Marcos Rogério",
    "partido": "PL",
-   "total": 67
+   "total": 69
   },
   {
    "uf": "RR",
@@ -92,7 +92,7 @@
    "nome": "Tocantins",
    "eleito": "Vicentinho Júnior",
    "partido": "PSDB",
-   "total": 132
+   "total": 136
   }
  ],
  "temas": {
@@ -106,11 +106,357 @@
   "fndr": "FNDR e reforma tributária"
  },
  "contagem": {
-  "total": 1458,
-  "medidas": 469,
-  "equipe": 989
+  "total": 1494,
+  "medidas": 481,
+  "equipe": 1013
  },
  "itens": [
+  {
+   "id": "c06092ac83d3",
+   "titulo": "Chega à Assembleia projeto do futuro governo Zucco para reduzir número de secretarias",
+   "veiculo": "Sul 21",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWGlHNUZyeWk1WlZzVW1fOGlLODJ2NFd1LWlDRW9pYWxXNXk1S2VUdXdHQWFTMFZ5NjYzZ0xUeUZzVXg2d0xsVXlQcHMyYTNmYV9odjhjUmFZaHRuVy1lNGk0VG9KVmFpa1BSTnAtd1dPMFlJVkdBb3ZqMzBJV0hoejZBMWx2Y19ZMjlJY1Nra2tRWEY2TERZQm1EdURZLTJoQ2ZjLWk3SGxnNV9TUVBqTHZPYjROT2dUNzdqYV9XUEwwVkx4c3lWQjJ1NUpLQQ?oc=5",
+   "data": "2026-11-18T20:57:00Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "33359b24ca6a",
+   "titulo": "Sérgio Moro escolhe ex-procurador da Lava Jato como secretário",
+   "veiculo": "UOL Notícias",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxORzNPbVBWVVJSRng1RHpZeGRsbXA4MXI1bUZoZ3VfelNPNlVLVzBYeXJQdkJ5SEZmZ1V5VG5WV1FjTlRDQU5CbXRTaEJpeWZzbTR4MmlrUFpERXczelpWbkY5M3oxOHd4WWM5VmtOdnlSSjZGU2RhM3E2S21ibU5KX3dpcGNoN1BSdlBXN3hFNDB2akx1UUNhNGNIZHRLZDdKRUhzUm9DTW9CZUVWMm9LTnk3UFJjczI3QWxKekw4MVY5VE90SUVwSUF6dkctb1dXcVdR?oc=5",
+   "data": "2026-11-18T20:57:00Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [
+    {
+     "veiculo": "Terra",
+     "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNVjdyMENCTklvZUtpSDdfUmwtN2VTeGE3Ymo0NkhzYzBKOWhHOXBxdzlQOVVzcGphZmxIRWlkVktTS2JaVjh5S1RucHZVSER5bDdfMEVORXpTYU95RUhQRlRCRnRwVWwxNU1CRHNUTm9xOTdGMkc0ejViVWR1aVhpVHBiZmFIdUxuUDNxNzdtMGd1aHZyUHpQc1NuemdkV2dEWlp4R2s3YjRKeGY2NjkzUmliaU53YkdCY0psTnB3NWNqc0pEWkp3eGdTSURHVmtPQXFhY3VuZDhyQTEtaXBJanlpTjZZRDFYeWIxekgtbw?oc=5"
+    }
+   ],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "98aaec2b6c77",
+   "titulo": "SÉRGIO MORO ANUNCIA CRIAÇÃO DA SECRETARIA ANTICORRUPÇÃO DO PARANÁ E CONVIDA EX-INTEGRANTE DA LAVA JATO PARA COMANDAR A PASTA",
+   "veiculo": "Canal 38",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPa0wtalVMLUEzVlNXSW4tTFY4cmpLbFZhN19JSDBLYnpVUzR2YkROdDNTVm1POGFmVU1jMUhVc29VRE9iX241dkx4SU9Ia2p4dnJjRDltcFVPUHJQVUVjc2otampCUU82d1dUTlRES01oMXZ1RVZtWXVBbWc2a053TlBpUGJvYV9FNnkzUTc0ZFZmUDZaOGJFNzJ6VlhxakdXZTY5QVlQX1gxb0ZyMW13cXJuejNCUlRfY3ZZX3VJLXBVNC1yYWw4R25melRqYXZsc2p3ZFo1MHlPUGhLbndxRVpB?oc=5",
+   "data": "2026-11-18T20:33:15Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "2de7ef8fa2f5",
+   "titulo": "Adesão ao Propag marca nova reunião da equipe de transição entre os governos de Simões e Cleitinho",
+   "veiculo": "Rádio Itatiaia",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQbE1JZ0s5eTlSY2JFWGw0VnV6N09kZTdkR25ncUc1aV9SeUxrVzBFTkJhSVU1d2s3WWl5TnJjamNYckhmeFQ5RVRkV2RzMFJSeURITzllbGQxN1JOS2hiS1JVd0VNbEZnZ2E0dUEyMzRrcUFYZjZvOFR5MXJLV1pJSFUwRDF6WjdJeEV3THhXUmFxMlloRERxbU83YWNrSDRfMjU4SFR6X2hyRGd3MHk5RkljRTFpblFKQnAySndhNUNkYUl5djl6Wkd5bjg1THh3Vmc?oc=5",
+   "data": "2026-11-18T20:04:36Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "24ab3e884f5d",
+   "titulo": "Sergio Moro anuncia ex-procurador da Lava Jato como secretário Anticorrupção do Paraná",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPRGs5dEZ0VGpXTGlwVC1pWnZYa3YxLXJ5YTRuSmJSc1J3bWF4M19RMjEtaE4tQkRHZkZUa1poM0Q5QmNSdV92cEQ4bEtqQmFBX2FpTjJKVlVmTEFXbkxpX1BzYnBCckpsMjV1d3FNcWxlSEROR3gyUDVUV0F6dzlWSEpwakFfUFhIdHBZWHBMaVVYc3REZXhsLWs1WW1aODd6b3doNHRfcU1lUXNoYnd3YnZhTnltall2T3NFSHZwcU13cUJCa0VYam4xMGRJeVFqdHdFZ01lM3hJd3MyUFBJeHdGS1TSAfMBQVVfeXFMTU1HNVZoQnR6d09jR1U1cUpqcUpsZUFsaEhDNE5NbFRTS2RDQjNwOHNsREtPT2NPZDNjaFpIZXk3SDdfVzBBU2FNNXBZTTdKU2RxaXQxcG5tM09WTkF4dTR3VW5WM3J6Nkdvd3VOeDZtdkVJb3lRcXYyck0tQW1zNV9qM19ZSjRwaGRsMWluOHBxZ3JJMG5FeVpkb0paLWFUdFNsVEtKRGk4c1luVEtyc3V3SXd4dmJWLVMyY214WDgwYWdEdkNoVEU2bHZyNkRjME9Ia1VfVXllS1RnSXlURXQ2djNiWTZRTHZ0WG9JRVNDSlV3?oc=5",
+   "data": "2026-11-18T20:02:14Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "232569921ad8",
+   "titulo": "Em discurso, Sérgio Moro critica projeto de ajuste fiscal e cita perdas para os estados",
+   "veiculo": "GPS Brasília",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZDlHdXNKZHlSTkNkRzctYmkxS0FKeUtLRFh6eGxQSzMwVDFYMjdhRXVuM1BPZ2EzS0ZuTnNvRzl2ajV2MGVjWnFPSlhISlktc2V0anJfS3llUlhPRTZydThLdjhjVU9WMWhRUlpvb2VDNUpoYUcwZ2hjUGhXS3VucA?oc=5",
+   "data": "2026-11-18T20:01:42Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [
+    "gastos"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "7af263032cc1",
+   "titulo": "Sergio Moro nomeia Carlos Fernando Lima para comandar Secretaria Anticorrupção no Paraná",
+   "veiculo": "Portal VV8",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQR0VTanZhSkl3REtiMTF3VzZPZXBJZC0tdktoeGtpVG1HOEU3TG9IcjB3RW1IR0Y2WFN5bUMxbGxlQmg5cHRIbW1HVkZVSS10ZDYweHljcnlqOU82ajhBcTlKc0xTZms2elA5bWVWT0hpSlBOSWVBZ080SEpVenlXd082TzNnNGloRTJOaW9rVmNaQnROV3NEdGpnRVJjSkxQclI1MEFaazJBWWp3WUNrdUk2ZkJta0ZhQUQ0VE9SZFFzVksxR2c?oc=5",
+   "data": "2026-11-18T19:14:48Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "7cfc506f1961",
+   "titulo": "Governo eleito de Zucco entrega projetos de reestruturação no secretariado",
+   "veiculo": "Jornal do Comércio",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQY184ckdJNGJQVHJRNlRHalhiOUxGSGpKaldzNk5hcmE0X0Z2Y3h1QldnVC1FZnBfV0F0SHU2dGJyYjV0dEs4ZlZfOXhSancyUXYyUFdrUS02dFNwM3BNWnd4YTNxX3NsdUNsQTkxeGdJSW1zenk4cW1pQVFsV3haUjJiaTZSSUpHdUJVNDE1ZkpRdnhOYVJkYVVMOFFCaFRCaS1IMWEzd2VmamsyWlloNWF3enIwQjBhb2E4MU5iX2psZVZLaklqVTNTRF9WWk5INFBj?oc=5",
+   "data": "2026-11-18T18:58:33Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "32ac25e4dab9",
+   "titulo": "Governo Zucco entrega projetos que preveem redução de 40% das secretarias",
+   "veiculo": "Radio Uirapuru",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQUjhVSTVkVnJFQkpqNmlnTnBTSEZBRm5RUThLdmpzUkk5dFBVSVdMTWQ3cy1SYmpzajgtTzZ2U2RGVm5JM2NBQTE2eFdXMmgtcmlPYWdoNUN5cGtVczdfZ3FJdGtLel9vYmpSQ3VPRk1TblJHQ3FUWGtvSW55X0tjWmhMXzhTNnhXWVQyMHVMNVg1ek9BeElrbWc2cXM5QkNW?oc=5",
+   "data": "2026-11-18T18:54:45Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "9fcd7029720f",
+   "titulo": "Com relatoria de Marcos Rogério, Comissão de Infraestrutura aprova R$ 4,9 bilhões em propostas de investimentos para 2027",
+   "veiculo": "Tribuna Popular",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPTjNPZGZlT1FIOHdxSnRMaFdKSUNEVE9rVHVOUmRWODl3REg3aUs2YzJpTFN4eVdweDRGS3FDTUw1eVM0bm1Pa2dTem5QX1hCQVpyNjduVkxSeUZKTnlOV3k0XzZXNlk5ZjJUR2dQb1hnZklOMG11WGt1cE1oczJlUG9RenpnejJrcjlxdS1lUExWY0N3VGl5NFBFbHYxTFVxUElBcllXNlo1STRyZWt2WXJFUHd2NFM5WGFMMUNmc21ESnJzT0ZuT2JVSXh5dkN1bWVFamZTT0NzbmpsdEJHdXFUTQ?oc=5",
+   "data": "2026-11-18T18:48:04Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "RO"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "fb0d57cdc8be",
+   "titulo": "Deputados Eduardo Fortes e Kátia Chaves se reúnem em Brasília com Neto Ayres, novo secretário de Governo do governador eleito Vicentinho Júnior",
+   "veiculo": "RR10 NOTÍCIAS |",
+   "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOWVhNZThlQVJTY244dHZHSFZlY0lkbmlvdjBid2VHbzItd1ladlFvMHlDaG5yQlJreXA1R0E3dzdJclRWX1pPUjRfVmZXbHVUR0s1a3Mwd0ZtUC11emM2c0ltbDdHT2EtZUJGSUpBMzJjRFo3dEp6Zk1LcXBXYWdIUU5SVXYyTnVnOU9YWXFZd1c0SXlSZVV3c3VyS0hnTTlJUXJnLThOamdWWHdOaWtLRTlicXJ1WXlfZXBTN1dRcFJzN0pkVzZGWkhyMDlCVkpqYXNQcXNnd3dMVlFfS1pmR0RuNUxoUmlNeWl1a0NJNzdJZ2JueGN3Nm9wdG5PanNY?oc=5",
+   "data": "2026-11-18T18:20:01Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "c70657e08dc3",
+   "titulo": "Ex-integrante da Lava Jato assume missão de estruturar combate à corrupção no Paraná",
+   "veiculo": "Rádio Cultura Foz",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNbVR6Vlp0dTREcWNlMFpJN2FWLW5nMThRa0I3alA0WFhyQTJEdG5hdUw2bWpMUkZTaVJjVlFkQmFadGxsNE0xdXpGNGo5NjZzOUpaTTAwYURtbWp2SU5GZFUzbDlfZEEyVDVZUUhmT0xUZUZ4VlFBTGVLQkdxUW8yWUNOOFIyVUtSSmtNaVhlbS1KZlg1azBUYnhYc0NXRHUyUU0yalJCMFVHd1ZFbkM1X0pJXzFLOGtSdHA3T245WW5jTUpFQkZQcjlQZ9IB0AFBVV95cUxQTHdiakhneGFwYk94Vlg0c2JfZ2RRTHJRc0hXTTZ4OWRiRHNkak5LSmZmd1dCQ3J5MlFvVVlFM0NKbzhiYlpvS2YweWE4VnNtbDEzaDVWck1MSUZ6UkhaMi1Td3BMLU9ydjVtTjVrdTRFRVVaOEp5NWRNdDZLWjFaYUt5R2NCVEI1R3lXZmRKUzdZbFlpVFhRQjJIMTlheEctVHZldWFJQ0hjSVc3V0o1eHBUY0tldTEyZ0dsVDhqeVFfRWxEaHFkNXZVWkNWYWx1?oc=5",
+   "data": "2026-11-18T18:19:54Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "a2432d458b24",
+   "titulo": "Comissão de Infraestrutura aprova relatório de Marcos Rogério com R$ 4,9 bilhões em emendas; R$ 1,3 bilhão é para rodovias do Norte, com prioridade para Rondônia",
+   "veiculo": "Eu Ideal",
+   "url": "https://news.google.com/rss/articles/CBMivwJBVV95cUxOSmQ3dWRDWHdwa1dsSjcwYzZvNlRocU9XaXo2NF9IVWFad2szNklmRS1jcmhHalo2NEl4QzdYRFlxNDhGdHJmUlY3cXl3NXAyVTlkX1hpXzMzQ0pQS3RXSTZHLWxWb0lEZ0dyb1NVNnlidUd5U1VUbk5ZN1ZtQ0FJSlBhR3dYU0JCUUhZcWluYjNLSDVOeGczWnEyd3RDRWMtM3oyZGtRb1FGX0VhTzFtNXBJWFc4bjVTTDNCeGhwYl9wZlZEMU9LZkoyY0pSSUtSWldtVUZiN243RHNEZEE5RDhydzFPcGh6ajBfcjlpSkx1X2ZTZTQxS2RnRzRCUnNyLUVFbDQ1R3FsVkc3T3FzVFp4QTZKSnRlNlVqR29vSWpsQlk3anR4a3lIdGpXQ3dJREV4TWF6aUNwTVdFbW53?oc=5",
+   "data": "2026-11-18T17:50:08Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "RO"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "a41b46a8fe51",
+   "titulo": "Propag reduz custo, mas liquidez da dívida preocupa equipe de Cleitinho",
+   "veiculo": "Diário do Comércio",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQUGd3NEJON0FPZ1hiQldnWm9IOERUSGI3aDRNREZILWd5M0o4b3RkNVlBUHJLZnhoWUo5R2ZuMmN5aUFoUVZvSFZfblE5OVByU2EzSmxwT1I0NlJDN2ltSVB1dlcyRUFTdmFTZ0FYaUVEYU82Qm1NMjdTZG5nam5xbEtRQlE4aHpsbW1wdXN1RGlobHlUMWRlWVNQRDl2aHpPQlVjMg?oc=5",
+   "data": "2026-11-18T17:47:00Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico",
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "2f47809e63ac",
+   "titulo": "Sergio Moro anuncia ex-integrante da Lava Jato para comandar Secretaria Anticorrupção do Paraná",
+   "veiculo": "Diário do Iguaçu",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNQjZiT2pNY0ZvSWVEN2JGdTVQNlhpTW9yX0xPenRzTGVHeVhKbHlrZVQ3LVpzSFoyYTl0ZXRyd1FDSWJsRmttVTNKdXR3SXhTMHgzalpwdURmMnhrWmpZZ1U1YkxXTmFWc0Iwczhsc2ZYbzdTMGpuT3M0VFNudVNmN0NmUGJET1k2TktvbGxhRjhkQmRNNmpFOEg5OUJ6aU1JUE0xQ1A3SGx5NjF5RGhIei1nSUpSc0lvVDZ4SWNOM0IzZVhRVDhlNkVfYXRaMnlSU0lmeVNNOTYwemhyTVNZQnFoRTZmQzNHZldocXJmSWpma2M?oc=5",
+   "data": "2026-11-18T17:41:00Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "c66fcecec6eb",
+   "titulo": "Bomba de quase R$ 4 bilhões: Cidade quer empurrar para Omar Aziz decisão sobre licitação da SEAP; veja vídeo",
+   "veiculo": "Portal CM7",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOd3JNMVBlb1hwTkRyLTVLMnZoX0dldEoyOHNjVTYxelN2LXRDeFNwOVMxNXpRU2dqTFlHTUZPZUVhc2tHREFGbHBBaFZhQmUxZjBGUVhwd2tUU1VjWHFybV8yQUlrYUlobHlHRlFTd0hudnBjZ1FxejRfZFlDZmoteHlfc21pRWoxdnVOaHo3Vnd5UGRYcl9jMG5LcXVIWGVvZG1XZEgzRnZjQVNSZmxqVVVtbW1qcWxCV05lQWRNSEIzb3gwUkd1d2hKUURQZE9JS21FN3dIc3hKVlhqcTEtbUY0S0E?oc=5",
+   "data": "2026-11-18T17:30:28Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [
+    "contratos"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "e7a5189b05c4",
+   "titulo": "Moro anuncia Carlos Fernando dos Santos Lima como secretário Anticorrupção do Paraná",
+   "veiculo": "Maringá Post",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPMTRDaDF3ZEpUdHVCeG4yVEFhRHJpU2RneTQ2c04tb2Ria1REVWFCRGhiTGtIWUt2XzNoVDBKcnpLR3ZPU243dmMwV0hPTGtqcm04eExJTmRockhFNFR5aERoTy13WlE1UUExSzUycU1DOEdJeFJmVG0tZE1BUmtPNWtXS2dhOW8zTnZpa21RaXhJRzBGNkwtOV83a3pVY0JIZmZ4TXVPbjhhbkhPMXlzNi1tOWphSmhYVExManZaTHM?oc=5",
+   "data": "2026-11-18T17:29:00Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "000c2a0dddae",
+   "titulo": "Sergio Moro anuncia ex-integrante da Lava Jato como secretário Anticorrupção do Paraná",
+   "veiculo": "Ric.com.br",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNOThwT3hKTUMtRXZzMmRkTEMwb21naFpvOEEzZjkwQUdGai1sMnpiQmM3TGgwZWhiQUVNV0QweGt0MDg2cnMxeEJJRzZNdFdSYXdiSjZlWHMySm5VR0VhTDBab2xYVm9ZekZXLWh6M0VoRHNKdkNEUUpVcDJoOGVlQmhEMENqbmkxa0liMGVabFRUQ0ZoNVY2Qg?oc=5",
+   "data": "2026-11-18T17:20:27Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "f209ade0e743",
+   "titulo": "Moro anuncia ex-integrante da Lava Jato para o comando da Secretaria Anticorrupção do Paraná",
+   "veiculo": "Banda B",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPQXduUklQYkktSUU0d3NTenFXSEpvd2s4RTZLVUh5STR4Mmx6MEQ5ZXVBd0IwS3RiZUh6QTIzdWlnUk8zOXN3RUFETmxBaDdWazl2aWJnNEpUOHRhcTlWWmdKNGx6Y2tfaGdNa20tb3RFMW5uNkdlcFdOSFN6ZGR2NXdFQW9jeVNITUdMVXYwdVJZS2RSaVEwRnRBWWR3M0h3VEZHZGZIeEk2Vm50VldtVWNrWDFURHB3VW9ISXNWT2V5cWh1VHVv0gHMAUFVX3lxTE85LW1oRDhOV3dMV2hZMTQ3QnhnQU5zTWhyMFBsUjIyakdpVF81X29ya0MxcV9nRXA3VVR1eTIwUXI3bHFQNy13UnNHV1VHLVk2cGtjdENJU1l2YnM1cnRKXzRKeW0wcmFzVzRpN25yYWNBeHNFY2lRMDNjUzFjSDdOXzhRX3BtVWhSX0F5WEZhSy1BUU5WdXVZY1dkaVRuZ3drdTZ0Y1pGT0I0MHYwN0wyOXVva0gybGdwTGZXNFlWSkIyTkE3WHRGVU5VRA?oc=5",
+   "data": "2026-11-18T17:10:00Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "90d1e53b0cf4",
+   "titulo": "Sergio Moro anuncia ex-procurador da Lava Jato para futura Secretaria Anticorrupção do Paraná",
+   "veiculo": "Rádio Paiquerê FM 98.9",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRWtUek9YQ1g4NDBtd3E0MlU0NVBLcnppelVMWGlzdVRQUS1Bc1Z2SlA2dG4zZEpLVWw4ZTBYSzdSdmpKSUtoUWE4dEY3R2NNaDQyc0tnS3B5TzdFRk1KRFRWaDZJQ3drRVo0YUJRZm1tam1pR0RJUl9mLWJZNXJMVzM2amVLT0RhaTNNcUtJZ1NiOC1aZE5pTzdFS1VReXprWVlma1hYVEx3ZzQybFJUdU9aOXdVYUxjOUo2VA?oc=5",
+   "data": "2026-11-18T16:58:00Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "a39f3f1447d7",
+   "titulo": "Omar Aziz avalia nomes para compor o primeiro escalão do governo do Amazonas em 2027",
+   "veiculo": "Portal do Zacarias",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQb2ZxNWxKcm1lZjR5dmxzVnpSMmpreFJfWGxQTWIybHdNLXJqYmt4cVktOVd5YW9kcmNBSVlCcWI4MjhLczFtOXQ2NjZ2ckVrMnhYRkctdm9jWjlYY1BJOExMd2gwb0tZTENSNVdxQWxqTm9ZUko0LWVNTjlkSk9vNzZKQTBpZWpsQjluQ0FWT2x5SmlkVmhEVlIzYmUwOHRiWHg2dkZhM1hmWDJUMmRmOU15QWhrNk9id3g1enpWcnVxMl9uT19mckZn?oc=5",
+   "data": "2026-11-18T15:52:00Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "e42d26cf81d1",
+   "titulo": "Cleitinho analisará propostas de até R$ 30 bilhões para renegociar dívida de Minas com a União",
+   "veiculo": "BH 24 Horas",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdk10NmtTSVpTYXdTZkw5TklueF9FLVdnaDg2Sllfb3hJLTBYZk91MDJyMEh4WmQ4NTg0RUc3dEpKeE1QeDFPcnkzRHJMSnNUMjZDYzNFY1F4NmNweFN1ZjRFa2tveDM3VkZvaEFJenYySmdod1dIZmV3TjJJWXFvWS15SFM4aHNUM1daSDVzajZKMXduTi0ydFNfZFVyZ24tX1h2VHg5aERuX21HRFVONkkySHlOSXFDMUtFamt0TGZJcUlPcVJV?oc=5",
+   "data": "2026-11-18T15:40:58Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "e9dd0849e7ee",
+   "titulo": "Republicanos conversa com aliados de Cleitinho sobre secretaria para Abramo",
+   "veiculo": "O Fator",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPODU0NGpTOHdVU0dDNjhkTXA3ckk4MUtUc1FUU1hpMm9ocFJ6S3ZSd0NUSmkxU1JmM1U5eDNpZjg4dHRLV01Jc0REM3U5emhqa29fUm51NGlROVNOV2h5OWhZOTNUMHhNLXgwTkRJUkc0SmpYRm9RcGFFMkM1ZTR1SmdKckpJakV5NUc0YnRaZWk3LUlaTFRpdWh3bG5lcFJsdE1zVVFpQXBEWmI2dGc?oc=5",
+   "data": "2026-11-18T15:17:00Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
   {
    "id": "789077a5c5e5",
    "titulo": "Mais de 40 dias após eleição, Clécio inicia transição de governo com Furlan",
@@ -154,6 +500,20 @@
     "diagnostico"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "203f1f607925",
+   "titulo": "Bate-chapa incendeia Alep na transição de Sergio Moro",
+   "veiculo": "Blog do Esmael",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSkEyWmZWejNNdzFPcnhOX0VoLVNEb0E1VUl5NHJUaVd5MG1XdlJLZVNYelVHRXRQMFVyeUtmUDZ1Q3RtdWxUVzVlX0pnMDR3b1RSb3lPSUhVWm5KSTFBUnY0VDdiMnN2NHJPbGVDVXh3Smo2ZTB5ZUE2NThZRl85YkdMd00?oc=5",
+   "data": "2026-11-18T13:48:56Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "10ccd7dd50ea",
@@ -218,6 +578,20 @@
    "categoria": "medida"
   },
   {
+   "id": "0ec80f6cd91b",
+   "titulo": "Furlan anuncia criação da Secretaria de Óleo, Gás e Energia para 2027 e apresenta Rodrigo Vianna como titular",
+   "veiculo": "Diário do Amapá",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPYzQyUGhKSC1wRWpPRUZDQ182TmpIVzZkSUN3V0JoOWNnWkxrMkJIWnFZeVZzVnFnUGtSQnVGT1RuXzNmMU9nRXpDYVVFalFFNHZHT2VrWmM4aF9ONjVRYkFNVDJBay01cDlCSGtuNDdBeXN4Q1JQY0J1cnVFX1RSQUxrOGhqZGowX0NWSDNGOXcweWJYdEJ0NHY1MlJCVHNJb19fTHpwUlhfNk5jMTgyWW9sVGttSnRnQ3lCdExfMXZaRGRRWHVMZndVZGxEUURUNmRMT0ZKbXdCdWROVzlnbk5seHl0TEMtV1Y1MlFWb0U0UQ?oc=5",
+   "data": "2026-11-18T12:58:37Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "AP"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "ab5a9248b171",
    "titulo": "Sérgio Moro terá orçamento recorde de R$ 84,6 bilhões para administrar o Paraná em 2027",
    "veiculo": "Umuarama News",
@@ -262,6 +636,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "f877731dc5c2",
+   "titulo": "Agricultura familiar no Tocantins apresenta demandas e propostas à equipe da próxima gestão de Vicentinho Júnior",
+   "veiculo": "Bico 24 Horas",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPM3V1R3QwSE1aYVh1dmNuLU9xYU9hYWRqSEJhdG1ZLUZXWllEOENVVm5JU2NPT081U3FSZnlPN3JiUy1MMWMxd0ZkMTBidy1uQUJqMXFnSktUb2NZbUJyb3NNN2RVeFYwZWJxUFNROHlpV19SVXFGYkFzaFZpZE8xeEtzRGFfS1piYkRfZTV1TGZEUGZHTThxc0JFaDBLeG9VX29RREY1ZTZmLWhlT1BNbVhyXzVad2pKWS0tRzIwR0FBYXV5MEVoNjJGY1lac2g4aHg3ako4MUtiYmFkdDlVdQ?oc=5",
+   "data": "2026-11-18T11:00:23Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "134a132dfdc2",
    "titulo": "Prefeito fortalece diálogo com Cadu Xavier e projeta parceria com o futuro Governo do RN",
    "veiculo": "Blog do Robson Pires",
@@ -299,6 +687,20 @@
    "outras": [],
    "ufs": [
     "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "f608e12f22a2",
+   "titulo": "Transição de Douglas Ruas busca referências de gestão no governo de São Paulo",
+   "veiculo": "Prensa Mercosur",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQUExKTURLdUJxZjgyZFA3YWE1andrZG5rb2o1NHB3M2pKN0FFTVdUTF9GMzVXaXRnSWpOU0JuY01RRGdwOXJ5YVJ6WE8zcXd2cWhxZnBNN25aSktXNU56TnRLUDdwZWRjVXAyWEhNNm12SWxOOG5KNkZ4YUwwcDNMWFZWeDFVbEdGX1N5Z0NWRHk2NGg2TGlLWHV1STFISnJNN0t3OUF1cnhQZFdLR2RiZGJEeW9vVVU?oc=5",
+   "data": "2026-11-18T07:22:52Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -428,6 +830,20 @@
    "categoria": "medida"
   },
   {
+   "id": "4bbe36c94cdb",
+   "titulo": "Eurico Tavares não descarta assumir secretaria no governo Omar Aziz",
+   "veiculo": "Rede Onda Digital",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQOUdKS3hNRnVoeWRHd0pNNGw0QXlORzNMT3NmckJFT3Q2WWtsTk14WWNNZXh3MUd1eWtjcVdSa1k4VC1qTUhnMEx3b1ZNUlhucmJYaVZXLWJKZmFWNmZtMmhXNUlZdVNyRURNMVNDRXhCbGRGNFNiRnFLNzlJUFA2N0dSNG04T3BiQTBPc3MxbUJBZktReDJ1dlFjTkRibjQxLUhuSE5QNjZGZ3c?oc=5",
+   "data": "2026-11-18T00:30:00Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "e101b875a348",
    "titulo": "Faetec contrata FGV sem licitação por R$ 35,4 milhões a 54 dias da posse de Douglas Ruas",
    "veiculo": "Ururau Notícias",
@@ -456,6 +872,23 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "b64495d90a4c",
+   "titulo": "Equipe de Transição pede raio-x de contratos, dívidas e servidores de 20 secretarias do Tocantins",
+   "veiculo": "oprogressonet",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMzBUQnkwWXhHUUZHNlp3MHFRSkNOQ25PeTN3LWhzZW9Zc2pMU2ZNVzVaYVplcGd6QUNPTVlYWFhjTUt5dGhjMG5BZm9MTHFrX2lObEFxU2hCal9udDd4b25kZUhlNjJzUmpubEhOeWp5UVB1SkZxRHR2T2JnSFRyUjlUdWV5NDVURTBMcVBLdC1rUGNSNTBxYXJ0S3pYVENTWWxqYXFnN3kyRlVQZzhpSE05Q2JvbFIwQld6LU93MlFJZ2FyRno1WA?oc=5",
+   "data": "2026-11-17T22:04:56Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [
+    "contratos",
+    "pessoal"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "04b4ace0ffca",
@@ -2111,6 +2544,20 @@
     "gastos"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "b698a36bd930",
+   "titulo": "Primeira reunião da equipe de transição ocorre sem a presença de equipe de JHC",
+   "veiculo": "7Segundos",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxObGQ0RnNoXzBJWVg0MDdfT3IxdTkwbnN4Q19mQU5PbG02WXJsYS1maXZIOUVXTUpUWUZnWVczZnJnNnJ3dDdZSXo0MHpQd3h6TnhQNlhJTDNKMi1ad1Jhb25Cb3FNeDcxTnllcEl2bXZQNVBvcEJjcGw2aVJGS1FnQWI2T2RJV19ubGFybEJ0bW5FcVU4ZzlvakFGdkt1elp1Y3dQY0JGZW01VEh4SDJUY2JwaHU1cy1xallES1FueDBHdjEtQXExYVp5WW5Gc3dDVFRN?oc=5",
+   "data": "2026-11-16T20:05:00Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "ce345bb29c18",
@@ -12871,6 +13318,22 @@
    "categoria": "equipe"
   },
   {
+   "id": "29ea1a62e6ce",
+   "titulo": "Omar Aziz contará com orçamento de R$ 37 bilhões para governar o Amazonas",
+   "veiculo": "Portal CM7",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdnQteEVOZ1dxendZMzNQcWc2NFZweERUeU1GaVpzNS1YUHYxN1V4UjYyd1dSc2lBb1YwbkRhRV9NSFZRVExPZDVXU29tc3lUVlZPbW1zdkx0Q1pIblk1Y1dOOHI1bUVPZkVsMWFscUNJVURpS0NvMFR2Z3F2M1Rjc1l1VTFmWVRmYzFIYlhUazJlVXB1LW1Wejlaa1ZPaE1BcnNQT0x4WUtEalJ0ak1YaUhKYnB4RkdD?oc=5",
+   "data": "2026-11-01T07:00:00Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "cef47c8bee3f",
    "titulo": "Marcos Rocha e Marcos Rogério se reúnem para tratar da transição de governo em Rondônia",
    "veiculo": "Imediato Online",
@@ -14958,6 +15421,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "a977202c242a",
+   "titulo": "Quem são os representantes da Zona Sul no secretariado de Zucco",
+   "veiculo": "GZH",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNTVd6cEhOV09nOW1iemktR3B6T21HX3g0Wkg4UDg1azFDTE9yZHFhRkE3NnU1RUYzcU00ckUyZHBkc2JDOXR6eG1oT3o2TlVkMUFuRzVDRDJESWxsZEZBLTF2akhiRUNpWW9yWlRYc1Jxd0lZVERiRDdmbHBaYm4teXdETzNkb1lTR3NKMGxsMkZIN1AxSWFBWGs2YUxKZ1NaR19peUtJXzlXQ00zT0NmNk5ZZ1pTMHJ5YzJTcGVrVWd3RS1BT3ZiWmdTbzNGR01wUFhGd1J0eWE0WlB3eS1HN1VFcmhsdk10VjR1Y2J2OURvQQ?oc=5",
+   "data": "2026-10-27T07:00:00Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "a46961da0b98",
    "titulo": "Sintergs propõe diálogo com Zucco para discutir valorização dos servidores estaduais",
    "veiculo": "Sul 21",
@@ -15043,6 +15520,20 @@
    "outras": [],
    "ufs": [
     "RJ"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "67b7ebb917f4",
+   "titulo": "Vicentinho dá início à transição de governo com entrega oficial de equipe ao Estado; Veja os escolhidos para comissão!",
+   "veiculo": "Gazeta do Cerrado",
+   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQRFEya0JrUVNDdlFpUy1sYVVMUElnUnQ3LVBkMElVQVZ5TF9xZkdzeHZvbEU3MkxpcW1ZWlZKU0w3N1FVNGdMRDFvdWF0Mm42U2kwa1ZjcXdlbFVfUXJfYUNKUUdxQk9uYVZpTk9FMDJqb0tQV1N6cW1tUWc2TWpUeTNhbFJHbENqMHczVFBtTWpOTFFzeFd4YlkzVTNJNG9laGpNaTd0ME0yY2g3Rlp0eHlKVEplZXB4cFpNbFBWdVVNS1ZTbnRRaXc3Wml6Wm5DcTI0blJ3MEdEei1DV2pHYUpSTnh0b2JaNHpFVHk5SQ?oc=5",
+   "data": "2026-10-27T07:00:00Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "TO"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -18766,6 +19257,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "29ff797e6d16",
+   "titulo": "Paulo Dantas define equipe para coordenar a transição para Governo de JHC",
+   "veiculo": "Já é Notícia",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNUnJvTTBUaGhUVjAyNzlpWXFkOTlSNHJtOENVRzFmQ093MXFNQWdxcnJtZDNBQl90dTRfbFRLaGFYMUhkbjVxZlY1TFIyVUpRLV95OURJYjFHQUZ4RnJXVHpSMnFVbDAzNGR1S3lVZ25WTE01RTI5Zi1PSlpQa29yS1pDQ0pwVGFQVEZfdHlxQ25LZ25DWXBCeVdjcV8wUTZacVdUZjNxV0RGWVNEUklJTkRydmg0YVRSbjZJSmFKcS1nMVox?oc=5",
+   "data": "2026-10-14T07:00:00Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "2770f4c2935e",
    "titulo": "Cotado para assumir a Fazenda no governo Zucco discute problemas do RS com coordenador do plano econômico de Flávio Bolsonaro",
    "veiculo": "GZH",
@@ -20047,6 +20552,20 @@
    "categoria": "medida"
   },
   {
+   "id": "4231ea7c3c3d",
+   "titulo": "Eduardo Leite e Luciano Zucco dão início à transição de governo no Rio Grande do Sul",
+   "veiculo": "Grupo Ceres de Comunicação",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVjA4MGRudjd1SUNUUHlpUkp6UWg4NUIyRVVlUi1UXzdPQXp4N1ZBZmw1dzJMNzM5YTVEVEpTX0xCSERBNVBMalR0RVk3VWJDb29FMjBJTDJUTlJWTVROTUV0Wk5HTTROSkZlazFLYUx5UTdzNDVlbGxTVTlRRDhaRVN4NU5IZ1poRzh2dGpIdWJ5c1NrMTVrdV9pTEdOaW1raVlTNV8wa1BuNzRkY3k1OVJOazdoZlhHVy1UcnlWTQ?oc=5",
+   "data": "2026-10-09T07:00:00Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "40c494a2629b",
    "titulo": "“Se eu for convidado, obviamente teria meu sim”, diz deputado cotado para secretário da Fazenda de Zucco",
    "veiculo": "GZH",
@@ -20343,6 +20862,22 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "b443712e3770",
+   "titulo": "A ideia de Cleitinho a Flávio Bolsonaro sobre a dívida de Minas",
+   "veiculo": "O Fator",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdllTMG5QNHE1eHZZU0lMNWtheS1xRVNiX3ZLNGVTVEtzSVpOa1c4Y0F3dE9oRE1iOUpxWE93TF9jN0ZzRjNOb3dWeTc5bkJ2VjRkSFFjUWNreHMzUE4xZTNYdXVEQWxiQ1daZGFKM3hscFNvMzZjc1VEZHB5ZkRvY09qMFA4WWVYYmFNTXg2a3BwQnhuRk1lYkhTLVo1QQ?oc=5",
+   "data": "2026-10-08T07:00:00Z",
+   "coletado_em": "2026-11-18T21:17:56Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "acf0aeeaa3ae",

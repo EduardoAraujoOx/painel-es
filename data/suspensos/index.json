@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-18",
- "gerado_em": "2026-11-18T15:21:45Z",
+ "gerado_em": "2026-11-18T21:20:01Z",
  "primeiro_levantamento": "2026-10-30",
  "baseline": false,
  "contagem": {
@@ -240,9 +240,7 @@
    "valor": 21980.0
   }
  ],
- "novos": [
-  "181|Autorização de Compra/Ordem de Fornecimento 2026.000211.45105.05/2026|Autorização de Compra/Ordem de Fornecimento|31351099000108|2026-07-29"
- ],
+ "novos": [],
  "saidas": [],
  "itens": [
   {

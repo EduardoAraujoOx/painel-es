@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-18",
- "gerado_em": "2026-11-18T20:17:15Z",
+ "gerado_em": "2026-11-18T21:17:18Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 13,
+   "lidos": 14,
    "aceitos": 7,
    "possiveis": 1
   },
@@ -34,22 +34,22 @@
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 9,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 6,
+   "lidos": 9,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 13,
+   "lidos": 14,
    "aceitos": 6,
    "possiveis": 1
   },
@@ -65,8 +65,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 5,
+   "lidos": 10,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 69,
+   "lidos": 70,
    "aceitos": 1,
    "possiveis": 6
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -130,7 +130,7 @@
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
    "lidos": 6,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -139,13 +139,13 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 5
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 28,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 4,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -278,22 +278,51 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 5,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "possivel": 17,
-  "veiculo_excluido": 39,
-  "sem_contexto": 281,
+  "possivel": 16,
+  "veiculo_excluido": 40,
+  "sem_contexto": 283,
   "oficial_sem_tema": 4,
   "sem_contexto_com_tema": 15,
-  "excluir": 69,
+  "excluir": 67,
   "exterior_sem_ancora": 6,
   "caixa_alta": 2,
   "outro_estado": 14,
-  "sigla_sem_ancora": 8,
-  "veiculo_outra_praca": 7,
+  "sigla_sem_ancora": 7,
+  "veiculo_outra_praca": 6,
   "generico_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "0f443ca5d0d7",
+   "titulo": "Governo do Estado apresenta programa de desenvolvimento rural de R$ 830 milhões em parceria com o Banco Mundial",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQZDZXeHAzZnRqckVHMHlDcXpxQm1ocExoaHRya0JSVzlsTGRuRGxtVWNpN3A0ZU9JcHZ6d0laNkRlSnFXQUo3VU9ENjFYYWI2bnB5aFhmUnNJczJVd25jZ29YUm5FZUtpUWY1ZXE0el9Mak5PQXY2bko5NnlIOFBkLUFLMFdVT255Rlp0MVJxb29KcWVIaGZRSXBzZGFuOGZZMXU5bUIyRE5zeDh3M01uYUoxalFoQlJqcGlIa3dNQzlub21nVVRCT2NKWkc?oc=5",
+   "data": "2026-11-18T20:43:00Z",
+   "coletado_em": "2026-11-18T21:17:18Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "16754566c569",
+   "titulo": "Equipes de transição do Governo do ES e de Lorenzo Pazolini se reúnem",
+   "veiculo": "A Notícia do Caparaó",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxObjBEclVnTGxYMlQ3TFFaUTVWY2IzTnpsWXlPWVBUZ3RSbENiakktRUZCUmlQT2xHUFR1akRMWUJINm5kaGpIa09pSTZENkJjUWFWTk5HeTBoVzhDZVV5UWZQNC1aMGZmWlRBOVVhbmd5S3J3TjJBcGNUSTluUTlRa2JKSng1V2FKN0o0Um4yOG1pMGZidVhfZEFmUHhRZU55c1I5MFlTZlRMUVJpMXBOdER3?oc=5",
+   "data": "2026-11-18T20:21:31Z",
+   "coletado_em": "2026-11-18T21:17:18Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
   {
    "id": "1f655c29f97a",
    "titulo": "Transparência Internacional critica 575 novos cargos no MPES: \"Trair a confiança\"",
@@ -467,7 +496,12 @@
    "url": "https://g1.globo.com/es/espirito-santo/noticia/2026/11/18/terceirizados-de-quartel-da-pm-sao-presos-suspeitos-de-usar-cartao-de-policial-em-vitoria.ghtml",
    "data": "2026-11-18T18:28:53Z",
    "coletado_em": "2026-11-18T19:17:27Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "G1",
+     "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQSVpITW5LdEhqNm5MdHkwdVNKQTBoUjlZODBLWU5Gb19xRXNxR2FwZkJTbjRGcUliQkQ4TWhvVzhQWmVKN0hTSHVzeW00dFpBSmt0cm91QURpTi1tWFFuOHVmNmphMnNzdGNUYzRjdlFpMlBSRjlGR2NQUi1zcHd6U0RjcDVNOWYtZVBZQ3hjUkszTHlnMnR0NGdtdE8zbGdMYkY3RDFsWUNXdzM0WFVSVUtJUC0wTTlKdUlOTDhId2xKQzh2MWJObV9tVlZmY1ROZHd5WHNvNjhneHhSemZlRkdLdUdXYVJs0gH3AUFVX3lxTE40cUxMVktLY3Uxb0ZndmpReUE5Q3RtbmduSFVDV2VzYVBadERycU9iMlUtUU9yc2RIYzNycnJkTEY1X0hnSWltZHlfYlJvYTZMaTV4TmpxdjFTZU9TbmU0NmwxOEhTV285b0lKVHdFNWpHQmZvdm5kbG1kc1dvSXFFRDlkbElma2ZvWFc2cnFfWTVza0JQN3A0azlvSTdaSjRoTEM2cU5VWGNQcjlTY01RVlBoSnhjM3IweVlXcXNKdG9TLVNKelh5TkhubkNNdHFYYlUwenp0RVpBVE52NURxNldMdHJYQ0VSN3NCR1VQZEd1T3l0QUU?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 9,
    "temas": [
