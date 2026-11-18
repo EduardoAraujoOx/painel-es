@@ -143,6 +143,18 @@
         <span id="faixa-dados"></span>
         <span class="faixa-acoes"><span id="atualizado" class="mesref"></span></span>
       </div>
+      <form id="inscricao" class="cartao inscricao" novalidate>
+        <div class="inscricao-texto">
+          <b>Receba as notícias por e-mail</b>
+          <span>Um resumo às 8h, 12h e 18h com as manchetes novas, os atos do Diário Oficial e as obras paralisadas. É só informar o e-mail; todo resumo traz o link para sair.</span>
+        </div>
+        <div class="inscricao-campos">
+          <label class="inscricao-rotulo">Seu e-mail <input id="inscricao-email" type="email" name="email" autocomplete="email" required maxlength="254" placeholder="nome@exemplo.com"></label>
+          <div class="isca" aria-hidden="true"><label>Não preencha <input id="inscricao-site" type="text" name="site" tabindex="-1" autocomplete="off"></label></div>
+          <button class="botao" type="submit">Receber por e-mail</button>
+        </div>
+        <p id="inscricao-retorno" class="inscricao-retorno" role="status" hidden></p>
+      </form>
       <div class="cartao">
         <div class="filtros">
           <label class="busca">Buscar nas manchetes<input id="busca" type="search" maxlength="80" placeholder="Ex.: orçamento, secretaria, auditoria, Sefaz…"></label>
@@ -154,10 +166,34 @@
       <div id="metodo"></div>
     </section>`;
 
+
+  function inscricao() {
+    const form = $('#inscricao');
+    if (!form) return;
+    const msg = (txt, ok) => { const r = $('#inscricao-retorno'); r.textContent = txt; r.className = 'inscricao-retorno ' + (ok ? 'certo' : 'erro'); r.hidden = false; };
+    form.addEventListener('submit', async (ev) => {
+      ev.preventDefault();
+      const email = $('#inscricao-email').value.trim();
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { msg('Informe um e-mail válido.', false); return; }
+      const botao = form.querySelector('button[type=submit]');
+      botao.disabled = true;
+      try {
+        const r = await fetch('/api/alertas', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ acao: 'assinar', email, site: $('#inscricao-site').value }) });
+        const d = await r.json().catch(() => ({}));
+        if (r.status === 401) { PF.mostrarLogin(); return; }
+        msg(d.msg || (r.ok ? 'Pronto.' : 'Não foi possível concluir. Tente de novo.'), !!d.ok);
+        if (d.ok) $('#inscricao-email').value = '';
+      } catch (e) {
+        msg('Sem conexão. Tente de novo.', false);
+      } finally { botao.disabled = false; }
+    });
+  }
+
   async function montar(contexto) {
     ctx = contexto;
     raiz = ctx.container;
     raiz.innerHTML = ESQUELETO;
+    inscricao(); // o formulário não depende dos dados: aparece mesmo se a lista falhar
     try { verificacao = await ctx.api('verificacao'); } catch (e) { verificacao = null; } // opcional: sem o arquivo, a tela mostra só a última coleta com novidade
     try { dados = await ctx.api('index'); } catch (e) {
       if (e.sessao) { PF.mostrarLogin(); return false; }
