@@ -20,6 +20,11 @@ export function tokenValido(t) {
   return typeof t === 'string' && /^[0-9a-f]{64}$/.test(t);
 }
 
+// código de pessoa da contagem de logins: 12 caracteres hexadecimais (calculados no servidor do painel; ver api/_auth.js)
+export function pessoaValida(p) {
+  return typeof p === 'string' && /^[0-9a-f]{12}$/.test(p);
+}
+
 // comparação em tempo constante (não vaza, pelo tempo, quantos caracteres batem)
 export function igualConstante(a, b) {
   const x = new TextEncoder().encode(String(a ?? ''));
