@@ -30,7 +30,7 @@
 
     <form id="form-assinar" hidden novalidate>
       <label>Seu e-mail <input id="email" type="email" name="email" autocomplete="email" required maxlength="254" placeholder="nome@exemplo.com"></label>
-      <label>Código do convite <input id="codigo" type="text" name="codigo" autocomplete="off" required maxlength="64"></label>
+      <label id="rotulo-codigo" hidden>Código do convite <input id="codigo" type="text" name="codigo" autocomplete="off" required maxlength="64"></label>
       <div class="isca" aria-hidden="true"><label>Não preencha <input id="site" type="text" name="site" tabindex="-1" autocomplete="off"></label></div>
       <button class="botao" type="submit">Cadastrar</button>
     </form>
@@ -38,6 +38,8 @@
     <div id="acao" hidden>
       <button id="botao-acao" class="botao" type="button"></button>
     </div>
+
+    <p id="botao-entrar" hidden><a class="botao" href="/#/noticias">Entrar no painel</a></p>
 
     <p id="retorno" role="status" hidden></p>
     <p><a class="voltar" href="/#/noticias">Ir para o painel (tela de Notícias)</a></p>
