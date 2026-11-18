@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-18",
- "gerado_em": "2026-11-18T19:17:27Z",
+ "gerado_em": "2026-11-18T20:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 29,
-   "aceitos": 11,
+   "aceitos": 12,
    "possiveis": 4
   },
   {
@@ -41,16 +41,16 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 5,
+   "lidos": 8,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 11,
-   "aceitos": 5,
+   "lidos": 13,
+   "aceitos": 6,
    "possiveis": 1
   },
   {
@@ -66,7 +66,7 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 4,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
@@ -74,14 +74,14 @@
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 5,
-   "possiveis": 1
+   "aceitos": 6,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 67,
+   "lidos": 69,
    "aceitos": 1,
    "possiveis": 6
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 48,
+   "lidos": 50,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 30,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 30,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 25,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -169,8 +169,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 2,
+   "lidos": 5,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -195,7 +195,7 @@
    "ok": true,
    "lidos": 9,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 5,
    "possiveis": 3
   },
   {
@@ -218,25 +218,24 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
-   "possiveis": 0
+   "aceitos": 1,
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 2
   },
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 415: Unsupported Media Type"
+   "ok": true,
+   "lidos": 30,
+   "aceitos": 4,
+   "possiveis": 0
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -259,7 +258,7 @@
    "consulta": "https://www.agazeta.com.br/colunas/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -279,22 +278,107 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 8,
+ "novos_na_coleta": 5,
  "descartes_na_coleta": {
-  "possivel": 18,
-  "veiculo_excluido": 44,
-  "sem_contexto": 258,
+  "possivel": 17,
+  "veiculo_excluido": 39,
+  "sem_contexto": 281,
   "oficial_sem_tema": 4,
-  "sem_contexto_com_tema": 16,
-  "excluir": 60,
-  "exterior_sem_ancora": 7,
+  "sem_contexto_com_tema": 15,
+  "excluir": 69,
+  "exterior_sem_ancora": 6,
   "caixa_alta": 2,
-  "outro_estado": 15,
-  "sigla_sem_ancora": 6,
+  "outro_estado": 14,
+  "sigla_sem_ancora": 8,
   "veiculo_outra_praca": 7,
   "generico_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "1f655c29f97a",
+   "titulo": "Transparência Internacional critica 575 novos cargos no MPES: \"Trair a confiança\"",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/transparencia-internacional-critica-575-novos-cargos-no-mpes-trair-a-confianca/",
+   "data": "2026-11-18T20:05:47Z",
+   "coletado_em": "2026-11-18T20:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "11e12892e648",
+   "titulo": "Equipes de transição do Governo do Estado e do governador eleito se reúnem",
+   "veiculo": "Aqui Notícias",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQ3pZOER5bGxHV3F6bjR1TGppbmVKQVdNVEVwS0xvR3Z2OE83cUlJR015QmFXa1FYSGRWbEkxZ0dCMU9aZHQyZkFVamg2ZFY5NUk5QzdJVnlsU3hHRVlsQ192VXJ5VHdzR0NoSDBjUFFiQlRpbnZicmdIMGxqREJ1YVJSaGN6cWU0WHdGeUNxTEJGVTFMSW03VVdsRjFuUklCSWZQSkFUZ1p0MU0z?oc=5",
+   "data": "2026-11-18T19:55:25Z",
+   "coletado_em": "2026-11-18T20:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "f2b78950549b",
+   "titulo": "ES divulga calendário do IPVA 2027; desconto será de 15%",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/espirito-santo/2026/11/calendario-do-ipva-2027/",
+   "data": "2026-11-18T19:51:22Z",
+   "coletado_em": "2026-11-18T20:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "889cf1d7f9d9",
+   "titulo": "Servidores em cidade do ES terão 12 dias de folga (menos os coveiros)",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/leonel-ximenes/servidores-em-cidade-do-es-terao-12-dias-de-folga-menos-os-coveiros-1126",
+   "data": "2026-11-18T19:33:02Z",
+   "coletado_em": "2026-11-18T20:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "e8b4e95c11b9",
+   "titulo": "Governador sanciona lei que cria 561 cargos no Ministério Público do Espírito Santo",
+   "veiculo": "Aqui Notícias",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSHBqdDNPYmJXeXdRdTdtYmx6a1FQYzdkTDRFb0VTaGVFNWplTE03Q3hUUHlvRWFscW9oR01PUU9sd0NRV3B0ajV5Znd2ZnFYd1FRRm9YUV8zbWZhVFJ5cmUzdjVnSUZpelJFSy1TS2VTTUpGQ0doUnRSRmNNQUs5MGdNaXlRLUk1RlhSelV4Rm1tTU1YU21zdG1GSGEydGpmUU1WU3luSzVWbERnSmt6SkliUWtSSmNU?oc=5",
+   "data": "2026-11-18T19:22:49Z",
+   "coletado_em": "2026-11-18T20:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "24d5fdd45b10",
+   "titulo": "Dólar sobe e supera R$ 5,85; Ibovespa recua 1% em dia de votação de ajuste fiscal no Senado",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/cotidiano/dolar-sobe-e-supera-r-585-ibovespa-recua-1-em-dia-de-votacao-de-ajuste-fiscal-no-senado/",
+   "data": "2026-11-18T19:22:37Z",
+   "coletado_em": "2026-11-18T20:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "c57dee2340ea",
    "titulo": "Desconto de 15%: governo divulga calendário do IPVA de 2027 no ES; veja datas",
@@ -304,6 +388,20 @@
    "coletado_em": "2026-11-18T19:17:27Z",
    "outras": [],
    "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "3b84fea769d9",
+   "titulo": "Sefaz oferece desconto no imposto sobre heranças e doações até 30 de dezembro",
+   "veiculo": "7Segundos",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNR0tFdjVPWXN0WVZYMWNVNnZXaDkzTi1ocGNrSHNWNllvNTNMMzJaODF5NlRNMFV1ZVBrZ1Qwc1BJUjZQYmx4TUFtQUNHZEpIZ1lYZXE5S2x5YzFQcVFDSlVGdlJWZmdxUnItOW9EczVSRWNvOU0yNHI5c3hPd20yMlFnT1ZFaHNFN1JWWnQ5c3dyd3JBMnlxUjBSYVRyUlFhUFJhcG5wcFBValZaaURZUFM0OHBFTVo3ZG80Q00yM21GSG1MTlBKWlM4UUtRN2FqS2ZLOWdXQQ?oc=5",
+   "data": "2026-11-18T19:04:00Z",
+   "coletado_em": "2026-11-18T20:17:15Z",
+   "outras": [],
+   "possivel": true,
    "triagem": 9,
    "temas": [
     "financas"
