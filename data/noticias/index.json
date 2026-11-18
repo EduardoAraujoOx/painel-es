@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-18",
- "gerado_em": "2026-11-18T14:17:27Z",
+ "gerado_em": "2026-11-18T15:17:26Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 11,
+   "lidos": 12,
    "aceitos": 7,
    "possiveis": 0
   },
@@ -25,15 +25,15 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 6,
-   "possiveis": 3
+   "lidos": 28,
+   "aceitos": 5,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -41,7 +41,7 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 5,
    "possiveis": 0
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 10,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 70,
+   "lidos": 67,
    "aceitos": 0,
    "possiveis": 6
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 45,
+   "lidos": 49,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 32,
+   "lidos": 31,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 27,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 30,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 1,
+   "lidos": 10,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -226,17 +226,16 @@
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 3
   },
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 415: Unsupported Media Type"
+   "ok": true,
+   "lidos": 30,
+   "aceitos": 4,
+   "possiveis": 0
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -279,22 +278,59 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
   "veiculo_excluido": 47,
-  "sem_contexto": 255,
-  "oficial_sem_tema": 4,
-  "excluir": 64,
+  "sem_contexto": 284,
+  "oficial_sem_tema": 6,
+  "oficial_divulgacao": 1,
   "sem_contexto_com_tema": 16,
-  "outro_estado": 16,
+  "excluir": 70,
+  "outro_estado": 19,
   "possivel": 17,
-  "exterior_sem_ancora": 8,
+  "exterior_sem_ancora": 7,
   "caixa_alta": 2,
   "sigla_sem_ancora": 4,
-  "veiculo_outra_praca": 8,
+  "veiculo_outra_praca": 7,
   "generico_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "025647f4812a",
+   "titulo": "Seis linhas do Transcol passam a ter integração gratuita em Vila Velha",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/transito/seis-linhas-do-transcol-passam-a-ter-integracao-gratuita-em-vila-velha/",
+   "data": "2026-11-18T15:10:37Z",
+   "coletado_em": "2026-11-18T15:17:26Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "903496b67242",
+   "titulo": "Trabalhadores denunciam infestação de ratos e condições precárias de higiene no prédio da Sesa",
+   "veiculo": "Portal Verdade",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPTjJSRm8tbGtBOTFZVU0tNmpJcXl4dmlXdTUwWUJ0YnVZakZjQk9WUHdnQnlzZFl0UUVzazMydFdsYjgxN3FGX0VTSmlXNzI5Tm1PLTlZVXhsdWVYM0s5THAwNXNiY1U2dmVJRnMyMXg2NWpQcU80SUF6X0FFcTQ0bUFMU0FERGMySFoxME5sOUJ1UnN0SWdQcG1tbVJqbHZTWXlKWWh3WHBLQXBqZUppRGlVRXdpYnMxVnhDQktNOHNNUQ?oc=5",
+   "data": "2026-11-18T14:36:39Z",
+   "coletado_em": "2026-11-18T15:17:26Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "c294a5a5f95f",
+   "titulo": "Hospital Estadual Dr Jayme Santos Neves realiza captação de múltiplos órgãos e beneficia quatro pacientes no Espírito Santo",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPUkoxQ19qZFhRNURET2tuaVQxQjdDVUZIRDBvQV9sOXNBQ1pDYkxoeHJLMUFCNXJmaTZleHRVaW9GV0FVQlo0US1hNkJoZ2g0aGZMZEFaSnR0MWdEcVdZX2dTNnRRSEFmcGk0OU4yS2dvR2FmTmdfOVptdy1ORUdqdl83eTdLN1dpZUJJZV9fSnh2aEdqUEFha2laNXR1dW5SaGpIa1V6WWt6Ry1EbHVHNnFrVlJwdC1oSWt6dFotcC1iakhpUjd0TzgwRVVRRExhRGNua2tGeC1yZ1lxeVE?oc=5",
+   "data": "2026-11-18T14:33:00Z",
+   "coletado_em": "2026-11-18T15:17:26Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "d0e4ade1fc07",
    "titulo": "Concurso do Banestes oferece oportunidades em cadastro de reserva com salários de até R$ 5,6 mil",

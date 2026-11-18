@@ -1,11 +1,11 @@
 {
- "ref": "2026-11-13",
- "gerado_em": "2026-11-13T21:20:04Z",
+ "ref": "2026-11-18",
+ "gerado_em": "2026-11-18T15:21:45Z",
  "primeiro_levantamento": "2026-10-30",
  "baseline": false,
  "contagem": {
   "suspenso": 25,
-  "rescindido": 75,
+  "rescindido": 76,
   "anulado": 50
  },
  "serie": [
@@ -20,6 +20,12 @@
    "suspenso": 25,
    "rescindido": 75,
    "anulado": 50
+  },
+  {
+   "data": "2026-11-18",
+   "suspenso": 25,
+   "rescindido": 76,
+   "anulado": 50
   }
  ],
  "por_orgao": [
@@ -33,9 +39,9 @@
   {
    "orgao": "DIRETORIA DE SAUDE DA POLICIA MILITAR",
    "suspenso": 0,
-   "rescindido": 11,
+   "rescindido": 12,
    "anulado": 4,
-   "valor": 331994.86
+   "valor": 386683.9
   },
   {
    "orgao": "SECRETARIA DE ESTADO DA SAÚDE",
@@ -234,7 +240,9 @@
    "valor": 21980.0
   }
  ],
- "novos": [],
+ "novos": [
+  "181|Autorização de Compra/Ordem de Fornecimento 2026.000211.45105.05/2026|Autorização de Compra/Ordem de Fornecimento|31351099000108|2026-07-29"
+ ],
  "saidas": [],
  "itens": [
   {
@@ -1532,6 +1540,24 @@
    "categoria": "rescindido",
    "ano": "2023",
    "visto_em": null
+  },
+  {
+   "id": "181|Autorização de Compra/Ordem de Fornecimento 2026.000211.45105.05/2026|Autorização de Compra/Ordem de Fornecimento|31351099000108|2026-07-29",
+   "orgao": "DIRETORIA DE SAUDE DA POLICIA MILITAR",
+   "orgao_id": "181",
+   "documento": "Autorização de Compra/Ordem de Fornecimento 2026.000211.45105.05/2026",
+   "tipo": "Autorização de Compra/Ordem de Fornecimento",
+   "fornecedor": "PENTAMAR COMERCIO E SERVICOS LTDA",
+   "cnpj": "31351099000108",
+   "objeto": "AQUISIÇÃO DE PULSEIRAS DE IDENTIFICAÇÃO DE PACIENTES",
+   "valor_inicial": 54689.04,
+   "valor_final": 54689.04,
+   "celebracao": "2026-07-29",
+   "fim": null,
+   "situacao": "Rescisão Contratual",
+   "categoria": "rescindido",
+   "ano": "2026",
+   "visto_em": "2026-11-18T15:21:45Z"
   },
   {
    "id": "157|Contrato 2024.000025.44916.01/2024|Contrato|07039651000134|2024-08-05",

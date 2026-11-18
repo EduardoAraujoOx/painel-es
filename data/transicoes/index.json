@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-18T11:18:36Z",
+ "gerado_em": "2026-11-18T15:19:41Z",
  "ref": "2026-11-18",
  "desde": "2026-10-04",
  "estados": [
@@ -8,14 +8,14 @@
    "nome": "Alagoas",
    "eleito": "JHC",
    "partido": "PSDB",
-   "total": 115
+   "total": 116
   },
   {
    "uf": "AP",
    "nome": "Amapá",
    "eleito": "Dr. Furlan",
    "partido": "PSD",
-   "total": 32
+   "total": 33
   },
   {
    "uf": "AM",
@@ -36,7 +36,7 @@
    "nome": "Minas Gerais",
    "eleito": "Cleitinho Azevedo",
    "partido": "Republicanos",
-   "total": 216
+   "total": 219
   },
   {
    "uf": "PA",
@@ -50,14 +50,14 @@
    "nome": "Paraná",
    "eleito": "Sergio Moro",
    "partido": "PL",
-   "total": 159
+   "total": 161
   },
   {
    "uf": "RJ",
    "nome": "Rio de Janeiro",
    "eleito": "Douglas Ruas",
    "partido": "PL",
-   "total": 173
+   "total": 174
   },
   {
    "uf": "RN",
@@ -78,14 +78,14 @@
    "nome": "Rondônia",
    "eleito": "Marcos Rogério",
    "partido": "PL",
-   "total": 66
+   "total": 67
   },
   {
    "uf": "RR",
    "nome": "Roraima",
    "eleito": "Arthur Henrique",
    "partido": "PL",
-   "total": 26
+   "total": 28
   },
   {
    "uf": "TO",
@@ -106,11 +106,161 @@
   "fndr": "FNDR e reforma tributária"
  },
  "contagem": {
-  "total": 1447,
-  "medidas": 464,
-  "equipe": 983
+  "total": 1458,
+  "medidas": 469,
+  "equipe": 989
  },
  "itens": [
+  {
+   "id": "789077a5c5e5",
+   "titulo": "Mais de 40 dias após eleição, Clécio inicia transição de governo com Furlan",
+   "veiculo": "SDB News",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWHBYVXoxVHpCbTZaZ0ZKMVFBTXJkTGZvel9tTmljdUE1QkZfZk0zWXB1N3prVV9JRVB6WW4zN2NUSzVMU3hIZE5wQmZ3dDZtYlpka282R1EzSWRNejk3TFoyamFjc3RWVGlsZjRTS2d4V2dhcEowZThFa3JObS1ybHBNRmxNSjAzanZvd2lCWFpmQkxVNUVILVg1aXROUjg?oc=5",
+   "data": "2026-11-18T14:40:00Z",
+   "coletado_em": "2026-11-18T15:19:41Z",
+   "outras": [],
+   "ufs": [
+    "AP"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "fca256ad3ffa",
+   "titulo": "Bacil participa de debate junto à equipe de transição de Sergio Moro",
+   "veiculo": "Hoje no Centro Sul",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdHVFQ0I0TTVzOTRpSDlnblJNenpGQ2tDXzlSZG1MMm4zUXkyVnVaUzYzVXhGSElrMzVuZlQ5MFVKcGFzT3Jna0YyVUpDZHh5eEctQVhXeTZVelBzcHFMUHN0TFc1MkJ5VERkR2NCTlJjLUNpaDlGd2lRT2FFTERNSUdSd0VvM1RRUzdvUHltUkZpbWtXUU50VGlqTlJkNlE?oc=5",
+   "data": "2026-11-18T14:03:59Z",
+   "coletado_em": "2026-11-18T15:19:41Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "d95490e76696",
+   "titulo": "Cleitinho Azevedo e Aécio Neves discutem dívida de Minas e desafios do próximo governo",
+   "veiculo": "BH 24 Horas",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNNzFVOFgxazloUE5EMUtRc1dhRVNKNENsMkVYdmlZdnBfOFJ4dGNCWlBOdUlSUjhzcjZES1hIM2tsZXJ0M21JWFdzeUZpbDB3MXp1Rk41a2VKSDlfTFpidE5VdTF0WXF6ck13VVFLUTgzZkd6b0Q0WlFiVlBUUFJKcS0xS29FMFdXd1BvTFI1akZ0RGRtbVpkTWg1OF85Qk94ZHlwNmNISE9Zb3ZfYTRmVThvOXlOWVBCdEQ3WXR3?oc=5",
+   "data": "2026-11-18T13:56:23Z",
+   "coletado_em": "2026-11-18T15:19:41Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "10ccd7dd50ea",
+   "titulo": "Chico Filho cobra transparência do Governo de Alagoas na transição com JHC",
+   "veiculo": "O Alagoano",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQSEhwczdITjlzM2c0Rm4za2VXUHJyYUZiWFpnT0p5ZjJrWTBPNEZGbWpQcXM2SkJRalp4SkxhSU80QU1Ebmk0cjk5dXJzQTI0VXZSTmZ6MXpxQ1kwb1ZFN081bDVRd0haY01Sbm8yT3dLaVlpMmpScmI4Tzdobi0zdGpvQVdQY2Ywbk9qeUZEdGYwYW5PVjYtTy1ZcHJfbWozN1dUT2ROUW5zd3E5NUFnb2ZTSUJrS3Nnc3VQVVJiLWdRUWM?oc=5",
+   "data": "2026-11-18T13:42:00Z",
+   "coletado_em": "2026-11-18T15:19:41Z",
+   "outras": [],
+   "ufs": [
+    "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "e0ede1fe696c",
+   "titulo": "Arthur Henrique questiona gastos do governo e cobra transparência na transição em Roraima",
+   "veiculo": "Imediato Online",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5Ccms0Tk5lNEw5Rjg4TjIyN1VpdEhjbzJCQjZxWnE5SkJ5WWNSbDZGTmlxNThwWVk1V3JfbThDYzgzUnZhUUdmUzBRclNFN0owZ3JId0dUQ2FnLXhOeXJIWVp5Umhxa1o2eWlvTVBneFdxLVFiaFNMZ3dqRVFYNVE?oc=5",
+   "data": "2026-11-18T13:31:46Z",
+   "coletado_em": "2026-11-18T15:19:41Z",
+   "outras": [],
+   "ufs": [
+    "RR"
+   ],
+   "temas": [
+    "gastos"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "0aa9fe16cf2c",
+   "titulo": "Douglas Ruas apresenta projeto que zera IPVA de motos de até 180 cilindradas no RJ",
+   "veiculo": "Ururau Notícias",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPajZkQ2lEUU1RbTR6eVJsOWpfUV9HXzFXaHJpQkc1RUVab3FrQzdMUWFJRzBfeGhIQUk4eUlLdGEtZnpBQ1VuaGpfWGJ3UW1xRUpJUUdqa0RaeXIxd0dYUzRqcF9lZmhXU1VrZW52Rkx4Nm9VM3BadFlBbnZWVHlkWUxXeGJ4eWRkR2wySFZuUHF0RzhTM2h0eldoX2YwQnJvX3piTV8xcXY2R25ZMWNGMUZUUXVZazcyZHMzYkx3bm1SdFpEcnY3NGhyVjlrUQ?oc=5",
+   "data": "2026-11-18T13:21:52Z",
+   "coletado_em": "2026-11-18T15:19:41Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "636e5d52306a",
+   "titulo": "Arthur Henrique aponta gastos de R$ 202 milhões e cobra informações da atual gestão",
+   "veiculo": "Folha BV",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZ0w0czVMbGg4Nk43b2Z0QTdNSDFOMVpGeTFYdFVzdFptZTljU0ZZem8wNGFfRXhHVURQWVpGTjJoSW0waFN3QUxFdHlEc3FoTGp6YXJOQ012ak9OMkZKT0w2b1B3VjlMSFF6YW0zSHdkQkNxNVhfZ1ZrZW43ZzNMYWhfNnZ0LVJ4RGpjYkhTdTdxakM1andmdkt1dTNMaExHQ3JFSEZEeWpsS2pXSmJERTg1ZnNJMEZPSGpJ?oc=5",
+   "data": "2026-11-18T13:01:05Z",
+   "coletado_em": "2026-11-18T15:19:41Z",
+   "outras": [],
+   "ufs": [
+    "RR"
+   ],
+   "temas": [
+    "gastos"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "ab5a9248b171",
+   "titulo": "Sérgio Moro terá orçamento recorde de R$ 84,6 bilhões para administrar o Paraná em 2027",
+   "veiculo": "Umuarama News",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNX2h0NkVlMXdMVjF1V0NWNUdDYUZTXzg3MVRtczRXeVZUV0duVjllNWhadmJtSVdrek9EWGYzOGtScUVRYk54QlcxY3FDUG95WWtmVEhBODBmWjZQXzdGMmUwY0pXRTQwM2FjcV9fMTJUWjE3NkZ6eVk5X0dROGhnUnAxZEh4UTViWFd2dnE4T1FVbGJXQ2hYNGRHMWxEOVlHYjVEVHFjRFZ2R0dlVlZfSEdGUXZMMW1rVlpRc25pMmZxSkJUVG5jSGVhUQ?oc=5",
+   "data": "2026-11-18T12:02:11Z",
+   "coletado_em": "2026-11-18T15:19:41Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "69fa19fd6383",
+   "titulo": "Lei Kandir ameaça caixa de Minas Gerais, diz equipe de transição de Cleitinho",
+   "veiculo": "www.n3news.com.br",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNSTB6YzNobDJGWTJQZXlMSUhTbGJ5WGEweE1sdExuWHR1SDhRdVdMYWNmRGxScERhcFJDZkc5NEZLYXRTdFhYTXVIVm9VdGp0d1RfLVZGLTlVSGVsdzY5WnJBQXktc1NQR1UtTnpGa3p6VXJiVkVFOFNuZUNDbS1saVQwc0tBZ1hrWVExcjlTRnlPSlEwM3lGYTQ2Z1ItSm5iTnd3dkpNb0YzcDNHVU5r?oc=5",
+   "data": "2026-11-18T11:56:00Z",
+   "coletado_em": "2026-11-18T15:19:41Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "cee061d8fbbb",
+   "titulo": "Cleitinho se reúne com Aécio Neves para discutir futuro governo de Minas",
+   "veiculo": "Estado de Minas",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOeUZKZkpUTGttOXlvRDdYTy1oR2UwdjRrNFFSWXBEZ2JlN2FTUFhyYlBibUhLR19Qc25fWjZFdEVzbXZvVWN1dE5xNDlwbHRLV09ZODg2N21MX3FvRnhUR2ZnS3EweGZreVpBYTNYdGFveGxpckZLNHhjaGNpazFSa3dRaGtNODJpUG9STGh0VmozQXdidlE0aFlTQUhQS3pfQ1ROUFdaQ1JPSVhyMHBINFJQRWswTnZ3MVNXdl9HNkEyd9IBxwFBVV95cUxPcHluVHE0U0tXRURPVEdkNmpxOG14UG1qdGlOei16N2ZHbjFkNkk1czY2RC1XQkpnUTY5Qmc2MmZVdnEyUkZfTFFIZ0VDdXViaUlxNVd6ZFphRFdnWTNwMnhOWmlpVjVxVHBNQ1hCM0x1ZHZjbllrRVM3VndFS0xmYUlFOFV6dVFPZzBGQkpNNFF5cXdxZlkxSlM3VHpGbldFdHV6REl4RFQzNmZMT211U2FaWGFCbGNVZEZuZmpuWV9wN2F0b3Q0?oc=5",
+   "data": "2026-11-18T11:46:00Z",
+   "coletado_em": "2026-11-18T15:19:41Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
   {
    "id": "134a132dfdc2",
    "titulo": "Prefeito fortalece diálogo com Cadu Xavier e projeta parceria com o futuro Governo do RN",
@@ -782,6 +932,20 @@
     "estrutura"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "0c4228fe4ec0",
+   "titulo": "Secretariado de Marcos Rogério movimenta bastidores e acirra disputa por cargos",
+   "veiculo": "Rondonoticias",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPSWIyWDNOdGtscG9vUWxZNHY4RW5tRnZ0RGlfSFowaWdnTmZlQTBfeWhMZGZla3NfQ2hlSlZtQ1pYZWQ0V2p3bUdFS0t5M2oxSjg5V1g0Q1p5T1NLeG5vNmROb1E5a2x0TEtrQ3VrLVViR1ZERkl6OXVXTTByV0NONXMwdkpzOW4zZWtWbjkzaEx2cWVCcEZnel91b3BYMGtTdmptdEtvanFaU3VYYmNXRWQxT1BEbjR6cmhKWXZYckFHZmRCVTZyZkhEQmw?oc=5",
+   "data": "2026-11-17T14:20:32Z",
+   "coletado_em": "2026-11-18T15:19:41Z",
+   "outras": [],
+   "ufs": [
+    "RO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "7b2a717b195d",
