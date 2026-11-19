@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-19",
- "gerado_em": "2026-11-19T19:17:14Z",
+ "gerado_em": "2026-11-19T20:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 18,
-   "aceitos": 8,
+   "lidos": 17,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
@@ -26,16 +26,16 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 27,
-   "aceitos": 16,
+   "aceitos": 15,
    "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 4,
-   "possiveis": 1
+   "lidos": 9,
+   "aceitos": 3,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -49,9 +49,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 23,
+   "lidos": 24,
    "aceitos": 4,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -75,7 +75,7 @@
    "ok": true,
    "lidos": 9,
    "aceitos": 5,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 53,
+   "lidos": 54,
    "aceitos": 4,
    "possiveis": 2
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 96,
+   "lidos": 91,
    "aceitos": 1,
    "possiveis": 7
   },
@@ -137,9 +137,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
-   "aceitos": 1,
-   "possiveis": 5
+   "lidos": 30,
+   "aceitos": 0,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 24,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 12,
+   "lidos": 11,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -201,9 +201,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (previdência OR Ipajm OR \"regime próprio\" OR \"contribuição previdenciária\" OR aposentadoria)",
    "ok": true,
-   "lidos": 0,
+   "lidos": 1,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "A Gazeta",
@@ -218,15 +218,15 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
-   "possiveis": 0
+   "aceitos": 1,
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -274,26 +274,95 @@
    "consulta": "https://simnoticias.com.br/vinicius-baptista/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 6,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 325,
-  "possivel": 24,
+  "sem_contexto": 319,
   "oficial_sem_tema": 3,
-  "sem_contexto_com_tema": 22,
-  "excluir": 73,
-  "veiculo_excluido": 31,
+  "possivel": 29,
+  "sem_contexto_com_tema": 21,
+  "excluir": 75,
+  "generico_sem_ancora": 3,
+  "veiculo_excluido": 30,
   "outro_estado": 22,
   "caixa_alta": 2,
-  "exterior_sem_ancora": 5,
-  "sigla_sem_ancora": 8,
-  "generico_sem_ancora": 2,
-  "veiculo_outra_praca": 4
+  "exterior_sem_ancora": 4,
+  "sigla_sem_ancora": 7,
+  "veiculo_outra_praca": 7
  },
  "itens": [
+  {
+   "id": "de2ac1191b4c",
+   "titulo": "Após onda de exonerações vice-líder do Governo Cris clama por diálogo",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/exoneracoes-tensao-prefeitura-camara-vitoria/",
+   "data": "2026-11-19T20:14:33Z",
+   "coletado_em": "2026-11-19T20:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "62239c5e8b0d",
+   "titulo": "Governo de Minas apresenta sistema de planejamento e gestão à equipe de transição do governo eleito",
+   "veiculo": "Agência Minas",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNejRWM3h6ZWVhSGFPS3F1bW5VelI3dDJqWDdUR1ltb01BY3hXSFVKRXZqTUNMZER2RF9BbHEzMGQ1YThVUVpiOHNYdzRUdzdQN1FINGktZ0ZiOGZ1X1VhUUZtZWpISEVzdTc4Y0VLRF9rWTdRYkpXekVmQzZ5UHp0SlVEdWZ6c0ZubVMwUFgxbnNQYXNmWG9vWUJTcnl3SjdWUXBuYXotTGhESjJJb0xNbkFHcVJiT3l0RU11M2g0M2c0ZHVCSS16ck5NWUFHT0pLdnZLUmpYbjZjQQ?oc=5",
+   "data": "2026-11-19T20:03:05Z",
+   "coletado_em": "2026-11-19T20:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "18e97a39a87b",
+   "titulo": "Erick Musso se reúne com deputados de diferentes partidos e demonstra força na construção da base de Pazolini na Assembleia Legislativa",
+   "veiculo": "O Singular Portal de Notícias",
+   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQU2c3T0R0cUc4QThzanZsNUxUY0dXZXNxakxNUG9xNm43MksxOFE4cnhJU3dBUjJtcnItZEdFSXpvclVvelhxV0pPWGVqQzMza2lZVUpnNGlsR1lmLXZXbzBNSmlwdjRELXdsdXhaVkpvTVhBOEMwc2MtVUsyX0l1ZGItWWUyMWlkWWxiM2VaZDRVcE9tVnFTSExGd3dzZGE2WXJwT3ZWUUVMQkxiREVLV2Z4RGgwcGNxdXJ4cU9yZDJGaTY3OTYzb1NJRWlIWUFxek9MVFdrdDVoUWlXOUFXemtrb1pMcElKSU95RkVKUkpLbG94Qmw1VHp6Z3k3aFRPdnhWaA?oc=5",
+   "data": "2026-11-19T19:56:18Z",
+   "coletado_em": "2026-11-19T20:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador",
+    "controle"
+   ]
+  },
+  {
+   "id": "709e14cee988",
+   "titulo": "Prefeitura do ES dá 12 dias de folga para servidores; saúde e coveiros ficam de fora",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/prefeitura-do-es-da-12-dias-de-folga-para-servidores-saude-e-coveiros-ficam-de-fora/",
+   "data": "2026-11-19T19:49:09Z",
+   "coletado_em": "2026-11-19T20:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "e988b284d327",
+   "titulo": "Gastronomia capixaba ganha reconhecimento com homenagem a 31 profissionais na Assembleia",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/gastronomia/gastronomia-capixaba-ganha-reconhecimento-com-homenagem-a-31-profissionais-na-assembleia/",
+   "data": "2026-11-19T19:38:32Z",
+   "coletado_em": "2026-11-19T20:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "165a87153db4",
    "titulo": "Lucas Polese aciona STF contra criação de cargos no MPES",
