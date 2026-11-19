@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-19",
- "gerado_em": "2026-11-19T00:17:12Z",
+ "gerado_em": "2026-11-19T01:17:26Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 15,
-   "aceitos": 7,
+   "lidos": 14,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 27,
-   "aceitos": 12,
+   "aceitos": 11,
    "possiveis": 4
   },
   {
@@ -41,23 +41,23 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 7,
+   "lidos": 8,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 14,
-   "aceitos": 5,
+   "lidos": 13,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,16 +89,16 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 70,
+   "lidos": 71,
    "aceitos": 1,
-   "possiveis": 5
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 67,
-   "aceitos": 1,
+   "lidos": 93,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,9 +145,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
-   "aceitos": 2,
-   "possiveis": 1
+   "lidos": 28,
+   "aceitos": 1,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 5,
+   "aceitos": 6,
    "possiveis": 5
   },
   {
@@ -218,7 +218,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -232,10 +232,11 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": true,
-   "lidos": 30,
-   "aceitos": 2,
-   "possiveis": 0
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 415: Unsupported Media Type"
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -278,22 +279,36 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 302,
-  "veiculo_excluido": 40,
+  "sem_contexto": 303,
+  "veiculo_excluido": 41,
   "oficial_sem_tema": 4,
-  "sem_contexto_com_tema": 15,
-  "excluir": 69,
-  "possivel": 16,
-  "exterior_sem_ancora": 6,
+  "sem_contexto_com_tema": 14,
+  "excluir": 72,
+  "possivel": 15,
+  "exterior_sem_ancora": 5,
   "caixa_alta": 2,
-  "outro_estado": 16,
-  "sigla_sem_ancora": 6,
-  "veiculo_outra_praca": 5,
+  "outro_estado": 17,
+  "sigla_sem_ancora": 7,
+  "veiculo_outra_praca": 6,
   "generico_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "e8adfbe8a3a9",
+   "titulo": "MPES pede que Waguinho Batman não vá a júri por morte de vereador",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/policia/mpes-pede-que-waguinho-batman-nao-va-a-juri-por-morte-de-vereador-1126",
+   "data": "2026-11-19T00:48:50Z",
+   "coletado_em": "2026-11-19T01:17:26Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "controle"
+   ]
+  },
   {
    "id": "a78f3227a155",
    "titulo": "Senado conclui votação do PLP do ajuste fiscal; texto vai à Câmara",
@@ -321,6 +336,18 @@
    "temas": [
     "governador"
    ]
+  },
+  {
+   "id": "9887e3e080bf",
+   "titulo": "Setur promove oficina de turismo regenerativo para profissionais do setor em Maragogi",
+   "veiculo": "Correio dos Municípios",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOUDJ3SXBnVjJ4c2FRcERXU1dndmJNR2JfRXBiUzRpWnc5SkxlRXpsRkQwbko5eWEzUW5KSTZQa25DWE5lV2xHY0JuWEtMQnd5VjB4ZVgzc0pqWjAzaHB4OXpfX0dXU2VrTlZNdFF6Y1R4LXc3V2V6VFhXc3Q0cmtYMWlZalQyQzMxQTl4eVNyc3daOVhRMWVZMmh1bEVLQUphaWNKQ21RSTJ3SXJaSWJWWGFsVVNPam1LQjd0MFRfMzkyYnY4bkpvaDRKclNEemVtblZjbVN4NjA5eEVNRWNNdEhn?oc=5",
+   "data": "2026-11-18T22:22:56Z",
+   "coletado_em": "2026-11-19T01:17:26Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "2f485f3059fa",
