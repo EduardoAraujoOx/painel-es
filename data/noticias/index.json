@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-19",
- "gerado_em": "2026-11-19T14:17:14Z",
+ "gerado_em": "2026-11-19T15:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 16,
-   "aceitos": 7,
+   "lidos": 18,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
@@ -26,8 +26,8 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 27,
-   "aceitos": 13,
-   "possiveis": 5
+   "aceitos": 15,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -41,7 +41,7 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 7,
    "possiveis": 0
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 17,
+   "lidos": 18,
    "aceitos": 4,
    "possiveis": 2
   },
@@ -57,9 +57,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 2,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -74,8 +74,8 @@
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 5,
-   "possiveis": 0
+   "aceitos": 4,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -89,15 +89,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 64,
-   "aceitos": 2,
+   "lidos": 58,
+   "aceitos": 3,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 97,
+   "lidos": 95,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 4,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 57,
+   "lidos": 55,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -211,14 +211,14 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 4,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -278,22 +278,62 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto": 346,
-  "veiculo_excluido": 28,
-  "generico_sem_ancora": 4,
-  "oficial_sem_tema": 4,
+  "sem_contexto": 341,
+  "veiculo_excluido": 30,
+  "oficial_sem_tema": 3,
   "sem_contexto_com_tema": 18,
-  "excluir": 54,
-  "possivel": 18,
+  "possivel": 19,
+  "excluir": 55,
   "exterior_sem_ancora": 6,
-  "outro_estado": 25,
+  "outro_estado": 23,
   "caixa_alta": 2,
   "sigla_sem_ancora": 8,
-  "veiculo_outra_praca": 6
+  "generico_sem_ancora": 3,
+  "veiculo_outra_praca": 5
  },
  "itens": [
+  {
+   "id": "fa2fa8a26844",
+   "titulo": "MPES recua e pede que “Waguinho Batman” não vá a júri por morte de vereador no ES",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOb255UFRkb0VsWXVCbWxkdWk4d0ZOT1hvOUUxaXJJOTFmQTdic3RpMXVmODhNcVdvMlZtNXhpYU9fQTN3Vi1PZWxuN2s2ejd3N0U4WjI0TU1NRTZFUnlrUVY2cmFzdmFGSHpuYVMtUmNGT3hhcmg1OUl0ZncxOS05aUp3dzhXb25fMnFfSFp5RHVoRVFVUG5NWHBWeWRSbGxNV2NTZA?oc=5",
+   "data": "2026-11-19T14:35:04Z",
+   "coletado_em": "2026-11-19T15:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "9df6f8ffedd4",
+   "titulo": "Governo do Espírito Santo anuncia programa de R$ 830 milhões para fortalecer agricultura e beneficiar famílias rurais",
+   "veiculo": "rede noticia es",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOaW5LSFdqbmk3RHVzcXF4cU9xMTlFb2hMdkllMk1pZ0FFbDJEWXZlWmZRcDQtX09wWGtGNXJQRlhxdk9mZEE3eEkzMmszX2ZPblBudVB3MXdXMTZJZzQ4amI0V2ZKc1phQ3hPTm9lak91Z292cFZRSFBxRXdzaFdKenE5bU8zT3BNeXZYZWJMeUg2dXptVERKRnFNU1g0M3dXNlhfbnZBYXVQdUNWd0s4WXdXZDE4NjdMODNoeGRNOUN5eUlDMDd1Z3N1NHVrNVVTR1pIanJTaw?oc=5",
+   "data": "2026-11-19T14:28:55Z",
+   "coletado_em": "2026-11-19T15:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "a34cdfc8f376",
+   "titulo": "MPES cria vagas de procurador e diminui participação da sociedade civil em conselho de fundo especial",
+   "veiculo": "G1 Espírito Santo",
+   "url": "https://g1.globo.com/es/espirito-santo/noticia/2026/11/19/mpes-cria-novas-vagas-de-procurador-de-justica-e-diminui-participacao-da-sociedade-civil-em-conselho-gestor-de-fundo-especial.ghtml",
+   "data": "2026-11-19T14:13:35Z",
+   "coletado_em": "2026-11-19T15:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "controle"
+   ]
+  },
   {
    "id": "7525ddf4a5d8",
    "titulo": "MPES cria novas vagas de procurador de Justiça e diminui participação da sociedade civil em conselho gestor de fundo especial",
@@ -321,6 +361,18 @@
    "temas": [
     "governador"
    ]
+  },
+  {
+   "id": "2cae222b1a90",
+   "titulo": "Espírito Santo soma R$ 145,2 bilhões em investimentos anunciados até 2030",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPaXRObjU3aEtUR1NVNWkyX2xUdWF4WEl6TV81Y0JpTVhLVmNQOWtqYlRSUDFXazVKLWdMWjVRZW1MNGcyWkJYQ3NBWi1SMlEyUnJPLWVMZmoxN1ZxdGtXZ01XWi1KUEFDUGlZRmlrYkRSdW5MZ3ZrVzY2Q2lmcDFjSy13ODg0enlyeFVVLXFhTk4wcktQQXJsWGV3?oc=5",
+   "data": "2026-11-19T13:58:00Z",
+   "coletado_em": "2026-11-19T15:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "96ce41279352",

@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-19T11:17:50Z",
+ "gerado_em": "2026-11-19T15:17:49Z",
  "ref": "2026-11-19",
  "desde": "2026-10-04",
  "estados": [
@@ -15,14 +15,14 @@
    "nome": "Amapá",
    "eleito": "Dr. Furlan",
    "partido": "PSD",
-   "total": 35
+   "total": 36
   },
   {
    "uf": "AM",
    "nome": "Amazonas",
    "eleito": "Omar Aziz",
    "partido": "PSD",
-   "total": 145
+   "total": 146
   },
   {
    "uf": "MA",
@@ -36,7 +36,7 @@
    "nome": "Minas Gerais",
    "eleito": "Cleitinho Azevedo",
    "partido": "Republicanos",
-   "total": 231
+   "total": 233
   },
   {
    "uf": "PA",
@@ -50,28 +50,28 @@
    "nome": "Paraná",
    "eleito": "Sergio Moro",
    "partido": "PL",
-   "total": 183
+   "total": 185
   },
   {
    "uf": "RJ",
    "nome": "Rio de Janeiro",
    "eleito": "Douglas Ruas",
    "partido": "PL",
-   "total": 176
+   "total": 177
   },
   {
    "uf": "RN",
    "nome": "Rio Grande do Norte",
    "eleito": "Cadu Xavier",
    "partido": "PT",
-   "total": 104
+   "total": 113
   },
   {
    "uf": "RS",
    "nome": "Rio Grande do Sul",
    "eleito": "Luciano Zucco",
    "partido": "PL",
-   "total": 209
+   "total": 213
   },
   {
    "uf": "RO",
@@ -92,7 +92,7 @@
    "nome": "Tocantins",
    "eleito": "Vicentinho Júnior",
    "partido": "PSDB",
-   "total": 136
+   "total": 137
   }
  ],
  "temas": {
@@ -106,11 +106,228 @@
   "fndr": "FNDR e reforma tributária"
  },
  "contagem": {
-  "total": 1531,
-  "medidas": 496,
-  "equipe": 1035
+  "total": 1552,
+  "medidas": 500,
+  "equipe": 1052
  },
  "itens": [
+  {
+   "id": "9abcc6dcfa5b",
+   "titulo": "Cleitinho se equilibra entre PL e acenos ao PT e quer reunião com Lula para discutir dívida de MG",
+   "veiculo": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOMUE5SE13ZUhfN0pNTVVqSTJtOUVlNE5HTHlJM0RNQmN3dnlma3NJOXh3M3Y4OUpqc0FjQkk2dGx2U1BsLXRHVU91LWdjVTJfdktJTnRuVkFpcFBrOU84X0NQdy1tUEZLTFRtTlFNVGNsMkdfZjZoQ09qalNOMXdZNXlSRnY4RFFCQjIwV3JDQjZLX2I5aTRMS19IUnR3Ql8ySVpjYmtWd2JkUWV5YUFlOUdUQ015MlNlTm9hdkpYOFo5NmJiWnQ0dUU0SDRBNHPSAdQBQVVfeXFMTjlxTnE2STBCd1JtZkZZeFhMd184V3V3TThpNVpmU0xrSml2OVZObnlIeWo2T0lNd25rU1dJT3U0dlNPRTVidngxS1V4N1AyVlhFUDdUM0xFYl9Oa2x6S3FYZTBOQXctVEJCUlgxb05CY0phNHFyb3hOeGpyZ3llQ2VWN0VjYWJvNWgzbDVSLUg0eEJTMkZRWFhIU1B2QWJqdFJSNkRidHFZeDFuU1o5VUJKbC1nQVdKX1pfY2NuWl9GNjM2NWFvS2I1YmJueEZVX1dfaUw?oc=5",
+   "data": "2026-11-19T15:00:00Z",
+   "coletado_em": "2026-11-19T15:17:49Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "8e644acf3c55",
+   "titulo": "Quatro nomes já foram confirmados para o governo de Cadu Xavier, que começa em janeiro de 2027.",
+   "veiculo": "difusoramossoro.com.br",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPUC1EUU1GeGpGd1RsWk9uN3VJb2hXTFF0d1g5aVJ2akJ5ck0wc3l3VEROdzYzUVRlcFVPZFdBUG5qNUJsc0NybWhUWDdwYjlmdkhLak1YbHJFRUU0ZXlzbThqaUN3Ym5mV3lrRmFEd1dxclk4LXpoX29PdjJMS0hpaVNHMU5nc3BOMFRSZlBieEMxaUw0M19iMms1bXFsQjdOMURiUHU5NzN3alJ4UjloV1dXVVlrTDE2bXNhc2duV0V3Mlk?oc=5",
+   "data": "2026-11-19T14:58:00Z",
+   "coletado_em": "2026-11-19T15:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "87ef00b005fd",
+   "titulo": "A articulação que envolveu Pimenta, Zucco e Heinze em torno do ajuste fiscal do governo Lula",
+   "veiculo": "GZH",
+   "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxNX2ZPNGluLTA3VG15TWNjX3hzYlhwVVJ0SFFjbUdydEVsTEdtTUhDX18tR1A5Vkpoc0VEODN3Sm9PbnFGamRvNVV4MzEtUE0xa3Y3Yk1MOWRzWXhpWTJQdGF6cF83V0xLT3hCaWRUZDJkQXM5MFhudjVkSzJyZHhQekRwanFqUDdYR2RHQXp1d2d1c0RoSlJBZFdMWWRBVzN4UmROcHZobWhyOU02ck9wdXlpczk1ZV9qbFVUWnkwdUNoQWR6VS1xUDNOeENvUkd4WmxQcTNfWkdGQ1NQRkFocndYaVQ5bFJqODYtYjVxQXlkOTVWOUNCdkoyMzdJR3NrSTFFRW5zbUxwWV9ZOC1LTHdJVzNjX1NCV1RYZ0dSZ1VqZw?oc=5",
+   "data": "2026-11-19T13:28:13Z",
+   "coletado_em": "2026-11-19T15:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "gastos"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "205bbace5613",
+   "titulo": "Sergio Moro anuncia secretário Anticorrupção do Paraná",
+   "veiculo": "www.rinet.com.br",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNV2F3RWU3bjI4U01ZaTd4cFZpdkg4czNtb09jUHd6SGVNc0NFbVRSMVQ5Yk94azdYeVFoTXV1UDZLNFY1Z2c4WDd3NHRxdExPNzlFbGpLZ2hrUk1Tdk1hOFlEVkNiS0VnVDliMGttUUFSZV9uRGNQTWwwTS1pekVlcHZpbGlnMjcxZWdpdDRiRVRPajJZa3lQWHlCTGtEY0xfUXFqQjBn?oc=5",
+   "data": "2026-11-19T13:23:32Z",
+   "coletado_em": "2026-11-19T15:17:49Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "838b26887c42",
+   "titulo": "Governo do estado prevê até R$ 25,46 milhões em contratos com FGV e Banco Mundial para estudar concessões de gás; decisão ficará para Douglas Ruas",
+   "veiculo": "Tempo Real",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBWdmMwMGtMZU56UExub2Qxckc5OFdqQWs3dEJ0M0lwalM5d3BBSWI5QlEwRF9RdnRSazBIQ2FkOGtjX0E3RG1oYy1ZLWY5X1hfbHFXbUxFcnc0YVpac25GV01iVUdqTXlkSkNFSWh3?oc=5",
+   "data": "2026-11-19T12:40:23Z",
+   "coletado_em": "2026-11-19T15:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
+   ],
+   "temas": [
+    "contratos",
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "7b3aa797f482",
+   "titulo": "Postado às 09h30 | 19 nov 2026 | Cadu Xavier anuncia mais dois nomes para o chamado 'núcleo duro' do governo",
+   "veiculo": "DeFato.com",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNYzVSTXVBTlVLbG1LUEtvemUteE9uZjBlNFNvYUczT3o2X2J6c1gtQ0pVYVdRVEs1SXlYRnJJaktfV0J2dFRxVjJPSTNVZnFGTjMwak9iWUc0U1ZDZHNkQ0tUbDJvVTZVa1BJR282ZFE1NGxvYnVhbFNlbzBoNUtDYVdhRE15Q2dqMm9MNGhQSzUxNVcwaGhZQUU5NDg4UFFMREd3dXNMblZ0S1E?oc=5",
+   "data": "2026-11-19T12:34:23Z",
+   "coletado_em": "2026-11-19T15:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "1548ca69dd5d",
+   "titulo": "Cadu Xavier anuncia mais dois nomes do secretariado do RN",
+   "veiculo": "Blog do BG",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxObERjMFFzdHpCTi1xUG1RS09ncXJTYVZRV2pfM0dwQ1lJYWtnLS04aWliM0dmMi00dHVNMjNGOFhMbEhGaUphZnBBODc3dWVrTElRbjZiN3pXZTBPN3hGVFlkSDM2Y3FSRTVtaXFwVmVFQlNEdkR6UjVBOWFnWmtBeTNPbm5iWUw0TTRKU1kwYw?oc=5",
+   "data": "2026-11-19T11:48:23Z",
+   "coletado_em": "2026-11-19T15:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "dd19a5a88309",
+   "titulo": "Ex-procurador da Lava Jato será secretário Anticorrupção do governo de Sergio Moro",
+   "veiculo": "Maringa.Com",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZG44c1EtWUFqX1FVZ09nSFFWNmNOMFJhMnhJWmFTdC1lcGQ5N3U5Y0V2SndHT1lvS2VKOE00bTl3SVNORzFncGU4SjcwNm81N2xnbUt2RkhSUXVUbERDWGZNN0dmNHdVZXNPZTdBVDMzRVg0M0JocWtOM3FOSE5vZGZSakUycDJobmpIUFM1Qm5tckotVXhTeXhRTEVjRUt3Q2xVNm5PM1kxTlVMLTRLWlQxMzZpSENh?oc=5",
+   "data": "2026-11-19T11:40:47Z",
+   "coletado_em": "2026-11-19T15:17:49Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "31500be6e995",
+   "titulo": "Cadu Xavier anuncia Jane Araújo e Álvaro Bezerra para secretariado do RN em 2027",
+   "veiculo": "Portal da Abelhinha",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZmtTVjJ4M0ZNam5jamJEZk9Gd3dxcWQ0LW9fc3FpTXVCdUxWSUxoUzhuTHFjcGRYTTAycC1Md3d3U0xXMWtJT3BUWjZuZWtBTl9TSFRwSG8tTnNvM1RHODdMcXFrQzRVdF9LSTRPRlVEdVRXeUhYLTV0Ni1GYWw2RXVvV2NpTXdpTjRxT2NXWnd6SzJjU29mT1lxQkxmdVo1X2RYR1Vub2ZueWVvcUM1bDVLV0s?oc=5",
+   "data": "2026-11-19T11:40:10Z",
+   "coletado_em": "2026-11-19T15:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "cc2c1869da79",
+   "titulo": "Governo Cadu Xavier: conheça os quatro secretários já anunciados para o mandato que inicia em 2027",
+   "veiculo": "BNews RN",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOWldOWDUwSHN1SnZyRnM5NnFGWjAyRGpMYktUUHgzWGVwNDFvVTAyWnFjbmVEcE96bmhWLTEwNHpMYzJaVnhUZTJGS3N3ajdSWlJ0STJFdTZiX1lpbE9VeGJwVmxTM21UNXJ5ZGNnNUhEVEdrb25NRzh6a2JlYzVic2puRElfNTVPTzBJUW53WDR6cUw3WFhDekJiUDdqZjVWYWxNQmZFWFRmcUZ3SGZuOG13S205RzlsMXIzemF0Ym5xbmpYMnhQMU5pNU15dzJyeTVFaDNDRlRTcVdURXVaQtIB5gFBVV95cUxNd2pabjdmYkRPU2p4aWdWTHN1UTZpTHJndTh1OTN4dzl5MUJ6dXJQMUtYbDB2cmlGMDZPRjhueVdpRlM3a01qb2dsT0lFRm5WU0NEZWNQd1BaRlpfa3JuWWtvN1pzNGdSc2xIbnZFQXBOTWRDcmt2X2JaWGJXeDVnYmphVTJ6OTdTVG00MVFRV292MTg1ZUdpbEVJQ212RXo4YnRxN1BYZU84anNtdFg3R1o4VXNDNzh5TFVPOXJ0SnFSREJma2NUWHhlQ3NCZ253eG8yaXN0UjZ4QmdaYTY5dllEbHlidw?oc=5",
+   "data": "2026-11-19T11:32:20Z",
+   "coletado_em": "2026-11-19T15:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "23e7b6f81361",
+   "titulo": "Ex-secretário de Macaé, Rodrigo Vianna assume pasta de Óleo, Gás e Energia no Amapá",
+   "veiculo": "Clique Diário",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNZklIUGJKSjJxVnF0aXBrMlE4aXVMaEhFVldidEVaWXY4RHh0M0R2WDB2d0h3UXRFbGd0R2tvTDQ2dnFzRXZWU1JKRDg4c2Z4LUh6NERKN1dhVU9kWHVoVTVYX0J6cUVrM2lidy1za1FYTXg0RWVjd0xkTGhxcDFJbEpIVTgyMVdHTlNITHhGQnZUQklWWXZCelc1UHhWTXV4RFZ2MmJSOHlpaFlqRW94cWg1Vm84RXNVSnfSAb8BQVVfeXFMUFJqd3ZFdzk4amxqRXhJVW16Vi11TmxXZ2FFZ0YxWlRVai1rWE0tXzV6czdJNkFHS2xpV2paMUdrZ0E3SVRFYlZvNi1hSG5qRURzTXlQRklzSzVfZ2pXZ2Z0eDFpNi1UcWZxcllEampKMXNiQUFULTlnVnQtYUNfcWZ1TlItNHZvOW5YSUxPSFZueEdDTGpxUGdObUhuSG9qQ0psZ09UN1FpQWluOWpvd2JraUc5dElDVjRqc2NoaFk?oc=5",
+   "data": "2026-11-19T11:30:07Z",
+   "coletado_em": "2026-11-19T15:17:49Z",
+   "outras": [],
+   "ufs": [
+    "AP"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "c03299d4a9c9",
+   "titulo": "O que Vicentinho Júnior propõe para a atuação do secretário da Saúde dentro de um hospital?",
+   "veiculo": "Diário Tocantinense",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOZ1ZxNjJmRE9xOHhCRURKOV9lcVhWTW42d3gtNEptbHMzTjF6bUdOUmtYTmhoOFB3U2dGb2xxTktHcFM2cGlQVm1saGlwcFNjQ0FXQ24wTGNhajBLRGwweHRZVmdva19xWGdscjFJUDl3NmtwLTBGdmE1blRxamdiODV1eExwd3REV3Y1bWcyV3pHdUhBbWhpTGs3VVFROUlFZlVVQnJRejM4ODlzbDdVZW1vSGNmVGlNYkp5bDJKbF9HX293OUlaVE4zRy1TSEhVZ1E?oc=5",
+   "data": "2026-11-19T11:24:25Z",
+   "coletado_em": "2026-11-19T15:17:49Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "ed34cbbce7ce",
+   "titulo": "Cadu define titulares das secretarias de Administração e Planejamento do RN",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPQ3QwVEhjdzNJb2RSQThMUjJjcDRkWUlYajFWT2FmTHBXdWYwOGJtMTk2NUx5TUFRTkFEYzNLT0w0Mm5UaUZzQnVMRGt2Q3FjczV3TDgzdXFpUzNEOE5kckI3UGhRUU8yQ0tldzVYWG1kUHdBYWtZSUpHLUFHa0kteDJkaUtZWGRGdjhvTU1PQU44X1FQY1R1aHB3dlZWaEQ0cVBKTjVaT0UtMGNzNmdWU2FVcV9yNFZTY19Ha3BORTR4ODR1bnhzdldyOExVV3FEZFFadi1QbW82bkliZ0xkUEdYSFBxdFpkTjlv0gHrAUFVX3lxTE9DdDBUSGN3M0lvZFJBOExSMmNwNGRZSVhqMVZPYWZMcFd1ZjA4Ym0xOTY1THlNQVFOQURjM0tPTDQyblRpRnNCdUxEa3ZDcWNzNXdMODN1cWlTM0Q4TmRyQjdQaFFRTzJDS2V3NVhYbWRQd0Fha1lJSkctQUdrSS14MmRpS1lYZEZ2OG9NTU9BTjhfUVBjVHVocHd2VlZoRDRxUEpONVpPRS0wY3M2Z1ZTYVVxX3I0VlNjX0drcE5FNHg4NHVueHN2V3I4TFVXcURkUVp2LVBtbzZuSWJnTGRQR1hIUHF0WmROOW8?oc=5",
+   "data": "2026-11-19T11:20:29Z",
+   "coletado_em": "2026-11-19T15:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "7630b4a52352",
+   "titulo": "Cadu Xavier anuncia Jane Araújo e Álvaro Bezerra para secretarias do governo do RN em 2027",
+   "veiculo": "O POTI",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdElHTDVPRmg1eldXWFQ5dHlxR1BxdnBTODU0SjdsMktfSC1jNFctakc4b3czbmlOR0JWQVprSXR6Q2o1eWlXdUxDYklhc01IM1NXVE9sU1lCaDc5b0djR0FJbWN5WEFrcnVHVjRuUklTeUV2azU2Zkp2RWFnTzZYQnp6RzA5QzZ5OWNKeGltcXdwWElxNlo0N0dUdlVYVXhJNjJPcEdEWWZRaU44d1FKY1V3?oc=5",
+   "data": "2026-11-19T11:19:37Z",
+   "coletado_em": "2026-11-19T15:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "9118670b2a85",
+   "titulo": "Cadu Xavier anuncia nomes para as secretarias de Administração e Planejamento do RN",
+   "veiculo": "Portal Diário do RN",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdVpoWDBCenhTaDRXTVVuSE9Ddkhod0s5N2NUdk9GYXJkYTJDYkR0TjNDYXNmdHJVd0lrNFFhU193MUNrTE5yZ0FDWmo1VzNHR1pUM29XRVVCLUVhSWZKMjloZ0pfRDJZR01FZkFnSWdUVHVPdTVQUk5QZW1RUkJvYWNiNy0yTHE5V2dQZlE3dFR2SmQtTDdHdEZVUmlFY1RFRUdaZ2VzSjFpNmZvWGRz?oc=5",
+   "data": "2026-11-19T11:15:39Z",
+   "coletado_em": "2026-11-19T15:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
   {
    "id": "dc61cdecaf22",
    "titulo": "Operação Verão entra no radar da equipe de transição de Sergio Moro",
@@ -121,6 +338,20 @@
    "outras": [],
    "ufs": [
     "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "574722b67cce",
+   "titulo": "Cadu Xavier anuncia mais dois secretários para pasta de Administração e a de Planejamento do Governo do RN...",
+   "veiculo": "BNews RN",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPMzByTDhad1RQWktBNHB2RTZpUEFQU3dUTGE1YTFqZ3J2YXE1aERKeGlEcUNSYjczQXVBQVY3U1B1cWNISDk3RG0tVlFqbTBtQ21zcnJYc1BVMlFHd2pZRmN1cm9OTWVvNW9sMzN1SE85Q3hvdjk0cDVpeC15RnUzYTFYc3c5dGpQNkhjZ01jWEFhQXZOZVhscHYzdF9XYUp2Z2ZaQUhOQjBWZUhTVkUwb3RxWkJMZnVEek1QTlZZTDNBMTZKd1JxbWw1UnZSLUxxS1ByajFCRngxLVM4MUEwZ0ktMHhJTGNuX0tZQzVnNmRFSDZZVlBz0gH8AUFVX3lxTE1GblZCZkh0c2VyY1pVQkY1dTA5RFFkbFJXLTRwZXVUSy1oQzBaM1VOVGlKYjM1NzR5cmhDeEF3YkNUWDEwVHFoQl8zZXhCdWZjajhDQi1hOGZRSVpKbU1zR2dWcG8xeFBTYThDXzZsUGwwRkZPWVg5OXhFOFFZbkFIbjNWTXZhOEtsRDlCdHlnWnVHUUlTejh2UDFyZlU2TVJFZ3dFc1R2SGE1Wjd2R3o1OHJlTEVMQmxCNDNtcU56NDY3NHFlN2h0dDg3aDItdmwyTEtzVkpGYkxjZl8yLVNmRXItZmgtNUZUa1JXNlN4cS1WckhwZnVTSTBkdA?oc=5",
+   "data": "2026-11-19T10:54:40Z",
+   "coletado_em": "2026-11-19T15:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RN"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -148,7 +379,12 @@
    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPcDIxaFFWdHlsN0lFSHV0X2l2S3JqdzJtV3QwcTk0ejNVS0FhSVV4ckpkd0htZVJpMVhHZWRtRmNIS25YOVlYdUpIdlowSnh3VFhTSk04ZlliNXFsY19oem9TMGFIYkh6UEcxNFRTQW5oUDBuSnAwbERHajRBeW9WM29CNlNDb2tLa21QVEVhS1ZOdWVRMG9mSmU2anNldw?oc=5",
    "data": "2026-11-19T10:27:59Z",
    "coletado_em": "2026-11-19T11:17:50Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "O Potiguar",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPZG1BUW9NTFctNnFTTlNQUVhsMnF0cFZ3RWFuRDlWa0YzRkgzZnJ0VHB3QTAzdXlBdjRhaDIzSlZLM19ncmYyekpQNVFOOVNnVVdnTXUyM05pa0ZBc19rTE1mUGhwLXJlSWQzRXlMTUR2TW9RWGVPSTNfek45eUZfSkxGaEJEekR3Mko0UlRMNkEyWUJWQzNpbWZ3blFVYVRhWFJQZzhR?oc=5"
+    }
+   ],
    "ufs": [
     "RN"
    ],
@@ -182,6 +418,22 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "d43523d0181d",
+   "titulo": "Petista critica Cleitinho por \"pressa\" em renegociar dívida bilionária de Minas com a União, afirma que tema já foi amplamente discutido",
+   "veiculo": "Povo na Rua",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQZVFzLVFnVlF2eThlU2dYWkFNbVF4NkR5SFpwME41c0s1ZV9aYjhQS3JGR0ZpQWwtZzdhXzRzam5Gdk4tOGROLUxka1RGMGVhdUdtMTZRYlFFcUxPOFhXUFVSNXRUVEFKWUhrMHZfZnpFSnV6VDRsZ0VaVWU2djZ2OEIySFpmSnI4MWtzRjZMYWxFV1NqOXk5cDUyeHVtcHRGWWFuX0pCNE5RdmE2WkNxaGxrVlNZVi1IV0kwam0tWmNENGpScEhoTnpseXZqVEZfWEp1cEZXUGdPcEY0VEV2MVZBaEVJZVU5TmJkclc0ZzA?oc=5",
+   "data": "2026-11-19T08:04:59Z",
+   "coletado_em": "2026-11-19T15:17:49Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "91e6de9d472a",
@@ -269,7 +521,12 @@
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSlJldmpjMEdEajRyRmpxc0ROMWdrMGlXSDF3THBOeUh2clBVQUM3dXJjSUdFRG1yWDctSmVaLXNrdmlGZTFOR1V6Nnc0cVV6RWtYY19OT0xyQlZuWUVnR0tYdDRBWklyZHRQV1NRaVI4NXRBZUYxdTZDUU5Cbzh6eGRoNkppWHg2WFplejNfNmo2VVBiZ1MycUdjY3dnQXkydTRjRjJPMVBId29zTGNFVQ?oc=5",
    "data": "2026-11-19T00:54:00Z",
    "coletado_em": "2026-11-19T11:17:50Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Prensa Mercosur",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNZmZWOUdZM29FZ3k0dGVkQ2U4OGNNQjh0ckhWZjJOdkVxMVhUQmNieGM1RzRrVXhYalBlb1piaGJrRWxIWmx4eWtncjFYM0RnNXRYQ21CaDhVYV9YYVFrRDVwU0doeTFQVkw1TFJhTEhBallGang1T1QxWFk0U1hfbnJWbEpJZmpoTllVeHhpZ2g3elNQdEc1dlRnb2o5eld3eHdsQUxOSlVxdHhFMUdPaFZqWm8?oc=5"
+    }
+   ],
    "ufs": [
     "PR"
    ],
@@ -2074,6 +2331,20 @@
    "outras": [],
    "ufs": [
     "TO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "d26855d8ac08",
+   "titulo": "Governo Zucco prevê corte de quase 40% nas secretarias; confira a nova estrutura",
+   "veiculo": "Timoneiro",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQWRKczExTFdzNVZTVXNnT3lIV24zRmpEUDJRUUJYbkJFdk52T1QtM2lYYjJ4THlvaV9sSFhtOHliSzU0ZVRmSTJMYlZGMW9CLXZKMVVVNmVNVWljNEdCaUpvRC1sb2hZTHkzNmEtM21HdE5xTnE4bVRpcWluaVBHYkozd0lpRXVIRTJPYVhGd1VqdktSY284?oc=5",
+   "data": "2026-11-17T11:51:41Z",
+   "coletado_em": "2026-11-19T15:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RS"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -4165,6 +4436,20 @@
    "outras": [],
    "ufs": [
     "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "736adcc8a328",
+   "titulo": "Luciano Zucco terá reuniões com presidentes de partidos para definir equipe de governo",
+   "veiculo": "Rádio Pampa",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNMUpEUXJhQjNrZ1V5cW1pV19STGJsdHcwN2Z1bHF4UFEwNUdFLXRjeEJ1Qnk0RlBSWDBPUFIxYmt3c1l2cm1KOE9PTE9uY01RQjRPTE9hV20zcE9qNDBGZmJ2NVVoTXphMjJRM2ltX0toWWgzYlk4RW44WUFVSHBkMnlISzl4OE1jRlJHcndCMVJ5WTBrNVI2eUtpUGxQeGJTMGxXZ2dKSFo2UkJwbGV3NTBMdWNuWUkx?oc=5",
+   "data": "2026-11-14T01:34:48Z",
+   "coletado_em": "2026-11-19T15:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RS"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -11870,6 +12155,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "c8e76f81e349",
+   "titulo": "Omar Aziz define nomes da equipe de transição no Amazonas",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQUGp5NTFfVFJrNDB3bjNpU3Y1QkExNUpfbmgxV0ZrUVRxSXZQZFIzN2o5alFvdGVaVEktZ0x2Z3dtdjdnUW5WSUFvNzZvdm5kWlZfREd1dzhkdFQzZUFqQVIzMHRTaEkwa3ZmcmNWVDF1U3piSlcwTXlYejJMMkk5WlZOaFBnZFI3Y0RSM0M2aWZydk42TVdGU0d5VFlReG1EOVFuNHlEZVBDanhvTlRrRkI5aFppaU5Zd3pidUdlX0R0YTFhRnZ4N1hBMNIB2gFBVV95cUxQOWVNQmNiZ1NuY2trdkNoZUVqcVhFRDFXTjlxblhSVFdlT3BQUGU4MDNqME16UWhFamF2RHBuTzBzZDh0MUc2RGRGRE92VmFvTTc3clZyU1AyRlptVWkxV2g2OU9hT2dvN2RLWG1adlRBay1ramo5dlpRV1ZKNzkwZGl3X1B0eGlYRDctZEdPZDdlYThvekIyLW5DSENXT1RlbFEyaTVoNXdMVHFyQWNWTzdVeGJZendKYkZHNDJadXJhcUlpUXRoZDBCd3pidlFubFhlNXNKOG1VQQ?oc=5",
+   "data": "2026-11-04T08:00:00Z",
+   "coletado_em": "2026-11-19T15:17:49Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "bbba22d6d3ca",
    "titulo": "Braide receberá governo com orçamento de R$ 40 bilhões",
    "veiculo": "O Imparcial",
@@ -16264,6 +16563,20 @@
    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNS0Rrbk52c1h3dUQxN29fSklwR1kxZ0ltVE05bm1Sa1NMb0VHRWthT1dZYVE0Z0RTLUgydFFDUi1CTkduM3VNRnRrRllLekdkZmpzc21hdFN2ejJSclpRaW8zbTZFMXFCVnpGeGlvQXBxU1FzenkzeWtZU1NNemQ4Si1zek9mOFRLQWwwQmsyWFZoNWxWdDBoOGVndVRPV1B50gGvAUFVX3lxTFBKc2xSM0FIZ0NCZHA1NU5kMWMzWXF3Umtmd3ZmMm4yMWpVSTJTRUVBSTZQWVF3ZmtsUFhPTXcwLWR4ZzFseU56Q2tUTjZ6bVcwLTZSZG1LeUMwRWdZc0xqd1N1SVc2MnBEN3FTREk3MFRqUjU0eUFkZjlRbTN4cXRrZlBsc2R6T1BUM05rWVZUYUpfR090MGQyZ1UyTHZLZlZGZFNNaTFPLTY5V3NoOWc?oc=5",
    "data": "2026-10-27T07:00:00Z",
    "coletado_em": "2026-10-27T07:00:00Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "09e030d29333",
+   "titulo": "Zucco anuncia cinco nomes para secretarias do governo do RS",
+   "veiculo": "Rádio Solaris",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxObWJQTl9aeGVBc3c3RlFuVmNTQWl4NF9hX0ZCem1rbk5iUE1JR0lERE10amhmTXBvb2VWSlRWVHhQejV6Qm1Xa05obFJCRGoxRjREaE9aTTZJY2l3b21Wa0NsUlJieHR5VmVVTEdFdjYyNFlBX0FWdFhqME9nZUc5TXRWUGJBUDBxVjZIOGZYM0cwUQ?oc=5",
+   "data": "2026-10-27T07:00:00Z",
+   "coletado_em": "2026-11-19T15:17:49Z",
    "outras": [],
    "ufs": [
     "RS"
