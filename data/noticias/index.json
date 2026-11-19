@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-19",
- "gerado_em": "2026-11-19T01:17:26Z",
+ "gerado_em": "2026-11-19T08:49:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 27,
-   "aceitos": 11,
+   "aceitos": 12,
    "possiveis": 4
   },
   {
@@ -34,22 +34,22 @@
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 9,
-   "aceitos": 3,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 6,
+   "lidos": 9,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 13,
+   "lidos": 16,
    "aceitos": 4,
    "possiveis": 1
   },
@@ -57,8 +57,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 0,
+   "lidos": 6,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 71,
+   "lidos": 72,
    "aceitos": 1,
    "possiveis": 4
   },
@@ -97,15 +97,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 93,
+   "lidos": 100,
    "aceitos": 2,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(\"insuficiência de recursos\" OR \"restrições orçamentárias\" OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) \"governo do ES\"",
    "ok": true,
-   "lidos": 0,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -129,8 +129,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 1,
+   "lidos": 4,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -139,13 +139,13 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 29,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 22,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 53,
+   "lidos": 54,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -169,7 +169,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 3,
+   "lidos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 2,
+   "lidos": 11,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -210,8 +210,8 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 6,
-   "possiveis": 5
+   "aceitos": 5,
+   "possiveis": 3
   },
   {
    "fonte": "Folha Vitória",
@@ -232,11 +232,10 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 415: Unsupported Media Type"
+   "ok": true,
+   "lidos": 30,
+   "aceitos": 2,
+   "possiveis": 0
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -281,20 +280,48 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 303,
-  "veiculo_excluido": 41,
+  "sem_contexto": 345,
+  "veiculo_excluido": 40,
   "oficial_sem_tema": 4,
-  "sem_contexto_com_tema": 14,
-  "excluir": 72,
-  "possivel": 15,
+  "sem_contexto_com_tema": 15,
+  "excluir": 68,
+  "possivel": 14,
   "exterior_sem_ancora": 5,
   "caixa_alta": 2,
-  "outro_estado": 17,
-  "sigla_sem_ancora": 7,
-  "veiculo_outra_praca": 6,
-  "generico_sem_ancora": 2
+  "outro_estado": 15,
+  "generico_sem_ancora": 3,
+  "sigla_sem_ancora": 6,
+  "veiculo_outra_praca": 6
  },
  "itens": [
+  {
+   "id": "43d8fce3d1e1",
+   "titulo": "Transição de governo no ES: equipes discutem posse e primeiros dias da nova gestão",
+   "veiculo": "diaadiaes.com.br",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdURuOHFoUGRYcGNMTkVQSnBpUDZIRUZ3bFJMdTdxYjFkaWJLc1o4ZUQwdVhpR05LaVAzU2JVR0c3bDIzV0ZIUmF4Um5WMFl6dVc3Q2hfSHoxUEpxRm5WVzBTVUo4bEtrZkl2VEtaWXVkTlpNT0l1NmpSWW9sU0pQMWdHQjFITzBpeWNkaFlWZTNBMUFTUktXdzVMNkk0STI0cFZuZHZIOGlaX2M?oc=5",
+   "data": "2026-11-19T08:26:20Z",
+   "coletado_em": "2026-11-19T08:49:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "71aa12ee84ca",
+   "titulo": "Quanto custa viajar de verdade? 7 gastos que podem estourar o orçamento",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPVzBHUThzS0cwSHFvNzk1cWhPcGJNbHdMZkF5ZFQ5VFVqbzlRaGI0NlJHT1dweFVHUTgwMHg5cTVpNkg3eVY5anYtMEs4b2xBeUN0VGtDdTFsNWJXc0E4RGFXSEVoNElCbE9CS2RRWG5yak1wZjN6WTYycFdUbjdndVh4Ym5mUHZSOXNzdDN5ZVZqZklHSXBfZjIyX1NmQXdQLTFUVmZjamc2VzNtdXY0YQ?oc=5",
+   "data": "2026-11-19T05:00:37Z",
+   "coletado_em": "2026-11-19T08:49:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "e8adfbe8a3a9",
    "titulo": "MPES pede que Waguinho Batman não vá a júri por morte de vereador",
@@ -443,6 +470,21 @@
    "triagem": 9,
    "temas": [
     "financas"
+   ]
+  },
+  {
+   "id": "122e969a30a6",
+   "titulo": "Orçamento de Mato Grosso para 2027 é aprovado em primeira votação na Assembleia Legislativa",
+   "veiculo": "www.secom.mt.gov.br",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNTWd3SkI5dUtHM2lCcV9mUElscVJEdk1ISkpXVllrVjdwVUVJZGhwd1BYa2dNTEt4Vk9XMUtrNUk0VFdEUWVLemZUX25TU2tmNFVyMnZ2SDA1bkpoVjJjZzMwRWI3VHc3OVV4ZDhud2YtX0ZsR3UyMS0zUnpOU3JuWl94dUZpRzAxZG5kM3p3WkJQXy1iZml6RzhVVlI3eWZtWllTV1hzdGpGS3VlWVYtOXhscm02U1hjYkFVTUgtelhsb1dvanJZQmUzU0l6bkxiSUkwaVhVNGlZZ0ZTNjdLMmNRMnlCdw?oc=5",
+   "data": "2026-11-18T19:46:00Z",
+   "coletado_em": "2026-11-19T08:49:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas",
+    "controle"
    ]
   },
   {
