@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-19",
- "gerado_em": "2026-11-19T16:17:14Z",
+ "gerado_em": "2026-11-19T17:17:16Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 17,
+   "lidos": 18,
    "aceitos": 8,
    "possiveis": 0
   },
@@ -27,7 +27,7 @@
    "ok": true,
    "lidos": 27,
    "aceitos": 15,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -41,7 +41,7 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 7,
    "possiveis": 0
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 19,
+   "lidos": 20,
    "aceitos": 4,
    "possiveis": 2
   },
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 4,
    "possiveis": 1
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 56,
+   "lidos": 59,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 85,
+   "lidos": 84,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 22,
+   "lidos": 23,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 2
   },
   {
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -266,7 +266,7 @@
    "consulta": "https://simnoticias.com.br/politica/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -278,22 +278,36 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 329,
-  "oficial_sem_tema": 2,
-  "possivel": 21,
-  "sem_contexto_com_tema": 22,
-  "excluir": 58,
+  "sem_contexto": 330,
+  "oficial_sem_tema": 3,
+  "possivel": 22,
+  "sem_contexto_com_tema": 21,
+  "excluir": 60,
   "veiculo_excluido": 31,
   "exterior_sem_ancora": 6,
-  "outro_estado": 21,
+  "outro_estado": 20,
   "caixa_alta": 2,
-  "sigla_sem_ancora": 8,
+  "sigla_sem_ancora": 9,
   "generico_sem_ancora": 3,
   "veiculo_outra_praca": 4
  },
  "itens": [
+  {
+   "id": "26fb8f0a30ad",
+   "titulo": "Dólar sobe para R$ 5,92 com expectativa sobre votação de ajuste fiscal",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/dolar-sobe-para-r-592-com-expectativa-sobre-votacao-de-ajuste-fiscal/",
+   "data": "2026-11-19T16:40:49Z",
+   "coletado_em": "2026-11-19T17:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "3e3a5374e726",
    "titulo": "MPES cria 561 cargos comissionados após críticas à proposta",
@@ -301,6 +315,21 @@
    "url": "https://eshoje.com.br/seguranca/justica/2026/11/reestruturacao-do-mpes/",
    "data": "2026-11-19T16:07:38Z",
    "coletado_em": "2026-11-19T16:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "pessoal",
+    "controle"
+   ]
+  },
+  {
+   "id": "2f0d456bc8ca",
+   "titulo": "MPES explica 561 cargos comissionados após críticas à proposta",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/seguranca/justica/2026/11/reestruturacao-do-mpes/",
+   "data": "2026-11-19T16:07:38Z",
+   "coletado_em": "2026-11-19T17:17:16Z",
    "outras": [],
    "possivel": false,
    "triagem": 9,
@@ -1079,6 +1108,18 @@
     "governador",
     "controle"
    ]
+  },
+  {
+   "id": "9f5c36ec1557",
+   "titulo": "Detran inaugura 'Transitaverso' no Parque da Cidade",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQNXFSdFdkb1l0TFljQ0dRcFVNYmx0c29BcXNfbnJ4MXpjaDNDQXlDTFdNaFVWVmpBSHVRUjNnU01YQ0JWRDAxV2pkSGpGSFozdGRRZktwUVNZVXQ0VHFydThpNDRONWxzNldKRDhsOVZpMzN4NXZOSl9YQXZqa1hfdm5DM0tsZUJ0MXp1eFJFRjRWejRoU3d5SGRtZ2dQcWhKR2tmZlhsczdaaWFVd3A2dmdPemc3QdIBxAFBVV95cUxPV0FKTC1zUlFyUU5PWTc0ek9vRl9lbUtGWDA3MVlQVHNhcG1Ud3ZFTEFSSGJYbWhUc0xxb1lka2R2ZXA2ei1fVmFHMlRKV1pDR3hzOFhjNjRvck56azYwMjNtZmpLQkswYVZVNnQzZXJQbHlTVW1OUE9oSWZTVXVDSThpSEVxdUY1LWlVTkRpYzdoM2ZBSFVrb1lRb09GbGZ3NUwwRGVId3dMZi1vQ2Z6U2NlSnplV0RJWFpBNWZReDNsU1oy?oc=5",
+   "data": "2026-11-18T16:30:44Z",
+   "coletado_em": "2026-11-19T17:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "025647f4812a",
