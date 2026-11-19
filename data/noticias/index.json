@@ -1,6 +1,6 @@
 {
- "ref": "2026-11-18",
- "gerado_em": "2026-11-18T23:17:23Z",
+ "ref": "2026-11-19",
+ "gerado_em": "2026-11-19T00:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,15 +25,15 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 28,
-   "aceitos": 11,
+   "lidos": 27,
+   "aceitos": 12,
    "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 6,
+   "lidos": 9,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
@@ -66,7 +66,7 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 10,
-   "aceitos": 5,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -89,15 +89,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 72,
+   "lidos": 70,
    "aceitos": 1,
-   "possiveis": 6
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 62,
+   "lidos": 67,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 24,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 2,
+   "lidos": 4,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -194,7 +194,7 @@
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
    "lidos": 8,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 5,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Folha Vitória",
@@ -278,22 +278,50 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 303,
-  "veiculo_excluido": 42,
+  "sem_contexto": 302,
+  "veiculo_excluido": 40,
   "oficial_sem_tema": 4,
-  "sem_contexto_com_tema": 14,
+  "sem_contexto_com_tema": 15,
   "excluir": 69,
   "possivel": 16,
   "exterior_sem_ancora": 6,
   "caixa_alta": 2,
-  "outro_estado": 14,
+  "outro_estado": 16,
   "sigla_sem_ancora": 6,
-  "veiculo_outra_praca": 6,
+  "veiculo_outra_praca": 5,
   "generico_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "a78f3227a155",
+   "titulo": "Senado conclui votação do PLP do ajuste fiscal; texto vai à Câmara",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/economia/senado-conclui-votacao-do-plp-do-ajuste-fiscal-texto-vai-a-camara-1126",
+   "data": "2026-11-18T23:23:59Z",
+   "coletado_em": "2026-11-19T00:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "14f02e25e537",
+   "titulo": "Pazolini participa de almoço com empresários do setor cafeeiro e discute o futuro da cafeicultura capixaba",
+   "veiculo": "portal jornal do norte",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQdkdtaWYtcmxNX0RCTFc1TVJyQk5fTkVwandLeW5sYXhJbUlqWnVMUU5Ka3lyTU1aQ0lyR2l4a2J2b2MwSl9JTjB2dXpQTk5OV1lTczNmSnFMWFdzeGUzT29ocnVxVExjbjd4c2FicFQ0YndrSk93VzJWMGJzUU0wdXpGdzJaX2J6akttbHFiOGRnRkFVRFBKVlhBRW5xcWp6NHYyNWFrTDVGdEVocUl1d3g1NnR6OVFuUF9XNmdVVU0tNnRJRFVMUVNINVVzX1dUT1dSTU5HR2NvZw?oc=5",
+   "data": "2026-11-18T23:20:00Z",
+   "coletado_em": "2026-11-19T00:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "2f485f3059fa",
    "titulo": "Etapa estadual do Prêmio Biguá 2026 consagra cinco projetos",
@@ -1350,6 +1378,20 @@
    "temas": [
     "transicao",
     "governador"
+   ]
+  },
+  {
+   "id": "9502d65c5946",
+   "titulo": "Reforma tributária deve levar cidades do ES a buscar novos moradores",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUWN4YUZGLUlYQVhjdVhfTW5PNTdfMUE4bXd0bjZRUVg4UDhCYVRodXFuVkZhR0VCZFcyTnVkcTdOUFZwcHpCMFZIOFNRa1ZfZmRCcnNtLUdPcm90cEJhUkRyMGczMDh6YVYxbXJqQjJ3V19TMGFhSW1yTm9UalVYX0NOOGpyMXlXaTgxbi0zbzRsTjJ0c1UwXzRPVlF5UFJnY1JmYWlWUy1VQ00?oc=5",
+   "data": "2026-11-17T09:00:00Z",
+   "coletado_em": "2026-11-19T00:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "financas"
    ]
   },
   {
