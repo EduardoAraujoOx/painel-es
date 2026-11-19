@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-19",
- "gerado_em": "2026-11-19T21:17:15Z",
+ "gerado_em": "2026-11-19T22:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -41,17 +41,17 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 7,
+   "lidos": 6,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 25,
+   "lidos": 26,
    "aceitos": 5,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -59,7 +59,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -67,7 +67,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 7,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -75,7 +75,7 @@
    "ok": true,
    "lidos": 9,
    "aceitos": 5,
-   "possiveis": 2
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 87,
+   "lidos": 83,
    "aceitos": 1,
    "possiveis": 7
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 4,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,9 +145,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 32,
+   "lidos": 31,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -155,21 +155,21 @@
    "ok": true,
    "lidos": 25,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 53,
-   "aceitos": 1,
+   "lidos": 52,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 2,
+   "lidos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -211,14 +211,14 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 3,
-   "possiveis": 2
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -266,7 +266,7 @@
    "consulta": "https://simnoticias.com.br/politica/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -278,20 +278,20 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 320,
+  "sem_contexto": 315,
   "oficial_sem_tema": 3,
-  "possivel": 29,
-  "excluir": 76,
-  "generico_sem_ancora": 5,
-  "veiculo_excluido": 28,
-  "sem_contexto_com_tema": 13,
+  "possivel": 24,
+  "excluir": 82,
+  "generico_sem_ancora": 4,
+  "veiculo_excluido": 31,
+  "sem_contexto_com_tema": 14,
   "outro_estado": 23,
   "caixa_alta": 2,
   "exterior_sem_ancora": 4,
-  "sigla_sem_ancora": 7,
-  "veiculo_outra_praca": 8
+  "sigla_sem_ancora": 6,
+  "veiculo_outra_praca": 6
  },
  "itens": [
   {
@@ -372,7 +372,12 @@
    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNejRWM3h6ZWVhSGFPS3F1bW5VelI3dDJqWDdUR1ltb01BY3hXSFVKRXZqTUNMZER2RF9BbHEzMGQ1YThVUVpiOHNYdzRUdzdQN1FINGktZ0ZiOGZ1X1VhUUZtZWpISEVzdTc4Y0VLRF9rWTdRYkpXekVmQzZ5UHp0SlVEdWZ6c0ZubVMwUFgxbnNQYXNmWG9vWUJTcnl3SjdWUXBuYXotTGhESjJJb0xNbkFHcVJiT3l0RU11M2g0M2c0ZHVCSS16ck5NWUFHT0pLdnZLUmpYbjZjQQ?oc=5",
    "data": "2026-11-19T20:03:05Z",
    "coletado_em": "2026-11-19T20:17:13Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Jornal de Uberaba",
+     "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNYVJETG9UaXN1dmVSNnhKLUhwSzlIRVo4aUw3VTdnb05ycklkbFQ4bDFheHI2VVVtMm41RF9ZdFBMdDkyc1hxSi0tY1FzamwtWl9IVFJ6dmw5NDllVlpXUWlKR2t2RXJURDE2SElBVWR0RjRvLTJHei1jNkItamNyNGJMbTU4MzVfTkdyOS1jd2kwdzFFRUxnek9ja2k5SVVkY3E3Z1BmWlZxblFJcFJUWEE1amU2MXFQUTVRRU1GT1BFbVhhVjN4MFFiSUtQdnRpTTVMWDN0RnE1RDNmNHRqLTFjS3ZJSFJs?oc=5"
+    }
+   ],
    "possivel": true,
    "triagem": 9,
    "temas": [
