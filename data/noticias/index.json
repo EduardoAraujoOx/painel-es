@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-19",
- "gerado_em": "2026-11-19T10:17:13Z",
+ "gerado_em": "2026-11-19T11:17:16Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 14,
-   "aceitos": 6,
+   "lidos": 15,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
@@ -26,15 +26,15 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 27,
-   "aceitos": 12,
+   "aceitos": 13,
    "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 4,
+   "lidos": 10,
+   "aceitos": 5,
    "possiveis": 1
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 71,
+   "lidos": 66,
    "aceitos": 1,
    "possiveis": 4
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 30,
    "aceitos": 1,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 28,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 5,
+   "aceitos": 4,
    "possiveis": 3
   },
   {
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 2,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -278,22 +278,76 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 342,
-  "veiculo_excluido": 36,
+  "sem_contexto": 341,
+  "veiculo_excluido": 34,
   "oficial_sem_tema": 4,
-  "sem_contexto_com_tema": 16,
-  "excluir": 70,
-  "possivel": 16,
-  "exterior_sem_ancora": 5,
+  "sem_contexto_com_tema": 17,
+  "possivel": 17,
+  "excluir": 61,
+  "exterior_sem_ancora": 6,
   "caixa_alta": 1,
-  "outro_estado": 17,
+  "outro_estado": 18,
+  "sigla_sem_ancora": 8,
   "generico_sem_ancora": 3,
-  "sigla_sem_ancora": 7,
   "veiculo_outra_praca": 5
  },
  "itens": [
+  {
+   "id": "ef94875dec2f",
+   "titulo": "Tribunal de Contas encerra fiscalização sobre qualidade do asfalto em obras",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/tribunal-de-contas-asfalto-obras/",
+   "data": "2026-11-19T11:15:55Z",
+   "coletado_em": "2026-11-19T11:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "fdcd70eee855",
+   "titulo": "Brizola destaca confiança no governo Pazolini e aponta agricultura e saúde como prioridades",
+   "veiculo": "rede noticia es",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQemI4MUE5QkRHeGE2MDJNdlJ6VS1kNVFNSjY0ZnlvNGEwS3hVekE0dlg3d3RudlhrRGtMMnhEcXlON25WNlJmREdnczZid0VsVXAzQWd3WktYc3Q0aGt5R2ZuOUNQbW43cTY4VFA2cnR2VkNXaGdvVlJSc29ZbkxoLWd4NGZvRWtPMkF6MjdweTZkUktMLWU0ZURiNDEzM1dUX05KOERRVS0tbUpNWHc1UnJZeE1WQQ?oc=5",
+   "data": "2026-11-19T10:52:42Z",
+   "coletado_em": "2026-11-19T11:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "c201427f9c9b",
+   "titulo": "Governo do ES lança programa de R$ 830 milhões para fortalecer agricultura e sustentabilidade no campo",
+   "veiculo": "Montanhas Capixabas",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPTHVocFRzS1oxS1MxTzBXQnBHT3NhVXNpd2gyc3ZZa0QzZEVlMm8xREp4U1cxU1FMdThOZm9OaTE4Vm5yY3VnWjJHb0pnZ2JDMHZ3ajNTMWcwUGwxUjdJcFdDZE1FTUxQeWdxYzRSVUdUdkpPV0xwemFzZ3JLUWpYbk5oX2l3SF9BaGlEN2V3cXljeXRTZFhWR3dEcnZ1REdZTkx6LTVFeFo4WE5kcG1LLXdicFl2V1hDdGtjVG1YcFdMZG1vSzBKSk5jeHY3OHFEMDRBdE9POA?oc=5",
+   "data": "2026-11-19T10:48:24Z",
+   "coletado_em": "2026-11-19T11:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "f5b496639908",
+   "titulo": "Sesa fortalece ações de segurança do paciente com novo Plano Estadual 2026-2030",
+   "veiculo": "Blog do Elimar Cortes",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbVo1NmNZT3V4WU1INUxNYmp6bFBMZmk1b29VVmVQV0NvZG5sMDlLQkdLZ2VoVVVyektDY3lqY2NEZFpjRHhRSFRybHZ2Tms3WHQyQUhWMFduYllLTFRxT19zNnpCblJrdWpFMTZKME1TdFhzcmg0ejJfZklyTUJ3YkRjc0MwdkNmNGpwUmpFbkRITVJJOEZWNVVMdzAxc1RHMVZEVS1mSDNBVFgtazdaZUp1UEt1WWZxRk5Z?oc=5",
+   "data": "2026-11-19T10:23:22Z",
+   "coletado_em": "2026-11-19T11:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "61bad5856667",
    "titulo": "ASSEMBLEIA GERAL EXTRAORDINÁRIA Jornal A Tribuna",
