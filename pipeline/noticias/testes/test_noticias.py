@@ -968,5 +968,48 @@ class RevisaoDe17DeNovembro(unittest.TestCase):
             self.assertEqual(self.decide(t, v)[0], "confirmada", t)
 
 
+class AssembleiaLegislativa(unittest.TestCase):
+    """O site da Assembleia (al.es.gov.br) entra por buscas do Google Notícias restritas ao site (o acesso direto não está liberado no ambiente de teste) e é tratado como
+    fonte oficial: só confirma com tema de atenção; homenagem, comenda, Corrida da Cidadania e os atos e o Diário do Poder Legislativo saem; o veículo "ALES DIGITAL"
+    (proposições e boletins, sem texto de notícia) é excluído."""
+
+    V = "Assembleia Espírito Santo"
+
+    def setUp(self):
+        self.F = coletar.preparar(CFG)
+
+    def decide(self, titulo, veiculo=None):
+        return coletar.decidir(CFG, titulo, veiculo or self.V, self.F, True)[0]
+
+    def test_o_que_importa_ao_governo_e_ao_orcamento_confirma(self):
+        for t in ["Projeto reestrutura plano de carreira e quadro de cargos no MPES",
+                  "Deputados podem fazer emendas ao Orçamento a partir desta quinta (12)",
+                  "Comissão especial vai analisar projeto do Orçamento 2027",
+                  "Pazolini toma posse na Assembleia em 6 de janeiro",
+                  "Pazolini e Marcelo discutem relação entre Executivo e Legislativo",
+                  "Nove vetos encabeçam pauta de votações desta quarta",
+                  "Secretário de Saúde apresenta balanço de gestão nesta sexta",
+                  "Emenda parlamentar: beneficiário terá regras rígidas para receber recursos"]:
+            self.assertEqual(self.decide(t), "confirmada", t)
+
+    def test_projeto_social_sem_tema_fica_so_como_possivel(self):
+        for t in ["Câncer de mama: projeto garante exame genético gratuito", "Lei Maria da Penha: 20 anos com novos desafios e mais proteção a vítimas"]:
+            self.assertEqual(self.decide(t), "possivel", t)
+
+    def test_cerimonial_e_expediente_saem(self):
+        for t in ["Corrida da Cidadania reforça compromisso social da Assembleia", "Marcelo homenageia vice-campeãs do mundial de futebol de areia feminino",
+                  "Lei declara Vila Velha Capital Estadual da Canoagem Havaiana", "Esmeraldo homenageia jovem com nome de ponte em Cachoeiro",
+                  "Diário do Poder Legislativo - DPL nº 10491/2026", "ATOS LEGISLATIVOS", "ATOS ADMINISTRATIVOS", "Revista Ales",
+                  "RESOLUÇÃO Nº 13.184 Concede a Comenda do Mérito Legislativo a fulano"]:
+            self.assertEqual(self.decide(t), "descartada", t)
+
+    def test_proposicoes_do_ales_digital_nao_sao_noticia(self):
+        for t in ["Projeto de Lei nº 557/2026", "Boletim de Votação Nominal nº 76/2026", "Requerimento de Urgência nº 235/2026"]:
+            self.assertEqual(self.decide(t, "ALES DIGITAL"), "descartada", t)
+
+    def test_agenda_de_desenvolvimento_do_governo_nao_cai_por_causa_da_assembleia(self):
+        self.assertEqual(coletar.decidir(CFG, "Governo do Estado lança agenda de desenvolvimento e orçamento para 2027", "Governo ES", self.F)[0], "confirmada")
+
+
 if __name__ == "__main__":
     unittest.main()
