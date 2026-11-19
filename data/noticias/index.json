@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-19",
- "gerado_em": "2026-11-19T18:17:15Z",
+ "gerado_em": "2026-11-19T19:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -27,7 +27,7 @@
    "ok": true,
    "lidos": 27,
    "aceitos": 16,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 21,
+   "lidos": 23,
    "aceitos": 4,
    "possiveis": 2
   },
@@ -57,7 +57,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 55,
+   "lidos": 53,
    "aceitos": 4,
    "possiveis": 2
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 91,
-   "aceitos": 0,
-   "possiveis": 6
+   "lidos": 96,
+   "aceitos": 1,
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 31,
    "aceitos": 1,
    "possiveis": 5
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 31,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 22,
+   "lidos": 23,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 54,
+   "lidos": 53,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -170,14 +170,14 @@
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
    "lidos": 10,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 11,
+   "lidos": 12,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -227,7 +227,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 3,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "ES Hoje",
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -250,7 +250,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 5,
+   "aceitos": 6,
    "possiveis": 1
   },
   {
@@ -274,26 +274,135 @@
    "consulta": "https://simnoticias.com.br/vinicius-baptista/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 4,
+ "novos_na_coleta": 6,
  "descartes_na_coleta": {
-  "sem_contexto": 329,
+  "sem_contexto": 325,
+  "possivel": 24,
   "oficial_sem_tema": 3,
-  "possivel": 23,
   "sem_contexto_com_tema": 22,
-  "excluir": 60,
+  "excluir": 73,
   "veiculo_excluido": 31,
-  "exterior_sem_ancora": 6,
-  "outro_estado": 21,
+  "outro_estado": 22,
   "caixa_alta": 2,
+  "exterior_sem_ancora": 5,
   "sigla_sem_ancora": 8,
   "generico_sem_ancora": 2,
-  "veiculo_outra_praca": 3
+  "veiculo_outra_praca": 4
  },
  "itens": [
+  {
+   "id": "165a87153db4",
+   "titulo": "Lucas Polese aciona STF contra criação de cargos no MPES",
+   "veiculo": "Sim Notícias",
+   "url": "https://simnoticias.com.br/vinicius-baptista/lucas-polese-aciona-stf-contra-criacao-de-cargos-no-mpes/",
+   "data": "2026-11-19T19:16:40Z",
+   "coletado_em": "2026-11-19T19:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "c41d73135b9b",
+   "titulo": "MPES cria 566 cargos no ES e 561 vagas serão de livre nomeação",
+   "veiculo": "O Cafezinho",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNX05GT2ZUb0N2bkx3elBFNkFieTBrWjR6b3RJdTQxV2cteEd3bW9TeEc0ajJjT2JMNHFxcEs0LWkzS0F5VWZsYUlvWFY4MWRuWXlyQVZFbWZ2T18wTjg5cEFTdnhUSUJZTVdCMVh2Uko5czI3ak5WRUpmUk9fMkpzYmRxaDJscWpYNVlnOFQxQ3Z3anFweXJMQjkzaFNabUZNOUxF0gGoAUFVX3lxTE0ycGxIaGtwY2Jaa0NlV1VQZDVhdTVpb0RSY0RHTTFzSzRKenJ3UWhrRmVjM2pWQ0RXbUNraHhCVWpMeDE0eHpIMUxhSjdMLU5WWGtoc2hOMzRSbEltYVJSdEw5aDdoOWI3cFkxWWFzTWd3SE9BNmZWMC0ySGVnWU5RX1lKTDROOVJNN2R0SnJJTlVpQ1YzSnJ1dVZ5MW9pbjdjNlZvZ2JRcQ?oc=5",
+   "data": "2026-11-19T19:03:00Z",
+   "coletado_em": "2026-11-19T19:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "pessoal",
+    "controle"
+   ]
+  },
+  {
+   "id": "396ced2ebcf6",
+   "titulo": "Direitos da pessoa idosa: Ferraço assina projeto de lei",
+   "veiculo": "ES Brasil",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1pQW5LXzMyTWVXMlRneUIySnp5SkZmamVXTC15czA5VE05dzNCdlBjMFRrX0JUb1JXR01VZW5qLU5tZ0tvRjNDLVBQRXdTWWl1cXg0bHEzVGJuT1JWZTFoYUh4SlRvd2daam13b2hRUTY3SG1tSmZRYg?oc=5",
+   "data": "2026-11-19T19:00:00Z",
+   "coletado_em": "2026-11-19T19:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "c520dba5cdee",
+   "titulo": "Candidatos pedem mudança no edital de concurso da PMES; entenda",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQRXBEeDFoUXdGbjJORzNVMDBVdEl3Tk9QVEo5dVNZbXFZME9sZ3Vvay1BVHhONzI0TDRsT2hzX2Eyc2ozMkF0a004ZVRBaUlHRVNGTVFKRzR5LVBVTEYxT2tLZmFDd2M4Z2dDSE1waFNVWXFnMWRTN3VfRV9ma0JtaVNicw?oc=5",
+   "data": "2026-11-19T18:58:51Z",
+   "coletado_em": "2026-11-19T19:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "04ac5005d867",
+   "titulo": "TJES mantém suspensão de acordo de R$ 8 milhões entre prefeitura do ES e empresa",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/politica/tjes-mantem-suspensao-de-acordo-de-r-8-milhoes-entre-prefeitura-do-es-e-empresa-1126",
+   "data": "2026-11-19T18:48:19Z",
+   "coletado_em": "2026-11-19T19:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "346a665e4e10",
+   "titulo": "Não há vetos para nomes à presidência da Assembleia",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQVFJsckp2VFkwTlVpc290eGZvNy1WQTVQU3ZxZ0NkY25VN05zdmIxVEhveU1xWDUtb3NxWDMwakJ5RUVxRk5UbTU4NU14MnBPaTg3V1FidVROdThnSENiN05pWGhDemRxcy1TOW1JM2dNYnEyc0xrcVh1b3lEWV81ZEUzLTNQOGl2cGRjUlNxMVkzVTFxbklyckpjWXJ2a3lXdXhoeEVCaw?oc=5",
+   "data": "2026-11-19T18:30:12Z",
+   "coletado_em": "2026-11-19T19:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "8309b9a0ba41",
+   "titulo": "Obra para em Pinheiros antes do fim do governo Ricardo",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/obra-para-em-pinheiros-antes-do-fim-do-governo-ricardo/",
+   "data": "2026-11-19T18:17:44Z",
+   "coletado_em": "2026-11-19T19:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "f5d3fc06434e",
+   "titulo": "Ricardo Ferraço assina projeto de lei que atualiza Política Estadual dos Direitos da Pessoa Idosa",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMUpocWhBWmw0VzB0N1B3clFOeFktc0poXzJiTjBHUVJnbFJfYzZ4dkl2bWF2VVVQNjUzUVQweUVORWZaczNyYTdKWDR1a3FHSnN1RGlONFM4eHNBSWlvVS1pRFJEU2VOSHVsajZxcjJZdC1NMThXR2R1N0NCTXk2TDVGdE9HSjdNcldhNWs0ejFyU1FyOHZGYXJaclpXSWxyNHk0Vktsb1V0Mk92WW5UOXJKUzJad2wwYUVF?oc=5",
+   "data": "2026-11-19T18:14:00Z",
+   "coletado_em": "2026-11-19T19:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "b8ab968f45bd",
    "titulo": "Deputado João Coser é alvo de operação que mira corrupção e lavagem de dinheiro",
