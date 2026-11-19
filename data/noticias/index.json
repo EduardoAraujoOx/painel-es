@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-19",
- "gerado_em": "2026-11-19T13:17:14Z",
+ "gerado_em": "2026-11-19T14:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 15,
+   "lidos": 16,
    "aceitos": 7,
    "possiveis": 0
   },
@@ -74,7 +74,7 @@
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 4,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 66,
+   "lidos": 64,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 97,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 30,
    "aceitos": 1,
    "possiveis": 5
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 22,
    "aceitos": 0,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 55,
+   "lidos": 57,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -242,8 +242,8 @@
    "consulta": "https://g1.globo.com/rss/g1/es/espirito-santo/",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
-   "possiveis": 0
+   "aceitos": 3,
+   "possiveis": 1
   },
   {
    "fonte": "A Gazeta",
@@ -280,20 +280,60 @@
  ],
  "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 347,
-  "veiculo_excluido": 33,
+  "sem_contexto": 346,
+  "veiculo_excluido": 28,
   "generico_sem_ancora": 4,
   "oficial_sem_tema": 4,
-  "sem_contexto_com_tema": 17,
-  "possivel": 17,
-  "excluir": 56,
+  "sem_contexto_com_tema": 18,
+  "excluir": 54,
+  "possivel": 18,
   "exterior_sem_ancora": 6,
-  "outro_estado": 21,
+  "outro_estado": 25,
   "caixa_alta": 2,
-  "sigla_sem_ancora": 9,
+  "sigla_sem_ancora": 8,
   "veiculo_outra_praca": 6
  },
  "itens": [
+  {
+   "id": "7525ddf4a5d8",
+   "titulo": "MPES cria novas vagas de procurador de Justiça e diminui participação da sociedade civil em conselho gestor de fundo especial",
+   "veiculo": "G1 Espírito Santo",
+   "url": "https://g1.globo.com/es/espirito-santo/noticia/2026/11/19/mpes-cria-novas-vagas-de-procurador-de-justica-e-diminui-participacao-da-sociedade-civil-em-conselho-gestor-de-fundo-especial.ghtml",
+   "data": "2026-11-19T14:13:35Z",
+   "coletado_em": "2026-11-19T14:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "d0331d54a520",
+   "titulo": "Governo do ES lança programa de R$ 830 milhões junto com Banco Mundial para agricultura",
+   "veiculo": "A Notícia do Caparaó",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQLWowLW44RjlFOHRob1lwOVhacjRzbVVxSUlKRklsYkxFZFJFdzhDcVM4ZkdKc25ab0dPLURYemUxM0Jac0k4N0gwWENVUTB3bXFDUHptd2Jxa1I0OTZ5eUV2RnpRUXpzSVNaS0p6akZXaUI2TkdIVm1kbmV6Rm1CWUJ5Ymk0TUpISG1mLWpOZTF2eFcwbXgycDVFdXBFR3hBWEhYdGZOTjhSZUZTTDhNc1Q4bU44T1BTOEFfem1jTERqRExaRXl3aTRLcWE4TzQ3?oc=5",
+   "data": "2026-11-19T13:58:31Z",
+   "coletado_em": "2026-11-19T14:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "96ce41279352",
+   "titulo": "Deputado João Coser é investigado pela PF por corrupção e lavagem de dinheiro durante eleições de 2024 no ES",
+   "veiculo": "G1 Espírito Santo",
+   "url": "https://g1.globo.com/es/espirito-santo/noticia/2026/11/19/deputado-joao-coser-e-investigado-pela-pf-por-corrupcao-e-lavagem-de-dinheiro-durante-eleicoes-de-2024-no-es.ghtml",
+   "data": "2026-11-19T13:48:22Z",
+   "coletado_em": "2026-11-19T14:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "a95bbba54cc8",
    "titulo": "Governo do Estado apresenta programa de desenvolvimento rural de R$ 830 milhões",
@@ -1263,6 +1303,18 @@
     "governador",
     "contratos"
    ]
+  },
+  {
+   "id": "1f2f16f470ee",
+   "titulo": "Detran Maranhão",
+   "veiculo": "Detran-MA",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0zelE0UUlyWE51dUJYNHo4WmFwRmJfazd4TkxGakVld1dqUGpTT2JoMjNTd1pfWVJuNWgtYjJjMm44Y3lkYkgxT0QyTU5TWnhfcV9LVGhweVJLRlFJZzU4QUVGWXZUZDJuaU42UW54YUVDOVU?oc=5",
+   "data": "2026-11-17T21:39:40Z",
+   "coletado_em": "2026-11-19T14:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "60fb35b0843c",
