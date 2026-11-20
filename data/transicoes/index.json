@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-20T12:17:53Z",
+ "gerado_em": "2026-11-20T15:18:04Z",
  "ref": "2026-11-20",
  "desde": "2026-10-04",
  "estados": [
@@ -8,7 +8,7 @@
    "nome": "Alagoas",
    "eleito": "JHC",
    "partido": "PSDB",
-   "total": 143
+   "total": 144
   },
   {
    "uf": "AP",
@@ -22,21 +22,21 @@
    "nome": "Amazonas",
    "eleito": "Omar Aziz",
    "partido": "PSD",
-   "total": 154
+   "total": 155
   },
   {
    "uf": "MA",
    "nome": "Maranhão",
    "eleito": "Eduardo Braide",
    "partido": "PSD",
-   "total": 80
+   "total": 81
   },
   {
    "uf": "MG",
    "nome": "Minas Gerais",
    "eleito": "Cleitinho Azevedo",
    "partido": "Republicanos",
-   "total": 259
+   "total": 262
   },
   {
    "uf": "PA",
@@ -50,14 +50,14 @@
    "nome": "Paraná",
    "eleito": "Sergio Moro",
    "partido": "PL",
-   "total": 207
+   "total": 209
   },
   {
    "uf": "RJ",
    "nome": "Rio de Janeiro",
    "eleito": "Douglas Ruas",
    "partido": "PL",
-   "total": 208
+   "total": 209
   },
   {
    "uf": "RN",
@@ -71,14 +71,14 @@
    "nome": "Rio Grande do Sul",
    "eleito": "Luciano Zucco",
    "partido": "PL",
-   "total": 252
+   "total": 253
   },
   {
    "uf": "RO",
    "nome": "Rondônia",
    "eleito": "Marcos Rogério",
    "partido": "PL",
-   "total": 73
+   "total": 78
   },
   {
    "uf": "RR",
@@ -92,7 +92,7 @@
    "nome": "Tocantins",
    "eleito": "Vicentinho Júnior",
    "partido": "PSDB",
-   "total": 138
+   "total": 140
   }
  ],
  "temas": {
@@ -106,11 +106,71 @@
   "fndr": "FNDR e reforma tributária"
  },
  "contagem": {
-  "total": 1731,
-  "medidas": 536,
-  "equipe": 1195
+  "total": 1747,
+  "medidas": 538,
+  "equipe": 1209
  },
  "itens": [
+  {
+   "id": "2469312530a8",
+   "titulo": "Omar Aziz planeja deixar atual sede do governo e transferir gabinete para palácio histórico em Manaus",
+   "veiculo": "ncnews.com.br",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNT3hxY3EwMzNJTnpPTGpEZFFOdWV1aU1TM1QxWDJrci1oQnEtVHI3QzEzTVljajYxZkphVU4yblczN3pzanVtU2NGQVlnTFFMNEZJR1ZaMXByZXRJUWRtZk9GZjZaSkdNM0RVa2Q0SmdVSjhwTi1Ed3VwcTNXNTRqX2trNmctcmVxYkV6cGowSlNEQ21KUTc4dWM4ZXd1Y0J0YXktUjN4Tm5hT0FQQS1TUFlrMFdXUHZqcnA3Z1VOcnFiaDQ0U3EyT1lHczgxNnNH?oc=5",
+   "data": "2026-11-20T15:00:42Z",
+   "coletado_em": "2026-11-20T15:18:04Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "304efb9242c5",
+   "titulo": "Seplag detalha estrutura do Estado e aponta restrições para reajustes no funcionalismo à equipe de Cleitinho",
+   "veiculo": "BH 24 Horas",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNZFpCQ3d2N3ljemtqY1k3SG95OHF2V0s0NEQ1bDBvRTNmaWg2RDRNbE1KSkJNOUJ3cldyR1VSdXZLa25EXzhRVHhuU1FCMUt2RnRXd0oxbkpKMS1jUjdCa0F5Mk5VRkJ4eEpYRF9xT2E2VDlrbkFwRzF6cElZVHFnZ3Z2ckhIdkdLZ2RMNF9Pd084N01UaHo3MjRZNUQ1Q1BTSllEWllSVGhMbzB1bS1LUXBjZklTZ3NIczVPTEh5eXFqYjV1QXBCQXAtZjBCanlGVG9XYzUxQmkxX2s?oc=5",
+   "data": "2026-11-20T14:17:58Z",
+   "coletado_em": "2026-11-20T15:18:04Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "pessoal"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "34ccf02483c8",
+   "titulo": "Cleitinho afirma que buscará Lula sempre que necessário para negociar dívida de Minas",
+   "veiculo": "BH 24 Horas",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNbG9iX3NXUXYtTVR1bG1vY3FEWWNyUDcxSjZ3NE9PTUQ5WGNWc3RBM19tcFpvUk11dTJvSVhnMVJtN1lOSlpkM2Fjd0VnNGVucm1FbFJnTG9vZmYwaVZ0bC1kSXdwbEJ2a2FPVzhaaVFmVjFBQ1RTcERsZWx1V096WjRSVTdWSEpRdjBGZ2xWelFIUEpzVmxWb1FTLUxtcUFfWkFBYWFBQmFRdHY3OVhaUElEcnlsMHlScHhzUA?oc=5",
+   "data": "2026-11-20T13:12:15Z",
+   "coletado_em": "2026-11-20T15:18:04Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "471b4104617d",
+   "titulo": "Cleitinho promete secretariado com metas e diz que poderá demitir quem não apresentar resultados",
+   "veiculo": "Por Dentro de Tudo",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPOXZpX0Q2Mlo1MTQ4UWlHb0VJWFVBeWRPTFIxN3QtX3Z2bDFTYWRxeGx6NnBXbDFJczB3cWZNaWJkLV9uSV9oR0pPc1RKNmRaRFlVMHUwYXhUaEtQU3hSMEt0S3Z6dXhxLVBLRm9pVkl3bFJ1amlPS0pQS2xzZFZPd01kSzRZNXFnaDBYQVZLMGxzcEo5TnJRdG1sTi13VS1iVXdYNUtjTUxUMGVELWVLU0FFM3dhLWdveHhsc19jV0g2dW83S1d3?oc=5",
+   "data": "2026-11-20T09:39:00Z",
+   "coletado_em": "2026-11-20T15:18:04Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
   {
    "id": "0724d53ec923",
    "titulo": "A escolha da economista Renata dos Santos para comandar a Secretaria da Fazenda do Rio Grande do Norte a partir de janeiro de 2027 é um dos movimentos mais significativos do governador eleito Cadu Xavier (PT) na montagem de sua equipe. Ao busca",
@@ -202,6 +262,20 @@
     "diagnostico"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "791d54687c25",
+   "titulo": "Governador eleito do RS, Luciano Zucco anuncia novos nomes para o seu secretariado",
+   "veiculo": "Jornal O Sul",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdk9fa3o2TGl5OWFCNi1OSFJiN0JNSUtYUHcyY2lYMG5PaHlhVVA3RTRKYXFJeHhLYXJsZjZDMmJNcW9naXFxdUVDV0NJY1RMclhVYzZXQW5KamdZSlVXR1ozaUtULVhzYzF3YXUzVFRFWE00YWNKOUoyN0JoMmFMMFhnTFVCSE1rQUQ3eTJMUkdDX21McDM0dlNIbmVEdnhlTFQ2TEhDTGZ6SkNUdUQ5dNIBtgFBVV95cUxNakROc0FKenVTZWtwWC1xQlpST2dLUjM3X3YyT2RkMmJLeDJyREhCR1lzaHRQdWFONWpXbDlHdzF5TU5fY2tfcVRaTjlOcVhFbE9HRkpyMTcyU3MwSUlleGdNcy1WbnpWbVkyRk9pQTZMMGhLNC1mSUtTTXRzVG5SN2t5ZEN3ZDBhSnN4a05lcVNIeDI2ZlBGZDNQQUotTGVJcElTYmF3dE83SUpPX2tXdXFyYm8tQQ?oc=5",
+   "data": "2026-11-20T00:07:22Z",
+   "coletado_em": "2026-11-20T15:18:04Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "aede4823c799",
@@ -494,6 +568,20 @@
     "economia"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "44afb6f31269",
+   "titulo": "TCE determina reação a irregularidades na transição de governo do Maranhão",
+   "veiculo": "Neto Ferreira",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQk5NcTRtazVxaXpVM09Xem95RFJhcGllb2c5Vk5wbnpId0dLZUc0U1pXMjlRMGEtN2JrRGVLajBaUW1mSW03R0ZXR2dYc1BiZDRHV3BhZnhNa216WVFkYkV1S1ZGSDg3X19fYlFmSzFZMmpLaVJ3UE5DSHRVa2VDSVY3UEoxR05hYm9MZlo3X3dIanNpaE8xVUNsNmc0Ul9aZ01EWlZmYi1PVm8?oc=5",
+   "data": "2026-11-19T18:28:46Z",
+   "coletado_em": "2026-11-20T15:18:04Z",
+   "outras": [],
+   "ufs": [
+    "MA"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "6c5ad806e6b6",
@@ -3269,6 +3357,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "d10548a6ef22",
+   "titulo": "Equipe de Vicentinho Júnior se reúne com governo atual e solicita informações de 20 secretarias do Tocantins",
+   "veiculo": "Araguaína Notícias",
+   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNN1FWcVpOZERKZ0x6aDhIQVpwOVI1T3lOdU1TZjktY041TEFRdy1HU2hmd3FUQ21uU0dzMW9JY3A0V0VHNl9HNjNscnFQMnlhYld4cFFKQ0l4eTd3cXdHdUtiSE9GZWdqdXB4Q1ZZbHBUMmEyZ3NDYW9HZmdfWURKRFp4ZG9jMm05N2k4b25GLWZtUzM1TzZ4UUg0djhUc3hfRkQ4c1NQWHdSeE9qOFMzNmdCVFJLdWMwYnZyNWpfdlZpT2tkZFFhZDhnZ1pOTTZ4c1d6WGVkbk1HaDd4U0VZbDV5NmF6bF9IOVdF?oc=5",
+   "data": "2026-11-17T11:01:00Z",
+   "coletado_em": "2026-11-20T15:18:04Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "a01ed353ff93",
    "titulo": "Zucco reduzirá para 18 o número de secretarias no governo do RS; veja a nova estrutura",
    "veiculo": "Litoral na Rede",
@@ -4008,7 +4110,12 @@
    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE4xMEh5NnBqZWM5Y2dPclpHTkc1MFJTQm55Z3JKeEtlei00R1hhaE1TYmJETXlMbEg0ZUVoeE9WMGFXeWZhQ0U2N1A1V0lRM0NSZ0FybjFTcHdxeUpIMWVmRlhWcl9xRkVtX09FRHFjZ0h0ZW5uMjZSOXlPbw?oc=5",
    "data": "2026-11-16T20:09:20Z",
    "coletado_em": "2026-11-16T21:19:06Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Nova Iguassu Online",
+     "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOWXZlUUJCYXZSeW8xeGJ1THVXSVpEV2RIclpfQ3NUMEpDZHA3YWg3OGdhS1BuMmg3bVlYekRQa3R2Q05oODdoQmVjVzdqUVRMX0tQSXB4TGZQYWlzVWtOaFB6NVFUdWNSaDZMSFFxa3gtXzdvZ2pYVDVaTHlSa2ZBMlJjSWg3dEdRSEtPNmVzUkFNZ2hhVnJ1YjlEcXhETXljSHpGbTdhZkI3djQ3bHRqcDlnLURNZy0tVWNMMldwMTJTZlVFMXp4VjZFak4wQzctZlREeDQ4dmYxaVVnRzJ3QzM4dkpmaUpoa2lJMGxrcF8zd9IB9wFBVV95cUxPOTZZdlNWbWdZZVJCYTRJZDZXTm00YVZ6ZU9NMnZfYm1lZ0J6VGZRbU5QbW13b0lDQzdSN2loYkZWTWlmTGhtbXctNFlDMVBNSkNObXpzaEpCUC1vOHlvaDRDSVFBY0c0NFU5S3BuRTd6X2c4bVVfOEF4MTh2SnpUNXVGREwxaGE1WHpoX1J3bWVYRDlEOGRFTERfZ1Vaajc0X0RKdHIwSFZJNjIzbHJqd2Q3MXM1VEg0RVNWRGU0S2RUai1Hd2VXUFM1UXdDSl9ucEQteUItNTBxeWxYekhwaFZrU2Jjc3JuOGZnZHhxdklRQzROMmJr?oc=5"
+    }
+   ],
    "ufs": [
     "RJ"
    ],
@@ -4543,6 +4650,20 @@
     "diagnostico"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "16f4e790a37f",
+   "titulo": "Ausência de JHC na Transição Governamental Levanta Questões Sobre Preparação e Diálogo na Nova Administração",
+   "veiculo": "Repórter Maceió",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQVUs5dkJoRHpfRlBwcGNoYmR5YUNPT2N6dG1rc1pkOV9MaF9XTEg4ZkI2M0tQeHhxLUlxZm1xdjBnQkg2bXAzdHZtNno3a21ZUVhjNmlWc3RGT1oydV9mbG05RTVxWklYNGQ5eGdWYVE4dXJCalJtaHhfV2NXZXF5eElmczZiWVoxOG9YbU1IU2RPTEp3TkxHYkQ0aXBMd2w5TS1MZmtqcW9XdDZQeFhua3d3bXJQZXg5RGtxRkhydFZjNUZCeTl6aWlabG1NeDFZNkM5SWZn?oc=5",
+   "data": "2026-11-16T18:00:00Z",
+   "coletado_em": "2026-11-20T15:18:04Z",
+   "outras": [],
+   "ufs": [
+    "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "25d6efac7369",
@@ -5654,6 +5775,20 @@
    "outras": [],
    "ufs": [
     "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "89517a2ca7b9",
+   "titulo": "Douglas Ruas anuncia equipe que comandará a segurança pública do Rio de Janeiro",
+   "veiculo": "R7",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNUW5XVmppQUZRWlBPNndSR2trcUs1RWFLUmlNMk9oaFg0M2o1UVktc21uMkRvMW1wYld0MUNzeGpBUjlDX2VVZUlkbW1VZ2wxUlFSQThyOTMwakwxZ2pjRlU5NlBWU0ZZNDd3cEZVd1M4V0dFRmxwVGE1TkV5ODhXOVI0R3hGT25GMTUwU2w0WktySkExdGJ6bXYzN01VemFqb1kzNVl1eHBQdWVEZFdpckJCNGtwVEpnRlQ1WXBEV0d0bEFXNUZ1MWZyNW9XdW8?oc=5",
+   "data": "2026-11-13T18:22:54Z",
+   "coletado_em": "2026-11-20T15:18:04Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -14832,6 +14967,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "b5596d681b3e",
+   "titulo": "Com Valdemar Júnior na Educação,Vicentinho apresenta composição do primeiro escalão; veja lista",
+   "veiculo": "Jornal Opção | Tocantins",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQREZoNS1YX09jdjcyXzJxbjlRX1VtYXpEVHl3X2ZyNVFvY0VGRXYyX0E5VEdwd0I3ZkY5ZWpaTF9mU00zZkQ0YTJHbTR1Mmo0Y0d4eXpFdExYTlBIOE1ZSldHbHFuWUozS2czczlZdWJkVVdaMGZfbkIzUF9WcGRpekFuZ3BUY1NiTHhxRUJUWXFwZGI4U0NwN192WFdZWGF3VDBaWTRnZWN4OU1kWTZuU1lKSWtIU0YzTUdybHJxd0hXNmxhQktrQkNsdUpxbFBERERXa3BQWnB6UjJaX1RRUG5pbXQ?oc=5",
+   "data": "2026-11-03T08:00:00Z",
+   "coletado_em": "2026-11-20T15:18:04Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "a2f17afbe440",
    "titulo": "Governador Paulo Dantas apresenta membros da comissão de transição; veja nomes",
    "veiculo": "TNH1",
@@ -17573,6 +17722,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "dab5d4d6dd05",
+   "titulo": "Sergio Moro anuncia Fátima Gavioli para comandar a Secretaria de Educação do Paraná",
+   "veiculo": "Portal Agora",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQU3hrTXd1WWl3Nm1LOGQyOHRPVU1fZXZWLWlVN0pfLW15TDU0Qk1RaHJydnRDdEVTamlwTzlEbHlOaS14VHhnN2FabnQtT1puMFNWVHdRRWYzRjN4Y01wQ0dwSjFHQ0ptNFF6dVpfbzNmdTlCS2txVHNQWEtxZFUzbEhNU2QwVEZwSlhkUmRDcTZaLVJTWHcwWlFjOFZod2VJYmpCSnBvQ0Q3MkR2bllMU3E3RzRiOWR6VE1v?oc=5",
+   "data": "2026-10-27T07:00:00Z",
+   "coletado_em": "2026-11-20T15:18:04Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "da4ea6c668f1",
    "titulo": "Zucco anuncia hoje à tarde os primeiros nomes do Secretariado",
    "veiculo": "Correio do Povo",
@@ -17788,6 +17951,21 @@
     "contratos"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "8ae4ce37a1dd",
+   "titulo": "Ex-secretária de Educação de Rondônia, com passagem por Cacoal, Fátima Gavioli é escolhida para comandar a pasta no Paraná",
+   "veiculo": "Eu Ideal",
+   "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOd3dDUEE2OGpZUFlzTk9BdjJHMzlOZkNhRFRnT2dVVnJNUnBFZFIySzlVSjg0SWxsR1RDb0pKZFZEdUwxQUFKTFF0Rzd0TWxTQzBMeTF1Mno0Sk9Xb1U2c0Nua2Q0RzMyX1pRdmctZ0o3QVI2VVNKZE1BeHJnQjFBOFdLNHJsUEVUME55QUpDaUFZMkplTUd4SEk3WWtKbDZlcHN6WDNVdGQ3U2w0WE5uTDZQd0cxQnNrQmxFQ0hoT2tNRnJEZHVpSERaOG9WZjNwR09GS3ZndWNtLVN0R2RIalZVaWZEb1RhMzlxdTBPN0ZCWlNYLVJGbjJEeXpJTWxIYnAzelVyeFd3dkhwMVJFQU1iZ0JHUQ?oc=5",
+   "data": "2026-10-27T07:00:00Z",
+   "coletado_em": "2026-11-20T15:18:04Z",
+   "outras": [],
+   "ufs": [
+    "PR",
+    "RO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "81cdc504c423",
@@ -20221,6 +20399,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "d108c2d9da7b",
+   "titulo": "Rocha oficializa transição de governo em RO com 22 nomes indicados por Marcos Rogério",
+   "veiculo": "Rondonoticias",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQcXJmd1VwZlA3ZTl1a0RZQmdUX3I2QmsyeEw3QV9nWlJZNk0zRVpMTTdXb0Y4SlVfd3BOV0V5eHczZkVwVWNNMFpFNXJ5alJpM2ZRTThmSDBBM09tV25KSHh3LThwS0NVeFM2TVFPdkVtcEIyZi11bmF2UHA4eTZBM09IaUsyTEt6ZXRVUEt3Wmg1XzNZdDR3ZjRVSGc3Zk56ODJpUDVVV1lzSEZidUM3RjFEaVBuR0huZmFjbmlDOVVweXVSaUxibFdUdzQtaU5qRkUxQw?oc=5",
+   "data": "2026-10-19T07:00:00Z",
+   "coletado_em": "2026-11-20T15:18:04Z",
+   "outras": [],
+   "ufs": [
+    "RO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "cd0a66c61c3f",
    "titulo": "Douglas Ruas define equipe de transição para novo governo",
    "veiculo": "O GLOBO",
@@ -20730,6 +20922,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "055128005967",
+   "titulo": "Governo de Rondônia oficializa equipe de transição com 22 representantes do governador eleito Marcos Rogério; Lúcio Mosquini será coordenador",
+   "veiculo": "Extraderondonia.com.br",
+   "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOX0xOVnhrNHpOMHc1QW9WcF9yNGlaOUNpWV9UeTBHVzdhLWpkc1VBaERtLW1XWGtrbm5EbTk2Wm5wVzVrVWJKbDc0ajVHaGlHWnlwQ1NSQXdFQzh6cVhOYjAtMUZKX1ZrRzQ4SGJ2MUtERnctTF9ZNnJVMEhhaFQzMHRyV05kTEE1dTlFYXR4NDdxSU54ODI4U0RCWF9DQUxGekQ2dDhVMHlmYkxHRlhrUEFWWEFmYzhiTlZkb3ZhTUJCYmo5ZUpDWVpDYUY4VTdDeEEyWlR1YS1CUHJXeW1ERzZpVmJKUU83QWQzQ21nMjlfOXRlQk1uQkVWT3dQTl9aTXBsbWJyUTdsZmtyYXJRcg?oc=5",
+   "data": "2026-10-17T07:00:00Z",
+   "coletado_em": "2026-11-20T15:18:04Z",
+   "outras": [],
+   "ufs": [
+    "RO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "03af039b0493",
    "titulo": "Dr. Daniel reúne equipe de transição e articula apoio político no Pará",
    "veiculo": "O Liberal",
@@ -21002,6 +21208,20 @@
     "diagnostico"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "8932b55a1d2d",
+   "titulo": "Governador de Rondônia cria equipe de transição com 22 membros",
+   "veiculo": "O Alto Acre",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNNjFFeHJBVjN0RjlZVmhEdGUyMHNQcldXOWdhQnFQQklMem1QeEl6QnRRSFZaM1hHc2RJOU5aYzZtOUpFZEZYaHRab0F0NkJxU1RVWktjWXIxcksyM0ZvTUZOWlRrbk0xWDFyOVFJVXF4WS1LYjFOTzE4N3VPYXB5ZHp3OENHUXlmSDFSWHdR0gGTAUFVX3lxTFB2ZXE1eUdKbFBYVEtfOC0yb0VTNlJ6RVA1YUhLZ1ByTi1JUEZzSm1reUJvTnJIZU41eHMxVmU0TFF4VWdheXl4T1V0YUdjbWVqZ2NGeTJST2F0cmJCZ251aWF4c1ZQN0NvcGlTVVpQbzRYUVN0bm9kV01Dd180N05HYk1vZmhJYUdKdjdaRFJvRkVmdw?oc=5",
+   "data": "2026-10-16T07:00:00Z",
+   "coletado_em": "2026-11-20T15:18:04Z",
+   "outras": [],
+   "ufs": [
+    "RO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "843bebaa4f64",
@@ -22392,6 +22612,20 @@
    "outras": [],
    "ufs": [
     "RJ"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "34a1c75c6f06",
+   "titulo": "Marcos Rogério anuncia Lúcio Mosquini como coordenador da equipe de transição em Rondônia",
+   "veiculo": "Extraderondonia.com.br",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNY3RuOXg2cXBDeUxLMWdKd1AtbEJveDJ0MFJaSjk0YlplN0toVnEtZ0dTdWRzY3pnQ0xRYjFtLWI1blZJXzJUVTJ5Y2hVc0p4Tmk4MHFHc2pFQTdCcmhoNmJDR3ZJalNJME5qc0EzYzgtdVVoQXRVYnM0elJ2TFRVNWZ5a0s4dDJkUW91bTAwNE5rNGh4OVpWRm9GLV8xVmlUR3dzLU9wUVZZWHhWeEYtWXBzbXh3VFp4dUtja2ZJdnpCQXR5QTc0ODRMWDA?oc=5",
+   "data": "2026-10-14T07:00:00Z",
+   "coletado_em": "2026-11-20T15:18:04Z",
+   "outras": [],
+   "ufs": [
+    "RO"
    ],
    "temas": [],
    "categoria": "equipe"

@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-20",
- "gerado_em": "2026-11-20T14:17:13Z",
+ "gerado_em": "2026-11-20T15:17:18Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 15,
+   "lidos": 14,
    "aceitos": 5,
    "possiveis": 0
   },
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 25,
-   "aceitos": 15,
-   "possiveis": 5
+   "lidos": 24,
+   "aceitos": 14,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 20,
+   "lidos": 21,
    "aceitos": 6,
    "possiveis": 2
   },
@@ -57,7 +57,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -73,8 +73,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 4,
+   "lidos": 9,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 38,
+   "lidos": 37,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 27,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -155,13 +155,13 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 0,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 52,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -169,7 +169,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -278,22 +278,36 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 299,
-  "sem_contexto_com_tema": 20,
-  "oficial_sem_tema": 3,
+  "sem_contexto": 293,
+  "sem_contexto_com_tema": 21,
+  "oficial_sem_tema": 2,
   "possivel": 14,
-  "excluir": 75,
+  "excluir": 70,
   "generico_sem_ancora": 4,
   "veiculo_excluido": 27,
-  "outro_estado": 25,
+  "outro_estado": 28,
   "caixa_alta": 1,
   "exterior_sem_ancora": 2,
-  "sigla_sem_ancora": 5,
+  "sigla_sem_ancora": 6,
   "veiculo_outra_praca": 8
  },
  "itens": [
+  {
+   "id": "7bb545a673ff",
+   "titulo": "Montadora de caminhões elétricos entra na pauta de reunião de Pazolini com Câmara Brasil-China",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQaGxoakdWckFIUHBpby12RTI3d29KTDhWUW1HakhGT2tmYUJZVVlGUEhUMXJUR3c1THB3WUJ0Tk9mdmpJRkVackl1SThtWGs5REVfaUw4UHhSUTNBUG9rMWpoUEZPS2pmLVhOS3N2ckFSeXFIalJrNEZueTY0ZUZoQUhWeUtMa2lBQkxwX3QwdU41b09LUEN1YXFjMDFvSnY2TmRmMUlMZEVvUnctVFozYzhWc3FnQ2h5endB?oc=5",
+   "data": "2026-11-20T14:17:41Z",
+   "coletado_em": "2026-11-20T15:17:18Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "1e114ee08e90",
    "titulo": "Governo do ES apresenta programa de desenvolvimento rural com aporte de R$ 830 milhões",
@@ -380,6 +394,20 @@
    "triagem": 9,
    "temas": [
     "financas"
+   ]
+  },
+  {
+   "id": "a5152a21b0c8",
+   "titulo": "O Detran do Pará. O Consórcio BF. Os Semáforos. O Contrato de R$ 162 Milhões",
+   "veiculo": "O Antagônico",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPQ2V1ZTVjRWNaYmU3SmVsTERqTTNSVXlGRlYwR2c2S2dfTm9wcXNvZVc5WGJoLVcwWFBoRTRIaU5ablZZRzdWT1U1RnNUNDdJb2lYSFpjSVpJZVdZYmswcXFJbWpTbHhhUmtlSW9uNXUyT2ZxanVoRzNQaEZocjBQQVViRmQ5LVNxUEgzVEMxV0lZUmxYZUpTSk9NbWxFdXp6RGc?oc=5",
+   "data": "2026-11-20T09:13:23Z",
+   "coletado_em": "2026-11-20T15:17:18Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "contratos"
    ]
   },
   {
