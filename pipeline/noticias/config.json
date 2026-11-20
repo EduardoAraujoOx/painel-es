@@ -25,7 +25,9 @@
     "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
     "\"próximo governador\" OR \"futuro governador\" Espírito Santo (contas OR caixa OR receita OR orçamento OR dívida OR \"bombas fiscais\")",
     "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
-    "\"governo do ES\" (previdência OR Ipajm OR \"regime próprio\" OR \"contribuição previdenciária\" OR aposentadoria)"
+    "\"governo do ES\" (previdência OR Ipajm OR \"regime próprio\" OR \"contribuição previdenciária\" OR aposentadoria)",
+    "site:www.al.es.gov.br (orçamento OR LDO OR LOA OR emendas OR \"governo do Estado\" OR Executivo OR governador OR Pazolini OR secretário OR secretaria)",
+    "site:www.al.es.gov.br (cargos OR servidores OR concurso OR \"Tribunal de Contas\" OR TCE OR \"Ministério Público\" OR MPES OR veto OR vetos OR dívida OR arrecadação)"
   ],
   "feeds": [
     {
@@ -140,7 +142,13 @@
     "espetáculo",
     "exposição",
     "carnaval",
-    "natal luz"
+    "natal luz",
+    "corrida da cidadania",
+    "homenage*",
+    "comenda",
+    "utilidade pública",
+    "capital estadual",
+    "nome de ponte"
   ],
   "excluir": [
     "horóscopo",
@@ -359,7 +367,16 @@
     "renato aragão",
     "apex",
     "herança",
-    "ácido fólico"
+    "ácido fólico",
+    "atos legislativos",
+    "atos administrativos",
+    "atos da direção-geral",
+    "atos da secretaria de gestão de pessoas",
+    "diário do poder legislativo",
+    "comenda do mérito",
+    "a mesa da assembleia legislativa",
+    "a mesa diretora da assembleia",
+    "revista ales"
   ],
   "temas": {
     "restricao": {
@@ -497,7 +514,10 @@
         "executivo estadual",
         "governo estadual",
         "pazolini",
-        "ferraço"
+        "ferraço",
+        "vetos do governador",
+        "veto do governador",
+        "vetos"
       ]
     },
     "financas": {
@@ -581,7 +601,9 @@
         "loa",
         "orçamento de 2027",
         "orçamento 2027",
-        "bombas fiscais"
+        "bombas fiscais",
+        "emenda parlamentar",
+        "balanço de gestão"
       ]
     },
     "contratos": {
@@ -774,7 +796,8 @@
     "Sim Notícias"
   ],
   "fontes_oficiais": [
-    "Governo ES"
+    "Governo ES",
+    "Assembleia Espírito Santo"
   ],
   "outros_estados": [
     "SP",
@@ -866,7 +889,8 @@
     "Portal Pebinha",
     "ND Mais",
     "SCC10",
-    "Diário do Vale"
+    "Diário do Vale",
+    "ALES DIGITAL"
   ],
   "siglas_ambiguas": [
     "sefaz",
