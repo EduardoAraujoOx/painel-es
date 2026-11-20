@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-20",
- "gerado_em": "2026-11-20T17:49:18Z",
+ "gerado_em": "2026-11-20T18:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,25 +25,25 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 24,
-   "aceitos": 13,
-   "possiveis": 5
+   "lidos": 49,
+   "aceitos": 22,
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 5,
+   "lidos": 9,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 6,
-   "possiveis": 0
+   "lidos": 8,
+   "aceitos": 7,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 6,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 34,
+   "lidos": 31,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -97,8 +97,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 77,
-   "aceitos": 1,
+   "lidos": 80,
+   "aceitos": 0,
    "possiveis": 7
   },
   {
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -250,7 +250,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -278,17 +278,18 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 291,
-  "sem_contexto_com_tema": 19,
-  "oficial_sem_tema": 4,
-  "possivel": 15,
-  "excluir": 72,
+  "sem_contexto": 301,
+  "sem_contexto_com_tema": 18,
+  "possivel": 16,
+  "oficial_sem_tema": 5,
+  "excluir": 78,
+  "oficial_divulgacao": 1,
+  "veiculo_excluido": 31,
+  "generico_sem_ancora": 5,
   "exterior_sem_ancora": 4,
-  "generico_sem_ancora": 4,
-  "veiculo_excluido": 30,
-  "outro_estado": 23,
+  "outro_estado": 22,
   "caixa_alta": 1,
   "sigla_sem_ancora": 4,
   "veiculo_outra_praca": 6
@@ -333,6 +334,20 @@
    "temas": []
   },
   {
+   "id": "6230cfa2763c",
+   "titulo": "Governo do Estado reúne regularização de áreas, obras e transferência simbólica da capital em São Mateus",
+   "veiculo": "portalsbn.com.br",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPSHhnQldoYW40dHZFdzFUc29fbVNENkpiZjhORVNRU2tROTl2dUZ1RzljZW4yTnZjc29QUUZFa0xpMEtPWTkzbThtSXliR3ZaU2lsMDlMdWxXdjc4eTYyQXV5ZzBsbHlZZGVVX09EeERJUWptVkxacXJuOGVDVjRDbFJMMXlUQU5wVUh3dU9FZWFrazdwdzZpcHEzTFd5bDBPOWdNdDNLamZ5ODF1Vy1mWGNoMDBfV3NNTkpybUJmRzhicmpoN0lv?oc=5",
+   "data": "2026-11-20T14:42:07Z",
+   "coletado_em": "2026-11-20T18:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
    "id": "7bb545a673ff",
    "titulo": "Montadora de caminhões elétricos entra na pauta de reunião de Pazolini com Câmara Brasil-China",
    "veiculo": "TC Online",
@@ -353,6 +368,20 @@
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNX2h6TW9McU5KVmJORWFwVTl0NnhRY0RXbWt6bmtQYkp4RXB1ekd0TFB3UzBjSmVrZ2pmT3RtU1ZnTi1rV29JekVIMmdQS05IQ0hHY0JFT1NjOXdFcWc2eFZHNjMtNVN3azljSEhYbC1ESUhRY01LeG9tdHN3M0NLV1hzRTBXTHZHd1NfS3ViV2NoWEljQWY1VW1xYzZUcVhqYmE4eGRfSGxaeUJBN3dIVXU4eHZLNHljeTJ6NkJyQWV2dTQ3d2VZ?oc=5",
    "data": "2026-11-20T14:16:11Z",
    "coletado_em": "2026-11-20T16:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "1fc871c5423e",
+   "titulo": "Chineses discutem com futuro governo fábrica de caminhões elétricos no ES",
+   "veiculo": "SiteBarra",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORkdleVl0X0FSUkszYVhHODlVNXRTN2FBS1hFRVR6LU9LQjB4S0hrM2R4ZEtmbXA1cVZ5LXMxTlhoNHM1MWZXVFZib3daNC12OVJIQy1oZlNjbnBVVHZtWFRBSmxIallfQm03WTlmZlRRa21YbkNZbTUtSzFfa1VjaWZsN0J2YWhoZ00xWDl4T2cxREYyR3h5dUhIZ0RvSFY0TlFOZQ?oc=5",
+   "data": "2026-11-20T14:02:40Z",
+   "coletado_em": "2026-11-20T18:17:12Z",
    "outras": [],
    "possivel": false,
    "triagem": 9,
@@ -723,6 +752,20 @@
    ]
   },
   {
+   "id": "601df31d9012",
+   "titulo": "Governador do ES assina projeto de lei que atualiza Política Estadual dos Direitos da Pessoa Idosa",
+   "veiculo": "Sudeste Agora",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNZUZPYTk4STUybGYxOHZxMms0ZGRfQTFEbEFOR1lSdFNxWWFxbHBRc0VtNVIwQ1JMSUExckV6Ull6Uy01M3Z1cDVGdEdOOVhkUHpVTExVRFVNQWpiS0MzdERKU3FiY1RwQTdDelZON2xHT2ZVdzYyTXRvbEZxSEtPald4Y2QxY3NfbmZwR3dvZW01VUtNN0QweTVnWk5EZXJXWlAwbmVoNHAyTXczWjNaSkYzT09yZS03X1Q5bU1kT1E4cVRid0HSAcYBQVVfeXFMTWVGT2E5OEk1MmxmMTh2cTJrNGRkX0ExRGxBTkdZUnRTcVlhcWxwUXNFbTVSMENSTElBMXJFelJZelMtNTN2dXA1RnRHTjlYZFB6VUxMVURVTUFqYktDM3RESlNxYmNUcEE3Q3pWTjdsR09mVXc2Mk10b2xGcUhLT2pXeGNkMWNzX25mcEd3b2VtNVVLTTdEMHk1Z1pORGVyV1pQMG5laDRwMk13M1ozWkpGM09PcmUtN19UOW1NZE9ROHFUYndB?oc=5",
+   "data": "2026-11-19T18:59:20Z",
+   "coletado_em": "2026-11-20T18:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
    "id": "c520dba5cdee",
    "titulo": "Candidatos pedem mudança no edital de concurso da PMES; entenda",
    "veiculo": "Tribuna Online",
@@ -749,6 +792,18 @@
    "temas": [
     "contratos"
    ]
+  },
+  {
+   "id": "59f44987d939",
+   "titulo": "Cais das Artes abre agendamento para visitas mediadas nas exposições em cartaz",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTmhxT1llRXp2Yi1BS3I2NS01dTJFcFQyMGkzNmI3RWxjU0h6S2lMaFVGdWdzc3V1eEVyMmdVY1ViRHAzd1BzelBzUm5xVlVCaW1qWTZZc2cwTVo3ZkQ0SUhJMlZvRDBXdVpicnFoRFI2ODlDeF9lUXRtWUY1c3NENU1IcWxsUVdIcmtFNU1FSmFVSWNadFg3SkMyWmhGSDBpNkE?oc=5",
+   "data": "2026-11-19T18:36:00Z",
+   "coletado_em": "2026-11-20T18:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "346a665e4e10",
@@ -1723,6 +1778,10 @@
     {
      "veiculo": "portal jornal do norte",
      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVU5MNE1ic2JDY0ZDbHZNeGxLYm5EM2ZwM1dzUVUyZ3Rqb1NxSkxlRE1NUkhkVm5IZHhtUzAyNXdGaThCSWM0MkFuZEZWX3JfMEtfMExLeHJ6dTB5RHJVdjhsb0xST3p6dkJJWnFvNF9hRHdVSzJiYWxRSkNXYUswN2lSVEZZWHAxMEJ1TW4tbzdBZ1NqUXBzWHhPWjRIbm9VeG5zVnNBbXlDS0ZVQ2l3UjRWUTE0QzBFeFNiYmFnQ0U?oc=5"
+    },
+    {
+     "veiculo": "Prensa Mercosur",
+     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPUzZaQXV4Si1SZ2lPeWhNZExGbmdUUVl6S2pFd1EzSlRnbFg5b2tPX3ZDMmRMUWVFVXZnRTlDcGRqWm9XMHJyN0JlZy1sRXNLVWlFb0UzM3hNcVdzbkszSjM0cVNZbWVpQ0x4aXU4d3JzSE1CVngzOHdDcXkzZWFGN3ZoMGNpb1pJSnFpYnE0bWpPZm5ZdmYyNnFOdVltNF9RaXZpZ3J5QXpYU1NEMnlxUHYtUG1kMHpucTJpTjZaU0xDd3Zz?oc=5"
     }
    ],
    "possivel": false,
