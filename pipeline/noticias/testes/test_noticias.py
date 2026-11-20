@@ -968,5 +968,49 @@ class RevisaoDe17DeNovembro(unittest.TestCase):
             self.assertEqual(self.decide(t, v)[0], "confirmada", t)
 
 
+class InclusaoManual(unittest.TestCase):
+    """Matérias listadas em `manuais` no config entram como confirmadas, sem passar pelo filtro (o título de um artigo de opinião raramente cita o Estado), e a
+    migração da triagem não as derruba. Caso de 20/11/2026: artigo "Disciplina fiscal e justiça social podem andar juntas", de A Gazeta."""
+
+    M = {"titulo": "Disciplina fiscal e justiça social podem andar juntas", "veiculo": "A Gazeta",
+         "url": "https://www.agazeta.com.br/artigos/disciplina-fiscal-e-justica-social-podem-andar-juntas-1126", "data": "2026-11-19T09:00:00Z"}
+
+    def cfg(self):
+        c = json.loads(json.dumps(CFG))
+        c["consultas_google"], c["feeds"], c["manuais"] = [], [], [self.M]
+        return c
+
+    def test_entra_como_confirmada_e_com_a_marca_manual(self):
+        tmp = Path(tempfile.mkdtemp()); coletar.SAIDA = tmp / "index.json"
+        hoje = datetime(2026, 11, 20, 12, 0, tzinfo=timezone.utc)
+        coletados, relatorio = coletar.coletar(self.cfg(), 2)
+        self.assertEqual(len(coletados), 1)
+        self.assertFalse(coletados[0]["possivel"])
+        self.assertEqual(relatorio[-1]["fonte"], "Inclusão manual")
+        itens, novos = coletar.consolidar(self.cfg(), coletados, hoje)
+        self.assertEqual(novos, 1)
+        self.assertEqual(itens[0]["titulo"], self.M["titulo"])
+        self.assertFalse(itens[0]["possivel"])
+        self.assertTrue(itens[0]["manual"])
+        self.assertIn("financas", itens[0]["temas"])  # "disciplina fiscal" é termo do tema finanças
+
+    def test_a_migracao_da_triagem_nao_derruba_a_materia_manual(self):
+        tmp = Path(tempfile.mkdtemp()); coletar.SAIDA = tmp / "index.json"
+        hoje = datetime(2026, 11, 20, 12, 0, tzinfo=timezone.utc)
+        coletados, _ = coletar.coletar(self.cfg(), 2)
+        itens, _ = coletar.consolidar(self.cfg(), coletados, hoje)
+        antigo = {**itens[0], "triagem": 1}  # como se tivesse sido guardada antes de uma versão nova da triagem
+        coletar.SAIDA.write_text(json.dumps({"itens": [antigo]}), encoding="utf-8")
+        itens2, _ = coletar.consolidar(self.cfg(), [], hoje)
+        self.assertEqual([i["titulo"] for i in itens2], [self.M["titulo"]])
+
+    def test_sem_manuais_nada_muda(self):
+        c = self.cfg(); c["manuais"] = []
+        self.assertEqual(coletar.coletar(c, 2), ([], []))
+
+    def test_o_artigo_do_config_esta_na_lista_de_manuais(self):
+        self.assertIn(self.M["url"], [m["url"] for m in CFG.get("manuais", [])])
+
+
 if __name__ == "__main__":
     unittest.main()
