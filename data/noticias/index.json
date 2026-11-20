@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-20",
- "gerado_em": "2026-11-20T21:17:15Z",
+ "gerado_em": "2026-11-20T22:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 3,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -98,7 +98,7 @@
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 7
   },
   {
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 18,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 32,
+   "lidos": 31,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -280,18 +280,18 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 315,
+  "sem_contexto": 316,
   "sem_contexto_com_tema": 19,
   "generico_sem_ancora": 4,
   "possivel": 15,
   "oficial_sem_tema": 2,
-  "excluir": 71,
+  "excluir": 68,
   "exterior_sem_ancora": 3,
-  "veiculo_excluido": 29,
+  "veiculo_excluido": 24,
   "outro_estado": 21,
   "caixa_alta": 1,
   "sigla_sem_ancora": 5,
-  "veiculo_outra_praca": 4
+  "veiculo_outra_praca": 5
  },
  "itens": [
   {
@@ -612,7 +612,12 @@
    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxORE9XS3hBTGlNMllSTi1ybXZ0STFVbjdUYk9JUl9HSS1vS0g2b2RiVWlSdHFoOURlUG1uZkk3cnVzYWtvdE5FMi1POW81V1NXVFlCRGNPOXVzaURTUXRJcWtCUEs5djhUZ2xTVS1ULUIzQk5Zd0doVGgyZEpUYUFLNjlENE1sbG1wb0l0Q3lzYmlNQVhjRGU0Rkl4dmtlYmJlbmFPUEg4bXVCb0N0T0F0Q2w1TTdQVlc3T0RxOHpWdURyNkVTT2FxNHMxbTIzUQ?oc=5",
    "data": "2026-11-19T20:58:52Z",
    "coletado_em": "2026-11-19T21:17:15Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "TC Online",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPSXJkOHZTOGdDejVsdmJVeTl5NGp1VzQ3NzRaU0tRdlJvMkU3d0JrQTFxVTNMWWgtMGNsSktGdGpkeTBJNFNIY1kxXzJTanE0Q2JMdU13UmNmdjB1WmQwN2hwd3VseHZ6Q2pnS3pfQmhxbG1SYUJrTDdSbUJja0g3MU5mdUNBcERFNG9heHg4VDEyZWtWQjhaY1UteGM3RE1lampnTjdmc0ZNOExjMGRMOEtZRnQwTWxsMURmVFRyUkpXUQ?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 9,
    "temas": [
