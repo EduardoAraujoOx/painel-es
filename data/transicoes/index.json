@@ -1,6 +1,6 @@
 {
- "gerado_em": "2026-11-19T21:17:45Z",
- "ref": "2026-11-19",
+ "gerado_em": "2026-11-20T12:17:53Z",
+ "ref": "2026-11-20",
  "desde": "2026-10-04",
  "estados": [
   {
@@ -15,28 +15,28 @@
    "nome": "Amapá",
    "eleito": "Dr. Furlan",
    "partido": "PSD",
-   "total": 37
+   "total": 38
   },
   {
    "uf": "AM",
    "nome": "Amazonas",
    "eleito": "Omar Aziz",
    "partido": "PSD",
-   "total": 151
+   "total": 154
   },
   {
    "uf": "MA",
    "nome": "Maranhão",
    "eleito": "Eduardo Braide",
    "partido": "PSD",
-   "total": 77
+   "total": 80
   },
   {
    "uf": "MG",
    "nome": "Minas Gerais",
    "eleito": "Cleitinho Azevedo",
    "partido": "Republicanos",
-   "total": 237
+   "total": 259
   },
   {
    "uf": "PA",
@@ -50,35 +50,35 @@
    "nome": "Paraná",
    "eleito": "Sergio Moro",
    "partido": "PL",
-   "total": 190
+   "total": 207
   },
   {
    "uf": "RJ",
    "nome": "Rio de Janeiro",
    "eleito": "Douglas Ruas",
    "partido": "PL",
-   "total": 207
+   "total": 208
   },
   {
    "uf": "RN",
    "nome": "Rio Grande do Norte",
    "eleito": "Cadu Xavier",
    "partido": "PT",
-   "total": 118
+   "total": 119
   },
   {
    "uf": "RS",
    "nome": "Rio Grande do Sul",
    "eleito": "Luciano Zucco",
    "partido": "PL",
-   "total": 246
+   "total": 252
   },
   {
    "uf": "RO",
    "nome": "Rondônia",
    "eleito": "Marcos Rogério",
    "partido": "PL",
-   "total": 72
+   "total": 73
   },
   {
    "uf": "RR",
@@ -106,11 +106,163 @@
   "fndr": "FNDR e reforma tributária"
  },
  "contagem": {
-  "total": 1677,
-  "medidas": 519,
-  "equipe": 1158
+  "total": 1731,
+  "medidas": 536,
+  "equipe": 1195
  },
  "itens": [
+  {
+   "id": "0724d53ec923",
+   "titulo": "A escolha da economista Renata dos Santos para comandar a Secretaria da Fazenda do Rio Grande do Norte a partir de janeiro de 2027 é um dos movimentos mais significativos do governador eleito Cadu Xavier (PT) na montagem de sua equipe. Ao busca",
+   "veiculo": "Blog do Barreto",
+   "url": "https://news.google.com/rss/articles/CBMizwJBVV95cUxObmtzWUtUV1laakdxM28xZEduXzVnVjVTeGUtZGU1RXo2LUFTWGJpR0NCWmFRaDV4VnhCN0M3bkJxaktmV2xmaHRWVjB0am9oalN4UHFySWZEYnVvUHZRTWxlUUpEa19PWjRqbzhUWTZpV1lKSHA2dExocWZLdnY5Y1VzZlhkOTFsR2gteU1XRmxUWTdSX3h4cmJxcGhyT0gtOS1XUk5rc0lxc2RXMElpU1RwWmxlWjh0Wm5Ka2lKRWZ6MUhjNGxzMERqT1ltZDhfSTNpbm9TbGV3eFd6b1ZyOXRiaFYtOVdvZU5OYTlhdnJhem1sNjlnbm12TVdjVGpCY3VQZ0RIcXc5QVJqYnI2SDZzcGFaZWQ4YktYZWw1RWh6V1RhaGFWeEc2aWlEaW5BeVFhUEM5bFVCd2JpckhlUmctN1NEVkVVdEFJZG81Yw?oc=5",
+   "data": "2026-11-20T09:38:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "6cd1ba127976",
+   "titulo": "Douglas Ruas teria levado $ 4 milhões de fornecedores do governo do pai",
+   "veiculo": "Área VIP",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZVU0R1pRcmFUTkR2Q3hDQlBXRWJfc0F0N1YwZXkyZlByeUNnc1lCNERKZmQ2emFOenUyVS1VSjhick9zWDJENDBTM0lVdlU1alpISHpPbmV4YzdnYXJ0M2hhcXBHS0VDZERBT1YzZjA0bmRaZl9vNUpSaUNfVlM2TWhjOFJlTkdyYVZSZ3c0b2sxaXVXYVhpVU52dVZ1VnlLdFJob0IwaUhaVWNrS0hFUDVsUDNmZw?oc=5",
+   "data": "2026-11-20T06:04:06Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
+   ],
+   "temas": [
+    "contratos"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "bd3dcba2d76a",
+   "titulo": "Quem poderá pagar menos IPVA no governo Cleitinho? Veja o que está na mesa",
+   "veiculo": "Metrópoles",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTVJDaWU0RDN1S25WNDZlYUk1VEFJUzFhYXRrajFSY1FjVTJzaF9nQmNHQ2lobFpya2d5bU96UjdCTzlfQ0ZmQ2F5YWswc2tfNTdGMGg3TGlfUnVHdFpEdC1kVWNsSUttRHNOVk9ZWmdQZDk5ZTRlS0xwYThCNHFiTE1hS01QUk5mTzZQTGMxT0p4aXFRUVlTWEZUM09XRGpUeW5OUHo4c1BGekJiRllBRjZMcw?oc=5",
+   "data": "2026-11-20T05:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "ff7b6e1d4b13",
+   "titulo": "O governador eleito de Minas Gerais, Cleitinho Azevedo (Republicanos), elogiou Kim Kataguiri, Arthur do Val (Mamãe Falei) e Renan Santos, integrantes do MBL e do partido Missão, durante entrevista ao podcast Flow nesta quinta-feira (19). Ele os classifico",
+   "veiculo": "Instagram",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE54Zzh2Wkh1cmVaeTZvVE55U19LRm9MWF9VNjRpQVRZaXNxdnFSbloyZmNyY1kxZmJwMTdzNTBnNkJYQm9LcDNhQ1RySnBNYWVUc0szS3dB?oc=5",
+   "data": "2026-11-20T04:43:20Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "d71add9a5b8c",
+   "titulo": "Por que Cleitinho quer renegociar de novo a dívida de Minas",
+   "veiculo": "TV Sim Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUFlHck05Z1hQQk1VNnZsZVBUWHNCR0VuMWNfQVhjcUEwNzZSUjR5bHVPaTNaQWRQUk1NeEd3OHRJS1BXcERVckhReUdMemRIZ3ZtYy1fUlB3LXFyeGNjMm1SLVJDMV9xbkJNU1ZkRURreXlYdUdVeWxQN3pLUm5vNGV2MFpmS1lKdnMybmlEemlQZ3U1UDBpOE5JZGNlWEMwVUNyUDU4dVVtUzVpTmVyVEl5eWJfUktp?oc=5",
+   "data": "2026-11-20T03:06:35Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "aed0556c7e1f",
+   "titulo": "Cleitinho diz que vai se reunir com Lula ‘quantas vezes precisar’ para discutir dívida de MG",
+   "veiculo": "Valor Econômico",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQd0tpVjRwRDlORDg5YTJ5U2h1TmFZWjlTdHp3enZxcnpOOHd5MElwZ3lGOWFYS1ZKNGEtMzZaWjAyclphR2VNUjhGNmNCREh4dGM4VE8wR01fdFM1bU9rZ2VyOXlpc1hQNGM1ZWpabDlIUWYtdWZMUDNRcXJ0WUM5a3VYRVpicjFaMWZKX0N4Y0F6TzNiQzN4NEdNZHZ6a1M2cVVRdXJ6TFJ6WkxBYml5bEdKQ1QxMFBWT2JpTW13UVFRbWtLUGRHNVhRcC1NVTBwU1RzeDNoSmRoUlktZnpwONIB7wFBVV95cUxPenhaNm12Znl4OGo5QS1pNVlFY2RtczJQTlJtd2RIclNDM0pfbm91UE1QZEpXT0o0eXFDRndmUEx1czRDaWZNNjVncFdrY1JrZmtXSFRRaFRvWlY0NE1kQmFHX01MZUZXdWpmR0MwaUxTbUxjT0pWTTh4cldzdWFtTFVCbHNESXF1akZ4aWNiYVpvLVV6QkM3Z0RjYm1oaERkWk90Y215QmpBQnUzQWotUV9nblBkVzYtNE9xOHdfbTRlTWdyT0pRNEZpaWd2ZVQyWGJBY2pfSmg3UXBzMWdXZk0wWlN1R3BOYWZSX2ltRQ?oc=5",
+   "data": "2026-11-20T01:02:28Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "aede4823c799",
+   "titulo": "Seplag alerta equipe de Cleitinho sobre dificuldades para conceder reajustes a servidores",
+   "veiculo": "Rádio Itatiaia",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOX3Y0N0ZVZ3l1elpkSXExaXlYb0xONGktWmxKaXl4YTBYZ2tyS1NGdlFNQmNGMDA5ZjBjeTc2SGJpQ0tOSTVkTEZfY3dCQWYtN2UyalMwNmZxRGVtT1hhSFpqdDV0YkFKdFZaTzlmWF96d0hSTEd5SGJqNW1saS1sVFJUV29aN0pmbWVpUlVRX3lQRkdYdGhvWFdvN1BwdEVBSUYtT0hfb1g4QWlkMEFLYWN0VGk1ZU9rRkViYldOU1pidF9tU1E?oc=5",
+   "data": "2026-11-19T22:50:23Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "pessoal"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "363fa0416973",
+   "titulo": "‘Troca de experiências’ entre Tarcísio e Cleitinho tem menção à revisão de benefícios fiscais",
+   "veiculo": "O Fator",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPWEp4YldRa3g4aklHak90dGl6Yi1oaEpSbFM0UE5xd05aMFJod3JLaktUNkdRbF91cW5qMFJjaU51eU1iOHAzMkc3a3AxcU9zZHRTalJEVEwyVGlmY1Zna19zLXhYM0RkTEVoeldydkhzdkEzc0RJOUlaMU5uVUNDdUwxMXlOTERLR184VGRsTmpoX044eDRjOTRlRHozb3JDMkVia0lnRWRHTE9SNFpSalVETkhNS1Q1WVRCMk9VVE5kdzQ?oc=5",
+   "data": "2026-11-19T22:42:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "d36a6c57dd49",
+   "titulo": "Cleitinho afirma que vai construir secretariado técnico: 'Um secretariado que eu possa mandar embora'",
+   "veiculo": "Rádio Itatiaia",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQQnZ2eGVJTWRiRGc2NW1qb283TUkxdFlVaTdaaV9jeC04Q2lzcEdiRFpEbmNwS3pxLTd0YU1RTlRJdUFUT1JDcGg1Q2Y5Q2ZZV0JISXU4QVEyT18xdXJaS21VNnRZZjA1dU9FX1M4X3hGT3BYN3lZVzM3TmF4WWZiak9RRVM1ZTFpZldOZXBnQTZfN3N2NEcxaW9vb1Y4c3ZxNE1hYnJoQlhKa3IyQnlCc0tFUnFvMUxsRjBOeFdjM0x1WXRNczBxUHhzZ21aU3htT2c?oc=5",
+   "data": "2026-11-19T21:49:19Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "859de1fc066c",
+   "titulo": "O incômodo de integrantes da equipe de Cleitinho e do governo com a transição em Minas",
+   "veiculo": "O Fator",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPa0w2ZC1YdDNhNzl0REdqc0ZXZGRxQ3hXazZmVklabEpvcHJnWWxrN1h4VDg1VjBucGZOdUMzeGVUWXFyMVVibmlzVlZUbC1wYnZobHRFc2JjMXdyMVR2LUtYVENzcWhyeXlxT1JxUFUtMVVwc3JXb3pIZy16Z2VtZVhCZkpFandWc1ZGc3ZPanZXbW95Y3JSQ2JpbTBoX1JkOXRvdkVualdnOFNjM3VidElyNUJPQmlvcE5SNQ?oc=5",
+   "data": "2026-11-19T21:36:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
   {
    "id": "766a45546f11",
    "titulo": "Deputado caxiense Claudio Branchieri será o secretário da Fazenda no governo Zucco",
@@ -124,6 +276,36 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "bfbdc1646b36",
+   "titulo": "Zucco confirma novos nomes para o secretariado e cargos estratégicos do governo",
+   "veiculo": "Litoral na Rede",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQVHg1S1RyNXM4Vm9KY203d3loUDZlSFVhdXFpcUd3WTdKYVVLZ1Mtc3BEWkFXX2x0S2d1U1lYVTdMT2JLTFQ2ek93cUtlS3Q3TzRraDFONnQ1TF9wOFlKRzgxcnF4Z2FnSExHY2ZobXFFVDNCRkVsc0x2Tmw3UHpBS0N3SUQyT1FlNVNEdXB0Z0pQMHFKeGJ5U1BncW1taXQ4bTBoQVNabmxsRldtUnc?oc=5",
+   "data": "2026-11-19T20:48:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "56a03ff288f1",
+   "titulo": "Servidores cobram diálogo, valorização e fortalecimento do funcionalismo na gestão Cleitinho",
+   "veiculo": "Brasil de Fato",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQZW1qNG0ySXlTWnVteklkZmNrUEJwWW5VaFhSZ2pDa1ZlWnBUb3c3N2RxYmFSTVphSlh4LWVhSWdvaVhTS25mSlV0QkI3Z3BQc21JZ0VrUDNJQlBfY0dSLXVRbHcxVUNSY056bVpOX3FQZDVfNWxTMnpBMnM0bTRDdGx2RVNoY2E3eWFlWnNBTkdsM3o1OG5OWHp2TVU1T2h3UEd2bEwzVTVZZlJwTWZ0ckVQekRnc1ZNMUd4R3VlaS1JQ0dQVHVPNEZPbVhxX0k3?oc=5",
+   "data": "2026-11-19T20:37:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "pessoal"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "f5f1b9381dac",
@@ -242,6 +424,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "5d57382f7ff3",
+   "titulo": "Sérgio Moro anuncia Secretaria Anticorrupção no Paraná e convida ex-procurador da Lava Jato",
+   "veiculo": "RedeTV!",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOS3c1RjA2ckloTDBGNmp2c24zQkc3RkE0YnhobktnVHRIa0VqdEw3VWQwX0ozcEwxVVZjQXJYUzNhMlMtSW5wNVRBcXFpYU9fRHFnLXNwU1RlWWpyeFFmUUhZakc4c1ZVTHIzeDdra2RLbU1lUkdtdWVNTWlmTE5QaUpjMTBWSVl6OVNTNFZlYXB4WXJzaEJMQ09xQ3hDejFRQ05QU3ZMLVFvbExvUm5HenN4UEQ4NzZWSkp4U3VHSdIB1wFBVV95cUxPcllkaVMzM2VyeXhLdk9BZmtDTjNwZ0xMWmlUV1dPN3Z5QWN2WVlCdUt6bzNuUjNSRUNzRDctaXJoX2xwVU5mOWhDS2VaR2Y4dXVtcXQ3b0ViYl9RM2RJNl9GMFhpeDZqRGk1dkY5b01xWHgzNVljTjdScXEzM1IxSW1jMXRQa2lOMnFIcWZkd1NYb19lejNrYjE1cXBWQ05fajJ2TS1UZnI3TnZhRVJGU2YxdlF6SERRSkdvZktxZklQMVhQTm1uMUdSRlNKRkl5Ukh2TUZ3Yw?oc=5",
+   "data": "2026-11-19T18:58:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "92e635dc398e",
    "titulo": "Moro anuncia ex-procurador da Lava Jato para secretaria no Paraná",
    "veiculo": "CNN Brasil",
@@ -300,6 +496,22 @@
    "categoria": "medida"
   },
   {
+   "id": "6c5ad806e6b6",
+   "titulo": "Governo Zucco: cinco novas secretarias têm titulares anunciados; veja a lista",
+   "veiculo": "Berlinda News",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOazBhcFo2b2YwNnBSdk5hOVZDcktRVjJyVjRYZGtwcURzS1NMRFpaYTV4VzVWcW11WjE2bEV2TnJqNGhMcXAySG5PUmxqOTZFcEdZVkdzZGtOQlYwUUU3bFVNRUJiNEpSY1Y4VXRTSFlOWWF5V01CRjdXRGVhOHFYN1FnUmJuU19CUWVDR0lhRDFoenlDUEhuTzlXZTdQVHhhMURGb0hvOE85U01j?oc=5",
+   "data": "2026-11-19T18:14:08Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "9a98067d62f3",
    "titulo": "Os nomes sugeridos por Fábio Ramalho a Cleitinho",
    "veiculo": "O Fator",
@@ -348,7 +560,12 @@
    "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOcUdkYlJJT1o3TERJbk13SEc0V3pwdE9IS0hReURpQ0s5Y2ZheHFOQWphUTIwYjlTSXRXTGxjSGtqRG80RzlsQVdOV0NKemVBSnY4bkQ1RmFPREtGWkI0clV3Tkh2NUdHQk1DZXY0bHJtZFlFT0VHZWkxNlFZengtLVdVSDl2bTdpSWYtMzgybmh5cFpTTzc0NEt6UlktNmpFd1Baam9UT2NsNlFoR2gtQ0NPUmtKRkVodGMwa3g3bkE1UEZ5b2NvVjZxc0xFVERXemtYME5HSjhaSHE4V2tpOVl4MXhKMFdsZFJZUU1hZzU3em03?oc=5",
    "data": "2026-11-19T17:44:08Z",
    "coletado_em": "2026-11-19T21:17:45Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Paulo Marques Notícias",
+     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOYUlfTjVUYWVZZ19NOG1UYVZKc1VlN2I2SFdxVWVPN0NwTWN1Si1oMWtkanNObmphWXRYZWFHb1FzSVBoajdmTnM5VTFybWlja0dXUG1uV0F2UXotTzBadWM5dkhKSUpHRWRjSHB1UThvbjZFTG5zTTV2M3FJaG04X0dYdG5BS2hnSUpHbFhSSk1fN05RcTNnM3MzSTRya1NEc0pBbEZvVmp5RGI0VV9pc0lTRVYtNWM?oc=5"
+    }
+   ],
    "ufs": [
     "RS"
    ],
@@ -382,6 +599,22 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "d8dbf94b96c9",
+   "titulo": "Cleitinho se aproxima de Lula para negociar dívida de Minas e enfrenta resistência de aliados do PL",
+   "veiculo": "Brasil no Centro",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQb3dSYzBPcVo4cmYyT0VZY202Slptd29HWURXOXd1VXJVRkhnajVUN21VcHJmRk9tQkh4ZHVsSUhlMldGMzhMMG5vUFFGZGZqUTBoSmVkNEVqUkJwVEdfQlRnNjctYjFyYXo1dGRLUFdFbmhGeEc3YTRja1FCbTgwbkpNdk80T2c1VVNIRTB3aDJSaFRIeGdTa0JVM2JQTWU4X3N1cVQtdlVGcU9FTHhVc3oyZFIzeXdRdHRRWFl0ejN2ek56V3pKNG9n?oc=5",
+   "data": "2026-11-19T17:21:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "3e73bf0cb45b",
@@ -853,6 +1086,20 @@
    "categoria": "medida"
   },
   {
+   "id": "e904d7276ccb",
+   "titulo": "Moro escolhe ex-procurador da Lava Jato para comandar secretaria Anticorrupção no Paraná",
+   "veiculo": "Diário do Centro do Mundo",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQa1ViX2R5TEl4Vm5HdWZTZWczSWpDekxLRU95RWVYU3Jac1VoaTJuN0ZQUUtJSkNiY0VjeS1mX3k3M2piT2FuUld0TDA0N1ZneHVxMVNETWQtYW1veUlXS2YyZnM5V1lwNWM1NEJmQ0M1eGM0Q3REVEZ6VXRlMXBpQmNhZm04QVY5SG5rM3RPeDVEWi1rZktuVHJwQmt6RmxpMzB3STVwX3RQUDhheWZRWTZB?oc=5",
+   "data": "2026-11-19T07:34:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "91e6de9d472a",
    "titulo": "Marcos Rogério relata proposta de R$ 4,9 bilhões para investimentos em infraestrutura; Rondônia está entre as prioridades",
    "veiculo": "Jaru Online",
@@ -965,6 +1212,20 @@
     "economia"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "82b3f734700f",
+   "titulo": "O que o discurso do secretário da Fazenda de Zucco tem em comum com Lula",
+   "veiculo": "GZH",
+   "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNenhvQVZ1RlR6OHJ0UjQxMUlra3Utcm0wOUk5ck40ZVFxclVYdmlIWlQybjNYMlBBNjBvS1Yta2lrQWFZeUkxaGNWRV9HaXFmanRzRmlRZVZCSGVBV2JfbHNhdlRBbGVTb3RJVXpOQUh2R2NDOXdteGNpaUEwUDNTX04yT29tTFNTa2hTNVhCcUVYemNwNFB3enJ0VTI4SXB1elBBRUZPTXJKTG9OS2ZrYjJYbUtUT0hvdzFQR0hsZkJKVlFmT0RSempMNEpqSDRLUUw2ckl5MjZ6OFdfaW0xTE5EZGxxRzZKN0dEWUc5V0RWVFU5OWJURGVMRGZhVHIxNlVOVE5YZGRGLS1lVVE?oc=5",
+   "data": "2026-11-18T22:34:20Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "4bb855af11fc",
@@ -1216,6 +1477,22 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "744d0158a6bb",
+   "titulo": "ENTREVISTA: Procurador-geral do RS avalia situação financeira do Estado e destaca transição de governos para 2027",
+   "veiculo": "DuduNews",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOd0NtVzNZaE4tSDExc0JMcl9kRVdWaEw0TmRIbjVTLXdXWThvSDlTNllUYVExRVV0czNsTVRKWVlIejIzTEgtX1NpdHJwZWU2NEpGUHJWeVd1bUI4enhIMEdhNWhuc3Joc2tzSHV4ZXJoRTBTNUs3QWgtYlNjdFo5MTNiRjlpdl9sX3d4bnVFbjVLSmx4eV9XY3VGNWVkWFlYVGk3eWlqd3ZNeXdxMWxBWUg0YV9URjV2ZmJ1MlQwWGIzVGNOR0dQY1Vsa0lhWmVGWDdv?oc=5",
+   "data": "2026-11-18T19:22:53Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "7af263032cc1",
@@ -4527,6 +4804,20 @@
     "estrutura"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "40d8b72edbfe",
+   "titulo": "ANTECIPANDO MEDIDAS: Nos primeiros 100 dias a gestão Marcos Rogério vai priorizar saúde e segurança",
+   "veiculo": "Rondoniaovivo.com",
+   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQWUlERi16UTZKZjdFalhMbEFNWjNvRE5fdTl2eDZUY3R1SUZIOHZyLXcwS2ltbjItcE1UclVfdmcwcTFPZXNlYnNGUWE5R1l0cTVtZXNPNU02U0toaGdiNGJhci1tZkNRdnMxXzBGS2JNOFRIakMtODM1N1JBOFl2d2hWbWo3d19SY2MyQkRxd2NOQWNLZ3NINEoxeUw3NzV0M2dxclVCeVNzVGFXM1l2cmRTVDlNeEtZZXNULWFxNjdBREV3dGlpVHpXUjlzWHlYQlBLMkFVTWhqNFlSRFM3d2xDNDVzdEZBcUpHQUZBY1FRQUl3d1Vrc3RR?oc=5",
+   "data": "2026-11-16T12:45:29Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "RO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "974ea26cf7e1",
@@ -8242,6 +8533,20 @@
    "categoria": "medida"
   },
   {
+   "id": "6d131608767e",
+   "titulo": "Transição no Amazonas tem reunião no Complexo Regulador do Sisreg",
+   "veiculo": "D24AM",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPZ2JJaDBra2R2Rlh1YjRMMXJWb3daclJmU3ZKQVdXX0N0cTVkQk1FR3pyRXdUNjE3MkpyUlZZMk5UWjdMX19BTVctdnZkMUhfVC1QUi1hRDVZYi1PVUtDNzB1UHhWYzdWSk51c1pYSWlsTXhXM3lsRjI3MmVlYUljb2pxQ0VpdTc2MDBhQ2xYQVJHY2to?oc=5",
+   "data": "2026-11-10T19:04:23Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "04d5755409f7",
    "titulo": "Braide suspende contrato de R$ 65 milhões do Governo do Maranhão",
    "veiculo": "Gazeta Carajás",
@@ -10504,6 +10809,23 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "6ac5e3ba60c1",
+   "titulo": "Secretária da Fazenda escolhida por Moro atuou em prol de privatizações e aumento no plano de saúde de servidores no RS",
+   "veiculo": "Portal Verdade",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOYXpsWHZaNjUtLS1DWTNXZ2tQMXp6QjBhQ0JmOEV2YlRtTFdoQktHdkJSazd2OVBvODFZV2o0R0p0NHlIOVJ5dVhkaVV5WEo2ckF2dnpGWkNYMmRnYklrRXIzbGZlS0x0bnJOVkhqc2NpSThtMlBWc2E2MXZVRGxEN2hDM1Q4RTFFYzl2QUcteDlzQUR5MldjMkx6YVR4ZEYwODBpcEVoNTdDUlVvbExoN2c1OEl1UFV4cUYwRG01OHN5UlRKYWdnY1o2RndkRWkwdTUxY0hNSTNyaE5iOTNSSXZvYw?oc=5",
+   "data": "2026-11-06T08:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "economia",
+    "pessoal"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "dd4220125ce8",
@@ -14933,6 +15255,20 @@
    "categoria": "medida"
   },
   {
+   "id": "2a2266535abf",
+   "titulo": "Novo governo do Amapá acionará Lula e Petrobras sobre Margem Equatorial",
+   "veiculo": "Poder360",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNlo5ODdZSTd6S1VmM1BheXVQU2NKc3ZodFpUbzBkWFMtQUVtZ2g2cTloSnltUTY0ME5zU3lFQWtodC1nV1VpTENFNzlWT0JNR19uNXlpN1Nya2dpRXgzOGg3QTBVbWd6VV81a0pNOUNuV3h1Ujg2Wklmb2xyc1gxdTFwOGhuaDFVWGlGY2J4SnptZ0lLVUFGanFUZE05UGxNNzFJY0k0T0J2emZRbVBjaHA3aG5XUQ?oc=5",
+   "data": "2026-11-01T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "AP"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "29ea1a62e6ce",
    "titulo": "Omar Aziz contará com orçamento de R$ 37 bilhões para governar o Amazonas",
    "veiculo": "Portal CM7",
@@ -15666,6 +16002,20 @@
     "gastos"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "dda5be9ef852",
+   "titulo": "Omar Aziz e Roberto Cidade iniciam tratativas para transição de governo e priorizam saúde, segurança e educação - Portal - Rios de Notícias",
+   "veiculo": "Portal - Rios de Notícias",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPTERsR2doRU5yVEVZS2l3X01VanJvUUlIRVY3VmJTLS1pMy15VXhiTzFlb2lVYThUQmN4ZlVkZmdoQ2xHancta3Z5SlRTdnAwM1lhRzJORHpuc1lTLWFLaWhJdlRBeWN5alZIV0tfd1U5b0JSV3VPbE93bFpYaXljNW1xeDQ5N0FMOTZNa1R4R0pGSm5PSjNEekVUZERRUG9ycWRaSU5wYURrdUtxMzdVUjNHVndWcjJpNTBlUjNscnhfVkZ6dy1XaDV6RDFRNE1KQ0duNkttYmRWempKOEE?oc=5",
+   "data": "2026-10-29T19:40:57Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "9a532669816c",
@@ -16920,6 +17270,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "33a215615853",
+   "titulo": "Omar Aziz busca recursos em Brasília e prepara a transição de governo",
+   "veiculo": "D24AM",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQWXBEX1dDdks1ZWVaZzkzc2ZabEFQYkxMSkk2VDlnQzllMU9RckxUYzBKQnd3TlhiUEJhZ1JLREVBVHpfejJid0ZpbF92NHUwZlhVRjZORVRreEx5SlQyX0p2UmVYM09ON21JVUpmaS1qNGR2OUZNcVdKREtVUVNRMVNOMnBHZDFjMGtvcDlHeEN6eUN0LW5tZ1A4STVtdGs?oc=5",
+   "data": "2026-10-28T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "2d2c2af08a65",
    "titulo": "Governo Fátima Bezerra e Cadu Xavier anunciam primeiros nomes da comissão de transição no RN",
    "veiculo": "NOVO Notícias",
@@ -17438,6 +17802,22 @@
    ],
    "temas": [
     "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "7911f9ef78b0",
+   "titulo": "Goioerê tem nova secretária de Educação no Paraná, escolha de Moro",
+   "veiculo": "Gazeta do Paraná",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPRm45TjJSTC1HV0pzaXVzeVVyTVJXZklCRkgxVkRZblFscGdDeGk1d3kyT0l3VHR5UEtFOTFNc0o2ZFNJQnEwa1JYY2NWM2JVYnpyTVRkOTAzcHhpMkw5OHBjVGVtS3pGbmFwcURmbk1Fd2dNZ2x3OGF3OF9Rdm9TLWxyTnVpSEJOYmpldkVWNVkxMjZ0a00xVmc1R3RjNFdyNDlPQTE1VzVmSm1DQUE?oc=5",
+   "data": "2026-10-27T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [
+    "estrutura"
    ],
    "categoria": "medida"
   },
@@ -18341,6 +18721,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "03d7bde7757e",
+   "titulo": "Governo de Minas inicia transição com equipe de Cleitinho pela área da saúde",
+   "veiculo": "Impactto News",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPZFU3aENMSjltOGJoY2w4STFOT2FranRwdE13N0dCb1lrQS1PX1QtdTRHMlA2dGdqbFlYck0xR1Bfbk1KZ2pFY3hiN3p0Y0dwYUxrWldBbnQ0SnUxWXgzZ1AxaDJwbjNpRFpRRm1FcHl5WnViNG9zd3FZc0dINWJxbFdza2xCS0RGYjRzb1lFaGxlUFFNSVFsbGgtSnBEWGlJTU5YZUxmUEltZHVWeVNtQndfNFVEdzlBaXI3SA?oc=5",
+   "data": "2026-10-24T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "ff60af5cbf1f",
    "titulo": "Vice de Cleitinho, Falcão promete enxugar máquina para lidar com déficit ‘parecido com de Pimentel’",
    "veiculo": "Hoje em Dia",
@@ -18388,12 +18782,40 @@
    "categoria": "medida"
   },
   {
+   "id": "a688a0f95cd8",
+   "titulo": "Cleitinho e Mateus Simões iniciam transição de governo pela saúde",
+   "veiculo": "n3news.com.br",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQc0dXSXZxaVpaLVZjTGpPRTdObTZzeW1wcUdmTWxJX0p4Um9oVERhc3pnZE9RSGRRanFnazFMSlAwbkVjZDBJLWN5aXAzUDBLZngxSEp4VFpIekpSa05wRmw1Y3NRclZsNC1vLWQ0cXZ6cnZHNU0xcFJYSzhvbldnYXZxQkE?oc=5",
+   "data": "2026-10-23T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "8c4cb69d122c",
    "titulo": "Equipes de Cleitinho e Simões se reúnem pela 1ª vez para discutir transição do governo de MG",
    "veiculo": "G1",
    "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOQlFCMzd1WERYWU4tVWswSnVlRHNjVFB3akh0SmpuMi14RXFlOU1zV0tmQnk2czlPSmNDbDVqblZsR01GZGxQQ3hDSjVDYnVHbWhKX0ZIVXZCdzNNY0V4N3BRN2hQcGgxN3BzRXd0THFLczZfYUgyekxZUGg2cTkyOVVuMVE1OE1ZVE9ZbTlMbklHaWNwMXNRclVkQmxIT1ZKWTdXVWtfSnhrTTJUbDJrNXVFSHVCZGszVDRhbXBfWHVZODU2NUJIREdoRHYyMUUwTC1nQmxyYThNa0xEYWdoSlBqRzJjNXFveUhFaTRlWFAzemZ1a0hrQW1rRdIBigJBVV95cUxPcXQ3STNpZlRHZW4waThLZUM3YWh6ZmxZUk10ME9GWE5Wanc3QWxkdlNfd0o1UjZkY0ZkY3VfNGoxenFZUGEwenBhek9EUHNBUi10VlBuZjhmaG1fb1Bpemh2STRCZWRUUGdINlBUWlVFbUNCUVF4akMzdWpRNUppT1h3RF80REFHY2IzV1Jkb25HQmN6MndvR2oySl9RWm5xTjJhcktBUnVyRVZvNUJfUFZ1Yl9pR1BBcnNoY2dVMDdDd1NOOXNXdW55Z2lfQ05Bb3RDVHdMaHBGNGNaLWd4NWZRN1E2VUhyOUhNTmNhOC04dGVQRGdxcFhtTG1TaFMxX0dBTVJCbmJYZw?oc=5",
    "data": "2026-10-23T07:00:00Z",
    "coletado_em": "2026-10-23T07:00:00Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "8198dc5c66e7",
+   "titulo": "Deputado do PSB participa de reunião de transição do governo Cleitinho",
+   "veiculo": "O Tempo",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNV1I0NG5kOHU2TGUweXdmSHdFYnJZcDhFLU9UWXMyOHpQWHlXbHE1NVZqUUg3Um9BWjRWQ0lCanpWVFVYSUVaTUpLNHlPQWJaa2QzTkxwbmg3SF9yQ2tpVGFyaDRpOUJhcXQydWotLTMxcC1WNkdwMk1lYk81bl9wZGllMGhqWHpmTHROY0JRZXNMREdvcjBzVjU4ZXhtUkhDVkZlczB2OE9xUzZYdV84d1VMVFVWcWhHbG1kVG0wS2NISDl2Q2doTGQ2ejFSRXM?oc=5",
+   "data": "2026-10-23T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
    "outras": [],
    "ufs": [
     "MG"
@@ -18492,6 +18914,20 @@
    "categoria": "medida"
   },
   {
+   "id": "4ef5a2504796",
+   "titulo": "Enquanto Nikolas e Janones duelam, Cleitinho preserva futuro governo",
+   "veiculo": "Metrópoles",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZExkNFFhZXVhTUVlLXlkUEZNa0NQMWNjWnVyeDVuSG5oQ084SUs1U2ZueG8tQ3BMX1V2Uk5Ob1NUb0RaYS1DYmNwakpObzhSY21kbVBwTmRxTGxVdndwU3lFSU91LWZWSGdRS0FUOXREZ1VJSklfV0hTZ0dwbEpleUJGSk9xMFA5bUdrdVB0Z1ViU0Y2djFCRVZtaVlvZTZlbmt6NWcyVERUVUE?oc=5",
+   "data": "2026-10-23T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "4be0128d8696",
    "titulo": "Douglas Ruas anunciará quatro mulheres para o secretariado na próxima terça-feira",
    "veiculo": "VEJA",
@@ -18512,6 +18948,20 @@
    "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPdTEzU3RvWkdVVzRpRXFYc3dYZDVwS1NxMy03b2EwZWEtdUZEc1N0bEl2YlRjb3NRbEx2T0dnUVpiU2pHOWZzQjVOUklPMm00M1U2U21TVzNtVTZ3aDZ4dUtZOHZYcEtTS2hfa2RfT1dMaG5zOW81U0l0V1lBd0tHamx2ZHIyRmZfeTVQUXZnbDJ5cmtBOVJ0SW1UWmh2UFI1UklvMXN1cjNKNjhKN1Q2U1N3bzVvSC13UjFuaktVRTFfTjBDNDVFbWw0NHp5b2lFRkljZFJQWlVKelFyQU9Xd0N0RXJsa01PakRnb3RVak5MVWFp0gGDAkFVX3lxTE1sVTRXWDBmdmctaTR6VEZsWnVYZlhGNUViby1vT3ROUDJYUEFJNDJIWDZsOTFxVFlJYzVDaTVkblJCejdGX0hXYmVwWGpJSmdNTkdGYi13VUhNMjdGMnhsSWNVQXNwMEk3XzZ0NFBJNlprWEhZYnBpQVhLYzdRN09TUVdRckhaeGZFeEM0U0pBUG4wQXBiNkFubjZtV1ZpYW5UWl84QWN3X3EwSWFnMG9FTDc5Q3Z5NE1DMldYVHI3MmxfSW9HWnU3T3dHRWtvdmtvRFkwQVp5dTNtcVNmQ1RiTmNFb0pYam9hYzk5ZzZCUjczX1dYTFJ0cG1EVjFsUVM5M1U?oc=5",
    "data": "2026-10-23T07:00:00Z",
    "coletado_em": "2026-11-08T21:17:34Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "17f94a16de23",
+   "titulo": "Cleitinho e governo Mateus Simões iniciam transição presencial nesta sexta com saúde como primeira pauta",
+   "veiculo": "DiviNews",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNRnRQbjctbzZVWTB1NHVGVUhIMjhEREFfQVlBRUc2TTMtXzdYZVpwSnBDeS1ZcHRlU1J1UnlBcE9wWkJMajAyMWRHX2Qwa0VEYlAtOHRLWlp1TzhXX3NzM1IzY0NtTThmOENmelUza3ZwMW1RNzIxb1lFcFJRRnJIYkZRS0FxREx2NkdMU1dEQ2ItNHVnWWtsdGlrak02NDk2SFB5bk9ZNlN5RnJ6dTNLMFN3ckd1S2hEU0p3M1dDTGRtbFlPS1FvR3ZJd0JuMHhselIw?oc=5",
+   "data": "2026-10-23T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
    "outras": [],
    "ufs": [
     "MG"
@@ -18814,6 +19264,20 @@
    "categoria": "medida"
   },
   {
+   "id": "e48fba6c36c1",
+   "titulo": "Reunião da equipe de transição de Cleitinho com Mateus Simões",
+   "veiculo": "Correio do Povo Penedo",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPS3pBRzdYWEVqYzlYUUVxUDRTd1FreWw0ZWs0WDA3anhHNnVpTDhkcWRGTjdsUk5fZmZBNFpnbWhubmJTeU5PNThhUnZQbW1JQm43aW9ObTFMOEJYbTR2Z2RTOGw1YkZUTExabGVqdzJLN183R2Q3UkhtODJLSjRHVXVWME1LdlpxOXFneG1rbEFIRWdUR3NNQzU3T0xoZDNFRHNROFp2VHNaMkhUQTdIRC02MXNWQQ?oc=5",
+   "data": "2026-10-21T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "d67fc63fc48b",
    "titulo": "Arthur Henrique define equipe de transição com oito integrantes para assumir governo de RR",
    "veiculo": "G1",
@@ -18867,6 +19331,20 @@
    "outras": [],
    "ufs": [
     "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "add2386765a5",
+   "titulo": "Quem é Pricilla Santana, escolhida por Sérgio Moro para comandar a Fazenda do Paraná",
+   "veiculo": "Jornal Fatos do Iguaçu",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONkphY2M4ZzVNbEZoZ2NIYml4bW82R3JpdERJZDN6VVk0OGdmVGVkTnU2enl6eFpuUXVncm50R1JlV0pyQkVERE51eW91bTJBZVFiSDBPcFdwZXd1b1JUYTNhXzR2VjUzWTVGMkdwc01pVFd1NXV4Qjg3ZmFLNWlnVkVuZTBqNGtvR29jSnMxWmxfNWJsR2UxYXg1cEM0dmZZZUo4b2doTW4yUXZobVFoVmU2d1dkX2Jld1E?oc=5",
+   "data": "2026-10-21T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "PR"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -18930,6 +19408,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "783b8c4086d4",
+   "titulo": "Equipe de transição de Cleitinho terá 1ª reunião com a de Mateus Simões nesta sexta",
+   "veiculo": "Hoje em Dia",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNUmZfd0FxcC1uQnRESW04S0Q1Tkl4YnhLR0JYUEZ5cWtuZUhDeE5hRGwyTUlGVE1uQkRvUktUem0xdlhWVERWajRPX0gwb0NhOXIxWnJJMWpHcnV3UG43VGJVaHdHSVFNMWllZGswRUdxcHMxczlQQ0tEekxhZkRMSTJFZ2pxb0gtUk1QRmFWUEVxLTAtdDI5bUpzYWpMeTFPaXAyVDd4U0FvY0xBWkR5eEMxckF1cEpEcHVnUlRHOVNmcDRSbXJWX3ZB?oc=5",
+   "data": "2026-10-21T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "723a1ebc55a3",
    "titulo": "JHC só deve anunciar secretariado entre o fim de novembro e o início de dezembro",
    "veiculo": "Gazeta de Alagoas",
@@ -18939,6 +19431,20 @@
    "outras": [],
    "ufs": [
     "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "41e7d085783d",
+   "titulo": "Gabriel na Educação, recusas e rumores: o secretariado de Cleitinho",
+   "veiculo": "Metrópoles",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYW4wekxjcWlfRG03ZzVYMV9MVzJ0RHAwRXZBR1ZwTTE5UUpHU2NnU3VCNWhTZlBuTjZkUnN3V0EwMy1mZzlfdlRDV0xLUkc5XzUteWdmTW5RYjlocGlfaTl1M3A2RkNwa0Qta2QwbXJfVnRkeEJYNGN1TWo3RDFhbUsyZ3RLcVRDNVZtQjdyVjJ4dG5wVjkwcmllLUZ0Mzl6LTFUUXNoVG8?oc=5",
+   "data": "2026-10-21T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "MG"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -18967,6 +19473,22 @@
    "outras": [],
    "ufs": [
     "AL"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "12fdb0154dcd",
+   "titulo": "A ideia para compensar municípios pela redução do IPVA que será levada à equipe de Cleitinho",
+   "veiculo": "O Fator",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPMmV5V0RQT0RVN2RFQkJ3Q1Rxc1FTT0hDbTFmN3doU1VzNU10LTZQWXVudGpsLTZIQ29hR0F1YmRIeDAxTGFJZk1VRXdVV2M4aE10d3ExWVlKN3Zqb2ZHaHhKZzF1ck5GWDZMT0hlWlJhNTdLS0lnY2szbld0d01HS0o0VnBCNVU3YjRtTUhQWlNZZE9FcTJURUpSbVdPYkR2aVJ6MTZ0YktpOUV4MWJzMGM4M2FvTWdMdUtFSUFncUxLS2VM?oc=5",
+   "data": "2026-10-21T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "MG"
    ],
    "temas": [
     "economia"
@@ -19005,12 +19527,68 @@
    "categoria": "medida"
   },
   {
+   "id": "fd658fffb236",
+   "titulo": "SERGIO MORO ANUNCIA PRICILLA MARIA SANTANA PARA COMANDAR A SECRETARIA DA FAZENDA DO PARANÁ",
+   "veiculo": "Canal 38",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNelYtbUZlNkswdFh2bENQNGpEYlRKRkVCTUhLTU11aWpfRE41c0dyeHVJdUJwaS1ONzczblZESzlmbnZJRVlZZTBmWHdMaU5vNzNxTGJCMWRVemp3ZmlJOWF1QzdCZkI2R09QQ2c0al9EX1FtYVliUGxrOE03bGVrdVV2VTZtV3o2S1RBSUpXbnMwWmt2M0t6OUxIbE5Hbk45azFkSjFiWGhHZkJOTm9xaUhzY1o?oc=5",
+   "data": "2026-10-20T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "fa31a6a6755e",
+   "titulo": "Governador eleito Sérgio Moro abre anúncios do secretariado com Pricilla Santana na Fazenda do PR",
+   "veiculo": "OBemdito",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQRWljcklTZk9teVlkSEthYWZfdFZ6RW8wZXk4XzNhd2NLbWduXzFvQXBLekluME9XeGY0clFJWGI2Q0kzTDJOUGJVaXFFekdCR2FPcnJZSVlEeXItbVVVVzFpVTNWRHlGMXpsek8wMklfU2pMeEdXaUxJNXVHUDFwS3pYdmQyQnAzUEszeXlBbjhMT1JKQmFIdUo3ZzExRTlIQWhYb1VaRHdndHlpa0Ewc0RoOW9zNlFHbVHSAb8BQVVfeXFMTUYwdWZkbDNZVUNNYmZjcnN1al9FQVBnVjQ4VkhiZ0JfMkFuczVxNl9vSWF0T3JnaDgtX2thZWxHRDVCbDNYbUVjQUNibXB5SlNpNFVGN1FRV1RrY0swNjBZM2p6TnBHZVhUeUdHWFpoUHNLMTNiTzZXcFUzUy1oQTVMNWZMbVBzZl9YVHdmSndsc2J3Mk1QdUF2LXVQalFYNWVSUmRabjJRYXVuVlJ3Ykl4clhmR0MxSjZ4WDVDSTA?oc=5",
+   "data": "2026-10-20T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "f11bcd4d6257",
+   "titulo": "Sergio Moro oficializa Pricilla Santana como primeira secretária do governo do Paraná para a gestão da Fazenda",
+   "veiculo": "Ubiratã Online Notícias",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNEJZaHkwaDB3X1UzajlvOVVSRGI0a25JSnFxdlEzTDZJdC1tMmUzMUpSWlEwb21ic2tQVmQ4VFVKdnVDTVVyeXV2Y0VMUUthT0tsNnZKNEJFeTljd3JyXzAxcndiWnIzd25ZREVsZ2Z1Vk1wRTB1UlBIQnJoLU5mbm9aN2RSVDdpb2dhbWdjMlBmS0psWHJiMWp2NmlIUW5PeU91QWhVSGdBdDFKMk10VUc0cFlUdll5RzBHLUl5bXNyNmJyTEVfX21wdVgzTk5DbmFPRExWYw?oc=5",
+   "data": "2026-10-20T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "ef71cc991e79",
    "titulo": "Moro anuncia Pricilla Santana como futura secretária da Fazenda do Paraná e inicia formação do novo governo",
    "veiculo": "Gazeta de Toledo",
    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQaEVGdm9SekJ3WmE1OFI1LURxTDdEbjBpM1ZqeWlLMXR0SG12dHpTWXI0akhzYnUzclRpMzdqX0RJcjNFTkZZSHpjZFQ3WkJfeUdraHl2am9jUE51NFlLR0VqRS1WSFFxWWN6cGNfanRUOVQ4THNhX1NnTnZrNV9pOHpYVlNBX3FvMXZ2aERFQnRlREVucndONFF0b3J5YklLaFdmUnphdWhMbzEtbUloT2oyZ01DSWlPOXpWMm9BN1VjdExHVElBU3Rwc1A1aDlnbzZybw?oc=5",
    "data": "2026-10-20T07:00:00Z",
    "coletado_em": "2026-11-13T15:17:48Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "ee0b879c639c",
+   "titulo": "Moro anuncia nome da futura secretária da Fazenda do Paraná",
+   "veiculo": "Ric.com.br",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQeWRCR2wtM241MXI5VGtpSlhGRG9XSVEyVzBNdVo4ZUlqSkJ5NEhiQXJGMS1yVlNuc1FDbkFWX2d0UHR2R290T1BXOEFZLXhydHV5ZzRYRWVHQlZMSXZKQ1N1TXEyMzZyMmRuVXJTeXBIRi11UWMzNldFNnhFNnZtMXpBSU93bHJRSWxoaWFWa0Y2Q3pU?oc=5",
+   "data": "2026-10-20T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
    "outras": [],
    "ufs": [
     "PR"
@@ -19071,6 +19649,21 @@
    "outras": [],
    "ufs": [
     "PA"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "d42702862916",
+   "titulo": "Futura secretária da Fazenda do Paraná atuou na Caixa, na ANTT e na gestão de Eduardo Leite",
+   "veiculo": "Tribuna do Paraná",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQdWlVeEJXZm94QldJVlFEX1Y0Nmx3ek93X2J3dGVSV3doUFA1T1pJakNPV3FkZDZ1SmEweUlWQTFnYlVBZGNGcWVLOEpOWVUyVno4ajJfS3BtZzQtYVplbUVpZlZXQXVud0VHVG5JQVY1bk5wOW1DaG1NbW1SWUhYZ1VtcnVrbmx5N0NDdmx1aExtQWlhdTFyR0ZHTDZiQXRqY3RwRml3OC1ySDhBWjBpX3Z4NXQ5TVVOejU40gHAAUFVX3lxTFB1RzdzNk1hUG5CUktpWjk3cm1OVEtzNUxZd0dXRkxxZjVIUDdVMVU5NW5LX2xkcVZUdjAydjhweHRLYnFqUGZ4VnJDSWhZbmUtSTJ4UUhNRHJGQUhuWThHS3JDYTRxYWRScFdIaWNfakhKbndGVUR0bDNIMkQ2aUJyb09BOEZzYWwyVjVSLUp5Yi1PQ2R3S253UkxHWEFYQmZ2cW9TNlJ6NGxTTmhaMDI0MnZDcjQ2SDlTNmY4V2pyVA?oc=5",
+   "data": "2026-10-20T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "PR",
+    "RS"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -19208,6 +19801,62 @@
    "categoria": "equipe"
   },
   {
+   "id": "70f9a053ee89",
+   "titulo": "Sergio Moro anuncia Pricilla Santana para comandar a Secretaria da Fazenda do Paraná",
+   "veiculo": "Rádio Paiquerê FM 98.9",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQY1k3ZnR3M1l3eTdSTHgzUkxsR3JNSDN5RG52WEZPeElUYmx0MngtRVRBX0x5YU1wb3BaZC1MOTVPQU1aTW1GSFZYR2YwQkg5WWpKLXZoRjNEamdOQ1AwdkVZQkd0RnMtOC1Uc1JNUm5wNGY5MWpvOW5jVUhYdnBLNS14SDVSY2xkWDZMdUdvemJKQzBXRXpkMUhHVldLd1dVOW9jYzFHUExRXy1wd1ZXVA?oc=5",
+   "data": "2026-10-20T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "70e619e075cb",
+   "titulo": "Moro anuncia Pricilla Santana como primeira secretária do novo governo do Paraná - BNT - Boca no Trombone",
+   "veiculo": "BNT - Boca no Trombone",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeGJGbkVmbWlrd01ncjNUY1RibXl1WC1lN3ItOGJJRFpTR3lSaXZQcC1zWkdBMDNJdDlRLVRzWW5sUDRQbXV0WHZYVHBHY18zbWJ4Um5kS1pUVTNnd1poRWdFdmdSNHBXSkxva3hHeG5nekhHYXJpclFGWV9fZE9HRlRoakFpNkw1b1pRZFZjcklDSDRqLWV2T0hkUkFpSE1TVE9rb2lWS0hvQQ?oc=5",
+   "data": "2026-10-20T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "664f795eaea0",
+   "titulo": "Moro anuncia a futura secretária da Fazenda do Paraná (ASSISTAM)",
+   "veiculo": "NPDiário",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPamJuclV6UDZPUENHSUtObGZxUmtObjZndmlOSEZYNnFnNnVZLTBpZmZmYXZiazdVSF96ZzNFc0pmTV9wTjdsZ0ZvUUllc1ZBRy1HMTVOYXpnMDdIV2xsQTVsN3lLcnYyTHFmTlVZaUx2Ul9ua3V4UFhrX3k0QkRvT0Jn?oc=5",
+   "data": "2026-10-20T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "64956f11b903",
+   "titulo": "Sergio Moro anuncia primeira secretária do futuro governo e avança para transição",
+   "veiculo": "98fmNews",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa1NYY2stR1NiZS1tbDdrU1JwWFBGdDR5SEdseGZNckFJUjZNVTI1UC12VW4xNm9xTXJXeE9mS2w5MVdiaHZmT1V4ODY0bW1EN0hxQ1NiMmFjNHFiMGE4dVA1UDBJYTdQWVduYTRzU2JzbjQzbGFvdnFtX0dVR3hNcG8tLTU3YTRlTXdDbjB0WG5NY2VvNUd4OGNZTW1oNzl2QmR5WXpwOVFHUQ?oc=5",
+   "data": "2026-10-20T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "53a11bf83877",
    "titulo": "Em evento no RS, Zucco reafirma plano de reduzir número de secretarias para cortar gastos",
    "veiculo": "UOL Notícias",
@@ -19274,6 +19923,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "3a77ab95b186",
+   "titulo": "Sergio Moro confirma Pricilla Santana como secretária da Fazenda",
+   "veiculo": "CGN",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNNWU5WDh4eEtsMXJNVnp5OXlRbHZiN0E5eldKaVRzemtlMWxzZGgxSTlwbmdjS2lZRWNSdTlJbTVQeE9sT21hLXRIZ09JUkhnemJRRjV0cUpoZ2VHZmRjZ0l0R2xhaFl6UzJZOWlLN2EwdGwzdElMQ1pfbGpSdVlKQUJkQ0dpOWViVmdySHNKdVp1X1M4T2ZpYkoxRnU3bzA3?oc=5",
+   "data": "2026-10-20T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "329ea647a598",
    "titulo": "O tema que deve dominar a primeira reunião da equipe de transição de Cleitinho",
    "veiculo": "O Fator",
@@ -19316,6 +19979,22 @@
    "categoria": "equipe"
   },
   {
+   "id": "2956d823eb8c",
+   "titulo": "Sergio Moro destaca 'perfil técnico' de nova secretária da Fazenda do Paraná - aRede",
+   "veiculo": "aRede",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQeUpmOXlRd1I5TzRoc0YtM1BHbE9HTDdXM3FRelM0cHlHSnZoLXdCeDV4R1lkOHhfWUlOalRkRTBXSHB5UTV0SUhfclNlSkZTeE5WZUg4b29pSFUySndHQ1Etamg2Vk5hdWFEcEJTX3hQUnVQcGlGQ0czRE92YVJDZ3dkYm1qZElJMDZnSFY4RHlleUVnN3V3N1JmMlJuMDhVQkV6UEZBUEE0WWgtVG1F0gG3AUFVX3lxTFBaYUtOZ2IxUi15RWpMOWl3Ni1acTZmVV81RlVIaXRuSXBlMV9Xd2JNSEstaWVOUzhCamlob1FqV05hMWJrU0lMZVhFd295WTZfaWRWZDRQOUxiVmE3bHNfTllrTG1BQmFqNjhQN2R0REpGTFh3TVdZMEtvU2lDYUFnN3FFcFJ4SkNTSTkyd3psMUNHZFBVWk5fT3ZtakdMTlM5YTVaTXZoYUs3SXRpdVVEQ3pqZkVlQQ?oc=5",
+   "data": "2026-10-20T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "2423fa376e46",
    "titulo": "Conheça a equipe escalada por Douglas Ruas para cuidar da transição de governo no Rio",
    "veiculo": "VEJA",
@@ -19348,6 +20027,10 @@
     {
      "veiculo": "Tribuna do Sertão",
      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQYVJoYl82VV93LVJOdU1GVzIxWlRGRlpVei1zVURPT0ZyYWJEZXh5RTJOUTE0NUh5TGRhTjROYm9BX0U3SmtVeXRIRml4dVlTU3hrLXBKd0xFUnlpNkI2eE52dnVCeG5rMXVSekRmQ2YyenRtUm8zU1hmRWgzQWZzdUNfQ1V0bTR2eDM1eWtSUU5fbDF5Q1I1SVFZV2o3bWF1eUlXYk16OE52azNQY3FrcFQ1eTRxT0lqSVhIMDFBMVNGaXhf?oc=5"
+    },
+    {
+     "veiculo": "UOL Economia",
+     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxObXNVNFB5UVpFdnEzY1VlRUk5ZTduaUZoWXNMUHF6RzM5dnJWbGtKUGhuaFpCX3UzT19zY2wwYzYteWd4QXl2b2lmaTlibjlzMU9YR2F2X1FwQm9XdDNQWlYwS21YVjJiVS1hU1pyNzdkQ1hsTzhBMEk2NUp5OTRqeV9Ea1hKa2JTTEhaNS1ObmxZYkptMmdyM3RpOUhPNDdTd2RDZzFEWmdlTlBGdk1SUFZUWHZCWi0xeFNQYWJvRTNJQVctNTRRWnRqcEI1dnl2?oc=5"
     }
    ],
    "ufs": [
@@ -20124,6 +20807,22 @@
    "categoria": "equipe"
   },
   {
+   "id": "f0ecbbe1cdbc",
+   "titulo": "Simões estuda redução do IPVA em Minas antes da posse de Cleitinho",
+   "veiculo": "O Fator",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5YZGFJV0FzNHNQY21yN3ZHc25YVUlHVjNfb1FxbVlDQkxRdVdzLXdoY0d2LVY4WWJTM0JEZXJHenRKV3pldm1JUnBGaXZ6M3pFcXdadDlUcllOMF9tVW0yX2lONXV3RFA3VHZ6c3N1dUZlaF9zZ05pXw?oc=5",
+   "data": "2026-10-16T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "e8dd7325d3d9",
    "titulo": "Governo Brandão tem até 30 de outubro para entregar documentos à equipe de transição de Eduardo Braide",
    "veiculo": "Jornal Imperatriz",
@@ -20347,6 +21046,22 @@
    "categoria": "equipe"
   },
   {
+   "id": "77485c73496a",
+   "titulo": "Projeto de Simões que reduz IPVA deve ter caminho livre na ALMG e vira 'teste' para Cleitinho",
+   "veiculo": "O Fator",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9NQ1ZQMzlsajFLMEJCaXZaSTRzcUZCcDIzNFlLT3VvSi02Mm5SOUJzNm1iVEVIRmFpaVhrbjZ0WVQ4ZTAzU3B4WGEwUkt2ZUFmeUlKNTR6VnFaOGpqZFJvbVlKRmg5XzhrM1FXdnFHOWlYTU4tRlE?oc=5",
+   "data": "2026-10-16T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "76b39dd095b6",
    "titulo": "Cleitinho cobra transparência e maturidade na transição do Governo de Minas",
    "veiculo": "Republicanos 10",
@@ -20359,6 +21074,22 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "5ee5508a6bb1",
+   "titulo": "Governo de Minas envia à ALMG projeto que permite a Cleitinho reduzir IPVA em até 75% a partir de 2027",
+   "veiculo": "O Fator",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9LLTdDSXdqYl9hSVZ4ekhHdEdQUVRSbEpRWWg5ZHZkVjEwYXg3Mzl3QmdQOXgzT0FWNkRKMDJQOGF6Y0czb1dpYm9nQ3ZJTkFMX2F3ZTBnVjNENjNmbEtKQ3k1elB5WVVmRWNxMjh0TjJpeEM0d2dFMTBUZjdGdUk?oc=5",
+   "data": "2026-10-16T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "55a6f8a861b8",
@@ -21382,6 +22113,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "978e418092f9",
+   "titulo": "Paraná tem R$27,6 bi em caixa na transição ao governo Moro",
+   "veiculo": "Gazeta do Paraná",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOZWNJNjZadlBkNjdtZ3JDN3lTR214cFdmai1NZVp4WVBleFk4Vmowb18xRmZUc05HRll2TXNBUFdiYlllSDdxS0ZFQzEtalI5NV9WSVJxLXlrS01Ua2lvaF9GWXdHTmNZemRTbEQ5bGxTUTU3aUpIWVk1SlBtS2JnckNWaW5CbmltWWpZZzdVd0NaWEhYTEZ2N1AtbG1RU1ZmYl9IQWRnVi1uZDJqOGxPRjR3OTFjaUE?oc=5",
+   "data": "2026-10-14T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "97443e592c98",
    "titulo": "Maria Gabriela Bessa é nomeada por Douglas Ruas como coordenadora da transição de governo; saiba quem é",
    "veiculo": "G1",
@@ -21560,6 +22305,20 @@
    "outras": [],
    "ufs": [
     "RJ"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "5898da5f1fdd",
+   "titulo": "Paraná mostra R$ 27,6 bilhões em caixa na transição para Moro",
+   "veiculo": "Blog do Esmael",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1KdE9fTkNKeXZsemZYTFhFc01rWHcxaFI0UW5MWHI5LThMalVRQWdtRmdhanZVQ1F0cnFuaXVhNzIyZmFQX0xCNGxEdTllQm5UZzFiX2ZCeWwzNnRPS1ZXTk5QTlhkdmgzOXNUQ2lZQWtCaGVCNjQ0NjNaejg?oc=5",
+   "data": "2026-10-14T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "PR"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -23610,6 +24369,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "e88ba65f8cf3",
+   "titulo": "Brandão anuncia troca de secretários e presidentes de órgãos no Maranhão",
+   "veiculo": "Gazeta Carajás",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNSDFuV3pCMFNMdlBXVDJveDFSUER0Tk5BcUJQWFFsamVyYTVHbDltYXRpUnZtbUhvQXFmenA4YjB1Q0NLdWlmaWFvb1djMm1jYVpVeEo2MTdMdmw0bkZXMnNvNVdsa3hXZENDRHVXTzBZdGQwZG05ak5QUDJQQ0tfNmhMSHdGMjh6V2JKaEQ3QlNscGRIOG5WMGdQeDlIeEJ6LUtxWnFsNWkxVzQzS0Zz?oc=5",
+   "data": "2026-10-07T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
+   "outras": [],
+   "ufs": [
+    "MA"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "e75b5f176650",
    "titulo": "Braide anuncia primeiros nomes da equipe de transição",
    "veiculo": "Gilberto Léda",
@@ -23649,6 +24422,20 @@
    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOclZPNVczZUR3M0x3bXBQUVZ2cXpEMzRScTZRQnhjYng3SVV0a0RBa2o0T29odlc4VWtzZ1NGYlY1eHIwdjdkZ0ZYT2hLWVUyMTRZRUtPZGZOTWx0N3RzRnAtUGNKNWRoWGhRNHZHanYyR0NGZlQwT09tV2ZxYi1Zb0F0WlRiYWRueE85OVYwYnJtX3VSMDRESS1fSDFuZw?oc=5",
    "data": "2026-10-07T07:00:00Z",
    "coletado_em": "2026-10-07T07:00:00Z",
+   "outras": [],
+   "ufs": [
+    "MA"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "d44139788278",
+   "titulo": "Fim da apuração coloca transição de governo no centro da política do Maranhão",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNRjZ1OTRzekdqcmVaaXpfSlVIY3FaWF8tRGNxUUNwVHo5MVdmZ2RzS0lEa3pKOEUwTHA3Tzh5VGxBWFNPa0RTNjBSeGczejVhakQ5T0dydGJFN1pjWk5KbGJ0Y0xRY2RtWXlOT2FvQXJHMjY0VlF3aHg2MXN0THhKZHBocDAtNEs0MTRzT0haaTZYZlMwSGIzdUpFUi1JbUt1cTByWHZyZ0lPQWFSY0xTZXlvaWVLaDlwNkFhWGYtUXVQUG9yNWg0UkR0MzJCZzlxUWxYdXhzeFhtM1FXLXV5WXBGdlZaWXfSAfYBQVVfeXFMTVd0eXlDRFFVVVFtLXo3VEp1azYtenlvXzluTWNST0xEcENZSXR1SEZXdmc5UFhsWG1fN2RMQjVfNXNmNW15endsUXVBYnlmSUxtRVktWnJlYzRkNWZWellCZEV6ajZmVm5QLVlQVnk1U3hudlF3azF4WE1yajVRWURDQlNBSnhDbEJxZlFZNERqNFFvdWxuaTNmUGNsamNxeHlvcXpxbzhPNk1hTHppa2NKbFJCVDJqM3M4RXhtYU12LWY2aW5QUzNGZUVMLWlDT3Q5NlFxUTBleHBCVnVHc0FLdXdsQWFtVktYOUFGcWNFdE5TSXhR?oc=5",
+   "data": "2026-10-07T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
    "outras": [],
    "ufs": [
     "MA"
@@ -23847,6 +24634,20 @@
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOeXBVTHFQdHhTQVNvenpBSTJKOG1EZ0JJNEQzMTRhTU1OY1llZkFVdFBxQjFNeUxpMWtUTGVlUTlzbTlNc3JTMjlOVEQ5WVJHUUFiRFNOa2w3cFJncFJ6M0FlZmEwcmo2dndzT0tfZUYxb3RzU3c0WHluWWNiY01TbHNmTy1OZUZOd2NqbnJoR2dfQ28yZS05U01QZm5YSmlLY3lyWFJmSmVKNnVw0gGyAUFVX3lxTE41aUNkMUNxdEJmWWdpY3E4ZVBjTTVlV1hWRDJITVp6RXY0RENnTlg1Y3lDVVJ4ODRuTDZkSWpSREs2MU9iNW9qb2lieEZzR0lBSVRZWHpic2pJZjdBRTQyTWMzSjFFTFhrTDJtaDhyalAtX3hpSktYbno4am9HcDlTVEJIcTdaTi1YVDVzclZtblJRLWlRbjQyVXZtamtWbzFyYThBLWNkaXdMcWlTUzFpamc?oc=5",
    "data": "2026-10-07T07:00:00Z",
    "coletado_em": "2026-10-07T07:00:00Z",
+   "outras": [],
+   "ufs": [
+    "MA"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "6b522dddf9ef",
+   "titulo": "Eduardo Braide anuncia primeiros nomes da equipe de transição",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPYUJaQzV2bXMxYmVHaWhQY3IyNUxyel9NWjNkS21hb2Q1UGdJUUpzaGZKZGMxbk0zaV9OM3dxTWdnTkp0Z0RmOWs1b2o0bVVYaE9OcWhtNEJlMzg0ZURfNlFVU3FnYkxnVlNIaW1CcG5sN0tkQ0lUbWxTbGs5dHZCNUY5UFNFTFo0aW02REhsdHBSbHFuWUV4cFFBU0RzTGJIR19ONXNCSEl4ZTRFT24wUXdzTlZyOWRNMXc4dm1IRUE2dGowS3RWNTh0amFkdWFtRlHSAeABQVVfeXFMTl85YTViUGxQV3dCbUY1dFRENWg2bDgteV9IdmZJZFBwX20xQ2p2aGhVa3JybW1PczVCNFlKa2hmdlo1NVRDeGV0YUlfVTdqY1luNF9IcS1BQUl4VjRGMFE1c3g3V0h6ejluNDZrclMyQUIyZDJycDlJa0hTYno1Yl92THN5bzdrZVRoS1FmWGpqaV8zeEdrT0hsOGJvTldqb2FINlFYQWowREpZUHhLNmY0VmVtbFg0al9vOHl6S2dFTkJvTDRmejRsOXRtbm8xLWVTNGlLY3BGSUppLXVZLXU?oc=5",
+   "data": "2026-10-07T07:00:00Z",
+   "coletado_em": "2026-11-20T12:17:53Z",
    "outras": [],
    "ufs": [
     "MA"
