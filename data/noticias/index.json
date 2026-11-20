@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-20",
- "gerado_em": "2026-11-20T13:17:15Z",
+ "gerado_em": "2026-11-20T14:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 25,
-   "aceitos": 16,
+   "aceitos": 15,
    "possiveis": 5
   },
   {
@@ -34,7 +34,7 @@
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 4,
+   "aceitos": 5,
    "possiveis": 1
   },
   {
@@ -49,8 +49,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 19,
-   "aceitos": 5,
+   "lidos": 20,
+   "aceitos": 6,
    "possiveis": 2
   },
   {
@@ -66,30 +66,30 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 6,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 5,
+   "lidos": 8,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 0,
+   "lidos": 4,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 40,
+   "lidos": 38,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 30,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 29,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 30,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 50,
+   "lidos": 100,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -169,7 +169,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -185,9 +185,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"próximo governador\" OR \"futuro governador\" Espírito Santo (contas OR caixa OR receita OR orçamento OR dívida OR \"bombas fiscais\")",
    "ok": true,
-   "lidos": 1,
+   "lidos": 0,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -250,7 +250,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 5,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -280,20 +280,48 @@
  ],
  "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 304,
+  "sem_contexto": 299,
   "sem_contexto_com_tema": 20,
   "oficial_sem_tema": 3,
   "possivel": 14,
-  "excluir": 73,
-  "generico_sem_ancora": 5,
-  "veiculo_excluido": 26,
-  "outro_estado": 26,
+  "excluir": 75,
+  "generico_sem_ancora": 4,
+  "veiculo_excluido": 27,
+  "outro_estado": 25,
   "caixa_alta": 1,
   "exterior_sem_ancora": 2,
   "sigla_sem_ancora": 5,
-  "veiculo_outra_praca": 9
+  "veiculo_outra_praca": 8
  },
  "itens": [
+  {
+   "id": "1e114ee08e90",
+   "titulo": "Governo do ES apresenta programa de desenvolvimento rural com aporte de R$ 830 milhões",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQVMyRG96dVBXVzJ6S1NJZDhtMEpCSThWanNxdDVYQXlNS3FXQmZZVVN6QXJlRVZwbmhTMklxbjJZOWI2UUIyNmY1clVRZ2NmY2ZDVnBseWZBWGRTVjhISEZtWFQtOG1SSzNYRFQ2OVpocnZfV1NOZmUyT2tPWnR3M0t5SUowVm4zZEplNnhMc2gtQUlKblVyRW9OZDBDclBOMU1WYTYzb2dIYjJtenZj?oc=5",
+   "data": "2026-11-20T14:01:55Z",
+   "coletado_em": "2026-11-20T14:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "77e7e674339a",
+   "titulo": "Sindiupes cobra do governo estadual conclusão do Plano de Carreira do magistério",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNTGFxbUhSQ0NwUjc4R0hDMWNyYnB6dXN2cEd4b0VkRkNVOUtlckdFUWdQSVVCWXRxWm1DNjdTVll4WFA0VXExbHl1VWdJSVRseUJBbjMzNmc4aFdwYTN4bXUtT20xYW5kc0lOd2dTVVFPc1JqRFRuRkZiU2FFQ0I3Vng2SnVDLTRaajdJM19MV1hPNVROczU4Z3cxMjUyanFwUkdnQm80MmUwNVlORE8zTXYxbmxkTnRTc2ZzT3VPcw?oc=5",
+   "data": "2026-11-20T13:23:18Z",
+   "coletado_em": "2026-11-20T14:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "5c5c63940d81",
    "titulo": "Pazolini apresenta prioridades: comunicação, obras paradas, filas na saúde e segurança",
@@ -328,7 +356,12 @@
    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOTHJtZ0dPR0Fhd0dTbUJfNFBYeWdOM2JjTW4wTENpOW9Ic2RwUnJjQnV0aUZiRTFWc3ZhX1RISkdBUW9MNDlXWFE5YnhUemdQaUljU3NORk9xZFJQdEtaeDdnQkIxeDIwZTVYNEJkX2V5bS1zSFJLU1hMU2VTN1lHdktIczNSaEZuV3NULXhXal9IUE84Z1E?oc=5",
    "data": "2026-11-20T11:09:29Z",
    "coletado_em": "2026-11-20T12:17:14Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "SiteBarra",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOQk8xc2NWVzZ1akxHTEJIVUZRMWE2WFZ6czY2NXpEMnYwRmZpemJjM3dSMVdsS2hyVllwQ2JIQXVXX2Y5ZHgySTMwdXhvbVVHSXFmYkp6UHBaM1ctaDVzanROZkkxN1VpSDgzd1B1Y294SGRiekdOakZYSkJkQ0hlazJ2TTBSLXNIaWlKWDRoaFpzSlpwTGctX1dXRTk?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 9,
    "temas": [
