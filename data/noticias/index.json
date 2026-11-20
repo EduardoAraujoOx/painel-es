@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-20",
- "gerado_em": "2026-11-20T15:17:18Z",
+ "gerado_em": "2026-11-20T16:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -27,7 +27,7 @@
    "ok": true,
    "lidos": 24,
    "aceitos": 14,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 21,
+   "lidos": 22,
    "aceitos": 6,
    "possiveis": 2
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 37,
+   "lidos": 36,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -139,7 +139,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 3,
+   "lidos": 6,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -193,9 +193,9 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -278,22 +278,34 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
   "sem_contexto": 293,
   "sem_contexto_com_tema": 21,
-  "oficial_sem_tema": 2,
   "possivel": 14,
-  "excluir": 70,
+  "oficial_sem_tema": 4,
+  "excluir": 69,
   "generico_sem_ancora": 4,
   "veiculo_excluido": 27,
   "outro_estado": 28,
   "caixa_alta": 1,
   "exterior_sem_ancora": 2,
-  "sigla_sem_ancora": 6,
-  "veiculo_outra_praca": 8
+  "sigla_sem_ancora": 7,
+  "veiculo_outra_praca": 7
  },
  "itens": [
+  {
+   "id": "45af7c2b356b",
+   "titulo": "Governador transfere simbolicamente Capital para São Mateus e anuncia investimentos em comunidades quilombolas",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOeWdvcWs5bDV1cFExSkJPLVdaN2lkblZBOUkzdjk1V3R5d2FBTmtlSFJnamZ3VlNDUkM5OFZ4Mk4waUEwTnc3RHdNV0tzZFdZMmt2a1dhN1BiVEh3YXp5LVZ1RUVQbGUxS2I2V2tWNGdXYkZxS09GUnZ5RjcwU01WWjQwYnhBZkZJM0NkcHJzaXVEZzdSQXBybVNhaWY4R09OR0tPQllOVlJQeFR5ZDBCU2FOaF9ZTjU4cTM4eGZ1WEEyVzRrRmlYdGw0aUdOaFZLU3hVWU1n?oc=5",
+   "data": "2026-11-20T15:36:00Z",
+   "coletado_em": "2026-11-20T16:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "7bb545a673ff",
    "titulo": "Montadora de caminhões elétricos entra na pauta de reunião de Pazolini com Câmara Brasil-China",
@@ -306,6 +318,20 @@
    "triagem": 9,
    "temas": [
     "governador"
+   ]
+  },
+  {
+   "id": "b806a0b74fc8",
+   "titulo": "Governador eleito intensifica articulações para atrair novos investimentos e negócios ao Espírito Santo",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNX2h6TW9McU5KVmJORWFwVTl0NnhRY0RXbWt6bmtQYkp4RXB1ekd0TFB3UzBjSmVrZ2pmT3RtU1ZnTi1rV29JekVIMmdQS05IQ0hHY0JFT1NjOXdFcWc2eFZHNjMtNVN3azljSEhYbC1ESUhRY01LeG9tdHN3M0NLV1hzRTBXTHZHd1NfS3ViV2NoWEljQWY1VW1xYzZUcVhqYmE4eGRfSGxaeUJBN3dIVXU4eHZLNHljeTJ6NkJyQWV2dTQ3d2VZ?oc=5",
+   "data": "2026-11-20T14:16:11Z",
+   "coletado_em": "2026-11-20T16:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "transicao"
    ]
   },
   {
@@ -362,6 +388,22 @@
    "possivel": false,
    "triagem": 9,
    "temas": []
+  },
+  {
+   "id": "f4210a32d700",
+   "titulo": "Festa de servidores da Sefaz patrocinada por empresas fiscalizadas acaba cancelada em Araguaína",
+   "veiculo": "AF Notícias",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOb2N6c1dEaHJwUEI0Xy1KQUhXVHNTTktIR1R0VlRyMi0wRGJCQ1VXV0E5czFfcWVfM3oxVTJsblkyaVFFOFhZT0hnTk1zR1FDTXdsTV9sd2RIeXFocUJ6MWZHbS16Snd1QnN5YlFCcE1ROE5ycU5wVGN5MWloTHNJdVRfVEhFdkU1ZF9xWk85b053dWNKZUx2THFTbl9mTzA1b1FqMDd1TUJpdU5sN0E2S1d5NVZXMVJQdlY3SDVnM3BlbVhwM09J?oc=5",
+   "data": "2026-11-20T12:30:00Z",
+   "coletado_em": "2026-11-20T16:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas",
+    "contratos",
+    "pessoal"
+   ]
   },
   {
    "id": "4f199cf13295",
@@ -950,6 +992,20 @@
    "possivel": true,
    "triagem": 9,
    "temas": []
+  },
+  {
+   "id": "d862f3ca93cc",
+   "titulo": "O que levou a Polícia Federal a fazer operação contra o deputado do PT João Coser, no Espírito Santo",
+   "veiculo": "Blog do Elimar Cortes",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNYjBCRGdYajUzNW1mSDh6NkpmWVZabjdQQ21VRlNYdWZFX0lVSkgxZVppY1Z1QlVpV1VYWFlNZldhaGM2RzM4TXNrMzBSaEk4djBmYUhwc0E4MDdwR1MtUmk3VGhGTi1oZ0JtbHV4cjRRWEllVVFUT1BLbjdSdzE5ZWV4OXJod3FGM1pkbTU2c2xfR3ZtNVFFTlBnRkdNTnM1YmhyZU1hbGVhbUFKU2Z5bDZ4Q0Vqdw?oc=5",
+   "data": "2026-11-19T13:44:35Z",
+   "coletado_em": "2026-11-20T16:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "controle"
+   ]
   },
   {
    "id": "a95bbba54cc8",
