@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-20",
- "gerado_em": "2026-11-20T17:17:14Z",
+ "gerado_em": "2026-11-20T17:49:18Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 24,
-   "aceitos": 14,
+   "aceitos": 13,
    "possiveis": 5
   },
   {
@@ -35,15 +35,15 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 5,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 6,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 35,
+   "lidos": 34,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 100,
-   "aceitos": 0,
-   "possiveis": 5
+   "lidos": 77,
+   "aceitos": 1,
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
@@ -137,9 +137,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 57,
-   "aceitos": 1,
-   "possiveis": 4
+   "lidos": 30,
+   "aceitos": 0,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 55,
+   "lidos": 29,
    "aceitos": 0,
-   "possiveis": 5
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -242,7 +242,7 @@
    "consulta": "https://g1.globo.com/rss/g1/es/espirito-santo/",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -280,20 +280,34 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 336,
-  "sem_contexto_com_tema": 25,
-  "possivel": 15,
+  "sem_contexto": 291,
+  "sem_contexto_com_tema": 19,
   "oficial_sem_tema": 4,
-  "excluir": 75,
-  "generico_sem_ancora": 5,
-  "veiculo_excluido": 45,
-  "outro_estado": 29,
+  "possivel": 15,
+  "excluir": 72,
+  "exterior_sem_ancora": 4,
+  "generico_sem_ancora": 4,
+  "veiculo_excluido": 30,
+  "outro_estado": 23,
   "caixa_alta": 1,
-  "exterior_sem_ancora": 2,
-  "sigla_sem_ancora": 6,
-  "veiculo_outra_praca": 8
+  "sigla_sem_ancora": 4,
+  "veiculo_outra_praca": 6
  },
  "itens": [
+  {
+   "id": "d164f8c2f6e4",
+   "titulo": "Passaportes de Flávio Bolsonaro seguem cancelados no STF",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9oRVNHY1QzeWQ5eXo5M2FEZUllaHpvVDlDWGFsSVhjeEhLak9Ea0c0ZFFOVnRlVzV5Z2N2MV9kdFdxVndJcGVlaFhXWmpnQ0hSZFZCNFdCSm53aVFQLXdOV3ZtRU9UbXYxUE1LUjdkczhxR1JMdkJpTTQ3MWh0VEU?oc=5",
+   "data": "2026-11-20T17:17:22Z",
+   "coletado_em": "2026-11-20T17:49:18Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "ebe3e75cc09b",
    "titulo": "Governo mobiliza operação após cianobactérias proliferarem em rios na região de Belo Monte",
