@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-20",
- "gerado_em": "2026-11-20T22:17:14Z",
+ "gerado_em": "2026-11-20T23:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 12,
+   "lidos": 11,
    "aceitos": 4,
    "possiveis": 0
   },
@@ -25,16 +25,16 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 23,
+   "lidos": 24,
    "aceitos": 14,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 2,
+   "lidos": 10,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -51,13 +51,13 @@
    "ok": true,
    "lidos": 17,
    "aceitos": 3,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -66,7 +66,7 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -105,7 +105,7 @@
    "fonte": "Google Notícias",
    "consulta": "(\"insuficiência de recursos\" OR \"restrições orçamentárias\" OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) \"governo do ES\"",
    "ok": true,
-   "lidos": 1,
+   "lidos": 0,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 18,
+   "lidos": 21,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -278,22 +278,48 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 316,
+  "sem_contexto": 309,
   "sem_contexto_com_tema": 19,
   "generico_sem_ancora": 4,
-  "possivel": 15,
+  "possivel": 18,
   "oficial_sem_tema": 2,
   "excluir": 68,
   "exterior_sem_ancora": 3,
-  "veiculo_excluido": 24,
-  "outro_estado": 21,
+  "veiculo_excluido": 27,
+  "outro_estado": 22,
   "caixa_alta": 1,
   "sigla_sem_ancora": 5,
-  "veiculo_outra_praca": 5
+  "veiculo_outra_praca": 4
  },
  "itens": [
+  {
+   "id": "4ca425554255",
+   "titulo": "Pazolini discute instalação de montadora de caminhões elétricos no ES",
+   "veiculo": "Serra Noticiário",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNdFEybEJSMEhQTDdWN0dWdmgxOEdLSkl5QnNGd3lkX3hDX19NSmZVTEhZZGRySjhXOHMxYXplWjl1TlhBTTFCOHpqd1kzNFA4NkFhQVQ3U2xrcDV2SXp2M1czMVFvUXBYSEpqOElJMUhqQTF0dVh4NUZZdE54RzNTUzMxajRMUzdFQV8xMUJJN25WWnlwVTlxeW1TZ1VYNnhpZ3VZ?oc=5",
+   "data": "2026-11-20T22:39:00Z",
+   "coletado_em": "2026-11-20T23:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "af58b0ce8c17",
+   "titulo": "Prefeituras poderão receber recursos estaduais para investir na população idosa",
+   "veiculo": "diaadiaes.com.br",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcVlDWDBrdFRiVVNsaFZtN184Vm5NY1o3WGxwVkxZbE5ubFloSHVsRS1RWUV6T28zSHRGVnpkMWFZeldiWkVrajd0T21laHNKd0k2OWhDMjdzTm4zMEFMY2d0ejRwcjU0WndjY0hHdDVUVmdoQnpLZ3hvUTZkcW9WM3NmUk5CLVd5UFljamFEaTR6X3BOSWZ5NFFiNmxRQ0drT0dnSDRWLXc?oc=5",
+   "data": "2026-11-20T22:17:16Z",
+   "coletado_em": "2026-11-20T23:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "280f2e3d6529",
    "titulo": "Assembleia do ES decreta luto oficial pela morte da filha do deputado Bispo Alves",
