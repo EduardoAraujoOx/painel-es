@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-20",
- "gerado_em": "2026-11-20T01:16:57Z",
+ "gerado_em": "2026-11-20T08:40:30Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,14 +18,14 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 15,
-   "aceitos": 6,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 25,
+   "lidos": 24,
    "aceitos": 15,
    "possiveis": 5
   },
@@ -41,17 +41,17 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 6,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 24,
-   "aceitos": 5,
-   "possiveis": 3
+   "lidos": 23,
+   "aceitos": 6,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 6,
    "possiveis": 0
   },
@@ -74,7 +74,7 @@
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 6,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
@@ -89,15 +89,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 48,
-   "aceitos": 4,
+   "lidos": 45,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 80,
+   "lidos": 79,
    "aceitos": 1,
    "possiveis": 6
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,9 +137,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 57,
-   "aceitos": 1,
-   "possiveis": 4
+   "lidos": 30,
+   "aceitos": 0,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 28,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -170,8 +170,8 @@
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
-   "possiveis": 2
+   "aceitos": 3,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -194,7 +194,7 @@
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 2,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 2
   },
   {
@@ -251,7 +251,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 6,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "A Gazeta",
@@ -278,22 +278,51 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 327,
+  "sem_contexto": 313,
+  "sem_contexto_com_tema": 19,
   "oficial_sem_tema": 3,
-  "possivel": 18,
-  "excluir": 85,
-  "generico_sem_ancora": 3,
-  "sem_contexto_com_tema": 18,
-  "veiculo_excluido": 36,
-  "outro_estado": 30,
+  "possivel": 15,
+  "excluir": 82,
+  "generico_sem_ancora": 5,
+  "veiculo_excluido": 24,
+  "outro_estado": 26,
   "caixa_alta": 2,
   "exterior_sem_ancora": 1,
   "sigla_sem_ancora": 6,
-  "veiculo_outra_praca": 6
+  "veiculo_outra_praca": 7
  },
  "itens": [
+  {
+   "id": "49ebf0f387dd",
+   "titulo": "Ajuste fiscal, sim. Tesouraço, não",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/caio-neri/ajuste-fiscal-sim-tesouraco-nao-1126",
+   "data": "2026-11-20T07:00:00Z",
+   "coletado_em": "2026-11-20T08:40:30Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "7a6a9e723f65",
+   "titulo": "Governador eleito, Pazolini encontra direção da maior convenção de igreja evangélica",
+   "veiculo": "SiteBarra",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNLXVWSmQ5cmVpZnA3Sm02cm1kZ08xYm9oai1xamhKaGVkQ3FENllSbGt4V3FaTU53UlVLUFRIMGNoTERLZkxoLWpEb0hQNWxtLUlteTNwdHFSYk1Nc2lGV21qZ2ZfZmRIYUhYNnFoSkpTRDQxTGhNTHo4djNycFYweTJKSHJiQzlRajFGWFlqenlKVnF5Qzl3bGFaMFlzaXJGTXdnbVRzUXNlaDJJVkVpMm1n?oc=5",
+   "data": "2026-11-20T04:36:05Z",
+   "coletado_em": "2026-11-20T08:40:30Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
   {
    "id": "c58306195c65",
    "titulo": "Ajuste fiscal impacta orçamento dos estados, diz Pazolini | #PoderExpresso",
@@ -441,6 +470,18 @@
    "temas": [
     "pessoal"
    ]
+  },
+  {
+   "id": "9c58d4ecb46a",
+   "titulo": "Se beber, não dirija: Setran e Detran realizam ação de fiscalização com foco em alcoolemia",
+   "veiculo": "Município de Praia Grande",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPNW5JOXQ2dFBBbUJJUEpPZUJNSi02THNqLW5GRmVZVnlENThpWVhoVVpqMHRLVHBsTVhUd0lGMkZNTG9weFBzODA1TGlXbkh0R2w5aUVqMFZ6dnQ5emxZT2RFeHd0RnEtTkF0d1ppak5kdkFCT2tkalJfQ1B6bVlpMDgzMXBFcjNGbXVaUGJpRHNjOERHb0VPWVJvdTZfUEp6N3dBZ093V2lkeEYyTkMyeVhqZHFlX0RhWHQ5LTVQdWF6M3FSZmhraHFORWM?oc=5",
+   "data": "2026-11-19T19:43:37Z",
+   "coletado_em": "2026-11-20T08:40:30Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "e988b284d327",
@@ -1411,6 +1452,18 @@
    "temas": [
     "financas"
    ]
+  },
+  {
+   "id": "75c34906f351",
+   "titulo": "Detran orienta cidadãos sobre a importância de manter os dados cadastrais atualizados",
+   "veiculo": "Notícia Exata",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQcHJkOVp1NWVheEVaanBzQWt6eW04VDZzSWxYWVJBbk5xQlM2X2NnMktvUHU3a0Q2clFwQ2JmLWkxZ19SOVFWaDZoWHdfUXBRaWxPNGhSQlFVeWwwTlZTeGh5LWhMTU00ZU02YUJMWWdPQ0ZwRUZPdTNjak0zZjcweFhlMkpQZnBCNHdOdHdiTGVZT2hpRHdLX0JRQS1keUozdXkxZHdPZkdycUhob05IN3UzSzhucV9Tb29MdA?oc=5",
+   "data": "2026-11-18T17:39:35Z",
+   "coletado_em": "2026-11-20T08:40:30Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "df8dc036ce00",
