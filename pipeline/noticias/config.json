@@ -1,5 +1,5 @@
 {
-  "_nota": "Configuração do coletor de notícias (coletar.py). Os termos são comparados sem acento e sem diferença de maiúsculas; um asterisco (nomea*) casa qualquer continuação da palavra. Uma notícia entra se o título casar com algum termo de contexto_es, ou se casar com algum tema E citar um localizador (ES, capixaba...). Pessoas: confira se a lista abaixo reflete o governador em exercício e o governador eleito. Edite à vontade: a próxima coleta recalcula os temas de tudo o que já foi guardado. O campo desde (AAAA-MM-DD, horário de Brasília) é o início do recorte: nada anterior a essa data é guardado. Tema restricao: sinaliza suspensões, cortes e atrasos de pagamento; é o primeiro do resumo por e-mail. Notícia que cheira a assunto público capixaba mas não cita o Estado vira 'possível' (guardada, fora do e-mail e dos números). Rode pipeline/noticias/auditar.py de vez em quando para ver o que o filtro descarta. outros_estados: título com a sigla de outro estado (SP, DF...) e sem nenhuma âncora do ES é descartado, porque siglas de órgãos (Sefaz, Detran, Sesa) existem em todos os estados. veiculos_excluidos: sites que só republicam concursos e veículos de outros estados (ba.gov.br, ContilNet, Gazeta do Cerrado...), cujas notícias não são do ES mesmo quando citam siglas comuns como Idaf, Sefaz e Detran. siglas_ambiguas: siglas de órgãos que existem em vários estados; só confirmam a matéria se ela vier de fonte capixaba (feed do ES, busca restrita a site capixaba, veiculos_capixabas) ou citar algo do ES; nos outros casos viram 'possível'. Termos genéricos (contexto_generico: governo estadual, governo do estado, transição, governador eleito...) existem em todos os estados e só confirmam com fonte capixaba ou âncora do ES no título; sem isso a notícia vira POSSÍVEL, e, se o veículo é de outra praça (veiculos_outras_pracas), é descartada.",
+  "_nota": "Configuração do coletor de notícias (coletar.py). Os termos são comparados sem acento e sem diferença de maiúsculas; um asterisco (nomea*) casa qualquer continuação da palavra. Uma notícia entra se o título casar com algum termo de contexto_es, ou se casar com algum tema E citar um localizador (ES, capixaba...). Pessoas: confira se a lista abaixo reflete o governador em exercício e o governador eleito. Edite à vontade: a próxima coleta recalcula os temas de tudo o que já foi guardado. O campo desde (AAAA-MM-DD, horário de Brasília) é o início do recorte: nada anterior a essa data é guardado. Tema restricao: sinaliza suspensões, cortes e atrasos de pagamento; é o primeiro do resumo por e-mail. Notícia que cheira a assunto público capixaba mas não cita o Estado vira 'possível' (guardada, fora do e-mail e dos números). Rode pipeline/noticias/auditar.py de vez em quando para ver o que o filtro descarta. outros_estados: título com a sigla de outro estado (SP, DF...) e sem nenhuma âncora do ES é descartado, porque siglas de órgãos (Sefaz, Detran, Sesa) existem em todos os estados. veiculos_excluidos: sites que só republicam concursos e veículos de outros estados (ba.gov.br, ContilNet, Gazeta do Cerrado...), cujas notícias não são do ES mesmo quando citam siglas comuns como Idaf, Sefaz e Detran. siglas_ambiguas: siglas de órgãos que existem em vários estados; só confirmam a matéria se ela vier de fonte capixaba (feed do ES, busca restrita a site capixaba, veiculos_capixabas) ou citar algo do ES; nos outros casos viram 'possível'. Termos genéricos (contexto_generico: governo estadual, governo do estado, transição, governador eleito...) existem em todos os estados e só confirmam com fonte capixaba ou âncora do ES no título; sem isso a notícia vira POSSÍVEL, e, se o veículo é de outra praça (veiculos_outras_pracas), é descartada. manuais: matérias incluídas à mão (titulo, veiculo, url, data em ISO com Z); entram como confirmadas, sem passar pelo filtro, e a migração da triagem não as reavalia. Para incluir uma, acrescente um item aqui; para tirar, apague o item e remova-o também do data/noticias/index.json.",
   "janela_dias": 2,
   "consultas_google": [
     "\"governo do Espírito Santo\"",
@@ -581,7 +581,8 @@
         "loa",
         "orçamento de 2027",
         "orçamento 2027",
-        "bombas fiscais"
+        "bombas fiscais",
+        "disciplina fiscal"
       ]
     },
     "contratos": {
@@ -1025,5 +1026,13 @@
     "porto alegre",
     "distrito federal",
     "brasília"
+  ],
+  "manuais": [
+    {
+      "titulo": "Disciplina fiscal e justiça social podem andar juntas",
+      "veiculo": "A Gazeta",
+      "url": "https://www.agazeta.com.br/artigos/disciplina-fiscal-e-justica-social-podem-andar-juntas-1126",
+      "data": "2026-11-19T09:00:00Z"
+    }
   ]
 }

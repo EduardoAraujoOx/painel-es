@@ -281,6 +281,13 @@ def coletar(cfg, dias, descartadas=None):
                     aceitos += 1
                 coletados.append({"titulo": titulo, "veiculo": veiculo, "url": it["url"], "data": data, "possivel": classe == "possivel"})
         relatorio.append({"fonte": fonte["nome"], "consulta": fonte["rotulo"], "ok": not erro, "lidos": lidos, "aceitos": aceitos, "possiveis": possiveis, **({"erro": erro} if erro else {})})
+    # matérias incluídas à mão (`manuais` no config): entram como confirmadas, sem passar pelo filtro, e a migração da triagem não as reavalia
+    manuais = cfg.get("manuais", [])
+    for m in manuais:
+        coletados.append({"titulo": m["titulo"], "veiculo": m.get("veiculo") or "Inclusão manual", "url": m["url"],
+                          "data": datetime.fromisoformat(m["data"].replace("Z", "+00:00")), "possivel": False, "manual": True})
+    if manuais:
+        relatorio.append({"fonte": "Inclusão manual", "consulta": "manuais", "ok": True, "lidos": len(manuais), "aceitos": len(manuais), "possiveis": 0})
     return coletados, relatorio
 
 
@@ -311,7 +318,7 @@ def consolidar(cfg, coletados, hoje):
         reg = {"veiculo": c["veiculo"], "url": c["url"]}
         if atual is None:
             por_id[i] = {"id": i, "titulo": c["titulo"], "veiculo": c["veiculo"], "url": c["url"], "data": iso(c["data"]), "coletado_em": iso(hoje), "outras": [],
-                         "possivel": bool(c.get("possivel")), "triagem": TRIAGEM}
+                         "possivel": bool(c.get("possivel")), "triagem": TRIAGEM, **({"manual": True} if c.get("manual") else {})}
             if not c.get("possivel"):
                 novos += 1  # "novos" conta só as confirmadas
             continue
@@ -333,7 +340,7 @@ def consolidar(cfg, coletados, hoje):
     for it in por_id.values():
         if datetime.fromisoformat(it["data"].replace("Z", "+00:00")) < corte:
             continue
-        if it.get("triagem") != TRIAGEM:
+        if it.get("triagem") != TRIAGEM and not it.get("manual"):
             # migração única: o que foi guardado antes das regras de praça é reavaliado uma vez e marcado. Só se tira o que vem de veículo de outra praça
             # (decidido pelo nome do veículo e pelo título) ou notícia do exterior sem âncora do ES (regra de TRIAGEM 3, vale também para as "possíveis"). Não se rebaixa por "genérico sem âncora": o item guardado não diz se veio de feed ou busca
             # restrita a site capixaba, e rebaixar errado esconderia notícia boa; a regra vale para o que for coletado daqui em diante.
