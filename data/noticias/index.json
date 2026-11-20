@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-20",
- "gerado_em": "2026-11-20T18:17:12Z",
+ "gerado_em": "2026-11-20T19:17:23Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,24 +17,24 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 14,
-   "aceitos": 5,
+   "lidos": 13,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 49,
-   "aceitos": 22,
-   "possiveis": 7
+   "lidos": 24,
+   "aceitos": 15,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 9,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -49,16 +49,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 22,
-   "aceitos": 6,
+   "lidos": 20,
+   "aceitos": 4,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 2,
+   "lidos": 6,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -66,7 +66,7 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 5,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -74,7 +74,7 @@
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 10,
-   "aceitos": 6,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
@@ -89,16 +89,16 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 31,
-   "aceitos": 3,
+   "lidos": 29,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 80,
-   "aceitos": 0,
+   "lidos": 100,
+   "aceitos": 1,
    "possiveis": 7
   },
   {
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 31,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 31,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -226,7 +226,7 @@
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -242,7 +242,7 @@
    "consulta": "https://g1.globo.com/rss/g1/es/espirito-santo/",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -250,7 +250,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -258,7 +258,7 @@
    "consulta": "https://www.agazeta.com.br/colunas/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -278,23 +278,36 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 301,
-  "sem_contexto_com_tema": 18,
+  "sem_contexto": 312,
+  "sem_contexto_com_tema": 19,
+  "oficial_sem_tema": 3,
   "possivel": 16,
-  "oficial_sem_tema": 5,
-  "excluir": 78,
-  "oficial_divulgacao": 1,
-  "veiculo_excluido": 31,
-  "generico_sem_ancora": 5,
-  "exterior_sem_ancora": 4,
-  "outro_estado": 22,
+  "excluir": 74,
+  "exterior_sem_ancora": 3,
+  "generico_sem_ancora": 4,
+  "veiculo_excluido": 30,
+  "outro_estado": 23,
   "caixa_alta": 1,
-  "sigla_sem_ancora": 4,
+  "sigla_sem_ancora": 5,
   "veiculo_outra_praca": 6
  },
  "itens": [
+  {
+   "id": "b204ecfa0785",
+   "titulo": "Taxa de turismo suspensa em Angra dos Reis",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBxaklRd3E0NzdlYWVtX1AtOUZnWkVPOUxaQUctODBRcUMxM1Z2R1VGZ1hKYVRFZDcxQllsVUxCaFpPTThDRzl0Z3A3NFBXUXQtSHotelZMaFFWR1d6d19EbVh3MnFjeTJ6QXdSMlF0amlHUm9XOEE?oc=5",
+   "data": "2026-11-20T18:35:56Z",
+   "coletado_em": "2026-11-20T19:17:23Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "d164f8c2f6e4",
    "titulo": "Passaportes de Flávio Bolsonaro seguem cancelados no STF",
@@ -778,6 +791,18 @@
    "temas": [
     "pessoal"
    ]
+  },
+  {
+   "id": "3f3506d86464",
+   "titulo": "Concurso PMES: candidatos pedem mudança no edital",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQRXBEeDFoUXdGbjJORzNVMDBVdEl3Tk9QVEo5dVNZbXFZME9sZ3Vvay1BVHhONzI0TDRsT2hzX2Eyc2ozMkF0a004ZVRBaUlHRVNGTVFKRzR5LVBVTEYxT2tLZmFDd2M4Z2dDSE1waFNVWXFnMWRTN3VfRV9ma0JtaVNicw?oc=5",
+   "data": "2026-11-19T18:58:51Z",
+   "coletado_em": "2026-11-20T19:17:23Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "04ac5005d867",
@@ -1725,7 +1750,12 @@
    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQcHJkOVp1NWVheEVaanBzQWt6eW04VDZzSWxYWVJBbk5xQlM2X2NnMktvUHU3a0Q2clFwQ2JmLWkxZ19SOVFWaDZoWHdfUXBRaWxPNGhSQlFVeWwwTlZTeGh5LWhMTU00ZU02YUJMWWdPQ0ZwRUZPdTNjak0zZjcweFhlMkpQZnBCNHdOdHdiTGVZT2hpRHdLX0JRQS1keUozdXkxZHdPZkdycUhob05IN3UzSzhucV9Tb29MdA?oc=5",
    "data": "2026-11-18T17:39:35Z",
    "coletado_em": "2026-11-20T08:40:30Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "SITE AGITOS MUTUM",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOMkNhMS1fVjd3bVVpZ2E0SG5hRWpURk9QU21MMW9ubFp2em00aFFtcldoUG5GODFVcG12RWwta0tIeDI3VmF4S1lFMXpVV1poa0dzMDQ4UENVMkVZb3VwNHFsTl9hejhqelpHS1hvSlE1UUZXQTVyT0RRaGxKd2ZZblZfbTJfX3NTMUZLUEt1elNBaUxvbHJWb0t1RFBmZWVfMFhLdUJDcEhleGFRWTN5WUNFRThoYlg1YWVOeTRjNDhrWkU?oc=5"
+    }
+   ],
    "possivel": true,
    "triagem": 9,
    "temas": []
