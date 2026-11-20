@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-20",
- "gerado_em": "2026-11-20T16:17:13Z",
+ "gerado_em": "2026-11-20T17:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -42,8 +42,8 @@
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
    "lidos": 7,
-   "aceitos": 7,
-   "possiveis": 0
+   "aceitos": 6,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 36,
+   "lidos": 35,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 77,
-   "aceitos": 1,
-   "possiveis": 6
+   "lidos": 100,
+   "aceitos": 0,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
-   "aceitos": 0,
+   "lidos": 57,
+   "aceitos": 1,
    "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 26,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 55,
    "aceitos": 0,
    "possiveis": 5
   },
@@ -169,7 +169,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -278,22 +278,34 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 293,
-  "sem_contexto_com_tema": 21,
-  "possivel": 14,
+  "sem_contexto": 336,
+  "sem_contexto_com_tema": 25,
+  "possivel": 15,
   "oficial_sem_tema": 4,
-  "excluir": 69,
-  "generico_sem_ancora": 4,
-  "veiculo_excluido": 27,
-  "outro_estado": 28,
+  "excluir": 75,
+  "generico_sem_ancora": 5,
+  "veiculo_excluido": 45,
+  "outro_estado": 29,
   "caixa_alta": 1,
   "exterior_sem_ancora": 2,
-  "sigla_sem_ancora": 7,
-  "veiculo_outra_praca": 7
+  "sigla_sem_ancora": 6,
+  "veiculo_outra_praca": 8
  },
  "itens": [
+  {
+   "id": "ebe3e75cc09b",
+   "titulo": "Governo mobiliza operação após cianobactérias proliferarem em rios na região de Belo Monte",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/brasil/2026/11/governo-mobiliza-operacao-apos-cianobacterias-proliferarem-em-rios-na-regiao-de-belo-monte/",
+   "data": "2026-11-20T16:28:20Z",
+   "coletado_em": "2026-11-20T17:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "45af7c2b356b",
    "titulo": "Governador transfere simbolicamente Capital para São Mateus e anuncia investimentos em comunidades quilombolas",
@@ -1693,7 +1705,12 @@
    "url": "https://eshoje.com.br/politica/2026/11/erick-musso-articula-ales/",
    "data": "2026-11-18T17:06:01Z",
    "coletado_em": "2026-11-18T17:17:27Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "portal jornal do norte",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVU5MNE1ic2JDY0ZDbHZNeGxLYm5EM2ZwM1dzUVUyZ3Rqb1NxSkxlRE1NUkhkVm5IZHhtUzAyNXdGaThCSWM0MkFuZEZWX3JfMEtfMExLeHJ6dTB5RHJVdjhsb0xST3p6dkJJWnFvNF9hRHdVSzJiYWxRSkNXYUswN2lSVEZZWHAxMEJ1TW4tbzdBZ1NqUXBzWHhPWjRIbm9VeG5zVnNBbXlDS0ZVQ2l3UjRWUTE0QzBFeFNiYmFnQ0U?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 9,
    "temas": [
