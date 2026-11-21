@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-21",
- "gerado_em": "2026-11-21T20:17:20Z",
+ "gerado_em": "2026-11-21T22:11:33Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,14 +26,14 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 23,
-   "aceitos": 12,
+   "aceitos": 10,
    "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -41,16 +41,16 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 6,
+   "lidos": 6,
+   "aceitos": 5,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 2,
+   "lidos": 5,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 17,
+   "lidos": 18,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 88,
+   "lidos": 81,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -145,15 +145,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 5,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 31,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 4,
+   "lidos": 5,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 0,
+   "lidos": 6,
+   "aceitos": 1,
    "possiveis": 2
   },
   {
@@ -278,18 +278,17 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 278,
+  "sem_contexto": 276,
   "possivel": 15,
-  "generico_sem_ancora": 4,
+  "generico_sem_ancora": 3,
   "sem_contexto_com_tema": 14,
   "oficial_sem_tema": 2,
-  "exterior_sem_ancora": 6,
-  "excluir": 34,
-  "outro_estado": 14,
-  "veiculo_excluido": 30,
-  "veiculo_outra_praca": 1,
+  "excluir": 27,
+  "exterior_sem_ancora": 9,
+  "outro_estado": 11,
+  "veiculo_excluido": 29,
   "sigla_sem_ancora": 4
  },
  "itens": [
@@ -933,6 +932,10 @@
     {
      "veiculo": "Portal MG",
      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPY1NTbWMyOHJ4NEVzaGMyMjJXRXpQRjhvRzJPRTN2XzFGbGVabnUtZXlzekQ1WXQ0MERtQ2tmMjJRRUxNX1g1RktaMmxJY0JPbTdrWHhKa29jMkw0cW9fd2xJdnVIb0FkNVBJSGFYMFp5aEVrVzRfN29WZnY4SlFvUzBtZ3VBTGhuSERnWDJpc29UTjlJMmZGTlpZempCQ3VMVTNYM2lLV1B4ZkFNOVhWMVFWSE1FY1lDZGE5d3hiOWQ2MDZBOU1laTZXak03d18wd1NieDBHLU8?oc=5"
+    },
+    {
+     "veiculo": "Grupo Portal de Notícias",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPMC0ycUktbjhYUXpVaUxjaXp6YVdrUV82aDgycTlITnMtbDVDdG1JWV93a0lmMVZBOVVCc3l0MkUtMkFmVFd3WDE4MC1oWk85NXBLaUFYbC1nT3dSSlBNb29XcERudUtpLTdpcm9adTM4d2hodkZlNks3SkJscUxnTlU2ZkJKR0FHcjlSM2pmQVBKN0xmZUpnai1qN2dxVHdNZjVXLWY4WjgyaEhtc2tGZzUzOHg2NzNBNmprRE12QlFsdWtpV3Myem5HMVYxOUNGbWtn?oc=5"
     }
    ],
    "possivel": true,
