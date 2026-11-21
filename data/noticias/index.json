@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-21",
- "gerado_em": "2026-11-21T22:11:33Z",
+ "gerado_em": "2026-11-21T23:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,8 +25,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 23,
-   "aceitos": 10,
+   "lidos": 21,
+   "aceitos": 8,
    "possiveis": 4
   },
   {
@@ -41,15 +41,15 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 5,
+   "lidos": 7,
+   "aceitos": 6,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 18,
+   "lidos": 16,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 81,
+   "lidos": 79,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -137,9 +137,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 29,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -177,7 +177,7 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -280,18 +280,33 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 276,
+  "sem_contexto": 269,
   "possivel": 15,
   "generico_sem_ancora": 3,
-  "sem_contexto_com_tema": 14,
+  "sem_contexto_com_tema": 12,
   "oficial_sem_tema": 2,
-  "excluir": 27,
+  "excluir": 26,
   "exterior_sem_ancora": 9,
-  "outro_estado": 11,
-  "veiculo_excluido": 29,
-  "sigla_sem_ancora": 4
+  "outro_estado": 13,
+  "veiculo_excluido": 30,
+  "veiculo_outra_praca": 1,
+  "sigla_sem_ancora": 5
  },
  "itens": [
+  {
+   "id": "f32f39b8c51d",
+   "titulo": "Polícia Civil e Sejus prendem servidor com drogas que seriam introduzidas em cadeia de Juína",
+   "veiculo": "Olhar MT",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQejd2TWZpRG1CZnFqeXpuNS1ySW5MX1E4WXNHN25TSHNOWFc3RWxQeUN5YzJJMWFiTXJ4Z190OGNtQUljMENsYXpBcXNlLVlqb2Z3cXptMGVsdkF0XzFqMUtPRmNuUDFzTDZLM2poeDVDdDZvd2NGMmE3TTdxdFJPcWdrcFh1NlM3V2t3TU11NjJKVENMdDlpRlJQeDR5czJVU1N2c2M4NURLaGZoWFhDWWJtcHc5VkF0dUcwdDFad0dwMmE5OVBiTw?oc=5",
+   "data": "2026-11-21T20:20:07Z",
+   "coletado_em": "2026-11-21T23:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "ea7e94d1a3cb",
    "titulo": "Nova exigência do Detran deixa mais de 1,7 mil aprovados sem receber a CNH",
