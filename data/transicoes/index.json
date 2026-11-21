@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-21T15:17:56Z",
+ "gerado_em": "2026-11-21T21:17:40Z",
  "ref": "2026-11-21",
  "desde": "2026-10-04",
  "estados": [
@@ -8,14 +8,14 @@
    "nome": "Alagoas",
    "eleito": "JHC",
    "partido": "PSDB",
-   "total": 145
+   "total": 148
   },
   {
    "uf": "AP",
    "nome": "Amapá",
    "eleito": "Dr. Furlan",
    "partido": "PSD",
-   "total": 41
+   "total": 42
   },
   {
    "uf": "AM",
@@ -36,7 +36,7 @@
    "nome": "Minas Gerais",
    "eleito": "Cleitinho Azevedo",
    "partido": "Republicanos",
-   "total": 287
+   "total": 289
   },
   {
    "uf": "PA",
@@ -50,28 +50,28 @@
    "nome": "Paraná",
    "eleito": "Sergio Moro",
    "partido": "PL",
-   "total": 213
+   "total": 214
   },
   {
    "uf": "RJ",
    "nome": "Rio de Janeiro",
    "eleito": "Douglas Ruas",
    "partido": "PL",
-   "total": 219
+   "total": 221
   },
   {
    "uf": "RN",
    "nome": "Rio Grande do Norte",
    "eleito": "Cadu Xavier",
    "partido": "PT",
-   "total": 127
+   "total": 129
   },
   {
    "uf": "RS",
    "nome": "Rio Grande do Sul",
    "eleito": "Luciano Zucco",
    "partido": "PL",
-   "total": 279
+   "total": 280
   },
   {
    "uf": "RO",
@@ -106,11 +106,41 @@
   "fndr": "FNDR e reforma tributária"
  },
  "contagem": {
-  "total": 1849,
-  "medidas": 576,
-  "equipe": 1273
+  "total": 1860,
+  "medidas": 580,
+  "equipe": 1280
  },
  "itens": [
+  {
+   "id": "f366d3b87ef9",
+   "titulo": "Douglas Ruas promete ampliar metrô do Rio até o Recreio e buscar recursos federais para Linha 3",
+   "veiculo": "Diário do Rio",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPYjB3Wm54a01BZVdSck9xdWVoNE1QMHpNSWtDZF81MEFZcTVpUjlxbDI5SzlVYmNSZXowTTVHaHRiNTZvR0dyVVpzdnNvTDFjQXBCUkREMi10Si1CbWtUemcxYkFnNHZWVTNQQ0FRUFVvUVp3VUJWVFA1Z3gwUFJBc3lqbk96MG13R0tubXlTQ3FsSnU3Q0QzMHktNk1XYjZ2NXZiYjlrdVBRMnVVSlFWM182cVBha1A3QUVuU2pqMVhBXzIyMnNHbTZHMllJajJyVHB4WGFnSVlySEd6NU5HbFh6V1NydHNxWmFTNnRtN1prRzg?oc=5",
+   "data": "2026-11-21T16:55:46Z",
+   "coletado_em": "2026-11-21T21:17:40Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "ee0ce17a521e",
+   "titulo": "Furlan anuncia Leila Gomes como futura secretária de Fazenda do Amapá",
+   "veiculo": "Diário do Amapá",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZTFPZFZmMlphT3dsT2R6dnJ2SG9WSHp1SGo3M05Ba1lubWNuTDd6dkltNl9NWGwwMmtXZnZ0cVFwc1pfRXZPeVJTYlplc01NeElyRU9TY0tlS1pjSWRLQ1FycmxraVVXVnJiLUVfcTFHQXZiOVRUUDdLajNIM25KWXc1MV81aXIzRDZJellxci1pdlFaa29YUVFKMUNuRjJSNmlmZE1IVEtZZWo2Q01IaU1yRjVhS2dDbTltS3R3?oc=5",
+   "data": "2026-11-21T16:48:29Z",
+   "coletado_em": "2026-11-21T21:17:40Z",
+   "outras": [],
+   "ufs": [
+    "AP"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
   {
    "id": "470cb73d70bb",
    "titulo": "Secretariado de Cleitinho terá desafio de transformar gestão técnica em resultados para o interior de Minas",
@@ -118,6 +148,29 @@
    "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOQUxiYVRFdnl4ZzVST2JTR1FEVXVCWVgtYm5MOVUyY0lRMkVBRW1HRURZZlVFV0xCZFNKd3ZNSVpZZWFxMGlsZnM3Zm9jVVBraHRpTVZVaFQ2aDNTTk9hdjlmeFRWVm1SQ0xZYTRnMGZTNWd3MjFxMUxhcVpQY3RacTZFWE16V2dDOWMxYllGbnNlSnBYWWc3YVNXellLd1BjZThsdnE0RjlybWlzOXNTRl81SU1JU3hTeGJqeTBTMDJuSE95N0ZNVWE2S0hCRUJ1dUhwUVppaV9IVV9NNVhaUHhac0tEdw?oc=5",
    "data": "2026-11-21T11:30:11Z",
    "coletado_em": "2026-11-21T15:17:56Z",
+   "outras": [
+    {
+     "veiculo": "Gazeta do Triângulo",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQN0VTZVA5MnlDb2hlcjdNT3BtNGdUTFM4ZkxydGxvczV4XzBIY01mdmRFcTNnTFMzdVRSbTZweDE5bGt5NFNxS2ZpX28xSUt2TGJaRWVjLUV2OTlMdnB3RVE4Qzk3T2dFQXVVMzI1VFNGVG1iX2prNzZ4VFhyeU9CVDMxYVcxWFZnblJvcFRqMGkzOEJiSnVJcFZzcWo5WVdGZlMxQXpPVHF3d3lBUFlKTzBBbVBiRmo3elo5a0djcVlrLTdabktkcjlHUzF5Um83WjhHVUpQZ0w?oc=5"
+    },
+    {
+     "veiculo": "Clic Folha",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxONGszZkJQS1RFdURKT2xoUlV3RTJ0eHJrRG9kN1lDQUVxei12RGxIbEJoNzdDQ3FTTjBuOFpYMHY2aUh3SFo1TjVfN2tjcUx1TFVnTDdJaXZoTURuUWhwTlVWalU4TUxnbDdETlFCTTdRSVZuSE5pWEVYQkxNWEF2aWJCbkVlSWhlSmxyeVF3Yi15dlpYTVZ4aHpMOWRhdjY1d0lfa21JQmxjdkJ6RUpnX0VuOXdBRktGem5oVHEyUHdPakhMNzBZUVc1SlBVdw?oc=5"
+    }
+   ],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "03f92ca9595a",
+   "titulo": "O secretariado de Cleitinho",
+   "veiculo": "O Tempo",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOYjlmbThBc3ozUUg0MTBXeERUSVk5aGctUFpROGZzNUI2MXlOTDFlQXZKUWZCOXpPX3JCWm1CdU1ZTGFTY3NVLURBQlotbEpETjNlVXhBcV9IUlZZUmFUR1ZZbTVhd3RYc0F6bW1ZOTBERjhqWjg2OWMtT1VnMGhGRFVhWU4xbXB1QUNzUkVRNVFlay0tMVVZNk8tR1o?oc=5",
+   "data": "2026-11-21T10:00:01Z",
+   "coletado_em": "2026-11-21T21:17:40Z",
    "outras": [],
    "ufs": [
     "MG"
@@ -462,6 +515,20 @@
     "pessoal"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "afd7fd0ae012",
+   "titulo": "Cleitinho promete equipe técnica em Minas e afirma que afastará secretários envolvidos em desvios",
+   "veiculo": "BH 24 Horas",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYndINVRGMFBCWmpMNUZBRXJIbVRKSERvTWNJM2t4ejNaQ25IaEVxOXozekdPTXNOQlJteWNwVEZfaGZ2SlNCSXlCMXJuUmdEbWFhZHZveUxrX24ydEkxR09weUhxa1hEMTd5cHV0dm9FXy1hVEdZWDJfWk1QTTVyRENCMndJRTI1SmtPLWczY1JZa1I1d0JKMi1XSUdtSWZUTk9JdzBieEpVWEhsUjdwTG05Nzh3Z2dibWxXcHdoaGI5WmFZZWpfWFdIYy0?oc=5",
+   "data": "2026-11-20T13:31:36Z",
+   "coletado_em": "2026-11-21T21:17:40Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "34ccf02483c8",
@@ -5251,6 +5318,23 @@
    "categoria": "medida"
   },
   {
+   "id": "21a62f857250",
+   "titulo": "Douglas Ruas anuncia para a Educação do RJ nome que defendeu privatização da gestão escolar no Paraná",
+   "veiculo": "Brasil de Fato",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQbzVkQ0hvVnFLdFp0bkk2N3M5X0Zxc21UZ3pJcEEtaU55TGJ4WFVDcjN5b1JRdmNwU05aQ3p2S1NkVVBKeWRJeGlKbnNHdmNCcjB1VTNqcjBBZEpWN1RQc29vV2tYaDN0R19JSkU3MG1idFBiSThQNlVnQ19yTjFLVlE0NnNTOHhONTk4TTAzNlBBRjNsaTYxXzExdE1qTnh1bE5EdEg3VW9DeFZFTWxhd3ZyLWdwUVQ5cVZQTnM0MTllM3Q0ZFdQSEVTUnBoOHpRTVk3TzV0d1paS1lmOVE?oc=5",
+   "data": "2026-11-16T15:43:00Z",
+   "coletado_em": "2026-11-21T21:17:40Z",
+   "outras": [],
+   "ufs": [
+    "PR",
+    "RJ"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "8911e65a2394",
    "titulo": "Representante de JHC não comparece à primeira reunião da transição",
    "veiculo": "GazetaWeb",
@@ -7050,7 +7134,12 @@
    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNZW9LVU5veTVjakVnc3U5RDMzblo3LWc5NmstanRjaTQ3T3R3VnVxYU94RW4zN0FtXzdyQS0xMGxkVW45c3JBanBLU2h5OHJFNG43TnFSSmluWS1XZnhXT04yU1pxRUJ0aWNnbFd4OTJETVhTOHREY1lpWW1TMkRqSnV6U2N0R002aW9zUUNHM0pzNUJVSUJCV3R0UlN4d0wxUWs4ZDVJY0hNVlBkZEJFN2Rqb3FSMUNfbklvN3VDNDRHZWFLdVJXMjNIaHVON1pO?oc=5",
    "data": "2026-11-13T10:55:00Z",
    "coletado_em": "2026-11-13T11:18:01Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Tribuna do Agreste",
+     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxON0lnRUs4V1k2a2R2NWl5djhOUjk1SkItMmo0UEdEVHk3R1BvTnVudGdxRXc5LWk1X1hva2RVLTczRlBNQkFLRG5XOW5WQWNZYzFzNzVNeHA3LTFrLTBqZG8wWVhXUmJ5Q1hfMnZRc2swSElRVDhoM0lZQTlsUDkyUUlKMXd4MEFLY2I5WDIta0JWbHMtUGRYS2xYZUpsbjlCUm5EbEdqN1VIUXZ2eEcyYzNzS0dxcHhVYnlRa2JkNG5YX0pKdjZELWw1TWMyMHZJUVE?oc=5"
+    }
+   ],
    "ufs": [
     "AL"
    ],
@@ -16605,6 +16694,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "bb2a8535a37c",
+   "titulo": "Mudança Governo do RN amplia equipe de transição para 21 membros; confira os novos nomes",
+   "veiculo": "NOVO Notícias",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPc1d4TWN1UzBENHlRQ2FjM3FEX3dQRGYtbFhyQVAzdXpfM2I2b0R2NlBKRzRvMmM0M1h0ZUtPZ3VDZzlKc0FaZVNvY2VFOEFZUm1Fa0RaSDBaQkF5NFVncDdkeTlRX25fYjhKRUthTUZ2eEJqNjltOEM2SHNBUVV5NkFKczFPaHBHQVZ5ZUJSU0lEMnBKa09zV1lIMVpXVnlVRUhUQV9ZX0k2LVZi?oc=5",
+   "data": "2026-10-30T07:00:00Z",
+   "coletado_em": "2026-11-21T21:17:40Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "b4ce46ff43f8",
    "titulo": "ZUCCO DETONA GOVERNO LULA: “BRASIL A CAMINHO DO MAIOR IMPOSTO SOBRE CONSUMO DO MUNDO”",
    "veiculo": "Diário 360",
@@ -16718,6 +16821,20 @@
    "outras": [],
    "ufs": [
     "RO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "3eadb6494a58",
+   "titulo": "Governo do RN amplia equipe de transição para 21 membros; confira os novos nomes",
+   "veiculo": "O Potiguar",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQZS1sNkhSMEg2YXlhRGo4T2pORzd0Mld5RlBfWXk1UGxRTk9MZjI0S1lxam5aRjFMdFNuREF1b0NBVnQ2RTIzZkxBSWI2YzktNlFPV1BPYWx4d3BzdVNuWGdZcjlCVldUTEtKTWpITDhxQW9OR3U5X185b2RPOFFBRjB5VzZkUF8tMC13dldkWjRwTEt3U1lxOHRETkRwUzB2Njgzb2dsRDNTRUhH?oc=5",
+   "data": "2026-10-30T07:00:00Z",
+   "coletado_em": "2026-11-21T21:17:40Z",
+   "outras": [],
+   "ufs": [
+    "RN"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -19993,6 +20110,20 @@
    "outras": [],
    "ufs": [
     "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "8b21a29f10de",
+   "titulo": "Mais dois nomes são cotados para o primeiro escalão do governo Zucco",
+   "veiculo": "GZH",
+   "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPclkyd29nS2xqaUxCM1lrekZ6SXkzTlhURzJ4eEJMS3dENlUwY3dwSE5VZWNOOTVmSlJibkFoelVvZk52bXRFc0ZTM1VVWW5hNXZmYXI1LUNPZ2ItWURmVWJoV2RoTFRVWmxoOFpoQUpuNUdod19GSks2OURoTEd0aHhhS3FXeW1WUjRZT29LXzRYTURycGFpYVc2Z003bHBDWjBJMEFMVTVseFNvbk5tcVg5VEVZaXpGUk5ENTI0TVhsT0VsdE12V3pFVk9IZjQtQ04yRTh1b3E4RGI5NjRmUGliUF9ORUFZOE84amFYS3FmZHVJZjQ1YUFqSXFLVTZjalNvYV9PY3k?oc=5",
+   "data": "2026-10-23T07:00:00Z",
+   "coletado_em": "2026-11-21T21:17:40Z",
+   "outras": [],
+   "ufs": [
+    "RS"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -25768,6 +25899,22 @@
    "categoria": "equipe"
   },
   {
+   "id": "e9d3bda8adb3",
+   "titulo": "Governo Dantas aumenta em R$ 1,47 milhão contrato de obra no Ceasa e empurra entrega para o primeiro ano de JHC",
+   "veiculo": "AL 102",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQUW1JWUw2bGNQQmdMV1cwcUYxemxvYU5PNzRfOUlSWVRERGZ6dlJPek1KYnY5QjBRZDc2aWJoMzN2bjl2LTJ3M3lBQWV6TGVONzR3V1lGeGhZbzJrc1RHUnhiNFBSN3N6MjhqU0s3ai1lNkhiTjZ6MzRZY2E0bzZHQ04wSk9LYlNIVll1T3F3SnI0ZWVNaUJWUnNTRnUtV0VUVnZIUXVzeDIwaVJ6c1JmSEdYZ1JxcEJiVUd6Y0FlOFd1bXE0U0RaV3RYS0tKcVBKTV9rNkVLVzFIV0hFU1QzVzA3M0k?oc=5",
+   "data": "2026-10-08T07:00:00Z",
+   "coletado_em": "2026-11-21T21:17:40Z",
+   "outras": [],
+   "ufs": [
+    "AL"
+   ],
+   "temas": [
+    "contratos"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "e8f9ddac9b98",
    "titulo": "Após eleito, Braide anuncia três nomes para equipe de transição do Governo do Maranhão",
    "veiculo": "URB News",
@@ -26845,6 +26992,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "73ee6c831b2f",
+   "titulo": "Primeiros nomes de futuro secretariado de JHC já começam a circular",
+   "veiculo": "7Segundos",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNdWYwdHVhcm5QUlpnSkVIQlBzWDB3M213VHNFcEY0NFgwcTYydnVWYWZhOGtwMHpvZzRhTDJ0Wm0xN204eXdMc1NzaFhuTTFpUkJ4Z0lIa1hIN2dQMmtaNHVHYWZFUVFQcEd0T0FSbEM3MXJ4YkJ0RVNBVElFNXZlZ2x6X3V2T0FsZ0Rpa01HX2pFbE5yUUhKbGFxaWZCLXBCY0FwWV9HRkRSS2R5RnFmRWN5UUQ4LWpRM3hpZjFKZUFVQ2pW?oc=5",
+   "data": "2026-10-06T07:00:00Z",
+   "coletado_em": "2026-11-21T21:17:40Z",
+   "outras": [],
+   "ufs": [
+    "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "72574802657f",
    "titulo": "Zucco divulga primeiros nomes da equipe de transição",
    "veiculo": "Folha do Mate",
@@ -27251,6 +27412,22 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "b51d99ed08ab",
+   "titulo": "JHC prevê regionalizar saúde, criar escolas técnicas e ampliar investimentos no interior; confira principais pontos do plano de governo",
+   "veiculo": "Cadaminuto",
+   "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOYXROVzB0OFRRRG1qeEp0U09NWmdwR2E5RXRTOEw4THMyNk5NWDZZSW53b09zM21BUHJmUnBKcGdLM0tfQWwyelpYS3FKQl9vTEpPd0ROcldpWDVOR3NTT2RQSERybTc5d0g1NmRRM09TeEM2MlpFMXlHN19Td3UzX0pqZmotWDh0b3ZWVlhkbDZ6VXdvRTI1RXhxVHpGSHhuaklOQlROZ0tndVhfYnA5LXF4NTZkU28xNzNUZkFXZjlqOTNaU0ZvNE1RaWZtZDRXRGx3WUlJNVM0UnRQWjhKSHJRdkE1MnZpUFFUMmtscDRGdUZza2M0UUdQOFR2cnZEbXQwdXlFOXpLNWhWTXhn?oc=5",
+   "data": "2026-10-05T07:00:00Z",
+   "coletado_em": "2026-11-21T21:17:40Z",
+   "outras": [],
+   "ufs": [
+    "AL"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "b090c0960bca",
