@@ -1,6 +1,6 @@
 {
- "ref": "2026-11-20",
- "gerado_em": "2026-11-20T23:59:40Z",
+ "ref": "2026-11-21",
+ "gerado_em": "2026-11-21T01:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 24,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -99,7 +99,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 1,
-   "possiveis": 5
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 32,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -278,22 +278,34 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 305,
+  "sem_contexto": 303,
   "sem_contexto_com_tema": 17,
   "generico_sem_ancora": 4,
-  "possivel": 16,
+  "possivel": 19,
   "oficial_sem_tema": 2,
-  "excluir": 71,
-  "exterior_sem_ancora": 3,
-  "veiculo_excluido": 27,
-  "outro_estado": 22,
+  "excluir": 69,
+  "exterior_sem_ancora": 2,
+  "veiculo_excluido": 29,
+  "outro_estado": 20,
   "caixa_alta": 1,
   "sigla_sem_ancora": 5,
   "veiculo_outra_praca": 4
  },
  "itens": [
+  {
+   "id": "3de919b260af",
+   "titulo": "Míssil russo atinge a Polônia e provoca reação do governo; entenda",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/mundo/missil-russo-atinge-a-polonia-e-provoca-reacao-do-governo-entenda/",
+   "data": "2026-11-21T01:04:36Z",
+   "coletado_em": "2026-11-21T01:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "768910788038",
    "titulo": "Governo do ES anuncia plano de investimento de R$ 830 milhões para o agro",
