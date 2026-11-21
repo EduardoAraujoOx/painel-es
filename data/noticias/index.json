@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-21",
- "gerado_em": "2026-11-21T16:47:40Z",
+ "gerado_em": "2026-11-21T18:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,15 +25,15 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 25,
-   "aceitos": 13,
+   "lidos": 24,
+   "aceitos": 12,
    "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -66,7 +66,7 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 8,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -74,7 +74,7 @@
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -90,14 +90,14 @@
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
    "lidos": 15,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 99,
    "aceitos": 3,
    "possiveis": 3
   },
@@ -145,9 +145,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -169,7 +169,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 2,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -250,7 +250,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -266,7 +266,7 @@
    "consulta": "https://simnoticias.com.br/politica/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -280,19 +280,31 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 291,
+  "sem_contexto": 285,
   "possivel": 16,
-  "generico_sem_ancora": 4,
-  "sem_contexto_com_tema": 15,
+  "generico_sem_ancora": 5,
+  "sem_contexto_com_tema": 14,
   "oficial_sem_tema": 3,
-  "excluir": 49,
-  "exterior_sem_ancora": 4,
+  "excluir": 54,
+  "exterior_sem_ancora": 5,
   "outro_estado": 14,
-  "veiculo_excluido": 25,
-  "veiculo_outra_praca": 4,
+  "veiculo_excluido": 26,
+  "veiculo_outra_praca": 3,
   "sigla_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "34a79ae19743",
+   "titulo": "Os cidadãos impedidos pelo governo Ortega de voltar à Nicarágua: 'Sou ilegal no meu próprio país'",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/mundo/os-cidadaos-impedidos-pelo-governo-ortega-de-voltar-a-nicaragua-sou-ilegal-no-meu-proprio-pais-1126",
+   "data": "2026-11-21T17:55:14Z",
+   "coletado_em": "2026-11-21T18:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "bbd362b52945",
    "titulo": "Homem tenta comprar drogas e acaba espancado por dívida em Viana",
@@ -658,7 +670,12 @@
    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNY0xSaGh4aGN2QmkwMERaZklLLTlQVWhuM1BUSjFCc1BzSi1OeTM5aTN2M3dYM1J6OEV6N0o5dXZyTFl5LUMzTHRMcktvemxlV2ZFeDhIWEV2anU5NXE0MjFVcTdpaTJXNE9GQlZyaURRT2RXLTlORkNOX3pyRjUwaUdRVzQ3a3pDZmh0dDliZG91U19jSWxMNk9WbDRreVhfZHc?oc=5",
    "data": "2026-11-20T12:42:44Z",
    "coletado_em": "2026-11-20T13:17:15Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "portal jornal do norte",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOa3JxSVY1YjN5N2UtZmc3T0E4NG5NZGV6WXQwOTh2R0NacDdYelozSmhQc09wUGRITkJxS1ZoZzdYRTF3anpQWG1lRmgxM0hmNFZEaV9YLXFsVjEwU3FvbW9kZHFOM081OGlMaTE2ZnAtT19xVFg0NllQUVk3X0oxNGJkWE5VeXJQUUpWZDN3SzhTalBCal8zenQyUU9nR1NUallwaEg5Q0ZDUTBrNHJscmZxb0xjZXlNMGhZ?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 9,
    "temas": [
@@ -1087,7 +1104,12 @@
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMUpocWhBWmw0VzB0N1B3clFOeFktc0poXzJiTjBHUVJnbFJfYzZ4dkl2bWF2VVVQNjUzUVQweUVORWZaczNyYTdKWDR1a3FHSnN1RGlONFM4eHNBSWlvVS1pRFJEU2VOSHVsajZxcjJZdC1NMThXR2R1N0NCTXk2TDVGdE9HSjdNcldhNWs0ejFyU1FyOHZGYXJaclpXSWxyNHk0Vktsb1V0Mk92WW5UOXJKUzJad2wwYUVF?oc=5",
    "data": "2026-11-19T18:14:00Z",
    "coletado_em": "2026-11-19T19:17:14Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "portal jornal do norte",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOb0xRdnp5ZENsaHpUOTlQT3FPWDB5RWhrdmtZb3pOYzBaSEo2MWxZa3pJSEFSdTA4NXdjMFVaN1JmakRKdUJCcHZCU3B6VzQxWTAycHdjV1ZTM0xzNmhXRVNxSGlqWlAxc2NsZGxfTi1QdGMwWXNXS19velhnYTJXWXRXMnJSSlhCUzczekw3SXRTTGVCMzVWOHdCMFNDOTNzQ1hxaWtEejUyVGtfLTB1UjcweFIwVFdrR0JBa3pXYjIwRVdJRGVaYy1iZFRkZw?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 9,
    "temas": [
