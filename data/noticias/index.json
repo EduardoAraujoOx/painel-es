@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-21",
- "gerado_em": "2026-11-21T15:17:14Z",
+ "gerado_em": "2026-11-21T16:47:40Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,22 +18,22 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 9,
-   "aceitos": 2,
-   "possiveis": 1
+   "aceitos": 1,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 26,
+   "lidos": 25,
    "aceitos": 13,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 10,
+   "lidos": 7,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -57,7 +57,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -74,7 +74,7 @@
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 19,
+   "lidos": 15,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -98,8 +98,8 @@
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
-   "possiveis": 2
+   "aceitos": 3,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -145,9 +145,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 11,
+   "lidos": 6,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 1,
+   "lidos": 4,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -278,21 +278,35 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 303,
-  "generico_sem_ancora": 5,
-  "sem_contexto_com_tema": 16,
-  "possivel": 14,
-  "oficial_sem_tema": 2,
-  "excluir": 57,
+  "sem_contexto": 291,
+  "possivel": 16,
+  "generico_sem_ancora": 4,
+  "sem_contexto_com_tema": 15,
+  "oficial_sem_tema": 3,
+  "excluir": 49,
   "exterior_sem_ancora": 4,
-  "outro_estado": 13,
-  "veiculo_excluido": 24,
+  "outro_estado": 14,
+  "veiculo_excluido": 25,
   "veiculo_outra_praca": 4,
   "sigla_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "bbd362b52945",
+   "titulo": "Homem tenta comprar drogas e acaba espancado por dívida em Viana",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/policia/homem-tenta-comprar-drogas-e-acaba-espancado-por-divida-em-viana/",
+   "data": "2026-11-21T16:17:29Z",
+   "coletado_em": "2026-11-21T16:47:40Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "d7caa5a2d033",
    "titulo": "Alunos da rede estadual do ES embarcam para intercâmbio",
