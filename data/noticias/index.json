@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-21",
- "gerado_em": "2026-11-21T01:17:12Z",
+ "gerado_em": "2026-11-21T07:10:06Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,31 +18,31 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 12,
-   "aceitos": 5,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 24,
-   "aceitos": 14,
-   "possiveis": 5
+   "lidos": 28,
+   "aceitos": 16,
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 4,
+   "lidos": 9,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 7,
+   "lidos": 7,
+   "aceitos": 6,
    "possiveis": 1
   },
   {
@@ -51,22 +51,22 @@
    "ok": true,
    "lidos": 16,
    "aceitos": 3,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 8,
-   "aceitos": 3,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 21,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -114,7 +114,7 @@
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
    "lidos": 3,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 21,
+   "lidos": 17,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 30,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -169,7 +169,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
@@ -280,18 +280,18 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 303,
+  "sem_contexto": 301,
   "sem_contexto_com_tema": 17,
-  "generico_sem_ancora": 4,
-  "possivel": 19,
-  "oficial_sem_tema": 2,
-  "excluir": 69,
-  "exterior_sem_ancora": 2,
-  "veiculo_excluido": 29,
-  "outro_estado": 20,
+  "generico_sem_ancora": 7,
+  "oficial_sem_tema": 3,
+  "excluir": 72,
+  "possivel": 21,
+  "veiculo_excluido": 24,
+  "outro_estado": 18,
   "caixa_alta": 1,
-  "sigla_sem_ancora": 5,
-  "veiculo_outra_praca": 4
+  "sigla_sem_ancora": 3,
+  "veiculo_outra_praca": 3,
+  "exterior_sem_ancora": 1
  },
  "itens": [
   {
@@ -1602,7 +1602,12 @@
    "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNTWd3SkI5dUtHM2lCcV9mUElscVJEdk1ISkpXVllrVjdwVUVJZGhwd1BYa2dNTEt4Vk9XMUtrNUk0VFdEUWVLemZUX25TU2tmNFVyMnZ2SDA1bkpoVjJjZzMwRWI3VHc3OVV4ZDhud2YtX0ZsR3UyMS0zUnpOU3JuWl94dUZpRzAxZG5kM3p3WkJQXy1iZml6RzhVVlI3eWZtWllTV1hzdGpGS3VlWVYtOXhscm02U1hjYkFVTUgtelhsb1dvanJZQmUzU0l6bkxiSUkwaVhVNGlZZ0ZTNjdLMmNRMnlCdw?oc=5",
    "data": "2026-11-18T19:46:00Z",
    "coletado_em": "2026-11-19T08:49:14Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "MT Esporte",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZjJWUDJoNmdZU2VjZTA2ajZEOExmTHJ6ZDFUU3pRQVdVTUlMWjBzV29VOGN1N1lfZDFub0pjdWR4ZXhvMFFGdzNOd0VoR2NYb2tlNGFJbE4yN0Y4Mmc4dVV4VUhVRUNhdlFGVnBKZTF0YUFnd05pNF9nRGttaWZsRnB0QTdjRUVLcHN2Q3hfNlZyTnBMVG1wRFJkRE5uNGIwVlBDMWZFSjlYTEpyc21nMDZaci0zMG5QaEJQbGhJV1RmZFE?oc=5"
+    }
+   ],
    "possivel": true,
    "triagem": 9,
    "temas": [
