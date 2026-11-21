@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-21",
- "gerado_em": "2026-11-21T13:17:13Z",
+ "gerado_em": "2026-11-21T14:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 27,
+   "lidos": 26,
    "aceitos": 13,
-   "possiveis": 5
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -41,15 +41,15 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 5,
+   "lidos": 6,
+   "aceitos": 4,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 13,
+   "lidos": 12,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -66,7 +66,7 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 8,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 17,
+   "lidos": 19,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 32,
+   "lidos": 33,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 14,
+   "lidos": 13,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 61,
+   "lidos": 29,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 53,
+   "lidos": 54,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -234,16 +234,16 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
-   "possiveis": 2
+   "aceitos": 0,
+   "possiveis": 3
   },
   {
    "fonte": "G1 Espírito Santo",
    "consulta": "https://g1.globo.com/rss/g1/es/espirito-santo/",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
-   "possiveis": 1
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "A Gazeta",
@@ -280,19 +280,33 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 304,
-  "sem_contexto_com_tema": 16,
+  "sem_contexto": 302,
+  "sem_contexto_com_tema": 17,
   "possivel": 16,
-  "oficial_sem_tema": 3,
-  "excluir": 69,
-  "exterior_sem_ancora": 3,
+  "oficial_sem_tema": 2,
+  "excluir": 63,
+  "exterior_sem_ancora": 4,
   "generico_sem_ancora": 4,
-  "outro_estado": 22,
-  "veiculo_excluido": 45,
+  "outro_estado": 18,
+  "veiculo_excluido": 24,
   "veiculo_outra_praca": 4,
   "sigla_sem_ancora": 3
  },
  "itens": [
+  {
+   "id": "ff0c8b800d43",
+   "titulo": "Reforma tributária exige notas fiscais de locação, voos e imóveis em 2027",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/economia/2026/11/reforma-tributaria-notas/",
+   "data": "2026-11-21T13:46:38Z",
+   "coletado_em": "2026-11-21T14:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "cb8df0f6e26d",
    "titulo": "Eleições 2026: Apuração Estadual em tempo real - Espírito Santo - 2º turno",
