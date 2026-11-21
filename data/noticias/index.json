@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-21",
- "gerado_em": "2026-11-21T14:17:13Z",
+ "gerado_em": "2026-11-21T15:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -19,7 +19,7 @@
    "ok": true,
    "lidos": 9,
    "aceitos": 2,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -33,7 +33,7 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -41,17 +41,17 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 4,
-   "possiveis": 2
+   "lidos": 7,
+   "aceitos": 6,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 12,
+   "lidos": 10,
    "aceitos": 3,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -81,8 +81,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 1,
+   "lidos": 2,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -90,7 +90,7 @@
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
    "lidos": 19,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -98,8 +98,8 @@
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
-   "possiveis": 4
+   "aceitos": 2,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 33,
+   "lidos": 31,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 13,
+   "lidos": 11,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -155,7 +155,7 @@
    "ok": true,
    "lidos": 29,
    "aceitos": 0,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -169,7 +169,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 3,
+   "lidos": 6,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 3
   },
   {
    "fonte": "Folha Vitória",
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 3
   },
   {
@@ -278,21 +278,73 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 302,
-  "sem_contexto_com_tema": 17,
-  "possivel": 16,
+  "sem_contexto": 303,
+  "generico_sem_ancora": 5,
+  "sem_contexto_com_tema": 16,
+  "possivel": 14,
   "oficial_sem_tema": 2,
-  "excluir": 63,
+  "excluir": 57,
   "exterior_sem_ancora": 4,
-  "generico_sem_ancora": 4,
-  "outro_estado": 18,
+  "outro_estado": 13,
   "veiculo_excluido": 24,
   "veiculo_outra_praca": 4,
-  "sigla_sem_ancora": 3
+  "sigla_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "d7caa5a2d033",
+   "titulo": "Alunos da rede estadual do ES embarcam para intercâmbio",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/espirito-santo/2026/11/rede-estadual-intercambio/",
+   "data": "2026-11-21T14:48:18Z",
+   "coletado_em": "2026-11-21T15:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "dda90ced5ff0",
+   "titulo": "Detran bloqueia vias da Esplanada neste sábado",
+   "veiculo": "DF Soberano",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTEdNUExOMGhmZ2IyOXY1Z04wMW92aVB2VFc2VF9PU1NaUTg4aE95UHRUeTVocmVKX1BfWHRTS0Y2T1luSFRBN3lxVldkSGFIcWtSTXYyTjhWdW9wWjFVenAtLVJpRVpIY01wd1V6RXR6YnlPejNLZUUxdW9pUDdZVmRhZHdmVUpfWTQ1dFQ3SF8zUXg2M1pEVlZSSXdIQUM2ei1lWV9XRm9hc192Qmc5OGp5VQ?oc=5",
+   "data": "2026-11-21T14:36:00Z",
+   "coletado_em": "2026-11-21T15:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "7613d9683542",
+   "titulo": "Homem é espancado com enxadadas e pauladas por dívida com tráfico em Viana",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/policia/homem-e-espancado-com-enxadadas-e-pauladas-por-divida-com-trafico-em-viana-1126",
+   "data": "2026-11-21T14:30:17Z",
+   "coletado_em": "2026-11-21T15:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "bbb8f6199af4",
+   "titulo": "Ele de novo: o imposto sobre grandes fortunas vem para ficar?",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/dinheiro/leonardo-pastore/ele-de-novo-o-imposto-sobre-grandes-fortunas-vem-para-ficar-1126",
+   "data": "2026-11-21T14:23:49Z",
+   "coletado_em": "2026-11-21T15:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "ff0c8b800d43",
    "titulo": "Reforma tributária exige notas fiscais de locação, voos e imóveis em 2027",
@@ -306,6 +358,30 @@
    "temas": [
     "financas"
    ]
+  },
+  {
+   "id": "11b943f67034",
+   "titulo": "Alerta para desmonte na Secult",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE03QXZqSnNFaFdheThWek1HUWEweWxpeWh0aWNyeVJsTnhremk5N3dyNjhHR21hOWVrUkdNUFFyaUM1T0FUek9Mb2NEM3lrRnRaZzJGMXJHVTdCWVdWV1QxTXZBcVE3dTNScktiLU5jZmZWSlh1UDFBTHdaUQ?oc=5",
+   "data": "2026-11-21T12:29:16Z",
+   "coletado_em": "2026-11-21T15:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "2aa45d408e82",
+   "titulo": "Intercâmbio internacional reúne 500 estudantes da rede estadual em nova edição do programa",
+   "veiculo": "Montanhas Capixabas",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQa2E5dnZYV3VGQmRGeWkwTG1CNTV0MlRUVTRucVRXdjRGeGhPeklaWVl0eVdmMVRWWTFuS0VJNy14dUVtc0dsbTZ4bkZYQzNNc1pxRHhkOUNhWHZIX21jTzlmbkJMZkhmVHBrczkwLWZvVGJfa2cweUVIa29CUEVaN2xvYnplTmhJZjA3dlJZbnhvdVhNbVc4cy1EcV90Y2ZpejFrSGRnRmtMWkdja2Vnb2NUank0cXRDQzlWMk5ub3RjWjdkU0ZHTg?oc=5",
+   "data": "2026-11-21T12:06:14Z",
+   "coletado_em": "2026-11-21T15:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "cb8df0f6e26d",
