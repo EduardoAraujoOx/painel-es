@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-21",
- "gerado_em": "2026-11-21T12:17:14Z",
+ "gerado_em": "2026-11-21T13:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,22 +18,22 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 9,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 44,
-   "aceitos": 15,
-   "possiveis": 8
+   "lidos": 27,
+   "aceitos": 13,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -43,15 +43,15 @@
    "ok": true,
    "lidos": 7,
    "aceitos": 5,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 15,
+   "lidos": 13,
    "aceitos": 3,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 18,
+   "lidos": 17,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 1,
+   "lidos": 3,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 61,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -169,9 +169,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 6,
+   "lidos": 3,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -280,19 +280,31 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 313,
+  "sem_contexto": 304,
   "sem_contexto_com_tema": 16,
-  "oficial_sem_tema": 5,
-  "possivel": 17,
-  "excluir": 72,
-  "generico_sem_ancora": 5,
+  "possivel": 16,
+  "oficial_sem_tema": 3,
+  "excluir": 69,
   "exterior_sem_ancora": 3,
-  "outro_estado": 18,
-  "veiculo_excluido": 25,
+  "generico_sem_ancora": 4,
+  "outro_estado": 22,
+  "veiculo_excluido": 45,
   "veiculo_outra_praca": 4,
   "sigla_sem_ancora": 3
  },
  "itens": [
+  {
+   "id": "cb8df0f6e26d",
+   "titulo": "Eleições 2026: Apuração Estadual em tempo real - Espírito Santo - 2º turno",
+   "veiculo": "VEJA",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQWlRBNXZyOXIzamNmYWg2cXBWS0FUbUtYV1ZvMW9FSm1DcjZqUzVTenNONHRtZG8zUWtWTnVWTExTcUMtd29ySmU1RGVKR1FzNWVnV0VlelQ3RWE3VnBMaUtRQkl4TS0zUk1PYlYya2RfODVRWEVGTURJUUVZc1h5ZFNVcmo?oc=5",
+   "data": "2026-11-21T10:52:30Z",
+   "coletado_em": "2026-11-21T13:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "ea6ec174e5d5",
    "titulo": "Leilões de imóveis no ES crescem com dívidas em atraso",
