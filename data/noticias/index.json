@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-21",
- "gerado_em": "2026-11-21T09:17:15Z",
+ "gerado_em": "2026-11-21T11:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,17 +17,17 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 11,
-   "aceitos": 3,
+   "lidos": 10,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 27,
-   "aceitos": 14,
-   "possiveis": 6
+   "lidos": 26,
+   "aceitos": 12,
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 14,
+   "lidos": 15,
    "aceitos": 3,
    "possiveis": 3
   },
@@ -66,7 +66,7 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 8,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 18,
+   "lidos": 17,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -98,8 +98,8 @@
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
-   "possiveis": 6
+   "aceitos": 3,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -139,13 +139,13 @@
    "ok": true,
    "lidos": 32,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 17,
+   "lidos": 14,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -155,7 +155,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 0,
-   "possiveis": 5
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -169,8 +169,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 1,
+   "lidos": 6,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -278,21 +278,35 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
   "sem_contexto": 297,
-  "sem_contexto_com_tema": 15,
-  "generico_sem_ancora": 7,
-  "possivel": 19,
-  "oficial_sem_tema": 3,
-  "excluir": 75,
-  "outro_estado": 19,
+  "sem_contexto_com_tema": 14,
+  "oficial_sem_tema": 4,
+  "generico_sem_ancora": 6,
+  "possivel": 18,
+  "excluir": 73,
+  "exterior_sem_ancora": 3,
+  "outro_estado": 20,
   "veiculo_excluido": 24,
-  "sigla_sem_ancora": 4,
-  "veiculo_outra_praca": 3,
-  "exterior_sem_ancora": 2
+  "veiculo_outra_praca": 4,
+  "sigla_sem_ancora": 3
  },
  "itens": [
+  {
+   "id": "ea6ec174e5d5",
+   "titulo": "Leilões de imóveis no ES crescem com dívidas em atraso",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0tQ1dLQWh0LXBkMGd1emtyb25HVjZQckF2OWlFYmRCRnprMEtHdFg5RTNkNWdKNjZ5SXRXMjFhcjN5UkpMcEhvSnBtRXQ2cjBuVkZkUXdrLTFDR1VNanp6V0xJbS1yUmp2Ym5yLXh3?oc=5",
+   "data": "2026-11-21T10:35:42Z",
+   "coletado_em": "2026-11-21T11:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "e6cfdf58c8cd",
    "titulo": "O Detran do Pará. A Pelc Serviços de Informática. O Consórcio Link Seguro. O Contrato de R$ 214 Milhões. Os R$ 8,9 Milhões Mensais",

@@ -1,6 +1,6 @@
 {
- "gerado_em": "2026-11-20T21:18:14Z",
- "ref": "2026-11-20",
+ "gerado_em": "2026-11-21T11:17:44Z",
+ "ref": "2026-11-21",
  "desde": "2026-10-04",
  "estados": [
   {
@@ -22,7 +22,7 @@
    "nome": "Amazonas",
    "eleito": "Omar Aziz",
    "partido": "PSD",
-   "total": 167
+   "total": 170
   },
   {
    "uf": "MA",
@@ -36,7 +36,7 @@
    "nome": "Minas Gerais",
    "eleito": "Cleitinho Azevedo",
    "partido": "Republicanos",
-   "total": 279
+   "total": 285
   },
   {
    "uf": "PA",
@@ -50,28 +50,28 @@
    "nome": "Paraná",
    "eleito": "Sergio Moro",
    "partido": "PL",
-   "total": 209
+   "total": 213
   },
   {
    "uf": "RJ",
    "nome": "Rio de Janeiro",
    "eleito": "Douglas Ruas",
    "partido": "PL",
-   "total": 209
+   "total": 210
   },
   {
    "uf": "RN",
    "nome": "Rio Grande do Norte",
    "eleito": "Cadu Xavier",
    "partido": "PT",
-   "total": 123
+   "total": 124
   },
   {
    "uf": "RS",
    "nome": "Rio Grande do Sul",
    "eleito": "Luciano Zucco",
    "partido": "PL",
-   "total": 270
+   "total": 277
   },
   {
    "uf": "RO",
@@ -85,7 +85,7 @@
    "nome": "Roraima",
    "eleito": "Arthur Henrique",
    "partido": "PL",
-   "total": 29
+   "total": 30
   },
   {
    "uf": "TO",
@@ -106,11 +106,119 @@
   "fndr": "FNDR e reforma tributária"
  },
  "contagem": {
-  "total": 1802,
-  "medidas": 562,
-  "equipe": 1240
+  "total": 1824,
+  "medidas": 573,
+  "equipe": 1251
  },
  "itens": [
+  {
+   "id": "5703fe66c34b",
+   "titulo": "\"Estado está quebrado\", diz Omar Aziz ao apontar dívida de R$ 242 milhões na saúde do AM",
+   "veiculo": "Amazonas1",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBBaTNfdEVXbHZiaGpxRjZTaFV2cmhhd3BnWVByclVWcEZEOVNfX2tJY2wyX3ZlR2t4a2hqenkxMTZqRzZrS1BpUkpGSUVpZ3Jndm9PMTZfWGhGTlBaQ2pMVmhGNDFIei1VSU50VXE0TmxoZVJuZ0gyZQ?oc=5",
+   "data": "2026-11-21T10:00:00Z",
+   "coletado_em": "2026-11-21T11:17:44Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "7505bfaebce0",
+   "titulo": "Nomes cotados para secretariado de Omar Aziz movimentam bastidores no Amazonas",
+   "veiculo": "Amazonas1",
+   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9ocGF5T0kySU4yTTVhX2xSNTR2SDktNnlVMG92cUxBNGphWUd3SjRxUGFGSXRMMXVOWlZsUkZGUTR4S2kzQUU0Q3pJMjAzUzhpNzhZR0pvLVd6TmhZWXVjamlPc1ZiZjFRaUU2S1VIRlBBZw?oc=5",
+   "data": "2026-11-21T09:00:00Z",
+   "coletado_em": "2026-11-21T11:17:44Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "d75b31d71026",
+   "titulo": "Governo Zucco: fim de secretaria dedicada ao esporte gera críticas e preocupações no setor",
+   "veiculo": "GZH",
+   "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOd21jT0VlU3lua0RDLXpmbFhKaUUxaE9qdjM4RDBPbjd4bXBGVDhueEVyTWJTcktyTXh5SmYtdV9mTHpVS0tscHlTbWhaQjZETDVjNkNEaWQ3NHVmMUFqaXFaYWpQMkhrdndqX1A1NmF0WmR4enZzWWxtaHJLb2dhbGh5bVdoU0d5TC10X19ZdmN4Ul9NdElkZE9ELVpPNHFuWXowczMyY21VdkFZRS11NmxRX3E4aGhaU09TU2NXY0ZxMUZsZ0QtbGhFWURQNmpHNHZ2OF9TVjF1SUFtb3hMSG5FaDFRcHoxM0Z4YmNkaUJkQlA0SVVyY0lZNThEQzI3LXgzVDR2cy0?oc=5",
+   "data": "2026-11-21T06:59:44Z",
+   "coletado_em": "2026-11-21T11:17:44Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "274f54c78d4e",
+   "titulo": "Governo do RN apresenta plano à Justiça para reduzir déficit da Previdência sem aumentar contribuição dos servidores",
+   "veiculo": "O Potiguar",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQUk5OZWpTZktvbzdvRjZ1Z0diSzU0OTZUQU1jZ3JwUWdMeVRoZUR4cUQ5SUNEWVJTbk14UHM2NnFVdnRuYl9DU0R5c1lwSzhZd1dpbGNWUlpfcVluelRRaUlqSk5EenBQbXhqUUtSNmZoSlZkUnBFTUdsMTRyVHVPbUM2ZkRhTllGMUZVYlFDaEN4VDBRazg0bEdDSHc4aEdKV0dRVi1rdzFFSlctOWh3MGZtR3ZobU1ybVhvQ1pvcVVQRjY0NkVnNThYTkVlOTF2NTktU25VcGkxcHhVclE?oc=5",
+   "data": "2026-11-21T04:43:17Z",
+   "coletado_em": "2026-11-21T11:17:44Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [
+    "diagnostico",
+    "pessoal",
+    "previdencia"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "558761437c48",
+   "titulo": "Cleitinho diz que vai buscar Lula para renegociar dívida de Minas",
+   "veiculo": "Terra Brasil Notícias",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOS0o4cV9YdGJpd1JTbGtqRUFFbjEyNUdtVTJadWV2ZDdrRjlCV2M3V2N3X1VaeUpDNEc1bmdqcno2Q2VJTmZ1NFhucjNNYndHU0Q1RWQ1NGt2c1VxMlRwUHdzc3RpUjVHYndxZ0lPS2R4X3pXYWVaMWJmMHJqWS1MdGNCRWFmUUZSdlNib2N5YmNGbHNYdmd6RWN0b0gxQzZwVmRvX3hFVzZYdw?oc=5",
+   "data": "2026-11-21T02:20:53Z",
+   "coletado_em": "2026-11-21T11:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "cfceac035317",
+   "titulo": "Cleitinho promete negociar dívida de Minas com Lula quantas vezes precisar",
+   "veiculo": "Gazeta do Paraná",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZjJuaGhHNFFQb21GRFJJdUFQVW9lNnpRQXJvRnpFNmswSVlUUjJOTHFmLTNjUDNZalN4S0tYZVNWVWc5TEplbllnTkV1NVlaREJOQlZYdEkwaVZoWkNDOE93dm1SMWxETFNhVGYyRzN3Y0N1ZXA2Yi1FUndQSG1qMHNHX3U4ZU83Z3BHWk8tM3piWUdxZ01rcllFZXlDN3BpaExxY010bHFzemtNSTlBeFFB?oc=5",
+   "data": "2026-11-20T21:30:00Z",
+   "coletado_em": "2026-11-21T11:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "32ae4a465985",
+   "titulo": "Governo Cleitinho: veja nomes confirmados e as apostas para o secretariado",
+   "veiculo": "Estado de Minas",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQOXhJYm1FNC1wN2pROXEzSlh4YzUtTmxsSnhoeGFOdlZvM3Y4MHcxek1vblMtY1pBM2s4MmZtTVhxcjMyWXBZWHBtX3drcXp2V0RkWklraHBqMVFhOHMwQjczWVRKZ1VRUlg1YkszalYyemxJMWdUR3NKY1BHd1A4UmZ6ZkVaOXlabzlBbGV1d1lqUTFYOHFtbkxFZnZOTzFHZzdXZUJyMzFRcmNibmFVUlU1U3VPOFFJRFJIMnZqQ09kVk3SAcgBQVVfeXFMTnduY1hzbkxOLVVwWFhmelZJM0VVY3lYcTNZanhXTWVReTU0MlNzSl83Wk9ZeUxFc3otMklaSWpXa0hHc0dQM25Iclg0OEEyNndWbjdYVDhWOF9WTERObFlIeWJFb3pPUTlNUXZHRUsybEdwelBCYlpQZU1acml4S2pJaDhJdDVXWmk5TWpaajI2ZkN2TlVHY0NFSk5TNE5hbDYyRTdGRTNSVGFERC1MQS0xQkt5S0pMTjROcmZmRWtZdExudmxYN18?oc=5",
+   "data": "2026-11-20T20:43:00Z",
+   "coletado_em": "2026-11-21T11:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
   {
    "id": "3e3f4595a673",
    "titulo": "Leila Gomes será secretária da Fazenda do Amapá em 2027, anuncia governador eleito Furlan",
@@ -140,6 +248,20 @@
     "diagnostico"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "522b83a9abcd",
+   "titulo": "Maria do Carmo e quatro integrantes de campanha são indiciados por vídeo envolvendo filha de Omar Aziz",
+   "veiculo": "Portal Tucumã",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPOW9WSno5cVNvZkFUSk9QWXJ5azlyS3RsZ3RBeGcxZWZ5RXpHWmNsRGViTGhmbjNSRW04SEtESGhvMkN5VEVWenZYcHFXWDY2R2t1emczdkR0U19mUjdSOGhlSTdFb3A5NUlpc2hpRmU4ZzNKNUxicGx6WHY5cmR3enBuU1RnZk9XSkg3U3JsVUhNU3B2UW5feFVvdi1wQjhHdFhGZmR4QjUtdmZ3ODd1OFpQRnQ5a3R3ekZabWtvb2Y0dzUzVzBuLURoOA?oc=5",
+   "data": "2026-11-20T17:18:22Z",
+   "coletado_em": "2026-11-21T11:17:44Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "613b2539ff69",
@@ -199,6 +321,38 @@
    "outras": [],
    "ufs": [
     "AM"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "0cddc48449bd",
+   "titulo": "Cleitinho quer dialogar com Lula sobre dívida de Minas",
+   "veiculo": "Correio do Povo Penedo",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNd0Y3TTJEWkJxcVJacUNzZ3RhSFN5SjBmUU1UbWxteUZodGlUVkVidGEzWTlfOHZNaENjaFNXeEIyOWpNU0tBdmZ0QUFmcDNRY3QwVTc1ZlpjYmFsb2wwY0FKZUE0V1dIa05CNmZ0cjI5MGY0LVE3RTRDd2NJN2w3NjVGaFBOLXBOYlhKQVRPTTItOWRLSE00ajZrNUl2bG1IZHp6d01RSlJDX2ZT?oc=5",
+   "data": "2026-11-20T16:11:03Z",
+   "coletado_em": "2026-11-21T11:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "5e592d774b6d",
+   "titulo": "Após apoiar Flávio Bolsonaro, Cleitinho busca diálogo com Lula para negociar dívida de R$ 200 bilhões de Minas e se aproxima do PT",
+   "veiculo": "Agenda do Poder",
+   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOUzZ5bVAwZWFaTVdaUmJucGV3M2lSajVJX3dRalN5QVNDUXRvN2lFSDNMZEdhQXJOSFYzeEZ1RjY3c0FSbmFtZWx2UVE1QUN1NnQ4bnJwUkJiR3dFZTB4c0NSSHlRdVlFZnpSYTdEMEpkVHVEVXFneWtrTjBLb1pOTlMxdjRMRV9DeERGbTJ3VjZyV2w2TU9WOFcwd3NWUWhObHVqN0RrakJ5VUdwTGM3d3FlOTR5OXRDZWhZekxPLVRwSzBScV9TcW9tYzNYb3Y4SUx2TXdVOXpLc1M2WExZakdmSUJZd0JPN1JjN3RWaw?oc=5",
+   "data": "2026-11-20T16:05:00Z",
+   "coletado_em": "2026-11-21T11:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
    ],
    "temas": [
     "diagnostico"
@@ -410,6 +564,20 @@
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdk9fa3o2TGl5OWFCNi1OSFJiN0JNSUtYUHcyY2lYMG5PaHlhVVA3RTRKYXFJeHhLYXJsZjZDMmJNcW9naXFxdUVDV0NJY1RMclhVYzZXQW5KamdZSlVXR1ozaUtULVhzYzF3YXUzVFRFWE00YWNKOUoyN0JoMmFMMFhnTFVCSE1rQUQ3eTJMUkdDX21McDM0dlNIbmVEdnhlTFQ2TEhDTGZ6SkNUdUQ5dNIBtgFBVV95cUxNakROc0FKenVTZWtwWC1xQlpST2dLUjM3X3YyT2RkMmJLeDJyREhCR1lzaHRQdWFONWpXbDlHdzF5TU5fY2tfcVRaTjlOcVhFbE9HRkpyMTcyU3MwSUlleGdNcy1WbnpWbVkyRk9pQTZMMGhLNC1mSUtTTXRzVG5SN2t5ZEN3ZDBhSnN4a05lcVNIeDI2ZlBGZDNQQUotTGVJcElTYmF3dE83SUpPX2tXdXFyYm8tQQ?oc=5",
    "data": "2026-11-20T00:07:22Z",
    "coletado_em": "2026-11-20T15:18:04Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "341e3e1d2bf9",
+   "titulo": "Zucco anuncia nove nomes para o governo do RS em 2027",
+   "veiculo": "Sistema Província de Comunicação",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNE54aWdMSUwtZmJxTWRzRzBKZUxySDcyWElsSXNKbzNoTnRONkw5OTNNX3MtYjZHREJ1VXRxNXIzd1o1LXNGblNhdENNR0lPa3BkZ0c4TFQyMlNiZFFZLVFiVWJtLXJWTkFFamMtOEFQQjh3eVJrWjlrWjljNUd6UktvLWp0bVBpNmRhTnM3VkdXRlRpS3M3a3Jsa3ZIcDRwenp5Wlhn?oc=5",
+   "data": "2026-11-19T23:49:00Z",
+   "coletado_em": "2026-11-21T11:17:44Z",
    "outras": [],
    "ufs": [
     "RS"
@@ -4435,6 +4603,21 @@
    "categoria": "equipe"
   },
   {
+   "id": "810e1d9011e3",
+   "titulo": "Douglas Ruas anuncia secretário de Educação ligado à ataques contra Educação Pública e à autonomia sindical no Paraná",
+   "veiculo": "Sepe-RJ",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQREhfVTkwalR3akxROTBVWVBkRExuV0RFOU1Mdzd5Y2QwWkpoVndyNU1DZkNLRC1JQ3YwNGZqTk1LeHU1dldiY1dGWkdHdTQxZ3VNTjF3SmRYbi12SWZOUnkxN0p5RVNXNTM0RG5lb0xiSVJiSEZHaGROVl9PS2NUckpId08tRjh1bl9lVHRyVFdZcnphNU84OVhhVVc1UzUtd0IxTGszOFY2NmVMVXpiTmNPSk56MjRMLTdvUnVzQ091MkJHSlp0RWdNMEJLV3llbE9nNEdxOA?oc=5",
+   "data": "2026-11-16T19:37:05Z",
+   "coletado_em": "2026-11-21T11:17:44Z",
+   "outras": [],
+   "ufs": [
+    "PR",
+    "RJ"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "0d67f54e2287",
    "titulo": "Quase 40% menos secretarias: O que Zucco planeja para o governo do RS em 2027 e quais secretarias serão mantidas",
    "veiculo": "abc+",
@@ -4770,6 +4953,10 @@
     {
      "veiculo": "Paulo Marques Notícias",
      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPNGpZWE10WkpXYXJlVDMweTJWWGhiZXJBQmpSemRobXlIYVViY0N0azZDcjUxVXJYc3ZtUU4waldUWTcxc183UlozZkt6aW1va2daa25sTDNYdV9JQnNzSUtCWS1FcHBNSHdYOWc2STlQTk16TzJFQmVMWU9DNWFzZjU1ZnE1bGl2azJJRDFZWGs4WW5rSG4zdUlnX21fMmhqV29uTXRYa1hxNFAxWHRyQk82aV92ZTNlUzc3bm9YSVF0TEZ5dTRsWUpEMTJ1S1RNelN4eGg2b0JBRnM?oc=5"
+    },
+    {
+     "veiculo": "Radio Cidade SA",
+     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBDRVBNUkVxWHl1MHc2cXhiUldzTms5Q3Ywak5pWWR0WGVRTS1SVDFwNmlHTkdzX2ZuZHlnYnpQQzJDZ1VoUk1wa21GazZUcTJTVURZS0hfS3NtenBWMWUtVE1rMTNVRnhkcHl4MmdzdE83Y2VNck9oMjg0SQ?oc=5"
     }
    ],
    "ufs": [
@@ -5681,7 +5868,12 @@
    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNNnBpUnFLdEZXQTZXcEEyTmgxdk55RGxfNjlKTzB3N1JJSE1oQmZSVDdIVHNXZ3ZqTG9VMGxWdGJtODhqM2E0VmpfY3FTeEwtOGQzV2ljXzIzQTVzbXRPbjFTYzdOZ2hNOWhJdV9RR3poRTB6Qk9SSUZ4ZjlkU1VjcF9LdXF0QUdWVVU1azJDWEN1YTB6R1FlTjZTdEtCUkJXZkotUGJfd0pjNHlIa3BtcG96OFJ6RVU?oc=5",
    "data": "2026-11-14T00:08:30Z",
    "coletado_em": "2026-11-14T11:18:04Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Blog Kleverson Levy",
+     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQQk4zMU9pVTFoNzRFWm40eGFzTlgxQkF6TjFidW9ZWTFPbHMzMDEydXhUVnRwM2JBSGdEZVZ1bWFWODRXV1RNX0RfQWQwYng4NmoyZnM3T0NyOGxDTktnME1aRHhIVnZaSUl5SUR1SE0yRVRWby1zQWI0VkNhelhEd0RDN0FQbzU4VW9WR1RXcUZ3VFF3cUNRNld4V0pVbHBQWkRQSld0V3dnakktV19sOXE1aXZETEhEOHNHSjZhemlXUTlEdmpORllQck5yR2IyR05pUWo3dGhHWklybThr?oc=5"
+    }
+   ],
    "ufs": [
     "AL"
    ],
@@ -5704,6 +5896,20 @@
     "diagnostico"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "20e0ea19aca4",
+   "titulo": "Arthur Henrique anuncia José Diego da Silva para comandar a Casa Civil de Roraima a partir de janeiro",
+   "veiculo": "portalofato.com.br",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOQ09qVnZvQ0ZqaGhOdWxQWUpONjBMOGg0ejNhdGVLdXB5b0pncEkyUmJjanFHenVuTm0yOU95UEpXNGdBc01wbHd1LUtIQ0lrNUdKRFJEX2JyV0RIZTYweUtLLUxQWE5BdkRUR0ZBbFI2NUJCeHdpaG9LZDM3T0t4Q2hkcVIwRkNyS1duSnRKX01rTmsySTBsU2cxRk9oNXJ6dmF5V1h2NTFqX3NRR1MwNVBUS3hUV1ZRV0pCQjM5aWoxbWtiUFBabVBEajFWRlBMdENHRndGTQ?oc=5",
+   "data": "2026-11-13T23:00:22Z",
+   "coletado_em": "2026-11-21T11:17:44Z",
+   "outras": [],
+   "ufs": [
+    "RR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "fbeac690969e",
@@ -11683,6 +11889,10 @@
     {
      "veiculo": "Correio Brigadiano",
      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNQmNRaXVhOV8wa1NsNEEzS3JSRVVFQ0FtVGVEbHZaTms1dG9XQktydVExVDYxVUhZc3VZRXZXR0t5WG9JU0szTHJFZ0k1Nm5IcmNfVWJiN0gwQVlUcVZlWnlYY1hsZnM0cTlqRGp0UFRYOFdOdG5oVWQySFJkbjhWQ2drX3hJSmN6WGh2bmgwSlA0Rm1VRWhhNUJNVW5JeUEwWTRIMVRVRlFMX1gzRUhjSFVRWlFyNWRwWmh2VzhQTTZZbjlFY0Q1S2d5d3JrSDFXczlCaVFCdDV6ajNY?oc=5"
+    },
+    {
+     "veiculo": "SB News",
+     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNb1lHZ2VLQUR6VDctNjllMGRZVWhWUHFkZVU5cHBELVdmaGtBUmRUYnZYclgxNWxoMDk5R0RpVDhiY1NMMkFzRjl5Mml0LWlvYXp3X0dRX0tHN3R2WEIxNXdxUmlVSTJJZ0toUHZKN1BGZ1JneE8wUWMtOFJJOGtjRmQ4Y1ZJeXNFMUNvQjlFeEhkaS0wS2NFUHJVYnczTGZsSlNFcUhzSUhvVTBRb0JMWGJEYlJCSHpUOGxEWHllZjVMdE5raUlqYjFOeTRJTjZG?oc=5"
     }
    ],
    "ufs": [
@@ -13496,6 +13706,22 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "d79b5b79d27c",
+   "titulo": "Zucco descarta modelo atual de pedágios dos blocos 1 e 2 e avalia alternativas para concessões",
+   "veiculo": "Vang FM",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE45dlo3RlZId1hHUjBQZ0ltajhwUm5Xa0ZTMTJPYWdNUEtFTXRyUnUxcHd6Qm5oeGktLXdIX2o2bkM5VEhxZDlsY0F0aWtNdkhnTGdkd3R6eDdmZw?oc=5",
+   "data": "2026-11-04T08:00:00Z",
+   "coletado_em": "2026-11-21T11:17:44Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "c8e76f81e349",
@@ -15657,7 +15883,12 @@
    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMHdZWXdzR1hJQ3Nvek5zWHgxbUhtU2E0dU1Cc2duQ0VfYk9HUm5VT3V6dGhnUDdDLXJxRHBpMVNRZEdyMnRjdi1oN0Y4alZCdmg1OGpiS2R4bWRwcXZKUGsyZWduTXM5Z3ExUzA3Sk11Yk45NHRFN2RpaC1tb2w2Rlp4R0JPZGM1X3ZLVk1IMDdlSlRyUjVUNHR0TDduVG0xMWJud2hEQ2c2MUctN00wU1NRa9IBuAFBVV95cUxQcERkR3RyQXlicEt6ZmtDcW1Fc2FxV3FtX29VcUlfSzFxalRaMXBGOE5pRE4zVHIxUjU1ZHhZaFpONC1wb0gxeXhOOFBoV3FIanpWdUtwRUg5c0xqalBZRG9QZHNnTnBYdmp4LVdSenlKcTVxb0FvYW5ENUxGN0Y0WDVyb3otRkV1VzBNZzJMSTBqT0xhdVVPanZOdzh0X0tsVXdOaXBYSXY3VmwzeTY1WFNULTAzRmp0?oc=5",
    "data": "2026-11-01T07:00:00Z",
    "coletado_em": "2026-11-12T11:17:53Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Rádio Pampa",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPcVRTcEV2MDBza19BYkQzTk9keGswUHo5LU5RRklrMG1VMm1LLTc1aUV3NnVDQ2JldkRBZk1hYnJQTHZKcnZnUU1JM3V1R3c1eW9Ud1BMMmdCYnU0SG9UQmdoVUNTb3dCMElJb21mcE9nWVc5YkdKZzZqUVEyZGxEdGN1Ukx0NmV6QVEwVUctNk0wTHpmUEpYcnE5NUJ1NExhemY4bjA1dmJZWTYxQV95OHEzNVNDZlRBbW9j?oc=5"
+    }
+   ],
    "ufs": [
     "RS"
    ],
@@ -15881,6 +16112,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "2e85ab8d10a4",
+   "titulo": "Zucco anuncia secretariado para 2027 e confirma Pasin como líder do governo",
+   "veiculo": "Jornal SERRANOSSA",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE12Zjl6RGh1M0o2Zjl4Z041ek0yQ0w0cFpZWjVzRl83c0xqaC1KdE5kZWRVUHFBV25acVdKUEZhYlNJUzE3MVhEVC1pU2VjTXRxd1l5WWVGaUpyOGN5Z1ZXMldZeFVPVnc?oc=5",
+   "data": "2026-10-31T07:00:00Z",
+   "coletado_em": "2026-11-21T11:17:44Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "2d2db26f31f3",
    "titulo": "TJ de Alagoas determina que governo libere acesso de equipe de transição de JHC a sistemas estaduais",
    "veiculo": "O GLOBO",
@@ -15987,6 +16232,22 @@
    "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxQXzZHRzVyUDZpYmFmNFhvX3Y4dDhfT19TTWM2SmNPODFYcnNwaDV0WWFTM1BVTXlXM0JDUW5LR2pRaWtUd2x5UENpZE9wdEN0ZHp5cXVadGdqRW16NTFQcGlrTHczdkcwRjlWVjd1Vi0wa0l0WlNIVzZwalpHamxXbkxzdHlMUzVxb05rRkpoSmptNzFabk1yZzBUVkFlRndOaXVoNllUck5NdDZZNU9CS2I5OXJYSFBLTnB6cDVwQW1YM3FKNzF0b0pzT0tlaVVOeTA1cWlPWDVUS3pOQzJ0X0x6ck0xcm9zSHQ4UHplUjVIRkVUV1BncFhiaER6MHRGcVc0T3Q2eFFQejZON0JIVmswUFlTRUVFUzBESFZweTlhc3FOeVNNVWlTbVJhbWxUNHc4ZE1R?oc=5",
    "data": "2026-10-30T19:46:25Z",
    "coletado_em": "2026-10-30T19:46:25Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "1c5bbca42e76",
+   "titulo": "Após críticas, governo Zucco afirma que \"fusão\" de secretarias da agricultura e desenvolvimento rural não reduzirá apoio à agricultura familiar no RS",
+   "veiculo": "DuduNews",
+   "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPMlhGWXVGR3JlNXhycjNKYVZTNnpKX3dURDVOSlFocmNVUUlfZTNEQm5Gb09vRmNnWmp0QWowUFBlWEpTdEVuaUZmd3NodXZvM3VUT2NudUtoeVZPcWFtZDA4SE5jZmt5M3IybjZEOTFTOUIxX0tGRUYzR3RWamplRmZ4MFhZSjFRZV9XYjdJYU5vV1lnYnEzSlhyVWY2RjFPZzFXQ0RrQkdsQ2pFYTh6M19McjE1NmsweGhCREhkbjB3NUVuQ2dVRkVNMmtXTldQMHJwNlZhRFVCYWRGVUVVMkxYTk5QemVKbUhCdzAyc0V4eGVESFU2YU9zZWNsenha?oc=5",
+   "data": "2026-10-30T18:51:28Z",
+   "coletado_em": "2026-11-21T11:17:44Z",
    "outras": [],
    "ufs": [
     "RS"
@@ -17159,6 +17420,22 @@
    "categoria": "medida"
   },
   {
+   "id": "3f2a8a3c78b4",
+   "titulo": "POLÍTICA. Sintergs propõe diálogo com Luciano Zucco para discutir valorização dos servidores estaduais",
+   "veiculo": "Claudemir Pereira",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxObkRIWUVqeFJDMUYxUDhFaDNfVjd4OTQtXzlDV1dPWkJRd2JfWTV5d2hRMDQ4aWRKT0k4WVVUMDZtOVJPWFh3a2VyRXUxZ3JjTVJ6QWxvVm1GMG5mU3RkLTdzem1oa2EzRjlkeTdVQzEyX18tdVVZcS1KamE0VzEzd1l4LWVxWDZBYmlIUjkzVTNFYVFfZ1d3UEdnM1FkWGZIVGFSRF9POS1TY204MkJNSVU3a2gwOVJVSDduSUdPOEV6MVF4N25NaGFFUHNZNk1GUTBmSGx1NUJUMUhDQWc?oc=5",
+   "data": "2026-10-29T07:00:00Z",
+   "coletado_em": "2026-11-21T11:17:44Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "pessoal"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "3a7438b1f6e7",
    "titulo": "Zucco anuncia novos nomes para o secretariado do RS em 2027",
    "veiculo": "Rádio Solaris",
@@ -17203,6 +17480,20 @@
    "outras": [],
    "ufs": [
     "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "2c852a8232e9",
+   "titulo": "LUCIANO ZUCCO anuncia mais quatro secretários para o governo de 2027 | Gaúcha+",
+   "veiculo": "GZH",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOUU5zME9aNlNFaURDRjRvWkZGTWdkZ0Q4Uy0weUJ1Y25zTXlSb01seFdhTzBrQWMza18zRWx5NmRDdWx5V2d6WVdOWHJpYWU2ZnhWQVlUeDhLSVRrR2Nia0RkbERfSHVPWld0cDZuaHU1Q1pkR1Q4Nmd1dzRmMGVyQTc4VFlKN2hoR29td2VFalNqMThMRFJqSTA2dDFfbUw3ZXJtS3NlTnVIb05JbkNDNWRJa0FnLVR3TVZRSVMxczJiMmNXbFJwY3k5azVYaUdpbmVnVWdEaTczbGFB?oc=5",
+   "data": "2026-10-29T07:00:00Z",
+   "coletado_em": "2026-11-21T11:17:44Z",
+   "outras": [],
+   "ufs": [
+    "RS"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -21435,6 +21726,22 @@
    "categoria": "medida"
   },
   {
+   "id": "6e880e03475e",
+   "titulo": "Cleitinho reage a projeto de Mateus Simões sobre redução do IPVA em MG",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQc0pFWko3N29TbktpOUpLengwNTlfSGxHNHlvZDZfUUpTTXVubjV5Tks4VGswcWtKdGI5bVNwS2xWd0ZLcVp0SjBDSllNTE5YcF9RN0tKeTdoUHE2QUhsdlNzOGdFQW9VTmFQV1ZBdlNob1VrdjZ1N0dXY3VjTmh1dVNaSHVsNmJtQlJ4bFNRakZHNDJicHNKUms5SGZsTU1OX05NeWJ3?oc=5",
+   "data": "2026-10-17T07:00:00Z",
+   "coletado_em": "2026-11-21T11:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "3bcf9b25e0d8",
    "titulo": "Lúcio Mosquini lidera transição de Marcos Rogério; decreto de Marcos Rocha oficializa equipe com 35 nomes",
    "veiculo": "Rondônia Dinâmica",
@@ -22150,6 +22457,20 @@
    "outras": [],
    "ufs": [
     "RJ"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "e421feafce73",
+   "titulo": "Os primeiros nomes do secretariado de Sergio Moro",
+   "veiculo": "Contraponto",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQVmNwU1lyeGF4eW1zZ1FHSWhiSHNwZTkxbGhCcWRWNXp5TWdnY3hYSmJmLWJHUUVxQVIzZEdPdkl3aUJqdVFPWk9jM0JLMmNxQ3V4RWZQTHVVa2psdHpfM0RLb0E4M1VQb0ZMVHZ4OXFOc2NOdVFrLXBaRkdfbUJnd1BTQQ?oc=5",
+   "data": "2026-10-15T07:00:00Z",
+   "coletado_em": "2026-11-21T11:17:44Z",
+   "outras": [],
+   "ufs": [
+    "PR"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -24292,6 +24613,20 @@
    "categoria": "medida"
   },
   {
+   "id": "b267a8b23a49",
+   "titulo": "Moro anuncia corte de secretarias e coloca saúde e segurança entre prioridades no Paraná",
+   "veiculo": "Portal Notícia da Região",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxONm1BNFk5elNGNEI1LUcwaDY0eWNNaktOVWgtcy1EeTdYZHU2NjFMdUNUa1N2MHdPdjRtem1oenNKVmlYUGtqYUpHUU5mcUJYMk5ueHlYN1I3ZldzQmtqVTZiczE3WFVqa1M1UlZpMUJ0d0NhamtYeU1Ub3dYTmcxdmY4aWpBZDNKVnRXZjIyT0R3a01KV3dueXhPakdRdW53MEdHZ0tscVZwcTNLUnl1ZG5JeVBDNDZEV1BBZm05OElfNzd3UnhLLXFn?oc=5",
+   "data": "2026-10-10T07:00:00Z",
+   "coletado_em": "2026-11-21T11:17:44Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "862fd7f6bc12",
    "titulo": "Governador eleito do RS, Luciano Zucco inicia transição com Eduardo Leite",
    "veiculo": "Diário do Poder",
@@ -25945,6 +26280,22 @@
    "outras": [],
    "ufs": [
     "PA"
+   ],
+   "temas": [
+    "gastos"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "d93d564eee84",
+   "titulo": "Moro promete enxugar governo e reduzir as 24 secretarias do Paraná",
+   "veiculo": "OBemdito",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFB2TVBKcmhNVm0ycUlnejdpM3FibzBsSzNfMDlISVFUVy0zdEtjN1gxYjMtdXZIYXJqVW41R2lCNW81d1FBN29rQXVzazlaMDVqNi1INUprejJKZTdaLWRRX19kN0JFRXU2MVJaclZyVDJ1YjBNVnV6MGV30gF_QVVfeXFMUGh4OXFlSUVDR2otNDlfb1lhT0pTTTRiMVVwMk8zNVhVWUVmY2JBcmplT3k4eVFKdHFBdnFLN1hja0RfTmZaejhHOHlsR1hkSGVNZmhHU0kwMFNQTkZqZk0yWWktdU0zaDNrQWpKVVRGWVZ5TTR2UDVUbXRyOGhPYw?oc=5",
+   "data": "2026-10-06T07:00:00Z",
+   "coletado_em": "2026-11-21T11:17:44Z",
+   "outras": [],
+   "ufs": [
+    "PR"
    ],
    "temas": [
     "gastos"
