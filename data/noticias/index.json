@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-21",
- "gerado_em": "2026-11-21T07:10:06Z",
+ "gerado_em": "2026-11-21T09:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,23 +17,23 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 12,
-   "aceitos": 4,
+   "lidos": 11,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 28,
-   "aceitos": 16,
-   "possiveis": 7
+   "lidos": 27,
+   "aceitos": 14,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 16,
+   "lidos": 14,
    "aceitos": 3,
    "possiveis": 3
   },
@@ -74,7 +74,7 @@
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 21,
+   "lidos": 18,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -99,7 +99,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 1,
-   "possiveis": 7
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -114,7 +114,7 @@
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
    "lidos": 3,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
@@ -155,7 +155,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 0,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -280,20 +280,33 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 301,
-  "sem_contexto_com_tema": 17,
+  "sem_contexto": 297,
+  "sem_contexto_com_tema": 15,
   "generico_sem_ancora": 7,
+  "possivel": 19,
   "oficial_sem_tema": 3,
-  "excluir": 72,
-  "possivel": 21,
+  "excluir": 75,
+  "outro_estado": 19,
   "veiculo_excluido": 24,
-  "outro_estado": 18,
-  "caixa_alta": 1,
-  "sigla_sem_ancora": 3,
+  "sigla_sem_ancora": 4,
   "veiculo_outra_praca": 3,
-  "exterior_sem_ancora": 1
+  "exterior_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "e6cfdf58c8cd",
+   "titulo": "O Detran do Pará. A Pelc Serviços de Informática. O Consórcio Link Seguro. O Contrato de R$ 214 Milhões. Os R$ 8,9 Milhões Mensais",
+   "veiculo": "O Antagônico",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNZjZMek5uU3hCb1JGUG5jY3Jvc3diQjMxSlVGRmRya0tobTJyYTU2WVU0VVFZUHVQcm5jbzNDM0FFUzNEVXE3VWQ5VmNpZkZtVE0xc3hhTDk4bXNhNXVybkQ4UGxvc1hkaGNJRkRyMnlFT0V5MXFSaURHczNxOHhPWkJTSTktTDAzLUVoSmlTalJqRXkxZWFMeVUzNWtCcm9xRE82S09lbF9TR3B4MFdveDhjdmp4YlppNW4zWlBOVFpXaEVwSGpVLVpadmxrVmRPdE5qTlVxcGUxeUhWR1RRcU52a1Y3UQ?oc=5",
+   "data": "2026-11-21T09:05:58Z",
+   "coletado_em": "2026-11-21T09:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "3de919b260af",
    "titulo": "Míssil russo atinge a Polônia e provoca reação do governo; entenda",
