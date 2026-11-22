@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-22",
- "gerado_em": "2026-11-22T13:17:14Z",
+ "gerado_em": "2026-11-22T14:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,16 +17,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 25,
-   "aceitos": 6,
+   "lidos": 23,
+   "aceitos": 4,
    "possiveis": 5
   },
   {
@@ -41,23 +41,23 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 4,
+   "lidos": 5,
+   "aceitos": 3,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 1,
+   "lidos": 5,
+   "aceitos": 0,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 1,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -81,8 +81,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 2,
+   "lidos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 66,
+   "lidos": 64,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -137,8 +137,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 1,
+   "lidos": 23,
+   "aceitos": 0,
    "possiveis": 2
   },
   {
@@ -155,14 +155,14 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 0,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
-   "aceitos": 0,
+   "lidos": 53,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 3,
+   "lidos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -280,16 +280,16 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 267,
-  "possivel": 20,
+  "sem_contexto": 265,
   "generico_sem_ancora": 4,
   "sem_contexto_com_tema": 12,
   "oficial_sem_tema": 2,
-  "excluir": 18,
-  "exterior_sem_ancora": 7,
-  "outro_estado": 11,
-  "veiculo_excluido": 26,
-  "sigla_sem_ancora": 6,
+  "possivel": 18,
+  "excluir": 19,
+  "exterior_sem_ancora": 6,
+  "outro_estado": 8,
+  "veiculo_excluido": 27,
+  "sigla_sem_ancora": 7,
   "veiculo_outra_praca": 1
  },
  "itens": [
@@ -398,6 +398,18 @@
    ]
   },
   {
+   "id": "29012b89de45",
+   "titulo": "Aprovados na prova prática têm CNH bloqueada por exigência do Detran",
+   "veiculo": "A TARDE",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNOGpGbHFiU3d5c1MycGVWejV1b2x2dTNVSWExVFRmRHRrMHFKS0pTa0M1TGxuZnA3b1dUY2d3dG5UaGlOZVhlUnBUSUpEM0h2bS1JSjZzc01XY1N4dktpaHRTbll3U0lFU0ozWEh1Q3ZMemEyTnZQSS14bEczLUptT3F4ZndrcHNHZTZJS0luZmhjODNTeXFjVHlGb0JLeEExY25Fa3ZtQzPSAbABQVVfeXFMUGN5cm1KdWthb3FSRV92SElWcW9Fanp0ZGk1SnVVOWRiTUVxODlzN3U5OWtzeFF5dGNSb3NqS2F5Zlg4UVZ0YUlabXBnQkFtcklQYjlXdTlnRGc1ZHktQkRPN2o3enZOWWZvemtkZWlLUG10bVNDczdMSXlpVUZNRTU5M1pQaENqZG5MdXBOMG9oaGpkbTRWbDJuNGxOUF9nNWNNbEtfN2h2aW9BeEdDekg?oc=5",
+   "data": "2026-11-21T19:29:43Z",
+   "coletado_em": "2026-11-22T14:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
    "id": "34a79ae19743",
    "titulo": "Os cidadãos impedidos pelo governo Ortega de voltar à Nicarágua: 'Sou ilegal no meu próprio país'",
    "veiculo": "A Gazeta",
@@ -430,7 +442,12 @@
    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPR0pMUURTdm9FT09jaVFNUUJqenQtYXo3bHBXaWd6TnhuRl9vT0JOUVctQlVxVWFxTUpBN2g4Mk1nbkVpN0MwV0g0NmlYUWF2YUp1amhfMDFlZExmRUlGbzcwam5FcmExN0c5MmdDSW1lVzlYR2U2S3hrUnpUWlJtUWo2bFFRaE1HbUZDbXQ1eWtQZlRzN3lyLXB4T2NldFAtT0pOWHVLS0ZUVnZhc3NpaW9zWkJDTEZSZmN5VWV2X2dfVXlraUZISlZHZUxQbkpqRjlQclNkYVo4dk5EaFl5Q2V3?oc=5",
    "data": "2026-11-21T15:43:18Z",
    "coletado_em": "2026-11-22T11:17:14Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Galego Notícias",
+     "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQRHh4T0lhcGZNRUtCMjJHR0J1S2FkbWI4TjBpdWt5dGJhRXUtWTA2Y3VoejhiUWZqRGVzTWs2SHJfd1h3UE9MLVVTaVNxQUFsWkRlNERib284QVl5Y1RTSEpvQjUwM2NKSHYwN3FuTU9HRkZ2bE9pQ1F3Sk5PSWFJb0JZOWRSV3hlcExJSnd4OHd6Rl85LVFtejJMVGU4dWNJUmZKbVZmSE1kVXNjczVFanJfTWdqbXhFUjdQc2VNR1lXZjhIRmtmWG9zVnJ3d04wbjZzeHZVZjlrR3FaTHVIcDBQZ1NKd3c?oc=5"
+    }
+   ],
    "possivel": true,
    "triagem": 9,
    "temas": []
