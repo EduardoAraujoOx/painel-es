@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-22",
- "gerado_em": "2026-11-22T15:17:12Z",
+ "gerado_em": "2026-11-22T18:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 23,
+   "lidos": 22,
    "aceitos": 4,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -57,9 +57,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 2,
+   "lidos": 1,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 16,
+   "lidos": 18,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 61,
+   "lidos": 56,
    "aceitos": 2,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 1,
+   "lidos": 2,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -139,7 +139,7 @@
    "ok": true,
    "lidos": 22,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -161,8 +161,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 55,
-   "aceitos": 3,
+   "lidos": 54,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -177,7 +177,7 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -195,7 +195,7 @@
    "ok": true,
    "lidos": 9,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -280,17 +280,16 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 265,
+  "sem_contexto": 267,
   "generico_sem_ancora": 3,
-  "sem_contexto_com_tema": 13,
-  "oficial_sem_tema": 2,
-  "possivel": 19,
-  "excluir": 18,
-  "exterior_sem_ancora": 6,
-  "veiculo_outra_praca": 2,
+  "exterior_sem_ancora": 5,
+  "possivel": 17,
+  "excluir": 16,
+  "veiculo_outra_praca": 5,
   "outro_estado": 8,
-  "veiculo_excluido": 26,
-  "sigla_sem_ancora": 6
+  "veiculo_excluido": 23,
+  "sem_contexto_com_tema": 10,
+  "sigla_sem_ancora": 7
  },
  "itens": [
   {
@@ -2881,9 +2880,14 @@
    "veiculo": "Governo ES",
    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQN09DSEJiNUE4aTlDOG1wQ0h1VnVpRUZKZjMtX1RIbmx3QlYyOUFCLVlqNGtCN3RqdmFGdXh2NVlVaGVUOE45NXFVTlJ0Nm9PeDJDa1l6QWxEa1BsdmtqVmNCcEdWcEpVOWtzVjN4YlQ5RlBOeG5nTUUzU25iUDdnSkxqU0x3Q2g5MlFZR2U3Y2I0NzlBX3JPV0F4Qm5oMkI5SGVZdzB6MFBaSGdRMlVSTU41WUk4MGQxekJOM0tQLWpZQQ?oc=5",
    "data": "2026-11-17T14:32:00Z",
-   "coletado_em": "2026-11-17T15:17:17Z",
-   "outras": [],
-   "possivel": true,
+   "coletado_em": "2026-11-22T18:17:13Z",
+   "outras": [
+    {
+     "veiculo": "SiteBarra",
+     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQYm5aN0I1cWY3NHZDSkJiM0dlMmZRTUsycnNzczJnVTF6MDZiMWFiV0Q2eWJJTHZNZjNPN1JMekZnRk1LcDdOMW9EMTU5SHZiQlFNTWh0X2V0WHlGZjI4Q01IT2NLNlZ6MW1Iam1DYVJIQlNrVDhSMjJWaHZJOUpubmRRVGM4WnItMXk3amtwNkwyT3p5RFZHQ0o5aHVUYS12S0RsYXlzdWtyTXlTQmlfUWh3WEdrRUxCY1NMR0VmelFQZ05PTFp0dFRSSQ?oc=5"
+    }
+   ],
+   "possivel": false,
    "triagem": 9,
    "temas": []
   },
