@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-22",
- "gerado_em": "2026-11-22T21:17:14Z",
+ "gerado_em": "2026-11-22T22:17:19Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 20,
+   "lidos": 22,
    "aceitos": 4,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -73,9 +73,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 20,
+   "lidos": 21,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 52,
+   "lidos": 47,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 20,
+   "lidos": 22,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 5
   },
   {
@@ -278,17 +278,17 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 257,
-  "generico_sem_ancora": 3,
+  "sem_contexto": 253,
+  "generico_sem_ancora": 4,
   "exterior_sem_ancora": 6,
-  "possivel": 16,
-  "excluir": 18,
-  "veiculo_outra_praca": 4,
-  "outro_estado": 8,
+  "possivel": 17,
+  "excluir": 19,
+  "veiculo_outra_praca": 3,
+  "outro_estado": 10,
   "veiculo_excluido": 21,
-  "sem_contexto_com_tema": 8,
+  "sem_contexto_com_tema": 9,
   "sigla_sem_ancora": 6
  },
  "itens": [
@@ -1957,7 +1957,12 @@
    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQZDZXeHAzZnRqckVHMHlDcXpxQm1ocExoaHRya0JSVzlsTGRuRGxtVWNpN3A0ZU9JcHZ6d0laNkRlSnFXQUo3VU9ENjFYYWI2bnB5aFhmUnNJczJVd25jZ29YUm5FZUtpUWY1ZXE0el9Mak5PQXY2bko5NnlIOFBkLUFLMFdVT255Rlp0MVJxb29KcWVIaGZRSXBzZGFuOGZZMXU5bUIyRE5zeDh3M01uYUoxalFoQlJqcGlIa3dNQzlub21nVVRCT2NKWkc?oc=5",
    "data": "2026-11-18T20:43:00Z",
    "coletado_em": "2026-11-18T21:17:18Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "SiteBarra",
+     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNSWZOT2o2Nk4xVFJQT1RubFlseXFza3Rpa0hWSEdnVGp4Z2Ywa0F6YlNDdldHaVNzZXdyb2RqdlJZel9DYm1ZdUpYbVF1N3BJTmFpUTAzZ21VQjl6OURaRUVjUUU5UzMtZEdvZzhEQUIwZXVCaXhDaGo2MElQV2FpbDNhZ3hhZ2ZYZTI5X3A4REF4eEU0aW96d1VEdUlXQ3lXZzVpRkZpZERwc19mUzlJdU5DbWFlRGZiazlUdl80dWgyeHBlTHBoMTJBbXJyNS0xRTRTeXNR?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 9,
    "temas": [
