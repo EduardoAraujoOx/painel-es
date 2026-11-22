@@ -1,6 +1,6 @@
 {
- "ref": "2026-11-21",
- "gerado_em": "2026-11-21T23:17:13Z",
+ "ref": "2026-11-22",
+ "gerado_em": "2026-11-22T00:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,7 +25,7 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 21,
+   "lidos": 22,
    "aceitos": 8,
    "possiveis": 4
   },
@@ -41,7 +41,7 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 6,
    "possiveis": 1
   },
@@ -49,9 +49,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 16,
+   "lidos": 15,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 79,
+   "lidos": 77,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -280,16 +280,15 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 269,
+  "sem_contexto": 273,
   "possivel": 15,
-  "generico_sem_ancora": 3,
+  "generico_sem_ancora": 4,
   "sem_contexto_com_tema": 12,
   "oficial_sem_tema": 2,
-  "excluir": 26,
+  "excluir": 25,
   "exterior_sem_ancora": 9,
   "outro_estado": 13,
-  "veiculo_excluido": 30,
-  "veiculo_outra_praca": 1,
+  "veiculo_excluido": 28,
   "sigla_sem_ancora": 5
  },
  "itens": [
@@ -390,6 +389,20 @@
    "url": "https://www.agazeta.com.br/es/policia/homem-e-espancado-com-enxadadas-e-pauladas-por-divida-com-trafico-em-viana-1126",
    "data": "2026-11-21T14:30:17Z",
    "coletado_em": "2026-11-21T15:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "4a802f321ab7",
+   "titulo": "Lula diz que projeto aprovado no Senado não é 'reforma fiscal', mas ajuste para Orçamento de 2027, e critica Faria Lima",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOSGRGcDFzNmxOWE9HLWRfY0FpVTlQVjdIbDZyak0wUmRTTkNuRFhhQ0t3NFV1RWFSampiaUQ1ZzBTN01VOWczdUIxOGNkVF9XbXh5d29PUkJRZjdHVnhHOVkxTUh2S0lrczU5bW1XUUJ2dGU1Q3g3S25GdEl6N19yUDlEV2Iyc0M2UWF4MHNsOVplNW1fTFk1VDRzNEpfMmpBZF9HWHlUa1JaajNOM2ZIaElBbE5SaG1ZaklfZkpIRjhTbHF0LXNLbXZsWlRkbHFHM0tUTV9lRHJYQ3RUUTYzV1d5UmlZS0ZtMzNIT2xoZ0dsQWJfeFd1dGgtNk11R2vSAY4CQVVfeXFMTTByNXFHM1M5N185OS1XYWFNa2E3Rm14RUVxaG0wcDlTbEFKcjFWakphVWlIY0pZN2dGM0Q5ZkRxTVhPandqT2I4VFg0eU1SLVptSEtKLW1ielpqbmZsNEp4MndpR3dhZmNrc1NYM2ZMN3ZzWTNUZnVoZW1haWo0UHlTX0RzNS00M1YxbkpMbWZCUFkxRHU5LVl2UWI1SFZkbU01MzFmV1V2X0tBenFoUFROUWVySzM2Y0Y2LTk5UTdHcEZYR3VWVXFmZXowU3pCLTFaT012T2pKOXZMczlmcm9lbndNRnAzc0xDWVFNb0RMczBuVkJFUlJkRjdURUU3VThKdjJONDlzbWVWRjF3?oc=5",
+   "data": "2026-11-21T14:27:51Z",
+   "coletado_em": "2026-11-22T00:17:14Z",
    "outras": [],
    "possivel": true,
    "triagem": 9,
