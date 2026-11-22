@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-22",
- "gerado_em": "2026-11-22T19:17:14Z",
+ "gerado_em": "2026-11-22T20:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,15 +17,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 22,
+   "lidos": 21,
    "aceitos": 4,
    "possiveis": 3
   },
@@ -33,7 +33,7 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 57,
+   "lidos": 51,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 53,
+   "lidos": 52,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -280,15 +280,15 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 268,
-  "generico_sem_ancora": 3,
-  "exterior_sem_ancora": 5,
-  "possivel": 16,
+  "sem_contexto": 257,
+  "possivel": 17,
+  "generico_sem_ancora": 4,
+  "exterior_sem_ancora": 6,
   "excluir": 17,
   "veiculo_outra_praca": 3,
-  "outro_estado": 9,
-  "veiculo_excluido": 21,
-  "sem_contexto_com_tema": 9,
+  "outro_estado": 8,
+  "sem_contexto_com_tema": 8,
+  "veiculo_excluido": 23,
   "sigla_sem_ancora": 6
  },
  "itens": [
@@ -2774,7 +2774,12 @@
    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPc19DVnk2Mm1paEVKdmljMTFvVEgwaUdmN3p5M3pXUFpLQVRGWWpyQjh4OFBJejRWN1g1OFRiNjExMGhyUlVldDlOZmtZandnRU1WYVJzajVsOEV0bjdFZTFhUmw5UnNzNTR3UUZpcEM1V3dkTlJSYl9NWE45ZGZHeTNpQ291R3dmUW8tM3RXTmp3RWdPUlZTbW5TQTRTRTlaWXN6MzNMbWI3SnNpLTduN2h2UWlvbFdObS1MQUFEZjNOUmtlaDJQdTV6bjRxOWEwb2htUHVfQQ?oc=5",
    "data": "2026-11-17T19:48:00Z",
    "coletado_em": "2026-11-17T20:17:15Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "SiteBarra",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNbEZlRU1EWGdIUjdVVXRfQ1M2NGFKbnJZVkJITU9FODF5WEJBazJqcUdTVUo3UXBPenBaUjFUbnpfTGFUVWpJMEU3aGl1eGo2dFE4cUYyeDY1QUd0M1N3Unk5cGdZSldzWFM5Y1hBWE16aEZyek5Yc0FGaDRvVXJuanJDQzFBV2FURVJLRVBlYkF3NFRCM0UwMEkzWFBvWndyZU5XRUJZbTBzOVkyak10TUxHekd6N19fMDREMmljei1zYVQ1Ql9oeW8ySTYyVDhORXdzVm15cXZSOXVhaHlweg?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 9,
    "temas": [
