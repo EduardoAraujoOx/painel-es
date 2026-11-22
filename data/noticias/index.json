@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-22",
- "gerado_em": "2026-11-22T12:17:14Z",
+ "gerado_em": "2026-11-22T13:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 24,
-   "aceitos": 8,
-   "possiveis": 4
+   "lidos": 25,
+   "aceitos": 6,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 5,
+   "lidos": 7,
+   "aceitos": 4,
    "possiveis": 2
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 69,
+   "lidos": 66,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -139,7 +139,7 @@
    "ok": true,
    "lidos": 26,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -161,8 +161,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 53,
-   "aceitos": 1,
+   "lidos": 100,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 0,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Folha Vitória",
@@ -280,19 +280,31 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 266,
-  "possivel": 18,
+  "sem_contexto": 267,
+  "possivel": 20,
   "generico_sem_ancora": 4,
   "sem_contexto_com_tema": 12,
   "oficial_sem_tema": 2,
-  "excluir": 19,
+  "excluir": 18,
   "exterior_sem_ancora": 7,
-  "outro_estado": 8,
-  "veiculo_excluido": 30,
-  "sigla_sem_ancora": 7,
+  "outro_estado": 11,
+  "veiculo_excluido": 26,
+  "sigla_sem_ancora": 6,
   "veiculo_outra_praca": 1
  },
  "itens": [
+  {
+   "id": "d3c504c1c496",
+   "titulo": "Governo avalia enviar projeto para limitar supersalários, que chegam a mais de R$ 100 mil",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/brasil/governo-avalia-enviar-projeto-para-limitar-supersalarios-que-chegam-a-mais-de-r-100-mil-1126",
+   "data": "2026-11-22T12:35:43Z",
+   "coletado_em": "2026-11-22T13:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "1cf816504cfc",
    "titulo": "ES tem 62 municípios em lista provisória para receber royalties da mineração",
