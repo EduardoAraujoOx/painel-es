@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-22",
- "gerado_em": "2026-11-22T09:17:13Z",
+ "gerado_em": "2026-11-22T10:17:18Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,8 +25,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 23,
-   "aceitos": 8,
+   "lidos": 24,
+   "aceitos": 7,
    "possiveis": 4
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 15,
+   "lidos": 14,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 66,
+   "lidos": 91,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 29,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -266,7 +266,7 @@
    "consulta": "https://simnoticias.com.br/politica/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -280,7 +280,7 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 263,
+  "sem_contexto": 288,
   "possivel": 19,
   "generico_sem_ancora": 4,
   "sem_contexto_com_tema": 11,
@@ -288,11 +288,25 @@
   "excluir": 20,
   "exterior_sem_ancora": 9,
   "outro_estado": 12,
-  "veiculo_excluido": 31,
-  "veiculo_outra_praca": 1,
-  "sigla_sem_ancora": 5
+  "veiculo_excluido": 32,
+  "sigla_sem_ancora": 6,
+  "veiculo_outra_praca": 1
  },
  "itens": [
+  {
+   "id": "19ad656d7804",
+   "titulo": "Julio da Fetaes: da liderança sindical à Assembleia Legislativa",
+   "veiculo": "Sim Notícias",
+   "url": "https://simnoticias.com.br/politica/julio-da-fetaes-da-lideranca-sindical-a-assembleia-legislativa/",
+   "data": "2026-11-22T10:00:14Z",
+   "coletado_em": "2026-11-22T10:17:18Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "controle"
+   ]
+  },
   {
    "id": "496047e0b879",
    "titulo": "Delegado Ícaro perto de voar perto do sol na Secretaria de Segurança",
@@ -592,6 +606,22 @@
    "temas": []
   },
   {
+   "id": "b5ebe0680e1d",
+   "titulo": "Após ação do MPTO, festa de servidores da Sefaz é cancelada e patrocínios de até R$ 20 mil terão que ser devolvidos",
+   "veiculo": "JORNAL O COLETIVO",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPVDhOV3g0SG1qXy1KWUVfOUpMQXoxcTloc1YtTTRjTzkwekFMWjVrc2hBWTY5Sk1ONktjMHRrT0FiVzdnLUR6QWdNVHc5Z2hLT01lY1E4RjNneFpJN0ZpNFo1OUsyVWZfcmNCX1hvTkwxajRma0FkaGFMM3Y1WTJjZjB5Q2dmdzZueEl3LUdDNlhFSXNsdnV5dER2UENfa2xlTnRSOVdza21SMVA0RXY3eU1sUjh0VkxXYm13ZzRtOUpmNmROWWNuaGhJcVF1cnBldThVb2R3?oc=5",
+   "data": "2026-11-20T18:55:00Z",
+   "coletado_em": "2026-11-22T10:17:18Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas",
+    "contratos",
+    "pessoal"
+   ]
+  },
+  {
    "id": "b204ecfa0785",
    "titulo": "Taxa de turismo suspensa em Angra dos Reis",
    "veiculo": "Tribuna Online",
@@ -706,7 +736,12 @@
    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORkdleVl0X0FSUkszYVhHODlVNXRTN2FBS1hFRVR6LU9LQjB4S0hrM2R4ZEtmbXA1cVZ5LXMxTlhoNHM1MWZXVFZib3daNC12OVJIQy1oZlNjbnBVVHZtWFRBSmxIallfQm03WTlmZlRRa21YbkNZbTUtSzFfa1VjaWZsN0J2YWhoZ00xWDl4T2cxREYyR3h5dUhIZ0RvSFY0TlFOZQ?oc=5",
    "data": "2026-11-20T14:02:40Z",
    "coletado_em": "2026-11-20T18:17:12Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Tribuna Norte Leste",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNlcwaDd0blU3aVpZTU5hOU8ycGg2R3NmMTNoc3BMaWRxbUFUVlJVS3JvMWoxV0N3VDVfVklXd0VIdldxb3dfNGJTLWpCbU9ZR0QzTVlJMG05OUZ1Qnp1T3VWMndFdGtSclVFMlhQVXVKT0pKV0FEYnY2WHNMVVV3RFBSd0lUb1hMS25uVk5pUUtjQk1ta2VVQmRvczNtLWNKd3k2X1FKTElIT28?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 9,
    "temas": [
