@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-22",
- "gerado_em": "2026-11-22T10:17:18Z",
+ "gerado_em": "2026-11-22T11:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 24,
-   "aceitos": 7,
-   "possiveis": 4
+   "lidos": 34,
+   "aceitos": 9,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 91,
+   "lidos": 69,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 27,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 1,
+   "lidos": 8,
+   "aceitos": 2,
    "possiveis": 2
   },
   {
@@ -278,21 +278,35 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 288,
-  "possivel": 19,
+  "sem_contexto": 270,
+  "possivel": 21,
   "generico_sem_ancora": 4,
-  "sem_contexto_com_tema": 11,
+  "sem_contexto_com_tema": 12,
   "oficial_sem_tema": 2,
-  "excluir": 20,
+  "excluir": 23,
   "exterior_sem_ancora": 9,
-  "outro_estado": 12,
-  "veiculo_excluido": 32,
+  "outro_estado": 8,
+  "veiculo_excluido": 33,
   "sigla_sem_ancora": 6,
   "veiculo_outra_praca": 1
  },
  "itens": [
+  {
+   "id": "1cf816504cfc",
+   "titulo": "ES tem 62 municípios em lista provisória para receber royalties da mineração",
+   "veiculo": "Vitória News",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOX2VmbEZCYlR3YkNXLURWWkFjYU1HMmVPZDl5Wk95WEZNRFNVQ2cwM0kyZnJuMFRuRTRPU0RCV0h1RXp3R0doNkd4TzlTQ1RSTjlhSVFZaFFmRThDaTJIc3pqcHlhNW1IeG1oWFI2SnJrMXRYd2lHTjFWNVF2Vmh1a3k2MDJHT2dkVXFLczZvNTdROHNOZVR4T1FrWkVLZTN4WHFJQlVB?oc=5",
+   "data": "2026-11-22T10:48:52Z",
+   "coletado_em": "2026-11-22T11:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "19ad656d7804",
    "titulo": "Julio da Fetaes: da liderança sindical à Assembleia Legislativa",
@@ -396,6 +410,18 @@
    "temas": [
     "financas"
    ]
+  },
+  {
+   "id": "2796283bddf6",
+   "titulo": "Governo Municipal mantém ações de assistência humanitária e monitoramento das chuvas em Vitória da Conquista",
+   "veiculo": "www.giroes.com.br",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPR0pMUURTdm9FT09jaVFNUUJqenQtYXo3bHBXaWd6TnhuRl9vT0JOUVctQlVxVWFxTUpBN2g4Mk1nbkVpN0MwV0g0NmlYUWF2YUp1amhfMDFlZExmRUlGbzcwam5FcmExN0c5MmdDSW1lVzlYR2U2S3hrUnpUWlJtUWo2bFFRaE1HbUZDbXQ1eWtQZlRzN3lyLXB4T2NldFAtT0pOWHVLS0ZUVnZhc3NpaW9zWkJDTEZSZmN5VWV2X2dfVXlraUZISlZHZUxQbkpqRjlQclNkYVo4dk5EaFl5Q2V3?oc=5",
+   "data": "2026-11-21T15:43:18Z",
+   "coletado_em": "2026-11-22T11:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "d7caa5a2d033",
@@ -674,6 +700,20 @@
    "possivel": true,
    "triagem": 9,
    "temas": []
+  },
+  {
+   "id": "cb193dfcda2f",
+   "titulo": "Governo do Estado amplia intercâmbio estudantil e inicia novo ciclo de viagens internacionais",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOa0Q1OHQ4cGdqTkFUbmtrbWluVE45RE5IS2JydWR4OW51Tl9IUTNSV3Zzb0prZ19FbmowT1VlSzZEQlpuQWIwd1Y5bXJoeU1rMW5VOU9rLUJVdGUxTXI3cUdYcl9KOGpnTlB0bjVCaDBxajVOVEdHcTBqOFBWY2JzeHpkM0lLM0VZWkUwamNVM0dzMWpiSnBVaUhKRE4xdkNLTWgwcFY1VE94a3UzUE5vU29renBhUQ?oc=5",
+   "data": "2026-11-20T15:51:00Z",
+   "coletado_em": "2026-11-22T11:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
   },
   {
    "id": "45af7c2b356b",
