@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-22T11:17:38Z",
+ "gerado_em": "2026-11-22T15:17:36Z",
  "ref": "2026-11-22",
  "desde": "2026-10-04",
  "estados": [
@@ -15,7 +15,7 @@
    "nome": "Amapá",
    "eleito": "Dr. Furlan",
    "partido": "PSD",
-   "total": 42
+   "total": 43
   },
   {
    "uf": "AM",
@@ -36,7 +36,7 @@
    "nome": "Minas Gerais",
    "eleito": "Cleitinho Azevedo",
    "partido": "Republicanos",
-   "total": 311
+   "total": 312
   },
   {
    "uf": "PA",
@@ -71,14 +71,14 @@
    "nome": "Rio Grande do Sul",
    "eleito": "Luciano Zucco",
    "partido": "PL",
-   "total": 282
+   "total": 284
   },
   {
    "uf": "RO",
    "nome": "Rondônia",
    "eleito": "Marcos Rogério",
    "partido": "PL",
-   "total": 89
+   "total": 90
   },
   {
    "uf": "RR",
@@ -106,11 +106,25 @@
   "fndr": "FNDR e reforma tributária"
  },
  "contagem": {
-  "total": 1901,
-  "medidas": 595,
-  "equipe": 1306
+  "total": 1906,
+  "medidas": 597,
+  "equipe": 1309
  },
  "itens": [
+  {
+   "id": "05b3b1fdd510",
+   "titulo": "Cleitinho define nomes para governo de Minas. Educação e Fazenda seguem em disputa",
+   "veiculo": "ncnews.com.br",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMmRwRTNwQ0ZscVVPdTNsWEktZTR0bkNYUll4emNJa2pycUxaeWxNSXFlanlONVRqS1ZkR0xpSFg2SVdTb0VZOFo4ZTI3QzdpUUlJZmlMNFoyWEF1LW1xN1JISDdiazJWS1dnRFhLZHFoZVFocHVJZ2FHNk4tWXBSeWd3WEs?oc=5",
+   "data": "2026-11-22T11:32:53Z",
+   "coletado_em": "2026-11-22T15:17:36Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
   {
    "id": "ec75e16ec821",
    "titulo": "Governo Cleitinho em MG: veja os nomes escolhidos e cotados",
@@ -352,6 +366,20 @@
    "outras": [],
    "ufs": [
     "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "b9d0656f95ee",
+   "titulo": "Futuro do Carnaval 2027 no Amapá será pauta da transição de gestão, diz governo",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPOXh2WFJpSzA5SThLU3hmVVZXNjBHSG0tOE5YRWEtRC0yTkhlTjgwZDRTRFpFd19RYjVJUC1HTE9yNnU2R1IySUJKRWMxak91QVF0TGF0T0dGSmpCZjBzRXZ3LUVPbWpSYVMwbGF3ZzQ0ZG50Nnpfd1JpSHBBOWRfdGc2VXBvX0o0cEZVcThHa0NQVWRsMmhvY0FnZ3lQbGlpWTgwT2VxaDZEZzhSaXI2aWlnVjBWTFQ2aHE0dUhsYUNxQ3drYVZPSnU0ZDlabXFiV0xRYWN1T2x3TXVT0gHcAUFVX3lxTE85eHZYUmlLMDlJOEtTeGZVVlc2MEdIbS04TlhFYS1ELTJOSGVOODBkNFNEWkV3X1FiNUlQLUdMT3I2dTZHUjJJQkpFYzFqT3VBUXRMYXRPR0ZKakJmMHNFdnctRU9talJhUzBsYXdnNDRkbnQ2el93UmlIcEE5ZF90ZzZVcG9fSjRwRlVxOEdrQ1BVZGwyaG9jQWdneVBsaWlZODBPZXFoNkRnOFJpcjZpaWdWMFZMVDZocTR1SGxhQ3FDd2thVk9KdTRkOVptcWJXTFFhY3VPbHdNdVM?oc=5",
+   "data": "2026-11-20T18:28:05Z",
+   "coletado_em": "2026-11-22T15:17:36Z",
+   "outras": [],
+   "ufs": [
+    "AP"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -691,6 +719,20 @@
     "diagnostico"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "3795b04b8d09",
+   "titulo": "Zucco escolhe economista Cláudio Branchieri para comandar a Fazenda e reforça perfil técnico do futuro governo do RS",
+   "veiculo": "Vale Notícia",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPX204NURwZTk4c0pTNzNvOGxNb0ZTUjRaU2xoNFMwZVpQeUhiNUlORy1McFVHZFNudXNMcmZVU3ZRVlhoLXBmTWdBNlJkZXRDR29yWXhtc3pZRDFWYVVid2N5a253cklsTlFqWUZFWDI2RUFLbjB1dGVJczlreEpWUllhLWZLbWdmMVUwVkVCVkRnN0NPOTJEV0ZNOTFvY01Gd3RkX1F6NWM5SXpCUXdIRW4zQUZReFFtajJkWDB1ZUZQQlF3MDUwYXlpay14a2pJYi1aelluWlJuZFEwSWhjSGUzVjljU0JG?oc=5",
+   "data": "2026-11-20T01:04:00Z",
+   "coletado_em": "2026-11-22T15:17:36Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "aed0556c7e1f",
@@ -5186,6 +5228,22 @@
    ],
    "temas": [
     "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "c286d947a311",
+   "titulo": "Zucco reduzirá de 29 para 18 o número de secretarias do Governo do RS, um corte de quase 40%",
+   "veiculo": "Vale Notícia",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOa3VFejZ2UjJiTHlRU1NidlFiRVRJMUtLWVQ2SkFrRzdWWUVhUUozSk9fQ1Rwam53dnU5Mk5BcmNLQ1BLQjZWa1VvMEF6Q1prMmpfOUNzc2tvc1IzYmp2aDZPY1IwcDlMUHluUjBMdHdpOFdRTUo1OTRCYVhZUUtFSkFPZGxmanRiaEI0LTVKUURpVUNvbEhod3hya2FYc01SWm1aLW52MmNOSlNwaHpzNTYzN3hMTENLQzA0OGN0M3NDMFcydnfSAc4BQVVfeXFMTXgtOTczQnlVb1dZamFpcHl0aDFaS1BCOFlNM3FndngwUWZyVzYwaE45Q2JxZFNXNlJhLXFWay1SYTRveFlkTzdFN3JwYjZLeVgtRjBsTk1vUEZmcHpiT1hQeVI3YVJHZnphTm9sNWhaRkFlbmJiaHo3TVhVdkZqcDI0NWFCWjNxUWNwY0h4UmJWSVpFZVZRbkJ1bFUxLWc0SjNGX1lDYnpmUkV6VE9ycVh3UGxWVHZLN1VON2QwV1U4V1hGczlzUVlfb0RjTmc?oc=5",
+   "data": "2026-11-16T18:29:00Z",
+   "coletado_em": "2026-11-22T15:17:36Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "estrutura"
    ],
    "categoria": "medida"
   },
@@ -24650,6 +24708,22 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "23b571853bef",
+   "titulo": "Mosquini assume transição e vai mapear dívidas e despesas do governo de Rondônia",
+   "veiculo": "Eu Ideal",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOYUl1Uk1KdXhvSkt1RXhNczE3UDI5Rm9oeUlKYUs5WHlLYkRrVk41aXphV3ZlNVBfZ1o0TWpzdVpQZElkV3VOWlR1YnpFTVhZZWl4Q0hBNE1qM2tSbzZfSUpUYzAxTldNdXF1VVBBb2xxWDQ1TjliemdLNW9VU0NqYTJ1NS1IOUlpTkl6MFRoYlJJNHpNVzl6TFpsNmgwZzNYanNHNnF3ODFMcFVoVThsWUhDWVVLT0gzU042SEc1NmoxVl9PSzE5eFpHbEM4VHh3RGhiS2NmeTY?oc=5",
+   "data": "2026-10-14T07:00:00Z",
+   "coletado_em": "2026-11-22T15:17:36Z",
+   "outras": [],
+   "ufs": [
+    "RO"
+   ],
+   "temas": [
+    "gastos"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "1986eb07113d",
