@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-22",
- "gerado_em": "2026-11-22T11:17:14Z",
+ "gerado_em": "2026-11-22T12:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,15 +25,15 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 34,
-   "aceitos": 9,
-   "possiveis": 6
+   "lidos": 24,
+   "aceitos": 8,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 26,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -155,7 +155,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -278,18 +278,18 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 270,
-  "possivel": 21,
+  "sem_contexto": 266,
+  "possivel": 18,
   "generico_sem_ancora": 4,
   "sem_contexto_com_tema": 12,
   "oficial_sem_tema": 2,
-  "excluir": 23,
-  "exterior_sem_ancora": 9,
+  "excluir": 19,
+  "exterior_sem_ancora": 7,
   "outro_estado": 8,
-  "veiculo_excluido": 33,
-  "sigla_sem_ancora": 6,
+  "veiculo_excluido": 30,
+  "sigla_sem_ancora": 7,
   "veiculo_outra_praca": 1
  },
  "itens": [
@@ -418,6 +418,18 @@
    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPR0pMUURTdm9FT09jaVFNUUJqenQtYXo3bHBXaWd6TnhuRl9vT0JOUVctQlVxVWFxTUpBN2g4Mk1nbkVpN0MwV0g0NmlYUWF2YUp1amhfMDFlZExmRUlGbzcwam5FcmExN0c5MmdDSW1lVzlYR2U2S3hrUnpUWlJtUWo2bFFRaE1HbUZDbXQ1eWtQZlRzN3lyLXB4T2NldFAtT0pOWHVLS0ZUVnZhc3NpaW9zWkJDTEZSZmN5VWV2X2dfVXlraUZISlZHZUxQbkpqRjlQclNkYVo4dk5EaFl5Q2V3?oc=5",
    "data": "2026-11-21T15:43:18Z",
    "coletado_em": "2026-11-22T11:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "42f98023c5f1",
+   "titulo": "Coronel aposentado tenta barrar guincho do Detran e vai parar na delegacia",
+   "veiculo": "O Republicano",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOeS1uOWV0SzZsbE5SUkw0OUJjdVhXTXNiNmlzMUZKSm1DVVhrR1dKZWRVZTNGQTcweHpGamkteFAwSGhVUDU5d3NYanNScjhaelFGT3ZfVURsWUZfVEhobkR4cFRraU9JRUt6bkhWVVNyZUNUVVFqLUh5MHg2QkxfUzlkelZOWEs2TGZFa2xjQ29zRDRQWGFuelNWbW15NXIxVWZxclI5MWp5MUNIUE1COVlaVHJLQjVRamx6RtIBwgFBVV95cUxOYjd6UVhqbl9yd2JZMm5yREtuaHJpWEtiYUZYTzJmLUNFNTNMYW5rMUFPUmY4TEVFQldUSDVVLTZ0QkxmNmhLdXZYcGFZQ2twdFdlX3oyT1ZuUmpXa0ZqWjJDcF9WbVY2UFRYV3pqblJfWXoyY2IxSjlqX2p3d2R5N1RUQnZPM0xEenZhdi16Mm1oSldDZ3p4bUpucUdYU1pBZzEzLVItcWJ3TU1uSFJsRnJqeHNLcGFkZExWNkU0Sjdtdw?oc=5",
+   "data": "2026-11-21T15:00:00Z",
+   "coletado_em": "2026-11-22T12:17:14Z",
    "outras": [],
    "possivel": true,
    "triagem": 9,
