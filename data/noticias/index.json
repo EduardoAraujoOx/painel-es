@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-22",
- "gerado_em": "2026-11-22T18:17:13Z",
+ "gerado_em": "2026-11-22T19:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 56,
+   "lidos": 57,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 2,
+   "lidos": 1,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -137,9 +137,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 22,
+   "lidos": 19,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 54,
+   "lidos": 53,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -278,20 +278,34 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 267,
+  "sem_contexto": 268,
   "generico_sem_ancora": 3,
   "exterior_sem_ancora": 5,
-  "possivel": 17,
-  "excluir": 16,
-  "veiculo_outra_praca": 5,
-  "outro_estado": 8,
-  "veiculo_excluido": 23,
-  "sem_contexto_com_tema": 10,
-  "sigla_sem_ancora": 7
+  "possivel": 16,
+  "excluir": 17,
+  "veiculo_outra_praca": 3,
+  "outro_estado": 9,
+  "veiculo_excluido": 21,
+  "sem_contexto_com_tema": 9,
+  "sigla_sem_ancora": 6
  },
  "itens": [
+  {
+   "id": "76d4004b1fae",
+   "titulo": "Chitãozinho e Xororó anunciam aposentadoria dos palcos após 56 anos de carreira",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/cultura/musica/chitaozinho-e-xororo-anunciam-aposentadoria-dos-palcos-apos-56-anos-de-carreira/",
+   "data": "2026-11-22T18:25:25Z",
+   "coletado_em": "2026-11-22T19:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "1b52f5086889",
    "titulo": "Novo concurso Banestes tem 645 vagas de cadastro reserva e inscrições até 11 de dezembro",
