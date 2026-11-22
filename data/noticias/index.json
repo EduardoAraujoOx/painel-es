@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-22",
- "gerado_em": "2026-11-22T00:17:14Z",
+ "gerado_em": "2026-11-22T01:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -33,7 +33,7 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 77,
+   "lidos": 73,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -155,7 +155,7 @@
    "ok": true,
    "lidos": 31,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -280,18 +280,31 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 273,
+  "sem_contexto": 261,
   "possivel": 15,
   "generico_sem_ancora": 4,
   "sem_contexto_com_tema": 12,
   "oficial_sem_tema": 2,
-  "excluir": 25,
+  "excluir": 24,
   "exterior_sem_ancora": 9,
-  "outro_estado": 13,
-  "veiculo_excluido": 28,
-  "sigla_sem_ancora": 5
+  "outro_estado": 15,
+  "veiculo_excluido": 29,
+  "veiculo_outra_praca": 1,
+  "sigla_sem_ancora": 6
  },
  "itens": [
+  {
+   "id": "ec989642ed89",
+   "titulo": "São Felipe passa a oferecer serviços do Detran",
+   "veiculo": "Tribuna do Recôncavo",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1xdHlGZ243VGI3Z24wT1lxWklTaEVDUTY5b2hSeGhhMGdFSDBBU2twUXdmdUtDX0FPZWN5WGNaMGs1UmdYMU1LNkJIdzMxMkx2UFo4b3huZUxrWnBzUmtBQ3RVQWdBNHN3UEE?oc=5",
+   "data": "2026-11-22T00:38:42Z",
+   "coletado_em": "2026-11-22T01:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "f32f39b8c51d",
    "titulo": "Polícia Civil e Sejus prendem servidor com drogas que seriam introduzidas em cadeia de Juína",
