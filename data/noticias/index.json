@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-22",
- "gerado_em": "2026-11-22T20:17:13Z",
+ "gerado_em": "2026-11-22T21:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,15 +17,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 10,
+   "lidos": 8,
    "aceitos": 2,
-   "possiveis": 3
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 21,
+   "lidos": 20,
    "aceitos": 4,
    "possiveis": 3
   },
@@ -33,7 +33,7 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 18,
+   "lidos": 20,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 51,
+   "lidos": 52,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 19,
+   "lidos": 20,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 2,
+   "lidos": 10,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -278,17 +278,17 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
   "sem_contexto": 257,
-  "possivel": 17,
-  "generico_sem_ancora": 4,
+  "generico_sem_ancora": 3,
   "exterior_sem_ancora": 6,
-  "excluir": 17,
-  "veiculo_outra_praca": 3,
+  "possivel": 16,
+  "excluir": 18,
+  "veiculo_outra_praca": 4,
   "outro_estado": 8,
+  "veiculo_excluido": 21,
   "sem_contexto_com_tema": 8,
-  "veiculo_excluido": 23,
   "sigla_sem_ancora": 6
  },
  "itens": [
@@ -373,6 +373,18 @@
    "temas": [
     "controle"
    ]
+  },
+  {
+   "id": "d62bee68b6de",
+   "titulo": "Delegado Ícaro perto de voar próximo ao sol na Secretaria de Segurança",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/vitor-vogas/delegado-icaro-perto-de-voar-perto-do-sol-na-secretaria-de-seguranca-1126",
+   "data": "2026-11-22T08:00:00Z",
+   "coletado_em": "2026-11-22T21:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "496047e0b879",
@@ -4146,14 +4158,18 @@
    "veiculo": "Governo ES",
    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQMlFZaDl4eGp3SEpvMUZFSGdVVlJMYnhPTFBYaGM3NHQ0VFNaWEp0aV9KVF9xYl9aYnN1TG42ZUttOEg0WThiUXYyWUdkZ1dhNUZxWEhOWWg5SFh6TTNsc3NBTUtObG41alZiRDg5N21RRjdvMlNSdm4wU2ROdG85TXJONlY3dnZRWGxxNWw3c2RSSFFTMWJsY3VhbkhoeVM3dm5pM1VyRmF4QUJud2tBVDhwOEtYNmxpVkNqYw?oc=5",
    "data": "2026-11-13T18:43:00Z",
-   "coletado_em": "2026-11-13T22:17:14Z",
+   "coletado_em": "2026-11-22T21:17:14Z",
    "outras": [
     {
      "veiculo": "Secretaria de Estado do Governo",
      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPLTd3V0ptamlHdk9KckJjSUE1QVZ2dXVXX1pQU0t1YTNUZFhDRWx0d05hTUhfNUViUGFxa21vUVJ1aFNURGNjN0UyOFpNYjlmYWNJZm1vVmRRMmpyRVVScmxvOEVrX1JleWZVZEFzRGZZdng1aUpFaGR2M2t1X0FZem1HRHo3LWh0YmpOcTh2Tlc2S2xCRnRNbGdSdndJazY2WDJ2dEJsS1VYV2pabUMtUjAtSWt5ck04YjJzUQ?oc=5"
+    },
+    {
+     "veiculo": "SiteBarra",
+     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOV2x5azZFSGthcEcwUl9hSmxLZDJOaEFTSjdhTE5oY0RaSGZWUUNMX0t2dk1iTFR3RjByVWJDdW1lNDZialNpa1FWZ0hiUm9tZEFWTlJGWWMtbHl2UDdRY2ZSZnBVREZDd0pQMENkWnJwa3NkTWpqRGpEREdLTjFRM05DLS1wLXlZZmZsamJaNVpNaEFOWjFSTnRZUGdnazB4cnpENHFQZEVMQk5LOGwzUTQzNkRYeHl6WTJmQ0RVWHJidmkx?oc=5"
     }
    ],
-   "possivel": true,
+   "possivel": false,
    "triagem": 9,
    "temas": []
   },
