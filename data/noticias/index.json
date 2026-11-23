@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-23",
- "gerado_em": "2026-11-23T21:17:16Z",
+ "gerado_em": "2026-11-23T22:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,17 +17,17 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 1,
-   "possiveis": 0
+   "lidos": 10,
+   "aceitos": 2,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 25,
-   "aceitos": 4,
-   "possiveis": 6
+   "lidos": 26,
+   "aceitos": 5,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 11,
+   "lidos": 12,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,15 +89,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 25,
-   "aceitos": 1,
+   "lidos": 30,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 56,
+   "lidos": 60,
    "aceitos": 1,
    "possiveis": 5
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 9,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
-   "aceitos": 1,
-   "possiveis": 0
+   "lidos": 41,
+   "aceitos": 2,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 20,
+   "lidos": 15,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 58,
+   "lidos": 57,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 11,
+   "lidos": 12,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -210,8 +210,8 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
-   "possiveis": 3
+   "aceitos": 4,
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -278,20 +278,102 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto": 293,
-  "oficial_sem_tema": 4,
-  "veiculo_excluido": 29,
-  "excluir": 32,
-  "possivel": 18,
-  "sem_contexto_com_tema": 16,
+  "possivel": 20,
+  "sem_contexto": 311,
   "generico_sem_ancora": 1,
-  "outro_estado": 19,
-  "veiculo_outra_praca": 8,
-  "sigla_sem_ancora": 2
+  "oficial_sem_tema": 4,
+  "veiculo_excluido": 27,
+  "excluir": 38,
+  "sem_contexto_com_tema": 17,
+  "veiculo_outra_praca": 10,
+  "outro_estado": 20,
+  "sigla_sem_ancora": 3
  },
  "itens": [
+  {
+   "id": "b1b3aa9a9b79",
+   "titulo": "Previdência dos militares: quais são as regras e por que o déficit chegou a R$ 53 bilhões",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/previdencia-dos-militares-quais-sao-as-regras-e-por-que-o-deficit-chegou-a-r-53-bilhoes/",
+   "data": "2026-11-23T22:10:25Z",
+   "coletado_em": "2026-11-23T22:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "9a1b1ad7b641",
+   "titulo": "Déficit da previdência militar: por que chegou a R$ 53 bilhões",
+   "veiculo": "Folha Vitória",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOajBwaFkzdkU0QXFnRDBMWm5SaGhuX3l1d0xTNnBVcVlfbHZUQXh4czlFS2hOTWtmMERWZHpSRk9PYk9WLXV0VGhpM3lZQVdzUHN5RWVJLUxyY2FlOEpwN1d4Wjh0TTNrelNSXzl6cXA3TzVfVUR1RWNvUHN5NlFJOWZ6b1I0SEY5THRmdHhpV3JaTFM0dE9HTWduWUh6NWhHcG9PN3JkU0FIc3dYUjdhNDJYVl9ONXl2cGhsd1hNT0ZIWGUzak5WUg?oc=5",
+   "data": "2026-11-23T22:10:25Z",
+   "coletado_em": "2026-11-23T22:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "f023d7a38661",
+   "titulo": "Motociclista sem CNH bate em carro de motorista com habilitação suspensa no ES",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/transito/motociclista-sem-cnh-bate-em-carro-de-motorista-com-habilitacao-suspensa-no-es-1126",
+   "data": "2026-11-23T21:47:09Z",
+   "coletado_em": "2026-11-23T22:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "e34f1c1f68a4",
+   "titulo": "A cidade de imigrantes italianos nas montanhas capixabas que abriu as fazendas para turistas e virou a primeira cidade inteligente do estado",
+   "veiculo": "Canal Rural",
+   "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxPVDhCaVUyRjdURk5tLUpidGlvMjBReVgtYXRvVmdKd3F1WmxZUGNpbkRuOEFHRlVHci1fdjY4OHRXRVpUdmNwOEZlVHF4MFZmaGs3bjlTYUNSSF9RRGpCSmhOVE5FbGRPM25mQVJrb2Uway1ZMXRvcmdPZkp6M0R6cHl0RnlYNmFMdUZNNWRmZUwzbnRPak1qVXpBb3FuUmhrQlN6ZFc4Nk1kMzJvOXppX01NNDloSjNJNVgyeWs5QXZvSk9tSi1uZHVibE5ZalJ2V0s1TmZQdy1fMVAtV0Q2UUl4UVdoYnpHeVJJZG84Y1EyMy1GNm1TZHppeHN1YXY1TGpGTjg2cmdBN1FtS2JVbmtuWDFYZnotLWo5a0Y2M0k?oc=5",
+   "data": "2026-11-23T21:47:00Z",
+   "coletado_em": "2026-11-23T22:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "8313f4c71634",
+   "titulo": "Darcio critica exonerações e nega divisão ideológica na Câmara",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/darcio-critica-exoneracoes-e-nega-divisao-ideologica-na-camara/",
+   "data": "2026-11-23T21:46:51Z",
+   "coletado_em": "2026-11-23T22:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "06058852a357",
+   "titulo": "Maitan toma posse e assume comando de Cachoeiro durante afastamento de Ferraço",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRnNPM3R1bXpseEw5eDdBZ1FXWkdPS3BkY0V0ZXNmM2I2RkhWZ2d2eUh5TXUxcWVIeHNCSm9oSGxZOGN3R0gxa05EUGFEQ25raDNjQXFibDU1RGpDdTlXdkp3dzhpSlhESzBnaFVuTU9OZDJhcWhiMzhwWmZsR2FNc2hmNUd4TnF6RHdydW92VWxXVDdnUGxRMUhIS2JNdTJJX05N?oc=5",
+   "data": "2026-11-23T21:15:39Z",
+   "coletado_em": "2026-11-23T22:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "ecab3481648d",
    "titulo": "Pontos na CNH deixam de contar para suspensão após 12 meses, mas seguem no prontuário do motorista no Detran",
@@ -407,6 +489,20 @@
    "url": "https://eshoje.com.br/mundo/2026/11/crise-do-ueno-paraguai/",
    "data": "2026-11-23T18:49:35Z",
    "coletado_em": "2026-11-23T19:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "b39a47a96fb1",
+   "titulo": "Sefaz cancela inscrições estaduais de 19 contribuintes em Mato Grosso do Sul",
+   "veiculo": "Midiamax",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOV1NoWFhxc3g4ZEtKWERRX0VnZkV6VWhtVlpQWFBEcUVKV2RBX0d2dzd2aXZmVmJLbG9PMU5ZNGZwamd6bHJ1bTJjc1FEMVpCVmtVcXM5UDJ4bFcwZ3o4dnhDU3RHVUFJenJaNXJPT0R2b0hfVENiTVl5SjhGckpoN3ctRVFfN3JEYlNZLXZ0UzFDeWlaam13eE9maHgyM2VSbVVTdkZTZzdZX2c?oc=5",
+   "data": "2026-11-23T18:44:00Z",
+   "coletado_em": "2026-11-23T22:17:15Z",
    "outras": [],
    "possivel": true,
    "triagem": 9,
@@ -580,6 +676,20 @@
    "url": "https://www.agazeta.com.br/concursos/ultimo-dia-para-se-inscrever-no-concurso-do-banestes-com-936-vagas-1126",
    "data": "2026-11-23T15:33:00Z",
    "coletado_em": "2026-11-23T16:17:18Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "de1fa4642605",
+   "titulo": "Promotores no Espírito Santo ganham aval para escolher assessores sem concurso público",
+   "veiculo": "Tribuna do Sertão",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOSTJKOTRvckZSYVJQYWVwaXhwRHNvVmw4QnB4NjlRYzU5eTJtR3plTnRnRFY2Q2ctRWdKNkpLTWtYLW1aTlgwY0lhcUlfR01CVlhRTUJSVEFMRnVYOXhFeFgtYl9jZ25Db0dTb0J0S0F3ZXA3anM1N1Vtckc5S1RkRVFYQ210b3I3RDhwV2g0ZUZWSEkzeFZDTFlhaDVQZTFucTFMaElSczhWM1JUTkVuc1JUbE9BenZjOGp3VF9mdThzbUdwaFRTb0hzSkNVUmRTbHdvd2VEelEwemRjRzg4V0xMaw?oc=5",
+   "data": "2026-11-23T15:08:00Z",
+   "coletado_em": "2026-11-23T22:17:15Z",
    "outras": [],
    "possivel": false,
    "triagem": 9,
