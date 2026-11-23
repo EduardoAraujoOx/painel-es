@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-23",
- "gerado_em": "2026-11-23T19:17:16Z",
+ "gerado_em": "2026-11-23T20:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,24 +17,24 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 3,
-   "possiveis": 1
+   "lidos": 9,
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 5,
-   "possiveis": 7
+   "lidos": 24,
+   "aceitos": 4,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 0,
+   "lidos": 10,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -66,7 +66,7 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 4,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 28,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -97,8 +97,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 43,
-   "aceitos": 0,
+   "lidos": 51,
+   "aceitos": 1,
    "possiveis": 3
   },
   {
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 1,
+   "lidos": 0,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 0,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 29,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 14,
+   "lidos": 16,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 29,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -161,8 +161,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 58,
-   "aceitos": 3,
+   "lidos": 59,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -193,16 +193,16 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 2,
+   "lidos": 11,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (previdência OR Ipajm OR \"regime próprio\" OR \"contribuição previdenciária\" OR aposentadoria)",
    "ok": true,
-   "lidos": 0,
-   "aceitos": 0,
+   "lidos": 1,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -218,7 +218,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -278,21 +278,89 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 5,
  "descartes_na_coleta": {
-  "sem_contexto": 272,
-  "generico_sem_ancora": 3,
-  "oficial_sem_tema": 4,
-  "veiculo_excluido": 29,
-  "excluir": 23,
-  "outro_estado": 20,
-  "possivel": 16,
+  "sem_contexto": 284,
   "exterior_sem_ancora": 4,
-  "sem_contexto_com_tema": 16,
-  "sigla_sem_ancora": 2,
-  "veiculo_outra_praca": 6
+  "oficial_sem_tema": 4,
+  "veiculo_excluido": 27,
+  "excluir": 24,
+  "possivel": 16,
+  "sem_contexto_com_tema": 15,
+  "generico_sem_ancora": 1,
+  "outro_estado": 20,
+  "veiculo_outra_praca": 8,
+  "sigla_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "fd85830131b1",
+   "titulo": "Estudantes da Fames apresentam recital de encerramento do Laboratório de Performance no Theatro Carlos Gomes",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPQnhFdDFLN1VMcDkwMEpydmM0UjFOQ0tEUmJfdmczX1BPYWtVTldESkxJMFNfdmpSaHg3akwxQ09udkNSRWpjcEk3MXJXNnJlQmxiQmllTVpKY0wzQkNiRUp6RW9EX1F0VlRJM3BaNEdscUsyUTE5S2VNa1paY2ota2h6LXRlRnRTVS1DU2NpWUx4M3E3a2VsSjh3WVF4NE00Z2U5WG9oc3AzcEhveE1OYy1WeVJaMTZGemhMYkVvWTdNaHhmR1U5Y2FB?oc=5",
+   "data": "2026-11-23T19:55:00Z",
+   "coletado_em": "2026-11-23T20:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "c44b33dd32d4",
+   "titulo": "Último dia de inscrições para concurso do Banestes com 936 vagas e salário de até R$ 5,6 mil",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/trabalho/concursos/ultimo-dia-de-inscricoes-para-concurso-do-banestes-com-936-vagas-e-salario-de-ate-r-56-mil/",
+   "data": "2026-11-23T19:37:56Z",
+   "coletado_em": "2026-11-23T20:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "e23945670ab6",
+   "titulo": "Ministério Público do Espírito Santo cria centenas de vagas comissionadas para assessores",
+   "veiculo": "Imprensa 24h",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxObmJJNHlsaFU1ak5yVThiX003aE45YXo5R3FaSWJHanJDcVdoanpXS2dxd2V6ODhHTGNrSFktOUVULVFKQ29VWVcxWUttaDN1Tk5fZGhYQ2lhblZZb3NJNXpWMzc2eEwzUzFDLXcwcHNlVWx4dy11YXlkUWdmWmpmWjd5amEyWVpONnpxQnRYYWs?oc=5",
+   "data": "2026-11-23T19:25:29Z",
+   "coletado_em": "2026-11-23T20:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "8b60033a33e8",
+   "titulo": "TRE-ES condena Euclério ao pagamento de multa de R$ 10 mil por compartilhar vídeo editado contra Pazolini",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/tre-es-condena-euclerio-ao-pagamento-de-multa-de-r-10-mil-por-compartilhar-video-editado-contra-pazolini/",
+   "data": "2026-11-23T19:19:23Z",
+   "coletado_em": "2026-11-23T20:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "63ca55396853",
+   "titulo": "Fórum debate avanços e desafios do Novo Acordo do Rio Doce",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQaUNBNVN0UnVNTDNPdmZ1RDMxY1lTOHhDRkNlbUhjTmhfcmpuaHBLZlkyU2hXX1VZdXhEUzQtYUNDTkRIc25teW9HeWEzZlpyeVNORk1ZY19tQnhlem03blJ4d0hIY0pZZUR3d0JuYmk3SUhFOF91T0VRX2l2RlJYS3JraWhkQ2YtNldGWnJGWDQxVmN6LXlVYmdSZVBkQlFkOS1naUwxZW8?oc=5",
+   "data": "2026-11-23T19:14:23Z",
+   "coletado_em": "2026-11-23T20:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "ffa285375140",
    "titulo": "TV Ufes em Alegre e São Mateus será operada pela Fundação Carmélia",
