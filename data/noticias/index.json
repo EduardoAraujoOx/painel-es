@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-23",
- "gerado_em": "2026-11-23T03:43:42Z",
+ "gerado_em": "2026-11-23T09:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 17,
-   "aceitos": 4,
-   "possiveis": 2
+   "lidos": 20,
+   "aceitos": 5,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 6,
+   "lidos": 4,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 23,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 34,
+   "lidos": 28,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 1,
+   "lidos": 0,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 26,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -153,16 +153,16 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 31,
    "aceitos": 1,
-   "possiveis": 5
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 54,
-   "aceitos": 2,
+   "lidos": 55,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 3,
+   "lidos": 4,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 1,
-   "possiveis": 5
+   "possiveis": 7
   },
   {
    "fonte": "Folha Vitória",
@@ -258,7 +258,7 @@
    "consulta": "https://www.agazeta.com.br/colunas/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -280,18 +280,84 @@
  ],
  "novos_na_coleta": 4,
  "descartes_na_coleta": {
-  "sem_contexto": 237,
-  "generico_sem_ancora": 4,
-  "exterior_sem_ancora": 6,
-  "possivel": 14,
-  "excluir": 18,
-  "veiculo_outra_praca": 4,
+  "sem_contexto": 240,
+  "generico_sem_ancora": 3,
+  "exterior_sem_ancora": 5,
+  "possivel": 18,
+  "excluir": 17,
   "outro_estado": 13,
-  "veiculo_excluido": 18,
-  "sem_contexto_com_tema": 10,
-  "sigla_sem_ancora": 6
+  "veiculo_excluido": 19,
+  "sem_contexto_com_tema": 9,
+  "veiculo_outra_praca": 3,
+  "sigla_sem_ancora": 5
  },
  "itens": [
+  {
+   "id": "885d0bd2e25f",
+   "titulo": "Plano de Moretti é só 'primeiro passo', e governo Lula deve fazer outros ajustes fiscais no futuro, afirma Laura Carvalho",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/mundo/plano-de-moretti-e-so-primeiro-passo-e-governo-lula-deve-fazer-outros-ajustes-fiscais-no-futuro-afirma-laura-carvalho-1126",
+   "data": "2026-11-23T08:59:00Z",
+   "coletado_em": "2026-11-23T09:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "c8a30cf2e2c8",
+   "titulo": "Inscrições para 936 oportunidades em concurso do Banestes terminam nesta segunda",
+   "veiculo": "diaadiaes.com.br",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUkd0ZWxsWjNpY2hISWplVzlfcEJjcDB2aDlMaU5KNjNvTHJuSnRWRElqT1d6cHZIRFVFbE4wcmxBSnotb1VBaEk3X3MxeUN1TE0wTUFDYldLbEFNT3FwVEpzaDVvVEVJTTRDS2VMRHFqa3VlNUpROHo4VHZhUTctT1BEMndBaDNLVnc5WHJrR0ZiQ0MtSGtWeWVkWUdIbnJpbW1sRDRaQjIxdw?oc=5",
+   "data": "2026-11-23T08:12:51Z",
+   "coletado_em": "2026-11-23T09:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "4c8b2bb88f23",
+   "titulo": "Inflação e ajuste fiscal: o peso dos juros na dívida pública",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/rodrigo-medeiros/inflacao-e-ajuste-fiscal-o-peso-dos-juros-na-divida-publica-1126",
+   "data": "2026-11-23T06:00:00Z",
+   "coletado_em": "2026-11-23T09:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "a8a2b6639e63",
+   "titulo": "Lorenzo Pazolini e Evair de Melo se reúnem moradores de Iconha em encontro de agradecimento pelos votos",
+   "veiculo": "portal jornal do norte",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcVY0d1laS3B2blEzdHNFY3hDWENZbXNKR0Z0alhnVFJ4dkE5ODBTTXRDUWNQUUVZWHpKY2RkSkkzSEhnWFFzY3djZVZJeW5lTUxTMUpBV0tlUmxDeFpUdlAyVFQ5OVc0NWowS05JeW8zVEVscENYRkRtRjc1NC00OVlWV1QtampTNWphbGF1b1h6TE9kQWtoNU9yY18zRkQ2ZjMxQ2ZoZFhtTmdoNDBZNUNUNGw4NDVFUndocHhNOFFNVW9qdzhqRHVVNmRpYzU3MzBhMENB?oc=5",
+   "data": "2026-11-23T05:56:00Z",
+   "coletado_em": "2026-11-23T09:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "d46ffb82f149",
+   "titulo": "Espírito Santo institui Política Estadual de Incentivo ao Voluntariado, com prêmio anual e selo de acreditação",
+   "veiculo": "atlaspublico.com.br",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZ3JrdGtDY05EN0kwTHBPRU9Kcm8xMHZrbzJfTTl1TGRsdmNMUkl2Q2twQmpXTnZZMWdFYjluQmE5UUpQS2tBTW5zOEFtYzY3UU1BVzMyYTdaLW8xX1BJXzFjeXlZQjFzWXdndGxTci1SMVA4eE82VVo3TjEzWEdwNEowY3lkWHh6X1hqbUtaVl9pdEdlV3FpTmk1ZF9aRkphYUktQW1zVXNaekRKZVphdDZ3?oc=5",
+   "data": "2026-11-23T05:01:38Z",
+   "coletado_em": "2026-11-23T09:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "f9e9e31cfa38",
    "titulo": "Governo do Espírito Santo inicia alinhamentos com equipe de Pazolini para troca de gestão",
@@ -317,6 +383,20 @@
    "possivel": false,
    "triagem": 9,
    "temas": []
+  },
+  {
+   "id": "ea5af6b91ebb",
+   "titulo": "Agro busca R$ 4 bilhões para seguro rural e reforço no orçamento de 2027",
+   "veiculo": "Web Rádio Terra",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNN0xMOG85TlR6OENEOWtiZHhqMWNVeFZFVWdkZUF1dHZPV2JwdXBFTm84NzR0dEdabEM4RGRHbWZYbmo5bC0xMlQ3dmhqZjQ3eUFOclVMaFEwUzJTOEZyS1dVcGRhbkNmc2FEWGZwc3hpZ1VSVm1hY3l5M1RzbXZ3bWc2ZGs5LWxQOXNfRE9Cc0dsTGpmdUxPaHFJaDlaT3NyOUpnMksySEJxQkxQ?oc=5",
+   "data": "2026-11-23T01:00:47Z",
+   "coletado_em": "2026-11-23T09:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
   },
   {
    "id": "b11ef1d37160",
