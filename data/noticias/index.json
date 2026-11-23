@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-23",
- "gerado_em": "2026-11-23T16:17:18Z",
+ "gerado_em": "2026-11-23T17:25:32Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -19,21 +19,21 @@
    "ok": true,
    "lidos": 9,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 15,
-   "aceitos": 3,
+   "aceitos": 4,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 27,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 35,
+   "lidos": 38,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 30,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -161,8 +161,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 57,
-   "aceitos": 4,
+   "lidos": 56,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -278,20 +278,48 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 247,
-  "generico_sem_ancora": 2,
-  "veiculo_excluido": 24,
-  "outro_estado": 15,
-  "possivel": 16,
-  "exterior_sem_ancora": 4,
-  "sem_contexto_com_tema": 18,
-  "excluir": 18,
+  "sem_contexto": 255,
+  "exterior_sem_ancora": 5,
+  "veiculo_excluido": 28,
+  "outro_estado": 16,
+  "possivel": 19,
+  "sem_contexto_com_tema": 14,
+  "generico_sem_ancora": 1,
+  "excluir": 16,
   "sigla_sem_ancora": 1,
   "veiculo_outra_praca": 3
  },
  "itens": [
+  {
+   "id": "a0d58ce87aeb",
+   "titulo": "Cotistas questionam critério de classificação de concurso da Polícia Civil e levam disputa à Justiça",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/justica/cotistas-questionam-criterio-de-classificacao-de-concurso-da-policia-civil-e-levam-disputa-a-justica/",
+   "data": "2026-11-23T17:25:33Z",
+   "coletado_em": "2026-11-23T17:25:32Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "a5264546a3dc",
+   "titulo": "Dólar supera R$ 6 em dia de votação do ajuste fiscal do governo Lula",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/dolar-supera-r-6-em-dia-de-votacao-do-ajuste-fiscal-do-governo-lula/",
+   "data": "2026-11-23T17:21:26Z",
+   "coletado_em": "2026-11-23T17:25:32Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "556a265a462e",
    "titulo": "Alta dos juros e orçamento federal em 2026",
@@ -419,6 +447,20 @@
    "triagem": 9,
    "temas": [
     "pessoal"
+   ]
+  },
+  {
+   "id": "131fcf53718b",
+   "titulo": "Governo Federal abre licitação para conceder o Forte Orange, em Itamaracá, à iniciativa privada por 30 anos",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOcHhlOUVwRDUzQWp2N094eUpNaGZiZ1BCQmNaNG5EU01HY2RTVndILTFYVWtzMG4yWDNMREwxcWxwV2pXX2ZLeXAtMk9iQTM5Q3V5Q21aWWsyOU44Sld6N0RjeDhmdnVZRG5VVmFxd3lvTWszUFotaklNWjhTU000dWMybE5Gdm1fczBGYlM3YUc1QVJTYzlvcVUtcDZ3TWd5ak1EUXlPeW0ydTBwQ1JHc3hieWlSMFE0UGU5dkMxOGRnQWZDcmpPUXhVS2VjaXdVOGxZelBZOXY5b2tIemVhd1lxRQ?oc=5",
+   "data": "2026-11-23T12:53:47Z",
+   "coletado_em": "2026-11-23T17:25:32Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "contratos"
    ]
   },
   {
