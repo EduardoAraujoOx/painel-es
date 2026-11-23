@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-23",
- "gerado_em": "2026-11-23T15:17:14Z",
+ "gerado_em": "2026-11-23T16:17:18Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 16,
-   "aceitos": 4,
-   "possiveis": 3
+   "lidos": 15,
+   "aceitos": 3,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 3,
+   "lidos": 4,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 23,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 34,
+   "lidos": 35,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -137,8 +137,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
-   "aceitos": 2,
+   "lidos": 26,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -161,8 +161,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
-   "aceitos": 3,
+   "lidos": 57,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 3,
+   "lidos": 2,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 3,
+   "lidos": 6,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 4
   },
   {
@@ -278,20 +278,48 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 4,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 248,
+  "sem_contexto": 247,
   "generico_sem_ancora": 2,
+  "veiculo_excluido": 24,
+  "outro_estado": 15,
   "possivel": 16,
   "exterior_sem_ancora": 4,
   "sem_contexto_com_tema": 18,
-  "excluir": 21,
-  "outro_estado": 14,
-  "veiculo_excluido": 21,
+  "excluir": 18,
   "sigla_sem_ancora": 1,
   "veiculo_outra_praca": 3
  },
  "itens": [
+  {
+   "id": "556a265a462e",
+   "titulo": "Alta dos juros e orçamento federal em 2026",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNRjVGQjNXMVo3MjRpVDIyeGVjaXhBYm5XUkRyZE44MFVIalNOX2Q5NHRrdXRRS29ycGItTDN1T2FHWEJ2T0pxMDc5LU1GdDU1MFM5WTJkQzlxbnJSMHFUVUtFbFZvZk1yUWpjaXdMb1VqOXRaTENDSzVpdGgtTjRJSlBrTW1jcWVFTUZqXzNZOA?oc=5",
+   "data": "2026-11-23T15:37:50Z",
+   "coletado_em": "2026-11-23T16:17:18Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "3ad3fd6250ae",
+   "titulo": "Último dia para se inscrever no concurso do Banestes com 936 vagas",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/concursos/ultimo-dia-para-se-inscrever-no-concurso-do-banestes-com-936-vagas-1126",
+   "data": "2026-11-23T15:33:00Z",
+   "coletado_em": "2026-11-23T16:17:18Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "ae953879d58c",
    "titulo": "Mutirão em Vitória oferece negociação de dívidas com descontos",
@@ -353,7 +381,12 @@
    "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOWmhSVDBJZlQ4amt0SUxzWXJnNlpkc05kc081VHNGMFp4eXhZTWp3a1lhNGJGZGNQRUFyZlZGUGJnZkZLNXd1bmVLdjZvRnp3MzN4SnZ6QklvbDh1QWR1d2ZLR3QxMVJHVGZtWGRMYVE0cnFPZ2phWWRINkVXeW0tTGpOTmJ6M2xlR0xxWmF0OExIa2daZk5pMjJZSmhzSm1UdlR1SWJxazdUVHRaM1dpTUFXbkxpRXNiVWFkMGktSUZwcjYxNzhqMS00N0VpaW1nTjZlamEwZWVOOHRwMnd4VUZPRTA2a25Pay1lQzVR0gHzAUFVX3lxTE1lQmJTZFctZ1hjRzFFR0JmQUd0d3VlaHVKdkpaX1pxaVRBczFZb0hXMjZKaUVYaEMzakxaNkREM0ZUUnNrM01oQkRTbVhxRUhHWHZWb2RkSzJsa1dMOVQwcDV0b0JidEpkRV9NUXFsNWFIWU1Pd3JhSml3WTd0ZHVEenBRcHZla1cteTlpOWVCNlZ4V1V6cmp1bDM1Zy0tZXBmNVA3S2l2dUltWUlFRXpxOXJsZUUxRVlPV01PalJ1M2ExcEp4ZVQtbFBFNFVMUDlhZ1plZi1TM0ZON0xiTjFXZ0tCbVNaV1B4Z2gyZ3NEZVpxVQ?oc=5",
    "data": "2026-11-23T13:54:36Z",
    "coletado_em": "2026-11-23T15:17:14Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "UOL Notícias",
+     "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNTGdLR09VNHYyWUNqVWR2TlIxZlhlcnZwcnJKOElBbzRXLVRGMXZUMDhtSWNRUUQyREM0a1otSkdmRDdxTzJYX0o4ZExEOXBlZXZ2Yzlqb1RuUF9Bck1pTFZ3Z21KNTV2eFdTT3ZlLXd0WWJyc3pFQ2ZLRWhUZE94Qm9TYTc5Wk1xaGYtdWNzY016MEVoamVVTERUUUtHNHNEemtBZWtHYkdLX0Nnd1VJTHhMNUNXaFR1UUgzaXM3YWRwbVdnR0xQM1BCR2lwbkFXZUxpTTFYbUV1cnNZV3Q1TEZOaV9SU3hZVFZiV3gyakVZWmI1VWxtdQ?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 9,
    "temas": [
