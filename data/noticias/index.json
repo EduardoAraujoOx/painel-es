@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-23",
- "gerado_em": "2026-11-23T09:17:13Z",
+ "gerado_em": "2026-11-23T10:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 8,
+   "lidos": 10,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -25,7 +25,7 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 20,
+   "lidos": 21,
    "aceitos": 5,
    "possiveis": 3
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 24,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 34,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -137,8 +137,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 1,
+   "lidos": 24,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -278,20 +278,34 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 4,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 240,
+  "sem_contexto": 245,
   "generico_sem_ancora": 3,
   "exterior_sem_ancora": 5,
-  "possivel": 18,
-  "excluir": 17,
-  "outro_estado": 13,
-  "veiculo_excluido": 19,
-  "sem_contexto_com_tema": 9,
+  "excluir": 16,
+  "possivel": 19,
+  "outro_estado": 12,
+  "veiculo_excluido": 21,
+  "sem_contexto_com_tema": 10,
   "veiculo_outra_praca": 3,
   "sigla_sem_ancora": 5
  },
  "itens": [
+  {
+   "id": "3cb71b18e6ea",
+   "titulo": "IPVA 2027 em Sergipe: veja como emitir o boleto na Sefaz, regras de desconto e quem tem isenção",
+   "veiculo": "Imprensa 24h",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNMTM2TUFndG9WUHJfYmJ0U1ZRWDRBYUdHNFJDQVZRX0hERkFpbnpYbnR5Q3BkanhYMV9vNzM2NGVSZFlCWDhIb2VHbk80djM0R3FfM0VDc0lHRldIbnNhdkFEVFd6cGZqX2RaMGpBalJpQUhwbkgwcjJpSEpCWDg0NExNRHQwYkFjU1VESWdTYUFoNWNjMFR2cWxQQnloc1NITGNRT0o4cHc0MVZ2WnIzUGdpajdVVzAxY2pqR1NR?oc=5",
+   "data": "2026-11-23T10:06:40Z",
+   "coletado_em": "2026-11-23T10:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "885d0bd2e25f",
    "titulo": "Plano de Moretti é só 'primeiro passo', e governo Lula deve fazer outros ajustes fiscais no futuro, afirma Laura Carvalho",
@@ -303,6 +317,20 @@
    "possivel": true,
    "triagem": 9,
    "temas": []
+  },
+  {
+   "id": "8301f72d8116",
+   "titulo": "AVISO DE LICITAÇÃO CONCORRÊNCIA ELETRÔNICA Nº 003/2026 – FMAS Jornal A Tribuna",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxNQ0Q2TktQTWdIWEM4TXNnaGE5MGVnZ3B3VG5oX0FVdFJCUk5seE0zdjA0OWVkQ1hXWTdZamZCdFZMWml0bllNaW4zaGc2MjI2ckR4a3k4Q0xUeHZBVVZ4enlvN0FPd3BLeGFqZ3loZ2RneFpRdkhwYUEyaHIxRUVPTGJxNVg5U1lZS0FXa25xOTdQSXZZRHRjWC1hYUk4TjVWaHdVdnZJVENndmc4SU52a0F3WlQ3ZnAwZFJqYW9HZU11Y2JORXpZQThfUE1qM010bUUyZUo4eXpZMWhZaU05Z3ptZVFseTFTQ0R5Z2xlWXVjTC02Zm9lN1dkSXNfejJFbFk4X1BGcXd2SVhBSmUzX3hENkM2X1MzbUYtMXBGSE52VTFyVGc?oc=5",
+   "data": "2026-11-23T08:40:27Z",
+   "coletado_em": "2026-11-23T10:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "contratos"
+   ]
   },
   {
    "id": "c8a30cf2e2c8",
