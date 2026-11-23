@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-23",
- "gerado_em": "2026-11-23T18:17:15Z",
+ "gerado_em": "2026-11-23T19:17:16Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,17 +17,17 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 2,
-   "possiveis": 0
+   "lidos": 10,
+   "aceitos": 3,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 21,
-   "aceitos": 3,
-   "possiveis": 5
+   "lidos": 26,
+   "aceitos": 5,
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 26,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 38,
+   "lidos": 43,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 30,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 10,
+   "lidos": 14,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -155,13 +155,13 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 57,
+   "lidos": 58,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 1,
+   "lidos": 8,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 4,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Folha Vitória",
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -278,21 +278,61 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 265,
-  "oficial_sem_tema": 3,
-  "excluir": 18,
-  "veiculo_excluido": 30,
-  "outro_estado": 18,
-  "possivel": 17,
+  "sem_contexto": 272,
+  "generico_sem_ancora": 3,
+  "oficial_sem_tema": 4,
+  "veiculo_excluido": 29,
+  "excluir": 23,
+  "outro_estado": 20,
+  "possivel": 16,
   "exterior_sem_ancora": 4,
   "sem_contexto_com_tema": 16,
-  "generico_sem_ancora": 2,
   "sigla_sem_ancora": 2,
-  "veiculo_outra_praca": 4
+  "veiculo_outra_praca": 6
  },
  "itens": [
+  {
+   "id": "ffa285375140",
+   "titulo": "TV Ufes em Alegre e São Mateus será operada pela Fundação Carmélia",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQUEdiNEp3NkpSTzNZMjJoXzRPMHgwaGxocExPN09wU3h5N1pnRzBRclB1bmxQcFJoWjd0Q2pid3hBQ1RuZHFqUmZTT2RXNzdpVlJzMVl3WnlVWlNfZl9kZ2ZyNXIweUhqV3hOU2s5SmFUWWFFdVdpX0FxOFdFaEttTFJFUndPQ3RuWllPVEstUWFJdw?oc=5",
+   "data": "2026-11-23T19:08:00Z",
+   "coletado_em": "2026-11-23T19:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "192cbf2797c0",
+   "titulo": "Crise do Ueno testa fôlego do Paraguai para atrair empresas que buscam menos impostos",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/mundo/2026/11/crise-do-ueno-paraguai/",
+   "data": "2026-11-23T18:49:35Z",
+   "coletado_em": "2026-11-23T19:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "c222b414ccc8",
+   "titulo": "Chitãozinho e Xororó anunciam aposentadoria após 56 anos de carreira",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/hz/tv-e-famosos/chitaozinho-e-xororo-anunciam-aposentadoria-apos-56-anos-de-carreira-1126",
+   "data": "2026-11-23T18:41:48Z",
+   "coletado_em": "2026-11-23T19:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "30e4a9942941",
    "titulo": "Paraná registra 2,7 mil mortes no trânsito e Detran alerta para infrações gravíssimas",
@@ -4553,6 +4593,10 @@
     {
      "veiculo": "Noroeste News",
      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPbmdBOXc1UlZVYVNfd2JVTnVaNWpQVWxiOEdweDFRS1o5XzZoQnJhejNlS0tFOVVHU25lSVVDMW56VXAtTFBYUHZXWXRWUWp4WHFWcEpKU2I2OXVVSEt4dXJ4dUcyUXRpYTVwQmMxUTlzMzF3WlM4MEsxUVVRVi1PSEFvOA?oc=5"
+    },
+    {
+     "veiculo": "SiteBarra",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPM2JaQWJGdUUzSEhKSWk4c3l2enlWQ19OQTl0bzl4V0dLQk14WTNOelFfZ3EtbWxLV3JLUW5VZGNUU3h4VlIwWndtRFBpTTlVU2hsYVIzbTF6MVpzVTdsek1laTZOVFQ2Wk5COHZtLUJsenN2R2pBb05nak56Ymh5U3lQRzk2UFJqRU9MTGVvRTJXWXFDZ0VoTy1CU1NNc2ZGVkpFWkVzUTJiQW4tZjdhdW5ITlVxQklmd21Ldg?oc=5"
     }
    ],
    "possivel": false,
