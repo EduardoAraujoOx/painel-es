@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-23",
- "gerado_em": "2026-11-23T20:17:14Z",
+ "gerado_em": "2026-11-23T21:17:16Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,7 +25,7 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 24,
+   "lidos": 25,
    "aceitos": 4,
    "possiveis": 6
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 10,
+   "lidos": 11,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -89,17 +89,17 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 28,
-   "aceitos": 2,
+   "lidos": 25,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 51,
+   "lidos": 56,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 0,
-   "aceitos": 0,
+   "lidos": 3,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 1,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 27,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 16,
+   "lidos": 20,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -155,14 +155,14 @@
    "ok": true,
    "lidos": 29,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 59,
-   "aceitos": 4,
+   "lidos": 58,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 3
   },
   {
@@ -218,7 +218,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -278,21 +278,48 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 5,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 284,
-  "exterior_sem_ancora": 4,
+  "sem_contexto": 293,
   "oficial_sem_tema": 4,
-  "veiculo_excluido": 27,
-  "excluir": 24,
-  "possivel": 16,
-  "sem_contexto_com_tema": 15,
+  "veiculo_excluido": 29,
+  "excluir": 32,
+  "possivel": 18,
+  "sem_contexto_com_tema": 16,
   "generico_sem_ancora": 1,
-  "outro_estado": 20,
+  "outro_estado": 19,
   "veiculo_outra_praca": 8,
-  "sigla_sem_ancora": 1
+  "sigla_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "ecab3481648d",
+   "titulo": "Pontos na CNH deixam de contar para suspensão após 12 meses, mas seguem no prontuário do motorista no Detran",
+   "veiculo": "Mix Vale",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQTkN0RVlETTZhQ3l6TGM4YTZOOGFHRnN6cEhyQy1FVmxJT25TQUlUVDhxYlRLaG5HbXN5QXZhTXo2eENaRnpCVER1Q3Z0VVFhT0E2V1hkQVBZbjZUUDFndmkyajNzQXJlcEwxNDdWTXZkRllZSVFvSVl2YmtKRXhZTkloYnJuelJvSTZkVUV5S1FRTV82bWVLWi01cVdOVEpaREtRV2tTOTJKOVdKNF9LbW1DazZIaHlKb0p5WElwb3d2ZHFFZmxocTc4V0tXVzdPUjBDQ0pvQWdvRnFacFdv?oc=5",
+   "data": "2026-11-23T21:09:57Z",
+   "coletado_em": "2026-11-23T21:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "a4b01d44fe5e",
+   "titulo": "Câmara pode votar ajuste fiscal nesta segunda-feira",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBZREdwSWFCWWN1U2liZHY5dGlKR3FCRnVzcjdBVmo5dmpQb2xoQUpPUHJqYk9xb2xkZklMZlFWNllsUTBCblk1NkhtSmNuOWhJNUFUV2xZTTZPNC1SYXlvT0RYUzN0WnpzdGNBS0Y2NVVxcFJheGVPaQ?oc=5",
+   "data": "2026-11-23T20:30:51Z",
+   "coletado_em": "2026-11-23T21:17:16Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "fd85830131b1",
    "titulo": "Estudantes da Fames apresentam recital de encerramento do Laboratório de Performance no Theatro Carlos Gomes",
@@ -438,6 +465,21 @@
    "possivel": true,
    "triagem": 9,
    "temas": []
+  },
+  {
+   "id": "b3473796498c",
+   "titulo": "TCE-ES determina cautelarmente que Serra não prossiga com fases finais de licitação para a contratação de serviços de Regularização Fundiária",
+   "veiculo": "TCEES",
+   "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNSy1qb0FGOWl2eF8xOGY5X0xGUkNVRTBTZG02cG1aVXdvdkI2SmJYWTFnelA3S05uWVh1TVF1RjV0MGxaYWpja1FwQ3ZMRWFWU1JmQ3hUWEphdnI1c2oydVE5TEU2MElMbWVwMHd6cjhLbUN6ZFdCd2dXczMwTHljbUtiV2loNkFPSVZxa3h3UWNYYlVpa1BuSGVEN1VFbVFybGJEUmNPOW9qNzM0cGEybGNOb2RiMjlRU01MU29rZFZ6dk1qMmlaTV9obS1LX2pjdHd3TS1MZUQwazQ4c2szQUNXZWNDMHlKSnZaZ2RHdFJhR1ZRempnTFI4WXYxS0VUdmkzWTJZY1F4U19jRVZNS0JR?oc=5",
+   "data": "2026-11-23T17:44:22Z",
+   "coletado_em": "2026-11-23T21:17:16Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "contratos",
+    "controle"
+   ]
   },
   {
    "id": "db313dc72a13",
