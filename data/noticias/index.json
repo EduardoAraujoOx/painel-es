@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-23",
- "gerado_em": "2026-11-23T12:17:14Z",
+ "gerado_em": "2026-11-23T13:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,8 +25,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 19,
-   "aceitos": 4,
+   "lidos": 16,
+   "aceitos": 3,
    "possiveis": 3
   },
   {
@@ -41,15 +41,15 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 4,
+   "lidos": 4,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -81,15 +81,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 1,
+   "lidos": 3,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 24,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 34,
+   "lidos": 35,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 27,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 42,
    "aceitos": 2,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 4,
+   "lidos": 3,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -194,7 +194,7 @@
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
    "lidos": 9,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 1,
-   "possiveis": 7
+   "possiveis": 5
   },
   {
    "fonte": "Folha Vitória",
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -278,20 +278,34 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 250,
+  "sem_contexto": 255,
   "generico_sem_ancora": 2,
   "exterior_sem_ancora": 5,
-  "excluir": 17,
-  "possivel": 20,
+  "possivel": 19,
   "sem_contexto_com_tema": 14,
-  "outro_estado": 12,
+  "excluir": 19,
+  "outro_estado": 14,
   "veiculo_excluido": 20,
-  "veiculo_outra_praca": 4,
-  "sigla_sem_ancora": 5
+  "veiculo_outra_praca": 5,
+  "sigla_sem_ancora": 6
  },
  "itens": [
+  {
+   "id": "07d4351808a0",
+   "titulo": "Goggi anuncia abono de R$ 3 mil para servidores da Câmara",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/goggi-anuncia-abono-de-3-mil/",
+   "data": "2026-11-23T13:00:15Z",
+   "coletado_em": "2026-11-23T13:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "9490f0c60926",
    "titulo": "IBGE, Banestes e Idaf: dez seleções reúnem mais de 28 mil vagas com salários de até R$ 17.645",
@@ -317,6 +331,18 @@
    "temas": [
     "financas"
    ]
+  },
+  {
+   "id": "eb0ed7f5322a",
+   "titulo": "Plano de Moretti é um 'primeiro passo', e governo Lula pode fazer outros ajustes fiscais no futuro, afirma Laura Carvalho",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/mundo/plano-de-moretti-e-um-primeiro-passo-e-governo-lula-pode-fazer-outros-ajustes-fiscais-no-futuro-afirma-laura-carvalho-1126",
+   "data": "2026-11-23T08:59:00Z",
+   "coletado_em": "2026-11-23T13:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "885d0bd2e25f",
