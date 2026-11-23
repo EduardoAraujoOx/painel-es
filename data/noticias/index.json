@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-23",
- "gerado_em": "2026-11-23T14:17:13Z",
+ "gerado_em": "2026-11-23T15:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -41,7 +41,7 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 36,
+   "lidos": 34,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 49,
+   "lidos": 29,
    "aceitos": 2,
-   "possiveis": 4
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 55,
+   "lidos": 100,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -210,8 +210,8 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
-   "possiveis": 5
+   "aceitos": 2,
+   "possiveis": 4
   },
   {
    "fonte": "Folha Vitória",
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -278,20 +278,48 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 4,
  "descartes_na_coleta": {
-  "sem_contexto": 255,
+  "sem_contexto": 248,
   "generico_sem_ancora": 2,
-  "exterior_sem_ancora": 5,
-  "possivel": 18,
+  "possivel": 16,
+  "exterior_sem_ancora": 4,
   "sem_contexto_com_tema": 18,
   "excluir": 21,
-  "outro_estado": 16,
+  "outro_estado": 14,
   "veiculo_excluido": 21,
-  "veiculo_outra_praca": 5,
-  "sigla_sem_ancora": 5
+  "sigla_sem_ancora": 1,
+  "veiculo_outra_praca": 3
  },
  "itens": [
+  {
+   "id": "ae953879d58c",
+   "titulo": "Mutirão em Vitória oferece negociação de dívidas com descontos",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/economia/2026/11/negociacao-de-dividas-vix/",
+   "data": "2026-11-23T15:05:25Z",
+   "coletado_em": "2026-11-23T15:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "036708c17fc9",
+   "titulo": "Após falhas em edital, Vitória terá de fazer nova licitação para resgate de animais abandonados",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/cotidiano/apos-falhas-em-edital-vitoria-tera-de-fazer-nova-licitacao-para-resgate-de-animais-abandonados-1126",
+   "data": "2026-11-23T15:05:22Z",
+   "coletado_em": "2026-11-23T15:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "99f81a78a28e",
    "titulo": "Investimento no ES: gigante chinesa negocia fábrica de baterias no Estado",
@@ -316,6 +344,20 @@
    "triagem": 9,
    "temas": [
     "financas"
+   ]
+  },
+  {
+   "id": "cee3ce0e7bdb",
+   "titulo": "Promotores no Espírito Santo ganham aval para escolher 561 assessores sem concurso público",
+   "veiculo": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOWmhSVDBJZlQ4amt0SUxzWXJnNlpkc05kc081VHNGMFp4eXhZTWp3a1lhNGJGZGNQRUFyZlZGUGJnZkZLNXd1bmVLdjZvRnp3MzN4SnZ6QklvbDh1QWR1d2ZLR3QxMVJHVGZtWGRMYVE0cnFPZ2phWWRINkVXeW0tTGpOTmJ6M2xlR0xxWmF0OExIa2daZk5pMjJZSmhzSm1UdlR1SWJxazdUVHRaM1dpTUFXbkxpRXNiVWFkMGktSUZwcjYxNzhqMS00N0VpaW1nTjZlamEwZWVOOHRwMnd4VUZPRTA2a25Pay1lQzVR0gHzAUFVX3lxTE1lQmJTZFctZ1hjRzFFR0JmQUd0d3VlaHVKdkpaX1pxaVRBczFZb0hXMjZKaUVYaEMzakxaNkREM0ZUUnNrM01oQkRTbVhxRUhHWHZWb2RkSzJsa1dMOVQwcDV0b0JidEpkRV9NUXFsNWFIWU1Pd3JhSml3WTd0ZHVEenBRcHZla1cteTlpOWVCNlZ4V1V6cmp1bDM1Zy0tZXBmNVA3S2l2dUltWUlFRXpxOXJsZUUxRVlPV01PalJ1M2ExcEp4ZVQtbFBFNFVMUDlhZ1plZi1TM0ZON0xiTjFXZ0tCbVNaV1B4Z2gyZ3NEZVpxVQ?oc=5",
+   "data": "2026-11-23T13:54:36Z",
+   "coletado_em": "2026-11-23T15:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
    ]
   },
   {

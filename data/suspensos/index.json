@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-23",
- "gerado_em": "2026-11-23T11:19:53Z",
+ "gerado_em": "2026-11-23T15:19:55Z",
  "primeiro_levantamento": "2026-10-30",
  "baseline": false,
  "contagem": {
@@ -246,9 +246,7 @@
    "valor": 21980.0
   }
  ],
- "novos": [
-  "107|Contrato 2026.000012.45101.01/2026|Contrato|05888090000112|2026-03-16"
- ],
+ "novos": [],
  "saidas": [],
  "itens": [
   {
