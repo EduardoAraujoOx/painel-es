@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-23",
- "gerado_em": "2026-11-23T17:25:32Z",
+ "gerado_em": "2026-11-23T18:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 15,
-   "aceitos": 4,
-   "possiveis": 2
+   "lidos": 21,
+   "aceitos": 3,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 8,
+   "lidos": 10,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 0,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 29,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 10,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -155,13 +155,13 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 2,
-   "possiveis": 0
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 56,
+   "lidos": 57,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -210,8 +210,8 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
-   "possiveis": 4
+   "aceitos": 4,
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -278,20 +278,109 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 255,
-  "exterior_sem_ancora": 5,
-  "veiculo_excluido": 28,
-  "outro_estado": 16,
-  "possivel": 19,
-  "sem_contexto_com_tema": 14,
-  "generico_sem_ancora": 1,
-  "excluir": 16,
-  "sigla_sem_ancora": 1,
-  "veiculo_outra_praca": 3
+  "sem_contexto": 265,
+  "oficial_sem_tema": 3,
+  "excluir": 18,
+  "veiculo_excluido": 30,
+  "outro_estado": 18,
+  "possivel": 17,
+  "exterior_sem_ancora": 4,
+  "sem_contexto_com_tema": 16,
+  "generico_sem_ancora": 2,
+  "sigla_sem_ancora": 2,
+  "veiculo_outra_praca": 4
  },
  "itens": [
+  {
+   "id": "30e4a9942941",
+   "titulo": "Paraná registra 2,7 mil mortes no trânsito e Detran alerta para infrações gravíssimas",
+   "veiculo": "MZ Notícia",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNd0FNNUM1MnF1ZUt5bzI4Y2pBVTVrYnEtTzNoQlJqamY5V1JvYW56QmNzQlpCa1l5SWlIVW9xUWpUVURxbnZQRVYxSjU3LWgxMlZOUkZ3ZXNKaG0xMWJ2WlBmTzdmX2otaTdjVVVMU2FyUDlGT2pmQU5rejNaNjdhXzdzeUlvYlhyU05RVGw2T2tQNUhzNWRUNnI0RF9lOFg4V3hOdWxLVy1RcVhkWDhF?oc=5",
+   "data": "2026-11-23T18:00:42Z",
+   "coletado_em": "2026-11-23T18:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "992168b18095",
+   "titulo": "O vereador de Porto Velho e deputado estadual eleito Fernando Silva (Republicanos) parabenizou os 30 estudantes da rede estadual de ensino de Rondônia que retornaram ao Brasil neste domingo (22), após quatro meses de intercâmbio nos Estados Unid",
+   "veiculo": "Instagram",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE94UXlxWXlyX2tCNkJId3FuN3BaUXA4ZXk4alBzXzRUQzR6ZzFZbERjVDlhZjhJcS01MzB6ZTZ4ejJBT2RPZFZFSDVrOXJ1TkNDakE?oc=5",
+   "data": "2026-11-23T17:49:01Z",
+   "coletado_em": "2026-11-23T18:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "756cc92b3273",
+   "titulo": "Hemoes prepara homenagens para comemoração do Dia do Doador Voluntário de Sangue nos hemocentros",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdi1WS3lTSGV3RHBUaS1tM0UtYzBMUUhYZTFoSG5oNmg2clFKeHdLNkJGWElrWTRxOGJqUGxhUXIzVkpjbmx3YnVjTFVPckkzRXREZk5iSlFpSmRIUEFxUnFOWGZGakhlbDg0NWpkS0ZleHRGcVMxeW1PQWl1bDREbjFvMW0wai1rTjA2ekI0VWtwSHVGelJuQWlxd2lVX2pQOXNBOU1vcDZGb0UxUnQ1Y1paSk84UFBialE?oc=5",
+   "data": "2026-11-23T17:48:00Z",
+   "coletado_em": "2026-11-23T18:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "db313dc72a13",
+   "titulo": "Espírito Santo soma 74 medalhas na estreia e inicia segunda semana das Paralimpíadas Escolares",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNa3hYT1lmMWIxMThRcEh0cGlpeUNxYy02UEYyTnJVdTlNQ0RweENLaUtsWE5LTVNJUzg5UVl1U3F4MmQ5TzBsSkdqQWJKR05NTjB0c2Z6NmotNzg0MGR6aGJyazVGTl9GeEdmU1cyVUtVUmItaDdWQlZxY1JkRzdzYks2Z3NaWnZnSWk5UVY1aGc3UzBfOUNFQ3pUZ2ItX3U2STVPWFllSWhKMUhfWFZuTG4zb0FqVUE?oc=5",
+   "data": "2026-11-23T17:44:00Z",
+   "coletado_em": "2026-11-23T18:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "be2882a243a8",
+   "titulo": "Dólar perto de R$ 8 e fuga de US$ 460 bi: gestora vê cenário sombrio no Brasil sem ajuste fiscal",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/dolar-perto-de-r-8-e-fuga-de-us-460-bi-gestora-ve-cenario-sombrio-no-brasil-sem-ajuste-fiscal/",
+   "data": "2026-11-23T17:43:12Z",
+   "coletado_em": "2026-11-23T18:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "2b0c07032a20",
+   "titulo": "Prodest promove visitas educativas a escolas públicas na Grande Vitória",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxORTVyRTY2aFVlZVdxNmRfbks1REJSLTZrQ1h4cU9DdVBBWWttdUNRNWdMWlBCZVY2Z2NqTzlPWGszRnk5ZURxN1dQVW5QcC11NEd1ZlRzMzdSS3VIM1ZPSFJIelRDbEs3SXhaZ1BWb2tHU0JabWdIRXdHcGN5OU4yeHBuVDl3c1E4VXVSeFRZXzFoUnM4VVNNaw?oc=5",
+   "data": "2026-11-23T17:42:00Z",
+   "coletado_em": "2026-11-23T18:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "e24f72cf6bf9",
+   "titulo": "Com 48 seleções, Fifa confirma sedes das Copas Femininas de 2031 e 2035",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/copa-do-mundo-feminina-de-futebol/com-48-selecoes-fifa-confirma-sedes-das-copas-femininas-de-2031-e-1126",
+   "data": "2026-11-23T17:33:50Z",
+   "coletado_em": "2026-11-23T18:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "a0d58ce87aeb",
    "titulo": "Cotistas questionam critério de classificação de concurso da Polícia Civil e levam disputa à Justiça",
