@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-23",
- "gerado_em": "2026-11-23T10:17:14Z",
+ "gerado_em": "2026-11-23T12:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,23 +17,23 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 10,
+   "lidos": 7,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 21,
-   "aceitos": 5,
+   "lidos": 19,
+   "aceitos": 4,
    "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -41,15 +41,15 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 3,
+   "lidos": 5,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 5,
+   "lidos": 7,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 25,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -98,7 +98,7 @@
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
    "lidos": 34,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 2
   },
   {
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 26,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -154,7 +154,7 @@
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 31,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 4
   },
   {
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -267,7 +267,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Sim Notícias",
@@ -280,18 +280,30 @@
  ],
  "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 245,
-  "generico_sem_ancora": 3,
+  "sem_contexto": 250,
+  "generico_sem_ancora": 2,
   "exterior_sem_ancora": 5,
-  "excluir": 16,
-  "possivel": 19,
+  "excluir": 17,
+  "possivel": 20,
+  "sem_contexto_com_tema": 14,
   "outro_estado": 12,
-  "veiculo_excluido": 21,
-  "sem_contexto_com_tema": 10,
-  "veiculo_outra_praca": 3,
+  "veiculo_excluido": 20,
+  "veiculo_outra_praca": 4,
   "sigla_sem_ancora": 5
  },
  "itens": [
+  {
+   "id": "9490f0c60926",
+   "titulo": "IBGE, Banestes e Idaf: dez seleções reúnem mais de 28 mil vagas com salários de até R$ 17.645",
+   "veiculo": "Portal 27",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQd0hBdHF5UnoyLVhpWnh3Z1AtbVpubVFQWmJ1bVBDMEgzRDYzSXlSbDVvcWI5S1FhTG1lZFJPTFItQWV0cnNWRlNNMTVMZjZFR3psRmxvaWR1MTBURUJnNl9CQ3hqWWd3cDY4TGhQd3FweGQtbGFmYkhFQ3hpcVhEUXVYQ3AyWDBzUEhWcl9qZlZlcm9SS2ZiemE2Vm1HWjVVdm1BLXJBd182Ujlnenpsc3o3YWEyb094NXpz?oc=5",
+   "data": "2026-11-23T11:58:51Z",
+   "coletado_em": "2026-11-23T12:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "3cb71b18e6ea",
    "titulo": "IPVA 2027 em Sergipe: veja como emitir o boleto na Sefaz, regras de desconto e quem tem isenção",
@@ -344,6 +356,20 @@
    "triagem": 9,
    "temas": [
     "pessoal"
+   ]
+  },
+  {
+   "id": "337c793b3fb2",
+   "titulo": "Câmara inicia hoje análise do ajuste fiscal após resistências no Senado",
+   "veiculo": "Sim Notícias",
+   "url": "https://simnoticias.com.br/politica/camara-inicia-hoje-analise-do-ajuste-fiscal-apos-resistencias-no-senado/",
+   "data": "2026-11-23T06:37:04Z",
+   "coletado_em": "2026-11-23T12:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
    ]
   },
   {
