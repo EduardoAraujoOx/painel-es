@@ -1,12 +1,12 @@
 {
- "ref": "2026-11-18",
- "gerado_em": "2026-11-18T21:20:01Z",
+ "ref": "2026-11-23",
+ "gerado_em": "2026-11-23T11:19:53Z",
  "primeiro_levantamento": "2026-10-30",
  "baseline": false,
  "contagem": {
   "suspenso": 25,
   "rescindido": 76,
-  "anulado": 50
+  "anulado": 51
  },
  "serie": [
   {
@@ -26,6 +26,12 @@
    "suspenso": 25,
    "rescindido": 76,
    "anulado": 50
+  },
+  {
+   "data": "2026-11-23",
+   "suspenso": 25,
+   "rescindido": 76,
+   "anulado": 51
   }
  ],
  "por_orgao": [
@@ -79,6 +85,13 @@
    "valor": 1666102.9
   },
   {
+   "orgao": "SECRETARIA DE ESTADO DA SEGURANÇA PÚBLICA E DEFESA SOCIAL",
+   "suspenso": 1,
+   "rescindido": 2,
+   "anulado": 2,
+   "valor": 1499007.82
+  },
+  {
    "orgao": "SUPERINTENDÊNCIA REGIONAL DE SAÚDE DE CACHOEIRO DE ITAPEMIRIM",
    "suspenso": 0,
    "rescindido": 4,
@@ -105,13 +118,6 @@
    "rescindido": 1,
    "anulado": 2,
    "valor": 24146685.16
-  },
-  {
-   "orgao": "SECRETARIA DE ESTADO DA SEGURANÇA PÚBLICA E DEFESA SOCIAL",
-   "suspenso": 1,
-   "rescindido": 2,
-   "anulado": 1,
-   "valor": 623037.81
   },
   {
    "orgao": "HOSPITAL E MATERNIDADE SILVIO AVIDOS",
@@ -240,7 +246,9 @@
    "valor": 21980.0
   }
  ],
- "novos": [],
+ "novos": [
+  "107|Contrato 2026.000012.45101.01/2026|Contrato|05888090000112|2026-03-16"
+ ],
  "saidas": [],
  "itens": [
   {
@@ -998,6 +1006,24 @@
    "categoria": "rescindido",
    "ano": "2025",
    "visto_em": null
+  },
+  {
+   "id": "107|Contrato 2026.000012.45101.01/2026|Contrato|05888090000112|2026-03-16",
+   "orgao": "SECRETARIA DE ESTADO DA SEGURANÇA PÚBLICA E DEFESA SOCIAL",
+   "orgao_id": "107",
+   "documento": "Contrato 2026.000012.45101.01/2026",
+   "tipo": "Contrato",
+   "fornecedor": "NEW FITNESS COMERCIO E MANUTENÇÃO DE EQUIPAMENTOS DE GINASTICA  LTDA",
+   "cnpj": "05888090000112",
+   "objeto": "AQUISIÇÃO EQUIPAMENTOS PARA A ACADEMIA DO CORPO DE BOMBEIROS MILITAR DO ESTADO DO ESPÍRITO SANTO – RECURSO FESP.",
+   "valor_inicial": 875970.01,
+   "valor_final": 875970.01,
+   "celebracao": "2026-03-16",
+   "fim": "2026-06-15",
+   "situacao": "Instrumento Contratual Revogado",
+   "categoria": "anulado",
+   "ano": "2026",
+   "visto_em": "2026-11-23T11:19:53Z"
   },
   {
    "id": "168|Contrato 2024.000146.44928.01/2024|Contrato|19679176000140|2025-02-04",

@@ -1,6 +1,6 @@
 {
- "gerado_em": "2026-11-22T21:17:38Z",
- "ref": "2026-11-22",
+ "gerado_em": "2026-11-23T11:17:45Z",
+ "ref": "2026-11-23",
  "desde": "2026-10-04",
  "estados": [
   {
@@ -8,14 +8,14 @@
    "nome": "Alagoas",
    "eleito": "JHC",
    "partido": "PSDB",
-   "total": 151
+   "total": 152
   },
   {
    "uf": "AP",
    "nome": "Amapá",
    "eleito": "Dr. Furlan",
    "partido": "PSD",
-   "total": 43
+   "total": 44
   },
   {
    "uf": "AM",
@@ -50,21 +50,21 @@
    "nome": "Paraná",
    "eleito": "Sergio Moro",
    "partido": "PL",
-   "total": 216
+   "total": 218
   },
   {
    "uf": "RJ",
    "nome": "Rio de Janeiro",
    "eleito": "Douglas Ruas",
    "partido": "PL",
-   "total": 226
+   "total": 229
   },
   {
    "uf": "RN",
    "nome": "Rio Grande do Norte",
    "eleito": "Cadu Xavier",
    "partido": "PT",
-   "total": 136
+   "total": 137
   },
   {
    "uf": "RS",
@@ -92,7 +92,7 @@
    "nome": "Tocantins",
    "eleito": "Vicentinho Júnior",
    "partido": "PSDB",
-   "total": 158
+   "total": 163
   }
  ],
  "temas": {
@@ -106,11 +106,69 @@
   "fndr": "FNDR e reforma tributária"
  },
  "contagem": {
-  "total": 1947,
-  "medidas": 604,
-  "equipe": 1343
+  "total": 1960,
+  "medidas": 609,
+  "equipe": 1351
  },
  "itens": [
+  {
+   "id": "50bcbf493f9c",
+   "titulo": "Em evento da Aciara, Vicentinho Júnior anuncia mutirão de cirurgias em Araguaína para janeiro e isenções no IPVA",
+   "veiculo": "Cleber Toledo",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNUnhibGpldi1YNlF3b0JQNHEwWHhqU3RFRzFDYzE0M1BhREVGMTJfZC0xYlF4RlBmNzBNbFNBVjNiVHVCQ2hVcDZKbC1WSkZiM2c2WUJpZDJHNnVVX2pSMV9fbEhGcWk3YzdnbVdUNUhCTFVJQXpDOVdvYlF2S2RmMG1YSGNlZDJpenVDT0J5LVpqNFVfa3c1YURWaURYMWhQUnY5RmdneFRaYXk3RkdINC1QWWtTcGpxTURJVlBDTkpnWWJJbkhJWWlBcG1jYjJvWF8tQ3hJQWtkbkNOQXFyY0RoSQ?oc=5",
+   "data": "2026-11-23T11:14:00Z",
+   "coletado_em": "2026-11-23T11:17:45Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "33bb6c23e1e0",
+   "titulo": "Sergio Moro confirma nomes do alto escalão da Segurança no Paraná",
+   "veiculo": "Tribuna do Paraná",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQMlBiVTZSblRhbjcyemNId1R3dkJVS1B3NWtGc3dmcEVaV1pIMThqb09pcko1RGdEb0kwOWJ4YkszZXhJLVZIX3NKdUw0YkhSZEhlZG9XRzdXZEx0S1hIVWFJQkpTTll3TUNZbXlKcDVPLTVqdDBpOURHS29UUGlZVjQzMk9Eb01acTZCa1N0WDVJTHJYV3NndzNieFJhemlvQTFBb2ktRlpuQdIBrwFBVV95cUxQNUpFbUVpYWtYRFFoV0ZZdWVrMFNnaDk3YUdQem1VU0lWRXZCVkk1TkJUaXJJYlB2NkctWUpWYmtURm44VG9JSTFBVVNMWEt2YVFNMXV6R2M5SVlBbGo3QU5xZTJEV2xXYVY1ZXR3aXY2TVZjTU1HeHY5bUxFc3pCM2pRMGlGWGV3SzVQUDRBSV9JWmczU3dvanUyT21MTEsteEVxVnk2TnZaTGUyaGQw?oc=5",
+   "data": "2026-11-23T10:21:00Z",
+   "coletado_em": "2026-11-23T11:17:45Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "d9935a41d37b",
+   "titulo": "51 dias após ser derrotado, Clécio enfim inicia transição de governo nesta terça (24)",
+   "veiculo": "Ponto da Pauta",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9rZFowWUFVcXR4TzZXMUVIaENrZ0dEN1lCYkxvaV9BNkN1VEp0ZTJTWG13MTNsZXdRT0NBZG1VTS1PYjBmVFZmNE1jTDdLYnhnVmt3c19aYU9Pc01vMDBXeFlBZFlOa0RSai1ISlMtdw?oc=5",
+   "data": "2026-11-23T09:49:23Z",
+   "coletado_em": "2026-11-23T11:17:45Z",
+   "outras": [],
+   "ufs": [
+    "AP"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "04153756d8d6",
+   "titulo": "Incêndio, sistema fora do ar e ataque hacker: transição de Paulo Dantas para JHC acumula episódios que chamam atenção",
+   "veiculo": "Francês News",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQY21PbUg3MlBtWUkxSDVTSnhLNGQ4eUNGNFc3U2JDYk94d2VqWUVNbFUxblIyTkZoem5tNUNoSlh5T2ltUTVhU2QyckhPTTVPRWRnLW84eElJQ0pwNG5sODFkNHNYbGVST3I4WEdNU2FuRm1KNExoNm5oMHNLY0JIa1RweTRQSFRwWGZhbTQ2LUJETFhIMXZTaUpobjlpRTJib0NjSG5qZjhkYktiVUkyUHI4VDhGV05Pa19YTldKWmkxMWxYY0xtb1VhV2JTVTUzVUphN05YU28wTnZLaUtodGl6b3VwdXNxcWxaRUdDQ0VKc3MtRTdV?oc=5",
+   "data": "2026-11-22T22:00:00Z",
+   "coletado_em": "2026-11-23T11:17:45Z",
+   "outras": [],
+   "ufs": [
+    "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
   {
    "id": "760d7b6b0017",
    "titulo": "Tom incisivo de futuro secretário do governo Zucco preocupa",
@@ -373,6 +431,23 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "b90dde006fd5",
+   "titulo": "Governo do RN apresenta plano à Justiça para enfrentar déficit histórico na Previdência",
+   "veiculo": "Tribuna do Norte",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPVEFHYndQMWdzUndLeU5VMHdzcDVsRkhmd0UzMzZvWENRZWItZTk0QTc4d3FDMWZkY0hHb2RsQTMybkVnSTFFQ21vQWxfRkpkYmJBS3RHZlNkRUxLR29OZk40UmRVQkp5WC1kSWJkS3N4WGsycFhFTmdrVU5UR1pHRzBRajJtOHNVdzJIaU9GOHZ6VmxVUDQzZ1hvTXlPWTM2cXJXRnR2QVV1bzdBaWo4Ql9TNkRxWUtsX1JvUGV5N1JOMFQ0bDJyNkVCM2tUcGZ3TU9ReQ?oc=5",
+   "data": "2026-11-20T21:53:03Z",
+   "coletado_em": "2026-11-23T11:17:45Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [
+    "diagnostico",
+    "previdencia"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "cfceac035317",
@@ -2269,6 +2344,20 @@
    ],
    "ufs": [
     "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "b67624627177",
+   "titulo": "Sergio Moro anuncia ex-procurador da Lava Jato para comandar Secretaria Anticorrupção do Paraná",
+   "veiculo": "CRN1.com",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQcGlpcVh2RzMxRGNGVDVOY3lzYzBNVk5hS2llNGRBWklKdzh5Sll6ajRFTE9sbmVkaXpSMzE3V3VjUFFjNEU0OXFyNTVUMU93TFZESDBfM2VnVHNIbTdpMlR6bVFFbEcwSUM4T1dpV3p6NzVUZEJRTnROd3RRdTlGZkdzVWY3b2g1bFAwUy15S3ZFODJVc1dISmtBY1V0TktMWDJxQzZvM1NHWHpmLW1hUHBqYUdfVkNuZkhsV3ZQRmd6aFdKWkE?oc=5",
+   "data": "2026-11-18T18:50:58Z",
+   "coletado_em": "2026-11-23T11:17:45Z",
+   "outras": [],
+   "ufs": [
+    "PR"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -13009,6 +13098,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "78a26910c2b7",
+   "titulo": "Vicentinho vai ao HGP, ouve pacientes e profissionais e identifica desafios para o novo governo",
+   "veiculo": "AF Notícias",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTXRwSGNHSmFqRmJXN3kzWjB4SktLQXhFc0RMTDA2TXNTRVpvZmhobGQzYkhRYjIzeWpUb3FlN1VILXhRX254YWNTNGR1UWg1VWxQWWZSQXVROWJaVzZUXzhSbWJZRTFJdFc5SFhKSFJJU2xfVTZNcW1XUzlkLTdqVl85SzFVQWxpUF9MWFZFR3haaUxOUV9iR3NCS09ocGZrcDNwQlhTVno5dTBsN3lqM3lzQWRZY1hxNjZwelQxYWtwSGc1OFE?oc=5",
+   "data": "2026-11-05T08:00:00Z",
+   "coletado_em": "2026-11-23T11:17:45Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "442e159c5e22",
    "titulo": "Equipes de Moro e Ratinho Jr iniciam transição no Paraná",
    "veiculo": "TV Sim Brasil",
@@ -14153,6 +14256,22 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "e21bd6181f9d",
+   "titulo": "Vicentinho Júnior anuncia 2 novas secretarias em estrutura do governo",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNa0V0QzNlZ3RDQ1BHR29sWE9SQk5ZS0dRRU55OXlMdGMtUjNFYmVPSUVzek43SHo2TFgtZGhkLUZxU3d3QmdQaElyZktEOHdDRHk2MWc2eFNmc29xR2xMNnppYV9nRzFUd0h3NkVrdEgtbUtNaEZMeHE1dmw2QUh3azNveW9PLWU2MGxNRlpxV2hlTHo4VkdVaWhRT0ZENW1jWF9tczQ5dHpUYXFVQlFfQlI4bXY0djZ0d2lGT0ZWa2Y2ZGZadDRJUUJTb3pYZmFldGxGb3g1eGJEX21QQ3lDME41TlZQdw?oc=5",
+   "data": "2026-11-04T08:00:00Z",
+   "coletado_em": "2026-11-23T11:17:45Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "df56db1ff2c3",
@@ -15311,6 +15430,20 @@
    "outras": [],
    "ufs": [
     "TO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "34666d06aa4c",
+   "titulo": "Douglas Ruas anuncia primeiros secretários e começa a desenhar novo governo do Rio",
+   "veiculo": "Diário da Guanabara",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMkpHdlJzZi0yRjhqRGx3RW40ZUtEenJGTmx4R0ZaaVBBM3VFUFd5TVVndHdERDZ3SU52WEU3azlqOXBhWDJuaW9qbVlwUDN1d2EzMFdrR3MzdW9XZ3lOeHdkU0pxc2poY0ZlUmdBMlB1eENkWEp3YUtEVDExTDBZeXJKakhha0czblpvMjVNakx5S2JwNjNTREJyNHRET0RCdmg1V2RoVi1rOVhnbGc?oc=5",
+   "data": "2026-11-03T14:38:20Z",
+   "coletado_em": "2026-11-23T11:17:45Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -19650,6 +19783,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "83eed3c76a50",
+   "titulo": "Estado | Vicentinho acelera montagem da equipe de governo e anuncia nomes da Comunicação; veja quem",
+   "veiculo": "AF Notícias",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPa2l6bkQ3Ti1iY1VZNUtHOGI2TWtjS1BVVF9JTDAtRjNXMm5DVnNMdVhCSTYzazVJSzlITU5zQkplU29aLXZhYUJEYVRfM3VwYkFBMjFyWTZpd18tOG01SmJkMkFJSUlvVllNRjJtN1ppRXVVZEJZMEZybFltSFZJZ2RsVExZejhpU0VZWWNsbjBPWHprRG5STmFKMHNjSERGM3JhM1lFRmRSYm9fWlpQcERsQnVhdG9hRFZNR0Ridw?oc=5",
+   "data": "2026-10-27T07:00:00Z",
+   "coletado_em": "2026-11-23T11:17:45Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "81cdc504c423",
    "titulo": "Olyntho Neto admite mudanças no Orçamento de 2027 para atender prioridades de Vicentinho Júnior",
    "veiculo": "Jornal Opção | Tocantins",
@@ -19993,6 +20140,20 @@
    "outras": [],
    "ufs": [
     "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "1613bf7691e3",
+   "titulo": "Novo governo: Vicentinho escala Zelma Coelho para comandar comunicação; jornalista Rogério Tortola também está na equipe",
+   "veiculo": "Gazeta do Cerrado",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQbFV6MUdOQTFBUDgyS2JGbjl5UFc2dkdWUWFPeTJmV19WVjZuTWVmMDlnLVIwZTlDelVHYUNrU0o3b3BRV1lmRjNaVVdyTjNyRDRjRWZ3V1NmTDBGVzVMazRkdmh2ay1rSjlYV09nd3NYQWM3b09FWUJ5Y0pqTlJXNFplQzVYVTN6eTBJZ29qMXZLeFlMTEZCTDFTNWNIQkp0R3pzSzBuTktyMW9ZaFRTZ1laOEY1bU5iX0xGdUpwajhxeU5yR3JPWWl1djM3cWd1eTNlNU5NZmNOdzNLMXhUMUNacWVjQnJmMDdsUUtJeEs?oc=5",
+   "data": "2026-10-27T07:00:00Z",
+   "coletado_em": "2026-11-23T11:17:45Z",
+   "outras": [],
+   "ufs": [
+    "TO"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -24845,6 +25006,22 @@
    "categoria": "equipe"
   },
   {
+   "id": "92a845ac02cf",
+   "titulo": "Vice de Douglas Ruas, Fernanda Louback vai comandar nova Secretaria da Inclusão e da Mulher",
+   "veiculo": "Folha dos Lagos",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOT2N3ckl3MjNuR3B6aURGc2l5Y09ZbUVQbzM1b2NrMXBITk5QTFVCRE9sbHlLdVdqckRoQ1k4anFYamdlc0VhTWNKWUd0UTRNLUhRMy1hVlFEM2pmSFFnQ01MelczUW9SbXJBOGZUTmtiSzhXdUJHTlkyMi0zLVF2MGlnQ2t0OENIRmJBdGlZUTNwM1N5V3luSHNoRTJPVHcwZm0tYWdWcjcyRzBHRGFXOU5GM01jRE8wSm1EaWpXV2ZQeG1acXVKem5GM3l1WW12MlRkeDlaejF3akFhd0E?oc=5",
+   "data": "2026-10-14T07:00:00Z",
+   "coletado_em": "2026-11-23T11:17:45Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "8d8775477454",
    "titulo": "Ricardo Couto oficializa nomes do governo que participarão da equipe de transição para Douglas Ruas",
    "veiculo": "Valor Econômico",
@@ -25780,6 +25957,22 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "28b3337d7acd",
+   "titulo": "Douglas Ruas promete diálogo com oposição e cobra revisão do orçamento para 2027",
+   "veiculo": "Rádio Manchete Rio",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdnZ6ckRQTUM5c2hUdTRGUWlTQTJ5UUZXSVBNeV9xbHRTV2JwTGM5akFJa2d0eW93SUpIZmFOdG1XYXowb054ZnloNmhaQy1yb2tyZms3RDVhbDRwckxaeDJHUmhGaGpsX01SelNXV3hrc1dVRURnZUN3dXhJWHhTQzdCbTU2NEhJWFI4aFo5b2hZNlBnekVMSDNmaHExbzZyVVZuYUk4Zlpoa1JW?oc=5",
+   "data": "2026-10-13T07:00:00Z",
+   "coletado_em": "2026-11-23T11:17:45Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "24ea7d59c405",

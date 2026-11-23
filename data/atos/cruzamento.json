@@ -1,13 +1,53 @@
 {
- "gerado_em": "2026-11-17T11:23:20Z",
+ "gerado_em": "2026-11-23T11:21:51Z",
  "resumo": {
-  "total": 30,
-  "com_siga": 6,
+  "total": 34,
+  "com_siga": 8,
   "registrado": 2,
-  "nao_registrado": 4,
-  "nao_encontrado": 19
+  "nao_registrado": 6,
+  "nao_encontrado": 20
  },
  "itens": {
+  "2066673": {
+   "siga": null,
+   "leitura": null,
+   "obras": null
+  },
+  "2066645": {
+   "siga": {
+    "documento": "Contrato 2025.000021.44928.01/2025",
+    "fornecedor": "CRESCER COMPORTAMENTO E DESENVOLVIMENTO HUMANO LTDA",
+    "orgao": "SUPERINTENDÊNCIA REGIONAL DE SAÚDE DE COLATINA",
+    "situacao": "Instrumento Contratual em Execução",
+    "categoria": null,
+    "valor": 103680.0,
+    "celebracao": "2025-03-20",
+    "objeto": "REGISTRO DE PREÇOS COM CONTRATO PARA AQUISIÇÃO DE TRATAMENTO MULTIDISCIPLINAR NO MÉTODO ABA",
+    "como": "código do contrato"
+   },
+   "leitura": "nao_registrado",
+   "obras": null
+  },
+  "2066636": {
+   "siga": {
+    "documento": "Contrato 2024.000139.44928.01/2024",
+    "fornecedor": "CRESCER COMPORTAMENTO E DESENVOLVIMENTO HUMANO LTDA",
+    "orgao": "SUPERINTENDÊNCIA REGIONAL DE SAÚDE DE COLATINA",
+    "situacao": "Instrumento Contratual em Execução",
+    "categoria": null,
+    "valor": 94153.0,
+    "celebracao": "2024-12-26",
+    "objeto": "REGISTRO DE PREÇOS COM CONTRATO PARA AQUISIÇÃO DE TRATAMENTO MULTIDISCIPLINAR",
+    "como": "código do contrato"
+   },
+   "leitura": "nao_registrado",
+   "obras": null
+  },
+  "2066458": {
+   "siga": null,
+   "leitura": "nao_encontrado",
+   "obras": null
+  },
   "2063375": {
    "siga": null,
    "leitura": "nao_encontrado",
