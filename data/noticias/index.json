@@ -1,6 +1,6 @@
 {
- "ref": "2026-11-22",
- "gerado_em": "2026-11-22T22:17:19Z",
+ "ref": "2026-11-23",
+ "gerado_em": "2026-11-23T03:43:42Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -19,38 +19,38 @@
    "ok": true,
    "lidos": 8,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 22,
+   "lidos": 17,
    "aceitos": 4,
-   "possiveis": 4
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 2,
+   "lidos": 6,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 3,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 0,
+   "lidos": 6,
+   "aceitos": 1,
    "possiveis": 2
   },
   {
@@ -65,15 +65,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 1,
+   "lidos": 4,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 21,
+   "lidos": 24,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -97,8 +97,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 47,
-   "aceitos": 2,
+   "lidos": 34,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 22,
-   "aceitos": 0,
+   "lidos": 23,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -154,14 +154,14 @@
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 30,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 52,
+   "lidos": 54,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 2,
+   "lidos": 3,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -278,20 +278,58 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 4,
  "descartes_na_coleta": {
-  "sem_contexto": 253,
+  "sem_contexto": 237,
   "generico_sem_ancora": 4,
   "exterior_sem_ancora": 6,
-  "possivel": 17,
-  "excluir": 19,
-  "veiculo_outra_praca": 3,
-  "outro_estado": 10,
-  "veiculo_excluido": 21,
-  "sem_contexto_com_tema": 9,
+  "possivel": 14,
+  "excluir": 18,
+  "veiculo_outra_praca": 4,
+  "outro_estado": 13,
+  "veiculo_excluido": 18,
+  "sem_contexto_com_tema": 10,
   "sigla_sem_ancora": 6
  },
  "itens": [
+  {
+   "id": "f9e9e31cfa38",
+   "titulo": "Governo do Espírito Santo inicia alinhamentos com equipe de Pazolini para troca de gestão",
+   "veiculo": "rede noticia es",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOLVJNNzBOZGExbjA5R1ZGNUl0clRQb2hKaGt3QjZ4T0U3cGhQeExCdEFtTTVhdVhfZG9FWkNRN3cwdkxIZnZzbE41bnl0UXk2WUxNWFNVdmdETkdkSlEwRlBkckNIaE1GbVEtYm51a1hKcnAxYlFsRG8zQnVyRnVmU0VoaGp0eEx2Y2NtTXBKYzVlSmxRRnFMN3dZYjllSl9FT2JLanpydnAteFVVZWtrYm1ZRQ?oc=5",
+   "data": "2026-11-23T02:12:15Z",
+   "coletado_em": "2026-11-23T03:43:42Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "56044d5c90fe",
+   "titulo": "Processo seletivo da SEDU no Espírito Santo oferece vagas para professores de idiomas com salários de até R$ 7 mil",
+   "veiculo": "Sou Enfermagem",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQMVRHWTZfMGJZUE9lazUzM0E4RFBudWZSd2FNaE83ZXd1MG9vX1E4eUJsRXFWRmNVS0ZnanU5Q0JWQldNME95SFp4b3ZWWjNwSXlUTjdTUjhabUQzMGlBYm5CV3EyUndzRWk2N2pTVndDMFRsZ29YUndpTHhjQnRrTnlNZkZyT0ZQaGQ3blpYMjhMcG1LX00ydTYyVVJMUnJmSmpsWEJJdDE5SlBxcnd4YW1ULUJnd1d3aVBRY0htSUI1Wno3UDZKQkY2ODJSRnZxWFRWZmRUNExmQTByTGZ1OVNZeHRUWktETHV2Mw?oc=5",
+   "data": "2026-11-23T01:28:07Z",
+   "coletado_em": "2026-11-23T03:43:42Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "b11ef1d37160",
+   "titulo": "Concurso IDAF ES oferece 14 vagas e cadastro reserva com salários de até R$ 8,4 mil",
+   "veiculo": "auxilioconcursos.com.br",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZEx1QUlIT19LZm1VOHktQ21HQW81eGRxNFZieGF5cWw1dVlCRzlsNjlPSUE2UVVseEJrUm91ZGkxMHRfMU5pUVZPMlFFdEQ3ZGVfWHpRV3VFUEtrMzBvX0RFZlV4UXZIT09zNExjMDRQTElFQm1aWWt2elJlREVLUjJCNHEySHUyS2Q3ak5NdnRQQ0RKQ3UwYnBRblMxTHNPUVJOZFRSNTNxYmpJTzVVbUE2Y08?oc=5",
+   "data": "2026-11-22T21:45:00Z",
+   "coletado_em": "2026-11-23T03:43:42Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "76d4004b1fae",
    "titulo": "Chitãozinho e Xororó anunciam aposentadoria dos palcos após 56 anos de carreira",

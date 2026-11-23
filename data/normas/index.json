@@ -1,16 +1,20 @@
 {
- "ref": "2026-11-20",
- "gerado_em": "2026-11-20T08:41:18Z",
+ "ref": "2026-11-23",
+ "gerado_em": "2026-11-23T03:44:06Z",
  "desde": "2026-10-04",
  "primeiro_levantamento": "2026-11-05",
  "baseline": false,
  "contagem": {
   "decreto": 17,
   "transicao": 1,
-  "fiscal": 15,
-  "lei": 11
+  "fiscal": 16,
+  "lei": 13
  },
- "novos": [],
+ "novos": [
+  "2066609",
+  "2066624",
+  "2065848"
+ ],
  "edicoes_lidas": [
   11522,
   11524,
@@ -75,7 +79,8 @@
   11642,
   11647,
   11652,
-  11660
+  11660,
+  11661
  ],
  "ignoradas": [
   "2040862",
@@ -93,9 +98,52 @@
   "2061115",
   "2061117",
   "2061134",
-  "2061154"
+  "2061154",
+  "2066600"
  ],
  "itens": [
+  {
+   "id": "2066624",
+   "edicao": 11661,
+   "data": "2026-11-23",
+   "tipo": "lei",
+   "temas": [
+    "programa"
+   ],
+   "titulo": "LEI Nº 12.987",
+   "orgao": "Governadoria do Estado",
+   "ementa": "Institui a Política Estadual de Incentivo ao Voluntariado e dá outras providências.",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2066624/11661",
+   "visto_em": "2026-11-23T03:44:06Z"
+  },
+  {
+   "id": "2066609",
+   "edicao": 11661,
+   "data": "2026-11-23",
+   "tipo": "lei",
+   "temas": [
+    "outro"
+   ],
+   "titulo": "LEI Nº 12.986",
+   "orgao": "Governadoria do Estado",
+   "ementa": "Reconhece a Trezena de Santo Antônio, realizada no município de Vitória, como de relevante interesse cultural.",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2066609/11661",
+   "visto_em": "2026-11-23T03:44:06Z"
+  },
+  {
+   "id": "2065848",
+   "edicao": 11661,
+   "data": "2026-11-23",
+   "tipo": "fiscal",
+   "temas": [
+    "encerramento"
+   ],
+   "titulo": "PORTARIA 453-S/2026 - ENCERRAMENTO EXERCICIO DE 2026 - HDAMF",
+   "orgao": "Secretaria de Estado da Saúde - SESA -",
+   "ementa": null,
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2065848/11661",
+   "visto_em": "2026-11-23T03:44:06Z"
+  },
   {
    "id": "2064590",
    "edicao": 11647,

@@ -1,17 +1,22 @@
 {
- "ref": "2026-11-20",
- "gerado_em": "2026-11-20T08:40:44Z",
+ "ref": "2026-11-23",
+ "gerado_em": "2026-11-23T03:43:56Z",
  "desde": "2026-10-04",
  "primeiro_levantamento": "2026-10-31",
  "baseline": false,
  "contagem": {
   "paralisacao": 4,
-  "suspensao": 2,
-  "rescisao": 18,
-  "cancelamento": 5,
+  "suspensao": 3,
+  "rescisao": 20,
+  "cancelamento": 6,
   "anulacao": 1
  },
- "novos": [],
+ "novos": [
+  "2066636",
+  "2066645",
+  "2066673",
+  "2066458"
+ ],
  "edicoes_lidas": [
   11522,
   11528,
@@ -50,9 +55,58 @@
   11642,
   11647,
   11652,
-  11660
+  11660,
+  11661
  ],
  "itens": [
+  {
+   "id": "2066673",
+   "edicao": 11661,
+   "data": "2026-11-23",
+   "tipo": "cancelamento",
+   "alvo": "ata",
+   "titulo": "Extrato - Termo de Cancelamento - ARP 0005.2026 - Crescer",
+   "orgao": "Secretaria de Estado da Saúde - SESA -",
+   "setor": "Termos",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2066673/11661",
+   "visto_em": "2026-11-23T03:43:56Z"
+  },
+  {
+   "id": "2066645",
+   "edicao": 11661,
+   "data": "2026-11-23",
+   "tipo": "rescisao",
+   "alvo": "contrato",
+   "titulo": "Extrato - Rescisão Amigável - Contrato 2025.000021.44928.01 - Crescer",
+   "orgao": "Secretaria de Estado da Saúde - SESA -",
+   "setor": "Termos",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2066645/11661",
+   "visto_em": "2026-11-23T03:43:56Z"
+  },
+  {
+   "id": "2066636",
+   "edicao": 11661,
+   "data": "2026-11-23",
+   "tipo": "rescisao",
+   "alvo": "contrato",
+   "titulo": "Extrato - Rescisão Amigável - Contrato 2024.000139.44928.01 - Crescer",
+   "orgao": "Secretaria de Estado da Saúde - SESA -",
+   "setor": "Termos",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2066636/11661",
+   "visto_em": "2026-11-23T03:43:56Z"
+  },
+  {
+   "id": "2066458",
+   "edicao": 11661,
+   "data": "2026-11-23",
+   "tipo": "suspensao",
+   "alvo": "contrato",
+   "titulo": "PUBLICAÇÃO (DIO) - Termo de Suspensão nº02 CT 028.2024",
+   "orgao": "Secretaria de Estado de Saneamento, Habitação e Desenvolvimento Urbano - SEDURB -",
+   "setor": "Contrato",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2066458/11661",
+   "visto_em": "2026-11-23T03:43:56Z"
+  },
   {
    "id": "2063375",
    "edicao": 11642,
