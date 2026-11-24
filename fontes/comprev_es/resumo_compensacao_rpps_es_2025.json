@@ -1,7 +1,7 @@
 {
   "fonte": "Siconfi, API RREO Anexo 04, sexto bimestre de 2025",
   "fonte_codigos": "https://servicodados.ibge.gov.br/api/v1/localidades/estados/32/municipios",
-  "data_coleta_utc": "2026-11-24T20:03:44.713866+00:00",
+  "data_coleta_utc": "2026-11-24T20:06:01.731396+00:00",
   "municipios_consultados": 78,
   "status": {
     "sem_demonstrativo_api": 65,

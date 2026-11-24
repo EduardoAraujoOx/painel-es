@@ -1,0 +1,191 @@
+{
+  "data_coleta_utc": "2026-11-24T20:06:10.123397+00:00",
+  "base": "Siconfi 2025, RREO Anexo 04, 6o bimestre; DCA Anexo I-C",
+  "conta_dca": "RO1.9.9.9.03.0.0",
+  "total_municipios": 78,
+  "status": {
+    "sem_valor_observado": 44,
+    "somente_dca": 23,
+    "conciliado": 11
+  },
+  "receita_conciliada_observada_r$": 102892857.02,
+  "municipios_com_valor": [
+    {
+      "nome": "Vitória",
+      "valor": 27376705.44,
+      "situacao": "conciliado"
+    },
+    {
+      "nome": "Serra",
+      "valor": 13940728.07,
+      "situacao": "conciliado"
+    },
+    {
+      "nome": "Vila Velha",
+      "valor": 12882470.69,
+      "situacao": "conciliado"
+    },
+    {
+      "nome": "Aracruz",
+      "valor": 10166447.2,
+      "situacao": "conciliado"
+    },
+    {
+      "nome": "Cachoeiro de Itapemirim",
+      "valor": 7528146.61,
+      "situacao": "conciliado"
+    },
+    {
+      "nome": "Viana",
+      "valor": 6880770.35,
+      "situacao": "conciliado"
+    },
+    {
+      "nome": "Cariacica",
+      "valor": 4000070.35,
+      "situacao": "conciliado"
+    },
+    {
+      "nome": "Conceição da Barra",
+      "valor": 2453366.07,
+      "situacao": "conciliado"
+    },
+    {
+      "nome": "Linhares",
+      "valor": 2448328.08,
+      "situacao": "conciliado"
+    },
+    {
+      "nome": "Rio Bananal",
+      "valor": 2070779.79,
+      "situacao": "somente_dca"
+    },
+    {
+      "nome": "Guarapari",
+      "valor": 1680179.32,
+      "situacao": "conciliado"
+    },
+    {
+      "nome": "Domingos Martins",
+      "valor": 1159787.95,
+      "situacao": "somente_dca"
+    },
+    {
+      "nome": "Guaçuí",
+      "valor": 1151088.39,
+      "situacao": "somente_dca"
+    },
+    {
+      "nome": "São Gabriel da Palha",
+      "valor": 1041159.8,
+      "situacao": "somente_dca"
+    },
+    {
+      "nome": "Boa Esperança",
+      "valor": 1003922.56,
+      "situacao": "somente_dca"
+    },
+    {
+      "nome": "Barra de São Francisco",
+      "valor": 906493.48,
+      "situacao": "somente_dca"
+    },
+    {
+      "nome": "Ibiraçu",
+      "valor": 847906.16,
+      "situacao": "somente_dca"
+    },
+    {
+      "nome": "João Neiva",
+      "valor": 647390.84,
+      "situacao": "somente_dca"
+    },
+    {
+      "nome": "Iconha",
+      "valor": 574309.64,
+      "situacao": "somente_dca"
+    },
+    {
+      "nome": "Rio Novo do Sul",
+      "valor": 559715.93,
+      "situacao": "somente_dca"
+    },
+    {
+      "nome": "Santa Maria de Jetibá",
+      "valor": 484313.31,
+      "situacao": "somente_dca"
+    },
+    {
+      "nome": "Anchieta",
+      "valor": 475127.15,
+      "situacao": "somente_dca"
+    },
+    {
+      "nome": "Itapemirim",
+      "valor": 409708.87,
+      "situacao": "somente_dca"
+    },
+    {
+      "nome": "Alegre",
+      "valor": 362428.4,
+      "situacao": "somente_dca"
+    },
+    {
+      "nome": "Mimoso do Sul",
+      "valor": 309075.56,
+      "situacao": "somente_dca"
+    },
+    {
+      "nome": "Fundão",
+      "valor": 298319.34,
+      "situacao": "somente_dca"
+    },
+    {
+      "nome": "Jerônimo Monteiro",
+      "valor": 226993.44,
+      "situacao": "somente_dca"
+    },
+    {
+      "nome": "Pedro Canário",
+      "valor": 220499.82,
+      "situacao": "somente_dca"
+    },
+    {
+      "nome": "Santa Leopoldina",
+      "valor": 204749.24,
+      "situacao": "somente_dca"
+    },
+    {
+      "nome": "Vargem Alta",
+      "valor": 186800.23,
+      "situacao": "somente_dca"
+    },
+    {
+      "nome": "Mantenópolis",
+      "valor": 150997.92,
+      "situacao": "somente_dca"
+    },
+    {
+      "nome": "São José do Calçado",
+      "valor": 129936.72,
+      "situacao": "conciliado"
+    },
+    {
+      "nome": "Águia Branca",
+      "valor": 72707.44,
+      "situacao": "somente_dca"
+    },
+    {
+      "nome": "Dores do Rio Preto",
+      "valor": 41432.86,
+      "situacao": "somente_dca"
+    }
+  ],
+  "observacoes": [
+    "RREO e DCA sao fontes alternativas para a mesma receita, nunca somadas.",
+    "Divergencias impedem uso automatico do valor no total, ate conciliacao.",
+    "A receita contabel pode incluir ajustes entre RPPS, nao apenas transferencias federais do INSS.",
+    "Municipios sem valor nao sao tratados como receita zero.",
+    "O total e observado, nao representa uma previsao de reducao proporcional de pagamentos por parte do INSS."
+  ]
+}
