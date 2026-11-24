@@ -1,16 +1,19 @@
 {
- "ref": "2026-11-23",
- "gerado_em": "2026-11-23T09:17:41Z",
+ "ref": "2026-11-24",
+ "gerado_em": "2026-11-24T09:17:36Z",
  "desde": "2026-10-04",
  "primeiro_levantamento": "2026-11-05",
  "baseline": false,
  "contagem": {
-  "decreto": 17,
+  "decreto": 18,
   "transicao": 1,
-  "fiscal": 16,
+  "fiscal": 17,
   "lei": 13
  },
- "novos": [],
+ "novos": [
+  "2067396",
+  "2067125"
+ ],
  "edicoes_lidas": [
   11522,
   11524,
@@ -76,7 +79,8 @@
   11647,
   11652,
   11660,
-  11661
+  11661,
+  11668
  ],
  "ignoradas": [
   "2040862",
@@ -98,6 +102,34 @@
   "2066600"
  ],
  "itens": [
+  {
+   "id": "2067396",
+   "edicao": 11668,
+   "data": "2026-11-24",
+   "tipo": "decreto",
+   "temas": [
+    "tributario"
+   ],
+   "titulo": "DECRETO Nº 6531-R -Altera RICMS-ES - Exclusão da ST dos sorvetes e preparados (V2)",
+   "orgao": "Governadoria do Estado",
+   "ementa": "Introduz alteração no RICMS/ES, aprovado pelo Decreto nº 1.090-R, de 25 de outubro de 2002.",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2067396/11668",
+   "visto_em": "2026-11-24T09:17:36Z"
+  },
+  {
+   "id": "2067125",
+   "edicao": 11668,
+   "data": "2026-11-24",
+   "tipo": "fiscal",
+   "temas": [
+    "encerramento"
+   ],
+   "titulo": "PORTARIA 458-S/2026 - ENCERRAMENTO EXERCICIO DE 2026 - HJSN",
+   "orgao": "Secretaria de Estado da Saúde - SESA -",
+   "ementa": null,
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2067125/11668",
+   "visto_em": "2026-11-24T09:17:36Z"
+  },
   {
    "id": "2066624",
    "edicao": 11661,

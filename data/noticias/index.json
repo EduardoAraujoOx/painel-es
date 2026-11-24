@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-24",
- "gerado_em": "2026-11-24T00:17:15Z",
+ "gerado_em": "2026-11-24T09:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,40 +18,40 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 3,
-   "possiveis": 2
+   "aceitos": 2,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 35,
-   "aceitos": 7,
-   "possiveis": 8
+   "lidos": 27,
+   "aceitos": 5,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 10,
+   "lidos": 8,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 3,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 14,
+   "lidos": 19,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -73,15 +73,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 2,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 67,
+   "lidos": 60,
    "aceitos": 1,
    "possiveis": 6
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 11,
+   "lidos": 8,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 42,
-   "aceitos": 1,
+   "lidos": 25,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 16,
+   "lidos": 18,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 58,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 58,
+   "lidos": 56,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 13,
-   "aceitos": 4,
+   "lidos": 10,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -227,7 +227,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "ES Hoje",
@@ -251,14 +251,14 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "A Gazeta",
    "consulta": "https://www.agazeta.com.br/colunas/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -280,18 +280,31 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "possivel": 21,
-  "sem_contexto": 318,
-  "generico_sem_ancora": 2,
-  "oficial_sem_tema": 5,
-  "veiculo_excluido": 33,
-  "excluir": 42,
-  "sem_contexto_com_tema": 17,
-  "outro_estado": 23,
-  "veiculo_outra_praca": 9,
+  "possivel": 19,
+  "sem_contexto": 303,
+  "oficial_sem_tema": 4,
+  "sem_contexto_com_tema": 18,
+  "veiculo_excluido": 42,
+  "excluir": 44,
+  "outro_estado": 27,
+  "veiculo_outra_praca": 13,
   "sigla_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "4fccdb426716",
+   "titulo": "Câmara aprova texto-base de ajuste fiscal com impacto de até R$ 50 bilhões",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/camara-aprova-texto-base-de-ajuste-fiscal-com-impacto-de-ate-r-50-bilhoes/",
+   "data": "2026-11-24T03:16:06Z",
+   "coletado_em": "2026-11-24T09:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "7cc05d767a78",
    "titulo": "Câmara aprova urgência para votação do projeto de ajuste fiscal",
@@ -766,6 +779,18 @@
    "temas": [
     "contratos"
    ]
+  },
+  {
+   "id": "17d903a34ee3",
+   "titulo": "Galípolo: dentro do governo não há qualquer debate sobre meta de inflação, é zero",
+   "veiculo": "Vitória News",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbC1NS0VhVDl4U2k3b2FNZTlkZlFlSDFveWxWRlBlVUFidFRvcGtWbWpNeGdGQ1V3Wjdmd0RMOGZJWnNfMW5RQ0gwMFhlY1BOWDB5R0FrTWxEd0JMTGpJTjlqeGt3QTNIQ2RoNDVyREgzTDZzMUF2NFE2dW4xb2djY1poQm1pcmF6SDd5ZlZLemFHMzlqVVhSSGpTWklmTEhJTF82Wmw1clRZdw?oc=5",
+   "data": "2026-11-23T14:25:00Z",
+   "coletado_em": "2026-11-24T09:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "99f81a78a28e",
