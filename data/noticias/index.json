@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-24",
- "gerado_em": "2026-11-24T15:17:20Z",
+ "gerado_em": "2026-11-24T17:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,7 +25,7 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 26,
+   "lidos": 25,
    "aceitos": 3,
    "possiveis": 5
   },
@@ -33,7 +33,7 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 20,
+   "lidos": 23,
    "aceitos": 1,
    "possiveis": 4
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 76,
+   "lidos": 75,
    "aceitos": 1,
    "possiveis": 7
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 20,
+   "lidos": 23,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 60,
+   "lidos": 26,
    "aceitos": 2,
-   "possiveis": 6
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 2,
+   "lidos": 3,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -250,7 +250,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -278,22 +278,64 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 322,
+  "sem_contexto": 315,
   "possivel": 20,
+  "sem_contexto_com_tema": 20,
   "oficial_sem_tema": 4,
-  "veiculo_excluido": 48,
-  "excluir": 51,
-  "sem_contexto_com_tema": 24,
+  "veiculo_excluido": 38,
+  "excluir": 46,
+  "outro_estado": 31,
   "generico_sem_ancora": 1,
   "caixa_alta": 1,
-  "outro_estado": 31,
-  "veiculo_outra_praca": 13,
-  "sigla_sem_ancora": 7,
-  "exterior_sem_ancora": 2
+  "veiculo_outra_praca": 12,
+  "sigla_sem_ancora": 5,
+  "exterior_sem_ancora": 3
  },
  "itens": [
+  {
+   "id": "3fff1699d6dd",
+   "titulo": "ES endurece regras para empresas venderem ao governo e fazerem obras públicas",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/politica/es-endurece-regras-para-empresas-venderem-ao-governo-e-fazerem-obras-publicas-1126",
+   "data": "2026-11-24T17:15:58Z",
+   "coletado_em": "2026-11-24T17:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "aa13ffdb73ca",
+   "titulo": "Arrecadação federal atinge R$ 294 bilhões e bate recorde para outubro",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/arrecadacao-federal-atinge-r-294-bilhoes-e-bate-recorde-para-outubro/",
+   "data": "2026-11-24T16:36:51Z",
+   "coletado_em": "2026-11-24T17:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "75f025549647",
+   "titulo": "Nova ferramenta do Open Finance automatizará repasses entre bancos",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/nova-ferramenta-do-open-finance-automatizara-repasses-entre-bancos/",
+   "data": "2026-11-24T16:13:00Z",
+   "coletado_em": "2026-11-24T17:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "ebbb6d44ab35",
    "titulo": "Câmara de Cachoeiro aprova abono de R$ 5 mil para servidores",
@@ -397,7 +439,12 @@
    "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPZGNibmNIZU9RWVpZbXBsNjY2dGFvMlBRSlI5YW5ybThkMnFiaGtpZms3ak90OFlKTWlrUUw1dXVLZVBYV1VPMjFkOGlkZ09INjZYMFo1YVlvQmZTX081NWZHZlNRenREYk90d21OYWFFX1hyeXlJcmlQODJla2hSQ2NodVFrUV9UMjJybDg1dTFSRUZtWG1NM3FydFR5NS02UHpGZ09YTXpKeWJfN0JWenI4dEhOQTRGc3Bad2FZaDJyM1lvU2tnbGFiUmcwd00xamNROFNxS1M2QnMtbG1oaHVfR3dkcnhBOHhyWDVwTDJBN1VuRTc2Zw?oc=5",
    "data": "2026-11-24T12:18:00Z",
    "coletado_em": "2026-11-24T13:17:13Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Tribuna do Agreste",
+     "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOTVJaMWxRS3hfM1FGNFNISzBsUU8xRWNUUW5HYnpEMHRBLTFSMkZObW5yZ2RvN0hLZHppdU56d1h6clFPa1FmV2NWQWdYeGZDM3dJNUQtR1JjcFgwSHdTQUM2cWNvLUhnWkdYM3BmSEw5SHNsaDNCSTN0bzhVcVFfOGlDUGlaT1N1QkZSRzFFTHp5RG9iNENjUXRkVW9tWVRLQmxsb2lqUWQ5bUswN21OZU1KcGtWSzMtR25uSjJ3RGYwczl1LW42bklYQm5LbWNrSEwxbUNEV1JqYnhKNDE5b3R3RlhBR0x0SGh3UmpzQ2pEenRTQ2VwemJR?oc=5"
+    }
+   ],
    "possivel": true,
    "triagem": 9,
    "temas": []
@@ -413,6 +460,10 @@
     {
      "veiculo": "G1",
      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNZlpfQW9vTXA3LXg1ZFpVc3FNTHBmajFYR2Z1NTVrVDdneFlHMU9ISzZ5bFpVZ2lvMTZia05nVWFEd0tkTXdDblJBdHA0STVxd0hMY0FvbTFTY2hicGtCQnR5WVZOa1RxMTlpRk13V3BUOTdlcTMtWGRObnotbzlZaVd0Q2xHN0hDa2RWb2pTUnRuVDFBZXdjSll0RVppNjRqa0hieEtsRmZCbmdNbVpHYjZuaDZkWWo5bTAyOWpfbkNXNTRmSTVOVDlYYXJyS3g4Rmw2bFl0Q1BOeDQ1dXExekg2dXdfaDNGd3BiOTJzWEVNaFRDNWE0X1V4d0RHZTRiX2xZ0gGSAkFVX3lxTFBDd3FkdkdsTVRWVzFXUFF6MjNhRGJuY1VGVTBNZHMySWUteVBrLXFuY014Vk5kT0oxeDNEVWVjRlc1SnhJRk9pekR3U0RNazhVMzBuM1pkeFdsdTBfXzBOdWJ0dDhWN1BESVRzWC1pNnJKbExsWlI1ZkQ5WGhybER3bkdORFV0b00zcTktUFVqSnpKb3NMN1JkTXh5cjdqZ2FpNU9tZlducl9wYUpvRUV4Mkpmd21kbU5idlB5WXlfVWNESXlNbXAzMmUtTkEzMlZuZktaSGY5Yll3OVA5WXNnaUtMaGEwU1c1V3dFNE96RVJ6UmI1S1dycmhVM01NdVo5bi1BWDVYVzVHWlJrUW9ua2c?oc=5"
+    },
+    {
+     "veiculo": "G1",
+     "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQQ3dxZHZHbE1UVlcxV1BRejIzYURibmNVRlUwTWRzMkllLXlQay1xbmNNeFZOZE9KMXgzRFVlY0ZXNUp4SUZPaXpEd1NETWs4VTMwbjNaZHhXbHUwX18wTnVidHQ4VjdQRElUc1gtaTZySmxMbFpSNWZEOVhocmxEd25HTkRVdG9NM3E5LVBVakp6Sm9zTDdSZE14eXI3amdhaTVPbWZXbnJfcGFKb0VFeDJKZndtZG1OYnZQeVl5X1VjREl5TW1wMzJlLU5BMzJWbmZLWkhmOWJZdzlQOVlzZ2lLTGhhMFNXNVd3RTRPekVSelJiNUtXcnJoVTNNTXVaOW4tQVg1WFc1R1pSa1Fvbmtn0gGSAkFVX3lxTFBDd3FkdkdsTVRWVzFXUFF6MjNhRGJuY1VGVTBNZHMySWUteVBrLXFuY014Vk5kT0oxeDNEVWVjRlc1SnhJRk9pekR3U0RNazhVMzBuM1pkeFdsdTBfXzBOdWJ0dDhWN1BESVRzWC1pNnJKbExsWlI1ZkQ5WGhybER3bkdORFV0b00zcTktUFVqSnpKb3NMN1JkTXh5cjdqZ2FpNU9tZlducl9wYUpvRUV4Mkpmd21kbU5idlB5WXlfVWNESXlNbXAzMmUtTkEzMlZuZktaSGY5Yll3OVA5WXNnaUtMaGEwU1c1V3dFNE96RVJ6UmI1S1dycmhVM01NdVo5bi1BWDVYVzVHWlJrUW9ua2c?oc=5"
     }
    ],
    "possivel": false,
