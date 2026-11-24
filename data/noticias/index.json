@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-24",
- "gerado_em": "2026-11-24T13:17:13Z",
+ "gerado_em": "2026-11-24T14:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,15 +25,15 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 27,
-   "aceitos": 4,
+   "lidos": 39,
+   "aceitos": 6,
    "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -41,15 +41,15 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 3,
+   "lidos": 5,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 19,
+   "lidos": 20,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 33,
+   "lidos": 35,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 72,
+   "lidos": 78,
    "aceitos": 1,
    "possiveis": 7
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,8 +137,8 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
-   "aceitos": 1,
+   "lidos": 46,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 60,
    "aceitos": 2,
-   "possiveis": 5
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 55,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 12,
+   "lidos": 13,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 3,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 2
   },
   {
@@ -250,7 +250,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -258,7 +258,7 @@
    "consulta": "https://www.agazeta.com.br/colunas/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -278,21 +278,61 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "possivel": 18,
-  "sem_contexto": 301,
+  "sem_contexto": 333,
+  "possivel": 19,
   "oficial_sem_tema": 4,
-  "veiculo_excluido": 31,
-  "excluir": 46,
-  "sem_contexto_com_tema": 15,
-  "veiculo_outra_praca": 10,
+  "sem_contexto_com_tema": 23,
+  "veiculo_excluido": 48,
+  "excluir": 49,
+  "outro_estado": 33,
+  "veiculo_outra_praca": 15,
   "caixa_alta": 1,
-  "outro_estado": 24,
-  "sigla_sem_ancora": 6,
+  "sigla_sem_ancora": 7,
   "exterior_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "fbe8ccee20a2",
+   "titulo": "IPAJM prorroga prova de vida para aniversariantes de maio a agosto",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/servicos/2026/11/ipajm-prorroga-prova-vida/",
+   "data": "2026-11-24T14:02:04Z",
+   "coletado_em": "2026-11-24T14:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "ac5707f2206e",
+   "titulo": "Receita Federal abre consulta a lote extra do Imposto de Renda 2026",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/ta-no-lucro/receita-federal-abre-consulta-a-lote-extra-do-imposto-de-renda-1126",
+   "data": "2026-11-24T13:56:16Z",
+   "coletado_em": "2026-11-24T14:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "04a5237e0cb2",
+   "titulo": "O salto de Dalto: má notícia política para Pazolini e Cris Samorini",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/vitor-vogas/o-salto-de-dalto-ma-noticia-politica-para-pazolini-e-cris-samorini-1126",
+   "data": "2026-11-24T13:51:00Z",
+   "coletado_em": "2026-11-24T14:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "880ac541782f",
    "titulo": "Prefeito de Cariacica é multado em R$ 10 mil por vídeo fake de Pazolini",
@@ -574,6 +614,18 @@
    "temas": [
     "governador"
    ]
+  },
+  {
+   "id": "9ee0cb805494",
+   "titulo": "CPF irregular trava a renovação da CNH no Detran em todo o país",
+   "veiculo": "Mix Vale",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPRjB4Unk4N1FLRVlJcU9jLVlRa3A0bk9mYXJmbEQ1bHhRZEFJdDRSSl9RUWcyTE5YQlpoaHFLRFJnMVpqUVBldUp4cEdUbG9tZ1hzTUNVYXl4ME5KWW1vdjJNU2pSRXc1SU83ekpSVXo3dkZuWXdwXy0tdWlXR1NYeEZzR0F3YWZRWU9CTmpscEk4RkJadXU3QzN4UFlCaVFxT1hLaA?oc=5",
+   "data": "2026-11-23T21:12:16Z",
+   "coletado_em": "2026-11-24T14:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "ecab3481648d",
