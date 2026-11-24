@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-24",
- "gerado_em": "2026-11-24T21:17:14Z",
+ "gerado_em": "2026-11-24T22:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 44,
-   "aceitos": 5,
-   "possiveis": 9
+   "lidos": 25,
+   "aceitos": 4,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 28,
+   "lidos": 26,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 53,
+   "lidos": 54,
    "aceitos": 2,
    "possiveis": 4
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 26,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 50,
    "aceitos": 1,
-   "possiveis": 4
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 3
   },
   {
@@ -218,7 +218,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -278,22 +278,36 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 363,
+  "sem_contexto": 355,
   "possivel": 29,
-  "oficial_sem_tema": 8,
-  "sem_contexto_com_tema": 24,
-  "veiculo_excluido": 38,
+  "oficial_sem_tema": 5,
+  "sem_contexto_com_tema": 23,
+  "veiculo_excluido": 44,
   "excluir": 53,
-  "outro_estado": 32,
+  "outro_estado": 38,
   "caixa_alta": 1,
   "generico_sem_ancora": 2,
-  "veiculo_outra_praca": 13,
-  "sigla_sem_ancora": 8,
+  "veiculo_outra_praca": 17,
+  "sigla_sem_ancora": 10,
   "exterior_sem_ancora": 3
  },
  "itens": [
+  {
+   "id": "6e379cc996eb",
+   "titulo": "Vitória fará nova licitação para resgate de animais após irregularidades em edital",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/cotidiano/vitoria-fara-nova-licitacao-para-resgate-de-animais-apos-irregularidades-em-edital/",
+   "data": "2026-11-24T21:51:36Z",
+   "coletado_em": "2026-11-24T22:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "187b9b0d79f4",
    "titulo": "Ajuste fiscal: Lula sanciona lei com meta de superávit",
