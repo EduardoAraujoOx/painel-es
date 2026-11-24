@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-24",
- "gerado_em": "2026-11-24T19:17:24Z",
+ "gerado_em": "2026-11-24T20:10:23Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 4,
    "possiveis": 1
   },
@@ -25,7 +25,7 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 44,
+   "lidos": 43,
    "aceitos": 6,
    "possiveis": 6
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 19,
+   "lidos": 20,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -89,9 +89,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 35,
+   "lidos": 38,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 0,
-   "possiveis": 1
+   "lidos": 52,
+   "aceitos": 2,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 22,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 58,
    "aceitos": 2,
-   "possiveis": 3
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 4,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Folha Vitória",
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -234,8 +234,8 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
-   "possiveis": 4
+   "aceitos": 0,
+   "possiveis": 5
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -251,7 +251,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 3,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "A Gazeta",
@@ -267,7 +267,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Sim Notícias",
@@ -280,20 +280,79 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 347,
-  "possivel": 22,
+  "sem_contexto": 361,
+  "possivel": 28,
   "oficial_sem_tema": 5,
-  "sem_contexto_com_tema": 19,
-  "veiculo_excluido": 34,
-  "excluir": 44,
-  "outro_estado": 28,
+  "sem_contexto_com_tema": 28,
+  "veiculo_excluido": 41,
+  "excluir": 51,
+  "outro_estado": 40,
   "caixa_alta": 1,
   "generico_sem_ancora": 1,
-  "veiculo_outra_praca": 10,
-  "sigla_sem_ancora": 5,
+  "veiculo_outra_praca": 15,
+  "sigla_sem_ancora": 9,
   "exterior_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "b208a29c7519",
+   "titulo": "Assembleia vota auxílio de R$ 3,5 mil para famílias atingidas pelas chuvas no ES",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/assembleia-auxilio-r-35-mil/",
+   "data": "2026-11-24T20:08:34Z",
+   "coletado_em": "2026-11-24T20:10:23Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "c53b971ab1c2",
+   "titulo": "A transição para Brasília: com peso da experiência Marcelo Santos quer espaço na Câmara",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/bastidores-da-politica/2026/11/a-transicao-para-brasilia-com-peso-da-experiencia-marcelo-santos-quer-espaco-na-camara/",
+   "data": "2026-11-24T20:00:29Z",
+   "coletado_em": "2026-11-24T20:10:23Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "8dcae17e1ab9",
+   "titulo": "Receita libera consulta a novo lote de R$ 666 milhões do Imposto de Renda; veja se você vai receber",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/receita-libera-consulta-a-novo-lote-de-r-666-milhoes-do-imposto-de-renda-veja-se-voce-vai-receber/",
+   "data": "2026-11-24T19:53:48Z",
+   "coletado_em": "2026-11-24T20:10:23Z",
+   "outras": [
+    {
+     "veiculo": "Folha do ES",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPcjVBbVNSd0VwWWh5eXJsY09zQWI3eXZESWN1SGtsVE9UNGtCMWtqRUZMQXM2WjVIdENuZGJFTlF1SlhpNkQzczhCNXVJZVNWUXRrUTVRb202bklQdk91NWwwZmxpWDlmZ2R0ZFpDMWNaSDA2dDlQVjNSS2RBU082TzZzQzNVS0RHcGhGX1g5czhnQ1E4SERMYlp6b2dDcEVfV0ZFYzRxcGFNYmdyLTluaVRfSGllaDV6Q3B5Mg?oc=5"
+    }
+   ],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "adbec5b0117c",
+   "titulo": "Sefaz conquista selo Diamante em avaliação de Ouvidoria e Transparência",
+   "veiculo": "MidiaNews",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1LcjVhdll4TjdDQThpOU94VUFMRkhjSTRaZm1fSFlxQUM3MXZLcXpPa3VOOFlVUzhDSktVWWlhVF9jNVB4VGZZOF9XMktuZklmSDRoMzJlRzc5MmtYX0hSblJCekpTSVlJQmtJ?oc=5",
+   "data": "2026-11-24T19:11:05Z",
+   "coletado_em": "2026-11-24T20:10:23Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "c4a41cba0359",
    "titulo": "Novo Congresso tem 94 parlamentares com R$ 311 milhões de dívida irregular",
@@ -416,6 +475,20 @@
    ]
   },
   {
+   "id": "d25922adf01d",
+   "titulo": "Relatório da PF exclui mensagens e contrato de Vorcaro com esposa de Moraes",
+   "veiculo": "Sim Notícias",
+   "url": "https://simnoticias.com.br/politica/relatorio-da-pf-exclui-mensagens-e-contrato-de-vorcaro-com-esposa-de-moraes/",
+   "data": "2026-11-24T16:45:04Z",
+   "coletado_em": "2026-11-24T20:10:23Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
    "id": "aa13ffdb73ca",
    "titulo": "Arrecadação federal atinge R$ 294 bilhões e bate recorde para outubro",
    "veiculo": "Folha Vitória",
@@ -450,7 +523,12 @@
    "url": "https://eshoje.com.br/politica/2026/11/camara-de-cachoeiro-aprova-abono/",
    "data": "2026-11-24T14:56:13Z",
    "coletado_em": "2026-11-24T15:17:20Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "A Gazeta",
+     "url": "https://www.agazeta.com.br/es/politica/camara-de-cachoeiro-aprova-abono-de-r-5-mil-para-servidores-1126"
+    }
+   ],
    "possivel": true,
    "triagem": 9,
    "temas": [
