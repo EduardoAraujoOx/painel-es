@@ -1,6 +1,6 @@
 {
- "ref": "2026-11-23",
- "gerado_em": "2026-11-23T23:17:14Z",
+ "ref": "2026-11-24",
+ "gerado_em": "2026-11-24T00:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 37,
+   "lidos": 35,
    "aceitos": 7,
-   "possiveis": 7
+   "possiveis": 8
   },
   {
    "fonte": "Google Notícias",
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 13,
+   "lidos": 14,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 30,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 62,
+   "lidos": 67,
    "aceitos": 1,
-   "possiveis": 5
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 43,
-   "aceitos": 2,
+   "lidos": 42,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 15,
+   "lidos": 16,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,16 +153,16 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 59,
+   "lidos": 29,
    "aceitos": 2,
-   "possiveis": 5
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
-   "aceitos": 2,
+   "lidos": 58,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 5,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -278,20 +278,34 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "possivel": 22,
-  "sem_contexto": 325,
-  "generico_sem_ancora": 3,
-  "oficial_sem_tema": 4,
-  "veiculo_excluido": 38,
-  "excluir": 43,
-  "sem_contexto_com_tema": 18,
-  "outro_estado": 28,
-  "veiculo_outra_praca": 13,
-  "sigla_sem_ancora": 3
+  "possivel": 21,
+  "sem_contexto": 318,
+  "generico_sem_ancora": 2,
+  "oficial_sem_tema": 5,
+  "veiculo_excluido": 33,
+  "excluir": 42,
+  "sem_contexto_com_tema": 17,
+  "outro_estado": 23,
+  "veiculo_outra_praca": 9,
+  "sigla_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "7cc05d767a78",
+   "titulo": "Câmara aprova urgência para votação do projeto de ajuste fiscal",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE92d2Utb0s0OU5PdlQxNWRzR01sMXFSZjJGblFEY1ppazhQSk9NVk9MRkMza2hZUXNITGFFT0Q5N3FKZ2pod1JOTWgwcVRybWNQTmVobFVDNUhaTjlRbEdsb0lHVjZBRWkyc0RNaC1rdWJ0QWNwV3dr?oc=5",
+   "data": "2026-11-23T23:34:12Z",
+   "coletado_em": "2026-11-24T00:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "fb8268d44b8f",
    "titulo": "Euclério é condenado a pagar multa por divulgar vídeo manipulado sobre Pazolini",
