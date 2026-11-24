@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-24",
- "gerado_em": "2026-11-24T20:17:14Z",
+ "gerado_em": "2026-11-24T21:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,17 +17,17 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 4,
+   "lidos": 11,
+   "aceitos": 5,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 27,
-   "aceitos": 4,
-   "possiveis": 5
+   "lidos": 44,
+   "aceitos": 5,
+   "possiveis": 9
   },
   {
    "fonte": "Google Notícias",
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 24,
+   "lidos": 28,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 38,
+   "lidos": 37,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -99,7 +99,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 1,
-   "possiveis": 9
+   "possiveis": 10
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 0,
-   "possiveis": 1
+   "lidos": 53,
+   "aceitos": 2,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 22,
+   "lidos": 25,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,23 +153,23 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 58,
-   "aceitos": 2,
-   "possiveis": 6
+   "lidos": 26,
+   "aceitos": 1,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 55,
-   "aceitos": 2,
+   "lidos": 100,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 0,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 3
   },
   {
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -227,7 +227,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "ES Hoje",
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 0,
-   "possiveis": 5
+   "possiveis": 4
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -280,20 +280,72 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 350,
+  "sem_contexto": 363,
   "possivel": 29,
-  "sem_contexto_com_tema": 23,
-  "oficial_sem_tema": 4,
-  "veiculo_excluido": 36,
-  "excluir": 50,
-  "outro_estado": 34,
+  "oficial_sem_tema": 8,
+  "sem_contexto_com_tema": 24,
+  "veiculo_excluido": 38,
+  "excluir": 53,
+  "outro_estado": 32,
   "caixa_alta": 1,
-  "generico_sem_ancora": 1,
-  "veiculo_outra_praca": 12,
+  "generico_sem_ancora": 2,
+  "veiculo_outra_praca": 13,
   "sigla_sem_ancora": 8,
-  "exterior_sem_ancora": 4
+  "exterior_sem_ancora": 3
  },
  "itens": [
+  {
+   "id": "187b9b0d79f4",
+   "titulo": "Ajuste fiscal: Lula sanciona lei com meta de superávit",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE50Y21VVDFiV1hDa08zdEFhZ19UNk9kbVEyM0J0RmxHU0dtVURQYWs3T3owbUpVbFNndnVPSlN3cGVDYlVJcWhyN0dMalpVLUh4VF9CbWt1UzRTOTBiT0hac2QtY1k4a0FtdjF2VlRvdC1xZThy?oc=5",
+   "data": "2026-11-24T20:48:36Z",
+   "coletado_em": "2026-11-24T21:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "724b5b996bdd",
+   "titulo": "Regularize Capixaba lança edital com descontos de até 60% e parcelamento em até 145 vezes",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZ0ZCMFg1THRNYW94bnVjQkE5bnFYNlN1Zmp3S2hhQjBrVjY0SjA2RU1EMHNwcjhWbTU1alhEWXhwdWtTdG1kUjVfU3R2ZDFTX21rZEpyd1RWWEJFUGJTcWU3alliWGtvbG5tc0V1RGNrOHNjQTRjekpRb1BVSHkyRDdiSmp0Mzd4a0pVTEw2WlV3a0JSM1dNZjg2ZEM5Z1FiajhmLWx0bjZiUWd4dVJqTWdn?oc=5",
+   "data": "2026-11-24T20:38:00Z",
+   "coletado_em": "2026-11-24T21:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "78d813007535",
+   "titulo": "Estudantes capixabas conquistam 1º lugar em todas as categorias musicais disputadas no Campeonato Brasileiro de Bandas e Fanfarras",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQMFktdTczaTJDeWd4RlUwYlNVRjVSVnhtbHRNQzFtN2ZDd1JkYkV3dkZYUUVoQXA3V01vd3MzdzB6UkJ4MFhmZ25XLWhib2kwT3JYUVhNcUVzQTNycXlOVmhJVm1xYWZZSUhtUmRxenVxY05GUjBGQmdQRFE5cG90X0Flek91azBRSzY1VE1aQnM2ejhYdTJxMENQeXowZFRGNy1ZclRzX2xnWG1aRVRwenQtRV8zN3EyOTZnTnBBNWhxckIzTEhNdHdPM0F3SXdoTFlHRUFjTVdaM2JOdzNsb2JoSzF3RmM?oc=5",
+   "data": "2026-11-24T20:36:00Z",
+   "coletado_em": "2026-11-24T21:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "1bb443bedb2e",
+   "titulo": "Candidatos do concurso da Polícia Penal do Piauí podem ser convocados com retirada de cláusula de barreira",
+   "veiculo": "Portal O Dia",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOa1o0ZEtBZkRSVXlrWWpDTndFNjlnQ242SWVoc1QtZWs0SHp3RFA5UlA4eUF0d0FPYWRxWHNycEx5cF8xVzlsbkd2cGNvOC13ZnliNjdqZlZ3LWFCUE5GRzFVRUpkSzIxcmhMMXJ6VXhsX1F5WlpHMXd1TXlkQ1lwSVpBU0RBbndGaFNic2xKWVNEQ3ZZdHBOUE9MTEpLR1RqdlJiNmVnYnZrUFVTLW9fSXlyeXdYbEsyZU9tWkJuUkFOQU16dk83LVgzUUducDIwT0QyTWJtZXc5b2VpclpGM3B1VDM0RjJndEZyMUpvMC0?oc=5",
+   "data": "2026-11-24T20:22:38Z",
+   "coletado_em": "2026-11-24T21:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "c69df3725ac4",
    "titulo": "Publicada convocação para avaliações e resultado final do concurso do Detran",
@@ -382,6 +434,20 @@
    ]
   },
   {
+   "id": "5bb8aa57980c",
+   "titulo": "Lula sanciona integralmente projeto de lei complementar do ajuste fiscal",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/lula-sanciona-integralmente-projeto-de-lei-complementar-do-ajuste-fiscal/",
+   "data": "2026-11-24T18:39:00Z",
+   "coletado_em": "2026-11-24T21:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
    "id": "b5863a5ce5ab",
    "titulo": "Intervenção judicial no Corinthians por dívida bilionária",
    "veiculo": "Tribuna Online",
@@ -394,6 +460,18 @@
    "temas": [
     "financas"
    ]
+  },
+  {
+   "id": "e99d2a399324",
+   "titulo": "Após garantirem vaga para a primeira divisão, atletas capixabas disputam Copa ES de Basquete",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbE94SUw0aEJhSklzRlVKcW54NmREUjBKMjh0X3Q5OGQwT3V2YVZ5VnZQYUd2d1NvSmd1bmswc1lnSmVhQW56aF9hWi1hcXpzRXZUaUQtZDFCSU5QaFZuN3VfTFNiZUMxcDRyUUp5cVdDVEVJT19NcFU2aEZjMnpkdHhtU0FEa25uVnZPNzhDVVg3UFZKTnZ0a1J0Z1pSYWRJVG9aRzZLZV9PR184RzNXNnZJSQ?oc=5",
+   "data": "2026-11-24T18:06:00Z",
+   "coletado_em": "2026-11-24T21:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "25f2214edc21",
@@ -751,7 +829,12 @@
    "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxPSXRJUFB5SU1hZjZPYng3TTZxWmZzVFlzc2VLYW9oWjB2NllFVEliQ25pZnFvNmlnNUJaUm90OTFtTVBVWmhhN1JyV180TWdrZDVWb2h3VktmUnJydE1BVXd2MHVCOGNyTERqV0VUcGRQZ2VrUVRCcVp3bUttMkZmSlBURTVORzdRQ1hIaDNJSGpMQXpwQTR1Y2ZFOG01ajFyTVI3bGppOVJ1a3h0OEg3QlB1V3pzOXlYalBweUVkUVlTUjNiMUwtQmxVeFE4WUtjVWY4RjJQYmhiSDVRejZGd1IwZG1Tam0xNlBOMEtGS2NmRW5WZWxiY0VWR1loOERsQ2VoVmpaTnRQOWp1WEJVZUprbm9BNW5BZUJXakEtLUIyRXlBWTVod1pLQ0I1ZC1s?oc=5",
    "data": "2026-11-24T11:30:52Z",
    "coletado_em": "2026-11-24T12:17:14Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Terra",
+     "url": "https://news.google.com/rss/articles/CBMi-AJBVV95cUxNZnhuUXF1TmJIZFZrdF82SmFZazh2amNEM1hyeFBzY2dKNjRvZlplcFNXQ0NyU2k2LTFzeGJldkRQUGc5QW9CazFOZm9BblBsX1owMEhSbzlObXVBMVBhLUVnMTZhV2FOYmZWdEZhVVRLMEdSNjJzVE1VUkY2SzZtT0k3Ynlod01zZXlqdHJSN3kwc3l2cE9MdEIzcHJpVDkzVjFzMVIwU21zdTRTUm5qVWctc1l3VmdqOFBMSHNsTy14MGRZT2hzVVUybzdhODhwRi1ocGx4a2sxLWJtaklrdWcybXd6Rmdtc1ByQ2xqSHNOaEt6TTdQWXpiYS0wN0Y2OU5BMTN1UkJjUzBNNXYxM0tPQWFVYm9DMHNCck1YR1lKamR1c3ZFck9MMktkYUlKaUFTQ0U5TmVpV29SbVZMdzlaZW0tQWM2MzIzaTk2MU5JWHVWY1RwWHp2TFFseXBCdnF3RUlVZjFoeHZ1ZzBPYWRHT3NCeFBE?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 9,
    "temas": [
