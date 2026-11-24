@@ -20,7 +20,9 @@ jobs:
           persist-credentials: true
       - name: Coletar dados oficiais do Siconfi
         run: python pesquisas/siconfi/coletar_comprev_es.py
-      - name: Conciliar com receitas anuais da DCA\n        run: python pesquisas/siconfi/conciliar_dca_comprev_es.py\n      - name: Publicar resultados apenas nesta ramificacao
+      - name: Conciliar com receitas anuais da DCA
+        run: python pesquisas/siconfi/conciliar_dca_comprev_es.py
+      - name: Publicar resultados apenas nesta ramificacao
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
