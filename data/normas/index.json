@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-24",
- "gerado_em": "2026-11-24T09:17:36Z",
+ "gerado_em": "2026-11-24T10:17:50Z",
  "desde": "2026-10-04",
  "primeiro_levantamento": "2026-11-05",
  "baseline": false,
@@ -10,10 +10,7 @@
   "fiscal": 17,
   "lei": 13
  },
- "novos": [
-  "2067396",
-  "2067125"
- ],
+ "novos": [],
  "edicoes_lidas": [
   11522,
   11524,
