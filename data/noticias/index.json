@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-24",
- "gerado_em": "2026-11-24T12:17:14Z",
+ "gerado_em": "2026-11-24T13:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,23 +18,23 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 8,
-   "aceitos": 3,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 36,
-   "aceitos": 6,
+   "lidos": 27,
+   "aceitos": 4,
    "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 1,
+   "lidos": 8,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 17,
+   "lidos": 19,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -66,22 +66,22 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 5,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 1,
-   "aceitos": 0,
+   "lidos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -91,13 +91,13 @@
    "ok": true,
    "lidos": 33,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 70,
+   "lidos": 72,
    "aceitos": 1,
    "possiveis": 7
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 19,
+   "lidos": 20,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 28,
    "aceitos": 2,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 3,
+   "lidos": 2,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 11,
+   "lidos": 12,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 2
   },
   {
@@ -278,21 +278,47 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "possivel": 19,
-  "sem_contexto": 307,
+  "possivel": 18,
+  "sem_contexto": 301,
   "oficial_sem_tema": 4,
   "veiculo_excluido": 31,
-  "excluir": 44,
-  "sem_contexto_com_tema": 13,
-  "outro_estado": 26,
+  "excluir": 46,
+  "sem_contexto_com_tema": 15,
   "veiculo_outra_praca": 10,
   "caixa_alta": 1,
-  "sigla_sem_ancora": 5,
+  "outro_estado": 24,
+  "sigla_sem_ancora": 6,
   "exterior_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "880ac541782f",
+   "titulo": "Prefeito de Cariacica é multado em R$ 10 mil por vídeo fake de Pazolini",
+   "veiculo": "TV Sim Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNeGVQSWg5d3hFY05MaXRCdXg2ZkJ0d05Jemc0S0VEX0JBQkJXRGdUSG9qTjlQeS0wZjhNSklPY3RBR2FNeG0zc2xoN3FXWHV2aFpjWGNHQkxtakhxaUhCamFzajZZczEwYzl4VmRUcnR2SGk3eHUxaDNlSEJkMl9id0tuN1pXZThVMTV1RXhTX211THJ1MWVERXZHdjc3VTRkN1JJbVpLT3ctdVU3cFpuZllFRFhCZWhsdjJN?oc=5",
+   "data": "2026-11-24T12:49:24Z",
+   "coletado_em": "2026-11-24T13:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "1aaea7b64672",
+   "titulo": "Detran de Alagoas divulga resultado final das provas discursivas e convoca candidatos para novas etapas",
+   "veiculo": "Tribuna do Sertão",
+   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPZGNibmNIZU9RWVpZbXBsNjY2dGFvMlBRSlI5YW5ybThkMnFiaGtpZms3ak90OFlKTWlrUUw1dXVLZVBYV1VPMjFkOGlkZ09INjZYMFo1YVlvQmZTX081NWZHZlNRenREYk90d21OYWFFX1hyeXlJcmlQODJla2hSQ2NodVFrUV9UMjJybDg1dTFSRUZtWG1NM3FydFR5NS02UHpGZ09YTXpKeWJfN0JWenI4dEhOQTRGc3Bad2FZaDJyM1lvU2tnbGFiUmcwd00xamNROFNxS1M2QnMtbG1oaHVfR3dkcnhBOHhyWDVwTDJBN1VuRTc2Zw?oc=5",
+   "data": "2026-11-24T12:18:00Z",
+   "coletado_em": "2026-11-24T13:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "bbee0d443d96",
    "titulo": "Prefeito de Cariacica Euclério Sampaio é condenado a pagar multa por divulgar vídeo manipulado sobre Pazolini",
