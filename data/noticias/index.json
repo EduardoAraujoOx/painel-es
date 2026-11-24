@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-24",
- "gerado_em": "2026-11-24T11:17:15Z",
+ "gerado_em": "2026-11-24T12:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,15 +17,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 2,
+   "lidos": 8,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 29,
+   "lidos": 36,
    "aceitos": 6,
    "possiveis": 5
   },
@@ -33,7 +33,7 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 20,
+   "lidos": 17,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -57,7 +57,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 1,
+   "lidos": 0,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,15 +89,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 32,
+   "lidos": 33,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 67,
+   "lidos": 70,
    "aceitos": 1,
    "possiveis": 7
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 44,
-   "aceitos": 2,
+   "lidos": 25,
+   "aceitos": 1,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 17,
+   "lidos": 19,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,16 +153,16 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 29,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 56,
-   "aceitos": 3,
+   "lidos": 100,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 2,
+   "lidos": 3,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 5,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -242,7 +242,7 @@
    "consulta": "https://g1.globo.com/rss/g1/es/espirito-santo/",
    "ok": true,
    "lidos": 100,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -278,21 +278,125 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
   "possivel": 19,
-  "sem_contexto": 312,
+  "sem_contexto": 307,
   "oficial_sem_tema": 4,
-  "sem_contexto_com_tema": 17,
-  "veiculo_excluido": 37,
+  "veiculo_excluido": 31,
   "excluir": 44,
-  "outro_estado": 27,
-  "veiculo_outra_praca": 9,
+  "sem_contexto_com_tema": 13,
+  "outro_estado": 26,
+  "veiculo_outra_praca": 10,
   "caixa_alta": 1,
-  "sigla_sem_ancora": 3,
+  "sigla_sem_ancora": 5,
   "exterior_sem_ancora": 1
  },
  "itens": [
+  {
+   "id": "bbee0d443d96",
+   "titulo": "Prefeito de Cariacica Euclério Sampaio é condenado a pagar multa por divulgar vídeo manipulado sobre Pazolini",
+   "veiculo": "G1 Espírito Santo",
+   "url": "https://g1.globo.com/es/espirito-santo/noticia/2026/11/24/prefeito-de-cariacica-euclerio-sampaio-e-condenado-a-pagar-multa-por-divulgar-video-manipulado-sobre-pazolini.ghtml",
+   "data": "2026-11-24T11:59:28Z",
+   "coletado_em": "2026-11-24T12:17:14Z",
+   "outras": [
+    {
+     "veiculo": "G1",
+     "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNZlpfQW9vTXA3LXg1ZFpVc3FNTHBmajFYR2Z1NTVrVDdneFlHMU9ISzZ5bFpVZ2lvMTZia05nVWFEd0tkTXdDblJBdHA0STVxd0hMY0FvbTFTY2hicGtCQnR5WVZOa1RxMTlpRk13V3BUOTdlcTMtWGRObnotbzlZaVd0Q2xHN0hDa2RWb2pTUnRuVDFBZXdjSll0RVppNjRqa0hieEtsRmZCbmdNbVpHYjZuaDZkWWo5bTAyOWpfbkNXNTRmSTVOVDlYYXJyS3g4Rmw2bFl0Q1BOeDQ1dXExekg2dXdfaDNGd3BiOTJzWEVNaFRDNWE0X1V4d0RHZTRiX2xZ0gGSAkFVX3lxTFBDd3FkdkdsTVRWVzFXUFF6MjNhRGJuY1VGVTBNZHMySWUteVBrLXFuY014Vk5kT0oxeDNEVWVjRlc1SnhJRk9pekR3U0RNazhVMzBuM1pkeFdsdTBfXzBOdWJ0dDhWN1BESVRzWC1pNnJKbExsWlI1ZkQ5WGhybER3bkdORFV0b00zcTktUFVqSnpKb3NMN1JkTXh5cjdqZ2FpNU9tZlducl9wYUpvRUV4Mkpmd21kbU5idlB5WXlfVWNESXlNbXAzMmUtTkEzMlZuZktaSGY5Yll3OVA5WXNnaUtMaGEwU1c1V3dFNE96RVJ6UmI1S1dycmhVM01NdVo5bi1BWDVYVzVHWlJrUW9ua2c?oc=5"
+    }
+   ],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "01af8b64eb02",
+   "titulo": "Câmara aprova projeto que amplia bloqueio de gastos a partir de 2027",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/camara-bloqueio-de-gastos/",
+   "data": "2026-11-24T11:52:49Z",
+   "coletado_em": "2026-11-24T12:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "restricao"
+   ]
+  },
+  {
+   "id": "dfbd114d9bd1",
+   "titulo": "Governo abre R$ 23,6 milhões para a Sefaz, com R$ 17,6 milhões para comunicação e educação fiscal",
+   "veiculo": "AL 102",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNaGQ0aXBFc2gzdkpqLTJiU1BtMFBIUGZORXFUZEM1Wl9Ea1dMbEpreUhqeDR3ZFB6aTVRTWFsQjhsYS13OHhPNGtwWW9NamJCV3ozelVld3c4c09uT3pXOHY4WHBOcGRpN2FpbGdJUkE5TzZRRVJzdUNqeU5lYlNwM0hBNTBVWTNRdlNDVGpweFNqSWVuZGhFRkNkM0trWThnSU5uTG93T3VxNTBOWXhITHZFNkpaTGRBVGVVbThKUnAxUGNlSlFkbkdIYlpXbXc?oc=5",
+   "data": "2026-11-24T11:48:00Z",
+   "coletado_em": "2026-11-24T12:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "3d26c445e50a",
+   "titulo": "Os deputados do PL que votaram com o governo Lula no ajuste fiscal",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRkpvb05ieVJBOTlpSXYxMU12M3BlUW1aOWw4VERzeWJ2QnVRSzBsRW5yZlhfZDZNd1NEaU50cUQycy14MG8wT3ZVa3gtODIzem9rVVZTUVNXZzRhWVJIUFEyeTlIWUdZZWFxbVlpOEE0TnlQSUZlRXJxQTl1MlZXeHMyU3AydWU0M185d2x1SllVa2M?oc=5",
+   "data": "2026-11-24T11:41:39Z",
+   "coletado_em": "2026-11-24T12:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "d6f53eb65a9a",
+   "titulo": "Parece obra da Noruega, mas fica no Brasil: com 70 metros de altura, 3,5 km e 3 mil toneladas de aço, uma das ciclovias suspensas mais impressionantes da América está no Espírito Santo",
+   "veiculo": "Xataka Brasil",
+   "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxPSXRJUFB5SU1hZjZPYng3TTZxWmZzVFlzc2VLYW9oWjB2NllFVEliQ25pZnFvNmlnNUJaUm90OTFtTVBVWmhhN1JyV180TWdrZDVWb2h3VktmUnJydE1BVXd2MHVCOGNyTERqV0VUcGRQZ2VrUVRCcVp3bUttMkZmSlBURTVORzdRQ1hIaDNJSGpMQXpwQTR1Y2ZFOG01ajFyTVI3bGppOVJ1a3h0OEg3QlB1V3pzOXlYalBweUVkUVlTUjNiMUwtQmxVeFE4WUtjVWY4RjJQYmhiSDVRejZGd1IwZG1Tam0xNlBOMEtGS2NmRW5WZWxiY0VWR1loOERsQ2VoVmpaTnRQOWp1WEJVZUprbm9BNW5BZUJXakEtLUIyRXlBWTVod1pLQ0I1ZC1s?oc=5",
+   "data": "2026-11-24T11:30:52Z",
+   "coletado_em": "2026-11-24T12:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "restricao",
+    "contratos"
+   ]
+  },
+  {
+   "id": "47a4d04d722d",
+   "titulo": "Governo de Alagoas publica resultado final da prova discursiva de concurso do Detran; confira",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNZ3hwNEVoazF5N0wzQ3hQdGRvSndkWnhrUVJmY2c5b0NvTzBxdWlkb2dnVDJXNjRLWDlXZ3I3ZTROdVNhdXAyRElaekh4aGp2S3A3S0JMTzJ1Sk5tV3htdnRYTGQwS3JsUlF0aTVQenhQclpJd1ZyRkFKLVVvU1V1TFNhRlRqUE93T1lqdjJGUktVXzZtY1RIXy0zN0J3Q2pwRVlkNTJ4VkdoYlEtRG54WUxaN2VrZzc5OHFrMDAzMzlYSzZZMWdEZVlpZVp4bmx5VlB1VHZOUXFYRXd2RTk2STFhb9IB8gFBVV95cUxORjFUZ1J3SEVzQnJlMkNCS1Rlbnk0UTFPQjV0MU9FQVZDY3laaG42am56QTdNUS05MDNhUjc0Y1hGTlJTTzE3RGsyeWNsZVNnd3NvbUNvVHluTWZ6dFVNcnJadS03d0xyXy1ZY2swUXU4NklTSzhDOGhXUnpHRnRyUWkwaWNzSWR5c3ZVaHp6R2tSWklVai05UEVNNjVWUk9wZlJUUkxaZWxFaUFScmdIclFqODBmRUplOXVDWlREWW52ZTFMSTB2aGtFbzRoeTFpMXVLMzhWakdScWFzNkh1QU5wU24yTVJVYnBfWFl6YkZhZw?oc=5",
+   "data": "2026-11-24T11:28:48Z",
+   "coletado_em": "2026-11-24T12:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "4f51721a1457",
+   "titulo": "Concurso do Detran de Alagoas divulga resultado final da prova discursiva",
+   "veiculo": "Tribuna Hoje",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOdVdzdzZEekZWemxwQmplWUdQaFRqbDZELUlQcDQ4YVZNa1NtLVB5X1RCOHBsZWtDQ3pNdFd1ZGFDbXdXX2I1SVc3bU1TcXQtcXJlY0RGN3Q0OXBEMmZicGxMOGlQQmdfSjF3enlSOEd2djFlaUs4aGkzNjN4ZTBJSXMzSm9nQWE4YVIwQWRic01pZTExTDFnalg2QXpiVGxNYm5ya1F4Zy1rQUo5bGpEU2Q2V1l0Wkc3U1cxZ284OWg5eWVkRXdwdFd6YzU?oc=5",
+   "data": "2026-11-24T11:22:00Z",
+   "coletado_em": "2026-11-24T12:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "95f045c8a04d",
    "titulo": "Sefaz transfere atendimento presencial de Cariacica para Vitória",
@@ -871,6 +975,10 @@
     {
      "veiculo": "UOL Notícias",
      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNTGdLR09VNHYyWUNqVWR2TlIxZlhlcnZwcnJKOElBbzRXLVRGMXZUMDhtSWNRUUQyREM0a1otSkdmRDdxTzJYX0o4ZExEOXBlZXZ2Yzlqb1RuUF9Bck1pTFZ3Z21KNTV2eFdTT3ZlLXd0WWJyc3pFQ2ZLRWhUZE94Qm9TYTc5Wk1xaGYtdWNzY016MEVoamVVTERUUUtHNHNEemtBZWtHYkdLX0Nnd1VJTHhMNUNXaFR1UUgzaXM3YWRwbVdnR0xQM1BCR2lwbkFXZUxpTTFYbUV1cnNZV3Q1TEZOaV9SU3hZVFZiV3gyakVZWmI1VWxtdQ?oc=5"
+    },
+    {
+     "veiculo": "BOL",
+     "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQZElmZF9uVDR0ZkotZ2I4Y0ZteGE5VFB4aXpta0tYT1lGUTJIZWt2ZDItRExLYms3UmhXZWdLUTBXRFg3VmJLX1g5cENmUXNENjJHM0hPcWROc1c4WHU1N2hydXFDdlgzRzNva3h1VWVER1Bpel9JbDM0Q3ZPczNqQ0Y5SWpVMlNiZjFhUG9pdk5vdFJGZTE4TlR4RXB6dW5NanhGcVZKcDNSZ3RuMGJSY1pleWRQeUpmYmk0OTBXSy14YkU3dFhzVnN2QkFRM2E2ZVc1czJqNkxkOEhpR1HSAd4BQVVfeXFMUGRJZmRfblQ0dGZKLWdiOGNGbXhhOVRQeGl6bWtLWE9ZRlEySGVrdmQyLURMS2JrN1JoV2VnS1EwV0RYN1ZiS19YOXBDZlFzRDYyRzNIT3FkTnNXOFh1NTdocnVxQ3ZYM0czb2t4dVVlREdQaXpfSWwzNEN2T3MzakNGOUlqVTJTYmYxYVBvaXZOb3RSRmUxOE5UeEVwenVuTWp4RnFWSnAzUmd0bjBiUmNaZXlkUHlKZmJpNDkwV0steGJFN3RYc1ZzdkJBUTNhNmVXNXMyajZMZDhIaUdR?oc=5"
     }
    ],
    "possivel": false,
