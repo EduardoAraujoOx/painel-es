@@ -1,0 +1,59 @@
+{
+  "fonte": "Siconfi, API RREO Anexo 04, sexto bimestre de 2025",
+  "fonte_codigos": "https://servicodados.ibge.gov.br/api/v1/localidades/estados/32/municipios",
+  "data_coleta_utc": "2026-11-24T20:03:44.713866+00:00",
+  "municipios_consultados": 78,
+  "status": {
+    "sem_demonstrativo_api": 65,
+    "rreo_sem_rubrica_realizada_comprev": 2,
+    "receita_observada": 11
+  },
+  "total_receita_observada_r$": 89487148.9,
+  "observacao": "Somatorio apenas dos entes com rubrica observada. Nao extrapolar a totalidade. Nao inferir receita zero quando nao ha demonstrativo ou rubrica.",
+  "municipios_receita": [
+    {
+      "municipio": "Vitória",
+      "valor_r$": 27376705.44
+    },
+    {
+      "municipio": "Serra",
+      "valor_r$": 13940728.07
+    },
+    {
+      "municipio": "Vila Velha",
+      "valor_r$": 12882470.69
+    },
+    {
+      "municipio": "Aracruz",
+      "valor_r$": 10166447.2
+    },
+    {
+      "municipio": "Cachoeiro de Itapemirim",
+      "valor_r$": 7528146.61
+    },
+    {
+      "municipio": "Viana",
+      "valor_r$": 6880770.35
+    },
+    {
+      "municipio": "Cariacica",
+      "valor_r$": 4000070.35
+    },
+    {
+      "municipio": "Conceição da Barra",
+      "valor_r$": 2453366.07
+    },
+    {
+      "municipio": "Linhares",
+      "valor_r$": 2448328.08
+    },
+    {
+      "municipio": "Guarapari",
+      "valor_r$": 1680179.32
+    },
+    {
+      "municipio": "São José do Calçado",
+      "valor_r$": 129936.72
+    }
+  ]
+}
