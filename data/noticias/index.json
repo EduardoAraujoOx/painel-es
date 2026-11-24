@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-24",
- "gerado_em": "2026-11-24T20:10:23Z",
+ "gerado_em": "2026-11-24T20:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 43,
-   "aceitos": 6,
-   "possiveis": 6
+   "lidos": 27,
+   "aceitos": 4,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -49,9 +49,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 20,
+   "lidos": 24,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -137,9 +137,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 52,
-   "aceitos": 2,
-   "possiveis": 3
+   "lidos": 26,
+   "aceitos": 0,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -155,14 +155,14 @@
    "ok": true,
    "lidos": 58,
    "aceitos": 2,
-   "possiveis": 5
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
-   "aceitos": 1,
+   "lidos": 55,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -280,20 +280,34 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 361,
-  "possivel": 28,
-  "oficial_sem_tema": 5,
-  "sem_contexto_com_tema": 28,
-  "veiculo_excluido": 41,
-  "excluir": 51,
-  "outro_estado": 40,
+  "sem_contexto": 350,
+  "possivel": 29,
+  "sem_contexto_com_tema": 23,
+  "oficial_sem_tema": 4,
+  "veiculo_excluido": 36,
+  "excluir": 50,
+  "outro_estado": 34,
   "caixa_alta": 1,
   "generico_sem_ancora": 1,
-  "veiculo_outra_praca": 15,
-  "sigla_sem_ancora": 9,
+  "veiculo_outra_praca": 12,
+  "sigla_sem_ancora": 8,
   "exterior_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "c69df3725ac4",
+   "titulo": "Publicada convocação para avaliações e resultado final do concurso do Detran",
+   "veiculo": "Portal AL 7",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVDVZOTQ0eGYzSG9YektfSEI2VmJnZlR1QXFzOVJVcGN6VmpsZWFPZFRvVjRUZWpPZTZZUVdOMzZmX3lsQXpzVDZBQURpMkEtaE44Y3NwRUV6UHNGeks1MzVHRTh6MkVOUkFzVlpXdDlMQUkzQkpYZ0xHeURVQmF0YUFtc3hzOE45S0RFb3k4aF9BZDlicDEzWktCSzNNSXViY0pwdA?oc=5",
+   "data": "2026-11-24T20:14:21Z",
+   "coletado_em": "2026-11-24T20:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "b208a29c7519",
    "titulo": "Assembleia vota auxílio de R$ 3,5 mil para famílias atingidas pelas chuvas no ES",
