@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-24",
- "gerado_em": "2026-11-24T17:17:14Z",
+ "gerado_em": "2026-11-24T18:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,16 +25,16 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 25,
-   "aceitos": 3,
-   "possiveis": 5
+   "lidos": 27,
+   "aceitos": 4,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 23,
+   "lidos": 25,
    "aceitos": 1,
    "possiveis": 4
   },
@@ -57,16 +57,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 0,
-   "aceitos": 0,
+   "lidos": 1,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 2,
+   "lidos": 7,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 36,
+   "lidos": 37,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 75,
+   "lidos": 80,
    "aceitos": 1,
    "possiveis": 7
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 20,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 59,
    "aceitos": 2,
-   "possiveis": 4
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 12,
+   "lidos": 13,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 4,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -280,20 +280,87 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 315,
-  "possivel": 20,
-  "sem_contexto_com_tema": 20,
-  "oficial_sem_tema": 4,
-  "veiculo_excluido": 38,
-  "excluir": 46,
-  "outro_estado": 31,
+  "sem_contexto": 330,
+  "possivel": 21,
+  "oficial_sem_tema": 5,
+  "sem_contexto_com_tema": 25,
+  "veiculo_excluido": 46,
+  "excluir": 49,
+  "outro_estado": 36,
   "generico_sem_ancora": 1,
   "caixa_alta": 1,
-  "veiculo_outra_praca": 12,
-  "sigla_sem_ancora": 5,
+  "veiculo_outra_praca": 11,
+  "sigla_sem_ancora": 7,
   "exterior_sem_ancora": 3
  },
  "itens": [
+  {
+   "id": "25f2214edc21",
+   "titulo": "Brasil terá recessão se Lula não fizer ajuste fiscal mais robusto, diz Eduardo Giannetti",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/mundo/brasil-tera-recessao-se-lula-nao-fizer-ajuste-fiscal-mais-robusto-diz-eduardo-giannetti-1126",
+   "data": "2026-11-24T18:05:42Z",
+   "coletado_em": "2026-11-24T18:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "d799926da85d",
+   "titulo": "Painel do IJSN permite acompanhar internações potencialmente evitáveis no Espírito Santo",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPaEYyMVJNZjVEUW9hcFJpdGZXLWd2UzVjc0VWSjJyb2w1dHJ1WXQ3RDdHZlZmcVBuLUxYUGJTX1UtSnBoYzBZclZfbkVIY3pTcVBhSjBjQ3M0TGYtU0U2ZTNHVW9ZSFkzN0ZHaVJuQVc1V1cwMjNaUGZUTGYxU0FleGlxTGpnbzloZEVQNGxsTHI0aGVrdE9BQU04UXdHaHQtR0R3UlRRTXVWUzd3WjZr?oc=5",
+   "data": "2026-11-24T18:03:00Z",
+   "coletado_em": "2026-11-24T18:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "9307c4c90322",
+   "titulo": "Jornadas especiais: governo definirá regras até a próxima semana",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9OSFRXSWNZYmZPclpfUjk0LTRrUWE1dmNjSEZ1a0NBUGZQSFV6NlJsM0lZWHdHRTVRalBldXhKRHpBLVNEdzJJOXRTdnRwSGNRNGgycFUxdVFDYmIySDVzZXpsamZHT3hPVVk5dHBfYnJfVFlqNFZzdEJNaVU?oc=5",
+   "data": "2026-11-24T18:02:00Z",
+   "coletado_em": "2026-11-24T18:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "1e768780eb60",
+   "titulo": "Ministério Público pede intervenção judicial no Corinthians por dívida",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/esportes/2026/11/ministerio-publico-pede-intervencao-judicial-no-corinthians-por-divida/",
+   "data": "2026-11-24T17:40:04Z",
+   "coletado_em": "2026-11-24T18:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas",
+    "controle"
+   ]
+  },
+  {
+   "id": "e087decfe621",
+   "titulo": "Chuvas em Mimoso do Sul interrompem serviços de saúde; veja onde buscar atendimento",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/saude/chuvas-em-mimoso-do-sul-interrompem-servicos-de-saude-veja-onde-buscar-atendimento/",
+   "data": "2026-11-24T17:33:04Z",
+   "coletado_em": "2026-11-24T18:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "restricao"
+   ]
+  },
   {
    "id": "3fff1699d6dd",
    "titulo": "ES endurece regras para empresas venderem ao governo e fazerem obras públicas",
@@ -362,6 +429,20 @@
    "triagem": 9,
    "temas": [
     "controle"
+   ]
+  },
+  {
+   "id": "ebaf6d6c9c88",
+   "titulo": "Um marco para a causa animal: Espírito Santo terá seu primeiro Hospital Público Veterinário com assinatura de ordem de serviço nesta segunda-feira (30)",
+   "veiculo": "rede noticia es",
+   "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQVkNkOENibnNMY19GbWs4SEZkYjN5akMtbkU3cGE2M25BQ1BOQWdicV9sdFZ2TUxmcEE4MDRZQ2s5OWVfdHpibXhSNmd1X3R1OThpZ3hRbk1ndGphenF4S2otZDdtLXVsLXZTUWhTWHFmNTkxVlM2R3FFdFVPYlJPVndCWGw5by00RHNOMnNzaFJnSnF6WVlJakNNZXNTODI2V3V1ZUZPdDFEeUxXN05TekMtTjVoclZFSmFrRi13OFFFdlQwaHVRbkNWTmd0aHBXQnpyOUxqcnFyVHRHNGZYU0ZGOTBZV1NQR3o5VUl6bUVlaHRCdlVsVVpIM0ZSUE53c2c?oc=5",
+   "data": "2026-11-24T14:31:14Z",
+   "coletado_em": "2026-11-24T18:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "contratos"
    ]
   },
   {
