@@ -1,0 +1,36 @@
+name: Coleta unica Siconfi Comprev ES 2025
+
+on:
+  push:
+    branches:
+      - pesquisa-comprev-es-2025
+    paths:
+      - '.github/workflows/coleta-comprev-es.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Coletar dados oficiais do Siconfi
+        run: python pesquisas/siconfi/coletar_comprev_es.py
+      - name: Publicar resultados apenas nesta ramificacao
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add fontes/comprev_es/
+          if ! git diff --cached --quiet; then
+            git commit -m "Dados de compensacao RPPS municipal ES 2025 extraidos do Siconfi"
+            git push
+          fi
+      - name: Anexar resultado da coleta
+        uses: actions/upload-artifact@v4
+        with:
+          name: siconfi-comprev-es-2025
+          path: fontes/comprev_es/
