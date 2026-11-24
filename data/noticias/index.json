@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-24",
- "gerado_em": "2026-11-24T22:17:13Z",
+ "gerado_em": "2026-11-24T23:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 25,
+   "lidos": 42,
    "aceitos": 4,
-   "possiveis": 6
+   "possiveis": 10
   },
   {
    "fonte": "Google Notícias",
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 37,
+   "lidos": 36,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -99,7 +99,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 1,
-   "possiveis": 10
+   "possiveis": 9
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 54,
+   "lidos": 53,
    "aceitos": 2,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 25,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 50,
+   "lidos": 48,
    "aceitos": 1,
-   "possiveis": 6
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
@@ -226,7 +226,7 @@
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 2
   },
   {
@@ -280,20 +280,49 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 355,
-  "possivel": 29,
-  "oficial_sem_tema": 5,
-  "sem_contexto_com_tema": 23,
-  "veiculo_excluido": 44,
-  "excluir": 53,
-  "outro_estado": 38,
+  "sem_contexto": 363,
+  "possivel": 28,
+  "oficial_sem_tema": 9,
+  "sem_contexto_com_tema": 27,
+  "veiculo_excluido": 45,
+  "excluir": 52,
+  "outro_estado": 37,
   "caixa_alta": 1,
   "generico_sem_ancora": 2,
-  "veiculo_outra_praca": 17,
+  "veiculo_outra_praca": 15,
   "sigla_sem_ancora": 10,
   "exterior_sem_ancora": 3
  },
  "itens": [
+  {
+   "id": "c8919b2a8447",
+   "titulo": "Governo do ES muda regras para contratar empresas e executar obras públicas",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/governo-do-es-muda-regras-para-contratar-empresas-e-executar-obras-publicas/",
+   "data": "2026-11-24T23:15:26Z",
+   "coletado_em": "2026-11-24T23:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador",
+    "contratos"
+   ]
+  },
+  {
+   "id": "300970a5d75d",
+   "titulo": "Detran firma contrato de R$ 41 milhões para instalação de painéis eletrônicos",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcE1EOFBHQTBPR1NtUkZteVNFTDlLSFBwQmNaQnk1b1JpSFZQTEcyeFBUNTUyTGg4Wkc3OG5fWllYWTlVSHVGVElRczYwOVJkWGtJQU96cmVpdUxaNmtubHZUUHk1TUI2NDN1cUFoc2dqancyR1RqS3pDTUNfbkRyNUxOdDRRQWdyRkw0RnhzWjFiZllGcGpPSlNpZHR5aVBNX3FkLVkxYl9OUTNkWERENEFBbHBsX2pCZlppZzRieGZkNzB1U2tSeWgwdFdHVHRSYnJoYllRejFEQdIB6AFBVV95cUxOME53clpoQ09xNEhCQ3NsclVZYUxtT013dV9STkdqcVlHRzl6SE5KcVVNMFZxYldrTGVIY3FYNmpBdk5JSWstX0xST2haTVlXQTdIZ1cxQm9Ob25JTFZ2RDlkQWl6dUV6aXZTbHEyTzdtUW5FRnoySDFJc3lqbXMwTUIyOV9VRG1yZDVQSW9vYTUtNzZJNi1Vc0UwODN6RG1BT3NyUE5yRTktR3BuVnpCc0FhZEJvWEFnSzhrX0RPM1RsVDZUOXRJLTBHaFhuV1VCNjdJMDZGSFhoWkpIMW1PSFZYa1hOVUM5?oc=5",
+   "data": "2026-11-24T22:39:16Z",
+   "coletado_em": "2026-11-24T23:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "6e379cc996eb",
    "titulo": "Vitória fará nova licitação para resgate de animais após irregularidades em edital",
