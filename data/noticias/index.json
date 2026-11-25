@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-25",
- "gerado_em": "2026-11-25T18:17:15Z",
+ "gerado_em": "2026-11-25T19:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,41 +17,41 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 16,
-   "aceitos": 9,
+   "lidos": 17,
+   "aceitos": 10,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 25,
-   "aceitos": 10,
-   "possiveis": 3
+   "lidos": 38,
+   "aceitos": 13,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 4,
+   "lidos": 9,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 8,
-   "possiveis": 1
+   "lidos": 8,
+   "aceitos": 7,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 28,
+   "lidos": 33,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -65,8 +65,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 4,
+   "lidos": 9,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -89,16 +89,16 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 64,
+   "lidos": 66,
    "aceitos": 3,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 83,
-   "aceitos": 2,
+   "lidos": 82,
+   "aceitos": 1,
    "possiveis": 6
   },
   {
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
-   "aceitos": 0,
-   "possiveis": 2
+   "lidos": 56,
+   "aceitos": 2,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 33,
+   "lidos": 31,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 32,
+   "lidos": 33,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -161,17 +161,17 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
-   "aceitos": 0,
+   "lidos": 57,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -193,9 +193,9 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 28,
-   "aceitos": 3,
-   "possiveis": 2
+   "lidos": 24,
+   "aceitos": 2,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -210,23 +210,23 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
-   "possiveis": 3
+   "aceitos": 1,
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
-   "possiveis": 1
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 2
   },
   {
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -278,21 +278,171 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 6,
  "descartes_na_coleta": {
-  "sem_contexto": 368,
-  "possivel": 22,
-  "oficial_sem_tema": 2,
-  "sem_contexto_com_tema": 21,
-  "outro_estado": 27,
+  "sem_contexto": 388,
+  "possivel": 20,
+  "oficial_sem_tema": 4,
+  "sem_contexto_com_tema": 25,
+  "outro_estado": 33,
+  "veiculo_outra_praca": 17,
   "veiculo_excluido": 34,
-  "excluir": 45,
-  "exterior_sem_ancora": 3,
-  "generico_sem_ancora": 4,
-  "veiculo_outra_praca": 13,
-  "sigla_sem_ancora": 8
+  "excluir": 46,
+  "exterior_sem_ancora": 4,
+  "generico_sem_ancora": 7,
+  "sigla_sem_ancora": 10
  },
  "itens": [
+  {
+   "id": "6b814e2587c2",
+   "titulo": "Pazolini discute parcerias e linhas de crédito com vice-presidente da Caixa Econômica Federal",
+   "veiculo": "Montanhas Capixabas",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPU0Q3U29SQ1JKc3hYTlgtMmJtakx4aFFVOVZXd29WQUNTc1FwNk9OTEZ4TVJCaEtMcnppM2hjdG1mRzVERlUxbkhWRDhPME41NjNWTTU4Umg3YkJGU0U3RWhsZXRfZzNlYUdBazRnQkFCcTZoUnRDOUJSdEM4U080Rk9uaWJfVFFGS2xLWlE5NDFaejcyRkgtdkwxRjhxNXNWRXEtclNOSUtYWkVCV1hPU1A0eFBXSWhRZlVkS282ejM0QkNrR3dfQjlWckw?oc=5",
+   "data": "2026-11-25T19:08:58Z",
+   "coletado_em": "2026-11-25T19:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "b1a51df59cfc",
+   "titulo": "INSS paga adicional de 25% na aposentadoria; veja quem tem direito e como solicitar",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBTYlNvZTVwR2cwWF9pNXp0enBpVE5nOW9iOFp0WFRuUElwcjdpaC1Ta1ludWhJYUtfcGQyTFVvVDR6T2tOREQyVHdHTjVHaDEtY2xoYjU5bW9fRVVGQ25FTTYzZUJtdTBiSmYyQ3RhdlJmWjgyMUV4Vnh3?oc=5",
+   "data": "2026-11-25T19:04:41Z",
+   "coletado_em": "2026-11-25T19:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "af216cc4e76e",
+   "titulo": "Pazolini discute com vice-presidente da Caixa estratégias para o futuro do Espírito Santo",
+   "veiculo": "Aqui Notícias",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOcFZTVVc2blZ5UG5vdjJPckRZMldKYUMya1Zzb3UyWkpJZnpObk02RVdESkplYllLUlVWZXZXNWpMcmlueTllQlRnRjhyUmZqS2RmMkYtVHg5RmJrWVB4eDRKem1NRUE5NVp5NlQ0RTJjSnZnQU52YjBhVmhsVmNrVW1uQmM0dWpBdGVOUHBHbWpYZWNkV1ljLVJxN1JaLUdMYkdnbDNMZDdJQ2pvRzFXOXZfWGY0Q3FNS2tGOHdkTGE?oc=5",
+   "data": "2026-11-25T18:57:37Z",
+   "coletado_em": "2026-11-25T19:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "2d3b8fae6d17",
+   "titulo": "Concurso da Polícia Penal do Piauí: Alepi aprova ampliar cadastro de reserva",
+   "veiculo": "CidadeVerde.com",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPM1VDYmtKXzBGOXhUaW1HMmVtODYzU3V1THRzUDFFWHVIMWdrRVFhcUMyQWJjWEItMTlzQ2hpNGM4a1B2VGEzQmlnTVBMRmJtNklLVXZUbk5uMWNWa3k4al8yTFgxU3JLaGJ0ekktYy00RVJkUFRtVzY1cTRDV0d2TW9FZlN0bjQxVWt3QWs2aGZhUGwzSkpLWndpYjdldHNiNEs0VGd5ZkxteW1Ia0c0ajdOT2w?oc=5",
+   "data": "2026-11-25T18:55:00Z",
+   "coletado_em": "2026-11-25T19:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "1b30067fcb87",
+   "titulo": "Recuperação de áreas degradadas ganha força no Espírito Santo com apoio à produção sustentável",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNbTcxaE51YnFHZGFXUHpqNW50ZklRdU5VUGRpYzNMQjhOY3hvWW5LS3V1LWRNNzMtcXhpQVdpN25Ld2Q5YjZ0UjJpX21tTnhzeU90REhWSDBTQlBKSVEtcC1sQkh0d2JKM0hyRW1VeGV1SkxJQUpMaTdwVWRkVnZNRDk4VUVSUkhNd3gzNktud0tpcEE2Q29Za292RnZaWUZ4cWpTNXpLUVZwNXVMNHlsTG5jSlU0VVE?oc=5",
+   "data": "2026-11-25T18:52:00Z",
+   "coletado_em": "2026-11-25T19:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "dd60d05614fc",
+   "titulo": "Pazolini se reúne com a Vice Presidente da Caixa Econômica e discute alternativas de parcerias para o estado e os municípios capixabas",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPZkZNNllmWUo4Q1pjQllzLUpQbzJlSWc1dGN4UWJSOU12enBtTDFPVjNWMXZxYVFua1F5MVhObG1ScDdYSG0xTUM0RThUZXlPQTY2YWY4WnozcjlfbVRZYXN0eTNGUWNneEthTllBZWt1cTh5WW13cC1FS1RBNVlrSVlyYkotZTNoMDkzTWlneUIydjdVd192TzQyOXRIdVBFM0R6RXVUenZVZTBWb0x0M3pDSzVsVVRSc1BhNzNGNkxJbGUxbWhXZmN5cWpzd2JvdHlaMjlXaFhNYVM3VTBlczBhaU9yU1kwNV9PYU1SMTQ?oc=5",
+   "data": "2026-11-25T18:50:10Z",
+   "coletado_em": "2026-11-25T19:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "dfb58ccc0b49",
+   "titulo": "Pazolini discute alternativas de parcerias para ES com dirigente da Caixa Econômica",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/pazolini-discute-alternativas-de-parcerias-para-es-com-dirigente-da-caixa-economica/",
+   "data": "2026-11-25T18:42:56Z",
+   "coletado_em": "2026-11-25T19:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "7fe5cd619724",
+   "titulo": "LDO 2027 é aprovada com 57 emendas de Olyntho Neto",
+   "veiculo": "Diário Tocantinense",
+   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPUENZUnFVeGZJSkhZNkY4cEdUcm1QTldVM0ZfY2tCaHhHcnRoc19XOWxvZWJzb1RPV0wtdW5DOG5DWEVKUjBvWGhzM0g2aS1FUmpaY3RvY2ZxeHdHYWsweUczY3R4NmRwaDhTdXVraW9adDNXbkdDU1hLV3VwWjlQMGcxQjZGRXhlOEtPMkxRNzdCaDhSYnZxdldTMllVLUdnQVY3VTd6Y1RCZVNtSVRCR0lkOXVGTWRmRElmMTlmT1JhN1R2cWhlajZHS0tGWFJYUDJMWmFNazhpMy1Ib0NCNVVUc0VubksweldKd2t5Z2pHNG9KWlFhNVF3?oc=5",
+   "data": "2026-11-25T18:42:49Z",
+   "coletado_em": "2026-11-25T19:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "32684fb7fe33",
+   "titulo": "Chega/Açores diz que Orçamento de 2027 é “do maior descaramento”",
+   "veiculo": "Jornal Açores 9",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUVVqX1VfX3B3SEU5SEpJczhtdUdJcVZEZi1IN29yNXd2WlpreHpOWUljY0EzYl8tOFdxQWl3ZERDSlpIc2RKZGREMFBYLU90RUFrcTZzNHRzTk9Qenk2WmREblB0SnFkbE9vcDZSSkJ2bjJ2SFBydEFhc3V5djJvRS1HSHNXUm9oZHprdF81OW4wc3J4YUxKeVlzeFZ3dDZq?oc=5",
+   "data": "2026-11-25T18:34:32Z",
+   "coletado_em": "2026-11-25T19:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "10e588c147de",
+   "titulo": "Linha do Transcol tem alteração na rota após ônibus ser incendiado em Vitória",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/cotidiano/linha-do-transcol-tem-alteracao-na-rota-apos-onibus-ser-incendiado-em-vitoria/",
+   "data": "2026-11-25T18:33:06Z",
+   "coletado_em": "2026-11-25T19:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "d1640e1e08c8",
+   "titulo": "Como votaram e o que dizem os deputados do ES sobre o ajuste fiscal",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/como-votaram-e-o-que-dizem-os-deputados-do-es-sobre-o-ajuste-fiscal/",
+   "data": "2026-11-25T18:16:12Z",
+   "coletado_em": "2026-11-25T19:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "c0ef47902dda",
    "titulo": "Regularize Capixaba abre novo edital para negociação de débitos tributários",
@@ -328,7 +478,12 @@
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNOXFRU3RQSkUzMHdpQllTNkhmVTZiX01oT2VZT3YzOVRVLWVoXzMtVHprY1l5YnFnVzllaWR3N1d5NG5DQXhHalprOVZncHNIQ1QzYm5ud3RlVVVYS0wxY1NOVnJoSDNhX1BlWDNydVd0Yi1hRWxmMkRueUpHaWkxdG84ckxWT2FjOEpIYXZLcnRpVFJzVG5rdXRfT3JoTFJYZGNwUEo5TXNyYUtfdEs5Z3BSd2FnNjRabmFn?oc=5",
    "data": "2026-11-25T17:28:54Z",
    "coletado_em": "2026-11-25T18:17:15Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Governo ES",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTmhkM0QwN3htMHkzYmFMdU1ZZXoyb1luZUZtR3VzVXZUOWFTeHlzd19RYlZ4M2x2b2pWOUg1ZFZNQUVGVlQ0OWxVWEpPNkcwd21TRE1VY3drazhWcV9IU3d2US1BOGV1WnA2MnRfdExyOFNEQ2VXT3dDdEgtTVdIVlNzZVVBei1HMWJ3VURxMjl1bUJBcHdlbW1GRndLMVlJbW9Yb2FuNkFJLUxMVC1jcEtR?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 9,
    "temas": []
@@ -513,6 +668,18 @@
    "temas": [
     "governador"
    ]
+  },
+  {
+   "id": "9da004c05ae8",
+   "titulo": "Sejus propõe parceria em Várzea Grande para produzir pavers com trabalho prisional",
+   "veiculo": "CenárioMT",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdTBRYjZ3d2RHT1plenZOV1RGUEliYkQ0Wl96OWgyVVZsZEFJbGlkdDJrQXFHazNtMTRFN01oM3RERkpqeGZwNjQzZmRab0FtdEVQMWRYYjlyUzc0TkRwRk9nNzBaX0p4WGYwbXl6amhGQzVybVFDVUtMYmtjdXJ0VXkzUGVKVGg4YndNbHJPXzlVV3I4a2d2bUF0SVVwTlA3UkZOWHc1dnM?oc=5",
+   "data": "2026-11-25T12:57:58Z",
+   "coletado_em": "2026-11-25T19:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "1ee18d2351e7",
