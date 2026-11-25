@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-25",
- "gerado_em": "2026-11-25T19:17:14Z",
+ "gerado_em": "2026-11-25T20:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,16 +25,16 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 38,
-   "aceitos": 13,
-   "possiveis": 5
+   "lidos": 26,
+   "aceitos": 11,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 6,
+   "lidos": 8,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 33,
+   "lidos": 35,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -66,7 +66,7 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 66,
+   "lidos": 71,
    "aceitos": 3,
    "possiveis": 4
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 82,
+   "lidos": 75,
    "aceitos": 1,
    "possiveis": 6
   },
@@ -114,8 +114,8 @@
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
    "lidos": 5,
-   "aceitos": 0,
-   "possiveis": 1
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 56,
-   "aceitos": 2,
-   "possiveis": 6
+   "lidos": 28,
+   "aceitos": 0,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 30,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 33,
+   "lidos": 24,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -162,14 +162,14 @@
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
    "lidos": 57,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 24,
+   "lidos": 22,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -201,8 +201,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (previdência OR Ipajm OR \"regime próprio\" OR \"contribuição previdenciária\" OR aposentadoria)",
    "ok": true,
-   "lidos": 1,
-   "aceitos": 1,
+   "lidos": 0,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -218,7 +218,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -278,21 +278,35 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 6,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 388,
-  "possivel": 20,
-  "oficial_sem_tema": 4,
-  "sem_contexto_com_tema": 25,
-  "outro_estado": 33,
-  "veiculo_outra_praca": 17,
-  "veiculo_excluido": 34,
-  "excluir": 46,
-  "exterior_sem_ancora": 4,
-  "generico_sem_ancora": 7,
-  "sigla_sem_ancora": 10
+  "sem_contexto": 368,
+  "possivel": 19,
+  "oficial_sem_tema": 2,
+  "sem_contexto_com_tema": 21,
+  "outro_estado": 20,
+  "veiculo_excluido": 33,
+  "excluir": 42,
+  "exterior_sem_ancora": 6,
+  "generico_sem_ancora": 8,
+  "veiculo_outra_praca": 11,
+  "sigla_sem_ancora": 7
  },
  "itens": [
+  {
+   "id": "57cd8604dfe3",
+   "titulo": "Alepi aprova proposta para ampliar cadastro de reserva do concurso da Polícia Penal do Piauí",
+   "veiculo": "Portal R10",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNc0p0YVYwRkZjUXRGNGVZYWlCdm4zSW03Wjg4T21TNnJvd2xCVWVIa0VFeEI0SnBXNFVGQWVodXktTy1STkN4TkxBb1dnTnBmVXFMc0lyc1BmMk8yTXlBYXY0cEROTV9SbTZpYU5fb3pZSzdhNnNPdjZka3VXWFJqWlZHQjBnT08xeU9FbEdpWTNTNjRJeDJqdEdtWHFLLVQzT25zSUswYzJiNFdTcHZPTUlRVGNBRjlCTzB1SktsZDE1TXVPOEtYcldXd0tmbURGblliTlRTSDNvQdIB3wFBVV95cUxNcVMwSzYyWG9rbWY0bmxTcno1dnlSMmIwYk5VWEJQdHVMNmwyRW9UemJKLXNSdGFCUkRRd2lndXFhRUp2WWVCYk52T01GTWpBRXNjMDc5ckJleGhEdVVmRWkzb3JtQ3VZRkRXX1QtRUlzMkx3MG9ETXNaNzdWa3VsTWZ2VndtUXNWR2w1bC03cWlqei1SUnNtbGVaTFN0S3FuQWF4S1ZMbHhTSDlxTElOSWl2bWFWNU80cjFlcjNZaV81MWpzOFpvbmprQWs5RFZVVFcwUWc3a1BVbE41ejVR?oc=5",
+   "data": "2026-11-25T19:49:05Z",
+   "coletado_em": "2026-11-25T20:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "6b814e2587c2",
    "titulo": "Pazolini discute parcerias e linhas de crédito com vice-presidente da Caixa Econômica Federal",
