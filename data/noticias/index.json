@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-25",
- "gerado_em": "2026-11-25T13:17:15Z",
+ "gerado_em": "2026-11-25T14:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,17 +17,17 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 12,
-   "aceitos": 6,
+   "lidos": 13,
+   "aceitos": 7,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 37,
-   "aceitos": 5,
-   "possiveis": 5
+   "lidos": 25,
+   "aceitos": 7,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -41,15 +41,15 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 4,
+   "lidos": 7,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 23,
+   "lidos": 22,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -89,15 +89,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 57,
-   "aceitos": 3,
+   "lidos": 60,
+   "aceitos": 2,
    "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 89,
+   "lidos": 86,
    "aceitos": 1,
    "possiveis": 7
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 28,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 16,
+   "lidos": 17,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 4
   },
   {
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
+   "aceitos": 3,
    "possiveis": 3
   },
   {
@@ -278,21 +278,92 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 5,
  "descartes_na_coleta": {
-  "sem_contexto": 359,
+  "sem_contexto": 348,
   "possivel": 24,
-  "oficial_sem_tema": 5,
-  "sem_contexto_com_tema": 23,
-  "veiculo_excluido": 29,
-  "outro_estado": 25,
-  "excluir": 45,
-  "veiculo_outra_praca": 10,
+  "oficial_sem_tema": 4,
+  "sem_contexto_com_tema": 22,
+  "outro_estado": 24,
+  "veiculo_excluido": 28,
   "generico_sem_ancora": 3,
+  "excluir": 46,
+  "veiculo_outra_praca": 10,
   "sigla_sem_ancora": 7,
   "exterior_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "b6fa7cd894d6",
+   "titulo": "Engenheiro Renato Pazolini: pai do governador eleito dará nome à nova orla de Camburi",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/espirito-santo/2026/11/pai-de-pazolini-nova-orla-de-camburi/",
+   "data": "2026-11-25T14:08:24Z",
+   "coletado_em": "2026-11-25T14:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "9759623df840",
+   "titulo": "ES oferece desconto de até 60% em dívidas e 145 parcelas",
+   "veiculo": "Portal Tempo Novo",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQRkgzS2tLcTc5aHVrRXJyUElSMUZkNU1DMnBUNDhKQWFmTFNVYjFVRUNuYUZKYmJwQnhBV2EzOEtzY2VPTVNkcTVtZXJNN3hXb3o5bDVoM1cwbFVCOWdNbU9EZXNZalVPaVlqaURLOWxBZjJ4eGhhWW9yMXMzVlVsNEtzRQ?oc=5",
+   "data": "2026-11-25T14:07:00Z",
+   "coletado_em": "2026-11-25T14:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "e5f1fd8c6a29",
+   "titulo": "Presidente Kennedy divulga normas do MPC-ES para adaptar gestão fiscal à Reforma Tributária",
+   "veiculo": "Jornal Espírito Santo Notícias",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNVVp4Q2ZlMkZ5VFg2a1k2QTNsMG96Mm05VmxhcDNONGM2d2NhX0c3X0hIVjZUZTRGOUNxZU56ZGhWMWwxek9QaklyTnJ0YkFqR28yRkxDQVFoMGZjclJwQTJOYkFjbklzYzRNbEpIVkU5YlJaUkI1ckNCTmQ1cjBUQ0x1OTg5WFY3NUpPMU80ZXhad1d0ejR3emVvSHdUdU1DYW5kSEVULXhJUXFLbFJSekFZTWJ3ZjM1R1JTWFh5bk94Y1ctQkNFRw?oc=5",
+   "data": "2026-11-25T13:49:12Z",
+   "coletado_em": "2026-11-25T14:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "cd64dcf1046e",
+   "titulo": "Regularize Capixaba: ES prevê até 60% de desconto em encargos de dívidas tributárias",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/economia/2026/11/dividas-tributarias-es/",
+   "data": "2026-11-25T13:37:14Z",
+   "coletado_em": "2026-11-25T14:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "aa7388f05177",
+   "titulo": "Rodrigo diz buscar diálogo com futura gestão do Governo do Estado e deputados eleitos",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUUtnMkI5VkxJSG94WVY4a3VDQzFtcTM4OGE5NVFEUXAybG5ORUtKWjU0aW1JRHJFTkRnNThZUVNtZDh1Q3pVVHlsYVZvRkl4RVdqVF9XdkNWWFdKUlhxMk9rbjkya1pQWDlvd01RcEdhNVVGSGhPWTMxX2ZEZzNhcTRXVmJUOURlSDU4Ykphb082UnJPN0ZDbEs2V05rN0RVbEJtWF9lX0FPWTJDMkln?oc=5",
+   "data": "2026-11-25T13:23:55Z",
+   "coletado_em": "2026-11-25T14:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "1ee18d2351e7",
    "titulo": "Zezé Di Camargo pede que Chitãozinho e Xororó repensem aposentadoria",
