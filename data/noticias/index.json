@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-25",
- "gerado_em": "2026-11-25T12:17:14Z",
+ "gerado_em": "2026-11-25T13:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,15 +17,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 11,
-   "aceitos": 5,
+   "lidos": 12,
+   "aceitos": 6,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 36,
+   "lidos": 37,
    "aceitos": 5,
    "possiveis": 5
   },
@@ -33,7 +33,7 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 4,
    "possiveis": 0
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 56,
+   "lidos": 57,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 98,
+   "lidos": 89,
    "aceitos": 1,
-   "possiveis": 8
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 7,
+   "lidos": 5,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -137,23 +137,23 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 52,
-   "aceitos": 1,
-   "possiveis": 5
+   "lidos": 26,
+   "aceitos": 0,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 26,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 34,
+   "lidos": 21,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 15,
+   "lidos": 16,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 2,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Folha Vitória",
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 1,
-   "possiveis": 5
+   "possiveis": 3
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -280,19 +280,33 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 370,
-  "possivel": 26,
+  "sem_contexto": 359,
+  "possivel": 24,
   "oficial_sem_tema": 5,
-  "sem_contexto_com_tema": 26,
-  "veiculo_excluido": 39,
-  "outro_estado": 38,
-  "excluir": 47,
-  "veiculo_outra_praca": 16,
+  "sem_contexto_com_tema": 23,
+  "veiculo_excluido": 29,
+  "outro_estado": 25,
+  "excluir": 45,
+  "veiculo_outra_praca": 10,
   "generico_sem_ancora": 3,
-  "sigla_sem_ancora": 9,
+  "sigla_sem_ancora": 7,
   "exterior_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "1ee18d2351e7",
+   "titulo": "Zezé Di Camargo pede que Chitãozinho e Xororó repensem aposentadoria",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/hz/tv-e-famosos/zeze-di-camargo-pede-que-chitaozinho-e-xororo-repensem-aposentadoria-1126",
+   "data": "2026-11-25T12:21:49Z",
+   "coletado_em": "2026-11-25T13:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "660c78b9004b",
    "titulo": "Governo Lula decide não enviar embaixador de volta à Argentina após novo ataque de Milei",
@@ -304,6 +318,21 @@
    "possivel": true,
    "triagem": 9,
    "temas": []
+  },
+  {
+   "id": "453c9c25cc74",
+   "titulo": "Governo do Estado inicia novo contrato de britagem de resíduos das enchentes em Estrela",
+   "veiculo": "Secretaria do Meio Ambiente e Infraestrutura",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWHR5TjZHNTJsWVFOeEdhZkJMalZTRWNRRjh2WHRGeUptV3ZzMmpjUXN6R3piREhqVWZEZ0J5RUEzR2xBWjBEOEZnMGsxbUxEenUwZm1HcGhyTTF3RXY0d2ZUTG9sbFdOR2l4RGNvc3hUY1EzWVhGS3p6anJSZHcyQ1JTZUtaWndxUl9mMUxWeHRIdkR6WU92ZzJMV1RGdHA3Wms5aU5sSGlwUGVMdF8tNkZSVkI?oc=5",
+   "data": "2026-11-25T12:06:00Z",
+   "coletado_em": "2026-11-25T13:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "governador",
+    "contratos"
+   ]
   },
   {
    "id": "e2515d16580c",
@@ -369,6 +398,20 @@
    "triagem": 9,
    "temas": [
     "financas"
+   ]
+  },
+  {
+   "id": "36425a89ff3e",
+   "titulo": "Ales vota Cartão Reconstrução ES de R$ 3,5 mil na segunda-feira",
+   "veiculo": "Vitória News",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVV92bTRLUW1xanBPSXl5TmlnbVVjNXZTdXZnay14c3dNOHZvMl9tUThfaDhjUkpvbDZFS1VDSV9aVlcxREdKdjJrM3d6R3puNWVIWlo2WVdULW43dHFEbWx5NTd2MWZ3UTdlZ2tOdEtlVThYSU1aWGpiSmxfc2FLa0RDTGJtb1NuQUJ1b3cwajZTUQ?oc=5",
+   "data": "2026-11-25T10:15:07Z",
+   "coletado_em": "2026-11-25T13:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "controle"
    ]
   },
   {
