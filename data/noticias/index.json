@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-25",
- "gerado_em": "2026-11-25T22:17:14Z",
+ "gerado_em": "2026-11-25T23:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -18,22 +18,22 @@
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
    "lidos": 18,
-   "aceitos": 10,
-   "possiveis": 0
+   "aceitos": 9,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 40,
-   "aceitos": 14,
-   "possiveis": 5
+   "lidos": 26,
+   "aceitos": 11,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 5,
    "possiveis": 0
   },
@@ -42,14 +42,14 @@
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
    "lidos": 7,
-   "aceitos": 7,
-   "possiveis": 0
+   "aceitos": 6,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 40,
+   "lidos": 41,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 72,
+   "lidos": 70,
    "aceitos": 2,
    "possiveis": 5
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 76,
+   "lidos": 84,
    "aceitos": 3,
-   "possiveis": 5
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 8,
+   "lidos": 10,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -137,31 +137,31 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 56,
-   "aceitos": 2,
-   "possiveis": 8
+   "lidos": 31,
+   "aceitos": 0,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 31,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 36,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 57,
+   "lidos": 100,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 22,
+   "lidos": 21,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -210,8 +210,8 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
-   "possiveis": 1
+   "aceitos": 2,
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -278,21 +278,75 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 6,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 372,
-  "possivel": 16,
-  "oficial_sem_tema": 4,
-  "veiculo_excluido": 39,
-  "sem_contexto_com_tema": 30,
-  "outro_estado": 29,
-  "veiculo_outra_praca": 18,
-  "excluir": 38,
-  "exterior_sem_ancora": 7,
-  "generico_sem_ancora": 9,
-  "sigla_sem_ancora": 9
+  "possivel": 22,
+  "sem_contexto": 371,
+  "oficial_sem_tema": 2,
+  "sem_contexto_com_tema": 23,
+  "outro_estado": 24,
+  "veiculo_excluido": 47,
+  "excluir": 35,
+  "exterior_sem_ancora": 9,
+  "generico_sem_ancora": 8,
+  "veiculo_outra_praca": 12,
+  "sigla_sem_ancora": 7
  },
  "itens": [
+  {
+   "id": "774e0b28c526",
+   "titulo": "Secretária do Planejamento do RS será presidente do banco estadual do Espírito Santo",
+   "veiculo": "GZH",
+   "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxNTjYzbTNnUGtTUmotX2dDS3FQbnVONFNtZFhqOG40SDNGRDJRRk1aWFBMUGw4ZFJNQ1Q0Zm5CcTNVZzdQZ1RRQU44SmdsRWRaTFN2VW1vUmdWMWg5cl9oTlM0SDA1NFZSN0tSUHplaVVoV2hFRERueXZoUzk3dnF3XzMyeGpJUDZFcFdpa1l4VGFmWnRyZzdLeTZxZ0NvOTVlQ1ZMRi1Wb3MyVVpZWWFYSHdYSTA2ejB6WVRveHU5QS1yTWF3aU9DbThWcml5UXcxdHB5eTVxeUtFeDRfTnZaandSVS1DamY5VDI4cUE1MC15Z0N2V2tOcV9JWjloNnpCRk0zbnJpYmhXQlBOVEs3V292MFJNZmwtN19nREFR?oc=5",
+   "data": "2026-11-25T22:57:01Z",
+   "coletado_em": "2026-11-25T23:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "892e41fe7509",
+   "titulo": "Pazolini quer executiva financeira na presidência do Banestes",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/politica/pazolini-quer-executiva-financeira-na-presidencia-do-banestes-1126",
+   "data": "2026-11-25T22:39:01Z",
+   "coletado_em": "2026-11-25T23:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "b76c02530c9c",
+   "titulo": "Benefício do INSS: veja quem pode pedir até R$ 1.621 sem cancelar o pagamento atual, quais documentos conferir e o passo a passo para solicitar pelo aplicativo oficial e os prazos de cada etapa",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxNdk5iNDRqTl9VNHVrd1BCanJ1bVdTZmdfQlhQREg0X2d2NWNFRVA1dnNyQWFTWjZWd084c0tmYjV4MXlwcV95NVVCWjZVQTZMUHowMncyUEphT1NTR3BWM2RISFZZRVM5Zi1nLWlrVlhuWDRhY3pHYzR4ZkxZbDd1cUd5YWxURFJTQ1lBNmlyRTg5eGZ6UFVHSUU5YWNTZ3B4STJqdTJqNjFvQUN3bUhHeVViclVDUUhUWm1QbU5jTTk1Y0E5ajk1NVdKSHozX2Nqak5obThqRU95ODNPNXNUSFNvcTBrY1oybVdpUFlITlQ2Q0FadjZIb2pYcUEwSjhOZ0QtQ09RSlk2d1VQbEtFMnNSd0N1T3ZjVVRSdGZ3YmNtVHdPeUNoamptR090ZWEwa09iOHNjLUcteVpmZGpIV0hVZEFMbDdFMWRITGpOYVI?oc=5",
+   "data": "2026-11-25T22:39:00Z",
+   "coletado_em": "2026-11-25T23:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "restricao"
+   ]
+  },
+  {
+   "id": "119997caf8ce",
+   "titulo": "\"Cenário é desafiador, mas não é ruim\", diz Mendonça de Barros sobre juros e ajuste fiscal",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/economia/cenario-e-desafiante-mas-nao-e-ruim-diz-mendonca-de-barros-ao-apontar-ajuste-fiscal-como-chave-para-queda-dos-juros-1126",
+   "data": "2026-11-25T22:18:56Z",
+   "coletado_em": "2026-11-25T23:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "374033d3228e",
    "titulo": "Banestes terá primeira mulher na presidência em 89 anos; saiba quem é ela",
@@ -300,7 +354,12 @@
    "url": "https://www.folhavitoria.com.br/economia/banestes-tera-primeira-mulher-na-presidencia-em-89-anos-saiba-quem-e-ela/",
    "data": "2026-11-25T22:02:44Z",
    "coletado_em": "2026-11-25T22:17:14Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "portal jornal do norte",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxON05FWlJqck41QTQtcnd1dXk3ZnN4SWxGMlo3OUNZYmFmWWZyTnFuODY4eW9DcWlzejFwNzdfN0JoSks2VGFnb3FQLUtSV2hyMXR4Y0pGMTZqcDkwdXNlOGlOVWNOZW1iZ1c0M2dQYWtQZ0NYei0tdGtHWWRFYmdCQVdlUDRRNU93Um1WcmJTUHpDVnNjcXgxbDA4Wm5lQ2VmUHVFV05wbEJzSmc2?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 9,
    "temas": []
@@ -340,6 +399,32 @@
    "coletado_em": "2026-11-25T22:17:14Z",
    "outras": [],
    "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "6c85aaa4cc7a",
+   "titulo": "Secult abre prazo para solicitação de pautas do Teatro Paulo Roberto Lisboa para 2027",
+   "veiculo": "sentidohorario.com.br",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdlFaMUtjSEtLNHN3cmVQM2pXMERjWlJGWkttTDE0V1FQTDAzMW1Ed190d29yOFk2VzZwYUljam5uOFZBdnh6aEptWm9ZcUpGRVZpODVocUdKS29HbEZnb1dtWmsxODNaRUtQeU1pSFIwbEIxSmVyN3lxZlpnTDBLMjdaNS1PZHdLRE1WblZ3VUcycUFTQlpLZWx1WWU0N0sxM3VnVEMwU09pT3FIU0VqRzZkOURnSmc?oc=5",
+   "data": "2026-11-25T21:02:45Z",
+   "coletado_em": "2026-11-25T23:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "ff73a70086ed",
+   "titulo": "Ajuste fiscal: Lula sanciona lei com meta de superávit em 2027",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBLTkgwZWhBb0dwVVlnX3NqaHVjQzFWb1RZZDJlZWhCU0hwQTI3VFdleEdMeXRNV2RrZVFmLVR0a2kzMDhmUFRzRW9Ob2YzaWFpckZDUVJjLUUwQXoxcEFqQXY2b005RlU3YkV1VjVMOGwzUC1xd0tUZG53?oc=5",
+   "data": "2026-11-25T19:55:50Z",
+   "coletado_em": "2026-11-25T23:17:15Z",
+   "outras": [],
+   "possivel": true,
    "triagem": 9,
    "temas": [
     "financas"
