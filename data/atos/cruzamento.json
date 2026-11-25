@@ -1,13 +1,18 @@
 {
- "gerado_em": "2026-11-23T11:21:51Z",
+ "gerado_em": "2026-11-25T11:22:18Z",
  "resumo": {
-  "total": 34,
+  "total": 35,
   "com_siga": 8,
   "registrado": 2,
   "nao_registrado": 6,
-  "nao_encontrado": 20
+  "nao_encontrado": 21
  },
  "itens": {
+  "2068292": {
+   "siga": null,
+   "leitura": "nao_encontrado",
+   "obras": null
+  },
   "2066673": {
    "siga": null,
    "leitura": null,

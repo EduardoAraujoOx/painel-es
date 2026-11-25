@@ -1,6 +1,6 @@
 {
- "gerado_em": "2026-11-24T21:17:49Z",
- "ref": "2026-11-24",
+ "gerado_em": "2026-11-25T11:17:49Z",
+ "ref": "2026-11-25",
  "desde": "2026-10-04",
  "estados": [
   {
@@ -15,28 +15,28 @@
    "nome": "Amapá",
    "eleito": "Dr. Furlan",
    "partido": "PSD",
-   "total": 48
+   "total": 50
   },
   {
    "uf": "AM",
    "nome": "Amazonas",
    "eleito": "Omar Aziz",
    "partido": "PSD",
-   "total": 182
+   "total": 185
   },
   {
    "uf": "MA",
    "nome": "Maranhão",
    "eleito": "Eduardo Braide",
    "partido": "PSD",
-   "total": 86
+   "total": 87
   },
   {
    "uf": "MG",
    "nome": "Minas Gerais",
    "eleito": "Cleitinho Azevedo",
    "partido": "Republicanos",
-   "total": 374
+   "total": 384
   },
   {
    "uf": "PA",
@@ -50,49 +50,49 @@
    "nome": "Paraná",
    "eleito": "Sergio Moro",
    "partido": "PL",
-   "total": 241
+   "total": 242
   },
   {
    "uf": "RJ",
    "nome": "Rio de Janeiro",
    "eleito": "Douglas Ruas",
    "partido": "PL",
-   "total": 242
+   "total": 245
   },
   {
    "uf": "RN",
    "nome": "Rio Grande do Norte",
    "eleito": "Cadu Xavier",
    "partido": "PT",
-   "total": 153
+   "total": 158
   },
   {
    "uf": "RS",
    "nome": "Rio Grande do Sul",
    "eleito": "Luciano Zucco",
    "partido": "PL",
-   "total": 327
+   "total": 332
   },
   {
    "uf": "RO",
    "nome": "Rondônia",
    "eleito": "Marcos Rogério",
    "partido": "PL",
-   "total": 100
+   "total": 101
   },
   {
    "uf": "RR",
    "nome": "Roraima",
    "eleito": "Arthur Henrique",
    "partido": "PL",
-   "total": 33
+   "total": 34
   },
   {
    "uf": "TO",
    "nome": "Tocantins",
    "eleito": "Vicentinho Júnior",
    "partido": "PSDB",
-   "total": 187
+   "total": 194
   }
  ],
  "temas": {
@@ -106,11 +106,286 @@
   "fndr": "FNDR e reforma tributária"
  },
  "contagem": {
-  "total": 2171,
-  "medidas": 668,
-  "equipe": 1503
+  "total": 2209,
+  "medidas": 683,
+  "equipe": 1526
  },
  "itens": [
+  {
+   "id": "9b04bdb540d9",
+   "titulo": "Cadu Xavier se alinha a Lula e defende ajuste fiscal sem aumentar impostos",
+   "veiculo": "Blog do Robson Pires",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOaWV2d0lFRjVVbWNfajRHbXZSenpta1oya3VQUW9tWUw2MXZ6UjZHcVRodmlLdWdCYU1fcmNFdDgxZnphV3ZudGVxbjkzWkJmNHlKeHdCVlQ2Z0pqRFFXTjEwUEhiT3lXQjBVQ212NXBkSzZYU1NJZXVSdmxRb1hENi1zMmdZUTZaMTJXcnhWOWpyc1JkSlQwLVhWaHVqTGt0d0tJMk5FWjc?oc=5",
+   "data": "2026-11-25T10:06:41Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [
+    "gastos",
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "7010bdfeccf4",
+   "titulo": "Futuro governo do RN prevê revisão de despesas e prioridades para recuperar equilíbrio das contas públicas",
+   "veiculo": "Blog de Assis",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNSkJjVlRRNlNLUFZoOWJQZ3JRSllKMHFIMzdsVkpZVzBjei14TzZWVmRycUZ3dVZmVGtwVWp0TV9URmZHemVSWF84RU5ScEExakdNekJOdEZuU3J5aW5nMFFJQ2FoLTVtejZwR1dNaFh5dGsyODBPODhZdzJlZ05YOUpMRFVDNVdFWEdhSmM5ZWVnS0RIQ2d0dzdIRmtxRnhWSS1DYW45dXpDSVh1VHM0UlhUREJBRnM4M2VTYXJwaml6UUVZTEVIdk04a1VnVC1lTmh0dUhMc29aTDZLcExnZTRiWHFNV0V3WmwyeA?oc=5",
+   "data": "2026-11-25T10:06:18Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [
+    "gastos",
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "41df2fce3aaf",
+   "titulo": "Cleitinho em BH e presidência do Servas: futura primeira-dama detalha planos de transição da família",
+   "veiculo": "O Tempo",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQbjdSU1M4VGlmWHlxTGQ2bDR4S0o5b2xCRVZ4SVEwU0hILS13cjV6UXpUQXpyNk5teE9sZ01sYUFtX1dCZElSNjI5UUxvZlRGVmVEZUpmb0FSekdtZzhZa0hLUlYzSFJfMVNzZGpZYzcxS2xfNmVjOW9EWGIwc0RxRloxLTVmNHRHSW5JSjBSa0pfRGtwakkxVkpoX29yWGFGRlRSV216MnVyYmFnOUlwWGttVVk5VXJKN2ZPVXM2Q1RnYW5UTUFad1VlUUR6SXhhQ3JicUNudmdGN2JWTWc?oc=5",
+   "data": "2026-11-25T10:00:01Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "799030a21d46",
+   "titulo": "Governador eleito Arthur Henrique, segue anunciando nomes para compor o 1º escalão do Governo de Roraima",
+   "veiculo": "Folha BV",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNR1p1R0RsU2ktRW1yUERBMVVKNDJ1YklQR1NOSVZpcDRWOVhkbTkxLVpqRmlMLVQ3X1JGTkg1T21kRjBmMmVKN1luM1VKOTZoNHZ6TVBXc3dwX3BxWkhZa21VSWtpcVFQSUJmdXV3NGVEY1JHVU83RGlLLXl4STE0Y1JEdUJvbGlVUTBCaThwRWY2aGZsSllnRFFHUVQ4bUtJdFltNG5WYkUtblU5cGxaNjI5QUpNaUJNRVgzSVA0bXdxZjBOZlhaZk5LakR1RER3T3JkVzVn?oc=5",
+   "data": "2026-11-25T10:00:00Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "72a8ce47c0aa",
+   "titulo": "A pedido de Vicentinho Júnior, Aleto eleva para 30% o percentual de emendas impositivas para a saúde na LDO de 2027",
+   "veiculo": "Cleber Toledo",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNNHdQODFtQXJXeXpCX1hrWUwzT0xXVUI3ZG1TZHRLUzlzMk1IZXJZc09UdmJ6dHZTbmtmT2xrSm9zOGxSSzk1dC1GalJCM0x1ZTM2QzdNLW55T0o2UlJVakVHZGh4ckNTbXM1eFVoSi15NkRHZXVTdUpIVkl6blgtOFBmWGhlRjhrR0VvM3hYUkx1OTVqNUJBQTBWR1plTHhIZUhybmdPRTU4a0VxS2VwblVlY3U0WGFLcG95WDdqNkRRUUdmcTZGX3ZrMHhwZlNJVUNFUEdMeFp0LWwwZmo0ckhaR0xwQQ?oc=5",
+   "data": "2026-11-25T09:53:00Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "4c4f653b06e8",
+   "titulo": "Cadu Xavier apoia ajuste fiscal de Lula e promete rever despesas do RN em 2027",
+   "veiculo": "Portal Diário do RN",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNRi14THQwbjNzQ2NqUjF2Z0o0SnRXdzl5TjIzUXJwNHlXS1NaUWh2ZWJoWHpBTGpMQTJRWnQ1ZUVRbXItUWotS2FpREtlU1FBbFBvQTNGWWdvd28ydjZ1SndNX3FPcVFsZ3NVZS12WEgwd3dLS1pxV01sQ2JBRlRfSWdhcEQ3dVgyLTUyRjRiS0w2dkVJbkYxV1lCdm45Vi1YckdRdUNMdzM?oc=5",
+   "data": "2026-11-25T08:00:00Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [
+    "gastos"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "37318bc2c7d8",
+   "titulo": "Cleitinho busca acordo com Lula para dívida de MG - BNT - Boca no Trombone",
+   "veiculo": "BNT - Boca no Trombone",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUGVMUzdJbUM1cGZVS09jUnQ0QzIyUVdTelFXcm1RTHZqdWhpZFFHb3NIWlppYUpBY1IxZDJUNDBTdG52LTJjbGVtQTZ5ZFdYRS1FbG13Y21iWEVzSkszRHdHYkRrX1ZKMmRXbllwZl91anRRT29zYTIweW0tWmFwSg?oc=5",
+   "data": "2026-11-25T06:23:00Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "6754b18877cf",
+   "titulo": "Governador eleito de Minas Gerais busca diálogo com governo federal para renegociar dívida estadual",
+   "veiculo": "Portal VV8",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOd0o2LXZadkFRWG94QTNINmt1eUd3M1N4Q2pkUl81SDU1QU9jRUFQVWR1X2xhZmtZTjlfZTB0V3l2ZXJVZ2xuS2RCSnJjOVRaa241NUllN3lWYzF3SUdjOVczZWlqcmZmVWl0N2NfN2lpMXJhSFVoY0lvNjVjWWhLR044ZTBmam0tSEVtbDJOQnBXVTdWNkNmREdDaUJoRmIzakxHdDZpZlFSTVFrb0NfR2FQa2luT1IzRFljb19GNjQ2MXd0RU5XREZXNVctamtIcGhIVw?oc=5",
+   "data": "2026-11-25T04:22:47Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "1a0c4bfe8978",
+   "titulo": "Cleitinho Azevedo e a dívida de Minas: negociação com governo Lula e transição",
+   "veiculo": "Gazeta do Povo",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNd24tMTVhZDVhTlpxeDRpemJsWmdidFRPNktJcUF6NHlqSkxXVFVNaG95aFZ0eEFUSmYzc2cyRV9TcDQ1ZE1qTGtfNUdsWTk0YWlIN0o2dHFXX19xdW9qbFZLeHZNUW1kSHozMkRuUGo0S1QtclpqMUdwVF91dGcyaGt6YXBKSDljc21qbktDeWZHclBMNnRweVNBZGNmYVFYeVMxVGp6Q3ZfNDZzT2NZMmpzcU9iSExGbGF0dlJ3?oc=5",
+   "data": "2026-11-25T04:11:00Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "c5606b5dda92",
+   "titulo": "Governador Wanderlei recebe Vicentinho Júnior no Palácio Araguaia e tratam da transição de governo",
+   "veiculo": "Tribuna do Povo",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNajRuZTR0TmVoUWd2SUpGS2JNTjlpYllKaEYtS21zb1c3V2lqV1pQRXB0eWgyU2NSRi04QndUSFJ1QVdpN04tRHlSSW1jamR3MTRhSkdPOTFXaFg1V1RsVVZlS2pMOUNuOWxvZkc5SzRHQXpyVWxtNkp2QjBXNDFXeFNoTHozVjNXcDdBRVhQb0V4Y2RsTXVmU1BycEhPZ1pIQzU2T2V1RlZQZmhZNGI3Y2pxWDd3N2g1anhxV3owZVZkT3RGeFhOYlpEdnFZcEtSelAyODRYbDgwRVp4VDU4THR3?oc=5",
+   "data": "2026-11-25T02:36:32Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "5fd4e5ec02cf",
+   "titulo": "MDB articula três secretarias no futuro governo de Omar Aziz",
+   "veiculo": "A Crítica",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPci13dnJqQ3ozcHlEYWdDXzl3Ujl6N0c3VUp6RUNrRWZyMTRBWHBxUW1Kc3pBOGhKWXF4XzIzdzNEaW9UNFIxMldheXRPWkJTOFMxcWJYMEVOVk16Z2hsM2FoNFZ3RkR6RzIycVhXOEY2SkdhTHMxeVgyZjlIQ2laQm5GU1I0LUcyeG1NR0RlLWVtVHRKeVhJa2FVNA?oc=5",
+   "data": "2026-11-25T01:36:14Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "436643c53776",
+   "titulo": "Equipes de transição de Clécio e Furlan dão início às reuniões técnicas",
+   "veiculo": "Cleide Freires",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZ3FkU05ySkJqTDBDanNFbWFFcWtkN29HZG00Y1JINmUxYUVZUnhQekl2TUpUb2JYVDZMYXY0Rkk5ZnhfVUxPT2VwOUZ5dTdNdXBneVYyY3hocVBONncxb09OMGRjbXZPbEYyVFZvQjVZZDB3Z290MVprZ0U0WE5yQUx2RHhHY05YSjlNWXk4b3NhUlVuZlJNcVhFWmVMa2JuMmNuUldxQnc?oc=5",
+   "data": "2026-11-24T23:47:20Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "AP"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "97596a8c87ab",
+   "titulo": "Mais de 40 dias após eleição, equipe de Dr. Furlan começa a receber dados da gestão de Clécio Luís",
+   "veiculo": "SDB News",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWF8yNm9KYi1XWWtRSE52MFBvamdTMkZRXzNaeGh1RmVSNWdmUlpyU1MyQjRUdGRuUGNaZGpUZkxSOHlYVHU0UWE2Y1hFcDFzanE4LUljTW5qS3NOOVUtdnFySDV2eXNzdkZpUkxxemhGZ3JkdlRKZk1zRWcwazhBM0tvNmNBTVVheVBIc0F1UU4xNURXT2ZjLV9hMmYxeVYyUUFIMUxEU01XUnh6b3Y0dXpnTE85b2dHV2t0TQ?oc=5",
+   "data": "2026-11-24T23:46:38Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "AP"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "148bf5ce6776",
+   "titulo": "Omar Aziz articula novo investimento russo para a Zona Franca de Manaus",
+   "veiculo": "Dia a Dia Notícia",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNVNhSWdBeHZVbDZBX1BHNEpKdG1tWlhCaUN4aUQ3NGJWNWZKTnpRcy1YNjU0NGdCZWlpVzM2QWIyaE9JWWwwdFBjazlvMnJ4MDczMHF5SkIxSElDZld1TWgxajdfUmVvQkR3YTh4bW5mbWVzVVozaF9VSENzRzh3ajlCeDJpMHZHTHVTdVkyeXlZVnV3TDA5OVJmd0lsUFZYLTJLMQ?oc=5",
+   "data": "2026-11-24T22:32:59Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "79746c59e5fa",
+   "titulo": "Ao lado de Douglas Ruas, deputada estadual eleita Dra. Gabriela acompanha discussão sobre orçamento e R$ 250 milhões para a saúde dos municípios",
+   "veiculo": "O Diário 24H",
+   "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNWTJteWtFNjF6cV9Mb1UwOG1HcU50b3dYcHRFQ2Q1ZVFBNVJzMWJidk0tMXJHeXB4VlpLdkZWOVh1UHRFQ0hubjZ6QXVvUWVWUzB2Y0NQZnV5LU50X3hXZl9QeVRVZmNXVHh1OUt2eTh5bTRQNFpxZVpndnByN1ZpSVpfeUJZd1lGNE5PMF8zd1MyZHh5MVlfR19Tb0JlUmtKVHpfeEE5Q1o1Yk5xZnNOZmpJSk5DT0lYalNMeWRDeFRkU0tyRUFVSGlaaDZVVkVDek1TX1RjNTI1SVk4RENTVUJyUHpfU1NuQjBySHp6VU10YjJPTjNmMFcwem5LcEpuczVrd0pB?oc=5",
+   "data": "2026-11-24T21:54:44Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "2e5360221364",
+   "titulo": "Douglas Ruas defende reajuste salarial para governador e secretários estaduais em meio a déficit de R$ 14 bilhões",
+   "veiculo": "Diário do Rio",
+   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxONlJHMGZqREhUT24tN19NWGlPbDI2bG0zckFrR091cG5OUFo3cGI1QmlXLVI4a1dXS0dUV2VDWXZwOHZ4aTNib3RZRkMtQ0pVQkUtRzJkYUwwS251MkxUdUVtTlFaTmdfb3ZyYUZidjJlT0VXOHJ6WGl3MGZiUlVoZkZzWDlKcGNXU2FfN1BLOTJwZkxoWDEtek02dXI3d2wwME45SmtLOGRaYWpjY0U1cTcxeXozUUdPZlA2TWFRNGhVRGxoT1hlMG1XMm9lMXNYcEJ4Tm91aGVCQ29vak9JY1hjNzJmY3VVREVQalZCako0MXNT?oc=5",
+   "data": "2026-11-24T21:48:00Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
+   ],
+   "temas": [
+    "diagnostico",
+    "pessoal"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "225ae7b0b1b3",
+   "titulo": "O deputado convidado por Cleitinho para comandar a Secretaria de Governo",
+   "veiculo": "O Fator",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONnNIZGVEUWFzcG1FWDJpZWRTWmFQSmc5a1NoRkRYRWNSbE9QRGlhVUdOSEN4UHJMd3A3bnZLU1FHZHhNVF8xcHRRRTlWWS0zWFVXOWQzdVdGR255MDNtdHFUY2RRMHY5aWtaLWIwT21paTVQQUxaTXVITFlRVVNDTUFDVU1ubTBCQlNDUkN1aGZ1WXNiWjlGWHlVeHhYZ25QQjNJM1BmMUxwZw?oc=5",
+   "data": "2026-11-24T21:31:00Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "913b5e84db4a",
+   "titulo": "Douglas Ruas aponta defasagem salarial no primeiro escalão e defende recomposição para contratar especialistas",
+   "veiculo": "Agenda do Poder",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxONFRzNDBpTjZ3MFdvRmV0b2FmZXZZMllIUHBaRjFwSFlxVEt6cjBTTi1NenlKS2lOMXlGdU1McS1VSGtsU01kazZFS3VsQ3M2Z1F5bEdFbUloTlNVeDVkdTBkZm53RlBxczRieUpjVkktYVJNZmZuOUpudzBLRGZ6TU54T3JxRkYzcV9xVFp0TVlCTkk?oc=5",
+   "data": "2026-11-24T21:26:00Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
   {
    "id": "3b4c2622bfc2",
    "titulo": "Douglas Ruas promete plano de recuperação dos trens nos primeiros 100 dias de governo",
@@ -118,7 +393,12 @@
    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZ2NHYTA3U2hfSHQ1Zjc5amo0MWRHUTdEN3Y0Qms2bDhDTWJvUWpOUEkwdzVSc2xKV3ItNkkySm1vdzJBaVo0OEJfRHdvSWJ5SzVyMVY5dkhFWlRoMHJSN3JVSXdnQTlQU1QxNE92b0FmYV9sRnhlampnaUlVTFBlMmNkRTN1b0hBY0VteVppN3FhUWxFVG1PR2ozc2NwRGdGaEZtR0ZYLU1RM2t0YTZF?oc=5",
    "data": "2026-11-24T20:39:00Z",
    "coletado_em": "2026-11-24T21:17:49Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Rádio Manchete Rio",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOX2RnODU5cmNmMmViNnZIUkxtQkdtVDBCSFAtNVBsbGdqLXNSRXZFVFYydXZ4UmUyMWJNWktQYWdzcWkxRUNqMTU3d24wSV9FN21aUzhGWUpyQm8tTkdNYWFWVF80MDkyS3dyc0tVMEh6bkF5bkRRTXZXWU5rVXViS056S2Q0TGJZQkJyb1NnWE16Y0NBbzBNWnR5T1Vtb1BKaV9UenJ0WVJWdk4wZGZBWU1OVQ?oc=5"
+    }
+   ],
    "ufs": [
     "RJ"
    ],
@@ -192,7 +472,12 @@
    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPc2pBTTlpT2lITk5HYTh0ekJvekJfbkdqeWF6a2RLWjV0aS16OHg5SUxlQkl1UzlUbGFYd002RG9EYmpZVk1hZ09pV1U0UEJvUEY5WDlYczRJR3NXdXhadVlTM0Q5ZVQzeUdOdEZVaVFKV2FYM1RwdkZ0SkdPVnMyT0VWcXNNSWlXdndpSmIzeEVEd3dQaWt6ZnluUktNdHdWZ2NSQ29uMWROUl9QX3luajZNNDd2aUdmalI5VWozZDVOR255UDhwd1JwTFlYOXB6bW5ZRW5Rc1dsdUlP?oc=5",
    "data": "2026-11-24T20:09:05Z",
    "coletado_em": "2026-11-24T21:17:49Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Portal 96FM",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNVHI2VzB6Q1JVYVlNOVV3RGlCNjhlNHV0WkhsS19sUWd6VkI5ZERTNHRqdjJrZ2p2dGdQbnJMSjh3c3dqTzlyZURJLXJNTzFQdGlyUmtsUVRlakV4b0NtR0dkR3VMVFhGd01tcmtZWHRxMDBMQ3pQSVJqSEhjanllRG9JaUZncGJ1MVlvSUVGMVpGUGZlSktKM1ZpM1NoZ0o3RnZzRS1TZ3poeU8zbjFXWXZOSlJxVVI1cFN0UEpYSWQ?oc=5"
+    }
+   ],
    "ufs": [
     "RN"
    ],
@@ -242,6 +527,22 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "77a7a5edf738",
+   "titulo": "Cleitinho e Falcão negociam investimentos da BYD em lítio e baterias",
+   "veiculo": "tmc.com.br",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOVUpZMUZyMHlkRnFnS3dCU1JHdFNubzVUSkFBNzFIN0FMYWgtVUR3elZhZ0JJNjc4ZVg4RlF6ZkxjUktqOVVpOXI4cWd3RGlicnVlNFJuaWY2bE9idkhEdzM1MVVKbk5ELWV6ZnVOUGZGbk5CQ2J5dFNrMFl4X09tQUhVcTBWWWttVmd3WV83R2hlWnEy?oc=5",
+   "data": "2026-11-24T19:16:13Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "0f6927695922",
@@ -317,6 +618,22 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "c27e1593730d",
+   "titulo": "Antissistema? Cleitinho busca saída política para dívida explosiva em Minas",
+   "veiculo": "Rede Moinho 24",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOM3ZCTjh1ZHdSVnFBOWE2N1g4T2VUVTRmbVhtQWVQUWtvaVhOZmJoaTNIc3JBbWtROXdIRkhoOVNzM2FQS09Nb211TGZoYnpTcFFzVlo5WHNzSWcyeWduTW1aU1dVZ2tkcGJVZUVDTTdVYUJld3hELXdNNEpxNmlKSVdCN2NyY1JHUW5nY2wxLVEyQWlDWDA5LV9JQzhRRVZSTlJzUmZYOXZWWDJG0gGyAUFVX3lxTE5TU0JiemszdzdlaHB4QmNIak5kdWRZNWt4cmMwUm9vWTVIRVJReG1Xd1U5czVyUkR2aFc0SFoxRFpYVnVCOEJkV1BxazNTazBISDN3eVBCQy0weUY0bjg2dklWSTFjUHA4b0FDVFZna2lqUzZmQ1ZDczFWOWhEVU1WUWxIdGtRaENkaDhoYlZ6MFBmTzg0OEotV094RmNTbzduaExYU3lWbXlxZzRaVHNCZFE?oc=5",
+   "data": "2026-11-24T17:34:31Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "7d98a64b9132",
@@ -403,6 +720,34 @@
    "outras": [],
    "ufs": [
     "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "ae40be656493",
+   "titulo": "Mineiro e irmã da deputada Isolda irão compor secretariado de Cadu Xavier",
+   "veiculo": "DeFato.com",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNX3VKenlDSklWZlFGeUNVdS1hc0tJUldGLWlRZ0RNVWJfR1k5UjBFX2xtTG90amFMZGdvRV8yY3RodXdDN1ZjMEdwRUdzS1FUbXFJS0ZhaFNQOWw2TFktN242R3BpRlJtd2ZBX3JqaGFSdlE4NzBPOEJlQmpna0tBVWVISjR4Zm5SZWllcGx5ZjBxazBNNEt4QWJfOUh4TU1paUstTHk5bVJ2LTFCLVM0?oc=5",
+   "data": "2026-11-24T16:00:44Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "3f34328b0a80",
+   "titulo": "As coincidências de Braide sobre diploma e secretários",
+   "veiculo": "O Imparcial",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYUw2NkdqN010cU9XanY1Q0x5bElCY3ZCc1R1M1BTTnRYQmZmcHpKbHRmbDh1SVl0RVp6UmxXTkFsdnZHM09JYUwzVVJDbGR3SUxiUkVlUmRxbzdjczY4LVdyUGRzYjhjTGtXam5WVjhZSnloYXJTb3JfcUtoVVUzcEJzeGtBalpHTzMzME1fVi1QNTl4OWhHQkpONE9ZR2FROVhBLXRaTzI?oc=5",
+   "data": "2026-11-24T15:45:00Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "MA"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -1083,6 +1428,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "52c3102f618d",
+   "titulo": "Secretarias da Igualdade Racial, dos Povos Originários e da Mulher estão entre seis pastas sem titulares anunciados por Vicentinho Júnior",
+   "veiculo": "Jornal Primeira Página",
+   "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOc0JFaDRuM0ZsWU1Ma1pRZVZCTGoxUDAtMTFzcnFRMFdoVnRTakM0VlBrR0t1YW9KLUlac1dMTVpfS3MySDdmWEZiajFLQTQ5Wmc3U2VPNlN4bDR3RlhJeDBKSHpLblRDNGtjWFIzVUJFSld4Vk9wS25jMWtpYzA2ZVpwaHQ2SFFLSXN6dzRXcndsNkR1U3FIYzB3elRnX1VMcGFpbTFLbDVSdnFiemdXQjJUMEtTeXlwc1kxdGFzV1REd3IxTG9ob3JwbFY0RjRqSF9feXBtTkR0ek95Ym9kTVpKYWNpU0hybUl4YlVIMDhxbWxRRElKN3VYS3FvaVVYTGfSAYcCQVVfeXFMTzhmNkwyNHJpa0liNDhDbVFUSVhGT0tnSjdsd1pTUUtNaXBpa19aV21LV250Mnpzdy1pNmxYMEJ3c0NtaE00Mjk4U2NnUkd4b3pVUGVPdHo2cWE0ZThKbmF6NmRGRWk0aklTNllpVGxnc0VBZGRhNzFBUzk0d1E2bEpsTzkwRHdTN3RHTldqVVd1VUVGT3IzX2tTT2xjTk1wOGRsZV9LTVRhb3NpY0Uxc05wLXYwNlNZZVJmeXV4VWVMR0RFZGRReVViMWdmS19iamtDT3l4U3p0eTN0TlUydHUzWGhMbkt1NkJmRnRTMXhPcmplX2N2dmtiT1VuTElBa3BfaEFKbk0?oc=5",
+   "data": "2026-11-23T16:54:01Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "0b65e8fc2331",
    "titulo": "Cleitinho afirma que tratará dívida de Minas com diálogo e não confronto",
    "veiculo": "O Cafezinho",
@@ -1196,6 +1555,10 @@
     {
      "veiculo": "redemrio.com.br",
      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPNm93NVFMT0l4MnVVd1lRYzBUUm80YlRuS0NCNng1QkgzX09uM3Brb0Z0S29GY3RWTFFhWkhtbTdvQ1ZZUEJBeGQ3T3Z3U3p2SkY1dUV3ZXVaZFdPNzlrVndXTWtZQ1k3WjZnV0pYRXNPOUJrMWRhVEJ0RzhJWDZ4OUQyanU5QXoweTlGR3FDNnk2TjM1N0xNejRRTjJLeDRVODJJcmMwQnlzQlFNZFprS2ZR?oc=5"
+    },
+    {
+     "veiculo": "Rádio Manchete Rio",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYkJ0N2xWOEl0U1BLejVWeTBVeXBkX0hUSlZJNFJRZ1dPdmNtYUV0ZTczeFBMUGJpdmMwQnpxWWNoTG5JMXNVYm9BRk1UM2ZJYndXTndiYk5tNXpTNkVfeTV1TWgxaUpNeG1uNGVUeF9URkdsUG9FNkZiZ2JiRlIxa1hlS3QxNTBCNEQtcjVWRlBRbmptZnhqbkhNS1YtWHNqM3ZScTJBZGpud29KVUhjY2dGa2FaZw?oc=5"
     }
    ],
    "ufs": [
@@ -1831,6 +2194,20 @@
    "outras": [],
    "ufs": [
     "AP"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "79e988c57439",
+   "titulo": "O governador eleito Luciano Zucco (PL) divulgou a escolha do publicitário e empresário Thomas Fontana para comandar a Secretaria de Turismo e Esportes a partir de janeiro de 2027. ▶ Com trajetória ligada ao empreendedorismo e ao desenvolvimento d",
+   "veiculo": "Instagram",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBoSktsNUlMak02ejVBRzMtT3hWMlNySUFObkN1bUpMRWxmblJWcndBcUx5cUZWUWt0aWVSdEVKZ0U3cHhLS3dMY1VkbW9kUGxaR1E?oc=5",
+   "data": "2026-11-20T19:01:06Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RS"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -7715,6 +8092,10 @@
     {
      "veiculo": "portal do amazonas",
      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQYWVjd014M215NThCWS0yTzROLVNxNzJvUFpXSnF3TG1wSGRxZ3VkeFByVWZ3QlJ2Zm03N0dMUWZvaWtMd0ZNcHhzbWo1cG1Mc1JYYkZvM2xlVzNWd2NYejd0X2J2bFh2R1kyWFFYS255dWNkQlc1bjdSTXo3MElRclZLTzFtZUxwRUNLZlk0WGdidlhoT282WXdWaE9lXzFKQUR0cDRUNkJ1YmVjZ2VwYUNsVzg0dk9oQ0pleDd3bXNFNGFX?oc=5"
+    },
+    {
+     "veiculo": "CNA7",
+     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQdy1iZElEdWpmT2Z3ZTl2RTdsRkhNOFJFU0RBeFc4Qy1tY2NxUjlUaVVxOUdmd2hxUkFsM1ROVUNISjFiWnRDd3BDWjBMa2xLbFdkRE1WckRHeWt3cFI4bERpZEhZNUJKeE83SnhMdHRkX3ZLbE1WV01mTW9iT1NXNGt3anVLODR2M1RlcWNuaGhIWk9YMWp0dFlEbDQ3RkpFcHJzNHVWemV4SmpFaVZBTG9QS3hLU2hMak8wRkxlZ0JjNC1tT1hhQ2paYy1WOVU?oc=5"
     }
    ],
    "ufs": [
@@ -8418,6 +8799,20 @@
    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPZGFNdS1PbEczUVJ3ZXdQNVdMZ3Z5MTBvaHBRa3NrWTdwNUxPRFVsLWpGaVc0SUQwYVRvUFFzQzVqT2F2YzBaVjYwVko0U0ZTdmtsOWxWOFNxaGdMX3NETFMzN0d2X0lHWXdJVWxIME5FUmhEcGc4WlZ6Vy1ncWtJN3JDRUlmejZYcmpqbEthUjY0b2xrX3QxendqdW1rVldHaGo2YlpCa19VQlkyU0xFWXdxcGtkQmdhbXc?oc=5",
    "data": "2026-11-13T16:59:36Z",
    "coletado_em": "2026-11-13T21:18:00Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "556f6749e524",
+   "titulo": "Comissão de Transição de Omar Aziz atua na Central de Medicamentos",
+   "veiculo": "Portal Único",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdUN0amtOcWo1bGZ1T0lqR3IyRWE4SGRIallMeE9qX1pGZzhUUmVEeW13NVJPUDI5cjlhSWljeWJYZzlEMTA5MVY5SWp6ZXM0TTJ3Y01xOHV2MHlHMW9yZHgwYnZqU1RibzRNM0luRHZwbGloNnZMUHdTY29oNmh0T2FUWmNDWnhjNG5hSWhfa3R0eU9wbVE?oc=5",
+   "data": "2026-11-13T16:42:26Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
    "outras": [],
    "ufs": [
     "AM"
@@ -9177,6 +9572,20 @@
    ],
    "ufs": [
     "RJ"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "d850cd61e462",
+   "titulo": "Governador eleito de Minas Gerais visita gabinete de deputado federal em Brasília",
+   "veiculo": "Portal VV8",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNeUpSbVBsN3R1YUI4QWVmQlRZZFg5TzJyU1R6bnkycWdsRl96S254Sy1ZRThhUEF4ck93V2h6Q196ak5yQ2RiYkJOYjk3MkI1ZEs5cFBwblhTVjl1UXVYdTZ1Q3YyTHo2UFdDX1dRR25uZTFWTkQxWDBrVHR1ZkhuaHhDRFVqRGlDVHRWTm85ekFRbFVVQjN2c0M4MllKME5FbERlZ194cmwwdmlUMzZRem1DbFNUal9BdmFRNg?oc=5",
+   "data": "2026-11-13T08:00:00Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "MG"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -11672,6 +12081,22 @@
    "categoria": "medida"
   },
   {
+   "id": "340119465cb2",
+   "titulo": "Secretária de Educação de Moro promete diálogo com servidores e ensino integral no Paraná",
+   "veiculo": "aRede",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOMWdFOGFiR3kxa3A5dTRPREQwZTRSMUlEYjh1alUweExfcURtRlMxZF9rMUpMYy1LVVc1V0NaeGUtWUxVRDZXNmZTaVg1ZjVvUnJ1dHNmLWFRbmEyZXRWamNEWHljVWM5QzYwdjA2bE9IQm16WkJRTEFLclpuNHV6UXh2RjV4amdOcTNHUWhnbU01Qk1BVXNKVm11MC1LcTRLdGxUNkV6WmZlRG5YUFZmSW1xcHdEOERxTm4xc1FVRGNiZDl0Y0J4S2U0UThSeVgyUlE?oc=5",
+   "data": "2026-11-10T05:00:38Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [
+    "pessoal"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "fb9c044c25d0",
    "titulo": "Rombo nas contas de Minas vira assunto central na transição de Cleitinho",
    "veiculo": "Metrópoles",
@@ -13535,7 +13960,12 @@
    "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxPLW5lWGhWbU9CbVV0TTNUVFVreVBMQ2xkbzlUbXVuZm8yRVlWaGdoaDBUcnR6VHdfc2pvMlhTdE4zQjBhLUhqT3pfQjNWVkFzM1JmY0NVY1VKeEVVWE1ySUtaYzZpZGlVYndlZnduRm96T3EwZU5YaEdaZHBlZ3ZiYkJmZDBVM09wNWtNOERDb1R3UXRrbVIyd3UyS1hFRWdiOGllQ3lsSEYzbVdfd19Ocmxpc1VqTUxzZTJCVW9GRHBaVE9rbFBBUkRMRmhXR1M2bVJ3eUNTdlptejBFbWRRMS1BT3hKWWxxVDdIRF9ramRGZmgwZjRlbjZWOFY3YTZWQVlaeUZKTzJvMy1IalVPZGlBRHJfdXlDTmxkWGVSX2RycUo3aFV3aC1WZUdyaV85MjN3S2pxemhpV0U?oc=5",
    "data": "2026-11-06T12:10:00Z",
    "coletado_em": "2026-11-06T12:10:00Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Eu Ideal",
+     "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxQeVV3RnZDZzBLSzFWT1J4VEktdVp2N01JUGk1LWJaa0xXZUpDdVdJMXBjQkZ3ckU4Ukc2QzhkZ0llQ3lXVGpHZVlROEVCQ0lNN0VmdFUtaGcyXzdqbC11bGNHWVc4LWpFaEx2OVM5UFVYNEotWTk0cnlac1FGSGxxQmNaZzdBazdCOU8zYzctODNZMHFJbC1LUnlfSkxnUkxzS1QtcjAweXRSZXFESHZiZFkxWlY3b3R0LUF4OUVZTW5LOXV4VDF3bFk0VEJnWWtNekVfOGZSV0RWMXN2MUJrNnVSUG5PR2t0cDRlWkRJNmdGcHd3YWNVNDNFTmFROE1lV2xHQTNUS0ZQUXNuUjlLeVRYWGdOWl9CeWlpUHNZOGVVVXRCczJiMTJHZmZvVFhyV3o5MndEU2U?oc=5"
+    }
+   ],
    "ufs": [
     "RO"
    ],
@@ -19247,6 +19677,20 @@
    "categoria": "medida"
   },
   {
+   "id": "c836f0736f31",
+   "titulo": "Zucco afirma que integração de secretarias manterá apoio à agricultura familiar",
+   "veiculo": "Studio Notícias",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUnN3QVVyN1l2SGF4am1ZVWt2a2hhR0NhcG9pSTA5eUFfX0wzTjJGMFRqQzlva3A0cXp1R2VQeHRrN1VoY2lERzZacjcxNGl4OEN1SWRDRV80ZmJXRWZ6T1o0dWd4STI5TW5hbEZ1YWFyb3Jza1V5SDRHSm1ob0cwRGwtV2w4bTlCNnZjU0kzY2JZN0R2TDlZS0pHdHBpZnJzLUNsak5GYWFtVWdqd0RFTmtDaw?oc=5",
+   "data": "2026-10-30T07:00:00Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "c6aece5bd528",
    "titulo": "Cadu amplia equipe de transição para incluir CUT e a Fecomércio-RN",
    "veiculo": "DeFato.com",
@@ -19365,6 +19809,22 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "6ba33e48fdac",
+   "titulo": "Governo Zucco garante manutenção do apoio à agricultura familiar após anúncio de fusão de secretarias",
+   "veiculo": "Rádio Independente",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNDZ4Mi1jNmtWQ2lqYXpQdE1tSTdsel81UEdGWUY0dE1ONUlaSnpPSUh6TC1zNmxfRjl1UW81M2VDZzdlLXZkSjBzRVFjSHN2MDZJdXJVZGtFYjZqakNZMENzM1ZsREJEWkxkSzV6WTFUNEsxRHQyV0hMY0VwUV8zZG1SSC13dGxsM01aSzBqbDdzVzJZY1hDVk9uX2I5MFB3UGptczhSdWN4RjVqNlZxMXJzbVBKXzZxanJyUDZYVUJuam1LMDR1RWxGMXNfQVVqTS1QWjR1cw?oc=5",
+   "data": "2026-10-30T07:00:00Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "621d031ef383",
@@ -20625,6 +21085,20 @@
    "categoria": "medida"
   },
   {
+   "id": "0ceb04aa4d29",
+   "titulo": "Conheça Luciana Daltro, coordenadora da transição de governo no RN",
+   "veiculo": "O POTI",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPS291Vzhub1p0S3pURTlGVG85TW9zY29kdjBuc0dxMjZFX1ZMUXZsUjZReEdJM3FDbFo0NlJwZGNFV3JsVi1ocG12QXZpbkd5WkdqYWJoV2dlSXpiam92akJTYXd3YXR0SzhjbGlreWc5THJvM0NDWk5ZdTVKNGloby1rajhPVTd0R2lsdU42V0U?oc=5",
+   "data": "2026-10-29T07:00:00Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "0bfd944f59b5",
    "titulo": "Omar Aziz e Roberto Cidade se encontram nesta quinta para tratar da transição de governo",
    "veiculo": "BNC Amazonas",
@@ -21734,6 +22208,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "bdda1496e073",
+   "titulo": "Política | De olho no mandato, Vicentinho antecipa equipe e anuncia nome para a Secom do estado",
+   "veiculo": "T1 Notícias",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxObC11dzFVWnVaTmc3WFh4R19uWk05RXNETVBHTklHQ0ExWVpzWjdyNEF2YktxYkN6UHZmemlzTlVJZXVyc2dKc3JSV0dBQkx3eVJUZWtSLVhvdTFfWWJrOUUtMG45MDhWbFVkUWl1ZHU1ZHZGT1hiNEVOaUlEc2xLc2l0NEkxQXhkU1JpVWxkUnlUZ1JaUFZfOFRxd2FNZm9hQUZ1dWZhY0p6NkxaNHNxV3NSN2RQLWZsUE1MR0c4ZDl5M2Yt?oc=5",
+   "data": "2026-10-27T07:00:00Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "b4ac65c89494",
    "titulo": "Zucco anuncia primeiros nomes do secretariado do governo do RS nesta terça-feira",
    "veiculo": "SB News",
@@ -22471,6 +22959,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "0029b09d9a52",
+   "titulo": "Após resultado das urnas, Wanderlei conversa com Vicentinho e prepara transição do Governo",
+   "veiculo": "Araguaína Notícias",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNS205UFdidWYyZGJiZ19nc1Q1UzNrVXVaY0FWc3B0dTlTWVBiMmFpcEdhaDB6eGJma1B0cV8wX1JfNlNDN0U5b2VuNFNHOHcyclhxRjZqQjJLdlV4ZlFhSE50dEg3RDlId1JWdGYwWU4zV3lzbmtwOGdlY3pRMXVabEh0QnVWMERLeTJ1aTNGVS1HekpLcXBvc3A5WWVTN2tCY1QyQkIwcEFwdW5jTzJKdU9NVGRaYzlLaENTNnVxSVhMNkNDb3dpUGVhRkVBUXZIYkE?oc=5",
+   "data": "2026-10-26T17:57:00Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "76520f0c487a",
    "titulo": "Cadu Xavier promete retomar calendário do 13º salário e priorizar critérios técnicos no secretariado",
    "veiculo": "Agora RN",
@@ -22633,6 +23135,20 @@
    "outras": [],
    "ufs": [
     "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "ccb360fb30a9",
+   "titulo": "Wanderlei conversa com Vicentinho e promete transição de governo 'organizada e transparente'",
+   "veiculo": "AF Notícias",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPNnAxREFjVmxPVWZlbHpCcmt2R3F6SVdnNE55S1YtMGpuR3BIdlBZS0w2ZjRwaEEtZm40WHFqMkpuTWFnZlMtOE4zLUgwYzVYSEttTmZtVnU5NnNSQng3Z1ZIRVhxOFJXZEVXaHk1MkpzaU8zcHZ2Z3hBTGtXM2UtQ0I3Y3pNcFAtOXYxNXVQNEVxb3hfN3h6Q3RjczEtaExnb243QUlJZGRZYXh1UmJ1WEZUV3p0T0w1c3phTzdPR0k?oc=5",
+   "data": "2026-10-26T07:00:00Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "TO"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -22998,6 +23514,20 @@
    "outras": [],
    "ufs": [
     "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "9ba92a134c2f",
+   "titulo": "Dos hospitais à segurança: veja as promessas de Vicentinho para os primeiros 100 dias de governo",
+   "veiculo": "AF Notícias",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxObzZPWXVaWGNMUFo3MTZYUkRHcGl4bV9HVkZSc2tqajZQQ1B2Nk9WNEwxNEVPY2V5RkxTbHoxZXBFSVRsaHBMNXE2djc5WWhmQktCZ2R0LVJOZEhfcHFHcGNJcXlfeUFkaG5SMGtQZFRNTWpsS2JqX3RnUXc5U1NDR29qVHhnY19nX09rY1JEZU5IQXRkQVpLTVpTU3BwRExNZEVJdFp2Xzl6VElRaGgwSWdKZ0Jhc09JVXJlZkFYUEZGMzV0QTA5cUVVSG00UXc0NEdyQw?oc=5",
+   "data": "2026-10-25T07:00:00Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "TO"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -24285,6 +24815,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "ebb7af2c7757",
+   "titulo": "Zucco reafirma intenção de reduzir secretarias no RS para cortar custos",
+   "veiculo": "Tribuna do Agreste",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOS1lSYXdDdF8yN1hXMWFlVjgzQ1NSNDNmS1dJQlMyNnQ0NERxcWxGLUhfOWVmNEppd1k5QVFoTkV1Sl9wQkh0UmhsYkdCTTJSMmNyM0IzY05YT05TR2RQM1JjZUw4QTZldGtCOV9RMUNlY0hZZXptMmluSmJaODFTWnZZSE1nMlZWTW9SbXFBYi1YN0VaZ2N6dzRiN3JldVhJTklDU2FxYVhfTVh2dm5GV0VsTDczSjBibnJ5UEhIQm1XLWtiNEVOS2p2QXBsa1dJ?oc=5",
+   "data": "2026-10-20T07:00:00Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "e5e09255c760",
    "titulo": "Os secretários que Cleitinho quer definir primeiro",
    "veiculo": "O Fator",
@@ -24386,6 +24930,20 @@
     "diagnostico"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "b3b92be3ed99",
+   "titulo": "NOVA GESTÃO: Marcos Rogério orienta equipe de transição a propor soluções antes do início do governo",
+   "veiculo": "Rondoniaovivo.com",
+   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOdzlnNi1LWHZOZHdwSktFUGNCM0dDVjNVUXdyb0lReWhnTDNnRE9vWXhoOE5CNkRGSUlWQ0JfV25BNFk5aERxZzk4NkJMeHJ5MHlaSkdNWDdoUW5aWEtMMUtKMlJuSU1FaFA4cWo5YURvaWhld0VDNnptS1FQMHByNHNRaXZDRWp4R0tvaFZGYnA3cFg2eUZYVzdTRzVpMmpHMlFHa3pBaUV4STZuSWhyTTNJSDVPaFllQ2kwc2Qta3QxdnBRWmlWNGRMMHJ1RUxINlBPVlFnc2RCVEs4M2EwMzduVmxtRHdlMFFN?oc=5",
+   "data": "2026-10-20T07:00:00Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "RO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "b31a16a54f4e",
@@ -27293,6 +27851,23 @@
    ],
    "temas": [
     "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "fe7279b9c345",
+   "titulo": "Zucco anuncia governadores do Rio de Janeiro e Minas Gerais no bloco que vai propor renegociação da dívida com a União",
+   "veiculo": "Rádio Pampa",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOZzV2RmVBVnpGbGNBNHJDdEZuQmlvRTJMX0MwY2hMdDMxWjIzSlJHOU9USzFqUkdSTEctZGhBSURRS05lVlNLbWNwMGNBbzRma1Z4aXZlS3RUemJsQ2ZvYUV2bHI2SnJOWW1DSGlGcm0xMHZGeWpzaFpiWGItWDNkeXBQSG9WNFl1WHlneVVYRzlSaXNVZkhteF9lX1JvYS1lNm5aa1BIZ2Z4VGlvX1VtNk1LRWpEdUkzY0FLdXV6bnZfdFA4Y2VjUGxSRHk0LW5jeVpjZEZBOGZGR1Z6bFAtRmtTS1NxZw?oc=5",
+   "data": "2026-10-14T07:00:00Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "MG",
+    "RS"
+   ],
+   "temas": [
+    "diagnostico"
    ],
    "categoria": "medida"
   },
@@ -30474,7 +31049,12 @@
    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQbnRad2t6NEQxa1FsM1EycGdNWGVIWXRudTBqSWVjczZPLWczdkd2cF9mNmlrWDN5dVBsNDBjYWdSNTVxTDhIU1VhOGFWanN5eTVzRFBWaTNWdWhROEtHb0FSQTBYY2NpX2xIVXBjQ0JrcW0tTHlqMU1yMWtWb0RKaFQ1SWJlWTQ1Q3gxY0R6WktjZUNHQXh4ZE9oNWtsWUlDb3QySkZXMmpRN3J4WDN30gG0AUFVX3lxTE9ibG5acXRlMW1jN01uc3czMHVSd3pYUEU5aHZzVGM2dkdwSUJPR2lIbEx2WFNyakJ0U2JLSG96ZlRCMnpBNm8zdE4yaGxXYmlpeVkxemRObHdjZm96MlpTYkYwNGZMX3JKclJjUl9IeFg4SUNmQWNfYTJiblVHc0pyTDNwYW9ya2ZncXZwTkJEczJpb212dU9URXR2dXN1bHVCbThjeV9ObFN5V3dCVnA2TkMzaQ?oc=5",
    "data": "2026-10-08T07:00:00Z",
    "coletado_em": "2026-11-19T21:17:45Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Blog do Gláucio Ericeira",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPVERCM1ZWbmU4dG1vNjhUamUzN3BIUEVJMGUxcU1VX1pPNDl4ZlY2VVQ4dWZQeVRJRDgzSXJXOXVwVlk5Wi1jV1gyVzZhX3ppVHpndzMzazk5SjFqVWpDRmNQX0ItX0lBd1RpTzZlQ0VXOWN6cmFUelNkVWFhWWZtcnpJU3E4UkxlT0phdGRBdU5Hc3djQ3hrYWRKUkdOQVZw?oc=5"
+    }
+   ],
    "ufs": [
     "MA"
    ],
@@ -31194,6 +31774,20 @@
    "outras": [],
    "ufs": [
     "MA"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "2f87c09b21f9",
+   "titulo": "Falcão, vice de Cleitinho, será anunciado coordenador da transição nesta quarta-feira",
+   "veiculo": "Rádio Itatiaia",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQaWpmenNjVlhtWC1lTmJHVEdiMUlmdmdkZFhBbjhaUXl1bFlaM21DSkV1OWRubHNpdFdlQlVzR0Z2SExYTkw5dDBablpZZzdtWTMzX3hPUDdDaVpJN3V4TFFETzFuZWNFVTFTdnk1N1R1YXJabVVqaE5aS2VEMWJlSWdqbEZKeVZ1TDFGQ3djRGJEc2plYlpkYzJTTnktRm8xQUxGREZrdzR6R1JaQU5kN0Vyb3B6VEkwbkdRcWRB?oc=5",
+   "data": "2026-10-07T07:00:00Z",
+   "coletado_em": "2026-11-25T11:17:49Z",
+   "outras": [],
+   "ufs": [
+    "MG"
    ],
    "temas": [],
    "categoria": "equipe"
