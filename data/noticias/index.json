@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-25",
- "gerado_em": "2026-11-25T15:17:15Z",
+ "gerado_em": "2026-11-25T17:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,17 +17,17 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 13,
-   "aceitos": 7,
+   "lidos": 15,
+   "aceitos": 8,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 24,
-   "aceitos": 7,
-   "possiveis": 4
+   "lidos": 26,
+   "aceitos": 8,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -41,23 +41,23 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 6,
-   "possiveis": 0
+   "lidos": 9,
+   "aceitos": 7,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 20,
+   "lidos": 28,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -65,15 +65,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 3,
+   "lidos": 10,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -89,17 +89,17 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 64,
+   "lidos": 67,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 93,
-   "aceitos": 1,
-   "possiveis": 7
+   "lidos": 86,
+   "aceitos": 2,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -147,13 +147,13 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 22,
+   "lidos": 23,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -161,16 +161,16 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 54,
-   "aceitos": 1,
+   "lidos": 100,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 1,
+   "lidos": 3,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 21,
+   "lidos": 25,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -209,7 +209,7 @@
    "fonte": "A Gazeta",
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
-   "lidos": 100,
+   "lidos": 99,
    "aceitos": 2,
    "possiveis": 3
   },
@@ -234,8 +234,8 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 3,
-   "possiveis": 3
+   "aceitos": 2,
+   "possiveis": 0
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -278,21 +278,63 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 3,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 362,
-  "possivel": 23,
+  "sem_contexto": 371,
+  "possivel": 22,
   "oficial_sem_tema": 4,
-  "sem_contexto_com_tema": 19,
-  "outro_estado": 27,
-  "veiculo_excluido": 29,
-  "excluir": 45,
-  "veiculo_outra_praca": 10,
-  "generico_sem_ancora": 3,
-  "sigla_sem_ancora": 5,
-  "exterior_sem_ancora": 2
+  "sem_contexto_com_tema": 21,
+  "outro_estado": 24,
+  "veiculo_excluido": 26,
+  "excluir": 46,
+  "exterior_sem_ancora": 5,
+  "generico_sem_ancora": 4,
+  "veiculo_outra_praca": 11,
+  "sigla_sem_ancora": 7
  },
  "itens": [
+  {
+   "id": "ea42330eb7e0",
+   "titulo": "Lei Kandir e ajuste fiscal impactam Espírito Santo",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOeUJOa0diMU5pZEVQTjZaLThsUFF3LVRaOFNXVmdOS1lldHZQaXVZSDhhU3JpZTVyTUtibVU0am1sRENSVkR4aDVuV2JhSUpfdE9NVVlsaC1vSm5NVFkwQjd0VDFsSUlkblYzRERjcE9HbEZiU1NZYm9Db2xhS29tRWNvTHpFdkk5?oc=5",
+   "data": "2026-11-25T17:11:44Z",
+   "coletado_em": "2026-11-25T17:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "c3ed67881276",
+   "titulo": "Pazolini se reúne com Fecomércio-ES e discute estratégias para gerar empregos e fortalecer a economia capixaba",
+   "veiculo": "rede noticia es",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPSzNrOU53Sl83ZHh4VnNxdzA2aTF4S055SS1MZ3UxNWNCaEVYam9DdU1RQ0xvbVVRdWJtZ2hiNGI1d0lhU0xUTVU2NXVERVBKTHJsVFl1b0pZUnBsN1lYM1N4YWYxd2JDWndWWF91YWlBRllHRDhpanVYRWxyb25RNS1QZHhjSE54a1RwOVNrZlJULW4yaHBTRFk4bWVBYXFIQ2IzVkFHdV9mZW1aZkI3X0JmRkVTZWktNXQ0VGZlSURUOW5aZGhXWUtzOW1Pek0?oc=5",
+   "data": "2026-11-25T16:18:45Z",
+   "coletado_em": "2026-11-25T17:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "4e59420ad025",
+   "titulo": "Prefeitura de Cachoeiro promove mutirão para negociação de dívidas com até 100% de desconto em juros e multas",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQLWZCR3NrZTA3WU52eXFHMGM0UDVBOWNERlpsUWNVeDQ1VmRaQVZNTzFueGRqVjk0N1RTbVdreTd6QjNnRVFOMlRFdkRsZHFpeFhZWXlPU29GMXMtNlpnOEdJR09pRi0tY1Y2MkE2azR6Q3pjLU9yRHlIX2pPbVZLU2xsejJlYzJwaE9GN3NLWDZOMW1rVVZqNFlrcTdLV0RwdzBLcTJZY1VLc29pS0FwTllqWVdfd3plbE5XbVBHWDhpdzVaOFl1U0ctZw?oc=5",
+   "data": "2026-11-25T16:18:28Z",
+   "coletado_em": "2026-11-25T17:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "f023123efe46",
    "titulo": "Guia de Custos do Setor Público é apresentado pelo TCE-ES",
