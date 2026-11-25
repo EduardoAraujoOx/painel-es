@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-25",
- "gerado_em": "2026-11-25T09:17:14Z",
+ "gerado_em": "2026-11-25T10:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 11,
+   "lidos": 10,
    "aceitos": 5,
    "possiveis": 1
   },
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 38,
-   "aceitos": 5,
-   "possiveis": 7
+   "lidos": 24,
+   "aceitos": 6,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 23,
+   "lidos": 21,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 98,
    "aceitos": 1,
    "possiveis": 9
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 5,
+   "lidos": 7,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,25 +137,25 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
-   "aceitos": 0,
-   "possiveis": 2
+   "lidos": 53,
+   "aceitos": 1,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 22,
+   "lidos": 23,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 39,
-   "aceitos": 1,
-   "possiveis": 6
+   "lidos": 22,
+   "aceitos": 0,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 17,
-   "aceitos": 1,
+   "lidos": 18,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -280,20 +280,34 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 363,
+  "sem_contexto": 360,
   "possivel": 24,
-  "oficial_sem_tema": 7,
-  "sem_contexto_com_tema": 24,
-  "veiculo_excluido": 35,
-  "excluir": 46,
-  "veiculo_outra_praca": 12,
-  "outro_estado": 33,
+  "oficial_sem_tema": 5,
+  "sem_contexto_com_tema": 21,
+  "outro_estado": 34,
+  "veiculo_excluido": 34,
+  "excluir": 44,
   "caixa_alta": 1,
   "generico_sem_ancora": 2,
-  "sigla_sem_ancora": 8,
-  "exterior_sem_ancora": 2
+  "veiculo_outra_praca": 12,
+  "sigla_sem_ancora": 9,
+  "exterior_sem_ancora": 3
  },
  "itens": [
+  {
+   "id": "20eebd997712",
+   "titulo": "Presidente Kennedy dá publicidade à Notificação Recomendatória nº 005/2026 expedida pelo Ministério Público de Contas do ES",
+   "veiculo": "Blog do Elimar Cortes",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOS0NXV2NtUmpodkRFc3BISDF6V25uWWxqT21lUmM1UDJkMjM5MG5tTGNxMFk2REFUWjFXTjJMd2RueWpmTjNHUFA3MkxwUXBFbzRsbkw1Y1N2azdNN09Ya2xra1ZkbmlzUFRhRmE3Qm1rVHVtTVlVUkt5VGtOS21kUGVmWXFhT3lDdVB5SDZCRXJkRmdPRDE0c19WQ0xpTDJjZWpaRkVFRnpZdmI3dlhzTFFrTEQ5M1oxNUZMTUN0bDhqSnVvLWlYUGJsb2RHYXpYYjIyNUVJMGtyQ1Y1d2JfdVZsX21COUQxYkRFcGwwQk1HMGc?oc=5",
+   "data": "2026-11-25T09:28:30Z",
+   "coletado_em": "2026-11-25T10:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "controle"
+   ]
+  },
   {
    "id": "69817139f717",
    "titulo": "Ala de Pazolini defende isolamento político de Euclério Sampaio",
@@ -393,6 +407,18 @@
    "temas": [
     "contratos"
    ]
+  },
+  {
+   "id": "dfe1b22072aa",
+   "titulo": "Secult De Viseu Lança Livro “Ecos Da Alma E Do Coração”",
+   "veiculo": "Portal & TV Gurupi",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNTkF2eEZ2eWhpaE9KVHZ4OXZhQUZPQVphVGgyOGJNVC11OXp6Sng5MWVFR19jdkxEYkF0U0RUQkhCSVlLZk1jV2R0Rkk3X2VuMVhHSzBWY2pUNF8tOE02S19uV2w1eEVoZmVGcHFrTmpTeS05Y3pJVXZoaWF6eVM2QjNOVDZvcUx2UUE?oc=5",
+   "data": "2026-11-24T22:02:36Z",
+   "coletado_em": "2026-11-25T10:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "6e379cc996eb",
@@ -518,6 +544,18 @@
    "temas": [
     "financas"
    ]
+  },
+  {
+   "id": "83d2c44f3d57",
+   "titulo": "CNH da Gente: classificados devem comparecer ao Detran até 14 de dezembro",
+   "veiculo": "Alagonews",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOY1hyeldpa2o4N1NGNm1iVnk3NjNwQzNVREhoQmpYMmZJRzNFelFTYUduZ3NTQUJjUU44STBmcVhSdGk4cnA2NEY2NklJUUpGUDlkM0t5Qm44WkpfbEVtZFktUUxDaEk2RTh6VzNjdHVxYUlhdmx6SWJfSUFoRFQzUW5qM1RlWHIxcUFIZkR1OTdBR2QxYXJHV1JBVEI5UTRXd2NNcDhlYUZrSno4VmRuXw?oc=5",
+   "data": "2026-11-24T19:43:04Z",
+   "coletado_em": "2026-11-25T10:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "adbec5b0117c",
