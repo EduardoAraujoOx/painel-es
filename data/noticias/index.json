@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-25",
- "gerado_em": "2026-11-25T03:33:17Z",
+ "gerado_em": "2026-11-25T09:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 24,
-   "aceitos": 4,
-   "possiveis": 5
+   "lidos": 38,
+   "aceitos": 5,
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
@@ -41,17 +41,17 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 3,
+   "lidos": 5,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 27,
+   "lidos": 23,
    "aceitos": 0,
-   "possiveis": 4
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,8 +89,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 35,
-   "aceitos": 2,
+   "lidos": 52,
+   "aceitos": 3,
    "possiveis": 2
   },
   {
@@ -99,7 +99,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 1,
-   "possiveis": 10
+   "possiveis": 9
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 6,
+   "lidos": 5,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,9 +137,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 52,
-   "aceitos": 1,
-   "possiveis": 3
+   "lidos": 27,
+   "aceitos": 0,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -153,16 +153,16 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 22,
-   "aceitos": 0,
-   "possiveis": 4
+   "lidos": 39,
+   "aceitos": 1,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 55,
-   "aceitos": 2,
+   "lidos": 100,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 16,
+   "lidos": 17,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -218,7 +218,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -258,7 +258,7 @@
    "consulta": "https://www.agazeta.com.br/colunas/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -267,7 +267,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Sim Notícias",
@@ -280,20 +280,34 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 349,
-  "possivel": 27,
-  "oficial_sem_tema": 5,
-  "sem_contexto_com_tema": 23,
-  "outro_estado": 29,
-  "excluir": 44,
-  "veiculo_excluido": 37,
-  "generico_sem_ancora": 3,
-  "caixa_alta": 1,
+  "sem_contexto": 363,
+  "possivel": 24,
+  "oficial_sem_tema": 7,
+  "sem_contexto_com_tema": 24,
+  "veiculo_excluido": 35,
+  "excluir": 46,
   "veiculo_outra_praca": 12,
-  "sigla_sem_ancora": 7,
-  "exterior_sem_ancora": 3
+  "outro_estado": 33,
+  "caixa_alta": 1,
+  "generico_sem_ancora": 2,
+  "sigla_sem_ancora": 8,
+  "exterior_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "69817139f717",
+   "titulo": "Ala de Pazolini defende isolamento político de Euclério Sampaio",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZ3R1eUg4NjkxbThpeDA0emY0UEJzdGFRdkVJNEh0a2Q3UERZY3BUYnV1WVVGMV9ZSEJIWllreWVleGJOaklLem9hTW9BaVdCa3pDUFY5d05LVFJvQllNMlN2NVcxYlZndHBmRTRuUkh3LTJfenRZSndsQ2REbEFwa3NMWldqTWZraUxsQ01tZw?oc=5",
+   "data": "2026-11-25T04:15:13Z",
+   "coletado_em": "2026-11-25T09:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "bcf75d77707d",
    "titulo": "Após quase 12 anos sem reajuste, Alerj discute atualização salarial do primeiro escalão do Governo do Estado",
@@ -307,6 +321,20 @@
    "temas": [
     "governador",
     "pessoal"
+   ]
+  },
+  {
+   "id": "8e04a1ed84f8",
+   "titulo": "Como o Governo Federal pretende economizar até R$ 56 bilhões com o ajuste fiscal",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNR25oMmFoNm5hZnJOV3VPR2EzTXRwWDBCZlUwWTFCalIwc2FoY1lEeTQxSUFOZUYxaHNqdnhLX2VyeDhicjBmOFFzS1FNV01mTkFGWG9rVmpZUEJ2WTFscE5RSWdDSmFGN3EwbEpVMG1QNHZEaHdkRW5FeDQ2NkVMWVJtXzRyS3ZYYVRfTTEtbUVEdGhhdjNpSTJNN1ZVU29iRnphdWY2RU9kYzJQYy1oY0ZNd2FGb1JoWTlZa19iVUtnXzYybk9uNzVsZzRFd0FGeG9CV0dUcG9GUTg?oc=5",
+   "data": "2026-11-25T01:56:49Z",
+   "coletado_em": "2026-11-25T09:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
    ]
   },
   {

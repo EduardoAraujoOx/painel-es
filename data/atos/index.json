@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-25",
- "gerado_em": "2026-11-25T03:33:29Z",
+ "gerado_em": "2026-11-25T09:17:37Z",
  "desde": "2026-10-04",
  "primeiro_levantamento": "2026-10-31",
  "baseline": false,
@@ -11,9 +11,7 @@
   "cancelamento": 6,
   "anulacao": 1
  },
- "novos": [
-  "2068292"
- ],
+ "novos": [],
  "edicoes_lidas": [
   11522,
   11528,
