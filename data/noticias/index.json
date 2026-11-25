@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-25",
- "gerado_em": "2026-11-25T21:17:14Z",
+ "gerado_em": "2026-11-25T22:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -19,14 +19,14 @@
    "ok": true,
    "lidos": 18,
    "aceitos": 10,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 39,
-   "aceitos": 13,
+   "lidos": 40,
+   "aceitos": 14,
    "possiveis": 5
   },
   {
@@ -49,8 +49,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 36,
-   "aceitos": 1,
+   "lidos": 40,
+   "aceitos": 2,
    "possiveis": 2
   },
   {
@@ -89,16 +89,16 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 77,
-   "aceitos": 3,
+   "lidos": 72,
+   "aceitos": 2,
    "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 78,
-   "aceitos": 1,
+   "lidos": 76,
+   "aceitos": 3,
    "possiveis": 5
   },
   {
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 1,
+   "lidos": 8,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -145,17 +145,17 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 32,
+   "lidos": 29,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
-   "aceitos": 0,
-   "possiveis": 4
+   "lidos": 26,
+   "aceitos": 1,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 2,
+   "lidos": 3,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -193,9 +193,9 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 20,
+   "lidos": 22,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -218,7 +218,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -226,7 +226,7 @@
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 2
   },
   {
@@ -234,7 +234,7 @@
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -278,21 +278,73 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 6,
  "descartes_na_coleta": {
-  "sem_contexto": 390,
-  "possivel": 17,
+  "sem_contexto": 372,
+  "possivel": 16,
   "oficial_sem_tema": 4,
-  "veiculo_excluido": 34,
+  "veiculo_excluido": 39,
   "sem_contexto_com_tema": 30,
-  "outro_estado": 25,
+  "outro_estado": 29,
   "veiculo_outra_praca": 18,
-  "excluir": 36,
+  "excluir": 38,
   "exterior_sem_ancora": 7,
   "generico_sem_ancora": 9,
-  "sigla_sem_ancora": 10
+  "sigla_sem_ancora": 9
  },
  "itens": [
+  {
+   "id": "374033d3228e",
+   "titulo": "Banestes terá primeira mulher na presidência em 89 anos; saiba quem é ela",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/banestes-tera-primeira-mulher-na-presidencia-em-89-anos-saiba-quem-e-ela/",
+   "data": "2026-11-25T22:02:44Z",
+   "coletado_em": "2026-11-25T22:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "e6587d4918a5",
+   "titulo": "Banestes terá primeira mulher na presidência do banco",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNOEVrWHZTaTlwMzJFaFNONnpMZ1R4eWJUcEJDRWd6aTFvdC11X3ZnQnZya01MSkkwOU45a0o3ZWFjM1Z5NzhIdEVvbm11azVHdmNzb2N3Tmp3WmRxb1RYT1k3MXNnUklWYTB5QnliTDhET0F0ZWZKUkx1aU5FYkVjT2dsYzg?oc=5",
+   "data": "2026-11-25T21:54:36Z",
+   "coletado_em": "2026-11-25T22:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "a297a39887a5",
+   "titulo": "Danielle Calazans será a primeira mulher a comandar o Banestes; nome foi anunciado por Pazolini",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/economia/2026/11/danielle-calazans-sera-a-primeira-mulher-a-comandar-o-banestes-nome-foi-anunciado-por-pazolini/",
+   "data": "2026-11-25T21:51:20Z",
+   "coletado_em": "2026-11-25T22:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "605cb5488e69",
+   "titulo": "Dívida rural: 6 cuidados para o produtor capixaba evitar a perda de patrimônio",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/agronegocio/divida-rural-6-cuidados-para-o-produtor-capixaba-evitar-a-perda-de-patrimonio/",
+   "data": "2026-11-25T21:33:43Z",
+   "coletado_em": "2026-11-25T22:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "57cd8604dfe3",
    "titulo": "Alepi aprova proposta para ampliar cadastro de reserva do concurso da Polícia Penal do Piauí",
@@ -305,6 +357,23 @@
    "triagem": 9,
    "temas": [
     "pessoal"
+   ]
+  },
+  {
+   "id": "8630f568a589",
+   "titulo": "Tribunal de Contas confirma suspensão de licitação para digitalização de documentos do IPAJM e multa três servidores",
+   "veiculo": "TCEES",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPXzdPM1o2X3VXTVdCcGFwQ0Q5d1ZNaGU3bHMycWV1RmE3aW1uZVA5ZHQzOEE3eXd2cXcweE9iNmpIem5FQzNYRkxKY3NNdmhwQVNsb01pcHhkSUxzWWZPdkx1akJiMWhXNHAzVkRhQXBManJlbDFhRlBROEhEbmcwaE9xczdickdaRUwzZGx3M3NlcmFSLUYtZ1YzQ2RxOV9zZVpXRDYtaEZyX2ZHOWhMUTFndFFhZmRfVmZGSXFUNWt1dw?oc=5",
+   "data": "2026-11-25T19:46:49Z",
+   "coletado_em": "2026-11-25T22:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "restricao",
+    "contratos",
+    "pessoal",
+    "controle"
    ]
   },
   {
@@ -436,7 +505,12 @@
    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUVVqX1VfX3B3SEU5SEpJczhtdUdJcVZEZi1IN29yNXd2WlpreHpOWUljY0EzYl8tOFdxQWl3ZERDSlpIc2RKZGREMFBYLU90RUFrcTZzNHRzTk9Qenk2WmREblB0SnFkbE9vcDZSSkJ2bjJ2SFBydEFhc3V5djJvRS1HSHNXUm9oZHprdF81OW4wc3J4YUxKeVlzeFZ3dDZq?oc=5",
    "data": "2026-11-25T18:34:32Z",
    "coletado_em": "2026-11-25T19:17:14Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Açoriano Oriental",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPSXpLLVlTeVRZRUVSNHFzY28xeC1JWEFUdEJfRXg3OW5IS1I1QmRqbGxfZS1OR1hMdDdWXzZhUVRaN2cxVDU5UWdCdjJsSUNwUGpUbmNZWldUdnpPZDYwbW84T2lnRi0zakhYUnNPZGVOWTViVXVKOFoxREV0Ni1ySm50SnR6SVowNFFNS0YzZ054N2JlWFhkaVk0QnFtc040U0k2aEFBaWFZMmhodnfSAbMBQVVfeXFMT2REeVdaaTJja0ZqU0dXRHRVYVZDclprRnFJVEZ1enhkUjcta0RsQkdqXzA4SHdUcFNaZ3A3WFF0NGx3eGJudnotUWhjczdSQ2RNSGI3R2JRaGRJb0Vaakl0TVFwcjJzTDRPT1hSLWJJWloxcjlfUVBnLTZTeFRHSGdORVFWeXpzakpvXy04QW1IOUpkSnd2U2dWcEc5ZmhZM3k1dnQxZFgxejZCNEQ3cFRHQXM?oc=5"
+    }
+   ],
    "possivel": true,
    "triagem": 9,
    "temas": [
@@ -569,6 +643,18 @@
    "temas": [
     "financas"
    ]
+  },
+  {
+   "id": "c2220955bf20",
+   "titulo": "Ônibus do Sistema Transcol pega fogo em Vitória",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5XV3YyaDVGS0pwbGFmejBRNjMtbGdEWDgzRWRxMVJLeXo2YmxuemFHbUE3Yl9EM1RjbnREdnZPWmN5WjdxbEp0UnFvb2xqd0c5TlNMdTRoaG9mWXY3MTl3M3JKQUlXYzJZeHZ1eF9MRkVFeGpzSXpIcldBOA?oc=5",
+   "data": "2026-11-25T15:43:15Z",
+   "coletado_em": "2026-11-25T22:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "f023123efe46",
