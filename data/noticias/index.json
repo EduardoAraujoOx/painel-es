@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-25",
- "gerado_em": "2026-11-25T20:17:14Z",
+ "gerado_em": "2026-11-25T21:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 17,
+   "lidos": 18,
    "aceitos": 10,
    "possiveis": 1
   },
@@ -25,15 +25,15 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 11,
-   "possiveis": 3
+   "lidos": 39,
+   "aceitos": 13,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 5,
    "possiveis": 0
   },
@@ -41,7 +41,7 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 7,
    "possiveis": 0
   },
@@ -49,9 +49,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 35,
+   "lidos": 36,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 3,
    "possiveis": 0
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,17 +89,17 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 71,
+   "lidos": 77,
    "aceitos": 3,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 75,
+   "lidos": 78,
    "aceitos": 1,
-   "possiveis": 6
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
-   "aceitos": 0,
-   "possiveis": 4
+   "lidos": 56,
+   "aceitos": 2,
+   "possiveis": 8
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 32,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 25,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 22,
+   "lidos": 20,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -280,17 +280,17 @@
  ],
  "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 368,
-  "possivel": 19,
-  "oficial_sem_tema": 2,
-  "sem_contexto_com_tema": 21,
-  "outro_estado": 20,
-  "veiculo_excluido": 33,
-  "excluir": 42,
-  "exterior_sem_ancora": 6,
-  "generico_sem_ancora": 8,
-  "veiculo_outra_praca": 11,
-  "sigla_sem_ancora": 7
+  "sem_contexto": 390,
+  "possivel": 17,
+  "oficial_sem_tema": 4,
+  "veiculo_excluido": 34,
+  "sem_contexto_com_tema": 30,
+  "outro_estado": 25,
+  "veiculo_outra_praca": 18,
+  "excluir": 36,
+  "exterior_sem_ancora": 7,
+  "generico_sem_ancora": 9,
+  "sigla_sem_ancora": 10
  },
  "itens": [
   {
@@ -388,6 +388,18 @@
    "temas": [
     "governador"
    ]
+  },
+  {
+   "id": "da0dc76e62a4",
+   "titulo": "Governo determina apreensão de medicamentos contra o câncer por irregularidades; veja lotes",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQN1JZTFFldDdCM2hPaVpFQTdGQ0NITmhwd0NKNmdCSE9KdmVaWW40V3ZCdC16NFJGVWhQNklEZHFRend2TWZWcHFjUno3UjBCamtwYVg4d1IyV0Y0RThzc0tQUjN5ZVkzeEtXSXRFZXJhNmowc2lwbDFmNDdOS3NnNUptVzczU0pYU0E?oc=5",
+   "data": "2026-11-25T18:49:55Z",
+   "coletado_em": "2026-11-25T21:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "dfb58ccc0b49",
@@ -978,6 +990,20 @@
    "triagem": 9,
    "temas": [
     "contratos"
+   ]
+  },
+  {
+   "id": "50eaa67b5a5d",
+   "titulo": "Governo do Estado e Casa dos Ventos realizam mutirões para 1.672 oportunidades de trabalho no norte da Bahia",
+   "veiculo": "Alagonews",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOamtoQllSemUxYmluMVhxcVdEMURPRzJ6cTAyUEZJM2ZxOThvR2pHOEdhOGZNenE2QTY5MjE0MXhzZlE3NnY2Vzh0RDV0Yk1wNWhUSjA1TExhTFJNTDVwQmh3bG5QTEpiYXRqdkZtWlFVYmZiMVdJTFJjLVJnZjFfXzBhLUdtay10T1M0R2pEX3NjdWZ5elJqd1dib2M3WC15Wjl6QWZBX3VLY3BvV2ZJaFJPazNiUUlqamxNRXpTMEtkOEpnZ1NOR0FFazJaOHM4ZTNLd0dHS2ZaU0NpZUl5dw?oc=5",
+   "data": "2026-11-24T21:44:05Z",
+   "coletado_em": "2026-11-25T21:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "governador"
    ]
   },
   {
