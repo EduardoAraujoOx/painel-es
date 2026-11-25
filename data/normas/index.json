@@ -1,16 +1,19 @@
 {
- "ref": "2026-11-24",
- "gerado_em": "2026-11-24T10:17:50Z",
+ "ref": "2026-11-25",
+ "gerado_em": "2026-11-25T03:33:41Z",
  "desde": "2026-10-04",
  "primeiro_levantamento": "2026-11-05",
  "baseline": false,
  "contagem": {
-  "decreto": 18,
+  "decreto": 19,
   "transicao": 1,
-  "fiscal": 17,
+  "fiscal": 18,
   "lei": 13
  },
- "novos": [],
+ "novos": [
+  "2068838",
+  "2068710"
+ ],
  "edicoes_lidas": [
   11522,
   11524,
@@ -77,7 +80,8 @@
   11652,
   11660,
   11661,
-  11668
+  11668,
+  11672
  ],
  "ignoradas": [
   "2040862",
@@ -99,6 +103,34 @@
   "2066600"
  ],
  "itens": [
+  {
+   "id": "2068838",
+   "edicao": 11672,
+   "data": "2026-11-25",
+   "tipo": "decreto",
+   "temas": [
+    "cargos"
+   ],
+   "titulo": "DECRETO Nº 6532-R - Extinção de cargos vagos - 24.11.26",
+   "orgao": "Governadoria do Estado",
+   "ementa": "Extingue cargos vagos de provimento em comissão, na estrutura de órgãos da Administração Direta e de entidades da Administração Indireta do Poder Executivo Estadual.",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2068838/11672",
+   "visto_em": "2026-11-25T03:33:41Z"
+  },
+  {
+   "id": "2068710",
+   "edicao": 11672,
+   "data": "2026-11-25",
+   "tipo": "fiscal",
+   "temas": [
+    "encerramento"
+   ],
+   "titulo": "PORTARIA 463-S - ENCERRAMENTO EXERCÍCIO 2026 - HRAS",
+   "orgao": "Secretaria de Estado da Saúde - SESA -",
+   "ementa": null,
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2068710/11672",
+   "visto_em": "2026-11-25T03:33:41Z"
+  },
   {
    "id": "2067396",
    "edicao": 11668,

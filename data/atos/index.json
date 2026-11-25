@@ -1,17 +1,19 @@
 {
- "ref": "2026-11-24",
- "gerado_em": "2026-11-24T09:17:25Z",
+ "ref": "2026-11-25",
+ "gerado_em": "2026-11-25T03:33:29Z",
  "desde": "2026-10-04",
  "primeiro_levantamento": "2026-10-31",
  "baseline": false,
  "contagem": {
   "paralisacao": 4,
   "suspensao": 3,
-  "rescisao": 20,
+  "rescisao": 21,
   "cancelamento": 6,
   "anulacao": 1
  },
- "novos": [],
+ "novos": [
+  "2068292"
+ ],
  "edicoes_lidas": [
   11522,
   11528,
@@ -52,9 +54,22 @@
   11652,
   11660,
   11661,
-  11668
+  11668,
+  11672
  ],
  "itens": [
+  {
+   "id": "2068292",
+   "edicao": 11672,
+   "data": "2026-11-25",
+   "tipo": "rescisao",
+   "alvo": "contrato",
+   "titulo": "EXTRATO - Termo de Rescissão Consensual - contrato 055.2023",
+   "orgao": "Secretaria de Estado da Justiça - SEJUS -",
+   "setor": "Termos",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2068292/11672",
+   "visto_em": "2026-11-25T03:33:29Z"
+  },
   {
    "id": "2066673",
    "edicao": 11661,

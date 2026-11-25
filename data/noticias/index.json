@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-25",
- "gerado_em": "2026-11-25T01:17:15Z",
+ "gerado_em": "2026-11-25T03:33:17Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,17 +17,17 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 12,
-   "aceitos": 6,
+   "lidos": 11,
+   "aceitos": 5,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 44,
-   "aceitos": 5,
-   "possiveis": 10
+   "lidos": 24,
+   "aceitos": 4,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -41,17 +41,17 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 4,
+   "lidos": 4,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 21,
-   "aceitos": 1,
-   "possiveis": 2
+   "lidos": 27,
+   "aceitos": 0,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -65,15 +65,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 4,
+   "lidos": 8,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 37,
+   "lidos": 35,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -99,7 +99,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 1,
-   "possiveis": 11
+   "possiveis": 10
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
-   "aceitos": 0,
-   "possiveis": 2
+   "lidos": 52,
+   "aceitos": 1,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 25,
+   "lidos": 22,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 47,
-   "aceitos": 1,
-   "possiveis": 7
+   "lidos": 22,
+   "aceitos": 0,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -169,16 +169,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 1,
-   "aceitos": 0,
+   "lidos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 3,
+   "lidos": 2,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -218,7 +218,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -235,7 +235,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 0,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -278,22 +278,51 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 350,
-  "possivel": 29,
-  "oficial_sem_tema": 9,
-  "sem_contexto_com_tema": 26,
-  "outro_estado": 34,
-  "excluir": 48,
-  "veiculo_excluido": 40,
+  "sem_contexto": 349,
+  "possivel": 27,
+  "oficial_sem_tema": 5,
+  "sem_contexto_com_tema": 23,
+  "outro_estado": 29,
+  "excluir": 44,
+  "veiculo_excluido": 37,
+  "generico_sem_ancora": 3,
   "caixa_alta": 1,
-  "generico_sem_ancora": 2,
-  "veiculo_outra_praca": 13,
-  "sigla_sem_ancora": 9,
+  "veiculo_outra_praca": 12,
+  "sigla_sem_ancora": 7,
   "exterior_sem_ancora": 3
  },
  "itens": [
+  {
+   "id": "bcf75d77707d",
+   "titulo": "Após quase 12 anos sem reajuste, Alerj discute atualização salarial do primeiro escalão do Governo do Estado",
+   "veiculo": "Gazeta Sul fluminense",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQNmFqSGdPTzFUVFRtNWIyMk1VU20wWVNUT2doRTRIRHlLWUxvUlF2Ny0zVXZQM3JVVXJpX2dUNlFvMEg3TUFBRUd3MW85Q0tQcmZiaTdGTWhWU3NGaDBYM3dOcW9TYUFsRTEtRnEyUWxPQnVlM2o1R2JsemJVcENqaGVqT0pCSGJYb0dNaWNxQUdOYVdFcVI1ejRIdk5ZQk1PQjc1aWtPajdCOTBhZlNZeF8xTVByckhBUk1FQ3FJdDZpbldraDAwZVBlTFRFeVp3SWc?oc=5",
+   "data": "2026-11-25T02:02:00Z",
+   "coletado_em": "2026-11-25T03:33:17Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "governador",
+    "pessoal"
+   ]
+  },
+  {
+   "id": "2b01c09dee66",
+   "titulo": "Crime brutal no ES: MPES denuncia sete pessoas por morte de homem carbonizado",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/policia/crime-brutal-no-es-mpes-denuncia-sete-pessoas-por-morte-de-homem-carbonizado/",
+   "data": "2026-11-25T01:55:57Z",
+   "coletado_em": "2026-11-25T03:33:17Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "controle"
+   ]
+  },
   {
    "id": "1ff063b89431",
    "titulo": "Ajuste fiscal: ministros levam nova PEC a Lula",
