@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-25",
- "gerado_em": "2026-11-25T14:17:15Z",
+ "gerado_em": "2026-11-25T15:17:15Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,7 +25,7 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 25,
+   "lidos": 24,
    "aceitos": 7,
    "possiveis": 4
   },
@@ -49,9 +49,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 22,
-   "aceitos": 0,
-   "possiveis": 2
+   "lidos": 20,
+   "aceitos": 1,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -73,15 +73,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 1,
+   "lidos": 3,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 60,
+   "lidos": 64,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 86,
+   "lidos": 93,
    "aceitos": 1,
    "possiveis": 7
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 24,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -145,15 +145,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 30,
    "aceitos": 0,
-   "possiveis": 3
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 21,
+   "lidos": 22,
    "aceitos": 0,
    "possiveis": 4
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 54,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -193,9 +193,9 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 17,
-   "aceitos": 2,
-   "possiveis": 0
+   "lidos": 21,
+   "aceitos": 3,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -210,8 +210,8 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
-   "possiveis": 4
+   "aceitos": 2,
+   "possiveis": 3
   },
   {
    "fonte": "Folha Vitória",
@@ -278,21 +278,75 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 5,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto": 348,
-  "possivel": 24,
+  "sem_contexto": 362,
+  "possivel": 23,
   "oficial_sem_tema": 4,
-  "sem_contexto_com_tema": 22,
-  "outro_estado": 24,
-  "veiculo_excluido": 28,
-  "generico_sem_ancora": 3,
-  "excluir": 46,
+  "sem_contexto_com_tema": 19,
+  "outro_estado": 27,
+  "veiculo_excluido": 29,
+  "excluir": 45,
   "veiculo_outra_praca": 10,
-  "sigla_sem_ancora": 7,
+  "generico_sem_ancora": 3,
+  "sigla_sem_ancora": 5,
   "exterior_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "f023123efe46",
+   "titulo": "Guia de Custos do Setor Público é apresentado pelo TCE-ES",
+   "veiculo": "ES Brasil",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE13WW9YZUp2Y0s5LTRaMGNhVkdFRndYN3NQbDE0LXB4bDdGcE03QUR2UVZGaGFxRjN3THRRWEtaN2VfeWt6dDFTMUx0SjEtYndKazZ0V1EwcVRFM3BUbkx2RDZhajhfbWFQR3RMaw?oc=5",
+   "data": "2026-11-25T15:00:00Z",
+   "coletado_em": "2026-11-25T15:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "f0890e8266fe",
+   "titulo": "Ônibus do Transcol pega fogo em Vitória; veja vídeo",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/agora/onibus-do-transcol-pega-fogo-em-vitoria-veja-video-1126",
+   "data": "2026-11-25T14:56:07Z",
+   "coletado_em": "2026-11-25T15:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "0ef4e9ab35c1",
+   "titulo": "Raquel Lessa afirma que continuará sendo a ponte entre os municípios e o Governo do ES",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQLWhsakpuZ1BWTVFYQk1aV2N4NUZSMXpCOHF0OGxnVkxTclliMkFKdU5OQnBrTm5YOGtnQW1BV1BlVlVxOUhKOXJPX01OaGdCOG5VcHhNck9IanczZTl0MVc0QmFzUjd4MWFHSU9HNS0yeDVsdHhIVnN2NjFMZVNhZ2otVG42Qnh6eTAycHJXbTBSMm9WTzVhc3REY3ZFZXFBSTQyRG50LUxQYTNOUFNnUw?oc=5",
+   "data": "2026-11-25T14:40:38Z",
+   "coletado_em": "2026-11-25T15:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "ed992680a4b7",
+   "titulo": "Novo Acordo do Rio Doce completa dois anos com R$ 44,3 bilhões executados",
+   "veiculo": "Band",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTFVwbnFnemNMdllXZ0lSS044TnQ3bGp6VnhVek5rWDBkcGtOV2FjWUdLT0IwLVlPaEo4Z3VSdmI3bFF0U1BGN1pSQy1ET2NRNkM2WmZRWnQ4TDB0SDBCcXg3LTNkVUctSnVCa01Za0NaVFU0NWtaSzBob3FmYWtkeWNXSlZmS1F3RjJGbTNEZ1I3Y1V3VXVVRHZJMVc4MEdFUkxwemZiVmN5bzRJTldKeQ?oc=5",
+   "data": "2026-11-25T14:10:05Z",
+   "coletado_em": "2026-11-25T15:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "b6fa7cd894d6",
    "titulo": "Engenheiro Renato Pazolini: pai do governador eleito dará nome à nova orla de Camburi",
