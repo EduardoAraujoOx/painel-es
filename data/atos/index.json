@@ -1,17 +1,22 @@
 {
- "ref": "2026-11-25",
- "gerado_em": "2026-11-25T09:17:37Z",
+ "ref": "2026-11-26",
+ "gerado_em": "2026-11-26T09:17:29Z",
  "desde": "2026-10-04",
  "primeiro_levantamento": "2026-10-31",
  "baseline": false,
  "contagem": {
-  "paralisacao": 4,
+  "paralisacao": 5,
   "suspensao": 3,
-  "rescisao": 21,
+  "rescisao": 24,
   "cancelamento": 6,
   "anulacao": 1
  },
- "novos": [],
+ "novos": [
+  "2069797",
+  "2069577",
+  "2069813",
+  "2069812"
+ ],
  "edicoes_lidas": [
   11522,
   11528,
@@ -53,9 +58,58 @@
   11660,
   11661,
   11668,
-  11672
+  11672,
+  11677
  ],
  "itens": [
+  {
+   "id": "2069813",
+   "edicao": 11677,
+   "data": "2026-11-26",
+   "tipo": "rescisao",
+   "alvo": "contrato",
+   "titulo": "EXTRATO RESCISÃO AMIGÁVEL CONTRATO Nº 004-2021",
+   "orgao": "Secretaria de Estado de Mobilidade e Infraestrutura - SEMOBI",
+   "setor": "Contrato",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2069813/11677",
+   "visto_em": "2026-11-26T09:17:29Z"
+  },
+  {
+   "id": "2069812",
+   "edicao": 11677,
+   "data": "2026-11-26",
+   "tipo": "rescisao",
+   "alvo": "contrato",
+   "titulo": "Termo_de_Rescisão_Amigavel_PEREIRA_LIMA",
+   "orgao": "Secretaria de Estado de Desenvolvimento - SEDES -",
+   "setor": "Termos",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2069812/11677",
+   "visto_em": "2026-11-26T09:17:29Z"
+  },
+  {
+   "id": "2069797",
+   "edicao": 11677,
+   "data": "2026-11-26",
+   "tipo": "paralisacao",
+   "alvo": "contrato",
+   "titulo": "Extrato 3ª Ordem de Paralisacao CT024-2023",
+   "orgao": "Secretaria de Estado da Educação - SEDU -",
+   "setor": "Contrato",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2069797/11677",
+   "visto_em": "2026-11-26T09:17:29Z"
+  },
+  {
+   "id": "2069577",
+   "edicao": 11677,
+   "data": "2026-11-26",
+   "tipo": "rescisao",
+   "alvo": "contrato",
+   "titulo": "MINUTA - EXTRATO - Termo de Rescissão Consensual - contrato 2024.000040.46101.01",
+   "orgao": "Secretaria de Estado da Justiça - SEJUS -",
+   "setor": "Contrato",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2069577/11677",
+   "visto_em": "2026-11-26T09:17:29Z"
+  },
   {
    "id": "2068292",
    "edicao": 11672,
