@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-26T15:18:09Z",
+ "gerado_em": "2026-11-26T21:17:44Z",
  "ref": "2026-11-26",
  "desde": "2026-10-04",
  "estados": [
@@ -8,35 +8,35 @@
    "nome": "Alagoas",
    "eleito": "JHC",
    "partido": "PSDB",
-   "total": 167
+   "total": 168
   },
   {
    "uf": "AP",
    "nome": "Amapá",
    "eleito": "Dr. Furlan",
    "partido": "PSD",
-   "total": 53
+   "total": 55
   },
   {
    "uf": "AM",
    "nome": "Amazonas",
    "eleito": "Omar Aziz",
    "partido": "PSD",
-   "total": 192
+   "total": 193
   },
   {
    "uf": "MA",
    "nome": "Maranhão",
    "eleito": "Eduardo Braide",
    "partido": "PSD",
-   "total": 90
+   "total": 91
   },
   {
    "uf": "MG",
    "nome": "Minas Gerais",
    "eleito": "Cleitinho Azevedo",
    "partido": "Republicanos",
-   "total": 417
+   "total": 449
   },
   {
    "uf": "PA",
@@ -50,7 +50,7 @@
    "nome": "Paraná",
    "eleito": "Sergio Moro",
    "partido": "PL",
-   "total": 252
+   "total": 263
   },
   {
    "uf": "RJ",
@@ -71,14 +71,14 @@
    "nome": "Rio Grande do Sul",
    "eleito": "Luciano Zucco",
    "partido": "PL",
-   "total": 355
+   "total": 361
   },
   {
    "uf": "RO",
    "nome": "Rondônia",
    "eleito": "Marcos Rogério",
    "partido": "PL",
-   "total": 106
+   "total": 107
   },
   {
    "uf": "RR",
@@ -92,7 +92,7 @@
    "nome": "Tocantins",
    "eleito": "Vicentinho Júnior",
    "partido": "PSDB",
-   "total": 223
+   "total": 224
   }
  ],
  "temas": {
@@ -106,11 +106,744 @@
   "fndr": "FNDR e reforma tributária"
  },
  "contagem": {
-  "total": 2356,
-  "medidas": 751,
-  "equipe": 1605
+  "total": 2412,
+  "medidas": 787,
+  "equipe": 1625
  },
  "itens": [
+  {
+   "id": "3785f7a7e669",
+   "titulo": "O governador eleito de Minas Gerais, Cleitinho Azevedo (Republicanos), reuniu-se nesta quinta-feira (26) com o presidente Luiz Inácio Lula da Silva (PT), no Palácio da Alvorada, em Brasília. O encontro teve como principal pauta a renegociação da dívida do",
+   "veiculo": "Instagram",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5HYVBRZjlzaTlPYk91bXpIakk2OEJNN0NBV3h1STBZOWJpalJjaERCdE9LUVpuUGV3ek5sX2ZWdFRydVpENXZmaUt1Q043VEdORlE?oc=5",
+   "data": "2026-11-26T21:13:36Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "716743eb563e",
+   "titulo": "Equipe de Moro no Governo do Paraná já tem 8 secretários confirmados; veja quem são",
+   "veiculo": "Ric.com.br",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOQ05KdU8tSGo5SXNJby11QWpjRDdxY0dDWW9nMlV6SU5RLVlMdVlsamJCWkF3ZXVWX1VLQTlXMktJNFBuWUV2OUt4S0RHWGk0aWYzaXN4dUR5WFRYVmZpLTZvWXhZQnFmcy1LQlNzT0NmdUl1WnQzOTBKUnRQTDkyNkZ6THNjQ09N?oc=5",
+   "data": "2026-11-26T21:05:48Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "0a230914457c",
+   "titulo": "Lula recebe Cleitinho no Alvorada e discute dívida de R$ 188 bilhões de Minas",
+   "veiculo": "YacoNews",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQNWVLY09SU0lXXzhTZXNRVV9BbmFEbkUzQkwzU3JqOXp3czBpT2xBRmc4SVVtcy1yMWh1ekN3ZGQ5enpvUERoYXRVTVkwcXYtUDE4SFJNX29ydHBUMDNZN0hkeFE3NTBMSXBJMW5vUHFzRHpVTUJ1MU1HTXU2a3N2ZkFuNjN0LVht?oc=5",
+   "data": "2026-11-26T20:50:55Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "2db08980773e",
+   "titulo": "Lula e Cleitinho debatem negociação de dívida de Minas Gerais",
+   "veiculo": "Agência Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNWkE1bkdoZ3ltcTA1QmFPVXlRRzFMbWpUUjNTM2UtUDczVVdGTXBIa3AxNHoySm1ucWJTaUF0U3UwMG5Da1FaUl9sRWNhWjRUQXpBNGpJSFEyQnFORjZ2UWJoWnRIZ3djbEl2WklIZGhmcVB0YzRsYlB6RWRfLVUxNXF6VkpaS2tzSXlwTTFRb01pQnpyY0l4MjlxbG80NjFmc2Q2NkRQUjFfNm1YTy1Kc1BkU0ZRRFE3ck9B?oc=5",
+   "data": "2026-11-26T20:31:00Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [
+    {
+     "veiculo": "noticiarte",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPNVNnRmM3ZmhGRnRZNkM5SkxZekJocmhBMGU4a25McjVPaUxuYjV6N3VEVmxMMWEtaExxTTBkY3p1QVpJVjNoY1ppUVlBdERMUTltd0JOUzV5V0JMcWdoNWMySlN3OWhQN0Q5MG5NcGdlb0M1aFRwdXZiVGJOQVRvTVZCV01iZUtMRWw0RFNiNkdodw?oc=5"
+    }
+   ],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "a589339a62e1",
+   "titulo": "Governo Lula e Cleitinho retomam negociação sobre dívida de MG",
+   "veiculo": "Poder360",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPYi1FLTdsRnNxRm1kX3ViclZTalBKZGhnbm42d3BZTHpZdmxaN2FIcm81dWJzWnppYTJ3anJwdDk0UTNlQ0hScUtOcXFUTl8weWl2V094Uld0NWFNYUM3VFJzbXk0MzZCWGUzUV9MLTA0NmVWV2ZwZFBicEZjRXp4YVRONmhZbVZGTFp4T29zYWNOY1o0c1gxenViUU9JcHhfU1BUZUhxZEw?oc=5",
+   "data": "2026-11-26T20:25:16Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "38262d68e1a1",
+   "titulo": "Clécio sai do governo, mas quer deixar gestão da previdência do Amapá 'trancada' até 2029",
+   "veiculo": "PlatôBR",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMGdQRzBzWFpzcmdwS3Y2cFJ6SkthUVlmMmhjZUxzYmhVd29QTm1iTVdGVTh2UDFCWGNOZTJXVTZtNWtHVHdRNXduWXhyYkkyRFlmZ3dfMGtRS000U2NYYVh6SVJKSkc3UkZkUzNFaVJzck9paWRBcDJEQ211d0cwY3JwZTI5Nl9faE12ZWQ4WkJCTm14RzZuSnA5bHl6M2FqaTBEamVOaEtYUVFJeEE?oc=5",
+   "data": "2026-11-26T20:15:00Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "AP"
+   ],
+   "temas": [
+    "previdencia"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "40a390e300b2",
+   "titulo": "Lula recebe Cleitinho para discutir renegociação da dívida de Minas Gerais com a União",
+   "veiculo": "O GLOBO",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOYm9ibk5WcG1USXdFWkdhOWg1VzVlQnp5cDZzZE14d2VCVXV4S1ZXOFZoZG9TSERSYk5JMFpyVTVWZWJicFZVaV9yLVFsb1BoZnZUM1dERUV6eHFpeURNRDRrVVFnZjd6bnF1anB4TG9qYlJYVjJSdW5wMUdnZmRqdnliVV9yX3diczM5STl1SV81MVZsVlExSGhkY1BpN3A0MGk2UzVDeWVEXzY3RlNUNFBId3M4RTh3UHp1a29lSGc2bmJUOGFVeW5wUDZlLTgxZWlVM2RidTF1SDdhNmfSAewBQVVfeXFMT21xN3hKNUlXdmpCLTRQaDdGZmpSN2tfT3ZJLVpyVFRsZ2hRdmh6RDV0OHdYaE9kMzZHdjdZSGMzeE9oVWRScG9peWVxV1h0OGRGbGFzeFNjemJhQWszVmhyTFBmZl9BSEREc09MbFBEeHUxd0lTN21rbXpCZTdrd1pfVnk0OHFKX3RZQlJrOUhfeGRfZkJ1MExKelViNmgzcUdfbEo1cGl0ei1FYkVkX3F1a0poRkVENXFiUEg3WmVxNFZCQzRlaWgwcFNERFY2cTBoNF92N05VOXJhazhoZmF4ci1UbXo0OFFlWWo?oc=5",
+   "data": "2026-11-26T20:12:37Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [
+    {
+     "veiculo": "Folha PE",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOckN6a1pxcVFaa1hLM0Z5ejJkUFl5M212cy03MER6d2xPZkVrMUdaZGFrT0dVWFJKTlR2UGdkMUwtLWRPczZuQ0pha19NMVRwVV8wMU50Y2dxV3M4d0VPbW1jX0RIbjlSOXJ6aHN3cnNGN0dIZjREYk43bDBxNmtqNVlEeHA0ZHphc21nTktfNzVBWGRidlVTQTA3cVVTSjQ5QWRsWDNyNGVHUno1Tl9fOV9URFjSAbQBQVVfeXFMTnJDemtacXFRWmtYSzNGeXoyZFBZeTNtdnMtNzBEendsT2ZFazFHWmRha09HVVhSSk5UdlBnZDFMLS1kT3M2bkNKYWtfTTFUcFVfMDFOdGNncVdzOHdFT21tY19ESG45Ujlyemhzd3JzRjdHSGY0RGJON2wwcTZrajVZRHhwNGR6YXNtZ05LXzc1QVhkYnZVU0EwN3FVU0o0OUFkbFgzcjRlR1J6NU5fXzlfVERY?oc=5"
+    }
+   ],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "9fb467565740",
+   "titulo": "Ex-prefeito de Farroupilha, Fabiano Feltrin comandará secretaria no governo Zucco",
+   "veiculo": "Leouve",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE52NGxpWGdCTzk4RUk4NHhScUpoRVZsdFRTZXVzS216ZkRJOHFyMHRPdnByNmJjeDcyQjFJQm51cVRxWGNrN29yNEpJMmk3aVVBd0JQOUlfMmNCdG90Z2pMMEk0aER3QnowaFpRZkxB?oc=5",
+   "data": "2026-11-26T20:01:37Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "5922976b3e54",
+   "titulo": "Em encontro com Lula, Cleitinho pede acordo sobre dívida de MG e convida presidente para a posse",
+   "veiculo": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQOTg1c3Z3Q1dzOUJFeXhpdlowRENiWTI3UmtkNFpMcGxEbTdWajRubEZfN0tKWmtPdnFwUjlhS3haSUNNcUVTcGw3SnZmbVJlUklVTlZ0WnJOekVXOWpmRkNxbWlqS2ZZRFdlb2ZkeS0tV3Zzdnc2RnFkeGF6OXRqcHZXWXNBakxuWlJTbWtWR0VJbjJiZmUzeHZVSVhCOHhIQmt6STVyeUxSX1UtUk5nY3RoWlV1c2h4dVRsU2ZRdWFkb1RFMkJMTTBpWTfSAdIBQVVfeXFMUExLWktKa2JlMFkzalZSUWpwX1ZzSDBoV0U4ZHhFVTZwNG9LXzNZOVhvTnJfMnllY1VpNWNqTV96MlExR0lSLWs5T0lfb0diaFZLZ0E0NlNuZ1FQcHNMRlgyRUxyejV2THZjR21HSzdubjlMMkJmbThISHhuRFFVYzhaRTFXZ0M2ZGlMbE5aemtqb0dSbFByUW1FT0xoSmFwVDY1MUlhSmVqZmtuZXpVY08ycklzTWxQRnZCTm14TE1ZZm94dVRldW85TnNnUFRuWWF3?oc=5",
+   "data": "2026-11-26T19:57:54Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "0f73dc21ec60",
+   "titulo": "Cleitinho se encontra com Lula para negociar dívida de Minas com a União e convida o presidente para sua posse",
+   "veiculo": "Diário do Comércio",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9aWmplb2o0OGRPU3ZMUnNtVkIwYUxhVFFqbURzU0lKZXBlODlUNWNQdFhaTWxxcklrUkxuMHZseEFjazNXdnlLMkxEaHQxaVR5dEt0cHZ2N1hsT1huUXhlV2V1TWpUazhaVU8wMGhRV0ZaSko1eWdtUw?oc=5",
+   "data": "2026-11-26T19:46:00Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "e86c09a336f7",
+   "titulo": "Sergio Moro anuncia médico com participação na implementação do SUS para Saúde e nova Secretaria de Governo Digital e IA",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWmpxaV92dHpyMkdRQ1U0bVo5aEJ2XzFZREc5MERiaVVNV19reFJzX2d0MVNMbEFFLTBkZXhuWFBpSkVBa2E4NG1PNEpZWUJ0cWRrWTNteXBOZVJEcFJZVHJydko4dFF6M0toZ1RQY1JiR0lrMXIwc0x3eW5rTDRPMDlLTjNqcUxJYjNtb01Bc2NoWkV5cnFMZUo2a9IBqgFBVV95cUxPZEN6bUZuQ1BDRENLVnhmSU9STWpUVUZhQkNkenRqcjRCV3JkVE5sY2FNTnpDelhZaE5WUWxZZ1pIT09kaUlKRXdCYlpKVFZvWnFvLXlzQXlBSGJod3g2RnNjR19LbVVpRmk3T3E5Y2FsZ3JTT3Q0bDNEUGhBNTdmc2xoZWpYel8xc1hpdF9KVXpsTkdXUVUwei1yRnhUQ2NSbFZzNkJDcHk5QQ?oc=5",
+   "data": "2026-11-26T19:38:15Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "7eaa332da490",
+   "titulo": "Cleitinho se reúne com Lula para discutir dívida de quase R$ 190 bilhões de Minas Gerais",
+   "veiculo": "Por Dentro de Tudo",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZTctR2VCSlM5ZWNSVmpJMFZoMHI2azR4MElIcm5PdExxX0Rja09ZOFAzSVN3ZThtVFRmWGtTR2MyRnBOUEM0YUg5SF9LRTdtSXhmX1Zxc1hjTFl4YTI5NmctcXB4WnJqcVowd0lxNlhuNDZ1NjN6T0NhV3h1cElOak9BZkRtM1B6YTVYMXhyajJaLURSVlJ5aDNmMldQYndQR2lqVEI4cDlqUXhHQ2txNlJzd0ZTTEhnM2NN?oc=5",
+   "data": "2026-11-26T19:34:00Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "767cb3b7741b",
+   "titulo": "CGE quer auditar contratos da Educação no governo Cleitinho após análise ambiental",
+   "veiculo": "O Tempo",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxORXp2cHlvOU92eTRlUDlJaHVOeG13SDZJdmMyckx3UlNNdVoydURsZ19sMXF6M2daNUV0NjlXeVVXcTdhUWowNnRaQlZGNHlDNHQ1VFpUVUgzM082U0p5NXE3TVl1dnBxMjNBa3JsRE5TZDVmSU1NeWt5Rm1FZTg0SlBVclZWbWpOazdfSUswV3dJMENjVVdRc210RXdJNmRfM0FUT2lHbTNNTFFfeWdoclh0UzlYdUxHN0tYNXJlcWR5Smx1dU9NSnFlZUdpajkyVUhTVw?oc=5",
+   "data": "2026-11-26T19:33:54Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico",
+    "contratos"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "66c116c13259",
+   "titulo": "Cleitinho diz que teve conversa 'cordial' com Lula e que vai apresentar nova proposta de pagamento da dívida de MG",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNN1FhUTdZNXRKMkVVWURnV185cXN1RV9idTYtUjlITnktWXQ0ZGVRaE53QzJHN2RWN3E3MnhBM0pYZGhwc3FoMDFBR1AtbUlmWXJuemxDLWZPMkdkVm5WRlhkaUtINlo1M2FQQm0tVXN4TTEtQmh5QUlHSzhiaUc5bFVsYU1CRWh1OGxGNmszcDNhT1ptMzBHdWU4X1JUczJGUUFkd0V4ZnlxaTBsZlJ2NXZDRzEyNk12ZzJRaWJ0dTl4Qkcya0HSAdQBQVVfeXFMTUowa2szOXlkV1ctQnZOS0ZySUNjVmtieTkzcmNjN0hKc1kwal9VTGNmNnIyTERUVFE3dHJiVmR0RWJiVmw5cmo4QVR5eWJVZ0lpYmdjZ2dJYnpzbFlOX2xmNmZjVE9iNFA3RDFxQnM5Nk54Zm9ZNGJyOHZydzdXalQ5cURndkk3VkJxVGxGaFpSZnNOV1Q2WlJ0aUNDOE1jc19xWEtWR1FPczhlU1Z0a1J6OEZOVTVPUE1EQWVtZEREcVdLdDltNWNqREwybE4xWE5LMTc?oc=5",
+   "data": "2026-11-26T19:30:05Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "e55d3ca3efaa",
+   "titulo": "Contas públicas – Cleitinho leva a Lula proposta para renegociar dívida de Minas",
+   "veiculo": "Patos Notícias",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQSTJrbkxaRnlxQWwxZHVwYUFwYndycVktNjZDQlo2cFdDWGRsN2RSQlRfd2hGSVA4OE9BQjFUaklnZk8wYXpvMGd1ZF9ZMVJ3NjFISzluTTNDSGpnS1JmWThSYjJZZnplN0tWT2lSY3ZEOWxCS3NFaS00dVdoeWx2M3JzclVhdlhzVmJhXzVUTXNZYS01dmRV?oc=5",
+   "data": "2026-11-26T19:20:00Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "b94f75eb59df",
+   "titulo": "Governador Eleito Zucco anuncia novos secretários, comando da BM e direção do IGP",
+   "veiculo": "Radio Fandango FM 102.5",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNTWRpblBwQ3VlY29oaEtlb1JVeE9wSk5CQUc3b21seExiNGl4NGNxX2s1V1hhMDJ2dHVLNnZ4VWw0bURmRmdIemtqRVpVQmp1bkZ2cmJtbjd3MndwaXRGbEFya3RqZVFEWVItclpQM25IM1N1Y0RVZFkzRjZJT245TVpkOGhodzkzQUtrUFZjZjAtekIyYUI5dW8teDNsZ0lldDZ2aS1HMXVRZXBRRHo0NTZud2Y3OWV1UlNWcFNZcDFPUk0?oc=5",
+   "data": "2026-11-26T19:11:48Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "7232574b9d16",
+   "titulo": "Zucco faz nova rodada de indicações; três secretarias ainda não têm titulares nomeados",
+   "veiculo": "Jornal do Comércio",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNWkFzTVNmTTVXWVBFTFdVWWRxMGdaQ2VwMkQwdE5OSVptTGR4UTFkWDdBSzFtZFphOEtQdUs5Y0lqQXZUcFRmak5oa1RYQWxraUhlaUFvdU13OU9QT19SM1B6R0EyTWs3SnRHWjJsdVNjTTNlUFM5S0YxV1hld3Q4aFBnM1M4WGZ3VDJYSzJjVmJNUWp5bzR4VWdhUFJ1RkFwXzhEQkRlV0R2dnViOGpEcUVsRngwZFVFQS00SldxLU15aG9TcXZieHVpMjRYU2ZTbTEzOVNBV2N3SmNHOWFyejFR?oc=5",
+   "data": "2026-11-26T18:58:02Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "c458bf9c43c6",
+   "titulo": "Ricardo Akel será o secretário da Saúde do Paraná no governo de Sergio Moro",
+   "veiculo": "Rádio Cultura Foz",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOLWVybWNZMXYzUnUzcDgxNnhIYUVBbHJSdDlQUS0wWWttN3VjRFc2cTdkeGtvNVcxZkY3ZExBZFNwWkQyNFdjbXFKeVFMY2xTTGR6Y3FabEJLQXhzNkFjM3NmM1VUTVViSlpNRl9jS0RNcUdCODlhemtGTDJXZ2s4VzZZQ0NfRGoxVlNFTzJTUHBCU0NLOWpyeERiZ3Vmbjl5T0RIdTdVeENIMk8tS3pYLXRQdU1fdk5jOFlzeUR4b9IBxAFBVV95cUxQMnNGX2F4ekR1Y2FQekxUVU9xR2gwWW81bkxRQ244TDVZenpZVlpUcmpGWS1kWWQ4WGR5aEdjeDd2WkhGQ0FEeVlNZ0RQeWhqSVhKRXRqUVJLNXdlcGlfeE9RRGR4NjdyWUt0SV9uekp2b1F1cWRmMVNDeGNIQUVKQlBpWmY1ZDJuY2l0UFdmNEZ4cFptakRhUDFoNjRISDlsU2s2MTQ1bU4wbjBhbmRyY1RLbC1RY09XUGM1SDlxeUVOdDFP?oc=5",
+   "data": "2026-11-26T18:41:11Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "5d03f3b954e1",
+   "titulo": "Zucco destaca crescimento econômico como prioridade da futura gestão no RS",
+   "veiculo": "Radio Uirapuru",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQOE81Q2lETU5kWkVYeFYzYlB2YTAzNFlDd0tXaFFVaktDcEk1SDlYZm1OS3lqRm5adzgwQUlVM0NqTWdjSHRianF5TklMRlZpOXpVM1VNZVRtU0JWV29mRmhIbWlnS3kwRWlhWUdIVFJjZ016ajdLWlRJaEc2b3dEajhnV3pWY1ZGcy1rSWhEZWFwTzl2NEJGU2pPQ0diTFR0S2hz?oc=5",
+   "data": "2026-11-26T18:39:00Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "c561118d935c",
+   "titulo": "Cleitinho se reúne com Lula, pede renegociação da dívida de Minas e convida presidente para posse",
+   "veiculo": "Agora RN",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPRG9tYUlYN1BNV2lYZXNrZ3pVMVFpYVBBOTRjYTlObzdoMkRDcy1HeEtEUVA2QTZMSVNZeXlrYUxxTjRTYXdIWE5JY1dQWkNvZTd5bHFwc0lFMm9SQl9zRjBwV1dHbXBiMkI4S251UExRUk5vMnNLWndtU2lPUHZ4bUVB?oc=5",
+   "data": "2026-11-26T18:25:37Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "43ce88e5be07",
+   "titulo": "Os órgãos federais que vão conversar com a equipe de Cleitinho sobre a dívida de MInas",
+   "veiculo": "O Fator",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOaFVRbm5CbUJvR0RfX1ZaTENPVDZGN1ZrdXFBbl9qNXdOclJXTmVtSDFtUlVfamJraWRpNmp2UHJFbl9oZzdURXozaHJTd2xpMG9SRGtDd2NBWDZNT2h0SzA5NVctb09PRVNFaVBtS2VKZnlfWlNId3ZOVnJGaE1LenJEMnZyT3p0Rm9Ua0JQY2p6WVM0SlYtdWNoY1NneXZPM1BPZHdnZzVFYUpRRHc4dmxjOGhvVWxTaVVmdg?oc=5",
+   "data": "2026-11-26T18:18:00Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "aff4f0411ed3",
+   "titulo": "Cleitinho se reúne com Lula, convida presidente para posse e promete solucionar dívida de Minas",
+   "veiculo": "Últimas Notícias",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBWTUtUeUV0S1UwNVI2V3doenY3X05BR2Y5b2k1RXV0Q0hoTDAxMTd6UnlnYnVQSFpKV19maTdDTXRMVUM0X21SOXNYLXkzUlZPZGJVRmY3S2tYTko2VHgtQzhnSzdJWGNKMHlQcXhBaw?oc=5",
+   "data": "2026-11-26T18:09:23Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "fcd7a3d27d76",
+   "titulo": "Lula recebe Cleitinho e discute renegociação da dívida de Minas Gerais com a União",
+   "veiculo": "OpiniãoCE",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYi10TDhLWjVFd2xGQm12cU9QZWF6dERDMzhyVFBIbjYwVDcwajNnWkFYSzVKdzJvN0cxeWVVU1I1X1o2Wm1qNnowdXdxYXJzV0xLa3M4bjZvaGRSekozYTdnUWJPa2lCN21QdzZjRXFvRHJmMExqZzJ5cVhENGh2NXlRRTJEUGFTZWRCanN2R3RTcjAzMVNRNnNoSVA1WmFGTkFSN3kxaHc1Qi1uUDFvYl9nVVp0WkRKN0lodzVPa2lIanFQX0oxSWliSUE?oc=5",
+   "data": "2026-11-26T18:06:38Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "b49e1124f85f",
+   "titulo": "Lula recebe Cleitinho para discutir dívida de Minas Gerais",
+   "veiculo": "Transmissão Política",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSGJJN19nMDVaZDFLTXlSRkZmNTY2eUtkaE85MGM5ODc4RndaY1UwR0dzM1B3cWtCUzdKQkJWV1MtUzVxaTl4SWxGeGZScHVMejFiM1Z0aTB4SFFBYlM2VWctNkp6M2NJSWt4eFdtUFlhM3FLU0RMY2tvdlp2UDZlVXpodGUyUlhnTGdPY0VLd3RSbThJcVBIcmZGOUFfcy16?oc=5",
+   "data": "2026-11-26T18:04:00Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "8fa9ffade2dc",
+   "titulo": "Lula e Cleitinho se reúnem para tratar da dívida do governo de Minas Gerais",
+   "veiculo": "Jornal Brasília Capital",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPYUI5YzZBVDI0Y05tMjFXbFdaUzN6NEZyanJDZ0ZpMmxEdWo1NXloUmo3SkNwbEU4M2hHQ0swbjc3RVk3LXUya1lFSXk0WHRsSE4zOHdHdjZ5UkM5WGpaVUZvamJsWi0xcXFXTTJpem5wUmR4NG12UWhtN1RacWpiUGs4ZHFia1ZaZlpNNzYyX1IyUTVWNFFnd1Azc2tyTlhudVJlWQ?oc=5",
+   "data": "2026-11-26T18:02:00Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "3f0b9c20192d",
+   "titulo": "Lula e Cleitinho discutem condições de pagamento da dívida do governo de MG",
+   "veiculo": "Band",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTldmNDZmRVNWU2lUYkE0UU81Vm5MTFJuZWFyWnJ6ZjY5M2xjb0o1eGYzWjBfblEwWTJRTHB3QmpMSmJiYy1uRGJtRjJBMVBDejFfazctSlRYSUhPaFJ0UzF4WjF4WGJ2WkNuVC04N3lwb0FrR0JMQjZiUURadTBGYmExQ3pVZ1k2dDlSd0dTSUJQYlQwSmJqX1BGVURmZWdMYXFOcld2VHp5Umk5?oc=5",
+   "data": "2026-11-26T17:56:09Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "6067798552d4",
+   "titulo": "Deputado tem apoio de Marcos Rogério para presidir a Ale-RO, nome do Líder do Governo definido? 1ª secretaria entre dois deputados do PL",
+   "veiculo": "Rondônia Dinâmica",
+   "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQb3FfWVNrMzNkQUkySWtpM2hkWVloeUxhUlc2TjFqSWRpaUIyeElMQkJJTHBuLXpLUnY0WnJBUU9tbGZhdXZJc000Wl9lWWtHcHBHcHZSclZ4MEVJY0UwczJ4TEp1WHNYOEstbWhTbmVRYlJMd1NLSFRtNkt3OWNOMGxxc3M5cnQ1Nm5FdURKQ0oxS2s5cVIwVTdTWERKSDZ6N1pQTmRsS2dTaWNPa3RxUThqQkRuc1p4aVkya1EyUHJNVVpyVjcwcV9QT0plc1gzWDBuOE40MDBXSmJSdjRhRGVnb1pCWGJ6azA5ckpmdUQxQkpDTGRIVU1Ta2hOZWpjRHpDeEdiQ3JCZ3RoX3RUMjZlMHBKQVhzc1FmVVRzRExQdw?oc=5",
+   "data": "2026-11-26T17:52:44Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "RO"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "8264e45328d3",
+   "titulo": "Após reunião, Cleitinho vê aceno de Lula sobre dívida de MG",
+   "veiculo": "SBT News",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWE4xTFJVRzBIeFlSSkNBZU51QkI4QVBDMzJHellNZm5YTTJUTm5DWGt3aEM1MWVyRExESW52RGpkY2ZZNUNBbXZDZTFDMllkS1N6bnJ1R3Q5UWtQbi13SjYyOEdoQmRoeUE4R29fVloyME9lWnBoWE5KYUVOVkpoVlo4UG5HRFp4WUU1QllXeHZ3SEIza2NGa2xvWVl3ZG45NU9QRg?oc=5",
+   "data": "2026-11-26T17:48:03Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "8e3f79db3ad8",
+   "titulo": "Zucco anuncia Marcelo Moraes para a Secretaria de Governança, Gestão e Parcerias",
+   "veiculo": "Folha do Mate",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQXNsUlBKUXZ4YWE5YkNicVlLY3NDbzNma0JhTVBmcEVTbXBtdU9NcEtMazFVam9MbUdUTHhtOEQ5Q0IwQXJ4QmtLOU1USHpTU3BXRlRqbUNPa2EwS1NJYUFPaTJvMVdhUlVOM1JOWDhKN093cTR5Nzhab2N6bXBjaGFUR1JkbWY4NENiWG0xdUFKLTNGY2dyMmpfMHM3eGFDelZmaHEtNnJpcHhfdHA2YjExOWlMWWFzbG9Bb1dPSQ?oc=5",
+   "data": "2026-11-26T17:42:40Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "609f277781f4",
+   "titulo": "Após reunião com Lula, Cleitinho diz que proposta para dívida de Minas será reavaliada",
+   "veiculo": "Rede 98",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOYXp3clBVSG91VHdLM2dCTWd2UEZQM29wZ25VRk00MFE4QkFZMUlBNDVwT0lxY1NzbE5NUmdHS1FTZDBrMWlRYmg5NHpFVlF0bmZUb0RUOGp1RTFERFFzcXM4R0lsY2pGeC1oUGM1RkdVNWJkeGkzVmozVnNqUlFEQzMyUFhUVzVVaXd1U1VYNERxLTlpNUN3dTNBSjNNVndnVEFWeHlkOEZpeEtiVzJDMTlSTTc1WGhtUERxYUdheVM4VEE4?oc=5",
+   "data": "2026-11-26T17:39:00Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "bb51039912cd",
+   "titulo": "O governador eleito de Minas Gerais, Cleitinho Azevedo (Republicanos), se reuniu nesta quinta-feira (26) com o presidente Luiz Inácio Lula da Silva (PT), no Palácio da Alvorada, em Brasília. O encontro teve como principal assunto a dívida de Minas Gerais c",
+   "veiculo": "Instagram",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5xUjBHTjJhaUVGVTZXRzhyY3ktUnNyMUJwbE5WaEd5WmdsenpFelY3RmZoVG8yYVE0azNtNGVGTVNXNkV0VG8yU3FjbDFTVEExcGc?oc=5",
+   "data": "2026-11-26T17:36:11Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "cb14bac1797a",
+   "titulo": "Sergio Moro anuncia nova pasta e mais dois secretários para o Governo do Paraná; veja quem são",
+   "veiculo": "GMC Online",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNX2dOd1p5aGlzVjJlRy1WakJCaXdNWE8xQk5pRDc1aE00djB0dFg0OFpRVG5Cd3pXWEVSaTlSWThuU29SWGtyd0Yxczc4RnRSMm1iZlZmRzlZSnMzVXFGV0dLUXF4ZWhGcTlyREdpZ2IzcnQwN3BBNUVuMEZZTl96VXZ3Y3FEUFplLXVrbDAwa0V1QVE0VEk0VW1DSGR0YzREVkdUcW9vTGNHSk5KQnNsQ3QyVTNRN3FFenJaZm1LTHNZR1ZBS0daaklmdWYwMHl2a1800gHYAUFVX3lxTE5fY0tsZXRjcGZMMHExczRSWVJVTC1JMXZjWmRBN1Z5azZlSURzb1AwZE14X0ZmNDlqSnZmZEluZHVpRm1iNElsNGp0TDF0MmJieFdCOVA3OTZrNnNFX0E3RXkzY2duY0FIeXpvSEI5bEo4bE43VWxwOEpTSDJ0eFpMVDZaZTA0eFJIaWZKWVJsVGU2ZXMxVkxhTnNjZngydmZ1VkEzWlZBX1h1aXdIaWFYU0RGVW03c2c0ZFFOSDdtQjFicTB2LW1jbDlwbm9kUVg2c3AzS1lqWQ?oc=5",
+   "data": "2026-11-26T17:33:00Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "18e4c1554023",
+   "titulo": "Após encontrar Lula, Cleitinho diz que governo de MG se omitiu sobre dívida",
+   "veiculo": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPLXVRc3dGVXppSUNJN0RGMVplTXUyRzYxX21DcHRKd25OZjNuT2daLUlmZmlBRVNTNHVXME1MU0NGRXd0T09kT21yVmE0NHN6S2J2S0paUkQteFZBZENBY1J0bVpfYU5lNmc1QzlqendrdDd6dHlUd2FDamxyMDhMNG9QUlJ0OUVOdXpDUFRPLXRoaTJjWUNiOG1QYnJXVXQ2aldIZ090WlN2T09VenFkRllPTQ?oc=5",
+   "data": "2026-11-26T17:25:34Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "9c8dcbbfd166",
+   "titulo": "Lula e Cleitinho Azevedo discutem renegociação da dívida de Minas Gerais",
+   "veiculo": "Portal VV8",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNMmh4MExwT0Jxcm1WNzNrWVlSTUswSU1QZ2JwVjk4RTRPU281bnpaRXBuS3NMdUdrNnQydnd3UXg4R1J5VDdJQTVtcktqaXpFZThVT0dSWmRtcVVpTkdxcG9aQmM3Qm9fYi11eXlZaktoazFVdVh5ZWJkbm05NnpHbGFPTmhybUh1TnZUcGxIWE9nc1ZJc1dCY0YzUFJsRXVGRkVLWUxwV0RIaEpjRzZyMg?oc=5",
+   "data": "2026-11-26T17:24:15Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "919e78de42cc",
+   "titulo": "Lula recebe Cleitinho para discutir renegociação da dívida de MG com a União",
+   "veiculo": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNWTNzTU9jWmk1dXdXeUxqRnRrdW9ZdG5UaTNPMV9LTTRhQ21Zay1iY2Z2cWpNbE1penJ6MXFleEdxbzFBZ0hKdnRkc0dWTG5HMVZtSXRqaWhvUnNhRkt1eEFnZXdVM1JGV1ZtWkhYU0VmTUxDUXZ4ZnZaSVlXdG1Lc2hmdUU5ajFvYmtzVW4wVWM4eV9kcHd3TXlTV3J5bEJkay1YZWI4YTR5Nm1wVEVGdG56TFlEQdIBuwFBVV95cUxPaVE0Sk1rNjN5QkZnTUpvcndYLUl3MVhMZGtsejdJcUFDUmhwYm5sM3FCbFJfeTFjUEU1RmtxT0stUzhWUUxzbl9mejZlZ2Nmc3VzdVBVM2xEZkdzQUJ2RXY4Z0tRb3pqU0hVcm44V0diZ2w3TG40YVJIcjZxM3pwMFJMOXlZTzVRdXRqV3l6TmNNWE1QRWFYYnVNYjlTQXFNNXZrQkVqNGVrMGF0a21KeWRHaERuNkpZWVpj?oc=5",
+   "data": "2026-11-26T17:13:00Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "f48005931996",
+   "titulo": "Conheça Ricardo Akel, novo secretário da Saúde do Paraná escolhido por Sergio Moro - aRede",
+   "veiculo": "aRede",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNDVvaldlVVd6eXZDdlpLYV9YYnlaekJvX25hS05JTEdVXzd1MXBkU0Z5dXdaZ0NHdFZGRWQ5VzJza19xMjVEQ1Q1NGlzTnpaX0hzN3o1VnhKaWI1S2tuRjFueWZGWjZoN0VLSmczUFJiSzVIREtMTHVXMGtlT1BxVXh2dkxEblh1d01kVUZnM0hxLTI3V2k0NnVPbTdYaTQ5NHhZVW5VZ0IyNEI0R3FXTjd0cDZqd0VL0gHAAUFVX3lxTE1JbFpxcEtyTFY3eUliMEVVYm1QaHZpZ3AzU0duVmxDajhLQzhFYW1Uc3hveFNDOURRenpvR0RLclFNV1l6bTJsenpUQUVWZFNNSlVEUktvaEJpSEoxaDhuN0JLcGNnN3JfaHYwemloZzJhSVIweU5PWmt0TDB0YXoxb3R2LUZFVWs5bXZJMHVtenptWWJ5TFNXZW9XUmZEMU1lRldaMFdUb0hIZ3BqbmlzUnlRbUZrcWY1LWVhMnBzZQ?oc=5",
+   "data": "2026-11-26T17:06:03Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "3afe56f83819",
+   "titulo": "Cleitinho encontra Lula, pede renegociação da dívida de MG e critica Zema",
+   "veiculo": "Valor Econômico",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQTHJ6b0hHZTNuU3FQeVlqbmJhN2xmVGlWVndHZnk2RHRseF9DUnBYYUJ4aWlBX0pNY2U4OVd6OUhLcmQ3RXVYX1p2RXdXWVNzWUtSeHppX21IeTFaOW83eHctVHRNMDM5bXlzandHRDlrZ0tzMTdGYVNqeW1seDZ0T1dfT1Jmc0liazI5Z3FWY1RHMVk4Z090M3dkbjRXa3JJVTVRUFFXdGRMUkFSRnVqUm5oUVhTb3gydW1OWGJPcmVoWU1ZMk5WeDZDMk1fZzQ0TUNWTNIB1AFBVV95cUxQTHJ6b0hHZTNuU3FQeVlqbmJhN2xmVGlWVndHZnk2RHRseF9DUnBYYUJ4aWlBX0pNY2U4OVd6OUhLcmQ3RXVYX1p2RXdXWVNzWUtSeHppX21IeTFaOW83eHctVHRNMDM5bXlzandHRDlrZ0tzMTdGYVNqeW1seDZ0T1dfT1Jmc0liazI5Z3FWY1RHMVk4Z090M3dkbjRXa3JJVTVRUFFXdGRMUkFSRnVqUm5oUVhTb3gydW1OWGJPcmVoWU1ZMk5WeDZDMk1fZzQ0TUNWTA?oc=5",
+   "data": "2026-11-26T17:01:58Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "f1b500290c44",
+   "titulo": "Sergio Moro anuncia secretários da Saúde e de Governo Digital do Paraná - BNT - Boca no Trombone",
+   "veiculo": "BNT - Boca no Trombone",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQVzdFV3Rkc1Jtdjd1a1lnTGxsTVc0ZUtrOEpndU8yTzd4ZUxpZGtrTU5YLVRzRzdSTmFxTkQ1Tk5zbWoxdHhxYnZXdWtESGl3RlF6X0ZObG5OaVNneGRQQjlOVWpyZkNnYXBqMzdTM1dLcGNhb1BwZVI3dGVmOVNrZml4YlJENkNadE13alFaS1E1akxxM3BQWW1YOXdMZw?oc=5",
+   "data": "2026-11-26T16:31:00Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "53e0f6e8edc3",
+   "titulo": "Como foi a reunião entre Lula e Cleitinho sobre a dívida de Minas",
+   "veiculo": "O Fator",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZWdxQVpiWEsyUWtnMlRCSWJWRlVyQlpURWNSMjRjRFFsUlBlUHNjY05PX2xscFFoNXpxVC15bGdmbWJ0dXdvSXYwaWtxeXd5Z0xBZW1xUkNjcXpuLVQwLWZ4Z1BSR2FYYjFZVUN0UEM3RkNGX3gtZXBZLTBVeERfWUxHWlpCdWJZR1RiMldKRGJZa2ZvSTdkV2ZlNG8taDVR?oc=5",
+   "data": "2026-11-26T16:28:00Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "438340adf26e",
+   "titulo": "Cleitinho Azevedo discute com Lula alternativas para dívida de Minas Gerais",
+   "veiculo": "BH 24 Horas",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUzRCcThfLXVxanpHanBZZ3ZmRU1DelJZbS1ZZUFxaUxsa1JqWC1aQW93RkNhNHcyY1FkMmJ2QkNBVGtFOTE1cWZXSU1mTFJYdkVBM1VDVjhtakF5VG9JZEZWeVNYZFQ4emtfRV9abVNONVZ6d2NObTBkaWdsczFUa0VJNjBuUTRwcmhFTDVJTVBFSm1XNk1DUkhaTlJIeHRhdXhTemx4a0tlcWFOSE5v?oc=5",
+   "data": "2026-11-26T16:24:46Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "01dde39b4e38",
+   "titulo": "Baccheretti confirma convite de Cleitinho para seguir na Secretaria de Saúde de Minas",
+   "veiculo": "O Tempo",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQdE04ekJ5eWdGWUN6TXZCUU11TjZ6QTNIOU41VnpwQWlpNWRkalhYdlFleEZFbkFsa2FZakVOS2VBRFBMd0cxV0E2bzZ4X0JXV0loME1TSVpueVZGN2pCUHljUHVtODhWMHQ4dkhCTU9BZlczbTJVQWNjNlZpaWVEd1RyZzNDQ1lXbERINlhWM0lRTGVZMXBnNEZaMEZhb2ZjZ3k0X1FLUGJvaXhYMTFLQ2lsd3gyQzUxYUlkVEh0ZUVxVk9WVnU5ck1jMA?oc=5",
+   "data": "2026-11-26T16:23:27Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "06e9ba529d90",
+   "titulo": "Indicado por Cleitinho, futuro presidente da Fhemig promete foco em planejamento e valorização de servidores",
+   "veiculo": "Rádio Itatiaia",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQRUd2XzJmdXhWNFpJR1pCNlVDUTNvNHl1MVlTcnctbHAyZmJ4WEZWQ01HTnlfYXMxNnUySXFGbGtrVXFXeEd6eTU5eUNtUkFZM2tNZmJIdTQteXU3SXpYaEQ4ZEFMODZTTlFydndaaGRibGFDTjFMRTc4NmpvbzRNZTdoWm1SdmRISEQ3UDZ2QUd6YUdCeXpFY1dZQllrQWZabzk5cnZsTklzc2NOVlllb09zRFM1bDF5M2JiOGh4TzE3OVkzZ3BWUHhoNHdSeXY5a0VuNEdieG8xWXU2U0E?oc=5",
+   "data": "2026-11-26T16:20:20Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "pessoal"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "eb8b258f18e2",
+   "titulo": "Sergio Moro anuncia Ricardo Akel para a Saúde e cria Secretaria de Governo Digital",
+   "veiculo": "Ivaipora Online",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORHg3WlNDaEpiSC1LTGU5WUp4YzEyWW5hZ3prdWxiTnA2Z2llV3JIdEJrb0I3WngtUmJTSGZXUDlzRmxpT1VXRDBqNFZzZnppenJYQ290N2hhTC1MUjJKaEVIQUJJUHQwUEVDYVB5MDNTQWowMU9QcnRMSlZ4RDg1SUJlNm1ZazlOcFp0NVpZaGpIM21haFB6NnlPT1c0eGU5Tl9uTkJpRFpHLWs?oc=5",
+   "data": "2026-11-26T16:19:26Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "306097ad32d9",
+   "titulo": "Moro anuncia novos secretários da Saúde e de Governo Digital do Paraná; veja quem são os escolhidos",
+   "veiculo": "MZ Notícia",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbExpejRoVHc3MnUxX2ZhTHB0d3BLek41Z19mYXo2cGlrTFFNZmNLZzg0NmxLUlhkdy1KSUx1T2dpWmVuZ3Ayb2loRk9GczRVVkVwRUl3c2ltSTdfTnVVdE02RmF5S1hYOFE3SVZzazF2X2p3cWtzUEl4aXgzNWQxbndZNmZvYWttTHM5Rk53S190U0czUE5kNTZfdXJadkRkUzBwTVMwSmhXaDRLeFQxNTRBNnIzSnBUUGp1Tnh4ZDFXQQ?oc=5",
+   "data": "2026-11-26T16:04:28Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "7759b10381fc",
+   "titulo": "Cleitinho debate dívida de MG com Lula e Durigan em Brasília",
+   "veiculo": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPb00yR2FhOHFIZlpYeEtTMmdscFh6bVhJbHR4U3dLSmpzYWNXcC1SeUl2eWZhQUhTOTBUNXhpdzV3RGxHdlQ5Mm42b2h4aHhGbHpQV0N4ak5GNlZxZDlTOW0tVWtaLTJ6Uk9NVGdIUFBMUnpfMHp5aXhzT2tGbTVVQWEtOWR3QQ?oc=5",
+   "data": "2026-11-26T15:37:25Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "3c014df7ed84",
+   "titulo": "Moro anuncia médicos e especialista em tecnologia para comandar secretarias do Paraná",
+   "veiculo": "OBemdito",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOSVAtVDFOOVQxa0FTQUdaLUlWQjUxMDNleEQxaTBqMnlPdE5ZZjFpbnlGclZfM053MWl3MDc1TGF0aHpYWWRPNDBkNjByRW1fYjU1Y3RHeVBrcm1VY2VfN0JQWmlJMkc5SWxCRmdneUQ2THZMU0F4V1AyR2FFazd3elRCQ0hYczJGNHd3bXdvZU5IRGR4X29kaHFsMi1QUmZ6NW9nRnlfZWZySWZtYTdZYURrMXFXenppYW11cHQxLUowQdIBwgNBVV95cUxQRl94emktLTV2Ty1iekJETVhvcG1xQWZ6cjhnbGNGZFpNakJIVE5BeWxPTjgyWWtMcnhMVU9yVTJPYS14ZC12QlBibHlOejc2SUloZ2Vsd3ZhWTRhSW5reWwtZDFzOGl2SExTMFlfWG9KUFZldEdyOERTek5kZzV3MHBTRXdlUnlmYVRNTjZEaXlLVnFuTzlmc3RjRjFHTlZESmNxME9ua1pCRDd1UlVVLUpWcFdGU0FDcjFiNk9Ca0xJSTVLWWJVYjBIc2JTa05RdERqb241WEFNWUYyR3I0UURQT3ExbklUYXd1RVBNMHdocDVSc08wN2FuWHFPbW9QNllMU0Z5dUpoUzlYRVlaTXJnZzhBMjV6QXRmdTQ1RGplZWhzNWtTaXV2cVFDRXlmR1E0SGxubExWc0s4V0U1SnJwQ0lkeHoza3p1MkFOeGJCUlpwSVpwQlBQOXI5NkZQWUJrZUVFWURLTGROVkxQaV9sVU9ld0NlRzQtNENYUHdNMjF0N3hzWEt4MndwM0cxb3pBMW9RWXRqcXRBV0w2VmZ4MGhlcjlsR25lcVV1UzAtbGpOdWFsUG1KQjdhSGpib1E?oc=5",
+   "data": "2026-11-26T15:26:00Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "aa0decd71f2b",
+   "titulo": "Sergio Moro anuncia novos secretários; veja quem comandará Saúde e Governo Digital no Paraná",
+   "veiculo": "Banda B",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNTVpsbjJuaFBJaHlYLVRrZl9EZmJNLTlJd0lhVGFnOWlReVpocXJjUExjWEZpb1RXNzZ0bkFkZWNackNLTzZqVVI4ZFpUSjhJZlhBd19fQ0JadzE0RlZ5bUh0RE9iWkxZY3VmcENhcDZDaVlaTHBMNkQ3WjFsZm9BOThBX2s2a29SakNKWXhCOXA3aWZCMFZrSTNtZkZNSlF2T1paOFF4anhzbXF2Yjl2US1LVnczNXpYOVVJTXZzMWVLd3FfTFHSAcsBQVVfeXFMTlVva1lHU1VNRzJlSG92MzlBVUhaWWhCWTdzeWFOQ3FLM09QSk53aEpuXzVneUxDZE9QVERYQzRURDVpU0NFV1JEMzZwUXFZY3p4c1hVODlPRktMZEdvbzRvY2xhTWN2VzhtSExydkpHWm1RTWtjaGpNRElEYkVieFlvRV9yVHEwSWlBOW9kVk9CNFFBYm4xUmZzYUQtRlota1ZmOThudmhKTTdNd3o2clNBQW0wVVl1Z09IdEo0djV0d3VqQzJwSHhSc1k?oc=5",
+   "data": "2026-11-26T15:17:00Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
   {
    "id": "81f8b2437b1e",
    "titulo": "Sesau apresenta situação financeira e contratos à equipe de transição do governo em Roraima",
@@ -127,6 +860,29 @@
     "contratos"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "5d89a77f3756",
+   "titulo": "Sergio Moro anuncia novos secretários da Saúde e de Governo Digital do Paraná",
+   "veiculo": "Tribuna do Paraná",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZ3d1UERaZmt4QW1ETy0tQlY0WEFfVXZxeE9nNkZ0ODdCcXJ0YVp2R1c0T1hyYWtiRkVzNEhpU3hZakRtMzl5dFFYQW1BOFdsc1VwamQwWnlxQ3JBZ0RPbnRVbEVadkVRaTRXX2tfZXI0R0lIdHd5SjU2Z1MtSXh3UEVFR3RfS3IwaHFNc2VrZ2lqRlRac0t1dDNoRE5fSWlKMXNKNjdLQWdNNl93a3k5VlZB0gG3AUFVX3lxTE91VlB3TVlCeU96ejJJS3lKcUZkNnpPSDBZUUVNNktKcl9fMW1FZkNtVmhCaUhscl9mSE95T1BTaXE5QmpOdGQ5Z19QQlBKdzRLakViMTdHcE91eUFSYUY2Y2VsTHo5VjNZWS11NkwyZkZUaEl1QnJDRjRSUmRkaGM5YVRVbEJGTjBpQTV0Z2QtVU8yLWNXeXdubnRLeENQYTQxWHhvS01rLVNZS1FSdmZJZG5MMFFxRQ?oc=5",
+   "data": "2026-11-26T15:03:00Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [
+    {
+     "veiculo": "Gazeta de Toledo",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOY1NEbWlTdUxtZkY5OWlWb0poaXR2ang3SUxaWWtjb0VhZ3d4OE5oNGtWZlA4NEhBbTFXLTBsVVlvNFM0d0NxbWNLVWtCYTR0WVZ2aC1JR2VZaVZhdHRuXzJPUWJsRDBHUGZwd2djRUJPOWU0cGwyVFc0bHEwQmxpdUQ5aTdINVhPRGZRUzNVWFlad21jTEhKZkctSUZaRWJVckhZN1lrN0VIUm1z?oc=5"
+    },
+    {
+     "veiculo": "RRMAIS",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPczJYWFhSMl9xOS05ckg2LU1xaFF6X1Vtcms2TFlOclI5ZTFtdGVsSGJnUFRQcVNpcmdMV25HVEg1Qzg0RDEzQWNqZ1FEbDV4RFpOSDQybXFSTEdtaWhqX0ZzZjZMZnRkc0VYeWJKR1NkcTdFZmlRMHFfRjEtcklPR3pVUjBxTFNwMFVOM1NwNXRYWWZybUZlMTUwbGpwVXlfc1E0MTFaYmFxYWNYa1dlRU9XMlFIVVlSY25jM2wxTjY?oc=5"
+    }
+   ],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "8f5b8cc9e361",
@@ -189,6 +945,20 @@
     "gastos"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "412b46f3f91d",
+   "titulo": "Dr. Furlan anuncia Marciane Costa como futura secretária de comunicação do Amapá",
+   "veiculo": "Diário do Amapá",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQWWNuOWZnbVJodGpzYjZ5SUpuc0N5SEswX1ZIQ2gwUWxlM2xuQW1Kc191ZldOZmRpZXBtcWlMalFtWGkwakM0ZHMxZXlUZ1hXNk1lQkNpbHhBNXY0clowNjRfRWVKbENGRTJoY2xfRzUyM2wxTDE0Y3UzTm5EU1FOc01XM1F4Q09ZSmstd3haTDRNNjZqWlYzeXpyYUdHV2djWmxQaXlMWkVRWFlqR3dobUtVOURzNG9nYWZOcVRwYjlidlFJWkFpVTRYQQ?oc=5",
+   "data": "2026-11-26T13:53:39Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "AP"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "a878013bb651",
@@ -588,6 +1358,22 @@
    "categoria": "medida"
   },
   {
+   "id": "41eb87ccd8cf",
+   "titulo": "Cleitinho busca Aécio Neves para discutir dívida de R$ 180 bilhões de Minas com a União",
+   "veiculo": "Diário de São Paulo",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOU0hXeVBEVXMySzc2VFFLZm1Rd0lWSHREbE9yNFdUMXFxcFQ5TS1JRGh3LUxMeFRyWGV1emttLXQ2NUdLU0gwcWRvek5JSFR4N2Z1aWptUkdQSUZQVzAwYjFRVTZub3RtdXBrNFJZOVZVQ0NRQlRLM1E3V0NiVUJsaUJQdGk2cFgwVGfSAYoBQVVfeXFMTlNIV3lQRFVzMks3NlRRS2ZtUXdJVkh0RGxPcjRXVDFxcXBUOU0tSURody1MTHhUclhldXprbS10NjVHS1NIMHFkb3pOSUhUeDdmdWlqbVJHUElGUFcwMGIxUVU2bm90bXVwazRSWTlWVUNDUUJUSzNRN1dDYlVCbGlCUHRpNnBYMFRn?oc=5",
+   "data": "2026-11-26T01:05:07Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "5c27ae5ba828",
    "titulo": "Possível redução do curso da PM preocupa equipe de transição de Vicentinho",
    "veiculo": "Folha do Bico",
@@ -728,7 +1514,12 @@
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNX3VGTWRqMVNQT1plU2ZqeXRURzBoQUgxZzI3dC1VWmpoQUs5WmF0U2h4SkdxTnphdzVkenBYRzllQU5NWnNWUC1QTHM5bzl0R3I3QnRlN1ZUYXJDdHluUGxOcHlpQkNnRjdDWTJWYkJjbUIyS2UtSWhlSE53U2VGaFBCakptZ1lQakRkMy1yM1JlbDJuTHNMR2Uyb1F4U21UVTZqLWFIcEdkM3dCVWl5X05aalFpQkJyT0tFMUdfTjFuMzBWTFJ3?oc=5",
    "data": "2026-11-25T22:53:00Z",
    "coletado_em": "2026-11-26T11:24:22Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Bico 24 Horas",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPNl96azcxU3VtLW02Ql85MmFlS1RIaG94WGp5WVVzRVYtM0l4X3A3Vm5iSmxfbGsxcDVTU1EwN1hoSUJ6dFRSU2RUUDhYdWpwOU9seG9HQnVyT0ZXMWU4OVlVbnJvSEhTanRoSUJoeEJpUWxYRDA0Y2p5MGtKNVkzNEJnQnRadF9HQzRfVHFFN3M0V2V1a1ZZWVd6MW8xcTlCTURqR0l3V1Jpb0Q0ZFNHQVNiOVVQZkhucTgwSXUxS0RybWRHVlNaSFFpajJTemI5NU93?oc=5"
+    }
+   ],
    "ufs": [
     "TO"
    ],
@@ -1925,6 +2716,22 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "df56a46799b1",
+   "titulo": "Governador eleito de Minas Gerais busca diálogo com partidos de oposição e negocia dívida estadual",
+   "veiculo": "Portal VV8",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSVBVTnFoZHNIbHVNcEVMZ0JfWW1IVm81QmZURjZGVEplRUY5Q1AwZjZkU3ctblE4NUJ0eWxzVFlYc3RmTnFLbG1yNkVzSVhEbmRYOC1KZy1zeUJBVU1US1NWWUZqXzBEa2R4UV9SMWRfTGppSE1LNm1Rd2djUm5GbFJ0cHRJZnk1NHFTMC10dUE1RjNYRkFqZlIxUmFFcXZPemx0QU9EbGVYYXFseU1Tb1ljTXFGWFdwQ3JDUEh4ZWNxUjVueW5uRW1PTTFEVy1mRWsw?oc=5",
+   "data": "2026-11-25T00:17:58Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "436643c53776",
@@ -4630,7 +5437,12 @@
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdk9fa3o2TGl5OWFCNi1OSFJiN0JNSUtYUHcyY2lYMG5PaHlhVVA3RTRKYXFJeHhLYXJsZjZDMmJNcW9naXFxdUVDV0NJY1RMclhVYzZXQW5KamdZSlVXR1ozaUtULVhzYzF3YXUzVFRFWE00YWNKOUoyN0JoMmFMMFhnTFVCSE1rQUQ3eTJMUkdDX21McDM0dlNIbmVEdnhlTFQ2TEhDTGZ6SkNUdUQ5dNIBtgFBVV95cUxNakROc0FKenVTZWtwWC1xQlpST2dLUjM3X3YyT2RkMmJLeDJyREhCR1lzaHRQdWFONWpXbDlHdzF5TU5fY2tfcVRaTjlOcVhFbE9HRkpyMTcyU3MwSUlleGdNcy1WbnpWbVkyRk9pQTZMMGhLNC1mSUtTTXRzVG5SN2t5ZEN3ZDBhSnN4a05lcVNIeDI2ZlBGZDNQQUotTGVJcElTYmF3dE83SUpPX2tXdXFyYm8tQQ?oc=5",
    "data": "2026-11-19T20:26:15Z",
    "coletado_em": "2026-11-19T21:17:45Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "TV Pampa",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOR1JScVlza3BadTg5Ynp3Z2NNZHlfNHAzdk9uZk9uOXZfQU1DSVFNRTl4TDY1NkViRlhpdUhOeXBTTTRLcG5YR0RSQ0pJYlBsSWo3ek9GODBWQmpWRXA0TkVlcTljakJKdDAwQjVEajhQbU16alF5QjUxNDVGUEJ0NGljQkpGR0pRVHJyX3hRcVNWX0d0d1cxSS1vUjBid1hBX2ZDNGxPSWhHck5tOHpkM1VrRjA?oc=5"
+    }
+   ],
    "ufs": [
     "RS"
    ],
@@ -6100,6 +6912,10 @@
     {
      "veiculo": "Extraderondonia.com.br",
      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQU2p5UUF0VFBOVjVrTHdXcmJHM3V6c2FsaElsRWh2VEZGUDh3bXZyeWlFYzFaNDdjRTlwajR4V0toYWVXc1lUS2psaWhZd2JFbW15bTl4ZU9XVXE1Rnh0UUQ5b3JEcHdwcWtQVUxlb1VxVDZMU1BlZ1JMeUIxRUJVajh1TURXNklNeFpBSUQ3U1VvaU8yLWZpYlZrSjhGMEkxRU1VSVBhd21WS0hMaWRfS1NuZy1wOUpYNXZnWi1kRy1RU2JNczM2ZklGb0FKbTN2NkxudDZWUGRGcnFKOXFFLWVkaEtCRWZZbDVVLXFPWklUbDQ?oc=5"
+    },
+    {
+     "veiculo": "Portalrondonia.com",
+     "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNbnUzanpSZXJjSHduZ0dobEFuWGdCTThNUjV1RXFWa0RNSHprMkZlTk5QOUcxMF9pQXN2eU5KZ3Q2Rk05LWc2Y2V5ZDBubVQyT0RESGxQOGNVamhhQXFHUGpUX1pGemlpR0NHV3RsVlJnVUhYcGxwQ2xqb2dUQzBIV0ZMRnVlR1VrR3hpZXdpZFpCblZsWkFsRW1CMFF1OUxiMEZ1Rm9WMnBMU09GLXJNa09jNmVHdFNBZTBQS0pBbkllRFdHTU14enVCU3hZcEtzdldQeGNGM3p2QWZDTUlJcS1hRVBJZG5HazhJSldpUXBkWDA?oc=5"
     }
    ],
    "ufs": [
@@ -13932,6 +14748,23 @@
    "categoria": "medida"
   },
   {
+   "id": "3336c73b0f42",
+   "titulo": "Governo Zucco: Relator do orçamento aponta risco de déficit 53% maior no RS em 2027; entenda",
+   "veiculo": "abc+",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYnNIUDExb2tkdkFCczJTdTBvTU5rX3pvU2sxdVNMWVM2LXNuNUY4dzljd2xhRjJHR01zdDd2QWtuZFF1ZjFNaG5KdGJFSnlXajFqUWhhNGdOWFFfNTdzY0FhRnIzODVmS3JVdi1QUmxjNWtfNEh0SGVSU3daU21mUVpMRmctS0ZSZ3NfVk5qUzhkNy04ekp5TG11T0pNOWxWV2VFbWxIMzB5SWdEeUZkT3pqZGd6VVRBSTlv?oc=5",
+   "data": "2026-11-10T08:00:00Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "diagnostico",
+    "economia"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "d333267cf120",
    "titulo": "Déficit de Minas vira tema central na transição de Cleitinho",
    "veiculo": "BossaNews Brasil",
@@ -14204,6 +15037,20 @@
    "outras": [],
    "ufs": [
     "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "d3281f7479a8",
+   "titulo": "TCE-MA barra contratação de R$ 65 milhões na gestão Brandão após representação da equipe de Braide",
+   "veiculo": "Enquanto Isso no Maranhão",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNNmFtZndRNmctb01KWmpnTGhKMmFTUkV6R285TVp3WHdFbEhyMmdMSDg2akF3QVZqbm9MM2wzZy1NNFRPdnUyY0FrRXgwQVJtWlhqWEUyS290OUx6R3FNSUtDbkVTeUF5dTFxT2ROVzJDN2VKZFhWc0YzeTh5MHNmblBQQ2RvZkRPZ1ZpY2VqOUp5cjFvc2RvbFA0TGpxN3VKaWhveXlUbTFPbGs2c09LV2xTd3VzOEl4SS1yUENZdjZYV1UxN0JmRlhZaXpZSEt2Rng0b2RqY9IB3AFBVV95cUxNajVoN0tTWkFLcldxNGdHOWxuNGtHaDIzOXNlZXU5U05ORS1NSFlsZzFGMlN3UTcxWGFqUF96eE91azZEN2R3MFZmUzJJa0tDS1p5SHNyLV84dktCbnhCcmxyQUh4QVNHYUpLWDFRWkZoMHNqeU1NcGhzQXhaNFJHYkV6UDcwY0hyYXJsTU53aDBNclVuZEVJNVhPLWZsQjQtZ2FlQVd1d3RhSm5zZFM1VjVkQkx4WU1IRkYtWmZLbGZzTms3QU85YzRzdXFfdkkzcGxQQVlPLXlXbnNS?oc=5",
+   "data": "2026-11-09T18:51:48Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MA"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -17078,6 +17925,20 @@
    "outras": [],
    "ufs": [
     "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "238acecff90b",
+   "titulo": "Bebeto e JHC seguem rompidos, mesmo na transição",
+   "veiculo": "Repórter Nordeste",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQT2hBaUdwdldtZmFkSHVqTC00NllzbWZMX1IySXpfMmpLMkFNbjU3ekJaOTZSaW1ab0gta2xac1B0WFBHMHpYbk00YnNBV28zX0pJTzEwdlpmQjg0Vm5tVF94Nm9mSEJ1Y1otYnNZb25sd2dtdzFNTEpuSlFmV0xvQ0s1a01MTmvSAYwBQVVfeXFMT1RscjN6QXJlaTZxeTZId3lYRzBWdW4wYmZLNEtVT0N4Ri1oYVhoQUpXZ0k3V2lDUlh0VFlpa2trUDA3OW5XWTNZSDdGakowNEh2anhSeHhWdmVqUi00UC1hN0hNVTVTYlE1OXFZM1JfUmljeVFib0xPUWV1bkdON3YwNUNDY0ZEVXRpSGI?oc=5",
+   "data": "2026-11-05T09:00:00Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "AL"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -21947,7 +22808,12 @@
    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQLTJwem1MQmhhcFZnMXNiZG9hbXhvTVRkMXRWUzN1eVkyU3ZBYmF6TkFSR2plN2sybE5JTklDc0xmblN1aVEwUE5GTlIzWUtydVJwblFoSjJXa0J6aEg5MnZKYmJjSVEwN2ZMNUVTY0cwdl84ekwxcW00NFFuMEpWOFBqV1RPcVk3Y3drX2lRQzZjeEpDN2FGUXQ2aGNNdW1YZ1lTVm5IOHVJeHFNVzAwS05IdDBHXzM5dTFfa0x0YkNwYU5m?oc=5",
    "data": "2026-10-29T21:07:35Z",
    "coletado_em": "2026-11-11T21:18:06Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "portal do amazonas",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOclFwdGVNZWNpdjBIYldmZFV4UzRMUlNRSkg3U2s0WDdxclQxZkNlYVZFdWZBNXhHd3NMZzZZRTZRdWMxb3lESmVKX3FxaEFScVJ4eXFhNFQtTHozd0RXTTY0eF9rWVVuNGRlSHZuQUtCMXl2Q1VGWmNVSnNBUXdPanFoSTVvVV9GNk55WTdRUjhlZndLVUMtYkgwc0lNTWpERnRfSW1OSXBmWXhoRlpv?oc=5"
+    }
+   ],
    "ufs": [
     "AM"
    ],
@@ -24854,6 +25720,20 @@
    "outras": [],
    "ufs": [
     "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "0a4e10639547",
+   "titulo": "Vicentinho acelera montagem da equipe de governo e anuncia nomes da Comunicação; veja quem",
+   "veiculo": "AF Notícias",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPa2l6bkQ3Ti1iY1VZNUtHOGI2TWtjS1BVVF9JTDAtRjNXMm5DVnNMdVhCSTYzazVJSzlITU5zQkplU29aLXZhYUJEYVRfM3VwYkFBMjFyWTZpd18tOG01SmJkMkFJSUlvVllNRjJtN1ppRXVVZEJZMEZybFltSFZJZ2RsVExZejhpU0VZWWNsbjBPWHprRG5STmFKMHNjSERGM3JhM1lFRmRSYm9fWlpQcERsQnVhdG9hRFZNR0Ridw?oc=5",
+   "data": "2026-10-27T07:00:00Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "TO"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -32305,6 +33185,22 @@
    "categoria": "equipe"
   },
   {
+   "id": "e95e4c77fc64",
+   "titulo": "Pesquisa Quaest para o governo do Amazonas: instituto já tem data para divulgar primeiro levantamento da disputa entre Omar Aziz e Professora Maria do Carmo",
+   "veiculo": "Revista Fórum",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4zcEFpTXJKQWRYQXgteGVIOTZURHRPOHJrS1NIaVQ4SzU4TUFDRnYxZjRQRlJhUXVvMnNwa0dfVlNMMVhMNDlwQ09JZDdBb2xoMEU3ZGdxUFE2Tk9IMlBmWWlKWlEybVQxY0Vjcw?oc=5",
+   "data": "2026-10-09T07:00:00Z",
+   "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "e5ecdb79b972",
    "titulo": "Gabriel vai atuar na transição rumo ao governo de Cleitinho e tem acordo para compor secretariado",
    "veiculo": "O Fator",
@@ -34331,6 +35227,10 @@
     {
      "veiculo": "G1",
      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNSjFkVWM2MnBzdXpIWF9IUkVKRGNGTTF4TzdZV0dEZ1dkZzlpbkgxY0lEaGttQ3NlT1pzeUV2Y0VXbkYtalVDSm1fOS1hNEZYREVmS0RZZ3BTLWkwcDJWTmRKUDZxaGdIbkJrRU1JWHRpWFVSeVc5d1FvNlNHbFRlOWc1Mm5CR3dMMkd0eUgwZDEzRGlXc2ZQWWdYSnFMVGVmRkJXZXVHdm5tZVlXVi1Tbms4WFZsOGFIUUU2YzZ1dF8yRWlzSVBmRUtGODRaN2kwZ0NsU2ZiWVF5MTBDWW1aV0FQbGRucEJoS28yYWtZYnFmeEEyb3F6R0RPVmdZeVZsWUxteVNManJ3cTlUa3FB0gGeAkFVX3lxTFBOaElCM20zQWtud01yTmRlUGttQUVqNGxBMGR5dDllOGlDb0p2Rm93Tk54elVDekZVeVczQ2p1ZER5blhqRmhkbHJ1WXNUcDhjdXNCTkZ5YUNmVUIxZFU5QjVxN1lsejViRTlqMUZWNHJlb0FSUVJHRzZ2dlRpdTR5aE1nSXhXY1NBSXY5RkNvbDFYb2JCUnV4cFBCUi1JTm1XUjc3N0daNlR4R0xhQk83TTFCQXdWTmZidGpGSDdTNk9wX1l5eVNtclh4bXIxbTByVW8waGwtcVNFcmphdGVHN1JmTFVQVTNLbllFUkJCdVlEaThLOUdQRUpsQUxSbVp1QmpDaVNLV0VGX2xnb3VEbC1NT3FVSEVpYU8wWnc?oc=5"
+    },
+    {
+     "veiculo": "G1",
+     "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNSjFkVWM2MnBzdXpIWF9IUkVKRGNGTTF4TzdZV0dEZ1dkZzlpbkgxY0lEaGttQ3NlT1pzeUV2Y0VXbkYtalVDSm1fOS1hNEZYREVmS0RZZ3BTLWkwcDJWTmRKUDZxaGdIbkJrRU1JWHRpWFVSeVc5d1FvNlNHbFRlOWc1Mm5CR3dMMkd0eUgwZDEzRGlXc2ZQWWdYSnFMVGVmRkJXZXVHdm5tZVlXVi1Tbms4WFZsOGFIUUU2YzZ1dF8yRWlzSVBmRUtGODRaN2kwZ0NsU2ZiWVF5MTBDWW1aV0FQbGRucEJoS28yYWtZYnFmeEEyb3F6R0RPVmdZeVZsWUxteVNManJ3cTlUa3FB?oc=5"
     }
    ],
    "ufs": [

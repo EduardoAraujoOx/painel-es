@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-26",
- "gerado_em": "2026-11-26T20:17:14Z",
+ "gerado_em": "2026-11-26T21:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 28,
-   "aceitos": 12,
+   "aceitos": 14,
    "possiveis": 6
   },
   {
@@ -49,15 +49,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 42,
-   "aceitos": 4,
+   "lidos": 27,
+   "aceitos": 1,
    "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 75,
+   "lidos": 74,
    "aceitos": 5,
    "possiveis": 3
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 96,
+   "lidos": 100,
    "aceitos": 5,
    "possiveis": 7
   },
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 12,
-   "aceitos": 2,
-   "possiveis": 1
+   "lidos": 13,
+   "aceitos": 1,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,25 +137,25 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 52,
+   "lidos": 53,
    "aceitos": 2,
-   "possiveis": 6
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 35,
+   "lidos": 30,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 35,
+   "lidos": 24,
    "aceitos": 3,
-   "possiveis": 4
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 5,
-   "aceitos": 5,
+   "lidos": 6,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -194,7 +194,7 @@
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
    "lidos": 16,
-   "aceitos": 4,
+   "aceitos": 6,
    "possiveis": 1
   },
   {
@@ -218,25 +218,24 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
-   "possiveis": 1
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 3,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 415: Unsupported Media Type"
+   "ok": true,
+   "lidos": 30,
+   "aceitos": 1,
+   "possiveis": 1
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -275,25 +274,96 @@
    "consulta": "https://simnoticias.com.br/vinicius-baptista/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   }
  ],
  "novos_na_coleta": 4,
  "descartes_na_coleta": {
-  "sem_contexto": 367,
-  "possivel": 24,
-  "oficial_sem_tema": 3,
-  "excluir": 34,
-  "sem_contexto_com_tema": 22,
-  "outro_estado": 32,
-  "generico_sem_ancora": 10,
-  "veiculo_excluido": 33,
-  "exterior_sem_ancora": 10,
-  "veiculo_outra_praca": 22,
-  "sigla_sem_ancora": 7
+  "sem_contexto": 385,
+  "possivel": 26,
+  "oficial_sem_tema": 2,
+  "excluir": 36,
+  "generico_sem_ancora": 9,
+  "outro_estado": 28,
+  "sem_contexto_com_tema": 16,
+  "veiculo_excluido": 37,
+  "exterior_sem_ancora": 9,
+  "veiculo_outra_praca": 17,
+  "sigla_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "2fbbac8a110e",
+   "titulo": "Controladoria Geral do Estado: novo controlador-geral em 2027",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5Cc2VHNUJBUXE5OFpaVUtfemV4S1A5QXRDWDRkSmd5dlJwQjBOMlllMi1aczA5N0N3U2kxX091T3FWM2hNQW4zdlhuX0tOdzRwb3UyV01fRl81cDlXUU1iUUNLamJKVmZjLTl4THpWMEh5bWxBWjJV?oc=5",
+   "data": "2026-11-26T20:39:11Z",
+   "coletado_em": "2026-11-26T21:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "df16869e889e",
+   "titulo": "Pazolini escolhe auditor de carreira para a Controladoria",
+   "veiculo": "Sim Notícias",
+   "url": "https://simnoticias.com.br/vinicius-baptista/pazolini-escolhe-auditor-de-carreira-para-a-controladoria/",
+   "data": "2026-11-26T20:27:07Z",
+   "coletado_em": "2026-11-26T21:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador",
+    "controle"
+   ]
+  },
+  {
+   "id": "fd8b0e3791f1",
+   "titulo": "CMO aprova relatório do Orçamento de 2027 com corte de R$ 2,09 bilhões",
+   "veiculo": "Site da Serra",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVGZVOUw1RUhEUkN5SkZvVlowajU5OGhwN2w5YTdQQU1LbXRJcXZIcThhTXo3UjNYS3VOZGNpSFFwT1hLR2ZpUEd1RTdrME9fdEh2TkZJTkVJOHBUNzctc2hqQVR1NHVrUzVyODZhV2ljRTRocl9GTWV2NXpLRWo2aHJMX0NvMzZSOEpXT2JvazBGMk0tRC11aTFFUXFFbDFkUXRSd1J1V3NQaERX?oc=5",
+   "data": "2026-11-26T20:22:00Z",
+   "coletado_em": "2026-11-26T21:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "8d73e457ae14",
+   "titulo": "Pazolini anuncia Denis Prates como novo controlador-geral do ES",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/pazolini-anuncia-denis-prates-como-novo-controlador-geral-do-es/",
+   "data": "2026-11-26T20:17:37Z",
+   "coletado_em": "2026-11-26T21:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "bf4eea419cd9",
+   "titulo": "Com previsão de temporal, Vitória convoca gabinete de crise e libera servidores mais cedo",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/espirito-santo/2026/11/vitoria-gabinete-de-crise/",
+   "data": "2026-11-26T20:14:19Z",
+   "coletado_em": "2026-11-26T21:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
   {
    "id": "592cc7a92f93",
    "titulo": "Pazolini anuncia Auditor do Estado Denis Prates como novo controlador-geral do Estado",
@@ -301,7 +371,12 @@
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONFFveDdONjRtQnJYc1RrMHQtMDZzZHhMS2FaQkVMR3JUa1ktN2JLYlpIR3F4dUlkNWNMUWR1RjA5TUZNVm8xaG95Smh4dUxSNmNQb2N3WGFrZV85SG9iNmV6YW1ZRHVLWVJsN2dXdy1zc1BtOFdxVVFvWVJSUmRmeTF6Q250S3o3VFBJQ1R3MjhsTTVsQV96c0x0N3VTSl9KYTRlaVBETGZDdV9FUmJfS3hNYWdsTzBEUWZF?oc=5",
    "data": "2026-11-26T20:06:55Z",
    "coletado_em": "2026-11-26T20:17:14Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "rede noticia es",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaU5iU1BndHpPM09YTlIwMFo4ZTJGOXM1cVBOa1dRUGhYNjFpcE9CLS1McVI4V2lFbUtoRlcxLTZxTEJkSUU1SWFKSEI1V0ZDa19UMXZ6cHVCSEJSamlPVkpNc0hSdlJPS205WEg4bnVEMUdnOThNeHpIU1luSDhzQUs0bWhjUXlxdFdHZDBxQUVvbmpTbXF1cWpZeW44RHBlRFNfNjRjM1RDZi1QR3c?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 9,
    "temas": [
@@ -320,6 +395,20 @@
    "triagem": 9,
    "temas": [
     "governador",
+    "pessoal"
+   ]
+  },
+  {
+   "id": "944fc0f74ccd",
+   "titulo": "Servidor efetivo do Estado é anunciado para assumir o comando da Secretaria de Transparência",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/pazolini-denis-penedo-prates-transparencia/",
+   "data": "2026-11-26T19:51:56Z",
+   "coletado_em": "2026-11-26T21:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
     "pessoal"
    ]
   },
@@ -378,6 +467,18 @@
    "temas": [
     "pessoal"
    ]
+  },
+  {
+   "id": "130f68f4ab80",
+   "titulo": "SEDU ES abre seleção para Agente de Integração com bolsa R$2.300",
+   "veiculo": "diariodamidia.com.br",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPeUhlR0xlTU9mb1picG9XT1k4eDRPN0U2VzV3cVlmcXRhMTZaRkNEcHpQMlRoOHVFWm9LcnZuUjRXcHVWa2stZkM0OGNwa1BJenEwcnkyZHpQcWR1LUExSnVjcDdmVFZSWGk3NkFCVVpLZmZibXRkTmRTYWNpQThuYlJtNkJNRlo5OFROeF8xVVhvNUp4T1E?oc=5",
+   "data": "2026-11-26T18:40:33Z",
+   "coletado_em": "2026-11-26T21:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "32bd450e4cb1",
@@ -621,7 +722,12 @@
    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPR0g5WXF2UW5IamFiazdPSW5aVDIzQW42VkNvX2o1cGNZb3B3Sl9yVEJGdVFPUnBlZkpiTTFPaElFZE5MVFdzN2hUbGlySmtUREk0S3VjSjNqaEo2eUxkSU5WV0NWUmVyU0dMcmlPcjNwMmR4YkU1R291ZjFoSmJGYU5mV05fVWJrUUhVNG9iN0lBek5NVWdIaWFpR2VSZlhLdUo4ZFZNaC1MX19JTTNCSDRhWQ?oc=5",
    "data": "2026-11-26T09:37:07Z",
    "coletado_em": "2026-11-26T10:17:13Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Aqui Notícias",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNcHRRVlhZcFVpb0wzNzFjTGgxckJzdnBMTXU1NFdSUTRaYkpTR0o0UWhZVUtOdGpRLVBkNXlKN3RqY2x6MXo4TFQ5aFNfcTNwdE9ISkVRMVZXbjd6TXZndzFaWHItQTJxalBuUGt4RHdnY0JGcHF5MGlQb2hEMGNMNGVGWnQtcHNMNEJ6SUwtdFRKaDlaRnFFQmxSYmc5bmJPcVBpQkIyRENlYWh4?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 9,
    "temas": [
