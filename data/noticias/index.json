@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-26",
- "gerado_em": "2026-11-26T14:17:14Z",
+ "gerado_em": "2026-11-26T15:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,24 +17,24 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 17,
-   "aceitos": 8,
+   "lidos": 18,
+   "aceitos": 9,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 46,
-   "aceitos": 19,
+   "lidos": 50,
+   "aceitos": 18,
    "possiveis": 8
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 4,
+   "lidos": 8,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
@@ -49,8 +49,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 39,
-   "aceitos": 5,
+   "lidos": 40,
+   "aceitos": 4,
    "possiveis": 4
   },
   {
@@ -66,7 +66,7 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 2,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -89,8 +89,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 68,
-   "aceitos": 4,
+   "lidos": 69,
+   "aceitos": 5,
    "possiveis": 4
   },
   {
@@ -99,7 +99,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 4,
-   "possiveis": 6
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 11,
+   "lidos": 12,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,17 +137,17 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 49,
-   "aceitos": 1,
-   "possiveis": 6
+   "lidos": 30,
+   "aceitos": 0,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 27,
    "aceitos": 1,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -155,13 +155,13 @@
    "ok": true,
    "lidos": 31,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 58,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 2,
-   "aceitos": 2,
+   "lidos": 3,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 15,
+   "lidos": 16,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
@@ -232,10 +232,11 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": true,
-   "lidos": 30,
-   "aceitos": 2,
-   "possiveis": 0
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 415: Unsupported Media Type"
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -250,7 +251,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -280,19 +281,46 @@
  ],
  "novos_na_coleta": 2,
  "descartes_na_coleta": {
+  "sem_contexto": 369,
   "possivel": 22,
-  "sem_contexto": 405,
   "oficial_sem_tema": 4,
-  "sem_contexto_com_tema": 18,
-  "veiculo_excluido": 34,
-  "outro_estado": 28,
-  "veiculo_outra_praca": 19,
+  "sem_contexto_com_tema": 19,
+  "veiculo_excluido": 39,
+  "outro_estado": 22,
+  "veiculo_outra_praca": 17,
   "generico_sem_ancora": 11,
-  "excluir": 38,
+  "excluir": 36,
   "exterior_sem_ancora": 7,
-  "sigla_sem_ancora": 5
+  "sigla_sem_ancora": 3
  },
  "itens": [
+  {
+   "id": "c7f6ec09e8a0",
+   "titulo": "Governo do ES extingue 160 cargos comissionados que estavam vagos",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/politica/governo-do-es-extingue-160-cargos-comissionados-que-estavam-vagos-1126",
+   "data": "2026-11-26T14:39:00Z",
+   "coletado_em": "2026-11-26T15:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador",
+    "pessoal"
+   ]
+  },
+  {
+   "id": "eebfe752e414",
+   "titulo": "Polícia Científica do ES prepara concurso com 280 vagas",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBWWlRDOXpodzZQOUdpTGRzNXpfTFB3bU53cm15QVFmUVBCUm5NdkFrd2JxOXVNNVQ2OFd5bXR0aWx0WlQ4SjA0b0d6X01pZHhhUHVIcnFxYkY1REl1bl9QN2hCV2NCMnNMR0FhYm1QbjJyWkxKTzV3VmxtN0pGUkk?oc=5",
+   "data": "2026-11-26T14:17:13Z",
+   "coletado_em": "2026-11-26T15:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "9f0480ca64bb",
    "titulo": "Vila Velha (ES) suspende licitação de R$ 65,7 milhões para corredor de ônibus entre a Terceira Ponte e a Avenida Carlos Lindenberg",
@@ -1130,6 +1158,18 @@
    "temas": [
     "financas"
    ]
+  },
+  {
+   "id": "30e647ddc277",
+   "titulo": "Retomada de carro pelo Detran teve 70% de acordos em piloto",
+   "veiculo": "Let's Money",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNZWt4MV9CU0VrcHZrNmtjRmtSSGQ5TGdHdGFleTR1ejNLVFhHQUZHMnFTQnVQeWlfZnAtWkZweUdPRmFLRDBLNC0zd2x0bFRFSVZmTGQyOUNsWTEwZEQ5MnZCNnZrcDBSNkJNUmxhYm0xcVM3c09NN1lEOTRmdmNyR0JEVzk2WS1idG84Rw?oc=5",
+   "data": "2026-11-25T13:38:29Z",
+   "coletado_em": "2026-11-26T15:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "cd64dcf1046e",
