@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-26",
- "gerado_em": "2026-11-26T21:17:13Z",
+ "gerado_em": "2026-11-26T22:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,24 +17,24 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 17,
-   "aceitos": 10,
+   "lidos": 19,
+   "aceitos": 11,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 28,
+   "lidos": 29,
    "aceitos": 14,
-   "possiveis": 6
+   "possiveis": 9
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 6,
+   "lidos": 10,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
@@ -66,7 +66,7 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 4,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 74,
+   "lidos": 75,
    "aceitos": 5,
    "possiveis": 3
   },
@@ -99,7 +99,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 5,
-   "possiveis": 7
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,31 +137,31 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 53,
-   "aceitos": 2,
-   "possiveis": 5
+   "lidos": 31,
+   "aceitos": 1,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 36,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 44,
    "aceitos": 3,
-   "possiveis": 1
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 60,
+   "lidos": 100,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 16,
-   "aceitos": 6,
+   "lidos": 17,
+   "aceitos": 7,
    "possiveis": 1
   },
   {
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -278,21 +278,63 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 4,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 385,
-  "possivel": 26,
-  "oficial_sem_tema": 2,
-  "excluir": 36,
-  "generico_sem_ancora": 9,
+  "sem_contexto": 392,
+  "possivel": 25,
+  "oficial_sem_tema": 5,
+  "excluir": 37,
+  "generico_sem_ancora": 8,
   "outro_estado": 28,
-  "sem_contexto_com_tema": 16,
-  "veiculo_excluido": 37,
-  "exterior_sem_ancora": 9,
+  "veiculo_excluido": 41,
+  "sem_contexto_com_tema": 11,
+  "exterior_sem_ancora": 8,
   "veiculo_outra_praca": 17,
-  "sigla_sem_ancora": 2
+  "sigla_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "9ed49061e4ba",
+   "titulo": "Opportunità! Itália mira negócios no ES e quer aproximar empresários italianos do Estado",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/opportunita-italia-mira-negocios-no-es-e-quer-aproximar-empresarios-italianos-do-estado/",
+   "data": "2026-11-26T21:30:00Z",
+   "coletado_em": "2026-11-26T22:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "79f62ce218aa",
+   "titulo": "Pazolini anuncia Denis Prates para comandar a Controladoria-Geral do ES em 2027",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQcHdwQklJczk5a3BtcVYxVnpOWEhTTGwwTC1vYjdGbzh4ZGdvR3BQLTJVTDhIMkNEcGxyX0YwaUdoQWhjcDk3RUZ1T0F1NmpXWnlVWnZ3LURtLTVFQkZCOXdXUXpNT19RazZZSzNlbEZsYUlfV19nRnNkeUpEVkg1U3RudnAwMFlKdVFPTHhENmZEa0dYNU9meDlFMzZkSHQyYlB5dWNaaw?oc=5",
+   "data": "2026-11-26T21:18:32Z",
+   "coletado_em": "2026-11-26T22:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador",
+    "controle"
+   ]
+  },
+  {
+   "id": "b419534f5a02",
+   "titulo": "Governo do ES acaba com 160 cargos comissionados não ocupados",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/governo-do-es-acaba-com-160-cargos-comissionados-nao-ocupados/",
+   "data": "2026-11-26T21:14:59Z",
+   "coletado_em": "2026-11-26T22:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador",
+    "pessoal"
+   ]
+  },
   {
    "id": "2fbbac8a110e",
    "titulo": "Controladoria Geral do Estado: novo controlador-geral em 2027",
@@ -363,6 +405,30 @@
    "temas": [
     "pessoal"
    ]
+  },
+  {
+   "id": "6dbaa0acc45d",
+   "titulo": "Iema recebe estação móvel para monitoramento da qualidade do ar",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNQ0ktS25jT19JUDc5QUtzOHV3V1ppVHNNXzVlT2tpLU53ZkhhcF9sUjh5TTd0eVg3UzNjNlQzb0Fib1BWQmo2b0JPOVpGcWYxTTN0cUM3ZkR4Z1dFcnRGa0dZa0EzcWgtZnptb3NSS3NvZjFpbzdWdGJDaVg4a1JVWjlpOHZDQWlPUDBuMWpR?oc=5",
+   "data": "2026-11-26T20:11:00Z",
+   "coletado_em": "2026-11-26T22:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "ff836ec0ff5e",
+   "titulo": "Cais Adentro promove encontro sobre identidade capixaba e pertencimento com comunidades vizinhas",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMG9qSGloaTNmSzI1Ql9mSnJ1cVRaajUzclZCUjcwblpUWDV3dG5iNDd0Wkw2SzVZVFMwU1lzcEtYelpnZW42Unh0bHZFaEE0LWV4S3JYLXRINHliR3JTTkFLZVRXV2E1c1IxZ0FZTDRkaGdFUkZPN0lhYWh6U05kX3QycWJpZmFaZThvZHlvaUE1M0lqeEZYdVRwR1ZUdXZZRVhPYnlOX3V1VWxYaDhmTzc2MUJDTVNMbXc?oc=5",
+   "data": "2026-11-26T20:10:00Z",
+   "coletado_em": "2026-11-26T22:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "592cc7a92f93",
@@ -978,6 +1044,18 @@
    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdlFaMUtjSEtLNHN3cmVQM2pXMERjWlJGWkttTDE0V1FQTDAzMW1Ed190d29yOFk2VzZwYUljam5uOFZBdnh6aEptWm9ZcUpGRVZpODVocUdKS29HbEZnb1dtWmsxODNaRUtQeU1pSFIwbEIxSmVyN3lxZlpnTDBLMjdaNS1PZHdLRE1WblZ3VUcycUFTQlpLZWx1WWU0N0sxM3VnVEMwU09pT3FIU0VqRzZkOURnSmc?oc=5",
    "data": "2026-11-25T21:02:45Z",
    "coletado_em": "2026-11-25T23:17:15Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "84ac1a7e58ed",
+   "titulo": "Ginasta capixaba é convocada para seletiva da Seleção Brasileira Juvenil",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRzdjUmFnSjY1ajd4VVdfOHl0OTBERExURTNXNFAtd3d3ZFNDMGF5VEFVR2ZnbklHSkZSUlE4NGhVT0lJLTg1NHhHaE54Uy1tUzNYRDVubzNDbzQyLUhDbnJocHV6XzJxVjg5dWxGSDVObkdHaWJsNVRBNU42VGc0ZkNjd1lUdVZaZVR6RTdSbWJDbm5pZVBZZ2tB?oc=5",
+   "data": "2026-11-25T20:34:00Z",
+   "coletado_em": "2026-11-26T22:17:13Z",
    "outras": [],
    "possivel": true,
    "triagem": 9,
