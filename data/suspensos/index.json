@@ -1,12 +1,12 @@
 {
- "ref": "2026-11-23",
- "gerado_em": "2026-11-23T15:19:55Z",
+ "ref": "2026-11-26",
+ "gerado_em": "2026-11-26T11:26:43Z",
  "primeiro_levantamento": "2026-10-30",
  "baseline": false,
  "contagem": {
   "suspenso": 25,
-  "rescindido": 76,
-  "anulado": 51
+  "rescindido": 77,
+  "anulado": 50
  },
  "serie": [
   {
@@ -32,6 +32,12 @@
    "suspenso": 25,
    "rescindido": 76,
    "anulado": 51
+  },
+  {
+   "data": "2026-11-26",
+   "suspenso": 25,
+   "rescindido": 77,
+   "anulado": 50
   }
  ],
  "por_orgao": [
@@ -87,8 +93,8 @@
   {
    "orgao": "SECRETARIA DE ESTADO DA SEGURANÇA PÚBLICA E DEFESA SOCIAL",
    "suspenso": 1,
-   "rescindido": 2,
-   "anulado": 2,
+   "rescindido": 3,
+   "anulado": 1,
    "valor": 1499007.82
   },
   {
@@ -246,7 +252,9 @@
    "valor": 21980.0
   }
  ],
- "novos": [],
+ "novos": [
+  "107|Contrato 2026.000012.45101.01/2026|Contrato|05888090000112|2026-03-16"
+ ],
  "saidas": [],
  "itens": [
   {
@@ -1018,10 +1026,10 @@
    "valor_final": 875970.01,
    "celebracao": "2026-03-16",
    "fim": "2026-06-15",
-   "situacao": "Instrumento Contratual Revogado",
-   "categoria": "anulado",
+   "situacao": "Rescisão Contratual",
+   "categoria": "rescindido",
    "ano": "2026",
-   "visto_em": "2026-11-23T11:19:53Z"
+   "visto_em": "2026-11-26T11:26:43Z"
   },
   {
    "id": "168|Contrato 2024.000146.44928.01/2024|Contrato|19679176000140|2025-02-04",
