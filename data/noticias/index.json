@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-26",
- "gerado_em": "2026-11-26T19:17:13Z",
+ "gerado_em": "2026-11-26T20:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,24 +17,24 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 16,
-   "aceitos": 9,
+   "lidos": 17,
+   "aceitos": 10,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 56,
-   "aceitos": 22,
-   "possiveis": 8
+   "lidos": 28,
+   "aceitos": 12,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 9,
-   "aceitos": 5,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -49,39 +49,39 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 23,
-   "aceitos": 1,
-   "possiveis": 3
+   "lidos": 42,
+   "aceitos": 4,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 1,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 3,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 3,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,9 +89,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 81,
+   "lidos": 75,
    "aceitos": 5,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 11,
+   "lidos": 12,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,9 +137,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 51,
+   "lidos": 52,
    "aceitos": 2,
-   "possiveis": 5
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 35,
    "aceitos": 3,
-   "possiveis": 1
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 60,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -169,7 +169,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 4,
+   "lidos": 5,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 14,
-   "aceitos": 2,
+   "lidos": 16,
+   "aceitos": 4,
    "possiveis": 1
   },
   {
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 5,
    "possiveis": 2
   },
   {
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -227,7 +227,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 3,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "ES Hoje",
@@ -252,14 +252,14 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 2,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "A Gazeta",
    "consulta": "https://www.agazeta.com.br/colunas/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -275,25 +275,96 @@
    "consulta": "https://simnoticias.com.br/vinicius-baptista/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 4,
  "descartes_na_coleta": {
-  "sem_contexto": 382,
-  "possivel": 23,
+  "sem_contexto": 367,
+  "possivel": 24,
   "oficial_sem_tema": 3,
-  "excluir": 36,
+  "excluir": 34,
+  "sem_contexto_com_tema": 22,
+  "outro_estado": 32,
   "generico_sem_ancora": 10,
-  "sem_contexto_com_tema": 20,
-  "veiculo_excluido": 31,
-  "outro_estado": 30,
-  "veiculo_outra_praca": 24,
-  "exterior_sem_ancora": 8,
-  "sigla_sem_ancora": 4
+  "veiculo_excluido": 33,
+  "exterior_sem_ancora": 10,
+  "veiculo_outra_praca": 22,
+  "sigla_sem_ancora": 7
  },
  "itens": [
+  {
+   "id": "592cc7a92f93",
+   "titulo": "Pazolini anuncia Auditor do Estado Denis Prates como novo controlador-geral do Estado",
+   "veiculo": "Aqui Notícias",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONFFveDdONjRtQnJYc1RrMHQtMDZzZHhMS2FaQkVMR3JUa1ktN2JLYlpIR3F4dUlkNWNMUWR1RjA5TUZNVm8xaG95Smh4dUxSNmNQb2N3WGFrZV85SG9iNmV6YW1ZRHVLWVJsN2dXdy1zc1BtOFdxVVFvWVJSUmRmeTF6Q250S3o3VFBJQ1R3MjhsTTVsQV96c0x0N3VTSl9KYTRlaVBETGZDdV9FUmJfS3hNYWdsTzBEUWZF?oc=5",
+   "data": "2026-11-26T20:06:55Z",
+   "coletado_em": "2026-11-26T20:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "53064ec02c16",
+   "titulo": "Governo do ES extingue 160 cargos comissionados",
+   "veiculo": "Sim Notícias",
+   "url": "https://simnoticias.com.br/vinicius-baptista/governo-do-es-extingue-160-cargos-comissionados/",
+   "data": "2026-11-26T20:06:00Z",
+   "coletado_em": "2026-11-26T20:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador",
+    "pessoal"
+   ]
+  },
+  {
+   "id": "43c0d0abfd3d",
+   "titulo": "Pazolini escolhe quem vai fiscalizar os gastos do ES",
+   "veiculo": "ES Hoje",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNVW1hMGtJek45TjlFY0l1cU5LX0dDRGVRelVIWkZYUy1ncjhFcG9xSjVOejMzTTJ3SHJ2QWpvU1BoeXF2aVloQlRYa3FiaEo5emdvU2VLck4wcjY5c2NYczRMdTRKTG4zRDNmUUp3cWRoLTBpRWJjZVNRY2VZVEZhODRiQjg0Y01Ic2s4ckh3?oc=5",
+   "data": "2026-11-26T19:51:56Z",
+   "coletado_em": "2026-11-26T20:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "dd7666ac8873",
+   "titulo": "Investigação cita atuação do PCC em contratos com o poder público: \"propina de 40% e lucro de 60%\"",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/investigacao-cita-atuacao-do-pcc-em-contratos-com-o-poder-publico-propina-de-40-e-lucro-de-60/",
+   "data": "2026-11-26T19:50:02Z",
+   "coletado_em": "2026-11-26T20:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "110ca6449070",
+   "titulo": "Pazolini anuncia o segundo nome da sua equipe de governo",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/leonel-ximenes/pazolini-anuncia-o-segundo-nome-da-sua-equipe-de-governo-1126",
+   "data": "2026-11-26T19:37:00Z",
+   "coletado_em": "2026-11-26T20:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "5dd50b70e64d",
    "titulo": "Motorista de ambulância é indiciado por crimes sexuais contra servidoras da saúde de Marilândia, no ES",
@@ -850,6 +921,18 @@
     "pessoal",
     "controle"
    ]
+  },
+  {
+   "id": "7aaf2c94e848",
+   "titulo": "CCJ da Alerj aprova programa ‘Desenrola Detran’ para regularização de débitos junto à instituição",
+   "veiculo": "Elizeu Pires",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPNUFCcFF3OFVpekhfbm5xQnlMMW9KWFh4cEFZU2RtVHJCOFVzSnpEYVNrdEwyWm81VndCcGRLMlJNV1RiMDd5YjRmaGtiNDFKRWpmZ1YtTnFaOWVUY1dMZ3F4X3V2aVhLVFlxUkQ3RWZydHFhRi1obGJ0NjFUVGRLNGVRSTQyamxPN0RsYzliaGRSZjZNQnpfbTJvYlRCeVVLbFNiTXhRbzM0Z0dGRzZob0FGQUFoWEJMdUJBckhMT1U5VjFwOEFOZGUzQlFqTERpRTVQMGllbjY?oc=5",
+   "data": "2026-11-25T19:23:51Z",
+   "coletado_em": "2026-11-26T20:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "6b814e2587c2",
@@ -1728,7 +1811,12 @@
    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVDVZOTQ0eGYzSG9YektfSEI2VmJnZlR1QXFzOVJVcGN6VmpsZWFPZFRvVjRUZWpPZTZZUVdOMzZmX3lsQXpzVDZBQURpMkEtaE44Y3NwRUV6UHNGeks1MzVHRTh6MkVOUkFzVlpXdDlMQUkzQkpYZ0xHeURVQmF0YUFtc3hzOE45S0RFb3k4aF9BZDlicDEzWktCSzNNSXViY0pwdA?oc=5",
    "data": "2026-11-24T20:14:21Z",
    "coletado_em": "2026-11-24T20:17:14Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Correio dos Municípios",
+     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOQzE3NDg4VmdFSC1ET2pQRFVuZWM4eEtoM2JDejk1Qy1uM2pKSDRaNmhKZzl5YkNQYzRNUzJZM2p4OFJHdnE5QkcyOTlnVDFSNklnVnlUUE05UEhMby1sVGFXdDBPM2VhMUpwU3U5TW83UktKNTNwWXVtTUlYXzAwY09FVHd0MFRqV2E1VFpHUmVubnM1QmNYeXU3MENnVGlhcVNQRWwyMVdQNFd0U0IzMWltUVJ3Q0d4UXpOZ1l5QURuMElLMG1kTXVoT050QmRpNEVzTWRn?oc=5"
+    }
+   ],
    "possivel": true,
    "triagem": 9,
    "temas": [
