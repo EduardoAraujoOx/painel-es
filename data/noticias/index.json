@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-26",
- "gerado_em": "2026-11-26T18:17:13Z",
+ "gerado_em": "2026-11-26T19:00:50Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,16 +25,16 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 13,
-   "possiveis": 6
+   "lidos": 55,
+   "aceitos": 23,
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 8,
-   "aceitos": 4,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
@@ -42,14 +42,14 @@
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
    "lidos": 7,
-   "aceitos": 6,
-   "possiveis": 1
+   "aceitos": 7,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 40,
+   "lidos": 39,
    "aceitos": 4,
    "possiveis": 4
   },
@@ -57,7 +57,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -73,15 +73,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 2,
+   "lidos": 7,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -99,7 +99,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 5,
-   "possiveis": 7
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 12,
+   "lidos": 11,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,23 +137,23 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 50,
-   "aceitos": 1,
+   "lidos": 49,
+   "aceitos": 2,
    "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 34,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 23,
+   "lidos": 30,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 58,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 3,
+   "lidos": 4,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 15,
+   "lidos": 14,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -227,14 +227,14 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 3,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -278,21 +278,49 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "possivel": 24,
-  "sem_contexto": 396,
+  "sem_contexto": 419,
+  "possivel": 21,
   "oficial_sem_tema": 3,
-  "excluir": 41,
-  "sem_contexto_com_tema": 21,
-  "generico_sem_ancora": 10,
-  "outro_estado": 23,
-  "veiculo_excluido": 33,
-  "exterior_sem_ancora": 9,
-  "veiculo_outra_praca": 18,
-  "sigla_sem_ancora": 3
+  "excluir": 40,
+  "generico_sem_ancora": 11,
+  "sem_contexto_com_tema": 22,
+  "veiculo_excluido": 29,
+  "outro_estado": 28,
+  "veiculo_outra_praca": 24,
+  "caixa_alta": 1,
+  "exterior_sem_ancora": 11,
+  "sigla_sem_ancora": 5
  },
  "itens": [
+  {
+   "id": "32bd450e4cb1",
+   "titulo": "Decreto extingue 160 cargos comissionados no Governo do ES",
+   "veiculo": "ES Brasil",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBfUFpHQUx3djFyQ3o3Y2Y1MnBFeGpEWEl0SjRWa1lVZEVwS2lYYkd4a0Z6SEE1alJYcGZBbVEyMElCRGJYMll4X1BPdl9xTElvVXNZTlFRR3Q2dmQ3S3Jya1k0eEFJX1V4X0F0QlROb3ZkVWR6bzJYTg?oc=5",
+   "data": "2026-11-26T18:20:49Z",
+   "coletado_em": "2026-11-26T19:00:50Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador",
+    "pessoal"
+   ]
+  },
+  {
+   "id": "559cc1f8f796",
+   "titulo": "Banestes: Informa sobre indicação à presidência",
+   "veiculo": "Acionista.com.br",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5kNW5XRnVvT2lUV2ZfNk1QdDVPWEJ4UlFuR00zYVRkblpWamNIY090dVI5R2U5bzNVdGQtRXpiXzE4ZnJGWEg1QkZ6S1I5Q1VJSDJ0b3lfbnhDYkRCZW9xcGZtVXVheWs1UGlBN0pRcUktTlBrckNTZnk1bHg?oc=5",
+   "data": "2026-11-26T17:55:19Z",
+   "coletado_em": "2026-11-26T19:00:50Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "ce94584bc353",
    "titulo": "Crédito para empresas e agronegócio no Banestes",
@@ -1019,6 +1047,20 @@
    "triagem": 9,
    "temas": [
     "governador"
+   ]
+  },
+  {
+   "id": "e1e47f7a4365",
+   "titulo": "Sefaz realiza operação de fiscalização no comércio de carnes em Rio Bananal",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNXZ4aUNyVi1veFU5d2s2bWRPbUpUcTBDWkNyWlg5QUM4Ym5SUkctd2NVZ3hMd3YtS3pFeGs5VVJrdUNMMjJRQzBtNmJ4T0VhT2g3V2RrSkNEUTFGZHpUNHdEQ2hIZUw0eDNVUHV6OXZ5TTVINzRPOWtxRmFmMHRHRmgwRTlsR0loNzVDMm1WNVhzelBRVlNfZU5HVUpJdw?oc=5",
+   "data": "2026-11-25T17:35:00Z",
+   "coletado_em": "2026-11-26T19:00:50Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "financas"
    ]
   },
   {
