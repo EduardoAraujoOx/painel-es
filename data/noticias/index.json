@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-26",
- "gerado_em": "2026-11-26T01:17:13Z",
+ "gerado_em": "2026-11-26T02:51:36Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,23 +17,23 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 18,
-   "aceitos": 9,
+   "lidos": 19,
+   "aceitos": 10,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 10,
+   "lidos": 46,
+   "aceitos": 18,
    "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 4,
    "possiveis": 0
   },
@@ -49,9 +49,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 22,
+   "lidos": 21,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -89,33 +89,33 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 79,
+   "lidos": 81,
    "aceitos": 3,
-   "possiveis": 5
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 87,
-   "aceitos": 3,
+   "lidos": 99,
+   "aceitos": 4,
    "possiveis": 8
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(\"insuficiência de recursos\" OR \"restrições orçamentárias\" OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) \"governo do ES\"",
    "ok": true,
-   "lidos": 0,
+   "lidos": 1,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 2,
-   "possiveis": 0
+   "lidos": 11,
+   "aceitos": 1,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -137,23 +137,23 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 58,
-   "aceitos": 2,
-   "possiveis": 8
+   "lidos": 32,
+   "aceitos": 1,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 32,
    "aceitos": 0,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 37,
+   "lidos": 35,
    "aceitos": 1,
    "possiveis": 4
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 59,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 17,
+   "lidos": 16,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -218,8 +218,8 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
-   "possiveis": 0
+   "aceitos": 1,
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -278,21 +278,75 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 4,
  "descartes_na_coleta": {
-  "possivel": 23,
-  "sem_contexto": 374,
+  "possivel": 29,
+  "sem_contexto": 396,
   "oficial_sem_tema": 4,
-  "sem_contexto_com_tema": 21,
-  "outro_estado": 30,
-  "veiculo_excluido": 43,
-  "excluir": 43,
-  "generico_sem_ancora": 8,
+  "veiculo_excluido": 42,
+  "sem_contexto_com_tema": 18,
+  "outro_estado": 21,
+  "veiculo_outra_praca": 13,
+  "excluir": 41,
+  "generico_sem_ancora": 7,
   "exterior_sem_ancora": 6,
-  "veiculo_outra_praca": 16,
-  "sigla_sem_ancora": 9
+  "sigla_sem_ancora": 6
  },
  "itens": [
+  {
+   "id": "5e2ddc400e1a",
+   "titulo": "Pela primeira vez em 89 anos, Banestes poderá ser comandado por uma mulher; veja quem Pazolini indicou",
+   "veiculo": "rede noticia es",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQeUVrMGVIcFZlTk1SY3cwblBfOWh5aXlWNWd2cVlRSVJXTFJJNG5BY3dybjBqaE1rZHY1V1hDRXR5UDZaVFRoVUJfUzRGMWZnLXBRWU5PNmxRTGJhZDJJR3lOU2pqTFc0cnpSd3g5MTU4eUxvcEdUSjlQLTFFUEJ5RXFjY05hTXUweUNkcXctVUFLc3dhRmFjSmVxaVlYbElFNV9xTzRfUWIwdXpZTi0xTXRFcmFjTkhNZnZKdFYzOEpvdw?oc=5",
+   "data": "2026-11-26T02:05:03Z",
+   "coletado_em": "2026-11-26T02:51:36Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "5696d28b6687",
+   "titulo": "Sob ameaça de fortes chuvas, Mimoso do Sul suspende folga e convoca servidores",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/tempo/sob-ameaca-de-fortes-chuvas-mimoso-do-sul-suspende-folga-de-feriado-e-convoca-servidores/",
+   "data": "2026-11-26T01:27:41Z",
+   "coletado_em": "2026-11-26T02:51:36Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "989e5aca27bb",
+   "titulo": "Dia de Ação de Graças mobiliza escolas da rede estadual nesta quinta-feira (25)",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5QaExJWXE2MldqUjhESVlMQk1XaE5TZ3J5UklfVUduZU11X2FRNU5SVnA0ZnNxT3QzY1dMNllGa3VqdkptUW1zcm9uX1g5N3pSc0ZiYkNvanpqWXBs?oc=5",
+   "data": "2026-11-26T01:16:09Z",
+   "coletado_em": "2026-11-26T02:51:36Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "2419315036e4",
+   "titulo": "Crime ambiental em Vila cajueiro: Governo do Estado e Iema querem sair da ação e atribuem responsabilidade à Prefeitura de Cariacica (ES)",
+   "veiculo": "Grafitti News",
+   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPWUNMRjFrajQ3QjM0ejd3aGJ5bU1nSDNjUVBNMTB0RjF0eFlZUlYzVFRlRDlLZTl1V0Z3R2o5Y0c0SlBUWTJJOGVyeTdLZWVlSjNzU2MtNDJQb0JBdXBETG4xTTNHNXFJUHZOck5WZTBWUXdtZVJQVnVOMUp3NkJZWC12YVRjMzJKSjBaN3dHYW93VDhuVUpxWlZZcHZlYzJjci1MTkxad0dtT1ktZGFqRlZNTHRYTVNOQmgyVDJHNS1EbzI0M0c5R3d3N2FKWnRxZF9aUkJWOUtScGQ4SGlIZnhjTUE5eTdMWnRuOUUxNnN5bVJlSHc?oc=5",
+   "data": "2026-11-26T01:02:00Z",
+   "coletado_em": "2026-11-26T02:51:36Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "6c86770872f6",
    "titulo": "Receita Federal: entenda quais contribuintes ainda precisam declarar o imposto de renda em 2026, quais prazos valem e o que acontece com quem perde a data limite de entrega",
@@ -318,6 +372,21 @@
    "possivel": false,
    "triagem": 9,
    "temas": []
+  },
+  {
+   "id": "7b39bbda702f",
+   "titulo": "Ministério Público do Espírito Santo cria 561 cargos comissionados de uma só vez",
+   "veiculo": "ParaibaOnline",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNeGhBZUNJWk5lQk0tM1pwd2ZoM2QxVDVyU3VlLThXR3FMc2NFWXpnYnE5aTRZQ3YwSWE3X3NoVzhveEZfcFVEdDNnQ1JDRTg5QU5CU3NKVkhTQjNIWlo0bmZWM3pUNHVGX0FOVV8wTDVXcFczUFNsNHhZVWdmVnVZb1NWZ2RCZzgyTFVlTjllN0paMVB3SXpBVHNHVWxmNjNyN1lHN3pEUXE0NEhMeWZnY0loM041TGRFUGpRS3BhelhOT2R0SkI0?oc=5",
+   "data": "2026-11-25T22:58:24Z",
+   "coletado_em": "2026-11-26T02:51:36Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "pessoal",
+    "controle"
+   ]
   },
   {
    "id": "774e0b28c526",
@@ -494,7 +563,12 @@
    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPU0Q3U29SQ1JKc3hYTlgtMmJtakx4aFFVOVZXd29WQUNTc1FwNk9OTEZ4TVJCaEtMcnppM2hjdG1mRzVERlUxbkhWRDhPME41NjNWTTU4Umg3YkJGU0U3RWhsZXRfZzNlYUdBazRnQkFCcTZoUnRDOUJSdEM4U080Rk9uaWJfVFFGS2xLWlE5NDFaejcyRkgtdkwxRjhxNXNWRXEtclNOSUtYWkVCV1hPU1A0eFBXSWhRZlVkS282ejM0QkNrR3dfQjlWckw?oc=5",
    "data": "2026-11-25T19:08:58Z",
    "coletado_em": "2026-11-25T19:17:14Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "portal jornal do norte",
+     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQcnZENWpVMFVJUHhxa0R0Zk5wdnAya1d1NENJaWpfS2xyU3pGdGFqU3o0VkVya1had2FRSEF6c3hOc09ITnJIUnlhWWFuVDFzeUk3NnBTVEVHNDF4Um10VHlmeXpMZ0M5NEZKdmtrUFhkMGk5NGJtZEFXR3ZIUjUzYXFfeDNrSXkwck4xNmtYN2xpUmc0VEN2a3pQNDM4cEFHZzJUdVdXSmJvVWZtNUlBNXpwSFF1ajgtMWdGYWQxaU5UTmktT0M0ZQ?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 9,
    "temas": [
@@ -718,7 +792,12 @@
    "url": "https://www.folhavitoria.com.br/economia/governo-libera-r-343-bilhoes-do-orcamento-apos-ajuste-fiscal/",
    "data": "2026-11-25T17:25:13Z",
    "coletado_em": "2026-11-25T18:17:15Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "TC Online",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdXlLR0tnb3pXakd4VXUzUHRuYTFESXZaUTg4bU1LYk03UXlQdjdURG5ZQWhtUHd6cHlPMUoyNmZBb3IyVW9RU2x1R1VEdEJ6RGhhT1BITDRycE9wZzBTeVk2Q3dvSDRqNHJLRWtQSVg3aHJsQWVUX29oR2dCVm9MR2RfX1ZhaGstaHRvUk53?oc=5"
+    }
+   ],
    "possivel": true,
    "triagem": 9,
    "temas": [
@@ -804,6 +883,20 @@
    "possivel": false,
    "triagem": 9,
    "temas": []
+  },
+  {
+   "id": "aa4f835805b8",
+   "titulo": "VÍDEO: Travesti agride homem em via pública por suposta dívida de programa",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPTUJPU0ExYWtwaUphYUw1a0JPdV9kczBMZzRwM2s0bndRU3c1UjZnSmlUMlRDZUk5LWk3LXgyY0tsVjJHS0lnYzFLZGxqOGtseVNLdml6UGgyT25JNm43eDdGZHluUVMxMjN5Qy1hcVBnWWdkTHFjZTdNa2c0Q0lYcHNDUXo5dWQ0anFNVA?oc=5",
+   "data": "2026-11-25T14:42:35Z",
+   "coletado_em": "2026-11-26T02:51:36Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
   },
   {
    "id": "0ef4e9ab35c1",
