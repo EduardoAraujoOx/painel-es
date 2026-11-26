@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-26",
- "gerado_em": "2026-11-26T15:17:14Z",
+ "gerado_em": "2026-11-26T16:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 18,
+   "lidos": 17,
    "aceitos": 9,
    "possiveis": 1
   },
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 50,
-   "aceitos": 18,
-   "possiveis": 8
+   "lidos": 25,
+   "aceitos": 11,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -42,16 +42,16 @@
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
    "lidos": 7,
-   "aceitos": 7,
-   "possiveis": 0
+   "aceitos": 6,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 40,
-   "aceitos": 4,
-   "possiveis": 4
+   "lidos": 22,
+   "aceitos": 1,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -66,7 +66,7 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 69,
+   "lidos": 74,
    "aceitos": 5,
    "possiveis": 4
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 12,
+   "lidos": 11,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 29,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 29,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 58,
+   "lidos": 100,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 16,
+   "lidos": 17,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 4,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
@@ -279,21 +279,33 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 369,
-  "possivel": 22,
+  "possivel": 24,
+  "sem_contexto": 358,
   "oficial_sem_tema": 4,
-  "sem_contexto_com_tema": 19,
-  "veiculo_excluido": 39,
-  "outro_estado": 22,
-  "veiculo_outra_praca": 17,
-  "generico_sem_ancora": 11,
-  "excluir": 36,
-  "exterior_sem_ancora": 7,
+  "sem_contexto_com_tema": 14,
+  "outro_estado": 18,
+  "veiculo_excluido": 35,
+  "generico_sem_ancora": 8,
+  "excluir": 37,
+  "exterior_sem_ancora": 5,
+  "veiculo_outra_praca": 18,
   "sigla_sem_ancora": 3
  },
  "itens": [
+  {
+   "id": "489d88439afe",
+   "titulo": "Secretaria da Educação do ES abre vagas para quem tem o nível médio",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/concursos/secretaria-da-educacao-do-es-abre-vagas-para-quem-tem-o-nivel-medio-1126",
+   "data": "2026-11-26T15:45:42Z",
+   "coletado_em": "2026-11-26T16:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "c7f6ec09e8a0",
    "titulo": "Governo do ES extingue 160 cargos comissionados que estavam vagos",
@@ -1508,6 +1520,20 @@
    "triagem": 9,
    "temas": [
     "contratos"
+   ]
+  },
+  {
+   "id": "8aad95ae6097",
+   "titulo": "INSS muda regras da aposentadoria em 2027 e brasileiros terão que trabalhar mais",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNREgyNmhDbkw3Z1FWRmlpSldWQzZVLUNuSXhMaEVuM3BSNzQzSGFNVDlRYk5sOTk1cDNKMmtJeUdIM2dVR1BZSkx5aUZlT3dVekFpeHdIbFprMk1GYUpNMDJ2UVd5MHFZRFJiOVg5c1lUMmJZbWZKcFRBMnVweDNkQjdRek9DWUx5YV9WMXNxZ1p2THRjc25IX1gwSHJvekdtcmJXNUVfX3RMVEgzX0I2MEJhR1R5dzZUY004bE9R?oc=5",
+   "data": "2026-11-24T21:46:00Z",
+   "coletado_em": "2026-11-26T16:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
    ]
   },
   {
