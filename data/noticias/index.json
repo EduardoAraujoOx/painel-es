@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-26",
- "gerado_em": "2026-11-26T16:17:13Z",
+ "gerado_em": "2026-11-26T17:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,16 +25,16 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 25,
-   "aceitos": 11,
-   "possiveis": 6
+   "lidos": 50,
+   "aceitos": 21,
+   "possiveis": 8
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 8,
-   "aceitos": 5,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -49,16 +49,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 22,
-   "aceitos": 1,
-   "possiveis": 3
+   "lidos": 40,
+   "aceitos": 4,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 3,
-   "aceitos": 2,
+   "lidos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 6,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 74,
+   "lidos": 78,
    "aceitos": 5,
    "possiveis": 4
   },
@@ -98,7 +98,7 @@
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 5,
    "possiveis": 7
   },
   {
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 11,
+   "lidos": 10,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 31,
    "aceitos": 0,
    "possiveis": 3
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 28,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 21,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 58,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 17,
+   "lidos": 15,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -232,11 +232,10 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 415: Unsupported Media Type"
+   "ok": true,
+   "lidos": 30,
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -251,7 +250,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -268,7 +267,7 @@
    "ok": true,
    "lidos": 30,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Sim Notícias",
@@ -279,21 +278,33 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 4,
  "descartes_na_coleta": {
-  "possivel": 24,
-  "sem_contexto": 358,
+  "possivel": 23,
+  "sem_contexto": 401,
   "oficial_sem_tema": 4,
-  "sem_contexto_com_tema": 14,
-  "outro_estado": 18,
-  "veiculo_excluido": 35,
-  "generico_sem_ancora": 8,
-  "excluir": 37,
-  "exterior_sem_ancora": 5,
-  "veiculo_outra_praca": 18,
-  "sigla_sem_ancora": 3
+  "excluir": 38,
+  "sem_contexto_com_tema": 18,
+  "veiculo_excluido": 34,
+  "outro_estado": 19,
+  "veiculo_outra_praca": 17,
+  "generico_sem_ancora": 11,
+  "exterior_sem_ancora": 10,
+  "sigla_sem_ancora": 2
  },
  "itens": [
+  {
+   "id": "ce94584bc353",
+   "titulo": "Crédito para empresas e agronegócio no Banestes",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNYXRjcXplZ1owTjVzT2h5SE1RUV9GME1Ic2tjM2N3VGJhYUM1QzM2NkJYYmlOM2FOVjY3RlR1Y0NJQzgzUDdaakVsczBpMUZtWWRwbWM1SHdEQnFZX2F3Zko1bTRnX1A5VFdsOTltcnRFVFFsSDFCOUhoNjZGTEt1U1ViVmNsYlZXSDhHa0VBdFJDQQ?oc=5",
+   "data": "2026-11-26T17:01:14Z",
+   "coletado_em": "2026-11-26T17:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "489d88439afe",
    "titulo": "Secretaria da Educação do ES abre vagas para quem tem o nível médio",
@@ -427,6 +438,20 @@
    "temas": []
   },
   {
+   "id": "09d83b99a32a",
+   "titulo": "Pazolini e Danielle Calazans só se conheceram um dia antes do anúncio: ‘Gaúcha’ vai ser a 1ª mulher a presidir Banestes",
+   "veiculo": "Blog do Elimar Cortes",
+   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPelhseXRNcHZDUFI5bzlmeTZPa0JOMV8wY0UxdmNrRERCMG9UaVZabEl2VlZHYWdXRHVWeE0yLWIyWmJRdlZ4ajdtT1gwd1FxbHhseW1od0VlTkp0ajJ6Z3U3NW9FSWY5eVVUUlVIS3l4NjFXUGhxU3BrTHVZWEVpQ3Z1eTZSWVJSYWg3dEwxWHBIZHhKeE9XcG5Ldk4zTkt0Q1FodmdMNzdOQmFXc1N6MGZKTGZ4UzZRNjk2R29TVTN0VFZxdUZ5eGJ6bWJKeUd5aHJ2ZERfTlNldUVCV05vNkFUX1BIcHBfajNn?oc=5",
+   "data": "2026-11-26T11:04:20Z",
+   "coletado_em": "2026-11-26T17:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
    "id": "ea458fe21433",
    "titulo": "Banestes terá primeira mulher na presidência em 89 anos de história",
    "veiculo": "Portal 27",
@@ -437,6 +462,20 @@
    "possivel": false,
    "triagem": 9,
    "temas": []
+  },
+  {
+   "id": "be9999d419fa",
+   "titulo": "Pazolini indica Danielle Calazans, que pode ser a primeira mulher a presidir o Banestes",
+   "veiculo": "ES Fala",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPbWo4amhKMk5jM00yWTBxZjlKbVRjbHBoYzZwWVNpeUE1UUQ3UDE2ck1IRHczb0J5V1VDOWU4aXRsQUw2MFZ2cmFDSXRpNEt2aXA5bHRnRnhrVG5OXzR3NzNhbkpLcHZidk5BQ2RtYzZtNjFiM09wVkV5c1dId0ZaS2tSaGMxTUtPY2ktUWI1OXNDWEZaYTBCLWJRaldpUTBpZHVaeTJmMA?oc=5",
+   "data": "2026-11-26T10:13:25Z",
+   "coletado_em": "2026-11-26T17:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
   },
   {
    "id": "69ad20b5137d",
@@ -559,6 +598,18 @@
      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNRE9STzRDSlVWM2VobkhmWU90TWhwa2ZYc0poOWE0cXFwUElrV1pUQ2RuMTd0M2Zhdm03MTREekZfUUVleUF0TzhaWjhhNWVyS180TnRSX1BTNjFOWmdxZnlqeXIxNlNjVHdBd2I0MVdkTGs0U0pUTVQ3WlA3WmNFeTJscl9xeTJMUXhSamNBbFdET3pJZTFsTndKTkdRcm1YNFktRjFEd3FEeGY2YThrYVlKWEs?oc=5"
     }
    ],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "31cfa743e75d",
+   "titulo": "Fato relevante Banestes (BEES4): a indicação que o banco diz não ter recebido",
+   "veiculo": "ativovirtual.com.br",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQckJVcjdZLTloODlzc2Fzdl81X1VJalcxT1RwdXZXaDNwaGFpVUNMOHNRekVMdUVJOTZBMDFZZF8wQkVvak82aE5yRC1yR2daSHJzYXdtVkMxMFdVUnZFUkh0Qzh4SzRGUWVaZlhBakVTSnNxWU5IUTUydm1HeXBiMUpkUUpzSzRkSXBiYWFTMnNsU09mZnVCZ1NJLXJMLUpvclRtYTRYZ3lERXk4c2tYY1VETVpld1JibjNJeUhB?oc=5",
+   "data": "2026-11-25T23:01:31Z",
+   "coletado_em": "2026-11-26T17:17:14Z",
+   "outras": [],
    "possivel": false,
    "triagem": 9,
    "temas": []
