@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-26",
- "gerado_em": "2026-11-26T13:17:15Z",
+ "gerado_em": "2026-11-26T14:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 12,
-   "possiveis": 5
+   "lidos": 46,
+   "aceitos": 19,
+   "possiveis": 8
   },
   {
    "fonte": "Google Notícias",
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 38,
+   "lidos": 39,
    "aceitos": 5,
    "possiveis": 4
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -89,9 +89,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 73,
+   "lidos": 68,
    "aceitos": 4,
-   "possiveis": 5
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -99,7 +99,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 4,
-   "possiveis": 7
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -114,7 +114,7 @@
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
    "lidos": 11,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 2
   },
   {
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
-   "aceitos": 0,
-   "possiveis": 3
+   "lidos": 49,
+   "aceitos": 1,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 30,
    "aceitos": 1,
    "possiveis": 3
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 31,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 58,
+   "lidos": 100,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 4,
+   "lidos": 2,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 16,
+   "lidos": 15,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
@@ -250,7 +250,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -258,43 +258,70 @@
    "consulta": "https://www.agazeta.com.br/colunas/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
    "fonte": "Sim Notícias",
    "consulta": "https://simnoticias.com.br/politica/feed/",
-   "ok": false,
-   "lidos": 0,
+   "ok": true,
+   "lidos": 30,
    "aceitos": 0,
-   "possiveis": 0,
-   "erro": "<urlopen error [Errno 101] Network is unreachable>"
+   "possiveis": 1
   },
   {
    "fonte": "Sim Notícias",
    "consulta": "https://simnoticias.com.br/vinicius-baptista/feed/",
-   "ok": false,
-   "lidos": 0,
+   "ok": true,
+   "lidos": 30,
    "aceitos": 0,
-   "possiveis": 0,
-   "erro": "<urlopen error [Errno 101] Network is unreachable>"
+   "possiveis": 0
   }
  ],
  "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 388,
   "possivel": 22,
-  "oficial_sem_tema": 3,
-  "sem_contexto_com_tema": 14,
-  "outro_estado": 20,
-  "veiculo_excluido": 37,
-  "excluir": 37,
+  "sem_contexto": 405,
+  "oficial_sem_tema": 4,
+  "sem_contexto_com_tema": 18,
+  "veiculo_excluido": 34,
+  "outro_estado": 28,
+  "veiculo_outra_praca": 19,
+  "generico_sem_ancora": 11,
+  "excluir": 38,
   "exterior_sem_ancora": 7,
-  "generico_sem_ancora": 9,
-  "veiculo_outra_praca": 14,
-  "sigla_sem_ancora": 3
+  "sigla_sem_ancora": 5
  },
  "itens": [
+  {
+   "id": "9f0480ca64bb",
+   "titulo": "Vila Velha (ES) suspende licitação de R$ 65,7 milhões para corredor de ônibus entre a Terceira Ponte e a Avenida Carlos Lindenberg",
+   "veiculo": "Diário do Transporte",
+   "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQVkN5ZWdQak54eGlpdlpWU084MnNrZ3RGSHNEcXBBTlpwS0RNa3BwcXB0MTM1ZHZsWEltRERzUnpxdzBWMU9KMXZrTDJpdFREa0VDMndRZm1rRzY5QW5FVU5HSFJpZnpmdExtZE4tTXNEUGEycmRDNFc4Z01ySmtKLWVoX0VhaTlfUHVmSFBYN21aVUwwRXBjZktTSE8ycVJMdnZlOXR2dlR3N2o4QTBsQmNuNHlkeGpJVWxkdXFsajYtUGxKVzltSDJGQmFQaDhNSzA4eGRhd0pyRElqamlyMHV0eDFBUVVXNXg1ejB4eXVRWFNDbndkc216US0wemtKZXfSAYcCQVVfeXFMT3ByZkQtdGZSaG9TMWpwbUVWTnY0djV1d0lQODBEWG1VYVVXRENyVk9kMXFteUdOZ3BWczhTOWRKaHhhU2FMbG84UkFPeEh1VjNlUTZDMXlJX25nX1NMUVlfbkNyNml6UVlVV3RsYV9HekZiSkVxOWRza2NERGI5RVN1emZ4b193aEdiSVBiaUdqZF9JT0ktUGdGRy16Nk05dk5nQXlCWXhQV2otajVtZmMzMl9jVTQzTDZUTmwwbThYblNFUHl2d0xwS2dKeDJ2TURqVkJySENjcFRkSzBJTDNzMWdBZVFtNGVFQlZUdTA4QmJFRHVFWkRIZkpnZl9MOEdKbko2dDA?oc=5",
+   "data": "2026-11-26T14:03:07Z",
+   "coletado_em": "2026-11-26T14:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "restricao",
+    "contratos"
+   ]
+  },
+  {
+   "id": "0e3e53c0ddc9",
+   "titulo": "Pazolini discute alternativas de parcerias para o Estado com a vice-presidente da Caixa Econômica",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMVFham5kU2VBcDJxUEswQ0d3LWROUVY1TjdOUjBERURabjJGUXh3VkpwSTFHeW9teVFzYTFuTWxLWGNqTEY5NWR1bi1UQVUyeUpkTDhEaHAyY2FaNXhaTjNHTFk4WTRHQjViM0FkdEhMam1BV1FzOHVMSlQ3b0hxWEZoTlYwYUo2cXpNYmFzZkRHMDdaTUU3UjRfcXBGZXhjb2k0cG4zcXd4c1BXZkwwRTctNWVNVUN4T3paVVNjdw?oc=5",
+   "data": "2026-11-26T13:57:59Z",
+   "coletado_em": "2026-11-26T14:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "e0b36c5e3cec",
    "titulo": "Polícia Científica do ES prepara concurso com 280 vagas e salários de até R$ 10 mil",
