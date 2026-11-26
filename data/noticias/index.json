@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-26",
- "gerado_em": "2026-11-26T22:17:13Z",
+ "gerado_em": "2026-11-26T23:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,8 +25,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 29,
-   "aceitos": 14,
+   "lidos": 62,
+   "aceitos": 27,
    "possiveis": 9
   },
   {
@@ -49,8 +49,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 27,
-   "aceitos": 1,
+   "lidos": 45,
+   "aceitos": 6,
    "possiveis": 4
   },
   {
@@ -65,9 +65,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 5,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -90,16 +90,16 @@
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
    "lidos": 75,
-   "aceitos": 5,
-   "possiveis": 3
+   "aceitos": 6,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
    "lidos": 100,
-   "aceitos": 5,
-   "possiveis": 6
+   "aceitos": 6,
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
@@ -137,23 +137,23 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
-   "aceitos": 1,
-   "possiveis": 2
+   "lidos": 54,
+   "aceitos": 3,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 36,
+   "lidos": 30,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 44,
+   "lidos": 43,
    "aceitos": 3,
    "possiveis": 3
   },
@@ -201,7 +201,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (previdência OR Ipajm OR \"regime próprio\" OR \"contribuição previdenciária\" OR aposentadoria)",
    "ok": true,
-   "lidos": 0,
+   "lidos": 1,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 5,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Folha Vitória",
@@ -219,30 +219,31 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 4,
-   "possiveis": 1
+   "aceitos": 3,
+   "possiveis": 2
   },
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": true,
-   "lidos": 30,
-   "aceitos": 1,
-   "possiveis": 1
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 415: Unsupported Media Type"
   },
   {
    "fonte": "G1 Espírito Santo",
    "consulta": "https://g1.globo.com/rss/g1/es/espirito-santo/",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
+   "aceitos": 2,
    "possiveis": 0
   },
   {
@@ -251,7 +252,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 2,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "A Gazeta",
@@ -280,19 +281,93 @@
  ],
  "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 392,
-  "possivel": 25,
-  "oficial_sem_tema": 5,
-  "excluir": 37,
-  "generico_sem_ancora": 8,
-  "outro_estado": 28,
-  "veiculo_excluido": 41,
-  "sem_contexto_com_tema": 11,
-  "exterior_sem_ancora": 8,
+  "sem_contexto": 383,
+  "possivel": 32,
+  "oficial_sem_tema": 4,
+  "excluir": 33,
+  "generico_sem_ancora": 10,
+  "outro_estado": 32,
+  "veiculo_excluido": 48,
+  "sem_contexto_com_tema": 22,
+  "exterior_sem_ancora": 9,
   "veiculo_outra_praca": 17,
   "sigla_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "1adc1a52e56f",
+   "titulo": "Trabuco aceita convite de Lula: quem é o novo ministro da Fazenda que defende ajuste fiscal e 'reduzir desigualdades'",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/mundo/trabuco-aceita-convite-de-lula-quem-e-o-novo-ministro-da-fazenda-que-defende-ajuste-fiscal-e-reduzir-desigualdades-1126",
+   "data": "2026-11-26T23:13:40Z",
+   "coletado_em": "2026-11-26T23:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "b294092f6cea",
+   "titulo": "Seleção da Sedu oferece bolsa de R$ 2,3 mil para nível médio",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPZlFTd2gxN0N3TTE0VkVmOFBhT2dHYUZTX1M5WDNzaEJud0Raenk4LUoycEpHT1FrQlBnbFZuaDZ4eWVHSWExVVNrY2RQVV9Ba2NvVXlxZThLSGVQNURyb1ZrWUpDVWlXYzVscDMzSXNzclNMSDNTRVd4Nlp1Z3F5Mm1CT2t0cVk2ZzZPb0Nmdm5kdw?oc=5",
+   "data": "2026-11-26T22:53:39Z",
+   "coletado_em": "2026-11-26T23:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "d6e6bdb0bb98",
+   "titulo": "Trabuco aceita convite e será ministro da Fazenda do novo governo Lula",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/trabuco-aceita-convite-e-sera-ministro-da-fazenda-do-novo-governo-lula/",
+   "data": "2026-11-26T22:44:59Z",
+   "coletado_em": "2026-11-26T23:17:12Z",
+   "outras": [
+    {
+     "veiculo": "Folha do ES",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQajlyZXJDTFNYMktVQk1ac1pJMF9mNEJWVWx0Y2JrcUh0R3kxNFc2YkVYRHZyZUd3cmJ4d0JlbVhNNVpkeXZMUGhVcTRtNm13MkdaUjhKQ3l1SkRJWm9TZjRmdnZlRXhnN0Y2YlVrZVpMSTItdDZBRkduem1JVFB6UHgzNkU1RGl2azFvSktnbHRRdEthc3VUUw?oc=5"
+    }
+   ],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "ccb4cc887efa",
+   "titulo": "Região Metropolitana do ES pode registrar 125 mm de chuva nas próximas 24h e servidores são liberados mais cedo em Vitória",
+   "veiculo": "G1 Espírito Santo",
+   "url": "https://g1.globo.com/es/espirito-santo/noticia/2026/11/26/regiao-metropolitana-do-es-pode-registrar-125-mm-de-chuva-nas-proximas-24h-e-servidores-sao-liberados-mais-cedo-em-vitoria.ghtml",
+   "data": "2026-11-26T22:21:56Z",
+   "coletado_em": "2026-11-26T23:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "a3e9599fa8e2",
+   "titulo": "Justiça suspende contrato de decoração de Natal em Colatina",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/politica/justica-suspende-contrato-de-decoracao-de-natal-em-colatina-1126",
+   "data": "2026-11-26T22:19:00Z",
+   "coletado_em": "2026-11-26T23:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "restricao",
+    "contratos"
+   ]
+  },
   {
    "id": "9ed49061e4ba",
    "titulo": "Opportunità! Itália mira negócios no ES e quer aproximar empresários italianos do Estado",
@@ -327,7 +402,12 @@
    "url": "https://www.folhavitoria.com.br/politica/governo-do-es-acaba-com-160-cargos-comissionados-nao-ocupados/",
    "data": "2026-11-26T21:14:59Z",
    "coletado_em": "2026-11-26T22:17:13Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Folha do ES",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOaGxNZUFoNXpIV0pFUW9WRlViYXVXb0xTRkZhZkxldmlXSFVLQ1FDVlp1eEwtejI1WlU2NnZ3cllZaFY3dFRqSUhWQWxqaVh0clR1WWpqTG15ZkNEMmhVckxCSHdGdURDbDVIRmxDMnppUzlsSmtPTmVUcWJGSFlBUGQzVFlpWjBpbnZGcg?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 9,
    "temas": [
@@ -1056,6 +1136,18 @@
    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRzdjUmFnSjY1ajd4VVdfOHl0OTBERExURTNXNFAtd3d3ZFNDMGF5VEFVR2ZnbklHSkZSUlE4NGhVT0lJLTg1NHhHaE54Uy1tUzNYRDVubzNDbzQyLUhDbnJocHV6XzJxVjg5dWxGSDVObkdHaWJsNVRBNU42VGc0ZkNjd1lUdVZaZVR6RTdSbWJDbm5pZVBZZ2tB?oc=5",
    "data": "2026-11-25T20:34:00Z",
    "coletado_em": "2026-11-26T22:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "b3e96bc1251c",
+   "titulo": "Nova exigência do Detran do Paraná altera transferência de veículos no estado",
+   "veiculo": "paranahoje.com.br",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNV0VJVUpKMmxtTEpmT1N3YTlDalh3TS1GaUJFaXhRTGNnZXJ3ZzM1NkRnNU5CTGNCeWNmYnlRRmJjV0hSSjRnWDRfQkRhOE5Ka051WkNaNEFmQVIwVkZBMDZmZVhHTERNdkZocV9QRFJCQ0RxT2NYYzBVbEdaVWdrSkN1UDhMaVRpTzdRNHg1ZHlwNFhNZXRHNGdDM1JmRHlQbnZ6VHJUVQ?oc=5",
+   "data": "2026-11-25T20:25:29Z",
+   "coletado_em": "2026-11-26T23:17:12Z",
    "outras": [],
    "possivel": true,
    "triagem": 9,
