@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-26",
- "gerado_em": "2026-11-26T17:17:14Z",
+ "gerado_em": "2026-11-26T18:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 50,
-   "aceitos": 21,
-   "possiveis": 8
+   "lidos": 26,
+   "aceitos": 13,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 78,
+   "lidos": 80,
    "aceitos": 5,
    "possiveis": 4
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 10,
+   "lidos": 12,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -137,9 +137,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
-   "aceitos": 0,
-   "possiveis": 3
+   "lidos": 50,
+   "aceitos": 1,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -147,21 +147,21 @@
    "ok": true,
    "lidos": 28,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 21,
-   "aceitos": 2,
+   "lidos": 23,
+   "aceitos": 3,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 58,
+   "lidos": 100,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -278,19 +278,19 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 4,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "possivel": 23,
-  "sem_contexto": 401,
-  "oficial_sem_tema": 4,
-  "excluir": 38,
-  "sem_contexto_com_tema": 18,
-  "veiculo_excluido": 34,
-  "outro_estado": 19,
-  "veiculo_outra_praca": 17,
-  "generico_sem_ancora": 11,
-  "exterior_sem_ancora": 10,
-  "sigla_sem_ancora": 2
+  "possivel": 24,
+  "sem_contexto": 396,
+  "oficial_sem_tema": 3,
+  "excluir": 41,
+  "sem_contexto_com_tema": 21,
+  "generico_sem_ancora": 10,
+  "outro_estado": 23,
+  "veiculo_excluido": 33,
+  "exterior_sem_ancora": 9,
+  "veiculo_outra_praca": 18,
+  "sigla_sem_ancora": 3
  },
  "itens": [
   {
@@ -300,6 +300,18 @@
    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNYXRjcXplZ1owTjVzT2h5SE1RUV9GME1Ic2tjM2N3VGJhYUM1QzM2NkJYYmlOM2FOVjY3RlR1Y0NJQzgzUDdaakVsczBpMUZtWWRwbWM1SHdEQnFZX2F3Zko1bTRnX1A5VFdsOTltcnRFVFFsSDFCOUhoNjZGTEt1U1ViVmNsYlZXSDhHa0VBdFJDQQ?oc=5",
    "data": "2026-11-26T17:01:14Z",
    "coletado_em": "2026-11-26T17:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "f568316ea0ad",
+   "titulo": "Japão suspende compra de aves do ES após Idaf confirmar gripe aviária",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNbXpGZnJSWVRHdl9lTGxiY2NXdG5aeDZ3X2xsNXBXNlJGaHJWUG9IMDFTMWhzUnIwcXhHak9BdnF1c2pjRjZnTi1MZFpzYXRTTHNiR3RidzlPOXBmVkRMcVpFVGhzYVM4VHpqUVd3NmU2ODg0ZDduQkJzM1hEQlkzY0pWd2NXY3lpS1JMVkdndzRrY0N1Rm1VZTJfMlFqMlBQTXU1Q0ZvOXBBUlp1WnJvbW93V0V0RkVrRnVraVpxUVgyOTg2RF8wczdIdVgyWlJaYUtzZXIxWldMZEhxLVFxetIB7wFBVV95cUxOS0tEWW5uQUM3Q0h3OHduY3JqbTVjdHp5UXdIZF9Cb1FDMVNMNUFPdDRvamtuU1BuNlZOODNYQ2g4d0JPQnNsZ3Uwb0NyM2FHZ0FPWkhCbmc2VXN0Mm13YU1NcS1ra1JicU5DNmRMclRSQVg3bVN3RDI4Z1FDV3Q0ZmNyY1NnWXk0cDEzdS14N2lMbk1FdWlXcnlFTVV2ZVZpNmZDVHB1RGp1TjJxZmlFYW5iNTdnUmZZeTVJN3V6WHZMSVRMSVRIbXd0WFdtZDd4SnlrQXdqcFNqWDRiSzJhMGdrUjBqRHJhSFhjUGQ1TQ?oc=5",
+   "data": "2026-11-26T16:42:56Z",
+   "coletado_em": "2026-11-26T18:17:13Z",
    "outras": [],
    "possivel": false,
    "triagem": 9,
