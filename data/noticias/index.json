@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-27",
- "gerado_em": "2026-11-27T12:17:14Z",
+ "gerado_em": "2026-11-27T13:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,8 +25,8 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 61,
-   "aceitos": 30,
+   "lidos": 59,
+   "aceitos": 29,
    "possiveis": 8
   },
   {
@@ -41,17 +41,17 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 5,
+   "lidos": 7,
+   "aceitos": 6,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 46,
-   "aceitos": 7,
-   "possiveis": 4
+   "lidos": 26,
+   "aceitos": 2,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -90,14 +90,14 @@
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
    "lidos": 89,
-   "aceitos": 5,
-   "possiveis": 4
+   "aceitos": 4,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 86,
+   "lidos": 82,
    "aceitos": 5,
    "possiveis": 5
   },
@@ -114,8 +114,8 @@
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
    "lidos": 14,
-   "aceitos": 2,
-   "possiveis": 1
+   "aceitos": 3,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -137,31 +137,31 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 52,
+   "lidos": 49,
    "aceitos": 4,
-   "possiveis": 5
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 42,
+   "lidos": 31,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 27,
+   "lidos": 26,
    "aceitos": 3,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 60,
+   "lidos": 58,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 8,
+   "lidos": 7,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 19,
-   "aceitos": 7,
+   "lidos": 21,
+   "aceitos": 8,
    "possiveis": 1
   },
   {
@@ -210,8 +210,8 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
-   "possiveis": 3
+   "aceitos": 1,
+   "possiveis": 4
   },
   {
    "fonte": "Folha Vitória",
@@ -232,11 +232,10 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 415: Unsupported Media Type"
+   "ok": true,
+   "lidos": 30,
+   "aceitos": 2,
+   "possiveis": 1
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -279,22 +278,76 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 394,
-  "possivel": 28,
+  "sem_contexto": 395,
+  "possivel": 32,
   "oficial_sem_tema": 4,
-  "sem_contexto_com_tema": 18,
-  "excluir": 42,
+  "sem_contexto_com_tema": 17,
+  "excluir": 40,
   "veiculo_excluido": 41,
-  "outro_estado": 25,
-  "generico_sem_ancora": 8,
-  "caixa_alta": 1,
-  "exterior_sem_ancora": 10,
+  "outro_estado": 23,
+  "generico_sem_ancora": 6,
+  "exterior_sem_ancora": 8,
   "veiculo_outra_praca": 16,
   "sigla_sem_ancora": 5
  },
  "itens": [
+  {
+   "id": "c26fe3ef1d27",
+   "titulo": "Temporal provoca 185 mm de chuva, interdita rodovias e suspende serviços em Muniz Freire",
+   "veiculo": "Folha do ES",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOb2F5RV9OQUJlZmRBQllLRWYybE1LakJqR0hhNGtjLW82c0haWW5NNExTUWJIeFlweWpsR21oeUtUbUJpQm83aG5KZkQwX2hOTmNVekh0VUxwem43dHY4VWVKaWpNOFpiY1A1WU9BUTZlb3pXdFZub3BJRHZjT1RGX3lB?oc=5",
+   "data": "2026-11-27T12:56:02Z",
+   "coletado_em": "2026-11-27T13:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "restricao"
+   ]
+  },
+  {
+   "id": "5c185d76a589",
+   "titulo": "'Decisão amadurecida há anos', diz carta sobre aposentadoria publicada por Chitãozinho e Xororó",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/hz/tv-e-famosos/decisao-amadurecida-ha-anos-diz-carta-sobre-aposentadoria-publicada-por-chitaozinho-e-xororo-1126",
+   "data": "2026-11-27T12:39:17Z",
+   "coletado_em": "2026-11-27T13:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "07463c99c188",
+   "titulo": "Pazolini escolhe primeira mulher para presidir o Banestes e confirma auditor de carreira na Controladoria-Geral do Estado",
+   "veiculo": "Portal 27",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQMXAzN1dYczlEclV5YUVIU1pIcHdTeUM5SkNTRXl6dDlJRDFwcXZyMks2S213ajFmZVh3c1NjdHhxdlR3TUMyRHV2ejdXeVJmbTV4WmdmY3puX1ZvQ1VMUWExTjJOVVMyVUFlYUM5c2dNSTMzR0VwMWVzNlc0OXJYU0FGQ0dpTGVFNGF0VzNkcE9QcWVMR2p5aDZJbHVVdF9JNnFHRWt3dUJaLVdjMmdkVnFTR1JJWEZFTVRoZnAzTmU1QWc3cnNhenNqWndhN3BDY2lWSUZZVjk2R1FKNy1veHdKdF8?oc=5",
+   "data": "2026-11-27T12:39:14Z",
+   "coletado_em": "2026-11-27T13:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador",
+    "controle"
+   ]
+  },
+  {
+   "id": "ccc0a5571a17",
+   "titulo": "Iema inaugura estação móvel para monitorar qualidade do ar no ES",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/meio-ambiente/2026/11/iema-qualidade-do-ar-no-es/",
+   "data": "2026-11-27T12:03:04Z",
+   "coletado_em": "2026-11-27T13:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "2502bb04e6a0",
    "titulo": "Detran prorroga pela quinta vez contrato de vigilância de R$ 6,9 milhões por ano; acordo chega a seis anos",
