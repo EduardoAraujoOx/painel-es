@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-27",
- "gerado_em": "2026-11-27T15:17:13Z",
+ "gerado_em": "2026-11-27T16:17:16Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 17,
+   "lidos": 15,
    "aceitos": 10,
    "possiveis": 1
   },
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 30,
-   "aceitos": 9,
-   "possiveis": 9
+   "lidos": 60,
+   "aceitos": 31,
+   "possiveis": 8
   },
   {
    "fonte": "Google Notícias",
@@ -49,7 +49,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 25,
+   "lidos": 26,
    "aceitos": 3,
    "possiveis": 3
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 5,
    "possiveis": 1
   },
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 6,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 86,
+   "lidos": 84,
    "aceitos": 4,
    "possiveis": 5
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 91,
+   "lidos": 81,
    "aceitos": 5,
-   "possiveis": 5
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 31,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 57,
+   "lidos": 56,
    "aceitos": 3,
    "possiveis": 6
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 59,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 14,
+   "lidos": 13,
    "aceitos": 6,
    "possiveis": 0
   },
@@ -226,17 +226,16 @@
    "consulta": "https://www.folhavitoria.com.br/politica/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 3,
+   "aceitos": 2,
    "possiveis": 2
   },
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 415: Unsupported Media Type"
+   "ok": true,
+   "lidos": 30,
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -279,18 +278,19 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 368,
-  "possivel": 28,
-  "oficial_sem_tema": 6,
-  "sem_contexto_com_tema": 17,
-  "outro_estado": 24,
-  "veiculo_excluido": 46,
-  "generico_sem_ancora": 5,
-  "exterior_sem_ancora": 7,
+  "sem_contexto": 390,
+  "possivel": 29,
+  "oficial_sem_tema": 4,
   "excluir": 38,
-  "veiculo_outra_praca": 13,
+  "generico_sem_ancora": 6,
+  "sem_contexto_com_tema": 19,
+  "outro_estado": 25,
+  "caixa_alta": 2,
+  "veiculo_excluido": 46,
+  "exterior_sem_ancora": 6,
+  "veiculo_outra_praca": 11,
   "sigla_sem_ancora": 8
  },
  "itens": [
@@ -529,7 +529,12 @@
    "url": "https://g1.globo.com/es/espirito-santo/noticia/2026/11/26/regiao-metropolitana-do-es-pode-registrar-125-mm-de-chuva-nas-proximas-24h-e-servidores-sao-liberados-mais-cedo-em-vitoria.ghtml",
    "data": "2026-11-26T22:21:56Z",
    "coletado_em": "2026-11-26T23:17:12Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "G1",
+     "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxPZ1R3UkxWWTJualJvemdOZkZZY3djYVR2RThNSWlvZ0x2MGN5N3VhaFd1LWNfbWZtaXB2TkZEWUpsQTE2ajMtWlRDUmt1NXNaalYzMmRQTmdtMS1kNnpOM0t4Yk5FSFJGRHVtYW5VY2RnQWlxeTVDakhYZEgwajZEeWVZY2ZtU0ptTlJGVjZVMXRLZF9EMlZ3c0I4OThmWGZrbVpMbFpBUzR4YzFUbzkwM0Z4T1NBbmJZSUdOY2hlN1ZSWmEzczRSQkVKanU0QzVURGNWWFZjZDJYbnNDZUVwSXMxeGI4OFlxcXRJeU80Umw3bmFzT2diQkFVbVE2RnBMWHlwMkpnRzFfMWcxRDdZYTZVdF80YTh2WUtvV2VmamlxM1XSAaMCQVVfeXFMT2dUd1JMVlkybmpSb3pnTmZGWWN3Y2FUdkU4TUlpb2dMdjBjeTd1YWhXdS1jX21mbWlwdk5GRFlKbEExNmozLVpUQ1JrdTVzWmpWMzJkUE5nbTEtZDZ6TjNLeGJORUhSRkR1bWFuVWNkZ0FpcXk1Q2pIWGRIMGo2RHllWWNmbVNKbU5SRlY2VTF0S2RfRDJWd3NCODk4Zlhma21aTGxaQVM0eGMxVG85MDNGeE9TQW5iWUlHTmNoZTdWUlphM3M0UkJFSmp1NEM1VERjVlhWY2QyWG5zQ2VFcElzMXhiODhZcXF0SXlPNFJsN25hc09nYkJBVW1RNkZwTFh5cDJKZ0cxXzFnMUQ3WWE2VXRfNGE4dllLb1dlZmppcTNV?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 9,
    "temas": [
