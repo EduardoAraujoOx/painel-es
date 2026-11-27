@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-27T15:18:01Z",
+ "gerado_em": "2026-11-27T21:18:01Z",
  "ref": "2026-11-27",
  "desde": "2026-10-04",
  "estados": [
@@ -22,7 +22,7 @@
    "nome": "Amazonas",
    "eleito": "Omar Aziz",
    "partido": "PSD",
-   "total": 197
+   "total": 200
   },
   {
    "uf": "MA",
@@ -36,7 +36,7 @@
    "nome": "Minas Gerais",
    "eleito": "Cleitinho Azevedo",
    "partido": "Republicanos",
-   "total": 478
+   "total": 494
   },
   {
    "uf": "PA",
@@ -50,7 +50,7 @@
    "nome": "Paraná",
    "eleito": "Sergio Moro",
    "partido": "PL",
-   "total": 285
+   "total": 291
   },
   {
    "uf": "RJ",
@@ -64,28 +64,28 @@
    "nome": "Rio Grande do Norte",
    "eleito": "Cadu Xavier",
    "partido": "PT",
-   "total": 168
+   "total": 171
   },
   {
    "uf": "RS",
    "nome": "Rio Grande do Sul",
    "eleito": "Luciano Zucco",
    "partido": "PL",
-   "total": 377
+   "total": 383
   },
   {
    "uf": "RO",
    "nome": "Rondônia",
    "eleito": "Marcos Rogério",
    "partido": "PL",
-   "total": 107
+   "total": 109
   },
   {
    "uf": "RR",
    "nome": "Roraima",
    "eleito": "Arthur Henrique",
    "partido": "PL",
-   "total": 40
+   "total": 41
   },
   {
    "uf": "TO",
@@ -106,11 +106,337 @@
   "fndr": "FNDR e reforma tributária"
  },
  "contagem": {
-  "total": 2493,
-  "medidas": 820,
-  "equipe": 1673
+  "total": 2530,
+  "medidas": 822,
+  "equipe": 1708
  },
  "itens": [
+  {
+   "id": "1d67885f935c",
+   "titulo": "Cleitinho anuncia nomes que irão compor secretarias da Fazenda, Segurança Pública e Esportes",
+   "veiculo": "CBN",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOaXFIeU4xVy0yR1ZkUGhzcXVBemhBMkpaOFBqbm1IcUpQa2tWakl0MS1teTEtLVA4SkhXSjBOTEd2aWlVR3p2M3JPTmtVMGJGQkw5OWdoSjFoQTd2QU5xOTRVMmwwcUV1V2loQmNOZFozb1ZHMHFDV01oNlhDanVkOG50S21vbFRWVkZOdkRMNWRPeWRodG1mY2JzdTRmWTVQY2VQSGd2cVpaQVU2WUhPVHhNY29tOGtnZ3I3eWh0dzFFRkpva3VZRzUtRjE3YjlWaEZhRGJ4SU52R3FHU0IxdNIB7wFBVV95cUxOSERnZjhrSXJQV0gzS1g0ckJMdjdIQUFTMlRGVTN4dld3WFNYYmkxR1ZjV29MSktKZFlwbEwyeFJyVXh2T0Mzcm0wX0NWVTNPcVJCelQyTDdwbndYay1Xc0VhMmJGV0NCX3Y4WmRuRXd4MS1zTGZDb2NwQ0NsWm5KY0xxTUd1QjlRT01PZk4zZUtoSVNRa1RFbkNPWXE3b2wxVEI1SWxRX1pDU2RhaURwbFB0S1dPNnFGZjhwZXpiVkdfRUtMZXoyc1h4VTdETm1mVjlqS0l1X0tHeVdnMmY5LXhwalN0MFlIMGVCdjA4MA?oc=5",
+   "data": "2026-11-27T20:39:45Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "be13dba79fa9",
+   "titulo": "Cadu Xavier anuncia secretários de Segurança e Saúde na próxima semana no RN",
+   "veiculo": "BNews RN",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOcUdxeTZPdDQyWkc3LUlRcDQtMVdjUEZmRUItcG1FZXgzejJ2blVmMTdoNEIyRHhCbWU3dVhoWW5FTkk1TGxoTkhzUzJtMXBMazd5bmJPcHZ0Z19pUm45MkZORDh3bjZiR3VURm9IbzBZd1B1UUhGSUFVUk9qRFExV0o2YmFpeHlSZ3R1UEtaLXZ5X0VzZW9wT0h1RktlTVMzUXdmRjhyY19MQ2ZrLVBON3BIU2w5N3pCRS0zZ1hMN05IbkNZ0gHKAUFVX3lxTE51MjVybHNZcFliVDc2WHdXZFJWM1lzNVBLRHkzczJTNHdoUVVXdkJCcEt1MXNsRFAwelR3TFk0eXV5a2lYYm5OYzlOR1lwdnAxOXZsenZpRmZ6UmZwZFlBXzl0QlNJcm4zX19WUnlyRmxncnBpSGp1SnNTYWRSRS13WDY2WFZfLUw3MkpLQlJVcEtGQ3UzVmVadnRhSTctODZjOXhLbVg1aHU5OXlHUmRubTg0U2dISmtpZVdCZDhWaVVfNFlYMlNhUlE?oc=5",
+   "data": "2026-11-27T20:02:17Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "06fcd47136e2",
+   "titulo": "Minas Gerais chega à reta final da transição com déficit previsto de R$ 10,5 bilhões para 2027",
+   "veiculo": "Por Dentro de Tudo",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQOUt2cEQxOUpMR3JoY0h5QjdMT05kS1JqZ24wSk1vVmtPbUdnUWJEeEhNdGYwZGViZWRPTjlaeE5WUlRwT3BrdmQ0N0JweFI5NWk2aTVkQ1ltdHBTYlliandIZ19pNjk3MzIxaWVsWmNyVW9VQWc3VUYtbzRtZmdyV1JXWkdyTTEtYXhnSW5zMTdGTTVwVWtpUXRXT2pGNnNYeXFfWnpDdGZValpFeC12WndEMTlzVGJScXBwbDdhdnpBUQ?oc=5",
+   "data": "2026-11-27T20:00:00Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "6e026175a066",
+   "titulo": "Cadu Xavier diz que equipe de governo terá perfil técnico e anuncia novos secretários na próxima semana",
+   "veiculo": "Portal Diário do RN",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQTEo0RUtMS3M5OERvbkljcFA3NVlYOER6STZQbk1zX1pENEI1ZHU2TWRIWUthZmtxWV9EQjg4bHhMcXJoTHRaNFQzVEJ0TllkaVNjdEktbjZuUExfWnBTOXBoV2hSdTJyNkVRTF9aX3IybzF1T2R0SGJMQWlHdUNNemtoXzdrcTJZVk5BbTJmOEZpYnpZTEVRbzFUZ1F4c2MyWE1WeFFUT2gyOWl0dTk3aEJpRnJoLTRRNDk1VlNZX2lVeGJGOXUtbFpn?oc=5",
+   "data": "2026-11-27T19:37:25Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "RN"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "11b0749dd122",
+   "titulo": "Cleitinho se reúne com Álvaro Damião e leva secretário de Fazenda de BH para o governo de Minas",
+   "veiculo": "Impactto News",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPUFRNVC1QcndFdnlkd24zM2QwYkJuLXdVYmdFVk9tazhVMHBRNWQ5aW5pcDlyUEhXUkE3SldMZW11SUdkNjY3QzRVaUFPRTNEUFg3RVFkSi00XzBsWnYtVGZveVlMTnVsYkdRMDYwNUpUQkZPN2NRWjZHMzFCV1ZGWnloaUhCYkJIM05Ic1hBV3lOUHg2T0w0d0tGM3hoUjR4bGxaVXgwTDJxUVgtclFUZjNMRHlXNFhTbTlFckVSRmNhWG1wNl84RDdONUwzbDFObjNtVy1R?oc=5",
+   "data": "2026-11-27T19:28:12Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "2fb329953160",
+   "titulo": "Cleitinho deve conseguir alívio, mas não solução para a dívida",
+   "veiculo": "Rede 98",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPdEtieWFXM1NYVkxWd3RsdTZ2bWRzQjNBRkxSZGhXV2FkczZvZi1UZUR1SDNWZDJCMTZpR1BqdkJNZzRQRDJETzJaeXJKNUR2UjVpR0RzcjVMY25RaEl3YWN5eWF2N08yZmRKLUFJSEZ6NmE0Q0U2TTkzTHRKTXlzbnFvQkVxTEZJczlvVWIyeVQ?oc=5",
+   "data": "2026-11-27T18:53:00Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "a79ebed03bc1",
+   "titulo": "Cleitinho anuncia novos secretários da Fazenda e Segurança Pública",
+   "veiculo": "BHAZ",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSTJyLS1Cc3Nna2l4TlZ2RXMzbTM3N3lMRnVnX3hCc2JjdTNscndtS1lmSlR4WTBMSFpFbTVpRkFmaklwWUJvZW55RjZkSWV2SHprbW5mNm5odm5kbkJ4TjZraTBCMjRVSU5xTXZ6NXJ0Mlh3YjJvRjVUb0FnZ0h4UDM1QzZUUmlIa0ZzOGwwLV9IZ2I3YmtQczZ1NkRjVURWbUk2MEtmc0xnRmNyVlE?oc=5",
+   "data": "2026-11-27T18:26:00Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "3af20e3805fe",
+   "titulo": "Cleitinho anuncia secretários da Fazenda e da Segurança Pública",
+   "veiculo": "Diário do Comércio",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQR2JBNEJrSFd1dThiYVd6aXBzR2ViYXlmTGlIUERQcVpEVm80eklNNlBXM3NZRkh2YWpXdURQV3pvNFAxY3JvVGNXcGJfUXBRbFVoOVJMeG1iUFJfaW9EaE5PNE82MUVYZ1JaNWU4R0NKNUJtRmlsQW1OaHozbnUtQmh4bWpCd3dDcWc?oc=5",
+   "data": "2026-11-27T18:19:00Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "cf039ca46eb8",
+   "titulo": "Quem são os secretários anunciados por Sergio Moro no Paraná?",
+   "veiculo": "Band",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZzVEb19EYUp1dEUzLW04VEM1eXhoZjZZV01vblh1WGJiY2VWcEVwNkdvd011blVlTndNdEFZY28wQXJaRTc1V2VkLTZQVVIzczZDeEQybkhRSGh6b29HZzNyLXRWR2c4ME5aaU94eGU1eUtuNmdlNXVKa1h2Y2tQVkR3VGU3VHAxNHRzV240V1kzNk5aS05yQQ?oc=5",
+   "data": "2026-11-27T18:01:40Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "ba11573dbd90",
+   "titulo": "Cleitinho anuncia secretários de Fazenda e Segurança Pública de Minas Geraias",
+   "veiculo": "Portal Gerais",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWm5tYWVCMTgwdm1LQXE0V0lVYXpNaVhtSll4QUVUTldmUk12VEhZRS1oR0pfV05nd0tpelFSQ1c2VmJqUV9vdl85T3hIMkQybWNZNEhDMWJGcllWYVJ6VGFlWWJOcWlLQ2pNX0trX0k3RW9WTFN5LWNoMlMzVXFSaVpBS2U1WVJrSVJ6ZjRDbEFsVFp1bThObTVR?oc=5",
+   "data": "2026-11-27T17:59:01Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "7ad9efa739d3",
+   "titulo": "Cleitinho anuncia secretários de Fazenda e Segurança de MG",
+   "veiculo": "TV Sim Brasil",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPWW41UDVyTThVRjcwZnBOYjNhc3E4UTU0NzN0empieEZCeFJrelVHdXluSXdaeklmU3RONDdpcTR5LXJiUGk0TXl0eUNfUDZVS055MWZsV1NhbjVUQzliY2ZxdWw4SUhzVFFwNWpXcW9ZRnVEZkFaSUxVQzVhSzdva3VkaFVxQ1Y3bUY5azZSaGx3RVJWby1YRkJLXzdycFh4QUNlMmpHRUdlWE0wSHZTV0tHODhVZEtJVDN2OFU1eUhmNnpi?oc=5",
+   "data": "2026-11-27T17:57:53Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "1f4d6c99d0fe",
+   "titulo": "Cleitinho escolhe coronel para comandar Segurança Pública de Minas",
+   "veiculo": "Metrópoles",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMmdjUkY0MjFKUGQ2THBISWtlMTZHVldMQ184VWY5Rzc2akd5cEJyeWphMW5BcjBISU5yVjJidWt6X0tQU3ljQzY4b1Y0YndvanlQNmVsOFRfWUVsNTVvYUNJSGY3d1pEUUIzZDZ0Qmd6X09NNGRiYVhnUC1uOUZvNEpjMllFNXZOd0U2eGFrb0l5SXdoVmowcmNPWjlGQ0k3ZmxfRnViQTY4UQ?oc=5",
+   "data": "2026-11-27T17:46:00Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "fbc0810b106b",
+   "titulo": "Cleitinho anuncia nomes para as secretarias de Fazenda e Segurança Pública",
+   "veiculo": "Estado de Minas",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOOG9rcFU1TEp4QXoteERTU3psVWtOQ1JMQnJ5bkxXV1FTbTlTLXZWVGgxYTF1RHZMNTVJcDZLMWFJUUpsTC1DWFBkYVRLV1VzckRBQlhYZXowRnNGbGhJUnhJd0ZnaWNhWkR3WkdFN1o1cGVjb3ljX2t6cXRxVXhZWGlJQnJnZFpYaUptYUY5cHlQanZjV2JDS0lLZURmMEdpVWk0aGFfbDR1eXh6VGt1ZjVnOW15TUFIQnhNZmp3X19tdThq0gHKAUFVX3lxTE5HQWs2ckFlelA4QkhzVnNQTFZKb2tVTmNEQXltWnVQRWFzS3c0OERhYWlXMi1xaDNFMGx0b3B6MldKRjBWTzNFV2hQTGpGdXFhQ3FxS3hEVGZQQ0xJQnJIclJya1R4ZUp3ZmlZLU82Q0dwU29vOGc1NVNzZ0lpSHBTQkhESC14X2t3b0otc05mQnRsSVQ5MVZpNExla1NvR3Y3RzMwNXQ1M3BPSFdzemJ4OWxhUy1aTHExa2cycWxzM3BKMUMtTzhRMXc?oc=5",
+   "data": "2026-11-27T17:42:00Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "2c6d91a6e352",
+   "titulo": "Omar Aziz estuda levar gabinete para o Palácio Rio Negro, no Centro de Manaus",
+   "veiculo": "EM TEMPO",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQaWtuVzdWU1dNSm52Y3M0bTJNVmQxdmM4NFdrR2MtZFpuSGlrQkpxczM2YW1hd0tranhKRWlNR3FwZFU0c1M2Nks3WjBocjZsTXpTZm4zMWJneU55LWg2X2tKVnNTY3YtY21TVDF3OVg4Wk1nVWQ5SDdIZ1JabS03WF8xQk5WdUp2YUxB?oc=5",
+   "data": "2026-11-27T17:37:05Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "b7bfdd64b9b1",
+   "titulo": "Cleitinho define secretários de Fazenda e Segurança Pública de Minas",
+   "veiculo": "Portal MPA",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbXZxaXdvejg2UnJJejRYb05XaEV3b1Z1bU9kM1hYdGhtbDh0OENRZzMxMFpsODNCOEZtem5iOWttUU4tVDFxemNRcFk3YWtOSllhTFhlMTRwZEZLYzlpaHVaVml1LTFoTXlZTlNZbkZhbUJ3alhLd0hZSmw0Y29pejNXUmtRb2VPaTFKODh0RTlKN195OVI1TzVkN1dubzJ3NUtTSk42b1JsNkJvQnJwaHVn?oc=5",
+   "data": "2026-11-27T17:37:00Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "e18f412d3571",
+   "titulo": "Cleitinho anuncia secretários de Fazenda e Segurança Pública",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPLWVrQzREZlk4ck9BWm5xNlAySzV0dDJTN3JIcGJ1UWpsZS1QRUh6MDNJMUlnMmd5OUJuY2Fha2E2SFVOWGNwWmxSdW55eEkzbHhSZHRQSEFqeUV1Q3VJWTM5MWlZbmtfcy0tZHFQdS0xa1RtMVRubk1HcFNPa0pMV1paRGxfWFotRTJzRmxLTVI1dkhZSHFNSlFjNEs0aW5CTjZWcWZ4aDRBY0hSWDVOWHhsQ0JiOUN0Z0V5a3kxOXdKTDRhdTZWY0hobk04Q1HSAd4BQVVfeXFMT0M5MFV6YUlLelM5ajI2U0hWRmZmV2czbzhwUXVHWnhERlI1a21pRTd1ZlQ4elE2SGZzcGxLa21yVUJVWi1rTWxONlBJNVJMSWtGMVdqT21ZU19oMFVSWE5IdDhEcWY1ZXVYbnpLU3pGYllqRGVURjBscUxKYjR3c24zR2VJQmp3X0JwU2NWb1JpY0JwckIyTEVBVUlpUWY5RnB5dHNWcXJNbzI5d01KTjR6ZzI1S09SU252ckxZak52UDk3SGNLSFBSZkxjckFjM3UzaURLTWE2Qm16cUNR?oc=5",
+   "data": "2026-11-27T17:31:06Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "55aa69dff79b",
+   "titulo": "Cleitinho anuncia secretários de Fazenda e Segurança Pública para o governo de Minas",
+   "veiculo": "tmc.com.br",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxObm56dEV3ZnhlMWVXTm53NjFqaDlMVGI1Nlo3QjhmTUR5aU5wSTVteEZzZENSX0l3RGJOaWVsdUZNWXZmV3c2OUlrdm9UdUhhTGh5NmdnR3RPTG1kS0RZLXhLTUF3dm1Jd3dsUURDZFlubEVsMzVkSnFiZHVoSDVrUmxQSXljdjdDU3ByZzdSXzY?oc=5",
+   "data": "2026-11-27T17:21:02Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "a5e72e684acc",
+   "titulo": "Sergio Moro anunciou o comando de sete secretarias para governo estadual; confira",
+   "veiculo": "Maringa.Com",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQalo3enB4M3o0cmRPdjl6QUVGdDloLU1rQzZtaHZCS2VpejlpMHExdkNYMWZsWHFUR0hsbmxDclVoMUttOFZHYV90R2hCdm10bFlpZE9ja19SVVFfbWZGdlBGSGV1bW1uSllYd3ZsZHNSMERieE54dlJKUXlueTdmTUEtOUtVZXZqNDlORnVLTG1Gc29CM2cxZnJnMDRraDdRbG9oWmVqU2NoMWF3MEJfOWU0QWRxZw?oc=5",
+   "data": "2026-11-27T17:19:20Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "9a7a5daed2d2",
+   "titulo": "Cleitinho define secretários de Fazenda e de Segurança Pública",
+   "veiculo": "O Tempo",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUEJ3d1pfcnVjVHdiTUdjZ1BINVlNdVZ4MWVUN1BsRjVROVRWQTMyS18taHExT09NLVFkS1RDWGlGY2ZXMV92S3FXYU80OTRpV0VjaWIzdU5DZlR5MDNTWDh4azVmUlFDSkIyamZOX0RQb2c4N2xzNV8ybkRKdlNta2IxdTM0UkdneTJvOUpqNUZLclJjU0RhRG1nMXY1YnNkMEtJNmxBZy1yUGEw?oc=5",
+   "data": "2026-11-27T17:18:36Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "c3f43a1f9798",
+   "titulo": "Zucco escolhe cover de Elvis Presley para comandar secretaria no RS",
+   "veiculo": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZkZLeDFfOC1MQTdTR0UwbzMyN2ItZmFfejE2bm10eTRmUUtoOElCNEtvd2pocjZqYkNBSUFNb3J4V1VtMG9XYzVXb2ZHVzBYdUZDRXZ0RlY3cVc0Q3BQQ2x3TWVBUzdNVDBnWGZXd202YmY5bGRuUll2aUhYd29RbjcxX3Bzd09sQmhOaGpSRDJRTXJ6TmVkREV5WDNvdkFFVFNvTS10YW9Qdw?oc=5",
+   "data": "2026-11-27T17:06:11Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "0254eff4476a",
+   "titulo": "Moro anuncia Casa Civil e PGE, secretariado do Paraná soma 9 nomes",
+   "veiculo": "TV Sim Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSnk2b3oyREdrbHE2ekFQZTIzOURMRjdnM293QXExMTJ4T2hxQ0lpMVRETl9TRjdBVDJReG91eWFfMWZKUjdVTUNfTkRIY3ZVU0NqbGV5anBWcVhkOUlqbnY4cHNpeU5TcjFXaVV3Y1BMcDZ3SHliWEROdHBWQWhpYzF2d3hIcnFqT1JfMkl6VHIyampxZkxPVGVHZTFSeXV1ellHYUVSaTB3dm1lSU00SUpIdGd2QjJLcXVLQVV5czA4ZEE?oc=5",
+   "data": "2026-11-27T16:53:45Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "da086f55c9fc",
+   "titulo": "Pedro Lupion recebe convite de Sergio Moro para comandar supersecretaria de Agricultura e Meio Ambiente",
+   "veiculo": "Minuto Rural",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNWk5XZDBQX21ROU9KWEVWQlJkMDNpWnhMSGxZSnhha2VSWnpWVnVkb0xFTm1ELXhPQ3FQb0R2R2M1QVVkQnNhdl85dVZNUlIwdW9BREJfcXFzcTk0S21YSW1KZnp4LTEzMWZJZG93VXdDNTdvOEswY011TEZxLXBEQ0FwcHBuNzhRTjJSNWpOUVhDRnh1MTVJaU1mTF81M3R2X2tMTEZ1WnZVMDdRX1VTcEw2ZjJScHR3NjVzek5fV2t5Tnc1Yi1FTzBUc2wxci1Jd0ZCU2JLb2VYTklubDhNN0l5YksxX3c?oc=5",
+   "data": "2026-11-27T16:32:00Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "b01796363854",
+   "titulo": "Cleitinho anuncia Pedro Meneghetti para a Secretaria de Fazenda e Coronel Azevedo para a Segurança Pública",
+   "veiculo": "Rádio Itatiaia",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPMWRSeXZmMFBzaldib0RjWkdwRkEzUk9Yc0IxYXcteEFKUGpWSERYcEo2d1AtZW9iZXBTVzNOUFRQWkhLZmRWMzFZZHJOOXJwRjdpbm5mNk5xeTkxX3VUMHRKRERLU1d5dE1zM3pCY2lkZHpfdG9JRVFMM0VLcFgtMXY0THJpTmVBb2NySDNSTFBlWFNteFV4V1psbEN2SDk2VHB5ZlRaNDE2MEhUMy1GNWRkaXhpM012VTkxNzhsOHJLSVh2d2g2aFkwRFBORTItel8tS0RjMWNhRTBH?oc=5",
+   "data": "2026-11-27T16:08:44Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
   {
    "id": "46e59616986a",
    "titulo": "Ana Pellini será secretária do Meio Ambiente no governo Zucco",
@@ -140,6 +466,20 @@
    ],
    "ufs": [
     "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "6f0a093edfd2",
+   "titulo": "Bastidores: sete nomes são cotados para o governo de Omar Aziz",
+   "veiculo": "Diário da Capital",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPemZOUU9kSUc2UjJHN2VYWjh6eVpmZElNS2MybzJBWXZZTUNTcXAyTEJUMnR6bDZWdGtEaXg5eWQzNGxLXzN1ZDBMYWFTeFpaYTF6eE03QjFGcy15TldEcmRaM0IwVXR1RWVqOXBrM1d6QWk2NlVveGpnTXdHMl96akJUQ0lXTVpQWkxMWC1vby1IOVhCVE1OMFRlX3dCY1dG?oc=5",
+   "data": "2026-11-27T14:09:34Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "AM"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -229,6 +569,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "915439f9588e",
+   "titulo": "PARANÁ: Sergio Moro anuncia seu atual chefe de gabinete no Senado para comandar a Casa Civil e Vinícius Klein para a Procuradoria-Geral do Estado",
+   "veiculo": "Coluna News",
+   "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQYmNuUF9JRVVHTXZUc3drNDM3cUcwSTJCb2FQanZtd0FkVEZFWm51dVBYeFo4R3ZCRWpscE1uTGJuX3VGdHJmbDBJeHJXSkxQbEtjaFphUG5Fa0dqb1FsNTZkYUliZldPaWFRaUxjaE1tQzVVMTVMamdmaDBXdXY0bmZHckVTRDY1T21RUFI4SVgxaUZYbjQxUHAyWWduaEtXV0J6VmN6cHhWWGVuUDFjdHVVZjZrN0NGekp5T0JyZmxWZ0VjZTRwUGJMTnpKaHFOb0c1VTVuNXdpNmJfd1FkdXZuUmlfZW52NTRGdm91eHlSNUx2Q01hOFBpbF93YTBQVjJoQVB4OHZmSTFxNzE0?oc=5",
+   "data": "2026-11-27T12:23:00Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "ffdb0fa0518d",
    "titulo": "Sérgio Moro anuncia novos nomes para o governo do Paraná e define comando da Casa Civil e Procuradoria",
    "veiculo": "ND Mais",
@@ -271,6 +625,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "bb151c3c67ae",
+   "titulo": "Sergio Moro apresenta futuros secretários da Saúde e da área digital",
+   "veiculo": "Correio do Povo do Paraná",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNSlBQcHVVaElKdFE0Tk9hN2ZBN2FIb2h5c18xVXhqbENVRVJHd2d6bEVJQTFTRHhVbDl0NUZjTi1OUzlDa1VMMHNNUWd1WkVaU0I5czlkNVp6NHVzZ05sRWlIRHJvYzF5MDFtX1lNXzZpZHNoYUdIaTdlWGZjQVRmZ0RSc2FoR3ZTcnlwVFJRamJKejJfcHBrVVA3YkYyQS1uaC0xLWtvOVFSaVVLLTcw?oc=5",
+   "data": "2026-11-27T12:04:08Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "9608ba8046de",
    "titulo": "Cover de Elvis Presley há 20 anos vira secretário de Zucco no RS",
    "veiculo": "TV Sim Brasil",
@@ -280,6 +648,20 @@
    "outras": [],
    "ufs": [
     "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "0abc61221791",
+   "titulo": "Secretariado: Cadu Xavier segue a cartilha do Papa Leão XIV",
+   "veiculo": "Blog do Robson Pires",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPaHdmUC13NkVNUkN2TC01elBZNUZiZE0zenNXdHMwN0pyUkM0TG5ucXpvcngxbk41RG1WRE1VbkJpU2kySjN5Y0drV2ZqTlNGRUJ3RXBQOUdzMUdlZXNoTHhLZFBDdkNCT1FkWUVSZFh3RXF0dG02aHozLVNTY19pSHBvbnhiT1FQMng5MUFuMFlTUVE?oc=5",
+   "data": "2026-11-27T11:55:34Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "RN"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -308,6 +690,20 @@
    "outras": [],
    "ufs": [
     "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "c77ee082b6fa",
+   "titulo": "O governador eleito Marcos Rogério está quebrando a cabeça para montar seu secretariado",
+   "veiculo": "Gente de Opinião",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPWloxV3NtVGhTcDRIemFWZENmYjhGRDI1ekRWT2x3MFNwR1c3RDlTZHI1djlwUS10SzhEZ0lXNEM5MXYxVUo3UkE0Wk41Z3pLaUtmNEl3Rng3amg3MjlJckJNVktQajFpZzFDN2lXdVYzSENBbERMSzJTb0dJVWxHNWJPN3lSa1JHeXAzMkNDeklxY2Q2WnRBMDRIS041dkZwMUhDR3B5ZU5xX3RiUGo1akh2ODBvTERTRjFvSFhFSFpnaks5cTZjV0hqU0RwSHdKQ09R?oc=5",
+   "data": "2026-11-27T11:25:00Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "RO"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -350,6 +746,20 @@
    "outras": [],
    "ufs": [
     "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "43866ca5d2ce",
+   "titulo": "Fontes da transição confirmam a demissão de 10.700 cargos de comissão no governo de Rondônia.",
+   "veiculo": "valoremercadoro.com.br",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNRG9SMjQzUWJkZE9OcDM5WnBndHNXTHM4QXEwb195OVEtSkZCLS1NX2tQWVpicWZid0VZNVYyeURKOVZITFZhVFBfN1dkTUNZejZScDhoSVBSa1RHajY1a3c0bU1fUVdQUjJYQ3Z4TmxqTFZ3WThwaVlkWnNvQWVpYXZnYlZIMXZsZ1lCclg2U2NfZkFIV1Y5SHBxMGQydTNFeU9aRE1rVkgtSGJJcTF6Ynk1R1lLbWJOckxGZGJ2QXk4a00xT1pZ?oc=5",
+   "data": "2026-11-27T10:45:45Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "RO"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -1600,7 +2010,12 @@
    "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPTkotQ1hkaU94bE1UYk84QU9LZ2g3dGRCclM1QmhqN3RBVnA1ZlVxT182TXU0azByQ1p5R25yaGhZTW9qQ1ZvTjZxNnVZQUNQdEpfQlFPXzM3a2FnVFBUWmQ3STJwUXRSejBVbXN3RmFGRDdYWWpiYVlWOC0xTEE5UGNzQWZNVk9NbzdMZHJKUXd6WldVNVBhT19yamprQjJ3VDljVVFyZlhveWNzRWhHMXc1amJadW16N0ctWUhfMTJ3QWk2MlVWVkZveHRuYmpYLVZLS2MxV0tnV3Z1MDRWQ09UT1ZhcUZ2d200ZmxZd2tiOUdaZ2c?oc=5",
    "data": "2026-11-26T17:08:25Z",
    "coletado_em": "2026-11-27T11:17:48Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Rádio Alto Uruguai",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPbEo0SXlBVFNPbGVEb2Z4Q2NvcUVhSXBDM0w3OFVTT2lOUndsNFdkUGhXLTU2TXUtOS1ULWhDRHgzT3V6Y2tQYVQtaFhEY1N5X04xV0lhdWlmQ3Y5STRmWXlLRjhKbXBhb1JiS0EtTS12Q0Y2cTJ3Vk9HUS1URDBRc0JCelAtVE5XWFd2MGY1Mko?oc=5"
+    }
+   ],
    "ufs": [
     "RS"
    ],
@@ -1971,6 +2386,20 @@
    "outras": [],
    "ufs": [
     "AP"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "7c99d1ee68aa",
+   "titulo": "Novos nomes entram no radar para o secretariado de Omar Aziz",
+   "veiculo": "BNC Amazonas",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNU0oxWmgwSHp6MDQycV9VT2ZLU04zaWRYY3laUXdILU8xNVphWEpRSTRXcWllRF93Q1JhNURiRld6cGtsNGZOVndSelV0Y3FaQUFLSkR6UXhsT2dVQXdlcVBHOTRzZlZSeXFuTjhPTTQzbjBJQ21jQThKUXVfd0NPZVA0aC0taWRHU1h5T2pGSWprZw?oc=5",
+   "data": "2026-11-26T13:40:15Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "AM"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -4090,6 +4519,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "2b3e905ddea6",
+   "titulo": "Empresa de ortopedia retira equipe do maior hospital de Roraima e cobra R$ 14 milhões em dívidas do governo",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQWWlDdkZ6VzVTdjVoMkdnb0FtRWJPbE9Qa2VYSkN3WllqU245OHNRNEd2dUozUjNENVdqYUJuZ3NBbS1RTzR5MXVGZHpYaHl3dGx2enpTRHBsZEF4OGVHQ1JxRnc4cGtFeGd6T0pEaUQ3UkYwT1BGZ0dWZnd1MzNjUXN4NU01OHdLaDBsZUl6VVNFQmM5ZUJSX2hBa1RFR2RCWkgxRFdlQ0tRd2dyZnB5YU9heTB5YlVZbWhHVk9nU3F2THVQQ1p2TGVVXzdpUVQ4ZGRlZ3dVYmNpbmE3T29ieVZiVmgxNExBdlB6MThILV9ReXJzcWfSAYQCQVVfeXFMTkxrV0MyR1dMV3ZiVm9Sc0tBUWNaWTZLc3dGSzJGOG1MSXl6Vmg2MkRJNVFjSy1wRHY1b0I4bmdZaGtjemFyaEJfR2trWDZ4MkY4QVhuTVQ3Qjl5RnBCVHBSQnVpa0FsWnM4R2pkWmhHOFd2bzZpbXRnWnZKd0xiYWhRRU9qcU82MnNMVnpkUkRqbUFfYUVYUE1kNmZ3aHBNeC1Uc2hlMmNjbHZRck1SeGZ3QTBNRDhKZ1k5SnZqaV9hb3Z0RmxqRlhtMndCRVhoMVRmb2JhdVFXNjFhd2pacFYxT3dVOXZVclJCLV9ISUUzdUM3VkVQdlZHMi1QR1gzQUlKZmk?oc=5",
+   "data": "2026-11-24T19:17:02Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "RR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "3af69f645ed6",
    "titulo": "Em penúltimo dia de reuniões, equipe de transição de Cleitinho ouve integrantes da Casa Civil e da Ouvidoria-Geral",
    "veiculo": "Rádio Itatiaia",
@@ -4614,6 +5057,10 @@
     {
      "veiculo": "Surgiu",
      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOcm9JNEhOX29uSDF5MXc5RkJLOF8tcUY4TmMtX3pmMGREYTliRnpNNDRvR0NUcnIwakxTdFpoSU9laVNqTjhkeTlXOHRRSmRvS0JWM2dSTno5Mk5iOXA2akJYUlVVR0stY1FXdmE2SmNtdmxBZlFKWTdoX3B5N2NObkVzOGJXamFFa2lFTzVzV09ob214LXMwaHZUeGI0aDVoQi15VHNta0FHak54aVRmMExaWFNFSDh3VFhIU2xaVGtlTno1bFJvdkZVZUFwWmRCYlFKTlI3bzBxck54YU9HQQ?oc=5"
+    },
+    {
+     "veiculo": "Bico 24 Horas",
+     "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPWk9fTjFXRFRHcnlrd1BRMDRtZnlhVmpPYjc3Y21PU21pNHpsQlV2cE5jXzRBRHFwWVVNNWs5N3dwa2hmU0V4Yi1KU2VsYkFjdVY5UC1kdzlPYjBBbEdFV3ZqbW05WF9lbUdnendSN3JXa1Vpem1vdV9kWmo5cXF0SGRHc1BNYUhqcDZIbWFkSDQ4enNEcjY0UEZ4MjhaeWZadS1aMHZ5c01faDFfNVdpaXNCcTRVY0NnYnFTUnY4QnZYb2xkdGJZTE5HOTNldG04Y1RmX1NoT1ZYX3ZXZnl2LUFhNkRNQQ?oc=5"
     }
    ],
    "ufs": [
@@ -20569,6 +21016,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "35249b5eeaaa",
+   "titulo": "Educação RS Secretário escolhido por Zucco deixou legado de assédio aos professores e alunos no PR",
+   "veiculo": "Esquerda Diário",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQSzVEX3k1c3ZFRHpTVlhhN1pRNGlvQWpfc19hMmprOTJaUnN1TEZQRWNhaC10MXBuZHlUZWpJS0xxUlE0alpfaEJGR3NtdllhSEdNWFlaY25Zc3Bjb3JzV3J0cUYtZVRNSFdkZ3Jwb2xsUXB5YWFlYmFTMGFqaDBPcERKS1dIVVFiSW5Ldk5ZbmNQV1ZwMGk1NUt6VXh6M2FnRV9BZnFBWl85dmlIR3lpaWFvX1FXVndqRTN2dg?oc=5",
+   "data": "2026-11-04T08:00:00Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "2438bfa55e79",
    "titulo": "Governo do Amazonas cria comissão de transição; Alessandra Campêlo vai coordenar",
    "veiculo": "Portal Tucumã",
@@ -23169,6 +23630,20 @@
    "outras": [],
    "ufs": [
     "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "e2bbd8b9d63a",
+   "titulo": "Convidado para a equipe de transição de Cleitinho, João Paulo, presidente da UV Minas cobra reação à fala de Gleidson contra vereadores",
+   "veiculo": "DiviNews",
+   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNOExmZ0FpZU5TT1V6bE1Xc0JZcjZ6SzE4UTMybkJpNDBNVy1xaHhVNTEzUThKMmliekxkOE1RQW1DWUJ5VXd0dlJJQ1JYUTZYYTRjTW0yQTZ2VGVBUGoyUVcyT2JfdkNuYjJXWjVIMTVydjRfWXpmelJTamlkTTVPNnl1MUhKbmY0YTlHeml2UF9VV0ZjVHlfV0RrUnVJSFRHckxiYmFaUXRrazdscGxIbVB0aXMwdVBiY3RWUURLVGFGUVpLZ3JYblZvQmZ5aUlsbzE2dFFLS0REdkx6bkxiR1pkUS1YU216ZTU4UmI4VUEzTHByYlU3ZS1R?oc=5",
+   "data": "2026-10-31T07:00:00Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "MG"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -28669,6 +29144,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "93cb49902f16",
+   "titulo": "Leite e Zucco farão reunião de transição de governo sobre o Plano Rio Grande nesta quinta, 22",
+   "veiculo": "Grupo Sepé",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KUlFyd3l1VGZkRDd5d1FWVmZ1cGFwdHRYVERpWnFaNUI4U1pJMVVXWTNBMjRVMzktSkpCalhhY3VZMXBTTHRyQVJ5Wm5ZeS1ZYy00Mm5pazBnYWJCd1drZ3pxTFJhTXAtdDBWSGJhNA?oc=5",
+   "data": "2026-10-21T07:00:00Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "934286837b30",
    "titulo": "Sergio Moro anuncia economista para comandar a Fazenda do Paraná",
    "veiculo": "Portal Tri Notícias",
@@ -33543,6 +34032,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "46bca2fb0306",
+   "titulo": "Eduardo Leite e Luciano Zucco inauguram Escritório de Transição em Porto Alegre",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNNFM3LTYySkRyMTFraEc2V0xCMzVoVjVlSEl5VVNadVZxbFpHMWhuZTNLcThxVjM2djRrMDJRX3pDS2ZDYlhpeVF2SmpUcWtGMXlsQnhFRkZ0dGtMUmJlTkx0RVdrTjE1bHZuSnZ1cm1QUWFtQ0wycHhjaC1zbURBSVVlRldnLXlEb1NhQWxuRmtpVFUwLWstX0JuVkhaeWJ3MEVSUVVxRGpaN214ZlhURm1ZMDY1YjJaUGNkNGszenkwR21KOHJLWmNRSVpoZUJEVDNkck9DYlVsZE40dkktS1lWbUh4SjRwWHBvVmIydmpwRDdiVFlENlR30gGIAkFVX3lxTE5WazVIMTdkUm4yZG5vZl9USGZkZHV6dXZQWmd6ZjB6cHQ3RWtzZml2RXdwZTdBMGoyMUhNVllQai0yTG9RV1NRbHFrWF9RYkRvQ3k4Z1M0cEVRbXNhMUk0czF2M0U4bEN2TFduUzFBd1FDY1B0UW9YZDNGejctWVVBazRlVjJoMEpTM0pYTkhvaVZHcDBLZldJSldJUjVCNnhDYjRnYktidGpTcURoZ2VJTGxPNTQxSHpsRFNvTWZqaWNEYW1JcGppMEhDUkE3OFhhLWd5U2FUUHI0cVpzcm9waEFmbDRDUGNlNVVLeGNXR3N0Y1IxZ2FPSVV5QXdXZEJ2OWczazVDdw?oc=5",
+   "data": "2026-10-13T07:00:00Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "467a61e5d30f",
    "titulo": "Simões anuncia antecipação do pagamento dos salários dos servidores em resposta a Cleitinho",
    "veiculo": "Rádio Itatiaia",
@@ -35105,6 +35608,20 @@
    "categoria": "medida"
   },
   {
+   "id": "3ba9c38cfaab",
+   "titulo": "Zucco concilia transição no RS e campanha de Flávio Bolsonaro no Sul do Brasil: \"Várias missões a serem cumpridas\"",
+   "veiculo": "abc+",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOSW9NQms3c1RjY2tsZnAzdmRhQXVMY2JMM3NEM2tFQ1BaMDdhZEpSQ1ZmN09mejJtRXJudy1Gb0NrYzc5Y0lCaGNLckx5MGlCYlVtTndqNFpKQzViQ2RCRzQzYTQ5NC1LbE5sQjB6R3JIdEFKN0xoNGpQUHJLNUNTZ1Q2RXJ2NHF1eHNoQkNoRm1CZHFvdG56NDE4ZERua2ZTVTNXTzNyRGhvZmpjVjVTenA4X0xhc1NyLWVzRGRsbldDSEZVZDR0WDc3dGxBZFFyNUV0bjZ2azY5MWJJV2c?oc=5",
+   "data": "2026-10-09T07:00:00Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "315fc00af34a",
    "titulo": "Déficit de R$ 8,9 bilhões para 2027 em MG preocupa transição de Cleitinho",
    "veiculo": "Metrópoles",
@@ -35219,6 +35736,20 @@
    "outras": [],
    "ufs": [
     "RR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "15d75e9db49e",
+   "titulo": "Eduardo Leite conduz primeira coletiva de imprensa da transição de governo",
+   "veiculo": "Correio do Povo",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNOGY4Q2NTelBZTHhmNTVOWVJZMlZ2WnRFWTQ0dW9raE51cDk5TUdQSHlVQm9leGp5UHBwUnhfM1p2SkgyMEtjRUZoOFJreTM0bE5pUDJXa2E0d0JSMnBIQUNvVHRRNGxNQjRHMGZWZk12TVR2QW5FVVFVcGlrQlVCTUFWbjZCcUUtSVNieHZ0RVFqNEt0RnNRQnVadS1jMEU4Q3h0VFVnZUVIY05FN2pGeGFEcFgxdDNxTi11SUlTaktJa0ZCSU1PY0dSQjlIVFhDWWZWdXNUaXlTQUNlQ25FUmxZLTFVSWtBMmpkVVBic09jZnpRcDk4?oc=5",
+   "data": "2026-10-09T07:00:00Z",
+   "coletado_em": "2026-11-27T21:18:01Z",
+   "outras": [],
+   "ufs": [
+    "RS"
    ],
    "temas": [],
    "categoria": "equipe"

@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-27",
- "gerado_em": "2026-11-27T15:20:24Z",
+ "gerado_em": "2026-11-27T21:20:20Z",
  "primeiro_levantamento": "2026-10-30",
  "baseline": false,
  "contagem": {
@@ -258,10 +258,7 @@
    "valor": 21980.0
   }
  ],
- "novos": [
-  "34|Contrato 549/2026|Contrato|07264193705|2026-08-13",
-  "67|Autorização de Compra/Ordem de Fornecimento 2026.004682.44101.05/2026|Autorização de Compra/Ordem de Fornecimento|02513899000414|2026-11-25"
- ],
+ "novos": [],
  "saidas": [],
  "itens": [
   {
