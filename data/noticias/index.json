@@ -1,6 +1,6 @@
 {
- "ref": "2026-11-26",
- "gerado_em": "2026-11-26T23:17:12Z",
+ "ref": "2026-11-27",
+ "gerado_em": "2026-11-27T00:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,16 +17,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 19,
-   "aceitos": 11,
+   "lidos": 20,
+   "aceitos": 12,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 62,
-   "aceitos": 27,
+   "lidos": 61,
+   "aceitos": 26,
    "possiveis": 9
   },
   {
@@ -41,7 +41,7 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 7,
    "possiveis": 0
   },
@@ -49,8 +49,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 45,
-   "aceitos": 6,
+   "lidos": 48,
+   "aceitos": 7,
    "possiveis": 4
   },
   {
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 5,
    "possiveis": 1
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 75,
+   "lidos": 79,
    "aceitos": 6,
    "possiveis": 4
   },
@@ -99,7 +99,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 6,
-   "possiveis": 7
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 13,
-   "aceitos": 1,
-   "possiveis": 2
+   "lidos": 9,
+   "aceitos": 2,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -137,25 +137,25 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 54,
-   "aceitos": 3,
-   "possiveis": 5
+   "lidos": 32,
+   "aceitos": 2,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 36,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 43,
+   "lidos": 42,
    "aceitos": 3,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 6,
+   "lidos": 7,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 5,
+   "aceitos": 4,
    "possiveis": 3
   },
   {
@@ -282,18 +282,58 @@
  "novos_na_coleta": 2,
  "descartes_na_coleta": {
   "sem_contexto": 383,
-  "possivel": 32,
+  "possivel": 29,
   "oficial_sem_tema": 4,
-  "excluir": 33,
-  "generico_sem_ancora": 10,
-  "outro_estado": 32,
-  "veiculo_excluido": 48,
-  "sem_contexto_com_tema": 22,
+  "excluir": 35,
+  "sem_contexto_com_tema": 19,
+  "generico_sem_ancora": 9,
+  "outro_estado": 29,
+  "veiculo_excluido": 44,
   "exterior_sem_ancora": 9,
-  "veiculo_outra_praca": 17,
+  "veiculo_outra_praca": 16,
   "sigla_sem_ancora": 4
  },
  "itens": [
+  {
+   "id": "5395812862ef",
+   "titulo": "Servidora de carreira da Caixa será primeira mulher a presidir o Banestes",
+   "veiculo": "SiteBarra",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQdk81SDdKRFpXbnJSMkxuWU9xZHJjUlVCMnc1UEFOSzlGYzR0WVZIRm5kNEtURWp6RUJhbTF4ZEwtSTV1bEJiVDhrN0stc241MzBTRFhyZnlyYkdLdFktVU15NUFTNkJGMlFOT2d6X3YydU5MSk01dXJOSVNXQkdJR08tR3JBWFN2Qk1YcVlFNEZqZjdnTnR6VHA0WElNWWt2eGtjMg?oc=5",
+   "data": "2026-11-27T00:02:59Z",
+   "coletado_em": "2026-11-27T00:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "pessoal"
+   ]
+  },
+  {
+   "id": "b477251c29a7",
+   "titulo": "Sedu abre seleção para agentes escolares; veja como participar",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/trabalho/sedu-abre-selecao-para-agentes-escolares-veja-como-participar/",
+   "data": "2026-11-26T23:21:45Z",
+   "coletado_em": "2026-11-27T00:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "221d5be261f4",
+   "titulo": "Trabuco aceita convite de Lula: quem é o novo ministro da Fazenda que defende ajuste fiscal e redução 'das desigualdades'",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/mundo/trabuco-aceita-convite-de-lula-quem-e-o-novo-ministro-da-fazenda-que-defende-ajuste-fiscal-e-reducao-das-desigualdades-1126",
+   "data": "2026-11-26T23:13:40Z",
+   "coletado_em": "2026-11-27T00:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "1adc1a52e56f",
    "titulo": "Trabuco aceita convite de Lula: quem é o novo ministro da Fazenda que defende ajuste fiscal e 'reduzir desigualdades'",
@@ -338,6 +378,18 @@
    "temas": [
     "transicao"
    ]
+  },
+  {
+   "id": "60c1937dbadb",
+   "titulo": "Zera Fila: Sesa confirma continuidade de cirurgias no HCAL com a Saúde Link",
+   "veiculo": "Cleide Freires",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPam41djJXM2ZYaTV3cllraTJkZjRmaFQ3V1JqZUZna0ZKN1R0NnB6eFRTRVNfbGp6dnNmdkxwM2lsQkdmRGJKaE1tM0poYlkwRVB1YVpWbEFRY3FEVC1zT3AzaXJ5WHRZYk10R0QzTVVzdGFVVTFHcWhIdFF1RVJuazhEWVlocl8wUU4xYWk5R1QzOWtLMWRoS0d3OThGYWFqY1gyZUYtRWtIY2Fk?oc=5",
+   "data": "2026-11-26T22:41:54Z",
+   "coletado_em": "2026-11-27T00:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "ccb4cc887efa",
@@ -521,6 +573,10 @@
     {
      "veiculo": "rede noticia es",
      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaU5iU1BndHpPM09YTlIwMFo4ZTJGOXM1cVBOa1dRUGhYNjFpcE9CLS1McVI4V2lFbUtoRlcxLTZxTEJkSUU1SWFKSEI1V0ZDa19UMXZ6cHVCSEJSamlPVkpNc0hSdlJPS205WEg4bnVEMUdnOThNeHpIU1luSDhzQUs0bWhjUXlxdFdHZDBxQUVvbmpTbXF1cWpZeW44RHBlRFNfNjRjM1RDZi1QR3c?oc=5"
+    },
+    {
+     "veiculo": "SiteBarra",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNc3pWMVM0OGZ6RWU5VVlwMFlsNTU1VlZBdVZ6N09uMlQ0UF9EY2l3b1pnMVp2U2RDcEdrWG9UdlpfMWNielJtTFZ4MVJiQTBrR1dVbEIyT1phVS1XU2VyWHVGNTBzWTF3ZzF2aVZPMllIdTZBSnYxMEt0LVZKMW5UWmVVWnl5OFB4SjdySnB4VTR1alBNTDh6bWw0bmpLeUdNNWZORkZFZDZaekp0cFFXWFVmOUs?oc=5"
     }
    ],
    "possivel": false,
@@ -830,7 +886,12 @@
    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQeGxMRlJraF8wa2FaZGo0Rk1iTFdVWlkySTVPbUx5T3FkdFdxdjdmUGVPWmpwamU4Ri05NmpmcFFDNGZvRUFfcENRRWhHQnc3VTVjOEVPTkNSNUE3RnZvN2tuNWpicDJ4ZHV0bGZ5ejljUHVCcms0azcxZ1VoRWNUX0NaazVRa0ZBNlJ1NThQU09FakN2dEVwSThYWDE?oc=5",
    "data": "2026-11-26T11:00:26Z",
    "coletado_em": "2026-11-26T12:17:18Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Montanhas Capixabas",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNa05KYnhYcGZOYlNMbEtjdGtTN25ObFhGazF2WHo4OGtlNFBsX1VwVmJWOWdmQndyYlhtdDZKN2VRbFNzdWRxZi1SMTdjUlpFZDF1V25pcklOQ2lGMTduMkd6Umxfc0pSMGdzQnhvbzVSRDFsWi1wVkRQc3lLak90U1NPYlhlTlpOWWI1V3gtX1FNcjZVMWlyVm9fWEJpSHhFWUpNeUdDVFJKZw?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 9,
    "temas": []
