@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-27",
- "gerado_em": "2026-11-27T13:17:14Z",
+ "gerado_em": "2026-11-27T14:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,15 +25,15 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 59,
-   "aceitos": 29,
-   "possiveis": 8
+   "lidos": 29,
+   "aceitos": 8,
+   "possiveis": 9
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 7,
    "possiveis": 0
   },
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 6,
+   "lidos": 6,
+   "aceitos": 5,
    "possiveis": 1
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 4,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 89,
+   "lidos": 87,
    "aceitos": 4,
    "possiveis": 5
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 82,
+   "lidos": 81,
    "aceitos": 5,
    "possiveis": 5
   },
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 14,
+   "lidos": 15,
    "aceitos": 3,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 49,
-   "aceitos": 4,
-   "possiveis": 4
+   "lidos": 29,
+   "aceitos": 2,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 32,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 57,
    "aceitos": 3,
-   "possiveis": 3
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 58,
+   "lidos": 59,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -193,9 +193,9 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 21,
-   "aceitos": 8,
-   "possiveis": 1
+   "lidos": 16,
+   "aceitos": 7,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 1,
-   "possiveis": 4
+   "possiveis": 3
   },
   {
    "fonte": "Folha Vitória",
@@ -232,10 +232,11 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": true,
-   "lidos": 30,
-   "aceitos": 2,
-   "possiveis": 1
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 415: Unsupported Media Type"
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -278,19 +279,19 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 395,
-  "possivel": 32,
-  "oficial_sem_tema": 4,
+  "sem_contexto": 367,
+  "possivel": 30,
+  "oficial_sem_tema": 6,
   "sem_contexto_com_tema": 17,
-  "excluir": 40,
-  "veiculo_excluido": 41,
-  "outro_estado": 23,
-  "generico_sem_ancora": 6,
-  "exterior_sem_ancora": 8,
-  "veiculo_outra_praca": 16,
-  "sigla_sem_ancora": 5
+  "outro_estado": 27,
+  "veiculo_excluido": 42,
+  "generico_sem_ancora": 4,
+  "exterior_sem_ancora": 7,
+  "excluir": 36,
+  "veiculo_outra_praca": 12,
+  "sigla_sem_ancora": 8
  },
  "itens": [
   {
@@ -345,6 +346,18 @@
    "coletado_em": "2026-11-27T13:17:14Z",
    "outras": [],
    "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "7f44b66b4244",
+   "titulo": "Brasileiros levam multa de R$ 293,47 e sete pontos na CNH após pente-fino do DETRAN",
+   "veiculo": "Serra Noticiário",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbExYSG02NFBZRU80cm8yZDFGX1N1NzhXWHZzYVdNTXpqZTdZWnRvc1VGRHRxNWFHeU1VMVp5ZGkybWZmUTNHYXJFdFphYVZZTm5Oc245amxQZmpiXzV0eWVqSXZrNDhtdzUxLXBLdzYzRWk0UmpLa1ZsYWwwWkh3cmVXZy1YU3Y2MVRyQ3cwQ3ctYW5rZzEyMU5VY3N4LVFMeTItWVFmamJLWE5pQXZOdkNJUQ?oc=5",
+   "data": "2026-11-27T11:22:00Z",
+   "coletado_em": "2026-11-27T14:17:14Z",
+   "outras": [],
+   "possivel": true,
    "triagem": 9,
    "temas": []
   },
@@ -582,6 +595,18 @@
     "governador",
     "pessoal"
    ]
+  },
+  {
+   "id": "e490d170dc36",
+   "titulo": "Projeto mapeia lixo no mar e cria plano estadual no ES",
+   "veiculo": "ES Brasil",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE40bnlLS2tJeUljSU44YV9QVXhGbFRZejZEUzJIcXJMc3htbHNzZS0taDd3WVlGTXhhb0xzblAxb0JOVklwWGdVY1dWbXVBNlhRWlI5UUw2cFdFcU0yYl8yMkV1Y0F3X21ZVG05T2hZeVliN091aVZvbQ?oc=5",
+   "data": "2026-11-26T21:14:08Z",
+   "coletado_em": "2026-11-27T14:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "2fbbac8a110e",
@@ -860,6 +885,20 @@
    "possivel": false,
    "triagem": 9,
    "temas": []
+  },
+  {
+   "id": "a831809c7b44",
+   "titulo": "Detran prevê salários maiores para terceirizados que concursados - Portal - Rios de Notícias",
+   "veiculo": "Portal - Rios de Notícias",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUk8xMGJWSFFha0tyRDExNE4tZ1hLT0NfdEo1VHg2V2ZSMVg5SGlodDB3Uzg2amJ0MjFZUHkxbzdNLVN4MGQyUGFVZldfZFpOaDhNMVFGdFlneVIyWWFxV2p4eDVLTmJSaGtRUUs1ZkduSjAta1NyQ3I3UFRkZ2hSTWtvOHNPcWpfS0d4UDVfZmw3dHRfeFhSeVNtZ3NVVERGTVFxcGktWmlzMDJmcElLOUtoc01BVzlsRm5PZG53M3Y?oc=5",
+   "data": "2026-11-26T16:33:42Z",
+   "coletado_em": "2026-11-27T14:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "contratos"
+   ]
   },
   {
    "id": "489d88439afe",
@@ -1675,6 +1714,18 @@
     }
    ],
    "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "54570dad7a99",
+   "titulo": "Semobi inicia nesta quinta-feira (26) manutenção da Cinco Pontes",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOa2NqOFZFYTJsSGNTbUR1SVgwa2JuRlplYjRXYWV1VVVISUJsa1ROUXdzZ1huMWlxMHd1dVRNaTMtZExHUERGODJqYVhBeDRrNHpMZE9JWWI3R3BWdUpSQVRHMDhfWTZ5dVpJVE5JME9KdlJaWHdVNjZYeXdRamNBRUV5dzFybFJ6OGU2RA?oc=5",
+   "data": "2026-11-25T17:28:00Z",
+   "coletado_em": "2026-11-27T14:17:14Z",
+   "outras": [],
+   "possivel": true,
    "triagem": 9,
    "temas": []
   },
