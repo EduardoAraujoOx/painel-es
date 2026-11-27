@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-27",
- "gerado_em": "2026-11-27T14:17:14Z",
+ "gerado_em": "2026-11-27T15:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,15 +25,15 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 29,
-   "aceitos": 8,
+   "lidos": 30,
+   "aceitos": 9,
    "possiveis": 9
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 7,
    "possiveis": 0
   },
@@ -41,16 +41,16 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 5,
+   "lidos": 7,
+   "aceitos": 6,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 2,
+   "lidos": 25,
+   "aceitos": 3,
    "possiveis": 3
   },
   {
@@ -73,8 +73,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 3,
+   "lidos": 7,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 87,
+   "lidos": 86,
    "aceitos": 4,
    "possiveis": 5
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 81,
+   "lidos": 91,
    "aceitos": 5,
    "possiveis": 5
   },
@@ -105,15 +105,15 @@
    "fonte": "Google Notícias",
    "consulta": "(\"insuficiência de recursos\" OR \"restrições orçamentárias\" OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) \"governo do ES\"",
    "ok": true,
-   "lidos": 1,
+   "lidos": 0,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 15,
+   "lidos": 14,
    "aceitos": 3,
    "possiveis": 3
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 32,
+   "lidos": 30,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 59,
+   "lidos": 100,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 16,
-   "aceitos": 7,
+   "lidos": 14,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -279,21 +279,35 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 367,
-  "possivel": 30,
+  "sem_contexto": 368,
+  "possivel": 28,
   "oficial_sem_tema": 6,
   "sem_contexto_com_tema": 17,
-  "outro_estado": 27,
-  "veiculo_excluido": 42,
-  "generico_sem_ancora": 4,
+  "outro_estado": 24,
+  "veiculo_excluido": 46,
+  "generico_sem_ancora": 5,
   "exterior_sem_ancora": 7,
-  "excluir": 36,
-  "veiculo_outra_praca": 12,
+  "excluir": 38,
+  "veiculo_outra_praca": 13,
   "sigla_sem_ancora": 8
  },
  "itens": [
+  {
+   "id": "37d926263e98",
+   "titulo": "Denis Prates vai ser o controlador-geral do Estado no Governo de Pazolini",
+   "veiculo": "Tribuna Norte Leste",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQX3VSWFU1UDRTSk9BSnk2dFZWTkt2U0JrZk1icHBnVF9XUURXV0dIOWxnV3ltekRUMTNoSDlhSHBlM0s3eE1pUmg2TlVZTWRJcVNiZTZKNzFrb2V6a2F2ak9uSEJPYmphM01WbmI1cmpHZW5VV3loYlV5ZGZaWGxWYjVGQlZmTERrRF9qbUNEckVQR3lRdkZ4dnNadDFaSmZ3SDRzcXhWRENpUmM?oc=5",
+   "data": "2026-11-27T14:35:20Z",
+   "coletado_em": "2026-11-27T15:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "c26fe3ef1d27",
    "titulo": "Temporal provoca 185 mm de chuva, interdita rodovias e suspende serviços em Muniz Freire",

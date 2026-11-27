@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-27T11:17:48Z",
+ "gerado_em": "2026-11-27T15:18:01Z",
  "ref": "2026-11-27",
  "desde": "2026-10-04",
  "estados": [
@@ -8,7 +8,7 @@
    "nome": "Alagoas",
    "eleito": "JHC",
    "partido": "PSDB",
-   "total": 170
+   "total": 171
   },
   {
    "uf": "AP",
@@ -22,7 +22,7 @@
    "nome": "Amazonas",
    "eleito": "Omar Aziz",
    "partido": "PSD",
-   "total": 195
+   "total": 197
   },
   {
    "uf": "MA",
@@ -36,28 +36,28 @@
    "nome": "Minas Gerais",
    "eleito": "Cleitinho Azevedo",
    "partido": "Republicanos",
-   "total": 473
+   "total": 478
   },
   {
    "uf": "PA",
    "nome": "Pará",
    "eleito": "Dr. Daniel Santos",
    "partido": "Podemos",
-   "total": 56
+   "total": 57
   },
   {
    "uf": "PR",
    "nome": "Paraná",
    "eleito": "Sergio Moro",
    "partido": "PL",
-   "total": 272
+   "total": 285
   },
   {
    "uf": "RJ",
    "nome": "Rio de Janeiro",
    "eleito": "Douglas Ruas",
    "partido": "PL",
-   "total": 255
+   "total": 256
   },
   {
    "uf": "RN",
@@ -71,7 +71,7 @@
    "nome": "Rio Grande do Sul",
    "eleito": "Luciano Zucco",
    "partido": "PL",
-   "total": 371
+   "total": 377
   },
   {
    "uf": "RO",
@@ -106,11 +106,254 @@
   "fndr": "FNDR e reforma tributária"
  },
  "contagem": {
-  "total": 2464,
-  "medidas": 815,
-  "equipe": 1649
+  "total": 2493,
+  "medidas": 820,
+  "equipe": 1673
  },
  "itens": [
+  {
+   "id": "46e59616986a",
+   "titulo": "Ana Pellini será secretária do Meio Ambiente no governo Zucco",
+   "veiculo": "GZH",
+   "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQNnFpN1k5T2UycklfeVhCVDh2Z1FFYVFlbF94ZEU1Z2tBRGVrUm41ajBxV21pbVljWm1TaDJjRTBWV3NBWVVpanZUQWFQU2F2WHE3ZkhpaGY4aEl2RXRBdzVGUEMyXy04cGZPUFdCY3d1aVBUUHU1a0dGbTlqYm8tTEpxZ042eHoyRTV4Z3BJX19WdTFMTGdJQWY3UlFuYWN6VmFLSi1JWWNyeWswTTh0cFE1aUZUTkxKeWI5eWZCelpRRDRrNEdMTk4zUWF2UFM2Mmk5bDZvaWhqd0tHdjJrWGg4UDR5TEtLU0ZUaWhoeUJ4SWVwblQwMXZoOUlzcU0?oc=5",
+   "data": "2026-11-27T15:01:51Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "a363b66ce541",
+   "titulo": "Sergio Moro anuncia nomes para a Casa Civil e a Procuradoria-Geral do Estado",
+   "veiculo": "Jornal Plural",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPckZnVUY1VjlWdUVmN2FUenl6VnRmVmVHcFNtbmVTdlk3SG5zSG9zZFMwY2EwaUpqMzVTRzNrc2ZOMWJzWUI4Mk4yOUp0UU9aaDVJLVpNQl9mb2ZCVzZGbi01cU4wVU1xWXdydUYxMEpIQTM3Nm5qUDk4QVExOEluSzYyLWpnMGRWOWhIY2NnUFZRSy1HZGFqVVM5WTZuQzdGM2hNV3JDclRjdmRyM0E?oc=5",
+   "data": "2026-11-27T14:11:46Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [
+    {
+     "veiculo": "OBemdito",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTUVRTFJOVENYMHNoVmJVaXZYT3hfZkdla25TN1pieF9CZ1Zmd052cHlUS3FWelBTbDFLaGxHOWVCN25USGdNZ1dpbjJwUVFueEZSNXBocWxLTk43NFpoMDNBR3pXakxWYTN3OGItSW1POVEwdE9SVlpBbl9tajN6SEhaV3QzSzF2RFhEWXlvN0I1M1FmNmxB0gGXAUFVX3lxTFBNRVFMUk5UQ1gwc2hWYlVpdlhPeF9mR2VrblM3WmJ4X0JnVmZ3TnZweVRLcVZ6UFNsMUtobEc5ZUI3blRIZ01nV2luMnBRUW54RlI1cGhxbEtOTjc0WmgwM0FHeldqTFZhM3c4Yi1JbU85UTB0T1JWWkFuX21qM3pISFpXdDNLMXZEWERZeW83QjUzUWY2bEE?oc=5"
+    }
+   ],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "173c3a429bad",
+   "titulo": "Governador eleito no RS escolhe cover de Elvis Presley para comandar secretaria",
+   "veiculo": "TNH1",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOM01CM3FuUmZQVkR1MHR6N2RYelQ0YnIwYVJCWjJ4ekZXN1E1S1VwVTBlOUpRRkszSUd5Tm9ZYml4cHRDa2lNN1REUDdrR3B2MEhPb0xScXlBN1QxdnVXMWowZGNyX2s3SzlwNDA3cDd5NEhLQmEwNHhKSDBHcXpHc292N1hwb0lxbVVyVFd0WTdjTVRIVWJhaHN4cFYzYWlSNzN2TkhnTFdmWlNBUWFnY2daR0VvVGvSAbIBQVVfeXFMTjJ4ZFRTU09wYWMzc1haM0dBemZSMmVsNHZfVHllUThrTDJETTJMeWtNUkw3MWY1TXRnYzYxOGJONW1XQ2t0T05id0hESTRYd2hXRXY3SGxxTUtnNlRCbU5wckl3VnpQbHNpaWN0MWREc2lad3V2ZWdMRnRZbEVSbUFvMGplVEdNYUp2RzlCUFRaa3RDdzI0d3paTjZZZzdZeGJGXzRJS2FkWGUxUENEZ0VXQQ?oc=5",
+   "data": "2026-11-27T13:42:12Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "98069fb81b84",
+   "titulo": "Moro anuncia novos nomes para a Casa Civil e a Procuradoria-Geral do Paraná",
+   "veiculo": "Rádio Paiquerê FM 98.9",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPRndSUV9XeXpweWw4MVNmQ2J2U0tCUEZfanlwMlQwQTN3bXhTdFRKN05jY25OMUVReVAybjBpUHA5Z3NoREdzY2pfVFBTLVlBbGF0VGFRdjdRa09RZDVOVkVoa25Ma3dsYXVDanRINzAtUGxFbC1nS2Eya3RTTHRKVnlaWC05Q2pfcmtBenRybmdjNjIxZTBQaGF1dUMyam1uVlpCRA?oc=5",
+   "data": "2026-11-27T13:38:00Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "e80457c6e640",
+   "titulo": "Sergio Moro anuncia nomes para a Casa Civil e a Procuradoria-Geral do Estado do Paraná",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPazJiNk51SEpSZEZXa3l1anJwbmY1YldDdllfT1AwN0RnV2M0VkxRT2Z4U1ZTVzhIZ0JUZE9sdDJrUW1ZcWpGQ3VaanJQU0w3TFNvbGJrb2Jsa0hoa214UEpaUHFmYzlPbTR2VmFCVU1QMUk2RkJXdnl5dW1PY2taMUFBcjNZckNwWkFnaVFaVU5keU1icE5uc1lRMW1USjFNVE1rWkxHbjbSAbcBQVVfeXFMTWEzaE1PbVBfU3ZwWkhkX0tObGlvRFZTR19aTFQ2NGpoZWRUck9VN0sxbXRXODBDeEo4YXhiQUktWG5wcXJ2eWhlUjZXQVYzWkRzbVh6WmNwd2VXYU1fU3E2SjNBNzcyVl9hSHE5TXp0Yk5jeHZiaGREZFJBMmRsOUJDYlpya2RQTW05UmtBd2NlcEkwREpUeVhjenFXTjVUN1p1R1kzUzFYTVVVTHFFV1k2ZVVGb3dr?oc=5",
+   "data": "2026-11-27T13:16:32Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "a96c1406b69c",
+   "titulo": "Sergio Moro anuncia futuro secretário da Saúde",
+   "veiculo": "Portal Verdade",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQcmx1R0hhVzYwWk9xaHFDbkRJRVRDNzNtbEpONEFTSUZwaTFXY2k4eTN5aUVfZWdJWWdDRTJkSFp3UFNPNE5fZ1dCWjZXYkhHQ2hIWFozM251eU1vN1RSU2l4NDBKc1VDUzUxUnBfYU1rUFMzQVkycGFsRFZWV2NtSmVR?oc=5",
+   "data": "2026-11-27T13:03:27Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "1f30d042dacf",
+   "titulo": "Moro anuncia mais dois nomes para o Governo do Paraná; conheça os escolhidos até agora",
+   "veiculo": "CGN",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNSFQ3cXljN2ltZlhWREhLc1ZwMWpqcXR6OXBEWVdGRE9DdXVZZ2xHNFFOWmtOTjRiTE5QSkRFcldNbE5GT0k0ZTVqb0JQNnpzMDhUMERwZ0QyRHR5U2p5TXAzcnRsdWFLN2xXMGdpUGNlU1RvdldPbTNBYk1BeGh3OXl1dHVBdVRaeTBZd3NPTzY3a0VxRTY0aVpYUVp6bFhxRnduaEQ3X3I1T05LdWoyQUx2cmVLb0lMcW1yQQ?oc=5",
+   "data": "2026-11-27T12:57:00Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "4a7f25c434aa",
+   "titulo": "Cleitinho define comandos da Saúde e da Segurança antes de completar secretariado de Minas",
+   "veiculo": "Plox",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQVkZTZ0JPV1ZTUklNampVQWYtaXNEX1B0WTJlclRkVEtvSEdyeGtDc29tR2psQzdubkI2M1REWGlWXy1UMmxZa3FUb2h2X2RBQWZNakNDeXY3elQ5NUdOTERjXzR6MVl0QW1mNHg5NXVkRWttczZ6MUdiVWRXZEYwMUNwTGlVUQ?oc=5",
+   "data": "2026-11-27T12:39:00Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "ffdb0fa0518d",
+   "titulo": "Sérgio Moro anuncia novos nomes para o governo do Paraná e define comando da Casa Civil e Procuradoria",
+   "veiculo": "ND Mais",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNb3M3YVdMTFByRUF2MlRGeldVMDZ4aGVxTHEtNGxkYnV0OXZnWHBQOW5Fa3RhS09pcU5WRXgxUHY5R2RMYm54ZUlFanF6TWpCbFZkRGJLOWZ4UE5icjlsOFRlQzJ5NDhiMnhGSnlZanpHTUgzNVJpSzI0YWZFTEU5bFZ2Tkk0N1pN?oc=5",
+   "data": "2026-11-27T12:16:42Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "554044220c56",
+   "titulo": "Sergio Moro anuncia Lucas Góes como secretário da Casa Civil do Paraná",
+   "veiculo": "Band",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQdjNPUjdEOGZaX0F4bDBCSmFyc0g3ckpJU1VfeF9OQmtHRFZ3TlBuMms5RTBXbm5sZURzRUZRVlpZVlNTaFdETjk3c2FlWjlCNlF0aTMwMktLSGhqdHVaa29LMWdlamFpWTVLTUhWTGV2ZUlsU09iYW9mTS1Zbk9xX1psc21hT1ZzLWVlRi1seG8wcTRlRnJkbUFvWlNxOTRKdUNabW13?oc=5",
+   "data": "2026-11-27T12:16:05Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "5a7b93a52a8a",
+   "titulo": "Moro anuncia novos nomes para o governo do Paraná e confirma chefias da Casa Civil e da Procuradoria",
+   "veiculo": "MZ Notícia",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQWXJWU2l5bUVLWmlHazE5dXFVUEdLYUtWdWtzMUlYejAtc3FKcGpmRmZ2aldJOWZraUlzSy0wdE1SUDhDS1hVQXRacUJGMnNaMm1oSnpmNDE1QXR0MnJDU0JrSWVCOU9MaUU0UTg3elA1RmVLa1pUY2paOWFWa3lYeWd0cFVLM3c4MVBCN1JTQVpNQWJGS2NabEN5UWVHcHhBMlFCN3pQTExTWVVkY2JWdkNIeEFSS1JnM2dIbTRLaU01WWVw?oc=5",
+   "data": "2026-11-27T12:16:02Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "9608ba8046de",
+   "titulo": "Cover de Elvis Presley há 20 anos vira secretário de Zucco no RS",
+   "veiculo": "TV Sim Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOajdCNHVlWERZVEtkcW50bERLSDYwN3BBemVETTlreEpFU0pMRFRubGZGcW5oSU9scnV3anpoY2lHR2JFR3owOWVuYmU0dVdJTU9hZU9xeVN6OEd0WHNZaXUzQlhUVVNtTE4xS3NHR0FZdllYQ0RUVXVJOXYtTFg5N2UzSkJxcjdwM3lrajduNVlIaXFnRkJ0ZHA3WnlpYUk2RnY5bUpFaG14bzNNNHl1TTlXb085bGFOUTBQOTlRMzI1SHM?oc=5",
+   "data": "2026-11-27T12:00:15Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "526ebfac4209",
+   "titulo": "Sergio Moro anuncia novos nomes para a Casa Civil e a Procuradoria-Geral do Paraná",
+   "veiculo": "Jornal da Fronteira",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNak1MWWdSdGdVd3FEZ0s0TkRyejFqVlp4U2RFaFJ5S2hSeEJ1UkQ2blRmODZzT1BkTVptaUtQUGRRZk15ZWFqYk9iX2pPT2Z3SlBUY2tkN3JJVlF6N2FlSTNnLWNJUXd4ZU4ya0h0dUtndUhDQ0hyS1lRMmQwUlFabw?oc=5",
+   "data": "2026-11-27T11:45:55Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "98226a9594cd",
+   "titulo": "Sergio Moro define nomes para Casa Civil e Procuradoria-Geral do Paraná - TNOnline",
+   "veiculo": "TNOnline",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOTU9rS1BOTVNEcnlMcllPUkVSUTkwWWQxVHBTYnFUMHd5VXBLQ0NiRzM4eUJVZkl1WmgzcXYwN2RpYlpYMUk4c2NOb2w0UE5XRkNoVHdRb0FtTU1sbVNTekNrVmR0ekFpbTZ6QWticDVFaVQtQWRwcURUTXF2d2dveGdScEdXaHNaRmJQS1hKb2JraDZOc3RhUmJLVkxZTG5tRldwRVhVbFBHZDJhdXhLYmdHcUpudTVMX2lXTXhNcXnSAcsBQVVfeXFMTmlvQndIaWFCcDlwbWE5NW5FVVpSQnJkeW9Oc3IyNk9HSUppX1pTTEJjcFQ0WENlYU44cVI1Nzg3Y2dsa0JKdmNpd3JsVUxMYjBkRTg1dnV5Y2dFbk00U0tHWW53Ty1WckpfWmdFYjk0MkpMemVXRjlnSHN3WTdmQ2JNV2R5d2gzZzZMU0RwRGY1WmZGeEl6NXFaME5SbmZtSVZwb3kzWWNEMjh1UkFDcFp1MlNqdXQ5V0ZCNG5RQmE4bHBDbXltVjZKOUE?oc=5",
+   "data": "2026-11-27T11:37:11Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "081649b9047e",
+   "titulo": "Moro define nomes para Casa Civil e Procuradoria-Geral do Paraná",
+   "veiculo": "Ric.com.br",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNX2VNQlZIVHRFeUc1MWF3UWM2ZEVUQnhtY05KQlZMUDhIMWpQbUFKR3hxYzN3MGNwRWlnLTJFZkswS0VwVlRiTEh4amdjd21EcXlWUW03bWpfOGF3MkhiSEhDdVBOX3VXeEtFQUxjSW95V19sQVJvb3RQeFBMa3hZQnlQUlpWM1RXZ0JQMW1ONnBWZkxPclh4cA?oc=5",
+   "data": "2026-11-27T11:17:52Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "fc2961c735d7",
+   "titulo": "Moro anuncia novos secretários para a Casa Civil e a Procuradoria-Geral do Paraná",
+   "veiculo": "www.crn1.com.br",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVXVzUE9GSmpOU1JRUTJZQUhRMjJBQnlZR0VZdVVCd1k0VHVnR3RLN29xcld1RnJTMzZDS1drVDhieWJRV3VIU2U0MTJIZ3QwcVlqMDNGeF9ZQXpjeDRiZjVwN0FObW1GQ00zMlNnZGlFX0pZSFYxcXlXUXlBMWx3NWk5UW5wbGxIR2RYQ0hqQ2d6NndOSkxudEk3a0JLQVNFT0d1Z2ZEaERDWVRrVnZodFA4S3ZrREVX?oc=5",
+   "data": "2026-11-27T11:13:57Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "39fce56909c9",
+   "titulo": "Ex-prefeito cover de Elvis Presley será secretário de estado no RS",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQTNPaDNscFVUVEpZRlQ3RGVoS3Vac0Y5bE9UNnJEdG1xeVY2M3B3eXBPZk9pamxxVzA1ZlFCODlVR0dKbDBRSzFNVzI1bXY2bTFRY1Zsdnp4WXdXNTcwWHhWT0tMYXRlT1ljS29HczE4bk5zMDN6LUo1RkdWbWNJQVVIYXBtU05jWi11c2tkYVNsYWFKUFd6V3dmVUlhZGk4MWdCLWlHVjBHVGwtUVpoOVVjaV8xTEVlZmJjb0hB0gHMAUFVX3lxTFA5d25HU1BsTXdDeU1hLUg3clhYM2JLcWtVSkQycVczZ2kyVDFPb1h4Y0VWb2xoM0FaeXVlZzFiUjI2d1FTb0hGWVVwRDUwY19pWHowalg3ZWpzNzVRSTNpZkVKTzNrZm9Ed0cwNFJfRGJzZ1NFeXJjS3dIM3ZGVlZEbXN1ZktsM1J6THZSVWU1cmUyVUhfeU90VVlVeVlvMGt5Wjd1MUpDNVVfdkVQaGtjMkdGWmFYUVlVRUlfUWVUQlJ3LVpjS1oyZS1pUw?oc=5",
+   "data": "2026-11-27T10:56:29Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
   {
    "id": "2f2f64bf24e1",
    "titulo": "Sergio Moro anuncia oito nomes para secretarias do Governo do Paraná",
@@ -118,9 +361,28 @@
    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcUMxeEJ2a25sZzQ4YnlCRWF5VlltZDh2azJpaXQ3elhjR3hVWjBMdHVscThOLWNjazhHdW1tcW9Fdnh1a0REeHJYRkxaQ05OMEZjbVRmNURSanJTNU1oTW92MFI3QldRSU1DcFZBVFpYWlV0M2VBOTJoYnRGcDdmSWJSbWRFTHN3RzhJRE4tNDkwa0pCYWRiMFpoYk9tOHRDVmc?oc=5",
    "data": "2026-11-27T10:15:51Z",
    "coletado_em": "2026-11-27T11:17:48Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "www.crn1.com.br",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcTRIQ2lTTlBtSzI4NU5rSV8yeXh0cmc0Vk5sOUo1NXNlamhqcjVmUGhBNngzZkdGOHdJY0R3WE12V1ctQkJRVjFGOHdMaFlLc1FsTVN6WlNPZTJ3LXJyenZIOTliWXk4MUF5TF94bzN6Y01rZ19mZUVlUFoxS3k2bU9UVEF5UW0zOVB4czQyMzJ1by1QY3hqaktRallVR05QWmszWFNySQ?oc=5"
+    }
+   ],
    "ufs": [
     "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "99c8faf377de",
+   "titulo": "Ex-deputado João Salame será o chefe de gabinete do governador Daniel Santos",
+   "veiculo": "Portal Debate",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQYjVYVFFKM0lXazdweHJUemVFZ0xKQkxBbkJ3ck05TXZFSXY3Nldna2hCa01YY2R4bDVFdHBMV0lIXzdRb1h3SXlsWFh1Q2xiZmpDRmd3OWJiZEY4SjhJSm9OTnVjRm9IM3RiV1RnZDhKa0hIcmxvcGhVZjgya2VaWVZKaG9oUHotQUJlUHRkOFYzc3lJUmQ5LVVPUDBVXzFxS3JBRTB1X29Ldw?oc=5",
+   "data": "2026-11-27T10:09:35Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "PA"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -179,7 +441,12 @@
    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOV0FfRkQ5ZFpCZ3VFSUFVN1A1UnJrRVhiaXYyeTJVakZJVFdjS3pPbTBuZnVzY3hFZm5HdElHRkstbFJMQWxRSG9rcHQzaUx5aUVNbThsejRtN0hCczR2VHY3Ylp4WGZfY2VHeldYQ0FmVFFkbTFKUjlrajJjbVlROUpCUmRGVGpSSUF4U3luUW9XR0swOHFKc3JMcVRLdEdiWFRqOUJhR0h0TEtMZi1sX0czOUlHZW9pemV3VXNfUlRERG42Zi1jd0wzeGg4elnSAd4BQVVfeXFMTlh1TkdiM0VqOTlkallFT1NTd1NmdHNzNTJzeW9EeUNwZWdaOWlBZFlSaUJpME0wMmNkX2JJU2JzMmdnbFc1NjJwMTY0RWtOX1hDbG1lV2kxR3I5UXJjdjVXdFFSLVZDZVdrUnZRdzloSlRsX05FTXNMNlBlQl8yMFVNUjlFUC1vZ3ZwZWxIWWJRNlczbVk5NVk1cGc4d0RGTDVzSU51U3hNcGMwa3ZsZVgwVWRBOEZZeWN1dnlHYS1USkluMW9iaGd2MzB6MGwyd1Z6YndBMmo5emRFMlFn?oc=5",
    "data": "2026-11-27T06:30:00Z",
    "coletado_em": "2026-11-27T11:17:48Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Diário de Caratinga",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOcXIzZk12eU9hUWg2UlN3Zlc5dnRFYkhwalhfSEF2bmljdkV0Tk1veWxmRGxuLVE4dW1RX2tTUG8zY01qMGdiX3pEWkQzRlVDekNFOURnUnhoQk1EWV83RTFTV05JNWw2S3p5WjNNbVI3Rk5vVW91MUhQZHJvVUg5OU5oUVN1RjFGaVZSbmVvbVJHLTlfQm10ODlLWjkySklkVFluMGVKNDNQRE12c1o2SWsxNURSRm5WaVE?oc=5"
+    }
+   ],
    "ufs": [
     "MG"
    ],
@@ -195,7 +462,12 @@
    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNM1NWTHVoeU5OTkpaUE5kaktSMzlXbGNDMnZjNGJpZWNkb3R3WVBISFN6N2poWjVVdFNjelJMYWw3VTlicGNCMkN5NnpDVWYyWHRROTkyNGFHWHExS00zT0VMcnUxUndmSnBLdHNBa1JvOXFkdk1BWmc1MHFPa1hRcndIMGRDTXhrZVVNUHpyNVFnNXpQeDN1LWtucVVQMHBMdzc3bk5ucG5NdHE1WFdQVHkybFB0NnJ3anZpN0pic2dtdw?oc=5",
    "data": "2026-11-27T06:05:26Z",
    "coletado_em": "2026-11-27T11:17:48Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Prensa Mercosur",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOV2hKdVdFY3loVXZsY0ktaV9ENVZrbDlyckJHaXNpTkNxenlTTjZ2UUFhN1FKVUxBVEFPN0FZcmVnOE5vOWhpVHlBUnZyOTYweEVXems1cVRRcXFRMEZNZVJSUjdnWk1EYmFjY0lBUnBLRGpKd1dNNlQwZkRhdDB4VDc5dHV3Q0JnRW5tN2tXdjY2alQzLWNtdTB4YmFMQ1lKWVJBcGQ0R3V5YTA?oc=5"
+    }
+   ],
    "ufs": [
     "MG"
    ],
@@ -233,6 +505,22 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "acc8ff4e3168",
+   "titulo": "Cleitinho se reúne com Lula, pede acordo por dívida e o convida para posse",
+   "veiculo": "Rede Moinho 24",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPV2JGaFcwM1pUY2tYYko3eFlOcG05N0NiN0tXVmpxaC1ZUDBmQXRhS3lOUzFZLTBSenR2S3Rrdnc5V3N0dlk1Yml2eWJfcUdTUzlXV2JxZ04weWV4eUdsMldlNENMWkdMWV91UnhnZF81akVMZGJmLTRYLVNIN2xGS0hKYnpEMFJHMEowcGZ6YUp4UTdnbGdnTHZLbFVDNG1YQ1YycnQzZUE3T0nSAbABQVVfeXFMTXk0a0pSajZFaWx6MUc4QTRCNEE1c3UtSEkzMEN1ZVQybUZqZVVnNDF6Q3hDSG9tV3N5MVFNU3NYZ3Z0bHpwS01VMFdWRXFLMURza2lCTjRiYldfRk9Tel85SjhfVlFpV0Z6Rl9tLUc1WVpkanlLOTEzdzBOUmtkSmhKQ0I3ZW14aGpObVROeVBHZ3RHbEVUQl9ybTlBN3VlbFFMMzRYcm5wVHFwTFVZZW8?oc=5",
+   "data": "2026-11-26T23:36:09Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "1729fd5765a9",
@@ -281,6 +569,20 @@
     "economia"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "49d43a369cc7",
+   "titulo": "Zucco indica dois políticos para secretariado e ainda tem três vagas em aberto",
+   "veiculo": "GZH",
+   "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNa0p5MzNXd1BBT1FkRF9RX2U1ZHdwM0MySHNtVEJNNGNwY0pfUGFZVHlnZ1N5cm5VM01xNXBVQjJZZENFTHBDS1NQWVhRQ2l6b19nOHhIcnJadm0zM2VMLXlfWVMxXzU2aC1NaHlhRWNaaGhNeFRuN3d3ZHVpUjA5VFRaX2hvSFBNeFNTemZmOFFLY2U1QnVKREp0ajdEMGs4NWlfbkk2OUliMHpKNHhTNEtRa09OZHVBS1AyTEIxM0VTb2JGdXpsZlB6ME1xaEszMFpGTnNHZFJhNkpZcE01dVhVbDNZVEZpb0pBaC1wVFpWVzlZN3pTQVU3WkVJNlJMeGk2QU40VHZwODVPMHB5S2VRWVQ5Zw?oc=5",
+   "data": "2026-11-26T22:35:05Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "4d98ba8cf4ca",
@@ -353,6 +655,10 @@
     {
      "veiculo": "Gazeta de Alagoas",
      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQNFpYRmNlcmV2UHlncEkxOVVPN2FpbnhqaDhNS0g2YW81aExVdmpBcE1RTHhvR1RxSGlDaE5NNHhJQTRJcHBqcmpDR1NXM0hEem1fX3pmbDNVSFMwWm5wU2JJZWliTjdGcURQc0ZBeWplUVJRMHVEZlAtSktxVmVfdVlZVU11RHNRSnFhTjVPR1JJZDNEN045bHJUeEtqLWh2Z2NrT3FsUDlWZ3lJ0gGsAUFVX3lxTFA0WlhGY2VyZXZQeWdwSTE5VU83YWlueGpoOE1LSDZhbzVoTFV2akFwTVFMeG9HVHFIaUNoTk00eElBNElwcGpyakNHU1czSER6bV9femZsM1VIUzBabnBTYkllaWJON0ZxRFBzRkF5amVRUlEwdURmUC1KS3FWZV91WVlVTXVEc1FKcWFONU9HUklkM0Q3TjlsclR4S2otaHZnY2tPcWxQOVZneUk?oc=5"
+    },
+    {
+     "veiculo": "Gazeta de Alagoas",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPXzlsRnRyTTZKWGQ4azhPcDNKVG9uRlFORVB3TVJ4WkdyTENsRmg1TndUbll2dkNGLWN6VzZjSldtdXhMWmpxMDc3R1B6cWdQZ2hRYUlzWVJTUl96RzYyV0dPOEhnZ3dHeFNiOXg0N0R0dldUOWJiN25pNUVxMGVwd2FYY2gxOHB6QlVrUnh4VWlSNmZZWE5TQTJQbVZHSXkyVF9RUdIBrAFBVV95cUxQNFpYRmNlcmV2UHlncEkxOVVPN2FpbnhqaDhNS0g2YW81aExVdmpBcE1RTHhvR1RxSGlDaE5NNHhJQTRJcHBqcmpDR1NXM0hEem1fX3pmbDNVSFMwWm5wU2JJZWliTjdGcURQc0ZBeWplUVJRMHVEZlAtSktxVmVfdVlZVU11RHNRSnFhTjVPR1JJZDNEN045bHJUeEtqLWh2Z2NrT3FsUDlWZ3lJ?oc=5"
     }
    ],
    "ufs": [
@@ -486,6 +792,22 @@
    "categoria": "equipe"
   },
   {
+   "id": "f26723b7e0b9",
+   "titulo": "Cleitinho convida Lula para posse no Vale do Jequitinhonha e critica calote de Zema na dívida de MG",
+   "veiculo": "Brasil de Fato",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQdWJheDFuSUV4TzVEYmlhbGlRWlRQQU1XTjdtamxBZ29VbXRPVjFpd2czNFJfNEFoOFc0SWhBdTQ4RVRuNE9ORWpwYWxNNVJWNE0yLUJ0WHN0OW9JdlB5VlA0OTdKQVBKVDVRQUdPdnlEd3d1YWpPbmJITU0wWnF2WWFfZl9oVkh5a3VaWWdSQW15MExFaWtRTU5Ud0FreGFpUE03VDVxTzM2MXR2dmNxVmM5dmgxLUhIX0dMVFBrcnFibVBCMG1yMXppWE1KOVdROEZ6b2hnQmZ6RHM?oc=5",
+   "data": "2026-11-26T21:02:00Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "91d24dc83704",
    "titulo": "Lula e Cleitinho discutem dívida de Minas Gerais em encontro no Palácio da Alvorada",
    "veiculo": "Metrô News Jornal",
@@ -617,6 +939,20 @@
    "outras": [],
    "ufs": [
     "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "c43c6a0bc26c",
+   "titulo": "Sérgio Moro anuncia novos secretários de Saúde e Governo Digital no Paraná",
+   "veiculo": "Catve",
+   "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9sWnRJZUh6Y3hIMFROZ0p3RlNuQklpdGx1V2hCa1UtblJSR3NocTIwTG90U1NfeW5Pc2FEUjljYnVUZDRSYzN2Q21kTQ?oc=5",
+   "data": "2026-11-26T19:59:48Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "PR"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -1004,6 +1340,22 @@
    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPYUI5YzZBVDI0Y05tMjFXbFdaUzN6NEZyanJDZ0ZpMmxEdWo1NXloUmo3SkNwbEU4M2hHQ0swbjc3RVk3LXUya1lFSXk0WHRsSE4zOHdHdjZ5UkM5WGpaVUZvamJsWi0xcXFXTTJpem5wUmR4NG12UWhtN1RacWpiUGs4ZHFia1ZaZlpNNzYyX1IyUTVWNFFnd1Azc2tyTlhudVJlWQ?oc=5",
    "data": "2026-11-26T18:02:00Z",
    "coletado_em": "2026-11-26T21:17:44Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "2415568d22a8",
+   "titulo": "Cleitinho responsabiliza Zema por dívida de MG e defende diálogo com Lula",
+   "veiculo": "Gazeta do Povo",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOeERGUThaMjhweVNZWFdIYUxab3owLTR1dHJmanI1ZlNpdUV2VG9UUjhlX2JzaVZBNl9xbThNTWNUNFB4Z1Q4R3VqenhvRW1yamlvY3pvRGdBbXRSb3dfTzhWN2hFSXBZbTJiMEdSWVJXa0xTTzlBX19URFpzRGlJVFI2MGMxcFhoa1laSmUtSUdPSHVOTEJ2bENnUFRldVNRcGxTcEFR?oc=5",
+   "data": "2026-11-26T18:02:00Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
    "outras": [],
    "ufs": [
     "MG"
@@ -1490,6 +1842,22 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "7bdc13e9ab62",
+   "titulo": "Aécio Neves articula encontro entre Cleitinho e Gilmar Mendes para discutir dívida de Minas",
+   "veiculo": "Brasil no Centro",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNQW12R3UwLThic2RSSXRpUXFwT21MbXk2SjJHNjV2VGRpUzRNb0F6LVBpNjFOVkk5cDNFXzBRakFPRk9iazg0elBvM1RxekNTOWxGSHEtWEJsVTlPY1NseFhPb1FDbUxCcjJmZ25TUWFYY2lDNUoxNzI2bHFfY3hYbl9YSGNwaktuQzFQcHd0RTBPMWxpYlNnajJPZXVhSVMycWMyMTdxeW5zSGxVeUROUmVaZUloeHdrRmVHeUdMSQ?oc=5",
+   "data": "2026-11-26T15:15:00Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [
+    "diagnostico"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "81f8b2437b1e",
@@ -2814,7 +3182,12 @@
    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPMkw5MmthdVhQS09udU5RbFpiX0lKYnhRZUZOM1lLbDZhRWVTWjV1eWxFRVlfdlB1Zmo5UGN0ZzRsaHJFYll0UllaVGNsaVhORTlWR01NYXQyenZrT0ZvQzUzY2N3N3BnTnpUN01xOEY5UUZkWWhOR25GVjlsM2JLbXlLZ0tVYkk3dzR6NlFmUWNtN3ZlVnhqMDV3OU1HSmtIcVhrY0FVeU9MWTdzV1E?oc=5",
    "data": "2026-11-25T17:05:53Z",
    "coletado_em": "2026-11-25T21:17:45Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Sim Notícias",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPYXpfbzVvVzRDeU5uaWJaaXdiZGdhWm1ldTZpMFdxUUU5eHRpR2ozX3daN3NTU0tKTjF1ZDFvaVlkdjVld3pfNW4zU3kzWDB5amR4c2UweEN0QW5zTWRXNU5IUVBVMnFiQ29pTmh6Q2phUDIxcVl2Qy1zUkJwYkhjVFVrdHFmMHpPZXpnaENFVkM2NVdLNnNOZTFNakc2V05WRzdqMlJCRE9mLTdQSkE?oc=5"
+    }
+   ],
    "ufs": [
     "RS"
    ],
@@ -4644,6 +5017,20 @@
     "economia"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "adb9762b6317",
+   "titulo": "Equipe de transição de Douglas Ruas cria ferramenta para antecipar riscos e evitar interrupção de serviços públicos - O São Gonçalo",
+   "veiculo": "O São Gonçalo",
+   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPOEc5RTM5YlZ4X042TFd1X1RhMl9wbWc2THM1MDF0bDJxV1N2MDRoek1JZllrVXNka1Y5SVU2M19nMEFkZTNZVFJMYVYzMWt4Q0ljRjhMSzlaaWs0QThzTkpjdVdqbzBiT01SejNYMVNVcDQxdklOUWVFeW0tUGp6X0ZaZXdtUnZmaUR6RTZ2RDlpU3cxN1BRLUwwRnktRHREQWl6RXNTVlU3VDVqVkp0bHdvV2pjdjQ5eWR5d2p0WkY1U1lJb2o4ZHVtU1hXcmlIeDlhWHllaVhjVTU2YXhfWUY4ZWFhTlQ1LWVGUmZDNjUtZGlY0gH8AUFVX3lxTFBFc2NOcGgzR0lZS1NiSXM4ZjZRWGtBV0piaUdNeXMxQnBlNUtMUmpWYnFzVDFNenh0anpBR2NYMmMzS2x3VmpUdmJpNlo5ODFvYW83OXpXODNmeXk0aERyR09iN19jbHJWRzVPSmtlWnVrWWVNSUM5a0VUNTdwRU5iRjF1bm1SYWdjYzhqbjljTWY3VXlsS1psWTNCYzZnajQtR0tLQmlJUk5rTy1WazZaNnpFRk1Nblo2RXlaZ0dOVXhSVWJZX1h5ckxkakpEQmI4U1pOS3VEaVQtSERiWm1EV1pPTlduek15bV9JV0FEQUJlelZ0WHp0T2s3VA?oc=5",
+   "data": "2026-11-23T18:00:15Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "c6bbe6f42af0",
@@ -11308,6 +11695,22 @@
    "categoria": "medida"
   },
   {
+   "id": "267d5883b4cc",
+   "titulo": "Quase 40% menos secretarias: O que Zucco planeja para o governo do RS em 2027",
+   "veiculo": "abc+",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQNnlvcE5JSFZuRURWRUFnZXdFdkhmRG1fUjhaMWhpZXpyRzZvb1BqMkUzSG1MQWNwbzk0N3kyMDhIUVRQNWFPQnBfY0xQdlhyZWV6WHFudjRkVG00WUpXRy15ZGNQV2ZhM2J5WjJKVk1MVzlZWjN5ZUZKMDc4cWpIMjZXdEoxdXpGcXoyRTR4TE5YaXRwcUZCV1JnUnEtdG0xVkp2cl9sLUtGR1FpRHYtZlQ5WlZMVVhob0phQkJLa3lKZ3pTMWk1T0JXd2hYd1pjRDBlalV4TE81VDVT?oc=5",
+   "data": "2026-11-16T08:00:00Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "estrutura"
+   ],
+   "categoria": "medida"
+  },
+  {
    "id": "d3d6cec1fcb1",
    "titulo": "Zucco apresenta fusões de secretarias a aliados nesta segunda-feira",
    "veiculo": "GZH",
@@ -12975,6 +13378,20 @@
     "diagnostico"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "d954b9a5b11d",
+   "titulo": "ECONOMIA - JHC se reúne com empresários de Alagoas em meio a expectativa sobre novo secretariado - com Jornal Rede Repórter",
+   "veiculo": "Repórter Maceió",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPRmtBdUUyVmdGMUd3dzNscnNDc3JUcUNPdWgwN1VXTl9ScldzejRDU1RSbk9IdjZXdG9MMlY1S0thU21FVjRQRlNFZlBYOTBPUWtGMWtyUFk2X25jRlE0M3dkZTVObHhFN3ZURURlT0VPU1RwZzZzQmNIWUFCblhQZ2pRZWxEY0VyaENBWERBLVJYYzd2WWFIS05GZ2doQk9GSVNDZnpwU2pEaXlwRkRBNEhjcHd0b2pCRndfRkJ2UHU4TVV5RnNidjdLMkhYX2tfdEx5WFpfaVdYbHBOc3FxQm1ORFA?oc=5",
+   "data": "2026-11-13T10:41:00Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "18edc74a6d2a",
@@ -14799,7 +15216,12 @@
    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFAzRzlfRHhxV3hRTHRmNUthaTI1RVpmSTlkM1NsQy1HelF4bU1GUm5TekpfdlplTE1NT01HaTE5V1BlLVVfdmkydkhKV21fcVFjcUpjR1ZfVk5fTHRGRnU0NUp5WW1QdHJTM1kzM1NBY3N6aVZ3eW9tSkNhWQ?oc=5",
    "data": "2026-11-11T17:34:34Z",
    "coletado_em": "2026-11-12T11:17:53Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Diário da Guanabara",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSnpqVWh1RnBqdTI3Zm04aml5cUJSNS11VnNxS2Y3RWNleDZGcmswVEJ3ZWZON2pKdVoxMGJGV2hYOE5aSDlRSW4tVW1fUVNOb01wM3pWRnNCNnpFVXktdkR3MjJqTXYwQ0dWRTJaYkNBUy1CYWFHOTVsLTFKSEp0Y0lRXzZHQUJpUzNyRlZuMWFfaHVWZm5ya2JpOW0?oc=5"
+    }
+   ],
    "ufs": [
     "MG"
    ],
@@ -22565,6 +22987,10 @@
     {
      "veiculo": "Rádio Pampa",
      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPcVRTcEV2MDBza19BYkQzTk9keGswUHo5LU5RRklrMG1VMm1LLTc1aUV3NnVDQ2JldkRBZk1hYnJQTHZKcnZnUU1JM3V1R3c1eW9Ud1BMMmdCYnU0SG9UQmdoVUNTb3dCMElJb21mcE9nWVc5YkdKZzZqUVEyZGxEdGN1Ukx0NmV6QVEwVUctNk0wTHpmUEpYcnE5NUJ1NExhemY4bjA1dmJZWTYxQV95OHEzNVNDZlRBbW9j?oc=5"
+    },
+    {
+     "veiculo": "TV Pampa",
+     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQVWtheEN6WVM0WmFkRkp5TE1aLXBBUkx0aTVtbk13cnpFamp1WWxDalE2OENKcGlhVUg4TllkdDdqdTBlc2NGNHdqSF9ibWMzLVlrYU5iUGhOYmZ0cjVfX2lDcjBTdnlPdkRyRFVxOHVDcVl3MEZ5QzYxQ3JyVTV3ZnNGZV9zeDVPTVZNaHdOc2tKTWV5N3ZSMTNyUC1SYTltV29ERlhiWHA4UlFzZTgtc2p5dTJpZnM?oc=5"
     }
    ],
    "ufs": [
@@ -23955,6 +24381,20 @@
    "outras": [],
    "ufs": [
     "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "eb0b4c65da22",
+   "titulo": "Governador Roberto Cidade recebe Omar Aziz para tratar da transição de governo no Amazonas",
+   "veiculo": "Portal Flagrante",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOUVFNdDZjblZFUVVBcl9NcC1lWlVrUTRNWldxMDF6Q1ZOQjdNelpLcmlCZ0g4U3RFc2V0QTUzazBwWFhsYkRLVWlicnc5eUx2WWVVVUJGTWhVaUx0QWgxY21nOFBDS0N2dlhHYlVUamRucnlLSkRFNU4zRy1JNy1vX18zNGE4T1l5aHVJT0JWTmZVbElCYkFWc3Vxc2NKYWE1N3hPX0IxTUpIQzd1ZnN3N2kySks3Z1ZJQzQ1dFBuV1c2MkIyRFB3Zm9ZbTVqaHhKOGc?oc=5",
+   "data": "2026-10-29T07:00:00Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "AM"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -26348,6 +26788,20 @@
    "outras": [],
    "ufs": [
     "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "2f81980f064f",
+   "titulo": "Omar Aziz e Roberto Cidade se reúnem nesta quarta (28) para tratar da transição",
+   "veiculo": "Rede Onda Digital",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE85MkxueFg2Yk9QbUNScXV2UV9ITkFLQ0dabTRyelNBUkU3TnFVM1o3ZnJCNFBBU092NTJVSy1qdTZHQWczUm11VmotbFpYVWVaMjkwX19SV0FkVjV5aWR0ZVpkcDVtUGFFU2hycWczS211a292NG9B?oc=5",
+   "data": "2026-10-27T07:00:00Z",
+   "coletado_em": "2026-11-27T15:18:01Z",
+   "outras": [],
+   "ufs": [
+    "AM"
    ],
    "temas": [],
    "categoria": "equipe"

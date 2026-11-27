@@ -1,11 +1,11 @@
 {
- "gerado_em": "2026-11-26T11:28:29Z",
+ "gerado_em": "2026-11-27T15:22:32Z",
  "resumo": {
-  "total": 152,
-  "com_data": 7,
+  "total": 154,
+  "com_data": 9,
   "diario": 2,
   "obras": 0,
-  "painel": 5
+  "painel": 7
  },
  "itens": {
   "169|Ordem de Execução de Serviço 291100/2024|Ordem de Execução de Serviço|27512782000102|2024-07-11": {
@@ -30,8 +30,18 @@
    "texto": "Rescisão publicada no Diário Oficial",
    "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2045299/11571"
   },
+  "67|Autorização de Compra/Ordem de Fornecimento 2026.004682.44101.05/2026|Autorização de Compra/Ordem de Fornecimento|02513899000414|2026-11-25": {
+   "data": "2026-11-27",
+   "fonte": "painel",
+   "texto": "Detectado pelo painel (o cadastro não informa a data da decisão)"
+  },
   "181|Autorização de Compra/Ordem de Fornecimento 2026.000211.45105.05/2026|Autorização de Compra/Ordem de Fornecimento|31351099000108|2026-07-29": {
    "data": "2026-11-18",
+   "fonte": "painel",
+   "texto": "Detectado pelo painel (o cadastro não informa a data da decisão)"
+  },
+  "34|Contrato 549/2026|Contrato|07264193705|2026-08-13": {
+   "data": "2026-11-27",
    "fonte": "painel",
    "texto": "Detectado pelo painel (o cadastro não informa a data da decisão)"
   },

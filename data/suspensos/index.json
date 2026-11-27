@@ -1,12 +1,12 @@
 {
- "ref": "2026-11-26",
- "gerado_em": "2026-11-26T15:20:49Z",
+ "ref": "2026-11-27",
+ "gerado_em": "2026-11-27T15:20:24Z",
  "primeiro_levantamento": "2026-10-30",
  "baseline": false,
  "contagem": {
   "suspenso": 25,
   "rescindido": 77,
-  "anulado": 50
+  "anulado": 52
  },
  "serie": [
   {
@@ -38,6 +38,12 @@
    "suspenso": 25,
    "rescindido": 77,
    "anulado": 50
+  },
+  {
+   "data": "2026-11-27",
+   "suspenso": 25,
+   "rescindido": 77,
+   "anulado": 52
   }
  ],
  "por_orgao": [
@@ -59,8 +65,8 @@
    "orgao": "SECRETARIA DE ESTADO DA SAÚDE",
    "suspenso": 0,
    "rescindido": 2,
-   "anulado": 13,
-   "valor": 2476250.04
+   "anulado": 14,
+   "valor": 2607947.4
   },
   {
    "orgao": "SECRETARIA DE ESTADO DA JUSTIÇA",
@@ -84,6 +90,13 @@
    "valor": 113181.2
   },
   {
+   "orgao": "ESCOLA DE SERVIÇO PÚBLICO DO EPÍRITO SANTO",
+   "suspenso": 0,
+   "rescindido": 4,
+   "anulado": 1,
+   "valor": 30448.0
+  },
+  {
    "orgao": "HOSPITAL DE SÃO JOSÉ DO CALÇADO",
    "suspenso": 1,
    "rescindido": 4,
@@ -103,13 +116,6 @@
    "rescindido": 4,
    "anulado": 1,
    "valor": 2668746.4
-  },
-  {
-   "orgao": "ESCOLA DE SERVIÇO PÚBLICO DO EPÍRITO SANTO",
-   "suspenso": 0,
-   "rescindido": 4,
-   "anulado": 0,
-   "valor": 15408.0
   },
   {
    "orgao": "INSTITUTO DE ATENDIMENTO SÓCIO-EDUCATIVO DO ESPÍRITO SANTO",
@@ -252,7 +258,10 @@
    "valor": 21980.0
   }
  ],
- "novos": [],
+ "novos": [
+  "34|Contrato 549/2026|Contrato|07264193705|2026-08-13",
+  "67|Autorização de Compra/Ordem de Fornecimento 2026.004682.44101.05/2026|Autorização de Compra/Ordem de Fornecimento|02513899000414|2026-11-25"
+ ],
  "saidas": [],
  "itens": [
   {
@@ -1408,6 +1417,24 @@
    "visto_em": null
   },
   {
+   "id": "67|Autorização de Compra/Ordem de Fornecimento 2026.004682.44101.05/2026|Autorização de Compra/Ordem de Fornecimento|02513899000414|2026-11-25",
+   "orgao": "SECRETARIA DE ESTADO DA SAÚDE",
+   "orgao_id": "67",
+   "documento": "Autorização de Compra/Ordem de Fornecimento 2026.004682.44101.05/2026",
+   "tipo": "Autorização de Compra/Ordem de Fornecimento",
+   "fornecedor": "GRIFOLS BRASIL LTDA",
+   "cnpj": "02513899000414",
+   "objeto": "REGISTRO DE PREÇOS DE MEDICAMENTOS – MANDADO JUDICIAL",
+   "valor_inicial": 131697.36,
+   "valor_final": 131697.36,
+   "celebracao": "2026-11-25",
+   "fim": null,
+   "situacao": "Instrumento Contratual Revogado",
+   "categoria": "anulado",
+   "ano": "2026",
+   "visto_em": "2026-11-27T15:20:24Z"
+  },
+  {
    "id": "667|Contrato 007/2023|Contrato|07122586000106|2023-08-14",
    "orgao": "FUNDACAO DE PREVIDENCIA COMPLEMENTAR DO ESTADO DO ESPIRITO SANTO",
    "orgao_id": "667",
@@ -1874,6 +1901,24 @@
    "categoria": "anulado",
    "ano": "2025",
    "visto_em": null
+  },
+  {
+   "id": "34|Contrato 549/2026|Contrato|07264193705|2026-08-13",
+   "orgao": "ESCOLA DE SERVIÇO PÚBLICO DO EPÍRITO SANTO",
+   "orgao_id": "34",
+   "documento": "Contrato 549/2026",
+   "tipo": "Contrato",
+   "fornecedor": "ANDRESSA HENRIQUE MONTEIRO",
+   "cnpj": "07264193705",
+   "objeto": "Contratação da profissional Andressa Henrique Monteiro, período 14/08/2026 a 30/10/2026, para atuar como Docente Conteudista na Elaboração dos materiais didático-pedagógicos (E-books e Caderno Orientador) do Projeto Simulação Estudantil da Organização das Nações Unidas na Rede Estadual - SERONU - De",
+   "valor_inicial": 15040.0,
+   "valor_final": 15040.0,
+   "celebracao": "2026-08-13",
+   "fim": "2026-10-30",
+   "situacao": "Instrumento Contratual Anulado",
+   "categoria": "anulado",
+   "ano": "2026",
+   "visto_em": "2026-11-27T15:20:24Z"
   },
   {
    "id": "58|Empenho 2024NE00515|Empenho|46695758000192|2024-11-29",
