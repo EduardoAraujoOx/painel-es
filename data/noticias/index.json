@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-27",
- "gerado_em": "2026-11-27T19:17:14Z",
+ "gerado_em": "2026-11-27T20:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 59,
-   "aceitos": 31,
-   "possiveis": 6
+   "lidos": 29,
+   "aceitos": 11,
+   "possiveis": 7
   },
   {
    "fonte": "Google Notícias",
@@ -49,8 +49,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 28,
-   "aceitos": 2,
+   "lidos": 36,
+   "aceitos": 4,
    "possiveis": 2
   },
   {
@@ -73,15 +73,15 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 7,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 5,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 78,
+   "lidos": 77,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 95,
+   "lidos": 91,
    "aceitos": 4,
-   "possiveis": 6
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 13,
-   "aceitos": 3,
-   "possiveis": 0
+   "lidos": 14,
+   "aceitos": 2,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -137,9 +137,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
-   "aceitos": 2,
-   "possiveis": 4
+   "lidos": 57,
+   "aceitos": 3,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 59,
-   "aceitos": 3,
-   "possiveis": 6
+   "lidos": 61,
+   "aceitos": 2,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -169,7 +169,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 1,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 16,
-   "aceitos": 8,
+   "lidos": 18,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
@@ -218,8 +218,8 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
-   "possiveis": 0
+   "aceitos": 1,
+   "possiveis": 1
   },
   {
    "fonte": "Folha Vitória",
@@ -227,14 +227,14 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
    "ok": true,
    "lidos": 30,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -278,22 +278,114 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 5,
  "descartes_na_coleta": {
   "sem_contexto": 406,
-  "possivel": 23,
-  "oficial_sem_tema": 2,
-  "outro_estado": 29,
-  "sem_contexto_com_tema": 22,
-  "excluir": 45,
-  "generico_sem_ancora": 3,
+  "possivel": 27,
+  "oficial_sem_tema": 4,
+  "excluir": 44,
+  "outro_estado": 34,
+  "sem_contexto_com_tema": 25,
   "caixa_alta": 2,
-  "veiculo_excluido": 46,
+  "veiculo_excluido": 54,
+  "generico_sem_ancora": 2,
   "exterior_sem_ancora": 5,
-  "veiculo_outra_praca": 12,
-  "sigla_sem_ancora": 11
+  "sigla_sem_ancora": 11,
+  "veiculo_outra_praca": 19
  },
  "itens": [
+  {
+   "id": "10fdd5ff243b",
+   "titulo": "OAB-ES questiona criação de 575 cargos no Ministério Público",
+   "veiculo": "ES Hoje",
+   "url": "https://eshoje.com.br/politica/2026/11/oab-es-questiona-criacao-de-575-cargos-no-ministerio-publico/",
+   "data": "2026-11-27T20:00:04Z",
+   "coletado_em": "2026-11-27T20:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "fd126ff6a976",
+   "titulo": "Quem é Danielle Calazans, 1ª mulher a comandar o Banestes",
+   "veiculo": "Folha Vitória",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSFFTVE1SeF9WQXEzdGVVam5PcTR0enJwd2ktNllSMVJnVVhVQkFGN1c3OFhSUURrWmQ0ZHNMNk1uTmlkR0dHY3YxVlpYajI0YTFadzdoVjJhM3ljdE1CVmdBNFM2Q2hPOHF2em1YaVYzUUhfd0NtcUdDdVMwRGZ5dnhQUk5feGtwcXZWMk00bXBXQV8wbnB6UW1vZHFxVU42R0xHcldmTTRRclJ0bzE5TWc1Ry03U2xC?oc=5",
+   "data": "2026-11-27T19:58:54Z",
+   "coletado_em": "2026-11-27T20:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "c19d671a988b",
+   "titulo": "Quem é Danielle Calazans, primeira mulher escolhida para comandar o Banestes",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/economia/quem-e-danielle-calazans-primeira-mulher-escolhida-para-comandar-o-banestes/",
+   "data": "2026-11-27T19:58:54Z",
+   "coletado_em": "2026-11-27T20:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "19526791696f",
+   "titulo": "Pazolini recebe homenagem do SINDIPOL-ES em confraternização dos policiais civis aposentados",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOamZrWURCZjNKNnB2X25xUzFMU2lJV1JtckcyRmZFYm1SeTlaODU1TE5BY19OWGNjVjJhUWtaVXVXT2RlbDU0VG5HdE5pbXpacjFTeWhERDFKcFV0QjRVV29jLUoxZ2pTb2w0ZjFUay1KcGoyODYwcjJqNUt1ZWdmRHg1U1NfY3NBWV9CRUxPZDc1M0l0Z2pkMXRKMW5kWWJqQk5CaHVkVnpfLWNDbHp2a3FWYmpLcU16?oc=5",
+   "data": "2026-11-27T19:57:45Z",
+   "coletado_em": "2026-11-27T20:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "e89aedae9274",
+   "titulo": "Secretário de Cultura? O que Sergio Meneguelli diz sobre seu futuro político",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/secretario-de-cultura-o-que-sergio-meneguelli-diz-sobre-seu-futuro-politico/",
+   "data": "2026-11-27T19:54:22Z",
+   "coletado_em": "2026-11-27T20:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "b9f7b152891c",
+   "titulo": "OAB-ES questiona Ministério Público Estadual sobre a criação de 575 cargos com gasto extra de R$ 9,8 milhões aos cofres públicos",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxQMGRyTjliMFJmZ3JHZEltVXhzaVhuWFJUMWl5MVRQTWQ0UHhpZVc2QnBmanM4N1V6S3o3RW1XMkFuNnJtS0tMUXFEOTlDTVk1NTN5WEJDamxQaC10MTJRNDllTktYN21iMzB3RmlIUmphdUF2T2p0bXlxUGdzdkdOQW1rVGxBNy1rRk5rT1E5SzlOWGdPT0V0dWk0X0VsMlJPRnZCNC0wMFFJaGVtUDhBZkN4bEZyNThVZU1ra0x6YldPVkdEZVRfZjBNYjFtcl9aekctWklyaUI4U2RxQ3hUU2ZiS3lnaEwwbWdlZHUyVVdLX3dQQUxlSzlJTmxTcm1KSEFob1dUVnR0RXF0M3BPR0dGSTVyOU1mZXfSAagCQVVfeXFMTzJieXVaYlZZLVpyR1otSU9qMXRLbHY0M3FTS2pCcjg1TlZRQ2NUNDhQQll6VTZ4MmpDc0J3REtLcHVYcjU3ZEt3Yzl5eG0zMlVnLXlMa0pWaEdTMDF5SldCQ3Q1bDluMmIzZTJ2TkxWWG1PVm5MVkhaNGU5TEw1MndwSjc3MWRROEJoVGRQRjV0bUNUMmtaTVlGYmlJMHZISWJmaGxxOTk4MXFJMWZzenlsallkQ0w4QUREMVU3VlUzU2sxeWJtQnhlTkFneUdvd01zVGZ6UzZJRUo3blFwbF93NTUxclVVV0cxNk1kWTdiRVU1YWFDelVqbU1ETWs4dGZ6ODJOby1odF9mWDVEUFc1M25kTTJybWxiajZ4d0NOOU9WamYwemo?oc=5",
+   "data": "2026-11-27T19:27:30Z",
+   "coletado_em": "2026-11-27T20:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "controle"
+   ]
+  },
+  {
+   "id": "394c69f47222",
+   "titulo": "Justiça absolve ex-adjunto da Sefaz e advogada em ação sobre suposta propina de R$ 950 mil",
+   "veiculo": "Infoverus",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPQ3kwNVNEa0pqR0hYUVNlT1h2SWE2Ti1yTDdINXkwYUZMc0hSSjB1WjdDTEw2MTRRbzJreEhneUQwWWN2ZzlwTXJvb1B5OVI2aVdud0JsUmlfZnVVbnNYaHQ2WGVGaHZMQl9ZYU45djNmTnhaVFk5eEc5b2dQNDJ5Ym8zTFJHSW8weWVmVTdIVUM4MTNiQmxUVGRtZDh3d2lmOVEzYlpMWlNDQTgwNTgyRTRmUGVvdHg3TkNaaUFFMnVNMTdoZUN5VjFITmdoYWVR?oc=5",
+   "data": "2026-11-27T18:34:00Z",
+   "coletado_em": "2026-11-27T20:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "28610ba7be8d",
    "titulo": "Parque Aberto deste sábado (28) recebe shows de Ada Koffi e Naná do Pop",
