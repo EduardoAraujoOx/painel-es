@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-27",
- "gerado_em": "2026-11-27T22:17:14Z",
+ "gerado_em": "2026-11-27T23:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,24 +17,24 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 14,
+   "lidos": 13,
    "aceitos": 8,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 30,
-   "aceitos": 12,
-   "possiveis": 6
+   "lidos": 28,
+   "aceitos": 13,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 8,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
@@ -49,8 +49,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 30,
-   "aceitos": 5,
+   "lidos": 26,
+   "aceitos": 3,
    "possiveis": 2
   },
   {
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 9,
+   "lidos": 8,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 78,
+   "lidos": 77,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 14,
+   "lidos": 11,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -137,9 +137,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
-   "aceitos": 2,
-   "possiveis": 4
+   "lidos": 60,
+   "aceitos": 4,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 61,
+   "lidos": 60,
    "aceitos": 2,
-   "possiveis": 4
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 57,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 17,
-   "aceitos": 9,
+   "lidos": 20,
+   "aceitos": 11,
    "possiveis": 0
   },
   {
@@ -210,15 +210,15 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 5,
-   "possiveis": 2
+   "aceitos": 6,
+   "possiveis": 5
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -232,10 +232,11 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": true,
-   "lidos": 30,
-   "aceitos": 1,
-   "possiveis": 0
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 415: Unsupported Media Type"
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -250,7 +251,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 5,
+   "aceitos": 4,
    "possiveis": 2
   },
   {
@@ -258,7 +259,7 @@
    "consulta": "https://www.agazeta.com.br/colunas/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
+   "aceitos": 4,
    "possiveis": 0
   },
   {
@@ -278,22 +279,120 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 4,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 396,
-  "possivel": 23,
+  "sem_contexto": 367,
+  "possivel": 25,
   "oficial_sem_tema": 3,
-  "outro_estado": 29,
-  "excluir": 43,
-  "sem_contexto_com_tema": 20,
+  "outro_estado": 30,
+  "excluir": 38,
+  "sem_contexto_com_tema": 24,
   "caixa_alta": 2,
-  "veiculo_excluido": 51,
+  "veiculo_excluido": 58,
   "generico_sem_ancora": 2,
   "exterior_sem_ancora": 4,
-  "veiculo_outra_praca": 15,
-  "sigla_sem_ancora": 8
+  "veiculo_outra_praca": 19,
+  "sigla_sem_ancora": 10
  },
  "itens": [
+  {
+   "id": "c1f2b2b93076",
+   "titulo": "Manifestantes bloqueiam BR 101 em Anchieta e cobram obras de drenagem",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/transito/manifestantes-bloqueiam-br-101-em-anchieta-e-cobram-obras-de-drenagem-1126",
+   "data": "2026-11-27T23:10:20Z",
+   "coletado_em": "2026-11-27T23:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "restricao"
+   ]
+  },
+  {
+   "id": "bc8d3fb7a538",
+   "titulo": "Lula garante benefícios em novo governo, mas defende revisão",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNcTl4OE95Z3BCNFZQb1l2ZHlRLUJtMG9qdjczZWp5Y3dXVTdDYWM0ODlqQW83cDRmQ0cydm5iYngxVGh5b3dDSUhpT2VMS3lnVkVzMFhFeGZUcVl3SmlmTkVISG5sS05RNXVkVW83YlFtWWJnbENZNElkWUN1TnYzVHNJdDRINDZhaVZhcHhaNTNCVWdhUU8tQmp3NEsxWHpqdkJPamp2RWtVclE2UWRpMHF5dGtVcFI2SnFvLTAtVmI?oc=5",
+   "data": "2026-11-27T23:07:46Z",
+   "coletado_em": "2026-11-27T23:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "transicao"
+   ]
+  },
+  {
+   "id": "702f55ce5a5c",
+   "titulo": "Pedra Azul Summit 2026 debate juros, ajuste fiscal e reforma tributária no primeiro dia",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/pedra-azul-summit/pedra-azul-summit-2026-debate-juros-ajuste-fiscal-e-reforma-tributaria-no-primeiro-dia-1126",
+   "data": "2026-11-27T23:04:45Z",
+   "coletado_em": "2026-11-27T23:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "607313832e2b",
+   "titulo": "Festa de posse de Pazolini: o cantor favorito, o “beija-mão” e a China",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/leonel-ximenes/festa-de-posse-de-pazolini-o-cantor-favorito-o-beija-mao-e-a-china-1126",
+   "data": "2026-11-27T22:46:00Z",
+   "coletado_em": "2026-11-27T23:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
+  {
+   "id": "6da0527e92de",
+   "titulo": "Vila Velha suspende licitação do corredor de ônibus entre Terceira Ponte e Av. Lindenberg",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/es/cotidiano/vila-velha-suspende-licitacao-do-corredor-de-onibus-entre-terceira-ponte-e-av-lindenberg-1126",
+   "data": "2026-11-27T22:37:15Z",
+   "coletado_em": "2026-11-27T23:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "restricao",
+    "contratos"
+   ]
+  },
+  {
+   "id": "1f570841ab95",
+   "titulo": "Sefaz-ES reabre prazo para empresas contestarem exclusão do Simples",
+   "veiculo": "Mix Vale",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdG1rX19fZjFCajk0UnItTGs1d3Q5UnhTUjg1R0RzTV9GZUdoY3dRVGRVYVpIS0IyVEwtZmFCUzlFbkVUQXdrRVo2clZ6ZlUxUlhEcnRlajg1V3ZjczlZV1p1MnZ1a1NSTHlnWHVtZC14U1BMSnMtbXRBMmRoLXA3RlZfY3FQWFpMajdEblp6RjJDRGI0ZkFxMnVzNk1XNE1uaElENHIyYVdXZw?oc=5",
+   "data": "2026-11-27T22:36:26Z",
+   "coletado_em": "2026-11-27T23:17:12Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "bbcfa7faf887",
+   "titulo": "Coronel da reserva do Exército e secretário de Zucco em Brasília: Entenda quem é o futuro diretor-geral do Detran",
+   "veiculo": "Sul 21",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNd3NhOTg1RkZYUHpIWUplLXo2cVV1djhGMWdLTlptOXpCYnAzVUhCMGV3QUdlRVZfMUdKNkF0VkVlTXlSTVZWQm1ueDFvWHFsRVIySnQ5YllHcm0ya1BBRmtLUmZ2UnB6Z1M4dkh4eG5mVkM4aFFmOTlJc2Zhc0FNWVhFT01nU3JiODRzbGQzanNrZHQ3enNoRUdCQWdHUVJXbFEtZmViT0lycmZXYkMwWG9YRkNPZm96TjRCb3dRbURUOUZMUXF2dWxuejZ6bkNyYjI2NmpGeXFabGk2amlfY1o5SHQ3SUZHaE1wbzdyYk9Ndw?oc=5",
+   "data": "2026-11-27T22:20:00Z",
+   "coletado_em": "2026-11-27T23:17:12Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "6e22c05d3ceb",
    "titulo": "Reforma tributária e competitividade logística: desafios e oportunidades para o ES",
