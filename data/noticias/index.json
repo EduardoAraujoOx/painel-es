@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-27",
- "gerado_em": "2026-11-27T02:10:54Z",
+ "gerado_em": "2026-11-27T09:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,39 +17,39 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 21,
-   "aceitos": 12,
+   "lidos": 19,
+   "aceitos": 11,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 59,
-   "aceitos": 26,
-   "possiveis": 8
+   "lidos": 26,
+   "aceitos": 8,
+   "possiveis": 9
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 7,
-   "possiveis": 1
-  },
-  {
-   "fonte": "Google Notícias",
-   "consulta": "Pazolini governador eleito transição",
-   "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 7,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
+   "consulta": "Pazolini governador eleito transição",
+   "ok": true,
+   "lidos": 7,
+   "aceitos": 6,
+   "possiveis": 1
+  },
+  {
+   "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 49,
+   "lidos": 51,
    "aceitos": 8,
    "possiveis": 4
   },
@@ -89,8 +89,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 78,
-   "aceitos": 7,
+   "lidos": 84,
+   "aceitos": 5,
    "possiveis": 4
   },
   {
@@ -98,8 +98,8 @@
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
    "lidos": 100,
-   "aceitos": 6,
-   "possiveis": 4
+   "aceitos": 5,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 14,
-   "aceitos": 1,
-   "possiveis": 2
+   "lidos": 12,
+   "aceitos": 3,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 4,
+   "lidos": 2,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 55,
+   "lidos": 54,
    "aceitos": 4,
    "possiveis": 6
   },
@@ -145,23 +145,23 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 35,
+   "lidos": 48,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 24,
+   "lidos": 44,
    "aceitos": 3,
-   "possiveis": 0
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 59,
+   "lidos": 100,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -169,7 +169,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 4,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 1
   },
@@ -219,7 +219,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Folha Vitória",
@@ -232,11 +232,10 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 415: Unsupported Media Type"
+   "ok": true,
+   "lidos": 30,
+   "aceitos": 1,
+   "possiveis": 1
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -279,20 +278,20 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 2,
  "descartes_na_coleta": {
-  "sem_contexto": 390,
+  "sem_contexto": 423,
   "possivel": 29,
-  "oficial_sem_tema": 4,
-  "excluir": 34,
+  "oficial_sem_tema": 6,
   "sem_contexto_com_tema": 21,
-  "generico_sem_ancora": 9,
-  "veiculo_excluido": 39,
-  "outro_estado": 27,
+  "excluir": 40,
+  "veiculo_excluido": 48,
+  "outro_estado": 28,
   "caixa_alta": 1,
-  "exterior_sem_ancora": 9,
-  "veiculo_outra_praca": 21,
-  "sigla_sem_ancora": 3
+  "generico_sem_ancora": 9,
+  "exterior_sem_ancora": 10,
+  "veiculo_outra_praca": 19,
+  "sigla_sem_ancora": 6
  },
  "itens": [
   {
@@ -427,6 +426,18 @@
    ]
   },
   {
+   "id": "da59aed48963",
+   "titulo": "Professora da rede estadual de Jequié conquista 1º lugar no Prêmio Nacional Liga Steam",
+   "veiculo": "Alagonews",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNbXBTODNZUmM3dnVJZEJQNTBBQ2FtNk45TTl2QXFYOWtVcVNhVWExd21pbGo0ZTEyYWhuVXJONXlnTVFqT1RVVGpVRHVnVTU4WEUzeUtvX1ZuTmdEaEJKN2xlUVo3cUY2SXBhb1JkX0tXT3dMRFhXdF81VXE4a0JsWnlMWEw4Z0hfZTBZeWl3VlRzQjNUSVlLVnFsZUdmOENWUkZaUzF4Zk1DWVU5RllrMWZRNWJRYUlvaEdSeWxDaElQdVE?oc=5",
+   "data": "2026-11-26T21:44:05Z",
+   "coletado_em": "2026-11-27T09:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
    "id": "9ed49061e4ba",
    "titulo": "Opportunità! Itália mira negócios no ES e quer aproximar empresários italianos do Estado",
    "veiculo": "Folha Vitória",
@@ -543,6 +554,18 @@
    "temas": [
     "pessoal"
    ]
+  },
+  {
+   "id": "a981769c4c98",
+   "titulo": "Ceturb-ES estende horários do Sistema Aquaviário para visitação às vilas natalinas neste fim de semana",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNVkNHVkZNSlNIemJ3R2NnQk9mLXVfdXYtUUE4ajJFR3kyT3pjS3R1dkFBd0w1M2lRRlYzaGcxSG5LeG1oMnkxWnZGNFdTS0lCSEFNMWRETVdpZDk1T0JfdVVYM2ZfQzJRTGt3M3ZCZXVaZE5LaDh4VS1oX3g0eFZjX1hURDhHZnlsVE53bS1oQVV0Y2huU2Y4aEdHVXJxcUpjSVVsUVVyY1lJZnEyWUk3dTFkSzJCam1KeWpBTlAzQl9wUQ?oc=5",
+   "data": "2026-11-26T20:12:00Z",
+   "coletado_em": "2026-11-27T09:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "6dbaa0acc45d",
@@ -752,6 +775,18 @@
    "temas": []
   },
   {
+   "id": "31448291dc9a",
+   "titulo": "Com apoio da Setur, Barra de São Miguel recebe o passeio ciclístico Pedala BSM",
+   "veiculo": "Correio dos Municípios",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZC1wUkRZSFR2S2hwNzdJM0FiQy1SRDZ1NVM0cW9QRHNrcDh2UlROU3ZrbW42M2M3MW52SElGbTM0Y21fZHVQRjdibmplWlJfT05UZnRlQnZpR1ZtQkRVV1dPVGpaRVFzTVBoQWU0MFl0bU9zczVFZmdqVFZFVlNKVUxTZnlKQllTd2lxREItdmZyLXhBNFYyMEFjanY1M1I5aTU5YmNRSEZHZUtIcUgzTjg3T2lpWElGZG9oVjM4Sy1QZTFjQzhQNzJEVERxZXd3b2RST2FPQjJOQQ?oc=5",
+   "data": "2026-11-26T15:32:09Z",
+   "coletado_em": "2026-11-27T09:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
    "id": "c7f6ec09e8a0",
    "titulo": "Governo do ES extingue 160 cargos comissionados que estavam vagos",
    "veiculo": "A Gazeta",
@@ -844,6 +879,18 @@
    "temas": [
     "governador"
    ]
+  },
+  {
+   "id": "70ab429ac8ff",
+   "titulo": "Orquestra Sinfônica do Estado do Espírito Santo celebra 50 anos com nova temporada",
+   "veiculo": "CONCERTO | Home",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVXZWYVYxNzE4NzVBVi1PS1VxN3JuVkJLNkVweEVBd2RsV2tKYThCVWpoaWF4ZGFDU3czZkxMQU5peXQ2NGJxNDVSYlBXRXg1d0RBcDMtLUxfbkExMUpmUHdDOUl2OUkyOEdua1lyUDIxWlRMRURSRzNFUllNT1JZQWZlWEE3Zy10TUhwOWZWXzVTOFNtdmFOWFNZWXhMcVVIdzFfNlVxMFBkR3lIVlRnN0ZNbTRKd2V2cFJPc2hB?oc=5",
+   "data": "2026-11-26T11:29:58Z",
+   "coletado_em": "2026-11-27T09:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "0d61f6c2147e",
@@ -960,6 +1007,18 @@
    "temas": [
     "financas"
    ]
+  },
+  {
+   "id": "f01cb354c198",
+   "titulo": "Saúde do ES repassa R$ 5,21 milhões ao DER-ES para obras do Complexo de Saúde do Norte",
+   "veiculo": "atlaspublico.com.br",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcElzUmpySWpPTU1CdlhTVlFKdnBpMXU4NVJoajJMbzJsV3Uxa0txUnpDSnQ0NE5rRUMxaVZtbEJrUFlFZ2gyS05zTXc3bGtZQlZJQTVuOGFWbTh3WXo1R1BOYlc3M1pRRXdjS3ZOcF9rMURJNm1fbTFQenRTVHJqZVRnZzlUV25KQ3pjNnBoU1U4ODc3d2ZpLWJCZTFHVWxjaEZwakdKcWt6WWJWSDd5UUdaZ24?oc=5",
+   "data": "2026-11-26T05:01:08Z",
+   "coletado_em": "2026-11-27T09:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "5e2ddc400e1a",

@@ -1,17 +1,19 @@
 {
- "ref": "2026-11-26",
- "gerado_em": "2026-11-26T10:17:31Z",
+ "ref": "2026-11-27",
+ "gerado_em": "2026-11-27T09:17:29Z",
  "desde": "2026-10-04",
  "primeiro_levantamento": "2026-10-31",
  "baseline": false,
  "contagem": {
   "paralisacao": 5,
   "suspensao": 3,
-  "rescisao": 24,
+  "rescisao": 25,
   "cancelamento": 6,
   "anulacao": 1
  },
- "novos": [],
+ "novos": [
+  "2070551"
+ ],
  "edicoes_lidas": [
   11522,
   11528,
@@ -54,9 +56,22 @@
   11661,
   11668,
   11672,
-  11677
+  11677,
+  11681
  ],
  "itens": [
+  {
+   "id": "2070551",
+   "edicao": 11681,
+   "data": "2026-11-27",
+   "tipo": "rescisao",
+   "alvo": "contrato",
+   "titulo": "Resumo Termo de Distrato de Contrato - Toxicológico Promoções",
+   "orgao": "Secretaria de Estado de Segurança Pública e Defesa Social - SESP -",
+   "setor": "Termos",
+   "url": "https://ioes.dio.es.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/2070551/11681",
+   "visto_em": "2026-11-27T09:17:29Z"
+  },
   {
    "id": "2069813",
    "edicao": 11677,
