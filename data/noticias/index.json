@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-27",
- "gerado_em": "2026-11-27T21:17:15Z",
+ "gerado_em": "2026-11-27T22:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,31 +25,31 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 29,
-   "aceitos": 11,
+   "lidos": 30,
+   "aceitos": 12,
    "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 7,
+   "lidos": 10,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 7,
+   "lidos": 10,
+   "aceitos": 8,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 33,
+   "lidos": 30,
    "aceitos": 5,
    "possiveis": 2
   },
@@ -65,7 +65,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 6,
    "possiveis": 1
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 77,
+   "lidos": 78,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -98,7 +98,7 @@
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 5
   },
   {
@@ -137,31 +137,31 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 57,
-   "aceitos": 3,
-   "possiveis": 6
+   "lidos": 31,
+   "aceitos": 2,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 32,
+   "lidos": 30,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 61,
    "aceitos": 2,
-   "possiveis": 2
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 57,
+   "lidos": 100,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 8,
+   "lidos": 7,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 19,
-   "aceitos": 10,
+   "lidos": 17,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
@@ -210,15 +210,15 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 3,
-   "possiveis": 3
+   "aceitos": 5,
+   "possiveis": 2
   },
   {
    "fonte": "Folha Vitória",
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 2,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -250,15 +250,15 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
-   "possiveis": 1
+   "aceitos": 5,
+   "possiveis": 2
   },
   {
    "fonte": "A Gazeta",
    "consulta": "https://www.agazeta.com.br/colunas/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
+   "aceitos": 3,
    "possiveis": 0
   },
   {
@@ -278,22 +278,78 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 5,
+ "novos_na_coleta": 4,
  "descartes_na_coleta": {
-  "sem_contexto": 403,
-  "possivel": 24,
+  "sem_contexto": 396,
+  "possivel": 23,
   "oficial_sem_tema": 3,
-  "outro_estado": 23,
-  "excluir": 44,
+  "outro_estado": 29,
+  "excluir": 43,
   "sem_contexto_com_tema": 20,
   "caixa_alta": 2,
+  "veiculo_excluido": 51,
   "generico_sem_ancora": 2,
-  "veiculo_excluido": 43,
   "exterior_sem_ancora": 4,
-  "veiculo_outra_praca": 19,
+  "veiculo_outra_praca": 15,
   "sigla_sem_ancora": 8
  },
  "itens": [
+  {
+   "id": "6e22c05d3ceb",
+   "titulo": "Reforma tributária e competitividade logística: desafios e oportunidades para o ES",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/pedra-azul-summit/reforma-tributaria-e-competitividade-logistica-desafios-e-oportunidades-para-o-es-1126",
+   "data": "2026-11-27T22:13:45Z",
+   "coletado_em": "2026-11-27T22:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "e0ced412d633",
+   "titulo": "Pazolini pode escalar secretários que hoje estão no Governo de São Paulo",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/vitor-vogas/pazolini-pode-escalar-secretarios-que-hoje-estao-no-governo-de-sao-paulo-1126",
+   "data": "2026-11-27T21:42:00Z",
+   "coletado_em": "2026-11-27T22:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "70ed96130147",
+   "titulo": "Escolha de Trabuco para Fazenda coloca ajuste fiscal no centro do debate, diz Julia Duailibi",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/pedra-azul-summit/escolha-de-trabuco-para-fazenda-coloca-ajuste-fiscal-no-centro-do-debate-diz-julia-duailibi-1126",
+   "data": "2026-11-27T21:36:19Z",
+   "coletado_em": "2026-11-27T22:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
+  {
+   "id": "9521ec36933e",
+   "titulo": "ICMS no Espírito Santo terá IBS e CBS na base em 2027",
+   "veiculo": "ES Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1ER3BoR1p6SEF3a09RS2MxV2FZM1pEZEZTRWhpTUdiMkpSanlDOWUzQVN1ckdSd3hadm9ZbURhVi15YWlxaC1oSGJkV2llT1dkZ2pSZl9BOTA4eURnN1Q2amJnNVpUT0tqLWNBR1haNGs2ZF91TEx6YjZR?oc=5",
+   "data": "2026-11-27T21:25:00Z",
+   "coletado_em": "2026-11-27T22:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "financas"
+   ]
+  },
   {
    "id": "49c771e09089",
    "titulo": "Reforma tributária obrigará o ES a revisitar seus pilares da economia, diz Pazolini",
@@ -322,6 +378,20 @@
    "temas": [
     "governador",
     "pessoal"
+   ]
+  },
+  {
+   "id": "341b14b34df0",
+   "titulo": "OAB-ES ameaça ir à Justiça contra a criação de 575 cargos no MPES; veja motivos",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/politica/oab-es-cobra-explicacoes-sobre-575-cargos-criados-no-mpes/",
+   "data": "2026-11-27T21:05:42Z",
+   "coletado_em": "2026-11-27T22:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "controle"
    ]
   },
   {
