@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-27",
- "gerado_em": "2026-11-27T09:17:14Z",
+ "gerado_em": "2026-11-27T10:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 19,
+   "lidos": 20,
    "aceitos": 11,
    "possiveis": 1
   },
@@ -25,7 +25,7 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 26,
+   "lidos": 25,
    "aceitos": 8,
    "possiveis": 9
   },
@@ -49,9 +49,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 51,
-   "aceitos": 8,
-   "possiveis": 4
+   "lidos": 25,
+   "aceitos": 1,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 99,
    "aceitos": 5,
    "possiveis": 5
   },
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 12,
-   "aceitos": 3,
-   "possiveis": 1
+   "lidos": 15,
+   "aceitos": 2,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -137,25 +137,25 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 54,
+   "lidos": 53,
    "aceitos": 4,
-   "possiveis": 6
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 48,
+   "lidos": 31,
    "aceitos": 1,
-   "possiveis": 4
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 44,
+   "lidos": 43,
    "aceitos": 3,
-   "possiveis": 2
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 7,
+   "lidos": 6,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 18,
+   "lidos": 19,
    "aceitos": 7,
    "possiveis": 1
   },
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 3,
    "possiveis": 3
   },
   {
@@ -218,7 +218,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -232,10 +232,11 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": true,
-   "lidos": 30,
-   "aceitos": 1,
-   "possiveis": 1
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 415: Unsupported Media Type"
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -278,22 +279,33 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 423,
+  "sem_contexto": 373,
   "possivel": 29,
   "oficial_sem_tema": 6,
-  "sem_contexto_com_tema": 21,
+  "sem_contexto_com_tema": 20,
   "excluir": 40,
-  "veiculo_excluido": 48,
-  "outro_estado": 28,
-  "caixa_alta": 1,
-  "generico_sem_ancora": 9,
-  "exterior_sem_ancora": 10,
-  "veiculo_outra_praca": 19,
+  "veiculo_excluido": 50,
+  "outro_estado": 26,
+  "generico_sem_ancora": 6,
+  "exterior_sem_ancora": 7,
+  "veiculo_outra_praca": 16,
   "sigla_sem_ancora": 6
  },
  "itens": [
+  {
+   "id": "01122fce4621",
+   "titulo": "DETRAN de Alagoas suspende transferência de veículos de outros estados e pedidos de baixa de 14 de dezembro a 4 de janeiro",
+   "veiculo": "atlaspublico.com.br",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPeGU4dHZ3cFZTMHRkakdxNG1xUXdaTG9yTUYwcmlGbE8xNDFYdVUxeWt2WGZFNHRSck9NREN0a28xa3RQOEN6U2NJb21vVUR0anBKWENCNVRsSGdqeFozand0eWUwd0ExWDZwc3AxNjE3N09CZThlVGFUdThkaXBsaDg1eko5VG5ueklMN3ptR19ETVQ4X1hkeldrcFVCdGhDbllwX2RfanVrSU1xVjUw?oc=5",
+   "data": "2026-11-27T04:00:46Z",
+   "coletado_em": "2026-11-27T10:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "5395812862ef",
    "titulo": "Servidora de carreira da Caixa será primeira mulher a presidir o Banestes",
