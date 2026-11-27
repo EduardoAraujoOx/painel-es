@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-27",
- "gerado_em": "2026-11-27T18:17:15Z",
+ "gerado_em": "2026-11-27T18:59:45Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 14,
+   "lidos": 15,
    "aceitos": 8,
    "possiveis": 1
   },
@@ -33,7 +33,7 @@
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 6,
    "possiveis": 0
   },
@@ -41,15 +41,15 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 6,
-   "aceitos": 5,
+   "lidos": 8,
+   "aceitos": 6,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 26,
+   "lidos": 28,
    "aceitos": 3,
    "possiveis": 3
   },
@@ -89,17 +89,17 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 84,
+   "lidos": 79,
    "aceitos": 3,
-   "possiveis": 4
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 88,
+   "lidos": 93,
    "aceitos": 4,
-   "possiveis": 7
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 16,
+   "lidos": 13,
    "aceitos": 3,
-   "possiveis": 3
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -139,13 +139,13 @@
    "ok": true,
    "lidos": 29,
    "aceitos": 2,
-   "possiveis": 5
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 29,
+   "lidos": 32,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 28,
+   "lidos": 59,
    "aceitos": 3,
-   "possiveis": 3
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
@@ -169,9 +169,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 2,
+   "lidos": 1,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 15,
-   "aceitos": 7,
+   "lidos": 18,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 3
   },
   {
@@ -278,22 +278,34 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 386,
-  "possivel": 29,
+  "sem_contexto": 400,
+  "possivel": 23,
   "oficial_sem_tema": 4,
-  "outro_estado": 16,
-  "sem_contexto_com_tema": 17,
-  "excluir": 37,
+  "outro_estado": 27,
+  "sem_contexto_com_tema": 21,
+  "excluir": 41,
   "caixa_alta": 2,
-  "veiculo_excluido": 38,
-  "generico_sem_ancora": 5,
+  "veiculo_excluido": 45,
+  "generico_sem_ancora": 3,
   "exterior_sem_ancora": 5,
-  "veiculo_outra_praca": 11,
-  "sigla_sem_ancora": 8
+  "veiculo_outra_praca": 12,
+  "sigla_sem_ancora": 11
  },
  "itens": [
+  {
+   "id": "28610ba7be8d",
+   "titulo": "Parque Aberto deste sábado (28) recebe shows de Ada Koffi e Naná do Pop",
+   "veiculo": "Governo ES",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOdk9VSkNkX0lETks0RG0yUTNUZDU5YmppOUpzcV9oY2VWNFhYU3ctc1c0WHNGaWh0cE1rMFo3SWRJT2MzRG1hRThUMmVKdG1ibnlhUkdieG9US1BybXBMNVhZU1NZeWRLSG5yUnVyYjhwZ1BoLWNJT00wNjZVV0xmTTkzc00tUklZRzhKUVNreUtLNzlYQkE?oc=5",
+   "data": "2026-11-27T18:22:00Z",
+   "coletado_em": "2026-11-27T18:59:45Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "12a9906c5d66",
    "titulo": "PSB pede à Justiça Eleitoral no ES vaga de deputado federal do PL",
@@ -1704,6 +1716,10 @@
     {
      "veiculo": "Açoriano Oriental",
      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPSXpLLVlTeVRZRUVSNHFzY28xeC1JWEFUdEJfRXg3OW5IS1I1QmRqbGxfZS1OR1hMdDdWXzZhUVRaN2cxVDU5UWdCdjJsSUNwUGpUbmNZWldUdnpPZDYwbW84T2lnRi0zakhYUnNPZGVOWTViVXVKOFoxREV0Ni1ySm50SnR6SVowNFFNS0YzZ054N2JlWFhkaVk0QnFtc040U0k2aEFBaWFZMmhodnfSAbMBQVVfeXFMT2REeVdaaTJja0ZqU0dXRHRVYVZDclprRnFJVEZ1enhkUjcta0RsQkdqXzA4SHdUcFNaZ3A3WFF0NGx3eGJudnotUWhjczdSQ2RNSGI3R2JRaGRJb0Vaakl0TVFwcjJzTDRPT1hSLWJJWloxcjlfUVBnLTZTeFRHSGdORVFWeXpzakpvXy04QW1IOUpkSnd2U2dWcEc5ZmhZM3k1dnQxZFgxejZCNEQ3cFRHQXM?oc=5"
+    },
+    {
+     "veiculo": "Notícias ao Minuto",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNOXlMRXYxc0NxYmZVcnVOVnE4ekhDdER1dlZpd2FaZDRRRDNLUFBRY0poN25IbndPUTlCWWUtZzZ0cE1CbE5IVGV2NURnVFpCdDNnQU9pV3dJWjkwa0FHdmF2S0xBOGVIT2hUNlZGUlhPeGlZWksxeXNnRS1Id0djaGlVRDJ2VjlkSGN5eWt3YkFmaVFGbjFUNWtBUDIxSHZ1bVd6b3RSS1FvV2Q1cmphRg?oc=5"
     }
    ],
    "possivel": true,
