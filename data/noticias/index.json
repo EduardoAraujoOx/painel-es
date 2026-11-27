@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-27",
- "gerado_em": "2026-11-27T11:17:15Z",
+ "gerado_em": "2026-11-27T12:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,8 +17,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 19,
-   "aceitos": 11,
+   "lidos": 17,
+   "aceitos": 10,
    "possiveis": 1
   },
   {
@@ -26,14 +26,14 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 61,
-   "aceitos": 29,
+   "aceitos": 30,
    "possiveis": 8
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 7,
    "possiveis": 0
   },
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 6,
+   "lidos": 6,
+   "aceitos": 5,
    "possiveis": 1
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 84,
+   "lidos": 89,
    "aceitos": 5,
    "possiveis": 4
   },
@@ -97,7 +97,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 99,
+   "lidos": 86,
    "aceitos": 5,
    "possiveis": 5
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 32,
-   "aceitos": 2,
-   "possiveis": 3
+   "lidos": 52,
+   "aceitos": 4,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 42,
    "aceitos": 1,
    "possiveis": 2
   },
@@ -155,13 +155,13 @@
    "ok": true,
    "lidos": 27,
    "aceitos": 3,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 60,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 18,
+   "lidos": 19,
    "aceitos": 7,
    "possiveis": 1
   },
@@ -232,10 +232,11 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": true,
-   "lidos": 30,
-   "aceitos": 1,
-   "possiveis": 1
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 415: Unsupported Media Type"
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -278,22 +279,36 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 410,
+  "sem_contexto": 394,
   "possivel": 28,
   "oficial_sem_tema": 4,
-  "sem_contexto_com_tema": 15,
+  "sem_contexto_com_tema": 18,
   "excluir": 42,
-  "veiculo_excluido": 42,
-  "outro_estado": 24,
+  "veiculo_excluido": 41,
+  "outro_estado": 25,
   "generico_sem_ancora": 8,
   "caixa_alta": 1,
   "exterior_sem_ancora": 10,
-  "veiculo_outra_praca": 12,
-  "sigla_sem_ancora": 3
+  "veiculo_outra_praca": 16,
+  "sigla_sem_ancora": 5
  },
  "itens": [
+  {
+   "id": "2502bb04e6a0",
+   "titulo": "Detran prorroga pela quinta vez contrato de vigilância de R$ 6,9 milhões por ano; acordo chega a seis anos",
+   "veiculo": "AL 102",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPWFhRZzZ5VzZtMmh3S3ByRHpoUzRBVV9LMXlPWDk0Rnd5S1YyaTR4clp5ajFIYnNsTktiT1FDcW5DQThLekZPQ1dCUHhITUF3eWM3MzVTMmtLMk80b21VczUyTmxXU2pibUI0eHdXZ2oyT1RrdTBWdVZOZ2gtX3NETVA2NjF5YTVnX0tzMmhmQTFVOFdLWVdhemtiV0o3aU94OFVGRmxPNlRoaFJEazRMNWowNW5ZT3RxQnJyNkJpVl95SVJteWMxSVVmbXUweHB1V0tHcmVGRUJuVTk1?oc=5",
+   "data": "2026-11-27T11:18:00Z",
+   "coletado_em": "2026-11-27T12:17:14Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "700dda7fb1be",
    "titulo": "Chuva forte no ES: famílias ficam fora de casa, aulas são suspensas e estradas bloqueadas",
