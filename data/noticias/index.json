@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-28",
- "gerado_em": "2026-11-28T12:17:21Z",
+ "gerado_em": "2026-11-28T13:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 28,
-   "aceitos": 18,
-   "possiveis": 3
+   "lidos": 45,
+   "aceitos": 30,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -41,8 +41,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 9,
+   "lidos": 9,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
@@ -66,7 +66,7 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 7,
+   "aceitos": 6,
    "possiveis": 1
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 14,
+   "lidos": 15,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 67,
+   "lidos": 62,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -98,8 +98,8 @@
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
    "lidos": 100,
-   "aceitos": 2,
-   "possiveis": 2
+   "aceitos": 1,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
-   "aceitos": 3,
-   "possiveis": 4
+   "lidos": 60,
+   "aceitos": 4,
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 26,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 61,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 6
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 56,
+   "lidos": 100,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -194,7 +194,7 @@
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
    "lidos": 20,
-   "aceitos": 12,
+   "aceitos": 11,
    "possiveis": 0
   },
   {
@@ -211,7 +211,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 8,
-   "possiveis": 5
+   "possiveis": 4
   },
   {
    "fonte": "Folha Vitória",
@@ -232,11 +232,10 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 415: Unsupported Media Type"
+   "ok": true,
+   "lidos": 30,
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -281,18 +280,17 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 350,
-  "veiculo_excluido": 43,
-  "possivel": 20,
-  "oficial_sem_tema": 1,
-  "excluir": 33,
-  "sem_contexto_com_tema": 14,
-  "caixa_alta": 5,
-  "generico_sem_ancora": 1,
-  "exterior_sem_ancora": 4,
-  "outro_estado": 16,
+  "sem_contexto": 381,
+  "excluir": 45,
+  "veiculo_excluido": 57,
+  "possivel": 21,
+  "caixa_alta": 6,
+  "sem_contexto_com_tema": 21,
+  "generico_sem_ancora": 2,
+  "exterior_sem_ancora": 3,
+  "outro_estado": 31,
   "veiculo_outra_praca": 16,
-  "sigla_sem_ancora": 7
+  "sigla_sem_ancora": 12
  },
  "itens": [
   {
@@ -307,6 +305,20 @@
    "triagem": 9,
    "temas": [
     "contratos"
+   ]
+  },
+  {
+   "id": "cbce015db211",
+   "titulo": "Município de Presidente Kennedy divulga recomendação do Ministério Público de Contas do ES",
+   "veiculo": "Jornal do ES",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSGtUVlpnMEdvOXE2U2FFMHZ6blhlMW5sWTBNNHc0TllwdF9rcGhNNmw0LWhySTd4TnkwNnUwZ3dob3RpTXk2eGg3aFlqUmthLXZrN1M4bXhROTVFZXMxd3dKSG10OXEzWG13eUdXeFBqdXp1S1VUWHh0Rmw2alhOdXNpMWwyejduSHhmYTR4UDJJcktoNzloY0lkT1RjRHVna1RkV04zU3dTTWdzNk1EdFNtM3JId0p4?oc=5",
+   "data": "2026-11-28T11:46:16Z",
+   "coletado_em": "2026-11-28T13:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "controle"
    ]
   },
   {
@@ -376,6 +388,20 @@
    "triagem": 9,
    "temas": [
     "governador"
+   ]
+  },
+  {
+   "id": "0eda69a92fce",
+   "titulo": "Juiz absolve ex-secretário e advogada em ação por suposto esquema de R$ 12 milhões na Sefaz",
+   "veiculo": "O Documento",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORUhWQ0M4T2R5aVE0cC1XeU91Y0JaanhaYlhrNXV6S3hoX3plUS1ES3NDWDRzMS1pMjFVV0IyZzZiVUxkRkpBN21VdDVkaVZhVmw5SXd2QVNfV2p1ckZNdWhIU2J6dXRRN0JqT2ItSjRBMlZEV3l5RkxPbmhXcjRLZWN5NDlUSUVIWGRkcFU3aGI4YlZTRHZ3MW5rLXpqN1A4dk52ZFJHekxqV2Z5QWgzX1Z1R3B4MDJ4?oc=5",
+   "data": "2026-11-28T01:27:16Z",
+   "coletado_em": "2026-11-28T13:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "financas"
    ]
   },
   {
@@ -775,6 +801,20 @@
    "temas": [
     "governador",
     "controle"
+   ]
+  },
+  {
+   "id": "bd95b4e56a91",
+   "titulo": "Zucco anuncia nomes para comandar FGTAS, Detran e Procergs no governo estadual",
+   "veiculo": "Jornal Tradição Regional",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNT25lZzdnOEVfOERkX3EzczQybWtMbnllbkRFSDNfNHBpcHdTd3ZPN2g2V2pWVnZhMXNRRzJMRVZqZ1lVSG1vS09sa0JzZ3FYQjBQRVJ4dDg3VmYtWW5SQzlpQmNxY0JkLVdaMU5SWFZneGxmU0pWYTdGbzRZN1RRUEhGcGd3U20wYmtIMUlmUVhocUxyN0JWLUs1SGlJcTR5bW1GaEVVQ1QwVEc5WkpubnJyVkdLR0liTmRnUGVVckkteHJLWmtPLUcya3Z0S2lp?oc=5",
+   "data": "2026-11-27T16:51:24Z",
+   "coletado_em": "2026-11-28T13:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": [
+    "governador"
    ]
   },
   {
