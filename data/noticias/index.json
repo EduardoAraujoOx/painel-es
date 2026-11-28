@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-28",
- "gerado_em": "2026-11-28T14:17:13Z",
+ "gerado_em": "2026-11-28T15:17:20Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 5,
    "possiveis": 0
   },
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 27,
-   "aceitos": 17,
+   "aceitos": 16,
    "possiveis": 3
   },
   {
@@ -34,22 +34,22 @@
    "consulta": "transição \"governo do ES\"",
    "ok": true,
    "lidos": 10,
-   "aceitos": 9,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 7,
+   "lidos": 9,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 23,
+   "lidos": 24,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -57,16 +57,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (contrato OR licitação OR rescisão OR cancelamento OR aditivo OR \"dispensa de licitação\")",
    "ok": true,
-   "lidos": 4,
-   "aceitos": 1,
+   "lidos": 3,
+   "aceitos": 0,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 7,
+   "lidos": 7,
+   "aceitos": 5,
    "possiveis": 1
   },
   {
@@ -81,15 +81,15 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 17,
+   "lidos": 44,
    "aceitos": 0,
-   "possiveis": 1
+   "possiveis": 25
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 61,
+   "lidos": 58,
    "aceitos": 2,
    "possiveis": 1
   },
@@ -99,7 +99,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 1,
-   "possiveis": 2
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 8,
+   "lidos": 9,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 5,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -137,7 +137,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 61,
+   "lidos": 62,
    "aceitos": 4,
    "possiveis": 5
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 22,
+   "lidos": 21,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 54,
+   "lidos": 55,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -193,7 +193,7 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 22,
+   "lidos": 21,
    "aceitos": 14,
    "possiveis": 0
   },
@@ -250,7 +250,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 5,
+   "aceitos": 4,
    "possiveis": 2
   },
   {
@@ -280,20 +280,32 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 372,
-  "excluir": 43,
-  "possivel": 19,
+  "sem_contexto": 374,
+  "excluir": 37,
   "oficial_sem_tema": 1,
+  "possivel": 46,
+  "veiculo_excluido": 47,
+  "sem_contexto_com_tema": 20,
   "caixa_alta": 5,
-  "sem_contexto_com_tema": 19,
-  "veiculo_excluido": 46,
   "generico_sem_ancora": 1,
-  "veiculo_outra_praca": 18,
+  "veiculo_outra_praca": 17,
   "exterior_sem_ancora": 4,
-  "outro_estado": 19,
+  "outro_estado": 23,
   "sigla_sem_ancora": 8
  },
  "itens": [
+  {
+   "id": "c4bf7dec47af",
+   "titulo": "Conheça Danielle Calazans, primeira mulher escolhida para comandar o Banestes",
+   "veiculo": "portal jornal do norte",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQVk9tRFNlOFZzZkZWMHRDN1gxd2NERkljNlNLLVpZZHB0WGFDWjYxb0wxbnZ1eDVDMDV3eHNrTlB5aUtFRmdTUXJIZ29qQ1JlRE5yeW5wSmpnSVVhMllkUDFlZGoySkpJV00xb3FjVGVZaVNQWnQ3ZmpFWkI1cnlGT3RqZDdySGdicTlYZVgxTEwtdG02MWZ5MFNzcmhYaWpESEZSbTFTUEQzOG41WG9lNmVB?oc=5",
+   "data": "2026-11-28T14:12:00Z",
+   "coletado_em": "2026-11-28T15:17:20Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
   {
    "id": "8000fcea7a99",
    "titulo": "Governador eleito, Pazolini reencontra colegas da Polícia Civil e recebe homenagem",
@@ -407,12 +419,312 @@
    ]
   },
   {
+   "id": "049b58b7e143",
+   "titulo": "Vitória: gastos da prefeitura, emendas e notícias",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE82V3F2a1dJc3p0VWVNQkt2VmRpRWg3cDZSbl92eVUwM0JTczc3aTJqWC1nTjVPOElYUjhHSVh2cFJmUlk4TnhlLXA0YUhKZXkwbU5VWWk0R09IN0E?oc=5",
+   "data": "2026-11-28T04:47:03Z",
+   "coletado_em": "2026-11-28T15:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "6daf585da5d5",
+   "titulo": "Santa Maria de Jetibá: gastos da prefeitura, emendas e notícias",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0wOWk4MExVX25PZmhOcG9RcFpzTmNDbVB4M1hxbmZpbWdOdTAyS2I2clhGdHZXRXNJWjFrakRzTG1zMFBJRHFOUDZweFMxM29CQzhaNUhnbkhPOS01R2QtY1J6VFdlT0dpS1F4MDNB?oc=5",
+   "data": "2026-11-28T04:46:06Z",
+   "coletado_em": "2026-11-28T15:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "538a86f5dd8b",
+   "titulo": "Mimoso do Sul: gastos da prefeitura, emendas e notícias",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1lVDJJMm1rZEJTTk1XanlBUzh6NE55Z3RZWmxxZWN3UXp6S3I5SnBiWDBhVU5DRUEzYTRfWlMzYm9ubkZiUE0yaHBtRExaNUFYbXJsSXJDaEVzSWZrR1FfeVEyMA?oc=5",
+   "data": "2026-11-28T04:45:40Z",
+   "coletado_em": "2026-11-28T15:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "c923e470f177",
+   "titulo": "Vila Velha: gastos da prefeitura, emendas e notícias",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1oUWFpblhVbllyYm55ck1uXzA5ajQ5b1NEVFl3TXhzYXJ0WjF0OWJSSS01V2Q5WW10c0M1eDlqcDl5MEZaTmw4SVJ5MXppejR3ME5STnlOdXNIMjB4SEtB?oc=5",
+   "data": "2026-11-28T03:45:48Z",
+   "coletado_em": "2026-11-28T15:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "8d5a538f3f0e",
+   "titulo": "Afonso Cláudio: gastos da prefeitura, emendas e notícias",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE50Rm1GV1NVTlVsbG9zbDAyLWVNMEpEWnBuQWJzWWtkbTZSbTJqaWNkZTdlN3hET0ZoYS01ZjBzeHRKNC0ySHFRbE5MaDUtZjAyMVNvRjlZSU0xMi1wTFNfcWhubEU?oc=5",
+   "data": "2026-11-28T03:44:34Z",
+   "coletado_em": "2026-11-28T15:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "312add84637c",
+   "titulo": "Laranja da Terra: gastos da prefeitura, emendas e notícias",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9BUDJKczFZc3dIZGhzZGw2djhfSGUwWVVrcEt5SWZBeVFiZHlIekx3OHRPb0xyTXloYmVLN3VLTjVLMEw4QjhKWHV3ak9PeVk4dW1kTE9LLTZMenFOZFBhVTdKN0NSbUE?oc=5",
+   "data": "2026-11-28T03:42:34Z",
+   "coletado_em": "2026-11-28T15:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "25d650c93683",
+   "titulo": "São Mateus: gastos da prefeitura, emendas e notícias",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9NOElpX0ROdHNHdVB3eC1xV2F4NnhWaENVM3FER2hfX3p3S3pCd1JuN2tWWU92a05JLUJPNFItbFBJREYwLVh6U0NlVDBIbjJMOTJzcE0ycEM2X290NGhj?oc=5",
+   "data": "2026-11-28T03:41:42Z",
+   "coletado_em": "2026-11-28T15:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "aec56c3ff541",
+   "titulo": "Itarana: gastos da prefeitura, emendas e notícias",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92N1J6b0ZPQjAxUWJ4QTFZSmZVclNfNkdRV01wcW13X1RoM2RRY01kc1JiWnJuQi1wZ00yaFNydFp0T1QyMngzLXVEdHA2VnFDaUc5VktHOGdCME0?oc=5",
+   "data": "2026-11-28T03:40:34Z",
+   "coletado_em": "2026-11-28T15:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "9802e55b9e5b",
+   "titulo": "Guarapari: gastos da prefeitura, emendas e notícias",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5nQlRQZnM5QzNaa0VYOVFwNnFxbVpCMG9Ndk9uMTdzbFpOOG1FUjJQdE1rdkZ2SW9YSXI4ejVfVGpVTElqbFhlVTk3c1NPSE54NklJVUg5OFQ2RGRtcEE?oc=5",
+   "data": "2026-11-28T03:40:12Z",
+   "coletado_em": "2026-11-28T15:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "5c8c258b34df",
+   "titulo": "Pancas: gastos da prefeitura, emendas e notícias",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5lbGtqc0N0T25uaVVBSmJ3NnJsUTdVTTZESVJYUXl3TmtxU1o5NHRVcTJfdC1oeWVfNXowQXpHY09LaUR3Sk1XZWl1VExIclhOTEZIMVlWTnVwQQ?oc=5",
+   "data": "2026-11-28T03:39:43Z",
+   "coletado_em": "2026-11-28T15:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "3cae1b694db8",
+   "titulo": "Ponto Belo: gastos da prefeitura, emendas e notícias",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBhMzMyajBBUEVEM3F2dk5jY1lyaEJ4N2h1Q1VYaTRGRElFdXVRRTBpTmd2OEV4SlIteTJWR2N1am5KR0VJbEM3dkl2d1F3WDU0T3FfVTdjT190dWRVUlE0?oc=5",
+   "data": "2026-11-28T03:38:17Z",
+   "coletado_em": "2026-11-28T15:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "36507f37af87",
+   "titulo": "Cariacica: gastos da prefeitura, emendas e notícias",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBBdEw5U19LWGQyOVlQUV9rbXpkSXEzMkNWNENRSklaeF9HY2xLMTQ1eUZRSWs2RlNXN2M4ZVMwNUNGWlVjaUtKekxJZFpQRzhYN0VrUjRBRUFyeVZmdXc?oc=5",
+   "data": "2026-11-28T03:37:41Z",
+   "coletado_em": "2026-11-28T15:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "1191a6ff27d6",
+   "titulo": "Boa Esperança: gastos da prefeitura, emendas e notícias",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9nSVFqcUhVQ1h5anVwcjJhUWtjMmNLQkx6U1dDOHdOSHlHYVh6MGhCR2V0VU1oaE9mUDlJOWhneVphV1VHcm5RLVF6NlowOGNtOGdOejFaWEUyd0JfbHJZNEFOTQ?oc=5",
+   "data": "2026-11-28T03:36:54Z",
+   "coletado_em": "2026-11-28T15:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "238476292352",
+   "titulo": "São José do Calçado: gastos da prefeitura, emendas e notícias",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE02YzhzM2dOYkd1dTVnNXlDaTh5TDY0T2p1S2hGb21RUDlZc0UzcFRNSVdyZjVVQkp3NkYtNlVxQk41U2Fydm8tMUV5ZWJ6bnlud1FxU1dfSlluZTNfNUx1ZE1STDFWQlQ5dFZv?oc=5",
+   "data": "2026-11-28T03:36:11Z",
+   "coletado_em": "2026-11-28T15:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "8b5500fc8249",
+   "titulo": "Aracruz: gastos da prefeitura, emendas e notícias",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBxSEtFTmdWYVNtaTAxTjM5eUJIWTBiVWNETE4wVE5GUFFLeVRMRGJXdkY0b1E0bzRfSnIzYXFVSmk0UFIzSXZXd2RWYjBmTl92aXJzMnN2VHVka3c?oc=5",
+   "data": "2026-11-28T03:35:54Z",
+   "coletado_em": "2026-11-28T15:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "27e5b0ba954c",
+   "titulo": "Ibitirama: gastos da prefeitura, emendas e notícias",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE85dDFNZzVtT1A5M2d6RFY1Y3VySDFESUIza0JJeUp3eTdtQXhPY0xkY2FQWGxVb1RnRk4xUDZsWkRjbXJhZlUtaDFMNDRNWGhnRjFHdWJic1VnMWtDREE?oc=5",
+   "data": "2026-11-28T03:34:09Z",
+   "coletado_em": "2026-11-28T15:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "d507d421c7d2",
+   "titulo": "Anchieta: gastos da prefeitura, emendas e notícias",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBUelRHcDZOUi1yUlI5R2FSY3JRUGVKVUVfZnZvcXo4UjdTWFJjeEx5V1RUUUgxN0c2bVFweERnUUc1QWY3YlJQN0h3VS1FN05VeVE2cHhSejNNTUVp?oc=5",
+   "data": "2026-11-28T03:33:47Z",
+   "coletado_em": "2026-11-28T15:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "ece8cb533740",
+   "titulo": "Iconha: gastos da prefeitura, emendas e notícias",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBJNWdtLVdHTGxDZkRJak5PelM1cUpaam1CMGFuUlgwaXBMbUJXT05Vd0Jzd1NZcDlndjItaXNXRzFJV2FVUHVuZGlqbEktTDZydGozWGh1cnRhdw?oc=5",
+   "data": "2026-11-28T03:32:53Z",
+   "coletado_em": "2026-11-28T15:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "14ba186bc49c",
+   "titulo": "Marilândia: gastos da prefeitura, emendas e notícias",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5OMG1PYWsxSVlVUHhHdWNWUnhPTEJnZnRndFVCN19pdnI4YUR2dHltbEV2QlI5RmJRN2paSlRvcE1fOVZsTzBUSzZhcTFTMHpQaDl4Y0Jpci1QRGRpaHVR?oc=5",
+   "data": "2026-11-28T03:32:35Z",
+   "coletado_em": "2026-11-28T15:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
    "id": "4f205f00ea1e",
    "titulo": "Piúma: gastos da prefeitura, emendas e notícias",
    "veiculo": "Século Diário",
    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBWVDNSRGMwUWtBa0Y2aUJzS19BNFljZzhNVjNkdzJQRHRTMU5lSmQyZVZSd3ctLU5mTGZHV19JQndCbnQwaDhkRjBwWGh3WGw2S1g0TW93aEw?oc=5",
    "data": "2026-11-28T03:32:19Z",
    "coletado_em": "2026-11-28T14:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "93e9e03d621b",
+   "titulo": "Brejetuba: gastos da prefeitura, emendas e notícias",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB0WV9LY0o5UXZrN19IUklJNGFZS0JqTVRXTERKSGZEODQ1Y3RBSFAya3R1ZVBnT1FtVDVhRC0wSUFuejc0VEU3eHR1T0ZUcHh2cTZpa20xang3bldnbHc?oc=5",
+   "data": "2026-11-28T03:32:03Z",
+   "coletado_em": "2026-11-28T15:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "4f27ba49d3da",
+   "titulo": "João Neiva: gastos da prefeitura, emendas e notícias",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9zWktwOEJmWWU5MjAyRW41ajlfRnZYaVBKQS16WWNxLUVyaWVvUVVPb0NjRnIwSFY5ei1sSm9FYnFJdnFPc0RiUWRYelZVNV82M0M3WUxOM2pJMmlHc2VF?oc=5",
+   "data": "2026-11-28T03:20:45Z",
+   "coletado_em": "2026-11-28T15:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "a0c383a3f297",
+   "titulo": "Marechal Floriano: gastos da prefeitura, emendas e notícias",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1COXZ6UHhnVklMZU9uSEN3RmJ0ZU15cmlvVS1ZbkVqREJzZFhpTW55VjMwY3NQS0x5Q2Jtd0RmMlA1WmJ2NTEwS3BqZ3MzLVdPVW5Xc0JySEdqUDRFNFl5cVlyV2M3UFRG?oc=5",
+   "data": "2026-11-28T03:09:52Z",
+   "coletado_em": "2026-11-28T15:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "28404861e08a",
+   "titulo": "Rio Bananal: gastos da prefeitura, emendas e notícias",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5rLUNxV1h3Wm5mU2pDSVk1Y3Z5S0R2N0syTjZ5TlNyaWFsZl9YOURreEliZ1VPRFN0OWtLdEVmV08tcUdxc215RkQ5Qm0wR0I5dGVFVFJtS2VXMTVjSklCOA?oc=5",
+   "data": "2026-11-28T03:09:50Z",
+   "coletado_em": "2026-11-28T15:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "1857a433a184",
+   "titulo": "Iúna: gastos da prefeitura, emendas e notícias",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1ZUUZnUlZ0TFNKX2E2OWMwajZKU1RmVDNjYk5mY29KM3hBQ0hSb3hBb21keS1ETVVYY2Z6MzFkTDR6V2pNRmJ4NnJmV0I3RGF1bGFFSlZ6NA?oc=5",
+   "data": "2026-11-28T02:09:08Z",
+   "coletado_em": "2026-11-28T15:17:20Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "9b9c898e5f21",
+   "titulo": "Jaguaré: gastos da prefeitura, emendas e notícias",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBvck5wLVd5ZmthMHc5RkdhZW5vdmJsSHBmN2hBWUcteW5Ub2RCcGljUHphUk94ZUxCU05PcEpYNVJBZTlEWFFMVlo0Qm0wWGxkY0tSSFBWbXIydmc?oc=5",
+   "data": "2026-11-28T01:42:59Z",
+   "coletado_em": "2026-11-28T15:17:20Z",
    "outras": [],
    "possivel": true,
    "triagem": 9,
@@ -2401,6 +2713,10 @@
     {
      "veiculo": "Governo ES",
      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTmhkM0QwN3htMHkzYmFMdU1ZZXoyb1luZUZtR3VzVXZUOWFTeHlzd19RYlZ4M2x2b2pWOUg1ZFZNQUVGVlQ0OWxVWEpPNkcwd21TRE1VY3drazhWcV9IU3d2US1BOGV1WnA2MnRfdExyOFNEQ2VXT3dDdEgtTVdIVlNzZVVBei1HMWJ3VURxMjl1bUJBcHdlbW1GRndLMVlJbW9Yb2FuNkFJLUxMVC1jcEtR?oc=5"
+    },
+    {
+     "veiculo": "Montanhas Capixabas",
+     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxORzJGaW00dFN1ZHItNERHLW90QXZtTkQ1czJNbkxaWUJrcHcxVkwzaENBN1Q2ZE84UUYyYXh5WW9OYTNnN1BIdDRIdEdzV1ZaMXJ5dTZkRThTa3dId2xzc0t2dGZqUWVRek5uY2FXc3NnYVREUV9ad2Z4aUdpSmwxa1A4MWRmd2NnMllzdnFBMklydml0cjNPRXZaampTUW1OSVp4bG1lbEZqMW1sMy1ReENyRHZkREgzX2twMENDYjBpT3RfXzhTZA?oc=5"
     }
    ],
    "possivel": false,

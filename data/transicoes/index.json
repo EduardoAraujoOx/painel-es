@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-28T11:17:42Z",
+ "gerado_em": "2026-11-28T15:18:03Z",
  "ref": "2026-11-28",
  "desde": "2026-10-04",
  "estados": [
@@ -22,7 +22,7 @@
    "nome": "Amazonas",
    "eleito": "Omar Aziz",
    "partido": "PSD",
-   "total": 204
+   "total": 206
   },
   {
    "uf": "MA",
@@ -36,7 +36,7 @@
    "nome": "Minas Gerais",
    "eleito": "Cleitinho Azevedo",
    "partido": "Republicanos",
-   "total": 508
+   "total": 510
   },
   {
    "uf": "PA",
@@ -50,14 +50,14 @@
    "nome": "Paraná",
    "eleito": "Sergio Moro",
    "partido": "PL",
-   "total": 296
+   "total": 297
   },
   {
    "uf": "RJ",
    "nome": "Rio de Janeiro",
    "eleito": "Douglas Ruas",
    "partido": "PL",
-   "total": 256
+   "total": 257
   },
   {
    "uf": "RN",
@@ -71,14 +71,14 @@
    "nome": "Rio Grande do Sul",
    "eleito": "Luciano Zucco",
    "partido": "PL",
-   "total": 386
+   "total": 392
   },
   {
    "uf": "RO",
    "nome": "Rondônia",
    "eleito": "Marcos Rogério",
    "partido": "PL",
-   "total": 111
+   "total": 112
   },
   {
    "uf": "RR",
@@ -92,7 +92,7 @@
    "nome": "Tocantins",
    "eleito": "Vicentinho Júnior",
    "partido": "PSDB",
-   "total": 229
+   "total": 231
   }
  ],
  "temas": {
@@ -106,11 +106,55 @@
   "fndr": "FNDR e reforma tributária"
  },
  "contagem": {
-  "total": 2560,
-  "medidas": 835,
-  "equipe": 1725
+  "total": 2575,
+  "medidas": 838,
+  "equipe": 1737
  },
  "itens": [
+  {
+   "id": "b2fecbfa7d34",
+   "titulo": "Tesouro do Tocantins destina R$ 673 milhões para cobrir déficits previdenciários até outubro",
+   "veiculo": "Jornal Opção | Tocantins",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQTzNGMlpTMFdzNU9LVG9IcUxvbThxelg3QkIzU1lmZlNRUUR1d1pJMXlndEhFeXNjUDBUUzhfT0xBUUVTenNHSXFwTjNOQXl3SEJ6dXVEdDlXb0MzTXkxdE1ITmNyLXNWN0RWV0pQRTJrT1hEVmtub0EwazhLclNiblB0b1NaRjRINUFpS21NTzhRcHp1UndNVmVPQmM3ZjgtRVF5M0xmVVpUaUtnWk5xWGlpa1dwdEtUamZDS2dRUER6ZnpPSkxFa00tQUhIeVBMVmhfbVQyMFh2X2I4Z24w?oc=5",
+   "data": "2026-11-28T12:49:00Z",
+   "coletado_em": "2026-11-28T15:18:03Z",
+   "outras": [],
+   "ufs": [
+    "TO"
+   ],
+   "temas": [
+    "previdencia"
+   ],
+   "categoria": "medida"
+  },
+  {
+   "id": "9321db02d980",
+   "titulo": "Omar Aziz nega interferência da equipe de transição em pagamentos do governo",
+   "veiculo": "Portal Mário Adolfo",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdHJZbFdWdlhiUTBvSnVLaENkUXVjejdUZkd4emt3T1VZakVVUFNNZjVyUGpMWE1BMC10ODZEN0RORU5lZVNNM015bWFlMkZ1bGJDQ1huMnh2THVQbG9kR2Npc3FXSHhqeEZHc1ZGS2p3WHd2S3FxZ3FqTlk2NkVOQ29BNU9wYy1sT0hiYzFrS0FJVEQwcEY1dkxBSnFxNHRpNkhB?oc=5",
+   "data": "2026-11-28T11:48:56Z",
+   "coletado_em": "2026-11-28T15:18:03Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "61277d5eb198",
+   "titulo": "Cleitinho escolhe futuros secretários de Fazenda e Segurança Pública de Minas Gerais",
+   "veiculo": "radioeducadoramg.com.br",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOWGxXakFDX1RDVmhUY3VWN28tWjFWb1ZGdTQwa0o0NjF0UHZEeHZOaVVUeFVIeURydzlncjFSQjBURm5BNUIyWkU0WXVXNmRYWktBWW55MW50NTV6TkpSTDFaQkpMQ0E3X0sydmNsMlFJNGVwZWVjSGFZV2ZpVE1fRllfdWVPdVZMRS1FMkwySU9OcFRXaWhOdjJMWDhDeERFRWhNa2dWLTVRaFNjVkJmY2tJbXI3TWwx?oc=5",
+   "data": "2026-11-28T11:38:08Z",
+   "coletado_em": "2026-11-28T15:18:03Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
   {
    "id": "b80870e204bc",
    "titulo": "Encontro de Cleitinho com Lula abre diálogo sobre dívida de Minas e desafia articulação com o PL na Assembleia",
@@ -118,7 +162,16 @@
    "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNRkR3ZTRIZmo4bzRVVDNTc1dTZkVsdWFfalNzNG9EOVNqelVZSDB6cVZVa0swSWo2UUdjeGZSSlFhOUNILW9SemllYnBzSnNKdnRvQXk5OUtxb0Q0YmN6SXlacHl6eTRjbDZQbXYyODJEbkxFRE5XX24xY0JiaGUtbTdPLWFFemxpdDhDUWlSakVZazBHWmJKb3JPSTdTSDJKQlBQWUJCNS1MbEk4eE5UX0l1YU9neG5xY1dwVzQ3S0g1cU5NaDIxLWR2WVQwanIzeVk1QlN3VGFsUmZ4SWtfTEg3YzYwSzd1d0syalplbEFjUQ?oc=5",
    "data": "2026-11-28T10:55:05Z",
    "coletado_em": "2026-11-28T11:17:42Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Diário de Caratinga",
+     "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQVnExWU9sYXZ4NGJ3UjRNanR2ZXRJOUxwbkxHVk1qcWxyZXVETElCWWVQWVFVX056bE14UVY3OEM0SWczd0FSUFQyaUZrN0MweFJsZGxFTmtkZXBkU29TN0JEOWtKNWdzVzVWaVM4WWd5RlBIM0pZRmx4c09oTnlqVzZsR3htM1NtdzIwTEp6UHJfWWtnMnBheDRoZnBfMTN5czRhSEhTZy1ySlFNdHpyRGhxeEtTR2pSUWVkTlB5dzI3UGl3aml6dm15dXhMYTQya2t1dy1yYXNIdHRLVzNLT0R5MWIxQQ?oc=5"
+    },
+    {
+     "veiculo": "Clic Folha",
+     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQcWl3dVQ2ampucHJBTHZlRlpmZU8tY1VKYkx3blZkUjBuZFJQS2pIOGNvMlFpc1FnTUpBNkVwcGJBZGxqQ2VTS0tLenl5ZHpEMWwwY2hiNnk4QTdESlZzdmJVZGNFV2RDSzZjS0lEenhtTnVTUUQ2TXdjOWozTWZKb0F4WDJxNU52dDVKY3NuX3NobnMxVlZuY2FGb2owRktfR0hjVG1seDhyck82MWl6ZTA0SXBBMG1nMmRxalFiZ1gza2FjSGxSS2ZzS0J0WWZiWWc?oc=5"
+    }
+   ],
    "ufs": [
     "MG"
    ],
@@ -253,6 +306,34 @@
    "categoria": "medida"
   },
   {
+   "id": "bd284cf267e8",
+   "titulo": "Omar Aziz nega interferência de equipe de transição em pagamentos do Governo do Amazonas",
+   "veiculo": "MSKTV",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZGF3UTlYN1ZpRkVobUV4X1A1OW02T3ZnVUxGNVRSa0M3MWVkUzFOdkY4WDNSejBjckxsU2tRQXNsd2pjdU5sOFh2OHBNR1dYUVlJckFNejFZZGR3VHVSdjhrcFJ0MHh4NUZGekwxUHlyenNtVTlxYnphdGtSUVFBU2NmS0ItODd6M25YbV80ZkRKT1N6cDZVOFQwOXhjdTVLTmZUSVlkNWtaX0Y1YkE4?oc=5",
+   "data": "2026-11-27T23:21:37Z",
+   "coletado_em": "2026-11-28T15:18:03Z",
+   "outras": [],
+   "ufs": [
+    "AM"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "0bac1512612b",
+   "titulo": "Futura secretária do Meio Ambiente é mais um dos nomes da Serra gaúcha no governo Zucco",
+   "veiculo": "GZH",
+   "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxOYm1ZaHRVYmZXX2JuaTM3LXNjSFdUNzZOV3I2cGNpOEJ3X0RKQ2VwdGs4S2xuWlNkTWlYS09JN3RoYi1pRHBSTjZvQ0lXX3BpSnVreXI5U0Y4bk5IcTAxTld4ZXVIeklCcUFpTXJSQW1hcVNOQ18zSHhxSXFNZU16Y2RlSmxIbXdaWkFVOHk3ZUI1S3VsR2REeHY0MzhzQzlGVkxwTUdudU5KVVJ0M0lBZEZmNEhiYXczTXlVbDczdmFISzhfQVFsNHU4a0pMbF9yZlUtN2ZicEVWbGZJMTNLb0lxOUlMY0xBRy1GWi1nR20tQVBhVFJaUC1zakhvWGg0YkVjYlg5TkFGLTZrcHpaMjg1bExMLUg5RTU0akdkVWtQZk43cGxB?oc=5",
+   "data": "2026-11-27T23:18:16Z",
+   "coletado_em": "2026-11-28T15:18:03Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "e57b6c917b2a",
    "titulo": "Omar Aziz nega interferência da transição em pagamentos do governo",
    "veiculo": "BNC Amazonas",
@@ -265,6 +346,36 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "d060f77d7b78",
+   "titulo": "Cleitinho escolhe delegado de Divinópolis para comandar a Polícia Civil de Minas Gerais",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPYTBxREtYNEM3MGpFM3ZHOE1WRGY5ZnNKRVp6SVFNWW9XSWNPOWhoVDNibWp4UXJseWZfSnhIRVlyRnU5QzNMeTRMczNQbjdKY2NqOEdVVUNWUkR5TUkwTkVSWHgyeVlKRVJ4c0tVWEVRSi1pR1N0MmN2ZTdHbGRWcVNZX1VRaHprNVMxdGdwTjdRZi03UlBjR0ZyWWIxak1iUjdsYk9ubUxHcDVMNkNINmRSdTgwY2Z3MXh4THY3bHNaOV9ncHVWcXU2bFV5QjNidV9BS3RVRUw1ODQ5a3RDa1BUbU91ZVlSX2RlaGFxaUJWZ9IB8gFBVV95cUxPYTBxREtYNEM3MGpFM3ZHOE1WRGY5ZnNKRVp6SVFNWW9XSWNPOWhoVDNibWp4UXJseWZfSnhIRVlyRnU5QzNMeTRMczNQbjdKY2NqOEdVVUNWUkR5TUkwTkVSWHgyeVlKRVJ4c0tVWEVRSi1pR1N0MmN2ZTdHbGRWcVNZX1VRaHprNVMxdGdwTjdRZi03UlBjR0ZyWWIxak1iUjdsYk9ubUxHcDVMNkNINmRSdTgwY2Z3MXh4THY3bHNaOV9ncHVWcXU2bFV5QjNidV9BS3RVRUw1ODQ5a3RDa1BUbU91ZVlSX2RlaGFxaUJWZw?oc=5",
+   "data": "2026-11-27T22:39:04Z",
+   "coletado_em": "2026-11-28T15:18:03Z",
+   "outras": [],
+   "ufs": [
+    "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "54ac89bedc7a",
+   "titulo": "Luciano Zucco anuncia nomes para conselho de desenvolvimento econômico no Rio Grande do Sul",
+   "veiculo": "Portal VV8",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPR2tzcmR0Ymp3UXFLZTJaVTNGSkhTQXgySUVJWVJFd2tnaE9QMUNDZFF0Z09sVXk5aGhoSlg3cUlFejBDNEZoLTNpN3pfOXdGaWJjMzFndXl5RUdTTWdlQmRhWFdGRnZBa1Fvc1Rqd0ZWUk9jem8zX3QtV013VFF6YWFPZDVfQkJ2QTRmNGh1SnV0VFRBZGZHd3NjV2VvWFhBRTcxOTZwOWNiUE5hcFRjS3ViYmt4MnJtQ3d5MHBpUk9mX1pfLWQyTDNR?oc=5",
+   "data": "2026-11-27T22:33:26Z",
+   "coletado_em": "2026-11-28T15:18:03Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "7d262cd59ffe",
@@ -281,6 +392,20 @@
     "diagnostico"
    ],
    "categoria": "medida"
+  },
+  {
+   "id": "ec59b8979fdf",
+   "titulo": "Futuro secretário de Zucco, Fabiano Feltrin quer tirar do papel a Região Metropolitana da Serra Gaúcha | Pioneiro",
+   "veiculo": "GZH",
+   "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNVWpCdlZOSzJNMVFnVnhwREk3UjdzY2hWQ1QtZ25xVU1MZjdKWEFmOEdrMXFGcTRPWDN3YzBPTTVfdjdmWmhsNDJwRDFZLV9sMjlOaFRJN0RRcU5zWVhjRTR3ZjlINVU5aGlDcjl4bXdpek1EcGRYNHhTMHE1WmQ1MWJOekc4OWEtUThnWVBDX3dkZVY1eEVUdVZQclpQaGxpTE5rdGk1RDhVSDI1ckVCRVgxcG9kUXhiWmpQTjFidXZVQ1lyMmRwYks2dlNEdjAyS1Uta1l6ekg2Nk5uR0VRSEJhTDJQYU9FRjF3MjJrazROUW5QODVUX0kxZHpqT0xPYmpIdkt1YzV4M2lUQWR3Q2djYTNxU1FSZDE2YWZiM1hTMEQ2?oc=5",
+   "data": "2026-11-27T21:50:45Z",
+   "coletado_em": "2026-11-28T15:18:03Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
   },
   {
    "id": "82b76579461b",
@@ -303,7 +428,12 @@
    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOaXFIeU4xVy0yR1ZkUGhzcXVBemhBMkpaOFBqbm1IcUpQa2tWakl0MS1teTEtLVA4SkhXSjBOTEd2aWlVR3p2M3JPTmtVMGJGQkw5OWdoSjFoQTd2QU5xOTRVMmwwcUV1V2loQmNOZFozb1ZHMHFDV01oNlhDanVkOG50S21vbFRWVkZOdkRMNWRPeWRodG1mY2JzdTRmWTVQY2VQSGd2cVpaQVU2WUhPVHhNY29tOGtnZ3I3eWh0dzFFRkpva3VZRzUtRjE3YjlWaEZhRGJ4SU52R3FHU0IxdNIB7wFBVV95cUxOSERnZjhrSXJQV0gzS1g0ckJMdjdIQUFTMlRGVTN4dld3WFNYYmkxR1ZjV29MSktKZFlwbEwyeFJyVXh2T0Mzcm0wX0NWVTNPcVJCelQyTDdwbndYay1Xc0VhMmJGV0NCX3Y4WmRuRXd4MS1zTGZDb2NwQ0NsWm5KY0xxTUd1QjlRT01PZk4zZUtoSVNRa1RFbkNPWXE3b2wxVEI1SWxRX1pDU2RhaURwbFB0S1dPNnFGZjhwZXpiVkdfRUtMZXoyc1h4VTdETm1mVjlqS0l1X0tHeVdnMmY5LXhwalN0MFlIMGVCdjA4MA?oc=5",
    "data": "2026-11-27T20:39:45Z",
    "coletado_em": "2026-11-27T21:18:01Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "avozdocampo.com",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOeEp1bU1vc0FDakx4ZVE3SlR6SFcwOGg5Q2NtMG52ck5pMHF2dHhsWkxRNGtJNS0ybzRmdUJ3RzV0a3NyME42azJPZktMNUJ4SFlqMmdaR0JaUzRuMGlOc0tSSjlkTmpJNWliY2JwZkdyMTNuWDY4WktfdTlXTVlpR0QwSUxIUHhVbndyVGwyLUhodEhwMGQydjZJNTg5T1dua1Vpa3JmOHVERUdyTkV1S0VLV1kzanFNRFpDT2JPOA?oc=5"
+    }
+   ],
    "ufs": [
     "MG"
    ],
@@ -347,7 +477,12 @@
    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWm5tYWVCMTgwdm1LQXE0V0lVYXpNaVhtSll4QUVUTldmUk12VEhZRS1oR0pfV05nd0tpelFSQ1c2VmJqUV9vdl85T3hIMkQybWNZNEhDMWJGcllWYVJ6VGFlWWJOcWlLQ2pNX0trX0k3RW9WTFN5LWNoMlMzVXFSaVpBS2U1WVJrSVJ6ZjRDbEFsVFp1bThObTVR?oc=5",
    "data": "2026-11-27T19:53:41Z",
    "coletado_em": "2026-11-28T11:17:42Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "Sucesso FM",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPT0tnLUh2V2dyNE9oYUpUYXBRMXJaUW9TTnhxZTV5WVZxYWxZdWlFM05FTWpNdDBIdWF2MWNsRU9rNTdSckpYR3BPT2NXbnBXV25PTHBaQ2lydVZ4bVEyME5yZlBUUDVqUmNhY1hSY2ZFcFF2dTE2VThnRzM3bW16Qzl6ZVkyRGhMbHJKWEI2NlZzYzMxSWZNUXJtYkxFOTBUVEtEcUVSU1Ezdw?oc=5"
+    }
+   ],
    "ufs": [
     "MG"
    ],
@@ -436,6 +571,20 @@
    "outras": [],
    "ufs": [
     "MG"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "51fdb3242152",
+   "titulo": "Ex-prefeito de Farroupilha é nomeado para secretaria no governo do Rio Grande do Sul",
+   "veiculo": "Portal VV8",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNSF9ybHRRaUxPejFoZllaWXEwX25ZWVJRSmVGMHJ0RWNBcTB0UG5ObzVBc2V1RUp5bWZLMG1uUGJKUzFyN2pHaGxSbUZMNEw2a2VsSm11aHgwekVtay10SGNxR09pRHhlcFViZ0RCakU0bXY4WTlrRFkyMHhzTFNhd0dxd0NoRElfWnpTSlA5aWZRT25Uem0yNjJnaGxVeHNDQ3B0Q25WWXpSVzFHV0JsQk1lZVphSXBUQjB3cEpnbGo?oc=5",
+   "data": "2026-11-27T18:03:51Z",
+   "coletado_em": "2026-11-28T15:18:03Z",
+   "outras": [],
+   "ufs": [
+    "RS"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -737,6 +886,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "cad747035155",
+   "titulo": "Cover de Elvis Presley e ex-prefeito de Farroupilha será secretário no governo Zucco",
+   "veiculo": "força do vale",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQQjBkR0ZxaC1Fd3daeHg2LWxHRjFwYll0Wkh2b183dE1qRXF0S1BDLUllNVZ3S29LY3luUjBtNllILUx6enpTWF8wRV83ZWxVNGtBVjdtZndVbWNCOGIyOVJ5Q21tYTJQSm9IUF9OQW4zZ2Z4MjlSYVV4UmJCOHJlRW15OUtjTXJYWWVXQ1oyX3lYbllfMmt6b25XZUtVSG8?oc=5",
+   "data": "2026-11-27T14:24:42Z",
+   "coletado_em": "2026-11-28T15:18:03Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "a363b66ce541",
    "titulo": "Sergio Moro anuncia nomes para a Casa Civil e a Procuradoria-Geral do Estado",
    "veiculo": "Jornal Plural",
@@ -905,6 +1068,20 @@
    "outras": [],
    "ufs": [
     "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "91cbc8a94570",
+   "titulo": "Wanderlei Barbosa recebe governador eleito Vicentinho Jr. e discute transição de governo no Tocantins",
+   "veiculo": "Sou de Palmas",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPdWlMT19VR0JPMHExYjBNOEVPaW9VVGgyVHdLb2dzaEkzNlZlbldzdk1nZmswMmZadGJNdUpjQjg0dDZEaWduZzhnRC1pSXlpSHFuVWlqbHV3VHI5SVlyUkpjSTItRVFqTkltR3FkWGVfUmJieDJxakFESUhBOHI1QXFOTmJfSFo1eTJNQ3pMY3l5YkNXREFMdGljdXBHbW1fZERJcFFENHk4VFhHV2lXSlVoandzOFVkVkM5a1lhYjVyRUUyZlRQVV9jR2Fmbi1ycnc?oc=5",
+   "data": "2026-11-27T12:10:00Z",
+   "coletado_em": "2026-11-28T15:18:03Z",
+   "outras": [],
+   "ufs": [
+    "TO"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -3381,6 +3558,10 @@
     {
      "veiculo": "Bico 24 Horas",
      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPNl96azcxU3VtLW02Ql85MmFlS1RIaG94WGp5WVVzRVYtM0l4X3A3Vm5iSmxfbGsxcDVTU1EwN1hoSUJ6dFRSU2RUUDhYdWpwOU9seG9HQnVyT0ZXMWU4OVlVbnJvSEhTanRoSUJoeEJpUWxYRDA0Y2p5MGtKNVkzNEJnQnRadF9HQzRfVHFFN3M0V2V1a1ZZWVd6MW8xcTlCTURqR0l3V1Jpb0Q0ZFNHQVNiOVVQZkhucTgwSXUxS0RybWRHVlNaSFFpajJTemI5NU93?oc=5"
+    },
+    {
+     "veiculo": "Gazeta do Cerrado",
+     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNMzRlbDI1WHlVU0xCbFRNNVRkY1FMYWxIZks2eDRLUHhDUWRnTGk3TjlhSGZ2dzJ5UnFCRV85allhR2JaMkR3NmhlMlVEX3FEbGY1ZnpDc1FPNTFXQlBzbXJ1NXRZdmh1czY0bGRva0tRMXZTSkVqYng0SXYyRzVmOFM1bnZVNm5TSVVlbmVfWlo5NElPa3U3SUYwZjVCMThyMWVrQmxXYVRMM2gyQnJMakRNUHJYVUFxeWNvNWVmN25HUlRqbzlsOWpHQnlHRzgzcVg5UTRYUURSSnZj?oc=5"
     }
    ],
    "ufs": [
@@ -10843,6 +11024,20 @@
    "outras": [],
    "ufs": [
     "AL"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
+   "id": "d19833e848fd",
+   "titulo": "A preocipação do TJRO e da Comissão Pastoral da Terra (CPT) com o decretão de Marcos Rogério",
+   "veiculo": "Gente de Opinião",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQRlowMDE0Q3VlRi1pSUtMa0pkdVh2c0xaQkZtRFdLZGV4SnQyblJzbjBrOUQ3dzNnRldtbElsUFBNUVVFQVdJTmg4dzFhX1VWdzlOb1JFa3FnbFBfV1dLOWtoRUpwUEZUSDNuQUM5SjFGdHo2VFpnRDFEVExVLVJEc2FfdjVDZ0xYX3VTVFhndEQyOVBJcFBhQ2ZoX3VySzJmQmxkZGgwamhaX250WFNLUjZGal9QcUtBSTRVTDZ4cV9GVWF2Z1dzUzJiSTdXYmNHYThUbEVwcw?oc=5",
+   "data": "2026-11-17T08:00:00Z",
+   "coletado_em": "2026-11-28T15:18:03Z",
+   "outras": [],
+   "ufs": [
+    "RO"
    ],
    "temas": [],
    "categoria": "equipe"
@@ -26971,6 +27166,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "efdc30741b51",
+   "titulo": "'Cultura é pujante, vibrante e forte', afirma Lilian Cardoso, que comandará área no futuro governo Zucco",
+   "veiculo": "G1",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPckZiY3VjdHB2cE8zVGJIRG8tSmd3SUZiSGJBV1hVcjFwWWtqWWlfcEFSSzBLcnJaNGJrMDBVdWc0MWk3aW5JMXdySzVuZWhOSzZBamZya1Fsc1B6WEVkNGtCdDR5Nnd3LU9pMlZyb2hUaXpqV2dkSzlXVUhvaURUZHNNZThzRE9tbnpVdm4yRC1MWDVwMUtvaG9XakFid2Mtbk83WWxQOG5aOHdDNV82R05nUFVXSmw0ZFFrcXJ1RUdYdng1Q1YwOHBjazROclBMOU1R0gHiAUFVX3lxTE5vbDJUY204YzNKTF8yaTE4Ukk1a204ZUtSVVNZWFpTVm5EdDNlYk1TUHpQX0ZPOWh4X2VXejBDX0t6clNDeHduVjl6c1ZkYUVGT0NGQjdLTFhVT2VJMm9UalNEUlNQYWQ3Z1NxMDZfaFBVOTczNEFJaTFwVFJzVlNSTzlnbXNjcnJhYUtwMkNkQkdpU3piSXpGMDZkZ0NTaXp3cEl5c1dhMWhtQlJfYzdjNG0yNlpkdDBBVG9Tb293SVU3MWxjS29GSGFNX3FzeUZQTW9TNUNvVkFCcGQyZjU4d0E?oc=5",
+   "data": "2026-10-27T07:00:00Z",
+   "coletado_em": "2026-11-28T15:18:03Z",
+   "outras": [],
+   "ufs": [
+    "RS"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "ed568c49baf4",
    "titulo": "Zucco anuncia cinco secretários e desenha governo para enfrentar ajuste fiscal, desafios climáticos e pressão por resultados no RS",
    "veiculo": "Rádio Pampa",
@@ -30484,6 +30693,20 @@
    "categoria": "equipe"
   },
   {
+   "id": "1b49be064bcf",
+   "titulo": "Sergio Moro escolhe Pricilla Maria Santana para a Secretaria da Fazenda",
+   "veiculo": "Agora Litoral",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdmV0XzNMa2tXZ0x0NmVJajg4cm9LTE5obDZwbTdSbzAzbXlOd2JMeldwNi00NTJmSjVvMEtYZ0xLSGI1YmtpcHBtNW5LS0RoUTJZT0hzX2RxVkk3aHZFZTFzM0JvUzM3T1dBMHFtcU4yU05SYVZWVExDWVIteXVPZWRuZ2c5QlhfR2dudUJQWFZlVkFiWlQ4VlF0VEpGd0tnbTM2c2pwSVlabkdQUmVGTw?oc=5",
+   "data": "2026-10-20T07:00:00Z",
+   "coletado_em": "2026-11-28T15:18:03Z",
+   "outras": [],
+   "ufs": [
+    "PR"
+   ],
+   "temas": [],
+   "categoria": "equipe"
+  },
+  {
    "id": "17f512da97e2",
    "titulo": "Sergio Moro anuncia Pricilla Santana como próxima secretária da Fazenda do Paraná",
    "veiculo": "Jornal do Comércio",
@@ -30767,6 +30990,22 @@
    ],
    "temas": [],
    "categoria": "equipe"
+  },
+  {
+   "id": "c4a6d8a33ccf",
+   "titulo": "Gabriel David comenta rumores sobre corte no orçamento do Carnaval do Rio após eleição de Douglas Ruas",
+   "veiculo": "BossaNews Brasil",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTnJ1ejlST1hPdkNOV3U4ajJJODlCSWlIcU1nYWZiMWI1SHJ1QWotZDcybF9UeDFsSGs1YVJOV3VXVHBJanJyNlZkTXJHYUFhdzd3RmVleURvak45Z1dfdDhuQzlDTXhtYXdiRDYzaGwyc3hzM05IdU55TjNyVnlOUFVQUXZJSUQtRG9GYVRKV2tWWi1iYTNlaUp6b2tTWF96cDdwVEpQUS1DN0pZVktpeTZRdURlenZwSXhaM2dpT3Z2aWJjS2hr?oc=5",
+   "data": "2026-10-19T07:00:00Z",
+   "coletado_em": "2026-11-28T15:18:03Z",
+   "outras": [],
+   "ufs": [
+    "RJ"
+   ],
+   "temas": [
+    "economia"
+   ],
+   "categoria": "medida"
   },
   {
    "id": "c43efde358a4",
