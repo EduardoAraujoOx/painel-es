@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-28",
- "gerado_em": "2026-11-28T01:59:48Z",
+ "gerado_em": "2026-11-28T09:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,7 +17,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 11,
+   "lidos": 10,
    "aceitos": 7,
    "possiveis": 0
   },
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 27,
-   "aceitos": 16,
+   "aceitos": 17,
    "possiveis": 4
   },
   {
@@ -42,15 +42,15 @@
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
    "lidos": 10,
-   "aceitos": 8,
-   "possiveis": 1
+   "aceitos": 9,
+   "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 25,
-   "aceitos": 3,
+   "lidos": 27,
+   "aceitos": 4,
    "possiveis": 2
   },
   {
@@ -73,7 +73,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 11,
+   "lidos": 13,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -97,8 +97,8 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 95,
-   "aceitos": 2,
+   "lidos": 100,
+   "aceitos": 3,
    "possiveis": 4
   },
   {
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 13,
-   "aceitos": 2,
+   "lidos": 9,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 6,
+   "lidos": 9,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -145,15 +145,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 33,
+   "lidos": 30,
    "aceitos": 1,
-   "possiveis": 1
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 59,
+   "lidos": 60,
    "aceitos": 2,
    "possiveis": 5
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 56,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -169,7 +169,7 @@
    "fonte": "Google Notícias",
    "consulta": "\"Assembleia\" Espírito Santo (LDO OR LOA OR \"orçamento de 2027\" OR \"emendas impositivas\" OR PEC) governo estadual",
    "ok": true,
-   "lidos": 2,
+   "lidos": 3,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 7,
-   "aceitos": 7,
+   "lidos": 8,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 6,
+   "aceitos": 7,
    "possiveis": 5
   },
   {
@@ -258,7 +258,7 @@
    "consulta": "https://www.agazeta.com.br/colunas/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
@@ -278,22 +278,50 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 1,
+ "novos_na_coleta": 3,
  "descartes_na_coleta": {
-  "sem_contexto": 392,
-  "veiculo_excluido": 60,
-  "possivel": 23,
-  "oficial_sem_tema": 2,
-  "excluir": 44,
-  "sem_contexto_com_tema": 22,
+  "sem_contexto": 393,
+  "veiculo_excluido": 55,
+  "possivel": 22,
+  "oficial_sem_tema": 1,
+  "excluir": 43,
+  "generico_sem_ancora": 3,
+  "sem_contexto_com_tema": 21,
   "caixa_alta": 2,
-  "generico_sem_ancora": 2,
-  "exterior_sem_ancora": 3,
-  "outro_estado": 27,
-  "veiculo_outra_praca": 22,
-  "sigla_sem_ancora": 10
+  "exterior_sem_ancora": 4,
+  "outro_estado": 32,
+  "veiculo_outra_praca": 19,
+  "sigla_sem_ancora": 11
  },
  "itens": [
+  {
+   "id": "bfebec4d15e3",
+   "titulo": "Governador Jerônimo autoriza preparação de licitação de ponte de R$ 22,5 milhões em Mucuri para ampliar ligação entre Bahia e Espírito Santo",
+   "veiculo": "Jornal Grande Bahia",
+   "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPbnpjSDRlODdzWDVDTHBkLUpLSnI1M1h6LUluVXFnYmYwMUg5NDJPeW1ibUppenJLNFQtZG04bnlDWk1yUHZPb0pxVHhNeU14ckZ0dzlHOWhzOFdQX1hjNl9wRzV3Uk9RSTloV3NEYVduLU9nR2ItREM2NXVocVFfVmJ3RnQyR2hhR1RtemtJYUhQNVp5UThWTWxhQUVZdUttb0FRSXlnb0NaZVg5OVlLdWRyRThUeTBzZGlhUkR1ZmJsdGpKRFEyQmFUUEhLRWlSdk4wUXlYNk5jOGI3UGQyV0x6aDNxSVoyX2pfYkNidmFZeC01elhuSXI2dFpFLUpGS0h2MXA1Zm55ODRO?oc=5",
+   "data": "2026-11-28T06:55:51Z",
+   "coletado_em": "2026-11-28T09:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "contratos"
+   ]
+  },
+  {
+   "id": "343689c4f5df",
+   "titulo": "O que pensa Pazolini sobre a escolha de Lula para o Ministério da Fazenda",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/abdo-filho/o-que-pensa-pazolini-sobre-a-escolha-de-lula-para-o-ministerio-da-fazenda-1126",
+   "data": "2026-11-28T06:00:00Z",
+   "coletado_em": "2026-11-28T09:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
   {
    "id": "9d1d74bbdd0b",
    "titulo": "Atrasos e redução no ritmo de obras do Governo do ES geram preocupação em São Mateus",
@@ -624,6 +652,20 @@
    "triagem": 9,
    "temas": [
     "controle"
+   ]
+  },
+  {
+   "id": "2ef213efedfe",
+   "titulo": "Terreno em Vitória vai a leilão por dívida de IPTU",
+   "veiculo": "Tribuna Online",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE16U0hWeHBQYU9FVTBrdndQNGRrRHlKZzF1UzZDWlhralU3LWd5T2tuOHM1UFJnems0elR4eTV5bzBrclFKZHZzYjFORnJLVndCMjhOWE0zbTRwNlFmR3FZQ3htN1RuT3lIWEQ3MUdoMlFvRlg2bUozSQ?oc=5",
+   "data": "2026-11-27T18:59:21Z",
+   "coletado_em": "2026-11-28T09:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "financas"
    ]
   },
   {
