@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-28",
- "gerado_em": "2026-11-28T10:17:14Z",
+ "gerado_em": "2026-11-28T11:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,30 +26,30 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 50,
-   "aceitos": 31,
+   "aceitos": 32,
    "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
    "consulta": "transição \"governo do ES\"",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 8,
+   "lidos": 10,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 8,
+   "lidos": 10,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 26,
+   "lidos": 24,
    "aceitos": 4,
    "possiveis": 2
   },
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 13,
+   "lidos": 14,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -99,7 +99,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 2,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 9,
+   "lidos": 10,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 11,
+   "lidos": 10,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
-   "aceitos": 1,
-   "possiveis": 2
+   "lidos": 62,
+   "aceitos": 2,
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 8,
-   "aceitos": 8,
+   "lidos": 9,
+   "aceitos": 9,
    "possiveis": 0
   },
   {
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 19,
-   "aceitos": 11,
+   "lidos": 20,
+   "aceitos": 12,
    "possiveis": 0
   },
   {
@@ -210,7 +210,7 @@
    "consulta": "https://www.agazeta.com.br/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 7,
+   "aceitos": 8,
    "possiveis": 5
   },
   {
@@ -218,7 +218,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 0,
+   "aceitos": 1,
    "possiveis": 0
   },
   {
@@ -232,11 +232,10 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 415: Unsupported Media Type"
+   "ok": true,
+   "lidos": 30,
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -251,7 +250,7 @@
    "consulta": "https://www.agazeta.com.br/es/politica/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 4,
+   "aceitos": 5,
    "possiveis": 2
   },
   {
@@ -259,7 +258,7 @@
    "consulta": "https://www.agazeta.com.br/colunas/rss",
    "ok": true,
    "lidos": 100,
-   "aceitos": 5,
+   "aceitos": 6,
    "possiveis": 0
   },
   {
@@ -279,21 +278,62 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 6,
  "descartes_na_coleta": {
-  "sem_contexto": 379,
-  "veiculo_excluido": 46,
-  "possivel": 21,
-  "excluir": 36,
+  "sem_contexto": 397,
+  "veiculo_excluido": 56,
+  "possivel": 20,
+  "excluir": 47,
   "generico_sem_ancora": 3,
-  "outro_estado": 20,
-  "sem_contexto_com_tema": 18,
+  "sem_contexto_com_tema": 23,
   "caixa_alta": 4,
   "exterior_sem_ancora": 4,
+  "outro_estado": 28,
   "veiculo_outra_praca": 22,
-  "sigla_sem_ancora": 8
+  "sigla_sem_ancora": 11
  },
  "itens": [
+  {
+   "id": "cb7ee531994b",
+   "titulo": "Calor no Transcol? Veja como denunciar falhas no ar-condicionado dos ônibus",
+   "veiculo": "Folha Vitória",
+   "url": "https://www.folhavitoria.com.br/transito/calor-no-transcol-veja-como-denunciar-falhas-no-ar-condicionado-dos-onibus/",
+   "data": "2026-11-28T11:00:00Z",
+   "coletado_em": "2026-11-28T11:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "110013430eeb",
+   "titulo": "Pazolini diz que não vai extinguir a Secretaria de Cultura: “Isso não está no radar”",
+   "veiculo": "A Gazeta",
+   "url": "https://www.agazeta.com.br/colunas/leticia-goncalves/pazolini-diz-que-nao-vai-extinguir-a-secretaria-de-cultura-isso-nao-esta-no-radar-1126",
+   "data": "2026-11-28T10:34:00Z",
+   "coletado_em": "2026-11-28T11:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "58371854bc9e",
+   "titulo": "Pazolini prevê decreto específico para serviços essenciais na transição do ES",
+   "veiculo": "Vitória News",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQYjFnQWdkSEwwT0Rhd0FsZl9CbmtkSTJiNEF5TWxvQjRLOTRoNVEya1g4ZlFtZDhZc25HTlN0ZUhsS3VWME0zSU9vemNndmxaS280dC1XNUNIRU5pVTQyYXdaTnNfWG5yekFwbEV2WGNOeG1VUVk1TWdhZFN6eWI0alQzenlfUmJiTkpGakZNMktzMmJ3dHl1V1JjU2p1MTNQUjdmZ0VvRQ?oc=5",
+   "data": "2026-11-28T10:28:54Z",
+   "coletado_em": "2026-11-28T11:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
   {
    "id": "bfebec4d15e3",
    "titulo": "Governador Jerônimo autoriza preparação de licitação de ponte de R$ 22,5 milhões em Mucuri para ampliar ligação entre Bahia e Espírito Santo",
@@ -1375,6 +1415,21 @@
    "temas": []
   },
   {
+   "id": "e8baffda2785",
+   "titulo": "Governo do ES extingue 160 cargos comissionados vagos em órgãos estaduais",
+   "veiculo": "Sudeste Agora",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQb29iOHc1T1ExdlBTNG9pYVVQcFpuVDhsZ0FKZ1AzWWhfNmRxdGxDQXpKX2xqcGJXc3RKWXF0UWNCZ2NpSktQUTB3WlJ4THM3OU0zTmpzQWdqaWlGRFQwVE83a1FfT2p2S2M2UnRtUG96WVY0a2dfNENzTWFubHlKdksyUU8zZ0JySzYzbnlEYVpPcjllNEZ2R1FNWWJyMno2UXJUbNIBpAFBVV95cUxQb29iOHc1T1ExdlBTNG9pYVVQcFpuVDhsZ0FKZ1AzWWhfNmRxdGxDQXpKX2xqcGJXc3RKWXF0UWNCZ2NpSktQUTB3WlJ4THM3OU0zTmpzQWdqaWlGRFQwVE83a1FfT2p2S2M2UnRtUG96WVY0a2dfNENzTWFubHlKdksyUU8zZ0JySzYzbnlEYVpPcjllNEZ2R1FNWWJyMno2UXJUbA?oc=5",
+   "data": "2026-11-26T17:51:33Z",
+   "coletado_em": "2026-11-28T11:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador",
+    "pessoal"
+   ]
+  },
+  {
    "id": "ce94584bc353",
    "titulo": "Crédito para empresas e agronegócio no Banestes",
    "veiculo": "Tribuna Online",
@@ -1511,6 +1566,32 @@
    "url": "https://www.agazeta.com.br/es/economia/quem-e-danielle-calazans-1-mulher-indicada-ao-comando-do-banestes-1126",
    "data": "2026-11-26T12:55:43Z",
    "coletado_em": "2026-11-26T13:17:15Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": []
+  },
+  {
+   "id": "c704056ee03e",
+   "titulo": "Pazolini indica Danielle Calazans para assumir presidência do Banestes em 2027",
+   "veiculo": "Sudeste Agora",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVmFUQUFuZXpaSkRxeW9fRUg2LXlfRUN5bUdTRE80OFVWYmF5WjlaWkdVMUhnd3VqWXhlUmxxaENvWlJobFJzcUUyZWhCMWpqbXI2cTFXc1BfeFdSbXpSWUZLSC1WMWViVUxGU3MyaEtyMXR2N3pMdXByckpCNkU0RmZUdEdIclZfSVphc2RKVjRzaGMtaE1TZTBPMGtKbThKaEtpaGhJMTdLbG_SAasBQVVfeXFMT1ZhVEFBbmV6WkpEcXlvX0VINi15X0VDeW1HU0RPNDhVVmJheVo5WlpHVTFIZ3d1all4ZVJscWhDb1pSaGxSc3FFMmVoQjFqam1yNnExV3NQX3hXUm16UllGS0gtVjFlYlVMRlNzMmhLcjF0djd6THVwcnJKQjZFNEZmVHRHSHJWX0laYXNkSlY0c2hjLWhNU2UwTzBrSm04SmhLaWhoSTE3S2xv?oc=5",
+   "data": "2026-11-26T12:49:37Z",
+   "coletado_em": "2026-11-28T11:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "governador"
+   ]
+  },
+  {
+   "id": "ec9d0b9b49c9",
+   "titulo": "Pesquisadores do IJSN apresentam estudos no Encontro Panamericano de Economia da Educação",
+   "veiculo": "Blog do Elimar Cortes",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNUm9feWR1Mi16WjJtRHpfRVp2ZXFFN3F6YWtsMlhIc3pJbU9wbUlIN3dRSEotVzV4aDhRMk9vMmZ5b1YwTGZZd2dHaExvXzM3dExrWXkweHotaXRNZ0h3V1FuSkk2bWU2MnBfanJ6bFhGU1FJQlQ5c3prWGdGX2JVcmFyWGlteTlxYThORU5LNHZxQXprR1hlazJpbVFvVThzZ0tYNTZvYkJOLWM5RUl4U19pUEZZcFZScTdlX3NKd2ROSk55SmtQSQ?oc=5",
+   "data": "2026-11-26T12:09:22Z",
+   "coletado_em": "2026-11-28T11:17:13Z",
    "outras": [],
    "possivel": false,
    "triagem": 9,
