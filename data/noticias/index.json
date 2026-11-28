@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-28",
- "gerado_em": "2026-11-28T13:17:13Z",
+ "gerado_em": "2026-11-28T14:17:13Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -25,9 +25,9 @@
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 45,
-   "aceitos": 30,
-   "possiveis": 2
+   "lidos": 27,
+   "aceitos": 17,
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -41,15 +41,15 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini governador eleito transição",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 8,
+   "lidos": 8,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 21,
+   "lidos": 23,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -66,14 +66,14 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 6,
+   "aceitos": 7,
    "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "\"governo do ES\" (TCE-ES OR \"Ministério Público\" OR \"Polícia Federal\" OR Assembleia OR Ales)",
    "ok": true,
-   "lidos": 7,
+   "lidos": 8,
    "aceitos": 3,
    "possiveis": 2
   },
@@ -81,16 +81,16 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 15,
+   "lidos": 17,
    "aceitos": 0,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 62,
-   "aceitos": 3,
+   "lidos": 61,
+   "aceitos": 2,
    "possiveis": 1
   },
   {
@@ -99,7 +99,7 @@
    "ok": true,
    "lidos": 100,
    "aceitos": 1,
-   "possiveis": 4
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -113,8 +113,8 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 1,
+   "lidos": 8,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 8,
+   "lidos": 7,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 60,
+   "lidos": 61,
    "aceitos": 4,
-   "possiveis": 6
+   "possiveis": 5
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 26,
+   "lidos": 22,
    "aceitos": 0,
    "possiveis": 2
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 61,
+   "lidos": 31,
    "aceitos": 1,
-   "possiveis": 6
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 54,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -177,8 +177,8 @@
    "fonte": "Google Notícias",
    "consulta": "Pazolini (emendas OR \"cargos comissionados\" OR \"reforma administrativa\" OR auditoria OR \"ajuste fiscal\" OR secretarias OR concurso)",
    "ok": true,
-   "lidos": 9,
-   "aceitos": 9,
+   "lidos": 8,
+   "aceitos": 8,
    "possiveis": 0
   },
   {
@@ -193,8 +193,8 @@
    "fonte": "Google Notícias",
    "consulta": "Espírito Santo (\"Acordo do Rio Doce\" OR royalties OR \"fundo soberano\" OR FNDR OR \"reforma tributária\" OR \"gestão fiscal\") governo do Estado",
    "ok": true,
-   "lidos": 20,
-   "aceitos": 11,
+   "lidos": 22,
+   "aceitos": 14,
    "possiveis": 0
   },
   {
@@ -218,7 +218,7 @@
    "consulta": "https://www.folhavitoria.com.br/feed/",
    "ok": true,
    "lidos": 10,
-   "aceitos": 1,
+   "aceitos": 0,
    "possiveis": 0
   },
   {
@@ -227,7 +227,7 @@
    "ok": true,
    "lidos": 10,
    "aceitos": 3,
-   "possiveis": 3
+   "possiveis": 2
   },
   {
    "fonte": "ES Hoje",
@@ -280,19 +280,35 @@
  ],
  "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 381,
-  "excluir": 45,
-  "veiculo_excluido": 57,
-  "possivel": 21,
-  "caixa_alta": 6,
-  "sem_contexto_com_tema": 21,
-  "generico_sem_ancora": 2,
-  "exterior_sem_ancora": 3,
-  "outro_estado": 31,
-  "veiculo_outra_praca": 16,
-  "sigla_sem_ancora": 12
+  "sem_contexto": 372,
+  "excluir": 43,
+  "possivel": 19,
+  "oficial_sem_tema": 1,
+  "caixa_alta": 5,
+  "sem_contexto_com_tema": 19,
+  "veiculo_excluido": 46,
+  "generico_sem_ancora": 1,
+  "veiculo_outra_praca": 18,
+  "exterior_sem_ancora": 4,
+  "outro_estado": 19,
+  "sigla_sem_ancora": 8
  },
  "itens": [
+  {
+   "id": "8000fcea7a99",
+   "titulo": "Governador eleito, Pazolini reencontra colegas da Polícia Civil e recebe homenagem",
+   "veiculo": "Aqui Notícias",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxONjRJc0xDWmJpV1p1dzl5OV9LU0RqU0JUNXdiZ0lvX2x6QmRnR3pIbWR4SU9FUTlhcHF5SFBENEg1WHh2QzlCNGc0T0luNTExNG9lVzVXNlFWb3FMM3FKN1JDazJaSDViYU5CSndCbWxjQjlZVnM0UTNjTnpvT0RoTC1OUjRzeHlWSnRKMDZILTZHS2Vsb2VZZjJsRU1RZnFrUlY0Y1NQMWpsZkIxT1VSSUVpclRJZw?oc=5",
+   "data": "2026-11-28T14:01:17Z",
+   "coletado_em": "2026-11-28T14:17:13Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "transicao",
+    "governador"
+   ]
+  },
   {
    "id": "dfaa9bb6e681",
    "titulo": "Jerônimo autoriza licitação para construção de ponte entre Bahia e Espírito Santo",
@@ -389,6 +405,18 @@
    "temas": [
     "governador"
    ]
+  },
+  {
+   "id": "4f205f00ea1e",
+   "titulo": "Piúma: gastos da prefeitura, emendas e notícias",
+   "veiculo": "Século Diário",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBWVDNSRGMwUWtBa0Y2aUJzS19BNFljZzhNVjNkdzJQRHRTMU5lSmQyZVZSd3ctLU5mTGZHV19JQndCbnQwaDhkRjBwWGh3WGw2S1g0TW93aEw?oc=5",
+   "data": "2026-11-28T03:32:19Z",
+   "coletado_em": "2026-11-28T14:17:13Z",
+   "outras": [],
+   "possivel": true,
+   "triagem": 9,
+   "temas": []
   },
   {
    "id": "0eda69a92fce",
@@ -539,7 +567,12 @@
    "url": "https://www.agazeta.com.br/colunas/vitor-vogas/pazolini-pode-escalar-secretarios-que-hoje-estao-no-governo-de-sao-paulo-1126",
    "data": "2026-11-27T21:42:00Z",
    "coletado_em": "2026-11-27T22:17:14Z",
-   "outras": [],
+   "outras": [
+    {
+     "veiculo": "portal jornal do norte",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPcUlGYVNTZFdwYTYzWGZ4WFhOMVhzVDRQeC1kTnRLY19YOXItS3FJeDhBUExQRFR6ZmFTWUxNMEd1V0VDWkRVYkZ0TF8tUlRzZUVXc2F4aTFYRFZYMHU3OEltQV9XMUhJMXZHMTljU3N3UWIxZEZrV08yX2JUVlRpMmY4NHBNelg0Vkw5QTVpNjdlaGV6SEJON1o4YWU4Qi1UWlFUVkw4MGxkV2Mw?oc=5"
+    }
+   ],
    "possivel": false,
    "triagem": 9,
    "temas": [
