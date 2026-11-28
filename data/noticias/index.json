@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-28",
- "gerado_em": "2026-11-28T00:17:12Z",
+ "gerado_em": "2026-11-28T01:17:14Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,17 +17,17 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 13,
-   "aceitos": 8,
+   "lidos": 11,
+   "aceitos": 7,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 28,
-   "aceitos": 15,
-   "possiveis": 5
+   "lidos": 54,
+   "aceitos": 30,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -49,8 +49,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 29,
-   "aceitos": 4,
+   "lidos": 26,
+   "aceitos": 3,
    "possiveis": 2
   },
   {
@@ -81,7 +81,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:seculodiario.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 5,
+   "lidos": 11,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 73,
+   "lidos": 72,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 87,
-   "aceitos": 3,
-   "possiveis": 3
+   "lidos": 93,
+   "aceitos": 2,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -113,9 +113,9 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 10,
+   "lidos": 9,
    "aceitos": 2,
-   "possiveis": 0
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -137,15 +137,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 60,
-   "aceitos": 4,
-   "possiveis": 6
+   "lidos": 31,
+   "aceitos": 3,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 31,
+   "lidos": 34,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -153,7 +153,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 31,
    "aceitos": 2,
    "possiveis": 2
   },
@@ -161,7 +161,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 57,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -278,22 +278,38 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 0,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 376,
-  "possivel": 23,
-  "oficial_sem_tema": 3,
-  "excluir": 44,
-  "outro_estado": 21,
-  "sem_contexto_com_tema": 19,
+  "sem_contexto": 388,
+  "possivel": 24,
+  "oficial_sem_tema": 1,
+  "outro_estado": 20,
+  "excluir": 43,
+  "generico_sem_ancora": 3,
+  "sem_contexto_com_tema": 15,
   "caixa_alta": 2,
-  "veiculo_excluido": 46,
-  "generico_sem_ancora": 2,
-  "exterior_sem_ancora": 4,
-  "veiculo_outra_praca": 19,
-  "sigla_sem_ancora": 7
+  "veiculo_excluido": 39,
+  "exterior_sem_ancora": 3,
+  "veiculo_outra_praca": 16,
+  "sigla_sem_ancora": 6
  },
  "itens": [
+  {
+   "id": "9d1d74bbdd0b",
+   "titulo": "Atrasos e redução no ritmo de obras do Governo do ES geram preocupação em São Mateus",
+   "veiculo": "TC Online",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOUUNDcXZMSktRdmRtbzl0aDNIVldkRWFZUnpDc0l5cmxiT1M5TXVaOVhya0xuRFVHTlFRSXNOZmphcGRmNTJfajFBeUVac2hta0lsUFRfOHdaNVl4OERUYkVuVjRVdGoyVkdrNWFDelNuZkd3U3BPM29PRVVuV0pscVUyRlRjdnFrdGVFTk5GbjloZWg5RkQ4NDNHVFdNVzNGYnVhdml3LWRvNmxTQ2c?oc=5",
+   "data": "2026-11-28T00:35:21Z",
+   "coletado_em": "2026-11-28T01:17:14Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "restricao",
+    "governador",
+    "contratos"
+   ]
+  },
   {
    "id": "c1f2b2b93076",
    "titulo": "Manifestantes bloqueiam BR 101 em Anchieta e cobram obras de drenagem",
