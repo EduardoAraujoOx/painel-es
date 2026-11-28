@@ -1,6 +1,6 @@
 {
  "ref": "2026-11-28",
- "gerado_em": "2026-11-28T11:17:13Z",
+ "gerado_em": "2026-11-28T12:17:21Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -17,16 +17,16 @@
    "fonte": "Google Notícias",
    "consulta": "\"governo do Espírito Santo\"",
    "ok": true,
-   "lidos": 10,
-   "aceitos": 7,
+   "lidos": 9,
+   "aceitos": 5,
    "possiveis": 0
   },
   {
    "fonte": "Google Notícias",
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
-   "lidos": 50,
-   "aceitos": 32,
+   "lidos": 28,
+   "aceitos": 18,
    "possiveis": 3
   },
   {
@@ -49,9 +49,9 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 24,
-   "aceitos": 4,
-   "possiveis": 2
+   "lidos": 21,
+   "aceitos": 3,
+   "possiveis": 1
   },
   {
    "fonte": "Google Notícias",
@@ -66,7 +66,7 @@
    "consulta": "\"governo do ES\" (nomeação OR exoneração OR \"cargos comissionados\" OR concurso OR reajuste OR servidores)",
    "ok": true,
    "lidos": 9,
-   "aceitos": 6,
+   "aceitos": 7,
    "possiveis": 1
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 70,
+   "lidos": 67,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 10,
+   "lidos": 8,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -137,9 +137,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Sejus OR Sesp OR Sesa OR Sedu OR Sefaz OR Seger OR Sesport) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 61,
-   "aceitos": 4,
-   "possiveis": 5
+   "lidos": 31,
+   "aceitos": 3,
+   "possiveis": 4
   },
   {
    "fonte": "Google Notícias",
@@ -153,9 +153,9 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 62,
-   "aceitos": 2,
-   "possiveis": 5
+   "lidos": 30,
+   "aceitos": 1,
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
@@ -232,10 +232,11 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": true,
-   "lidos": 30,
-   "aceitos": 1,
-   "possiveis": 0
+   "ok": false,
+   "lidos": 0,
+   "aceitos": 0,
+   "possiveis": 0,
+   "erro": "HTTP Error 415: Unsupported Media Type"
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -278,21 +279,36 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 6,
+ "novos_na_coleta": 1,
  "descartes_na_coleta": {
-  "sem_contexto": 397,
-  "veiculo_excluido": 56,
+  "sem_contexto": 350,
+  "veiculo_excluido": 43,
   "possivel": 20,
-  "excluir": 47,
-  "generico_sem_ancora": 3,
-  "sem_contexto_com_tema": 23,
-  "caixa_alta": 4,
+  "oficial_sem_tema": 1,
+  "excluir": 33,
+  "sem_contexto_com_tema": 14,
+  "caixa_alta": 5,
+  "generico_sem_ancora": 1,
   "exterior_sem_ancora": 4,
-  "outro_estado": 28,
-  "veiculo_outra_praca": 22,
-  "sigla_sem_ancora": 11
+  "outro_estado": 16,
+  "veiculo_outra_praca": 16,
+  "sigla_sem_ancora": 7
  },
  "itens": [
+  {
+   "id": "dfaa9bb6e681",
+   "titulo": "Jerônimo autoriza licitação para construção de ponte entre Bahia e Espírito Santo",
+   "veiculo": "Panorama da Bahia",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNdC1FTDljQmlxc2dhUkN6WnF6Qm1XY3dBRU9manVORUQ0MlZIRGU1cmZjS2pzcFRCRUVDenBkYU5Ba3JyTG1XaEx0cmtRYU5TV3dDWld6dDRveHdzWXg4WW5hRlZpcXp3RWctZjRoN0Q4cjRJSFlfS19ZZzFXTWdqOWdSckNaakI1UlU4OXhhOUdNMVJ6YmR0VmxTcjFaYnliWUIwWjJBb25vRm56TGpRbGljVQ?oc=5",
+   "data": "2026-11-28T11:54:00Z",
+   "coletado_em": "2026-11-28T12:17:21Z",
+   "outras": [],
+   "possivel": false,
+   "triagem": 9,
+   "temas": [
+    "contratos"
+   ]
+  },
   {
    "id": "cb7ee531994b",
    "titulo": "Calor no Transcol? Veja como denunciar falhas no ar-condicionado dos ônibus",
