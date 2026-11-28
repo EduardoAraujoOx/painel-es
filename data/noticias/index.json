@@ -1,6 +1,6 @@
 {
- "ref": "2026-11-27",
- "gerado_em": "2026-11-27T23:17:12Z",
+ "ref": "2026-11-28",
+ "gerado_em": "2026-11-28T00:17:12Z",
  "janela_dias": 2,
  "desde": "2026-10-25",
  "temas": {
@@ -26,7 +26,7 @@
    "consulta": "governador \"Espírito Santo\"",
    "ok": true,
    "lidos": 28,
-   "aceitos": 13,
+   "aceitos": 15,
    "possiveis": 5
   },
   {
@@ -49,8 +49,8 @@
    "fonte": "Google Notícias",
    "consulta": "\"Espírito Santo\" governo (orçamento OR remanejamento OR \"crédito suplementar\" OR \"restos a pagar\" OR déficit OR \"caixa do Estado\")",
    "ok": true,
-   "lidos": 26,
-   "aceitos": 3,
+   "lidos": 29,
+   "aceitos": 4,
    "possiveis": 2
   },
   {
@@ -89,7 +89,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:folhadoes.com (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 77,
+   "lidos": 73,
    "aceitos": 3,
    "possiveis": 1
   },
@@ -97,9 +97,9 @@
    "fonte": "Google Notícias",
    "consulta": "site:tribunaonline.com.br (governo OR governador OR secretaria OR TCE OR contrato OR orçamento)",
    "ok": true,
-   "lidos": 100,
+   "lidos": 87,
    "aceitos": 3,
-   "possiveis": 5
+   "possiveis": 3
   },
   {
    "fonte": "Google Notícias",
@@ -113,7 +113,7 @@
    "fonte": "Google Notícias",
    "consulta": "(suspende OR suspensão OR cancela OR rescinde OR paralisa) (contratos OR serviços OR obras) Espírito Santo secretaria Estado",
    "ok": true,
-   "lidos": 11,
+   "lidos": 10,
    "aceitos": 2,
    "possiveis": 0
   },
@@ -129,7 +129,7 @@
    "fonte": "Google Notícias",
    "consulta": "site:g1.globo.com/es (suspende OR suspensão OR cancela OR rescinde OR \"falta de recursos\" OR \"corte de gastos\" OR contingenciamento) (governo OR secretaria OR Estado)",
    "ok": true,
-   "lidos": 3,
+   "lidos": 4,
    "aceitos": 1,
    "possiveis": 0
   },
@@ -145,7 +145,7 @@
    "fonte": "Google Notícias",
    "consulta": "(Seag OR Seama OR Sedurb OR Setur OR Semobi OR Secult OR Secti) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 30,
+   "lidos": 31,
    "aceitos": 1,
    "possiveis": 1
   },
@@ -153,15 +153,15 @@
    "fonte": "Google Notícias",
    "consulta": "(Detran OR Iases OR Idaf OR Incaper OR Ipajm OR Agerh OR Iema) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 60,
+   "lidos": 30,
    "aceitos": 2,
-   "possiveis": 5
+   "possiveis": 2
   },
   {
    "fonte": "Google Notícias",
    "consulta": "(Bandes OR Banestes OR Cesan OR Prodest OR Sedh OR Sesm OR Setades) (suspende OR suspensão OR corte OR cortes OR atraso OR \"falta de recursos\" OR contrato OR contratos OR concurso OR orçamento)",
    "ok": true,
-   "lidos": 57,
+   "lidos": 100,
    "aceitos": 0,
    "possiveis": 0
   },
@@ -232,11 +232,10 @@
   {
    "fonte": "ES Hoje",
    "consulta": "https://eshoje.com.br/feed/",
-   "ok": false,
-   "lidos": 0,
-   "aceitos": 0,
-   "possiveis": 0,
-   "erro": "HTTP Error 415: Unsupported Media Type"
+   "ok": true,
+   "lidos": 30,
+   "aceitos": 1,
+   "possiveis": 0
   },
   {
    "fonte": "G1 Espírito Santo",
@@ -279,20 +278,20 @@
    "possiveis": 0
   }
  ],
- "novos_na_coleta": 2,
+ "novos_na_coleta": 0,
  "descartes_na_coleta": {
-  "sem_contexto": 367,
-  "possivel": 25,
+  "sem_contexto": 376,
+  "possivel": 23,
   "oficial_sem_tema": 3,
-  "outro_estado": 30,
-  "excluir": 38,
-  "sem_contexto_com_tema": 24,
+  "excluir": 44,
+  "outro_estado": 21,
+  "sem_contexto_com_tema": 19,
   "caixa_alta": 2,
-  "veiculo_excluido": 58,
+  "veiculo_excluido": 46,
   "generico_sem_ancora": 2,
   "exterior_sem_ancora": 4,
   "veiculo_outra_praca": 19,
-  "sigla_sem_ancora": 10
+  "sigla_sem_ancora": 7
  },
  "itens": [
   {
